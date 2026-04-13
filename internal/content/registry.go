@@ -10,11 +10,22 @@ type Registry struct {
 // NewRegistry creates a registry pre-loaded with all known parsers.
 func NewRegistry() *Registry {
 	r := &Registry{parsers: make(map[string]ContentParser)}
+	// Phase 1 parsers
 	r.Register(&ChapterParser{})
 	r.Register(&ClassParser{})
 	r.Register(&FeatureGroupParser{})
 	r.Register(&FeatureParser{})
 	r.Register(&AbilityParser{})
+	// Phase 2 parsers
+	r.Register(&ConditionParser{})
+	r.Register(&ComplicationParser{})
+	r.Register(&PerkParser{})
+	r.Register(&CareerParser{})
+	r.Register(&CultureParser{})
+	r.Register(&TitleParser{})
+	r.Register(&TreasureParser{})
+	r.Register(&KitParser{})
+	r.Register(&AncestryParser{})
 	return r
 }
 

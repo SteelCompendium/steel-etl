@@ -3,6 +3,7 @@ package pipeline
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 
 	ctx "github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/content"
@@ -13,29 +14,44 @@ import (
 
 // Result holds the outcome of a pipeline run.
 type Result struct {
-	TotalSections     int
-	ParsedSections    int
-	SkippedSections   int // no parser for the type
+	TotalSections      int
+	ParsedSections     int
+	SkippedSections    int // no parser for the type
 	ClassifiedSections int
-	WrittenFiles      int
-	Errors            []string
+	WrittenFiles       int
+	Errors             []string
 }
 
 // Run executes the full pipeline: parse → classify → output.
+// This is the legacy entrypoint that produces markdown-only output.
 func Run(inputPath string, outputDir string, registryPath string) (*Result, error) {
-	// Read input
+	cfg := &Config{
+		Input:  inputPath,
+		Locale: "en",
+		Output: OutputConfig{
+			BaseDir: filepath.Dir(outputDir), // strip the locale/md suffix
+			Formats: []string{"md"},
+		},
+		Classification: ClassificationConfig{
+			Registry: registryPath,
+		},
+	}
+	// The legacy function expected outputDir = base_dir/en/md already, so override
+	return RunWithConfig(cfg, inputPath, outputDir, registryPath)
+}
+
+// RunWithConfig executes the full pipeline using a Config.
+func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*Result, error) {
 	source, err := os.ReadFile(inputPath)
 	if err != nil {
 		return nil, fmt.Errorf("read input: %w", err)
 	}
 
-	// Parse document
 	doc, err := parser.ParseDocument(source)
 	if err != nil {
 		return nil, fmt.Errorf("parse document: %w", err)
 	}
 
-	// Get book source from frontmatter
 	bookSource := ""
 	if book, ok := doc.Frontmatter["book"]; ok {
 		if bookStr, ok := book.(string); ok {
@@ -46,19 +62,19 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 	// Initialize components
 	registry := content.NewRegistry()
 	sccRegistry := scc.NewRegistry()
-	generator := &output.MarkdownGenerator{BaseDir: outputDir}
 	contextStack := ctx.NewContextStack(frontmatterToMetadata(doc.Frontmatter))
 
-	result := &Result{}
-	seenSCC := make(map[string]string) // sccCode → first heading that used it
+	// Build the set of output generators
+	generators := buildGenerators(cfg, mdOutputDir, registryPath, sccRegistry, source)
 
-	// Walk all sections
+	result := &Result{}
+	seenSCC := make(map[string]string)
+
 	var walk func(sections []*parser.Section)
 	walk = func(sections []*parser.Section) {
 		for _, section := range sections {
 			result.TotalSections++
 
-			// Update context stack
 			if section.Annotation != nil {
 				contextStack.Push(section.HeadingLevel, ctx.Metadata(section.Annotation))
 			}
@@ -70,7 +86,6 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 				continue
 			}
 
-			// Parse content
 			p, _ := registry.Get(typeName)
 			parsed, err := p.Parse(contextStack, section)
 			if err != nil {
@@ -80,7 +95,6 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 			}
 			result.ParsedSections++
 
-			// Classify (skip containers like feature-group)
 			if parsed.TypePath != nil && parsed.ItemID != "" {
 				sccCode := scc.Classify(bookSource, parsed.TypePath, parsed.ItemID)
 				parsed.Frontmatter["scc"] = sccCode
@@ -104,11 +118,13 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 				}
 				seenSCC[sccCode] = section.Heading
 
-				// Write output
-				if err := generator.WriteSection(sccCode, parsed); err != nil {
-					result.Errors = append(result.Errors, fmt.Sprintf("write %s: %v", sccCode, err))
-				} else {
-					result.WrittenFiles++
+				// Write to all generators
+				for _, gen := range generators {
+					if err := gen.WriteSection(sccCode, parsed); err != nil {
+						result.Errors = append(result.Errors, fmt.Sprintf("write %s [%s]: %v", sccCode, gen.Format(), err))
+					} else {
+						result.WrittenFiles++
+					}
 				}
 			}
 
@@ -116,6 +132,15 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 		}
 	}
 	walk(doc.Sections)
+
+	// Finalize generators that implement BulkGenerator
+	for _, gen := range generators {
+		if bulk, ok := gen.(output.BulkGenerator); ok {
+			if err := bulk.Finalize(); err != nil {
+				result.Errors = append(result.Errors, fmt.Sprintf("finalize [%s]: %v", gen.Format(), err))
+			}
+		}
+	}
 
 	// Save classification registry
 	if registryPath != "" {
@@ -125,6 +150,94 @@ func Run(inputPath string, outputDir string, registryPath string) (*Result, erro
 	}
 
 	return result, nil
+}
+
+// buildGenerators creates all configured output generators.
+func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry *scc.Registry, rawInput []byte) []output.Generator {
+	var generators []output.Generator
+	locale := cfg.Locale
+	if locale == "" {
+		locale = "en"
+	}
+
+	resolver := scc.NewResolver(sccRegistry, ".md")
+
+	// Base output directory
+	baseDir := mdOutputDir
+	if cfg.Output.BaseDir != "" && cfg.ConfigDir != "" {
+		baseDir = filepath.Join(cfg.ResolvePath(cfg.Output.BaseDir), locale)
+	} else if baseDir == "" && cfg.Output.BaseDir != "" {
+		baseDir = filepath.Join(cfg.Output.BaseDir, locale)
+	}
+
+	// Standard format generators
+	for _, format := range cfg.Output.Formats {
+		switch format {
+		case "md":
+			dir := mdOutputDir
+			if dir == "" {
+				dir = filepath.Join(baseDir, "md")
+			}
+			generators = append(generators, &output.MarkdownGenerator{BaseDir: dir})
+		case "json":
+			generators = append(generators, &output.JSONGenerator{
+				BaseDir: filepath.Join(baseDir, "json"),
+			})
+		case "yaml":
+			generators = append(generators, &output.YAMLGenerator{
+				BaseDir: filepath.Join(baseDir, "yaml"),
+			})
+		}
+	}
+
+	// Variant generators
+	if cfg.Output.Variants.Linked {
+		generators = append(generators, &output.LinkedGenerator{
+			BaseDir:  filepath.Join(baseDir, "md-linked"),
+			Resolver: resolver,
+		})
+	}
+	if cfg.Output.Variants.DSE {
+		generators = append(generators, &output.DSEGenerator{
+			BaseDir: filepath.Join(baseDir, "md-dse"),
+		})
+	}
+	if cfg.Output.Variants.DSELinked {
+		generators = append(generators, &output.DSELinkedGenerator{
+			BaseDir:  filepath.Join(baseDir, "md-dse-linked"),
+			Resolver: resolver,
+		})
+	}
+
+	// Stripped markdown
+	if cfg.Output.Stripped.Enabled && cfg.Output.Stripped.OutputDir != "" {
+		outputPath := cfg.ResolvePath(cfg.Output.Stripped.OutputDir)
+		// Use the input filename for the stripped output
+		inputBase := filepath.Base(cfg.Input)
+		if inputBase == "" || inputBase == "." {
+			inputBase = "output.md"
+		}
+		generators = append(generators, &output.StrippedGenerator{
+			OutputPath: filepath.Join(outputPath, inputBase),
+			RawInput:   rawInput,
+		})
+	}
+
+	// Aggregation
+	if cfg.Output.Aggregate.Enabled && cfg.Output.Aggregate.OutputDir != "" {
+		generators = append(generators, &output.AggregateGenerator{
+			BaseDir: filepath.Join(cfg.ResolvePath(cfg.Output.Aggregate.OutputDir), locale, "md"),
+		})
+	}
+
+	// SCC-to-path mapping
+	if cfg.Output.SCCMap.Enabled && cfg.Output.SCCMap.OutputFile != "" {
+		generators = append(generators, &output.SCCMapGenerator{
+			OutputPath: cfg.ResolvePath(cfg.Output.SCCMap.OutputFile),
+		})
+	}
+
+	return generators
 }
 
 func frontmatterToMetadata(fm map[string]any) ctx.Metadata {

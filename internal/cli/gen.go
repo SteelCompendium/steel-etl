@@ -2,11 +2,8 @@ package cli
 
 import (
 	"fmt"
-	"os"
-	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"gopkg.in/yaml.v3"
 
 	"github.com/SteelCompendium/steel-etl/internal/pipeline"
 )
@@ -15,7 +12,10 @@ var genCmd = &cobra.Command{
 	Use:   "gen",
 	Short: "Run the pipeline to generate output files",
 	Long: `Parse annotated markdown and generate per-section output files
-in the configured formats (md, json, yaml) with YAML frontmatter.`,
+in the configured formats (md, json, yaml) with YAML frontmatter.
+
+Supports multiple output formats, variants (linked, DSE), stripped
+markdown, aggregation, and SCC-to-path mapping.`,
 	RunE: runGen,
 }
 
@@ -23,64 +23,70 @@ func init() {
 	genCmd.Flags().StringP("config", "c", "pipeline.yaml", "path to pipeline config file")
 	genCmd.Flags().String("format", "", "output format filter (md, json, yaml)")
 	genCmd.Flags().String("locale", "", "locale override")
+	genCmd.Flags().String("book", "", "book filter (e.g., mcdm.heroes.v1)")
 	genCmd.Flags().Bool("all", false, "generate all books")
-}
-
-type pipelineConfig struct {
-	Book           string `yaml:"book"`
-	Input          string `yaml:"input"`
-	Locale         string `yaml:"locale"`
-	Classification struct {
-		Registry string `yaml:"registry"`
-		Freeze   bool   `yaml:"freeze"`
-	} `yaml:"classification"`
-	Output struct {
-		BaseDir string `yaml:"base_dir"`
-	} `yaml:"output"`
 }
 
 func runGen(cmd *cobra.Command, args []string) error {
 	configPath, _ := cmd.Flags().GetString("config")
 
-	// Read config
-	data, err := os.ReadFile(configPath)
+	cfg, err := pipeline.LoadConfig(configPath)
 	if err != nil {
-		return fmt.Errorf("read config %s: %w", configPath, err)
+		return err
 	}
 
-	var cfg pipelineConfig
-	if err := yaml.Unmarshal(data, &cfg); err != nil {
-		return fmt.Errorf("parse config: %w", err)
+	// Apply CLI overrides
+	if locale, _ := cmd.Flags().GetString("locale"); locale != "" {
+		cfg.Locale = locale
+	}
+	if format, _ := cmd.Flags().GetString("format"); format != "" {
+		cfg.Output.Formats = []string{format}
+		// Disable variants when filtering to a single format
+		cfg.Output.Variants.Linked = false
+		cfg.Output.Variants.DSE = false
+		cfg.Output.Variants.DSELinked = false
 	}
 
-	// Resolve paths relative to config file
-	configDir := filepath.Dir(configPath)
-	inputPath := resolvePath(configDir, cfg.Input)
-	outputDir := resolvePath(configDir, cfg.Output.BaseDir)
+	// Resolve paths
+	inputPath := cfg.ResolvePath(cfg.Input)
 	registryPath := ""
 	if cfg.Classification.Registry != "" {
-		registryPath = resolvePath(configDir, cfg.Classification.Registry)
+		registryPath = cfg.ResolvePath(cfg.Classification.Registry)
 	}
 
 	locale := cfg.Locale
-	if l, _ := cmd.Flags().GetString("locale"); l != "" {
-		locale = l
-	}
-	if locale == "" {
-		locale = "en"
-	}
+	mdOutputDir := cfg.ResolvePath(cfg.Output.BaseDir)
+	mdOutputDir = mdOutputDir + "/" + locale + "/md"
 
-	// Output to locale subdirectory: base_dir/locale/md/
-	mdOutputDir := filepath.Join(outputDir, locale, "md")
-
+	fmt.Printf("Book:     %s\n", cfg.Book)
 	fmt.Printf("Input:    %s\n", inputPath)
 	fmt.Printf("Output:   %s\n", mdOutputDir)
+	fmt.Printf("Formats:  %v\n", cfg.Output.Formats)
+	fmt.Printf("Locale:   %s\n", locale)
 	if registryPath != "" {
 		fmt.Printf("Registry: %s\n", registryPath)
 	}
+	if cfg.Output.Variants.Linked {
+		fmt.Println("Variant:  linked")
+	}
+	if cfg.Output.Variants.DSE {
+		fmt.Println("Variant:  dse")
+	}
+	if cfg.Output.Variants.DSELinked {
+		fmt.Println("Variant:  dse-linked")
+	}
+	if cfg.Output.Stripped.Enabled {
+		fmt.Printf("Stripped: %s\n", cfg.ResolvePath(cfg.Output.Stripped.OutputDir))
+	}
+	if cfg.Output.Aggregate.Enabled {
+		fmt.Printf("Aggregate: %s\n", cfg.ResolvePath(cfg.Output.Aggregate.OutputDir))
+	}
+	if cfg.Output.SCCMap.Enabled {
+		fmt.Printf("SCC Map: %s\n", cfg.ResolvePath(cfg.Output.SCCMap.OutputFile))
+	}
 	fmt.Println()
 
-	result, err := pipeline.Run(inputPath, mdOutputDir, registryPath)
+	result, err := pipeline.RunWithConfig(cfg, inputPath, mdOutputDir, registryPath)
 	if err != nil {
 		return err
 	}
@@ -98,11 +104,4 @@ func runGen(cmd *cobra.Command, args []string) error {
 	}
 
 	return nil
-}
-
-func resolvePath(base, path string) string {
-	if filepath.IsAbs(path) {
-		return path
-	}
-	return filepath.Join(base, path)
 }
