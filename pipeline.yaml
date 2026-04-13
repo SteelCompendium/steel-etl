@@ -1,0 +1,68 @@
+# steel-etl pipeline configuration
+# See plans/architecture-redesign/pipeline-config.md for full spec
+
+# --- Input ----------------------------------------------------------------
+
+# Primary book
+book: mcdm.heroes.v1
+input: ./input/heroes/Draw Steel Heroes.md
+
+# Locale (default: en)
+locale: en
+
+# --- Classification -------------------------------------------------------
+
+classification:
+  # Path to the SCC classification registry
+  registry: ./classification.json
+
+  # If true, fail if a build would change an existing SCC code.
+  # Set to true after freezing the classification.
+  freeze: false
+
+# --- Output ---------------------------------------------------------------
+
+output:
+  # Base directory for output (relative to this config file)
+  base_dir: ../data/data-rules
+
+  # Output formats to generate
+  formats:
+    - md
+    - json
+    - yaml
+
+  # Output variants to generate
+  variants:
+    linked: true
+    dse: true
+    dse_linked: true
+
+  # Stripped markdown (annotations removed) for distribution
+  stripped:
+    enabled: true
+    output_dir: ../data/data-rules-clean
+
+  # Aggregation into unified repo
+  aggregate:
+    enabled: true
+    output_dir: ../data/data-unified
+
+  # SCC-to-path mapping for website
+  scc_map:
+    enabled: true
+    output_file: ./output/scc-to-path.json
+
+# --- Content Parser Overrides ---------------------------------------------
+
+parsers:
+  overrides: []
+
+# --- Multiple Books -------------------------------------------------------
+# Additional books beyond the primary. Each can override any top-level setting.
+
+books:
+  - book: mcdm.monsters.v1
+    input: ../data-gen/input/monsters/Draw Steel Monsters.md
+    output:
+      base_dir: ../data/data-bestiary
