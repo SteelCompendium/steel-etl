@@ -1,0 +1,22 @@
+# Binary
+steel-etl
+
+# Test artifacts
+coverage.out
+*.test
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# Python artifacts (Phase 0 tooling)
+__pycache__/
+*.pyc
+
+# Generated output
+output/
+classification.json
