@@ -28,18 +28,18 @@ func TestRunPipelineOnFixture(t *testing.T) {
 		t.Errorf("expected no errors, got %d", len(result.Errors))
 	}
 
-	// Should have written files for: chapter(1) + class(2) + feature(1) + ability(3) = 7
+	// Should have written files for: chapter(1) + class(2) + trait(1) + ability(3) = 7
 	if result.WrittenFiles < 5 {
 		t.Errorf("expected at least 5 written files, got %d", result.WrittenFiles)
 	}
 
-	// Verify some output files exist
-	checkFileExists(t, outputDir, "chapters/classes.md")
-	checkFileExists(t, outputDir, "classes/fury.md")
-	checkFileExists(t, outputDir, "classes/shadow.md")
-	checkFileExists(t, outputDir, "abilities/fury/brutal-slam.md")
-	checkFileExists(t, outputDir, "abilities/fury/gouge.md")
-	checkFileExists(t, outputDir, "features/fury/growing-ferocity-1.md")
+	// Verify some output files exist (new paths: source/type/item)
+	checkFileExists(t, outputDir, "chapter/classes.md")
+	checkFileExists(t, outputDir, "class/fury.md")
+	checkFileExists(t, outputDir, "class/shadow.md")
+	checkFileExists(t, outputDir, "feature/ability/fury/level-1/brutal-slam.md")
+	checkFileExists(t, outputDir, "feature/ability/fury/level-1/gouge.md")
+	checkFileExists(t, outputDir, "feature/trait/fury/level-1/growing-ferocity.md")
 
 	// Verify registry was written
 	if _, err := os.Stat(registryPath); os.IsNotExist(err) {
@@ -80,10 +80,10 @@ func TestRunPipelineOnRealDocument(t *testing.T) {
 		t.Errorf("expected 900+ written files, got %d", result.WrittenFiles)
 	}
 
-	// Spot-check some key files
-	checkFileExists(t, outputDir, "classes/fury.md")
-	checkFileExists(t, outputDir, "abilities/fury/brutal-slam.md")
-	checkFileExists(t, outputDir, "chapters/classes.md")
+	// Spot-check some key files (new paths)
+	checkFileExists(t, outputDir, "class/fury.md")
+	checkFileExists(t, outputDir, "feature/ability/fury/level-1/brutal-slam.md")
+	checkFileExists(t, outputDir, "chapter/classes.md")
 }
 
 func checkFileExists(t *testing.T, dir, relPath string) {

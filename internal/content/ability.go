@@ -76,15 +76,21 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	}
 
 	// Look up level from context
+	levelStr := ""
 	if level, ok := ctx.Lookup(section.HeadingLevel, "level"); ok {
 		fm["level"] = level
+		levelStr = level
 	}
 
-	typePath := []string{"abilities"}
+	// Build type path: feature.ability.{class}.level-{N}
+	typePath := []string{"feature", "ability"}
 	if classID != "" {
-		typePath = []string{"abilities", classID}
+		typePath = append(typePath, classID)
 	} else {
-		typePath = []string{"abilities", "common"}
+		typePath = append(typePath, "common")
+	}
+	if levelStr != "" {
+		typePath = append(typePath, "level-"+levelStr)
 	}
 
 	return &ParsedContent{

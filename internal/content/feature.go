@@ -50,26 +50,33 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 
 	fm := map[string]any{
 		"name": cleanName,
-		"type": "feature",
+		"type": "trait",
 	}
 
 	// Look up level from context (set by parent feature-group)
+	levelStr := ""
 	if level, ok := ctx.Lookup(section.HeadingLevel, "level"); ok {
 		fm["level"] = level
-		// Append level to ID for disambiguation (e.g., "perk" → "perk-2")
-		id = id + "-" + level
+		levelStr = level
 	}
 
-	// Append kit ID for disambiguation (e.g., "kit-bonuses-1" → "kit-bonuses-1-boren")
-	if kitID != "" {
-		fm["kit"] = kitID
-		id = id + "-" + kitID
-	}
-
-	typePath := []string{"features"}
 	if classID != "" {
 		fm["class"] = classID
-		typePath = []string{"features", classID}
+	}
+	if kitID != "" {
+		fm["kit"] = kitID
+	}
+
+	// Build type path: feature.trait.{class}.level-{N}[.{kit}]
+	typePath := []string{"feature", "trait"}
+	if classID != "" {
+		typePath = append(typePath, classID)
+	}
+	if levelStr != "" {
+		typePath = append(typePath, "level-"+levelStr)
+	}
+	if kitID != "" {
+		typePath = append(typePath, kitID)
 	}
 
 	return &ParsedContent{

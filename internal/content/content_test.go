@@ -29,8 +29,8 @@ func TestChapterParser(t *testing.T) {
 	if result.ItemID != "classes" {
 		t.Errorf("expected itemID=classes, got %s", result.ItemID)
 	}
-	if len(result.TypePath) != 1 || result.TypePath[0] != "chapters" {
-		t.Errorf("expected TypePath=[chapters], got %v", result.TypePath)
+	if len(result.TypePath) != 1 || result.TypePath[0] != "chapter" {
+		t.Errorf("expected TypePath=[chapter], got %v", result.TypePath)
 	}
 }
 
@@ -77,8 +77,8 @@ func TestClassParser(t *testing.T) {
 	if result.ItemID != "fury" {
 		t.Errorf("expected itemID=fury, got %s", result.ItemID)
 	}
-	if len(result.TypePath) != 1 || result.TypePath[0] != "classes" {
-		t.Errorf("expected TypePath=[classes], got %v", result.TypePath)
+	if len(result.TypePath) != 1 || result.TypePath[0] != "class" {
+		t.Errorf("expected TypePath=[class], got %v", result.TypePath)
 	}
 }
 
@@ -130,11 +130,20 @@ func TestFeatureParser(t *testing.T) {
 	if result.Frontmatter["class"] != "fury" {
 		t.Errorf("expected class=fury, got %v", result.Frontmatter["class"])
 	}
-	if result.ItemID != "growing-ferocity-1" {
-		t.Errorf("expected itemID=growing-ferocity-1, got %s", result.ItemID)
+	if result.ItemID != "growing-ferocity" {
+		t.Errorf("expected itemID=growing-ferocity, got %s", result.ItemID)
 	}
-	if len(result.TypePath) != 2 || result.TypePath[0] != "features" || result.TypePath[1] != "fury" {
-		t.Errorf("expected TypePath=[features, fury], got %v", result.TypePath)
+	// feature.trait.fury.level-1
+	expected := []string{"feature", "trait", "fury", "level-1"}
+	if len(result.TypePath) != len(expected) {
+		t.Errorf("expected TypePath=%v, got %v", expected, result.TypePath)
+	} else {
+		for i, v := range expected {
+			if result.TypePath[i] != v {
+				t.Errorf("expected TypePath=%v, got %v", expected, result.TypePath)
+				break
+			}
+		}
 	}
 }
 
@@ -218,8 +227,17 @@ func TestAbilityParserBasic(t *testing.T) {
 	if result.ItemID != "brutal-slam" {
 		t.Errorf("itemID: got %s", result.ItemID)
 	}
-	if len(result.TypePath) != 2 || result.TypePath[0] != "abilities" || result.TypePath[1] != "fury" {
-		t.Errorf("TypePath: got %v", result.TypePath)
+	// feature.ability.fury.level-1
+	expectedTP := []string{"feature", "ability", "fury", "level-1"}
+	if len(result.TypePath) != len(expectedTP) {
+		t.Errorf("TypePath: expected %v, got %v", expectedTP, result.TypePath)
+	} else {
+		for i, v := range expectedTP {
+			if result.TypePath[i] != v {
+				t.Errorf("TypePath: expected %v, got %v", expectedTP, result.TypePath)
+				break
+			}
+		}
 	}
 }
 
@@ -323,8 +341,9 @@ func TestAbilityParserCommonAbility(t *testing.T) {
 		t.Fatalf("AbilityParser.Parse failed: %v", err)
 	}
 
-	if len(result.TypePath) != 2 || result.TypePath[1] != "common" {
-		t.Errorf("expected TypePath=[abilities, common], got %v", result.TypePath)
+	// feature.ability.common (no level in context)
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" || result.TypePath[1] != "ability" || result.TypePath[2] != "common" {
+		t.Errorf("expected TypePath=[feature, ability, common], got %v", result.TypePath)
 	}
 }
 

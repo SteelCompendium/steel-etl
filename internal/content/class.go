@@ -31,7 +31,7 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        section.BodySource,
-		TypePath:    []string{"classes"},
+		TypePath:    []string{"class"},
 		ItemID:      id,
 	}, nil
 }

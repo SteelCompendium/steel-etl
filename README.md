@@ -2,7 +2,7 @@
 
 Go CLI tool that processes annotated Draw Steel TTRPG markdown into structured, multi-format output for the [Steel Compendium](https://steelcompendium.io).
 
-**Status:** Phase 0 (Design & Annotate) complete. Phase 1 (Go CLI build) is next.
+**Status:** Phase 1 (Core Go CLI) in progress. Parser, content extractors, SCC classifier, and markdown output generator are implemented.
 
 ## What it does
 
@@ -22,14 +22,20 @@ The source is a single annotated markdown file (e.g., `Draw Steel Heroes.md`) wi
 
 ```
 steel-etl/
-├── annotate_heroes.py     # Annotation script (Phase 0 tooling)
-├── annotate_fury_pilot.py # Original Fury-only pilot (kept as reference)
-├── ANNOTATION-GUIDE.md    # Quick reference for annotation syntax
-├── pipeline.yaml          # Pipeline configuration
-├── input/
-│   └── heroes/
-│       └── Draw Steel Heroes.md   # Annotated source (generated)
-└── cmd/                   # (Phase 1: Go CLI, not yet built)
+├── cmd/steel-etl/main.go         # CLI entrypoint
+├── internal/
+│   ├── cli/                       # Cobra commands (gen, validate, classify, strip)
+│   ├── parser/                    # Markdown parser: annotations, document, sections
+│   ├── context/                   # Hierarchical annotation context stack
+│   ├── content/                   # Content parsers (ability, class, chapter, feature)
+│   ├── scc/                       # SCC classifier and registry
+│   ├── output/                    # Output generators (markdown with frontmatter)
+│   └── pipeline/                  # Orchestrates parse → classify → generate
+├── testdata/fixtures/             # Test fixtures (simple_class.md)
+├── annotate_heroes.py             # Annotation script (Phase 0 tooling)
+├── pipeline.yaml                  # Pipeline configuration
+├── Makefile                       # Build, test, lint targets
+└── input/heroes/                  # Annotated source (generated)
 ```
 
 ## Annotation scheme
@@ -59,14 +65,18 @@ Every classified item gets a permanent SCC identifier:
 ```
 {source}/{type}/{item}
 
-mcdm.heroes.v1/classes/fury
-mcdm.heroes.v1/abilities.fury/brutal-slam
-mcdm.heroes.v1/kits/panther
-mcdm.heroes.v1/ancestries/dwarf
-mcdm.heroes.v1/conditions/dazed
+mcdm.heroes.v1/class/fury
+mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam
+mcdm.heroes.v1/feature.trait.fury.level-1/growing-ferocity
+mcdm.heroes.v1/feature.ability.common/grab
+mcdm.heroes.v1/kit/panther
+mcdm.heroes.v1/ancestry/dwarf
+mcdm.heroes.v1/condition/dazed
 ```
 
-SCCs become permanent URLs (`steelcompendium.io/mcdm.heroes.v1/abilities.fury/brutal-slam`) and are immutable once frozen. See `plans/architecture-redesign/scc-taxonomy.md` for the full taxonomy.
+Type names are singular. Features use `feature.ability` / `feature.trait` with class, level, and kit context in the type path (e.g., `feature.trait.fury.level-1.boren/kit-bonuses`).
+
+SCCs become permanent URLs (`steelcompendium.io/mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam`) and are immutable once frozen. See `plans/architecture-redesign/scc-taxonomy.md` for the full taxonomy.
 
 ## Annotation coverage
 
@@ -140,7 +150,7 @@ The full architecture redesign lives in `plans/architecture-redesign/`:
 ## Roadmap
 
 - **Phase 0** -- Design & Annotate (done)
-- **Phase 1** -- Core Go CLI: parse annotated markdown, produce per-section markdown output
+- **Phase 1** -- Core Go CLI: parse annotated markdown, produce per-section markdown output (in progress)
 - **Phase 2** -- Full output pipeline: JSON, YAML, linked/DSE variants, aggregation
 - **Phase 3** -- Translation support + SCC-based website URLs
 - **Phase 4** -- Data repo consolidation + homebrew content registry

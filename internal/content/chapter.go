@@ -22,7 +22,7 @@ func (p *ChapterParser) Parse(ctx *context.ContextStack, section *parser.Section
 			"type": "chapter",
 		},
 		Body:     section.BodySource,
-		TypePath: []string{"chapters"},
+		TypePath: []string{"chapter"},
 		ItemID:   id,
 	}, nil
 }
