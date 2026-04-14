@@ -24,13 +24,13 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 	}
 
 	// Extract heroic resource from body
-	if hr := extractHeroicResource(section.BodySource); hr != "" {
+	if hr := extractHeroicResource(section.FullBodySource()); hr != "" {
 		fm["heroic_resource"] = hr
 	}
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.BodySource,
+		Body:        section.FullBodySource(),
 		TypePath:    []string{"class"},
 		ItemID:      id,
 	}, nil

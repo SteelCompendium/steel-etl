@@ -21,7 +21,7 @@ func (p *ChapterParser) Parse(ctx *context.ContextStack, section *parser.Section
 			"name": section.Heading,
 			"type": "chapter",
 		},
-		Body:     section.BodySource,
+		Body:     section.FullBodySource(),
 		TypePath: []string{"chapter"},
 		ItemID:   id,
 	}, nil

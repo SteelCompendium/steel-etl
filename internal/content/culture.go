@@ -21,7 +21,7 @@ func (p *CultureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		"type": "culture",
 	}
 
-	body := section.BodySource
+	body := section.FullBodySource()
 
 	// Extract structured fields
 	if v := extractField(body, "Environment"); v != "" {

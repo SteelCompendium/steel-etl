@@ -1,5 +1,7 @@
 package parser
 
+import "strings"
+
 // Section represents a heading-delimited section of the document.
 type Section struct {
 	Heading      string            // heading text (e.g., "Fury")
@@ -40,4 +42,30 @@ func (s *Section) AllSections() []*Section {
 		result = append(result, child.AllSections()...)
 	}
 	return result
+}
+
+// FullBodySource returns this section's BodySource plus the heading and body
+// of all unannotated descendant sections. Unannotated sub-headings (e.g. tables
+// under a feature heading) are folded into the parent's body so their content
+// is not lost when the pipeline skips sections without a @type annotation.
+func (s *Section) FullBodySource() string {
+	var parts []string
+	if s.BodySource != "" {
+		parts = append(parts, s.BodySource)
+	}
+	for _, child := range s.Children {
+		if child.Type() != "" {
+			// Annotated child with a @type — will be processed separately
+			continue
+		}
+		// Unannotated child: reconstruct its heading + body and include it
+		heading := strings.Repeat("#", child.HeadingLevel) + " " + child.Heading
+		childBody := child.FullBodySource() // recurse for nested unannotated children
+		if childBody != "" {
+			parts = append(parts, heading+"\n\n"+childBody)
+		} else {
+			parts = append(parts, heading)
+		}
+	}
+	return strings.Join(parts, "\n\n")
 }

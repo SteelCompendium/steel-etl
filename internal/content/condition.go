@@ -21,7 +21,7 @@ func (p *ConditionParser) Parse(ctx *context.ContextStack, section *parser.Secti
 			"name": section.Heading,
 			"type": "condition",
 		},
-		Body:     section.BodySource,
+		Body:     section.FullBodySource(),
 		TypePath: []string{"condition"},
 		ItemID:   id,
 	}, nil

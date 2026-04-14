@@ -21,7 +21,7 @@ func (p *ComplicationParser) Parse(ctx *context.ContextStack, section *parser.Se
 			"name": section.Heading,
 			"type": "complication",
 		},
-		Body:     section.BodySource,
+		Body:     section.FullBodySource(),
 		TypePath: []string{"complication"},
 		ItemID:   id,
 	}, nil

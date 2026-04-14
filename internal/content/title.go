@@ -28,7 +28,7 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		}
 	}
 	if _, ok := fm["echelon"]; !ok {
-		if v := extractField(section.BodySource, "Echelon"); v != "" {
+		if v := extractField(section.FullBodySource(), "Echelon"); v != "" {
 			fm["echelon"] = v
 		}
 	}
@@ -41,9 +41,9 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 	}
 
 	// Extract benefits as list
-	benefits := extractListField(section.BodySource, "Benefits")
+	benefits := extractListField(section.FullBodySource(), "Benefits")
 	if len(benefits) == 0 {
-		benefits = extractListField(section.BodySource, "Benefit")
+		benefits = extractListField(section.FullBodySource(), "Benefit")
 	}
 	if len(benefits) > 0 {
 		fm["benefits"] = benefits
@@ -51,7 +51,7 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.BodySource,
+		Body:        section.FullBodySource(),
 		TypePath:    []string{"title"},
 		ItemID:      id,
 	}, nil

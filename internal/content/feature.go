@@ -24,7 +24,7 @@ func (p *FeatureGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 	// feature-group is a container -- not classified with its own SCC
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.BodySource,
+		Body:        section.FullBodySource(),
 	}, nil
 }
 
@@ -81,7 +81,7 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.BodySource,
+		Body:        section.FullBodySource(),
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil

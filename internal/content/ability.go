@@ -23,7 +23,7 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	}
 
 	// Strip blockquote prefix ("> ") from body lines
-	body := stripBlockquotePrefix(section.BodySource)
+	body := stripBlockquotePrefix(section.FullBodySource())
 
 	fm := map[string]any{
 		"name": cleanName,

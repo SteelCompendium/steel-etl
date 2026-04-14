@@ -23,7 +23,7 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 		"type": "career",
 	}
 
-	body := section.BodySource
+	body := section.FullBodySource()
 
 	// Extract structured fields from body
 	if v := extractField(body, "Skill"); v != "" {

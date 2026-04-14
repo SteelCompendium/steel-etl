@@ -23,7 +23,7 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 		"type": "kit",
 	}
 
-	body := section.BodySource
+	body := section.FullBodySource()
 
 	// Extract stat bonuses from table if present
 	statBonuses := extractKitStatBonuses(body)

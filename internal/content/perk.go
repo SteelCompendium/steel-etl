@@ -24,15 +24,15 @@ func (p *PerkParser) Parse(ctx *context.ContextStack, section *parser.Section) (
 	}
 
 	// Extract prerequisites from body
-	if prereq := extractField(section.BodySource, "Prerequisite"); prereq != "" {
+	if prereq := extractField(section.FullBodySource(), "Prerequisite"); prereq != "" {
 		fm["prerequisites"] = prereq
-	} else if prereq := extractField(section.BodySource, "Prerequisites"); prereq != "" {
+	} else if prereq := extractField(section.FullBodySource(), "Prerequisites"); prereq != "" {
 		fm["prerequisites"] = prereq
 	}
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.BodySource,
+		Body:        section.FullBodySource(),
 		TypePath:    []string{"perk"},
 		ItemID:      id,
 	}, nil

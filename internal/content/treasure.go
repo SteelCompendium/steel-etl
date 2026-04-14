@@ -39,7 +39,7 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 	}
 
 	// Extract properties
-	body := section.BodySource
+	body := section.FullBodySource()
 	if v := extractField(body, "Level"); v != "" {
 		fm["level"] = v
 	}
