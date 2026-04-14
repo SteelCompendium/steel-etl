@@ -1,11 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "kit.schema.json-1.0.0",
   "title": "Draw Steel Kit",
   "description": "A kit definition for Draw Steel, providing stat bonuses and equipment.",
   "type": "object",
   "required": ["name", "type"],
-  "additionalProperties": false,
+  "unevaluatedProperties": false,
   "properties": {
     "name": {
       "type": "string",

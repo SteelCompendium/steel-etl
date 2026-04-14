@@ -1,11 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "title.schema.json-1.0.0",
   "title": "Draw Steel Title",
   "description": "A title that can be earned by heroes at various echelons.",
   "type": "object",
   "required": ["name", "type"],
-  "additionalProperties": false,
+  "unevaluatedProperties": false,
   "properties": {
     "name": {
       "type": "string",

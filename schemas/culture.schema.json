@@ -1,11 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "culture.schema.json-1.0.0",
   "title": "Draw Steel Culture",
   "description": "A culture that shapes a hero's upbringing and skills.",
   "type": "object",
   "required": ["name", "type"],
-  "additionalProperties": false,
+  "unevaluatedProperties": false,
   "properties": {
     "name": {
       "type": "string",
