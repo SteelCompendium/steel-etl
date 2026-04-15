@@ -247,13 +247,9 @@ func TestKitParser_IncludesUnannotatedSubheadings(t *testing.T) {
 		t.Error("kit body should include unannotated sub-heading content")
 	}
 
-	// Stat bonus extraction should still work from own body
-	bonuses, ok := result.Frontmatter["stat_bonuses"].(map[string]string)
-	if !ok {
-		t.Fatal("expected stat_bonuses")
-	}
-	if bonuses["stamina"] != "+3" {
-		t.Errorf("stamina = %v, want +3", bonuses["stamina"])
+	// Individual bonus field extraction should still work from own body
+	if result.Frontmatter["stamina_bonus"] != "+3" {
+		t.Errorf("stamina_bonus = %v, want +3", result.Frontmatter["stamina_bonus"])
 	}
 }
 

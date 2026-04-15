@@ -16,13 +16,25 @@ func (p *ComplicationParser) Parse(ctx *context.ContextStack, section *parser.Se
 		id = Slugify(section.Heading)
 	}
 
+	fm := map[string]any{
+		"name": section.Heading,
+		"type": "complication",
+	}
+
+	body := section.FullBodySource()
+
+	// Extract structured fields
+	if v := extractField(body, "Benefit"); v != "" {
+		fm["benefit"] = v
+	}
+	if v := extractField(body, "Drawback"); v != "" {
+		fm["drawback"] = v
+	}
+
 	return &ParsedContent{
-		Frontmatter: map[string]any{
-			"name": section.Heading,
-			"type": "complication",
-		},
-		Body:     section.FullBodySource(),
-		TypePath: []string{"complication"},
-		ItemID:   id,
+		Frontmatter: fm,
+		Body:        body,
+		TypePath:    []string{"complication"},
+		ItemID:      id,
 	}, nil
 }

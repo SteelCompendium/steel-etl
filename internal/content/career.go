@@ -26,10 +26,11 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 	body := section.FullBodySource()
 
 	// Extract structured fields from body
+	// Skills: parse as array (split on comma if present)
 	if v := extractField(body, "Skill"); v != "" {
-		fm["skill"] = v
+		fm["skills"] = splitCommaList(v)
 	} else if v := extractField(body, "Skills"); v != "" {
-		fm["skill"] = v
+		fm["skills"] = splitCommaList(v)
 	}
 	if v := extractField(body, "Language"); v != "" {
 		fm["language"] = v
@@ -51,10 +52,20 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 
 	// Check annotations for explicit overrides
 	if ann := section.Annotation; ann != nil {
-		for _, key := range []string{"skill", "language", "renown", "wealth", "perk"} {
+		for _, key := range []string{"language", "renown", "wealth", "perk"} {
 			if v, ok := ann[key]; ok {
 				fm[key] = v
 			}
+		}
+		// skills annotation override (singular "skill" annotation → skills array)
+		if v, ok := ann["skill"]; ok {
+			fm["skills"] = splitCommaList(v)
+		}
+		if v, ok := ann["skills"]; ok {
+			fm["skills"] = splitCommaList(v)
+		}
+		if v, ok := ann["skill_group"]; ok {
+			fm["skill_group"] = v
 		}
 	}
 
@@ -64,6 +75,19 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 		TypePath:    []string{"career"},
 		ItemID:      id,
 	}, nil
+}
+
+// splitCommaList splits a comma-separated string into a trimmed string slice.
+func splitCommaList(s string) []string {
+	parts := strings.Split(s, ",")
+	var result []string
+	for _, p := range parts {
+		trimmed := strings.TrimSpace(p)
+		if trimmed != "" {
+			result = append(result, trimmed)
+		}
+	}
+	return result
 }
 
 // extractListField looks for lines starting with "- " after a field header.

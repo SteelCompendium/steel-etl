@@ -43,22 +43,24 @@ func TestKitParser(t *testing.T) {
 		t.Errorf("ItemID = %q, want %q", result.ItemID, "shining-armor")
 	}
 
-	bonuses, ok := result.Frontmatter["stat_bonuses"].(map[string]string)
-	if !ok {
-		t.Fatal("expected stat_bonuses map")
+	// Individual bonus fields
+	if result.Frontmatter["stamina_bonus"] != "+9" {
+		t.Errorf("stamina_bonus = %q, want +9", result.Frontmatter["stamina_bonus"])
 	}
-	if bonuses["stamina"] != "+9" {
-		t.Errorf("stamina bonus = %q, want +9", bonuses["stamina"])
+	if result.Frontmatter["speed_bonus"] != "-1" {
+		t.Errorf("speed_bonus = %q, want -1", result.Frontmatter["speed_bonus"])
 	}
-	if bonuses["speed"] != "-1" {
-		t.Errorf("speed bonus = %q, want -1", bonuses["speed"])
-	}
-	if bonuses["melee-damage"] != "+2/+2/+2" {
-		t.Errorf("melee-damage bonus = %q, want +2/+2/+2", bonuses["melee-damage"])
+	if result.Frontmatter["melee_damage_bonus"] != "+2/+2/+2" {
+		t.Errorf("melee_damage_bonus = %q, want +2/+2/+2", result.Frontmatter["melee_damage_bonus"])
 	}
 	// Ranged Damage is "—" (em dash) so should be excluded
-	if _, exists := bonuses["ranged-damage"]; exists {
-		t.Error("expected ranged-damage to be excluded (em dash value)")
+	if _, exists := result.Frontmatter["ranged_damage_bonus"]; exists {
+		t.Error("expected ranged_damage_bonus to be excluded (em dash value)")
+	}
+
+	// Equipment text
+	if result.Frontmatter["equipment_text"] != "Heavy armor, a melee weapon" {
+		t.Errorf("equipment_text = %v, want 'Heavy armor, a melee weapon'", result.Frontmatter["equipment_text"])
 	}
 }
 
@@ -87,8 +89,8 @@ func TestAncestryParser(t *testing.T) {
 	if result.Frontmatter["name"] != "Dwarf" {
 		t.Errorf("name = %v, want Dwarf", result.Frontmatter["name"])
 	}
-	if result.Frontmatter["signature_trait"] != "Sturdy" {
-		t.Errorf("signature_trait = %v, want Sturdy", result.Frontmatter["signature_trait"])
+	if result.Frontmatter["signature_trait_name"] != "Sturdy" {
+		t.Errorf("signature_trait_name = %v, want Sturdy", result.Frontmatter["signature_trait_name"])
 	}
 	if result.ItemID != "dwarf" {
 		t.Errorf("ItemID = %q, want %q", result.ItemID, "dwarf")

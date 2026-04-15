@@ -23,9 +23,9 @@ func (p *AncestryParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 
 	body := section.FullBodySource()
 
-	// Extract signature trait
+	// Extract signature trait as name + description split
 	if v := extractField(body, "Signature Trait"); v != "" {
-		fm["signature_trait"] = v
+		fm["signature_trait_name"] = v
 	}
 
 	return &ParsedContent{

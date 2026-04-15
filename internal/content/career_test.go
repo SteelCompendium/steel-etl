@@ -34,10 +34,18 @@ func TestCareerParser(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	tests := map[string]string{
+	// skills is now an array
+	skills, ok := result.Frontmatter["skills"].([]string)
+	if !ok {
+		t.Fatal("expected skills to be []string")
+	}
+	if len(skills) != 1 || skills[0] != "Crafting" {
+		t.Errorf("skills = %v, want [Crafting]", skills)
+	}
+
+	stringTests := map[string]string{
 		"name":           "Artisan",
 		"type":           "career",
-		"skill":          "Crafting",
 		"language":       "One language of your choice",
 		"renown":         "1",
 		"wealth":         "2",
@@ -45,7 +53,7 @@ func TestCareerParser(t *testing.T) {
 		"perk":           "Handy",
 	}
 
-	for key, want := range tests {
+	for key, want := range stringTests {
 		got, ok := result.Frontmatter[key]
 		if !ok {
 			t.Errorf("missing field %q", key)

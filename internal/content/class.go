@@ -23,14 +23,39 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		"type": "class",
 	}
 
+	body := section.FullBodySource()
+
 	// Extract heroic resource from body
-	if hr := extractHeroicResource(section.FullBodySource()); hr != "" {
+	if hr := extractHeroicResource(body); hr != "" {
 		fm["heroic_resource"] = hr
+	}
+
+	// Extract primary characteristics
+	if v := extractField(body, "Primary Characteristics"); v != "" {
+		fm["primary_characteristics"] = splitCommaList(v)
+	}
+
+	// Extract potency fields
+	if v := extractField(body, "Weak Potency"); v != "" {
+		fm["weak_potency"] = v
+	}
+	if v := extractField(body, "Average Potency"); v != "" {
+		fm["average_potency"] = v
+	}
+	if v := extractField(body, "Strong Potency"); v != "" {
+		fm["strong_potency"] = v
+	}
+
+	// Extract skills
+	if v := extractField(body, "Skill"); v != "" {
+		fm["skills"] = splitCommaList(v)
+	} else if v := extractField(body, "Skills"); v != "" {
+		fm["skills"] = splitCommaList(v)
 	}
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.FullBodySource(),
+		Body:        body,
 		TypePath:    []string{"class"},
 		ItemID:      id,
 	}, nil

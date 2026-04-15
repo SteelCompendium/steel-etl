@@ -36,8 +36,13 @@ func TestCultureParser_AnnotationOverrides(t *testing.T) {
 	if result.Frontmatter["environment"] != "City" {
 		t.Errorf("environment = %v, want City (annotation override)", result.Frontmatter["environment"])
 	}
-	if result.Frontmatter["skill"] != "Persuasion" {
-		t.Errorf("skill = %v, want Persuasion", result.Frontmatter["skill"])
+	// skill annotation → skill_options array
+	skillOpts, ok := result.Frontmatter["skill_options"].([]string)
+	if !ok {
+		t.Fatal("expected skill_options to be []string")
+	}
+	if len(skillOpts) != 1 || skillOpts[0] != "Persuasion" {
+		t.Errorf("skill_options = %v, want [Persuasion]", skillOpts)
 	}
 	if result.Frontmatter["language"] != "Common" {
 		t.Errorf("language = %v, want Common", result.Frontmatter["language"])
@@ -61,8 +66,13 @@ func TestCultureParser_PluralFieldNames(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	if result.Frontmatter["skill"] != "Diplomacy" {
-		t.Errorf("skill = %v, want Diplomacy (from Skills plural)", result.Frontmatter["skill"])
+	// Skills → skill_options array
+	skillOpts, ok := result.Frontmatter["skill_options"].([]string)
+	if !ok {
+		t.Fatal("expected skill_options to be []string")
+	}
+	if len(skillOpts) != 1 || skillOpts[0] != "Diplomacy" {
+		t.Errorf("skill_options = %v, want [Diplomacy] (from Skills plural)", skillOpts)
 	}
 	if result.Frontmatter["language"] != "Common, Elvish" {
 		t.Errorf("language = %v, want 'Common, Elvish' (from Languages plural)", result.Frontmatter["language"])
@@ -154,6 +164,32 @@ func TestTreasureParser_NoID(t *testing.T) {
 	}
 }
 
+func TestTreasureParser_Keywords(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Ring of Protection",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "treasure", "treasure-type": "Leveled"},
+		BodySource:   "A magical ring.\n\n**Keywords:** Magic, Ring\n**Effect:** +1 to defense",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := (&TreasureParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	kw, ok := result.Frontmatter["keywords"].([]string)
+	if !ok {
+		t.Fatal("expected keywords to be []string")
+	}
+	if len(kw) != 2 || kw[0] != "Magic" || kw[1] != "Ring" {
+		t.Errorf("keywords = %v, want [Magic, Ring]", kw)
+	}
+	if result.Frontmatter["effect"] != "+1 to defense" {
+		t.Errorf("effect = %v, want '+1 to defense'", result.Frontmatter["effect"])
+	}
+}
+
 // TitleParser: echelon from body, echelon from context, benefits with "Benefit" singular
 func TestTitleParser_EchelonFromBody(t *testing.T) {
 	section := &parser.Section{
@@ -222,6 +258,28 @@ func TestTitleParser_NoEchelon(t *testing.T) {
 	}
 }
 
+func TestTitleParser_PrerequisiteAndEffect(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Archmage",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "title", "echelon": "4"},
+		BodySource:   "The pinnacle of magical mastery.\n\n**Prerequisite:** Must be a caster class\n**Effect:** You gain access to 10th-level spells.",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := (&TitleParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["prerequisite"] != "Must be a caster class" {
+		t.Errorf("prerequisite = %v, want 'Must be a caster class'", result.Frontmatter["prerequisite"])
+	}
+	if result.Frontmatter["effect"] != "You gain access to 10th-level spells." {
+		t.Errorf("effect = %v, want 'You gain access to 10th-level spells.'", result.Frontmatter["effect"])
+	}
+}
+
 // CareerParser: annotation overrides, plural "Skills"/"Languages"
 func TestCareerParser_AnnotationOverrides(t *testing.T) {
 	section := &parser.Section{
@@ -244,9 +302,13 @@ func TestCareerParser_AnnotationOverrides(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	// Annotation overrides should win
-	if result.Frontmatter["skill"] != "Lore" {
-		t.Errorf("skill = %v, want Lore (annotation override)", result.Frontmatter["skill"])
+	// Annotation overrides should win - skill → skills array
+	skills, ok := result.Frontmatter["skills"].([]string)
+	if !ok {
+		t.Fatal("expected skills to be []string")
+	}
+	if len(skills) != 1 || skills[0] != "Lore" {
+		t.Errorf("skills = %v, want [Lore] (annotation override)", skills)
 	}
 	if result.Frontmatter["language"] != "Ancient" {
 		t.Errorf("language = %v, want Ancient (annotation override)", result.Frontmatter["language"])
@@ -270,8 +332,13 @@ func TestCareerParser_PluralFields(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	if result.Frontmatter["skill"] != "Persuasion" {
-		t.Errorf("skill = %v, want Persuasion (from Skills plural)", result.Frontmatter["skill"])
+	// Skills → skills array
+	skills, ok := result.Frontmatter["skills"].([]string)
+	if !ok {
+		t.Fatal("expected skills to be []string")
+	}
+	if len(skills) != 1 || skills[0] != "Persuasion" {
+		t.Errorf("skills = %v, want [Persuasion] (from Skills plural)", skills)
 	}
 	if result.Frontmatter["language"] != "Common, Elvish" {
 		t.Errorf("language = %v, want 'Common, Elvish' (from Languages plural)", result.Frontmatter["language"])
@@ -322,6 +389,29 @@ func TestClassParser_NoAnnotation(t *testing.T) {
 	}
 }
 
+func TestClassParser_PrimaryCharacteristics(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Fury",
+		HeadingLevel: 2,
+		Annotation:   map[string]string{"type": "class", "id": "fury"},
+		BodySource:   "The fury charges into battle.\n\n**Primary Characteristics:** Might, Agility\n**Heroic Resource: Rage**",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := (&ClassParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	chars, ok := result.Frontmatter["primary_characteristics"].([]string)
+	if !ok {
+		t.Fatal("expected primary_characteristics to be []string")
+	}
+	if len(chars) != 2 || chars[0] != "Might" || chars[1] != "Agility" {
+		t.Errorf("primary_characteristics = %v, want [Might, Agility]", chars)
+	}
+}
+
 // KitParser: with annotation kit-type
 func TestKitParser_WithKitType(t *testing.T) {
 	section := &parser.Section{
@@ -341,12 +431,8 @@ func TestKitParser_WithKitType(t *testing.T) {
 		t.Errorf("kit_type = %v, want martial", result.Frontmatter["kit_type"])
 	}
 
-	bonuses, ok := result.Frontmatter["stat_bonuses"].(map[string]string)
-	if !ok {
-		t.Fatal("expected stat_bonuses")
-	}
-	if bonuses["stamina"] != "+3" {
-		t.Errorf("stamina = %v, want +3", bonuses["stamina"])
+	if result.Frontmatter["stamina_bonus"] != "+3" {
+		t.Errorf("stamina_bonus = %v, want +3", result.Frontmatter["stamina_bonus"])
 	}
 }
 
@@ -364,17 +450,20 @@ func TestKitParser_NoTable(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	if _, ok := result.Frontmatter["stat_bonuses"]; ok {
-		t.Error("expected no stat_bonuses when no table present")
+	// No bonus fields should be present
+	for _, field := range []string{"stamina_bonus", "speed_bonus", "melee_damage_bonus"} {
+		if _, ok := result.Frontmatter[field]; ok {
+			t.Errorf("expected no %s when no table present", field)
+		}
 	}
 }
 
-func TestKitParser_WithEquipment(t *testing.T) {
+func TestKitParser_WithEquipmentText(t *testing.T) {
 	section := &parser.Section{
 		Heading:      "Heavy Kit",
 		HeadingLevel: 3,
 		Annotation:   map[string]string{"type": "kit"},
-		BodySource:   "A heavy kit.\n\n**Equipment:**\n- Heavy armor\n- Shield\n- Longsword",
+		BodySource:   "A heavy kit.\n\n**Equipment:** Heavy armor, shield, and a longsword",
 	}
 
 	ctx := context.NewContextStack(nil)
@@ -383,12 +472,72 @@ func TestKitParser_WithEquipment(t *testing.T) {
 		t.Fatalf("Parse failed: %v", err)
 	}
 
-	equipment, ok := result.Frontmatter["equipment"].([]string)
-	if !ok {
-		t.Fatal("expected equipment to be []string")
+	if result.Frontmatter["equipment_text"] != "Heavy armor, shield, and a longsword" {
+		t.Errorf("equipment_text = %v, want 'Heavy armor, shield, and a longsword'", result.Frontmatter["equipment_text"])
 	}
-	if len(equipment) != 3 {
-		t.Errorf("expected 3 equipment items, got %d: %v", len(equipment), equipment)
+}
+
+// ComplicationParser: benefit and drawback extraction
+func TestComplicationParser_BenefitDrawback(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Criminal Past",
+		HeadingLevel: 3,
+		Annotation:   map[string]string{"type": "complication"},
+		BodySource:   "You have a criminal record.\n\n**Benefit:** You know the underworld\n**Drawback:** The law is watching you",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := (&ComplicationParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["benefit"] != "You know the underworld" {
+		t.Errorf("benefit = %v, want 'You know the underworld'", result.Frontmatter["benefit"])
+	}
+	if result.Frontmatter["drawback"] != "The law is watching you" {
+		t.Errorf("drawback = %v, want 'The law is watching you'", result.Frontmatter["drawback"])
+	}
+}
+
+// PerkParser: perk_group extraction
+func TestPerkParser_PerkGroup(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Alert",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "perk", "perk-group": "Exploration"},
+		BodySource:   "You are always on guard.",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := (&PerkParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["perk_group"] != "Exploration" {
+		t.Errorf("perk_group = %v, want Exploration", result.Frontmatter["perk_group"])
+	}
+}
+
+func TestPerkParser_PerkGroupFromContext(t *testing.T) {
+	section := &parser.Section{
+		Heading:      "Craft Item",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "perk"},
+		BodySource:   "You can craft items during downtime.",
+	}
+
+	ctx := context.NewContextStack(nil)
+	ctx.Push(3, context.Metadata{"perk-group": "Crafting"})
+
+	result, err := (&PerkParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	if result.Frontmatter["perk_group"] != "Crafting" {
+		t.Errorf("perk_group = %v, want Crafting (from context)", result.Frontmatter["perk_group"])
 	}
 }
 

@@ -23,16 +23,33 @@ func (p *PerkParser) Parse(ctx *context.ContextStack, section *parser.Section) (
 		"type": "perk",
 	}
 
+	body := section.FullBodySource()
+
 	// Extract prerequisites from body
-	if prereq := extractField(section.FullBodySource(), "Prerequisite"); prereq != "" {
+	if prereq := extractField(body, "Prerequisite"); prereq != "" {
 		fm["prerequisites"] = prereq
-	} else if prereq := extractField(section.FullBodySource(), "Prerequisites"); prereq != "" {
+	} else if prereq := extractField(body, "Prerequisites"); prereq != "" {
 		fm["prerequisites"] = prereq
+	}
+
+	// Extract perk_group from annotation or context
+	if ann := section.Annotation; ann != nil {
+		if v, ok := ann["perk-group"]; ok {
+			fm["perk_group"] = v
+		}
+		if v, ok := ann["perk_group"]; ok {
+			fm["perk_group"] = v
+		}
+	}
+	if _, ok := fm["perk_group"]; !ok {
+		if pg, ok := ctx.Lookup(section.HeadingLevel, "perk-group"); ok {
+			fm["perk_group"] = pg
+		}
 	}
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.FullBodySource(),
+		Body:        body,
 		TypePath:    []string{"perk"},
 		ItemID:      id,
 	}, nil

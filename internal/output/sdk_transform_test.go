@@ -289,12 +289,10 @@ func TestTransformPassthrough_Class(t *testing.T) {
 func TestTransformPassthrough_Kit(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
-			"name": "Panther",
-			"type": "kit",
-			"stat_bonuses": map[string]string{
-				"stamina": "+3",
-				"speed":   "+2",
-			},
+			"name":          "Panther",
+			"type":          "kit",
+			"stamina_bonus": "+3",
+			"speed_bonus":   "+2",
 		},
 		Body: "A swift melee kit.",
 	}
@@ -303,6 +301,8 @@ func TestTransformPassthrough_Kit(t *testing.T) {
 
 	assertEqual(t, out["type"], "kit")
 	assertEqual(t, out["content"], "A swift melee kit.")
+	assertEqual(t, out["stamina_bonus"], "+3")
+	assertEqual(t, out["speed_bonus"], "+2")
 }
 
 func TestTransformAbility_JSONSchemaCompliant(t *testing.T) {

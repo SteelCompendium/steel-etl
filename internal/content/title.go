@@ -21,6 +21,8 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		"type": "title",
 	}
 
+	body := section.FullBodySource()
+
 	// Extract echelon from annotation or body
 	if ann := section.Annotation; ann != nil {
 		if v, ok := ann["echelon"]; ok {
@@ -28,7 +30,7 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		}
 	}
 	if _, ok := fm["echelon"]; !ok {
-		if v := extractField(section.FullBodySource(), "Echelon"); v != "" {
+		if v := extractField(body, "Echelon"); v != "" {
 			fm["echelon"] = v
 		}
 	}
@@ -41,17 +43,29 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 	}
 
 	// Extract benefits as list
-	benefits := extractListField(section.FullBodySource(), "Benefits")
+	benefits := extractListField(body, "Benefits")
 	if len(benefits) == 0 {
-		benefits = extractListField(section.FullBodySource(), "Benefit")
+		benefits = extractListField(body, "Benefit")
 	}
 	if len(benefits) > 0 {
 		fm["benefits"] = benefits
 	}
 
+	// Extract prerequisite
+	if v := extractField(body, "Prerequisite"); v != "" {
+		fm["prerequisite"] = v
+	} else if v := extractField(body, "Prerequisites"); v != "" {
+		fm["prerequisite"] = v
+	}
+
+	// Extract effect
+	if v := extractField(body, "Effect"); v != "" {
+		fm["effect"] = v
+	}
+
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.FullBodySource(),
+		Body:        body,
 		TypePath:    []string{"title"},
 		ItemID:      id,
 	}, nil

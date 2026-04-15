@@ -25,16 +25,12 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 
 	body := section.FullBodySource()
 
-	// Extract stat bonuses from table if present
-	statBonuses := extractKitStatBonuses(body)
-	if len(statBonuses) > 0 {
-		fm["stat_bonuses"] = statBonuses
-	}
+	// Extract individual stat bonus fields from table
+	extractKitBonusFields(body, fm)
 
-	// Extract equipment list
-	equipment := extractListField(body, "Equipment")
-	if len(equipment) > 0 {
-		fm["equipment"] = equipment
+	// Extract equipment text as raw string
+	if v := extractField(body, "Equipment"); v != "" {
+		fm["equipment_text"] = v
 	}
 
 	// Extract kit type from annotation
@@ -52,9 +48,23 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 	}, nil
 }
 
-// extractKitStatBonuses parses a kit's stat bonus table.
-// Kit tables typically have headers like: Stamina | Speed | Melee Damage | ...
-func extractKitStatBonuses(body string) map[string]string {
+// kitBonusMapping maps slugified table header names to their schema field names.
+var kitBonusMapping = map[string]string{
+	"stamina":          "stamina_bonus",
+	"speed":            "speed_bonus",
+	"stability":        "stability_bonus",
+	"melee-damage":     "melee_damage_bonus",
+	"ranged-damage":    "ranged_damage_bonus",
+	"melee-distance":   "melee_distance_bonus",
+	"ranged-distance":  "ranged_distance_bonus",
+	"disengage":        "disengage_bonus",
+	"damage":           "melee_damage_bonus",
+	"distance":         "melee_distance_bonus",
+}
+
+// extractKitBonusFields parses a kit's stat bonus table and sets individual
+// bonus fields on the frontmatter map (e.g., stamina_bonus, speed_bonus).
+func extractKitBonusFields(body string, fm map[string]any) {
 	lines := strings.Split(body, "\n")
 	var tableRows []string
 
@@ -66,25 +76,28 @@ func extractKitStatBonuses(body string) map[string]string {
 	}
 
 	if len(tableRows) < 2 {
-		return nil
+		return
 	}
 
 	// First row = headers, second row = values
 	headers := splitTableCells(tableRows[0])
 	values := splitTableCells(tableRows[1])
 
-	bonuses := make(map[string]string)
 	for i, header := range headers {
-		if i < len(values) {
-			h := strings.TrimSpace(strings.ReplaceAll(header, "**", ""))
-			v := strings.TrimSpace(strings.ReplaceAll(values[i], "**", ""))
-			if h != "" && v != "" && v != "-" && v != "—" {
-				bonuses[Slugify(h)] = v
-			}
+		if i >= len(values) {
+			break
+		}
+		h := strings.TrimSpace(strings.ReplaceAll(header, "**", ""))
+		v := strings.TrimSpace(strings.ReplaceAll(values[i], "**", ""))
+		if h == "" || v == "" || v == "-" || v == "—" {
+			continue
+		}
+
+		slug := Slugify(h)
+		if fieldName, ok := kitBonusMapping[slug]; ok {
+			fm[fieldName] = v
 		}
 	}
-
-	return bonuses
 }
 
 // splitTableCells splits a markdown table row by "|" and returns trimmed cells.
