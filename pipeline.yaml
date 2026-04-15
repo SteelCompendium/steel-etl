@@ -10,6 +10,11 @@ input: ./input/heroes/Draw Steel Heroes.md
 # Locale (default: en)
 locale: en
 
+# Directory for translated input files.
+# For locale "es", the pipeline looks for: {i18n_dir}/es/Draw Steel Heroes.md
+# Falls back to the default input if the locale file doesn't exist.
+i18n_dir: ./input/i18n
+
 # --- Classification -------------------------------------------------------
 
 classification:

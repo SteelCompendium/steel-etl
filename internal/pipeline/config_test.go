@@ -118,6 +118,84 @@ func TestConfigHasFormat(t *testing.T) {
 	}
 }
 
+func TestResolveInputPath_EnglishLocale(t *testing.T) {
+	cfg := &Config{
+		Input:     "./input/heroes/Draw Steel Heroes.md",
+		Locale:    "en",
+		I18nDir:   "./input/i18n",
+		ConfigDir: t.TempDir(),
+	}
+
+	got := cfg.ResolveInputPath()
+	want := cfg.ResolvePath(cfg.Input)
+	if got != want {
+		t.Errorf("English locale should use default input\ngot:  %s\nwant: %s", got, want)
+	}
+}
+
+func TestResolveInputPath_NoI18nDir(t *testing.T) {
+	cfg := &Config{
+		Input:     "./input/heroes/Draw Steel Heroes.md",
+		Locale:    "es",
+		I18nDir:   "", // not set
+		ConfigDir: t.TempDir(),
+	}
+
+	got := cfg.ResolveInputPath()
+	want := cfg.ResolvePath(cfg.Input)
+	if got != want {
+		t.Errorf("No i18n_dir should fall back to default input\ngot:  %s\nwant: %s", got, want)
+	}
+}
+
+func TestResolveInputPath_LocaleFileExists(t *testing.T) {
+	dir := t.TempDir()
+
+	// Create the locale-specific input file
+	i18nDir := filepath.Join(dir, "input", "i18n", "es")
+	if err := os.MkdirAll(i18nDir, 0755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(i18nDir, "Draw Steel Heroes.md"), []byte("# Héroes"), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	cfg := &Config{
+		Input:     "./input/heroes/Draw Steel Heroes.md",
+		Locale:    "es",
+		I18nDir:   "./input/i18n",
+		ConfigDir: dir,
+	}
+
+	got := cfg.ResolveInputPath()
+	want := filepath.Join(dir, "input", "i18n", "es", "Draw Steel Heroes.md")
+	if got != want {
+		t.Errorf("Should resolve to locale-specific input\ngot:  %s\nwant: %s", got, want)
+	}
+}
+
+func TestResolveInputPath_LocaleFileMissing(t *testing.T) {
+	dir := t.TempDir()
+
+	// Create i18n dir but no locale file
+	if err := os.MkdirAll(filepath.Join(dir, "input", "i18n", "fr"), 0755); err != nil {
+		t.Fatal(err)
+	}
+
+	cfg := &Config{
+		Input:     "./input/heroes/Draw Steel Heroes.md",
+		Locale:    "fr",
+		I18nDir:   "./input/i18n",
+		ConfigDir: dir,
+	}
+
+	got := cfg.ResolveInputPath()
+	want := cfg.ResolvePath(cfg.Input)
+	if got != want {
+		t.Errorf("Missing locale file should fall back to default\ngot:  %s\nwant: %s", got, want)
+	}
+}
+
 func TestConfigResolvePath(t *testing.T) {
 	cfg := &Config{ConfigDir: "/home/user/project"}
 

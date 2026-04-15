@@ -13,6 +13,7 @@ type Config struct {
 	Book           string              `yaml:"book"`
 	Input          string              `yaml:"input"`
 	Locale         string              `yaml:"locale"`
+	I18nDir        string              `yaml:"i18n_dir"` // e.g., "./input/i18n" — locale input files live at {i18n_dir}/{locale}/...
 	Classification ClassificationConfig `yaml:"classification"`
 	Output         OutputConfig        `yaml:"output"`
 	Parsers        ParsersConfig       `yaml:"parsers"`
@@ -114,4 +115,26 @@ func (c *Config) HasFormat(format string) bool {
 		}
 	}
 	return false
+}
+
+// ResolveInputPath returns the input file path for the configured locale.
+// For "en" (or when no i18n_dir is set), returns the default input path.
+// For other locales, looks for the input file under {i18n_dir}/{locale}/.
+// The translated file is expected to mirror the default input's basename.
+func (c *Config) ResolveInputPath() string {
+	defaultPath := c.ResolvePath(c.Input)
+
+	if c.Locale == "en" || c.Locale == "" || c.I18nDir == "" {
+		return defaultPath
+	}
+
+	base := filepath.Base(c.Input)
+	localePath := filepath.Join(c.ResolvePath(c.I18nDir), c.Locale, base)
+
+	// Fall back to default if the locale file doesn't exist
+	if _, err := os.Stat(localePath); os.IsNotExist(err) {
+		return defaultPath
+	}
+
+	return localePath
 }

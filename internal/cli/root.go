@@ -21,4 +21,5 @@ func init() {
 	rootCmd.AddCommand(validateCmd)
 	rootCmd.AddCommand(classifyCmd)
 	rootCmd.AddCommand(stripCmd)
+	rootCmd.AddCommand(siteCmd)
 }

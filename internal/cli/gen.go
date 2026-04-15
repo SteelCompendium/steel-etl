@@ -48,7 +48,7 @@ func runGen(cmd *cobra.Command, args []string) error {
 	}
 
 	// Resolve paths
-	inputPath := cfg.ResolvePath(cfg.Input)
+	inputPath := cfg.ResolveInputPath()
 	registryPath := ""
 	if cfg.Classification.Registry != "" {
 		registryPath = cfg.ResolvePath(cfg.Classification.Registry)
