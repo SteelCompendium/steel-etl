@@ -20,11 +20,17 @@ func TestKitParser(t *testing.T) {
 		Annotation:   map[string]string{"type": "kit", "id": "shining-armor"},
 		BodySource: `The shining armor kit is for heroes who stand at the front of battle.
 
-| **Stamina** | **Speed** | **Melee Damage** | **Ranged Damage** |
-| --- | --- | --- | --- |
-| **+9** | **-1** | **+2/+2/+2** | **—** |
+##### Equipment
 
-**Equipment:** Heavy armor, a melee weapon`,
+Heavy armor, a melee weapon
+
+##### Kit Bonuses
+
+**Stamina Bonus:** +9
+
+**Speed Bonus:** -1
+
+**Melee Damage Bonus:** +2/+2/+2`,
 	}
 
 	ctx := context.NewContextStack(nil)
@@ -43,7 +49,7 @@ func TestKitParser(t *testing.T) {
 		t.Errorf("ItemID = %q, want %q", result.ItemID, "shining-armor")
 	}
 
-	// Individual bonus fields
+	// Individual bonus fields extracted from **Field Bonus:** value lines
 	if result.Frontmatter["stamina_bonus"] != "+9" {
 		t.Errorf("stamina_bonus = %q, want +9", result.Frontmatter["stamina_bonus"])
 	}
@@ -53,12 +59,12 @@ func TestKitParser(t *testing.T) {
 	if result.Frontmatter["melee_damage_bonus"] != "+2/+2/+2" {
 		t.Errorf("melee_damage_bonus = %q, want +2/+2/+2", result.Frontmatter["melee_damage_bonus"])
 	}
-	// Ranged Damage is "—" (em dash) so should be excluded
+	// Ranged Damage is not present, so should be excluded
 	if _, exists := result.Frontmatter["ranged_damage_bonus"]; exists {
-		t.Error("expected ranged_damage_bonus to be excluded (em dash value)")
+		t.Error("expected ranged_damage_bonus to be excluded (not in body)")
 	}
 
-	// Equipment text
+	// Equipment text extracted from paragraph after ##### Equipment heading
 	if result.Frontmatter["equipment_text"] != "Heavy armor, a melee weapon" {
 		t.Errorf("equipment_text = %v, want 'Heavy armor, a melee weapon'", result.Frontmatter["equipment_text"])
 	}

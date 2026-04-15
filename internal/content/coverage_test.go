@@ -418,7 +418,7 @@ func TestKitParser_WithKitType(t *testing.T) {
 		Heading:      "Ranger Kit",
 		HeadingLevel: 3,
 		Annotation:   map[string]string{"type": "kit", "kit-type": "martial"},
-		BodySource:   "A kit for rangers.\n\n| **Stamina** | **Speed** |\n| --- | --- |\n| **+3** | **+1** |",
+		BodySource:   "A kit for rangers.\n\n**Stamina Bonus:** +3\n\n**Speed Bonus:** +1",
 	}
 
 	ctx := context.NewContextStack(nil)

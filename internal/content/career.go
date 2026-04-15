@@ -26,11 +26,11 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 	body := section.FullBodySource()
 
 	// Extract structured fields from body
-	// Skills: parse as array (split on comma if present)
+	// Skills: wrap as single-element array (source text is natural language, not a clean list)
 	if v := extractField(body, "Skill"); v != "" {
-		fm["skills"] = splitCommaList(v)
+		fm["skills"] = []string{v}
 	} else if v := extractField(body, "Skills"); v != "" {
-		fm["skills"] = splitCommaList(v)
+		fm["skills"] = []string{v}
 	}
 	if v := extractField(body, "Language"); v != "" {
 		fm["language"] = v
@@ -59,7 +59,7 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 		}
 		// skills annotation override (singular "skill" annotation → skills array)
 		if v, ok := ann["skill"]; ok {
-			fm["skills"] = splitCommaList(v)
+			fm["skills"] = []string{v}
 		}
 		if v, ok := ann["skills"]; ok {
 			fm["skills"] = splitCommaList(v)

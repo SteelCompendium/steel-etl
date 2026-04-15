@@ -224,7 +224,7 @@ func TestKitParser_IncludesUnannotatedSubheadings(t *testing.T) {
 		Heading:      "Panther Kit",
 		HeadingLevel: 3,
 		Annotation:   map[string]string{"type": "kit"},
-		BodySource:   "A swift melee kit.\n\n| **Stamina** | **Speed** |\n| --- | --- |\n| **+3** | **+2** |",
+		BodySource:   "A swift melee kit.\n\n**Stamina Bonus:** +3\n\n**Speed Bonus:** +2",
 		Children: []*parser.Section{
 			{
 				Heading:      "Panther Kit Bonuses",

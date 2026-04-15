@@ -34,11 +34,11 @@ func (p *CultureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		fm["upbringing"] = v
 	}
 
-	// Skill options: parse as array
+	// Skill options: wrap as single-element array (source text is natural language)
 	if v := extractField(body, "Skill"); v != "" {
-		fm["skill_options"] = splitCommaList(v)
+		fm["skill_options"] = []string{v}
 	} else if v := extractField(body, "Skills"); v != "" {
-		fm["skill_options"] = splitCommaList(v)
+		fm["skill_options"] = []string{v}
 	}
 
 	if v := extractField(body, "Language"); v != "" {
@@ -56,7 +56,7 @@ func (p *CultureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		}
 		// skill annotation → skill_options array
 		if v, ok := ann["skill"]; ok {
-			fm["skill_options"] = splitCommaList(v)
+			fm["skill_options"] = []string{v}
 		}
 		if v, ok := ann["skill_options"]; ok {
 			fm["skill_options"] = splitCommaList(v)
