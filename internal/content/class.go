@@ -46,11 +46,11 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		fm["strong_potency"] = v
 	}
 
-	// Extract skills
+	// Extract skills (natural language text, not a clean comma-separated list)
 	if v := extractField(body, "Skill"); v != "" {
-		fm["skills"] = splitCommaList(v)
+		fm["skills"] = []string{v}
 	} else if v := extractField(body, "Skills"); v != "" {
-		fm["skills"] = splitCommaList(v)
+		fm["skills"] = []string{v}
 	}
 
 	return &ParsedContent{
