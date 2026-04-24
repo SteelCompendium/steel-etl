@@ -70,6 +70,109 @@ Heavy armor, a melee weapon
 	}
 }
 
+func TestKitParser_SignatureAbility(t *testing.T) {
+	p := &KitParser{}
+
+	// Build a kit section with a signature ability child
+	kitSection := &parser.Section{
+		Heading:      "Cloak and Dagger",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "cloak-and-dagger"},
+		BodySource: `Providing throwable light weapons and light armor.
+
+##### Equipment
+
+You wear light armor and wield one or two light weapons.
+
+##### Kit Bonuses
+
+**Stamina Bonus:** +3 per echelon
+
+**Speed Bonus:** +2
+
+**Melee Damage Bonus:** +1/+1/+1
+
+**Ranged Damage Bonus:** +1/+1/+1
+
+##### Signature Ability`,
+	}
+
+	abilitySection := &parser.Section{
+		Heading:      "Fade",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+		Parent:       kitSection,
+		BodySource: `*A stab, and a few quick, careful steps back.*
+
+| **Melee, Ranged, Strike, Weapon** |     **Main action** |
+|-----------------------------------|--------------------:|
+| **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
+
+**Power Roll + Might or Agility:**
+
+- **≤11:** 3 + M or A damage; you can shift 1 square
+- **12-16:** 6 + M or A damage; you can shift up to 2 squares
+- **17+:** 8 + M or A damage; you can shift up to 3 squares`,
+	}
+	kitSection.Children = []*parser.Section{abilitySection}
+
+	ctx := context.NewContextStack(nil)
+	result, err := p.Parse(ctx, kitSection)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	// Kit fields
+	if result.Frontmatter["name"] != "Cloak and Dagger" {
+		t.Errorf("name = %v, want Cloak and Dagger", result.Frontmatter["name"])
+	}
+	if result.Frontmatter["stamina_bonus"] != "+3 per echelon" {
+		t.Errorf("stamina_bonus = %q, want +3 per echelon", result.Frontmatter["stamina_bonus"])
+	}
+
+	// Signature ability should be in Children
+	if result.Children == nil {
+		t.Fatal("expected Children to be populated")
+	}
+	sig, ok := result.Children["signature_ability"]
+	if !ok {
+		t.Fatal("expected signature_ability in Children")
+	}
+	if sig.Frontmatter["name"] != "Fade" {
+		t.Errorf("signature_ability name = %v, want Fade", sig.Frontmatter["name"])
+	}
+	if sig.Frontmatter["type"] != "ability" {
+		t.Errorf("signature_ability type = %v, want ability", sig.Frontmatter["type"])
+	}
+	if sig.Frontmatter["subtype"] != "signature" {
+		t.Errorf("signature_ability subtype = %v, want signature", sig.Frontmatter["subtype"])
+	}
+	if sig.Frontmatter["action_type"] != "Main action" {
+		t.Errorf("signature_ability action_type = %v, want Main action", sig.Frontmatter["action_type"])
+	}
+}
+
+func TestKitParser_NoSignatureAbility(t *testing.T) {
+	p := &KitParser{}
+
+	section := &parser.Section{
+		Heading:      "Simple Kit",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "kit", "id": "simple-kit"},
+		BodySource:   "**Speed Bonus:** +1",
+	}
+
+	ctx := context.NewContextStack(nil)
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+
+	if result.Children != nil {
+		t.Error("expected Children to be nil when no signature ability")
+	}
+}
+
 func TestAncestryParser(t *testing.T) {
 	p := &AncestryParser{}
 

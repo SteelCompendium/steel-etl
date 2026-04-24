@@ -25,4 +25,8 @@ type ParsedContent struct {
 	// SCC classification components derived by the parser.
 	TypePath []string // e.g., ["abilities", "fury"]
 	ItemID   string   // e.g., "gouge"
+
+	// Children holds parsed sub-content that should be embedded in the parent.
+	// For example, a kit's signature ability is stored under "signature_ability".
+	Children map[string]*ParsedContent
 }

@@ -19,6 +19,8 @@ func TransformToSDKFormat(sccCode string, parsed *content.ParsedContent) map[str
 		return transformAbility(sccCode, parsed)
 	case "trait":
 		return transformTrait(sccCode, parsed)
+	case "kit":
+		return transformKit(sccCode, parsed)
 	default:
 		return transformPassthrough(parsed)
 	}
@@ -107,6 +109,25 @@ func transformPassthrough(parsed *content.ParsedContent) map[string]any {
 	if parsed.Body != "" {
 		out["content"] = parsed.Body
 	}
+	return out
+}
+
+// transformKit produces a kit.schema.json-compliant map.
+// Kit fields are copied from frontmatter, and the signature ability (if present
+// in Children) is transformed into a nested feature object.
+func transformKit(sccCode string, parsed *content.ParsedContent) map[string]any {
+	out := copyFrontmatter(parsed.Frontmatter)
+	if parsed.Body != "" {
+		out["content"] = parsed.Body
+	}
+
+	// Embed signature ability as a nested feature object
+	if parsed.Children != nil {
+		if sigParsed, ok := parsed.Children["signature_ability"]; ok {
+			out["signature_ability"] = transformAbility("", sigParsed)
+		}
+	}
+
 	return out
 }
 

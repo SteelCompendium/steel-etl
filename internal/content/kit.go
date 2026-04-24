@@ -39,12 +39,44 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 		}
 	}
 
-	return &ParsedContent{
+	result := &ParsedContent{
 		Frontmatter: fm,
 		Body:        body,
 		TypePath:    []string{"kit"},
 		ItemID:      id,
-	}, nil
+	}
+
+	// Extract signature ability from children
+	if sigAbility := extractSignatureAbility(ctx, section); sigAbility != nil {
+		result.Children = map[string]*ParsedContent{
+			"signature_ability": sigAbility,
+		}
+	}
+
+	return result, nil
+}
+
+// extractSignatureAbility scans a kit section's children for an ability with
+// @subtype: signature and parses it using AbilityParser.
+func extractSignatureAbility(ctx *context.ContextStack, section *parser.Section) *ParsedContent {
+	abilityParser := &AbilityParser{}
+	for _, child := range section.Children {
+		if child.Annotation == nil {
+			continue
+		}
+		if child.Annotation["type"] != "ability" {
+			continue
+		}
+		if child.Annotation["subtype"] != "signature" {
+			continue
+		}
+		parsed, err := abilityParser.Parse(ctx, child)
+		if err != nil {
+			continue
+		}
+		return parsed
+	}
+	return nil
 }
 
 // kitBonusFields maps the field label (as it appears in markdown after stripping

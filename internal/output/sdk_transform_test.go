@@ -286,7 +286,7 @@ func TestTransformPassthrough_Class(t *testing.T) {
 	}
 }
 
-func TestTransformPassthrough_Kit(t *testing.T) {
+func TestTransformKit_NoSignatureAbility(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
 			"name":          "Panther",
@@ -303,6 +303,104 @@ func TestTransformPassthrough_Kit(t *testing.T) {
 	assertEqual(t, out["content"], "A swift melee kit.")
 	assertEqual(t, out["stamina_bonus"], "+3")
 	assertEqual(t, out["speed_bonus"], "+2")
+
+	// No signature ability should be present
+	if _, ok := out["signature_ability"]; ok {
+		t.Error("expected no signature_ability when Children is nil")
+	}
+}
+
+func TestTransformKit_WithSignatureAbility(t *testing.T) {
+	sigAbilityParsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":                      "Fade",
+			"type":                      "ability",
+			"subtype":                   "signature",
+			"action_type":               "Main action",
+			"keywords":                  []string{"Melee", "Ranged", "Strike", "Weapon"},
+			"distance":                  "Melee 1 or ranged 10",
+			"target":                    "One creature",
+			"flavor":                    "A stab, and a few quick, careful steps back.",
+			"power_roll_characteristic": "Might or Agility",
+			"tier1":                     "3 + M or A damage; you can shift 1 square",
+			"tier2":                     "6 + M or A damage; you can shift up to 2 squares",
+			"tier3":                     "8 + M or A damage; you can shift up to 3 squares",
+		},
+		Body:     "ability body",
+		TypePath: []string{"feature", "ability", "common"},
+		ItemID:   "fade",
+	}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":                "Cloak and Dagger",
+			"type":                "kit",
+			"stamina_bonus":       "+3 per echelon",
+			"speed_bonus":         "+2",
+			"melee_damage_bonus":  "+1/+1/+1",
+			"ranged_damage_bonus": "+1/+1/+1",
+			"ranged_distance_bonus": "+5",
+			"disengage_bonus":     "+1",
+		},
+		Body:   "Kit body text.",
+		ItemID: "cloak-and-dagger",
+		Children: map[string]*content.ParsedContent{
+			"signature_ability": sigAbilityParsed,
+		},
+	}
+
+	scc := "mcdm.heroes.v1/kit/cloak-and-dagger"
+	out := TransformToSDKFormat(scc, parsed)
+
+	// Kit fields
+	assertEqual(t, out["type"], "kit")
+	assertEqual(t, out["name"], "Cloak and Dagger")
+	assertEqual(t, out["stamina_bonus"], "+3 per echelon")
+	assertEqual(t, out["content"], "Kit body text.")
+
+	// Signature ability should be a nested feature object
+	sig, ok := out["signature_ability"].(map[string]any)
+	if !ok {
+		t.Fatal("expected signature_ability to be map[string]any")
+	}
+
+	assertEqual(t, sig["type"], "feature")
+	assertEqual(t, sig["feature_type"], "ability")
+	assertEqual(t, sig["name"], "Fade")
+	assertEqual(t, sig["usage"], "Main action")
+	assertEqual(t, sig["ability_type"], "Signature")
+	assertEqual(t, sig["distance"], "Melee 1 or ranged 10")
+	assertEqual(t, sig["target"], "One creature")
+	assertEqual(t, sig["flavor"], "A stab, and a few quick, careful steps back.")
+
+	// Effects should have power roll tiers
+	effects, ok := sig["effects"].([]map[string]any)
+	if !ok {
+		t.Fatal("expected signature_ability effects to be []map[string]any")
+	}
+	if len(effects) < 1 {
+		t.Fatal("expected at least 1 effect in signature ability")
+	}
+	assertEqual(t, effects[0]["roll"], "Power Roll + Might or Agility")
+	assertEqual(t, effects[0]["tier1"], "3 + M or A damage; you can shift 1 square")
+
+	// Keywords
+	kw, ok := sig["keywords"].([]string)
+	if !ok {
+		t.Fatal("expected keywords to be []string")
+	}
+	if len(kw) != 4 || kw[0] != "Melee" {
+		t.Errorf("unexpected keywords: %v", kw)
+	}
+
+	// Verify it serializes to valid JSON
+	data, err := json.MarshalIndent(out, "", "  ")
+	if err != nil {
+		t.Fatalf("failed to marshal kit with signature ability: %v", err)
+	}
+	if len(data) == 0 {
+		t.Error("expected non-empty JSON output")
+	}
 }
 
 func TestTransformAbility_JSONSchemaCompliant(t *testing.T) {

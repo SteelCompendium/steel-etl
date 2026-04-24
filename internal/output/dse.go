@@ -68,6 +68,18 @@ func buildDSEFile(sccCode string, parsed *content.ParsedContent) (string, error)
 			sb.WriteString(parsed.Body)
 			sb.WriteString("\n")
 		}
+
+		// For kits, also render the signature ability as a ds-feature codeblock
+		if featureType == "kit" && parsed.Children != nil {
+			if sigParsed, ok := parsed.Children["signature_ability"]; ok {
+				sb.WriteString("\n")
+				codeblock, err := buildDSFeatureBlock(sigParsed)
+				if err != nil {
+					return "", err
+				}
+				sb.WriteString(codeblock)
+			}
+		}
 	}
 
 	return sb.String(), nil
