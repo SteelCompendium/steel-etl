@@ -1145,7 +1145,8 @@ You can also make free strikes on your turn to represent using weapons your hero
 
 See Free Strikes in Chapter 10: Combat for more information on using free strikes, and see Abilities in Chapter 5: Classes for information on the ability format and how to read it.
 
-######## Melee Weapon Free Strike
+<!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike -->
+###### Melee Weapon Free Strike
 
 | **Charge, Melee, Strike, Weapon**  |               **Main action** |
 |------------------------------------|------------------------------:|
@@ -1157,7 +1158,8 @@ See Free Strikes in Chapter 10: Combat for more information on using free strike
 - **12-16:** 5 + M or A damage
 - **17+:** 7 + M or A damage
 
-######## Ranged Weapon Free Strike
+<!-- @type: ability | @subtype: free-strike | @id: ranged-weapon-free-strike -->
+###### Ranged Weapon Free Strike
 
 | **Ranged, Strike, Weapon**  |               **Main action** |
 |-----------------------------|------------------------------:|
@@ -1777,7 +1779,8 @@ Whenever you or an adjacent creature takes damage from a strike, you can use a t
 
 You have the following signature ability.
 
-######## Draconian Pride
+<!-- @type: ability | @subtype: signature | @id: draconian-pride -->
+###### Draconian Pride
 
 *You let loose a mighty roar to shake your foes' spirits.*
 
@@ -1795,7 +1798,8 @@ You have the following signature ability.
 
 You have the following signature ability.
 
-######## Dragon Breath
+<!-- @type: ability | @subtype: signature | @id: dragon-breath -->
+###### Dragon Breath
 
 *A furious exhalation of energy washes over your foes.*
 
@@ -2093,7 +2097,8 @@ You have speed 6.
 
 You have the following signature ability. Signature abilities can be used at will.
 
-######## The Wode Defends
+<!-- @type: ability | @subtype: signature | @id: the-wode-defends -->
+###### The Wode Defends
 
 *Thorny vines erupt from every surface and attempt to bind your foe.*
 
@@ -2849,7 +2854,8 @@ Polder heroes have access to the following traits.
 
 You have the following ability.
 
-######## Shadowmeld
+<!-- @type: ability | @subtype: signature | @id: shadowmeld -->
+###### Shadowmeld
 
 *You become an actual shadow.*
 
@@ -3001,7 +3007,8 @@ You always know the direction to the exact location of a creature who bears one 
 
 Additionally, you have the following signature ability. Signature abilities can be used at will.
 
-######## Detonate Sigil
+<!-- @type: ability | @subtype: signature | @id: detonate-sigil -->
+###### Detonate Sigil
 
 *A magic sigil you placed on a creature explodes with energy.*
 
@@ -3145,7 +3152,8 @@ Your multiple arms let you take on multiple tasks at the same time. Whenever you
 
 Choose one signature ability from the following options. Signature abilities can be used at will.
 
-######## Concussive Slam
+<!-- @type: ability | @subtype: signature | @id: concussive-slam -->
+###### Concussive Slam
 
 *You slam an invisible force down upon the target.*
 
@@ -3159,7 +3167,8 @@ Choose one signature ability from the following options. Signature abilities can
 - **12-16:** 5 + R, I, or P damage; push 1
 - **17+:** 7 + R, I, or P damage; push 2; M < STRONG, prone
 
-######## Psionic Bolt
+<!-- @type: ability | @subtype: signature | @id: psionic-bolt -->
+###### Psionic Bolt
 
 *You shoot forth a purple beam of psychic force that moves your target.*
 
@@ -3173,7 +3182,8 @@ Choose one signature ability from the following options. Signature abilities can
 - **12-16:** 5 + R, I, or P psychic damage; slide 2
 - **17+:** 7 + R, I, or P psychic damage; slide 3
 
-######## Minor Acceleration
+<!-- @type: ability | @subtype: signature | @id: minor-acceleration -->
+###### Minor Acceleration
 
 *You fill yourself or an ally with a burst of speed.*
 
@@ -4639,7 +4649,7 @@ When you use an ability outside of combat that lets you spend unlimited wrath on
 You pick out the enemies most worthy of your wrath and place a divine judgment upon them, censoring them with the power of your god. You have the following ability.
 
 <!-- @type: ability -->
-> ######## Judgment
+> ###### Judgment
 > 
 > *You utter a prayer that outlines your foe in holy energy.*
 > 
@@ -4682,7 +4692,7 @@ You can use and gain the benefits of a kit. See [Chapter 6: Kits](#page-231-0) f
 You channel your will to mend your wounds or the wounds of your allies. You have the following ability.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## My Life for Yours
+> ###### My Life for Yours
 > 
 > *You channel some of your vitality into more resilience for you or an ally.*
 > 
@@ -4751,7 +4761,7 @@ If you are in the same area as a creature using this or a similar feature who ha
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Faithful Friend
+> ###### Faithful Friend
 > 
 > *An animal spirit is drawn to you, sharing their senses with you and serving you faithfully.*
 > 
@@ -4767,7 +4777,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Grave Speech
+> ###### Grave Speech
 > 
 > *You commune with the lingering soul of the recently dead.*
 > 
@@ -4783,7 +4793,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Hands of the Maker
+> ###### Hands of the Maker
 > 
 > *You craft objects with the power of your mind.*
 > 
@@ -4832,7 +4842,7 @@ You use a blend of martial techniques and divine magic to attack your foes and d
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* Your Allies Cannot Save You!)
 
 <!-- @type: ability | @subtype: signature | @id: back-blasphemer -->
-> ######## Back Blasphemer!
+> ###### Back Blasphemer!
 > 
 > *You channel power through your weapon to repel foes.*
 > 
@@ -4847,7 +4857,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **17+:** 6 holy damage; push 3
 
 <!-- @type: ability | @subtype: signature | @id: every-step-death -->
-> ######## Every Step... Death!
+> ###### Every Step... Death!
 > 
 > *You show your foe a glimpse of their fate after death.*
 > 
@@ -4864,7 +4874,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.
 
 <!-- @type: ability | @subtype: signature | @id: halt-miscreant -->
-> ######## Halt Miscreant!
+> ###### Halt Miscreant!
 > 
 > *You infuse your weapon with holy magic that makes it difficult for your foe to get away.*
 > 
@@ -4879,7 +4889,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **17+:** 7 + M holy damage; P < STRONG, slowed (save ends)
 
 <!-- @type: ability | @subtype: signature | @id: your-allies-cannot-save-you -->
-> ######## Your Allies Cannot Save You!
+> ###### Your Allies Cannot Save You!
 > 
 > *Your magic strike turns your foe's guilt into a burst of holy power.*
 > 
@@ -4904,7 +4914,7 @@ You call upon a number of heroic abilities, all of them bound to your wrath.
 Choose one heroic ability from the following options, each of which costs 3 wrath to use. (*Quick Build:* The Gods Punish and Defend.)
 
 <!-- @type: ability | @cost: 3 Wrath | @id: behold-a-shield-of-faith -->
-> ######## Behold a Shield of Faith! (3 Wrath)
+> ###### Behold a Shield of Faith! (3 Wrath)
 > 
 > *A mighty blow turns your foe's vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.*
 > 
@@ -4921,7 +4931,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > **Effect:** Until the start of your next turn, enemies take a bane on ability rolls made against you or any ally adjacent to you.
 
 <!-- @type: ability | @cost: 3 Wrath -->
-> ######## Driving Assault (3 Wrath)
+> ###### Driving Assault (3 Wrath)
 > 
 > *As you force your enemy back with your weapon, you use your faith to stay close.*
 > 
@@ -4938,7 +4948,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > **Effect:** You can shift up to your speed in a straight line toward the target after pushing them.
 
 <!-- @type: ability | @cost: 3 Wrath -->
-> ######## The Gods Punish and Defend (3 Wrath)
+> ###### The Gods Punish and Defend (3 Wrath)
 > 
 > *You channel holy energy to smite a foe and heal an ally.*
 > 
@@ -4955,7 +4965,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > **Effect:** You can spend a Recovery to allow yourself or one ally within 10 squares to regain Stamina equal to your recovery value.
 
 <!-- @type: ability | @cost: 3 Wrath | @id: repent -->
-> ######## Repent! (3 Wrath)
+> ###### Repent! (3 Wrath)
 > 
 > *You conjure memories of their sins to harry your foes.*
 > 
@@ -4974,7 +4984,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 Choose one heroic ability from the following options, each of which costs 5 wrath to use. (*Quick Build:* Purifying Fire.)
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Arrest (5 Wrath)
+> ###### Arrest (5 Wrath)
 > 
 > *"I got you, you son of a bitch."*
 > 
@@ -4991,7 +5001,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > **Effect:** If the target makes a strike against a creature while grabbed this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike's distance.
 
 <!-- @type: ability | @cost: 5 Wrath | @id: behold-the-face-of-justice -->
-> ######## Behold the Face of Justice! (5 Wrath)
+> ###### Behold the Face of Justice! (5 Wrath)
 > 
 > *You attack a foe and your enemies behold a vision of the true nature of your resolve.*
 > 
@@ -5008,7 +5018,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > **Effect:** Each enemy frightened this way is pushed up to 2 squares away from the target and takes psychic damage equal to your Presence score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Censored (5 Wrath)
+> ###### Censored (5 Wrath)
 > 
 > *Judged and sentenced.*
 > 
@@ -5025,7 +5035,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > **Effect:** When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Purifying Fire (5 Wrath)
+> ###### Purifying Fire (5 Wrath)
 > 
 > *The gods judge, fire cleanses.*
 > 
@@ -5103,7 +5113,7 @@ Your censor order grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## It Is Justice You Fear (5 Wrath)
+> ###### It Is Justice You Fear (5 Wrath)
 > 
 > *I am but a vessel. Your own deeds weigh upon you.*
 > 
@@ -5120,7 +5130,7 @@ Choose one of the following abilities.
 > **Effect:** If the target is already frightened of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your Presence score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Revelator (5 Wrath)
+> ###### Revelator (5 Wrath)
 > 
 > *You channel holy energy to harm unbelievers and reveal those hidden from your judgment.*
 > 
@@ -5135,7 +5145,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Wrath | @subtype: triggered -->
-> ######## Prescient Grace (5 Wrath)
+> ###### Prescient Grace (5 Wrath)
 > 
 > *Gifted by a prescient vision, you warn an ally of an impending attack.*
 > 
@@ -5148,7 +5158,7 @@ Choose one of the following abilities.
 > **Effect:** You can spend a Recovery to allow the target to regain Stamina equal to your recovery value. The target can then take their turn immediately before the triggering enemy.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## With My Blessing (5 Wrath)
+> ###### With My Blessing (5 Wrath)
 > 
 > *A word in prayer, and the gods show the way.*
 > 
@@ -5163,7 +5173,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Blessing of the Faithful (5 Wrath)
+> ###### Blessing of the Faithful (5 Wrath)
 > 
 > *The gods reward your faith.*
 > 
@@ -5174,7 +5184,7 @@ Choose one of the following abilities.
 > **Effect:** Until the end of the encounter or until you are dying, each target gains 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 5 Wrath -->
-> ######## Sentenced (5 Wrath)
+> ###### Sentenced (5 Wrath)
 > 
 > *The shock of your condemnation freezes your enemy in their boots.*
 > 
@@ -5205,7 +5215,7 @@ Your judgment has grown in divine power, instilling fear in those you condemn. W
 Choose one heroic ability from the following options, each of which costs 7 wrath to use.
 
 <!-- @type: ability | @cost: 7 Wrath -->
-> ######## Edict of Disruptive Isolation (7 Wrath)
+> ###### Edict of Disruptive Isolation (7 Wrath)
 > 
 > *The evil within your foes detonates with holy fire that burns only the guilty.*
 > 
@@ -5216,7 +5226,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > **Effect:** Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
 
 <!-- @type: ability | @cost: 7 Wrath -->
-> ######## Edict of Perfect Order (7 Wrath)
+> ###### Edict of Perfect Order (7 Wrath)
 > 
 > *Within the area of your divine presence, your enemies will regret using their fell abilities.*
 > 
@@ -5227,7 +5237,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > **Effect:** Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
-> ######## Edict of Purifying Pacifism (7 Wrath)
+> ###### Edict of Purifying Pacifism (7 Wrath)
 > 
 > *You shed a righteous energy that punishes enemies who would harm you or your allies.*
 > 
@@ -5238,7 +5248,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > **Effect:** Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
-> ######## Edict of Stillness (7 Wrath)
+> ###### Edict of Stillness (7 Wrath)
 > 
 > *The holy aura you project makes it painful for evil-doers to leave your reach.*
 > 
@@ -5306,7 +5316,7 @@ Your divine presence causes those you deem worthy to recover quickly from a figh
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Blessing of Secrets
+> ###### Blessing of Secrets
 > 
 > *You project an illusory aura that makes you and allies harder to notice.*
 > 
@@ -5408,7 +5418,7 @@ Your divine spark grows in power, allowing you and your allies to focus and endu
 Choose one heroic ability from the following options, each of which costs 9 wrath to use.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Gods Grant Thee Strength (9 Wrath)
+> ###### Gods Grant Thee Strength (9 Wrath)
 > 
 > *You channel divine force for movement that cannot be stopped.*
 > 
@@ -5419,7 +5429,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > **Effect:** The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up. The target then gains 2 surges, can shift up to their speed while ignoring difficult terrain, and can use a strike signature ability as a free triggered action.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Orison of Victory (9 Wrath)
+> ###### Orison of Victory (9 Wrath)
 > 
 > *You channel your god's will to overcome hardship and inflict pain.*
 > 
@@ -5436,7 +5446,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > **Effect:** A target can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or a prone target can stand up.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Righteous Judgment (9 Wrath)
+> ###### Righteous Judgment (9 Wrath)
 > 
 > *You amplify the power of your judgment.*
 > 
@@ -5453,7 +5463,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > **Effect:** Until the end of the encounter, whenever any ally deals damage to a target judged by you, that ally gains 1 surge.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Shield of the Righteous (9 Wrath)
+> ###### Shield of the Righteous (9 Wrath)
 > 
 > *You strike a foe and create a fleet of divine shields that protect your allies.*
 > 
@@ -5496,7 +5506,7 @@ Your censor order grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Wrath | @id: begone -->
-> ######## Begone! (9 Wrath)
+> ###### Begone! (9 Wrath)
 > 
 > *You terrify your enemies into retreating, creating chaos in their ranks.*
 > 
@@ -5511,7 +5521,7 @@ Choose one of the following abilities.
 > - **17+:** 8 psychic damage; slide 7
 
 <!-- @type: ability | @cost: 9 Wrath | @subtype: triggered -->
-> ######## Pain of Your Own Making (9 Wrath)
+> ###### Pain of Your Own Making (9 Wrath)
 > 
 > *You reverse the effects from an evildoer.*
 > 
@@ -5528,7 +5538,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Burden of Evil (9 Wrath)
+> ###### Burden of Evil (9 Wrath)
 > 
 > *You reveal a vision of your enemies' fate that causes them to scramble as it staggers them.*
 > 
@@ -5543,7 +5553,7 @@ Choose one of the following abilities.
 > - **17+:** Slide 7; I < STRONG, dazed (save ends)
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Edict of Peace (9 Wrath)
+> ###### Edict of Peace (9 Wrath)
 > 
 > *You anticipate your foes' moves and deny them.*
 > 
@@ -5558,7 +5568,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Congregation (9 Wrath)
+> ###### Congregation (9 Wrath)
 > 
 > *You focus your allies' wrath on a chosen foe.*
 > 
@@ -5575,7 +5585,7 @@ Choose one of the following abilities.
 > **Effect:** Each ally can shift up to 2 squares and gains 2 surges before making the strike.
 
 <!-- @type: ability | @cost: 9 Wrath | @subtype: triggered -->
-> ######## Intercede (9 Wrath)
+> ###### Intercede (9 Wrath)
 > 
 > *You take your ally's place.*
 > 
@@ -5630,7 +5640,7 @@ The gods send divine favor to you and your allies. While you are not dying, enem
 You can maintain bonds with up to three willing creatures using your Invocation of the Heart feature. Additionally, you have the following ability.
 
 <!-- @type: ability -->
-> ######## Guided to Your Side
+> ###### Guided to Your Side
 > 
 > *You concentrate on a friend and teleport to them.*
 > 
@@ -5684,7 +5694,7 @@ Lightning and thunder infuse your body. Whenever you use an ability to deal roll
 You have the following ability.
 
 <!-- @type: ability | @cost: 9 Wrath -->
-> ######## Trinity of Trickery (9 Wrath)
+> ###### Trinity of Trickery (9 Wrath)
 > 
 > *Hey! I'm over here. No, here, numbskull.*
 > 
@@ -5764,7 +5774,7 @@ Your words take on the power of your deity, with all the authority that entails.
 Choose one heroic ability from the following options, each of which costs 11 wrath to use.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Excommunication (11 Wrath)
+> ###### Excommunication (11 Wrath)
 > 
 > *You curse your foe to become a bane to their allies.*
 > 
@@ -5781,7 +5791,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > **Effect:** At the end of each of your turns, a target weakened this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target weakened this way can't be targeted by their allies' abilities.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Hand of the Gods (11 Wrath)
+> ###### Hand of the Gods (11 Wrath)
 > 
 > *You use your foe as a tool against your enemies.*
 > 
@@ -5798,7 +5808,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > **Effect:** Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Pillar of Holy Fire (11 Wrath)
+> ###### Pillar of Holy Fire (11 Wrath)
 > 
 > *Your enemy's guilt fuels a holy flame that burns your foes.*
 > 
@@ -5815,7 +5825,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > **Effect:** At the end of each of your turns, a target dazed this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.
 
 <!-- @type: ability | @cost: 11 Wrath | @id: your-allies-turn-on-you -->
-> ######## Your Allies Turn on You! (11 Wrath)
+> ###### Your Allies Turn on You! (11 Wrath)
 > 
 > *You turn your enemies' ire to the target.*
 > 
@@ -5854,7 +5864,7 @@ Your censor order grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Banish (11 Wrath)
+> ###### Banish (11 Wrath)
 > 
 > *You sever the target's tenuous connection to the world.*
 > 
@@ -5871,7 +5881,7 @@ Choose one of the following abilities.
 > **Effect:** This ability gains an edge against demons, devils, undead, and creatures not native to your current world. If you know the target's true name, this ability has a double edge. While banished, the target is sent to another manifold in the timescape and removed from the encounter map. A banished target can do nothing but make saving throws, and takes 10 holy damage each time they do so. If the target is reduced to 0 Stamina while banished, they are lost to the timescape.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Terror Manifest (11 Wrath)
+> ###### Terror Manifest (11 Wrath)
 > 
 > *"I know what you fear."*
 > 
@@ -5892,7 +5902,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Wrath | @subtype: triggered -->
-> ######## Blessing and a Curse (11 Wrath)
+> ###### Blessing and a Curse (11 Wrath)
 > 
 > *The gods bless and damn in equal measure.*
 > 
@@ -5905,7 +5915,7 @@ Choose one of the following abilities.
 > **Effect:** The target obtains a tier 1 or tier 3 outcome on their power roll (your choice). You can then choose another target within distance, who obtains the opposite outcome on their next power roll.
 
 <!-- @type: ability | @cost: 11 Wrath | @subtype: triggered -->
-> ######## Fulfill Your Destiny (11 Wrath)
+> ###### Fulfill Your Destiny (11 Wrath)
 > 
 > *You have looked at various futures, and only this one works.*
 > 
@@ -5922,7 +5932,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Apostate (11 Wrath)
+> ###### Apostate (11 Wrath)
 > 
 > *You channel holy energy to seal an enemy's fate.*
 > 
@@ -5939,7 +5949,7 @@ Choose one of the following abilities.
 > **Effect:** Until the end of the encounter or until you are dying, the target has damage weakness 10.
 
 <!-- @type: ability | @cost: 11 Wrath -->
-> ######## Edict of Unyielding Resolve (11 Wrath)
+> ###### Edict of Unyielding Resolve (11 Wrath)
 > 
 > *You and your allies are clad in shimmering armor.*
 > 
@@ -6196,7 +6206,7 @@ If you are in the same area as a creature using this or a similar feature who ha
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Faithful Friend
+> ###### Faithful Friend
 > 
 > *An animal spirit is drawn to you, sharing their senses with you and serving you faithfully.*
 > 
@@ -6212,7 +6222,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Grave Speech
+> ###### Grave Speech
 > 
 > *You commune with the lingering soul of the recently dead.*
 > 
@@ -6228,7 +6238,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Hands of the Maker
+> ###### Hands of the Maker
 > 
 > *You craft objects with the power of your mind.*
 > 
@@ -6274,7 +6284,7 @@ As a respite activity, you can bless a weapon. Any creature who wields the weapo
 You have the following ability, which you can use once on your turn.
 
 <!-- @type: ability -->
-> ######## Healing Grace
+> ###### Healing Grace
 > 
 > *Your divine energy restores the righteous.*
 > 
@@ -6297,7 +6307,7 @@ You have the following ability, which you can use once on your turn.
 You have the following ability, which can be used as a ranged free strike.
 
 <!-- @type: ability -->
-> ######## Ray of Wrath
+> ###### Ray of Wrath
 > 
 > *You unleash a blast of holy light upon your foe.*
 > 
@@ -6319,7 +6329,7 @@ You have the following ability, which can be used as a ranged free strike.
 Choose one of the following triggered actions. (*Quick Build:* Word of Guidance.)
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Word of Guidance
+> ###### Word of Guidance
 > 
 > *You invigorate an attacking ally with divine energy.*
 > 
@@ -6334,7 +6344,7 @@ Choose one of the following triggered actions. (*Quick Build:* Word of Guidance.
 > **Spend 1 Piety:** The power roll has a double edge.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Word of Judgment
+> ###### Word of Judgment
 > 
 > *Your holy word saps an attacking enemy's strength.*
 > 
@@ -6414,7 +6424,7 @@ Your training and faith let you specialize in magic that buffs your allies, debu
 Choose two signature abilities from the following options. Signature abilities can be used at will. (*Quick Build:* Blessed Light, Staggering Curse.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Blessed Light
+> ###### Blessed Light
 > 
 > *Burning radiance falls upon your foe, transferring some of their energy to a nearby ally.*
 > 
@@ -6431,7 +6441,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** One ally within distance gains a number of surges equal to the tier outcome of your power roll.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Drain
+> ###### Drain
 > 
 > *You drain the energy from your target to revitalize yourself or an ally.*
 > 
@@ -6448,7 +6458,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You or one ally within distance can spend a Recovery.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Holy Lash
+> ###### Holy Lash
 > 
 > *A tendril of divine energy shoots forth to draw in your foe.*
 > 
@@ -6463,7 +6473,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 8 + I holy damage; vertical pull 4
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Lightfall
+> ###### Lightfall
 > 
 > *A rain of holy light scours your enemies and repositions your allies.*
 > 
@@ -6480,7 +6490,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You can teleport yourself and each ally in the area to unoccupied spaces in the area.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Sacrificial Offer
+> ###### Sacrificial Offer
 > 
 > *Divine magic tears at your foe and defends a nearby friend.*
 > 
@@ -6497,7 +6507,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** Choose yourself or one ally within distance. That character can impose a bane on one power roll made against them before the end of their next turn.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Staggering Curse
+> ###### Staggering Curse
 > 
 > *A blast of judgment disorients your foe.*
 > 
@@ -6512,7 +6522,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 8 + I holy damage; slide 3
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Warrior's Prayer
+> ###### Warrior's Prayer
 > 
 > *Your quickly uttered prayer lends aggressive divine energy to a friend engaged in melee.*
 > 
@@ -6529,7 +6539,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You or one ally within distance gains temporary Stamina equal to your Intuition score.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Wither
+> ###### Wither
 > 
 > *A bolt of holy energy saps the life from a foe.*
 > 
@@ -6552,7 +6562,7 @@ You make use of a number of heroic abilities, all of which channel piety to empo
 Choose one heroic ability from the following options, each of which costs 3 piety to use. (*Quick Build:* Violence Will Not Aid Thee.)
 
 <!-- @type: ability | @cost: 3 Piety -->
-> ######## Call the Thunder Down (3 Piety)
+> ###### Call the Thunder Down (3 Piety)
 > 
 > *You ask your saint for thunder and your prayer is answered.*
 > 
@@ -6569,7 +6579,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > **Effect:** You can push each willing ally in the area the same distance, ignoring stability.
 
 <!-- @type: ability | @cost: 3 Piety -->
-> ######## Font of Wrath (3 Piety)
+> ###### Font of Wrath (3 Piety)
 > 
 > *A brilliant column of holy light appears on the battlefield, striking out at nearby enemies.*
 > 
@@ -6580,7 +6590,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > **Effect:** You summon a spirit of size 2 who can't be harmed, and who appears in an unoccupied space within distance. The spirit lasts until the end of your next turn. You and your allies can move through the spirit's space, but enemies can't. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your Intuition score.
 
 <!-- @type: ability | @cost: 3 Piety -->
-> ######## Judgment's Hammer (3 Piety)
+> ###### Judgment's Hammer (3 Piety)
 > 
 > *Your divine fury is a hammer that crashes down upon the unrighteous.*
 > 
@@ -6595,7 +6605,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > - **17+:** 9 + I holy damage; A < STRONG, prone and can't stand (save ends)
 
 <!-- @type: ability | @cost: 3 Piety -->
-> ######## Violence Will Not Aid Thee (3 Piety)
+> ###### Violence Will Not Aid Thee (3 Piety)
 > 
 > *After some holy lightning, your enemy will think twice about their next attack.*
 > 
@@ -6616,7 +6626,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 Choose one heroic ability from the following options, each of which costs 5 piety to use. (*Quick Build:* Curse of Terror.)
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Corruption's Curse (5 Piety)
+> ###### Corruption's Curse (5 Piety)
 > 
 > *Cursed by you, your enemy takes more damage from your allies.*
 > 
@@ -6631,7 +6641,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > - **17+:** 9 + I corruption damage; M < STRONG, damage weakness 5 (save ends)
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Curse of Terror (5 Piety)
+> ###### Curse of Terror (5 Piety)
 > 
 > *Fear of divine judgment overwhelms your foe.*
 > 
@@ -6646,7 +6656,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > - **17+:** 13 + I holy damage; I < STRONG, frightened (save ends)
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Faith Is Our Armor (5 Piety)
+> ###### Faith Is Our Armor (5 Piety)
 > 
 > *The heroes' armor glows with golden light, granting divine protection.*
 > 
@@ -6663,7 +6673,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > - **17+:** The target gains 15 temporary Stamina.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Sermon of Grace (5 Piety)
+> ###### Sermon of Grace (5 Piety)
 > 
 > *You inspire your allies with tales of your saint's great deeds.*
 > 
@@ -6715,7 +6725,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 | War        | Blessing of Insight          |
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Blessing of Fate and Destiny (5 Piety)
+> ###### Blessing of Fate and Destiny (5 Piety)
 > 
 > *Your enemies suffer their fate; your allies embrace their destiny!*
 > 
@@ -6729,7 +6739,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - Whenever a target makes a power roll, they must roll three dice and use the lowest two rolls.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Blessing of Insight (5 Piety)
+> ###### Blessing of Insight (5 Piety)
 > 
 > *The gods grant insight revealing where best to strike your enemies.*
 > 
@@ -6740,7 +6750,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, each target gains 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Divine Comedy (5 Piety)
+> ###### Divine Comedy (5 Piety)
 > 
 > *You and your allies swap places to confound your foes.*
 > 
@@ -6751,7 +6761,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Each target can choose another creature in the area, then swap places with that creature. The creature they choose must be able to fit into the space they leave and vice versa.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## The Gods Command You Obey (5 Piety)
+> ###### The Gods Command You Obey (5 Piety)
 > 
 > *You speak with the voice of your saint, commanding your enemies.*
 > 
@@ -6766,7 +6776,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 11 + I holy damage; P < STRONG, before taking damage, the target shifts up to their speed to a location you choose, uses an ability of your choice, and you choose any targets for that ability
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Morning Light (5 Piety)
+> ###### Morning Light (5 Piety)
 > 
 > *Light shines at your command, burning your foes and blessing your allies.*
 > 
@@ -6783,7 +6793,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Each ally in the area deals fire damage equal to your Intuition score with their next strike made before the end of their next turn.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Nature Judges Thee (5 Piety)
+> ###### Nature Judges Thee (5 Piety)
 > 
 > *Mystical thorned vines appear at your bidding and bind your foes.*
 > 
@@ -6798,7 +6808,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 7 damage; A < STRONG, restrained (save ends)
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Our Hearts Your Strength (5 Piety)
+> ###### Our Hearts Your Strength (5 Piety)
 > 
 > *An ally gains strength from their friends.*
 > 
@@ -6809,7 +6819,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until the target is dying, at the start of each of the target's turns, they gain a bonus to speed and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Reap (5 Piety)
+> ###### Reap (5 Piety)
 > 
 > *The gods reward those who smite their foes.*
 > 
@@ -6820,7 +6830,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the start of your next turn, each time a target kills an enemy, they regain Stamina equal to 5 + your Intuition score.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Sacred Bond (5 Piety)
+> ###### Sacred Bond (5 Piety)
 > 
 > *You forge a divine connection between two creatures.*
 > 
@@ -6831,7 +6841,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter, whenever one target takes damage, the other target can use a free triggered action to take the damage instead. The original target suffers any effects associated with the damage. Additionally, whenever one target spends a Recovery, the other target can use a free triggered action to spend a Recovery.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Saint's Tempest (5 Piety)
+> ###### Saint's Tempest (5 Piety)
 > 
 > *A raging storm appears, striking your foes with lightning and throwing them around with wind.*
 > 
@@ -6846,7 +6856,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 7 lightning damage; vertical slide 3
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Statue of Power (5 Piety)
+> ###### Statue of Power (5 Piety)
 > 
 > *A marble statue of your deity rises from the earth.*
 > 
@@ -6857,7 +6867,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** A size 2 statue rises out of the ground in an unoccupied space within distance and lasts until the end of the encounter. While within 3 squares of the statue, you gain 1 surge at the start of each of your turns. Each ally within 3 squares of the statue gains this same benefit. The statue is destroyed if it takes 20 or more damage. It has immunity all to poison and psychic damage.
 
 <!-- @type: ability | @cost: 5 Piety -->
-> ######## Wellspring of Grace (5 Piety)
+> ###### Wellspring of Grace (5 Piety)
 > 
 > *A holy light is emitted from your body, healing your allies.*
 > 
@@ -6884,7 +6894,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 Choose one heroic ability from the following options, each of which costs 7 piety to use.
 
 <!-- @type: ability | @cost: 7 Piety -->
-> ######## Fear of the Gods (7 Piety)
+> ###### Fear of the Gods (7 Piety)
 > 
 > *Your divine magic makes a creature appear as what your enemies fear most.*
 > 
@@ -6901,7 +6911,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > **Effect:** Each target is frightened of you or a creature you choose within distance.
 
 <!-- @type: ability | @cost: 7 Piety -->
-> ######## Saint's Raiment (7 Piety)
+> ###### Saint's Raiment (7 Piety)
 > 
 > *An ally becomes the wearer of an empowered golden cloak.*
 > 
@@ -6912,7 +6922,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > **Effect:** The target gains 20 temporary Stamina and 3 surges.
 
 <!-- @type: ability | @cost: 7 Piety -->
-> ######## Soul Siphon (7 Piety)
+> ###### Soul Siphon (7 Piety)
 > 
 > *A beam of energy connects a foe to a friend, draining life from one to heal the other.*
 > 
@@ -6929,7 +6939,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > **Effect:** One ally within distance can spend any number of Recoveries.
 
 <!-- @type: ability | @cost: 7 Piety -->
-> ######## Words of Wrath and Grace (7 Piety)
+> ###### Words of Wrath and Grace (7 Piety)
 > 
 > *Your saint grants your enemies a vision of pain and fills your allies with healing energy.*
 > 
@@ -7001,7 +7011,7 @@ Your divine presence causes those you deem worthy to recover quickly from a figh
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Blessing of Secrets
+> ###### Blessing of Secrets
 > 
 > *You project an illusory aura that makes you and allies harder to notice.*
 > 
@@ -7068,7 +7078,7 @@ You gain the 4th-level domain feature for the domain whose feature you didn't se
 Choose one heroic ability from the following options, each of which costs 9 piety to use.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Beacon of Grace (9 Piety)
+> ###### Beacon of Grace (9 Piety)
 > 
 > *You ignite a foe with holy radiance, rewarding allies who attack them.*
 > 
@@ -7085,7 +7095,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > **Effect:** Until the end of the encounter, whenever you or any ally damages the target using an ability, that creature can spend a Recovery. If the target is reduced to 0 Stamina before the end of the encounter, you can use a free triggered action to move this effect to another creature within distance.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Penance (9 Piety)
+> ###### Penance (9 Piety)
 > 
 > *"If you won't kneel, the gods will make you."*
 > 
@@ -7100,7 +7110,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > - **17+:** 11 corruption damage; I < STRONG, prone and can't stand (save ends)
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Sanctuary (9 Piety)
+> ###### Sanctuary (9 Piety)
 > 
 > *You send yourself or an ally to a divine manifold to instantaneously regain health.*
 > 
@@ -7111,7 +7121,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > **Effect:** The target is removed from the encounter map until the start of their next turn and can spend any number of Recoveries. At the start of their turn, the target reappears in the space they left or the nearest unoccupied space of their choice.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Vessel of Retribution (9 Piety)
+> ###### Vessel of Retribution (9 Piety)
 > 
 > *You infuse yourself or an ally with the retributive energy of the gods, waiting to be unleashed.*
 > 
@@ -7163,7 +7173,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 | War        | Blade of the Heavens       |
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Aura of Souls (9 Piety)
+> ###### Aura of Souls (9 Piety)
 > 
 > *A whirlwind of souls of the dead flies around you at your command.*
 > 
@@ -7174,7 +7184,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your Intuition score. This forced movement ignores stability for your allies.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Blade of the Heavens (9 Piety)
+> ###### Blade of the Heavens (9 Piety)
 > 
 > *A greatsword streams down from the sky, threatening to pin your foe.*
 > 
@@ -7189,7 +7199,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 16 + I damage; A < STRONG, prone and restrained (save ends)
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Blessing of the Midday Sun (9 Piety)
+> ###### Blessing of the Midday Sun (9 Piety)
 > 
 > *Your body emits a heat that bakes your enemies and inspires your allies.*
 > 
@@ -7200,7 +7210,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, each enemy in the area takes a bane on power rolls, and you and each ally in the area gain 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Cuirass of the Gods (9 Piety)
+> ###### Cuirass of the Gods (9 Piety)
 > 
 > *Your allies are covered in spiritual armor.*
 > 
@@ -7211,7 +7221,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** You can target yourself instead of one creature with this ability. Each target has damage immunity 5 until the start of your next turn.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Gods' Machine (9 Piety)
+> ###### Gods' Machine (9 Piety)
 > 
 > *You conjure a whirring tank made of blades and metal.*
 > 
@@ -7230,7 +7240,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares up to your Intuition score then repeat the power roll.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Invocation of Mystery (9 Piety)
+> ###### Invocation of Mystery (9 Piety)
 > 
 > *"Now you see us..."*
 > 
@@ -7241,7 +7251,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Each target is invisible until the start of your next turn.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Invocation of Undoing (9 Piety)
+> ###### Invocation of Undoing (9 Piety)
 > 
 > *You utter a secret word of destruction known only to deities.*
 > 
@@ -7258,7 +7268,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Special:** You can choose to have this ability deal damage to and push objects, and to deal damage to buildings.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Lauded by God (9 Piety)
+> ###### Lauded by God (9 Piety)
 > 
 > *You beseech the gods to give your allies what they need to win the day, and the gods answer.*
 > 
@@ -7269,7 +7279,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Each target gains 3 of their Heroic Resource.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Lightning Lord (9 Piety)
+> ###### Lightning Lord (9 Piety)
 > 
 > *Lightning bursts forth from your body in several directions.*
 > 
@@ -7286,7 +7296,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** The targets are force moved one at a time, starting with the target nearest to you, and can be pushed into other targets in the same line.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Revitalizing Grace (9 Piety)
+> ###### Revitalizing Grace (9 Piety)
 > 
 > *With a gesture, you restore your health and that of your allies.*
 > 
@@ -7297,7 +7307,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Each target can spend any number of Recoveries. Additionally, each target can end one effect on themself that is ended by a saving throw or that ends at the end of their turn, or they can stand up if prone.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Spirit Stampede (9 Piety)
+> ###### Spirit Stampede (9 Piety)
 > 
 > *Animal spirits run through the battlefield, trampling your foes.*
 > 
@@ -7312,7 +7322,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 11 damage; M < STRONG, prone and can't stand (save ends)
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Your Story Ends Here (9 Piety)
+> ###### Your Story Ends Here (9 Piety)
 > 
 > *You bend the fate of a foe, willing them to die.*
 > 
@@ -7381,7 +7391,7 @@ The gods send divine favor to you and your allies. While you are not dying, enem
 You can maintain bonds with up to three willing creatures using your Invocation of the Heart feature. Additionally, you have the following ability.
 
 <!-- @type: ability -->
-> ######## Guided to Your Side
+> ###### Guided to Your Side
 > 
 > *You concentrate on a friend and teleport to them.*
 > 
@@ -7435,7 +7445,7 @@ Lightning and thunder infuse your body. Whenever you use an ability to deal ligh
 You have the following ability.
 
 <!-- @type: ability | @cost: 9 Piety -->
-> ######## Trinity of Trickery (9 Piety)
+> ###### Trinity of Trickery (9 Piety)
 > 
 > *Hey! I'm over here. No, here, numbskull.*
 > 
@@ -7482,7 +7492,7 @@ You gain the 7th-level domain feature for the domain whose feature you didn't se
 Choose one heroic ability from the following options, each of which costs 11 piety to use.
 
 <!-- @type: ability | @cost: 11 Piety | @id: arise -->
-> ######## Arise! (11 Piety)
+> ###### Arise! (11 Piety)
 > 
 > *Your deity rewards you or an ally on the verge of defeat with a miracle burst of strength and resolve.*
 > 
@@ -7493,7 +7503,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > **Effect:** The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone. Additionally, at the start of each of their turns until the end of the encounter or until they are dying, the target gains 3 surges.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Blessing of Steel (11 Piety)
+> ###### Blessing of Steel (11 Piety)
 > 
 > *A protective aura defends your allies from harm.*
 > 
@@ -7504,7 +7514,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > **Effect:** Until the end of the encounter, any ability roll made against a target takes a bane and each target has damage immunity 5.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Blessing of the Blade (11 Piety)
+> ###### Blessing of the Blade (11 Piety)
 > 
 > *"The power of the gods is within you, friends. Allow me to unleash it."*
 > 
@@ -7515,7 +7525,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > **Effect:** At the end of each of your turns until the end of the encounter or until you are dying, each target gains 3 surges.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Drag the Unworthy (11 Piety)
+> ###### Drag the Unworthy (11 Piety)
 > 
 > *You conjure an angel who moves a foe and heals your allies.*
 > 
@@ -7568,7 +7578,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 | War        | Righteous Phalanx        |
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Alacrity of the Heart (11 Piety)
+> ###### Alacrity of the Heart (11 Piety)
 > 
 > *You speak inspiring words to a friend and spur them to incredible feats.*
 > 
@@ -7579,7 +7589,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** The target has an additional main action they can use on their next turn, and gains 3 of their Heroic Resource.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Bend Fate (11 Piety)
+> ###### Bend Fate (11 Piety)
 > 
 > *The gods know you must prevail, and they bless your fate.*
 > 
@@ -7590,7 +7600,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, each of the target's power rolls has its outcome improved by one tier.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Blessing of the Fortress (11 Piety)
+> ###### Blessing of the Fortress (11 Piety)
 > 
 > *A magic circle extends out from you, barring foes from getting close.*
 > 
@@ -7601,7 +7611,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, no enemy can approach within 5 squares of you by moving or by being force moved by any enemy. Targets can be force moved closer to you by you or your allies, or can move closer because of your movement.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Divine Dragon (11 Piety)
+> ###### Divine Dragon (11 Piety)
 > 
 > *From nothing but divine will, you create a powerful ally.*
 > 
@@ -7628,7 +7638,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 8 + I damage
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Godstorm (11 Piety)
+> ###### Godstorm (11 Piety)
 > 
 > *You summon a divine storm that remains under your control.*
 > 
@@ -7645,7 +7655,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** A raging storm fills the area until the end of the encounter or until you are dying. At the start of each of your turns, you can move the storm up to 5 squares (no action required). On subsequent turns while the storm is active, you can use a maneuver to make its power roll.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Night Falls (11 Piety)
+> ###### Night Falls (11 Piety)
 > 
 > *You summon darkness that thwarts only your foes.*
 > 
@@ -7656,7 +7666,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Until the end of the encounter or until you are dying, the area is filled with magic darkness that your enemies can't see through, but you and your allies can.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Radiance of Grace (11 Piety)
+> ###### Radiance of Grace (11 Piety)
 > 
 > *Intense light is emitted from your body, healing your allies.*
 > 
@@ -7667,7 +7677,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** You can target yourself instead of one ally with this ability. Each target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they are prone.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Righteous Phalanx (11 Piety)
+> ###### Righteous Phalanx (11 Piety)
 > 
 > *A wall of spinning swords and knives appears where you wish.*
 > 
@@ -7678,7 +7688,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** The wall lasts until the end of the encounter or until you are dying, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 15 damage.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Solar Flare (11 Piety)
+> ###### Solar Flare (11 Piety)
 > 
 > *You call down a sphere of fire that burns your foes to ash.*
 > 
@@ -7693,7 +7703,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **17+:** 19 fire damage
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Thorn Cage (11 Piety)
+> ###### Thorn Cage (11 Piety)
 > 
 > *Vines burst forth from the ground and bind your foe, slowly closing around them.*
 > 
@@ -7710,7 +7720,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** While restrained this way, the target takes 10 damage at the start of each of your turns.
 
 <!-- @type: ability | @cost: 11 Piety | @subtype: triggered -->
-> ######## Word of Final Redemption (11 Piety)
+> ###### Word of Final Redemption (11 Piety)
 > 
 > *Your death will fuel our victory.*
 > 
@@ -7723,7 +7733,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > **Effect:** Before the target dies, you can look at their stat block and force them to use one ability that is a main action or a maneuver. If the ability costs a Heroic Resource or Malice, the creature can use it without any cost. For the purpose of using this ability, your allies and enemies are the target's allies and enemies, and you decide who the ability targets.
 
 <!-- @type: ability | @cost: 11 Piety -->
-> ######## Word of Weakening (11 Piety)
+> ###### Word of Weakening (11 Piety)
 > 
 > *You utter a divine word that makes a foe brittle.*
 > 
@@ -7896,7 +7906,7 @@ When you use an ability outside of combat that lets you spend unlimited essence 
 You have the following ability, which can be used as a ranged free strike.
 
 <!-- @type: ability -->
-> ######## Hurl Element
+> ###### Hurl Element
 > 
 > *You cast a ball of elemental energy at a foe.*
 > 
@@ -7929,7 +7939,7 @@ If you take damage equal to or greater than 5 times your Reason score in one tur
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Practical Magic
+> ###### Practical Magic
 > 
 > *Your mastery of elemental power lets you customize your conjurations.*
 > 
@@ -7965,7 +7975,7 @@ You instantly recognize illusions for what they are, you can see invisible creat
 You also gain the following ability.
 
 <!-- @type: ability -->
-> ######## Shared Void Sense
+> ###### Shared Void Sense
 > 
 > *You grant allies a taste of your unearthly vision.*
 > 
@@ -7988,7 +7998,7 @@ Additionally, you can touch a living plant that is not a plant creature to commu
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Motivate Earth
+> ###### Motivate Earth
 > 
 > *The earth rises, falls, or opens up at your command.*
 > 
@@ -8006,7 +8016,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Return to Formlessness
+> ###### Return to Formlessness
 > 
 > *With the merest touch, you cause an object to turn to slag or ash.*
 > 
@@ -8031,7 +8041,7 @@ Your elemental specialization grants you a triggered action, as shown on the Spe
 | Void            | Subtle Relocation         |
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Breath of Dawn Remembered
+> ###### Breath of Dawn Remembered
 > 
 > *The power you channel grants the ability to get back in the fight.*
 > 
@@ -8046,7 +8056,7 @@ Your elemental specialization grants you a triggered action, as shown on the Spe
 > **Spend 1+ Essence:** The target can spend an additional Recovery for each essence spent.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Explosive Assistance
+> ###### Explosive Assistance
 > 
 > *You add a little magic to an ally's aggression at just the right time.*
 > 
@@ -8061,7 +8071,7 @@ Your elemental specialization grants you a triggered action, as shown on the Spe
 > **Spend 1 Essence:** The forced movement distance gains a bonus equal to twice your Reason score instead.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Skin Like Castle Walls
+> ###### Skin Like Castle Walls
 > 
 > *You cover yourself or an ally in protective stone.*
 > 
@@ -8076,7 +8086,7 @@ Your elemental specialization grants you a triggered action, as shown on the Spe
 > **Spend 1 Essence:** If the damage has any potency effects associated with it, the potency is reduced by 1 for the target.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Subtle Relocation
+> ###### Subtle Relocation
 > 
 > *You call on the void to swallow and spit out an ally.*
 > 
@@ -8156,7 +8166,7 @@ Your understanding of elemental magic grants you unique abilities, letting you d
 Choose two signature abilities from the following options. Signature abilities can be used at will. (*Quick Build:* Bifurcated Incineration, Viscous Fire.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Afflict a Bountiful Decay
+> ###### Afflict a Bountiful Decay
 > 
 > *Your curse causes your foe's flesh to rot off as spores that aid your allies.*
 > 
@@ -8173,7 +8183,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** Choose yourself or one ally within distance. That character can end one effect on them that is ended by a saving throw or that ends at the end of their turn.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Bifurcated Incineration
+> ###### Bifurcated Incineration
 > 
 > *Two jets of flame lance out at your command.*
 > 
@@ -8188,7 +8198,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 6 fire damage
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Grasp of Beyond
+> ###### Grasp of Beyond
 > 
 > *You absorb the life energy of another creature and use it to teleport.*
 > 
@@ -8205,7 +8215,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You can teleport up to a number of squares equal to your Reason score.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## The Green Within, the Green Without
+> ###### The Green Within, the Green Without
 > 
 > *Whipping vines erupt from a foe's body to grasp at another close by.*
 > 
@@ -8222,7 +8232,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You slide one creature within 10 squares of the target up to 2 squares.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Meteoric Introduction
+> ###### Meteoric Introduction
 > 
 > *You give your enemy a gentle tap-like an asteroid impact.*
 > 
@@ -8237,7 +8247,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 8 + R damage; push 4
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Ray of Agonizing Self-Reflection
+> ###### Ray of Agonizing Self-Reflection
 > 
 > *You inflict pain and doubt in equal measure.*
 > 
@@ -8252,7 +8262,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 6 + R corruption damage; R < STRONG, slowed (save ends)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Unquiet Ground
+> ###### Unquiet Ground
 > 
 > *A sudden storm of detritus assaults your foes and leaves them struggling to move.*
 > 
@@ -8269,7 +8279,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** The ground beneath the area is difficult terrain for enemies.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Viscous Fire
+> ###### Viscous Fire
 > 
 > *A jet of heavy fire erupts where you strike.*
 > 
@@ -8292,7 +8302,7 @@ You channel a variety of heroic abilities, all of them fueled by your essence.
 Choose one heroic ability from the following options, each of which costs 3 essence to use. (*Quick Build:* The Flesh, a Crucible.)
 
 <!-- @type: ability | @cost: 3 Essence -->
-> ######## Behold the Mystery (3 Essence)
+> ###### Behold the Mystery (3 Essence)
 > 
 > *You open a rift into the void to harry your foes.*
 > 
@@ -8309,7 +8319,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > **Persistent 1:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 3 Essence -->
-> ######## The Flesh, a Crucible (3 Essence)
+> ###### The Flesh, a Crucible (3 Essence)
 > 
 > *Fire engulfs your target and continues to churn.*
 > 
@@ -8326,7 +8336,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > **Persistent 1:** If the target is within distance at the start of your turn, you can make the power roll again without spending essence (no action required).
 
 <!-- @type: ability | @cost: 3 Essence -->
-> ######## Invigorating Growth (3 Essence)
+> ###### Invigorating Growth (3 Essence)
 > 
 > *Mushrooms erupt from a foe, sapping their vitality to spread strengthening spores.*
 > 
@@ -8343,7 +8353,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > **Effect:** Mushrooms cover the target's body. While the mushrooms are on the target, you and any ally adjacent to the target gain 1 surge whenever the target takes damage. The mushrooms can be removed by the target or an adjacent creature as a main action.
 
 <!-- @type: ability | @cost: 3 Essence -->
-> ######## Ripples in the Earth (3 Essence)
+> ###### Ripples in the Earth (3 Essence)
 > 
 > *Like a stone was dropped into a pond, waves in the earth radiate from you.*
 > 
@@ -8364,7 +8374,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 Choose one heroic ability from the following options, each of which costs 5 essence to use. (*Quick Build:* Conflagration.)
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Conflagration (5 Essence)
+> ###### Conflagration (5 Essence)
 > 
 > *A storm of fire descends upon your enemies.*
 > 
@@ -8381,7 +8391,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > **Persistent 2:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Instantaneous Excavation (5 Essence)
+> ###### Instantaneous Excavation (5 Essence)
 > 
 > *The surface of the world around you opens up to swallow foes.*
 > 
@@ -8400,7 +8410,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > **Persistent 1:** At the start of your turn, you open another hole, making a power roll against each creature who could fall into the hole when it opens without spending essence.
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## No More Than a Breeze (5 Essence)
+> ###### No More Than a Breeze (5 Essence)
 > 
 > *The material substance of a creature shreds away at your command.*
 > 
@@ -8413,7 +8423,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > **Persistent 1:** The effect lasts until the start of your next turn.
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Test of Rain (5 Essence)
+> ###### Test of Rain (5 Essence)
 > 
 > *You call down a rain that burns your enemies and restores your allies.*
 > 
@@ -8507,7 +8517,7 @@ You can revert back to your true form as a maneuver. You can't enter an animal f
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## There Is No Space Between
+> ###### There Is No Space Between
 > 
 > *Knowledge of the mystery reveals that two spaces are the same space.*
 > 
@@ -8524,7 +8534,7 @@ You have the following ability.
 Choose one heroic ability from the following options, each of which costs 5 essence to use. Alternatively, you can choose one of the 5-essence abilities you didn't select at 1st level (see 1st-Level Features).
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## O Flower Aid, O Earth Defend (5 Essence)
+> ###### O Flower Aid, O Earth Defend (5 Essence)
 > 
 > *Revitalizing plants and jagged stones grow, helping allies and hindering foes.*
 > 
@@ -8541,7 +8551,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > **Persistent 1:** The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your line of effect.
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Subvert the Green Within (5 Essence)
+> ###### Subvert the Green Within (5 Essence)
 > 
 > *Fungal spores sprout inside your enemy's brain, allowing you to control their actions.*
 > 
@@ -8558,7 +8568,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > - **17+:** 12 + R poison damage
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Translated Through Flame (5 Essence)
+> ###### Translated Through Flame (5 Essence)
 > 
 > *Your ally disappears, then reappears in a burst of fire.*
 > 
@@ -8575,7 +8585,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > - **17+:** 8 fire damage
 
 <!-- @type: ability | @cost: 5 Essence -->
-> ######## Volcano's Embrace (5 Essence)
+> ###### Volcano's Embrace (5 Essence)
 > 
 > *Wrap them up in fire and melting stone.*
 > 
@@ -8624,7 +8634,7 @@ Each time you finish a respite, you can open a two-way portal that leads to any 
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Earth Accepts Me
+> ###### Earth Accepts Me
 > 
 > *You can slip into the stone.*
 > 
@@ -8640,7 +8650,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Remember Growth and Sun and Rain
+> ###### Remember Growth and Sun and Rain
 > 
 > *You stir any wood's memory and learn what it has seen.*
 > 
@@ -8655,7 +8665,7 @@ You have the following ability.
 Choose one heroic ability from the following options, each of which costs 7 essence to use.
 
 <!-- @type: ability | @cost: 7 Essence -->
-> ######## Erase (7 Essence)
+> ###### Erase (7 Essence)
 > 
 > *With a flick of the wrist, you phase creatures out of existence.*
 > 
@@ -8674,7 +8684,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > **Effect:** Each target begins to fade from existence (save ends). On their first turn while fading from existence, a target takes a bane on power rolls. At the end of their first turn, they have a double bane on power rolls. At the end of their second turn, they fade from existence for 1 hour, after which they reappear in their original space or the nearest unoccupied space.
 
 <!-- @type: ability | @cost: 7 Essence -->
-> ######## Maw of Earth (7 Essence)
+> ###### Maw of Earth (7 Essence)
 > 
 > *You open up the ground, spewing out shrapnel of stone and debris.*
 > 
@@ -8691,7 +8701,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > **Effect:** The ground in or directly beneath the area drops 3 squares.
 
 <!-- @type: ability | @cost: 7 Essence -->
-> ######## Swarm of Spirits (7 Essence)
+> ###### Swarm of Spirits (7 Essence)
 > 
 > *Guardian animal spirits surround you to harry your foes and bolster your allies.*
 > 
@@ -8710,7 +8720,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > **Persistent 1:** You make the power roll again to target each enemy in the area without spending essence, and the effect lasts until the start of your next turn.
 
 <!-- @type: ability | @cost: 7 Essence -->
-> ######## Wall of Fire (7 Essence)
+> ###### Wall of Fire (7 Essence)
 > 
 > *A blazing, beautifully organized inferno erupts at your command.*
 > 
@@ -8833,7 +8843,7 @@ Additionally, whenever you use a fire ability or are targeted by an ability that
 Choose one heroic ability from the following options, each of which costs 9 essence to use.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Combustion Deferred (9 Essence)
+> ###### Combustion Deferred (9 Essence)
 > 
 > *Your flames dance from kindling to kindling to kindling.*
 > 
@@ -8850,7 +8860,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **Effect:** When the target ends their next turn, or if they drop to 0 Stamina before then, each enemy adjacent to them takes fire damage equal to twice your Reason score. Each affected enemy then gains this same effect.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Storm of Sands (9 Essence)
+> ###### Storm of Sands (9 Essence)
 > 
 > *Dirt and debris swirl into a dark, pulsing hurricane.*
 > 
@@ -8869,7 +8879,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **Persistent 1:** The area remains until the start of your next turn, and you can move it up to 5 squares (no action required). As a maneuver, you can make the power roll again without spending essence.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Subverted Perception of Space (9 Essence)
+> ###### Subverted Perception of Space (9 Essence)
 > 
 > *You rip an enemy's world in twain.*
 > 
@@ -8884,7 +8894,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > - **17+:** 15 + R corruption damage; the target has line of effect only to adjacent creatures and objects until the start of your next turn
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Web of All That's Come Before (9 Essence)
+> ###### Web of All That's Come Before (9 Essence)
 > 
 > *Threads you've been weaving through your adventures create a vibrant, pearlescent web.*
 > 
@@ -8929,7 +8939,7 @@ You can spend 10 uninterrupted minutes to create a freeform magic spell for a va
 Choose one heroic ability from the following options, each of which costs 9 essence to use. Alternatively, you can choose one of the 9-assence abilities you didn't select at 5th level (see 5th-Level Features).
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Luminous Champion Aloft (9 Essence)
+> ###### Luminous Champion Aloft (9 Essence)
 > 
 > *They shine vibrantly, a beautiful diamond in the night sky.*
 > 
@@ -8942,7 +8952,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **Persistent 1:** The effect lasts until the start of your next turn.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Magma Titan (9 Essence)
+> ###### Magma Titan (9 Essence)
 > 
 > *Their body swells with lava, mud, and might, towering over their enemies.*
 > 
@@ -8961,7 +8971,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **Persistent 2:** The effect lasts until the start of your next turn. Additionally, at the start of your turn, the target can spend 2 Recoveries.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## Meteor (9 Essence)
+> ###### Meteor (9 Essence)
 > 
 > *You teleport the target into the air and let the ground and the elemental force of fire do the rest.*
 > 
@@ -8978,7 +8988,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **Effect:** If the target is teleported to a space where they would fall, they immediately do so, treating the fall as if their Agility score were 0. The target takes fire damage from the fall, and each enemy within 3 squares of where they land takes the same amount of fire damage. The ground within 3 squares of where the target lands is difficult terrain.
 
 <!-- @type: ability | @cost: 9 Essence -->
-> ######## The Wode Remembers and Returns (9 Essence)
+> ###### The Wode Remembers and Returns (9 Essence)
 > 
 > *You create a terrarium that spans from canopy above to underbrush below.*
 > 
@@ -9070,7 +9080,7 @@ Additionally, any enemy who starts their turn adjacent to you has fire weakness 
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Summon Source of Earth
+> ###### Summon Source of Earth
 > 
 > *The ground rumbles as an elemental bursts forth, ready to serve.*
 > 
@@ -9123,7 +9133,7 @@ You have the following ability.
 Choose one heroic ability from the following options, each of which costs 11 essence to use.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Heart of the Wode (11 Essence)
+> ###### Heart of the Wode (11 Essence)
 > 
 > *You call forth one of the Great Tree's many splinters to provide for your every need.*
 > 
@@ -9136,7 +9146,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > Each enemy who ends their turn within 3 squares of the tree is restrained until the end of their next turn. A creature restrained this way can use a main action to end the effect early.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Muse of Fire (11 Essence)
+> ###### Muse of Fire (11 Essence)
 > 
 > *The fire burns hot enough to sear the face of any god watching.*
 > 
@@ -9153,7 +9163,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > **Effect:** The Director's Malice can become negative as a result of this ability.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Return to Oblivion (11 Essence)
+> ###### Return to Oblivion (11 Essence)
 > 
 > *You create a tear in reality that could consume everything.*
 > 
@@ -9164,7 +9174,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > **Effect:** You create a size 1L vortex that lasts until the end of the encounter. At the start of each combat round while the vortex is unoccupied, the vortex vertical pulls 3 each enemy within 5 squares of it. Each enemy who enters the vortex or starts their turn there is knocked prone. At the end of the round, if a winded enemy who is not a leader or solo creature is in the vortex, they are instantly destroyed.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## World Torn Asunder (11 Essence)
+> ###### World Torn Asunder (11 Essence)
 > 
 > *You stomp your foot and quake the whole world over.*
 > 
@@ -9197,7 +9207,7 @@ Additionally, when you have 5 or more Victories, choose one of the following dam
 Choose one heroic ability from the following options, each of which costs 11 essence to use. Alternatively, you can choose one of the 11-essence abilities you didn't select at 8th level (see 8th-Level Features).
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Earth Rejects You (11 Essence)
+> ###### Earth Rejects You (11 Essence)
 > 
 > *Everyone and everything gets blown away in an eruption of rocks and debris.*
 > 
@@ -9214,7 +9224,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > **Persistent 2:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## The Green Defends Its Servants (11 Essence)
+> ###### The Green Defends Its Servants (11 Essence)
 > 
 > *A luminous green shield shows its true beauty the more it cracks.*
 > 
@@ -9227,7 +9237,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > **Persistent 2:** The effect lasts until the start of your next turn.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Prism (11 Essence)
+> ###### Prism (11 Essence)
 > 
 > *You split your essence, allowing you to cast multiple effects at once.*
 > 
@@ -9238,7 +9248,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > **Effect:** You use up to three heroic abilities whose essence costs total 11 or less, spending no additional essence beyond the cost of this ability. You can shift up to 2 squares between your use of each ability.
 
 <!-- @type: ability | @cost: 11 Essence -->
-> ######## Unquenchable Fire (11 Essence)
+> ###### Unquenchable Fire (11 Essence)
 > 
 > *You let fly a fiery missile braided with pure primal energy.*
 > 
@@ -9502,7 +9512,7 @@ Your primordial aspect grants you a triggered action, as shown on the Aspect Tri
 | Stormwight               | Furious Change     |
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Furious Change
+> ###### Furious Change
 > 
 > *In your anger, you revert to a more bestial form.*
 > 
@@ -9517,7 +9527,7 @@ Your primordial aspect grants you a triggered action, as shown on the Aspect Tri
 > **Spend 1 Ferocity:** If you are not dying, you can spend a Recovery.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Lines of Force
+> ###### Lines of Force
 > 
 > *You redirect the energy of motion.*
 > 
@@ -9532,7 +9542,7 @@ Your primordial aspect grants you a triggered action, as shown on the Aspect Tri
 > **Spend 1 Ferocity:** The forced movement distance gains a bonus equal to twice your Might score instead.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Unearthly Reflexes
+> ###### Unearthly Reflexes
 > 
 > *You are as elusive as a hummingbird.*
 > 
@@ -9560,7 +9570,7 @@ You specialize in dealing massive damage on the battlefield, and have mastered u
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* To the Death!)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Brutal Slam
+> ###### Brutal Slam
 > 
 > *The heavy impact of your weapon attacks drives your foes ever back.*
 > 
@@ -9575,7 +9585,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **17+:** 9 + M damage; push 4
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Hit and Run
+> ###### Hit and Run
 > 
 > *Staying in constant motion helps you slip out of reach after a brutal assault.*
 > 
@@ -9592,7 +9602,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** You can shift 1 square.
 
 <!-- @type: ability | @subtype: signature | @id: impaled -->
-> ######## Impaled!
+> ###### Impaled!
 > 
 > *You skewer your enemy like a boar upon a spit.*
 > 
@@ -9607,7 +9617,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **17+:** 7 + M damage; M < STRONG, grabbed
 
 <!-- @type: ability | @subtype: signature | @id: to-the-death -->
-> ######## To the Death!
+> ###### To the Death!
 > 
 > *Your reckless assault leaves you tactically vulnerable.*
 > 
@@ -9632,7 +9642,7 @@ You fight with an array of heroic abilities, all of which cost ferocity to fuel 
 Choose one heroic ability from the following options, each of which costs 3 ferocity to use. (*Quick Build:* Back!)
 
 <!-- @type: ability | @cost: 3 Ferocity | @id: back -->
-> ######## Back! (3 Ferocity)
+> ###### Back! (3 Ferocity)
 > 
 > *You hew about you with your mighty weapon, hurling enemies backward.*
 > 
@@ -9647,7 +9657,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > - **17+:** 11 damage; push 3
 
 <!-- @type: ability | @cost: 3 Ferocity | @id: out-of-the-way -->
-> ######## Out of the Way! (3 Ferocity)
+> ###### Out of the Way! (3 Ferocity)
 > 
 > *Your enemies will clear your path—whether they want to or not.*
 > 
@@ -9664,7 +9674,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > **Effect:** When you slide the target, you can move into any square they leave. If you take damage from an opportunity attack by moving this way, the target takes the same damage.
 
 <!-- @type: ability | @cost: 3 Ferocity -->
-> ######## Tide of Death (3 Ferocity)
+> ###### Tide of Death (3 Ferocity)
 > 
 > *Teach them the folly of lining up for you.*
 > 
@@ -9683,7 +9693,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > **Effect:** The last target you damage takes extra damage equal to your Might score for each opportunity attack you trigger during your move.
 
 <!-- @type: ability | @cost: 3 Ferocity | @id: your-entrails-are-your-extrails -->
-> ######## Your Entrails Are Your Extrails! (3 Ferocity)
+> ###### Your Entrails Are Your Extrails! (3 Ferocity)
 > 
 > *Hard for them to fight when they're busy holding in their giblets.*
 > 
@@ -9704,7 +9714,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 Choose one heroic ability from the following options, each of which costs 5 ferocity to use. (*Quick Build:* Blood for Blood!)
 
 <!-- @type: ability | @cost: 5 Ferocity | @id: blood-for-blood -->
-> ######## Blood for Blood! (5 Ferocity)
+> ###### Blood for Blood! (5 Ferocity)
 > 
 > *See how well they fight after you've bled them dry.*
 > 
@@ -9721,7 +9731,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > **Effect:** You can deal 1d6 damage to yourself to deal an extra 1d6 damage to the target.
 
 <!-- @type: ability | @cost: 5 Ferocity | @id: make-peace-with-your-god -->
-> ######## Make Peace With Your God! (5 Ferocity)
+> ###### Make Peace With Your God! (5 Ferocity)
 > 
 > *Anger is your energy.*
 > 
@@ -9732,7 +9742,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > **Effect:** You gain 1 surge, and the next ability roll you make this turn automatically obtains a tier 3 outcome.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Thunder Roar (5 Ferocity)
+> ###### Thunder Roar (5 Ferocity)
 > 
 > *You unleash a howl that hurls your enemies back.*
 > 
@@ -9749,7 +9759,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > **Effect:** The targets are force moved one at a time, starting with the target nearest to you, and can be pushed into other targets in the same line.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## To the Uttermost End (5 Ferocity)
+> ###### To the Uttermost End (5 Ferocity)
 > 
 > *You gut your life force to ensure a foe's demise.*
 > 
@@ -9812,7 +9822,7 @@ Your primordial aspect grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Special Delivery (5 Ferocity)
+> ###### Special Delivery (5 Ferocity)
 > 
 > *You ready?*
 > 
@@ -9823,7 +9833,7 @@ Choose one of the following abilities.
 > **Effect:** You vertically push the target up to 4 squares. This forced movement ignores the target's stability, and the target takes no damage from colliding with creatures or objects. At the end of this movement, the target can make a free strike that deals extra damage equal to your Might score.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Wrecking Ball (5 Ferocity)
+> ###### Wrecking Ball (5 Ferocity)
 > 
 > *It's easier to destroy than to create. Much easier, in fact!*
 > 
@@ -9846,7 +9856,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Ferocity | @id: death-death -->
-> ######## Death... Death! (5 Ferocity)
+> ###### Death... Death! (5 Ferocity)
 > 
 > *Your unbridled rage strikes terror in their hearts.*
 > 
@@ -9861,7 +9871,7 @@ Choose one of the following abilities.
 > - **17+:** 8 + M damage; P < STRONG, dazed and frightened (save ends)
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Phalanx-Breaker (5 Ferocity)
+> ###### Phalanx-Breaker (5 Ferocity)
 > 
 > *Organizing your forces like feckless creatures of Law. Pitiful.*
 > 
@@ -9882,7 +9892,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Apex Predator (5 Ferocity)
+> ###### Apex Predator (5 Ferocity)
 > 
 > *I will hunt you down.*
 > 
@@ -9899,7 +9909,7 @@ Choose one of the following abilities.
 > **Effect:** The target can't be hidden from you for 24 hours. Until the end of the encounter, whenever the target willingly moves, you can use a free triggered action to move.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
-> ######## Visceral Roar (5 Ferocity)
+> ###### Visceral Roar (5 Ferocity)
 > 
 > *The sound of the storm within you staggers your opponents.*
 > 
@@ -9957,7 +9967,7 @@ You have a double edge on tests made to search for hidden creatures, discern hid
 Choose one heroic ability from the following options, each of which costs 7 ferocity to use.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
-> ######## Demon Unleashed (7 Ferocity)
+> ###### Demon Unleashed (7 Ferocity)
 > 
 > *Foes tremble at the sight of you.*
 > 
@@ -9968,7 +9978,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > **Effect:** Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < STRONG is frightened until the end of their turn.
 
 <!-- @type: ability | @cost: 7 Ferocity | @id: face-the-storm -->
-> ######## Face the Storm! (7 Ferocity)
+> ###### Face the Storm! (7 Ferocity)
 > 
 > *Shocked in the face of your naked brutality, your enemy's instincts take over.*
 > 
@@ -9979,7 +9989,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > **Effect:** Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < AVERAGE is taunted until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy taunted by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
-> ######## Steelbreaker (7 Ferocity)
+> ###### Steelbreaker (7 Ferocity)
 > 
 > *See how useless their weapons are!*
 > 
@@ -9990,7 +10000,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > **Effect:** You gain 20 temporary Stamina.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
-> ######## You Are Already Dead (7 Ferocity)
+> ###### You Are Already Dead (7 Ferocity)
 > 
 > *Slash. Walk away.*
 > 
@@ -10078,7 +10088,7 @@ At the start of your turn, you can end any restrained condition on you. Addition
 Choose one heroic ability from the following options, each of which costs 9 ferocity to use.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Debilitating Strike (9 Ferocity)
+> ###### Debilitating Strike (9 Ferocity)
 > 
 > *You need just one blow to sabotage your target.*
 > 
@@ -10095,7 +10105,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > **Effect:** While slowed this way, the target takes 1 damage for every square they move, including from forced movement.
 
 <!-- @type: ability | @cost: 9 Ferocity | @subtype: triggered | @id: my-turn -->
-> ######## My Turn! (9 Ferocity)
+> ###### My Turn! (9 Ferocity)
 > 
 > *You quickly strike back at a foe.*
 > 
@@ -10114,7 +10124,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > **Effect:** You can spend a Recovery.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Rebounding Storm (9 Ferocity)
+> ###### Rebounding Storm (9 Ferocity)
 > 
 > *You knock around enemies like playthings.*
 > 
@@ -10131,7 +10141,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > **Effect:** When a target would end this forced movement by colliding with a creature or object, they take damage as usual, then are pushed the remaining distance away from the creature or object in the direction they came from. As long as forced movement remains, this effect continues if the target collides with another creature or object.
 
 <!-- @type: ability | @cost: 9 Ferocity | @id: to-stone -->
-> ######## To Stone! (9 Ferocity)
+> ###### To Stone! (9 Ferocity)
 > 
 > *You channel the Primordial Chaos into blows that petrify your foe... literally.*
 > 
@@ -10180,7 +10190,7 @@ Your primordial aspect grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Avalanche Impact (9 Ferocity)
+> ###### Avalanche Impact (9 Ferocity)
 > 
 > *You leap and crash down, causing a shockwave that devastates foes.*
 > 
@@ -10197,7 +10207,7 @@ Choose one of the following abilities.
 > - **17+:** 11 damage; push 3
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Force of Storms (9 Ferocity)
+> ###### Force of Storms (9 Ferocity)
 > 
 > *You strike an enemy hard enough to be a projectile that knocks a crowd of creatures around.*
 > 
@@ -10218,7 +10228,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Ferocity | @subtype: triggered -->
-> ######## Death Strike (9 Ferocity)
+> ###### Death Strike (9 Ferocity)
 > 
 > *Once you taste your foe's blood, you become more efficient and turn every killing blow into an opportunity.*
 > 
@@ -10231,7 +10241,7 @@ Choose one of the following abilities.
 > **Effect:** You target a creature adjacent to you with the same strike, using the same power roll as the triggering strike.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Seek and Destroy (9 Ferocity)
+> ###### Seek and Destroy (9 Ferocity)
 > 
 > *You break through the enemy lines to make an example.*
 > 
@@ -10254,7 +10264,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Pounce (9 Ferocity)
+> ###### Pounce (9 Ferocity)
 >
 > *You strike at the target like the ultimate predator you are.*
 >
@@ -10271,7 +10281,7 @@ Choose one of the following abilities.
 > **Effect:** You can shift up to 4 squares, bringing the target with you. While grabbed this way, the target takes damage equal to twice your Might score at the start of each of your turns.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
-> ######## Riders on the Storm (9 Ferocity)
+> ###### Riders on the Storm (9 Ferocity)
 >
 > *You focus your connection to the Primordial Chaos into a seething storm.*
 >
@@ -10358,7 +10368,7 @@ Your strength is unmatched. Whenever you make a Might test, you can roll three d
 Choose one heroic ability from the following options, each of which costs 11 ferocity to use.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Elemental Ferocity (11 Ferocity)
+> ###### Elemental Ferocity (11 Ferocity)
 >
 > *Your primordial energy makes for instant retribution.*
 >
@@ -10369,7 +10379,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > **Effect:** You gain 10 temporary Stamina. Additionally, choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, whenever an enemy damages you, they take 10 damage of the chosen type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Overkill (11 Ferocity)
+> ###### Overkill (11 Ferocity)
 >
 > *You strike so no damage is wasted.*
 >
@@ -10386,7 +10396,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > **Effect:** If the target is a minion or is winded but isn't a leader or solo creature, they are reduced to 0 Stamina before this ability's damage is dealt. If the target is killed by this damage, you can deal any damage over what was required to kill them to another creature within 5 squares of the target.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Primordial Rage (11 Ferocity)
+> ###### Primordial Rage (11 Ferocity)
 >
 > *Your ferocity manifests into primordial power.*
 >
@@ -10397,7 +10407,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, you can choose one target of any ability you use, with that target taking an extra 15 damage of the chosen type. Additionally, whenever you gain ferocity from taking damage, the source of the damage takes 5 damage of the chosen type.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Relentless Death (11 Ferocity)
+> ###### Relentless Death (11 Ferocity)
 >
 > *You won't escape your fate.*
 >
@@ -10432,7 +10442,7 @@ Your primordial aspect grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Ferocity | @id: death-comes-for-you-all -->
-> ######## Death Comes for You All! (11 Ferocity)
+> ###### Death Comes for You All! (11 Ferocity)
 >
 > *You use your weapon to create a destructive shockwave.*
 >
@@ -10449,7 +10459,7 @@ Choose one of the following abilities.
 > **Effect:** If this forced movement causes a target to be hurled through an object, that target takes an extra 10 damage.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Primordial Vortex (11 Ferocity)
+> ###### Primordial Vortex (11 Ferocity)
 >
 > *You channel the power of the Primordial Chaos to pull foes to you.*
 >
@@ -10470,7 +10480,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Primordial Bane (11 Ferocity)
+> ###### Primordial Bane (11 Ferocity)
 >
 > *You attune the target to be weaker to a specific element.*
 >
@@ -10487,7 +10497,7 @@ Choose one of the following abilities.
 > **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The target loses any damage immunity to the chosen type and gains weakness 10 to the chosen type (save ends).
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Shower of Blood (11 Ferocity)
+> ###### Shower of Blood (11 Ferocity)
 >
 > *You shock your foes with the brutality of your strike, resetting the balance of combat.*
 >
@@ -10508,7 +10518,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Death Rattle (11 Ferocity)
+> ###### Death Rattle (11 Ferocity)
 >
 > *You unleash an otherworldly cry that rips through your enemies, killing the weakest of them.*
 >
@@ -10523,7 +10533,7 @@ Choose one of the following abilities.
 > - **17+:** 10 psychic damage; each target who is not a leader or solo creature is winded; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature
 
 <!-- @type: ability | @cost: 11 Ferocity -->
-> ######## Deluge (11 Ferocity)
+> ###### Deluge (11 Ferocity)
 >
 > *You summon your primordial storm.*
 >
@@ -10610,7 +10620,7 @@ Your primordial aspect benefits are always available to you, and you gain additi
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Aspect of the Wild
+> ###### Aspect of the Wild
 > 
 > *You assume the form of the animal who channels your ferocity.*
 > 
@@ -10681,7 +10691,7 @@ Your primordial damage type is cold.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Bear Claws
+###### Bear Claws
 
 *Attacks with your sharp and deadly claws grab the weak.*
 
@@ -10747,7 +10757,7 @@ Your primordial damage type is fire.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Wing Buffet
+###### Wing Buffet
 
 *Foes who try to close in around you do so at their peril.*
 
@@ -10815,7 +10825,7 @@ Your primordial damage type is corruption.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Driving Pounce
+###### Driving Pounce
 
 *Your enemies try in vain to fall back from your pouncing attack.*
 
@@ -10883,7 +10893,7 @@ Your primordial damage type is lightning.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Unbalancing Attack
+###### Unbalancing Attack
 
 *A wild assault forces your foe onto their back.*
 
@@ -11002,7 +11012,7 @@ When you use an ability outside of combat that lets you spend unlimited discipli
 You project a psionic field of order around your body, dampening the effects of supernatural abilities harmful to you and your allies.
 
 <!-- @type: ability -->
-> ######## Null Field
+> ###### Null Field
 > 
 > *You project an aura that dampens the power of your foes.*
 > 
@@ -11026,7 +11036,7 @@ You project a psionic field of order around your body, dampening the effects of 
 Your instincts for danger let you predict attacks before they happen.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Inertial Shield
+> ###### Inertial Shield
 > 
 > *You intuit the course of an incoming attack, reducing its effects.*
 > 
@@ -11140,7 +11150,7 @@ You rely on a unique blend of martial techniques and psionic prowess to take dow
 Choose two signature abilities from the following options. Signature abilities can be used at will. (*Quick Build:* Faster Than the Eye, Inertial Step.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Dance of Blows
+> ###### Dance of Blows
 >
 > *You strike everywhere at once, tricking an enemy into moving out of position.*
 >
@@ -11157,7 +11167,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You can slide one adjacent enemy up to a number of squares equal to your Intuition score.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Faster Than the Eye
+> ###### Faster Than the Eye
 >
 > *You strike so quickly that your hands become a blur.*
 >
@@ -11174,7 +11184,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You can deal damage equal to your Agility score to one creature or object adjacent to you.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Inertial Step
+> ###### Inertial Step
 >
 > *You flit about the battlefield and take an opportunistic strike.*
 >
@@ -11191,7 +11201,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** You can shift up to half your speed before or after you make this strike.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Joint Lock
+> ###### Joint Lock
 >
 > *You contort your enemy's body into a stance they struggle to escape from.*
 >
@@ -11206,7 +11216,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 9 + A damage; A < STRONG, grabbed
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Kinetic Strike
+> ###### Kinetic Strike
 >
 > *Your opponent staggers. They cannot ignore you.*
 >
@@ -11221,7 +11231,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 6 + A damage; taunted (EoT), slide 2
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Magnetic Strike
+> ###### Magnetic Strike
 >
 > *The force of your blow extends past the limits of your body, pulling your enemy closer.*
 >
@@ -11236,7 +11246,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **17+:** 11 + A psychic damage; vertical pull 3
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Phase Inversion Strike
+> ###### Phase Inversion Strike
 >
 > *You step momentarily out of phase as you pull an enemy through you.*
 >
@@ -11253,7 +11263,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Effect:** Before the push is resolved, you teleport the target to a square adjacent to you and opposite the one they started in. If the target can't be teleported this way, you can't push them.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Pressure Points
+> ###### Pressure Points
 >
 > *You strike at key nerve clusters to leave your foe staggered.*
 >
@@ -11276,7 +11286,7 @@ You have mastered a range of heroic abilities, all of them channeled through you
 Choose one heroic ability from the following options, each of which costs 3 discipline to use. (*Quick Build:* Chronal Spike.)
 
 <!-- @type: ability | @cost: 3 Discipline -->
-> ######## Chronal Spike (3 Discipline)
+> ###### Chronal Spike (3 Discipline)
 >
 > *You foresee the best moment to strike, then exploit it.*
 >
@@ -11293,7 +11303,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > **Effect:** You can shift up to half your speed before or after you make this strike. Additionally, whenever an effect lets you make a free strike or use a signature ability, you can use this ability instead, paying its discipline cost as usual.
 
 <!-- @type: ability | @cost: 3 Discipline -->
-> ######## Psychic Pulse (3 Discipline)
+> ###### Psychic Pulse (3 Discipline)
 >
 > *A burst of psionic energy interferes with your enemy's synapses.*
 >
@@ -11304,7 +11314,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > **Effect:** Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your Null Field ability increases by 1. At the end of your current turn, each enemy in the area of your Null Field ability takes psychic damage equal to your Intuition score.
 
 <!-- @type: ability | @cost: 3 Discipline -->
-> ######## Relentless Nemesis (3 Discipline)
+> ###### Relentless Nemesis (3 Discipline)
 >
 > *You strike, and for the next few moments, your enemy can't escape you.*
 >
@@ -11321,7 +11331,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > **Effect:** Until the start of your next turn, whenever the target finishes moving or being force moved, you can use a free triggered action to shift up to your speed. You must end this shift adjacent to the target.
 
 <!-- @type: ability | @cost: 3 Discipline -->
-> ######## Stunning Blow (3 Discipline)
+> ###### Stunning Blow (3 Discipline)
 >
 > *You focus your psionic technique into a concussive punch.*
 >
@@ -11340,7 +11350,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 Choose one heroic ability from the following options, each of which costs 5 discipline to use. (*Quick Build:* A Squad Unto Myself.)
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Arcane Disruptor (5 Discipline)
+> ###### Arcane Disruptor (5 Discipline)
 >
 > *Your blow reorders a foe's body, causing pain if they attempt to channel sorcery.*
 >
@@ -11357,7 +11367,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > **Effect:** While weakened this way, the target takes damage equal to your Intuition score whenever they use a supernatural ability that costs Malice.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Impart Force (5 Discipline)
+> ###### Impart Force (5 Discipline)
 >
 > *A single touch from you, and your enemy flies backward.*
 >
@@ -11374,7 +11384,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > **Effect:** An object you target must be your size or smaller. You gain an edge on this ability. Additionally, for each square you push the target, they take 1 psychic damage.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Phase Strike (5 Discipline)
+> ###### Phase Strike (5 Discipline)
 >
 > *For a moment, your foe slips out of phase with this manifold.*
 >
@@ -11391,7 +11401,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > **Effect:** A target who goes out of phase is slowed, has their stability reduced by 2, and can't obtain a tier 3 outcome on ability rolls.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## A Squad Unto Myself (5 Discipline)
+> ###### A Squad Unto Myself (5 Discipline)
 >
 > *You move so quickly, it seems as though an army assaulted your foes.*
 >
@@ -11456,7 +11466,7 @@ Your null tradition grants your choice of one of two abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Blur (5 Discipline)
+> ###### Blur (5 Discipline)
 >
 > *You release stored time, allowing you to act twice.*
 >
@@ -11467,7 +11477,7 @@ Choose one of the following abilities.
 > **Effect:** You can use a signature or heroic ability. You gain an edge on that ability's power rolls.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Force Redirected (5 Discipline)
+> ###### Force Redirected (5 Discipline)
 >
 > *The force of your strike moves your target in a surprising direction.*
 >
@@ -11486,7 +11496,7 @@ Choose one of the following abilities.
 Choose one of the following heroic abilities.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Entropic Field (5 Discipline)
+> ###### Entropic Field (5 Discipline)
 >
 > *You drastically increase the local entropy.*
 >
@@ -11501,7 +11511,7 @@ Choose one of the following heroic abilities.
 > - **17+:** 13 cold damage; A < STRONG, slowed (save ends)
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Heat Sink (5 Discipline)
+> ###### Heat Sink (5 Discipline)
 >
 > *You absorb ambient heat, coating the ground in frost and precipitating snow from the air.*
 >
@@ -11516,7 +11526,7 @@ Choose one of the following heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Gravitic Strike (5 Discipline)
+> ###### Gravitic Strike (5 Discipline)
 >
 > *Your fist emanates gravitic force that pulls a distant enemy closer.*
 >
@@ -11531,7 +11541,7 @@ Choose one of the following abilities.
 > - **17+:** 16 + A psychic damage; vertical pull 7
 
 <!-- @type: ability | @cost: 5 Discipline -->
-> ######## Kinetic Shield (5 Discipline)
+> ###### Kinetic Shield (5 Discipline)
 >
 > *You manifest a force barrier that absorbs incoming kinetic energy.*
 >
@@ -11567,7 +11577,7 @@ At the start of each of your turns, you can use a free triggered action to end o
 Choose one heroic ability from the following options, each of which costs 7 discipline to use.
 
 <!-- @type: ability | @cost: 7 Discipline -->
-> ######## Absorption Field (7 Discipline)
+> ###### Absorption Field (7 Discipline)
 >
 > *Your null field absorbs kinetic energy.*
 >
@@ -11578,7 +11588,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > **Effect:** Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.
 
 <!-- @type: ability | @cost: 7 Discipline -->
-> ######## Molecular Rearrangement Field (7 Discipline)
+> ###### Molecular Rearrangement Field (7 Discipline)
 >
 > *Your enemies' wounds open, your allies' wounds close.*
 >
@@ -11589,7 +11599,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > **Effect:** Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is bleeding (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.
 
 <!-- @type: ability | @cost: 7 Discipline -->
-> ######## Stabilizing Field (7 Discipline)
+> ###### Stabilizing Field (7 Discipline)
 >
 > *You project order, making it harder for your enemies to interfere with you and your allies.*
 >
@@ -11600,7 +11610,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > **Effect:** Until the end of the encounter, the size of your Null Field ability increases by 1. While the area of that ability is enlarged this way, you ignore difficult terrain and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.
 
 <!-- @type: ability | @cost: 7 Discipline -->
-> ######## Synapse Field (7 Discipline)
+> ###### Synapse Field (7 Discipline)
 >
 > *Attacks made by allies in your null field disrupt your enemies' thoughts, causing psychic pain.*
 >
@@ -11683,7 +11693,7 @@ If you're not surprised at the start of your first turn in combat, you gain an e
 Choose one heroic ability from the following options, each of which costs 9 discipline to use.
 
 <!-- @type: ability | @cost: 9 Discipline | @subtype: triggered -->
-> ######## Anticipating Strike (9 Discipline)
+> ###### Anticipating Strike (9 Discipline)
 >
 > *You suddenly strike an enemy, then grab them in a psionically enhanced grip.*
 >
@@ -11702,7 +11712,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > **Effect:** This strike resolves before the triggering movement or main action.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Iron Grip (9 Discipline)
+> ###### Iron Grip (9 Discipline)
 >
 > *You grab the target with supernatural force.*
 >
@@ -11719,7 +11729,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > **Effect:** While grabbed this way, the target takes a bane on the Escape Grab maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Phase Leap (9 Discipline)
+> ###### Phase Leap (9 Discipline)
 >
 > *You leap beyond reality, leaving an afterimage of yourself.*
 >
@@ -11730,7 +11740,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > **Effect:** You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your Null Field ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Synaptic Reset (9 Discipline)
+> ###### Synaptic Reset (9 Discipline)
 >
 > *You expand your nullifying power to mitigate harmful effects.*
 >
@@ -11769,7 +11779,7 @@ Your null tradition grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Interphase (9 Discipline)
+> ###### Interphase (9 Discipline)
 >
 > *You slip into a faster timestream to act more quickly.*
 >
@@ -11780,7 +11790,7 @@ Choose one of the following abilities.
 > **Effect:** You can use up to three signature abilities, each of which gains an edge.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Phase Step (9 Discipline)
+> ###### Phase Step (9 Discipline)
 >
 > *You weaken your connection to this manifold, allowing you to move through and damage enemies.*
 >
@@ -11801,7 +11811,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Ice Pillars (9 Discipline)
+> ###### Ice Pillars (9 Discipline)
 >
 > *Pillars of ice erupt from the ground and launch your foes into the air.*
 >
@@ -11818,7 +11828,7 @@ Choose one of the following abilities.
 > **Effect:** The pillars vanish as soon as the effects of the forced movement are resolved.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Wall of Ice (9 Discipline)
+> ###### Wall of Ice (9 Discipline)
 >
 > *You create a wall of ice.*
 >
@@ -11833,7 +11843,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Gravitic Charge (9 Discipline)
+> ###### Gravitic Charge (9 Discipline)
 >
 > *You channel your discipline into momentum that defies gravity.*
 >
@@ -11850,7 +11860,7 @@ Choose one of the following abilities.
 > **Effect:** This movement ignores stability. If you slide into another creature, you resolve damage to both of you as if your force movement had ended, but you keep moving through that creature's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
-> ######## Iron Body (9 Discipline)
+> ###### Iron Body (9 Discipline)
 >
 > *You focus until your body becomes as hard as iron.*
 >
@@ -11968,7 +11978,7 @@ As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each 
 Choose one heroic ability from the following options, each of which costs 11 discipline to use.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Arcane Purge (11 Discipline)
+> ###### Arcane Purge (11 Discipline)
 >
 > *You focus your null field into a pressure point strike that prevents your foe from channeling sorcery.*
 >
@@ -11985,7 +11995,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > **Effect:** While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Phase Hurl (11 Discipline)
+> ###### Phase Hurl (11 Discipline)
 >
 > *You throw your foe out of phase with this manifold, causing them to harm other enemies as they return.*
 >
@@ -12002,7 +12012,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > **Effect:** The target and each creature or object they collide with from this forced movement takes psychic damage equal to the total number of squares the target was force moved. While the target is dazed this way, they see glimpses of creatures from other parts of the timescape.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Scalar Assault (11 Discipline)
+> ###### Scalar Assault (11 Discipline)
 >
 > *You warp reality to grow a limb for just a moment and make a single devastating attack.*
 >
@@ -12017,7 +12027,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > - **17+:** 23 psychic damage; push 7
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
-> ######## Synaptic Anchor (11 Discipline)
+> ###### Synaptic Anchor (11 Discipline)
 >
 > *You disrupt an enemy's strike and create a feedback loop in their mind, preventing them from focusing on future attacks.*
 >
@@ -12048,7 +12058,7 @@ Your null tradition grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
-> ######## Arrestor Cycle (11 Discipline)
+> ###### Arrestor Cycle (11 Discipline)
 >
 > *You trap your foe in a looping cycle of time, where they relive the last few seconds over and over again.*
 >
@@ -12067,7 +12077,7 @@ Choose one of the following abilities.
 > **Effect:** If the target loses their turn, the round continues as if they had acted. A target who doesn't lose their turn takes psychic damage equal to twice your Intuition score for each main action they take until the end of their next turn.
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
-> ######## Time Loop (11 Discipline)
+> ###### Time Loop (11 Discipline)
 >
 > *You show shadows what true speed is.*
 >
@@ -12084,7 +12094,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Absolute Zero (11 Discipline)
+> ###### Absolute Zero (11 Discipline)
 >
 > *You become the coldest thing in the timescape.*
 >
@@ -12101,7 +12111,7 @@ Choose one of the following abilities.
 > **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your Entropic Adaptability trait, you ignore the negative effects of dying, and you have a +2 bonus to potencies.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Heat Drain (11 Discipline)
+> ###### Heat Drain (11 Discipline)
 >
 > *You drain all the heat from the target.*
 >
@@ -12122,7 +12132,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
-> ######## Inertial Absorption (11 Discipline)
+> ###### Inertial Absorption (11 Discipline)
 >
 > *You absorb an attack to empower your body.*
 >
@@ -12135,7 +12145,7 @@ Choose one of the following abilities.
 > **Effect:** You take half the damage, negate any effects associated with the damage for you, and gain 3 surges.
 
 <!-- @type: ability | @cost: 11 Discipline -->
-> ######## Realitas (11 Discipline)
+> ###### Realitas (11 Discipline)
 >
 > *Your essential hyperreality disrupts your enemy's connection to existence.*
 >
@@ -12302,7 +12312,7 @@ Your shadow college grants you one or two features, as shown on the 1st-Level Co
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Black Ash Teleport
+> ###### Black Ash Teleport
 > 
 > *In a swirl of black ash, you step from one place to another.*
 > 
@@ -12320,7 +12330,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Coat the Blade
+> ###### Coat the Blade
 > 
 > *A little poison goes a long way.*
 > 
@@ -12338,7 +12348,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## I'm No Threat
+> ###### I'm No Threat
 > 
 > *Taking on an illusory countenance gives you an advantage on subterfuge.*
 > 
@@ -12371,7 +12381,7 @@ Your shadow college grants you a triggered action, as shown on the College Trigg
 | Harlequin Mask  | Clever Trick          |
 
 <!-- @type: ability | @cost: 1 Insight | @subtype: triggered -->
-> ######## Clever Trick (1 Insight)
+> ###### Clever Trick (1 Insight)
 >
 > *You sow a moment of confusion in combat, to your enemy's peril.*
 >
@@ -12384,7 +12394,7 @@ Your shadow college grants you a triggered action, as shown on the College Trigg
 > **Effect:** Choose an enemy within distance of the triggering strike, including the enemy who targeted you. The strike targets that enemy instead.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Defensive Roll
+> ###### Defensive Roll
 >
 > *When an enemy attacks, you roll with the impact to reduce the harm.*
 >
@@ -12399,7 +12409,7 @@ Your shadow college grants you a triggered action, as shown on the College Trigg
 > **Spend 1 Insight:** The potency of any effects associated with the damage are reduced by 1 for you.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## In All This Confusion
+> ###### In All This Confusion
 >
 > *You vanish in a plume of black smoke to avoid danger.*
 >
@@ -12419,7 +12429,7 @@ Your shadow college grants you a triggered action, as shown on the College Trigg
 You have the following ability.
 
 <!-- @type: ability | @cost: 1 Insight | @subtype: triggered -->
-> ######## Hesitation Is Weakness (1 Insight)
+> ###### Hesitation Is Weakness (1 Insight)
 > 
 > *Keep up the attack. Never give them a moment's grace.*
 > 
@@ -12445,7 +12455,7 @@ You specialize in dealing damage, then getting out of harm's way before the inev
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* Teamwork Has Its Place.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Gasping in Pain
+> ###### Gasping in Pain
 >
 > *Your precise strikes let your allies take advantage of a target's agony.*
 >
@@ -12462,7 +12472,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** One ally within 5 squares of the target gains 1 surge.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## I Work Better Alone
+> ###### I Work Better Alone
 >
 > *"It's better, just you and me. Isn't it?"*
 >
@@ -12479,7 +12489,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** If the target has none of your allies adjacent to them, you gain 1 surge before making the power roll.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Teamwork Has Its Place
+> ###### Teamwork Has Its Place
 >
 > *You attack an enemy as an ally exposes their weakness.*
 >
@@ -12496,7 +12506,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** If any ally is adjacent to the target, you gain 1 surge before making the power roll.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## You Were Watching the Wrong One
+> ###### You Were Watching the Wrong One
 >
 > *They can't watch both of you at once.*
 >
@@ -12521,7 +12531,7 @@ A range of heroic abilities define your combat prowess, all of which make use of
 Choose one heroic ability from the following options, each of which costs 3 insight to use. (*Quick Build:* Get In Get Out.)
 
 <!-- @type: ability | @cost: 3 Insight -->
-> ######## Disorienting Strike (3 Insight)
+> ###### Disorienting Strike (3 Insight)
 >
 > *Your attack leaves them reeling, allowing you to follow up.*
 >
@@ -12538,7 +12548,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > **Effect:** You can shift into any square the target leaves when you slide them.
 
 <!-- @type: ability | @cost: 3 Insight -->
-> ######## Eviscerate (3 Insight)
+> ###### Eviscerate (3 Insight)
 >
 > *You leave your foe bleeding out after a devastating attack.*
 >
@@ -12553,7 +12563,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > - **17+:** 10 + A damage; A < STRONG, bleeding (save ends)
 
 <!-- @type: ability | @cost: 3 Insight -->
-> ######## Get In Get Out (3 Insight)
+> ###### Get In Get Out (3 Insight)
 >
 > *Move unexpectedly, strike fast, and be gone!*
 >
@@ -12570,7 +12580,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > **Effect:** You can shift up to your speed, dividing that movement before or after your strike as desired.
 
 <!-- @type: ability | @cost: 3 Insight -->
-> ######## Two Throats at Once (3 Insight)
+> ###### Two Throats at Once (3 Insight)
 >
 > *A bargain.*
 >
@@ -12589,7 +12599,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 Choose one heroic ability from the following options, each of which costs 5 insight to use. (Quick Build: Coup de Grace.)
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Coup de Grace (5 Insight)
+> ###### Coup de Grace (5 Insight)
 >
 > *Your blade might be the last thing they see.*
 >
@@ -12604,7 +12614,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > - **17+:** 2d6 + 16 + A damage
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## One Hundred Throats (5 Insight)
+> ###### One Hundred Throats (5 Insight)
 >
 > *As you move across the battlefield, every foe within reach feels your wrath.*
 >
@@ -12621,7 +12631,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > - **17+:** 9 damage
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Setup (5 Insight)
+> ###### Setup (5 Insight)
 >
 > *Your friends will thank you.*
 >
@@ -12636,7 +12646,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > - **17+:** 13 + A damage; R < STRONG, the target has damage weakness 5 (save ends)
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Shadowstrike (5 Insight)
+> ###### Shadowstrike (5 Insight)
 >
 > *They have no idea what the college taught you.*
 >
@@ -12695,7 +12705,7 @@ Your shadow college grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## In a Puff of Ash (5 Insight)
+> ###### In a Puff of Ash (5 Insight)
 >
 > *You enchant a strike with your teleportation magic.*
 >
@@ -12710,7 +12720,7 @@ Choose one of the following abilities.
 > - **17+:** 14 + A damage; you can teleport the target up to 5 squares
 
 <!-- @type: ability | @cost: 5 Insight | @subtype: triggered -->
-> ######## Too Slow (5 Insight)
+> ###### Too Slow (5 Insight)
 >
 > *Your foe made a big mistake.*
 >
@@ -12727,7 +12737,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Sticky Bomb (5 Insight)
+> ###### Sticky Bomb (5 Insight)
 >
 > *Explosives are best when they're attached to an enemy.*
 >
@@ -12744,7 +12754,7 @@ Choose one of the following abilities.
 > - **17+:** 11 + A fire damage
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Stink Bomb (5 Insight)
+> ###### Stink Bomb (5 Insight)
 >
 > *Putrid yellow gas explodes from a bomb you toss.*
 >
@@ -12765,7 +12775,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Insight -->
-> ######## Machinations of Sound (5 Insight)
+> ###### Machinations of Sound (5 Insight)
 >
 > *Illusory sounds make your foes reposition themselves as they cower or investigate the disturbance.*
 >
@@ -12782,7 +12792,7 @@ Choose one of the following abilities.
 > **Effect:** This forced movement ignores stability. Instead, the forced movement is reduced by a number equal to the target's Intuition score.
 
 <!-- @type: ability | @cost: 5 Insight | @subtype: triggered -->
-> ######## So Gullible (5 Insight)
+> ###### So Gullible (5 Insight)
 >
 > *When your enemy strikes, you reveal you were in a different place all along.*
 >
@@ -12805,7 +12815,7 @@ As a 3rd-level shadow, you gain the following features.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Careful Observation
+> ###### Careful Observation
 > 
 > *A moment of focus leaves a foe firmly in your sights.*
 > 
@@ -12820,7 +12830,7 @@ You have the following ability.
 Choose one heroic ability from the following options, each of which costs 7 insight to use.
 
 <!-- @type: ability | @cost: 7 Insight -->
-> ######## Dancer (7 Insight)
+> ###### Dancer (7 Insight)
 >
 > *You enter a flow state that makes you nearly impossible to pin down.*
 >
@@ -12831,7 +12841,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > **Effect:** Until the end of the encounter, whenever an enemy moves or is force moved adjacent to you or damages you, you can take the Disengage move action as a free triggered action.
 
 <!-- @type: ability | @cost: 7 Insight -->
-> ######## Misdirecting Strike (7 Insight)
+> ###### Misdirecting Strike (7 Insight)
 >
 > *"Why are you looking at ME?!"*
 >
@@ -12848,7 +12858,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > **Effect:** The target is taunted by a willing ally within 5 squares of you until the end of the target's next turn.
 
 <!-- @type: ability | @cost: 7 Insight -->
-> ######## Pinning Shot (7 Insight)
+> ###### Pinning Shot (7 Insight)
 >
 > *One missile—placed well and placed hard.*
 >
@@ -12863,7 +12873,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > - **17+:** 16 + A damage; A < STRONG, restrained (save ends)
 
 <!-- @type: ability | @cost: 7 Insight -->
-> ######## Staggering Blow (7 Insight)
+> ###### Staggering Blow (7 Insight)
 >
 > *There's no recovering from this.*
 >
@@ -12900,7 +12910,7 @@ Your sense for stealth shows those around you how to evade notice. While you are
 Additionally, you have the following ability.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Night Watch
+> ###### Night Watch
 > 
 > *A steely dagger from out of the blue knocks another weapon off course.*
 > 
@@ -12971,7 +12981,7 @@ Additionally, your Defensive Roll ability now allows you to shift up to 5 square
 Choose one heroic ability from the following options, each of which costs 9 insight to use.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Blackout (9 Insight)
+> ###### Blackout (9 Insight)
 >
 > *You cause a plume of shadow to erupt from your eyes and create a cloud of darkness.*
 >
@@ -12982,7 +12992,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to shift to a new location within the area and make a free strike against them.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Into the Shadows (9 Insight)
+> ###### Into the Shadows (9 Insight)
 >
 > *You sweep your foe off their feet and plunge them into absolute darkness.*
 >
@@ -12999,7 +13009,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > - **17+:** 17 + A corruption damage
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Shadowfall (9 Insight)
+> ###### Shadowfall (9 Insight)
 >
 > *You vanish. They fall. You reappear.*
 >
@@ -13016,7 +13026,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > **Effect:** You disappear before making the power roll. After the power roll is resolved, you appear in the first unoccupied space at the far end of the line.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## You Talk Too Much (9 Insight)
+> ###### You Talk Too Much (9 Insight)
 >
 > *Silence is a virtue. A knife pinning their mouth shut is the next best thing.*
 >
@@ -13064,7 +13074,7 @@ Your shadow college grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Black Ash Eruption (9 Insight)
+> ###### Black Ash Eruption (9 Insight)
 >
 > *Your attack produces a cloud of black ash that launches an enemy into the air.*
 >
@@ -13081,7 +13091,7 @@ Choose one of the following abilities.
 > **Effect:** A creature force moved by this ability must be moved straight upward.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Cinderstorm (9 Insight)
+> ###### Cinderstorm (9 Insight)
 >
 > *You teleport your friends in a burst of ash and fire.*
 >
@@ -13096,7 +13106,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## One Vial Makes You Better (9 Insight)
+> ###### One Vial Makes You Better (9 Insight)
 >
 > *A well-timed throw of a potion will keep your allies in the fight.*
 >
@@ -13109,7 +13119,7 @@ Choose one of the following abilities.
 > A creature who drinks the potion can spend up to 2 Recoveries, and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## One Vial Makes You Faster (9 Insight)
+> ###### One Vial Makes You Faster (9 Insight)
 >
 > *Each ally who catches a potion you throw can take the battle to the next level.*
 >
@@ -13132,7 +13142,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Insight | @id: look -->
-> ######## Look! (9 Insight)
+> ###### Look! (9 Insight)
 >
 > *You distract your foes, allowing your allies to take advantage of that distraction.*
 >
@@ -13143,7 +13153,7 @@ Choose one of the following abilities.
 > **Effect:** Until the start of your next turn, any ability roll made against a target gains an edge.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ######## Puppet Strings (9 Insight)
+> ###### Puppet Strings (9 Insight)
 >
 > *You prick little needles on the tips of your fingers into the nerves of your enemies and cause them to lose control.*
 >
@@ -13228,7 +13238,7 @@ Your movement no longer provokes opportunity attacks. Additionally, you can use 
 You have damage immunity against area abilities and effects equal to your Agility score. You also have the following ability, which you can use once per round on your turn.
 
 <!-- @type: ability -->
-> ######## Time Bomb
+> ###### Time Bomb
 >
 > *The longer it cooks, the bigger the boom.*
 >
@@ -13247,7 +13257,7 @@ You have damage immunity against area abilities and effects equal to your Agilit
 Choose one heroic ability from the following options, each of which costs 11 insight to use.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Assassinate (11 Insight)
+> ###### Assassinate (11 Insight)
 >
 > *A practiced attack will instantly kill an already weakened foe.*
 >
@@ -13264,7 +13274,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > **Effect:** A target who is not a minion, leader, or solo creature and who is winded after taking this damage is reduced to 0 Stamina.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Shadowgrasp (11 Insight)
+> ###### Shadowgrasp (11 Insight)
 >
 > *The shadows around you give way, allowing the shadow creature within you to grasp at your foes.*
 >
@@ -13279,7 +13289,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > - **17+:** 21 corruption damage; A < STRONG, restrained (save ends)
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Speed of Shadows (11 Insight)
+> ###### Speed of Shadows (11 Insight)
 >
 > *You make multiple strikes against a foe before they even notice they're dead.*
 >
@@ -13290,7 +13300,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > **Effect:** You can use a strike signature ability four times, use a strike signature ability that gains an edge three times, or use a strike signature ability that has a double edge twice. You can shift up to 2 squares between each use.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## They Always Line Up (11 Insight)
+> ###### They Always Line Up (11 Insight)
 >
 > *You fire a projectile so fast that it passes through a line of foes, hamstringing them.*
 >
@@ -13325,7 +13335,7 @@ Your shadow college grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Cacophony of Cinders (11 Insight)
+> ###### Cacophony of Cinders (11 Insight)
 >
 > *You tumble through the battle, stabbing foes and teleporting allies.*
 >
@@ -13342,7 +13352,7 @@ Choose one of the following abilities.
 > - **17+:** An enemy takes 14 damage; an ally can teleport up to 7 squares.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Demon Door (11 Insight)
+> ###### Demon Door (11 Insight)
 >
 > *You create a temporary portal to allow a massive demonic hand to reach through.*
 >
@@ -13363,7 +13373,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## Chain Reaction (11 Insight)
+> ###### Chain Reaction (11 Insight)
 >
 > *One explosion, an offense. Three explosions, an assault. Nine explosions, a celebration.*
 >
@@ -13380,7 +13390,7 @@ Choose one of the following abilities.
 > - **17+:** 15 damage
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## To the Stars (11 Insight)
+> ###### To the Stars (11 Insight)
 >
 > *You attach your most potent explosive to your foe. Under less pressing circumstances, you're sure you could launch them into orbit.*
 >
@@ -13401,7 +13411,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## I Am You (11 Insight)
+> ###### I Am You (11 Insight)
 >
 > *Your mask reflects your foe's face. Surely they won't need it much longer.*
 >
@@ -13412,7 +13422,7 @@ Choose one of the following abilities.
 > **Effect:** Until the end of the encounter, you gain the target's damage immunities and speed (if they are better than yours), and can use any types of movement they can use. You can also use the target's signature ability, using their bonus for the power roll.
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ######## It Was Me All Along (11 Insight)
+> ###### It Was Me All Along (11 Insight)
 >
 > *After everything you've been through together, you twist the blade and make the pain extra personal.*
 >
@@ -13619,7 +13629,7 @@ Your tactical doctrine grants you a triggered action, as shown on the Doctrine T
 | Vanguard   | Parry            |
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Advanced Tactics
+> ###### Advanced Tactics
 >
 > *Your leadership aids an ally.*
 >
@@ -13634,7 +13644,7 @@ Your tactical doctrine grants you a triggered action, as shown on the Doctrine T
 > **Spend 1 Focus:** If the damage has any potency effect associated with it, the potency is increased by 1.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Overwatch
+> ###### Overwatch
 >
 > *Under your direction, an ally waits for just the right moment to strike.*
 >
@@ -13649,7 +13659,7 @@ Your tactical doctrine grants you a triggered action, as shown on the Doctrine T
 > **Spend 1 Focus:** If the target has R < AVERAGE, they are slowed (EoT).
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Parry
+> ###### Parry
 >
 > *Your quick reflexes cost an enemy the precision they seek.*
 >
@@ -13689,7 +13699,7 @@ Kit signature abilities have their kit's bonuses already applied, which might re
 You know how to focus the attention of your allies as you push them toward victory. You have the following ability.
 
 <!-- @type: ability -->
-> ######## Mark
+> ###### Mark
 >
 > *You draw your allies' attention to a specific foe—with devastating effect.*
 >
@@ -13716,7 +13726,7 @@ You know how to focus the attention of your allies as you push them toward victo
 You have the following ability.
 
 <!-- @type: ability | @id: strike-now -->
-> ######## "Strike Now!"
+> ###### "Strike Now!"
 >
 > *Your foe left an opening. You point this out to an ally!*
 >
@@ -13746,7 +13756,7 @@ Your heroic abilities cover a range of combat tactics, all of which require focu
 Choose one heroic ability from the following options, each of which costs 3 focus to use. (*Quick Build:* Inspiring Strike.)
 
 <!-- @type: ability | @cost: 3 Focus -->
-> ######## Battle Cry (3 Focus)
+> ###### Battle Cry (3 Focus)
 >
 > *You shout a phrase that galvanizes your team.*
 >
@@ -13761,7 +13771,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > - **17+:** Each target gains 3 surges.
 
 <!-- @type: ability | @cost: 3 Focus -->
-> ######## Concussive Strike (3 Focus)
+> ###### Concussive Strike (3 Focus)
 >
 > *Your precise strike leaves your foe struggling to respond.*
 >
@@ -13776,7 +13786,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > - **17+:** 8 + M damage; M < STRONG, dazed (save ends)
 
 <!-- @type: ability | @cost: 3 Focus -->
-> ######## Inspiring Strike (3 Focus)
+> ###### Inspiring Strike (3 Focus)
 >
 > *Your attack gives an ally hope.*
 >
@@ -13791,7 +13801,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > - **17+:** 8 + M damage; you and one ally within 10 squares of you can spend a Recovery, and each of you gains an edge on the next ability roll you make during the encounter
 
 <!-- @type: ability | @cost: 3 Focus | @id: squad-forward -->
-> ######## Squad! Forward! (3 Focus)
+> ###### Squad! Forward! (3 Focus)
 >
 > *On your command, you and your allies force back the enemy line.*
 >
@@ -13806,7 +13816,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 Choose one heroic ability from the following options, each of which costs 5 focus to use. (*Quick Build:* Hammer and Anvil.)
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## Hammer and Anvil (5 Focus)
+> ###### Hammer and Anvil (5 Focus)
 >
 > *"Let's not argue about who's the hammer and who's the anvil!"*
 >
@@ -13823,7 +13833,7 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 > **Effect:** If the target is reduced to 0 Stamina before one or both chosen allies has made their strike, the ally or allies can pick a different target.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## Mind Game (5 Focus)
+> ###### Mind Game (5 Focus)
 >
 > *Your attack demoralizes your foe. Your allies begin to think you can win.*
 >
@@ -13842,7 +13852,7 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 > **Effect:** Before the start of your next turn, the first time any ally deals damage to any target marked by you, that ally can spend a Recovery.
 
 <!-- @type: ability | @cost: 5 Focus | @id: now -->
-> ######## Now! (5 Focus)
+> ###### Now! (5 Focus)
 >
 > *Your allies wait for your command—then unleash death!*
 >
@@ -13853,7 +13863,7 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 > **Effect:** Each target can make a free strike.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## This Is What We Planned For (5 Focus)
+> ###### This Is What We Planned For (5 Focus)
 >
 > *All those coordination drills you made them do finally pay off.*
 >
@@ -13912,7 +13922,7 @@ Your tactical doctrine grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## Fog of War (5 Focus)
+> ###### Fog of War (5 Focus)
 >
 > *Your unorthodox strategy causes enemies to lash out in fear, heedless of who they might be attacking.*
 >
@@ -13925,7 +13935,7 @@ Choose one of the following abilities.
 > **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to force that target to make a free strike against a creature of your choice within 5 squares of them.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## Try Me Instead (5 Focus)
+> ###### Try Me Instead (5 Focus)
 >
 > *"Try picking on someone my size."*
 >
@@ -13946,7 +13956,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## I've Got Your Back (5 Focus)
+> ###### I've Got Your Back (5 Focus)
 >
 > *Your enemy will think twice about attacking your friend.*
 >
@@ -13963,7 +13973,7 @@ Choose one of the following abilities.
 > **Effect:** One ally adjacent to the target can spend a Recovery.
 
 <!-- @type: ability | @cost: 5 Focus -->
-> ######## Targets of Opportunity (5 Focus)
+> ###### Targets of Opportunity (5 Focus)
 >
 > *You point out easy targets to your friends, allowing them to include more enemies in their attacks.*
 >
@@ -13980,7 +13990,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Focus | @subtype: triggered -->
-> ######## No Dying on My Watch (5 Focus)
+> ###### No Dying on My Watch (5 Focus)
 >
 > *You prioritize saving an ally over your own safety.*
 >
@@ -13999,7 +14009,7 @@ Choose one of the following abilities.
 > - **17+:** R < STRONG, the target is frightened of the triggering ally (save ends)
 
 <!-- @type: ability | @cost: 5 Focus | @id: squad-on-me -->
-> ######## Squad! On Me! (5 Focus)
+> ###### Squad! On Me! (5 Focus)
 >
 > *Together we are invincible!*
 >
@@ -14024,7 +14034,7 @@ Even before battle begins, your enemies struggle to keep up with your tactics. A
 Choose one heroic ability from the following options, each of which costs 7 focus to use.
 
 <!-- @type: ability | @cost: 7 Focus -->
-> ######## Frontal Assault (7 Focus)
+> ###### Frontal Assault (7 Focus)
 >
 > *The purpose of a charge is to break their morale and force a retreat.*
 >
@@ -14035,7 +14045,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > **Effect:** Until the end of the encounter or until you are dying, the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then shift up to 2 squares. Additionally, any ally using the Charge main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee free strike.
 
 <!-- @type: ability | @cost: 7 Focus | @id: hit-em-hard -->
-> ######## Hit 'Em Hard! (7 Focus)
+> ###### Hit 'Em Hard! (7 Focus)
 >
 > *Your allies see the advantages in attacking the targets you select.*
 >
@@ -14046,7 +14056,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > **Effect:** Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.
 
 <!-- @type: ability | @cost: 7 Focus -->
-> ######## Rout (7 Focus)
+> ###### Rout (7 Focus)
 >
 > *The tide begins to turn.*
 >
@@ -14057,7 +14067,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > **Effect:** Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < AVERAGE, the target is frightened of the creature who dealt the damage (save ends).
 
 <!-- @type: ability | @cost: 7 Focus | @id: stay-strong-and-focus -->
-> ######## Stay Strong and Focus! (7 Focus)
+> ###### Stay Strong and Focus! (7 Focus)
 >
 > *"We can do this! Keep faith and hold fast!"*
 >
@@ -14150,7 +14160,7 @@ When you use the Charge main action to attack a creature marked by you, you can 
 Choose one heroic ability from the following options, each of which costs 9 focus to use.
 
 <!-- @type: ability | @cost: 9 Focus | @id: squad-gear-check -->
-> ######## Squad! Gear Check! (9 Focus)
+> ###### Squad! Gear Check! (9 Focus)
 >
 > *You distract a foe while your allies secure their defensive gear.*
 >
@@ -14167,7 +14177,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > **Effect:** You and each ally adjacent to the target gain 10 temporary Stamina.
 
 <!-- @type: ability | @cost: 9 Focus | @id: squad-remember-your-training -->
-> ######## Squad! Remember Your Training! (9 Focus)
+> ###### Squad! Remember Your Training! (9 Focus)
 >
 > *You remind your allies how to best use their gear.*
 >
@@ -14178,7 +14188,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > **Effect:** Each target gains 1 surge and can use a signature ability that has a double edge.
 
 <!-- @type: ability | @cost: 9 Focus | @id: win-this-day -->
-> ######## Win This Day! (9 Focus)
+> ###### Win This Day! (9 Focus)
 >
 > *You inspire your allies to recover and gather their strength.*
 >
@@ -14189,7 +14199,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > **Effect:** Each target gains 2 surges. Additionally, they can spend a Recovery, remove any conditions or effects on them, and stand up if they are prone.
 
 <!-- @type: ability | @cost: 9 Focus -->
-> ######## You've Still Got Something Left (9 Focus)
+> ###### You've Still Got Something Left (9 Focus)
 >
 > *You push an ally to use a heroic ability sooner than they otherwise would.*
 >
@@ -14223,7 +14233,7 @@ Your tactical doctrine grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
-> ######## Coordinated Execution (9 Focus)
+> ###### Coordinated Execution (9 Focus)
 >
 > *You direct your ally to make a killing blow.*
 >
@@ -14236,7 +14246,7 @@ Choose one of the following abilities.
 > **Effect:** If the target of the triggering ability is not a leader or solo creature, they are reduced to 0 Stamina. If the target of the triggering ability is a minion, the entire squad is killed. If the target of the triggering ability is a leader or solo creature, the triggering ability's power roll automatically obtains a tier 3 outcome.
 
 <!-- @type: ability | @cost: 9 Focus -->
-> ######## Panic in Their Lines (9 Focus)
+> ###### Panic in Their Lines (9 Focus)
 >
 > *You confuse your foes, causing them to turn on each other.*
 >
@@ -14257,7 +14267,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Focus -->
-> ######## Battle Plan (9 Focus)
+> ###### Battle Plan (9 Focus)
 >
 > *With new understanding of your foes, you create the perfect plan to win the battle.*
 >
@@ -14270,7 +14280,7 @@ Choose one of the following abilities.
 > **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore damage immunity and deal extra damage equal to three times your Reason score.
 
 <!-- @type: ability | @cost: 9 Focus | @id: hustle -->
-> ######## Hustle! (9 Focus)
+> ###### Hustle! (9 Focus)
 >
 > *You and your allies coordinate to form a new battle line.*
 >
@@ -14285,7 +14295,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
-> ######## Instant Retaliation (9 Focus)
+> ###### Instant Retaliation (9 Focus)
 >
 > *You parry with almost supernatural speed.*
 >
@@ -14304,7 +14314,7 @@ Choose one of the following abilities.
 > - **17+:** A < STRONG, dazed (save ends)
 
 <!-- @type: ability | @cost: 9 Focus | @id: to-me-squad -->
-> ######## To Me Squad! (9 Focus)
+> ###### To Me Squad! (9 Focus)
 >
 > *You lead your allies in a charge.*
 >
@@ -14422,7 +14432,7 @@ You have trained your squad to maximize impact and break enemy lines when they a
 Choose one heroic ability from the following options, each of which costs 11 focus to use.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## Go Now and Speed Well (11 Focus)
+> ###### Go Now and Speed Well (11 Focus)
 >
 > *You direct an attack to strike true.*
 >
@@ -14433,7 +14443,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > **Effect:** The target gains 2 surges and can use a signature or heroic ability as a free triggered action. The ability has a double edge on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.
 
 <!-- @type: ability | @cost: 11 Focus | @subtype: triggered | @id: finish-them -->
-> ######## Finish Them! (11 Focus)
+> ###### Finish Them! (11 Focus)
 >
 > *You point out an opening to your ally so they can land a killing blow.*
 >
@@ -14446,7 +14456,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > **Effect:** The target is killed. Additionally, the creature who caused the target to be winded can spend a Recovery.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## Floodgates Open (11 Focus)
+> ###### Floodgates Open (11 Focus)
 >
 > *You direct your squad to strike in unison and with devastating effect.*
 >
@@ -14457,7 +14467,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > **Effect:** Each target gains 1 surge and can use a signature ability as a free triggered action. That ability gains an edge on the power roll and increases the potency of any potency effects by 1.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## I'll Open and You'll Close (11 Focus)
+> ###### I'll Open and You'll Close (11 Focus)
 >
 > *You create an opening for an ally.*
 >
@@ -14492,7 +14502,7 @@ Your tactical doctrine grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Focus | @id: squad-hit-and-run -->
-> ######## Squad! Hit and Run! (11 Focus)
+> ###### Squad! Hit and Run! (11 Focus)
 >
 > *I had to pry this secret from the shadow colleges.*
 >
@@ -14503,7 +14513,7 @@ Choose one of the following abilities.
 > **Effect:** Each target gains 2 surges, and can use a free triggered action to use a signature ability that gains an edge. After resolving their ability, each target can shift up to 2 squares and become hidden even if they have no cover or concealment, or if they are observed.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## Their Lack of Focus Is Their Undoing (11 Focus)
+> ###### Their Lack of Focus Is Their Undoing (11 Focus)
 >
 > *You trick your enemies into attacking each other and leave them confused by the aftermath.*
 >
@@ -14524,7 +14534,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Focus | @id: blot-out-the-sun -->
-> ######## Blot Out the Sun! (11 Focus)
+> ###### Blot Out the Sun! (11 Focus)
 >
 > *What makes a good soldier? The ability to fire four shots a minute in any weather.*
 >
@@ -14535,7 +14545,7 @@ Choose one of the following abilities.
 > **Effect:** Each target can make a ranged free strike that gains an edge against any enemy marked by you within distance of their ranged free strike. A target ignores banes and double banes when making this strike.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## Counterstrategy (11 Focus)
+> ###### Counterstrategy (11 Focus)
 >
 > *I've identified a way to negate their strengths.*
 >
@@ -14550,7 +14560,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Focus -->
-> ######## No Escape (11 Focus)
+> ###### No Escape (11 Focus)
 >
 > *Nothing will stop you from reaching your foe.*
 >
@@ -14569,7 +14579,7 @@ Choose one of the following abilities.
 > **Effect:** If you use this ability as part of the Charge main action, enemies' spaces don't count as difficult terrain for your movement. Additionally, if you move through any creature's space, you can slide that creature 1 square out of the path of your charge.
 
 <!-- @type: ability | @cost: 11 Focus | @id: that-one-is-mine -->
-> ######## That One Is Mine! (11 Focus)
+> ###### That One Is Mine! (11 Focus)
 >
 > *You focus on making an enemy irrelevant.*
 >
@@ -14728,7 +14738,7 @@ When you use an ability outside of combat that lets you spend unlimited clarity 
 You have the following ability, which can be used as a ranged free strike.
 
 <!-- @type: ability -->
-> ######## Mind Spike
+> ###### Mind Spike
 > 
 > *A telepathic bolt instantly zaps a creature's brain.*
 > 
@@ -14825,7 +14835,7 @@ Your talent tradition grants you two features, as shown on the 1st-Level Traditi
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Accelerate
+> ###### Accelerate
 >
 > *To your ally, it seems as though the world has slowed down.*
 >
@@ -14843,7 +14853,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Again
+> ###### Again
 >
 > *You step back a split second to see if things play out a little differently.*
 >
@@ -14861,7 +14871,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Feedback Loop
+> ###### Feedback Loop
 >
 > *Creating a brief psychic link between an enemy and their target gives that foe a taste of their own medicine.*
 >
@@ -14879,7 +14889,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Minor Telekinesis
+> ###### Minor Telekinesis
 >
 > *Wisps of psychic energy ripple visibly from your brain as you force the target to move using only your mind.*
 >
@@ -14899,7 +14909,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Remote Assistance
+> ###### Remote Assistance
 >
 > *An ally gains the benefit of your intellect.*
 >
@@ -14918,7 +14928,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Repel
+> ###### Repel
 >
 > *They aren't going anywhere, but you might!*
 >
@@ -14939,7 +14949,7 @@ You manifest a variety of psionic powers that let you impact the environment, bo
 Choose two signature abilities from the following options. Signature abilities can be used at will. (*Quick Build:* Incinerate, Kinetic Grip.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Entropic Bolt
+> ###### Entropic Bolt
 >
 > *You advance an enemy's age for a moment.*
 >
@@ -14958,7 +14968,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** You gain 1 clarity when you obtain a tier 2 or tier 3 outcome on the power roll.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Hoarfrost
+> ###### Hoarfrost
 >
 > *You blast a foe with a pulse of cold energy.*
 >
@@ -14975,7 +14985,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** You are slowed until the end of your next turn. Additionally, a target slowed by this ability is restrained instead.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Incinerate
+> ###### Incinerate
 >
 > *The air erupts into a column of smokeless flame.*
 >
@@ -14994,7 +15004,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** The size of the cube increases by 2, but the fire disappears at the end of your turn.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Kinetic Grip
+> ###### Kinetic Grip
 >
 > *You lift and hurl your foe away from you.*
 >
@@ -15011,7 +15021,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** You must vertical push the target instead of sliding them.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Kinetic Pulse
+> ###### Kinetic Pulse
 >
 > *The force of your mind hurls enemies backward.*
 >
@@ -15028,7 +15038,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** The size of the burst increases by 2, and you are bleeding until the start of your next turn.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Materialize
+> ###### Materialize
 >
 > *You picture an object in your mind and give it form—directly above your opponent's head.*
 >
@@ -15047,7 +15057,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** The object explodes after the damage is dealt, and each creature adjacent to the target takes damage equal to your Reason score. You also take damage equal to your Reason score that can't be reduced in any way.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Optic Blast
+> ###### Optic Blast
 > 
 > *Your eyes emit rays of powerful enervating force.*
 > 
@@ -15066,7 +15076,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > **Strained:** You gain 1 surge that you can use immediately, and you take damage equal to your Reason score that can't be reduced in any way.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Spirit Sword
+> ###### Spirit Sword
 >
 > *You form a blade of mind energy and stab your target, invigorating yourself.*
 >
@@ -15093,7 +15103,7 @@ You know a range of heroic abilities, all of which cost clarity to fuel them.
 Choose one heroic ability from the following options, each of which costs 3 clarity to use. (*Quick Build:* Choke.)
 
 <!-- @type: ability | @cost: 3 Clarity -->
-> ######## Awe (3 Clarity)
+> ###### Awe (3 Clarity)
 >
 > *You project psionic energy out to a creature and take on a new visage in their mind.*
 >
@@ -15110,7 +15120,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > - **17+:** 9 + P psychic damage; I < STRONG, frightened (save ends)
 
 <!-- @type: ability | @cost: 3 Clarity -->
-> ######## Choke (3 Clarity)
+> ###### Choke (3 Clarity)
 >
 > *You crush a foe in a telekinetic grip.*
 >
@@ -15127,7 +15137,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > **Effect:** You can vertical pull the target up to 2 squares. If the target is made restrained by this ability, this forced movement ignores their stability.
 
 <!-- @type: ability | @cost: 3 Clarity -->
-> ######## Precognition (3 Clarity)
+> ###### Precognition (3 Clarity)
 >
 > *You give a target a glimpse into the future so that they're ready for what comes next.*
 >
@@ -15138,7 +15148,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > **Effect:** Ability rolls made against the target take a bane until the start of your next turn. Whenever the target takes damage while under this effect, they can use a triggered action to make a free strike against the source of the damage.
 
 <!-- @type: ability | @cost: 3 Clarity -->
-> ######## Smolder (3 Clarity)
+> ###### Smolder (3 Clarity)
 >
 > *Smoke flows from your enemy like tears as their skin begins to blacken and flake.*
 >
@@ -15159,7 +15169,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 Choose one heroic ability from the following options, each of which costs 5 clarity to use. (*Quick Build:* Inertia Soak.)
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Flashback (5 Clarity)
+> ###### Flashback (5 Clarity)
 >
 > *The target is thrown several seconds back through time and gets to do it all again.*
 >
@@ -15172,7 +15182,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > **Strained:** You take 1d6 damage and are slowed (save ends).
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Inertia Soak (5 Clarity)
+> ###### Inertia Soak (5 Clarity)
 >
 > *Your psionic energy surrounds the target and pushes everything else away from them.*
 >
@@ -15185,7 +15195,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > **Strained:** You are weakened (save ends). While you are weakened this way, whenever you are force moved, the forced movement distance gains a +5 bonus.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Iron (5 Clarity)
+> ###### Iron (5 Clarity)
 >
 > *The target's skin turns to hard, dark metal, impenetrable and dense.*
 >
@@ -15198,7 +15208,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > **Strained:** You can't use maneuvers (save ends).
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Perfect Clarity (5 Clarity)
+> ###### Perfect Clarity (5 Clarity)
 >
 > *You clear the mind of nothing but the goal.*
 >
@@ -15257,7 +15267,7 @@ Your talent tradition grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Applied Chronometrics (5 Clarity)
+> ###### Applied Chronometrics (5 Clarity)
 >
 > *Time slows down around you. Your heartbeat is the only gauge of the extra moments you've gained.*
 >
@@ -15276,7 +15286,7 @@ Choose one of the following abilities.
 > **Strained:** Your speed is halved until the end of the encounter.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Slow (5 Clarity)
+> ###### Slow (5 Clarity)
 >
 > *Perhaps they wonder why everyone else is moving so quickly?*
 >
@@ -15299,7 +15309,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Gravitic Burst (5 Clarity)
+> ###### Gravitic Burst (5 Clarity)
 >
 > *Everyone get away from me!*
 >
@@ -15316,7 +15326,7 @@ Choose one of the following abilities.
 > **Strained:** The size of the burst increases by 1, and you are weakened until the end of your turn.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Levity and Gravity (5 Clarity)
+> ###### Levity and Gravity (5 Clarity)
 >
 > *You raise the target slightly into the air, then smother them against the ground.*
 >
@@ -15337,7 +15347,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Overwhelm (5 Clarity)
+> ###### Overwhelm (5 Clarity)
 >
 > *You overload their senses, turning all their subconscious thoughts into conscious ones.*
 >
@@ -15354,7 +15364,7 @@ Choose one of the following abilities.
 > **Strained:** You start crying, and you can't use triggered actions or make free strikes until the end of the target's next turn.
 
 <!-- @type: ability | @cost: 5 Clarity -->
-> ######## Synaptic Override (5 Clarity)
+> ###### Synaptic Override (5 Clarity)
 >
 > *You control an enemy's nervous system. How pleasant for them.*
 >
@@ -15387,7 +15397,7 @@ You can extend your psionic senses beyond their usual range. Once on each of you
 Choose one heroic ability from the following options, each of which costs 7 clarity to use.
 
 <!-- @type: ability | @cost: 7 Clarity -->
-> ######## Fling Through Time (7 Clarity)
+> ###### Fling Through Time (7 Clarity)
 >
 > *You hurl the target through the annals of time, forcing them to witness every moment of their existence all at once.*
 >
@@ -15406,7 +15416,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > **Strained:** You take 2d6 damage and permanently grow visibly older (the equivalent of 10 years for a human). If you obtain a tier 3 outcome on the power roll, you gain 2 clarity.
 
 <!-- @type: ability | @cost: 7 Clarity -->
-> ######## Force Orbs (7 Clarity)
+> ###### Force Orbs (7 Clarity)
 >
 > *Spheres of solid psionic energy float around you.*
 >
@@ -15427,7 +15437,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > **Strained:** You create five orbs, and you are weakened while you have any orbs active.
 
 <!-- @type: ability | @cost: 7 Clarity -->
-> ######## Reflector Field (7 Clarity)
+> ###### Reflector Field (7 Clarity)
 >
 > *A protective field reverses the momentum of incoming attacks.*
 >
@@ -15440,7 +15450,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > **Strained:** The size of the aura increases by 1. Whenever your aura reflects an ability, you take 2d6 damage and forget a memory, as determined by you and the Director.
 
 <!-- @type: ability | @cost: 7 Clarity -->
-> ######## Soul Burn (7 Clarity)
+> ###### Soul Burn (7 Clarity)
 >
 > *You blast their soul out of their body, leaving it to helplessly float back to a weakened husk.*
 >
@@ -15552,7 +15562,7 @@ Whenever an ally uses a ranged ability while you are within the ability's distan
 Choose one heroic ability from the following options, each of which costs 9 clarity to use.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Exothermic Shield (9 Clarity)
+> ###### Exothermic Shield (9 Clarity)
 >
 > *You encase the target in psionic flame and allow them to flicker without fear of burning out.*
 >
@@ -15565,7 +15575,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > **Strained:** The target gains 2 surges. You are weakened and slowed (save ends).
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Hypersonic (9 Clarity)
+> ###### Hypersonic (9 Clarity)
 >
 > *You move fast enough to turn around and watch your foes feel the aftermath.*
 >
@@ -15584,7 +15594,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > **Strained:** If you obtain a tier 2 outcome or better, you are slowed until the end of your turn and each target is slowed until the end of their turn.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Mind Snare (9 Clarity)
+> ###### Mind Snare (9 Clarity)
 >
 > *You latch onto your prey's brain and don't let go, like a song they can't get out of their head.*
 >
@@ -15603,7 +15613,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > **Strained:** While slowed this way, the target instead takes 5 psychic damage for each square they willingly leave. You have a double bane on ability rolls made against the target while they are slowed this way.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Soulbound (9 Clarity)
+> ###### Soulbound (9 Clarity)
 >
 > *You fire a piercing bolt of psychic energy that lances through two foes and leaves a faint intangible thread between them.*
 >
@@ -15680,7 +15690,7 @@ Your talent tradition grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Fate (9 Clarity)
+> ###### Fate (9 Clarity)
 >
 > *Your foe gets a glimpse of how it will end for them.*
 >
@@ -15699,7 +15709,7 @@ Choose one of the following abilities.
 > - **17+:** 17 + P psychic damage
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Stasis Field (9 Clarity)
+> ###### Stasis Field (9 Clarity)
 >
 > *Keep everything as it was. Ignore everything that will be.*
 >
@@ -15724,7 +15734,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Gravitic Well (9 Clarity)
+> ###### Gravitic Well (9 Clarity)
 >
 > *You bend gravity into a fine point and pull your foes toward it.*
 >
@@ -15743,7 +15753,7 @@ Choose one of the following abilities.
 > **Strained:** The size of the area increases by 2. You also target yourself and each ally within distance.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Greater Kinetic Grip (9 Clarity)
+> ###### Greater Kinetic Grip (9 Clarity)
 >
 > *You raise the target into the air without breaking a sweat.*
 >
@@ -15764,7 +15774,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Synaptic Conditioning (9 Clarity)
+> ###### Synaptic Conditioning (9 Clarity)
 >
 > *It's a subtle mindset shift. It's not that they're your enemy—you just don't like them!*
 >
@@ -15781,7 +15791,7 @@ Choose one of the following abilities.
 > **Strained:** While the target is under this effect, you no longer consider your enemies to be your enemies when using your abilities and features.
 
 <!-- @type: ability | @cost: 9 Clarity -->
-> ######## Synaptic Dissipation (9 Clarity)
+> ###### Synaptic Dissipation (9 Clarity)
 >
 > *You manipulate your enemies' minds and make them wonder if you were ever really there in the first place.*
 >
@@ -15863,7 +15873,7 @@ While you have 5 or more Victories, you can undertake an additional respite acti
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Levitation Field
+> ###### Levitation Field
 >
 > *You manipulate the air around your allies so they can move as freely through the sky as you can.*
 >
@@ -15891,7 +15901,7 @@ During a respite, you can choose a number of creatures up to your Reason score w
 You have the following ability.
 
 <!-- @type: ability | @cost: 3 Clarity | @subtype: triggered -->
-> ######## Stasis Shield (3 Clarity)
+> ###### Stasis Shield (3 Clarity)
 >
 > *You freeze time just long enough to bring the victim to safety!*
 >
@@ -15915,7 +15925,7 @@ The range of your Telepathic Speech feature increases to anywhere on the same wo
 Choose one heroic ability from the following options, each of which costs 11 clarity to use.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Doubt (11 Clarity)
+> ###### Doubt (11 Clarity)
 >
 > *You tug at the strings of the foe's anima and unravel them, allowing someone else to take advantage of their drive.*
 >
@@ -15934,7 +15944,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > **Strained:** You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the power roll, you and the target each have damage weakness 5 (save ends).
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Mindwipe (11 Clarity)
+> ###### Mindwipe (11 Clarity)
 >
 > *You attempt to make them forget all their training.*
 >
@@ -15953,7 +15963,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > **Strained:** You take 3d6 damage.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Rejuvenate (11 Clarity)
+> ###### Rejuvenate (11 Clarity)
 >
 > *You reshape the flow of time in the target's body to return it to an earlier state.*
 >
@@ -15970,7 +15980,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > **Strained:** You and the target both permanently grow visibly younger (the equivalent of 20 human years, to the minimum of an 18-year-old). Additionally, you are weakened and slowed (save ends).
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Steel (11 Clarity)
+> ###### Steel (11 Clarity)
 >
 > *The target's skin becomes covered in tough metal.*
 >
@@ -16007,7 +16017,7 @@ Your talent tradition grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Acceleration Field (11 Clarity)
+> ###### Acceleration Field (11 Clarity)
 > 
 > *You forcibly stuff more moments into a critical point in time, knowing full well you might need to steal some of your own.*
 > 
@@ -16026,7 +16036,7 @@ Choose one of the following abilities.
 > - **17+:** 10 corruption damage; slowed (save ends)
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Borrow From the Future (11 Clarity)
+> ###### Borrow From the Future (11 Clarity)
 >
 > *You lean on future heroism to assist you in the now.*
 >
@@ -16041,7 +16051,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Fulcrum (11 Clarity)
+> ###### Fulcrum (11 Clarity)
 >
 > *You precisely manipulate the creatures around you.*
 >
@@ -16060,7 +16070,7 @@ Choose one of the following abilities.
 > **Strained:** You can choose to reduce the size of the burst by 2 (to a minimum of 1 burst) to give the forced movement distance a +2 bonus. You take half the total damage all targets take from forced movement.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Gravitic Nova (11 Clarity)
+> ###### Gravitic Nova (11 Clarity)
 >
 > *Unbridled psionic energy erupts from your body and flashes outward, hurling your foes back.*
 >
@@ -16083,7 +16093,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Resonant Mind Spike (11 Clarity)
+> ###### Resonant Mind Spike (11 Clarity)
 >
 > *You fire a telepathic bolt empowered by every consciousness within reach directly into your foe's mind.*
 >
@@ -16102,7 +16112,7 @@ Choose one of the following abilities.
 > **Strained:** The ability roll scores a critical hit on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
 
 <!-- @type: ability | @cost: 11 Clarity -->
-> ######## Synaptic Terror (11 Clarity)
+> ###### Synaptic Terror (11 Clarity)
 >
 > *You project a terrifying image into the brains of your foes, and their fear psionically invigorates your allies.*
 >
@@ -16286,7 +16296,7 @@ You enter every battle with a set of performance abilities at the ready. Perform
 You start off with the Choreography and Revitalizing Limerick performance abilities. Your choice of class act grants you additional performances.
 
 <!-- @type: ability -->
-> ######## Choreography
+> ###### Choreography
 >
 > *Taps, kicks, steps. It's all "choreography."*
 >
@@ -16297,7 +16307,7 @@ You start off with the Choreography and Revitalizing Limerick performance abilit
 > **Effect:** While this performance is active, each target who starts their turn in the area gains a +2 bonus to speed until the end of their turn.
 
 <!-- @type: ability -->
-> ######## Revitalizing Limerick
+> ###### Revitalizing Limerick
 >
 > *There once was a man from Capital...*
 >
@@ -16326,7 +16336,7 @@ Your troubadour class act grants you two features, as shown on the 1st-Level Cla
 You have the following performance ability, which is usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## Acrobatics
+> ###### Acrobatics
 >
 > *Folks love a good tumble.*
 >
@@ -16342,7 +16352,7 @@ You have the following performance ability, which is usable with your Routines f
 You have the following performance ability, which is usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## Blocking
+> ###### Blocking
 >
 > *No, no, no, you lose the audience that way. Try it like this...*
 >
@@ -16358,7 +16368,7 @@ You have the following performance ability, which is usable with your Routines f
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Dramatic Monologue
+> ###### Dramatic Monologue
 >
 > *It doesn't need to make sense. Just say it with emotion.*
 >
@@ -16380,7 +16390,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability -->
-> ######## Power Chord
+> ###### Power Chord
 >
 > *Your instrument rings true and your music blows everyone away.*
 >
@@ -16400,7 +16410,7 @@ You have the following ability.
 You have the following ability.
 
 <!-- @type: ability | @cost: 1 Drama -->
-> ######## Star Power (1 Drama)
+> ###### Star Power (1 Drama)
 >
 > *Your years of practicing fencing and dancing pay off on the battlefield.*
 >
@@ -16418,7 +16428,7 @@ You have the following ability.
 You have the following performance abilities, which are usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## "Thunder Mother"
+> ###### "Thunder Mother"
 >
 > *All for thunder motherrr! ♪ Run and hide for coverrr!♪*
 >
@@ -16435,7 +16445,7 @@ You have the following performance abilities, which are usable with your Routine
 > - **17+:** Lightning damage equal to 10 + your level
 
 <!-- @type: ability -->
-> ######## "Ballad of the Beast"
+> ###### "Ballad of the Beast"
 >
 > *Teeth are bare! ♪ Eyes black! ♪ No escaping the beast!♪*
 >
@@ -16459,7 +16469,7 @@ Your troubadour class act grants you a triggered action, as shown on the Class A
 | Virtuoso  | Harmonize              |
 
 <!-- @type: ability | @cost: 3 Drama | @subtype: triggered -->
-> ######## Harmonize (3 Drama)
+> ###### Harmonize (3 Drama)
 >
 > *Give the chorus a little punch.*
 >
@@ -16474,7 +16484,7 @@ Your troubadour class act grants you a triggered action, as shown on the Class A
 > **Spend 1+ Drama:** You can trigger this ability when a target uses an ability that has a Heroic Resource cost of 3 + each additional drama spent.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Riposte
+> ###### Riposte
 >
 > *"I'd have brought treats had I known I'd be fighting a dog."*
 >
@@ -16487,7 +16497,7 @@ Your troubadour class act grants you a triggered action, as shown on the Class A
 > **Effect:** The target makes a free strike against the creature who made the triggering strike.
 
 <!-- @type: ability | @subtype: triggered -->
-> ######## Turnabout Is Fair Play
+> ###### Turnabout Is Fair Play
 >
 > *All's fair in love and whatever.*
 >
@@ -16510,7 +16520,7 @@ Your performance centers around maneuvering through the scene of battle, maintai
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* Witty Banter.)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Artful Flourish
+> ###### Artful Flourish
 >
 > *And they said practicing fencing was a waste!*
 >
@@ -16529,7 +16539,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Spend 2+ Drama:** You can target one additional creature or object for every 2 drama spent.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Cutting Sarcasm
+> ###### Cutting Sarcasm
 >
 > *There you are, radiating your usual charisma.*
 >
@@ -16544,7 +16554,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **17+:** 7 + P psychic damage; P < STRONG, bleeding (save ends)
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Instigator
+> ###### Instigator
 >
 > *I didn't do it! What?*
 >
@@ -16561,7 +16571,7 @@ Choose one signature ability from the following options. Signature abilities can
 > **Effect:** The target is taunted by you or a willing ally adjacent to you until the end of the target's next turn.
 
 <!-- @type: ability | @subtype: signature -->
-> ######## Witty Banter
+> ###### Witty Banter
 >
 > *A lyrical (and physical) jab insults an enemy and inspires an ally.*
 >
@@ -16588,7 +16598,7 @@ You master a range of heroic abilities, all of which cost drama to empower them.
 Choose one heroic ability from the following options, each of which costs 3 drama to use. (*Quick Build:* Harsh Critic.)
 
 <!-- @type: ability | @cost: 3 Drama -->
-> ######## Harsh Critic (3 Drama)
+> ###### Harsh Critic (3 Drama)
 >
 > *Just one bad review will ruin their day.*
 >
@@ -16605,7 +16615,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > **Effect:** The first time the target uses an ability before the start of your next turn, any effects from the ability's tier outcomes other than damage are negated for all targets. Ability effects that always happen regardless of the power roll work as usual.
 
 <!-- @type: ability | @cost: 3 Drama -->
-> ######## Hypnotic Overtones (3 Drama)
+> ###### Hypnotic Overtones (3 Drama)
 >
 > *You produce an entrancing note that twists the senses in a spectacular fashion.*
 >
@@ -16622,7 +16632,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > **Spend 2+ Drama:** The size of the burst increases by 1 for every 2 drama spent.
 
 <!-- @type: ability | @cost: 3 Drama -->
-> ######## Quick Rewrite (3 Drama)
+> ###### Quick Rewrite (3 Drama)
 >
 > *You write something unexpected into the scene that hinders your enemy.*
 >
@@ -16639,7 +16649,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > **Effect:** The area is difficult terrain for enemies.
 
 <!-- @type: ability | @cost: 3 Drama -->
-> ######## Upstage (3 Drama)
+> ###### Upstage (3 Drama)
 >
 > *As you bob and weave through the crowd, you can't help but leave the audience wanting more.*
 >
@@ -16660,7 +16670,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 Choose one heroic ability from the following options, each of which costs 5 drama to use. (*Quick Build:* Dramatic Reversal.)
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Dramatic Reversal (5 Drama)
+> ###### Dramatic Reversal (5 Drama)
 >
 > *Give the audience a surprise.*
 >
@@ -16675,7 +16685,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > - **17+:** The target can shift up to 3 squares and make a free strike that gains an edge, then can spend a Recovery.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Fake Your Death (5 Drama)
+> ###### Fake Your Death (5 Drama)
 >
 > *O happy dagger, this is thy sheath!*
 >
@@ -16686,7 +16696,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > **Effect:** You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to speed and you ignore difficult terrain. The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Flip the Script (5 Drama)
+> ###### Flip the Script (5 Drama)
 >
 > *You try a different take on events, justifying the new locations everyone ended up in.*
 >
@@ -16697,7 +16707,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > **Effect:** Each target can teleport up to 5 squares. Any teleported target who was slowed is no longer slowed.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Method Acting (5 Drama)
+> ###### Method Acting (5 Drama)
 >
 > *They're so hurt by your performance, you start to believe it yourself.*
 >
@@ -16767,7 +16777,7 @@ Your troubadour class act grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Guest Star (5 Drama)
+> ###### Guest Star (5 Drama)
 >
 > *We offered them a percentage of the gross. So they're working for free!*
 >
@@ -16778,7 +16788,7 @@ Choose one of the following abilities.
 > **Effect:** A guest star appears to help you during the encounter: either a bystander within distance uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within distance. This guest star is controlled by you, has their own turn, and shares your characteristics. Their Stamina maximum is half yours. They have no abilities other than your melee and ranged free strikes. At the end of the encounter, or when the guest star is reduced to 0 Stamina, they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Twist at the End (5 Drama)
+> ###### Twist at the End (5 Drama)
 >
 > *You didn't see that coming, did you?!*
 >
@@ -16793,7 +16803,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Classic Chandelier Stunt (5 Drama)
+> ###### Classic Chandelier Stunt (5 Drama)
 >
 > *Audiences love this bit.*
 >
@@ -16804,7 +16814,7 @@ Choose one of the following abilities.
 > **Effect:** Each target can shift up to 5 squares, including vertically, but must end this movement adjacent to the other target and on solid ground. Each target can then make a melee free strike that deals extra damage equal to twice their highest characteristic score.
 
 <!-- @type: ability | @cost: 5 Drama | @id: en-garde -->
-> ######## En Garde! (5 Drama)
+> ###### En Garde! (5 Drama)
 >
 > *Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!*
 >
@@ -16825,7 +16835,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Encore (5 Drama)
+> ###### Encore (5 Drama)
 >
 > *Again! Again!*
 >
@@ -16836,7 +16846,7 @@ Choose one of the following abilities.
 > **Effect:** You use an ability that you have observed being used this combat round. The ability must have the Strike keyword, cost 5 or fewer of a Heroic Resource, and cost no Malice. When you make the strike, you use your Presence score for any power rolls, and any damage you deal is sonic damage.
 
 <!-- @type: ability | @cost: 5 Drama -->
-> ######## Tough Crowd (5 Drama)
+> ###### Tough Crowd (5 Drama)
 >
 > *Your fans don't seem to like the opening act...*
 >
@@ -16886,7 +16896,7 @@ If you aren't surprised at the start of an encounter, you can choose one enemy w
 You have the following performance abilities, which are usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## "Fire Up the Night"
+> ###### "Fire Up the Night"
 >
 > *Maybe you and I ♪ We can still bring the light!♪*
 >
@@ -16897,7 +16907,7 @@ You have the following performance abilities, which are usable with your Routine
 > **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: Tests).
 
 <!-- @type: ability -->
-> ######## "Never-Ending Hero"
+> ###### "Never-Ending Hero"
 >
 > *And toniiight we can truly say ♪ They will alllways find a way!♪*
 >
@@ -16912,7 +16922,7 @@ You have the following performance abilities, which are usable with your Routine
 Choose one heroic ability from the following options, each of which costs 7 drama to use.
 
 <!-- @type: ability | @cost: 7 Drama -->
-> ######## Extensive Rewrites (7 Drama)
+> ###### Extensive Rewrites (7 Drama)
 >
 > *No, this isn't right. That foe was over there!*
 >
@@ -16929,7 +16939,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > **Effect:** Instead of sliding a target, you can swap their location with another target as long as each can fit into the other's space. You can't slide targets into other creatures or objects using this ability.
 
 <!-- @type: ability | @cost: 7 Drama -->
-> ######## Infernal Gavotte (7 Drama)
+> ###### Infernal Gavotte (7 Drama)
 >
 > *A spicy performance lights a fire under your allies' feet.*
 >
@@ -16946,7 +16956,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > **Effect:** Each ally in the area can shift up to 2 squares.
 
 <!-- @type: ability | @cost: 7 Drama -->
-> ######## Star Solo (7 Drama)
+> ###### Star Solo (7 Drama)
 >
 > *Your performance travels and doesn't stop moving until your audience is completely rocked.*
 >
@@ -16963,7 +16973,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > **Effect:** You can choose to have this ability deal sonic damage. Additionally, you can use this ability against the same target for the next 2 combat rounds without spending drama.
 
 <!-- @type: ability | @cost: 7 Drama -->
-> ######## We Meet at Last (7 Drama)
+> ###### We Meet at Last (7 Drama)
 >
 > *You magically intertwine your fate with another creature—for better or worse.*
 >
@@ -17056,7 +17066,7 @@ Once on each of your turns, you can use a free maneuver to change one condition 
 You have the following performance ability, which is usable with your Routines feature.
 
 <!-- @type: ability | @id: take-two -->
-> ######## Take Two!
+> ###### Take Two!
 >
 > *One more, and this time make it interesting.*
 >
@@ -17080,7 +17090,7 @@ Once on each of your turns while the target of your Foil feature is adjacent to 
 You have the following performance ability, which is usable with your Routines feature.
 
 <!-- @type: ability | @id: we-cant-be-upstaged -->
-> ######## We Can't Be Upstaged!
+> ###### We Can't Be Upstaged!
 >
 > *Swordplay so graceful it looks like you all practiced this.*
 >
@@ -17108,7 +17118,7 @@ You can maintain two performances at a time using your Routines feature.
 Choose one heroic ability from the following options, each of which costs 9 drama to use.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Action Hero (9 Drama)
+> ###### Action Hero (9 Drama)
 >
 > *You wield your weapon at blistering speed, leaving everyone around you fighting for their lives.*
 >
@@ -17125,7 +17135,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > **Effect:** Unless you score a critical hit, this ability can't reduce a non-minion target below 1 Stamina.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Continuity Error (9 Drama)
+> ###### Continuity Error (9 Drama)
 >
 > *Your subject is written into two places at once.*
 >
@@ -17136,7 +17146,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > **Effect:** The target is split into two separate entities, one of which remains in the target's space while the other appears in an unoccupied space of your choice within distance. If the target is a creature, this creates a new creature under the Director's control. Each entity has half the original target's Stamina, is weakened, and takes 1d6 corruption damage at the start of each of their turns. If either entity is reduced to 0 Stamina, the other entity persists as the original entity and this effect ends. The effect also ends if both entities occupy the same space, causing them to automatically merge and combine their current Stamina.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Love Song (9 Drama)
+> ###### Love Song (9 Drama)
 >
 > *You play a small ditty that plants you inside your target's heart.*
 >
@@ -17147,7 +17157,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > **Effect:** The target gains 20 temporary Stamina. Until the end of the encounter, whenever the target takes damage while you're within distance, you can choose to take the damage instead of the target.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Patter Song (9 Drama)
+> ###### Patter Song (9 Drama)
 >
 > *Dazzle them with your fancy patter and they forget where they were.*
 >
@@ -17177,7 +17187,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice.
 You have the following performance ability, which is usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## Spotlight
+> ###### Spotlight
 >
 > *The audience is watching, so you'd better give them a show.*
 >
@@ -17196,7 +17206,7 @@ Your troubadour class act grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Here's How Your Story Ends (9 Drama)
+> ###### Here's How Your Story Ends (9 Drama)
 >
 > *You give away the ending of this battle, and it's not great for them.*
 >
@@ -17211,7 +17221,7 @@ Choose one of the following abilities.
 > - **17+:** 7 psychic damage; P < STRONG, frightened (save ends)
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## You're All My Understudies (9 Drama)
+> ###### You're All My Understudies (9 Drama)
 >
 > *It's important for everyone to know each other's lines, just in case...*
 >
@@ -17226,7 +17236,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Blood on the Stage (9 Drama)
+> ###### Blood on the Stage (9 Drama)
 >
 > *It's love and blood or drama and blood. Either way, there's always blood.*
 >
@@ -17241,7 +17251,7 @@ Choose one of the following abilities.
 > - **17+:** 24 + A damage; bleeding (EoT), or if M < STRONG, bleeding (save ends)
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Fight Choreography (9 Drama)
+> ###### Fight Choreography (9 Drama)
 >
 > *You and your partner make a flashy show of derring-do, then get back to your corners.*
 >
@@ -17256,7 +17266,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Feedback (9 Drama)
+> ###### Feedback (9 Drama)
 >
 > *Your music pounds the crowd to the beat until their hearts can't stand it anymore.*
 >
@@ -17273,7 +17283,7 @@ Choose one of the following abilities.
 > - **17+:** 13 sonic damage; P < STRONG, prone
 
 <!-- @type: ability | @cost: 9 Drama -->
-> ######## Legendary Drum Fill (9 Drama)
+> ###### Legendary Drum Fill (9 Drama)
 >
 > *You start a drumroll that roars like thunder with every impact the heroes make.*
 >
@@ -17339,7 +17349,7 @@ Your troubadour class act grants you a feature, as shown on the 8th-Level Class 
 You have the following performance abilities, which are usable with your Routines feature.
 
 <!-- @type: ability -->
-> ######## Moonlight Sonata
+> ###### Moonlight Sonata
 >
 > *Music pours out of your heart, filling the area with the utmost delicacy and without damper.*
 >
@@ -17350,7 +17360,7 @@ You have the following performance abilities, which are usable with your Routine
 > **Effect:** While this performance is active, each target who is dead can choose to continue taking turns after death. On each of their turns, a target can move and use either a main action or a maneuver, but can't spend Recoveries or use triggered actions. At the end of the encounter, each target who chose to take turns this way turns to dust and blows away.
 
 <!-- @type: ability -->
-> ######## Radical Fantasia
+> ###### Radical Fantasia
 >
 > *𝅘𝅥𝅮♪Viras, my Viras, will you hold their hands as they cryyy—aaaiigh?♪*
 >
@@ -17377,7 +17387,7 @@ Additionally, when your named signature ability is the last ability you use in a
 Choose one heroic ability from the following options, each of which costs 11 drama to use.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Dramatic Reveal (11 Drama)
+> ###### Dramatic Reveal (11 Drama)
 >
 > *A little stage trickery, and where once stood a foe, now stands a friend!*
 >
@@ -17388,7 +17398,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > **Effect:** Until the end of the encounter, whenever you reduce a creature to 0 Stamina using an ability, you can use a free triggered action to teleport an ally within distance of that ability into the creature's space in a plume of rose petals. You or the teleported ally can then make a melee free strike.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Power Ballad (11 Drama)
+> ###### Power Ballad (11 Drama)
 >
 > *A song for the brokenhearted wraps itself around the target and blossoms into a ward of thorns.*
 >
@@ -17399,7 +17409,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > **Effect:** Until the end of the encounter, whenever the target takes damage while winded, they can use a free triggered action to deal half the damage they took to the source of the damage.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Saved in the Edit (11 Drama)
+> ###### Saved in the Edit (11 Drama)
 >
 > *You shout a word of power that allows you to rewrite reality to your whims.*
 >
@@ -17415,7 +17425,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > - The target has a bonus to speed and a penalty to stability equal to your Presence score.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## The Show Must Go On (11 Drama)
+> ###### The Show Must Go On (11 Drama)
 >
 > *You shine a bright light on the players on the stage and compel them to finish the performance.*
 >
@@ -17452,7 +17462,7 @@ Your troubadour class act grants your choice of one of two heroic abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Epic (11 Drama)
+> ###### Epic (11 Drama)
 >
 > *Your story tells a tale of the villain's waning power and how the heroes rose to the occasion to stop them.*
 >
@@ -17469,7 +17479,7 @@ Choose one of the following abilities.
 > **Effect:** Choose one ally within distance. While the target is affected by this ability, each time they use an ability, that ally can make a free strike against them after the ability is resolved.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Rising Tension (11 Drama)
+> ###### Rising Tension (11 Drama)
 >
 > *You narrate the tension of the scene and put all hope into your protagonist to turn things around.*
 >
@@ -17484,7 +17494,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Expert Fencer (11 Drama)
+> ###### Expert Fencer (11 Drama)
 >
 > *If you can land the strike, the crowd goes wild.*
 >
@@ -17501,7 +17511,7 @@ Choose one of the following abilities.
 > **Effect:** This ability can't obtain better than a tier 2 outcome unless the target is at maximum distance. If you obtain a tier 3 outcome with a natural 17 or higher, you gain 3 surges that you can use immediately.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Renegotiated Contract (11 Drama)
+> ###### Renegotiated Contract (11 Drama)
 >
 > *No, no. You don't die until the sequel.*
 >
@@ -17522,7 +17532,7 @@ Choose one of the following abilities.
 Choose one of the following abilities.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Jam Session (11 Drama)
+> ###### Jam Session (11 Drama)
 >
 > *Your jam session creates new genres that compel everyone to get up and move.*
 >
@@ -17539,7 +17549,7 @@ Choose one of the following abilities.
 > **Effect:** Each creature within distance gains a +5 bonus to speed until the end of their next turn. While under this effect, each target must use their full movement during their turn.
 
 <!-- @type: ability | @cost: 11 Drama -->
-> ######## Melt Their Faces (11 Drama)
+> ###### Melt Their Faces (11 Drama)
 >
 > *The power of music rips through the reality around the target and blows them away.*
 >
@@ -17757,7 +17767,7 @@ You wear no armor and wield a bow.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Exploding Arrow
+###### Exploding Arrow
 
 *Your ammunition explodes with magical energy.*
 
@@ -17795,7 +17805,7 @@ You wear light armor and wield a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Unmooring
+###### Unmooring
 
 *Your weapon unleashes psionic energy that reduces your target's weight.*
 
@@ -17837,7 +17847,7 @@ You wear light armor and wield one or two light weapons.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Fade
+###### Fade
 
 *A stab, and a few quick, careful steps back.*
 
@@ -17873,7 +17883,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Double Strike
+###### Double Strike
 
 *Why strike once when you could do it twice?*
 
@@ -17911,7 +17921,7 @@ You wear medium armor and wield a polearm.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Forward Thrust, Backward Smash
+###### Forward Thrust, Backward Smash
 
 *In your hands, the haft is as good as the head.*
 
@@ -17947,7 +17957,7 @@ You wear no armor and wield only your unarmed strikes.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Battle Grace
+###### Battle Grace
 
 *You feint to move your enemies into perfect position.*
 
@@ -17983,7 +17993,7 @@ You wear heavy armor and wield a heavy weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Pain for Pain
+###### Pain for Pain
 
 *An enemy who tagged you will pay for that.*
 
@@ -18021,7 +18031,7 @@ You wear no armor and wield a heavy weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Devastating Rush
+###### Devastating Rush
 
 *The faster you move, the harder you hit.*
 
@@ -18059,7 +18069,7 @@ You wear no armor and wield only your unarmed strikes.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Let's Dance
+###### Let's Dance
 
 *Keeping your enemies stumbling around the battlefield is second nature to you.*
 
@@ -18101,7 +18111,7 @@ You wear light armor and wield a shield and a light weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Raider's Awe
+###### Raider's Awe
 
 *You execute a brutal strike that leaves your foe reeling. (Previously known as "Shock and Awe")*
 
@@ -18143,7 +18153,7 @@ You wear medium armor and wield a bow and a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Hamstring Shot
+###### Hamstring Shot
 
 *A well-placed shot leaves your enemy struggling to move.*
 
@@ -18181,7 +18191,7 @@ You wear light armor and wield a bow.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Two Shot
+###### Two Shot
 
 *When you fire two arrows back-to-back, both hit their mark.*
 
@@ -18219,7 +18229,7 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Net and Stab
+###### Net and Stab
 
 *The well-thrown net that follows your main attack leaves your foes right where you want them.*
 
@@ -18253,7 +18263,7 @@ You wear heavy armor and wield a shield and a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Protective Attack
+###### Protective Attack
 
 *The strength of your assault makes it impossible for your foe to ignore you.*
 
@@ -18291,7 +18301,7 @@ You wear no armor and wield a bow.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Patient Shot
+###### Patient Shot
 
 *Breathe... aim... wait... then strike!*
 
@@ -18329,7 +18339,7 @@ You wear light armor and wield a shield and a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Leaping Lightning
+###### Leaping Lightning
 
 *Lightning jumps from your weapon as you strike to harm a nearby foe.*
 
@@ -18369,7 +18379,7 @@ You wear light armor and wield a polearm.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Where I Want You
+###### Where I Want You
 
 *When your stick speaks, your enemy moves.*
 
@@ -18405,7 +18415,7 @@ You wear light armor and wield a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Fancy Footwork
+###### Fancy Footwork
 
 *All combat is a dance—and you'll be the one leading.*
 
@@ -18443,7 +18453,7 @@ You wear medium armor and wield a shield and a medium weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Shield Bash
+###### Shield Bash
 
 *In your hands, a shield isn't just for protection.*
 
@@ -18479,7 +18489,7 @@ You wear heavy armor and wield a light weapon.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Weakening Brand
+###### Weakening Brand
 
 *The impact of your weapon brands your target for destruction.*
 
@@ -18517,7 +18527,7 @@ You wear no armor and wield a whip.
 ##### Signature Ability
 
 <!-- @type: ability | @subtype: signature -->
-######## Extension of My Arm
+###### Extension of My Arm
 
 *When you draw your whip back after an attack, your enemy is drawn ever closer.*
 
@@ -18840,7 +18850,7 @@ This section presents supernatural perks in alphabetical order.
 
 You have the following ability.
 
-> ######## Arcane Trick
+> ###### Arcane Trick
 >
 > *You cast an entertaining spell that creates a minor but impressive magical effect.*
 >
@@ -18893,7 +18903,7 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 You have the following ability.
 
-> ######## Invisible Force
+> ###### Invisible Force
 >
 > *You manipulate a tiny object with your mind.*
 >
@@ -18908,7 +18918,7 @@ You have the following ability.
 
 You have the following ability.
 
-> ######## Psychic Whisper
+> ###### Psychic Whisper
 >
 > *You send a one-way telepathic message to a friend.*
 >
@@ -19232,7 +19242,7 @@ Your mentor taught you everything and you trusted them completely until they wen
 
 **Benefit:** You know the Corrupt Spirit maneuver, taught to you by your mentor. (In retrospect, that probably should have aroused your suspicion.)
 
-> ######## Corrupt Spirit
+> ###### Corrupt Spirit
 >
 > *You unlock the sinister secrets of pain.*
 >
@@ -19626,7 +19636,7 @@ A bredbeddle stole your head! Usually, being beheaded by one of those magical gi
 
 **Benefit:** You have the following ability.
 
-> ######## Share Head
+> ###### Share Head
 >
 > *You don't have a head, but you can psionically borrow another.*
 >
@@ -19672,7 +19682,7 @@ You can perceive ghosts and spirits that others don't sense. These supernatural 
 
 **Benefit and Drawback:** Incorporeal undead within 10 squares of you can communicate telepathically with you. Additionally, you have the Contact Spirits ability.
 
-> ######## Contact Spirits
+> ###### Contact Spirits
 >
 > *The restless dead speak to you.*
 >
@@ -19695,7 +19705,7 @@ Your mother and father never saw eye to eye. You know this because your father i
 
 **Benefit:** You have the following ability.
 
-> ######## Stone Eyes
+> ###### Stone Eyes
 >
 > *Your looks don't kill—they petrify.*
 >
@@ -19790,7 +19800,7 @@ In times of stress, you get headaches. Psionic energy builds up in your mind unt
 
 **Benefit:** You have the following heroic ability.
 
-> ######## Psychic Blast (Special Heroic Resource Cost)
+> ###### Psychic Blast (Special Heroic Resource Cost)
 >
 > *Psionic energy bursts from your body in an iridescent shimmer.*
 >
@@ -19842,7 +19852,7 @@ You are the only survivor of a cataclysmic psionic event—an experiment gone wr
 
 **Benefit:** You have the following ability, which you can use as a ranged free strike.
 
-> ######## Telekinetic Grasp
+> ###### Telekinetic Grasp
 >
 > *You reach out with your mind to move a creature or object.*
 >
@@ -19998,7 +20008,7 @@ You were trained as an officer, but you no longer serve. Whether you fled from a
 
 **Benefit:** You have the following ability.
 
-> ######## Issue Order
+> ###### Issue Order
 >
 > *"Move or die, folks."*
 >
@@ -20073,7 +20083,7 @@ You wear a loyalty collar from one of Ajax's war dogs (see *[Draw Steel: Monster
 
 **Benefit:** Even if you are a war dog yourself, other war dogs can't use their Posthumous Promotion ability on you while you wear your collar. Additionally, you have the following ability.
 
-> ######## Posthumous Retirement
+> ###### Posthumous Retirement
 >
 > *You make your modified collar explode.*
 >
@@ -20110,7 +20120,7 @@ You nearly lost your life at sea, but then you heard the voice. Someone—or som
 
 **Benefit:** You can automatically swim at full speed while moving, and you can breathe underwater. Additionally, you have the following ability.
 
-> ######## Rogue Wave
+> ###### Rogue Wave
 >
 > *You summon a wave of water to batter your foe.*
 >
@@ -21031,7 +21041,8 @@ If you are on the ground and adjacent to a creature who is beneath the ground wh
 
 If a creature who can't burrow wants to dig into the ground, they can use the following ability provided their speed is 2 or more.
 
-######## Claw Dirt
+<!-- @type: ability | @id: claw-dirt -->
+###### Claw Dirt
 
 | **-**       | **Maneuver** |
 |-------------|-------------:|
@@ -21261,7 +21272,7 @@ A creature who is dying (see [Dying and Death](#page-292-1) in [Stamina](#page-2
 
 A creature who is grabbed by another creature, an object, or an effect (see [Grab](#page-287-5) below) can attempt to escape by using the following ability.
 
-> ######## Escape Grab
+> ###### Escape Grab
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
@@ -21281,7 +21292,7 @@ See [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2) for information
 
 A creature seeking to keep a foe close and locked down can attempt to grab a creature using the following ability.
 
-> ######## Grab
+> ###### Grab
 >
 > | **Melee, Weapon** |        **Maneuver** |
 > |-------------------|--------------------:|
@@ -21307,7 +21318,7 @@ Using the Hide maneuver, a creature attempts to hide from other creatures who ar
 
 A creature wanting to push an adjacent creature away from them can attempt to shove that creature using the following ability.
 
-> ######## Knockback
+> ###### Knockback
 >
 > | **Melee, Weapon** |        **Maneuver** |
 > |-------------------|--------------------:|
@@ -21388,7 +21399,8 @@ Every hero has two standard free strike abilities available to them. Your class 
 
 A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the damage type of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a free strike.
 
-######## Melee Weapon Free Strike
+<!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike-combat -->
+###### Melee Weapon Free Strike
 
 | **Charge, Melee, Stike, Weapon** |               **Main action** |
 | -------------------------------- | -----------------------------:|
@@ -21400,7 +21412,8 @@ A melee weapon free strike is a melee strike made with an unarmed strike or an i
 - **12-16:** 5 + M or A damage
 - **17+:** 7 + M or A damage
 
-######## Ranged Weapon Free Strike
+<!-- @type: ability | @subtype: free-strike | @id: ranged-weapon-free-strike-combat -->
+###### Ranged Weapon Free Strike
 
 | **Ranged, Stike, Weapon** |               **Main action** |
 |---------------------------| -----------------------------:|
@@ -22506,7 +22519,8 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Dragon Soul II:** While you are winded, your head transforms into a dragon's head and you have the following ability.
 
-######## Dragon's Fire
+<!-- @type: ability -->
+###### Dragon's Fire
 
 *You open your maw and unleash hell.*
 
@@ -22747,7 +22761,7 @@ A hero who has a kit that uses unarmed strikes, such as the Martial Artist and P
 
 **Chargebreaker:** While you wield this weapon, you have the following ability.
 
-> ######## Stop Right There
+> ###### Stop Right There
 >
 > *Their momentum, your impact.*
 >
@@ -22813,7 +22827,7 @@ A hero who has a kit that uses unarmed strikes, such as the Martial Artist and P
 
 **Nova:** Whenever you damage a creature using this weapon, each enemy adjacent to you takes damage based on the tier outcome of the power roll-2 damage for tier 1, 6 for tier 2, or 10 for tier 3. Additionally, while you are winded, you have the following ability.
 
-> ######## Nova
+> ###### Nova
 >
 > *I am an eternal flame, baby!*
 >
@@ -24329,7 +24343,7 @@ While the eyes circle your head, you can use a maneuver to launch up to three of
 
 Additionally, you have the following ability.
 
-> ######## Hallucination Field
+> ###### Hallucination Field
 >
 > *A blanket of illusion twists around you and your allies, making you seem as if you belong wherever you are.*
 >
@@ -24357,7 +24371,7 @@ Additionally, you have the following ability.
 
 Additionally, you have the following ability.
 
-> ######## Nullring Strike
+> ###### Nullring Strike
 >
 > *Your punch delivers a devastating burst of psionic energy.*
 >
@@ -25500,7 +25514,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 - *Come Out to Play:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## Come Out to Play (1 Heroic Resource)
+> ###### Come Out to Play (1 Heroic Resource)
 >
 > *Come out to play—yay!*
 >
@@ -25583,7 +25597,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 - *Divine Health:* You gain corruption immunity equal to your highest characteristic score. Additionally, you can't be turned into an undead creature.
 - *Holy Terror:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## Holy Terror (3 Heroic Resource)
+> ###### Holy Terror (3 Heroic Resource)
 >
 > *Return to your grave!*
 >
@@ -25612,7 +25626,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 - *Instant Celebrity:* You earn 1 Renown.
 - *Showstopper:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## Showstopper (5 Heroic Resource)
+> ###### Showstopper (5 Heroic Resource)
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -25650,7 +25664,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 - *Charge!:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## Charge! (9 Heroic Resource)
+> ###### Charge! (9 Heroic Resource)
 >
 > *Follow me!*
 >
@@ -25727,7 +25741,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 - *Smallfolk Dodge:* Any creature of size 2 or larger takes a bane on strikes against you.
 - *The Harder They Fall:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## The Harder They Fall (7 Heroic Resource)
+> ###### The Harder They Fall (7 Heroic Resource)
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -25769,7 +25783,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 - *Sneakers:* You gain the Sneak skill. If you already have this skill, you instead gain an edge on tests made using the Sneak skill. During group tests, you can both use the Sneak skill and assist another hero using the Sneak skill.
 - *Timely Distraction:* You have the following triggered action.
 
-> ######## Timely Distraction
+> ###### Timely Distraction
 >
 > *Coming through with hot soup!<br/>I better watch out for that banana peel!*
 >
@@ -25794,7 +25808,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 - *Knightly Aegis:* Your Stamina maximum increases by 6.
 - *Knightly Challenge:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## Knightly Challenge (5 Heroic Resource)
+> ###### Knightly Challenge (5 Heroic Resource)
 >
 > *Have at thee!*
 >
@@ -25984,7 +25998,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Angelic Chorus:* You can use the lessons of musical improvisation in combat. Choose one class act triggered action from the troubadour class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.
 - *Devil's Opera:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ######## The Devil's Chord (9 Heroic Resource)
+> ###### The Devil's Chord (9 Heroic Resource)
 >
 > *Helloooo Orden!*
 >

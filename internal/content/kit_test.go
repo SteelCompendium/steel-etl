@@ -73,10 +73,33 @@ Heavy armor, a melee weapon
 func TestKitParser_SignatureAbility(t *testing.T) {
 	p := &KitParser{}
 
-	// Matches real input format: ######## headings are NOT parsed as sections by
-	// goldmark (only H1-H6), so the signature ability appears as body text in the
-	// kit's FullBodySource(). The "##### Signature Ability" heading is unannotated,
-	// so it also folds into the kit body.
+	// Build a section tree that mirrors the real parsed structure:
+	// H4 Kit (annotated) → H5 Signature Ability (unannotated) → H6 Fade (annotated)
+	fadeSection := &parser.Section{
+		Heading:      "Fade",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+		BodySource: `*A stab, and a few quick, careful steps back.*
+
+| **Melee, Ranged, Strike, Weapon** |     **Main action** |
+|-----------------------------------|--------------------:|
+| **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
+
+**Power Roll + Might or Agility:**
+
+- **≤11:** 3 + M or A damage; you can shift 1 square
+- **12-16:** 6 + M or A damage; you can shift up to 2 squares
+- **17+:** 8 + M or A damage; you can shift up to 3 squares`,
+	}
+
+	sigAbilityHeading := &parser.Section{
+		Heading:      "Signature Ability",
+		HeadingLevel: 5,
+		// Unannotated — folds into kit body via FullBodySource
+		Children: []*parser.Section{fadeSection},
+	}
+	fadeSection.Parent = sigAbilityHeading
+
 	kitSection := &parser.Section{
 		Heading:      "Cloak and Dagger",
 		HeadingLevel: 4,
@@ -95,24 +118,10 @@ You wear light armor and wield one or two light weapons.
 
 **Melee Damage Bonus:** +1/+1/+1
 
-**Ranged Damage Bonus:** +1/+1/+1
-
-##### Signature Ability
-
-######## Fade
-
-*A stab, and a few quick, careful steps back.*
-
-| **Melee, Ranged, Strike, Weapon** |     **Main action** |
-|-----------------------------------|--------------------:|
-| **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
-
-**Power Roll + Might or Agility:**
-
-- **≤11:** 3 + M or A damage; you can shift 1 square
-- **12-16:** 6 + M or A damage; you can shift up to 2 squares
-- **17+:** 8 + M or A damage; you can shift up to 3 squares`,
+**Ranged Damage Bonus:** +1/+1/+1`,
+		Children: []*parser.Section{sigAbilityHeading},
 	}
+	sigAbilityHeading.Parent = kitSection
 
 	ctx := context.NewContextStack(nil)
 	result, err := p.Parse(ctx, kitSection)
