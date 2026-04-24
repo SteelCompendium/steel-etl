@@ -1,6 +1,7 @@
 package content
 
 import (
+	"regexp"
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
@@ -46,8 +47,11 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 		ItemID:      id,
 	}
 
-	// Extract signature ability from children
-	if sigAbility := extractSignatureAbility(ctx, section); sigAbility != nil {
+	// Extract signature ability from body text.
+	// Kit signature abilities use ######## headings which goldmark doesn't parse
+	// as heading nodes (only H1-H6 are supported), so the ability text ends up
+	// folded into the kit's body via FullBodySource().
+	if sigAbility := extractSignatureAbilityFromBody(body); sigAbility != nil {
 		result.Children = map[string]*ParsedContent{
 			"signature_ability": sigAbility,
 		}
@@ -56,27 +60,54 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 	return result, nil
 }
 
-// extractSignatureAbility scans a kit section's children for an ability with
-// @subtype: signature and parses it using AbilityParser.
-func extractSignatureAbility(ctx *context.ContextStack, section *parser.Section) *ParsedContent {
-	abilityParser := &AbilityParser{}
-	for _, child := range section.Children {
-		if child.Annotation == nil {
-			continue
+// sigAbilityHeadingRe matches "######## Name" or "###### Name" (H7+) lines
+// that represent kit signature abilities in the body text.
+var sigAbilityHeadingRe = regexp.MustCompile(`^#{6,}\s+(.+)$`)
+
+// extractSignatureAbilityFromBody parses the kit's signature ability from the
+// kit body text. Goldmark only handles H1-H6, so ######## headings used for
+// kit signature abilities are not parsed as section tree nodes — they appear
+// as raw text in the kit body after the "##### Signature Ability" heading.
+func extractSignatureAbilityFromBody(body string) *ParsedContent {
+	lines := strings.Split(body, "\n")
+
+	// Find the ######## heading line
+	abilityStart := -1
+	abilityName := ""
+	for i, line := range lines {
+		trimmed := strings.TrimSpace(line)
+		if matches := sigAbilityHeadingRe.FindStringSubmatch(trimmed); matches != nil {
+			abilityName = strings.TrimSpace(matches[1])
+			abilityStart = i + 1
+			break
 		}
-		if child.Annotation["type"] != "ability" {
-			continue
-		}
-		if child.Annotation["subtype"] != "signature" {
-			continue
-		}
-		parsed, err := abilityParser.Parse(ctx, child)
-		if err != nil {
-			continue
-		}
-		return parsed
 	}
-	return nil
+	if abilityStart < 0 {
+		return nil
+	}
+
+	// Extract body from the line after the heading to end of body
+	abilityBody := strings.TrimSpace(strings.Join(lines[abilityStart:], "\n"))
+
+	// Build a synthetic section and parse it with AbilityParser
+	syntheticSection := &parser.Section{
+		Heading:      abilityName,
+		HeadingLevel: 6, // use valid level for context stack
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+		BodySource:   abilityBody,
+	}
+
+	abilityParser := &AbilityParser{}
+	parsed, err := abilityParser.Parse(newEmptyContext(), syntheticSection)
+	if err != nil {
+		return nil
+	}
+	return parsed
+}
+
+// newEmptyContext creates a minimal context stack for parsing standalone sections.
+func newEmptyContext() *context.ContextStack {
+	return context.NewContextStack(nil)
 }
 
 // kitBonusFields maps the field label (as it appears in markdown after stripping

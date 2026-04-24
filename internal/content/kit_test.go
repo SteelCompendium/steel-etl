@@ -73,7 +73,10 @@ Heavy armor, a melee weapon
 func TestKitParser_SignatureAbility(t *testing.T) {
 	p := &KitParser{}
 
-	// Build a kit section with a signature ability child
+	// Matches real input format: ######## headings are NOT parsed as sections by
+	// goldmark (only H1-H6), so the signature ability appears as body text in the
+	// kit's FullBodySource(). The "##### Signature Ability" heading is unannotated,
+	// so it also folds into the kit body.
 	kitSection := &parser.Section{
 		Heading:      "Cloak and Dagger",
 		HeadingLevel: 4,
@@ -94,15 +97,11 @@ You wear light armor and wield one or two light weapons.
 
 **Ranged Damage Bonus:** +1/+1/+1
 
-##### Signature Ability`,
-	}
+##### Signature Ability
 
-	abilitySection := &parser.Section{
-		Heading:      "Fade",
-		HeadingLevel: 5,
-		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
-		Parent:       kitSection,
-		BodySource: `*A stab, and a few quick, careful steps back.*
+######## Fade
+
+*A stab, and a few quick, careful steps back.*
 
 | **Melee, Ranged, Strike, Weapon** |     **Main action** |
 |-----------------------------------|--------------------:|
@@ -114,7 +113,6 @@ You wear light armor and wield one or two light weapons.
 - **12-16:** 6 + M or A damage; you can shift up to 2 squares
 - **17+:** 8 + M or A damage; you can shift up to 3 squares`,
 	}
-	kitSection.Children = []*parser.Section{abilitySection}
 
 	ctx := context.NewContextStack(nil)
 	result, err := p.Parse(ctx, kitSection)
