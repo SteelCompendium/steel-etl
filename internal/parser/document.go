@@ -34,7 +34,7 @@ func ParseDocument(source []byte) (*Document, error) {
 	headings := collectHeadings(tree, source)
 
 	// 4b. Collect blockquote headings (> ######) that goldmark doesn't parse as headings
-	bqHeadings := collectBlockquoteHeadings(source)
+	bqHeadings := collectBlockquoteHeadings(source, headings)
 	headings = mergeHeadings(headings, bqHeadings)
 
 	// 5. Associate annotations with headings
@@ -128,9 +128,10 @@ var blockquoteH6Re = regexp.MustCompile(`^>\s*(#{6,})\s+(.+)$`)
 // collectBlockquoteHeadings scans source for "> ######" patterns that goldmark
 // doesn't parse as heading nodes. Goldmark ignores headings inside blockquotes
 // regardless of level, so these are detected via regex and injected as synthetic
-// headings. For tree building purposes, we treat them as level 4 (same as regular
-// abilities that appear under feature-groups at H3).
-func collectBlockquoteHeadings(source []byte) []*headingInfo {
+// headings. Each blockquote heading's tree level is set to one deeper than the
+// most recent regular heading, so it becomes a proper child of whatever section
+// it appears under (e.g., a feature at H5 gets its child ability at H6).
+func collectBlockquoteHeadings(source []byte, regularHeadings []*headingInfo) []*headingInfo {
 	lines := strings.Split(string(source), "\n")
 	var headings []*headingInfo
 
@@ -142,9 +143,23 @@ func collectBlockquoteHeadings(source []byte) []*headingInfo {
 		headingText := strings.TrimSpace(matches[2])
 		lineNum := i + 1
 
+		// Determine level: one deeper than the most recent regular heading.
+		// This ensures blockquote abilities become children of their parent section.
+		// Capped at 6 because the ContextStack only supports H1-H6.
+		level := 4 // fallback if no regular heading precedes this
+		for j := len(regularHeadings) - 1; j >= 0; j-- {
+			if regularHeadings[j].lineNum < lineNum {
+				level = regularHeadings[j].level + 1
+				if level > 6 {
+					level = 6
+				}
+				break
+			}
+		}
+
 		headings = append(headings, &headingInfo{
 			text:    headingText,
-			level:   4, // treat as H4 for tree structure (abilities nest under H3 feature-groups)
+			level:   level,
 			lineNum: lineNum,
 		})
 	}

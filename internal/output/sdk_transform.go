@@ -78,11 +78,25 @@ func transformTrait(sccCode string, parsed *content.ParsedContent) map[string]an
 
 	setIfPresent(out, "name", fm, "name")
 
-	// Body becomes the single effect
+	// Embed child ability as a nested feature object (mirrors kit signature_ability pattern)
+	if parsed.Children != nil {
+		if abilityParsed, ok := parsed.Children["ability"]; ok {
+			out["ability"] = transformAbility("", abilityParsed)
+		}
+	}
+
+	// Body becomes the single effect. When a child ability is embedded, use
+	// only the text before the appended ability heading (the intro paragraph
+	// like "You have the following ability.") to avoid duplicating the raw
+	// markdown that's already in the structured ability field.
+	bodyForEffect := parsed.Body
+	if _, hasAbility := out["ability"]; hasAbility {
+		bodyForEffect = trimAbilityFromBody(bodyForEffect)
+	}
 	effects := []map[string]any{}
-	if parsed.Body != "" {
+	if bodyForEffect != "" {
 		effects = append(effects, map[string]any{
-			"effect": parsed.Body,
+			"effect": bodyForEffect,
 		})
 	}
 	if len(effects) == 0 {
@@ -289,6 +303,20 @@ func buildTraitMetadata(sccCode string, parsed *content.ParsedContent) map[strin
 	meta["action_type"] = "feature"
 
 	return meta
+}
+
+// trimAbilityFromBody removes the appended ability heading and content from a
+// trait body, returning only the introductory text (e.g., "You have the following ability.").
+// The ability content starts at the first markdown heading (e.g., "###### Ability Name").
+func trimAbilityFromBody(body string) string {
+	lines := strings.Split(body, "\n")
+	for i, line := range lines {
+		trimmed := strings.TrimSpace(line)
+		if strings.HasPrefix(trimmed, "#") {
+			return strings.TrimSpace(strings.Join(lines[:i], "\n"))
+		}
+	}
+	return body
 }
 
 // setIfPresent copies a value from src[srcKey] to dst[dstKey] if present.

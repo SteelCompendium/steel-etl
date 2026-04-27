@@ -29,6 +29,9 @@ func (s *ContextStack) Push(headingLevel int, meta Metadata) {
 // Lookup searches for a key from the given level upward through
 // all ancestor levels and finally the document metadata.
 func (s *ContextStack) Lookup(fromLevel int, key string) (string, bool) {
+	if fromLevel > 6 {
+		fromLevel = 6
+	}
 	for i := fromLevel; i >= 1; i-- {
 		if s.levels[i] != nil {
 			if val, ok := s.levels[i][key]; ok {

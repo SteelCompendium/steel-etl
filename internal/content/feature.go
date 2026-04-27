@@ -1,6 +1,8 @@
 package content
 
 import (
+	"strings"
+
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
@@ -79,10 +81,49 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		typePath = append(typePath, kitID)
 	}
 
-	return &ParsedContent{
+	result := &ParsedContent{
 		Frontmatter: fm,
 		Body:        section.FullBodySource(),
 		TypePath:    typePath,
 		ItemID:      id,
-	}, nil
+	}
+
+	// Find child ability sections (annotated with @type: ability) and embed them.
+	// This mirrors the kit pattern where signature abilities are embedded in Children.
+	if abilityChild := findAbilityChild(section); abilityChild != nil {
+		abilityParser := &AbilityParser{}
+		parsed, err := abilityParser.Parse(context.NewContextStack(nil), abilityChild)
+		if err == nil {
+			result.Children = map[string]*ParsedContent{
+				"ability": parsed,
+			}
+			// Append the ability heading and body so markdown output includes it.
+			// FullBodySource() skips annotated children, so without this the
+			// markdown ends at "You have the following ability."
+			sigHeading := strings.Repeat("#", abilityChild.HeadingLevel) + " " + abilityChild.Heading
+			sigBody := abilityChild.FullBodySource()
+			if sigBody != "" {
+				result.Body = result.Body + "\n\n" + sigHeading + "\n\n" + sigBody
+			}
+		}
+	}
+
+	return result, nil
+}
+
+// findAbilityChild searches a section's children (recursively through unannotated
+// intermediaries) for a child with @type: ability.
+func findAbilityChild(section *parser.Section) *parser.Section {
+	for _, child := range section.Children {
+		if child.Type() == "ability" {
+			return child
+		}
+		// Recurse through unannotated children
+		if child.Type() == "" {
+			if found := findAbilityChild(child); found != nil {
+				return found
+			}
+		}
+	}
+	return nil
 }

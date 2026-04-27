@@ -354,13 +354,23 @@ func findFeatureGroup(t *testing.T, classSection *parser.Section, groupName stri
 
 func findSectionByHeading(t *testing.T, parent *parser.Section, heading string) *parser.Section {
 	t.Helper()
+	if found := findSectionByHeadingRecursive(parent, heading); found != nil {
+		return found
+	}
+	t.Fatalf("section %q not found under %q", heading, parent.Heading)
+	return nil
+}
+
+func findSectionByHeadingRecursive(parent *parser.Section, heading string) *parser.Section {
 	for _, child := range parent.Children {
 		cleanName := content.CleanHeading(child.Heading)
 		if cleanName == heading || child.Heading == heading {
 			return child
 		}
+		if found := findSectionByHeadingRecursive(child, heading); found != nil {
+			return found
+		}
 	}
-	t.Fatalf("section %q not found under %q", heading, parent.Heading)
 	return nil
 }
 
@@ -371,15 +381,20 @@ func findAbilitiesInDoc(t *testing.T, className, featureGroupName string) []*par
 	fg := findFeatureGroup(t, classSection, featureGroupName)
 
 	var abilities []*parser.Section
-	for _, child := range fg.Children {
-		if child.Type() == "ability" {
-			abilities = append(abilities, child)
-		}
-	}
+	collectAbilitiesRecursive(fg, &abilities)
 	if len(abilities) == 0 {
 		t.Fatalf("no abilities found under %s > %s", className, featureGroupName)
 	}
 	return abilities
+}
+
+func collectAbilitiesRecursive(section *parser.Section, abilities *[]*parser.Section) {
+	for _, child := range section.Children {
+		if child.Type() == "ability" {
+			*abilities = append(*abilities, child)
+		}
+		collectAbilitiesRecursive(child, abilities)
+	}
 }
 
 func findTraitsInDoc(t *testing.T, className, featureGroupName string) []*parser.Section {
