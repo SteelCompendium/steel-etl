@@ -1,0 +1,25 @@
+---
+effect: 'You gain the following benefits:'
+name: Monarch
+prerequisite: You or a member of your party becomes the monarch of a nation.
+scc: mcdm.heroes.v1/title/monarch
+type: title
+---
+
+*The tyrant is dead! Long live the new king!*
+
+**Prerequisite:** You or a member of your party becomes the monarch of a nation.
+
+**Effect:** You gain the following benefits:
+
+- *Royal Authority:* Inhabitants of your nation must obey your lawful orders or suffer the consequences.
+- *Royal Majesty:* Your choice of your Might or Presence increases by 1 (to a maximum of 6).
+
+Additionally, choose one of the following benefits:
+
+- *Crown Jewels:* You gain one of your nation's treasures—a trinket of the Director's choice.
+- *Royal Fame:* You earn 2 Renown.
+- *Royal Retinue:* The number of followers you can recruit increases by 2
+- *Royal Wealth:* You earn 2 Wealth.
+
+**Special:** If you take this title, you might be called upon to perform duties for your nation.

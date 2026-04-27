@@ -36,11 +36,14 @@ static_content: ./static
 		t.Fatalf("LoadSiteConfig failed: %v", err)
 	}
 
-	if cfg.SourceDir != "../output/en/md-linked" {
-		t.Errorf("SourceDir = %q", cfg.SourceDir)
+	// Paths are resolved relative to the config file's directory
+	wantSource := filepath.Join(dir, "../output/en/md-linked")
+	if cfg.SourceDir != wantSource {
+		t.Errorf("SourceDir = %q, want %q", cfg.SourceDir, wantSource)
 	}
-	if cfg.DocsDir != "./docs" {
-		t.Errorf("DocsDir = %q", cfg.DocsDir)
+	wantDocs := filepath.Join(dir, "docs")
+	if cfg.DocsDir != wantDocs {
+		t.Errorf("DocsDir = %q, want %q", cfg.DocsDir, wantDocs)
 	}
 	if len(cfg.Sections) != 2 {
 		t.Errorf("expected 2 sections, got %d", len(cfg.Sections))
@@ -57,8 +60,12 @@ static_content: ./static
 	if len(cfg.SearchExclude) != 1 || cfg.SearchExclude[0] != "Read" {
 		t.Errorf("SearchExclude = %v", cfg.SearchExclude)
 	}
-	if cfg.StaticContent != "./static" {
-		t.Errorf("StaticContent = %q", cfg.StaticContent)
+	wantStatic := filepath.Join(dir, "static")
+	if cfg.StaticContent != wantStatic {
+		t.Errorf("StaticContent = %q, want %q", cfg.StaticContent, wantStatic)
+	}
+	if cfg.ConfigDir != dir {
+		t.Errorf("ConfigDir = %q, want %q", cfg.ConfigDir, dir)
 	}
 }
 
