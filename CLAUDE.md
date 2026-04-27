@@ -55,11 +55,20 @@ The SCC registry is **frozen** (2026-04-26, 1,432 codes). New codes can be appen
 Use `steel-etl validate --scc-stable` to verify no codes have changed.
 Use `steel-etl classify --diff` to see what would change.
 
+## Content embedding patterns
+
+Kits and traits can embed child abilities as structured nested objects in JSON/YAML output:
+
+- **Kits**: `signature_ability` field — KitParser finds child `@type: ability | @subtype: signature` sections via `findSignatureAbilityChild()`
+- **Traits**: `ability` field — FeatureParser finds child `@type: ability` sections via `findAbilityChild()`
+
+Both patterns: the child ability is parsed by `AbilityParser`, stored in `ParsedContent.Children`, and embedded by the SDK transformer. The child ability also gets its own standalone output file when the pipeline walks the section tree.
+
+Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
+
 ## Architecture
 
-See `plans/architecture-redesign/` for the full design:
-- `phases.md` -- Implementation phases and status
-- `scc-taxonomy.md` -- SCC type taxonomy (frozen)
-- `annotation-spec.md` -- Annotation format
-- `content-parsers.md` -- What each parser extracts
-- `decisions.md` -- Architectural decision log
+Architecture plans are tracked in `~/.claude/plans/` and `~/.claude/projects/.../memory/`. Key references:
+- `ANNOTATION-GUIDE.md` -- Annotation format and conventions
+- `pipeline.yaml` -- Pipeline configuration
+- `classification.json` -- Frozen SCC registry
