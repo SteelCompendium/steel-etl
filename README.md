@@ -2,7 +2,7 @@
 
 Go CLI tool that processes annotated Draw Steel TTRPG markdown into structured, multi-format output for the [Steel Compendium](https://steelcompendium.io).
 
-**Status:** Phase 1 (Core Go CLI) in progress. Parser, content extractors, SCC classifier, and markdown output generator are implemented.
+**Status:** Phases 0-3 complete (3.6 i18n deferred). SCC taxonomy frozen (1,432 codes). All 9 output generators, 14 content parsers, `validate`/`classify`/`gen`/`strip`/`site` CLI commands implemented.
 
 ## What it does
 
@@ -24,13 +24,14 @@ The source is a single annotated markdown file (e.g., `Draw Steel Heroes.md`) wi
 steel-etl/
 ├── cmd/steel-etl/main.go         # CLI entrypoint
 ├── internal/
-│   ├── cli/                       # Cobra commands (gen, validate, classify, strip)
+│   ├── cli/                       # Cobra commands (gen, validate, classify, strip, site)
 │   ├── parser/                    # Markdown parser: annotations, document, sections
 │   ├── context/                   # Hierarchical annotation context stack
-│   ├── content/                   # Content parsers (ability, class, chapter, feature)
-│   ├── scc/                       # SCC classifier and registry
-│   ├── output/                    # Output generators (markdown with frontmatter)
-│   └── pipeline/                  # Orchestrates parse → classify → generate
+│   ├── content/                   # 14 content parsers (ability, class, kit, ancestry, etc.)
+│   ├── scc/                       # SCC classifier and registry (frozen)
+│   ├── output/                    # 9 output generators (md, json, yaml, linked, dse, etc.)
+│   ├── pipeline/                  # Orchestrates parse → classify → generate
+│   └── site/                      # MkDocs site builder from steel-etl output
 ├── testdata/fixtures/             # Test fixtures (simple_class.md)
 ├── annotate_heroes.py             # Annotation script (Phase 0 tooling)
 ├── pipeline.yaml                  # Pipeline configuration
@@ -118,7 +119,7 @@ input: ./input/heroes/Draw Steel Heroes.md
 
 classification:
   registry: ./classification.json
-  freeze: false          # set to true after freezing SCC codes
+  freeze: true           # frozen 2026-04-26 — existing codes cannot be removed
 
 output:
   base_dir: ../data/data-rules
@@ -147,11 +148,34 @@ The full architecture redesign lives in `plans/architecture-redesign/`:
 | `phases.md` | Phased implementation plan |
 | `decisions.md` | Architectural decision log |
 
+## CLI commands
+
+```bash
+# Run from the steel-etl directory. Requires devbox (see workspace CLAUDE.md).
+
+steel-etl gen --config pipeline.yaml              # Run full pipeline
+steel-etl gen --format json                        # Generate only JSON output
+steel-etl gen --locale es                          # Generate for a specific locale
+
+steel-etl validate --config pipeline.yaml          # Check annotations and coverage
+steel-etl validate --scc-stable                    # Also verify SCC codes haven't changed
+
+steel-etl classify --config pipeline.yaml          # Show all SCC codes by type
+steel-etl classify --diff                          # Show changes vs. registry
+steel-etl classify --export-map scc.json           # Export SCC-to-type mapping
+
+steel-etl strip input.md -o clean.md               # Remove annotations
+steel-etl strip --for-translation -o template.md   # Create translation template
+
+steel-etl site --config v2/site.yaml               # Build MkDocs site from output
+```
+
 ## Roadmap
 
-- **Phase 0** -- Design & Annotate (done)
-- **Phase 1** -- Core Go CLI: parse annotated markdown, produce per-section markdown output (in progress)
-- **Phase 2** -- Full output pipeline: JSON, YAML, linked/DSE variants, aggregation
-- **Phase 3** -- Translation support + SCC-based website URLs
+- **Phase 0** -- Design & Annotate ✓
+- **Phase 1** -- Core Go CLI ✓
+- **Phase 2** -- Full output pipeline (JSON, YAML, linked/DSE, aggregation) ✓
+- **Phase 3** -- Translation + SCC URLs ✓ (3.6 i18n deferred, awaiting translated content)
+- **SCC Freeze** -- 1,432 codes frozen, validate/classify commands ✓
 - **Phase 4** -- Data repo consolidation + homebrew content registry
 - **Phase 5** -- Monsters book integration (multi-book proof)

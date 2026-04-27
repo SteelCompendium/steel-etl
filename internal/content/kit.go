@@ -56,6 +56,15 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 			result.Children = map[string]*ParsedContent{
 				"signature_ability": parsed,
 			}
+			// Append the ability's heading and body to the kit body so the
+			// markdown output includes the full signature ability content.
+			// FullBodySource() skips annotated children, so without this the
+			// markdown ends at the "##### Signature Ability" heading.
+			sigHeading := strings.Repeat("#", sigAbility.HeadingLevel) + " " + sigAbility.Heading
+			sigBody := sigAbility.FullBodySource()
+			if sigBody != "" {
+				result.Body = result.Body + "\n\n" + sigHeading + "\n\n" + sigBody
+			}
 		}
 	}
 

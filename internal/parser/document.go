@@ -33,7 +33,7 @@ func ParseDocument(source []byte) (*Document, error) {
 	// 4. Collect heading info by walking AST
 	headings := collectHeadings(tree, source)
 
-	// 4b. Collect blockquote H8 headings (> ########) that goldmark doesn't parse as headings
+	// 4b. Collect blockquote headings (> ######) that goldmark doesn't parse as headings
 	bqHeadings := collectBlockquoteHeadings(source)
 	headings = mergeHeadings(headings, bqHeadings)
 
@@ -70,12 +70,20 @@ func indexAnnotationsByEndLine(annotations []Annotation) map[int]*Annotation {
 }
 
 // collectHeadings walks the goldmark AST and extracts all heading nodes.
+// Headings inside blockquotes are skipped — they are handled separately by
+// collectBlockquoteHeadings() which assigns them the correct tree level.
 func collectHeadings(tree ast.Node, source []byte) []*headingInfo {
 	var headings []*headingInfo
 
 	ast.Walk(tree, func(n ast.Node, entering bool) (ast.WalkStatus, error) {
 		if !entering {
 			return ast.WalkContinue, nil
+		}
+
+		// Skip entire blockquote subtrees — headings inside blockquotes
+		// are handled by collectBlockquoteHeadings() at the correct level.
+		if n.Kind() == ast.KindBlockquote {
+			return ast.WalkSkipChildren, nil
 		}
 
 		heading, ok := n.(*ast.Heading)
@@ -112,20 +120,22 @@ func collectHeadings(tree ast.Node, source []byte) []*headingInfo {
 	return headings
 }
 
-// blockquoteH8Re matches "> ######## Heading Text" lines (H7+ inside blockquotes).
-var blockquoteH8Re = regexp.MustCompile(`^>\s*(#{7,})\s+(.+)$`)
+// blockquoteH6Re matches "> ###### Heading Text" lines (H6+ inside blockquotes).
+// Goldmark doesn't parse headings inside blockquotes regardless of level,
+// so these must be detected via regex.
+var blockquoteH6Re = regexp.MustCompile(`^>\s*(#{6,})\s+(.+)$`)
 
-// collectBlockquoteHeadings scans source for "> ########" patterns that goldmark
-// doesn't parse as heading nodes. These are treated as level-7 synthetic headings
-// and mapped to the section tree as children of the nearest H6 or lower parent.
-// For tree building purposes, we treat them as level 4 (same as regular abilities
-// that appear under feature-groups at H3).
+// collectBlockquoteHeadings scans source for "> ######" patterns that goldmark
+// doesn't parse as heading nodes. Goldmark ignores headings inside blockquotes
+// regardless of level, so these are detected via regex and injected as synthetic
+// headings. For tree building purposes, we treat them as level 4 (same as regular
+// abilities that appear under feature-groups at H3).
 func collectBlockquoteHeadings(source []byte) []*headingInfo {
 	lines := strings.Split(string(source), "\n")
 	var headings []*headingInfo
 
 	for i, line := range lines {
-		matches := blockquoteH8Re.FindStringSubmatch(line)
+		matches := blockquoteH6Re.FindStringSubmatch(line)
 		if matches == nil {
 			continue
 		}

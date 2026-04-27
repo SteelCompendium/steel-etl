@@ -61,7 +61,19 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 
 	// Initialize components
 	registry := content.NewRegistry()
+
+	// Load existing registry to preserve frozen state and validate stability
+	var frozenRegistry *scc.Registry
 	sccRegistry := scc.NewRegistry()
+	if registryPath != "" {
+		if existing, err := scc.LoadRegistry(registryPath); err == nil {
+			if existing.IsFrozen() {
+				frozenRegistry = existing
+				sccRegistry.Freeze()
+			}
+		}
+	}
+
 	contextStack := ctx.NewContextStack(frontmatterToMetadata(doc.Frontmatter))
 
 	// Build the set of output generators
@@ -139,6 +151,13 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 			if err := bulk.Finalize(); err != nil {
 				result.Errors = append(result.Errors, fmt.Sprintf("finalize [%s]: %v", gen.Format(), err))
 			}
+		}
+	}
+
+	// Validate against frozen registry if applicable
+	if frozenRegistry != nil && cfg.Classification.Freeze {
+		if err := sccRegistry.ValidateAgainstFrozen(frozenRegistry); err != nil {
+			return result, fmt.Errorf("frozen registry violation: %w", err)
 		}
 	}
 

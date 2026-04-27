@@ -22,8 +22,8 @@ classification:
   registry: ./classification.json
 
   # If true, fail if a build would change an existing SCC code.
-  # Set to true after freezing the classification.
-  freeze: false
+  # Frozen 2026-04-26: 1,432 codes verified, no duplicates.
+  freeze: true
 
 # --- Output ---------------------------------------------------------------
 
