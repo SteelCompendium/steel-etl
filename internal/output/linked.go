@@ -25,7 +25,7 @@ func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 	// Create a copy with resolved links in the body
 	resolved := &content.ParsedContent{
 		Frontmatter: parsed.Frontmatter,
-		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode),
+		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, scc.LinkAll),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 	}

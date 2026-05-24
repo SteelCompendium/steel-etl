@@ -1,16 +1,31 @@
 package scc
 
 import (
+	"fmt"
+	"os"
 	"regexp"
 	"strings"
 )
 
-// sccLinkRe matches scc: protocol links in markdown content.
+// LinkMode controls how scc: links are resolved in content.
+type LinkMode int
+
+const (
+	// LinkAll resolves every scc: link to a relative path.
+	LinkAll LinkMode = iota
+	// LinkFirst resolves only the first occurrence of each SCC code per call;
+	// subsequent occurrences are stripped to display text.
+	LinkFirst
+	// LinkNone strips all scc: links, leaving only the display text.
+	LinkNone
+)
+
+// mdLinkRe matches markdown links with scc: protocol URLs.
 // Examples:
 //
-//	scc:mcdm.heroes.v1/feature.ability.fury.level-1/gouge
 //	[Gouge](scc:mcdm.heroes.v1/feature.ability.fury.level-1/gouge)
-var sccLinkRe = regexp.MustCompile(`scc:([a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+)`)
+//	[Fury](scc:mcdm.heroes.v1/class/fury)
+var mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc:([a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+)\)`)
 
 // Resolver resolves SCC codes to relative file paths.
 type Resolver struct {
@@ -23,23 +38,46 @@ func NewResolver(registry *Registry, ext string) *Resolver {
 	return &Resolver{registry: registry, ext: ext}
 }
 
-// ResolveLinks replaces all scc: protocol links in the content with relative file paths.
+// ResolveLinks replaces scc: protocol links in markdown link syntax with relative file paths.
 // The relativeTo parameter is the SCC code of the current file (used to compute relative paths).
-func (r *Resolver) ResolveLinks(content string, relativeTo string) string {
-	return sccLinkRe.ReplaceAllStringFunc(content, func(match string) string {
-		sccCode := strings.TrimPrefix(match, "scc:")
+// The mode parameter controls link density: LinkAll resolves all, LinkFirst deduplicates per call,
+// and LinkNone strips all links to display text.
+func (r *Resolver) ResolveLinks(content string, relativeTo string, mode LinkMode) string {
+	if mode == LinkNone {
+		return mdLinkRe.ReplaceAllString(content, "$1")
+	}
 
-		// Check if the code exists in the registry (or resolve aliases)
-		if !r.registry.Contains(sccCode) {
-			if canonical, ok := r.registry.ResolveAlias(sccCode); ok {
-				sccCode = canonical
+	seen := make(map[string]bool)
+
+	return mdLinkRe.ReplaceAllStringFunc(content, func(match string) string {
+		sub := mdLinkRe.FindStringSubmatch(match)
+		if len(sub) < 3 {
+			return match
+		}
+		displayText := sub[1]
+		sccCode := sub[2]
+
+		// Resolve the SCC code (check registry, then aliases)
+		resolvedCode := sccCode
+		if !r.registry.Contains(resolvedCode) {
+			if canonical, ok := r.registry.ResolveAlias(resolvedCode); ok {
+				resolvedCode = canonical
 			} else {
-				// Unknown SCC code -- leave the link as-is
-				return match
+				// Unresolved link: warn and strip to display text
+				fmt.Fprintf(os.Stderr, "WARN: unresolved scc link %q\n", sccCode)
+				return displayText
 			}
 		}
 
-		return sccToRelPath(sccCode, r.ext)
+		// In LinkFirst mode, only link the first occurrence of each code
+		if mode == LinkFirst {
+			if seen[resolvedCode] {
+				return displayText
+			}
+			seen[resolvedCode] = true
+		}
+
+		return fmt.Sprintf("[%s](%s)", displayText, sccToRelPath(resolvedCode, r.ext))
 	})
 }
 

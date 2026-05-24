@@ -25,7 +25,7 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 	// Resolve links in body before building DSE output
 	resolved := &content.ParsedContent{
 		Frontmatter: parsed.Frontmatter,
-		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode),
+		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, scc.LinkAll),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 	}
