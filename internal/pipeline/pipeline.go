@@ -215,6 +215,7 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 		generators = append(generators, &output.LinkedGenerator{
 			BaseDir:  filepath.Join(baseDir, "md-linked"),
 			Resolver: resolver,
+			LinkMode: cfg.Output.ParseLinkMode(),
 		})
 	}
 	if cfg.Output.Variants.DSE {
@@ -226,6 +227,7 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 		generators = append(generators, &output.DSELinkedGenerator{
 			BaseDir:  filepath.Join(baseDir, "md-dse-linked"),
 			Resolver: resolver,
+			LinkMode: cfg.Output.ParseLinkMode(),
 		})
 	}
 

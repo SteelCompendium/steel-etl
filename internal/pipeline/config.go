@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 	"gopkg.in/yaml.v3"
 )
 
@@ -29,13 +31,26 @@ type ClassificationConfig struct {
 }
 
 type OutputConfig struct {
-	BaseDir  string         `yaml:"base_dir"`
-	Formats  []string       `yaml:"formats"`
-	Variants VariantsConfig `yaml:"variants"`
-	Stripped StrippedConfig `yaml:"stripped"`
+	BaseDir   string          `yaml:"base_dir"`
+	Formats   []string        `yaml:"formats"`
+	Variants  VariantsConfig  `yaml:"variants"`
+	LinkMode  string          `yaml:"link_mode"`
+	Stripped  StrippedConfig  `yaml:"stripped"`
 	Aggregate AggregateConfig `yaml:"aggregate"`
-	SCCMap   SCCMapConfig   `yaml:"scc_map"`
-	SCCAPI   SCCAPIConfig   `yaml:"scc_api"`
+	SCCMap    SCCMapConfig    `yaml:"scc_map"`
+	SCCAPI    SCCAPIConfig    `yaml:"scc_api"`
+}
+
+// ParseLinkMode converts the string LinkMode config value to the typed enum.
+func (o *OutputConfig) ParseLinkMode() scc.LinkMode {
+	switch strings.ToLower(o.LinkMode) {
+	case "first":
+		return scc.LinkFirst
+	case "none":
+		return scc.LinkNone
+	default:
+		return scc.LinkAll
+	}
 }
 
 type VariantsConfig struct {

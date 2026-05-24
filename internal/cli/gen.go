@@ -25,6 +25,7 @@ func init() {
 	genCmd.Flags().String("locale", "", "locale override")
 	genCmd.Flags().String("book", "", "book filter (e.g., mcdm.heroes.v1)")
 	genCmd.Flags().Bool("all", false, "generate all books")
+	genCmd.Flags().String("link-mode", "", "link density mode: all, first, none (default: all)")
 }
 
 func runGen(cmd *cobra.Command, args []string) error {
@@ -45,6 +46,9 @@ func runGen(cmd *cobra.Command, args []string) error {
 		cfg.Output.Variants.Linked = false
 		cfg.Output.Variants.DSE = false
 		cfg.Output.Variants.DSELinked = false
+	}
+	if linkMode, _ := cmd.Flags().GetString("link-mode"); linkMode != "" {
+		cfg.Output.LinkMode = linkMode
 	}
 
 	// Resolve paths
@@ -74,6 +78,9 @@ func runGen(cmd *cobra.Command, args []string) error {
 	}
 	if cfg.Output.Variants.DSELinked {
 		fmt.Println("Variant:  dse-linked")
+	}
+	if cfg.Output.LinkMode != "" {
+		fmt.Printf("LinkMode: %s\n", cfg.Output.LinkMode)
 	}
 	if cfg.Output.Stripped.Enabled {
 		fmt.Printf("Stripped: %s\n", cfg.ResolvePath(cfg.Output.Stripped.OutputDir))
