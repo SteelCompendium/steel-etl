@@ -25,6 +25,8 @@ type BuildResult struct {
 	Sections      int
 	NavFiles      int
 	SearchExclude int
+	IndexPages    int
+	SCCStubs      int
 	Errors        []string
 }
 
@@ -61,6 +63,18 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 	}
 
+	// Assemble composite pages (e.g., class pages with all features/abilities)
+	for _, section := range cfg.Sections {
+		compCount, compErrs := assembleComposites(cfg, section)
+		result.CopiedFiles += compCount
+		result.Errors = append(result.Errors, compErrs...)
+	}
+
+	// Generate index pages for type directories
+	indexCount, indexErrs := generateIndexPages(cfg.DocsDir, cfg.Sections)
+	result.IndexPages = indexCount
+	result.Errors = append(result.Errors, indexErrs...)
+
 	// Apply search exclusion
 	for _, sectionName := range cfg.SearchExclude {
 		count, errs := applySearchExclusion(cfg.DocsDir, sectionName)
@@ -76,6 +90,12 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 		result.CopiedFiles += count
 	}
+
+	// Generate SCC permalink stubs. Runs last so it sees the final, post-static
+	// frontmatter (static_content overrides may inject scc values too).
+	stubCount, stubErrs := generateSCCStubs(cfg.DocsDir)
+	result.SCCStubs = stubCount
+	result.Errors = append(result.Errors, stubErrs...)
 
 	return result, nil
 }
@@ -113,8 +133,8 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
-		// Determine destination path within the section
-		destRel := entry.relPath
+		// Determine destination path within the section, applying group remaps
+		destRel, parentName := applyGroups(entry.relPath, section.Groups, cfg.SourceDir)
 		destPath := filepath.Join(sectionDir, destRel)
 
 		if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {
@@ -128,6 +148,16 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
+		// When a group flattens parent/child into one file, rewrite the
+		// frontmatter "name" to combine parent + original name so the H1
+		// and mkdocs nav title both show the combined form.
+		if parentName != "" {
+			data = combineFrontmatterName(data, parentName)
+		}
+
+		// Inject h1 header from frontmatter "name" field if the body lacks one
+		data = injectH1(data)
+
 		if err := os.WriteFile(destPath, data, 0644); err != nil {
 			errs = append(errs, fmt.Sprintf("write %s: %v", destPath, err))
 			continue
@@ -136,6 +166,136 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 	}
 
 	return count, errs
+}
+
+// applyGroups remaps a file's relative path based on group rules.
+// For example, "feature/ability/arcane-archer/exploding-arrow.md" becomes
+// "feature/ability/Kits/arcane-archer/exploding-arrow.md" if arcane-archer
+// matches a file in the kit/ source directory.
+//
+// When the matched group has Flatten=true, parent/child paths collapse to
+// "parent-child.md" directly under Label/, and the parent component name
+// is returned so callers can rewrite the file's frontmatter name accordingly.
+// parentName is empty when no flattening occurred.
+func applyGroups(relPath string, groups []GroupConfig, sourceDir string) (newPath string, parentName string) {
+	if len(groups) == 0 {
+		return relPath, ""
+	}
+
+	normalized := filepath.ToSlash(relPath)
+
+	for _, g := range groups {
+		prefix := g.From + "/"
+		if !strings.HasPrefix(normalized, prefix) {
+			continue
+		}
+
+		// Extract the first path component after the prefix (e.g., "arcane-archer")
+		rest := normalized[len(prefix):]
+		component := rest
+		if idx := strings.Index(rest, "/"); idx >= 0 {
+			component = rest[:idx]
+		}
+
+		// Cross-reference: does {match_type}/{component}.md exist in source?
+		checkPath := filepath.Join(sourceDir, g.MatchType, component+".md")
+		if _, err := os.Stat(checkPath); err != nil {
+			continue
+		}
+
+		if g.Flatten {
+			// Collapse parent/child.md → parent-child.md under Label/.
+			// If the file IS the parent (no child segment), keep it as parent.md.
+			if component == rest || rest == component+".md" {
+				return g.From + "/" + g.Label + "/" + component + ".md", ""
+			}
+			child := strings.TrimSuffix(filepath.Base(rest), ".md")
+			return g.From + "/" + g.Label + "/" + component + "-" + child + ".md", component
+		}
+
+		// Remap: insert group label between prefix and rest
+		return g.From + "/" + g.Label + "/" + rest, ""
+	}
+
+	return relPath, ""
+}
+
+// combineFrontmatterName rewrites the "name" field in frontmatter so that
+// the value becomes "ParentTitle (OriginalName)". Used by the flatten group
+// mode where parent/child pages collapse into one page. The parent slug
+// (e.g. "arcane-archer") is title-cased to "Arcane Archer".
+func combineFrontmatterName(data []byte, parentSlug string) []byte {
+	content := string(data)
+	if !strings.HasPrefix(content, "---\n") {
+		return data
+	}
+
+	fm, body := splitFrontmatter(content)
+	original := parseFrontmatterField(fm, "name")
+	if original == "" {
+		return data
+	}
+
+	parentTitle := titleCase(strings.ReplaceAll(parentSlug, "-", " "))
+	combined := parentTitle + " (" + original + ")"
+
+	newFM := replaceFrontmatterField(fm, "name", combined)
+
+	var sb strings.Builder
+	sb.WriteString("---\n")
+	sb.WriteString(newFM)
+	sb.WriteString("\n---")
+	sb.WriteString(body)
+	return []byte(sb.String())
+}
+
+// replaceFrontmatterField replaces the value of a simple top-level scalar
+// field in YAML frontmatter. Indented (nested) keys are not matched.
+func replaceFrontmatterField(fm, key, value string) string {
+	lines := strings.Split(fm, "\n")
+	prefix := key + ":"
+	for i, line := range lines {
+		trimmed := strings.TrimLeft(line, " \t")
+		if trimmed != line {
+			continue // skip indented (nested) keys
+		}
+		if strings.HasPrefix(trimmed, prefix) {
+			lines[i] = key + ": " + value
+			return strings.Join(lines, "\n")
+		}
+	}
+	return fm
+}
+
+// injectH1 adds a "# Name" header after frontmatter if the body doesn't already
+// have one. Reads the name from the frontmatter "name" field.
+func injectH1(data []byte) []byte {
+	content := string(data)
+	if !strings.HasPrefix(content, "---\n") {
+		return data
+	}
+
+	fm, body := splitFrontmatter(content)
+	name := parseFrontmatterField(fm, "name")
+	if name == "" {
+		return data
+	}
+
+	// Check if body already starts with an h1
+	trimmed := strings.TrimLeft(body, "\n")
+	if strings.HasPrefix(trimmed, "# ") {
+		return data
+	}
+
+	// Rebuild: frontmatter + h1 + body
+	var sb strings.Builder
+	sb.WriteString("---\n")
+	sb.WriteString(fm)
+	sb.WriteString("\n---\n\n# ")
+	sb.WriteString(name)
+	sb.WriteString("\n\n")
+	sb.WriteString(strings.TrimLeft(body, "\n"))
+	return []byte(sb.String())
 }
 
 // matchesSection checks if a file's relative path matches the section's include/exclude rules.
@@ -294,6 +454,516 @@ func copyStaticContent(srcDir, docsDir string) (int, error) {
 		return nil
 	})
 	return count, err
+}
+
+// compositeEntry holds parsed data for a feature/ability to be appended to a composite page.
+type compositeEntry struct {
+	name        string
+	level       int
+	featureType string // "trait" or "ability"
+	body        string // markdown body (frontmatter stripped)
+}
+
+// assembleComposites processes composite page definitions for a section.
+func assembleComposites(cfg *Config, section SectionConfig) (int, []string) {
+	if len(section.Composites) == 0 {
+		return 0, nil
+	}
+
+	count := 0
+	var errs []string
+
+	for _, comp := range section.Composites {
+		n, e := assembleComposite(cfg, section, comp)
+		count += n
+		errs = append(errs, e...)
+	}
+
+	return count, errs
+}
+
+// compositeEmbed holds content from a single-file composite include,
+// embedded directly rather than iterated as individual entries.
+type compositeEmbed struct {
+	name string // from frontmatter "name" field
+	body string // markdown body (frontmatter stripped)
+}
+
+// assembleComposite builds composite pages for one composite definition.
+func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig) (int, []string) {
+	baseDir := filepath.Join(cfg.DocsDir, section.Name, comp.Base)
+	entries, err := os.ReadDir(baseDir)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return 0, nil
+		}
+		return 0, []string{fmt.Sprintf("read base dir %s: %v", baseDir, err)}
+	}
+
+	count := 0
+	var errs []string
+
+	for _, entry := range entries {
+		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".md") || entry.Name() == "index.md" {
+			continue
+		}
+
+		name := strings.TrimSuffix(entry.Name(), ".md")
+		basePath := filepath.Join(baseDir, entry.Name())
+
+		// Read the base file
+		baseContent, err := os.ReadFile(basePath)
+		if err != nil {
+			errs = append(errs, fmt.Sprintf("read base %s: %v", basePath, err))
+			continue
+		}
+
+		// Collect child entries from all include patterns.
+		// Patterns can resolve to directories (walked) or single files (embedded directly).
+		var children []compositeEntry
+		var embeds []compositeEmbed
+		var compositedPaths []string // track resolved paths for RemoveSources
+
+		for _, pattern := range comp.Include {
+			resolved := strings.ReplaceAll(pattern, "{name}", name)
+			srcDir := filepath.Join(cfg.SourceDir, resolved)
+
+			if info, statErr := os.Stat(srcDir); statErr == nil && info.IsDir() {
+				// Directory: walk for individual children
+				found, e := collectCompositeChildren(srcDir)
+				children = append(children, found...)
+				errs = append(errs, e...)
+				if comp.RemoveSources {
+					compositedPaths = append(compositedPaths, filepath.Join(cfg.DocsDir, section.Name, resolved))
+				}
+			} else {
+				// Try as single file (append .md)
+				srcFile := srcDir + ".md"
+				if _, statErr := os.Stat(srcFile); statErr == nil {
+					data, readErr := os.ReadFile(srcFile)
+					if readErr != nil {
+						errs = append(errs, fmt.Sprintf("read %s: %v", srcFile, readErr))
+					} else {
+						fm, body := splitFrontmatter(string(data))
+						embedName := parseFrontmatterField(fm, "name")
+						if embedName == "" {
+							embedName = fileToTitle(filepath.Base(srcFile))
+						}
+						embeds = append(embeds, compositeEmbed{
+							name: embedName,
+							body: strings.TrimSpace(body),
+						})
+						if comp.RemoveSources {
+							compositedPaths = append(compositedPaths, filepath.Join(cfg.DocsDir, section.Name, resolved+".md"))
+						}
+					}
+				}
+			}
+		}
+
+		if len(children) == 0 && len(embeds) == 0 {
+			continue
+		}
+
+		// Sort directory children: by level, then traits before abilities, then by name
+		sort.Slice(children, func(i, j int) bool {
+			if children[i].level != children[j].level {
+				return children[i].level < children[j].level
+			}
+			if children[i].featureType != children[j].featureType {
+				return children[i].featureType == "trait"
+			}
+			return children[i].name < children[j].name
+		})
+
+		// Assemble the composite content
+		var sb strings.Builder
+		sb.Write(baseContent)
+		sb.WriteString("\n\n---\n\n")
+
+		// Embedded files first (single-file composites): embed body with a section heading
+		for _, embed := range embeds {
+			sb.WriteString("### ")
+			sb.WriteString(embed.name)
+			sb.WriteString("\n\n")
+			sb.WriteString(embed.body)
+			sb.WriteString("\n\n")
+		}
+
+		// Directory children: grouped by level/type with headings
+		lastLevel := -1
+		lastType := ""
+		for _, child := range children {
+			// Add level/type group heading when it changes
+			groupKey := fmt.Sprintf("%d-%s", child.level, child.featureType)
+			if groupKey != lastType || child.level != lastLevel {
+				heading := levelGroupHeading(child.level, child.featureType)
+				sb.WriteString("## ")
+				sb.WriteString(heading)
+				sb.WriteString("\n\n")
+				lastLevel = child.level
+				lastType = groupKey
+			}
+
+			sb.WriteString("### ")
+			sb.WriteString(child.name)
+			sb.WriteString("\n\n")
+			sb.WriteString(strings.TrimSpace(child.body))
+			sb.WriteString("\n\n")
+		}
+
+		if err := os.WriteFile(basePath, []byte(sb.String()), 0644); err != nil {
+			errs = append(errs, fmt.Sprintf("write composite %s: %v", basePath, err))
+			continue
+		}
+		count++
+
+		// Remove composited source files from docs to avoid standalone duplicates
+		if comp.RemoveSources {
+			for _, p := range compositedPaths {
+				os.Remove(p)       // single file
+				os.RemoveAll(p)    // directory
+			}
+		}
+	}
+
+	return count, errs
+}
+
+// collectCompositeChildren recursively collects feature/ability files from a directory.
+func collectCompositeChildren(dir string) ([]compositeEntry, []string) {
+	if _, err := os.Stat(dir); os.IsNotExist(err) {
+		return nil, nil
+	}
+
+	var entries []compositeEntry
+	var errs []string
+
+	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
+			return nil
+		}
+
+		data, err := os.ReadFile(path)
+		if err != nil {
+			errs = append(errs, fmt.Sprintf("read %s: %v", path, err))
+			return nil
+		}
+
+		fm, body := splitFrontmatter(string(data))
+		entry := compositeEntry{
+			name:        parseFrontmatterField(fm, "name"),
+			featureType: parseFrontmatterField(fm, "type"),
+			body:        body,
+		}
+
+		// Parse level: try frontmatter first, then path
+		if lvl := parseFrontmatterField(fm, "level"); lvl != "" {
+			entry.level = parseLevel(lvl)
+		} else {
+			entry.level = levelFromPath(path, dir)
+		}
+
+		if entry.name == "" {
+			entry.name = fileToTitle(filepath.Base(path))
+		}
+
+		entries = append(entries, entry)
+		return nil
+	})
+
+	return entries, errs
+}
+
+// splitFrontmatter separates YAML frontmatter from body content.
+func splitFrontmatter(content string) (frontmatter, body string) {
+	if !strings.HasPrefix(content, "---\n") {
+		return "", content
+	}
+	end := strings.Index(content[4:], "\n---")
+	if end < 0 {
+		return "", content
+	}
+	return content[4 : 4+end], content[4+end+4:]
+}
+
+// parseFrontmatterField extracts a simple string value from YAML frontmatter.
+func parseFrontmatterField(fm, key string) string {
+	for _, line := range strings.Split(fm, "\n") {
+		line = strings.TrimSpace(line)
+		prefix := key + ":"
+		if strings.HasPrefix(line, prefix) {
+			val := strings.TrimSpace(line[len(prefix):])
+			val = strings.Trim(val, "\"'")
+			return val
+		}
+	}
+	return ""
+}
+
+// parseLevel converts a level string like "1" or "5" to int.
+func parseLevel(s string) int {
+	n := 0
+	for _, c := range s {
+		if c >= '0' && c <= '9' {
+			n = n*10 + int(c-'0')
+		}
+	}
+	return n
+}
+
+// levelFromPath extracts a level number from a path like ".../level-3/file.md".
+func levelFromPath(path, baseDir string) int {
+	rel, _ := filepath.Rel(baseDir, path)
+	parts := strings.Split(filepath.ToSlash(rel), "/")
+	for _, p := range parts {
+		if strings.HasPrefix(p, "level-") {
+			return parseLevel(p[6:])
+		}
+	}
+	return 0
+}
+
+// levelGroupHeading returns a section heading for a level/type group.
+func levelGroupHeading(level int, featureType string) string {
+	typeLabel := "Features"
+	if featureType == "ability" {
+		typeLabel = "Abilities"
+	}
+
+	if level == 0 {
+		return typeLabel
+	}
+
+	ordinal := fmt.Sprintf("%d", level)
+	switch level {
+	case 1:
+		ordinal = "1st"
+	case 2:
+		ordinal = "2nd"
+	case 3:
+		ordinal = "3rd"
+	default:
+		ordinal = fmt.Sprintf("%dth", level)
+	}
+
+	return fmt.Sprintf("%s-Level %s", ordinal, typeLabel)
+}
+
+// naturalLess compares two strings with numeric-aware ordering,
+// so "level-2" sorts before "level-10".
+func naturalLess(a, b string) bool {
+	ia, ib := 0, 0
+	for ia < len(a) && ib < len(b) {
+		ca, cb := a[ia], b[ib]
+		aDigit := ca >= '0' && ca <= '9'
+		bDigit := cb >= '0' && cb <= '9'
+
+		if aDigit && bDigit {
+			// Compare numeric spans as integers
+			na, nb := 0, 0
+			for ia < len(a) && a[ia] >= '0' && a[ia] <= '9' {
+				na = na*10 + int(a[ia]-'0')
+				ia++
+			}
+			for ib < len(b) && b[ib] >= '0' && b[ib] <= '9' {
+				nb = nb*10 + int(b[ib]-'0')
+				ib++
+			}
+			if na != nb {
+				return na < nb
+			}
+		} else {
+			// Compare single characters (case-insensitive)
+			la, lb := ca, cb
+			if la >= 'A' && la <= 'Z' {
+				la += 'a' - 'A'
+			}
+			if lb >= 'A' && lb <= 'Z' {
+				lb += 'a' - 'A'
+			}
+			if la != lb {
+				return la < lb
+			}
+			ia++
+			ib++
+		}
+	}
+	return len(a) < len(b)
+}
+
+// typeTitles maps lowercase type directory names to display titles.
+var typeTitles = map[string]string{
+	"ancestry":    "Ancestries",
+	"career":      "Careers",
+	"chapter":     "Chapters",
+	"class":       "Classes",
+	"complication": "Complications",
+	"condition":   "Conditions",
+	"culture":     "Cultures",
+	"feature":     "Features",
+	"kit":         "Kits",
+	"perk":        "Perks",
+	"skill":       "Skills",
+	"title":       "Titles",
+	"treasure":    "Treasures",
+	"ability":     "Abilities",
+	"trait":       "Traits",
+}
+
+// generateIndexPages creates index.md files for type directories within sections.
+func generateIndexPages(docsDir string, sections []SectionConfig) (int, []string) {
+	count := 0
+	var errs []string
+
+	for _, section := range sections {
+		sectionDir := filepath.Join(docsDir, section.Name)
+		if _, err := os.Stat(sectionDir); os.IsNotExist(err) {
+			continue
+		}
+		n, e := generateIndexesRecursive(sectionDir, sectionDir)
+		count += n
+		errs = append(errs, e...)
+	}
+
+	return count, errs
+}
+
+// generateIndexesRecursive creates index.md files for directories that contain
+// .md files or subdirectories with content.
+func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
+	dirEntries, err := os.ReadDir(dir)
+	if err != nil {
+		return 0, []string{fmt.Sprintf("read dir %s: %v", dir, err)}
+	}
+
+	var files []string
+	var subdirs []string
+
+	for _, e := range dirEntries {
+		name := e.Name()
+		if e.IsDir() {
+			subdirs = append(subdirs, name)
+		} else if strings.HasSuffix(name, ".md") && name != "index.md" && name != "_Index.md" {
+			files = append(files, name)
+		}
+	}
+
+	count := 0
+	var errs []string
+
+	// Recurse into subdirectories
+	for _, d := range subdirs {
+		n, e := generateIndexesRecursive(filepath.Join(dir, d), sectionRoot)
+		count += n
+		errs = append(errs, e...)
+	}
+
+	// Don't generate index for the section root — that's provided by static content
+	if dir == sectionRoot {
+		return count, errs
+	}
+
+	// Skip if nothing to list
+	if len(files) == 0 && len(subdirs) == 0 {
+		return count, errs
+	}
+
+	content := buildIndexContent(dir, filepath.Base(dir), files, subdirs)
+	indexPath := filepath.Join(dir, "index.md")
+	if err := os.WriteFile(indexPath, []byte(content), 0644); err != nil {
+		errs = append(errs, fmt.Sprintf("write index %s: %v", indexPath, err))
+	} else {
+		count++
+	}
+
+	return count, errs
+}
+
+// buildIndexContent generates the markdown content for a directory index page.
+// dir is the absolute directory; used to read frontmatter "name" fields from
+// the listed files so the index labels match the pages' actual titles.
+func buildIndexContent(dir, dirName string, files, subdirs []string) string {
+	title := dirToTitle(dirName)
+
+	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
+	sort.Slice(subdirs, func(i, j int) bool { return naturalLess(subdirs[i], subdirs[j]) })
+
+	var sb strings.Builder
+	sb.WriteString("# ")
+	sb.WriteString(title)
+	sb.WriteString("\n\n")
+
+	if len(subdirs) > 0 {
+		for _, d := range subdirs {
+			name := dirToTitle(d)
+			sb.WriteString("- [")
+			sb.WriteString(name)
+			sb.WriteString("](")
+			sb.WriteString(d)
+			sb.WriteString("/index.md)\n")
+		}
+		if len(files) > 0 {
+			sb.WriteString("\n")
+		}
+	}
+
+	if len(files) > 0 {
+		sb.WriteString("<div class=\"browse-index\" markdown>\n\n")
+		for _, f := range files {
+			name := readFrontmatterName(filepath.Join(dir, f))
+			if name == "" {
+				name = fileToTitle(f)
+			}
+			sb.WriteString("- [")
+			sb.WriteString(name)
+			sb.WriteString("](")
+			sb.WriteString(f)
+			sb.WriteString(")\n")
+		}
+		sb.WriteString("\n</div>\n")
+	}
+
+	return sb.String()
+}
+
+// readFrontmatterName returns the "name" field from a markdown file's
+// frontmatter, or "" if the file lacks frontmatter or a name field.
+func readFrontmatterName(path string) string {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return ""
+	}
+	fm, _ := splitFrontmatter(string(data))
+	if fm == "" {
+		return ""
+	}
+	return parseFrontmatterField(fm, "name")
+}
+
+// dirToTitle converts a directory name to a display title.
+func dirToTitle(name string) string {
+	if t, ok := typeTitles[name]; ok {
+		return t
+	}
+	return titleCase(strings.ReplaceAll(name, "-", " "))
+}
+
+// fileToTitle converts a filename (without path) to a display title.
+func fileToTitle(name string) string {
+	name = strings.TrimSuffix(name, ".md")
+	return titleCase(strings.ReplaceAll(name, "-", " "))
+}
+
+// titleCase capitalizes the first letter of each word.
+func titleCase(s string) string {
+	words := strings.Fields(s)
+	for i, w := range words {
+		if len(w) > 0 {
+			words[i] = strings.ToUpper(w[:1]) + w[1:]
+		}
+	}
+	return strings.Join(words, " ")
 }
 
 // LoadSCCMap reads scc-to-path.json and returns the entries sorted by SCC code.

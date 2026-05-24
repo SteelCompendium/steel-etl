@@ -10,6 +10,7 @@ import (
 	"github.com/SteelCompendium/steel-etl/internal/output"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 	"github.com/SteelCompendium/steel-etl/internal/scc"
+	"github.com/SteelCompendium/steel-etl/internal/site"
 )
 
 // Result holds the outcome of a pipeline run.
@@ -254,6 +255,22 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 		generators = append(generators, &output.SCCMapGenerator{
 			OutputPath: cfg.ResolvePath(cfg.Output.SCCMap.OutputFile),
 		})
+	}
+
+	// SCC resolution API
+	if cfg.Output.SCCAPI.Enabled && cfg.Output.SCCAPI.OutputDir != "" {
+		apiGen := &output.SCCAPIGenerator{
+			OutputDir: cfg.ResolvePath(cfg.Output.SCCAPI.OutputDir),
+			BaseURL:   cfg.Output.SCCAPI.BaseURL,
+			Aliases:   sccRegistry.Aliases(),
+		}
+		if cfg.Output.SCCAPI.SiteConfig != "" {
+			siteCfg, err := site.LoadSiteConfig(cfg.ResolvePath(cfg.Output.SCCAPI.SiteConfig))
+			if err == nil {
+				apiGen.Sections = siteCfg.Sections
+			}
+		}
+		generators = append(generators, apiGen)
 	}
 
 	return generators

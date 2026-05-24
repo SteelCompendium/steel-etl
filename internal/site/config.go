@@ -59,6 +59,53 @@ type SectionConfig struct {
 	// GroupBy groups pages into subdirectories by this SCC path component
 	// e.g., "class" groups abilities by their class (fury/, shadow/, etc.)
 	GroupBy string `yaml:"group_by,omitempty"`
+
+	// Groups remap subdirectories into a named group folder based on cross-referencing
+	// another source type directory. For example, kit abilities in feature/ability/ can
+	// be moved under feature/ability/Kits/ by matching against the kit/ source directory.
+	Groups []GroupConfig `yaml:"groups,omitempty"`
+
+	// Composites define composite pages that aggregate content from multiple sources.
+	// Each composite takes a base type (e.g., "class") and appends content from
+	// include patterns (e.g., "feature/trait/{name}"), producing a single page.
+	Composites []CompositeConfig `yaml:"composites,omitempty"`
+}
+
+// CompositeConfig defines how to assemble composite pages from multiple sources.
+type CompositeConfig struct {
+	// Base is the type directory containing the base pages (e.g., "class")
+	Base string `yaml:"base"`
+
+	// Include lists source directory patterns to append. {name} is replaced
+	// with the base file's stem (e.g., "fury" from "fury.md").
+	// Patterns can resolve to directories (walked for children) or single files
+	// (resolved + ".md" is tried when the directory doesn't exist).
+	Include []string `yaml:"include"`
+
+	// RemoveSources removes composited source files from the docs output,
+	// preventing them from appearing as standalone pages.
+	RemoveSources bool `yaml:"remove_sources,omitempty"`
+}
+
+// GroupConfig moves subdirectories into a named group folder based on
+// cross-referencing another source type directory.
+type GroupConfig struct {
+	// MatchType is the source type directory to cross-reference (e.g., "kit").
+	// If a subdirectory name matches a file in this source directory, it is grouped.
+	MatchType string `yaml:"match_type"`
+
+	// From is the path prefix to match (e.g., "feature/ability").
+	From string `yaml:"from"`
+
+	// Label is the group directory name (e.g., "Kits").
+	Label string `yaml:"label"`
+
+	// Flatten collapses {parent}/{child}.md into a single {parent}-{child}.md
+	// file directly under Label/, and rewrites the file's frontmatter "name"
+	// to "Parent Title (Original Name)" so the page heading and nav title
+	// show both the matched parent and the child name. Used for kits where
+	// each parent has exactly one child page.
+	Flatten bool `yaml:"flatten,omitempty"`
 }
 
 // LoadSiteConfig reads a site configuration file.

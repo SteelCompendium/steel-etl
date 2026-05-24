@@ -35,6 +35,7 @@ type OutputConfig struct {
 	Stripped StrippedConfig `yaml:"stripped"`
 	Aggregate AggregateConfig `yaml:"aggregate"`
 	SCCMap   SCCMapConfig   `yaml:"scc_map"`
+	SCCAPI   SCCAPIConfig   `yaml:"scc_api"`
 }
 
 type VariantsConfig struct {
@@ -56,6 +57,13 @@ type AggregateConfig struct {
 type SCCMapConfig struct {
 	Enabled    bool   `yaml:"enabled"`
 	OutputFile string `yaml:"output_file"`
+}
+
+type SCCAPIConfig struct {
+	Enabled    bool   `yaml:"enabled"`
+	OutputDir  string `yaml:"output_dir"`
+	BaseURL    string `yaml:"base_url"`
+	SiteConfig string `yaml:"site_config"` // path to site.yaml for section mapping
 }
 
 type ParsersConfig struct {

@@ -8,7 +8,7 @@ This project uses **devbox** for toolchain management. Go is NOT on the system P
 
 ```bash
 # From the workspace root (parent of steel-etl/):
-eval "$(devbox shellenv --config /home/vexa/code/steel_compendium/workspace/devbox.json 2>/dev/null)"
+devbox run --
 
 # Then Go commands work:
 cd steel-etl
@@ -16,6 +16,8 @@ go build ./...
 go test ./...
 go run ./cmd/steel-etl gen --config pipeline.yaml
 ```
+
+For example, `devbox run -- go build ./...`
 
 The `justfile` has convenience recipes that assume Go is on PATH (they work inside `devbox shell`):
 

@@ -61,6 +61,15 @@ func (r *Registry) IsFrozen() bool {
 	return r.frozen
 }
 
+// Aliases returns a copy of the alias map (alias → canonical SCC).
+func (r *Registry) Aliases() map[string]string {
+	out := make(map[string]string, len(r.aliases))
+	for k, v := range r.aliases {
+		out[k] = v
+	}
+	return out
+}
+
 // Codes returns all registered SCC codes, sorted.
 func (r *Registry) Codes() []string {
 	codes := make([]string, 0, len(r.codes))
