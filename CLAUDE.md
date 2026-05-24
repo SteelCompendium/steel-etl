@@ -41,6 +41,9 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/content/registry.go` | Content parser registry (14 parsers) |
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
+| `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
+| `internal/site/config.go` | Site builder config types (sections, composites, groups) |
+| `internal/site/permalinks.go` | SCC permalink stub generator |
 
 ## CLI commands
 
@@ -48,7 +51,25 @@ just run gen --config pipeline.yaml  # Run with args
 - `validate` -- Check annotation coverage, unknown types, SCC stability
 - `classify` -- Display/export SCC codes, diff against registry
 - `strip` -- Remove annotations from markdown (also `--for-translation`)
-- `site` -- Build MkDocs site structure from output
+- `site` -- Build MkDocs site structure from ETL output (see below)
+
+## Site builder (`steel-etl site`)
+
+The `site` command replaces the old bash-based justfile pipeline for building the v2 MkDocs site. Config lives in `v2/site.yaml`.
+
+```bash
+steel-etl site --config v2/site.yaml
+```
+
+Features:
+- **Section mapping**: copies ETL md-linked output into MkDocs tab directories (Browse, Read)
+- **Composite pages**: aggregates traits and abilities into class/ancestry pages
+- **Group remapping**: nests kit abilities under a "Kits" subdirectory by cross-referencing the `kit/` source directory
+- **Natural sort**: numeric-aware ordering in generated index pages (Level 1, 2, ... 10)
+- **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one
+- **SCC permalink stubs**: generates `scc/{code}/index.html` redirect stubs for every page with an `scc` frontmatter field
+- **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages
+- **Static content overrides**: copies hand-authored pages last, overriding generated content
 
 ## SCC classification
 
