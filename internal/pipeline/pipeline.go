@@ -72,6 +72,12 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				frozenRegistry = existing
 				sccRegistry.Freeze()
 			}
+			for _, code := range existing.Codes() {
+				sccRegistry.Add(code)
+			}
+			for alias, canonical := range existing.Aliases() {
+				sccRegistry.AddAlias(alias, canonical)
+			}
 		}
 	}
 
