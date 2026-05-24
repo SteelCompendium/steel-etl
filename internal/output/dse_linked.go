@@ -13,6 +13,7 @@ import (
 type DSELinkedGenerator struct {
 	BaseDir  string // e.g., "data-rules/en/md-dse-linked"
 	Resolver *scc.Resolver
+	LinkMode scc.LinkMode
 }
 
 func (g *DSELinkedGenerator) Format() string { return "md-dse-linked" }
@@ -25,7 +26,7 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 	// Resolve links in body before building DSE output
 	resolved := &content.ParsedContent{
 		Frontmatter: parsed.Frontmatter,
-		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, scc.LinkAll),
+		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 	}

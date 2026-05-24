@@ -28,6 +28,7 @@ func TestLinkedGenerator_WriteSection(t *testing.T) {
 	gen := &LinkedGenerator{
 		BaseDir:  dir,
 		Resolver: resolver,
+		LinkMode: scc.LinkAll,
 	}
 
 	parsed := &content.ParsedContent{
@@ -71,7 +72,7 @@ func TestLinkedGenerator_WriteSection(t *testing.T) {
 func TestLinkedGenerator_NilAndEmpty(t *testing.T) {
 	registry := scc.NewRegistry()
 	resolver := scc.NewResolver(registry, ".md")
-	gen := &LinkedGenerator{BaseDir: t.TempDir(), Resolver: resolver}
+	gen := &LinkedGenerator{BaseDir: t.TempDir(), Resolver: resolver, LinkMode: scc.LinkAll}
 
 	if err := gen.WriteSection("some/code", nil); err != nil {
 		t.Errorf("expected nil error for nil parsed, got %v", err)
@@ -91,6 +92,7 @@ func TestLinkedGenerator_UnresolvedLinks(t *testing.T) {
 	gen := &LinkedGenerator{
 		BaseDir:  dir,
 		Resolver: resolver,
+		LinkMode: scc.LinkAll,
 	}
 
 	parsed := &content.ParsedContent{
@@ -113,8 +115,11 @@ func TestLinkedGenerator_UnresolvedLinks(t *testing.T) {
 		t.Fatalf("failed to read output: %v", err)
 	}
 
-	// Unresolved link should remain as-is
-	if !strings.Contains(string(data), "scc:mcdm.heroes.v1/feature.ability.fury.level-1/unknown") {
-		t.Error("expected unresolved scc: link to remain unchanged")
+	// Unresolved scc: links should be stripped, leaving only display text
+	if strings.Contains(string(data), "scc:") {
+		t.Error("expected unresolved scc: link to be stripped")
+	}
+	if !strings.Contains(string(data), "See Unknown link.") {
+		t.Error("expected display text to remain after stripping unresolved link")
 	}
 }

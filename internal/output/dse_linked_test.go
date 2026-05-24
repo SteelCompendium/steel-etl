@@ -27,6 +27,7 @@ func TestDSELinkedGenerator_WriteSection_Ability(t *testing.T) {
 	gen := &DSELinkedGenerator{
 		BaseDir:  dir,
 		Resolver: resolver,
+		LinkMode: scc.LinkAll,
 	}
 
 	parsed := &content.ParsedContent{
@@ -86,6 +87,7 @@ func TestDSELinkedGenerator_WriteSection_Condition(t *testing.T) {
 	gen := &DSELinkedGenerator{
 		BaseDir:  dir,
 		Resolver: resolver,
+		LinkMode: scc.LinkAll,
 	}
 
 	parsed := &content.ParsedContent{
@@ -124,7 +126,7 @@ func TestDSELinkedGenerator_WriteSection_Condition(t *testing.T) {
 func TestDSELinkedGenerator_NilAndEmpty(t *testing.T) {
 	registry := scc.NewRegistry()
 	resolver := scc.NewResolver(registry, ".md")
-	gen := &DSELinkedGenerator{BaseDir: t.TempDir(), Resolver: resolver}
+	gen := &DSELinkedGenerator{BaseDir: t.TempDir(), Resolver: resolver, LinkMode: scc.LinkAll}
 
 	if err := gen.WriteSection("some/code", nil); err != nil {
 		t.Errorf("expected nil error for nil parsed, got %v", err)

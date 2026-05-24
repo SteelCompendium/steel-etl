@@ -13,6 +13,7 @@ import (
 type LinkedGenerator struct {
 	BaseDir  string // e.g., "data-rules/en/md-linked"
 	Resolver *scc.Resolver
+	LinkMode scc.LinkMode
 }
 
 func (g *LinkedGenerator) Format() string { return "md-linked" }
@@ -25,7 +26,7 @@ func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 	// Create a copy with resolved links in the body
 	resolved := &content.ParsedContent{
 		Frontmatter: parsed.Frontmatter,
-		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, scc.LinkAll),
+		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 	}
