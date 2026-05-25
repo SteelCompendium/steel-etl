@@ -74,7 +74,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 
 | Chapter | Lines | Strip Links | Classes | Ancestries | Careers | Kits | Perks | Complications | Titles | Treasures | Chapters |
 |---------|-------|------------|---------|-----------|---------|------|-------|--------------|--------|-----------|----------|
-| Introduction | 7-589 | done | - | - | - | - | - | - | - | - | - |
+| Introduction | 7-589 | done | done (27) | done (21) | - | - | - | - | - | - | done (3) |
 | The Basics | 590-1055 | done | - | - | - | - | - | - | - | - | - |
 | Making a Hero | 1056-1263 | done | - | - | - | - | - | - | - | - | - |
 | Ancestries | 1264-3199 | done | - | - | - | - | - | - | - | - | - |
