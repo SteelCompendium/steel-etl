@@ -41,7 +41,7 @@ Strategy is: "What are we trying to do?" Break a siege, free a prisoner, rescue 
 
 Tactics is about: "How are we going to do that?" We're going to... surround them! Sneak around them! Pick them off one by one! Kill their leader first. Kill their priest first! "No resurrections!"
 
-In a tactical game, *positioning matters*. So our game is played on a grid. Effects and distances are measured in squares. This means all players are focused on the same problem, and there is no ambiguity regarding where the heroes and villains are in relation to each other. The hobgoblin troopers are setting themselves up in a line to stop our tactician and fury from getting into melee with the hobgoblin war mage. We're all aware of what's happening, and we can talk about what we're going to do to stop it.
+In a tactical game, *positioning matters*. So our game is played on a grid. Effects and distances are measured in squares. This means all players are focused on the same problem, and there is no ambiguity regarding where the heroes and villains are in relation to each other. The hobgoblin troopers are setting themselves up in a line to stop our [tactician](scc:mcdm.heroes.v1/class/tactician) and [fury](scc:mcdm.heroes.v1/class/fury) from getting into melee with the hobgoblin war mage. We're all aware of what's happening, and we can talk about what we're going to do to stop it.
 
 That means *teamwork matters*. That's why the order of combat works the way it does—to encourage the players to plan! "Okay, you use Concussive Slam on that trooper, it'll push him back, and on my turn, I can use Squad! Forward! to get us all into melee with the death captain." We think focusing on teamwork also makes the game more heroic!
 
@@ -49,7 +49,7 @@ In a tactical game, you have many choices each combat round. You are never reduc
 
 As you play with the same group of characters, you learn what they can all do. You discover synergies, "combos." Some of them intended by the designers, some not! You start to learn these unique characters, and to rely on them to do their cool things. It's a great feeling when another player comes up with a cool plan that relies on your unique abilities.
 
-You learn which characters are the "squishies" who need to be protected or healed. You learn which characters can push themselves right to the edge and keep fighting. "Don't worry about healing Barlaca. She's our fury. She's happier with 3 Stamina." Our game is not *about* tactics. It's not a wargame. But it is tactical.
+You learn which characters are the "squishies" who need to be protected or healed. You learn which characters can push themselves right to the edge and keep fighting. "Don't worry about healing Barlaca. She's our [fury](scc:mcdm.heroes.v1/class/fury). She's happier with 3 Stamina." Our game is not *about* tactics. It's not a wargame. But it is tactical.
 
 ### Heroic
 
@@ -71,17 +71,17 @@ Basically, we worry only about those things you'd see your characters doing in a
 
 ### Cinematic
 
-Closely tied to the heroic keyword, the cinematic keyword is about how we like abilities and features to be strongly evocative. You can imagine your character doing or saying these things. "In All This Confusion" is a good name for the shadow's ability to slip out of melee and retreat to safety. The text of the ability says how it works, but the name creates an awareness that explains *how* it's working.
+Closely tied to the heroic keyword, the cinematic keyword is about how we like abilities and features to be strongly evocative. You can imagine your character doing or saying these things. "In All This Confusion" is a good name for the [shadow's](scc:mcdm.heroes.v1/class/shadow) ability to slip out of melee and retreat to safety. The text of the ability says how it works, but the name creates an awareness that explains *how* it's working.
 
-When Sir Vanazor the dragon knight fury leaps onto a goblin war spider, cleaving through the goblins riding the creature in a single turn, you *experience* that action in your mind. It feels like a movie. It doesn't feel simply as if you rolled well, but like an epic scene, complete with slow motion and a Carpenter Brut soundtrack.
+When Sir Vanazor the [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) [fury](scc:mcdm.heroes.v1/class/fury) leaps onto a goblin war spider, cleaving through the goblins riding the creature in a single turn, you *experience* that action in your mind. It feels like a movie. It doesn't feel simply as if you rolled well, but like an epic scene, complete with slow motion and a Carpenter Brut soundtrack.
 
-You should imagine your tactician character leading the battle, granting your allies free strikes, extra maneuvers. *Coordinating* the battle. That's what the name implies. And if we've done a good job, when you read through your character's abilities, you think, "Yes! This is what I was imagining! I can't wait to do this!"
+You should imagine your [tactician](scc:mcdm.heroes.v1/class/tactician) character leading the battle, granting your allies free strikes, extra maneuvers. *Coordinating* the battle. That's what the name implies. And if we've done a good job, when you read through your character's abilities, you think, "Yes! This is what I was imagining! I can't wait to do this!"
 
 ### Fantasy
 
 Just... you know... it's got dragons and stuff.
 
-It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! Vasloria is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing Capital, the City of the Great Game, the Greatest City in This or Any Age. Vasloria is mostly humans and elves and orcs and dwarves, but Capital has dozens, *hundreds* of different ancestries in it.
+It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! Vasloria is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing Capital, the City of the Great Game, the Greatest City in This or Any Age. Vasloria is mostly [humans](scc:mcdm.heroes.v1/ancestry/human) and elves and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), but Capital has dozens, *hundreds* of different ancestries in it.
 
 Looking back at movies like *Star Wars* and the work of artists like Chris Foss, that '70s stuff now seems explicitly fantastical. There's nothing scientific or even plausible about a lightsaber or a John Berkey spaceship. But damn, they look cool!
 
@@ -95,7 +95,7 @@ For us, fantasy includes magic, like wizards casting spells, and psionics, the n
 
 We know that many folks are coming to this game having only experienced d20 fantasy RPGs. This section details a few key distinctions between this game and typical d20 fantasy that you'll notice right away. These aren't the only distinctions, but they're the most obvious.
 
-- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the conduit is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're dying to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the \1 and \1 sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
+- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're dying to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the \1 and \1 sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
 - **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent characteristic bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your Stamina and Recoveries—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
@@ -123,19 +123,19 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Ally:** A creature who is willingly friendly to another creature.
 
-**Ancestry:** A humanoid creature's species. Every hero has an ancestry.
+**[Ancestry](scc:mcdm.heroes.v1/chapter/ancestries):** A humanoid creature's species. Every hero has an ancestry.
 
 **Area of Effect:** The squares affected by an ability that creates an aura, burst, cube, line, or wall. (An ability that creates an area of effect affects targets simply by those targets being in its area, as opposed to a strike.)
 
-**Argument:** A plea the heroes make during a negotiation to convince one or more NPCs to work with them.
+**Argument:** A plea the heroes make during a [negotiation](scc:mcdm.heroes.v1/chapter/negotiation) to convince one or more NPCs to work with them.
 
-**Artifact:** A powerful treasure that can unbalance the game.
+**Artifact:** A powerful [treasure](scc:mcdm.heroes.v1/chapter/treasures) that can unbalance the game.
 
-**Artisan:** A follower who undertakes crafting projects for a hero.
+<!-- REVIEW: is this a game reference to the career, or the follower type? -->**[Artisan](scc:mcdm.heroes.v1/career/artisan):** A follower who undertakes crafting projects for a hero.<!-- /REVIEW -->
 
 **Aura:** When an ability or other effect creates an aura, that area is expressed as "X aura." The number X is the radius of the aura, which always originates from the creature or object who created it, extends from the outside of the creator's space, and moves with them.
 
-**Background:** A hero's culture and career.
+**[Background](scc:mcdm.heroes.v1/chapter/background):** A hero's [culture](scc:mcdm.heroes.v1/chapter/cultures) and [career](scc:mcdm.heroes.v1/chapter/careers).
 
 **Bane:** A situational disadvantage that gives a creature a −2 penalty to a power roll.
 
@@ -151,11 +151,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Capital:** The largest city in Orden, filled with art, culture, and intrigue.
 
-**Career:** The job a hero had before becoming a hero.
+**[Career](scc:mcdm.heroes.v1/chapter/careers):** The job a hero had before becoming a hero.
 
 **Catch Breath Maneuver:** A maneuver that allows a hero to spend a Recovery and regain Stamina equal to their recovery value.
 
-**Censor:** A class for a hero who is a trained warrior devoted to a saint or god.
+**[Censor](scc:mcdm.heroes.v1/class/censor):** A class for a hero who is a trained warrior devoted to a saint or god.
 
 **Characteristics:** Statistics used to represent a creature's mental and physical prowess, broken out as Might, Agility, Reason, Intuition, and Presence. Each characteristic has a score that ranges from −5 to +5.
 
@@ -163,31 +163,31 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Ceiling:** Any solid surface above a creature.
 
-**Clarity:** The talent's Heroic Resource. Unlike other Heroic Resources, clarity can go below 0, leaving a talent strained.
+**Clarity:** The [talent's](scc:mcdm.heroes.v1/class/talent) Heroic Resource. Unlike other Heroic Resources, clarity can go below 0, leaving a [talent](scc:mcdm.heroes.v1/class/talent) strained.
 
-**Class:** A hero's current role, which largely determines how they interact with the game's rules.
+**[Class](scc:mcdm.heroes.v1/chapter/classes):** A hero's current role, which largely determines how they interact with the game's rules.
 
 **Claw Dirt:** An ability that uses a maneuver to allow a creature without "burrow" in their speed entry to burrow.
 
 **Climb:** A movement mode that allows a creature to climb without using additional squares of movement. A creature without "climb" in their speed entry or the temporary ability to climb must use 2 squares of movement to climb 1 square.
 
-**Combat Round:** A segment of a combat encounter in which each creature participating in the battle takes a turn.
+**[Combat](scc:mcdm.heroes.v1/chapter/combat) Round:** A segment of a [combat](scc:mcdm.heroes.v1/chapter/combat) encounter in which each creature participating in the battle takes a turn.
 
-**Complication:** A dramatic narrative twist that deepens a hero's backstory and gives them a rules benefit and drawback. Complications are an optional rule.
+**[Complication](scc:mcdm.heroes.v1/chapter/complications):** A dramatic narrative twist that deepens a hero's backstory and gives them a rules benefit and drawback. [Complications](scc:mcdm.heroes.v1/chapter/complications) are an optional rule.
 
 **Concealment:** A state where a target has their form entirely covered in a concealing effect that doesn't block line of effect, such as darkness or fog. While a target has concealment, strikes used against them take a bane.
 
 **Condition:** A negative effect that applies to a creature and uses a universal shorthand name. Bleeding, dazed, frightened, grabbed, prone,  restrained, slowed, taunted, and weakened are conditions in *Draw Steel*.
 
-**Conduit:** A class for a hero who is the devoted spellcasting priest of a saint or god.
+**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A class for a hero who is the devoted spellcasting priest of a saint or god.
 
 **Consequence:** An impactful setback suffered by a creature when they make a test. A consequence can occur whether or not the creature making the test succeeds or fails.
 
-**Consumable:** A treasure that can be used a limited number of times before it is expended.
+**Consumable:** A [treasure](scc:mcdm.heroes.v1/chapter/treasures) that can be used a limited number of times before it is expended.
 
 **Cover:** A state where a target has at least half their form, but not all their form, blocked by a solid obstruction. While a target has cover, damage-dealing abilities used against them take a bane.
 
-**Crafting Project:** A downtime project undertaken to create a treasure, a vehicle, or some other object.
+**Crafting Project:** A [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) undertaken to create a [treasure](scc:mcdm.heroes.v1/chapter/treasures), a vehicle, or some other object.
 
 **Crawl:** A movement mode that allows a prone creature to move. A prone creature must use 2 squares of movement to crawl 1 square.
 
@@ -197,7 +197,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Cube:** When an ability or other effect creates a cube, that area is expressed as "X cube." The number X is the length of each of the area's sides. A cube effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
 
-**Culture:** The community in which a hero was raised.
+**[Culture](scc:mcdm.heroes.v1/chapter/cultures):** The community in which a hero was raised.
 
 **d3:** A three-sided die, often rolled using a d6.
 
@@ -221,7 +221,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Defend Main Action:** A main action that allows a creature to impose a double bane on all ability rolls made against them until the start of their next turn. Additionally, the creature has a double edge on tests when called for to resist environmental effects or a creature's traits or abilities.
 
-**Devil:** An ancestry from the Seven Cities of Hell.
+**[Devil](scc:mcdm.heroes.v1/ancestry/devil):** An ancestry from the Seven Cities of Hell.
 
 **Difficult Terrain:** An area of obstacles that are difficult to move through. It costs 1 additional square of movement to enter a square of difficult terrain. A creature can't shift into or out of difficult terrain, and can't jump out of difficult terrain.
 
@@ -229,7 +229,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Director:** The player who prepares, presents, and adjudicates the game for all the other players, who each create and run a hero.
 
-**Discipline:** The null's Heroic Resource.
+**Discipline:** The [null's](scc:mcdm.heroes.v1/class/null) Heroic Resource.
 
 **Disengage Move Action:** A move action that allows a creature to shift 1 square.
 
@@ -239,13 +239,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Double Edge:** When a creature has two or more edges and no banes applied to a power roll, they have a double edge on the roll. A double edge adds no bonus to a power roll, but instead automatically increases the tier outcome of the roll by one tier.
 
-**Downtime Project:** A task a hero undertakes during one or more respites.
+**[Downtime Project](scc:mcdm.heroes.v1/chapter/downtime-projects):** A task a hero undertakes during one or more respites.
 
-**Dragon Knight:** An ancestry with a draconic heritage.
+**[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** An ancestry with a draconic heritage.
 
-**Drama:** The troubadour's Heroic Resource.
+**Drama:** The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) Heroic Resource.
 
-**Dwarf:** An ancestry with stone skin and short stature.
+**[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** An ancestry with stone skin and short stature.
 
 **Dying:** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is bleeding and they can't use the Catch Breath maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
 
@@ -253,29 +253,29 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Edge:** A situational advantage that grants a creature a +2 bonus to a power roll.
 
-**Elementalist:** A class for a hero mage who wields the elemental forces of the timescape—earth, green, fire, the void, and more.
+**[Elementalist](scc:mcdm.heroes.v1/class/elementalist):** A class for a hero mage who wields the elemental forces of the timescape—earth, green, fire, the void, and more.
 
 **EoT:** An abbreviation used in an ability tier outcome for an effect that lasts until the end of the affected creature's next turn.
 
 **Enemy:** A creature who is hostile to another creature.
 
-**Enhancement:** A property given to an armor, implement, or weapon treasure that a hero creates as part of a crafting project.
+**Enhancement:** A property given to an armor, implement, or weapon [treasure](scc:mcdm.heroes.v1/chapter/treasures) that a hero creates as part of a crafting project.
 
 **Escape Grab Maneuver:** A maneuver that allows a grabbed creature to make an ability roll to escape.
 
-**Essence:** The elementalist's Heroic Resource.
+**Essence:** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) Heroic Resource.
 
 **Experience (XP):** A hero's Victories convert to Experience when they finish a respite. Experience permanently increases a hero's capabilities by allowing them to increase in level.
 
 **Falling:** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land prone. A falling creature can reduce the effective height of their fall by a number of squares equal to their Agility score (minimum 0).
 
-**Ferocity:** The fury's Heroic Resource.
+**Ferocity:** The [fury's](scc:mcdm.heroes.v1/class/fury) Heroic Resource.
 
 **Flanking:** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an edge on melee strikes against that enemy.
 
 **Fly:** A movement mode available to creatures with "fly" in their speed entry, or who gain the capability to temporarily fly. Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made prone or has their speed reduced to 0, they fall.
 
-**Focus:** The tactician's Heroic Resource.
+**Focus:** The [tactician's](scc:mcdm.heroes.v1/class/tactician) Heroic Resource.
 
 **Forced Movement:** When an ability or effect compels a creature to move, usually against their will. There are three types of forced movement: a pull, a push, and a slide. Forced movement is always along the ground unless noted as vertical. Forced movement can be reduced by stability.
 
@@ -289,9 +289,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Frightened:** A condition that causes a creature to take a bane on ability rolls against the source of their fear. The creature can't willingly move closer to the source of their fear, and that source gains an edge on ability rolls made against the creature.
 
-**Fury:** A class for a hero warrior who courses with the ferocity of the Primordial Chaos.
+**[Fury](scc:mcdm.heroes.v1/class/fury):** A class for a hero warrior who courses with the ferocity of the Primordial Chaos.
 
-**God:** A deity who grants power to their most devout worshipers through saint intermediaries.
+**[God](scc:mcdm.heroes.v1/chapter/gods-and-religion):** A deity who grants power to their most devout worshipers through saint intermediaries.
 
 **Grab Maneuver:** A maneuver that allows a creature to make an ability roll to make another creature grabbed by them.
 
@@ -301,9 +301,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Group Test:** Two or more creatures attempting to overcome a single, simple task together can make a group test. If half or more of the creatures succeed on their individual test, the group test succeeds. Otherwise the group test fails.
 
-**Guide:** A manual that gives a downtime project a specific number of project points without requiring a project roll.
+**Guide:** A manual that gives a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) a specific number of project points without requiring a project roll.
 
-**Hakaan:** An ancestry with stone giant blood.
+**[Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan):** An ancestry with stone giant blood.
 
 **Heal Main Action:** A main action that allows a creature to target an adjacent creature to make them feel better. The target can spend a Recovery to regain Stamina, or can make a saving throw against one effect.
 
@@ -317,35 +317,35 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Hide Maneuver:** A maneuver that allows a creature to hide from other creatures who aren't observing them.
 
-**High Elves:** A fey ancestry in tune with innate magic that affects how others interact with them.
+**[High Elves](scc:mcdm.heroes.v1/ancestry/high-elf):** A fey ancestry in tune with innate magic that affects how others interact with them.
 
 **High Ground:** A creature has the advantage of high ground when they use an ability against a target while standing on the ground and occupying a space that is fully above the target's space. This advantage grants the creature an edge on the ability roll.
 
 **Hover:** A creature who has "hover" in their speed entry (commonly alongside "fly" or "teleport"), or who gains the ability to temporarily hover, can remain motionless in midair. They don't fall even if they are knocked prone or their speed is reduced to 0.
 
-**Human:** An ancestry much like humans in the real world, except that they can sense magic.
+**[Human](scc:mcdm.heroes.v1/ancestry/human):** An ancestry much like humans in the real world, except that they can sense magic.
 
 **Humanoid:** Creatures who are of similar size to, have similar limb arrangements as, and have sapience on par with humans.
 
 **Implement:** A piece of jewelry, a staff, an orb, a wand, or some other object used by a creature to channel supernatural power.
 
-**Insight:** The shadow's Heroic Resource.
+**Insight:** The [shadow's](scc:mcdm.heroes.v1/class/shadow) Heroic Resource.
 
-**Interest:** A negotiation statistic that determines how interested an NPC is in helping out the heroes.
+**Interest:** A [negotiation](scc:mcdm.heroes.v1/chapter/negotiation) statistic that determines how interested an NPC is in helping out the heroes.
 
 **Intuition:** A characteristic that represents a creature's instincts and experience.
 
-**Item Prerequisite:** Raw materials, a foundational object, or some other item that must be obtained before a downtime project can be started.
+**Item Prerequisite:** Raw materials, a foundational object, or some other item that must be obtained before a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) can be started.
 
 **Jump:** A creature can automatically long jump a number of squares up to their Might or Agility score (their choice). The height of their jump is automatically 1 square as part of that movement. A creature who wants to jump farther or higher must make a Might or Agility test.
 
-**Kit:** A fighting style that comes with equipment to match. Kits are available to most heroes who wield weapons and wear armor.
+**[Kit](scc:mcdm.heroes.v1/chapter/kits):** A fighting style that comes with equipment to match. [Kits](scc:mcdm.heroes.v1/chapter/kits) are available to most heroes who wield weapons and wear armor.
 
 **Knockback Maneuver:** A maneuver that allows a creature to push away an adjacent creature.
 
 **Level:** A measure of a hero's, creature's, or effect's overall power. The higher the level, the more powerful the hero, creature, or effect. Level 1 is the lowest level in *Draw Steel*, and level 10 is the highest.
 
-**Leveled Treasure:** A treasure that can be used at will, and which increases in power as its hero wielder gains new levels.
+**Leveled [Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A [treasure](scc:mcdm.heroes.v1/chapter/treasures) that can be used at will, and which increases in power as its hero wielder gains new levels.
 
 **Line:** When an ability or other effect creates a line, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line area of effect, the squares in that area must be in a straight line. A line effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
 
@@ -363,13 +363,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Melee Free Strike:** A free strike made using a melee ability.
 
-**Memonek:** An ancestry of machine people.
+**[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** An ancestry of machine people.
 
 **Might:** A characteristic that represents a creature's strength and brawn.
 
 **Montage Test:** Heroes making a series of different tests that represent them working together over time to accomplish a common goal.
 
-**Motivation:** A negotiation trait an NPC has that determines what type of arguments could more easily sway them.
+**Motivation:** A [negotiation](scc:mcdm.heroes.v1/chapter/negotiation) trait an NPC has that determines what type of arguments could more easily sway them.
 
 **Mounted Combat:** Special rules that apply when one creature rides another into battle.
 
@@ -383,13 +383,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Natural Roll:** The result of a power roll before adding any modifiers.
 
-**Negotiation:** A social interaction encounter where the heroes attempt to make a deal with an NPC.
+**[Negotiation](scc:mcdm.heroes.v1/chapter/negotiation):** A social interaction encounter where the heroes attempt to make a deal with an NPC.
 
 **No Action:** Denoting a very simple activity that can be done anytime during combat, and generally without limit. A creature can undertake "no action" activities even when it isn't their turn.
 
 **NPC:** A nonplayer character, usually created and run by the Director.
 
-**Null:** A class for a hero who is an unarmed psionic warrior with the ability to dampen supernatural effects.
+**[Null](scc:mcdm.heroes.v1/class/null):** A class for a hero who is an unarmed psionic warrior with the ability to dampen supernatural effects.
 
 **Object:** Inanimate matter, including walls, rocks, vehicles, and corpses (the kind that can't move around and bite you), as well as living non-creatures such as plants.
 
@@ -399,21 +399,21 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Opposed Power Roll:** Two creatures with opposed goals each make a test to see who wins out. The test totals are compared, and the higher total succeeds while the lower fails.
 
-**Orc:** An ancestry of people with magic blood in their glowing veins.
+**[Orc](scc:mcdm.heroes.v1/ancestry/orc):** An ancestry of people with magic blood in their glowing veins.
 
-**Orden:** The prime manifold, where humans, elves, dwarves, and orcs share a world with dragons, goblins, kobolds, and dozens of other speaking peoples.
+**Orden:** The prime manifold, where [humans](scc:mcdm.heroes.v1/ancestry/human), elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) share a world with dragons, goblins, kobolds, and dozens of other speaking peoples.
 
-**Patience:** A negotiation statistic that determines how much time and effort an NPC is willing to expend listening to and arguing with the heroes.
+**Patience:** A [negotiation](scc:mcdm.heroes.v1/chapter/negotiation) statistic that determines how much time and effort an NPC is willing to expend listening to and arguing with the heroes.
 
 **Penalty:** A negative number that decreases a creature's statistics or the roll of a die.
 
-**Perk:** A feature available to all heroes that helps with exploration, investigation, negotiation, and more.
+**[Perk](scc:mcdm.heroes.v1/chapter/perks):** A feature available to all heroes that helps with exploration, investigation, [negotiation](scc:mcdm.heroes.v1/chapter/negotiation), and more.
 
-**Piety:** The conduit's Heroic Resource.
+**Piety:** The [conduit's](scc:mcdm.heroes.v1/class/conduit) Heroic Resource.
 
-**Pitfall:** A negotiation trait an NPC has that determines what type of arguments will not work on them.
+**Pitfall:** A [negotiation](scc:mcdm.heroes.v1/chapter/negotiation) trait an NPC has that determines what type of arguments will not work on them.
 
-**Polder:** An ancestry of short folk who can slip into shadows to hide.
+**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** An ancestry of short folk who can slip into shadows to hide.
 
 **Potency:** A value that determines if a target has a characteristic low enough to be affected by an effect.
 
@@ -421,15 +421,15 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Presence:** A characteristic that represents a creature's force of personality.
 
-**Project Event:** An event that can occur when a hero undertakes a project roll for a downtime project.
+**Project Event:** An event that can occur when a hero undertakes a project roll for a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
-**Project Goal:** The number of project points that must be accrued to complete a downtime project, providing a rough representation of the effort required to complete the project.
+**Project Goal:** The number of project points that must be accrued to complete a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects), providing a rough representation of the effort required to complete the project.
 
 **Project Points:** Points earned by a hero toward a project goal.
 
-**Project Roll:** A special test a hero makes while working on a downtime project during a respite. A project roll doesn't have any tier outcome. Instead, its total is earned as project points toward completing the project.
+**Project Roll:** A special test a hero makes while working on a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) during a respite. A project roll doesn't have any tier outcome. Instead, its total is earned as project points toward completing the project.
 
-**Project Source:** Lore that must be obtained before a downtime project can be started.
+**Project Source:** Lore that must be obtained before a [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) can be started.
 
 **Prone:** A condition that causes a creature to become flat on the ground. Strikes made by a prone creature take a bane, and melee abilities used against a prone creature gain an edge.
 
@@ -451,9 +451,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Renown:** A measure of a hero's fame.
 
-**Research Project:** A downtime project undertaken to discover lore or learn something new.
+**Research Project:** A [downtime project](scc:mcdm.heroes.v1/chapter/downtime-projects) undertaken to discover lore or learn something new.
 
-**Respite:** A 24-hour period of focused rest that allows heroes to regain Stamina and Recoveries, and to work on downtime projects.
+**Respite:** A 24-hour period of focused rest that allows heroes to regain Stamina and Recoveries, and to work on [downtime projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
 **Respite Activity:** An activity that can be undertaken during a respite. A hero can take one respite activity per respite.
 
@@ -461,17 +461,17 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Retainer:** A follower who adventures alongside a hero.
 
-**Revenant:** An undead ancestry. Revenants return to the mortal world to complete unfinished business they had in life.
+**[Revenant](scc:mcdm.heroes.v1/ancestry/revenant):** An undead ancestry. [Revenants](scc:mcdm.heroes.v1/ancestry/revenant) return to the mortal world to complete unfinished business they had in life.
 
-**Reward:** A helpful boon granted by succeeding on a test, gained in addition to the creature making the test accomplishing what they set out to do. A creature always gains a reward on a test that is a natural 19 or 20.
+**[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a test, gained in addition to the creature making the test accomplishing what they set out to do. A creature always gains a reward on a test that is a natural 19 or 20.
 
 **Ride Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's speed, taking the rider with them.
 
 **Rolled Damage:** Variable damage determined by the outcome of an ability roll. Effects that grant bonuses to rolled damage have no effect on damage that is dealt without an ability roll.
 
-**Sage:** A follower who undertakes research projects for a hero.
+<!-- REVIEW: is this a game reference to the career, or the follower type? -->**[Sage](scc:mcdm.heroes.v1/career/sage):** A follower who undertakes research projects for a hero.<!-- /REVIEW -->
 
-**Saint:** A legendary disciple of a god who can grant divine power to creatures who venerate them.
+**Saint:** A legendary <!-- REVIEW: is this a game reference to the career? -->[disciple](scc:mcdm.heroes.v1/career/disciple)<!-- /REVIEW --> of a god who can grant divine power to creatures who venerate them.
 
 **Save Ends:** An effect noted as "(save ends)" lasts until the creature affected by it succeeds on a saving throw, or until a combat encounter ends.
 
@@ -479,7 +479,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Search for Hidden Creatures Maneuver:** A maneuver that allows a creature to make a test to locate nearby creatures who are hidden from them.
 
-**Shadow:** A class for a hero who is an expert infiltrator and thief utilizing magic.
+**[Shadow](scc:mcdm.heroes.v1/class/shadow):** A class for a hero who is an expert infiltrator and thief utilizing magic.
 
 **Shift:** A movement mode that doesn't provoke opportunity attacks. Whenever a rule allows a creature to shift, they can choose to make a regular move of the same number of squares instead.
 
@@ -489,7 +489,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Size:** An indication of a creature's space and their overall weight and height relative to other creatures.
 
-**Skill:** Special knowledge or training that can be applied to a test. When a skill applies to a test, it grants a +2 bonus to the power roll.
+**[Skill](scc:mcdm.heroes.v1/chapter/skills):** Special knowledge or training that can be applied to a test. When a skill applies to a test, it grants a +2 bonus to the power roll.
 
 **Slide:** A form of forced movement that slides a target in any direction, moving them along any horizontal line.
 
@@ -507,7 +507,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Stand Up Maneuver:** A maneuver that a prone creature can use to end the prone condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent prone creature to end the prone condition on them.
 
-**Strained:** A state the talent enters when they have clarity below 0, and which effects their abilities.
+**Strained:** A state the [talent](scc:mcdm.heroes.v1/class/talent) enters when they have clarity below 0, and which effects their abilities.
 
 **Strike:** An ability that deals damage to or imposes an effect on specific chosen targets. (A strike is different this way than an ability that produces an area of effect.)
 
@@ -523,9 +523,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Swim:** A movement mode that allows a creature to swim without using additional squares of movement. A creature without "swim" in their speed entry or the temporary ability to swim must use 2 squares of movement to swim 1 square.
 
-**Tactician:** A class for a hero who is a brilliant strategist and weapons expert.
+**[Tactician](scc:mcdm.heroes.v1/class/tactician):** A class for a hero who is a brilliant strategist and weapons expert.
 
-**Talent:** A class for a hero who is a master of psionics.
+**[Talent](scc:mcdm.heroes.v1/class/talent):** A class for a hero who is a master of psionics.
 
 **Taunted:** A condition that causes a creature to have a double bane on ability rolls that don't target the creature or effect that taunted them.
 
@@ -535,7 +535,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Temporary Stamina:** An additional pool of Stamina that decreases first when a creature takes damage, and which disappears at the end of an encounter if not already lost.
 
-**Test:** A power roll made by a creature to affect or interact with the world around them that doesn't use an ability. Skills can be applied to tests.
+**[Test](scc:mcdm.heroes.v1/chapter/tests):** A power roll made by a creature to affect or interact with the world around them that doesn't use an ability. [Skills](scc:mcdm.heroes.v1/chapter/skills) can be applied to tests.
 
 **Tier Outcome:** The three possible effects for a power roll, based on the total of the power roll.
 
@@ -545,19 +545,19 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Tier 3:** The best tier outcome of a power roll (other than a critical hit), achieved when the total of the roll is 17 or higher.
 
-**Title:** A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.
+**[Title](scc:mcdm.heroes.v1/chapter/titles):** A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.
 
-**Time Raider:** An ancestry of four-armed psionic folk with ocular sensors instead of eyes.
+**[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider):** An ancestry of four-armed psionic folk with ocular sensors instead of eyes.
 
 **Timescape:** A multiverse of worlds, also known as manifolds, connected by the Sea of Stars.
 
-**Treasure:** A piece of supernatural equipment, from weapons and armor to implements and more.
+**[Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A piece of supernatural equipment, from weapons and armor to implements and more.
 
 **Triggered Action:** An action a creature can use on any turn, including their own, but only when a specific trigger occurs. Each creature can use one triggered action per round.
 
-**Trinket:** A treasure that can be used at will without any reduction in its power.
+**Trinket:** A [treasure](scc:mcdm.heroes.v1/chapter/treasures) that can be used at will without any reduction in its power.
 
-**Troubadour:** A class for a hero who is a storytelling swashbuckler.
+**[Troubadour](scc:mcdm.heroes.v1/class/troubadour):** A class for a hero who is a storytelling swashbuckler.
 
 **Turn:** A creature's turn in combat consists of a main action, a maneuver, and a move action.
 
@@ -583,9 +583,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Winded:** A state a creature enters when their Stamina is equal to or less than their winded value (half their Stamina maximum).
 
-**Wode Elf:** A fey ancestry in tune with magical forests.
+**[Wode Elf](scc:mcdm.heroes.v1/ancestry/wode-elf):** A fey ancestry in tune with magical forests.
 
-**Wrath:** The censor's Heroic Resource.
+**Wrath:** The [censor's](scc:mcdm.heroes.v1/class/censor) Heroic Resource.
 
 <!-- @type: chapter | @id: the-basics -->
 # The Basics
