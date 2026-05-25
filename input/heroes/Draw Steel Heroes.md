@@ -15,15 +15,15 @@ That covers a lot! So let's get specific and talk about what this game is, and w
 
 This game will absolutely feature dungeons. Ancient underground complexes filled with ravenous undead or creeping oozes. But it isn't a dungeon crawler. It's not about "clearing rooms." It's not a survival horror game where you must track light and food and the weight of every object you carry.
 
-You can fight monsters in a dungeon, but the game is not *about* dungeons. Lots of games focus on that gameplay and do it really well! Like *[Shadowdark](https://mcdm.gg/ShadowDark)*.
+You can fight monsters in a dungeon, but the game is not *about* dungeons. Lots of games focus on that gameplay and do it really well! Like *\1*.
 
 It's not a wilderness exploration game, aka a hex crawl. It's not about surviving in extreme weather, getting lost, or trying to navigate your way back to safety.
 
-You can fight monsters in the wilderness, even run a whole campaign in the wilderness, but this game is not about the wilderness. We love games that focus on that fantasy, like *[Forbidden Lands](https://mcdm.gg/ForbiddenLands)*.
+You can fight monsters in the wilderness, even run a whole campaign in the wilderness, but this game is not about the wilderness. We love games that focus on that fantasy, like *\1*.
 
-You can run adventures with horror themes, but this is not a horror roleplaying game like *[Call of Cthulhu](https://mcdm.gg/CallOfCthulhu)*. Your sessions can and will feature comedy, but this isn't a comedy RPG like *[Paranoia](https://mcdm.gg/Paranoia)*.
+You can run adventures with horror themes, but this is not a horror roleplaying game like *\1*. Your sessions can and will feature comedy, but this isn't a comedy RPG like *\1*.
 
-*Draw Steel* is definitely a game about creating amazing stories in which the heroes fight monsters and villains using strategy and tactics. *Draw Steel* has a lot of other tools! But fighting monsters is sort of non-negotiable. If you're looking for a game featuring extraordinary heroes overcoming dramatic villains without the focus on tactical combat, maybe check out *[Daggerheart](https://mcdm.gg/DaggerHeart)*! Just right next door alphabet-wise!
+*Draw Steel* is definitely a game about creating amazing stories in which the heroes fight monsters and villains using strategy and tactics. *Draw Steel* has a lot of other tools! But fighting monsters is sort of non-negotiable. If you're looking for a game featuring extraordinary heroes overcoming dramatic villains without the focus on tactical combat, maybe check out *\1*! Just right next door alphabet-wise!
 
 We genuinely love all those games. But we love them because they focus on specific genres of gameplay and deliver on them really well.
 
@@ -55,7 +55,7 @@ You learn which characters are the "squishies" who need to be protected or heale
 
 Our game is *definitely* about heroism! For us, this means a couple of things. It means we don't assume your character is primarily motivated by greed. They might be! But we don't *assume* that. Instead we assume you're going to do the right thing. It might take some convincing, and there might be some reluctant heroes in your party, but that's part of the fun!
 
-You should absolutely be able to run a *[Chain of Acheron](https://mcdm.gg/TheChainPlaylist)*-style campaign where the heroes are hard-bitten mercenaries in a morally ambiguous world. But that's not the baseline assumption. The fiction and adventures that inspire us feature epic villains trying to remake the world in their image, and the dashing, unyielding heroes who strive against them even in the face of impossible odds.
+You should absolutely be able to run a *\1*-style campaign where the heroes are hard-bitten mercenaries in a morally ambiguous world. But that's not the baseline assumption. The fiction and adventures that inspire us feature epic villains trying to remake the world in their image, and the dashing, unyielding heroes who strive against them even in the face of impossible odds.
 
 So that's one component of the heroic keyword. But another component, equally important, is what kinds of things happen "onscreen," so to speak. This is closely related to the cinematic keyword.
 
@@ -95,12 +95,12 @@ For us, fantasy includes magic, like wizards casting spells, and psionics, the n
 
 We know that many folks are coming to this game having only experienced d20 fantasy RPGs. This section details a few key distinctions between this game and typical d20 fantasy that you'll notice right away. These aren't the only distinctions, but they're the most obvious.
 
-- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the conduit is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're dying to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
+- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the conduit is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're dying to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the \1 and \1 sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
 - **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent characteristic bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your Stamina and Recoveries—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
 - **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the Tests chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to characteristics. If you're trying to lose someone in a crowd, you can use Presence—the characteristic that represents your character's force of personality—to try to hide! Why not?
-- **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *[MCDM Discord](https://mcdm.gg/Discord)* and ask. We've got tons of awesome community members ready to help!
+- **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *\1* and ask. We've got tons of awesome community members ready to help!
 - **We don't expect you to do everything to the letter.** This is actually one thing *Draw Steel* does have in common with d20 fantasy. This is a big book of rules! Don't stress if you need to look something up or make a ruling about an edge case on the fly. If everyone's having fun, you're doing it right.
 
 ## Glossary Index
@@ -353,7 +353,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Main Action:** An activity used to accomplish the most impactful endeavors a creature can accomplish during combat. A creature can also use their main action to use a maneuver or move action instead.
 
-**Malice:** A combat resource the Director can spend to activate specific monster features. See *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*
+**Malice:** A combat resource the Director can spend to activate specific monster features. See *\1*
 
 **Maneuver:** An activity that requires less focus and exertion during combat than a main action.
 
@@ -660,7 +660,7 @@ Presence (P) represents force of personality. A creature's capacity to lie to a 
 
 #### Characteristic Scores
 
-Each characteristic has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that characteristic. A baby bunny rabbit would have a Might score of −5, while an ancient dragon would have a Might score of 5. The average human has a score of 0 in all their characteristics. Characteristic scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see [Power Rolls](#page-18-0) below).
+Each characteristic has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that characteristic. A baby bunny rabbit would have a Might score of −5, while an ancient dragon would have a Might score of 5. The average human has a score of 0 in all their characteristics. Characteristic scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see \1 below).
 
 ### Dice
 
@@ -686,9 +686,9 @@ Whenever a hero or other creature in the game attempts a task with an uncertain 
 
 #### Types of Power Rolls
 
-The game uses two types of power rolls. An **ability roll** is used when you use certain abilities to determine their impact. For instance, if a fury uses their Brutal Slam ability to strike an enemy, their ability roll determines how much damage the enemy takes and how far back the enemy is pushed. See [Abilities](#page-83-0) for more information.
+The game uses two types of power rolls. An **ability roll** is used when you use certain abilities to determine their impact. For instance, if a fury uses their Brutal Slam ability to strike an enemy, their ability roll determines how much damage the enemy takes and how far back the enemy is pushed. See \1 for more information.
 
-A **test** is a power roll you make outside of using your abilities to affect or interact with the world around you. A tactician might not have an ability that lets them climb up the face of a cliff, so climbing is an activity they can attempt with a test. An elementalist doesn't have an ability that lets them automatically intimidate a cultist into backing down from a fight, but they can make a test if they want to try. See [Tests](#page-263-0) for more information.
+A **test** is a power roll you make outside of using your abilities to affect or interact with the world around you. A tactician might not have an ability that lets them climb up the face of a cliff, so climbing is an activity they can attempt with a test. An elementalist doesn't have an ability that lets them automatically intimidate a cultist into backing down from a fight, but they can make a test if they want to try. See \1 for more information.
 
 > **Sapient Creatures**
 >
@@ -696,7 +696,7 @@ A **test** is a power roll you make outside of using your abilities to affect or
 
 #### Making a Power Roll
 
-When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your characteristics. The characteristic you add depends on the kind of roll you're making, as outlined in [Abilities](#page-83-0) and [Tests](#page-263-0).
+When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your characteristics. The characteristic you add depends on the kind of roll you're making, as outlined in \1 and \1.
 
 ##### Power Roll Outcomes
 
@@ -706,19 +706,19 @@ The total of a power roll determines your outcome tier—three levels that deter
 - **Tier 2:** If your power roll total is **12 to 16**, it is a tier 2 outcome. This is the average outcome of many power rolls, especially for heroes who are 1st level. When using an ability, a tier 2 outcome means that what you do has a moderate impact. With this outcome, a strike ability deals a decent amount of damage and has an effect that briefly helps allies or hinders enemies. For a test, a tier 2 outcome means you might succeed at what you set out to do—though depending on the difficulty, success might have a cost.
 - **Tier 3:** If your power roll total is **17 or higher**, it is a tier 3 outcome. This is the best outcome a power roll can have. When using an ability, a tier 3 outcome means you deliver the maximum impact possible. With this outcome, a strike ability deals a lot of damage and has a powerful or lasting effect on enemies or allies. For a test, a tier 3 outcome means you succeed at what you set out to do. If the test has an easy difficulty, you also get a little something extra in addition to your success.
 
-The specific outcome of any power roll is determined by the effect or ability that requires the roll (see [Abilities](#page-83-0)) or the rules for tests (see [Tests](#page-263-0)).
+The specific outcome of any power roll is determined by the effect or ability that requires the roll (see \1) or the rules for tests (see \1).
 
 ##### Downgrade a Power Roll
 
 Whenever you make a power roll, you can downgrade it to select the outcome of a lower tier. For instance, if an ability has a tier 3 outcome that lets you impose the restrained condition on a creature, but the tier 2 outcome for that ability lets you impose the slowed condition, you can use the tier 2 outcome if you would rather have the creature slowed than restrained.
 
-If you downgrade a critical hit, you still get the extra action benefit of the critical hit (see [Critical Hit](#page-89-0) in [Classes](#page-83-2)).
+If you downgrade a critical hit, you still get the extra action benefit of the critical hit (see \1 in \1).
 
 ##### Natural Roll
 
 The total of your power roll before your characteristic or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your characteristic, this is called rolling a natural 20.
 
-When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a critical hit (see [Critical Hit](#page-89-0) in [Classes](#page-83-2)).
+When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a critical hit (see \1 in \1).
 
 #### Edges and Banes
 
@@ -758,7 +758,7 @@ We also liked capping edges and banes at two because it keeps play quick. It's n
 
 While edges and banes cover most circumstantial effects that can have an impact on a power roll, a few rules add numeric bonuses or penalties to power rolls. Bonus and penalty values are specified in the rules that impose them, and are calculated independently of edges and banes, and before edges and banes are factored into a power roll. There is no limit to the number of bonuses or penalties that can apply to a power roll, and bonuses and penalties always add together.
 
-Though it might sound as if the math with bonuses and penalties can get confusing, fear not! Bonuses and penalties are rare except in the case of skills, which appear on your character sheet (see [Skills](#page-268-0) for more information).
+Though it might sound as if the math with bonuses and penalties can get confusing, fear not! Bonuses and penalties are rare except in the case of skills, which appear on your character sheet (see \1 for more information).
 
 #### Automatic Tier Outcomes
 
@@ -778,13 +778,13 @@ At the start of a new game session, the heroes have a number of hero tokens equa
 
 Heroes can earn more tokens through play by taking big risks to save others. A hero who leaps off a cliff to reach the bottom and aid a friend, who crosses a burning bridge to save a stray cat, or who wagers their most prized treasure as part of a negotiation to get shelter for a group of refugees might earn a hero token for the group. The Director has the final say regarding which heroic acts earn hero tokens.
 
-Players can also be awarded hero tokens as part of a test's outcome when they succeed on the test with a reward (see [Tests](#page-263-0)).
+Players can also be awarded hero tokens as part of a test's outcome when they succeed on the test with a reward (see \1).
 
 #### Spending Hero Tokens
 
 Whenever hero tokens are available, you can spend them in the following ways:
 
-- You can spend a hero token to gain 2 surges, allowing you to increase the damage or potency of an ability. (See [Surges](#page-89-2) in [Classes](#page-83-2).)
+- You can spend a hero token to gain 2 surges, allowing you to increase the damage or potency of an ability. (See \1 in \1.)
 - You can spend a hero token when you fail a saving throw, letting you succeed on the save instead.
 - You can spend a hero token to reroll a test. You must use the new roll.
 - You can spend 2 hero tokens on your turn or when you take damage (no action required) to regain Stamina equal to your recovery value before taking the damage.
@@ -849,13 +849,13 @@ When your hero successfully overcomes a big challenge that doesn't involve comba
 
 ##### Victories Reset
 
-Whenever you finish a respite (see [Respite](#page-21-4) below), your Victories are converted into Experience.
+Whenever you finish a respite (see \1 below), your Victories are converted into Experience.
 
 #### Experience
 
 Victories temporarily increase a hero's power during an adventure, but Experience (abbreviated "XP") permanently improves their capabilities. Each time you finish a respite (see below), you gain XP equal to your Victories, then your Victories reset to 0. In other words, your Victories are converted to XP when you finish a respite.
 
-For more information on how XP increases your hero's power, see [Heroic Advancement](#page-32-1) in [Making a Hero](#page-29-1).
+For more information on how XP increases your hero's power, see \1 in \1.
 
 #### Heroic Resources
 
@@ -865,13 +865,13 @@ Your hero's class description has more information about how to use your Heroic 
 
 #### Recoveries
 
-Recoveries represent the number of times your hero can take a breather and keep fighting. Spending Recoveries lets you regain Stamina—the measure of any creature's physical vitality and capacity to shrug off or avoid damage (see [Stamina](#page-291-0) in [Combat](#page-279-4)). Running out of Recoveries means your hero has reached their uttermost limit.
+Recoveries represent the number of times your hero can take a breather and keep fighting. Spending Recoveries lets you regain Stamina—the measure of any creature's physical vitality and capacity to shrug off or avoid damage (see \1 in \1). Running out of Recoveries means your hero has reached their uttermost limit.
 
 When you spend a Recovery, you regain Stamina equal to your **recovery value**, which is one-third your Stamina maximum. You can spend your Recoveries with a special maneuver (see below), or you might do so with a little supernatural help from a conduit, a boost of adrenaline from an allied tactician, or inspiration from your party's troubadour.
 
 ##### Spending Recoveries
 
-During combat encounters and similarly dangerous situations when time is tracked in rounds (see [Combat](#page-279-4)), you can use the Catch Breath maneuver to regain Stamina. (See [Catch Breath](#page-287-2) in [Maneuvers](#page-287-0) for more information.) Some heroes have abilities that allow them or their allies to spend more Recoveries without using the Catch Breath maneuver.
+During combat encounters and similarly dangerous situations when time is tracked in rounds (see \1), you can use the Catch Breath maneuver to regain Stamina. (See \1 in \1 for more information.) Some heroes have abilities that allow them or their allies to spend more Recoveries without using the Catch Breath maneuver.
 
 Outside of combat and other dangerous situations, you can spend Recoveries freely.
 
@@ -881,7 +881,7 @@ You regain all lost Recoveries when you finish a respite (see below).
 
 #### Respite
 
-A respite is a focused period of rest and recuperation that allows heroes to regain Stamina and Recoveries. During a respite, you must spend 24 hours uninterrupted and doing nothing but sleeping, eating, dressing your wounds, and recuperating. You can also undertake one respite activity, such as making a project roll (see [Downtime Projects](#page-307-2)) or changing your kit (see [Kits](#page-239-0)).
+A respite is a focused period of rest and recuperation that allows heroes to regain Stamina and Recoveries. During a respite, you must spend 24 hours uninterrupted and doing nothing but sleeping, eating, dressing your wounds, and recuperating. You can also undertake one respite activity, such as making a project roll (see \1) or changing your kit (see \1).
 
 After 24 hours, your respite ends. When you finish a respite, you regain all your Recoveries and Stamina, and your Victories convert to Experience. You can take as many respites as you like in a row to keep accomplishing respite activities. Just keep in mind that while you're resting, your enemies are still scheming and carrying out their dastardly plans.
 
@@ -1051,7 +1051,7 @@ If you're a player, ask your Director about the setting where the game takes pla
 
 > **What's Next? Find Out on Patreon**
 >
-> While this book and *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)* are both chock-full of character options and adventure ideas that could keep you playing *Draw Steel* for years, some folks want even more classes, ancestries, monsters, treasures, and encounters. You can find out what we're developing next, get a preview of that content, and read blog posts about the development of the game by joining the MCDM Patreon at *[mcdm.gg/Patreon](https://mcdm.gg/Patreon)*.
+> While this book and *\1* are both chock-full of character options and adventure ideas that could keep you playing *Draw Steel* for years, some folks want even more classes, ancestries, monsters, treasures, and encounters. You can find out what we're developing next, get a preview of that content, and read blog posts about the development of the game by joining the MCDM Patreon at *\1*.
 
 <!-- @type: chapter | @id: making-a-hero -->
 # Making a Hero
@@ -1064,9 +1064,9 @@ The hero you create will be roleplayed by you. Often when referring to your hero
 
 Getting together with your friends to make characters can be a lot of fun. Many groups spend most of their first session talking about the campaign's story, making heroes, and going over expectations for the game. It's a great way to kick off a long-term campaign.
 
-The Director should make an agenda for a campaign's first session often called "session zero." [Chapter 15: For the Director](#page-387-0) has all the information a Director needs to help organize a successful first session, which can include any of the following events:
+The Director should make an agenda for a campaign's first session often called "session zero." \1 has all the information a Director needs to help organize a successful first session, which can include any of the following events:
 
-- The Director and players talk about the safety tools they want to employ at the game table (whether physical or virtual), so that everyone has a good time and understands which topics should be avoided in the game's narrative and which should be embraced. For more information, check out the MCDM Tabletop Safety Toolkit at *[mcdm.gg/SafetyToolkit](http://mcdm.gg/SafetyToolkit)*, which includes advice for running a successful first session.
+- The Director and players talk about the safety tools they want to employ at the game table (whether physical or virtual), so that everyone has a good time and understands which topics should be avoided in the game's narrative and which should be embraced. For more information, check out the MCDM Tabletop Safety Toolkit at *\1*, which includes advice for running a successful first session.
 - The Director discusses the campaign's world and the major story themes they want to introduce into the game. This often takes the form of a campaign pitch the Director presents to the players.
 - The Director should tell the players if any options are limited or rare in their campaign. For example, some Directors don't want psionics to appear in their game worlds, so they might decide that heroes can't be nulls or talents. Another campaign might be grounded in more typical medieval fantasy and not have any memonek or time raiders, or those ancestries might be exceedingly rare. In the latter case, players should know that their memonek or time raider heroes are likely to get a lot of questions from curious NPCs.
 - The players get a chance to tell the Director what they would like to experience in the campaign. This can include anything from "I'd love to play out some chase scenes!" to "I want to explore themes of loss and grief." These wishes should be starting points for a conversation. If not all players are comfortable with certain themes or content requested by other players, then session zero is a great time to discuss that and come to a consensus about what everyone wants out of the game.
@@ -1109,15 +1109,15 @@ The first thing you should do is think about the kind of hero you want to make. 
 
 #### 2. Ancestry
 
-Choose your hero's humanoid ancestry from among the range of ancestries available in the game—devil, dragon knight, dwarf, wode elf, high elf, hakaan, human, memonek, orc, polder, revenant, or time raider. Future supplements will introduce additional ancestries you can choose from. See [Chapter 3: Ancestries](#page-35-0) for more information.
+Choose your hero's humanoid ancestry from among the range of ancestries available in the game—devil, dragon knight, dwarf, wode elf, high elf, hakaan, human, memonek, orc, polder, revenant, or time raider. Future supplements will introduce additional ancestries you can choose from. See \1 for more information.
 
 #### 3. Culture
 
-Choose or create your hero's culture. Although ancestry gives your hero any number of physiological benefits, your culture describes the community that raised you and gives you languages and skills. See [Culture](#page-67-1) in [Chapter 4: Background](#page-67-0) for more information.
+Choose or create your hero's culture. Although ancestry gives your hero any number of physiological benefits, your culture describes the community that raised you and gives you languages and skills. See \1 in \1 for more information.
 
 > **Choosing Skills**
 >
-> This game has lots of skills (as detailed in [Skills](#page-268-0) in Chapter 9: Tests), and lots of opportunities during character creation to gain them. We recommend recording a list of all the skills you might choose from the different steps of the character creation process, then making your choices at the end of that process rather than flipping back and forth through the book.
+> This game has lots of skills (as detailed in \1 in Chapter 9: Tests), and lots of opportunities during character creation to gain them. We recommend recording a list of all the skills you might choose from the different steps of the character creation process, then making your choices at the end of that process rather than flipping back and forth through the book.
 
 > If you gain the same specific skill from two different sources (for instance, from a career and a class), you can pick a different skill from any skill group.
 
@@ -1268,7 +1268,7 @@ Fantastic peoples inhabit the worlds of *Draw Steel*. Among them are devils, dwa
 
 Your hero is one of these folks! The fantastic ancestry you choose bestows benefits that come from your anatomy and physiology. This choice doesn't grant you cultural benefits, such as crafting or lore skills, though. While many game settings have cultures made of mostly one ancestry, other cultures and worlds have a cosmopolitan mix of peoples.
 
-In *Draw Steel*, ancestry describes how you were born. Culture (part of [Chapter 4: Background](#page-67-0)) describes how you grew up. If you want to be a wode elf who was raised in a forest among other wode elves, you can do that! If you want to play a wode elf who was raised in an underground city of dwarves, humans, and orcs, you can do that too!
+In *Draw Steel*, ancestry describes how you were born. Culture (part of \1) describes how you grew up. If you want to be a wode elf who was raised in a forest among other wode elves, you can do that! If you want to play a wode elf who was raised in an underground city of dwarves, humans, and orcs, you can do that too!
 
 This chapter details twelve ancestries for the game:
 
@@ -1300,17 +1300,17 @@ This chapter details twelve ancestries for the game:
 >
 > The rules for using ancestries refer to lots of other parts of the game. You can find information on specific topics as follows:
 >
-> Edges and banes, Recoveries, respites: [Chapter 1: The Basics](#page-17-3)
+> Edges and banes, Recoveries, respites: \1
 >
-> Languages: [Chapter 4: Background](#page-67-0)
+> Languages: \1
 >
-> Abilities, conditions, potencies, saving throws, surges: [Chapter 5: Classes](#page-83-2)
+> Abilities, conditions, potencies, saving throws, surges: \1
 >
 > Skills, tests: Chapter 9: Tests
 >
-> Crafting projects: [Chapter 12: Downtime Projects](#page-307-2)
+> Crafting projects: \1
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and forced movement, winded: [Chapter 10: Combat](#page-288-0)
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and forced movement, winded: \1
 
 ### On the Origin of Species
 
@@ -1512,7 +1512,7 @@ Humans have the potential to live a little longer on Orden than they do in the r
 
 Unless otherwise noted, a character of any of these ancestries is size 1M and has speed 5 and stability 0.
 
-Where an ancestry provides you with an ability, see [Abilities](#page-83-0) in [Chapter 5: Classes](#page-83-2) for details of the ability format.
+Where an ancestry provides you with an ability, see \1 in \1 for details of the ability format.
 
 <!-- @type: feature | @id: ancestry-traits -->
 ### Ancestry Traits
@@ -1637,7 +1637,7 @@ Devil heroes have access to the following traits.
 
 #### Signature Trait: Silver Tongue
 
-Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see [Skills](#page-268-0) in Chapter 9: Tests), and you gain an edge on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see [Chapter 11: Negotiation](#page-297-0)).
+Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see \1 in Chapter 9: Tests), and you gain an edge on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see \1).
 
 #### Purchased Devil Traits
 
@@ -3266,12 +3266,12 @@ Building a character is about more than adding up your stats, picking skills and
 The culture you choose or create grants you the following benefits:
 
 - You know the language of your culture, in addition to knowing Caelian.
-- From the environment, organization, and upbringing aspects of your culture, you gain access to skills. You can select one skill from each aspect's list of options. ([Skills](#page-268-0) in Chapter 9: Tests has information on the part skills play in the game.)
-- You gain an edge on tests made to recall lore about your culture, and on tests made to influence and interact with people of your culture. (See [Edges and Banes](#page-19-6) in [Chapter 1: The Basics](#page-17-3).)
+- From the environment, organization, and upbringing aspects of your culture, you gain access to skills. You can select one skill from each aspect's list of options. (\1 in Chapter 9: Tests has information on the part skills play in the game.)
+- You gain an edge on tests made to recall lore about your culture, and on tests made to influence and interact with people of your culture. (See \1 in \1.)
 
 #### Language
 
-Your culture's language aspect determines how the people of your culture communicate. [Languages in Orden](#page-70-0) below discusses the many languages of the world of Orden, including Caelian—the language of the fallen empire that once dominated that world.
+Your culture's language aspect determines how the people of your culture communicate. \1 below discusses the many languages of the world of Orden, including Caelian—the language of the fallen empire that once dominated that world.
 
 #### Environment
 
@@ -3508,29 +3508,29 @@ Your career describes what your life was before you became a hero. When you sele
 
 #### Skills
 
-Each career grants you two or three skills, detailed in the [Skills](#page-268-0) section of Chapter 9: Tests.
+Each career grants you two or three skills, detailed in the \1 section of Chapter 9: Tests.
 
 #### Languages
 
-Some careers allow you to learn extra languages, chosen from those available in [Languages in Orden](#page-70-0) above.
+Some careers allow you to learn extra languages, chosen from those available in \1 above.
 
 #### Renown
 
-Some careers increase your starting Renown score (from a base score of 0). See [Renown](#page-364-6) in [Chapter 13: Rewards](#page-327-1) for more information.
+Some careers increase your starting Renown score (from a base score of 0). See \1 in \1 for more information.
 
 #### Wealth
 
-Some careers increase your starting Wealth score (from a base score of 1). See [Wealth](#page-365-0) in [Chapter 13: Rewards](#page-327-1) for more information.
+Some careers increase your starting Wealth score (from a base score of 1). See \1 in \1 for more information.
 
 #### Project Points
 
-Some careers provide project points you can put toward crafting and research projects (see [Chapter 12: Downtime Projects](#page-307-2)). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
+Some careers provide project points you can put toward crafting and research projects (see \1). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
 
 At the Director's discretion, your career might also let you start the game with the materials needed for one or more projects, so you can immediately put your project points toward those projects—possibly before the adventure begins! This is especially useful for characters who are going on only one adventure. Otherwise, you can hold onto the points and spend them once you do start a project.
 
 #### Perk
 
-Your career provides you with a specific type of perk—a special feature that lets you customize your character, with a focus outside of combat. See [Chapter 7: Perks](#page-241-0) for more information.
+Your career provides you with a specific type of perk—a special feature that lets you customize your character, with a focus outside of combat. See \1 for more information.
 
 ### Inciting Incident
 
@@ -4094,7 +4094,7 @@ Each class also has a number of subclasses presented in this book. Your subclass
 
 ### Abilities
 
-Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including free strikes and maneuvers such as Grab and Knockback (see Maneuvers in [Chapter 10: Combat](#page-288-0)). But your class, ancestry (see [Chapter 3](#page-35-1)), kit ([Chapter 6](#page-231-1)), titles and treasures ([Chapter 13: Rewards](#page-327-1)), and other heroic options give you access to more powerful abilities that make your hero stand out.
+Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including free strikes and maneuvers such as Grab and Knockback (see Maneuvers in \1). But your class, ancestry (see \1), kit (\1), titles and treasures (\1), and other heroic options give you access to more powerful abilities that make your hero stand out.
 
 Abilities are presented in a special format that first describes the ability, then summarizes its mechanical details, and finally breaks out the ability's power roll (if it has one) and effects.
 
@@ -4140,11 +4140,11 @@ Each ability has one or more keywords that explain how the ability functions. Ke
 
 ##### Area
 
-Abilities with the Area keyword create an area of effect. Many area abilities deal damage to targets in their area, but such abilities are treated differently than strikes made against specific targets. (See the [It's Not All Strikes!](#page-84-4) sidebar, as well as [Strike](#page-84-3) and [Area Abilities](#page-85-1) below for more information.)
+Abilities with the Area keyword create an area of effect. Many area abilities deal damage to targets in their area, but such abilities are treated differently than strikes made against specific targets. (See the \1 sidebar, as well as \1 and \1 below for more information.)
 
 ##### Charge
 
-Abilities with the Charge keyword can be used with the Charge main action instead of a melee free strike. (The Charge main action is described in Main [Actions](#page-288-0) in [Chapter 10: Combat](#page-288-0).)
+Abilities with the Charge keyword can be used with the Charge main action instead of a melee free strike. (The Charge main action is described in Main \1 in \1.)
 
 ##### Magic
 
@@ -4152,7 +4152,7 @@ Abilities with the Magic keyword are used by characters who can cast spells, hav
 
 ##### Melee
 
-Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in [Imbue Treasure](#page-310-0) in [Chapter 12: Downtime Projects](#page-307-2).)
+Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in \1 in \1.)
 
 ##### Psionic
 
@@ -4174,11 +4174,11 @@ Abilities with the Strike keyword (often referred to simply as "strikes") deal d
 
 The Weapon keyword is used in abilities that must be used with a blade, a bow, or some other offensive weapon. Weapon abilities also include strikes creatures make with their own bodies, such as a character's unarmed strikes or a monster's punches, kicks, bites, tail slaps, and more.
 
-Your character's kit determines the types of weapons you wield and use with your weapon abilities (see [Chapter 6: Kits](#page-231-0)).
+Your character's kit determines the types of weapons you wield and use with your weapon abilities (see \1).
 
 #### Type
 
-Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a free maneuver, or a free triggered action (with all those terms explained in [Taking a Turn](#page-281-5) in [Chapter 10: Combat](#page-288-0)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
+Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a free maneuver, or a free triggered action (with all those terms explained in \1 in \1). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
 
 ##### Trigger
 
@@ -4196,13 +4196,13 @@ Melee abilities have a distance of "Melee X" and require you to make contact wit
 
 Ranged abilities have a distance of "Ranged X" and can be used to target creatures or objects too far away for you to make contact with. The number X is the maximum distance in squares at which a creature or object can be targeted by the ability. For instance, a distance of "Ranged 5" can be used to target creatures or objects within 5 squares of you.
 
-If you make a ranged strike while any enemy is adjacent to you (within 1 square), you have a bane on the strike's power roll. (See [Edges and Banes](#page-19-6) in [Chapter 1: The Basics](#page-17-3).)
+If you make a ranged strike while any enemy is adjacent to you (within 1 square), you have a bane on the strike's power roll. (See \1 in \1.)
 
 ##### Melee or Ranged
 
 Some abilities have a melee distance and a ranged distance. When you use such an ability, you choose whether to use it as a melee or a ranged ability.
 
-An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the Cloak and Dagger kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See [Chapter 6: Kits](#page-231-0).)
+An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the Cloak and Dagger kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See \1.)
 
 ##### Self
 
@@ -4256,7 +4256,7 @@ If an ability targets one or more creatures, it can affect creatures within the 
 
 ##### Object
 
-If an ability targets one or more objects, it can affect any object within the ability's distance or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. [\(Damage](#page-291-1) in [Chapter 10: Combat](#page-288-0) has information on damage immunity.)
+If an ability targets one or more objects, it can affect any object within the ability's distance or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \1 in \1 has information on damage immunity.)
 
 When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the talent's Minor Telekinesis ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
 
@@ -4284,7 +4284,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 
 #### Ability Roll
 
-If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. ([Chapter 1: The Basics](#page-17-3) talks about power rolls.)
+If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (\1 talks about power rolls.)
 
 Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the fury's Brutal Slam ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
 
@@ -4312,7 +4312,7 @@ The damage for these abilities increases at each echelon of play, since your cha
 
 Some abilities, including your free strikes, allow you to pick which characteristic score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your Might or your Agility to determine the damage.
 
-([Chapter 10: Combat](#page-288-0) has more information on damage.)
+(\1 has more information on damage.)
 
 ##### Abilities With Damage and Effects
 
@@ -4398,13 +4398,13 @@ This rule also applies to Director-controlled creatures who spend Malice on abil
 
 #### Critical Hit
 
-Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are dazed (see [Conditions](#page-91-2) below).
+Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are dazed (see \1 below).
 
 You can't score a critical hit with an ability roll made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an opportunity attack made as a triggered action or a signature ability used as a free triggered action with the assistance of the tactician's Strike Now ability can be critical hits.
 
 #### Roll Against Multiple Creatures
 
-When an ability has multiple targets (whether a strike with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have edges or banes (see [Chapter 1: The Basics](#page-17-3)) against some but not all of your targets, you might apply a different tier outcome to individual targets.
+When an ability has multiple targets (whether a strike with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have edges or banes (see \1) against some but not all of your targets, you might apply a different tier outcome to individual targets.
 
 For example, if you target three creatures with a strike ability and the power roll totals 11, each of the targets should be affected by the tier 1 outcome of the ability. However, if you gain an edge on strikes against one of the targets to add 2 to the power roll, your total against that target is 13, and they are affected by the tier 2 outcome of the ability.
 
@@ -4437,7 +4437,7 @@ The unique effects of different abilities are combined—effectively stacking on
 
 For example, the null's Null Field ability reduces the potencies of enemies within the field by 1. If two allied nulls each have their Null Field ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
 
-Different effects that impose the same condition (see [Conditions](#page-91-2) below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become weakened (imposing a bane on the target's power rolls), the target isn't weakened twice to impose a double bane on those rolls. A character who is grabbed by an enemy can't be grabbed again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
+Different effects that impose the same condition (see \1 below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become weakened (imposing a bane on the target's power rolls), the target isn't weakened twice to impose a double bane on those rolls. A character who is grabbed by an enemy can't be grabbed again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
 
 #### Ending Effects
 
@@ -4473,11 +4473,11 @@ If you're not sure whether you have line of effect to a target, imagine drawing 
 
 At the Director's discretion, flimsy or fragile obstructions such as a glass window or linen curtains don't block line of effect, and might be automatically broken or torn by strikes or other abilities used through them.
 
-If you use an ability that creates an environmental effect, such as a portal, you must have line of effect to the space where you create the environmental effect. If you want to create an area of effect in a specific area, you must have line of effect to at least one of the squares in that area. See [Area Abilities](#page-85-1) above.
+If you use an ability that creates an environmental effect, such as a portal, you must have line of effect to the space where you create the environmental effect. If you want to create an area of effect in a specific area, you must have line of effect to at least one of the squares in that area. See \1 above.
 
 #### Straight Line
 
-Whenever a creature moves or is subjected to forced movement—a push, pull, or slide (see [Chapter 10: Combat](#page-288-0))—that movement is typically in a straight line. Abilities that allow you to move or to force move another creature often talk about moving straight toward or away from a creature or an object. But even when movement must be in a straight line, it doesn't have to be a horizontal or vertical line on an encounter map. (See the [Straight Lines](#page-85-10) sidebar earlier in this chapter.)
+Whenever a creature moves or is subjected to forced movement—a push, pull, or slide (see \1)—that movement is typically in a straight line. Abilities that allow you to move or to force move another creature often talk about moving straight toward or away from a creature or an object. But even when movement must be in a straight line, it doesn't have to be a horizontal or vertical line on an encounter map. (See the \1 sidebar earlier in this chapter.)
 
 #### Ground and Ceiling
 
@@ -4505,11 +4505,11 @@ When a creature is frightened, any ability roll they make against the source of 
 
 ##### Grabbed
 
-A creature who is grabbed has speed 0, can't be force moved except by a creature, object, or effect that has them grabbed, can't use the Knockback maneuver (see [Maneuvers](#page-287-0) in [Chapter 10: Combat](#page-288-0)), and takes a bane on abilities that don't target the creature, object, or effect that has them grabbed. If a creature is grabbed by another creature and that creature moves, they bring the grabbed creature with them. If a creature's size is equal to or less than the size of a creature they have grabbed, their speed is halved while they have that creature grabbed.
+A creature who is grabbed has speed 0, can't be force moved except by a creature, object, or effect that has them grabbed, can't use the Knockback maneuver (see \1 in \1), and takes a bane on abilities that don't target the creature, object, or effect that has them grabbed. If a creature is grabbed by another creature and that creature moves, they bring the grabbed creature with them. If a creature's size is equal to or less than the size of a creature they have grabbed, their speed is halved while they have that creature grabbed.
 
 A creature who has another creature grabbed can use a maneuver to move the grabbed creature into an unoccupied space adjacent to them.
 
-A creature can release a creature they have grabbed at any time to end that condition (no action required). A grabbed creature can attempt to escape being grabbed using the Escape Grab maneuver (see [Chapter 10: Combat](#page-288-0)). If a grabbed creature teleports, or if either the grabbed creature or the creature grabbing them is force moved so that both creatures are not adjacent to each other, that creature is no longer grabbed.
+A creature can release a creature they have grabbed at any time to end that condition (no action required). A grabbed creature can attempt to escape being grabbed using the Escape Grab maneuver (see \1). If a grabbed creature teleports, or if either the grabbed creature or the creature grabbing them is force moved so that both creatures are not adjacent to each other, that creature is no longer grabbed.
 
 A creature can grab only creatures of their size or smaller. If a creature's Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
 
@@ -4519,7 +4519,7 @@ Unless otherwise indicated, a creature can grab only one creature at a time.
 
 While a creature is prone, they are flat on the ground, any strike they make takes a bane, and melee abilities used against them gain an edge. A prone creature must crawl to move along the ground, which costs 1 additional square of movement for every square crawled. A creature can't climb, jump, swim, or fly while prone. If they are climbing, flying, or jumping when knocked prone, they fall.
 
-Unless the ability or effect that imposed the prone condition says otherwise, a prone creature can stand up using the Stand Up maneuver (see [Maneuvers](#page-287-0) in [Chapter 10: Combat](#page-288-0)). A creature adjacent to a willing prone creature can likewise use the Stand Up maneuver to make that creature stand up.
+Unless the ability or effect that imposed the prone condition says otherwise, a prone creature can stand up using the Stand Up maneuver (see \1 in \1). A creature adjacent to a willing prone creature can likewise use the Stand Up maneuver to make that creature stand up.
 
 ##### Restrained
 
@@ -4584,7 +4584,7 @@ As a censor, you're at your best against the strongest foes. Your judgment terri
 
 **Recoveries:** 12
 
-**Skills:** Choose any two skills from the interpersonal or lore skill groups (see [Skills](#page-268-0) in Chapter 9: Tests). (*Quick Build:* Intimidate, Religion.)
+**Skills:** Choose any two skills from the interpersonal or lore skill groups (see \1 in Chapter 9: Tests). (*Quick Build:* Intimidate, Religion.)
 
 ###### Censor Advancement Table
 
@@ -4633,7 +4633,7 @@ The power you serve grants you a Heroic Resource called wrath, fueling your abil
 
 At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain wrath equal to your Victories. At the start of each of your turns during combat, you gain 2 wrath.
 
-Additionally, the first time each combat round that a creature judged by you (see [Judgment](#page-94-0) below) deals damage to you, you gain 1 wrath. The first time each combat round that you deal damage to a creature judged by you, you gain 1 wrath.
+Additionally, the first time each combat round that a creature judged by you (see \1 below) deals damage to you, you gain 1 wrath. The first time each combat round that you deal damage to a creature judged by you, you gain 1 wrath.
 
 You lose any remaining wrath at the end of the encounter.
 
@@ -4684,7 +4684,7 @@ The first time on a turn that you use your Judgment ability to judge a creature,
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See [Chapter 6: Kits](#page-231-0) for more information. (*Quick Build:* Warrior Priest.)
+You can use and gain the benefits of a kit. See \1 for more information. (*Quick Build:* Warrior Priest.)
 
 <!-- @type: feature -->
 #### My Life for Yours
@@ -4738,7 +4738,7 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 <!-- @type: feature -->
 ##### Blessing of Comprehension
 
-You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any crafting or research project (see [Chapter 12: Downtime Projects](#page-307-2)).
+You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any crafting or research project (see \1).
 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
@@ -5059,7 +5059,7 @@ As a 2nd-level censor, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See [Chapter 7: Perks](#page-241-0).
+You gain one interpersonal, lore, or supernatural perk of your choice. See \1.
 
 <!-- @type: feature -->
 #### 2nd-Level Order Features
@@ -5234,7 +5234,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice (see *\1*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Purifying Pacifism (7 Wrath)
@@ -5276,7 +5276,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See [Skills](#page-268-0) in Chapter 9: Tests.
+You gain one skill of your choice. See \1 in Chapter 9: Tests.
 
 <!-- @type: feature -->
 #### Wrath Beyond Wrath
@@ -5663,7 +5663,7 @@ Each time you use your My Life for Yours ability, you gain 1 wrath that can be s
 <!-- @type: feature -->
 ##### Gods' Library
 
-You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see [Chapter 12: Downtime Projects](#page-307-2)). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
+You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see \1). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
 
 <!-- @type: feature -->
 ##### Light of the Burning Sun
@@ -5982,7 +5982,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Templar
 
-You are the ultimate representation of your god's justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect (see [Domain Piety and Effects](#page-110-0) in the [Conduit](#page-108-0) section) associated with your chosen domain, or a domain you access with virtue (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.
+You are the ultimate representation of your god's justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect (see \1 in the \1 section) associated with your chosen domain, or a domain you access with virtue (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.
 
 Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
 
@@ -6110,7 +6110,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 
 ###### Knowledge Domain Piety and Effect
 
-- **Piety:** You gain 2 piety the first time in an encounter that the Director spends Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*).
+- **Piety:** You gain 2 piety the first time in an encounter that the Director spends Malice (see *\1*).
 - **Prayer Effect:** Choose up to five allies within 10 squares of you, or choose yourself instead of one ally. Each target gains 1 surge.
 
 ###### Life Domain Piety and Effect
@@ -9156,7 +9156,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > 
 > **Power Roll + Reason:**
 > 
-> - **≤11:** 7 fire damage; the Director loses 2 Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*)
+> - **≤11:** 7 fire damage; the Director loses 2 Malice (see *\1*)
 > - **12-16:** 10 fire damage; the Director loses 3 Malice
 > - **17+:** 15 fire damage; the Director loses 4 Malice
 > 
@@ -9783,7 +9783,7 @@ As a 2nd-level fury, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, exploration, or intrigue perk of your choice. See [Chapter 7: Perks](#dead-link).
+You gain one crafting, exploration, or intrigue perk of your choice. See \1.
 
 <!-- @type: feature -->
 #### 2nd-Level Aspect Feature
@@ -10996,7 +10996,7 @@ As your mastery of your body and tradition grows, it imbues you with a Heroic Re
 
 At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain discipline equal to your Victories. At the start of each of your turns during combat, you gain 2 discipline.
 
-Additionally, the first time each combat round that an enemy in the area of your Null Field ability (see below) uses a main action, you gain 1 discipline. The first time each combat round that the Director uses an ability that costs Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), you gain 1 discipline.
+Additionally, the first time each combat round that an enemy in the area of your Null Field ability (see below) uses a main action, you gain 1 discipline. The first time each combat round that the Director uses an ability that costs Malice (see *\1*), you gain 1 discipline.
 
 You lose any remaining discipline at the end of the encounter.
 
@@ -14553,7 +14553,7 @@ Choose one of the following abilities.
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** You gain 6 surges. Until the end of the encounter or until you are dying, whenever the Director spends Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), choose yourself or one ally within 10 squares. The chosen character gains 2 of their Heroic Resource.
+> **Effect:** You gain 6 surges. Until the end of the encounter or until you are dying, whenever the Director spends Malice (see *\1*), choose yourself or one ally within 10 squares. The chosen character gains 2 of their Heroic Resource.
 
 ##### 9th-Level Vanguard Abilities
 
@@ -15939,7 +15939,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > - **12-16:** 14 + P damage; P < AVERAGE, weakened (save ends)
 > - **17+:** 20 + P damage; P < STRONG, weakened and slowed (save ends)
 >
-> **Effect:** This ability gains an edge against a target with a soul (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*). After you make the power roll, you or one ally within distance have a double edge on the next power roll you make before the end of the encounter.
+> **Effect:** This ability gains an edge against a target with a soul (see *\1*). After you make the power roll, you or one ally within distance have a double edge on the next power roll you make before the end of the encounter.
 >
 > **Strained:** You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the power roll, you and the target each have damage weakness 5 (save ends).
 
@@ -16735,7 +16735,7 @@ You can give a rousing speech, invoke your inspirations, or lift your fellows' s
 
 Before you roll to gain drama at the start of your turn, you can make your appeal (no action required). If you do, your roll gains the following additional effects:
 
-- If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*).
+- If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice (see *\1*).
 - If the roll is a 2, you gain 1 Heroic Resource, which you can keep or give to an ally within the distance of your active performance. The Director gains 1 Malice.
 - If the roll is a 3, you gain 2 of a Heroic Resource, which you can distribute among yourself and any allies within the distance of your active performance.
 
@@ -17611,7 +17611,7 @@ The knight in shining armor. The warrior priest. The sniper. Censors, furies, sh
 
 ### Changing Your Kit
 
-Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a respite activity (see [Respite](#page-21-4) in [Chapter 1: The Basics](#page-17-3)).
+Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a respite activity (see \1 in \1).
 
 ### Kit Equipment
 
@@ -17695,7 +17695,7 @@ If you find a piece of equipment you really want to use that isn't part of your 
 
 ### Kit Bonuses and Traits
 
-A kit can grant a bonus to your Stamina, speed, and stability, as well as the damage and distance of your weapon abilities, including your free strikes. ([Abilities](#page-83-0) in [Chapter 5: Classes](#page-83-2) has information on abilities, ability keywords, and more.)
+A kit can grant a bonus to your Stamina, speed, and stability, as well as the damage and distance of your weapon abilities, including your free strikes. (\1 in \1 has information on abilities, ability keywords, and more.)
 
 #### Stamina Bonus
 
@@ -17727,13 +17727,13 @@ A distance bonus doesn't increase the size of any ability's area of effect.
 
 #### Disengage Bonus
 
-A kit that has a disengage bonus increases the number of squares you can shift when you take the Disengage move action (see [Chapter 10: Combat](#page-288-0)).
+A kit that has a disengage bonus increases the number of squares you can shift when you take the Disengage move action (see \1).
 
 ### Kit Signature Ability
 
 Each kit grants a signature ability, **whose distance and damage already includes the kit's bonuses**. For instance, the Guisarmier kit's Forward Thrust, Backward Smash ability has a distance of melee 2 and deals 4, 7, or 9 damage depending on the tier outcome, with that distance and damage including the bonuses from the kit.
 
-For details on the ability format, see [Abilities](#page-83-0) in [Chapter 5: Classes](#page-83-2).
+For details on the ability format, see \1 in \1.
 
 ### Kits A to Z
 
@@ -18587,7 +18587,7 @@ You are granted one perk from your career and can choose other perks from your c
 
 ### Perk Types
 
-Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see [Skills](#page-268-0) in Chapter 9: Tests), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to supernatural power.
+Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see \1 in Chapter 9: Tests), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to supernatural power.
 
 **Crafting perks** improve your talent for crafting materials, and let you become an expert in the things you create.
 
@@ -18823,7 +18823,7 @@ If the Director doesn't have an answer to the question you ask, or doesn't want 
 <!-- @type: perk -->
 #### Linguist
 
-You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost (see [Chapter 12: Downtime Projects](#page-307-2)).
+You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost (see \1).
 
 <!-- @type: perk -->
 #### Polymath
@@ -19145,7 +19145,7 @@ You somehow obtained the notebook of a brilliant but eccentric member of your cl
 
 You have no memory of your past before the... incident. Hopefully, you'll regain your memory soon and find out what the incident was. In the meantime, you need friends so you won't be alone when your past catches up to you.
 
-**Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)) that might have some connection with your former life.
+**Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see \1 in \1) that might have some connection with your former life.
 
 **Drawback:** You take a bane on any test made to recall lore.
 
@@ -19174,7 +19174,7 @@ You used to be a villain. You're (mostly) reformed now, but in desperate moments
 
 A powerful artifact has bonded to you, though you don't know whether you're destined to wield the artifact or to destroy it. You're not powerful enough to use it at the moment, although you might be someday. For now, though, the artifact has no effect beyond getting you in trouble.
 
-**Benefit:** Choose an artifact (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)). The first time in an encounter that you are reduced to 0 Stamina against your will, the artifact appears on your person. It disappears at the end of your next turn, when you benefit from one of its properties, or when you have more than 0 Stamina, whichever comes first.
+**Benefit:** Choose an artifact (see \1 in \1). The first time in an encounter that you are reduced to 0 Stamina against your will, the artifact appears on your person. It disappears at the end of your next turn, when you benefit from one of its properties, or when you have more than 0 Stamina, whichever comes first.
 
 **Drawback:** Each time the artifact appears, you lose a Recovery. If you have no Recoveries remaining, you take 1d10 damage instead, which can't be reduced in any way.
 
@@ -19192,7 +19192,7 @@ The most important person to you—perhaps a family member, mentor, or lover—w
 
 Your parents made a deal, and as part of that deal, you're supposed to marry someone—or something—you didn't choose. But no one is going to tell you what to do! They'll all be sorry to find that you've run away to become a mighty adventurer.
 
-**Benefit:** You escaped with a dowry present—a 1st-echelon trinket of your choice (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)).
+**Benefit:** You escaped with a dowry present—a 1st-echelon trinket of your choice (see \1 in \1).
 
 **Drawback:** All those who learn of you running out on your commitment think less of you and spread nasty rumors about you. Your Renown can't ever be more than your level − 1.
 
@@ -19219,7 +19219,7 @@ Perhaps the stars marked you out at birth, or maybe your name appears in an anci
 
 Ever since you were a kid, you've been obsessed with a certain topic. During your travels, you spend your free time gleaning all the information you can on that obsession. You might not be the world's leading expert quite yet, but people should certainly trust your opinion on the topic.
 
-**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See [Chapter 12: Downtime Projects](#page-307-2).)
+**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See \1.)
 
 **Drawback:** You can't imagine ever being wrong on the topic of your obsession. Whenever you make a test to recall lore using your chosen skill, the Director makes the test in secret. Instead of informing you whether you're right or wrong, they provide you with correct information if you succeeded and false information if you failed.
 
@@ -19336,7 +19336,7 @@ As a child, you met a creature who turns people to stone, such as a medusa. You 
 
 When you were young, you found or were given a magic weapon. Since then, you've carried it always at your side, letting it inspire you to lead the life of a hero—even though the weapon is cursed.
 
-**Benefit:** You have a leveled weapon of your choice (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)).
+**Benefit:** You have a leveled weapon of your choice (see \1 in \1).
 
 **Drawback:** You have damage weakness 2.
 
@@ -19354,7 +19354,7 @@ You're a disgraced member of a powerful family or guild, having been turned out 
 
 You sometimes have strange dreams of a raging inferno... a gleaming pile of treasure... of spreading your wings and taking flight. You haven't told anyone about these dreams, except for your one strange relative who seems to know more than they're letting on.
 
-**Benefit:** Choose 2 ancestry points' worth of purchased dragon knight traits (see [Chapter 3: Ancestries](#page-35-0)). You can use these traits whenever you have 5 or more Victories.
+**Benefit:** Choose 2 ancestry points' worth of purchased dragon knight traits (see \1). You can use these traits whenever you have 5 or more Victories.
 
 **Drawback:** Whenever you are reduced to 0 Stamina, you explode with heat and fire. You and each creature within 5 squares of you takes fire damage equal to twice your level. You can't reduce this damage for yourself in any way.
 
@@ -19381,7 +19381,7 @@ You have contracted a rare magical disease called evanesceria. From time to time
 
 Whether you're a convicted criminal, a noble stripped of their title, or a person who made one too many enemies, you've been cast forth from your homeland, never to return. At least not until you're strong enough to set things right.
 
-**Benefit:** You know one extant language of your choice (see [Languages in Orden](#page-70-0) in [Chapter 4: Background](#page-67-0)).
+**Benefit:** You know one extant language of your choice (see \1 in \1).
 
 **Drawback:** If any NPC from your homeland recognizes you, whether in your homeland or elsewhere, they attempt to harm you at the Director's discretion.
 
@@ -19498,7 +19498,7 @@ You used to be a con artist, but those days are pretty much behind you. Being a 
 
 Once when you were a child, your settlement was in danger and you called out to the earth for aid. That call was answered by a summoning of protective dirt-and-stone walls, and ever since then, you've felt the earth's presence as a friend and protector.
 
-**Benefit:** You have the 1st-level Elementalist Specialization feature Motivate Earth (see [Chapter 5: Classes](#page-83-2)). If you also gain this feature in any other way, the Motivate Earth ability becomes a ranged ability for you with a distance of ranged 5.
+**Benefit:** You have the 1st-level Elementalist Specialization feature Motivate Earth (see \1). If you also gain this feature in any other way, the Motivate Earth ability becomes a ranged ability for you with a distance of ranged 5.
 
 **Drawback:** You attract lightning. Whenever any creature within 2 squares of you takes lightning damage, you take 5 lightning damage that can't be reduced in any way.
 
@@ -19514,9 +19514,9 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 <!-- @type: complication -->
 #### Hawk Rider
 
-You travel with a giant hawk who you stole from the Hawklords (see [Vasloria](#page-24-2) in [Chapter 1: The Basics](#page-17-3)). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
+You travel with a giant hawk who you stole from the Hawklords (see \1 in \1). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
 
-**Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the Humans entry in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full Stamina as a respite activity.
+**Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the Humans entry in *\1*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full Stamina as a respite activity.
 
 **Drawback:** People aware of the origin of your mount are afraid to interact with you, since they worry the Hawklords will come after them by association. You take a bane on any test made to influence anyone who knows of the Hawklords and who has observed you with your giant hawk. Such people might also report you to the Hawklords, who come looking for you at the Director's discretion.
 
@@ -19567,7 +19567,7 @@ A deal you made went south, or you got involved with the wrong people. Now you o
 
 You made a deal (perhaps unknowingly) with an archdevil that has tied you to that fiend's service. When you first learned of this deal, you were taken to the Seven Cities of Hell, where some of the timescape's best minds taught you the ways of battle. The archdevil allows you to use these gifts as you will... until they require a favor from you.
 
-**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't surprised, your side determines who goes first if the d10 roll is a 4 or higher (see [Combat Round](#page-279-1) in [Chapter 10: Combat](#page-288-0)).
+**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't surprised, your side determines who goes first if the d10 roll is a 4 or higher (see \1 in \1).
 
 **Drawback:** The archdevil occasionally asks you to defeat enemies on their behalf. If you refuse, your fiendish patron sends devils after you and those you care about.
 
@@ -19589,7 +19589,7 @@ You made a deal with a devil. Not a very good deal, because it wasn't a very goo
 
 You studied in an academy or other educational institution. Your training was thorough and your reading list was wide-ranging. But when you left school, you discovered there were serious gaps in your education. Maybe some of those books were a little out of date.
 
-**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see [Languages in Orden](#page-70-0) in [Chapter 4: Background](#page-67-0)).
+**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see \1 in \1).
 
 **Drawback:** The Director chooses one of the skills you have from this complication. You lose that skill and can't ever learn it again. Additionally, you take a bane on any test to which that skill would apply.
 
@@ -19632,7 +19632,7 @@ In a long-ago age, a cataclysm overtook your city. You weren't killed, but some 
 <!-- @type: complication -->
 #### Lost Your Head
 
-A bredbeddle stole your head! Usually, being beheaded by one of those magical giants is fatal (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*), but your latent psionic ability allows you to survive despite your decapitation.
+A bredbeddle stole your head! Usually, being beheaded by one of those magical giants is fatal (see *\1*), but your latent psionic ability allows you to survive despite your decapitation.
 
 **Benefit:** You have the following ability.
 
@@ -19671,7 +19671,7 @@ Before you were a hero, you were a chef—and when you retire, you have big plan
 
 You're not sure what you did to deserve it, but for some reason, your family saddled you with an old, trusted, and extremely irritating family servant. They're supremely competent, of course, but they sometimes seem to forget who's in charge.
 
-**Benefit:** You have a retainer, in addition to any followers you acquire through Renown or other means. As usual, you can have only one retainer in your service at a time. (See [Renown](#page-364-6) in [Chapter 13: Rewards](#page-327-1) and Retainers in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*).
+**Benefit:** You have a retainer, in addition to any followers you acquire through Renown or other means. As usual, you can have only one retainer in your service at a time. (See \1 in \1 and Retainers in *\1*).
 
 **Drawback:** Outside of combat, your retainer is under the Director's control. The retainer sometimes acts without orders—always with your best interests at heart, but often in embarrassing or inconvenient ways.
 
@@ -19762,7 +19762,7 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a Presence test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](#page-364-6) in [Chapter 13: Rewards](#page-327-1)), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a Presence test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see \1 in \1), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
 
 **Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your Renown or other means) leaves you, their faith in you shaken. If you have no followers, your Renown is reduced by 1. If you need to reduce your Renown and it's already 0, you gain no benefits from the respite during which you make the conversion attempt.
 
@@ -19778,7 +19778,7 @@ You once contracted a terrible illness for which no one could find a cure. You s
 <!-- @type: complication -->
 #### Prisoner of the Synlirii
 
-You were captured by the psionic beings known as voiceless talkers (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*). You escaped them, but you can't escape a feeling that's lingered since then in the back of your mind-the feeling of being watched.
+You were captured by the psionic beings known as voiceless talkers (see *\1*). You escaped them, but you can't escape a feeling that's lingered since then in the back of your mind-the feeling of being watched.
 
 **Benefit:** You can telepathically communicate with any creature within 10 squares of you if they share a language with you and you know of each other. A creature you communicate with this way can respond telepathically if they choose.
 
@@ -19825,7 +19825,7 @@ You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes,
 
 **Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an edge on tests that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're supernaturally compelled to be.
 
-**Drawback:** You don't have a culture (see [Culture](#page-67-1) in [Chapter 4: Background](#page-67-0)), though you can speak Caelian.
+**Drawback:** You don't have a culture (see \1 in \1), though you can speak Caelian.
 
 <!-- @type: complication -->
 #### Refugee
@@ -19923,7 +19923,7 @@ Impoverished or on the run, you spent your formative years living in the sewers 
 <!-- @type: complication -->
 #### Shadow Born
 
-You were born in the dusk land ruled by the Queen of Shadows, and its darkness has seeped into your bones. (See [The Myriad Worlds of the Timescape](#page-26-0) in [Chapter 1: The Basics](#page-17-3).)
+You were born in the dusk land ruled by the Queen of Shadows, and its darkness has seeped into your bones. (See \1 in \1.)
 
 **Benefit:** Whenever you start your turn with concealment, you gain 1 surge.
 
@@ -19941,7 +19941,7 @@ A supernatural spirit occupies your body, with each of you controlling your body
 
 You're the heir to a powerful supernatural treasure that has been in your family for generations. One problem, though: that treasure is broken. Some ancestor of yours sundered it while saving the world. Or maybe they tripped and smashed it on a rock. Either way, it's your job to fix it.
 
-**Benefit:** You know one language of your choice. Additionally, you have one leveled treasure of your choice (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)).
+**Benefit:** You know one language of your choice. Additionally, you have one leveled treasure of your choice (see \1 in \1).
 
 **Drawback:** The chosen leveled treasure is broken and completely inoperative. Repairing the treasure requires that you complete the Craft Treasure project for it. The project goal is half of what it would cost to create such an item, and you already have the project source you need. You must seek out any item prerequisite.
 
@@ -19997,7 +19997,7 @@ An evil fairy cursed you, leaving you with a blank visage instead of a face. Alt
 
 Your siblings each inherited money or land, but you received a strange, seemingly useless trinket—along with the advice that maybe you weren't cut out for an ordinary, peaceful life.
 
-**Benefit:** You have a somewhat inoperative 2nd-echelon trinket of the Director's choice (see [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1)). This trinket functions only while the total of your level plus your Victories is 5 or higher. You don't learn what the trinket's powers are until the first time it becomes operative.
+**Benefit:** You have a somewhat inoperative 2nd-echelon trinket of the Director's choice (see \1 in \1). This trinket functions only while the total of your level plus your Victories is 5 or higher. You don't learn what the trinket's powers are until the first time it becomes operative.
 
 **Drawback:** With no other inheritance, you accumulated debts. The first time your Wealth exceeds 1, you lose 1 Wealth.
 
@@ -20020,7 +20020,7 @@ You were trained as an officer, but you no longer serve. Whether you fled from a
 >
 > **Special:** If you have the Strike Now tactician ability, the target can use a free triggered action instead of a triggered action to gain the benefit of this ability.
 
-**Drawback:** Rather than attracting followers at 3, 6, 9, and 12 Renown, you can attract followers only when your Renown reaches 4, 8, 12, and 16. See [Renown](#page-364-6) in [Chapter 13: Rewards](#page-327-1).
+**Drawback:** Rather than attracting followers at 3, 6, 9, and 12 Renown, you can attract followers only when your Renown reaches 4, 8, 12, and 16. See \1 in \1.
 
 <!-- @type: complication -->
 #### Thrill Seeker
@@ -20079,7 +20079,7 @@ You broke a magic amulet, immersing your mind in weird energy that granted you t
 <!-- @type: complication -->
 #### War Dog Collar
 
-You wear a loyalty collar from one of Ajax's war dogs (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*). You've managed to rig the collar so it explodes outward while keeping you safe.
+You wear a loyalty collar from one of Ajax's war dogs (see *\1*). You've managed to rig the collar so it explodes outward while keeping you safe.
 
 **Benefit:** Even if you are a war dog yourself, other war dogs can't use their Posthumous Promotion ability on you while you wear your collar. Additionally, you have the following ability.
 
@@ -20186,9 +20186,9 @@ That said, such clever ideas often work for free the first time, but the Directo
 
 Each test has the following steps:
 
-The Director decides that a hero's activities call for a test and asks the hero's player to make a power roll using an appropriate characteristic (see [Characteristics and Tests](#page-263-2) below). The Director then selects a difficulty for the power roll, either secretly or publicly (see [Test Difficulty](#page-263-3) below).
+The Director decides that a hero's activities call for a test and asks the hero's player to make a power roll using an appropriate characteristic (see \1 below). The Director then selects a difficulty for the power roll, either secretly or publicly (see \1 below).
 
-The player makes the power roll. If the character has a skill that applies to the test (see [Skills](#page-268-0) later in this chapter), they can ask the Director if the skill applies and justify the use of the skill. If the Director agrees the skill applies, the hero gains a +2 bonus to the roll.
+The player makes the power roll. If the character has a skill that applies to the test (see \1 later in this chapter), they can ask the Director if the skill applies and justify the use of the skill. If the Director agrees the skill applies, the hero gains a +2 bonus to the roll.
 
 The player reports the total of the roll, and the Director interprets its success or failure.
 
@@ -20224,7 +20224,7 @@ You make a Presence test whenever you attempt a risky task that requires the use
 >
 > Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an Intuition test to discern another PC's motivations or honesty.
 >
-> That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *[https://mcdm.gg/SafetyToolkit](http://mcdm.gg/SafetyToolkit)*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
+> That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *\1*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
 
 #### Test Difficulty
 
@@ -20249,7 +20249,7 @@ Whenever you make a test whose outcome you don't like, you can spend a hero toke
 
 ##### Easy Tests
 
-An easy test has some risk of consequence, but most heroes will likely overcome it. The power roll you make for an easy test determines the outcome (see [Test Outcomes](#page-264-0) below):
+An easy test has some risk of consequence, but most heroes will likely overcome it. The power roll you make for an easy test determines the outcome (see \1 below):
 
 - **≤11:** You succeed on the task and incur a consequence.
 - **12-16:** You succeed on the task.
@@ -20335,7 +20335,7 @@ Common rewards accompanying success on a test include the following:
 - Impressing or ingratiating yourself with someone who grants you a small favor
 - Noticing a hidden danger well before it strikes, giving you time to avoid or prepare for it
 
-In lieu of other rewards, the Director can also decide that a hero who succeeds on a test with a reward earns the players a hero token (see [Hero Tokens](#page-19-4) in [Chapter 1: The Basics](#page-17-3)).
+In lieu of other rewards, the Director can also decide that a hero who succeeds on a test with a reward earns the players a hero token (see \1 in \1).
 
 > **Optional Rule: Pitching Consequences and Rewards**
 >
@@ -20347,7 +20347,7 @@ The amount of time required for a task involving a test is determined by the Dir
 
 ##### Tests During Combat
 
-Many (but not all) tests that a hero might make during combat are made as maneuvers. See [Maneuvers](#page-287-0) in [Chapter 10: Combat](#page-288-0) for more information.
+Many (but not all) tests that a hero might make during combat are made as maneuvers. See \1 in \1 for more information.
 
 #### Can I Try Again?
 
@@ -20359,7 +20359,7 @@ The Director decides when the circumstances have changed enough to allow a new a
 
 If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an Agility test to sneak, or should the guard make an Intuition test to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a Presence test to conceal the truth, or does the hero roll an Intuition test to discern the cultist's honesty?
 
-Except in certain scenarios (explored at [NPCs Roll for Deceptive Tasks](#page-267-2) and [Opposed Power Rolls](#page-267-0) below), heroes make tests and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of tests have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC retainer or companion, that NPC will almost certainly make tests from time to time. But for the most part, NPCs and other creatures never need to make tests when what they do opposes what the heroes do.
+Except in certain scenarios (explored at \1 and \1 below), heroes make tests and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of tests have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC retainer or companion, that NPC will almost certainly make tests from time to time. But for the most part, NPCs and other creatures never need to make tests when what they do opposes what the heroes do.
 
 To quickly assess the difficulty of a task opposed by one or more creatures and the test made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
 
@@ -20377,7 +20377,7 @@ For example, when an assassin attempts to ambush the heroes while they sit aroun
 
 An NPC might also make a Presence test if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a test to discern the NPC's honesty.
 
-As an optional rule, the Director is also free to ask the heroes to make a reactive test to a deceptive NPC instead (see [Reactive Tests](#page-267-1) below) whenever they choose.
+As an optional rule, the Director is also free to ask the heroes to make a reactive test to a deceptive NPC instead (see \1 below) whenever they choose.
 
 #### Opposed Power Rolls
 
@@ -20397,10 +20397,10 @@ Reactive tests are typically made in the following circumstances, though the Dir
 
 **Hidden Environmental Features:** The Director asks for an Intuition test to notice a secret door, a hidden trap, or some other disguised environmental feature.
 
-- **Hidden Foes:** The Director calls for an Intuition test to notice a hidden foe (or they could use the rules in [NPCs Roll for Deceptive Tasks](#page-267-2) above).
-- **Hidden Motives:** The Director can ask for an Intuition test during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in [NPCs Roll for Deceptive Tasks.](#page-267-2))
+- **Hidden Foes:** The Director calls for an Intuition test to notice a hidden foe (or they could use the rules in \1 above).
+- **Hidden Motives:** The Director can ask for an Intuition test during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in \1)
 - **Recall Lore:** The Director might ask a hero to make a Reason test when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
-- **Creature and DTO Tests:** Some creatures and dynamic terrain objects in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)* have features and abilities that require heroes to make reactive tests. These tests can't be modified by skills.
+- **Creature and DTO Tests:** Some creatures and dynamic terrain objects in *\1* have features and abilities that require heroes to make reactive tests. These tests can't be modified by skills.
 
 > **Optional Rule: Secret Reactive Tests**
 >
@@ -20503,7 +20503,7 @@ Consequences for tests made with exploration skills include harming yourself, yo
 
 ##### Interpersonal Skills
 
-Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see [Chapter 11\)](#page-297-1). Aside from the Handle Animals skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
+Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see \1. Aside from the Handle Animals skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
 
 Rewards for tests made with interpersonal skills typically include gaining an extra favor, item, or piece of information from the people or creatures you interact with.
 
@@ -20558,7 +20558,7 @@ Skills from the lore skill group are used to research and recall specific inform
 
 Rewards for tests made with lore skills typically include learning an extra piece of useful information.
 
-Consequences for tests made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard tests with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the power roll (see the [Optional Rule: Secret Reactive Tests](#page-267-3) sidebar earlier in this chapter).
+Consequences for tests made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard tests with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the power roll (see the \1 sidebar earlier in this chapter).
 
 ###### Lore Skills Table
 
@@ -20673,7 +20673,7 @@ Hiding and sneaking are important tools for heroes and their foes. You might wan
 
 #### Hiding
 
-To hide from a creature, you must have cover or concealment from that creature (see [Chapter 10: Combat](#page-288-0)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
+To hide from a creature, you must have cover or concealment from that creature (see \1), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
 
 When you use the Hide maneuver to hide during combat while you have cover or concealment from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the Hide skill to determine how well hidden you are.
 
@@ -20687,7 +20687,7 @@ You are no longer hidden from a creature if you don't have cover or concealment 
 
 ##### Searching for Hidden Creatures
 
-You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the Hide skill (see [Opposed Power Rolls](#page-267-0) earlier in this chapter). At the Director's discretion, different characteristics and skills can be used in this opposed test. For example, your foe might make a Presence test using the Handle Animals skill to hide among a flock of sheep without disturbing them, or you could make a Reason test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
+You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the Hide skill (see \1 earlier in this chapter). At the Director's discretion, different characteristics and skills can be used in this opposed test. For example, your foe might make a Presence test using the Handle Animals skill to hide among a flock of sheep without disturbing them, or you could make a Reason test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
 
 If the total of your test is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
 
@@ -20727,15 +20727,15 @@ If fewer than half the heroes incur a consequence or earn a reward on their indi
 
 When a group of heroes works together over time to accomplish a common goal that requires more than a single characteristic, the Director can call for a montage test. Such tests typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage tests.
 
-In a montage test, the players take turns making tests as their characters tackle a task together in a montage test round. Each hero has a chance to make a test (or to assist another hero's test; see [Assist a Test](#page-272-0) above) intended to influence the outcome of the task.
+In a montage test, the players take turns making tests as their characters tackle a task together in a montage test round. Each hero has a chance to make a test (or to assist another hero's test; see \1 above) intended to influence the outcome of the task.
 
-A hero can also spend their turn using an item, ability, or other option they have available that they believe can help in the montage test. For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage test, with no individual tests necessary (see [Total Successes and Failures](#page-276-0) below).
+A hero can also spend their turn using an item, ability, or other option they have available that they believe can help in the montage test. For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage test, with no individual tests necessary (see \1 below).
 
-Once a hero makes a test, assists with a test, or uses an ability or other option, they can't do anything else as part of the montage test until each other hero involved in the montage test does so as well. A hero can also choose to do nothing, most often if they have no one to assist and fear that their actions might make the situation worse (see [Montage Test Outcomes](#page-276-1) below). Once every hero has had a chance to act, the montage test round ends and a new one begins.
+Once a hero makes a test, assists with a test, or uses an ability or other option, they can't do anything else as part of the montage test until each other hero involved in the montage test does so as well. A hero can also choose to do nothing, most often if they have no one to assist and fear that their actions might make the situation worse (see \1 below). Once every hero has had a chance to act, the montage test round ends and a new one begins.
 
 #### Time and Stakes
 
-As the name suggests, montage tests create a kind of cinematic montage in the action of the game. A montage test can take place over the course of several hours or days, with each individual test or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a montage test (see [Sample Montage Test](#page-276-2) below).
+As the name suggests, montage tests create a kind of cinematic montage in the action of the game. A montage test can take place over the course of several hours or days, with each individual test or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a montage test (see \1 below).
 
 The Director should deploy montage tests only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A montage test is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a respite to use a new kit, can be narrated in montage style, but they don't require a montage test.
 
@@ -20769,7 +20769,7 @@ During a montage test, a Director can introduce new challenges for the heroes to
 
 #### Total Successes and Failures
 
-The Director or another player will track the total number of successes and failures the heroes earn during a montage test. Every montage test has a success limit and a failure limit. When the number of successful tests equals the success limit, the montage test ends and the heroes achieve total success (see [Montage Test Outcomes](#page-276-1) below). The montage test can also end when the number of failed tests equals the failure limit, and the heroes suffer total failure.
+The Director or another player will track the total number of successes and failures the heroes earn during a montage test. Every montage test has a success limit and a failure limit. When the number of successful tests equals the success limit, the montage test ends and the heroes achieve total success (see \1 below). The montage test can also end when the number of failed tests equals the failure limit, and the heroes suffer total failure.
 
 #### Limited Rounds
 
@@ -20942,7 +20942,7 @@ If the players do end up arguing in circles about what to do next, the Director 
 
 ##### Enemies Act In Groups
 
-Director-controlled creatures act in groups, with information for building groups found in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*. When a group of enemies acts, the Director chooses a single creature or minion squad to take a turn. Once that turn is over, the Director chooses another creature in that group to take a turn, continuing until all members of the group have taken their turn.
+Director-controlled creatures act in groups, with information for building groups found in *\1*. When a group of enemies acts, the Director chooses a single creature or minion squad to take a turn. Once that turn is over, the Director chooses another creature in that group to take a turn, continuing until all members of the group have taken their turn.
 
 #### End of Round
 
@@ -20952,7 +20952,7 @@ Once all creatures on both sides of a battle have acted, the combat round ends a
 
 Each creature in combat—whether hero, adversary, or something in between—gets to take a **main action**, a **maneuver**, and a **move action** on their turn (explained later in this chapter). Each combatant can perform their maneuver and main action in any order, and can break up the movement granted by their move action before, after, or between their maneuver and main action however they like. You can also turn your main action into a move action or a maneuver, so that your turn can alternatively consist of two move actions and a maneuver, or two maneuvers and a move action.
 
-The [Movement](#page-281-3) section below breaks down how your move action works, while the [Maneuvers](#page-287-0) and [Main Actions](#page-288-0) sections break down the baseline maneuvers and main actions your character can undertake. For any activities not specifically covered in those rules, such as cutting down a chandelier to drop on enemies, the Director decides whether such an activity is a maneuver or a main action.
+The \1 section below breaks down how your move action works, while the \1 and \1 sections break down the baseline maneuvers and main actions your character can undertake. For any activities not specifically covered in those rules, such as cutting down a chandelier to drop on enemies, the Director decides whether such an activity is a maneuver or a main action.
 
 #### Triggered Actions and Free Triggered Actions
 
@@ -20983,7 +20983,7 @@ The Director can limit what kinds of no-action activities you can attempt when i
 <!-- @type: movement | @id: movement -->
 ### Movement
 
-During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the Advance or Disengage move action (detailed under [Move Actions](#page-286-3) below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
+During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the Advance or Disengage move action (detailed under \1 below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
 
 Your hero starts with a speed granted by their ancestry—usually 5. This represents the maximum number of squares you can move when you take the Advance move action or when another effect allows you to move. Your speed can be increased by your kit and other game options.
 
@@ -20995,7 +20995,7 @@ At the Director's discretion, you can be forced into the same space as another c
 
 #### Can't Exceed Speed
 
-A single move or other effect can never allow a creature to move more squares than their speed, unless the effect states otherwise. For example, a creature with speed 5 might have that speed reduced to 2 by the slowed condition (see [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2)). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current speed.
+A single move or other effect can never allow a creature to move more squares than their speed, unless the effect states otherwise. For example, a creature with speed 5 might have that speed reduced to 2 by the slowed condition (see \1 in \1). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current speed.
 
 #### Can't Cut Corners
 
@@ -21003,7 +21003,7 @@ A creature can't move diagonally when doing so would involve passing through the
 
 #### Shifting
 
-Shifting is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to shift a specific number of squares, sometimes up to your speed. Whenever you shift, creatures can't make opportunity attacks against you triggered by that movement (see [Opportunity Attacks](#page-289-4) later in this chapter).
+Shifting is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to shift a specific number of squares, sometimes up to your speed. Whenever you shift, creatures can't make opportunity attacks against you triggered by that movement (see \1 later in this chapter).
 
 You can't shift into or while within difficult terrain or damaging terrain (see below). If a rule allows you to shift, you can choose to instead move up to the number of squares you would have shifted (for example, to get out of difficult terrain). However, you can't combine moving and shifting within that movement.
 
@@ -21078,7 +21078,7 @@ While you climb or ride a creature, you gain an edge on melee abilities used aga
 
 **Power Roll + Might or Agility:**
 
-- **≤11:** You fall off the creature into an unoccupied adjacent space of your choice, taking falling damage and landing prone as usual (see [Falling](#page-283-3) below).
+- **≤11:** You fall off the creature into an unoccupied adjacent space of your choice, taking falling damage and landing prone as usual (see \1 below).
 - **12-16:** You slide down the creature into an unoccupied adjacent space of your choice and don't land prone.
 - **17+:** You continue to hold on to the creature.
 
@@ -21100,11 +21100,11 @@ You can't jump farther or higher than the distance of the effect that allows you
 
 ##### Crawl
 
-If you are prone (see [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2)), you can remain prone and crawl on the ground. Doing so costs you 1 additional square of movement for every square you crawl. If you intentionally want to crawl, you can fall prone as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
+If you are prone (see \1 in \1), you can remain prone and crawl on the ground. Doing so costs you 1 additional square of movement for every square you crawl. If you intentionally want to crawl, you can fall prone as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
 
 ##### Fly
 
-A creature who has "fly" in their speed entry, or who gains the temporary ability to fly, can move through the air vertically or horizontally at full speed and remain in midair. If a flying creature is knocked prone or has their speed reduced to 0, they fall (see [Falling](#page-283-3) below).
+A creature who has "fly" in their speed entry, or who gains the temporary ability to fly, can move through the air vertically or horizontally at full speed and remain in midair. If a flying creature is knocked prone or has their speed reduced to 0, they fall (see \1 below).
 
 ##### Hover
 
@@ -21128,7 +21128,7 @@ When a creature teleports, they move from one space to another space instantaneo
 
 When a creature falls 2 or more squares and lands on the ground, they take 2 damage for each square they fall (to a maximum of 50 damage) and land prone. A creature who falls can reduce the effective height of the fall by a number of squares equal to their Agility score (to a minimum of 0). Falling into liquid that is 1 square or more deep reduces the effective height of a fall by 4 squares (to a minimum of 0).
 
-Falling is not forced movement, but being force moved downward is considered falling. Movement from falling doesn't provoke opportunity attacks (see [Opportunity Attacks](#page-289-4) below).
+Falling is not forced movement, but being force moved downward is considered falling. Movement from falling doesn't provoke opportunity attacks (see \1 below).
 
 ##### Falling Onto Another Creature
 
@@ -21194,7 +21194,7 @@ You can force move another creature into yourself with a pull or a slide.
 
 When a creature force moves a target into a stationary object that is the target's size or larger and the object doesn't break (see below), the movement ends and the target takes 2 damage plus 1 damage for each square remaining in their forced movement.
 
-If you force move a creature downward into an object that doesn't break (including the ground), they also take falling damage as if they had fallen the distance force moved and their Agility score was 0 (see [Falling](#page-283-3) above).
+If you force move a creature downward into an object that doesn't break (including the ground), they also take falling damage as if they had fallen the distance force moved and their Agility score was 0 (see \1 above).
 
 > **Tracking Object Forced-Movement Damage**
 >
@@ -21249,7 +21249,7 @@ When a creature takes the Disengage move action, they can shift 1 square. Certai
 
 #### Ride
 
-A creature can take the Ride move action only while mounted on another creature (see [Mounted Combat](#page-293-0) below). When a creature takes the Ride move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the Ride move action to have their mount use the Disengage move action as a free triggered action. A creature can use the Ride move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
+A creature can take the Ride move action only while mounted on another creature (see \1 below). When a creature takes the Ride move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the Ride move action to have their mount use the Disengage move action as a free triggered action. A creature can use the Ride move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
 
 <!-- @type: feature-group | @id: maneuvers -->
 ### Maneuvers
@@ -21264,13 +21264,13 @@ A creature who uses the Aid Attack maneuver chooses an enemy adjacent to them. T
 
 #### Catch Breath
 
-A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for [Stamina.](#page-291-0) See [Recoveries](#page-21-3) in [Chapter 1: The Basics](#page-17-3).)
+A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for \1 See \1 in \1.)
 
-A creature who is dying (see [Dying and Death](#page-292-1) in [Stamina](#page-291-0) below) can't use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.
+A creature who is dying (see \1 in \1 below) can't use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.
 
 #### Escape Grab
 
-A creature who is grabbed by another creature, an object, or an effect (see [Grab](#page-287-5) below) can attempt to escape by using the following ability.
+A creature who is grabbed by another creature, an object, or an effect (see \1 below) can attempt to escape by using the following ability.
 
 > ###### Escape Grab
 >
@@ -21286,7 +21286,7 @@ A creature who is grabbed by another creature, an object, or an effect (see [Gra
 >
 > **Effect:** You take a bane on this maneuver if your size is smaller than the size of the creature, object, or effect that has you grabbed.
 
-See [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2) for information on the grabbed condition.
+See \1 in \1 for information on the grabbed condition.
 
 #### Grab
 
@@ -21308,7 +21308,7 @@ A creature seeking to keep a foe close and locked down can attempt to grab a cre
 
 Unless otherwise indicated, a creature can grab only one creature at a time.
 
-See [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2) for information on the grabbed condition.
+See \1 in \1 for information on the grabbed condition.
 
 #### Hide
 
@@ -21348,11 +21348,11 @@ A creature can use the Stand Up maneuver to stand up if they are prone, ending t
 
 #### Use Consumable
 
-Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See [Consumables](#page-328-0) in [Chapter 13: Rewards](#page-327-1).
+Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See \1 in \1.
 
 ### Main Actions
 
-When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see [Abilities](#page-83-0) in [Chapter 5: Classes](#page-83-2)). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
+When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see \1 in \1). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
 
 You can also use your main action to help another creature regain Stamina, charge into battle, defend yourself, or make a free strike.
 
@@ -21360,17 +21360,17 @@ You can convert your main action into a maneuver or a move action, allowing you 
 
 #### Charge
 
-When a creature takes the Charge main action, they move up to their speed in a straight line, then make a melee free strike (see [Free Strikes](#page-289-1) below) against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a free strike.
+When a creature takes the Charge main action, they move up to their speed in a straight line, then make a melee free strike (see \1 below) against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a free strike.
 
 A creature can't move through difficult terrain or shift when they charge. They can fly or burrow as part of the Charge main action if they have that movement available to them, but they can't climb or swim while charging unless they can automatically use that movement at full speed.
 
 #### Defend
 
-When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is taunted by them (see [Conditions](#page-91-2) in [Chapter 5: Classes](#page-83-2)).
+When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is taunted by them (see \1 in \1).
 
 #### Free Strike
 
-A creature can use this main action to make a free strike (see [Free](#page-289-1)  [Strikes](#page-289-1) below). Most of the time, you'll want to use the more impactful main actions granted by your class, kit, or other feature, just as the Director will use the main actions in a creature's stat block, but free strikes are available for when all else fails. For instance, a fury who has no other options for ranged strikes might use the Ranged Weapon Free Strike ability with an improvised weapon when battling a flying foe.
+A creature can use this main action to make a free strike (see \1  \1 below). Most of the time, you'll want to use the more impactful main actions granted by your class, kit, or other feature, just as the Director will use the main actions in a creature's stat block, but free strikes are available for when all else fails. For instance, a fury who has no other options for ranged strikes might use the Ranged Weapon Free Strike ability with an improvised weapon when battling a flying foe.
 
 #### Heal
 
@@ -21395,7 +21395,7 @@ If a creature has a bane or double bane on the power roll against the enemy, the
 
 #### Standard Free Strikes
 
-Every hero has two standard free strike abilities available to them. Your class might give you additional free strike options, and your kit can improve the standard options (see [Chapter 6: Kits](#page-231-0)).
+Every hero has two standard free strike abilities available to them. Your class might give you additional free strike options, and your kit can improve the standard options (see \1).
 
 A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the damage type of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a free strike.
 
@@ -21439,7 +21439,7 @@ When you have line of effect to a creature or object but that target has at leas
 
 ### Concealment
 
-Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see [Hide](#page-272-1)  [and Sneak](#page-272-1) in [Chapter 9: Tests](#page-263-0)). However, strikes against such targets take a bane.
+Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see \1  \1 in \1). However, strikes against such targets take a bane.
 
 #### Invisible Creatures
 
@@ -21483,7 +21483,7 @@ After any damage you take is reduced by damage immunity or other effects, your S
 
 #### Recoveries and Recovery Value
 
-Each hero has a number of Recoveries determined by their class. A hero also has a recovery value that equals one-third of their Stamina maximum, rounded down. When you use the Catch Breath maneuver in combat (see [Maneuvers](#page-287-0) above), you spend a Recovery and regain Stamina equal to your recovery value. Outside of combat, you can spend as many Recoveries as you have remaining. Some abilities, items, and other effects allow you to spend a Recovery to regain Stamina equal to your recovery value plus a little extra (as described by the effect), or to regain Stamina without spending a Recovery.
+Each hero has a number of Recoveries determined by their class. A hero also has a recovery value that equals one-third of their Stamina maximum, rounded down. When you use the Catch Breath maneuver in combat (see \1 above), you spend a Recovery and regain Stamina equal to your recovery value. Outside of combat, you can spend as many Recoveries as you have remaining. Some abilities, items, and other effects allow you to spend a Recovery to regain Stamina equal to your recovery value plus a little extra (as described by the effect), or to regain Stamina without spending a Recovery.
 
 #### Winded
 
@@ -21550,9 +21550,9 @@ Out of combat, you can hold your breath for a number of minutes equal to your Mi
 
 ### Mounted Combat
 
-A willing creature with the Mount role (see Creature Roles in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*) can serve as your mount as long as their size is greater than yours. You can climb onto your mount freely (see [Climbing Other Creatures](#page-283-8) above). You determine which space you occupy. While mounted, you can take the Ride move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
+A willing creature with the Mount role (see Creature Roles in *\1*) can serve as your mount as long as their size is greater than yours. You can climb onto your mount freely (see \1 above). You determine which space you occupy. While mounted, you can take the Ride move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
 
-If a creature riding a mount is force moved, they are knocked off the mount and must make a test to determine how they land (see [Climbing Other Creatures\)](#page-283-8). If a mount is force moved, they carry any riders with them. Riders and mounts teleport separately.
+If a creature riding a mount is force moved, they are knocked off the mount and must make a test to determine how they land (see \1. If a mount is force moved, they carry any riders with them. Riders and mounts teleport separately.
 
 If your mount dies, they fall prone, and you fall off them and land prone in the nearest unoccupied space of your choice.
 
@@ -21572,7 +21572,7 @@ When the Director ends combat this way, the players typically choose how the bat
 
 While planning a combat encounter, the Director can set one or more objectives the heroes can achieve to end the encounter without dropping every last foe. Some broad categories of objectives are described in this section, but the Director should feel free to create their own. As well, Directors can always end combat anytime it becomes clear that the heroes are going to win an encounter with minimal effort, even if they haven't achieved all the objectives.
 
-Each of the objective endings in this section is explored in detail including looking at monster roles, map advice, success conditions, and more—in the Introduction section of *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*.
+Each of the objective endings in this section is explored in detail including looking at monster roles, map advice, success conditions, and more—in the Introduction section of *\1*.
 
 ##### Diminish Numbers
 
@@ -21675,23 +21675,23 @@ During negotiation, the Director assigns NPCs four temporary statistics and feat
 
 #### Interest
 
-An NPC's interest represents how eager they are to make a deal with the heroes. Interest is graded on a scale of 0 (no interest) to 5 (the most possible interest). When a negotiation begins, an NPC's interest is between 1 and 4. If the NPC's interest goes to 5, they make a final offer and the negotiation ends (see [Keep Going or Stop](#page-303-0), below). If the NPC's interest drops to 0, they end a negotiation without offering the heroes any deal.
+An NPC's interest represents how eager they are to make a deal with the heroes. Interest is graded on a scale of 0 (no interest) to 5 (the most possible interest). When a negotiation begins, an NPC's interest is between 1 and 4. If the NPC's interest goes to 5, they make a final offer and the negotiation ends (see \1, below). If the NPC's interest drops to 0, they end a negotiation without offering the heroes any deal.
 
 Interest increases and decreases during the negotiation based on the arguments the heroes make.
 
 #### Patience
 
-An NPC's patience represents how much time and effort they're willing to devote to a negotiation. Patience is graded on a scale of 0 to 5, with each NPC starting a negotiation with their patience higher than 0. If an NPC's patience reaches 0, the NPC makes a final offer and negotiation ends (see [Keep Going or Stop](#page-303-0)).
+An NPC's patience represents how much time and effort they're willing to devote to a negotiation. Patience is graded on a scale of 0 to 5, with each NPC starting a negotiation with their patience higher than 0. If an NPC's patience reaches 0, the NPC makes a final offer and negotiation ends (see \1).
 
 Patience can decrease each time the heroes make an argument during a negotiation.
 
 ##### Language and Patience
 
-If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). [Chapter 4: Background](#page-67-0) has information on some of the languages in the game.
+If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). \1 has information on some of the languages in the game.
 
 #### Motivations
 
-Each NPC has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an NPC's motivation require an easier power roll to increase the NPC's interest. Arguments that don't appeal to a motivation require a more difficult power roll. See [Making Arguments](#page-301-0) below for more information.
+Each NPC has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an NPC's motivation require an easier power roll to increase the NPC's interest. Arguments that don't appeal to a motivation require a more difficult power roll. See \1 below for more information.
 
 Each motivation can be successfully appealed to only once during a negotiation. To successfully appeal to a motivation, the heroes must use the motivation in an argument without mentioning one of the NPC's pitfalls or being caught in a lie.
 
@@ -21950,7 +21950,7 @@ If an argument uses one of the NPC's pitfalls, it automatically fails and the NP
 
 Renown determines whether a hero's fame (or infamy) has any sway over an NPC. A hero's reputation can make a negotiation easier, provided that hero knows how to capitalize on it.
 
-During a negotiation, an NPC has an **Impression score** that determines the amount of Renown needed to influence them with fame alone (see [Renown](#page-364-6) in [Chapter 13: Rewards](#page-327-1)). This score matters only if the NPC knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's Renown. (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the NPC does know of the hero and has an Impression score that is equal to or lower than the hero's Renown, the NPC can be influenced by that hero's reputation.
+During a negotiation, an NPC has an **Impression score** that determines the amount of Renown needed to influence them with fame alone (see \1 in \1). This score matters only if the NPC knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's Renown. (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the NPC does know of the hero and has an Impression score that is equal to or lower than the hero's Renown, the NPC can be influenced by that hero's reputation.
 
 The higher an NPC's Impression score, the harder they are to influence with Renown. A small-time brigand has a lower Impression score than a monarch who meets with powerful and famous people all the time. The NPCs and Impression table provides examples of different archetypical NPC Impression scores. If a creature has a level, then their Impression score equals their level unless the Director deems otherwise.
 
@@ -22206,11 +22206,11 @@ Many downtime projects have one or more special items you must possess or obtain
 
 #### Project Source
 
-To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a project roll for that particular project (see [Project Roll](#page-307-1) below).
+To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a project roll for that particular project (see \1 below).
 
 Some project sources are relatively easy to find. Building a castle doesn't require tomes filled with ancient lore, but it's also not something every stonemason knows how to do. However, the location of the tomb of Ashrya, the mummified protector of one hundred slumbering sorcerer-sovereigns, might exist only in a single tome that requires an accompanying adventure to unearth.
 
-The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in [Chapter 4: Background](#page-67-0)), though you might be able to find a version of a source in other languages as well.
+The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in \1), though you might be able to find a version of a source in other languages as well.
 
 Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a respite activity to be your project source whenever you make a project roll related to the project.
 
@@ -22220,13 +22220,13 @@ If you need a project source for a particular project, ask your Director if the 
 
 ### Project Roll
 
-As a respite activity (see [Respite](#page-21-4) in [Chapter 1: The Basics](#page-17-3)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
+As a respite activity (see \1 in \1), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
 
 When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same respite activity.
 
 A downtime project is complete when it accrues project points equal to or greater than its **project goal**-the number of points it takes to complete the project, noted in each project's description.
 
-As you work on a downtime project, the Director can add events that help form the narrative of your research, crafting, or other activities. These events might provide unexpected benefits or challenges as you work on your project, to help make the journey as dramatic as arriving at the destination. See [For the Director: Project Events](#page-308-1) below for more information.
+As you work on a downtime project, the Director can add events that help form the narrative of your research, crafting, or other activities. These events might provide unexpected benefits or challenges as you work on your project, to help make the journey as dramatic as arriving at the destination. See \1 below for more information.
 
 #### Project Roll Edges and Banes
 
@@ -22234,7 +22234,7 @@ Since project rolls don't use success tiers, they don't follow the usual rules f
 
 #### Skills and Project Rolls
 
-You can apply skills from either the crafting or lore skill groups to project rolls that directly relate to a downtime project (see [Skills](#page-268-0) in [Chapter 9: Tests](#page-263-0)). For example, you could use the Tailoring skill for project rolls related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a project roll must be directly related to the project.
+You can apply skills from either the crafting or lore skill groups to project rolls that directly relate to a downtime project (see \1 in \1). For example, you could use the Tailoring skill for project rolls related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a project roll must be directly related to the project.
 
 #### Language and Project Rolls
 
@@ -22291,7 +22291,7 @@ If an event grants an automatic breakthrough on a downtime project, the project 
 
 Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their respite activity to contribute a project roll in order to get the work done faster.
 
-Unless a project has an event table of its own, the Director uses the [Crafting and Research Events](#page-319-0) table for crafting project events.
+Unless a project has an event table of its own, the Director uses the \1 table for crafting project events.
 
 #### Build Airship
 
@@ -22366,7 +22366,7 @@ Each time the teleportation platform is used, the chance of it malfunctioning an
 
 #### Craft Treasure
 
-You can craft the items found in [Treasures](#page-327-2) in [Chapter 13: Rewards](#page-327-1). Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
+You can craft the items found in \1 in \1. Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
 
 #### Find a Cure
 
@@ -22625,7 +22625,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can shift up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver (see [Maneuvers](#page-287-0) in [Chapter 10: Combat](#page-288-0)).
+**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can shift up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver (see \1 in \1).
 
 **Celestine:** As a main action, you conjure up to three stars, which hover in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have line of effect to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
@@ -22867,7 +22867,7 @@ A hero who has a kit that uses unarmed strikes, such as the Martial Artist and P
 
 Heroes can undertake many different types of research downtime projects, which can involve seeking out new lore, improving existing knowledge with study, uncovering rumors or secrets, and more.
 
-Unless a project has an event table of its own or a special event entry, the Director uses the [Crafting and Research Events](#page-319-0) table for research project events.
+Unless a project has an event table of its own or a special event entry, the Director uses the \1 table for research project events.
 
 #### Discover Lore
 
@@ -23178,7 +23178,7 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 | 1   | While fishing, the hero reels in a talking fish. The fish informs the hero of any events that have occurred within 10 squares of the body of water where they were caught over the last week, or provides one piece of Forbidden Knowledge (see the Discover Lore project), as the Director determines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | 2   | While fishing, the hero reels in a note in a bottle. The note is written in Anjali and binds the reader into a deal with a powerful devil if read out loud. This gives the devil ownership of the reader's soul in exchange for rolling an additional d10 on all future Fishing project rolls.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 3   | While the hero is fishing, passersby inform them of a rumor of a magic fishing rod that allows the fisher to double the size of the fish they reel in. The Director can decide whether the rumor is true, and if so, where the rod might be found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 4   | While fishing, the hero reels in an **angulotl daybringer** (see *[Draw Steel:](https://mcdm.gg/DS-Monsters)  [Monsters](https://mcdm.gg/DS-Monsters)*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their Recoveries by 1 until the end of their next respite, and gains 25 temporary Stamina that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
+| 4   | While fishing, the hero reels in an **angulotl daybringer** (see *\1  \1*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their Recoveries by 1 until the end of their next respite, and gains 25 temporary Stamina that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | 5   | While fishing, the hero reels in half of a mysterious ancient treasure of the Director's choice. If the other half is found, both halves magically meld together to restore the treasure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an edge on Presence tests until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 7   | The hero reaches a new fishing milestone, gaining the following title and benefit.<br/>**Master of Reels:** Whenever you deal damage to a target who is 2 or more squares away from you and that target isn't also force moved, you can pull the target a number of squares equal to your Agility, Reason, or Intuition score (your choice).                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -23243,7 +23243,7 @@ Most treasures are found as part of adventures. Many people concoct dastardly sc
 
 other times, generous and well-off individuals such as monarchs and powerful mages can reward treasures as thanks for heroic deeds.
 
-Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in [Chapter 12: Downtime Projects](#page-307-2). Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
+Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in \1. Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
 
 <!-- @type: treasure | @id: what-does-this-treasure-do -->
 #### What Does This Treasure Do?
@@ -23294,7 +23294,7 @@ If two treasures give a creature a bonus to their Stamina or a bonus to the roll
 
 Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them supernatural. You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
 
-Consumables are organized by echelon to make life easy for the Director handing them out (see [Echelons of Play](#page-22-0) in [Chapter 1:](#page-17-3) [The Basics](#page-17-3)). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their echelon and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd echelon. In some cases, the Director might decide to award consumables of an echelon higher than the heroes' echelon, but such a choice means giving the heroes more power than the encounter-building guidelines in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)* accounts for.
+Consumables are organized by echelon to make life easy for the Director handing them out (see \1 in \1 \1). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their echelon and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd echelon. In some cases, the Director might decide to award consumables of an echelon higher than the heroes' echelon, but such a choice means giving the heroes more power than the encounter-building guidelines in *\1* accounts for.
 
 Your character can carry any number of consumables at a time.
 
@@ -25190,7 +25190,7 @@ Whenever a creature within 10 squares of you deals damage to another creature, y
 
 ### Artifacts
 
-Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building guidelines in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)* expect. That's part of the fun!
+Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building guidelines in *\1* expect. That's part of the fun!
 
 Typically, one creature never holds onto an artifact for too long. Most of these treasures have a sentience of their own and an eagerness to move on. Since many powerful entities might want to get their hands on an artifact, characters might see armies, dragons, and even gods come to collect one from a wielder who refuses to let go.
 
@@ -25459,7 +25459,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 *I said you had twenty-four hours to leave town. That was... what, about twenty-four hours ago?*
 
-**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see [Orden and the Timescape](#page-24-1) in [Chapter 1: The Basics](#page-17-3)), or you are deputized to act for the local authorities.
+**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see \1 in \1), or you are deputized to act for the local authorities.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25499,7 +25499,7 @@ Additionally, the faction is a good source of information. The Director chooses 
 
 **Prerequisite:** You die in a way that prevents your body from being recovered or examined (for instance, by falling off a cliff).
 
-**Effect:** While it might appear that you died, you did not. Instead, you regain 1 Stamina and can spend 1 or more Recoveries. Additionally, you gain a 1st-echelon trinket of the Director's choice (see [Treasures](#page-327-2) earlier in this chapter).
+**Effect:** While it might appear that you died, you did not. Instead, you regain 1 Stamina and can spend 1 or more Recoveries. Additionally, you gain a 1st-echelon trinket of the Director's choice (see \1 earlier in this chapter).
 
 At a dramatic moment determined by the Director, you rejoin your party with an explanation for your narrow escape, and how you found your new trinket along the way.
 
@@ -25713,7 +25713,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** You are given a position of great authority in your faction. Additionally, you gain the following benefits:
 
-- *Requisition:* When you gain this title, you gain a 1st- or 2nd-echelon magic trinket of your choice from your faction (see [Treasures](#page-327-2) earlier in this chapter). Whenever you gain a level, you can swap the trinket out for another one.
+- *Requisition:* When you gain this title, you gain a 1st- or 2nd-echelon magic trinket of your choice from your faction (see \1 earlier in this chapter). Whenever you gain a level, you can swap the trinket out for another one.
 - *You're the Boss:* Lower-ranking members of your faction follow your routine orders. In nonroutine matters, you gain an edge on tests made to influence those characters' behavior.
 
 <!-- @type: title -->
@@ -25766,9 +25766,9 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Healing Gift:* You can use the 1st-level [Conduit](#page-108-0) feature Healing Grace as if you had spent 1 piety (see [Chapter 5: Classes](#page-83-2)). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Healing Gift:* You can use the 1st-level \1 feature Healing Grace as if you had spent 1 piety (see \1). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Last-Ditch Prayer:* As a free maneuver, you recite a prayer for help, gaining a pool of 2d10 of the Heroic Resource granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
-- *Touched by the Divine:* Choose a god or saint from the [Deities and](#page-369-0)  [Domains table](#page-369-0) in [Chapter 14: Gods and Religion](#page-367-1). From that god or saint's domains, choose a [Conduit](#page-108-0) 1st-level domain feature (see [Chapter 5: Classes](#page-83-2)).
+- *Touched by the Divine:* Choose a god or saint from the \1  \1 in \1. From that god or saint's domains, choose a \1 1st-level domain feature (see \1).
 
 <!-- @type: title -->
 #### Heist Hero
@@ -25850,7 +25850,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Boffin:* You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver (see below).
-- *Caustic Alchemy:* You have your choice of the 1st-level shadow college features Coat the Blade or Smoke Bomb (see [Chapter 5: Classes](#page-83-2)). When you use that feature, you can't spend insight unless you have the Insight class feature.
+- *Caustic Alchemy:* You have your choice of the 1st-level shadow college features Coat the Blade or Smoke Bomb (see \1). When you use that feature, you can't spend insight unless you have the Insight class feature.
 - *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
 
 ##### Boffin Properties
@@ -25951,7 +25951,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
-- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased devil ancestry traits (see [Chapter 3](#page-35-0)).
+- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased devil ancestry traits (see \1).
 - *Sly Devil:* You gain the Silver Tongue signature trait from the devil ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
 
@@ -25964,7 +25964,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Dragon Scaled:* Dragon scales grow on your body wherever the heart's blood of the dragon touched you. You gain the Wyrmplate signature trait from the dragon knight ancestry (see [Chapter 3](#page-35-0)).
+- *Dragon Scaled:* Dragon scales grow on your body wherever the heart's blood of the dragon touched you. You gain the Wyrmplate signature trait from the dragon knight ancestry (see \1).
 - *Dragon Touched:* You gain 3 ancestry points to spend on purchased dragon knight ancestry traits.
 
 <!-- @type: title -->
@@ -25976,7 +25976,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *First Mate:* You have a pirate retainer, such as a **human warrior**, chosen by the Director from *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*. This retainer's level increases to your level.
+- *First Mate:* You have a pirate retainer, such as a **human warrior**, chosen by the Director from *\1*. This retainer's level increases to your level.
 - *Swashbuckler:* You can automatically climb at full speed while moving
 - *Treasure Keeper:* You earn 1 Wealth.
 - *Weather Wizard:* Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a free maneuver. Choose from one of the following weather types:
@@ -26056,7 +26056,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 - *Prismacore Eyes:* Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can't use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to stability against magic or psionic abilities.
 - *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
-- *Time Raider Training:* You gain 2 ancestry points to spend on purchased time raider ancestry traits (see [Chapter 3](#page-35-0)).
+- *Time Raider Training:* You gain 2 ancestry points to spend on purchased time raider ancestry traits (see \1).
 
 <!-- @type: title -->
 #### Scarred
@@ -26247,17 +26247,17 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 As you accomplish heroic deeds, your fame allows you to influence NPCs and attract followers. Your infamy among your enemies also grows. Every hero has a Renown score that represents how they can use their reputation to influence others. The higher the score, the greater your impact with those who know of your legend.
 
-At the start of character creation, your Renown is 0. Some careers can increase your initial Renown score (see [Chapter 4: Background](#page-67-0)).
+At the start of character creation, your Renown is 0. Some careers can increase your initial Renown score (see \1).
 
 ### Increasing Renown
 
-Some perks (see [Chapter 7](#page-241-0)), downtime projects ([Chapter 12](#page-307-2)), and titles and treasures (part of [Chapter 13: Rewards](#page-327-1)) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
+Some perks (see \1), downtime projects (\1), and titles and treasures (part of \1) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
 
 In most campaigns, the Director sets the characters up to earn 1 Renown per level, but some campaigns will feature heroes who are more or less famous (or infamous) than that.
 
 ### Influence Negotiation
 
-Renown changes the way NPCs respond to heroes during negotiations (see [Chapter 11](#page-297-0)), whether that renown takes the form of fame or infamy.
+Renown changes the way NPCs respond to heroes during negotiations (see \1), whether that renown takes the form of fame or infamy.
 
 ### Attract Followers
 
@@ -26286,15 +26286,15 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 ##### Artisan
 
-Artisans are crafting experts who can contribute to your research and crafting projects (see [Chapter 12: Downtime Projects](#page-307-2)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
+Artisans are crafting experts who can contribute to your research and crafting projects (see \1). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit an artisan, choose four skills from the crafting skill group that they know (see [Skills](#page-268-0) in [Chapter 9: Tests](#page-263-0)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
+When you recruit an artisan, choose four skills from the crafting skill group that they know (see \1 in \1). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
 
 ##### Retainer
 
 Retainers are heroic NPCs who adventure alongside the player characters. They are controlled by players in combat and are both simpler to run and less powerful than player characters. A hero can have only one retainer in their service at a time unless the Director deems otherwise. Because retainers and their stat blocks are combat focused, the Director can also decide that a large party can have only one retainer in total—or can't have any retainers at all—to keep combat from getting long and tedious.
 
-Rules for retainers are found in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*.
+Rules for retainers are found in *\1*.
 
 ##### Sage
 
@@ -26314,7 +26314,7 @@ Treasures such as magic swords, psionic crowns, and even healing potions are rar
 
 ### Earning Wealth
 
-Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see [Chapter 4: Background](#page-67-0)). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a monarch as a reward for a job well done.
+Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see \1). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a monarch as a reward for a job well done.
 
 In general, a hero earns 1 wealth every second level of play. The Director can increase this rate if they wish.
 
@@ -27297,7 +27297,7 @@ Cho'kassa the Time Rider is the herald of OV the Wave Pilot invoked by those who
 
 In film and TV, the director collaborates with writers, actors, designers, and the many other people working together on a collective story, then makes that story shine. That's also what the Director in *Draw Steel* does! If you plan on being the Director of a *Draw Steel* session or campaign, this chapter of the book focuses on your role in the game.
 
-Before we dive into helpful advice for Directors, we want to make you aware of the *Running the Game* [series of videos on Matthew](https://www.youtube.com/watch?v=e-YZvLUXcR8&list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_)  [Colville's YouTube channel](https://www.youtube.com/watch?v=e-YZvLUXcR8&list=PLlUk42GiU2guNzWBzxn7hs8MaV7ELLCP_). Hey, we know that guy! He's the Design Director of this game! Most of these videos reference the world's oldest roleplaying game, but their advice is universal to folks running tabletop RPGs everywhere.
+Before we dive into helpful advice for Directors, we want to make you aware of the *Running the Game* \1  \1. Hey, we know that guy! He's the Design Director of this game! Most of these videos reference the world's oldest roleplaying game, but their advice is universal to folks running tabletop RPGs everywhere.
 
 ### What's a Campaign?
 
@@ -27364,7 +27364,7 @@ Here's an example of an opening overview that Matthew Colville created for his g
 
 *The rebellion against Ajax begins here. Surely the wards of the emperor contain the power to stop the Overlord. The heroes must travel across the world and brave many dangers to find and unlock the last emperor's wards. Whoever does will wield the lost empire's power.*
 
-As you can see, this opening overview introduces the setting—Vasloria (see [Orden and the Timescape](#page-24-1) in [Chapter 1: The Basics](#page-17-3)). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
+As you can see, this opening overview introduces the setting—Vasloria (see \1 in \1). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
 
 > **Personal Problems at the Table**
 >
@@ -27420,7 +27420,7 @@ The buy-in tells the players that their heroes are going to travel to far-flung 
 
 #### Player Option Restrictions
 
-Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all memonek and time raiders who have come to Vasloria searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see [Chapter 3](#page-35-0)) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see [Chapter 4](#page-67-0)) so that no one can take Aristocrat or Politician.
+Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all memonek and time raiders who have come to Vasloria searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see \1) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see \1) so that no one can take Aristocrat or Politician.
 
 Put any restrictions your campaign has into your pitch!
 
@@ -27444,7 +27444,7 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 ### House Rules
 
-You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if critical hits are super rare and happen only on a natural 20. You could allow heroes to spend hero tokens to reduce the amount of Malice you have (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*). You might decide that all heroes have a free +1 bonus to any characteristic of their choice at 1st level.
+You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if critical hits are super rare and happen only on a natural 20. You could allow heroes to spend hero tokens to reduce the amount of Malice you have (see *\1*). You might decide that all heroes have a free +1 bonus to any characteristic of their choice at 1st level.
 
 The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that critical hits only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
 
@@ -27519,7 +27519,7 @@ Multiple-front campaigns make the world feel authentic and alive, but they requi
 
 As part of your worldbuilding, you can create an outline of the events that might occur in each echelon of your campaign. The farther these events get from the start of the campaign, the vaguer you can leave the details. The actions of the heroes should matter and influence the course of events, so don't plan too much. Otherwise, you might end up throwing out earlier preparation to make player and character decisions matter.
 
-Your outline should include the plans of the villains in your campaign. Review [Echelons of Play](#page-22-0) in [Chapter 1: The Basics](#page-17-3) to get an idea of the threat level and stories the heroes should be experiencing at each stage of the campaign. An echelon outline might look like this:
+Your outline should include the plans of the villains in your campaign. Review \1 in \1 to get an idea of the threat level and stories the heroes should be experiencing at each stage of the campaign. An echelon outline might look like this:
 
 - **1st Echelon:** The heroes protect the village of Gravesford in the Barony of Bedegar from the forces of Lord Saxton, an usurper and tyrant loyal to Ajax. Eventually, they must bring the fight to Lord Saxton's keep in Bedegar City.
 - **2nd Echelon:** After toppling Saxton's keep, the heroes find a letter from Ajax detailing plans to amass powerful treasures from throughout Vasloria. The heroes can race to these locations to claim the treasures before Ajax's forces do.
@@ -27608,7 +27608,7 @@ Every adventure should have an inciting incident that either sees the heroes dis
 
 > **Complications and Adventures**
 >
-> If the heroes in your campaign have taken complications (see [Complications and Campaigns](#page-391-0) above), it's a good idea to have at least one complication make trouble for a hero during an adventure, or play some other part in the adventure's story. Rotate the hero whose complication is highlighted each time, so that every player gets a chance to be at the center of the story.
+> If the heroes in your campaign have taken complications (see \1 above), it's a good idea to have at least one complication make trouble for a hero during an adventure, or play some other part in the adventure's story. Rotate the hero whose complication is highlighted each time, so that every player gets a chance to be at the center of the story.
 
 #### Creating NPCs
 
@@ -27679,7 +27679,7 @@ When you create a specific site, ask the following questions in addition to the 
 
 #### Plan Scenes
 
-Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, montage tests, negotiations, respites, and scenes of exploration and social interaction. [Creating Scenes](#page-395-0) below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
+Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, montage tests, negotiations, respites, and scenes of exploration and social interaction. \1 below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
 
 When you're thinking about scenes, write down which sites and NPCs are tied to those scenes, then try to arrange the scenes in an order that makes sense for the story. It might be that after your inciting incident, certain scenes can be tackled in any order. For example, if the adventure goal is to recover three pieces of an ancient staff before the villain does, the heroes might be able to explore the three sites where the pieces are hidden in any order they choose. Their choice might even have consequences. It might be that the first site they choose has none of the villain's lackeys investigating it yet, the second site features a showdown with those lackeys, and the third site has already been cleaned out by the villain by the time the characters get there! Other scenes might have to happen more linearly. An investigation typically includes a trail of clues that takes the heroes from one scene to the next, but the players can surprise you.
 
@@ -27711,7 +27711,7 @@ Director sheets are a resource you can use to prepare and track the progress of 
 
 #### Creating and Running Combat
 
-There's a lot to be said about building and preparing great combat encounters for *Draw Steel*. So much so that we had to put that advice in another book—the one with all the monsters and other stuff you need to build combat encounters. Go check it out in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*.
+There's a lot to be said about building and preparing great combat encounters for *Draw Steel*. So much so that we had to put that advice in another book—the one with all the monsters and other stuff you need to build combat encounters. Go check it out in *\1*.
 
 One tip that we *will* note here (and it's also in the other book because it bears repeating) is that combat encounters should hold narrative weight. *Draw Steel* isn't a game of attrition, where a few small, trivial combat encounters are meant to weaken the heroes, winnowing down their resources to make the final, important, epic clash with the villain more of a struggle. A quick combat encounter with two bumbling guards at a gate is likely over in a matter of less than a round and shouldn't award the heroes a Victory. These can be fun scenes to roleplay, but they aren't going to make full use of the characters' features and should occur infrequently. Most of the time when combat takes place, the stakes for the heroes and the story should be high!
 
@@ -27764,7 +27764,7 @@ Allow the heroes' investigation to drive the action. In an exploration scene, yo
 
 The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a test. However, following the tracks that lead out of the cave toward the bandits' new hideout does require a test, because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no test is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a Reason test to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
 
-[Chapter 9: Tests](#page-263-0) explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
+\1 explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
 
 Additionally, if a player has a particularly clever and plausible idea for attempting to overcome a challenge, you can have them automatically succeed on a task even if failure would make the story more interesting. It's important to reward clever thinking with success once in a while, so that the players are encouraged to think outside the box and create memorable moments!
 
@@ -27800,7 +27800,7 @@ If a test is a **success**, the hero does what they set out to do! You can even 
 
 If the test is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same test an automatic success, grant an edge on a future test for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby NPC to come forth and offer aid, or earn the group a hero token. A reward on a test is yours to choose.
 
-Sample consequences and rewards for tests are detailed in [Chapter 9: Tests](#page-263-0).
+Sample consequences and rewards for tests are detailed in \1.
 
 #### Creating and Running Hazards
 
@@ -27816,7 +27816,7 @@ The hazards you'll create and use in your adventures come in one of three types:
 
 > **Terrain as Hazards**
 >
-> Some of the best hazards are the terrain options found in *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*. These dynamic options work great in combat encounters, but you can also use many of them as hazards the heroes must cross (such as acid pools and lava) or contend with (such as the arcane object known as the black obelisk) as they travel from one destination to another. You can use these hazards as is, or rework them to match your story. For example, you might convert an acid pool to a pool of toxic sludge by having it deal poison damage instead of acid damage.
+> Some of the best hazards are the terrain options found in *\1*. These dynamic options work great in combat encounters, but you can also use many of them as hazards the heroes must cross (such as acid pools and lava) or contend with (such as the arcane object known as the black obelisk) as they travel from one destination to another. You can use these hazards as is, or rework them to match your story. For example, you might convert an acid pool to a pool of toxic sludge by having it deal poison damage instead of acid damage.
 
 ##### Activated Hazard Triggers
 
@@ -27885,7 +27885,7 @@ Refer to the details you wrote down for your NPCs while you roleplay them. Keep 
 
 ### Creating and Running Negotiations
 
-When you're preparing for a negotiation (see [Chapter 11: Negotiation](#page-297-0)), you'll want to pick an NPC and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
+When you're preparing for a negotiation (see \1), you'll want to pick an NPC and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
 
 When assigning negotiation stats, keep the following guidelines in mind:
 
@@ -28278,7 +28278,7 @@ You can use montage tests to play out chases, escapes, investigations, wildernes
 
 When you prepare a montage test, you'll want to write down some key information.
 
-First, make a list of potential challenges the heroes can face during the montage test. This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the montage test, but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out hero tokens as a default consequence and reward (see [Test Outcomes](#page-264-0) in [Chapter 9: Tests](#page-263-0)).
+First, make a list of potential challenges the heroes can face during the montage test. This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the montage test, but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out hero tokens as a default consequence and reward (see \1 in \1).
 
 You'll then need to create the three outcomes of the montage: total success, partial success, and total failure. With a total success, the heroes should accomplish whatever they set out to do. With a partial success, they should accomplish their goal at a cost, create a new problem for themselves after doing what they set out to do, or not quite accomplish their full goal. With a total failure, the characters fail to do whatever they set out to do, but this result should not grind the story to a halt. Maybe they lose track of the fleeing lackeys they were pursuing, but they know they can now raid a mage's tower to find that information. Even if failure costs the characters dearly, they should still have options for continuing the adventure.
 
@@ -28286,7 +28286,7 @@ You'll then need to create the three outcomes of the montage: total success, par
 
 When you run a montage test, start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make tests.
 
-When you adjudicate individual tests as part of a montage test, do so as you would any other test (see [Adjudicating Tests](#page-263-0) in [Chapter 9](#page-263-0)). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an edge or impose a bane on a test made later as part of the montage test. Do whatever makes sense for the heroes' actions in the narrative.
+When you adjudicate individual tests as part of a montage test, do so as you would any other test (see \1 in \1). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an edge or impose a bane on a test made later as part of the montage test. Do whatever makes sense for the heroes' actions in the narrative.
 
 After each test, narrate the hero's failure or success in such a way that the other players can understand if and how the challenge has been overcome. Your description might even spark some new ideas for what the characters can do next.
 
@@ -28486,7 +28486,7 @@ One of the following outcomes ends the montage test:
 
 ### Running Respites
 
-When the heroes decide to take a respite (see [Respite](#page-21-4) in [Chapter 1:](#page-17-3)  [The Basics](#page-17-3)), your role as Director changes a bit. Most of the heroes' activities during respites revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
+When the heroes decide to take a respite (see \1 in \1  \1), your role as Director changes a bit. Most of the heroes' activities during respites revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
 
 #### Safe Place
 
@@ -28496,13 +28496,13 @@ Heroes can't take a respite unless they're in a safe place. This typically means
 
 #### Too Many Respites?
 
-It's up to the players how many respites the heroes take in a row. Characters eager to take a long series of respites to undertake downtime projects ([Chapter 12](#page-307-2)) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with respites so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
+It's up to the players how many respites the heroes take in a row. Characters eager to take a long series of respites to undertake downtime projects (\1) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with respites so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
 
 If you prefer a campaign that has few respites, you might want to deploy artisans, sages, and readily available project sources to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
 
 #### Project Events
 
-Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in [Chapter 12](#page-307-2)) are optional, and you can use them as frequently as you like. In general, more than one or two events per respite can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
+Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in \1) are optional, and you can use them as frequently as you like. In general, more than one or two events per respite can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
 
 When you're running downtime events, be sure to rotate which heroes are in the spotlight of the action. Don't focus on the same hero over and over again. You can also do a little preparation for events before you play them out, reading the event prompt and fleshing it out into a scene. Prompts are intentionally vaguely written so you can modify them as you see fit or easily create your own.
 
@@ -28530,7 +28530,7 @@ That said, you can make it easier to craft treasures and other items by changing
 
 ### Granting Rewards
 
-You should have as much fun giving out treasure, Renown, wealth, and titles to the characters as the players have earning those rewards (see [Chapter 13: Rewards](#page-327-1)). But what's the right amount of treasure to give out without turning the heroes into total badasses who can simply cut down every dragon they meet? How often do the rules of the game expect a hero to earn Renown? What about titles? This section has answers for you!
+You should have as much fun giving out treasure, Renown, wealth, and titles to the characters as the players have earning those rewards (see \1). But what's the right amount of treasure to give out without turning the heroes into total badasses who can simply cut down every dragon they meet? How often do the rules of the game expect a hero to earn Renown? What about titles? This section has answers for you!
 
 #### Granting Treasures
 
@@ -28544,7 +28544,7 @@ Once you have treasures in mind, you can use the following progression as a base
 
 You don't have to award the full complement of treasure to heroes especially those using their downtime to craft things! You can spread out the pace at which characters earn treasures by having them find the project sources and item prerequisites for crafting an item instead of finding an item outright.
 
-When you're planning an adventure, put the treasures and crafting materials the heroes can earn into your adventure outline (see [Creating Adventures](#page-392-0) earlier in this chapter). Enemies who have access to treasures that can help them against the heroes don't keep those treasures hidden away. They use them in battle, after which victorious characters can claim them!
+When you're planning an adventure, put the treasures and crafting materials the heroes can earn into your adventure outline (see \1 earlier in this chapter). Enemies who have access to treasures that can help them against the heroes don't keep those treasures hidden away. They use them in battle, after which victorious characters can claim them!
 
 ##### Treasures Above 1st Level
 
@@ -28559,7 +28559,7 @@ The players can choose their hero's treasures, and can replace any leveled treas
 
 #### Making New Treasures
 
-You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in [Chapter 12: Downtime Projects](#page-307-2).
+You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in \1.
 
 You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the damage types, and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
 
@@ -28601,7 +28601,7 @@ Use the following guidelines for awarding Victories to the heroes, increasing th
 
 ##### Combat Encounters
 
-A successful combat encounter in which the party's objectives are achieved earns each hero 1 Victory. Particularly difficult encounters are worth 2 Victories when completed successfully. *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)* has more information about Victories and combat difficulty.
+A successful combat encounter in which the party's objectives are achieved earns each hero 1 Victory. Particularly difficult encounters are worth 2 Victories when completed successfully. *\1* has more information about Victories and combat difficulty.
 
 ##### Montage Tests
 
@@ -28645,7 +28645,7 @@ Talk over and decide how you're going to settle rules disputes. We recommend tha
 
 ##### Safety Tools
 
-Talk about the safety tools you plan to use at the table. For more information about safety tools and a safety tool checklist you can use for your games, check out the MCDM Tabletop Safety Toolkit at *[mcdm.gg/SafetyToolkit](http://mcdm.gg/SafetyToolkit)*.
+Talk about the safety tools you plan to use at the table. For more information about safety tools and a safety tool checklist you can use for your games, check out the MCDM Tabletop Safety Toolkit at *\1*.
 
 ##### Campaign Pitch
 
@@ -28672,7 +28672,7 @@ When all else is done, it's a great idea to play an opening scene during your fi
 Your opening encounter should introduce or hint at the villain the heroes face during their first adventure. You can use any of the following encounter ideas to get you started:
 
 - While traveling to the settlement where their first adventure takes place, the heroes and their caravan or ship are attacked by brigands.
-- The heroes enter a new town to find war dogs (see *[Draw Steel: Monsters](https://mcdm.gg/DS-Monsters)*) ready to publicly execute a noble who refused to bend the knee to the brutal tyrant Ajax.
+- The heroes enter a new town to find war dogs (see *\1*) ready to publicly execute a noble who refused to bend the knee to the brutal tyrant Ajax.
 - The heroes are at a tavern enjoying a night off when a band of gnoll raiders attacks and lights the place on fire.
 - The heroes are camped in a swamp when undead emerge from the muck and surround them.
 - While watching a theatrical performance, an actor (perhaps by accident) performs a ritual that opens a portal to the Abyssal Wasteland and summons a horde of demons.
