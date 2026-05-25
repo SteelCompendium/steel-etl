@@ -10,7 +10,7 @@ content = p.read_text()
 original_count = len(re.findall(r'\[([^\]]+)\]\([^)]+\)', content))
 
 # Strip markdown links: [text](url) -> text
-stripped = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\\1', content)
+stripped = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', content)
 
 remaining_count = len(re.findall(r'\[([^\]]+)\]\([^)]+\)', stripped))
 p.write_text(stripped)
