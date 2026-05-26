@@ -77,7 +77,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Introduction | 7-589 | done | done (27) | done (21) | - | - | - | - | - | - | done (3) |
 | The Basics | 590-1055 | done | done (16) | done (32) | - | - | - | - | - | - | done (11) |
 | Making a Hero | 1056-1263 | done | done (12) | done (18) | - | - | - | - | - | - | done (15) |
-| Ancestries | 1264-3199 | done | - | - | - | - | - | - | - | - | - |
+| Ancestries | 1264-3199 | done | done (10) | done (93) | - | - | - | - | - | - | done (9) |
 | Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
 | Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
 | Careers | 3494-4065 | done | - | - | - | - | - | - | - | - | - |

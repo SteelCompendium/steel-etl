@@ -1264,61 +1264,61 @@ Some games don't track XP or goals at all. The heroes simply gain a level whenev
 <!-- @type: chapter | @id: ancestries -->
 # Ancestries
 
-Fantastic peoples inhabit the worlds of *Draw Steel*. Among them are devils, dwarves, elves, time raiders—and of course humans, whose culture and history dominates many worlds.
+Fantastic peoples inhabit the worlds of *Draw Steel*. Among them are [devils](scc:mcdm.heroes.v1/ancestry/devil), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), elves, [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider)—and of course [humans](scc:mcdm.heroes.v1/ancestry/human), whose culture and history dominates many worlds.
 
 Your hero is one of these folks! The fantastic ancestry you choose bestows benefits that come from your anatomy and physiology. This choice doesn't grant you cultural benefits, such as crafting or lore skills, though. While many game settings have cultures made of mostly one ancestry, other cultures and worlds have a cosmopolitan mix of peoples.
 
-In *Draw Steel*, ancestry describes how you were born. Culture (part of Chapter 4: Background) describes how you grew up. If you want to be a wode elf who was raised in a forest among other wode elves, you can do that! If you want to play a wode elf who was raised in an underground city of dwarves, humans, and orcs, you can do that too!
+In *Draw Steel*, ancestry describes how you were born. Culture (part of Chapter 4: Background) describes how you grew up. If you want to be a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in a forest among other [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), you can do that! If you want to play a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in an underground city of [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc), you can do that too!
 
 This chapter details twelve ancestries for the game:
 
-**Devil:** Devils originated in the Seven Cities of Hell and have a supernatural charisma that helps them persuade others. They are similar in stature to humans, and their skin tones include deep blues, purples, and reds. They sport horns, eyes of all shades (including gold and red), and tails, and some have feathered or leathery wings.
+**[Devil](scc:mcdm.heroes.v1/ancestry/devil):** [Devils](scc:mcdm.heroes.v1/ancestry/devil) originated in the Seven Cities of Hell and have a supernatural charisma that helps them persuade others. They are similar in stature to [humans](scc:mcdm.heroes.v1/ancestry/human), and their skin tones include deep blues, purples, and reds. They sport horns, eyes of all shades (including gold and red), and tails, and some have feathered or leathery wings.
 
-**Dragon Knight:** Dragon knights are muscled draconic humanoids who stand between 6 and 7 feet tall. The scales covering their reptilian heads, bodies, and tails can be almost any color. All dragon knights have wings, but on only a few are those wings big enough to let them fly.
+**[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** [Dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) are muscled draconic humanoids who stand between 6 and 7 feet tall. The scales covering their reptilian heads, bodies, and tails can be almost any color. All dragon knights have wings, but on only a few are those wings big enough to let them fly.
 
-**Dwarf:** Humanoids with stony skin, dwarves have short and stout bodies. Many carve supernatural runes into their flesh, and some have beards made of crystals.
+**[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** Humanoids with stony skin, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have short and stout bodies. Many carve supernatural runes into their flesh, and some have beards made of crystals.
 
-**Wode Elf:** Lithe humanoids with finely furred skin in all shades of blue, wode elves have angular features and large, pointed ears akin to a bat's. They possess a supernatural glamor that allows them to blend in with their surroundings when they wish to hide.
+**[Wode Elf](scc:mcdm.heroes.v1/ancestry/wode-elf):** Lithe humanoids with finely furred skin in all shades of blue, [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) have angular features and large, pointed ears akin to a bat's. They possess a supernatural glamor that allows them to blend in with their surroundings when they wish to hide.
 
-**High Elf:** Stately and graceful, high elves have tall, willowy bodies, pointed ears, and smoother skin than most other humanoids. Rare metal inlays such as gold, platinum, palladium, and iridium act as organic components within their skin. The truest form of any high elf is hidden from most—sometimes even from themself—thanks to a supernatural glamor that makes them more attractive to others, whatever that might mean to an individual. This glamor transcends physical appearance, also slightly altering a high elf's tone and smell.
+**[High Elf](scc:mcdm.heroes.v1/ancestry/high-elf):** Stately and graceful, [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) have tall, willowy bodies, pointed ears, and smoother skin than most other humanoids. Rare metal inlays such as gold, platinum, palladium, and iridium act as organic components within their skin. The truest form of any high elf is hidden from most—sometimes even from themself—thanks to a supernatural glamor that makes them more attractive to others, whatever that might mean to an individual. This glamor transcends physical appearance, also slightly altering a high elf's tone and smell.
 
-**Hakaan:** Descended from stone giants, the mighty hakaan stand over 9 feet tall and have well-muscled bodies made of organic stone. They are the largest ancestry in this book!
+**[Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan):** Descended from stone giants, the mighty [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) stand over 9 feet tall and have well-muscled bodies made of organic stone. They are the largest ancestry in this book!
 
-**Human:** Humans are the most numerous people in Orden and many other fantasy worlds! In *Draw Steel*, humans have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
+**[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in Orden and many other fantasy worlds! In *Draw Steel*, humans have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
 
-**Memonek:** Originating on Axiom, the Plane of Uttermost Law, memonek are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower speeds.
+**[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** Originating on Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower speeds.
 
-**Orc:** Orcs have skin in green tones and stand slightly taller and wider than humans. A supernatural energy they call "the blood fire" flows through their veins, igniting colorful lines in an orc's skin during life-or-death battles.
+**[Orc](scc:mcdm.heroes.v1/ancestry/orc):** [Orcs](scc:mcdm.heroes.v1/ancestry/orc) have skin in green tones and stand slightly taller and wider than [humans](scc:mcdm.heroes.v1/ancestry/human). A supernatural energy they call "the blood fire" flows through their veins, igniting colorful lines in an orc's skin during life-or-death battles.
 
-**Polder:** The smallest of the ancestries in this book, polders stand no taller than 3-1/2 feet. They look like smaller humans, and they have the ability to blend in with the shadows.
+**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** The smallest of the ancestries in this book, [polders](scc:mcdm.heroes.v1/ancestry/polder) stand no taller than 3-1/2 feet. They look like smaller [humans](scc:mcdm.heroes.v1/ancestry/human), and they have the ability to blend in with the shadows.
 
-**Revenant:** No hero starts their life as a revenant. Rather, these undead creatures return to the world of the living because they have dire business that must be finished. A character of any ancestry can become a revenant.
+**[Revenant](scc:mcdm.heroes.v1/ancestry/revenant):** No hero starts their life as a [revenant](scc:mcdm.heroes.v1/ancestry/revenant). Rather, these undead creatures return to the world of the living because they have dire business that must be finished. A character of any ancestry can become a revenant.
 
-**Time Raider:** Travelers of the timescape, the time raiders (or kuran'zoi as they call themselves) have four arms and a single ocular sensor instead of a pair of eyes. Many have innate psionic abilities that make them capable warriors.
+**[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider):** Travelers of the timescape, the [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) (or kuran'zoi as they call themselves) have four arms and a single ocular sensor instead of a pair of eyes. Many have innate psionic abilities that make them capable warriors.
 
 > **Other Sections**
 >
 > The rules for using ancestries refer to lots of other parts of the game. You can find information on specific topics as follows:
 >
-> Edges and banes, Recoveries, respites: Chapter 1: The Basics
+> Edges and banes, Recoveries, respites: Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
 >
-> Languages: Chapter 4: Background
+> Languages: Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)
 >
-> Abilities, conditions, potencies, saving throws, surges: Chapter 5: Classes
+> Abilities, conditions, potencies, saving throws, surges: Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)
 >
-> Skills, tests: Chapter 9: Tests
+> Skills, tests: Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
-> Crafting projects: Chapter 12: Downtime Projects
+> Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and forced movement, winded: Chapter 10: Combat
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and forced movement, winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
 Orden (talked about in Chapter 1: The Basics) is a fantasy world. It works on principles similar to those many people throughout history believed governed the real world. "I dunno, a god did it probably."
 
-Humans, elves, orcs, dwarves, dragons, all have creator gods—the Elder Gods, four of whom made the world for some reason. Maybe they were bored.
+[Humans](scc:mcdm.heroes.v1/ancestry/human), elves, [orcs](scc:mcdm.heroes.v1/ancestry/orc), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), dragons, all have creator gods—the Elder Gods, four of whom made the world for some reason. Maybe they were bored.
 
-The fashion among those gods for creating new, intelligent, species petered out after the orcs. Once humans came along and invented war, it stopped being fun.
+The fashion among those gods for creating new, intelligent, species petered out after the [orcs](scc:mcdm.heroes.v1/ancestry/orc). Once [humans](scc:mcdm.heroes.v1/ancestry/human) came along and invented war, it stopped being fun.
 
 It may be all species were created by gods. That's certainly what a lot of people throughout our own history assumed. Orden has no Darwin and probably won't ever. There's still inheritance. People expect children to look like their parents, but there aren't evolutionary pressures except on a very local scale.
 
@@ -1328,11 +1328,11 @@ However, mortals are not gods and lack their ineffable wisdom. They are, in fact
 
 In every instance in recorded history, attempts by mortals to make obedient servitor species backfired. The steel dwarves worked marvels with valiar, the truemetal, and the miracle mineral iridoss, known as prismacore, that grants objects a semblance of life. Eventually their science and magics produced the omnivok—machines that were self-aware. Perhaps uniquely, when the dwarves realized they had created beings equal to themselves they stopped their work and gave their creations full rights and independence, preferring to work with them rather than attempt, and inevitably fail, to be their masters.
 
-Normally, it doesn't work out that nicely. Even with the best of intentions, things go awry. The Dragon Phalanx were created by Good King Omund's wizard Vitae to be the perfect knights, dispensing justice throughout the lands. But the same sorceries that grant self-awareness also grant independence. Agency. And though they enjoyed 30 years of peace and justice, eventually the dragon knights were betrayed by one of their own, seduced by the power offered by Ajax.
+Normally, it doesn't work out that nicely. Even with the best of intentions, things go awry. The Dragon Phalanx were created by Good King Omund's wizard Vitae to be the perfect knights, dispensing justice throughout the lands. But the same sorceries that grant self-awareness also grant independence. Agency. And though they enjoyed 30 years of peace and justice, eventually the [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) were betrayed by one of their own, seduced by the power offered by Ajax.
 
 The law of unintended consequences applies to the just and the unjust alike.
 
-Usually when some powerful being tries to create an intelligent species, it's for less-than-virtuous reasons. The synliroi are responsible for several intelligent species in the timescape, each an attempt to create a perfectly obedient servitor species. The most notorious example are the kuran'zoi—the time raiders who rebelled almost immediately and who carry a burning hate for the voiceless talkers to this day.
+Usually when some powerful being tries to create an intelligent species, it's for less-than-virtuous reasons. The synliroi are responsible for several intelligent species in the timescape, each an attempt to create a perfectly obedient servitor species. The most notorious example are the kuran'zoi—the [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) who rebelled almost immediately and who carry a burning hate for the voiceless talkers to this day.
 
 A perhaps less egregious use of this power is called *quickening*, used when a powerful mage lives in and amongst some clever species just on the cusp of self-awareness. These instances, which are much more numerous than creating a new species from whole cloth, are more like the concept of *uplifting* found in science fiction. The mage or witch or shaman didn't create anything. They just gave these cute, clever, frog-things a little boost. A little nudge. And suddenly there are angulotls walking around having conversations with each other,
 
@@ -1348,7 +1348,7 @@ At the end of the day, if you throw out all of this and replace it with somethin
 
 Obviously you're free to invent whatever name you want for your character! And your director might have their own setting that uses different cultures than those in Orden. But if you want to pick an Orden-appropriate name for your hero, keep reading.
 
-Equally obviously; names are cultural, not biological. Your character probably has a name appropriate to whatever culture they were born into, or grew up in. A human raised by hakaan would probably have a hakaan name.
+Equally obviously; names are cultural, not biological. Your character probably has a name appropriate to whatever culture they were born into, or grew up in. A [human](scc:mcdm.heroes.v1/ancestry/human) raised by [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) would probably have a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) name.
 
 #### Last Names and Bynames
 
@@ -1370,7 +1370,7 @@ Most cultures in Vasloria make a distinction between masculine and feminine name
 
 Among those cultures which do make a distinction between masculine and feminine names, there are always names that *could* refer to a person of any gender. Here in the real world, you can't tell a person's gender just from the name "Shane." This is mostly because which names are considered masculine or feminine changes over time, and when this happens, there's a period—maybe a few generations—where the name could refer to a person of any gender.
 
-Of course, there's no law (neither metaphorically nor literally) that requires your character to go by their birth name. They might not even know their birth name depending on what happened after they were born. It's not unusual, especially among talents, for a hero to adopt a moniker or sobriquet instead of a name. And in some cultures, there's a tradition of changing your name—or at least how you prefer to be known—as you go through different stages of life. High elves sometimes adopt a wholly new name when they reach a certain age, or more commonly, they choose a different component of their name. When A Mist Curls Around Dying Embers was a young woman, she was known as Mist. Now that she's the master of the Tower of Translation, she's known as Embers.
+Of course, there's no law (neither metaphorically nor literally) that requires your character to go by their birth name. They might not even know their birth name depending on what happened after they were born. It's not unusual, especially among [talents](scc:mcdm.heroes.v1/class/talent), for a hero to adopt a moniker or sobriquet instead of a name. And in some cultures, there's a tradition of changing your name—or at least how you prefer to be known—as you go through different stages of life. [High elves](scc:mcdm.heroes.v1/ancestry/high-elf) sometimes adopt a wholly new name when they reach a certain age, or more commonly, they choose a different component of their name. When A Mist Curls Around Dying Embers was a young woman, she was known as Mist. Now that she's the master of the Tower of Translation, she's known as Embers.
 
 #### Authentic or Comedic?
 
@@ -1408,7 +1408,7 @@ The choice of name is an important one, because it says a lot about you and how 
 
 ##### Wode Elf Names
 
-Elves in general have a casual attitude toward gender, it having no direct bearing on procreation for them. (Normal elf upon learning how humans mate: "You mean... like animals?") They tend to view the various sex-linked traits associated among other ancestries with masculinity or femininity as a kind of fashion to be taken up or discarded as the mood suits. Over one life, any elf might wear masculine features, or feminine features, or both, many times. For wode elves, this often means adopting a new name, or a different version of the same name. Llyandros might become Llyandra for instance.
+Elves in general have a casual attitude toward gender, it having no direct bearing on procreation for them. (Normal elf upon learning how [humans](scc:mcdm.heroes.v1/ancestry/human) mate: "You mean... like animals?") They tend to view the various sex-linked traits associated among other ancestries with masculinity or femininity as a kind of fashion to be taken up or discarded as the mood suits. Over one life, any elf might wear masculine features, or feminine features, or both, many times. For [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), this often means adopting a new name, or a different version of the same name. Llyandros might become Llyandra for instance.
 
 **Feminine:** Elvyr, Eviarwyc, Illwyv, Iorwyth, Lliarwyn, Meithennyn, Nimuë, Rhegyth, Viarwyn, Ysallwyth
 
@@ -1512,7 +1512,7 @@ Humans have the potential to live a little longer on Orden than they do in the r
 
 Unless otherwise noted, a character of any of these ancestries is size 1M and has speed 5 and stability 0.
 
-Where an ancestry provides you with an ability, see Abilities in Chapter 5: Classes for details of the ability format.
+Where an ancestry provides you with an ability, see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for details of the ability format.
 
 <!-- @type: feature | @id: ancestry-traits -->
 ### Ancestry Traits
@@ -1596,7 +1596,7 @@ Then the devil turned and ran away as quickly as he could.
 
 "Legendarily *vain*," his dinner guest teased with a smile.
 
-"Simply playing my part, darling. People expect a certain amount of vanity in a troubadour, don't they?"
+"Simply playing my part, darling. People expect a certain amount of vanity in a [troubadour](scc:mcdm.heroes.v1/class/troubadour), don't they?"
 
 She laughed. "Riyalkin the Red Pen is every bit as advertised."
 
@@ -1618,7 +1618,7 @@ He waggled his eyebrows. "Style counts for something."
 
 "Well, I was an accountant here in Capital for several years in between." "An accountant!"
 
-Riyalkin shrugged. "It's what I did before. I'm moderately good at it." "And how does one go from being an alien accountant to a famous troubadour?"
+Riyalkin shrugged. "It's what I did before. I'm moderately good at it." "And how does one go from being an alien accountant to a famous [troubadour](scc:mcdm.heroes.v1/class/troubadour)?"
 
 "Well..." Riyalkin seemed uncomfortable suddenly. "It's just that... the thing is, accountancy in the Seven Cities is just so much more interesting than it is here. Plotting and scheming, always on the lookout for an assassin, people constantly trying to claw their way up the ladder, usually over your dead body. And I guess I just... missed the excitement."
 
@@ -1637,7 +1637,7 @@ Devil heroes have access to the following traits.
 
 #### Signature Trait: Silver Tongue
 
-Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: Tests), and you gain an edge on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: Negotiation).
+Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an edge on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
 
 #### Purchased Devil Traits
 
@@ -1678,7 +1678,7 @@ The ritual of Dracogenesis that grants the power to create a generation of drago
 
 The largest extant population of draconians is the remnants of the Dragon Phalanx in Vasloria. Created by Good King Omund's wizard Vitae, the Dragon Phalanx once numbered several thousand of the king's greatest knights, ensuring the rule of law across the land.
 
-Knighthood was a title carried by every member of that first generation of dragon knights. Within the Dragon Phalanx were shadows, censors, tacticians, and elementalists. Members of virtually every heroic vocation could be found in one of the eight dragonflights that made up the phalanx. For over 30 years, these heroes were symbols of justice, protecting the weak from the strong, and standing between the common folk and those who sought power over others. Those who grew up in that place and time could not imagine any other way of life.
+Knighthood was a title carried by every member of that first generation of dragon knights. Within the Dragon Phalanx were [shadows](scc:mcdm.heroes.v1/class/shadow), [censors](scc:mcdm.heroes.v1/class/censor), [tacticians](scc:mcdm.heroes.v1/class/tactician), and [elementalists](scc:mcdm.heroes.v1/class/elementalist). Members of virtually every heroic vocation could be found in one of the eight dragonflights that made up the phalanx. For over 30 years, these heroes were symbols of justice, protecting the weak from the strong, and standing between the common folk and those who sought power over others. Those who grew up in that place and time could not imagine any other way of life.
 
 Then Ajax came.
 
@@ -1688,11 +1688,11 @@ The cloaked figure at the back of the inn stood up. As they did so, their hood s
 
 A tall, broad draconian stepped into the light. He was old, his scales battle-scarred. He rested one clawed hand on the pommel of a mace that hung from a loop on his belt, while the other carried his shield by a strap. His flat, expressionless look was more terrifying than any threatening glower.
 
-The three human bandits took a step back. One of the dwarves just sneered—then, sensing his human compatriots' reluctance, turned to look at them. "What's this?" the lead dwarf growled.
+The three [human](scc:mcdm.heroes.v1/ancestry/human) bandits took a step back. One of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) just sneered—then, sensing his [human](scc:mcdm.heroes.v1/ancestry/human) compatriots' reluctance, turned to look at them. "What's this?" the lead dwarf growled.
 
 Looking at the dragon knight, another bandit added quickly, "We didn't know there was one of you here."
 
-The draconian didn't move. Didn't give any indication he heard the man. Just stared unblinking at the lead dwarf. "Think of the *bounty*," the dwarf hissed to the humans, but he kept his eye on the draconian. "We'll all be *rich*."
+The draconian didn't move. Didn't give any indication he heard the man. Just stared unblinking at the lead dwarf. "Think of the *bounty*," the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) hissed to the [humans](scc:mcdm.heroes.v1/ancestry/human), but he kept his eye on the draconian. "We'll all be *rich*."
 
 The two dwarves surveyed the tavern. The people were now all facing them. A few had stood up. They weren't afraid anymore.
 
@@ -1840,7 +1840,7 @@ Dwarves are the children of the elder god Ord, and a common phrase among dwarves
 
 "They can be stubborn," Embers said.
 
-John smiled and gave her a look as they walked around the barn. "Yeah not like elves and humans, right?"
+John smiled and gave her a look as they walked around the barn. "Yeah not like elves and [humans](scc:mcdm.heroes.v1/ancestry/human), right?"
 
 Embers grinned.
 
@@ -1928,7 +1928,7 @@ John shook his head.
 
 Dazar stared at the man, this knight of Tor, and looked at Embers quietly radiating pride in her friend.
 
-"Hmm," Dazar grunted. He opened a pouch on his chest armor and inserted the coin. "We must find a troubadour, to tell the tale of Saxton's fall. I cannot wait to hear how it ends!" He walked between them, carrying his staff over his shoulder.
+"Hmm," Dazar grunted. He opened a pouch on his chest armor and inserted the coin. "We must find a [troubadour](scc:mcdm.heroes.v1/class/troubadour), to tell the tale of Saxton's fall. I cannot wait to hear how it ends!" He walked between them, carrying his staff over his shoulder.
 
 "Come!" he barked. "There's a world needs mending! Why stand we here idle?"
 
@@ -1978,7 +1978,7 @@ You have a magic connection to the earth. When you spend 1 uninterrupted hour si
 <!-- @type: ancestry | @id: wode-elf -->
 ## Wode Elf
 
-Children of the sylvan celestials and masters of the elf-haunted forests called wodes, wode elves see all forests as their domain by birthright. They know and enjoy their reputation among humans for snatching children who wander too far into the woods. Humans *should* fear the trees.
+Children of the sylvan celestials and masters of the elf-haunted forests called wodes, wode elves see all forests as their domain by birthright. They know and enjoy their reputation among [humans](scc:mcdm.heroes.v1/ancestry/human) for snatching children who wander too far into the woods. [Humans](scc:mcdm.heroes.v1/ancestry/human) *should* fear the trees.
 
 The wode elves' natural ability to mask their presence, called *glamor*, complements their guerilla style of fighting, letting them strike quickly from cover and then meld back into the underbrush. These traits also make the relatively few wode elves who dwell in cities naturally adept at urban warfare.
 
@@ -1998,7 +1998,7 @@ Then, only a few feet from them, a half-dozen figures melded out of the backgrou
 
 Meliora gasped. Credan frowned, and Wenna hushed her. Dade was ushered back toward them by two more wode elves, his bow in hand. The children huddled together, Credan's hand on the symbol of Saint Gryffyn around his neck, and Jeremy's hand on the hilt of his sword.
 
-The elves were tall, taller than an adult human, but seemed always to crouch as soon as they stopped moving. Their eyes were unsettling, widely spaced and huge. But it was their ears, long and tall and twisting and set with great scoops to catch all sound, that marked them as elves of the wode.
+The elves were tall, taller than an adult [human](scc:mcdm.heroes.v1/ancestry/human), but seemed always to crouch as soon as they stopped moving. Their eyes were unsettling, widely spaced and huge. But it was their ears, long and tall and twisting and set with great scoops to catch all sound, that marked them as elves of the wode.
 
 "Admittedly, though, most terrans regret the experience." The voice they had heard called out again—from above. The children looked up and now saw a wode elf with long, furry, twisting ears and nut-brown skin smiling down at them. They wore a brightly colored outfit. The children watched the elf leap lightly from branch to lower branch until finally landing with a flourish on the forest floor before them.
 
@@ -2115,7 +2115,7 @@ You have the following signature ability. Signature abilities can be used at wil
 <!-- @type: ancestry | @id: high-elf -->
 ## High Elf
 
-Children of the solar celestials created to tend their libraries and attend to the true elves as heralds, high elf history describes a better age, before the coming of humans and war. A time when the celestials were still in the world, and all that mattered was art and beauty.
+Children of the solar celestials created to tend their libraries and attend to the true elves as heralds, high elf history describes a better age, before the coming of [humans](scc:mcdm.heroes.v1/ancestry/human) and war. A time when the celestials were still in the world, and all that mattered was art and beauty.
 
 In the millennia since their creators retired to Arcadia, the high elves built a civilization for themselves, primarily living in and among the fallen celestial sky cities. With no creators left to please, the elves continue as they did before—collecting lore and knowledge, worshipping art, and turning more inward and distrusting of outsiders with each generation.
 
@@ -2135,15 +2135,15 @@ The five children stood alone in the center of a large circular courtyard open t
 
 "Yes," Jeremy said, looking at the nearest guards with their longspears and swords. "We feel very safe."
 
-"Who are you kidding?" Dade said. "Everyone knows how much elves hate humans."
+"Who are you kidding?" Dade said. "Everyone knows how much elves hate [humans](scc:mcdm.heroes.v1/ancestry/human)."
 
 At this, Lord Tear exchanged a look with Llyander, consort to Queen Imyrr. It was a knowing look, full of sadness and melancholy. Then he broke his silence.
 
-"Show me an elf who hates humans," he said, his voice deep and sonorous, "and I will show you an elf who loved a human and watched them grow old and die." He looked at the children for the first time and smiled a melancholy smile. "Love is like sunlight for us, you see. We love completely but rarely. The loss of it means an eternity of grief for us."
+"Show me an elf who hates humans," he said, his voice deep and sonorous, "and I will show you an elf who loved a [human](scc:mcdm.heroes.v1/ancestry/human) and watched them grow old and die." He looked at the children for the first time and smiled a melancholy smile. "Love is like sunlight for us, you see. We love completely but rarely. The loss of it means an eternity of grief for us."
 
 The king tapped the scroll against his lap, seeming to have reached a decision.
 
-"Well done, consort. Young humans, your escort here seeks to shame me. For they know well they could have taken this prize to their queen and earned her favor. Instead, Llyander brought it to me in the hopes that by doing so, they deliver me the power necessary to throw off the yoke of Ajax's rule. Long has Llyander resented the decision I made and sought to change it..."-he looked at Llyander-"... by changing my mind."
+"Well done, consort. Young [humans](scc:mcdm.heroes.v1/ancestry/human), your escort here seeks to shame me. For they know well they could have taken this prize to their queen and earned her favor. Instead, Llyander brought it to me in the hopes that by doing so, they deliver me the power necessary to throw off the yoke of Ajax's rule. Long has Llyander resented the decision I made and sought to change it..."-he looked at Llyander-"... by changing my mind."
 
 Llyander nodded deferentially, silently congratulating the king on his insight.
 
@@ -2181,7 +2181,7 @@ Llyander put a finger to their lips, silencing young Meliora. "It is not a thing
 
 Llyander shrugged. "What does anyone really look like?" And while the other children chalked this up to their escort's normally abstruse mode of communication, Meliora caught a glimpse of understanding somewhere in her mind.
 
-The king turned back to them. "Should any of you seek hidden lore or deep wisdom, please allow me to serve you first. But you, young woman, the human child who learned our language, I name thee *elf friend*. And my naming carries power. You will find the learning of our lore will come more quickly to you, and all those who still revere the elves will give you safe passage in their lands."
+The king turned back to them. "Should any of you seek hidden lore or deep wisdom, please allow me to serve you first. But you, young woman, the [human](scc:mcdm.heroes.v1/ancestry/human) child who learned our language, I name thee *elf friend*. And my naming carries power. You will find the learning of our lore will come more quickly to you, and all those who still revere the elves will give you safe passage in their lands."
 
 Llyander put their hands on their hips and regarded the children. "Not bad for your second quest. What shall you do for an encore?"
 
@@ -2225,7 +2225,7 @@ Your mind allows you to maintain your focus in any situation. You can't be made 
 <!-- @type: ancestry | @id: hakaan -->
 ## Hakaan
 
-In spite of their friendly, outgoing nature, the rare presence of a hakaan in human society is considered a harbinger. An omen of dark times.
+In spite of their friendly, outgoing nature, the rare presence of a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) in [human](scc:mcdm.heroes.v1/ancestry/human) society is considered a harbinger. An omen of dark times.
 
 Descended from a tribe of giants in upper Vanigar, the original Haka'an tribe made a bargain with Holkatya the Vanigar trickster god. They traded some of their gigantic size and strength for the ability to see the future.
 
@@ -2233,7 +2233,7 @@ But Holkatya betrayed them, and the only future a hakaan is allowed to see is th
 
 The Doomsight can happen at any moment. It does not come for all or even most hakaan, but when it comes, it is considered an act of overwhelming hubris to ignore it. Trying to escape the Doomsight means a painful, tragic death, and cursing your family to live with shame.
 
-But the only hakaan the average human meets is one trying to fulfill their doom. The human superstition—that the arrival of one or more hakaan in human lands is a sign of great forces acting in the world, auspicious times—is literally true. In dark times, many hakaan experience the Doomsight and leave their communities to venture out into the mundane world, in search of their destiny.
+But the only hakaan the average [human](scc:mcdm.heroes.v1/ancestry/human) meets is one trying to fulfill their doom. The [human](scc:mcdm.heroes.v1/ancestry/human) superstition—that the arrival of one or more hakaan in human lands is a sign of great forces acting in the world, auspicious times—is literally true. In dark times, many hakaan experience the Doomsight and leave their communities to venture out into the mundane world, in search of their destiny.
 
 Humans in Vanigar have their own word for this concept of a personal fate. "Wyrd." Traditional hakaan sometimes refer to the Doomsight as "wyrdken."
 
@@ -2363,7 +2363,7 @@ Your body is made to withstand the blows of your enemies. Your Might score is tr
 
 Humans belong to the world in a way the other speaking peoples do not. You can sense the presence of the supernatural—that... oily smell in the air, as I've heard it described. And the presence of deathless causes the hairs on the back of your neck to stand up. Or why do you think graveyards affect you so? Whatever magic is, its grip on you is light. Whatever drives the deathless, your nature rebels against it.
 
-"No one knows why this should be. We elves have no such senses. Nor do the elementals or the kanin... the dwarves and the orcs as you say. What is it that sets humans apart? I am an historian, not a physician. I cannot say. Perhaps some of you will one day find out and teach us all the reason."
+"No one knows why this should be. We elves have no such senses. Nor do the elementals or the kanin... the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) as you say. What is it that sets [humans](scc:mcdm.heroes.v1/ancestry/human) apart? I am an historian, not a physician. I cannot say. Perhaps some of you will one day find out and teach us all the reason."
 
 ### On Humans
 
@@ -2521,7 +2521,7 @@ John offered his hand. Revile shook it and then held it.
 
 "If there are many like you in this world of gods and sorcery," the noble memonek star captain said, "then your victory over evil is assured."
 
-"I don't know about many," John said, extricating his hand. He looked at the dwarf, elf, and hakaan.
+"I don't know about many," John said, extricating his hand. He looked at the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf), elf, and [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan).
 
 "But there might be enough."
 
@@ -2575,9 +2575,9 @@ Velloparatha—the worldsickness—might hinder you, but you know how to turn yo
 
 An anger that cannot be hidden. A fury that drives them in battle. Orcs are famed throughout the world as consummate warriors—a reputation that the peace—loving orcs find distasteful.
 
-The fifth of the speaking peoples, orcs arrived on Orden after humans and elves. They made their homes in the borderlands between those two cultures, preferring the natural forests and avoiding the elf-haunted wodes. For generations, this put them directly in the path of humans who cut down the trees and built roads and farms.
+The fifth of the speaking peoples, [orcs](scc:mcdm.heroes.v1/ancestry/orc) arrived on Orden after [humans](scc:mcdm.heroes.v1/ancestry/human) and elves. They made their homes in the borderlands between those two cultures, preferring the natural forests and avoiding the elf-haunted wodes. For generations, this put them directly in the path of [humans](scc:mcdm.heroes.v1/ancestry/human) who cut down the trees and built roads and farms.
 
-Each orc has within them a fire that causes their veins to glow once blood is drawn. This anger propels them right to the edge of death. The dichotomy between their desire to be left alone and their zeal in battle is summarized in a dwarf proverb:
+Each orc has within them a fire that causes their veins to glow once blood is drawn. This anger propels them right to the edge of death. The dichotomy between their desire to be left alone and their zeal in battle is summarized in a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) proverb:
 
 "Be thankful orcs do not hold grudges."
 
@@ -2731,9 +2731,9 @@ When you are stirred by a passion for creation, your bloodfire allows you to wor
 <!-- @type: ancestry | @id: polder -->
 ## Polder
 
-After humans, polders are the most numerous and diverse ancestry in Orden. They are not humans, but they live in and among humans and share their gods and culture. Almost every human culture in Orden has a polder saint or a human saint venerated by polder.
+After [humans](scc:mcdm.heroes.v1/ancestry/human), [polders](scc:mcdm.heroes.v1/ancestry/polder) are the most numerous and diverse ancestry in Orden. They are not [humans](scc:mcdm.heroes.v1/ancestry/human), but they live in and among [humans](scc:mcdm.heroes.v1/ancestry/human) and share their gods and culture. Almost every [human](scc:mcdm.heroes.v1/ancestry/human) culture in Orden has a [polder](scc:mcdm.heroes.v1/ancestry/polder) saint or a [human](scc:mcdm.heroes.v1/ancestry/human) saint venerated by [polder](scc:mcdm.heroes.v1/ancestry/polder).
 
-Short, averaging 31/2 feet tall, the polders' origins are obscure. They are a young species who, like humans, have no single patron god. Their ability to *shadowmeld* means they enjoy a reputation as excellent spies and thieves. Many polders consider this a base slander and point out they're also famed as chefs, though polders can be found in every profession, especially in cities.
+Short, averaging 31/2 feet tall, the polders' origins are obscure. They are a young species who, like [humans](scc:mcdm.heroes.v1/ancestry/human), have no single patron god. Their ability to *shadowmeld* means they enjoy a reputation as excellent spies and thieves. Many polders consider this a base slander and point out they're also famed as chefs, though polders can be found in every profession, especially in cities.
 
 ### On Polders
 
@@ -2825,11 +2825,11 @@ John turned to Embers. "I thought he was a thief."
 
 "I'm annoying."
 
-The elf smiled. "He's a troubadour—one of the best."
+The elf smiled. "He's a [troubadour](scc:mcdm.heroes.v1/class/troubadour)—one of the best."
 
 Sir John looked at him, nodded. "No lute, I notice. And you don't seem the type to sit by the hearth telling stories."
 
-The polder grinned. "I ain't that kind of troubadour. I'm the other kind. I think the best story is the one people tell each other."
+The polder grinned. "I ain't that kind of [troubadour](scc:mcdm.heroes.v1/class/troubadour). I'm the other kind. I think the best story is the one people tell each other."
 
 "Propaganda," Sir John said, a grin spreading across his face. The polder pointed a finger at him and smiled. John heard the door to the inn open behind him. This wasn't notable, but the gasp from the customers was.
 
@@ -3071,7 +3071,7 @@ Slowly everyone assembled could make out the sounds of a conversation, quiet wit
 
 "Oh, thank you for the brilliant tactical advice," another voice, high pitched, piped up.
 
-Suddenly, the images became three dimensional, solid, and seven heroes stood among them. A human in working battle plate. A dwarf with his battle-staff tipped with an hourglass. An orc with a huge battleaxe casually resting on her shoulder. A polder with twin rapiers in his hands. A tall willowy high elf with night-black skin and golden hair. An unarmed hakaan towering over everyone. And a dragon knight. Of all the motley band, it was the dragon knight who caused the people of the town to gasp. Even at a distance, even with the war dogs between them, they recognized the device of Good King Omund on the knight's shield.
+Suddenly, the images became three dimensional, solid, and seven heroes stood among them. A [human](scc:mcdm.heroes.v1/ancestry/human) in working battle plate. A [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) with his battle-staff tipped with an hourglass. An [orc](scc:mcdm.heroes.v1/ancestry/orc) with a huge battleaxe casually resting on her shoulder. A [polder](scc:mcdm.heroes.v1/ancestry/polder) with twin rapiers in his hands. A tall willowy [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) with night-black skin and golden hair. An unarmed [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) towering over everyone. And a [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight). Of all the motley band, it was the dragon knight who caused the people of the town to gasp. Even at a distance, even with the war dogs between them, they recognized the device of Good King Omund on the knight's shield.
 
 The war dogs scrambled. For a moment, it seemed they might flee at this sudden intrusion, but the taxiarch bellowed "Hold fast!" and they held their ground, uncertainty over the unknown threat of a band of heroes battling in each of them against the certain fear of their commander.
 
