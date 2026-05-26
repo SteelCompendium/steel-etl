@@ -81,7 +81,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
 | Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
 | Careers | 3494-4065 | done | done (1) | - | - | - | - | - | - | - | done (5) |
-| Classes | 4066-17606 | done | - | - | - | - | - | - | - | - | - |
+| Classes | 4066-17606 | done | done (43 intro) | - | - | - | - | - | - | - | done (7 intro) |
 | Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | - |
 | Perks | 18581-18946 | done | - | - | - | - | - | - | - | - | - |
 | Complications | 18947-20167 | done | - | - | - | - | - | - | - | - | - |

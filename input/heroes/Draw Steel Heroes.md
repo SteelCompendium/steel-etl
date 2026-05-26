@@ -4094,7 +4094,7 @@ Each class also has a number of subclasses presented in this book. Your subclass
 
 ### Abilities
 
-Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including free strikes and maneuvers such as Grab and Knockback (see Maneuvers in Chapter 10: Combat). But your class, ancestry (see Chapter 3), kit (Chapter 6), titles and treasures (Chapter 13: Rewards), and other heroic options give you access to more powerful abilities that make your hero stand out.
+Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including free strikes and maneuvers such as Grab and Knockback (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). But your class, ancestry (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)), kit (Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)), titles and treasures (Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), and other heroic options give you access to more powerful abilities that make your hero stand out.
 
 Abilities are presented in a special format that first describes the ability, then summarizes its mechanical details, and finally breaks out the ability's power roll (if it has one) and effects.
 
@@ -4106,7 +4106,7 @@ Abilities are presented in a special format that first describes the ability, th
 
 Each ability has an evocative name that sets up what it does in the game, followed by a line or two of flavor text that provides a sense of how the use of the ability might appear if described in an action scene in a story.
 
-The name and story text for abilities sometimes refers to specific ways in which the ability plays out—particularly combat abilities whose names imply specific types of weapons or tactics. However, that narrative flavor has no effect on how an ability can be used. For example, the fury's Impaled ability allows you to grab a target, setting up the idea of harpooning your monstrous foe with a sword to keep them close. But you can use that ability with an axe, a mace, a hammer, or any other weapon.
+The name and story text for abilities sometimes refers to specific ways in which the ability plays out—particularly combat abilities whose names imply specific types of weapons or tactics. However, that narrative flavor has no effect on how an ability can be used. For example, the [fury's](scc:mcdm.heroes.v1/class/fury) Impaled ability allows you to grab a target, setting up the idea of harpooning your monstrous foe with a sword to keep them close. But you can use that ability with an axe, a mace, a hammer, or any other weapon.
 
 #### Heroic Resource Cost
 
@@ -4114,21 +4114,21 @@ Each class has a Heroic Resource that your hero earns during combat, with some o
 
 The nine Heroic Resources in the game are:
 
-- The censor's wrath
-- The conduit's piety
-- The elementalist's essence
-- The fury's ferocity
-- The null's discipline
-- The shadow's insight
-- The tactician's focus
-- The talent's clarity
-- The troubadour's drama
+- The [censor's](scc:mcdm.heroes.v1/class/censor) wrath
+- The [conduit's](scc:mcdm.heroes.v1/class/conduit) piety
+- The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) essence
+- The [fury's](scc:mcdm.heroes.v1/class/fury) ferocity
+- The [null's](scc:mcdm.heroes.v1/class/null) discipline
+- The [shadow's](scc:mcdm.heroes.v1/class/shadow) insight
+- The [tactician's](scc:mcdm.heroes.v1/class/tactician) focus
+- The [talent's](scc:mcdm.heroes.v1/class/talent) clarity
+- The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) drama
 
 ##### Heroic Abilities
 
 If an ability has a Heroic Resource cost to activate—as in, you can't use the ability at all without spending some of your Heroic Resource—then it is a heroic ability. If an effect allows you to use a heroic ability when it isn't your turn, you must still pay its Heroic Resource cost to use it unless the effect says otherwise.
 
-Some abilities don't cost your Heroic Resource to use but allow you to spend your Heroic Resource to enhance or add effects to the ability, such as the conduit's Healing Grace. These abilities are not heroic abilities unless the baseline ability can't be used without spending your Heroic Resource.
+Some abilities don't cost your Heroic Resource to use but allow you to spend your Heroic Resource to enhance or add effects to the ability, such as the [conduit's](scc:mcdm.heroes.v1/class/conduit) Healing Grace. These abilities are not heroic abilities unless the baseline ability can't be used without spending your Heroic Resource.
 
 ##### Signature Abilities
 
@@ -4152,7 +4152,7 @@ Abilities with the Magic keyword are used by characters who can cast spells, hav
 
 ##### Melee
 
-Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in Imbue Treasure in Chapter 12: Downtime Projects.)
+Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in Imbue Treasure in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
 
 ##### Psionic
 
@@ -4174,7 +4174,7 @@ Abilities with the Strike keyword (often referred to simply as "strikes") deal d
 
 The Weapon keyword is used in abilities that must be used with a blade, a bow, or some other offensive weapon. Weapon abilities also include strikes creatures make with their own bodies, such as a character's unarmed strikes or a monster's punches, kicks, bites, tail slaps, and more.
 
-Your character's kit determines the types of weapons you wield and use with your weapon abilities (see Chapter 6: Kits).
+Your character's kit determines the types of weapons you wield and use with your weapon abilities (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 #### Type
 
@@ -4182,7 +4182,7 @@ Each ability notes the type of activity required to use it, on the right side of
 
 ##### Trigger
 
-If an ability requires a triggered action or a free triggered action to use, a "Trigger" entry is part of the ability. For example, the trigger for the tactician's Parry ability is: "A creature deals damage to the target." A tactician can use their Parry ability only when that specific triggering event occurs.
+If an ability requires a triggered action or a free triggered action to use, a "Trigger" entry is part of the ability. For example, the trigger for the [tactician's](scc:mcdm.heroes.v1/class/tactician) Parry ability is: "A creature deals damage to the target." A tactician can use their Parry ability only when that specific triggering event occurs.
 
 #### Distance
 
@@ -4258,7 +4258,7 @@ If an ability targets one or more creatures, it can affect creatures within the 
 
 If an ability targets one or more objects, it can affect any object within the ability's distance or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: Combat has information on damage immunity.)
 
-When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the talent's Minor Telekinesis ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
+When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) Minor Telekinesis ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
 
 ##### Enemy
 
@@ -4286,7 +4286,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 
 If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (Chapter 1: The Basics talks about power rolls.)
 
-Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the fury's Brutal Slam ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
+Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) Brutal Slam ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
 
 - **Tier 1 (11 or lower):** The ability deals damage equal to 3 + your Might score, then pushes the target back 1 square.
 - **Tier 2 (12-16):** The ability deals damage equal to 6 + your Might score, then pushes the target back 2 squares.
@@ -4330,7 +4330,7 @@ Unless otherwise indicated, any effects that are determined by a power roll's ti
 
 #### "During the Move"
 
-Certain ability effects allow you to move and affect other creatures or objects during that move, such as the shadow's One Hundred Throats ability. For such abilities, the move begins in the space you first leave when you start the move and ends in the last space you move into.
+Certain ability effects allow you to move and affect other creatures or objects during that move, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) One Hundred Throats ability. For such abilities, the move begins in the space you first leave when you start the move and ends in the last space you move into.
 
 #### Rolled Damage
 
@@ -4350,7 +4350,7 @@ Your character has a **weak**, an **average**, and a **strong** potency value, a
 
 In abilities and other effects, a potency always appears as the single-letter abbreviation for the target's characteristic: M for Might, A for Agility, R for Reason, I for Intuition, or P for Presence. That characteristic is followed by a "less than" sign (<) and your potency value—for example, M < WEAK or R < AVERAGE -with the value indicating the minimum score in that characteristic that the target needs to beat the effect.
 
-As an example, consider the conduit's Judgment's Hammer ability, which has the following power roll:
+As an example, consider the [conduit's](scc:mcdm.heroes.v1/class/conduit) Judgment's Hammer ability, which has the following power roll:
 
 **Power Roll + Intuition:**
 
@@ -4386,13 +4386,13 @@ Reading the ability this way prevents a lot of back and forth. You don't need to
 
 ##### Adjusting Potencies
 
-Potencies are made for quick resolution at the table, but a number of triggered actions and other abilities—for example, the censor's Judgment ability and the null's Null Field ability—allow you to manipulate the value of potencies. If you build a hero who can adjust potencies, pay attention during combat! You might be able to help out a friend who needs a little boost to make their ability take full effect, or hinder an enemy about to lock down one of your allies.
+Potencies are made for quick resolution at the table, but a number of triggered actions and other abilities—for example, the [censor's](scc:mcdm.heroes.v1/class/censor) Judgment ability and the [null's](scc:mcdm.heroes.v1/class/null) Null Field ability—allow you to manipulate the value of potencies. If you build a hero who can adjust potencies, pay attention during combat! You might be able to help out a friend who needs a little boost to make their ability take full effect, or hinder an enemy about to lock down one of your allies.
 
 ##### Spending Resources on Potencies
 
 If an ability or feature allows you to spend your Heroic Resource on an effect that is entirely dependent on a potency and the target is unaffected because their characteristic is high enough to resist the potency, then you don't spend the Heroic Resource.
 
-For example, the tactician's Overwatch ability allows the tactician to spend 1 focus to impose the slowed condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the tactician targets a creature whose high Reason leaves them unaffected, the tactician doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
+For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the slowed condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the tactician targets a creature whose high Reason leaves them unaffected, the tactician doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
 
 This rule also applies to Director-controlled creatures who spend Malice on abilities and features that affect a target using a potency and have no other automatic effects.
 
@@ -4410,7 +4410,7 @@ For example, if you target three creatures with a strike ability and the power r
 
 #### Surges
 
-A troubadour's battle song, a fury's building ferocity, and a shadow's patient insight can all make a hero more effective in a fight. These advantages are represented by surges, with many abilities granting heroes surges during a battle.
+A [troubadour's](scc:mcdm.heroes.v1/class/troubadour) battle song, a [fury's](scc:mcdm.heroes.v1/class/fury) building ferocity, and a [shadow's](scc:mcdm.heroes.v1/class/shadow) patient insight can all make a hero more effective in a fight. These advantages are represented by surges, with many abilities granting heroes surges during a battle.
 
 When you gain surges, you keep track of them on your character sheet. Surges can be used in combat to deal extra damage to your foes and increase the value of your potencies, as follows:
 
@@ -4425,7 +4425,7 @@ Many abilities that require power rolls also have effect entries describing addi
 
 ##### Actions Within Actions
 
-If an ability's effect allows you to take a main action, a maneuver, a move action, or a triggered action, the cost of doing so is subsumed in the ability's type entry on the first line below the flavor text. You never need to spend additional time to use an ability. For example, the shadow's Black Ash Teleport ability is a maneuver that allows you to teleport and then use the Hide maneuver as its overall effect. Using the Hide maneuver is part of the maneuver to use the ability, so that you don't need to have another maneuver available to do so.
+If an ability's effect allows you to take a main action, a maneuver, a move action, or a triggered action, the cost of doing so is subsumed in the ability's type entry on the first line below the flavor text. You never need to spend additional time to use an ability. For example, the [shadow's](scc:mcdm.heroes.v1/class/shadow) Black Ash Teleport ability is a maneuver that allows you to teleport and then use the Hide maneuver as its overall effect. Using the Hide maneuver is part of the maneuver to use the ability, so that you don't need to have another maneuver available to do so.
 
 #### Spend Heroic Resource
 
@@ -4435,7 +4435,7 @@ Some abilities have a "Spend X [Heroic Resource]" entry in the body of the abili
 
 The unique effects of different abilities are combined—effectively stacking on top of each other—if their durations and targets overlap. However, the effects of the same ability used multiple times don't stack. Instead, the most impactful effect—such as the highest bonus—from each use of the ability applies. The most recently used ability applies for determining duration.
 
-For example, the null's Null Field ability reduces the potencies of enemies within the field by 1. If two allied nulls each have their Null Field ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
+For example, the [null's](scc:mcdm.heroes.v1/class/null) Null Field ability reduces the potencies of enemies within the field by 1. If two allied nulls each have their Null Field ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
 
 Different effects that impose the same condition (see Conditions below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become weakened (imposing a bane on the target's power rolls), the target isn't weakened twice to impose a double bane on those rolls. A character who is grabbed by an enemy can't be grabbed again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
 
