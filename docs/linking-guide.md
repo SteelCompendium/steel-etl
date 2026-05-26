@@ -78,7 +78,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | The Basics | 590-1055 | done | done (16) | done (32) | - | - | - | - | - | - | done (11) |
 | Making a Hero | 1056-1263 | done | done (12) | done (18) | - | - | - | - | - | - | done (15) |
 | Ancestries | 1264-3199 | done | - | - | - | - | - | - | - | - | - |
-| Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - |
+| Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
 | Cultures | 3207-3493 | done | - | - | - | - | - | - | - | - | - |
 | Careers | 3494-4065 | done | - | - | - | - | - | - | - | - | - |
 | Classes | 4066-17606 | done | - | - | - | - | - | - | - | - | - |
@@ -90,7 +90,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Combat | 20857-21636 | done | - | - | - | - | - | - | - | - | - |
 | Negotiation | 21637-22187 | done | - | - | - | - | - | - | - | - | - |
 | Downtime Projects | 22188-23215 | done | - | - | - | - | - | - | - | - | - |
-| Rewards | 23216-23220 | done | - | - | - | - | - | - | - | - | - |
+| Rewards | 23216-23220 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
 | Treasures | 23221-25258 | done | - | - | - | - | - | - | - | - | - |
 | Titles | 25259-26339 | done | - | - | - | - | - | - | - | - | - |
 | Gods and Religion | 26340-27294 | done | - | - | - | - | - | - | - | - | - |
