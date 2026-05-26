@@ -557,7 +557,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Trinket:** A treasure that can be used at will without any reduction in its power.
 
-**[Troubadour](scc:mcdm.heroes.v1/class/troubadour):** A class for a hero who is a storytelling swashbuckler.
+**[Troubadour](scc:mcdm.heroes.v1/class/troubadour):** A class for a hero who is a storytelling [swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler).
 
 **Turn:** A creature's turn in combat consists of a main action, a maneuver, and a move action.
 
@@ -3498,7 +3498,7 @@ Being a hero isn't a job. It's a calling. But before you answered that call, you
 
 ### Career Questions
 
-The careers in this section don't go into great detail about the actual jobs they represent. We assume that you know the basics of what an artisan, a criminal, or a gladiator does for a living. However, each career includes a list of questions you should think about to help you define the specific details of your hero's career. For instance, if you pick the Artisan career, one of the questions is: "What did you create?"
+The careers in this section don't go into great detail about the actual jobs they represent. We assume that you know the basics of what an [artisan](scc:mcdm.heroes.v1/career/artisan), a [criminal](scc:mcdm.heroes.v1/career/criminal), or a [gladiator](scc:mcdm.heroes.v1/career/gladiator) does for a living. However, each career includes a list of questions you should think about to help you define the specific details of your hero's career. For instance, if you pick the [Artisan](scc:mcdm.heroes.v1/career/artisan) career, one of the questions is: "What did you create?"
 
 You don't need to answer these questions, but doing so can help shape a more complete picture of your hero. And if you do answer them, consider telling your Director the answers so they can think about working those details into the game. Directors already have a lot to juggle, but they certainly can't create dramatic moments from your backstory if you never tell them what that backstory is.
 
@@ -3565,15 +3565,15 @@ You gain the following career benefits:
 
 **Languages:** Two languages
 
-**Perk:** One intrigue perk (*Quick Build:* Forgettable Face.)
+**Perk:** One intrigue perk (*Quick Build:* [Forgettable Face](scc:mcdm.heroes.v1/perk/forgettable-face).)
 
 | d6  | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | **Disavowed:** While on a dangerous espionage assignment, things went sideways. Although you escaped with your life, the mission was a public failure thanks to bad information your agency gave you. They denied you work for them, and you went on the run. Hero work will let you survive and clear your name.                                                                                                                                              |
-| 2   | **Faceless:** Your identity was always hidden. It was your way of protecting those around you because the work you did spying on powerful entities came with dangers. Then your world came crashing down when an enemy agent unmasked you, causing you to lose everything—your privacy, livelihood, loved ones, all gone in the blink of an eye. Instead of going into hiding, you became a public hero to protect the innocent in the name of those you lost. |
-| 3   | **Free Agent:** There was a time in your life when you used to sell information to the highest bidder. Your acts were unsanctioned by any one organization, but you were well-connected enough to trade in secrets. Politics never mattered much to you until the information you sold wound up causing a ripple effect of harm that eventually destroyed the place you once called home. You became a hero to make up for your past.                          |
+| 2   | **Faceless:** Your identity was always hidden. It was your way of protecting those around you because the work you did spying on powerful entities came with dangers. Then your world came crashing down when an enemy [agent](scc:mcdm.heroes.v1/career/agent) unmasked you, causing you to lose everything—your privacy, livelihood, loved ones, all gone in the blink of an eye. Instead of going into hiding, you became a public hero to protect the innocent in the name of those you lost. |
+| 3   | **Free [Agent](scc:mcdm.heroes.v1/career/agent):** There was a time in your life when you used to sell information to the highest bidder. Your acts were unsanctioned by any one organization, but you were well-connected enough to trade in secrets. Politics never mattered much to you until the information you sold wound up causing a ripple effect of harm that eventually destroyed the place you once called home. You became a hero to make up for your past.                          |
 | 4   | **Informed:** After years of cultivating a rich list of informants, one of those informants risked everything to expose the heinous plans of powerful individuals. You promised to protect your informant, but your agency left them hanging—literally. You cut ties with your employer and swore to always make good on your word as a hero.                                                                                                                  |
-| 5   | **Spies and Lovers:** While embedded in an undercover assignment, you fell for someone on the other side. They discovered you were a double agent, and though you insisted your feelings were real, the deceit cut too deep for your love interest to ignore. They exposed you, spurned you, or died because of their closeness to you. You left the espionage business to become a hero with nothing to hide.                                                 |
+| 5   | **Spies and Lovers:** While embedded in an undercover assignment, you fell for someone on the other side. They discovered you were a double [agent](scc:mcdm.heroes.v1/career/agent), and though you insisted your feelings were real, the deceit cut too deep for your love interest to ignore. They exposed you, spurned you, or died because of their closeness to you. You left the espionage business to become a hero with nothing to hide.                                                 |
 | 6   | **Turncoat:** You spent your life in service of your country or an organization that upheld your values. During your undercover operations, you discovered that everything you had been told was a lie. Whether you confronted your superiors or were exposed, you were stripped of your service medals before you left to become a true hero.                                                                                                                 |
 
 <!-- @type: career -->
@@ -3581,7 +3581,7 @@ You gain the following career benefits:
 
 Career? Who needs a career when you're born into money! Or marry into it! Or con your way into it! Whatever the case, you didn't need to work thanks to (someone's) generational wealth. In defining your career, think about the following questions:
 
-- How did you become an aristocrat?
+- How did you become an [aristocrat](scc:mcdm.heroes.v1/career/aristocrat)?
 - What did you do to fill your days?
 - Which aristocrats and people who worked for you were your best friends and greatest enemies?
 - What sentimental heirloom from your old estate do you carry, and what does it mean to you?
@@ -3625,13 +3625,13 @@ You gain the following career benefits:
 
 **Project Points:** 240
 
-**Perk:** One crafting perk (*Quick Build:* Area of Expertise.)
+**Perk:** One crafting perk (*Quick Build:* [Area of Expertise](scc:mcdm.heroes.v1/perk/area-of-expertise).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Continue the Work:** A great hero was a fan of the things you created and gave you a generous commission to create your best work for them. While working on this commission, you and the hero became close friends. The day you finished the work was the same day they disappeared. To honor their legacy, you took up the mantle of a hero with the intent of finishing your friend's work. |
 | 2  | **Inspired:** As you traveled the road selling your wares, troll bandits attacked you. One of the bandits claimed an item belonging to someone precious to you—or perhaps claimed that person's life—but the rest were driven off or slain by a group of heroes. Seeing the quick work those heroes made of the bandits inspired you to follow in their footsteps. |
-| 3  | **Robbery:** A criminal gang stole your goods and harmed a number of people who worked for you. You became a hero to prevent such indignities from being visited upon others, to seek revenge for the assault, or to find the thieves and get your stuff back. |
+| 3  | **Robbery:** A [criminal](scc:mcdm.heroes.v1/career/criminal) gang stole your goods and harmed a number of people who worked for you. You became a hero to prevent such indignities from being visited upon others, to seek revenge for the assault, or to find the thieves and get your stuff back. |
 | 4  | **Stolen Passions:** Your parents discouraged your artistic [talents](scc:mcdm.heroes.v1/class/talent), instead trying to focus your passions on the family business. You refused to dim your spark and continued your work in secret. Enraged at discovering your disobedience, they sold your work to a traveling merchant. You left your hometown, seeking your lost art and encouraging others to live freely. |
 | 5  | **Tarnished Honor:** A new patron commissioned some art, but on completion, they refused to pay you and claimed the work as their own. You were accused of plagiarism and run out of town. For you, heroics are about restoring your name and honor. |
 | 6  | **Twisted Skill:** You had great success that caused an unscrupulous rival to curse you. For a time, everything you tried to create turned to ruin. You broke the curse through adventuring, and in doing so, discovered a new joy and purpose that now defines you. |
@@ -3641,7 +3641,7 @@ You gain the following career benefits:
 
 You lived by going to a tavern, crossroads, city street, or other busy area and begging passersby for money or food. In defining your career, think about the following questions:
 
-- What unfortunate circumstances led you to become a beggar?
+- What unfortunate circumstances led you to become a [beggar](scc:mcdm.heroes.v1/career/beggar)?
 - Where did you beg?
 - Who made sport out of bullying you?
 - Who showed you the most kindness?
@@ -3652,7 +3652,7 @@ You gain the following career benefits:
 
 **Languages:** Two languages
 
-**Perk:** One interpersonal perk (*Quick Build:* Spot the Tell.)
+**Perk:** One interpersonal perk (*Quick Build:* [Spot the Tell](scc:mcdm.heroes.v1/perk/spot-the-tell).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3671,22 +3671,22 @@ You once worked as a bandit, insurgent, smuggler, outlaw, or even as an assassin
 - What crimes did you commit, and why?
 - Did anyone help you perform your illicit activities?
 - What is one crime you botched?
-- Who was your nemesis while you were a criminal?
+- Who was your nemesis while you were a [criminal](scc:mcdm.heroes.v1/career/criminal)?
 
 You gain the following career benefits:
 
-**Skills:** The Criminal Underworld skill (from the lore skill group), plus two skills from the intrigue group (*Quick Build:* Criminal Underworld, Pick Lock, Pick Pocket.)
+**Skills:** The [Criminal](scc:mcdm.heroes.v1/career/criminal) Underworld skill (from the lore skill group), plus two skills from the intrigue group (*Quick Build:* [Criminal](scc:mcdm.heroes.v1/career/criminal) Underworld, Pick Lock, Pick Pocket.)
 
 **Languages:** One language
 
 **Project Points:** 120
 
-**Perk:** One intrigue perk (*Quick Build:* Criminal Contacts.)
+**Perk:** One intrigue perk (*Quick Build:* [Criminal Contacts](scc:mcdm.heroes.v1/perk/criminal-contacts).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Antiquity Procurement:** You stole, smuggled, and sold antiquities. In your haste to make a quick sale, you didn't fully vet a client and they subsequently robbed your warehouse. When the items you had stolen were taken from you, you realized the harm you had caused. Now you adventure to find those items you lost and return them to where they belong. |
-| 2  | **Atonement:** The last criminal job you pulled led to the death of someone or the destruction of something you love. To make up for the loss you caused, you left your criminal ways behind and became a hero. |
+| 2  | **Atonement:** The last [criminal](scc:mcdm.heroes.v1/career/criminal) job you pulled led to the death of someone or the destruction of something you love. To make up for the loss you caused, you left your [criminal](scc:mcdm.heroes.v1/career/criminal) ways behind and became a hero. |
 | 3  | **Friendly Priest:** You went to prison for your crimes and eventually escaped. An elderly priest took you in and shielded you from the law, convinced that your soul wasn't corrupt. They never judged you for your past, speaking only of the future. Eventually, the priest died, imparting final words that inspired you to become a hero. |
 | 4  | **Shadowed Influence:** You spent years blackmailing and manipulating nobles for influence and wealth until a scheme went wrong. You were publicly exposed, and after a narrow escape, you reevaluated your life. Under a new identity, you work as a hero and hope no one looks at your past too closely. |
 | 5  | **Simply Survival:** Stealing was a matter of survival for you and not what defined you—at least in your mind. But when your thieving actions led to innocent folk being harmed, you knew you could be better. You turned your back on your old life, though your old skills still come in handy. |
@@ -3699,7 +3699,7 @@ You worked in a church, temple, or other religious institution as part of the cl
 
 - What gods or saints did your institution venerate?
 - What initiation rites did you undergo to get the job?
-- What were your responsibilities as a disciple?
+- What were your responsibilities as a [disciple](scc:mcdm.heroes.v1/career/disciple)?
 - How was your institution viewed by members of the local culture?
 
 You gain the following career benefits:
@@ -3708,7 +3708,7 @@ You gain the following career benefits:
 
 **Project Points:** 240
 
-**Perk:** One supernatural perk (*Quick Build:* Ritualist.)
+**Perk:** One supernatural perk (*Quick Build:* [Ritualist](scc:mcdm.heroes.v1/perk/ritualist).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3736,16 +3736,16 @@ You gain the following career benefits:
 
 **Languages:** Two languages
 
-**Perk:** One exploration perk (*Quick Build:* Wood Wise.)
+**Perk:** One exploration perk (*Quick Build:* [Wood Wise](scc:mcdm.heroes.v1/perk/wood-wise).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Awakening:** In an uncharted area, you awakened some fell horror. You subsequently turned to the life of a hero to put an end to the dread you unleashed and keep other hidden dangers at bay. |
 | 2  | **Missing Piece:** You made an important but dangerous discovery about a treasure or ancient ritual that could spell mass destruction. Then the unthinkable happened when an unscrupulous colleague, spy, or treasure hunter stole your research notes. You're looking for the thief now, and anyone else who might use such discoveries for ill. | 
 | 3  | **Nothing Belongs in a Museum:** Exploring distant lands to collect valuable artifacts for cultural institutions was once your way of life. But when people died trying to reclaim one of the objects you took, you realized the truth. Your work was part of a larger problem of cultural theft, and the best place for these significant objects wasn't in a museum but with the people who created them. Setting out to return what had been taken and to protect others from theft set you on the path to become a hero. |
-| 4  | **Unschooled:** You delved into dungeons and far-off places by studying them in books. You were an explorer who never felt the need to experience the dangers your peers did. Then your theory about a lost world cost you your reputation, and gave you the impetus to go on adventures and stand up for those with different ideas. |
+| 4  | **Unschooled:** You delved into dungeons and far-off places by studying them in books. You were an [explorer](scc:mcdm.heroes.v1/career/explorer) who never felt the need to experience the dangers your peers did. Then your theory about a lost world cost you your reputation, and gave you the impetus to go on adventures and stand up for those with different ideas. |
 | 5  | **Wanderlust:** You saw yourself as an observer and operated within a code of conduct. You swore to never interfere with a group by exposing them to your technology, knowledge, or values. But when faced with a moral conundrum, you either broke your code or stood idly by—and suffered the consequences. During this incident, you lost your observation journal but became a hero who refuses to let evil stand unchecked. |
-| 6  | **Wind in Your Sails:** As a seafaring explorer, you lived to chart unknown courses. Though travel on the high seas was fraught with danger, the destination was always rewarding in riches, knowledge, or some other meaningful benefit. But your luck ran out when your ship was destroyed by pirates or other enemy forces. Now you've taken to protecting those who seek safe passage while also hoping to avenge your crew. |
+| 6  | **Wind in Your Sails:** As a seafaring [explorer](scc:mcdm.heroes.v1/career/explorer), you lived to chart unknown courses. Though travel on the high seas was fraught with danger, the destination was always rewarding in riches, knowledge, or some other meaningful benefit. But your luck ran out when your ship was destroyed by pirates or other enemy forces. Now you've taken to protecting those who seek safe passage while also hoping to avenge your crew. |
 
 <!-- @type: career -->
 #### Farmer
@@ -3765,7 +3765,7 @@ You gain the following career benefits:
 
 **Project Points:** 120
 
-**Perk:** One exploration perk (*Quick Build:* Monster Whisperer.)
+**Perk:** One exploration perk (*Quick Build:* [Monster Whisperer](scc:mcdm.heroes.v1/perk/monster-whisperer).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3782,7 +3782,7 @@ You gain the following career benefits:
 In the past, you entertained the masses with flashy displays of violence in the arena. In defining your career, think about the following questions:
 
 - What led you to this life of violent entertainment?
-- What was your gladiator name and persona?
+- What was your [gladiator](scc:mcdm.heroes.v1/career/gladiator) name and persona?
 - Who was your biggest rival?
 - What happened during your most famous match?
 
@@ -3794,7 +3794,7 @@ You gain the following career benefits:
 
 **Renown:** +2
 
-**Perk:** One exploration perk (*Quick Build:* Friend Catapult.)
+**Perk:** One exploration perk (*Quick Build:* [Friend Catapult](scc:mcdm.heroes.v1/perk/friend-catapult).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3808,7 +3808,7 @@ You gain the following career benefits:
 <!-- @type: career -->
 #### Laborer
 
-You worked as a farmer, builder, clothes washer, forester, miner, or some other profession engaged in hard manual labor. In defining your career, think about the following questions:
+You worked as a [farmer](scc:mcdm.heroes.v1/career/farmer), builder, clothes washer, forester, miner, or some other profession engaged in hard manual labor. In defining your career, think about the following questions:
 
 - What type of manual labor did you do?
 - What important friendship did you make on the job?
@@ -3852,7 +3852,7 @@ You gain the following career benefits:
 
 **Renown:** +1
 
-**Perk:** One supernatural perk (*Quick Build:* Arcane Trick.)
+**Perk:** One supernatural perk (*Quick Build:* [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3879,7 +3879,7 @@ You gain the following career benefits:
 
 **Renown:** +2
 
-**Perk:** One interpersonal perk (*Quick Build:* Harmonizer.)
+**Perk:** One interpersonal perk (*Quick Build:* [Harmonizer](scc:mcdm.heroes.v1/perk/harmonizer).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3910,7 +3910,7 @@ You gain the following career benefits:
 
 **Wealth:** +1
 
-**Perk:** One interpersonal perk (*Quick Build:* Engrossing Monologue.)
+**Perk:** One interpersonal perk (*Quick Build:* [Engrossing Monologue](scc:mcdm.heroes.v1/perk/engrossing-monologue).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3939,7 +3939,7 @@ You gain the following career benefits:
 
 **Project Points:** 240
 
-**Perk:** One lore perk (*Quick Build:* Expert Sage.)
+**Perk:** One lore perk (*Quick Build:* [Expert Sage](scc:mcdm.heroes.v1/perk/expert-sage).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3971,7 +3971,7 @@ You gain the following career benefits:
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 **Alone:** You joined up with your best friend, sibling, or other loved one, the culmination of a lifelong dream to sail the high seas together. When they died, you lost your taste for the seafaring life. You left at the first opportunity and haven't looked back since.
-**Deserter:** It was in the middle of a pirate raid (whether you were part of it or targeted by it) that you realized you no longer yearned for a sailor's life. You used the chaos of the moment to slip away unnoticed. You now work as a hero in an effort to either end the piracy of others or atone for your past deeds, but you fear the day your old crew finds you and punishes you for your desertion.
+**Deserter:** It was in the middle of a pirate raid (whether you were part of it or targeted by it) that you realized you no longer yearned for a [sailor's](scc:mcdm.heroes.v1/career/sailor) life. You used the chaos of the moment to slip away unnoticed. You now work as a hero in an effort to either end the piracy of others or atone for your past deeds, but you fear the day your old crew finds you and punishes you for your desertion.
 **Forgotten:** You awoke aboard your ship with no memory of who you were. Though the other sailors insisted they knew you, you didn't know them. The next time you went ashore, you decided to stay, determined to find out who you really are.
 **Jealousy:** You had the favor of your captain, which earned you many rivals aboard your ship. One night, your fellow sailors pulled you from your bunk and threw you overboard. By some miracle, you were scooped from the waters by a passing vessel. You worked off your debt to them, then set out on a new life involving less pettiness.
 **Marooned:** There was a mutiny, and you were on the losing side. You were marooned on an island and escaped when a merchant vessel was blown off course by a storm and found you. Your reputation is ruined among sailors, so you seek adventure elsewhere.
@@ -4000,11 +4000,11 @@ You gain the following career benefits:
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Dishonorable Discharge:** You enlisted in the military to protect others, but your commander ordered you to beat and kill civilians. When you refused, things got violent. You barely escaped the brawl that ensued, but now you vow to help people on your own terms. |
-| 2  | **Out of Retirement:** You had a long and storied career as a soldier before deciding to retire to a simpler life. But when you returned to your old home, you found your enemies had laid waste to it. Now the skills you earned on the battlefield are helping you as you become a different kind of warrior one seeking to save others from the fate you suffered. |
+| 2  | **Out of Retirement:** You had a long and storied career as a [soldier](scc:mcdm.heroes.v1/career/soldier) before deciding to retire to a simpler life. But when you returned to your old home, you found your enemies had laid waste to it. Now the skills you earned on the battlefield are helping you as you become a different kind of warrior one seeking to save others from the fate you suffered. |
 | 3  | **Peace Through Healing:** Living with constant bloodshed took its toll on you. You seek peace through healing and have dedicated yourself to ending wars before they begin, to spare those around you from the horror. |
-| 4  | **Sole Survivor:** You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a soldier then, seeking to become a hero who could stand against such threats. | 
+| 4  | **Sole Survivor:** You were the last surviving member of your unit after an arduous battle or monstrous assault, surviving only through luck. You turned away from the life of a [soldier](scc:mcdm.heroes.v1/career/soldier) then, seeking to become a hero who could stand against such threats. | 
 | 5  | **Stolen Valor:** Tired of eking out an existence on the streets, you enrolled in the military. However, you were unable to escape your lower-status background until the officer leading your unit fell in battle. In the chaos that ensued, you assumed their identity and returned home a hero. But when suspicion arose, you took on the life of an adventurer, staying always on the move. |
-| 6  | **Vow of Sacrifice:** You promised a fellow soldier that you'd protect his family if he ever fell in battle. When he did, you traveled to his village, but found its people slain or scattered by war. Driven by your vow, you have dedicated your life to finding any survivors and protecting others from a similar fate. |
+| 6  | **Vow of Sacrifice:** You promised a fellow [soldier](scc:mcdm.heroes.v1/career/soldier) that you'd protect his family if he ever fell in battle. When he did, you traveled to his village, but found its people slain or scattered by war. Driven by your vow, you have dedicated your life to finding any survivors and protecting others from a similar fate. |
 
 <!-- @type: career -->
 #### Warden
@@ -4024,7 +4024,7 @@ You gain the following career benefits:
 
 **Project Points:** 120
 
-**Perk:** One exploration perk (*Quick Build:* Camouflage Hunter.)
+**Perk:** One exploration perk (*Quick Build:* [Camouflage Hunter](scc:mcdm.heroes.v1/perk/camouflage-hunter).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4042,7 +4042,7 @@ You served as an officer of the law for a local government. You might have been 
 
 - What type of settlement did you protect?
 - What was your law enforcement style like? Were you a by-the-book officer, a more lenient-but-fair type, or totally corrupt?
-- What criminal still eludes your grasp to this day?
+- What [criminal](scc:mcdm.heroes.v1/career/criminal) still eludes your grasp to this day?
 - Whose life did you save in the line of duty?
 - What is the most absurd call you ever responded to and how did you handle it?
 
@@ -4052,7 +4052,7 @@ You gain the following career benefits:
 
 **Languages:** Two languages
 
-**Perk:** One exploration perk (*Quick Build:* Team Leader.)
+**Perk:** One exploration perk (*Quick Build:* [Team Leader](scc:mcdm.heroes.v1/perk/team-leader).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4060,7 +4060,7 @@ You gain the following career benefits:
 | 2  | **Corruption Within:** You joined the force to help the helpless and bring justice to those wronged. You weren't prepared for the rampant corruption reaching the top of your organization. You refused to cover for your fellow officers and were told in no uncertain terms to leave town or face the consequences. Now you travel as a hero, acting as the protector you always wanted to be. |
 | 3  | **Frame Job:** Your partner was murdered. That much is irrefutable. But you didn't do it, despite what the evidence implies. When it became clear you'd take the fall, you fled, leaving everything behind. Not content to cower in the shadows, you decided to adventure under a new name while you work to clear your own. |
 | 4  | **Missing Mentor:** You learned everything you know about the job from someone you always looked up to in a corrupt organization. One night, they sent you a cryptic message saying they had discovered "something big," but before you could find out more, they disappeared. No longer sure who you could trust, you slipped away and sought a new life. Now you do what good you can and search to find the truth. | 
-| 5  | **One That Got Away:** A violent or depraved criminal began targeting you- perhaps stealing something personal or hurting someone you love—after slipping through your grasp. You left your career to pursue the criminal, but the trail has gone cold... for now. Might as well help folk in the meantime. |
+| 5  | **One That Got Away:** A violent or depraved [criminal](scc:mcdm.heroes.v1/career/criminal) began targeting you- perhaps stealing something personal or hurting someone you love—after slipping through your grasp. You left your career to pursue the [criminal](scc:mcdm.heroes.v1/career/criminal), but the trail has gone cold... for now. Might as well help folk in the meantime. |
 | 6  | **Powerful Enemies:** You made it your responsibility to root out and bring down the region's foremost crime syndicate. They sent goons to burn down your home and teach you a lesson, leaving you bleeding in the street with nothing left except your life. You've since taken on the life of a hero to gain the power and influence you need to destroy the syndicate once and for all. |
 
 <!-- @type: chapter | @id: classes -->
@@ -4202,7 +4202,7 @@ If you make a ranged strike while any enemy is adjacent to you (within 1 square)
 
 Some abilities have a melee distance and a ranged distance. When you use such an ability, you choose whether to use it as a melee or a ranged ability.
 
-An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the Cloak and Dagger kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits).)
+An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits).)
 
 ##### Self
 
@@ -4684,7 +4684,7 @@ The first time on a turn that you use your Judgment ability to judge a creature,
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Warrior Priest.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Warrior Priest](scc:mcdm.heroes.v1/kit/warrior-priest).)
 
 <!-- @type: feature -->
 #### My Life for Yours
@@ -8478,13 +8478,13 @@ At the start of a combat encounter, you gain a number of surges equal to your Vi
 <!-- @type: feature -->
 ##### Disciple of the Green
 
-You can use a maneuver to shapeshift into a type of creature on the Green Animal Forms table. While in animal form, you can speak, and you use your Reason score to make melee free strikes. Your statistics stay the same except as noted on the table.
+You can use a maneuver to shapeshift into a type of creature on the Green Animal Forms table. While in [animal form](scc:mcdm.heroes.v1/complication/animal-form), you can speak, and you use your Reason score to make melee free strikes. Your statistics stay the same except as noted on the table.
 
 Each form has a prerequisite level that you must attain before you can adopt it. Some animal forms grant you temporary Stamina. You lose this temporary Stamina when you revert back to your true form.
 
-You choose a specific animal and appearance while in animal form. For example, if you become a rodent, you might become a mouse, a rat, a shrew, or any other size 1T animal who fits the rodent type. When you take on an animal form, your equipment either melds into your new form or falls undamaged to the ground (your choice). When you return to your true form, any melded gear reappears on your person.
+You choose a specific animal and appearance while in [animal form](scc:mcdm.heroes.v1/complication/animal-form). For example, if you become a rodent, you might become a mouse, a rat, a shrew, or any other size 1T animal who fits the rodent type. When you take on an [animal form](scc:mcdm.heroes.v1/complication/animal-form), your equipment either melds into your new form or falls undamaged to the ground (your choice). When you return to your true form, any melded gear reappears on your person.
 
-You can revert back to your true form as a maneuver. You can't enter an animal form unless you are in your true form. When you are dying, you revert to your true form and can't turn back into an animal until you are no longer dying.
+You can revert back to your true form as a maneuver. You can't enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) unless you are in your true form. When you are dying, you revert to your true form and can't turn back into an animal until you are no longer dying.
 
 ###### Green Animal Forms Table
 
@@ -8813,7 +8813,7 @@ Your elemental specialization grants you a feature, as shown on the 5th-Level El
 <!-- @type: feature -->
 ##### Hide of Tenfold Shields
 
-Your animal forms become hardier. You gain temporary Stamina equal to your level when you enter an animal form in combat, which is added to any temporary Stamina provided by the animal form.
+Your animal forms become hardier. You gain temporary Stamina equal to your level when you enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) in combat, which is added to any temporary Stamina provided by the [animal form](scc:mcdm.heroes.v1/complication/animal-form).
 
 Additionally, an adjacent ally can use a maneuver to pet you. If they do so, you can lose temporary Stamina down to a minimum of 0. The ally gains temporary Stamina equal to the amount you lost.
 
@@ -9061,9 +9061,9 @@ Additionally, your Mantle of Essence improves. While in the area of the aura, en
 <!-- @type: feature -->
 ##### Chimeric Manifestation
 
-Nature isn't static and unchanging, and neither are you. You can enter or exit your animal form as a free maneuver the first time you use your Disciple of the Green feature on your turn.
+Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a free maneuver the first time you use your Disciple of the Green feature on your turn.
 
-Additionally, whenever you use your Disciple of the Green feature, you can select an additional animal form and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest speed between the two animal forms and have all types of movement from both forms.
+Additionally, whenever you use your Disciple of the Green feature, you can select an additional [animal form](scc:mcdm.heroes.v1/complication/animal-form) and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest speed between the two animal forms and have all types of movement from both forms.
 
 You can only combine animal forms whose levels add up to 12 or less. For example, you can combine a shark (8th level) with a horse (4th level), but you can't combine a shark with a bear (5th level).
 
@@ -9343,7 +9343,7 @@ You gain one skill of your choice.
 <!-- @type: class | @id: fury -->
 ## Fury
 
-You do not temper the heat of battle within you. You unleash it! Your experience in the wild taught you the secrets of predators, and now, like the raptor, the panther, the wolf, you channel unfettered anger into martial prowess. Primordial Chaos is your ally. Let others use finesse to clean up the wreckage left in your wake.
+You do not temper the heat of battle within you. You unleash it! Your experience in the wild taught you the secrets of predators, and now, like the raptor, the [panther](scc:mcdm.heroes.v1/kit/panther), the wolf, you channel unfettered anger into martial prowess. Primordial Chaos is your ally. Let others use finesse to clean up the wreckage left in your wake.
 
 **As a [fury](scc:mcdm.heroes.v1/class/fury), you devastate foes with overwhelming might, hurl yourself and enemies around the battlefield, and grow stronger as your ferocity increases. Nature has no concept of fairness—and neither do you.**
 
@@ -9477,7 +9477,7 @@ You can use and gain the benefits of a stormwight kit (see Stormwight Kits). You
 <!-- @type: feature -->
 ##### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Panther.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Panther](scc:mcdm.heroes.v1/kit/panther).)
 
 <!-- @type: feature -->
 ##### Primordial Cunning
@@ -9522,7 +9522,7 @@ Your primordial aspect grants you a triggered action, as shown on the Aspect Tri
 > 
 > **Trigger:** You lose Stamina and are not dying.
 > 
-> **Effect:** You gain temporary Stamina equal to your Might score and can enter your animal form or hybrid form.
+> **Effect:** You gain temporary Stamina equal to your Might score and can enter your [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form.
 > 
 > **Spend 1 Ferocity:** If you are not dying, you can spend a Recovery.
 
@@ -9955,7 +9955,7 @@ Additionally, you have a bonus to stability equal to your Might score.
 
 You can speak with animals and elementals. Additionally, you automatically sense the presence of animals and elementals within 10 squares of you, even if they are hidden.
 
-When you are in a negotiation with an animal or elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown in a negotiation with an animal of your type while in animal form (see Stormwight Kits).
+When you are in a negotiation with an animal or elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown in a negotiation with an animal of your type while in [animal form](scc:mcdm.heroes.v1/complication/animal-form) (see Stormwight Kits).
 
 <!-- @type: feature -->
 ##### See Through Their Tricks
@@ -10628,9 +10628,9 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** You can shapeshift into the animal defined by your stormwight kit, into a hybrid form, or back into your true form. While in animal form or hybrid form, you can speak as you usually do, and you can also speak to animals who share your form. If you are in a negotiation with an animal while in animal form, you treat your Renown as 2 higher than usual.
+> **Effect:** You can shapeshift into the animal defined by your stormwight kit, into a hybrid form, or back into your true form. While in [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form, you can speak as you usually do, and you can also speak to animals who share your form. If you are in a negotiation with an animal while in [animal form](scc:mcdm.heroes.v1/complication/animal-form), you treat your Renown as 2 higher than usual.
 > 
-> **Spend 1 Ferocity:** As a free maneuver, you can shapeshift a second time, either into another animal form, into your hybrid form, or back into your true form.
+> **Spend 1 Ferocity:** As a free maneuver, you can shapeshift a second time, either into another [animal form](scc:mcdm.heroes.v1/complication/animal-form), into your hybrid form, or back into your true form.
 
 <!-- @type: feature -->
 ##### Primordial Storm
@@ -10645,7 +10645,7 @@ You wear no armor and wield only your unarmed strikes—which become devastating
 <!-- @type: feature -->
 ##### Kit Bonuses
 
-These bonuses apply in your true form, your animal form, and your hybrid form. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for information on kit bonuses.
+These bonuses apply in your true form, your [animal form](scc:mcdm.heroes.v1/complication/animal-form), and your hybrid form. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for information on kit bonuses.
 
 ##### Signature Ability
 
@@ -10659,7 +10659,7 @@ Each stormwight kit grants a set of benefits for your Growing Ferocity feature.
 <!-- @type: kit | @id: boren -->
 #### Boren
 
-With this stormwight kit, you channel your primordial ferocity into the form of a bear, becoming large, durable, and imposing. Boren are tied to the craggy, rocky north, and this aspect is associated with the blizzard's bitter cold.
+With this stormwight kit, you channel your primordial ferocity into the form of a bear, becoming large, durable, and imposing. [Boren](scc:mcdm.heroes.v1/kit/boren) are tied to the craggy, rocky north, and this aspect is associated with the blizzard's bitter cold.
 
 <!-- @type: feature -->
 ##### Aspect Benefits
@@ -10708,7 +10708,7 @@ Your primordial damage type is cold.
 <!-- @type: feature -->
 ##### Growing Ferocity
 
-As your ferocity grows, you gain benefits as noted on the Boren Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+As your ferocity grows, you gain benefits as noted on the [Boren](scc:mcdm.heroes.v1/kit/boren) Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
 ###### Boren Growing Ferocity Table
 
@@ -10724,7 +10724,7 @@ As your ferocity grows, you gain benefits as noted on the Boren Growing Ferocity
 <!-- @type: kit | @id: corven -->
 #### Corven
 
-With this stormwight kit, you channel your primordial ferocity into the form of a crow, becoming stealthy and quick. Corven are tied to the mountain passes and the hot winds that flow through them. This aspect is associated with the warm and fast-rising anabatic wind.
+With this stormwight kit, you channel your primordial ferocity into the form of a crow, becoming stealthy and quick. [Corven](scc:mcdm.heroes.v1/kit/corven) are tied to the mountain passes and the hot winds that flow through them. This aspect is associated with the warm and fast-rising anabatic wind.
 
 <!-- @type: feature -->
 ##### Aspect Benefits
@@ -10776,7 +10776,7 @@ Your primordial damage type is fire.
 <!-- @type: feature -->
 ##### Growing Ferocity
 
-As your ferocity grows, you gain benefits as noted on the Corven Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+As your ferocity grows, you gain benefits as noted on the [Corven](scc:mcdm.heroes.v1/kit/corven) Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
 ###### Corven Growing Ferocity Table
 
@@ -10792,7 +10792,7 @@ As your ferocity grows, you gain benefits as noted on the Corven Growing Ferocit
 <!-- @type: kit | @id: raden -->
 #### Raden
 
-With this stormwight kit, you channel your primordial ferocity into the form of a rat, becoming mobile and elusive. Raden are associated with the wild nature of the rat, before cities became their habitat. This aspect is associated with the rat flood—a surge of corrupted water that draws forth hordes of rats.
+With this stormwight kit, you channel your primordial ferocity into the form of a rat, becoming mobile and elusive. [Raden](scc:mcdm.heroes.v1/kit/raden) are associated with the wild nature of the rat, before cities became their habitat. This aspect is associated with the rat flood—a surge of corrupted water that draws forth hordes of rats.
 
 <!-- @type: feature -->
 ##### Aspect Benefits
@@ -10844,7 +10844,7 @@ Your primordial damage type is corruption.
 <!-- @type: feature -->
 ##### Growing Ferocity
 
-As your ferocity grows, you gain benefits as noted on the Raden Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+As your ferocity grows, you gain benefits as noted on the [Raden](scc:mcdm.heroes.v1/kit/raden) Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
 ###### Raden Growing Ferocity Table
 
@@ -10860,7 +10860,7 @@ As your ferocity grows, you gain benefits as noted on the Raden Growing Ferocity
 <!-- @type: kit | @id: vuken -->
 #### Vuken
 
-With this stormwight kit, you channel your primordial ferocity into the form of a wolf, becoming a fleet-footed hunter. Vuken are tied to forests and open steppes, and this aspect is associated with the thunderstorm.
+With this stormwight kit, you channel your primordial ferocity into the form of a wolf, becoming a fleet-footed hunter. [Vuken](scc:mcdm.heroes.v1/kit/vuken) are tied to forests and open steppes, and this aspect is associated with the thunderstorm.
 
 <!-- @type: feature -->
 ##### Aspect Benefits
@@ -10910,7 +10910,7 @@ Your primordial damage type is lightning.
 <!-- @type: feature -->
 ##### Growing Ferocity
 
-As your ferocity grows, you gain benefits as noted on the Vuken Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
+As your ferocity grows, you gain benefits as noted on the [Vuken](scc:mcdm.heroes.v1/kit/vuken) Growing Ferocity table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
 ###### Vuken Growing Ferocity Table
 
@@ -12444,7 +12444,7 @@ You have the following ability.
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Cloak and Dagger.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger).)
 
 #### Shadow Abilities
 
@@ -13676,11 +13676,11 @@ Your tactical doctrine grants you a triggered action, as shown on the Doctrine T
 <!-- @type: feature -->
 #### Field Arsenal
 
-You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Shining Armor, Sniper.)
+You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor), Sniper.)
 
 If both kits grant you the same benefit, you take one or the other and can't change your choice until you finish a respite. (This usually means taking the higher of two bonuses.)
 
-For example, if you take the Shining Armor and Sniper kits, you gain the following benefits overall:
+For example, if you take the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) and Sniper kits, you gain the following benefits overall:
 
 - Stamina Bonus: +12 per echelon
 - Stability Bonus: +1
@@ -13691,7 +13691,7 @@ For example, if you take the Shining Armor and Sniper kits, you gain the followi
 - Disengage Bonus: +1
 - You can use the Patient Shot and Protective Attack signature abilities.
 
-Kit signature abilities have their kit's bonuses already applied, which might require you to adjust the bonuses of the signature abilities you gain from a kit. For example, you might take the Martial Artist kit, which gives a melee weapon damage bonus of +2/+2/+2, and the Mountain kit, which gives a melee weapon damage bonus of +0/+0/+4. If you choose to use the Mountain kit's damage bonus, then the Battle Grace signature ability from the Martial Artist kit loses the +2/+2/+2 bonus from that kit, reducing its usual 5/8/11 damage for its tier 1, tier 2, and tier 3 outcomes to 3/6/9. It then gains the +0/+0/+4 of the Mountain kit to deal 3/6/13 damage.
+Kit signature abilities have their kit's bonuses already applied, which might require you to adjust the bonuses of the signature abilities you gain from a kit. For example, you might take the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) kit, which gives a melee weapon damage bonus of +2/+2/+2, and the Mountain kit, which gives a melee weapon damage bonus of +0/+0/+4. If you choose to use the Mountain kit's damage bonus, then the Battle Grace signature ability from the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) kit loses the +2/+2/+2 bonus from that kit, reducing its usual 5/8/11 damage for its tier 1, tier 2, and tier 3 outcomes to 3/6/9. It then gains the +0/+0/+4 of the Mountain kit to deal 3/6/13 damage.
 
 <!-- @type: feature -->
 #### Mark
@@ -16279,7 +16279,7 @@ When you use an ability outside of combat that lets you spend unlimited drama on
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Swashbuckler.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler).)
 
 <!-- @type: feature -->
 #### Scene Partner
@@ -17607,7 +17607,7 @@ You gain one skill of your choice.
 <!-- @type: chapter | @id: kits -->
 # Kits
 
-The knight in shining armor. The warrior priest. The sniper. [Censors](scc:mcdm.heroes.v1/class/censor), [furies](scc:mcdm.heroes.v1/class/fury), [shadows](scc:mcdm.heroes.v1/class/shadow), [tacticians](scc:mcdm.heroes.v1/class/tactician), and [troubadours](scc:mcdm.heroes.v1/class/troubadour) can tap into these and many more archetypal concepts using kits. A kit is a combination of weapons, armor, and fighting techniques that lets you personalize your martial hero for battle.
+The knight in [shining armor](scc:mcdm.heroes.v1/kit/shining-armor). The [warrior priest](scc:mcdm.heroes.v1/kit/warrior-priest). The [sniper](scc:mcdm.heroes.v1/kit/sniper). [Censors](scc:mcdm.heroes.v1/class/censor), [furies](scc:mcdm.heroes.v1/class/fury), [shadows](scc:mcdm.heroes.v1/class/shadow), [tacticians](scc:mcdm.heroes.v1/class/tactician), and [troubadours](scc:mcdm.heroes.v1/class/troubadour) can tap into these and many more archetypal concepts using kits. A kit is a combination of weapons, armor, and fighting techniques that lets you personalize your martial hero for battle.
 
 ### Changing Your Kit
 
@@ -17617,7 +17617,7 @@ Your choice of kit is always flexible, and your hero is never locked into a spec
 
 Each kit's equipment entry details the armor and weapons the kit provides. It's important to know what equipment a kit uses, because that informs your hero's appearance and story. Equipment is part of what affects the math behind your kit's benefits, alongside the fighting techniques each kit provides. Equipment also determines the type of magic and psionic treasures your character can wield.
 
-The description of equipment in your kit is limited to broad categories, leaving you free to decide the specifics that best align with your vision of your character. For instance, the Guisarmier kit provides medium armor and a polearm. One player using this kit could wear heavy layers of hide and wield a longspear, while another might wear a shining breastplate and carry a halberd into battle.
+The description of equipment in your kit is limited to broad categories, leaving you free to decide the specifics that best align with your vision of your character. For instance, the [Guisarmier](scc:mcdm.heroes.v1/kit/guisarmier) kit provides medium armor and a polearm. One player using this kit could wear heavy layers of hide and wield a longspear, while another might wear a shining breastplate and carry a halberd into battle.
 
 You can wear armor and wield weapons that aren't part of your kit, but if you do, you don't get your kit's bonuses.
 
@@ -17689,7 +17689,7 @@ Whip weapons include the standard whip, spiked chains, flails, and any similarly
 
 #### Kits and Treasures
 
-When you find a supernatural treasure such as a magic sword, you can use the item as long as it's in one of your kit's equipment categories. A Blade of Quintessence is a medium weapon, so you can use it with the Ranger or Shining Armor kits. However, you can't use it with the Cloak and Dagger or Stick and Robe kits because those kits don't include medium weapons, meaning you haven't done the necessary preparations to use the weapon effectively. You can still swing a Blade of Quintessence around as an improvised weapon, but you don't get any of its bonuses or benefits.
+When you find a supernatural treasure such as a magic sword, you can use the item as long as it's in one of your kit's equipment categories. A Blade of Quintessence is a medium weapon, so you can use it with the [Ranger](scc:mcdm.heroes.v1/kit/ranger) or [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kits. However, you can't use it with the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) or [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe) kits because those kits don't include medium weapons, meaning you haven't done the necessary preparations to use the weapon effectively. You can still swing a Blade of Quintessence around as an improvised weapon, but you don't get any of its bonuses or benefits.
 
 If you find a piece of equipment you really want to use that isn't part of your kit, you can always change your kit as a respite activity.
 
@@ -17717,7 +17717,7 @@ Kits can grant you a bonus to damage with both melee and ranged weapon abilities
 
 Kit damage bonuses increase based on the tier outcome of the power roll for a weapon ability, and are presented as "+X/+Y/+Z." The X bonus is added to a tier 1 outcome, the Y bonus is added to a tier 2 outcome, and the Z bonus is added to a tier 3 outcome.
 
-For example, the Shining Armor kit has a +2/+2/+2 melee damage bonus, increasing the damage of melee weapon abilities across all tier outcomes. The Sniper kit has a +0/+0/+4 ranged damage bonus, having no effect on a tier 1 or tier 2 outcome on an ability roll, but increasing the damage of tier 3 outcomes by +4 for your ranged weapon abilities.
+For example, the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit has a +2/+2/+2 melee damage bonus, increasing the damage of melee weapon abilities across all tier outcomes. The [Sniper](scc:mcdm.heroes.v1/kit/sniper) kit has a +0/+0/+4 ranged damage bonus, having no effect on a tier 1 or tier 2 outcome on an ability roll, but increasing the damage of tier 3 outcomes by +4 for your ranged weapon abilities.
 
 #### Distance Bonus
 
@@ -17731,7 +17731,7 @@ A kit that has a disengage bonus increases the number of squares you can shift w
 
 ### Kit Signature Ability
 
-Each kit grants a signature ability, **whose distance and damage already includes the kit's bonuses**. For instance, the Guisarmier kit's Forward Thrust, Backward Smash ability has a distance of melee 2 and deals 4, 7, or 9 damage depending on the tier outcome, with that distance and damage including the bonuses from the kit.
+Each kit grants a signature ability, **whose distance and damage already includes the kit's bonuses**. For instance, the [Guisarmier](scc:mcdm.heroes.v1/kit/guisarmier) kit's Forward Thrust, Backward Smash ability has a distance of melee 2 and deals 4, 7, or 9 damage depending on the tier outcome, with that distance and damage including the bonuses from the kit.
 
 For details on the ability format, see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes).
 
@@ -17748,7 +17748,7 @@ This section details each kit, whose bonuses and benefits are summarized in the 
 <!-- @type: kit | @id: arcane-archer -->
 #### Arcane Archer
 
-The Arcane Archer kit allows you to combine magic and ranged weapon strikes. Your lack of armor keeps you mobile, and your magic makes your arrows explode to devastate your foes.
+The [Arcane Archer](scc:mcdm.heroes.v1/kit/arcane-archer) kit allows you to combine magic and ranged weapon strikes. Your lack of armor keeps you mobile, and your magic makes your arrows explode to devastate your foes.
 
 ##### Equipment
 
@@ -17786,7 +17786,7 @@ You wear no armor and wield a bow.
 <!-- @type: kit | @id: battlemind -->
 #### Battlemind
 
-Who says lightly armored heroes can't also be hard to move? You just need to employ some psionics! The Battlemind kit harnesses the power of your mind to make you harder to move—and to make your foes easier to push around.
+Who says lightly armored heroes can't also be hard to move? You just need to employ some psionics! The [Battlemind](scc:mcdm.heroes.v1/kit/battlemind) kit harnesses the power of your mind to make you harder to move—and to make your foes easier to push around.
 
 ##### Equipment
 
@@ -17824,7 +17824,7 @@ You wear light armor and wield a medium weapon.
 <!-- @type: kit | @id: cloak-and-dagger -->
 #### Cloak and Dagger
 
-Providing throwable light weapons and light armor easily concealed by a cloak to confuse your enemies, the Cloak and Dagger kit makes you more mobile while increasing the effectiveness of your short-range strikes.
+Providing throwable light weapons and light armor easily concealed by a cloak to confuse your enemies, the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) kit makes you more mobile while increasing the effectiveness of your short-range strikes.
 
 ##### Equipment
 
@@ -17864,7 +17864,7 @@ You wear light armor and wield one or two light weapons.
 <!-- @type: kit | @id: dual-wielder -->
 #### Dual Wielder
 
-The Dual Wielder kit is for folks who want to excel at using two weapons at the same time. Your fighting style maximizes the power of each weapon you have in hand, making you a whirling dealer of death.
+The [Dual Wielder](scc:mcdm.heroes.v1/kit/dual-wielder) kit is for folks who want to excel at using two weapons at the same time. Your fighting style maximizes the power of each weapon you have in hand, making you a whirling dealer of death.
 
 ##### Equipment
 
@@ -17902,7 +17902,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 <!-- @type: kit | @id: guisarmier -->
 #### Guisarmier
 
-The Guisarmier kit is for those who want to use a polearm for extended reach while remaining protected by sturdy armor. This is the kit that allows you to become the ultimate halberd, longspear, or glaive fighter.
+The [Guisarmier](scc:mcdm.heroes.v1/kit/guisarmier) kit is for those who want to use a polearm for extended reach while remaining protected by sturdy armor. This is the kit that allows you to become the ultimate halberd, longspear, or glaive fighter.
 
 ##### Equipment
 
@@ -17938,7 +17938,7 @@ You wear medium armor and wield a polearm.
 <!-- @type: kit | @id: martial-artist -->
 #### Martial Artist
 
-If you want to be fast in a fight, then Martial Artist is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed strikes against opponents, and allows you to be the ultimate skirmisher.
+If you want to be fast in a fight, then [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed strikes against opponents, and allows you to be the ultimate skirmisher.
 
 ##### Equipment
 
@@ -17976,7 +17976,7 @@ You wear no armor and wield only your unarmed strikes.
 <!-- @type: kit | @id: mountain -->
 #### Mountain
 
-The Mountain kit does exactly what it says on the tin. You don heavy armor and raise a heavy weapon to stand strong against your foes, quickly demolishing them when it's your turn to strike.
+The [Mountain](scc:mcdm.heroes.v1/kit/mountain) kit does exactly what it says on the tin. You don heavy armor and raise a heavy weapon to stand strong against your foes, quickly demolishing them when it's your turn to strike.
 
 ##### Equipment
 
@@ -18012,7 +18012,7 @@ You wear heavy armor and wield a heavy weapon.
 <!-- @type: kit | @id: panther -->
 #### Panther
 
-If you want a good balance of protection, speed, and damage, the Panther kit is for you. This kit increases your Stamina not by wearing armor, but through the focused battle preparation of body and mind, letting you be fast and mobile while swinging a heavy weapon at your foes.
+If you want a good balance of protection, speed, and damage, the [Panther](scc:mcdm.heroes.v1/kit/panther) kit is for you. This kit increases your Stamina not by wearing armor, but through the focused battle preparation of body and mind, letting you be fast and mobile while swinging a heavy weapon at your foes.
 
 ##### Equipment
 
@@ -18050,7 +18050,7 @@ You wear no armor and wield a heavy weapon.
 <!-- @type: kit | @id: pugilist -->
 #### Pugilist
 
-Meant for brawlers and boxers, the Pugilist kit gives you access to a melee fighting style that grants a boost to Stamina and damage while allowing you to float like a butterfly. If you want to be a tough, strong hero who doles out punishment with your fists, then this kit is for you.
+Meant for brawlers and boxers, the [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit gives you access to a melee fighting style that grants a boost to Stamina and damage while allowing you to float like a butterfly. If you want to be a tough, strong hero who doles out punishment with your fists, then this kit is for you.
 
 ##### Equipment
 
@@ -18088,7 +18088,7 @@ You wear no armor and wield only your unarmed strikes.
 <!-- @type: kit | @id: raider -->
 #### Raider
 
-The Raider kit keeps you protected while granting you full mobility, providing a boost to speed and distance that lets you run around the battlefield like a Viking warrior.
+The [Raider](scc:mcdm.heroes.v1/kit/raider) kit keeps you protected while granting you full mobility, providing a boost to speed and distance that lets you run around the battlefield like a Viking warrior.
 
 ##### Equipment
 
@@ -18130,7 +18130,7 @@ You wear light armor and wield a shield and a light weapon.
 <!-- @type: kit | @id: ranger -->
 #### Ranger
 
-The Ranger kit outfits you with medium armor and weapons for every challenge, letting you easily switch between melee and ranged combat. This kit provides a good balance of bonuses to defense and offense to create a hero who is a jack-of-all-trades.
+The [Ranger](scc:mcdm.heroes.v1/kit/ranger) kit outfits you with medium armor and weapons for every challenge, letting you easily switch between melee and ranged combat. This kit provides a good balance of bonuses to defense and offense to create a hero who is a jack-of-all-trades.
 
 ##### Equipment
 
@@ -18208,7 +18208,7 @@ You wear light armor and wield a bow.
 <!-- @type: kit | @id: retiarius -->
 #### Retiarius
 
-The retiarius is often depicted as a lightly armored warrior with a net in one hand and a trident in the other, and this kit gives you the equipment and fighting technique to make that happen. Tie up your foe with a net and then poke them to death!
+The [retiarius](scc:mcdm.heroes.v1/kit/retiarius) is often depicted as a lightly armored warrior with a net in one hand and a trident in the other, and this kit gives you the equipment and fighting technique to make that happen. Tie up your foe with a net and then poke them to death!
 
 ##### Equipment
 
@@ -18246,7 +18246,7 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 <!-- @type: kit | @id: shining-armor -->
 #### Shining Armor
 
-The Shining Armor kit provides the most protection a kit can afford, providing you with the sword, shield, and armor necessary to play the prototypical knight.
+The [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit provides the most protection a kit can afford, providing you with the sword, shield, and armor necessary to play the prototypical knight.
 
 ##### Equipment
 
@@ -18282,7 +18282,7 @@ You wear heavy armor and wield a shield and a medium weapon.
 <!-- @type: kit | @id: sniper -->
 #### Sniper
 
-The Sniper kit gives you the tools and techniques to take down enemies from afar. This kit can help you become the archer who lurks behind trees or down tunnels, picking off enemies with a bow or crossbow as they approach.
+The [Sniper](scc:mcdm.heroes.v1/kit/sniper) kit gives you the tools and techniques to take down enemies from afar. This kit can help you become the archer who lurks behind trees or down tunnels, picking off enemies with a bow or crossbow as they approach.
 
 ##### Equipment
 
@@ -18320,7 +18320,7 @@ You wear no armor and wield a bow.
 <!-- @type: kit | @id: spellsword -->
 #### Spellsword
 
-The Spellsword kit combines melee strikes and a little bit of magic, letting you create a warrior who doesn't have to choose between the incantation and the blade.
+The [Spellsword](scc:mcdm.heroes.v1/kit/spellsword) kit combines melee strikes and a little bit of magic, letting you create a warrior who doesn't have to choose between the incantation and the blade.
 
 ##### Equipment
 
@@ -18358,7 +18358,7 @@ You wear light armor and wield a shield and a medium weapon.
 <!-- @type: kit | @id: stick-and-robe -->
 #### Stick and Robe
 
-Armed with a simple reach weapon, often a quarterstaff, a character using the Stick and Robe kit is highly mobile thanks to their light armor. This allows your hero to make maximum use of their weapon's length.
+Armed with a simple reach weapon, often a quarterstaff, a character using the [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe) kit is highly mobile thanks to their light armor. This allows your hero to make maximum use of their weapon's length.
 
 ##### Equipment
 
@@ -18396,7 +18396,7 @@ You wear light armor and wield a polearm.
 <!-- @type: kit | @id: swashbuckler -->
 #### Swashbuckler
 
-If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the Swashbuckler kit. This is a great kit for heroes who want to be master duelists.
+If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the [Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler) kit. This is a great kit for heroes who want to be master duelists.
 
 ##### Equipment
 
@@ -18434,7 +18434,7 @@ You wear light armor and wield a medium weapon.
 <!-- @type: kit | @id: sword-and-board -->
 #### Sword and Board
 
-The Sword and Board kit doesn't just give you a shield—it makes the shield part of your offensive arsenal. With a medium weapon in one hand and a block of steel or solid oak in the other, you protect yourself while you control the battlefield.
+The [Sword and Board](scc:mcdm.heroes.v1/kit/sword-and-board) kit doesn't just give you a shield—it makes the shield part of your offensive arsenal. With a medium weapon in one hand and a block of steel or solid oak in the other, you protect yourself while you control the battlefield.
 
 ##### Equipment
 
@@ -18470,7 +18470,7 @@ You wear medium armor and wield a shield and a medium weapon.
 <!-- @type: kit | @id: warrior-priest -->
 #### Warrior Priest
 
-The Warrior Priest kit imbues the power of the gods into your weapon, making it a smiting instrument. You wade into the fray without fear, thanks to the power of the divine... and the heavy armor you wear.
+The [Warrior Priest](scc:mcdm.heroes.v1/kit/warrior-priest) kit imbues the power of the gods into your weapon, making it a smiting instrument. You wade into the fray without fear, thanks to the power of the divine... and the heavy armor you wear.
 
 ##### Equipment
 
@@ -18508,7 +18508,7 @@ You wear heavy armor and wield a light weapon.
 <!-- @type: kit | @id: whirlwind -->
 #### Whirlwind
 
-The Whirlwind kit makes effective use of whips, granting you mobility, damage, and reach. If you want to be a fast-moving warrior who lashes foes with a chain or whip, then this is the kit for you.
+The [Whirlwind](scc:mcdm.heroes.v1/kit/whirlwind) kit makes effective use of whips, granting you mobility, damage, and reach. If you want to be a fast-moving warrior who lashes foes with a chain or whip, then this is the kit for you.
 
 ##### Equipment
 
@@ -18556,27 +18556,27 @@ The rules of the game expect that heroes always have access to their equipment. 
 
 | Kit              | Armor          | Weapon             | Stamina per Echelon | Speed | Stability | Melee Damage | Ranged Damage | Melee Distance | Ranged Distance | Disengage |
 |------------------|----------------|--------------------|---------------------|-------|-----------|--------------|---------------|----------------|-----------------|-----------|
-| Arcane Archer    | None           | Bow                | -                   | +1    | -         | -            | +2/+2/+2      | -              | +10             | +1        |
-| Battlemind       | Light          | Medium             | +3                  | +2    | +1        | +2/+2/+2     | -             | -              | -               | -         |
-| Cloak and Dagger | Light          | Light              | +3                  | +2    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
-| Dual Wielder     | Medium         | Light, medium      | +6                  | +2    | -         | +2/+2/+2     | -             | -              | -               | +1        |
-| Guisarmier       | Medium         | Polearm            | +6                  | -     | +1        | +2/+2/+2     | -             | +1             | -               | -         |
-| Martial Artist   | None           | Unarmed strikes    | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
-| Mountain         | Heavy          | Heavy              | +9                  | -     | +2        | +0/+0/+4     | -             | -              | -               | -         |
-| Panther          | None           | Heavy              | +6                  | +1    | +1        | +0/+0/+4     | -             | -              | -               | -         |
-| Pugilist         | None           | Unarmed strikes    | +6                  | +2    | +1        | +1/+1/+1     | -             | -              | -               | -         |
-| Raider           | Light, shield  | Light              | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
-| Ranger           | Medium         | Bow, medium        | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
+| [Arcane Archer](scc:mcdm.heroes.v1/kit/arcane-archer)    | None           | Bow                | -                   | +1    | -         | -            | +2/+2/+2      | -              | +10             | +1        |
+| [Battlemind](scc:mcdm.heroes.v1/kit/battlemind)       | Light          | Medium             | +3                  | +2    | +1        | +2/+2/+2     | -             | -              | -               | -         |
+| [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) | Light          | Light              | +3                  | +2    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
+| [Dual Wielder](scc:mcdm.heroes.v1/kit/dual-wielder)     | Medium         | Light, medium      | +6                  | +2    | -         | +2/+2/+2     | -             | -              | -               | +1        |
+| [Guisarmier](scc:mcdm.heroes.v1/kit/guisarmier)       | Medium         | Polearm            | +6                  | -     | +1        | +2/+2/+2     | -             | +1             | -               | -         |
+| [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist)   | None           | Unarmed strikes    | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
+| [Mountain](scc:mcdm.heroes.v1/kit/mountain)         | Heavy          | Heavy              | +9                  | -     | +2        | +0/+0/+4     | -             | -              | -               | -         |
+| [Panther](scc:mcdm.heroes.v1/kit/panther)          | None           | Heavy              | +6                  | +1    | +1        | +0/+0/+4     | -             | -              | -               | -         |
+| [Pugilist](scc:mcdm.heroes.v1/kit/pugilist)         | None           | Unarmed strikes    | +6                  | +2    | +1        | +1/+1/+1     | -             | -              | -               | -         |
+| [Raider](scc:mcdm.heroes.v1/kit/raider)           | Light, shield  | Light              | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
+| [Ranger](scc:mcdm.heroes.v1/kit/ranger)           | Medium         | Bow, medium        | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
 | Rapid-Fire       | Light          | Bow                | +3                  | +1    | -         | -            | +2/+2/+2      | -              | +7              | +1        |
-| Retiarius        | Light          | Ensnaring, polearm | +3                  | +1    | -         | +2/+2/+2     | -             | +1             | -               | +1        |
-| Shining Armor    | Heavy, shield  | Medium             | +12                 | -     | +1        | +2/+2/+2     | -             | -              | -               | -         |
-| Sniper           | None           | Bow                | -                   | +1    | -         | -            | +0/+0/+4      | -              | +10             | +1        |
-| Spellsword       | Light, shield  | Medium             | +6                  | +1    | +1        | +2/+2/+2     | -             | -              | -               | -         |
-| Stick and Robe   | Light          | Polearm            | +3                  | +2    | -         | +1/+1/+1     | -             | +1             | -               | +1        |
-| Swashbuckler     | Light          | Medium             | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
-| Sword and Board  | Medium, shield | Medium             | +9                  | -     | +1        | +2/+2/+2     | -             | -              | -               | +1        |
-| Warrior Priest   | Heavy          | Light              | +9                  | +1    | +1        | +1/+1/+1     | -             | -              | -               | -         |
-| Whirlwind        | None           | Whip               | -                   | +3    | -         | +1/+1/+1     | -             | +1             | -               | +1        |
+| [Retiarius](scc:mcdm.heroes.v1/kit/retiarius)        | Light          | Ensnaring, polearm | +3                  | +1    | -         | +2/+2/+2     | -             | +1             | -               | +1        |
+| [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor)    | Heavy, shield  | Medium             | +12                 | -     | +1        | +2/+2/+2     | -             | -              | -               | -         |
+| [Sniper](scc:mcdm.heroes.v1/kit/sniper)           | None           | Bow                | -                   | +1    | -         | -            | +0/+0/+4      | -              | +10             | +1        |
+| [Spellsword](scc:mcdm.heroes.v1/kit/spellsword)       | Light, shield  | Medium             | +6                  | +1    | +1        | +2/+2/+2     | -             | -              | -               | -         |
+| [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe)   | Light          | Polearm            | +3                  | +2    | -         | +1/+1/+1     | -             | +1             | -               | +1        |
+| [Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler)     | Light          | Medium             | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
+| [Sword and Board](scc:mcdm.heroes.v1/kit/sword-and-board)  | Medium, shield | Medium             | +9                  | -     | +1        | +2/+2/+2     | -             | -              | -               | +1        |
+| [Warrior Priest](scc:mcdm.heroes.v1/kit/warrior-priest)   | Heavy          | Light              | +9                  | +1    | +1        | +1/+1/+1     | -             | -              | -               | -         |
+| [Whirlwind](scc:mcdm.heroes.v1/kit/whirlwind)        | None           | Whip               | -                   | +3    | -         | +1/+1/+1     | -             | +1             | -               | +1        |
 
 <!-- @type: chapter | @id: perks -->
 # Perks
@@ -18762,7 +18762,7 @@ This section presents intrigue perks in alphabetical order.
 <!-- @type: perk -->
 #### Criminal Contacts
 
-You have access to a network of criminal contacts. As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a Presence test. On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
+You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a Presence test. On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
 
 <!-- @type: perk -->
 #### Forgettable Face
@@ -18833,7 +18833,7 @@ Whenever you make a test to recall lore and don't have a skill that applies to t
 <!-- @type: perk -->
 #### Specialist
 
-You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double edge on tests made to recall lore using this skill. Additionally, your specialist knowledge grants you notoriety in fields related to the chosen skill. You treat your Renown as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
+You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double edge on tests made to recall lore using this skill. Additionally, your [specialist](scc:mcdm.heroes.v1/perk/specialist) knowledge grants you notoriety in fields related to the chosen skill. You treat your Renown as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
 
 <!-- @type: perk -->
 #### Traveling Sage
@@ -18850,7 +18850,7 @@ This section presents supernatural perks in alphabetical order.
 
 You have the following ability.
 
-> ###### Arcane Trick
+> ###### [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick)
 >
 > *You cast an entertaining spell that creates a minor but impressive magical effect.*
 >
@@ -18865,7 +18865,7 @@ You have the following ability.
 > - You ignite or snuff out (your choice) every mundane light source of 1L or smaller adjacent to you.
 > - You transform up to 1 pound of edible food you touch to make it taste delicious or disgusting.
 > - Until the start of your next turn, you make your body exude a particular odor you've smelled before. This smell can be sensed by each creature within 5 squares of you, but can't impose any condition or other drawback on those creatures.
-> - You place a small magical inscription on the surface of a mundane object you touch, or you can remove an inscription that was made by you or by another creature using Arcane Trick.
+> - You place a small magical inscription on the surface of a mundane object you touch, or you can remove an inscription that was made by you or by another creature using [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick).
 > - You touch a size 1T object to cover it with an illusion that makes it look like a different object. Any creature who handles the object becomes aware of the illusion. The illusion ends when you stop touching the object.
 
 <!-- @type: perk -->
@@ -18876,19 +18876,19 @@ As a maneuver, choose a creature within 10 squares. If that creature is your lev
 <!-- @type: perk -->
 #### Familiar
 
-A supernatural spirit who has taken the form of a specific small animal or animated object has chosen to be your familiar—or to adopt you as their familiar.
+A supernatural spirit who has taken the form of a specific small animal or animated object has chosen to be your [familiar](scc:mcdm.heroes.v1/perk/familiar)—or to adopt you as their [familiar](scc:mcdm.heroes.v1/perk/familiar).
 
-The spirit uses the familiar stat block.
+The spirit uses the [familiar](scc:mcdm.heroes.v1/perk/familiar) stat block.
 
-The familiar can hold small objects in their mouth or claws, but can't perform activities that would typically require hands (opening a door, unrolling a scroll, and so forth). They can't harm other creatures or objects. They can flank in combat, but only with you.
+The [familiar](scc:mcdm.heroes.v1/perk/familiar) can hold small objects in their mouth or claws, but can't perform activities that would typically require hands (opening a door, unrolling a scroll, and so forth). They can't harm other creatures or objects. They can flank in combat, but only with you.
 
-If your familiar is destroyed, you can restore them as a respite activity, or by spending a Recovery as a main action to bring them back into existence in an unoccupied space adjacent to you.
+If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can restore them as a respite activity, or by spending a Recovery as a main action to bring them back into existence in an unoccupied space adjacent to you.
 
 ###### Familiar Statblock
 
-**Familiar**
+**[Familiar](scc:mcdm.heroes.v1/perk/familiar)**
 
-|      Familiar       |         -         |           Level -            |           -           |         EV -         |
+|      [Familiar](scc:mcdm.heroes.v1/perk/familiar)       |         -         |           Level -            |           -           |         EV -         |
 |:-------------------:|:-----------------:|:----------------------------:|:---------------------:|:--------------------:|
 |   **1T**<br>Size    |  **5**<br>Speed   | **2x your level**<br>Stamina |  **0**<br>Stability   | **-**<br>Free Strike |
 | **-**<br>Immunities | **-**<br>Movement |                              | **-**<br>With Captain | **-**<br>Weaknesses  |
@@ -18896,14 +18896,14 @@ If your familiar is destroyed, you can restore them as a respite activity, or by
 
 > **Telepathic**
 > 
-> While you and your familiar are within 10 squares of each other, you can communicate telepathically and share each other's senses. While sharing senses, each of you also benefits from your own senses at the same time.
+> While you and your [familiar](scc:mcdm.heroes.v1/perk/familiar) are within 10 squares of each other, you can communicate telepathically and share each other's senses. While sharing senses, each of you also benefits from your own senses at the same time.
 
 <!-- @type: perk -->
 #### Invisible Force
 
 You have the following ability.
 
-> ###### Invisible Force
+> ###### [Invisible Force](scc:mcdm.heroes.v1/perk/invisible-force)
 >
 > *You manipulate a tiny object with your mind.*
 >
@@ -18918,7 +18918,7 @@ You have the following ability.
 
 You have the following ability.
 
-> ###### Psychic Whisper
+> ###### [Psychic Whisper](scc:mcdm.heroes.v1/perk/psychic-whisper)
 >
 > *You send a one-way telepathic message to a friend.*
 >
@@ -18959,7 +18959,7 @@ Not all complication benefits and drawbacks carry equal weight, but each benefit
 
 ### Modifying the Story
 
-In consultation with the Director, you can modify the narrative of a complication to better fit your vision of your character's backstory—or change it entirely. For instance, if you choose Infernal Contract as a complication, you might have your hero strike a deal with an archfey or an undead general instead of a [devil](scc:mcdm.heroes.v1/ancestry/devil)!
+In consultation with the Director, you can modify the narrative of a complication to better fit your vision of your character's backstory—or change it entirely. For instance, if you choose [Infernal Contract](scc:mcdm.heroes.v1/complication/infernal-contract) as a complication, you might have your hero strike a deal with an archfey or an undead general instead of a [devil](scc:mcdm.heroes.v1/ancestry/devil)!
 
 Many of the details of each complication are purposefully left vague, so that you can connect the complication to the rest of your backstory. If your complication took place during an attack, accident, or other event, you decide the specific details of those events and any other creatures involved.
 
@@ -18973,161 +18973,161 @@ Complications are presented in alphabetical order.
 
 | d100 | Complication                       | d100 | Complication               |
 |------|------------------------------------|------|----------------------------|
-| 1    | Advanced Studies                   | 51   | Loner                      |
-| 2    | Amnesia                            | 52   | Lost in Time               |
-| 3    | Animal Form                        | 53   | Lost Your Head             |
-| 4    | Antihero                           | 54   | Lucky                      |
-| 5    | Artifact Bonded                    | 55   | Master Chef                |
-| 6    | Bereaved                           | 56   | Meddling Butler            |
-| 7    | Betrothed                          | 57   | Medium                     |
-| 8    | Chaos Touched                      | 58   | Medusa Blood               |
-| 9    | Chosen One                         | 59   | Misunderstood              |
-| 10   | Consuming Interest                 | 60   | Mundane                    |
-| 11   | Corrupted Mentor                   | 61   | Outlaw                     |
-| 12   | Coward                             | 62   | Pirate                     |
-| 13   | Crash Landed                       | 63   | Preacher                   |
-| 14   | Cult Victim                        | 64   | Primordial Sickness        |
-| 15   | Curse of Caution                   | 65   | Prisoner of the Synlirii   |
-| 16   | Curse of Immortality               | 66   | Promising Apprentice       |
-| 17   | Curse of Misfortune                | 67   | Psychic Eruption           |
-| 18   | Curse of Poverty                   | 68   | Raised by Beasts           |
-| 19   | Curse of Punishment                | 69   | Refugee                    |
-| 20   | Curse of Stone                     | 70   | Rival                      |
-| 21   | Cursed Weapon                      | 71   | Rogue [Talent](scc:mcdm.heroes.v1/class/talent)               |
-| 22   | Disgraced                          | 72   | Runaway                    |
-| 23   | Dragon Dreams                      | 73   | Searching for a Cure       |
-| 24   | Elemental Inside                   | 74   | Secret Identity            |
-| 25   | Evanesceria                        | 75   | Secret Twin                |
-| 26   | Exile                              | 76   | Self-Taught                |
-| 27   | Fallen Immortal                    | 77   | Sewer Folk                 |
-| 28   | Famous Relative                    | 78   | [Shadow](scc:mcdm.heroes.v1/class/shadow) Born                |
-| 29   | Feytouched                         | 79   | Shared Spirit              |
-| 30   | Fiery Ideal                        | 80   | Shattered Legacy           |
-| 31   | Fire and Chaos                     | 81   | Shipwrecked                |
-| 32   | Following in the Footsteps         | 82   | Sibling's Shield           |
-| 33   | Forbidden Romance                  | 83   | Silent Sentinel            |
-| 34   | Frostheart                         | 84   | Slight Case of Lycanthropy |
-| 35   | Getting Too Old for This           | 85   | Stolen Face                |
-| 36   | Gnoll-Mauled                       | 86   | Strange Inheritance        |
-| 37   | Greening                           | 87   | Stripped of Rank           |
-| 38   | Grifter                            | 88   | Thrill Seeker              |
-| 39   | Grounded                           | 89   | Vampire Scion              |
-| 40   | Guilty Conscience                  | 90   | Voice in Your Head         |
-| 41   | Hawk Rider                         | 91   | Vow of Duty                |
-| 42   | Host Body                          | 92   | Vow of Honesty             |
-| 43   | Hunted                             | 93   | Waking Dreams              |
-| 44   | Hunter                             | 94   | War Dog Collar             |
-| 45   | Indebted                           | 95   | War of Assassins           |
-| 46   | Infernal Contract                  | 96   | Ward                       |
-| 47   | Infernal Contract... But, Like, Bad | 97   | Waterborn                  |
-| 48   | Ivory Tower                        | 98   | Wodewalker                 |
-| 49   | Lifebonded                         | 99   | Wrathful Spirit            |
-| 50   | Lightning Soul                     | 100  | Wrongly Imprisoned         |
+| 1    | [Advanced Studies](scc:mcdm.heroes.v1/complication/advanced-studies)                   | 51   | [Loner](scc:mcdm.heroes.v1/complication/loner)                      |
+| 2    | [Amnesia](scc:mcdm.heroes.v1/complication/amnesia)                            | 52   | [Lost in Time](scc:mcdm.heroes.v1/complication/lost-in-time)               |
+| 3    | [Animal Form](scc:mcdm.heroes.v1/complication/animal-form)                        | 53   | [Lost Your Head](scc:mcdm.heroes.v1/complication/lost-your-head)             |
+| 4    | [Antihero](scc:mcdm.heroes.v1/complication/antihero)                           | 54   | [Lucky](scc:mcdm.heroes.v1/complication/lucky)                      |
+| 5    | [Artifact Bonded](scc:mcdm.heroes.v1/complication/artifact-bonded)                    | 55   | [Master Chef](scc:mcdm.heroes.v1/complication/master-chef)                |
+| 6    | [Bereaved](scc:mcdm.heroes.v1/complication/bereaved)                           | 56   | [Meddling Butler](scc:mcdm.heroes.v1/complication/meddling-butler)            |
+| 7    | [Betrothed](scc:mcdm.heroes.v1/complication/betrothed)                          | 57   | [Medium](scc:mcdm.heroes.v1/complication/medium)                     |
+| 8    | [Chaos Touched](scc:mcdm.heroes.v1/complication/chaos-touched)                      | 58   | [Medusa Blood](scc:mcdm.heroes.v1/complication/medusa-blood)               |
+| 9    | [Chosen One](scc:mcdm.heroes.v1/complication/chosen-one)                         | 59   | [Misunderstood](scc:mcdm.heroes.v1/complication/misunderstood)              |
+| 10   | [Consuming Interest](scc:mcdm.heroes.v1/complication/consuming-interest)                 | 60   | [Mundane](scc:mcdm.heroes.v1/complication/mundane)                    |
+| 11   | [Corrupted Mentor](scc:mcdm.heroes.v1/complication/corrupted-mentor)                   | 61   | [Outlaw](scc:mcdm.heroes.v1/complication/outlaw)                     |
+| 12   | [Coward](scc:mcdm.heroes.v1/complication/coward)                             | 62   | [Pirate](scc:mcdm.heroes.v1/complication/pirate)                     |
+| 13   | [Crash Landed](scc:mcdm.heroes.v1/complication/crash-landed)                       | 63   | [Preacher](scc:mcdm.heroes.v1/complication/preacher)                   |
+| 14   | [Cult Victim](scc:mcdm.heroes.v1/complication/cult-victim)                        | 64   | [Primordial Sickness](scc:mcdm.heroes.v1/complication/primordial-sickness)        |
+| 15   | [Curse of Caution](scc:mcdm.heroes.v1/complication/curse-of-caution)                   | 65   | [Prisoner of the Synlirii](scc:mcdm.heroes.v1/complication/prisoner-of-the-synlirii)   |
+| 16   | [Curse of Immortality](scc:mcdm.heroes.v1/complication/curse-of-immortality)               | 66   | [Promising Apprentice](scc:mcdm.heroes.v1/complication/promising-apprentice)       |
+| 17   | [Curse of Misfortune](scc:mcdm.heroes.v1/complication/curse-of-misfortune)                | 67   | [Psychic Eruption](scc:mcdm.heroes.v1/complication/psychic-eruption)           |
+| 18   | [Curse of Poverty](scc:mcdm.heroes.v1/complication/curse-of-poverty)                   | 68   | [Raised by Beasts](scc:mcdm.heroes.v1/complication/raised-by-beasts)           |
+| 19   | [Curse of Punishment](scc:mcdm.heroes.v1/complication/curse-of-punishment)                | 69   | [Refugee](scc:mcdm.heroes.v1/complication/refugee)                    |
+| 20   | [Curse of Stone](scc:mcdm.heroes.v1/complication/curse-of-stone)                     | 70   | [Rival](scc:mcdm.heroes.v1/complication/rival)                      |
+| 21   | [Cursed Weapon](scc:mcdm.heroes.v1/complication/cursed-weapon)                      | 71   | Rogue [Talent](scc:mcdm.heroes.v1/class/talent)               |
+| 22   | [Disgraced](scc:mcdm.heroes.v1/complication/disgraced)                          | 72   | [Runaway](scc:mcdm.heroes.v1/complication/runaway)                    |
+| 23   | [Dragon Dreams](scc:mcdm.heroes.v1/complication/dragon-dreams)                      | 73   | [Searching for a Cure](scc:mcdm.heroes.v1/complication/searching-for-a-cure)       |
+| 24   | [Elemental Inside](scc:mcdm.heroes.v1/complication/elemental-inside)                   | 74   | [Secret Identity](scc:mcdm.heroes.v1/complication/secret-identity)            |
+| 25   | [Evanesceria](scc:mcdm.heroes.v1/complication/evanesceria)                        | 75   | [Secret Twin](scc:mcdm.heroes.v1/complication/secret-twin)                |
+| 26   | [Exile](scc:mcdm.heroes.v1/complication/exile)                              | 76   | Self-Taught                |
+| 27   | [Fallen Immortal](scc:mcdm.heroes.v1/complication/fallen-immortal)                    | 77   | [Sewer Folk](scc:mcdm.heroes.v1/complication/sewer-folk)                 |
+| 28   | [Famous Relative](scc:mcdm.heroes.v1/complication/famous-relative)                    | 78   | [Shadow](scc:mcdm.heroes.v1/class/shadow) Born                |
+| 29   | [Feytouched](scc:mcdm.heroes.v1/complication/feytouched)                         | 79   | [Shared Spirit](scc:mcdm.heroes.v1/complication/shared-spirit)              |
+| 30   | [Fiery Ideal](scc:mcdm.heroes.v1/complication/fiery-ideal)                        | 80   | [Shattered Legacy](scc:mcdm.heroes.v1/complication/shattered-legacy)           |
+| 31   | [Fire and Chaos](scc:mcdm.heroes.v1/complication/fire-and-chaos)                     | 81   | [Shipwrecked](scc:mcdm.heroes.v1/complication/shipwrecked)                |
+| 32   | [Following in the Footsteps](scc:mcdm.heroes.v1/complication/following-in-the-footsteps)         | 82   | Sibling's Shield           |
+| 33   | [Forbidden Romance](scc:mcdm.heroes.v1/complication/forbidden-romance)                  | 83   | [Silent Sentinel](scc:mcdm.heroes.v1/complication/silent-sentinel)            |
+| 34   | [Frostheart](scc:mcdm.heroes.v1/complication/frostheart)                         | 84   | [Slight Case of Lycanthropy](scc:mcdm.heroes.v1/complication/slight-case-of-lycanthropy) |
+| 35   | [Getting Too Old for This](scc:mcdm.heroes.v1/complication/getting-too-old-for-this)           | 85   | [Stolen Face](scc:mcdm.heroes.v1/complication/stolen-face)                |
+| 36   | Gnoll-Mauled                       | 86   | [Strange Inheritance](scc:mcdm.heroes.v1/complication/strange-inheritance)        |
+| 37   | [Greening](scc:mcdm.heroes.v1/complication/greening)                           | 87   | [Stripped of Rank](scc:mcdm.heroes.v1/complication/stripped-of-rank)           |
+| 38   | [Grifter](scc:mcdm.heroes.v1/complication/grifter)                            | 88   | [Thrill Seeker](scc:mcdm.heroes.v1/complication/thrill-seeker)              |
+| 39   | [Grounded](scc:mcdm.heroes.v1/complication/grounded)                           | 89   | [Vampire Scion](scc:mcdm.heroes.v1/complication/vampire-scion)              |
+| 40   | [Guilty Conscience](scc:mcdm.heroes.v1/complication/guilty-conscience)                  | 90   | [Voice in Your Head](scc:mcdm.heroes.v1/complication/voice-in-your-head)         |
+| 41   | [Hawk Rider](scc:mcdm.heroes.v1/complication/hawk-rider)                         | 91   | [Vow of Duty](scc:mcdm.heroes.v1/complication/vow-of-duty)                |
+| 42   | [Host Body](scc:mcdm.heroes.v1/complication/host-body)                          | 92   | [Vow of Honesty](scc:mcdm.heroes.v1/complication/vow-of-honesty)             |
+| 43   | [Hunted](scc:mcdm.heroes.v1/complication/hunted)                             | 93   | [Waking Dreams](scc:mcdm.heroes.v1/complication/waking-dreams)              |
+| 44   | [Hunter](scc:mcdm.heroes.v1/complication/hunter)                             | 94   | [War Dog Collar](scc:mcdm.heroes.v1/complication/war-dog-collar)             |
+| 45   | [Indebted](scc:mcdm.heroes.v1/complication/indebted)                           | 95   | [War of Assassins](scc:mcdm.heroes.v1/complication/war-of-assassins)           |
+| 46   | [Infernal Contract](scc:mcdm.heroes.v1/complication/infernal-contract)                  | 96   | [Ward](scc:mcdm.heroes.v1/complication/ward)                       |
+| 47   | [Infernal Contract](scc:mcdm.heroes.v1/complication/infernal-contract)... But, Like, Bad | 97   | [Waterborn](scc:mcdm.heroes.v1/complication/waterborn)                  |
+| 48   | [Ivory Tower](scc:mcdm.heroes.v1/complication/ivory-tower)                        | 98   | [Wodewalker](scc:mcdm.heroes.v1/complication/wodewalker)                 |
+| 49   | [Lifebonded](scc:mcdm.heroes.v1/complication/lifebonded)                         | 99   | [Wrathful Spirit](scc:mcdm.heroes.v1/complication/wrathful-spirit)            |
+| 50   | [Lightning Soul](scc:mcdm.heroes.v1/complication/lightning-soul)                     | 100  | [Wrongly Imprisoned](scc:mcdm.heroes.v1/complication/wrongly-imprisoned)         |
 
 ###### Complications Table
 
 | d100 | Complication                       |
 |------|------------------------------------|
-| 1    | Advanced Studies                   |
-| 2    | Amnesia                            |
-| 3    | Animal Form                        |
-| 4    | Antihero                           |
-| 5    | Artifact Bonded                    |
-| 6    | Bereaved                           |
-| 7    | Betrothed                          |
-| 8    | Chaos Touched                      |
-| 9    | Chosen One                         |
-| 10   | Consuming Interest                 |
-| 11   | Corrupted Mentor                   |
-| 12   | Coward                             |
-| 13   | Crash Landed                       |
-| 14   | Cult Victim                        |
-| 15   | Curse of Caution                   |
-| 16   | Curse of Immortality               |
-| 17   | Curse of Misfortune                |
-| 18   | Curse of Poverty                   |
-| 19   | Curse of Punishment                |
-| 20   | Curse of Stone                     |
-| 21   | Cursed Weapon                      |
-| 22   | Disgraced                          |
-| 23   | Dragon Dreams                      |
-| 24   | Elemental Inside                   |
-| 25   | Evanesceria                        |
-| 26   | Exile                              |
-| 27   | Fallen Immortal                    |
-| 28   | Famous Relative                    |
-| 29   | Feytouched                         |
-| 30   | Fiery Ideal                        |
-| 31   | Fire and Chaos                     |
-| 32   | Following in the Footsteps         |
-| 33   | Forbidden Romance                  |
-| 34   | Frostheart                         |
-| 35   | Getting Too Old for This           |
+| 1    | [Advanced Studies](scc:mcdm.heroes.v1/complication/advanced-studies)                   |
+| 2    | [Amnesia](scc:mcdm.heroes.v1/complication/amnesia)                            |
+| 3    | [Animal Form](scc:mcdm.heroes.v1/complication/animal-form)                        |
+| 4    | [Antihero](scc:mcdm.heroes.v1/complication/antihero)                           |
+| 5    | [Artifact Bonded](scc:mcdm.heroes.v1/complication/artifact-bonded)                    |
+| 6    | [Bereaved](scc:mcdm.heroes.v1/complication/bereaved)                           |
+| 7    | [Betrothed](scc:mcdm.heroes.v1/complication/betrothed)                          |
+| 8    | [Chaos Touched](scc:mcdm.heroes.v1/complication/chaos-touched)                      |
+| 9    | [Chosen One](scc:mcdm.heroes.v1/complication/chosen-one)                         |
+| 10   | [Consuming Interest](scc:mcdm.heroes.v1/complication/consuming-interest)                 |
+| 11   | [Corrupted Mentor](scc:mcdm.heroes.v1/complication/corrupted-mentor)                   |
+| 12   | [Coward](scc:mcdm.heroes.v1/complication/coward)                             |
+| 13   | [Crash Landed](scc:mcdm.heroes.v1/complication/crash-landed)                       |
+| 14   | [Cult Victim](scc:mcdm.heroes.v1/complication/cult-victim)                        |
+| 15   | [Curse of Caution](scc:mcdm.heroes.v1/complication/curse-of-caution)                   |
+| 16   | [Curse of Immortality](scc:mcdm.heroes.v1/complication/curse-of-immortality)               |
+| 17   | [Curse of Misfortune](scc:mcdm.heroes.v1/complication/curse-of-misfortune)                |
+| 18   | [Curse of Poverty](scc:mcdm.heroes.v1/complication/curse-of-poverty)                   |
+| 19   | [Curse of Punishment](scc:mcdm.heroes.v1/complication/curse-of-punishment)                |
+| 20   | [Curse of Stone](scc:mcdm.heroes.v1/complication/curse-of-stone)                     |
+| 21   | [Cursed Weapon](scc:mcdm.heroes.v1/complication/cursed-weapon)                      |
+| 22   | [Disgraced](scc:mcdm.heroes.v1/complication/disgraced)                          |
+| 23   | [Dragon Dreams](scc:mcdm.heroes.v1/complication/dragon-dreams)                      |
+| 24   | [Elemental Inside](scc:mcdm.heroes.v1/complication/elemental-inside)                   |
+| 25   | [Evanesceria](scc:mcdm.heroes.v1/complication/evanesceria)                        |
+| 26   | [Exile](scc:mcdm.heroes.v1/complication/exile)                              |
+| 27   | [Fallen Immortal](scc:mcdm.heroes.v1/complication/fallen-immortal)                    |
+| 28   | [Famous Relative](scc:mcdm.heroes.v1/complication/famous-relative)                    |
+| 29   | [Feytouched](scc:mcdm.heroes.v1/complication/feytouched)                         |
+| 30   | [Fiery Ideal](scc:mcdm.heroes.v1/complication/fiery-ideal)                        |
+| 31   | [Fire and Chaos](scc:mcdm.heroes.v1/complication/fire-and-chaos)                     |
+| 32   | [Following in the Footsteps](scc:mcdm.heroes.v1/complication/following-in-the-footsteps)         |
+| 33   | [Forbidden Romance](scc:mcdm.heroes.v1/complication/forbidden-romance)                  |
+| 34   | [Frostheart](scc:mcdm.heroes.v1/complication/frostheart)                         |
+| 35   | [Getting Too Old for This](scc:mcdm.heroes.v1/complication/getting-too-old-for-this)           |
 | 36   | Gnoll-Mauled                       |
-| 37   | Greening                           |
-| 38   | Grifter                            |
-| 39   | Grounded                           |
-| 40   | Guilty Conscience                  |
-| 41   | Hawk Rider                         |
-| 42   | Host Body                          |
-| 43   | Hunted                             |
-| 44   | Hunter                             |
-| 45   | Indebted                           |
-| 46   | Infernal Contract                  |
-| 47   | Infernal Contract... But, Like, Bad |
-| 48   | Ivory Tower                        |
-| 49   | Lifebonded                         |
-| 50   | Lightning Soul                     |
-| 51   | Loner                              |
-| 52   | Lost in Time                       |
-| 53   | Lost Your Head                     |
-| 54   | Lucky                              |
-| 55   | Master Chef                        |
-| 56   | Meddling Butler                    |
-| 57   | Medium                             |
-| 58   | Medusa Blood                       |
-| 59   | Misunderstood                      |
-| 60   | Mundane                            |
-| 61   | Outlaw                             |
-| 62   | Pirate                             |
-| 63   | Preacher                           |
-| 64   | Primordial Sickness                |
-| 65   | Prisoner of the Synlirii           |
-| 66   | Promising Apprentice               |
-| 67   | Psychic Eruption                   |
-| 68   | Raised by Beasts                   |
-| 69   | Refugee                            |
-| 70   | Rival                              |
+| 37   | [Greening](scc:mcdm.heroes.v1/complication/greening)                           |
+| 38   | [Grifter](scc:mcdm.heroes.v1/complication/grifter)                            |
+| 39   | [Grounded](scc:mcdm.heroes.v1/complication/grounded)                           |
+| 40   | [Guilty Conscience](scc:mcdm.heroes.v1/complication/guilty-conscience)                  |
+| 41   | [Hawk Rider](scc:mcdm.heroes.v1/complication/hawk-rider)                         |
+| 42   | [Host Body](scc:mcdm.heroes.v1/complication/host-body)                          |
+| 43   | [Hunted](scc:mcdm.heroes.v1/complication/hunted)                             |
+| 44   | [Hunter](scc:mcdm.heroes.v1/complication/hunter)                             |
+| 45   | [Indebted](scc:mcdm.heroes.v1/complication/indebted)                           |
+| 46   | [Infernal Contract](scc:mcdm.heroes.v1/complication/infernal-contract)                  |
+| 47   | [Infernal Contract](scc:mcdm.heroes.v1/complication/infernal-contract)... But, Like, Bad |
+| 48   | [Ivory Tower](scc:mcdm.heroes.v1/complication/ivory-tower)                        |
+| 49   | [Lifebonded](scc:mcdm.heroes.v1/complication/lifebonded)                         |
+| 50   | [Lightning Soul](scc:mcdm.heroes.v1/complication/lightning-soul)                     |
+| 51   | [Loner](scc:mcdm.heroes.v1/complication/loner)                              |
+| 52   | [Lost in Time](scc:mcdm.heroes.v1/complication/lost-in-time)                       |
+| 53   | [Lost Your Head](scc:mcdm.heroes.v1/complication/lost-your-head)                     |
+| 54   | [Lucky](scc:mcdm.heroes.v1/complication/lucky)                              |
+| 55   | [Master Chef](scc:mcdm.heroes.v1/complication/master-chef)                        |
+| 56   | [Meddling Butler](scc:mcdm.heroes.v1/complication/meddling-butler)                    |
+| 57   | [Medium](scc:mcdm.heroes.v1/complication/medium)                             |
+| 58   | [Medusa Blood](scc:mcdm.heroes.v1/complication/medusa-blood)                       |
+| 59   | [Misunderstood](scc:mcdm.heroes.v1/complication/misunderstood)                      |
+| 60   | [Mundane](scc:mcdm.heroes.v1/complication/mundane)                            |
+| 61   | [Outlaw](scc:mcdm.heroes.v1/complication/outlaw)                             |
+| 62   | [Pirate](scc:mcdm.heroes.v1/complication/pirate)                             |
+| 63   | [Preacher](scc:mcdm.heroes.v1/complication/preacher)                           |
+| 64   | [Primordial Sickness](scc:mcdm.heroes.v1/complication/primordial-sickness)                |
+| 65   | [Prisoner of the Synlirii](scc:mcdm.heroes.v1/complication/prisoner-of-the-synlirii)           |
+| 66   | [Promising Apprentice](scc:mcdm.heroes.v1/complication/promising-apprentice)               |
+| 67   | [Psychic Eruption](scc:mcdm.heroes.v1/complication/psychic-eruption)                   |
+| 68   | [Raised by Beasts](scc:mcdm.heroes.v1/complication/raised-by-beasts)                   |
+| 69   | [Refugee](scc:mcdm.heroes.v1/complication/refugee)                            |
+| 70   | [Rival](scc:mcdm.heroes.v1/complication/rival)                              |
 | 71   | Rogue [Talent](scc:mcdm.heroes.v1/class/talent)                       |
-| 72   | Runaway                            |
-| 73   | Searching for a Cure               |
-| 74   | Secret Identity                    |
-| 75   | Secret Twin                        |
+| 72   | [Runaway](scc:mcdm.heroes.v1/complication/runaway)                            |
+| 73   | [Searching for a Cure](scc:mcdm.heroes.v1/complication/searching-for-a-cure)               |
+| 74   | [Secret Identity](scc:mcdm.heroes.v1/complication/secret-identity)                    |
+| 75   | [Secret Twin](scc:mcdm.heroes.v1/complication/secret-twin)                        |
 | 76   | Self-Taught                        |
-| 77   | Sewer Folk                         |
+| 77   | [Sewer Folk](scc:mcdm.heroes.v1/complication/sewer-folk)                         |
 | 78   | [Shadow](scc:mcdm.heroes.v1/class/shadow) Born                        |
-| 79   | Shared Spirit                      |
-| 80   | Shattered Legacy                   |
-| 81   | Shipwrecked                        |
+| 79   | [Shared Spirit](scc:mcdm.heroes.v1/complication/shared-spirit)                      |
+| 80   | [Shattered Legacy](scc:mcdm.heroes.v1/complication/shattered-legacy)                   |
+| 81   | [Shipwrecked](scc:mcdm.heroes.v1/complication/shipwrecked)                        |
 | 82   | Sibling's Shield                   |
-| 83   | Silent Sentinel                    |
-| 84   | Slight Case of Lycanthropy         |
-| 85   | Stolen Face                        |
-| 86   | Strange Inheritance                |
-| 87   | Stripped of Rank                   |
-| 88   | Thrill Seeker                      |
-| 89   | Vampire Scion                      |
-| 90   | Voice in Your Head                 |
-| 91   | Vow of Duty                        |
-| 92   | Vow of Honesty                     |
-| 93   | Waking Dreams                      |
-| 94   | War Dog Collar                     |
-| 95   | War of Assassins                   |
-| 96   | Ward                               |
-| 97   | Waterborn                          |
-| 98   | Wodewalker                         |
-| 99   | Wrathful Spirit                    |
-| 100  | Wrongly Imprisoned                 |
+| 83   | [Silent Sentinel](scc:mcdm.heroes.v1/complication/silent-sentinel)                    |
+| 84   | [Slight Case of Lycanthropy](scc:mcdm.heroes.v1/complication/slight-case-of-lycanthropy)         |
+| 85   | [Stolen Face](scc:mcdm.heroes.v1/complication/stolen-face)                        |
+| 86   | [Strange Inheritance](scc:mcdm.heroes.v1/complication/strange-inheritance)                |
+| 87   | [Stripped of Rank](scc:mcdm.heroes.v1/complication/stripped-of-rank)                   |
+| 88   | [Thrill Seeker](scc:mcdm.heroes.v1/complication/thrill-seeker)                      |
+| 89   | [Vampire Scion](scc:mcdm.heroes.v1/complication/vampire-scion)                      |
+| 90   | [Voice in Your Head](scc:mcdm.heroes.v1/complication/voice-in-your-head)                 |
+| 91   | [Vow of Duty](scc:mcdm.heroes.v1/complication/vow-of-duty)                        |
+| 92   | [Vow of Honesty](scc:mcdm.heroes.v1/complication/vow-of-honesty)                     |
+| 93   | [Waking Dreams](scc:mcdm.heroes.v1/complication/waking-dreams)                      |
+| 94   | [War Dog Collar](scc:mcdm.heroes.v1/complication/war-dog-collar)                     |
+| 95   | [War of Assassins](scc:mcdm.heroes.v1/complication/war-of-assassins)                   |
+| 96   | [Ward](scc:mcdm.heroes.v1/complication/ward)                               |
+| 97   | [Waterborn](scc:mcdm.heroes.v1/complication/waterborn)                          |
+| 98   | [Wodewalker](scc:mcdm.heroes.v1/complication/wodewalker)                         |
+| 99   | [Wrathful Spirit](scc:mcdm.heroes.v1/complication/wrathful-spirit)                    |
+| 100  | [Wrongly Imprisoned](scc:mcdm.heroes.v1/complication/wrongly-imprisoned)                 |
 
 <!-- @type: complication -->
 #### Advanced Studies
@@ -19154,20 +19154,20 @@ You have no memory of your past before the... incident. Hopefully, you'll regain
 
 Due to a magical accident, your being has fused with that of a small, harmless animal. You turn into this animal when it's convenient—and sometimes when it's inconvenient as well.
 
-**Benefit:** As a maneuver, you take the form of a specific animal of size 1T. You retain all your other statistics aside from your size, but you can't talk or use actions, and the only maneuvers you can use are Escape Grab, Hide, and Stand Up. Based on the animal you can turn into, you might be able to burrow or fly, or to automatically climb or swim at full speed while moving. If your animal form doesn't provide such additional movement, you have a +2 bonus to speed.
+**Benefit:** As a maneuver, you take the form of a specific animal of size 1T. You retain all your other statistics aside from your size, but you can't talk or use actions, and the only maneuvers you can use are Escape Grab, Hide, and Stand Up. Based on the animal you can turn into, you might be able to burrow or fly, or to automatically climb or swim at full speed while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to speed.
 
 Unless you use this benefit again, you return to your true form at the start of your next turn.
 
-**Drawback:** At the start of any turn while you are winded, the Director can spend 1 Malice to force you to take your animal form. Once the Director has done so, they can't do so again until you have finished a respite.
+**Drawback:** At the start of any turn while you are winded, the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a respite.
 
 <!-- @type: complication -->
 #### Antihero
 
 You used to be a villain. You're (mostly) reformed now, but in desperate moments, you sometimes draw on the rage and hatred that fueled your old life. In those moments, even your friends aren't sure whose side you're on. They don't need to worry, though. Once you leave evil behind, you can't go back. You've made too many enemies on the other side.
 
-**Benefit:** You have 3 antihero tokens. Whenever you use an ability or other effect that costs your Heroic Resource, you can spend 1 antihero token in place of 1 Heroic Resource. Whenever you have fewer than 3 antihero tokens and you would earn a hero token for your party through your deeds, you instead regain 1 antihero token.
+**Benefit:** You have 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens. Whenever you use an ability or other effect that costs your Heroic Resource, you can spend 1 [antihero](scc:mcdm.heroes.v1/complication/antihero) token in place of 1 Heroic Resource. Whenever you have fewer than 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens and you would earn a hero token for your party through your deeds, you instead regain 1 [antihero](scc:mcdm.heroes.v1/complication/antihero) token.
 
-**Drawback:** While you have fewer than 3 antihero tokens, you exude a villainous aspect. You and each ally within 5 squares of you take a bane on any test made to interact with other creatures.
+**Drawback:** While you have fewer than 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens, you exude a villainous aspect. You and each ally within 5 squares of you take a bane on any test made to interact with other creatures.
 
 <!-- @type: complication -->
 #### Artifact Bonded
@@ -19257,7 +19257,7 @@ Your mentor taught you everything and you trusted them completely until they wen
 <!-- @type: complication -->
 #### Coward
 
-Some call you a coward, just because you shriek and run when you encounter danger. Sure, you might not have the natural bravado of less-imaginative people. And sure, you're always imagining the many horrible ways you could die, but you're used to fear. When you run in terror, you run *toward* the enemy.
+Some call you a [coward](scc:mcdm.heroes.v1/complication/coward), just because you shriek and run when you encounter danger. Sure, you might not have the natural bravado of less-imaginative people. And sure, you're always imagining the many horrible ways you could die, but you're used to fear. When you run in terror, you run *toward* the enemy.
 
 **Benefit:** While you are frightened, you can move toward the source of your fear.
 
@@ -19266,11 +19266,11 @@ Some call you a coward, just because you shriek and run when you encounter dange
 <!-- @type: complication -->
 #### Crash Landed
 
-You used to flit around the stars in your own ship. But an ugly run-in with a pirate (or a pirate hunter) has left you marooned on this backwater world. You're prepared to carve out a life here—at least until you can hitch a ride somewhere else.
+You used to flit around the stars in your own ship. But an ugly run-in with a [pirate](scc:mcdm.heroes.v1/complication/pirate) (or a [pirate](scc:mcdm.heroes.v1/complication/pirate) [hunter](scc:mcdm.heroes.v1/complication/hunter)) has left you marooned on this backwater world. You're prepared to carve out a life here—at least until you can hitch a ride somewhere else.
 
 **Benefit:** You have the Timescape skill (from the lore skill group). Additionally, you have a power pack that you can activate or deactivate as a maneuver. When you activate the power pack, choose an energy type from cold, fire, lightning, or sonic. Until you deactivate the power pack, your damage-dealing abilities deal that damage type.
 
-**Drawback:** You take a bane on any test made to know about anything related to the world where you crash landed.
+**Drawback:** You take a bane on any test made to know about anything related to the world where you [crash landed](scc:mcdm.heroes.v1/complication/crash-landed).
 
 <!-- @type: complication -->
 #### Cult Victim
@@ -19327,7 +19327,7 @@ Through ignorance, fear, spite, or selfishness, you refused to help someone in n
 
 As a child, you met a creature who turns people to stone, such as a medusa. You escaped half petrified, avoiding the fate of others who stand as statues now.
 
-**Benefit:** You have a +1 bonus to stability. Additionally, you can use a free maneuver to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a mundane statue while you remain unmoving.
+**Benefit:** You have a +1 bonus to stability. Additionally, you can use a free maneuver to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a [mundane](scc:mcdm.heroes.v1/complication/mundane) statue while you remain unmoving.
 
 **Drawback:** You have sonic weakness 5. Additionally, while you are winded, you are dazed.
 
@@ -19343,7 +19343,7 @@ When you were young, you found or were given a magic weapon. Since then, you've 
 <!-- @type: complication -->
 #### Disgraced
 
-You're a disgraced member of a powerful family or guild, having been turned out by your relatives or peers. Those you were once close to won't give you the time of day anymore, much less lend a helping hand, until you clear your name or clean up your act.
+You're a [disgraced](scc:mcdm.heroes.v1/complication/disgraced) member of a powerful family or guild, having been turned out by your relatives or peers. Those you were once close to won't give you the time of day anymore, much less lend a helping hand, until you clear your name or clean up your act.
 
 **Benefit:** You earn 1 Renown, and you have one skill of your choice from the interpersonal or intrigue skill group.
 
@@ -19370,7 +19370,7 @@ When an evil mage threatened someone you loved, you blocked that foe's summoning
 <!-- @type: complication -->
 #### Evanesceria
 
-You have contracted a rare magical disease called evanesceria. From time to time, you're not quite yourself—or anyone else either. You simply... vanish, then return later with no memory of your absence.
+You have contracted a rare magical disease called [evanesceria](scc:mcdm.heroes.v1/complication/evanesceria). From time to time, you're not quite yourself—or anyone else either. You simply... vanish, then return later with no memory of your absence.
 
 **Benefit:** At the start of any combat round, you can attempt to absent yourself from reality by rolling a d10. On a 6 or higher, you disappear, then reappear in the space you left or the nearest unoccupied space of your choice when you take your turn. You can't attempt to absent yourself again until you earn 1 or more Victories.
 
@@ -19397,7 +19397,7 @@ You used to be an immortal creature, dispensing justice and doing the bidding of
 <!-- @type: complication -->
 #### Famous Relative
 
-Sure, you're a promising young hero in your own right—but people always ask you about your famous relative. Will you equal or surpass your relative's accomplishments, or will you always live in their shadow?
+Sure, you're a promising young hero in your own right—but people always ask you about your [famous relative](scc:mcdm.heroes.v1/complication/famous-relative). Will you equal or surpass your relative's accomplishments, or will you always live in their shadow?
 
 **Benefit:** You have a piece of magic jewelry such as a signet ring. As a maneuver, you can use this item to summon your relative to your aid. Your relative starts with a Renown of 10 but otherwise has the same statistics you do. They make power rolls with an edge but don't gain the benefits of any of your treasures. Your relative does their best to help you out of the current perilous situation, disappearing when the situation is resolved or after 1 hour. Once you summon your relative, you can't do so again until you gain a level.
 
@@ -19440,16 +19440,16 @@ Your personal idol was a mighty hero, and you have modeled yourself after them. 
 <!-- @type: complication -->
 #### Forbidden Romance
 
-You are in love with someone powerful, but tragic circumstances mean you cannot be with them. Whether your lover is from a feuding family, betrothed to another, or has been driven from your side, you are fated to always be apart.
+You are in love with someone powerful, but tragic circumstances mean you cannot be with them. Whether your lover is from a feuding family, [betrothed](scc:mcdm.heroes.v1/complication/betrothed) to another, or has been driven from your side, you are fated to always be apart.
 
-**Benefit:** You can secretly call on your betrothed for favors. Though they support you from afar, they might be constrained in how much aid they provide—and they can't openly reveal their connection with you.
+**Benefit:** You can secretly call on your [betrothed](scc:mcdm.heroes.v1/complication/betrothed) for favors. Though they support you from afar, they might be constrained in how much aid they provide—and they can't openly reveal their connection with you.
 
 **Drawback:** When your lover is in trouble, they might call on you for help. But if your relationship is discovered, the circumstances that keep you apart will be made worse.
 
 <!-- @type: complication -->
 #### Frostheart
 
-At the edge of the world, you were lost in a winter storm and presumed dead. But an unknown fate or power kept you alive, bringing you back with frosty skin and pale eyes.
+At the edge of the world, you were lost in a winter storm and [presumed dead](scc:mcdm.heroes.v1/title/presumed-dead). But an unknown fate or power kept you alive, bringing you back with frosty skin and pale eyes.
 
 **Benefit:** You have cold immunity 5. Additionally, whenever you make a strike that deals untyped damage, that strike can deal cold damage instead.
 
@@ -19525,14 +19525,14 @@ You travel with a giant hawk who you stole from the Hawklords (see Vasloria in C
 
 "Do not be alarmed! We are not the humanoid we appear to be. We are an intelligent fungal collective, using this body as a host. No, we are doing nothing unsavory! This body was dead when we found it, and we merely gave it another chance at life. We are friendly. Please put down those torches!"
 
-**Benefit:** You are a sapient fungus who inhabits a humanoid body. Your host body follows all the usual rules for a character and is considered to be alive. At any time while your host body is alive, or for 24 hours after it dies, you can use a main action to move to a dead humanoid within 10 squares of the body and use it as your new host body, provided the body belongs to a playable ancestry. When you do so, your original host body dies if it was alive. Your new host body gains all your statistics except size, ancestry traits, and other statistics related to your former host body's ancestry, which you instead gain from your new host body. When you inhabit a new host body, you start with 1 Stamina and can immediately spend a Recovery.
+**Benefit:** You are a sapient fungus who inhabits a humanoid body. Your [host body](scc:mcdm.heroes.v1/complication/host-body) follows all the usual rules for a character and is considered to be alive. At any time while your [host body](scc:mcdm.heroes.v1/complication/host-body) is alive, or for 24 hours after it dies, you can use a main action to move to a dead humanoid within 10 squares of the body and use it as your new [host body](scc:mcdm.heroes.v1/complication/host-body), provided the body belongs to a playable ancestry. When you do so, your original [host body](scc:mcdm.heroes.v1/complication/host-body) dies if it was alive. Your new [host body](scc:mcdm.heroes.v1/complication/host-body) gains all your statistics except size, ancestry traits, and other statistics related to your former [host body's](scc:mcdm.heroes.v1/complication/host-body) ancestry, which you instead gain from your new [host body](scc:mcdm.heroes.v1/complication/host-body). When you inhabit a new [host body](scc:mcdm.heroes.v1/complication/host-body), you start with 1 Stamina and can immediately spend a Recovery.
 
 **Drawback:** You have fire weakness 5. Additionally, you take a bane on any test made to read a humanoid creature's emotions or body language.
 
 <!-- @type: complication -->
 #### Hunted
 
-You have long stayed one step ahead of a pursuer—perhaps a bounty hunter determined to bring you to justice, a [revenant](scc:mcdm.heroes.v1/ancestry/revenant), or an assassin intent on your death. Someday, you'll be strong enough to face your pursuer. But for now, you live your life on the run.
+You have long stayed one step ahead of a pursuer—perhaps a bounty [hunter](scc:mcdm.heroes.v1/complication/hunter) determined to bring you to justice, a [revenant](scc:mcdm.heroes.v1/ancestry/revenant), or an assassin intent on your death. Someday, you'll be strong enough to face your pursuer. But for now, you live your life on the run.
 
 **Benefit:** You have one skill of your choice from the intrigue skill group. Additionally, whenever one or more creatures are pursuing you, you can lay low as a respite activity. When you do so, anyone pursuing you loses track of your and your party's location and must start their search again.
 
@@ -19598,7 +19598,7 @@ You studied in an academy or other educational institution. Your training was th
 
 In a sinister ritual, your soul has been bound to that of another creature. This might be a companion, a creature you are beholden to, or an enemy. When they die, you die—making you the perfect bodyguard.
 
-**Benefit:** Choose another creature who doesn't have the Lifebonded complication. When you die, your body disappears until that creature finishes a respite or earns 1 or more Victories. You then appear next to the creature, fully healed.
+**Benefit:** Choose another creature who doesn't have the [Lifebonded](scc:mcdm.heroes.v1/complication/lifebonded) complication. When you die, your body disappears until that creature finishes a respite or earns 1 or more Victories. You then appear next to the creature, fully healed.
 
 **Drawback:** If the creature you're bound to dies, you die as well, no matter what other traits or features you have.
 
@@ -19651,7 +19651,7 @@ A bredbeddle stole your head! Usually, being beheaded by one of those magical gi
 <!-- @type: complication -->
 #### Lucky
 
-You've always had a lucky streak. When you leave things in the hands of fate, you succeed more than you fail. But luck is fickle—and when you don't trust it, it deserts you.
+You've always had a [lucky](scc:mcdm.heroes.v1/complication/lucky) streak. When you leave things in the hands of fate, you succeed more than you fail. But luck is fickle—and when you don't trust it, it deserts you.
 
 **Benefit:** When you spend a hero token to succeed on a saving throw or to reroll a test, roll a d10. On a 6 or higher, you gain the benefit but don't spend the hero token.
 
@@ -19753,9 +19753,9 @@ You might be a common bandit or an idealistic freedom fighter, but in any event,
 
 You have a piratical past (and maybe a piratical present and future as well). Though you're not well-known ashore, other pirates have a way of recognizing their own.
 
-**Benefit:** When interacting with pirates or pirate hunters, you treat your Renown as 2 higher than usual. Additionally, you hold a piece of a pirate map, with a handful of other pirates in different locations holding the other pieces. With all the pieces, you'd know the location of a fabulous pirate treasure.
+**Benefit:** When interacting with pirates or [pirate](scc:mcdm.heroes.v1/complication/pirate) hunters, you treat your Renown as 2 higher than usual. Additionally, you hold a piece of a [pirate](scc:mcdm.heroes.v1/complication/pirate) map, with a handful of other pirates in different locations holding the other pieces. With all the pieces, you'd know the location of a fabulous [pirate](scc:mcdm.heroes.v1/complication/pirate) treasure.
 
-**Drawback:** The pirates holding the other pieces of the map would very much like to get their hands on your piece, and have no qualms about killing you to get it. Furthermore, the pirate treasure is said to be cursed or haunted.
+**Drawback:** The pirates holding the other pieces of the map would very much like to get their hands on your piece, and have no qualms about killing you to get it. Furthermore, the [pirate](scc:mcdm.heroes.v1/complication/pirate) treasure is said to be cursed or haunted.
 
 <!-- @type: complication -->
 #### Preacher
@@ -19843,7 +19843,7 @@ Whatever your accomplishments, you'll forever measure yourself against a former 
 
 **Benefit:** Choose one of your skills. That skill grants a +3 bonus to tests instead of +2.
 
-**Drawback:** Your rival has similar statistics to yours, but always had one skill they excelled at, as determined by the Director. Intimidated by their prowess, you take a bane on tests using that skill.
+**Drawback:** Your [rival](scc:mcdm.heroes.v1/complication/rival) has similar statistics to yours, but always had one skill they excelled at, as determined by the Director. Intimidated by their prowess, you take a bane on tests using that skill.
 
 <!-- @type: complication -->
 #### Rogue Talent
@@ -19889,16 +19889,16 @@ Your homeland has been corrupted by some terrible curse or plague, and you're th
 <!-- @type: complication -->
 #### Secret Identity
 
-You're secretly important—but it's not safe for your true identity to be known. Perhaps you're the witness to a crime or a member of a royal family on the run from a usurper. Until you are no longer at risk of being hunted, you'll maintain the guise of an ordinary adventurer.
+You're secretly important—but it's not safe for your true identity to be known. Perhaps you're the witness to a crime or a member of a royal family on the run from a usurper. Until you are no longer at risk of being [hunted](scc:mcdm.heroes.v1/complication/hunted), you'll maintain the guise of an ordinary adventurer.
 
 **Benefit:** You have a skill of your choice from the intrigue skill group. Additionally, you can resume your true identity temporarily. While in your true identity, your Renown and Wealth are treated as 2 higher than usual, and you might gain other benefits in consultation with the Director.
 
-**Drawback:** Each time you resume your true identity while you are still hunted, you have a 20 percent cumulative chance each day that your enemies will find you. This chance resets if you resume your secret identity for 1 day.
+**Drawback:** Each time you resume your true identity while you are still [hunted](scc:mcdm.heroes.v1/complication/hunted), you have a 20 percent cumulative chance each day that your enemies will find you. This chance resets if you resume your [secret identity](scc:mcdm.heroes.v1/complication/secret-identity) for 1 day.
 
 <!-- @type: complication -->
 #### Secret Twin
 
-You have an identical twin—either a sibling or someone who looks so much like you that no one would ever know the difference. Your secret twin had a life you coveted, or perhaps had obligations that couldn't go unfulfilled. So when they went missing, you stepped in and started living their life. Most folks are none the wiser.
+You have an identical twin—either a sibling or someone who looks so much like you that no one would ever know the difference. Your [secret twin](scc:mcdm.heroes.v1/complication/secret-twin) had a life you coveted, or perhaps had obligations that couldn't go unfulfilled. So when they went missing, you stepped in and started living their life. Most folks are none the wiser.
 
 **Benefit:** You have a 1st-echelon trinket of your choice. This was a signature treasure of your twin, and has their name or sigil written, sewn, or emblazoned on it somewhere.
 
@@ -20025,7 +20025,7 @@ You were trained as an officer, but you no longer serve. Whether you fled from a
 <!-- @type: complication -->
 #### Thrill Seeker
 
-You live for danger. Whether in battle or mundane peril, you can transcend your usual limits—and once you've tasted that excitement, you want more.
+You live for danger. Whether in battle or [mundane](scc:mcdm.heroes.v1/complication/mundane) peril, you can transcend your usual limits—and once you've tasted that excitement, you want more.
 
 **Benefit:** Each time your party reaches 2, 4, and 6 Victories, you earn the party a hero token.
 
@@ -20043,7 +20043,7 @@ A vampire has bitten you. You're not undead—or not yet, anyway—but your conn
 <!-- @type: complication -->
 #### Voice in Your Head
 
-You occasionally hear a voice in your head, giving you orders or offering advice. You don't know who the voice is or why it comes to you, but when you've followed the advice, it's usually proved to be sound.
+You occasionally hear a [voice in your head](scc:mcdm.heroes.v1/complication/voice-in-your-head), giving you orders or offering advice. You don't know who the voice is or why it comes to you, but when you've followed the advice, it's usually proved to be sound.
 
 **Benefit:** The Director tells you when you hear the voice. The voice seems to be aware of your surroundings, and its advice is usually vague but helpful. Someday its motivations might be different from your own, but for now, the voice seems keen on making sure you survive.
 
@@ -20111,7 +20111,7 @@ Your childhood sweetheart was royalty, and the two of you stayed close throughou
 
 **Benefit:** You know how to talk to monarchs, aristocrats, and other wealthy leaders. When you engage with any such NPC during a negotiation, their patience increases by 1 (to a maximum of 5).
 
-**Drawback:** Your royal ward can be a burden. Whenever you take a respite, roll a d10. On a 1, your ward contacts you and requires your help during the respite, requiring you to spend your time helping them instead of undertaking a respite activity.
+**Drawback:** Your royal [ward](scc:mcdm.heroes.v1/complication/ward) can be a burden. Whenever you take a respite, roll a d10. On a 1, your [ward](scc:mcdm.heroes.v1/complication/ward) contacts you and requires your help during the respite, requiring you to spend your time helping them instead of undertaking a respite activity.
 
 <!-- @type: complication -->
 #### Waterborn
@@ -20970,7 +20970,7 @@ Boring stuff like opening an unlocked door, picking up an arrow from the ground,
 
 At the Director's discretion, circumstances could make something that is typically boring more impactful and exciting. For instance, if you need to pick a magic arrow up off the ground during a violent earthquake, what would otherwise be a free maneuver could require a maneuver or a main action to accomplish.
 
-Likewise, the nature of an activity might make it too complicated for a free maneuver. For example, picking up the body of an unconscious [talent](scc:mcdm.heroes.v1/class/talent) ally to carry them to safety can probably be done as a free maneuver. But if your Might is lacking and you need to pick up a [tactician](scc:mcdm.heroes.v1/class/tactician) ally decked out in the Shining Armor kit, the Director might determine that you need to use a regular maneuver to hoist their armored form over your shoulders.
+Likewise, the nature of an activity might make it too complicated for a free maneuver. For example, picking up the body of an unconscious [talent](scc:mcdm.heroes.v1/class/talent) ally to carry them to safety can probably be done as a free maneuver. But if your Might is lacking and you need to pick up a [tactician](scc:mcdm.heroes.v1/class/tactician) ally decked out in the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit, the Director might determine that you need to use a regular maneuver to hoist their armored form over your shoulders.
 
 Any effect that prevents you from using maneuvers also prevents you from using free maneuvers.
 
@@ -21972,7 +21972,7 @@ If a hero has enough Renown for their score to influence an NPC during negotiati
 | 8          | Duke, spymaster                                             |
 | 9          | Archmage, prince                                            |
 | 10         | Demon lord, monarch                                         |
-| 11         | Archdevil, archfey, demigod                                 |
+| 11         | Archdevil, archfey, [demigod](scc:mcdm.heroes.v1/title/demigod)                                 |
 | 12         | Deity, titan                                                |
 
 ##### Influencing Tests
@@ -22402,7 +22402,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 > **Clothing as Armor Treasures**
 >
-> A hero who has a kit that provides no armor, such as the Martial Artist or Sniper kit, can create and make use of leveled armor treasures that imbue mundane clothing with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+> A hero who has a kit that provides no armor, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) or Sniper kit, can create and make use of leveled armor treasures that imbue mundane clothing with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Armor Enhancement
 
@@ -22705,7 +22705,7 @@ A weapon imbued with an enhancement grants you special benefits while it is wiel
 
 ###### Unarmed Strike Treasures
 
-A hero who has a kit that uses unarmed strikes, such as the Martial Artist and Pugilist kit, can create leveled weapon treasures that enhance their unarmed strikes by imbuing hand wraps, rings, shoes, or any other item worn on the body with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) and [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit, can create leveled weapon treasures that enhance their unarmed strikes by imbuing hand wraps, rings, shoes, or any other item worn on the body with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Weapon Enhancement
 
@@ -23274,7 +23274,7 @@ A hero can wield as many weapons, implements, suits of armor, or shields as they
 
 ##### Treasures and Kits
 
-To gain the benefits of a weapon or armor treasure, the treasure must have keywords that match the equipment of your kit. For instance, a hero using the Warrior Priest kit can benefit from wearing a heavy armor treasure and wielding light weapon treasures, since those are part of that kit.
+To gain the benefits of a weapon or armor treasure, the treasure must have keywords that match the equipment of your kit. For instance, a hero using the [Warrior Priest](scc:mcdm.heroes.v1/kit/warrior-priest) kit can benefit from wearing a heavy armor treasure and wielding light weapon treasures, since those are part of that kit.
 
 If your hero doesn't use a kit, they can't gain benefits from using armor or weapon treasures unless they have a feature that says otherwise, such as the [conduit's](scc:mcdm.heroes.v1/class/conduit) Prayer of Soldier's Skill.
 
@@ -24453,7 +24453,7 @@ Like trinkets, leveled treasures can be used at will without a reduction in pote
 <!-- @type: treasure -->
 #### Leveled Benefits
 
-Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. Leveled benefits are cumulative.
+Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/treasure/leveled-benefits) are cumulative.
 
 <!-- @type: treasure -->
 #### Carry Three Safely
@@ -24473,7 +24473,7 @@ It's fine to own or possess more than three leveled treasures, as long as the ex
 <!-- @type: treasure -->
 #### Leveled Armor Treasures
 
-Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents leveled armor treasures in alphabetical order.
+Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/treasure/leveled-armor-treasures) in alphabetical order.
 
 ##### Adaptive Second Skin of Toxins
 
@@ -24678,7 +24678,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 <!-- @type: treasure -->
 #### Leveled Implement Treasures
 
-Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents leveled implement treasures in alphabetical order.
+Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/treasure/leveled-implement-treasures) in alphabetical order.
 
 ##### Abjurer's Bastion
 
@@ -24803,7 +24803,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 <!-- @type: treasure -->
 #### Leveled Weapon Treasures
 
-For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents leveled weapon treasures in alphabetical order.
+For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/treasure/leveled-weapon-treasures) in alphabetical order.
 
 ##### Authority's End
 
@@ -25084,7 +25084,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 <!-- @type: treasure -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of magic and psionic treasures. This section presents other types of leveled treasures in alphabetical order.
+In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/treasure/magic-and-psionic-treasures). This section presents other types of leveled treasures in alphabetical order.
 
 ##### Bloodbound Band
 
@@ -25265,15 +25265,15 @@ Each title comes with a new ability or other special benefit. By earning titles,
 
 ### Title Requirements
 
-Players don't simply choose their characters' titles. Like treasures and Renown (in the next section), titles must be won. Each title has a unique requirement, so that earning a title might mean your character needs to defeat a specific monster, research dangerous forbidden lore, or—in the case of the Monarch title—win a kingdom!
+Players don't simply choose their characters' titles. Like treasures and Renown (in the next section), titles must be won. Each title has a unique requirement, so that earning a title might mean your character needs to defeat a specific monster, research dangerous forbidden lore, or—in the case of the [Monarch](scc:mcdm.heroes.v1/title/monarch) title—win a kingdom!
 
 Titles aren't given out on a schedule. Instead, the Director grants one whenever heroes perform a deed worthy of it. Just as a hero doesn't automatically find a magic weapon simply because they meet the requirements for using it, they don't automatically earn a title unless it's granted by the Director.
 
-Although the Director gives out titles, if you want to earn a specific title, let your Director know. For instance, you might say, "I'm interested in the Dragon Blooded title. Can my hero listen for rumors of any wicked dragons nearby that need smiting?" Having ambition is good! Pursue the titles you want that will make you a better hero.
+Although the Director gives out titles, if you want to earn a specific title, let your Director know. For instance, you might say, "I'm interested in the [Dragon Blooded](scc:mcdm.heroes.v1/title/dragon-blooded) title. Can my hero listen for rumors of any wicked dragons nearby that need smiting?" Having ambition is good! Pursue the titles you want that will make you a better hero.
 
 ### Title Echelons
 
-Each title is assigned to an echelon of play where it is most likely to be earned. For instance, knighthood is something that can be typically earned by the 2nd echelon, but becoming a monarch can usually only be achieved in the 4th echelon. But don't let the rules get in the way of a good story! If the Director decides that your character somehow wins a knighthood at 1st level, bask in the glory of this great accomplishment.
+Each title is assigned to an echelon of play where it is most likely to be earned. For instance, knighthood is something that can be typically earned by the 2nd echelon, but becoming a [monarch](scc:mcdm.heroes.v1/title/monarch) can usually only be achieved in the 4th echelon. But don't let the rules get in the way of a good story! If the Director decides that your character somehow wins a knighthood at 1st level, bask in the glory of this great accomplishment.
 
 > For the Director: Granting Titles Early
 >
@@ -25283,7 +25283,7 @@ Each title is assigned to an echelon of play where it is most likely to be earne
 
 This section details a number of ready-to-use titles. But the Director can also create custom titles, both to reward specific player accomplishments and to flesh out organizations, locations, and foes within their own game world. When a hero finally achieves a long-term goal after many game sessions of struggle, the Director can memorialize the moment by granting a unique title. Similarly, the Director can grant custom titles when the heroes befriend specific factions, defeat notorious villains, or learn new moves from skilled NPCs.
 
-The easiest way to create custom titles is to modify an existing title's requirements to fit the adventure at hand. For instance, your world might contain a secretive organization of freedom fighters—the Jesters—who never carry weapons, defeating foes with unarmed attacks and improvised weapons. Creating a Jester title can be as easy as modifying the Brawler title by changing its requirements to "Fight alongside the Jesters against a mutual foe."
+The easiest way to create custom titles is to modify an existing title's requirements to fit the adventure at hand. For instance, your world might contain a secretive organization of freedom fighters—the Jesters—who never carry weapons, defeating foes with unarmed attacks and improvised weapons. Creating a Jester title can be as easy as modifying the [Brawler](scc:mcdm.heroes.v1/title/brawler) title by changing its requirements to "Fight alongside the Jesters against a mutual foe."
 
 > **For the Director: Perks as Custom Titles**
 >
@@ -25297,7 +25297,7 @@ Just because a hero meets the prerequisite for a title doesn't mean it is grante
 
 Some titles have only one benefit. These are typically earned by heroes individually instead of together as a group. Only the hero doing the studying or meeting a particular fate reaps the reward!
 
-Most titles, however, are earned by all the heroes at once for accomplishing a great task, benefiting them all. These titles typically offer a selection of three or four different options. When the party earns the title, each player decides which benefit their hero takes. For instance, if the party triumphs in a tavern fight and gains the Brawler title, one hero might become more adept at fighting with improvised weapons, another might learn a special dodge to use when flanked by multiple enemies, and two others might simply revel in the increased notoriety. A hero can take any of a title's benefits they qualify for, and multiple heroes can take the same benefit.
+Most titles, however, are earned by all the heroes at once for accomplishing a great task, benefiting them all. These titles typically offer a selection of three or four different options. When the party earns the title, each player decides which benefit their hero takes. For instance, if the party triumphs in a tavern fight and gains the [Brawler](scc:mcdm.heroes.v1/title/brawler) title, one hero might become more adept at fighting with improvised weapons, another might learn a special dodge to use when flanked by multiple enemies, and two others might simply revel in the increased notoriety. A hero can take any of a title's benefits they qualify for, and multiple heroes can take the same benefit.
 
 ### Granting Titles
 
@@ -25316,7 +25316,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 > **For the Director: Planning Titles**
 >
-> While running a game session, it can be hard to track the heroes' actions and remember which titles they might qualify for. As such, it's easier to plan titles ahead of time. If the heroes might face a demon or dragon in an upcoming adventure, you can include the Demon Slayer or Dragon Blooded titles as potential rewards alongside that magic cloak or psionic dagger. You can even use titles to inspire adventures. What challenges should a hero face to earn the Demigod title?
+> While running a game session, it can be hard to track the heroes' actions and remember which titles they might qualify for. As such, it's easier to plan titles ahead of time. If the heroes might face a demon or dragon in an upcoming adventure, you can include the [Demon Slayer](scc:mcdm.heroes.v1/title/demon-slayer) or [Dragon Blooded](scc:mcdm.heroes.v1/title/dragon-blooded) titles as potential rewards alongside that magic cloak or psionic dagger. You can even use titles to inspire adventures. What challenges should a hero face to earn the [Demigod](scc:mcdm.heroes.v1/title/demigod) title?
 
 <!-- @type: title -->
 #### Ancient Loremaster
@@ -25327,7 +25327,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Leverage:* You know a priceless secret. The Director chooses the type of person who would value this secret—usually a member of a particular faction, such as a Higaran noble, or a type of person, such as a fence of stolen goods. When engaged in a negotiation with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can share this secret only once.
+- *Leverage:* You know a priceless secret. The Director chooses the type of person who would value this secret—usually a member of a particular faction, such as a Higaran [noble](scc:mcdm.heroes.v1/title/noble), or a type of person, such as a fence of stolen goods. When engaged in a negotiation with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can share this secret only once.
 - *Rare Books:* You add rare, ancient books to your collection. Whenever you undertake a research project, roll 1d6 for each dead language you know and add the total to the project roll.
 - *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an edge on Reason tests and take a bane on Presence tests. You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
 
@@ -25378,7 +25378,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** You aren't a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) but have witnessed the death of a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan).
 
-**Effect:** You aren't destined for a meaningful death, but you still might achieve one. When you're reduced to 0 Stamina but remain conscious, you can become doomed. If you do, you can't regain Stamina, you automatically obtain a tier 3 outcome on tests and power rolls, and you don't die until your Stamina reaches the negative of your Stamina maximum. At the end of the encounter, you die.
+**Effect:** You aren't destined for a meaningful death, but you still might achieve one. When you're reduced to 0 Stamina but remain conscious, you can become [doomed](scc:mcdm.heroes.v1/title/doomed). If you do, you can't regain Stamina, you automatically obtain a tier 3 outcome on tests and power rolls, and you don't die until your Stamina reaches the negative of your Stamina maximum. At the end of the encounter, you die.
 
 <!-- @type: title -->
 #### Dwarven Legionnaire
@@ -25490,7 +25490,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** The faction will perform one favor for the party, provided it doesn't interfere with the faction's goals.
 
-Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a noble house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an edge on tests made using the skill.
+Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a [noble](scc:mcdm.heroes.v1/title/noble) house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an edge on tests made using the skill.
 
 <!-- @type: title -->
 #### Presumed Dead
@@ -25508,7 +25508,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 *I like fighting these little guys. Means I don't have to waste money on a helmet.*
 
-**Prerequisite:** You defeat a leader or solo creature who is size 1S or smaller, such as a goblin monarch.
+**Prerequisite:** You defeat a leader or solo creature who is size 1S or smaller, such as a goblin [monarch](scc:mcdm.heroes.v1/title/monarch).
 
 **Effect:** Choose one of the following benefits:
 
@@ -25695,7 +25695,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *Haul down your flag or we'll burn you to the waterline!*
 
-**Prerequisite:** You have the Ship Captain title, and you sink or capture a ship of equal or greater size than your own.
+**Prerequisite:** You have the [Ship Captain](scc:mcdm.heroes.v1/title/ship-captain) title, and you sink or capture a ship of equal or greater size than your own.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25709,7 +25709,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *If you want or need something, talk to me. I have a certain... influence in these parts.*
 
-**Prerequisite:** You have the Faction Member title, and you greatly advance the faction's goals.
+**Prerequisite:** You have the [Faction Member](scc:mcdm.heroes.v1/title/faction-member) title, and you greatly advance the faction's goals.
 
 **Effect:** You are given a position of great authority in your faction. Additionally, you gain the following benefits:
 
@@ -25721,7 +25721,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *Do you enjoy the vintage? Yes, you can understand my tongue now. One does not drink at my table and leave unchanged.*
 
-**Prerequisite:** You eat and drink with an elf monarch or archfey.
+**Prerequisite:** You eat and drink with an elf [monarch](scc:mcdm.heroes.v1/title/monarch) or archfey.
 
 **Effect:** You know the Khelt language. Additionally, choose one of the following benefits:
 
@@ -25775,7 +25775,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *Everybody know their assignments? All right, let's go.*
 
-**Prerequisite:** You have the Troupe Leading Player title, and you have used planning and teamwork to execute a theft that went (reasonably) according to plan.
+**Prerequisite:** You have the [Troupe Leading Player](scc:mcdm.heroes.v1/title/troupe-leading-player) title, and you have used planning and teamwork to execute a theft that went (reasonably) according to plan.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25800,7 +25800,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *Kneel, heroes. Arise, knights of Tor, and may your swords be ever sharp in our service.*
 
-**Prerequisite:** A noble or monarch grants you knighthood or a similar rank.
+**Prerequisite:** A [noble](scc:mcdm.heroes.v1/title/noble) or [monarch](scc:mcdm.heroes.v1/title/monarch) grants you knighthood or a similar rank.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25831,12 +25831,12 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 *You want to know the exact coordinates of the **Gem of the Waves** shipwreck? I came across that just the other day in an unpublished memoir of its second mate. Let me get that for you.*
 
-**Prerequisite:** You have the Ancient Loremaster title, and you have completed a Discover Lore project to learn lost knowledge or forbidden knowledge.
+**Prerequisite:** You have the [Ancient Loremaster](scc:mcdm.heroes.v1/title/ancient-loremaster) title, and you have completed a Discover Lore project to learn lost knowledge or forbidden knowledge.
 
 **Effect:** Choose one of the following benefits:
 
 - *Arcane Improvisation:* When you use a damage-dealing magic signature ability, you can change its damage type to acid, cold, corruption, fire, lightning, poison, or sonic damage.
-- *I Have Just the Book:* If you start a Discover Lore project in your hero's stronghold or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.
+- *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.
 - *Picked Up a Few Things:* You know a skill from the lore skill group.
 - *Polyglot:* You know two languages. Additionally, the project goal for the Learn New Language project is halved for you.
 
@@ -25867,7 +25867,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 *I will follow you to the ends of the earth—just so I can kick you off the edge.*
 
-**Prerequisite:** You have the Marshal title, and you take down an entire criminal organization.
+**Prerequisite:** You have the [Marshal](scc:mcdm.heroes.v1/title/marshal) title, and you take down an entire criminal organization.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25972,12 +25972,12 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 *All hail the Pirate Queen!*
 
-**Prerequisite:** You have the Corsair title, and you lead a fleet of at least three ships.
+**Prerequisite:** You have the [Corsair](scc:mcdm.heroes.v1/title/corsair) title, and you lead a fleet of at least three ships.
 
 **Effect:** Choose one of the following benefits:
 
 - *First Mate:* You have a pirate retainer, such as a **[human](scc:mcdm.heroes.v1/ancestry/human) warrior**, chosen by the Director from *Draw Steel: Monsters*. This retainer's level increases to your level.
-- *Swashbuckler:* You can automatically climb at full speed while moving
+- *[Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler):* You can automatically climb at full speed while moving
 - *Treasure Keeper:* You earn 1 Wealth.
 - *Weather Wizard:* Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a free maneuver. Choose from one of the following weather types:
   - *Calm:* Wind-powered vessels and technology cease working
@@ -26035,15 +26035,15 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 *Technically, I'm called Lord Morninghill these days. I did a little favor for Duke Kenway at the Battle of Black Forest.*
 
-**Prerequisite:** A monarch or important noble grants you a noble rank.
+**Prerequisite:** A [monarch](scc:mcdm.heroes.v1/title/monarch) or important [noble](scc:mcdm.heroes.v1/title/noble) grants you a [noble](scc:mcdm.heroes.v1/title/noble) rank.
 
 **Effect:** Choose one of the following benefits:
 
-- *I Know How to Talk to These People:* You gain an edge on Presence tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your noble rank.
-- *Noble Splendor:* You earn 1 Renown and 1 Wealth.
+- *I Know How to Talk to These People:* You gain an edge on Presence tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
+- *[Noble](scc:mcdm.heroes.v1/title/noble) Splendor:* You earn 1 Renown and 1 Wealth.
 - *Retinue:* The number of followers you can recruit increases by two.
 
-**Special:** If you take this title, you might occasionally be called upon to perform duties for the person who granted your noble rank.
+**Special:** If you take this title, you might occasionally be called upon to perform duties for the person who granted your [noble](scc:mcdm.heroes.v1/title/noble) rank.
 
 <!-- @type: title -->
 #### Planar Voyager
@@ -26065,7 +26065,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** An enemy leader or solo creature reduces you to 0 Stamina.
 
-**Effect:** You gain a visible scar in a location of your choice. Additionally, your Stamina maximum increases by 20, and the creature who scarred you takes a bane on abilities against you.
+**Effect:** You gain a visible scar in a location of your choice. Additionally, your Stamina maximum increases by 20, and the creature who [scarred](scc:mcdm.heroes.v1/title/scarred) you takes a bane on abilities against you.
 
 **Special:** You can gain this title multiple times. The second and each subsequent time that you gain it, your Stamima maximum doesn't increase..
 
@@ -26074,7 +26074,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 *Best way to deal with a castle siege? Be on the outside.*
 
-**Prerequisite:** You have the Battlefield Commander title, and you lead the defense of a settlement or fortification.
+**Prerequisite:** You have the [Battlefield Commander](scc:mcdm.heroes.v1/title/battlefield-commander) title, and you lead the defense of a settlement or fortification.
 
 **Effect:** Choose one of the following benefits:
 
@@ -26114,7 +26114,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 
 *The ritual is complete. I feel your power flow through me. I am become a god! Ah-ha-ha-ha-ha!*
 
-**Prerequisite:** You have the Godsworn title, and hundreds of worshipful mortals complete a divine ritual in your name.
+**Prerequisite:** You have the [Godsworn](scc:mcdm.heroes.v1/title/godsworn) title, and hundreds of worshipful mortals complete a divine ritual in your name.
 
 **Effect:** You gain the following benefits:
 
@@ -26159,7 +26159,7 @@ Additionally, choose one of the following benefits:
 
 *The tyrant is dead! Long live the new king!*
 
-**Prerequisite:** You or a member of your party becomes the monarch of a nation.
+**Prerequisite:** You or a member of your party becomes the [monarch](scc:mcdm.heroes.v1/title/monarch) of a nation.
 
 **Effect:** You gain the following benefits:
 
@@ -26178,7 +26178,7 @@ Additionally, choose one of the following benefits:
 <!-- @type: title -->
 #### Peace Bringer
 
-*There goes Diana, peace bringer. She has won many a victory with her sword, but her greatest deed was convincing two nations to stop fighting.*
+*There goes Diana, [peace bringer](scc:mcdm.heroes.v1/title/peace-bringer). She has won many a victory with her sword, but her greatest deed was convincing two nations to stop fighting.*
 
 **Prerequisite:** You conduct a successful negotiation on which the fate of a nation or a world stands.
 
@@ -26211,7 +26211,7 @@ Additionally, choose one of the following benefits:
 
 *I've read about this tactic in books—it looks fairly straightforward.*
 
-**Prerequisite:** You have the Master Librarian title, and you complete a Learn From a Master project with a project goal of 1,000.
+**Prerequisite:** You have the [Master Librarian](scc:mcdm.heroes.v1/title/master-librarian) title, and you complete a Learn From a Master project with a project goal of 1,000.
 
 **Effect:** Your choice of your Reason or Intuition increases by 1 (to a maximum of 6).
 
@@ -26222,7 +26222,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 *To reach Giant's Foot by dawn, we'll have to run every step of the way. Let's get moving.*
 
-**Prerequisite:** You have the Unstoppable title, and you make or assist on a test as part of a montage test that obtains a full success.
+**Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a test as part of a montage test that obtains a full success.
 
 **Effect:** Your choice of your Might or Agility increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
@@ -26235,7 +26235,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 *I'll never get away with it? My dear, I already have.*
 
-**Prerequisite:** You have the Heist Hero title, and you have stolen a precious object or escaped from captivity while evading guards of 8th level or higher.
+**Prerequisite:** You have the [Heist Hero](scc:mcdm.heroes.v1/title/heist-hero) title, and you have stolen a precious object or escaped from captivity while evading guards of 8th level or higher.
 
 **Effect:** Your choice of your Might or Agility increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
@@ -26277,7 +26277,7 @@ You can recruit followers up to the maximum your Renown allows as a respite acti
 <!-- @type: title -->
 #### Stronghold
 
-Many followers stay at a stronghold, which is a home base you designate and can change. Your stronghold is typically a location shared by your fellow heroes. It could be a few rooms at an inn in a sleepy village, an old castle you claimed after clearing it of monsters, or a fleet of sailing ships.
+Many followers stay at a [stronghold](scc:mcdm.heroes.v1/title/stronghold), which is a home base you designate and can change. Your [stronghold](scc:mcdm.heroes.v1/title/stronghold) is typically a location shared by your fellow heroes. It could be a few rooms at an inn in a sleepy village, an old castle you claimed after clearing it of monsters, or a fleet of sailing ships.
 
 <!-- @type: title -->
 #### Follower Types
@@ -26286,7 +26286,7 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 ##### Artisan
 
-Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
+Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
 
@@ -26298,7 +26298,7 @@ Rules for retainers are found in *Draw Steel: Monsters*.
 
 ##### Sage
 
-Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
+Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a Reason and Intuition score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
 
@@ -26314,7 +26314,7 @@ Treasures such as magic swords, psionic crowns, and even healing potions are rar
 
 ### Earning Wealth
 
-Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a monarch as a reward for a job well done.
+Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a [monarch](scc:mcdm.heroes.v1/title/monarch) as a reward for a job well done.
 
 In general, a hero earns 1 wealth every second level of play. The Director can increase this rate if they wish.
 
@@ -26344,7 +26344,7 @@ Orden is a fantasy world in which the gods are objectively real. In spite of thi
 
 When a river floods or crops fail, some people may curse the gods, but those people do not all believe a god caused these events. They may curse simply because the gods didn't prevent catastrophe. They do not think, "Why did the gods do that?" They think, "Why did the gods make a world that behaves like this?"
 
-The gods are powerful, but forbidden from acting directly upon or within the world. To enact their will, they use intermediaries—beings of demigod-like status, once mortals, who now serve their patron god in eternity. Many [humans](scc:mcdm.heroes.v1/ancestry/human) call these beings saints, while the other speaking peoples use the term heroes, or legendary heroes, not to be confused with the heroes you make using the character creation rules in this book.
+The gods are powerful, but forbidden from acting directly upon or within the world. To enact their will, they use intermediaries—beings of [demigod](scc:mcdm.heroes.v1/title/demigod)-like status, once mortals, who now serve their patron god in eternity. Many [humans](scc:mcdm.heroes.v1/ancestry/human) call these beings saints, while the other speaking peoples use the term heroes, or legendary heroes, not to be confused with the heroes you make using the character creation rules in this book.
 
 Each god has many saints, some obscure. They sometimes manifest in the world. These encounters are always brief, leading sages and theologians to conclude there must be some limit to how much time or energy these saints and legendary heroes can spend on the prime manifold. Who created or enforces these limits?
 
@@ -27536,7 +27536,7 @@ Discuss the details of a hero's complication with that hero's player. Complicati
 
 Once you understand a hero's desires for their complication, you can create an echelon outline for the complication to give the hero's backstory some narrative teeth throughout the campaign. Consider the following example.
 
-Matt, playing Linn the [talent](scc:mcdm.heroes.v1/class/talent), has the Elemental Inside complication. After discussing the details with the Director, Matt decides that years ago, Linn threw herself in front of a spell cast by Sorin the Brown, an evil earth [elementalist](scc:mcdm.heroes.v1/class/elementalist). Sorin wanted to abduct Linn's [talent](scc:mcdm.heroes.v1/class/talent) mentor, a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) who was a perfect subject for her next deadly experiment. In taking decisive action, Linn saved her mentor but absorbed an angry force of earth named Bruulv. Sorin escaped and desires the return of her pet elemental. Meanwhile Linn is tougher thanks to the elemental within, but whenever she is dying, Bruulv takes control of her body and goes on a violent rampage.
+Matt, playing Linn the [talent](scc:mcdm.heroes.v1/class/talent), has the [Elemental Inside](scc:mcdm.heroes.v1/complication/elemental-inside) complication. After discussing the details with the Director, Matt decides that years ago, Linn threw herself in front of a spell cast by Sorin the Brown, an evil earth [elementalist](scc:mcdm.heroes.v1/class/elementalist). Sorin wanted to abduct Linn's [talent](scc:mcdm.heroes.v1/class/talent) mentor, a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) who was a perfect subject for her next deadly experiment. In taking decisive action, Linn saved her mentor but absorbed an angry force of earth named Bruulv. Sorin escaped and desires the return of her pet elemental. Meanwhile Linn is tougher thanks to the elemental within, but whenever she is dying, Bruulv takes control of her body and goes on a violent rampage.
 
 Matt tells the Director that Linn enjoys the extra protection afforded to her by Bruulv, since it makes her a tougher hero, and she would like to find a way to keep her benefit while losing the drawback. The Director comes up with an echelon outline for Linn that will enrich the [talent's](scc:mcdm.heroes.v1/class/talent) story and have ties to the main campaign (which happens to be the example campaign in the echelon outline above).
 
@@ -28092,7 +28092,7 @@ The burgomaster has the following possible pitfalls:
 
 *The virtuoso is the preeminent musician in the land—perhaps a celebrated opera singer or composer. If you need a cause popularized or an enemy's name tarnished, you come to them.*
 
-The virtuoso archetype can be used for any other local celebrity, such as a master crafter, inspired artist, famous gladiator, or world champion.
+The virtuoso archetype can be used for any other local celebrity, such as a [master crafter](scc:mcdm.heroes.v1/title/master-crafter), inspired artist, famous gladiator, or world champion.
 
 ###### Motivations
 
