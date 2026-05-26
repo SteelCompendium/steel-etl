@@ -413,7 +413,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Pitfall:** A negotiation trait an NPC has that determines what type of arguments will not work on them.
 
-**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** An ancestry of short folk who can slip into [shadows](scc:mcdm.heroes.v1/class/shadow) to hide.
+**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** An ancestry of short folk who can slip into shadows to hide.
 
 **Potency:** A value that determines if a target has a characteristic low enough to be affected by an effect.
 
@@ -1290,7 +1290,7 @@ This chapter details twelve ancestries for the game:
 
 **[Orc](scc:mcdm.heroes.v1/ancestry/orc):** [Orcs](scc:mcdm.heroes.v1/ancestry/orc) have skin in green tones and stand slightly taller and wider than [humans](scc:mcdm.heroes.v1/ancestry/human). A supernatural energy they call "the blood fire" flows through their veins, igniting colorful lines in an [orc's](scc:mcdm.heroes.v1/ancestry/orc) skin during life-or-death battles.
 
-**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** The smallest of the ancestries in this book, [polders](scc:mcdm.heroes.v1/ancestry/polder) stand no taller than 3-1/2 feet. They look like smaller [humans](scc:mcdm.heroes.v1/ancestry/human), and they have the ability to blend in with the [shadows](scc:mcdm.heroes.v1/class/shadow).
+**[Polder](scc:mcdm.heroes.v1/ancestry/polder):** The smallest of the ancestries in this book, [polders](scc:mcdm.heroes.v1/ancestry/polder) stand no taller than 3-1/2 feet. They look like smaller [humans](scc:mcdm.heroes.v1/ancestry/human), and they have the ability to blend in with the shadows.
 
 **[Revenant](scc:mcdm.heroes.v1/ancestry/revenant):** No hero starts their life as a [revenant](scc:mcdm.heroes.v1/ancestry/revenant). Rather, these undead creatures return to the world of the living because they have dire business that must be finished. A character of any ancestry can become a [revenant](scc:mcdm.heroes.v1/ancestry/revenant).
 
@@ -3109,7 +3109,7 @@ Ember's eyes flashed into a starfield. The [time raider's](scc:mcdm.heroes.v1/an
 
 The [time raider's](scc:mcdm.heroes.v1/ancestry/time-raider) right upper hand shot out, as though she'd been waiting for the void mage to do exactly what she just did, and her meson blaster leapt out of the hands of the war dog who'd chained her. The pistol made of glass and bronze slammed into her hand and its tip flared with prismatic light.
 
-John felt his skin tighten as Dazar warded him, and from the sun's [shadow](scc:mcdm.heroes.v1/class/shadow) cast by Taxiarch Lycaon the [polder](scc:mcdm.heroes.v1/ancestry/polder) Jackson Bootblack emerged, a rapier in each hand, and no one saw him move from where he'd been a moment before.
+John felt his skin tighten as Dazar warded him, and from the sun's shadow cast by Taxiarch Lycaon the [polder](scc:mcdm.heroes.v1/ancestry/polder) Jackson Bootblack emerged, a rapier in each hand, and no one saw him move from where he'd been a moment before.
 
 The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) burst into action and sped past him like a blur.
 
@@ -4058,7 +4058,7 @@ You gain the following career benefits:
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Bigger Fish:** You grew bored and disillusioned with chasing down petty thieves and imprisoning folks just trying to survive. Surely there are greater threats in the world. You will find that evil wherever it may lurk, and you'll be the one to stop it. |
 | 2  | **Corruption Within:** You joined the force to help the helpless and bring justice to those wronged. You weren't prepared for the rampant corruption reaching the top of your organization. You refused to cover for your fellow officers and were told in no uncertain terms to leave town or face the consequences. Now you travel as a hero, acting as the protector you always wanted to be. |
-| 3  | **Frame Job:** Your partner was murdered. That much is irrefutable. But you didn't do it, despite what the evidence implies. When it became clear you'd take the fall, you fled, leaving everything behind. Not content to cower in the [shadows](scc:mcdm.heroes.v1/class/shadow), you decided to adventure under a new name while you work to clear your own. |
+| 3  | **Frame Job:** Your partner was murdered. That much is irrefutable. But you didn't do it, despite what the evidence implies. When it became clear you'd take the fall, you fled, leaving everything behind. Not content to cower in the shadows, you decided to adventure under a new name while you work to clear your own. |
 | 4  | **Missing Mentor:** You learned everything you know about the job from someone you always looked up to in a corrupt organization. One night, they sent you a cryptic message saying they had discovered "something big," but before you could find out more, they disappeared. No longer sure who you could trust, you slipped away and sought a new life. Now you do what good you can and search to find the truth. | 
 | 5  | **One That Got Away:** A violent or depraved criminal began targeting you- perhaps stealing something personal or hurting someone you love—after slipping through your grasp. You left your career to pursue the criminal, but the trail has gone cold... for now. Might as well help folk in the meantime. |
 | 6  | **Powerful Enemies:** You made it your responsibility to root out and bring down the region's foremost crime syndicate. They sent goons to burn down your home and teach you a lesson, leaving you bleeding in the street with nothing left except your life. You've since taken on the life of a hero to gain the power and influence you need to destroy the syndicate once and for all. |
@@ -4552,7 +4552,7 @@ For example a 6th-level [censor](scc:mcdm.heroes.v1/class/censor) has "Signature
 <!-- @type: class | @id: censor -->
 ## Censor
 
-Demons and deathless fear you. Criminals run from the sight of your [shadow](scc:mcdm.heroes.v1/class/shadow). Agents of chaos, blasphemers, and heretics tremble at the sound of your voice. You carry the power of the gods, armed with wrath and sent out into the world first to seek, then [censor](scc:mcdm.heroes.v1/class/censor) those whose actions—or even existence—are anathema to your church.
+Demons and deathless fear you. Criminals run from the sight of your shadow. Agents of chaos, blasphemers, and heretics tremble at the sound of your voice. You carry the power of the gods, armed with wrath and sent out into the world first to seek, then censor those whose actions—or even existence—are anathema to your church.
 
 As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the strongest foes. Your judgment terrifies heretics, stops enemies in their tracks, and even hurls them across the battlefield.
 
@@ -12079,7 +12079,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
 > ###### Time Loop (11 Discipline)
 >
-> *You show [shadows](scc:mcdm.heroes.v1/class/shadow) what true speed is.*
+> *You show shadows what true speed is.*
 >
 > | **Psionic** | **Free triggered** |
 > |-------------|-------------------:|
@@ -12266,7 +12266,7 @@ As a 1st-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 
 You graduated from a shadow college chosen from the following options, each of which grants you a skill. (*Quick Build:* College of Black Ash.)
 
-- College of Black Ash: The College of Black Ash founded the art of being a [shadow](scc:mcdm.heroes.v1/class/shadow). Its graduates are unmatched in mobility, using sorcery to teleport around the battlefield, manipulate [shadows](scc:mcdm.heroes.v1/class/shadow), and summon darkness. You have the Magic skill.
+- College of Black Ash: The College of Black Ash founded the art of being a [shadow](scc:mcdm.heroes.v1/class/shadow). Its graduates are unmatched in mobility, using sorcery to teleport around the battlefield, manipulate shadows, and summon darkness. You have the Magic skill.
 - College of Caustic Alchemy: The College of Caustic Alchemy teaches its students recipes for the acids, bombs, and poisons used in their grim work. Graduates of the college are exceptional assassins. You have the Alchemy skill.
 - College of the Harlequin Mask: Graduates of the College of the Harlequin Mask learn illusion magic, which they use to infiltrate enemy strongholds and create orchestrated chaos in combat. You have the Lie skill.
 
@@ -12983,7 +12983,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 <!-- @type: ability | @cost: 9 Insight -->
 > ###### Blackout (9 Insight)
 >
-> *You cause a plume of [shadow](scc:mcdm.heroes.v1/class/shadow) to erupt from your eyes and create a cloud of darkness.*
+> *You cause a plume of shadow to erupt from your eyes and create a cloud of darkness.*
 >
 > | **Area, Magic** |   **Maneuver** |
 > |-----------------|---------------:|
@@ -13276,7 +13276,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 <!-- @type: ability | @cost: 11 Insight -->
 > ###### Shadowgrasp (11 Insight)
 >
-> *The [shadows](scc:mcdm.heroes.v1/class/shadow) around you give way, allowing the [shadow](scc:mcdm.heroes.v1/class/shadow) creature within you to grasp at your foes.*
+> *The shadows around you give way, allowing the shadow creature within you to grasp at your foes.*
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -19397,7 +19397,7 @@ You used to be an immortal creature, dispensing justice and doing the bidding of
 <!-- @type: complication -->
 #### Famous Relative
 
-Sure, you're a promising young hero in your own right—but people always ask you about your famous relative. Will you equal or surpass your relative's accomplishments, or will you always live in their [shadow](scc:mcdm.heroes.v1/class/shadow)?
+Sure, you're a promising young hero in your own right—but people always ask you about your famous relative. Will you equal or surpass your relative's accomplishments, or will you always live in their shadow?
 
 **Benefit:** You have a piece of magic jewelry such as a signet ring. As a maneuver, you can use this item to summon your relative to your aid. Your relative starts with a Renown of 10 but otherwise has the same statistics you do. They make power rolls with an edge but don't gain the benefits of any of your treasures. Your relative does their best to help you out of the current perilous situation, disappearing when the situation is resolved or after 1 hour. Once you summon your relative, you can't do so again until you gain a level.
 
@@ -24055,7 +24055,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Keywords:** Hands, Psionic
 
-**Item Prerequisite:** A humanoid's [shadow](scc:mcdm.heroes.v1/class/shadow) disconnected from its source
+**Item Prerequisite:** A humanoid's shadow disconnected from its source
 
 **Project Source:** Texts or lore in Khelt
 
@@ -25200,7 +25200,7 @@ Typically, one creature never holds onto an artifact for too long. Most of these
 
 **Keywords:** Magic; Light Weapon, Medium Weapon, or Heavy Weapon
 
-Whether drawn from a stone, gifted by a lake spirit, forged by a god, or used to kill one, there is a sword that exists outside of time and space. It is always where it needs to be precisely when it needs to be there then is gone in a flash when the need for it has waned. The sword is depicted in art, song, and story across many living cultures—and even more frequently among cultures long buried, often after proving the deciding factor in a battle. It's been wielded by numerous heroes of legend, and even more who have slipped into the forgotten [shadows](scc:mcdm.heroes.v1/class/shadow) of history.
+Whether drawn from a stone, gifted by a lake spirit, forged by a god, or used to kill one, there is a sword that exists outside of time and space. It is always where it needs to be precisely when it needs to be there then is gone in a flash when the need for it has waned. The sword is depicted in art, song, and story across many living cultures—and even more frequently among cultures long buried, often after proving the deciding factor in a battle. It's been wielded by numerous heroes of legend, and even more who have slipped into the forgotten shadows of history.
 
 Though its size and make are often debated, the sword is consistently described as having a crossguard made from pure starlight. When wielded, a brilliant metal blade springs forth from that hilt, suiting the holder's taste in weapons. Those who touch the blade are filled with the vigor and power of the heroes who have held it before.
 
@@ -25656,7 +25656,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 <!-- @type: title -->
 #### Battlefield Commander
 
-*Spells and [shadows](scc:mcdm.heroes.v1/class/shadow) have their place, but it takes soldiers to hold the field.*
+*Spells and shadows have their place, but it takes soldiers to hold the field.*
 
 **Prerequisite:** You lead an army in battle and win.
 
@@ -27132,7 +27132,7 @@ Saint Pentalion teaches that one should bide their time and build their power be
 
 Cyrvis is the enemy of fate. He is the god of those who believe they have been wronged by life, and seek revenge. Cyrvis is a god of magic, because through magic one can gain power to exert their will over others. He is brother to Nikros but because he is frail and Nikros values only strength, Nikros hates Cyrvis, and Cyrvis is happy to return the sentiment.
 
-A person bullied, a criminal arrested, a servant dismissed—all who harbor secret hate whisper Cyrvis' name, and that whisper is a prayer. A suitor rejected by a consort who loves another finds themself walking in Cyrvis' [shadow](scc:mcdm.heroes.v1/class/shadow). He is the god of assassins, conspirators, and the bitterly frail.
+A person bullied, a criminal arrested, a servant dismissed—all who harbor secret hate whisper Cyrvis' name, and that whisper is a prayer. A suitor rejected by a consort who loves another finds themself walking in Cyrvis' shadow. He is the god of assassins, conspirators, and the bitterly frail.
 
 It is dangerous to worship Cyrvis in public, but those who gain power through his worship often parade this fact gladly and teach Cyrvis' hatred as virtue. Many is the knight who rides with Cyrvis's screaming-skull talisman on their shield, teaching folk to take what they want, the law be damned. The law is a coward! The law is a system designed by cowards to keep us from seeking real power!
 
@@ -27383,7 +27383,7 @@ You can break down your game into the following categories:
 - **Combat:** How often are the heroes using violence to overcome challenges?
 - **Exploration:** How often are the heroes exploring new environments that are difficult to traverse? How often do you expect the heroes to make tests using skills from the exploration skill group?
 - **Interpersonal:** How often are the heroes using negotiation and conversing with NPCs to overcome challenges? How often do you expect the heroes to make tests using skills from the interpersonal skill group?
-- **Intrigue:** How often are the heroes solving mysteries, finding double agents, and skulking about the [shadows](scc:mcdm.heroes.v1/class/shadow) to achieve their goals? How embroiled will they get in the politics of competing people and factions? How often do you expect the heroes to make tests using skills from the intrigue skill group?
+- **Intrigue:** How often are the heroes solving mysteries, finding double agents, and skulking about the shadows to achieve their goals? How embroiled will they get in the politics of competing people and factions? How often do you expect the heroes to make tests using skills from the intrigue skill group?
 
 These are the primary types of scenes found in many campaigns, but you could also add your own. For instance, if you want to run a campaign full of diabolical brain teasers and traps, you could add a "Puzzles" category to your campaign pitch document.
 
@@ -27662,7 +27662,7 @@ You don't have to define everything about these general locations, because you'l
 
 - **Mood:** What is the mood of this location? Is it safe and peaceful? Dire and gloomy? Tense and dangerous? Do the hairs on the back of your neck stand up when you're here, or is it the kind of place where you can relax?
 - **Senses:** What are the first things you notice about this location with your senses? What do you see, hear, or smell? What does the air taste like? How does it feel on your skin? Which of the things you observe stand out or are unique?
-- **Creatures:** What nonhostile creatures can be encountered here? This might include passersby, street merchants, animals, or unknown somethings moving in the [shadows](scc:mcdm.heroes.v1/class/shadow).
+- **Creatures:** What nonhostile creatures can be encountered here? This might include passersby, street merchants, animals, or unknown somethings moving in the shadows.
 
 Having these details will help you set the scene as the heroes travel through these general locations to get from one specific site to another.
 
