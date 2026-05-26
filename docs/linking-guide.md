@@ -82,16 +82,16 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
 | Careers | 3494-4065 | done | done (1) | - | - | - | - | - | - | - | done (5) |
 | Classes | 4066-17606 | done | done (47) | - | - | - | - | - | - | - | done (56) |
-| Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | - |
-| Perks | 18581-18946 | done | - | - | - | - | - | - | - | - | - |
-| Complications | 18947-20167 | done | - | - | - | - | - | - | - | - | - |
-| Tests | 20168-20408 | done | - | - | - | - | - | - | - | - | - |
-| Skills | 20409-20856 | done | - | - | - | - | - | - | - | - | - |
-| Combat | 20857-21636 | done | - | - | - | - | - | - | - | - | - |
-| Negotiation | 21637-22187 | done | - | - | - | - | - | - | - | - | - |
-| Downtime Projects | 22188-23215 | done | - | - | - | - | - | - | - | - | - |
+| Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | done (4) |
+| Perks | 18581-18946 | done | - | - | - | - | - | - | - | - | done (2) |
+| Complications | 18947-20167 | done | - | - | - | - | - | - | - | - | done (18) |
+| Tests | 20168-20408 | done | - | - | - | - | - | - | - | - | done (2) |
+| Skills | 20409-20856 | done | - | - | - | - | - | - | - | - | done (3) |
+| Combat | 20857-21636 | done | - | - | - | - | - | - | - | - | done (13) |
+| Negotiation | 21637-22187 | done | - | - | - | - | - | - | - | - | done (2) |
+| Downtime Projects | 22188-23215 | done | - | - | - | - | - | - | - | - | done (5) |
 | Rewards | 23216-23220 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
-| Treasures | 23221-25258 | done | - | - | - | - | - | - | - | - | - |
-| Titles | 25259-26339 | done | - | - | - | - | - | - | - | - | - |
-| Gods and Religion | 26340-27294 | done | - | - | - | - | - | - | - | - | - |
-| For the Director | 27295-28721 | done | - | - | - | - | - | - | - | - | - |
+| Treasures | 23221-25258 | done | - | - | - | - | - | - | - | - | done (9) |
+| Titles | 25259-26339 | done | - | - | - | - | - | - | - | - | done (16) |
+| Gods and Religion | 26340-27294 | done | done (8) | done (12) | - | - | - | - | - | - | - |
+| For the Director | 27295-28721 | done | - | - | - | - | - | - | - | - | done (14) |
