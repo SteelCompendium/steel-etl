@@ -1268,7 +1268,7 @@ Fantastic peoples inhabit the worlds of *Draw Steel*. Among them are [devils](sc
 
 Your hero is one of these folks! The fantastic ancestry you choose bestows benefits that come from your anatomy and physiology. This choice doesn't grant you cultural benefits, such as crafting or lore skills, though. While many game settings have cultures made of mostly one ancestry, other cultures and worlds have a cosmopolitan mix of peoples.
 
-In *Draw Steel*, ancestry describes how you were born. Culture (part of Chapter 4: Background) describes how you grew up. If you want to be a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in a forest among other [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), you can do that! If you want to play a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in an underground city of [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc), you can do that too!
+In *Draw Steel*, ancestry describes how you were born. Culture (part of Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)) describes how you grew up. If you want to be a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in a forest among other [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), you can do that! If you want to play a [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) who was raised in an underground city of [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc), you can do that too!
 
 This chapter details twelve ancestries for the game:
 
@@ -1314,7 +1314,7 @@ This chapter details twelve ancestries for the game:
 
 ### On the Origin of Species
 
-Orden (talked about in Chapter 1: The Basics) is a fantasy world. It works on principles similar to those many people throughout history believed governed the real world. "I dunno, a god did it probably."
+Orden (talked about in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) is a fantasy world. It works on principles similar to those many people throughout history believed governed the real world. "I dunno, a god did it probably."
 
 [Humans](scc:mcdm.heroes.v1/ancestry/human), elves, [orcs](scc:mcdm.heroes.v1/ancestry/orc), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), dragons, all have creator gods—the Elder Gods, four of whom made the world for some reason. Maybe they were bored.
 
@@ -4144,7 +4144,7 @@ Abilities with the Area keyword create an area of effect. Many area abilities de
 
 ##### Charge
 
-Abilities with the Charge keyword can be used with the Charge main action instead of a melee free strike. (The Charge main action is described in Main Actions in Chapter 10: Combat.)
+Abilities with the Charge keyword can be used with the Charge main action instead of a melee free strike. (The Charge main action is described in Main Actions in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat).)
 
 ##### Magic
 
@@ -4178,7 +4178,7 @@ Your character's kit determines the types of weapons you wield and use with your
 
 #### Type
 
-Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a free maneuver, or a free triggered action (with all those terms explained in Taking a Turn in Chapter 10: Combat). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
+Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a free maneuver, or a free triggered action (with all those terms explained in Taking a Turn in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
 
 ##### Trigger
 
@@ -4202,7 +4202,7 @@ If you make a ranged strike while any enemy is adjacent to you (within 1 square)
 
 Some abilities have a melee distance and a ranged distance. When you use such an ability, you choose whether to use it as a melee or a ranged ability.
 
-An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the Cloak and Dagger kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See Chapter 6: Kits.)
+An ability never has both the Melee and Ranged keywords at the same time. For example, if you have the Cloak and Dagger kit, which has a weapon damage bonus to melee abilities and a weapon damage bonus to ranged abilities, only one bonus at a time applies to an ability with both the Melee and Ranged keywords. (See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits).)
 
 ##### Self
 
@@ -4256,7 +4256,7 @@ If an ability targets one or more creatures, it can affect creatures within the 
 
 ##### Object
 
-If an ability targets one or more objects, it can affect any object within the ability's distance or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: Combat has information on damage immunity.)
+If an ability targets one or more objects, it can affect any object within the ability's distance or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has information on damage immunity.)
 
 When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) Minor Telekinesis ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
 
@@ -4312,7 +4312,7 @@ The damage for these abilities increases at each echelon of play, since your cha
 
 Some abilities, including your free strikes, allow you to pick which characteristic score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your Might or your Agility to determine the damage.
 
-(Chapter 10: Combat has more information on damage.)
+(Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has more information on damage.)
 
 ##### Abilities With Damage and Effects
 
@@ -4404,7 +4404,7 @@ You can't score a critical hit with an ability roll made as a maneuver or any ot
 
 #### Roll Against Multiple Creatures
 
-When an ability has multiple targets (whether a strike with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have edges or banes (see Chapter 1: The Basics) against some but not all of your targets, you might apply a different tier outcome to individual targets.
+When an ability has multiple targets (whether a strike with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have edges or banes (see Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) against some but not all of your targets, you might apply a different tier outcome to individual targets.
 
 For example, if you target three creatures with a strike ability and the power roll totals 11, each of the targets should be affected by the tier 1 outcome of the ability. However, if you gain an edge on strikes against one of the targets to add 2 to the power roll, your total against that target is 13, and they are affected by the tier 2 outcome of the ability.
 
@@ -4477,7 +4477,7 @@ If you use an ability that creates an environmental effect, such as a portal, yo
 
 #### Straight Line
 
-Whenever a creature moves or is subjected to forced movement—a push, pull, or slide (see Chapter 10: Combat)—that movement is typically in a straight line. Abilities that allow you to move or to force move another creature often talk about moving straight toward or away from a creature or an object. But even when movement must be in a straight line, it doesn't have to be a horizontal or vertical line on an encounter map. (See the Straight Lines sidebar earlier in this chapter.)
+Whenever a creature moves or is subjected to forced movement—a push, pull, or slide (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat))—that movement is typically in a straight line. Abilities that allow you to move or to force move another creature often talk about moving straight toward or away from a creature or an object. But even when movement must be in a straight line, it doesn't have to be a horizontal or vertical line on an encounter map. (See the Straight Lines sidebar earlier in this chapter.)
 
 #### Ground and Ceiling
 
@@ -4505,11 +4505,11 @@ When a creature is frightened, any ability roll they make against the source of 
 
 ##### Grabbed
 
-A creature who is grabbed has speed 0, can't be force moved except by a creature, object, or effect that has them grabbed, can't use the Knockback maneuver (see Maneuvers in Chapter 10: Combat), and takes a bane on abilities that don't target the creature, object, or effect that has them grabbed. If a creature is grabbed by another creature and that creature moves, they bring the grabbed creature with them. If a creature's size is equal to or less than the size of a creature they have grabbed, their speed is halved while they have that creature grabbed.
+A creature who is grabbed has speed 0, can't be force moved except by a creature, object, or effect that has them grabbed, can't use the Knockback maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), and takes a bane on abilities that don't target the creature, object, or effect that has them grabbed. If a creature is grabbed by another creature and that creature moves, they bring the grabbed creature with them. If a creature's size is equal to or less than the size of a creature they have grabbed, their speed is halved while they have that creature grabbed.
 
 A creature who has another creature grabbed can use a maneuver to move the grabbed creature into an unoccupied space adjacent to them.
 
-A creature can release a creature they have grabbed at any time to end that condition (no action required). A grabbed creature can attempt to escape being grabbed using the Escape Grab maneuver (see Chapter 10: Combat). If a grabbed creature teleports, or if either the grabbed creature or the creature grabbing them is force moved so that both creatures are not adjacent to each other, that creature is no longer grabbed.
+A creature can release a creature they have grabbed at any time to end that condition (no action required). A grabbed creature can attempt to escape being grabbed using the Escape Grab maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a grabbed creature teleports, or if either the grabbed creature or the creature grabbing them is force moved so that both creatures are not adjacent to each other, that creature is no longer grabbed.
 
 A creature can grab only creatures of their size or smaller. If a creature's Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
 
@@ -4519,7 +4519,7 @@ Unless otherwise indicated, a creature can grab only one creature at a time.
 
 While a creature is prone, they are flat on the ground, any strike they make takes a bane, and melee abilities used against them gain an edge. A prone creature must crawl to move along the ground, which costs 1 additional square of movement for every square crawled. A creature can't climb, jump, swim, or fly while prone. If they are climbing, flying, or jumping when knocked prone, they fall.
 
-Unless the ability or effect that imposed the prone condition says otherwise, a prone creature can stand up using the Stand Up maneuver (see Maneuvers in Chapter 10: Combat). A creature adjacent to a willing prone creature can likewise use the Stand Up maneuver to make that creature stand up.
+Unless the ability or effect that imposed the prone condition says otherwise, a prone creature can stand up using the Stand Up maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). A creature adjacent to a willing prone creature can likewise use the Stand Up maneuver to make that creature stand up.
 
 ##### Restrained
 
@@ -4584,7 +4584,7 @@ As a censor, you're at your best against the strongest foes. Your judgment terri
 
 **Recoveries:** 12
 
-**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: Tests). (*Quick Build:* Intimidate, Religion.)
+**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* Intimidate, Religion.)
 
 ###### Censor Advancement Table
 
@@ -4620,7 +4620,7 @@ Your censor order is your subclass, and your choice of order determines many of 
 <!-- @type: feature -->
 #### Deity and Domains
 
-Choose a god or saint who your character reveres from Chapter 14: Gods and Religion, or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
+Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
 After choosing your deity, pick one domain from their portfolio. Your choice of domain determines many of the features you'll gain from this class. (*Quick Build:* Cavall as deity and War as domain.)
 
@@ -4684,7 +4684,7 @@ The first time on a turn that you use your Judgment ability to judge a creature,
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: Kits for more information. (*Quick Build:* Warrior Priest.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Warrior Priest.)
 
 <!-- @type: feature -->
 #### My Life for Yours
@@ -4738,7 +4738,7 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 <!-- @type: feature -->
 ##### Blessing of Comprehension
 
-You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any crafting or research project (see Chapter 12: Downtime Projects).
+You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any crafting or research project (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
@@ -5059,7 +5059,7 @@ As a 2nd-level censor, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: Perks.
+You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Order Features
@@ -5276,7 +5276,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature -->
 #### Wrath Beyond Wrath
@@ -5663,7 +5663,7 @@ Each time you use your My Life for Yours ability, you gain 1 wrath that can be s
 <!-- @type: feature -->
 ##### Gods' Library
 
-You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: Downtime Projects). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
+You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
 
 <!-- @type: feature -->
 ##### Light of the Burning Sun
@@ -5982,7 +5982,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Templar
 
-You are the ultimate representation of your god's justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a conduit domain effect (see Domain Piety and Effects in the Conduit section) associated with your chosen domain, or a domain you access with virtue (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your conduit level, use your censor level instead.
+You are the ultimate representation of your god's justice in the timescape. Whenever you use your Judgment ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see Domain Piety and Effects in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with virtue (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
 
 Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
 
@@ -6034,7 +6034,7 @@ The power of the gods flows through you! As a vessel for divine power, you don't
 
 **Recoveries:** 8
 
-**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: Tests). (*Quick Build:* Read Person, Religion.)
+**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* Read Person, Religion.)
 
 ###### Conduit Advancement Table
 
@@ -6059,7 +6059,7 @@ As a conduit, you gain the following features.
 <!-- @type: feature -->
 #### Deity and Domains
 
-Choose a god or saint who your character reveres from Chapter 14: Gods and Religion, or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
+Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
 After choosing your deity, pick two domains from their portfolio. The two domains you pick make up your subclass, and your choice of domains determines many of the features you'll gain as you gain new levels. (*Quick Build:* Adûn for deity, and Life and Protection as domains.)
 
@@ -6185,7 +6185,7 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 <!-- @type: feature -->
 ##### Blessing of Comprehension
 
-You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any research or crafting project (see Chapter 12: Downtime Projects).
+You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any research or crafting project (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
@@ -6696,7 +6696,7 @@ Your deity is aware of your growing influence, making it easier to draw their at
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: Perks.
+You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Domain Feature
@@ -6978,7 +6978,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature -->
 #### 4th-Level Domain Feature
@@ -7414,7 +7414,7 @@ Each time you use your Healing Grace ability, you gain 1 piety that can be spent
 <!-- @type: feature -->
 ##### Gods' Library
 
-You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: Downtime Projects). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
+You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
 
 <!-- @type: feature -->
 ##### Light of the Burning Sun
@@ -7822,7 +7822,7 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 **Recoveries:** 8
 
-**Skills:** You gain the Magic skill (see Skills in Chapter 9: Tests). Then choose any three skills from the crafting or lore skill groups. (*Quick Build:* Alchemy, Blacksmithing, History, Magic.)
+**Skills:** You gain the Magic skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any three skills from the crafting or lore skill groups. (*Quick Build:* Alchemy, Blacksmithing, History, Magic.)
 
 ###### Elementalist Advancement Table
 
@@ -7949,7 +7949,7 @@ You have the following ability.
 > 
 > **Effect:** Choose one of the following effects:
 > 
-> - You use the Knockback maneuver (see Chapter 10: Combat), but its distance becomes the range of your Hurl Element ability, and you use Reason instead of Might for the power roll.
+> - You use the Knockback maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), but its distance becomes the range of your Hurl Element ability, and you use Reason instead of Might for the power roll.
 > - You choose a creature within the distance of your Hurl Element ability and one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. That creature takes damage of the chosen type equal to your Reason score.
 > - You teleport up to a number of squares equal to your Reason score. If you choose this option, you can spend essence to teleport 1 additional square for each essence spent.
 
@@ -8447,7 +8447,7 @@ As a 2nd-level elementalist, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: Perks.
+You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Specialization Feature
@@ -8789,7 +8789,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -9312,7 +9312,7 @@ Additionally, as a respite activity, you can shape the mundane earth around you 
 
 The damage bonus of your Acolyte of Fire feature increases to +5 and applies to all your magic abilities.
 
-Additionally, your Return to Formlessness ability can be used on supernatural objects (but not on artifacts). When you melt a treasure (see Chapter 13: Rewards), you gain breath equal to its echelon.
+Additionally, your Return to Formlessness ability can be used on supernatural objects (but not on artifacts). When you melt a treasure (see Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), you gain breath equal to its echelon.
 
 <!-- @type: feature -->
 ##### Master of Green
@@ -9371,7 +9371,7 @@ You do not temper the heat of battle within you. You unleash it! Your experience
 
 **Recoveries:** 10
 
-**Skills:** You gain the Nature skill (see Skills in Chapter 9: Tests). Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* Alertness, Jump, Nature.)
+**Skills:** You gain the Nature skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* Alertness, Jump, Nature.)
 
 ###### Fury Advancement Table
 
@@ -9477,7 +9477,7 @@ You can use and gain the benefits of a stormwight kit (see Stormwight Kits). You
 <!-- @type: feature -->
 ##### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: Kits for more information. (*Quick Build:* Panther.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Panther.)
 
 <!-- @type: feature -->
 ##### Primordial Cunning
@@ -9559,7 +9559,7 @@ Your primordial aspect grants you a triggered action, as shown on the Aspect Tri
 <!-- @type: feature -->
 #### Mighty Leaps
 
-You can't obtain lower than a tier 2 outcome on any Might test made to jump (see Movement Types in Chapter 10: Combat).
+You can't obtain lower than a tier 2 outcome on any Might test made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 #### Fury Abilities
 
@@ -9783,7 +9783,7 @@ As a 2nd-level fury, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, exploration, or intrigue perk of your choice. See Chapter 7: Perks.
+You gain one crafting, exploration, or intrigue perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Aspect Feature
@@ -10048,7 +10048,7 @@ You can manifest your ferocity directly as an elemental force created by the Pri
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -10071,7 +10071,7 @@ Your primordial aspect grants you a feature, as shown on the 5th-Level Aspect Fe
 <!-- @type: feature -->
 ##### Bounder
 
-Your jump distance and height double (see Movement Types in Chapter 10: Combat). Additionally, when you fall, you reduce the effective height of your fall by a number of squares equal to your jump distance for the purpose of determining damage and whether you land prone (see Falling in Chapter 10). You are not prone after falling and landing on another creature.
+Your jump distance and height double (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). Additionally, when you fall, you reduce the effective height of your fall by a number of squares equal to your jump distance for the purpose of determining damage and whether you land prone (see Falling in Chapter 10). You are not prone after falling and landing on another creature.
 
 <!-- @type: feature -->
 ##### Stormborn
@@ -10602,7 +10602,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 ### Stormwight Kits
 
-The stormwight primordial aspect lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional stormwight kits through play, changing them out during a respite as with any other kit (see Chapter 6: Kits).
+The stormwight primordial aspect lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional stormwight kits through play, changing them out during a respite as with any other kit (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 <!-- @type: feature -->
 #### Kit Features
@@ -10645,7 +10645,7 @@ You wear no armor and wield only your unarmed strikes—which become devastating
 <!-- @type: feature -->
 ##### Kit Bonuses
 
-These bonuses apply in your true form, your animal form, and your hybrid form. See Chapter 6: Kits for information on kit bonuses.
+These bonuses apply in your true form, your animal form, and your hybrid form. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for information on kit bonuses.
 
 ##### Signature Ability
 
@@ -10954,7 +10954,7 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 **Recoveries:** 8
 
-**Skills:** You gain the Psionics skill (see Skills in Chapter 9: Tests). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Psionics, Read Person, Timescape.)
+**Skills:** You gain the Psionics skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Psionics, Read Person, Timescape.)
 
 ###### Null Advancement Table
 
@@ -11425,7 +11425,7 @@ As a 2nd-level null, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: Perks.
+You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Tradition Feature
@@ -11653,7 +11653,7 @@ The first time each combat round that an enemy in the area of your Null Field ab
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -12237,7 +12237,7 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 **Recoveries:** 8
 
-**Skills:** You gain the Hide and Sneak skills (see Skills in Chapter 9: Tests). Then choose any five skills from Criminal Underworld or the skills of the exploration, interpersonal, or intrigue skill groups. (*Quick Build:*  Criminal Underworld, Hide, Lie, Pick Lock, Pick Pocket, Sabotage, Sneak.)
+**Skills:** You gain the Hide and Sneak skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any five skills from Criminal Underworld or the skills of the exploration, interpersonal, or intrigue skill groups. (*Quick Build:*  Criminal Underworld, Hide, Lie, Pick Lock, Pick Pocket, Sabotage, Sneak.)
 
 ###### Shadow Advancement Table
 
@@ -12444,7 +12444,7 @@ You have the following ability.
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: Kits for more information. (*Quick Build:* Cloak and Dagger.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Cloak and Dagger.)
 
 #### Shadow Abilities
 
@@ -12664,7 +12664,7 @@ As a 2nd-level shadow, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: Perks.
+You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level College Feature
@@ -12930,7 +12930,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature -->
 #### Surge of Insight
@@ -13515,7 +13515,7 @@ Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw 
 
 **Recoveries:** 10
 
-**Skills:** You gain the Lead skill (see Skills in Chapter 9: Tests). Then choose any two skills from Alertness, Architecture, Blacksmithing, Brag, Culture, Empathize, Fletching, Mechanics, Monsters, Search, Strategy, or the skills of the exploration skill group. (*Quick Build:* Lead, Monsters, Strategy.)
+**Skills:** You gain the Lead skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from Alertness, Architecture, Blacksmithing, Brag, Culture, Empathize, Fletching, Mechanics, Monsters, Search, Strategy, or the skills of the exploration skill group. (*Quick Build:* Lead, Monsters, Strategy.)
 
 ###### Tactician Advancement Table
 
@@ -13599,7 +13599,7 @@ At the Director's discretion, you and your allies can use skills from the intrig
 <!-- @type: feature -->
 ##### Studied Commander
 
-Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete. (See Chapter 12: Downtime Projects for more information.)
+Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
 
 Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a Reason test as a respite activity. The following test outcomes apply to a combat encounter:
 
@@ -13676,7 +13676,7 @@ Your tactical doctrine grants you a triggered action, as shown on the Doctrine T
 <!-- @type: feature -->
 #### Field Arsenal
 
-You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well. See Chapter 6: Kits for more information. (*Quick Build:* Shining Armor, Sniper.)
+You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Shining Armor, Sniper.)
 
 If both kits grant you the same benefit, you take one or the other and can't change your choice until you finish a respite. (This usually means taking the higher of two bonuses.)
 
@@ -13881,7 +13881,7 @@ As a 2nd-level tactician, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: Perks.
+You gain one exploration, interpersonal, or intrigue perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Doctrine Feature
@@ -14105,7 +14105,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -14669,7 +14669,7 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 **Recoveries:** 8
 
-**Skills:** You gain the Psionics and Read Person skills (see Skills in Chapter 9: Tests). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Empathize, Psionics, Read Person, Timescape.)
+**Skills:** You gain the Psionics and Read Person skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Empathize, Psionics, Read Person, Timescape.)
 
 ###### Talent Advancement Table
 
@@ -14814,7 +14814,7 @@ Your ward allows you to slip away from threats. Whenever you take damage, you be
 <!-- @type: feature -->
 #### Telepathic Speech
 
-You know the Mindspeech language (see Languages in Orden in Chapter 4: Background). Additionally, you can telepathically communicate with any creatures within distance of your Mind Spike ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.
+You know the Mindspeech language (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Additionally, you can telepathically communicate with any creatures within distance of your Mind Spike ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.
 
 <!-- @type: feature -->
 #### 1st-Level Tradition Features
@@ -15228,7 +15228,7 @@ As a 2nd-level talent, you gain the following features.
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: Perks.
+You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Tradition Feature
@@ -15390,7 +15390,7 @@ As a 3rd-level talent, you gain the following features.
 <!-- @type: feature -->
 #### Scan
 
-You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: Tests). Additionally, once you establish line of effect to a thinking creature within distance of your Mind Spike ability, you always have line of effect to that creature until they move beyond that distance.
+You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish line of effect to a thinking creature within distance of your Mind Spike ability, you always have line of effect to that creature until they move beyond that distance.
 
 #### 7-Clarity Ability
 
@@ -15500,7 +15500,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature -->
 #### Suspensor Field
@@ -16207,7 +16207,7 @@ There is no visible text in the image provided. The image appears to show a deco
 
 **Recoveries:** 8
 
-**Skills:** You gain the Read Person skill (see Skills in Chapter 9: Tests). Then choose two skills from the interpersonal skill group and one skill from the intrigue or lore skill groups. (*Quick Build:* Brag, Flirt, Read Person, Rumors.)
+**Skills:** You gain the Read Person skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose two skills from the interpersonal skill group and one skill from the intrigue or lore skill groups. (*Quick Build:* Brag, Flirt, Read Person, Rumors.)
 
 ###### Troubadour Advancement Table
 
@@ -16279,7 +16279,7 @@ When you use an ability outside of combat that lets you spend unlimited drama on
 <!-- @type: feature -->
 #### Kit
 
-You can use and gain the benefits of a kit. See Chapter 6: Kits for more information. (*Quick Build:* Swashbuckler.)
+You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* Swashbuckler.)
 
 <!-- @type: feature -->
 #### Scene Partner
@@ -16754,7 +16754,7 @@ Whenever you take the first turn in a combat encounter, you can use a main actio
 
 As a respite activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.
 
-The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional hero tokens (Chapter 1: The Basics). These hero tokens disappear at the end of the encounter.
+The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional hero tokens (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). These hero tokens disappear at the end of the encounter.
 
 <!-- @type: feature -->
 ##### My Reputation Precedes Me
@@ -16766,7 +16766,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: Perks.
+You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 #### 2nd-Level Class Act Ability
 
@@ -16904,7 +16904,7 @@ You have the following performance abilities, which are usable with your Routine
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: Tests).
+> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability -->
 > ###### "Never-Ending Hero"
@@ -17016,7 +17016,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Skill
 
-You gain one skill of your choice. See Skills in Chapter 9: Tests.
+You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 <!-- @type: feature -->
 #### Zeitgeist
@@ -17611,7 +17611,7 @@ The knight in shining armor. The warrior priest. The sniper. Censors, furies, sh
 
 ### Changing Your Kit
 
-Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a respite activity (see Respite in Chapter 1: The Basics).
+Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
 
 ### Kit Equipment
 
@@ -17727,13 +17727,13 @@ A distance bonus doesn't increase the size of any ability's area of effect.
 
 #### Disengage Bonus
 
-A kit that has a disengage bonus increases the number of squares you can shift when you take the Disengage move action (see Chapter 10: Combat).
+A kit that has a disengage bonus increases the number of squares you can shift when you take the Disengage move action (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 ### Kit Signature Ability
 
 Each kit grants a signature ability, **whose distance and damage already includes the kit's bonuses**. For instance, the Guisarmier kit's Forward Thrust, Backward Smash ability has a distance of melee 2 and deals 4, 7, or 9 damage depending on the tier outcome, with that distance and damage including the bonuses from the kit.
 
-For details on the ability format, see Abilities in Chapter 5: Classes.
+For details on the ability format, see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes).
 
 ### Kits A to Z
 
@@ -18587,7 +18587,7 @@ You are granted one perk from your career and can choose other perks from your c
 
 ### Perk Types
 
-Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see Skills in Chapter 9: Tests), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to supernatural power.
+Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to supernatural power.
 
 **Crafting perks** improve your talent for crafting materials, and let you become an expert in the things you create.
 
@@ -18823,7 +18823,7 @@ If the Director doesn't have an answer to the question you ask, or doesn't want 
 <!-- @type: perk -->
 #### Linguist
 
-You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost (see Chapter 12: Downtime Projects).
+You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: perk -->
 #### Polymath
@@ -19145,7 +19145,7 @@ You somehow obtained the notebook of a brilliant but eccentric member of your cl
 
 You have no memory of your past before the... incident. Hopefully, you'll regain your memory soon and find out what the incident was. In the meantime, you need friends so you won't be alone when your past catches up to you.
 
-**Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: Rewards) that might have some connection with your former life.
+**Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
 
 **Drawback:** You take a bane on any test made to recall lore.
 
@@ -19174,7 +19174,7 @@ You used to be a villain. You're (mostly) reformed now, but in desperate moments
 
 A powerful artifact has bonded to you, though you don't know whether you're destined to wield the artifact or to destroy it. You're not powerful enough to use it at the moment, although you might be someday. For now, though, the artifact has no effect beyond getting you in trouble.
 
-**Benefit:** Choose an artifact (see Treasures in Chapter 13: Rewards). The first time in an encounter that you are reduced to 0 Stamina against your will, the artifact appears on your person. It disappears at the end of your next turn, when you benefit from one of its properties, or when you have more than 0 Stamina, whichever comes first.
+**Benefit:** Choose an artifact (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). The first time in an encounter that you are reduced to 0 Stamina against your will, the artifact appears on your person. It disappears at the end of your next turn, when you benefit from one of its properties, or when you have more than 0 Stamina, whichever comes first.
 
 **Drawback:** Each time the artifact appears, you lose a Recovery. If you have no Recoveries remaining, you take 1d10 damage instead, which can't be reduced in any way.
 
@@ -19192,7 +19192,7 @@ The most important person to you—perhaps a family member, mentor, or lover—w
 
 Your parents made a deal, and as part of that deal, you're supposed to marry someone—or something—you didn't choose. But no one is going to tell you what to do! They'll all be sorry to find that you've run away to become a mighty adventurer.
 
-**Benefit:** You escaped with a dowry present—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: Rewards).
+**Benefit:** You escaped with a dowry present—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
 **Drawback:** All those who learn of you running out on your commitment think less of you and spread nasty rumors about you. Your Renown can't ever be more than your level − 1.
 
@@ -19219,7 +19219,7 @@ Perhaps the stars marked you out at birth, or maybe your name appears in an anci
 
 Ever since you were a kid, you've been obsessed with a certain topic. During your travels, you spend your free time gleaning all the information you can on that obsession. You might not be the world's leading expert quite yet, but people should certainly trust your opinion on the topic.
 
-**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See Chapter 12: Downtime Projects.)
+**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
 
 **Drawback:** You can't imagine ever being wrong on the topic of your obsession. Whenever you make a test to recall lore using your chosen skill, the Director makes the test in secret. Instead of informing you whether you're right or wrong, they provide you with correct information if you succeeded and false information if you failed.
 
@@ -19336,7 +19336,7 @@ As a child, you met a creature who turns people to stone, such as a medusa. You 
 
 When you were young, you found or were given a magic weapon. Since then, you've carried it always at your side, letting it inspire you to lead the life of a hero—even though the weapon is cursed.
 
-**Benefit:** You have a leveled weapon of your choice (see Treasures in Chapter 13: Rewards).
+**Benefit:** You have a leveled weapon of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
 **Drawback:** You have damage weakness 2.
 
@@ -19354,7 +19354,7 @@ You're a disgraced member of a powerful family or guild, having been turned out 
 
 You sometimes have strange dreams of a raging inferno... a gleaming pile of treasure... of spreading your wings and taking flight. You haven't told anyone about these dreams, except for your one strange relative who seems to know more than they're letting on.
 
-**Benefit:** Choose 2 ancestry points' worth of purchased dragon knight traits (see Chapter 3: Ancestries). You can use these traits whenever you have 5 or more Victories.
+**Benefit:** Choose 2 ancestry points' worth of purchased dragon knight traits (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)). You can use these traits whenever you have 5 or more Victories.
 
 **Drawback:** Whenever you are reduced to 0 Stamina, you explode with heat and fire. You and each creature within 5 squares of you takes fire damage equal to twice your level. You can't reduce this damage for yourself in any way.
 
@@ -19381,7 +19381,7 @@ You have contracted a rare magical disease called evanesceria. From time to time
 
 Whether you're a convicted criminal, a noble stripped of their title, or a person who made one too many enemies, you've been cast forth from your homeland, never to return. At least not until you're strong enough to set things right.
 
-**Benefit:** You know one extant language of your choice (see Languages in Orden in Chapter 4: Background).
+**Benefit:** You know one extant language of your choice (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 **Drawback:** If any NPC from your homeland recognizes you, whether in your homeland or elsewhere, they attempt to harm you at the Director's discretion.
 
@@ -19498,7 +19498,7 @@ You used to be a con artist, but those days are pretty much behind you. Being a 
 
 Once when you were a child, your settlement was in danger and you called out to the earth for aid. That call was answered by a summoning of protective dirt-and-stone walls, and ever since then, you've felt the earth's presence as a friend and protector.
 
-**Benefit:** You have the 1st-level Elementalist Specialization feature Motivate Earth (see Chapter 5: Classes). If you also gain this feature in any other way, the Motivate Earth ability becomes a ranged ability for you with a distance of ranged 5.
+**Benefit:** You have the 1st-level Elementalist Specialization feature Motivate Earth (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If you also gain this feature in any other way, the Motivate Earth ability becomes a ranged ability for you with a distance of ranged 5.
 
 **Drawback:** You attract lightning. Whenever any creature within 2 squares of you takes lightning damage, you take 5 lightning damage that can't be reduced in any way.
 
@@ -19514,7 +19514,7 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 <!-- @type: complication -->
 #### Hawk Rider
 
-You travel with a giant hawk who you stole from the Hawklords (see Vasloria in Chapter 1: The Basics). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
+You travel with a giant hawk who you stole from the Hawklords (see Vasloria in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
 
 **Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the Humans entry in *Draw Steel: Monsters*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full Stamina as a respite activity.
 
@@ -19567,7 +19567,7 @@ A deal you made went south, or you got involved with the wrong people. Now you o
 
 You made a deal (perhaps unknowingly) with an archdevil that has tied you to that fiend's service. When you first learned of this deal, you were taken to the Seven Cities of Hell, where some of the timescape's best minds taught you the ways of battle. The archdevil allows you to use these gifts as you will... until they require a favor from you.
 
-**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't surprised, your side determines who goes first if the d10 roll is a 4 or higher (see Combat Round in Chapter 10: Combat).
+**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't surprised, your side determines who goes first if the d10 roll is a 4 or higher (see Combat Round in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 **Drawback:** The archdevil occasionally asks you to defeat enemies on their behalf. If you refuse, your fiendish patron sends devils after you and those you care about.
 
@@ -19589,7 +19589,7 @@ You made a deal with a devil. Not a very good deal, because it wasn't a very goo
 
 You studied in an academy or other educational institution. Your training was thorough and your reading list was wide-ranging. But when you left school, you discovered there were serious gaps in your education. Maybe some of those books were a little out of date.
 
-**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see Languages in Orden in Chapter 4: Background).
+**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 **Drawback:** The Director chooses one of the skills you have from this complication. You lose that skill and can't ever learn it again. Additionally, you take a bane on any test to which that skill would apply.
 
@@ -19762,7 +19762,7 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a Presence test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see Renown in Chapter 13: Rewards), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a Presence test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
 
 **Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your Renown or other means) leaves you, their faith in you shaken. If you have no followers, your Renown is reduced by 1. If you need to reduce your Renown and it's already 0, you gain no benefits from the respite during which you make the conversion attempt.
 
@@ -19825,7 +19825,7 @@ You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes,
 
 **Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an edge on tests that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're supernaturally compelled to be.
 
-**Drawback:** You don't have a culture (see Culture in Chapter 4: Background), though you can speak Caelian.
+**Drawback:** You don't have a culture (see Culture in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you can speak Caelian.
 
 <!-- @type: complication -->
 #### Refugee
@@ -19923,7 +19923,7 @@ Impoverished or on the run, you spent your formative years living in the sewers 
 <!-- @type: complication -->
 #### Shadow Born
 
-You were born in the dusk land ruled by the Queen of Shadows, and its darkness has seeped into your bones. (See The Myriad Worlds of the Timescape in Chapter 1: The Basics.)
+You were born in the dusk land ruled by the Queen of Shadows, and its darkness has seeped into your bones. (See The Myriad Worlds of the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 **Benefit:** Whenever you start your turn with concealment, you gain 1 surge.
 
@@ -19941,7 +19941,7 @@ A supernatural spirit occupies your body, with each of you controlling your body
 
 You're the heir to a powerful supernatural treasure that has been in your family for generations. One problem, though: that treasure is broken. Some ancestor of yours sundered it while saving the world. Or maybe they tripped and smashed it on a rock. Either way, it's your job to fix it.
 
-**Benefit:** You know one language of your choice. Additionally, you have one leveled treasure of your choice (see Treasures in Chapter 13: Rewards).
+**Benefit:** You know one language of your choice. Additionally, you have one leveled treasure of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
 **Drawback:** The chosen leveled treasure is broken and completely inoperative. Repairing the treasure requires that you complete the Craft Treasure project for it. The project goal is half of what it would cost to create such an item, and you already have the project source you need. You must seek out any item prerequisite.
 
@@ -19997,7 +19997,7 @@ An evil fairy cursed you, leaving you with a blank visage instead of a face. Alt
 
 Your siblings each inherited money or land, but you received a strange, seemingly useless trinket—along with the advice that maybe you weren't cut out for an ordinary, peaceful life.
 
-**Benefit:** You have a somewhat inoperative 2nd-echelon trinket of the Director's choice (see Treasures in Chapter 13: Rewards). This trinket functions only while the total of your level plus your Victories is 5 or higher. You don't learn what the trinket's powers are until the first time it becomes operative.
+**Benefit:** You have a somewhat inoperative 2nd-echelon trinket of the Director's choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This trinket functions only while the total of your level plus your Victories is 5 or higher. You don't learn what the trinket's powers are until the first time it becomes operative.
 
 **Drawback:** With no other inheritance, you accumulated debts. The first time your Wealth exceeds 1, you lose 1 Wealth.
 
@@ -20335,7 +20335,7 @@ Common rewards accompanying success on a test include the following:
 - Impressing or ingratiating yourself with someone who grants you a small favor
 - Noticing a hidden danger well before it strikes, giving you time to avoid or prepare for it
 
-In lieu of other rewards, the Director can also decide that a hero who succeeds on a test with a reward earns the players a hero token (see Hero Tokens in Chapter 1: The Basics).
+In lieu of other rewards, the Director can also decide that a hero who succeeds on a test with a reward earns the players a hero token (see Hero Tokens in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
 
 > **Optional Rule: Pitching Consequences and Rewards**
 >
@@ -20673,7 +20673,7 @@ Hiding and sneaking are important tools for heroes and their foes. You might wan
 
 #### Hiding
 
-To hide from a creature, you must have cover or concealment from that creature (see Chapter 10: Combat), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
+To hide from a creature, you must have cover or concealment from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
 
 When you use the Hide maneuver to hide during combat while you have cover or concealment from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the Hide skill to determine how well hidden you are.
 
@@ -20995,7 +20995,7 @@ At the Director's discretion, you can be forced into the same space as another c
 
 #### Can't Exceed Speed
 
-A single move or other effect can never allow a creature to move more squares than their speed, unless the effect states otherwise. For example, a creature with speed 5 might have that speed reduced to 2 by the slowed condition (see Conditions in Chapter 5: Classes). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current speed.
+A single move or other effect can never allow a creature to move more squares than their speed, unless the effect states otherwise. For example, a creature with speed 5 might have that speed reduced to 2 by the slowed condition (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current speed.
 
 #### Can't Cut Corners
 
@@ -21100,7 +21100,7 @@ You can't jump farther or higher than the distance of the effect that allows you
 
 ##### Crawl
 
-If you are prone (see Conditions in Chapter 5: Classes), you can remain prone and crawl on the ground. Doing so costs you 1 additional square of movement for every square you crawl. If you intentionally want to crawl, you can fall prone as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
+If you are prone (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)), you can remain prone and crawl on the ground. Doing so costs you 1 additional square of movement for every square you crawl. If you intentionally want to crawl, you can fall prone as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
 
 ##### Fly
 
@@ -21264,7 +21264,7 @@ A creature who uses the Aid Attack maneuver chooses an enemy adjacent to them. T
 
 #### Catch Breath
 
-A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: The Basics.)
+A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 A creature who is dying (see Dying and Death in Stamina below) can't use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.
 
@@ -21334,13 +21334,13 @@ A creature wanting to push an adjacent creature away from them can attempt to sh
 
 #### Make or Assist a Test
 
-Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door's lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: Tests).
+Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door's lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a Reason test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.
 
 #### Search for Hidden Creatures
 
-The Search for Hidden Creatures maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: Tests).
+The Search for Hidden Creatures maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 #### Stand Up
 
@@ -21352,7 +21352,7 @@ Unless otherwise noted in its description, a creature can activate a consumable 
 
 ### Main Actions
 
-When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see Abilities in Chapter 5: Classes). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
+When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
 
 You can also use your main action to help another creature regain Stamina, charge into battle, defend yourself, or make a free strike.
 
@@ -21366,7 +21366,7 @@ A creature can't move through difficult terrain or shift when they charge. They 
 
 #### Defend
 
-When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is taunted by them (see Conditions in Chapter 5: Classes).
+When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is taunted by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 #### Free Strike
 
@@ -21395,7 +21395,7 @@ If a creature has a bane or double bane on the power roll against the enemy, the
 
 #### Standard Free Strikes
 
-Every hero has two standard free strike abilities available to them. Your class might give you additional free strike options, and your kit can improve the standard options (see Chapter 6: Kits).
+Every hero has two standard free strike abilities available to them. Your class might give you additional free strike options, and your kit can improve the standard options (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the damage type of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a free strike.
 
@@ -21439,7 +21439,7 @@ When you have line of effect to a creature or object but that target has at leas
 
 ### Concealment
 
-Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see Hide  and Sneak in Chapter 9: Tests). However, strikes against such targets take a bane.
+Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, strikes against such targets take a bane.
 
 #### Invisible Creatures
 
@@ -21950,7 +21950,7 @@ If an argument uses one of the NPC's pitfalls, it automatically fails and the NP
 
 Renown determines whether a hero's fame (or infamy) has any sway over an NPC. A hero's reputation can make a negotiation easier, provided that hero knows how to capitalize on it.
 
-During a negotiation, an NPC has an **Impression score** that determines the amount of Renown needed to influence them with fame alone (see Renown in Chapter 13: Rewards). This score matters only if the NPC knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's Renown. (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the NPC does know of the hero and has an Impression score that is equal to or lower than the hero's Renown, the NPC can be influenced by that hero's reputation.
+During a negotiation, an NPC has an **Impression score** that determines the amount of Renown needed to influence them with fame alone (see Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This score matters only if the NPC knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's Renown. (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the NPC does know of the hero and has an Impression score that is equal to or lower than the hero's Renown, the NPC can be influenced by that hero's reputation.
 
 The higher an NPC's Impression score, the harder they are to influence with Renown. A small-time brigand has a lower Impression score than a monarch who meets with powerful and famous people all the time. The NPCs and Impression table provides examples of different archetypical NPC Impression scores. If a creature has a level, then their Impression score equals their level unless the Director deems otherwise.
 
@@ -22210,7 +22210,7 @@ To start a downtime project, you must have access to specific lore detailing how
 
 Some project sources are relatively easy to find. Building a castle doesn't require tomes filled with ancient lore, but it's also not something every stonemason knows how to do. However, the location of the tomb of Ashrya, the mummified protector of one hundred slumbering sorcerer-sovereigns, might exist only in a single tome that requires an accompanying adventure to unearth.
 
-The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in Chapter 4: Background), though you might be able to find a version of a source in other languages as well.
+The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you might be able to find a version of a source in other languages as well.
 
 Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a respite activity to be your project source whenever you make a project roll related to the project.
 
@@ -22220,7 +22220,7 @@ If you need a project source for a particular project, ask your Director if the 
 
 ### Project Roll
 
-As a respite activity (see Respite in Chapter 1: The Basics), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
+As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
 
 When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same respite activity.
 
@@ -22234,7 +22234,7 @@ Since project rolls don't use success tiers, they don't follow the usual rules f
 
 #### Skills and Project Rolls
 
-You can apply skills from either the crafting or lore skill groups to project rolls that directly relate to a downtime project (see Skills in Chapter 9: Tests). For example, you could use the Tailoring skill for project rolls related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a project roll must be directly related to the project.
+You can apply skills from either the crafting or lore skill groups to project rolls that directly relate to a downtime project (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). For example, you could use the Tailoring skill for project rolls related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a project roll must be directly related to the project.
 
 #### Language and Project Rolls
 
@@ -22625,7 +22625,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can shift up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver (see Maneuvers in Chapter 10: Combat).
+**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can shift up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 **Celestine:** As a main action, you conjure up to three stars, which hover in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have line of effect to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
@@ -23294,7 +23294,7 @@ If two treasures give a creature a bonus to their Stamina or a bonus to the roll
 
 Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them supernatural. You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
 
-Consumables are organized by echelon to make life easy for the Director handing them out (see Echelons of Play in Chapter 1: The Basics). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their echelon and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd echelon. In some cases, the Director might decide to award consumables of an echelon higher than the heroes' echelon, but such a choice means giving the heroes more power than the encounter-building guidelines in *Draw Steel: Monsters* accounts for.
+Consumables are organized by echelon to make life easy for the Director handing them out (see Echelons of Play in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their echelon and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd echelon. In some cases, the Director might decide to award consumables of an echelon higher than the heroes' echelon, but such a choice means giving the heroes more power than the encounter-building guidelines in *Draw Steel: Monsters* accounts for.
 
 Your character can carry any number of consumables at a time.
 
@@ -25459,7 +25459,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 *I said you had twenty-four hours to leave town. That was... what, about twenty-four hours ago?*
 
-**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see Orden and the Timescape in Chapter 1: The Basics), or you are deputized to act for the local authorities.
+**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see Orden and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), or you are deputized to act for the local authorities.
 
 **Effect:** Choose one of the following benefits:
 
@@ -25766,9 +25766,9 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Healing Gift:* You can use the 1st-level Conduit feature Healing Grace as if you had spent 1 piety (see Chapter 5: Classes). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Healing Gift:* You can use the 1st-level Conduit feature Healing Grace as if you had spent 1 piety (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Last-Ditch Prayer:* As a free maneuver, you recite a prayer for help, gaining a pool of 2d10 of the Heroic Resource granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
-- *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: Gods and Religion. From that god or saint's domains, choose a Conduit 1st-level domain feature (see Chapter 5: Classes).
+- *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or saint's domains, choose a Conduit 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: title -->
 #### Heist Hero
@@ -25850,7 +25850,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Boffin:* You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver (see below).
-- *Caustic Alchemy:* You have your choice of the 1st-level shadow college features Coat the Blade or Smoke Bomb (see Chapter 5: Classes). When you use that feature, you can't spend insight unless you have the Insight class feature.
+- *Caustic Alchemy:* You have your choice of the 1st-level shadow college features Coat the Blade or Smoke Bomb (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). When you use that feature, you can't spend insight unless you have the Insight class feature.
 - *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
 
 ##### Boffin Properties
@@ -26247,11 +26247,11 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 As you accomplish heroic deeds, your fame allows you to influence NPCs and attract followers. Your infamy among your enemies also grows. Every hero has a Renown score that represents how they can use their reputation to influence others. The higher the score, the greater your impact with those who know of your legend.
 
-At the start of character creation, your Renown is 0. Some careers can increase your initial Renown score (see Chapter 4: Background).
+At the start of character creation, your Renown is 0. Some careers can increase your initial Renown score (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 ### Increasing Renown
 
-Some perks (see Chapter 7), downtime projects (Chapter 12), and titles and treasures (part of Chapter 13: Rewards) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
+Some perks (see Chapter 7), downtime projects (Chapter 12), and titles and treasures (part of Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
 
 In most campaigns, the Director sets the characters up to earn 1 Renown per level, but some campaigns will feature heroes who are more or less famous (or infamous) than that.
 
@@ -26286,9 +26286,9 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 ##### Artisan
 
-Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: Downtime Projects). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
+Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your stronghold or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: Tests). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
+When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
 
 ##### Retainer
 
@@ -26314,7 +26314,7 @@ Treasures such as magic swords, psionic crowns, and even healing potions are rar
 
 ### Earning Wealth
 
-Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see Chapter 4: Background). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a monarch as a reward for a job well done.
+Each hero starts with a Wealth score of 1 that can be improved by their choice of career during character creation (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Your hero earns Wealth whenever you find and keep a massive amount of monetary treasure, such as a hoard of coins and gems from a dragon's lair, or several unique and valuable paintings gifted by a monarch as a reward for a job well done.
 
 In general, a hero earns 1 wealth every second level of play. The Director can increase this rate if they wish.
 
@@ -27364,7 +27364,7 @@ Here's an example of an opening overview that Matthew Colville created for his g
 
 *The rebellion against Ajax begins here. Surely the wards of the emperor contain the power to stop the Overlord. The heroes must travel across the world and brave many dangers to find and unlock the last emperor's wards. Whoever does will wield the lost empire's power.*
 
-As you can see, this opening overview introduces the setting—Vasloria (see Orden and the Timescape in Chapter 1: The Basics). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
+As you can see, this opening overview introduces the setting—Vasloria (see Orden and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
 
 > **Personal Problems at the Table**
 >
@@ -27800,7 +27800,7 @@ If a test is a **success**, the hero does what they set out to do! You can even 
 
 If the test is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same test an automatic success, grant an edge on a future test for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby NPC to come forth and offer aid, or earn the group a hero token. A reward on a test is yours to choose.
 
-Sample consequences and rewards for tests are detailed in Chapter 9: Tests.
+Sample consequences and rewards for tests are detailed in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 #### Creating and Running Hazards
 
@@ -28278,7 +28278,7 @@ You can use montage tests to play out chases, escapes, investigations, wildernes
 
 When you prepare a montage test, you'll want to write down some key information.
 
-First, make a list of potential challenges the heroes can face during the montage test. This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the montage test, but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out hero tokens as a default consequence and reward (see Test Outcomes in Chapter 9: Tests).
+First, make a list of potential challenges the heroes can face during the montage test. This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the montage test, but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out hero tokens as a default consequence and reward (see Test Outcomes in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 You'll then need to create the three outcomes of the montage: total success, partial success, and total failure. With a total success, the heroes should accomplish whatever they set out to do. With a partial success, they should accomplish their goal at a cost, create a new problem for themselves after doing what they set out to do, or not quite accomplish their full goal. With a total failure, the characters fail to do whatever they set out to do, but this result should not grind the story to a halt. Maybe they lose track of the fleeing lackeys they were pursuing, but they know they can now raid a mage's tower to find that information. Even if failure costs the characters dearly, they should still have options for continuing the adventure.
 
@@ -28530,7 +28530,7 @@ That said, you can make it easier to craft treasures and other items by changing
 
 ### Granting Rewards
 
-You should have as much fun giving out treasure, Renown, wealth, and titles to the characters as the players have earning those rewards (see Chapter 13: Rewards). But what's the right amount of treasure to give out without turning the heroes into total badasses who can simply cut down every dragon they meet? How often do the rules of the game expect a hero to earn Renown? What about titles? This section has answers for you!
+You should have as much fun giving out treasure, Renown, wealth, and titles to the characters as the players have earning those rewards (see Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). But what's the right amount of treasure to give out without turning the heroes into total badasses who can simply cut down every dragon they meet? How often do the rules of the game expect a hero to earn Renown? What about titles? This section has answers for you!
 
 #### Granting Treasures
 
