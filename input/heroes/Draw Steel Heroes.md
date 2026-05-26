@@ -4070,23 +4070,23 @@ While all your character creation decisions bear narrative weight, none influenc
 
 Your class provides you with many of your features, most of your abilities—your most potent combat moves and noncombat options and a Heroic Resource that fuels many of those abilities. This book presents nine classes to choose from.
 
-**Censor:** A censor is a trained warrior devoted to a saint or god. They hunt down the forces of evil using melee weapons and magic granted to them by their divine patron, specializing in confronting the wicked and locking down single enemies during combat.
+**[Censor](scc:mcdm.heroes.v1/class/censor):** A [censor](scc:mcdm.heroes.v1/class/censor) is a trained warrior devoted to a saint or god. They hunt down the forces of evil using melee weapons and magic granted to them by their divine patron, specializing in confronting the wicked and locking down single enemies during combat.
 
-**Conduit:** A conduit is the devoted priest of a saint or god. They wield divine magic that smites enemies with holy energy and supports their allies, and are renowned for their healing abilities.
+**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A [conduit](scc:mcdm.heroes.v1/class/conduit) is the devoted priest of a saint or god. They wield divine magic that smites enemies with holy energy and supports their allies, and are renowned for their healing abilities.
 
-**Elementalist:** An elementalist studies the elemental forces of the timescape and controls earth, fire, the void, and more with magic. Many of their abilities cover wide areas of the battlefield, and they have a versatile array of tricks that allow them to both control combat and manipulate the environment around them when the fight is done.
+**[Elementalist](scc:mcdm.heroes.v1/class/elementalist):** An [elementalist](scc:mcdm.heroes.v1/class/elementalist) studies the elemental forces of the timescape and controls earth, fire, the void, and more with magic. Many of their abilities cover wide areas of the battlefield, and they have a versatile array of tricks that allow them to both control combat and manipulate the environment around them when the fight is done.
 
-**Fury:** Coursing with the ferocity of the Primordial Chaos in their veins, a fury is a mobile warrior who gets up close and personal with enemies to dish out lots of damage. Leaping around the battlefield felling foes and breaking down walls is where the fury lives.
+**[Fury](scc:mcdm.heroes.v1/class/fury):** Coursing with the ferocity of the Primordial Chaos in their veins, a [fury](scc:mcdm.heroes.v1/class/fury) is a mobile warrior who gets up close and personal with enemies to dish out lots of damage. Leaping around the battlefield felling foes and breaking down walls is where the fury lives.
 
-**Null:** Disciplined and calm, the null is an unarmed warrior who manifests an aura that quells the supernatural and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
+**[Null](scc:mcdm.heroes.v1/class/null):** Disciplined and calm, the [null](scc:mcdm.heroes.v1/class/null) is an unarmed warrior who manifests an aura that quells the supernatural and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
 
-**Shadow:** Stalking from the darkness, the shadow is an expert assassin and thief who fights equally well in melee and at range as they get the drop on their foes. They utilize magic to help them stay mobile on the battlefield and sneak up on their prey.
+**[Shadow](scc:mcdm.heroes.v1/class/shadow):** Stalking from the darkness, the [shadow](scc:mcdm.heroes.v1/class/shadow) is an expert assassin and thief who fights equally well in melee and at range as they get the drop on their foes. They utilize magic to help them stay mobile on the battlefield and sneak up on their prey.
 
-**Tactician:** A brilliant strategist and weapons master, the tactician excels at granting allies more movement and actions on the battlefield. They also support allies outside of combat, always inspiring their friends to greatness.
+**[Tactician](scc:mcdm.heroes.v1/class/tactician):** A brilliant strategist and weapons master, the [tactician](scc:mcdm.heroes.v1/class/tactician) excels at granting allies more movement and actions on the battlefield. They also support allies outside of combat, always inspiring their friends to greatness.
 
-**Talent:** A talent is the master of psionics, manifesting powers that manipulate objects, minds, and time. These heroes can reach far into themselves to use abilities even when they don't have their Heroic Resource to spare—if they're willing to face the cost.
+**[Talent](scc:mcdm.heroes.v1/class/talent):** A [talent](scc:mcdm.heroes.v1/class/talent) is the master of psionics, manifesting powers that manipulate objects, minds, and time. These heroes can reach far into themselves to use abilities even when they don't have their Heroic Resource to spare—if they're willing to face the cost.
 
-**Troubadour:** A troubadour inspires their allies with storytelling and swordplay that is as much an art as it is an act of war. Their quips, songs, poems, and epic tales produce actual magic that harms foes and bolsters allies. They can even use their magic to tweak the campaign's story in real time to better suit their needs.
+**[Troubadour](scc:mcdm.heroes.v1/class/troubadour):** A [troubadour](scc:mcdm.heroes.v1/class/troubadour) inspires their allies with storytelling and swordplay that is as much an art as it is an act of war. Their quips, songs, poems, and epic tales produce actual magic that harms foes and bolsters allies. They can even use their magic to tweak the campaign's story in real time to better suit their needs.
 
 ### Subclasses
 
