@@ -74,24 +74,24 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 
 | Chapter | Lines | Strip Links | Classes | Ancestries | Careers | Kits | Perks | Complications | Titles | Treasures | Chapters |
 |---------|-------|------------|---------|-----------|---------|------|-------|--------------|--------|-----------|----------|
-| Introduction | 7-589 | done | done (27) | done (21) | - | - | - | - | - | - | done (3) |
-| The Basics | 590-1055 | done | done (16) | done (32) | - | - | - | - | - | - | done (11) |
+| Introduction | 7-589 | done | done (28) | done (22) | - | - | - | - | - | - | done (3) |
+| The Basics | 590-1055 | done | done (17) | done (36) | - | - | - | - | - | - | done (11) |
 | Making a Hero | 1056-1263 | done | done (12) | done (18) | - | - | - | - | - | - | done (15) |
-| Ancestries | 1264-3199 | done | done (10) | done (93) | - | - | - | - | - | - | done (9) |
-| Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
-| Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
-| Careers | 3494-4065 | done | done (1) | - | - | - | - | - | - | - | done (5) |
-| Classes | 4066-17606 | done | done (47) | - | - | - | - | - | - | - | done (56) |
-| Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | done (4) |
+| Ancestries | 1264-3199 | done | done (22) | done (324) | - | - | - | - | - | - | done (11) |
+| Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - |
+| Cultures | 3207-3493 | done | - | done (47) | - | - | - | - | - | - | done (2) |
+| Careers | 3494-4065 | done | done (4) | - | - | - | - | - | - | - | done (5) |
+| Classes | 4066-17606 | done | done (316) | done (4) | - | - | - | - | - | - | done (67) |
+| Kits | 17607-18580 | done | done (5) | - | - | - | - | - | - | - | done (4) |
 | Perks | 18581-18946 | done | - | - | - | - | - | - | - | - | done (2) |
-| Complications | 18947-20167 | done | - | - | - | - | - | - | - | - | done (18) |
-| Tests | 20168-20408 | done | - | - | - | - | - | - | - | - | done (2) |
-| Skills | 20409-20856 | done | - | - | - | - | - | - | - | - | done (3) |
-| Combat | 20857-21636 | done | - | - | - | - | - | - | - | - | done (13) |
-| Negotiation | 21637-22187 | done | - | - | - | - | - | - | - | - | done (2) |
-| Downtime Projects | 22188-23215 | done | - | - | - | - | - | - | - | - | done (5) |
-| Rewards | 23216-23220 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
-| Treasures | 23221-25258 | done | - | - | - | - | - | - | - | - | done (9) |
-| Titles | 25259-26339 | done | - | - | - | - | - | - | - | - | done (16) |
-| Gods and Religion | 26340-27294 | done | done (8) | done (12) | - | - | - | - | - | - | - |
-| For the Director | 27295-28721 | done | - | - | - | - | - | - | - | - | done (14) |
+| Complications | 18947-20167 | done | done (12) | done (8) | - | - | - | - | - | - | done (18) |
+| Tests | 20168-20408 | done | - | done (1) | - | - | - | - | - | - | done (2) |
+| Skills | 20409-20856 | done | done (12) | done (3) | - | - | - | - | - | - | done (3) |
+| Combat | 20857-21636 | done | done (11) | done (9) | - | - | - | - | - | - | done (13) |
+| Negotiation | 21637-22187 | done | done (4) | done (7) | - | - | - | - | - | - | done (2) |
+| Downtime Projects | 22188-23215 | done | done (12) | done (14) | - | - | - | - | - | - | done (5) |
+| Rewards | 23216-23220 | done | - | - | - | - | - | - | - | - | - |
+| Treasures | 23221-25258 | done | done (5) | done (8) | - | - | - | - | - | - | done (9) |
+| Titles | 25259-26339 | done | done (12) | done (21) | - | - | - | - | - | - | done (16) |
+| Gods and Religion | 26340-27294 | done | done (48) | done (123) | - | - | - | - | - | - | - |
+| For the Director | 27295-28721 | done | done (11) | done (8) | - | - | - | - | - | - | done (14) |
