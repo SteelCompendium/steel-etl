@@ -64,8 +64,10 @@ func TestLinkedGenerator_WriteSection(t *testing.T) {
 	if strings.Contains(out, "scc:mcdm.heroes.v1") {
 		t.Error("expected scc: links to be resolved")
 	}
-	if !strings.Contains(out, "feature/ability/fury/level-1/gouge.md") {
-		t.Error("expected resolved path in output")
+	// From class/fury.md, the relative path to feature/ability/fury/level-1/gouge.md
+	// should be ../feature/ability/fury/level-1/gouge.md
+	if !strings.Contains(out, "../feature/ability/fury/level-1/gouge.md") {
+		t.Errorf("expected relative resolved path in output, got:\n%s", out)
 	}
 }
 

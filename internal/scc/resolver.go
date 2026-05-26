@@ -3,6 +3,7 @@ package scc
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 )
@@ -77,13 +78,12 @@ func (r *Resolver) ResolveLinks(content string, relativeTo string, mode LinkMode
 			seen[resolvedCode] = true
 		}
 
-		return fmt.Sprintf("[%s](%s)", displayText, sccToRelPath(resolvedCode, r.ext))
+		return fmt.Sprintf("[%s](%s)", displayText, sccToRelPathFrom(resolvedCode, relativeTo, r.ext))
 	})
 }
 
-// sccToRelPath converts an SCC code to a relative path from the output root.
-// This matches output.SCCToFilePath but avoids a circular import.
-func sccToRelPath(sccCode string, ext string) string {
+// sccToRootPath converts an SCC code to a path relative to the output root.
+func sccToRootPath(sccCode string, ext string) string {
 	parts := strings.Split(sccCode, "/")
 	if len(parts) < 2 {
 		return sccCode
@@ -100,4 +100,25 @@ func sccToRelPath(sccCode string, ext string) string {
 
 	pathParts[len(pathParts)-1] += ext
 	return strings.Join(pathParts, "/")
+}
+
+// sccToRelPathFrom computes a relative path from the file at fromSCC to the file at toSCC.
+// MkDocs resolves markdown links relative to the file that contains them, so paths must be
+// relative to the current file's directory, not the output root.
+func sccToRelPathFrom(toSCC string, fromSCC string, ext string) string {
+	targetPath := sccToRootPath(toSCC, ext)
+
+	if fromSCC == "" {
+		return targetPath
+	}
+
+	fromPath := sccToRootPath(fromSCC, ext)
+	fromDir := filepath.Dir(fromPath)
+
+	rel, err := filepath.Rel(fromDir, targetPath)
+	if err != nil {
+		return targetPath
+	}
+
+	return filepath.ToSlash(rel)
 }

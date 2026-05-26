@@ -94,7 +94,7 @@ func contains(s, substr string) bool {
 	return false
 }
 
-func TestSccToRelPath_EdgeCases(t *testing.T) {
+func TestSccToRootPath_EdgeCases(t *testing.T) {
 	tests := []struct {
 		name string
 		scc  string
@@ -109,9 +109,33 @@ func TestSccToRelPath_EdgeCases(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := sccToRelPath(tt.scc, tt.ext)
+			got := sccToRootPath(tt.scc, tt.ext)
 			if got != tt.want {
-				t.Errorf("sccToRelPath(%q, %q) = %q, want %q", tt.scc, tt.ext, got, tt.want)
+				t.Errorf("sccToRootPath(%q, %q) = %q, want %q", tt.scc, tt.ext, got, tt.want)
+			}
+		})
+	}
+}
+
+func TestSccToRelPathFrom(t *testing.T) {
+	tests := []struct {
+		name string
+		to   string
+		from string
+		ext  string
+		want string
+	}{
+		{"same directory", "source/class/censor", "source/class/fury", ".md", "censor.md"},
+		{"sibling directories", "source/condition/dazed", "source/class/fury", ".md", "../condition/dazed.md"},
+		{"deep to shallow", "source/class/fury", "source/feature.ability.fury.level-1/gouge", ".md", "../../../../class/fury.md"},
+		{"empty from falls back to root", "source/class/fury", "", ".md", "class/fury.md"},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := sccToRelPathFrom(tt.to, tt.from, tt.ext)
+			if got != tt.want {
+				t.Errorf("sccToRelPathFrom(%q, %q, %q) = %q, want %q", tt.to, tt.from, tt.ext, got, tt.want)
 			}
 		})
 	}
