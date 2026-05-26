@@ -4284,7 +4284,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 
 #### Ability Roll
 
-If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (Chapter 1: The Basics talks about power rolls.)
+If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about power rolls.)
 
 Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) Brutal Slam ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
 
@@ -17695,7 +17695,7 @@ If you find a piece of equipment you really want to use that isn't part of your 
 
 ### Kit Bonuses and Traits
 
-A kit can grant a bonus to your Stamina, speed, and stability, as well as the damage and distance of your weapon abilities, including your free strikes. (Abilities in Chapter 5: Classes has information on abilities, ability keywords, and more.)
+A kit can grant a bonus to your Stamina, speed, and stability, as well as the damage and distance of your weapon abilities, including your free strikes. (Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) has information on abilities, ability keywords, and more.)
 
 #### Stamina Bonus
 
@@ -19671,7 +19671,7 @@ Before you were a hero, you were a chef—and when you retire, you have big plan
 
 You're not sure what you did to deserve it, but for some reason, your family saddled you with an old, trusted, and extremely irritating family servant. They're supremely competent, of course, but they sometimes seem to forget who's in charge.
 
-**Benefit:** You have a retainer, in addition to any followers you acquire through Renown or other means. As usual, you can have only one retainer in your service at a time. (See Renown in Chapter 13: Rewards and Retainers in *Draw Steel: Monsters*).
+**Benefit:** You have a retainer, in addition to any followers you acquire through Renown or other means. As usual, you can have only one retainer in your service at a time. (See Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) and Retainers in *Draw Steel: Monsters*).
 
 **Drawback:** Outside of combat, your retainer is under the Director's control. The retainer sometimes acts without orders—always with your best interests at heart, but often in embarrassing or inconvenient ways.
 
@@ -20020,7 +20020,7 @@ You were trained as an officer, but you no longer serve. Whether you fled from a
 >
 > **Special:** If you have the Strike Now tactician ability, the target can use a free triggered action instead of a triggered action to gain the benefit of this ability.
 
-**Drawback:** Rather than attracting followers at 3, 6, 9, and 12 Renown, you can attract followers only when your Renown reaches 4, 8, 12, and 16. See Renown in Chapter 13: Rewards.
+**Drawback:** Rather than attracting followers at 3, 6, 9, and 12 Renown, you can attract followers only when your Renown reaches 4, 8, 12, and 16. See Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
 <!-- @type: complication -->
 #### Thrill Seeker
@@ -20347,7 +20347,7 @@ The amount of time required for a task involving a test is determined by the Dir
 
 ##### Tests During Combat
 
-Many (but not all) tests that a hero might make during combat are made as maneuvers. See Maneuvers in Chapter 10: Combat for more information.
+Many (but not all) tests that a hero might make during combat are made as maneuvers. See Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) for more information.
 
 #### Can I Try Again?
 
@@ -20449,7 +20449,7 @@ The rules for skills allow for them to be flexibly applied to any test that is a
 
 > **Are All Skills Equal?**
 >
-> When choosing skills for your character, deciding which skills will be most useful depends a lot on the campaign. For instance, the Swim skill might be used constantly during a campaign that takes place on the ocean and has heroes exploring underwater ruins, but it won't come up as much in a campaign that takes place entirely in a vast desert. The Psionics skill might come up a lot in a campaign where voiceless talkers are the main foes, and Magic might be more useful in a game where the heroes take on a circle of evil wizards. If you're worried about whether a skill you'd like to take will be useful, discuss your skill list with the Director after you create a hero. And if a skill doesn't work out, you can always trade it for another skill as you wish (see Changing Character Options in Chapter 2: Making a Hero).
+> When choosing skills for your character, deciding which skills will be most useful depends a lot on the campaign. For instance, the Swim skill might be used constantly during a campaign that takes place on the ocean and has heroes exploring underwater ruins, but it won't come up as much in a campaign that takes place entirely in a vast desert. The Psionics skill might come up a lot in a campaign where voiceless talkers are the main foes, and Magic might be more useful in a game where the heroes take on a circle of evil wizards. If you're worried about whether a skill you'd like to take will be useful, discuss your skill list with the Director after you create a hero. And if a skill doesn't work out, you can always trade it for another skill as you wish (see Changing Character Options in Chapter 2: [Making a Hero](scc:mcdm.heroes.v1/chapter/making-a-hero)).
 
 #### Skill Groups
 
@@ -20503,7 +20503,7 @@ Consequences for tests made with exploration skills include harming yourself, yo
 
 ##### Interpersonal Skills
 
-Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see Chapter 11\). Aside from the Handle Animals skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
+Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)). Aside from the Handle Animals skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
 
 Rewards for tests made with interpersonal skills typically include gaining an extra favor, item, or piece of information from the people or creatures you interact with.
 
@@ -21286,7 +21286,7 @@ A creature who is grabbed by another creature, an object, or an effect (see Grab
 >
 > **Effect:** You take a bane on this maneuver if your size is smaller than the size of the creature, object, or effect that has you grabbed.
 
-See Conditions in Chapter 5: Classes for information on the grabbed condition.
+See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for information on the grabbed condition.
 
 #### Grab
 
@@ -21308,11 +21308,11 @@ A creature seeking to keep a foe close and locked down can attempt to grab a cre
 
 Unless otherwise indicated, a creature can grab only one creature at a time.
 
-See Conditions in Chapter 5: Classes for information on the grabbed condition.
+See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for information on the grabbed condition.
 
 #### Hide
 
-Using the Hide maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or concealment. See Hide and Sneak in Chapter 9: Tests for full details.
+Using the Hide maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or concealment. See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
 
 #### Knockback
 
@@ -21348,7 +21348,7 @@ A creature can use the Stand Up maneuver to stand up if they are prone, ending t
 
 #### Use Consumable
 
-Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: Rewards.
+Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
 ### Main Actions
 
@@ -21687,7 +21687,7 @@ Patience can decrease each time the heroes make an argument during a negotiation
 
 ##### Language and Patience
 
-If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). Chapter 4: Background has information on some of the languages in the game.
+If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) has information on some of the languages in the game.
 
 #### Motivations
 
@@ -22366,7 +22366,7 @@ Each time the teleportation platform is used, the chance of it malfunctioning an
 
 #### Craft Treasure
 
-You can craft the items found in Treasures in Chapter 13: Rewards. Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
+You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
 
 #### Find a Cure
 
@@ -23243,7 +23243,7 @@ Most treasures are found as part of adventures. Many people concoct dastardly sc
 
 other times, generous and well-off individuals such as monarchs and powerful mages can reward treasures as thanks for heroic deeds.
 
-Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: Downtime Projects. Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
+Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
 
 <!-- @type: treasure | @id: what-does-this-treasure-do -->
 #### What Does This Treasure Do?
@@ -23302,19 +23302,19 @@ Your character can carry any number of consumables at a time.
 >
 > The rules for using treasures refer to lots of other parts of the game. You can find information on specific topics as follows:
 >
-> Recoveries, respites, Victories: Chapter 1: The Basics
+> Recoveries, respites, Victories: Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
 >
-> Languages: Chapter 4: Background
+> Languages: Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)
 >
-> Abilities, conditions, potencies, surges: Chapter 5: Classes
+> Abilities, conditions, potencies, surges: Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)
 >
-> Skills, tests: Chapter 9: Tests
+> Skills, tests: Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
-> Item creation rules, crafting and research projects: Chapter 12: Downtime Projects
+> Item creation rules, crafting and research projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, movement and forced movement, winded: Chapter 10: Combat
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, movement and forced movement, winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 >
-> Negotiation rules, motivations, pitfalls, interest, and patience: Chapter 11: Negotiation.
+> Negotiation rules, motivations, pitfalls, interest, and patience: Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation).
 
 <!-- @type: treasure -->
 #### 1st-Echelon Consumables
@@ -25287,7 +25287,7 @@ The easiest way to create custom titles is to modify an existing title's require
 
 > **For the Director: Perks as Custom Titles**
 >
-> You can turn a perk into a 1st-echelon title simply by giving it a prerequisite (see Chapter 7: Perks). For example, a hero might gain the Familiar perk as a title instead if they complete a quest for an archmage, who then teaches the hero the conjuring ritual as a reward.
+> You can turn a perk into a 1st-echelon title simply by giving it a prerequisite (see Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks)). For example, a hero might gain the Familiar perk as a title instead if they complete a quest for an archmage, who then teaches the hero the conjuring ritual as a reward.
 
 ### How Many Titles?
 
@@ -25951,7 +25951,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
-- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased devil ancestry traits (see Chapter 3).
+- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased devil ancestry traits (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly Devil:* You gain the Silver Tongue signature trait from the devil ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
 
@@ -25964,7 +25964,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Dragon Scaled:* Dragon scales grow on your body wherever the heart's blood of the dragon touched you. You gain the Wyrmplate signature trait from the dragon knight ancestry (see Chapter 3).
+- *Dragon Scaled:* Dragon scales grow on your body wherever the heart's blood of the dragon touched you. You gain the Wyrmplate signature trait from the dragon knight ancestry (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Dragon Touched:* You gain 3 ancestry points to spend on purchased dragon knight ancestry traits.
 
 <!-- @type: title -->
@@ -26056,7 +26056,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 - *Prismacore Eyes:* Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can't use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to stability against magic or psionic abilities.
 - *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
-- *Time Raider Training:* You gain 2 ancestry points to spend on purchased time raider ancestry traits (see Chapter 3).
+- *Time Raider Training:* You gain 2 ancestry points to spend on purchased time raider ancestry traits (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 
 <!-- @type: title -->
 #### Scarred
@@ -26251,13 +26251,13 @@ At the start of character creation, your Renown is 0. Some careers can increase 
 
 ### Increasing Renown
 
-Some perks (see Chapter 7), downtime projects (Chapter 12), and titles and treasures (part of Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
+Some perks (see Chapter 7), downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)), and titles and treasures (part of Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) can increase your renown. But for the most part, you earn Renown at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
 
 In most campaigns, the Director sets the characters up to earn 1 Renown per level, but some campaigns will feature heroes who are more or less famous (or infamous) than that.
 
 ### Influence Negotiation
 
-Renown changes the way NPCs respond to heroes during negotiations (see Chapter 11), whether that renown takes the form of fame or infamy.
+Renown changes the way NPCs respond to heroes during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), whether that renown takes the form of fame or infamy.
 
 ### Attract Followers
 
@@ -27420,7 +27420,7 @@ The buy-in tells the players that their heroes are going to travel to far-flung 
 
 #### Player Option Restrictions
 
-Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all memonek and time raiders who have come to Vasloria searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see Chapter 3) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see Chapter 4) so that no one can take Aristocrat or Politician.
+Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all memonek and time raiders who have come to Vasloria searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)) so that no one can take Aristocrat or Politician.
 
 Put any restrictions your campaign has into your pitch!
 
@@ -27519,7 +27519,7 @@ Multiple-front campaigns make the world feel authentic and alive, but they requi
 
 As part of your worldbuilding, you can create an outline of the events that might occur in each echelon of your campaign. The farther these events get from the start of the campaign, the vaguer you can leave the details. The actions of the heroes should matter and influence the course of events, so don't plan too much. Otherwise, you might end up throwing out earlier preparation to make player and character decisions matter.
 
-Your outline should include the plans of the villains in your campaign. Review Echelons of Play in Chapter 1: The Basics to get an idea of the threat level and stories the heroes should be experiencing at each stage of the campaign. An echelon outline might look like this:
+Your outline should include the plans of the villains in your campaign. Review Echelons of Play in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) to get an idea of the threat level and stories the heroes should be experiencing at each stage of the campaign. An echelon outline might look like this:
 
 - **1st Echelon:** The heroes protect the village of Gravesford in the Barony of Bedegar from the forces of Lord Saxton, an usurper and tyrant loyal to Ajax. Eventually, they must bring the fight to Lord Saxton's keep in Bedegar City.
 - **2nd Echelon:** After toppling Saxton's keep, the heroes find a letter from Ajax detailing plans to amass powerful treasures from throughout Vasloria. The heroes can race to these locations to claim the treasures before Ajax's forces do.
@@ -27764,7 +27764,7 @@ Allow the heroes' investigation to drive the action. In an exploration scene, yo
 
 The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a test. However, following the tracks that lead out of the cave toward the bandits' new hideout does require a test, because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no test is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a Reason test to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
 
-Chapter 9: Tests explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
+Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
 
 Additionally, if a player has a particularly clever and plausible idea for attempting to overcome a challenge, you can have them automatically succeed on a task even if failure would make the story more interesting. It's important to reward clever thinking with success once in a while, so that the players are encouraged to think outside the box and create memorable moments!
 
@@ -27885,7 +27885,7 @@ Refer to the details you wrote down for your NPCs while you roleplay them. Keep 
 
 ### Creating and Running Negotiations
 
-When you're preparing for a negotiation (see Chapter 11: Negotiation), you'll want to pick an NPC and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
+When you're preparing for a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), you'll want to pick an NPC and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
 
 When assigning negotiation stats, keep the following guidelines in mind:
 
@@ -28286,7 +28286,7 @@ You'll then need to create the three outcomes of the montage: total success, par
 
 When you run a montage test, start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make tests.
 
-When you adjudicate individual tests as part of a montage test, do so as you would any other test (see Adjudicating Tests in Chapter 9). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an edge or impose a bane on a test made later as part of the montage test. Do whatever makes sense for the heroes' actions in the narrative.
+When you adjudicate individual tests as part of a montage test, do so as you would any other test (see Adjudicating Tests in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an edge or impose a bane on a test made later as part of the montage test. Do whatever makes sense for the heroes' actions in the narrative.
 
 After each test, narrate the hero's failure or success in such a way that the other players can understand if and how the challenge has been overcome. Your description might even spark some new ideas for what the characters can do next.
 
@@ -28486,7 +28486,7 @@ One of the following outcomes ends the montage test:
 
 ### Running Respites
 
-When the heroes decide to take a respite (see Respite in Chapter 1:  The Basics), your role as Director changes a bit. Most of the heroes' activities during respites revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
+When the heroes decide to take a respite (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), your role as Director changes a bit. Most of the heroes' activities during respites revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
 
 #### Safe Place
 
@@ -28496,13 +28496,13 @@ Heroes can't take a respite unless they're in a safe place. This typically means
 
 #### Too Many Respites?
 
-It's up to the players how many respites the heroes take in a row. Characters eager to take a long series of respites to undertake downtime projects (Chapter 12) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with respites so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
+It's up to the players how many respites the heroes take in a row. Characters eager to take a long series of respites to undertake downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with respites so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
 
 If you prefer a campaign that has few respites, you might want to deploy artisans, sages, and readily available project sources to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
 
 #### Project Events
 
-Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in Chapter 12) are optional, and you can use them as frequently as you like. In general, more than one or two events per respite can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
+Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) are optional, and you can use them as frequently as you like. In general, more than one or two events per respite can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
 
 When you're running downtime events, be sure to rotate which heroes are in the spotlight of the action. Don't focus on the same hero over and over again. You can also do a little preparation for events before you play them out, reading the event prompt and fleshing it out into a scene. Prompts are intentionally vaguely written so you can modify them as you see fit or easily create your own.
 
@@ -28559,7 +28559,7 @@ The players can choose their hero's treasures, and can replace any leveled treas
 
 #### Making New Treasures
 
-You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: Downtime Projects.
+You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
 You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the damage types, and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
 
