@@ -79,7 +79,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Making a Hero | 1056-1263 | done | done (12) | done (18) | - | - | - | - | - | - | done (15) |
 | Ancestries | 1264-3199 | done | - | - | - | - | - | - | - | - | - |
 | Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
-| Cultures | 3207-3493 | done | - | - | - | - | - | - | - | - | - |
+| Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
 | Careers | 3494-4065 | done | - | - | - | - | - | - | - | - | - |
 | Classes | 4066-17606 | done | - | - | - | - | - | - | - | - | - |
 | Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | - |

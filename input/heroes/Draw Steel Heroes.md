@@ -3215,25 +3215,25 @@ For our purposes, a hero's culture represents people, not a place. Yes, you migh
 
 Directors can use the rules in this section to build cultures that players can choose for their characters. Players can use these rules to build a unique culture or modify an existing culture for their character, working with the Director to find the right place for that culture within the world of the campaign.
 
-In many worlds, at least some cultures have a majority ancestry. The people of Bedegar, a duchy in the region of Vasloria on Orden, are mostly humans. The folk dwelling in the Great Wode, a forest realm north of Bedegar, are primarily wode elves. However, you can always choose to be from one of these cultures and take a different ancestry. A dwarf raised in the culture of the Great Wode speaks Yllyric and probably knows a lot about nature, while a dwarf raised in the dwarf thanedom of Kal Kalavar speaks Zaliac and might know a good deal about smithing.
+In many worlds, at least some cultures have a majority ancestry. The people of Bedegar, a duchy in the region of Vasloria on Orden, are mostly [humans](scc:mcdm.heroes.v1/ancestry/human). The folk dwelling in the Great Wode, a forest realm north of Bedegar, are primarily [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf). However, you can always choose to be from one of these cultures and take a different ancestry. A [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the culture of the Great Wode speaks Yllyric and probably knows a lot about nature, while a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) thanedom of Kal Kalavar speaks Zaliac and might know a good deal about smithing.
 
-You can build your culture one aspect at a time, or you can use the following tables if you want to assess sample cultures or make your own culture quickly. To create an archetypical culture for a hero who grew up surrounded mostly by other members of their ancestry, use or modify the aspect options on the Typical Ancestry Cultures table. (Revenants are missing from this table because they don't gain their ancestry until after they die.) If you'd rather quickly create a culture based on a cultural archetype, such as a noble house or a pirate crew, use the Archetypical Cultures table, then add a language that fits the culture's concept.
+You can build your culture one aspect at a time, or you can use the following tables if you want to assess sample cultures or make your own culture quickly. To create an archetypical culture for a hero who grew up surrounded mostly by other members of their ancestry, use or modify the aspect options on the Typical Ancestry Cultures table. ([Revenants](scc:mcdm.heroes.v1/ancestry/revenant) are missing from this table because they don't gain their ancestry until after they die.) If you'd rather quickly create a culture based on a cultural archetype, such as a noble house or a pirate crew, use the Archetypical Cultures table, then add a language that fits the culture's concept.
 
 ###### Typical Ancestry Cultures Table
 
 | Ancestry      | Language    | Environment | Organization | Upbringing |
 |---------------|-------------|-------------|--------------|------------|
-| Devil         | Anjali      | Urban       | Bureaucratic | Academic   |
-| Dragon knight | Vastariax   | Secluded    | Bureaucratic | Martial    |
-| Dwarf         | Zaliac      | Secluded    | Bureaucratic | Creative   |
-| Wode elf      | Yllyric     | Wilderness  | Bureaucratic | Martial    |
-| High elf      | Hyrallic    | Secluded    | Bureaucratic | Martial    |
-| Hakaan        | Vhoric      | Rural       | Communal     | Labor      |
-| Human         | Vaslorian   | Urban       | Communal     | Labor      |
-| Memonek       | Axiomatic   | Nomadic     | Communal     | Academic   |
-| Orc           | Kalliak     | Wilderness  | Communal     | Creative   |
-| Polder        | Khoursirian | Urban       | Communal     | Creative   |
-| Time raider   | Voll        | Nomadic     | Communal     | Martial    |
+| [Devil](scc:mcdm.heroes.v1/ancestry/devil)         | Anjali      | Urban       | Bureaucratic | Academic   |
+| [Dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) | Vastariax   | Secluded    | Bureaucratic | Martial    |
+| [Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf)         | Zaliac      | Secluded    | Bureaucratic | Creative   |
+| [Wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf)      | Yllyric     | Wilderness  | Bureaucratic | Martial    |
+| [High elf](scc:mcdm.heroes.v1/ancestry/high-elf)      | Hyrallic    | Secluded    | Bureaucratic | Martial    |
+| [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan)        | Vhoric      | Rural       | Communal     | Labor      |
+| [Human](scc:mcdm.heroes.v1/ancestry/human)         | Vaslorian   | Urban       | Communal     | Labor      |
+| [Memonek](scc:mcdm.heroes.v1/ancestry/memonek)       | Axiomatic   | Nomadic     | Communal     | Academic   |
+| [Orc](scc:mcdm.heroes.v1/ancestry/orc)           | Kalliak     | Wilderness  | Communal     | Creative   |
+| [Polder](scc:mcdm.heroes.v1/ancestry/polder)        | Khoursirian | Urban       | Communal     | Creative   |
+| [Time raider](scc:mcdm.heroes.v1/ancestry/time-raider)   | Voll        | Nomadic     | Communal     | Martial    |
 
 ###### Archetypical Cultures Table
 
@@ -3266,8 +3266,8 @@ Building a character is about more than adding up your stats, picking skills and
 The culture you choose or create grants you the following benefits:
 
 - You know the language of your culture, in addition to knowing Caelian.
-- From the environment, organization, and upbringing aspects of your culture, you gain access to skills. You can select one skill from each aspect's list of options. (Skills in Chapter 9: Tests has information on the part skills play in the game.)
-- You gain an edge on tests made to recall lore about your culture, and on tests made to influence and interact with people of your culture. (See Edges and Banes in Chapter 1: The Basics.)
+- From the environment, organization, and upbringing aspects of your culture, you gain access to skills. You can select one skill from each aspect's list of options. (Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) has information on the part skills play in the game.)
+- You gain an edge on tests made to recall lore about your culture, and on tests made to influence and interact with people of your culture. (See Edges and Banes in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 #### Language
 
@@ -3311,7 +3311,7 @@ An urban culture is always centered in a city. Such a culture might arise within
 
 ##### Wilderness
 
-A wilderness culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of orc mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
+A wilderness culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
 
 **Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* Endurance.)
 
@@ -3393,17 +3393,17 @@ If your hero knows a language, they can speak, read, write, and understand it.
 
 ##### Caelian Empire
 
-The Caelian Empire dominated five of the eight regions of Orden 3,000 years ago. During the height of this most recent human empire, all humans (including folks from Vanigar in the far north, but not folks from the islands of Ix) learned to speak the Caelian tongue. For many, especially the noble classes and the well-to-do, Caelian effectively replaced their native language.
+The Caelian Empire dominated five of the eight regions of Orden 3,000 years ago. During the height of this most recent [human](scc:mcdm.heroes.v1/ancestry/human) empire, all [humans](scc:mcdm.heroes.v1/ancestry/human) (including folks from Vanigar in the far north, but not folks from the islands of Ix) learned to speak the Caelian tongue. For many, especially the noble classes and the well-to-do, Caelian effectively replaced their native language.
 
-Some 1,300 years after the fall of the Caelian Empire, the languages of the different regions of the empire are enjoying a resurgence. Still, the Caelian tongue is spoken by most humans in most regions to one extent or another.
+Some 1,300 years after the fall of the Caelian Empire, the languages of the different regions of the empire are enjoying a resurgence. Still, the Caelian tongue is spoken by most [humans](scc:mcdm.heroes.v1/ancestry/human) in most regions to one extent or another.
 
-Most people in Orden can speak and understand some Caelian, simply because the empire was so powerful and so widespread. Anyone trading with the empire or living near its borders or under its influence eventually learned to speak Caelian, including dwarves, dragon knights, elves, hakaan, orcs, polders, lizardfolk, and goblins. If a person speaks more than one language in Orden, the second language is almost always Caelian. All player characters know Caelian! As a result, that language of empire is now colloquially referred to as "the common tongue"-the language that most folk of Orden have in common.
+Most people in Orden can speak and understand some Caelian, simply because the empire was so powerful and so widespread. Anyone trading with the empire or living near its borders or under its influence eventually learned to speak Caelian, including [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight), elves, [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan), [orcs](scc:mcdm.heroes.v1/ancestry/orc), [polders](scc:mcdm.heroes.v1/ancestry/polder), lizardfolk, and goblins. If a person speaks more than one language in Orden, the second language is almost always Caelian. All player characters know Caelian! As a result, that language of empire is now colloquially referred to as "the common tongue"-the language that most folk of Orden have in common.
 
 ##### Extant Languages
 
 Folk have been speaking, signing, and writing in Orden for at least thirty thousand years, but most of the world's ancient languages are now dead. Many have been forgotten. Others were spoken by peoples who never developed writing, preventing those languages from being preserved. And many languages that were preserved in writing left no related descendants, so that no one now knows what sounds that writing represented.
 
-The languages on the Languages by Ancestry table are the most common languages actively spoken and signed by significant populations of people in Orden. The Vaslorian Human Languages table shows the dominant languages in that region's human-centric territories. Most languages are associated with a specific ancestry and its culture, but being a member of an ancestry doesn't automatically make you part of the associated culture the language is tied to. For example, if your orc hero was raised in a culture of elves, you probably speak one of the elf languages, and might never have learned Kalliak.
+The languages on the Languages by Ancestry table are the most common languages actively spoken and signed by significant populations of people in Orden. The Vaslorian Human Languages table shows the dominant languages in that region's human-centric territories. Most languages are associated with a specific ancestry and its culture, but being a member of an ancestry doesn't automatically make you part of the associated culture the language is tied to. For example, if your [orc](scc:mcdm.heroes.v1/ancestry/orc) hero was raised in a culture of elves, you probably speak one of the elf languages, and might never have learned Kalliak.
 
 Most languages have colloquial or casual names. For instance, many people in Orden call Kalliak "Orcish" and Hyrallic "Elvish," but any sage knows there are lots of orcish and elf languages, just as there are multiple human languages.
 
@@ -3427,17 +3427,17 @@ Each extant language has a spoken, signed, and written version. When you learn a
 
 | Language              | Ancestry                              | Notes                                                                          |
 |-----------------------|---------------------------------------|--------------------------------------------------------------------------------|
-| Anjali                | Devils, hobgoblins                    | Language of contract law                                                       |
-| Axiomatic             | Memonek                               | Native language of Axiom, and the common<br>language of the timescape by trade |
+| Anjali                | [Devils](scc:mcdm.heroes.v1/ancestry/devil), hobgoblins                    | Language of contract law                                                       |
+| Axiomatic             | [Memonek](scc:mcdm.heroes.v1/ancestry/memonek)                               | Native language of Axiom, and the common<br>language of the timescape by trade |
 | Caelian               | Orden denizens                        | Common language of Orden                                                       |
 | Filliaric             | Angulotls                             |                                                                                |
 | The First<br>Language | Elder dragons                         | Language of magic                                                              |
-| Hyrallic              | High elves                            | Language of interspecies diplomacy                                             |
+| Hyrallic              | [High elves](scc:mcdm.heroes.v1/ancestry/high-elf)                            | Language of interspecies diplomacy                                             |
 | Illyvric              | Shadow elves                          |                                                                                |
-| Kalliak               | Orcs                                  | Offshoot of Zaliac                                                             |
+| Kalliak               | [Orcs](scc:mcdm.heroes.v1/ancestry/orc)                                  | Offshoot of Zaliac                                                             |
 | Kethaic               | Kobolds                               | Patois of Vastariax and Caelian                                                |
 | Khelt                 | Bugbears, fey                         | Offshoot of Kheltivari                                                         |
-| Khoursirian           | Polder, humans                        | Distant offshoot of Khamish                                                    |
+| Khoursirian           | [Polder](scc:mcdm.heroes.v1/ancestry/polder), [humans](scc:mcdm.heroes.v1/ancestry/human)                        | Distant offshoot of Khamish                                                    |
 | High Kuric            | Bredbeddles, giants,<br>ogres, trolls |                                                                                |
 | Low Kuric             | Elementals                            |                                                                                |
 | Mindspeech            | Voiceless talkers                     | A symbolic language shared among native<br>telepaths                           |
@@ -3446,20 +3446,20 @@ Each extant language has a spoken, signed, and written version. When you learn a
 | Tholl                 | Higher demons, gnolls                 |                                                                                |
 | Urollialic            | Olothec                               |                                                                                |
 | Variac                | Olothec, trolls,<br>voiceless talkers | Common language of the World Below                                             |
-| Vastariax             | Dragons, dragon<br>knights            |                                                                                |
-| Vhoric                | Hakaan                                | Offshoot of the stone giant dialect of High<br>Kuric                           |
-| Voll                  | Time raiders                          |                                                                                |
-| Yllyric               | Wode elves                            | Language of druids                                                             |
+| Vastariax             | Dragons, [dragon<br>knights](scc:mcdm.heroes.v1/ancestry/dragon-knight)            |                                                                                |
+| Vhoric                | [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan)                                | Offshoot of the stone giant dialect of High<br>Kuric                           |
+| Voll                  | [Time raiders](scc:mcdm.heroes.v1/ancestry/time-raider)                          |                                                                                |
+| Yllyric               | [Wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf)                            | Language of druids                                                             |
 | Za'hariax             | Overminds                             |                                                                                |
-| Zaliac                | Dwarves                               | Language of engineering                                                        |
+| Zaliac                | [Dwarves](scc:mcdm.heroes.v1/ancestry/dwarf)                               | Language of engineering                                                        |
 
 ##### Language Usage
 
-**Hyrallic** is the primary language of the high elves in Orden. Although young for an elf language, Hyrallic is older than almost all other modern cultural languages, save those of the dwarves. As a result, while anyone who lives near or trades with a human culture probably speaks at least a little Caelian, most nobles across all ancestries make sure their children or offspring speak Hyrallic. Caelian is new from many cultures' point of view, while Hyrallic as a language for diplomacy is considered cultured and traditional.
+**Hyrallic** is the primary language of the [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) in Orden. Although young for an elf language, Hyrallic is older than almost all other modern cultural languages, save those of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). As a result, while anyone who lives near or trades with a human culture probably speaks at least a little Caelian, most nobles across all ancestries make sure their children or offspring speak Hyrallic. Caelian is new from many cultures' point of view, while Hyrallic as a language for diplomacy is considered cultured and traditional.
 
-**Yllyric** is the cultural language of wode elves, and also the common language among those who defend and protect the natural forests of Orden.
+**Yllyric** is the cultural language of [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), and also the common language among those who defend and protect the natural forests of Orden.
 
-Within any document concerning the workings of machines, masonry, or geology, you are likely to find a healthy supply of jargon using **Zaliac**, the most popular dwarf language. Even when such texts aren't fully written in Zaliac, they use a lot of dwarf language when describing esoteric, complex ideas.
+Within any document concerning the workings of machines, masonry, or geology, you are likely to find a healthy supply of jargon using **Zaliac**, the most popular [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) language. Even when such texts aren't fully written in Zaliac, they use a lot of [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) language when describing esoteric, complex ideas.
 
 Just as Zaliac is used in engineering, contract law isn't written purely in **Anjali**, the dominant language of the Seven Cities of Hell. But a lot of the legal jargon in any contract, as well as some of the language of trial courts, features many Anjali words. People are sticklers for detail in the Seven Cities, and this makes their language popular among lawyers.
 
@@ -4196,7 +4196,7 @@ Melee abilities have a distance of "Melee X" and require you to make contact wit
 
 Ranged abilities have a distance of "Ranged X" and can be used to target creatures or objects too far away for you to make contact with. The number X is the maximum distance in squares at which a creature or object can be targeted by the ability. For instance, a distance of "Ranged 5" can be used to target creatures or objects within 5 squares of you.
 
-If you make a ranged strike while any enemy is adjacent to you (within 1 square), you have a bane on the strike's power roll. (See Edges and Banes in Chapter 1: The Basics.)
+If you make a ranged strike while any enemy is adjacent to you (within 1 square), you have a bane on the strike's power roll. (See Edges and Banes in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 ##### Melee or Ranged
 
