@@ -76,7 +76,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 |---------|-------|------------|---------|-----------|---------|------|-------|--------------|--------|-----------|----------|
 | Introduction | 7-589 | done | done (27) | done (21) | - | - | - | - | - | - | done (3) |
 | The Basics | 590-1055 | done | done (16) | done (32) | - | - | - | - | - | - | done (11) |
-| Making a Hero | 1056-1263 | done | - | - | - | - | - | - | - | - | - |
+| Making a Hero | 1056-1263 | done | done (12) | done (18) | - | - | - | - | - | - | done (15) |
 | Ancestries | 1264-3199 | done | - | - | - | - | - | - | - | - | - |
 | Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - |
 | Cultures | 3207-3493 | done | - | - | - | - | - | - | - | - | - |
