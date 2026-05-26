@@ -3508,7 +3508,7 @@ Your career describes what your life was before you became a hero. When you sele
 
 #### Skills
 
-Each career grants you two or three skills, detailed in the Skills section of Chapter 9: Tests.
+Each career grants you two or three skills, detailed in the Skills section of Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 #### Languages
 
@@ -3516,21 +3516,21 @@ Some careers allow you to learn extra languages, chosen from those available in 
 
 #### Renown
 
-Some careers increase your starting Renown score (from a base score of 0). See Renown in Chapter 13: Rewards for more information.
+Some careers increase your starting Renown score (from a base score of 0). See Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) for more information.
 
 #### Wealth
 
-Some careers increase your starting Wealth score (from a base score of 1). See Wealth in Chapter 13: Rewards for more information.
+Some careers increase your starting Wealth score (from a base score of 1). See Wealth in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) for more information.
 
 #### Project Points
 
-Some careers provide project points you can put toward crafting and research projects (see Chapter 12: Downtime Projects). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
+Some careers provide project points you can put toward crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
 
 At the Director's discretion, your career might also let you start the game with the materials needed for one or more projects, so you can immediately put your project points toward those projects—possibly before the adventure begins! This is especially useful for characters who are going on only one adventure. Otherwise, you can hold onto the points and spend them once you do start a project.
 
 #### Perk
 
-Your career provides you with a specific type of perk—a special feature that lets you customize your character, with a focus outside of combat. See Chapter 7: Perks for more information.
+Your career provides you with a specific type of perk—a special feature that lets you customize your character, with a focus outside of combat. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks) for more information.
 
 ### Inciting Incident
 
@@ -3861,7 +3861,7 @@ You gain the following career benefits:
 | 3  | **Missing Mage:** One day you woke up and the mage you worked for was gone. They didn't take any of their belongings and there was no sign of any foul play-only the scent of sulfur in their bedchamber. You set out on your heroic journey in the aftermath and have been looking for them ever since. |
 | 4  | **Nightmares Made Flesh:** Your attempts at magic have always been unpredictable. A powerful mage promised to help you gain control. During your training, a terrible nightmare caused your body to flare with magic and pull the monster of your nightmare into the waking world. The horror escaped. You left, seeking to vanquish their vileness. |
 | 5  | **Otherworldly:** While studying magic, you accidentally sent yourself from your original world to this one. Now you're stranded here, hoping to find ancient texts or powerful magic treasures that might transport you back home. A life of adventure it is! | 
-| 6  | **Ultimate Power:** The mage you worked for was a kindly old soul, but the basic magic they taught you always seemed like a small part of something bigger. It wasn't until you met an adventuring elementalist that you realized hitting the road as a hero was the only way to truly improve and hone your skills. You resigned your apprenticeship and found yourself walking the path of a hero the next day. |
+| 6  | **Ultimate Power:** The mage you worked for was a kindly old soul, but the basic magic they taught you always seemed like a small part of something bigger. It wasn't until you met an adventuring [elementalist](scc:mcdm.heroes.v1/class/elementalist) that you realized hitting the road as a hero was the only way to truly improve and hone your skills. You resigned your apprenticeship and found yourself walking the path of a hero the next day. |
 
 <!-- @type: career -->
 #### Performer

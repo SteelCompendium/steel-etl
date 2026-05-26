@@ -80,7 +80,7 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Ancestries | 1264-3199 | done | done (10) | done (93) | - | - | - | - | - | - | done (9) |
 | Background | 3200-3206 | done | - | - | - | - | - | - | - | - | - | <!-- no game mechanic names -->
 | Cultures | 3207-3493 | done | - | done (42) | - | - | - | - | - | - | done (3) |
-| Careers | 3494-4065 | done | - | - | - | - | - | - | - | - | - |
+| Careers | 3494-4065 | done | done (1) | - | - | - | - | - | - | - | done (5) |
 | Classes | 4066-17606 | done | - | - | - | - | - | - | - | - | - |
 | Kits | 17607-18580 | done | - | - | - | - | - | - | - | - | - |
 | Perks | 18581-18946 | done | - | - | - | - | - | - | - | - | - |
