@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 
@@ -462,6 +463,7 @@ type compositeEntry struct {
 	level       int
 	featureType string // "trait" or "ability"
 	body        string // markdown body (frontmatter stripped)
+	srcRelPath  string // source-relative path (e.g., "feature/trait/fury/level-1/ferocity.md")
 }
 
 // assembleComposites processes composite page definitions for a section.
@@ -485,8 +487,9 @@ func assembleComposites(cfg *Config, section SectionConfig) (int, []string) {
 // compositeEmbed holds content from a single-file composite include,
 // embedded directly rather than iterated as individual entries.
 type compositeEmbed struct {
-	name string // from frontmatter "name" field
-	body string // markdown body (frontmatter stripped)
+	name       string // from frontmatter "name" field
+	body       string // markdown body (frontmatter stripped)
+	srcRelPath string // source-relative path for link rebasing
 }
 
 // assembleComposite builds composite pages for one composite definition.
@@ -530,7 +533,7 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 
 			if info, statErr := os.Stat(srcDir); statErr == nil && info.IsDir() {
 				// Directory: walk for individual children
-				found, e := collectCompositeChildren(srcDir)
+				found, e := collectCompositeChildren(srcDir, cfg.SourceDir)
 				children = append(children, found...)
 				errs = append(errs, e...)
 				if comp.RemoveSources {
@@ -544,14 +547,16 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 					if readErr != nil {
 						errs = append(errs, fmt.Sprintf("read %s: %v", srcFile, readErr))
 					} else {
+						srcRel, _ := filepath.Rel(cfg.SourceDir, srcFile)
 						fm, body := splitFrontmatter(string(data))
 						embedName := parseFrontmatterField(fm, "name")
 						if embedName == "" {
 							embedName = fileToTitle(filepath.Base(srcFile))
 						}
 						embeds = append(embeds, compositeEmbed{
-							name: embedName,
-							body: strings.TrimSpace(body),
+							name:       embedName,
+							body:       strings.TrimSpace(body),
+							srcRelPath: filepath.ToSlash(srcRel),
 						})
 						if comp.RemoveSources {
 							compositedPaths = append(compositedPaths, filepath.Join(cfg.DocsDir, section.Name, resolved+".md"))
@@ -576,6 +581,9 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 			return children[i].name < children[j].name
 		})
 
+		// The composite page's path within the source structure
+		destRelPath := comp.Base + "/" + name + ".md"
+
 		// Assemble the composite content
 		var sb strings.Builder
 		sb.Write(baseContent)
@@ -583,10 +591,14 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 
 		// Embedded files first (single-file composites): embed body with a section heading
 		for _, embed := range embeds {
+			embedBody := embed.body
+			if embed.srcRelPath != "" {
+				embedBody = rebaseLinks(embedBody, embed.srcRelPath, destRelPath)
+			}
 			sb.WriteString("### ")
 			sb.WriteString(embed.name)
 			sb.WriteString("\n\n")
-			sb.WriteString(embed.body)
+			sb.WriteString(embedBody)
 			sb.WriteString("\n\n")
 		}
 
@@ -605,10 +617,15 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 				lastType = groupKey
 			}
 
+			childBody := strings.TrimSpace(child.body)
+			if child.srcRelPath != "" {
+				childBody = rebaseLinks(childBody, child.srcRelPath, destRelPath)
+			}
+
 			sb.WriteString("### ")
 			sb.WriteString(child.name)
 			sb.WriteString("\n\n")
-			sb.WriteString(strings.TrimSpace(child.body))
+			sb.WriteString(childBody)
 			sb.WriteString("\n\n")
 		}
 
@@ -631,7 +648,9 @@ func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig)
 }
 
 // collectCompositeChildren recursively collects feature/ability files from a directory.
-func collectCompositeChildren(dir string) ([]compositeEntry, []string) {
+// sourceRoot is the top-level source directory, used to compute source-relative paths
+// for link adjustment during compositing.
+func collectCompositeChildren(dir string, sourceRoot string) ([]compositeEntry, []string) {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
 		return nil, nil
 	}
@@ -650,11 +669,14 @@ func collectCompositeChildren(dir string) ([]compositeEntry, []string) {
 			return nil
 		}
 
+		srcRel, _ := filepath.Rel(sourceRoot, path)
+
 		fm, body := splitFrontmatter(string(data))
 		entry := compositeEntry{
 			name:        parseFrontmatterField(fm, "name"),
 			featureType: parseFrontmatterField(fm, "type"),
 			body:        body,
+			srcRelPath:  filepath.ToSlash(srcRel),
 		}
 
 		// Parse level: try frontmatter first, then path
@@ -673,6 +695,37 @@ func collectCompositeChildren(dir string) ([]compositeEntry, []string) {
 	})
 
 	return entries, errs
+}
+
+// mdRelLinkRe matches markdown links with relative paths (not http(s), not anchors, not absolute).
+var mdRelLinkRe = regexp.MustCompile(`(\[[^\]]*\])\(([^):#][^):]*\.md)\)`)
+
+// rebaseLinks adjusts relative markdown links in body so they resolve correctly
+// when the content is moved from srcRelPath to destRelPath.
+// Both paths are slash-separated and relative to the same root (the source dir / section dir).
+func rebaseLinks(body, srcRelPath, destRelPath string) string {
+	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
+	destDir := filepath.ToSlash(filepath.Dir(destRelPath))
+
+	return mdRelLinkRe.ReplaceAllStringFunc(body, func(match string) string {
+		sub := mdRelLinkRe.FindStringSubmatch(match)
+		if len(sub) < 3 {
+			return match
+		}
+		linkText := sub[1]
+		linkPath := sub[2]
+
+		// Resolve the link against the source file's directory to get a root-relative path
+		resolved := filepath.ToSlash(filepath.Clean(filepath.Join(srcDir, linkPath)))
+
+		// Compute new relative path from the destination file's directory
+		newRel, err := filepath.Rel(destDir, resolved)
+		if err != nil {
+			return match
+		}
+
+		return linkText + "(" + filepath.ToSlash(newRel) + ")"
+	})
 }
 
 // splitFrontmatter separates YAML frontmatter from body content.

@@ -868,6 +868,79 @@ func TestNaturalLess(t *testing.T) {
 	}
 }
 
+func TestRebaseLinks(t *testing.T) {
+	tests := []struct {
+		name        string
+		body        string
+		srcRelPath  string
+		destRelPath string
+		want        string
+	}{
+		{
+			name:        "same directory no change",
+			body:        "See [Fury](fury.md) for details.",
+			srcRelPath:  "class/censor.md",
+			destRelPath: "class/fury.md",
+			want:        "See [Fury](fury.md) for details.",
+		},
+		{
+			name:        "deep source to shallow dest",
+			body:        "See [Censor](../../censor/level-1/protective-circle.md) link.",
+			srcRelPath:  "feature/trait/conduit/level-1/protective-circle.md",
+			destRelPath: "class/conduit.md",
+			want:        "See [Censor](../feature/trait/censor/level-1/protective-circle.md) link.",
+		},
+		{
+			name:        "sibling directories",
+			body:        "[dazed](../condition/dazed.md)",
+			srcRelPath:  "class/fury.md",
+			destRelPath: "class/censor.md",
+			want:        "[dazed](../condition/dazed.md)",
+		},
+		{
+			name:        "non-md link unchanged",
+			body:        "Visit [site](https://example.com) and [anchor](#top).",
+			srcRelPath:  "class/fury.md",
+			destRelPath: "class/conduit.md",
+			want:        "Visit [site](https://example.com) and [anchor](#top).",
+		},
+		{
+			name:        "multiple links rebased",
+			body:        "[A](../feature/trait/fury/level-1/ferocity.md) and [B](../condition/dazed.md)",
+			srcRelPath:  "class/fury.md",
+			destRelPath: "ancestry/human.md",
+			want:        "[A](../feature/trait/fury/level-1/ferocity.md) and [B](../condition/dazed.md)",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := rebaseLinks(tt.body, tt.srcRelPath, tt.destRelPath)
+			if got != tt.want {
+				t.Errorf("rebaseLinks():\n  got  %q\n  want %q", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestRebaseLinks_CompositeScenario(t *testing.T) {
+	// Simulates the actual compositing scenario:
+	// A trait file at feature/trait/conduit/level-1/protective-circle.md
+	// has a link ../../censor/level-1/protective-circle.md (targeting
+	// feature/trait/censor/level-1/protective-circle.md).
+	// When composited into class/conduit.md, the link should become
+	// ../feature/trait/censor/level-1/protective-circle.md
+	body := "See [protective circle](../../censor/level-1/protective-circle.md) details."
+	got := rebaseLinks(body,
+		"feature/trait/conduit/level-1/protective-circle.md",
+		"class/conduit.md",
+	)
+	want := "See [protective circle](../feature/trait/censor/level-1/protective-circle.md) details."
+	if got != want {
+		t.Errorf("composite scenario:\n  got  %q\n  want %q", got, want)
+	}
+}
+
 func checkExists(t *testing.T, base, rel string) {
 	t.Helper()
 	if _, err := os.Stat(filepath.Join(base, rel)); os.IsNotExist(err) {
