@@ -43,7 +43,7 @@ Tactics is about: "How are we going to do that?" We're going to... surround them
 
 In a tactical game, *positioning matters*. So our game is played on a grid. Effects and distances are measured in squares. This means all players are focused on the same problem, and there is no ambiguity regarding where the heroes and villains are in relation to each other. The hobgoblin troopers are setting themselves up in a line to stop our [tactician](scc:mcdm.heroes.v1/class/tactician) and [fury](scc:mcdm.heroes.v1/class/fury) from getting into melee with the hobgoblin war mage. We're all aware of what's happening, and we can talk about what we're going to do to stop it.
 
-That means *teamwork matters*. That's why the order of combat works the way it does—to encourage the players to plan! "Okay, you use [Concussive Slam](scc:mcdm.heroes.v1/feature.ability.common/concussive-slam) on that trooper, it'll push him back, and on my turn, I can use Squad! Forward! to get us all into melee with the death captain." We think focusing on teamwork also makes the game more heroic!
+That means *teamwork matters*. That's why the order of combat works the way it does—to encourage the players to plan! "Okay, you use [Concussive Slam](scc:mcdm.heroes.v1/feature.ability.time-raider/concussive-slam) on that trooper, it'll push him back, and on my turn, I can use Squad! Forward! to get us all into melee with the death captain." We think focusing on teamwork also makes the game more heroic!
 
 In a tactical game, you have many choices each combat round. You are never reduced to just swinging your sword. You have options. If we do a good job, you don't feel as if you outlasted your opponents because you wore their Stamina down before they could reduce yours to 0-you feel like you *beat* those hobgoblins! Through stealth and sorcery, coordination and ferocity!
 
@@ -1769,7 +1769,7 @@ Your hardened scales grant you damage immunity equal to your level to one of the
 
 #### Purchased Dragon Knight Traits
 
-You have 3 ancestry points to spend on the following traits. (*Quick Build:* [Dragon Breath](scc:mcdm.heroes.v1/feature.ability.common/dragon-breath), Prismatic Scales.)
+You have 3 ancestry points to spend on the following traits. (*Quick Build:* [Dragon Breath](scc:mcdm.heroes.v1/feature.ability.dragon-knight/dragon-breath), Prismatic Scales.)
 
 ##### Draconian Guard (1 Point)
 
@@ -3130,7 +3130,7 @@ Your mind is a formidable layer of defense. You have psychic immunity equal to y
 
 #### Purchased Time Raider Traits
 
-You have 3 ancestry points to spend on the following traits. (*Quick Build:* Beyondsight, Psionic Gift with [Psionic Bolt](scc:mcdm.heroes.v1/feature.ability.common/psionic-bolt).)
+You have 3 ancestry points to spend on the following traits. (*Quick Build:* Beyondsight, Psionic Gift with [Psionic Bolt](scc:mcdm.heroes.v1/feature.ability.time-raider/psionic-bolt).)
 
 ##### Beyondsight (1 Point)
 
