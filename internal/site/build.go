@@ -149,6 +149,8 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
+		data = []byte(rewriteSectionLinks(string(data), entry.relPath, destRel, section.Name, cfg.Sections))
+
 		// When a group flattens parent/child into one file, rewrite the
 		// frontmatter "name" to combine parent + original name so the H1
 		// and mkdocs nav title both show the combined form.
@@ -699,6 +701,46 @@ func collectCompositeChildren(dir string, sourceRoot string) ([]compositeEntry, 
 
 // mdRelLinkRe matches markdown links with relative paths (not http(s), not anchors, not absolute).
 var mdRelLinkRe = regexp.MustCompile(`(\[[^\]]*\])\(([^):#][^):]*\.md)\)`)
+
+// rewriteSectionLinks adjusts relative markdown links so they resolve correctly
+// after files are placed under section directories (e.g., Browse/, Read/).
+// Links in the source files were computed relative to the flat ETL output;
+// cross-section links need new relative paths that traverse section boundaries.
+func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, allSections []SectionConfig) string {
+	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
+	destDir := filepath.ToSlash(filepath.Dir(filepath.Join(sectionName, destRelPath)))
+
+	return mdRelLinkRe.ReplaceAllStringFunc(content, func(match string) string {
+		sub := mdRelLinkRe.FindStringSubmatch(match)
+		if len(sub) < 3 {
+			return match
+		}
+		linkText := sub[1]
+		linkPath := sub[2]
+
+		rootRel := filepath.ToSlash(filepath.Clean(filepath.Join(srcDir, linkPath)))
+
+		targetSection := ""
+		for _, section := range allSections {
+			if matchesSection(rootRel, section) {
+				targetSection = section.Name
+				break
+			}
+		}
+
+		if targetSection == "" {
+			return match
+		}
+
+		targetFull := filepath.ToSlash(filepath.Join(targetSection, rootRel))
+		newRel, err := filepath.Rel(destDir, targetFull)
+		if err != nil {
+			return match
+		}
+
+		return linkText + "(" + filepath.ToSlash(newRel) + ")"
+	})
+}
 
 // rebaseLinks adjusts relative markdown links in body so they resolve correctly
 // when the content is moved from srcRelPath to destRelPath.

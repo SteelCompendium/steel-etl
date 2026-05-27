@@ -868,6 +868,150 @@ func TestNaturalLess(t *testing.T) {
 	}
 }
 
+func TestRewriteSectionLinks(t *testing.T) {
+	sections := []SectionConfig{
+		{Name: "Browse", Include: []string{"class/", "feature/", "condition/", "ancestry/", "kit/"}},
+		{Name: "Read", Include: []string{"chapter/"}},
+	}
+
+	tests := []struct {
+		name        string
+		content     string
+		srcRelPath  string
+		destRelPath string
+		sectionName string
+		want        string
+	}{
+		{
+			name:        "chapter links to ancestry cross-section",
+			content:     "See [Human](../ancestry/human.md) for details.",
+			srcRelPath:  "chapter/background.md",
+			destRelPath: "chapter/background.md",
+			sectionName: "Read",
+			want:        "See [Human](../../Browse/ancestry/human.md) for details.",
+		},
+		{
+			name:        "chapter links to class cross-section",
+			content:     "Pick a [class](../class/fury.md).",
+			srcRelPath:  "chapter/classes.md",
+			destRelPath: "chapter/classes.md",
+			sectionName: "Read",
+			want:        "Pick a [class](../../Browse/class/fury.md).",
+		},
+		{
+			name:        "same section link unchanged",
+			content:     "See [Classes](classes.md) chapter.",
+			srcRelPath:  "chapter/background.md",
+			destRelPath: "chapter/background.md",
+			sectionName: "Read",
+			want:        "See [Classes](classes.md) chapter.",
+		},
+		{
+			name:        "browse to browse same section unchanged",
+			content:     "See [Human](../ancestry/human.md).",
+			srcRelPath:  "class/fury.md",
+			destRelPath: "class/fury.md",
+			sectionName: "Browse",
+			want:        "See [Human](../ancestry/human.md).",
+		},
+		{
+			name:        "browse links to chapter cross-section",
+			content:     "Read the [introduction](../chapter/introduction.md).",
+			srcRelPath:  "class/fury.md",
+			destRelPath: "class/fury.md",
+			sectionName: "Browse",
+			want:        "Read the [introduction](../../Read/chapter/introduction.md).",
+		},
+		{
+			name:        "multiple cross-section links",
+			content:     "See [Human](../ancestry/human.md) and [Fury](../class/fury.md).",
+			srcRelPath:  "chapter/background.md",
+			destRelPath: "chapter/background.md",
+			sectionName: "Read",
+			want:        "See [Human](../../Browse/ancestry/human.md) and [Fury](../../Browse/class/fury.md).",
+		},
+		{
+			name:        "http links unchanged",
+			content:     "Visit [site](https://example.com) and [Human](../ancestry/human.md).",
+			srcRelPath:  "chapter/background.md",
+			destRelPath: "chapter/background.md",
+			sectionName: "Read",
+			want:        "Visit [site](https://example.com) and [Human](../../Browse/ancestry/human.md).",
+		},
+		{
+			name:        "no matching section leaves link unchanged",
+			content:     "See [unknown](../unknown/thing.md).",
+			srcRelPath:  "chapter/background.md",
+			destRelPath: "chapter/background.md",
+			sectionName: "Read",
+			want:        "See [unknown](../unknown/thing.md).",
+		},
+		{
+			name:        "group-remapped dest cross-section",
+			content:     "See [Classes](../../../chapter/classes.md).",
+			srcRelPath:  "feature/ability/arcane-archer/exploding-arrow.md",
+			destRelPath: "feature/ability/Kits/arcane-archer-exploding-arrow.md",
+			sectionName: "Browse",
+			want:        "See [Classes](../../../../Read/chapter/classes.md).",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := rewriteSectionLinks(tt.content, tt.srcRelPath, tt.destRelPath, tt.sectionName, sections)
+			if got != tt.want {
+				t.Errorf("rewriteSectionLinks():\n  got  %q\n  want %q", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestBuild_CrossSectionLinks(t *testing.T) {
+	srcDir := t.TempDir()
+	docsDir := filepath.Join(t.TempDir(), "docs")
+	os.MkdirAll(docsDir, 0755)
+
+	files := map[string]string{
+		"chapter/background.md": "---\nname: Background\ntype: chapter\n---\n\nChoose a [human](../ancestry/human.md) ancestry.",
+		"ancestry/human.md":     "---\nname: Human\ntype: ancestry\n---\n\nHuman description.",
+	}
+	for rel, content := range files {
+		path := filepath.Join(srcDir, rel)
+		os.MkdirAll(filepath.Dir(path), 0755)
+		os.WriteFile(path, []byte(content), 0644)
+	}
+
+	cfg := &Config{
+		SourceDir: srcDir,
+		DocsDir:   docsDir,
+		Sections: []SectionConfig{
+			{Name: "Browse", Include: []string{"ancestry/"}},
+			{Name: "Read", Include: []string{"chapter/"}},
+		},
+	}
+
+	result, err := Build(cfg)
+	if err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+	for _, e := range result.Errors {
+		t.Errorf("Error: %s", e)
+	}
+
+	data, err := os.ReadFile(filepath.Join(docsDir, "Read", "chapter", "background.md"))
+	if err != nil {
+		t.Fatalf("read chapter: %v", err)
+	}
+	content := string(data)
+
+	if strings.Contains(content, "../ancestry/human.md") {
+		t.Error("cross-section link was not rewritten; still points to flat ../ancestry/human.md")
+	}
+	if !strings.Contains(content, "../../Browse/ancestry/human.md") {
+		t.Errorf("expected rewritten cross-section link to Browse, got:\n%s", content)
+	}
+}
+
 func TestRebaseLinks(t *testing.T) {
 	tests := []struct {
 		name        string
