@@ -12,7 +12,8 @@ type YAMLGenerator struct {
 	BaseDir string // e.g., "data-rules/en/yaml"
 }
 
-func (g *YAMLGenerator) Format() string { return "yaml" }
+func (g *YAMLGenerator) Format() string  { return "yaml" }
+func (g *YAMLGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *YAMLGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {

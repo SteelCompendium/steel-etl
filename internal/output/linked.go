@@ -16,7 +16,8 @@ type LinkedGenerator struct {
 	LinkMode scc.LinkMode
 }
 
-func (g *LinkedGenerator) Format() string { return "md-linked" }
+func (g *LinkedGenerator) Format() string  { return "md-linked" }
+func (g *LinkedGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {

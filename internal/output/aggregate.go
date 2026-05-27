@@ -24,7 +24,8 @@ type aggregateEntry struct {
 	typeName string
 }
 
-func (g *AggregateGenerator) Format() string { return "aggregate" }
+func (g *AggregateGenerator) Format() string  { return "aggregate" }
+func (g *AggregateGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *AggregateGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {

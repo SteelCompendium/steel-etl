@@ -86,6 +86,11 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	// Build the set of output generators
 	generators := buildGenerators(cfg, mdOutputDir, registryPath, sccRegistry, source)
 
+	// Clean output directories to remove stale files from previous runs
+	if err := output.CleanGeneratorDirs(generators); err != nil {
+		return nil, fmt.Errorf("clean output dirs: %w", err)
+	}
+
 	result := &Result{}
 	seenSCC := make(map[string]string)
 

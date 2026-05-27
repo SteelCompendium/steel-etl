@@ -16,7 +16,8 @@ type DSELinkedGenerator struct {
 	LinkMode scc.LinkMode
 }
 
-func (g *DSELinkedGenerator) Format() string { return "md-dse-linked" }
+func (g *DSELinkedGenerator) Format() string  { return "md-dse-linked" }
+func (g *DSELinkedGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {

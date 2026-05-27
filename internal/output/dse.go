@@ -17,7 +17,8 @@ type DSEGenerator struct {
 	BaseDir string // e.g., "data-rules/en/md-dse"
 }
 
-func (g *DSEGenerator) Format() string { return "md-dse" }
+func (g *DSEGenerator) Format() string  { return "md-dse" }
+func (g *DSEGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *DSEGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {

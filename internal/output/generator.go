@@ -15,7 +15,8 @@ type MarkdownGenerator struct {
 	BaseDir string // e.g., "data-rules/en/md"
 }
 
-func (g *MarkdownGenerator) Format() string { return "md" }
+func (g *MarkdownGenerator) Format() string  { return "md" }
+func (g *MarkdownGenerator) CleanDir() string { return g.BaseDir }
 
 // WriteSection writes a single parsed section as a .md file.
 func (g *MarkdownGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {

@@ -12,7 +12,8 @@ type JSONGenerator struct {
 	BaseDir string // e.g., "data-rules/en/json"
 }
 
-func (g *JSONGenerator) Format() string { return "json" }
+func (g *JSONGenerator) Format() string  { return "json" }
+func (g *JSONGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *JSONGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
 	if sccCode == "" || parsed == nil {
