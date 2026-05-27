@@ -11012,7 +11012,7 @@ When you use an ability outside of combat that lets you spend unlimited discipli
 You project a psionic field of order around your body, dampening the effects of supernatural abilities harmful to you and your allies.
 
 <!-- @type: ability -->
-> ###### [Null](scc:mcdm.heroes.v1/class/null) Field
+> ###### Null Field
 > 
 > *You project an aura that dampens the power of your foes.*
 > 
@@ -12992,7 +12992,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to shift to a new location within the area and make a free strike against them.
 
 <!-- @type: ability | @cost: 9 Insight -->
-> ###### Into the [Shadows](scc:mcdm.heroes.v1/class/shadow) (9 Insight)
+> ###### Into the Shadows (9 Insight)
 >
 > *You sweep your foe off their feet and plunge them into absolute darkness.*
 >
@@ -13289,7 +13289,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > - **17+:** 21 corruption damage; A < STRONG, restrained (save ends)
 
 <!-- @type: ability | @cost: 11 Insight -->
-> ###### Speed of [Shadows](scc:mcdm.heroes.v1/class/shadow) (11 Insight)
+> ###### Speed of Shadows (11 Insight)
 >
 > *You make multiple strikes against a foe before they even notice they're dead.*
 >
@@ -18850,7 +18850,7 @@ This section presents supernatural perks in alphabetical order.
 
 You have the following ability.
 
-> ###### [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick)
+> ###### Arcane Trick
 >
 > *You cast an entertaining spell that creates a minor but impressive magical effect.*
 >
@@ -18903,7 +18903,7 @@ If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can resto
 
 You have the following ability.
 
-> ###### [Invisible Force](scc:mcdm.heroes.v1/perk/invisible-force)
+> ###### Invisible Force
 >
 > *You manipulate a tiny object with your mind.*
 >
@@ -18918,7 +18918,7 @@ You have the following ability.
 
 You have the following ability.
 
-> ###### [Psychic Whisper](scc:mcdm.heroes.v1/perk/psychic-whisper)
+> ###### Psychic Whisper
 >
 > *You send a one-way telepathic message to a friend.*
 >
@@ -25998,7 +25998,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Angelic Chorus:* You can use the lessons of musical improvisation in combat. Choose one class act triggered action from the [troubadour](scc:mcdm.heroes.v1/class/troubadour) class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.
 - *[Devil's](scc:mcdm.heroes.v1/ancestry/devil) Opera:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
-> ###### The [Devil's](scc:mcdm.heroes.v1/ancestry/devil) Chord (9 Heroic Resource)
+> ###### The Devil's Chord (9 Heroic Resource)
 >
 > *Helloooo Orden!*
 >
