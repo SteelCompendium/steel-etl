@@ -58,21 +58,26 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Auto-extract from body content (only fill in what annotations didn't provide)
 	extractAbilityFields(body, fm)
 
-	// Look up parent class/kit from context
-	classID := ""
+	// Look up parent class/kit/ancestry/treasure from context
+	parentID := ""
+	parentType := ""
 	for level := section.HeadingLevel - 1; level >= 1; level-- {
 		cur := ctx.Current(level)
 		if cur == nil {
 			continue
 		}
-		if cur["type"] == "class" || cur["type"] == "kit" {
-			classID = cur["id"]
+		switch cur["type"] {
+		case "class", "kit", "ancestry", "treasure":
+			parentID = cur["id"]
+			parentType = cur["type"]
+		}
+		if parentID != "" {
 			break
 		}
 	}
 
-	if classID != "" {
-		fm["class"] = classID
+	if parentID != "" {
+		fm[parentType] = parentID
 	}
 
 	// Look up level from context
@@ -82,10 +87,10 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		levelStr = level
 	}
 
-	// Build type path: feature.ability.{class}.level-{N}
+	// Build type path: feature.ability.{parent}.level-{N}
 	typePath := []string{"feature", "ability"}
-	if classID != "" {
-		typePath = append(typePath, classID)
+	if parentID != "" {
+		typePath = append(typePath, parentID)
 	} else {
 		typePath = append(typePath, "common")
 	}
