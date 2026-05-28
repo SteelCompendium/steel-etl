@@ -50,6 +50,9 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Look up parent kit from context (for stormwight kits etc.)
 	kitID := findAncestorID(ctx, section.HeadingLevel, "kit")
 
+	// Look up parent ancestry from context
+	ancestryID := findAncestorID(ctx, section.HeadingLevel, "ancestry")
+
 	fm := map[string]any{
 		"name": cleanName,
 		"type": "trait",
@@ -68,13 +71,22 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	if kitID != "" {
 		fm["kit"] = kitID
 	}
+	if ancestryID != "" {
+		fm["ancestry"] = ancestryID
+	}
 
-	// Build type path: feature.trait.{class}.level-{N}[.{kit}]
+	// Build type path: feature.trait.{parent}.level-{N}[.{kit}]
 	typePath := []string{"feature", "trait"}
 	if classID != "" {
 		typePath = append(typePath, classID)
+	} else if ancestryID != "" {
+		typePath = append(typePath, ancestryID)
 	} else if kitID == "" {
+		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
 		typePath = append(typePath, "common")
+		if groupID != "" {
+			typePath = append(typePath, groupID)
+		}
 	}
 	if levelStr != "" {
 		typePath = append(typePath, "level-"+levelStr)

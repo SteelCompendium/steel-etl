@@ -92,7 +92,11 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	if parentID != "" {
 		typePath = append(typePath, parentID)
 	} else {
+		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
 		typePath = append(typePath, "common")
+		if groupID != "" {
+			typePath = append(typePath, groupID)
+		}
 	}
 	if levelStr != "" {
 		typePath = append(typePath, "level-"+levelStr)
