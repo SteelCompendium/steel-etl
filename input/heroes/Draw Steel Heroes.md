@@ -21235,18 +21235,22 @@ Certain abilities and effects trigger when a creature moves into a particular ar
 
 Some creatures have traits or abilities that trigger when they die or are reduced to 0 Stamina. If such a creature is reduced to 0 Stamina by damage from an ability or effect that also force moves them, the forced movement takes place before the triggered effect.
 
+<!-- @type: feature-group | @id: move-actions -->
 ### Move Actions
 
 A move action allows a creature to move around the battlefield. Sometimes you'll already be exactly where you want to be so that you don't need to use a move action on your turn. That's okay! The decision to not move is just as tactical as the decision to move.
 
+<!-- @type: feature | @id: advance -->
 #### Advance
 
 When a creature takes the Advance move action, they move a number of squares up to their speed. They can break up this movement with their maneuver and main action however they wish.
 
+<!-- @type: feature | @id: disengage -->
 #### Disengage
 
 When a creature takes the Disengage move action, they can shift 1 square. Certain class features, kits, and other rules allow a creature to shift more than 1 square when they disengage. A creature who does so can break up their shift with their maneuver and main action however they wish.
 
+<!-- @type: feature | @id: ride -->
 #### Ride
 
 A creature can take the Ride move action only while mounted on another creature (see Mounted Combat below). When a creature takes the Ride move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the Ride move action to have their mount use the Disengage move action as a free triggered action. A creature can use the Ride move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
@@ -21258,20 +21262,24 @@ A maneuver typically involves less focus and exertion than a main action (see be
 
 Sometimes you might not have anything you can do with your maneuver. That's totally fine! Often, the best thing to do on your turn is take a main action and move on.
 
+<!-- @type: feature | @id: aid-attack -->
 #### Aid Attack
 
 A creature who uses the Aid Attack maneuver chooses an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
 
+<!-- @type: feature | @id: catch-breath -->
 #### Catch Breath
 
 A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 A creature who is dying (see Dying and Death in Stamina below) can't use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.
 
+<!-- @type: feature | @id: escape-grab -->
 #### Escape Grab
 
 A creature who is grabbed by another creature, an object, or an effect (see Grab below) can attempt to escape by using the following ability.
 
+<!-- @type: ability -->
 > ###### Escape Grab
 >
 > | **-**       | **Maneuver** |
@@ -21288,10 +21296,12 @@ A creature who is grabbed by another creature, an object, or an effect (see Grab
 
 See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for information on the grabbed condition.
 
+<!-- @type: feature | @id: grab -->
 #### Grab
 
 A creature seeking to keep a foe close and locked down can attempt to grab a creature using the following ability.
 
+<!-- @type: ability -->
 > ###### Grab
 >
 > | **Melee, Weapon** |        **Maneuver** |
@@ -21310,14 +21320,17 @@ Unless otherwise indicated, a creature can grab only one creature at a time.
 
 See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for information on the grabbed condition.
 
+<!-- @type: feature | @id: hide -->
 #### Hide
 
 Using the Hide maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or concealment. See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
 
+<!-- @type: feature | @id: knockback -->
 #### Knockback
 
 A creature wanting to push an adjacent creature away from them can attempt to shove that creature using the following ability.
 
+<!-- @type: ability -->
 > ###### Knockback
 >
 > | **Melee, Weapon** |        **Maneuver** |
@@ -21332,24 +21345,29 @@ A creature wanting to push an adjacent creature away from them can attempt to sh
 >
 > **Effect:** You can usually target only creatures of your size or smaller. If your Might score is 2 or higher, you can target any creature with a size equal to or less than your Might score.
 
+<!-- @type: feature | @id: make-or-assist-a-test -->
 #### Make or Assist a Test
 
 Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door's lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a Reason test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.
 
+<!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
 
 The Search for Hidden Creatures maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
+<!-- @type: feature | @id: stand-up -->
 #### Stand Up
 
 A creature can use the Stand Up maneuver to stand up if they are prone, ending that condition. Alternatively, they can use this maneuver to make a willing adjacent prone creature stand up.
 
+<!-- @type: feature | @id: use-consumable -->
 #### Use Consumable
 
 Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
+<!-- @type: feature-group | @id: main-actions -->
 ### Main Actions
 
 When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
@@ -21358,20 +21376,24 @@ You can also use your main action to help another creature regain Stamina, charg
 
 You can convert your main action into a maneuver or a move action, allowing you to [take two](scc:mcdm.heroes.v1/feature.ability.troubadour.level-5/take-two) maneuvers or move actions on your turn.
 
+<!-- @type: feature | @id: charge -->
 #### Charge
 
 When a creature takes the Charge main action, they move up to their speed in a straight line, then make a melee free strike (see Free Strikes below) against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a free strike.
 
 A creature can't move through difficult terrain or shift when they charge. They can fly or burrow as part of the Charge main action if they have that movement available to them, but they can't climb or swim while charging unless they can automatically use that movement at full speed.
 
+<!-- @type: feature | @id: defend -->
 #### Defend
 
 When a creature takes the Defend main action, ability rolls made against them have a double bane until the start of their next turn. Additionally, you have a double edge on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is taunted by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
+<!-- @type: feature | @id: free-strike -->
 #### Free Strike
 
 A creature can use this main action to make a free strike (see Free  Strikes below). Most of the time, you'll want to use the more impactful main actions granted by your class, kit, or other feature, just as the Director will use the main actions in a creature's stat block, but free strikes are available for when all else fails. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) who has no other options for ranged strikes might use the Ranged Weapon Free Strike ability with an improvised weapon when battling a flying foe.
 
+<!-- @type: feature | @id: heal -->
 #### Heal
 
 A creature who uses the Heal main action employs medicine or inspiring words to make an adjacent creature feel better and stay in the fight. The target creature can spend a Recovery to regain Stamina, or can make a saving throw against one effect they are suffering that is ended by a saving throw.

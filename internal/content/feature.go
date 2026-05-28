@@ -73,6 +73,8 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	typePath := []string{"feature", "trait"}
 	if classID != "" {
 		typePath = append(typePath, classID)
+	} else if kitID == "" {
+		typePath = append(typePath, "common")
 	}
 	if levelStr != "" {
 		typePath = append(typePath, "level-"+levelStr)
