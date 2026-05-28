@@ -2,7 +2,7 @@
 
 Generated from `classification.json`. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 312
+**Total linkable terms:** 416
 
 ## Classes (9 terms)
 
@@ -360,3 +360,166 @@ Generated from `classification.json`. See `linking-guide.md` for rules.
 | The Basics | the basicses | `mcdm.heroes.v1/chapter/the-basics` |
 | Titles | titleses | `mcdm.heroes.v1/chapter/titles` |
 | Treasures | treasureses | `mcdm.heroes.v1/chapter/treasures` |
+
+## Conditions (9 terms)
+
+**Disambiguation required:** These terms are common English words. Link only when referring to the game condition mechanic (a creature having or gaining the condition), not mundane usage. See linking-guide.md for examples.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Bleeding | bleeding | `mcdm.heroes.v1/condition/bleeding` |
+| Dazed | dazed | `mcdm.heroes.v1/condition/dazed` |
+| Frightened | frightened | `mcdm.heroes.v1/condition/frightened` |
+| Grabbed | grabbed | `mcdm.heroes.v1/condition/grabbed` |
+| Prone | prone | `mcdm.heroes.v1/condition/prone` |
+| Restrained | restrained | `mcdm.heroes.v1/condition/restrained` |
+| Slowed | slowed | `mcdm.heroes.v1/condition/slowed` |
+| Taunted | taunted | `mcdm.heroes.v1/condition/taunted` |
+| Weakened | weakened | `mcdm.heroes.v1/condition/weakened` |
+
+## Skills — Crafting (10 terms)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Alchemy | alchemy | `mcdm.heroes.v1/skill/alchemy` |
+| Architecture | architecture | `mcdm.heroes.v1/skill/architecture` |
+| Blacksmithing | blacksmithing | `mcdm.heroes.v1/skill/blacksmithing` |
+| Carpentry | carpentry | `mcdm.heroes.v1/skill/carpentry` |
+| Cooking | cooking | `mcdm.heroes.v1/skill/cooking` |
+| Fletching | fletching | `mcdm.heroes.v1/skill/fletching` |
+| Forgery | forgery | `mcdm.heroes.v1/skill/forgery` |
+| Jewelry | jewelry | `mcdm.heroes.v1/skill/jewelry` |
+| Mechanics | mechanics | `mcdm.heroes.v1/skill/mechanics` |
+| Tailoring | tailoring | `mcdm.heroes.v1/skill/tailoring` |
+
+## Skills — Exploration (10 terms)
+
+**Disambiguation required:** Many of these are common verbs. Link only when naming the game skill.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Climb | climb | `mcdm.heroes.v1/skill/climb` |
+| Drive | drive | `mcdm.heroes.v1/skill/drive` |
+| Endurance | endurance | `mcdm.heroes.v1/skill/endurance` |
+| Gymnastics | gymnastics | `mcdm.heroes.v1/skill/gymnastics` |
+| Heal | heal | `mcdm.heroes.v1/skill/heal` |
+| Jump | jump | `mcdm.heroes.v1/skill/jump` |
+| Lift | lift | `mcdm.heroes.v1/skill/lift` |
+| Navigate | navigate | `mcdm.heroes.v1/skill/navigate` |
+| Ride | ride | `mcdm.heroes.v1/skill/ride` |
+| Swim | swim | `mcdm.heroes.v1/skill/swim` |
+
+## Skills — Interpersonal (13 terms)
+
+**Disambiguation required:** Link only when naming the game skill.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Brag | brag | `mcdm.heroes.v1/skill/brag` |
+| Empathize | empathize | `mcdm.heroes.v1/skill/empathize` |
+| Flirt | flirt | `mcdm.heroes.v1/skill/flirt` |
+| Gamble | gamble | `mcdm.heroes.v1/skill/gamble` |
+| Handle Animals | handle animals | `mcdm.heroes.v1/skill/handle-animals` |
+| Interrogate | interrogate | `mcdm.heroes.v1/skill/interrogate` |
+| Intimidate | intimidate | `mcdm.heroes.v1/skill/intimidate` |
+| Lead | lead | `mcdm.heroes.v1/skill/lead` |
+| Lie | lie | `mcdm.heroes.v1/skill/lie` |
+| Music | music | `mcdm.heroes.v1/skill/music` |
+| Perform | perform | `mcdm.heroes.v1/skill/perform` |
+| Persuade | persuade | `mcdm.heroes.v1/skill/persuade` |
+| Read Person | read person | `mcdm.heroes.v1/skill/read-person` |
+
+## Skills — Intrigue (12 terms)
+
+**Disambiguation required:** Link only when naming the game skill.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Alertness | alertness | `mcdm.heroes.v1/skill/alertness` |
+| Conceal Object | conceal object | `mcdm.heroes.v1/skill/conceal-object` |
+| Disguise | disguise | `mcdm.heroes.v1/skill/disguise` |
+| Eavesdrop | eavesdrop | `mcdm.heroes.v1/skill/eavesdrop` |
+| Escape Artist | escape artist | `mcdm.heroes.v1/skill/escape-artist` |
+| Hide | hide | `mcdm.heroes.v1/skill/hide` |
+| Pick Lock | pick lock | `mcdm.heroes.v1/skill/pick-lock` |
+| Pick Pocket | pick pocket | `mcdm.heroes.v1/skill/pick-pocket` |
+| Sabotage | sabotage | `mcdm.heroes.v1/skill/sabotage` |
+| Search | search | `mcdm.heroes.v1/skill/search` |
+| Sneak | sneak | `mcdm.heroes.v1/skill/sneak` |
+| Track | track | `mcdm.heroes.v1/skill/track` |
+
+## Skills — Lore (12 terms)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Criminal Underworld | criminal underworld | `mcdm.heroes.v1/skill/criminal-underworld` |
+| Culture | culture | `mcdm.heroes.v1/skill/culture` |
+| History | history | `mcdm.heroes.v1/skill/history` |
+| Magic | magic | `mcdm.heroes.v1/skill/magic` |
+| Monsters | monsters | `mcdm.heroes.v1/skill/monsters` |
+| Nature | nature | `mcdm.heroes.v1/skill/nature` |
+| Psionics | psionics | `mcdm.heroes.v1/skill/psionics` |
+| Religion | religion | `mcdm.heroes.v1/skill/religion` |
+| Rumors | rumors | `mcdm.heroes.v1/skill/rumors` |
+| Society | society | `mcdm.heroes.v1/skill/society` |
+| Strategy | strategy | `mcdm.heroes.v1/skill/strategy` |
+| Timescape | timescape | `mcdm.heroes.v1/skill/timescape` |
+
+## Negotiation Motivations/Pitfalls (12 terms)
+
+**Disambiguation required:** These are extremely common English words. Link only when referencing an NPC's motivation or pitfall in the negotiation system, not general usage. See linking-guide.md for examples.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Benevolence | benevolence | `mcdm.heroes.v1/negotiation/benevolence` |
+| Discovery | discovery | `mcdm.heroes.v1/negotiation/discovery` |
+| Freedom | freedom | `mcdm.heroes.v1/negotiation/freedom` |
+| Greed | greed | `mcdm.heroes.v1/negotiation/greed` |
+| Higher Authority | higher authority | `mcdm.heroes.v1/negotiation/higher-authority` |
+| Justice | justice | `mcdm.heroes.v1/negotiation/justice` |
+| Legacy | legacy | `mcdm.heroes.v1/negotiation/legacy` |
+| Peace | peace | `mcdm.heroes.v1/negotiation/peace` |
+| Power | power | `mcdm.heroes.v1/negotiation/power` |
+| Protection | protection | `mcdm.heroes.v1/negotiation/protection` |
+| Revelry | revelry | `mcdm.heroes.v1/negotiation/revelry` |
+| Vengeance | vengeance | `mcdm.heroes.v1/negotiation/vengeance` |
+
+## Movement (13 terms)
+
+**Disambiguation required:** Many are common verbs. Link when used as game movement mechanics, not mundane actions.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Forced Movement | forced movement, force moved, force move | `mcdm.heroes.v1/movement/forced-movement` |
+| Shifting | shifting, shift | `mcdm.heroes.v1/movement/shifting` |
+| Difficult Terrain | difficult terrain | `mcdm.heroes.v1/movement/difficult-terrain` |
+| Damaging Terrain | damaging terrain | `mcdm.heroes.v1/movement/damaging-terrain` |
+| High Ground | high ground | `mcdm.heroes.v1/movement/high-ground` |
+| Walk | walk | `mcdm.heroes.v1/movement/walk` |
+| Burrow | burrow, burrowing | `mcdm.heroes.v1/movement/burrow` |
+| Climb or Swim | climb or swim | `mcdm.heroes.v1/movement/climb-or-swim` |
+| Jump | jump, jumping | `mcdm.heroes.v1/movement/jump` |
+| Crawl | crawl, crawling | `mcdm.heroes.v1/movement/crawl` |
+| Fly | fly, flying | `mcdm.heroes.v1/movement/fly` |
+| Hover | hover, hovering | `mcdm.heroes.v1/movement/hover` |
+| Teleport | teleport, teleports, teleporting | `mcdm.heroes.v1/movement/teleport` |
+
+## Cultures (13 terms)
+
+**Disambiguation required:** Link only when referencing the culture benefit type in the character creation system.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Nomadic | nomadic | `mcdm.heroes.v1/culture/nomadic` |
+| Rural | rural | `mcdm.heroes.v1/culture/rural` |
+| Secluded | secluded | `mcdm.heroes.v1/culture/secluded` |
+| Urban | urban | `mcdm.heroes.v1/culture/urban` |
+| Wilderness | wilderness | `mcdm.heroes.v1/culture/wilderness` |
+| Bureaucratic | bureaucratic | `mcdm.heroes.v1/culture/bureaucratic` |
+| Communal | communal | `mcdm.heroes.v1/culture/communal` |
+| Academic | academic | `mcdm.heroes.v1/culture/academic` |
+| Creative | creative | `mcdm.heroes.v1/culture/creative` |
+| Labor | labor | `mcdm.heroes.v1/culture/labor` |
+| Lawless | lawless | `mcdm.heroes.v1/culture/lawless` |
+| Martial | martial | `mcdm.heroes.v1/culture/martial` |
+| Noble | noble | `mcdm.heroes.v1/culture/noble` |

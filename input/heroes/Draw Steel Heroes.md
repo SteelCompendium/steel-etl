@@ -1514,7 +1514,6 @@ Unless otherwise noted, a character of any of these ancestries is size 1M and ha
 
 Where an ancestry provides you with an ability, see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for details of the ability format.
 
-<!-- @type: feature | @id: ancestry-traits -->
 ### Ancestry Traits
 
 Each ancestry has one or more signature traits, which your hero gets for free if they take that ancestry. This is a defining feature that other heroes of your ancestry also possess.
@@ -19525,7 +19524,7 @@ You travel with a giant hawk who you stole from the Hawklords (see Vasloria in C
 
 "Do not be alarmed! We are not the humanoid we appear to be. We are an intelligent fungal collective, using this body as a host. No, we are doing nothing unsavory! This body was dead when we found it, and we merely gave it another chance at life. We are friendly. Please put down those torches!"
 
-**Benefit:** You are a sapient fungus who inhabits a humanoid body. Your [host body](scc:mcdm.heroes.v1/complication/host-body) follows all the usual rules for a character and is considered to be alive. At any time while your [host body](scc:mcdm.heroes.v1/complication/host-body) is alive, or for 24 hours after it dies, you can use a main action to move to a dead humanoid within 10 squares of the body and use it as your new [host body](scc:mcdm.heroes.v1/complication/host-body), provided the body belongs to a playable ancestry. When you do so, your original [host body](scc:mcdm.heroes.v1/complication/host-body) dies if it was alive. Your new [host body](scc:mcdm.heroes.v1/complication/host-body) gains all your statistics except size, [ancestry traits](scc:mcdm.heroes.v1/feature.trait/ancestry-traits), and other statistics related to your former [host body's](scc:mcdm.heroes.v1/complication/host-body) ancestry, which you instead gain from your new [host body](scc:mcdm.heroes.v1/complication/host-body). When you inhabit a new [host body](scc:mcdm.heroes.v1/complication/host-body), you start with 1 Stamina and can immediately spend a Recovery.
+**Benefit:** You are a sapient fungus who inhabits a humanoid body. Your [host body](scc:mcdm.heroes.v1/complication/host-body) follows all the usual rules for a character and is considered to be alive. At any time while your [host body](scc:mcdm.heroes.v1/complication/host-body) is alive, or for 24 hours after it dies, you can use a main action to move to a dead humanoid within 10 squares of the body and use it as your new [host body](scc:mcdm.heroes.v1/complication/host-body), provided the body belongs to a playable ancestry. When you do so, your original [host body](scc:mcdm.heroes.v1/complication/host-body) dies if it was alive. Your new [host body](scc:mcdm.heroes.v1/complication/host-body) gains all your statistics except size, [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries), and other statistics related to your former [host body's](scc:mcdm.heroes.v1/complication/host-body) ancestry, which you instead gain from your new [host body](scc:mcdm.heroes.v1/complication/host-body). When you inhabit a new [host body](scc:mcdm.heroes.v1/complication/host-body), you start with 1 Stamina and can immediately spend a Recovery.
 
 **Drawback:** You have fire weakness 5. Additionally, you take a bane on any test made to read a humanoid creature's emotions or body language.
 
@@ -25973,7 +25972,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *[Devil](scc:mcdm.heroes.v1/ancestry/devil) Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
-- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/feature.trait/ancestry-traits) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
+- *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly [Devil](scc:mcdm.heroes.v1/ancestry/devil):* You gain the Silver Tongue signature trait from the [devil](scc:mcdm.heroes.v1/ancestry/devil) ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
 
@@ -25987,7 +25986,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Dragon Scaled:* Dragon scales grow on your body wherever the heart's blood of the dragon touched you. You gain the Wyrmplate signature trait from the [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) ancestry (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
-- *Dragon Touched:* You gain 3 ancestry points to spend on purchased [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) [ancestry traits](scc:mcdm.heroes.v1/feature.trait/ancestry-traits).
+- *Dragon Touched:* You gain 3 ancestry points to spend on purchased [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries).
 
 <!-- @type: title -->
 #### Fleet Admiral
@@ -26078,7 +26077,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 - *Prismacore Eyes:* Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can't use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to stability against magic or psionic abilities.
 - *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an edge on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
-- *[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider) Training:* You gain 2 ancestry points to spend on purchased [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) [ancestry traits](scc:mcdm.heroes.v1/feature.trait/ancestry-traits) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
+- *[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider) Training:* You gain 2 ancestry points to spend on purchased [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 
 <!-- @type: title -->
 #### Scarred
