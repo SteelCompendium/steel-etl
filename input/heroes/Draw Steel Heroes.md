@@ -3282,7 +3282,7 @@ When you build a culture, select its environment aspect from the following optio
 
 A [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture travels from place to place to survive. Members of a [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in [nomadic](scc:mcdm.heroes.v1/culture/nomadic) cultures learn to navigate the wilderness and work closely with others to survive.
 
-**Skill Options:** One skill from the exploration or interpersonal skill groups. (*Quick Build:* Navigate.)
+**Skill Options:** One skill from the exploration or interpersonal skill groups. (*Quick Build:* [Navigate](scc:mcdm.heroes.v1/skill/navigate).)
 
 ##### Rural
 
@@ -3292,7 +3292,7 @@ Living among a small population, most folks in a [rural](scc:mcdm.heroes.v1/cult
 
 gets the sniffles, folks want an acolyte ready to wear the fancy robes should the worst occur.
 
-**Skill Options:** One skill from the crafting or lore skill groups. (*Quick Build:* Nature.)
+**Skill Options:** One skill from the crafting or lore skill groups. (*Quick Build:* [Nature](scc:mcdm.heroes.v1/skill/nature).)
 
 ##### Secluded
 
@@ -3300,19 +3300,19 @@ A [secluded](scc:mcdm.heroes.v1/culture/secluded) culture is based in one relati
 
 When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.
 
-**Skill Options:** One skill from the interpersonal or lore skill groups. (*Quick Build:* Read Person.)
+**Skill Options:** One skill from the interpersonal or lore skill groups. (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill/read-person).)
 
 ##### Urban
 
 An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
 
-**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* Alertness.)
+**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill/alertness).)
 
 ##### Wilderness
 
 A [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
 
-**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* Endurance.)
+**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* [Endurance](scc:mcdm.heroes.v1/skill/endurance).)
 
 #### Organization
 
@@ -3328,7 +3328,7 @@ have one person at the top, though others might be ruled by a council. A trade g
 
 Those who thrive in [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
 
-**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* Persuade.)
+**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Persuade](scc:mcdm.heroes.v1/skill/persuade).)
 
 ##### Communal
 
@@ -3336,7 +3336,7 @@ A [communal](scc:mcdm.heroes.v1/culture/communal) culture is a place where all m
 
 Many [communal](scc:mcdm.heroes.v1/culture/communal) cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in [communal](scc:mcdm.heroes.v1/culture/communal) cultures focus on fending for themselves while avoiding the danger that other groups can represent.
 
-**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* Jump.)
+**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* [Jump](scc:mcdm.heroes.v1/skill/jump).)
 
 #### Upbringing
 
@@ -3348,7 +3348,7 @@ Pick your upbringing aspect from the following list: [academic](scc:mcdm.heroes.
 
 Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an [academic](scc:mcdm.heroes.v1/culture/academic) culture learn how to wield the power that is knowledge.
 
-**Skill Options:** One skill from the lore skill group. (*Quick Build:* History.)
+**Skill Options:** One skill from the lore skill group. (*Quick Build:* [History](scc:mcdm.heroes.v1/skill/history).)
 
 ##### Creative
 
@@ -3366,7 +3366,7 @@ Your hero came of age in a culture where people labored for a living. They might
 
 Your hero grew up among folk who performed activities that other people—whether within or outside their culture—considered unlawful. A band of pirates, a guild of assassins, or an organization of spies all commit unlawful acts for money. And under tyranny, people engaged in rebellion are often considered [lawless](scc:mcdm.heroes.v1/culture/lawless) in their actions and activities. People brought up in a [lawless](scc:mcdm.heroes.v1/culture/lawless) culture typically don't mind breaking the rules when it suits them—and are good at making sure no one finds out they did.
 
-**Skill Options:** One skill from the intrigue skill group. (*Quick Build:* Sneak.)
+**Skill Options:** One skill from the intrigue skill group. (*Quick Build:* [Sneak](scc:mcdm.heroes.v1/skill/sneak).)
 
 ##### Martial
 
@@ -3378,7 +3378,7 @@ A hero with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing was raise
 
 Your hero grew up among leaders who rule over others and play the games of politics to maintain power. Many families are [noble](scc:mcdm.heroes.v1/culture/noble)s by birthright, but some cultures have [noble](scc:mcdm.heroes.v1/culture/noble) titles earned through deeds or popularity. Whatever the case, heroes with this background understand why the whispered words in the right ear can sometimes be more powerful than any army.
 
-**Skill Options:** One skill from the interpersonal skill group. (*Quick Build:* Lead.)
+**Skill Options:** One skill from the interpersonal skill group. (*Quick Build:* [Lead](scc:mcdm.heroes.v1/skill/lead).)
 
 > **But I Really Want Alertness**
 >
@@ -3587,7 +3587,7 @@ Career? Who needs a career when you're born into money! Or marry into it! Or con
 
 You gain the following career benefits:
 
-**Skills:** One skill from the interpersonal skill group and one skill from the lore group (*Quick Build:* Brag, Society.)
+**Skills:** One skill from the interpersonal skill group and one skill from the lore group (*Quick Build:* [Brag](scc:mcdm.heroes.v1/skill/brag), [Society](scc:mcdm.heroes.v1/skill/society).)
 
 **Languages:** One language
 
@@ -3618,7 +3618,7 @@ You made and sold useful wares. In defining your career, think about the followi
 
 You gain the following career benefits:
 
-**Skills:** Two skills from the crafting skill group (*Quick Build:* Blacksmithing, Carpentry.)
+**Skills:** Two skills from the crafting skill group (*Quick Build:* [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing), [Carpentry](scc:mcdm.heroes.v1/skill/carpentry).)
 
 **Languages:** One language
 
@@ -3787,7 +3787,7 @@ In the past, you entertained the masses with flashy displays of violence in the 
 
 You gain the following career benefits:
 
-**Skills:** Two skills from the exploration skill group (*Quick Build:*  Gymnastics, Jump.)
+**Skills:** Two skills from the exploration skill group (*Quick Build:*  [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), [Jump](scc:mcdm.heroes.v1/skill/jump).)
 
 **Languages:** One language
 
@@ -3901,7 +3901,7 @@ You worked as a leader within a formal, bureaucratic organization or government.
 
 You gain the following career benefits:
 
-**Skills:** Two skills from the interpersonal skill group (*Quick Build:* Lead, Lie.)
+**Skills:** Two skills from the interpersonal skill group (*Quick Build:* [Lead](scc:mcdm.heroes.v1/skill/lead), [Lie](scc:mcdm.heroes.v1/skill/lie).)
 
 **Languages:** One language
 
@@ -3932,7 +3932,7 @@ From an early age, you dedicated yourself to learning, whether you shared the kn
 
 You gain the following career benefits:
 
-**Skills:** Two skills from the lore skill group (*Quick Build:* History, Magic.)
+**Skills:** Two skills from the lore skill group (*Quick Build:* [History](scc:mcdm.heroes.v1/skill/history), [Magic](scc:mcdm.heroes.v1/skill/magic).)
 
 **Languages:** One language
 
@@ -3961,7 +3961,7 @@ You worked on a ship, whether a merchant cog, a mercenary or military craft, or 
 
 You gain the following career benefits:
 
-**Skills:** Swim (from the exploration skill group), plus two more skills from the exploration group (*Quick Build:* Climb, Gymnastics, Swim.)
+**Skills:** Swim (from the exploration skill group), plus two more skills from the exploration group (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill/climb), [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), [Swim](scc:mcdm.heroes.v1/skill/swim).)
 
 **Languages:** Two languages
 
@@ -3988,7 +3988,7 @@ In your formative years, you fought tirelessly in skirmishes and campaigns again
 
 You gain the following career benefits:
 
-**Skills:** One skill from the exploration skill group and one skill from the intrigue group (*Quick Build:* Alertness, Endurance.)
+**Skills:** One skill from the exploration skill group and one skill from the intrigue group (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill/alertness), [Endurance](scc:mcdm.heroes.v1/skill/endurance).)
 
 **Languages:** Two languages
 
@@ -4017,7 +4017,7 @@ You protected a wild region from those who sought to harm it, such as poachers a
 
 You gain the following career benefits:
 
-**Skills:** Nature (from the lore skill group), plus one skill from the exploration group and one skill from the intrigue group (*Quick Build:*  Nature, Navigate, Track.)
+**Skills:** Nature (from the lore skill group), plus one skill from the exploration group and one skill from the intrigue group (*Quick Build:*  [Nature](scc:mcdm.heroes.v1/skill/nature), Navigate, Track.)
 
 **Languages:** One language
 
@@ -4047,7 +4047,7 @@ You served as an officer of the law for a local government. You might have been 
 
 You gain the following career benefits:
 
-**Skills:** Alertness (from the intrigue skill group), plus two more skills from the intrigue group (*Quick Build:* Alertness, Search, Track.)
+**Skills:** Alertness (from the intrigue skill group), plus two more skills from the intrigue group (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill/alertness), [Search](scc:mcdm.heroes.v1/skill/search), Track.)
 
 **Languages:** Two languages
 

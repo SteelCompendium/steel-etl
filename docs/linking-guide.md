@@ -78,7 +78,7 @@ Culture terms (nomadic, rural, urban, bureaucratic, etc.) refer to the culture b
 ### Pre-existing links
 
 - **First pass (complete):** All chapters have been stripped of stale links and re-linked for classes, ancestries, and chapters.
-- **Current pass:** Add new type links (conditions, skills, negotiations, movements, cultures) to existing chapters. Preserve all existing scc: links.
+- **Second pass (complete, 2026-05-28):** Added new type links (conditions, skills, negotiations, movements, cultures) to all 18 chapters. 1,229 new links added; 2,818 total SCC references in document. Each instance was AI-evaluated for mundane vs. game-mechanic disambiguation.
 
 ### Uncertainty marker
 
@@ -116,13 +116,13 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 
 | Chapter | Lines | Conditions | Skills | Negotiations | Movements | Cultures | Classes | Ancestries | Careers | Kits | Perks | Complications | Titles | Treasures | Chapters |
 |---------|-------|-----------|--------|-------------|-----------|----------|---------|-----------|---------|------|-------|--------------|--------|-----------|----------|
-| Introduction | 7-589 | done (18) | - | - | done (17) | - | done (28) | done (22) | - | - | - | - | - | - | done (3) |
-| The Basics | 590-1055 | done (5) | - | - | done (1) | - | done (17) | done (36) | - | - | - | - | - | - | done (11) |
+| Introduction | 7-589 | done (18) | done (0) | done (0) | done (17) | done (0) | done (28) | done (22) | - | - | - | - | - | - | done (3) |
+| The Basics | 590-1055 | done (5) | done (0) | done (0) | done (1) | done (0) | done (17) | done (36) | - | - | - | - | - | - | done (11) |
 | Making a Hero | 1056-1263 | done (0) | done (0) | done (0) | done (0) | done (0) | done (12) | done (18) | - | - | - | - | - | - | done (15) |
-| Ancestries | 1264-3199 | done (16) | done (1) | - | done (7) | - | done (22) | done (324) | - | - | - | - | - | - | done (11) |
+| Ancestries | 1264-3199 | done (16) | done (1) | done (0) | done (7) | done (0) | done (22) | done (324) | - | - | - | - | - | - | done (11) |
 | Background | 3200-3206 | done (0) | done (0) | done (0) | done (0) | done (0) | - | - | - | - | - | - | - | - | - |
-| Cultures | 3207-3493 | done (0) | done (6) | - | - | done (21) | - | done (47) | - | - | - | - | - | - | done (2) |
-| Careers | 3494-4065 | done (0) | done (8) | - | - | - | done (4) | - | - | - | - | - | - | - | done (5) |
+| Cultures | 3207-3493 | done (0) | done (13) | done (0) | done (0) | done (21) | - | done (47) | - | - | - | - | - | - | done (2) |
+| Careers | 3494-4065 | done (0) | done (17) | done (0) | done (0) | done (0) | done (4) | - | - | - | - | - | - | - | done (5) |
 | Classes | 4066-17606 | done (434) | done (34) | done (0) | done (257) | done (0) | done (316) | done (4) | - | - | - | - | - | - | done (67) |
 | Kits | 17607-18580 | done (8) | done (0) | done (0) | done (7) | done (0) | done (5) | - | - | - | - | - | - | - | done (4) |
 | Perks | 18581-18946 | done (0) | done (1) | done (0) | done (1) | done (0) | - | - | - | - | - | - | - | - | done (2) |

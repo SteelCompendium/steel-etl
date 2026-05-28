@@ -97,3 +97,5 @@ Key references:
 - `ANNOTATION-GUIDE.md` -- Annotation format and conventions
 - `pipeline.yaml` -- Pipeline configuration
 - `../v2/site.yaml` -- Site builder configuration
+- `docs/linking-guide.md` -- Rules for adding SCC cross-reference links (conditions, skills, movement, negotiation, culture disambiguation)
+- `docs/linking-reference.md` -- All 416 linkable terms with display names, variants, and SCC codes
