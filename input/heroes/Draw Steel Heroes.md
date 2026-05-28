@@ -139,13 +139,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Bane:** A situational disadvantage that gives a creature a −2 penalty to a power roll.
 
-**Bleeding:** A condition that causes a creature to take 1d6 + level damage whenever they use a main action or triggered action, or make a power roll using Might or Agility.
+**[Bleeding](scc:mcdm.heroes.v1/condition/bleeding):** A condition that causes a creature to take 1d6 + level damage whenever they use a main action or triggered action, or make a power roll using Might or Agility.
 
 **Bonus:** A positive number that increases a creature's statistics or the roll of a die.
 
 **Breakthrough:** A natural 19 or 20 on a project roll. When a character experiences a breakthrough, they can make another project roll for the same project as part of the same respite activity.
 
-**Burrow:** A movement mode available to creatures with "burrow" in their speed entry, or who gain the capability to temporarily burrow. Such creatures can move through dirt horizontally at full speed.
+**[Burrow](scc:mcdm.heroes.v1/movement/burrow):** A movement mode available to creatures with "burrow" in their speed entry, or who gain the capability to temporarily [burrow](scc:mcdm.heroes.v1/movement/burrow). Such creatures can move through dirt horizontally at full speed.
 
 **Burst:** When an ability or other effect creates a burst, that area is expressed as "X burst." The number X is the radius of the burst, which always originates from the creature or object who created it, extends from the outside of the creator's space, and lasts only for as long as it takes to affect its targets.
 
@@ -167,7 +167,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Class:** A hero's current role, which largely determines how they interact with the game's rules.
 
-**[Claw Dirt](scc:mcdm.heroes.v1/feature.ability.common/claw-dirt):** An ability that uses a maneuver to allow a creature without "burrow" in their speed entry to burrow.
+**[Claw Dirt](scc:mcdm.heroes.v1/feature.ability.common/claw-dirt):** An ability that uses a maneuver to allow a creature without "burrow" in their speed entry to [burrow](scc:mcdm.heroes.v1/movement/burrow).
 
 **Climb:** A movement mode that allows a creature to climb without using additional squares of movement. A creature without "climb" in their speed entry or the temporary ability to climb must use 2 squares of movement to climb 1 square.
 
@@ -177,7 +177,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Concealment:** A state where a target has their form entirely covered in a concealing effect that doesn't block line of effect, such as darkness or fog. While a target has concealment, strikes used against them take a bane.
 
-**Condition:** A negative effect that applies to a creature and uses a universal shorthand name. Bleeding, dazed, frightened, grabbed, prone,  restrained, slowed, taunted, and weakened are conditions in *Draw Steel*.
+**Condition:** A negative effect that applies to a creature and uses a universal shorthand name. [Bleeding](scc:mcdm.heroes.v1/condition/bleeding), [dazed](scc:mcdm.heroes.v1/condition/dazed), [frightened](scc:mcdm.heroes.v1/condition/frightened), [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone),  [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), [taunted](scc:mcdm.heroes.v1/condition/taunted), and [weakened](scc:mcdm.heroes.v1/condition/weakened) are conditions in *Draw Steel*.
 
 **[Conduit](scc:mcdm.heroes.v1/class/conduit):** A class for a hero who is the devoted spellcasting priest of a saint or god.
 
@@ -189,7 +189,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Crafting Project:** A downtime project undertaken to create a treasure, a vehicle, or some other object.
 
-**Crawl:** A movement mode that allows a prone creature to move. A prone creature must use 2 squares of movement to crawl 1 square.
+**Crawl:** A movement mode that allows a [prone](scc:mcdm.heroes.v1/condition/prone) creature to move. A [prone](scc:mcdm.heroes.v1/condition/prone) creature must use 2 squares of movement to crawl 1 square.
 
 **Creature:** Living and unliving beings, including constructs and undead.
 
@@ -215,23 +215,23 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Damage Weakness:** A trait that makes a target increase damage they take of a specific damage type. Damage weakness is expressed as "[damage type] weakness X," or "damage weakness X" to represent weakness to all damage. Damage of the specified type dealt to the target is increased by X.
 
-**Damaging Terrain:** An area of obstacles that deal damage to creatures who are in the area or move through it. A creature can't shift into or out of damaging terrain, and can't jump out of damaging terrain.
+**[Damaging Terrain](scc:mcdm.heroes.v1/movement/damaging-terrain):** An area of obstacles that deal damage to creatures who are in the area or move through it. A creature can't shift into or out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain), and can't jump out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain).
 
-**Dazed:** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A dazed creature also can't use triggered actions, free triggered actions, or free maneuvers.
+**[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or free maneuvers.
 
 **Defend Main Action:** A main action that allows a creature to impose a double bane on all ability rolls made against them until the start of their next turn. Additionally, the creature has a double edge on tests when called for to resist environmental effects or a creature's traits or abilities.
 
 **[Devil](scc:mcdm.heroes.v1/ancestry/devil):** An ancestry from the Seven Cities of Hell.
 
-**Difficult Terrain:** An area of obstacles that are difficult to move through. It costs 1 additional square of movement to enter a square of difficult terrain. A creature can't shift into or out of difficult terrain, and can't jump out of difficult terrain.
+**[Difficult Terrain](scc:mcdm.heroes.v1/movement/difficult-terrain):** An area of obstacles that are difficult to move through. It costs 1 additional square of movement to enter a square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). A creature can't shift into or out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can't jump out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
-**Dig Maneuver:** A maneuver that allows a creature with "burrow" in their speed entry or the temporary ability to burrow to move a number of squares equal to their size vertically through dirt.
+**Dig Maneuver:** A maneuver that allows a creature with "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their speed entry or the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow) to move a number of squares equal to their size vertically through dirt.
 
 **Director:** The player who prepares, presents, and adjudicates the game for all the other players, who each create and run a hero.
 
 **Discipline:** The [null's](scc:mcdm.heroes.v1/class/null) Heroic Resource.
 
-**Disengage Move Action:** A move action that allows a creature to shift 1 square.
+**Disengage Move Action:** A move action that allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
 
 **Distance:** The number of squares away that a creature using an ability can affect targets with that ability. The "Distance" entry in an area ability also includes the type of area of effect created by that ability.
 
@@ -247,7 +247,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** An ancestry with stone skin and short stature.
 
-**Dying:** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is bleeding and they can't use the Catch Breath maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
+**Dying:** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and they can't use the Catch Breath maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
 
 **Echelon:** A grouping of heroic levels that informs players of the types of heroic deeds the heroes can achieve. There are four echelons of play: 1st echelon (1st to 3rd level), 2nd echelon (4th to 6th level), 3rd echelon (7th to 9th level), and 4th echelon (10th level).
 
@@ -261,23 +261,23 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Enhancement:** A property given to an armor, implement, or weapon treasure that a hero creates as part of a crafting project.
 
-**Escape Grab Maneuver:** A maneuver that allows a grabbed creature to make an ability roll to escape.
+**Escape Grab Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an ability roll to escape.
 
 **Essence:** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) Heroic Resource.
 
 **Experience (XP):** A hero's Victories convert to Experience when they finish a respite. Experience permanently increases a hero's capabilities by allowing them to increase in level.
 
-**Falling:** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land prone. A falling creature can reduce the effective height of their fall by a number of squares equal to their Agility score (minimum 0).
+**Falling:** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land [prone](scc:mcdm.heroes.v1/condition/prone). A falling creature can reduce the effective height of their fall by a number of squares equal to their Agility score (minimum 0).
 
 **Ferocity:** The [fury's](scc:mcdm.heroes.v1/class/fury) Heroic Resource.
 
 **Flanking:** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an edge on melee strikes against that enemy.
 
-**Fly:** A movement mode available to creatures with "fly" in their speed entry, or who gain the capability to temporarily fly. Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made prone or has their speed reduced to 0, they fall.
+**[Fly](scc:mcdm.heroes.v1/movement/fly):** A movement mode available to creatures with "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gain the capability to temporarily [fly](scc:mcdm.heroes.v1/movement/fly). Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made [prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall.
 
 **Focus:** The [tactician's](scc:mcdm.heroes.v1/class/tactician) Heroic Resource.
 
-**Forced Movement:** When an ability or effect compels a creature to move, usually against their will. There are three types of forced movement: a pull, a push, and a slide. Forced movement is always along the ground unless noted as vertical. Forced movement can be reduced by stability.
+**[Forced Movement](scc:mcdm.heroes.v1/movement/forced-movement):** When an ability or effect compels a creature to move, usually against their will. There are three types of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement): a pull, a push, and a slide. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is always along the ground unless noted as vertical. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can be reduced by stability.
 
 **Follower:** An NPC dedicated to helping a hero. Many of the actions of a follower are controlled by a player.
 
@@ -287,15 +287,15 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Free Triggered Action:** An action a creature can use on any turn, including their own, but only when a specific trigger occurs. There is no limit to the number of free triggered actions a creature can take during combat.
 
-**Frightened:** A condition that causes a creature to take a bane on ability rolls against the source of their fear. The creature can't willingly move closer to the source of their fear, and that source gains an edge on ability rolls made against the creature.
+**[Frightened](scc:mcdm.heroes.v1/condition/frightened):** A condition that causes a creature to take a bane on ability rolls against the source of their fear. The creature can't willingly move closer to the source of their fear, and that source gains an edge on ability rolls made against the creature.
 
 **[Fury](scc:mcdm.heroes.v1/class/fury):** A class for a hero warrior who courses with the ferocity of the Primordial Chaos.
 
 **God:** A deity who grants power to their most devout worshipers through saint intermediaries.
 
-**Grab Maneuver:** A maneuver that allows a creature to make an ability roll to make another creature grabbed by them.
+**Grab Maneuver:** A maneuver that allows a creature to make an ability roll to make another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by them.
 
-**Grabbed:** A condition that reduces a creature's speed to 0 and causes them to take a bane on abilities that don't target the creature, object, or effect that has them grabbed.
+**[Grabbed](scc:mcdm.heroes.v1/condition/grabbed):** A condition that reduces a creature's speed to 0 and causes them to take a bane on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 **Ground:** Any surface a creature could typically stand, sit, or lie upon.
 
@@ -319,9 +319,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[High Elves](scc:mcdm.heroes.v1/ancestry/high-elf):** A fey ancestry in tune with innate magic that affects how others interact with them.
 
-**High Ground:** A creature has the advantage of high ground when they use an ability against a target while standing on the ground and occupying a space that is fully above the target's space. This advantage grants the creature an edge on the ability roll.
+**[High Ground](scc:mcdm.heroes.v1/movement/high-ground):** A creature has the advantage of [high ground](scc:mcdm.heroes.v1/movement/high-ground) when they use an ability against a target while standing on the ground and occupying a space that is fully above the target's space. This advantage grants the creature an edge on the ability roll.
 
-**Hover:** A creature who has "hover" in their speed entry (commonly alongside "fly" or "teleport"), or who gains the ability to temporarily hover, can remain motionless in midair. They don't fall even if they are knocked prone or their speed is reduced to 0.
+**[Hover](scc:mcdm.heroes.v1/movement/hover):** A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their speed entry (commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the ability to temporarily [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are knocked [prone](scc:mcdm.heroes.v1/condition/prone) or their speed is reduced to 0.
 
 **[Human](scc:mcdm.heroes.v1/ancestry/human):** An ancestry much like [humans](scc:mcdm.heroes.v1/ancestry/human) in the real world, except that they can sense magic.
 
@@ -395,7 +395,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Objective:** A goal the heroes have during a combat encounter that must be achieved to end an encounter victoriously.
 
-**Opportunity Attack:** When an adjacent enemy willingly moves away from a creature without shifting or teleporting, the creature can make a melee free strike as an opportunity attack against the enemy.
+**Opportunity Attack:** When an adjacent enemy willingly moves away from a creature without [shifting](scc:mcdm.heroes.v1/movement/shifting) or [teleporting](scc:mcdm.heroes.v1/movement/teleport), the creature can make a melee free strike as an opportunity attack against the enemy.
 
 **Opposed Power Roll:** Two creatures with opposed goals each make a test to see who wins out. The test totals are compared, and the higher total succeeds while the lower fails.
 
@@ -431,11 +431,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Project Source:** Lore that must be obtained before a downtime project can be started.
 
-**Prone:** A condition that causes a creature to become flat on the ground. Strikes made by a prone creature take a bane, and melee abilities used against a prone creature gain an edge.
+**[Prone](scc:mcdm.heroes.v1/condition/prone):** A condition that causes a creature to become flat on the ground. Strikes made by a [prone](scc:mcdm.heroes.v1/condition/prone) creature take a bane, and melee abilities used against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gain an edge.
 
-**Pull:** A form of forced movement that pulls a target toward a creature or effect, moving them in a horizontal straight line.
+**Pull:** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that pulls a target toward a creature or effect, moving them in a horizontal straight line.
 
-**Push:** A form of forced movement that pushes a target away from a creature or effect, moving them in a horizontal straight line.
+**Push:** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that pushes a target away from a creature or effect, moving them in a horizontal straight line.
 
 **Ranged:** Ranged abilities can be used to target creatures or objects too far away to make direct contact with.
 
@@ -457,7 +457,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Respite Activity:** An activity that can be undertaken during a respite. A hero can take one respite activity per respite.
 
-**Restrained:** A condition that reduces a creature's speed to 0 and prevents them from using the Stand Up maneuver or being force moved.
+**[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's speed to 0 and prevents them from using the Stand Up maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
 **Retainer:** A follower who adventures alongside a hero.
 
@@ -481,7 +481,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** A class for a hero who is an expert infiltrator and thief utilizing magic.
 
-**Shift:** A movement mode that doesn't provoke opportunity attacks. Whenever a rule allows a creature to shift, they can choose to make a regular move of the same number of squares instead.
+**[Shift](scc:mcdm.heroes.v1/movement/shifting):** A movement mode that doesn't provoke opportunity attacks. Whenever a rule allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting), they can choose to make a regular move of the same number of squares instead.
 
 **Side:** A group of creatures working together in a combat encounter.
 
@@ -491,9 +491,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Skill:** Special knowledge or training that can be applied to a test. When a skill applies to a test, it grants a +2 bonus to the power roll.
 
-**Slide:** A form of forced movement that slides a target in any direction, moving them along any horizontal line.
+**Slide:** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that slides a target in any direction, moving them along any horizontal line.
 
-**Slowed:** A condition that reduces a creature's speed to 2.
+**[Slowed](scc:mcdm.heroes.v1/condition/slowed):** A condition that reduces a creature's speed to 2.
 
 **Space:** The number of squares taken up by a creature or object in length, width, and height, and the area of the same size that a creature or object occupies on an encounter map.
 
@@ -501,11 +501,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Square:** The smallest unit of measurement on an encounter map. Distance, space, and speed are all reckoned in squares.
 
-**Stability:** A measure of a creature's immovability. When a creature is force moved, the distance they can be force moved is reduced by a number of squares equal to their stability.
+**Stability:** A measure of a creature's immovability. When a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), the distance they can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to their stability.
 
 **Stamina:** A measure of a creature's health and vitality. When a hero's Stamina is reduced to 0 or lower, they are dying. When a nonhero creature's Stamina is reduced to 0, they die or are knocked unconscious, as determined by the creature who reduced them to 0 Stamina.
 
-**Stand Up Maneuver:** A maneuver that a prone creature can use to end the prone condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent prone creature to end the prone condition on them.
+**Stand Up Maneuver:** A maneuver that a [prone](scc:mcdm.heroes.v1/condition/prone) creature can use to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent [prone](scc:mcdm.heroes.v1/condition/prone) creature to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on them.
 
 **Strained:** A state the [talent](scc:mcdm.heroes.v1/class/talent) enters when they have clarity below 0, and which effects their abilities.
 
@@ -527,11 +527,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Talent](scc:mcdm.heroes.v1/class/talent):** A class for a hero who is a master of psionics.
 
-**Taunted:** A condition that causes a creature to have a double bane on ability rolls that don't target the creature or effect that taunted them.
+**[Taunted](scc:mcdm.heroes.v1/condition/taunted):** A condition that causes a creature to have a double bane on ability rolls that don't target the creature or effect that [taunted](scc:mcdm.heroes.v1/condition/taunted) them.
 
 **Target:** A creature or object affected by an ability or other effect. The target of an enemy's ability typically takes damage, has a condition or harmful effect imposed on them, or both. The target of an ally's ability typically gains some beneficial effect.
 
-**Teleport:** Moving from one location to another instantaneously. Teleporting requires line of effect to the space where a creature ends up, bypasses obstacles, and doesn't provoke opportunity attacks or other effects triggered by moving.
+**[Teleport](scc:mcdm.heroes.v1/movement/teleport):** Moving from one location to another instantaneously. [Teleporting](scc:mcdm.heroes.v1/movement/teleport) requires line of effect to the space where a creature ends up, bypasses obstacles, and doesn't provoke opportunity attacks or other effects triggered by moving.
 
 **Temporary Stamina:** An additional pool of Stamina that decreases first when a creature takes damage, and which disappears at the end of an encounter if not already lost.
 
@@ -569,15 +569,15 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Vasloria:** A forested, feudal-medieval continent in Orden.
 
-**Vertical:** When any form of forced movement is noted as vertical, the creature performing the forced movement can move the target up or down in addition to horizontally.
+**Vertical:** When any form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is noted as vertical, the creature performing the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can move the target up or down in addition to horizontally.
 
 **Victories:** A measure of a hero's increasing power over the course of an adventure, earned by triumphing in battles and overcoming other challenges.
 
-**Walk:** The most common movement type, used to move over solid ground. Walking can incorporate ambulating on legs, rolling, slithering, or any other default method of movement.
+**[Walk](scc:mcdm.heroes.v1/movement/walk):** The most common movement type, used to move over solid ground. Walking can incorporate ambulating on legs, rolling, slithering, or any other default method of movement.
 
 **Wall:** When an ability or other effect creates a wall, that area is expressed as "X wall." The number X is how many squares are used to make the wall. Each square must share at least one side (not just a corner) with another square of the wall. A wall effect has a duration specified by the effect, or it lasts indefinitely or until destroyed.
 
-**Weakened:** A condition that causes a creature to take a bane on power rolls.
+**[Weakened](scc:mcdm.heroes.v1/condition/weakened):** A condition that causes a creature to take a bane on power rolls.
 
 **Wealth:** A measure of a hero's material worth.
 
@@ -710,7 +710,7 @@ The specific outcome of any power roll is determined by the effect or ability th
 
 ##### Downgrade a Power Roll
 
-Whenever you make a power roll, you can downgrade it to select the outcome of a lower tier. For instance, if an ability has a tier 3 outcome that lets you impose the restrained condition on a creature, but the tier 2 outcome for that ability lets you impose the slowed condition, you can use the tier 2 outcome if you would rather have the creature slowed than restrained.
+Whenever you make a power roll, you can downgrade it to select the outcome of a lower tier. For instance, if an ability has a tier 3 outcome that lets you impose the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on a creature, but the tier 2 outcome for that ability lets you impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition, you can use the tier 2 outcome if you would rather have the creature [slowed](scc:mcdm.heroes.v1/condition/slowed) than [restrained](scc:mcdm.heroes.v1/condition/restrained).
 
 If you downgrade a critical hit, you still get the extra action benefit of the critical hit (see Critical Hit in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
@@ -722,23 +722,23 @@ When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result r
 
 #### Edges and Banes
 
-An archer standing on a castle wall fires down into a throng of enemies, hitting the mark each time thanks to their high ground. A drunken bandit struggles to land blows on sober opponents as alcohol clouds their senses. Under certain circumstances, you need more than just a characteristic to represent the advantages and disadvantages that heroes, their enemies, and their allies might have.
+An archer standing on a castle wall fires down into a throng of enemies, hitting the mark each time thanks to their [high ground](scc:mcdm.heroes.v1/movement/high-ground). A drunken bandit struggles to land blows on sober opponents as alcohol clouds their senses. Under certain circumstances, you need more than just a characteristic to represent the advantages and disadvantages that heroes, their enemies, and their allies might have.
 
 ##### Edge
 
-An **edge** represents a situational advantage a hero or an enemy has when making a power roll. For example, a standing hero who makes a melee strike against a prone creature gains an edge on the power roll for their strike. A pair of magic gloves that makes your hands sticky might grant you an edge when making a power roll to climb walls!
+An **edge** represents a situational advantage a hero or an enemy has when making a power roll. For example, a standing hero who makes a melee strike against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gains an edge on the power roll for their strike. A pair of magic gloves that makes your hands sticky might grant you an edge when making a power roll to climb walls!
 
 When you make a power roll with an edge, you gain a +2 bonus to the roll. If you make a power roll with two or more edges, you have a **double edge**. With a double edge, you don't add anything to the power roll, but the outcome of the roll automatically improves one tier (to a maximum of tier 3).
 
 ##### Bane
 
-A **bane** represents a situational disadvantage a hero or an enemy has when making a power roll. For example, if you make a strike while prone, the power roll for the strike takes a bane. A rainstorm might give you a bane on a power roll made to climb an outdoor wall because the weather makes the stone surface extra slick.
+A **bane** represents a situational disadvantage a hero or an enemy has when making a power roll. For example, if you make a strike while [prone](scc:mcdm.heroes.v1/condition/prone), the power roll for the strike takes a bane. A rainstorm might give you a bane on a power roll made to climb an outdoor wall because the weather makes the stone surface extra slick.
 
 When you make a power roll with a bane, you take a −2 penalty to the roll. If you make a power roll with two or more banes, you have a **double bane**. With a double bane, you don't subtract anything from the power roll, but the outcome of the roll automatically decreases one tier (to a minimum of tier 1).
 
 ##### Rolling With Edges and Banes
 
-Under certain circumstances, you might have one or more edges and banes on the same roll. For instance, you might take a bane when weakened by poison, even as you gain an edge for striking a prone creature. In general, edges and banes cancel each other out, resolving as follows:
+Under certain circumstances, you might have one or more edges and banes on the same roll. For instance, you might take a bane when [weakened](scc:mcdm.heroes.v1/condition/weakened) by poison, even as you gain an edge for striking a [prone](scc:mcdm.heroes.v1/condition/prone) creature. In general, edges and banes cancel each other out, resolving as follows:
 
 - If you have an edge and a bane, or if you have a double edge and a double bane, the roll is made as usual without any edges or banes.
 - If you have a double edge and just one bane, the roll is made with one edge, regardless of how many individual edges contribute to the double edge.
@@ -750,7 +750,7 @@ The rules tell you when to modify a roll with an edge or a bane. The Director ca
 
 > **Why Cap?**
 >
-> We capped edges and banes at a maximum of two each for several reasons, including thinking about the narrative of those penalties. Every little advantage or disadvantage in a heroic story has diminishing returns, acknowledging that a creature can benefit or be hindered by short-term circumstances only so much. For example, a character who is prone and weakened by poison already finds it difficult to attack—so that becoming restrained by a net can't really make it harder.
+> We capped edges and banes at a maximum of two each for several reasons, including thinking about the narrative of those penalties. Every little advantage or disadvantage in a heroic story has diminishing returns, acknowledging that a creature can benefit or be hindered by short-term circumstances only so much. For example, a character who is [prone](scc:mcdm.heroes.v1/condition/prone) and [weakened](scc:mcdm.heroes.v1/condition/weakened) by poison already finds it difficult to attack—so that becoming [restrained](scc:mcdm.heroes.v1/condition/restrained) by a net can't really make it harder.
 
 We also liked capping edges and banes at two because it keeps play quick. It's nice to not need to count beyond two positive or negative circumstances in a battle with a lot of effects flying around.
 
@@ -1274,7 +1274,7 @@ This chapter details twelve ancestries for the game:
 
 **[Devil](scc:mcdm.heroes.v1/ancestry/devil):** [Devils](scc:mcdm.heroes.v1/ancestry/devil) originated in the Seven Cities of Hell and have a supernatural charisma that helps them persuade others. They are similar in stature to [humans](scc:mcdm.heroes.v1/ancestry/human), and their skin tones include deep blues, purples, and reds. They sport horns, eyes of all shades (including gold and red), and tails, and some have feathered or leathery wings.
 
-**[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** [Dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) are muscled draconic humanoids who stand between 6 and 7 feet tall. The scales covering their reptilian heads, bodies, and tails can be almost any color. All [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) have wings, but on only a few are those wings big enough to let them fly.
+**[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** [Dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) are muscled draconic humanoids who stand between 6 and 7 feet tall. The scales covering their reptilian heads, bodies, and tails can be almost any color. All [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) have wings, but on only a few are those wings big enough to let them [fly](scc:mcdm.heroes.v1/movement/fly).
 
 **[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** Humanoids with stony skin, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have short and stout bodies. Many carve supernatural runes into their flesh, and some have beards made of crystals.
 
@@ -1310,7 +1310,7 @@ This chapter details twelve ancestries for the game:
 >
 > Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and forced movement, winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
@@ -1668,7 +1668,7 @@ Your prehensile tail allows you to challenge foes on all sides. You can't be fla
 
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to fly, you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to fly at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
 
 <!-- @type: ancestry | @id: dragon-knight -->
 ## Dragon Knight
@@ -1826,7 +1826,7 @@ As a maneuver, you can recite the following oath. Until the start of your next t
 
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to fly, you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to fly at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
 
 <!-- @type: ancestry | @id: dwarf -->
 ## Dwarf
@@ -1956,7 +1956,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Gro
 
 ##### Great Fortitude (2 Points)
 
-Your hearty constitution prevents you from losing strength. You can't be made weakened.
+Your hearty constitution prevents you from losing strength. You can't be made [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
 ##### Grounded (1 Point)
 
@@ -2074,7 +2074,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Swi
 
 ##### Forest Walk (1 Point)
 
-You can shift into and while within difficult terrain.
+You can [shift](scc:mcdm.heroes.v1/movement/shifting) into and while within [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 ##### Quick and Brutal (1 Point)
 
@@ -2107,9 +2107,9 @@ You have the following signature ability. Signature abilities can be used at wil
 
 **Power Roll + Might or Agility:**
 
-- **≤11:** 2 + M or A damage; A < WEAK, slowed (save ends)
-- **12-16:** 3 + M or A damage; A < AVERAGE, slowed (save ends)
-- **17+:** 5 + M or A damage; A < STRONG, restrained (save ends)
+- **≤11:** 2 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+- **12-16:** 3 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+- **17+:** 5 + M or A damage; A < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 <!-- @type: ancestry | @id: high-elf -->
 ## High Elf
@@ -2191,7 +2191,7 @@ Llyander put their hands on their hips and regarded the children. "Not bad for y
 
 #### Signature Trait: High Elf Glamor
 
-A magic glamor makes others perceive you as interesting and engaging, granting you an edge on Presence tests using the Flirt or Persuade skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
+A magic glamor makes others perceive you as interesting and engaging, granting you an edge on Presence tests using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
 
 #### Purchased High Elf Traits
 
@@ -2199,7 +2199,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Hig
 
 ##### Glamor of Terror (2 Points)
 
-When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a triggered action to make that creature frightened of you until the end of their next turn.
+When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a triggered action to make that creature [frightened](scc:mcdm.heroes.v1/condition/frightened) of you until the end of their next turn.
 
 ##### Graceful Retreat (1 Point)
 
@@ -2219,7 +2219,7 @@ Accessing memories is as easy as living in the present for you. You gain an edge
 
 ##### Unstoppable Mind (2 Points)
 
-Your mind allows you to maintain your focus in any situation. You can't be made dazed.
+Your mind allows you to maintain your focus in any situation. You can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 <!-- @type: ancestry | @id: hakaan -->
 ## Hakaan
@@ -2347,11 +2347,11 @@ Additionally, when your Stamina reaches the negative of your winded value and yo
 
 ##### Forceful (1 Point)
 
-Whenever you force move a creature or object, the forced movement distance gains a +1 bonus.
+Whenever you [force move](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a +1 bonus.
 
 ##### Great Fortitude (2 Points)
 
-Your hearty constitution prevents you from losing strength. You can't be made weakened.
+Your hearty constitution prevents you from losing strength. You can't be made [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
 ##### Stand Tough (1 Point)
 
@@ -2415,15 +2415,15 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Per
 
 ##### Can't Take Hold (1 Point)
 
-Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary difficult terrain created by magic and psionic abilities. Additionally, when you are force moved by a magic or psionic ability, you can reduce the forced movement distance by 1.
+Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by magic and psionic abilities. Additionally, when you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by a magic or psionic ability, you can reduce the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance by 1.
 
 ##### Determination (2 Points)
 
-A tolerance for pain and distress allows you to push through difficult situations. If you are frightened, slowed, or weakened, you can use a maneuver to immediately end one of those conditions.
+A tolerance for pain and distress allows you to push through difficult situations. If you are [frightened](scc:mcdm.heroes.v1/condition/frightened), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), you can use a maneuver to immediately end one of those conditions.
 
 ##### Perseverance (1 Point)
 
-Giving up is for other people. You gain an edge on tests made using the Endurance skill. Additionally, when you are slowed, your speed is reduced to 3 instead of 2.
+Giving up is for other people. You gain an edge on tests made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your speed is reduced to 3 instead of 2.
 
 ##### Resist the Unnatural (1 Point)
 
@@ -2555,7 +2555,7 @@ You can push your body to move at incredible speeds. Your speed is 7.
 
 ##### Nonstop (2 Points)
 
-Your connection to Axiom allows you to regulate your movement. You can't be made slowed.
+Your connection to Axiom allows you to regulate your movement. You can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
 ##### Systematic Mind (1 Point)
 
@@ -2582,7 +2582,7 @@ Each [orc](scc:mcdm.heroes.v1/ancestry/orc) has within them a fire that causes t
 
 ### On Orcs
 
-The [orc](scc:mcdm.heroes.v1/ancestry/orc) pulled her greataxe from the split skull of the newly dead ogre. Prone heroes scrambled to their feet. Dazar healed the wounded.
+The [orc](scc:mcdm.heroes.v1/ancestry/orc) pulled her greataxe from the split skull of the newly dead ogre. [Prone](scc:mcdm.heroes.v1/condition/prone) heroes scrambled to their feet. Dazar healed the wounded.
 
 The [orc](scc:mcdm.heroes.v1/ancestry/orc) hopped down from the corpse of the defeated. "Elg was a ruin ogre," she said. "Infected with a troll disease. An inconvenience for troll-kin but to an ogre..." She indicated the mutated ogre. "You weren't to know."
 
@@ -2721,7 +2721,7 @@ The magic in your blood makes it difficult for others to move you. You have a +1
 
 ##### Nonstop (2 Points)
 
-Your bloodfire supplies you with a constant rush of adrenaline. You can't be made slowed.
+Your bloodfire supplies you with a constant rush of adrenaline. You can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
 ##### Passionate Artisan (1 Point)
 
@@ -2862,7 +2862,7 @@ You have the following ability.
 |-------------|----------------:|
 | **📏 Self** |     **🎯 Self** |
 
-**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be force moved, and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
@@ -2880,7 +2880,7 @@ Your innate [shadow](scc:mcdm.heroes.v1/class/shadow) magic grants you resilienc
 
 ##### Fearless (2 Points)
 
-Courage is all you know. You can't be made frightened.
+Courage is all you know. You can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 ##### Graceful Retreat (1 Point)
 
@@ -2888,7 +2888,7 @@ Your small size makes it easier for you to slip away from the fray. You gain a +
 
 ##### Nimblestep (2 Points)
 
-A light step serves you well when speed is of the essence. You ignore the effects of difficult terrain and can move at full speed while sneaking.
+A light step serves you well when speed is of the essence. You ignore the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and can move at full speed while sneaking.
 
 ##### Polder Geist (1 Point)
 
@@ -2896,7 +2896,7 @@ Evading others' notice gives you freedom to move. At the start of each of your t
 
 ##### Reactive Tumble (1 Point)
 
-Staying light on your feet lets you quickly get back into position. Whenever you are force moved, you can use a free triggered action to shift 1 square after the forced movement is resolved.
+Staying light on your feet lets you quickly get back into position. Whenever you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square after the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is resolved.
 
 <!-- @type: ancestry | @id: revenant -->
 ## Revenant
@@ -2976,7 +2976,7 @@ Choose the ancestry you were before you died. Your size is that ancestry's size 
 
 Your undead body grants you immunity to cold, corruption, lightning, and poison damage equal to your level, but you have fire weakness 5. You can't suffocate, and you don't need to eat or drink to stay alive.
 
-Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall prone and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
+Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
 
 ##### Purchased Revenant Traits
 
@@ -2984,7 +2984,7 @@ You have 2 ancestry points to spend on the following traits, or 3 ancestry point
 
 ##### Bloodless (2 Points)
 
-For you, an open wound is indistinguishable from a scratch. You can't be made bleeding even while dying.
+For you, an open wound is indistinguishable from a scratch. You can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying.
 
 ##### Previous Life: 1 Point (1 Point)
 
@@ -3141,11 +3141,11 @@ Your senses extend past mundane obscuration and the veil of the future alike. Yo
 
 ##### Four-Armed Athletics (1 Point)
 
-Your unique physiology enhances your movement. You gain an edge on tests that use the Climb, Gymnastics, or Swim skills when you can use all your arms in the attempt.
+Your unique physiology enhances your movement. You gain an edge on tests that use the [Climb](scc:mcdm.heroes.v1/skill/climb), [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), or [Swim](scc:mcdm.heroes.v1/skill/swim) skills when you can use all your arms in the attempt.
 
 ##### Four-Armed Martial Arts (2 Points)
 
-Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback maneuver against an adjacent creature, you can target one additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures grabbed at a time.
+Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback maneuver against an adjacent creature, you can target one additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time.
 
 ##### Psionic Gift (2 Points)
 
@@ -3164,7 +3164,7 @@ Choose one signature ability from the following options. Signature abilities can
 
 - **≤11:** 2 + R, I, or P damage;
 - **12-16:** 5 + R, I, or P damage; push 1
-- **17+:** 7 + R, I, or P damage; push 2; M < STRONG, prone
+- **17+:** 7 + R, I, or P damage; push 2; M < STRONG, [prone](scc:mcdm.heroes.v1/condition/prone)
 
 <!-- @type: ability | @subtype: signature | @id: psionic-bolt -->
 ###### Psionic Bolt
@@ -3194,7 +3194,7 @@ Choose one signature ability from the following options. Signature abilities can
 
 ##### Unstoppable Mind (2 Points)
 
-Your mind allows you to maintain your focus in any situation. You can't be made dazed.
+Your mind allows you to maintain your focus in any situation. You can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 <!-- @type: chapter | @id: background -->
 # Background
@@ -3280,15 +3280,15 @@ When you build a culture, select its environment aspect from the following optio
 
 ##### Nomadic
 
-A nomadic culture travels from place to place to survive. Members of a nomadic culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in nomadic cultures learn to navigate the wilderness and work closely with others to survive.
+A [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture travels from place to place to survive. Members of a [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in [nomadic](scc:mcdm.heroes.v1/culture/nomadic) cultures learn to navigate the wilderness and work closely with others to survive.
 
 **Skill Options:** One skill from the exploration or interpersonal skill groups. (*Quick Build:* Navigate.)
 
 ##### Rural
 
-A rural culture is one located in a town, village, or smaller settled enclave. People dwelling in such places often cultivate the land, trade goods or services with travelers passing through, harvest fish from the sea, or mine metals and gems from the earth.
+A [rural](scc:mcdm.heroes.v1/culture/rural) culture is one located in a town, village, or smaller settled enclave. People dwelling in such places often cultivate the land, trade goods or services with travelers passing through, harvest fish from the sea, or mine metals and gems from the earth.
 
-Living among a small population, most folks in a rural community learn a trade and are handed down bits of essential knowledge to help their community survive. For example, when a rural culture has only one blacksmith, it's important to have an apprentice already learning at the anvil well before that smith starts to get old. If the only priest in town
+Living among a small population, most folks in a [rural](scc:mcdm.heroes.v1/culture/rural) community learn a trade and are handed down bits of essential knowledge to help their community survive. For example, when a rural culture has only one blacksmith, it's important to have an apprentice already learning at the anvil well before that smith starts to get old. If the only priest in town
 
 gets the sniffles, folks want an acolyte ready to wear the fancy robes should the worst occur.
 
@@ -3296,7 +3296,7 @@ gets the sniffles, folks want an acolyte ready to wear the fancy robes should th
 
 ##### Secluded
 
-A secluded culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a secluded culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave.
+A [secluded](scc:mcdm.heroes.v1/culture/secluded) culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a [secluded](scc:mcdm.heroes.v1/culture/secluded) culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave.
 
 When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.
 
@@ -3304,13 +3304,13 @@ When people live together in close quarters, they typically learn to get along. 
 
 ##### Urban
 
-An urban culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of urban cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
+An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
 
 **Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* Alertness.)
 
 ##### Wilderness
 
-A wilderness culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a wilderness culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
+A [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
 
 **Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* Endurance.)
 
@@ -3318,23 +3318,23 @@ A wilderness culture doesn't try to tame the terrain in which its people live, w
 
 Your culture's organization aspect determines the functioning and leadership of your community. You might come from a place with an officially recognized government and a system of laws. Or your culture might have enjoyed a less-formal organization, with the people in charge having naturally gravitated toward their positions without any official offices or oaths.
 
-When you build a culture, select its organization aspect from the following options: bureaucratic or communal. You gain skill options from your chosen system of organization.
+When you build a culture, select its organization aspect from the following options: [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) or [communal](scc:mcdm.heroes.v1/culture/communal). You gain skill options from your chosen system of organization.
 
 ##### Bureaucratic
 
-Bureaucratic cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities
+[Bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities
 
 have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures.
 
-Those who thrive in bureaucratic cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a bureaucratic culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
+Those who thrive in [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
 
 **Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* Persuade.)
 
 ##### Communal
 
-A communal culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures.
+A [communal](scc:mcdm.heroes.v1/culture/communal) culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures.
 
-Many communal cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in communal cultures focus on fending for themselves while avoiding the danger that other groups can represent.
+Many [communal](scc:mcdm.heroes.v1/culture/communal) cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in [communal](scc:mcdm.heroes.v1/culture/communal) cultures focus on fending for themselves while avoiding the danger that other groups can represent.
 
 **Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* Jump.)
 
@@ -3342,41 +3342,41 @@ Many communal cultures operate outside settled lands, sticking to the wilds, a s
 
 Your culture's upbringing aspect is a more specific and personal part of your hero's story, describing how you were raised within your culture. Were you trained to become the newest archmage in a secret order of wizards, or to be a sword-wielding bodyguard who protected that arcane organization? Did you learn to delve deep into mines looking for ore in a mountain kingdom, or did you build machines meant to dig faster and deeper than any person could alone? Whatever your culture, your upbringing makes you special within that culture.
 
-Pick your upbringing aspect from the following list: academic, creative, labor, lawless, martial, or noble. You gain skill options from your chosen aspect.
+Pick your upbringing aspect from the following list: [academic](scc:mcdm.heroes.v1/culture/academic), [creative](scc:mcdm.heroes.v1/culture/creative), [labor](scc:mcdm.heroes.v1/culture/labor), [lawless](scc:mcdm.heroes.v1/culture/lawless), [martial](scc:mcdm.heroes.v1/culture/martial), or [noble](scc:mcdm.heroes.v1/culture/noble). You gain skill options from your chosen aspect.
 
 ##### Academic
 
-Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an academic culture learn how to wield the power that is knowledge.
+Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an [academic](scc:mcdm.heroes.v1/culture/academic) culture learn how to wield the power that is knowledge.
 
 **Skill Options:** One skill from the lore skill group. (*Quick Build:* History.)
 
 ##### Creative
 
-A hero with a creative upbringing was raised among folk who create art or other works valuable enough to trade. A creative culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.
+A hero with a [creative](scc:mcdm.heroes.v1/culture/creative) upbringing was raised among folk who create art or other works valuable enough to trade. A [creative](scc:mcdm.heroes.v1/culture/creative) culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.
 
-**Skill Options:** The Music or Perform skill (from the interpersonal skill group), or one skill from the crafting group. (*Quick Build:* Perform.)
+**Skill Options:** The [Music](scc:mcdm.heroes.v1/skill/music) or [Perform](scc:mcdm.heroes.v1/skill/perform) skill (from the interpersonal skill group), or one skill from the crafting group. (*Quick Build:* [Perform](scc:mcdm.heroes.v1/skill/perform).)
 
 ##### Labor
 
-Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual labor tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a labor upbringing know the value of hard work.
+Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual [labor](scc:mcdm.heroes.v1/culture/labor) tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a [labor](scc:mcdm.heroes.v1/culture/labor) upbringing know the value of hard work.
 
-**Skill Options:** The Blacksmithing skill (from the crafting skill group), the Handle Animals skill (from the interpersonal group), or a skill from the exploration group. (*Quick Build:* Lift.)
+**Skill Options:** The [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing) skill (from the crafting skill group), the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill (from the interpersonal group), or a skill from the exploration group. (*Quick Build:* [Lift](scc:mcdm.heroes.v1/skill/lift).)
 
 ##### Lawless
 
-Your hero grew up among folk who performed activities that other people—whether within or outside their culture—considered unlawful. A band of pirates, a guild of assassins, or an organization of spies all commit unlawful acts for money. And under tyranny, people engaged in rebellion are often considered lawless in their actions and activities. People brought up in a lawless culture typically don't mind breaking the rules when it suits them—and are good at making sure no one finds out they did.
+Your hero grew up among folk who performed activities that other people—whether within or outside their culture—considered unlawful. A band of pirates, a guild of assassins, or an organization of spies all commit unlawful acts for money. And under tyranny, people engaged in rebellion are often considered [lawless](scc:mcdm.heroes.v1/culture/lawless) in their actions and activities. People brought up in a [lawless](scc:mcdm.heroes.v1/culture/lawless) culture typically don't mind breaking the rules when it suits them—and are good at making sure no one finds out they did.
 
 **Skill Options:** One skill from the intrigue skill group. (*Quick Build:* Sneak.)
 
 ##### Martial
 
-A hero with a martial upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a martial upbringing are always ready for a fight—and they know how to finish that fight.
+A hero with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing are always ready for a fight—and they know how to finish that fight.
 
-**Skill Options:** One of the following: Blacksmithing or Fletching from the crafting skill group; Climb, Endurance, or Ride from the exploration group; Intimidate from the interpersonal group; Alertness or Track from the intrigue group; or Monsters or Strategy from the lore skill group (*Quick Build:* Intimidate.)
+**Skill Options:** One of the following: [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing) or [Fletching](scc:mcdm.heroes.v1/skill/fletching) from the crafting skill group; [Climb](scc:mcdm.heroes.v1/skill/climb), [Endurance](scc:mcdm.heroes.v1/skill/endurance), or [Ride](scc:mcdm.heroes.v1/skill/ride) from the exploration group; [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) from the interpersonal group; [Alertness](scc:mcdm.heroes.v1/skill/alertness) or [Track](scc:mcdm.heroes.v1/skill/track) from the intrigue group; or [Monsters](scc:mcdm.heroes.v1/skill/monsters) or [Strategy](scc:mcdm.heroes.v1/skill/strategy) from the lore skill group (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill/intimidate).)
 
 ##### Noble
 
-Your hero grew up among leaders who rule over others and play the games of politics to maintain power. Many families are nobles by birthright, but some cultures have noble titles earned through deeds or popularity. Whatever the case, heroes with this background understand why the whispered words in the right ear can sometimes be more powerful than any army.
+Your hero grew up among leaders who rule over others and play the games of politics to maintain power. Many families are [noble](scc:mcdm.heroes.v1/culture/noble)s by birthright, but some cultures have [noble](scc:mcdm.heroes.v1/culture/noble) titles earned through deeds or popularity. Whatever the case, heroes with this background understand why the whispered words in the right ear can sometimes be more powerful than any army.
 
 **Skill Options:** One skill from the interpersonal skill group. (*Quick Build:* Lead.)
 
@@ -3560,7 +3560,7 @@ You worked as a spy for a government or organization. In defining your career, t
 
 You gain the following career benefits:
 
-**Skills:** The Sneak skill from the intrigue skill group, plus one skill from the interpersonal group and one other skill from the intrigue group (*Quick Build:* Disguise, Lie, Sneak.)
+**Skills:** The [Sneak](scc:mcdm.heroes.v1/skill/sneak) skill from the intrigue skill group, plus one skill from the interpersonal group and one other skill from the intrigue group (*Quick Build:* [Disguise](scc:mcdm.heroes.v1/skill/disguise), [Lie](scc:mcdm.heroes.v1/skill/lie), [Sneak](scc:mcdm.heroes.v1/skill/sneak).)
 
 **Languages:** Two languages
 
@@ -3647,7 +3647,7 @@ You lived by going to a tavern, crossroads, city street, or other busy area and 
 
 You gain the following career benefits:
 
-**Skills:** The Rumors skill (from the lore skill group), plus one skill from the exploration group and one skill from the interpersonal group (*Quick Build:* Empathize, Endurance, Rumors.)
+**Skills:** The [Rumors](scc:mcdm.heroes.v1/skill/rumors) skill (from the lore skill group), plus one skill from the exploration group and one skill from the interpersonal group (*Quick Build:* [Empathize](scc:mcdm.heroes.v1/skill/empathize), [Endurance](scc:mcdm.heroes.v1/skill/endurance), [Rumors](scc:mcdm.heroes.v1/skill/rumors).)
 
 **Languages:** Two languages
 
@@ -3703,7 +3703,7 @@ You worked in a church, temple, or other religious institution as part of the cl
 
 You gain the following career benefits:
 
-**Skills:** The Religion skill (from the lore skill group), plus two more skills from the lore group (*Quick Build:* Culture, Magic, Religion.)
+**Skills:** The [Religion](scc:mcdm.heroes.v1/skill/religion) skill (from the lore skill group), plus two more skills from the lore group (*Quick Build:* [Culture](scc:mcdm.heroes.v1/skill/culture), [Magic](scc:mcdm.heroes.v1/skill/magic), [Religion](scc:mcdm.heroes.v1/skill/religion).)
 
 **Project Points:** 240
 
@@ -3731,7 +3731,7 @@ You ventured into uncharted areas and made your living as a cartographer, resear
 
 You gain the following career benefits:
 
-**Skills:** The Navigate skill (from the exploration skill group), plus two more skills from the exploration group (*Quick Build:* Climb, Heal, Navigate.)
+**Skills:** The [Navigate](scc:mcdm.heroes.v1/skill/navigate) skill (from the exploration skill group), plus two more skills from the exploration group (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill/climb), [Heal](scc:mcdm.heroes.v1/skill/heal), [Navigate](scc:mcdm.heroes.v1/skill/navigate).)
 
 **Languages:** Two languages
 
@@ -3758,7 +3758,7 @@ You grew crops or cared for livestock. In defining your career, think about the 
 
 You gain the following career benefits:
 
-**Skills:** The Handle Animals skill (from the interpersonal skill group), plus two skills from the exploration group (*Quick Build:* Drive, Handle Animals, Lift.)
+**Skills:** The [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill (from the interpersonal skill group), plus two skills from the exploration group (*Quick Build:* [Drive](scc:mcdm.heroes.v1/skill/drive), [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals), [Lift](scc:mcdm.heroes.v1/skill/lift).)
 
 **Languages:** One language
 
@@ -3816,7 +3816,7 @@ You worked as a [farmer](scc:mcdm.heroes.v1/career/farmer), builder, clothes was
 
 You gain the following career benefits:
 
-**Skills:** The Endurance skill (from the exploration skill group), plus two skills from either the crafting group or the exploration group (*Quick Build:* Blacksmithing, Endurance, Lift.)
+**Skills:** The [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill (from the exploration skill group), plus two skills from either the crafting group or the exploration group (*Quick Build:* [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing), [Endurance](scc:mcdm.heroes.v1/skill/endurance), [Lift](scc:mcdm.heroes.v1/skill/lift).)
 
 **Languages:** One language
 
@@ -3845,7 +3845,7 @@ For long years, you studied magic under the mentorship of a more experienced mag
 
 You gain the following career benefits:
 
-**Skills:** The Magic skill (from the lore skill group), plus two other skills from the lore group (*Quick Build:* Magic, Monsters, Timescape.)
+**Skills:** The [Magic](scc:mcdm.heroes.v1/skill/magic) skill (from the lore skill group), plus two other skills from the lore group (*Quick Build:* [Magic](scc:mcdm.heroes.v1/skill/magic), [Monsters](scc:mcdm.heroes.v1/skill/monsters), [Timescape](scc:mcdm.heroes.v1/skill/timescape).)
 
 **Languages:** One language
 
@@ -3874,7 +3874,7 @@ You can sing, act, or dance well enough that people actually pay you to do it. I
 
 You gain the following career benefits:
 
-**Skills:** The Music or Perform skill (from the interpersonal skill group), plus two more skills from the interpersonal group (*Quick Build:* Flirt, Music, Perform.)
+**Skills:** The [Music](scc:mcdm.heroes.v1/skill/music) or [Perform](scc:mcdm.heroes.v1/skill/perform) skill (from the interpersonal skill group), plus two more skills from the interpersonal group (*Quick Build:* [Flirt](scc:mcdm.heroes.v1/skill/flirt), [Music](scc:mcdm.heroes.v1/skill/music), [Perform](scc:mcdm.heroes.v1/skill/perform).)
 
 **Renown:** +2
 
