@@ -123,17 +123,17 @@ Warnings indicate unresolved SCC codes (typos or missing registry entries).
 | Background | 3200-3206 | done (0) | done (0) | done (0) | done (0) | done (0) | - | - | - | - | - | - | - | - | - |
 | Cultures | 3207-3493 | done (0) | done (6) | - | - | done (21) | - | done (47) | - | - | - | - | - | - | done (2) |
 | Careers | 3494-4065 | done (0) | done (8) | - | - | - | done (4) | - | - | - | - | - | - | - | done (5) |
-| Classes | 4066-17606 | - | - | - | - | - | done (316) | done (4) | - | - | - | - | - | - | done (67) |
-| Kits | 17607-18580 | - | - | - | - | - | done (5) | - | - | - | - | - | - | - | done (4) |
-| Perks | 18581-18946 | - | - | - | - | - | - | - | - | - | - | - | - | - | done (2) |
-| Complications | 18947-20167 | - | - | - | - | - | done (12) | done (8) | - | - | - | - | - | - | done (18) |
-| Tests | 20168-20408 | - | - | - | - | - | - | done (1) | - | - | - | - | - | - | done (2) |
-| Skills | 20409-20856 | - | - | - | - | - | done (12) | done (3) | - | - | - | - | - | - | done (3) |
-| Combat | 20857-21636 | - | - | - | - | - | done (11) | done (9) | - | - | - | - | - | - | done (13) |
-| Negotiation | 21637-22187 | - | - | - | - | - | done (4) | done (7) | - | - | - | - | - | - | done (2) |
-| Downtime Projects | 22188-23215 | - | - | - | - | - | done (12) | done (14) | - | - | - | - | - | - | done (5) |
-| Rewards | 23216-23220 | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| Treasures | 23221-25258 | - | - | - | - | - | done (5) | done (8) | - | - | - | - | - | - | done (9) |
-| Titles | 25259-26339 | - | - | - | - | - | done (12) | done (21) | - | - | - | - | - | - | done (16) |
-| Gods and Religion | 26340-27294 | - | - | - | - | - | done (48) | done (123) | - | - | - | - | - | - | - |
-| For the Director | 27295-28721 | - | - | - | - | - | done (11) | done (8) | - | - | - | - | - | - | done (14) |
+| Classes | 4066-17606 | done (434) | done (34) | done (0) | done (257) | done (0) | done (316) | done (4) | - | - | - | - | - | - | done (67) |
+| Kits | 17607-18580 | done (8) | done (0) | done (0) | done (7) | done (0) | done (5) | - | - | - | - | - | - | - | done (4) |
+| Perks | 18581-18946 | done (0) | done (1) | done (0) | done (1) | done (0) | - | - | - | - | - | - | - | - | done (2) |
+| Complications | 18947-20167 | done (14) | done (2) | done (0) | done (2) | done (0) | done (12) | done (8) | - | - | - | - | - | - | done (18) |
+| Tests | 20168-20408 | done (1) | done (0) | done (0) | done (1) | done (0) | - | done (1) | - | - | - | - | - | - | done (2) |
+| Skills | 20409-20856 | done (0) | done (14) | done (0) | done (0) | done (0) | done (12) | done (3) | - | - | - | - | - | - | done (3) |
+| Combat | 20857-21636 | done (28) | done (0) | done (0) | done (62) | done (0) | done (11) | done (9) | - | - | - | - | - | - | done (13) |
+| Negotiation | 21637-22187 | done (1) | done (4) | done (32) | done (1) | done (0) | done (4) | done (7) | - | - | - | - | - | - | done (2) |
+| Downtime Projects | 22188-23215 | done (16) | done (1) | done (0) | done (15) | done (0) | done (12) | done (14) | - | - | - | - | - | - | done (5) |
+| Rewards | 23216-23220 | done (0) | done (0) | done (0) | done (0) | done (0) | - | - | - | - | - | - | - | - | - |
+| Treasures | 23221-25258 | done (42) | done (1) | done (0) | done (28) | done (0) | done (5) | done (8) | - | - | - | - | - | - | done (9) |
+| Titles | 25259-26339 | done (22) | done (3) | done (0) | done (7) | done (0) | done (12) | done (21) | - | - | - | - | - | - | done (16) |
+| Gods and Religion | 26340-27294 | done (4) | done (0) | done (0) | done (1) | done (0) | done (48) | done (123) | - | - | - | - | - | - | - |
+| For the Director | 27295-28721 | done (0) | done (0) | done (0) | done (4) | done (0) | done (11) | done (8) | - | - | - | - | - | - | done (14) |

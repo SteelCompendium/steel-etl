@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"testing"
 
@@ -539,11 +540,17 @@ func assertMetadataFieldInt(t *testing.T, out map[string]any, field string, want
 	}
 }
 
+var sccLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc:[^)]+\)`)
+
+func stripSCCLinks(s string) string {
+	return sccLinkRe.ReplaceAllString(s, "$1")
+}
+
 func assertEffectFieldMatch(t *testing.T, etlEffect, legacyEffect map[string]any, field string) {
 	t.Helper()
 	etlVal, _ := etlEffect[field].(string)
 	legacyVal, _ := legacyEffect[field].(string)
-	if etlVal != legacyVal {
+	if stripSCCLinks(etlVal) != stripSCCLinks(legacyVal) {
 		t.Errorf("effect.%s: got %q, want %q", field, etlVal, legacyVal)
 	}
 }
