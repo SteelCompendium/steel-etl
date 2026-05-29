@@ -1634,6 +1634,7 @@ She blushed in spite of herself and raised her own glass in a toast. "You silver
 
 [Devil](scc:mcdm.heroes.v1/ancestry/devil) heroes have access to the following traits.
 
+<!-- @type: feature | @id: silver-tongue -->
 #### Signature Trait: Silver Tongue
 
 Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an edge on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
@@ -1642,30 +1643,37 @@ Your innate magic allows you to twist how your words are perceived to get a bett
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Beast Legs, Impressive Horns.)
 
+<!-- @type: feature -->
 ##### Barbed Tail (1 Point)
 
 Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee strike, you can deal extra damage with the strike equal to your highest characteristic score.
 
+<!-- @type: feature -->
 ##### Beast Legs (1 Point)
 
 Your powerful legs make you faster. You have speed 6.
 
+<!-- @type: feature -->
 ##### Glowing Eyes (1 Point)
 
 Your eyes are a solid, vibrant color that flares to show your excitement or rage. Whenever you take damage from a creature, you can use a triggered action to deal that creature psychic damage equal to 1d10 + your level.
 
+<!-- @type: feature -->
 ##### Hellsight (1 Point)
 
 Your eyes let you see through darkness, fog, and other obscuring effects. You don't take a bane on strikes made against creatures with concealment.
 
+<!-- @type: feature -->
 ##### Impressive Horns (2 Points)
 
 Your cherished horns are larger than the average [devil's](scc:mcdm.heroes.v1/ancestry/devil), and a hardened representation of your force of will. Whenever you make a saving throw, you succeed on a roll of 5 or higher.
 
+<!-- @type: feature -->
 ##### Prehensile Tail (2 Points)
 
 Your prehensile tail allows you to challenge foes on all sides. You can't be flanked.
 
+<!-- @type: feature -->
 ##### Wings (2 Points)
 
 You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
@@ -1762,6 +1770,7 @@ The [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) looked at the peo
 
 [Dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) heroes have access to the following traits.
 
+<!-- @type: feature | @id: wyrmplate -->
 #### Signature Trait: Wyrmplate
 
 Your hardened scales grant you damage immunity equal to your level to one of the following damage types: acid, cold, corruption, fire, lightning, or poison. You can change your damage immunity type when you finish a respite.
@@ -1770,10 +1779,12 @@ Your hardened scales grant you damage immunity equal to your level to one of the
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* [Dragon Breath](scc:mcdm.heroes.v1/feature.ability.dragon-knight/dragon-breath), Prismatic Scales.)
 
+<!-- @type: feature -->
 ##### Draconian Guard (1 Point)
 
 Whenever you or an adjacent creature takes damage from a strike, you can use a triggered action to guard against the blow. You reduce any damage from the strike by an amount equal to your level.
 
+<!-- @type: feature -->
 ##### Draconian Pride (2 Points)
 
 You have the following signature ability.
@@ -1793,6 +1804,7 @@ You have the following signature ability.
 - **12-16:** 5 damage; push 1
 - **17+:** 7 damage; push 2
 
+<!-- @type: feature -->
 ##### Dragon Breath (2 Points)
 
 You have the following signature ability.
@@ -1814,16 +1826,19 @@ You have the following signature ability.
 
 **Effect:** You choose the ability's damage type from acid, cold, corruption, fire, lightning, or poison.
 
+<!-- @type: feature -->
 ##### Prismatic Scales (1 Point)
 
 Select one damage immunity granted by your Wyrmplate trait. You always have this immunity, in addition to the immunity granted by Wyrmplate.
 
+<!-- @type: feature -->
 ##### Remember Your Oath (1 Point)
 
 As a maneuver, you can recite the following oath. Until the start of your next turn, whenever you make a saving throw, you succeed on a 4 or higher.
 
 *Even should the sun stop in the sky Even should the night last a thousand years I will stand forever I shall not yield Those who suffer and yearn for justice I am your sword and shield I will yield no ground I will speak no lies I will stand against all tyrants Until the last villain dies*
 
+<!-- @type: feature -->
 ##### Wings (2 Points)
 
 You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
@@ -1938,6 +1953,7 @@ John was grinning madly at Embers. She held up three fingers.
 
 [Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) heroes have access to the following traits.
 
+<!-- @type: feature | @id: runic-carving -->
 #### Signature Trait: Runic Carving
 
 You can carve a rune onto your skin with 10 uninterrupted minutes of work, which is activated by the magic within your body. The rune you carve determines the benefit you receive, chosen from among the following:
@@ -1954,22 +1970,27 @@ You can have one rune active at a time, and can change or remove a rune with 10 
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Grounded, Spark Off Your Skin.)
 
+<!-- @type: feature -->
 ##### Great Fortitude (2 Points)
 
 Your hearty constitution prevents you from losing strength. You can't be made [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
+<!-- @type: feature -->
 ##### Grounded (1 Point)
 
 Your heavy stone body and connection to the earth make it difficult for others to move you. You have a +1 bonus to stability.
 
+<!-- @type: feature -->
 ##### Spark Off Your Skin (2 Points)
 
 Your stone skin affords you potent protection. You have a +6 bonus to Stamina, and that bonus increases by 6 at 4th, 7th, and 10th levels.
 
+<!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
 Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature's traits or abilities.
 
+<!-- @type: feature -->
 ##### Stone Singer (1 Point)
 
 You have a magic connection to the earth. When you spend 1 uninterrupted hour singing, you can reshape any unworked mundane stone within 3 squares. You can't destroy this stone, but you can move each square of it anywhere within 3 squares, piling it off to one side to dig a hole or building it up to create a wall.
@@ -2064,6 +2085,7 @@ Jeremy turned to Dade. "I feel like we're in a dream," he whispered. "You are!" 
 
 [Wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) heroes have access to the following traits.
 
+<!-- @type: feature | @id: wode-elf-glamor -->
 #### Signature Trait: Wode Elf Glamor
 
 You can magically alter your appearance to better blend in with your surroundings. You gain an edge on tests made to hide and sneak, and tests made to search for you while you are hidden take a bane.
@@ -2072,26 +2094,32 @@ You can magically alter your appearance to better blend in with your surrounding
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Swift, Otherworldly Grace.)
 
+<!-- @type: feature -->
 ##### Forest Walk (1 Point)
 
 You can [shift](scc:mcdm.heroes.v1/movement/shifting) into and while within [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
+<!-- @type: feature -->
 ##### Quick and Brutal (1 Point)
 
 Whenever you score a critical hit, you can take an additional main action and an additional move action instead of just a main action.
 
+<!-- @type: feature -->
 ##### Otherworldly Grace (2 Points)
 
 Your elf body and mind can't be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.
 
+<!-- @type: feature -->
 ##### Revisit Memory (1 Point)
 
 Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.
 
+<!-- @type: feature -->
 ##### Swift (1 Point)
 
 You have speed 6.
 
+<!-- @type: feature -->
 ##### The Wode Defends (2 Points)
 
 You have the following signature ability. Signature abilities can be used at will.
@@ -2189,6 +2217,7 @@ Llyander put their hands on their hips and regarded the children. "Not bad for y
 
 [High elf](scc:mcdm.heroes.v1/ancestry/high-elf) heroes have access to the following traits.
 
+<!-- @type: feature | @id: high-elf-glamor -->
 #### Signature Trait: High Elf Glamor
 
 A magic glamor makes others perceive you as interesting and engaging, granting you an edge on Presence tests using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
@@ -2197,26 +2226,32 @@ A magic glamor makes others perceive you as interesting and engaging, granting y
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* High Senses, Otherworldly Grace.)
 
+<!-- @type: feature -->
 ##### Glamor of Terror (2 Points)
 
 When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a triggered action to make that creature [frightened](scc:mcdm.heroes.v1/condition/frightened) of you until the end of their next turn.
 
+<!-- @type: feature -->
 ##### Graceful Retreat (1 Point)
 
 You gain a +1 bonus to the distance you can shift when you take the Disengage move action.
 
+<!-- @type: feature -->
 ##### High Senses (1 Point)
 
 Your senses are especially keen and perceptive. You gain an edge on tests made to notice threats.
 
+<!-- @type: feature -->
 ##### Otherworldly Grace (2 Points)
 
 Your elf body and mind can't be contained for long. Whenever you make a saving throw, you succeed on a roll of 5 or higher.
 
+<!-- @type: feature -->
 ##### Revisit Memory (1 Point)
 
 Accessing memories is as easy as living in the present for you. You gain an edge on tests made to recall lore.
 
+<!-- @type: feature -->
 ##### Unstoppable Mind (2 Points)
 
 Your mind allows you to maintain your focus in any situation. You can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed).
@@ -2325,6 +2360,7 @@ Ardashir grinned. "Strength alone is not enough." He assumed a fighting pose, ha
 
 [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) heroes have access to the following traits.
 
+<!-- @type: feature | @id: big -->
 #### Signature Trait: Big!
 
 Your stature reflects your giant forebears. Your size is 1L.
@@ -2333,10 +2369,12 @@ Your stature reflects your giant forebears. Your size is 1L.
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Doomsight, Forceful.)
 
+<!-- @type: feature -->
 ##### All Is a Feather (1 Point)
 
 You are exceptionally strong. You gain an edge on tests made to lift and haul heavy objects.
 
+<!-- @type: feature -->
 ##### Doomsight (2 Points)
 
 Working with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on tests and ability rolls, and you don't die no matter how low your Stamina falls. You then die immediately at the end of the encounter, and can't be returned to life by any means.
@@ -2345,14 +2383,17 @@ If you don't predetermine your death encounter, you can choose to become doomed 
 
 Additionally, when your Stamina reaches the negative of your winded value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can't regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your recovery value.
 
+<!-- @type: feature -->
 ##### Forceful (1 Point)
 
 Whenever you [force move](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a +1 bonus.
 
+<!-- @type: feature -->
 ##### Great Fortitude (2 Points)
 
 Your hearty constitution prevents you from losing strength. You can't be made [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
+<!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
 Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature's traits or abilities.
@@ -2405,6 +2446,7 @@ Some of your names, I will see written in future textbooks. But some of your nam
 
 [Human](scc:mcdm.heroes.v1/ancestry/human) heroes have access to the following traits.
 
+<!-- @type: feature | @id: detect-the-supernatural -->
 #### Signature Trait: Detect the Supernatural
 
 As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next turn, you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have line of effect to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
@@ -2413,22 +2455,27 @@ As a maneuver, you can open your awareness to detect supernatural creatures and 
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Perseverance, Staying Power.)
 
+<!-- @type: feature -->
 ##### Can't Take Hold (1 Point)
 
 Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by magic and psionic abilities. Additionally, when you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by a magic or psionic ability, you can reduce the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance by 1.
 
+<!-- @type: feature -->
 ##### Determination (2 Points)
 
 A tolerance for pain and distress allows you to push through difficult situations. If you are [frightened](scc:mcdm.heroes.v1/condition/frightened), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), you can use a maneuver to immediately end one of those conditions.
 
+<!-- @type: feature -->
 ##### Perseverance (1 Point)
 
 Giving up is for other people. You gain an edge on tests made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your speed is reduced to 3 instead of 2.
 
+<!-- @type: feature -->
 ##### Resist the Unnatural (1 Point)
 
 Your instinctive resilience protects you from injuries beyond the routine. Whenever you take damage that isn't untyped, you can use a triggered action to take half the damage.
 
+<!-- @type: feature -->
 ##### Staying Power (2 Points)
 
 Your [human](scc:mcdm.heroes.v1/ancestry/human) physiology allows you to fight, run, and stay awake longer than others. You increase your number of Recoveries by 2.
@@ -2529,10 +2576,12 @@ John offered his hand. Revile shook it and then held it.
 
 [Memonek](scc:mcdm.heroes.v1/ancestry/memonek) heroes have access to the following traits.
 
+<!-- @type: feature | @id: fall-lightly -->
 #### Signature Trait: Fall Lightly
 
 Your silicone body is low in density. Whenever you fall, you reduce the distance of the fall by 2 squares.
 
+<!-- @type: feature | @id: lightweight -->
 #### Signature Trait: Lightweight
 
 Your body is light for a creature of your height. Whenever another creature attempts to force move you, you treat your size as one size smaller than it is.
@@ -2541,30 +2590,37 @@ Your body is light for a creature of your height. Whenever another creature atte
 
 You have 4 ancestry points to spend on the following traits. (*Quick Build:* Lightning Nimbleness, Nonstop.)
 
+<!-- @type: feature -->
 ##### I Am Law (1 Point)
 
 Your lawful nature and quick reflexes mean you give no quarter to creatures trying to get past you. Enemies can't move through your space unless you allow them to do so.
 
+<!-- @type: feature -->
 ##### Keeper of Order (2 Points)
 
 Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you. Once per round when you or an adjacent creature makes a power roll, you can use a free triggered action to remove an edge or a bane on the roll, to turn a double edge into an edge, or to turn a double bane into a bane.
 
+<!-- @type: feature -->
 ##### Lightning Nimbleness (2 Points)
 
 You can push your body to move at incredible speeds. Your speed is 7.
 
+<!-- @type: feature -->
 ##### Nonstop (2 Points)
 
 Your connection to Axiom allows you to regulate your movement. You can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
+<!-- @type: feature -->
 ##### Systematic Mind (1 Point)
 
 You gain an edge on tests made to parse schematics, maps, and other systematic documents that aren't inherently chaotic. In addition, you treat any language you don't know as if you know a related language.
 
+<!-- @type: feature -->
 ##### Unphased (1 Point)
 
 Your ordered mind can't be caught off guard. You can't be made surprised.
 
+<!-- @type: feature -->
 ##### Useful Emotion (1 Point)
 
 Velloparatha—the worldsickness—might hinder you, but you know how to turn your pain into something your enemies feel. At the start of any combat, you gain 1 surge.
@@ -2699,6 +2755,7 @@ Khorva shook her head. "[Orcs](scc:mcdm.heroes.v1/ancestry/orc) have no great lo
 
 [Orc](scc:mcdm.heroes.v1/ancestry/orc) heroes have access to the following traits.
 
+<!-- @type: feature | @id: relentless -->
 #### Signature Trait: Relentless
 
 Whenever a creature deals damage to you that leaves you dying, you can make a free strike against any creature. If the creature is reduced to 0 Stamina by your strike, you can spend a Recovery.
@@ -2707,22 +2764,27 @@ Whenever a creature deals damage to you that leaves you dying, you can make a fr
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Glowing Recovery, Grounded.)
 
+<!-- @type: feature -->
 ##### Bloodfire Rush (1 Point)
 
 The magic coursing through your veins makes you run faster in the heat of battle. The first time in any combat round that you take damage, you gain a +2 bonus to speed until the end of the round.
 
+<!-- @type: feature -->
 ##### Glowing Recovery (2 Points)
 
 Your bloodfire allows you to regain your strength quicker than others. Whenever you use the Catch Breath maneuver, you can spend as many Recoveries as you like.
 
+<!-- @type: feature -->
 ##### Grounded (1 Point)
 
 The magic in your blood makes it difficult for others to move you. You have a +1 bonus to stability.
 
+<!-- @type: feature -->
 ##### Nonstop (2 Points)
 
 Your bloodfire supplies you with a constant rush of adrenaline. You can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
+<!-- @type: feature -->
 ##### Passionate Artisan (1 Point)
 
 When you are stirred by a passion for creation, your bloodfire allows you to work longer and harder. When you gain your initial skills from your career, culture, class, or other source, choose two skills from the crafting skill group, whether you have those skills or not. Whenever you make a project roll for a crafting project that uses these skills, you gain a +2 bonus to the roll.
@@ -2866,6 +2928,7 @@ You have the following ability.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
+<!-- @type: feature | @id: small -->
 #### Signature Trait: Small!
 
 Your diminutive stature lets you easily get out of—or into—trouble. Your size is 1S.
@@ -2874,26 +2937,32 @@ Your diminutive stature lets you easily get out of—or into—trouble. Your siz
 
 You have 4 ancestry points to spend on the following traits. (*Quick Build:* Corruption Immunity, Fearless, Graceful Retreat.)
 
+<!-- @type: feature -->
 ##### Corruption Immunity (1 Point)
 
 Your innate [shadow](scc:mcdm.heroes.v1/class/shadow) magic grants you resilience against the unnatural. You have corruption immunity equal to your level + 2.
 
+<!-- @type: feature -->
 ##### Fearless (2 Points)
 
 Courage is all you know. You can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
+<!-- @type: feature -->
 ##### Graceful Retreat (1 Point)
 
 Your small size makes it easier for you to slip away from the fray. You gain a +1 bonus to the distance you can shift when you take the Disengage move action.
 
+<!-- @type: feature -->
 ##### Nimblestep (2 Points)
 
 A light step serves you well when speed is of the essence. You ignore the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and can move at full speed while sneaking.
 
+<!-- @type: feature -->
 ##### Polder Geist (1 Point)
 
 Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have concealment from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.
 
+<!-- @type: feature -->
 ##### Reactive Tumble (1 Point)
 
 Staying light on your feet lets you quickly get back into position. Whenever you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square after the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is resolved.
@@ -2968,10 +3037,12 @@ Lady Filliamo shrugged. "I'm a knight of the church. Jurisdiction's for the city
 
 [Revenant](scc:mcdm.heroes.v1/ancestry/revenant) heroes have access to the following traits.
 
+<!-- @type: feature | @id: former-life -->
 #### Signature Trait: Former Life
 
 Choose the ancestry you were before you died. Your size is that ancestry's size and your speed is 5. Unless you select one of the Previous Life traits (see below), you don't receive any other ancestral traits from your original ancestry.
 
+<!-- @type: feature | @id: tough-but-withered -->
 #### Signature Trait: Tough But Withered
 
 Your undead body grants you immunity to cold, corruption, lightning, and poison damage equal to your level, but you have fire weakness 5. You can't suffocate, and you don't need to eat or drink to stay alive.
@@ -2982,22 +3053,27 @@ Additionally, when your Stamina reaches the negative of your winded value, you b
 
 You have 2 ancestry points to spend on the following traits, or 3 ancestry points if your size is 1S. (*Quick Build:* Bloodless, plus Undead Influence if size 1S.)
 
+<!-- @type: feature -->
 ##### Bloodless (2 Points)
 
 For you, an open wound is indistinguishable from a scratch. You can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying.
 
+<!-- @type: feature -->
 ##### Previous Life: 1 Point (1 Point)
 
 You select a purchased trait that costs 1 ancestry point from your previous ancestry. You can take this trait multiple times, selecting a different 1 point trait from your previous ancestry each time.
 
+<!-- @type: feature -->
 ##### Previous Life: 2 Points (2 Points)
 
 You select a purchased trait that costs 2 ancestry points from your previous ancestry.
 
+<!-- @type: feature -->
 ##### Undead Influence (1 Point)
 
 Your supernatural gifts allow you to influence other undead. You gain an edge on Reason, Intuition, and Presence tests made to interact with undead creatures.
 
+<!-- @type: feature -->
 ##### Vengeance Mark (2 Points)
 
 As a maneuver, you place a magic sigil on a creature within 10 squares. When you place a sigil, you decide where it appears on the creature's body, and whether the sigil is visible to only you or to all creatures.
@@ -3123,6 +3199,7 @@ John hadn't hesitated, he'd already drawn his sword and falchion. "All right, yo
 
 [Time raider](scc:mcdm.heroes.v1/ancestry/time-raider) heroes have access to the following traits.
 
+<!-- @type: feature | @id: psychic-scar -->
 #### Signature Trait: Psychic Scar
 
 Your mind is a formidable layer of defense. You have psychic immunity equal to your level.
@@ -3131,22 +3208,27 @@ Your mind is a formidable layer of defense. You have psychic immunity equal to y
 
 You have 3 ancestry points to spend on the following traits. (*Quick Build:* Beyondsight, Psionic Gift with [Psionic Bolt](scc:mcdm.heroes.v1/feature.ability.time-raider/psionic-bolt).)
 
+<!-- @type: feature -->
 ##### Beyondsight (1 Point)
 
 As a maneuver, you can adjust your vision to allow you to see through mundane obstructions that are 1 square thick or less. While your vision is adjusted this way, you can't see the area within 1 square of you and you don't have line of effect to any creature or object in that area. You can restore your usual vision as a maneuver.
 
+<!-- @type: feature -->
 ##### Foresight (1 Point)
 
 Your senses extend past mundane obscuration and the veil of the future alike. You automatically know the location of any creature with concealment who isn't hidden from you within 20, and you negate the usual bane on strikes against such creatures. Additionally, whenever you are targeted by a strike, you can use a triggered action to impose a bane on the power roll.
 
+<!-- @type: feature -->
 ##### Four-Armed Athletics (1 Point)
 
 Your unique physiology enhances your movement. You gain an edge on tests that use the [Climb](scc:mcdm.heroes.v1/skill/climb), [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), or [Swim](scc:mcdm.heroes.v1/skill/swim) skills when you can use all your arms in the attempt.
 
+<!-- @type: feature -->
 ##### Four-Armed Martial Arts (2 Points)
 
 Your multiple arms let you take on multiple tasks at the same time. Whenever you use the Grab or Knockback maneuver against an adjacent creature, you can target one additional adjacent creature, using the same power roll for both targets. Additionally, you can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time.
 
+<!-- @type: feature -->
 ##### Psionic Gift (2 Points)
 
 Choose one signature ability from the following options. Signature abilities can be used at will.
@@ -4611,7 +4693,7 @@ As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the 
 
 | Level | Features                                                                                                   | Abilities                 | Order<br>Abilities |
 |-------|------------------------------------------------------------------------------------------------------------|---------------------------|--------------------|
-| 1st   | [Censor](scc:mcdm.heroes.v1/class/censor) Order, [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Wrath, [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment), Kit, [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours), Domain Feature, [Censor](scc:mcdm.heroes.v1/class/censor) Abilities | Signature, 3, 5           | -                  |
+| 1st   | [Censor](scc:mcdm.heroes.v1/class/censor) Order, [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Wrath, [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment), Kit, [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours), Domain Feature, [Censor Abilities](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-abilities) | Signature, 3, 5           | -                  |
 | 2nd   | Perk, Order Features, Order Ability                                                                        | Signature, 3, 5           | 5                  |
 | 3rd   | [Look On My Work and Despair](scc:mcdm.heroes.v1/feature.trait.censor.level-3/look-on-my-work-and-despair), 7-Wrath Ability                                                               | Signature, 3, 5, 7        | 5                  |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), Perk, Skill, [Wrath Beyond Wrath](scc:mcdm.heroes.v1/feature.trait.censor.level-4/wrath-beyond-wrath), Domain Feature                                   | Signature, 3, 5, 7        | 5                  |
@@ -4854,6 +4936,7 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 
 As a respite activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another respite.
 
+<!-- @type: feature -->
 #### Censor Abilities
 
 You use a blend of martial techniques and divine magic to attack your foes and defend your allies.
@@ -5125,6 +5208,7 @@ You are trained in secret techniques from your order that allow you to discern t
 
 You exhibit a small spark of your deity's power, causing creatures to trust or fear you, depending on what you need. You gain an edge on tests made to intimidate or persuade others.
 
+<!-- @type: feature -->
 #### 2nd-Level Order Ability
 
 Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
@@ -5231,6 +5315,7 @@ As a 3rd-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 
 Your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) has grown in [divine power](scc:mcdm.heroes.v1/feature.trait.conduit.level-10/divine-power), instilling fear in those you condemn. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can spend 1 wrath, and if the target has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) as a free triggered action, if the new target has P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you, they instead take holy damage equal to twice your Presence score.
 
+<!-- @type: feature -->
 #### 7-Wrath Ability
 
 Choose one heroic ability from the following options, each of which costs 7 wrath to use.
@@ -5434,6 +5519,7 @@ You discard each roll as it is used, and each time you earn Victories, you add n
 
 Your divine spark grows in power, allowing you and your allies to focus and endure. At the start of each of your turns, you can spend 1d6 Stamina to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally who starts their turn within 5 squares of you can also spend Stamina to gain this benefit.
 
+<!-- @type: feature -->
 #### 9-Wrath Ability
 
 Choose one heroic ability from the following options, each of which costs 9 wrath to use.
@@ -5518,6 +5604,7 @@ Each time you finish a respite, you can choose one hero's weapon, including your
 
 You gain one interpersonal, lore, or supernatural perk of your choice.
 
+<!-- @type: feature -->
 #### 6th-Level Order Ability
 
 Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
@@ -5790,6 +5877,7 @@ Your constant fragmentary visions become clearer, and can be honed to understand
 
 Your words take on the power of your deity, with all the authority that entails. If you convince a creature to take an oath, they can't break it for 7 days. If you take an oath, you can't break it for 7 days.
 
+<!-- @type: feature -->
 #### 11-Wrath Ability
 
 Choose one heroic ability from the following options, each of which costs 11 wrath to use.
@@ -5876,6 +5964,7 @@ The weapon you target with your [Implement of Wrath](scc:mcdm.heroes.v1/feature.
 - At the end of each of the weapon wielder's turns, each ally adjacent to the wielder makes a saving throw against each effect on them that is ended by a saving throw.
 - The weapon's wielder has corruption immunity 10.
 
+<!-- @type: feature -->
 #### 9th-Level Order Ability
 
 Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
@@ -6061,7 +6150,7 @@ The power of the gods flows through you! As a vessel for [divine power](scc:mcdm
 
 | Level | Features                                                                                                                             | Abilities                     | Domain Abilities  |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|-------------------|
-| 1st   | [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Piety, Domain Feature, [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace), [Ray of Wrath](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/ray-of-wrath), [Triggered Action](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/triggered-action), Prayer, [Conduit](scc:mcdm.heroes.v1/class/conduit) Ward, [Conduit](scc:mcdm.heroes.v1/class/conduit) Abilities     | Two signature, 3, 5           | -                 |
+| 1st   | [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Piety, Domain Feature, [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace), [Ray of Wrath](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/ray-of-wrath), [Triggered Action](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/triggered-action), Prayer, [Conduit](scc:mcdm.heroes.v1/class/conduit) Ward, [Conduit Abilities](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/conduit-abilities)     | Two signature, 3, 5           | -                 |
 | 2nd   | [The Lists of Heaven](scc:mcdm.heroes.v1/feature.trait.conduit.level-2/the-lists-of-heaven), Perk, Domain Feature, Domain Ability                                                                            | Two signature, 3, 5           | 5                 |
 | 3rd   | [Minor Miracle](scc:mcdm.heroes.v1/feature.trait.conduit.level-3/minor-miracle), 7-Piety Ability                                                                                                       | Two signature, 3, 5, 7        | 5                 |
 | 4th   | Blessed Domains, [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), Domain Feature, Perk, Skill Increase                                                       | Two signature, 3, 5, 7        | 5                 |
@@ -6436,6 +6525,7 @@ In response to a foe's aggression, your god protects you. Whenever another creat
 
 Invisible spirits surround you if you are harmed. Whenever an adjacent creature deals damage to you, they take corruption damage equal to your Intuition score.
 
+<!-- @type: feature -->
 #### Conduit Abilities
 
 Your training and faith let you specialize in magic that buffs your allies, debuffs your foes, and allows you to hold your own in combat alongside your friends.
@@ -6724,6 +6814,7 @@ You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7:
 
 You gain the 1st-level domain feature and ability to choose a skill for the domain you selected at 1st level but whose domain feature you didn't take at that level (see 1st-Level Domain Feature).
 
+<!-- @type: feature -->
 #### 2nd-Level Domain Ability
 
 Choose one of your domains. You gain a heroic ability from that domain, as shown on the 2nd-Level [Conduit](scc:mcdm.heroes.v1/class/conduit) Domain Abilities table.
@@ -6910,6 +7001,7 @@ As a respite activity, you can perform a religious ritual and beseech the gods t
 
 A creature with a willing soul returns to life at the end of the respite with full Stamina and half their Recoveries. You regain only half your Recoveries at the end of the respite.
 
+<!-- @type: feature -->
 #### 7-Piety Ability
 
 Choose one heroic ability from the following options, each of which costs 7 piety to use.
@@ -7094,6 +7186,7 @@ As a 5th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 
 You gain the 4th-level domain feature for the domain whose feature you didn't select at that level (see 4th-Level Domain Feature).
 
+<!-- @type: feature -->
 #### 9-Piety Ability
 
 Choose one heroic ability from the following options, each of which costs 9 piety to use.
@@ -7172,6 +7265,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 
 You gain one crafting, lore, or supernatural perk of your choice.
 
+<!-- @type: feature -->
 #### 6th-Level Domain Ability
 
 Choose one of your domains. You gain a heroic ability from that domain, as shown on the 6th-Level [Conduit](scc:mcdm.heroes.v1/class/conduit) Domain Abilities table.
@@ -7508,6 +7602,7 @@ You gain one perk of your choice.
 
 You gain the 7th-level domain feature for the domain whose feature you didn't select at that level (see 7th-Level Domain Feature).
 
+<!-- @type: feature -->
 #### 11-Piety Ability
 
 Choose one heroic ability from the following options, each of which costs 11 piety to use.
@@ -7577,6 +7672,7 @@ Each time you finish a respite, you can choose a willing hero ally who finished 
 
 Your god elevates the power flowing through you. Your characteristic scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.
 
+<!-- @type: feature -->
 #### 9th-Level Domain Ability
 
 Choose one of your domains. You gain a heroic ability from that domain, as shown on the 9th-Level [Conduit](scc:mcdm.heroes.v1/class/conduit) Domain Abilities table.
@@ -7849,7 +7945,7 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 | Level  | Features                                                                                                                                                                                            | Abilities                           |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| 1st    | [Elemental Specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization), Essence, [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element), [Persistent Magic](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/persistent-magic), [Practical Magic](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/practical-magic), Specialization Feature, [Specialization Triggered Action](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/specialization-triggered-action), [Enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment), [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Ward, [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Abilities | Two signature, 3, 5                 |
+| 1st    | [Elemental Specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization), Essence, [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element), [Persistent Magic](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/persistent-magic), [Practical Magic](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/practical-magic), Specialization Feature, [Specialization Triggered Action](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/specialization-triggered-action), [Enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment), [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Ward, [Elementalist Abilities](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elementalist-abilities) | Two signature, 3, 5                 |
 | 2nd    | Perk, Specialization Feature, New 5-Essence Ability                                                                                                                                                 | Two signature, 3, 5, 5              |
 | 3rd    | Specialization Feature, 7-Essence Ability                                                                                                                                                           | Two signature, 3, 5, 5, 7           |
 | 4th    | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Font of Essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-4/font-of-essence), [Mantle of Essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-4/mantle-of-essence), Perk, Skill Increase                                                                                                                   | Two signature, 3, 5, 5, 7           |
@@ -8178,6 +8274,7 @@ The green energy writhing within your body allows you to produce powerful vines 
 
 You use the magic of fire to create a ward of explosive energy. Whenever an adjacent creature deals damage to you, you can use a free triggered action to push that creature up to a number of squares equal to twice your Reason score.
 
+<!-- @type: feature -->
 #### Elementalist Abilities
 
 Your understanding of elemental magic grants you unique abilities, letting you damage, move, and debuff your enemies, empower your allies, and alter the terrain around you. You can select abilities from any [elemental specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization) to broaden your potential, or you can focus on abilities tied to your chosen specialization to establish your mastery of elemental power.
@@ -8550,6 +8647,7 @@ You have the following ability.
 > 
 > At the start of each of your turns while the portals are active, you can open a new portal connected to the others. If three or more portals are present, you and your allies choose which portal to emerge from when entering a portal, and a creature who [force move](scc:mcdm.heroes.v1/movement/forced-movement)s an enemy into a portal chooses that enemy's destination portal.
 
+<!-- @type: feature -->
 #### New 5-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 5 essence to use. Alternatively, you can choose one of the 5-essence abilities you didn't select at 1st level (see 1st-Level Features).
@@ -8681,6 +8779,7 @@ You have the following ability.
 > 
 > **Effect:** You see and hear any events that have occurred within 10 squares of the object within the last 12 hours, perceiving those events from the object's location as if you were there.
 
+<!-- @type: feature -->
 #### 7-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 7 essence to use.
@@ -8859,6 +8958,7 @@ You can use 1 square of movement to walk into an area of fire your size or large
 
 Additionally, whenever you use a fire ability or are targeted by an ability that deals fire damage, each enemy adjacent to you takes fire damage equal to your Reason score.
 
+<!-- @type: feature -->
 #### 9-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 9 essence to use.
@@ -8955,6 +9055,7 @@ You can spend 10 uninterrupted minutes to create a freeform magic spell for a va
 - You can preserve a corpse or up to 5 pounds of food for a week, or can cause a corpse or that amount of food to instantly rot.
 - You create a seal on a surface that can't be seen or felt by anyone but you. When a creature comes adjacent to the surface, you can see and hear through the seal for as long as the creature remains adjacent to it. When you create the seal, you can decide to limit the number of creatures who activate it by choosing a creature keyword (such as Undead) or a specific name (such as Ajax the Invincible) or organization (such as the Black Iron Pact). If you do, the seal alerts you only when creatures with the keyword, name, or organizational affiliation you provide pass by it. If you create a second seal, the first one disappears. You can dispel a seal at any time (no action required).
 
+<!-- @type: feature -->
 #### New 9-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 9 essence to use. Alternatively, you can choose one of the 9-assence abilities you didn't select at 5th level (see 5th-Level Features).
@@ -9149,6 +9250,7 @@ You have the following ability.
 >> - **12-16:** 9 damage; push 4
 >> - **17+:** 12 damage; push 5
 
+<!-- @type: feature -->
 #### 11-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 11 essence to use.
@@ -9223,6 +9325,7 @@ You have mastered the magic of shaping a wyrd, and can use your [Wyrding](scc:mc
 
 Additionally, when you have 5 or more Victories, choose one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. You have immunity all to that type.
 
+<!-- @type: feature -->
 #### New 11-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 11 essence to use. Alternatively, you can choose one of the 11-essence abilities you didn't select at 8th level (see 8th-Level Features).
@@ -9398,7 +9501,7 @@ You do not temper the heat of battle within you. You unleash it! Your experience
 
 | Level | Features                                                                                                                        | Abilities                 | Aspect Abilities |
 |-------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------|------------------|
-| 1st   | [Primordial Aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect), Ferocity, [Growing Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.boren/growing-ferocity), Aspect Features, [Aspect Triggered Action](scc:mcdm.heroes.v1/feature.trait.fury.level-1/aspect-triggered-action), [Mighty Leaps](scc:mcdm.heroes.v1/feature.trait.fury.level-1/mighty-leaps), [Fury](scc:mcdm.heroes.v1/class/fury) Abilities           | Signature, 3, 5           | -                |
+| 1st   | [Primordial Aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect), Ferocity, [Growing Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.boren/growing-ferocity), Aspect Features, [Aspect Triggered Action](scc:mcdm.heroes.v1/feature.trait.fury.level-1/aspect-triggered-action), [Mighty Leaps](scc:mcdm.heroes.v1/feature.trait.fury.level-1/mighty-leaps), [Fury Abilities](scc:mcdm.heroes.v1/feature.trait.fury.level-1/fury-abilities)           | Signature, 3, 5           | -                |
 | 2nd   | Perk, Aspect Feature, Aspect Ability                                                                                            | Signature, 3, 5           | 5                |
 | 3rd   | Aspect Feature, 7-Ferocity Ability                                                                                              | Signature, 3, 5, 7        | 5                |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Damaging Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.level-4/damaging-ferocity), [Growing Ferocity Improvement](scc:mcdm.heroes.v1/feature.trait.fury.level-10/growing-ferocity-improvement), Perk, [Primordial Attunement](scc:mcdm.heroes.v1/feature.trait.fury.level-4/primordial-attunement), [Primordial Strike](scc:mcdm.heroes.v1/feature.trait.fury.level-4/primordial-strike), Skill | Signature, 3, 5, 7        | 5                |
@@ -9582,6 +9685,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordia
 
 You can't obtain lower than a tier 2 outcome on any Might test made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
+<!-- @type: feature -->
 #### Fury Abilities
 
 You specialize in dealing massive damage on the battlefield, and have mastered unique martial abilities that allow you to strike hard and keep moving.
@@ -9834,6 +9938,7 @@ At the end of each of your turns, each enemy adjacent to you takes damage equal 
 
 Whenever you use the Charge main action, you can use a strike signature ability or a strike heroic ability instead of a free strike. Additionally, you can jump as part of your charge.
 
+<!-- @type: feature -->
 #### 2nd-Level Aspect Ability
 
 Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect) grants your choice of one of two heroic abilities.
@@ -9983,6 +10088,7 @@ When you are in a negotiation with an animal or elemental, you treat your Renown
 
 You have a double edge on tests made to search for hidden creatures, discern hidden motives, or detect lies. You also have a double edge on tests made to gamble!
 
+<!-- @type: feature -->
 #### 7-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 7 ferocity to use.
@@ -10104,6 +10210,7 @@ You and each ally within 5 squares of you ignore negative effects from inclement
 
 At the start of your turn, you can end any [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on you. Additionally, you have a double edge on tests made to escape being confined or imprisoned.
 
+<!-- @type: feature -->
 #### 9-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 9 ferocity to use.
@@ -10202,6 +10309,7 @@ As a main action, you can touch a magic source of elemental power and use it to 
 
 You gain one crafting, exploration, or intrigue perk of your choice.
 
+<!-- @type: feature -->
 #### 6th-Level Aspect Ability
 
 Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect) grants your choice of one of two heroic abilities.
@@ -10384,6 +10492,7 @@ You move with legendary grace. Whenever you make an Agility test, you can roll t
 
 Your strength is unmatched. Whenever you make a Might test, you can roll three dice and choose which two to use. Additionally, whenever you use the Knockback maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Might score.
 
+<!-- @type: feature -->
 #### 11-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 11 ferocity to use.
@@ -10454,6 +10563,7 @@ As a 9th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fea
 
 You can create a temporary source of elemental power as a respite activity. This source of elemental power lasts 24 hours after creation, and can be used to create a portal to Quintessence with your [Primordial Portal](scc:mcdm.heroes.v1/feature.trait.fury.level-6/primordial-portal) feature. If you do so, the source of elemental power lasts as long as the portal is maintained in your network.
 
+<!-- @type: feature -->
 #### 9th-Level Aspect Ability
 
 Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect) grants your choice of one of two heroic abilities.
@@ -10981,7 +11091,7 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 | Level | Features                                                                                                                                            | Abilities                     | Tradition Abilities |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|
-| 1st   | [Null](scc:mcdm.heroes.v1/class/null) Tradition, Discipline, [Null](scc:mcdm.heroes.v1/class/null) Field, [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield), [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline-mastery), [Null](scc:mcdm.heroes.v1/class/null) Speed, [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Psionic Martial Arts](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-martial-arts), [Null](scc:mcdm.heroes.v1/class/null) Abilities | Two signature, 3, 5           | -                   |
+| 1st   | [Null](scc:mcdm.heroes.v1/class/null) Tradition, Discipline, [Null](scc:mcdm.heroes.v1/class/null) Field, [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield), [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline-mastery), [Null](scc:mcdm.heroes.v1/class/null) Speed, [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Psionic Martial Arts](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-martial-arts), [Null Abilities](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-abilities) | Two signature, 3, 5           | -                   |
 | 2nd   | Perk, Tradition Feature, Tradition Ability                                                                                                          | Two signature, 3, 5           | 5                   |
 | 3rd   | [Psionic Leap](scc:mcdm.heroes.v1/feature.trait.null.level-3/psionic-leap), [Reorder](scc:mcdm.heroes.v1/feature.trait.null.level-3/reorder), 7-Discipline Ability                                                                                                         | Two signature, 3, 5, 7        | 5                   |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Discipline Mastery Improvement](scc:mcdm.heroes.v1/feature.trait.null.level-10/discipline-mastery-improvement), Enhanced [Null](scc:mcdm.heroes.v1/class/null) Field, Perk, [Regenerative Field](scc:mcdm.heroes.v1/feature.trait.null.level-4/regenerative-field), Skill                                       | Two signature, 3, 5, 7        | 5                   |
@@ -11162,6 +11272,7 @@ You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes
 
 Whenever you use the Knockback or Grab maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the Knockback maneuver, you can choose to slide the target instead of pushing them.
 
+<!-- @type: feature -->
 #### Null Abilities
 
 You rely on a unique blend of martial techniques and psionic prowess to take down your foes and defend your allies.
@@ -11478,6 +11589,7 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 
 As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any respite, you can take an additional respite activity.
 
+<!-- @type: feature -->
 #### 2nd-Level Tradition Ability
 
 Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two abilities.
@@ -11593,6 +11705,7 @@ You can long jump and high jump a distance equal to twice your Agility score wit
 
 At the start of each of your turns, you can use a free triggered action to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability.
 
+<!-- @type: feature -->
 #### 7-Discipline Ability
 
 Choose one heroic ability from the following options, each of which costs 7 discipline to use.
@@ -11709,6 +11822,7 @@ Whenever you use an ability to reduce damage dealt to you or to reduce the dista
 
 If you're not surprised at the start of your first turn in combat, you gain an edge on ability rolls and gain 2 surges. If you are surprised, you can spend 3 discipline to no longer be surprised and gain the benefits of this feature.
 
+<!-- @type: feature -->
 #### 9-Discipline Ability
 
 Choose one heroic ability from the following options, each of which costs 9 discipline to use.
@@ -11791,6 +11905,7 @@ Whenever you reduce acid, cold, corruption, fire, lightning, poison, or sonic da
 
 You gain one exploration, interpersonal, or intrigue perk of your choice.
 
+<!-- @type: feature -->
 #### 6th-Level Tradition Ability
 
 Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two heroic abilities.
@@ -11994,6 +12109,7 @@ When you take the Disengage move action, one ally in the area of your [Null](scc
 
 As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability also gains this benefit.
 
+<!-- @type: feature -->
 #### 11-Discipline Ability
 
 Choose one heroic ability from the following options, each of which costs 11 discipline to use.
@@ -12070,6 +12186,7 @@ As a 9th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 
 Your Stamina increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying. You no longer age or have need of food. Additionally, you can use Intuition instead of another characteristic when resisting potencies.
 
+<!-- @type: feature -->
 #### 9th-Level Tradition Ability
 
 Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two heroic abilities.
@@ -12264,7 +12381,7 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 | Level | Features                                                                                                            | Abilities                 | College Abilities |
 |-------|---------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------|
-| 1st   | [Shadow](scc:mcdm.heroes.v1/class/shadow) College, Insight, College Features, [College Triggered Action](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/college-triggered-action), [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness), Kit, [Shadow](scc:mcdm.heroes.v1/class/shadow) Abilities  | Signature, 3, 5           | -                 |
+| 1st   | [Shadow](scc:mcdm.heroes.v1/class/shadow) College, Insight, College Features, [College Triggered Action](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/college-triggered-action), [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness), Kit, [Shadow Abilities](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-abilities)  | Signature, 3, 5           | -                 |
 | 2nd   | College Feature, Perk, College Ability                                                                              | Signature, 3, 5           | 5                 |
 | 3rd   | [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation), 7-Insight Ability                                                                              | Signature, 3, 5, 7        | 5                 |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Keep It Down](scc:mcdm.heroes.v1/feature.trait.shadow.level-4/keep-it-down), [Night Watch](scc:mcdm.heroes.v1/feature.ability.shadow.level-4/night-watch), Perk, Skill, [Surge of Insight](scc:mcdm.heroes.v1/feature.trait.shadow.level-4/surge-of-insight)                                   | Signature, 3, 5, 7        | 5                 |
@@ -12467,6 +12584,7 @@ You have the following ability.
 
 You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger).)
 
+<!-- @type: feature -->
 #### Shadow Abilities
 
 You specialize in dealing damage, then getting out of harm's way before the inevitable counterattack. You know a number of unique martial abilities that define your presence on the battlefield.
@@ -12717,6 +12835,7 @@ Additionally, when you use your I'm No Threat ability, you can take the Disengag
 
 You know just where to cut your enemies. Whenever you make a strike that has no bane or double bane, and that incorporates 1 or more surges, you gain 1 additional surge that you can use only on that strike.
 
+<!-- @type: feature -->
 #### 2nd-Level College Ability
 
 Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
@@ -12846,6 +12965,7 @@ You have the following ability.
 > 
 > **Effect:** As long as you remain within distance of the target, maintain line of effect to them, and strike no other creature first, you gain an edge on the next strike you make against the assessed creature, and gain 1 surge you can use only on that strike.
 
+<!-- @type: feature -->
 #### 7-Insight Ability
 
 Choose one heroic ability from the following options, each of which costs 7 insight to use.
@@ -12997,6 +13117,7 @@ Whenever you take damage, each enemy adjacent to you takes fire, acid, or poison
 
 Additionally, your [Defensive Roll](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/defensive-roll) ability now allows you to [shift](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares, including [shifting](scc:mcdm.heroes.v1/movement/shifting) vertically. If you don't end this [shift](scc:mcdm.heroes.v1/movement/shifting) on solid ground and are not [flying](scc:mcdm.heroes.v1/movement/fly), you fall.
 
+<!-- @type: feature -->
 #### 9-Insight Ability
 
 Choose one heroic ability from the following options, each of which costs 9 insight to use.
@@ -13086,6 +13207,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 - Creatures gain an edge on strikes against you.
 - You take a bane on Presence tests made to interact with other creatures.
 
+<!-- @type: feature -->
 #### 6th-Level College Ability
 
 Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
@@ -13273,6 +13395,7 @@ You have damage immunity against area abilities and effects equal to your Agilit
 >
 > **Spend 2+ Insight:** For every 2 insight spent, you increase the cube's size by 1 and gain 1 surge that can be used only with this ability.
 
+<!-- @type: feature -->
 #### 11-Insight Ability
 
 Choose one heroic ability from the following options, each of which costs 11 insight to use.
@@ -13347,6 +13470,7 @@ At the start of each of your turns, you can forgo gaining insight to create 1d6 
 
 Outside of combat, you can have one clone active for every 2 Victories you have. If a clone is destroyed, you must wait 1 hour before creating another one.
 
+<!-- @type: feature -->
 #### 9th-Level College Ability
 
 Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
@@ -13542,7 +13666,7 @@ Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw 
 
 | Level | Features                                                                                                                    | Abilities      | Doctrine Abilities |
 |-------|-----------------------------------------------------------------------------------------------------------------------------|----------------|--------------------|
-| 1st   | [Tactical Doctrine](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactical-doctrine), Focus, Doctrine Feature, [Doctrine Triggered Action](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/doctrine-triggered-action), [Field Arsenal](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/field-arsenal), Mark, [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now), [Tactician](scc:mcdm.heroes.v1/class/tactician) Abilities | 3, 5           | -                  |
+| 1st   | [Tactical Doctrine](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactical-doctrine), Focus, Doctrine Feature, [Doctrine Triggered Action](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/doctrine-triggered-action), [Field Arsenal](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/field-arsenal), Mark, [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now), [Tactician Abilities](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactician-abilities) | 3, 5           | -                  |
 | 2nd   | Perk, Doctrine Feature, Doctrine Ability                                                                                    | 3, 5           | 5                  |
 | 3rd   | [Out of Position](scc:mcdm.heroes.v1/feature.trait.tactician.level-3/out-of-position), 7-Focus Ability                                                                                            | 3, 5, 7        | 5                  |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), Focus on Their Weakness, [Improved Field Arsenal](scc:mcdm.heroes.v1/feature.trait.tactician.level-4/improved-field-arsenal), Perk, Skill                                       | 3, 5, 7        | 5                  |
@@ -13588,7 +13712,7 @@ Though you can't gain focus outside of combat, you can use your heroic abilities
 
 When you use an ability outside of combat that lets you spend unlimited focus on its effect, you can use it as if you had spent an amount of focus equal to your Victories. (Such abilities aren't part of the core rules for the [tactician](scc:mcdm.heroes.v1/class/tactician), but they might appear in future products.)
 
-> **[Tactician](scc:mcdm.heroes.v1/class/tactician) Abilities Explained**
+> **[Tactician Abilities](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactician-abilities) Explained**
 >
 > Many of the [tactician's](scc:mcdm.heroes.v1/class/tactician) abilities grant allies extra movement, damage, and actions. But what's happening in the fiction to allow this? The [tactician](scc:mcdm.heroes.v1/class/tactician) is an incredible strategist and inspiring leader who is quick to give commands and inspiration that causes their allies to act. The [tactician](scc:mcdm.heroes.v1/class/tactician) can quickly read the battlefield, analyze enemies, and then bark orders and encouragement that pushes their allies to greatness. Many of the names of the [tactician's](scc:mcdm.heroes.v1/class/tactician) abilities are the actual commands they give their friends!
 
@@ -13759,6 +13883,7 @@ You have the following ability.
 >
 > **Spend 5 Focus:** You target two allies instead of one.
 
+<!-- @type: feature -->
 #### Tactician Abilities
 
 You are a formidable combatant in your own right, but your greatest strength is the abilities you wield that let you shape control of the battlefield.
@@ -13832,6 +13957,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 >
 > **Effect:** Each target can move up to their speed.
 
+<!-- @type: feature -->
 #### 5-Focus Ability
 
 Choose one heroic ability from the following options, each of which costs 5 focus to use. (*Quick Build:* [Hammer and Anvil](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/hammer-and-anvil).)
@@ -13934,6 +14060,7 @@ After constant drills, you can more accurately anticipate an enemy's plan and th
 
 **Mark Benefit:** When a creature marked by you attempts to move or [shift](scc:mcdm.heroes.v1/movement/shifting) within distance of your melee free strike, you can use a free triggered action and spend 2 focus to make a melee free strike against that creature.
 
+<!-- @type: feature -->
 #### 2nd-Level Doctrine Ability
 
 Your [tactical doctrine](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactical-doctrine) grants your choice of one of two heroic abilities.
@@ -14050,6 +14177,7 @@ As a 3rd-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 
 Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can't be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.
 
+<!-- @type: feature -->
 #### 7-Focus Ability
 
 Choose one heroic ability from the following options, each of which costs 7 focus to use.
@@ -14176,6 +14304,7 @@ As a free maneuver, you can spend 1d6 Stamina to ignore a consequence from a tes
 
 When you use the Charge main action to attack a creature marked by you, you can use a signature or heroic ability with the Melee and Strike keywords instead of a melee free strike.
 
+<!-- @type: feature -->
 #### 9-Focus Ability
 
 Choose one heroic ability from the following options, each of which costs 9 focus to use.
@@ -14245,6 +14374,7 @@ Your expertise with weapons has grown to true mastery. Whenever you use a signat
 
 You gain one exploration, interpersonal, or intrigue perk of your choice.
 
+<!-- @type: feature -->
 #### 6th-Level Doctrine Ability
 
 Your [tactical doctrine](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactical-doctrine) grants your choice of one of two heroic abilities.
@@ -14448,6 +14578,7 @@ You have trained your squad to maximize impact and break enemy lines when they a
 
 **Mark Benefit:** When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your Reason score. That character can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score, ending this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
 
+<!-- @type: feature -->
 #### 11-Focus Ability
 
 Choose one heroic ability from the following options, each of which costs 11 focus to use.
@@ -14514,6 +14645,7 @@ As a 9th-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 
 Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a free strike using a weapon from one of your equipped kits, you automatically obtain a tier 3 outcome on the power roll. You can still roll to determine if you score a critical hit.
 
+<!-- @type: feature -->
 #### 9th-Level Doctrine Ability
 
 Your [tactical doctrine](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/tactical-doctrine) grants your choice of one of two heroic abilities.
@@ -14696,7 +14828,7 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 | Level | Features                                                                                                                                     | Abilities                     | Tradition Abilities |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|
-| 1st   | [Talent](scc:mcdm.heroes.v1/class/talent) Tradition, [Clarity and Strain](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain), [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike), [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Talent](scc:mcdm.heroes.v1/class/talent) Ward, [Telepathic Speech](scc:mcdm.heroes.v1/feature.trait.talent.level-1/telepathic-speech), Tradition Features, [Talent](scc:mcdm.heroes.v1/class/talent) Abilities | Two signature, 3, 5           | -                   |
+| 1st   | [Talent](scc:mcdm.heroes.v1/class/talent) Tradition, [Clarity and Strain](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain), [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike), [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Talent](scc:mcdm.heroes.v1/class/talent) Ward, [Telepathic Speech](scc:mcdm.heroes.v1/feature.trait.talent.level-1/telepathic-speech), Tradition Features, [Talent Abilities](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-abilities) | Two signature, 3, 5           | -                   |
 | 2nd   | Perk, Tradition Feature, Tradition Ability                                                                                                   | Two signature, 3, 5           | 5                   |
 | 3rd   | Scan, 7-Clarity Ability                                                                                                                      | Two signature, 3, 5, 7        | 5                   |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Mind Projection](scc:mcdm.heroes.v1/feature.trait.talent.level-4/mind-projection), [Mind Recovery](scc:mcdm.heroes.v1/feature.trait.talent.level-4/mind-recovery), Perk, Skill [Suspensor Field](scc:mcdm.heroes.v1/feature.trait.talent.level-4/suspensor-field)                                                         | Two signature, 3, 5, 7        | 5                   |
@@ -14961,6 +15093,7 @@ You have the following ability.
 >
 > **Effect:** The target takes half the triggering damage, or the distance of the triggering [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced to 0 squares, the target can push the source of the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to your Reason score.
 
+<!-- @type: feature -->
 #### Talent Abilities
 
 You manifest a variety of psionic powers that let you impact the environment, bolster your allies, and empower yourself. You can choose abilities across different [talent](scc:mcdm.heroes.v1/class/talent) traditions or focus on abilities tied to your chosen tradition to dedicate yourself to its power.
@@ -15279,6 +15412,7 @@ You gain an edge on tests made to stop combat and start a negotiation. Additiona
 
 Whenever you land after a fall, or if any falling creature lands within 2 squares of you, you can use a free triggered action to reduce the falling damage by an amount equal to 2 + your Reason score.
 
+<!-- @type: feature -->
 #### 2nd-Level Tradition Ability
 
 Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
@@ -15413,6 +15547,7 @@ As a 3rd-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 
 You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish line of effect to a thinking creature within distance of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have line of effect to that creature until they move beyond that distance.
 
+<!-- @type: feature -->
 #### 7-Clarity Ability
 
 Choose one heroic ability from the following options, each of which costs 7 clarity to use.
@@ -15578,6 +15713,7 @@ Once per combat round while you are not dying, you can spend 2 clarity when you 
 
 Whenever an ally uses a ranged ability while you are within the ability's distance, you can spend 1 clarity as a free triggered action to allow them to use the ability as if they were in your space.
 
+<!-- @type: feature -->
 #### 9-Clarity Ability
 
 Choose one heroic ability from the following options, each of which costs 9 clarity to use.
@@ -15702,6 +15838,7 @@ If the ability targets individual creatures or objects, you target one additiona
 
 If the ability has any power roll, that roll gains an edge.
 
+<!-- @type: feature -->
 #### 6th-Level Tradition Ability
 
 Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
@@ -15941,6 +16078,7 @@ You have the following ability.
 
 The range of your [Telepathic Speech](scc:mcdm.heroes.v1/feature.trait.talent.level-1/telepathic-speech) feature increases to anywhere on the same world.
 
+<!-- @type: feature -->
 #### 11-Clarity Ability
 
 Choose one heroic ability from the following options, each of which costs 11 clarity to use.
@@ -16029,6 +16167,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 - Your Reason and Intuition are treated as 2 higher for the purpose of resisting the potency of abilities.
 - You can't be made [taunted](scc:mcdm.heroes.v1/condition/taunted) or [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
+<!-- @type: feature -->
 #### 9th-Level Tradition Ability
 
 Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
@@ -16234,7 +16373,7 @@ There is no visible text in the image provided. The image appears to show a deco
 
 | Level | Features                                                                                                                        | Abilities                 | Class Act Abilities |
 |-------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------|
-| 1st   | [Troubadour](scc:mcdm.heroes.v1/class/troubadour) Class Act, Drama, Kit, [Scene Partner](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/scene-partner), [Routines](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/routines), Class Act Features, [Class Act Triggered Action](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/class-act-triggered-action), [Troubadour](scc:mcdm.heroes.v1/class/troubadour) Abilities | Signature, 3, 5           | -                   |
+| 1st   | [Troubadour](scc:mcdm.heroes.v1/class/troubadour) Class Act, Drama, Kit, [Scene Partner](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/scene-partner), [Routines](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/routines), Class Act Features, [Class Act Triggered Action](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/class-act-triggered-action), [Troubadour Abilities](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-abilities) | Signature, 3, 5           | -                   |
 | 2nd   | [Appeal to the Muses](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/appeal-to-the-muses), [Invocation](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/invocation), Perk, Class Act Ability                                                                        | Signature, 3, 5           | 5                   |
 | 3rd   | Class Act Feature, 7-Drama Ability                                                                                              | Signature, 3, 5, 7        | 5                   |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Melodrama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-4/melodrama), Perk, Skill, [Zeitgeist](scc:mcdm.heroes.v1/feature.trait.troubadour.level-4/zeitgeist)                                                                      | Signature, 3, 5, 7        | 5                   |
@@ -16532,10 +16671,12 @@ Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants you a tr
 >
 > **Spend 3 Drama:** An edge on the triggering roll becomes a double bane, or a double edge is negated. A bane becomes a double edge, or a double bane is negated.
 
+<!-- @type: feature -->
 #### Troubadour Abilities
 
 Your performance centers around maneuvering through the scene of battle, maintaining its momentum so that the story flows as dramatically as possible.
 
+<!-- @type: feature -->
 #### Signature Ability
 
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* [Witty Banter](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/witty-banter).)
@@ -16789,6 +16930,7 @@ The Director can award the heroes 1 hero token to make you infamous among the gr
 
 You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
+<!-- @type: feature -->
 #### 2nd-Level Class Act Ability
 
 Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
@@ -16938,6 +17080,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > **Effect:** While this performance is active, each target who starts their turn dying while in the area gains an edge on power rolls and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their turn.
 
+<!-- @type: feature -->
 #### 7-Drama Ability
 
 Choose one heroic ability from the following options, each of which costs 7 drama to use.
@@ -17134,6 +17277,7 @@ Once on each of your turns, you can use a free maneuver to exchange words with a
 
 You can maintain two performances at a time using your [Routines](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/routines) feature.
 
+<!-- @type: feature -->
 #### 9-Drama Ability
 
 Choose one heroic ability from the following options, each of which costs 9 drama to use.
@@ -17218,6 +17362,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area gains 1 of their Heroic Resource. This Heroic Resource disappears at the end of the target's turn if they don't spend it.
 
+<!-- @type: feature -->
 #### 6th-Level Class Act Ability
 
 Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
@@ -17403,6 +17548,7 @@ Choose one of your signature abilities and name it after yourself. You always ha
 
 Additionally, when your named signature ability is the last ability you use in an encounter, you can immediately use the Hear Ye, Hear Ye! effect of your [Zeitgeist](scc:mcdm.heroes.v1/feature.trait.troubadour.level-4/zeitgeist) feature to tell tales of your exploits after the encounter ends.
 
+<!-- @type: feature -->
 #### 11-Drama Ability
 
 Choose one heroic ability from the following options, each of which costs 11 drama to use.
@@ -17474,6 +17620,7 @@ You are empowered by your audience, near and far. You can't be made [frightened]
 
 Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains temporary Stamina equal to 10 + the number of active bonds from your [Scene Partner](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/scene-partner) feature + either your Victories or the number of players in your game (whichever is higher).
 
+<!-- @type: feature -->
 #### 9th-Level Class Act Ability
 
 Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
