@@ -3278,12 +3278,14 @@ Your culture's environment aspect describes where the people of that culture spe
 
 When you build a culture, select its environment aspect from the following options: nomadic, rural, secluded, urban, or wilderness. You gain skill options from your chosen environment. All of these environments can be found in any sort of terrain, whether aboveground, in subterranean caverns, deep in trackless forest, or even underwater.
 
+<!-- @type: culture | @id: nomadic -->
 ##### Nomadic
 
 A [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture travels from place to place to survive. Members of a [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in [nomadic](scc:mcdm.heroes.v1/culture/nomadic) cultures learn to navigate the wilderness and work closely with others to survive.
 
 **Skill Options:** One skill from the exploration or interpersonal skill groups. (*Quick Build:* [Navigate](scc:mcdm.heroes.v1/skill/navigate).)
 
+<!-- @type: culture | @id: rural -->
 ##### Rural
 
 A [rural](scc:mcdm.heroes.v1/culture/rural) culture is one located in a town, village, or smaller settled enclave. People dwelling in such places often cultivate the land, trade goods or services with travelers passing through, harvest fish from the sea, or mine metals and gems from the earth.
@@ -3294,6 +3296,7 @@ gets the sniffles, folks want an acolyte ready to wear the fancy robes should th
 
 **Skill Options:** One skill from the crafting or lore skill groups. (*Quick Build:* [Nature](scc:mcdm.heroes.v1/skill/nature).)
 
+<!-- @type: culture | @id: secluded -->
 ##### Secluded
 
 A [secluded](scc:mcdm.heroes.v1/culture/secluded) culture is based in one relatively close-quarters structure—a building, a cavern, and so forth—and interacts with other cultures only rarely. Such places are often buildings or complexes such as monasteries, castles, or prisons. Folk in a [secluded](scc:mcdm.heroes.v1/culture/secluded) culture have little or no reason to leave their home or interact with other cultures on the outside, but might have an awareness of those cultures and of events happening beyond their enclave.
@@ -3302,12 +3305,14 @@ When people live together in close quarters, they typically learn to get along. 
 
 **Skill Options:** One skill from the interpersonal or lore skill groups. (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill/read-person).)
 
+<!-- @type: culture | @id: urban -->
 ##### Urban
 
 An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
 
 **Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill/alertness).)
 
+<!-- @type: culture | @id: wilderness -->
 ##### Wilderness
 
 A [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
@@ -3320,6 +3325,7 @@ Your culture's organization aspect determines the functioning and leadership of 
 
 When you build a culture, select its organization aspect from the following options: [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) or [communal](scc:mcdm.heroes.v1/culture/communal). You gain skill options from your chosen system of organization.
 
+<!-- @type: culture | @id: bureaucratic -->
 ##### Bureaucratic
 
 [Bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities
@@ -3330,6 +3336,7 @@ Those who thrive in [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cult
 
 **Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Persuade](scc:mcdm.heroes.v1/skill/persuade).)
 
+<!-- @type: culture | @id: communal -->
 ##### Communal
 
 A [communal](scc:mcdm.heroes.v1/culture/communal) culture is a place where all members of the culture are considered equal. The community works together to make important decisions that affect the majority of the culture. While they elect leaders to carry out these decisions and organize their efforts, each person has a relatively equal say in how the culture operates, and everyone contributes to help their people survive and thrive. Individuals often share the burdens of governing, physical labor, childcare, and other duties. A collective of farmers who work together to cultivate and protect their land without a noble, a city of pirates where each person can do as they wish, and a traveling theatrical troupe whose members vote on every artistic and administrative decision are all communal cultures.
@@ -3344,36 +3351,42 @@ Your culture's upbringing aspect is a more specific and personal part of your he
 
 Pick your upbringing aspect from the following list: [academic](scc:mcdm.heroes.v1/culture/academic), [creative](scc:mcdm.heroes.v1/culture/creative), [labor](scc:mcdm.heroes.v1/culture/labor), [lawless](scc:mcdm.heroes.v1/culture/lawless), [martial](scc:mcdm.heroes.v1/culture/martial), or [noble](scc:mcdm.heroes.v1/culture/noble). You gain skill options from your chosen aspect.
 
+<!-- @type: culture | @id: academic -->
 ##### Academic
 
 Your hero was raised by people who collect, study, and share books and other records. Some academics focus on one area of study, such as a college for wizards dedicated to the study of magic, or a church that teaches the word of one deity. People in an [academic](scc:mcdm.heroes.v1/culture/academic) culture learn how to wield the power that is knowledge.
 
 **Skill Options:** One skill from the lore skill group. (*Quick Build:* [History](scc:mcdm.heroes.v1/skill/history).)
 
+<!-- @type: culture | @id: creative -->
 ##### Creative
 
 A hero with a [creative](scc:mcdm.heroes.v1/culture/creative) upbringing was raised among folk who create art or other works valuable enough to trade. A [creative](scc:mcdm.heroes.v1/culture/creative) culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.
 
 **Skill Options:** The [Music](scc:mcdm.heroes.v1/skill/music) or [Perform](scc:mcdm.heroes.v1/skill/perform) skill (from the interpersonal skill group), or one skill from the crafting group. (*Quick Build:* [Perform](scc:mcdm.heroes.v1/skill/perform).)
 
+<!-- @type: culture | @id: labor -->
 ##### Labor
 
 Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual [labor](scc:mcdm.heroes.v1/culture/labor) tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a [labor](scc:mcdm.heroes.v1/culture/labor) upbringing know the value of hard work.
 
 **Skill Options:** The [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing) skill (from the crafting skill group), the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill (from the interpersonal group), or a skill from the exploration group. (*Quick Build:* [Lift](scc:mcdm.heroes.v1/skill/lift).)
 
+<!-- @type: culture | @id: lawless -->
 ##### Lawless
 
 Your hero grew up among folk who performed activities that other people—whether within or outside their culture—considered unlawful. A band of pirates, a guild of assassins, or an organization of spies all commit unlawful acts for money. And under tyranny, people engaged in rebellion are often considered [lawless](scc:mcdm.heroes.v1/culture/lawless) in their actions and activities. People brought up in a [lawless](scc:mcdm.heroes.v1/culture/lawless) culture typically don't mind breaking the rules when it suits them—and are good at making sure no one finds out they did.
 
 **Skill Options:** One skill from the intrigue skill group. (*Quick Build:* [Sneak](scc:mcdm.heroes.v1/skill/sneak).)
 
+<!-- @type: culture | @id: martial -->
 ##### Martial
 
 A hero with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing are always ready for a fight—and they know how to finish that fight.
 
 **Skill Options:** One of the following: [Blacksmithing](scc:mcdm.heroes.v1/skill/blacksmithing) or [Fletching](scc:mcdm.heroes.v1/skill/fletching) from the crafting skill group; [Climb](scc:mcdm.heroes.v1/skill/climb), [Endurance](scc:mcdm.heroes.v1/skill/endurance), or [Ride](scc:mcdm.heroes.v1/skill/ride) from the exploration group; [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) from the interpersonal group; [Alertness](scc:mcdm.heroes.v1/skill/alertness) or [Track](scc:mcdm.heroes.v1/skill/track) from the intrigue group; or [Monsters](scc:mcdm.heroes.v1/skill/monsters) or [Strategy](scc:mcdm.heroes.v1/skill/strategy) from the lore skill group (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill/intimidate).)
 
+<!-- @type: culture | @id: noble -->
 ##### Noble
 
 Your hero grew up among leaders who rule over others and play the games of politics to maintain power. Many families are [noble](scc:mcdm.heroes.v1/culture/noble)s by birthright, but some cultures have [noble](scc:mcdm.heroes.v1/culture/noble) titles earned through deeds or popularity. Whatever the case, heroes with this background understand why the whispered words in the right ear can sometimes be more powerful than any army.
@@ -20485,6 +20498,56 @@ Consequences for tests made with crafting skills typically include wasting rare 
 | Jewelry       | Create bracelets, crowns, rings, and other jewelry |
 | Mechanics     | Build machines and clockwork items                 |
 | Tailoring     | Craft clothing of cloth or leather                 |
+<!-- @type: skill | @id: alchemy -->
+###### Alchemy
+
+Make bombs and potions.
+
+<!-- @type: skill | @id: architecture -->
+###### Architecture
+
+Create buildings and vehicles.
+
+<!-- @type: skill | @id: blacksmithing -->
+###### Blacksmithing
+
+Forge metal armor and weapons.
+
+<!-- @type: skill | @id: carpentry -->
+###### Carpentry
+
+Create items out of wood.
+
+<!-- @type: skill | @id: cooking -->
+###### Cooking
+
+Create delicious dishes.
+
+<!-- @type: skill | @id: fletching -->
+###### Fletching
+
+Make ranged weapons and ammunition.
+
+<!-- @type: skill | @id: forgery -->
+###### Forgery
+
+Create false badges, documents, and other items.
+
+<!-- @type: skill | @id: jewelry -->
+###### Jewelry
+
+Create bracelets, crowns, rings, and other jewelry.
+
+<!-- @type: skill | @id: mechanics -->
+###### Mechanics
+
+Build machines and clockwork items.
+
+<!-- @type: skill | @id: tailoring -->
+###### Tailoring
+
+Craft clothing of cloth or leather.
+
 
 ##### Exploration Skills
 
@@ -20508,6 +20571,56 @@ Consequences for tests made with exploration skills include harming yourself, yo
 | Navigate   | Read a map and travel without becoming lost                     |
 | Ride       | Ride and control a nonsapient mount, such as a horse            |
 | Swim       | Move through deep liquid                                        |
+<!-- @type: skill | @id: climb -->
+###### Climb
+
+Move up vertical surfaces.
+
+<!-- @type: skill | @id: drive -->
+###### Drive
+
+Control vehicles.
+
+<!-- @type: skill | @id: endurance -->
+###### Endurance
+
+Remain engaged in strenuous activity over a long period of time.
+
+<!-- @type: skill | @id: gymnastics -->
+###### Gymnastics
+
+Move across unsteady or narrow surfaces; tumble.
+
+<!-- @type: skill | @id: heal -->
+###### Heal
+
+Use mundane first aid.
+
+<!-- @type: skill | @id: jump -->
+###### Jump
+
+Leap vertical and horizontal distances.
+
+<!-- @type: skill | @id: lift -->
+###### Lift
+
+Pick up, carry, and throw heavy objects.
+
+<!-- @type: skill | @id: navigate -->
+###### Navigate
+
+Read a map and travel without becoming lost.
+
+<!-- @type: skill | @id: ride -->
+###### Ride
+
+Ride and control a nonsapient mount, such as a horse.
+
+<!-- @type: skill | @id: swim -->
+###### Swim
+
+Move through deep liquid.
+
 
 ##### Interpersonal Skills
 
@@ -20534,6 +20647,71 @@ Consequences for tests made with interpersonal skills include making the creatur
 | Perform        | Engage in dance, oratory, acting, or some other physical performance    |
 | Persuade       | Convince someone to agree with you through use of your charms and grace |
 | Read Person    | Read the emotions and body language of other creatures                  |
+<!-- @type: skill | @id: brag -->
+###### Brag
+
+Impress others with stories of your deeds.
+
+<!-- @type: skill | @id: empathize -->
+###### Empathize
+
+Relate to someone on a personal level.
+
+<!-- @type: skill | @id: flirt -->
+###### Flirt
+
+Attract romantic attention from someone.
+
+<!-- @type: skill | @id: gamble -->
+###### Gamble
+
+Make bets with others.
+
+<!-- @type: skill | @id: handle-animals -->
+###### Handle Animals
+
+Interact with nonsapient animal wildlife.
+
+<!-- @type: skill | @id: interrogate -->
+###### Interrogate
+
+Obtain information from a creature withholding it.
+
+<!-- @type: skill | @id: intimidate -->
+###### Intimidate
+
+Awe or scare a creature.
+
+<!-- @type: skill | @id: lead -->
+###### Lead
+
+Inspire people to action.
+
+<!-- @type: skill | @id: lie -->
+###### Lie
+
+Convince someone that a falsehood is true.
+
+<!-- @type: skill | @id: music -->
+###### Music
+
+Perform music vocally or with an instrument.
+
+<!-- @type: skill | @id: perform -->
+###### Perform
+
+Engage in dance, oratory, acting, or some other physical performance.
+
+<!-- @type: skill | @id: persuade -->
+###### Persuade
+
+Convince someone to agree with you through use of your charms and grace.
+
+<!-- @type: skill | @id: read-person -->
+###### Read Person
+
+Read the emotions and body language of other creatures.
+
 
 ##### Intrigue Skills
 
@@ -20559,6 +20737,66 @@ Consequences for tests made with intrigue skills include getting caught in the a
 | Search         | Actively search an environment for important details and items                                     |
 | Sneak          | Move silently                                                                                      |
 | Track          | Follow a trail that another creature has left behind                                               |
+<!-- @type: skill | @id: alertness -->
+###### Alertness
+
+Intuitively sense the details of your surroundings.
+
+<!-- @type: skill | @id: conceal-object -->
+###### Conceal Object
+
+Hide an object on your person or in your environment.
+
+<!-- @type: skill | @id: disguise -->
+###### Disguise
+
+Change your appearance to look like a different person.
+
+<!-- @type: skill | @id: eavesdrop -->
+###### Eavesdrop
+
+Actively listen to something that is hard to hear, such as a whispered conversation through a door.
+
+<!-- @type: skill | @id: escape-artist -->
+###### Escape Artist
+
+Escape from bonds such as rope or manacles.
+
+<!-- @type: skill | @id: hide -->
+###### Hide
+
+Conceal yourself from others' observation.
+
+<!-- @type: skill | @id: pick-lock -->
+###### Pick Lock
+
+Open a lock without using the key.
+
+<!-- @type: skill | @id: pick-pocket -->
+###### Pick Pocket
+
+Steal an item that another person wears or carries without them noticing.
+
+<!-- @type: skill | @id: sabotage -->
+###### Sabotage
+
+Disable a mechanical device such as a trap.
+
+<!-- @type: skill | @id: search -->
+###### Search
+
+Actively search an environment for important details and items.
+
+<!-- @type: skill | @id: sneak -->
+###### Sneak
+
+Move silently.
+
+<!-- @type: skill | @id: track -->
+###### Track
+
+Follow a trail that another creature has left behind.
+
 
 ##### Lore Skills
 
@@ -20584,6 +20822,66 @@ Consequences for tests made with lore skills typically include learning an incor
 | Society             | Knowing noble etiquette and the leadership and power dynamics of noble families            |
 | Strategy            | Knowing about battle tactics and logistics                                                 |
 | Timescape           | Knowing about the many worlds of the timescape                                             |
+<!-- @type: skill | @id: criminal-underworld -->
+###### Criminal Underworld
+
+Knowing about criminal organizations, their crimes, their relationships, and their leaders.
+
+<!-- @type: skill | @id: culture -->
+###### Culture
+
+Knowing about a culture's customs, folktales, and taboos.
+
+<!-- @type: skill | @id: history -->
+###### History
+
+Knowing about significant past events.
+
+<!-- @type: skill | @id: magic -->
+###### Magic
+
+Knowing about magical places, spells, rituals, items, and phenomena.
+
+<!-- @type: skill | @id: monsters -->
+###### Monsters
+
+Knowing monster ecology, strengths, and weaknesses.
+
+<!-- @type: skill | @id: nature -->
+###### Nature
+
+Knowing about natural flora, fauna, and weather.
+
+<!-- @type: skill | @id: psionics -->
+###### Psionics
+
+Knowing about psionic places, spells, rituals, items, and phenomena.
+
+<!-- @type: skill | @id: religion -->
+###### Religion
+
+Knowing about religious mythology, practices, and rituals.
+
+<!-- @type: skill | @id: rumors -->
+###### Rumors
+
+Knowing gossip, legends, and uncertain truths.
+
+<!-- @type: skill | @id: society -->
+###### Society
+
+Knowing noble etiquette and the leadership and power dynamics of noble families.
+
+<!-- @type: skill | @id: strategy -->
+###### Strategy
+
+Knowing about battle tactics and logistics.
+
+<!-- @type: skill | @id: timescape -->
+###### Timescape
+
+Knowing about the many worlds of the timescape.
+
 
 > **For the Director: Make Your Own Skills**
 >
@@ -20988,7 +21286,6 @@ Free maneuvers cover most of the simple activities you might want to undertake o
 
 The Director can limit what kinds of no-action activities you can attempt when it isn't your turn. For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's turn requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your turn, saying that doing so instead requires a free maneuver on your turn.
 
-<!-- @type: movement | @id: movement -->
 ### Movement
 
 During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the Advance or Disengage move action (detailed under Move Actions below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
@@ -21009,6 +21306,7 @@ A single move or other effect can never allow a creature to move more squares th
 
 A creature can't move diagonally when doing so would involve passing through the corner of a wall or some other object that completely fills the corner between the creature's space and the space they are moving to. This rule applies only to moving past objects, not moving past other creatures.
 
+<!-- @type: movement | @id: shifting -->
 #### Shifting
 
 [Shifting](scc:mcdm.heroes.v1/movement/shifting) is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to [shift](scc:mcdm.heroes.v1/movement/shifting) a specific number of squares, sometimes up to your speed. Whenever you [shift](scc:mcdm.heroes.v1/movement/shifting), creatures can't make opportunity attacks against you triggered by that movement (see Opportunity Attacks later in this chapter).
@@ -21019,10 +21317,12 @@ You can't [shift](scc:mcdm.heroes.v1/movement/shifting) into or while within [di
 
 Creatures in the game can use eight types of movement: walk, [burrow](scc:mcdm.heroes.v1/movement/burrow), climb, swim, jump, [crawl](scc:mcdm.heroes.v1/movement/crawl), [fly](scc:mcdm.heroes.v1/movement/fly), and [teleport](scc:mcdm.heroes.v1/movement/teleport).
 
+<!-- @type: movement | @id: walk -->
 ##### Walk
 
 Walking is the most common movement type, whether it refers to ambulating on legs, rolling, slithering, or some other default method of movement. Unless specified otherwise, all creatures can move over solid horizontal ground without any problem.
 
+<!-- @type: movement | @id: burrow -->
 ##### Burrow
 
 A creature who has "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their speed entry, or who gains the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow), can move through dirt horizontally, and either has the means to breathe while doing so or doesn't require air to live. Such creatures can't move through more solid ground, such as stone, unless their stat block or the effect that lets them [burrow](scc:mcdm.heroes.v1/movement/burrow) says otherwise. Similarly, a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature doesn't leave a tunnel unless the rules say so.
@@ -21066,6 +21366,7 @@ If a creature who can't [burrow](scc:mcdm.heroes.v1/movement/burrow) wants to di
 
 While a creature who is completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow) is force moved by movement that isn't vertical, they aren't moved, and they take 1 damage for each square they would have been force moved. If the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical, the creature is moved through the dirt as if it were air.
 
+<!-- @type: movement | @id: climb-or-swim -->
 ##### Climb or Swim
 
 A creature who has "climb" in their speed entry, or who gains the temporary ability to automatically climb, can climb across vertical and horizontal surfaces at full speed. Likewise, a creature who has "swim" in their speed entry, or who gains the temporary ability to automatically swim, can swim in liquid at full speed.
@@ -21092,6 +21393,7 @@ While you climb or ride a creature, you gain an edge on melee abilities used aga
 
 If you are [knocked prone](scc:mcdm.heroes.v1/condition/prone) while climbing or riding a creature, you fall and l[and prone](scc:mcdm.heroes.v1/condition/prone) in an adjacent space of your choice, taking damage as usual from the fall.
 
+<!-- @type: movement | @id: jump -->
 ##### Jump
 
 Whenever an effect allows you to move (including using the Advance move action), you can automatically long jump a number of squares up to your Might or Agility score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
@@ -21106,18 +21408,22 @@ If you want to jump even longer or higher than your baseline jump allows, make a
 
 You can't jump farther or higher than the distance of the effect that allows you to move. You can't jump out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) (see below).
 
+<!-- @type: movement | @id: crawl -->
 ##### Crawl
 
 If you [are prone](scc:mcdm.heroes.v1/condition/prone) (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)), you can remain prone and [crawl](scc:mcdm.heroes.v1/movement/crawl) on the ground. Doing so costs you 1 additional square of movement for every square you [crawl](scc:mcdm.heroes.v1/movement/crawl). If you intentionally want to [crawl](scc:mcdm.heroes.v1/movement/crawl), you can [fall prone](scc:mcdm.heroes.v1/condition/prone) as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
 
+<!-- @type: movement | @id: fly -->
 ##### Fly
 
 A creature who has "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gains the temporary ability to [fly](scc:mcdm.heroes.v1/movement/fly), can move through the air vertically or horizontally at full speed and remain in midair. If a [flying](scc:mcdm.heroes.v1/movement/fly) creature is [knocked prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall (see Falling below).
 
+<!-- @type: movement | @id: hover -->
 ##### Hover
 
 A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their speed entry (most commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the temporary ability to [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are [knocked prone](scc:mcdm.heroes.v1/condition/prone) or their speed is reduced to 0.
 
+<!-- @type: movement | @id: teleport -->
 ##### Teleport
 
 When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move from one space to another space instantaneously. The following rules apply to [teleporting](scc:mcdm.heroes.v1/movement/teleport):
@@ -21146,20 +21452,24 @@ A creature who falls and lands on another creature causes that creature to take 
 
 When a creature first falls from a great height, they fall 100 squares in the first round. At the end of each subsequent round that they remain falling, they fall another 100 squares.
 
+<!-- @type: movement | @id: difficult-terrain -->
 #### Difficult Terrain
 
 Areas of thick underbrush, rubble, spiderwebs, or other obstacles to movement create [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). It costs 1 additional square of movement to enter a square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
+<!-- @type: movement | @id: damaging-terrain -->
 #### Damaging Terrain
 
 Areas of acid, fire, sharp rocks, lava, or any other terrain that causes damage to creatures within it is [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain). The damage dealt by [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) is noted in the terrain's description or in the description of the effect that creates the terrain.
 
+<!-- @type: movement | @id: high-ground -->
 #### High Ground
 
 Whenever a creature uses an ability to target a creature or object while standing on the ground and occupying a space that is fully above the target's space, they gain an edge on the power roll against that target. To be fully above a target, the bottom of a creature's space must be higher than or bordering on the top of the target's space.
 
 A creature can gain this benefit while climbing only if they have "climb" in their speed entry or can automatically climb at full speed while moving.
 
+<!-- @type: movement | @id: forced-movement -->
 #### Forced Movement
 
 Some actions and maneuvers allow a creature to push, pull, or slide a target creature or object a specific distance across the battlefield. Collectively, these types of movement are called [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
@@ -21735,6 +22045,7 @@ Pitfalls and motivations are two sides of the same concept. They're presented be
 
 An NPC can have any of the following twelve motivations or pitfalls.
 
+<!-- @type: negotiation | @id: benevolence -->
 ##### Benevolence
 
 An NPC with the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) motivation believes in sharing what they have with others. However, an NPC involved in a negotiation must be limited in their benevolence, so that they don't just give the heroes what they need.
@@ -21748,6 +22059,7 @@ Arguments that appeal to a [benevolence](scc:mcdm.heroes.v1/negotiation/benevole
 - "If you lend us the Sword of Agathor, we can make Capital safer for your guild by using it to lay your enemies low."
 - "If you can [teleport](scc:mcdm.heroes.v1/movement/teleport) us into the dragon's cave, we'll give you half the wyrm's hoard once we cut off the creature's head. That could benefit generations of students at your academy!"
 
+<!-- @type: negotiation | @id: discovery -->
 ##### Discovery
 
 An NPC with the [discovery](scc:mcdm.heroes.v1/negotiation/discovery) motivation wants to learn new lore, explore forgotten places, break ground with new experiments, or uncover artifacts lost to time. Their curiosity and quest for knowledge might be driven by a specific goal, such as seeking the cure for a rare disease or a portal to a specific far-off world. Or they could be a naturally inquisitive person who simply wants to understand all they can about the timescape.
@@ -21759,6 +22071,7 @@ Arguments that appeal to a [discovery](scc:mcdm.heroes.v1/negotiation/discovery)
 - "Allow us to use your cipher to translate the only copy of the *Codex Mortis*, and then we'll let you read the book when we're done."
 - "We know the journey to Decant Isle is dangerous, but we're going into uncharted territory. We thought that your crew of sailors might want to be among the few mortals to lay eyes on the place."
 
+<!-- @type: negotiation | @id: freedom -->
 ##### Freedom
 
 An NPC with the [freedom](scc:mcdm.heroes.v1/negotiation/freedom) motivation wants no authority above them and desires no authority over others. They might already have personal freedom and wish to maintain that status quo, or they might wish to liberate themself or others from someone else's authority.
@@ -21770,6 +22083,7 @@ Arguments that appeal to a freedom motivation contend that by helping the heroes
 - "I know you want to have the queen's authority revoked forever. She has no heirs. Give us the key to her study so that we can prove her corruption and give you a chance to topple the monarchy henceforth."
 - "If you promise to give us ten vials of Assassin's Kiss, we'll see to it that the baron's prison is emptied."
 
+<!-- @type: negotiation | @id: greed -->
 ##### Greed
 
 An NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation desires wealth and resources above almost anything else. Sometimes these NPCs are misers, much like wyrms who hoard coins and gems but never spend or donate them. Others flaunt their wealth, viewing it as a sign of their station in life.
@@ -21783,6 +22097,7 @@ Arguments that appeal to a greed motivation contend that helping the heroes will
 - "You should help us battle the overmind. Xorranox's wealth is legendary, and we'll see to it that you get your fair share."
 - "Give us a week to do research among your private collection of books, and we'll give you another ten unique tomes we found in an ancient star elf sanctuary."
 
+<!-- @type: negotiation | @id: higher-authority -->
 ##### Higher Authority
 
 An NPC with the [higher authority](scc:mcdm.heroes.v1/negotiation/higher-authority) motivation remains staunchly loyal to a person or force they perceive as more important than themself. This higher authority could be an organization, a deity or being of great power, a formal leader such as a noble or monarch, a mystical presence or force the NPC might not fully understand, or a person the NPC sees as an informal authority figure (an older sibling, a personal hero, and so forth).
@@ -21794,6 +22109,7 @@ Arguments that appeal to a higher authority motivation contend that it's in the 
 - "All great creations honor your god, Malus. If you teach me to forge the Hammer of Azdul, that will be a great honor to bestow upon your god."
 - "You know what Jarith the Bold would do? He'd guide us through the vast wasteland of the desert to reach the tower. Will you be our Jarith?"
 
+<!-- @type: negotiation | @id: justice -->
 ##### Justice
 
 An NPC with the [justice](scc:mcdm.heroes.v1/negotiation/justice) motivation wants to see the righteous rewarded and the wicked punished, however subjective their sense of who or what is good and evil. A priest who venerates a god of nature might believe that all who protect plants and animals are righteous, and that those who harvest natural resources as miners and lumberjacks do must die. Having a justice motivation doesn't necessarily make an NPC kind or charitable.
@@ -21805,6 +22121,7 @@ Arguments that appeal to a justice motivation position the heroes on the good si
 - "You despise those who steal from nature. Allow us peacefully into your wode so we may bottle the Blessed Spring's water. We're going to use it to stop an army from felling every tree and tearing up the earth wherever they go."
 - "You think nobles are lazy barons who get rich off the backs of peasants. We want to dethrone Lord Saxton. Lend us your crew of thieves, and we'll make sure that when Saxton falls, the people can choose their own leaders."
 
+<!-- @type: negotiation | @id: legacy -->
 ##### Legacy
 
 An NPC with the [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motivation desires fame while alive and acclaim that lasts long after their death. They hope others will know and remember their deeds, great or terrible. Some of these NPCs might even seek immortality through deification or undeath, so that the eventual shedding of their mortal coil doesn't prevent them from continuing to make history.
@@ -21816,6 +22133,7 @@ Arguments that appeal to a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motiv
 - "If you give us the vizier's itinerary, I'll compose a song about your bravery in defying him, then sing it in every tavern from here to Ix!"
 - "Yes, losing the battle is a possibility. If we do, the gnolls will still come for you eventually. But if we crush our foes, imagine the honors, the histories, the poems, the statues—all of it created for you because your siege engines turned the tide."
 
+<!-- @type: negotiation | @id: peace -->
 ##### Peace
 
 An NPC with the [peace](scc:mcdm.heroes.v1/negotiation/peace) motivation wants calm in their life. Under typical circumstances, they want to be left alone to run their business, farm, kingdom, criminal empire, or whatever small slice of the timescape is theirs. Some such NPCs don't have peace and need help obtaining it, while others want their peaceful status quo to be maintained.
@@ -21827,6 +22145,7 @@ Arguments that appeal to a peace motivation contend that helping the heroes will
 - "You have a good thing going here. A little burgling of nobles, some alcohol smuggling, and some illegal gambling dens. No one's getting hurt, but Constable Cofax is closing in on you. We could redirect him toward some real danger to the community, if you can help us set a trap for the Watchmaker."
 - "I know you don't sell to outsiders, but we need that helm. I'm going to use it to turn back a group of hobgoblins marching this way. They're not going to be as friendly as us."
 
+<!-- @type: negotiation | @id: power -->
 ##### Power
 
 An NPC with the [power](scc:mcdm.heroes.v1/negotiation/power) motivation covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of supernatural rituals—though why choose one method when all three together achieve the best results? Some such NPCs are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.
@@ -21838,6 +22157,7 @@ Arguments that appeal to a power motivation contend that working with the heroes
 - "Everyone knows you should be running the watch, Percy. The old lady's retiring, and our friend Baron Kuglar is naming the replacement. Now, you let us into the restricted armory, and we'll put in a good word."
 - "We know he's your brother, Your Highness, but he's older—first in line for the throne. If you help us prove he's in a cult, you become the favorite son."
 
+<!-- @type: negotiation | @id: protection -->
 ##### Protection
 
 An NPC with the [protection](scc:mcdm.heroes.v1/negotiation/protection) motivation has land, people, information, items, or an organization they want protected above all else. Keeping
@@ -21851,6 +22171,7 @@ Arguments that appeal to a protection motivation contend that helping the heroes
 - "Dead soldiers grow the necromancer's ranks. Total annihilation is the only way to defeat her. March with us now, while her army is small, and we'll defeat her. Or you could gamble that someone else tries, fails, and suddenly she's at the border, ready to overrun your kingdom with an army tenfold larger than what it is now."
 - "I understand your grandchild is hell-bent on joining the service. I happen to have a magic suit of armor that could help them ward off the blows of monsters and ruffians. I'd be happy to give it to you, in exchange for borrowing your griffons for a few days. After all, I won't need the armor if I can simply fly over the marsh's monsters."
 
+<!-- @type: negotiation | @id: revelry -->
 ##### Revelry
 
 An NPC with the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) motivation just wants to have fun. They enjoy socializing at parties, thrill-seeking, or indulging in other hedonistic activities. Getting pleasure out of life while spending time with people they like is paramount to such NPCs.
@@ -21862,6 +22183,7 @@ Arguments that appeal to the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) m
 - "How would you like to have the most exclusive songs for your exclusive birthday celebration next week? I'll write you a whole original set list, free of charge... provided you extend me and my band here an invitation."
 - "I know you don't want to forge five Chronokinesis Crowns. How's this instead? You do that for me, and I'll give you the fourteen kegs of whiskey we found in a steel-[dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) ruin. This stuff is old, unique, and forget-your-first-name potent. You can crack a keg with your friends to celebrate a job well done."
 
+<!-- @type: negotiation | @id: vengeance -->
 ##### Vengeance
 
 An NPC with the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) motivation wants to harm another who has hurt them. Their desire for revenge could be proportional to the harm that was inflicted upon them, or they might wish to pay back their pain with interest. In some cases, a desire for vengeance can be satisfied only by the death of another, but an NPC might wish to pay back their own suffering with embarrassment, career failure, or some other less permanent pain.

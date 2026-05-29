@@ -18,6 +18,9 @@ func NewRegistry() *Registry {
 	r.Register(&AbilityParser{})
 	// Phase 2 parsers
 	r.Register(&ConditionParser{})
+	r.Register(&MovementParser{})
+	r.Register(&NegotiationParser{})
+	r.Register(&SkillParser{})
 	r.Register(&ComplicationParser{})
 	r.Register(&PerkParser{})
 	r.Register(&CareerParser{})

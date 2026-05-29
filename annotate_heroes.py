@@ -346,12 +346,6 @@ def annotate_heroes(lines: list[str]) -> list[Annotation]:
                 i += 1
                 continue
 
-            # Movement rules (inside Combat chapter)
-            if ctx.chapter == "Combat" and heading == "Movement":
-                annotations.append(Annotation(lineno, "<!-- @type: movement | @id: movement -->"))
-                i += 1
-                continue
-
             # Free Strikes, Maneuvers sections in Combat
             if ctx.chapter == "Combat" and heading in ("Free Strikes", "Maneuvers"):
                 slug = slugify(heading)
@@ -704,6 +698,174 @@ def add_condition_annotations(
 
 
 # ---------------------------------------------------------------------------
+# Movement annotations (inside Combat chapter, Movement subsection)
+# ---------------------------------------------------------------------------
+
+# Movement types that get individual annotations (match SCC registry)
+MOVEMENT_TYPES = {
+    "Shifting", "Walk", "Burrow", "Climb or Swim", "Jump", "Crawl",
+    "Fly", "Hover", "Teleport", "Difficult Terrain", "Damaging Terrain",
+    "High Ground", "Forced Movement",
+}
+
+
+def add_movement_annotations(
+    annotations: list[Annotation],
+    lines: list[str],
+) -> None:
+    """
+    Movement types are H4/H5 headings under ### Movement in the Combat chapter.
+    The main loop doesn't catch them because they aren't inside a class or
+    other recognized context. This pass annotates each registered movement type.
+    """
+    in_movement = False
+    for i, line in enumerate(lines):
+        if re.match(r"^### Movement\s*$", line):
+            in_movement = True
+            continue
+        if in_movement:
+            if re.match(r"^###\s", line):
+                break
+            m = re.match(r"^#{4,5} (.+)$", line)
+            if m:
+                heading = m.group(1).strip()
+                if heading in MOVEMENT_TYPES:
+                    slug = slugify(heading)
+                    annotations.append(
+                        Annotation(i, f"<!-- @type: movement | @id: {slug} -->")
+                    )
+
+
+# ---------------------------------------------------------------------------
+# Negotiation annotations (inside Negotiation chapter, motivations subsection)
+# ---------------------------------------------------------------------------
+
+NEGOTIATION_MOTIVATIONS = {
+    "Benevolence", "Discovery", "Freedom", "Greed", "Higher Authority",
+    "Justice", "Legacy", "Peace", "Power", "Protection", "Revelry",
+    "Vengeance",
+}
+
+
+def add_negotiation_annotations(
+    annotations: list[Annotation],
+    lines: list[str],
+) -> None:
+    """
+    Negotiation motivations are ##### headings under #### List of Motivations
+    and Pitfalls in the Negotiation chapter.
+    """
+    in_motivations = False
+    for i, line in enumerate(lines):
+        if re.match(r"^#### List of Motivations and Pitfalls\s*$", line):
+            in_motivations = True
+            continue
+        if in_motivations:
+            if re.match(r"^####\s", line) or re.match(r"^###\s", line):
+                break
+            m = re.match(r"^##### (.+)$", line)
+            if m:
+                heading = m.group(1).strip()
+                if heading in NEGOTIATION_MOTIVATIONS:
+                    slug = slugify(heading)
+                    annotations.append(
+                        Annotation(i, f"<!-- @type: negotiation | @id: {slug} -->")
+                    )
+
+
+# ---------------------------------------------------------------------------
+# Culture annotations (inside Cultures chapter)
+# ---------------------------------------------------------------------------
+
+CULTURE_TYPES = {
+    "Nomadic", "Rural", "Secluded", "Urban", "Wilderness",
+    "Bureaucratic", "Communal",
+    "Academic", "Creative", "Labor", "Lawless", "Martial", "Noble",
+}
+
+
+def add_culture_annotations(
+    annotations: list[Annotation],
+    lines: list[str],
+) -> None:
+    """
+    Cultures are ##### headings under ### Culture Benefits in the Cultures
+    chapter. Environment (5), Organization (2), and Upbringing (6) = 13.
+    """
+    in_culture_benefits = False
+    for i, line in enumerate(lines):
+        if re.match(r"^### Culture Benefits\s*$", line):
+            in_culture_benefits = True
+            continue
+        if in_culture_benefits:
+            if re.match(r"^###\s", line):
+                break
+            m = re.match(r"^##### (.+)$", line)
+            if m:
+                heading = m.group(1).strip()
+                if heading in CULTURE_TYPES:
+                    slug = slugify(heading)
+                    annotations.append(
+                        Annotation(i, f"<!-- @type: culture | @id: {slug} -->")
+                    )
+
+
+# ---------------------------------------------------------------------------
+# Skill annotations (inside Skills chapter)
+# ---------------------------------------------------------------------------
+
+SKILL_NAMES = {
+    "Alchemy", "Alertness", "Architecture", "Blacksmithing", "Brag",
+    "Carpentry", "Climb", "Conceal Object", "Cooking",
+    "Criminal Underworld", "Culture", "Disguise", "Drive", "Eavesdrop",
+    "Empathize", "Endurance", "Escape Artist", "Fletching", "Flirt",
+    "Forgery", "Gamble", "Gymnastics", "Handle Animals", "Heal", "Hide",
+    "History", "Interrogate", "Intimidate", "Jewelry", "Jump", "Lead",
+    "Lie", "Lift", "Magic", "Mechanics", "Monsters", "Music", "Nature",
+    "Navigate", "Perform", "Persuade", "Pick Lock", "Pick Pocket",
+    "Psionics", "Read Person", "Religion", "Ride", "Rumors", "Sabotage",
+    "Search", "Sneak", "Society", "Strategy", "Swim", "Tailoring",
+    "Timescape", "Track",
+}
+
+
+def add_skill_annotations(
+    annotations: list[Annotation],
+    lines: list[str],
+) -> None:
+    """
+    Skills are table rows in the Skills chapter. This pass finds the skill
+    tables, extracts each row, and generates annotations + H6 sections for
+    each skill after the table.
+    """
+    skill_pattern = re.compile(r"^\| (\w[\w\s]*\w|\w+)\s+\| (.+?)\s+\|$")
+
+    # Find the skills chapter range
+    skills_start = None
+    skills_end = None
+    for i, line in enumerate(lines):
+        if "<!-- @type: chapter | @id: skills -->" in line:
+            skills_start = i
+        if skills_start and i > skills_start and "<!-- @type: chapter |" in line:
+            skills_end = i
+            break
+    if skills_start is None:
+        return
+
+    # Collect skills from tables
+    for i in range(skills_start, skills_end or len(lines)):
+        m = skill_pattern.match(lines[i].strip())
+        if m:
+            name = m.group(1).strip()
+            desc = m.group(2).strip()
+            if name in SKILL_NAMES:
+                slug = slugify(name)
+                annotations.append(
+                    Annotation(i, f"<!-- @type: skill | @id: {slug} -->")
+                )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -728,6 +890,10 @@ def main() -> None:
     refine_background_annotations(annotations, raw_lines)
     refine_rewards_annotations(annotations, raw_lines)
     add_condition_annotations(annotations, raw_lines)
+    add_movement_annotations(annotations, raw_lines)
+    add_negotiation_annotations(annotations, raw_lines)
+    add_culture_annotations(annotations, raw_lines)
+    add_skill_annotations(annotations, raw_lines)
 
     # Sort by line number
     annotations.sort(key=lambda a: a.line_no)
