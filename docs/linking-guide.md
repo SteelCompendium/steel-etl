@@ -4,6 +4,19 @@ Instructions for adding scc: cross-reference links to the input document
 (`input/heroes/Draw Steel Heroes.md`). Designed to be picked up by any AI
 session and followed step by step.
 
+> **2026-05-29 — Truncated-link fix pass.** Iterative linking order (broad terms
+> linked before narrow) left some links pointing at a truncated/wrong code. Fixed:
+> (1) annotated missing feature headers so their codes generate — 9 class "X Abilities"
+> traits, 56 per-level/cost ability-groups, 14 ancestry signature traits, 68 purchased
+> traits; (2) added new `project` (16) and `god` (9) SCC types + parsers; (3) re-linked
+> ~150 truncated references to the correct (often different-type) code — e.g.
+> `class/shadow`→`complication/shadow-born`, `career/criminal`→`skill/criminal-underworld`,
+> `class/null`→`feature.trait.../null-field` (×32); (4) unlinked false positives where the
+> leading word was part of a named benefit/item (Devil's Bargain, Noble Splendor, etc.).
+> Registry 1,582→1,754. See `docs/superpowers/plans/2026-05-29-truncated-link-fix.md`.
+> **Rule reinforced:** when a short term is the prefix of a longer game entity, link the
+> *whole* entity to its own code, not just the prefix.
+
 ## Reference
 
 - **Reference table:** `docs/linking-reference.md` — all linkable terms with display names, variants, and SCC codes

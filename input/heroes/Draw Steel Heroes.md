@@ -3769,7 +3769,7 @@ You once worked as a bandit, insurgent, smuggler, outlaw, or even as an assassin
 
 You gain the following career benefits:
 
-**Skills:** The [Criminal](scc:mcdm.heroes.v1/career/criminal) Underworld skill (from the lore skill group), plus two skills from the intrigue group (*Quick Build:* [Criminal](scc:mcdm.heroes.v1/career/criminal) Underworld, Pick Lock, Pick Pocket.)
+**Skills:** The [Criminal Underworld](scc:mcdm.heroes.v1/skill/criminal-underworld) skill (from the lore skill group), plus two skills from the intrigue group (*Quick Build:* [Criminal Underworld](scc:mcdm.heroes.v1/skill/criminal-underworld), Pick Lock, Pick Pocket.)
 
 **Languages:** One language
 
@@ -4480,7 +4480,7 @@ Reading the ability this way prevents a lot of back and forth. You don't need to
 
 ##### Adjusting Potencies
 
-Potencies are made for quick resolution at the table, but a number of triggered actions and other abilities—for example, the [censor's](scc:mcdm.heroes.v1/class/censor) Judgment ability and the [null's](scc:mcdm.heroes.v1/class/null) [Null](scc:mcdm.heroes.v1/class/null) Field ability—allow you to manipulate the value of potencies. If you build a hero who can adjust potencies, pay attention during combat! You might be able to help out a friend who needs a little boost to make their ability take full effect, or hinder an enemy about to lock down one of your allies.
+Potencies are made for quick resolution at the table, but a number of triggered actions and other abilities—for example, the [censor's](scc:mcdm.heroes.v1/class/censor) Judgment ability and the [null's](scc:mcdm.heroes.v1/class/null) [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability—allow you to manipulate the value of potencies. If you build a hero who can adjust potencies, pay attention during combat! You might be able to help out a friend who needs a little boost to make their ability take full effect, or hinder an enemy about to lock down one of your allies.
 
 ##### Spending Resources on Potencies
 
@@ -4529,7 +4529,7 @@ Some abilities have a "Spend X [Heroic Resource]" entry in the body of the abili
 
 The unique effects of different abilities are combined—effectively stacking on top of each other—if their durations and targets overlap. However, the effects of the same ability used multiple times don't stack. Instead, the most impactful effect—such as the highest bonus—from each use of the ability applies. The most recently used ability applies for determining duration.
 
-For example, the [null's](scc:mcdm.heroes.v1/class/null) [Null](scc:mcdm.heroes.v1/class/null) Field ability reduces the potencies of enemies within the field by 1. If two allied [nulls](scc:mcdm.heroes.v1/class/null) each have their [Null](scc:mcdm.heroes.v1/class/null) Field ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
+For example, the [null's](scc:mcdm.heroes.v1/class/null) [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability reduces the potencies of enemies within the field by 1. If two allied [nulls](scc:mcdm.heroes.v1/class/null) each have their [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
 
 Different effects that impose the same condition (see Conditions below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become [weakened](scc:mcdm.heroes.v1/condition/weakened) (imposing a bane on the target's power rolls), the target isn't [weakened](scc:mcdm.heroes.v1/condition/weakened) twice to impose a double bane on those rolls. A character who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by an enemy can't be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
 
@@ -4693,7 +4693,7 @@ As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the 
 
 | Level | Features                                                                                                   | Abilities                 | Order<br>Abilities |
 |-------|------------------------------------------------------------------------------------------------------------|---------------------------|--------------------|
-| 1st   | [Censor](scc:mcdm.heroes.v1/class/censor) Order, [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Wrath, [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment), Kit, [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours), Domain Feature, [Censor Abilities](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-abilities) | Signature, 3, 5           | -                  |
+| 1st   | [Censor Order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order), [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Wrath, [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment), Kit, [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours), Domain Feature, [Censor Abilities](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-abilities) | Signature, 3, 5           | -                  |
 | 2nd   | Perk, Order Features, Order Ability                                                                        | Signature, 3, 5           | 5                  |
 | 3rd   | [Look On My Work and Despair](scc:mcdm.heroes.v1/feature.trait.censor.level-3/look-on-my-work-and-despair), 7-Wrath Ability                                                               | Signature, 3, 5, 7        | 5                  |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), Perk, Skill, [Wrath Beyond Wrath](scc:mcdm.heroes.v1/feature.trait.censor.level-4/wrath-beyond-wrath), Domain Feature                                   | Signature, 3, 5, 7        | 5                  |
@@ -4712,13 +4712,13 @@ As a 1st-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Censor Order
 
-[Censors](scc:mcdm.heroes.v1/class/censor) are the will of their god made physically manifest, and you act as your god's agent in the world. As you shoulder that responsibility, you choose a [censor](scc:mcdm.heroes.v1/class/censor) order from the following options, each of which grants you a skill. (*Quick Build:* Paragon.)
+[Censors](scc:mcdm.heroes.v1/class/censor) are the will of their god made physically manifest, and you act as your god's agent in the world. As you shoulder that responsibility, you choose a [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) from the following options, each of which grants you a skill. (*Quick Build:* Paragon.)
 
 - **Exorcist:** You specialize in hunting your order's hidden enemies, knowing that an open mind is an unguarded fortress. You have the [Read Person](scc:mcdm.heroes.v1/skill/read-person) skill.
 - **Oracle:** Corruption has deep tendrils that can be missed, leading you to specialize in uncovering clandestine threats to your order. You have the [Magic](scc:mcdm.heroes.v1/skill/magic) skill.
 - **Paragon:** Without a strong example and a firm hand, the weak will be corrupted. You specialize in setting an example for your order. You have the [Lead](scc:mcdm.heroes.v1/skill/lead) skill.
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order is your subclass, and your choice of order determines many of the features you'll gain as you gain new levels.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) is your subclass, and your choice of order determines many of the features you'll gain as you gain new levels.
 
 <!-- @type: feature -->
 #### Deity and Domains
@@ -5168,7 +5168,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice. See Chapt
 <!-- @type: feature -->
 #### 2nd-Level Order Features
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants you two features, as shown on the 2nd-Level Order Features table.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants you two features, as shown on the 2nd-Level Order Features table.
 
 ###### 2nd-Level Order Features Table
 
@@ -5211,7 +5211,7 @@ You exhibit a small spark of your deity's power, causing creatures to trust or f
 <!-- @type: feature -->
 #### 2nd-Level Order Ability
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants your choice of one of two heroic abilities.
 
 ##### 2nd-Level Exorcist Ability
 
@@ -5492,7 +5492,7 @@ As a 5th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### 5th-Level Order Feature
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants you a feature, as shown on the 5th-Level Order Features table.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants you a feature, as shown on the 5th-Level Order Features table.
 
 ###### 5th-Level Order Features Table
 
@@ -5607,7 +5607,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice.
 <!-- @type: feature -->
 #### 6th-Level Order Ability
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants your choice of one of two heroic abilities.
 
 ##### 6th-Level Exorcist Abilities
 
@@ -5852,7 +5852,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### 8th-Level Order Feature
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants you a feature, as shown on the 8th-Level Order Features table.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants you a feature, as shown on the 8th-Level Order Features table.
 
 ###### 8th-Level Order Features Table
 
@@ -5967,7 +5967,7 @@ The weapon you target with your [Implement of Wrath](scc:mcdm.heroes.v1/feature.
 <!-- @type: feature -->
 #### 9th-Level Order Ability
 
-Your [censor](scc:mcdm.heroes.v1/class/censor) order grants your choice of one of two heroic abilities.
+Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order) grants your choice of one of two heroic abilities.
 
 ##### 9th-Level Exorcist Abilities
 
@@ -6150,7 +6150,7 @@ The power of the gods flows through you! As a vessel for [divine power](scc:mcdm
 
 | Level | Features                                                                                                                             | Abilities                     | Domain Abilities  |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|-------------------|
-| 1st   | [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Piety, Domain Feature, [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace), [Ray of Wrath](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/ray-of-wrath), [Triggered Action](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/triggered-action), Prayer, [Conduit](scc:mcdm.heroes.v1/class/conduit) Ward, [Conduit Abilities](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/conduit-abilities)     | Two signature, 3, 5           | -                 |
+| 1st   | [Deity and Domains](scc:mcdm.heroes.v1/feature.trait.censor.level-1/deity-and-domains), Piety, Domain Feature, [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace), [Ray of Wrath](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/ray-of-wrath), [Triggered Action](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/triggered-action), Prayer, [Conduit Ward](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/conduit-ward), [Conduit Abilities](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/conduit-abilities)     | Two signature, 3, 5           | -                 |
 | 2nd   | [The Lists of Heaven](scc:mcdm.heroes.v1/feature.trait.conduit.level-2/the-lists-of-heaven), Perk, Domain Feature, Domain Ability                                                                            | Two signature, 3, 5           | 5                 |
 | 3rd   | [Minor Miracle](scc:mcdm.heroes.v1/feature.trait.conduit.level-3/minor-miracle), 7-Piety Ability                                                                                                       | Two signature, 3, 5, 7        | 5                 |
 | 4th   | Blessed Domains, [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), Domain Feature, Perk, Skill Increase                                                       | Two signature, 3, 5, 7        | 5                 |
@@ -6471,7 +6471,7 @@ Choose one of the following triggered actions. (*Quick Build:* [Word of Guidance
 <!-- @type: feature -->
 #### Prayer
 
-Your god answers a prayer with enhancements to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit](scc:mcdm.heroes.v1/class/conduit) Ward below) by praying to your god as a respite activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/prayer-of-distance).)
+Your god answers a prayer with enhancements to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit Ward](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/conduit-ward) below) by praying to your god as a respite activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/prayer-of-distance).)
 
 <!-- @type: feature -->
 ##### Prayer of Destruction
@@ -7945,7 +7945,7 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 | Level  | Features                                                                                                                                                                                            | Abilities                           |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| 1st    | [Elemental Specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization), Essence, [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element), [Persistent Magic](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/persistent-magic), [Practical Magic](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/practical-magic), Specialization Feature, [Specialization Triggered Action](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/specialization-triggered-action), [Enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment), [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Ward, [Elementalist Abilities](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elementalist-abilities) | Two signature, 3, 5                 |
+| 1st    | [Elemental Specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization), Essence, [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element), [Persistent Magic](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/persistent-magic), [Practical Magic](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/practical-magic), Specialization Feature, [Specialization Triggered Action](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/specialization-triggered-action), [Enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment), [Elementalist Ward](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elementalist-ward), [Elementalist Abilities](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elementalist-abilities) | Two signature, 3, 5                 |
 | 2nd    | Perk, Specialization Feature, New 5-Essence Ability                                                                                                                                                 | Two signature, 3, 5, 5              |
 | 3rd    | Specialization Feature, 7-Essence Ability                                                                                                                                                           | Two signature, 3, 5, 5, 7           |
 | 4th    | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Font of Essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-4/font-of-essence), [Mantle of Essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-4/mantle-of-essence), Perk, Skill Increase                                                                                                                   | Two signature, 3, 5, 5, 7           |
@@ -8220,7 +8220,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.le
 <!-- @type: feature -->
 #### Enchantment
 
-You weave an elemental [enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment) into your body that enhances your statistics. Choose one of the following enchantments. You can change your [enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment) and ward (see [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Ward below) by performing a complex ritual as a respite activity. (*Quick Build:*  [Enchantment of Destruction](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment-of-destruction).)
+You weave an elemental [enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment) into your body that enhances your statistics. Choose one of the following enchantments. You can change your [enchantment](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment) and ward (see [Elementalist Ward](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elementalist-ward) below) by performing a complex ritual as a respite activity. (*Quick Build:*  [Enchantment of Destruction](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/enchantment-of-destruction).)
 
 <!-- @type: feature -->
 ##### Enchantment of Battle
@@ -11091,10 +11091,10 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 | Level | Features                                                                                                                                            | Abilities                     | Tradition Abilities |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|
-| 1st   | [Null](scc:mcdm.heroes.v1/class/null) Tradition, Discipline, [Null](scc:mcdm.heroes.v1/class/null) Field, [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield), [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline-mastery), [Null](scc:mcdm.heroes.v1/class/null) Speed, [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Psionic Martial Arts](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-martial-arts), [Null Abilities](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-abilities) | Two signature, 3, 5           | -                   |
+| 1st   | [Null Tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition), Discipline, [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field), [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield), [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline-mastery), [Null Speed](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-speed), [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Psionic Martial Arts](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-martial-arts), [Null Abilities](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-abilities) | Two signature, 3, 5           | -                   |
 | 2nd   | Perk, Tradition Feature, Tradition Ability                                                                                                          | Two signature, 3, 5           | 5                   |
 | 3rd   | [Psionic Leap](scc:mcdm.heroes.v1/feature.trait.null.level-3/psionic-leap), [Reorder](scc:mcdm.heroes.v1/feature.trait.null.level-3/reorder), 7-Discipline Ability                                                                                                         | Two signature, 3, 5, 7        | 5                   |
-| 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Discipline Mastery Improvement](scc:mcdm.heroes.v1/feature.trait.null.level-10/discipline-mastery-improvement), Enhanced [Null](scc:mcdm.heroes.v1/class/null) Field, Perk, [Regenerative Field](scc:mcdm.heroes.v1/feature.trait.null.level-4/regenerative-field), Skill                                       | Two signature, 3, 5, 7        | 5                   |
+| 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Discipline Mastery Improvement](scc:mcdm.heroes.v1/feature.trait.null.level-10/discipline-mastery-improvement), [Enhanced Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-4/enhanced-null-field), Perk, [Regenerative Field](scc:mcdm.heroes.v1/feature.trait.null.level-4/regenerative-field), Skill                                       | Two signature, 3, 5, 7        | 5                   |
 | 5th   | Tradition Feature, 9-Discipline Ability                                                                                                             | Two signature, 3, 5, 7, 9     | 5                   |
 | 6th   | [Elemental Absorption](scc:mcdm.heroes.v1/feature.trait.null.level-6/elemental-absorption), [Elemental Buffer](scc:mcdm.heroes.v1/feature.trait.null.level-6/elemental-buffer), Perk, Tradition Ability                                                                                     | Two signature, 3, 5, 7, 9     | 5, 9                |
 | 7th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Discipline Mastery Improvement](scc:mcdm.heroes.v1/feature.trait.null.level-10/discipline-mastery-improvement), [Psi Boost](scc:mcdm.heroes.v1/feature.trait.null.level-7/psi-boost), [Improved Body](scc:mcdm.heroes.v1/feature.trait.null.level-7/improved-body), Skill                                                            | Two signature, 3, 5, 7, 9     | 5, 9                |
@@ -11110,13 +11110,13 @@ As a 1st-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Null Tradition
 
-Through extensive physical and psionic training, you have learned to unlock the full potential of your body. As you shape the growth of your power, you choose a [null](scc:mcdm.heroes.v1/class/null) tradition from the following options, each of which grants you a skill. (*Quick Build:* Chronokinetic and the [Monsters](scc:mcdm.heroes.v1/skill/monsters) skill.)
+Through extensive physical and psionic training, you have learned to unlock the full potential of your body. As you shape the growth of your power, you choose a [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) from the following options, each of which grants you a skill. (*Quick Build:* Chronokinetic and the [Monsters](scc:mcdm.heroes.v1/skill/monsters) skill.)
 
 - **Chronokinetic:** Your training unmoors you from temporal reality, allowing you to use the flow of time as another dimension that all things move through. You gain one skill from the lore group.
 - **Cryokinetic:** You can tap into absolute cold, the most essential energy of myriad manifolds, and manifest its effects in your body. You gain one skill from the crafting group.
 - **Metakinetic:** You learn to see through the illusions of the universe to more fully understand your body and its psionic potential. You gain one skill from the exploration group.
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition is your subclass, and your choice of tradition determines many of the features you'll gain as you gain new levels.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) is your subclass, and your choice of tradition determines many of the features you'll gain as you gain new levels.
 
 <!-- @type: feature -->
 #### Discipline
@@ -11127,7 +11127,7 @@ As your mastery of your body and tradition grows, it imbues you with a Heroic Re
 
 At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain discipline equal to your Victories. At the start of each of your turns during combat, you gain 2 discipline.
 
-Additionally, the first time each combat round that an enemy in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability (see below) uses a main action, you gain 1 discipline. The first time each combat round that the Director uses an ability that costs Malice (see *Draw Steel: Monsters*), you gain 1 discipline.
+Additionally, the first time each combat round that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability (see below) uses a main action, you gain 1 discipline. The first time each combat round that the Director uses an ability that costs Malice (see *Draw Steel: Monsters*), you gain 1 discipline.
 
 You lose any remaining discipline at the end of the encounter.
 
@@ -11153,7 +11153,7 @@ You project a psionic field of order around your body, dampening the effects of 
 > 
 > **Effect:** Each target reduces their potencies by 1.
 > 
-> Once as a free maneuver on each of your turns, you can spend 1 discipline and give your [Null](scc:mcdm.heroes.v1/class/null) Field one of the following additional effects until the start of your next turn:
+> Once as a free maneuver on each of your turns, you can spend 1 discipline and give your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) one of the following additional effects until the start of your next turn:
 > 
 > - Gravitic Disruption: The first time on a turn that a target takes damage, you can slide them up to 2 squares.
 > - Inertial Anchor: Any target who starts their turn in the area can't [shift](scc:mcdm.heroes.v1/movement/shifting).
@@ -11184,7 +11184,7 @@ Your instincts for danger let you predict attacks before they happen.
 <!-- @type: feature -->
 #### Discipline Mastery
 
-As you advance in your chosen [null](scc:mcdm.heroes.v1/class/null) tradition, you gain certain benefits in combat, including benefits based on the amount of discipline you have. Benefits based on how much discipline you have last until the end of your turn, even if a benefit would become unavailable to you because of the amount of discipline you spend during your turn.
+As you advance in your chosen [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition), you gain certain benefits in combat, including benefits based on the amount of discipline you have. Benefits based on how much discipline you have last until the end of your turn, even if a benefit would become unavailable to you because of the amount of discipline you spend during your turn.
 
 Some [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline-mastery) benefits can be applied only if you are a specific level or higher, with the level of those benefits noted in the tables below.
 
@@ -11218,9 +11218,9 @@ Additionally, as your discipline grows, you strengthen the psionic power suffusi
 | Discipline      | Benefit                                                                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the Knockback maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead. |
-| 4               | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability, you gain 1 surge.                                                   |
+| 4               | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability, you gain 1 surge.                                                   |
 | 6               | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                             |
-| 8 (4th level)   | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability, you gain 2 surges.                                                  |
+| 8 (4th level)   | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability, you gain 2 surges.                                                  |
 | 10 (7th level)  | You have a double edge on the Grab and Knockback maneuvers.                                                                                                                                       |
 | 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 temporary Stamina.       |
 
@@ -11443,7 +11443,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > |-------------------|------------------------------:|
 > | **📏 2 burst**    | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1. At the end of your current turn, each enemy in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability takes psychic damage equal to your Intuition score.
+> **Effect:** Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1. At the end of your current turn, each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability takes psychic damage equal to your Intuition score.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Relentless Nemesis (3 Discipline)
@@ -11562,7 +11562,7 @@ You gain one exploration, interpersonal, or intrigue perk of your choice. See Ch
 <!-- @type: feature -->
 #### 2nd-Level Tradition Feature
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants you a feature, as shown on the 2nd-Level Tradition Features table.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants you a feature, as shown on the 2nd-Level Tradition Features table.
 
 ###### 2nd-Level Tradition Features Table
 
@@ -11592,7 +11592,7 @@ As a maneuver, you can read an entire book or process a similar amount of inform
 <!-- @type: feature -->
 #### 2nd-Level Tradition Ability
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two abilities.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants your choice of one of two abilities.
 
 ##### 2nd-Level Chronokinetic Ability
 
@@ -11652,7 +11652,7 @@ Choose one of the following heroic abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the start of your next turn, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.
+> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.
 
 ##### 2nd-Level Metakinetic Ability
 
@@ -11703,7 +11703,7 @@ You can long jump and high jump a distance equal to twice your Agility score wit
 <!-- @type: feature -->
 #### Reorder
 
-At the start of each of your turns, you can use a free triggered action to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability.
+At the start of each of your turns, you can use a free triggered action to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability.
 
 <!-- @type: feature -->
 #### 7-Discipline Ability
@@ -11713,13 +11713,13 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Absorption Field (7 Discipline)
 >
-> *Your [null](scc:mcdm.heroes.v1/class/null) field absorbs kinetic energy.*
+> *Your [null field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) absorbs kinetic energy.*
 >
 > | **Psionic** | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy in the area takes a bane on ability rolls.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Molecular Rearrangement Field (7 Discipline)
@@ -11730,7 +11730,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains temporary Stamina equal to your Intuition score.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Stabilizing Field (7 Discipline)
@@ -11741,18 +11741,18 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1. While the area of that ability is enlarged this way, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and reduce the potency of enemy effects targeting you by 1 for you. You can also use a free triggered action at the start of each of your turns to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Each ally in the area also gains these benefits.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Synapse Field (7 Discipline)
 >
-> *Attacks made by allies in your [null](scc:mcdm.heroes.v1/class/null) field disrupt your enemies' thoughts, causing psychic pain.*
+> *Attacks made by allies in your [null field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) disrupt your enemies' thoughts, causing psychic pain.*
 >
 > | **Psionic** | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -11772,7 +11772,7 @@ Your [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipli
 <!-- @type: feature -->
 #### Enhanced Null Field
 
-While using your [Null](scc:mcdm.heroes.v1/class/null) Field ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.
+While using your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.
 
 <!-- @type: feature -->
 #### Perk
@@ -11782,7 +11782,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Regenerative Field
 
-The first time each combat round that an enemy in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability uses a main action, you gain 2 discipline instead of 1.
+The first time each combat round that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability uses a main action, you gain 2 discipline instead of 1.
 
 <!-- @type: feature -->
 #### Skill
@@ -11797,7 +11797,7 @@ As a 5th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### 5th-Level Tradition Feature
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants you a feature, as shown on the 5th-Level Tradition Features table.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants you a feature, as shown on the 5th-Level Tradition Features table.
 
 ###### 5th-Level Tradition Features Table
 
@@ -11815,7 +11815,7 @@ You steel yourself for imminent danger by tapping into your body's cold energy. 
 <!-- @type: feature -->
 #### Inertial Fulcrum
 
-Whenever you use an ability to reduce damage dealt to you or to reduce the distance of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability equal to your Intuition score.
+Whenever you use an ability to reduce damage dealt to you or to reduce the distance of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability equal to your Intuition score.
 
 <!-- @type: feature -->
 #### Instant Action
@@ -11872,7 +11872,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null](scc:mcdm.heroes.v1/class/null) Field ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
+> **Effect:** You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a bane on ability rolls. You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Synaptic Reset (9 Discipline)
@@ -11908,7 +11908,7 @@ You gain one exploration, interpersonal, or intrigue perk of your choice.
 <!-- @type: feature -->
 #### 6th-Level Tradition Ability
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two heroic abilities.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants your choice of one of two heroic abilities.
 
 ##### 6th-Level Chronokinetic Abilities
 
@@ -12084,7 +12084,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### 8th-Level Tradition Feature
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants you a feature, as shown on the 8th-Level Tradition Features table.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants you a feature, as shown on the 8th-Level Tradition Features table.
 
 ###### 8th-Level Tradition Features Table
 
@@ -12097,17 +12097,17 @@ Your [null](scc:mcdm.heroes.v1/class/null) tradition grants you a feature, as sh
 <!-- @type: feature -->
 ##### Inertial Dampener
 
-You and each creature or object of your choice in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability gain a bonus to stability equal to your Intuition score. A creature who attempts to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target with this bonus takes psychic damage equal to your Intuition score.
+You and each creature or object of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability gain a bonus to stability equal to your Intuition score. A creature who attempts to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target with this bonus takes psychic damage equal to your Intuition score.
 
 <!-- @type: feature -->
 ##### Shared Momentum
 
-When you take the Disengage move action, one ally in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability can also take the Disengage move action as a free triggered action, using your distance for that move action.
+When you take the Disengage move action, one ally in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability can also take the Disengage move action as a free triggered action, using your distance for that move action.
 
 <!-- @type: feature -->
 ##### Synaptic Triage
 
-As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability also gains this benefit.
+As a free maneuver, you can spend 1d6 Stamina to remove one effect on you. Each creature of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability also gains this benefit.
 
 <!-- @type: feature -->
 #### 11-Discipline Ability
@@ -12117,7 +12117,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Arcane Purge (11 Discipline)
 >
-> *You focus your [null](scc:mcdm.heroes.v1/class/null) field into a pressure point strike that prevents your foe from channeling sorcery.*
+> *You focus your [null field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) into a pressure point strike that prevents your foe from channeling sorcery.*
 >
 > | **Melee, Psionic, Strike, Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
@@ -12172,7 +12172,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > |------------------------|-----------------------------:|
 > | **📏 Self; see below** |  **🎯 Self or one creature** |
 >
-> **Trigger:** The target takes damage from another creature's ability while in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability.
+> **Trigger:** The target takes damage from another creature's ability while in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability.
 >
 > **Effect:** The target takes half the damage, and if the triggering creature has I < AVERAGE, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). While the triggering creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, they take psychic damage equal to your Intuition score whenever they use a main action.
 
@@ -12189,7 +12189,7 @@ Your Stamina increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1
 <!-- @type: feature -->
 #### 9th-Level Tradition Ability
 
-Your [null](scc:mcdm.heroes.v1/class/null) tradition grants your choice of one of two heroic abilities.
+Your [null tradition](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-tradition) grants your choice of one of two heroic abilities.
 
 ##### 9th-Level Chronokinetic Abilities
 
@@ -12322,16 +12322,16 @@ When you gain discipline at the start of each of your turns during combat, you g
 <!-- @type: feature -->
 #### Manifold Resonance
 
-Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
+Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
 
-Whenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your [Psi Boost](scc:mcdm.heroes.v1/feature.trait.null.level-7/psi-boost) feature to that ability. Additionally, you and allies in the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability ignore banes and double banes on your power rolls.
+Whenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your [Psi Boost](scc:mcdm.heroes.v1/feature.trait.null.level-7/psi-boost) feature to that ability. Additionally, you and allies in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability ignore banes and double banes on your power rolls.
 
 <!-- @type: feature -->
 #### Order
 
 You have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline.
 
-At the start of a combat encounter, you can spend 1 order to increase the size of your [Null](scc:mcdm.heroes.v1/class/null) Field by 1 until the end of the encounter.
+At the start of a combat encounter, you can spend 1 order to increase the size of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) by 1 until the end of the encounter.
 
 Order remains until you spend it.
 
@@ -12381,7 +12381,7 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 | Level | Features                                                                                                            | Abilities                 | College Abilities |
 |-------|---------------------------------------------------------------------------------------------------------------------|---------------------------|-------------------|
-| 1st   | [Shadow](scc:mcdm.heroes.v1/class/shadow) College, Insight, College Features, [College Triggered Action](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/college-triggered-action), [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness), Kit, [Shadow Abilities](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-abilities)  | Signature, 3, 5           | -                 |
+| 1st   | [Shadow College](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college), Insight, College Features, [College Triggered Action](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/college-triggered-action), [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness), Kit, [Shadow Abilities](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-abilities)  | Signature, 3, 5           | -                 |
 | 2nd   | College Feature, Perk, College Ability                                                                              | Signature, 3, 5           | 5                 |
 | 3rd   | [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation), 7-Insight Ability                                                                              | Signature, 3, 5, 7        | 5                 |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Keep It Down](scc:mcdm.heroes.v1/feature.trait.shadow.level-4/keep-it-down), [Night Watch](scc:mcdm.heroes.v1/feature.ability.shadow.level-4/night-watch), Perk, Skill, [Surge of Insight](scc:mcdm.heroes.v1/feature.trait.shadow.level-4/surge-of-insight)                                   | Signature, 3, 5, 7        | 5                 |
@@ -12408,7 +12408,7 @@ You graduated from a [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.le
 - College of Caustic Alchemy: The College of Caustic Alchemy teaches its students recipes for the acids, bombs, and poisons used in their grim work. Graduates of the college are exceptional assassins. You have the [Alchemy](scc:mcdm.heroes.v1/skill/alchemy) skill.
 - College of the Harlequin Mask: Graduates of the College of the Harlequin Mask learn illusion magic, which they use to infiltrate enemy strongholds and create orchestrated chaos in combat. You have the [Lie](scc:mcdm.heroes.v1/skill/lie) skill.
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college is your subclass, and your choice of college determines many of the features you'll gain as you gain new levels.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) is your subclass, and your choice of college determines many of the features you'll gain as you gain new levels.
 
 <!-- @type: feature -->
 #### Insight
@@ -12434,7 +12434,7 @@ When you use an ability outside of combat that lets you spend unlimited insight 
 <!-- @type: feature -->
 #### 1st-Level College Features
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants you one or two features, as shown on the 1st-Level College Features table.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants you one or two features, as shown on the 1st-Level College Features table.
 
 ###### 1st-Level College Features Table
 
@@ -12508,7 +12508,7 @@ You always carry a supply of smoke bombs to use for distractions and easy getawa
 <!-- @type: feature -->
 #### College Triggered Action
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants you a triggered action, as shown on the College Triggered Actions table.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants you a triggered action, as shown on the College Triggered Actions table.
 
 ###### College Triggered Actions Table
 
@@ -12808,7 +12808,7 @@ You gain one exploration, interpersonal, or intrigue perk of your choice. See Ch
 <!-- @type: feature -->
 #### 2nd-Level College Feature
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants you a feature, as shown on the 2nd-Level College Features table.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants you a feature, as shown on the 2nd-Level College Features table.
 
 ###### 2nd-Level College Features Table
 
@@ -12838,7 +12838,7 @@ You know just where to cut your enemies. Whenever you make a strike that has no 
 <!-- @type: feature -->
 #### 2nd-Level College Ability
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants your choice of one of two heroic abilities.
 
 ##### 2nd-Level Black Ash Ability
 
@@ -13086,7 +13086,7 @@ As a 5th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### 5th-Level College Feature
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants you a feature, as shown on the 5th-Level College Features table.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants you a feature, as shown on the 5th-Level College Features table.
 
 ###### 5th-Level College Features Table
 
@@ -13210,7 +13210,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 <!-- @type: feature -->
 #### 6th-Level College Ability
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants your choice of one of two heroic abilities.
 
 ##### 6th-Level Black Ash Abilities
 
@@ -13355,7 +13355,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### 8th-Level College Feature
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants you a feature, as shown on the 8th-Level College Features table.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants you a feature, as shown on the 8th-Level College Features table.
 
 ###### 8th-Level College Features Table
 
@@ -13473,7 +13473,7 @@ Outside of combat, you can have one clone active for every 2 Victories you have.
 <!-- @type: feature -->
 #### 9th-Level College Ability
 
-Your [shadow](scc:mcdm.heroes.v1/class/shadow) college grants your choice of one of two heroic abilities.
+Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) grants your choice of one of two heroic abilities.
 
 ##### 9th-Level Black Ash Abilities
 
@@ -14657,7 +14657,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Focus | @id: squad-hit-and-run -->
 > ###### Squad! Hit and Run! (11 Focus)
 >
-> *I had to pry this secret from the [shadow](scc:mcdm.heroes.v1/class/shadow) colleges.*
+> *I had to pry this secret from the [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college)s.*
 >
 > | **Ranged**       |            **Main action** |
 > |------------------|---------------------------:|
@@ -14828,7 +14828,7 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 | Level | Features                                                                                                                                     | Abilities                     | Tradition Abilities |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------|
-| 1st   | [Talent](scc:mcdm.heroes.v1/class/talent) Tradition, [Clarity and Strain](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain), [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike), [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Talent](scc:mcdm.heroes.v1/class/talent) Ward, [Telepathic Speech](scc:mcdm.heroes.v1/feature.trait.talent.level-1/telepathic-speech), Tradition Features, [Talent Abilities](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-abilities) | Two signature, 3, 5           | -                   |
+| 1st   | [Talent Tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition), [Clarity and Strain](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain), [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike), [Psionic Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/psionic-augmentation), [Talent Ward](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-ward), [Telepathic Speech](scc:mcdm.heroes.v1/feature.trait.talent.level-1/telepathic-speech), Tradition Features, [Talent Abilities](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-abilities) | Two signature, 3, 5           | -                   |
 | 2nd   | Perk, Tradition Feature, Tradition Ability                                                                                                   | Two signature, 3, 5           | 5                   |
 | 3rd   | Scan, 7-Clarity Ability                                                                                                                      | Two signature, 3, 5, 7        | 5                   |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Mind Projection](scc:mcdm.heroes.v1/feature.trait.talent.level-4/mind-projection), [Mind Recovery](scc:mcdm.heroes.v1/feature.trait.talent.level-4/mind-recovery), Perk, Skill [Suspensor Field](scc:mcdm.heroes.v1/feature.trait.talent.level-4/suspensor-field)                                                         | Two signature, 3, 5, 7        | 5                   |
@@ -14847,7 +14847,7 @@ As a 1st-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Talent Tradition
 
-Psionic abilities are grouped into categories according to their effects, with each category comprising one of many [talent](scc:mcdm.heroes.v1/class/talent) traditions:
+Psionic abilities are grouped into categories according to their effects, with each category comprising one of many [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition)s:
 
 - **Animapathy** abilities allow you to manipulate, meld, and exchange the souls of living things.
 - **Chronopathy** abilities allow you to view future and past events, and to manipulate time to aid allies and hinder foes.
@@ -14858,7 +14858,7 @@ Psionic abilities are grouped into categories according to their effects, with e
 - **Telekinesis** abilities allow you to physically manipulate creatures and objects.
 - **Telepathy** abilities allow you to communicate with, read, and influence the minds of other creatures.
 
-You choose a [talent](scc:mcdm.heroes.v1/class/talent) tradition from the following options: chronopathy, telekinesis, or telepathy. Your [talent](scc:mcdm.heroes.v1/class/talent) tradition is your subclass, and your choice of tradition determines many of the features you'll gain as you gain new levels. (Other [talent](scc:mcdm.heroes.v1/class/talent) traditions will be featured in future products.) (*Quick Build:* Telekinesis.)
+You choose a [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) from the following options: chronopathy, telekinesis, or telepathy. Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) is your subclass, and your choice of tradition determines many of the features you'll gain as you gain new levels. (Other [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition)s will be featured in future products.) (*Quick Build:* Telekinesis.)
 
 <!-- @type: feature -->
 #### Clarity and Strain
@@ -14910,7 +14910,7 @@ You have the following ability, which can be used as a ranged free strike.
 <!-- @type: feature -->
 #### Psionic Augmentation
 
-Through meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation and ward (see [Talent](scc:mcdm.heroes.v1/class/talent) Ward below) by undergoing a psionic meditation as a respite activity. (*Quick Build:*  [Force Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/force-augmentation).)
+Through meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation and ward (see [Talent Ward](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-ward) below) by undergoing a psionic meditation as a respite activity. (*Quick Build:*  [Force Augmentation](scc:mcdm.heroes.v1/feature.trait.null.level-1/force-augmentation).)
 
 <!-- @type: feature -->
 ##### Battle Augmentation
@@ -14972,7 +14972,7 @@ You know the Mindspeech language (see Languages in Orden in Chapter 4: [Backgrou
 <!-- @type: feature -->
 #### 1st-Level Tradition Features
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants you two features, as shown on the 1st-Level Tradition Features table.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants you two features, as shown on the 1st-Level Tradition Features table.
 
 ###### 1st-Level Tradition Features Table
 
@@ -15096,7 +15096,7 @@ You have the following ability.
 <!-- @type: feature -->
 #### Talent Abilities
 
-You manifest a variety of psionic powers that let you impact the environment, bolster your allies, and empower yourself. You can choose abilities across different [talent](scc:mcdm.heroes.v1/class/talent) traditions or focus on abilities tied to your chosen tradition to dedicate yourself to its power.
+You manifest a variety of psionic powers that let you impact the environment, bolster your allies, and empower yourself. You can choose abilities across different [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition)s or focus on abilities tied to your chosen tradition to dedicate yourself to its power.
 
 ##### Signature Abilities
 
@@ -15387,7 +15387,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice. See Chapt
 <!-- @type: feature -->
 #### 2nd-Level Tradition Feature
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants you a feature, as shown on the 2nd-Level Tradition Features table.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants you a feature, as shown on the 2nd-Level Tradition Features table.
 
 ###### 2nd-Level Tradition Features Table
 
@@ -15415,7 +15415,7 @@ Whenever you land after a fall, or if any falling creature lands within 2 square
 <!-- @type: feature -->
 #### 2nd-Level Tradition Ability
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants your choice of one of two heroic abilities.
 
 ##### 2nd-Level Chronopathy Ability
 
@@ -15673,7 +15673,7 @@ As a 5th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### 5th-Level Tradition Features
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants you two features, as shown on the 5th-Level Tradition Features table.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants you two features, as shown on the 5th-Level Tradition Features table.
 
 ###### 5th-Level Tradition Features Table
 
@@ -15841,7 +15841,7 @@ If the ability has any power roll, that roll gains an edge.
 <!-- @type: feature -->
 #### 6th-Level Tradition Ability
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants your choice of one of two heroic abilities.
 
 ##### 6th-Level Chronopathy Abilities
 
@@ -16010,7 +16010,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### 8th-Level Tradition Features
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants you two features, as shown on the 8th-Level Tradition Features table.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants you two features, as shown on the 8th-Level Tradition Features table.
 
 ###### 8th-Level Tradition Features Table
 
@@ -16170,7 +16170,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 <!-- @type: feature -->
 #### 9th-Level Tradition Ability
 
-Your [talent](scc:mcdm.heroes.v1/class/talent) tradition grants your choice of one of two heroic abilities.
+Your [talent tradition](scc:mcdm.heroes.v1/feature.trait.talent.level-1/talent-tradition) grants your choice of one of two heroic abilities.
 
 ##### 9th-Level Chronopathy Abilities
 
@@ -16373,7 +16373,7 @@ There is no visible text in the image provided. The image appears to show a deco
 
 | Level | Features                                                                                                                        | Abilities                 | Class Act Abilities |
 |-------|---------------------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------|
-| 1st   | [Troubadour](scc:mcdm.heroes.v1/class/troubadour) Class Act, Drama, Kit, [Scene Partner](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/scene-partner), [Routines](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/routines), Class Act Features, [Class Act Triggered Action](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/class-act-triggered-action), [Troubadour Abilities](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-abilities) | Signature, 3, 5           | -                   |
+| 1st   | [Troubadour Class Act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act), Drama, Kit, [Scene Partner](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/scene-partner), [Routines](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/routines), Class Act Features, [Class Act Triggered Action](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/class-act-triggered-action), [Troubadour Abilities](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-abilities) | Signature, 3, 5           | -                   |
 | 2nd   | [Appeal to the Muses](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/appeal-to-the-muses), [Invocation](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/invocation), Perk, Class Act Ability                                                                        | Signature, 3, 5           | 5                   |
 | 3rd   | Class Act Feature, 7-Drama Ability                                                                                              | Signature, 3, 5, 7        | 5                   |
 | 4th   | [Characteristic Increase](scc:mcdm.heroes.v1/feature.trait.censor.level-10/characteristic-increase), [Melodrama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-4/melodrama), Perk, Skill, [Zeitgeist](scc:mcdm.heroes.v1/feature.trait.troubadour.level-4/zeitgeist)                                                                      | Signature, 3, 5, 7        | 5                   |
@@ -16392,13 +16392,13 @@ As a 1st-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### Troubadour Class Act
 
-Panache, melody, and depiction. Some [troubadours](scc:mcdm.heroes.v1/class/troubadour) have it all, but everyone starts somewhere. Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act is your art form, summing up the manner in which the world becomes your stage. As you go about unearthing the drama of everyday life and strife, you choose a [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act from the following options, each of which grants you a skill. (*Quick Build:* Virtuoso.)
+Panache, melody, and depiction. Some [troubadours](scc:mcdm.heroes.v1/class/troubadour) have it all, but everyone starts somewhere. Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) is your art form, summing up the manner in which the world becomes your stage. As you go about unearthing the drama of everyday life and strife, you choose a [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) from the following options, each of which grants you a skill. (*Quick Build:* Virtuoso.)
 
 - **Auteur:** You seek drama from story and recount, using your magic to manipulate the sequence of events unfolding before you. You have the [Brag](scc:mcdm.heroes.v1/skill/brag) skill.
 - **Duelist:** Drama infuses your every movement done in tandem with another. You perform dances of death, putting trust in your opponent to return your passion in kind. You have the [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics) skill.
 - **Virtuoso:** You find drama in music and song, weaving magic between vibrations and filling the audience with your pathos. You have the [Music](scc:mcdm.heroes.v1/skill/music) skill and can play an instrument.
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act is your subclass, and your choice of class act determines many of the features you'll gain as you gain new levels.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) is your subclass, and your choice of class act determines many of the features you'll gain as you gain new levels.
 
 <!-- @type: feature -->
 #### Drama
@@ -16480,7 +16480,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 <!-- @type: feature -->
 #### 1st-Level Class Act Features
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants you two features, as shown on the 1st-Level Class Act Features table.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants you two features, as shown on the 1st-Level Class Act Features table.
 
 ###### 1st-Level Class Act Features Table
 
@@ -16618,7 +16618,7 @@ You have the following performance abilities, which are usable with your [Routin
 <!-- @type: feature -->
 #### Class Act Triggered Action
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants you a triggered action, as shown on the Class Act Triggered Actions table.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants you a triggered action, as shown on the Class Act Triggered Actions table.
 
 ###### Class Act Triggered Action Table
 
@@ -16933,7 +16933,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice. See Chapt
 <!-- @type: feature -->
 #### 2nd-Level Class Act Ability
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants your choice of one of two heroic abilities.
 
 ##### 2nd-Level Auteur Ability
 
@@ -17033,7 +17033,7 @@ As a 3rd-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### 3rd-Level Class Act Feature
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants you a feature, as shown on the 3rd-Level Class Act Features table.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants you a feature, as shown on the 3rd-Level Class Act Features table.
 
 ###### 3rd-Level Class Act Features Table
 
@@ -17214,7 +17214,7 @@ As a 5th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### 5th-Level Class Act Feature
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two features.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants your choice of one of two features.
 
 <!-- @type: feature -->
 ##### Auteur Features
@@ -17365,7 +17365,7 @@ You have the following performance ability, which is usable with your [Routines]
 <!-- @type: feature -->
 #### 6th-Level Class Act Ability
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants your choice of one of two heroic abilities.
 
 ##### 6th-Level Auteur Abilities
 
@@ -17499,7 +17499,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### 8th-Level Class Act Feature
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants you a feature, as shown on the 8th-Level Class Act Features table.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants you a feature, as shown on the 8th-Level Class Act Features table.
 
 ###### 8th-Level Class Act Features Table
 
@@ -17623,7 +17623,7 @@ Additionally, whenever you spend a Recovery, you can forgo regaining Stamina to 
 <!-- @type: feature -->
 #### 9th-Level Class Act Ability
 
-Your [troubadour](scc:mcdm.heroes.v1/class/troubadour) class act grants your choice of one of two heroic abilities.
+Your [troubadour class act](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/troubadour-class-act) grants your choice of one of two heroic abilities.
 
 ##### 9th-Level Auteur Abilities
 
@@ -19168,7 +19168,7 @@ Complications are presented in alphabetical order.
 | 25   | [Evanesceria](scc:mcdm.heroes.v1/complication/evanesceria)                        | 75   | [Secret Twin](scc:mcdm.heroes.v1/complication/secret-twin)                |
 | 26   | [Exile](scc:mcdm.heroes.v1/complication/exile)                              | 76   | Self-Taught                |
 | 27   | [Fallen Immortal](scc:mcdm.heroes.v1/complication/fallen-immortal)                    | 77   | [Sewer Folk](scc:mcdm.heroes.v1/complication/sewer-folk)                 |
-| 28   | [Famous Relative](scc:mcdm.heroes.v1/complication/famous-relative)                    | 78   | [Shadow](scc:mcdm.heroes.v1/class/shadow) Born                |
+| 28   | [Famous Relative](scc:mcdm.heroes.v1/complication/famous-relative)                    | 78   | [Shadow Born](scc:mcdm.heroes.v1/complication/shadow-born)                |
 | 29   | [Feytouched](scc:mcdm.heroes.v1/complication/feytouched)                         | 79   | [Shared Spirit](scc:mcdm.heroes.v1/complication/shared-spirit)              |
 | 30   | [Fiery Ideal](scc:mcdm.heroes.v1/complication/fiery-ideal)                        | 80   | [Shattered Legacy](scc:mcdm.heroes.v1/complication/shattered-legacy)           |
 | 31   | [Fire and Chaos](scc:mcdm.heroes.v1/complication/fire-and-chaos)                     | 81   | [Shipwrecked](scc:mcdm.heroes.v1/complication/shipwrecked)                |
@@ -19273,7 +19273,7 @@ Complications are presented in alphabetical order.
 | 75   | [Secret Twin](scc:mcdm.heroes.v1/complication/secret-twin)                        |
 | 76   | Self-Taught                        |
 | 77   | [Sewer Folk](scc:mcdm.heroes.v1/complication/sewer-folk)                         |
-| 78   | [Shadow](scc:mcdm.heroes.v1/class/shadow) Born                        |
+| 78   | [Shadow Born](scc:mcdm.heroes.v1/complication/shadow-born)                        |
 | 79   | [Shared Spirit](scc:mcdm.heroes.v1/complication/shared-spirit)                      |
 | 80   | [Shattered Legacy](scc:mcdm.heroes.v1/complication/shattered-legacy)                   |
 | 81   | [Shipwrecked](scc:mcdm.heroes.v1/complication/shipwrecked)                        |
@@ -19666,7 +19666,7 @@ You used to be a con artist, but those days are pretty much behind you. Being a 
 
 Once when you were a child, your settlement was in danger and you called out to the earth for aid. That call was answered by a summoning of protective dirt-and-stone walls, and ever since then, you've felt the earth's presence as a friend and protector.
 
-**Benefit:** You have the 1st-level [Elementalist](scc:mcdm.heroes.v1/class/elementalist) Specialization feature [Motivate Earth](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/motivate-earth) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If you also gain this feature in any other way, the [Motivate Earth](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/motivate-earth) ability becomes a ranged ability for you with a distance of ranged 5.
+**Benefit:** You have the 1st-level [Elementalist Specialization](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/elemental-specialization) feature [Motivate Earth](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/motivate-earth) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If you also gain this feature in any other way, the [Motivate Earth](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/motivate-earth) ability becomes a ranged ability for you with a distance of ranged 5.
 
 **Drawback:** You attract lightning. Whenever any creature within 2 squares of you takes lightning damage, you take 5 lightning damage that can't be reduced in any way.
 
@@ -23020,7 +23020,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Project Goal:** 150
 
-**[Devil's](scc:mcdm.heroes.v1/ancestry/devil) Bargain:** You can [fly](scc:mcdm.heroes.v1/movement/fly). Additionally, if an effect would make you [prone](scc:mcdm.heroes.v1/condition/prone) while [flying](scc:mcdm.heroes.v1/movement/fly), you can choose to not make you [prone](scc:mcdm.heroes.v1/condition/prone) by losing Stamina equal to the distance you would have fallen from make you [prone](scc:mcdm.heroes.v1/condition/prone).
+**Devil's Bargain:** You can [fly](scc:mcdm.heroes.v1/movement/fly). Additionally, if an effect would make you [prone](scc:mcdm.heroes.v1/condition/prone) while [flying](scc:mcdm.heroes.v1/movement/fly), you can choose to not make you [prone](scc:mcdm.heroes.v1/condition/prone) by losing Stamina equal to the distance you would have fallen from make you [prone](scc:mcdm.heroes.v1/condition/prone).
 
 **Dragon Soul II:** While you are winded, your head transforms into a dragon's head and you have the following ability.
 
@@ -23061,7 +23061,7 @@ On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the im
 
 | Enhancement            | Item Prerequisite                                                                                    | Project Source Language |
 |------------------------|------------------------------------------------------------------------------------------------------|-------------------------|
-| [Devil's](scc:mcdm.heroes.v1/ancestry/devil) Bargain        | The wing of an archdevil                                                                             | Anjali                  |
+| Devil's Bargain        | The wing of an archdevil                                                                             | Anjali                  |
 | Dragon Soul II         | An offering of gems, coins, and art stolen from a dragon's hoard, sacrificed in ritual fire          | Vastariax               |
 | Invulnerable           | Repurposed metal plates from a servok war engine                                                     | Rallarian               |
 | Leyline Walker         | A cutting from an ethereal tree that manifests in the mundane world only once a year                 | Yllyric                 |
@@ -24882,7 +24882,7 @@ Additionally, you have the following ability.
 
 **Project Goal:** 450
 
-**Effect:** You must be a [null](scc:mcdm.heroes.v1/class/null) to wear this ring. While you do so, the area of your [Null](scc:mcdm.heroes.v1/class/null) Field ability increases by 1.
+**Effect:** You must be a [null](scc:mcdm.heroes.v1/class/null) to wear this ring. While you do so, the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability increases by 1.
 
 Additionally, you have the following ability.
 
@@ -26365,7 +26365,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Boffin:* You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver (see below).
-- *Caustic Alchemy:* You have your choice of the 1st-level [shadow](scc:mcdm.heroes.v1/class/shadow) college features Coat the Blade or [Smoke Bomb](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/smoke-bomb) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). When you use that feature, you can't spend insight unless you have the Insight class feature.
+- *Caustic Alchemy:* You have your choice of the 1st-level [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-college) features Coat the Blade or [Smoke Bomb](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/smoke-bomb) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). When you use that feature, you can't spend insight unless you have the Insight class feature.
 - *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
 
 ##### Boffin Properties
@@ -26465,7 +26465,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *[Devil](scc:mcdm.heroes.v1/ancestry/devil) Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
+- *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
 - *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly [Devil](scc:mcdm.heroes.v1/ancestry/devil):* You gain the Silver Tongue signature trait from the [devil](scc:mcdm.heroes.v1/ancestry/devil) ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
@@ -26511,7 +26511,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Angelic Chorus:* You can use the lessons of musical improvisation in combat. Choose one class act triggered action from the [troubadour](scc:mcdm.heroes.v1/class/troubadour) class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend drama, you can gain or spend the Heroic Resource of your class in place of drama.
-- *[Devil's](scc:mcdm.heroes.v1/ancestry/devil) Opera:* You have the following ability, which can be paid for using the Heroic Resource of your class.
+- *Devil's Opera:* You have the following ability, which can be paid for using the Heroic Resource of your class.
 
 > ###### The Devil's Chord (9 Heroic Resource)
 >
@@ -26555,7 +26555,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *I Know How to Talk to These People:* You gain an edge on Presence tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
-- *[Noble](scc:mcdm.heroes.v1/title/noble) Splendor:* You earn 1 Renown and 1 Wealth.
+- *Noble Splendor:* You earn 1 Renown and 1 Wealth.
 - *Retinue:* The number of followers you can recruit increases by two.
 
 **Special:** If you take this title, you might occasionally be called upon to perform duties for the person who granted your [noble](scc:mcdm.heroes.v1/title/noble) rank.

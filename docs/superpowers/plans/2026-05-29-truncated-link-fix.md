@@ -1,6 +1,6 @@
 # Truncated / Mis-Targeted SCC Link Fix — Implementation Plan
 
-> **Status:** Draft, awaiting execution (2026-05-29). Created after the cross-linking and content-linking efforts completed. Depends on no other in-flight work except the uncommitted `internal/site/build.go` change (unrelated; owner committing separately).
+> **Status:** COMPLETE (2026-05-29). All phases executed. Registry 1,582 → 1,754 (+172 codes incl. new `project`/`god` types). Pipeline `gen` 0 WARN; `validate` coverage 55.2% → 60.9%, 0 unknown types; all tests green except the pre-existing `internal/site` failures (unrelated — fail on HEAD). Phase 1 committed by owner; Phases 2–4 (re-links, unlinks, validation) follow.
 
 **Goal:** Repair SCC links that were truncated or pointed at the wrong code because the iterative linking process linked broad terms (classes/ancestries/careers) *before* narrow ones (features/abilities/complications/skills). Two coupled root causes:
 
