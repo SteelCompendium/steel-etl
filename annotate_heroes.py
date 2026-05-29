@@ -682,13 +682,25 @@ def add_condition_annotations(
     lines: list[str],
 ) -> None:
     """
-    Conditions are in the Combat chapter under specific subsections.
-    They use ##### or #### headings. This needs special handling since
-    the main loop may not catch them.
+    Conditions are ##### headings under the #### Conditions heading in the
+    Classes chapter intro (before the first class). The main loop doesn't
+    catch them because ctx.current_class is not set yet. This pass finds
+    the #### Conditions heading and annotates each ##### child as a condition.
     """
-    # Find the Conditions section - it's actually listed inline in combat rules
-    # Let's check if there's a dedicated conditions section
-    pass  # Conditions may not be separate H4s; need to check structure
+    in_conditions = False
+    for i, line in enumerate(lines):
+        if re.match(r"^#### Conditions\s*$", line):
+            in_conditions = True
+            continue
+        if in_conditions:
+            if re.match(r"^####\s", line):
+                break
+            m = re.match(r"^##### (.+)$", line)
+            if m:
+                slug = slugify(m.group(1).strip())
+                annotations.append(
+                    Annotation(i, f"<!-- @type: condition | @id: {slug} -->")
+                )
 
 
 # ---------------------------------------------------------------------------
@@ -715,6 +727,7 @@ def main() -> None:
     mark_signature_abilities(annotations, raw_lines)
     refine_background_annotations(annotations, raw_lines)
     refine_rewards_annotations(annotations, raw_lines)
+    add_condition_annotations(annotations, raw_lines)
 
     # Sort by line number
     annotations.sort(key=lambda a: a.line_no)

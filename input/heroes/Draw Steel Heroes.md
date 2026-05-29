@@ -4391,13 +4391,13 @@ Potencies are made for quick resolution at the table, but a number of triggered 
 
 If an ability or feature allows you to spend your Heroic Resource on an effect that is entirely dependent on a potency and the target is unaffected because their characteristic is high enough to resist the potency, then you don't spend the Heroic Resource.
 
-For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the [slowed](scc:mcdm.heroes.v1/condition/[slowed](scc:mcdm.heroes.v1/condition/slowed)) condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the [tactician](scc:mcdm.heroes.v1/class/tactician) targets a creature whose high Reason leaves them unaffected, the [tactician](scc:mcdm.heroes.v1/class/tactician) doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
+For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the [tactician](scc:mcdm.heroes.v1/class/tactician) targets a creature whose high Reason leaves them unaffected, the [tactician](scc:mcdm.heroes.v1/class/tactician) doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
 
 This rule also applies to Director-controlled creatures who spend Malice on abilities and features that affect a target using a potency and have no other automatic effects.
 
 #### Critical Hit
 
-Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) (see Conditions below).
+Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
 
 You can't score a critical hit with an ability roll made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an opportunity attack made as a triggered action or a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) Strike Now ability can be critical hits.
 
@@ -4436,7 +4436,7 @@ The unique effects of different abilities are combined—effectively stacking on
 
 For example, the [null's](scc:mcdm.heroes.v1/class/null) [Null](scc:mcdm.heroes.v1/class/null) Field ability reduces the potencies of enemies within the field by 1. If two allied [nulls](scc:mcdm.heroes.v1/class/null) each have their [Null](scc:mcdm.heroes.v1/class/null) Field ability active and an enemy cultist is targeted by both abilities, that cultist's potencies are reduced by 1, not by 2.
 
-Different effects that impose the same condition (see Conditions below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become [weakened](scc:mcdm.heroes.v1/condition/[weakened](scc:mcdm.heroes.v1/condition/weakened)) (imposing a bane on the target's power rolls), the target isn't [weakened](scc:mcdm.heroes.v1/condition/[weakened](scc:mcdm.heroes.v1/condition/weakened)) twice to impose a double bane on those rolls. A character who is [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) by an enemy can't be [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
+Different effects that impose the same condition (see Conditions below) don't stack to impose the condition twice. For instance, if a hero is targeted by numerous creatures whose abilities cause a target to become [weakened](scc:mcdm.heroes.v1/condition/weakened) (imposing a bane on the target's power rolls), the target isn't [weakened](scc:mcdm.heroes.v1/condition/weakened) twice to impose a double bane on those rolls. A character who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by an enemy can't be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) again by another enemy. The same holds true for game effects that aren't conditions. For example, if a hero is targeted by multiple abilities or effects that can halve their recovery value, the hero's recovery value is halved only once.
 
 #### Ending Effects
 
@@ -4488,55 +4488,64 @@ Likewise, if an effect refers to a "ceiling," that means any solid surface above
 
 Some abilities and other effects apply specific negative effects called conditions to a creature. The following conditions show up regularly in the game and can be tracked on your character sheet when they affect your hero.
 
+<!-- @type: condition | @id: bleeding -->
 ##### Bleeding
 
-While a creature is [bleeding](scc:mcdm.heroes.v1/condition/[bleeding](scc:mcdm.heroes.v1/condition/bleeding)), whenever they use a main action, use a triggered action, or make a test or ability roll using Might or Agility, they lose Stamina equal to 1d6 + their level after the main action, triggered action, or power roll is resolved. This Stamina loss can't be prevented in any way, and only happens once per action.
+While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a triggered action, or make a test or ability roll using Might or Agility, they lose Stamina equal to 1d6 + their level after the main action, triggered action, or power roll is resolved. This Stamina loss can't be prevented in any way, and only happens once per action.
 
-You take damage from this condition when you use a main action off your turn. For example, a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) Strike Now ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/[bleeding](scc:mcdm.heroes.v1/condition/bleeding)) condition.
+You take damage from this condition when you use a main action off your turn. For example, a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) Strike Now ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
 
+<!-- @type: condition | @id: dazed -->
 ##### Dazed
 
-A creature who is [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) creature also can't use triggered actions, free triggered actions, or free maneuvers.
+A creature who is [dazed](scc:mcdm.heroes.v1/condition/dazed) can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or free maneuvers.
 
+<!-- @type: condition | @id: frightened -->
 ##### Frightened
 
-When a creature is [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)), any ability roll they make against the source of their fear takes a bane. If that source is a creature, their ability rolls made against the [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) creature gain an edge. A [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) creature can't willingly move closer to the source of their fear if they know the location of that source. If a creature gains the [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) condition from one source while already [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) by a different source, the new condition replaces the old one.
+When a creature is [frightened](scc:mcdm.heroes.v1/condition/frightened), any ability roll they make against the source of their fear takes a bane. If that source is a creature, their ability rolls made against the [frightened](scc:mcdm.heroes.v1/condition/frightened) creature gain an edge. A [frightened](scc:mcdm.heroes.v1/condition/frightened) creature can't willingly move closer to the source of their fear if they know the location of that source. If a creature gains the [frightened](scc:mcdm.heroes.v1/condition/frightened) condition from one source while already [frightened](scc:mcdm.heroes.v1/condition/frightened) by a different source, the new condition replaces the old one.
 
+<!-- @type: condition | @id: grabbed -->
 ##### Grabbed
 
-A creature who is [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) has speed 0, can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) except by a creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)), can't use the Knockback maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), and takes a bane on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)). If a creature is [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) by another creature and that creature moves, they bring the [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) creature with them. If a creature's size is equal to or less than the size of a creature they have [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)), their speed is halved while they have that creature [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)).
+A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) has speed 0, can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) except by a creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed), can't use the Knockback maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), and takes a bane on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed). If a creature is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another creature and that creature moves, they bring the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature with them. If a creature's size is equal to or less than the size of a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), their speed is halved while they have that creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
-A creature who has another creature [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) can use a maneuver to move the [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) creature into an unoccupied space adjacent to them.
+A creature who has another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) can use a maneuver to move the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature into an unoccupied space adjacent to them.
 
-A creature can release a creature they have [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) at any time to end that condition (no action required). A [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) creature can attempt to escape being [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) using the Escape Grab maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) creature [teleports](scc:mcdm.heroes.v1/movement/teleport), or if either the [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) creature or the creature grabbing them is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) so that both creatures are not adjacent to each other, that creature is no longer [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)).
+A creature can release a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at any time to end that condition (no action required). A [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature can attempt to escape being [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the Escape Grab maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature [teleports](scc:mcdm.heroes.v1/movement/teleport), or if either the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or the creature grabbing them is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) so that both creatures are not adjacent to each other, that creature is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 A creature can grab only creatures of their size or smaller. If a creature's Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
 
 Unless otherwise indicated, a creature can grab only one creature at a time.
 
+<!-- @type: condition | @id: prone -->
 ##### Prone
 
 While a creature is [prone](scc:mcdm.heroes.v1/condition/prone), they are flat on the ground, any strike they make takes a bane, and melee abilities used against them gain an edge. A [prone](scc:mcdm.heroes.v1/condition/prone) creature must [crawl](scc:mcdm.heroes.v1/movement/crawl) to move along the ground, which costs 1 additional square of movement for every square crawled. A creature can't climb, [jump](scc:mcdm.heroes.v1/movement/jump), swim, or [fly](scc:mcdm.heroes.v1/movement/fly) while [prone](scc:mcdm.heroes.v1/condition/prone). If they are climbing, [flying](scc:mcdm.heroes.v1/movement/fly), or jumping when knocked [prone](scc:mcdm.heroes.v1/condition/prone), they fall.
 
 Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/condition/prone) condition says otherwise, a [prone](scc:mcdm.heroes.v1/condition/prone) creature can stand up using the Stand Up maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). A creature adjacent to a willing [prone](scc:mcdm.heroes.v1/condition/prone) creature can likewise use the Stand Up maneuver to make that creature stand up.
 
+<!-- @type: condition | @id: restrained -->
 ##### Restrained
 
-A creature who is [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) has speed 0, can't use the Stand Up maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
+A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the Stand Up maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
 
-If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)), that condition ends.
+If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/restrained), that condition ends.
 
+<!-- @type: condition | @id: slowed -->
 ##### Slowed
 
-A creature who is [slowed](scc:mcdm.heroes.v1/condition/[slowed](scc:mcdm.heroes.v1/condition/slowed)) has speed 2 unless their speed is already lower, and they can't [shift](scc:mcdm.heroes.v1/movement/shifting).
+A creature who is [slowed](scc:mcdm.heroes.v1/condition/slowed) has speed 2 unless their speed is already lower, and they can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
+<!-- @type: condition | @id: taunted -->
 ##### Taunted
 
-A creature who is [taunted](scc:mcdm.heroes.v1/condition/[taunted](scc:mcdm.heroes.v1/condition/taunted)) has a double bane on ability rolls for any ability that doesn't target the creature who [taunted](scc:mcdm.heroes.v1/condition/[taunted](scc:mcdm.heroes.v1/condition/taunted)) them, as long as they have line of effect to that creature. If a creature gains the [taunted](scc:mcdm.heroes.v1/condition/[taunted](scc:mcdm.heroes.v1/condition/taunted)) condition from one source while already [taunted](scc:mcdm.heroes.v1/condition/[taunted](scc:mcdm.heroes.v1/condition/taunted)) by a different source, the new condition replaces the old one.
+A creature who is [taunted](scc:mcdm.heroes.v1/condition/taunted) has a double bane on ability rolls for any ability that doesn't target the creature who [taunted](scc:mcdm.heroes.v1/condition/taunted) them, as long as they have line of effect to that creature. If a creature gains the [taunted](scc:mcdm.heroes.v1/condition/taunted) condition from one source while already [taunted](scc:mcdm.heroes.v1/condition/taunted) by a different source, the new condition replaces the old one.
 
+<!-- @type: condition | @id: weakened -->
 ##### Weakened
 
-A creature who is [weakened](scc:mcdm.heroes.v1/condition/[weakened](scc:mcdm.heroes.v1/condition/weakened)) takes a bane on power rolls.
+A creature who is [weakened](scc:mcdm.heroes.v1/condition/weakened) takes a bane on power rolls.
 
 #### Abilities in Class Tables
 
@@ -4667,7 +4676,7 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 > - When an adjacent creature judged by you starts to [shift](scc:mcdm.heroes.v1/movement/shifting), you make a melee free strike against them and their speed becomes 0 until the end of the current turn, preventing them from [shifting](scc:mcdm.heroes.v1/movement/shifting).
 > - When a creature judged by you within 10 squares makes a power roll, you cause them to take a bane on the roll.
 > - When a creature judged by you within 10 squares uses an ability with a potency that targets only one creature, the potency is reduced by 1 for that creature.
-> - If you damage a creature judged by you with a melee ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/[taunted](scc:mcdm.heroes.v1/condition/taunted)) by you until the end of their next turn.
+> - If you damage a creature judged by you with a melee ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
 >   
 > You can choose only one free triggered action option at a time, even if multiple options are triggered by the same effect.
 
@@ -4883,9 +4892,9 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > **Power Roll + Might:**
 > 
-> - **≤11:** 2 + M holy damage; P < WEAK, [slowed](scc:mcdm.heroes.v1/condition/[slowed](scc:mcdm.heroes.v1/condition/slowed)) (save ends)
-> - **12-16:** 5 + M holy damage; P < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/[slowed](scc:mcdm.heroes.v1/condition/slowed)) (save ends)
-> - **17+:** 7 + M holy damage; P < STRONG, [slowed](scc:mcdm.heroes.v1/condition/[slowed](scc:mcdm.heroes.v1/condition/slowed)) (save ends)
+> - **≤11:** 2 + M holy damage; P < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 5 + M holy damage; P < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 7 + M holy damage; P < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 <!-- @type: ability | @subtype: signature | @id: your-allies-cannot-save-you -->
 > ###### Your Allies Cannot Save You!
@@ -4974,9 +4983,9 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > 
 > **Power Roll + Presence:**
 > 
-> - **≤11:** 5 + P holy damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) (save ends)
-> - **12-16:** 8 + P holy damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) (save ends)
-> - **17+:** 11 + P holy damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/[dazed](scc:mcdm.heroes.v1/condition/dazed)) (save ends)
+> - **≤11:** 5 + P holy damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 8 + P holy damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 11 + P holy damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
 ###### 5-Wrath Ability
 
@@ -4993,11 +5002,11 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > 
 > **Power Roll + Might:**
 > 
-> - **≤11:** 6 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed))
-> - **12-16:** 9 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed))
-> - **17+:** 13 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed))
+> - **≤11:** 6 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 9 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 13 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > 
-> **Effect:** If the target makes a strike against a creature while [grabbed](scc:mcdm.heroes.v1/condition/[grabbed](scc:mcdm.heroes.v1/condition/grabbed)) this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike's distance.
+> **Effect:** If the target makes a strike against a creature while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike's distance.
 
 <!-- @type: ability | @cost: 5 Wrath | @id: behold-the-face-of-justice -->
 > ###### Behold the Face of Justice! (5 Wrath)
@@ -5010,11 +5019,11 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > 
 > **Power Roll + Might:**
 > 
-> - **≤11:** 3 + M holy damage; if the target has P < WEAK, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you (save ends)
-> - **12-16:** 5 + M holy damage; if the target has P < AVERAGE, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you (save ends)
-> - **17+:** 8 + M holy damage; if the target has P < STRONG, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you (save ends)
+> - **≤11:** 3 + M holy damage; if the target has P < WEAK, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
+> - **12-16:** 5 + M holy damage; if the target has P < AVERAGE, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
+> - **17+:** 8 + M holy damage; if the target has P < STRONG, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
 > 
-> **Effect:** Each enemy [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) this way is pushed up to 2 squares away from the target and takes psychic damage equal to your Presence score.
+> **Effect:** Each enemy [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is pushed up to 2 squares away from the target and takes psychic damage equal to your Presence score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Censored (5 Wrath)
@@ -5122,11 +5131,11 @@ Choose one of the following abilities.
 > 
 > **Power Roll + Might:**
 > 
-> - **≤11:** 8 + M holy damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) (save ends)
-> - **12-16:** 12 + M holy damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) (save ends)
-> - **17+:** 15 + M holy damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) (save ends)
+> - **≤11:** 8 + M holy damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 12 + M holy damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 15 + M holy damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > 
-> **Effect:** If the target is already [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your Presence score.
+> **Effect:** If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your Presence score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Revelator (5 Wrath)
@@ -5193,11 +5202,11 @@ Choose one of the following abilities.
 > 
 > **Power Roll + Presence:**
 > 
-> - **≤11:** 5 + P damage; P < WEAK, [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) (save ends)
-> - **12-16:** 9 + P damage; P < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) (save ends)
-> - **17+:** 12 + P damage; P < STRONG, [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) (save ends)
+> - **≤11:** 5 + P damage; P < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 9 + P damage; P < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 12 + P damage; P < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > 
-> **Effect:** While the target is [restrained](scc:mcdm.heroes.v1/condition/[restrained](scc:mcdm.heroes.v1/condition/restrained)) this way, your abilities that impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can still move them.
+> **Effect:** While the target is [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, your abilities that impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can still move them.
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -5207,7 +5216,7 @@ As a 3rd-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Look On My Work and Despair
 
-Your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) has grown in [divine power](scc:mcdm.heroes.v1/feature.trait.conduit.level-10/divine-power), instilling fear in those you condemn. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can spend 1 wrath, and if the target has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) as a free triggered action, if the new target has P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you (save ends). If the target is already [frightened](scc:mcdm.heroes.v1/condition/[frightened](scc:mcdm.heroes.v1/condition/frightened)) of you, they instead take holy damage equal to twice your Presence score.
+Your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) has grown in [divine power](scc:mcdm.heroes.v1/feature.trait.conduit.level-10/divine-power), instilling fear in those you condemn. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can spend 1 wrath, and if the target has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 Stamina and you use [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) as a free triggered action, if the new target has P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you, they instead take holy damage equal to twice your Presence score.
 
 #### 7-Wrath Ability
 
