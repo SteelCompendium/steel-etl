@@ -284,21 +284,48 @@ func injectH1(data []byte) []byte {
 		return data
 	}
 
-	// Check if body already starts with an h1
+	// If body already starts with an h1, inject hr after it if missing
 	trimmed := strings.TrimLeft(body, "\n")
 	if strings.HasPrefix(trimmed, "# ") {
-		return data
+		return injectHRAfterH1(data)
 	}
 
-	// Rebuild: frontmatter + h1 + body
+	// Rebuild: frontmatter + h1 + hr + body
 	var sb strings.Builder
 	sb.WriteString("---\n")
 	sb.WriteString(fm)
 	sb.WriteString("\n---\n\n# ")
 	sb.WriteString(name)
-	sb.WriteString("\n\n")
+	sb.WriteString("\n\n---\n\n")
 	sb.WriteString(strings.TrimLeft(body, "\n"))
 	return []byte(sb.String())
+}
+
+// injectHRAfterH1 finds the first "# ..." line in the content and inserts
+// a markdown hr (---) on the line after it, unless one is already there.
+func injectHRAfterH1(data []byte) []byte {
+	lines := strings.Split(string(data), "\n")
+	for i, line := range lines {
+		if !strings.HasPrefix(line, "# ") {
+			continue
+		}
+		// Check if an hr already follows (skip blank lines)
+		for j := i + 1; j < len(lines); j++ {
+			if strings.TrimSpace(lines[j]) == "" {
+				continue
+			}
+			if strings.TrimSpace(lines[j]) == "---" {
+				return data
+			}
+			break
+		}
+		result := make([]string, 0, len(lines)+2)
+		result = append(result, lines[:i+1]...)
+		result = append(result, "", "---")
+		result = append(result, lines[i+1:]...)
+		return []byte(strings.Join(result, "\n"))
+	}
+	return data
 }
 
 // matchesSection checks if a file's relative path matches the section's include/exclude rules.
@@ -987,7 +1014,7 @@ func buildIndexContent(dir, dirName string, files, subdirs []string) string {
 	var sb strings.Builder
 	sb.WriteString("# ")
 	sb.WriteString(title)
-	sb.WriteString("\n\n")
+	sb.WriteString("\n\n---\n\n")
 
 	var plainSubdirs []string
 	for _, d := range subdirs {
