@@ -118,6 +118,21 @@ The parser extracts most structured data from the **body text** of each section 
 | `title` | Title entries | Echelon, benefits |
 | `treasure` | Treasure entries | Treasure type, properties |
 
+### Rules & World
+
+| @type | Use for | Parser extracts |
+|-------|---------|-----------------|
+| `condition` | Condition entries (Dazed, Frightened...) | Description |
+| `movement` | Movement types (Shift, Teleport...) | Description |
+| `negotiation` | Negotiation motivations/pitfalls | Description |
+| `project` | Downtime projects (Build Airship, Craft Treasure...) | Name, description |
+| `god` | Deities (Val, Cavall, Adûn...) | Name, description |
+
+> `project` and `god` were added 2026-05-29 (`internal/content/project.go`, `god.go`)
+> to classify downtime projects and deities that previously had no matching type.
+> Both produce flat `mcdm.heroes.v1/<type>/<id>` codes. Use `@id` for clean slugs
+> when the heading would slugify poorly (e.g. `@id: adun` for "Adûn").
+
 ### Monsters (future)
 
 | @type | Use for |

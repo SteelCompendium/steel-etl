@@ -81,6 +81,13 @@ Culture terms (nomadic, rural, urban, bureaucratic, etc.) refer to the culture b
 - **Link:** "a nomadic culture", "the bureaucratic organization", "the martial upbringing"
 - **Don't link:** "the nomadic tribes" (flavor text), "urban sprawl" (mundane adjective)
 
+#### Projects and gods
+
+Downtime projects (`project/*`) and deities (`god/*`) became linkable 2026-05-29. Link when a project or god is named in prose outside its own section:
+
+- **Link:** "complete the Build Airship project", "a temple to Cavall", "blessed by Val"
+- **Don't link:** the project's/god's own section heading; short god names (Val, Ord, Kul) used as ordinary words
+
 ### Case and variants
 
 - Match case-insensitively: "fury", "Fury", and "FURY" all match
@@ -91,7 +98,8 @@ Culture terms (nomadic, rural, urban, bureaucratic, etc.) refer to the culture b
 ### Pre-existing links
 
 - **First pass (complete):** All chapters have been stripped of stale links and re-linked for classes, ancestries, and chapters.
-- **Second pass (complete, 2026-05-28):** Added new type links (conditions, skills, negotiations, movements, cultures) to all 18 chapters. 1,229 new links added; 2,818 total SCC references in document. Each instance was AI-evaluated for mundane vs. game-mechanic disambiguation.
+- **Second pass (complete, 2026-05-28):** Added new type links (conditions, skills, negotiations, movements, cultures) to all 18 chapters. 1,229 new links added; 2,818 total SCC references at that point. Each instance was AI-evaluated for mundane vs. game-mechanic disambiguation.
+- **Truncated-link fix (complete, 2026-05-29):** Re-pointed ~150 truncated references to the correct (often different-type) code, annotated missing feature headers (+147 trait codes), and added `project`/`god` types. Current total: ~4,055 SCC references. See the note at the top of this file.
 
 ### Uncertainty marker
 

@@ -1,8 +1,8 @@
 # Linking Reference Table
 
-Generated from `classification.json`. See `linking-guide.md` for rules.
+Originally generated from `classification.json`; now **manually curated** (skill subgroups, disambiguation notes, and the project/god sections are not produced by `scripts/gen_linking_reference.py`, which is stale — do not regenerate over this file). See `linking-guide.md` for rules.
 
-**Total linkable terms:** 416
+**Total linkable terms:** 441
 
 ## Classes (9 terms)
 
@@ -523,3 +523,44 @@ Generated from `classification.json`. See `linking-guide.md` for rules.
 | Lawless | lawless | `mcdm.heroes.v1/culture/lawless` |
 | Martial | martial | `mcdm.heroes.v1/culture/martial` |
 | Noble | noble | `mcdm.heroes.v1/culture/noble` |
+
+## Projects (16 terms)
+
+Downtime projects (added 2026-05-29). Link when referencing a project by name in prose.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Build Airship | build airship | `mcdm.heroes.v1/project/build-airship` |
+| Build or Repair Road | build or repair road | `mcdm.heroes.v1/project/build-or-repair-road` |
+| Community Service | community service | `mcdm.heroes.v1/project/community-service` |
+| Craft Teleportation Platform | craft teleportation platform | `mcdm.heroes.v1/project/craft-teleportation-platform` |
+| Craft Treasure | craft treasure | `mcdm.heroes.v1/project/craft-treasure` |
+| Discover Lore | discover lore | `mcdm.heroes.v1/project/discover-lore` |
+| Find a Cure | find a cure | `mcdm.heroes.v1/project/find-a-cure` |
+| Fishing | fishing | `mcdm.heroes.v1/project/fishing` |
+| Go Undercover | go undercover | `mcdm.heroes.v1/project/go-undercover` |
+| Hone Career Skills | hone career skills | `mcdm.heroes.v1/project/hone-career-skills` |
+| Imbue Treasure | imbue treasure | `mcdm.heroes.v1/project/imbue-treasure` |
+| Learn From a Master | learn from a master | `mcdm.heroes.v1/project/learn-from-a-master` |
+| Learn New Language | learn new language | `mcdm.heroes.v1/project/learn-new-language` |
+| Learn New Skill | learn new skill | `mcdm.heroes.v1/project/learn-new-skill` |
+| Perfect New Recipe | perfect new recipe | `mcdm.heroes.v1/project/perfect-new-recipe` |
+| Spend Time With Loved Ones | spend time with loved ones | `mcdm.heroes.v1/project/spend-time-with-loved-ones` |
+
+## Gods (9 terms)
+
+Deities from the Gods and Religion chapter (added 2026-05-29).
+
+**Disambiguation required:** Some names are short or common (Val, Ord, Kul). Link only when referring to the deity.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Adûn | adûn | `mcdm.heroes.v1/god/adun` |
+| Cavall | cavall | `mcdm.heroes.v1/god/cavall` |
+| Kul | kul | `mcdm.heroes.v1/god/kul` |
+| Nebular the Star Mother | nebular | `mcdm.heroes.v1/god/nebular` |
+| Ord | ord | `mcdm.heroes.v1/god/ord` |
+| OV the Wave Pilot | ov | `mcdm.heroes.v1/god/ov` |
+| Salorna | salorna | `mcdm.heroes.v1/god/salorna` |
+| Thellasko the Great Designer | thellasko | `mcdm.heroes.v1/god/thellasko` |
+| Val | val | `mcdm.heroes.v1/god/val` |
