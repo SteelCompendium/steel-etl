@@ -811,14 +811,19 @@ func TestInjectH1(t *testing.T) {
 		want  string
 	}{
 		{
-			name:  "adds h1 from frontmatter",
+			name:  "adds h1 and hr from frontmatter",
 			input: "---\nname: Devil\ntype: ancestry\n---\n\nFlavor text.",
-			want:  "---\nname: Devil\ntype: ancestry\n---\n\n# Devil\n\nFlavor text.",
+			want:  "---\nname: Devil\ntype: ancestry\n---\n\n# Devil\n\n---\n\nFlavor text.",
 		},
 		{
-			name:  "skips if h1 already exists",
+			name:  "adds hr after existing h1 without duplicating h1",
 			input: "---\nname: Devil\n---\n\n# Devil\n\nFlavor text.",
-			want:  "---\nname: Devil\n---\n\n# Devil\n\nFlavor text.",
+			want:  "---\nname: Devil\n---\n\n# Devil\n\n---\n\nFlavor text.",
+		},
+		{
+			name:  "does not duplicate hr when one already follows h1",
+			input: "---\nname: Devil\n---\n\n# Devil\n\n---\n\nFlavor text.",
+			want:  "---\nname: Devil\n---\n\n# Devil\n\n---\n\nFlavor text.",
 		},
 		{
 			name:  "skips if no frontmatter",
