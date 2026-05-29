@@ -29,6 +29,9 @@ func NewRegistry() *Registry {
 	r.Register(&TreasureParser{})
 	r.Register(&KitParser{})
 	r.Register(&AncestryParser{})
+	// Phase 3 parsers
+	r.Register(&ProjectParser{})
+	r.Register(&GodParser{})
 	return r
 }
 

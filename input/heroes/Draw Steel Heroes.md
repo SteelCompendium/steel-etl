@@ -22792,6 +22792,7 @@ Crafting projects enable heroes to create vehicles, supernatural treasures, and 
 
 Unless a project has an event table of its own, the Director uses the Crafting and Research Events table for crafting project events.
 
+<!-- @type: project -->
 #### Build Airship
 
 **Item Prerequisite:** Wind Crystal of Quintessence
@@ -22816,6 +22817,7 @@ An airship is an object (giving it damage immunity all to poison and psychic dam
 | 51-100 miles        | 2             |
 | More than 100 miles | 3             |
 
+<!-- @type: project -->
 #### Build or Repair Road
 
 **Item Prerequisite:** Three writs of approval, from an engineers' guild, a masons' guild, and a guards' guild
@@ -22849,6 +22851,7 @@ Time spent traveling between locations on the road is cut in half. Access to res
 | 9   | Before the roll, the proposed road touches on a supernatural intersection—a crossing place between multiple worlds that draws interest from a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil). The completion of the project becomes the personal interest of this being, who offers to increase progress—but demands a future favor from the hero. If the deal is accepted, each project roll for the project is doubled until its completion.                                            |
 | 10  | After the roll, a guildmaster has it out for the hero. Whether from a past conflict or something about the way this project has unfolded, the guildmaster has made it their mission to hinder the project by dragging the hero's name through the mud. The hero's renown is treated as 1 less than usual while these rumors persist.                                                                                                                      |
 
+<!-- @type: project -->
 #### Craft Teleportation Platform
 
 **Item Prerequisite:** One spatial navigator
@@ -22863,10 +22866,12 @@ When you complete this project, you end up with a 3-square-by-3 square [teleport
 
 Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is used, the chance of it malfunctioning and [teleporting](scc:mcdm.heroes.v1/movement/teleport) creatures or objects on it to a random platform increases by 1 percent (to a maximum of 50 percent). You can restore the platform back to its original condition and reset this chance of malfunction as a respite activity.
 
+<!-- @type: project -->
 #### Craft Treasure
 
 You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
 
+<!-- @type: project -->
 #### Find a Cure
 
 **Item Prerequisite:** Varies (see description)
@@ -22883,6 +22888,7 @@ The number of project points it takes to complete this project is equal to 50 ti
 
 When you complete this project, you craft one dose of an alchemical cure for the affliction. Once the project is completed, you can craft subsequent doses for the same affliction for half the number of project points required for the initial project.
 
+<!-- @type: project -->
 #### Imbue Treasure
 
 You can create leveled treasures by imbuing items with magic or psionic power. You must have a mundane version of the item you plan to imbue, such as a sword or shield, when you start this project.
@@ -23368,6 +23374,7 @@ Heroes can undertake many different types of research downtime projects, which c
 
 Unless a project has an event table of its own or a special event entry, the Director uses the Crafting and Research Events table for research project events.
 
+<!-- @type: project -->
 #### Discover Lore
 
 **Item Prerequisite:** None
@@ -23462,6 +23469,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 97-98  | Before the roll, part of the hero's project source or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
 | 99-100 | Before the roll, an elemental springs forth from the project source and pulls the hero into a duel. If the hero can survive 3 rounds of combat with the elemental on their own, the elemental vanishes and leaves behind a completed project. If the hero flees, falls unconscious, or gets help from an ally, the elemental destroys the project source as they disappear.                                                                                                                                     |
 
+<!-- @type: project -->
 #### Go Undercover
 
 **Item Prerequisite:** Special
@@ -23497,6 +23505,7 @@ Additionally, while you work to complete this project, you might be called upon 
 | 9   | Before the roll, the hero stumbles upon an old memento from when they worked their former career. They can choose between gaining an automatic breakthrough on the project roll or gaining a hero token.                                                                                                                                                                                                              |
 | 10  | After the roll, the hero gets back into the rhythm of their former career. They can make two additional project rolls.                                                                                                                                                                                                                                                                                                |
 
+<!-- @type: project -->
 #### Hone Career Skills
 
 **Item Prerequisite:** None
@@ -23509,6 +23518,7 @@ Additionally, while you work to complete this project, you might be called upon 
 
 You revisit your previous life to freshen up on the experience it provided you. When this project is complete, you gain an edge on tests made using the skills provided by your career.
 
+<!-- @type: project -->
 #### Learn From a Master
 
 **Item Prerequisite:** None
@@ -23556,6 +23566,7 @@ You sharpen the effectiveness of one of your abilities of your choice. Choose be
 
 You learn to use one of your heroic abilities more efficiently, reducing its baseline Heroic Resource cost by 1 (to a minimum of 1). An ability can only be improved this way once.
 
+<!-- @type: project -->
 #### Learn New Language
 
 **Item Prerequisite:** None
@@ -23568,6 +23579,7 @@ You learn to use one of your heroic abilities more efficiently, reducing its bas
 
 When you start this project, choose a language taught by the project source. When the project is complete, you understand the language.
 
+<!-- @type: project -->
 #### Learn New Skill
 
 **Item Prerequisite:** None
@@ -23580,6 +23592,7 @@ When you start this project, choose a language taught by the project source. Whe
 
 When you start this project, choose a skill taught by the project source. When the project is complete, you have that skill.
 
+<!-- @type: project -->
 #### Perfect New Recipe
 
 **Item Prerequisite:** Varies
@@ -23614,6 +23627,7 @@ A creature can benefit from the food of only one recipe at a time, and can't ben
 
 Not all heroes want to craft or research during their time between adventures. Some might wish to build organizations, reconnect with family or friends, or just go fishing.
 
+<!-- @type: project -->
 #### Community Service
 
 **Item Prerequisite:** None
@@ -23643,6 +23657,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the respite) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
 | 10  | Before the roll, a thief, assassin, or other criminal offers to assist the hero. They can offer 50 points toward the completion of the project, as long as the hero looks the other way if they ever cross paths again.                                                                                                                                                                                                          |
 
+<!-- @type: project -->
 #### Fishing
 
 **Item Prerequisite:** None
@@ -23685,6 +23700,7 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 | 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard Might test. On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer Recoveries than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 10  | While fishing, the hero notes what appears to be an underwater cavern. If the cavern is explored, it reveals a treasure of the Director's choice guarded by a [revenant](scc:mcdm.heroes.v1/ancestry/revenant) knight fulfilling their duty until their captain returns.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
+<!-- @type: project -->
 #### Spend Time With Loved Ones
 
 **Item Prerequisite:** None
@@ -26987,6 +27003,7 @@ The Deities and Domains table and the Saints and Domains table summarize each of
 | Yllin Dyrvis                        | Knowledge, Nature             |
 | Zarok the Law-Giver                 | Protection, War               |
 
+<!-- @type: god | @id: val -->
 ### Val
 
 **Domains:** Creation, Knowledge, Life, Nature, Protection
@@ -27055,6 +27072,7 @@ Illwyv li Orchiax, the Moonknight, Marshall of the Gloaming, Manslayer. When [hu
 
 Illwyv it was who first realized the folly of treating with these creatures. A great hunter of the Quercus Court, she gathered her band of elite Helriath Harriers and made war on the [humans](scc:mcdm.heroes.v1/ancestry/human) who would kill the wode.
 
+<!-- @type: god | @id: ord -->
 ### Ord
 
 **Domains:** Creation, Knowledge, Protection, Sun, War
@@ -27105,6 +27123,7 @@ After the war, Stakros turned his [talents](scc:mcdm.heroes.v1/class/talent) to 
 
 Stakros teaches the value of knowledge for knowledge's sake, and the power of the mind to overcome any obstacle. He also teaches that knowledge is power, and in unready hands can only be dangerous.
 
+<!-- @type: god | @id: kul -->
 ### Kul
 
 **Domains:** Knowledge, Life, Sun, Trickery, War
@@ -27283,6 +27302,7 @@ Like the other gods of the timescape, the Lords of Hell are too busy to attend t
 
 Like Orden, there are dozens of saints in Hell, some obscure. These three are some of the most popular and the most likely saints for a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to follow.
 
+<!-- @type: god | @id: thellasko -->
 #### Thellasko the Great Designer
 
 **Domains:** Knowledge, War
@@ -27357,6 +27377,7 @@ Some of them take it more seriously than others though. People in the most dista
 
 Like all peoples of Orden, the people of Vasloria are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of Cavall who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of Vasloria aren't that big a deal here, but these gods certainly are!" The peoples of each region of Orden prefer their own gods because they understand them best, not because they think they are "more powerful."
 
+<!-- @type: god | @id: adun -->
 #### Adûn
 
 **Domains:** Creation, Life, Love, Protection
@@ -27413,6 +27434,7 @@ Fleeing across the bridge, the refugees found the body of Gryffyn, author of thi
 
 Saint Gryffyn the Stout teaches that despair is the enemy of action. That unyielding endurance is the cure for impossible odds. That more than sword and spell, hard work is the savior of the people.
 
+<!-- @type: god | @id: cavall -->
 #### Cavall
 
 **Domains:** Life, Love, Protection, War
@@ -27509,6 +27531,7 @@ Twelve days after they rode out, Zür returned with Lady Gwenllian's body on her
 
 Gwenllian is the saint of those who stand watch, of all those who must carry a burden ceaselessly. Gwenllian teaches that vigilance is its own reward.
 
+<!-- @type: god | @id: salorna -->
 #### Salorna
 
 **Domains:** Life, Nature, Storm, Sun
@@ -27685,6 +27708,7 @@ But most citizens of the timescape do not carry the gods with them in their dail
 
 The closest analog to worship in Orden to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and saint and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from Orden arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
 
+<!-- @type: god | @id: nebular -->
 #### Nebular the Star Mother
 
 **Domains:** Creation, Life, Love, Sun
@@ -27733,6 +27757,7 @@ The [memonek](scc:mcdm.heroes.v1/ancestry/memonek) officers and soldiers of UNIS
 
 Lady Magnetar is the Herald of Nebulon the Star Mother aiding those who fight in the cause of light and life and order. She is invoked whenever a great sacrifice must be made. "Lady Magnetar, let my sacrifice not be in vain."
 
+<!-- @type: god | @id: ov -->
 #### OV the Wave Pilot
 
 **Domains:** Fate, Knowledge, Storm, Sun
