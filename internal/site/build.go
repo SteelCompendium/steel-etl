@@ -989,58 +989,58 @@ func buildIndexContent(dir, dirName string, files, subdirs []string) string {
 	sb.WriteString(title)
 	sb.WriteString("\n\n")
 
-	if len(subdirs) > 0 {
-		for _, d := range subdirs {
-			name := dirToTitle(d)
-			childFiles, childSubdirs := listDirChildren(filepath.Join(dir, d))
-			if len(childFiles) == 0 && len(childSubdirs) == 0 {
-				sb.WriteString("- [")
-				sb.WriteString(name)
-				sb.WriteString("](")
-				sb.WriteString(d)
-				sb.WriteString("/index.md)\n")
-				continue
-			}
-			sb.WriteString("<details class=\"browse-expand\" markdown>\n")
-			sb.WriteString("<summary><a href=\"")
+	var plainSubdirs []string
+	for _, d := range subdirs {
+		name := dirToTitle(d)
+		childFiles, childSubdirs := listDirChildren(filepath.Join(dir, d))
+		if len(childFiles) == 0 && len(childSubdirs) == 0 {
+			plainSubdirs = append(plainSubdirs, d)
+			continue
+		}
+		sb.WriteString("<details class=\"browse-expand\" markdown>\n")
+		sb.WriteString("<summary><a href=\"")
+		sb.WriteString(d)
+		sb.WriteString("/\">")
+		sb.WriteString(name)
+		sb.WriteString("</a></summary>\n\n")
+		sb.WriteString("<div class=\"browse-index\" markdown>\n\n")
+		for _, sd := range childSubdirs {
+			sdName := dirToTitle(sd)
+			sb.WriteString("- [")
+			sb.WriteString(sdName)
+			sb.WriteString("](")
 			sb.WriteString(d)
-			sb.WriteString("/index.md\">")
-			sb.WriteString(name)
-			sb.WriteString("</a></summary>\n\n")
-			sb.WriteString("<div class=\"browse-index\" markdown>\n\n")
-			for _, sd := range childSubdirs {
-				sdName := dirToTitle(sd)
-				sb.WriteString("- [")
-				sb.WriteString(sdName)
-				sb.WriteString("](")
-				sb.WriteString(d)
-				sb.WriteString("/")
-				sb.WriteString(sd)
-				sb.WriteString("/index.md)\n")
-			}
-			for _, cf := range childFiles {
-				cfName := readFrontmatterName(filepath.Join(dir, d, cf))
-				if cfName == "" {
-					cfName = fileToTitle(cf)
-				}
-				sb.WriteString("- [")
-				sb.WriteString(cfName)
-				sb.WriteString("](")
-				sb.WriteString(d)
-				sb.WriteString("/")
-				sb.WriteString(cf)
-				sb.WriteString(")\n")
-			}
-			sb.WriteString("\n</div>\n\n")
-			sb.WriteString("</details>\n\n")
+			sb.WriteString("/")
+			sb.WriteString(sd)
+			sb.WriteString("/)\n")
 		}
-		if len(files) > 0 {
-			sb.WriteString("\n")
+		for _, cf := range childFiles {
+			cfName := readFrontmatterName(filepath.Join(dir, d, cf))
+			if cfName == "" {
+				cfName = fileToTitle(cf)
+			}
+			sb.WriteString("- [")
+			sb.WriteString(cfName)
+			sb.WriteString("](")
+			sb.WriteString(d)
+			sb.WriteString("/")
+			sb.WriteString(cf)
+			sb.WriteString(")\n")
 		}
+		sb.WriteString("\n</div>\n\n")
+		sb.WriteString("</details>\n\n")
 	}
 
-	if len(files) > 0 {
+	if len(plainSubdirs) > 0 || len(files) > 0 {
 		sb.WriteString("<div class=\"browse-index\" markdown>\n\n")
+		for _, d := range plainSubdirs {
+			name := dirToTitle(d)
+			sb.WriteString("- [")
+			sb.WriteString(name)
+			sb.WriteString("](")
+			sb.WriteString(d)
+			sb.WriteString("/)\n")
+		}
 		for _, f := range files {
 			name := readFrontmatterName(filepath.Join(dir, f))
 			if name == "" {
