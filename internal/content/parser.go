@@ -22,6 +22,11 @@ type ParsedContent struct {
 	// The content body (markdown) with annotations stripped.
 	Body string
 
+	// PageBody is a full book-order render of this section's subtree (own body +
+	// all nested descendants inline), used by reading-format outputs (md-linked).
+	// Empty for sections where it is not populated; consumers fall back to Body.
+	PageBody string
+
 	// SCC classification components derived by the parser.
 	TypePath []string // e.g., ["abilities", "fury"]
 	ItemID   string   // e.g., "gouge"
