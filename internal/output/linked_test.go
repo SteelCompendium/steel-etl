@@ -125,3 +125,31 @@ func TestLinkedGenerator_UnresolvedLinks(t *testing.T) {
 		t.Error("expected display text to remain after stripping unresolved link")
 	}
 }
+
+func TestLinkedGenerator_UsesPageBodyWhenPresent(t *testing.T) {
+	dir := t.TempDir()
+	g := &LinkedGenerator{
+		BaseDir:  dir,
+		Resolver: scc.NewResolver(scc.NewRegistry(), ".md"),
+		LinkMode: scc.LinkAll,
+	}
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{"name": "Censor Abilities", "type": "trait"},
+		Body:        "structured body only",
+		PageBody:    "## Signature Ability\n\n##### Back Blasphemer!\n\nfull page render",
+	}
+	if err := g.WriteSection("mcdm.heroes.v1/feature.trait.censor.level-1/censor-abilities", parsed); err != nil {
+		t.Fatalf("write: %v", err)
+	}
+	out, err := os.ReadFile(filepath.Join(dir, "feature/trait/censor/level-1/censor-abilities.md"))
+	if err != nil {
+		t.Fatalf("read: %v", err)
+	}
+	s := string(out)
+	if !strings.Contains(s, "full page render") {
+		t.Error("md-linked should use PageBody when present")
+	}
+	if strings.Contains(s, "structured body only") {
+		t.Error("md-linked should NOT use structured Body when PageBody is present")
+	}
+}

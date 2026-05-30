@@ -100,25 +100,12 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		ItemID:      id,
 	}
 
-	// Embed child ability sections (annotated with @type: ability).
-	//
-	// Two shapes exist:
-	//   - Single-ability traits (e.g. "Faithful Friend"): exactly one ability
-	//     child. We embed it as a structured nested object (Children["ability"]),
-	//     mirroring the kit signature-ability pattern, for the SDK trait schema
-	//     which has a singular `ability` field.
-	//   - Multi-ability containers (e.g. "Censor Abilities", "Fury Abilities"):
-	//     many abilities organized under sub-headings. A singular embed makes no
-	//     sense here, so we skip the structured field and instead re-render the
-	//     body so every ability appears inline, in document order, under its
-	//     sub-heading.
-	//
-	// In both cases the body must include the ability content, since
-	// FullBodySource() omits annotated children.
+	// Embed a single child ability as a structured nested object for the SDK
+	// trait schema (which has a singular `ability` field). This only applies to
+	// single-ability traits (e.g. "Faithful Friend"). Multi-ability containers
+	// (e.g. "Censor Abilities") do NOT get a singular embed; their abilities are
+	// rendered on the page via PageBody/RenderSubtree, not the structured Body.
 	abilityChildren := collectAbilityChildren(section)
-	if len(abilityChildren) > 0 {
-		result.Body = section.FullBodySourceWithAbilities()
-	}
 	if len(abilityChildren) == 1 {
 		abilityParser := &AbilityParser{}
 		parsed, err := abilityParser.Parse(context.NewContextStack(nil), abilityChildren[0])

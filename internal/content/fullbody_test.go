@@ -63,12 +63,7 @@ func TestFeatureParser_IncludesUnannotatedSubheadingTable(t *testing.T) {
 	}
 }
 
-func TestFeatureParser_MultiAbilityContainerEmbedsAllInline(t *testing.T) {
-	// Simulates a "Class Abilities" container feature (e.g. "Censor Abilities",
-	// "Fury Abilities"): an intro, then unannotated sub-headings each holding
-	// multiple @type: ability children. All abilities must render inline, in
-	// document order, under their sub-headings -- not dropped, and not collapsed
-	// to just the first ability appended at the end.
+func TestFeatureParser_MultiAbilityContainerNoSingularEmbed(t *testing.T) {
 	section := &parser.Section{
 		Heading:      "Censor Abilities",
 		HeadingLevel: 4,
@@ -78,38 +73,14 @@ func TestFeatureParser_MultiAbilityContainerEmbedsAllInline(t *testing.T) {
 			{
 				Heading:      "Signature Ability",
 				HeadingLevel: 5,
-				BodySource:   "Choose one signature ability from the following options.",
+				BodySource:   "Choose one signature ability.",
 				Children: []*parser.Section{
-					{
-						Heading:      "Back Blasphemer!",
-						HeadingLevel: 6,
-						Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
-						BodySource:   "> *You channel power through your weapon.*",
-					},
-					{
-						Heading:      "Halt Miscreant!",
-						HeadingLevel: 6,
-						Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
-						BodySource:   "> *You infuse your weapon with holy magic.*",
-					},
-				},
-			},
-			{
-				Heading:      "Heroic Abilities",
-				HeadingLevel: 5,
-				BodySource:   "You call upon a number of heroic abilities.",
-				Children: []*parser.Section{
-					{
-						Heading:      "Repent!",
-						HeadingLevel: 6,
-						Annotation:   map[string]string{"type": "ability", "cost": "3 Wrath"},
-						BodySource:   "> *You demand penance.*",
-					},
+					{Heading: "Back Blasphemer!", HeadingLevel: 6, Annotation: map[string]string{"type": "ability"}, BodySource: "> *desc1*"},
+					{Heading: "Halt Miscreant!", HeadingLevel: 6, Annotation: map[string]string{"type": "ability"}, BodySource: "> *desc2*"},
 				},
 			},
 		},
 	}
-
 	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
 	ctx.Push(2, context.Metadata{"type": "class", "id": "censor"})
 	ctx.Push(3, context.Metadata{"type": "feature-group", "level": "1"})
@@ -118,43 +89,22 @@ func TestFeatureParser_MultiAbilityContainerEmbedsAllInline(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Parse failed: %v", err)
 	}
-
-	// All sub-headings present
-	for _, want := range []string{"Signature Ability", "Heroic Abilities"} {
-		if !strings.Contains(result.Body, want) {
-			t.Errorf("body should contain sub-heading %q", want)
-		}
-	}
-	// ALL abilities present (not just the first)
-	for _, want := range []string{"Back Blasphemer!", "Halt Miscreant!", "Repent!"} {
-		if !strings.Contains(result.Body, want) {
-			t.Errorf("body should contain ability %q", want)
-		}
-	}
-	// Ability bodies present
-	if !strings.Contains(result.Body, "You demand penance.") {
-		t.Error("body should contain the last ability's body content")
-	}
-	// Document order: Back Blasphemer before Halt Miscreant before Repent
-	iBack := strings.Index(result.Body, "Back Blasphemer!")
-	iHalt := strings.Index(result.Body, "Halt Miscreant!")
-	iRepent := strings.Index(result.Body, "Repent!")
-	if !(iBack < iHalt && iHalt < iRepent) {
-		t.Errorf("abilities out of document order: Back=%d Halt=%d Repent=%d", iBack, iHalt, iRepent)
-	}
-	// A multi-ability container must NOT embed a single arbitrary ability into
-	// the SDK trait schema's singular `ability` field.
+	// Multi-ability container: no singular structured embed.
 	if result.Children != nil {
 		if _, ok := result.Children["ability"]; ok {
-			t.Error("multi-ability container should not set Children[\"ability\"] (singular embed)")
+			t.Error("multi-ability container must not set Children[\"ability\"]")
 		}
+	}
+	// Structured Body is own content only.
+	if strings.Contains(result.Body, "desc1") || strings.Contains(result.Body, "desc2") {
+		t.Error("structured Body must not inline ability statblocks")
 	}
 }
 
 func TestFeatureParser_SingleAbilityTraitStillEmbeds(t *testing.T) {
 	// "Faithful Friend" pattern: a trait that grants exactly one ability. It must
-	// keep embedding that ability as a structured child (SDK trait schema) and
-	// render it inline in the body.
+	// embed the ability as a structured child (SDK trait schema); Body stays
+	// own-content-only (the ability is rendered via PageBody, not inlined here).
 	section := &parser.Section{
 		Heading:      "Faithful Friend",
 		HeadingLevel: 5,
@@ -185,11 +135,13 @@ func TestFeatureParser_SingleAbilityTraitStillEmbeds(t *testing.T) {
 	if _, ok := result.Children["ability"]; !ok {
 		t.Error("single-ability trait should set Children[\"ability\"]")
 	}
-	if !strings.Contains(result.Body, "An animal spirit is drawn to you.") {
-		t.Error("single-ability trait body should include the embedded ability inline")
-	}
 	if !strings.Contains(result.Body, "You have the following ability.") {
 		t.Error("single-ability trait body should keep its intro prose")
+	}
+	// Body is structured (own content only); the ability is rendered via PageBody,
+	// not appended to Body.
+	if strings.Contains(result.Body, "An animal spirit is drawn to you.") {
+		t.Error("structured Body should NOT inline the ability (PageBody handles rendering)")
 	}
 }
 

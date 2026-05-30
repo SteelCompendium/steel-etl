@@ -24,10 +24,17 @@ func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 		return nil
 	}
 
+	// Reading pages use the full book-order subtree render when available,
+	// falling back to the structured Body for sections without one.
+	bodySource := parsed.PageBody
+	if bodySource == "" {
+		bodySource = parsed.Body
+	}
+
 	// Create a copy with resolved links in the body
 	resolved := &content.ParsedContent{
 		Frontmatter: parsed.Frontmatter,
-		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, g.LinkMode),
+		Body:        g.Resolver.ResolveLinks(bodySource, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,
 	}

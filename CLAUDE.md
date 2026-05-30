@@ -42,7 +42,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
-| `internal/site/config.go` | Site builder config types (sections, composites, groups) |
+| `internal/site/config.go` | Site builder config types (sections, groups) |
 | `internal/site/permalinks.go` | SCC permalink stub generator + `scc-manifest.js` writer |
 
 ## CLI commands
@@ -63,7 +63,7 @@ steel-etl site --config v2/site.yaml
 
 Features:
 - **Section mapping**: copies ETL md-linked output into MkDocs tab directories (Browse, Read)
-- **Composite pages**: aggregates traits and abilities into class/ancestry pages
+- **Book-faithful pages**: each `md-linked` page is a full book-order render of its source subtree via `RenderSubtree` (`internal/content/render_subtree.go`) → `ParsedContent.PageBody`. The `md-linked` generator emits `PageBody`; the site builder maps pages directly (no composite reassembly). Ability statblocks are un-blockquoted, headings normalized, document order preserved.
 - **Group remapping**: nests kit abilities under a "Kits" subdirectory by cross-referencing the `kit/` source directory
 - **Natural sort**: numeric-aware ordering in generated index pages (Level 1, 2, ... 10)
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one

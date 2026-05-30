@@ -119,6 +119,9 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 			}
 			result.ParsedSections++
 
+			// Full book-order render of this section's subtree for reading pages.
+			parsed.PageBody = content.RenderSubtree(section)
+
 			if parsed.TypePath != nil && parsed.ItemID != "" {
 				sccCode := scc.Classify(bookSource, parsed.TypePath, parsed.ItemID)
 				parsed.Frontmatter["scc"] = sccCode
