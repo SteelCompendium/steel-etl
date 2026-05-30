@@ -69,30 +69,3 @@ func (s *Section) FullBodySource() string {
 	}
 	return strings.Join(parts, "\n\n")
 }
-
-// FullBodySourceWithAbilities behaves like FullBodySource but ALSO folds in any
-// @type: ability descendants, serialized inline in document order under their
-// sub-headings. Other annotated child types are still skipped (processed
-// separately). This is used by container features that hold a suite of abilities
-// (e.g. "Censor Abilities", "Fury Abilities") so every ability renders inline
-// rather than being dropped or appended out of order.
-func (s *Section) FullBodySourceWithAbilities() string {
-	var parts []string
-	if s.BodySource != "" {
-		parts = append(parts, s.BodySource)
-	}
-	for _, child := range s.Children {
-		if t := child.Type(); t != "" && t != "ability" {
-			// Annotated non-ability child — processed separately
-			continue
-		}
-		heading := strings.Repeat("#", child.HeadingLevel) + " " + child.Heading
-		childBody := child.FullBodySourceWithAbilities() // recurse, keeping abilities
-		if childBody != "" {
-			parts = append(parts, heading+"\n\n"+childBody)
-		} else {
-			parts = append(parts, heading)
-		}
-	}
-	return strings.Join(parts, "\n\n")
-}
