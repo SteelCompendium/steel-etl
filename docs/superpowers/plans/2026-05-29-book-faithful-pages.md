@@ -1,5 +1,7 @@
 # Book-Faithful Aggregate Pages Implementation Plan
 
+> **STATUS: ✅ COMPLETED 2026-05-29** via subagent-driven-development (all 7 tasks; per-task + final holistic review passed). Shipped on branch `book-faithful-pages` across three repos. PRs: steel-etl#1 (core), v2#3 (`site.yaml`+docs), workspace#2 (docs) — merge steel-etl#1 first. All checkboxes below are retained as an execution record. Known unrelated pre-existing failure left as-is: `TestBuild_GeneratesIndexPages`. Deferred items captured in workspace `FOLLOWUPS.md`.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Make every site page (`Browse/*`, `Read/chapter/*`) render its source section exactly as it appears in the book — the section's own content plus every nested child inline, in document order — instead of the current disassemble-then-regroup composite that drops or duplicates nested content.
@@ -66,7 +68,7 @@ Task 0 reconciles this interim state. The generic `PageBody` mechanism supersede
 - Modify: `steel-etl/internal/parser/section.go`
 - Modify: `steel-etl/internal/content/fullbody_test.go`
 
-- [ ] **Step 1: Restore `feature.go` `Body` to structured form, keep len==1 `Children` embed**
+- [x] **Step 1: Restore `feature.go` `Body` to structured form, keep len==1 `Children` embed**
 
 In `steel-etl/internal/content/feature.go`, the embed block should read (replacing the interim version that set `result.Body = section.FullBodySourceWithAbilities()`):
 
@@ -100,11 +102,11 @@ In `steel-etl/internal/content/feature.go`, the embed block should read (replaci
 
 Keep the `collectAbilityChildren` helper that already exists below `Parse`. Remove the now-unused `strings` import if present (it was removed in the interim change; confirm the import block has only `context` and `parser`).
 
-- [ ] **Step 2: Remove the interim `FullBodySourceWithAbilities` from `section.go`**
+- [x] **Step 2: Remove the interim `FullBodySourceWithAbilities` from `section.go`**
 
 In `steel-etl/internal/parser/section.go`, delete the `FullBodySourceWithAbilities` method entirely (the block beginning `// FullBodySourceWithAbilities behaves like FullBodySource...`). `FullBodySource` stays.
 
-- [ ] **Step 3: Update the interim tests in `fullbody_test.go`**
+- [x] **Step 3: Update the interim tests in `fullbody_test.go`**
 
 `TestFeatureParser_SingleAbilityTraitStillEmbeds` stays as-is (still valid: single-ability trait sets `Children["ability"]`), but its body assertions must not require the ability inline. Replace its two body assertions with structured-`Body` expectations:
 
@@ -167,12 +169,12 @@ func TestFeatureParser_MultiAbilityContainerNoSingularEmbed(t *testing.T) {
 }
 ```
 
-- [ ] **Step 4: Build and run content + parser tests**
+- [x] **Step 4: Build and run content + parser tests**
 
 Run: `devbox run -- go -C steel-etl test ./internal/content/ ./internal/parser/`
 Expected: PASS (build clean, no unused imports).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git -C steel-etl add internal/content/feature.go internal/parser/section.go internal/content/fullbody_test.go
@@ -187,7 +189,7 @@ git -C steel-etl commit -m "refactor: structured trait Body, keep single-ability
 - Create: `steel-etl/internal/content/render_subtree.go`
 - Test: `steel-etl/internal/content/render_subtree_test.go`
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 Create `steel-etl/internal/content/render_subtree_test.go`:
 
@@ -315,12 +317,12 @@ func TestRenderSubtree_ChapterPreservesSourceLevels(t *testing.T) {
 }
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `devbox run -- go -C steel-etl test ./internal/content/ -run TestRenderSubtree`
 Expected: FAIL with "undefined: RenderSubtree".
 
-- [ ] **Step 3: Implement `RenderSubtree`**
+- [x] **Step 3: Implement `RenderSubtree`**
 
 Create `steel-etl/internal/content/render_subtree.go`:
 
@@ -386,12 +388,12 @@ func nodeBody(section *parser.Section) string {
 }
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `devbox run -- go -C steel-etl test ./internal/content/ -run TestRenderSubtree -v`
 Expected: PASS for all three tests.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git -C steel-etl add internal/content/render_subtree.go internal/content/render_subtree_test.go
@@ -406,7 +408,7 @@ git -C steel-etl commit -m "feat: add RenderSubtree book-order serializer"
 - Modify: `steel-etl/internal/content/parser.go:18`
 - Modify: `steel-etl/internal/pipeline/pipeline.go:114`
 
-- [ ] **Step 1: Add the `PageBody` field**
+- [x] **Step 1: Add the `PageBody` field**
 
 In `steel-etl/internal/content/parser.go`, inside the `ParsedContent` struct, add after the `Body` field:
 
@@ -417,7 +419,7 @@ In `steel-etl/internal/content/parser.go`, inside the `ParsedContent` struct, ad
 	PageBody string
 ```
 
-- [ ] **Step 2: Populate `PageBody` in the pipeline walk**
+- [x] **Step 2: Populate `PageBody` in the pipeline walk**
 
 In `steel-etl/internal/pipeline/pipeline.go`, immediately after the successful `parsed, err := p.Parse(contextStack, section)` block (after `result.ParsedSections++` at `:120`), add:
 
@@ -428,12 +430,12 @@ In `steel-etl/internal/pipeline/pipeline.go`, immediately after the successful `
 
 Confirm `content` is already imported in this file (it is used elsewhere). If not, add `"github.com/SteelCompendium/steel-etl/internal/content"` to the imports.
 
-- [ ] **Step 3: Build**
+- [x] **Step 3: Build**
 
 Run: `devbox run -- go -C steel-etl build ./...`
 Expected: clean build.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git -C steel-etl add internal/content/parser.go internal/pipeline/pipeline.go
@@ -448,7 +450,7 @@ git -C steel-etl commit -m "feat: populate ParsedContent.PageBody in pipeline wa
 - Modify: `steel-etl/internal/output/linked.go:22-48`
 - Test: `steel-etl/internal/output/linked_test.go`
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Add to `steel-etl/internal/output/linked_test.go` (match the existing test package/helpers in that file; it already constructs a `LinkedGenerator` with a resolver):
 
@@ -484,12 +486,12 @@ func TestLinkedGenerator_UsesPageBodyWhenPresent(t *testing.T) {
 
 Ensure the test file imports `os`, `path/filepath`, `strings`, `scc`, and `content` (add any missing).
 
-- [ ] **Step 2: Run to verify it fails**
+- [x] **Step 2: Run to verify it fails**
 
 Run: `devbox run -- go -C steel-etl test ./internal/output/ -run TestLinkedGenerator_UsesPageBody`
 Expected: FAIL (currently writes `Body`).
 
-- [ ] **Step 3: Implement — prefer `PageBody`, fall back to `Body`**
+- [x] **Step 3: Implement — prefer `PageBody`, fall back to `Body`**
 
 In `steel-etl/internal/output/linked.go`, change the body selection in `WriteSection`:
 
@@ -530,12 +532,12 @@ func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 }
 ```
 
-- [ ] **Step 4: Run to verify it passes**
+- [x] **Step 4: Run to verify it passes**
 
 Run: `devbox run -- go -C steel-etl test ./internal/output/ -run TestLinkedGenerator -v`
 Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git -C steel-etl add internal/output/linked.go internal/output/linked_test.go
@@ -551,33 +553,33 @@ git -C steel-etl commit -m "feat: md-linked emits PageBody full-subtree render"
 - Modify: `steel-etl/internal/site/build.go`
 - Modify: `steel-etl/internal/site/build_test.go`
 
-- [ ] **Step 1: Remove `composites:` from `v2/site.yaml`**
+- [x] **Step 1: Remove `composites:` from `v2/site.yaml`**
 
 Delete the entire `composites:` block under the `Browse` section (the `base: class` and `base: ancestry` entries, `site.yaml:41-49`). Keep `include:`, `exclude:`, `sort:`, and the `groups:` (kit flatten) blocks. The `exclude: feature/trait/ancestry-traits` line stays (ancestry traits remain non-browsable standalone; they now appear inline on the ancestry page via `PageBody`).
 
-- [ ] **Step 2: Verify the config type still parses without composites**
+- [x] **Step 2: Verify the config type still parses without composites**
 
 Run: `devbox run -- go -C steel-etl run ./cmd/steel-etl site --config ../v2/site.yaml`
 Expected: runs without error (no composites processed). Note: if `CompositeConfig` is a required field this will surface here; it is optional (`len(section.Composites) == 0` is handled at `build.go:500`).
 
-- [ ] **Step 3: Remove dead composite code**
+- [x] **Step 3: Remove dead composite code**
 
 In `steel-etl/internal/site/build.go`, remove the now-unused composite machinery: `assembleComposites`, `assembleComposite`, `collectCompositeChildren`, `compositeEntry`, `compositeEmbed`, `levelGroupHeading`, and the call site in `Build` (around `build.go:67-69`). Remove the `Composites` field usage. Keep `rebaseLinks` only if still referenced elsewhere; if it becomes unused, remove it too.
 
 Run: `devbox run -- go -C steel-etl build ./...` after deletion and fix any "declared and not used" / undefined references by removing the corresponding dead code. Do NOT remove section-mapping, `injectH1`, group flattening, search-exclusion, or permalink code.
 
-- [ ] **Step 4: Update `build_test.go`**
+- [x] **Step 4: Update `build_test.go`**
 
 Remove or rewrite composite-specific tests (any test invoking `assembleComposite*` or asserting "N-Level Features"/"N-Level Abilities" grouping). Keep tests for section mapping, index generation, nav, search exclusion, and permalinks. For each removed test, confirm no remaining test references deleted symbols.
 
 Note: `TestBuild_GeneratesIndexPages` was already failing on `main` before this work (pre-existing, unrelated: "feature index missing ability subdir link"). If it still fails identically after this task, leave it — it is out of scope. If composite removal changes its behavior, adjust only the assertions that referenced composites.
 
-- [ ] **Step 5: Run site tests**
+- [x] **Step 5: Run site tests**
 
 Run: `devbox run -- go -C steel-etl test ./internal/site/`
 Expected: PASS except the documented pre-existing `TestBuild_GeneratesIndexPages` failure if it persists unchanged.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git -C steel-etl add internal/site/build.go internal/site/build_test.go
@@ -593,17 +595,17 @@ git commit -m "refactor: drop composite reassembly; pages come from PageBody sec
 
 **Files:** none (verification only)
 
-- [ ] **Step 1: Run the full pipeline**
+- [x] **Step 1: Run the full pipeline**
 
 Run: `devbox run -- go -C steel-etl run ./cmd/steel-etl gen --config pipeline.yaml`
 Expected: completes; reports written files. No new errors vs baseline.
 
-- [ ] **Step 2: Build the site**
+- [x] **Step 2: Build the site**
 
 Run: `devbox run -- go -C steel-etl run ./cmd/steel-etl site --config ../v2/site.yaml`
 Expected: completes; reports files copied / index pages.
 
-- [ ] **Step 3: Verify the class page has NO duplication and full content**
+- [x] **Step 3: Verify the class page has NO duplication and full content**
 
 Run:
 ```bash
@@ -614,47 +616,47 @@ grep -n "^#" v2/docs/Browse/class/censor.md | head -40
 ```
 Expected: each ability appears once, nested under its feature in source order; no "N-Level Abilities" regrouping headings. Verify "Judgment" appears once (was duplicated before).
 
-- [ ] **Step 4: Verify the standalone trait page is complete**
+- [x] **Step 4: Verify the standalone trait page is complete**
 
 Run: `grep -n "^#\|Power Roll" v2/docs/Browse/feature/trait/censor/level-1/censor-abilities.md`
 Expected: all signature + heroic abilities present, un-blockquoted, under normalized subheadings.
 
-- [ ] **Step 5: Verify a leaf ability page is unchanged**
+- [x] **Step 5: Verify a leaf ability page is unchanged**
 
 Run: `cat v2/docs/Browse/feature/ability/censor/level-1/back-blasphemer.md`
 Expected: same clean statblock as before this work (frontmatter + un-blockquoted body). Confirms `PageBody == Body` for leaves.
 
-- [ ] **Step 6: Verify the chapter page reads like the book**
+- [x] **Step 6: Verify the chapter page reads like the book**
 
 Run: `grep -n "^#" v2/docs/Read/chapter/classes.md | head -40; wc -l v2/docs/Read/chapter/classes.md`
 Expected: the chapter now contains the individual classes (Censor, Fury, …) inline at H2, each with full nested content — substantially larger than the previous 444-line stub.
 
-- [ ] **Step 7: Verify ancestry page**
+- [x] **Step 7: Verify ancestry page**
 
 Run: `ls v2/docs/Browse/ancestry/; grep -n "^#" v2/docs/Browse/ancestry/*.md | head`
 Expected: ancestry pages include their traits inline; no separate grouped/duplicated trait section; `feature/trait/ancestry-traits` not present as standalone Browse pages.
 
-- [ ] **Step 8: Verify flavor blockquotes survive**
+- [x] **Step 8: Verify flavor blockquotes survive**
 
 Run: `grep -n "We FIGHT" v2/docs/Browse/class/censor.md`
 Expected: the "We FIGHT!" quote is still a blockquote (`>` preserved) — confirms only ability sections were un-blockquoted.
 
-- [ ] **Step 9: Verify SCC links on the class page resolve**
+- [x] **Step 9: Verify SCC links on the class page resolve**
 
 Run: `grep -n "](\.\./" v2/docs/Browse/class/censor.md | head`
 Expected: relative links (e.g. to conditions/skills) resolve relative to the class page location, not broken `scc:` literals.
 
-- [ ] **Step 10: Run the full test suite**
+- [x] **Step 10: Run the full test suite**
 
 Run: `devbox run -- go -C steel-etl test ./...`
 Expected: PASS except the documented pre-existing `TestBuild_GeneratesIndexPages` failure if it persists unchanged from `main`.
 
-- [ ] **Step 11: Spot-check page count / size sanity**
+- [x] **Step 11: Spot-check page count / size sanity**
 
 Run: `find v2/docs/Browse -name '*.md' | wc -l; du -sh v2/docs`
 Expected: file count comparable to before; total size larger (pages now contain nested content). No explosion suggesting infinite recursion.
 
-- [ ] **Step 12: Commit any regenerated committed artifacts**
+- [x] **Step 12: Commit any regenerated committed artifacts**
 
 If `data/` or `v2/docs/` regenerated files are tracked and intended to be committed, commit them in their respective repos with a message referencing this change. (Generated dirs may be gitignored — check `git status` per repo first; do not force-add ignored output.)
 
@@ -668,23 +670,23 @@ If `data/` or `v2/docs/` regenerated files are tracked and intended to be commit
 - Modify: `v2/CLAUDE.md`
 - Modify: `FOLLOWUPS.md` (if follow-ups remain)
 
-- [ ] **Step 1: Update `ARCHITECTURE.md`**
+- [x] **Step 1: Update `ARCHITECTURE.md`**
 
 In the `steel-etl site` section, replace the "Composite pages" bullet with a description of the new model: each `md-linked` page is a full book-order render of its source subtree (`PageBody`/`RenderSubtree`); the site builder maps these directly (no composite reassembly). Note that `md`/`json`/`yaml`/`dse` remain per-section structured outputs.
 
-- [ ] **Step 2: Update `steel-etl/CLAUDE.md`**
+- [x] **Step 2: Update `steel-etl/CLAUDE.md`**
 
 Under "Site builder", remove the "Composite pages" bullet and add a "Book-faithful pages" note: `RenderSubtree` (in `internal/content/render_subtree.go`) produces `ParsedContent.PageBody`, consumed by the `md-linked` generator; ability statblocks are un-blockquoted, headings normalized, document order preserved.
 
-- [ ] **Step 3: Update `v2/CLAUDE.md`**
+- [x] **Step 3: Update `v2/CLAUDE.md`**
 
 Note that `docs/Browse/*` and `docs/Read/chapter/*` are full-subtree renders generated by `steel-etl`; static overrides still apply last.
 
-- [ ] **Step 4: Update `FOLLOWUPS.md`**
+- [x] **Step 4: Update `FOLLOWUPS.md`**
 
 Add any deferred refinements surfaced during implementation, e.g.: "Cross-reference links on aggregate pages currently point to standalone pages rather than in-page anchors — consider anchor links as a future enhancement." Remove if not applicable.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add ARCHITECTURE.md FOLLOWUPS.md
