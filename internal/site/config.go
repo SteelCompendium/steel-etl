@@ -64,27 +64,6 @@ type SectionConfig struct {
 	// another source type directory. For example, kit abilities in feature/ability/ can
 	// be moved under feature/ability/Kits/ by matching against the kit/ source directory.
 	Groups []GroupConfig `yaml:"groups,omitempty"`
-
-	// Composites define composite pages that aggregate content from multiple sources.
-	// Each composite takes a base type (e.g., "class") and appends content from
-	// include patterns (e.g., "feature/trait/{name}"), producing a single page.
-	Composites []CompositeConfig `yaml:"composites,omitempty"`
-}
-
-// CompositeConfig defines how to assemble composite pages from multiple sources.
-type CompositeConfig struct {
-	// Base is the type directory containing the base pages (e.g., "class")
-	Base string `yaml:"base"`
-
-	// Include lists source directory patterns to append. {name} is replaced
-	// with the base file's stem (e.g., "fury" from "fury.md").
-	// Patterns can resolve to directories (walked for children) or single files
-	// (resolved + ".md" is tried when the directory doesn't exist).
-	Include []string `yaml:"include"`
-
-	// RemoveSources removes composited source files from the docs output,
-	// preventing them from appearing as standalone pages.
-	RemoveSources bool `yaml:"remove_sources,omitempty"`
 }
 
 // GroupConfig moves subdirectories into a named group folder based on

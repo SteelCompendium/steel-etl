@@ -64,13 +64,6 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 	}
 
-	// Assemble composite pages (e.g., class pages with all features/abilities)
-	for _, section := range cfg.Sections {
-		compCount, compErrs := assembleComposites(cfg, section)
-		result.CopiedFiles += compCount
-		result.Errors = append(result.Errors, compErrs...)
-	}
-
 	// Generate index pages for type directories
 	indexCount, indexErrs := generateIndexPages(cfg.DocsDir, cfg.Sections)
 	result.IndexPages = indexCount
@@ -428,12 +421,12 @@ func applySearchExclusion(docsDir, sectionName string) (int, []string) {
 // preserving protected paths (stylesheets, javascripts, Media, index.md, etc.)
 func cleanDocsDir(docsDir string) error {
 	protected := map[string]bool{
-		"javascripts":  true,
-		"stylesheets":  true,
-		"Media":        true,
-		"index.md":     true,
+		"javascripts":    true,
+		"stylesheets":    true,
+		"Media":          true,
+		"index.md":       true,
 		"preferences.md": true,
-		".nav.yml":     true,
+		".nav.yml":       true,
 	}
 
 	entries, err := os.ReadDir(docsDir)
@@ -486,246 +479,6 @@ func copyStaticContent(srcDir, docsDir string) (int, error) {
 	return count, err
 }
 
-// compositeEntry holds parsed data for a feature/ability to be appended to a composite page.
-type compositeEntry struct {
-	name        string
-	level       int
-	featureType string // "trait" or "ability"
-	body        string // markdown body (frontmatter stripped)
-	srcRelPath  string // source-relative path (e.g., "feature/trait/fury/level-1/ferocity.md")
-}
-
-// assembleComposites processes composite page definitions for a section.
-func assembleComposites(cfg *Config, section SectionConfig) (int, []string) {
-	if len(section.Composites) == 0 {
-		return 0, nil
-	}
-
-	count := 0
-	var errs []string
-
-	for _, comp := range section.Composites {
-		n, e := assembleComposite(cfg, section, comp)
-		count += n
-		errs = append(errs, e...)
-	}
-
-	return count, errs
-}
-
-// compositeEmbed holds content from a single-file composite include,
-// embedded directly rather than iterated as individual entries.
-type compositeEmbed struct {
-	name       string // from frontmatter "name" field
-	body       string // markdown body (frontmatter stripped)
-	srcRelPath string // source-relative path for link rebasing
-}
-
-// assembleComposite builds composite pages for one composite definition.
-func assembleComposite(cfg *Config, section SectionConfig, comp CompositeConfig) (int, []string) {
-	baseDir := filepath.Join(cfg.DocsDir, section.Name, comp.Base)
-	entries, err := os.ReadDir(baseDir)
-	if err != nil {
-		if os.IsNotExist(err) {
-			return 0, nil
-		}
-		return 0, []string{fmt.Sprintf("read base dir %s: %v", baseDir, err)}
-	}
-
-	count := 0
-	var errs []string
-
-	for _, entry := range entries {
-		if entry.IsDir() || !strings.HasSuffix(entry.Name(), ".md") || entry.Name() == "index.md" {
-			continue
-		}
-
-		name := strings.TrimSuffix(entry.Name(), ".md")
-		basePath := filepath.Join(baseDir, entry.Name())
-
-		// Read the base file
-		baseContent, err := os.ReadFile(basePath)
-		if err != nil {
-			errs = append(errs, fmt.Sprintf("read base %s: %v", basePath, err))
-			continue
-		}
-
-		// Collect child entries from all include patterns.
-		// Patterns can resolve to directories (walked) or single files (embedded directly).
-		var children []compositeEntry
-		var embeds []compositeEmbed
-		var compositedPaths []string // track resolved paths for RemoveSources
-
-		for _, pattern := range comp.Include {
-			resolved := strings.ReplaceAll(pattern, "{name}", name)
-			srcDir := filepath.Join(cfg.SourceDir, resolved)
-
-			if info, statErr := os.Stat(srcDir); statErr == nil && info.IsDir() {
-				// Directory: walk for individual children
-				found, e := collectCompositeChildren(srcDir, cfg.SourceDir)
-				children = append(children, found...)
-				errs = append(errs, e...)
-				if comp.RemoveSources {
-					compositedPaths = append(compositedPaths, filepath.Join(cfg.DocsDir, section.Name, resolved))
-				}
-			} else {
-				// Try as single file (append .md)
-				srcFile := srcDir + ".md"
-				if _, statErr := os.Stat(srcFile); statErr == nil {
-					data, readErr := os.ReadFile(srcFile)
-					if readErr != nil {
-						errs = append(errs, fmt.Sprintf("read %s: %v", srcFile, readErr))
-					} else {
-						srcRel, _ := filepath.Rel(cfg.SourceDir, srcFile)
-						fm, body := splitFrontmatter(string(data))
-						embedName := parseFrontmatterField(fm, "name")
-						if embedName == "" {
-							embedName = fileToTitle(filepath.Base(srcFile))
-						}
-						embeds = append(embeds, compositeEmbed{
-							name:       embedName,
-							body:       strings.TrimSpace(body),
-							srcRelPath: filepath.ToSlash(srcRel),
-						})
-						if comp.RemoveSources {
-							compositedPaths = append(compositedPaths, filepath.Join(cfg.DocsDir, section.Name, resolved+".md"))
-						}
-					}
-				}
-			}
-		}
-
-		if len(children) == 0 && len(embeds) == 0 {
-			continue
-		}
-
-		// Sort directory children: by level, then traits before abilities, then by name
-		sort.Slice(children, func(i, j int) bool {
-			if children[i].level != children[j].level {
-				return children[i].level < children[j].level
-			}
-			if children[i].featureType != children[j].featureType {
-				return children[i].featureType == "trait"
-			}
-			return children[i].name < children[j].name
-		})
-
-		// The composite page's path within the source structure
-		destRelPath := comp.Base + "/" + name + ".md"
-
-		// Assemble the composite content
-		var sb strings.Builder
-		sb.Write(baseContent)
-		sb.WriteString("\n\n---\n\n")
-
-		// Embedded files first (single-file composites): embed body with a section heading
-		for _, embed := range embeds {
-			embedBody := embed.body
-			if embed.srcRelPath != "" {
-				embedBody = rebaseLinks(embedBody, embed.srcRelPath, destRelPath)
-			}
-			sb.WriteString("### ")
-			sb.WriteString(embed.name)
-			sb.WriteString("\n\n")
-			sb.WriteString(embedBody)
-			sb.WriteString("\n\n")
-		}
-
-		// Directory children: grouped by level/type with headings
-		lastLevel := -1
-		lastType := ""
-		for _, child := range children {
-			// Add level/type group heading when it changes
-			groupKey := fmt.Sprintf("%d-%s", child.level, child.featureType)
-			if groupKey != lastType || child.level != lastLevel {
-				heading := levelGroupHeading(child.level, child.featureType)
-				sb.WriteString("## ")
-				sb.WriteString(heading)
-				sb.WriteString("\n\n")
-				lastLevel = child.level
-				lastType = groupKey
-			}
-
-			childBody := strings.TrimSpace(child.body)
-			if child.srcRelPath != "" {
-				childBody = rebaseLinks(childBody, child.srcRelPath, destRelPath)
-			}
-
-			sb.WriteString("### ")
-			sb.WriteString(child.name)
-			sb.WriteString("\n\n")
-			sb.WriteString(childBody)
-			sb.WriteString("\n\n")
-		}
-
-		if err := os.WriteFile(basePath, []byte(sb.String()), 0644); err != nil {
-			errs = append(errs, fmt.Sprintf("write composite %s: %v", basePath, err))
-			continue
-		}
-		count++
-
-		// Remove composited source files from docs to avoid standalone duplicates
-		if comp.RemoveSources {
-			for _, p := range compositedPaths {
-				os.Remove(p)       // single file
-				os.RemoveAll(p)    // directory
-			}
-		}
-	}
-
-	return count, errs
-}
-
-// collectCompositeChildren recursively collects feature/ability files from a directory.
-// sourceRoot is the top-level source directory, used to compute source-relative paths
-// for link adjustment during compositing.
-func collectCompositeChildren(dir string, sourceRoot string) ([]compositeEntry, []string) {
-	if _, err := os.Stat(dir); os.IsNotExist(err) {
-		return nil, nil
-	}
-
-	var entries []compositeEntry
-	var errs []string
-
-	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-		if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
-			return nil
-		}
-
-		data, err := os.ReadFile(path)
-		if err != nil {
-			errs = append(errs, fmt.Sprintf("read %s: %v", path, err))
-			return nil
-		}
-
-		srcRel, _ := filepath.Rel(sourceRoot, path)
-
-		fm, body := splitFrontmatter(string(data))
-		entry := compositeEntry{
-			name:        parseFrontmatterField(fm, "name"),
-			featureType: parseFrontmatterField(fm, "type"),
-			body:        body,
-			srcRelPath:  filepath.ToSlash(srcRel),
-		}
-
-		// Parse level: try frontmatter first, then path
-		if lvl := parseFrontmatterField(fm, "level"); lvl != "" {
-			entry.level = parseLevel(lvl)
-		} else {
-			entry.level = levelFromPath(path, dir)
-		}
-
-		if entry.name == "" {
-			entry.name = fileToTitle(filepath.Base(path))
-		}
-
-		entries = append(entries, entry)
-		return nil
-	})
-
-	return entries, errs
-}
-
 // mdRelLinkRe matches markdown links with relative paths (not http(s), not anchors, not absolute).
 var mdRelLinkRe = regexp.MustCompile(`(\[[^\]]*\])\(([^):#][^):]*\.md)\)`)
 
@@ -769,34 +522,6 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, a
 	})
 }
 
-// rebaseLinks adjusts relative markdown links in body so they resolve correctly
-// when the content is moved from srcRelPath to destRelPath.
-// Both paths are slash-separated and relative to the same root (the source dir / section dir).
-func rebaseLinks(body, srcRelPath, destRelPath string) string {
-	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
-	destDir := filepath.ToSlash(filepath.Dir(destRelPath))
-
-	return mdRelLinkRe.ReplaceAllStringFunc(body, func(match string) string {
-		sub := mdRelLinkRe.FindStringSubmatch(match)
-		if len(sub) < 3 {
-			return match
-		}
-		linkText := sub[1]
-		linkPath := sub[2]
-
-		// Resolve the link against the source file's directory to get a root-relative path
-		resolved := filepath.ToSlash(filepath.Clean(filepath.Join(srcDir, linkPath)))
-
-		// Compute new relative path from the destination file's directory
-		newRel, err := filepath.Rel(destDir, resolved)
-		if err != nil {
-			return match
-		}
-
-		return linkText + "(" + filepath.ToSlash(newRel) + ")"
-	})
-}
-
 // splitFrontmatter separates YAML frontmatter from body content.
 func splitFrontmatter(content string) (frontmatter, body string) {
 	if !strings.HasPrefix(content, "---\n") {
@@ -821,55 +546,6 @@ func parseFrontmatterField(fm, key string) string {
 		}
 	}
 	return ""
-}
-
-// parseLevel converts a level string like "1" or "5" to int.
-func parseLevel(s string) int {
-	n := 0
-	for _, c := range s {
-		if c >= '0' && c <= '9' {
-			n = n*10 + int(c-'0')
-		}
-	}
-	return n
-}
-
-// levelFromPath extracts a level number from a path like ".../level-3/file.md".
-func levelFromPath(path, baseDir string) int {
-	rel, _ := filepath.Rel(baseDir, path)
-	parts := strings.Split(filepath.ToSlash(rel), "/")
-	for _, p := range parts {
-		if strings.HasPrefix(p, "level-") {
-			return parseLevel(p[6:])
-		}
-	}
-	return 0
-}
-
-// levelGroupHeading returns a section heading for a level/type group.
-func levelGroupHeading(level int, featureType string) string {
-	typeLabel := "Features"
-	if featureType == "ability" {
-		typeLabel = "Abilities"
-	}
-
-	if level == 0 {
-		return typeLabel
-	}
-
-	ordinal := fmt.Sprintf("%d", level)
-	switch level {
-	case 1:
-		ordinal = "1st"
-	case 2:
-		ordinal = "2nd"
-	case 3:
-		ordinal = "3rd"
-	default:
-		ordinal = fmt.Sprintf("%dth", level)
-	}
-
-	return fmt.Sprintf("%s-Level %s", ordinal, typeLabel)
 }
 
 // naturalLess compares two strings with numeric-aware ordering,
@@ -916,21 +592,21 @@ func naturalLess(a, b string) bool {
 
 // typeTitles maps lowercase type directory names to display titles.
 var typeTitles = map[string]string{
-	"ancestry":    "Ancestries",
-	"career":      "Careers",
-	"chapter":     "Chapters",
-	"class":       "Classes",
+	"ancestry":     "Ancestries",
+	"career":       "Careers",
+	"chapter":      "Chapters",
+	"class":        "Classes",
 	"complication": "Complications",
-	"condition":   "Conditions",
-	"culture":     "Cultures",
-	"feature":     "Features",
-	"kit":         "Kits",
-	"perk":        "Perks",
-	"skill":       "Skills",
-	"title":       "Titles",
-	"treasure":    "Treasures",
-	"ability":     "Abilities",
-	"trait":       "Traits",
+	"condition":    "Conditions",
+	"culture":      "Cultures",
+	"feature":      "Features",
+	"kit":          "Kits",
+	"perk":         "Perks",
+	"skill":        "Skills",
+	"title":        "Titles",
+	"treasure":     "Treasures",
+	"ability":      "Abilities",
+	"trait":        "Traits",
 }
 
 // generateIndexPages creates index.md files for type directories within sections.
