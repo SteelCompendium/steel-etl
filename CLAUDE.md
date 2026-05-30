@@ -42,7 +42,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
-| `internal/site/config.go` | Site builder config types (sections, composites, groups) |
+| `internal/site/config.go` | Site builder config types (sections, groups) |
 | `internal/site/permalinks.go` | SCC permalink stub generator + `scc-manifest.js` writer |
 
 ## CLI commands

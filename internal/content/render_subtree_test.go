@@ -95,6 +95,45 @@ func TestRenderSubtree_LeafEqualsOwnBody(t *testing.T) {
 	}
 }
 
+func TestRenderSubtree_ClampsShallowChildToH1(t *testing.T) {
+	// A child whose HeadingLevel is shallower than its parent's would yield a
+	// negative computed level; it must clamp to H1 rather than panic on a
+	// negative strings.Repeat count.
+	root := &parser.Section{
+		Heading:      "Deep Section",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "feature"},
+		BodySource:   "intro",
+		Children: []*parser.Section{
+			{Heading: "Shallow Child", HeadingLevel: 2, BodySource: "child body"},
+		},
+	}
+	got := RenderSubtree(root) // must not panic
+	if !strings.Contains(got, "# Shallow Child") {
+		t.Error("shallow child should clamp to a valid heading (H1)")
+	}
+	if strings.Contains(got, "## Shallow Child") || strings.Contains(got, "### Shallow Child") {
+		t.Error("shallow child should not produce a deeper heading than H1")
+	}
+}
+
+func TestRenderSubtree_CapsDeepNestingAtH6(t *testing.T) {
+	// Descendants deeper than 6 levels below the root must cap at H6.
+	root := &parser.Section{
+		Heading:      "Root",
+		HeadingLevel: 1,
+		Annotation:   map[string]string{"type": "chapter"},
+		BodySource:   "root body",
+		Children: []*parser.Section{
+			{Heading: "L8", HeadingLevel: 9, BodySource: "deep body"},
+		},
+	}
+	got := RenderSubtree(root)
+	if !strings.Contains(got, "###### L8") {
+		t.Error("deeply nested child should cap at H6")
+	}
+}
+
 func TestRenderSubtree_ChapterPreservesSourceLevels(t *testing.T) {
 	chapter := &parser.Section{
 		Heading:      "Classes",
