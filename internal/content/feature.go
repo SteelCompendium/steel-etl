@@ -1,8 +1,6 @@
 package content
 
 import (
-	"strings"
-
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
@@ -102,22 +100,31 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		ItemID:      id,
 	}
 
-	// Find child ability sections (annotated with @type: ability) and embed them.
-	// This mirrors the kit pattern where signature abilities are embedded in Children.
-	if abilityChild := findAbilityChild(section); abilityChild != nil {
+	// Embed child ability sections (annotated with @type: ability).
+	//
+	// Two shapes exist:
+	//   - Single-ability traits (e.g. "Faithful Friend"): exactly one ability
+	//     child. We embed it as a structured nested object (Children["ability"]),
+	//     mirroring the kit signature-ability pattern, for the SDK trait schema
+	//     which has a singular `ability` field.
+	//   - Multi-ability containers (e.g. "Censor Abilities", "Fury Abilities"):
+	//     many abilities organized under sub-headings. A singular embed makes no
+	//     sense here, so we skip the structured field and instead re-render the
+	//     body so every ability appears inline, in document order, under its
+	//     sub-heading.
+	//
+	// In both cases the body must include the ability content, since
+	// FullBodySource() omits annotated children.
+	abilityChildren := collectAbilityChildren(section)
+	if len(abilityChildren) > 0 {
+		result.Body = section.FullBodySourceWithAbilities()
+	}
+	if len(abilityChildren) == 1 {
 		abilityParser := &AbilityParser{}
-		parsed, err := abilityParser.Parse(context.NewContextStack(nil), abilityChild)
+		parsed, err := abilityParser.Parse(context.NewContextStack(nil), abilityChildren[0])
 		if err == nil {
 			result.Children = map[string]*ParsedContent{
 				"ability": parsed,
-			}
-			// Append the ability heading and body so markdown output includes it.
-			// FullBodySource() skips annotated children, so without this the
-			// markdown ends at "You have the following ability."
-			sigHeading := strings.Repeat("#", abilityChild.HeadingLevel) + " " + abilityChild.Heading
-			sigBody := abilityChild.FullBodySource()
-			if sigBody != "" {
-				result.Body = result.Body + "\n\n" + sigHeading + "\n\n" + sigBody
 			}
 		}
 	}
@@ -125,19 +132,18 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	return result, nil
 }
 
-// findAbilityChild searches a section's children (recursively through unannotated
-// intermediaries) for a child with @type: ability.
-func findAbilityChild(section *parser.Section) *parser.Section {
+// collectAbilityChildren returns all @type: ability descendants of a section, in
+// document order, recursing through unannotated intermediaries (sub-headings like
+// "Signature Ability") but not descending into other annotated children.
+func collectAbilityChildren(section *parser.Section) []*parser.Section {
+	var out []*parser.Section
 	for _, child := range section.Children {
-		if child.Type() == "ability" {
-			return child
-		}
-		// Recurse through unannotated children
-		if child.Type() == "" {
-			if found := findAbilityChild(child); found != nil {
-				return found
-			}
+		switch child.Type() {
+		case "ability":
+			out = append(out, child)
+		case "":
+			out = append(out, collectAbilityChildren(child)...)
 		}
 	}
-	return nil
+	return out
 }
