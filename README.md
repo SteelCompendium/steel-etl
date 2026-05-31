@@ -33,10 +33,9 @@ steel-etl/
 │   ├── pipeline/                  # Orchestrates parse → classify → generate
 │   └── site/                      # MkDocs site builder from steel-etl output
 ├── testdata/fixtures/             # Test fixtures (simple_class.md)
-├── annotate_heroes.py             # Annotation script (Phase 0 tooling)
 ├── pipeline.yaml                  # Pipeline configuration
 ├── Makefile                       # Build, test, lint targets
-└── input/heroes/                  # Annotated source (generated)
+└── input/heroes/                  # Annotated source (hand-maintained, canonical)
 ```
 
 ## Annotation scheme
@@ -81,7 +80,7 @@ SCCs become permanent URLs (`steelcompendium.io/mcdm.heroes.v1/feature.ability.f
 
 ## Annotation coverage
 
-The `annotate_heroes.py` script produces **1,523 annotations** across the full Draw Steel Heroes book:
+The annotated source carries **1,523 annotations** across the full Draw Steel Heroes book:
 
 | Type | Count |
 |------|-------|
@@ -101,13 +100,9 @@ The `annotate_heroes.py` script produces **1,523 annotations** across the full D
 
 Auto-detected metadata per ability: signature/triggered subtype, heroic resource cost, ID overrides for special characters.
 
-## Generating the annotated input
+## The annotated input
 
-```bash
-# Requires the source file at ../data-gen/input/heroes/Draw Steel Heroes.md
-python3 annotate_heroes.py            # generates input/heroes/Draw Steel Heroes.md
-python3 annotate_heroes.py --dry-run  # preview without writing
-```
+`input/heroes/Draw Steel Heroes.md` is **hand-maintained and canonical**. It holds ~4,055 SCC cross-reference links and all annotations directly. (It was originally bootstrapped by an `annotate_heroes.py` script plus one-off link-adder scripts; those have been retired now that the `.md` is edited in place — re-running them would clobber the hand-added links.) See `docs/linking-guide.md` for the rules on adding cross-reference links.
 
 ## Pipeline configuration
 

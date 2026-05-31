@@ -1,6 +1,6 @@
 # Linking Reference Table
 
-Originally generated from `classification.json`; now **manually curated** (skill subgroups, disambiguation notes, and the project/god sections are not produced by `scripts/gen_linking_reference.py`, which is stale — do not regenerate over this file). See `linking-guide.md` for rules.
+Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
 **Total linkable terms:** 441
 
