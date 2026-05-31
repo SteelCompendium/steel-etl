@@ -211,11 +211,13 @@ func TestBuild_GeneratesIndexPages(t *testing.T) {
 	if !strings.Contains(content, "# Features") {
 		t.Error("feature index missing title")
 	}
-	if !strings.Contains(content, "[Abilities](ability/index.md)") {
-		t.Error("feature index missing ability subdir link")
+	// Subdirectories that themselves contain content are rendered as collapsible
+	// <details> sections with a linked <summary>, not plain markdown links.
+	if !strings.Contains(content, `<summary><a href="ability/">Abilities</a></summary>`) {
+		t.Error("feature index missing ability subdir summary link")
 	}
-	if !strings.Contains(content, "[Traits](trait/index.md)") {
-		t.Error("feature index missing trait subdir link")
+	if !strings.Contains(content, `<summary><a href="trait/">Traits</a></summary>`) {
+		t.Error("feature index missing trait subdir summary link")
 	}
 }
 
