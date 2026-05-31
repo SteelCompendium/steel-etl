@@ -1,7 +1,6 @@
 package site
 
 import (
-	"encoding/json"
 	"os"
 	"path/filepath"
 	"strings"
@@ -118,9 +117,9 @@ func TestGenerateSCCStubs_BasicPage(t *testing.T) {
 
 func TestGenerateSCCStubs_SkipsPagesWithoutSCC(t *testing.T) {
 	docsDir := t.TempDir()
-	mustWritePage(t, docsDir, "Browse/index.md", "# Browse\n")                       // no frontmatter
-	mustWritePage(t, docsDir, "Browse/foo.md", "---\nname: Foo\n---\n\nbody")        // frontmatter, no scc
-	mustWritePage(t, docsDir, "Browse/bar.md", "---\nname: Bar\nscc: x/y\n---\nbb")  // valid
+	mustWritePage(t, docsDir, "Browse/index.md", "# Browse\n")                      // no frontmatter
+	mustWritePage(t, docsDir, "Browse/foo.md", "---\nname: Foo\n---\n\nbody")       // frontmatter, no scc
+	mustWritePage(t, docsDir, "Browse/bar.md", "---\nname: Bar\nscc: x/y\n---\nbb") // valid
 
 	count, errs := generateSCCStubs(docsDir)
 	if len(errs) > 0 {
@@ -206,105 +205,23 @@ func TestGenerateSCCStubs_PreservesNestedSCCStructure(t *testing.T) {
 	}
 }
 
-func TestGenerateSCCStubs_WritesManifest(t *testing.T) {
+func TestGenerateSCCStubs_DoesNotWriteManifest(t *testing.T) {
+	// The friendly→SCC manifest (scc-manifest.js) was retired along with the
+	// client-side address-bar rewrite. The generator must no longer emit it.
 	docsDir := t.TempDir()
 	mustWritePage(t, docsDir, "Browse/condition/dazed.md",
 		"---\nname: Dazed\nscc: mcdm.heroes.v1/condition/dazed\n---\nbody")
-	mustWritePage(t, docsDir, "Browse/feature/ability/fury/index.md",
-		"---\nname: Fury\nscc: mcdm.heroes.v1/feature.ability/fury\n---\nbody")
-	mustWritePage(t, docsDir, "Browse/noscc.md",
-		"---\nname: NoSCC\n---\nbody")
 
-	_, errs := generateSCCStubs(docsDir)
+	count, errs := generateSCCStubs(docsDir)
 	if len(errs) > 0 {
 		t.Fatalf("unexpected errors: %v", errs)
 	}
-
-	manifestPath := filepath.Join(docsDir, "javascripts", "scc-manifest.js")
-	data, err := os.ReadFile(manifestPath)
-	if err != nil {
-		t.Fatalf("manifest not written: %v", err)
-	}
-	body := string(data)
-
-	if !strings.Contains(body, "window.__SCC_PERMALINK_MAP__") {
-		t.Errorf("manifest missing global assignment. body:\n%s", body)
+	if count != 1 {
+		t.Fatalf("expected 1 stub, got %d", count)
 	}
 
-	mustContain := []string{
-		`"Browse/condition/dazed/": "scc/mcdm.heroes.v1/condition/dazed/"`,
-		`"Browse/feature/ability/fury/": "scc/mcdm.heroes.v1/feature.ability/fury/"`,
-	}
-	for _, s := range mustContain {
-		if !strings.Contains(body, s) {
-			t.Errorf("manifest missing entry %q. body:\n%s", s, body)
-		}
-	}
-
-	if strings.Contains(body, "Browse/noscc/") {
-		t.Errorf("manifest should not contain pages without scc. body:\n%s", body)
-	}
-}
-
-func TestGenerateSCCStubs_ManifestIsDeterministic(t *testing.T) {
-	// Two runs against equivalent inputs should produce byte-identical output —
-	// matters for git diffs and CDN cache keys.
-	build := func() []byte {
-		docsDir := t.TempDir()
-		mustWritePage(t, docsDir, "Browse/z.md", "---\nname: Z\nscc: z/last\n---\nx")
-		mustWritePage(t, docsDir, "Browse/a.md", "---\nname: A\nscc: a/first\n---\nx")
-		mustWritePage(t, docsDir, "Browse/m.md", "---\nname: M\nscc: m/middle\n---\nx")
-		if _, errs := generateSCCStubs(docsDir); len(errs) > 0 {
-			t.Fatalf("errors: %v", errs)
-		}
-		data, err := os.ReadFile(filepath.Join(docsDir, "javascripts", "scc-manifest.js"))
-		if err != nil {
-			t.Fatalf("read manifest: %v", err)
-		}
-		return data
-	}
-	first := build()
-	second := build()
-	if string(first) != string(second) {
-		t.Errorf("manifest is non-deterministic:\nfirst:\n%s\nsecond:\n%s", first, second)
-	}
-}
-
-func TestGenerateSCCStubs_ManifestValuesEscapedAsJSON(t *testing.T) {
-	// Keys/values flow through json.Marshal, so quotes/backslashes must be safe.
-	// Path components in practice are ASCII URL slugs, but defensively check.
-	docsDir := t.TempDir()
-	mustWritePage(t, docsDir, "Browse/normal.md", "---\nname: N\nscc: m.h/normal\n---\nx")
-
-	_, errs := generateSCCStubs(docsDir)
-	if len(errs) > 0 {
-		t.Fatalf("errors: %v", errs)
-	}
-
-	data, err := os.ReadFile(filepath.Join(docsDir, "javascripts", "scc-manifest.js"))
-	if err != nil {
-		t.Fatalf("read manifest: %v", err)
-	}
-	body := string(data)
-
-	// Smoke check: the JS body should parse as a single assignment with a
-	// valid JSON object literal on the RHS — we'll verify by extracting and
-	// re-parsing the object payload.
-	open := strings.Index(body, "{")
-	close := strings.LastIndex(body, "}")
-	if open < 0 || close < 0 || close < open {
-		t.Fatalf("manifest body has no JSON object: %s", body)
-	}
-	// Strip a trailing comma before the closing brace (JS-legal, JSON-illegal).
-	obj := body[open : close+1]
-	obj = strings.ReplaceAll(obj, ",\n}", "\n}")
-
-	var parsed map[string]string
-	if jsonErr := json.Unmarshal([]byte(obj), &parsed); jsonErr != nil {
-		t.Fatalf("manifest object is not valid JSON after trailing-comma strip: %v\n%s", jsonErr, obj)
-	}
-	if parsed["Browse/normal/"] != "scc/m.h/normal/" {
-		t.Errorf("unexpected mapping: %v", parsed)
+	if _, err := os.Stat(filepath.Join(docsDir, "javascripts", "scc-manifest.js")); !os.IsNotExist(err) {
+		t.Errorf("scc-manifest.js should not be written; stat err = %v", err)
 	}
 }
 

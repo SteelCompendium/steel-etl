@@ -43,7 +43,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
 | `internal/site/config.go` | Site builder config types (sections, groups) |
-| `internal/site/permalinks.go` | SCC permalink stub generator + `scc-manifest.js` writer |
+| `internal/site/permalinks.go` | SCC permalink redirect-stub generator |
 
 ## CLI commands
 
@@ -67,7 +67,7 @@ Features:
 - **Group remapping**: nests kit abilities under a "Kits" subdirectory by cross-referencing the `kit/` source directory
 - **Natural sort**: numeric-aware ordering in generated index pages (Level 1, 2, ... 10)
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one
-- **SCC permalink stubs**: generates `scc/{code}/index.html` redirect stubs for every page with an `scc` frontmatter field, plus `javascripts/scc-manifest.js` — a friendly→SCC path map the v2 site uses for instant-nav URL rewriting
+- **SCC permalink stubs**: generates `scc/{code}/index.html` redirect stubs for every page with an `scc` frontmatter field. The SCC URL is a stable, shareable redirect entry point; the friendly Browse page is the canonical, indexable location. (The client-side address-bar rewrite and its `scc-manifest.js` map were retired 2026-05-31 — see `v2/.repo-docs/decisions/2026-05-23-scc-permalink-system.md`.)
 - **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages
 - **Static content overrides**: copies hand-authored pages last, overriding generated content
 
