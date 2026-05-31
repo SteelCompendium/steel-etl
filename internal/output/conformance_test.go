@@ -3,8 +3,6 @@ package output
 import (
 	"encoding/json"
 	"os"
-	"path/filepath"
-	"regexp"
 	"strings"
 	"testing"
 
@@ -13,103 +11,40 @@ import (
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
 
-// Conformance tests verify that TransformToSDKFormat produces output structurally
-// compatible with the legacy data-rules-json format (data-sdk-npm feature schema).
+// Conformance tests verify that TransformToSDKFormat produces output that is
+// structurally compatible with the data-sdk-npm feature schema.
 //
 // These tests parse the real Heroes input document, run sections through the
-// content parsers + SDK transform, and compare key fields against the legacy
-// JSON files in data/data-rules-json/.
+// content parsers + SDK transform, and validate the shape/structure of the result.
+//
+// Note: byte-level comparison against the legacy data-gen baselines
+// (data/data-rules-json/) was retired 2026-05-31. That reference predates the SCC
+// link audit and is in the legacy colon-delimited format that the current pipeline
+// no longer emits, so a faithful regeneration is impossible, and comparing against
+// a steel-etl-generated baseline would be circular. The structural/schema tests
+// below are the source of truth.
 
-const (
-	heroesInputPath = "../../input/heroes/Draw Steel Heroes.md"
-	legacyBasePath  = "../../../data/data-rules-json"
-)
+const heroesInputPath = "../../input/heroes/Draw Steel Heroes.md"
 
-// --- Ability conformance tests ---
+// --- Trait body rendering ---
 
-func TestConformance_BrutalSlam(t *testing.T) {
-	legacy := loadLegacyJSON(t, "Abilities/Fury/1st-Level Features/Brutal Slam.json")
-	etl := transformAbilityFromDoc(t, "Fury", "1st-Level Features", "Brutal Slam")
-
-	assertRequiredSchemaFields(t, etl)
-	assertTopLevelMatch(t, etl, legacy, "name")
-	assertTopLevelMatch(t, etl, legacy, "type")
-	assertTopLevelMatch(t, etl, legacy, "feature_type")
-	assertTopLevelMatch(t, etl, legacy, "usage")
-	assertTopLevelMatch(t, etl, legacy, "distance")
-	assertTopLevelMatch(t, etl, legacy, "target")
-
-	// Keywords
-	assertKeywordsMatch(t, etl, legacy)
-
-	// Flavor text
-	assertTopLevelMatch(t, etl, legacy, "flavor")
-
-	// Effects: should have power roll with tiers
-	etlEffects := getEffects(t, etl)
-	legacyEffects := getEffects(t, legacy)
-	if len(etlEffects) < 1 || len(legacyEffects) < 1 {
-		t.Fatal("both should have at least 1 effect")
-	}
-
-	// Power roll effect
-	assertEffectFieldMatch(t, etlEffects[0], legacyEffects[0], "roll")
-	assertEffectFieldMatch(t, etlEffects[0], legacyEffects[0], "tier1")
-	assertEffectFieldMatch(t, etlEffects[0], legacyEffects[0], "tier2")
-	assertEffectFieldMatch(t, etlEffects[0], legacyEffects[0], "tier3")
-
-	// Metadata
-	assertMetadataField(t, etl, "class", "fury")
-	assertMetadataFieldInt(t, etl, "level", 1)
-}
-
-func TestConformance_HitAndRun(t *testing.T) {
-	legacy := loadLegacyJSON(t, "Abilities/Fury/1st-Level Features/Hit and Run.json")
-	etl := transformAbilityFromDoc(t, "Fury", "1st-Level Features", "Hit and Run")
-
-	assertRequiredSchemaFields(t, etl)
-	assertTopLevelMatch(t, etl, legacy, "name")
-	assertTopLevelMatch(t, etl, legacy, "type")
-	assertTopLevelMatch(t, etl, legacy, "feature_type")
-
-	// Should have power roll + effect
-	etlEffects := getEffects(t, etl)
-	if len(etlEffects) < 2 {
-		t.Fatalf("expected at least 2 effects (roll + effect), got %d", len(etlEffects))
-	}
-
-	// Effect entry
-	legacyEffects := getEffects(t, legacy)
-	if len(legacyEffects) >= 2 {
-		assertEffectFieldMatch(t, etlEffects[1], legacyEffects[1], "effect")
-	}
-}
-
-func TestConformance_ToTheDeath(t *testing.T) {
-	legacy := loadLegacyJSON(t, "Abilities/Fury/1st-Level Features/To the Death.json")
-	etl := transformAbilityFromDoc(t, "Fury", "1st-Level Features", "To the Death!")
-
-	assertRequiredSchemaFields(t, etl)
-
-	// Name may differ slightly (exclamation mark handling)
-	if etl["name"] == nil {
-		t.Error("name should be present")
-	}
-
-	assertTopLevelMatch(t, etl, legacy, "type")
-	assertTopLevelMatch(t, etl, legacy, "feature_type")
-}
-
-// --- Trait conformance tests ---
-
+// TestConformance_GrowingFerocity verifies a trait's body renders as a single
+// effect that includes nested sub-table content (the Berserker/Reaver Growing
+// Ferocity tables). This is structural coverage for RenderSubtree body assembly,
+// not a legacy-file comparison.
 func TestConformance_GrowingFerocity(t *testing.T) {
-	legacy := loadLegacyJSON(t, "Features/Fury/1st-Level Features/Growing Ferocity.json")
 	etl := transformTraitFromDoc(t, "Fury", "1st-Level Features", "Growing Ferocity")
 
 	assertRequiredSchemaFields(t, etl)
-	assertTopLevelMatch(t, etl, legacy, "name")
-	assertTopLevelMatch(t, etl, legacy, "type")
-	assertTopLevelMatch(t, etl, legacy, "feature_type")
+	if etl["name"] != "Growing Ferocity" {
+		t.Errorf("name = %v, want Growing Ferocity", etl["name"])
+	}
+	if etl["type"] != "feature" {
+		t.Errorf("type = %v, want feature", etl["type"])
+	}
+	if etl["feature_type"] != "trait" {
+		t.Errorf("feature_type = %v, want trait", etl["feature_type"])
+	}
 
 	// Effects: trait body as single effect
 	etlEffects := getEffects(t, etl)
@@ -298,20 +233,6 @@ func TestConformance_NoUnevaluatedProperties(t *testing.T) {
 
 // --- Helpers ---
 
-func loadLegacyJSON(t *testing.T, relPath string) map[string]any {
-	t.Helper()
-	fullPath := filepath.Join(legacyBasePath, relPath)
-	data, err := os.ReadFile(fullPath)
-	if err != nil {
-		t.Skipf("legacy file not found: %s", fullPath)
-	}
-	var result map[string]any
-	if err := json.Unmarshal(data, &result); err != nil {
-		t.Fatalf("invalid legacy JSON %s: %v", relPath, err)
-	}
-	return result
-}
-
 func loadHeroesDoc(t *testing.T) *parser.Document {
 	t.Helper()
 	data, err := os.ReadFile(heroesInputPath)
@@ -416,18 +337,6 @@ func findTraitsInDoc(t *testing.T, className, featureGroupName string) []*parser
 	return traits
 }
 
-func transformAbilityFromDoc(t *testing.T, className, featureGroupName, abilityName string) map[string]any {
-	t.Helper()
-	doc := loadHeroesDoc(t)
-	classSection := findClassSection(t, doc, className)
-	fg := findFeatureGroup(t, classSection, featureGroupName)
-	section := findSectionByHeading(t, fg, abilityName)
-
-	parsed := parseAbility(t, section, strings.ToLower(className), "1")
-	scc := "mcdm.heroes.v1/feature.ability." + strings.ToLower(className) + ".level-1/" + content.Slugify(content.CleanHeading(section.Heading))
-	return TransformToSDKFormat(scc, parsed)
-}
-
 func transformTraitFromDoc(t *testing.T, className, featureGroupName, traitName string) map[string]any {
 	t.Helper()
 	doc := loadHeroesDoc(t)
@@ -485,31 +394,6 @@ func assertRequiredSchemaFields(t *testing.T, out map[string]any) {
 	}
 }
 
-func assertTopLevelMatch(t *testing.T, etl, legacy map[string]any, field string) {
-	t.Helper()
-	etlVal, _ := etl[field].(string)
-	legacyVal, _ := legacy[field].(string)
-	if etlVal != legacyVal {
-		t.Errorf("%s: got %q, want %q", field, etlVal, legacyVal)
-	}
-}
-
-func assertKeywordsMatch(t *testing.T, etl, legacy map[string]any) {
-	t.Helper()
-	etlKw := toStringSlice(etl["keywords"])
-	legacyKw := toStringSlice(legacy["keywords"])
-
-	if len(etlKw) != len(legacyKw) {
-		t.Errorf("keywords length: got %d, want %d", len(etlKw), len(legacyKw))
-		return
-	}
-	for i := range etlKw {
-		if etlKw[i] != legacyKw[i] {
-			t.Errorf("keywords[%d]: got %q, want %q", i, etlKw[i], legacyKw[i])
-		}
-	}
-}
-
 func assertMetadataField(t *testing.T, out map[string]any, field, want string) {
 	t.Helper()
 	meta, ok := out["metadata"].(map[string]any)
@@ -540,21 +424,6 @@ func assertMetadataFieldInt(t *testing.T, out map[string]any, field string, want
 	}
 }
 
-var sccLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc:[^)]+\)`)
-
-func stripSCCLinks(s string) string {
-	return sccLinkRe.ReplaceAllString(s, "$1")
-}
-
-func assertEffectFieldMatch(t *testing.T, etlEffect, legacyEffect map[string]any, field string) {
-	t.Helper()
-	etlVal, _ := etlEffect[field].(string)
-	legacyVal, _ := legacyEffect[field].(string)
-	if stripSCCLinks(etlVal) != stripSCCLinks(legacyVal) {
-		t.Errorf("effect.%s: got %q, want %q", field, etlVal, legacyVal)
-	}
-}
-
 func getEffects(t *testing.T, out map[string]any) []map[string]any {
 	t.Helper()
 
@@ -574,22 +443,6 @@ func getEffects(t *testing.T, out map[string]any) []map[string]any {
 		t.Fatalf("effects is unexpected type: %T", out["effects"])
 		return nil
 	}
-}
-
-func toStringSlice(v any) []string {
-	switch arr := v.(type) {
-	case []string:
-		return arr
-	case []any:
-		var result []string
-		for _, item := range arr {
-			if s, ok := item.(string); ok {
-				result = append(result, s)
-			}
-		}
-		return result
-	}
-	return nil
 }
 
 // isValidEffect checks if an effect satisfies one of the schema's anyOf constraints:
