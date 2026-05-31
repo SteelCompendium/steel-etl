@@ -99,25 +99,42 @@ the space gods, not deities).
 - Evil Gods have no patron god ancestor → flat `god/nikros`, `god/pentalion`,
   `god/cyrvis`, `god/eseld`.
 
-`GodParser` builds `TypePath`:
+`GodParser` builds `TypePath` by resolving the patron from the **section tree**
+(`section.Parent`), not the context stack:
 
 ```go
 typePath := []string{"god"}
-if patron := findAncestorID(ctx, section.HeadingLevel, "god"); patron != "" {
+if patron := findParentGodID(section); patron != "" {
     typePath = append(typePath, patron)
     fm["patron"] = patron   // structured field mirrors the path
+}
+```
+
+where `findParentGodID` walks `section.Parent` upward and returns the `@id` of
+the nearest ancestor whose `@type` is `god` (skipping unannotated containers):
+
+```go
+func findParentGodID(section *parser.Section) string {
+    for p := section.Parent; p != nil; p = p.Parent {
+        if p.Type() == "god" {
+            return p.ID()
+        }
+    }
+    return ""
 }
 ```
 
 Resulting code form: `mcdm.heroes.v1/god/<patron>/<id>` for saints,
 `mcdm.heroes.v1/god/<id>` for top-level gods.
 
-**Dependency to verify in implementation:** patron resolution relies on
-`findAncestorID(ctx, level, "god")`, which only works if **god sections are
-pushed onto the context stack**. The pipeline currently pushes context for the
-ancestry/class/kit/feature-group lookups used elsewhere; confirm `god` is
-included and extend the pipeline's context population if not. Without this, the
-nested path collapses to flat `god/<id>` for every saint.
+**Why tree-walk, not the context stack:** the context-stack helper
+`findAncestorID(ctx, level, "god")` is unreliable here. `ContextStack.Push` only
+clears levels at or *deeper* than the pushed level, and unannotated containers
+("Evil Gods", "Human Gods of Vasloria") do not push at all. So a previous god's
+entry can remain stale at an intermediate level — e.g. Nikros (an Evil God with
+no patron) would wrongly inherit `salorna` from the preceding subtree. Walking
+the real `section.Parent` chain avoids this: `Parent` is populated by the
+document parser (`internal/parser/document.go`) and reflects true nesting.
 
 Once a figure is annotated, `FullBodySource()` excludes it from the parent god's
 body (it skips annotated children), so each saint renders as its own page and the
@@ -159,7 +176,6 @@ Table-driven unit tests (`go test -race ./...`):
 
 ## Risks
 
-- **Context-stack dependency** (above) — primary risk; verify early.
 - **Slug collisions** — long hero names ("Ripples of Honey on a Shore of Gold")
   slugify to long ids; verify uniqueness within each patron namespace.
 - **`extractCostSuffix` scope** — the cost regex also matches "(N Piety)"; scope
