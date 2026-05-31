@@ -85,14 +85,12 @@ func transformTrait(sccCode string, parsed *content.ParsedContent) map[string]an
 		}
 	}
 
-	// Body becomes the single effect. When a child ability is embedded, use
-	// only the text before the appended ability heading (the intro paragraph
-	// like "You have the following ability.") to avoid duplicating the raw
-	// markdown that's already in the structured ability field.
+	// Body becomes the single effect. The Body comes from FullBodySource, which
+	// already excludes any annotated ability child (embedded above as the
+	// structured `ability` field), so no trimming is needed. The Body still
+	// carries the intro text ("You have the following ability.") plus any
+	// unannotated sub-headings (tables, notes), which must be preserved here.
 	bodyForEffect := parsed.Body
-	if _, hasAbility := out["ability"]; hasAbility {
-		bodyForEffect = trimAbilityFromBody(bodyForEffect)
-	}
 	effects := []map[string]any{}
 	if bodyForEffect != "" {
 		effects = append(effects, map[string]any{
@@ -303,20 +301,6 @@ func buildTraitMetadata(sccCode string, parsed *content.ParsedContent) map[strin
 	meta["action_type"] = "feature"
 
 	return meta
-}
-
-// trimAbilityFromBody removes the appended ability heading and content from a
-// trait body, returning only the introductory text (e.g., "You have the following ability.").
-// The ability content starts at the first markdown heading (e.g., "###### Ability Name").
-func trimAbilityFromBody(body string) string {
-	lines := strings.Split(body, "\n")
-	for i, line := range lines {
-		trimmed := strings.TrimSpace(line)
-		if strings.HasPrefix(trimmed, "#") {
-			return strings.TrimSpace(strings.Join(lines[:i], "\n"))
-		}
-	}
-	return body
 }
 
 // setIfPresent copies a value from src[srcKey] to dst[dstKey] if present.

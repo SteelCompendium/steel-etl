@@ -260,6 +260,58 @@ func TestTransformTrait_EmptyBody(t *testing.T) {
 	}
 }
 
+// TestTransformTrait_WithAbility_PreservesBodySubHeadings guards against the
+// data-loss risk described in FOLLOWUPS.md: a single-ability trait embeds its
+// ability as a structured `ability` field, and its Body (FullBodySource) already
+// excludes that annotated ability child. The Body may still contain unannotated
+// sub-headings (tables, notes) that must NOT be dropped from the SDK effect.
+func TestTransformTrait_WithAbility_PreservesBodySubHeadings(t *testing.T) {
+	abilityChild := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":        "Faithful Strike",
+			"type":        "ability",
+			"action_type": "Main action",
+		},
+	}
+
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":  "Faithful Friend",
+			"type":  "trait",
+			"class": "censor",
+			"level": "1",
+		},
+		// FullBodySource excludes the annotated ability child but folds in any
+		// unannotated sub-headings (e.g. a table). The embedded ability markdown
+		// is NOT present here — only the intro text and an unannotated note.
+		Body:     "You have the following ability.\n\n###### Bonding Note\n\nThe bond persists until death.",
+		TypePath: []string{"feature", "trait", "censor", "level-1"},
+		ItemID:   "faithful-friend",
+		Children: map[string]*content.ParsedContent{
+			"ability": abilityChild,
+		},
+	}
+
+	out := TransformToSDKFormat("", parsed)
+
+	// The embedded ability is surfaced as a structured field.
+	if _, ok := out["ability"]; !ok {
+		t.Fatal("expected embedded ability field on single-ability trait")
+	}
+
+	effects := out["effects"].([]map[string]any)
+	if len(effects) != 1 {
+		t.Fatalf("expected 1 effect, got %d", len(effects))
+	}
+	effect := effects[0]["effect"].(string)
+	if !strings.Contains(effect, "You have the following ability.") {
+		t.Errorf("trait effect should retain the intro text, got: %q", effect)
+	}
+	if !strings.Contains(effect, "Bonding Note") || !strings.Contains(effect, "The bond persists until death.") {
+		t.Errorf("trait effect dropped an unannotated body sub-heading (data loss), got: %q", effect)
+	}
+}
+
 func TestTransformPassthrough_Class(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{
