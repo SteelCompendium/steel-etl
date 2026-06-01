@@ -135,56 +135,38 @@ func runValidate(cmd *cobra.Command, args []string) error {
 					msg:   fmt.Sprintf("--scc-stable: cannot load registry: %v", err),
 				})
 			} else {
-				// Run the pipeline in dry mode to collect SCC codes
-				mdOutputDir := cfg.ResolvePath(cfg.Output.BaseDir) + "/" + cfg.Locale + "/md"
-				result, err := pipeline.RunWithConfig(cfg, inputPath, mdOutputDir, "")
+				// Collect SCC codes via parse+classify only. We deliberately do
+				// NOT run the full pipeline here: a full run writes output files
+				// (validation should be side-effect-free) and resolves scc: links
+				// against an unseeded registry, emitting thousands of spurious
+				// "unresolved scc link" warnings that bury the real findings.
+				// CollectSCCCodes provides everything --scc-stable needs.
+				newRegistry := scc.NewRegistry()
+				collectResult, err := pipeline.CollectSCCCodes(cfg, inputPath)
 				if err != nil {
 					issues = append(issues, validationIssue{
 						level: "error",
-						msg:   fmt.Sprintf("--scc-stable: pipeline run failed: %v", err),
+						msg:   fmt.Sprintf("--scc-stable: SCC collection failed: %v", err),
 					})
 				} else {
-					// Check for duplicate SCC codes from pipeline
-					for _, e := range result.Errors {
-						if len(e) > 14 && e[:14] == "duplicate SCC " {
-							issues = append(issues, validationIssue{
-								level: "error",
-								msg:   e,
-							})
-						}
+					for _, code := range collectResult.Codes {
+						newRegistry.Add(code)
 					}
 
-					// Build a registry from the pipeline run to compare
-					// The pipeline already wrote its SCC codes, but we need to check
-					// against the frozen registry by re-running classification
-					newRegistry := scc.NewRegistry()
-					// Re-parse to collect SCC codes without writing
-					collectResult, err := pipeline.CollectSCCCodes(cfg, inputPath)
-					if err != nil {
+					// Check: every code in the frozen registry must still exist
+					if err := newRegistry.ValidateAgainstFrozen(frozenRegistry); err != nil {
 						issues = append(issues, validationIssue{
 							level: "error",
-							msg:   fmt.Sprintf("--scc-stable: SCC collection failed: %v", err),
+							msg:   fmt.Sprintf("--scc-stable: %v", err),
 						})
-					} else {
-						for _, code := range collectResult.Codes {
-							newRegistry.Add(code)
-						}
+					}
 
-						// Check: every code in the frozen registry must still exist
-						if err := newRegistry.ValidateAgainstFrozen(frozenRegistry); err != nil {
-							issues = append(issues, validationIssue{
-								level: "error",
-								msg:   fmt.Sprintf("--scc-stable: %v", err),
-							})
-						}
-
-						// Check for duplicates
-						for _, dup := range collectResult.Duplicates {
-							issues = append(issues, validationIssue{
-								level: "error",
-								msg:   fmt.Sprintf("duplicate SCC: %s", dup),
-							})
-						}
+					// Check for duplicates
+					for _, dup := range collectResult.Duplicates {
+						issues = append(issues, validationIssue{
+							level: "error",
+							msg:   fmt.Sprintf("duplicate SCC: %s", dup),
+						})
 					}
 				}
 			}

@@ -12450,7 +12450,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-col
 You have the following ability.
 
 <!-- @type: ability -->
-> ###### Black Ash [Teleport](scc:mcdm.heroes.v1/movement/teleport)
+> ###### Black Ash Teleport
 > 
 > *In a swirl of black ash, you step from one place to another.*
 > 
