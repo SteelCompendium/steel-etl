@@ -523,3 +523,97 @@ func TestFeatureGroupPlainUnclassified(t *testing.T) {
 		t.Errorf("plain feature-group should be unclassified, got path=%v id=%q", parsed.TypePath, parsed.ItemID)
 	}
 }
+
+// Subclass is surfaced as a frontmatter field only; it never changes the SCC path
+// (the SCC code is a stable reference identifier). Single subclass -> string,
+// comma-separated -> list, absent -> field omitted.
+func TestAbilitySubclassFrontmatter(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+
+	section := &parser.Section{
+		Heading:      "Sic 'Em!",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "ability", "id": "sic-em", "level": "6", "cost": "9 Ferocity", "subclass": "guardian"},
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation)) // mirror collect.go
+	parsed, err := (&AbilityParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if parsed.Frontmatter["subclass"] != "guardian" {
+		t.Errorf("subclass frontmatter = %v, want guardian", parsed.Frontmatter["subclass"])
+	}
+	// Path must NOT contain the subclass — stable reference, level-gated only.
+	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
+	want := "mcdm.beastheart.v1/feature.ability.beastheart.level-6/sic-em"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+func TestFeatureSubclassFrontmatter(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+
+	section := &parser.Section{
+		Heading:      "Stormheart",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "feature", "id": "stormheart", "level": "2", "subclass": "spark"},
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation))
+	parsed, err := (&FeatureParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if parsed.Frontmatter["subclass"] != "spark" {
+		t.Errorf("subclass frontmatter = %v, want spark", parsed.Frontmatter["subclass"])
+	}
+	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
+	want := "mcdm.beastheart.v1/feature.trait.beastheart.level-2/stormheart"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+func TestAbilityMultiSubclass(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+
+	section := &parser.Section{
+		Heading:      "Hypothetical Multi",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "ability", "id": "hypothetical-multi", "level": "1", "subclass": "guardian, prowler"},
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation))
+	parsed, err := (&AbilityParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	got, ok := parsed.Frontmatter["subclass"].([]string)
+	if !ok {
+		t.Fatalf("subclass = %T %v, want []string", parsed.Frontmatter["subclass"], parsed.Frontmatter["subclass"])
+	}
+	if len(got) != 2 || got[0] != "guardian" || got[1] != "prowler" {
+		t.Errorf("subclass = %v, want [guardian prowler]", got)
+	}
+}
+
+func TestAbilityNoSubclass(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+
+	section := &parser.Section{
+		Heading:      "Bodyswap",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature", "id": "bodyswap"},
+	}
+	ctx.Push(section.HeadingLevel, context.Metadata(section.Annotation))
+	parsed, err := (&AbilityParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if _, exists := parsed.Frontmatter["subclass"]; exists {
+		t.Errorf("subclass should be absent, got %v", parsed.Frontmatter["subclass"])
+	}
+}

@@ -230,6 +230,9 @@ func buildAbilityMetadata(sccCode string, parsed *content.ParsedContent) map[str
 	setIfPresent(meta, "target", fm, "target")
 	setIfPresent(meta, "flavor", fm, "flavor")
 	setIfPresent(meta, "keywords", fm, "keywords")
+	// Subclass is reference metadata (e.g. beastheart Wild Nature). It is not part
+	// of the SCC path, so it must be carried here to be fetchable by consumers.
+	setIfPresent(meta, "subclass", fm, "subclass")
 
 	if v, ok := fm["subtype"].(string); ok && v != "" {
 		meta["ability_type"] = capitalizeFirst(v)
@@ -271,6 +274,9 @@ func buildTraitMetadata(sccCode string, parsed *content.ParsedContent) map[strin
 	setIfPresent(meta, "kit", fm, "kit")
 	setIfPresent(meta, "feature_type", fm, "type") // original type before transform
 	setIfPresent(meta, "source", fm, "source")
+	// Subclass is reference metadata (e.g. beastheart Wild Nature passives); not in
+	// the SCC path, so carry it here for consumers.
+	setIfPresent(meta, "subclass", fm, "subclass")
 
 	// level: convert string to int if possible
 	if v, ok := fm["level"].(string); ok && v != "" {

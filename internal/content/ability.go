@@ -53,6 +53,11 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		if v, ok := ann["trigger"]; ok {
 			fm["trigger"] = v
 		}
+		// Subclass (e.g. beastheart Wild Nature) is reference metadata only — it is
+		// surfaced as a frontmatter field and never alters the SCC path.
+		if v, ok := ann["subclass"]; ok && v != "" {
+			fm["subclass"] = parseSubclass(v)
+		}
 	}
 
 	// Auto-extract from body content (only fill in what annotations didn't provide)
@@ -310,6 +315,17 @@ func extractBoldText(s string) string {
 		return strings.Join(parts, ", ")
 	}
 	return strings.TrimSpace(s)
+}
+
+// parseSubclass converts a @subclass annotation value into frontmatter form:
+// a single value stays a string; comma-separated values become a []string so
+// that features/abilities shared by multiple subclasses are represented cleanly.
+func parseSubclass(s string) any {
+	parts := parseKeywords(s)
+	if len(parts) == 1 {
+		return parts[0]
+	}
+	return parts
 }
 
 // parseKeywords splits a comma-separated keyword string into a list.

@@ -242,6 +242,42 @@ func TestTransformTrait_Basic(t *testing.T) {
 	}
 }
 
+func TestTransformAbility_SubclassInMetadata(t *testing.T) {
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":     "Sic 'Em!",
+			"type":     "ability",
+			"class":    "beastheart",
+			"level":    "6",
+			"subclass": "guardian",
+		},
+		Body:     "body",
+		TypePath: []string{"feature", "ability", "beastheart", "level-6"},
+		ItemID:   "sic-em",
+	}
+	out := TransformToSDKFormat("mcdm.beastheart.v1/feature.ability.beastheart.level-6/sic-em", parsed)
+	meta := out["metadata"].(map[string]any)
+	assertEqual(t, meta["subclass"], "guardian")
+}
+
+func TestTransformTrait_SubclassInMetadata(t *testing.T) {
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name":     "Stormheart",
+			"type":     "trait",
+			"class":    "beastheart",
+			"level":    "2",
+			"subclass": "spark",
+		},
+		Body:     "body",
+		TypePath: []string{"feature", "trait", "beastheart", "level-2"},
+		ItemID:   "stormheart",
+	}
+	out := TransformToSDKFormat("mcdm.beastheart.v1/feature.trait.beastheart.level-2/stormheart", parsed)
+	meta := out["metadata"].(map[string]any)
+	assertEqual(t, meta["subclass"], "spark")
+}
+
 func TestTransformTrait_EmptyBody(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{

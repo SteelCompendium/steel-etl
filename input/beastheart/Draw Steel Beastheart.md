@@ -1637,22 +1637,22 @@ Your companion may not be much of a talker, but they've got a lifetime of experi
 
 Your wild nature grants you a feature, as shown on the 2nd-Level Wild Nature Features table.
 
-<!-- @type: feature | @id: stormheart | @level: 2 -->
+<!-- @type: feature | @id: stormheart | @level: 2 | @subclass: spark -->
 #### Stormheart
 
 Whenever you or your companion deals cold, fire, lightning, sonic, or untyped damage, you can change the damage type to cold, fire, lightning, or sonic damage.
 
-<!-- @type: feature | @id: supersniffer | @level: 2 -->
+<!-- @type: feature | @id: supersniffer | @level: 2 | @subclass: prowler -->
 #### Supersniffer
 
 While a creature is adjacent to your companion, that creature can't be hidden or have concealment from your companion.
 
-<!-- @type: feature | @id: this-ones-yours | @level: 2 -->
+<!-- @type: feature | @id: this-ones-yours | @level: 2 | @subclass: punisher -->
 #### This One's Yours
 
 Once per turn, you or your companion can use the following free triggered action.
 
-<!-- @type: ability | @id: this-ones-yours | @level: 2 | @action: Triggered Action -->
+<!-- @type: ability | @id: this-ones-yours | @level: 2 | @action: Triggered Action | @subclass: punisher -->
 ##### This One's Yours
 
 When someone is pushed into you, you reach out to steady an ally or send a foe careening off in another direction.
@@ -1663,7 +1663,7 @@ When someone is pushed into you, you reach out to steady an ally or send a foe c
 
 **Spend 1 Ferocity:** You and your companions can each use this free triggered action on the same turn.
 
-<!-- @type: feature | @id: watchdog | @level: 2 -->
+<!-- @type: feature | @id: watchdog | @level: 2 | @subclass: guardian -->
 #### Watchdog
 
 You and your companion can't be surprised.
@@ -1954,22 +1954,22 @@ Your wild nature grants you a feature, as shown on the 5th-Level Wild Nature Fea
 | Punisher                           | I Can Take It        |
 | Spark                              | Wildfire Pyre        |
 
-<!-- @type: feature | @id: i-can-take-it | @level: 5 -->
+<!-- @type: feature | @id: i-can-take-it | @level: 5 | @subclass: punisher -->
 #### I Can Take It
 
 When you or your companion uses your Thunderclap ability and halves the triggering damage, whoever uses the ability can take the remaining damage instead of the original target. The damage is transferred before immunity and weakness are applied.
 
-<!-- @type: feature | @id: melt-away | @level: 5 -->
+<!-- @type: feature | @id: melt-away | @level: 5 | @subclass: prowler -->
 #### Melt Away
 
 You or your companion can use your Shadow in the Mist ability even when targeted by the triggering ability.
 
-<!-- @type: feature | @id: there-for-each-other | @level: 5 -->
+<!-- @type: feature | @id: there-for-each-other | @level: 5 | @subclass: guardian -->
 #### There For Each Other
 
 When you or your companion uses your The Pack Defends ability to spend a Recovery, you and the target both regain Stamina.
 
-<!-- @type: feature | @id: wildfire-pyre | @level: 5 -->
+<!-- @type: feature | @id: wildfire-pyre | @level: 5 | @subclass: spark -->
 #### Wildfire Pyre
 
 When you or your companion deals damage with your Pyre ability, each enemy adjacent to either of you takes the damage.
@@ -2248,22 +2248,22 @@ Your wild nature grants you a feature, as shown on the 8th-Level Wild Nature Fea
 | Punisher                           | Built for Violence      |
 | Spark                              | Nature Will Not Harm Us |
 
-<!-- @type: feature | @id: born-to-run | @level: 8 -->
+<!-- @type: feature | @id: born-to-run | @level: 8 | @subclass: prowler -->
 #### Born to Run
 
 You and your companion gain a +2 bonus to speed.
 
-<!-- @type: feature | @id: built-for-violence | @level: 8 -->
+<!-- @type: feature | @id: built-for-violence | @level: 8 | @subclass: punisher -->
 #### Built for Violence
 
 You and your companion gain a +2 damage bonus to maneuvers that deal damage. When you or your companion pushes a creature, you can vertical push that creature.
 
-<!-- @type: feature | @id: nature-will-not-harm-us | @level: 8 -->
+<!-- @type: feature | @id: nature-will-not-harm-us | @level: 8 | @subclass: spark -->
 #### Nature Will Not Harm Us
 
 You and your companion have damage immunity 10 to cold, fire, lightning, and sonic damage.
 
-<!-- @type: feature | @id: reflexes-perfected | @level: 8 -->
+<!-- @type: feature | @id: reflexes-perfected | @level: 8 | @subclass: guardian -->
 #### Reflexes Perfected
 
 Your and your companion's free strikes deal extra damage equal to your Intuition score. Whenever an adjacent enemy moves to a space that isn't adjacent, you or your companion can make an opportunity attack, even if the enemy shifted, teleported, was force moved, or another feature that doesn't provoke opportunity attacks.

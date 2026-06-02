@@ -87,6 +87,10 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	if companionID != "" {
 		fm["companion"] = companionID
 	}
+	// Subclass is reference metadata only — surfaced in frontmatter, never in the path.
+	if v, ok := section.Annotation["subclass"]; ok && v != "" {
+		fm["subclass"] = parseSubclass(v)
+	}
 
 	// Build type path: feature.trait.{parent}.level-{N}[.{kit}]
 	// Companion traits use feature.trait.companion.{species}.level-{N}.
