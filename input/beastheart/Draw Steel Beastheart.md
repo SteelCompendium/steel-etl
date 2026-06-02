@@ -302,13 +302,13 @@ As a 1st-level beastheart, you gain the following features.
 
 Your bond with your companion has awakened ancient, predatory instincts in you that fuel your battle prowess. But you aren't bound by your primal passions. As you decide which of your instincts to ignore and which to hone to deadly sharpness, you choose a wild nature from the following options, each of which grants you a skill. (*Quick Build:* Punisher.)
 
-**Guardian:** You are the fearless defender of your pack—anyone who harms them must go through you. You have the Read Person skill.
+**Guardian:** You are the fearless defender of your pack—anyone who harms them must go through you. You have the [Read Person](scc:mcdm.heroes.v1/skill/read-person) skill.
 
-**Prowler:** You are an unseen ambusher that strikes from the shadows. Your prey is dead before they even know you're there. You have the Hide skill.
+**Prowler:** You are an unseen ambusher that strikes from the shadows. Your prey is dead before they even know you're there. You have the [Hide](scc:mcdm.heroes.v1/skill/hide) skill.
 
-**Punisher:** Using brute force, you overwhelm anyone unwise enough to earn your wrath. You have the Endurance skill.
+**Punisher:** Using brute force, you overwhelm anyone unwise enough to earn your wrath. You have the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
 
-**Spark:** Your connection to nature has imbued you and your companion with the raging magic of an elemental storm. Flame, frost, and lightning crackle from your hands and their claws. You have the Magic skill.
+**Spark:** Your connection to nature has imbued you and your companion with the raging magic of an elemental storm. Flame, frost, and lightning crackle from your hands and their claws. You have the [Magic](scc:mcdm.heroes.v1/skill/magic) skill.
 
 Your wild nature is your subclass, and your choice of wild nature determines many of the features you'll gain as you gain new levels.
 
@@ -371,7 +371,7 @@ With the Director's permission, you can also change the damage types of your com
 
 **Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see Stoned).
 
-**Spend 1 Ferocity:** While stoned this way, the target is also slowed.
+**Spend 1 Ferocity:** While stoned this way, the target is also [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
 <!-- @type: feature | @id: stoned -->
 #### Stoned
@@ -481,12 +481,12 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 
 **Effect:** The boar moves up to their speed in a straight line. When this movement ends, they can deal damage equal to 3 + their Might score to an adjacent target. If the boar moved closer to the target as part of this movement, the boar deals extra damage equal to their Might score.
 
-**Spend 1 Ferocity:** The target is bleeding until the end of their next turn.
+**Spend 1 Ferocity:** The target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
 <!-- @type: feature | @id: spiteful-endurance -->
 #### Spiteful Endurance
 
-While the boar is winded, they have damage immunity equal to their Might score and ignore the effects of bleeding.
+While the boar is winded, they have damage immunity equal to their Might score and ignore the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding).
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Boar Advancement Feature
@@ -534,9 +534,9 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 |------------------------------|---------------------------:|
 | **📏 Melee 1**               | **🎯 One creature or object** |
 
-**Effect:** The target takes damage equal to 3 + the condor's Might score. Additionally, enemies are weakened while adjacent to the condor until the end of your next turn.
+**Effect:** The target takes damage equal to 3 + the condor's Might score. Additionally, enemies are [weakened](scc:mcdm.heroes.v1/condition/weakened) while adjacent to the condor until the end of your next turn.
 
-**Spend 1 Ferocity:** An enemy who would be weakened by this ability is taunted instead.
+**Spend 1 Ferocity:** An enemy who would be [weakened](scc:mcdm.heroes.v1/condition/weakened) by this ability is [taunted](scc:mcdm.heroes.v1/condition/taunted) instead.
 
 <!-- @type: feature | @id: moving-target -->
 #### Moving Target
@@ -589,14 +589,14 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 |------------------------------|-----------------:|
 | **📏 Melee 1**               | **🎯 One enemy** |
 
-**Effect:** The target takes damage equal to 3 + the deinonychus's Might score, and if they have M < AVERAGE, they are bleeding until the end of their next turn.
+**Effect:** The target takes damage equal to 3 + the deinonychus's Might score, and if they have M < AVERAGE, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
-**Spend 1 Ferocity:** A target who has M < STRONG is bleeding (save ends).
+**Spend 1 Ferocity:** A target who has M < STRONG is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 <!-- @type: feature | @id: blood-frenzy -->
 #### Blood Frenzy
 
-Whenever the deinonychus deals damage to a bleeding creature, they gain 1 surge.
+Whenever the deinonychus deals damage to a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature, they gain 1 surge.
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Deinonychus Advancement Feature
@@ -604,7 +604,7 @@ Whenever the deinonychus deals damage to a bleeding creature, they gain 1 surge.
 <!-- @type: feature | @id: tear-you-to-ribbons -->
 ##### Tear You to Ribbons
 
-Whenever the deinonychus makes a strike against a creature while rampaging, the target is bleeding until the end of their next turn.
+Whenever the deinonychus makes a strike against a creature while rampaging, the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Deinonychus Advancement Feature
@@ -612,7 +612,7 @@ Whenever the deinonychus makes a strike against a creature while rampaging, the 
 <!-- @type: feature | @id: slake-my-thirst-in-blood -->
 ##### Slake My Thirst in Blood
 
-Whenever you use an ability that deals rolled damage to a bleeding creature while the deinonychus is rampaging, you gain 2 surges.
+Whenever you use an ability that deals rolled damage to a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature while the deinonychus is rampaging, you gain 2 surges.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Deinonychus Advancement Feature
@@ -719,7 +719,7 @@ The first time on a turn that you or the spark deal lightning damage, you gain 1
 <!-- @type: feature | @id: electroshock -->
 ##### Electroshock
 
-Whenever the spark makes a strike against a creature while rampaging, they can cause a target who has M < AVERAGE to be dazed until the end of the target's next turn.
+Whenever the spark makes a strike against a creature while rampaging, they can cause a target who has M < AVERAGE to be [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of the target's next turn.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Elemental Spark Advancement Feature
@@ -759,9 +759,9 @@ While the spark is rampaging, you and the spark can shift up to your speed as a 
 |------------------------------|-----------------:|
 | **📏 Melee 1**               | **🎯 One enemy** |
 
-**Effect:** The target takes acid damage equal to 3 + the ball's Might score, and if they have A < AVERAGE, the ball moves into the target's space. If the target completely fits within the ball's space, the target is grabbed by the ball.
+**Effect:** The target takes acid damage equal to 3 + the ball's Might score, and if they have A < AVERAGE, the ball moves into the target's space. If the target completely fits within the ball's space, the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the ball.
 
-**Spend 1 Ferocity:** A target grabbed this way takes acid damage equal to the ball's Might score at the end of each of the ball's turns.
+**Spend 1 Ferocity:** A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes acid damage equal to the ball's Might score at the end of each of the ball's turns.
 
 <!-- @type: feature | @id: gelatinous -->
 #### Gelatinous
@@ -774,7 +774,7 @@ The ball can occupy another creature's space. While occupying a creature's space
 <!-- @type: feature | @id: suck-it-up -->
 ##### Suck It Up
 
-Whenever the ball makes a strike while rampaging, one target is pulled up to 3 squares into the ball's space. If the target ends this movement and completely fits within the ball's space, the target is grabbed by the ball.
+Whenever the ball makes a strike while rampaging, one target is pulled up to 3 squares into the ball's space. If the target ends this movement and completely fits within the ball's space, the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the ball.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Gummy Ball Advancement Feature
@@ -829,7 +829,7 @@ You have fire immunity equal to the hellhound's fire immunity.
 <!-- @type: feature | @id: infernal-apparition -->
 ##### Infernal Apparition
 
-Whenever the hellhound makes a strike against a creature while rampaging, they can cause a target who has P < AVERAGE to be frightened until the end of the target's next turn.
+Whenever the hellhound makes a strike against a creature while rampaging, they can cause a target who has P < AVERAGE to be [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of the target's next turn.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Hellhound Advancement Feature
@@ -900,7 +900,7 @@ While the lightbender is rampaging, you can use a free maneuver to glow with bli
 <!-- @type: feature | @id: everywhere-and-nowhere -->
 ##### Everywhere and Nowhere
 
-While the lightbender is rampaging, your grip on spatial reality is weakened, and once on each of your turns, you or the lightbender can teleport up to 3 spaces as a free maneuver. Additionally, strikes made against you and the lightbender have a double bane until the lightbender's rampage ends.
+While the lightbender is rampaging, your grip on spatial reality is [weakened](scc:mcdm.heroes.v1/condition/weakened), and once on each of your turns, you or the lightbender can teleport up to 3 spaces as a free maneuver. Additionally, strikes made against you and the lightbender have a double bane until the lightbender's rampage ends.
 
 <!-- @type: feature-group | @companion: panther | @level: 1 -->
 ### Panther
@@ -924,9 +924,9 @@ While the lightbender is rampaging, your grip on spatial reality is weakened, an
 |------------------------------|-----------------:|
 | **📏 Melee 1**               | **🎯 One enemy** |
 
-**Effect:** The target takes damage equal to 3 + the panther's Might score, and if they have M < AVERAGE, they are knocked prone.
+**Effect:** The target takes damage equal to 3 + the panther's Might score, and if they have M < AVERAGE, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-**Spend 1 Ferocity:** The panther can jump up to a number of squares equal to their speed before using this ability. If they jump at least 1 square in this way, a target who has M < STRONG is knocked prone.
+**Spend 1 Ferocity:** The panther can jump up to a number of squares equal to their speed before using this ability. If they jump at least 1 square in this way, a target who has M < STRONG is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: feature | @id: mighty-spring -->
 #### Mighty Spring
@@ -939,7 +939,7 @@ Whenever the panther takes the Advance move action or the Charge action, they ca
 <!-- @type: feature | @id: cat-and-mouse -->
 ##### Cat and Mouse
 
-Whenever the panther makes a strike against a creature while rampaging, the panther can knock the target prone.
+Whenever the panther makes a strike against a creature while rampaging, the panther can knock the target [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Panther Advancement Feature
@@ -979,14 +979,14 @@ While the panther is rampaging, you and the panther are invisible and can move t
 |-------------------------------|-----------------:|
 | **📏 Ranged 5**               | **🎯 One enemy** |
 
-**Effect:** If the target has M < AVERAGE, they are restrained until the end of their next turn.
+**Effect:** If the target has M < AVERAGE, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
-**Spend 1 Ferocity:** If the target has M < STRONG, they are restrained (save ends).
+**Spend 1 Ferocity:** If the target has M < STRONG, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 <!-- @type: feature | @id: come-into-my-parlor -->
 #### Come Into My Parlor
 
-Whenever the spider makes a strike against a restrained creature, the spider deals extra poison damage equal to twice their Intuition score.
+Whenever the spider makes a strike against a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature, the spider deals extra poison damage equal to twice their Intuition score.
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Spider Advancement Feature
@@ -1036,7 +1036,7 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 
 **Effect:** The target takes poison damage equal to 3 + the sporeling's Might score, and the sporeling is invisible to the target until the end of the sporeling's next turn or they deal damage to the target.
 
-**Spend 1 Ferocity:** If the target has M < STRONG, they are dazed until the end of their next turn.
+**Spend 1 Ferocity:** If the target has M < STRONG, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
 <!-- @type: feature | @id: skulker -->
 #### Skulker
@@ -1049,7 +1049,7 @@ The sporeling can end their movement in an ally's space. While occupying an ally
 <!-- @type: feature | @id: slowing-spores -->
 ##### Slowing Spores
 
-Whenever the sporeling makes a strike against a creature while rampaging, the sporeling can cause the target to be slowed until the end of the target's next turn.
+Whenever the sporeling makes a strike against a creature while rampaging, the sporeling can cause the target to be [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of the target's next turn.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Sporeling Advancement Feature
@@ -1065,7 +1065,7 @@ Once on each of your turns while the sporeling is rampaging, you can teleport to
 <!-- @type: feature | @id: trailing-mycelia -->
 ##### Trailing Mycelia
 
-While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has M < STRONG, the creature is grabbed by the attacker. Additionally, you and the sporeling can't be force moved or knocked prone until the sporeling's rampage ends.
+While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has M < STRONG, the creature is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the attacker. Additionally, you and the sporeling can't be force moved or knocked [prone](scc:mcdm.heroes.v1/condition/prone) until the sporeling's rampage ends.
 
 <!-- @type: feature-group | @companion: wolf | @level: 1 -->
 ### Wolf
@@ -1089,14 +1089,14 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 |------------------------------|-----------------:|
 | **📏 Melee 1**               | **🎯 One enemy** |
 
-**Effect:** The target takes damage equal to 3 + the wolf's Might score, and if they have M < AVERAGE, they are grabbed by the wolf.
+**Effect:** The target takes damage equal to 3 + the wolf's Might score, and if they have M < AVERAGE, they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the wolf.
 
-**Spend 1 Ferocity:** If the target has M < STRONG, they are grabbed by the wolf.
+**Spend 1 Ferocity:** If the target has M < STRONG, they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the wolf.
 
 <!-- @type: feature | @id: retriever -->
 #### Retriever
 
-The wolf can move at full speed while they have a creature grabbed, no matter the grabbed creature's size.
+The wolf can move at full speed while they have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed), no matter the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature's size.
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Wolf Advancement Feature
@@ -1120,7 +1120,7 @@ While the wolf is rampaging, you and the wolf gain a +2 bonus to speed, and crea
 <!-- @type: feature | @id: dire-wolf -->
 ##### Dire Wolf
 
-While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are frightened until the end of their next turn.
+While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their next turn.
 
 <!-- @type: feature | @id: companion-rules | @level: 1 -->
 ## Companion Rules
@@ -1146,7 +1146,7 @@ While the wolf is rampaging, you and the wolf are surrounded by an aura of dread
 
 Although you and your companion share your action economy, you are treated as separate creatures for effects that grant or remove main actions, maneuvers, and move actions. For instance, the talent's Applied Chronometrics ability grants an extra maneuver. If both you and your companion are targeted by the ability, you both gain extra maneuvers.
 
-Similarly, the dazed condition limits what a creature can do on their turn. Being dazed works the same on you and your companion as it does on other creatures; whoever is dazed can only do one thing on their turn (a move action, maneuver, or main action). You being dazed has no effect on your companion, and vice versa.
+Similarly, the [dazed](scc:mcdm.heroes.v1/condition/dazed) condition limits what a creature can do on their turn. Being [dazed](scc:mcdm.heroes.v1/condition/dazed) works the same on you and your companion as it does on other creatures; whoever is [dazed](scc:mcdm.heroes.v1/condition/dazed) can only do one thing on their turn (a move action, maneuver, or main action). You being [dazed](scc:mcdm.heroes.v1/condition/dazed) has no effect on your companion, and vice versa.
 
 <!-- @type: feature | @id: heart-of-the-beast | @level: 1 -->
 ## Heart of the Beast
@@ -1193,8 +1193,8 @@ Your companion then makes the following power roll:
 
 This ability gains the following benefit based on your wild nature.
 
-- **Guardian:** Each enemy target is taunted by your companion until the start of your next turn.
-- **Prowler:** Each enemy target is weakened until the start of your next turn.
+- **Guardian:** Each enemy target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by your companion until the start of your next turn.
+- **Prowler:** Each enemy target is [weakened](scc:mcdm.heroes.v1/condition/weakened) until the start of your next turn.
 - **Punisher:** Your companion slides each target up to a number of squares equal to their Might score.
 - **Spark:** This strike deals cold, fire, lightning, or sonic damage. You gain 1 surge.
 
@@ -1256,11 +1256,11 @@ Your wild nature grants you a maneuver, as shown on the Wild Nature Maneuvers ta
 |-------------------------------|--------------------:|
 | **📏 Melee 1**                | **🎯 One creature** |
 
-**Effect:** The target takes damage equal to 3 + your Might score, and if they have M < AVERAGE, they are knocked prone.
+**Effect:** The target takes damage equal to 3 + your Might score, and if they have M < AVERAGE, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-You can move up to 3 squares before and after you use this ability. During this movement, a prone enemy's space doesn't count as difficult terrain, and the first time you enter a prone enemy's space, that enemy takes cold damage equal to your Might score.
+You can move up to 3 squares before and after you use this ability. During this movement, a [prone](scc:mcdm.heroes.v1/condition/prone) enemy's space doesn't count as difficult terrain, and the first time you enter a [prone](scc:mcdm.heroes.v1/condition/prone) enemy's space, that enemy takes cold damage equal to your Might score.
 
-**Spend 1 Ferocity:** If the target has M < STRONG, they are knocked prone.
+**Spend 1 Ferocity:** If the target has M < STRONG, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: ability | @id: jaws-of-the-storm | @level: 1 | @subclass: spark -->
 #### Jaws of the Storm
@@ -1458,7 +1458,7 @@ Choose one signature ability from the following options. Signature abilities can
 - **12-16:** 4 + I damage
 - **17+:** 6 + I damage
 
-**Effect:** If the target is not prone, they must use a free triggered action to fall prone or take extra damage equal to twice your Intuition score. Your companion can shift up to a number of squares equal to their Intuition score.
+**Effect:** If the target is not [prone](scc:mcdm.heroes.v1/condition/prone), they must use a free triggered action to fall [prone](scc:mcdm.heroes.v1/condition/prone) or take extra damage equal to twice your Intuition score. Your companion can shift up to a number of squares equal to their Intuition score.
 
 <!-- @type: ability | @subtype: signature | @id: stormrage -->
 #### Stormrage
@@ -1496,9 +1496,9 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 
 **Power Roll + Intuition:**
 
-- **≤11:** 3 sonic damage; push 1; P < WEAK taunted (save ends)
-- **12-16:** 5 sonic damage; push 2; P < AVERAGE taunted (save ends)
-- **17+:** 7 sonic damage; push 3; P < STRONG frightened (save ends)
+- **≤11:** 3 sonic damage; push 1; P < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
+- **12-16:** 5 sonic damage; push 2; P < AVERAGE [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
+- **17+:** 7 sonic damage; push 3; P < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 **Spend 1 Ferocity:** This ability also affects a 2 burst originating from you. An enemy in both areas is only affected once.
 
@@ -1513,9 +1513,9 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 5 + M damage; slide 1; I < WEAK weakened (save ends)
-- **12-16:** 8 + M damage; slide 2; I < AVERAGE weakened (save ends)
-- **17+:** 11 + M damage; slide 4; I < STRONG weakened (save ends)
+- **≤11:** 5 + M damage; slide 1; I < WEAK [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **12-16:** 8 + M damage; slide 2; I < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **17+:** 11 + M damage; slide 4; I < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 **Effect:** You and your companion can shift up to a number of squares equal to the number of squares the target was force moved.
 
@@ -1532,7 +1532,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 
 - **≤11:** 4 + M damage; your companion can spend a Recovery
 - **12-16:** 7 + M damage; you and your companion can each spend a Recovery
-- **17+:** 11 + M damage; A < STRONG bleeding (EoT); you and your companion can each spend a Recovery and shift up to 2 squares
+- **17+:** 11 + M damage; A < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT); you and your companion can each spend a Recovery and shift up to 2 squares
 
 <!-- @type: ability | @id: pushover | @cost: 3 Ferocity -->
 ##### Pushover
@@ -1549,7 +1549,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 - **12-16:** 8 + M damage; push 4
 - **17+:** 11 + M damage; push 6
 
-**Effect:** This forced movement can pass through your space but not end there. If the target passes through your space, they fall prone and take extra damage equal to your Intuition score.
+**Effect:** This forced movement can pass through your space but not end there. If the target passes through your space, they fall [prone](scc:mcdm.heroes.v1/condition/prone) and take extra damage equal to your Intuition score.
 
 #### 5-Ferocity Ability
 
@@ -1564,9 +1564,9 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 |----------------------|------------------------------:|
 | **📏 3 burst**       | **🎯 Each enemy in the area** |
 
-**Effect:** You can spend a Recovery and gain 3 temporary Stamina for each target. Each target is taunted by you until the end of their next turn.
+**Effect:** You can spend a Recovery and gain 3 temporary Stamina for each target. Each target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
 
-**Spend 1 Ferocity:** This ability also affects a 3 burst originating from your companion. Targets in this second area are taunted by your companion. An enemy in both areas is taunted only by you.
+**Spend 1 Ferocity:** This ability also affects a 3 burst originating from your companion. Targets in this second area are [taunted](scc:mcdm.heroes.v1/condition/taunted) by your companion. An enemy in both areas is [taunted](scc:mcdm.heroes.v1/condition/taunted) only by you.
 
 <!-- @type: ability | @id: i-feed-on-your-pain | @cost: 5 Ferocity -->
 ##### I Feed On Your Pain!
@@ -1581,9 +1581,9 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 
 - **≤11:** 8 + M damage
 - **12-16:** 12 + M damage
-- **17+:** 16 + M damage; M < STRONG bleeding (save ends)
+- **17+:** 16 + M damage; M < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-**Effect:** If the target is killed by this damage, or is winded or bleeding after taking this damage, you gain 2 surges.
+**Effect:** If the target is killed by this damage, or is winded or [bleeding](scc:mcdm.heroes.v1/condition/bleeding) after taking this damage, you gain 2 surges.
 
 <!-- @type: ability | @id: rain-of-fire | @cost: 5 Ferocity -->
 ##### Rain of Fire
@@ -1613,9 +1613,9 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 8 + M damage; M < WEAK grabbed
-- **12-16:** 12 + M damage; M < AVERAGE grabbed
-- **17+:** 16 + M damage; M < STRONG grabbed
+- **≤11:** 8 + M damage; M < WEAK [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+- **12-16:** 12 + M damage; M < AVERAGE [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+- **17+:** 16 + M damage; M < STRONG [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 
 **Effect:** If you grab the target while your companion is adjacent to them, your companion can make a melee free strike against the target.
 
@@ -1689,11 +1689,11 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 6 + M damage; M < WEAK grabbed
-- **12-16:** 8 + M damage; M < AVERAGE grabbed
-- **17+:** 12 + M damage; M < STRONG grabbed
+- **≤11:** 6 + M damage; M < WEAK [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+- **12-16:** 8 + M damage; M < AVERAGE [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+- **17+:** 12 + M damage; M < STRONG [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 
-After making the power roll, your companion can teleport with a grabbed creature or held object, provided the creature or object can fit in the destination. You choose which squares adjacent to your companion the grabbed creature or held object is teleported to.
+After making the power roll, your companion can teleport with a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or held object, provided the creature or object can fit in the destination. You choose which squares adjacent to your companion the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or held object is teleported to.
 
 <!-- @type: ability | @id: omnomnom | @level: 2 | @cost: 5 Ferocity | @subclass: guardian -->
 #### Omnomnom
@@ -1704,7 +1704,7 @@ After making the power roll, your companion can teleport with a grabbed creature
 |--------------------------------------|----------------:|
 | **📏 Melee 1**                       | **🎯 One creature** |
 
-**Special:** This ability targets only creatures who are grabbed and are your companion's size or smaller.
+**Special:** This ability targets only creatures who are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and are your companion's size or smaller.
 
 **Power Roll + Might:**
 
@@ -1712,9 +1712,9 @@ After making the power roll, your companion can teleport with a grabbed creature
 - **12-16:** 10 + M damage; M < AVERAGE the target is swallowed
 - **17+:** 14 + M damage; M < STRONG the target is swallowed
 
-**Effect:** A swallowed creature shares your companion's space, is grabbed and restrained, and has line of effect only to your companion. Nothing has line of effect to the swallowed creature.
+**Effect:** A swallowed creature shares your companion's space, is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and [restrained](scc:mcdm.heroes.v1/condition/restrained), and has line of effect only to your companion. Nothing has line of effect to the swallowed creature.
 
-Once per round at the start of your turn, the swallowed creature takes acid damage equal to 1 + your companion's Might score. If the swallowed creature escapes the grab, your companion immediately regurgitates the creature, who lands prone in an unoccupied square adjacent to your companion. Your companion can also regurgitate a swallowed creature as a free maneuver. Your companion can have only one creature swallowed at a time.
+Once per round at the start of your turn, the swallowed creature takes acid damage equal to 1 + your companion's Might score. If the swallowed creature escapes the grab, your companion immediately regurgitates the creature, who lands [prone](scc:mcdm.heroes.v1/condition/prone) in an unoccupied square adjacent to your companion. Your companion can also regurgitate a swallowed creature as a free maneuver. Your companion can have only one creature swallowed at a time.
 
 #### 2nd-Level Prowler Abilities
 
@@ -1735,9 +1735,9 @@ Choose one of the following abilities.
 
 **Power Roll + Intuition:**
 
-- **≤11:** 4 damage; P < WEAK frightened (save ends)
-- **12-16:** 6 damage; P < AVERAGE frightened (save ends)
-- **17+:** 10 damage; P < STRONG frightened (save ends)
+- **≤11:** 4 damage; P < WEAK [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **12-16:** 6 damage; P < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **17+:** 10 damage; P < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 <!-- @type: ability | @id: on-you-like-your-shadow | @level: 2 | @cost: 5 Ferocity | @subclass: prowler -->
 #### On You Like Your Shadow
@@ -1771,9 +1771,9 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 3 + M damage; push 2; M < WEAK prone
-- **12-16:** 5 + M damage; push 3; M < AVERAGE prone
-- **17+:** 8 + M damage; push 4; M < STRONG prone
+- **≤11:** 3 + M damage; push 2; M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 5 + M damage; push 3; M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 8 + M damage; push 4; M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone)
 
 **Effect:** If the target is force moved at least 1 square, an enemy adjacent to the target at the end of this forced movement is also targeted by this ability's power roll, but they don't trigger this effect.
 
@@ -1803,9 +1803,9 @@ Choose one of the following abilities.
 
 **Power Roll + Intuition:**
 
-- **≤11:** 6 + I fire or lightning damage; M < WEAK prone
-- **12-16:** 9 + I fire or lightning damage; M < AVERAGE prone
-- **17+:** 14 + I fire or lightning damage; M < STRONG prone and can't stand (EoT)
+- **≤11:** 6 + I fire or lightning damage; M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 9 + I fire or lightning damage; M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 14 + I fire or lightning damage; M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
 
 **Spend 1 Ferocity:** If you are within distance of the target, you can use a free maneuver to wield a second whip, dealing extra fire or lightning damage equal to your Intuition score.
 
@@ -1854,9 +1854,9 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Power Roll + Might:**
 
-- **≤11:** P < WEAK frightened (save ends)
-- **12-16:** 4 psychic damage; P < AVERAGE frightened (save ends)
-- **17+:** 8 psychic damage; P < STRONG frightened (save ends)
+- **≤11:** P < WEAK [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **12-16:** 4 psychic damage; P < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **17+:** 8 psychic damage; P < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 <!-- @type: ability | @id: head-to-head | @level: 3 | @cost: 7 Ferocity -->
 #### Head to Head
@@ -1869,11 +1869,11 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 13 + M damage; P < WEAK dazed (save ends)
-- **12-16:** 19 + M damage; P < AVERAGE dazed (save ends)
-- **17+:** 25 + M damage; P < STRONG dazed (save ends)
+- **≤11:** 13 + M damage; P < WEAK [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+- **12-16:** 19 + M damage; P < AVERAGE [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+- **17+:** 25 + M damage; P < STRONG [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-**Effect:** You are bleeding (save ends). Until the end of your next turn, your companion gains an edge on power rolls.
+**Effect:** You are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Until the end of your next turn, your companion gains an edge on power rolls.
 
 <!-- @type: ability | @id: jaws-of-death | @level: 3 | @cost: 7 Ferocity -->
 #### Jaws of Death
@@ -1886,11 +1886,11 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Power Roll + Intuition:**
 
-- **≤11:** 7 + I damage; P < WEAK weakened (save ends)
-- **12-16:** 10 + I damage; P < AVERAGE weakened (save ends)
-- **17+:** 14 + I damage; P < STRONG weakened (save ends)
+- **≤11:** 7 + I damage; P < WEAK [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **12-16:** 10 + I damage; P < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **17+:** 14 + I damage; P < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
-**Effect:** Whenever a target more than 3 squares away from you fails the saving throw while weakened this way, you can pull the target up to a number of squares equal to your Intuition score as a free triggered action.
+**Effect:** Whenever a target more than 3 squares away from you fails the saving throw while [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, you can pull the target up to a number of squares equal to your Intuition score as a free triggered action.
 
 <!-- @type: ability | @id: shieldbreaker | @level: 3 | @cost: 7 Ferocity -->
 #### Shieldbreaker
@@ -2006,9 +2006,9 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 10 + M damage; M < WEAK grabbed and prone
-- **12-16:** 15 + M damage; M < AVERAGE grabbed and prone
-- **17+:** 20 + M damage; M < STRONG grabbed and prone
+- **≤11:** 10 + M damage; M < WEAK [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 15 + M damage; M < AVERAGE [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 20 + M damage; M < STRONG [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and [prone](scc:mcdm.heroes.v1/condition/prone)
 
 **Effect:** Each ally adjacent to the target can use a free triggered action to deal damage to the target equal to their highest characteristic score.
 
@@ -2023,9 +2023,9 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 10 + M damage; vertical push 4; prone
-- **12-16:** 15 + M damage; vertical push 6; prone
-- **17+:** 20 + M damage; vertical push 8; prone
+- **≤11:** 10 + M damage; vertical push 4; [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 15 + M damage; vertical push 6; [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 20 + M damage; vertical push 8; [prone](scc:mcdm.heroes.v1/condition/prone)
 
 **Effect:** If your companion is adjacent to the target, this forced movement can ignore the target's stability.
 
@@ -2040,11 +2040,11 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 **Power Roll + Might:**
 
-- **≤11:** 11 + M damage; M < WEAK bleeding (save ends)
-- **12-16:** 17 + M damage; M < AVERAGE bleeding (save ends)
-- **17+:** 22 + M damage; M < STRONG bleeding (save ends)
+- **≤11:** 11 + M damage; M < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+- **12-16:** 17 + M damage; M < AVERAGE [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+- **17+:** 22 + M damage; M < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-**Effect:** If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has P < AVERAGE is frightened (save ends).
+**Effect:** If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has P < AVERAGE is [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
 
 ## 6th-Level Features
 
@@ -2079,9 +2079,9 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 11 + M damage; taunted (save ends); M < WEAK prone
-- **12-16:** 16 + M damage; taunted (save ends); M < AVERAGE prone
-- **17+:** 21 + M damage; taunted (save ends); M < STRONG prone and can't stand (EoT)
+- **≤11:** 11 + M damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends); M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 16 + M damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends); M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 21 + M damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends); M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
 
 **Spend 2 Ferocity:** Your companion can use this ability as a triggered action against an enemy who damages you.
 
@@ -2094,13 +2094,13 @@ Choose one of the following abilities.
 |------------------------------|--------------------:|
 | **📏 Ranged 5**              | **🎯 One creature** |
 
-**Effect:** The first time the target uses a move action, main action, maneuver, or triggered action before the start of your next turn, your companion makes the following power roll before the target acts. If the target hasn't acted before the start of your next turn, they are frightened of your companion (save ends).
+**Effect:** The first time the target uses a move action, main action, maneuver, or triggered action before the start of your next turn, your companion makes the following power roll before the target acts. If the target hasn't acted before the start of your next turn, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of your companion (save ends).
 
 **Power Roll + Intuition:**
 
-- **≤11:** 9 + I psychic damage; I < WEAK weakened (save ends)
-- **12-16:** 13 + I psychic damage; I < AVERAGE weakened (save ends)
-- **17+:** 18 + I psychic damage; I < STRONG weakened (save ends)
+- **≤11:** 9 + I psychic damage; I < WEAK [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **12-16:** 13 + I psychic damage; I < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+- **17+:** 18 + I psychic damage; I < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 #### 6th-Level Prowler Abilities
 
@@ -2117,11 +2117,11 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 10 + M damage; A < WEAK bleeding (save ends)
-- **12-16:** 15 + M damage; A < AVERAGE bleeding (save ends)
-- **17+:** 20 + M damage; A < STRONG bleeding (save ends)
+- **≤11:** 10 + M damage; A < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+- **12-16:** 15 + M damage; A < AVERAGE [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+- **17+:** 20 + M damage; A < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-**Effect:** While bleeding this way, the target has damage weakness 5.
+**Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target has damage weakness 5.
 
 <!-- @type: ability | @id: wraith-heart | @level: 6 | @cost: 9 Ferocity | @subclass: prowler -->
 #### Wraith Heart
@@ -2162,9 +2162,9 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 9 sonic damage; M < WEAK prone
-- **12-16:** 13 sonic damage; M < AVERAGE prone
-- **17+:** 18 sonic damage; M < STRONG prone
+- **≤11:** 9 sonic damage; M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 13 sonic damage; M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 18 sonic damage; M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone)
 
 **Spend 2 Ferocity:** You can move up to your speed. The power roll also targets each enemy you come adjacent to during the move.
 
@@ -2202,11 +2202,11 @@ Your companion's transformation lasts until the start of your next turn. At the 
 
 **Power Roll + Might:**
 
-- **≤11:** 5 cold damage; I < WEAK restrained (save ends)
-- **12-16:** 7 cold damage; I < AVERAGE restrained (save ends)
-- **17+:** 12 cold damage; I < STRONG restrained (save ends)
+- **≤11:** 5 cold damage; I < WEAK [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+- **12-16:** 7 cold damage; I < AVERAGE [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+- **17+:** 12 cold damage; I < STRONG [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
-**Effect:** While restrained this way, a creature takes 5 cold damage at the start of each of your turns. A creature killed by this ability becomes an ice statue and their space is difficult terrain.
+**Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, a creature takes 5 cold damage at the start of each of your turns. A creature killed by this ability becomes an ice statue and their space is difficult terrain.
 
 ## 7th-Level Features
 
@@ -2309,7 +2309,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 - **12-16:** 15 + M damage
 - **17+:** 25 + M damage
 
-**Effect:** Your companion can use this ability against an adjacent target, making their own power roll. Both power rolls gain an edge if either of you is bleeding, dying, or winded, and your power roll has a double edge if your companion is dead or otherwise unable to act.
+**Effect:** Your companion can use this ability against an adjacent target, making their own power roll. Both power rolls gain an edge if either of you is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), dying, or winded, and your power roll has a double edge if your companion is dead or otherwise unable to act.
 
 <!-- @type: ability | @id: ride-or-die | @level: 8 | @cost: 11 Ferocity -->
 #### Ride or Die
@@ -2346,7 +2346,7 @@ As a 9th-level beastheart, you gain the following features.
 <!-- @type: feature | @id: avatar-of-the-green | @level: 9 -->
 #### Avatar of the Green
 
-Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the Nature skill and one other skill from the lore skill group.
+Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the [Nature](scc:mcdm.heroes.v1/skill/nature) skill and one other skill from the lore skill group.
 
 ## 9th-Level Wild Nature Ability
 
@@ -2367,11 +2367,11 @@ Choose one of the following abilities.
 
 **Power Roll + Intuition:**
 
-- **≤11:** 5 sonic damage; I < WEAK frightened (save ends)
-- **12-16:** 10 sonic damage; I < AVERAGE frightened (save ends)
-- **17+:** 15 sonic damage; I < STRONG frightened (save ends)
+- **≤11:** 5 sonic damage; I < WEAK [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **12-16:** 10 sonic damage; I < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **17+:** 15 sonic damage; I < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
-**Effect:** While frightened this way, a creature takes 10 psychic damage at the start of each of your turns.
+**Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, a creature takes 10 psychic damage at the start of each of your turns.
 
 **Spend 1 Ferocity:** This ability also affects a 3 burst originating from you. An enemy in both areas is only affected once.
 
@@ -2386,11 +2386,11 @@ Choose one of the following abilities.
 
 **Power Roll + Might:**
 
-- **≤11:** 11 + M damage; P < WEAK taunted (save ends)
-- **12-16:** 17 + M damage; P < AVERAGE taunted (save ends)
-- **17+:** 22 + M damage; P < STRONG taunted (save ends)
+- **≤11:** 11 + M damage; P < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
+- **12-16:** 17 + M damage; P < AVERAGE [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
+- **17+:** 22 + M damage; P < STRONG [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
 
-**Effect:** While the target is taunted this way, all creatures except your companion have immunity 10 to damage dealt by the target.
+**Effect:** While the target is [taunted](scc:mcdm.heroes.v1/condition/taunted) this way, all creatures except your companion have immunity 10 to damage dealt by the target.
 
 #### 9th-Level Prowler Abilities
 
@@ -2409,9 +2409,9 @@ Choose one of the following abilities.
 
 **Power Roll + Intuition:**
 
-- **≤11:** 13 + I psychic damage; P < WEAK frightened (save ends)
-- **12-16:** 20 + I psychic damage; P < AVERAGE frightened (save ends)
-- **17+:** 27 + I psychic damage; P < STRONG frightened (save ends)
+- **≤11:** 13 + I psychic damage; P < WEAK [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **12-16:** 20 + I psychic damage; P < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+- **17+:** 27 + I psychic damage; P < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 <!-- @type: ability | @id: lets-take-this-outside | @level: 9 | @cost: 11 Ferocity | @subclass: prowler -->
 #### Let's Take This Outside
@@ -2464,9 +2464,9 @@ A battle-frenzied creature must use a free triggered action to make a melee free
 
 **Power Roll + Intuition:**
 
-- **≤11:** 9 damage; vertical slide 2; M < WEAK prone
-- **12-16:** 13 damage; vertical slide 4; M < AVERAGE prone
-- **17+:** 18 damage; vertical slide 6; M < STRONG prone
+- **≤11:** 9 damage; vertical slide 2; M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone)
+- **12-16:** 13 damage; vertical slide 4; M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
+- **17+:** 18 damage; vertical slide 6; M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone)
 
 **Effect:** Your companion can forgo dealing damage to targets of your choice.
 
@@ -2698,7 +2698,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **5th Level:** The armor's bonus to Stamina increases to +12, and its bonus to stability increases to +2. Additionally, when a creature is force moved into you or your companion, whoever was collided with takes no damage.
 
-**9th Level:** The armor's bonus to Stamina increases to +21, and its bonus to stability increases to +3. When you or your companion pushes a creature using this armor's feature, the creature takes damage equal to twice the pusher's Might score and is knocked prone.
+**9th Level:** The armor's bonus to Stamina increases to +21, and its bonus to stability increases to +3. When you or your companion pushes a creature using this armor's feature, the creature takes damage equal to twice the pusher's Might score and is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: treasure | @id: pack-harness -->
 #### Pack Harness
@@ -2751,11 +2751,11 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **Project Goal:** 450
 
-**1st Level:** Only a beastheart can wear this armor. While you wear this armor, you gain a +6 bonus to Stamina, and when a creature starts their turn either grabbed by or grabbing you or your companion, they are bleeding until the end of their next turn.
+**1st Level:** Only a beastheart can wear this armor. While you wear this armor, you gain a +6 bonus to Stamina, and when a creature starts their turn either [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by or grabbing you or your companion, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
 **5th Level:** The armor's bonus to Stamina increases to +12. Additionally, you or your companion can use a maneuver to latch onto a creature or object of size 1L or smaller within 3 squares with thorned vines, pulling the target 3 squares.
 
-**9th Level:** The armor's bonus to Stamina increases to +21, and whenever you or your companion pulls a creature with thorned vines using the armor, the target also takes 5 damage and is grabbed by whoever force moved them.
+**9th Level:** The armor's bonus to Stamina increases to +21, and whenever you or your companion pulls a creature with thorned vines using the armor, the target also takes 5 damage and is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by whoever force moved them.
 
 ## Leveled Weapon Treasures
 
@@ -2795,7 +2795,7 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **1st Level:** Only a beastheart can wield this weapon. Any weapon ability that deals rolled damage using this weapon deals an extra 1 damage. Additionally, your abilities with the Melee and Weapon keywords also gain the Charge keyword.
 
-**5th Level:** The weapon's extra damage increases to 2. Additionally, whenever you or your companion uses the Charge main action and obtains a tier 3 outcome with an ability, whoever used the action can either knock the target prone, push them 2 squares or increase the distance of a push made as part of the charge, or deal extra damage equal to their own Might score.
+**5th Level:** The weapon's extra damage increases to 2. Additionally, whenever you or your companion uses the Charge main action and obtains a tier 3 outcome with an ability, whoever used the action can either knock the target [prone](scc:mcdm.heroes.v1/condition/prone), push them 2 squares or increase the distance of a push made as part of the charge, or deal extra damage equal to their own Might score.
 
 **9th Level:** The weapon's extra damage increases to 3. Additionally, when you or your companion uses the Charge main action, the movement doesn't provoke opportunity attacks.
 
@@ -2812,9 +2812,9 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **1st Level:** Only a beastheart can wield this weapon. Any weapon ability that deals rolled damage using this weapon deals an extra 1 damage. Additionally, you and your companion gain a +1 bonus to melee distance.
 
-**5th Level:** The weapon's extra damage increases to 2. Additionally, whenever you or your companion grabs a creature or a creature grabs either of you, the creature is bleeding (save ends).
+**5th Level:** The weapon's extra damage increases to 2. Additionally, whenever you or your companion grabs a creature or a creature grabs either of you, the creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
-**9th Level:** The weapon's extra damage increases to 3. Additionally, whenever you or your companion causes a creature to become bleeding or uses an ability that deals damage to a bleeding creature, you can each spend a Recovery.
+**9th Level:** The weapon's extra damage increases to 3. Additionally, whenever you or your companion causes a creature to become [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or uses an ability that deals damage to a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature, you can each spend a Recovery.
 
 <!-- @type: treasure | @id: scorpion-tails -->
 #### Scorpion Tails
