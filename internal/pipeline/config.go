@@ -12,14 +12,14 @@ import (
 
 // Config represents the full pipeline.yaml configuration.
 type Config struct {
-	Book           string              `yaml:"book"`
-	Input          string              `yaml:"input"`
-	Locale         string              `yaml:"locale"`
-	I18nDir        string              `yaml:"i18n_dir"` // e.g., "./input/i18n" — locale input files live at {i18n_dir}/{locale}/...
+	Book           string               `yaml:"book"`
+	Input          string               `yaml:"input"`
+	Locale         string               `yaml:"locale"`
+	I18nDir        string               `yaml:"i18n_dir"` // e.g., "./input/i18n" — locale input files live at {i18n_dir}/{locale}/...
 	Classification ClassificationConfig `yaml:"classification"`
-	Output         OutputConfig        `yaml:"output"`
-	Parsers        ParsersConfig       `yaml:"parsers"`
-	Books          []BookConfig        `yaml:"books"`
+	Output         OutputConfig         `yaml:"output"`
+	Parsers        ParsersConfig        `yaml:"parsers"`
+	Books          []BookConfig         `yaml:"books"`
 
 	// Resolved paths (set after loading)
 	ConfigDir string `yaml:"-"`
@@ -95,6 +95,32 @@ type BookConfig struct {
 	Book   string       `yaml:"book"`
 	Input  string       `yaml:"input"`
 	Output OutputConfig `yaml:"output"`
+}
+
+// EffectiveBookConfig returns a copy of the base config specialized for a
+// secondary book. It inherits the base output formats and variants but
+// overrides the book identity, input, and output base dir. Shared outputs
+// (aggregate, SCC API, SCC map, stripped) are disabled so that generating a
+// secondary book never clobbers the primary book's shared targets.
+func (c *Config) EffectiveBookConfig(b BookConfig) *Config {
+	eff := *c
+	eff.Book = b.Book
+	eff.Input = b.Input
+
+	out := c.Output
+	if b.Output.BaseDir != "" {
+		out.BaseDir = b.Output.BaseDir
+	}
+	if len(b.Output.Formats) > 0 {
+		out.Formats = b.Output.Formats
+	}
+	out.Aggregate.Enabled = false
+	out.SCCAPI.Enabled = false
+	out.SCCMap.Enabled = false
+	out.Stripped.Enabled = false
+	eff.Output = out
+
+	return &eff
 }
 
 // LoadConfig reads and parses a pipeline.yaml file.

@@ -51,6 +51,48 @@ func runGen(cmd *cobra.Command, args []string) error {
 		cfg.Output.LinkMode = linkMode
 	}
 
+	// Select which book(s) to generate. By default only the primary book is
+	// generated; --all generates the primary plus every secondary book, and
+	// --book <id> generates a single named book.
+	bookFilter, _ := cmd.Flags().GetString("book")
+	all, _ := cmd.Flags().GetBool("all")
+
+	configs, err := selectBookConfigs(cfg, bookFilter, all)
+	if err != nil {
+		return err
+	}
+
+	for _, bookCfg := range configs {
+		if err := generateBook(bookCfg); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+// selectBookConfigs resolves the gen flags into the list of book configs to run.
+func selectBookConfigs(cfg *pipeline.Config, bookFilter string, all bool) ([]*pipeline.Config, error) {
+	if all {
+		configs := []*pipeline.Config{cfg}
+		for _, b := range cfg.Books {
+			configs = append(configs, cfg.EffectiveBookConfig(b))
+		}
+		return configs, nil
+	}
+
+	if bookFilter != "" && bookFilter != cfg.Book {
+		for _, b := range cfg.Books {
+			if b.Book == bookFilter {
+				return []*pipeline.Config{cfg.EffectiveBookConfig(b)}, nil
+			}
+		}
+		return nil, fmt.Errorf("book %q not found in config", bookFilter)
+	}
+
+	return []*pipeline.Config{cfg}, nil
+}
+
+func generateBook(cfg *pipeline.Config) error {
 	// Resolve paths
 	inputPath := cfg.ResolveInputPath()
 	registryPath := ""
