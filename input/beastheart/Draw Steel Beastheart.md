@@ -2061,132 +2061,126 @@ You gain one exploration, interpersonal, or intrigue perk of your choice.
 
 Your companion's rampage burns in your brain, and you become part beast yourself. You gain the level 6 advancement feature granted by your companion's stat block.
 
-## **6th-Level Wild Nature Ability**
+## 6th-Level Wild Nature Ability
 
 Your wild nature grants your choice of one of two heroic abilities.
 
-#### **6TH-LEVEL GUARDIAN ABILITIES**
+#### 6th-Level Guardian Abilities
 
 Choose one of the following abilities.
 
-#### Sic 'Em! (9 Ferocity)
+<!-- @type: ability | @id: sic-em | @level: 6 | @cost: 9 Ferocity | @subclass: guardian -->
+#### Sic 'Em!
 
-Your companion rushes forward to protect you from a dangerous foe.
+*Your companion rushes forward to protect you from a dangerous foe.*
 
-Charge, Companion, Melee, Strike, Weapon Melee 1
+| **Charge, Companion, Melee, Strike, Weapon** | **Main action** |
+|----------------------------------------------|----------------:|
+| **📏 Melee 1**                               | **🎯 One creature** |
 
-Main action One creature
+**Power Roll + Might:**
 
-Melee 1
+- **≤11:** 11 + M damage; taunted (save ends); M < WEAK prone
+- **12-16:** 16 + M damage; taunted (save ends); M < AVERAGE prone
+- **17+:** 21 + M damage; taunted (save ends); M < STRONG prone and can't stand (EoT)
 
-Power Roll + Might:
+**Spend 2 Ferocity:** Your companion can use this ability as a triggered action against an enemy who damages you.
 
-≤11 11 + M damage; taunted (save ends); M<WEAK prone
-</p>
+<!-- @type: ability | @id: stare-down | @level: 6 | @cost: 9 Ferocity | @subclass: guardian -->
+#### Stare Down
 
-12-16 16 + M damage; taunted (save ends); M<AVERAGE prone
+*Your companion locks eyes with an enemy, imposing their will upon the enemy and daring them to move a muscle.*
 
-17+ 21 + M damage; taunted (save ends); M<STRONG prone and
+| **Companion, Magic, Ranged** |        **Maneuver** |
+|------------------------------|--------------------:|
+| **📏 Ranged 5**              | **🎯 One creature** |
 
-Spend 2 Ferocity: Your companion can use this ability as a triggered action against an enemy who damages you.
+**Effect:** The first time the target uses a move action, main action, maneuver, or triggered action before the start of your next turn, your companion makes the following power roll before the target acts. If the target hasn't acted before the start of your next turn, they are frightened of your companion (save ends).
 
-#### Stare Down (9 Ferocity)
+**Power Roll + Intuition:**
 
-Your companion locks eyes with an enemy, imposing their will upon the enemy and daring them to move a muscle.
+- **≤11:** 9 + I psychic damage; I < WEAK weakened (save ends)
+- **12-16:** 13 + I psychic damage; I < AVERAGE weakened (save ends)
+- **17+:** 18 + I psychic damage; I < STRONG weakened (save ends)
 
-Companion, Magic, Ranged Maneuver Ranged 5 One creature
-
-Effect: The first time the target uses a move action, main action, maneuver, or triggered action before the start of your next turn, your companion makes the following power roll before the target acts. If the target hasn't acted before the start of your next turn, they are frightened of your companion (save ends).
-
-#### Power Roll + Intuition:
-
-9 + psychic damage; I<WEAK weakened (save ends)
-
-13 + 1 psychic damage; I<AVERAGE weakened (save ends)
-
-18 + I psychic damage; I<STRONG weakened (save ends)
-
-#### **6TH-LEVEL PROWLER ABILITIES**
+#### 6th-Level Prowler Abilities
 
 Choose one of the following abilities.
 
-## Soft Underbelly (9 Ferocity)
+<!-- @type: ability | @id: soft-underbelly | @level: 6 | @cost: 9 Ferocity | @subclass: prowler -->
+#### Soft Underbelly
 
-Your companion ducks under your enemy's guard and rakes open their soft vitals, leaving them vulnerable.
+*Your companion ducks under your enemy's guard and rakes open their soft vitals, leaving them vulnerable.*
 
-Companion, Melee, Strike, Weapon
+| **Companion, Melee, Strike, Weapon** | **Main action** |
+|--------------------------------------|----------------:|
+| **📏 Melee 2**                       | **🎯 One creature** |
 
-Main action **ô** One creature
+**Power Roll + Might:**
 
-Move
+- **≤11:** 10 + M damage; A < WEAK bleeding (save ends)
+- **12-16:** 15 + M damage; A < AVERAGE bleeding (save ends)
+- **17+:** 20 + M damage; A < STRONG bleeding (save ends)
 
-്**ട്)** Self
+**Effect:** While bleeding this way, the target has damage weakness 5.
 
-Melee 2
+<!-- @type: ability | @id: wraith-heart | @level: 6 | @cost: 9 Ferocity | @subclass: prowler -->
+#### Wraith Heart
 
-Power Roll + Might:
+*You and your companion become soul-freezing wraiths.*
 
-10 + M damage; A < WEAK bleeding (save ends)
+| **Magic**   |    **Move** |
+|-------------|------------:|
+| **📏 Self** | **🎯 Self** |
 
-15 + M damage; A < AVERAGE bleeding (save ends)
+**Effect:** You and your companion shift up to your speeds. During this movement, you are both invisible, can move through enemies and objects, and ignore difficult terrain. You each deal corruption damage equal to your own Intuition score to each enemy you pass through during this movement. You can both damage each enemy once this way.
 
-17+ 20 + M damage; A < STRONG bleeding (save ends)
-
-Effect: While bleeding this way, the target has damage weakness 5.
-
-#### Wraith Heart (9 Ferocity)
-
-You and your companion become soul-freezing wraiths.
-
-Magic Self
-
-Effect: You and your companion shift up to your speeds. During this movement, you are both invisible, can move through enemies and objects, and ignore difficult terrain. You each deal corruption damage equal to your own Intuition score to each enemy you pass through during this movement. You can both damage each enemy once this way.
-
-#### **6TH-LEVEL PUNISHER ABILITIES**
+#### 6th-Level Punisher Abilities
 
 Choose one of the following abilities.
 
-#### Lead the Pack (9 Ferocity)
+<!-- @type: ability | @id: lead-the-pack | @level: 6 | @cost: 9 Ferocity | @subclass: punisher -->
+#### Lead the Pack
 
-Roaring like wild beasts, your companion and your allies rush toward
+*Roaring like wild beasts, your companion and your allies rush toward the foe.*
 
-Companion Maneuver ▲ Self Self
+| **Companion** |   **Maneuver** |
+|---------------|---------------:|
+| **📏 Self**   | **🎯 Self**    |
 
-Effect: Your companion shifts up to their speed and can make a melee free strike. As a free triggered action, you and up to 10 allies within 10 squares of your companion's starting position can shift up to their speed and make free strikes.
+**Effect:** Your companion shifts up to their speed and can make a melee free strike. As a free triggered action, you and up to 10 allies within 10 squares of your companion's starting position can shift up to their speed and make free strikes.
 
-#### Rolling Thunder (9 Ferocity)
+<!-- @type: ability | @id: rolling-thunder | @level: 6 | @cost: 9 Ferocity | @subclass: punisher -->
+#### Rolling Thunder
 
-The rumble of your companion's dash is a rolling thunderclap, their impact an earthquake.
+*The rumble of your companion's dash is a rolling thunderclap, their impact an earthquake.*
 
-Companion, Magic, Melee, Strike Main action
+| **Companion, Magic, Melee, Strike** | **Main action** |
+|-------------------------------------|----------------:|
+| **📏 Self**                         | **🎯 Self**     |
 
-▲ Self Self.
+**Effect:** Your companion shifts up to their speed and makes one power roll that targets each enemy they come adjacent to during the shift. If your companion targets only one enemy with this ability, the power roll gains an edge.
 
-Effect: Your companion shifts up to their speed and makes one power roll that targets each enemy they come adjacent to during the shift. If your companion targets only one enemy with this ability, the power roll gains an edge.
+**Power Roll + Might:**
 
-#### Power Roll + Might:
+- **≤11:** 9 sonic damage; M < WEAK prone
+- **12-16:** 13 sonic damage; M < AVERAGE prone
+- **17+:** 18 sonic damage; M < STRONG prone
 
-≤11 9 sonic damage; M<WEAK prone
+**Spend 2 Ferocity:** You can move up to your speed. The power roll also targets each enemy you come adjacent to during the move.
 
-(12-16) 13 sonic damage; M<AVERAGE prone
-
-17+ 18 sonic damage; M<STRONG prone
-
-Spend 2 Ferocity: You can move up to your speed. The power roll also targets each enemy you come adjacent to during the move.
-
-#### **6TH-LEVEL SPARK ABILITIES**
+#### 6th-Level Spark Abilities
 
 Choose one of the following abilities.
 
-## E
+<!-- @type: ability | @id: elements-unleashed | @level: 6 | @cost: 9 Ferocity | @subclass: spark -->
+#### Elements Unleashed
 
-#### **Elements Unleashed (9 Ferocity)**
+*Your companion's body becomes a bank of glowing coals, a web of arcing lightning, a cloud of rumbling thunder, or a flurry of dancing ice crystals.*
 
-Your companion's body becomes a bank of glowing coals, a web of arcing lightning, a cloud of rumbling thunder, or a flurry of dancing ice crystals.
-
-Companion, Magic
-
-Self
+| **Companion, Magic** | **Maneuver** |
+|----------------------|-------------:|
+| **📏 Self**          | **🎯 Self**  |
 
 **Effect:** Your companion transforms into a creature made of elemental energy. Choose a damage type from cold, fire, lightning, or sonic damage. While transformed, your companion gains the following benefits:
 
@@ -2196,33 +2190,22 @@ Self
 
 Your companion's transformation lasts until the start of your next turn. At the start of each of your turns, you can spend 3 ferocity to extend the transformation's duration for one turn. When you do so, you can change the chosen damage type.
 
-Spend 2 Ferocity: You also transform.
+**Spend 2 Ferocity:** You also transform.
 
-![](_page_35_Picture_13.jpeg)
+<!-- @type: ability | @id: killing-frost | @level: 6 | @cost: 9 Ferocity | @subclass: spark -->
+#### Killing Frost
 
-#### **Killing Frost (9 Ferocity)**
+*Black frost freezes boots to the floor and creeps up trapped victims until they're completely encased in ice.*
 
-Black frost freezes boots to the floor and creeps up trapped victims until they're completely encased in ice.
+| **Area, Companion, Magic** |              **Main action** |
+|----------------------------|-----------------------------:|
+| **📏 5 cube within 1**     | **🎯 Each enemy in the area** |
 
-Area, Companion, Magic
+**Power Roll + Might:**
 
-Main action
-
-Maneuver
-
-Self
-
-5 cube within 1
-
-**S** Each enemy in the area
-
-#### Power Roll + Might:
-
-5 cold damage; I<WEAK restrained (save ends)
-
-7 cold damage; I<AVERAGE restrained (save ends)
-
-17+ 12 cold damage; I<STRONG restrained (save ends)
+- **≤11:** 5 cold damage; I < WEAK restrained (save ends)
+- **12-16:** 7 cold damage; I < AVERAGE restrained (save ends)
+- **17+:** 12 cold damage; I < STRONG restrained (save ends)
 
 **Effect:** While restrained this way, a creature takes 5 cold damage at the start of each of your turns. A creature killed by this ability becomes an ice statue and their space is difficult terrain.
 
