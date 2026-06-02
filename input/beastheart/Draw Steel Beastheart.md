@@ -332,6 +332,7 @@ If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](http
 | 9th                        | Avatar of the Green, Wild Nature Ability                                                                                                                                | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
 | 10th                       | Characteristic Increase, Companion Advancement Feature, Final Evolution, Perk, Ferox, Rampage Improvement, Skill                                                     | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
 
+<!-- @type: feature | @id: companion | @level: 1 -->
 ## Companion
 
 You gain the companionship of a wild animal who travels with you. Your companion isn't your pet. Rather, they've forged a mystical bond with you—one that allows you to share your companion's senses and primal instincts.
@@ -343,6 +344,8 @@ Choose a companion from the following options. (*Quick Build:* Wolf.)
 Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the condor companion for an escaped Hawklord hawk, the wolf for a dog or jackal, or even the boar for a particularly ornery stag or elk.
 
 With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a hellhound you travel with a white wolf that deals cold damage instead of fire damage; maybe your elemental spark is an elemental ember that deals fire damage; or maybe your panther is a shadow whose Pounce maneuver deals corruption or cold damage.
+
+## Companion Stat Blocks
 
 <!-- @type: feature-group | @companion: basilisk | @level: 1 -->
 ### Basilisk
@@ -1119,7 +1122,8 @@ While the wolf is rampaging, you and the wolf gain a +2 bonus to speed, and crea
 
 While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are frightened until the end of their next turn.
 
-### Companion Rules
+<!-- @type: feature | @id: companion-rules | @level: 1 -->
+## Companion Rules
 
 - **Companion Stamina and Recoveries.** Your companion's Stamina maximum equals your Stamina maximum. Your companion has no Recoveries. When an effect would allow your companion to spend a Recovery, your companion spends one of your Recoveries.
 - **Companion Death.** A companion can become dying at 0 Stamina and die at negative half their Stamina, just like a hero.
@@ -1137,7 +1141,8 @@ While the wolf is rampaging, you and the wolf are surrounded by an aura of dread
 - **Changing Your Companion.** As a respite activity, you can release your current companion, then gain a new companion of a different species or summon a companion you previously released.
 - **One Hero.** You and your companion count as one hero for determining the difficulty of combats, montage tests, and other challenges.
 
-### Adding and Subtracting Actions
+<!-- @type: feature | @id: adding-and-subtracting-actions | @level: 1 -->
+## Adding and Subtracting Actions
 
 Although you and your companion share your action economy, you are treated as separate creatures for effects that grant or remove main actions, maneuvers, and move actions. For instance, the talent's Applied Chronometrics ability grants an extra maneuver. If both you and your companion are targeted by the ability, you both gain extra maneuvers.
 
@@ -1229,8 +1234,6 @@ Your companion doesn't spend rampage to activate abilities. Instead, when your c
 | 16 (4th level)  | When your companion uses their Feral Strike ability, they deal extra damage equal to their Intuition score to each target. You gain 1 additional surge for each ally damaged this way.                                                                                                                                                                                                                                                                            |
 | 20 (7th level)  | As a free maneuver, your companion can increase their size up to size 2, or increase their size by 1 if their original size is already 2 or larger. This size increase lasts until your companion’s rampage ends or they use a free maneuver to end it. While your companion’s size is increased, they gain a +2 bonus to speed and stability, the potencies of their abilities increase by 1, and the size of their Feral Strike ability’s burst increases by 1. |
 | 24 (10th level) | When your companion increases their size, they can increase it up to size 3, or increase their size by 1 if their original size is already 3 or larger. Whenever they make a power roll while their size is increased this way, they can roll 3d10 and discard the lowest roll.                                                                                                                                                                                   |
-
-![](_page_24_Picture_0.jpeg)
 
 <!-- @type: feature | @id: wild-nature-maneuver | @level: 1 -->
 ## Wild Nature Maneuver
@@ -1380,19 +1383,20 @@ You and your companion both gain the benefits of the kit, with the following exc
 - Only you can use the kit's signature ability, not your companion.
 - Your companion is always armed to the teeth. When choosing or changing a kit, your companion can choose between the melee damage bonus provided by the kit (if any) or a melee damage bonus of +0/+0/+4.
 
+<!-- @type: feature | @id: beasthearts-and-magic-treasure | @level: 1 -->
 #### Beasthearts and Magic Treasure
 
-#### Consumables
+##### Consumables
 
 Your companion can't use every consumable, but with your help, they can benefit from an edible or drinkable consumable, such as a Healing Potion. While using a kit, your companion can also benefit from a consumable that enhances a weapon, such as a Lachomp Tooth. When you use one of these kinds of consumables while you are adjacent to your companion, you can grant the benefit to your companion instead of yourself. You must take the action type required to use the consumable; no action is required of your companion.
 
-#### Trinkets
+##### Trinkets
 
 Your companion can't use trinkets that are designed to be worn by bipeds (such as cloaks, masks, and hats) or require words or gestures to activate. However, your companion can benefit from one necklace, pendant, collar, or other trinket with the Neck keyword that doesn't require any action to activate, such as a Necklace of the Bayou or one of the new magic trinkets presented in this document.
 
 You companion doesn't need to wear their trinket around their neck: a condor might wear a necklace wrapped around a talon, and a gelatinous sphere might carry it suspended inside their body!
 
-#### Leveled Items
+##### Leveled Items
 
 Although your companion can't wield a sword, they can benefit from a magic blade! When you wield and gain the benefits of a leveled weapon, armor, implement, or other item, your companion gains those same benefits as if they were wielding the treasure.
 
@@ -2164,12 +2168,6 @@ Choose one of the following abilities.
 
 **Spend 2 Ferocity:** You can move up to your speed. The power roll also targets each enemy you come adjacent to during the move.
 
-(12-16) 13 sonic damage; M<AVERAGE prone
-
-17+ 18 sonic damage; M<STRONG prone
-
-Spend 2 Ferocity: You can move up to your speed. The power roll also targets each enemy you come adjacent to during the move.
-
 #### 6th-Level Spark Abilities
 
 Choose one of the following abilities.
@@ -2471,16 +2469,6 @@ A battle-frenzied creature must use a free triggered action to make a melee free
 - **17+:** 18 damage; vertical slide 6; M < STRONG prone
 
 **Effect:** Your companion can forgo dealing damage to targets of your choice.
-
-#### Power Roll + Intuition:
-
-∮ 9 damage; vertical slide 2; M<WEAK prone
-
-13 damage; vertical slide 4; M<AVERAGE prone
-
-17+ 18 damage; vertical slide 6; M<STRONG prone
-
-Effect: Your companion can forgo dealing damage to targets of your choice.
 
 #### 9th-Level Spark Abilities
 
