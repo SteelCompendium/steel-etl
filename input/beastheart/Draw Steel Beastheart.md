@@ -1386,6 +1386,7 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Spend 1 Ferocity:** The forced movement distance is doubled.
 
+<!-- @type: feature | @id: kit | @level: 1 -->
 #### Kit
 
 You can use and gain the benefits of a kit. See the <u>Kits</u> chapter of Draw Steel: Heroes for more information.
@@ -1630,15 +1631,17 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 
 **Effect:** If you grab the target while your companion is adjacent to them, your companion can make a melee free strike against the target.
 
-#### <span id="page-29-0"></span>2nd-Level Features
+## 2nd-Level Features
 
 As a 2nd-level beastheart, you gain the following features.
 
+<!-- @type: feature | @id: perk | @level: 2 -->
 #### Perk
 
 You gain one exploration, interpersonal, or intrigue perk of your choice.
 
-## **Everyone's Best Friend**
+<!-- @type: feature | @id: everyones-best-friend | @level: 2 -->
+#### Everyone's Best Friend
 
 Your companion may not be much of a talker, but they've got a lifetime of experience surviving the dangers of the wild. They can offer aid in nearly any circumstance: helping exhausted travelers find their way, leading panicked villagers out of a burning building, or even providing a comforting nuzzle at just the right time. Once per round during a montage test, when you or another character makes a test, your companion can increase the tier outcome by one tier (to a maximum of tier 3).
 
@@ -1837,11 +1840,12 @@ Choose one of the following abilities.
 
 ![](_page_30_Picture_67.jpeg)
 
-## <span id="page-31-0"></span>**3rd-Level Features**
+## 3rd-Level Features
 
 As a 3rd-level beastheart, you gain the following features.
 
-## **Companion Advancement Feature**
+<!-- @type: feature | @id: companion-advancement-feature | @level: 3 -->
+#### Companion Advancement Feature
 
 Your companion gains the level 3 advancement feature granted by their stat block.
 
@@ -1919,33 +1923,36 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Effect:** The next creature who damages the target before the start of your next turn gains 3 surges, which they can use on the triggering damage.
 
-### 4th-Level Features
+## 4th-Level Features
 
 As a 4th-level beastheart, you gain the following features.
 
-#### **Characteristic Increase**
+<!-- @type: feature | @id: characteristic-increase | @level: 4 -->
+#### Characteristic Increase
 
 Your and your companion's Might and Intuition scores increase to 3.
 
+<!-- @type: feature | @id: perk | @level: 4 -->
 #### Perk
 
 You gain one perk of your choice.
 
-## Rampage Improvement
+<!-- @type: feature | @id: rampage-improvement | @level: 4 -->
+#### Rampage Improvement
 
 Your Rampage feature provides additional effects when your companion has 16 or more rampage.
 
+<!-- @type: feature | @id: skill | @level: 4 -->
 #### Skill
 
 You gain one skill of your choice.
 
-#### **Unleash the Beast**
+<!-- @type: feature | @id: unleash-the-beast | @level: 4 -->
+#### Unleash the Beast
 
 The first time each combat round that a creature adjacent to your companion takes damage, you gain 3 ferocity instead of 2 ferocity.
 
-![](_page_32_Picture_0.jpeg)
-
-## <span id="page-33-0"></span>**5th-Level Features**
+## 5th-Level Features
 
 As a 5th-level beastheart, you gain the following features.
 
@@ -1961,19 +1968,23 @@ Your wild nature grants you a feature, as shown on the 5th-Level Wild Nature Fea
 | Punisher                           | I Can Take It        |
 | Spark                              | Wildfire Pyre        |
 
-#### I CAN TAKE IT
+<!-- @type: feature | @id: i-can-take-it | @level: 5 -->
+#### I Can Take It
 
 When you or your companion uses your Thunderclap ability and halves the triggering damage, whoever uses the ability can take the remaining damage instead of the original target. The damage is transferred before immunity and weakness are applied.
 
-#### **MELT AWAY**
+<!-- @type: feature | @id: melt-away | @level: 5 -->
+#### Melt Away
 
 You or your companion can use your Shadow in the Mist ability even when targeted by the triggering ability.
 
-#### THERE FOR EACH OTHER
+<!-- @type: feature | @id: there-for-each-other | @level: 5 -->
+#### There For Each Other
 
 When you or your companion uses your The Pack Defends ability to spend a Recovery, you and the target both regain Stamina.
 
-#### **WILDFIRE PYRE**
+<!-- @type: feature | @id: wildfire-pyre | @level: 5 -->
+#### Wildfire Pyre
 
 When you or your companion deals damage with your Pyre ability, each enemy adjacent to either of you takes the damage.
 
@@ -2049,15 +2060,17 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 **Effect:** If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has P < AVERAGE is frightened (save ends).
 
-## <span id="page-34-0"></span>**6th-Level Features**
+## 6th-Level Features
 
 As a 6th-level beastheart, you gain the following features.
 
+<!-- @type: feature | @id: perk | @level: 6 -->
 #### Perk
 
 You gain one exploration, interpersonal, or intrigue perk of your choice.
 
-#### **Become the Beast**
+<!-- @type: feature | @id: become-the-beast | @level: 6 -->
+#### Become the Beast
 
 Your companion's rampage burns in your brain, and you become part beast yourself. You gain the level 6 advancement feature granted by your companion's stat block.
 
@@ -2213,27 +2226,27 @@ Your companion's transformation lasts until the start of your next turn. At the 
 
 As a 7th-level beastheart, you gain the following features.
 
-#### **Characteristic Increase**
+<!-- @type: feature | @id: characteristic-increase | @level: 7 -->
+#### Characteristic Increase
 
 Each of your and your companion's characteristic scores increases by 1, to a maximum of 4.
 
-#### **Feral Heart**
+<!-- @type: feature | @id: feral-heart | @level: 7 -->
+#### Feral Heart
 
 At the start of each of your turns in combat, you gain 1d3 + 1 ferocity instead of 1d3.
 
-## **Rampage Improvement**
+<!-- @type: feature | @id: rampage-improvement | @level: 7 -->
+#### Rampage Improvement
 
 Your Rampage feature provides additional effects when your companion has 20 or more rampage.
 
+<!-- @type: feature | @id: skill | @level: 7 -->
 #### Skill
 
 You gain one skill of your choice.
 
-![](_page_35_Picture_35.jpeg)
-
-<span id="page-36-0"></span>![](_page_36_Picture_0.jpeg)
-
-## <span id="page-37-0"></span>**8th-Level Features**
+## 8th-Level Features
 
 As an 8th-level beastheart, you gain the following features.
 
@@ -2249,23 +2262,28 @@ Your wild nature grants you a feature, as shown on the 8th-Level Wild Nature Fea
 | Punisher                           | Built for Violence      |
 | Spark                              | Nature Will Not Harm Us |
 
-#### **BORN TO RUN**
+<!-- @type: feature | @id: born-to-run | @level: 8 -->
+#### Born to Run
 
 You and your companion gain a +2 bonus to speed.
 
-#### **BUILT FOR VIOLENCE**
+<!-- @type: feature | @id: built-for-violence | @level: 8 -->
+#### Built for Violence
 
 You and your companion gain a +2 damage bonus to maneuvers that deal damage. When you or your companion pushes a creature, you can vertical push that creature.
 
-#### **NATURE WILL NOT HARM US**
+<!-- @type: feature | @id: nature-will-not-harm-us | @level: 8 -->
+#### Nature Will Not Harm Us
 
 You and your companion have damage immunity 10 to cold, fire, lightning, and sonic damage.
 
-#### **REFLEXES PERFECTED**
+<!-- @type: feature | @id: reflexes-perfected | @level: 8 -->
+#### Reflexes Perfected
 
 Your and your companion's free strikes deal extra damage equal to your Intuition score. Whenever an adjacent enemy moves to a space that isn't adjacent, you or your companion can make an opportunity attack, even if the enemy shifted, teleported, was force moved, or another feature that doesn't provoke opportunity attacks.
 
-#### **Perk**
+<!-- @type: feature | @id: perk | @level: 8 -->
+#### Perk
 
 You gain one perk of your choice.
 
@@ -2335,11 +2353,12 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 
 **Spend 2+ Ferocity:** You can spend up to 6 ferocity. For every 2 ferocity spent, the size of the burst increases by 1, you gain a +2 bonus to the power roll, and you take 5 damage that can't be reduced in any way. You can choose how much ferocity you spend after you make the power roll.
 
-## <span id="page-38-0"></span>**9th-Level Features**
+## 9th-Level Features
 
 As a 9th-level beastheart, you gain the following features.
 
-#### **Avatar of the Green**
+<!-- @type: feature | @id: avatar-of-the-green | @level: 9 -->
+#### Avatar of the Green
 
 Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the Nature skill and one other skill from the lore skill group.
 
@@ -2515,23 +2534,28 @@ Your companion targets each enemy inside the pack's area during its movement onc
 
 As a 10th-level beastheart, you gain the following features.
 
-## **Characteristic Increase**
+<!-- @type: feature | @id: characteristic-increase | @level: 10 -->
+#### Characteristic Increase
 
 Your and your companion's Might and Intuition scores increase to 5.
 
-## **Companion Advancement Feature**
+<!-- @type: feature | @id: companion-advancement-feature | @level: 10 -->
+#### Companion Advancement Feature
 
 Your companion gains the level 10 advancement feature granted by their stat block.
 
-## **Final Evolution**
+<!-- @type: feature | @id: final-evolution | @level: 10 -->
+#### Final Evolution
 
 When you gain ferocity at the start of each of your turns during combat, you gain 2d3 + 1 ferocity instead of 1d3 + 1.
 
-## **Perk**
+<!-- @type: feature | @id: perk | @level: 10 -->
+#### Perk
 
 You gain one exploration, interpersonal, or intrigue perk of your choice.
 
-## **Ferox**
+<!-- @type: feature | @id: ferox | @level: 10 -->
+#### Ferox
 
 You have an epic resource called ferox. Each time you finish a respite, you gain ferox equal to the XP you gain. You can spend ferox on your abilities as if it were ferocity.
 
@@ -2539,11 +2563,13 @@ Additionally, you can spend 1 ferox as a free maneuver to allow you and your com
 
 Ferox remains until you spend it.
 
-## **Rampage Improvement**
+<!-- @type: feature | @id: rampage-improvement | @level: 10 -->
+#### Rampage Improvement
 
 Your Rampage feature provides additional effects when your companion has 24 or more rampage.
 
-## **Skill**
+<!-- @type: feature | @id: skill | @level: 10 -->
+#### Skill
 
 You gain one skill of your choice.
 
