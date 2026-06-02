@@ -266,7 +266,7 @@ Continued in *Between Sun & Shadow*.
 <!-- @type: class | @id: beastheart -->
 # The Beastheart Class
 
-A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a wolf, a basilisk, or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
+A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a [wolf](scc:mcdm.beastheart.v1/feature-group.companion/wolf), a [basilisk](scc:mcdm.beastheart.v1/feature-group.companion/basilisk), or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
 
 As a beastheart, you face the world's dangers alongside your wild companion. With your combined might, you rush into the thick of combat to challenge enemy champions or prowl around the outskirts to pick off vulnerable foes.
 
@@ -291,7 +291,7 @@ As a beastheart, you face the world's dangers alongside your wild companion. Wit
 
 **Recoveries:** 12
 
-**Skills:** You gain the Animal Handling skill. Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* Animal Handling, Navigate, Track.)
+**Skills:** You gain the Animal Handling skill. Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* Animal Handling, [Navigate](scc:mcdm.heroes.v1/skill/navigate), [Track](scc:mcdm.heroes.v1/skill/track).)
 
 ## 1st-Level Features
 
@@ -320,17 +320,17 @@ If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](http
 
 | ◆ Beastheart Advancement ◆ |                                                                                                                                                                         |                           |                       |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| Level                      | Features                                                                                                                                                                | Abilities                 | Wild Nature Abilities |
-| 1st                        | Wild Nature, Companion, Heart of the Beast, Feral Strike, Ferocity, Rampage, Wild Nature Maneuver, Wild Nature Triggered Action, Kit, Beastheart Abilities           | Signature, 3, 5           | —                     |
-| 2nd                        | Perk, Everyone’s Best Friend, Wild Nature Feature, Wild Nature Ability                                                                                                  | Signature, 3, 5,          | 5                     |
-| 3rd                        | Companion Advancement Feature, 7-Ferocity Ability                                                                                                                       | Signature, 3, 5, 7        | 5                     |
-| 4th                        | Characteristic Increase, Minion Improvement, Essence Salvage, Minion Chain, Perk, Skill Characteristic Increase, Perk, Rampage Improvement, Skill, Unleash the Beast | Signature, 3, 5, 7        | 5                     |
-| 5th                        | Wild Nature Feature, 9-Ferocity Ability                                                                                                                                 | Signature, 3, 5, 7, 9     | 5                     |
-| 6th                        | Perk, Become the Beast, Wild Nature Ability                                                                                                                             | Signature, 3, 5, 7, 9     | 5, 9                  |
-| 7th                        | Characteristic Increase, Feral Heart, Rampage Improvement, Skill                                                                                                        | Signature, 3, 5, 7, 9     | 5, 9                  |
-| 8th                        | Wild Nature Feature, Perk, 11-Ferocity Ability                                                                                                                          | Signature, 3, 5, 7, 9, 11 | 5, 9                  |
-| 9th                        | Avatar of the Green, Wild Nature Ability                                                                                                                                | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
-| 10th                       | Characteristic Increase, Companion Advancement Feature, Final Evolution, Perk, Ferox, Rampage Improvement, Skill                                                     | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
+| Level | Features | Abilities | Wild Nature Abilities |
+| 1st | [Wild Nature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature), [Companion](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/companion), [Heart of the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/heart-of-the-beast), [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike), [Ferocity](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/ferocity), [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage), [Wild Nature Maneuver](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-maneuver), [Wild Nature Triggered Action](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-triggered-action), [Kit](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/kit), [Beastheart Abilities](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/beastheart-abilities) | Signature, 3, 5 | — |
+| 2nd | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/perk), [Everyone’s Best Friend](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/everyones-best-friend), Wild Nature Feature, Wild Nature Ability | Signature, 3, 5 | 5 |
+| 3rd | [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-3/companion-advancement-feature), 7-Ferocity Ability | Signature, 3, 5, 7 | 5 |
+| 4th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/characteristic-increase), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/perk), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/skill), [Unleash the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/unleash-the-beast) | Signature, 3, 5, 7 | 5 |
+| 5th | Wild Nature Feature, 9-Ferocity Ability | Signature, 3, 5, 7, 9 | 5 |
+| 6th | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/perk), [Become the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/become-the-beast), Wild Nature Ability | Signature, 3, 5, 7, 9 | 5, 9 |
+| 7th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/characteristic-increase), [Feral Heart](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/feral-heart), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/skill) | Signature, 3, 5, 7, 9 | 5, 9 |
+| 8th | Wild Nature Feature, [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/perk), 11-Ferocity Ability | Signature, 3, 5, 7, 9, 11 | 5, 9 |
+| 9th | [Avatar of the Green](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-9/avatar-of-the-green), Wild Nature Ability | Signature, 3, 5, 7, 9, 11 | 5, 9, 11 |
+| 10th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/characteristic-increase), [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/companion-advancement-feature), [Final Evolution](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/final-evolution), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/perk), [Ferox](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/ferox), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/skill) | Signature, 3, 5, 7, 9, 11 | 5, 9, 11 |
 
 <!-- @type: feature | @id: companion | @level: 1 -->
 ## Companion
@@ -341,9 +341,9 @@ Choose a companion from the following options. (*Quick Build:* Wolf.)
 
 #### Customizing Your Companion
 
-Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the condor companion for an escaped Hawklord hawk, the wolf for a dog or jackal, or even the boar for a particularly ornery stag or elk.
+Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the [condor](scc:mcdm.beastheart.v1/feature-group.companion/condor) companion for an escaped Hawklord hawk, the [wolf](scc:mcdm.beastheart.v1/feature-group.companion/wolf) for a dog or jackal, or even the [boar](scc:mcdm.beastheart.v1/feature-group.companion/boar) for a particularly ornery stag or elk.
 
-With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a hellhound you travel with a white wolf that deals cold damage instead of fire damage; maybe your elemental spark is an elemental ember that deals fire damage; or maybe your panther is a shadow whose Pounce maneuver deals corruption or cold damage.
+With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a [hellhound](scc:mcdm.beastheart.v1/feature-group.companion/hellhound) you travel with a white wolf that deals cold damage instead of fire damage; maybe your [elemental spark](scc:mcdm.beastheart.v1/feature-group.companion/elemental-spark) is an elemental ember that deals fire damage; or maybe your [panther](scc:mcdm.beastheart.v1/feature-group.companion/panther) is a shadow whose [Pounce](scc:mcdm.beastheart.v1/feature.ability.companion.panther.level-1/pounce) maneuver deals corruption or cold damage.
 
 ## Companion Stat Blocks
 
@@ -356,7 +356,7 @@ With the Director's permission, you can also change the damage types of your com
 |------|-------|-----------|-------------|
 | 1L   | 5     | 2         | 1 + M       |
 
-**Immunity:** Poison 3 **Movement:** — **Skills:** Alertness
+**Immunity:** Poison 3 **Movement:** — **Skills:** [Alertness](scc:mcdm.heroes.v1/skill/alertness)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
@@ -369,7 +369,7 @@ With the Director's permission, you can also change the damage types of your com
 |---------------------------------------------|-----------------:|
 | **📏 Melee 1 or ranged 5**                  | **🎯 One enemy** |
 
-**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see Stoned).
+**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see [Stoned](scc:mcdm.beastheart.v1/feature.trait.companion.basilisk.level-1/stoned)).
 
 **Spend 1 Ferocity:** While stoned this way, the target is also [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
@@ -411,7 +411,7 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 |------|-------|-----------|-------------|
 | 1L   | 5     | 2         | 1 + M       |
 
-**Immunity:** — **Movement:** Climb **Skills:** Intimidate
+**Immunity:** — **Movement:** Climb **Skills:** [Intimidate](scc:mcdm.heroes.v1/skill/intimidate)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
@@ -426,7 +426,7 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 
 **Effect:** The target takes damage equal to 4 + the bear's Might score and is pushed up to 2 squares.
 
-**Spend 1 Ferocity:** The target is force moved up to a number of additional squares equal to the bear's Might score.
+**Spend 1 Ferocity:** The target is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) up to a number of additional squares equal to the bear's Might score.
 
 <!-- @type: feature | @id: strong-like-bear -->
 #### Strong Like Bear
@@ -439,7 +439,7 @@ You gain a +1 bonus to your stability.
 <!-- @type: feature | @id: foe-thresher -->
 ##### Foe Thresher
 
-Whenever the bear targets a creature with a strike that doesn't impose forced movement while rampaging, the bear can push the target up to a number of squares equal to the bear's Might score.
+Whenever the bear targets a creature with a strike that doesn't impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) while rampaging, the bear can push the target up to a number of squares equal to the bear's Might score.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Bear Advancement Feature
@@ -466,7 +466,7 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 |------|-------|-----------|-------------|
 | 1M   | 5     | 2         | 1 + M       |
 
-**Immunity:** — **Movement:** — **Skills:** Search
+**Immunity:** — **Movement:** — **Skills:** [Search](scc:mcdm.heroes.v1/skill/search)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
@@ -502,7 +502,7 @@ While the boar is rampaging, they have a +2 bonus to speed and a double edge on 
 <!-- @type: feature | @id: wild-rush -->
 ##### Wild Rush
 
-While the boar is rampaging, you can use their Gore maneuver, and you and the boar can shift instead of move when using the Charge action or the Gore maneuver.
+While the boar is rampaging, you can use their Gore maneuver, and you and the boar can [shift](scc:mcdm.heroes.v1/movement/shifting) instead of move when using the Charge action or the Gore maneuver.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Boar Advancement Feature
@@ -521,7 +521,7 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 |------|-------|-----------|-------------|
 | 1M   | 7     | 0         | 1 + M       |
 
-**Immunity:** — **Movement:** Fly **Skills:** Alertness
+**Immunity:** — **Movement:** Fly **Skills:** [Alertness](scc:mcdm.heroes.v1/skill/alertness)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -541,7 +541,7 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 <!-- @type: feature | @id: moving-target -->
 #### Moving Target
 
-While the condor is flying and has a speed greater than 0, ranged strikes against them take a bane.
+While the condor is [flying](scc:mcdm.heroes.v1/movement/fly) and has a speed greater than 0, ranged strikes against them take a bane.
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Condor Advancement Feature
@@ -557,7 +557,7 @@ Whenever the condor makes a strike while rampaging, they deal extra damage equal
 <!-- @type: feature | @id: borne-aloft -->
 ##### Borne Aloft
 
-While the condor is rampaging, you gain wings and can fly. While flying, you gain a +2 bonus to speed. If you are midair when the condor's rampage ends, you take no damage from the fall.
+While the condor is rampaging, you gain wings and can [fly](scc:mcdm.heroes.v1/movement/fly). While flying, you gain a +2 bonus to speed. If you are midair when the condor's rampage ends, you take no damage from the fall.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Condor Advancement Feature
@@ -576,7 +576,7 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 |------|-------|-----------|-------------|
 | 1M   | 7     | 1         | 1 + M       |
 
-**Immunity:** — **Movement:** — **Skills:** Track
+**Immunity:** — **Movement:** — **Skills:** [Track](scc:mcdm.heroes.v1/skill/track)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -631,7 +631,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |------|-------|-----------|-------------|
 | 1M   | 5     | 1         | 1 + M       |
 
-**Immunity:** Attuned damage type 3 (see Elementally Attuned) **Movement:** Fly **Skills:** Intimidate
+**Immunity:** Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned)) **Movement:** Fly **Skills:** [Intimidate](scc:mcdm.heroes.v1/skill/intimidate)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
@@ -644,7 +644,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |----------------------------------|------------------------------:|
 | **📏 1 or 2 cube within 1**      | **🎯 Each creature in the area** |
 
-**Effect:** The target takes damage of the drake's attuned damage type (see Elementally Attuned) equal to the drake's Might score.
+**Effect:** The target takes damage of the drake's attuned damage type (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned)) equal to the drake's Might score.
 
 **Spend 1 or 2 Ferocity:** This ability affects a 3 cube (if you spend 1 ferocity) or a 4 cube (if you spend 2 ferocity) within 1.
 
@@ -672,7 +672,7 @@ The drake's Drake Breath maneuver deals an extra 2 damage.
 <!-- @type: feature | @id: a-burning-inside-me -->
 ##### A Burning Inside Me
 
-While the drake is rampaging, you gain draconic wings and can fly. If you are midair when the drake's rampage ends, you take no damage from the fall. Additionally, you can use the drake's Drake Breath maneuver until their rampage ends.
+While the drake is rampaging, you gain draconic wings and can [fly](scc:mcdm.heroes.v1/movement/fly). If you are midair when the drake's rampage ends, you take no damage from the fall. Additionally, you can use the drake's Drake Breath maneuver until their rampage ends.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Drake Advancement Feature
@@ -691,7 +691,7 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 |------|-------|-----------|-------------|
 | 1M   | 7     | 1         | 1 + M       |
 
-**Immunity:** Lightning 3 **Movement:** — **Skills:** Magic
+**Immunity:** Lightning 3 **Movement:** — **Skills:** [Magic](scc:mcdm.heroes.v1/skill/magic)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -735,7 +735,7 @@ While the spark is rampaging, lightning sings through your blood, and whenever y
 <!-- @type: feature | @id: lightning-speed -->
 ##### Lightning Speed
 
-While the spark is rampaging, you and the spark can shift up to your speed as a free maneuver once on each of your turns.
+While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed as a free maneuver once on each of your turns.
 
 <!-- @type: feature-group | @companion: gummy-ball | @level: 1 -->
 ### Gummy Ball
@@ -746,7 +746,7 @@ While the spark is rampaging, you and the spark can shift up to your speed as a 
 |------|-------|-----------|-------------|
 | 1L   | 5     | 2         | 1 + M       |
 
-**Immunity:** Acid 3 **Movement:** — **Skills:** Sneak
+**Immunity:** Acid 3 **Movement:** — **Skills:** [Sneak](scc:mcdm.heroes.v1/skill/sneak)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -766,7 +766,7 @@ While the spark is rampaging, you and the spark can shift up to your speed as a 
 <!-- @type: feature | @id: gelatinous -->
 #### Gelatinous
 
-The ball can occupy another creature's space. While occupying a creature's space, the ball has line of effect to that creature. If the creature completely fits within the ball's space, the creature has line of effect only to the ball and creatures outside the ball don't have line of effect to the creature. The ball's space is difficult terrain.
+The ball can occupy another creature's space. While occupying a creature's space, the ball has line of effect to that creature. If the creature completely fits within the ball's space, the creature has line of effect only to the ball and creatures outside the ball don't have line of effect to the creature. The ball's space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Gummy Ball Advancement Feature
@@ -801,7 +801,7 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 |------|-------|-----------|-------------|
 | 1M   | 7     | 1         | 1 + M       |
 
-**Immunity:** Fire 3 **Movement:** — **Skills:** Intimidate
+**Immunity:** Fire 3 **Movement:** — **Skills:** [Intimidate](scc:mcdm.heroes.v1/skill/intimidate)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -856,7 +856,7 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 |------|-------|-----------|-------------|
 | 1L   | 7     | 2         | 1 + M       |
 
-**Immunity:** — **Movement:** — **Skills:** Hide
+**Immunity:** — **Movement:** — **Skills:** [Hide](scc:mcdm.heroes.v1/skill/hide)
 
 **Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
@@ -884,7 +884,7 @@ Any effect on the lightbender that would be ended by a saving throw instead ends
 <!-- @type: feature | @id: hit-and-run -->
 ##### Hit and Run
 
-Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can teleport up to 5 squares and use the Hide maneuver.
+Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares and use the [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver.
 
 <!-- @type: feature-group | @level: 6 -->
 #### Level 6 Lightbender Advancement Feature
@@ -911,7 +911,7 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 |------|-------|-----------|-------------|
 | 1M   | 7     | 1         | 1 + M       |
 
-**Immunity:** — **Movement:** Climb **Skills:** Sneak
+**Immunity:** — **Movement:** Climb **Skills:** [Sneak](scc:mcdm.heroes.v1/skill/sneak)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -931,7 +931,7 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 <!-- @type: feature | @id: mighty-spring -->
 #### Mighty Spring
 
-Whenever the panther takes the Advance move action or the Charge action, they can jump up to a number of squares equal to their speed in any direction, including vertically, as part of this movement.
+Whenever the panther takes the Advance move action or the Charge action, they can [jump](scc:mcdm.heroes.v1/movement/jump) up to a number of squares equal to their speed in any direction, including vertically, as part of this movement.
 
 <!-- @type: feature-group | @level: 3 -->
 #### Level 3 Panther Advancement Feature
@@ -947,7 +947,7 @@ Whenever the panther makes a strike against a creature while rampaging, the pant
 <!-- @type: feature | @id: single-bound -->
 ##### Single Bound
 
-While the panther is rampaging, you can jump up to a number of squares equal to your speed as a free maneuver once on each of your turns.
+While the panther is rampaging, you can [jump](scc:mcdm.heroes.v1/movement/jump) up to a number of squares equal to your speed as a free maneuver once on each of your turns.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Panther Advancement Feature
@@ -955,7 +955,7 @@ While the panther is rampaging, you can jump up to a number of squares equal to 
 <!-- @type: feature | @id: panther-spirit -->
 ##### Panther Spirit
 
-While the panther is rampaging, you and the panther are invisible and can move through objects and terrain, which are difficult terrain for you both. A creature who ends their turn inside a solid object from moving this way is teleported to the last unoccupied space they previously occupied.
+While the panther is rampaging, you and the panther are invisible and can move through objects and terrain, which are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you both. A creature who ends their turn inside a solid object from moving this way is [teleported](scc:mcdm.heroes.v1/movement/teleport) to the last unoccupied space they previously occupied.
 
 <!-- @type: feature-group | @companion: spider | @level: 1 -->
 ### Spider
@@ -966,7 +966,7 @@ While the panther is rampaging, you and the panther are invisible and can move t
 |------|-------|-----------|-------------|
 | 1M   | 5     | 1         | 1 + M       |
 
-**Immunity:** — **Movement:** Climb **Skills:** Sneak
+**Immunity:** — **Movement:** Climb **Skills:** [Sneak](scc:mcdm.heroes.v1/skill/sneak)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -1002,7 +1002,7 @@ Whenever the spider makes a strike against a creature while rampaging, the spide
 <!-- @type: feature | @id: web-slinger -->
 ##### Web Slinger
 
-Once on each of your turns while the spider is rampaging, you can shoot a web to a ceiling, wall, or sturdy object above you within 5 squares as a free maneuver. You can then fly in a straight line to any space within 5 squares of that object.
+Once on each of your turns while the spider is rampaging, you can shoot a web to a ceiling, wall, or sturdy object above you within 5 squares as a free maneuver. You can then [fly](scc:mcdm.heroes.v1/movement/fly) in a straight line to any space within 5 squares of that object.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Spider Advancement Feature
@@ -1021,7 +1021,7 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 |------|-------|-----------|-------------|
 | 1S   | 5     | 0         | 1 + M       |
 
-**Immunity:** Poison 3 **Movement:** — **Skills:** Track
+**Immunity:** Poison 3 **Movement:** — **Skills:** [Track](scc:mcdm.heroes.v1/skill/track)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -1057,7 +1057,7 @@ Whenever the sporeling makes a strike against a creature while rampaging, the sp
 <!-- @type: feature | @id: plant-walk -->
 ##### Plant Walk
 
-Once on each of your turns while the sporeling is rampaging, you can teleport to a space within 15 squares as a free maneuver, provided the space or an adjacent space contains the sporeling or plants or fungus of size 1S or larger. You then gain an edge on the next strike you make before the end of your turn.
+Once on each of your turns while the sporeling is rampaging, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to a space within 15 squares as a free maneuver, provided the space or an adjacent space contains the sporeling or plants or fungus of size 1S or larger. You then gain an edge on the next strike you make before the end of your turn.
 
 <!-- @type: feature-group | @level: 10 -->
 #### Level 10 Sporeling Advancement Feature
@@ -1076,7 +1076,7 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 |------|-------|-----------|-------------|
 | 1M   | 7     | 1         | 1 + M       |
 
-**Immunity:** — **Movement:** — **Skills:** Track
+**Immunity:** — **Movement:** — **Skills:** [Track](scc:mcdm.heroes.v1/skill/track)
 
 **Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
@@ -1164,9 +1164,9 @@ Both you and your companion can use the following ability.
 |-------------------|-------------:|
 | **📏 Self**       | **🎯 Self**  |
 
-**Effect:** You must spend a Recovery without regaining Stamina. Your partner gains temporary Stamina equal to your recovery value as they leap out of your chest. Your partner teleports to your space from any distance, even if they don't have line of effect to you.
+**Effect:** You must spend a Recovery without regaining Stamina. Your partner gains temporary Stamina equal to your recovery value as they leap out of your chest. Your partner [teleports](scc:mcdm.heroes.v1/movement/teleport) to your space from any distance, even if they don't have line of effect to you.
 
-**Spend 1 Ferocity:** Your partner can shift up to their speed.
+**Spend 1 Ferocity:** Your partner can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed.
 
 **Spend 1–5 Ferocity:** Your partner gains additional temporary Stamina equal to their Might score for each ferocity spent this way.
 
@@ -1229,10 +1229,10 @@ Your companion doesn't spend rampage to activate abilities. Instead, when your c
 | Rampage         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rampage         | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| 8               | At the end of each of your turns, your companion must use their Feral Strike ability as a free maneuver. You can’t willingly decrease the power roll outcome to a lower tier. For each ally damaged this way, you gain 2 surges, which you can use on this strike.                                                                                                                                                                                                |
+| 8               | At the end of each of your turns, your companion must use their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability as a free maneuver. You can’t willingly decrease the power roll outcome to a lower tier. For each ally damaged this way, you gain 2 surges, which you can use on this strike.                                                                                                                                                                                                |
 | 12              | Your companion has damage immunity equal to their Intuition score.                                                                                                                                                                                                                                                                                                                                                                                                |
-| 16 (4th level)  | When your companion uses their Feral Strike ability, they deal extra damage equal to their Intuition score to each target. You gain 1 additional surge for each ally damaged this way.                                                                                                                                                                                                                                                                            |
-| 20 (7th level)  | As a free maneuver, your companion can increase their size up to size 2, or increase their size by 1 if their original size is already 2 or larger. This size increase lasts until your companion’s rampage ends or they use a free maneuver to end it. While your companion’s size is increased, they gain a +2 bonus to speed and stability, the potencies of their abilities increase by 1, and the size of their Feral Strike ability’s burst increases by 1. |
+| 16 (4th level)  | When your companion uses their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability, they deal extra damage equal to their Intuition score to each target. You gain 1 additional surge for each ally damaged this way.                                                                                                                                                                                                                                                                            |
+| 20 (7th level)  | As a free maneuver, your companion can increase their size up to size 2, or increase their size by 1 if their original size is already 2 or larger. This size increase lasts until your companion’s rampage ends or they use a free maneuver to end it. While your companion’s size is increased, they gain a +2 bonus to speed and stability, the potencies of their abilities increase by 1, and the size of their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability’s burst increases by 1. |
 | 24 (10th level) | When your companion increases their size, they can increase it up to size 3, or increase their size by 1 if their original size is already 3 or larger. Whenever they make a power roll while their size is increased this way, they can roll 3d10 and discard the lowest roll.                                                                                                                                                                                   |
 
 <!-- @type: feature | @id: wild-nature-maneuver | @level: 1 -->
@@ -1242,10 +1242,10 @@ Your wild nature grants you a maneuver, as shown on the Wild Nature Maneuvers ta
 
 | Wild Nature | Maneuver          |
 |-------------|-------------------|
-| Guardian    | Living Arrow      |
-| Prowler     | Lightning Leap    |
-| Punisher    | Avalanche Rush    |
-| Spark       | Jaws of the Storm |
+| Guardian    | [Living Arrow](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/living-arrow)      |
+| Prowler     | [Lightning Leap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/lightning-leap)    |
+| Punisher    | [Avalanche Rush](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/avalanche-rush)    |
+| Spark       | [Jaws of the Storm](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/jaws-of-the-storm) |
 
 <!-- @type: ability | @id: avalanche-rush | @level: 1 | @subclass: punisher -->
 #### Avalanche Rush
@@ -1284,7 +1284,7 @@ You can move up to 3 squares before and after you use this ability. During this 
 |-------------------------------|--------------------:|
 | **📏 Melee 1**                | **🎯 One creature** |
 
-**Effect:** The target takes damage equal to 3 + your Might score. Before you use this ability, you can jump up to a number of squares equal to your Intuition score in a straight line. During this jump, enemies' spaces don't count as difficult terrain for you. The target takes extra lightning damage equal to the number of squares you jumped this way.
+**Effect:** The target takes damage equal to 3 + your Might score. Before you use this ability, you can [jump](scc:mcdm.heroes.v1/movement/jump) up to a number of squares equal to your Intuition score in a straight line. During this jump, enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. The target takes extra lightning damage equal to the number of squares you jumped this way.
 
 **Spend 1 Ferocity:** Your jump doesn't provoke opportunity attacks.
 
@@ -1297,7 +1297,7 @@ You can move up to 3 squares before and after you use this ability. During this 
 |-------------------------------|--------------------------:|
 | **📏 Ranged 10**              | **🎯 One unoccupied space** |
 
-**Effect:** If your companion is within range and can fit into the target space, they teleport to the space. They can then make a melee free strike.
+**Effect:** If your companion is within range and can fit into the target space, they [teleport](scc:mcdm.heroes.v1/movement/teleport) to the space. They can then make a melee free strike.
 
 **Spend 1 Ferocity:** The distance increases to ranged 15.
 
@@ -1308,10 +1308,10 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 | Wild Nature | Triggered Action   |
 |-------------|--------------------|
-| Guardian    | The Pack Defends   |
-| Prowler     | Shadow in the Mist |
-| Punisher    | Thunderclap        |
-| Spark       | Pyre               |
+| Guardian    | [The Pack Defends](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/the-pack-defends)   |
+| Prowler     | [Shadow in the Mist](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/shadow-in-the-mist) |
+| Punisher    | [Thunderclap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/thunderclap)        |
+| Spark       | [Pyre](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/pyre)               |
 
 <!-- @type: ability | @id: pyre | @level: 1 | @subclass: spark -->
 #### Pyre
@@ -1324,9 +1324,9 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Trigger:** You take damage.
 
-**Effect:** You take half the damage and teleport up to 5 squares.
+**Effect:** You take half the damage and [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares.
 
-**Spend 1 Ferocity:** When you teleport this way, each enemy adjacent to your original space takes lightning or fire damage (your choice) equal to your Intuition score.
+**Spend 1 Ferocity:** When you [teleport](scc:mcdm.heroes.v1/movement/teleport) this way, each enemy adjacent to your original space takes lightning or fire damage (your choice) equal to your Intuition score.
 
 <!-- @type: ability | @id: shadow-in-the-mist | @level: 1 | @subclass: prowler -->
 #### Shadow in the Mist
@@ -1339,9 +1339,9 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Trigger:** An enemy within 10 squares deals damage to a creature other than you.
 
-**Effect:** You become invisible until the end of your next turn or you deal damage. You can then use the Hide maneuver even if you are observed and can move up to a number of squares equal to your Intuition score before or after using that maneuver.
+**Effect:** You become invisible until the end of your next turn or you deal damage. You can then use the [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver even if you are observed and can move up to a number of squares equal to your Intuition score before or after using that maneuver.
 
-**Spend 1 Ferocity:** You can move up to a number of squares equal to twice your Intuition score and ignore difficult terrain during this movement.
+**Spend 1 Ferocity:** You can move up to a number of squares equal to twice your Intuition score and ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) during this movement.
 
 <!-- @type: ability | @id: the-pack-defends | @level: 1 | @subclass: guardian -->
 #### The Pack Defends
@@ -1369,9 +1369,9 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Trigger:** The target deals damage to a creature.
 
-**Effect:** You deal sonic damage equal to your Might score to the target and push them up to a number of squares equal to 1 + your Might score. If this forced movement pushes the target away from the creature they damaged, the creature takes half the triggering damage.
+**Effect:** You deal sonic damage equal to your Might score to the target and push them up to a number of squares equal to 1 + your Might score. If this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) pushes the target away from the creature they damaged, the creature takes half the triggering damage.
 
-**Spend 1 Ferocity:** The forced movement distance is doubled.
+**Spend 1 Ferocity:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance is doubled.
 
 <!-- @type: feature | @id: kit | @level: 1 -->
 #### Kit
@@ -1394,7 +1394,7 @@ Your companion can't use every consumable, but with your help, they can benefit 
 
 Your companion can't use trinkets that are designed to be worn by bipeds (such as cloaks, masks, and hats) or require words or gestures to activate. However, your companion can benefit from one necklace, pendant, collar, or other trinket with the Neck keyword that doesn't require any action to activate, such as a Necklace of the Bayou or one of the new magic trinkets presented in this document.
 
-You companion doesn't need to wear their trinket around their neck: a condor might wear a necklace wrapped around a talon, and a gelatinous sphere might carry it suspended inside their body!
+You companion doesn't need to wear their trinket around their neck: a [condor](scc:mcdm.beastheart.v1/feature-group.companion/condor) might wear a necklace wrapped around a talon, and a gelatinous sphere might carry it suspended inside their body!
 
 ##### Leveled Items
 
@@ -1418,7 +1418,7 @@ Choose one signature ability from the following options. Signature abilities can
 |----------------------------------------------|-----------------------------:|
 | **📏 Melee 1**                               | **🎯 One creature or object** |
 
-**Effect:** If you and a willing ally are standing on the ground within 10 squares of each other, you can teleport to swap places. If you do, you gain an edge on this ability.
+**Effect:** If you and a willing ally are standing on the ground within 10 squares of each other, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to swap places. If you do, you gain an edge on this ability.
 
 **Power Roll + Intuition:**
 
@@ -1441,7 +1441,7 @@ Choose one signature ability from the following options. Signature abilities can
 - **12-16:** 3 + M damage
 - **17+:** 4 + M damage
 
-**Effect:** Your companion can make a melee free strike. You both shift up to a number of squares equal to your Intuition score.
+**Effect:** Your companion can make a melee free strike. You both [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Intuition score.
 
 <!-- @type: ability | @subtype: signature | @id: covering-fire -->
 #### Covering Fire
@@ -1517,7 +1517,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 - **12-16:** 8 + M damage; slide 2; I < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 - **17+:** 11 + M damage; slide 4; I < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
-**Effect:** You and your companion can shift up to a number of squares equal to the number of squares the target was force moved.
+**Effect:** You and your companion can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to the number of squares the target was [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
 <!-- @type: ability | @id: hungry-like-the-wolf | @cost: 3 Ferocity -->
 ##### Hungry Like the Wolf
@@ -1657,9 +1657,9 @@ Once per turn, you or your companion can use the following free triggered action
 
 When someone is pushed into you, you reach out to steady an ally or send a foe careening off in another direction.
 
-**Trigger:** A creature force moved by another creature enters a space adjacent to you.
+**Trigger:** A creature [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by another creature enters a space adjacent to you.
 
-**Effect:** You end the forced movement. You can then push the creature up to a number of squares equal to 1 + your Might score. The creature takes 1 damage for each square they are force moved this way.
+**Effect:** You end the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement). You can then push the creature up to a number of squares equal to 1 + your Might score. The creature takes 1 damage for each square they are force moved this way.
 
 **Spend 1 Ferocity:** You and your companions can each use this free triggered action on the same turn.
 
@@ -1685,7 +1685,7 @@ Choose one of the following abilities.
 |---------------------------------------------|----------------:|
 | **📏 Melee 1**                              | **🎯 One creature or object** |
 
-**Effect:** Your companion can teleport up to 5 squares before and after making the power roll. Instead of grabbing the target, your companion can pick up a target object that is smaller than they are. You can forgo dealing damage with this ability.
+**Effect:** Your companion can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares before and after making the power roll. Instead of grabbing the target, your companion can pick up a target object that is smaller than they are. You can forgo dealing damage with this ability.
 
 **Power Roll + Might:**
 
@@ -1731,7 +1731,7 @@ Choose one of the following abilities.
 
 **Special:** This ability targets only enemies with line of effect to your companion.
 
-**Effect:** Your companion shifts up to a number of squares equal to their Intuition score. During this movement, they are invisible. They then make a power roll.
+**Effect:** Your companion [shifts](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to their Intuition score. During this movement, they are invisible. They then make a power roll.
 
 **Power Roll + Intuition:**
 
@@ -1775,7 +1775,7 @@ Choose one of the following abilities.
 - **12-16:** 5 + M damage; push 3; M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone)
 - **17+:** 8 + M damage; push 4; M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone)
 
-**Effect:** If the target is force moved at least 1 square, an enemy adjacent to the target at the end of this forced movement is also targeted by this ability's power roll, but they don't trigger this effect.
+**Effect:** If the target is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) at least 1 square, an enemy adjacent to the target at the end of this forced movement is also targeted by this ability's power roll, but they don't trigger this effect.
 
 <!-- @type: ability | @id: one-roar-and-were-back-in-the-fight | @level: 2 | @cost: 5 Ferocity | @subclass: punisher -->
 #### One Roar and We're Back In the Fight
@@ -1824,7 +1824,7 @@ Choose one of the following abilities.
 - **12-16:** 9 cold or sonic damage; slide 2
 - **17+:** 13 cold or sonic damage; slide 4
 
-**Effect:** Until the end of your next turn, you and your companion can fly and gain a +3 bonus to speed.
+**Effect:** Until the end of your next turn, you and your companion can [fly](scc:mcdm.heroes.v1/movement/fly) and gain a +3 bonus to speed.
 
 ## 3rd-Level Features
 
@@ -1850,7 +1850,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 
 **Trigger:** Your companion uses an ability that reduces the target to 0 Stamina.
 
-**Effect:** The target dies. You teleport to the target's space, shift up to a number of squares equal to your Might score, and can then make a melee free strike. You then make the following power roll, targeting each enemy within 5 squares of the target:
+**Effect:** The target dies. You [teleport](scc:mcdm.heroes.v1/movement/teleport) to the target's space, [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Might score, and can then make a melee free strike. You then make the following power roll, targeting each enemy within 5 squares of the target:
 
 **Power Roll + Might:**
 
@@ -1926,7 +1926,7 @@ You gain one perk of your choice.
 <!-- @type: feature | @id: rampage-improvement | @level: 4 -->
 #### Rampage Improvement
 
-Your Rampage feature provides additional effects when your companion has 16 or more rampage.
+Your [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage) feature provides additional effects when your companion has 16 or more rampage.
 
 <!-- @type: feature | @id: skill | @level: 4 -->
 #### Skill
@@ -1949,30 +1949,30 @@ Your wild nature grants you a feature, as shown on the 5th-Level Wild Nature Fea
 | ♦ 5th-Level Wild Nature Features ♦ |                      |
 |------------------------------------|----------------------|
 | Wild Nature                        | Feature              |
-| Guardian                           | There For Each Other |
-| Prowler                            | Melt Away            |
-| Punisher                           | I Can Take It        |
-| Spark                              | Wildfire Pyre        |
+| Guardian                           | [There For Each Other](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other) |
+| Prowler                            | [Melt Away](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/melt-away)            |
+| Punisher                           | [I Can Take It](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/i-can-take-it)        |
+| Spark                              | [Wildfire Pyre](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/wildfire-pyre)        |
 
 <!-- @type: feature | @id: i-can-take-it | @level: 5 | @subclass: punisher -->
 #### I Can Take It
 
-When you or your companion uses your Thunderclap ability and halves the triggering damage, whoever uses the ability can take the remaining damage instead of the original target. The damage is transferred before immunity and weakness are applied.
+When you or your companion uses your [Thunderclap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/thunderclap) ability and halves the triggering damage, whoever uses the ability can take the remaining damage instead of the original target. The damage is transferred before immunity and weakness are applied.
 
 <!-- @type: feature | @id: melt-away | @level: 5 | @subclass: prowler -->
 #### Melt Away
 
-You or your companion can use your Shadow in the Mist ability even when targeted by the triggering ability.
+You or your companion can use your [Shadow in the Mist](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/shadow-in-the-mist) ability even when targeted by the triggering ability.
 
 <!-- @type: feature | @id: there-for-each-other | @level: 5 | @subclass: guardian -->
 #### There For Each Other
 
-When you or your companion uses your The Pack Defends ability to spend a Recovery, you and the target both regain Stamina.
+When you or your companion uses your [The Pack Defends](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/the-pack-defends) ability to spend a Recovery, you and the target both regain Stamina.
 
 <!-- @type: feature | @id: wildfire-pyre | @level: 5 | @subclass: spark -->
 #### Wildfire Pyre
 
-When you or your companion deals damage with your Pyre ability, each enemy adjacent to either of you takes the damage.
+When you or your companion deals damage with your [Pyre](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/pyre) ability, each enemy adjacent to either of you takes the damage.
 
 ### 9-Ferocity Ability
 
@@ -2027,7 +2027,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 - **12-16:** 15 + M damage; vertical push 6; [prone](scc:mcdm.heroes.v1/condition/prone)
 - **17+:** 20 + M damage; vertical push 8; [prone](scc:mcdm.heroes.v1/condition/prone)
 
-**Effect:** If your companion is adjacent to the target, this forced movement can ignore the target's stability.
+**Effect:** If your companion is adjacent to the target, this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can ignore the target's stability.
 
 <!-- @type: ability | @id: rip-them-apart | @level: 5 | @cost: 9 Ferocity -->
 #### Rip Them Apart!
@@ -2132,7 +2132,7 @@ Choose one of the following abilities.
 |-------------|------------:|
 | **📏 Self** | **🎯 Self** |
 
-**Effect:** You and your companion shift up to your speeds. During this movement, you are both invisible, can move through enemies and objects, and ignore difficult terrain. You each deal corruption damage equal to your own Intuition score to each enemy you pass through during this movement. You can both damage each enemy once this way.
+**Effect:** You and your companion [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speeds. During this movement, you are both invisible, can move through enemies and objects, and ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). You each deal corruption damage equal to your own Intuition score to each enemy you pass through during this movement. You can both damage each enemy once this way.
 
 #### 6th-Level Punisher Abilities
 
@@ -2147,7 +2147,7 @@ Choose one of the following abilities.
 |---------------|---------------:|
 | **📏 Self**   | **🎯 Self**    |
 
-**Effect:** Your companion shifts up to their speed and can make a melee free strike. As a free triggered action, you and up to 10 allies within 10 squares of your companion's starting position can shift up to their speed and make free strikes.
+**Effect:** Your companion [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can make a melee free strike. As a free triggered action, you and up to 10 allies within 10 squares of your companion's starting position can shift up to their speed and make free strikes.
 
 <!-- @type: ability | @id: rolling-thunder | @level: 6 | @cost: 9 Ferocity | @subclass: punisher -->
 #### Rolling Thunder
@@ -2158,7 +2158,7 @@ Choose one of the following abilities.
 |-------------------------------------|----------------:|
 | **📏 Self**                         | **🎯 Self**     |
 
-**Effect:** Your companion shifts up to their speed and makes one power roll that targets each enemy they come adjacent to during the shift. If your companion targets only one enemy with this ability, the power roll gains an edge.
+**Effect:** Your companion [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and makes one power roll that targets each enemy they come adjacent to during the shift. If your companion targets only one enemy with this ability, the power roll gains an edge.
 
 **Power Roll + Might:**
 
@@ -2183,7 +2183,7 @@ Choose one of the following abilities.
 
 **Effect:** Your companion transforms into a creature made of elemental energy. Choose a damage type from cold, fire, lightning, or sonic damage. While transformed, your companion gains the following benefits:
 
-- Your companion can fly. If they could already fly, they gain a +2 bonus to speed.
+- Your companion can [fly](scc:mcdm.heroes.v1/movement/fly). If they could already fly, they gain a +2 bonus to speed.
 - When your companion enters another creature's space for the first time on a turn or damages a creature with a strike, your companion deals 5 damage of the chosen type to the creature.
 - Your companion has immunity all to the chosen damage type and immunity 5 to all other damage.
 
@@ -2225,7 +2225,7 @@ At the start of each of your turns in combat, you gain 1d3 + 1 ferocity instead 
 <!-- @type: feature | @id: rampage-improvement | @level: 7 -->
 #### Rampage Improvement
 
-Your Rampage feature provides additional effects when your companion has 20 or more rampage.
+Your [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage) feature provides additional effects when your companion has 20 or more rampage.
 
 <!-- @type: feature | @id: skill | @level: 7 -->
 #### Skill
@@ -2243,10 +2243,10 @@ Your wild nature grants you a feature, as shown on the 8th-Level Wild Nature Fea
 | ♦ 8th-Level Wild Nature Features ♦ |                         |
 |------------------------------------|-------------------------|
 | Wild Nature                        | Feature                 |
-| Guardian                           | Reflexes Perfected      |
-| Prowler                            | Born to Run             |
-| Punisher                           | Built for Violence      |
-| Spark                              | Nature Will Not Harm Us |
+| Guardian                           | [Reflexes Perfected](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/reflexes-perfected)      |
+| Prowler                            | [Born to Run](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/born-to-run)             |
+| Punisher                           | [Built for Violence](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/built-for-violence)      |
+| Spark                              | [Nature Will Not Harm Us](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/nature-will-not-harm-us) |
 
 <!-- @type: feature | @id: born-to-run | @level: 8 | @subclass: prowler -->
 #### Born to Run
@@ -2266,7 +2266,7 @@ You and your companion have damage immunity 10 to cold, fire, lightning, and son
 <!-- @type: feature | @id: reflexes-perfected | @level: 8 | @subclass: guardian -->
 #### Reflexes Perfected
 
-Your and your companion's free strikes deal extra damage equal to your Intuition score. Whenever an adjacent enemy moves to a space that isn't adjacent, you or your companion can make an opportunity attack, even if the enemy shifted, teleported, was force moved, or another feature that doesn't provoke opportunity attacks.
+Your and your companion's free strikes deal extra damage equal to your Intuition score. Whenever an adjacent enemy moves to a space that isn't adjacent, you or your companion can make an opportunity attack, even if the enemy [shifted](scc:mcdm.heroes.v1/movement/shifting), [teleported](scc:mcdm.heroes.v1/movement/teleport), was [force moved](scc:mcdm.heroes.v1/movement/forced-movement), or another feature that doesn't provoke opportunity attacks.
 
 <!-- @type: feature | @id: perk | @level: 8 -->
 #### Perk
@@ -2405,7 +2405,7 @@ Choose one of the following abilities.
 |---------------------------------------------|----------------:|
 | **📏 Melee 1**                              | **🎯 One creature** |
 
-**Effect:** Your companion teleports up to their speed.
+**Effect:** Your companion [teleports](scc:mcdm.heroes.v1/movement/teleport) up to their speed.
 
 **Power Roll + Intuition:**
 
@@ -2422,7 +2422,7 @@ Choose one of the following abilities.
 |----------------------|----------------:|
 | **📏 Melee 1**       | **🎯 One creature** |
 
-**Effect:** You, your companion, and the target enter the heart of an eternal storm on Quintessence. The three of you can't affect or be affected by any creatures except each other. Creatures in this area are always adjacent to each other and can't move or teleport away from each other, but can otherwise act normally.
+**Effect:** You, your companion, and the target enter the heart of an eternal storm on Quintessence. The three of you can't affect or be affected by any creatures except each other. Creatures in this area are always adjacent to each other and can't move or [teleport](scc:mcdm.heroes.v1/movement/teleport) away from each other, but can otherwise act normally.
 
 While on Quintessence, the target takes 5 cold damage, 5 fire damage, 5 lightning damage, and 5 sonic damage at the start of each of your turns.
 
@@ -2550,7 +2550,7 @@ Ferox remains until you spend it.
 <!-- @type: feature | @id: rampage-improvement | @level: 10 -->
 #### Rampage Improvement
 
-Your Rampage feature provides additional effects when your companion has 24 or more rampage.
+Your [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage) feature provides additional effects when your companion has 24 or more rampage.
 
 <!-- @type: feature | @id: skill | @level: 10 -->
 #### Skill
@@ -2671,7 +2671,7 @@ This section presents a 4th-echelon trinket treasure.
 
 **Project Goal:** 600
 
-**Effect:** Only a beastheart's companion or an animal can wear this item. While wearing it, the creature grows feathered wings if they don't already have wings and can fly. If the creature can already fly, they gain a +3 bonus to their speed while flying.
+**Effect:** Only a beastheart's companion or an animal can wear this item. While wearing it, the creature grows feathered wings if they don't already have wings and can [fly](scc:mcdm.heroes.v1/movement/fly). If the creature can already fly, they gain a +3 bonus to their speed while flying.
 
 ## Leveled Treasures
 
@@ -2694,9 +2694,9 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **Project Goal:** 450
 
-**1st Level:** Only a beastheart can wear this armor. While you wear this armor, you gain a +6 bonus to Stamina and a +1 bonus to stability. The first time on a turn that you or your companion would move into a creature's space, whoever is moving can push that creature 1 square before continuing their movement. This forced movement ignores stability if the creature's stability is lower than the pusher's stability.
+**1st Level:** Only a beastheart can wear this armor. While you wear this armor, you gain a +6 bonus to Stamina and a +1 bonus to stability. The first time on a turn that you or your companion would move into a creature's space, whoever is moving can push that creature 1 square before continuing their movement. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability if the creature's stability is lower than the pusher's stability.
 
-**5th Level:** The armor's bonus to Stamina increases to +12, and its bonus to stability increases to +2. Additionally, when a creature is force moved into you or your companion, whoever was collided with takes no damage.
+**5th Level:** The armor's bonus to Stamina increases to +12, and its bonus to stability increases to +2. Additionally, when a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into you or your companion, whoever was collided with takes no damage.
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and its bonus to stability increases to +3. When you or your companion pushes a creature using this armor's feature, the creature takes damage equal to twice the pusher's Might score and is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
@@ -2736,7 +2736,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **1st Level:** Only a beastheart can wield or carry this shield. You gain a +3 bonus to Stamina and the painting on the shield changes to resemble your companion. Additionally, your companion can see as if they were in your space as well as their own, and whenever your companion uses an ability, they can do so as if they were in either your space or their own.
 
-**5th Level:** The shield's bonus to Stamina increases to +6. Additionally, your companion can use 2 squares of movement to teleport from their current location and leap out of the shield, landing in a space adjacent to you.
+**5th Level:** The shield's bonus to Stamina increases to +6. Additionally, your companion can use 2 squares of movement to [teleport](scc:mcdm.heroes.v1/movement/teleport) from their current location and leap out of the shield, landing in a space adjacent to you.
 
 **9th Level:** The shield's bonus to Stamina increases to +9. Additionally, the shield can make opportunity attacks as if it was your companion.
 
@@ -2903,7 +2903,7 @@ equal to your level until you finish a respite or gain 1 or more Victories. This
 <!-- @type: perk | @id: wilds-explorer -->
 ## Wilds Explorer
 
-You and your companion gain an edge on tests made to overcome environmental cold, heat, weather, unsteady ground, or challenging terrain. During your turn, you and your companion can ignore the first square of difficult terrain you each enter.
+You and your companion gain an edge on tests made to overcome environmental cold, heat, weather, unsteady ground, or challenging terrain. During your turn, you and your companion can ignore the first square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) you each enter.
 
 ## Intrigue Perks
 
