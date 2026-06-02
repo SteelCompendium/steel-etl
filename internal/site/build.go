@@ -42,7 +42,7 @@ func Build(cfg *Config) (*BuildResult, error) {
 
 	// Read scc-to-path.json if available (for metadata), but primarily
 	// we walk the source directory to copy files
-	entries, err := walkSourceDir(cfg.SourceDir)
+	entries, err := walkSourceDirs(cfg.SourceDirList())
 	if err != nil {
 		return nil, fmt.Errorf("walk source: %w", err)
 	}
@@ -94,10 +94,11 @@ func Build(cfg *Config) (*BuildResult, error) {
 	return result, nil
 }
 
-// sourceEntry represents a markdown file found in the source directory.
+// sourceEntry represents a markdown file found in a source directory.
 type sourceEntry struct {
-	relPath string // relative to source dir (e.g., "class/fury.md")
-	absPath string
+	relPath   string // relative to its source dir (e.g., "class/fury.md")
+	absPath   string
+	sourceDir string // the source dir this entry came from
 }
 
 func walkSourceDir(dir string) ([]sourceEntry, error) {
@@ -110,10 +111,23 @@ func walkSourceDir(dir string) ([]sourceEntry, error) {
 			return nil
 		}
 		rel, _ := filepath.Rel(dir, path)
-		entries = append(entries, sourceEntry{relPath: rel, absPath: path})
+		entries = append(entries, sourceEntry{relPath: rel, absPath: path, sourceDir: dir})
 		return nil
 	})
 	return entries, err
+}
+
+// walkSourceDirs merges entries from multiple source dirs (later dirs append).
+func walkSourceDirs(dirs []string) ([]sourceEntry, error) {
+	var all []sourceEntry
+	for _, d := range dirs {
+		entries, err := walkSourceDir(d)
+		if err != nil {
+			return nil, err
+		}
+		all = append(all, entries...)
+	}
+	return all, nil
 }
 
 // buildSection copies matching files from source into the section directory.
@@ -128,7 +142,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		}
 
 		// Determine destination path within the section, applying group remaps
-		destRel, parentName := applyGroups(entry.relPath, section.Groups, cfg.SourceDir)
+		destRel, parentName := applyGroups(entry.relPath, section.Groups, entry.sourceDir)
 		destPath := filepath.Join(sectionDir, destRel)
 
 		if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {

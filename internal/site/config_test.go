@@ -69,6 +69,25 @@ static_content: ./static
 	}
 }
 
+func TestSourceDirsBackCompat(t *testing.T) {
+	// A config using only the legacy singular source_dir should expose it via SourceDirList().
+	cfg := &Config{ConfigDir: "/cfg", SourceDir: "/cfg/a"}
+	cfg.normalizeSources()
+	got := cfg.SourceDirList()
+	if len(got) != 1 || got[0] != "/cfg/a" {
+		t.Fatalf("back-compat: got %v, want [/cfg/a]", got)
+	}
+}
+
+func TestSourceDirsList(t *testing.T) {
+	cfg := &Config{ConfigDir: "/cfg", SourceDirs: []string{"/cfg/a", "/cfg/b"}}
+	cfg.normalizeSources()
+	got := cfg.SourceDirList()
+	if len(got) != 2 || got[0] != "/cfg/a" || got[1] != "/cfg/b" {
+		t.Fatalf("list: got %v, want [/cfg/a /cfg/b]", got)
+	}
+}
+
 func TestLoadSiteConfig_InvalidYAML(t *testing.T) {
 	dir := t.TempDir()
 	path := filepath.Join(dir, "bad.yaml")

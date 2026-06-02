@@ -12,13 +12,13 @@ func setupSourceDir(t *testing.T) string {
 	dir := t.TempDir()
 
 	files := map[string]string{
-		"class/fury.md":                                    "---\nname: Fury\ntype: class\n---\n\nFury description.",
-		"class/shadow.md":                                  "---\nname: Shadow\ntype: class\n---\n\nShadow description.",
-		"feature/ability/fury/level-1/gouge.md":            "---\nname: Gouge\ntype: ability\n---\n\nGouge text.",
-		"feature/ability/fury/level-1/brutal-slam.md":      "---\nname: Brutal Slam\ntype: ability\n---\n\nSlam text.",
-		"feature/trait/fury/level-1/growing-ferocity.md":   "---\nname: Growing Ferocity\ntype: trait\n---\n\nFerocity text.",
-		"condition/dazed.md":                               "---\nname: Dazed\ntype: condition\n---\n\nDazed text.",
-		"chapter/classes.md":                               "# Classes\n\nChapter intro.",
+		"class/fury.md":                                  "---\nname: Fury\ntype: class\n---\n\nFury description.",
+		"class/shadow.md":                                "---\nname: Shadow\ntype: class\n---\n\nShadow description.",
+		"feature/ability/fury/level-1/gouge.md":          "---\nname: Gouge\ntype: ability\n---\n\nGouge text.",
+		"feature/ability/fury/level-1/brutal-slam.md":    "---\nname: Brutal Slam\ntype: ability\n---\n\nSlam text.",
+		"feature/trait/fury/level-1/growing-ferocity.md": "---\nname: Growing Ferocity\ntype: trait\n---\n\nFerocity text.",
+		"condition/dazed.md":                             "---\nname: Dazed\ntype: condition\n---\n\nDazed text.",
+		"chapter/classes.md":                             "# Classes\n\nChapter intro.",
 	}
 
 	for rel, content := range files {
@@ -352,9 +352,9 @@ func TestBuild_Groups(t *testing.T) {
 	os.MkdirAll(docsDir, 0755)
 
 	files := map[string]string{
-		"feature/ability/fury/level-1/gouge.md":              "---\nname: Gouge\n---\n\nGouge text.",
-		"feature/ability/arcane-archer/exploding-arrow.md":   "---\nname: Exploding Arrow\n---\n\nArrow text.",
-		"kit/arcane-archer.md":                               "---\nname: Arcane Archer\ntype: kit\n---\n\nKit desc.",
+		"feature/ability/fury/level-1/gouge.md":            "---\nname: Gouge\n---\n\nGouge text.",
+		"feature/ability/arcane-archer/exploding-arrow.md": "---\nname: Exploding Arrow\n---\n\nArrow text.",
+		"kit/arcane-archer.md":                             "---\nname: Arcane Archer\ntype: kit\n---\n\nKit desc.",
 	}
 	for rel, content := range files {
 		path := filepath.Join(srcDir, rel)
@@ -826,5 +826,32 @@ func checkNotExists(t *testing.T, base, rel string) {
 	t.Helper()
 	if _, err := os.Stat(filepath.Join(base, rel)); err == nil {
 		t.Errorf("expected file to NOT exist: %s", rel)
+	}
+}
+
+func TestWalkSourceDirsMerges(t *testing.T) {
+	a := t.TempDir()
+	b := t.TempDir()
+	if err := os.MkdirAll(filepath.Join(a, "class"), 0755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.MkdirAll(filepath.Join(b, "class"), 0755); err != nil {
+		t.Fatal(err)
+	}
+	os.WriteFile(filepath.Join(a, "class", "fury.md"), []byte("---\nname: Fury\n---\n"), 0644)
+	os.WriteFile(filepath.Join(b, "class", "beastheart.md"), []byte("---\nname: Beastheart\n---\n"), 0644)
+
+	entries, err := walkSourceDirs([]string{a, b})
+	if err != nil {
+		t.Fatalf("walk: %v", err)
+	}
+	if len(entries) != 2 {
+		t.Fatalf("got %d entries, want 2", len(entries))
+	}
+	// Each entry must remember which source dir it came from.
+	for _, e := range entries {
+		if e.sourceDir != a && e.sourceDir != b {
+			t.Errorf("entry %q has unexpected sourceDir %q", e.relPath, e.sourceDir)
+		}
 	}
 }

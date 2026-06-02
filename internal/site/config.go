@@ -10,8 +10,12 @@ import (
 
 // Config defines how SCC-based output maps to a MkDocs site structure.
 type Config struct {
-	// Source directory containing steel-etl md-linked output
+	// Source directory containing steel-etl md-linked output (legacy singular form)
 	SourceDir string `yaml:"source_dir"`
+
+	// SourceDirs lists multiple md-linked output directories to merge (multi-book).
+	// If empty, the singular SourceDir is used. Resolved relative to ConfigDir.
+	SourceDirs []string `yaml:"source_dirs"`
 
 	// MkDocs docs directory (output)
 	DocsDir string `yaml:"docs_dir"`
@@ -36,6 +40,32 @@ func (c *Config) ResolvePath(p string) string {
 		return p
 	}
 	return filepath.Join(c.ConfigDir, p)
+}
+
+// normalizeSources resolves source paths relative to the config directory and
+// folds the legacy singular SourceDir into SourceDirs when no list is given.
+func (c *Config) normalizeSources() {
+	if c.SourceDir != "" {
+		c.SourceDir = c.ResolvePath(c.SourceDir)
+	}
+	for i, d := range c.SourceDirs {
+		c.SourceDirs[i] = c.ResolvePath(d)
+	}
+	if len(c.SourceDirs) == 0 && c.SourceDir != "" {
+		c.SourceDirs = []string{c.SourceDir}
+	}
+}
+
+// SourceDirList returns the resolved source directories, falling back to the
+// legacy singular SourceDir for configs constructed without normalizeSources.
+func (c *Config) SourceDirList() []string {
+	if len(c.SourceDirs) > 0 {
+		return c.SourceDirs
+	}
+	if c.SourceDir != "" {
+		return []string{c.SourceDir}
+	}
+	return nil
 }
 
 // SectionConfig maps SCC content types to a site section (tab).
@@ -110,7 +140,7 @@ func LoadSiteConfig(path string) (*Config, error) {
 	}
 
 	// Resolve all paths relative to the config file directory
-	cfg.SourceDir = cfg.ResolvePath(cfg.SourceDir)
+	cfg.normalizeSources()
 	cfg.DocsDir = cfg.ResolvePath(cfg.DocsDir)
 	if cfg.StaticContent != "" {
 		cfg.StaticContent = cfg.ResolvePath(cfg.StaticContent)
