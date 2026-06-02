@@ -586,102 +586,118 @@ While the condor is rampaging, you gain wings and can fly. While flying, you gai
 
 While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 
-| Deinonychus<br>Animal, Companion                                   |                                                                      |                                                                     |                                                                        | Companion                                                                           |
-|--------------------------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                                  | 7<br><b>Speed</b>                                                    |                                                                     | 1<br><b>Stability</b>                                                  | 1+ <span style="background-color:black;color:white;">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> —                           |                                                                      |                                                                     | <b>Skills:</b> Track                                                   |                                                                                     |
-| <span style="background-color:black;color:white;">M</span> ight +2 | <span style="background-color:black;color:white;">A</span> gility +2 | <span style="background-color:black;color:white;">R</span> eason -1 | <span style="background-color:black;color:white;">I</span> ntuition +2 | <span style="background-color:black;color:white;">P</span> resence +1               |
+<!-- @type: feature-group | @companion: deinonychus | @level: 1 -->
+### Deinonychus
 
-#### t **Terrible Claws**
+*Animal, Companion*
+
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 1         | 1 + M       |
+
+**Immunity:** — **Movement:** — **Skills:** Track
+
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
+
+<!-- @type: ability | @subtype: signature | @id: terrible-claws -->
+#### Terrible Claws
 
 *The deinonychus kicks their prey, then slashes them with wicked claws.*
 
-Companion, Melee, Weapon Maneuver
+| **Companion, Melee, Weapon** |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
-Maneuver
+**Effect:** The target takes damage equal to 3 + the deinonychus's Might score, and if they have M < AVERAGE, they are bleeding until the end of their next turn.
 
-o Melee 1 x One enemy
+**Spend 1 Ferocity:** A target who has M < STRONG is bleeding (save ends).
 
-◎ One enemy
-deinonychus’s
-
-**Effect:** The target takes damage equal to 3 + the deinonychus's Might score, and if they have m<v, they are bleeding until the end of their next turn.
-
-**Spend 1 Ferocity:** A target who has m<s is bleeding (save ends).
-
-#### \* **Blood Frenzy**
+<!-- @type: feature | @id: blood-frenzy -->
+#### Blood Frenzy
 
 Whenever the deinonychus deals damage to a bleeding creature, they gain 1 surge.
 
-¢
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Deinonychus Advancement Feature
 
-#### **Level 3 Deinonychus Advancement Feature**
-
-#### \* **Tear You to Ribbons**
+<!-- @type: feature | @id: tear-you-to-ribbons -->
+##### Tear You to Ribbons
 
 Whenever the deinonychus makes a strike against a creature while rampaging, the target is bleeding until the end of their next turn.
 
-#### **Level 6 Deinonychus Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Deinonychus Advancement Feature
 
-#### \* **Slake My Thirst in Blood**
+<!-- @type: feature | @id: slake-my-thirst-in-blood -->
+##### Slake My Thirst in Blood
 
 Whenever you use an ability that deals rolled damage to a bleeding creature while the deinonychus is rampaging, you gain 2 surges.
 
-#### **Level 10 Deinonychus Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Deinonychus Advancement Feature
 
-#### \* **Reaping Scythe**
+<!-- @type: feature | @id: reaping-scythe -->
+##### Reaping Scythe
 
 The deinonychus's claws slash at creatures underfoot. When the deinonychus moves adjacent to an enemy or enters an enemy's space for the first time on a turn while rampaging, the deinonychus deals damage to that enemy equal to the deinonychus's Might score.
 
-![](_page_12_Picture_21.jpeg)
+<!-- @type: feature-group | @companion: drake | @level: 1 -->
+### Drake
 
-![](_page_13_Picture_1.jpeg)
+*Companion, Dragon*
 
-| <b>Drake</b><br>Companion, Dragon | <b>Companion</b> |
-|-----------------------------------|------------------|
-|-----------------------------------|------------------|
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 5     | 1         | 1 + M       |
 
-1M  **Size** 5 **Speed** 1 **Stabilty** 1+M **Free Strike**
+**Immunity:** Attuned damage type 3 (see Elementally Attuned) **Movement:** Fly **Skills:** Intimidate
 
-**Immunity:** Attuned damage type 3 (see **Elementally Attuned**) **Movement:** Fly **Skills:** Intimidate
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
-M**ight** +2 A**gility** +1 R**eason** -1 I**ntuition** +2 P**resence** +2
-
-#### e **Drake Breath**
+<!-- @type: ability | @subtype: signature | @id: drake-breath -->
+#### Drake Breath
 
 *The drake exhales a blast of flesh-melting energy.*
 
-Area, Companion, Magic
+| **Area, Companion, Magic**       |                  **Maneuver** |
+|----------------------------------|------------------------------:|
+| **📏 1 or 2 cube within 1**      | **🎯 Each creature in the area** |
 
-Area, Companion, Magic Maneuver o 1 or 2 cube within 1 x Each creature in the area
+**Effect:** The target takes damage of the drake's attuned damage type (see Elementally Attuned) equal to the drake's Might score.
 
-**Effect:** The target takes damage of the drake's attuned damage type (see **Elementally Attuned**) equal to the drake's Might score.
+**Spend 1 or 2 Ferocity:** This ability affects a 3 cube (if you spend 1 ferocity) or a 4 cube (if you spend 2 ferocity) within 1.
 
-**Spend 1 or 2 Ferocity:** This ability affects a 3 cube (if you spend 1 ferocity) or a 4 cube (if you spend 2 ferocity) within 1. ¢
+<!-- @type: feature | @id: elementally-attuned -->
+#### Elementally Attuned
 
-#### \* **Elementally Attuned**
+When you gain this companion, you choose their attuned damage type from acid, cold, corruption, fire, lightning, poison, or sonic. The drake's attuned damage type affects their other features.
 
-When you gain this companion, you choose their attuned damage type from acid, cold, corruption, fire, lightning, poison, or sonic. The drake's attuned damage type affects their other features. ¢
-
-#### \* **Shared Scales**
+<!-- @type: feature | @id: shared-scales -->
+#### Shared Scales
 
 You have immunity 3 to the drake's attuned damage type.
 
-#### **Level 3 Drake Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Drake Advancement Feature
 
-#### \* **Endless Breath**
+<!-- @type: feature | @id: endless-breath -->
+##### Endless Breath
 
 The drake's Drake Breath maneuver deals an extra 2 damage.
 
-#### **Level 6 Drake Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Drake Advancement Feature
 
-#### \* **A Burning Inside Me**
+<!-- @type: feature | @id: a-burning-inside-me -->
+##### A Burning Inside Me
 
 While the drake is rampaging, you gain draconic wings and can fly. If you are midair when the drake's rampage ends, you take no damage from the fall. Additionally, you can use the drake's Drake Breath maneuver until their rampage ends.
 
-#### **Level 10 Drake Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Drake Advancement Feature
 
-#### \* **Elemental Avatar**
+<!-- @type: feature | @id: elemental-avatar -->
+##### Elemental Avatar
 
 While the drake is rampaging, you and the drake have immunity all to the drake's attuned damage type, and whenever you or the drake make a strike against a creature you can cause the target to be dragonsealed (save ends). A dragonsealed creature has weakness 10 to the drake's attuned damage type.
 
