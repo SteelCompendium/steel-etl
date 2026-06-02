@@ -1488,180 +1488,147 @@ Choose one signature ability from the following options. Signature abilities can
 
 **Effect:** You can spend 1 surge without gaining its benefits. If you do, your companion can use this ability as a free triggered action, targeting a different creature or object with the same power roll, but they don't trigger this effect.
 
-#### <span id="page-27-0"></span>HEROIC ABILITIES
+### Heroic Abilities
 
 From traveling and fighting alongside your companion, you have learned a number of heroic abilities.
 
 #### 3-Ferocity Ability
 
-Choose one heroic ability from the following options, each of which costs 3 ferocity to use. (Quick Build: Hungry Like the Wolf.)
+Choose one heroic ability from the following options, each of which costs 3 ferocity to use. (*Quick Build:* Hungry Like the Wolf.)
 
-## **Bring the Thunder (3 Ferocity)**
+<!-- @type: ability | @id: bring-the-thunder | @cost: 3 Ferocity -->
+##### Bring the Thunder
 
-Your companion unleashes a shattering roar, screech, or howl that terrifies your foes—or at least gets their attention.
+*Your companion unleashes a shattering roar, screech, or howl that terrifies your foes—or at least gets their attention.*
 
-Area, Companion, Magic
+| **Area, Companion, Magic** |                **Main action** |
+|----------------------------|-------------------------------:|
+| **📏 2 burst**             | **🎯 Each enemy in the area** |
 
-Main action
+**Power Roll + Intuition:**
 
-2 burst
+- **≤11:** 3 sonic damage; push 1; P < WEAK taunted (save ends)
+- **12-16:** 5 sonic damage; push 2; P < AVERAGE taunted (save ends)
+- **17+:** 7 sonic damage; push 3; P < STRONG frightened (save ends)
 
-🕲 Each enemy in the area
+**Spend 1 Ferocity:** This ability also affects a 2 burst originating from you. An enemy in both areas is only affected once.
 
-#### Power Roll + Intuition:
+<!-- @type: ability | @id: herd-the-sheep | @cost: 3 Ferocity -->
+##### Herd the Sheep
 
-3 sonic damage; push 1; P<WEAK taunted (save ends)
+*Your companion circles your foe, luring them out of position with fake openings and unpredictable attacks.*
 
-12-16 5 sonic damage; push 2; P<AVERAGE taunted (save ends)
+| **Companion, Melee, Strike, Weapon** | **Main action** |
+|--------------------------------------|----------------:|
+| **📏 Melee 1**                       | **🎯 One creature** |
 
-7 sonic damage; push 3; P<STRONG frightened (save ends)
+**Power Roll + Might:**
 
-Spend 1 Ferocity: This ability also affects a 2 burst originating from you. An enemy in both areas is only affected once.
+- **≤11:** 5 + M damage; slide 1; I < WEAK weakened (save ends)
+- **12-16:** 8 + M damage; slide 2; I < AVERAGE weakened (save ends)
+- **17+:** 11 + M damage; slide 4; I < STRONG weakened (save ends)
 
-#### Herd the Sheep (3 Ferocity)
+**Effect:** You and your companion can shift up to a number of squares equal to the number of squares the target was force moved.
 
-Your companion circles your foe, luring them out of position with fake openings and unpredictable attacks.
+<!-- @type: ability | @id: hungry-like-the-wolf | @cost: 3 Ferocity -->
+##### Hungry Like the Wolf
 
-Companion, Melee, Strike, Weapon
+*The enemy's blood flows like wine, invigorating your companion.*
 
-Main action **One** creature
+| **Companion, Magic, Melee, Strike, Weapon** | **Main action** |
+|---------------------------------------------|----------------:|
+| **📏 Melee 1**                              | **🎯 One creature** |
 
-Melee 1
+**Power Roll + Might:**
 
-#### Power Roll + Might:
+- **≤11:** 4 + M damage; your companion can spend a Recovery
+- **12-16:** 7 + M damage; you and your companion can each spend a Recovery
+- **17+:** 11 + M damage; A < STRONG bleeding (EoT); you and your companion can each spend a Recovery and shift up to 2 squares
 
-≤11 5 + M damage; slide 1; I<WEAK weakened (save ends)
-</p>
+<!-- @type: ability | @id: pushover | @cost: 3 Ferocity -->
+##### Pushover
 
-(12-16) 8 + M damage; slide 2; I<AVERAGE weakened (save ends)
+*You and your companion surround your foe in order to bring them down.*
 
-17+ 11 + M damage; slide 4; I<STRONG weakened (save ends)
+| **Companion, Melee, Strike, Weapon** | **Main action** |
+|--------------------------------------|----------------:|
+| **📏 Melee 1**                       | **🎯 One creature or object** |
 
-Effect: You and your companion can shift up to a number of squares equal to the number of squares the target was force moved.
+**Power Roll + Might:**
 
-#### **Hungry Like the Wolf (3 Ferocity)**
+- **≤11:** 5 + M damage; push 2
+- **12-16:** 8 + M damage; push 4
+- **17+:** 11 + M damage; push 6
 
-The enemy's blood flows like wine, invigorating your companion.
-
-Companion, Magic, Melee, Strike, Weapon
-
-Main action One creature
-
-Melee 1
-
-#### Power Roll + Might:
-
-4 + M damage; your companion can spend a Recovery
-
-12-16 7 + M damage; you and your companion can each spend
-
-17+ 11 + M damage; A < STRONG bleeding (EoT); you and your companion can each spend a Recovery and shift up to 2 squares
-
-#### Pushover (3 Ferocity)
-
-You and your companion surround your foe in order to bring them down.
-
-Companion, Melee, Strike, Weapon
-
-Main action
-
-Melee 1
-
-**One** creature or object
-
-#### Power Roll + Might:
-
-≤11 5 + M damage; push 2
-
-12-16 8 + M damage; push 4
-
-17+ 11 + M damage; push 6
-
-Effect: This forced movement can pass through your space but not end there. If the target passes through your space, they fall prone and take extra damage equal to your Intuition score.
+**Effect:** This forced movement can pass through your space but not end there. If the target passes through your space, they fall prone and take extra damage equal to your Intuition score.
 
 #### 5-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 5 ferocity to use. (Quick Build: I Feed On Your Pain!)
 
-#### All of You Versus All of Me (5 Ferocity)
+<!-- @type: ability | @id: all-of-you-versus-all-of-me | @cost: 5 Ferocity -->
+##### All of You Versus All of Me
 
-Let all of them come forward and shatter themselves against your might!
+*Let all of them come forward and shatter themselves against your might!*
 
-Area. Beastheart
+| **Area, Beastheart** |                  **Maneuver** |
+|----------------------|------------------------------:|
+| **📏 3 burst**       | **🎯 Each enemy in the area** |
 
-**Maneuve**
+**Effect:** You can spend a Recovery and gain 3 temporary Stamina for each target. Each target is taunted by you until the end of their next turn.
 
-3 burst
+**Spend 1 Ferocity:** This ability also affects a 3 burst originating from your companion. Targets in this second area are taunted by your companion. An enemy in both areas is taunted only by you.
 
-**©** Each enemy in the area
+<!-- @type: ability | @id: i-feed-on-your-pain | @cost: 5 Ferocity -->
+##### I Feed On Your Pain!
 
-Effect: You can spend a Recovery and gain 3 temporary Stamina for each target. Each target is taunted by you until the end of their next turn
+*Invigorated by the smell of blood, you strike a savage blow.*
 
-Spend 1 Ferocity: This ability also affects a 3 burst originating from your companion. Targets in this second area are taunted by your companion. An enemy in both areas is taunted only by you.
+| **Beastheart, Melee, Ranged, Strike, Weapon** | **Main action** |
+|-----------------------------------------------|----------------:|
+| **📏 Melee 1 or ranged 5**                    | **🎯 One creature** |
 
-#### I Feed On Your Pain! (5 Ferocity)
+**Power Roll + Might:**
 
-Invigorated by the smell of blood, you strike a savage blow.
+- **≤11:** 8 + M damage
+- **12-16:** 12 + M damage
+- **17+:** 16 + M damage; M < STRONG bleeding (save ends)
 
-Beastheart, Melee, Range, Strike, Weapon Melee 1 or ranged 5 **One** creature
+**Effect:** If the target is killed by this damage, or is winded or bleeding after taking this damage, you gain 2 surges.
 
-#### Power Roll + Might:
+<!-- @type: ability | @id: rain-of-fire | @cost: 5 Ferocity -->
+##### Rain of Fire
 
-≤11 8 + M damage
+*As your arrows rain down on your foes, flames spiral around your companion, setting the arrows ablaze.*
 
-12-16 12 + M damage
+| **Area, Beastheart, Weapon** |              **Main action** |
+|------------------------------|-----------------------------:|
+| **📏 3 cube within 5**       | **🎯 Each enemy in the area** |
 
-17+ 16 + M damage; M < STRONG bleeding (save ends)
+**Power Roll + Might:**
 
-Effect: If the target is killed by this damage, or is winded or bleeding after taking this damage, you gain 2 surges.
+- **≤11:** 3 fire damage
+- **12-16:** 5 fire damage
+- **17+:** 8 fire damage
 
-#### Rain of Fire (5 Ferocity)
+**Effect:** If your companion is in the area, they deal fire damage equal to their Intuition score to each target.
 
-As your arrows rain down on your foes, flames spiral around your companion, setting the arrows ablaze.
+<!-- @type: ability | @id: you-let-me-get-too-close | @cost: 5 Ferocity -->
+##### You Let Me Get Too Close
 
-Area, Beastheart, Weapon
+*The wilderness has no concept of fair play.*
 
-Main action
+| **Beastheart, Charge, Melee, Strike, Weapon** | **Main action** |
+|-----------------------------------------------|----------------:|
+| **📏 Melee 1**                                | **🎯 One creature** |
 
-**S** Each enemy in the area
+**Power Roll + Might:**
 
-Main action
+- **≤11:** 8 + M damage; M < WEAK grabbed
+- **12-16:** 12 + M damage; M < AVERAGE grabbed
+- **17+:** 16 + M damage; M < STRONG grabbed
 
-3 cube within 5
-
-**perBell + Mighty**
-
-#### Power Roll + Might:
-
-≤11 3 fire damage
-
-**12-16** 5 fire damage 17+ 8 fire damage
-
-Effect: If your companion is in the area, they deal fire damage equal to their Intuition score to each target.
-
-#### You Let Me Get Too Close (5 Ferocity)
-
-The wilderness has no concept of fair play.
-
-Beastheart, Charge, Melee, Strike, Weapon
-
-Main action **©** One creature
-
-Melee 1
-
-Power Roll + Might:
-
-≤11 8 + M damage; M<WEAK grabbed</p>
-
-12-16 12 + M damage; M<AVERAGE grabbed 17+ 16 + M damage; M<STRONG grabbed
-
-10 + M damage, M **STRONG** grabbed
-
-**Effect:** If you grab the target while your compan
-
-Effect: If you grab the target while your companion is adjacent to them, your companion can make a melee free strike against the target.
-
-![](_page_28_Picture_0.jpeg)
+**Effect:** If you grab the target while your companion is adjacent to them, your companion can make a melee free strike against the target.
 
 #### <span id="page-29-0"></span>2nd-Level Features
 
