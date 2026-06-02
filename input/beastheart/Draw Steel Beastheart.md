@@ -5,7 +5,7 @@ title: Draw Steel Beastheart
 ---
 
 <!-- @type: chapter | @id: the-beastheart-and-the-faeries -->
-## THE BEASTHEART & THE FAERIES
+# THE BEASTHEART & THE FAERIES
 
 ## PART ONE: THE BEASTHEART
 
@@ -278,7 +278,7 @@ She planted the haft of her longspear on the ground and took a casual stance, a 
 Continued in *Between Sun & Shadow*.
 
 <!-- @type: class | @id: beastheart -->
-## THE BEASTHEART CLASS
+# THE BEASTHEART CLASS
 
 A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a wolf, a basilisk, or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
 
@@ -1216,7 +1216,8 @@ This ability gains the following benefit based on your wild nature.
 - Punisher: Your companion slides each target up to a number of squares equal to their Might score.
 - **Spark:** This strike deals cold, fire, lightning, or sonic damage. You gain 1 surge.
 
-## **Ferocity**
+<!-- @type: feature | @id: ferocity | @level: 1 -->
+## Ferocity
 
 You and your companion tap into a predator's bloodlust that grants you a Heroic Resource called ferocity.
 
@@ -1234,6 +1235,7 @@ Though you can't gain ferocity outside of combat, you can use your heroic abilit
 
 When you or your companion uses an ability outside of combat that has a variable or unlimited ferocity cost, the ability can be used as if you had spent an amount of ferocity equal to your Victories.
 
+<!-- @type: feature | @id: rampage | @level: 1 -->
 ## Rampage
 
 While your ferocity sharpens your killer instinct, it can also drive your companion into a rampage, causing them to strike friends and foes alike in a blood-soaked battle frenzy. As their rampage builds, they become something more than a mortal companion, embodying a primordial spirit of destruction.
