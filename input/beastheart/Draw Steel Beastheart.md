@@ -1025,7 +1025,6 @@ While the wolf is rampaging, you and the wolf gain a +2 bonus to speed, and crea
 
 While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are frightened until the end of their next turn.
 
-<!-- @type: feature | @id: companion-rules -->
 ### Companion Rules
 
 - **Companion Stamina and Recoveries.** Your companion's Stamina maximum equals your Stamina maximum. Your companion has no Recoveries. When an effect would allow your companion to spend a Recovery, your companion spends one of your Recoveries.
@@ -1044,7 +1043,6 @@ While the wolf is rampaging, you and the wolf are surrounded by an aura of dread
 - **Changing Your Companion.** As a respite activity, you can release your current companion, then gain a new companion of a different species or summon a companion you previously released.
 - **One Hero.** You and your companion count as one hero for determining the difficulty of combats, montage tests, and other challenges.
 
-<!-- @type: feature | @id: adding-and-subtracting-actions -->
 ### Adding and Subtracting Actions
 
 Although you and your companion share your action economy, you are treated as separate creatures for effects that grant or remove main actions, maneuvers, and move actions. For instance, the talent's Applied Chronometrics ability grants an extra maneuver. If both you and your companion are targeted by the ability, you both gain extra maneuvers.
