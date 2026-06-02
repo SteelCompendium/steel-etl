@@ -1845,98 +1845,77 @@ As a 3rd-level beastheart, you gain the following features.
 
 Your companion gains the level 3 advancement feature granted by their stat block.
 
-## **7-Ferocity Ability**
+### 7-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 7 ferocity to use.
 
-![](_page_31_Picture_7.jpeg)
+<!-- @type: ability | @id: death-and-violence | @level: 3 | @cost: 7 Ferocity | @action: Triggered Action -->
+#### Death and Violence
 
-#### **Death and Violence (7 Ferocity)**
+*You leap from your foe's corpse.*
 
-You leap from your foe's corpse.
-
-Beastheart, Magic, Ranged
-Ranged 10
-
-**Triggered One** creature
+| **Beastheart, Magic, Ranged** | **Triggered Action** |
+|-------------------------------|---------------------:|
+| **📏 Ranged 10**              | **🎯 One creature**  |
 
 **Trigger:** Your companion uses an ability that reduces the target to 0 Stamina.
 
 **Effect:** The target dies. You teleport to the target's space, shift up to a number of squares equal to your Might score, and can then make a melee free strike. You then make the following power roll, targeting each enemy within 5 squares of the target:
 
-#### Power Roll + Might:
+**Power Roll + Might:**
 
-**≤11** P<WEAK frightened (save ends)
+- **≤11:** P < WEAK frightened (save ends)
+- **12-16:** 4 psychic damage; P < AVERAGE frightened (save ends)
+- **17+:** 8 psychic damage; P < STRONG frightened (save ends)
 
-12-16 4 psychic damage; P<AVERAGE frightened (save ends)
+<!-- @type: ability | @id: head-to-head | @level: 3 | @cost: 7 Ferocity -->
+#### Head to Head
 
-17+ 8 psychic damage; P<STRONG frightened (save ends)
+*Your bloody-forehead smash drives your companion into a frenzy.*
 
-![](_page_31_Picture_18.jpeg)
+| **Beastheart, Melee, Strike** | **Main action** |
+|-------------------------------|----------------:|
+| **📏 Melee 1**                | **🎯 One creature** |
 
-#### Head to Head (7 Ferocity)
+**Power Roll + Might:**
 
-Your bloody-forehead smash drives your companion into a frenzy.
-
-Beastheart, Melee, Strike
-
-Main action
-
-Melee 1
-
-**o** One creature
-
-#### Power Roll + Might:
-
-≤11 13 + M damage; P<WEAK dazed (save ends)
-</p>
-
-12-16 19 + M damage; P < AVERAGE dazed (save ends)
-
-17+ 25 + M damage; P < STRONG dazed (save ends)
+- **≤11:** 13 + M damage; P < WEAK dazed (save ends)
+- **12-16:** 19 + M damage; P < AVERAGE dazed (save ends)
+- **17+:** 25 + M damage; P < STRONG dazed (save ends)
 
 **Effect:** You are bleeding (save ends). Until the end of your next turn, your companion gains an edge on power rolls.
 
-#### Jaws of Death (7 Ferocity)
+<!-- @type: ability | @id: jaws-of-death | @level: 3 | @cost: 7 Ferocity -->
+#### Jaws of Death
 
-Spectral teeth clamp on a foe, chaining them to you and draining their life essence.
+*Spectral teeth clamp on a foe, chaining them to you and draining their life essence.*
 
-Beastheart, Magic, Melee, Ranged
+| **Beastheart, Magic, Melee, Ranged** | **Main action** |
+|--------------------------------------|----------------:|
+| **📏 Melee 1 or ranged 5**           | **🎯 One creature** |
 
-Main action
-One creature
+**Power Roll + Intuition:**
 
-Melee 1 or ranged 5
-
-Power Roll + Intuition:
-
-511 7 + I damage; P<WEAK weakened (save ends)
-
-10 + I damage; P<AVERAGE weakened (save ends)
-
-17+ 14 + I damage; P<STRONG weakened (save ends)
+- **≤11:** 7 + I damage; P < WEAK weakened (save ends)
+- **12-16:** 10 + I damage; P < AVERAGE weakened (save ends)
+- **17+:** 14 + I damage; P < STRONG weakened (save ends)
 
 **Effect:** Whenever a target more than 3 squares away from you fails the saving throw while weakened this way, you can pull the target up to a number of squares equal to your Intuition score as a free triggered action.
 
-#### Shieldbreaker (7 Ferocity)
+<!-- @type: ability | @id: shieldbreaker | @level: 3 | @cost: 7 Ferocity -->
+#### Shieldbreaker
 
-You smash through their guard and shatter their armor, leaving them wide open.
+*You smash through their guard and shatter their armor, leaving them wide open.*
 
-Beastheart, Melee, Ranged, Strike, Weapon
+| **Beastheart, Melee, Ranged, Strike, Weapon** | **Main action** |
+|-----------------------------------------------|----------------:|
+| **📏 Melee 1 or ranged 5**                    | **🎯 One creature** |
 
-Main action
+**Power Roll + Might:**
 
-Melee 1 or ranged 5
-
-**o** One creature
-
-#### Power Roll + Might:
-
-**≤11** 9 + **M** damage
-
-12-16 14 + M damage
-
-17+ 19 + M damage
+- **≤11:** 9 + M damage
+- **12-16:** 14 + M damage
+- **17+:** 19 + M damage
 
 **Effect:** The next creature who damages the target before the start of your next turn gains 3 surges, which they can use on the triggering damage.
 
