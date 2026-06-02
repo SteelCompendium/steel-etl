@@ -366,188 +366,223 @@ With the Director's permission, you can also change the damage types of your com
 
 ![](_page_8_Picture_7.jpeg)
 
-## **Basilisk Companion** Beast, Companion
+<!-- @type: feature-group | @companion: basilisk | @level: 1 -->
+### Basilisk
 
-¢ 1L  **Size** 5 **Speed** 2 **Stabilty** 1+M **Free Strike**
+*Beast, Companion*
+
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1L   | 5     | 2         | 1 + M       |
 
 **Immunity:** Poison 3 **Movement:** — **Skills:** Alertness
 
-M**ight** +2 A**gility** +1 R**eason** -1 I**ntuition** +2 P**resence** +2
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
 
-#### l **Petrify**
+<!-- @type: ability | @subtype: signature | @id: petrify -->
+#### Petrify
 
 *Transfixed by the basilisk's magical gaze or struck by their poisoned claws, the foe's body begins to calcify.*
 
-Companion, Magic, Melee, Ranged, Weapon Maneuver o Melee 1 or ranged 5 x One enemy
+| **Companion, Magic, Melee, Ranged, Weapon** |     **Maneuver** |
+|---------------------------------------------|-----------------:|
+| **📏 Melee 1 or ranged 5**                  | **🎯 One enemy** |
 
-Maneuver
+**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see Stoned).
 
-◉ One enemy
+**Spend 1 Ferocity:** While stoned this way, the target is also slowed.
 
-**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see **Stoned**).
-
-**Spend 1 Ferocity:** While stoned this way, the target is also slowed. ¢
-
-#### \* **Stoned**
+<!-- @type: feature | @id: stoned -->
+#### Stoned
 
 A stoned creature is magically turning to stone. Each time a creature fails the saving throw to end this effect, they take corruption damage equal to the basilisk's Might score. A stoned creature or a creature adjacent to them can use a maneuver to cut the encroaching stone from the stoned target's body, ending the effect and dealing damage to the target equal to twice the basilisk's Might score that can't be reduced in any way. A creature reduced to 0 Stamina while they are stoned, or by an ability that causes a creature to become stoned, is turned to stone until they are restored to life by magical means.
 
-#### **Level 3 Basilisk Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Basilisk Advancement Feature
 
-#### \* **Foes Forever Frozen**
+<!-- @type: feature | @id: foes-forever-frozen -->
+##### Foes Forever Frozen
 
 Whenever the basilisk makes a strike against a creature while rampaging, the target is stoned (save ends).
 
-#### **Level 6 Basilisk Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Basilisk Advancement Feature
 
-#### \* **Rock Smasher**
+<!-- @type: feature | @id: rock-smasher -->
+##### Rock Smasher
 
 Whenever you deal rolled damage to a stoned creature while the basilisk is rampaging, you deal extra damage equal to twice your Might score.
 
-#### **Level 10 Basilisk Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Basilisk Advancement Feature
 
-#### \* **Heart of Stone**
+<!-- @type: feature | @id: heart-of-stone -->
+##### Heart of Stone
 
 While the basilisk is rampaging, you and the basilisk have damage immunity 10 as you become nearly impervious living statues.
 
-![](_page_9_Picture_1.jpeg)
+<!-- @type: feature-group | @companion: bear | @level: 1 -->
+### Bear
 
-| <b>Bear</b><br>Animal, Companion                                         |                                                                            |                                                                           | <b>Companion</b>                                                             |                                                                                           |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 1L<br><b>Size</b>                                                        | 5<br><b>Speed</b>                                                          |                                                                           | 2<br><b>Stability</b>                                                        | 1+ <span style="background-color:black;color:white"><b>M</b></span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> Climb                             |                                                                            |                                                                           | <b>Skills:</b> Intimidate                                                    |                                                                                           |
-| <span style="background-color:black;color:white"><b>M</b></span> ight +2 | <span style="background-color:black;color:white"><b>A</b></span> gility +1 | <span style="background-color:black;color:white"><b>R</b></span> eason -1 | <span style="background-color:black;color:white"><b>I</b></span> ntuition +2 | <span style="background-color:black;color:white"><b>P</b></span> resence +2               |
+*Animal, Companion*
 
-#### t **Backhand**
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1L   | 5     | 2         | 1 + M       |
+
+**Immunity:** — **Movement:** Climb **Skills:** Intimidate
+
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
+
+<!-- @type: ability | @subtype: signature | @id: backhand -->
+#### Backhand
 
 *The bear casually swats the pesky foe into next week.*
 
-Companion, Melee, Weapon Maneuver
-
-o Melee 1 x One creature or object
+| **Companion, Melee, Weapon** |               **Maneuver** |
+|------------------------------|---------------------------:|
+| **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The target takes damage equal to 4 + the bear's Might score and is pushed up to 2 squares.
 
-**Spend 1 Ferocity:** The target is force moved up to a number of additional squares equal to the bear's Might score. ¢
+**Spend 1 Ferocity:** The target is force moved up to a number of additional squares equal to the bear's Might score.
 
-#### \* **Strong Like Bear**
+<!-- @type: feature | @id: strong-like-bear -->
+#### Strong Like Bear
 
 You gain a +1 bonus to your stability.
 
-#### **Level 3 Bear Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Bear Advancement Feature
 
-#### \* **Foe Thresher**
+<!-- @type: feature | @id: foe-thresher -->
+##### Foe Thresher
 
 Whenever the bear targets a creature with a strike that doesn't impose forced movement while rampaging, the bear can push the target up to a number of squares equal to the bear's Might score.
 
-#### **Level 6 Bear Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Bear Advancement Feature
 
-#### \* **Ursine Form**
+<!-- @type: feature | @id: ursine-form -->
+##### Ursine Form
 
 While the bear is rampaging, you have damage immunity 5 and your size increases to the bear's size (to a maximum of 2). If you don't have enough unoccupied space to grow, you grow as soon as there is sufficient space.
 
-#### **Level 10 Bear Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Bear Advancement Feature
 
-#### \* **Twin Colossi**
+<!-- @type: feature | @id: twin-colossi -->
+##### Twin Colossi
 
 While the bear is rampaging, you gain a +1 bonus to distance with melee weapon abilities, your size increases to match the bear's size (to a maximum of 3), and your strikes deal an extra 5 damage.
 
-6
+<!-- @type: feature-group | @companion: boar | @level: 1 -->
+### Boar
 
-| <b>Boar</b><br>Animal, Companion                                         |                                                                            |                                                                           |                                                                              | <b>Companion</b>                                                                          |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                                        | 5<br><b>Speed</b>                                                          |                                                                           | 2<br><b>Stability</b>                                                        | 1+ <span style="background-color:black;color:white"><b>M</b></span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> —                                 |                                                                            |                                                                           | <b>Skills:</b> Search                                                        |                                                                                           |
-| <span style="background-color:black;color:white"><b>M</b></span> ight +2 | <span style="background-color:black;color:white"><b>A</b></span> gility +1 | <span style="background-color:black;color:white"><b>R</b></span> eason -1 | <span style="background-color:black;color:white"><b>I</b></span> ntuition +2 | <span style="background-color:black;color:white"><b>P</b></span> resence +2               |
+*Animal, Companion*
 
-#### t **Gore**
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 5     | 2         | 1 + M       |
+
+**Immunity:** — **Movement:** — **Skills:** Search
+
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
+
+<!-- @type: ability | @subtype: signature | @id: gore -->
+#### Gore
 
 *With an enraged snort, the boar lunges forward to rip open foes with their tusks.*
 
-Companion, Melee, Weapon Maneuver
-
-Maneuver
-
-Compe
-
-▸ Melee 1
-
-o Melee 1 x One creature or object
+| **Companion, Melee, Weapon** |               **Maneuver** |
+|------------------------------|---------------------------:|
+| **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The boar moves up to their speed in a straight line. When this movement ends, they can deal damage equal to 3 + their Might score to an adjacent target. If the boar moved closer to the target as part of this movement, the boar deals extra damage equal to their Might score.
 
-**Spend 1 Ferocity:** The target is bleeding until the end of their next turn. ¢
+**Spend 1 Ferocity:** The target is bleeding until the end of their next turn.
 
-#### \* **Spiteful Endurance**
+<!-- @type: feature | @id: spiteful-endurance -->
+#### Spiteful Endurance
 
 While the boar is winded, they have damage immunity equal to their Might score and ignore the effects of bleeding.
 
-#### **Level 3 Boar Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Boar Advancement Feature
 
-#### \* **Greased Pig**
+<!-- @type: feature | @id: greased-pig -->
+##### Greased Pig
 
 While the boar is rampaging, they have a +2 bonus to speed and a double edge on the Escape Grab maneuver.
 
-#### **Level 6 Boar Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Boar Advancement Feature
 
-#### \* **Wild Rush**
+<!-- @type: feature | @id: wild-rush -->
+##### Wild Rush
 
 While the boar is rampaging, you can use their Gore maneuver, and you and the boar can shift instead of move when using the Charge action or the Gore maneuver.
 
-#### **Level 10 Boar Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Boar Advancement Feature
 
-#### \* **Immortal Rage**
+<!-- @type: feature | @id: immortal-rage -->
+##### Immortal Rage
 
 Whenever you or the boar use an ability that deals damage while the boar is rampaging, you gain 10 temporary Stamina.
 
-![](_page_10_Picture_21.jpeg)
+<!-- @type: feature-group | @companion: condor | @level: 1 -->
+### Condor
 
-![](_page_11_Picture_1.jpeg)
+*Animal, Companion*
 
-| <b>Condor</b><br><span style="font-weight:normal">Animal, Companion</span> |                                                                     |                                                                    | <b>Companion</b>                                                      |                                                                                    |
-|----------------------------------------------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                                          | 7<br><b>Speed</b>                                                   |                                                                    | 0<br><b>Stability</b>                                                 | 1+ <span style="background-color:black;color:white">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> Fly                                 |                                                                     |                                                                    | <b>Skills:</b> Alertness                                              |                                                                                    |
-| <span style="background-color:black;color:white">M</span> ight +2          | <span style="background-color:black;color:white">A</span> gility +1 | <span style="background-color:black;color:white">R</span> eason -1 | <span style="background-color:black;color:white">I</span> ntuition +2 | <span style="background-color:black;color:white">P</span> resence +1               |
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 0         | 1 + M       |
 
-#### t **Flurry of Wings**
+**Immunity:** — **Movement:** Fly **Skills:** Alertness
+
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +1
+
+<!-- @type: ability | @subtype: signature | @id: flurry-of-wings -->
+#### Flurry of Wings
 
 *I can't draw a bead on them with that infernal bird flapping in my face!*
 
-Companion, Melee, Weapon Maneuver
-
-Maneuver
-
-↻ one creature or object
-
-o Melee 1 x One creature or object
-
-◎ One creature or obje
-l to 3 + the condor’s Might
+| **Companion, Melee, Weapon** |               **Maneuver** |
+|------------------------------|---------------------------:|
+| **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The target takes damage equal to 3 + the condor's Might score. Additionally, enemies are weakened while adjacent to the condor until the end of your next turn.
 
-**Spend 1 Ferocity:** An enemy who would be weakened by this ability is taunted instead. ¢
+**Spend 1 Ferocity:** An enemy who would be weakened by this ability is taunted instead.
 
-#### \* **Moving Target**
+<!-- @type: feature | @id: moving-target -->
+#### Moving Target
 
 While the condor is flying and has a speed greater than 0, ranged strikes against them take a bane.
 
-#### **Level 3 Condor Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Condor Advancement Feature
 
-#### \* **Dive Bomb**
+<!-- @type: feature | @id: dive-bomb -->
+##### Dive Bomb
 
 Whenever the condor makes a strike while rampaging, they deal extra damage equal to the number of squares they've moved on their turn (to a maximum of 5).
 
-#### **Level 6 Condor Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Condor Advancement Feature
 
-#### \* **Borne Aloft**
+<!-- @type: feature | @id: borne-aloft -->
+##### Borne Aloft
 
 While the condor is rampaging, you gain wings and can fly. While flying, you gain a +2 bonus to speed. If you are midair when the condor's rampage ends, you take no damage from the fall.
 
-#### **Level 10 Condor Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Condor Advancement Feature
 
-#### \* **Flight of the Condor**
+<!-- @type: feature | @id: flight-of-the-condor -->
+##### Flight of the Condor
 
 While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 
