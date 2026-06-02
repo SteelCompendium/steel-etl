@@ -1977,97 +1977,77 @@ When you or your companion uses your The Pack Defends ability to spend a Recover
 
 When you or your companion deals damage with your Pyre ability, each enemy adjacent to either of you takes the damage.
 
-## 9-Ferocity Ability
+### 9-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 9 ferocity to use.
 
-#### Deadshot (9 Ferocity)
+<!-- @type: ability | @id: deadshot | @level: 5 | @cost: 9 Ferocity -->
+#### Deadshot
 
-You channel your companion's feral senses to take the perfect shot.
+*You channel your companion's feral senses to take the perfect shot.*
 
-Beastheart, Ranged, Strike, Weapon
+| **Beastheart, Ranged, Strike, Weapon** | **Main action** |
+|----------------------------------------|----------------:|
+| **📏 Ranged 15**                       | **🎯 One creature or object** |
 
-Main action
+**Power Roll + Intuition:**
 
-Ranged 15
+- **≤11:** 12 + I damage
+- **12-16:** 18 + I damage
+- **17+:** 30 + I damage
 
-**One** creature or object
+**Effect:** If you are hidden, you remain hidden after the strike.
 
-#### Power Roll + Intuition:
+<!-- @type: ability | @id: dogpile | @level: 5 | @cost: 9 Ferocity -->
+#### Dogpile
 
-**≤11** 12 + **1** damage
+*You and your allies surround your enemy like a pack of wolves, mobbing them and pulling them down.*
 
-12-16 18 + I damage
+| **Beastheart, Melee, Strike, Weapon** | **Main action** |
+|---------------------------------------|----------------:|
+| **📏 Melee 1**                        | **🎯 One creature** |
 
-17+ 30 + 1 damage
+**Power Roll + Might:**
 
-Effect: If you are hidden, you remain hidden after the strike.
-
-#### Dogpile (9 Ferocity)
-
-You and your allies surround your enemy like a pack of wolves, mobbing them and pulling them down.
-
-Beastheart, Melee, Strike, Weapon
-
-Main action
-
-Melee 1
-
-**O**ne creature
-
-#### Power Roll + Might:
-
-≤11 10 + M damage; M<WEAK grabbed and prone
-</p>
-
-15 + M damage; M<AVERAGE grabbed and prone
-
-17+ 20 + M damage; M<STRONG grabbed and prone
+- **≤11:** 10 + M damage; M < WEAK grabbed and prone
+- **12-16:** 15 + M damage; M < AVERAGE grabbed and prone
+- **17+:** 20 + M damage; M < STRONG grabbed and prone
 
 **Effect:** Each ally adjacent to the target can use a free triggered action to deal damage to the target equal to their highest characteristic score.
 
-#### One, Two, Three, Heave (9 Ferocity)
+<!-- @type: ability | @id: one-two-three-heave | @level: 5 | @cost: 9 Ferocity -->
+#### One, Two, Three, Heave
 
-· Harnessing your companion's strength, you send your foe flying.
+*Harnessing your companion's strength, you send your foe flying.*
 
-Beastheart, Melee, Strike, Weapon
+| **Beastheart, Melee, Strike, Weapon** | **Main action** |
+|---------------------------------------|----------------:|
+| **📏 Melee 1**                        | **🎯 One creature** |
 
-Main action
-One creature
+**Power Roll + Might:**
 
-Melee 1
-
-#### Power Roll + Might:
-
-≤11 10 + M damage; vertical push 4; prone
-
-15 + M damage; vertical push 6; prone
-
-17+ 20 + M damage; vertical push 8; prone
+- **≤11:** 10 + M damage; vertical push 4; prone
+- **12-16:** 15 + M damage; vertical push 6; prone
+- **17+:** 20 + M damage; vertical push 8; prone
 
 **Effect:** If your companion is adjacent to the target, this forced movement can ignore the target's stability.
 
-#### Rip Them Apart! (9 Ferocity)
+<!-- @type: ability | @id: rip-them-apart | @level: 5 | @cost: 9 Ferocity -->
+#### Rip Them Apart!
 
-In a gruesome display, you and your companion rip off a pinned enemy's limb or other body part and toss it away.
+*In a gruesome display, you and your companion rip off a pinned enemy's limb or other body part and toss it away.*
 
-Melee, Strike, Weapon
+| **Melee, Strike, Weapon** | **Main action** |
+|---------------------------|----------------:|
+| **📏 Melee 1**            | **🎯 One creature** |
 
-Main action
+**Power Roll + Might:**
 
-Melee 1
+- **≤11:** 11 + M damage; M < WEAK bleeding (save ends)
+- **12-16:** 17 + M damage; M < AVERAGE bleeding (save ends)
+- **17+:** 22 + M damage; M < STRONG bleeding (save ends)
 
-**O**ne creature
-
-#### Power Roll + Might:
-
-(save ends)
-
-17 + M damage; M<AVERAGE bleeding (save ends)
-
-17+ 22 + M damage; M<STRONG bleeding (save ends)
-
-**Effect:** If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has **P**<AVERAGE is frightened (save ends).
+**Effect:** If the target is grabbed by your partner, the target takes extra damage equal to your Might score plus your partner's Might score. If the target is reduced to 0 Stamina by this ability, each enemy within 2 squares who has P < AVERAGE is frightened (save ends).
 
 ## <span id="page-34-0"></span>**6th-Level Features**
 
