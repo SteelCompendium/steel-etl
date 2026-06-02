@@ -1742,178 +1742,157 @@ You and your companion can't be surprised.
 
 Your wild nature grants your choice of one of two heroic abilities.
 
-#### 2ND-LEVEL GUARDIAN ABILITIES
+#### 2nd-Level Guardian Abilities
 
 Choose one of the following abilities.
 
-#### Fetch! (5 Ferocity)
+<!-- @type: ability | @id: fetch | @level: 2 | @cost: 5 Ferocity | @subclass: guardian -->
+#### Fetch!
 
-Your companion blinks out of existence, returning with a visitor you were particularly hoping to meet.
+*Your companion blinks out of existence, returning with a visitor you were particularly hoping to meet.*
 
-Companion, Magic, Melee, Strike, Weapon Main action
-
-Melee 1 One creature or object
+| **Companion, Magic, Melee, Strike, Weapon** | **Main action** |
+|---------------------------------------------|----------------:|
+| **📏 Melee 1**                              | **🎯 One creature or object** |
 
 **Effect:** Your companion can teleport up to 5 squares before and after making the power roll. Instead of grabbing the target, your companion can pick up a target object that is smaller than they are. You can forgo dealing damage with this ability.
 
-#### Power Roll + Might:
+**Power Roll + Might:**
 
-(12-16) 8 + M damage; M<WEAK grabbed (12-16) 8 + M damage; M<AVERAGE grabbed (17+) 12 + M damage; M<STRONG grabbed
+- **≤11:** 6 + M damage; M < WEAK grabbed
+- **12-16:** 8 + M damage; M < AVERAGE grabbed
+- **17+:** 12 + M damage; M < STRONG grabbed
 
 After making the power roll, your companion can teleport with a grabbed creature or held object, provided the creature or object can fit in the destination. You choose which squares adjacent to your companion the grabbed creature or held object is teleported to.
 
-#### Omnomnom (5 Ferocity)
+<!-- @type: ability | @id: omnomnom | @level: 2 | @cost: 5 Ferocity | @subclass: guardian -->
+#### Omnomnom
 
-What do you have in your mouth? No! Bad boy!
+*What do you have in your mouth? No! Bad boy!*
 
-Companion, Melee, Strike, Weapon Main action
-
-№ Melee 1 One creature
+| **Companion, Melee, Strike, Weapon** | **Main action** |
+|--------------------------------------|----------------:|
+| **📏 Melee 1**                       | **🎯 One creature** |
 
 **Special:** This ability targets only creatures who are grabbed and are your companion's size or smaller.
 
-#### Power Roll + Might:
+**Power Roll + Might:**
 
-(211) 6 + M damage; M<WEAK the target is swallowed (12-16) 10 + M damage; M<AVERAGE the target is swallowed (17+) 14 + M damage; M<STRONG the target is swallowed
+- **≤11:** 6 + M damage; M < WEAK the target is swallowed
+- **12-16:** 10 + M damage; M < AVERAGE the target is swallowed
+- **17+:** 14 + M damage; M < STRONG the target is swallowed
 
 **Effect:** A swallowed creature shares your companion's space, is grabbed and restrained, and has line of effect only to your companion. Nothing has line of effect to the swallowed creature.
 
 Once per round at the start of your turn, the swallowed creature takes acid damage equal to 1 + your companion's Might score. If the swallowed creature escapes the grab, your companion immediately regurgitates the creature, who lands prone in an unoccupied square adjacent to your companion. Your companion can also regurgitate a swallowed creature as a free maneuver. Your companion can have only one creature swallowed at a time.
 
-#### <span id="page-30-0"></span>2ND-LEVEL PROWLER ABILITIES
+#### 2nd-Level Prowler Abilities
 
 Choose one of the following abilities.
 
-#### Jump Scare (5 Ferocity)
+<!-- @type: ability | @id: jump-scare | @level: 2 | @cost: 5 Ferocity | @subclass: prowler -->
+#### Jump Scare
 
-> Surprised to see me?
+*Surprised to see me?*
 
-Area, Companion, Magic
-
-Main action
-
-2 burst
-
-**S** Each enemy in the area
+| **Area, Companion, Magic** | **Main action** |
+|----------------------------|----------------:|
+| **📏 2 burst**             | **🎯 Each enemy in the area** |
 
 **Special:** This ability targets only enemies with line of effect to your companion.
 
 **Effect:** Your companion shifts up to a number of squares equal to their Intuition score. During this movement, they are invisible. They then make a power roll.
 
-#### Power Roll + Intuition:
+**Power Roll + Intuition:**
 
-4 damage; P<WEAK frightened (save ends)
+- **≤11:** 4 damage; P < WEAK frightened (save ends)
+- **12-16:** 6 damage; P < AVERAGE frightened (save ends)
+- **17+:** 10 damage; P < STRONG frightened (save ends)
 
-12-16 6 damage; P<AVERAGE frightened (save ends)
+<!-- @type: ability | @id: on-you-like-your-shadow | @level: 2 | @cost: 5 Ferocity | @subclass: prowler -->
+#### On You Like Your Shadow
 
-17+ 10 damage; P<STRONG frightened (save ends)
+*Your companion darts around their target, staying out of reach and using them as a shield.*
 
-#### On You Like Your Shadow (5 Ferocity)
+| **Charge, Companion, Melee, Strike, Weapon** | **Main action** |
+|----------------------------------------------|----------------:|
+| **📏 Melee 1**                               | **🎯 One creature or object** |
 
-Your companion darts around their target, staying out of reach and using them as a shield.
+**Power Roll + Might:**
 
-Charge, Companion, Melee, Strike, Weapon
-
-Main action
-
-Melee 1
-
-**③** One creature or object
-
-#### Power Roll + Might:
-
-**≤11** 5 + **M** damage
-
-12-16 8 + M damage
-
-17+ 12 + M damage
+- **≤11:** 5 + M damage
+- **12-16:** 8 + M damage
+- **17+:** 12 + M damage
 
 **Effect:** Your companion enters the target's space. Until your companion is no longer in the target's space, they can end their turn in that space, strikes against them also affect the target, and your strikes against the target gain an edge.
 
-#### 2ND-LEVEL PUNISHER ABILITIES
+#### 2nd-Level Punisher Abilities
 
 Choose one of the following abilities.
 
-#### Foe Bowling (5 Ferocity)
+<!-- @type: ability | @id: foe-bowling | @level: 2 | @cost: 5 Ferocity | @subclass: punisher -->
+#### Foe Bowling
 
-Your companion sends one enemy tumbling into another, taking them both out.
+*Your companion sends one enemy tumbling into another, taking them both out.*
 
-Charge, Companion, Melee, Strike, Weapon
+| **Charge, Companion, Melee, Strike, Weapon** | **Main action** |
+|----------------------------------------------|----------------:|
+| **📏 Melee 1**                               | **🎯 One creature** |
 
-Main action
+**Power Roll + Might:**
 
-Melee 1
-
-**3** One creature
-
-#### Power Roll + Might:
-
-(≤11) 3 + M damage; push 2; M<WEAK prone</p>
-
-(12-16) 5 + M damage; push 3; M<AVERAGE prone
-
-17+ 8 + M damage; push 4; M<STRONG prone
+- **≤11:** 3 + M damage; push 2; M < WEAK prone
+- **12-16:** 5 + M damage; push 3; M < AVERAGE prone
+- **17+:** 8 + M damage; push 4; M < STRONG prone
 
 **Effect:** If the target is force moved at least 1 square, an enemy adjacent to the target at the end of this forced movement is also targeted by this ability's power roll, but they don't trigger this effect.
 
-#### One Roar and We're Back In the Fight (5 Ferocity)
+<!-- @type: ability | @id: one-roar-and-were-back-in-the-fight | @level: 2 | @cost: 5 Ferocity | @subclass: punisher -->
+#### One Roar and We're Back In the Fight
 
-Your companion builds up courage with a roar, growl, or aggressive display.
+*Your companion builds up courage with a roar, growl, or aggressive display.*
 
-Companion
-
-Maneuver
-
-Ranged 5
-
-**O**ne ally
+| **Companion** |     **Maneuver** |
+|---------------|-----------------:|
+| **📏 Ranged 5** | **🎯 One ally** |
 
 **Effect:** Your companion and the target can each gain 2 surges, spend up to 2 Recoveries, and end one condition or effect on them that is ended by a saving throw or that ends at the end of their turn.
 
-#### 2ND-LEVEL SPARK ABILITIES
+#### 2nd-Level Spark Abilities
 
 Choose one of the following abilities.
 
-#### Burning Lash (5 Ferocity)
+<!-- @type: ability | @id: burning-lash | @level: 2 | @cost: 5 Ferocity | @subclass: spark -->
+#### Burning Lash
 
-A blazing tongue of energy entangles a foe.
+*A blazing tongue of energy entangles a foe.*
 
-Companion, Magic, Melee, Strike, Weapon
+| **Companion, Magic, Melee, Strike, Weapon** | **Main action** |
+|---------------------------------------------|----------------:|
+| **📏 Melee 2**                              | **🎯 One creature** |
 
-Melee 2
+**Power Roll + Intuition:**
 
-Main action
-One creature
-
-#### Power Roll + Intuition:
-
-(≤11) 6 + I fire or lightning damage; M<WEAK prone
-
-12-16 9 + I fire or lightning damage; M<AVERAGE prone
-
-17+ 14 + 1 fire or lightning damage; M<STRONG prone and can't stand (EoT)
+- **≤11:** 6 + I fire or lightning damage; M < WEAK prone
+- **12-16:** 9 + I fire or lightning damage; M < AVERAGE prone
+- **17+:** 14 + I fire or lightning damage; M < STRONG prone and can't stand (EoT)
 
 **Spend 1 Ferocity:** If you are within distance of the target, you can use a free maneuver to wield a second whip, dealing extra fire or lightning damage equal to your Intuition score.
 
-#### Howling Gale (5 Ferocity)
+<!-- @type: ability | @id: howling-gale | @level: 2 | @cost: 5 Ferocity | @subclass: spark -->
+#### Howling Gale
 
-A blizzard or thunderstorm sends foes flying and lifts you like a feather.
+*A blizzard or thunderstorm sends foes flying and lifts you like a feather.*
 
-Area, Companion, Magic
+| **Area, Companion, Magic** | **Main action** |
+|----------------------------|----------------:|
+| **📏 3 cube within 5**     | **🎯 Each enemy in the area** |
 
-Main action
+**Power Roll + Might:**
 
-3 cube within 5
-
-**S** Each enemy in the area
-
-#### Power Roll + Might:
-
-6 cold or sonic damage; slide 1
-
-12-16 9 cold or sonic damage; slide 2
-
-13 cold or sonic damage; slide 4
+- **≤11:** 6 cold or sonic damage; slide 1
+- **12-16:** 9 cold or sonic damage; slide 2
+- **17+:** 13 cold or sonic damage; slide 4
 
 **Effect:** Until the end of your next turn, you and your companion can fly and gain a +3 bonus to speed.
 
