@@ -153,6 +153,28 @@ func runValidate(cmd *cobra.Command, args []string) error {
 						newRegistry.Add(code)
 					}
 
+					// When validating the whole configured project (no explicit
+					// file arg), also collect every secondary book's codes so the
+					// stability check compares the full multi-book registry rather
+					// than just the primary book — otherwise secondary-book codes
+					// look "missing" and produce false positives.
+					if len(args) == 0 {
+						for _, b := range cfg.Books {
+							bookCfg := cfg.EffectiveBookConfig(b)
+							bookResult, err := pipeline.CollectSCCCodes(bookCfg, bookCfg.ResolveInputPath())
+							if err != nil {
+								issues = append(issues, validationIssue{
+									level: "error",
+									msg:   fmt.Sprintf("--scc-stable: SCC collection failed for %s: %v", b.Book, err),
+								})
+								continue
+							}
+							for _, code := range bookResult.Codes {
+								newRegistry.Add(code)
+							}
+						}
+					}
+
 					// Check: every code in the frozen registry must still exist
 					if err := newRegistry.ValidateAgainstFrozen(frozenRegistry); err != nil {
 						issues = append(issues, validationIssue{
