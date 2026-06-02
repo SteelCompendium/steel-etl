@@ -284,15 +284,14 @@ A beastheart never fights alone! You travel with a ferocious beast by your side�
 
 As a beastheart, you face the world's dangers alongside your wild companion. With your combined might, you rush into the thick of combat to challenge enemy champions or prowl around the outskirts to pick off vulnerable foes.
 
+<!-- @type: feature | @id: basics | @level: 1 -->
 ## Basics
 
 **Starting Characteristics:** You start with a Might of 2 and an Intuition of 2, and can choose one of the following arrays for your other characteristic scores:
 
-¥ 2, −1, −1
-
-¥ 1, 1, −1
-
-¥ 1, 0, 0
+- 2, −1, −1
+- 1, 1, −1
+- 1, 0, 0
 
 **Weak Potency:** Might − 2
 
@@ -312,7 +311,8 @@ As a beastheart, you face the world's dangers alongside your wild companion. Wit
 
 As a 1st-level beastheart, you gain the following features.
 
-## **Wild Nature**
+<!-- @type: feature | @id: wild-nature | @level: 1 -->
+## Wild Nature
 
 Your bond with your companion has awakened ancient, predatory instincts in you that fuel your battle prowess. But you aren't bound by your primal passions. As you decide which of your instincts to ignore and which to hone to deadly sharpness, you choose a wild nature from the following options, each of which grants you a skill. (*Quick Build:* Punisher.)
 
