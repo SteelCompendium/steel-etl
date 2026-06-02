@@ -21,6 +21,16 @@ type Result struct {
 	ClassifiedSections int
 	WrittenFiles       int
 	Errors             []string
+	// Classified holds every classified (sccCode, parsed) pair in document order,
+	// so a multi-book orchestrator can feed the cross-book shared outputs
+	// (aggregate, scc_api, scc_map) over the union of all books.
+	Classified []ClassifiedItem
+}
+
+// ClassifiedItem is a single classified section: its SCC code and parsed content.
+type ClassifiedItem struct {
+	SCCCode string
+	Parsed  *content.ParsedContent
 }
 
 // Run executes the full pipeline: parse → classify → output.
@@ -153,6 +163,9 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 						result.WrittenFiles++
 					}
 				}
+
+				// Record for cross-book shared-output generation.
+				result.Classified = append(result.Classified, ClassifiedItem{SCCCode: sccCode, Parsed: parsed})
 			}
 
 			walk(section.Children)
@@ -184,6 +197,67 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	}
 
 	return result, nil
+}
+
+// RunSharedOutputs regenerates the cross-book shared outputs (aggregate / scc_map /
+// scc_api) over the union of classified items from every book, so secondary books
+// (e.g. monsters, beastheart) join the same SCC API and data-unified aggregate as
+// the primary book. It is invoked by the orchestrator after all books have been
+// generated (which leaves the shared registry fully populated on disk).
+//
+// Per-book generation still writes these shared outputs for the primary book; this
+// pass cleans and rewrites them from the complete set, so it is a strict superset.
+func RunSharedOutputs(cfg *Config, items []ClassifiedItem) error {
+	// Specialize the config to emit ONLY the shared cross-book outputs: no per-book
+	// formats/variants/stripped (those were already written per book).
+	shared := *cfg
+	out := cfg.Output
+	out.Formats = nil
+	out.Variants = VariantsConfig{}
+	out.Stripped.Enabled = false
+	shared.Output = out
+
+	// Load the full registry (written by every book run) so aliases are complete.
+	sccRegistry := scc.NewRegistry()
+	registryPath := ""
+	if cfg.Classification.Registry != "" {
+		registryPath = cfg.ResolvePath(cfg.Classification.Registry)
+		if existing, err := scc.LoadRegistry(registryPath); err == nil {
+			for _, code := range existing.Codes() {
+				sccRegistry.Add(code)
+			}
+			for alias, canonical := range existing.Aliases() {
+				sccRegistry.AddAlias(alias, canonical)
+			}
+		}
+	}
+
+	generators := buildGenerators(&shared, "", registryPath, sccRegistry, nil)
+	if len(generators) == 0 {
+		return nil
+	}
+
+	if err := output.CleanGeneratorDirs(generators); err != nil {
+		return fmt.Errorf("clean shared output dirs: %w", err)
+	}
+
+	for _, item := range items {
+		for _, gen := range generators {
+			if err := gen.WriteSection(item.SCCCode, item.Parsed); err != nil {
+				return fmt.Errorf("shared write %s [%s]: %w", item.SCCCode, gen.Format(), err)
+			}
+		}
+	}
+
+	for _, gen := range generators {
+		if bulk, ok := gen.(output.BulkGenerator); ok {
+			if err := bulk.Finalize(); err != nil {
+				return fmt.Errorf("shared finalize [%s]: %w", gen.Format(), err)
+			}
+		}
+	}
+
+	return nil
 }
 
 // buildGenerators creates all configured output generators.

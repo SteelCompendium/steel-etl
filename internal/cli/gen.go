@@ -62,10 +62,29 @@ func runGen(cmd *cobra.Command, args []string) error {
 		return err
 	}
 
+	var allItems []pipeline.ClassifiedItem
+	includesPrimary := false
 	for _, bookCfg := range configs {
-		if err := generateBook(bookCfg); err != nil {
+		result, err := generateBook(bookCfg)
+		if err != nil {
 			return err
 		}
+		allItems = append(allItems, result.Classified...)
+		if bookCfg.Book == cfg.Book {
+			includesPrimary = true
+		}
+	}
+
+	// Cross-book shared outputs (aggregate / scc_api / scc_map) span every book.
+	// Only regenerate them when the run covers the primary plus at least one
+	// secondary book (i.e. `--all`); a lone primary run already wrote them per-book,
+	// and a lone secondary run must not clobber the shared targets.
+	if includesPrimary && len(configs) > 1 {
+		fmt.Println("\nRegenerating cross-book shared outputs (aggregate / scc_api / scc_map)...")
+		if err := pipeline.RunSharedOutputs(cfg, allItems); err != nil {
+			return err
+		}
+		fmt.Printf("Shared outputs regenerated over %d classified items from %d books.\n", len(allItems), len(configs))
 	}
 	return nil
 }
@@ -92,7 +111,7 @@ func selectBookConfigs(cfg *pipeline.Config, bookFilter string, all bool) ([]*pi
 	return []*pipeline.Config{cfg}, nil
 }
 
-func generateBook(cfg *pipeline.Config) error {
+func generateBook(cfg *pipeline.Config) (*pipeline.Result, error) {
 	// Resolve paths
 	inputPath := cfg.ResolveInputPath()
 	registryPath := ""
@@ -137,7 +156,7 @@ func generateBook(cfg *pipeline.Config) error {
 
 	result, err := pipeline.RunWithConfig(cfg, inputPath, mdOutputDir, registryPath)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	fmt.Printf("Sections: %d total, %d parsed, %d skipped\n",
@@ -152,5 +171,5 @@ func generateBook(cfg *pipeline.Config) error {
 		}
 	}
 
-	return nil
+	return result, nil
 }
