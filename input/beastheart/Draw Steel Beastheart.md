@@ -2698,6 +2698,7 @@ This section presents new trinket treasures for a beastheart and their companion
 
 This section presents 1st-echelon trinket treasures in alphabetical order.
 
+<!-- @type: treasure | @id: precious-collar | @echelon: 1 -->
 #### Precious Collar
 
 *This gold collar is bedazzled with semiprecious gems spelling out a cute pet name.*
@@ -2710,6 +2711,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Effect:** Only a beastheart's companion can wear this collar. As a free maneuver, the companion can shrink to size 1T or grow back to their original size. While reduced in size, the companion gains an edge on tests made to hide, sneak, and disguise themself as an ordinary animal.
 
+<!-- @type: treasure | @id: ruby-ring-of-recall | @echelon: 1 -->
 #### Ruby Ring of Recall
 
 *A dim light gleams in the heart of this ring's gem.*
@@ -2726,6 +2728,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Effect:** While wearing this ring, you can pull a willing, unconscious, or dead creature within 2 squares into the ring's ruby as a maneuver. If the creature inside the ring is conscious, they can see and hear the ring's surroundings. Either you or the creature inside the ring can use a maneuver to recall the creature from the ring, causing the creature to appear in an unoccupied space within 2 squares. A creature inside the ring can't act except to exit the ring.
 
+<!-- @type: treasure | @id: speaking-scarab | @echelon: 1 -->
 #### Speaking Scarab
 
 *This black leather necklace is set with a golden representation of a scarab beetle.*
@@ -2746,6 +2749,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 This section presents a 2nd-echelon trinket treasure.
 
+<!-- @type: treasure | @id: werewolf-tooth-pendant | @echelon: 2 -->
 #### Werewolf Tooth Pendant
 
 *The blood encrusting this tooth can never be washed off.*
@@ -2766,6 +2770,7 @@ This section presents a 2nd-echelon trinket treasure.
 
 This section presents a 3rd-echelon trinket treasure.
 
+<!-- @type: treasure | @id: bandana-of-invisibility | @echelon: 3 -->
 #### Bandana of Invisibility
 
 *Although you see nothing before you, your hands can discern an invisible scrap of cloth.*
@@ -2782,6 +2787,7 @@ This section presents a 3rd-echelon trinket treasure.
 
 This section presents a 4th-echelon trinket treasure.
 
+<!-- @type: treasure | @id: battle-wings | @echelon: 4 -->
 #### Battle Wings
 
 *These gently undulating wings affix themselves to a creature's shoulders.*
@@ -2804,6 +2810,7 @@ This section presents new leveled treasures for a beastheart and their companion
 
 The following leveled armor treasures are presented in alphabetical order.
 
+<!-- @type: treasure | @id: cavalry-armor -->
 #### Cavalry Armor
 
 *Wearing this absurdly heavy plate armor makes it almost impossible to move—and once you get into motion, it's equally hard to stop.*
@@ -2822,6 +2829,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and its bonus to stability increases to +3. When you or your companion pushes a creature using this armor's feature, the creature takes damage equal to twice the pusher's Might score and is knocked prone.
 
+<!-- @type: treasure | @id: pack-harness -->
 #### Pack Harness
 
 *While wearing these worn leather bands, your companion appears as not a single creature, but a hunting pack.* 
@@ -2842,6 +2850,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and whenever you activate this armor's power, your companion gains four illusory copies. Additionally, while you share your companion's space, you take on the appearance of one of the pack. When you take damage from an ability that deals rolled damage while in your companion's space, you can banish one copy to decrease the power roll outcome by one tier (to a minimum of tier 1).
 
+<!-- @type: treasure | @id: rampant-shield -->
 #### Rampant Shield
 
 *This battered shield bears a magically animated painting of a lion rampant.*
@@ -2860,6 +2869,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **9th Level:** The shield's bonus to Stamina increases to +9. Additionally, the shield can make opportunity attacks as if it was your companion.
 
+<!-- @type: treasure | @id: thorn-dragonscale -->
 #### Thorn Dragonscale
 
 *This armor, fashioned from the barbed scales of a thorn dragon, still pulses with the echo of the dragon's heartbeat.*
@@ -2880,6 +2890,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 The following leveled weapon treasures are presented in alphabetical order.
 
+<!-- @type: treasure | @id: glancing-bow -->
 #### Glancing Bow
 
 *This bow is festooned with mirrors and sights pointing in all directions.*
@@ -2900,6 +2911,7 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **9th Level:** The weapon's extra damage increases to 3. Additionally, you can now make a glancing shot off of an enemy. When you do so, the enemy is unaffected by the strike but takes damage equal to your Intuition score, and you can redirect the strike to a second target as if the enemy was the source of the ability, provided you can see the second target.
 
+<!-- @type: treasure | @id: horned-champion -->
 #### Horned Champion
 
 *This paired helmet and barding face shield are each set with a pair of curving metal horns.*
@@ -2916,6 +2928,7 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **9th Level:** The weapon's extra damage increases to 3. Additionally, when you or your companion uses the Charge main action, the movement doesn't provoke opportunity attacks.
 
+<!-- @type: treasure | @id: longclaw -->
 #### Longclaw
 
 *The arm-length claws jutting from your armor are your only weapon.* 
@@ -2932,6 +2945,7 @@ The following leveled weapon treasures are presented in alphabetical order.
 
 **9th Level:** The weapon's extra damage increases to 3. Additionally, whenever you or your companion causes a creature to become bleeding or uses an ability that deals damage to a bleeding creature, you can each spend a Recovery.
 
+<!-- @type: treasure | @id: scorpion-tails -->
 #### Scorpion Tails
 
 *These braids of articulated, wickedly barbed tails weave behind your heads, threatening painful stings.*
@@ -2976,10 +2990,12 @@ The following perks can be taken only by beastheart characters.
 
 This section presents exploration perks in alphabetical order.
 
+<!-- @type: perk | @id: born-tracker -->
 ## **Born Tracker**
 
 You and your companion gain an edge on tests made to track creatures, find your way, or search for hidden creatures.
 
+<!-- @type: perk | @id: ride-along -->
 ## **Ride Along**
 
 Your bond with your companion has permeated your very soul; you are just as much beast as you are beastheart. You can leave behind your mortal body and join your consciousness to that of your companion. You have the following ability.
@@ -3002,6 +3018,7 @@ While you are riding along, your companion continues to benefit from any magic t
 
 While you are riding along, you can't act except to spend a free maneuver to regain your body. You also regain your body if your companion dies or chooses to eject you. When you regain your body, you reappear in a space adjacent to your companion.
 
+<!-- @type: perk | @id: wild-rumpus -->
 ## **Wild Rumpus**
 
 You have the following ability.
@@ -3020,6 +3037,7 @@ You have the following ability.
 
 equal to your level until you finish a respite or gain 1 or more Victories. This damage can't be reduced in any way and doesn't end this ability's effect.
 
+<!-- @type: perk | @id: wilds-explorer -->
 ## **Wilds Explorer**
 
 You and your companion gain an edge on tests made to overcome environmental cold, heat, weather, unsteady ground, or challenging terrain. During your turn, you and your companion can ignore the first square of difficult terrain you each enter.
@@ -3028,6 +3046,7 @@ You and your companion gain an edge on tests made to overcome environmental cold
 
 This section presents an intrigue perk.
 
+<!-- @type: perk | @id: trained-thief -->
 ## **Trained Thief**
 
 You have the Conceal Object or Pick Pocket skill. Your companion can make a test using that skill as a maneuver.
@@ -3036,14 +3055,17 @@ You have the Conceal Object or Pick Pocket skill. Your companion can make a test
 
 This section presents interpersonal perks in alphabetical order.
 
+<!-- @type: perk | @id: people-sense -->
 ## **People Sense**
 
 Whenever you or your companion makes a test to determine a creature's motives, emotions, or body language while within 5 squares of each other, your partner can make the same test as a free triggered action. You both use the higher result.
 
+<!-- @type: perk | @id: voice-of-the-wild -->
 ## **Voice of the Wild**
 
 Your companion can speak any language you can speak.
 
+<!-- @type: perk | @id: you-can-pet-them-theyre-friendly -->
 ## **You Can Pet Them, They're Friendly**
 
 Whenever you make a Presence test to interact with a creature while you are within 5 squares of your companion, you can use your companion's Presence instead of your own.
