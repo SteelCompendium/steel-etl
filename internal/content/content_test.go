@@ -6,6 +6,7 @@ import (
 
 	"github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 func TestChapterParser(t *testing.T) {
@@ -438,5 +439,87 @@ func TestSmokeContentParsersOnRealDocument(t *testing.T) {
 	}
 	if parsed < 1000 {
 		t.Errorf("expected >1000 parsed sections, got %d", parsed)
+	}
+}
+
+func TestAbilityCompanionTypePath(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+	ctx.Push(3, context.Metadata{"type": "feature-group", "companion": "wolf", "level": "1"})
+
+	section := &parser.Section{
+		Heading:      "Clamping Jaws",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature", "id": "clamping-jaws"},
+	}
+	parsed, err := (&AbilityParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
+	want := "mcdm.beastheart.v1/feature.ability.companion.wolf.level-1/clamping-jaws"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+	if parsed.Frontmatter["companion"] != "wolf" {
+		t.Errorf("companion frontmatter = %v, want wolf", parsed.Frontmatter["companion"])
+	}
+}
+
+func TestFeatureCompanionTypePath(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+	ctx.Push(3, context.Metadata{"type": "feature-group", "companion": "wolf", "level": "1"})
+	ctx.Push(4, context.Metadata{"type": "feature-group", "level": "3"})
+
+	section := &parser.Section{
+		Heading:      "My, What Big Teeth You Have",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "feature", "id": "my-what-big-teeth-you-have"},
+	}
+	parsed, err := (&FeatureParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
+	want := "mcdm.beastheart.v1/feature.trait.companion.wolf.level-3/my-what-big-teeth-you-have"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+func TestFeatureGroupCompanionClassified(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+
+	section := &parser.Section{
+		Heading:      "Wolf",
+		HeadingLevel: 3,
+		Annotation:   map[string]string{"type": "feature-group", "companion": "wolf", "level": "1"},
+	}
+	parsed, err := (&FeatureGroupParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
+	want := "mcdm.beastheart.v1/feature-group.companion/wolf"
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
+func TestFeatureGroupPlainUnclassified(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{})
+	section := &parser.Section{
+		Heading:      "1st-Level Features",
+		HeadingLevel: 3,
+		Annotation:   map[string]string{"type": "feature-group", "level": "1"},
+	}
+	parsed, err := (&FeatureGroupParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("parse: %v", err)
+	}
+	if len(parsed.TypePath) != 0 || parsed.ItemID != "" {
+		t.Errorf("plain feature-group should be unclassified, got path=%v id=%q", parsed.TypePath, parsed.ItemID)
 	}
 }

@@ -21,11 +21,20 @@ func (p *FeatureGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 		fm["level"] = level
 	}
 
-	// feature-group is a container -- not classified with its own SCC
-	return &ParsedContent{
+	result := &ParsedContent{
 		Frontmatter: fm,
 		Body:        section.FullBodySource(),
-	}, nil
+	}
+
+	// Companion species containers (beastheart) are first-class: classify them
+	// as feature-group.companion/{species}. Plain feature-groups stay unclassified.
+	if companion, ok := section.Annotation["companion"]; ok && companion != "" {
+		fm["companion"] = companion
+		result.TypePath = []string{"feature-group", "companion"}
+		result.ItemID = companion
+	}
+
+	return result, nil
 }
 
 // FeatureParser handles @type: feature sections.
@@ -51,6 +60,9 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Look up parent ancestry from context
 	ancestryID := findAncestorID(ctx, section.HeadingLevel, "ancestry")
 
+	// Companion species (beastheart book) takes precedence over class in the path.
+	companionID, _ := ctx.Lookup(section.HeadingLevel, "companion")
+
 	fm := map[string]any{
 		"name": cleanName,
 		"type": "trait",
@@ -72,10 +84,16 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	if ancestryID != "" {
 		fm["ancestry"] = ancestryID
 	}
+	if companionID != "" {
+		fm["companion"] = companionID
+	}
 
 	// Build type path: feature.trait.{parent}.level-{N}[.{kit}]
+	// Companion traits use feature.trait.companion.{species}.level-{N}.
 	typePath := []string{"feature", "trait"}
-	if classID != "" {
+	if companionID != "" {
+		typePath = append(typePath, "companion", companionID)
+	} else if classID != "" {
 		typePath = append(typePath, classID)
 	} else if ancestryID != "" {
 		typePath = append(typePath, ancestryID)

@@ -87,9 +87,18 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 		levelStr = level
 	}
 
+	// Look up companion species from context (beastheart book).
+	companionID, _ := ctx.Lookup(section.HeadingLevel, "companion")
+	if companionID != "" {
+		fm["companion"] = companionID
+	}
+
 	// Build type path: feature.ability.{parent}.level-{N}
+	// Companion abilities use feature.ability.companion.{species}.level-{N}.
 	typePath := []string{"feature", "ability"}
-	if parentID != "" {
+	if companionID != "" {
+		typePath = append(typePath, "companion", companionID)
+	} else if parentID != "" {
 		typePath = append(typePath, parentID)
 	} else {
 		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
