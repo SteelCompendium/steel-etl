@@ -5,9 +5,9 @@ title: Draw Steel Beastheart
 ---
 
 <!-- @type: chapter | @id: the-beastheart-and-the-faeries -->
-# THE BEASTHEART & THE FAERIES
+# The Beastheart & The Faeries
 
-## PART ONE: THE BEASTHEART
+## Part One: The Beastheart
 
 Lives lay in moments wasted. But they both knew the value of reading the situation. The lay of the land. Plunging in on perilous impulse, however noble, could mean their own lives added to the tally. They wouldn't have used words like 'tactics' or 'strategy;' to the two of them, it was simply prudent to watch and think and plan before acting.
 
@@ -95,8 +95,6 @@ Her brother gasped. "She braids her hair *and* the ribbons of her raiment! She h
 
 "Ah vanity! All this, with style and grace. If this is our savior, I could not have conjured a better. I may have to…" she turned to her brother. "I may be forced to *omit* details lest the critics accuse me of overwriting!"
 
-®
-
 "Well they do that anyway," her brother said.
 
 "Yes but in *this* case they may be correct."
@@ -140,8 +138,6 @@ The young woman shook her head, a look of deep regret on her face. "Very well," 
 "I believe there must be, and she *is* his herald. 'Vašra.' An eastern county by the name, she is far from home. I believe this is something *like* a bluff, but she weaves the truth and falsehoods so tightly, I cannot…"
 
 "Wait," the bright faerie said looking around the clearing, noting how the herald was positioned exactly opposite them in the clearing and every hobgoblin had their backs to the two faeries. "I recognize this story. She's not bluffing. She's *stalling*."
-
-®
 
 The lieutenant, eyes wild, rushed forward. "Captain!"
 
@@ -337,16 +333,16 @@ If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](http
 | ◆ Beastheart Advancement ◆ |                                                                                                                                                                         |                           |                       |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
 | Level                      | Features                                                                                                                                                                | Abilities                 | Wild Nature Abilities |
-| 1st                        | Wild Nature, Companion, Heart of the Beast, Feral Strike, Ferocity, Rampage, Wild Nature Maneuver,<br>Wild Nature Triggered Action, Kit, Beastheart Abilities           | Signature, 3, 5           | —                     |
+| 1st                        | Wild Nature, Companion, Heart of the Beast, Feral Strike, Ferocity, Rampage, Wild Nature Maneuver, Wild Nature Triggered Action, Kit, Beastheart Abilities           | Signature, 3, 5           | —                     |
 | 2nd                        | Perk, Everyone’s Best Friend, Wild Nature Feature, Wild Nature Ability                                                                                                  | Signature, 3, 5,          | 5                     |
 | 3rd                        | Companion Advancement Feature, 7-Ferocity Ability                                                                                                                       | Signature, 3, 5, 7        | 5                     |
-| 4th                        | Characteristic Increase, Minion Improvement, Essence Salvage, Minion Chain, Perk, Skill Characteristic<br>Increase, Perk, Rampage Improvement, Skill, Unleash the Beast | Signature, 3, 5, 7        | 5                     |
+| 4th                        | Characteristic Increase, Minion Improvement, Essence Salvage, Minion Chain, Perk, Skill Characteristic Increase, Perk, Rampage Improvement, Skill, Unleash the Beast | Signature, 3, 5, 7        | 5                     |
 | 5th                        | Wild Nature Feature, 9-Ferocity Ability                                                                                                                                 | Signature, 3, 5, 7, 9     | 5                     |
 | 6th                        | Perk, Become the Beast, Wild Nature Ability                                                                                                                             | Signature, 3, 5, 7, 9     | 5, 9                  |
 | 7th                        | Characteristic Increase, Feral Heart, Rampage Improvement, Skill                                                                                                        | Signature, 3, 5, 7, 9     | 5, 9                  |
 | 8th                        | Wild Nature Feature, Perk, 11-Ferocity Ability                                                                                                                          | Signature, 3, 5, 7, 9, 11 | 5, 9                  |
 | 9th                        | Avatar of the Green, Wild Nature Ability                                                                                                                                | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
-| 10th                       | Characteristic Increase, Companion Advancement Feature, Final Evolution, Perk, Ferox, Rampage<br>Improvement, Skill                                                     | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
+| 10th                       | Characteristic Increase, Companion Advancement Feature, Final Evolution, Perk, Ferox, Rampage Improvement, Skill                                                     | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
 
 £
 
@@ -356,15 +352,11 @@ You gain the companionship of a wild animal who travels with you. Your companion
 
 Choose a companion from the following options. (*Quick Build:* Wolf.)
 
-#### ® **Customizing Your Companion**
+#### **Customizing Your Companion**
 
 Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the condor companion for an escaped Hawklord hawk, the wolf for a dog or jackal, or even the boar for a particularly ornery stag or elk.
 
 With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a hellhound you travel with a white wolf that deals cold damage instead of fire damage; maybe your elemental spark is an elemental ember that deals fire damage; or maybe your panther is a shadow whose Pounce maneuver deals corruption or cold damage.
-
-£
-
-![](_page_8_Picture_7.jpeg)
 
 <!-- @type: feature-group | @companion: basilisk | @level: 1 -->
 ### Basilisk
@@ -1419,100 +1411,80 @@ You companion doesn't need to wear their trinket around their neck: a condor mig
 
 Although your companion can't wield a sword, they can benefit from a magic blade! When you wield and gain the benefits of a leveled weapon, armor, implement, or other item, your companion gains those same benefits as if they were wielding the treasure.
 
-#### **Beastheart Abilities**
+<!-- @type: feature | @id: beastheart-abilities | @level: 1 -->
+## Beastheart Abilities
 
 Guided by the ebb and flow of battle, you trade off attacking with your companion and work together to unleash deadly combinations.
 
-#### SIGNATURE ABILITY
+### Signature Ability
 
 Choose one signature ability from the following options. Signature abilities can be used at will. (*Quick Build:* Come On!)
 
-#### **Bodyswap**
+<!-- @type: ability | @subtype: signature | @id: bodyswap -->
+#### Bodyswap
 
-You and your ally morph into each other, magically switching places.
+*You and your ally morph into each other, magically switching places.*
 
-Beastheart, Magic, Melee, Strike, Weapon
-Melee 1
-
-Main action
-One creature or object
+| **Beastheart, Magic, Melee, Strike, Weapon** |              **Main action** |
+|----------------------------------------------|-----------------------------:|
+| **📏 Melee 1**                               | **🎯 One creature or object** |
 
 **Effect:** If you and a willing ally are standing on the ground within 10 squares of each other, you can teleport to swap places. If you do, you gain an edge on this ability.
 
-#### Power Roll + Intuition:
+**Power Roll + Intuition:**
 
-**≤11** 3 + **1** damage
+- **≤11:** 3 + I damage
+- **12-16:** 5 + I damage
+- **17+:** 7 + I damage
 
-12-16 5 + **1** damage
-
-17+ 7 + 1 damage
-
-## Come
-
+<!-- @type: ability | @subtype: signature | @id: come-on -->
 #### Come On!
 
-You launch a flurry of attacks to cover your movement.
+*You launch a flurry of attacks to cover your movement.*
 
-Beastheart, Melee, Ranged, Strike, Weapon
+| **Beastheart, Melee, Ranged, Strike, Weapon** |              **Main action** |
+|-----------------------------------------------|-----------------------------:|
+| **📏 Melee 1 or ranged 5**                    | **🎯 One creature or object** |
 
-Main action
+**Power Roll + Might:**
 
-Melee 1 or ranged 5
-
-**One** creature or object
-
-#### Power Roll + Might:
-
-≤11 2 + M damage
-
-**12-16** 3 + **M** damage
-
-17+ 4 + M damage
+- **≤11:** 2 + M damage
+- **12-16:** 3 + M damage
+- **17+:** 4 + M damage
 
 **Effect:** Your companion can make a melee free strike. You both shift up to a number of squares equal to your Intuition score.
 
-## **Covering Fire**
+<!-- @type: ability | @subtype: signature | @id: covering-fire -->
+#### Covering Fire
 
-, Keep your head down, or I'll shoot it off!
+*Keep your head down, or I'll shoot it off!*
 
-Beastheart, Ranged, Strike, Weapon
+| **Beastheart, Ranged, Strike, Weapon** |     **Main action** |
+|----------------------------------------|--------------------:|
+| **📏 Ranged 5**                        | **🎯 One creature** |
 
-Main action
-One creature
+**Power Roll + Intuition:**
 
-Ranged 5
-
-Power Roll + Intuition:
-
-≤11 2 + **1** damage
-
-12-16 4 + 1 damage
-
-17+ 6 + **I** damage
+- **≤11:** 2 + I damage
+- **12-16:** 4 + I damage
+- **17+:** 6 + I damage
 
 **Effect:** If the target is not prone, they must use a free triggered action to fall prone or take extra damage equal to twice your Intuition score. Your companion can shift up to a number of squares equal to their Intuition score.
 
-![](_page_26_Picture_50.jpeg)
-
+<!-- @type: ability | @subtype: signature | @id: stormrage -->
 #### Stormrage
 
-Lances of primordial energy leap from you and your companion to sear, crush, or freeze your foe.
+*Lances of primordial energy leap from you and your companion to sear, crush, or freeze your foe.*
 
-**Beastheart, Magic, Melee, Ranged, Strike, Weapon**Melee 1 or ranged 5
+| **Beastheart, Magic, Melee, Ranged, Strike, Weapon** |              **Main action** |
+|------------------------------------------------------|-----------------------------:|
+| **📏 Melee 1 or ranged 5**                           | **🎯 One creature or object** |
 
-One
+**Power Roll + Might:**
 
-apon Main action
-
-One creature or object
-
-#### Power Roll + Might:
-
- $\leq$ 11 2 + M cold, fire, lightning, or sonic damage
-
-12-16 4 + M cold, fire, lightning, or sonic damage
-
-6 + M cold, fire, lightning, or sonic damage
+- **≤11:** 2 + M cold, fire, lightning, or sonic damage
+- **12-16:** 4 + M cold, fire, lightning, or sonic damage
+- **17+:** 6 + M cold, fire, lightning, or sonic damage
 
 **Effect:** You can spend 1 surge without gaining its benefits. If you do, your companion can use this ability as a free triggered action, targeting a different creature or object with the same power roll, but they don't trigger this effect.
 
