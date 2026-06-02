@@ -701,325 +701,390 @@ While the drake is rampaging, you gain draconic wings and can fly. If you are mi
 
 While the drake is rampaging, you and the drake have immunity all to the drake's attuned damage type, and whenever you or the drake make a strike against a creature you can cause the target to be dragonsealed (save ends). A dragonsealed creature has weakness 10 to the drake's attuned damage type.
 
-| Elemental Spark<br>Companion, Elemental            |                   |  |                       | Companion                                                                           |
-|----------------------------------------------------|-------------------|--|-----------------------|-------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                  | 7<br><b>Speed</b> |  | 1<br><b>Stability</b> | 1+ <span style="background-color:black;color:white;">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> Lightning 3<br><b>Movement:</b> — |                   |  | <b>Skills:</b> Magic  |                                                                                     |
+<!-- @type: feature-group | @companion: elemental-spark | @level: 1 -->
+### Elemental Spark
 
-t **Static Shock**
+*Companion, Elemental*
+
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 1         | 1 + M       |
+
+**Immunity:** Lightning 3 **Movement:** — **Skills:** Magic
+
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
+
+<!-- @type: ability | @subtype: signature | @id: static-shock -->
+#### Static Shock
 
 *An arc of lightning crackles from the spark.*
 
-Companion, Magic, Melee Maneuver
+| **Companion, Magic, Melee** |               **Maneuver** |
+|-----------------------------|---------------------------:|
+| **📏 Melee 1**              | **🎯 One creature or object** |
 
-Maneuver
-
-o Melee 1 x One creature or object **Effect:** The target takes lightning damage equal to 2 + the spark's
-
-¢
-
-M**ight** +2 A**gility** +2 R**eason** -1 I**ntuition** +2 P**resence** +1
+**Effect:** The target takes lightning damage equal to 2 + the spark's Might score.
 
 **Spend 1 Ferocity:** The distance increases to melee 5.
 
-#### \* **Electric Surge**
-
-Might score.
+<!-- @type: feature | @id: electric-surge -->
+#### Electric Surge
 
 The first time on a turn that you or the spark deal lightning damage, you gain 1 surge.
 
-#### **Level 3 Elemental Spark Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Elemental Spark Advancement Feature
 
-#### \* **Electroshock**
+<!-- @type: feature | @id: electroshock -->
+##### Electroshock
 
-Whenever the spark makes a strike against a creature while rampaging, they can cause a target who has m<v to be dazed until the end of the target's next turn.
+Whenever the spark makes a strike against a creature while rampaging, they can cause a target who has M < AVERAGE to be dazed until the end of the target's next turn.
 
-#### **Level 6 Elemental Spark Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Elemental Spark Advancement Feature
 
-#### \* **Conductive**
+<!-- @type: feature | @id: conductive -->
+##### Conductive
 
 While the spark is rampaging, lightning sings through your blood, and whenever you make a strike against a creature, you deal extra lightning damage equal to your Might score.
 
-#### **Level 10 Elemental Spark Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Elemental Spark Advancement Feature
 
-#### \* **Lightning Speed**
+<!-- @type: feature | @id: lightning-speed -->
+##### Lightning Speed
 
 While the spark is rampaging, you and the spark can shift up to your speed as a free maneuver once on each of your turns.
 
-![](_page_14_Picture_19.jpeg)
+<!-- @type: feature-group | @companion: gummy-ball | @level: 1 -->
+### Gummy Ball
 
-![](_page_15_Picture_1.jpeg)
+*Companion, Ooze*
 
-| Gummy Ball<br>Companion, Ooze                               |                                                               |                                                              |                                                                 | Companion                                                             |
-|-------------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------|
-| 1L<br>Size                                                  | 5<br>Speed                                                    |                                                              | 2<br>Stability                                                  | 1+ <span style="background:black;color:white">M</span><br>Free Strike |
-| <b>Immunity:</b> Acid 3<br><b>Movement:</b> —               |                                                               |                                                              |                                                                 | <b>Skills:</b> Sneak                                                  |
-| <span style="background:black;color:white">M</span> ight +2 | <span style="background:black;color:white">A</span> gility +2 | <span style="background:black;color:white">R</span> eason -1 | <span style="background:black;color:white">I</span> ntuition +2 | <span style="background:black;color:white">P</span> resence +1        |
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1L   | 5     | 2         | 1 + M       |
 
-#### t **Absorb**
+**Immunity:** Acid 3 **Movement:** — **Skills:** Sneak
 
-*With a sickening squelch, the ball oozes around their hapless prey.* Companion, Melee, Weapon Maneuver
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
-o Melee 1 x One enemy
+<!-- @type: ability | @subtype: signature | @id: absorb -->
+#### Absorb
 
-**Effect:** The target takes acid damage equal to 3 + the ball's Might score, and if they have a<v, the ball moves into the target's space. If the target completely fits within the ball's space, the target is grabbed by the ball.
+*With a sickening squelch, the ball oozes around their hapless prey.*
 
-**Spend 1 Ferocity:** A target grabbed this way takes acid damage equal to the ball's Might score at the end of each of the ball's turns. ¢
+| **Companion, Melee, Weapon** |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
-#### \* **Gelatinous**
+**Effect:** The target takes acid damage equal to 3 + the ball's Might score, and if they have A < AVERAGE, the ball moves into the target's space. If the target completely fits within the ball's space, the target is grabbed by the ball.
+
+**Spend 1 Ferocity:** A target grabbed this way takes acid damage equal to the ball's Might score at the end of each of the ball's turns.
+
+<!-- @type: feature | @id: gelatinous -->
+#### Gelatinous
 
 The ball can occupy another creature's space. While occupying a creature's space, the ball has line of effect to that creature. If the creature completely fits within the ball's space, the creature has line of effect only to the ball and creatures outside the ball don't have line of effect to the creature. The ball's space is difficult terrain.
 
-#### **Level 3 Gummy Ball Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Gummy Ball Advancement Feature
 
-#### \* **Suck It Up**
+<!-- @type: feature | @id: suck-it-up -->
+##### Suck It Up
 
 Whenever the ball makes a strike while rampaging, one target is pulled up to 3 squares into the ball's space. If the target ends this movement and completely fits within the ball's space, the target is grabbed by the ball.
 
-#### **Level 6 Gummy Ball Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Gummy Ball Advancement Feature
 
-#### \* **Taffy Pull**
+<!-- @type: feature | @id: taffy-pull -->
+##### Taffy Pull
 
 While the ball is rampaging, your arms and legs become viscous and stretchy, and you gain a +2 bonus to speed and melee distance.
 
-#### **Level 10 Gummy Ball Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Gummy Ball Advancement Feature
 
-#### \* **Runaway Expansion**
+<!-- @type: feature | @id: runaway-expansion -->
+##### Runaway Expansion
 
 While the ball is rampaging, you and the ball have acid immunity 10, and whenever a creature is reduced to 0 Stamina while inside the ball, the ball's size increases by 1 (to a maximum of 5). The ball's size can't increase this way more than once a turn, and the ball shrinks back to their original size when their rampage ends.
 
-**Hellhound Companion** Companion, Infernal
+<!-- @type: feature-group | @companion: hellhound | @level: 1 -->
+### Hellhound
 
-¢ 1M 7
+*Companion, Infernal*
 
-**Speed**
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 1         | 1 + M       |
 
-1 **Stabilty** 1+M **Free Strike**
+**Immunity:** Fire 3 **Movement:** — **Skills:** Intimidate
 
- **Size Immunity:** Fire 3 **Movement:** — **Skills:** Intimidate
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
-**Skills:** Intimidate
+<!-- @type: ability | @subtype: signature | @id: fire-breath -->
+#### Fire Breath
 
-M**ight** +2 A**gility** +2 R**eason** -1 I**ntuition** +2 P**resence** +1
+*The hellhound exhales infernal flames.*
 
-+2 **Presence** +1
-
-l **Fire Breath**
-
-*The hellhound exhales infernal flames.* Companion, Magic, Melee, Ranged Maneuver
-
-o Melee 1 or Ranged 2 x One creature or object
+| **Companion, Magic, Melee, Ranged** |               **Maneuver** |
+|-------------------------------------|---------------------------:|
+| **📏 Melee 1 or Ranged 2**          | **🎯 One creature or object** |
 
 **Effect:** The target takes fire damage equal to 3 + the hellhound's Might score.
 
-**Spend 1 Ferocity:** This ability gains a bonus to either its damage or distance equal to the hellhound's Intuition score. ¢
+**Spend 1 Ferocity:** This ability gains a bonus to either its damage or distance equal to the hellhound's Intuition score.
 
-#### \* **Hellish Pact**
+<!-- @type: feature | @id: hellish-pact -->
+#### Hellish Pact
 
 You have fire immunity equal to the hellhound's fire immunity.
 
-#### **Level 3 Hellhound Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Hellhound Advancement Feature
 
-#### \* **Infernal Apparition**
+<!-- @type: feature | @id: infernal-apparition -->
+##### Infernal Apparition
 
-Whenever the hellhound makes a strike against a creature while rampaging, they can cause a target who has p<v to be frightened until the end of the target's next turn.
+Whenever the hellhound makes a strike against a creature while rampaging, they can cause a target who has P < AVERAGE to be frightened until the end of the target's next turn.
 
-#### **Level 6 Hellhound Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Hellhound Advancement Feature
 
-### \* **Slavering Jaws**
+<!-- @type: feature | @id: slavering-jaws -->
+##### Slavering Jaws
 
 While the hellhound is rampaging, your mouth foams with acidic ichor, and whenever you make a strike against a creature, you deal extra acid damage equal to your Might score.
 
-#### **Level 10 Hellhound Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Hellhound Advancement Feature
 
-#### \* **Wreathed in Flames**
+<!-- @type: feature | @id: wreathed-in-flames -->
+##### Wreathed in Flames
 
 While the hellhound is rampaging, you and the hellhound are surrounded by an aura of flames, and each enemy who starts their turn adjacent to you or the hellhound takes fire damage equal to the hellhound's Might score.
 
-![](_page_16_Picture_24.jpeg)
+<!-- @type: feature-group | @companion: lightbender | @level: 1 -->
+### Lightbender
 
-![](_page_17_Picture_1.jpeg)
+*Beast, Companion*
 
-| Lightbender<br><span>Beast, Companion</span>                        |                                                                       |                                                                      | Companion                                                               |                                                                                      |
-|---------------------------------------------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 1L<br><b>Size</b>                                                   | 7<br><b>Speed</b>                                                     |                                                                      | 2<br><b>Stability</b>                                                   | 1+ <span style="background-color:black; color:white;">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> —                            |                                                                       |                                                                      | <b>Skills:</b> Hide                                                     |                                                                                      |
-| <span style="background-color:black; color:white;">M</span> ight +2 | <span style="background-color:black; color:white;">A</span> gility +1 | <span style="background-color:black; color:white;">R</span> eason -1 | <span style="background-color:black; color:white;">I</span> ntuition +2 | <span style="background-color:black; color:white;">P</span> resence +2               |
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1L   | 7     | 2         | 1 + M       |
 
-#### t **Sparking Tail Whip**
+**Immunity:** — **Movement:** — **Skills:** Hide
 
-within 1 square.
+**Might** +2 **Agility** +1 **Reason** −1 **Intuition** +2 **Presence** +2
+
+<!-- @type: ability | @subtype: signature | @id: sparking-tail-whip -->
+#### Sparking Tail Whip
 
 *The lightbender swings their tail, sending gouts of sparks in their foe's face.*
 
-Companion, Melee, Weapon Maneuver
+| **Companion, Melee, Weapon** |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
-Maneuver
+**Effect:** The target takes damage equal to 3 + the lightbender's Might score, and if they have M < AVERAGE, they are dazzled until the end of their next turn. A dazzled creature has line of effect only within 1 square.
 
-One or more
+**Spend 1 Ferocity:** A dazzled creature also takes a bane on strikes.
 
-o Melee 1 x One enemy
-
-**Effect:** The target takes damage equal to 3 + the lightbender's Might score, and if they have m<v, they are dazzled until the end of their next turn. A dazzled creature has line of effect only
-
-**Spend 1 Ferocity:** A dazzled creature also takes a bane on strikes. ¢
-
-#### \* **Avoidance**
+<!-- @type: feature | @id: avoidance -->
+#### Avoidance
 
 Any effect on the lightbender that would be ended by a saving throw instead ends automatically at the end of their next turn.
 
-#### **Level 3 Lightbender Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Lightbender Advancement Feature
 
-#### \* **Hit and Run**
+<!-- @type: feature | @id: hit-and-run -->
+##### Hit and Run
 
 Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can teleport up to 5 squares and use the Hide maneuver.
 
-#### **Level 6 Lightbender Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Lightbender Advancement Feature
 
-#### \* **Lightbearer**
+<!-- @type: feature | @id: lightbearer -->
+##### Lightbearer
 
 While the lightbender is rampaging, you can use a free maneuver to glow with blinding light that lasts until the rampage ends or you use this ability again. While glowing, your skin sheds light for 10 squares and strikes against you take a bane.
 
-#### **Level 10 Lightbender Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Lightbender Advancement Feature
 
-#### \* **Everywhere and Nowhere**
+<!-- @type: feature | @id: everywhere-and-nowhere -->
+##### Everywhere and Nowhere
 
 While the lightbender is rampaging, your grip on spatial reality is weakened, and once on each of your turns, you or the lightbender can teleport up to 3 spaces as a free maneuver. Additionally, strikes made against you and the lightbender have a double bane until the lightbender's rampage ends.
 
-14
+<!-- @type: feature-group | @companion: panther | @level: 1 -->
+### Panther
 
-| <b>Panther</b><br>Animal, Companion |   | <b>Companion</b> |                                                                  |
-|-------------------------------------|---|------------------|------------------------------------------------------------------|
-| 1M                                  | 7 | 1                | 1+ <span style="background-color: black; color: white;">M</span> |
+*Animal, Companion*
 
-**Stabilty**
-
-**Free Strike**
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 1         | 1 + M       |
 
 **Immunity:** — **Movement:** Climb **Skills:** Sneak
 
-**Speed**
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
-M**ight** +2 A**gility** +2 R**eason** -1 I**ntuition** +2 P**resence** +1
+<!-- @type: ability | @subtype: signature | @id: pounce -->
+#### Pounce
 
-#### t **Pounce**
+*The panther bunches up, then uncoils into a deadly leap.*
 
- **Size**
+| **Companion, Melee, Weapon** |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
-*The panther bunches up, then uncoils into a deadly leap.* Companion, Melee, Weapon Maneuver
+**Effect:** The target takes damage equal to 3 + the panther's Might score, and if they have M < AVERAGE, they are knocked prone.
 
-o Melee 1 x One enemy
+**Spend 1 Ferocity:** The panther can jump up to a number of squares equal to their speed before using this ability. If they jump at least 1 square in this way, a target who has M < STRONG is knocked prone.
 
-**Effect:** The target takes damage equal to 3 + the panther's Might score, and if they have m<v, they are knocked prone.
-
-**Spend 1 Ferocity:** The panther can jump up to a number of squares equal to their speed before using this ability. If they jump at least 1 square in this way, a target who has m<s is knocked prone. ¢
-
-#### \* **Mighty Spring**
+<!-- @type: feature | @id: mighty-spring -->
+#### Mighty Spring
 
 Whenever the panther takes the Advance move action or the Charge action, they can jump up to a number of squares equal to their speed in any direction, including vertically, as part of this movement.
 
-#### **Level 3 Panther Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Panther Advancement Feature
 
-#### \* **Cat and Mouse**
+<!-- @type: feature | @id: cat-and-mouse -->
+##### Cat and Mouse
 
 Whenever the panther makes a strike against a creature while rampaging, the panther can knock the target prone.
 
-#### **Level 6 Panther Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Panther Advancement Feature
 
-#### \* **Single Bound**
+<!-- @type: feature | @id: single-bound -->
+##### Single Bound
 
 While the panther is rampaging, you can jump up to a number of squares equal to your speed as a free maneuver once on each of your turns.
 
-#### **Level 10 Panther Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Panther Advancement Feature
 
-#### \* **Panther Spirit**
+<!-- @type: feature | @id: panther-spirit -->
+##### Panther Spirit
 
 While the panther is rampaging, you and the panther are invisible and can move through objects and terrain, which are difficult terrain for you both. A creature who ends their turn inside a solid object from moving this way is teleported to the last unoccupied space they previously occupied.
 
-![](_page_18_Picture_20.jpeg)
+<!-- @type: feature-group | @companion: spider | @level: 1 -->
+### Spider
 
-![](_page_19_Picture_1.jpeg)
+*Animal, Companion*
 
-| <b>Spider</b><br>Animal, Companion                                 |                                                                      |                                                                     |                                                                        | <b>Companion</b>                                                                    |
-|--------------------------------------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                                  | 5<br><b>Speed</b>                                                    |                                                                     | 1<br><b>Stability</b>                                                  | 1+ <span style="background-color:black; color:white">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> Climb                       |                                                                      |                                                                     |                                                                        | <b>Skills:</b> Sneak                                                                |
-| <span style="background-color:black; color:white">M</span> ight +2 | <span style="background-color:black; color:white">A</span> gility +2 | <span style="background-color:black; color:white">R</span> eason -1 | <span style="background-color:black; color:white">I</span> ntuition +2 | <span style="background-color:black; color:white">P</span> resence +1               |
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 5     | 1         | 1 + M       |
 
-#### g **Web Shot**
+**Immunity:** — **Movement:** Climb **Skills:** Sneak
 
-*The spider fires a ball of sticky silk.* Companion, Ranged, Weapon Maneuver
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
 
-Maneuver:
+<!-- @type: ability | @subtype: signature | @id: web-shot -->
+#### Web Shot
 
-◎ One enemy
+*The spider fires a ball of sticky silk.*
 
-o Ranged 5 x One enemy
+| **Companion, Ranged, Weapon** |     **Maneuver** |
+|-------------------------------|-----------------:|
+| **📏 Ranged 5**               | **🎯 One enemy** |
 
-**Effect:** If the target has m<v, they are restrained until the end of their next turn.
+**Effect:** If the target has M < AVERAGE, they are restrained until the end of their next turn.
 
-**Spend 1 Ferocity:** If the target has m<s, they are restrained (save ends). ¢
+**Spend 1 Ferocity:** If the target has M < STRONG, they are restrained (save ends).
 
-#### \* **Come Into My Parlor**
+<!-- @type: feature | @id: come-into-my-parlor -->
+#### Come Into My Parlor
 
 Whenever the spider makes a strike against a restrained creature, the spider deals extra poison damage equal to twice their Intuition score.
 
-#### **Level 3 Spider Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Spider Advancement Feature
 
-#### \* **Dripping Fangs**
+<!-- @type: feature | @id: dripping-fangs -->
+##### Dripping Fangs
 
 Whenever the spider makes a strike against a creature while rampaging, the spider can deal extra poison damage equal to their Might score.
 
-#### **Level 6 Spider Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Spider Advancement Feature
 
-#### \* **Web Slinger**
+<!-- @type: feature | @id: web-slinger -->
+##### Web Slinger
 
 Once on each of your turns while the spider is rampaging, you can shoot a web to a ceiling, wall, or sturdy object above you within 5 squares as a free maneuver. You can then fly in a straight line to any space within 5 squares of that object.
 
-#### **Level 10 Spider Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Spider Advancement Feature
 
-#### \* **Life Drinker**
+<!-- @type: feature | @id: life-drinker -->
+##### Life Drinker
 
 Whenever you or the spider deals damage with a maneuver while the spider is rampaging, the attacker regains Stamina equal to the damage dealt.
 
-| Sporeling<br>Beast, Companion                   |            |                | Companion                                                 |
-|-------------------------------------------------|------------|----------------|-----------------------------------------------------------|
-| 1S<br>Size                                      | 5<br>Speed | 0<br>Stability | 1+ <span>Image: black square M icon</span><br>Free Strike |
-| <b>Immunity:</b> Poison 3<br><b>Movement:</b> — |            |                | <b>Skills:</b> Track                                      |
+<!-- @type: feature-group | @companion: sporeling | @level: 1 -->
+### Sporeling
 
-## t **Spore Puff**
+*Beast, Companion*
+
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1S   | 5     | 0         | 1 + M       |
+
+**Immunity:** Poison 3 **Movement:** — **Skills:** Track
+
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
+
+<!-- @type: ability | @subtype: signature | @id: spore-puff -->
+#### Spore Puff
 
 *The sporeling breathes a cloud of disorienting fumes.*
 
-Companion, Melee Maneuver o Melee 1 x One enemy
-
-M**ight** +2 A**gility** +2 R**eason** -1 I**ntuition** +2 P**resence** +1
+| **Companion, Melee**         |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
 **Effect:** The target takes poison damage equal to 3 + the sporeling's Might score, and the sporeling is invisible to the target until the end of the sporeling's next turn or they deal damage to the target.
 
-**Spend 1 Ferocity:** If the target has m<s, they are dazed until the end of their next turn. ¢
+**Spend 1 Ferocity:** If the target has M < STRONG, they are dazed until the end of their next turn.
 
-#### \* **Skulker**
+<!-- @type: feature | @id: skulker -->
+#### Skulker
 
 The sporeling can end their movement in an ally's space. While occupying an ally's space, the sporeling has cover.
 
-#### **Level 3 Sporeling Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Sporeling Advancement Feature
 
-#### \* **Slowing Spores**
+<!-- @type: feature | @id: slowing-spores -->
+##### Slowing Spores
 
 Whenever the sporeling makes a strike against a creature while rampaging, the sporeling can cause the target to be slowed until the end of the target's next turn.
 
-#### **Level 6 Sporeling Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Sporeling Advancement Feature
 
-#### \* **Plant Walk**
+<!-- @type: feature | @id: plant-walk -->
+##### Plant Walk
 
 Once on each of your turns while the sporeling is rampaging, you can teleport to a space within 15 squares as a free maneuver, provided the space or an adjacent space contains the sporeling or plants or fungus of size 1S or larger. You then gain an edge on the next strike you make before the end of your turn.
 
-#### **Level 10 Sporeling Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Sporeling Advancement Feature
 
-#### \* **Trailing Mycelia**
+<!-- @type: feature | @id: trailing-mycelia -->
+##### Trailing Mycelia
 
-While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has m<s, the creature is grabbed by the attacker. Additionally, you and the sporeling can't be force moved or knocked prone until the sporeling's rampage ends.
+While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has M < STRONG, the creature is grabbed by the attacker. Additionally, you and the sporeling can't be force moved or knocked prone until the sporeling's rampage ends.
 
 <!-- @type: feature-group | @companion: wolf | @level: 1 -->
 ### Wolf
