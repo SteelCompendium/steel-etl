@@ -1707,25 +1707,25 @@ Your companion may not be much of a talker, but they've got a lifetime of experi
 
 Your wild nature grants you a feature, as shown on the 2nd-Level Wild Nature Features table.
 
-![](_page_29_Picture_9.jpeg)
-
-#### **STORMHEART**
+<!-- @type: feature | @id: stormheart | @level: 2 -->
+#### Stormheart
 
 Whenever you or your companion deals cold, fire, lightning, sonic, or untyped damage, you can change the damage type to cold, fire, lightning, or sonic damage.
 
-#### **SUPERSNIFFER**
+<!-- @type: feature | @id: supersniffer | @level: 2 -->
+#### Supersniffer
 
 While a creature is adjacent to your companion, that creature can't be hidden or have concealment from your companion.
 
-#### **THIS ONE'S YOURS**
+<!-- @type: feature | @id: this-ones-yours | @level: 2 -->
+#### This One's Yours
 
 Once per turn, you or your companion can use the following free triggered action.
 
-#### This One's Yours
+<!-- @type: ability | @id: this-ones-yours | @level: 2 | @action: Triggered Action -->
+##### This One's Yours
 
 When someone is pushed into you, you reach out to steady an ally or send a foe careening off in another direction.
-
-![](_page_29_Picture_18.jpeg)
 
 **Trigger:** A creature force moved by another creature enters a space adjacent to you.
 
@@ -1733,7 +1733,8 @@ When someone is pushed into you, you reach out to steady an ally or send a foe c
 
 **Spend 1 Ferocity:** You and your companions can each use this free triggered action on the same turn.
 
-#### WATCHDOG
+<!-- @type: feature | @id: watchdog | @level: 2 -->
+#### Watchdog
 
 You and your companion can't be surprised.
 
