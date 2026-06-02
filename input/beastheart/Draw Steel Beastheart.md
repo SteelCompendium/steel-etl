@@ -4,6 +4,7 @@ source: MCDM
 title: Draw Steel Beastheart
 ---
 
+<!-- @type: chapter | @id: the-beastheart-and-the-faeries -->
 ## THE BEASTHEART & THE FAERIES
 
 ## PART ONE: THE BEASTHEART
@@ -276,6 +277,7 @@ She planted the haft of her longspear on the ground and took a casual stance, a 
 
 Continued in *Between Sun & Shadow*.
 
+<!-- @type: class | @id: beastheart -->
 ## THE BEASTHEART CLASS
 
 A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a wolf, a basilisk, or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
@@ -968,56 +970,63 @@ Once on each of your turns while the sporeling is rampaging, you can teleport to
 
 While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has m<s, the creature is grabbed by the attacker. Additionally, you and the sporeling can't be force moved or knocked prone until the sporeling's rampage ends.
 
-![](_page_20_Picture_18.jpeg)
+<!-- @type: feature-group | @companion: wolf | @level: 1 -->
+### Wolf
 
-![](_page_21_Picture_1.jpeg)
+*Animal, Companion*
 
-| <b>Wolf</b><br>Animal, Companion                                         |                                                                            |                                                                           |                                                                              | <b>Companion</b>                                                                   |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 1M<br><b>Size</b>                                                        | 7<br><b>Speed</b>                                                          |                                                                           | 1<br><b>Stability</b>                                                        | 1+ <span style="background-color:black;color:white">M</span><br><b>Free Strike</b> |
-| <b>Immunity:</b> —<br><b>Movement:</b> —                                 |                                                                            |                                                                           | <b>Skills:</b> Track                                                         |                                                                                    |
-| <span style="background-color:black;color:white">M</span> <b>ight</b> +2 | <span style="background-color:black;color:white">A</span> <b>gility</b> +2 | <span style="background-color:black;color:white">R</span> <b>eason</b> -1 | <span style="background-color:black;color:white">I</span> <b>ntuition</b> +2 | <span style="background-color:black;color:white">P</span> <b>resence</b> +1        |
+| Size | Speed | Stability | Free Strike |
+|------|-------|-----------|-------------|
+| 1M   | 7     | 1         | 1 + M       |
 
-#### t **Clamping Jaws**
+**Immunity:** — **Movement:** — **Skills:** Track
+
+**Might** +2 **Agility** +2 **Reason** −1 **Intuition** +2 **Presence** +1
+
+<!-- @type: ability | @subtype: signature | @id: clamping-jaws -->
+#### Clamping Jaws
 
 *With an unnerving growl, the wolf sinks powerful teeth into their quarry.*
 
-Companion, Melee, Weapon Maneuver
+| **Companion, Melee, Weapon** |     **Maneuver** |
+|------------------------------|-----------------:|
+| **📏 Melee 1**               | **🎯 One enemy** |
 
-Maneuve
+**Effect:** The target takes damage equal to 3 + the wolf's Might score, and if they have M < AVERAGE, they are grabbed by the wolf.
 
-o Melee 1 x One enemy
+**Spend 1 Ferocity:** If the target has M < STRONG, they are grabbed by the wolf.
 
-◎ One enem
-wolf’s Might sco
-
-**Effect:** The target takes damage equal to 3 + the wolf's Might score, and if they have m<v, they are grabbed by the wolf.
-
-**Spend 1 Ferocity:** If the target has m<s, they are grabbed by the wolf. ¢
-
-#### \* **Retriever**
+<!-- @type: feature | @id: retriever -->
+#### Retriever
 
 The wolf can move at full speed while they have a creature grabbed, no matter the grabbed creature's size.
 
-#### **Level 3 Wolf Advancement Feature**
+<!-- @type: feature-group | @level: 3 -->
+#### Level 3 Wolf Advancement Feature
 
-#### \* **My, What Big Teeth You Have**
+<!-- @type: feature | @id: my-what-big-teeth-you-have -->
+##### My, What Big Teeth You Have
 
 Whenever the wolf makes a strike against a creature while rampaging, they can grab the target.
 
-#### **Level 6 Wolf Advancement Feature**
+<!-- @type: feature-group | @level: 6 -->
+#### Level 6 Wolf Advancement Feature
 
-#### \* **Call of the Wild**
+<!-- @type: feature | @id: call-of-the-wild -->
+##### Call of the Wild
 
 While the wolf is rampaging, you and the wolf gain a +2 bonus to speed, and creatures within 5 squares can't be hidden or have concealment from you or the wolf.
 
-#### **Level 10 Wolf Advancement Feature**
+<!-- @type: feature-group | @level: 10 -->
+#### Level 10 Wolf Advancement Feature
 
-#### \* **Dire Wolf**
+<!-- @type: feature | @id: dire-wolf -->
+##### Dire Wolf
 
-While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have p<s are frightened until the end of their next turn.
+While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are frightened until the end of their next turn.
 
-#### Companion Rules
+<!-- @type: feature | @id: companion-rules -->
+### Companion Rules
 
 - **Companion Stamina and Recoveries.** Your companion's Stamina maximum equals your Stamina maximum. Your companion has no Recoveries. When an effect would allow your companion to spend a Recovery, your companion spends one of your Recoveries.
 - **Companion Death.** A companion can become dying at 0 Stamina and die at negative half their Stamina, just like a hero.
@@ -1035,7 +1044,8 @@ While the wolf is rampaging, you and the wolf are surrounded by an aura of dread
 - **Changing Your Companion.** As a respite activity, you can release your current companion, then gain a new companion of a different species or summon a companion you previously released.
 - **One Hero.** You and your companion count as one hero for determining the difficulty of combats, montage tests, and other challenges.
 
-#### ® **Adding and Subtracting Actions**
+<!-- @type: feature | @id: adding-and-subtracting-actions -->
+### Adding and Subtracting Actions
 
 Although you and your companion share your action economy, you are treated as separate creatures for effects that grant or remove main actions, maneuvers, and move actions. For instance, the talent's Applied Chronometrics ability grants an extra maneuver. If both you and your companion are targeted by the ability, you both gain extra maneuvers.
 

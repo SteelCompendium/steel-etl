@@ -77,3 +77,7 @@ books:
     input: ../data-gen/input/monsters/Draw Steel Monsters.md
     output:
       base_dir: ../data/data-bestiary
+  - book: mcdm.beastheart.v1
+    input: ./input/beastheart/Draw Steel Beastheart.md
+    output:
+      base_dir: ../data/data-beastheart
