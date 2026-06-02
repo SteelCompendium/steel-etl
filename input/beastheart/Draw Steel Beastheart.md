@@ -1256,77 +1256,107 @@ Your companion doesn't spend rampage to activate abilities. Instead, when your c
 
 ![](_page_24_Picture_0.jpeg)
 
-## <span id="page-25-0"></span>**Wild Nature Maneuver**
+<!-- @type: feature | @id: wild-nature-maneuver | @level: 1 -->
+## Wild Nature Maneuver
 
 Your wild nature grants you a maneuver, as shown on the Wild Nature Maneuvers table. Each maneuver can be used only by the beastheart.
 
-## ®**Wild Nature Maneuvers**® Wild Nature Maneuver Guardian Living Arrow Prowler Lightning Leap Punisher Avalanche Rush Spark Jaws of the Storm £
+| Wild Nature | Maneuver          |
+|-------------|-------------------|
+| Guardian    | Living Arrow      |
+| Prowler     | Lightning Leap    |
+| Punisher    | Avalanche Rush    |
+| Spark       | Jaws of the Storm |
 
-#### **Avalanche Rush**
+<!-- @type: ability | @id: avalanche-rush | @level: 1 | @subclass: punisher -->
+#### Avalanche Rush
 
 *You ride a cascade of ice over your foes.*
 
-**Beastheart, Melee, Weapon Maneuver** o Melee 1 x One creature
+| **Beastheart, Melee, Weapon** |        **Maneuver** |
+|-------------------------------|--------------------:|
+| **📏 Melee 1**                | **🎯 One creature** |
 
-**Effect:** The target takes damage equal to 3 + your Might score, and if they have m<v, they are knocked prone.
+**Effect:** The target takes damage equal to 3 + your Might score, and if they have M < AVERAGE, they are knocked prone.
 
 You can move up to 3 squares before and after you use this ability. During this movement, a prone enemy's space doesn't count as difficult terrain, and the first time you enter a prone enemy's space, that enemy takes cold damage equal to your Might score.
 
-**Spend 1 Ferocity:** If the target has m<s, they are knocked prone.
+**Spend 1 Ferocity:** If the target has M < STRONG, they are knocked prone.
 
-#### **Jaws of the Storm**
+<!-- @type: ability | @id: jaws-of-the-storm | @level: 1 | @subclass: spark -->
+#### Jaws of the Storm
 
 *Your foes are torn by a tempest of primordial teeth and claws.*
 
-**Area, Beastheart, Magic Maneuver** o 2 cube within 5 x Each enemy in the area
+| **Area, Beastheart, Magic** |               **Maneuver** |
+|-----------------------------|---------------------------:|
+| **📏 2 cube within 5**      | **🎯 Each enemy in the area** |
 
 **Effect:** Each target takes cold, fire, lightning, or sonic damage (your choice) equal to your Might score.
 
 **Spend 1 Ferocity:** The size of the cube increases by 1.
 
-#### **Lightning Leap**
+<!-- @type: ability | @id: lightning-leap | @level: 1 | @subclass: prowler -->
+#### Lightning Leap
 
 *You summon a lightning bolt and ride it into battle.*
 
-**Beastheart, Melee, Weapon Maneuver** o Melee 1 x One creature
+| **Beastheart, Melee, Weapon** |        **Maneuver** |
+|-------------------------------|--------------------:|
+| **📏 Melee 1**                | **🎯 One creature** |
 
 **Effect:** The target takes damage equal to 3 + your Might score. Before you use this ability, you can jump up to a number of squares equal to your Intuition score in a straight line. During this jump, enemies' spaces don't count as difficult terrain for you. The target takes extra lightning damage equal to the number of squares you jumped this way.
 
 **Spend 1 Ferocity:** Your jump doesn't provoke opportunity attacks.
 
-#### **Living Arrow**
+<!-- @type: ability | @id: living-arrow | @level: 1 | @subclass: guardian -->
+#### Living Arrow
 
 *You point, and your companion appears.*
 
-**Beastheart, Magic, Ranged Maneuver** o Ranged 10 x One unoccupied space
+| **Beastheart, Magic, Ranged** |              **Maneuver** |
+|-------------------------------|--------------------------:|
+| **📏 Ranged 10**              | **🎯 One unoccupied space** |
 
 **Effect:** If your companion is within range and can fit into the target space, they teleport to the space. They can then make a melee free strike.
 
 **Spend 1 Ferocity:** The distance increases to ranged 15.
 
-## **Wild Nature Triggered Action**
+<!-- @type: feature | @id: wild-nature-triggered-action | @level: 1 -->
+## Wild Nature Triggered Action
 
 Your wild nature grants you a triggered action, as shown on the Wild Nature Triggered Actions table. Each triggered action can be used by either you or your companion.
 
-## ®**Wild Nature Triggered Actions**® Wild Nature Triggered Action Guardian The Pack Defends Prowler Shadow in the Mist Punisher Thunderclap Spark Pyre
+| Wild Nature | Triggered Action   |
+|-------------|--------------------|
+| Guardian    | The Pack Defends   |
+| Prowler     | Shadow in the Mist |
+| Punisher    | Thunderclap        |
+| Spark       | Pyre               |
 
-£
-
-## **Pyre**
+<!-- @type: ability | @id: pyre | @level: 1 | @subclass: spark -->
+#### Pyre
 
 *You burn to ash before your foes' eyes.*
 
-**Magic Triggered** o Self x Self
+| **Magic**   | **Triggered Action** |
+|-------------|---------------------:|
+| **📏 Self** | **🎯 Self**          |
 
 **Trigger:** You take damage.
 
-**Effect:** You take half the damage and teleport up to 5 squares. **Spend 1 Ferocity:** When you teleport this way, each enemy adjacent to your original space takes lightning or fire damage (your choice) equal to your Intuition score.
+**Effect:** You take half the damage and teleport up to 5 squares.
 
-#### **Shadow in the Mist**
+**Spend 1 Ferocity:** When you teleport this way, each enemy adjacent to your original space takes lightning or fire damage (your choice) equal to your Intuition score.
+
+<!-- @type: ability | @id: shadow-in-the-mist | @level: 1 | @subclass: prowler -->
+#### Shadow in the Mist
 
 *While everyone's eyes are drawn to your foe, you wreathe yourself in obscuring mist.*
 
-**Magic Triggered** o Self x Self
+| **Magic**   | **Triggered Action** |
+|-------------|---------------------:|
+| **📏 Self** | **🎯 Self**          |
 
 **Trigger:** An enemy within 10 squares deals damage to a creature other than you.
 
@@ -1334,11 +1364,14 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Spend 1 Ferocity:** You can move up to a number of squares equal to twice your Intuition score and ignore difficult terrain during this movement.
 
-#### **The Pack Defends**
+<!-- @type: ability | @id: the-pack-defends | @level: 1 | @subclass: guardian -->
+#### The Pack Defends
 
-*You siphon away the pain and endure it yourself.* 
+*You siphon away the pain and endure it yourself.*
 
-**Magic Triggered** o Melee 1 x One ally
+| **Magic**      | **Triggered Action** |
+|----------------|---------------------:|
+| **📏 Melee 1** | **🎯 One ally**      |
 
 **Trigger:** The target takes damage.
 
@@ -1346,15 +1379,20 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Spend 1 Ferocity:** You spend a Recovery without regaining Stamina, and the target regains Stamina equal to your recovery value.
 
-#### **Thunderclap**
+<!-- @type: ability | @id: thunderclap | @level: 1 | @subclass: punisher -->
+#### Thunderclap
 
 *The force of your counterattack cracks the air.*
 
-**Melee, Weapon Triggered** o Melee 1 x One enemy
+| **Melee, Weapon** | **Triggered Action** |
+|-------------------|---------------------:|
+| **📏 Melee 1**    | **🎯 One enemy**     |
 
 **Trigger:** The target deals damage to a creature.
 
-**Effect:** You deal sonic damage equal to your Might score to the target and push them up to a number of squares equal to 1 + your Might score. If this forced movement pushes the target away from the creature they damaged, the creature takes half the triggering damage. **Spend 1 Ferocity:** The forced movement distance is doubled.
+**Effect:** You deal sonic damage equal to your Might score to the target and push them up to a number of squares equal to 1 + your Might score. If this forced movement pushes the target away from the creature they damaged, the creature takes half the triggering damage.
+
+**Spend 1 Ferocity:** The forced movement distance is doubled.
 
 #### Kit
 
