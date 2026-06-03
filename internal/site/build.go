@@ -58,6 +58,9 @@ func Build(cfg *Config) (*BuildResult, error) {
 
 	// Write .nav.yml files
 	for _, section := range cfg.Sections {
+		if section.GroupByBook {
+			continue // ordered per-book nav is written by writeBookNavAndIndexes
+		}
 		if err := writeNavYaml(cfg.DocsDir, section); err != nil {
 			result.Errors = append(result.Errors, fmt.Sprintf("nav %s: %v", section.Name, err))
 		} else {
@@ -142,18 +145,32 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
-		// Determine destination path within the section, applying group remaps
-		destRel, parentName := applyGroups(entry.relPath, section.Groups, entry.sourceDir)
+		data, err := os.ReadFile(entry.absPath)
+		if err != nil {
+			errs = append(errs, fmt.Sprintf("read %s: %v", entry.absPath, err))
+			continue
+		}
+
+		// Determine destination path within the section. GroupByBook sections
+		// place pages into a per-book folder (derived from the page's scc
+		// prefix); other sections apply SCC-type group remaps.
+		var destRel, parentName string
+		if section.GroupByBook {
+			fm, _ := splitFrontmatter(string(data))
+			key := bookKeyFromSCC(parseFrontmatterField(fm, "scc"))
+			book, ok := cfg.BookByKey(key)
+			if !ok {
+				errs = append(errs, fmt.Sprintf("no book config for scc prefix %q (%s)", key, entry.relPath))
+				continue
+			}
+			destRel = filepath.ToSlash(filepath.Join(book.Folder, filepath.Base(entry.relPath)))
+		} else {
+			destRel, parentName = applyGroups(entry.relPath, section.Groups, entry.sourceDir)
+		}
 		destPath := filepath.Join(sectionDir, destRel)
 
 		if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {
 			errs = append(errs, fmt.Sprintf("mkdir %s: %v", destPath, err))
-			continue
-		}
-
-		data, err := os.ReadFile(entry.absPath)
-		if err != nil {
-			errs = append(errs, fmt.Sprintf("read %s: %v", entry.absPath, err))
 			continue
 		}
 

@@ -879,3 +879,53 @@ func TestParseFrontmatterOrder(t *testing.T) {
 		t.Errorf("missing order default=%d want 99", got)
 	}
 }
+
+func writeFile(t *testing.T, path, content string) {
+	t.Helper()
+	if err := os.MkdirAll(filepath.Dir(path), 0755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(path, []byte(content), 0644); err != nil {
+		t.Fatal(err)
+	}
+}
+
+func TestBuildGroupsReadByBook(t *testing.T) {
+	dir := t.TempDir()
+	heroesSrc := filepath.Join(dir, "src-heroes")
+	beastSrc := filepath.Join(dir, "src-beast")
+	docs := filepath.Join(dir, "docs")
+
+	writeFile(t, filepath.Join(heroesSrc, "chapter", "introduction.md"),
+		"---\nname: Introduction\nscc: mcdm.heroes.v1/chapter/introduction\ntype: chapter\norder: 0\n---\n\nHero intro.\n")
+	writeFile(t, filepath.Join(heroesSrc, "chapter", "classes.md"),
+		"---\nname: Classes\nscc: mcdm.heroes.v1/chapter/classes\ntype: chapter\norder: 7\n---\n\nClasses.\n")
+	writeFile(t, filepath.Join(beastSrc, "chapter", "rewards.md"),
+		"---\nname: Rewards\nscc: mcdm.beastheart.v1/chapter/rewards\ntype: chapter\norder: 2\n---\n\nRewards.\n")
+
+	cfg := &Config{
+		SourceDirs: []string{heroesSrc, beastSrc},
+		DocsDir:    docs,
+		Books: []BookConfig{
+			{Key: "mcdm.heroes.v1", Folder: "heroes", Label: "Draw Steel Heroes", Order: 1},
+			{Key: "mcdm.beastheart.v1", Folder: "beastheart", Label: "Draw Steel: Beastheart", Order: 2},
+		},
+		Sections: []SectionConfig{{Name: "Read", Include: []string{"chapter/"}, GroupByBook: true}},
+	}
+
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("build: %v", err)
+	}
+	for _, p := range []string{
+		filepath.Join(docs, "Read", "heroes", "introduction.md"),
+		filepath.Join(docs, "Read", "heroes", "classes.md"),
+		filepath.Join(docs, "Read", "beastheart", "rewards.md"),
+	} {
+		if _, err := os.Stat(p); err != nil {
+			t.Errorf("expected %s to exist: %v", p, err)
+		}
+	}
+	if _, err := os.Stat(filepath.Join(docs, "Read", "chapter")); err == nil {
+		t.Errorf("Read/chapter should not exist under group_by_book")
+	}
+}
