@@ -103,6 +103,7 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 
 	result := &Result{}
 	seenSCC := make(map[string]string)
+	chapterOrder := 0
 
 	var walk func(sections []*parser.Section)
 	walk = func(sections []*parser.Section) {
@@ -128,6 +129,13 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				continue
 			}
 			result.ParsedSections++
+
+			// Chapters get a per-book document-order index so the site builder can
+			// present them in book order rather than alphabetically.
+			if typeName == "chapter" {
+				parsed.Frontmatter["order"] = chapterOrder
+				chapterOrder++
+			}
 
 			// Full book-order render of this section's subtree for reading pages.
 			parsed.PageBody = content.RenderSubtree(section)
