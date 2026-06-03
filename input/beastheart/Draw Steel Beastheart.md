@@ -354,7 +354,7 @@ With the Director's permission, you can also change the damage types of your com
 <!-- @type: feature-group | @companion: basilisk | @level: 1 -->
 #### Basilisk
 
-| Beast, Companion |  | Level 1 |  |  |
+| Beast, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
 | **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |  |  |
@@ -405,7 +405,7 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 <!-- @type: feature-group | @companion: bear | @level: 1 -->
 #### Bear
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
@@ -456,7 +456,7 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 <!-- @type: feature-group | @companion: boar | @level: 1 -->
 #### Boar
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill/search)**<br>Skills |  |  |
@@ -507,7 +507,7 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 <!-- @type: feature-group | @companion: condor | @level: 1 -->
 #### Condor
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **0**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |  |  |
@@ -558,7 +558,7 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 <!-- @type: feature-group | @companion: deinonychus | @level: 1 -->
 #### Deinonychus
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
@@ -609,7 +609,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 <!-- @type: feature-group | @companion: drake | @level: 1 -->
 #### Drake
 
-| Companion, Dragon |  | Level 1 |  |  |
+| Companion, Dragon | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
@@ -665,7 +665,7 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 <!-- @type: feature-group | @companion: elemental-spark | @level: 1 -->
 #### Elemental Spark
 
-| Companion, Elemental |  | Level 1 |  |  |
+| Companion, Elemental | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill/magic)**<br>Skills |  |  |
@@ -716,7 +716,7 @@ While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/m
 <!-- @type: feature-group | @companion: gummy-ball | @level: 1 -->
 #### Gummy Ball
 
-| Companion, Ooze |  | Level 1 |  |  |
+| Companion, Ooze | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
 | **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
@@ -767,7 +767,7 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 <!-- @type: feature-group | @companion: hellhound | @level: 1 -->
 #### Hellhound
 
-| Companion, Infernal |  | Level 1 |  |  |
+| Companion, Infernal | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
@@ -818,7 +818,7 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 <!-- @type: feature-group | @companion: lightbender | @level: 1 -->
 #### Lightbender
 
-| Beast, Companion |  | Level 1 |  |  |
+| Beast, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1L**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill/hide)**<br>Skills |  |  |
@@ -869,7 +869,7 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 <!-- @type: feature-group | @companion: panther | @level: 1 -->
 #### Panther
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
@@ -920,7 +920,7 @@ While the panther is rampaging, you and the panther are invisible and can move t
 <!-- @type: feature-group | @companion: spider | @level: 1 -->
 #### Spider
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
@@ -971,7 +971,7 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 <!-- @type: feature-group | @companion: sporeling | @level: 1 -->
 #### Sporeling
 
-| Beast, Companion |  | Level 1 |  |  |
+| Beast, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1S**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **0**<br>Stability | **1 + M**<br>Free Strike |
 | **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
@@ -1022,7 +1022,7 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 <!-- @type: feature-group | @companion: wolf | @level: 1 -->
 #### Wolf
 
-| Animal, Companion |  | Level 1 |  |  |
+| Animal, Companion | - | Level 1 | - | - |
 |:--:|:--:|:--:|:--:|:--:|
 | **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
 | **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
