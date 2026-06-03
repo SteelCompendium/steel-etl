@@ -7,6 +7,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"sort"
+	"strconv"
 	"strings"
 
 	"gopkg.in/yaml.v3"
@@ -560,6 +561,29 @@ func parseFrontmatterField(fm, key string) string {
 		}
 	}
 	return ""
+}
+
+// bookKeyFromSCC returns the book prefix of an SCC code (substring before the
+// first '/'); returns the input unchanged when there is no '/'.
+func bookKeyFromSCC(scc string) string {
+	if i := strings.Index(scc, "/"); i >= 0 {
+		return scc[:i]
+	}
+	return scc
+}
+
+// parseFrontmatterInt extracts an integer scalar from frontmatter, or def if
+// absent/unparseable.
+func parseFrontmatterInt(fm, key string, def int) int {
+	v := parseFrontmatterField(fm, key)
+	if v == "" {
+		return def
+	}
+	n, err := strconv.Atoi(strings.TrimSpace(v))
+	if err != nil {
+		return def
+	}
+	return n
 }
 
 // naturalLess compares two strings with numeric-aware ordering,

@@ -855,3 +855,27 @@ func TestWalkSourceDirsMerges(t *testing.T) {
 		}
 	}
 }
+
+func TestBookKeyFromSCC(t *testing.T) {
+	cases := map[string]string{
+		"mcdm.heroes.v1/chapter/introduction": "mcdm.heroes.v1",
+		"mcdm.beastheart.v1/chapter/rewards":  "mcdm.beastheart.v1",
+		"":                                    "",
+		"noslash":                             "noslash",
+	}
+	for in, want := range cases {
+		if got := bookKeyFromSCC(in); got != want {
+			t.Errorf("bookKeyFromSCC(%q)=%q want %q", in, got, want)
+		}
+	}
+}
+
+func TestParseFrontmatterOrder(t *testing.T) {
+	fm := "name: Rewards\nscc: mcdm.beastheart.v1/chapter/rewards\ntype: chapter\norder: 3\n"
+	if got := parseFrontmatterInt(fm, "order", -1); got != 3 {
+		t.Errorf("order=%d want 3", got)
+	}
+	if got := parseFrontmatterInt("name: x\n", "order", 99); got != 99 {
+		t.Errorf("missing order default=%d want 99", got)
+	}
+}
