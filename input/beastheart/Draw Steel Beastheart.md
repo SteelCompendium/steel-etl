@@ -1581,6 +1581,7 @@ You gain one exploration, interpersonal, or intrigue perk of your choice.
 
 Your companion may not be much of a talker, but they've got a lifetime of experience surviving the dangers of the wild. They can offer aid in nearly any circumstance: helping exhausted travelers find their way, leading panicked villagers out of a burning building, or even providing a comforting nuzzle at just the right time. Once per round during a montage test, when you or another character makes a test, your companion can increase the tier outcome by one tier (to a maximum of tier 3).
 
+<!-- @type: feature | @id: 2nd-level-wild-nature-feature | @level: 2 -->
 ##### 2nd-Level Wild Nature Feature
 
 Your wild nature grants you a feature, as shown on the 2nd-Level Wild Nature Features table.
@@ -1616,6 +1617,7 @@ When someone is pushed into you, you reach out to steady an ally or send a foe c
 
 You and your companion can't be surprised.
 
+<!-- @type: feature | @id: 2nd-level-wild-nature-ability | @level: 2 -->
 ### 2nd-Level Wild Nature Ability
 
 Your wild nature grants your choice of one of two heroic abilities.
@@ -1783,6 +1785,7 @@ As a 3rd-level beastheart, you gain the following features.
 
 Your companion gains the level 3 advancement feature granted by their stat block.
 
+<!-- @type: feature | @id: 7-ferocity-ability | @level: 3 -->
 #### 7-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 7 ferocity to use.
@@ -1890,6 +1893,7 @@ The first time each combat round that a creature adjacent to your companion take
 
 As a 5th-level beastheart, you gain the following features.
 
+<!-- @type: feature | @id: 5th-level-wild-nature-feature | @level: 5 -->
 ##### 5th-Level Wild Nature Feature
 
 Your wild nature grants you a feature, as shown on the 5th-Level Wild Nature Features table.
@@ -1922,6 +1926,7 @@ When you or your companion uses your [The Pack Defends](scc:mcdm.beastheart.v1/f
 
 When you or your companion deals damage with your [Pyre](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/pyre) ability, each enemy adjacent to either of you takes the damage.
 
+<!-- @type: feature | @id: 9-ferocity-ability | @level: 5 -->
 #### 9-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 9 ferocity to use.
@@ -2008,6 +2013,7 @@ You gain one exploration, interpersonal, or intrigue perk of your choice.
 
 Your companion's rampage burns in your brain, and you become part beast yourself. You gain the level 6 advancement feature granted by your companion's stat block.
 
+<!-- @type: feature | @id: 6th-level-wild-nature-ability | @level: 6 -->
 ### 6th-Level Wild Nature Ability
 
 Your wild nature grants your choice of one of two heroic abilities.
@@ -2184,6 +2190,7 @@ You gain one skill of your choice.
 
 As an 8th-level beastheart, you gain the following features.
 
+<!-- @type: feature | @id: 8th-level-wild-nature-feature | @level: 8 -->
 ##### 8th-Level Wild Nature Feature
 
 Your wild nature grants you a feature, as shown on the 8th-Level Wild Nature Features table.
@@ -2221,6 +2228,7 @@ Your and your companion's free strikes deal extra damage equal to your Intuition
 
 You gain one perk of your choice.
 
+<!-- @type: feature | @id: 11-ferocity-ability | @level: 8 -->
 #### 11-Ferocity Ability
 
 Choose one heroic ability from the following options, each of which costs 11 ferocity to use.
@@ -2296,6 +2304,7 @@ As a 9th-level beastheart, you gain the following features.
 
 Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the [Nature](scc:mcdm.heroes.v1/skill/nature) skill and one other skill from the lore skill group.
 
+<!-- @type: feature | @id: 9th-level-wild-nature-ability | @level: 9 -->
 ### 9th-Level Wild Nature Ability
 
 Your wild nature grants your choice of one of two heroic abilities.
