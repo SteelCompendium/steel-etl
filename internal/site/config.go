@@ -29,6 +29,10 @@ type Config struct {
 	// StaticContent is a directory whose contents are copied over docs (overrides)
 	StaticContent string `yaml:"static_content"`
 
+	// Books maps a book's SCC prefix to a display folder/label/order for
+	// per-book section grouping (used by sections with GroupByBook=true).
+	Books []BookConfig `yaml:"books,omitempty"`
+
 	// ConfigDir is the directory containing the config file (set automatically).
 	// All relative paths are resolved against this directory.
 	ConfigDir string `yaml:"-"`
@@ -94,6 +98,30 @@ type SectionConfig struct {
 	// another source type directory. For example, kit abilities in feature/ability/ can
 	// be moved under feature/ability/Kits/ by matching against the kit/ source directory.
 	Groups []GroupConfig `yaml:"groups,omitempty"`
+
+	// GroupByBook places each page into a per-book subfolder (derived from the
+	// page's scc prefix via Config.Books) instead of its SCC type path, and
+	// emits source-ordered nav + per-book index pages.
+	GroupByBook bool `yaml:"group_by_book,omitempty"`
+}
+
+// BookConfig maps a book's SCC prefix (substring before the first '/') to a
+// display folder slug, human label, and sort order for the Read tab.
+type BookConfig struct {
+	Key    string `yaml:"key"`
+	Folder string `yaml:"folder"`
+	Label  string `yaml:"label"`
+	Order  int    `yaml:"order"`
+}
+
+// BookByKey returns the BookConfig whose Key matches, and whether it was found.
+func (c *Config) BookByKey(key string) (BookConfig, bool) {
+	for _, b := range c.Books {
+		if b.Key == key {
+			return b, true
+		}
+	}
+	return BookConfig{}, false
 }
 
 // GroupConfig moves subdirectories into a named group folder based on

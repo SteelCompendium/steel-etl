@@ -212,3 +212,42 @@ func TestCopyStaticContent(t *testing.T) {
 	checkExists(t, destDir, "Browse/override.md")
 	checkExists(t, destDir, "index.md")
 }
+
+func TestLoadBooksAndGroupByBook(t *testing.T) {
+	dir := t.TempDir()
+	cfgPath := filepath.Join(dir, "site.yaml")
+	yaml := `
+source_dirs: [./src]
+docs_dir: ./docs
+books:
+  - key: mcdm.heroes.v1
+    folder: heroes
+    label: Draw Steel Heroes
+    order: 1
+  - key: mcdm.beastheart.v1
+    folder: beastheart
+    label: "Draw Steel: Beastheart"
+    order: 2
+sections:
+  - name: Read
+    include: [chapter/]
+    group_by_book: true
+`
+	if err := os.WriteFile(cfgPath, []byte(yaml), 0644); err != nil {
+		t.Fatal(err)
+	}
+	cfg, err := LoadSiteConfig(cfgPath)
+	if err != nil {
+		t.Fatalf("load: %v", err)
+	}
+	if len(cfg.Books) != 2 {
+		t.Fatalf("expected 2 books, got %d", len(cfg.Books))
+	}
+	b, ok := cfg.BookByKey("mcdm.beastheart.v1")
+	if !ok || b.Folder != "beastheart" || b.Label != "Draw Steel: Beastheart" || b.Order != 2 {
+		t.Errorf("BookByKey beastheart wrong: %+v ok=%v", b, ok)
+	}
+	if !cfg.Sections[0].GroupByBook {
+		t.Errorf("expected GroupByBook=true on Read section")
+	}
+}
