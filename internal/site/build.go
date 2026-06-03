@@ -68,8 +68,25 @@ func Build(cfg *Config) (*BuildResult, error) {
 		}
 	}
 
-	// Generate index pages for type directories
-	indexCount, indexErrs := generateIndexPages(cfg.DocsDir, cfg.Sections)
+	// Per-book ordered nav + indexes for GroupByBook sections.
+	for _, section := range cfg.Sections {
+		if !section.GroupByBook {
+			continue
+		}
+		n, errs := writeBookNavAndIndexes(cfg, section)
+		result.NavFiles += n
+		result.Errors = append(result.Errors, errs...)
+	}
+
+	// Generate index pages for type directories (skip GroupByBook sections —
+	// those get ordered indexes from writeBookNavAndIndexes).
+	var genericSections []SectionConfig
+	for _, s := range cfg.Sections {
+		if !s.GroupByBook {
+			genericSections = append(genericSections, s)
+		}
+	}
+	indexCount, indexErrs := generateIndexPages(cfg.DocsDir, genericSections)
 	result.IndexPages = indexCount
 	result.Errors = append(result.Errors, indexErrs...)
 
@@ -194,6 +211,134 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 	}
 
 	return count, errs
+}
+
+// chapterRef is a chapter file with its display name and source order.
+type chapterRef struct {
+	file  string // basename, e.g. "rewards.md"
+	name  string // frontmatter name, e.g. "Rewards"
+	order int
+}
+
+// writeBookNavAndIndexes emits, for a GroupByBook section: one ordered .nav.yml
+// + index.md per book folder, and a top-level section .nav.yml + index.md that
+// lists the books in Book.Order.
+func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) {
+	sectionDir := filepath.Join(cfg.DocsDir, section.Name)
+	var errs []string
+	navCount := 0
+
+	// Books that actually produced a folder, in Book.Order.
+	books := append([]BookConfig(nil), cfg.Books...)
+	sort.SliceStable(books, func(i, j int) bool { return books[i].Order < books[j].Order })
+
+	var present []BookConfig
+	for _, b := range books {
+		bookDir := filepath.Join(sectionDir, b.Folder)
+		if _, err := os.Stat(bookDir); err != nil {
+			continue // no chapters for this book
+		}
+		present = append(present, b)
+
+		// Collect chapter files (skip index.md) with name + order.
+		var chapters []chapterRef
+		dirEntries, _ := os.ReadDir(bookDir)
+		for _, e := range dirEntries {
+			if e.IsDir() || !strings.HasSuffix(e.Name(), ".md") || e.Name() == "index.md" {
+				continue
+			}
+			fm, _ := splitFrontmatter(readFile(filepath.Join(bookDir, e.Name())))
+			name := parseFrontmatterField(fm, "name")
+			if name == "" {
+				name = fileToTitle(e.Name())
+			}
+			chapters = append(chapters, chapterRef{
+				file:  e.Name(),
+				name:  name,
+				order: parseFrontmatterInt(fm, "order", 1<<30),
+			})
+		}
+		sort.SliceStable(chapters, func(i, j int) bool {
+			if chapters[i].order != chapters[j].order {
+				return chapters[i].order < chapters[j].order
+			}
+			return naturalLess(chapters[i].file, chapters[j].file)
+		})
+
+		// Per-book .nav.yml: explicit ordered list (index first).
+		var nb strings.Builder
+		nb.WriteString("title: " + yamlScalar(b.Label) + "\n")
+		nb.WriteString("nav:\n")
+		nb.WriteString("  - index.md\n")
+		for _, c := range chapters {
+			nb.WriteString("  - " + c.file + "\n")
+		}
+		if err := os.WriteFile(filepath.Join(bookDir, ".nav.yml"), []byte(nb.String()), 0644); err != nil {
+			errs = append(errs, fmt.Sprintf("book nav %s: %v", b.Folder, err))
+		} else {
+			navCount++
+		}
+
+		// Per-book index.md (ordered list of chapters).
+		var ib strings.Builder
+		ib.WriteString("# " + b.Label + "\n\n---\n\n<div class=\"browse-index\" markdown>\n\n")
+		for _, c := range chapters {
+			ib.WriteString("- [" + c.name + "](" + c.file + ")\n")
+		}
+		ib.WriteString("\n</div>\n")
+		if err := os.WriteFile(filepath.Join(bookDir, "index.md"), []byte(ib.String()), 0644); err != nil {
+			errs = append(errs, fmt.Sprintf("book index %s: %v", b.Folder, err))
+		}
+	}
+
+	// Section-level .nav.yml: title + ordered book folders (index first).
+	title := section.Title
+	if title == "" {
+		title = section.Name
+	}
+	var sb strings.Builder
+	sb.WriteString("title: " + yamlScalar(title) + "\n")
+	sb.WriteString("nav:\n")
+	sb.WriteString("  - index.md\n")
+	for _, b := range present {
+		sb.WriteString("  - " + b.Folder + "\n")
+	}
+	if err := os.WriteFile(filepath.Join(sectionDir, ".nav.yml"), []byte(sb.String()), 0644); err != nil {
+		errs = append(errs, fmt.Sprintf("section nav %s: %v", section.Name, err))
+	} else {
+		navCount++
+	}
+
+	// Section landing index.md: lists the books. (Search exclusion frontmatter
+	// is injected later by applySearchExclusion for search-excluded sections.)
+	var lb strings.Builder
+	lb.WriteString("# " + title + "\n\n---\n\n<div class=\"browse-index\" markdown>\n\n")
+	for _, b := range present {
+		lb.WriteString("- [" + b.Label + "](" + b.Folder + "/)\n")
+	}
+	lb.WriteString("\n</div>\n")
+	if err := os.WriteFile(filepath.Join(sectionDir, "index.md"), []byte(lb.String()), 0644); err != nil {
+		errs = append(errs, fmt.Sprintf("section index %s: %v", section.Name, err))
+	}
+
+	return navCount, errs
+}
+
+// readFile reads a file, returning "" on error (best-effort frontmatter reads).
+func readFile(path string) string {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return ""
+	}
+	return string(data)
+}
+
+// yamlScalar quotes a YAML scalar if it contains characters that need quoting.
+func yamlScalar(s string) string {
+	if strings.ContainsAny(s, ":#\"'{}[],&*?|<>=!%@`") {
+		return "\"" + strings.ReplaceAll(s, "\"", "\\\"") + "\""
+	}
+	return s
 }
 
 // applyGroups remaps a file's relative path based on group rules.

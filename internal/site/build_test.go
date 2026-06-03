@@ -929,3 +929,61 @@ func TestBuildGroupsReadByBook(t *testing.T) {
 		t.Errorf("Read/chapter should not exist under group_by_book")
 	}
 }
+
+func TestBuildBookNavAndIndexes(t *testing.T) {
+	dir := t.TempDir()
+	heroesSrc := filepath.Join(dir, "src-heroes")
+	beastSrc := filepath.Join(dir, "src-beast")
+	docs := filepath.Join(dir, "docs")
+	writeFile(t, filepath.Join(heroesSrc, "chapter", "introduction.md"),
+		"---\nname: Introduction\nscc: mcdm.heroes.v1/chapter/introduction\ntype: chapter\norder: 0\n---\n\nHero intro.\n")
+	writeFile(t, filepath.Join(heroesSrc, "chapter", "classes.md"),
+		"---\nname: Classes\nscc: mcdm.heroes.v1/chapter/classes\ntype: chapter\norder: 7\n---\n\nClasses.\n")
+	writeFile(t, filepath.Join(beastSrc, "chapter", "rewards.md"),
+		"---\nname: Rewards\nscc: mcdm.beastheart.v1/chapter/rewards\ntype: chapter\norder: 2\n---\n\nRewards.\n")
+	writeFile(t, filepath.Join(beastSrc, "chapter", "the-beastheart-and-the-faeries.md"),
+		"---\nname: The Beastheart & The Faeries\nscc: mcdm.beastheart.v1/chapter/the-beastheart-and-the-faeries\ntype: chapter\norder: 0\n---\n\nFiction.\n")
+	cfg := &Config{
+		SourceDirs: []string{heroesSrc, beastSrc},
+		DocsDir:    docs,
+		Books: []BookConfig{
+			{Key: "mcdm.heroes.v1", Folder: "heroes", Label: "Draw Steel Heroes", Order: 1},
+			{Key: "mcdm.beastheart.v1", Folder: "beastheart", Label: "Draw Steel: Beastheart", Order: 2},
+		},
+		Sections: []SectionConfig{{Name: "Read", Title: "Rulebook Chapters", Include: []string{"chapter/"}, GroupByBook: true}},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("build: %v", err)
+	}
+
+	heroesNav, _ := os.ReadFile(filepath.Join(docs, "Read", "heroes", ".nav.yml"))
+	if !strings.Contains(string(heroesNav), "Draw Steel Heroes") {
+		t.Errorf("heroes nav missing label:\n%s", heroesNav)
+	}
+	if i, c := strings.Index(string(heroesNav), "introduction.md"), strings.Index(string(heroesNav), "classes.md"); i < 0 || c < 0 || i > c {
+		t.Errorf("heroes nav not in source order:\n%s", heroesNav)
+	}
+	beastNav, _ := os.ReadFile(filepath.Join(docs, "Read", "beastheart", ".nav.yml"))
+	if f, r := strings.Index(string(beastNav), "the-beastheart-and-the-faeries.md"), strings.Index(string(beastNav), "rewards.md"); f < 0 || r < 0 || f > r {
+		t.Errorf("beastheart nav not in source order:\n%s", beastNav)
+	}
+
+	readNav, _ := os.ReadFile(filepath.Join(docs, "Read", ".nav.yml"))
+	if h, b := strings.Index(string(readNav), "heroes"), strings.Index(string(readNav), "beastheart"); h < 0 || b < 0 || h > b {
+		t.Errorf("Read nav not in book order:\n%s", readNav)
+	}
+
+	for _, p := range []string{
+		filepath.Join(docs, "Read", "heroes", "index.md"),
+		filepath.Join(docs, "Read", "beastheart", "index.md"),
+		filepath.Join(docs, "Read", "index.md"),
+	} {
+		if _, err := os.Stat(p); err != nil {
+			t.Errorf("expected %s: %v", p, err)
+		}
+	}
+	beastIdx, _ := os.ReadFile(filepath.Join(docs, "Read", "beastheart", "index.md"))
+	if f, r := strings.Index(string(beastIdx), "The Beastheart & The Faeries"), strings.Index(string(beastIdx), "Rewards"); f < 0 || r < 0 || f > r {
+		t.Errorf("beastheart index not in source order:\n%s", beastIdx)
+	}
+}
