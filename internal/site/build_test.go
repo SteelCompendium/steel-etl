@@ -761,7 +761,7 @@ func TestRewriteSectionLinks(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := rewriteSectionLinks(tt.content, tt.srcRelPath, tt.destRelPath, tt.sectionName, sections)
+			got := rewriteSectionLinks(tt.content, tt.srcRelPath, tt.destRelPath, tt.sectionName, "", sections)
 			if got != tt.want {
 				t.Errorf("rewriteSectionLinks():\n  got  %q\n  want %q", got, tt.want)
 			}
@@ -1017,5 +1017,30 @@ func TestBuildGroupByBookRewritesIntraBookLinks(t *testing.T) {
 	}
 	if !strings.Contains(string(data), "(downtime-projects.md)") {
 		t.Errorf("expected sibling link (downtime-projects.md), got:\n%s", data)
+	}
+}
+
+func TestRewriteSectionLinks_GroupByBookTarget(t *testing.T) {
+	sections := []SectionConfig{
+		{Name: "Browse", Include: []string{"class/", "condition/"}},
+		{Name: "Read", Include: []string{"chapter/"}, GroupByBook: true},
+	}
+	// A Browse class page (heroes book) linking to the "tests" chapter must
+	// resolve into Read/<book>/, not Read/<type>/ or Read/chapter/.
+	got := rewriteSectionLinks(
+		"See [Tests](../chapter/tests.md).",
+		"class/censor.md", "class/censor.md", "Browse", "heroes", sections)
+	want := "See [Tests](../../Read/heroes/tests.md)."
+	if got != want {
+		t.Errorf("Browse->Read GroupByBook link:\n  got  %q\n  want %q", got, want)
+	}
+
+	// A Read chapter (beastheart) linking to a sibling chapter stays in its book.
+	got2 := rewriteSectionLinks(
+		"See [Rewards](rewards.md).",
+		"chapter/the-beastheart-class.md", "beastheart/the-beastheart-class.md", "Read", "beastheart", sections)
+	want2 := "See [Rewards](rewards.md)."
+	if got2 != want2 {
+		t.Errorf("Read intra-book link:\n  got  %q\n  want %q", got2, want2)
 	}
 }

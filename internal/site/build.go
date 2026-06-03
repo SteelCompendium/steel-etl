@@ -168,19 +168,26 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
+		// The page's book folder (from its scc prefix) — used both for
+		// GroupByBook placement and for resolving links that target chapters in
+		// a GroupByBook section (cross-references stay within the same book).
+		fm, _ := splitFrontmatter(string(data))
+		srcBookFolder := ""
+		if book, ok := cfg.BookByKey(bookKeyFromSCC(parseFrontmatterField(fm, "scc"))); ok {
+			srcBookFolder = book.Folder
+		}
+
 		// Determine destination path within the section. GroupByBook sections
-		// place pages into a per-book folder (derived from the page's scc
-		// prefix); other sections apply SCC-type group remaps.
+		// place pages into a per-book folder; other sections apply SCC-type
+		// group remaps.
 		var destRel, parentName string
 		if section.GroupByBook {
-			fm, _ := splitFrontmatter(string(data))
-			key := bookKeyFromSCC(parseFrontmatterField(fm, "scc"))
-			book, ok := cfg.BookByKey(key)
-			if !ok {
+			if srcBookFolder == "" {
+				key := bookKeyFromSCC(parseFrontmatterField(fm, "scc"))
 				errs = append(errs, fmt.Sprintf("no book config for scc prefix %q (%s)", key, entry.relPath))
 				continue
 			}
-			destRel = filepath.ToSlash(filepath.Join(book.Folder, filepath.Base(entry.relPath)))
+			destRel = filepath.ToSlash(filepath.Join(srcBookFolder, filepath.Base(entry.relPath)))
 		} else {
 			destRel, parentName = applyGroups(entry.relPath, section.Groups, entry.sourceDir)
 		}
@@ -191,7 +198,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
-		data = []byte(rewriteSectionLinks(string(data), entry.relPath, destRel, section.Name, cfg.Sections))
+		data = []byte(rewriteSectionLinks(string(data), entry.relPath, destRel, section.Name, srcBookFolder, cfg.Sections))
 
 		// When a group flattens parent/child into one file, rewrite the
 		// frontmatter "name" to combine parent + original name so the H1
@@ -663,17 +670,9 @@ var mdRelLinkRe = regexp.MustCompile(`(\[[^\]]*\])\(([^):#][^):]*\.md)\)`)
 // after files are placed under section directories (e.g., Browse/, Read/).
 // Links in the source files were computed relative to the flat ETL output;
 // cross-section links need new relative paths that traverse section boundaries.
-func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, allSections []SectionConfig) string {
+func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookFolder string, allSections []SectionConfig) string {
 	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
 	destDir := filepath.ToSlash(filepath.Dir(filepath.Join(sectionName, destRelPath)))
-
-	// Book folder of the current page (first component of destRelPath), used to
-	// resolve links whose target lives in a GroupByBook section. Intra-section
-	// cross-references stay within the same book, so the target shares this folder.
-	bookFolder := ""
-	if dr := filepath.ToSlash(destRelPath); strings.Contains(dr, "/") {
-		bookFolder = dr[:strings.Index(dr, "/")]
-	}
 
 	return mdRelLinkRe.ReplaceAllStringFunc(content, func(match string) string {
 		sub := mdRelLinkRe.FindStringSubmatch(match)
@@ -700,10 +699,11 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, a
 		}
 
 		// GroupByBook sections flatten SCC type paths (e.g. "chapter/x.md") into
-		// per-book folders ("<book>/x.md"), so resolve the target there.
+		// per-book folders ("<book>/x.md"). Cross-references to a chapter stay
+		// within the source page's book, so resolve the target under that folder.
 		var targetFull string
-		if targetGroupByBook {
-			targetFull = filepath.ToSlash(filepath.Join(targetSection, bookFolder, filepath.Base(rootRel)))
+		if targetGroupByBook && srcBookFolder != "" {
+			targetFull = filepath.ToSlash(filepath.Join(targetSection, srcBookFolder, filepath.Base(rootRel)))
 		} else {
 			targetFull = filepath.ToSlash(filepath.Join(targetSection, rootRel))
 		}
