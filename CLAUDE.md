@@ -47,7 +47,7 @@ just run gen --config pipeline.yaml  # Run with args
 
 ## CLI commands
 
-- `gen` -- Run full pipeline (parse + classify + output)
+- `gen` -- Run full pipeline (parse + classify + output). **Processes only the primary book unless you pass `--all` (every book) or `--book <id>`.** `pipeline.yaml`'s `books:` list (beastheart, monsters) is skipped by a bare `gen`, so their `data/data-*` output goes stale; the `just deploy*` recipes pass `--all`. See `selectBookConfigs` in `internal/cli/gen.go`.
 - `validate` -- Check annotation coverage, unknown types, SCC stability
 - `classify` -- Display/export SCC codes, diff against registry
 - `strip` -- Remove annotations from markdown (also `--for-translation`)
