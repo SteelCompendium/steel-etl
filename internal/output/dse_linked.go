@@ -16,7 +16,7 @@ type DSELinkedGenerator struct {
 	LinkMode scc.LinkMode
 }
 
-func (g *DSELinkedGenerator) Format() string  { return "md-dse-linked" }
+func (g *DSELinkedGenerator) Format() string   { return "md-dse-linked" }
 func (g *DSELinkedGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
@@ -24,9 +24,9 @@ func (g *DSELinkedGenerator) WriteSection(sccCode string, parsed *content.Parsed
 		return nil
 	}
 
-	// Resolve links in body before building DSE output
+	// Resolve links in both body and structured frontmatter fields before building DSE output
 	resolved := &content.ParsedContent{
-		Frontmatter: parsed.Frontmatter,
+		Frontmatter: g.Resolver.ResolveFrontmatter(parsed.Frontmatter, sccCode, g.LinkMode),
 		Body:        g.Resolver.ResolveLinks(parsed.Body, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,

@@ -82,6 +82,45 @@ func (r *Resolver) ResolveLinks(content string, relativeTo string, mode LinkMode
 	})
 }
 
+// ResolveFrontmatter returns a deep copy of a frontmatter map with scc: links
+// resolved in every string value (recursing through nested maps and slices).
+// The input map is never mutated, since it is shared across output generators.
+func (r *Resolver) ResolveFrontmatter(fm map[string]any, relativeTo string, mode LinkMode) map[string]any {
+	if fm == nil {
+		return nil
+	}
+	out := make(map[string]any, len(fm))
+	for k, v := range fm {
+		out[k] = r.resolveValue(v, relativeTo, mode)
+	}
+	return out
+}
+
+// resolveValue resolves scc: links within a single frontmatter value, deep-copying
+// containers so the original is left untouched. Non-string scalars pass through.
+func (r *Resolver) resolveValue(v any, relativeTo string, mode LinkMode) any {
+	switch val := v.(type) {
+	case string:
+		return r.ResolveLinks(val, relativeTo, mode)
+	case map[string]any:
+		return r.ResolveFrontmatter(val, relativeTo, mode)
+	case []any:
+		out := make([]any, len(val))
+		for i, elem := range val {
+			out[i] = r.resolveValue(elem, relativeTo, mode)
+		}
+		return out
+	case []string:
+		out := make([]string, len(val))
+		for i, elem := range val {
+			out[i] = r.ResolveLinks(elem, relativeTo, mode)
+		}
+		return out
+	default:
+		return v
+	}
+}
+
 // sccToRootPath converts an SCC code to a path relative to the output root.
 func sccToRootPath(sccCode string, ext string) string {
 	parts := strings.Split(sccCode, "/")

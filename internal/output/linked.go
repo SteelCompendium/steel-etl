@@ -16,7 +16,7 @@ type LinkedGenerator struct {
 	LinkMode scc.LinkMode
 }
 
-func (g *LinkedGenerator) Format() string  { return "md-linked" }
+func (g *LinkedGenerator) Format() string   { return "md-linked" }
 func (g *LinkedGenerator) CleanDir() string { return g.BaseDir }
 
 func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedContent) error {
@@ -31,9 +31,10 @@ func (g *LinkedGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 		bodySource = parsed.Body
 	}
 
-	// Create a copy with resolved links in the body
+	// Create a copy with resolved links in both the body and the structured
+	// frontmatter fields (effect, spend, tier1-3, etc.), which also carry scc: links.
 	resolved := &content.ParsedContent{
-		Frontmatter: parsed.Frontmatter,
+		Frontmatter: g.Resolver.ResolveFrontmatter(parsed.Frontmatter, sccCode, g.LinkMode),
 		Body:        g.Resolver.ResolveLinks(bodySource, sccCode, g.LinkMode),
 		TypePath:    parsed.TypePath,
 		ItemID:      parsed.ItemID,

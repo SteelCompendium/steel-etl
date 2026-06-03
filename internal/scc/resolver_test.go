@@ -204,3 +204,65 @@ func TestResolverUnresolvedLinks(t *testing.T) {
 		})
 	}
 }
+
+func TestResolverResolveFrontmatter(t *testing.T) {
+	reg := NewRegistry()
+	reg.Add("mcdm.heroes.v1/condition/restrained")
+	reg.Add("mcdm.heroes.v1/movement/forced-movement")
+	resolver := NewResolver(reg, ".md")
+
+	relativeTo := "mcdm.heroes.v1/feature.ability.elementalist.level-2/volcanos-embrace"
+
+	src := map[string]any{
+		"name":   "Volcano's Embrace",
+		"level":  "2",
+		"effect": "[forced movement](scc:mcdm.heroes.v1/movement/forced-movement) increased by 2.",
+		"tier1":  "5 + R fire damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)",
+		"keywords": []any{
+			"Fire",
+			"hits a [restrained](scc:mcdm.heroes.v1/condition/restrained) target",
+		},
+		"nested": map[string]any{
+			"detail": "see [restrained](scc:mcdm.heroes.v1/condition/restrained)",
+		},
+		"count": 3,
+	}
+
+	got := resolver.ResolveFrontmatter(src, relativeTo, LinkAll)
+
+	// String values get scc links rewritten to relative paths.
+	if want := "[forced movement](../../../../movement/forced-movement.md) increased by 2."; got["effect"] != want {
+		t.Errorf("effect: got %q, want %q", got["effect"], want)
+	}
+	if want := "5 + R fire damage; [restrained](../../../../condition/restrained.md) (save ends)"; got["tier1"] != want {
+		t.Errorf("tier1: got %q, want %q", got["tier1"], want)
+	}
+	// Slice elements are resolved.
+	kw, ok := got["keywords"].([]any)
+	if !ok || len(kw) != 2 {
+		t.Fatalf("keywords: got %#v", got["keywords"])
+	}
+	if want := "hits a [restrained](../../../../condition/restrained.md) target"; kw[1] != want {
+		t.Errorf("keywords[1]: got %q, want %q", kw[1], want)
+	}
+	// Nested maps are resolved recursively.
+	nested, ok := got["nested"].(map[string]any)
+	if !ok {
+		t.Fatalf("nested: got %#v", got["nested"])
+	}
+	if want := "see [restrained](../../../../condition/restrained.md)"; nested["detail"] != want {
+		t.Errorf("nested.detail: got %q, want %q", nested["detail"], want)
+	}
+	// Non-string scalars are untouched.
+	if got["count"] != 3 {
+		t.Errorf("count: got %v, want 3", got["count"])
+	}
+
+	// The original input map must NOT be mutated (shared with other generators).
+	if src["effect"] != "[forced movement](scc:mcdm.heroes.v1/movement/forced-movement) increased by 2." {
+		t.Errorf("input map was mutated: effect=%q", src["effect"])
+	}
+	if srcNested := src["nested"].(map[string]any); srcNested["detail"] != "see [restrained](scc:mcdm.heroes.v1/condition/restrained)" {
+		t.Errorf("input nested map was mutated: detail=%q", srcNested["detail"])
+	}
+}
