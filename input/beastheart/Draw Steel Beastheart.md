@@ -323,18 +323,18 @@ If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](http
 
 ###### Beastheart Advancement Table
 
-| Level | Features | Abilities | Wild Nature Abilities |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
-| 1st | [Wild Nature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature), [Companion](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/companion), [Heart of the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/heart-of-the-beast), [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike), [Ferocity](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/ferocity), [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage), [Wild Nature Maneuver](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-maneuver), [Wild Nature Triggered Action](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-triggered-action), [Kit](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/kit), [Beastheart Abilities](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/beastheart-abilities) | Signature, 3, 5 | — |
-| 2nd | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/perk), [Everyone’s Best Friend](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/everyones-best-friend), [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/2nd-level-wild-nature-feature), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/2nd-level-wild-nature-ability) | Signature, 3, 5 | 5 |
-| 3rd | [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-3/companion-advancement-feature), [7-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-3/7-ferocity-ability) | Signature, 3, 5, 7 | 5 |
-| 4th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/characteristic-increase), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/perk), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/skill), [Unleash the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/unleash-the-beast) | Signature, 3, 5, 7 | 5 |
-| 5th | [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/5th-level-wild-nature-feature), [9-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/9-ferocity-ability) | Signature, 3, 5, 7, 9 | 5 |
-| 6th | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/perk), [Become the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/become-the-beast), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/6th-level-wild-nature-ability) | Signature, 3, 5, 7, 9 | 5, 9 |
-| 7th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/characteristic-increase), [Feral Heart](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/feral-heart), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/skill) | Signature, 3, 5, 7, 9 | 5, 9 |
-| 8th | [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/8th-level-wild-nature-feature), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/perk), [11-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/11-ferocity-ability) | Signature, 3, 5, 7, 9, 11 | 5, 9 |
-| 9th | [Avatar of the Green](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-9/avatar-of-the-green), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-9/9th-level-wild-nature-ability) | Signature, 3, 5, 7, 9, 11 | 5, 9, 11 |
-| 10th | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/characteristic-increase), [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/companion-advancement-feature), [Final Evolution](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/final-evolution), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/perk), [Ferox](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/ferox), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/skill) | Signature, 3, 5, 7, 9, 11 | 5, 9, 11 |
+| Level | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Abilities                 | Wild Nature Abilities |
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
+| 1st   | [Wild Nature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature), [Companion](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/companion), [Heart of the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/heart-of-the-beast), [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike), [Ferocity](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/ferocity), [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage), [Wild Nature Maneuver](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-maneuver), [Wild Nature Triggered Action](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-triggered-action), [Kit](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/kit), [Beastheart Abilities](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/beastheart-abilities) | Signature, 3, 5           | —                     |
+| 2nd   | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/perk), [Everyone’s Best Friend](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/everyones-best-friend), [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/2nd-level-wild-nature-feature), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/2nd-level-wild-nature-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Signature, 3, 5           | 5                     |
+| 3rd   | [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-3/companion-advancement-feature), [7-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-3/7-ferocity-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Signature, 3, 5, 7        | 5                     |
+| 4th   | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/characteristic-increase), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/perk), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/skill), [Unleash the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-4/unleash-the-beast)                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Signature, 3, 5, 7        | 5                     |
+| 5th   | [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/5th-level-wild-nature-feature), [9-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/9-ferocity-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Signature, 3, 5, 7, 9     | 5                     |
+| 6th   | [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/perk), [Become the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/become-the-beast), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-6/6th-level-wild-nature-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Signature, 3, 5, 7, 9     | 5, 9                  |
+| 7th   | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/characteristic-increase), [Feral Heart](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/feral-heart), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-7/skill)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Signature, 3, 5, 7, 9     | 5, 9                  |
+| 8th   | [Wild Nature Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/8th-level-wild-nature-feature), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/perk), [11-Ferocity Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/11-ferocity-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Signature, 3, 5, 7, 9, 11 | 5, 9                  |
+| 9th   | [Avatar of the Green](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-9/avatar-of-the-green), [Wild Nature Ability](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-9/9th-level-wild-nature-ability)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
+| 10th  | [Characteristic Increase](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/characteristic-increase), [Companion Advancement Feature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/companion-advancement-feature), [Final Evolution](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/final-evolution), [Perk](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/perk), [Ferox](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/ferox), [Rampage Improvement](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/rampage-improvement), [Skill](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-10/skill)                                                                                                                                                                                                                                                              | Signature, 3, 5, 7, 9, 11 | 5, 9, 11              |
 
 <!-- @type: feature | @id: companion | @level: 1 -->
 ### Companion
@@ -354,11 +354,11 @@ With the Director's permission, you can also change the damage types of your com
 <!-- @type: feature-group | @companion: basilisk | @level: 1 -->
 #### Basilisk
 
-| Beast, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
-| **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+|     Beast, Companion     |         -         |                            Level 1                            |          -          |            -             |
+|:------------------------:|:-----------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
+|      **1L**<br>Size      |  **5**<br>Speed   |                    **= yours**<br>Stamina                     | **2**<br>Stability  | **1 + M**<br>Free Strike |
+| **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |                     |                          |
+|     **+2**<br>Might      | **+1**<br>Agility |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: petrify -->
 ##### Petrify
@@ -405,19 +405,19 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 <!-- @type: feature-group | @companion: bear | @level: 1 -->
 #### Bear
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+| Animal, Companion |           -           |                             Level 1                             |          -          |            -             |
+|:-----------------:|:---------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1L**<br>Size   |    **5**<br>Speed     |                     **= yours**<br>Stamina                      | **2**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+|  **+2**<br>Might  |   **+1**<br>Agility   |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: backhand -->
 ##### Backhand
 
 *The bear casually swats the pesky foe into next week.*
 
-| **Companion, Melee, Weapon** |               **Maneuver** |
-|------------------------------|---------------------------:|
+| **Companion, Melee, Weapon** |                  **Maneuver** |
+|------------------------------|------------------------------:|
 | **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The target takes damage equal to 4 + the bear's Might score and is pushed up to 2 squares.
@@ -456,19 +456,19 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 <!-- @type: feature-group | @companion: boar | @level: 1 -->
 #### Boar
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill/search)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+| Animal, Companion |         -         |                         Level 1                         |          -          |            -             |
+|:-----------------:|:-----------------:|:-------------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |  **5**<br>Speed   |                 **= yours**<br>Stamina                  | **2**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill/search)**<br>Skills |                     |                          |
+|  **+2**<br>Might  | **+1**<br>Agility |                    **−1**<br>Reason                     | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: gore -->
 ##### Gore
 
 *With an enraged snort, the boar lunges forward to rip open foes with their tusks.*
 
-| **Companion, Melee, Weapon** |               **Maneuver** |
-|------------------------------|---------------------------:|
+| **Companion, Melee, Weapon** |                  **Maneuver** |
+|------------------------------|------------------------------:|
 | **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The boar moves up to their speed in a straight line. When this movement ends, they can deal damage equal to 3 + their Might score to an adjacent target. If the boar moved closer to the target as part of this movement, the boar deals extra damage equal to their Might score.
@@ -507,19 +507,19 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 <!-- @type: feature-group | @companion: condor | @level: 1 -->
 #### Condor
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **0**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| Animal, Companion |          -          |                            Level 1                            |          -          |            -             |
+|:-----------------:|:-------------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |   **7**<br>Speed    |                    **= yours**<br>Stamina                     | **0**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |                     |                          |
+|  **+2**<br>Might  |  **+1**<br>Agility  |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: flurry-of-wings -->
 ##### Flurry of Wings
 
 *I can't draw a bead on them with that infernal bird flapping in my face!*
 
-| **Companion, Melee, Weapon** |               **Maneuver** |
-|------------------------------|---------------------------:|
+| **Companion, Melee, Weapon** |                  **Maneuver** |
+|------------------------------|------------------------------:|
 | **📏 Melee 1**               | **🎯 One creature or object** |
 
 **Effect:** The target takes damage equal to 3 + the condor's Might score. Additionally, enemies are [weakened](scc:mcdm.heroes.v1/condition/weakened) while adjacent to the condor until the end of your next turn.
@@ -558,11 +558,11 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 <!-- @type: feature-group | @companion: deinonychus | @level: 1 -->
 #### Deinonychus
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
+|:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+|  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: terrible-claws -->
 ##### Terrible Claws
@@ -609,20 +609,20 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 <!-- @type: feature-group | @companion: drake | @level: 1 -->
 #### Drake
 
-| Companion, Dragon | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+|                                                                  Companion, Dragon                                                                  |          -          |                             Level 1                             |          -          |            -             |
+|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
+|                                                                   **1M**<br>Size                                                                    |   **5**<br>Speed    |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+|                                                                   **+2**<br>Might                                                                   |  **+1**<br>Agility  |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: drake-breath -->
 ##### Drake Breath
 
 *The drake exhales a blast of flesh-melting energy.*
 
-| **Area, Companion, Magic**       |                  **Maneuver** |
-|----------------------------------|------------------------------:|
-| **📏 1 or 2 cube within 1**      | **🎯 Each creature in the area** |
+| **Area, Companion, Magic**  |                     **Maneuver** |
+|-----------------------------|---------------------------------:|
+| **📏 1 or 2 cube within 1** | **🎯 Each creature in the area** |
 
 **Effect:** The target takes damage of the drake's attuned damage type (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.trait.companion.drake.level-1/elementally-attuned)) equal to the drake's Might score.
 
@@ -665,19 +665,19 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 <!-- @type: feature-group | @companion: elemental-spark | @level: 1 -->
 #### Elemental Spark
 
-| Companion, Elemental | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill/magic)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+|    Companion, Elemental     |         -         |                        Level 1                        |          -          |            -             |
+|:---------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|       **1M**<br>Size        |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill/magic)**<br>Skills |                     |                          |
+|       **+2**<br>Might       | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: static-shock -->
 ##### Static Shock
 
 *An arc of lightning crackles from the spark.*
 
-| **Companion, Magic, Melee** |               **Maneuver** |
-|-----------------------------|---------------------------:|
+| **Companion, Magic, Melee** |                  **Maneuver** |
+|-----------------------------|------------------------------:|
 | **📏 Melee 1**              | **🎯 One creature or object** |
 
 **Effect:** The target takes lightning damage equal to 2 + the spark's Might score.
@@ -716,11 +716,11 @@ While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/m
 <!-- @type: feature-group | @companion: gummy-ball | @level: 1 -->
 #### Gummy Ball
 
-| Companion, Ooze | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1L**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
-| **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+|    Companion, Ooze     |         -         |                        Level 1                        |          -          |            -             |
+|:----------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|     **1L**<br>Size     |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **2**<br>Stability  | **1 + M**<br>Free Strike |
+| **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+|    **+2**<br>Might     | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: absorb -->
 ##### Absorb
@@ -767,19 +767,19 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 <!-- @type: feature-group | @companion: hellhound | @level: 1 -->
 #### Hellhound
 
-| Companion, Infernal | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+|  Companion, Infernal   |         -         |                             Level 1                             |          -          |            -             |
+|:----------------------:|:-----------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
+|     **1M**<br>Size     |  **7**<br>Speed   |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+|    **+2**<br>Might     | **+2**<br>Agility |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: fire-breath -->
 ##### Fire Breath
 
 *The hellhound exhales infernal flames.*
 
-| **Companion, Magic, Melee, Ranged** |               **Maneuver** |
-|-------------------------------------|---------------------------:|
+| **Companion, Magic, Melee, Ranged** |                  **Maneuver** |
+|-------------------------------------|------------------------------:|
 | **📏 Melee 1 or Ranged 2**          | **🎯 One creature or object** |
 
 **Effect:** The target takes fire damage equal to 3 + the hellhound's Might score.
@@ -818,11 +818,11 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 <!-- @type: feature-group | @companion: lightbender | @level: 1 -->
 #### Lightbender
 
-| Beast, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1L**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **2**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill/hide)**<br>Skills |  |  |
-| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+| Beast, Companion  |         -         |                       Level 1                       |          -          |            -             |
+|:-----------------:|:-----------------:|:---------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1L**<br>Size   |  **7**<br>Speed   |               **= yours**<br>Stamina                | **2**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill/hide)**<br>Skills |                     |                          |
+|  **+2**<br>Might  | **+1**<br>Agility |                  **−1**<br>Reason                   | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: sparking-tail-whip -->
 ##### Sparking Tail Whip
@@ -869,11 +869,11 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 <!-- @type: feature-group | @companion: panther | @level: 1 -->
 #### Panther
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
+|:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |    **7**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+|  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: pounce -->
 ##### Pounce
@@ -920,11 +920,11 @@ While the panther is rampaging, you and the panther are invisible and can move t
 <!-- @type: feature-group | @companion: spider | @level: 1 -->
 #### Spider
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
+|:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |    **5**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+|  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: web-shot -->
 ##### Web Shot
@@ -971,11 +971,11 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 <!-- @type: feature-group | @companion: sporeling | @level: 1 -->
 #### Sporeling
 
-| Beast, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1S**<br>Size | **5**<br>Speed | **= yours**<br>Stamina | **0**<br>Stability | **1 + M**<br>Free Strike |
-| **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+|     Beast, Companion     |         -         |                        Level 1                        |          -          |            -             |
+|:------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|      **1S**<br>Size      |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **0**<br>Stability  | **1 + M**<br>Free Strike |
+| **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+|     **+2**<br>Might      | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: spore-puff -->
 ##### Spore Puff
@@ -1022,11 +1022,11 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 <!-- @type: feature-group | @companion: wolf | @level: 1 -->
 #### Wolf
 
-| Animal, Companion | - | Level 1 | - | - |
-|:--:|:--:|:--:|:--:|:--:|
-| **1M**<br>Size | **7**<br>Speed | **= yours**<br>Stamina | **1**<br>Stability | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |  |  |
-| **+2**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+| Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
+|:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
+|  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+|  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: clamping-jaws -->
 ##### Clamping Jaws
@@ -1125,8 +1125,8 @@ Both you and your companion can use the following ability.
 
 Relying on their instincts, your companion launches toward the nearest threat. Your companion lunges into the fray, attacking wildly with teeth, claws, or other weapons.
 
-| **Area, Companion, Melee, Strike, Weapon** |               **Main action** |
-|--------------------------------------------|------------------------------:|
+| **Area, Companion, Melee, Strike, Weapon** |                  **Main action** |
+|--------------------------------------------|---------------------------------:|
 | **📏 1 burst**                             | **🎯 Each creature in the area** |
 
 **Effect:** Your companion moves up to a number of squares equal to their Intuition score straight toward the closest enemy they are aware of, avoiding damaging terrain and ending the movement when they are adjacent to that enemy.
@@ -1174,25 +1174,25 @@ Your companion has a resource called rampage. Whenever you or your companion spe
 
 Your companion doesn't spend rampage to activate abilities. Instead, when your companion gains 8 rampage, they are rampaging. As your companion's rampage increases, they gain the listed effects from the Rampage table. Effects are cumulative. Some Rampage effects are applied only if you are a specific level or higher, with the level of these effects noted in the Rampage table.
 
-| Rampage         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rampage         | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Rampage         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Rampage         | Effect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | 8               | At the end of each of your turns, your companion must use their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability as a free maneuver. You can’t willingly decrease the power roll outcome to a lower tier. For each ally damaged this way, you gain 2 surges, which you can use on this strike.                                                                                                                                                                                                |
-| 12              | Your companion has damage immunity equal to their Intuition score.                                                                                                                                                                                                                                                                                                                                                                                                |
+| 12              | Your companion has damage immunity equal to their Intuition score.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 16 (4th level)  | When your companion uses their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability, they deal extra damage equal to their Intuition score to each target. You gain 1 additional surge for each ally damaged this way.                                                                                                                                                                                                                                                                            |
 | 20 (7th level)  | As a free maneuver, your companion can increase their size up to size 2, or increase their size by 1 if their original size is already 2 or larger. This size increase lasts until your companion’s rampage ends or they use a free maneuver to end it. While your companion’s size is increased, they gain a +2 bonus to speed and stability, the potencies of their abilities increase by 1, and the size of their [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike) ability’s burst increases by 1. |
-| 24 (10th level) | When your companion increases their size, they can increase it up to size 3, or increase their size by 1 if their original size is already 3 or larger. Whenever they make a power roll while their size is increased this way, they can roll 3d10 and discard the lowest roll.                                                                                                                                                                                   |
+| 24 (10th level) | When your companion increases their size, they can increase it up to size 3, or increase their size by 1 if their original size is already 3 or larger. Whenever they make a power roll while their size is increased this way, they can roll 3d10 and discard the lowest roll.                                                                                                                                                                                                                                                             |
 
 <!-- @type: feature | @id: wild-nature-maneuver | @level: 1 -->
 ### Wild Nature Maneuver
 
 Your wild nature grants you a maneuver, as shown on the Wild Nature Maneuvers table. Each maneuver can be used only by the beastheart.
 
-| Wild Nature | Maneuver          |
-|-------------|-------------------|
-| Guardian    | [Living Arrow](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/living-arrow)      |
-| Prowler     | [Lightning Leap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/lightning-leap)    |
-| Punisher    | [Avalanche Rush](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/avalanche-rush)    |
+| Wild Nature | Maneuver                                                                                         |
+|-------------|--------------------------------------------------------------------------------------------------|
+| Guardian    | [Living Arrow](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/living-arrow)           |
+| Prowler     | [Lightning Leap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/lightning-leap)       |
+| Punisher    | [Avalanche Rush](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/avalanche-rush)       |
 | Spark       | [Jaws of the Storm](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/jaws-of-the-storm) |
 
 <!-- @type: ability | @id: avalanche-rush | @level: 1 | @subclass: punisher -->
@@ -1215,8 +1215,8 @@ You can move up to 3 squares before and after you use this ability. During this 
 
 *Your foes are torn by a tempest of primordial teeth and claws.*
 
-| **Area, Beastheart, Magic** |               **Maneuver** |
-|-----------------------------|---------------------------:|
+| **Area, Beastheart, Magic** |                  **Maneuver** |
+|-----------------------------|------------------------------:|
 | **📏 2 cube within 5**      | **🎯 Each enemy in the area** |
 
 **Effect:** Each target takes cold, fire, lightning, or sonic damage (your choice) equal to your Might score.
@@ -1241,8 +1241,8 @@ You can move up to 3 squares before and after you use this ability. During this 
 
 *You point, and your companion appears.*
 
-| **Beastheart, Magic, Ranged** |              **Maneuver** |
-|-------------------------------|--------------------------:|
+| **Beastheart, Magic, Ranged** |                **Maneuver** |
+|-------------------------------|----------------------------:|
 | **📏 Ranged 10**              | **🎯 One unoccupied space** |
 
 **Effect:** If your companion is within range and can fit into the target space, they [teleport](scc:mcdm.heroes.v1/movement/teleport) to the space. They can then make a melee free strike.
@@ -1254,12 +1254,12 @@ You can move up to 3 squares before and after you use this ability. During this 
 
 Your wild nature grants you a triggered action, as shown on the Wild Nature Triggered Actions table. Each triggered action can be used by either you or your companion.
 
-| Wild Nature | Triggered Action   |
-|-------------|--------------------|
-| Guardian    | [The Pack Defends](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/the-pack-defends)   |
+| Wild Nature | Triggered Action                                                                                   |
+|-------------|----------------------------------------------------------------------------------------------------|
+| Guardian    | [The Pack Defends](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/the-pack-defends)     |
 | Prowler     | [Shadow in the Mist](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/shadow-in-the-mist) |
-| Punisher    | [Thunderclap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/thunderclap)        |
-| Spark       | [Pyre](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/pyre)               |
+| Punisher    | [Thunderclap](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/thunderclap)               |
+| Spark       | [Pyre](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/pyre)                             |
 
 <!-- @type: ability | @id: pyre | @level: 1 | @subclass: spark -->
 ##### Pyre
@@ -1268,7 +1268,7 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 | **Magic**   | **Triggered Action** |
 |-------------|---------------------:|
-| **📏 Self** | **🎯 Self**          |
+| **📏 Self** |          **🎯 Self** |
 
 **Trigger:** You take damage.
 
@@ -1283,7 +1283,7 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 | **Magic**   | **Triggered Action** |
 |-------------|---------------------:|
-| **📏 Self** | **🎯 Self**          |
+| **📏 Self** |          **🎯 Self** |
 
 **Trigger:** An enemy within 10 squares deals damage to a creature other than you.
 
@@ -1298,7 +1298,7 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 | **Magic**      | **Triggered Action** |
 |----------------|---------------------:|
-| **📏 Melee 1** | **🎯 One ally**      |
+| **📏 Melee 1** |      **🎯 One ally** |
 
 **Trigger:** The target takes damage.
 
@@ -1362,8 +1362,8 @@ Choose one signature ability from the following options. Signature abilities can
 
 *You and your ally morph into each other, magically switching places.*
 
-| **Beastheart, Magic, Melee, Strike, Weapon** |              **Main action** |
-|----------------------------------------------|-----------------------------:|
+| **Beastheart, Magic, Melee, Strike, Weapon** |               **Main action** |
+|----------------------------------------------|------------------------------:|
 | **📏 Melee 1**                               | **🎯 One creature or object** |
 
 **Effect:** If you and a willing ally are standing on the ground within 10 squares of each other, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to swap places. If you do, you gain an edge on this ability.
@@ -1379,8 +1379,8 @@ Choose one signature ability from the following options. Signature abilities can
 
 *You launch a flurry of attacks to cover your movement.*
 
-| **Beastheart, Melee, Ranged, Strike, Weapon** |              **Main action** |
-|-----------------------------------------------|-----------------------------:|
+| **Beastheart, Melee, Ranged, Strike, Weapon** |               **Main action** |
+|-----------------------------------------------|------------------------------:|
 | **📏 Melee 1 or ranged 5**                    | **🎯 One creature or object** |
 
 **Power Roll + Might:**
@@ -1898,13 +1898,13 @@ As a 5th-level beastheart, you gain the following features.
 
 Your wild nature grants you a feature, as shown on the 5th-Level Wild Nature Features table.
 
-| ♦ 5th-Level Wild Nature Features ♦ |                      |
-|------------------------------------|----------------------|
-| Wild Nature                        | Feature              |
+| ♦ 5th-Level Wild Nature Features ♦ |                                                                                                      |
+|------------------------------------|------------------------------------------------------------------------------------------------------|
+| Wild Nature                        | Feature                                                                                              |
 | Guardian                           | [There For Each Other](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other) |
-| Prowler                            | [Melt Away](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/melt-away)            |
-| Punisher                           | [I Can Take It](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/i-can-take-it)        |
-| Spark                              | [Wildfire Pyre](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/wildfire-pyre)        |
+| Prowler                            | [Melt Away](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/melt-away)                       |
+| Punisher                           | [I Can Take It](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/i-can-take-it)               |
+| Spark                              | [Wildfire Pyre](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-5/wildfire-pyre)               |
 
 <!-- @type: feature | @id: i-can-take-it | @level: 5 | @subclass: punisher -->
 ##### I Can Take It
@@ -1936,8 +1936,8 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 *You channel your companion's feral senses to take the perfect shot.*
 
-| **Beastheart, Ranged, Strike, Weapon** | **Main action** |
-|----------------------------------------|----------------:|
+| **Beastheart, Ranged, Strike, Weapon** |               **Main action** |
+|----------------------------------------|------------------------------:|
 | **📏 Ranged 15**                       | **🎯 One creature or object** |
 
 **Power Roll + Intuition:**
@@ -1953,8 +1953,8 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 
 *You and your allies surround your enemy like a pack of wolves, mobbing them and pulling them down.*
 
-| **Beastheart, Melee, Strike, Weapon** | **Main action** |
-|---------------------------------------|----------------:|
+| **Beastheart, Melee, Strike, Weapon** |     **Main action** |
+|---------------------------------------|--------------------:|
 | **📏 Melee 1**                        | **🎯 One creature** |
 
 **Power Roll + Might:**
@@ -2195,12 +2195,12 @@ As an 8th-level beastheart, you gain the following features.
 
 Your wild nature grants you a feature, as shown on the 8th-Level Wild Nature Features table.
 
-| ♦ 8th-Level Wild Nature Features ♦ |                         |
-|------------------------------------|-------------------------|
-| Wild Nature                        | Feature                 |
-| Guardian                           | [Reflexes Perfected](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/reflexes-perfected)      |
-| Prowler                            | [Born to Run](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/born-to-run)             |
-| Punisher                           | [Built for Violence](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/built-for-violence)      |
+| ♦ 8th-Level Wild Nature Features ♦ |                                                                                                            |
+|------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Wild Nature                        | Feature                                                                                                    |
+| Guardian                           | [Reflexes Perfected](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/reflexes-perfected)           |
+| Prowler                            | [Born to Run](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/born-to-run)                         |
+| Punisher                           | [Built for Violence](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/built-for-violence)           |
 | Spark                              | [Nature Will Not Harm Us](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-8/nature-will-not-harm-us) |
 
 <!-- @type: feature | @id: born-to-run | @level: 8 | @subclass: prowler -->
