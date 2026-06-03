@@ -987,3 +987,35 @@ func TestBuildBookNavAndIndexes(t *testing.T) {
 		t.Errorf("beastheart index not in source order:\n%s", beastIdx)
 	}
 }
+
+func TestBuildGroupByBookRewritesIntraBookLinks(t *testing.T) {
+	dir := t.TempDir()
+	src := filepath.Join(dir, "src")
+	docs := filepath.Join(dir, "docs")
+	// the-basics links to a sibling chapter (downtime-projects) the way the ETL
+	// emits it for the flat chapter/ layout: a bare basename.
+	writeFile(t, filepath.Join(src, "chapter", "the-basics.md"),
+		"---\nname: The Basics\nscc: mcdm.heroes.v1/chapter/the-basics\ntype: chapter\norder: 1\n---\n\nSee [downtime](downtime-projects.md).\n")
+	writeFile(t, filepath.Join(src, "chapter", "downtime-projects.md"),
+		"---\nname: Downtime Projects\nscc: mcdm.heroes.v1/chapter/downtime-projects\ntype: chapter\norder: 2\n---\n\nDowntime.\n")
+	cfg := &Config{
+		SourceDirs: []string{src},
+		DocsDir:    docs,
+		Books:      []BookConfig{{Key: "mcdm.heroes.v1", Folder: "heroes", Label: "Draw Steel Heroes", Order: 1}},
+		Sections:   []SectionConfig{{Name: "Read", Include: []string{"chapter/"}, GroupByBook: true}},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("build: %v", err)
+	}
+	data, err := os.ReadFile(filepath.Join(docs, "Read", "heroes", "the-basics.md"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Link must resolve within the same book folder, NOT to Read/chapter/.
+	if strings.Contains(string(data), "chapter/downtime-projects.md") {
+		t.Errorf("link still points to old chapter/ path:\n%s", data)
+	}
+	if !strings.Contains(string(data), "(downtime-projects.md)") {
+		t.Errorf("expected sibling link (downtime-projects.md), got:\n%s", data)
+	}
+}

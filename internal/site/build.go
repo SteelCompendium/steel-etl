@@ -667,6 +667,14 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, a
 	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
 	destDir := filepath.ToSlash(filepath.Dir(filepath.Join(sectionName, destRelPath)))
 
+	// Book folder of the current page (first component of destRelPath), used to
+	// resolve links whose target lives in a GroupByBook section. Intra-section
+	// cross-references stay within the same book, so the target shares this folder.
+	bookFolder := ""
+	if dr := filepath.ToSlash(destRelPath); strings.Contains(dr, "/") {
+		bookFolder = dr[:strings.Index(dr, "/")]
+	}
+
 	return mdRelLinkRe.ReplaceAllStringFunc(content, func(match string) string {
 		sub := mdRelLinkRe.FindStringSubmatch(match)
 		if len(sub) < 3 {
@@ -678,9 +686,11 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, a
 		rootRel := filepath.ToSlash(filepath.Clean(filepath.Join(srcDir, linkPath)))
 
 		targetSection := ""
+		targetGroupByBook := false
 		for _, section := range allSections {
 			if matchesSection(rootRel, section) {
 				targetSection = section.Name
+				targetGroupByBook = section.GroupByBook
 				break
 			}
 		}
@@ -689,7 +699,14 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName string, a
 			return match
 		}
 
-		targetFull := filepath.ToSlash(filepath.Join(targetSection, rootRel))
+		// GroupByBook sections flatten SCC type paths (e.g. "chapter/x.md") into
+		// per-book folders ("<book>/x.md"), so resolve the target there.
+		var targetFull string
+		if targetGroupByBook {
+			targetFull = filepath.ToSlash(filepath.Join(targetSection, bookFolder, filepath.Base(rootRel)))
+		} else {
+			targetFull = filepath.ToSlash(filepath.Join(targetSection, rootRel))
+		}
 		newRel, err := filepath.Rel(destDir, targetFull)
 		if err != nil {
 			return match
