@@ -123,6 +123,9 @@ type sourceEntry struct {
 }
 
 func walkSourceDir(dir string) ([]sourceEntry, error) {
+	if _, err := os.Stat(dir); os.IsNotExist(err) {
+		return nil, nil // a configured book may not have generated output yet
+	}
 	var entries []sourceEntry
 	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -239,13 +242,15 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 	books := append([]BookConfig(nil), cfg.Books...)
 	sort.SliceStable(books, func(i, j int) bool { return books[i].Order < books[j].Order })
 
-	var present []BookConfig
+	// Every configured book is shown (in Book.Order). A book with no generated
+	// chapters still gets a folder + placeholder index so it appears in the tab.
+	present := books
 	for _, b := range books {
 		bookDir := filepath.Join(sectionDir, b.Folder)
-		if _, err := os.Stat(bookDir); err != nil {
-			continue // no chapters for this book
+		if err := os.MkdirAll(bookDir, 0755); err != nil {
+			errs = append(errs, fmt.Sprintf("book dir %s: %v", b.Folder, err))
+			continue
 		}
-		present = append(present, b)
 
 		// Collect chapter files (skip index.md) with name + order.
 		var chapters []chapterRef
@@ -286,13 +291,19 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 			navCount++
 		}
 
-		// Per-book index.md (ordered list of chapters).
+		// Per-book index.md: ordered chapter list, or a placeholder when the
+		// book has no chapters yet.
 		var ib strings.Builder
-		ib.WriteString("# " + b.Label + "\n\n---\n\n<div class=\"browse-index\" markdown>\n\n")
-		for _, c := range chapters {
-			ib.WriteString("- [" + c.name + "](" + c.file + ")\n")
+		ib.WriteString("# " + b.Label + "\n\n---\n\n")
+		if len(chapters) == 0 {
+			ib.WriteString("*Chapters for this book haven't been added to the compendium yet.*\n")
+		} else {
+			ib.WriteString("<div class=\"browse-index\" markdown>\n\n")
+			for _, c := range chapters {
+				ib.WriteString("- [" + c.name + "](" + c.file + ")\n")
+			}
+			ib.WriteString("\n</div>\n")
 		}
-		ib.WriteString("\n</div>\n")
 		if err := os.WriteFile(filepath.Join(bookDir, "index.md"), []byte(ib.String()), 0644); err != nil {
 			errs = append(errs, fmt.Sprintf("book index %s: %v", b.Folder, err))
 		}

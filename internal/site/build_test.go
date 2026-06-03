@@ -1044,3 +1044,44 @@ func TestRewriteSectionLinks_GroupByBookTarget(t *testing.T) {
 		t.Errorf("Read intra-book link:\n  got  %q\n  want %q", got2, want2)
 	}
 }
+
+func TestBuildBookPlaceholderForEmptyBook(t *testing.T) {
+	dir := t.TempDir()
+	src := filepath.Join(dir, "src")
+	docs := filepath.Join(dir, "docs")
+	// Only heroes has a chapter; bestiary is configured but has no content.
+	writeFile(t, filepath.Join(src, "chapter", "introduction.md"),
+		"---\nname: Introduction\nscc: mcdm.heroes.v1/chapter/introduction\ntype: chapter\norder: 0\n---\n\nHero intro.\n")
+	cfg := &Config{
+		SourceDirs: []string{src},
+		DocsDir:    docs,
+		Books: []BookConfig{
+			{Key: "mcdm.heroes.v1", Folder: "heroes", Label: "Heroes", Order: 1},
+			{Key: "mcdm.monsters.v1", Folder: "bestiary", Label: "Bestiary", Order: 2},
+		},
+		Sections: []SectionConfig{{Name: "Read", Title: "Books", Include: []string{"chapter/"}, GroupByBook: true}},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("build: %v", err)
+	}
+	// Empty book still gets a folder + placeholder index + nav.
+	idx, err := os.ReadFile(filepath.Join(docs, "Read", "bestiary", "index.md"))
+	if err != nil {
+		t.Fatalf("expected bestiary placeholder index: %v", err)
+	}
+	if !strings.Contains(string(idx), "Bestiary") {
+		t.Errorf("placeholder index missing label:\n%s", idx)
+	}
+	if _, err := os.Stat(filepath.Join(docs, "Read", "bestiary", ".nav.yml")); err != nil {
+		t.Errorf("expected bestiary .nav.yml: %v", err)
+	}
+	// Landing + section nav include the empty book, after heroes.
+	readNav, _ := os.ReadFile(filepath.Join(docs, "Read", ".nav.yml"))
+	if h, b := strings.Index(string(readNav), "heroes"), strings.Index(string(readNav), "bestiary"); h < 0 || b < 0 || h > b {
+		t.Errorf("Read nav missing/ordered wrong:\n%s", readNav)
+	}
+	landing, _ := os.ReadFile(filepath.Join(docs, "Read", "index.md"))
+	if !strings.Contains(string(landing), "bestiary/") {
+		t.Errorf("landing index missing bestiary:\n%s", landing)
+	}
+}
