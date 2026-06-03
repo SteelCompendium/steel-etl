@@ -321,7 +321,8 @@ The Beastheart is an example of a master class in *Draw Steel*. Master classes a
 
 If you're new to *Draw Steel*, we recommend checking out *[The Delian Tomb](https://shop.mcdmproductions.com/products/the-delian-tomb-pdf)* starter adventure, which includes a step-by-step tutorial on how to play the game and breaks down all the working parts of a hero. Save Broadhurst first, then hurry back here!
 
-| ◆ Beastheart Advancement ◆ |                                                                                                                                                                         |                           |                       |
+###### Beastheart Advancement Table
+
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
 | Level | Features | Abilities | Wild Nature Abilities |
 | 1st | [Wild Nature](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature), [Companion](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/companion), [Heart of the Beast](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/heart-of-the-beast), [Feral Strike](scc:mcdm.beastheart.v1/feature.ability.beastheart.level-1/feral-strike), [Ferocity](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/ferocity), [Rampage](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/rampage), [Wild Nature Maneuver](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-maneuver), [Wild Nature Triggered Action](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/wild-nature-triggered-action), [Kit](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/kit), [Beastheart Abilities](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-1/beastheart-abilities) | Signature, 3, 5 | — |
