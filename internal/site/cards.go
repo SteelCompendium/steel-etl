@@ -11,6 +11,11 @@ package site
 // page body for blurbs / the kit signature ability — so NO change to the shared
 // data repos. Styled by docs/stylesheets/steel-redesign.css.
 //
+// Two card shapes:
+//   - grid cards  (default): multi-column .sc-cards grid of stat-cards.
+//   - WIDE cards  (complication, perk): full-width editorial rows for types
+//     with hundreds of entries and longer text — .sc-cards--wide.
+//
 // Wire-up: at the very top of buildIndexContent() in build.go, add:
 //
 //	if cards, ok := buildCardsContent(dir, dirName, files, subdirs); ok {
@@ -36,6 +41,12 @@ var richCardTypes = map[string]bool{
 	"movement": true, "negotiation": true,
 }
 
+// wideCardTypes render as full-width editorial rows (.sc-cards--wide) instead of
+// the multi-column grid — used for the high-count, text-led types.
+var wideCardTypes = map[string]bool{
+	"complication": true, "perk": true,
+}
+
 // typeIcon maps a type to its crest icon for the simple (name + blurb) types.
 var typeIcon = map[string]string{
 	"condition": "zap", "skill": "star", "movement": "move", "negotiation": "speech",
@@ -49,8 +60,13 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	}
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 
+	wrapper := "sc-cards"
+	if wideCardTypes[dirName] {
+		wrapper = "sc-cards sc-cards--wide"
+	}
+
 	var sb strings.Builder
-	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n<div class=\"sc-cards\">\n")
+	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n<div class=\"" + wrapper + "\">\n")
 	for _, f := range files {
 		data, err := os.ReadFile(filepath.Join(dir, f))
 		if err != nil {
@@ -92,7 +108,11 @@ func cardFor(t, fm, body, file, name string) string {
 		if icon == "" {
 			icon = "scroll"
 		}
-		return card(file, icon, titleCase(t), name, blurbBlock(bodyBlurb(body, 96)))
+		max := 96
+		if t == "skill" { // skills are short — give them room so they don't ellipsize
+			max = 220
+		}
+		return card(file, icon, titleCase(t), name, blurbBlock(bodyBlurb(body, max)))
 	}
 }
 
@@ -102,15 +122,11 @@ func kitCard(fm, body, file, name string) string {
 	stam := bonusShort(parseFrontmatterField(fm, "stamina_bonus"))
 	spd := orZero(parseFrontmatterField(fm, "speed_bonus"))
 	stab := orZero(parseFrontmatterField(fm, "stability_bonus"))
-	armor, weapon := parseEquip(parseFrontmatterField(fm, "equipment_text"))
-	melee := strings.TrimSpace(parseFrontmatterField(fm, "melee_damage_bonus"))
-	ranged := strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus"))
-	dmgVal, dmgLabel := melee, "Melee Dmg"
-	if melee == "" && ranged != "" {
-		dmgVal, dmgLabel = ranged, "Ranged Dmg"
-	} else if melee == "" {
-		dmgVal = "\u2014"
-	}
+	dis := orZero(firstField(fm, "disengage_bonus", "disengage"))
+	armor, weapon := parseEquip(fm, parseFrontmatterField(fm, "equipment_text"))
+	melee := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_damage_bonus")))
+	ranged := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus")))
+	dist := orDash(firstField(fm, "distance_bonus", "ranged_distance_bonus", "melee_distance_bonus"))
 	sigName, sigType, keywords := signatureFromBody(body)
 	kind, icon := "Martial", "shield"
 	switch {
@@ -120,12 +136,13 @@ func kitCard(fm, body, file, name string) string {
 		kind, icon = "Magic", "wand"
 	}
 
-	inner := lineBlock("", html.EscapeString(armor)+" armor &middot; "+html.EscapeString(weapon)+" weapon")
-	inner += statsBlock([][3]string{{stam, "Stamina", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dmgVal, dmgLabel, "is-dmg"}})
+	inner := "  <div class=\"sc-card__equip\">" + html.EscapeString(armor) + " &middot; " + html.EscapeString(weapon) + "</div>\n"
+	// Row 1 — defensive / movement stats.
+	inner += statsBlock([][3]string{{stam, "Stamina", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dis, "Disengage", ""}})
+	// Row 2 — offensive stats. Melee & ranged can both be populated.
+	inner += statsBlock([][3]string{{melee, "Melee Dmg", "is-dmg"}, {ranged, "Ranged Dmg", "is-dmg"}, {dist, "Distance", ""}})
 	if sigName != "" {
-		inner += fmt.Sprintf("  <div class=\"sc-card__sig\"><span class=\"sc-card__dot\" data-type=\"%s\"></span>"+
-			"<span class=\"sc-card__sig-label\">Signature</span>"+
-			"<span class=\"sc-card__sig-name\">%s</span></div>\n", sigType, html.EscapeString(sigName))
+		inner += sigBlock(sigType, sigName)
 	}
 	return card(file, icon, kind+" Kit", name, inner)
 }
@@ -138,6 +155,11 @@ func classCard(fm, body, file, name string) string {
 	if chars := parseFrontmatterList(fm, "primary_characteristics"); len(chars) > 0 {
 		inner += tagsBlock(chars)
 	}
+	// Light primer — a clamped few-sentence taste of the class (CSS line-clamps it
+	// to ~4 lines so it can't bloat the card).
+	if p := classPrimer(body); p != "" {
+		inner += "  <div class=\"sc-card__primer\">" + html.EscapeString(p) + "</div>\n"
+	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
@@ -145,29 +167,44 @@ func classCard(fm, body, file, name string) string {
 }
 
 func ancestryCard(fm, body, file, name string) string {
+	inner := ""
 	if t := parseFrontmatterField(fm, "signature_trait_name"); t != "" {
-		return card(file, "users", "Ancestry", name, lineBlock("Signature Trait", "<span class=\"hl\">"+html.EscapeString(t)+"</span>"))
+		inner += lineBlock("Signature Trait", "<span class=\"hl\">"+html.EscapeString(t)+"</span>")
 	}
-	return card(file, "users", "Ancestry", name, blurbBlock(bodyBlurb(body, 96)))
-}
-
-func careerCard(fm, body, file, name string) string {
-	var stats [][3]string
-	if v := parseFrontmatterField(fm, "renown"); v != "" {
-		stats = append(stats, [3]string{v, "Renown", ""})
-	}
-	if v := parseFrontmatterField(fm, "wealth"); v != "" {
-		stats = append(stats, [3]string{v, "Wealth", ""})
-	}
-	if v := parseFrontmatterField(fm, "project_points"); v != "" {
-		stats = append(stats, [3]string{v, "Project Pts", ""})
-	}
-	inner := statsBlock(stats)
-	if v := parseFrontmatterField(fm, "perk"); v != "" {
-		inner += lineBlock("Perk", html.EscapeString(v))
+	if f := firstProse(body); f != "" {
+		inner += flavorDiv(f, 240)
 	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
+	}
+	return card(file, "users", "Ancestry", name, inner)
+}
+
+func careerCard(fm, body, file, name string) string {
+	inner := ""
+	// First line of flavor (minus the "In defining your career…" boilerplate).
+	if f := careerFlavor(body); f != "" {
+		inner += flavorDiv(f, 200)
+	}
+	// Four standard numeric fields as stat boxes.
+	lang := ""
+	if list := parseFrontmatterList(fm, "languages"); len(list) > 0 {
+		lang = fmt.Sprintf("%d", len(list))
+	} else {
+		lang = orDash(parseFrontmatterField(fm, "languages"))
+	}
+	inner += statsBlock([][3]string{
+		{lang, "Languages", ""},
+		{orDash(parseFrontmatterField(fm, "project_points")), "Project Pts", ""},
+		{orDash(parseFrontmatterField(fm, "renown")), "Renown", ""},
+		{orDash(parseFrontmatterField(fm, "wealth")), "Wealth", ""},
+	})
+	// Skills & Perk are long / non-standard — render as wrapping text lines.
+	if sk := joinField(fm, "skills"); sk != "" {
+		inner += lineBlock("Skills", html.EscapeString(sk))
+	}
+	if pk := strings.TrimSpace(parseFrontmatterField(fm, "perk")); pk != "" {
+		inner += lineBlock("Perk", html.EscapeString(pk))
 	}
 	return card(file, "briefcase", "Career", name, inner)
 }
@@ -202,11 +239,13 @@ func perkCard(fm, body, file, name string) string {
 		label = g + " Perk"
 	}
 	inner := ""
-	if v := parseFrontmatterField(fm, "prerequisites"); v != "" {
-		inner += lineBlock("Prerequisite", html.EscapeString(v))
+	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
+		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
 	}
-	inner += blurbBlock(bodyBlurb(body, 90))
-	return card(file, "sparkles", label, name, inner)
+	if b := bodyBlurb(body, 240); b != "" {
+		inner += flavorDiv(b, 0)
+	}
+	return wideCard(file, "sparkles", label, name, inner)
 }
 
 func titleCard(fm, body, file, name string) string {
@@ -214,33 +253,27 @@ func titleCard(fm, body, file, name string) string {
 	if e := parseFrontmatterField(fm, "echelon"); e != "" {
 		label = "Echelon " + e
 	}
-	blurb := parseFrontmatterField(fm, "effect")
-	if blurb == "" {
-		if bs := parseFrontmatterList(fm, "benefits"); len(bs) > 0 {
-			blurb = bs[0]
-		}
+	inner := ""
+	// First paragraph is flavor — shown in full (no truncation).
+	if f := firstProse(body); f != "" {
+		inner += flavorDiv(f, 0)
 	}
-	if blurb == "" {
-		blurb = bodyBlurb(body, 96)
+	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
+		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
 	}
-	return card(file, "crown", label, name, blurbBlock(truncate(stripMD(blurb), 96)))
+	return card(file, "crown", label, name, inner)
 }
 
 func complicationCard(fm, body, file, name string) string {
-	ben := parseFrontmatterField(fm, "benefit")
-	draw := parseFrontmatterField(fm, "drawback")
-	inner := "  <div class=\"sc-card__bd\">\n"
-	if ben != "" {
-		inner += "    <div class=\"is-benefit\"><b>Benefit</b>" + html.EscapeString(truncate(stripMD(ben), 96)) + "</div>\n"
+	// Take the 1–2 line description/flavor that sits ABOVE the benefit/drawback.
+	flavor := complicationFlavor(body)
+	if flavor == "" {
+		// Combined "Benefit and Drawback:" entries have no lead-in — fall back to
+		// the benefit (or drawback) text so the card isn't empty.
+		flavor = stripMD(firstField(fm, "benefit", "drawback"))
 	}
-	if draw != "" {
-		inner += "    <div class=\"is-drawback\"><b>Drawback</b>" + html.EscapeString(truncate(stripMD(draw), 96)) + "</div>\n"
-	}
-	inner += "  </div>\n"
-	if ben == "" && draw == "" {
-		inner = blurbBlock(bodyBlurb(body, 96))
-	}
-	return card(file, "alert", "Complication", name, inner)
+	inner := flavorDiv(flavor, 240)
+	return wideCard(file, "alert", "Complication", name, inner)
 }
 
 func cultureCard(fm, body, file, name string) string {
@@ -251,6 +284,9 @@ func cultureCard(fm, body, file, name string) string {
 		}
 	}
 	inner := tagsBlock(tags)
+	if so := joinField(fm, "skill_options"); so != "" {
+		inner += lineBlock("Skill Options", html.EscapeString(so))
+	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
@@ -270,6 +306,25 @@ func card(file, icon, typeLabel, name, inner string) string {
 	return sb.String()
 }
 
+// wideCard is the full-width editorial row: crest · name column · body column.
+// inner is raw HTML (already escaped where needed).
+func wideCard(file, icon, typeLabel, name, inner string) string {
+	var sb strings.Builder
+	fmt.Fprintf(&sb, "<a class=\"sc-card sc-card--wide sc-fil\" href=\"%s\">\n", html.EscapeString(file))
+	fmt.Fprintf(&sb, "  <span class=\"sc-crest lg\"><span>%s</span></span>\n", crestSVG(icon))
+	fmt.Fprintf(&sb, "  <div class=\"sc-card__namecol\"><div class=\"sc-card__type\">%s</div>"+
+		"<div class=\"sc-card__name\">%s</div></div>\n", html.EscapeString(typeLabel), html.EscapeString(name))
+	fmt.Fprintf(&sb, "  <div class=\"sc-card__body\">%s</div>\n", inner)
+	sb.WriteString("</a>\n")
+	return sb.String()
+}
+
+func sigBlock(sigType, sigName string) string {
+	return fmt.Sprintf("  <div class=\"sc-card__sig\"><span class=\"sc-card__dot\" data-type=\"%s\"></span>"+
+		"<span class=\"sc-card__sig-label\">Signature</span>"+
+		"<span class=\"sc-card__sig-name\">%s</span></div>\n", sigType, html.EscapeString(sigName))
+}
+
 // statsBlock renders an N-column stat grid. Each entry is {value, label, extraClass}.
 func statsBlock(stats [][3]string) string {
 	if len(stats) == 0 {
@@ -282,9 +337,9 @@ func statsBlock(stats [][3]string) string {
 		style := ""
 		if s[2] != "" {
 			cls += " " + s[2]
-			if len(s[0]) > 4 {
-				style = " style=\"font-size:.72rem\""
-			}
+		}
+		if len([]rune(s[0])) > 4 { // long values (e.g. +1/+1/+1) need a smaller face
+			style = " style=\"font-size:.72rem\""
 		}
 		fmt.Fprintf(&sb, "    <div class=\"%s\"><div class=\"v\"%s>%s</div><div class=\"l\">%s</div></div>\n",
 			cls, style, html.EscapeString(s[0]), html.EscapeString(s[1]))
@@ -322,6 +377,18 @@ func blurbBlock(text string) string {
 	return "  <div class=\"sc-card__blurb\">" + html.EscapeString(text) + "</div>\n"
 }
 
+// flavorDiv wraps prose flavor. max<=0 → no truncation.
+func flavorDiv(text string, max int) string {
+	t := strings.TrimSpace(text)
+	if t == "" {
+		return ""
+	}
+	if max > 0 {
+		t = truncate(t, max)
+	}
+	return "  <div class=\"sc-card__flavor\">" + html.EscapeString(t) + "</div>\n"
+}
+
 func crestSVG(icon string) string {
 	p := iconPaths[icon]
 	if p == "" {
@@ -350,20 +417,66 @@ func orZero(s string) string {
 	return s
 }
 
+func orDash(s string) string {
+	if s = strings.TrimSpace(s); s == "" {
+		return "\u2014"
+	}
+	return s
+}
+
+// firstField returns the first non-empty frontmatter field among keys.
+func firstField(fm string, keys ...string) string {
+	for _, k := range keys {
+		if v := strings.TrimSpace(parseFrontmatterField(fm, k)); v != "" {
+			return v
+		}
+	}
+	return ""
+}
+
+// joinField returns a field as a string — joining YAML lists with ", ".
+func joinField(fm, key string) string {
+	if list := parseFrontmatterList(fm, key); len(list) > 0 {
+		return strings.Join(list, ", ")
+	}
+	return strings.TrimSpace(parseFrontmatterField(fm, key))
+}
+
 var (
-	reArmor  = regexp.MustCompile(`(?i)wear\s+(?:an?\s+)?([a-z]+)\s+armor`)
-	reWeapon = regexp.MustCompile(`(?i)wield\s+(?:an?\s+)?([a-z]+)\s+weapon`)
+	reArmor       = regexp.MustCompile(`(?i)wear(?:s|ing)?\s+(?:an?\s+)?([a-z]+)\s+armor`)
+	reWeaponTyped = regexp.MustCompile(`(?i)wield(?:s|ing)?\s+(?:an?\s+)?([a-z]+)\s+weapon`)
+	reWeaponBare  = regexp.MustCompile(`(?i)wield(?:s|ing)?\s+(?:an?\s+)?([a-z]+)`)
 )
 
-func parseEquip(text string) (armor, weapon string) {
+// parseEquip resolves the armor / weapon descriptors for a kit. Explicit
+// frontmatter (armor:/weapon:) wins; otherwise it parses equipment_text. The
+// bare-weapon fallback handles specific weapons ("…wield a bow." → "Bow") that
+// the older "<size> weapon" regex missed.
+func parseEquip(fm, text string) (armor, weapon string) {
 	armor, weapon = "\u2014", "\u2014"
-	if m := reArmor.FindStringSubmatch(text); m != nil {
-		armor = titleCase(strings.ToLower(m[1]))
+
+	if a := strings.TrimSpace(parseFrontmatterField(fm, "armor")); a != "" {
+		armor = withWord(titleCase(strings.ToLower(a)), "armor")
+	} else if m := reArmor.FindStringSubmatch(text); m != nil {
+		armor = titleCase(strings.ToLower(m[1])) + " armor"
 	}
-	if m := reWeapon.FindStringSubmatch(text); m != nil {
+
+	if w := strings.TrimSpace(parseFrontmatterField(fm, "weapon")); w != "" {
+		weapon = titleCase(strings.ToLower(w))
+	} else if m := reWeaponTyped.FindStringSubmatch(text); m != nil {
+		weapon = titleCase(strings.ToLower(m[1])) + " weapon"
+	} else if m := reWeaponBare.FindStringSubmatch(text); m != nil {
 		weapon = titleCase(strings.ToLower(m[1]))
 	}
 	return armor, weapon
+}
+
+// withWord appends a trailing word if not already present (e.g. "Light" → "Light armor").
+func withWord(s, word string) string {
+	if strings.Contains(strings.ToLower(s), word) {
+		return s
+	}
+	return s + " " + word
 }
 
 // parseFrontmatterList reads a YAML list (block "- item" lines, or inline
@@ -446,25 +559,98 @@ func stripMD(s string) string {
 	return strings.TrimSpace(s)
 }
 
-// bodyBlurb returns the first prose sentence/paragraph of a page body,
-// stripped of markdown and truncated.
-func bodyBlurb(body string, max int) string {
+// isProse reports whether a trimmed line is body prose (not heading/table/list/rule).
+func isProse(t string) bool {
+	if t == "" || t == "---" {
+		return false
+	}
+	return !strings.HasPrefix(t, "#") && !strings.HasPrefix(t, "|") &&
+		!strings.HasPrefix(t, ">") && !strings.HasPrefix(t, "- ")
+}
+
+// firstProse returns the first prose paragraph of a page body, markdown-stripped.
+func firstProse(body string) string {
 	for _, raw := range strings.Split(body, "\n") {
 		t := strings.TrimSpace(raw)
-		if t == "" || t == "---" || strings.HasPrefix(t, "#") ||
-			strings.HasPrefix(t, "|") || strings.HasPrefix(t, ">") || strings.HasPrefix(t, "- ") {
+		if !isProse(t) {
 			continue
 		}
 		if s := stripMD(t); s != "" {
-			return truncate(s, max)
+			return s
 		}
 	}
 	return ""
 }
 
+// careerFlavor returns the first flavor line, skipping the "In defining your
+// career…" boilerplate the books prepend.
+func careerFlavor(body string) string {
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if !isProse(t) {
+			continue
+		}
+		if strings.HasPrefix(strings.ToLower(t), "in defining your career") {
+			continue
+		}
+		if s := stripMD(t); s != "" {
+			return s
+		}
+	}
+	return ""
+}
+
+// complicationFlavor returns the description/flavor that sits above the
+// Benefit/Drawback block (skipping those bolded lines).
+func complicationFlavor(body string) string {
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if !isProse(t) {
+			continue
+		}
+		l := strings.ToLower(t)
+		if strings.HasPrefix(l, "**benefit") || strings.HasPrefix(l, "**drawback") ||
+			strings.HasPrefix(l, "benefit:") || strings.HasPrefix(l, "drawback:") {
+			continue
+		}
+		if s := stripMD(t); s != "" {
+			return s
+		}
+	}
+	return ""
+}
+
+// classPrimer collects the first one or two prose paragraphs (capped) for a
+// light "what does this class feel like" taste; CSS clamps it to a few lines.
+func classPrimer(body string) string {
+	var parts []string
+	total := 0
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if !isProse(t) {
+			continue
+		}
+		s := stripMD(t)
+		if s == "" {
+			continue
+		}
+		parts = append(parts, s)
+		total += len([]rune(s))
+		if total > 300 || len(parts) >= 2 {
+			break
+		}
+	}
+	return truncate(strings.Join(parts, " "), 360)
+}
+
+// bodyBlurb returns the first prose sentence/paragraph, truncated.
+func bodyBlurb(body string, max int) string {
+	return truncate(firstProse(body), max)
+}
+
 func truncate(s string, max int) string {
 	r := []rune(strings.TrimSpace(s))
-	if len(r) <= max {
+	if max <= 0 || len(r) <= max {
 		return string(r)
 	}
 	return strings.TrimSpace(string(r[:max])) + "\u2026"
