@@ -43,7 +43,7 @@ func TestRenderSubtree_NormalizesHeadingsAndOrder(t *testing.T) {
 		},
 	}
 
-	got := RenderSubtree(class)
+	got := RenderSubtree(class, nil)
 
 	if !strings.Contains(got, "Demons fear you.") {
 		t.Error("own body missing")
@@ -83,7 +83,7 @@ func TestRenderSubtree_LeafEqualsOwnBody(t *testing.T) {
 		Annotation:   map[string]string{"type": "ability"},
 		BodySource:   "> *You channel power.*\n> \n> **Power Roll + Presence:**",
 	}
-	got := RenderSubtree(ability)
+	got := RenderSubtree(ability, nil)
 	if strings.Contains(got, "> *You channel") {
 		t.Error("leaf ability should be un-blockquoted")
 	}
@@ -108,7 +108,7 @@ func TestRenderSubtree_ClampsShallowChildToH1(t *testing.T) {
 			{Heading: "Shallow Child", HeadingLevel: 2, BodySource: "child body"},
 		},
 	}
-	got := RenderSubtree(root) // must not panic
+	got := RenderSubtree(root, nil) // must not panic
 	if !strings.Contains(got, "# Shallow Child") {
 		t.Error("shallow child should clamp to a valid heading (H1)")
 	}
@@ -128,7 +128,7 @@ func TestRenderSubtree_CapsDeepNestingAtH6(t *testing.T) {
 			{Heading: "L8", HeadingLevel: 9, BodySource: "deep body"},
 		},
 	}
-	got := RenderSubtree(root)
+	got := RenderSubtree(root, nil)
 	if !strings.Contains(got, "###### L8") {
 		t.Error("deeply nested child should cap at H6")
 	}
@@ -144,11 +144,57 @@ func TestRenderSubtree_ChapterPreservesSourceLevels(t *testing.T) {
 			{Heading: "Censor", HeadingLevel: 2, Annotation: map[string]string{"type": "class", "id": "censor"}, BodySource: "Demons fear you."},
 		},
 	}
-	got := RenderSubtree(chapter)
+	got := RenderSubtree(chapter, nil)
 	if !strings.Contains(got, "## Censor") {
 		t.Error("class under chapter should be H2")
 	}
 	if !strings.Contains(got, "How classes work.") {
 		t.Error("chapter own body missing")
+	}
+}
+
+func TestRenderSubtree_EmitsDataSCCOnCodedHeadings(t *testing.T) {
+	ability := &parser.Section{Heading: "Gouge", HeadingLevel: 3, Annotation: map[string]string{"type": "ability"}, BodySource: "Stab them."}
+	structural := &parser.Section{Heading: "Heroic Resource", HeadingLevel: 3, BodySource: "You have Ferocity."}
+	class := &parser.Section{
+		Heading:      "Fury",
+		HeadingLevel: 2,
+		Annotation:   map[string]string{"type": "class", "id": "fury"},
+		BodySource:   "You rage.",
+		Children:     []*parser.Section{ability, structural},
+	}
+
+	scc := map[*parser.Section]string{
+		ability: "mcdm.heroes.v1/feature.ability.fury.level-1/gouge",
+		// structural intentionally absent: no SCC code
+	}
+
+	got := RenderSubtree(class, scc)
+
+	if !strings.Contains(got, `## Gouge {data-scc="mcdm.heroes.v1/feature.ability.fury.level-1/gouge"}`) {
+		t.Errorf("coded heading missing data-scc marker:\n%s", got)
+	}
+	if strings.Contains(got, "Heroic Resource {data-scc") {
+		t.Error("structural heading (no code) must not get a data-scc marker")
+	}
+	if !strings.Contains(got, "## Heroic Resource\n") {
+		t.Errorf("structural heading should render as a plain heading:\n%s", got)
+	}
+}
+
+func TestRenderSubtree_NilMapEmitsNoMarkers(t *testing.T) {
+	class := &parser.Section{
+		Heading:      "Fury",
+		HeadingLevel: 2,
+		Annotation:   map[string]string{"type": "class", "id": "fury"},
+		BodySource:   "You rage.",
+		Children:     []*parser.Section{{Heading: "Gouge", HeadingLevel: 3, Annotation: map[string]string{"type": "ability"}, BodySource: "Stab."}},
+	}
+	got := RenderSubtree(class, nil)
+	if strings.Contains(got, "data-scc") {
+		t.Errorf("nil map must emit no data-scc markers:\n%s", got)
+	}
+	if !strings.Contains(got, "## Gouge") {
+		t.Error("heading should still render with a nil map")
 	}
 }
