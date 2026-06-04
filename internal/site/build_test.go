@@ -195,11 +195,16 @@ func TestBuild_GeneratesIndexPages(t *testing.T) {
 	if !strings.Contains(content, "# Classes") {
 		t.Error("class index missing title")
 	}
-	if !strings.Contains(content, "[Fury](fury.md)") {
-		t.Error("class index missing Fury link")
+	// `class` is a rich-card index type (see richCardTypes in cards.go): entries
+	// render as stat-cards linking to each page, not plain markdown links.
+	if !strings.Contains(content, `<div class="sc-cards">`) {
+		t.Error("class index should render as a card grid")
 	}
-	if !strings.Contains(content, "[Shadow](shadow.md)") {
-		t.Error("class index missing Shadow link")
+	if !strings.Contains(content, `href="fury.md"`) || !strings.Contains(content, `<div class="sc-card__name">Fury</div>`) {
+		t.Error("class index missing Fury card")
+	}
+	if !strings.Contains(content, `href="shadow.md"`) || !strings.Contains(content, `<div class="sc-card__name">Shadow</div>`) {
+		t.Error("class index missing Shadow card")
 	}
 
 	// Verify feature index lists subdirectories
