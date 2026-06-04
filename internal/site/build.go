@@ -910,6 +910,10 @@ func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
 // dir is the absolute directory; used to read frontmatter "name" fields from
 // the listed files so the index labels match the pages' actual titles.
 func buildIndexContent(dir, dirName string, files, subdirs []string) string {
+	// Rich stat-cards for supported index types (kit, …); falls back below.
+	if cards, ok := buildCardsContent(dir, dirName, files, subdirs); ok {
+		return cards
+	}
 	title := dirToTitle(dirName)
 
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
