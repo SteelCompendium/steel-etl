@@ -23,6 +23,7 @@ package site
 //	}
 
 import (
+	"bytes"
 	"fmt"
 	"html"
 	"os"
@@ -30,6 +31,8 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+
+	"github.com/yuin/goldmark"
 )
 
 // richCardTypes lists index directories rendered as stat-cards. Only flat type
@@ -201,10 +204,10 @@ func careerCard(fm, body, file, name string) string {
 	})
 	// Skills & Perk are long / non-standard — render as wrapping text lines.
 	if sk := joinField(fm, "skills"); sk != "" {
-		inner += lineBlock("Skills", html.EscapeString(sk))
+		inner += lineBlock("Skills", inlineMD(sk))
 	}
 	if pk := strings.TrimSpace(parseFrontmatterField(fm, "perk")); pk != "" {
-		inner += lineBlock("Perk", html.EscapeString(pk))
+		inner += lineBlock("Perk", inlineMD(pk))
 	}
 	return card(file, "briefcase", "Career", name, inner)
 }
@@ -285,7 +288,7 @@ func cultureCard(fm, body, file, name string) string {
 	}
 	inner := tagsBlock(tags)
 	if so := joinField(fm, "skill_options"); so != "" {
-		inner += lineBlock("Skill Options", html.EscapeString(so))
+		inner += lineBlock("Skill Options", inlineMD(so))
 	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
@@ -295,14 +298,24 @@ func cultureCard(fm, body, file, name string) string {
 
 // ── shared builders ─────────────────────────────────────────────────────────
 
+// card and wideCard use the "stretched link" pattern: the card is a <div>, and a
+// single absolutely-positioned overlay <a class="sc-card__link"> is the whole-card
+// click target. Inner content (incl. the markdown links inlineMD renders) stays in
+// normal flow and sits above the overlay via CSS z-index, so those links remain
+// independently clickable. A bare <a> wrapping the card would make any inner link an
+// invalid <a>-in-<a> that browsers split apart, fragmenting the card. The overlay
+// gets an aria-label so it announces the card name. See docs/stylesheets/steel-redesign.css.
+
 func card(file, icon, typeLabel, name, inner string) string {
 	var sb strings.Builder
-	fmt.Fprintf(&sb, "<a class=\"sc-card sc-fil\" href=\"%s\">\n", html.EscapeString(file))
+	fmt.Fprintf(&sb, "<div class=\"sc-card sc-fil\">\n")
+	fmt.Fprintf(&sb, "  <a class=\"sc-card__link\" href=\"%s\" aria-label=\"%s\"></a>\n",
+		html.EscapeString(dirURL(file)), html.EscapeString(name))
 	fmt.Fprintf(&sb, "  <div class=\"sc-card__head\"><span class=\"sc-crest\"><span>%s</span></span>\n", crestSVG(icon))
 	fmt.Fprintf(&sb, "    <div><div class=\"sc-card__type\">%s</div>\n", html.EscapeString(typeLabel))
 	fmt.Fprintf(&sb, "    <div class=\"sc-card__name\">%s</div></div></div>\n", html.EscapeString(name))
 	sb.WriteString(inner)
-	sb.WriteString("</a>\n")
+	sb.WriteString("</div>\n")
 	return sb.String()
 }
 
@@ -310,12 +323,14 @@ func card(file, icon, typeLabel, name, inner string) string {
 // inner is raw HTML (already escaped where needed).
 func wideCard(file, icon, typeLabel, name, inner string) string {
 	var sb strings.Builder
-	fmt.Fprintf(&sb, "<a class=\"sc-card sc-card--wide sc-fil\" href=\"%s\">\n", html.EscapeString(file))
+	fmt.Fprintf(&sb, "<div class=\"sc-card sc-card--wide sc-fil\">\n")
+	fmt.Fprintf(&sb, "  <a class=\"sc-card__link\" href=\"%s\" aria-label=\"%s\"></a>\n",
+		html.EscapeString(dirURL(file)), html.EscapeString(name))
 	fmt.Fprintf(&sb, "  <span class=\"sc-crest lg\"><span>%s</span></span>\n", crestSVG(icon))
 	fmt.Fprintf(&sb, "  <div class=\"sc-card__namecol\"><div class=\"sc-card__type\">%s</div>"+
 		"<div class=\"sc-card__name\">%s</div></div>\n", html.EscapeString(typeLabel), html.EscapeString(name))
 	fmt.Fprintf(&sb, "  <div class=\"sc-card__body\">%s</div>\n", inner)
-	sb.WriteString("</a>\n")
+	sb.WriteString("</div>\n")
 	return sb.String()
 }
 
@@ -359,6 +374,76 @@ func tagsBlock(tags []string) string {
 	}
 	sb.WriteString("</div>\n")
 	return sb.String()
+}
+
+// inlineMDRenderer is the default CommonMark renderer (WithUnsafe off, so raw
+// HTML in source is escaped). Reused for every inlineMD call.
+var inlineMDRenderer = goldmark.New()
+
+var hrefAttrRe = regexp.MustCompile(`href="([^"]*)"`)
+
+// dirURL converts a relative ".md" link target to the directory-URL form MkDocs
+// serves under use_directory_urls (e.g. "agent.md" → "agent/",
+// "../skill/sneak.md" → "../skill/sneak/", "index.md" → "" so "../skill/index.md"
+// → "../skill/"). Cards are emitted as raw HTML that MkDocs never post-processes,
+// so the ".md" links are dead (404) unless rewritten here. External, anchor-only,
+// and non-.md hrefs pass through unchanged. A "#fragment" suffix is preserved.
+func dirURL(href string) string {
+	if href == "" || strings.HasPrefix(href, "#") ||
+		strings.HasPrefix(href, "http://") || strings.HasPrefix(href, "https://") ||
+		strings.HasPrefix(href, "mailto:") {
+		return href
+	}
+	path, frag := href, ""
+	if i := strings.IndexByte(href, '#'); i >= 0 {
+		path, frag = href[:i], href[i:]
+	}
+	if strings.HasSuffix(path, ".md") {
+		path = strings.TrimSuffix(path, ".md")
+		if base := path[strings.LastIndexByte(path, '/')+1:]; base == "index" {
+			path = path[:len(path)-len("index")] // ".../index" → ".../"
+		} else {
+			path += "/"
+		}
+	}
+	return path + frag
+}
+
+// rewriteHrefs applies dirURL to every href="…" in a fragment of HTML.
+func rewriteHrefs(htmlFrag string) string {
+	return hrefAttrRe.ReplaceAllStringFunc(htmlFrag, func(m string) string {
+		return `href="` + dirURL(hrefAttrRe.FindStringSubmatch(m)[1]) + `"`
+	})
+}
+
+// inlineMD renders a string of inline markdown (links, emphasis, bold, code) to
+// HTML for embedding directly in a card's raw-HTML divs.
+//
+// Why pre-render here instead of relying on md_in_html: card values nest several
+// levels deep inside non-attributed elements (sc-cards > a.sc-card > div.sc-card__line).
+// md_in_html only processes content whose entire ancestor chain carries a
+// `markdown` attribute, and adding those attributes mangles the <a>-wrapped card
+// (the anchor gets split by stray <p> tags). So the markdown is converted to HTML
+// at build time and embedded verbatim. goldmark's block <p> wrapper is stripped to
+// keep the result inline; raw HTML is escaped by goldmark, so this is XSS-safe.
+func inlineMD(s string) string {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return ""
+	}
+	var buf bytes.Buffer
+	if err := inlineMDRenderer.Convert([]byte(s), &buf); err != nil {
+		return html.EscapeString(s) // fall back to escaped literal on render error
+	}
+	out := strings.TrimSpace(buf.String())
+	// Strip the single block <p>…</p> wrapper goldmark adds (joinField produces a
+	// single line, so there is exactly one). Multi-paragraph values keep their
+	// inner breaks but lose only the outermost wrapper, which is acceptable here.
+	out = strings.TrimSuffix(strings.TrimPrefix(out, "<p>"), "</p>")
+	// goldmark renders ".md" link targets verbatim; rewrite them to the served
+	// directory-URL form so the links resolve (see dirURL).
+	out = rewriteHrefs(out)
+	return strings.TrimSpace(out)
 }
 
 // lineBlock writes a "Label value" line. value is already HTML (may contain a

@@ -200,10 +200,12 @@ func TestBuild_GeneratesIndexPages(t *testing.T) {
 	if !strings.Contains(content, `<div class="sc-cards">`) {
 		t.Error("class index should render as a card grid")
 	}
-	if !strings.Contains(content, `href="fury.md"`) || !strings.Contains(content, `<div class="sc-card__name">Fury</div>`) {
+	// Card links use the served directory-URL form (foo.md → foo/), not a dead
+	// ".md" path that 404s under use_directory_urls.
+	if !strings.Contains(content, `href="fury/"`) || !strings.Contains(content, `<div class="sc-card__name">Fury</div>`) {
 		t.Error("class index missing Fury card")
 	}
-	if !strings.Contains(content, `href="shadow.md"`) || !strings.Contains(content, `<div class="sc-card__name">Shadow</div>`) {
+	if !strings.Contains(content, `href="shadow/"`) || !strings.Contains(content, `<div class="sc-card__name">Shadow</div>`) {
 		t.Error("class index missing Shadow card")
 	}
 
