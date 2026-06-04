@@ -105,6 +105,19 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	seenSCC := make(map[string]string)
 	chapterOrder := 0
 
+	// sccBySection maps each classified section to its final (post-override) SCC
+	// code so RenderSubtree can mark coded descendant headings. PageBody render +
+	// generator writes are deferred until after the walk so the map is complete
+	// (a parent is visited before its children, so its descendants' codes are not
+	// yet known at parent-render time).
+	sccBySection := make(map[*parser.Section]string)
+	type pendingWrite struct {
+		section *parser.Section
+		parsed  *content.ParsedContent
+		sccCode string
+	}
+	var pending []pendingWrite
+
 	var walk func(sections []*parser.Section)
 	walk = func(sections []*parser.Section) {
 		for _, section := range sections {
@@ -137,9 +150,6 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				chapterOrder++
 			}
 
-			// Full book-order render of this section's subtree for reading pages.
-			parsed.PageBody = content.RenderSubtree(section)
-
 			if parsed.TypePath != nil && parsed.ItemID != "" {
 				sccCode := scc.Classify(bookSource, parsed.TypePath, parsed.ItemID)
 				parsed.Frontmatter["scc"] = sccCode
@@ -163,23 +173,31 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 				}
 				seenSCC[sccCode] = section.Heading
 
-				// Write to all generators
-				for _, gen := range generators {
-					if err := gen.WriteSection(sccCode, parsed); err != nil {
-						result.Errors = append(result.Errors, fmt.Sprintf("write %s [%s]: %v", sccCode, gen.Format(), err))
-					} else {
-						result.WrittenFiles++
-					}
-				}
-
-				// Record for cross-book shared-output generation.
-				result.Classified = append(result.Classified, ClassifiedItem{SCCCode: sccCode, Parsed: parsed})
+				// Record the final code so coded descendant headings can be marked
+				// in PageBody, and defer the render + writes until the walk is done.
+				sccBySection[section] = sccCode
+				pending = append(pending, pendingWrite{section: section, parsed: parsed, sccCode: sccCode})
 			}
 
 			walk(section.Children)
 		}
 	}
 	walk(doc.Sections)
+
+	// Now that every section's SCC code is known, render each page's book-order
+	// PageBody (marking coded descendant headings with data-scc) and write to all
+	// generators. Deferred from the walk so the sccBySection map is complete.
+	for _, pw := range pending {
+		pw.parsed.PageBody = content.RenderSubtree(pw.section, sccBySection)
+		for _, gen := range generators {
+			if err := gen.WriteSection(pw.sccCode, pw.parsed); err != nil {
+				result.Errors = append(result.Errors, fmt.Sprintf("write %s [%s]: %v", pw.sccCode, gen.Format(), err))
+			} else {
+				result.WrittenFiles++
+			}
+		}
+		result.Classified = append(result.Classified, ClassifiedItem{SCCCode: pw.sccCode, Parsed: pw.parsed})
+	}
 
 	// Finalize generators that implement BulkGenerator
 	for _, gen := range generators {
