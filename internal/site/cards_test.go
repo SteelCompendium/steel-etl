@@ -78,6 +78,113 @@ func TestCareerCardSkillsRendersLink(t *testing.T) {
 	}
 }
 
+// careerFlavor must drop the trailing "In defining your career…" prompt and
+// keep only the lead-in flavor sentence.
+func TestCareerFlavorStripsPrompt(t *testing.T) {
+	body := "\nYou worked as a spy for a government or organization. In defining your career, think about the following questions:\n\n- Who did you work for?\n"
+	if got, want := careerFlavor(body), "You worked as a spy for a government or organization."; got != want {
+		t.Errorf("careerFlavor = %q, want %q", got, want)
+	}
+}
+
+func TestCareerLanguageCount(t *testing.T) {
+	tests := []struct{ in, want string }{
+		{"Two languages", "Two"},
+		{"One language", "One"},
+		{"three Languages", "three"},
+		{"2", "2"},
+		{"", ""},
+	}
+	for _, tc := range tests {
+		if got := careerLanguageCount(tc.in); got != tc.want {
+			t.Errorf("careerLanguageCount(%q) = %q, want %q", tc.in, got, tc.want)
+		}
+	}
+}
+
+// careerCard reads the singular `language` key and shows the count word, not a dash.
+func TestCareerCardLanguages(t *testing.T) {
+	fm := "---\nname: Agent\ntype: career\nlanguage: Two languages\n---"
+	out := careerCard(fm, "", "agent.md", "Agent")
+	if !strings.Contains(out, ">Two<") {
+		t.Errorf("expected Languages stat value 'Two', got:\n%s", out)
+	}
+}
+
+// cultureCard must surface the body's "**Skill Options:**" line as a link.
+func TestCultureCardSkillOptions(t *testing.T) {
+	body := "\nRaised by scholars.\n\n**Skill Options:** One skill from the lore skill group. (*Quick Build:* [History](../skill/history.md).)\n"
+	out := cultureCard("---\nname: Academic\ntype: culture\n---", body, "academic.md", "Academic")
+	if !strings.Contains(out, "Skill Options") {
+		t.Errorf("expected a Skill Options line, got:\n%s", out)
+	}
+	if !strings.Contains(out, `<a href="../skill/history/">History</a>`) {
+		t.Errorf("expected rendered Skill Options link, got:\n%s", out)
+	}
+}
+
+// kitCard shows raw equipment text, the per-echelon stamina label, and all four
+// offense stats (melee/ranged damage + melee/ranged distance).
+func TestKitCardStatsAndEquipment(t *testing.T) {
+	fm := "---\nname: Guisarmier\ntype: kit\nequipment_text: You wear medium armor and wield a polearm.\n" +
+		"melee_damage_bonus: +2/+2/+2\nmelee_distance_bonus: \"+1\"\nstamina_bonus: +6 per echelon\n---"
+	out := kitCard(fm, "", "guisarmier.md", "Guisarmier")
+	for _, want := range []string{
+		"You wear medium armor and wield a polearm.",
+		"Stamina per Echelon",
+		"Melee Dmg", "Ranged Dmg", "Melee Dist", "Ranged Dist",
+	} {
+		if !strings.Contains(out, want) {
+			t.Errorf("kit card missing %q in:\n%s", want, out)
+		}
+	}
+	// Unpopulated offense stats render an em-dash, not a zero.
+	if !strings.Contains(out, "—") {
+		t.Errorf("expected em-dash for empty offense stats, got:\n%s", out)
+	}
+}
+
+// signatureFromBody must strip the trailing {data-scc=…} attr_list the
+// heading-permalink pass stamps onto the ability heading.
+func TestSignatureNameStripsAttrList(t *testing.T) {
+	body := "## Signature Ability\n\n### Fade {data-scc=\"mcdm.heroes.v1/feature.ability.cloak-and-dagger/fade\"}\n\n| **Melee, Strike** | x |\n"
+	name, _, _ := signatureFromBody(body)
+	if name != "Fade" {
+		t.Errorf("signature name = %q, want %q", name, "Fade")
+	}
+}
+
+// classCard renders the full intro section (before "Basics"), preserving the
+// flavor blockquote and dropping the Basics content.
+func TestClassCardFullIntro(t *testing.T) {
+	// Body as it appears post-render: injected "# Censor" H1 + rule, then flavor.
+	body := "\n# Censor\n\n---\n\nDemons fear you.\n\nAs a [censor](censor.md), you fight.\n\n> \"We FIGHT!\"\n\n## Basics\n\n**Starting Characteristics:** Might 2.\n"
+	out := classCard("---\nname: Censor\ntype: class\n---", body, "censor.md", "Censor")
+	if !strings.Contains(out, "Demons fear you.") || !strings.Contains(out, "As a") {
+		t.Errorf("expected full intro paragraphs, got:\n%s", out)
+	}
+	if strings.Contains(out, "<h1>") || strings.Contains(out, "<hr>") {
+		t.Errorf("injected title/rule leaked into class card:\n%s", out)
+	}
+	if !strings.Contains(out, "<blockquote>") {
+		t.Errorf("expected intro blockquote preserved, got:\n%s", out)
+	}
+	if strings.Contains(out, "Starting Characteristics") {
+		t.Errorf("Basics content leaked into class card:\n%s", out)
+	}
+	if !strings.Contains(out, `<a href="censor/">censor</a>`) {
+		t.Errorf("expected rewritten intro link, got:\n%s", out)
+	}
+}
+
+// proseBlock preserves paragraph breaks and truncates at the rune budget.
+func TestProseBlock(t *testing.T) {
+	body := "\nFirst para.\n\nSecond para.\n\n## Heading\n\nNot included.\n"
+	if got, want := proseBlock(body, 0), "First para.\n\nSecond para."; got != want {
+		t.Errorf("proseBlock = %q, want %q", got, want)
+	}
+}
+
 // card() must use the stretched-link structure: a <div> wrapper (never an <a>
 // wrapping the whole card, which would nest the inner links) plus one overlay
 // anchor pointing at the directory URL of the card's page.

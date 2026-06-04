@@ -126,10 +126,10 @@ func kitCard(fm, body, file, name string) string {
 	spd := orZero(parseFrontmatterField(fm, "speed_bonus"))
 	stab := orZero(parseFrontmatterField(fm, "stability_bonus"))
 	dis := orZero(firstField(fm, "disengage_bonus", "disengage"))
-	armor, weapon := parseEquip(fm, parseFrontmatterField(fm, "equipment_text"))
 	melee := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_damage_bonus")))
 	ranged := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_damage_bonus")))
-	dist := orDash(firstField(fm, "distance_bonus", "ranged_distance_bonus", "melee_distance_bonus"))
+	meleeDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_distance_bonus")))
+	rangedDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_distance_bonus")))
 	sigName, sigType, keywords := signatureFromBody(body)
 	kind, icon := "Martial", "shield"
 	switch {
@@ -139,11 +139,22 @@ func kitCard(fm, body, file, name string) string {
 		kind, icon = "Magic", "wand"
 	}
 
-	inner := "  <div class=\"sc-card__equip\">" + html.EscapeString(armor) + " &middot; " + html.EscapeString(weapon) + "</div>\n"
-	// Row 1 — defensive / movement stats.
-	inner += statsBlock([][3]string{{stam, "Stamina", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dis, "Disengage", ""}})
-	// Row 2 — offensive stats. Melee & ranged can both be populated.
-	inner += statsBlock([][3]string{{melee, "Melee Dmg", "is-dmg"}, {ranged, "Ranged Dmg", "is-dmg"}, {dist, "Distance", ""}})
+	inner := ""
+	// Equipment: show the raw source sentence verbatim — parsing it into
+	// armor/weapon tokens lost nuance (e.g. "one or two light weapons").
+	if equip := strings.TrimSpace(parseFrontmatterField(fm, "equipment_text")); equip != "" {
+		inner += "  <div class=\"sc-card__equip\">" + html.EscapeString(equip) + "</div>\n"
+	}
+	// Row 1 — defensive / movement stats. Stamina bonuses are per echelon.
+	inner += statsBlock([][3]string{{stam, "Stamina per Echelon", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dis, "Disengage", ""}})
+	// Row 2 — offensive stats. Melee & ranged damage and distance can each be
+	// populated independently, so all four show on every card.
+	inner += statsBlock([][3]string{
+		{melee, "Melee Dmg", "is-dmg"},
+		{ranged, "Ranged Dmg", "is-dmg"},
+		{meleeDist, "Melee Dist", ""},
+		{rangedDist, "Ranged Dist", ""},
+	})
 	if sigName != "" {
 		inner += sigBlock(sigType, sigName)
 	}
@@ -158,10 +169,11 @@ func classCard(fm, body, file, name string) string {
 	if chars := parseFrontmatterList(fm, "primary_characteristics"); len(chars) > 0 {
 		inner += tagsBlock(chars)
 	}
-	// Light primer — a clamped few-sentence taste of the class (CSS line-clamps it
-	// to ~4 lines so it can't bloat the card).
-	if p := classPrimer(body); p != "" {
-		inner += "  <div class=\"sc-card__primer\">" + html.EscapeString(p) + "</div>\n"
+	// Full intro section — everything before the "Basics" header — rendered with
+	// its paragraph/blockquote structure (and newlines) preserved. The class's
+	// flavor is important context for the index, so it is shown in full.
+	if sec := blockMD(classIntro(body)); sec != "" {
+		inner += "  <div class=\"sc-card__intro\">" + sec + "</div>\n"
 	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
@@ -174,8 +186,9 @@ func ancestryCard(fm, body, file, name string) string {
 	if t := parseFrontmatterField(fm, "signature_trait_name"); t != "" {
 		inner += lineBlock("Signature Trait", "<span class=\"hl\">"+html.EscapeString(t)+"</span>")
 	}
+	// First flavor paragraph, shown in full (no truncation).
 	if f := firstProse(body); f != "" {
-		inner += flavorDiv(f, 240)
+		inner += flavorDiv(f, 0)
 	}
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
@@ -189,12 +202,15 @@ func careerCard(fm, body, file, name string) string {
 	if f := careerFlavor(body); f != "" {
 		inner += flavorDiv(f, 200)
 	}
-	// Four standard numeric fields as stat boxes.
+	// Four standard numeric fields as stat boxes. The source carries the
+	// languages count as a "<Count> language(s)" string under the singular
+	// `language` key (a YAML list under `languages` is also supported); reduce
+	// it to its leading count word so it fits the stat box.
 	lang := ""
 	if list := parseFrontmatterList(fm, "languages"); len(list) > 0 {
 		lang = fmt.Sprintf("%d", len(list))
 	} else {
-		lang = orDash(parseFrontmatterField(fm, "languages"))
+		lang = orDash(careerLanguageCount(firstField(fm, "language", "languages")))
 	}
 	inner += statsBlock([][3]string{
 		{lang, "Languages", ""},
@@ -245,8 +261,10 @@ func perkCard(fm, body, file, name string) string {
 	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
 		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
 	}
-	if b := bodyBlurb(body, 240); b != "" {
-		inner += flavorDiv(b, 0)
+	// Perk text: the leading run of prose paragraphs, with their paragraph
+	// breaks preserved, truncated generously (these are the wide cards).
+	if b := proseBlock(body, 480); b != "" {
+		inner += flavorDivML(b)
 	}
 	return wideCard(file, "sparkles", label, name, inner)
 }
@@ -275,7 +293,8 @@ func complicationCard(fm, body, file, name string) string {
 		// the benefit (or drawback) text so the card isn't empty.
 		flavor = stripMD(firstField(fm, "benefit", "drawback"))
 	}
-	inner := flavorDiv(flavor, 240)
+	// Description/flavor shown in full (no truncation).
+	inner := flavorDiv(flavor, 0)
 	return wideCard(file, "alert", "Complication", name, inner)
 }
 
@@ -287,7 +306,17 @@ func cultureCard(fm, body, file, name string) string {
 		}
 	}
 	inner := tagsBlock(tags)
-	if so := joinField(fm, "skill_options"); so != "" {
+	// First flavor paragraph.
+	if f := firstProse(body); f != "" {
+		inner += flavorDiv(f, 240)
+	}
+	// "Skill Options" lives in the body as a bolded "**Skill Options:**" lead-in,
+	// not frontmatter — fall back to extracting it from the body.
+	so := joinField(fm, "skill_options")
+	if so == "" {
+		so = bodyLabeledLine(body, "Skill Options")
+	}
+	if so != "" {
 		inner += lineBlock("Skill Options", inlineMD(so))
 	}
 	if inner == "" {
@@ -446,6 +475,23 @@ func inlineMD(s string) string {
 	return strings.TrimSpace(out)
 }
 
+// blockMD renders a multi-paragraph block of markdown to HTML, keeping the
+// block structure (paragraphs, blockquotes, lists) so newlines are preserved —
+// unlike inlineMD, which strips the single <p> wrapper for inline values. Used
+// for the class intro section. ".md" link targets are rewritten to the served
+// directory-URL form; raw HTML in source is escaped by goldmark (XSS-safe).
+func blockMD(s string) string {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return ""
+	}
+	var buf bytes.Buffer
+	if err := inlineMDRenderer.Convert([]byte(s), &buf); err != nil {
+		return html.EscapeString(s)
+	}
+	return rewriteHrefs(strings.TrimSpace(buf.String()))
+}
+
 // lineBlock writes a "Label value" line. value is already HTML (may contain a
 // <span class="hl">); label is plain text (empty label → value only).
 func lineBlock(label, valueHTML string) string {
@@ -472,6 +518,17 @@ func flavorDiv(text string, max int) string {
 		t = truncate(t, max)
 	}
 	return "  <div class=\"sc-card__flavor\">" + html.EscapeString(t) + "</div>\n"
+}
+
+// flavorDivML wraps multi-line prose flavor, preserving its line breaks as <br>
+// (the escaped text would otherwise collapse newlines in HTML).
+func flavorDivML(text string) string {
+	t := strings.TrimSpace(text)
+	if t == "" {
+		return ""
+	}
+	esc := strings.ReplaceAll(html.EscapeString(t), "\n", "<br>\n")
+	return "  <div class=\"sc-card__flavor\">" + esc + "</div>\n"
 }
 
 func crestSVG(icon string) string {
@@ -527,43 +584,6 @@ func joinField(fm, key string) string {
 	return strings.TrimSpace(parseFrontmatterField(fm, key))
 }
 
-var (
-	reArmor       = regexp.MustCompile(`(?i)wear(?:s|ing)?\s+(?:an?\s+)?([a-z]+)\s+armor`)
-	reWeaponTyped = regexp.MustCompile(`(?i)wield(?:s|ing)?\s+(?:an?\s+)?([a-z]+)\s+weapon`)
-	reWeaponBare  = regexp.MustCompile(`(?i)wield(?:s|ing)?\s+(?:an?\s+)?([a-z]+)`)
-)
-
-// parseEquip resolves the armor / weapon descriptors for a kit. Explicit
-// frontmatter (armor:/weapon:) wins; otherwise it parses equipment_text. The
-// bare-weapon fallback handles specific weapons ("…wield a bow." → "Bow") that
-// the older "<size> weapon" regex missed.
-func parseEquip(fm, text string) (armor, weapon string) {
-	armor, weapon = "\u2014", "\u2014"
-
-	if a := strings.TrimSpace(parseFrontmatterField(fm, "armor")); a != "" {
-		armor = withWord(titleCase(strings.ToLower(a)), "armor")
-	} else if m := reArmor.FindStringSubmatch(text); m != nil {
-		armor = titleCase(strings.ToLower(m[1])) + " armor"
-	}
-
-	if w := strings.TrimSpace(parseFrontmatterField(fm, "weapon")); w != "" {
-		weapon = titleCase(strings.ToLower(w))
-	} else if m := reWeaponTyped.FindStringSubmatch(text); m != nil {
-		weapon = titleCase(strings.ToLower(m[1])) + " weapon"
-	} else if m := reWeaponBare.FindStringSubmatch(text); m != nil {
-		weapon = titleCase(strings.ToLower(m[1]))
-	}
-	return armor, weapon
-}
-
-// withWord appends a trailing word if not already present (e.g. "Light" → "Light armor").
-func withWord(s, word string) string {
-	if strings.Contains(strings.ToLower(s), word) {
-		return s
-	}
-	return s + " " + word
-}
-
 // parseFrontmatterList reads a YAML list (block "- item" lines, or inline
 // "[a, b]") for a top-level key.
 func parseFrontmatterList(fm, key string) []string {
@@ -601,6 +621,9 @@ var (
 	reSigSection = regexp.MustCompile(`(?mi)^#{1,6}\s+Signature Ability\s*$`)
 	reHeading    = regexp.MustCompile(`(?m)^#{1,6}\s+(.+?)\s*$`)
 	reMdLink     = regexp.MustCompile(`\[([^\]]*)\]\([^)]*\)`)
+	// trailing attr_list (e.g. ` {data-scc="…"}`) the heading-permalink pass
+	// stamps onto headings — not part of the visible heading text.
+	reHeadingAttr = regexp.MustCompile(`\s*\{[^}]*\}\s*$`)
 )
 
 func signatureFromBody(body string) (name, sigType, keywords string) {
@@ -610,7 +633,7 @@ func signatureFromBody(body string) (name, sigType, keywords string) {
 	}
 	rest := body[loc[1]:]
 	if m := reHeading.FindStringSubmatch(rest); m != nil {
-		name = strings.TrimSpace(m[1])
+		name = strings.TrimSpace(reHeadingAttr.ReplaceAllString(m[1], ""))
 	}
 	for _, line := range strings.Split(rest, "\n") {
 		line = strings.TrimSpace(line)
@@ -667,19 +690,48 @@ func firstProse(body string) string {
 	return ""
 }
 
-// careerFlavor returns the first flavor line, skipping the "In defining your
-// career…" boilerplate the books prepend.
+// careerFlavor returns the first flavor paragraph with the trailing "In
+// defining your career…" prompt (and everything after it) removed. The books
+// append that prompt to the end of the lead-in sentence, e.g. "You worked as a
+// spy… In defining your career, think about the following questions:".
 func careerFlavor(body string) string {
 	for _, raw := range strings.Split(body, "\n") {
 		t := strings.TrimSpace(raw)
 		if !isProse(t) {
 			continue
 		}
-		if strings.HasPrefix(strings.ToLower(t), "in defining your career") {
-			continue
+		if i := strings.Index(t, "In defining your career"); i >= 0 {
+			t = strings.TrimSpace(t[:i])
 		}
 		if s := stripMD(t); s != "" {
 			return s
+		}
+	}
+	return ""
+}
+
+// careerLanguageCount reduces a languages descriptor like "Two languages" to
+// its leading count word ("Two"). Input without a trailing "language(s)" word
+// is returned unchanged.
+func careerLanguageCount(s string) string {
+	s = strings.TrimSpace(s)
+	low := strings.ToLower(s)
+	for _, suf := range []string{" languages", " language"} {
+		if strings.HasSuffix(low, suf) {
+			return strings.TrimSpace(s[:len(s)-len(suf)])
+		}
+	}
+	return s
+}
+
+// bodyLabeledLine returns the inline-markdown value following a "**Label:**"
+// bold lead-in in the body (e.g. "**Skill Options:**"), or "" if absent.
+func bodyLabeledLine(body, label string) string {
+	prefix := "**" + label + ":**"
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if strings.HasPrefix(t, prefix) {
+			return strings.TrimSpace(t[len(prefix):])
 		}
 	}
 	return ""
@@ -705,32 +757,79 @@ func complicationFlavor(body string) string {
 	return ""
 }
 
-// classPrimer collects the first one or two prose paragraphs (capped) for a
-// light "what does this class feel like" taste; CSS clamps it to a few lines.
-func classPrimer(body string) string {
-	var parts []string
-	total := 0
-	for _, raw := range strings.Split(body, "\n") {
-		t := strings.TrimSpace(raw)
-		if !isProse(t) {
-			continue
-		}
-		s := stripMD(t)
-		if s == "" {
-			continue
-		}
-		parts = append(parts, s)
-		total += len([]rune(s))
-		if total > 300 || len(parts) >= 2 {
-			break
+// reBasicsHeading matches the "Basics" section header that ends a class's
+// intro flavor section.
+var reBasicsHeading = regexp.MustCompile(`(?mi)^#{1,6}\s+Basics\s*$`)
+
+// classIntro returns the class's intro section: the markdown from the start of
+// the body up to (but excluding) the "Basics" header, with the page renderer's
+// injected "# Name" H1 (and the rule under it) stripped. Falls back to the
+// whole body if no Basics header is present.
+func classIntro(body string) string {
+	if loc := reBasicsHeading.FindStringIndex(body); loc != nil {
+		body = body[:loc[0]]
+	}
+	return strings.TrimSpace(stripLeadingTitle(body))
+}
+
+// stripLeadingTitle drops a leading injected H1 ("# Name") and the horizontal
+// rule the page renderer places directly under it, so the intro starts at the
+// flavor prose instead of repeating the card's name.
+func stripLeadingTitle(body string) string {
+	lines := strings.Split(body, "\n")
+	i := 0
+	skipBlank := func() {
+		for i < len(lines) && strings.TrimSpace(lines[i]) == "" {
+			i++
 		}
 	}
-	return truncate(strings.Join(parts, " "), 360)
+	skipBlank()
+	if i < len(lines) && strings.HasPrefix(strings.TrimSpace(lines[i]), "# ") {
+		i++
+		skipBlank()
+		if i < len(lines) && strings.TrimSpace(lines[i]) == "---" {
+			i++
+		}
+	}
+	return strings.Join(lines[i:], "\n")
 }
 
 // bodyBlurb returns the first prose sentence/paragraph, truncated.
 func bodyBlurb(body string, max int) string {
 	return truncate(firstProse(body), max)
+}
+
+// proseBlock collects the leading run of prose paragraphs (markdown-stripped),
+// preserving the blank-line breaks between them, and truncates to max runes
+// (max<=0 → no limit). Stops at the first non-prose block (heading, table,
+// blockquote, list) once prose has started.
+func proseBlock(body string, max int) string {
+	var lines []string
+	started := false
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if t == "" {
+			if started {
+				lines = append(lines, "")
+			}
+			continue
+		}
+		if !isProse(t) {
+			if started {
+				break
+			}
+			continue
+		}
+		if s := stripMD(t); s != "" {
+			lines = append(lines, s)
+			started = true
+		}
+	}
+	out := strings.TrimSpace(strings.Join(lines, "\n"))
+	if max > 0 {
+		out = truncate(out, max)
+	}
+	return out
 }
 
 func truncate(s string, max int) string {
