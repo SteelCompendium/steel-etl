@@ -255,21 +255,34 @@ func treasureCard(fm, body, file, name string) string {
 	if tt == "" {
 		tt = "Treasure"
 	}
-	var stats [][3]string
-	if v := parseFrontmatterField(fm, "level"); v != "" {
-		stats = append(stats, [3]string{v, "Level", ""})
-	}
-	if v := parseFrontmatterField(fm, "rarity"); v != "" {
-		stats = append(stats, [3]string{v, "Rarity", ""})
-	}
-	inner := statsBlock(stats)
+	inner := ""
+	// Keywords stay pinned to the top as tags.
 	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
 		inner += tagsBlock(kw)
 	}
-	if eff := parseFrontmatterField(fm, "effect"); eff != "" {
-		inner += blurbBlock(truncate(stripMD(eff), 90))
-	} else if inner == "" {
-		inner = blurbBlock(bodyBlurb(body, 96))
+	// Flavor: the first prose paragraph (the italic descriptor). Shown in full —
+	// these are a single short sentence, so no truncation/overflow clamp.
+	if f := firstProse(body); f != "" {
+		inner += flavorDiv(f, 0)
+	}
+	// Project goal & roll characteristic are short, fixed values — render them as
+	// stat sub-cards (the kit-card treatment). They live as "**Label:**" lines in
+	// the body; the parser doesn't lift them into frontmatter.
+	var stats [][3]string
+	if v := bodyLabeledLine(body, "Project Goal"); v != "" {
+		stats = append(stats, [3]string{stripMD(v), "Project Goal", ""})
+	}
+	if v := bodyLabeledLine(body, "Project Roll Characteristic"); v != "" {
+		stats = append(stats, [3]string{stripMD(v), "Roll Characteristic", ""})
+	}
+	inner += statsBlock(stats)
+	// Item prerequisite & project source are free text — wrapping label lines
+	// (the Career card's skill/perk treatment).
+	if v := bodyLabeledLine(body, "Item Prerequisite"); v != "" {
+		inner += lineBlock("Prerequisite", inlineMD(v))
+	}
+	if v := bodyLabeledLine(body, "Project Source"); v != "" {
+		inner += lineBlock("Source", inlineMD(v))
 	}
 	return card(file, "treasure", tt, name, inner)
 }

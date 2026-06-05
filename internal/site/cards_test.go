@@ -243,7 +243,7 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	if err := os.MkdirAll(leaf, 0755); err != nil {
 		t.Fatal(err)
 	}
-	item := "---\nname: Black Ash Dart\ntype: treasure\ntreasure_type: consumable\nechelon: \"1\"\nkeywords:\n  - Magic\n---\n\nAs a maneuver, you make a ranged free strike using a black ash dart.\n"
+	item := "---\nname: Black Ash Dart\ntype: treasure\ntreasure_type: consumable\nechelon: \"1\"\nkeywords:\n  - Magic\n---\n\n*A dart of compressed black ash.*\n\n**Keywords:** Magic\n\n**Item Prerequisite:** A pinch of black ash\n\n**Project Source:** Texts in Caelian\n\n**Project Roll Characteristic:** Reason\n\n**Project Goal:** 45\n\n**Effect:** As a maneuver, you make a ranged free strike using a black ash dart.\n"
 	if err := os.WriteFile(filepath.Join(leaf, "black-ash-dart.md"), []byte(item), 0644); err != nil {
 		t.Fatal(err)
 	}
@@ -261,6 +261,25 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	// Leaf title comes from the dirName.
 	if !strings.Contains(content, "# Consumable") {
 		t.Errorf("expected '# Consumable' title, got:\n%s", content)
+	}
+	// Keywords render as tags.
+	if !strings.Contains(content, "sc-card__tags") {
+		t.Errorf("expected keyword tags, got:\n%s", content)
+	}
+	// Flavor is the first prose line, shown in full (no effect blurb).
+	if !strings.Contains(content, "A dart of compressed black ash.") {
+		t.Errorf("expected flavor line, got:\n%s", content)
+	}
+	// Project goal & roll characteristic become stat sub-cards.
+	if !strings.Contains(content, "Project Goal") || !strings.Contains(content, ">45<") {
+		t.Errorf("expected Project Goal stat, got:\n%s", content)
+	}
+	if !strings.Contains(content, "Roll Characteristic") {
+		t.Errorf("expected Roll Characteristic stat, got:\n%s", content)
+	}
+	// Item prerequisite & project source become wrapping label lines.
+	if !strings.Contains(content, "A pinch of black ash") || !strings.Contains(content, "Texts in Caelian") {
+		t.Errorf("expected prerequisite/source lines, got:\n%s", content)
 	}
 }
 
