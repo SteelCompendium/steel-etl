@@ -78,7 +78,7 @@ var (
 	prHeadRe    = regexp.MustCompile(`(?s)^\*\*Power Roll \+\s*(.+?):\*\*\s*$`)
 	labelRe     = regexp.MustCompile(`(?s)^\*\*([^*:]+):\*\*\s*(.+)$`)
 	tierLineRe  = regexp.MustCompile(`^\s*[-*]?\s*\*\*([^*]+?):\*\*\s*(.+?)\s*$`)
-	mdLinkRe    = regexp.MustCompile(`\[([^\]]*)\]\([^)]*\)`)
+	mdLinkRe    = regexp.MustCompile(`\[([^\]]*)\]\(([^)]*)\)`)
 	mdBoldRe    = regexp.MustCompile(`\*\*([^*]+)\*\*`)
 	railEmojiRe = regexp.MustCompile(`[\x{1F300}-\x{1FAFF}\x{2600}-\x{27BF}\x{2B00}-\x{2BFF}]\s*`)
 	paraSplitRe = regexp.MustCompile(`\n[ \t]*\n`)
@@ -362,11 +362,31 @@ func railValue(s string) string {
 }
 
 // richInline escapes text for HTML and renders the small bit of inline markdown
-// rules text carries: **bold** → <b>, and [text](url) → text (the dead .md
-// links would 404 inside raw-HTML cards MkDocs never post-processes).
+// rules text carries: **bold** → <b>, and [text](url) → a real <a> link. The
+// card is raw HTML MkDocs never post-processes, so we resolve the link target
+// ourselves (cardHref) instead of leaving a dead ".md" href.
 func richInline(s string) string {
-	s = mdLinkRe.ReplaceAllString(s, "$1")
 	s = html.EscapeString(s)
 	s = mdBoldRe.ReplaceAllString(s, "<b>$1</b>")
+	s = mdLinkRe.ReplaceAllStringFunc(s, func(m string) string {
+		sub := mdLinkRe.FindStringSubmatch(m)
+		return fmt.Sprintf(`<a href="%s">%s</a>`, cardHref(sub[2]), sub[1])
+	})
 	return s
+}
+
+// cardHref resolves a markdown link target for a standalone ability/trait card
+// page. Body links are file-relative ".md" links already remapped for the
+// destination by rewriteSectionLinks; dirURL converts ".md" → the directory-URL
+// form MkDocs serves. Because use_directory_urls serves every (non-index) page
+// one directory deeper than its source file, a relative link needs one extra
+// "../" — the adjustment MkDocs makes for markdown pages but can't make here.
+// External, anchor, and mailto targets pass through untouched.
+func cardHref(target string) string {
+	if target == "" || strings.HasPrefix(target, "#") ||
+		strings.HasPrefix(target, "http://") || strings.HasPrefix(target, "https://") ||
+		strings.HasPrefix(target, "mailto:") {
+		return target
+	}
+	return "../" + dirURL(target)
 }

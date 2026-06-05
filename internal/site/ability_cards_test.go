@@ -119,17 +119,27 @@ As a maneuver, you can recite the following oath.
 }
 
 func TestRichInline_LinksAndBold(t *testing.T) {
-	got := richInline("Gain an edge per [Mountain](mountain.md), then **5 damage** & more")
-	if strings.Contains(got, "mountain.md") {
-		t.Errorf("markdown link target should be stripped: %q", got)
+	got := richInline("A [prone target](../../../../condition/prone.md), then **5 damage** & more")
+	// Relative .md links become real anchors, .md → directory URL, plus one extra
+	// "../" for use_directory_urls depth on a standalone (non-index) page.
+	if !strings.Contains(got, `<a href="../../../../../condition/prone/">prone target</a>`) {
+		t.Errorf("relative link should resolve to a directory-URL anchor with +1 depth: %q", got)
 	}
-	if !strings.Contains(got, "Mountain") {
-		t.Errorf("link text should be kept: %q", got)
+	if strings.Contains(got, ".md") {
+		t.Errorf("no raw .md target should survive: %q", got)
 	}
 	if !strings.Contains(got, "<b>5 damage</b>") {
 		t.Errorf("bold should render: %q", got)
 	}
 	if !strings.Contains(got, "&amp;") {
 		t.Errorf("ampersand should be escaped: %q", got)
+	}
+}
+
+func TestCardHref_ExternalAndAnchorPassThrough(t *testing.T) {
+	for _, target := range []string{"https://example.com", "#frag", "mailto:a@b.com"} {
+		if got := cardHref(target); got != target {
+			t.Errorf("cardHref(%q) = %q, want unchanged", target, got)
+		}
 	}
 }
