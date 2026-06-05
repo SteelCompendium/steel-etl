@@ -50,11 +50,6 @@ var wideCardTypes = map[string]bool{
 	"complication": true, "perk": true,
 }
 
-// typeIcon maps a type to its crest icon for the simple (name + blurb) types.
-var typeIcon = map[string]string{
-	"condition": "zap", "skill": "star", "movement": "move", "negotiation": "speech",
-}
-
 // buildCardsContent returns rich-card index markup for a supported flat type.
 // ok=false → caller falls back to the default browse-index list.
 func buildCardsContent(dir, dirName string, files, subdirs []string) (content string, ok bool) {
@@ -107,15 +102,13 @@ func cardFor(t, fm, body, file, name string) string {
 	case "culture":
 		return cultureCard(fm, body, file, name)
 	default: // condition, skill, movement, negotiation
-		icon := typeIcon[t]
-		if icon == "" {
-			icon = "scroll"
-		}
 		max := 96
 		if t == "skill" { // skills are short — give them room so they don't ellipsize
 			max = 220
 		}
-		return card(file, icon, titleCase(t), name, blurbBlock(bodyBlurb(body, max)))
+		// iconPaths is keyed by type, so the type name doubles as the icon key
+		// (crestSVG falls back to the scroll glyph for any unmapped type).
+		return card(file, t, titleCase(t), name, blurbBlock(bodyBlurb(body, max)))
 	}
 }
 
@@ -131,19 +124,28 @@ func kitCard(fm, body, file, name string) string {
 	meleeDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "melee_distance_bonus")))
 	rangedDist := orDash(strings.TrimSpace(parseFrontmatterField(fm, "ranged_distance_bonus")))
 	sigName, sigType, keywords := signatureFromBody(body)
-	kind, icon := "Martial", "shield"
+	// The crest is always the backpack (matching the Kits card on the Browse
+	// landing); only the type label distinguishes martial/magic/psionic kits.
+	kind := "Martial"
 	switch {
 	case strings.Contains(keywords, "Psionic"):
-		kind, icon = "Psionic", "wand"
+		kind = "Psionic"
 	case strings.Contains(keywords, "Magic"):
-		kind, icon = "Magic", "wand"
+		kind = "Magic"
 	}
 
-	inner := ""
 	// Equipment: show the raw source sentence verbatim — parsing it into
-	// armor/weapon tokens lost nuance (e.g. "one or two light weapons").
-	if equip := strings.TrimSpace(parseFrontmatterField(fm, "equipment_text")); equip != "" {
-		inner += "  <div class=\"sc-card__equip\">" + html.EscapeString(equip) + "</div>\n"
+	// armor/weapon tokens lost nuance (e.g. "one or two light weapons"). The
+	// line is always emitted (a non-breaking space when a kit lacks equipment)
+	// so every card reserves the same vertical space and stays aligned.
+	equip := html.EscapeString(strings.TrimSpace(parseFrontmatterField(fm, "equipment_text")))
+	if equip == "" {
+		equip = "&nbsp;"
+	}
+	inner := "  <div class=\"sc-card__equip\">" + equip + "</div>\n"
+	// First flavor line — the kit's brief description (links stripped, truncated).
+	if desc := firstProse(body); desc != "" {
+		inner += flavorDiv(desc, 160)
 	}
 	// Row 1 — defensive / movement stats. Stamina bonuses are per echelon.
 	inner += statsBlock([][3]string{{stam, "Stamina per Echelon", ""}, {spd, "Speed", ""}, {stab, "Stability", ""}, {dis, "Disengage", ""}})
@@ -158,7 +160,7 @@ func kitCard(fm, body, file, name string) string {
 	if sigName != "" {
 		inner += sigBlock(sigType, sigName)
 	}
-	return card(file, icon, kind+" Kit", name, inner)
+	return card(file, "kit", kind+" Kit", name, inner)
 }
 
 func classCard(fm, body, file, name string) string {
@@ -178,7 +180,7 @@ func classCard(fm, body, file, name string) string {
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
-	return card(file, "shield", "Class", name, inner)
+	return card(file, "class", "Class", name, inner)
 }
 
 func ancestryCard(fm, body, file, name string) string {
@@ -193,7 +195,7 @@ func ancestryCard(fm, body, file, name string) string {
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
-	return card(file, "users", "Ancestry", name, inner)
+	return card(file, "ancestry", "Ancestry", name, inner)
 }
 
 func careerCard(fm, body, file, name string) string {
@@ -225,7 +227,7 @@ func careerCard(fm, body, file, name string) string {
 	if pk := strings.TrimSpace(parseFrontmatterField(fm, "perk")); pk != "" {
 		inner += lineBlock("Perk", inlineMD(pk))
 	}
-	return card(file, "briefcase", "Career", name, inner)
+	return card(file, "career", "Career", name, inner)
 }
 
 func treasureCard(fm, body, file, name string) string {
@@ -249,7 +251,7 @@ func treasureCard(fm, body, file, name string) string {
 	} else if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
-	return card(file, "gem", tt, name, inner)
+	return card(file, "treasure", tt, name, inner)
 }
 
 func perkCard(fm, body, file, name string) string {
@@ -266,7 +268,7 @@ func perkCard(fm, body, file, name string) string {
 	if b := proseBlock(body, 480); b != "" {
 		inner += flavorDivML(b)
 	}
-	return wideCard(file, "sparkles", label, name, inner)
+	return wideCard(file, "perk", label, name, inner)
 }
 
 func titleCard(fm, body, file, name string) string {
@@ -282,7 +284,7 @@ func titleCard(fm, body, file, name string) string {
 	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
 		inner += "  <div class=\"sc-card__line\"><b>Prerequisite</b> <span class=\"hl\">" + html.EscapeString(v) + "</span></div>\n"
 	}
-	return card(file, "crown", label, name, inner)
+	return card(file, "title", label, name, inner)
 }
 
 func complicationCard(fm, body, file, name string) string {
@@ -295,7 +297,7 @@ func complicationCard(fm, body, file, name string) string {
 	}
 	// Description/flavor shown in full (no truncation).
 	inner := flavorDiv(flavor, 0)
-	return wideCard(file, "alert", "Complication", name, inner)
+	return wideCard(file, "complication", "Complication", name, inner)
 }
 
 func cultureCard(fm, body, file, name string) string {
@@ -322,7 +324,7 @@ func cultureCard(fm, body, file, name string) string {
 	if inner == "" {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
-	return card(file, "map", "Culture", name, inner)
+	return card(file, "culture", "Culture", name, inner)
 }
 
 // ── shared builders ─────────────────────────────────────────────────────────
@@ -536,7 +538,9 @@ func crestSVG(icon string) string {
 	if p == "" {
 		p = iconPaths["scroll"]
 	}
-	return `<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">` + p + `</svg>`
+	// Filled render to match the landing's Material icons (the .sc-crest CSS sets
+	// fill: currentColor; MDI glyphs are solid-fill designed, so no stroke).
+	return `<svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor">` + p + `</svg>`
 }
 
 // ── frontmatter / body helpers ──────────────────────────────────────────────
@@ -758,8 +762,9 @@ func complicationFlavor(body string) string {
 }
 
 // reBasicsHeading matches the "Basics" section header that ends a class's
-// intro flavor section.
-var reBasicsHeading = regexp.MustCompile(`(?mi)^#{1,6}\s+Basics\s*$`)
+// intro flavor section. The trailing attr_list is optional: classified Basics
+// sections (e.g. Beastheart's) carry a stamped ` {data-scc="…"}` suffix.
+var reBasicsHeading = regexp.MustCompile(`(?mi)^#{1,6}\s+Basics\s*(?:\{[^}]*\})?\s*$`)
 
 // classIntro returns the class's intro section: the markdown from the start of
 // the body up to (but excluding) the "Basics" header, with the page renderer's
@@ -842,19 +847,24 @@ func truncate(s string, max int) string {
 
 // ── crest icon paths (inline SVG, no emoji processing needed) ────────────────
 
+// iconPaths are filled Material Design Icon glyphs keyed by card type, matching
+// the crest icons on the Browse landing grid (static_content/docs/Browse/index.md)
+// so every index page's cards carry the same icon as that category's landing
+// card. Rendered filled (see crestSVG) — the landing's :material-…: icons are
+// fill-designed too, so an outline (stroke) glyph here would not match.
 var iconPaths = map[string]string{
-	"shield":    `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>`,
-	"wand":      `<path d="m3 21 9-9"/><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="M12.2 6.2 11 5"/>`,
-	"users":     `<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>`,
-	"briefcase": `<rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>`,
-	"gem":       `<path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/>`,
-	"crown":     `<path d="M11.6 3.3a.5.5 0 0 1 .9 0l2.3 4.6a.5.5 0 0 0 .7.2l4.2-2.4a.5.5 0 0 1 .7.6l-2.3 9a1 1 0 0 1-1 .8H6.9a1 1 0 0 1-1-.8l-2.3-9a.5.5 0 0 1 .7-.6l4.2 2.4a.5.5 0 0 0 .7-.2Z"/><path d="M5 21h14"/>`,
-	"alert":     `<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/>`,
-	"map":       `<path d="M14.1 4.2a2 2 0 0 0-1.3 0L8.4 5.6a2 2 0 0 1-1.3 0L4 4.5A1 1 0 0 0 3 5.4v12.8a1 1 0 0 0 .7.9l3.4 1.1a2 2 0 0 0 1.3 0l4.4-1.4a2 2 0 0 1 1.3 0l3.1 1.1a1 1 0 0 0 1.3-.9V6.4a1 1 0 0 0-.7-.9Z"/><path d="M9 5v15"/><path d="M15 4v15"/>`,
-	"sparkles":  `<path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3Z"/>`,
-	"star":      `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>`,
-	"zap":       `<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>`,
-	"move":      `<path d="M5 9l-3 3 3 3"/><path d="M9 5l3-3 3 3"/><path d="M15 19l-3 3-3-3"/><path d="M19 9l3 3-3 3"/><path d="M2 12h20"/><path d="M12 2v20"/>`,
-	"speech":    `<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>`,
-	"scroll":    `<path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/>`,
+	"kit":          `<path d="M16,5V4A2,2 0 0,0 14,2H10A2,2 0 0,0 8,4V5A4,4 0 0,0 4,9V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V9A4,4 0 0,0 16,5M10,4H14V5H10V4M12,9L14,11L12,13L10,11L12,9M18,16H9V18H8V16H6V15H18V16Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                             // bag-personal
+	"class":        `<path d="M12 1L3 5V11C3 16.5 6.8 21.7 12 23C17.2 21.7 21 16.5 21 11V5L12 1M15 15H13V18H11V15H9V13H11L10 7.1L12 5.5L14 7.1L13 13H15V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                    // shield-sword
+	"ancestry":     `<path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>`, // account-group
+	"career":       `<path d="M10 16V15H3L3 19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15H14V16H10M20 7H16V5L14 3H10L8 5V7H4C2.9 7 2 7.9 2 9V12C2 13.11 2.89 14 4 14H10V12H14V14H20C21.1 14 22 13.1 22 12V9C22 7.9 21.1 7 20 7M14 7H10V5H14V7Z"/>`,                                                                                                                                                                                                                                                                                                                                                                         // briefcase-variant
+	"treasure":     `<path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // treasure-chest
+	"perk":         `<path d="M16,9H19L14,16M10,9H14L12,17M5,9H8L10,16M15,4H17L19,7H16M11,4H13L14,7H10M7,4H9L8,7H5M6,2L2,8L12,22L22,8L18,2H6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  // diamond-stone
+	"title":        `<path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // crown
+	"complication": `<path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z"/>`,                                                                                                                                                                                                                                                                                                                                                         // alert-decagram
+	"culture":      `<path d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/>`,                                                                                                                                                                                                                                                                                                                                                            // map
+	"condition":    `<path d="M11 15H6L13 1V9H18L11 23V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     // lightning-bolt
+	"skill":        `<path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // star-four-points
+	"movement":     `<path d="M13,11H18L16.5,9.5L17.92,8.08L21.84,12L17.92,15.92L16.5,14.5L18,13H13V18L14.5,16.5L15.92,17.92L12,21.84L8.08,17.92L9.5,16.5L11,18V13H6L7.5,14.5L6.08,15.92L2.16,12L6.08,8.08L7.5,9.5L6,11H11V6L9.5,7.5L8.08,6.08L12,2.16L15.92,6.08L14.5,7.5L13,6V11Z"/>`,                                                                                                                                                                                                                                                                                                                                            // arrow-all
+	"negotiation":  `<path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                     // forum
+	"scroll":       `<path d="M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z"/>`,                                                                                                                                                                                                                                                                                                                                         // script-text
 }

@@ -144,6 +144,40 @@ func TestKitCardStatsAndEquipment(t *testing.T) {
 	}
 }
 
+// kitCard always uses the backpack crest (matching the Kits card on the Browse
+// landing) regardless of martial/magic/psionic kind, and surfaces the body's
+// first flavor line as a brief description.
+func TestKitCardIconAndDescription(t *testing.T) {
+	body := "The [Ranger](ranger.md) kit outfits you with medium armor and weapons for every challenge.\n\n## Equipment\n"
+	out := kitCard("---\nname: Ranger\ntype: kit\n---", body, "ranger.md", "Ranger")
+	if !strings.Contains(out, iconPaths["kit"]) {
+		t.Errorf("kit card must use the backpack (kit) crest icon, got:\n%s", out)
+	}
+	if !strings.Contains(out, "The Ranger kit outfits you") {
+		t.Errorf("kit card missing brief description line, got:\n%s", out)
+	}
+}
+
+// kitCard must always emit the equipment line (a non-breaking space when the
+// kit has none) so cards reserve the same vertical space and stay aligned.
+func TestKitCardEquipmentAlwaysPresent(t *testing.T) {
+	out := kitCard("---\nname: Boren\ntype: kit\n---", "", "boren.md", "Boren")
+	if !strings.Contains(out, `<div class="sc-card__equip">&nbsp;</div>`) {
+		t.Errorf("expected a placeholder equipment line, got:\n%s", out)
+	}
+}
+
+// classIntro must recognize a "Basics" header even when it carries a stamped
+// attr_list (the Beastheart class — a master class — classifies its Basics
+// section, so the page render appends ` {data-scc="…"}`).
+func TestClassIntroBasicsWithAttrList(t *testing.T) {
+	body := "Intro flavor.\n\n## Basics {data-scc=\"mcdm.beastheart.v1/feature.trait.beastheart.level-1/basics\"}\n\n**Starting Characteristics:** Might 2.\n"
+	got := classIntro(body)
+	if got != "Intro flavor." {
+		t.Errorf("classIntro = %q, want %q (Basics attr_list not matched → whole body leaked)", got, "Intro flavor.")
+	}
+}
+
 // signatureFromBody must strip the trailing {data-scc=…} attr_list the
 // heading-permalink pass stamps onto the ability heading.
 func TestSignatureNameStripsAttrList(t *testing.T) {
