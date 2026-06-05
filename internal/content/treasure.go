@@ -83,10 +83,87 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 		}
 	}
 
+	// Resolve echelon (item annotation → ancestor context) and record it.
+	echelon := ""
+	if ann := section.Annotation; ann != nil {
+		if v, ok := ann["echelon"]; ok {
+			echelon = v
+		}
+	}
+	if echelon == "" {
+		if v, ok := ctx.Lookup(section.HeadingLevel, "echelon"); ok {
+			echelon = v
+		}
+	}
+	if echelon != "" {
+		fm["echelon"] = echelon
+	}
+
+	// Category (consumable/trinket/armor/implement/weapon/other) was resolved
+	// into fm["treasure_type"] above from annotation or ancestor context.
+	category, _ := fm["treasure_type"].(string)
+
+	// Nested type path: treasure/<tier>/<category>. tier is the echelon slug
+	// (1st-echelon…4th-echelon) or "leveled" when the treasure has no echelon.
+	typePath := []string{"treasure"}
+	tier := echelonSlug(echelon)
+	if tier == "" {
+		tier = "leveled"
+	}
+	typePath = append(typePath, tier)
+	if category != "" {
+		typePath = append(typePath, category)
+	}
+
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        body,
-		TypePath:    []string{"treasure"},
+		TypePath:    typePath,
 		ItemID:      id,
+	}, nil
+}
+
+// echelonSlug converts an echelon number ("1".."4") into its tier slug
+// ("1st-echelon".."4th-echelon"). Any other value returns "".
+func echelonSlug(echelon string) string {
+	switch strings.TrimSpace(echelon) {
+	case "1":
+		return "1st-echelon"
+	case "2":
+		return "2nd-echelon"
+	case "3":
+		return "3rd-echelon"
+	case "4":
+		return "4th-echelon"
+	default:
+		return ""
+	}
+}
+
+// TreasureGroupParser handles @type: treasure-group sections — structural
+// category containers (e.g. "1st-Echelon Consumables", "Leveled Weapon
+// Treasures") that provide echelon + treasure-type context to child treasures.
+// Like FeatureGroupParser, it produces no standalone output file; the pipeline
+// pushes its annotation into the context stack regardless.
+type TreasureGroupParser struct{}
+
+func (p *TreasureGroupParser) Type() string { return "treasure-group" }
+
+func (p *TreasureGroupParser) Parse(ctx *context.ContextStack, section *parser.Section) (*ParsedContent, error) {
+	fm := map[string]any{
+		"name": section.Heading,
+		"type": "treasure-group",
+	}
+	if ann := section.Annotation; ann != nil {
+		if v, ok := ann["echelon"]; ok {
+			fm["echelon"] = v
+		}
+		if v, ok := ann["treasure-type"]; ok {
+			fm["treasure_type"] = v
+		}
+	}
+	return &ParsedContent{
+		Frontmatter: fm,
+		Body:        section.FullBodySource(),
 	}, nil
 }
