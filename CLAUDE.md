@@ -45,7 +45,8 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
 | `internal/site/config.go` | Site builder config types (sections, groups, books) |
 | `internal/site/cards.go` | Rich `.sc-card` index cards for Browse-tab type indexes (kit, class, ancestry, …) + shared `card()`/`crestSVG`/`iconPaths` |
-| `internal/site/ability_cards.go` | Rewrites each standalone ability/trait *page body* into the high-fantasy steel `.sc-ability` card (crest keyed to action type, power-roll panel, Effect/Trigger panels). Hooked in `buildSection` before `injectH1`; site-only — built from the page body since frontmatter is lossy for power rolls. Styled by v2 `docs/stylesheets/steel-ability-cards.css`. |
+| `internal/site/ability_cards.go` | `buildAbilityCardPage` dispatch + `renderAbilityCard`: rewrites each standalone `type: ability` *page body* into the raised high-fantasy steel `.sc-ability` card (crest keyed to action type, power-roll panel, Effect/Trigger panels). Hooked in `buildSection` before `injectH1`; site-only — built from the page body since frontmatter is lossy for power rolls. Styled by v2 `docs/stylesheets/steel-ability-cards.css`. |
+| `internal/site/trait_cards.go` | `renderTraitCard`: rewrites each `type: trait` *page body* into the recessed `.sc-trait` "codex niche" (colored left spine, embossed heading, level pill). Rebuilds the book-faithful subtree render's H2–H6 heading tree by level (typed by `{data-scc}`: `feature.ability.*` → nested ability plate via `renderAbilityCard`; else → recursive nested sub-trait niche). Routed from `buildAbilityCardPage`; styled by v2 `docs/stylesheets/steel-traits.css`. |
 | `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |
 | `internal/site/permalinks.go` | SCC permalink redirect-stub generator |
 

@@ -1,0 +1,201 @@
+package site
+
+import (
+	"strings"
+	"testing"
+)
+
+// A pure-prose trait → a flat niche with the drop-cap modifier and one paragraph.
+func TestRenderTraitCard_ProseOnly(t *testing.T) {
+	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait\nscc: mcdm.heroes.v1/feature.trait.dragon-knight/prismatic-scales"
+	body := "\nSelect one damage immunity granted by your Wyrmplate trait. You always have this immunity.\n"
+	got := renderTraitCard(fm, body)
+
+	wants := []string{
+		`<section class="sc-trait sc-trait--lead" data-action="trait">`,
+		`<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Dragon Knight</div>`,
+		`<h3 class="sc-trait__name">Prismatic Scales</h3>`,
+		`<p>Select one damage immunity`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("trait card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	if strings.Contains(got, "sc-trait__nest") {
+		t.Errorf("prose-only trait should have no nest rail\n%s", got)
+	}
+	if strings.Contains(got, "\n\n") {
+		t.Errorf("card must be contiguous (no blank lines) for md_in_html")
+	}
+}
+
+// A trait that grants a signature ability → lead-in + a nested .sc-ability inside
+// a single nest rail, with the Signature cost badge propagated from the lead-in.
+func TestRenderTraitCard_GrantsAbility(t *testing.T) {
+	fm := "ancestry: dragon-knight\nname: Dragon Breath\ntype: trait\nlevel: \"1\""
+	body := `
+You have the following signature ability.
+
+## Dragon Breath {data-scc="mcdm.heroes.v1/feature.ability.dragon-knight/dragon-breath"}
+
+*A furious exhalation of energy washes over your foes.*
+
+| **Area, Magic**        |               **Main action** |
+|------------------------|------------------------------:|
+| **📏 3 cube within 1** | **🎯 Each enemy in the area** |
+
+**Power Roll + Might or Presence:**
+
+- **≤11:** 2 damage
+- **12-16:** 4 damage
+- **17+:** 6 damage
+
+**Effect:** You choose the ability's damage type.
+`
+	got := renderTraitCard(fm, body)
+
+	wants := []string{
+		`<div class="sc-trait__tag">Level <span class="num">1</span></div>`,
+		`<p class="sc-trait__leadin"><span class="sc-trait__dia"></span>You have the following signature ability.</p>`,
+		`<div class="sc-trait__nest">`,
+		`<article class="sc-ability sc-fil" data-action="main">`, // nested ability plate
+		`<div class="sc-ability__cost">Signature</div>`,          // signature hint propagated
+		`<span class="chars">Might or Presence</span>`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("trait card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	// the lead-in is prose-but-leadin, so no drop cap
+	if strings.Contains(got, "sc-trait--lead") {
+		t.Errorf("lead-in paragraph should not trigger the drop-cap modifier\n%s", got)
+	}
+}
+
+// A choose-one feature whose options are nested sub-traits (recursive niches),
+// one of which itself grants an ability (deep nesting).
+func TestRenderTraitCard_NestedSubTraits(t *testing.T) {
+	fm := "ancestry: dragon-knight\nname: Dragon Knight Traits\ntype: trait"
+	body := `
+Dragon knight heroes have access to the following traits.
+
+## Purchased Dragon Knight Traits
+
+You have 3 ancestry points to spend on the following traits.
+
+### Draconian Guard {data-scc="mcdm.heroes.v1/feature.trait.dragon-knight/draconian-guard"}
+
+Whenever you or an adjacent creature takes damage, you can guard against the blow.
+
+### Draconian Pride {data-scc="mcdm.heroes.v1/feature.trait.dragon-knight/draconian-pride"}
+
+You have the following signature ability.
+
+#### Draconian Pride {data-scc="mcdm.heroes.v1/feature.ability.dragon-knight/draconian-pride"}
+
+*You let loose a mighty roar.*
+
+**Power Roll + Might or Presence:**
+
+- **≤11:** 2 damage
+- **12-16:** 5 damage
+- **17+:** 7 damage
+`
+	got := renderTraitCard(fm, body)
+
+	// top niche
+	if !strings.Contains(got, `<h3 class="sc-trait__name">Dragon Knight Traits</h3>`) {
+		t.Errorf("missing top trait name\n%s", got)
+	}
+	// the organizational H2 (no scc) becomes a nested sub-trait niche...
+	if !strings.Contains(got, `<h3 class="sc-trait__name">Purchased Dragon Knight Traits</h3>`) {
+		t.Errorf("missing organizational sub-trait niche\n%s", got)
+	}
+	// ...with no eyebrow (nested traits omit the class line)
+	if strings.Count(got, "sc-trait__eyebrow") != 1 {
+		t.Errorf("only the top trait should carry an eyebrow; got %d\n%s", strings.Count(got, "sc-trait__eyebrow"), got)
+	}
+	// the H3 options are sub-trait niches
+	if !strings.Contains(got, `<h3 class="sc-trait__name">Draconian Guard</h3>`) {
+		t.Errorf("missing Draconian Guard sub-trait\n%s", got)
+	}
+	if !strings.Contains(got, `<h3 class="sc-trait__name">Draconian Pride</h3>`) {
+		t.Errorf("missing Draconian Pride sub-trait\n%s", got)
+	}
+	// the H4 under Draconian Pride is its nested ability plate
+	if !strings.Contains(got, `<article class="sc-ability sc-fil"`) {
+		t.Errorf("missing deeply-nested ability plate\n%s", got)
+	}
+	// multiple nest rails (top + the Purchased group + the ability-granting option)
+	if strings.Count(got, "sc-trait__nest") < 2 {
+		t.Errorf("expected multiple nest rails for recursive structure\n%s", got)
+	}
+	if strings.Contains(got, "\n\n") {
+		t.Errorf("card must be contiguous (no blank lines) for md_in_html")
+	}
+}
+
+// A benefit/drawback labeled paragraph → titled tone segment.
+func TestRenderTraitCard_Segments(t *testing.T) {
+	fm := "class: censor\nname: Sworn Enemy\ntype: trait"
+	body := "\n**Benefit:** You deal extra damage to your sworn enemy.\n\n**Drawback:** You have a bane on tests against other creatures.\n"
+	got := renderTraitCard(fm, body)
+
+	wants := []string{
+		`<div class="sc-trait__seg" data-tone="benefit">`,
+		`<span class="tag">Benefit</span>`,
+		`<div class="sc-trait__seg" data-tone="drawback">`,
+		`<span class="tag">Drawback</span>`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("segment trait missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+}
+
+// The level pill falls back to a `level-N` segment in the scc when frontmatter has
+// no level (beastheart traits).
+func TestTraitTag_SCCFallback(t *testing.T) {
+	if got := traitTag("", "mcdm.beastheart.v1/feature.trait.beastheart.level-5/there-for-each-other"); !strings.Contains(got, `<span class="num">5</span>`) {
+		t.Errorf("expected level 5 from scc fallback, got %q", got)
+	}
+	if got := traitTag("", "mcdm.heroes.v1/feature.trait.censor/no-level"); got != "" {
+		t.Errorf("expected empty tag when no level anywhere, got %q", got)
+	}
+}
+
+// parseTraitTree rebuilds the heading subtree by level.
+func TestParseTraitTree_Levels(t *testing.T) {
+	body := `intro prose
+
+## A {data-scc="x/feature.trait.c/a"}
+
+a body
+
+### A1 {data-scc="x/feature.ability.c/a1"}
+
+a1 body
+
+## B {data-scc="x/feature.trait.c/b"}
+
+b body`
+	intro, roots := parseTraitTree(body)
+	if intro != "intro prose" {
+		t.Errorf("intro = %q", intro)
+	}
+	if len(roots) != 2 {
+		t.Fatalf("expected 2 roots, got %d", len(roots))
+	}
+	if roots[0].name != "A" || len(roots[0].children) != 1 {
+		t.Fatalf("A should own one child, got %+v", roots[0])
+	}
+	if !roots[0].children[0].isAbility {
+		t.Errorf("A1 should be flagged as ability")
+	}
+	if roots[1].name != "B" || len(roots[1].children) != 0 {
+		t.Errorf("B should be a leaf sibling of A")
+	}
+}
