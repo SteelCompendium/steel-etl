@@ -69,6 +69,45 @@ static_content: ./static
 	}
 }
 
+func TestLoadSiteConfig_BookDescriptionAndIcon(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, "site.yaml")
+	content := `
+source_dir: ../output/en/md-linked
+docs_dir: ./docs
+books:
+  - key: mcdm.heroes.v1
+    folder: heroes
+    label: Heroes
+    order: 1
+    icon: sword-cross
+    description: The core rulebook for building and playing heroes.
+sections:
+  - name: Read
+    title: Books
+    include:
+      - chapter/
+    group_by_book: true
+`
+	if err := os.WriteFile(path, []byte(content), 0644); err != nil {
+		t.Fatal(err)
+	}
+	cfg, err := LoadSiteConfig(path)
+	if err != nil {
+		t.Fatalf("LoadSiteConfig failed: %v", err)
+	}
+	if len(cfg.Books) != 1 {
+		t.Fatalf("expected 1 book, got %d", len(cfg.Books))
+	}
+	if cfg.Books[0].Icon != "sword-cross" {
+		t.Errorf("Icon = %q, want %q", cfg.Books[0].Icon, "sword-cross")
+	}
+	want := "The core rulebook for building and playing heroes."
+	if cfg.Books[0].Description != want {
+		t.Errorf("Description = %q, want %q", cfg.Books[0].Description, want)
+	}
+}
+
 func TestSourceDirsBackCompat(t *testing.T) {
 	// A config using only the legacy singular source_dir should expose it via SourceDirList().
 	cfg := &Config{ConfigDir: "/cfg", SourceDir: "/cfg/a"}

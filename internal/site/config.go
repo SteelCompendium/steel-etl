@@ -112,6 +112,12 @@ type BookConfig struct {
 	Folder string `yaml:"folder"`
 	Label  string `yaml:"label"`
 	Order  int    `yaml:"order"`
+	// Description is a hand-authored blurb shown on the book's card in the
+	// Read-section landing index. Optional.
+	Description string `yaml:"description,omitempty"`
+	// Icon is the iconPaths key for the book card's crest (e.g. "sword-cross").
+	// Empty falls back to the generic "book" glyph. See iconPaths in cards.go.
+	Icon string `yaml:"icon,omitempty"`
 }
 
 // BookByKey returns the BookConfig whose Key matches, and whether it was found.
