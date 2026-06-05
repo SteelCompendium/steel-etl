@@ -8,9 +8,9 @@ import (
 )
 
 var (
-	nonAlphaNum    = regexp.MustCompile(`[^a-z0-9]+`)
-	leadTrail      = regexp.MustCompile(`^-+|-+$`)
-	costSuffixRe   = regexp.MustCompile(`\s*\(\d+\s+\w+\)\s*$`)
+	nonAlphaNum  = regexp.MustCompile(`[^a-z0-9]+`)
+	leadTrail    = regexp.MustCompile(`^-+|-+$`)
+	costSuffixRe = regexp.MustCompile(`\s*\(\d+\s+\w+\)\s*$`)
 )
 
 // findAncestorID walks the context stack upward from the given level, looking
