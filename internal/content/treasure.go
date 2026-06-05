@@ -103,13 +103,28 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 	// into fm["treasure_type"] above from annotation or ancestor context.
 	category, _ := fm["treasure_type"].(string)
 
-	// Nested type path: treasure/<tier>/<category>. tier is the echelon slug
-	// (1st-echelon…4th-echelon) or "leveled" when the treasure has no echelon.
-	typePath := []string{"treasure"}
-	tier := echelonSlug(echelon)
+	// Nested type path: treasure/<tier>/<category>. tier precedence:
+	// explicit @tier (annotation/context, e.g. "artifact") → echelon slug
+	// (1st-echelon…4th-echelon) → "leveled" when the treasure has no echelon.
+	tier := ""
+	if ann := section.Annotation; ann != nil {
+		if v, ok := ann["tier"]; ok {
+			tier = v
+		}
+	}
+	if tier == "" {
+		if v, ok := ctx.Lookup(section.HeadingLevel, "tier"); ok {
+			tier = v
+		}
+	}
+	if tier == "" {
+		tier = echelonSlug(echelon)
+	}
 	if tier == "" {
 		tier = "leveled"
 	}
+
+	typePath := []string{"treasure"}
 	typePath = append(typePath, tier)
 	if category != "" {
 		typePath = append(typePath, category)
@@ -160,6 +175,9 @@ func (p *TreasureGroupParser) Parse(ctx *context.ContextStack, section *parser.S
 		}
 		if v, ok := ann["treasure-type"]; ok {
 			fm["treasure_type"] = v
+		}
+		if v, ok := ann["tier"]; ok {
+			fm["tier"] = v
 		}
 	}
 	return &ParsedContent{

@@ -91,6 +91,29 @@ func TestTreasureParser_ItemAnnotationOverridesContext(t *testing.T) {
 	}
 }
 
+func TestTreasureParser_TierOverride_Artifact(t *testing.T) {
+	p := &TreasureParser{}
+	ctx := context.NewContextStack(nil)
+	// Artifacts have no echelon/category; the group supplies an explicit tier.
+	ctx.Push(3, context.Metadata{"type": "treasure-group", "tier": "artifact"})
+
+	section := &parser.Section{
+		Heading:      "Blade of a Thousand Years",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "treasure"},
+		BodySource:   "A powerful treasure that can unbalance the game.",
+	}
+
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse failed: %v", err)
+	}
+	want := []string{"treasure", "artifact"}
+	if !reflect.DeepEqual(result.TypePath, want) {
+		t.Errorf("TypePath = %v, want %v", result.TypePath, want)
+	}
+}
+
 func TestTreasureGroupParser_NoOutput(t *testing.T) {
 	p := &TreasureGroupParser{}
 	if p.Type() != "treasure-group" {
