@@ -91,6 +91,7 @@ The parser extracts most structured data from the **body text** of each section 
 | `chapter` | H1 top-level chapters | Title, content passthrough |
 | `class` | H2 class sections (Fury, Shadow...) | Overview, heroic resource |
 | `feature-group` | H3 "Nth-Level Features" containers | Level context for children |
+| `treasure-group` | Treasure category headers (e.g. "1st-Echelon Consumables", "Leveled Weapon Treasures", "Artifacts") | echelon/tier + treasure-type context for child treasures; emits no file |
 
 ### Class Content
 
@@ -117,6 +118,45 @@ The parser extracts most structured data from the **body text** of each section 
 |-------|---------|-----------------|
 | `title` | Title entries | Echelon, benefits |
 | `treasure` | Treasure entries | Treasure type, properties |
+
+#### Treasure hierarchy
+
+Treasures nest as `treasure/<tier>/<category>/<item>`. Category headers are
+`treasure-group` containers; individual treasures are `treasure` items that
+inherit echelon/tier + category from the container via context (the same pattern
+as `feature-group` → `ability`).
+
+```markdown
+<!-- @type: treasure-group | @echelon: 1 | @treasure-type: consumable -->
+#### 1st-Echelon Consumables
+
+<!-- @type: treasure -->
+##### Black Ash Dart
+...
+
+<!-- @type: treasure-group | @treasure-type: weapon -->
+#### Leveled Weapon Treasures
+
+<!-- @type: treasure -->
+##### Displacer
+...
+
+<!-- @type: treasure-group | @tier: artifact -->
+### Artifacts
+
+<!-- @type: treasure -->
+##### Blade of a Thousand Years
+...
+```
+
+- `@echelon`: `1`–`4` for echelon-tiered treasures (tier becomes `1st-echelon`…
+  `4th-echelon`). Omit for leveled treasures (tier becomes `leveled`).
+- `@tier`: explicit tier override, used for `artifact` (treasures with no echelon
+  and no leveled category). Takes precedence over `@echelon`.
+- `@treasure-type` (category): `consumable` | `trinket` | `armor` | `implement` |
+  `weapon` | `other`. Omitted for artifacts (→ `treasure/artifact/<item>`).
+- An item may set its own `@echelon`/`@treasure-type`/`@tier` to override the
+  container (beastheart trinkets carry per-item `@echelon`).
 
 ### Rules & World
 
