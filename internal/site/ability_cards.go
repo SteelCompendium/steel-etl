@@ -107,10 +107,18 @@ func renderAbilityCard(fm, body string) string {
 	var tiers [3]string
 	hasPR := false
 
-	type section struct{ label, text string }
+	// A section holds one or more raw paragraph/list blocks rendered inside a
+	// single panel. Consecutive unlabeled paragraphs (and lists) following a
+	// labeled paragraph fold into that section's blocks — so e.g. a multi-
+	// paragraph Effect renders as one container, not several.
+	type section struct {
+		label  string
+		blocks []string
+	}
 	var sections []section
 	type enhancement struct{ cost, text string }
 	var enhancements []enhancement
+	cur := -1 // index of the open section unlabeled prose appends to (-1 = none)
 
 	expectTiers := false
 	for _, p := range paraSplitRe.Split(body, -1) {
@@ -134,7 +142,7 @@ func renderAbilityCard(fm, body string) string {
 			if tgt != "" {
 				target = tgt
 			}
-			expectTiers = false
+			expectTiers, cur = false, -1
 			continue
 		}
 
@@ -143,7 +151,7 @@ func renderAbilityCard(fm, body string) string {
 			if flavor == "" {
 				flavor = strings.TrimSpace(strings.Trim(tp, "*"))
 			}
-			expectTiers = false
+			expectTiers, cur = false, -1
 			continue
 		}
 
@@ -151,7 +159,7 @@ func renderAbilityCard(fm, body string) string {
 		if m := prHeadRe.FindStringSubmatch(tp); m != nil {
 			prChars = strings.TrimSpace(m[1])
 			hasPR = true
-			expectTiers = true
+			expectTiers, cur = true, -1
 			continue
 		}
 
@@ -166,17 +174,24 @@ func renderAbilityCard(fm, body string) string {
 		// labeled paragraph → Effect / Trigger / Special… or a Spend enhancement
 		if m := labelRe.FindStringSubmatch(tp); m != nil {
 			label := strings.TrimSpace(m[1])
-			text := collapseLines(m[2])
 			if strings.HasPrefix(strings.ToLower(label), "spend") {
-				enhancements = append(enhancements, enhancement{cost: label, text: text})
+				enhancements = append(enhancements, enhancement{cost: label, text: collapseLines(m[2])})
+				cur = -1
 			} else {
-				sections = append(sections, section{label: label, text: text})
+				sections = append(sections, section{label: label, blocks: []string{m[2]}})
+				cur = len(sections) - 1
 			}
 			continue
 		}
 
-		// plain prose (common for traits): an untitled effect panel
-		sections = append(sections, section{label: "", text: collapseLines(tp)})
+		// unlabeled prose / list → fold into the open section, or start an
+		// untitled one (common for traits).
+		if cur >= 0 {
+			sections[cur].blocks = append(sections[cur].blocks, tp)
+		} else {
+			sections = append(sections, section{blocks: []string{tp}})
+			cur = len(sections) - 1
+		}
 	}
 
 	act := actionInfo(actionType, ctype)
@@ -236,7 +251,11 @@ func renderAbilityCard(fm, body string) string {
 		if s.label != "" {
 			fmt.Fprintf(&b, "<div class=\"sc-ability__section-head\">%s<span class=\"tag\">%s</span></div>\n", dia, html.EscapeString(s.label))
 		}
-		fmt.Fprintf(&b, "<div class=\"sc-ability__section-body\"><p>%s</p></div>\n", richInline(s.text))
+		b.WriteString("<div class=\"sc-ability__section-body\">")
+		for _, blk := range s.blocks {
+			b.WriteString(renderSectionBlock(blk))
+		}
+		b.WriteString("</div>\n")
 		b.WriteString("</div>\n")
 	}
 
@@ -350,6 +369,43 @@ func parseTiers(para string, tiers *[3]string) {
 func collapseLines(s string) string {
 	fields := strings.Fields(strings.ReplaceAll(s, "\n", " "))
 	return strings.Join(fields, " ")
+}
+
+// renderSectionBlock renders one paragraph/list block of a section body: a
+// bullet list becomes a <ul>, anything else a <p>. Keeps a multi-paragraph
+// Effect (with optional bullet list) inside a single section container.
+func renderSectionBlock(block string) string {
+	if isListBlock(block) {
+		var sb strings.Builder
+		sb.WriteString("<ul>")
+		for _, ln := range strings.Split(block, "\n") {
+			t := strings.TrimSpace(ln)
+			if t == "" {
+				continue
+			}
+			sb.WriteString("<li>" + richInline(strings.TrimSpace(t[1:])) + "</li>")
+		}
+		sb.WriteString("</ul>")
+		return sb.String()
+	}
+	return "<p>" + richInline(collapseLines(block)) + "</p>"
+}
+
+// isListBlock reports whether every non-empty line of a block is a "- "/"* "
+// bullet item.
+func isListBlock(block string) bool {
+	any := false
+	for _, ln := range strings.Split(block, "\n") {
+		t := strings.TrimSpace(ln)
+		if t == "" {
+			continue
+		}
+		if !strings.HasPrefix(t, "- ") && !strings.HasPrefix(t, "* ") {
+			return false
+		}
+		any = true
+	}
+	return any
 }
 
 // railValue is a rail cell value: strip emoji, then render inline emphasis.

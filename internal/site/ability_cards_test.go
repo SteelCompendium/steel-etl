@@ -136,6 +136,42 @@ func TestRichInline_LinksAndBold(t *testing.T) {
 	}
 }
 
+func TestRenderAbilityCard_MultiParagraphEffectOneContainer(t *testing.T) {
+	fm := "action_type: Maneuver\nname: Judgment\ntype: ability"
+	body := `
+**Effect:** The target is judged by you.
+
+Whenever a creature judged by you uses a main action, you can react.
+
+Additionally, you can spend 1 wrath to take one of the following:
+
+- When an adjacent creature shifts, you make a free strike.
+- When a creature makes a power roll, they take a bane.
+
+You can choose only one option at a time.
+`
+	got := renderAbilityCard(fm, body)
+	// Exactly one section container (the Effect), holding every paragraph + the list.
+	if n := strings.Count(got, `class="sc-ability__section"`); n != 1 {
+		t.Fatalf("expected 1 section container, got %d\n--- got ---\n%s", n, got)
+	}
+	if n := strings.Count(got, `class="sc-ability__section-head"`); n != 1 {
+		t.Errorf("expected exactly 1 section head (Effect), got %d", n)
+	}
+	for _, w := range []string{
+		"<span class=\"tag\">Effect</span>",
+		"<p>The target is judged by you.</p>",
+		"<p>Whenever a creature judged by you uses a main action, you can react.</p>",
+		"<ul><li>When an adjacent creature shifts, you make a free strike.</li>",
+		"<li>When a creature makes a power roll, they take a bane.</li></ul>",
+		"<p>You can choose only one option at a time.</p>",
+	} {
+		if !strings.Contains(got, w) {
+			t.Errorf("section body missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+}
+
 func TestCardHref_ExternalAndAnchorPassThrough(t *testing.T) {
 	for _, target := range []string{"https://example.com", "#frag", "mailto:a@b.com"} {
 		if got := cardHref(target); got != target {
