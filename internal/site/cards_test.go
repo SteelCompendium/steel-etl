@@ -1,6 +1,8 @@
 package site
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -198,5 +200,45 @@ func TestCardStretchedLinkStructure(t *testing.T) {
 	}
 	if !strings.Contains(out, `<a class="sc-card__link" href="agent/" aria-label="Agent"></a>`) {
 		t.Errorf("expected stretched overlay link to directory URL, got:\n%s", out)
+	}
+}
+
+func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "treasure", "1st-echelon", "consumable")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	item := "---\nname: Black Ash Dart\ntype: treasure\ntreasure_type: consumable\nechelon: \"1\"\nkeywords:\n  - Magic\n---\n\nAs a maneuver, you make a ranged free strike using a black ash dart.\n"
+	if err := os.WriteFile(filepath.Join(leaf, "black-ash-dart.md"), []byte(item), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	content, ok := buildCardsContent(leaf, "consumable", []string{"black-ash-dart.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true for treasure leaf dir")
+	}
+	if !strings.Contains(content, "sc-cards") {
+		t.Errorf("expected sc-cards wrapper, got:\n%s", content)
+	}
+	if !strings.Contains(content, "Black Ash Dart") {
+		t.Errorf("expected item name in cards, got:\n%s", content)
+	}
+	// Leaf title comes from the dirName.
+	if !strings.Contains(content, "# Consumable") {
+		t.Errorf("expected '# Consumable' title, got:\n%s", content)
+	}
+}
+
+func TestBuildCardsContent_TreasureIntermediateFallsBack(t *testing.T) {
+	root := t.TempDir()
+	mid := filepath.Join(root, "treasure", "1st-echelon")
+	if err := os.MkdirAll(filepath.Join(mid, "consumable"), 0755); err != nil {
+		t.Fatal(err)
+	}
+	// Intermediate dir has a subdir → not a leaf → no cards.
+	_, ok := buildCardsContent(mid, "1st-echelon", nil, []string{"consumable"})
+	if ok {
+		t.Errorf("buildCardsContent ok=true for intermediate dir, want false")
 	}
 }

@@ -58,13 +58,23 @@ var typeIcon = map[string]string{
 // buildCardsContent returns rich-card index markup for a supported flat type.
 // ok=false → caller falls back to the default browse-index list.
 func buildCardsContent(dir, dirName string, files, subdirs []string) (content string, ok bool) {
-	if !richCardTypes[dirName] || len(files) == 0 || len(subdirs) > 0 {
+	cardType := dirName
+	if !richCardTypes[dirName] {
+		// Treasure leaves are nested (treasure/<tier>/<category>); render their
+		// items as treasure cards even though the leaf dirName isn't "treasure".
+		if len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "treasure") {
+			cardType = "treasure"
+		} else {
+			return "", false
+		}
+	}
+	if len(files) == 0 || len(subdirs) > 0 {
 		return "", false
 	}
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 
 	wrapper := "sc-cards"
-	if wideCardTypes[dirName] {
+	if wideCardTypes[cardType] {
 		wrapper = "sc-cards sc-cards--wide"
 	}
 
@@ -80,10 +90,20 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 		if name == "" {
 			name = fileToTitle(f)
 		}
-		sb.WriteString(cardFor(dirName, fm, body, f, name))
+		sb.WriteString(cardFor(cardType, fm, body, f, name))
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
+}
+
+// pathHasSegment reports whether any path segment of dir equals seg.
+func pathHasSegment(dir, seg string) bool {
+	for _, p := range strings.Split(filepath.ToSlash(dir), "/") {
+		if p == seg {
+			return true
+		}
+	}
+	return false
 }
 
 func cardFor(t, fm, body, file, name string) string {
