@@ -36,6 +36,92 @@ func TestParseStatGrid(t *testing.T) {
 	}
 }
 
+const cursespitterFeatures = "" +
+	"> 🏹 **Eye of Surlach (Signature Ability)**\n" +
+	">\n" +
+	"> | **Magic, Ranged, Strike** |     **Main action** |\n" +
+	"> |---------------------------|--------------------:|\n" +
+	"> | **📏 Ranged 15**          | **🎯 One creature** |\n" +
+	">\n" +
+	"> **Power Roll + 2:**\n" +
+	">\n" +
+	"> - **≤11:** 3 corruption damage; I < 0 weakened (save ends)\n" +
+	"> - **12-16:** 4 corruption damage; I < 1 weakened (save ends)\n" +
+	"> - **17+:** 5 corruption damage; I < 2 weakened (save ends)\n" +
+	"\n" +
+	"> ⭐️ **Crafty**\n" +
+	">\n" +
+	"> The cursespitter doesn't provoke opportunity attacks by moving.\n"
+
+func TestParseStatblockFeatures(t *testing.T) {
+	got := ParseStatblockFeatures(cursespitterFeatures)
+	if len(got) != 2 {
+		t.Fatalf("got %d features, want 2", len(got))
+	}
+
+	ability := got[0]
+	if ability["name"] != "Eye of Surlach" {
+		t.Errorf("name: got %v", ability["name"])
+	}
+	if ability["ability_type"] != "Signature Ability" {
+		t.Errorf("ability_type: got %v", ability["ability_type"])
+	}
+	if ability["icon"] != "🏹" {
+		t.Errorf("icon: got %v", ability["icon"])
+	}
+	if ability["usage"] != "Main action" {
+		t.Errorf("usage: got %v", ability["usage"])
+	}
+	if ability["distance"] != "Ranged 15" {
+		t.Errorf("distance: got %v", ability["distance"])
+	}
+	if ability["target"] != "One creature" {
+		t.Errorf("target: got %v", ability["target"])
+	}
+	kw, _ := ability["keywords"].([]string)
+	if len(kw) != 3 || kw[0] != "Magic" {
+		t.Errorf("keywords: got %v", ability["keywords"])
+	}
+	effects, _ := ability["effects"].([]map[string]any)
+	if len(effects) != 1 || effects[0]["tier1"] != "3 corruption damage; I < 0 weakened (save ends)" {
+		t.Errorf("effects: got %v", ability["effects"])
+	}
+
+	trait := got[1]
+	if trait["name"] != "Crafty" || trait["feature_type"] != "trait" {
+		t.Errorf("trait: got %+v", trait)
+	}
+	teff, _ := trait["effects"].([]map[string]any)
+	if len(teff) != 1 || teff[0]["effect"] != "The cursespitter doesn't provoke opportunity attacks by moving." {
+		t.Errorf("trait effect: got %v", trait["effects"])
+	}
+}
+
+func TestParseStatblockFeatureCost(t *testing.T) {
+	block := "" +
+		"> 🏹 **Dizzying Hex (1 Malice)**\n" +
+		">\n" +
+		"> | **Magic, Ranged, Strike** |        **Maneuver** |\n" +
+		"> |---------------------------|--------------------:|\n" +
+		"> | **📏 Ranged 10**          | **🎯 One creature** |\n" +
+		">\n" +
+		"> **Power Roll + 2:**\n" +
+		">\n" +
+		"> - **≤11:** I < 0 prone\n" +
+		"> - **12-16:** I < 1 prone and can't stand (EoT)\n" +
+		"> - **17+:** Prone; I < 2 can't stand (save ends)\n"
+	got := ParseStatblockFeatures(block)
+	if len(got) != 1 {
+		t.Fatalf("got %d, want 1", len(got))
+	}
+	if got[0]["cost"] != "1 Malice" {
+		t.Errorf("cost: got %v", got[0]["cost"])
+	}
+	if got[0]["usage"] != "Maneuver" {
+		t.Errorf("usage: got %v", got[0]["usage"])
+	}
+}
+
 func TestSplitRoleCell(t *testing.T) {
 	tests := []struct{ in, org, role string }{
 		{"Horde Hexer", "Horde", "Hexer"},
