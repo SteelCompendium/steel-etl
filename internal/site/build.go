@@ -228,6 +228,7 @@ type chapterRef struct {
 	file  string // basename, e.g. "rewards.md"
 	name  string // frontmatter name, e.g. "Rewards"
 	order int
+	blurb string // first prose paragraph of the chapter body (for the card)
 }
 
 // writeBookNavAndIndexes emits, for a GroupByBook section: one ordered .nav.yml
@@ -259,7 +260,7 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 			if e.IsDir() || !strings.HasSuffix(e.Name(), ".md") || e.Name() == "index.md" {
 				continue
 			}
-			fm, _ := splitFrontmatter(readFile(filepath.Join(bookDir, e.Name())))
+			fm, body := splitFrontmatter(readFile(filepath.Join(bookDir, e.Name())))
 			name := parseFrontmatterField(fm, "name")
 			if name == "" {
 				name = fileToTitle(e.Name())
@@ -268,6 +269,7 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 				file:  e.Name(),
 				name:  name,
 				order: parseFrontmatterInt(fm, "order", 1<<30),
+				blurb: bodyBlurb(body, 200),
 			})
 		}
 		sort.SliceStable(chapters, func(i, j int) bool {
@@ -291,18 +293,18 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 			navCount++
 		}
 
-		// Per-book index.md: ordered chapter list, or a placeholder when the
+		// Per-book index.md: ordered chapter cards, or a placeholder when the
 		// book has no chapters yet.
 		var ib strings.Builder
 		ib.WriteString("# " + b.Label + "\n\n---\n\n")
 		if len(chapters) == 0 {
 			ib.WriteString("*Chapters for this book haven't been added to the compendium yet.*\n")
 		} else {
-			ib.WriteString("<div class=\"browse-index\" markdown>\n\n")
+			ib.WriteString("<div class=\"sc-cards\">\n")
 			for _, c := range chapters {
-				ib.WriteString("- [" + c.name + "](" + c.file + ")\n")
+				ib.WriteString(chapterCard(c.file, c.name, c.blurb))
 			}
-			ib.WriteString("\n</div>\n")
+			ib.WriteString("</div>\n")
 		}
 		if err := os.WriteFile(filepath.Join(bookDir, "index.md"), []byte(ib.String()), 0644); err != nil {
 			errs = append(errs, fmt.Sprintf("book index %s: %v", b.Folder, err))
@@ -327,14 +329,14 @@ func writeBookNavAndIndexes(cfg *Config, section SectionConfig) (int, []string) 
 		navCount++
 	}
 
-	// Section landing index.md: lists the books. (Search exclusion frontmatter
+	// Section landing index.md: a card per book. (Search exclusion frontmatter
 	// is injected later by applySearchExclusion for search-excluded sections.)
 	var lb strings.Builder
-	lb.WriteString("# " + title + "\n\n---\n\n<div class=\"browse-index\" markdown>\n\n")
+	lb.WriteString("# " + title + "\n\n---\n\n<div class=\"sc-cards\">\n")
 	for _, b := range present {
-		lb.WriteString("- [" + b.Label + "](" + b.Folder + "/)\n")
+		lb.WriteString(bookCard(b))
 	}
-	lb.WriteString("\n</div>\n")
+	lb.WriteString("</div>\n")
 	if err := os.WriteFile(filepath.Join(sectionDir, "index.md"), []byte(lb.String()), 0644); err != nil {
 		errs = append(errs, fmt.Sprintf("section index %s: %v", section.Name, err))
 	}

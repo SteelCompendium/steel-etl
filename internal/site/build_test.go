@@ -990,8 +990,48 @@ func TestBuildBookNavAndIndexes(t *testing.T) {
 		}
 	}
 	beastIdx, _ := os.ReadFile(filepath.Join(docs, "Read", "beastheart", "index.md"))
-	if f, r := strings.Index(string(beastIdx), "The Beastheart & The Faeries"), strings.Index(string(beastIdx), "Rewards"); f < 0 || r < 0 || f > r {
+	// Card names are HTML-escaped by card(), so "&" appears as "&amp;".
+	if f, r := strings.Index(string(beastIdx), "The Beastheart &amp; The Faeries"), strings.Index(string(beastIdx), "Rewards"); f < 0 || r < 0 || f > r {
 		t.Errorf("beastheart index not in source order:\n%s", beastIdx)
+	}
+}
+
+func TestBuildBookIndexesUseCards(t *testing.T) {
+	dir := t.TempDir()
+	src := filepath.Join(dir, "src")
+	docs := filepath.Join(dir, "docs")
+	writeFile(t, filepath.Join(src, "chapter", "ancestries.md"),
+		"---\nname: Ancestries\nscc: mcdm.heroes.v1/chapter/ancestries\ntype: chapter\norder: 3\n---\n\nFantastic peoples inhabit the worlds of Draw Steel.\n")
+	cfg := &Config{
+		SourceDirs: []string{src},
+		DocsDir:    docs,
+		Books: []BookConfig{
+			{Key: "mcdm.heroes.v1", Folder: "heroes", Label: "Heroes", Order: 1,
+				Icon: "sword-cross", Description: "The core rulebook."},
+		},
+		Sections: []SectionConfig{{Name: "Read", Title: "Books", Include: []string{"chapter/"}, GroupByBook: true}},
+	}
+	if _, err := Build(cfg); err != nil {
+		t.Fatalf("build: %v", err)
+	}
+
+	// Section landing: a book card grid with the book's description + icon.
+	landing, _ := os.ReadFile(filepath.Join(docs, "Read", "index.md"))
+	for _, want := range []string{`<div class="sc-cards">`, `class="sc-card`, ">Heroes<", "The core rulebook.", iconPaths["sword-cross"]} {
+		if !strings.Contains(string(landing), want) {
+			t.Errorf("Read landing missing %q:\n%s", want, landing)
+		}
+	}
+	if strings.Contains(string(landing), "browse-index") {
+		t.Errorf("Read landing should no longer use browse-index:\n%s", landing)
+	}
+
+	// Per-book index: a chapter card grid with the auto-extracted blurb.
+	idx, _ := os.ReadFile(filepath.Join(docs, "Read", "heroes", "index.md"))
+	for _, want := range []string{`<div class="sc-cards">`, ">Ancestries<", "Fantastic peoples inhabit the worlds of Draw Steel.", iconPaths["chapter"]} {
+		if !strings.Contains(string(idx), want) {
+			t.Errorf("heroes index missing %q:\n%s", want, idx)
+		}
 	}
 }
 
