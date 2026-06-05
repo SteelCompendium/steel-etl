@@ -187,8 +187,16 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 	// Now that every section's SCC code is known, render each page's book-order
 	// PageBody (marking coded descendant headings with data-scc) and write to all
 	// generators. Deferred from the walk so the sccBySection map is complete.
+	//
+	// Monster *group* pages (@type: monster) are an exception: they are modular
+	// Browse landing pages that show only the group's lore, NOT its statblocks and
+	// malice. Leaving their PageBody empty makes the reading-format generators fall
+	// back to the lore-only Body. The book-faithful, everything-inline view still
+	// exists on the Read tab via the chapter page's PageBody (rendered separately).
 	for _, pw := range pending {
-		pw.parsed.PageBody = content.RenderSubtree(pw.section, sccBySection)
+		if t, _ := pw.parsed.Frontmatter["type"].(string); t != "monster" {
+			pw.parsed.PageBody = content.RenderSubtree(pw.section, sccBySection)
+		}
 		for _, gen := range generators {
 			if err := gen.WriteSection(pw.sccCode, pw.parsed); err != nil {
 				result.Errors = append(result.Errors, fmt.Sprintf("write %s [%s]: %v", pw.sccCode, gen.Format(), err))
