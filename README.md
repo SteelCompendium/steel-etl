@@ -2,7 +2,7 @@
 
 Go CLI tool that processes annotated Draw Steel TTRPG markdown into structured, multi-format output for the [Steel Compendium](https://steelcompendium.io).
 
-**Status:** Phases 0-3 complete (3.6 i18n deferred). SCC taxonomy frozen (1,432 codes). All 9 output generators, 14 content parsers, `validate`/`classify`/`gen`/`strip`/`site` CLI commands implemented.
+**Status:** Phases 0-5 complete (3.6 i18n deferred). Three books integrated — heroes, beastheart, monsters (**2,627 SCC codes**). All 9 output generators, 24 content parsers, `validate`/`classify`/`gen`/`strip`/`site` CLI commands implemented. The SCC registry is currently **unfrozen** (`freeze: false`) while multi-book content is still being added; existing codes are stable, and re-freezing is a flip of `classification.freeze` once content settles.
 
 ## What it does
 
@@ -16,7 +16,7 @@ Annotated Markdown ──► steel-etl ──► Structured Output
                                       └── md-dse-linked/
 ```
 
-The source is a single annotated markdown file (e.g., `Draw Steel Heroes.md`) with HTML comment annotations that tell the parser what each section is. The tool parses it in a single pass and produces per-section output files in multiple formats with full YAML frontmatter.
+The source is one annotated markdown file per book (`Draw Steel Heroes.md`, `Draw Steel Beastheart.md`, `Draw Steel Monsters.md`) with HTML comment annotations that tell the parser what each section is. The tool parses each in a single pass and produces per-section output files in multiple formats with full YAML frontmatter. A bare `gen` processes only the primary book; pass `--all` (every book) or `--book <id>` for the rest.
 
 ## Project layout
 
@@ -27,15 +27,19 @@ steel-etl/
 │   ├── cli/                       # Cobra commands (gen, validate, classify, strip, site)
 │   ├── parser/                    # Markdown parser: annotations, document, sections
 │   ├── context/                   # Hierarchical annotation context stack
-│   ├── content/                   # 14 content parsers (ability, class, kit, ancestry, etc.)
-│   ├── scc/                       # SCC classifier and registry (frozen)
+│   ├── content/                   # 24 content parsers (ability, class, kit, statblock, monster, etc.)
+│   ├── scc/                       # SCC classifier and registry
 │   ├── output/                    # 9 output generators (md, json, yaml, linked, dse, etc.)
 │   ├── pipeline/                  # Orchestrates parse → classify → generate
 │   └── site/                      # MkDocs site builder from steel-etl output
 ├── testdata/fixtures/             # Test fixtures (simple_class.md)
-├── pipeline.yaml                  # Pipeline configuration
+├── pipeline.yaml                  # Pipeline configuration (heroes + beastheart + monsters)
 ├── Makefile                       # Build, test, lint targets
-└── input/heroes/                  # Annotated source (hand-maintained, canonical)
+├── scripts/                       # One-off bootstrap helpers (e.g. annotate_monsters.pl)
+└── input/                         # Annotated sources (hand-maintained, canonical)
+    ├── heroes/Draw Steel Heroes.md
+    ├── beastheart/Draw Steel Beastheart.md
+    └── monsters/Draw Steel Monsters.md
 ```
 
 ## Annotation scheme
@@ -72,9 +76,15 @@ mcdm.heroes.v1/feature.ability.common/grab
 mcdm.heroes.v1/kit/panther
 mcdm.heroes.v1/ancestry/dwarf
 mcdm.heroes.v1/condition/dazed
+
+mcdm.monsters.v1/monster.goblins/goblins                       (group lore page)
+mcdm.monsters.v1/monster.goblins.statblock/goblin-warrior      (statblock)
+mcdm.monsters.v1/monster.goblins/goblin-malice                 (malice featureblock)
+mcdm.monsters.v1/dynamic-terrain.environmental-hazards/lava
+mcdm.monsters.v1/retainer.statblock/goblin-guide
 ```
 
-Type names are singular. Features use `feature.ability` / `feature.trait` with class, level, and kit context in the type path (e.g., `feature.trait.fury.level-1.boren/kit-bonuses`).
+Type names are singular. Features use `feature.ability` / `feature.trait` with class, level, and kit context in the type path (e.g., `feature.trait.fury.level-1.boren/kit-bonuses`). Monster content uses a nested `monster.<category>[.<subcategory>].statblock/<item>` hierarchy (malice featureblocks are siblings of the `statblock/` folder); see the Monsters section of [ANNOTATION-GUIDE.md](ANNOTATION-GUIDE.md).
 
 SCCs become permanent URLs (`steelcompendium.io/mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam`) and are immutable once frozen. See `plans/architecture-redesign/scc-taxonomy.md` for the full taxonomy.
 
@@ -100,9 +110,11 @@ The annotated source carries **1,523 annotations** across the full Draw Steel He
 
 Auto-detected metadata per ability: signature/triggered subtype, heroic resource cost, ID overrides for special characters.
 
+The **Monsters** book adds 437 statblocks, 64 malice featureblocks, 35 dynamic-terrain objects, and 52 monster groups (validated against the legacy `data-bestiary-*` repos: exact match on names and file counts). Statblocks are H7 and malice/terrain are H9 — heading levels above goldmark's H6 cap, captured by `collectDeepHeadings`.
+
 ## The annotated input
 
-`input/heroes/Draw Steel Heroes.md` is **hand-maintained and canonical**. It holds ~4,055 SCC cross-reference links and all annotations directly. (It was originally bootstrapped by an `annotate_heroes.py` script plus one-off link-adder scripts; those have been retired now that the `.md` is edited in place — re-running them would clobber the hand-added links.) See `docs/linking-guide.md` for the rules on adding cross-reference links.
+`input/heroes/Draw Steel Heroes.md`, `input/beastheart/Draw Steel Beastheart.md`, and `input/monsters/Draw Steel Monsters.md` are **hand-maintained and canonical**. The heroes file holds ~4,055 SCC cross-reference links and all annotations directly. (Heroes was originally bootstrapped by an `annotate_heroes.py` script plus one-off link-adder scripts; the Monsters annotation pass was bootstrapped by `scripts/annotate_monsters.pl`. Both are now edited in place — re-running the bootstrap scripts would clobber hand edits.) See `docs/linking-guide.md` for the rules on adding cross-reference links.
 
 ## Pipeline configuration
 
@@ -114,7 +126,7 @@ input: ./input/heroes/Draw Steel Heroes.md
 
 classification:
   registry: ./classification.json
-  freeze: true           # frozen 2026-04-26 — existing codes cannot be removed
+  freeze: false          # currently unfrozen while multi-book content is added
 
 output:
   base_dir: ../data/data-rules
@@ -123,9 +135,17 @@ output:
     linked: true
     dse: true
     dse_linked: true
+
+books:                   # additional books beyond the primary; each overrides any top-level setting
+  - book: mcdm.monsters.v1
+    input: ./input/monsters/Draw Steel Monsters.md
+    output: { base_dir: ../data/data-bestiary }
+  - book: mcdm.beastheart.v1
+    input: ./input/beastheart/Draw Steel Beastheart.md
+    output: { base_dir: ../data/data-beastheart }
 ```
 
-Multi-book support is built in. The monsters book is configured as an additional entry under `books:`.
+Multi-book support is built in: the beastheart and monsters books are configured as entries under `books:`. A bare `gen` processes only the primary (heroes) book — pass `--all` or `--book <id>` to regenerate the others (the `just deploy*` recipes pass `--all`).
 
 ## Design documents
 
@@ -171,6 +191,6 @@ steel-etl site --config v2/site.yaml               # Build MkDocs site from outp
 - **Phase 1** -- Core Go CLI ✓
 - **Phase 2** -- Full output pipeline (JSON, YAML, linked/DSE, aggregation) ✓
 - **Phase 3** -- Translation + SCC URLs ✓ (3.6 i18n deferred, awaiting translated content)
-- **SCC Freeze** -- 1,432 codes frozen, validate/classify commands ✓
-- **Phase 4** -- Data repo consolidation + homebrew content registry
-- **Phase 5** -- Monsters book integration (multi-book proof)
+- **SCC Freeze** -- validate/classify commands ✓ (registry currently reopened for multi-book expansion)
+- **Phase 4** -- Data repo consolidation ✓ + homebrew content registry (4.4-4.5 open)
+- **Phase 5** -- Monsters book integration (multi-book proof) ✓ *(2026-06-05; 2,627 codes across 3 books)*
