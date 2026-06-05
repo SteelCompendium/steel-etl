@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/yuin/goldmark"
+	meta "github.com/yuin/goldmark-meta"
 	"github.com/yuin/goldmark/ast"
 	gmparser "github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/text"
-	meta "github.com/yuin/goldmark-meta"
 )
 
 // ParseDocument parses annotated markdown into a structured Document.
@@ -36,6 +36,11 @@ func ParseDocument(source []byte) (*Document, error) {
 	// 4b. Collect blockquote headings (> ######) that goldmark doesn't parse as headings
 	bqHeadings := collectBlockquoteHeadings(source, headings)
 	headings = mergeHeadings(headings, bqHeadings)
+
+	// 4c. Collect deep ATX headings (H7+) that goldmark caps out at H6.
+	// The Monsters book uses H7 for statblocks and H9 for malice/terrain blocks.
+	deepHeadings := collectDeepHeadings(source)
+	headings = mergeHeadings(headings, deepHeadings)
 
 	// 5. Associate annotations with headings
 	associateAnnotations(headings, annotationByLine, source)
@@ -161,6 +166,34 @@ func collectBlockquoteHeadings(source []byte, regularHeadings []*headingInfo) []
 			text:    headingText,
 			level:   level,
 			lineNum: lineNum,
+		})
+	}
+	return headings
+}
+
+// deepHeadingRe matches top-level ATX headings with 7+ '#' (H7+). goldmark does
+// not parse these as headings (CommonMark caps headings at H6), so they must be
+// detected via regex. The leading '#' run must be at column 0 (not inside a
+// blockquote, which begins with '>').
+var deepHeadingRe = regexp.MustCompile(`^(#{7,})\s+(.+?)\s*$`)
+
+// collectDeepHeadings scans source for top-level "####### ..." (H7+) lines and
+// returns them as synthetic headings capped at level 6 (the ContextStack
+// maximum). The @type annotation — not the heading level — drives how each
+// section is processed, so capping the level is safe; nesting is resolved by the
+// section tree builder and classification walks ancestors for context.
+func collectDeepHeadings(source []byte) []*headingInfo {
+	lines := strings.Split(string(source), "\n")
+	var headings []*headingInfo
+	for i, line := range lines {
+		m := deepHeadingRe.FindStringSubmatch(line)
+		if m == nil {
+			continue
+		}
+		headings = append(headings, &headingInfo{
+			text:    strings.TrimSpace(m[2]),
+			level:   6,
+			lineNum: i + 1,
 		})
 	}
 	return headings
