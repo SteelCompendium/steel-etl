@@ -11,16 +11,30 @@ import (
 
 var trailingParenRe = regexp.MustCompile(`\s*\([^)]*\)\s*$`)
 
-// statblockDomain returns the SCC domain root ("monster" by default) and the
-// category slug from the surrounding context, set by an enclosing MonsterParser
-// group or monster-group container.
-func statblockDomain(ctx *context.ContextStack, level int) (domain, category string) {
+// featureblockName drops a trailing descriptor parenthetical from a featureblock
+// heading UNLESS it contains a digit. So "Goblin Malice (Malice Features)" →
+// "Goblin Malice" and "Tactical Stance (Ajax Feature)" → "Tactical Stance", while
+// "Demon Malice (Level 1+ Malice Features)" keeps its level qualifier so the
+// Level 1/4/7/10 blocks stay distinct.
+func featureblockName(heading string) string {
+	name := CleanHeading(heading)
+	if paren := trailingParenRe.FindString(name); paren != "" && !strings.ContainsAny(paren, "0123456789") {
+		name = strings.TrimSpace(trailingParenRe.ReplaceAllString(name, ""))
+	}
+	return name
+}
+
+// statblockDomain returns the SCC domain root ("monster" by default), the
+// category slug, and an optional subcategory (e.g. echelon) from the surrounding
+// context, set by an enclosing MonsterParser group or monster-group container.
+func statblockDomain(ctx *context.ContextStack, level int) (domain, category, subcategory string) {
 	domain = "monster"
 	if d, ok := ctx.Lookup(level, "domain"); ok && d != "" {
 		domain = d
 	}
 	category, _ = ctx.Lookup(level, "category")
-	return domain, category
+	subcategory, _ = ctx.Lookup(level, "subcategory")
+	return domain, category, subcategory
 }
 
 // compactPath drops empty segments from a type path.
@@ -112,8 +126,8 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 		fm["with_captain"] = v
 	}
 
-	domain, category := statblockDomain(ctx, section.HeadingLevel)
-	typePath := compactPath(domain, category, "statblock")
+	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
+	typePath := compactPath(domain, category, subcategory, "statblock")
 
 	return &ParsedContent{
 		Frontmatter: fm,
@@ -164,8 +178,7 @@ type FeatureblockParser struct{}
 func (p *FeatureblockParser) Type() string { return "featureblock" }
 
 func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Section) (*ParsedContent, error) {
-	name := CleanHeading(section.Heading)
-	name = strings.TrimSpace(trailingParenRe.ReplaceAllString(name, ""))
+	name := featureblockName(section.Heading)
 
 	id := section.ID()
 	if id == "" {
@@ -177,8 +190,8 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		"type": "featureblock",
 	}
 
-	domain, category := statblockDomain(ctx, section.HeadingLevel)
-	typePath := compactPath(domain, category)
+	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
+	typePath := compactPath(domain, category, subcategory)
 
 	return &ParsedContent{
 		Frontmatter: fm,
@@ -201,7 +214,7 @@ func (p *MonsterGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 		"type": "monster-group",
 	}
 	if section.Annotation != nil {
-		for _, k := range []string{"domain", "category"} {
+		for _, k := range []string{"domain", "category", "subcategory"} {
 			if v, ok := section.Annotation[k]; ok {
 				fm[k] = v
 			}

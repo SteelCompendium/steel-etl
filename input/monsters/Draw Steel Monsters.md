@@ -4,6 +4,7 @@ source: MCDM
 title: Draw Steel Monsters
 ---
 
+<!-- @type: chapter | @id: monster-basics -->
 # Monster Basics
 
 > **For the Director**
@@ -298,10 +299,12 @@ Unless otherwise specified, a creature or object summoned into a combat encounte
 
 Some creatures have abilities that deal damage and allow the creautre using the ability to regain Stamina equal to the damage dealt. Unless otherwise specified, if this ability deals damage to multiple targets, the creature only regains Stamina equal to one instance of the damage, not the total damage dealt to all targets.
 
+<!-- @type: monster-group | @category: noncombatant -->
 #### Harmless Creatures
 
 Inevitably, one or more noncombatants might get caught up in a dangerous situation the heroes are trying to get under control. If an adventure or encounter doesn't specify a noncombatant creature's statistics, you can use the following stat block for them.
 
+<!-- @type: statblock -->
 ####### Noncombatant
 
 |   Human or Animal   |         -         |     Level 0      |           -           |         EV -         |
@@ -1448,6 +1451,7 @@ Additional rules cover a monster's characteristics and additional modifications 
 | Lich                    | 10    | Solo                 | 279  |
 | Ajax the Invincible     | 11    | Solo                 | 31   |
 
+<!-- @type: monster | @category: ajax-the-invincible -->
 ## Ajax the Invincible
 
 "On behalf of the college, I would like to thank Lord Alvaro for his excellent lecture. The whole school owes you a debt for donating your time today. We will now open the floor to questions. Before we do, I would like to remind you that we enjoy a certain amount of informality here at the war college, but when speaking to Lord Alvaro, let not informality topple over into *familiarity.* We will take the first question now. Francis?"
@@ -1520,6 +1524,7 @@ Ajax speaks Caelian, Higaran, Khoursirian, Phaedran, Riojan, Vaniric, and Vaslor
 >
 > - Adjust the **I'm Not Done Yet** trait so that Ajax dies at −140 Stamina instead of −350.
 
+<!-- @type: featureblock -->
 ######### Tactical Stance (Ajax Feature)
 
 At the start of each round, Ajax chooses a new stance from one of the following options and gains its benefits:
@@ -1536,6 +1541,7 @@ At the start of each round, Ajax chooses a new stance from one of the following 
 >
 > Ajax has damage immunity 5. Additionally, any enemy who makes a power roll that includes Ajax as a target has a double bane on the roll.
 
+<!-- @type: featureblock -->
 ######### Ajax's Malice (Malice Features)
 
 At the start of Ajax's turn, you can spend Malice to activate one of the following features.
@@ -1572,6 +1578,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > Ajax then raises his Blade of the Gol King above his head as four giant blades emerge from the ground to fill the area. Each target is pushed into an unoccupied space adjacent to the area after the power roll is resolved. Each blade blocks line of effect and can be dismissed by Ajax at will (no action required).
 
+<!-- @type: statblock -->
 ####### Ajax the Invincible
 
 |   Human, Humanoid   |             -              |      Level 11      |         Solo          |        EV 156         |
@@ -1728,6 +1735,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Effect:** Each target who has I < 5 is knocked prone and can't stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.
 
+<!-- @type: monster | @category: angulotls -->
 ## Angulotls
 
 Found in freshwater swamps, rivers, and rainforests, angulotls (angwa-LAH-tuls) are diminutive, brightly colored amphibious humanoids. Rather than defending their settlements and breeding grounds against hostile creatures, these poisonous frog folk prefer to establish their homes in places that are nigh-impossible for other humanoids to find, such as underwater caves and other enclosed spaces accessible only by water. Angulotls are happy to hide and watch a gaggle of noisy adventurers stumble past the entrance to their clutch without realizing it. But though they prefer to avoid combat, whenever they're threatened or pressed, angulotls can turn deadly.
@@ -1756,6 +1764,7 @@ Most angulotls speak Filliaric.
 
 Angulotls make use of a unique effect called "wet." While wet, an angulotl doesn't provoke opportunity attacks by moving. At the same time, any non-angulotl who is wet and ends their turn with none of their movement remaining slips and falls prone. Several angulotl abilities can impose this effect, but a creature in an encounter featuring angulotls can also become wet by entering water, as the Director determines.
 
+<!-- @type: featureblock -->
 ######### Angulotl Malice (Malice Features)
 
 At the start of any angulotl's turn, you can spend Malice to activate one of the following features.
@@ -1782,6 +1791,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > **Pinna, Hedge Witch, Gravesford**
 
+<!-- @type: statblock -->
 ####### Angulotl Cleaver
 
 |    Angulotl, Humanoid    |              -              |                     Level 1                      |                Minion Ambusher                 |  EV 3 for 4 minions  |
@@ -1808,6 +1818,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Whenever an adjacent enemy grabs the cleaver or uses a melee ability against them, that enemy takes 1 poison damage.
 
+<!-- @type: statblock -->
 ####### Angulotl Dart
 
 |    Angulotl, Humanoid    |              -              |     Level 1      |                Minion Artillery                 |  EV 3 for 4 minions  |
@@ -1834,6 +1845,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Whenever an adjacent enemy grabs the dart or uses a melee ability against them, that enemy takes 1 poison damage.
 
+<!-- @type: statblock -->
 ####### Angulotl Pollywog
 
 |         Angulotl         |              -              |     Level 1      |            Minion Harrier             |  EV 3 for 4 minions  |
@@ -1858,6 +1870,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Any angulotl who can target the pollywog with a melee free strike can eat them as a maneuver. The angulotl regains 4 Stamina and is wet until the end of their next turn.
 
+<!-- @type: statblock -->
 ####### Clawfish
 
 |           Angulotl, Animal            |              -              |     Level 1      |                Minion Brute                 |  EV 3 for 4 minions  |
@@ -1884,6 +1897,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the clawfish deals 2 lightning damage to each wet enemy within 2 squares.
 
+<!-- @type: statblock -->
 ####### Angulotl Needler
 
 |    Angulotl, Humanoid    |              -              |      Level 1      |    Horde Artillery    |         EV 3         |
@@ -1910,6 +1924,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Whenever an adjacent enemy grabs the needler or uses a melee ability against them, that enemy takes 2 poison damage.
 
+<!-- @type: statblock -->
 ####### Angulotl Slink
 
 |    Angulotl, Humanoid    |              -              |      Level 1      |    Horde Ambusher     |         EV 3         |
@@ -1948,6 +1963,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Whenever an adjacent enemy grabs the slink or uses a melee ability against them, that enemy takes 2 poison damage.
 
+<!-- @type: statblock -->
 ####### Angulotl Wave
 
 |    Angulotl, Humanoid    |              -              |      Level 1      |   Horde Controller    |         EV 3         |
@@ -2001,6 +2017,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > - **Corrupted Clutch, 34 EV:** Eight clawfish, twelve cleavers, eight pollywogs, one needler, two slinks, one wave
 > - **Angulotl Assault Squad, 48 EV:** Eight clawfish, twelve cleavers, twelve darts, two needlers, two slinks, one daybringer
 
+<!-- @type: statblock -->
 ####### Angulotl Daybringer
 
 |    Angulotl, Humanoid    |              -              |      Level 1      |        Leader         |        EV 12         |
@@ -2077,6 +2094,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > Whenever an adjacent enemy grabs the daybringer or uses a melee ability against them, that enemy takes 3 poison damage.
 
+<!-- @type: monster | @category: animals -->
 ## Animals
 
 The natural denizens of every world, animals ferocious, atrocious, and precocious roam the lands between and among settlements of humanoids and other folk. Whether they graze or hunt, stay solitary or move in packs, fight danger or fly from it, all animals share a singular goal—to live. Most animals are not monsters, but some are twisted by magic and malice to *become* monsters. A hero wouldn't mercilessly kill a pack of hungry wolves—but they'll slay rot-magic dire wolves created by vampires. In many cases, animals are more likely to be bystanders than threats in an encounter.
@@ -2355,6 +2373,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > You certainly can! Animal traits can be applied to the **noncombatant** stat block to make unimposing animals the heroes can rescue (see Harmless Creatures in the Introduction section). Surviving a wild animal attack can also be handled through group tests and montage tests as if those animals were environmental challenges to overcome rather than individual threats.
 
+<!-- @type: statblock -->
 ####### Animal
 
 |      Animal       |         -         |      Level 1      |     Elite Harrier     |        EV 12         |
@@ -2389,6 +2408,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > While outdoors or in a natural environment, the animal can negate a bane on their abilities or turn a double bane into a bane.
 
+<!-- @type: statblock -->
 ####### Animal Swarm
 
 |   Animal, Swarm   |         -         |      Level 1      |      Elite Hexer      |        EV 12         |
@@ -2427,6 +2447,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > While outdoors or in a natural environment, the animal swarm can negate a bane on their abilities or turn a double bane into a bane.
 
+<!-- @type: statblock -->
 ####### Big Animal A
 
 |      Animal       |         -         |      Level 1      |      Elite Mount      |        EV 12         |
@@ -2471,6 +2492,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > While outdoors or in a natural environment, the animal can negate a bane on their abilities or turn a double bane into a bane.
 
+<!-- @type: statblock -->
 ####### Big Animal B
 
 |      Animal       |         -         |      Level 2      |      Elite Mount      |        EV 16         |
@@ -2534,6 +2556,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 | Piranha school  | Rivers, swamps               | Animal swarm | Swimming, Spiny, Frenzy                | 12 | Piranhas are an aggressive species of fanged fish that leave no remnants of their prey behind.      |
 | Slag mite swarm | Desolate battlefields        | Animal swarm | Burrowing, Venom                       | 12 | A species of silver bugs, slag mites have powerful mandibles they use to feed on iron and copper.   |
 
+<!-- @type: statblock -->
 ####### Predator A
 
 |      Animal       |         -         |      Level 1      |      Elite Brute      |        EV 12         |
@@ -2576,6 +2599,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > While outdoors or in a natural environment, the predator can negate a bane on their abilities or turn a double bane into a bane.
 
+<!-- @type: statblock -->
 ####### Predator B
 
 |      Animal       |         -         |      Level 3       |      Elite Brute      |        EV 16         |
@@ -2626,6 +2650,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > While outdoors or in a natural environment, the predator can negate a bane on their abilities or turn a double bane into a bane.
 
+<!-- @type: monster | @category: arixx -->
 ## Arixx
 
 Pebbles dance as the ground quivers. A spray of rock and earth shatters the afternoon's peace, and an arixx blooms from the earth. Their mandibles drip sizzling acid as a talon impales their next meal sometimes a fat sheep, other times a shepherd.
@@ -2640,6 +2665,7 @@ Although arixxi can be found anywhere, they are a particular plague in settled l
 
 Arixxi are a year-round menace in the warmest lands. In temperate places, arixxi hibernate during the winter, granting farmers a season of peace. But this respite is paid for on the first thaw of spring, when every arixx awakens ravenous on the same day and bursts from the ground to feed.
 
+<!-- @type: featureblock -->
 ######### Arixx Malice (Malice Features)
 
 At the start of an arixx's turn, you can spend Malice to activate one of the following features.
@@ -2664,6 +2690,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > The encounter map suddenly quakes, then begins to sink. Each creature on the ground who has A < 1 is knocked prone. Until the end of the encounter, each creature who starts their turn on the ground and can't burrow must spend 1 additional square of movement to leave their starting position, or 2 squares if they start their turn prone or underground. A creature who starts and ends their turn in the same space on the ground and can't burrow sinks 1 square into the ground.
 
+<!-- @type: statblock -->
 ####### Arixx
 
 |   Arixx, Beast    |           -            |      Level 1       |         Solo          |        EV 36         |
@@ -2794,6 +2821,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 > - **12-16:** 8 acid damage; M < 2 weakened (save ends)
 > - **17+:** 11 acid damage; M < 3 weakened (save ends)
 
+<!-- @type: monster | @category: ashen-hoarder -->
 ## Ashen Hoarder
 
 Grave robbing is a dangerous business, but necromancers need bodies for their experiments. To procure supplies and stay out of danger, these mages build ashen hoarders—hulking constructs made of magically reinforced humanoid bones.
@@ -2812,6 +2840,7 @@ These automatons are equipped to protect their cargo. If enemies corner an ashen
 
 Creating and powering an ashen hoarder requires a vast amount of necromantic energy. Along with an entire ossuary worth of bones to construct its body, powering the construct requires a soul. That soul is divided between the hoarder and an object known as a Soul Shackle usually a ring or an amulet—that is used to command the construct. Destroying the Soul Shackle can free the trapped soul, but doing so sends an ashen hoarder into an indiscriminate unshackled rage as they feel part of their stolen soul shredded into oblivion. The construct lashes out against any living creature they can before collapsing in on themself. Freeing the soul still trapped inside the ashen hoarder's remains requires completing the Find a Cure downtime project in *[Draw Steel: Heroes](https://mcdm.gg/DS-Heroes)* and the assistance of a powerful holy figure.
 
+<!-- @type: featureblock -->
 ######### Ashen Hoarder Malice (Malice Features)
 
 At the start of an ashen hoarder's turn, you can spend Malice to activate one of the following features.
@@ -2836,6 +2865,7 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 > - **12-16:** 11 damage; bleeding (EoT)
 > - **17+:** 6 damage
 
+<!-- @type: statblock -->
 ####### Ashen Hoarder
 
 | Construct, Undead |           -            |      Level 4       |         Solo          |          EV 72           |                    
@@ -2950,6 +2980,7 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 >
 > **Effect:** The ashen hoarder moves up to their speed and uses Claw and Blade with a double edge against one target. On a tier 3 outcome, the ashen hoarder can use Impale without spending Malice.
 
+<!-- @type: monster | @category: basilisks -->
 ## Basilisks
 
 With eight legs, a scaled rough hide, and razor-sharp teeth coated in poison, the basilisk is a deadly threat—even aside from their petrifying eye beams. This dreadful creature can fell the mightiest of foes with a look, turning them into an immobilized stone statue who remains thankfully unaware when the basilisk later consumes their petrified form at their leisure.
@@ -2976,6 +3007,7 @@ Alchemists have discovered a gland in the basilisk's mouth that excretes an oil 
 > - **12-16:** 2 The character creates one dose of salve and can create two more doses by completing the Find a Cure downtime project.
 > - **17+:** 3 The character creates three doses of salve.
 
+<!-- @type: featureblock -->
 ######### Basilisk Malice (Malice Features)
 
 At the start of any basilisk's turn, you can spend Malice to activate one of the following features.
@@ -3003,6 +3035,7 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > A basilisk spews reflective spittle across an adjacent vertical surface in a 3-square-by-3-square area. The basilisk can use their Petrifying Eye Beams ability to target a square in the area, causing the area and distance of that ability to become a 20 x 3 line within 1 square of the wall.
 
+<!-- @type: statblock -->
 ####### Basilisk
 
 |     Basilisk, Beast      |         -         |      Level 1      |      Elite Brute      |        EV 12         |
@@ -3067,6 +3100,7 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > The area within 3 squares of the basilisk is difficult terrain for enemies.
 
+<!-- @type: statblock -->
 ####### Basilisk Tonguesnapper
 
 |         Basilisk, Beast          |         -         |      Level 1      |      Elite Hexer      |        EV 12         |
@@ -3135,6 +3169,7 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > Any creature who starts their turn adjacent to the tonguesnapper and has M < 1 is slowed (save ends).
 
+<!-- @type: monster | @category: bredbeddle -->
 ## Bredbeddle
 
 In their true forms, bredbeddles are ogre-sized headless giants. Forever searching for their missing heads, they are drawn to populous lands, where they decapitate passers-by and magically adopt their victims' forms.
@@ -3155,6 +3190,7 @@ Travelers warn one another of roads rumored to be haunted by "wild green knights
 
 When a bredbeddle communicates, they typically use High Kuric or the languages that their head's previous owner knew. A bredbeddle who has taken multiple heads over their lifetime most likely knows Caelian as well.
 
+<!-- @type: featureblock -->
 ######### Bredbeddle Malice (Malice Features)
 
 At the start of a bredbeddle's turn, you can spend Malice to activate one of the following features.
@@ -3175,6 +3211,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > A phantom second bredbeddle phases into view, appearing in an unoccupied space anywhere on the encounter map, then vanishing at the end of the round. The phantom bredbeddle shares the original bredbeddle's statistics but has 24 Stamina, corruption immunity 10, and can fly. The phantom bredbeddle can take one turn and use any of the bredbeddle's abilities except for villain actions. Only one phantom bredbeddle can be active at a time.
 
+<!-- @type: statblock -->
 ####### Bredbeddle
 
 | Bredbeddle, Giant |         -         |      Level 3       |         Solo          |        EV 60         |
@@ -3297,6 +3334,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 > - **12-16:** 7 damage; bleeding (save ends); or if the target has A < 2 they are beheaded
 > - **17+:** 8 damage; bleeding (save ends); or if the target has A < 3 they are beheaded
 
+<!-- @type: monster | @category: bugbears -->
 ## Bugbears
 
 Bugbears are the bu'gath in the Khelt language, or "the bearers of the great fear." Modern bugbears come from early goblins who first stepped into the wode centuries ago. Fey magic twisted their bodies, making them grow imposingly tall and hairy while removing all sound from their footsteps.
@@ -3313,6 +3351,7 @@ When bugbears are compelled to take action, they take to the high ground and use
 
 Bugbears value their shared origin with goblins and hobgoblins despite the three lines branching apart so dramatically. They think of themselves as goblinoids first and humanoids second, with that relationship providing a sense of common ground when cloistered bugbears come out of isolation.
 
+<!-- @type: featureblock -->
 ######### Bugbear Malice (Malice Features)
 
 At the start of any bugbear's turn, you can spend Malice to activate one of the following features.
@@ -3341,6 +3380,7 @@ Most bugbears have some control over their inherent magic, enabling them to perf
 
 Most bugbears speak Caelian, Khelt, and Szetch.
 
+<!-- @type: statblock -->
 ####### Bugbear Channeler
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 2      |   Elite Controller    |        EV 16         |
@@ -3421,6 +3461,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Effect:** The target is wrapped in shadow and halves the damage. The target can't be targeted by strikes until the start of their next turn.
 
+<!-- @type: statblock -->
 ####### Bugbear Commander
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 2      |     Elite Support     |        EV 16         |
@@ -3483,6 +3524,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > Any ally who has line of effect to the commander can end one condition on themself at the start of each of their turns.
 
+<!-- @type: statblock -->
 ####### Bugbear Roughneck
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 2       |      Elite Brute      |        EV 16         |
@@ -3559,6 +3601,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Effect:** The roughneck uses Haymaker against a creature or object at any point during the forced movement, or after falling as a result of it.
 
+<!-- @type: statblock -->
 ####### Bugbear Sneak
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 2      |    Elite Ambusher     |        EV 16         |
@@ -3639,6 +3682,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Effect:** The sneak chooses one enemy within distance of the strike to become the target of the strike.
 
+<!-- @type: statblock -->
 ####### Bugbear Knightmare
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 8      |                Minion Hexer                 | EV 10 for four minions |
@@ -3669,6 +3713,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > Each enemy has a −1 penalty to power rolls, saving throws, or damage rolled as a d6 or a d3 for each knightmare adjacent to them.
 
+<!-- @type: statblock -->
 ####### Bugbear Mob
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 5      |                  Minion Brute                  | EV 7 for four minions |
@@ -3695,6 +3740,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > The mob can move through spaces as if they were a size 1L creature, and can occupy other creatures' spaces. At the start of each of the mob's turns, they can make a free strike against each creature whose space they share.
 
+<!-- @type: statblock -->
 ####### Bugbear Snare
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |     Level 5      |            Minion Ambusher            | EV 7 for four minions |
@@ -3717,6 +3763,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Effect:** If the snare started their turn hidden from the target, the target is automatically grabbed. A target grabbed this way or already grabbed by the snare can be vertical pushed up to 4 squares.
 
+<!-- @type: monster | @category: chimera -->
 ## Chimera
 
 Massive flexing claws. Lashing draconic tail. Nimble leathery wings. And not one, but three menacing heads: a snarling lion, a helix-horned ram, and a dragon with fire sparking in their throat. Many see the chimera as an aggressor—but few know this creature's origins as a divine guardian.
@@ -3735,6 +3782,7 @@ Chimeras have many ways to keep themselves and their charges from being cornered
 
 Unlike some other multiheaded creatures, a chimera possesses a single unified mind. Their heads work together, never snapping at one another over food, favors, or personality conflicts. The heads often express the chimera's emotions in unison, braying together in times of battle or purring all at once to show affection.
 
+<!-- @type: featureblock -->
 ######### Chimera Malice (Malice Features)
 
 At the start of a chimera's turn, you can spend Malice to activate one of the following features.
@@ -3755,6 +3803,7 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 >
 > Until the start of the chimera's next turn, all areas of the encounter map are shrouded in a thick cloud of ash. All creatures and objects on the map have concealment that the chimera ignores. Additionally, each enemy in the cloud who has I < 1 has line of effect only within 3 squares. The potency of this feature increases by 1 each time it's used.
 
+<!-- @type: statblock -->
 ####### Chimera
 
 |     Beast, Chimera     |          -          |      Level 3       |         Solo          |        EV 60         |
@@ -3863,6 +3912,7 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The chimera uses Roar, then shifts up to their speed and can make a free strike against each enemy who comes adjacent to them during the shift. When the chimera ends this shift, they use Dragon's Eruption. The use of these abilities as part of this villain action costs no Malice.
 
+<!-- @type: monster | @category: demons -->
 ## Demons
 
 Creatures of incarnate hate, demons spawn naturally in the Abyssal Wasteland. They crave violence and suffering the way other creatures need food. A demon cares only for themself, and they torture and tear lesser demons apart for fun.
@@ -3929,6 +3979,7 @@ Each time a demon consumes a soul, there's a chance they might evolve into a mor
 
 Lower categories of demons speak Proto-Ctholl. As demons evolve and reach category 3 or higher, their speech turns into proper Tholl.
 
+<!-- @type: monster-group | @subcategory: 1st-echelon -->
 ### Demons-1st Echelon
 
 A number of lesser demons have been identified across categories 1 to 3.
@@ -3951,6 +4002,7 @@ A number of lesser demons have been identified across categories 1 to 3.
 
 **Chorogaunts** (cor-roh-GAWNTS) are terrifying demon leaders. Each is an amalgamation of several demon bodies formed into a mobile musical instrument. Several heads are arranged into a chorus embedded in the demon's chest, and their ribs are upturned into a fleshy pipe organ. Their attacks entrance and confuse enemies, making them more vulnerable to other demons.
 
+<!-- @type: featureblock -->
 ######### Demon Malice (Level 1+ Malice Features)
 
 At the start of any demon's turn, you can spend Malice to activate one of the following features.
@@ -3971,6 +4023,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > - **12-16:** The rift remains open.
 > - **17+:** The rift closes.
 
+<!-- @type: statblock -->
 ####### Ensnarer
 
 |  Abyssal, Demon   |         -         |     Level 1      |                  Minion Brute                  |  EV 3 for four minions   |
@@ -3997,6 +4050,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the ensnarer can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Frenzied
 
 |  Abyssal, Demon   |         -         |     Level 1      |            Minion Harrier             |  EV 3 for four minions   |
@@ -4021,6 +4075,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the frenzied can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Pitling
 
 |  Abyssal, Demon   |          -          |     Level 1      |           Minion Artillery            |  EV 3 for four minions   |
@@ -4049,6 +4104,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the pitling can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Bendrak
 
 |  Abyssal, Demon   |         -         |      Level 2      |      Horde Hexer      |           EV 4           |
@@ -4087,6 +4143,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the bendrak can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Muceron
 
 |  Abyssal, Demon   |         -         |      Level 3      |      Horde Brute      |           EV 5           |
@@ -4125,6 +4182,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the muceron can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Remasch
 
 |  Abyssal, Demon   |            -             |      Level 2      |    Horde Ambusher     |           EV 4           |
@@ -4163,6 +4221,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the remasch can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Ruinant
 
 |  Abyssal, Demon   |         -         |      Level 1      |     Horde Harrier     |           EV 3           |
@@ -4205,6 +4264,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the ruinant can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Torlas
 
 |  Abyssal, Demon   |         -         |      Level 1      |   Horde Controller    |           EV 3           |
@@ -4243,6 +4303,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > Any creature within 2 squares of the torlas can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Chorogaunt
 
 |  Abyssal, Demon   |         -         |      Level 3       |        Leader         |          EV 20           |
@@ -4319,6 +4380,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The chorogaunt shifts up to their speed, uses Agonizing Harmony, shifts up to their speed, and then uses Agonizing Harmony again.
 
+<!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Demons-2nd Echelon
 
 As demons consume more souls and their mercurial forms shift into more powerful ones, they begin to evolve more distinct personalities, desires, and intelligence—often based on the souls consumed. Across categories 4 to 6, demons develop a particular taste for certain types of souls, which eventually come to define them should they survive long enough.
@@ -4341,6 +4403,7 @@ As demons consume more souls and their mercurial forms shift into more powerful 
 
 **Lumbering egresses** are mobile masses of warped flesh set around an enormous whirling portal to the demonic realms. Lesser demons pour out through these portals at alarming rates, letting these creatures act as devastating siege engines.
 
+<!-- @type: featureblock -->
 ######### Demon Malice (Level 4+ Malice Features)
 
 At the start of any level 4 or higher demon's turn, you can spend Malice to activate one of the following features.
@@ -4353,6 +4416,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > One demon acting this turn folds space around them, temporarily slipping in and out of the Abyssal Wasteland. Until the start of the demon's next turn, they ignore difficult terrain, can move through solid matter, and don't provoke opportunity attacks by moving. If the demon ends their turn inside solid matter, they are shunted out into the space from which they entered it.
 
+<!-- @type: statblock -->
 ####### Grulqin
 
 |  Abyssal, Demon   |         -         |     Level 4      |                  Minion Brute                  |  EV 6 for four minions   |
@@ -4379,6 +4443,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the grulqin can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Orliq
 
 |  Abyssal, Demon   |          -          |     Level 4      |            Minion Harrier             |  EV 6 for four minions   |
@@ -4407,6 +4472,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the orliq can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Wobalas
 
 |  Abyssal, Demon   |         -         |     Level 4      |                Minion Artillery                |  EV 6 for four minions   |
@@ -4429,6 +4495,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Effect:** The target takes a bane on their next strike. If the target is winded, they have a double bane on their next strike instead.
 
+<!-- @type: statblock -->
 ####### Bale Eye
 
 |  Abyssal, Demon   |          -          |      Level 5      |      Horde Hexer      |           EV 7           |
@@ -4477,6 +4544,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 5 squares of the bale eye can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Fangling
 
 |  Abyssal, Demon   |         -         |      Level 4      |     Horde Harrier     |           EV 6           |
@@ -4523,6 +4591,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the fangling can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Fiktin
 
 |  Abyssal, Demon   |         -         |      Level 5      |    Horde Ambusher     |           EV 7           |
@@ -4561,6 +4630,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the fiktin can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Gunge
 
 |  Abyssal, Demon   |         -         |      Level 4      |   Horde Controller    |           EV 6           |
@@ -4601,6 +4671,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the gunge can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Tormenauk
 
 |  Abyssal, Demon   |         -         |      Level 6      |      Horde Brute      |           EV 8           |
@@ -4645,6 +4716,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the tormenauk can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Lumbering Egress
 
 |  Abyssal, Demon   |         -         |      Level 6       |        Leader         |          EV 32           |
@@ -4725,6 +4797,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Effect:** The egress recalls and instantly destroys any minion allies on the encounter map. A torrent of churned-up minion bodies, blood, and ichor erupts from the egress, dealing an extra 1 damage for each minion destroyed this way.
 
+<!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### Demons-3rd Echelon
 
 Demons of categories 7 to 9 continue to mutate in new and unpredictable ways, or are sometimes corrupted and spawned from other powerful creatures to become part of the demonic hierarchy. Additionally, in a plane of chaos, the soulraker demon is notable for fashioning a facsimile of order within themself. These demonic wasps make up a single, chaotic hive mind. They serve a demonic hivequeen, who relies on cannibalizing her children to ingest any souls they've consumed.
@@ -4747,6 +4820,7 @@ Demons of categories 7 to 9 continue to mutate in new and unpredictable ways, or
 
 A **soulraker hivequeen** is a demonic wasp whose abdomen houses their own soulraker wasp hive, and whose stinging ovipositor implants victims with handmaiden parasites.
 
+<!-- @type: featureblock -->
 ######### Demon Malice (Level 7+ Malice Features)
 
 At the start of any level 7 or higher demon's turn, you can spend Malice to activate one of the following features.
@@ -4759,6 +4833,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > One demon acting this turn expels blight—digested soul juice—onto the ground around them in a 3 burst that lingers until the start of their next turn. Any enemy who enters the area or starts their turn there takes 6 corruption damage, and has a double bane on power rolls until the start of their next turn.
 
+<!-- @type: statblock -->
 ####### Soulraker Scout
 
 | Abyssal, Demon, Soulraker |          -          |      Level 7      |               Minion Harrier                |  EV 9 for four minions   |
@@ -4783,6 +4858,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
 
+<!-- @type: statblock -->
 ####### Soulraker Soldier
 
 | Abyssal, Demon, Soulraker |         -         |      Level 7      |                Minion Brute                 |  EV 9 for four minions   |
@@ -4807,6 +4883,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
 
+<!-- @type: statblock -->
 ####### Soulraker Stinger
 
 | Abyssal, Demon, Soulraker |           -           |      Level 7      |              Minion Artillery               |  EV 9 for four minions   |
@@ -4833,6 +4910,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
 
+<!-- @type: statblock -->
 ####### Blight Phage
 
 |  Abyssal, Demon   |         -         |      Level 7      |   Horde Controller    |           EV 9           |
@@ -4875,6 +4953,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the blight phage can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Chimeron
 
 |  Abyssal, Demon   |         -         |      Level 9      |     Horde Brute      |           EV 9           |
@@ -4915,6 +4994,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the chimeron can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Styrich
 
 |  Abyssal, Demon   |         -         |      Level 8      |     Horde Hexer      |          EV 10           |
@@ -4957,6 +5037,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature within 2 squares of the styrich can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Soulraker Praetorian
 
 | Abyssal, Demon, Soulraker |         -         |      Level 7      |     Horde Harrier     |           EV 9           |
@@ -4997,6 +5078,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > Any creature who starts their turn with two or more praetorians adjacent to them takes 6 sonic damage.
 
+<!-- @type: statblock -->
 ####### Soulraker Handmaiden
 
 | Abyssal, Demon, Soulraker |         -         |      Level 8      |    Horde Ambusher     |          EV 10           |
@@ -5031,6 +5113,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > While the handmaiden is winded, they gain an edge on strikes, and any strike made against them gains an edge.
 
+<!-- @type: statblock -->
 ####### Soulraker Hivequeen
 
 | Abyssal, Demon, Soulraker |          -          |      Level 9       |        Leader         |          EV 44           |
@@ -5115,6 +5198,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 11 poison damage; M < 4 bleeding (save ends)
 > - **17+:** 14 poison damage; M < 5 bleeding (save ends)
 
+<!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Demons-4th Echelon
 
 The more souls a demon consumes, the more they evolve. The more they evolve, the more refined their tastes become, until eventually demons of category 10 can be satisfied only by consuming souls that exemplify particular qualities. Many demons of this category have their tastes honored by their titles, such as Gorgino, the Sensuous Feast; Tyx, the Obliviated Spiral; and Lorikta, the Discarded Dream.
@@ -5131,6 +5215,7 @@ The more souls a demon consumes, the more they evolve. The more they evolve, the
 
 **Aurumvas** (or-UM-vahs) the demon king stands alone among named demons for craving not only wealth, but highly avaricious souls. A towering figure with a stack of crowns atop his ophidian head, he is a vision of opulence, excess, and absolute debasement. He lords over other powerful demons by virtue of the wealth held in his vast vaults in the Abyssal Wasteland, acquired through the slaughter of countless creatures. But even as he gazes upon his riches and supernatural treasures, Aurumvas wants for more. He draws lesser demons and wicked mortals to his service with the promise of minor treasures, knowing full well that one needs to spend wealth to make it. If left unchecked, Aurumvas's servile armies and glittering hoards might one day encompass the entire timescape.
 
+<!-- @type: featureblock -->
 ######### Demon Malice (Level 10+ Malice Features)
 
 At the start of any level 10 or higher demon's turn, you can spend Malice to activate one of the following features.
@@ -5149,6 +5234,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Effect:** The demon removes all conditions and effects on themself that can be ended by a saving throw, and transfers all those effects to each creature soul flensed this way.
 
+<!-- @type: statblock -->
 ####### Optacus
 
 |  Abyssal, Demon   |           -           |     Level 10      |           Minion Artillery            |  EV 12 for four minions  |
@@ -5171,6 +5257,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Effect:** This ability ignores concealment. A winded target takes an extra 5 damage.
 
+<!-- @type: statblock -->
 ####### Tyburaki
 
 |  Abyssal, Demon   |          -           |     Level 10      |                 Minion Harrier                 |  EV 12 for four minions  |
@@ -5201,6 +5288,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > Any creature within 2 squares of the tyburaki can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Unguloid
 
 |  Abyssal, Demon   |         -         |     Level 10      |                   Minion Brute                    |  EV 12 for four minions  |
@@ -5227,6 +5315,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > Any creature within 2 squares of the unguloid can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Izyak
 
 |  Abyssal, Demon   |            -             |     Level 10      |   Horde Controller    |          EV 12           |
@@ -5275,6 +5364,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > Any creature within 2 squares of the izyak can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Vicisitator
 
 |  Abyssal, Demon   |         -         |     Level 10      |     Horde Harrier     |          EV 12           |
@@ -5319,6 +5409,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > Any creature within 2 squares of the vicisitator can't be hidden from them.
 
+<!-- @type: statblock -->
 ####### Aurumvas
 
 |  Abyssal, Demon   |          -          |      Level 10      |        Leader         |          EV 48           |
@@ -5405,6 +5496,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 > - **12-16:** 15 fire damage; push 2
 > - **17+:** 19 fire damage; push 3
 
+<!-- @type: monster | @category: devils -->
 ## Devils
 
 In the lower plane of Hell, devils of the Seven Cities vie unceasingly for power and control—a conflict fought foremostly through cunning and schemes. Devils are distinguished from other humanoids by skin in shades of azure and crimson, as well as their hellmarks: horns, tails, hooves, wings, and other infernal features.
@@ -5458,6 +5550,7 @@ Most devils speak Anjal and Caelian, among other languages. The more powerful a 
 >
 > **Wealth:** Each hero can earn 1 wealth in exchange for a small favor
 
+<!-- @type: featureblock -->
 ######### Devil Malice (Malice Features)
 
 At the start of any devil's turn, you can spend Malice to activate one of the following features.
@@ -5474,6 +5567,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > Each enemy in the encounter is subject to a bad deal proposed by the devils. An enemy must choose between having damage weakness 5 or taking a bane on power rolls. The bad deal lasts until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Clerk
 
 |    Devil, Infernal     |         -         |      Level 5      |                  Minion Brute                  | EV 7 for four minions |
@@ -5500,6 +5594,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the clerk's true name, the clerk loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Notary
 
 |    Devil, Infernal     |         -         |     Level 5      |                  Minion Hexer                   | EV 7 for four minions |
@@ -5526,6 +5621,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the notary's true name, the notary loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Scrivener
 
 |    Devil, Infernal     |          -          |     Level 5      |            Minion Harrier             | EV 7 for four minions |
@@ -5552,6 +5648,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the scrivener's true name, the scrivener loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Adjudicator
 
 |    Devil, Infernal     |          -          |      Level 6       |   Elite Controller    |        EV 32         |
@@ -5616,6 +5713,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the adjudicator's true name, the adjudicator loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Jurist
 
 |    Devil, Infernal     |          -          |      Level 5       |    Elite Artillery    |        EV 28         |
@@ -5684,6 +5782,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the jurist's true name, the jurist loses their fire immunity, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Legate
 
 |    Devil, Infernal     |         -         |      Level 5       |    Elite Defender     |        EV 28         |
@@ -5750,6 +5849,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the legate's true name, the legate loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil Magistrate
 
 |    Devil, Infernal     |         -         |      Level 6       |     Elite Harrier     |        EV 32         |
@@ -5816,6 +5916,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > If a creature within 10 squares speaks the magistrate's true name, the magistrate loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Devil High Judge
 
 |    Devil, Infernal     |          -          |      Level 6       |        Leader         |        EV 32         |
@@ -5906,6 +6007,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** If the target is an ally or a creature charmed by All Rise, Compel the Jury, or Devilish Suggestion, the high judge and the target teleport to swap places. Each ally within 12 squares of the high judge can then make a free strike against a target of the high judge's choice. Each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion makes a free strike against a target of the high judge's choice.
 
+<!-- @type: monster | @category: draconians -->
 ## Draconians
 
 Draconians—wyrmwights as some call them, also known as dragon knights in Orden—are a people created through an obscure ritual known as Dracogenesis. Most draconians have an elemental affinity connected to their draconic scales, which they can change given enough time and training.
@@ -5940,6 +6042,7 @@ To those who know the Dragon Phalanx of old, no name inspires more awe and fear 
 
 Most draconians speak Caelian in addition to the languages of their employers and creators. Lydixavus, Phrrygalax, and Dorzinuuth all speak Caelian and Vastariax. Aeolyxria speaks Caelian and the First Language. Locratix speaks Caelian and Oaxuatl. Myxovidan speaks Caelian and Axiomatic.
 
+<!-- @type: featureblock -->
 ######### Draconian Malice (Malice Features)
 
 At the start of any draconian's turn, you can spend Malice to activate one of the following features.
@@ -5976,6 +6079,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Effect:** The draconian's scales shatter from battle damage. The draconian has damage weakness 5 but can take two turns per round until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Aeolyxria the Uncanny
 
 | Draconian, Dragon, Humanoid |          -          |      Level 6       |   Elite Controller    |        EV 32         |
@@ -6040,6 +6144,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > The Director gains 1 Malice whenever Aeolyxria imposes a condition on an enemy.
 
+<!-- @type: statblock -->
 ####### Locratix the Morningstar
 
 | Draconian, Dragon, Humanoid |          -          |      Level 6       |     Elite Harrier     |        EV 32         |       
@@ -6106,6 +6211,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > When Locratix takes damage of any type for which she has damage immunity, she has damage immunity 6 against the next strike made against her.
 
+<!-- @type: statblock -->
 ####### Lydixavus the Deadeye
 
 | Draconian, Dragon, Humanoid |          -          |      Level 6       |    Elite Artillery    |        EV 32         |       
@@ -6160,6 +6266,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > Lydixavus knows the location of every creature who has ever dealt damage to them. If any of those creatures are within 20 squares of Lydixavus, Lydixavus always has line of effect to them as long as a size 1 opening exists between Lydixavus and the target.
 
+<!-- @type: statblock -->
 ####### Myxovidan the Sintaker
 
 | Draconian, Dragon, Humanoid  |          -          |      Level 6       |      Elite Hexer      |        EV 32         |       
@@ -6216,6 +6323,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > Whenever an enemy regains Stamina while within 5 squares of Myxovidan, they regain 3 less Stamina.
 
+<!-- @type: statblock -->
 ####### Phrrygalax the Subduer
 
 | Draconian, Dragon, Humanoid |          -          |      Level 6       |      Elite Brute      |        EV 32         |       
@@ -6280,6 +6388,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > Whenever Phrrygalax fails a saving throw, he deals an additional 7 damage on his next strike.
 
+<!-- @type: statblock -->
 ####### Dorzinuuth the Base
 
 | Draconian, Dragon, Humanoid |             -              |      Level 6       |        Leader         |        EV 32         |       
@@ -6368,6 +6477,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Dorzinuuth covers the targets in an electrifying mesh. Whenever a target takes damage from a melee ability, the attacker takes 6 lightning damage.
 
+<!-- @type: monster | @category: dragons -->
 ## Dragons
 
 "John, you don't have to do this."
@@ -6558,6 +6668,7 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 >
 > If the encounter map is a location the dragon has occupied for 1 week or more, all surfaces on the map are covered in overgrowth. Any creature other than the dragon who starts their turn on the encounter map has their speed reduced by 2 (to a minimum of 1). Any creature made restrained while on the ground is also made bleeding.
 
+<!-- @type: statblock -->
 ####### Thorn Dragon
 
 |    Dragon, Elemental     |          -          |      Level 2       |         Solo          |        EV 48         |
@@ -6666,6 +6777,7 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 >
 > **Special:** If the Thorn Dragon's Domain trait is in effect, any creature other than the dragon who starts their turn on the encounter map takes 1d3 poison damage.
 
+<!-- @type: featureblock -->
 ######### Thorn Dragon Malice (Malice Features)
 
 At the start of a thorn dragon's turn, you can spend Malice to activate one of the following features.
@@ -6718,6 +6830,7 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 >
 > If the encounter map is a location the dragon has occupied for 1 week or more, illusory magic suffuses the location with shadowy malevolence. Each creature on the encounter map other than the dragon takes a −2 penalty to saving throws made to end the frightened condition. Additionally, whenever a frightened enemy on the encounter map takes damage, they take an extra 3 psychic damage.
 
+<!-- @type: statblock -->
 ####### Gloom Dragon
 
 |     Dragon, Elemental     |             -              |      Level 4       |         Solo          |        EV 72         |   
@@ -6820,6 +6933,7 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 >
 > **Effect:** The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon's speed. An illusion acts on the dragon's turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.
 
+<!-- @type: featureblock -->
 ######### Gloom Dragon Malice (Malice Features)
 
 At the start of a gloom dragon's turn, you can spend Malice to activate one of the following features.
@@ -6872,6 +6986,7 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 >
 > If the encounter map is a location the dragon has occupied for 1 week or more, melted metal and blades coat nearly every surface. Any creature other than the dragon who starts their turn in physical contact with a surface on the encounter map takes 5 damage. Such creatures take an additional 5 damage when they take damage from being force moved into a surface on the map. Whenever an enemy in the encounter uses an ability that deals lightning damage, they take 1d6 damage to themself and each enemy and object adjacent to them.
 
+<!-- @type: statblock -->
 ####### Crucible Dragon
 
 |   Dragon, Elemental    |         -         |      Level 6       |         Solo          |        EV 96         |   
@@ -6990,6 +7105,7 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 > - **12-16:** 13 damage; pull 8 or push 8
 > - **17+:** 7 damage; pull 5 or push 5.
 
+<!-- @type: featureblock -->
 ######### Crucible Dragon Malice (Malice Features)
 
 At the start of a crucible dragon's turn, you can spend Malice to activate one of the following features.
@@ -7042,6 +7158,7 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > If the encounter map is a location the dragon has occupied for 1 week or more, any creature on the map who regains Stamina regains only half the expected amount. Additionally, when a creature on the map who has a soul dies, the dragon absorbs the soul, granting the Director 1 Malice. The creature can't be brought back to life until the dragon is destroyed.
 
+<!-- @type: statblock -->
 ####### Omen Dragon
 
 |      Dragon, Elemental       |          -          |      Level 8       |         Solo          |        EV 120        |   
@@ -7160,6 +7277,7 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > **Effect:** Each target must be dragonsealed. The dragon's eyes glow with unequalled malevolence, and any target who has a Deathcount has that Deathcount reduced to 1.
 
+<!-- @type: featureblock -->
 ######### Omen Dragon Malice (Malice Features)
 
 At the start of an omen dragon's turn, you can spend Malice to activate one of the following features.
@@ -7214,6 +7332,7 @@ Meteor dragons are not known for their conversational habits. When they do deign
 >
 > If the encounter map is a location the dragon has occupied for 1 week or more, each creature other than the dragon has their stability reduced to 0 and automatically obtains a tier 1 outcome on Agility tests. Additionally, any creature who is suffocating during the encounter takes an extra 1d6 damage at the end of each round.
 
+<!-- @type: statblock -->
 ####### Meteor Dragon
 
 | Dragon, Elemental |          -          |      Level 10      |         Solo          |        EV 144        |   
@@ -7330,6 +7449,7 @@ Meteor dragons are not known for their conversational habits. When they do deign
 >
 > An annihilated target must make the test again, decreasing the potency for themself by 2 each time they are annihilated. A creature reduced to 0 Stamina by this dies and their soul is destroyed.
 
+<!-- @type: featureblock -->
 ######### Meteor Dragon Malice (Malice Features)
 
 At the start of a meteor dragon's turn, you can spend Malice to activate one of the following features.
@@ -7354,6 +7474,7 @@ At the start of a meteor dragon's turn, you can spend Malice to activate one of 
 >
 > A black hole manifests as a 1 cube within 20 squares of the dragon in an unoccupied space. Each creature who has M < 5 and each object of size 3 or smaller is vertical pulled 2 squares toward the area at the start of each round, ignoring stability. Any creature who starts their turn in the area or any object in the area at the end of the round suffers the effect of the dragon's Voidlight Breath ability, and the black hole disappears.
 
+<!-- @type: monster | @category: dwarves -->
 ## Dwarves
 
 Possessed of a strength that belies their size, dwarves have flesh infused with stone—a silico-organic hybrid that makes them physically denser than humans or elves. They enjoy a reputation in Orden as savvy engineers and technologists thanks to the lore they inherited from their elder siblings, the long-extinct steel dwarves.
@@ -7396,6 +7517,7 @@ Legends speak of stone singers, dwarves who could move mountains with their song
 
 Most dwarves speak Caelian and Zaliac.
 
+<!-- @type: featureblock -->
 ######### Dwarf Malice (Malice Features)
 
 At the start of any dwarf's turn, you can spend Malice to activate one of the following features.
@@ -7424,6 +7546,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Special:** This ability can't be used by a minion.
 
+<!-- @type: statblock -->
 ####### Dwarf Axethrower
 
 |  Dwarf, Humanoid  |         -         |     Level 1      |             Minion Defender             |  EV 3 for 4 minions  |
@@ -7446,6 +7569,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The target can't use triggered actions until the start of the next round.
 
+<!-- @type: statblock -->
 ####### Dwarf Catchpole
 
 |  Dwarf, Humanoid  |         -         |     Level 1      |              Minion Brute               |  EV 3 for 4 minions  | 
@@ -7468,6 +7592,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** If the target is restrained, they take an extra 2 damage.
 
+<!-- @type: statblock -->
 ####### Dwarf Driver
 
 |  Dwarf, Humanoid  |         -         |     Level 1      |             Minion Harrier              |  EV 3 for 4 minions  | 
@@ -7490,6 +7615,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
 
+<!-- @type: statblock -->
 ####### Dwarf Hunter
 
 |  Dwarf, Humanoid  |         -         |     Level 1      |             Minion Support              |  EV 3 for 4 minions  | 
@@ -7512,6 +7638,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
 
+<!-- @type: statblock -->
 ####### Dwarf Gunner
 
 |  Dwarf, Humanoid  |         -         |      Level 1      |   Platoon Artillery   |         EV 6         | 
@@ -7548,6 +7675,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > Whenever the gunner deals rolled damage to a target, one creature or object adjacent to the target takes 3 damage.
 
+<!-- @type: statblock -->
 ####### Dwarf Launcher
 
 |  Dwarf, Humanoid  |         -         |      Level 1      |     Platoon Hexer     |         EV 8         | 
@@ -7588,6 +7716,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > The launcher ignores concealment and cover, and doesn't need line of effect to use their abilities as long as a size 1 opening exists between the dwarf and the target.
 
+<!-- @type: statblock -->
 ####### Dwarf Reel Winch
 
 |  Dwarf, Humanoid  |         -         |      Level 1      |    Platoon Support    |         EV 6         | 
@@ -7622,6 +7751,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > If a target made slowed by the reel winch is already grabbed or slowed, the grabbed and slowed conditions end and the target is restrained (save ends).
 
+<!-- @type: statblock -->
 ####### Dwarf Shieldwall
 
 |  Dwarf, Humanoid  |         -         |      Level 3      |   Platoon Defender    |        EV 10         | 
@@ -7660,6 +7790,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a creature deals damage to or takes damage from the shieldwall, the shieldwall can make that creature taunted until the end of the creature's next turn.
 
+<!-- @type: statblock -->
 ####### Dwarf Stone Whisperer
 
 |  Dwarf, Humanoid  |           -            |      Level 3      |  Platoon Controller   |        EV 10         | 
@@ -7700,6 +7831,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > Whenever the stone whisperer willingly moves, they can phase through up to 2 squares of stone as part of that movement. If they end their movement inside stone, they are shunted out into the space from which they entered it.
 
+<!-- @type: statblock -->
 ####### Dwarf Trapper
 
 |  Dwarf, Humanoid  |         -         |      Level 1      |    Platoon Harrier    |         EV 6         | 
@@ -7736,6 +7868,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > The snare remains until the end of the encounter. Any enemy who moves into the area for the first time in a round or starts their turn there must make the test.
 
+<!-- @type: statblock -->
 ####### Dwarf Warden
 
 |  Dwarf, Humanoid  |         -         |      Level 2      |     Platoon Brute     |         EV 8         | 
@@ -7776,6 +7909,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > Whenever the warden moves, they can carry an adjacent restrained enemy as if the enemy were grabbed by them.
 
+<!-- @type: statblock -->
 ####### Dwarf Marauder
 
 |  Dwarf, Humanoid  |         -         |      Level 3       |        Leader         |        EV 20         | 
@@ -7848,6 +7982,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The marauder lord creates three size 2 metal objects in unoccupied spaces within distance. Whenever the marauder lord uses Magnetomancy, they can additionally target one of these objects.
 
+<!-- @type: statblock -->
 ####### Servitor War Walker
 
 |  Dwarf, Humanoid  |           -           |      Level 1      |      Elite Mount      |        EV 12         | 
@@ -7890,6 +8025,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > Any restrained or slowed creature who comes adjacent to the war walker is automatically restrained (save ends) and takes a bane on power rolls. A creature restrained this way moves with the war walker.
 
+<!-- @type: monster | @category: elementals -->
 ## Elementals
 
 When the gods formed the mundane world, they took sparks of creation from the roiling plane of Quintessence and gave sentience to some of the multiverse's most basic elements—air, earth, fire, and water. Many elementals contain just one of these components, but can come to embody multiple reagents as they age.
@@ -7938,6 +8074,7 @@ Most elementals speak Low Kuric. Some can use Caelian when they need to.
 >
 > Atæshia, Queen of Ash
 
+<!-- @type: featureblock -->
 ######### Elemental Malice (Malice Features)
 
 At the start of any elemental's turn, you can spend Malice to activate one of the following features.
@@ -7958,6 +8095,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the end of the encounter, the target has a +5 bonus to speed and a +5 damage bonus to strikes. Additionally, whenever an elemental within the target's line of effect uses an ability with "Convocation" in the name, the target also gains the effects of that ability.
 
+<!-- @type: statblock -->
 ####### Crux of Fire
 
 |       Elemental        |         -         |      Level 3      |    Elite Artillery    |        EV 20         |
@@ -8004,6 +8142,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > The crux can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
 
+<!-- @type: statblock -->
 ####### Essence of Storms
 
 |          Elemental          |          -          |      Level 3       |     Elite Harrier     |        EV 20         |
@@ -8050,6 +8189,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > The essence can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
 
+<!-- @type: statblock -->
 ####### Essence of Tides
 
 |       Elemental        |          -           |      Level 3      |   Elite Controller    |        EV 20         |
@@ -8100,6 +8240,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > Whenever the essence starts their turn in a space containing water, they can fly until the end of their turn. While flying, the essence doesn't provoke opportunity attacks.
 
+<!-- @type: statblock -->
 ####### Field of Growth
 
 |        Elemental         |           -           |      Level 3       |   Elite Controller    |        EV 28         |
@@ -8150,6 +8291,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > The field can target any creature touching the ground with their abilities, even if they don't have line of effect to that creature.
 
+<!-- @type: statblock -->
 ####### Force of Earth
 
 |     Elemental     |           -            |      Level 3       |      Elite Brute      |        EV 20         |
@@ -8204,6 +8346,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > The force can burrow through stone, but can't drag other creatures underground when they do so.
 
+<!-- @type: monster | @category: elves-high -->
 ## Elves, High
 
 The children of the solar celestials, the high elves were created to tend to the sun elves as librarians and heralds. Now they sequester themselves away from the world amid the fallen cities of the sky elves, remembering a better age, before the arrival of humans and war to the world made the high elves who they are today.
@@ -8250,6 +8393,7 @@ Most high elves speak Caelian and Hyrallic, with some also speaking Yllyric.
 >
 > Whenever a high elf ordinator appears on an encounter map, the Chaincast Malice feature is improved and always active. When any elf uses a magic ability as if they were in the ordinator's space, that ability has a double edge.
 
+<!-- @type: featureblock -->
 ######### High Elf Malice (Malice Features)
 
 At the start of any high elf's turn, you can spend Malice to activate one of the following features.
@@ -8278,6 +8422,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > Until the end of the round, each high elf in the encounter gains a +4 bonus to speed, and whenever a high elf uses an ability against an enemy, each high elf adjacent to that enemy can make a free strike against them.
 
+<!-- @type: statblock -->
 ####### Elemental Mote
 
 | Elemental, High Elf, Soulless |          -          |     Level 1      |             Minion Hexer              | EV 3 for four minions |
@@ -8302,6 +8447,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > On their turn, the mote can leave the encounter in a flash of light to revive one adjacent dead soot crow, brambleguard, or ceramic horse. The revived creature returns with 3 Stamina.
 
+<!-- @type: statblock -->
 ####### High Elf Dawn Mage
 
 | Fey, High Elf, Humanoid |         -         |     Level 1      |                Minion Controller                | EV 3 for four minions |
@@ -8328,6 +8474,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the dawn mage can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Quiver
 
 | Fey, High Elf, Humanoid |         -         |     Level 1      |                Minion Artillery                 | EV 3 for four minions |
@@ -8354,6 +8501,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the quiver can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### Soot Crow
 
 | Elemental, High Elf |          -          |     Level 1      |               Minion Harrier                | EV 3 for four minions |
@@ -8376,6 +8524,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Effect:** Until the end of their turn, the soot crow ignores opportunity attacks from the target.
 
+<!-- @type: statblock -->
 ####### Brambleguard
 
 | Elemental, High Elf |         -         |      Level 2      |   Platoon Defender    |         EV 8         |
@@ -8408,6 +8557,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > The brambleguard blocks line of effect for enemies. Each enemy who starts their turn adjacent to a brambleguard takes 4 damage.
 
+<!-- @type: statblock -->
 ####### High Elf Bloodletter
 
 | Fey, High Elf, Humanoid |         -         |      Level 1      |   Platoon Ambusher    |         EV 6         |
@@ -8442,6 +8592,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the bloodletter can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Deathtouch
 
 | Fey, High Elf, Humanoid |         -         |      Level 2      |   Platoon Artillery   |         EV 8         |
@@ -8476,6 +8627,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the deathtouch can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Orbweaver
 
 | Fey, High Elf, Humanoid |         -         |      Level 3      |     Platoon Hexer     |        EV 10         |
@@ -8514,6 +8666,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the orbweaver can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Palinode
 
 |  Fey, High Elf, Humanoid  |         -         |      Level 1      |    Platoon Support    |         EV 6         |
@@ -8563,6 +8716,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > - **Acquisitor Strike Team, 46 EV:** Eight quivers, eight soot crows, one brambleguard, three bloodletters, one deathtouch
 > - **Relic Wardens, 74 EV:** Sixteen elemental motes, eight dawn mages, two bloodletters, one brambleguard, one palinode, one orbweaver, one ordinator
 
+<!-- @type: statblock -->
 ####### High Elf Wyrd
 
 |  Fey, High Elf, Humanoid  |         -         |      Level 3      |  Platoon Controller   |        EV 10         |
@@ -8605,6 +8759,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the wyrd can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Zephyr
 
 | Fey, High Elf, Humanoid |         -         |      Level 1      |    Platoon Harrier    |         EV 6         |
@@ -8643,6 +8798,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > At the start of each of their turns, the zephyr can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.
 
+<!-- @type: statblock -->
 ####### High Elf Ordinator
 
 | Fey, High Elf, Humanoid |          -          |      Level 3       |        Leader         |        EV 20         |
@@ -8727,6 +8883,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Effect:** Each target's free strike now has the Magic keyword and can target two creatures or objects. Additionally, each target glows with magic.
 
+<!-- @type: statblock -->
 ####### Ceramic Horse
 
 | Elemental, High Elf |         -         |      Level 1      |     Platoon Mount     |         EV 6         |
@@ -8773,6 +8930,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > If the ceramic horse's rider has the Otherworldly Grace trait, the ceramic horse also has that trait.
 
+<!-- @type: monster | @category: elves-shadow -->
 ## Elves, Shadow
 
 Children of the Twilight Celestials, the shadow elves are the native denizens of the parasitic manifold of Equinox, also known as Dusk. Theirs is a world of perpetual twilight, a sun that never rises nor sets, a world that knows neither noon nor midnight.
@@ -8813,6 +8971,7 @@ In many shadow elf societies, all people are given basic combat training and are
 
 Most shadow elves speak Illyvric, though platoon leaders might speak some Caelian or Hyrallic.
 
+<!-- @type: featureblock -->
 ######### Shadow Elf Malice (Malice Features)
 
 At the start of any shadow elf's turn, you can spend Malice to activate one of the following features.
@@ -8829,6 +8988,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The shadow elves synthesize a concentrated pocket manifold reminiscent of Equinox and graft it onto the encounter map. Until the end of the encounter, all creatures can see shadow elves in full color, and shadow elves no longer benefit from their Of the Umbra trait. Additionally, the potency of all shadow elf abilities increases by 2, and any enemy making a saving throw against an effect imposed by a shadow elf ability must roll an 8 or higher as they feel the effect across two worlds.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Cloak
 
 | Fey, Humanoid, Shadow Elf |           -           |     Level 4      |            Minion Harrier             | EV 6 for four minions |
@@ -8855,6 +9015,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The cloak ignores concealment created by darkness. While the cloak is in direct sunlight, they have damage weakness 3. While the cloak has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Dusk Mage
 
 | Fey, Humanoid, Shadow Elf |           -           |     Level 4      |                Minion Hexer                 | EV 6 for four minions |
@@ -8879,6 +9040,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The dusk mage ignores concealment created by darkness. While the dusk mage is in direct sunlight, they have damage weakness 3. While the dusk mage has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Sniper
 
 | Fey, Humanoid, Shadow Elf |           -           |     Level 4      |                Minion Artillery                | EV 6 for four minions |
@@ -8905,6 +9067,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The sniper ignores concealment created by darkness. While the sniper is in direct sunlight, they have damage weakness 3. While the sniper has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Nightstrike
 
 | Fey, Humanoid, Shadow Elf |           -           |     Level 4      |               Minion Ambusher               | EV 6 for four minions |
@@ -8931,6 +9094,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The nightstrike ignores concealment created by darkness. While the nightstrike is in direct sunlight, they have damage weakness 3. While the nightstrike has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Assassin
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 6      |   Platoon Artillery   |        EV 16         |
@@ -8973,6 +9137,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The assassin ignores concealment created by darkness. While the assassin is in direct sunlight, they have damage weakness 3. While the assassin has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Duskcaller
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 5      |  Platoon Controller   |        EV 14         |
@@ -9009,6 +9174,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The duskcaller ignores concealment created by darkness. While the duskcaller is in direct sunlight, they have damage weakness 3. While the duskcaller has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Knightfell
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 4      |   Platoon Defender    |        EV 12         |
@@ -9043,6 +9209,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The knightfell ignores concealment created by darkness. While the knightfell is in direct sunlight, they have damage weakness 3. While the knightfell has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Luminator
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 4      |    Platoon Support    |        EV 12         |
@@ -9083,6 +9250,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The luminator ignores concealment created by darkness. While the luminator is in direct sunlight, they have damage weakness 3. While the luminator has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Moondancer
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 5      |    Platoon Harrier    |        EV 14         |
@@ -9119,6 +9287,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The moondancer ignores concealment created by darkness. While the moondancer is in direct sunlight, they have damage weakness 3. While the moondancer has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Mournblade
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 6      |   Platoon Ambusher    |        EV 16         |
@@ -9153,6 +9322,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The mournblade ignores concealment created by darkness. While the mournblade is in direct sunlight, they have damage weakness 3. While the mournblade has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Noctis Mage
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 6      |     Platoon Hexer     |        EV 16         |
@@ -9193,6 +9363,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > The noctis mage ignores concealment created by darkness. While the noctis mage is in direct sunlight, they have damage weakness 3. While the noctis mage has concealment, they have damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Shadow Elf Panther
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 4      |     Platoon Brute     |        EV 12         |
@@ -9248,6 +9419,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 - **Kill Wing, 84 EV:** Eight dusk mages, two assassins, two panthers, one mournblade
 - **Shadow Incursion, 122 EV:** Sixteen cloaks, eight snipers, two moondancers, one luminator, one duskcaller, one eclipse
 
+<!-- @type: statblock -->
 ####### Shadow Elf Eclipse
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 6       |        Leader         |        EV 32         |
@@ -9330,6 +9502,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 >
 > **Effect:** The area is shrouded in darkness that creates concealment until the end of the encounter. Any enemy who starts their turn in the area takes 5 corruption damage.
 
+<!-- @type: statblock -->
 ####### Brush Stalker
 
 | Animal, Fey, Shadow Elf |         -         |      Level 4      |     Platoon Mount     |        EV 12         |
@@ -9370,6 +9543,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 >
 > While they have line of effect to the brush stalker, any animal except another brush stalker is frightened.
 
+<!-- @type: monster | @category: elves-wode -->
 ## Elves, Wode
 
 Children of the Sylvan Celestials and masters of the elf-haunted wilds for which they are named, wode elves see all forests as their domain by birthright. They know and enjoy their reputation among humans for snatching children who wander too far into the woods. In their eyes, humans *should* fear the trees.
@@ -9412,6 +9586,7 @@ Most wode elves speak Caelian and Yllyric.
 
 one of the following features.
 
+<!-- @type: featureblock -->
 ######### Wode Elf Malice (Malice Features)
 
 At the start of any wode elf's turn, you can spend Malice to activate one of the following features.
@@ -9432,6 +9607,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 > - **12-16:** Restrained (EoT)
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Wode Elf Lookout
 
 | Fey, Humanoid, Wode Elf |           -           |     Level 1      |            Minion Support             | EV 3 for four minions |
@@ -9460,6 +9636,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > Abilities targeting the lookout that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Runner
 
 | Fey, Humanoid, Wode Elf |         -         |     Level 1      |               Minion Harrier                | EV 3 for four minions |
@@ -9486,6 +9663,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > Abilities targeting the runner that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Scout
 
 | Fey, Humanoid, Wode Elf |         -         |     Level 1      |               Minion Ambusher               | EV 3 for four minions |
@@ -9514,6 +9692,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > Abilities targeting the scout that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Yeoman
 
 | Fey, Humanoid, Wode Elf |         -         |     Level 1      |                Minion Artillery                | EV 3 for four minions |
@@ -9538,6 +9717,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > Abilities targeting the yeoman that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Chirurgeon
 
 | Fey, Humanoid, Wode Elf |           -           |      Level 2      |    Platoon Harrier    |         EV 8         |
@@ -9574,6 +9754,7 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > Abilities targeting the chirurgeon that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Druid
 
 | Fey, Humanoid, Wode Elf |           -           |      Level 2      |  Platoon Controller   |         EV 8         |
@@ -9622,6 +9803,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 - **Blightless Militia, 32 EV:** Eight yeomen, eight runners, one druid, one greenskeeper, one sentry
 - **Hawkeye Cavalry, 48 EV:** Three gweiadur, three wodenelg Reclaimer Force, 74 EV: Sixteen yeomen, sixteen scouts, one guerrilla, one druid, two greenskeepers, one warleader
 
+<!-- @type: statblock -->
 ####### Wode Elf Green Seer
 
 | Fey, Humanoid, Wode Elf |         -         |      Level 1      |     Platoon Hexer     |         EV 6         |
@@ -9672,6 +9854,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > Abilities targeting the green seer that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Greenskeeper
 
 | Fey, Humanoid, Wode Elf |         -         |      Level 1      |   Platoon Defender    |         EV 6         |
@@ -9708,6 +9891,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > Abilities targeting the greenskeeper that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Guerrilla
 
 | Fey, Humanoid, Wode Elf |            -             |      Level 3      |   Platoon Ambusher    |        EV 10         |
@@ -9752,6 +9936,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > Abilities targeting the guerrilla that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Gweiadur
 
 | Fey, Humanoid, Wode Elf |           -           |      Level 3      |   Platoon Artillery   |        EV 10         |
@@ -9794,6 +9979,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > Abilities targeting the gweiadur that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Sentry
 
 | Fey, Humanoid, Wode Elf |         -         |      Level 1      |    Platoon Support    |         EV 6         |
@@ -9830,6 +10016,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > Abilities targeting the sentry that would take a bane from cover or concealment have a double bane instead.
 
+<!-- @type: statblock -->
 ####### Wode Elf Warleader
 
 | Fey, Humanoid, Wode Elf |            -             |      Level 3       |        Leader         |        EV 20         |
@@ -9908,6 +10095,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > **Effect:** Each target is invisible until the start of the next round. The warleader then uses Wodeblade.
 
+<!-- @type: statblock -->
 ####### Wodenelg
 
 |  Plant, Wode Elf  |         -         |      Level 1      |     Platoon Mount     |         EV 6         |
@@ -9950,6 +10138,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > If the wodenelg's rider has the Masking Glamor trait, the wodenelg also has that trait.
 
+<!-- @type: monster | @category: fossil-cryptic -->
 ## Fossil Cryptic
 
 The cave-diving humans who first found fossil cryptics initially thought they were the fossilized reanimated skeletons of creatures predating recorded history. When the explorers' priest presented a holy symbol and attempted to turn the cryptics, he learned these fossilized bones aren't mindless undead—and seconds later, he wound up crushed to death by a pillar of stone.
@@ -9970,6 +10159,7 @@ Fossil cryptics often warn trespassers to leave their domains, speaking threats 
 
 Many fossil cryptics speak Phorialtic, but they are known to also use the ancient languages of the ruins they inhabit.
 
+<!-- @type: featureblock -->
 ######### Fossil Cryptic Malice (Malice Features)
 
 At the start of a fossil cryptic's turn, you can spend Malice to activate one of the following features.
@@ -9994,6 +10184,7 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 > - **12-16:** The enemy's stability is halved (EoT).
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Fossil Cryptic
 
 |     Elemental     |           -            |      Level 2       |         Solo          |        EV 48         |
@@ -10130,6 +10321,7 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 > - **12-16:** 3 damage; vertical slide 4
 > - **17+:** 4 damage; vertical slide 6; if this movement brings the target into contact with the ceiling, they are restrained (save ends).
 
+<!-- @type: monster | @category: giants -->
 ## Giants
 
 Supremely well adapted to harsh environments, giants thrive in extreme conditions. Fire giants build floating cities in the hearts of volcanic calderas, while stone giant villages dot the tallest mountains. Most people often go their entire lives blissfully unaware of the local tribe of giants living atop the nearby mountain range. This is for the best, as few "smallfolk" structures can survive even a handful of sufficiently motivated giants.
@@ -10170,6 +10362,7 @@ Stone giants are made of the same kinds of rocks that form their homes—sandsto
 
 Most giants speak their kind's dialect of High Kuric. Many hill giants also know Caelian.
 
+<!-- @type: featureblock -->
 ######### Giant Malice (Malice Features)
 
 At the start of any giant's turn, you can spend Malice to activate one of the following features.
@@ -10198,6 +10391,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 10 damage; the target is prone and hanging onto the edge of the fissure
 > - **17+:** The target can shift into the nearest unoccupied space outside the fissure.
 
+<!-- @type: statblock -->
 ####### Fire Giant Fireballer
 
 |   Fire Giant, Giant    |         -         |      Level 9      |            Minion Harrier             | EV 11 for four minions |
@@ -10224,6 +10418,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever an adjacent enemy grabs the fireballer or uses a melee ability against them, that enemy takes 5 fire damage.
 
+<!-- @type: statblock -->
 ####### Frost Giant Snowblaster
 
 |   Frost Giant, Giant   |         -         |     Level 8      |                Minion Artillery                | EV 10 for four minions |
@@ -10248,6 +10443,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The snowblaster is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the snowblaster can't shift.
 
+<!-- @type: statblock -->
 ####### Hill Giant Mosstooth
 
 |    Giant, Hill Giant     |           -           |      Level 7      |                  Minion Brute                  | EV 9 for four minions |
@@ -10274,6 +10470,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever the mosstooth targets a creature or object with an ability, any enemy within distance of the ability can use a free triggered action to distract the mosstooth. The mosstooth targets that enemy instead.
 
+<!-- @type: statblock -->
 ####### Sand Stone Giant
 
 | Giant, Stone Giant |           -            |      Level 8      |            Minion Controller            | EV 10 for four minions |    
@@ -10306,6 +10503,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The sand stone giant can burrow through stone, but can't drag other creatures underground when they do so.
 
+<!-- @type: statblock -->
 ####### Basalt Stone Giant
 
 | Giant, Stone Giant |           -            |      Level 8       |   Elite Controller    |        EV 40         |
@@ -10372,6 +10570,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The basalt stone giant can burrow through stone, but can't drag other creatures underground when they do so.
 
+<!-- @type: statblock -->
 ####### Fire Giant Lightbearer
 
 |   Fire Giant, Giant    |         -         |      Level 9       |     Elite Support     |        EV 44         |
@@ -10432,6 +10631,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever an adjacent enemy grabs the lightbearer or uses a melee ability against them, that enemy takes 5 fire damage.
 
+<!-- @type: statblock -->
 ####### Fire Giant Red Fist
 
 |   Fire Giant, Giant    |         -         |      Level 9       |      Elite Brute      |         EV 44         |
@@ -10504,6 +10704,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever an adjacent enemy grabs the red fist or uses a melee ability against them, that enemy takes 5 fire damage.
 
+<!-- @type: statblock -->
 ####### Frost Giant Storm Hurler
 
 |   Frost Giant, Giant   |         -         |      Level 8       |    Elite Artillery    |        EV 40         |
@@ -10560,6 +10761,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The storm hurler is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the storm hurler can't shift.
 
+<!-- @type: statblock -->
 ####### Frost Giant Wind Sprinter
 
 |   Frost Giant, Giant   |         -         |      Level 8       |     Elite Harrier     |        EV 40         |
@@ -10616,6 +10818,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The wind sprinter is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the wind sprinter can't shift.
 
+<!-- @type: statblock -->
 ####### Granite Stone Giant
 
 | Giant, Stone Giant |           -            |      Level 8       |    Elite Defender     |        EV 40         |
@@ -10682,6 +10885,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The granite stone giant can burrow through stone, but can't drag other creatures underground when they do so.
 
+<!-- @type: statblock -->
 ####### Hill Giant Clobberer
 
 |    Giant, Hill Giant     |           -           |      Level 7       |      Elite Brute      |        EV 36         |
@@ -10756,6 +10960,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever the clobberer targets a creature or object with an ability, any enemy within distance of the ability can use a free triggered action to distract the clobberer. The clobberer targets that enemy instead.
 
+<!-- @type: statblock -->
 ####### Marble Stone Giant
 
 | Giant, Stone Giant |           -            |      Level 8       |      Elite Hexer      |        EV 40         |
@@ -10822,6 +11027,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > The marble stone giant can burrow through stone, but can't drag other creatures underground when they do so.
 
+<!-- @type: statblock -->
 ####### Fire Giant Chief
 
 |    Fire Giant, Giant    |         -         |      Level 9       |        Leader         |        EV 44         |
@@ -10908,6 +11114,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > Whenever an adjacent enemy grabs the chief or uses a melee ability against them, that enemy takes 9 fire damage, and if they have M < 4 they are weakened (save ends)
 
+<!-- @type: monster | @category: gnolls -->
 ## Gnolls
 
 Edacity. The hyena-faced gnolls know only blood and hunger. These fiends carry with them the evil legacy of an unwitting demonic heritage. Originally from the Abyssal Wasteland, gnolls quickly spread across the timescape, and they thrive in deserts, plains, and other sparsely populated places. Though a gnoll's muzzle is just as likely to be bloodied by carrion as by prey, their hunting packs hunger for violence, and they eagerly hunt travelers and raid settlements. A pack's eerie war cry, a wild cackle, presages a night of battle and terror.
@@ -10942,6 +11149,7 @@ Most gnolls speak Tholl. Gnoll carnages and other older gnolls usually also know
 
 When gnolls go into a frenzy and coordinate their individual Cackletongue maneuvers, few heroes will leave the battlefield unscarred. Any 1st-echelon encounter that contains more than two non-minion gnolls can be considered one difficulty category harder at the Director's discretion.
 
+<!-- @type: featureblock -->
 ######### Gnoll Malice (Malice Features)
 
 At the start of any gnoll's turn, you can spend Malice to activate one of the following features.
@@ -10968,6 +11176,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Until the end of the encounter, the encounter map is encased in a soundscape of laughter and howling. Each enemy takes a bane on the first power roll they make each round. Whenever a gnoll is killed, this effect is suppressed until the start of the next round.
 
+<!-- @type: statblock -->
 ####### Abyssal Hyena
 
 | Abyssal, Animal, Gnoll |         -         |     Level 2      |             Minion Brute              | EV 4 for four minions |
@@ -10992,6 +11201,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > When the abyssal hyena is reduced to 0 Stamina, they can make a melee free strike before dying.
 
+<!-- @type: statblock -->
 ####### Gnoll Chainflail
 
 |  Abyssal, Gnoll   |         -         |     Level 2      |                Minion Artillery                | EV 4 for four minions |
@@ -11016,6 +11226,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 5 squares of the chainflail is reduced to 0 Stamina, the chainflail can move up to their speed.
 
+<!-- @type: statblock -->
 ####### Gnoll Mage Mauler
 
 |  Abyssal, Gnoll   |         -         |     Level 2      |                  Minion Hexer                  | EV 4 for four minions |
@@ -11042,6 +11253,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 5 squares of the mage mauler is reduced to 0 Stamina, the mage mauler can move up to their speed.
 
+<!-- @type: statblock -->
 ####### Gnoll Wildling
 
 |  Abyssal, Gnoll   |         -         |     Level 2      |               Minion Harrier                | EV 4 for four minions |
@@ -11066,6 +11278,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 7 squares of the wildling is reduced to 0 Stamina, the wildling can move up to their speed.
 
+<!-- @type: statblock -->
 ####### Gnoll Abyssal Archer
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |    Horde Artillery    |         EV 4         |
@@ -11104,6 +11317,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > The abyssal archer doesn't need line of effect to use their abilities against any creature who isn't at full Stamina, as long as a size 1 opening exists between the archer and the target.
 
+<!-- @type: statblock -->
 ####### Gnoll Abyssal Summoner
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |     Horde Support     |         EV 4         |
@@ -11146,6 +11360,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 5 squares of the abyssal summoner is reduced to 0 Stamina, the abyssal summoner moves up to their speed and can make a melee free strike.
 
+<!-- @type: statblock -->
 ####### Gnoll Bonesplitter
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |      Horde Brute      |         EV 4         |
@@ -11180,6 +11395,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 5 squares of the bonesplitter is reduced to 0 Stamina, the bonesplitter moves up to their speed and can make a melee free strike.
 
+<!-- @type: statblock -->
 ####### Gnoll Cackler
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |      Horde Hexer      |         EV 4         |
@@ -11218,6 +11434,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 5 squares of the cackler is reduced to 0 Stamina, the cackler moves up to their speed and can make a melee free strike.
 
+<!-- @type: statblock -->
 ####### Gnoll Marauder
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |     Horde Harrier     |         EV 4         |
@@ -11252,6 +11469,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever a non-minion ally within 7 squares of the marauder is reduced to 0 Stamina, the marauder moves up to their speed and can make a melee free strike.
 
+<!-- @type: statblock -->
 ####### Tusker Demon
 
 | Abyssal, Demon, Gnoll |         -         |      Level 2       |      Elite Brute      |        EV 16         | 
@@ -11292,6 +11510,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > While the tusker demon is winded, they gain an edge on strikes, and any strike made against them gains an edge.
 
+<!-- @type: statblock -->
 ####### Gnoll Carnage
 
 |  Abyssal, Gnoll   |         -         |      Level 2       |        Leader         |        EV 16         |
@@ -11894,6 +12113,7 @@ Most goblins speak Caelian and Szetch.
 >
 > If the worg's rider has the Crafty trait, the worg also has that trait.
 
+<!-- @type: monster | @category: griffons -->
 ## Griffons
 
 With the head, front legs, and wings of a bird and the powerful body and haunches of a feline, griffons are the apex predator's apex predator. Highly territorial with ranges spanning hundreds of leagues, these air-superiority hunters make quick work of any humanoids foolish enough to stumble into griffon lands.
@@ -11912,6 +12132,7 @@ Griffons roost alone or in pairs on craggy mountainsides, in forests, or on clif
 
 Griffons come in many varieties. While the most common griffon is the leonine eagle, others include a falcon-panther variety, a bearded vulture-clouded leopard variety, and a striped condor griffon that combines the features of condor and tiger. Questions abound as to whether these creatures came about naturally or were fashioned by magic hands, and many scholars offer abundant rewards to adventurers who can bring them evidence of rare or undiscovered griffon types.
 
+<!-- @type: featureblock -->
 ######### Griffon Malice (Malice Features)
 
 At the start of any griffon's turn, you can spend Malice to activate one of the following features.
@@ -11936,6 +12157,7 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > Winds bluster and blow across the encounter map. Until the end of the encounter, each creature who can't fly or isn't mounted on a flying creature takes a −3 penalty to stability, and any forced movement effect targeting such a creature moves them an additional 5 squares.
 
+<!-- @type: statblock -->
 ####### Griffon
 
 |  Beast, Griffon   |          -          |      Level 2      |      Elite Mount      |        EV 16         |
@@ -12006,6 +12228,7 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > Any power roll that could knock the griffon or their rider prone takes a bane.
 
+<!-- @type: statblock -->
 ####### Striped Condor Griffon
 
 |  Beast, Griffon   |          -          |      Level 2       |      Elite Brute      |        EV 16         |
@@ -12068,6 +12291,7 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > The griffon can attempt hide even while observed. Additionally, while no enemy has line of effect to them, the griffon can attempt to hide at the end of their turn.
 
+<!-- @type: monster | @category: hag -->
 ## Hag
 
 When fear of death or hunger for power grips a mortal spellcaster, often a druid or a witch, they might forge a pact with an evil archfey. The mortal becomes a hag—aged, clawed, and cruel. A ruthlessly powerful fey in their own right, a hag uses their magic to bring about the misery their archfey wills.
@@ -12094,6 +12318,7 @@ Hags are treacherous by nature, and they only recruit creatures they can trust t
 
 Most hags speak Anjali, Caelian, Khelt, and Yllyric, with older hags often knowing several more languages.
 
+<!-- @type: featureblock -->
 ######### Hag Malice (Malice Features)
 
 At the start of a hag's turn, you can spend Malice to activate one of the following features.
@@ -12136,6 +12361,7 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 > - **12-16:** 10 damage; push 4; M < 2 prone
 > - **17+:** 13 damage; push 5; M < 3 prone
 
+<!-- @type: statblock -->
 ####### Wode Hag
 
 |     Fey, Hag      |             -              |      Level 3       |         Solo          |        EV 60         |
@@ -12262,6 +12488,7 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 > - **Components:** Rare or extinct cooking ingredients, hairpins, gecko tails, roses, werewolf blood
 > - **Project Sources:** Notes in Khelt for the Awe armor enhancement or the Displacing I implement enhancement, notes in Anjali for Stygian Liquor or a Color Cloak (any color)
 
+<!-- @type: monster | @category: hobgoblins -->
 ## Hobgoblins
 
 Also known as demogoblins, hobgoblins descend from ancient goblins who made a pact with an infernal power in exchange for increased size and strength. Each hobgoblin has fang-like tusks and one or more horns protruding from their head.
@@ -12298,6 +12525,7 @@ Devils captured the grack'tanars eons ago. Broken, these demons wait for a call 
 
 Most hobgoblins speak Anjali, Caelian, and Szetch.
 
+<!-- @type: featureblock -->
 ######### Hobgoblin Malice (Malice Features)
 
 At the start of any hobgoblin's turn, you can spend Malice to activate one of the following features.
@@ -12318,6 +12546,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > Until the end of the round, the ground throughout the encounter map becomes blazing hot. Any enemy takes 1 fire damage for each square of the ground they enter. Any enemy who ends their turn on the ground has fire weakness 2 until the start of their next turn.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Brandbearer
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |     Level 4      |                Minion Hexer                 | EV 6 for four minions |
@@ -12346,6 +12575,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the brandbearer is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the brandbearer takes 2 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Lancer
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |     Level 4      |                 Minion Harrier                 | EV 6 for four minions |
@@ -12372,6 +12602,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the lancer is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the lancer takes 2 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Recruit
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |     Level 4      |              Minion Brute               | EV 6 for four minions |
@@ -12400,6 +12631,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the recruit is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the recruit takes 2 fire damage.
 
+<!-- @type: statblock -->
 ####### Grilp
 
 | Devil, Hobgoblin, Infernal |          -          |     Level 4      |            Minion Ambusher            | EV 6 for four minions |
@@ -12430,6 +12662,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > The grilp has concealment from all creatures.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Burning Witch
 
 | Goblin, Hobgoblin, Humanoid, Infernal |            -             |      Level 4      |  Platoon Controller   |        EV 12         |
@@ -12464,6 +12697,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the burning witch is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the burning witch takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Death Captain
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -          |      Level 4      |    Platoon Support    |        EV 12         |
@@ -12504,6 +12738,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the death captain is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the death captain takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Firerunner
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -          |      Level 5      |    Platoon Harrier    |        EV 14         |
@@ -12544,6 +12779,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the firerunner is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the firerunner takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Grandguard
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |      Level 6       |   Platoon Defender    |        EV 16         |
@@ -12588,6 +12824,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the grandguard is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the grandguard takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Hell Trooper
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |      Level 4      |     Platoon Brute     |        EV 12         |
@@ -12622,6 +12859,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the trooper is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the trooper takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Incendiarist
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -         |      Level 5      |   Platoon Artillery   |        EV 14         |
@@ -12666,6 +12904,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the incendiarist is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the incendiarist takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Redglare
 
 | Goblin, Hobgoblin, Humanoid, Infernal |            -             |      Level 6      |     Platoon Hexer     |        EV 16         |
@@ -12704,6 +12943,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the redglare is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the redglare takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Smokebinder
 
 | Goblin, Hobgoblin, Humanoid, Infernal |             -              |      Level 5      |   Platoon Ambusher    |        EV 14         |
@@ -12746,6 +12986,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > When the smokebinder is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the smokebinder takes 3 fire damage.
 
+<!-- @type: statblock -->
 ####### Hobgoblin War Mage
 
 | Goblin, Hobgoblin, Humanoid, Infernal |                -                |      Level 5       |   Elite Controller    |        EV 28         |
@@ -12802,6 +13043,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > Any enemy within 2 squares of the war mage has a −2 penalty to saving throws.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Bloodlord
 
 | Goblin, Hobgoblin, Humanoid, Infernal |            -             |      Level 6       |        Leader         |        EV 32         |
@@ -12880,6 +13122,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the end of the encounter, the bloodlord is wreathed in black flames. Whenever any adjacent enemy grabs the bloodlord or uses a melee ability against them, that enemy takes 5 corruption damage.
 
+<!-- @type: statblock -->
 ####### Slaughter Demon
 
 | Abyssal, Demon, Hobgoblin |           -            |      Level 4       |      Elite Brute      |        EV 24         |         
@@ -12938,6 +13181,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > While the slaughter demon is winded, they gain an edge on strikes, and any strike made against them gains an edge.
 
+<!-- @type: monster | @category: humans -->
 ## Humans
 
 Humans flourish in every habitable part of the world, from inviting coastal cities to unforgiving mountainous terrain. While most humans live quietly in peaceful communities, some are drawn to adventure by an unquenchable thirst for excitement or power.
@@ -12970,6 +13214,7 @@ Humans are connected to the natural world in a way that many other folk are not.
 
 Most humans speak Caelian and one Vaslorian human language.
 
+<!-- @type: featureblock -->
 ######### Human Malice (Malice Features)
 
 At the start of any human's turn, you can spend Malice to activate one of the following features.
@@ -12996,6 +13241,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > Each non-minion human in the encounter regains Stamina equal to 5 times their level.
 
+<!-- @type: statblock -->
 ####### Human Apprentice Mage
 
 |             Human, Humanoid             |         -         |     Level 2      |                Minion Controller                | EV 4 for four minions |
@@ -13023,6 +13269,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > The apprentice mage ignores concealment if it's granted by a supernatural effect.
 
 
+<!-- @type: statblock -->
 ####### Human Archer
 
 |             Human, Humanoid             |         -         |     Level 1      |                Minion Artillery                 | EV 3 for four minions |
@@ -13047,6 +13294,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The archer ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Death Acolyte
 
 |             Human, Humanoid             |         -         |     Level 1      |                  Minion Hexer                   | EV 3 for four minions |
@@ -13073,6 +13321,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The death acolyte ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Guard
 
 |             Human, Humanoid             |         -         |     Level 1      |             Minion Brute              | EV 3 for four minions |
@@ -13099,6 +13348,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The guard ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Raider
 
 |             Human, Humanoid             |         -         |     Level 1      |               Minion Harrier                | EV 3 for four minions |
@@ -13125,6 +13375,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The raider ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Rogue
 
 |             Human, Humanoid             |         -         |     Level 1      |               Minion Ambusher               | EV 3 for four minions |
@@ -13151,6 +13402,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The rogue ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Brawler
 
 |             Human, Humanoid             |         -         |      Level 1      |     Platoon Brute     |         EV 6         |
@@ -13189,6 +13441,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The brawler ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Death Cultist
 
 |             Human, Humanoid             |         -         |      Level 2      |    Platoon Support    |         EV 8         |
@@ -13223,6 +13476,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The death cultist ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Knave
 
 |             Human, Humanoid             |         -         |      Level 2      |   Platoon Defender    |         EV 8         |
@@ -13257,6 +13511,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The knave ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Scoundrel
 
 |             Human, Humanoid             |         -         |      Level 1      |   Platoon Ambusher    |         EV 6         |
@@ -13291,6 +13546,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The scoundrel ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Storm Mage
 
 |             Human, Humanoid             |         -         |      Level 3      |  Platoon Controller   |        EV 10         |
@@ -13337,6 +13593,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The storm mage ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Trickshot
 
 |             Human, Humanoid             |         -         |      Level 1      |   Platoon Artillery   |         EV 6         |
@@ -13365,6 +13622,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > The trickshot ignores concealment if it's granted by a supernatural effect.
 
+<!-- @type: statblock -->
 ####### Human Blackguard
 
 |             Human, Humanoid             |         -         |      Level 1      |        Leader         |        EV 12         |
@@ -13439,6 +13697,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The blackguard uses their Zweihander Swing against each target. Each ally within 5 squares of the area can then make a free strike against a target (one target per ally).
 
+<!-- @type: statblock -->
 ####### Human Bandit Chief
 
 |             Human, Humanoid             |         -         |      Level 3       |        Leader         |        EV 20         |
@@ -13519,6 +13778,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The bandit chief shifts up to 10 squares regardless of their speed. During or after this movement, they can use their Whip and Magic Longsword against up to four targets. Additionally, one ally adjacent to each target can make a free strike against that target.
 
+<!-- @type: statblock -->
 ####### Giant Hawk
 
 |   Animal, Human   |          -          |      Level 1      |     Platoon Mount     |         EV 6         |
@@ -13553,6 +13813,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > Once per turn when the hawk moves, any creature riding the hawk can make a free strike during or after the movement.
 
+<!-- @type: monster | @category: kingfissure-worm -->
 ## Kingfissure Worm
 
 Named for their infamous hunting technique, kingfissure worms terraform the earth as they move, building tunnels and crevasses to accommodate their enormous form. They then lie in wait deep underground. Seasoned adventurers know to be wary when traveling past even the smallest crack in the earth. For when a worm senses the vibrations of their prey above, they shoot their multiple serpentine tongues through the crevasses, dragging prey from the surface into their cavernous maw.
@@ -13581,6 +13842,7 @@ Kingfissure worms never stop growing, and the oldest are truly immense, easily m
 
 For all their might and vitality, kingfissure worms are primarily ambush hunters, and like any ambush hunter, they need delicate and precise senses to detect and target their prey when it approaches. As burrowing creatures, they have a finely tuned sense of touch able to detect even the most minute vibrations while in direct contact with earth and stone. This fills the role of their primary sense, and their rudimentary eyesight leaves them dreadfully nearsighted. In combination, their poor vision and reliance on ground-conducted vibrations means that they have almost no way of pinpointing flying creatures, and many species of birds find kingfissure worm territory exceptionally safe and free from predators.
 
+<!-- @type: featureblock -->
 ######### Kingfissure Worm Malice (Malice Features)
 
 At the start of a kingfissure worm's turn or when an action's trigger occurs, you can spend Malice to activate one of the following features.
@@ -13617,6 +13879,7 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Effect:** Until the end of the next round, each target takes a −3 penalty to stability, treats all terrain as difficult terrain, and takes 10 damage whenever they are knocked prone.
 
+<!-- @type: statblock -->
 ####### Kingfissure Worm
 
 |    Beast, Worm    |           -            |      Level 7       |         Solo          |        EV 108        |
@@ -13741,6 +14004,7 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Effect:** Each creature swallowed by the worm is regurgitated and automatically subject to the tier 3 outcome, then lands prone in an unoccupied space within 5 squares of the kingfissure worm.
 
+<!-- @type: monster | @category: kobolds -->
 ## Kobolds
 
 Kobold communities, called legions, are found in every biome and across the timescape. Gravitating toward powerful allies and defensible locations, kobolds are equally common in walled cities, secluded temples, subterranean tunnel-mazes, and dragon lairs. Most legions strive to be good neighbors or to go entirely unnoticed, but when a community falls under the sway of a malevolent wyrm or power-hungry kobold centurion, they can pose a significant threat.
@@ -13779,6 +14043,7 @@ The gummy brick is a deadly ooze—a monster shaped of acidic goo and driven by 
 
 Most kobolds speak Kethaic and can understand Caelian.
 
+<!-- @type: featureblock -->
 ######### Kobold Malice (Malice Features)
 
 At the start of any kobolds's turn, you can spend Malice to activate one of the following features.
@@ -13795,6 +14060,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > Until the end of the round, all kobolds with Shield? Shield! impose an additional bane on incoming strikes and abilities.
 
+<!-- @type: statblock -->
 ####### Kobold Princeps
 
 | Humanoid, Kobold  |         -         |     Level 1      |             Minion Support              | EV 3 for four minions |
@@ -13821,6 +14087,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the princeps has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Sagittarion
 
 | Humanoid, Kobold  |         -         |     Level 1      |                Minion Artillery                 | EV 3 for four minions |
@@ -13847,6 +14114,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the sagittarion has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Tiro
 
 | Humanoid, Kobold  |         -         |     Level 1      |            Minion Defender            | EV 3 for four minions |
@@ -13873,6 +14141,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the tiro has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Veles
 
 | Humanoid, Kobold  |         -         |     Level 1      |            Minion Harrier             | EV 3 for four minions |
@@ -13899,6 +14168,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the veles has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Adeptus
 
 | Humanoid, Kobold  |         -         |      Level 1      |    Horde Artillery    |         EV 3         |
@@ -13939,6 +14209,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the adeptus has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Artifex
 
 | Humanoid, Kobold  |         -         |      Level 1      |   Horde Controller    |         EV 3         |
@@ -13975,6 +14246,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the artifex has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Legionary
 
 | Humanoid, Kobold  |         -         |      Level 1      |    Horde Defender     |         EV 3         |
@@ -14013,6 +14285,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the legionary has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Kobold Signifer
 
 | Humanoid, Kobold  |         -         |      Level 1      |     Horde Support     |         EV 3         |
@@ -14053,6 +14326,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > Any ally who starts their turn within 5 squares of the signifer gains a +2 bonus to speed and a +2 damage bonus to strikes until the end of their turn. Additionally, if the signifer is killed, any kobold minion can enter their space during the same encounter to retrieve the signum battle standard they carry (no action required) and replace their stat block with the signifer stat block.
 
+<!-- @type: statblock -->
 ####### Kobold Venator
 
 | Humanoid, Kobold  |         -         |      Level 1      |    Horde Ambusher     |         EV 3         |
@@ -14087,6 +14361,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the venator has stability 1, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Trained Gummy Brick
 
 | Kobold, Ooze, Soulless |         -         |      Level 1      |      Elite Hexer      |        EV 12         |
@@ -14125,6 +14400,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > The brick completely occupies their space, blocking line of effect for enemies. The brick is hidden until they act.
 
+<!-- @type: statblock -->
 ####### Kobold Centurion
 
 | Kobold, Humanoid  |         -         |      Level 1      |        Leader         |        EV 12         |
@@ -14199,6 +14475,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > While adjacent to an ally who also has this trait, the centurion has stability 3, has cover, and grants cover to allies.
 
+<!-- @type: statblock -->
 ####### Shieldscale Drangolin
 
 |   Kobold, Beast    |           -            |      Level 1      |      Elite Brute      |        EV 12         |
@@ -14251,6 +14528,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > When the drangolin burrows, each adjacent size 1S or smaller ally can move with them.
 
+<!-- @type: monster | @category: lightbenders -->
 ## Lightbenders
 
 Lightbenders prowl deserts, plains, forests—any sunbathed wilderness where they can take advantage of the adaptations that make them skilled daylight predators. This monstrous creature's fur bends and refracts light from the surrounding environment, producing mirages that distract and confuse their prey.
@@ -14267,6 +14545,7 @@ Lightbenders can also bend the sounds they make, enabling them to almost complet
 
 Though lightbenders are typically solitary creatures, they sometimes cross into another lightbender's territory to help protect a newborn litter of kittens. A few people have succeeded in taming lightbenders as guards or hunting beasts, and if treated well, they can make loyal protectors, often viewing their smaller humanoid companions as surrogate kittens.
 
+<!-- @type: featureblock -->
 ######### Lightbender Malice (Malice Features)
 
 At the start of any lightbender's turn, you can spend Malice to activate one of the following features.
@@ -14287,6 +14566,7 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 > - **12-16:** The target doesn't have line of effect to any lightbender (EoT).
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Lightbender
 
 | Beast, Lightbender |         -         |       Level 3       |    Elite Ambusher     |        EV 20         |
@@ -14351,6 +14631,7 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > Any effect on the lightbender that would be ended by a saving throw instead ends automatically at the end of their next turn.
 
+<!-- @type: statblock -->
 ####### Lightbender Pouncer
 
 | Beast, Lightbender |         -         |       Level 3       |     Elite Harrier     |        EV 20         |
@@ -14415,6 +14696,7 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > Any effect on the pouncer that would be ended by a saving throw instead ends automatically at the end of their next turn.
 
+<!-- @type: monster | @category: lizardfolk -->
 ## Lizardfolk
 
 Lizardfolk prefer warm, tropical climates, but they're willing to settle in any humid region—the more moisture in the air, the better. Even in colder environs, lizardfolk can be found in any sufficiently marshy environment. Bogs and wetlands are particularly common nesting grounds.
@@ -14450,6 +14732,7 @@ In times of crisis, such as a food shortage, an evil lizardfolk leader can explo
 
 Most lizardfolk speak Caelian and their own dialect of Khamish.
 
+<!-- @type: featureblock -->
 ######### Lizardfolk Malice (Malice Features)
 
 At the start of any lizardfolk's turn, you can spend Malice to activate one of the following features.
@@ -14480,6 +14763,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > Waist-high water floods the entire encounter map. Any lizardfolk submerged in water gains an edge on abilities and doubles their speed while swimming. If there are no open water pits on the encounter map, the water drains away at the end of the round.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Grunt
 
 | Humanoid, Lizardfolk |          -           |     Level 1      |            Minion Harrier             | EV 3 for four minions |
@@ -14504,6 +14788,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > While the grunt has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Shellguard
 
 | Humanoid, Lizardfolk |          -           |     Level 1      |             Minion Defender             | EV 3 for four minions |
@@ -14530,6 +14815,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > While the shellguard has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Tonguer
 
 | Humanoid, Lizardfolk |          -           |     Level 1      |            Minion Artillery             | EV 3 for four minions |
@@ -14556,6 +14842,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > While the tonguer has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Bloodeye
 
 | Humanoid, Lizardfolk |          -           |      Level 1      |     Platoon Hexer     |         EV 6         |
@@ -14592,6 +14879,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > While the bloodeye has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Scaletooth
 
 | Humanoid, Lizardfolk |          -           |      Level 1      |     Platoon Brute     |         EV 6         |
@@ -14630,6 +14918,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > While the scaletooth has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
+<!-- @type: statblock -->
 ####### Lizardfolk Skyterror
 
 | Humanoid, Lizardfolk |          -           |      Level 1      |    Platoon Harrier    |         EV 6         |
@@ -14675,6 +14964,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 > While the skyterror has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
 
 
+<!-- @type: statblock -->
 ####### Lizardfolk Deathrex
 
 | Humanoid, Lizardfolk |              -              |      Level 1      |        Leader         |        EV 12         |
@@ -14757,6 +15047,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Effect:** Each target moves up to their speed. Until the end of the encounter, whenever a creature comes adjacent to a target or starts their turn there, the target can make a free strike against them.
 
+<!-- @type: monster | @category: manticore -->
 ## Manticore
 
 A weary traveler hears a call through the forest or friendly voices from a rocky shelter, and their heart leaps at the promise of refuge—only to find themself at the mercy of serrated teeth and poisonous spikes. In a manticore's territory, people go missing without a trace. These fearsome creatures carve out their hunting grounds in forests near small villages, mountain passes where caravans travel, and other locations with plentiful wildlife. Though manticores can subsist on a carnivorous diet of any nearby prey, their choicest meal is humanoid flesh.
@@ -14777,6 +15068,7 @@ A manticore who develops a taste for humanoids can rarely be tamed. But a young 
 
 Most manticores can mimic Caelian and one language commonly spoken in the region where they dwell. Except in rare cases, manticores don't communicate in full sentences and are too driven by hunger to engage in negotiation.
 
+<!-- @type: featureblock -->
 ######### Manticore Malice (Malice Features)
 
 At the start of any manticore's turn, you can spend Malice to activate one of the following features.
@@ -14801,6 +15093,7 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > The manticore sprays tail spikes across the ground within 5 squares of them. Each enemy in that area who has A < 3 is bleeding (save ends). Additionally, the area is difficult terrain, and any enemy takes 3 poison damage for each square of the area they enter. An enemy who takes 9 poison damage this way on one turn is weakened until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Manticore
 
 | Beast, Manticore  |          -          |       Level 4       |         Solo          |        EV 72         |
@@ -14910,6 +15203,7 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 > - **Project Sources:** Notes in Zaliac for the Warding II armor enhancement, notes in Khelt for the Celerity implement enhancement, notes in Variac for an Onerous Bow
 > - **Wealth:** If the heroes follow blood trails back to a nearby abandoned caravan, each hero earns 1 wealth
 
+<!-- @type: monster | @category: medusa -->
 ## Medusa
 
 Hunted as monsters with no thought given to their nature or origin, medusas are some of the most underestimated and misunderstood creatures. Many people fear medusas for their monstrous appearance and ability to turn others to stone, but few realize the truth. Each of these monstrosities was once a humanoid, cursed and transformed for defying a god. But while some medusas embrace wickedness, many simply fight for their lives against those who threaten them through their ignorance.
@@ -14944,6 +15238,7 @@ Agents of the deity who ordered a medusa's curse can sometimes be convinced to l
 
 Medusas can speak any language they knew before they were cursed. Many of them speak Caelian, and others have learned the languages of monsters and creatures they dwell near. Additionally, tales tell of some medusas who speak the original form of Khamish.
 
+<!-- @type: featureblock -->
 ######### Medusa Malice (Malice Features)
 
 At the start of a medusa's turn, you can spend Malice to activate one of the following features.
@@ -14986,6 +15281,7 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 > - **12-16:** 10 damage; vertical push 3
 > - **17+:** 6 damage
 
+<!-- @type: statblock -->
 ####### Medusa
 
 | Accursed, Humanoid, Medusa |         -         |       Level 5       |         Solo          |        EV 84         |
@@ -15100,6 +15396,7 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Effect:** As a free triggered action, each stone statue and creature restrained or slowed by Petrify within distance moves up to their speed and uses a signature ability that gains an edge, targeting an enemy of the medusa's choice. A stone statue without its own statistics has speed 5 and uses the medusa's free strike.
 
+<!-- @type: monster | @category: minotaurs -->
 ## Minotaurs
 
 The fearsome minotaur is a study in contrasts. Their imposing humanoid body is muscular with patches of thick hair. Their head is that of a massive horned bull, and their soft eyes convey a soulful intelligence mingled with smoldering intensity.
@@ -15122,6 +15419,7 @@ Even evil minotaurs can be fiercely loyal friends, gladly charging into certain 
 
 Most minotaurs speak their own dialect of Khamish.
 
+<!-- @type: featureblock -->
 ######### Minotaur Malice (Malice Features)
 
 At the start of any minotaur's turn, you can spend Malice to activate one of the following features.
@@ -15143,6 +15441,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 > - **17+:** No effect.
 
 
+<!-- @type: statblock -->
 ####### Minotaur
 
 | Accursed, Humanoid, Minotaur |         -         |      Level 3       |     Elite Harrier     |        EV 20         |
@@ -15201,6 +15500,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > The minotaur can't obtain less than a tier 2 outcome when making tests to navigate, search, or seek.
 
+<!-- @type: statblock -->
 ####### Minotaur Sunderer
 
 | Accursed, Humanoid, Minotaur |         -         |      Level 3       |      Elite Brute      |        EV 20         |
@@ -15268,6 +15568,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 > The sunderer can't obtain less than a tier 2 outcome when making tests to navigate, search, or seek.
 
 
+<!-- @type: statblock -->
 ####### Minotaur Bully
 
 | Accursed, Humanoid, Minotaur |         -         |      Level 8      |                  Minion Brute                  | EV 10 for four minions |
@@ -15292,6 +15593,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > The bully can't obtain less than a tier 2 outcome when making tests to navigate, search, or seek.
 
+<!-- @type: statblock -->
 ####### Minotaur Lackey
 
 | Accursed, Humanoid, Minotaur |         -         |      Level 8      |            Minion Harrier             | EV 10 for four minions |
@@ -15318,6 +15620,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > The lackey can't obtain less than a tier 2 outcome when making tests to navigate, search, or seek.
 
+<!-- @type: statblock -->
 ####### Minotaur Stampede
 
 | Accursed, Humanoid, Minotaur, Swarm |         -         |     Level 10      |               Minion Defender               | EV 12 for four minions |
@@ -15344,6 +15647,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > The stampede can move through spaces as if they were a size 2 creature, and can occupy other creatures' spaces. At the start of each of the stampede's turns, they can make a free strike against each creature whose space they share.
 
+<!-- @type: monster | @category: ogres -->
 ## Ogres
 
 Massive and bull-necked with bulging muscle and flesh, most ogres indulge their every impulse because few can stop them. Though small for giants, ogres outweigh and tower over humanoids. Most live in the wild where they can create their own rules and ways of life.
@@ -15372,6 +15676,7 @@ Rumor has it that a cyclops can emit a mile-long energy ray from their eye. Howe
 
 Most ogres speak Caelian and High Kuric.
 
+<!-- @type: featureblock -->
 ######### Ogre Malice (Malice Features)
 
 At the start of any ogre's turn, you can spend Malice to activate one of the following features.
@@ -15392,6 +15697,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > Until the end of the round, each ogre has damage immunity 5 and deals an extra 5 damage with abilities, and heroic abilities that target any ogre have their Heroic Resource cost reduced by 1 (to a minimum of 1).
 
+<!-- @type: statblock -->
 ####### Ogre Goon
 
 |    Giant, Ogre    |         -         |      Level 2       |      Elite Brute      |        EV 16         |
@@ -15456,6 +15762,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > While winded, the goon has damage immunity 2.
 
+<!-- @type: statblock -->
 ####### Ogre Juggernaut
 
 |    Giant, Ogre    |         -         |      Level 2      |     Elite Harrier     |        EV 16         |
@@ -15534,6 +15841,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > - **Components:** A lead slingstone that killed a giant, a slaughter demon's horn (used as a drinking horn)
 > - **Project Sources:** Notes in Low Kuric for the Thundering I weapon enhancement, notes in High Kuric for a Bastion Belt or the Devastating weapon enhancement
 
+<!-- @type: statblock -->
 ####### Cyclops
 
 |    Giant, Ogre    |         -         |     Level 10      |           Minion Controller           | EV 12 for four minions |
@@ -15560,6 +15868,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > The cyclops has line of effect only within 3 squares. Whenever the cyclops takes damage from a ranged ability, they can move up to 3 squares toward the source of the damage.
 
+<!-- @type: statblock -->
 ####### Ogre Blue Blood
 
 |    Giant, Ogre    |         -         |      Level 7      |                Minion Brute                 | EV 9 for four minions |
@@ -15590,6 +15899,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > The blue blood has damage immunity 2 while their squad has three or fewer minions in it.
 
+<!-- @type: statblock -->
 ####### Ogre Tantrum
 
 |    Giant, Ogre    |         -         |      Level 7      |                Minion Artillery                 | EV 9 for four minions |
@@ -15618,6 +15928,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > The tantrum has damage immunity 3 and speed 8 while their squad has two or fewer minions in it.
 
+<!-- @type: monster | @category: olothec -->
 ## Olothec
 
 Protean in form, beings of nearly pure intellect, the Old Ones think in alien geometric logic. Their name for themselves is unrecorded, but sages believe they are the oldest beings in the timescape and simply call them "The Old Ones." Synlirii refer to them as olothec (*OH-luh thek*)-"ancient enemies." But some humanoid scholars have noted this term bears an uncanny similarity to another archaic synlirii word meaning "ancient ancestor."
@@ -15656,6 +15967,7 @@ Slime servants are creatures who have been changed through the powers of the olo
 
 Only technology from the upper worlds, particularly products of evolutionary advancements made by the voiceless talkers, can restore a slime servant’s memories and return them to their original state.
 
+<!-- @type: featureblock -->
 ######### Olothec Malice (Malice Features)
 
 At the start of an olothec's turn, you can spend Malice to activate one of the following features.
@@ -15682,6 +15994,7 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > The olothec broadcasts their memory of the universe in its primordial state—a sweeping cacophony of transcendental irrationality and unceasing change. Until the end of the encounter, any creature who starts their turn within 3 squares of the olothec and has R < 3 is dazed and slowed until the end of their next turn).
 
+<!-- @type: statblock -->
 ####### Olothec
 
 |      Horror, Olothec      |             -             |      Level 6       |         Solo          |        EV 96         |
@@ -15812,6 +16125,7 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Effect:** A devolved creature has a −1 score for all their characteristics other than Reason.
 
+<!-- @type: monster | @category: orcs -->
 ## Orcs
 
 In a long-lost language, the word oruk-"blood fire"-described the glowing appearance of the orc people when they push themselves to their limits. While orcs know one another as kanin ("the people") in their own language, they also use "orc" with great pride, especially when dealing with other folk.
@@ -15842,6 +16156,7 @@ Orcs rely on giant bipedal lizards called scyzas to carry them over great distan
 
 Most orcs speak Caelian and Kalliak.
 
+<!-- @type: featureblock -->
 ######### Orc Malice (Malice Features)
 
 At the start of any orc's turn, you can spend Malice to activate one of the following features.
@@ -15866,6 +16181,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > - **12-16:** 4 damage; the target falls
 > - **17+:** The target can shift into the nearest unoccupied space outside the pit.
 
+<!-- @type: statblock -->
 ####### Mohler
 
 |    Animal, Orc    |           -            |     Level 1      |            Minion Ambusher            | EV 3 for four minions |
@@ -15896,6 +16212,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > The mohler can use the Dig maneuver at the start of the encounter. Additionally, while the mohler burrows within 1 square below the ground, the ground above where they burrow is difficult terrain.
 
+<!-- @type: statblock -->
 ####### Orc Blitzer
 
 |   Humanoid, Orc   |         -         |     Level 1      |            Minion Harrier             | EV 3 for four minions |
@@ -15922,6 +16239,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the blitzer is reduced to 0 Stamina, they can make a free strike before dying.
 
+<!-- @type: statblock -->
 ####### Orc Bloodspark
 
 |   Humanoid, Orc   |         -         |     Level 1      |                     Minion Artillery                     | EV 3 for four minions |
@@ -15946,6 +16264,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the bloodspark is reduced to 0 Stamina, they can make a free strike before dying.
 
+<!-- @type: statblock -->
 ####### Orc Glorifier
 
 |   Humanoid, Orc   |         -         |     Level 1      |                Minion Controller                | EV 3 for four minions |
@@ -15972,6 +16291,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the glorifier is reduced to 0 Stamina, they can make a free strike before dying.
 
+<!-- @type: statblock -->
 ####### Orc Razor
 
 |   Humanoid, Orc   |         -         |     Level 1      |                  Minion Brute                  | EV 3 for four minions |
@@ -15998,6 +16318,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the razor is reduced to 0 Stamina, they can make a free strike before dying.
 
+<!-- @type: statblock -->
 ####### Orc Bloodrunner
 
 |   Humanoid, Orc   |         -         |      Level 3      |    Platoon Harrier    |        EV 10         |
@@ -16030,6 +16351,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the bloodrunner is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the bloodrunner is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Chainlock
 
 |   Humanoid, Orc   |         -         |      Level 1      |     Platoon Hexer     |         EV 6         |
@@ -16072,6 +16394,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the chainlock is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the chainlock is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Eye of Grole
 
 |               Humanoid, Orc               |         -         |      Level 1      |   Platoon Artillery   |         EV 6         |
@@ -16116,6 +16439,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the eye is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the eye is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Garotter
 
 |   Humanoid, Orc   |         -         |      Level 1      |   Platoon Ambusher    |         EV 6         |
@@ -16164,6 +16488,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the garroter is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the garroter is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Godcaller
 
 |   Humanoid, Orc   |         -         |      Level 1      |    Platoon Support    |         EV 6         |
@@ -16206,6 +16531,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the godcaller is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the godcaller is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Juggernaut
 
 |   Humanoid, Orc   |         -         |      Level 3      |     Platoon Brute     |        EV 10         |
@@ -16246,6 +16572,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the juggernaut is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the juggernaut is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Rampart
 
 |   Humanoid, Orc   |         -         |      Level 2      |   Platoon Defender    |         EV 8         |
@@ -16290,6 +16617,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the rampart is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the rampart is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Terranova
 
 |   Humanoid, Orc   |           -            |      Level 2      |  Platoon Controller   |         EV 8         |
@@ -16334,6 +16662,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the terranova is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the terranova is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Orc Warleader
 
 |   Humanoid, Orc   |         -         |      Level 3       |        Leader         |        EV 20         |
@@ -16420,6 +16749,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > If the warleader is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the warleader is reduced to 1 Stamina instead.
 
+<!-- @type: statblock -->
 ####### Scyza
 
 |    Animal, Orc    |         -         |      Level 3       |      Elite Mount      |        EV 20         |
@@ -16498,6 +16828,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > While riding the scyza, three size 1 allies can occupy the same space.
 
+<!-- @type: monster | @category: radenwights -->
 ## Radenwights
 
 The ratfolk known as radenwights are blessed with coordination and acrobatics so impressive and effective that they might be a highly trained and practiced circus act. They enjoy building their warrens, known as "meddles," under cities where the chaos of daily life makes raiding the people above fun and easy.
@@ -16522,6 +16853,7 @@ In truth, the Great Maclette finds beauty in the thrill of the heist. Robbery is
 
 Most radenwights speak Caelian and Szetch.
 
+<!-- @type: featureblock -->
 ######### Radenwight Malice (Malice Features)
 
 At the start of any radenwight's turn, you can spend Malice to activate one of the following features.
@@ -16556,6 +16888,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 > - **12-16:** 5 sonic damage
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Radenwight Mischiever
 
 | Humanoid, Radenwight |           -           |     Level 1      |                Minion Ambusher                 |  EV 3 for 4 minions  |
@@ -16588,6 +16921,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The mischiever makes a free strike against the target.
 
+<!-- @type: statblock -->
 ####### Radenwight Redeye
 
 | Humanoid, Radenwight |           -           |     Level 1      |              Minion Artillery               |  EV 3 for 4 minions  |
@@ -16620,6 +16954,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The redeye makes a free strike against the target.
 
+<!-- @type: statblock -->
 ####### Radenwight Scrapper
 
 | Humanoid, Radenwight |           -           |     Level 1      |                Minion Defender                 |  EV 3 for 4 minions  |
@@ -16650,6 +16985,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The scrapper makes a free strike against the target.
 
+<!-- @type: statblock -->
 ####### Radenwight Swiftpaw
 
 | Humanoid, Radenwight |           -           |     Level 1      |               Minion Harrier                |  EV 3 for 4 minions  |
@@ -16680,6 +17016,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The swiftpaw makes a free strike against the target.
 
+<!-- @type: statblock -->
 ####### Radenwight Bruxer
 
 | Humanoid, Radenwight |           -           |      Level 1      |     Platoon Brute     |         EV 6         |
@@ -16728,6 +17065,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > Any enemy who shifts adjacent to the bruxer has that shift end. Additionally, any enemy adjacent to the bruxer can't shift.
 
+<!-- @type: statblock -->
 ####### Radenwight Piper
 
 | Humanoid, Radenwight |           -           |      Level 1      |    Platoon Support    |         EV 6         |
@@ -16774,6 +17112,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > At the end of the piper's turn, they can slide one adjacent creature up to 2 squares, ignoring stability.
 
+<!-- @type: statblock -->
 ####### Radenwight Ratcrobat
 
 | Humanoid, Radenwight |           -           |      Level 1      |    Platoon Harrier    |         EV 6         |
@@ -16818,6 +17157,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > The ratcrobat gains an edge on strikes against larger creatures.
 
+<!-- @type: statblock -->
 ####### Radenwight Maestro
 
 | Humanoid, Radenwight |           -           |      Level 1      |        Leader         |        EV 12         |
@@ -16892,6 +17232,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** Each target stands, makes a free strike, then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.
 
+<!-- @type: monster | @category: rivals -->
 ## Rivals
 
 They take the jobs you were eyeing on the local town's job board. They sit at your favorite table in the tavern with the best drinks, food, and entertainment. You know their names, and they know yours. They're rivals—heroes just like you. Maybe even better.
@@ -16947,6 +17288,7 @@ Any rival can replace their signature ability with a signature ability a hero ha
 
 Most rivals speak Caelian and two other languages.
 
+<!-- @type: featureblock -->
 ######### Rival Malice (Level 1+ Malice Features)
 
 At the start of any rival's turn, you can spend Malice to activate one of the following features.
@@ -16991,10 +17333,12 @@ At the start of any rival's turn, you can spend Malice to activate one of the fo
 | Revenant                             | 1M              | +1                   | **Vengeance Mark:** The rival places a magic sigil on an enemy within 10 squares of them. The rival always knows the direction to that enemy while the sigil is active on them. As a main action, the rival can detonate the sigil, dealing damage to the target equal to the rival's free strike and sliding the target up to 2 squares.       |
 | Time Raider                          | 1M              | 0                    | **Four-Armed Martial Arts:** Whenever the rival uses the Grab or Knockback maneuver, they can target one additional creature.                                                                                                                                                                                                                   |
 
+<!-- @type: monster-group | @subcategory: 1st-echelon -->
 ### Rivals-1st Echelon
 
 It's possible that these rivals gained a head start on their adventures and will pose a significant challenge to the heroes if they weren't expecting them.
 
+<!-- @type: statblock -->
 ####### Rival Conduit
 
 |  Humanoid, Rival  |         -         |      Level 2      |     Elite Support     |        EV 16         |
@@ -17033,6 +17377,7 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Elementalist
 
 |  Humanoid, Rival  |         -         |      Level 2      |   Elite Controller    |        EV 16         |
@@ -17081,6 +17426,7 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Fury
 
 |  Humanoid, Rival  |         -         |      Level 2       |      Elite Brute      |        EV 16         |
@@ -17125,6 +17471,7 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Null
 
 |  Humanoid, Rival  |         -         |      Level 2      |     Elite Harrier     |        EV 16         |
@@ -17165,6 +17512,7 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Shadow
 
 |  Humanoid, Rival  |         -         |      Level 2      |    Elite Ambusher     |        EV 16         |
@@ -17221,6 +17569,7 @@ It's possible that these rivals gained a head start on their adventures and will
 > - Replace their second main action with Behold a Shield of Faith.
 > - Replace their trait with Lead By Example.
 
+<!-- @type: statblock -->
 ####### Rival Tactician
 
 |  Humanoid, Rival  |         -         |      Level 2      |    Elite Artillery    |        EV 16         |
@@ -17271,6 +17620,7 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Talent
 
 |  Humanoid, Rival  |         -         |      Level 2      |      Elite Hexer      |        EV 16         |
@@ -17317,10 +17667,12 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Rivals-2nd Echelon
 
 The rivals have learned a few new tricks since they last encountered the heroes. Rivalry is a two way street, however, and they'll be sorely disappointed if the heroes can't keep up.
 
+<!-- @type: statblock -->
 ####### Rival Conduit
 
 |  Humanoid, Rival  |         -         |      Level 5       |     Elite Support     |        EV 28         |
@@ -17359,6 +17711,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Elementalist
 
 |  Humanoid, Rival  |         -         |      Level 5       |   Elite Controller    |        EV 28         |
@@ -17407,6 +17760,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Fury
 
 |  Humanoid, Rival  |         -         |      Level 5       |      Elite Brute      |        EV 28         |
@@ -17451,6 +17805,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Null
 
 |  Humanoid, Rival  |         -         |      Level 5       |     Elite Harrier     |        EV 28         |
@@ -17491,6 +17846,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Shadow
 
 |  Humanoid, Rival  |         -         |      Level 5       |    Elite Ambusher     |        EV 28         |
@@ -17529,6 +17885,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Tactician
 
 |  Humanoid, Rival  |         -         |      Level 5       |    Elite Artillery    |        EV 28         |
@@ -17579,6 +17936,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Talent
 
 |  Humanoid, Rival  |         -         |      Level 5       |      Elite Hexer      |        EV 28         |
@@ -17649,10 +18007,12 @@ The Black Iron Pact is an example of a 5th-level rival party. You can use the fo
 - **Lady Avalla Deseo:** Rival Elementalist
 - **Qar, Master of Jackals:** Rival Null
 
+<!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### Rivals-3rd Echelon
 
 Rivals at the 3rd Echelon have been through quite a few adventures the heroes might not know anything about. Even if they've clashed with the heroes a few times in the past, there's something different about the rivals now.
 
+<!-- @type: statblock -->
 ####### Rival Conduit
 
 |  Humanoid, Rival  |         -         |      Level 8       |     Elite Support     |        EV 40         |
@@ -17691,6 +18051,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Elementalist
 
 |  Humanoid, Rival  |         -         |      Level 8       |   Elite Controller    |        EV 40         |
@@ -17741,6 +18102,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Fury
 
 |  Humanoid, Rival  |         -         |      Level 8       |      Elite Brute      |        EV 40         |
@@ -17785,6 +18147,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Null
 
 |  Humanoid, Rival  |         -         |      Level 8       |     Elite Harrier     |        EV 40         |
@@ -17825,6 +18188,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Shadow
 
 |  Humanoid, Rival  |         -         |      Level 8       |    Elite Ambusher     |        EV 40         |
@@ -17863,6 +18227,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Tactician
 
 |  Humanoid, Rival  |         -         |      Level 8       |    Elite Artillery    |        EV 40         |
@@ -17913,6 +18278,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Talent
 
 |  Humanoid, Rival  |         -         |      Level 8       |      Elite Hexer      |        EV 40         |
@@ -17961,10 +18327,12 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Rivals-4th Echelon
 
 This is what peak performance looks like. Few bands of monsters can put up a fight with the heroes like the rivals can. Even if they somehow lose, the rivals will always find a way back to the heroes for a rematch.
 
+<!-- @type: statblock -->
 ####### Rival Conduit
 
 |  Humanoid, Rival  |         -         |      Level 10      |     Elite Support     |         EV 48         |
@@ -18005,6 +18373,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Elementalist
 
 |  Humanoid, Rival  |         -         |      Level 10      |   Elite Controller    |         EV 48         |
@@ -18049,6 +18418,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Fury
 
 |  Humanoid, Rival  |         -         |      Level 10      |      Elite Brute      |         EV 48         |
@@ -18093,6 +18463,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Null
 
 |  Humanoid, Rival  |         -         |      Level 10      |     Elite Harrier     |         EV 48         |
@@ -18133,6 +18504,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Shadow
 
 |  Humanoid, Rival  |         -         |      Level 10      |    Elite Ambusher     |         EV 48         |
@@ -18171,6 +18543,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Tactician
 
 |  Humanoid, Rival  |         -         |      Level 10      |    Elite Artillery    |         EV 48         |
@@ -18221,6 +18594,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: statblock -->
 ####### Rival Talent
 
 |  Humanoid, Rival  |         -         |      Level 10      |      Elite Hexer      |         EV 48         |
@@ -18271,6 +18645,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
+<!-- @type: monster | @category: shambling-mound -->
 ## Shambling Mound
 
 Rich soil squelches under every footstep. Curtains of menacing vines block the way, and muffled groans echo distantly under the darkening canopy. But by the time a hapless explorer realizes the ground is moving, it's too late—the shambling mound has devoured them.
@@ -18310,6 +18685,7 @@ When fighting a shambling mound, most attention is drawn to the cavernous chambe
 
 One must also be wary of the area around a shambling mound. Their vines reach out far, the full extent of their form hidden among other flora until they strike.
 
+<!-- @type: featureblock -->
 ######### Shambling Mound Malice (Malice Features)
 
 At the start of a shambling mound's turn, you can spend Malice to activate one of the following features.
@@ -18334,6 +18710,7 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > Until the end of the shambling mound's next turn, the area within 10 squares of them is difficult terrain for enemies, and any enemy in the area takes a bane on power rolls. Any enemy who starts their turn in the area takes 4 acid damage, and the shambling mound regains an equal amount of Stamina.
 
+<!-- @type: statblock -->
 ####### Shambling Mound
 
 | Plant, Shambling Mound |         -         |      Level 5       |         Solo          |        EV 84         |
@@ -18448,6 +18825,7 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > **Effect:** The shambling mound rips themself apart, exposing the crux of magic holding them together. The distance of the shambling mound's melee abilities increases to melee 10, the creature has a double edge on power rolls, and strikes made against them gain an edge.
 
+<!-- @type: monster | @category: time-raiders -->
 ## Time Raiders
 
 Genetic rebels, the space punks known as the time raiders (called the *kuran'zoi* among themselves) scour the Sea of Stars, the Sea Between Worlds, for heavily laden ships of any type. But they prefer the ships of UNISOL and other empires, for they love raiding the frigates of powerful governments who think their money and imperious nature can buy security.
@@ -18482,6 +18860,7 @@ While in the Sea of Stars, time raiders and other creatures don't age. As a resu
 
 Most time raiders speak Caelian and Voll. Because of the number of worlds they've visited, many time raiders have their speech peppered with misplaced tenses and strange references.
 
+<!-- @type: featureblock -->
 ######### Time Raider Malice (Malice Features)
 
 At the start of any time raider's turn, you can spend Malice to activate one of the following features.
@@ -18506,6 +18885,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > - **12-16:** 7 psychic damage; slowed (EoT)
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Time Raider Archon
 
 |   Humanoid, Time Raider   |         -         |     Level 3      |                 Minion Harrier                 | EV 5 for four minions |
@@ -18530,6 +18910,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The archon doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Myriad
 
 |   Humanoid, Time Raider   |         -         |     Level 3      |                  Minion Brute                  | EV 5 for four minions |
@@ -18554,6 +18935,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The myriad doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Armiger
 
 |   Humanoid, Time Raider   |         -         |      Level 3      |   Platoon Defender    |        EV 10         |
@@ -18598,6 +18980,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > Any time raider who starts their turn with line of effect to the armiger can end one condition affecting the.
 
+<!-- @type: statblock -->
 ####### Time Raider Cannonfall
 
 |   Humanoid, Time Raider   |         -         |      Level 3      |   Platoon Artillery   |        EV 10         |
@@ -18634,6 +19017,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The cannonfall doesn't take a bane on strikes against creatures with concealment or cover.
 
+<!-- @type: statblock -->
 ####### Time Raider Helix
 
 |   Humanoid, Time Raider   |          -          |      Level 3      |  Platoon Controller   |        EV 10         |
@@ -18668,6 +19052,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The helix doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Hijack
 
 |   Humanoid, Time Raider   |         -         |      Level 3      |   Platoon Ambusher    |        EV 10         |
@@ -18702,6 +19087,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The hijack doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Mind Punk
 
 |   Humanoid, Time Raider   |         -         |      Level 3      |     Platoon Hexer     |        EV 10         |
@@ -18740,6 +19126,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The mind punk doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Nemesis
 
 |   Humanoid, Time Raider   |          -          |      Level 3      |    Platoon Harrier    |        EV 10         |
@@ -18780,6 +19167,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The nemesis doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Vertex
 
 |   Humanoid, Time Raider   |             -              |      Level 3      |    Platoon Support    |        EV 10         |
@@ -18822,6 +19210,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > The vertex doesn't take a bane on strikes against creatures with concealment.
 
+<!-- @type: statblock -->
 ####### Time Raider Tyrannis
 
 |   Humanoid, Time Raider   |                -                |       Level 3       |        Leader         |        EV 20         |
@@ -18896,6 +19285,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Effect:** The tyrannis fires a sensor mine into each unoccupied square in the area, and creates a gravity well whose area contains one or more squares of the tyrannis's space (see Gravity Well). Whenever an enemy enters a square with a sensor mine in it, the mine explodes, dealing 3 damage to the enemy.
 
+<!-- @type: monster | @category: trolls -->
 ## Trolls
 
 Ravenous trolls rampage through the wild to quell their fathomless hunger, leaving only destruction in their wake. Tall and gangly, they have mottled green skin covered by a mane of matted hair that runs down their neck and back. In many ways, they resemble massive humanoids, but their exaggerated features belie this comparison. A troll's lower jaw hangs unhinged and distended, and their long arms end in claws that drag along the ground as they walk.
@@ -18926,6 +19316,7 @@ When a suitably large piece of a troll is torn off in battle, it does its very b
 
 Most trolls speak High Kuric or Variac, while a few also know Caelian. Trolls are notably difficult to negotiate with unless heroes can provide more appetizing food than themselves.
 
+<!-- @type: featureblock -->
 ######### Troll Malice (Malice Features)
 
 At the start of any troll's turn, you can spend Malice to activate one of the following features.
@@ -18946,6 +19337,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > Each winded troll in the encounter disgorges the contents of their stomach onto the ground around them, creating a 1 burst of foul vomitus that lasts until the end of the encounter. Each non-troll who enters this area for the first time in a round or starts their turn there takes 5 acid damage. Each troll in the area has a double edge on power rolls.
 
+<!-- @type: statblock -->
 ####### Troll Limbjumble
 
 |       Troll       |         -         |     Level 5      |                Minion Hexer                 |      EV 7 for four minions      |
@@ -18972,6 +19364,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > At the start of each of the limbjumble's squad's turns, the squad's Stamina pool increases as if each limbjumble were at full Stamina.
 
+<!-- @type: statblock -->
 ####### Troll Whelp
 
 |   Giant, Troll    |         -         |      Level 5      |                  Minion Brute                  |      EV 7 for four minions      |
@@ -18996,6 +19389,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > Whenever two or more whelps are simultaneously reduced to 0 Stamina by damage that isn't acid or fire damage, half of those whelps become troll limbjumbles with 4 Stamina.
 
+<!-- @type: statblock -->
 ####### Troll Butcher
 
 |   Giant, Troll    |         -         |      Level 5       |      Elite Hexer      |              EV 28              |
@@ -19058,6 +19452,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > The butcher dies only if they are reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina, or if they take acid or fire damage while at 0 Stamina.
 
+<!-- @type: statblock -->
 ####### Troll Glutton
 
 |   Giant, Troll    |         -         |      Level 5       |      Elite Brute      |              EV 28              |
@@ -19114,6 +19509,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > The glutton dies only if they are reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina, or if they take acid or fire damage while at 0 Stamina.
 
+<!-- @type: statblock -->
 ####### Troll Crack Trooper
 
 |   Giant, Troll    |         -         |      Level 9      |              Minion Brute               |     EV 11 for four minions      |
@@ -19140,6 +19536,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > The crack trooper dies only if their squad's Stamina pool is reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina in their squad's Stamina pool, or if they take acid or fire damage while their squad's Stamina pool is at 0 Stamina.
 
+<!-- @type: statblock -->
 ####### Troll Ravager
 
 |   Giant, Troll    |         -         |      Level 9      |            Minion Harrier             |     EV 11 for four minions      |
@@ -19166,6 +19563,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > The ravager dies only if their squad's Stamina pool is reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina in their squad's Stamina pool, or if they take acid or fire damage while their squad's Stamina pool is at 0 Stamina.
 
+<!-- @type: monster | @category: undead -->
 ## Undead
 
 Some serve as mindless soldiers and workers under the control of a necromancer. Others rise when they die a bitter death in a place infused with cursed magic. For a few, it was a choice to become something beyond mortal. However they arose, all undead were once living creatures who now walk the land after death in defiance of the natural order.
@@ -19245,10 +19643,12 @@ Spectral undead who are formed naturally from the souls of malicious, hate-fille
 
 Most undead speak (or at least understand) the languages they knew in life.
 
+<!-- @type: monster-group | @subcategory: 1st-echelon -->
 ### Undead-1st Echelon
 
 It's rare you fight a single zombie. Low-level undead most often appear in huge droves, and skeletons, ghouls, specters, and shades can overwhelm the mightiest of heroes through sheer numbers alone if those heroes aren't careful.
 
+<!-- @type: featureblock -->
 ######### Undead Malice (Level 1+ Malice Features)
 
 At the start of any undead's turn, you can spend Malice to activate one of the following features.
@@ -19275,6 +19675,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > Up to four undead in the encounter move up to their speed and can make a free strike. The number of undead affected increases by 1 for each additional Malice spent on this feature. If an undead is reduced to 0 Stamina during this dread march, they don't die until the march is resolved.
 
+<!-- @type: statblock -->
 ####### Crawling Claw
 
 |            Undead, Soulless            |           -           |     Level 1      |            Minion Harrier             | EV 3 for four minions |
@@ -19301,6 +19702,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > Allies can't flank with the crawling claw.
 
+<!-- @type: statblock -->
 ####### Decrepit Skeleton
 
 |            Undead, Soulless            |         -         |     Level 1      |              Minion Artillery               | EV 3 for four minions |
@@ -19327,6 +19729,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > When the decrepit skeleton is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy enters this space, the take 1 damage and the effect end.
 
+<!-- @type: statblock -->
 ####### Rotting Zombie
 
 |            Undead, Soulless            |         -         |     Level 1      |                  Minion Brute                  | EV 3 for four minions |
@@ -19351,6 +19754,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > When the rotting zombie is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy who has M < 2 enters this space, they are slowed (save ends) and the effect ends.
 
+<!-- @type: statblock -->
 ####### Shade
 
 |                 Undead                 |             -              |     Level 1      |            Minion Ambusher            | EV 3 for four minions |
@@ -19375,6 +19779,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The shade can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the shade moves through a creature, that creature takes 1 corruption damage. The shade doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 ####### Ghoul
 
 |                 Undead                 |         -         |      Level 1      |     Horde Harrier     |        EV 3          |
@@ -19411,6 +19816,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > When the ghoul uses the Charge main action, they gain a +2 bonus to speed until the end of their turn.
 
+<!-- @type: statblock -->
 ####### Skeleton
 
 |            Undead, Soulless            |         -         |      Level 1      |    Horde Artillery    |         EV 3         |
@@ -19451,6 +19857,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The first time the skeleton is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 Stamina and fall prone.
 
+<!-- @type: statblock -->
 ####### Specter
 
 |                 Undead                 |             -              |      Level 1      |      Horde Hexer      |         EV 3         |
@@ -19485,6 +19892,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The specter can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the specter moves through a creature, that creature takes 2 corruption damage. The specter doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 ####### Soulwight
 
 |                 Undead                 |         -         |      Level 1      |      Horde Hexer      |         EV 3         |
@@ -19519,6 +19927,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The first time the soulwight is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 Stamina and fall prone.
 
+<!-- @type: statblock -->
 ####### Umbral Stalker
 
 |                 Undead                 |           -           |      Level 1      |    Horde Ambusher     |         EV 3         |
@@ -19565,6 +19974,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The umbral stalker can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the umbral stalker moves through a creature, that creature takes 2 corruption damage. The umbral stalker doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 #######  Zombie
 
 |            Undead, Soulless            |         -         |      Level 1      |      Horde Brute      |         EV 3         |
@@ -19605,6 +20015,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The first time the zombie is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 10 Stamina and fall prone.
 
+<!-- @type: statblock -->
 ####### Ghost
 
 |                 Undead                 |             -              |      Level 1      |        Leader         |        EV 12         |
@@ -19691,6 +20102,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > The ghost can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the ghost moves through a creature, that creature takes 2 corruption damage. The ghost doesn't take damage from being force moved into objects.
 
+<!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Undead-2nd Echelon
 
 More powerful and more self-aware forms of undead rise above the undead horde and lay claim to dark, isolated domains all their own. The longer an undead is allowed to thrive, the stronger they become.
@@ -19711,6 +20123,7 @@ Powered by sorrow and rage, these hulking amalgamations of dirt or flesh defend 
 
 Outside of battle, mournlings patrol for interlopers in a trance-like state. When an unknown creature creates a disturbance or approaches them, the mournling unleashes a primal cry that conveys the very essence of suffering, then bursts into violence. They continue to sob and moan even as they viciously beat their enemies to a pulp.
 
+<!-- @type: featureblock -->
 ######### Undead Malice (Level 4+ Malice Features)
 
 At the start of any level 4 or higher undead's turn, you can spend Malice to activate one of the following features.
@@ -19723,6 +20136,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > One undead acting this turn uses a signature ability against a creature who is bleeding. As a free triggered action, each undead within 5 squares of the first undead moves up to their speed and can make a free strike against the same target.
 
+<!-- @type: statblock -->
 ####### Fleshflayed Shambler Zombie
 
 |            Undead, Soulless            |         -         |     Level 4      |                  Minion Brute                  | EV 6 for four minions |
@@ -19749,6 +20163,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > Any adjacent enemy who grabs the fleshflayed shambler or uses melee ability against them takes 2 damage.
 
+<!-- @type: statblock -->
 ####### Ghoul Craver
 
 |                 Undead                 |           -           |     Level 4      |                 Minion Harrier                 | EV 6 for four minions |
@@ -19779,6 +20194,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > When the ghoul craver uses the Charge main action, they gain a +2 bonus to speed until the end of their turn.
 
+<!-- @type: statblock -->
 #######  Hollowbone Launcher
 
 |            Undead, Soulless            |         -         |     Level 4      |                Minion Artillery                 | EV 6 for four minions |
@@ -19805,6 +20221,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > The hollowbone launcher explodes when they are reduced to 0 Stamina, dealing 2 damage to each adjacent creature.
 
+<!-- @type: statblock -->
 ####### Flesh Mournling
 
 |                 Undead                 |         -         |      Level 4      |    Horde Defender     |         EV 6         |
@@ -19851,6 +20268,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > The mournling's shape can't be changed by any external effect.
 
+<!-- @type: statblock -->
 #######  Giant Zombie
 
 |            Undead, Soulless            |         -         |      Level 4       |      Elite Brute      |        EV 24         |
@@ -19889,6 +20307,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > When the giant zombie is targeted by an ability that deals rolled damage, they halve the damage from a tier 1 outcome.
 
+<!-- @type: statblock -->
 #######  Mummy
 
 |             Mummy, Undead              |         -         |      Level 4      |      Horde Brute      |           EV 6           |
@@ -19935,6 +20354,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Effect:** The target takes 8 poison damage.
 
+<!-- @type: statblock -->
 ####### Vampire Spawn
 
 |            Undead, Vampire             |           -           |      Level 4      |     Horde Harrier     |         EV 6         |
@@ -19971,6 +20391,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > The vampire spawn has speed 10 while any creature within 10 squares of them is bleeding. The vampire spawn must use Exsanguinating Bite against a bleeding creature on their turn if they are able to.
 
+<!-- @type: statblock -->
 ####### Wraith
 
 |                 Undead                 |             -              |      Level 4      |      Horde Hexer      |         EV 6         |
@@ -20015,6 +20436,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage and takes a bane on their next strike. The wraith doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 ####### Mummy Lord
 
 |             Mummy, Undead              |         -         |      Level 4       |        Leader         |          EV 24           |
@@ -20107,6 +20529,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > - **12-16:** 8 corruption damage; I < 3 frightened (save ends)
 > - **17+:** 10 corruption damage; I < 4 frightened and restrained (save ends)
 
+<!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### Undead-3rd Echelon
 
 Older, taboo methods of creating devastating undead wildly vary from one another. These wretched creatures can come about by way of accursed blood rituals, terrible operations, a spirited collective resistance to death, or other unspoken methods once thought lost to time.
@@ -20129,6 +20552,7 @@ By drinking the blood of a true vampire, a vampire spawn can transcend their fer
 
 The term "vampire lord" thus refers not to a specific age or threshold of physical prowess, but rather to status and influence. A vampire who refers to themself as a lord invites challenges to their title and is prepared to crush all those who seek to end their reign.
 
+<!-- @type: featureblock -->
 ######### Undead Malice (Level 7+ Malice Features)
 
 At the start of any level 7 or higher undead's turn, you can spend Malice to activate one of the following features.
@@ -20141,6 +20565,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > Until the end of the round, whenever an undead is reduced to 0 Stamina, they deal 8 corruption damage to each enemy within 3 squares of them.
 
+<!-- @type: statblock -->
 ####### Blood-Starved Vampire
 
 |            Undead, Vampire             |           -           |      Level 7      |            Minion Harrier             | EV 9 for four minions |
@@ -20167,6 +20592,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > The blood-starved vampire has speed 10 while any creature within 10 squares of them is bleeding. The vampire must use Feeding Frenzy against a bleeding creature on their turn if they are able to.
 
+<!-- @type: statblock -->
 #######  Faded Echo Spirit
 
 |                 Undead                 |             -              |      Level 7      |                Minion Hexer                 | EV 9 for four minions |
@@ -20193,6 +20619,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > The spirit can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the spirit moves through a creature, that creature takes 4 corruption damage. The spirit doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 #######  Mummy Rotwrap
 
 |             Mummy, Undead              |         -         |      Level 7      |                  Minion Brute                  |  EV 9 for four minions   |
@@ -20215,6 +20642,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > **Effect:** Each ally gains an edge on strikes made against the target until the end of the round.
 
+<!-- @type: statblock -->
 ####### Dirt Mournling
 
 |                 Undead                 |               -               |      Level 7      |   Horde Controller    |         EV 9         |
@@ -20263,6 +20691,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > Whenever the mournling uses the Dig maneuver to breach the surface, they make a free strike against each adjacent enemy.
 
+<!-- @type: statblock -->
 ####### Haunt
 
 |                 Undead                 |             -              |      Level 7      |   Horde Controller    |         EV 9         |
@@ -20303,6 +20732,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > The haunt can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. They are invisible while moving using a move action. The haunt doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 ####### Koptourok
 
 |                 Undead                 |         -         |      Level 7      |      Horde Hexer      |         EV 9         |
@@ -20343,6 +20773,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > The first time the koptourok is made winded by damage that isn't fire damage or holy damage, each enemy within 3 squares of them takes 8 corruption damage. Any enemy who takes this damage and has M < 3 is also weakened (save ends)
 
+<!-- @type: statblock -->
 ####### Waxen
 
 |            Undead, Soulless            |         -         |      Level 7      |    Horde Artillery    |         EV 9         |
@@ -20383,6 +20814,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > If the waxen takes fire damage, they ignite. While ignited, the waxen takes 4 fire damage at the start of each of their turns and their strikes deal an extra 4 fire damage.
 
+<!-- @type: statblock -->
 ####### Vampire
 
 |            Undead, Vampire             |           -           |      Level 7      |      Horde Hexer      |         EV 9         |
@@ -20433,6 +20865,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > The vampire has speed 10 while any creature within 10 squares of them is bleeding. The vampire must make a strike against a bleeding creature on their turn if they are able to.
 
+<!-- @type: statblock -->
 ####### Vampire Lord
 
 |            Undead, Vampire             |                   -                    |       Level 7       |        Leader         |        EV 36         |
@@ -20535,6 +20968,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > If the vampire is exposed to direct sunlight, they have damage weakness 5 until they start their turn in concealment created by darkness.
 
+<!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Undead-4th Echelon
 
 The deadliest of undead creatures can be placed into one of two categories: terrible machines that know only destruction, and powerful tyrants who aren't content with conquering just death.
@@ -20547,6 +20981,7 @@ The weakness of many undead minions means that necromancers at war often find th
 
 Every mage who lives long enough eventually contends with the fact that their knowledge will one day leave the world. For those who can't stomach this idea, seeking the immortality of the lich often becomes an irresistible temptation. But many of those who try and fail to achieve lichdom become lithgekh—a word in the First Language meaning "lich corpse." Having failed to create a proper soul vessel, a lithgekh suffers an eternal hunger for magic to sustain themself. Liches will sometimes trick or tempt mortal mages into pursuing lichdom, only to sabotage them and create a lithgekh under the lich's control. These servants are prized by liches for their ability to disrupt enemy magic and empower their own.
 
+<!-- @type: featureblock -->
 ######### Undead Malice (Level 10 Malice Features)
 
 At the start of any level 10 undead's turn, you can spend Malice to activate one of the following features.
@@ -20567,6 +21002,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Special:** This ability can't be used by a minion.
 
+<!-- @type: statblock -->
 ####### Giant Shambler Zombie
 
 |             Undead, Soulless             |         -         |     Level 10      |                  Minion Brute                  | EV 12 for four minions |
@@ -20591,6 +21027,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > Each ally adjacent to the shambler has damage immunity 3.
 
+<!-- @type: statblock -->
 ####### Skeleton Knight
 
 |             Undead, Soulless             |         -         |     Level 10      |               Minion Defender               | EV 12 for four minions |
@@ -20619,6 +21056,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > Whenever the knight makes a free strike, they can make two free strikes instead.
 
+<!-- @type: statblock -->
 ####### Wraith Skulker
 
 |                  Undead                  |             -              |     Level 10      |            Minion Harrier             | EV 12 for four minions |
@@ -20645,6 +21083,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage. The wraith doesn't take damage from being force moved into objects.
 
+<!-- @type: statblock -->
 ####### Bonecage
 
 |             Undead, Soulless             |           -           |     Level 10      |   Horde Controller    |        EV 12         |
@@ -20683,6 +21122,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Effect:** The area is difficult terrain for enemies. The effect ends at the end of the encounter or when the bonecage uses this ability again.
 
+<!-- @type: statblock -->
 ####### Lithgekh
 
 |             Undead, Soulless             |             -              |     Level 10      |      Horde Hexer      |        EV 12         |
@@ -20719,6 +21159,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > Each ally within 10 squares of the lithgekh gains an edge on magic abilities.
 
+<!-- @type: monster | @category: count-rhodar-von-glauer -->
 ## Count Rhodar Von Glauer
 
 After falling to a vampiric curse in his early twenties, Count Rhodar—the last Lord of Glauer—ruled his tiny, heavily forested mountainous county in eastern Rhöl for three hundred years. There were worse overlords, the people said. After all, Rhodar took his pact with the people and the land seriously. He aggressively defended the villages in his demesne against constant incursions from rival counts and barons. He believed his power waxed and waned with the prosperity of the people and the vitality of the land.
@@ -20761,6 +21202,7 @@ Rhodar speaks Caelian and Vaslorian.
 >
 > Dancer, Chronicler of the Chain of Acheron
 
+<!-- @type: featureblock -->
 ######### Rhodar's Malice (Malice Features)
 
 At the start of Rhodar's turn, you can spend Malice to activate one of the following features.
@@ -20781,6 +21223,7 @@ At the start of Rhodar's turn, you can spend Malice to activate one of the follo
 >
 > Rhodar chooses two creatures or objects within 20 squares of him. The targets immediately teleport to swap places. Any enemy teleported by this feature who has I < 5 is dazed until the end of their next turn.
 
+<!-- @type: statblock -->
 ####### Count Rhodar von Glauer
 
 |             Undead, Vampire              |                  -                   |       Level 10       |         Solo          |        EV 144         |
@@ -20923,6 +21366,7 @@ At the start of Rhodar's turn, you can spend Malice to activate one of the follo
 >
 > **Effect:** Rhodar teleports to an unoccupied space adjacent to one target after the ability resolve.
 
+<!-- @type: monster | @category: lich -->
 ## Lich
 
 A lich begins life as a mortal, often a studied mage, fueled by a burning, unquenchable hunger for knowledge at any cost. Knowledge beyond life and death, beyond this world, beyond gods and fiends. Possessed by the unshakable belief that ultimate knowledge brings ultimate power. The necessary rites are forbidden in many cultures, for they require a bloody, evil act: the sacrifice of someone dear to the would-be lich.
@@ -20951,6 +21395,7 @@ Liches know they have all the time in the world to plot against their foes, and 
 
 A lich speaks the languages they knew in life, and might also pick up Anjali, Proto-Ctholl, Variac, and Vastariax over their limitless lifetime.
 
+<!-- @type: featureblock -->
 ######### Lich Malice (Malice Features)
 
 At the start of a lich's turn, you can spend Malice to activate one of the following features.
@@ -20977,6 +21422,7 @@ At the start of a lich's turn, you can spend Malice to activate one of the follo
 >
 > This effect lasts until an affected creature takes damage or an ally uses a main action to shake them out of it. Each time this feature is used during an encounter, the distance of the effect decreases by 5 squares (to a minimum of 5 squares) and the potency increases by 1.
 
+<!-- @type: statblock -->
 ####### Lich
 
 |                  Undead                  |             -              |      Level 10      |         Solo          |          EV 144          |
@@ -21111,6 +21557,7 @@ At the start of a lich's turn, you can spend Malice to activate one of the follo
 >
 > **Effect:** At the end of each of the lich's turns, they regain 10 Stamina for each creature frightened this way.
 
+<!-- @type: monster | @category: valok -->
 ## Valok
 
 Abandoned autonomous machines made by the ancient steel dwarves, valok can still be found deep within the crumbling ruins and underground structures of long-dead civilizations. The steel dwarves made their instruments well, though, and valok can still be activated! However, doing so without the correct control phrases could unleash an unstoppable machine overloaded by the weight of time.
@@ -21133,6 +21580,7 @@ While two classes of valok—servok and multivok—have been discovered, ancient
 
 Ruined valok litter the deepest ruins of the steel dwarves, and without the steel dwarves' secrets, their valiar and iridoss are useless to modern smiths. But some valok still labor in the depths, carrying out the orders given to them long ago and ready to end any who interfere.
 
+<!-- @type: featureblock -->
 ######### Valok Malice (Malice Features)
 
 At the start of any valok's turn, you can spend Malice to activate one of the following features.
@@ -21169,6 +21617,7 @@ One of the most advanced multivoks, a chief directs and coordinates other valok 
 
 Most valok communicate exclusively in Rallarian.
 
+<!-- @type: statblock -->
 ####### Multivok Bodyguard
 
 | Construct, Multivok, Soulless, Valok |         -         |      Level 9       |    Elite Defender     |        EV 44         |
@@ -21235,6 +21684,7 @@ Most valok communicate exclusively in Rallarian.
 >
 > While the bodyguard isn't bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.
 
+<!-- @type: statblock -->
 ####### Multivok Chief
 
 | Construct, Multivok, Soulless, Valok |         -         |      Level 9       |     Elite Support     |        EV 44         |
@@ -21299,6 +21749,7 @@ Most valok communicate exclusively in Rallarian.
 >
 > While the chief isn't bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.
 
+<!-- @type: statblock -->
 ####### Servok Builder
 
 | Construct, Servok, Soulless, Valok |         -         |       Level 9       |      Elite Brute      |        EV 44          |
@@ -21379,6 +21830,7 @@ Most valok communicate exclusively in Rallarian.
 >
 > While the builder isn't bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.
 
+<!-- @type: statblock -->
 ####### Servok Miner
 
 | Construct, Servok, Soulless, Valok |               -               |      Level 9       |   Elite Controller    |        EV 44         |
@@ -21453,6 +21905,7 @@ Most valok communicate exclusively in Rallarian.
 >
 > While the miner isn't bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.
 
+<!-- @type: statblock -->
 ####### Servok War Engine
 
 | Construct, Servok, Soulless, Valok |         -         |      Level 10       |      Elite Brute      |         EV 48         |
@@ -21537,6 +21990,7 @@ Most valok communicate exclusively in Rallarian.
 >
 > While the war engine isn't bleeding, weakened, or winded, any power roll made against them is automatically a tier 1 outcome. A critical hit still grants its additional main action.
 
+<!-- @type: monster | @category: voiceless-talkers -->
 ## Voiceless Talkers
 
 Among the most powerful psions in the timescape, synlirii (*sin-LEER-ee*, singular: synliroi) are known as the "voiceless talkers" to the denizens of the World Below—and to surface dwellers unfortunate enough to encounter them. Descended from boneless aquatic cephalopods, they are alien in thought and motivation to the humanoid species they loathe. Synlirii consider the "barking ones" (their label for creatures who squeeze air through meat flaps to communicate) an abomination that must be corrected.
@@ -21579,6 +22033,7 @@ Mindkiller whelps are a lesser form of mindkiller who can be created in a fracti
 
 Most voiceless talkers communicate telepathically using Mindspeech and speak Variac.
 
+<!-- @type: featureblock -->
 ######### Voiceless Talker Malice (Malice Features)
 
 At the start of any voiceless talker's turn, you can spend Malice to activate one of the following features.
@@ -21605,6 +22060,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > All voiceless talkers link their minds, creating a circuit that empowers them while two or more voiceless talkers remain in the encounter. While this circuit is active, any psionic strike made by a voiceless talker deals an extra 5 damage. Additionally, when a non-minion voiceless talker takes damage, they can use a free triggered action to swap places with any voiceless talker minion on the encounter map. The minion takes the damage instead.
 
+<!-- @type: statblock -->
 ####### Mindkiller Whelp
 
 | Horror, Voiceless Talker  |             -              |     Level 6      |                  Minion Hexer                  | EV 8 for four minions |
@@ -21639,6 +22095,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > Whenever a non-minion voiceless talker within 5 squares of the whelp uses a psionic ability, they can do so as if they were in the whelp's space.
 
+<!-- @type: statblock -->
 ####### Voiceless Talker Graywarper
 
 | Horror, Voiceless Talker |         -         |     Level 6      |            Minion Controller            | EV 8 for four minions |
@@ -21663,6 +22120,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > Whenever a non-minion voiceless talker within 5 squares of the graywarper uses a psionic ability, they can do so as if they were in the graywarper's space.
 
+<!-- @type: statblock -->
 ####### Hulking Brain
 
 | Horror, Voiceless Talker |         -         |      Level 6       |      Elite Brute      |        EV 32         |
@@ -21729,6 +22187,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > Whenever a non-minion voiceless talker within 5 squares of the hulking brain uses a psionic ability, they can do so as if they were in the hulking brain's space.
 
+<!-- @type: statblock -->
 ####### Mindkiller
 
 | Horror, Voiceless Talker  |             -              |      Level 6       |      Elite Hexer      |        EV 32         |
@@ -21793,6 +22252,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > The mindkiller can move through enemies' spaces at their usual speed.
 
+<!-- @type: statblock -->
 ####### Voiceless Talker Artillerist
 
 | Horror, Voiceless Talker  |                -                |      Level 6       |    Elite Artillery    |        EV 32         |
@@ -21855,6 +22315,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > The artillerist ignores invisibility, cover, and concealment. A creature can't hide from the artillerist while the artillerist has line of effect to the.
 
+<!-- @type: statblock -->
 ####### Voiceless Talker Invader
 
 | Horror, Voiceless Talker  |                -                |      Level 6       |   Elite Controller    |        EV 32         |
@@ -21917,6 +22378,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > Whenever a non-minion voiceless talker within 5 squares of the invader uses a psionic ability, they can do so as if they were in the invader's space, and the ability has a double edge.
 
+<!-- @type: statblock -->
 ####### Voiceless Talker Evolutionist
 
 | Horror, Voiceless Talker  |                -                |      Level 6       |        Leader         |        EV 32         |
@@ -21997,6 +22459,7 @@ At the start of any voiceless talker's turn, you can spend Malice to activate on
 >
 > **Effect:** Until the end of the encounter, the evolutionist is surrounded by a psionic electrical storm that is a 5 aura. The area is difficult terrain for enemies, and any enemy who enters the area for the first time in a round or starts their turn there takes 8 lightning damage.
 
+<!-- @type: monster | @category: lord-syuul -->
 ## Lord Syuul
 
 "Yours is an interesting mind, Tyract. I wonder what it *tastes* like?"
@@ -22031,6 +22494,7 @@ In his mind, everything that is not Lord Syuul is flawed. When his new device is
 
 Lord Syuul communicates telepathically using Mindspeech and speaks Variac.
 
+<!-- @type: featureblock -->
 ######### Lord Syuul's Malice (Malice Features)
 
 At the start of Lord Syuul's turn, you can spend Malice to activate one of the following features.
@@ -22069,6 +22533,7 @@ At the start of Lord Syuul's turn, you can spend Malice to activate one of the f
 >
 > The Overpower effect lasts until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Lord Syuul
 
 |  Horror, Voiceless Talker  |                -                |      Level 6       |         Solo          |        EV 96         |
@@ -22181,6 +22646,7 @@ At the start of Lord Syuul's turn, you can spend Malice to activate one of the f
 >
 > **Effect:** Until the end of the encounter, each target has damage weakness 3.
 
+<!-- @type: monster | @category: war-dogs -->
 ## War Dogs
 
 Ajax's war dogs—brutal patchwork soldiers—owe their new lives to the Iron Saint and fight for him fanatically. War dog minions are the freshest recruits, possessing minimal patchwork qualities and generally treated as disposable. Those who survive a battle are rewarded with gifts from the Body Banks. Those who don't survive become recycled back into the Body Banks to be reborn.
@@ -22276,12 +22742,14 @@ Below the inner council are hundreds of officers and thousands of soldiers. A si
 
 Most war dogs speak Caelian and one Vaslorian human language.
 
+<!-- @type: monster-group | @subcategory: 1st-echelon -->
 ### War Dogs-1st Echelon
 
 The Body Banks are filled with the remains of enemies of the state, conquered peoples, war dogs who have experienced a second death, and even scraps of monsters and animals that might prove useful. Though the creation of new war dogs is by no means an exact process, the flesh sculptors of the Body Banks take great pride in crafting a highly destructive, single-mindedly fanatical army.
 
 The vast majority of war dogs are simple amalgams of humanoids fused, stitched, and welded together with stolen Upper World technology and forbidden alchemy. Their unnatural origin is on clear display: patchwork skin, mismatched limbs, and unsettling proportions marking them as artificial revenants.
 
+<!-- @type: featureblock -->
 ######### War Dog Malice (Level 1+ Malice Features)
 
 At the start of any war dog's turn, you can spend Malice to activate one of the following features.
@@ -22306,6 +22774,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > Each war dog minion in the encounter shifts up to their speed and can make a free strike. A minion who does so is then reduced to 0 Stamina.
 
+<!-- @type: statblock -->
 ####### War Dog Commando
 
 | Humanoid, Soulless, War Dog |         -         |     Level 1      |                Minion Ambusher                 | EV 3 for four minions |
@@ -22332,6 +22801,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the commando is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d3 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Conscript
 
 | Humanoid, Soulless, War Dog |         -         |     Level 1      |                 Minion Harrier                 | EV 3 for four minions |
@@ -22358,6 +22828,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the conscript is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d3 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Sharpshooter
 
 | Humanoid, Soulless, War Dog |         -         |     Level 1      |                Minion Artillery                 | EV 3 for four minions |
@@ -22384,6 +22855,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the sharpshooter is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d3 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Tetherite
 
 | Humanoid, Soulless, War Dog |         -         |     Level 1      |                Minion Brute                 | EV 3 for four minions |
@@ -22412,6 +22884,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the tetherite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d3 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Amalgamite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 2      |      Horde Brute      |         EV 4         |
@@ -22448,6 +22921,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the amalgamite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Crucibite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 1      |    Horde Artillery    |         EV 3         |
@@ -22484,6 +22958,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the crucibite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Eviscerite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 1      |     Horde Harrier     |         EV 3         |
@@ -22518,6 +22993,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the eviscerite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Neuronite
 
 | Humanoid, Soulless, War Dog |          -          |      Level 1      |    Horde Defender     |         EV 3         |
@@ -22558,6 +23034,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the neuronite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Pestilite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 3      |   Horde Controller    |         EV 5         |
@@ -22592,6 +23069,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the pestilite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Phosphorite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 2      |      Horde Hexer      |         EV 4         |
@@ -22632,6 +23110,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the phosphorite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Subcommander
 
 | Humanoid, Soulless, War Dog |         -         |      Level 2      |     Horde Support     |         EV 4         |
@@ -22670,6 +23149,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the subcommander is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Teletalite
 
 | Humanoid, Soulless, War Dog |            -             |      Level 1      |    Horde Ambusher     |         EV 3         |
@@ -22714,6 +23194,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > When the teletalite is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Ground Commander
 
 | Humanoid, Soulless, War Dog |         -         |      Level 3       |        Leader         |        EV 20         |
@@ -22788,6 +23269,7 @@ At the start of any war dog's turn, you can spend Malice to activate one of the 
 >
 > **Effect:** Each target ally shifts up to 2 squares and can use the Grab maneuver. Until the end of the encounter, each target enemy takes a bane on the Escape Grab maneuver.
 
+<!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### War Dogs-2nd Echelon
 
 War dogs, like any soldiers, are outfitted to carry out warfare with weapons, armor, and no end of ghastly tools. But Ajax's war dog forces are no ordinary army, and they bear extraordinary equipment.
@@ -22804,6 +23286,7 @@ Some war dogs use fuse-iron weapons that emit flames or cause explosions. While 
 
 Insubordinate war dogs are usually punished with a trip back to the Body Banks, but individuals who need to be made an example of are condemned to an even harsher fate: becoming a houndweapon. These living weapons are horrific blends of flesh, machine, and spirit create as powerful and terribly cruel tools of war. Only the highest-ranking and most capable war dogs can requisition houndweapons, given those living armaments' power and the time and difficulty involved in making them.
 
+<!-- @type: featureblock -->
 ######### War Dog Malice (Level 4+ Malice Features)
 
 At the start of any level 4 or higher war dog's turn, you can spend Malice to activate one of the following features.
@@ -22824,6 +23307,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 > - **12-16:** Push 2; the enemy is frightened of the nearest non-minion war dog (EoT)
 > - **17+:** Push 2
 
+<!-- @type: statblock -->
 ####### War Dog Sparkslinger
 
 | Humanoid, Soulless, War Dog |         -         |     Level 4      |                      Minion Artillery                      | EV 6 for four minions |
@@ -22850,6 +23334,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the sparkslinger is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Sweeper
 
 | Humanoid, Soulless, War Dog |         -         |     Level 4      |               Minion Harrier                | EV 6 for four minions |
@@ -22876,6 +23361,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the sweeper is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each enemy and object within 2 squares of them.
 
+<!-- @type: statblock -->
 ####### War Dog War Frog
 
 | Humanoid, Soulless, War Dog |              -              |     Level 4      |            Minion Ambusher            | EV 6 for four minions |
@@ -22902,6 +23388,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the war frog is reduced to 0 Stamina, their loyalty collar explodes, dealing 1d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Arachnite
 
 | Humanoid, Soulless, War Dog |           -           |      Level 6      |    Horde Artillery    |         EV 8         |
@@ -22942,6 +23429,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the arachnite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Doomthief
 
 | Humanoid, Soulless, War Dog |         -         |      Level 5      |    Horde Defender     |         EV 7         |
@@ -22980,6 +23468,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the doomthief is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Equivite
 
 | Soulless, War Dog |         -         |      Level 4      |      Horde Brute      |         EV 6         |
@@ -23022,6 +23511,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the equivite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Hypokrite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 4      |    Horde Ambusher     |         EV 6         |
@@ -23062,6 +23552,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the hypokrite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Mischievite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 5      |     Horde Harrier     |         EV 7         |
@@ -23102,6 +23593,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the mischievite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Thanatite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 6      |   Horde Controller    |         EV 8         |
@@ -23138,6 +23630,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the thanatite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Tormentite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 5      |      Horde Hexer      |         EV 7         |
@@ -23182,6 +23675,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 >
 > When the tormentite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog War Doc
 
 | Humanoid, Soulless, War Dog |         -         |      Level 5      |     Horde Support     |         EV 7         |
@@ -23230,6 +23724,7 @@ At the start of any level 4 or higher war dog's turn, you can spend Malice to ac
 
 The war doc and the iron priest are among the most zealous war dogs in their ranks. When placed into positions of authority, they are often called upon to determine which war dogs are ready for combat and which units should be scrapped for parts.
 
+<!-- @type: statblock -->
 ####### War Dog Tetrarch
 
 | Humanoid, Soulless, War Dog |         -         |      Level 6       |        Leader         |        EV 32         |
@@ -23312,6 +23807,7 @@ The war doc and the iron priest are among the most zealous war dogs in their ran
 >
 > **Effect:** Until the end of the encounter, the tetrarch has damage immunity 2, and their Houndblade ability targets three creatures or objects.
 
+<!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### War Dogs-3rd Echelon
 
 As a war dog proves their loyalty and gains the favor of their superiors, they might be rewarded with special attention from the flesh sculptors of the Body Banks, smoothing out their construction and supplying them with higher-quality parts. War dogs who have risen through the ranks this way pride themselves on their nearly ordinary appearances.
@@ -23326,6 +23822,7 @@ War dogs are most often made by playing the odds, with each new reurrection assu
 
 These monstrous war dogs are developed to fulfill specific roles and combat niches, and are often fused with inorganic materials after their rebirth as living war machines. Monstrous war dogs are uniformly respected for having been chosen for greatness, and they consider their unnatural forms a badge of honor bestowed by Ajax.
 
+<!-- @type: featureblock -->
 ######### War Dog Malice (Level 7+ Malice Features)
 
 At the start of any level 7 or higher war dog's turn, you can spend Malice to activate one of the following features.
@@ -23342,6 +23839,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 > - **12-16:** 7 poison damage; weakened (EoT)
 > - **17+:** 4 poison damage
 
+<!-- @type: statblock -->
 ####### War Dog Draconite
 
 | Humanoid, Soulless, War Dog |         -         |      Level 7      |                  Minion Brute                  | EV 9 for four minions |
@@ -23368,6 +23866,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the draconite is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Saboteur
 
 | Humanoid, Soulless, War Dog |         -         |      Level 7      |                 Minion Ambusher                 | EV 9 for four minions |
@@ -23394,6 +23893,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the saboteur is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Shriketroop
 
 | Humanoid, Soulless, War Dog |         -         |      Level 7      |              Minion Artillery               | EV 9 for four minions |
@@ -23420,6 +23920,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the shriketroop is reduced to 0 Stamina, their loyalty collar explodes, dealing 2d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Aerocite
 
 | Humanoid, Soulless, War Dog |          -          |      Level 8      |     Horde Harrier     |        EV 10         |
@@ -23464,6 +23965,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the aerocite is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Ballistite
 
 | Soulless, War Dog |         -         |      Level 8      |    Horde Artillery    |        EV 10         |
@@ -23502,6 +24004,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the ballistite is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Blackcap
 
 | Humanoid, Soulless, War Dog |            -             |      Level 7      |    Horde Ambusher     |         EV 9         |
@@ -23540,6 +24043,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the blackcap or any of their ash clones is reduced to 0 Stamina, that creature's loyalty collar explodes, dealing 3d6 poison damage to each adjacent enemy and object. If any adjacent enemy has A < 3 they are also weakened (save ends)
 
+<!-- @type: statblock -->
 ####### War Dog Breaker
 
 | Humanoid, Soulless, War Dog |         -         |      Level 7       |      Elite Brute      |        EV 36         |
@@ -23576,6 +24080,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the breaker is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Firestarter
 
 | Humanoid, Soulless, War Dog |         -         |      Level 8      |      Horde Hexer      |        EV 10         |
@@ -23616,6 +24121,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the firestarter is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Geomancer
 
 | Humanoid, Soulless, War Dog |           -            |      Level 8      |   Horde Controller    |        EV 10         |
@@ -23656,6 +24162,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the geomancer is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Iron Priest
 
 | Humanoid, Soulless, War Dog |         -         |      Level 8      |     Horde Support     |        EV 10         |
@@ -23694,6 +24201,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > The Director gains 1 Malice whenever an ally within 3 squares of the iron priest obtains a tier 3 outcome on a power roll.
 
+<!-- @type: statblock -->
 ####### War Dog Prismite
 
 | Soulless, War Dog |             -              |      Level 8      |    Horde Defender     |        EV 10         |
@@ -23736,6 +24244,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > When the prismite is reduced to 0 Stamina, they explode, dealing 3d6 psychic damage to each enemy within 2 squares of them.
 
+<!-- @type: statblock -->
 ####### War Dog Taxiarch
 
 | Humanoid, Soulless, War Dog |            -             |      Level 9       |        Leader         |        EV 44         |
@@ -23812,6 +24321,7 @@ At the start of any level 7 or higher war dog's turn, you can spend Malice to ac
 >
 > See Thunderstruck. Additionally, until the end of the encounter, any enemy who moves within 3 squares of the taxiarch for the first time in a round or starts their turn there takes 3 lightning damage.
 
+<!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### War Dogs-4th Echelon
 
 At the apex of the war dog command structure, a number of infamous figures are known for their brutal tactics, legendary battle prowess, and unbreakable loyalty to Ajax.
@@ -23836,6 +24346,7 @@ Viewed by other war dogs as "The Goddess of the Banks," Psyche possesses a spiri
 
 Leader of the Legion Alkestis and one of the most brilliant commanders ever to be born a war dog, Alkestis has made her legion one of the most feared of Ajax's armies. The Silver Wolf is known for her battlefield tactics and a willingness to stoop to any depths to gain an edge on her enemies.
 
+<!-- @type: featureblock -->
 ######### War Dog Malice (Level 10+ Malice Features)
 
 At the start of any level 10 or higher war dog's turn, you can spend Malice to activate one of the following features.
@@ -23860,6 +24371,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > **Special:** This ability can't be used by a minion.
 
+<!-- @type: statblock -->
 ####### War Dog Blood Jumper
 
 | Humanoid, Soulless, War Dog |          -          |     Level 10      |            Minion Harrier             | EV 12 for four minions |
@@ -23888,6 +24400,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > When the jumper is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Hunter-Killer
 
 | Humanoid, Soulless, War Dog |         -         |     Level 10      |                Minion Artillery                | EV 12 for four minions |
@@ -23914,6 +24427,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > When the hunter-killer is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### War Dog Socialite
 
 | Humanoid, Soulless, War Dog |         -         |     Level 10      |                Minion Hexer                 | EV 12 for four minions |
@@ -23940,6 +24454,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > When the socialite is reduced to 0 Stamina, their loyalty collar explodes, dealing 3d6 damage to each adjacent enemy and object.
 
+<!-- @type: statblock -->
 ####### Castellan Hoplon
 
 | Humanoid, Soulless, War Dog |         -         |      Level 10       |    Elite Defender     |         EV 48         |
@@ -24002,6 +24517,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > The first time in an encounter that Hoplon is reduced to 0 Stamina, he instead has 1 Stamina and gains damage immunity 10 until the end of his next turn. When Hoplon is reduced to 0 Stamina again, each ally within 5 squares of him gains damage immunity 3 and deals an extra 5 damage on strikes, all until the end of the encounter.
 
+<!-- @type: statblock -->
 ####### Iron Champion Doru
 
 | Humanoid, Soulless, War Dog |         -         |      Level 10       |      Elite Brute      |        EV 48         |
@@ -24070,6 +24586,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > When Doru is reduced to 0 Stamina, his loyalty collar explodes, dealing 20 damage to each enemy and object within 3 squares of him.
 
+<!-- @type: statblock -->
 ####### Logostician Vesper
 
 | Soulless, War Dog |         -         |      Level 10       |         Elite Controller          |        EV 48         |
@@ -24144,6 +24661,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > When Vesper is reduced to 0 Stamina, they move up to their speed and then explode, dealing 4d6 damage to each adjacent enemy and object. Any enemy who takes more than 14 damage this way vertically slides 5 squares.
 
+<!-- @type: statblock -->
 ####### Soulbinder Psyche
 
 | Humanoid, Soulless, War Dog |             -              |      Level 10      |      Elite Hexer      |         EV 48         |
@@ -24224,6 +24742,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > **Effect:** The target takes 10 psychic damage.
 
+<!-- @type: statblock -->
 ####### Strategos Alkestis
 
 | Humanoid, Soulless, War Dog |         -         |      Level 10       |        Leader         |        EV 48         |
@@ -24304,6 +24823,7 @@ At the start of any level 10 or higher war dog's turn, you can spend Malice to a
 >
 > **Effect:** Until the start of the next round, each target enemy who has I < 4 is dazed, each target enemy who has M < 4 is restrained, and each target enemy who has A < 4 can't use triggered actions. Additionally, until the end of the encounter, Alkestis and each target ally have damage immunity 3 and deal an extra 5 damage with strikes.
 
+<!-- @type: monster | @category: werewolf -->
 ## Werewolf
 
 A wolf howls and your bowels freeze. Terror overcomes you. Sweat makes your skin slick, your senses sharpened. The moon is high but you feel hot. You're burning up. There's blood in your mouth and a corpse at your feet. Where did that come from?! That animal... that *thing* that almost clawed you to death last week... was it a wolf ? Was it *just* a wolf ?
@@ -24332,6 +24852,7 @@ The powers that created the werewolves were also harnessed and cultivated under 
 
 Werewolves can speak any language they knew before they were cursed. A werewolf who has spent time researching their curse might also know Khamish, Anjali, or Khelt, depending on the circumstances underlying their transformation.
 
+<!-- @type: featureblock -->
 ######### Werewolf Malice (Malice Features)
 
 At the start of a werewolf's turn, you can spend Malice to activate one of the following features.
@@ -24348,6 +24869,7 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > Until the end of the encounter, the encounter map turns to night and the moon appears impossibly huge in the sky. The werewolf can take an additional move action or maneuver on each of their turns while they have line of effect to the moon. Any creature who ends their turn with line of effect to the moon with 1 or more rage gains 2 rag.
 
+<!-- @type: statblock -->
 ####### Werewolf
 
 | Accursed, Humanoid, Werebeast |         -          |      Level 1       |         Solo          |        EV 36         |
@@ -24468,6 +24990,7 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Effect:** The werewolf shifts up to their speed before and after using this ability.
 
+<!-- @type: monster | @category: wyverns -->
 ## Wyverns
 
 The sight of a wyvern perched high atop a rotting tree or lit upon the jagged peak of a shadowy mountain marks the boundary between the known lands and forest primeval. There are raw, ancient sorceries in the wilderness that imbue those lands with power and hate older than roads and carts.
@@ -24490,6 +25013,7 @@ A wyvern's infamous temper is easily provoked, particularly if their eggs or hat
 
 Wyverns are unable to speak. However, a clever hero carrying a feast of fresh meat might be able to reason with one.
 
+<!-- @type: featureblock -->
 ######### Wyvern Malice (Malice Features)
 
 At the start of any wyvern's turn, you can spend Malice to activate one of the following features.
@@ -24510,6 +25034,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 > - **12-16:** The target is taunted by the nearest creature or object (save ends).
 > - **17+:** No effect.
 
+<!-- @type: statblock -->
 ####### Wyvern Lurker
 
 |     Beast, Wyvern      |          -          |      Level 4       |    Elite Ambusher     |        EV 24         |
@@ -24572,6 +25097,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > Any creature affected by a condition imposed by a wyvern can't be hidden from the lurker.
 
+<!-- @type: statblock -->
 ####### Wyvern Predator
 
 |     Beast, Wyvern      |          -          |      Level 4       |      Elite Brute      |        EV 24         |
@@ -24638,6 +25164,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > Any creature affected by a condition imposed by a wyvern can't be hidden from the predator.
 
+<!-- @type: monster | @category: xorannox-the-tyract -->
 ## Xorannox the Tyract
 
 Xorannox the Tyract is an overmind. Formally known by their endonym, vaurath (plural: vaurathi), overminds plot and scheme against their chief rivals, the synlirii and the olothec, for control of the World Below.
@@ -24676,6 +25203,7 @@ Unfortunately, no matter how useful or dependable a party of heroes might be, Xo
 
 Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and Voll.
 
+<!-- @type: statblock -->
 ####### Xorannox the Tyract
 
 | Horror, Overmind  |             -              |      Level 6       |         Solo          |        EV 96         |
@@ -24782,6 +25310,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Effect:** Xorannox directs each of his eyestalks to use a signature ability against any target.
 
+<!-- @type: statblock -->
 ####### Compulsion Eye
 
 | Eyestalk, Horror, Overmind |             -              |      Level 6      |      Controller       |          EV -        |
@@ -24808,6 +25337,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The compulsion eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: statblock -->
 ####### Demolition
 
 | Eyestalk, Horror, Overmind |             -              |      Level 6      |       Artillery       |          EV -        |
@@ -24832,6 +25362,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The demolition eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: statblock -->
 ####### Mover Eye
 
 | Eyestalk, Horror, Overmind |             -              |      Level 6      |      Controller       |          EV -        |
@@ -24856,6 +25387,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The mover eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: statblock -->
 ####### Necrotic Eye
 
 | Eyestalk, Horror, Overmind |             -              |      Level 6      |         Hexer         |          EV -        |
@@ -24882,6 +25414,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The necrotic eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: statblock -->
 ####### Toxic Eye
 
 | Eyestalk, Horror, Overmind |             -              |      Level 6      |         Hexer         |          EV -        |
@@ -24906,6 +25439,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The toxic eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: statblock -->
 ####### Zapper Eye
 
 | Eyestalk, Horror, Overmind |             -              |     Level 6       |       Artillery       |         EV -         |
@@ -24932,6 +25466,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > The zapper eye has damage immunity 15. When they use a main action, they lose this immunity until the end of the round.
 
+<!-- @type: featureblock -->
 ######### Xorannox's Malice (Malice Features)
 
 At the start of Xorannox's turn, you can spend Malice to activate one
@@ -24953,6 +25488,7 @@ of the following features.
 >
 > Xorannox fills the encounter map with a powerful telekinetic field. The Director chooses a cardinal direction (north, south, east, or west). Whenever a creature in the encounter willingly moves or is force moved, they are pulled 2 squares in the chosen direction, ignoring stability. Each time this feature is used, its previous effect ends.
 
+<!-- @type: chapter | @id: dynamic-terrain -->
 # Dynamic Terrain
 
 A terrain object is an element placed in an encounter that alters tactics on the battlefield, allowing the Director to better theme an encounter. Terrain objects range from hazards that provide tempting targets for forced movement, to fieldworks and siege engines that provide a locational advantage, to supernatural objects that an entire encounter can be built around.
@@ -25011,10 +25547,12 @@ Some terrain objects are inherently hidden or can be hidden with an upgrade. Hid
 
 Some terrain objects have an Allied Awareness trait noting benefits and options available to creatures who have familiarity and training with the object. If a creature is aware of a terrain object and has sufficient time to study it, they gain the object's Allied Awareness benefits at the Director's determination.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: environmental-hazards -->
 ### Environmental Hazards
 
 Environmental hazards represent natural elements that creatures (typically creatures defending a location) have channeled, cultivated, or otherwise placed to give them an edge in an encounter.
 
+<!-- @type: dynamic-terrain -->
 ######### Angry Beehive (Level 2 Hazard Hexer)
 
 This beehive is full of angry bees who swarm and attack with little provocation.
@@ -25039,6 +25577,7 @@ This beehive is full of angry bees who swarm and attack with little provocation.
 >
 > **Killer Bees (+2 EV)** The bees are a particularly aggressive and dangerous species. The hive triggers even if a creature shifts into or while adjacent to it, and the swarm deals 1d6 + 3 poison damage.
 
+<!-- @type: dynamic-terrain -->
 ######### Brambles (Level 1 Hazard Defender)
 
 This thicket features close-growing vines tipped with sharp thorns.
@@ -25061,6 +25600,7 @@ This thicket features close-growing vines tipped with sharp thorns.
 >
 > **Poisonous Thorns (+1 EV)** The brambles are poisonous. Any creature who takes damage from brambles is also bleeding (save ends).
 
+<!-- @type: dynamic-terrain -->
 ######### Corrosive Pool (Level 2 Hazard Hexer)
 
 This shallow pool bubbles with acid or some other corrosive liquid.
@@ -25100,6 +25640,7 @@ This shallow pool bubbles with acid or some other corrosive liquid.
 >
 > Allies who have weapons are equipped with torches. Any ally can use a maneuver to throw a torch up to 5 squares and deal 1 fire damage to the pool, triggering Explosive Reaction.
 
+<!-- @type: dynamic-terrain -->
 ######### Frozen Pond (Level 1 Hazard Hexer)
 
 A shallow, frozen patch of water features ice thick enough that it won't break, but its surface is slick and treacherous to navigate.
@@ -25157,6 +25698,7 @@ A shallow, frozen patch of water features ice thick enough that it won't break, 
 >
 > **Effect:** The triggering creature's movement ends, then they are force moved if applicable.
 
+<!-- @type: dynamic-terrain -->
 ######### Lava (Level 3 Hazard Hexer)
 
 A patch of blisteringly hot molten rock wells up from the ground, threatening anyone who gets close to it.
@@ -25196,6 +25738,7 @@ A patch of blisteringly hot molten rock wells up from the ground, threatening an
 >
 > **Magma Flow (+4 EV)** The lava is flowing! At the start of each round, add one square of lava adjacent to an existing square of lava.
 
+<!-- @type: dynamic-terrain -->
 ######### Quicksand (Level 3 Hazard Hexer)
 
 When this patch of sand is stepped on, it is revealed to be a slurry saturated by water—and ready to draw creatures down to their doom.
@@ -25234,6 +25777,7 @@ When this patch of sand is stepped on, it is revealed to be a slurry saturated b
 >
 > The quicksand is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Toxic Plants (Level 2 Hazard Hexer)
 
 Colorful mushrooms or lovely flowering plants release a cloud of spores or pollen when disturbed, causing creatures to fall into a magical slumber.
@@ -25274,10 +25818,12 @@ Colorful mushrooms or lovely flowering plants release a cloud of spores or polle
 >
 > **Carnivorous Plants (+2 EV)** The plants are carnivorous and attempt to slowly digest any creature who falls among them. Any creature who starts their turn prone in the area takes 4 acid damage.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: fieldworks -->
 ### Fieldworks
 
 Fieldworks represent temporary military fortifications meant to give defenders an edge in an encounter.
 
+<!-- @type: dynamic-terrain -->
 ######### Archer's Stakes (Level 1 Fortification Defender)
 
 A series of sharp stakes have been placed point-out to protect defenders against charges and other direct attacks.
@@ -25322,6 +25868,7 @@ A series of sharp stakes have been placed point-out to protect defenders against
 >
 > Allies of this object ignore the difficult terrain created by the stakes, take no damage from moving through the stakes unless they are force moved, and have cover while in an area of archer's stakes.
 
+<!-- @type: dynamic-terrain -->
 ######### Bear Trap (Level 1 Trap Ambusher)
 
 A set of spring-loaded steel jaws stands ready to snap shut when stepped on.
@@ -25368,6 +25915,7 @@ A set of spring-loaded steel jaws stands ready to snap shut when stepped on.
 >
 > The bear trap is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Flammable Oil (Level 1 Trap Ambusher)
 
 A patch of flammable oil or pitch on the ground is ready to be ignited.
@@ -25398,6 +25946,7 @@ A patch of flammable oil or pitch on the ground is ready to be ignited.
 >
 > Allies who have weapons are equipped with torches. Any ally can use a maneuver to throw a torch up to 5 squares and ignite the flammable oil.
 
+<!-- @type: dynamic-terrain -->
 ######### Hidey-Hole (Level 1 Fortification Ambusher)
 
 A cavity in a floor, wall, or ceiling might hold hidden threats.
@@ -25424,6 +25973,7 @@ A cavity in a floor, wall, or ceiling might hold hidden threats.
 >
 > **Network (+1 EV per hidey-hole)** The hidey-hole is connected to a tunnel network. A creature familiar with the network can move from one hidey-hole to any space adjacent to a connected hidey-hole if they have movement available equal to the straight-line distance to that space. A creature unfamiliar with the network can use a maneuver to make a **hard Intuition test** to discover a connected hidey-hole.
 
+<!-- @type: dynamic-terrain -->
 ######### Pavise Shield (Level 1 Fortification Defender)
 
 A reinforced metal shield embedded in the ground acts as cover for the creature controlling it.
@@ -25446,6 +25996,7 @@ A reinforced metal shield embedded in the ground acts as cover for the creature 
 >
 > While a creature has a pavise shield grabbed, their speed is halved and they move the shield like a grabbed creature.
 
+<!-- @type: dynamic-terrain -->
 ######### Snare Trap (Level 1 Trap Ambusher)
 
 A rope snare is set to grab a target, leaving them hanging upside down.
@@ -25492,6 +26043,7 @@ A rope snare is set to grab a target, leaving them hanging upside down.
 >
 > The snare trap is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Spike Trap (Level 2 Trap Ambusher)
 
 A pit dug into the ground is filled with spikes, and camouflaged to avoid detection.
@@ -25535,10 +26087,12 @@ A pit dug into the ground is filled with spikes, and camouflaged to avoid detect
 >
 > The spike trap is hidden until triggered or detected.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: mechanisms -->
 ### Mechanisms
 
 Mechanisms represent any number of intricate devices that can complicate a battle. Unlike more straightforward traps, a mechanism is often linked to another triggering mechanism that activates it.
 
+<!-- @type: dynamic-terrain -->
 ######### Column of Blades (Level 3 Fortification Defender)
 
 A spinning wooden column is affixed with sharp blades to slash the unwary.
@@ -25603,6 +26157,7 @@ A spinning wooden column is affixed with sharp blades to slash the unwary.
 > - **12-16:** The creature triggers the column.
 > - **17+:** The creature doesn't trigger the column.
 
+<!-- @type: dynamic-terrain -->
 ######### Dart Trap (Level 1 Trap Ambusher)
 
 A concealed dart thrower hurls missiles at short range.
@@ -25652,6 +26207,7 @@ A concealed dart thrower hurls missiles at short range.
 >
 > The dart trap is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Pillar (Level 2 Hazard Hexer)
 
 
@@ -25694,6 +26250,7 @@ This stone pillar can be toppled onto unsuspecting foes with the right amount of
 >
 > **Multiple Pillars (+3 EV per additional pillar)** Multiple pillars can be used to represent a larger toppling object such as a wall. If triggered by destruction, all individual pillars need to be destroyed before the object falls.
 
+<!-- @type: dynamic-terrain -->
 ######### Portcullis (Level 3 Trap Ambusher)
 
 A portcullis is hidden in the ceiling of a passage or choke point, waiting to drop when activated.
@@ -25739,6 +26296,7 @@ A portcullis is hidden in the ceiling of a passage or choke point, waiting to dr
 >
 > The portcullis is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Pressure Plate (Level 1 Trigger Support)
 
 This mechanism acts as a trigger for another linked mechanism, and is skillfully hidden from view in the floor.
@@ -25771,6 +26329,7 @@ This mechanism acts as a trigger for another linked mechanism, and is skillfully
 >
 > The pressure plate is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Pulley (Level 1 Trigger Support)
 
 A counterweighted pulley system can be used to quickly ascend to the top of a wall, scaffold, tower, or other structure.
@@ -25801,6 +26360,7 @@ A counterweighted pulley system can be used to quickly ascend to the top of a wa
 >
 > **Looped Chain (+1 EV)** Instead of a rope and pulley, the system uses a counterweighted looped chain. A looped chain automatically resets and can be triggered repeatedly.
 
+<!-- @type: dynamic-terrain -->
 ######### Ram (Level 2 Trap Ambusher)
 
 A heavy wooden ram drops down or swings into the fray, crushing all in its path.
@@ -25859,6 +26419,7 @@ A heavy wooden ram drops down or swings into the fray, crushing all in its path.
 >
 > The ram is hidden until triggered or detected.
 
+<!-- @type: dynamic-terrain -->
 ######### Switch (Level 1 Trigger Support)
 
 Set into any surface, this mechanism acts as a trigger for another linked mechanism.
@@ -25886,10 +26447,12 @@ Set into any surface, this mechanism acts as a trigger for another linked mechan
 >
 > **Concealed (+1 EV)** The switch is hidden.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: power-fixtures -->
 ### Power Fixtures
 
 Power fixtures are especially potent fortifications for solo creatures and smaller strike forces. The more of these terrain objects that occupy the field of battle, the worse things get for the attacking side.
 
+<!-- @type: dynamic-terrain -->
 ######### Holy Idol (Level 5 Relic Support)
 
 An empowering monument to a higher power enables a villain's machinations.
@@ -25906,6 +26469,7 @@ An empowering monument to a higher power enables a villain's machinations.
 >
 > At the start of each round while the holy idol is intact, the Director gains a d6 that lasts until the end of the round. When a Director-controlled creature deals or takes damage, the Director can roll the d6 to increase the damage the creature deals or reduce the damage the creature takes by an amount equal to the roll (to a minimum of 2 damage). If multiple idols are in play, only one d6 can be applied to a single instance of damage.
 
+<!-- @type: dynamic-terrain -->
 ######### Psionic Shard (Level 5 Fortification Defender)
 
 A massive humming crystal makes the air around it feel thick.
@@ -25932,6 +26496,7 @@ A massive humming crystal makes the air around it feel thick.
 >
 > **Effect:** The shard releases a shockwave channeled through each creature affected by Psionic Barrier. Each ally in the encounter is dazed until the end of their next turn.
 
+<!-- @type: dynamic-terrain -->
 ######### Tree of Might (Level 5 Hazard Hexer)
 
 A gnarled tree has unearthed roots that writhe and curl.
@@ -25953,6 +26518,7 @@ A gnarled tree has unearthed roots that writhe and curl.
 >
 > Once per round, any creature adjacent to the tree of might can take a fruit from the tree and eat it (no action required). The creature gains 10 temporary Stamina and has their Might score increased by 1 (to a maximum of 6) until the end of the encounter.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: siege-engines -->
 ### Siege Engines
 
 Siege engines are powerful weapons that require a team of creatures to operate and move. These weapons can scale in size from smaller field artillery to massive mechanisms that can destroy buildings.
@@ -25963,6 +26529,7 @@ Rather than siege engines taking actions on their own, a creature adjacent to th
 
 Multiple minions in a squad can activate different aspects of a siege engine using adjacent creature main actions.
 
+<!-- @type: dynamic-terrain -->
 ######### Arrow Launcher (Level 2 Siege Engine Artillery)
 
 A small wooden cart uses alchemical rockets to launch up to a hundred arrows at a time across a wide area.
@@ -26037,6 +26604,7 @@ A small wooden cart uses alchemical rockets to launch up to a hundred arrows at 
 >
 > **Effect:** This ability can't be used again until the arrow launcher is reloaded.
 
+<!-- @type: dynamic-terrain -->
 ######### Boiling Oil Cauldron (Level 3 Fortification Defender)
 
 A large cauldron of boiling oil stands ready to be poured onto enemies.
@@ -26075,6 +26643,7 @@ A large cauldron of boiling oil stands ready to be poured onto enemies.
 >
 > **Effect:** The boiling oil cauldron is reloaded, allowing **Boiling Oil** to be used again. This action can be used only once per round.
 
+<!-- @type: dynamic-terrain -->
 ######### Catapult (Level 3 Siege Engine Artillery)
 
 This massive counterweighted engine hurls a heavy projectile for a devastating assault.
@@ -26135,6 +26704,7 @@ This massive counterweighted engine hurls a heavy projectile for a devastating a
 >
 > **Flammable (+2 EV) Arcing Shot** deals fire damage, and the area of that ability is on fire until the end of the encounter. Any creature who enters the area for the first time in a round or starts their turn there takes 2 fire damage.
 
+<!-- @type: dynamic-terrain -->
 ######### Exploding Mill Wheel (Level 3 Siege Engine Artillery)
 
 A massive wooden wheel is loaded with explosives and rolled toward enemy forces or fortifications, ready to explode.
@@ -26187,6 +26757,7 @@ A massive wooden wheel is loaded with explosives and rolled toward enemy forces 
 >
 > On a natural 19 or 20, a creature can both pilot the wheel and can disarm its explosives as a maneuver.
 
+<!-- @type: dynamic-terrain -->
 ######### Field Ballista (Level 2 Siege Engine Artillery)
 
 A massive crossbow fires thick metal bolts with devastating effect.
@@ -26277,6 +26848,7 @@ A massive crossbow fires thick metal bolts with devastating effect.
 >
 > **Effect:** This forced movement triggers opportunity attacks.
 
+<!-- @type: dynamic-terrain -->
 ######### Iron Dragon (Level 4 Siege Engine Artillery)
 
 A massive metal device uses a bellows system and liquid fuel to shoot out gouts of flame.
@@ -26331,6 +26903,7 @@ A massive metal device uses a bellows system and liquid fuel to shoot out gouts 
 >
 > **Effect:** The iron dragon and the creature using this action move together up to 2 squares.
 
+<!-- @type: dynamic-terrain -->
 ######### Watchtower (Level 2 Fortification Defender)
 
 A sturdy wooden tower accessed by interior ladders or stairs provides cover and high ground for attackers.
@@ -26367,6 +26940,7 @@ A sturdy wooden tower accessed by interior ladders or stairs provides cover and 
 >
 > **Iron Tower (+4 EV)** The watchtower is reinforced with stone and iron and has 100 Stamina.
 
+<!-- @type: monster-group | @domain: dynamic-terrain | @category: supernatural-objects -->
 ### Supernatural Objects
 
 Infused with magic or psionics, these powerful and esoteric terrain objects can provide a strong environmental threat, or even be the centerpiece of an encounter.
@@ -26375,6 +26949,7 @@ Infused with magic or psionics, these powerful and esoteric terrain objects can 
 >
 > Supernatural objects are unique in having effects that target or affect enemies and allies. Although supernatural objects don't (necessarily) have awareness or sapience, their presence in an encounter aligns them clearly with or against the heroes. Unless the Director determines otherwise, the heroes are usually the enemies of a supernatural object.
 
+<!-- @type: dynamic-terrain -->
 ######### The Black Obelisk (Level 3 Relic Controller)
 
 A foreboding obelisk shaped of dark stone harrows the minds and spirits of those around it.
@@ -26413,6 +26988,7 @@ A foreboding obelisk shaped of dark stone harrows the minds and spirits of those
 >
 > **Effect:** The target is pushed 2 squares.
 
+<!-- @type: dynamic-terrain -->
 ######### The Chronal Hypercube (Level 3 Relic Controller)
 
 This unnatural object twists space around it in a reflection of its own unnatural form.
@@ -26437,6 +27013,7 @@ This unnatural object twists space around it in a reflection of its own unnatura
 >
 > Any ally within 10 squares of the hypercube can teleport when they move. An ally who teleports gains an edge on the next power roll they make.
 
+<!-- @type: dynamic-terrain -->
 ######### The Throne of A'An (Level 4 Relic Controller)
 
 The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, retains some of her power from the age before she was slain to end the Age of Suns—and plunge the region into eternal winter.
@@ -26526,6 +27103,7 @@ The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, 
 > - **12-16:** You lose a Recovery.
 > - **17+:** You suffer no effect
 
+<!-- @type: chapter | @id: retainers -->
 # Retainers
 
 A retainer is a type of NPC follower who fights alongside the heroes. Retainer creatures can gain levels just as heroes do, so their battlefield contributions remain relevant as the heroes grow in status and power. A lowly level 1 goblin guide can advance up to level 10 if they adventure with a heroic party for long enough!
@@ -27048,8 +27626,10 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the target is at or below 0 Stamina, or if they have died due to Stamina loss since the end of the retainer's last turn, the target is alive with 1 Stamina and can spend a Recovery.
 
+<!-- @type: monster-group | @domain: retainer -->
 #### Retainer Statblocks
 
+<!-- @type: statblock -->
 ####### Angulotl Hopper
 
 |    Angulotl, Humanoid    |              -               |      Level 1      |   Harrier Retainer    |         EV -         |
@@ -27118,6 +27698,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the target has M < AVERAGE, their movement ends, they are knocked prone, and one ally within distance gains 2 surges.
 
+<!-- @type: statblock -->
 ####### Bugbear Commando
 
 | Bugbear, Fey, Goblin, Humanoid |         -         |      Level 2      |   Ambusher Retainer   |         EV -         |
@@ -27209,6 +27790,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The target takes 15 damage, they are no longer grabbed, and they fall prone.
 
+<!-- @type: statblock -->
 ####### Devil Defector
 
 |    Devil, Infernal     |          -          |      Level 5      |    Hexer Retainer     |         EV -         |
@@ -27269,6 +27851,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The area burns with infernal fire until the end of the devil's next turn. Any enemy of the defector who ends their turn in the area takes 10 fire damage, and if they have P < AVERAGE they are frightened (save ends).
 
+<!-- @type: statblock -->
 ####### The Nameless
 
 | Draconian, Dragon, Humanoid  |          -          |      Level 6      |   Defender Retainer   |         EV -         |
@@ -27335,6 +27918,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** Any living minions reduced to 0 Stamina by this ability regain all their Stamina and become corporeal undead under the Nameless's control until the end of the Nameless's next turn, after which they are destroyed.
 
+<!-- @type: statblock -->
 ####### Dwarf Mortar
 
 |  Dwarf, Humanoid  |         -         |      Level 1      |    Hexer Retainer     |         EV -         |
@@ -27407,6 +27991,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** Until the start of the mortar's next turn, strikes made against the mortar or any ally adjacent to them take a bane.
 
+<!-- @type: statblock -->
 ####### High Elf Weatherwise
 
 | Fey, High Elf, Humanoid |         -         |     Level 1      |  Controller Retainer  |         EV -         |
@@ -27473,6 +28058,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 10 corruption damage; P < AVERAGE prone and can't stand (save ends)
 > - **17+:** 14 corruption damage; P < STRONG prone and can't stand (save ends)
 
+<!-- @type: statblock -->
 ####### Shadow Elf Shade
 
 | Fey, Humanoid, Shadow Elf |           -           |      Level 4      |   Ambusher Retainer   |         EV -         |
@@ -27539,6 +28125,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** While a creature has shadowed vision, all creatures have concealment from them.
 
+<!-- @type: statblock -->
 ####### Wode Elf Arrowswift
 
 | Fey, Humanoid, Wode Elf |         -         |      Level 1      |  Artillery Retainer   |         EV -         |
@@ -27605,6 +28192,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 17 damage
 > - **17+:** 23 damage
 
+<!-- @type: statblock -->
 ####### Gnoll Gnasher
 
 |  Abyssal, Gnoll   |         -         |      Level 2      |   Harrier Retainer    |        EV 60         |
@@ -27667,6 +28255,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The gnasher consumes part of the target's body. The gnasher can spend a Recovery, and each enemy within 5 squares of the gnasher who has I < AVERAGE is frightened (save ends).
 
+<!-- @type: statblock -->
 ####### Goblin Guide
 
 | Goblin, Humanoid  |           -           |      Level 1      |   Harrier Retainer    |         EV -         |
@@ -27735,6 +28324,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon strike, the strike deals an extra 10 poison damage, and if the target has M <v, they are weakened (save ends). If the guide is adjacent to their mentor when they use Poison Blade, they apply poison to the mentor's weapon in the same way.
 
+<!-- @type: statblock -->
 ####### Hobgoblin Flameslinger
 
 | Goblin, Hobgoblin, Humanoid, Infernal |         -          |      Level 4      |  Controller Retainer  |         EV -         |
@@ -27802,6 +28392,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the flameslinger's mentor is within 10 squares of the flameslinger, the mentor can be the source of the burst instead of the flameslinger.
 
+<!-- @type: statblock -->
 ####### Human Warrior
 
 |  Human, Humanoid  |         -         |      Level 1      |   Defender Retainer   |         EV -         |
@@ -27870,6 +28461,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 18 damage
 > - **17+:** 24 damage
 
+<!-- @type: statblock -->
 ####### Kobold Shieldbearer
 
 | Humanoid, Kobold  |         -         |      Level 1       |   Defender Retainer   |         EV -         |
@@ -27932,6 +28524,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If this ability is used as part of the Charge main action, the shieldbearer gains 2 surges that can be used immediately.
 
+<!-- @type: statblock -->
 ####### Minotaur Gorer
 
 | Accursed, Humanoid, Minotaur |         -         |      Level 3      |    Brute Retainer     |         EV -         |
@@ -28002,6 +28595,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 16 damage; M < AVERAGE bleeding (save ends)
 > - **17+:** 21 damage; M < STRONG prone and can't stand (save ends).
 
+<!-- @type: statblock -->
 ####### Orc Charger
 
 |   Humanoid, Orc   |         -         |      Level 1      |   Harrier Retainer    |         EV -         |
@@ -28062,6 +28656,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The charger takes psychic damage equal to the number of enemies affected. This damage can't be reducetd in any way.
 
+<!-- @type: statblock -->
 ####### Radenwight Sidekick
 
 | Humanoid, Radenwight |           -           |      Level 1      |   Support Retainer    |         EV -         |
@@ -28126,6 +28721,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** Each target can spend a Recovery, and ends the dazed, frightened, and weakened conditions on themself.
 
+<!-- @type: statblock -->
 ####### Time Raider Mind Healer
 
 |   Humanoid, Time Raider   |         -         |      Level 3      |   Support Retainer    |         EV -         |
@@ -28192,6 +28788,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the mind healer is dazed, frightened, or taunted, they can end one of those conditions and impose the same condition on one enemy in the area. Additionally, they can do the same for their mentor if the mentor is in the area and is dazed, frightened, or taunted.
 
+<!-- @type: statblock -->
 ####### Troll Mercenary
 
 |   Giant, Troll    |         -          |      Level 5      |    Brute Retainer     |              EV -               |
@@ -28252,6 +28849,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** The mercenary moves up to their speed. If this movement takes them beyond the distance of the triggering ability, the ability has no effect on them.
 
+<!-- @type: statblock -->
 ####### Undead Servitor
 
 | Undead, Soulless  |         -         |      Level 1      |    Brute Retainer     |         EV -         |
@@ -28324,6 +28922,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > - **12-16:** 10 corruption damage
 > - **17+:** 14 corruption damage
 
+<!-- @type: statblock -->
 ####### Unquiet Spirit
 
 |            Undead, Soulless            |             -              |      Level 1      |    Hexer Retainer     |         EV -         |
@@ -28396,6 +28995,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Effect:** If the target has P < STRONG, they are phased until the end of their next turn. A phased target gains the unquiet spirit's Corruptive Phasing trait and can fly. They are visible but can't affect or be affed by other creatures or objects. A willing creature not subject to the ability's potency can choose to automatically be affected.
 
+<!-- @type: statblock -->
 ####### Vampire Rebel
 
 |  Undead, Vampire  |           -           |      Level 4      |   Harrier Retainer    |         EV -         |
