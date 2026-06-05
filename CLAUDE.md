@@ -42,7 +42,9 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
-| `internal/site/config.go` | Site builder config types (sections, groups) |
+| `internal/site/config.go` | Site builder config types (sections, groups, books) |
+| `internal/site/cards.go` | Rich `.sc-card` index cards for Browse-tab type indexes (kit, class, ancestry, …) + shared `card()`/`crestSVG`/`iconPaths` |
+| `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |
 | `internal/site/permalinks.go` | SCC permalink redirect-stub generator |
 
 ## CLI commands
@@ -65,7 +67,7 @@ Features:
 - **Section mapping**: copies ETL md-linked output into MkDocs tab directories (Browse, Read)
 - **Book-faithful pages**: each `md-linked` page is a full book-order render of its source subtree via `RenderSubtree` (`internal/content/render_subtree.go`) → `ParsedContent.PageBody`. The `md-linked` generator emits `PageBody`; the site builder maps pages directly (no composite reassembly). Ability statblocks are un-blockquoted, headings normalized, document order preserved. `RenderSubtree` also stamps `{data-scc="<code>"}` (attr_list) onto descendant headings that have an SCC code (for the v2 per-heading permalink icons); the section→SCC map is built during the pipeline walk and `PageBody` render + writes are **deferred to a post-walk pass** so the map is complete (a parent renders before its children are classified). See `internal/pipeline/pipeline.go`.
 - **Group remapping**: nests kit abilities under a "Kits" subdirectory by cross-referencing the `kit/` source directory
-- **Per-book Read grouping**: when a section sets `group_by_book: true`, pages are placed under `Read/<book-folder>/` (folder/label/order from the `books:` list in `v2/site.yaml`, keyed by SCC prefix — the substring before the first `/`). Each book gets a source-ordered `.nav.yml` + `index.md`, and the section gets a landing `index.md` listing the books. Chapter order comes from the `order:` frontmatter field the pipeline assigns in document order. Intra-book links are rewritten to the per-book folder.
+- **Per-book Read grouping**: when a section sets `group_by_book: true`, pages are placed under `Read/<book-folder>/` (folder/label/order from the `books:` list in `v2/site.yaml`, keyed by SCC prefix — the substring before the first `/`). Each book gets a source-ordered `.nav.yml` + `index.md`, and the section gets a landing `index.md`. Both index types are rendered as `.sc-card` grids (`cards_book.go`): the landing shows one `bookCard` per book (per-book `icon` + `description` from `site.yaml`, falling back to the generic `book` glyph), and each book index shows one `chapterCard` per chapter (shared `chapter` glyph + a blurb auto-extracted from the chapter's first prose paragraph). Chapter order comes from the `order:` frontmatter field the pipeline assigns in document order. Intra-book links are rewritten to the per-book folder.
 - **Natural sort**: numeric-aware ordering in generated index pages (Level 1, 2, ... 10)
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one
 - **SCC permalink stubs**: generates `scc/{code}/index.html` redirect stubs for every page with an `scc` frontmatter field. The SCC URL is a stable, shareable redirect entry point; the friendly Browse page is the canonical, indexable location. (The client-side address-bar rewrite and its `scc-manifest.js` map were retired 2026-05-31 — see `v2/.repo-docs/decisions/2026-05-23-scc-permalink-system.md`.)
