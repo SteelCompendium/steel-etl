@@ -210,6 +210,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			data = combineFrontmatterName(data, parentName)
 		}
 
+		// Ability/trait pages → high-fantasy steel `.sc-ability` card (site-only;
+		// shared data repos untouched). Runs before injectH1 so the card becomes
+		// the page body and injectH1 still prepends the "# Name" MkDocs needs.
+		if card, ok := buildAbilityCardPage(data); ok {
+			data = card
+		}
+
 		// Inject h1 header from frontmatter "name" field if the body lacks one
 		data = injectH1(data)
 
