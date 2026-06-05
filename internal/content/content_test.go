@@ -617,3 +617,12 @@ func TestAbilityNoSubclass(t *testing.T) {
 		t.Errorf("subclass should be absent, got %v", parsed.Frontmatter["subclass"])
 	}
 }
+
+func TestMonsterParsersRegistered(t *testing.T) {
+	r := NewRegistry()
+	for _, typeName := range []string{"monster", "monster-group", "statblock", "featureblock", "dynamic-terrain"} {
+		if !r.Has(typeName) {
+			t.Errorf("parser %q not registered", typeName)
+		}
+	}
+}

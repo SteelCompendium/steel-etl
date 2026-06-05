@@ -33,6 +33,12 @@ func NewRegistry() *Registry {
 	// Phase 3 parsers
 	r.Register(&ProjectParser{})
 	r.Register(&GodParser{})
+	// Phase 5 parsers (Monsters book)
+	r.Register(&MonsterParser{})
+	r.Register(&MonsterGroupParser{})
+	r.Register(&StatblockParser{})
+	r.Register(&FeatureblockParser{})
+	r.Register(&DynamicTerrainParser{})
 	return r
 }
 
