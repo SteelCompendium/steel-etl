@@ -2607,7 +2607,9 @@ This section presents a 3rd-echelon trinket treasure.
 
 *Although you see nothing before you, your hands can discern an invisible scrap of cloth.*
 
-**Keywords:** Neck, Psionic **Item Prerequisite:** Lightbender fur **Project Source:** Texts or lore in Hyrallic
+**Keywords:** Neck, Psionic 
+
+**Item Prerequisite:** Lightbender fur **Project Source:** Texts or lore in Hyrallic
 
 **Project Roll Characteristic:** Reason, Intuition, or Presence
 
