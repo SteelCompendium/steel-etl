@@ -30,6 +30,8 @@ var (
 	segLabelRe = regexp.MustCompile(`(?is)^\*\*\s*(benefit|drawback)s?\s*:?\s*\*\*\s*(.+)$`)
 	// single-* italic, run AFTER bold has consumed every **…** pair
 	traitItalicRe = regexp.MustCompile(`\*([^*\n]+)\*`)
+	// a markdown table's header-separator row: only | : - and spaces
+	tableSepRe = regexp.MustCompile(`^[|:\- ]+$`)
 )
 
 // traitInline renders the inline markdown trait prose carries — **bold**,
@@ -130,6 +132,8 @@ func renderTraitBody(intro string, children []*traitNode) (body string, leadPros
 			fmt.Fprintf(&b, "<p class=\"sc-trait__flavor\">%s</p>\n", traitInline(strings.Trim(tp, "*")))
 		case "list":
 			b.WriteString(renderTraitList(tp))
+		case "table":
+			b.WriteString(renderTraitTable(tp))
 		case "leadin":
 			fmt.Fprintf(&b, "<p class=\"sc-trait__leadin\"><span class=\"sc-trait__dia\"></span>%s</p>\n", traitInline(collapseLines(tp)))
 		case "benefit", "drawback":
@@ -162,6 +166,8 @@ func classifyTraitBlock(tp string) string {
 	switch {
 	case isItalicPara(tp):
 		return "flavor"
+	case isTableBlock(tp):
+		return "table"
 	case isListBlock(tp):
 		return "list"
 	case segLabelRe.MatchString(tp):
@@ -186,6 +192,52 @@ func isTraitLeadin(tp string) bool {
 	low := strings.ToLower(t)
 	return strings.Contains(low, "following") &&
 		(strings.Contains(low, "abilit") || strings.Contains(low, "trait") || strings.Contains(low, "benefit"))
+}
+
+// isTableBlock reports whether a block is a pipe table: a leading "|" row
+// followed by a "|---|---|" header-separator row.
+func isTableBlock(tp string) bool {
+	lines := strings.Split(tp, "\n")
+	if len(lines) < 2 || !strings.HasPrefix(strings.TrimSpace(lines[0]), "|") {
+		return false
+	}
+	return isTableSepLine(strings.TrimSpace(lines[1]))
+}
+
+func isTableSepLine(t string) bool {
+	return strings.Contains(t, "-") && tableSepRe.MatchString(t)
+}
+
+// renderTraitTable renders a markdown pipe table as a real HTML <table> (the
+// first row is the header; the |---| separator is dropped). Cells carry rich
+// inline markdown — links resolve through traitInline like the rest of the body.
+func renderTraitTable(block string) string {
+	var rows [][]string
+	for _, ln := range strings.Split(block, "\n") {
+		t := strings.TrimSpace(ln)
+		if !strings.HasPrefix(t, "|") || isTableSepLine(t) {
+			continue
+		}
+		rows = append(rows, splitRow(t))
+	}
+	if len(rows) == 0 {
+		return ""
+	}
+	var sb strings.Builder
+	sb.WriteString("<table><thead><tr>")
+	for _, c := range rows[0] {
+		sb.WriteString("<th>" + traitInline(c) + "</th>")
+	}
+	sb.WriteString("</tr></thead><tbody>")
+	for _, r := range rows[1:] {
+		sb.WriteString("<tr>")
+		for _, c := range r {
+			sb.WriteString("<td>" + traitInline(c) + "</td>")
+		}
+		sb.WriteString("</tr>")
+	}
+	sb.WriteString("</tbody></table>\n")
+	return sb.String()
 }
 
 // renderTraitList renders a "- …" / "* …" bullet block as a <ul>.

@@ -156,6 +156,34 @@ func TestRenderTraitCard_Segments(t *testing.T) {
 	}
 }
 
+// A markdown table in a trait body renders as a real HTML <table>, not a raw
+// pipe paragraph, with links inside cells resolved.
+func TestRenderTraitCard_Table(t *testing.T) {
+	fm := "class: censor\nname: Domain Effects\ntype: trait"
+	body := `
+Choose your domain feature.
+
+| Domain | Feature |
+|------------|-----------------------------|
+| Creation | Improved [Hands of the Maker](../hands-of-the-maker.md) |
+| Death | Seance |
+`
+	got := renderTraitCard(fm, body)
+	wants := []string{
+		`<table><thead><tr><th>Domain</th><th>Feature</th></tr></thead>`,
+		`<tbody><tr><td>Creation</td><td>Improved <a href=`,
+		`<tr><td>Death</td><td>Seance</td></tr>`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("table trait missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	if strings.Contains(got, "<p>| Domain") {
+		t.Errorf("table must not fall through to a raw-pipe paragraph\n%s", got)
+	}
+}
+
 // The level pill falls back to a `level-N` segment in the scc when frontmatter has
 // no level (beastheart traits).
 func TestTraitTag_SCCFallback(t *testing.T) {
