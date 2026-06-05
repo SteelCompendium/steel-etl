@@ -173,14 +173,35 @@ as `feature-group` → `ability`).
 > Both produce flat `mcdm.heroes.v1/<type>/<id>` codes. Use `@id` for clean slugs
 > when the heading would slugify poorly (e.g. `@id: adun` for "Adûn").
 
-### Monsters (future)
+### Monsters (`mcdm.monsters.v1`)
 
-| @type | Use for |
-|-------|---------|
-| `monster` | Monster entries (container for lore + statblock) |
-| `statblock` | Stat blocks within a monster entry |
-| `dynamic-terrain` | Dynamic terrain features |
-| `retainer` | Retainer NPCs |
+| @type | Use for | Keys | SCC shape |
+|-------|---------|------|-----------|
+| `monster` | A monster **group** (`## Goblins`) — produces a lore landing page and seeds `category` context | `@category` (required, slug) | `monster.<category>/<category>` |
+| `statblock` | An individual creature stat block (H7) | inherits `category`/`subcategory`/`domain` from context | `monster.<category>[.<subcategory>].statblock/<id>` |
+| `featureblock` | A malice/tactical feature block (H9, e.g. "Goblin Malice") | — | `monster.<category>[.<subcategory>]/<id>` (sibling of `statblock/`) |
+| `dynamic-terrain` | A terrain object (H9: hazard, fieldwork, mechanism, fixture) | inherits `domain: dynamic-terrain` + `category` | `dynamic-terrain.<category>/<id>` |
+| `monster-group` | Non-code container that only seeds context (terrain categories, retainer group, echelon sub-groups) | `@domain`, `@category`, `@subcategory` | *(none — no file)* |
+
+Notes:
+- Statblocks are H7 and malice/terrain are H9 — heading levels above goldmark's H6 limit, captured by `collectDeepHeadings`. H8 folds into its parent statblock (retainer advancement abilities).
+- `@subcategory` adds an echelon path segment (`1st-echelon`…) for groups whose statblock names repeat per echelon (Rivals, Demons, Undead, War Dogs).
+- A featureblock keeps a `(Level N+ …)` qualifier in its id (tiered malice stays distinct) but drops a bare descriptor like `(Malice Features)` / `(Ajax Feature)`.
+- The initial book-wide annotation was bootstrapped by `scripts/annotate_monsters.pl`.
+
+```markdown
+<!-- @type: monster | @category: goblins -->
+## Goblins
+
+<!-- @type: featureblock -->
+######### Goblin Malice (Malice Features)
+
+<!-- @type: statblock -->
+####### Goblin Cursespitter
+
+<!-- @type: monster-group | @subcategory: 1st-echelon -->
+### Rivals-1st Echelon
+```
 
 ## Annotation Patterns
 

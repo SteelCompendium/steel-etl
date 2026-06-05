@@ -37,8 +37,9 @@ just run gen --config pipeline.yaml  # Run with args
 | `pipeline.yaml` | Pipeline config: input, output formats, classification settings |
 | `classification.json` | SCC registry (generated, gitignored) |
 | `input/heroes/Draw Steel Heroes.md` | Annotated source — hand-maintained, canonical (the former `annotate_heroes.py` generator was retired; the `.md` holds ~4,055 cross-reference links and annotations that live only here) |
+| `input/monsters/Draw Steel Monsters.md` | Annotated Monsters book source. Hand-maintained going forward; the initial annotation pass was bootstrapped by `scripts/annotate_monsters.pl` (by-heading-level: H2→monster group, H7→statblock, H9→featureblock/terrain). |
 | `internal/cli/*.go` | CLI commands: gen, validate, classify, strip, site |
-| `internal/content/registry.go` | Content parser registry (19 parsers) |
+| `internal/content/registry.go` | Content parser registry (24 parsers) |
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |
 | `internal/scc/registry.go` | SCC registry with freeze enforcement |
 | `internal/site/build.go` | Site builder: maps ETL output to MkDocs structure |
@@ -91,6 +92,14 @@ Kits and traits can embed child abilities as structured nested objects in JSON/Y
 Both patterns: the child ability is parsed by `AbilityParser`, stored in `ParsedContent.Children`, and embedded by the SDK transformer. The child ability also gets its own standalone output file when the pipeline walks the section tree.
 
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
+
+## Monsters book (statblocks)
+
+The Monsters book uses **H7 for statblocks and H9 for malice/terrain blocks** — heading levels goldmark doesn't parse (CommonMark caps at H6). `collectDeepHeadings` (`internal/parser/document.go`) captures these at level 6; **H8 is intentionally not collected** so retainer advancement sub-blocks fold into their parent statblock's body. Parsers: `monster` (group lore page + `category` context), `statblock`, `featureblock` (malice), `dynamic-terrain`, and the non-code `monster-group` container (`internal/content/monster.go`).
+
+SCC hierarchy (nested like treasure): a group is `monster.<category>/<category>` (lore page, `monster/<category>/<category>.md`); statblocks are `monster.<category>[.<subcategory>].statblock/<id>`; malice featureblocks are `monster.<category>[.<subcategory>]/<id>` (sibling of the `statblock/` folder). `<subcategory>` is an echelon (`1st-echelon`…) for Rivals/Demons/Undead/War Dogs whose statblock names repeat per echelon. Retainers are `retainer.statblock/<id>`; terrain is `dynamic-terrain.<category>/<id>`.
+
+Monster **group** pages are lore-only in Browse (the pipeline skips `RenderSubtree` for `@type: monster`, so reading-format generators fall back to the lore `Body`); the book-faithful everything-inline view lives on the Read tab's `chapter/monsters` page. `StatblockParser` parses the stat grid + embedded ability/trait blockquotes; `ParseStatblockFeatures` + `transformStatblock` build the SDK `statblock.schema.json` JSON with a `features[]` array.
 
 ## Architecture
 
