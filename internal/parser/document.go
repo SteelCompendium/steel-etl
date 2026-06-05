@@ -182,6 +182,12 @@ var deepHeadingRe = regexp.MustCompile(`^(#{7,})\s+(.+?)\s*$`)
 // maximum). The @type annotation — not the heading level — drives how each
 // section is processed, so capping the level is safe; nesting is resolved by the
 // section tree builder and classification walks ancestors for context.
+//
+// H8 (exactly 8 '#') is intentionally NOT collected: in the Monsters book H8 is
+// only ever a sub-detail of a statblock (e.g. retainer "Level N Advancement
+// Ability"), so leaving it uncollected folds it into its parent statblock's body
+// (matching the legacy output) instead of splitting it into a sibling section.
+// Statblocks are H7 and malice/terrain blocks are H9 — both peers at level 6.
 func collectDeepHeadings(source []byte) []*headingInfo {
 	lines := strings.Split(string(source), "\n")
 	var headings []*headingInfo
@@ -189,6 +195,9 @@ func collectDeepHeadings(source []byte) []*headingInfo {
 		m := deepHeadingRe.FindStringSubmatch(line)
 		if m == nil {
 			continue
+		}
+		if len(m[1]) == 8 {
+			continue // H8 sub-details fold into the parent statblock body
 		}
 		headings = append(headings, &headingInfo{
 			text:    strings.TrimSpace(m[2]),
