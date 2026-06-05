@@ -25425,7 +25425,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Roll Characteristic:** Might, Reason, or Intuition
 
-**Project Goal:** 450 **1st Level:** Any weapon ability that deals rolled damage using this weapon gains a +1 damage bonus. Additionally, you can change the damage type of such abilities to cold, fire, lightning, or sonic.
+**Project Goal:** 450 
+
+**1st Level:** Any weapon ability that deals rolled damage using this weapon gains a +1 damage bonus. Additionally, you can change the damage type of such abilities to cold, fire, lightning, or sonic.
 
 **5th Level:** The weapon's damage bonus increases to +2. Additionally, the weapon can be used with ranged weapon abilities, and returns to you when a ranged ability is resolved. Ranged abilities used with the weapon increase their distance by 3, and must deal cold, fire, lightning, or sonic damage (chosen when you use the ability).
 
