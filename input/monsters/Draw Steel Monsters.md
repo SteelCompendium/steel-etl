@@ -1351,6 +1351,7 @@ Additional rules cover a monster's characteristics and additional modifications 
 - If you want a monster's ability to target one additional target over what's expected, multiply the damage at all tiers by 0.8. If an ability targets two or more additional targets, multiply the damage by 0.5. If an ability targets one fewer target than expected, multiply the damage by 1.2.
 - Plenty more considerations regarding a monster's features and abilities go into creating a new monster. More robust guidance for making new monsters and abilities will appear in the future.
 
+<!-- @type: chapter | @id: monsters -->
 # Monsters
 
 ###### 1st-Echelon Monster Bands Table
@@ -11363,6 +11364,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Until the end of the encounter, all gnolls have a double edge on power rolls that target a winded enemy.
 
+<!-- @type: monster | @category: goblins -->
 ## Goblins
 
 Known among themselves as *rogabrin*, meaning "more of us" in their Szetch language, goblins are one of the most numerous humanoid species in the world. They can be found across many lands, have developed countless distinct cultures, and dare to venture into environments that few other humanoids are willing to hazard.
@@ -11373,6 +11375,7 @@ Their long arms and prehensile toes make goblins particularly well adapted to en
 
 Whether within a society or living in exile, goblins survive and thrive because they work together. A single goblin forced into the wild is terrified. A dozen outlaw goblins are supremely confident—perhaps overly so. Such groups often become bandits who ambush travelers crossing through their territory, be it desert, forest, or underground. Larger goblin hordes might become unscrupulous mercenaries serving powerful villains. No matter how they're encountered, goblins prefer to fight as an overwhelming force and to flee when foes outnumber friends.
 
+<!-- @type: featureblock -->
 ######### Goblin Malice (Malice Features)
 
 At the start of any goblin's turn, you can spend Malice to activate one of the following features.
@@ -11417,6 +11420,7 @@ Some goblins form a special bond with worgs—canine creatures raised by many go
 
 Most goblins speak Caelian and Szetch.
 
+<!-- @type: statblock -->
 ####### Goblin Runner
 
 | Goblin, Humanoid  |           -           |     Level 1      |               Minion Harrier                | EV 3 for four minions |
@@ -11441,6 +11445,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The runner doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Sniper
 
 | Goblin, Humanoid  |           -           |     Level 1      |                Minion Artillery                 | EV 3 for four minions |
@@ -11467,6 +11472,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The sniper doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Spinecleaver
 
 | Goblin, Humanoid  |           -           |     Level 1      |                  Minion Brute                  | EV 3 for four minions |
@@ -11491,6 +11497,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The spinecleaver doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Skitterling
 
 |  Animal, Goblin   |          -          |     Level 1      |             Minion Hexer              | EV 3 for four minions |
@@ -11513,6 +11520,7 @@ Most goblins speak Caelian and Szetch.
 >
 > **Effect:** The target takes a bane on their next strike.
 
+<!-- @type: statblock -->
 ####### Goblin Assassin
 
 | Goblin, Humanoid  |           -           |      Level 1      |    Horde Ambusher     |         EV 3         |
@@ -11555,6 +11563,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The assassin can attempt to hide even while observed.
 
+<!-- @type: statblock -->
 ####### Goblin Cursespitter
 
 | Goblin, Humanoid  |           -           |      Level 1      |      Horde Hexer      |         EV 3         |
@@ -11591,6 +11600,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The cursespitter doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Stinker
 
 | Goblin, Humanoid  |           -           |      Level 1      |   Horde Controller    |         EV 3         |
@@ -11625,6 +11635,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The stinker doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Underboss
 
 | Goblin, Humanoid  |           -           |      Level 1      |     Horde Support     |         EV 3         |
@@ -11661,6 +11672,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The underboss doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Warrior
 
 | Goblin, Humanoid  |           -           |      Level 1      |     Horde Harrier     |         EV 3         |
@@ -11697,6 +11709,7 @@ Most goblins speak Caelian and Szetch.
 >
 > The warrior doesn't provoke opportunity attacks by moving.
 
+<!-- @type: statblock -->
 ####### Goblin Monarch
 
 | Goblin, Humanoid  |           -           |      Level 1      |        Leader         |        EV 12         |
@@ -11769,6 +11782,7 @@ Most goblins speak Caelian and Szetch.
 >
 > **Effect:** Each enemy in the encounter takes 2 damage for each goblin adjacent to them.
 
+<!-- @type: statblock -->
 ####### War Spider
 
 |  Animal, Goblin   |           -           |      Level 1      |      Elite Mount      |        EV 12         |
@@ -11843,6 +11857,7 @@ Most goblins speak Caelian and Szetch.
 >
 > While riding the spider, two size 1 allies can occupy the same space.
 
+<!-- @type: statblock -->
 ####### Worg
 
 |  Animal, Goblin   |         -         |      Level 1      |      Horde Mount      |         EV 3         |
