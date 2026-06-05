@@ -23760,7 +23760,6 @@ other times, generous and well-off individuals such as monarchs and powerful mag
 
 Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
 
-<!-- @type: treasure | @id: what-does-this-treasure-do -->
 #### What Does This Treasure Do?
 
 When a hero finds a treasure, they learn its properties if they examine it for 5 uninterrupted minutes, unless the item's description says otherwise.
@@ -23769,7 +23768,6 @@ When a hero finds a treasure, they learn its properties if they examine it for 5
 >
 > Each treasure has an item prerequisite necessary for crafting it. The exact nature of many of the materials used as an item's prerequisite is left nebulous so that the Director can more easily work those materials into a campaign. What's a mindspider, and how rare is their silk? That's for the Director to decide, whether they want to drop prerequisite items into their planned adventures or craft an entire side quest around finding them.
 
-<!-- @type: treasure -->
 #### Wearing Treasures
 
 Many treasures, such as cloaks, jewelry, hats, and boots, must be worn. Unless the Director deems otherwise, these items supernaturally resize themselves to fit the creature using them.
@@ -23780,7 +23778,6 @@ Though body keywords indicate where a treasure is meant to be worn, treasures ca
 
 If a wearable treasure comes as a set, such as a pair of bracers, boots, or earrings, all items in the set must be worn to gain the treasure's benefits.
 
-<!-- @type: treasure -->
 #### Wielding Treasures
 
 Some treasures are wielded in the form of weapons or implements. A weapon might have the Light Weapon, Medium Weapon, or Heavy Weapon keywords, or might have a keyword denoting a specific category of weapon (Bow, Polearm, and so forth). An implement might have the Implement keyword or a keyword denoting the type of implement (Orb, Wand, and so forth). Armor is also considered a wielded treasure, with the Light Armor, Medium Armor, or Heavy Armor keywords, or the Shield keyword.
@@ -23795,12 +23792,10 @@ If your hero doesn't use a kit, they can't gain benefits from using armor or wea
 
 A weapon's damage bonus only adds to melee abilities if your kit has a melee damage bonus. A weapon's damage bonus only adds to ranged abilities if your kit has a ranged damage bonus.
 
-<!-- @type: treasure -->
 #### Magic and Psionic Treasures
 
 The Magic and Psionic keywords for treasures refer to how those treasures are created, not how they are used. Just as magic potions and swords aren't limited only to characters who wield magic themselves, the Magic and Psionic keywords don't restrict the use of treasures to only certain types of characters, so that an implement with the Magic keyword can be used to enhance abilities with the Psionic keyword, and vice versa. Treasures that have the Magic or Psionic keyword and are used to enhance an ability don't add those keywords to the ability.
 
-<!-- @type: treasure -->
 #### Stamina Bonuses and Damage Bonuses
 
 If two treasures give a creature a bonus to their Stamina or a bonus to the rolled damage of their abilities, only the higher bonus applies unless the treasure's description notes otherwise. Stamina bonuses and damage bonuses from consumables ignore this rule, and can be stacked with other Stamina bonuses and damage bonuses granted by treasures.
@@ -23831,11 +23826,12 @@ Your character can carry any number of consumables at a time.
 >
 > Negotiation rules, motivations, pitfalls, interest, and patience: Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation).
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 1 | @treasure-type: consumable -->
 #### 1st-Echelon Consumables
 
 This section presents 1st-echelon consumable treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Black Ash Dart
 
 *A diamond-shaped dart holds a shimmering black vial at its core.*
@@ -23856,6 +23852,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 - **12-16:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 4 squares.
 - **17+:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 6 squares.
 
+<!-- @type: treasure -->
 ##### Blood Essence Vial
 
 *A brittle glass tube has a ruby set atop it, attached by a hinge.*
@@ -23872,6 +23869,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Effect:** When you damage an adjacent creature who has blood, you can capture the target's life essence in this vial (no action required). Record the damage you dealt. You can capture life essence in the vial only once. As a maneuver, you drink the contents of the vial to regain Stamina equal to half the damage dealt. If you spend 1 Heroic Resource while you drink, you regain Stamina equal to the damage dealt. Once you drink from the vial, it crumbles to dust.
 
+<!-- @type: treasure -->
 ##### Buzz Balm
 
 *This cooling orange salve crackles and pops when exposed to the air.*
@@ -23888,6 +23886,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Effect:** As a maneuver, you rub the balm on your body and feel it tingle across your skin. You immediately end the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) conditions on yourself, and you gain a +2 bonus to speed until the start of your next turn.
 
+<!-- @type: treasure -->
 ##### Catapult Dust
 
 *A small leather pouch is filled with this fine blue powder.*
@@ -23904,6 +23903,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Effect:** Catapult Dust was developed as a cost-effective magic siege weapon. As a main action, you pour the dust out in an adjacent unoccupied space to fill an area as large as a 2 cube. At the start of your next turn, the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any unattended objects in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.
 
+<!-- @type: treasure -->
 ##### Giant's-Blood Flame
 
 *A small pot is filled with a viscous, ochre oil that smells of sulfur and burnt hair.*
@@ -23924,6 +23924,7 @@ Alternatively, you can use a maneuver to throw the pot up to 5 squares, coating 
 
 Any fire caused by the oil is extinguished after burning for 1 hour.
 
+<!-- @type: treasure -->
 ##### Growth Potion
 
 *This thick green liquid tastes of licorice and potatoes.*
@@ -23940,6 +23941,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Effect:** As a maneuver, you can drink this potion or pour it over an object of size 2 or smaller, causing the target's size to increase by 1(to a minimum size of 2). If you are the target, your Stamina maximum and Stability are doubled, you gain an edge on Might tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest characteristic score. You shrink back to your original size after 3 rounds, halving your current Stamina maximum and Stability, and losing the potion's other benefits. Objects maintain their new size permanently.
 
+<!-- @type: treasure -->
 ##### Healing Potion
 
 *Thick and red, this liquid tastes of sour beer.*
@@ -23956,6 +23958,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Effect:** When you drink this potion as a maneuver, you regain Stamina equal to your recovery value without spending a Recovery.
 
+<!-- @type: treasure -->
 ##### Imp's Tongue
 
 *The tongue of an imp has been dried and preserved. Yuck.*
@@ -23972,6 +23975,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Effect:** As a maneuver, you place the imp's tongue on your own tongue, causing it to reconstitute and attach itself to your tongue. While attached, the Imp's Tongue allows you to speak any language and understand any language spoken to you. This benefit ends after 1 hour, when the tongue is absorbed into your body.
 
+<!-- @type: treasure -->
 ##### Lachomp Tooth
 
 *A thumb-sized serrated tooth manages to scratch your flesh in some way whenever it is handled.*
@@ -23992,6 +23996,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 - **12-16:** You can affect up to three additional targets with this strike.
 - **17+:** You can affect up to seven additional targets with this strike.
 
+<!-- @type: treasure -->
 ##### Mirror Token
 
 *A gold-rimmed, mirror-faced coin trembles in the hand as if it were repelled by your touch.*
@@ -24008,6 +24013,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Effect:** While the Mirror Token is on your person and you are targeted by a ranged strike, you can use a triggered action to crush the token and ignore the strike. Half the damage you would have taken and any effects of the triggering strike are imposed on the creature making the strike.
 
+<!-- @type: treasure -->
 ##### Pocket Homunculus
 
 *A densely interlocking sphere of clockwork gears features facets that show the countenance of the item's wielder.*
@@ -24026,6 +24032,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 While you have line of effect to your homunculus, you can use a maneuver to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 Stamina.
 
+<!-- @type: treasure -->
 ##### Portable Cloud
 
 *This thin glass sphere holds a tiny roiling cloud.*
@@ -24050,6 +24057,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Item Prerequisite:** A spool of copper wire.
 
+<!-- @type: treasure -->
 ##### Professor Veratismo's Quaff 'n Huff Snuff
 
 *This tiny compact holds a colorless powder with the slightest astringent smell.*
@@ -24066,6 +24074,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Effect:** As a maneuver, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [restrained](scc:mcdm.heroes.v1/condition/restrained), or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an edge on Intuition and Presence tests made to convince the target to communicate, or to read the target's emotions. Any such creature has a double edge on the test if the target doesn't realize they've been affected by the snuff.
 
+<!-- @type: treasure -->
 ##### Snapdragon
 
 *This delicate orange blossom has a sickly-sweet smell.*
@@ -24082,11 +24091,12 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Effect:** As a maneuver, you sniff a magic snapdragon blossom, causing it to whither and making your movements more forceful and explosive. The next damage-dealing ability you use deals an extra 5 damage and gains a +2 bonus to the distance of any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) it imposes. If the ability does not impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), you can push each creature targeted by the ability up to 2 squares.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 2 | @treasure-type: consumable -->
 #### 2nd-Echelon Consumables
 
 This section presents 2nd-echelon consumable treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Breath of Dawn
 
 *A glass flask contains a whirl of gentle sunlight.*
@@ -24103,6 +24113,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** As a maneuver, you inhale the Breath of Dawn and are overcome with tranquility. You immediately end the [frightened](scc:mcdm.heroes.v1/condition/frightened), [slowed](scc:mcdm.heroes.v1/condition/slowed), and [taunted](scc:mcdm.heroes.v1/condition/taunted) conditions on yourself, and you gain a +8 bonus to Stability until the end of the encounter.
 
+<!-- @type: treasure -->
 ##### Bull Shot
 
 *Tiny chips of white bone float within this dark potion, which carries the scent of beef broth.*
@@ -24119,6 +24130,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** When you drink this potion as a maneuver, you sprout 3-foot sharpened horns from your forehead. Whenever you use the Charge main action, the target of your strike is gored upon your horns and [grabbed](scc:mcdm.heroes.v1/condition/grabbed). While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). You can also grab another creature with your limbs. The horns harmlessly fall off your head at the end of the encounter.
 
+<!-- @type: treasure -->
 ##### Chocolate of Immovability
 
 *This decadent-looking treat feels strangely heavy in the hand.*
@@ -24135,6 +24147,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 temporary Stamina and a +10 bonus to stability. Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any strikes against you take a bane until the start of your next turn. This effect and the bonus to stability lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the temporary Stamina lasts until the end of your next respite.
 
+<!-- @type: treasure -->
 ##### Concealment Potion
 
 *This dark, viscous liquid tastes like burnt leaves.*
@@ -24151,6 +24164,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** When you drink this potion as a maneuver, light shifts around your body, letting you blend into the environment around you for 10 minutes. While this effect is active, you have a double edge on tests made to hide and sneak, and you can use the Hide maneuver even while you are observed.
 
+<!-- @type: treasure -->
 ##### Float Powder
 
 *A glass vial holds translucent flakes that twinkle in the light.*
@@ -24167,6 +24181,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** Dousing yourself in this powder as a maneuver causes you to weightlessly float off the ground. For 1 hour, your stability is reduced to 0, and you can [fly](scc:mcdm.heroes.v1/movement/fly) and [hover](scc:mcdm.heroes.v1/movement/hover). Additionally, the hag that the powder is sourced from knows exactly where and when you use it.
 
+<!-- @type: treasure -->
 ##### Purified Jelly
 
 *This clear, pasty substance has a bitter aroma.*
@@ -24183,6 +24198,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Effect:** Consuming this potion as a maneuver causes your skin to shimmer and a set of tiny gills to appear on your neck or shoulders. For 1 hour, you can breathe in any environment, and you ignore the effects of harmful gases, vapors, and inhaled poisons.
 
+<!-- @type: treasure -->
 ##### Scroll of Resurrection
 
 *This scroll is marked by sigils of power, death, and life.*
@@ -24201,6 +24217,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 A creature with a willing soul returns to life at the end of the respite with full Stamina and half their Recoveries. You regain only half your Recoveries at the end of the respite, and the scroll is consumed.
 
+<!-- @type: treasure -->
 ##### Telemagnet
 
 *A short iron wand shaped of interlocking segments leaks greasy black oil from its joints.*
@@ -24223,6 +24240,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 
 If you pull a size 1T object adjacent to you, you can catch it. This treasure can affect any target within line of effect.
 
+<!-- @type: treasure -->
 ##### Vial of Ethereal Attack
 
 *Clear liquid seems to constantly churn within an obsidian vial, even when at rest.*
@@ -24239,11 +24257,12 @@ If you pull a size 1T object adjacent to you, you can catch it. This treasure ca
 
 **Effect:** As a maneuver, you throw this vial up to 10 squares, destroying the vial and creating a 2-cube ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a combat round or starts their turn there takes 10 psychic damage. At the start of each of your turns, you can move the vortex up to 5 squares (no action required).
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 3 | @treasure-type: consumable -->
 #### 3rd-Echelon Consumables
 
 This section presents 3rd-echelon consumable treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Anamorphic Larva
 
 *A cloudy glass vial holds a writhing monstrous grub.*
@@ -24262,6 +24281,7 @@ This section presents 3rd-echelon consumable treasures in alphabetical order.
 
 At the start of each of your turns, each creature adjacent to the wall takes psychic damage equal to three times their Intuition score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your turn, the larva dies and the wall disappears.
 
+<!-- @type: treasure -->
 ##### Bottled Paradox
 
 *Liquid constantly swirls within a cut glass bottle that is ice cold to the touch.*
@@ -24278,6 +24298,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** As a maneuver, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a test you made in the last minute, then reroll that test repeatedly until the outcome changes. If the potion is thrown, it creates a 3-cube area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.
 
+<!-- @type: treasure -->
 ##### G'Allios Visiting Card
 
 *A card bearing the Eighth City Advocacy Services crest smells faintly of smoke and spices.*
@@ -24294,6 +24315,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** Whenever you would take damage, you can use a triggered action to tear the card and summon a [devil](scc:mcdm.heroes.v1/ancestry/devil). You avoid the damage and any accompanying effects, and the [devil](scc:mcdm.heroes.v1/ancestry/devil) redirects the triggering effect to a target of their choice anywhere on the same manifold. You are treated to a clear vision of whoever suffers the damage. The [devil](scc:mcdm.heroes.v1/ancestry/devil) then disappears.
 
+<!-- @type: treasure -->
 ##### Personal Effigy
 
 *This tiny humanoid effigy appears unnervingly lifelike and is always warm to the touch.*
@@ -24310,6 +24332,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a maneuver to manually light and burn the effigy and bring the creature back to life. The creature returns to life with Stamina equal to their winded value and 10 temporary Stamina that lasts until the end of their next respite. If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.
 
+<!-- @type: treasure -->
 ##### Stygian Liquor
 
 *This muddy brown whiskey tastes of peat and death.*
@@ -24326,6 +24349,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** When you drink this potion as a maneuver, you gain a tenacious will to cling to life for 24 hours. If you are dying during this time, you don't die until you reach the negative of your Stamina maximum rather than your winded value. Additionally, while you are dying, you gain on edge on power rolls and you take half the damage dealt by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition. Once the potion's magic is triggered, it ends when you are no longer dying.
 
+<!-- @type: treasure -->
 ##### Timesplitter
 
 *This spiked crystal makes a beautiful ringing sound when first touched.*
@@ -24346,6 +24370,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 - **12-16:** The target and each creature within 5 squares of them is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 - **17+:** The target and each creature within 8 squares of them is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
+<!-- @type: treasure -->
 ##### Ward Token
 
 *This smoothly polished quartz stone feels strangely warm to the touch.*
@@ -24362,6 +24387,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** As a maneuver, you toss this stone above you and it shatters, showering you in dust. Until the end of the encounter, any enemy ability that targets you has a double bane.
 
+<!-- @type: treasure -->
 ##### Wellness Tonic
 
 *This thick purple liquid has a bitter scent that lingers.*
@@ -24378,11 +24404,12 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Effect:** When you drink this tonic as a maneuver, you feel a surge of physical and spiritual immunity. You can immediately end up to three conditions or effects affecting you. Additionally, until the start of your next turn, you can ignore any effect that would last until the end of your next turn or be ended by a saving throw.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 4 | @treasure-type: consumable -->
 #### 4th-Echelon Consumables
 
 This section presents 4th-echelon consumable treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Breath of Creation
 
 *A glass flask holds a roiling storm of astral plasma.*
@@ -24401,6 +24428,7 @@ This section presents 4th-echelon consumable treasures in alphabetical order.
 
 Each time you use another Breath of Creation, you can create a new demiplane or expand a demiplane you have already created or visited. The size of an expanded demiplane increases by 20, and you create a second portal to the demiplane with a corresponding portal inside.
 
+<!-- @type: treasure -->
 ##### Elixir of Saint Elspeth
 
 *This thick red liquid smells of cinnamon.*
@@ -24417,6 +24445,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 **Effect:** When you pour the elixir onto your forehead as a maneuver, it vanishes and you protect yourself against effects that might harm your body, mind, or soul. For a number of rounds equal to your current Victories, any enemy ability targeting you automatically obtains a tier 1 outcome against you. Additionally, the ability can only deal damage to you, letting you ignore its other effects.
 
+<!-- @type: treasure -->
 ##### Page From the Infinite Library: Solaris
 
 *This page is covered with writing and diagrams detailing the release of limitless energy—and the dangers of that process.*
@@ -24435,6 +24464,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Effect:** As a maneuver, you spend 1 Heroic Resource to destroy this page and create a 4-cube area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a combat round or starts their turn there takes 20 fire damage and is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their turn.
 
+<!-- @type: treasure -->
 ##### Restorative of the Bright Court
 
 *An ornately decorated golden vial smells of summer rain and subtle zesty fruits.*
@@ -24457,11 +24487,12 @@ Trinkets are treasures that can be used at will without a reduction in their pot
 
 Like consumables, trinket treasures are organized by echelon. You can carry any number of trinkets.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 1 | @treasure-type: trinket -->
 #### 1st-Echelon Trinkets
 
 This section presents 1st-echelon trinket treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Color Cloak (Blue)
 
 *This silky-blue hooded cloak is emblazoned with a golden Anjali sigil meaning "ice."*
@@ -24480,6 +24511,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 Additionally, when you are targeted by any effect that deals cold damage, you can use a triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your level. If you do so, the cold immunity granted by the cloak becomes cold weakness with the same value until the end of the next round. You can't use this triggered action again until this weakness ends.
 
+<!-- @type: treasure -->
 ##### Color Cloak (Red)
 
 *This red woolen hooded cloak is emblazoned with a golden Anjali sigil meaning "fire."*
@@ -24498,6 +24530,7 @@ Additionally, when you are targeted by any effect that deals cold damage, you ca
 
 Additionally, when you are targeted by any effect that deals fire damage, you can use a triggered action to reduce the damage to 0. If you do so, the fire immunity granted by this cloak becomes fire weakness with the same value until the end of the next round. You can't use this triggered action again until this weakness ends.
 
+<!-- @type: treasure -->
 ##### Color Cloak (Yellow)
 
 *This yellow rubbery hooded cloak is emblazoned with a golden Anjali sigil meaning "lightning."*
@@ -24516,6 +24549,7 @@ Additionally, when you are targeted by any effect that deals fire damage, you ca
 
 Additionally, when you are targeted by any effect that deals lightning damage, you can use a triggered action to cause the next damage-dealing ability you use to deal extra lightning damage equal to your level. Once you deal this extra damage, your lightning immunity becomes lightning weakness with the same value until the end of the next round. You can't use this triggered action again until this weakness ends.
 
+<!-- @type: treasure -->
 ##### Deadweight
 
 *Though this humanoid femur is coated in lead, it feels impossibly heavy for its size.*
@@ -24532,6 +24566,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Effect:** While holding the Deadweight, you fall twice as fast, taking an extra 1 damage for each square you fall (to a maximum of 75 total damage from a single fall). If you fall 5 or more squares this way, you can make a melee free strike as a free maneuver once during the fall before you hit the ground.
 
+<!-- @type: treasure -->
 ##### Displacing Replacement Bracer
 
 *A wooden bangle is etched with an ambigram sigil of the Zaliac word for "transfer."*
@@ -24548,6 +24583,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Effect:** As a maneuver, you transfer an object of size 1S or 1T held in one hand with another object of the same size that is within 10 squares. The objects change locations instantaneously and without creating any auditory or visual disturbance. If another creature is wearing or holding the object you transfer to your hand and they have I < 4, they fail to notice the transfer.
 
+<!-- @type: treasure -->
 ##### Divine Vine
 
 *A coil of emerald-green vines is topped with the jaws of an enormous Venus flytrap.*
@@ -24564,6 +24600,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Effect:** As a maneuver, you call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the Grab maneuver at a distance. If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).
 
+<!-- @type: treasure -->
 ##### Flameshade Gloves
 
 *These finely stitched gloves appear to flicker in and out of reality when first handled.*
@@ -24582,6 +24619,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard Might test made as a main action.
 
+<!-- @type: treasure -->
 ##### Gecko Gloves
 
 *These scaled gloves have palms and fingers covered in near-invisible sticky hairs.*
@@ -24598,6 +24636,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Effect:** While you wear these gloves, your grip is all but impossible to break. You can't be disarmed, you can't lose your grip while climbing unless you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you takes a bane on the test for the Escape Grab maneuver.
 
+<!-- @type: treasure -->
 ##### Hellcharger Helm
 
 *A steel helm is set with two curved ebony horns, a crackling plume of fire floating between them.*
@@ -24614,6 +24653,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Effect:** Whenever you use the Charge main action while wearing this helmet, you gain a +5 bonus to speed until the end of your current turn. After charging, you can use the Knockback maneuver as a free maneuver, regardless of the target creature's size.
 
+<!-- @type: treasure -->
 ##### Mask of the Many
 
 *A plain white mask is lined with soft black velvet—which smells faintly of blood.*
@@ -24630,6 +24670,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Effect:** While you wear this mask, you can use a maneuver to transform into any humanoid of equivalent size that you have previously seen. The humanoid's appearance reflects the last time you saw them, including whatever they were wearing. Your clothing and gear are transformed into the figure's clothing and gear, absorbed into your body, or retain their original forms, as you determine. If the figure possessed any treasures when you last saw them, they are duplicated as mundane copies while you are transformed.
 
+<!-- @type: treasure -->
 ##### Quantum Satchel
 
 *A woven metal drawstring seals this plain-looking leather bag, which is affixed with an opal brooch.*
@@ -24646,6 +24687,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Effect:** When the brooch is removed from this bag and placed in a container or room, it magically entangles that location to the bag. Any item that can be placed in the Quantum Satchel appears near to the brooch and can be recovered by reaching inside while picturing the desired object. The capacity of the satchel is dictated by the size of the container or room where the entangled brooch is. If an item is removed from the container or room containing the brooch, it can't be retrieved through the satchel.
 
+<!-- @type: treasure -->
 ##### Unbinder Boots
 
 *A pair of ornately embroidered leather boots are covered in images of broken chains.*
@@ -24662,11 +24704,12 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Effect:** These boots can temporarily unbind themselves from the chains of the earth, letting you move through the air as high as 3 squares above the ground from where you started. If you end your turn while you are still airborne, you fall.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 2 | @treasure-type: trinket -->
 #### 2nd-Echelon Trinkets
 
 This section presents 2nd-echelon trinket treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Bastion Belt
 
 *This thick leather belt features a bone clasp and feels unusually heavy when handled.*
@@ -24683,6 +24726,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** While worn, this belt grants you a +3 bonus to Stamina and a +1 bonus to Stability. This Stamina bonus adds to the Stamina bonus granted by other treasures.
 
+<!-- @type: treasure -->
 ##### Evilest Eye
 
 *A perfectly preserved eyeball hangs unnervingly from a gold chain.*
@@ -24699,6 +24743,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** As a maneuver, you target one enemy within 10 squares. You and each ally within 2 squares of the target each gain 1 surge.
 
+<!-- @type: treasure -->
 ##### Insightful Crown
 
 *Shaped of polished crystal, this shimmering circlet shifts through myriad colors in the presence of strong emotions.*
@@ -24715,6 +24760,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** While wearing the crown, you gain an edge on Intuition tests made to read the emotions and discern the honesty of other creatures. If you succeed on an Intuition test to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director's discretion, you might not be able to tap into the creature's deepest secrets this way.
 
+<!-- @type: treasure -->
 ##### Key of Inquiry
 
 *A foot-long platinum key is set with three opals.*
@@ -24731,6 +24777,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** As a maneuver, you touch the key to an adjacent willing, [grabbed](scc:mcdm.heroes.v1/condition/grabbed), or [restrained](scc:mcdm.heroes.v1/condition/restrained) creature and twist the key 90 degrees clockwise. That creature must answer the next three questions they are asked truthfully and fully. If twisted 90 degrees counterclockwise instead, the creature forgets the last 30 minutes they experienced. A creature affected by the key can't be affected again by any Key of Inquiry for 1 year. If the key is ever destroyed, all the memories it has erased are restored. Memories erased by the key can't be restored in any other way.
 
+<!-- @type: treasure -->
 ##### Mediator's Charm
 
 *A fancy gold earring is set with a small ruby.*
@@ -24747,6 +24794,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** While you wear the Mediator's Charm, the patience of any NPC you negotiate with increases by 1 (to a maximum of 5). Additionally, at the start of a negotiation, you learn one of an NPC's motivations or pitfalls of the Director's choice.
 
+<!-- @type: treasure -->
 ##### Necklace of the Bayou
 
 *A worn leather circlet bears a lizard-shaped pendant of rotting wood.*
@@ -24763,6 +24811,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** While you wear this necklace, you can breathe underwater, you can automatically swim at full speed while moving, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by water or in marsh and similar terrain.
 
+<!-- @type: treasure -->
 ##### Scannerstone
 
 *This flat, palm-sized triangular stone is decorated with a starfield of tiny gems.*
@@ -24779,6 +24828,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Effect:** When held against a wall or other solid surface 1 square thick or less, the Scannerstone creates an image floating in the air beside it that shows a rough miniature approximation of the space on the other side of the surface. The image displays floors, walls, and other barriers but doesn't show other objects. It shows representations of any moving creatures on the other side, but not creatures who are still.
 
+<!-- @type: treasure -->
 ##### Stop-'n-Go Coin
 
 *This small, featureless coin is solid green on one side and solid red on the other.*
@@ -24801,11 +24851,12 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 The coin must be picked up before it can be used again. If any creature picks up the coin, its effects immediately end.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 3 | @treasure-type: trinket -->
 #### 3rd-Echelon Trinkets
 
 This section presents 3rd-echelon trinket treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Bracers of Strife
 
 *Each of these metallic blue bracers is oversized.*
@@ -24822,6 +24873,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Effect:** While you wear them in combat, these bracers magically double the size of your hands and any melee weapons you wield, automatically compensating for the extra weight. You gain a +2 damage bonus for any weapon ability that deals rolled damage, and a +1 bonus to the distance you push any target with any weapon ability. This damage bonus adds to the damage bonus granted by other treasures.
 
+<!-- @type: treasure -->
 ##### Mask of Oversight
 
 *This angular electrum mask is set with an excess of eye holes and a horrifying maw.*
@@ -24840,6 +24892,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 While the eyes circle your head, you can use a maneuver to launch up to three of the eyes at one creature within 10 squares. Each eye you launch deals 5 damage to the target before it is destroyed. You can't reduce the number of eyes to fewer than two in this way. If you reduce the number of eyes to two, those eyes return to your head, and you can't use the mask again until you earn 1 or more Victories.
 
+<!-- @type: treasure -->
 ##### Mirage Band
 
 *A sable blue circlet shimmers with finely woven threads of sparkling white.*
@@ -24868,6 +24921,7 @@ Additionally, you have the following ability.
 >
 > **Effect:** Each target is covered by an illusion causing them to appear exactly as any creature (humanoid, animal, undead, and so forth) an observer most expects to see. The illusion ends for all targets if any creature under its effect harms or physically interacts with any creature not affected by the illusion, if you use this ability again, or if you choose to end the effect (no action required). The illusion also ends for any affected ally who moves more than the distance of this ability away from you.
 
+<!-- @type: treasure -->
 ##### Nullfield Resonator Ring
 
 *This simple band of copper vibrates slightly when handled.*
@@ -24902,6 +24956,7 @@ Additionally, you have the following ability.
 >
 > **Effect:** While [slowed](scc:mcdm.heroes.v1/condition/slowed) in this way, the target takes a bane on magic or psionic abilities.
 
+<!-- @type: treasure -->
 ##### Shifting Ring
 
 *This silvery metal ring seems to momentarily vanish when observed from certain angles.*
@@ -24918,11 +24973,12 @@ Additionally, you have the following ability.
 
 **Effect:** Once per turn, you can use a maneuver to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares. Additionally, when targeted by any other effect that causes you to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 additional squares.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @echelon: 4 | @treasure-type: trinket -->
 #### 4th-Echelon Trinkets
 
 This section presents 4th-echelon trinket treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Gravekeeper's Lantern
 
 *This ancient wooden lantern is inscribed with eldritch runes and stained with dark blood.*
@@ -24945,6 +25001,7 @@ This section presents 4th-echelon trinket treasures in alphabetical order.
 
 A trapped spirit remains in the lantern for 10 minutes. They remember being trapped by you, and might become hostile thereafter.
 
+<!-- @type: treasure -->
 ##### Psi Blade
 
 *This wide metal bracer is set with a glowing gemstone.*
@@ -24965,12 +25022,10 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 
 Like trinkets, leveled treasures can be used at will without a reduction in potency. However, leveled treasures tap into their wielder's will in a way that trinkets don't, becoming more powerful and increasing their capabilities as you gain new levels.
 
-<!-- @type: treasure -->
 #### Leveled Benefits
 
-Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/treasure/leveled-benefits) are cumulative.
+Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/treasures) are cumulative.
 
-<!-- @type: treasure -->
 #### Carry Three Safely
 
 Your connection with leveled treasures doesn't just make them useful. It also makes them dangerous. Each leveled treasure is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three leveled treasures at a time. If you carry more leveled treasures, those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
@@ -24985,11 +25040,12 @@ It's fine to own or possess more than three leveled treasures, as long as the ex
 >
 > Because you can carry up to three leveled treasures safely, it's easy to assume that your hero should always seek out and carry three such treasures. The truth is that many heroes find carrying just one or two leveled treasures a perfect thematic and mechanical fit, and have no real need for more. That's totally fine! You'll still be super powerful with just one leveled treasure, especially if you obtain or craft trinkets and consumables that might serve you better.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @treasure-type: armor -->
 #### Leveled Armor Treasures
 
-Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/treasure/leveled-armor-treasures) in alphabetical order.
+Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Adaptive Second Skin of Toxins
 
 *This suit is shaped of tough leather and set with thousands of tiny barbs on the inside, all thankfully pain-free to the touch.*
@@ -25010,6 +25066,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and an adjacent creature who deals damage to you takes 6 acid or poison damage. Additionally, you can use a maneuver to transmute a 2-cube area of liquid or gas adjacent to you into liquid acid or poison gas until the start of your next turn. Any creature who enters the area for the first time in a combat round or starts their turn there takes 6 acid or poison damage, as appropriate.
 
+<!-- @type: treasure -->
 ##### Chain of the Sea and Sky
 
 *This set of heavy chain mail is created to allow free movement in extreme environments without sacrificing protection.*
@@ -25030,6 +25087,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and you have cold immunity 10. Additionally, whenever your feet are not touching the ground (including floating in water or being in midair), you gain an edge on ability rolls, and any ability takes a bane when targeting you.
 
+<!-- @type: treasure -->
 ##### Grand Scarab
 
 *The blue-purple carapace and wings of a gigantic scarab beetle have been formed into an ornate breastplate.*
@@ -25050,6 +25108,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21. Additionally, if you [fly](scc:mcdm.heroes.v1/movement/fly) any distance before making a strike, that strike gains an edge.
 
+<!-- @type: treasure -->
 ##### King's Roar
 
 *A sunmetal kite shield bears the face of a lion on its front, its mouth opening wider over the course of battle.*
@@ -25070,6 +25129,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The shield's bonus to Stamina increases to +9. When you cause the shield to roar, you target one creature or object within 6 squares, you push that target up to 5 squares, and the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
 
+<!-- @type: treasure -->
 ##### Kuran'zoi Prismscale
 
 *Each scale of this iridescent armor shimmers with the faint image of a frozen moment of time.*
@@ -25090,6 +25150,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to speed that lasts until the end of your next turn.
 
+<!-- @type: treasure -->
 ##### Paper Trappings
 
 *This delicate robe is made from thousands of pages torn from books, intricately folded together without a single thread to bind them.*
@@ -25110,6 +25171,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the Escape Grab maneuver against you and when making strikes against you.
 
+<!-- @type: treasure -->
 ##### Shrouded Memory
 
 *This midnight-dark leather coat is embossed with fractal patterns that appear different each time they are observed.*
@@ -25130,6 +25192,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21. Whenever you use the armor's triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to the damage taken (minimum 5 squares). Additionally, if a creature dealt you the triggering damage, you become invisible to that creature until the end of your next turn.
 
+<!-- @type: treasure -->
 ##### Spiny Turtle
 
 *This heavy mechanized plate armor of gnomish make is designed to create its own cover on the battlefield.*
@@ -25150,6 +25213,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21. Additionally, spikes cover the armor, and any adjacent creature who deals damage to you takes 6 damage.
 
+<!-- @type: treasure -->
 ##### Star-Hunter
 
 *Shimmering light flows like liquid along this suit of crystalline armor.*
@@ -25170,6 +25234,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and you instinctively know the location of any creature with concealment within 10 squares. Your invisibility no longer ends when you use an ability, and you have psychic immunity 10.
 
+<!-- @type: treasure -->
 ##### Telekinetic Bulwark
 
 *An unseen force seems to draw this steel shield toward nearby creatures.* 
@@ -25190,11 +25255,12 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **9th Level:** The shield's bonus to Stamina increases to +9. Additionally, you can use a maneuver to pull any number of targets the shield has [grabbed](scc:mcdm.heroes.v1/condition/grabbed) up to 5 squares.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @treasure-type: implement -->
 #### Leveled Implement Treasures
 
-Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/treasure/leveled-implement-treasures) in alphabetical order.
+Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Abjurer's Bastion
 
 *An ornate ring is set with a large diamond that swirls with blue light, and whose inner surface is etched with protective runes.*
@@ -25215,6 +25281,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** The implement's damage bonus increases to +3. Whenever you deal rolled damage to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains temporary Stamina equal to your highest characteristic score. Additionally, the size of your field of protection increases to a 3 cube, and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
+<!-- @type: treasure -->
 ##### Brittlebreaker
 
 *This crystal wand thrums with power, yet is so thin and brittle that it feels as if even a slight squeeze will shatter it.*
@@ -25235,6 +25302,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** The implement's extra psychic damage increases to 4. Additionally, whenever you use a damage-dealing magic or psionic ability, you can take half as much total damage as is dealt to all targets to immediately use the same ability again. The damage you take can't be reduced in any way. You can't use this benefit more than once a turn.
 
+<!-- @type: treasure -->
 ##### Chaldorb
 
 *A perfectly clear sphere is embossed with fine ivory and crystal that is frigid to the touch.*
@@ -25255,6 +25323,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** The implement's damage bonus increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 aura around you that lasts until the start of your next turn. Each enemy who enters the aura for the first time in a combat round or starts their turn there takes 6 cold damage.
 
+<!-- @type: treasure -->
 ##### Ether-Fueled Vessel
 
 *This bronze bottle has been shaped into the form of a ghostly figure.*
@@ -25275,6 +25344,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** The implement's damage bonus increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make opportunity attacks against your allies while they remain insubstantial.
 
+<!-- @type: treasure -->
 ##### Foesense Lenses
 
 *These spectacles feature pink-tinted glass lenses held in a silver frame.*
@@ -25295,6 +25365,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** The implement's damage bonus increases to +3. Additionally, whenever you deal 30 or more rolled damage with a magic or psionic ability to a creature whose senses you are using, that creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
+<!-- @type: treasure -->
 ##### Words Become Wonders at Next Breath
 
 *This ornate [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) tome seems to sigh each time it is opened.*
@@ -25315,11 +25386,12 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on Reason tests made to recall lore, and when you use a heroic ability, its Heroic Resource cost is reduced by 1 (to a minimum of 1).
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @treasure-type: weapon -->
 #### Leveled Weapon Treasures
 
-For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/treasure/leveled-weapon-treasures) in alphabetical order.
+For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Authority's End
 
 *This long, sinuous chain is composed entirely of broken links held together by unseen power.*
@@ -25340,6 +25412,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's damage bonus increases to +3. Additionally, you no longer need to use a maneuver to end one effect when you damage a creature with the weapon. The weapon also refuses to vie for control of your psyche, and no longer counts against the limit of leveled treasures you can carry safely.
 
+<!-- @type: treasure -->
 ##### Blade of Quintessence
 
 *This crystal blade houses a stormy vortex of fire, ice, and lightning.*
@@ -25358,6 +25431,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's damage bonus increases to +3. Additionally, while you wield or carry the weapon, you have immunity 10 to cold, fire, lightning, and sonic damage.
 
+<!-- @type: treasure -->
 ##### Blade of the Luxurious Fop
 
 *Despite sporting an outrageously ornate hilt adorned with far too many jewels, this blade remains perfectly balanced.*
@@ -25378,6 +25452,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's damage bonus increases to +3. Additionally, you have a double edge on any test you make using a skill you have from the interpersonal skill group.
 
+<!-- @type: treasure -->
 ##### Displacer
 
 *This crystal battleaxe seems to pull at the hands that wield it, as if anxious to leap across the battlefield.*
@@ -25398,6 +25473,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra psychic damage increases to 3. Additionally, whenever you deal rolled damage to a creature, you can use a maneuver to trade places with that creature or any creature within 8 squares of them, provided you both fit into each other's spaces. Additionally, you can cause the creature you traded places with to be [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn, or you can spend a Recovery.
 
+<!-- @type: treasure -->
 ##### Executioner's Blade
 
 *This blade exudes a faint hum that grows louder as its quarry weakens.*
@@ -25418,6 +25494,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra psychic damage increases to 3, or to 6 if the target is winded. Additionally, you gain an edge on any ability using the weapon against a winded target.
 
+<!-- @type: treasure -->
 ##### Icemaker Maul
 
 *The head of this iron hammer is cold to the touch and encases whatever it strikes in a thin layer of ice.*
@@ -25438,6 +25515,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra cold damage increases to 3, and the ice field becomes a 5 burst. Additionally, any enemy in the ice field who is reduced to 0 Stamina by an ability using the weapon can be shattered, killing them and dealing 15 cold damage to each enemy within 3 squares of them.
 
+<!-- @type: treasure -->
 ##### Knife of Nine
 
 *This ivory dagger features nine faintly glowing indentations along the blade.*
@@ -25458,6 +25536,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** If you make a weapon strike using this weapon against a target after dropping down on them from a height of 2 squares or more, the attack deals an extra 10 psychic damage. You can distribute all extra psychic damage dealt by the attack between the target and any enemies adjacent to them.
 
+<!-- @type: treasure -->
 ##### Lance of the Sundered Star
 
 *This needlelike lance is cast of shimmering metal and induces a yearning for the skies in those who handle it.*
@@ -25478,6 +25557,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra holy damage increases to 3. Additionally, whenever the weapon is used with a weapon ability that allows you to push or slide a target, that [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can be vertical.
 
+<!-- @type: treasure -->
 ##### Molten Constrictor
 
 *This flexible black-iron net burns with the heat of a volcano.*
@@ -25498,6 +25578,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra fire damage increases to 3, and the damage taken by a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature attempting to escape increases to 15. Additionally, you can use a maneuver to make a free strike with another weapon against a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the net.
 
+<!-- @type: treasure -->
 ##### Onerous Bow
 
 *This mechanized bow is set with magical reservoirs that carry the faint tang of toxins.*
@@ -25518,6 +25599,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra poison damage increases to 3. Additionally, if you use an ability using the weapon that targets one creature and you don't have a bane or double bane on the ability, you can take a bane. Doing so lets you target another creature adjacent to the original target. Alternatively, you can have a double bane to target two creatures adjacent to the original target.
 
+<!-- @type: treasure -->
 ##### Steeltongue
 
 *This sinuous whip reflects all light off its plated steel surfaces.*
@@ -25538,6 +25620,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's bonus to melee distance increases to +3. Additionally, if you use a signature ability using the weapon that targets one or more [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creatures, you can use the same ability again immediately as a maneuver.
 
+<!-- @type: treasure -->
 ##### Third Eye Seeker
 
 *The [shifting](scc:mcdm.heroes.v1/movement/shifting) patterns on this bow's crystalline grip resemble dozens of blinking eyes.*
@@ -25556,6 +25639,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra psychic damage increases to 3. Additionally, you have a double edge on weapon abilities that use the weapon against creatures who have used a psionic ability since the end of your last turn.
 
+<!-- @type: treasure -->
 ##### Thunderhead Bident
 
 *This bident is made from two pieces of moon metal twisted together, and hums like a tuning fork.*
@@ -25576,6 +25660,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra sonic damage increases to 3, and it deals an extra 1 sonic damage for each square it travels as part of a ranged strike. Additionally, whenever you make a weapon strike using this weapon, each enemy adjacent to the target takes 6 sonic damage.
 
+<!-- @type: treasure -->
 ##### Wetwork
 
 *When first held, this naginata whispers the names of its past victims.*
@@ -25596,11 +25681,12 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **9th Level:** The weapon's extra psychic damage increases to 3. Additionally, if you reduce a creature to 0 Stamina using the weapon, you can use a maneuver to move up to your speed and make either a signature ability strike or a melee free strike.
 
-<!-- @type: treasure -->
+<!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/treasure/magic-and-psionic-treasures). This section presents other types of leveled treasures in alphabetical order.
+In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of leveled treasures in alphabetical order.
 
+<!-- @type: treasure -->
 ##### Bloodbound Band
 
 *This ring appears to be traced by dried blood, which returns each time it is rubbed away.*
@@ -25621,6 +25707,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **9th Level:** The ring's bonus to Stamina increases to +21. Additionally, if a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain Stamina equal to their winded value. Your ring then [teleports](scc:mcdm.heroes.v1/movement/teleport) into their possession and ceases to be magic.
 
+<!-- @type: treasure -->
 ##### Bloody Hand Wraps
 
 *These rough hand wraps are stained with blood that never comes clean.*
@@ -25641,6 +25728,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **9th Level:** The damage bonus granted by the hand wraps increases to +3. Additionally, once per turn, you can take 15 damage that can't be reduced in any way to use a signature ability (no action required). On your turn, you can use the wraps' signature ability option, melee free strike option, or Grab maneuver option, but only one.
 
+<!-- @type: treasure -->
 ##### Lightning Treads
 
 *Sparks strike from these boots whenever they touch the ground, increasing in number as the wearer gathers speed.*
@@ -25661,6 +25749,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **9th Level:** The extra lightning damage granted by the treads increases to 3, and your movement can increase that extra damage to a maximum of 6. Additionally, you can use a maneuver to perform a [flying](scc:mcdm.heroes.v1/movement/fly) lightning kick on one adjacent creature. That target is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.
 
+<!-- @type: treasure -->
 ##### Revenger's Wrap
 
 *When first handled, this tattered cloak fills the mind with thoughts of revenge.*
@@ -25681,6 +25770,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **9th Level:** When you have three or more creatures marked for revenge and you target one of them with an ability that targets only one creature, you target all the creatures marked for revenge, regardless of their distance from you and even if you don't have line of effect to them.
 
+<!-- @type: treasure -->
 ##### Thief of Joy
 
 *This burnished copper torque thrums with a sense of judgment.*
@@ -25703,12 +25793,14 @@ Whenever a creature within 10 squares of you deals damage to another creature, y
 
 **9th Level:** The torque's bonus to Stamina increases to five times your highest characteristic score. Additionally, you can have multiple instances of envy and disdain, with no limit on either.
 
+<!-- @type: treasure-group | @tier: artifact -->
 ### Artifacts
 
 Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building guidelines in *Draw Steel: Monsters* expect. That's part of the fun!
 
 Typically, one creature never holds onto an artifact for too long. Most of these treasures have a sentience of their own and an eagerness to move on. Since many powerful entities might want to get their hands on an artifact, characters might see armies, dragons, and even gods come to collect one from a wielder who refuses to let go.
 
+<!-- @type: treasure -->
 ##### Blade of a Thousand Years
 
 *This fabled sword features a hilt made of glittering starlight, out of which its gleaming metal blade extends.*
@@ -25729,6 +25821,7 @@ Though its size and make are often debated, the sword is consistently described 
 
 **Soul of the Martyr:** If the wielder dies while holding this blade, their soul is drawn into the starlight hilt, where it remains for the rest of time to prevent any chance of resurrection. The sword disappears, but the lingering feeling of hope that spreads from it remains. For the next hour, the effects of Rally the Righteous increase to provide a double edge on weapon abilities and magic abilities, damage immunity 10, an increase to Stamina maximum of 30, and a bonus to Stamina of +30.
 
+<!-- @type: treasure -->
 ##### Encepter
 
 *A bejeweled scepter with a spiraling porcelain handle balances an orb of light above its crown.*
@@ -25749,6 +25842,7 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 
 **At World's End:** If the Encepter was not taken from its cyclonic resting place with the purpose of vanquishing a terrible peril, then a terrible peril emerges to threaten the world within 3 days of the scepter being taken.
 
+<!-- @type: treasure -->
 ##### Mortal Coil
 
 *This floating helix of golden metal spins ever faster as it activates, crackling with crimson sparks.*

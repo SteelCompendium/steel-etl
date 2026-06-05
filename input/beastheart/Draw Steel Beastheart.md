@@ -2523,6 +2523,7 @@ The following sections provide new trinkets and leveled treasures for a beasthea
 
 This section presents new trinket treasures for a beastheart and their companion in order of echelon.
 
+<!-- @type: treasure-group | @echelon: 1 | @treasure-type: trinket -->
 ### 1st-Echelon Trinkets
 
 This section presents 1st-echelon trinket treasures in alphabetical order.
@@ -2574,6 +2575,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Effect:** Only a beastheart's companion or an animal can wear this necklace. While wearing this necklace, the creature's Reason score is 0 unless it would otherwise be higher. The creature can speak any language they know, and another creature who knows a language can teach that language to the creature as a respite activity. When the creature speaks, their voice issues from the scarab on the necklace.
 
+<!-- @type: treasure-group | @echelon: 2 | @treasure-type: trinket -->
 ### 2nd-Echelon Trinket
 
 This section presents a 2nd-echelon trinket treasure.
@@ -2595,6 +2597,7 @@ This section presents a 2nd-echelon trinket treasure.
 
 **Effect:** You must be a beastheart to wear this necklace. While wearing this necklace, you can use a free maneuver and spend 1 ferocity during combat to shapeshift into a hybrid form that grants you your companion's physical characteristics. Your hybrid form lasts until the end of the encounter or you revert to your true form as a free maneuver. While in hybrid form, you can use abilities with the Companion keyword, your speed increases to your companion's speed (if it is higher), and you gain your companion's movement types and damage immunities.
 
+<!-- @type: treasure-group | @echelon: 3 | @treasure-type: trinket -->
 ### 3rd-Echelon Trinket
 
 This section presents a 3rd-echelon trinket treasure.
@@ -2612,6 +2615,7 @@ This section presents a 3rd-echelon trinket treasure.
 
 **Effect:** Only a beastheart's companion or an animal can wear this bandanna. While wearing this bandanna, the creature is invisible. When the creature uses an ability that deals damage, they become visible until the start of their next turn.
 
+<!-- @type: treasure-group | @echelon: 4 | @treasure-type: trinket -->
 ### 4th-Echelon Trinket
 
 This section presents a 4th-echelon trinket treasure.
@@ -2635,6 +2639,7 @@ This section presents a 4th-echelon trinket treasure.
 
 This section presents new leveled treasures for a beastheart and their companion.
 
+<!-- @type: treasure-group | @treasure-type: armor -->
 ### Leveled Armor Treasures
 
 The following leveled armor treasures are presented in alphabetical order.
@@ -2715,6 +2720,7 @@ The following leveled armor treasures are presented in alphabetical order.
 
 **9th Level:** The armor's bonus to Stamina increases to +21, and whenever you or your companion pulls a creature with thorned vines using the armor, the target also takes 5 damage and is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by whoever force moved them.
 
+<!-- @type: treasure-group | @treasure-type: weapon -->
 ### Leveled Weapon Treasures
 
 The following leveled weapon treasures are presented in alphabetical order.
