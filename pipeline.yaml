@@ -74,7 +74,7 @@ parsers:
 
 books:
   - book: mcdm.monsters.v1
-    input: ../data-gen/input/monsters/Draw Steel Monsters.md
+    input: ./input/monsters/Draw Steel Monsters.md
     output:
       base_dir: ../data/data-bestiary
   - book: mcdm.beastheart.v1

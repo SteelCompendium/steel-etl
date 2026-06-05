@@ -21,6 +21,8 @@ func TransformToSDKFormat(sccCode string, parsed *content.ParsedContent) map[str
 		return transformTrait(sccCode, parsed)
 	case "kit":
 		return transformKit(sccCode, parsed)
+	case "statblock":
+		return transformStatblock(sccCode, parsed)
 	default:
 		return transformPassthrough(parsed)
 	}

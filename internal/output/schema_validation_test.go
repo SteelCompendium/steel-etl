@@ -77,6 +77,14 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"flavor": true, "benefit": true, "drawback": true,
 		"content": true, "metadata": true,
 	},
+	"statblock": {
+		"name": true, "type": true, "level": true, "role": true,
+		"organization": true, "keywords": true, "ev": true, "stamina": true,
+		"immunities": true, "weaknesses": true, "speed": true, "movement": true,
+		"size": true, "stability": true, "free_strike": true,
+		"might": true, "agility": true, "reason": true, "intuition": true, "presence": true,
+		"with_captain": true, "features": true, "metadata": true,
+	},
 }
 
 // --- Required field tests ---
@@ -205,6 +213,17 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 				"benefit": "You know the underworld", "drawback": "The law watches you",
 			},
 			"You have a criminal past that may catch up with you.",
+		},
+		{
+			"statblock with stats and a feature",
+			map[string]any{
+				"name": "Goblin Warrior", "type": "statblock", "level": 1,
+				"role": "Brute", "organization": "Minion", "ev": "1",
+				"keywords": []string{"Goblin"}, "stamina": "5", "speed": 5,
+				"size": "1S", "stability": 0, "free_strike": 2,
+				"might": 2, "agility": 1, "reason": 0, "intuition": 0, "presence": 0,
+			},
+			"> ⭐️ **Tough**\n>\n> Hardy.\n",
 		},
 	}
 
