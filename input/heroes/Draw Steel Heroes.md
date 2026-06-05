@@ -25024,7 +25024,7 @@ Like trinkets, leveled treasures can be used at will without a reduction in pote
 
 #### Leveled Benefits
 
-Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/treasure/leveled-benefits) are cumulative.
+Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/treasures) are cumulative.
 
 #### Carry Three Safely
 
@@ -25043,7 +25043,7 @@ It's fine to own or possess more than three leveled treasures, as long as the ex
 <!-- @type: treasure-group | @treasure-type: armor -->
 #### Leveled Armor Treasures
 
-Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/treasure/leveled-armor-treasures) in alphabetical order.
+Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Adaptive Second Skin of Toxins
@@ -25258,7 +25258,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 <!-- @type: treasure-group | @treasure-type: implement -->
 #### Leveled Implement Treasures
 
-Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/treasure/leveled-implement-treasures) in alphabetical order.
+Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Abjurer's Bastion
@@ -25389,7 +25389,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 <!-- @type: treasure-group | @treasure-type: weapon -->
 #### Leveled Weapon Treasures
 
-For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/treasure/leveled-weapon-treasures) in alphabetical order.
+For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Authority's End
@@ -25684,7 +25684,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 <!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/treasure/magic-and-psionic-treasures). This section presents other types of leveled treasures in alphabetical order.
+In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of leveled treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bloodbound Band
