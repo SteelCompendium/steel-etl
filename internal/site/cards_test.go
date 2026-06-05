@@ -266,9 +266,13 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	if !strings.Contains(content, "sc-card__tags") {
 		t.Errorf("expected keyword tags, got:\n%s", content)
 	}
-	// Flavor is the first prose line, shown in full (no effect blurb).
+	// Flavor is the first prose line, shown in full (no effect blurb), with the
+	// fixed-height clamp class so cards stay the same height.
 	if !strings.Contains(content, "A dart of compressed black ash.") {
 		t.Errorf("expected flavor line, got:\n%s", content)
+	}
+	if !strings.Contains(content, "sc-card__flavor--clamp") {
+		t.Errorf("expected fixed-height flavor clamp class, got:\n%s", content)
 	}
 	// Project goal & roll characteristic become stat sub-cards.
 	if !strings.Contains(content, "Project Goal") || !strings.Contains(content, ">45<") {
@@ -280,6 +284,25 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	// Item prerequisite & project source become wrapping label lines.
 	if !strings.Contains(content, "A pinch of black ash") || !strings.Contains(content, "Texts in Caelian") {
 		t.Errorf("expected prerequisite/source lines, got:\n%s", content)
+	}
+}
+
+func TestGoalStat(t *testing.T) {
+	cases := []struct {
+		in, wantDisplay, wantTooltip string
+	}{
+		{"45", "45", ""},   // plain number → no tooltip
+		{"450", "450", ""}, // multi-digit plain
+		{"45 (yields 1d3 darts)", "45*", "45 (yields 1d3 darts)"}, // parenthetical → abbreviated + tooltip
+		{"30 or 45 (see below)", "30*", "30 or 45 (see below)"},   // extra text after the leading number
+		{"450 1st Level: ...", "450*", "450 1st Level: ..."},      // trailing prose (data quirk)
+		{"see entry", "see entry", ""},                            // no leading number → passthrough
+	}
+	for _, c := range cases {
+		gotD, gotT := goalStat(c.in)
+		if gotD != c.wantDisplay || gotT != c.wantTooltip {
+			t.Errorf("goalStat(%q) = (%q, %q), want (%q, %q)", c.in, gotD, gotT, c.wantDisplay, c.wantTooltip)
+		}
 	}
 }
 

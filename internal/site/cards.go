@@ -260,22 +260,24 @@ func treasureCard(fm, body, file, name string) string {
 	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
 		inner += tagsBlock(kw)
 	}
-	// Flavor: the first prose paragraph (the italic descriptor). Shown in full —
-	// these are a single short sentence, so no truncation/overflow clamp.
+	// Flavor: the first prose paragraph (the italic descriptor), shown in full (no
+	// truncation). The --clamp modifier reserves a fixed 3-line height so a 1-line
+	// and a 3-line descriptor still produce the same card height.
 	if f := firstProse(body); f != "" {
-		inner += flavorDiv(f, 0)
+		inner += "  <div class=\"sc-card__flavor sc-card__flavor--clamp\">" + html.EscapeString(f) + "</div>\n"
 	}
 	// Project goal & roll characteristic are short, fixed values — render them as
 	// stat sub-cards (the kit-card treatment). They live as "**Label:**" lines in
 	// the body; the parser doesn't lift them into frontmatter.
-	var stats [][3]string
+	var stats []statCell
 	if v := bodyLabeledLine(body, "Project Goal"); v != "" {
-		stats = append(stats, [3]string{stripMD(v), "Project Goal", ""})
+		disp, tip := goalStat(stripMD(v))
+		stats = append(stats, statCell{val: disp, label: "Project Goal", title: tip})
 	}
 	if v := bodyLabeledLine(body, "Project Roll Characteristic"); v != "" {
-		stats = append(stats, [3]string{stripMD(v), "Roll Characteristic", ""})
+		stats = append(stats, statCell{val: stripMD(v), label: "Roll Characteristic"})
 	}
-	inner += statsBlock(stats)
+	inner += statsCells(stats)
 	// Item prerequisite & project source are free text — wrapping label lines
 	// (the Career card's skill/perk treatment).
 	if v := bodyLabeledLine(body, "Item Prerequisite"); v != "" {
@@ -404,24 +406,46 @@ func sigBlock(sigType, sigName string) string {
 		"<span class=\"sc-card__sig-name\">%s</span></div>\n", sigType, html.EscapeString(sigName))
 }
 
+// statCell is one cell of a stat grid: value, label, an optional extra class on
+// the cell, and an optional native tooltip (title attr) on the value.
+type statCell struct {
+	val, label, cls, title string
+}
+
 // statsBlock renders an N-column stat grid. Each entry is {value, label, extraClass}.
 func statsBlock(stats [][3]string) string {
-	if len(stats) == 0 {
+	cells := make([]statCell, len(stats))
+	for i, s := range stats {
+		cells[i] = statCell{val: s[0], label: s[1], cls: s[2]}
+	}
+	return statsCells(cells)
+}
+
+// statsCells is the underlying stat-grid renderer (statsBlock is the [][3]string
+// shorthand). A cell with a non-empty title gets a native hover tooltip on its
+// value; that value is also raised above the card's stretched-link overlay (the
+// .has-tip class) so the tooltip is reachable.
+func statsCells(cells []statCell) string {
+	if len(cells) == 0 {
 		return ""
 	}
 	var sb strings.Builder
-	fmt.Fprintf(&sb, "  <div class=\"sc-card__stats\" style=\"grid-template-columns:repeat(%d,1fr)\">\n", len(stats))
-	for _, s := range stats {
+	fmt.Fprintf(&sb, "  <div class=\"sc-card__stats\" style=\"grid-template-columns:repeat(%d,1fr)\">\n", len(cells))
+	for _, c := range cells {
 		cls := "sc-card__stat"
 		style := ""
-		if s[2] != "" {
-			cls += " " + s[2]
+		if c.cls != "" {
+			cls += " " + c.cls
 		}
-		if len([]rune(s[0])) > 4 { // long values (e.g. +1/+1/+1) need a smaller face
+		if len([]rune(c.val)) > 4 { // long values (e.g. +1/+1/+1) need a smaller face
 			style = " style=\"font-size:.72rem\""
 		}
-		fmt.Fprintf(&sb, "    <div class=\"%s\"><div class=\"v\"%s>%s</div><div class=\"l\">%s</div></div>\n",
-			cls, style, html.EscapeString(s[0]), html.EscapeString(s[1]))
+		vcls, title := "v", ""
+		if c.title != "" {
+			vcls, title = "v has-tip", " title=\""+html.EscapeString(c.title)+"\""
+		}
+		fmt.Fprintf(&sb, "    <div class=\"%s\"><div class=\"%s\"%s%s>%s</div><div class=\"l\">%s</div></div>\n",
+			cls, vcls, style, title, html.EscapeString(c.val), html.EscapeString(c.label))
 	}
 	sb.WriteString("  </div>\n")
 	return sb.String()
@@ -759,6 +783,22 @@ func careerLanguageCount(s string) string {
 		}
 	}
 	return s
+}
+
+// leadingNum matches the leading run of digits in a string.
+var leadingNum = regexp.MustCompile(`^\d+`)
+
+// goalStat reduces a Project Goal value to its leading number for the stat box.
+// A goal with extra detail (e.g. "45 (yields 1d3 darts)") renders as "45*" with
+// the full text as the value's hover tooltip; a plain number renders as-is with
+// no tooltip.
+func goalStat(goal string) (display, tooltip string) {
+	goal = strings.TrimSpace(goal)
+	num := leadingNum.FindString(goal)
+	if num == "" || num == goal {
+		return goal, ""
+	}
+	return num + "*", goal
 }
 
 // bodyLabeledLine returns the inline-markdown value following a "**Label:**"
