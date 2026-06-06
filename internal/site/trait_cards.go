@@ -60,6 +60,17 @@ type traitNode struct {
 	children  []*traitNode
 }
 
+// traitGlyph is the DrawSteelGlyphs codepoint for the trait crest — a
+// PLACEHOLDER (mirrors ACTIONS.trait.glyph in steel-feature-browser.js), swapped
+// here in one place when the official trait glyph lands.
+const traitGlyph = "*"
+
+// traitCrest renders the steel-shield crest shared by full + preview trait cards
+// (the glyph is tinted with the trait accent via CSS).
+func traitCrest() string {
+	return `<span class="sc-crest sc-trait__crest"><span class="sc-trait__glyph">` + traitGlyph + "</span></span>\n"
+}
+
 // renderTraitCard builds the contiguous (no blank-line) `.sc-trait` HTML for a
 // `type: trait` page so md_in_html passes it through verbatim.
 func renderTraitCard(fm, body string) string {
@@ -74,30 +85,66 @@ func renderTraitCard(fm, body string) string {
 
 	bodyHTML, leadProse := renderTraitBody(intro, children)
 
-	cls := "sc-trait"
+	cls := "sc-trait sc-trait--crest"
 	if leadProse {
 		cls += " sc-trait--lead" // engraved drop-cap on the opening paragraph
 	}
 
-	return wrapTraitSection(cls, eyebrow, name, tag, bodyHTML)
+	// Stash the sub-feature count (and single-grant phrase) on the root so the
+	// index preview can show "N options" / "Grants the X maneuver" without
+	// re-parsing the rendered tree.
+	return wrapTraitSection(cls, traitFeatureAttrs(children), traitCrest(), eyebrow, name, tag, bodyHTML)
 }
 
-// renderTraitNode renders a nested sub-trait (no eyebrow, no drop cap; its level
-// pill is derived from the scc). Recurses through its own children.
+// renderTraitNode renders a nested sub-trait (no eyebrow, no crest, no drop cap;
+// its level pill is derived from the scc). Recurses through its own children.
 func renderTraitNode(n *traitNode) string {
 	intro, _ := parseTraitTree(n.content) // sub-headings already split into n.children
 	bodyHTML, _ := renderTraitBody(intro, n.children)
 	tag := traitTag("", n.scc)
-	return wrapTraitSection("sc-trait", "", strings.TrimSpace(n.name), tag, bodyHTML)
+	return wrapTraitSection("sc-trait", "", "", "", strings.TrimSpace(n.name), tag, bodyHTML)
+}
+
+// traitFeatureAttrs returns the data-* attributes describing a trait's direct
+// sub-features (its choice/option headings): data-sub="N" always, plus
+// data-grant="the <Name> <action>" when it grants exactly one ability.
+func traitFeatureAttrs(children []*traitNode) string {
+	if len(children) == 0 {
+		return ""
+	}
+	attrs := fmt.Sprintf(" data-sub=\"%d\"", len(children))
+	if len(children) == 1 && children[0].isAbility {
+		attrs += fmt.Sprintf(" data-grant=\"%s\"", html.EscapeString(singleGrantPhrase(children[0])))
+	}
+	return attrs
+}
+
+// singleGrantPhrase builds "the <Name> <action-type>" for a trait that grants a
+// single ability, reading the action from the ability's 2×2 spec table.
+func singleGrantPhrase(child *traitNode) string {
+	label := "ability"
+	for _, p := range paraSplitRe.Split(child.content, -1) {
+		if strings.HasPrefix(strings.TrimSpace(p), "|") {
+			if _, act, _, _ := parseAbilityTable(p); act != "" {
+				label = strings.ToLower(actionInfo(act, "ability").label)
+			}
+			break
+		}
+	}
+	return "the " + strings.TrimSpace(child.name) + " " + label
 }
 
 // wrapTraitSection assembles one <section class="sc-trait …"> with header +
-// body, as a single contiguous block (no blank lines).
-func wrapTraitSection(cls, eyebrow, name, tag, bodyHTML string) string {
+// body, as a single contiguous block (no blank lines). attrs are extra section
+// attributes (e.g. data-sub); crest is the optional crest HTML.
+func wrapTraitSection(cls, attrs, crest, eyebrow, name, tag, bodyHTML string) string {
 	dia := `<span class="sc-trait__dia"></span>`
 	var b strings.Builder
-	fmt.Fprintf(&b, "<section class=\"%s\" data-action=\"trait\">\n", cls)
+	fmt.Fprintf(&b, "<section class=\"%s\" data-action=\"trait\"%s>\n", cls, attrs)
 	b.WriteString("<header class=\"sc-trait__head\">\n")
+	if crest != "" {
+		b.WriteString(crest)
+	}
 	b.WriteString("<div class=\"sc-trait__titles\">\n")
 	if eyebrow != "" {
 		fmt.Fprintf(&b, "<div class=\"sc-trait__eyebrow\">%s%s</div>\n", dia, html.EscapeString(eyebrow))
@@ -280,14 +327,22 @@ func synthAbilityFM(name string, signature bool) string {
 	return fm
 }
 
-// traitEyebrow is the class/ancestry/kit context line (small-caps), title-cased.
+// traitEyebrow is the source context line: "<Class> Trait" (small-caps),
+// optionally suffixed with the subclass when present (e.g. an order/domain).
+// The level lives in the right-hand tag, so it is not duplicated here.
 func traitEyebrow(fm string) string {
+	source := ""
 	for _, key := range []string{"class", "ancestry", "kit"} {
 		if v := strings.TrimSpace(parseFrontmatterField(fm, key)); v != "" {
-			return titleCase(strings.ReplaceAll(v, "-", " "))
+			source = titleCase(strings.ReplaceAll(v, "-", " "))
+			break
 		}
 	}
-	return ""
+	label := strings.TrimSpace(source + " Trait")
+	if sub := strings.TrimSpace(parseFrontmatterField(fm, "subclass")); sub != "" {
+		label += " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
+	}
+	return label
 }
 
 var sccLevelRe = regexp.MustCompile(`level-(\d+)`)

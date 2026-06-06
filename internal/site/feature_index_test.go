@@ -21,18 +21,14 @@ func abilityLeaf(name, action, cost string) string {
 	return fm
 }
 
-// traitLeaf is a trait leaf whose body is the rendered .sc-trait card carrying a
-// lead-in and (optionally) a nested ability plate.
-func traitLeaf(name string, withAbility bool) string {
-	body := "<section class=\"sc-trait\" data-action=\"trait\">\n" +
-		"<p class=\"sc-trait__leadin\"><span class=\"sc-trait__dia\"></span>You pass judgment on a foe.</p>\n"
-	if withAbility {
-		body += "<div class=\"sc-trait__nest\">\n" +
-			"<article class=\"sc-ability sc-fil\" data-action=\"maneuver\">\n" +
-			"<div class=\"sc-ability__eyebrow\"><span class=\"sc-ability__dia\"></span>Maneuver</div>\n" +
-			"<h3 class=\"sc-ability__name\">Judgment</h3>\n</article>\n</div>\n"
-	}
-	body += "</section>\n"
+// traitLeaf is a trait leaf whose body is the rendered .sc-trait card. attrs are
+// the data-* markers trait_cards.go stamps on the root (data-sub / data-grant).
+func traitLeaf(name, attrs string) string {
+	body := "<section class=\"sc-trait sc-trait--crest\" data-action=\"trait\"" + attrs + ">\n" +
+		"<header class=\"sc-trait__head\"></header>\n" +
+		"<div class=\"sc-trait__body\">\n" +
+		"<p class=\"sc-trait__leadin\"><span class=\"sc-trait__dia\"></span>You pass judgment on a foe.</p>\n" +
+		"</div>\n</section>\n"
 	return "---\nname: " + name + "\ntype: trait\nclass: censor\nlevel: \"1\"\n---\n\n" + body
 }
 
@@ -96,15 +92,18 @@ func TestExtractPreviewItem_AbilityNumericCost(t *testing.T) {
 	}
 }
 
-func TestExtractPreviewItem_Trait(t *testing.T) {
-	fm, body := splitFrontmatter(traitLeaf("Judgment", true))
+func TestExtractPreviewItem_Trait_SingleGrant(t *testing.T) {
+	fm, body := splitFrontmatter(traitLeaf("Judgment", ` data-sub="1" data-grant="the Judgment maneuver"`))
 	it := extractPreviewItem(fm, body, "trait", "Censor")
 
-	if it.Action != "maneuver" {
-		t.Errorf("trait action=%q want maneuver (from nested ability)", it.Action)
+	if it.Action != "trait" {
+		t.Errorf("trait action=%q want trait (unified accent)", it.Action)
 	}
 	if it.Grants != "the Judgment maneuver" {
 		t.Errorf("grants=%q want 'the Judgment maneuver'", it.Grants)
+	}
+	if it.Source != "class" || it.Klass != "Censor" {
+		t.Errorf("source/klass = %q / %q want class / Censor", it.Source, it.Klass)
 	}
 	if it.Flavor != "You pass judgment on a foe." {
 		t.Errorf("flavor=%q", it.Flavor)
@@ -114,12 +113,12 @@ func TestExtractPreviewItem_Trait(t *testing.T) {
 	html := renderPrevCard(it, false)
 	for _, want := range []string{
 		`class="sc-prev sc-prev--trait sc-fil"`,
-		`data-action="maneuver"`,
-		`<div class="sc-prev__eyebrow"><span class="sc-prev__dia"></span>Censor</div>`,
+		`data-action="trait"`,
+		`<span class="sc-crest sc-prev__crest"><span class="sc-prev__glyph">*</span></span>`,
+		`<div class="sc-prev__eyebrow"><span class="sc-prev__dia"></span>Censor Trait</div>`,
 		`<h3 class="sc-prev__name">Judgment</h3>`,
 		`<div class="sc-prev__tag">Level <span class="num">1</span></div>`,
 		`Grants the Judgment maneuver`,
-		`You pass judgment on a foe.`,
 	} {
 		if !strings.Contains(html, want) {
 			t.Errorf("trait preview missing %q\n%s", want, html)
@@ -127,18 +126,57 @@ func TestExtractPreviewItem_Trait(t *testing.T) {
 	}
 }
 
-func TestExtractPreviewItem_TraitNoAbility(t *testing.T) {
-	fm, body := splitFrontmatter(traitLeaf("Inner Light", false))
+func TestExtractPreviewItem_Trait_OptionCount(t *testing.T) {
+	fm, body := splitFrontmatter(traitLeaf("Censor Abilities", ` data-sub="12"`))
 	it := extractPreviewItem(fm, body, "trait", "Censor")
-	if it.Action != "trait" {
-		t.Errorf("action=%q want trait", it.Action)
-	}
-	if it.Grants != "" {
-		t.Errorf("grants=%q want empty", it.Grants)
+	if it.Grants != "" || it.Options != 12 {
+		t.Fatalf("grants/options = %q / %d want '' / 12", it.Grants, it.Options)
 	}
 	html := renderPrevCard(it, false)
-	if strings.Contains(html, "sc-prev__grant") {
-		t.Error("trait without nested ability should have no grant marker")
+	if !strings.Contains(html, "12 options") || strings.Contains(html, "abilities") {
+		t.Errorf("option-count marker wrong:\n%s", html)
+	}
+}
+
+func TestExtractPreviewItem_Trait_Subclass(t *testing.T) {
+	leaf := "---\nname: Wrath\ntype: trait\nclass: censor\nsubclass: exorcist\nlevel: \"1\"\n---\n\n" +
+		"<section class=\"sc-trait sc-trait--crest\" data-action=\"trait\"></section>\n"
+	fm, body := splitFrontmatter(leaf)
+	it := extractPreviewItem(fm, body, "trait", "Censor")
+	if it.Subclass != "Exorcist" {
+		t.Fatalf("subclass=%q want Exorcist", it.Subclass)
+	}
+	if !strings.Contains(renderPrevCard(it, false), "Censor Trait · Exorcist") {
+		t.Errorf("eyebrow should append subclass:\n%s", renderPrevCard(it, false))
+	}
+}
+
+func TestExtractPreviewItem_TraitNoSubfeatures(t *testing.T) {
+	fm, body := splitFrontmatter(traitLeaf("Inner Light", ""))
+	it := extractPreviewItem(fm, body, "trait", "Censor")
+	if it.Action != "trait" || it.Grants != "" || it.Options != 0 {
+		t.Errorf("action/grants/options = %q / %q / %d", it.Action, it.Grants, it.Options)
+	}
+	if strings.Contains(renderPrevCard(it, false), "sc-prev__grant") {
+		t.Error("trait with no sub-features should have no foot marker")
+	}
+}
+
+func TestSourceFromMeta(t *testing.T) {
+	cases := []struct{ fm, src, klass string }{
+		{"class: censor\n", "class", "Censor"},
+		{"ancestry: dwarf\n", "ancestry", "Dwarf"},
+		{"kit: arcane-archer\n", "kit", "Arcane Archer"},
+		{"class: beastheart\ncompanion: basilisk\n", "class", "Beastheart"},
+		{"name: x\n", "other", "fallback"},
+	}
+	for _, c := range cases {
+		if got := sourceFromMeta(c.fm); got != c.src {
+			t.Errorf("sourceFromMeta(%q)=%q want %q", c.fm, got, c.src)
+		}
+		if got := klassFromMeta(c.fm, "fallback"); got != c.klass {
+			t.Errorf("klassFromMeta(%q)=%q want %q", c.fm, got, c.klass)
+		}
 	}
 }
 
@@ -195,7 +233,7 @@ func TestBuildFeatureIndex_PreviewCards(t *testing.T) {
 func TestBuildFeatureIndex_SearchIslandOnLanding(t *testing.T) {
 	root := t.TempDir()
 	featureDir := filepath.Join(root, "feature")
-	writeFile(t, filepath.Join(featureDir, "trait", "censor", "level-1", "judgment.md"), traitLeaf("Judgment", true))
+	writeFile(t, filepath.Join(featureDir, "trait", "censor", "level-1", "judgment.md"), traitLeaf("Judgment", ` data-sub="1" data-grant="the Judgment maneuver"`))
 	writeFile(t, filepath.Join(featureDir, "ability", "censor", "level-1", "judgment.md"), abilityLeaf("Judgment", "Maneuver", "Signature"))
 
 	content, ok := buildFeatureIndexContent(featureDir, "feature", nil, []string{"ability", "trait"})

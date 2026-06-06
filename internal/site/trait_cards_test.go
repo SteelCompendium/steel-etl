@@ -12,8 +12,9 @@ func TestRenderTraitCard_ProseOnly(t *testing.T) {
 	got := renderTraitCard(fm, body)
 
 	wants := []string{
-		`<section class="sc-trait sc-trait--lead" data-action="trait">`,
-		`<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Dragon Knight</div>`,
+		`<section class="sc-trait sc-trait--crest sc-trait--lead" data-action="trait">`,
+		`<span class="sc-crest sc-trait__crest"><span class="sc-trait__glyph">*</span></span>`,
+		`<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Dragon Knight Trait</div>`,
 		`<h3 class="sc-trait__name">Prismatic Scales</h3>`,
 		`<p>Select one damage immunity`,
 	}

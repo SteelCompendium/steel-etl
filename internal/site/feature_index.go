@@ -254,6 +254,8 @@ type browseItem struct {
 	Kind     string   `json:"kind"`
 	Name     string   `json:"name"`
 	Klass    string   `json:"klass,omitempty"`
+	Subclass string   `json:"subclass,omitempty"`
+	Source   string   `json:"source,omitempty"` // class | ancestry | kit | other
 	Level    int      `json:"level"`
 	Action   string   `json:"action,omitempty"`
 	Cost     string   `json:"cost,omitempty"`
@@ -261,7 +263,8 @@ type browseItem struct {
 	Distance string   `json:"distance,omitempty"`
 	Targets  string   `json:"targets,omitempty"`
 	Flavor   string   `json:"flavor,omitempty"`
-	Grants   string   `json:"grants,omitempty"`
+	Grants   string   `json:"grants,omitempty"`  // single-ability grant phrase
+	Options  int      `json:"options,omitempty"` // count of sub-feature options
 	Tag      string   `json:"tag,omitempty"`
 	Href     string   `json:"href"`
 
@@ -270,8 +273,12 @@ type browseItem struct {
 
 // extractPreviewItem reads one leaf page (preserved frontmatter + already-
 // rendered HTML body) into a browseItem.
-func extractPreviewItem(fm, body, kind, klass string) browseItem {
-	it := browseItem{Klass: klass}
+func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
+	it := browseItem{
+		Klass:    klassFromMeta(fm, klassFallback),
+		Source:   sourceFromMeta(fm),
+		Subclass: titleCase(strings.ReplaceAll(strings.TrimSpace(parseFrontmatterField(fm, "subclass")), "-", " ")),
+	}
 
 	it.Kind = strings.TrimSpace(parseFrontmatterField(fm, "type"))
 	if it.Kind != "ability" && it.Kind != "trait" {
@@ -298,12 +305,46 @@ func extractPreviewItem(fm, body, kind, klass string) browseItem {
 		it.Targets = strings.TrimSpace(firstField(fm, "target", "targets"))
 		it.Flavor = strings.TrimSpace(parseFrontmatterField(fm, "flavor"))
 	} else {
-		// Trait frontmatter is sparse; flavor + the granted-ability marker live in
-		// the rendered .sc-trait HTML body.
-		it.Action, it.Grants = traitGrantFromHTML(body)
+		// Traits use the trait accent consistently. Flavor + the sub-feature
+		// markers come from the rendered .sc-trait HTML / its data-* attributes
+		// (frontmatter is too sparse).
+		it.Action = "trait"
 		it.Flavor = traitFlavorFromHTML(body)
+		if m := reDataGrant.FindStringSubmatch(body); m != nil {
+			it.Grants = html.UnescapeString(m[1])
+		} else if m := reDataSub.FindStringSubmatch(body); m != nil {
+			it.Options, _ = strconv.Atoi(m[1])
+		}
 	}
 	return it
+}
+
+// klassFromMeta returns the owning source's display name, preferring the
+// frontmatter class/ancestry/kit field, falling back to the directory-derived
+// name. (Beastheart companion features carry class: beastheart → "Beastheart".)
+func klassFromMeta(fm, fallback string) string {
+	for _, key := range []string{"class", "ancestry", "kit"} {
+		if v := strings.TrimSpace(parseFrontmatterField(fm, key)); v != "" {
+			return titleCase(strings.ReplaceAll(v, "-", " "))
+		}
+	}
+	return fallback
+}
+
+// sourceFromMeta classifies a feature's origin for the Source facet's
+// colour-coding. class wins over ancestry/kit (companion features carry
+// class: beastheart).
+func sourceFromMeta(fm string) string {
+	switch {
+	case strings.TrimSpace(parseFrontmatterField(fm, "class")) != "":
+		return "class"
+	case strings.TrimSpace(parseFrontmatterField(fm, "ancestry")) != "":
+		return "ancestry"
+	case strings.TrimSpace(parseFrontmatterField(fm, "kit")) != "":
+		return "kit"
+	default:
+		return "other"
+	}
 }
 
 // ── build-time preview card markup (mirrors SCBrowse.card, context=false) ─────
@@ -329,13 +370,9 @@ func renderPrevCard(it browseItem, ctx bool) string {
 }
 
 func renderTraitPrev(it browseItem, ctx bool) string {
-	act := it.Action
-	if act == "" {
-		act = "trait"
-	}
-	eyebrow := html.EscapeString(it.Klass)
-	if ctx && it.levelStr != "" {
-		eyebrow += " · Level " + html.EscapeString(it.levelStr)
+	eyebrow := strings.TrimSpace(html.EscapeString(it.Klass) + " Trait")
+	if it.Subclass != "" {
+		eyebrow += " · " + html.EscapeString(it.Subclass)
 	}
 	tag := ""
 	switch {
@@ -344,21 +381,35 @@ func renderTraitPrev(it browseItem, ctx bool) string {
 	case it.levelStr != "":
 		tag = "<div class=\"sc-prev__tag\">Level <span class=\"num\">" + html.EscapeString(it.levelStr) + "</span></div>"
 	}
-	foot := ""
-	if it.Grants != "" {
-		foot = "<div class=\"sc-prev__foot\"><span class=\"sc-prev__grant\"><span class=\"dot\"></span>Grants " +
-			html.EscapeString(it.Grants) + "</span></div>"
-	}
 	flavor := ""
 	if it.Flavor != "" {
 		flavor = "<div class=\"sc-prev__flavor\">" + html.EscapeString(it.Flavor) + "</div>"
 	}
-	return "<a class=\"sc-prev sc-prev--trait sc-fil\" data-action=\"" + html.EscapeString(act) +
-		"\" href=\"" + html.EscapeString(it.Href) + "\">" +
-		"<div class=\"sc-prev__head\"><div class=\"sc-prev__titles\">" +
+	return "<a class=\"sc-prev sc-prev--trait sc-fil\" data-action=\"trait\" href=\"" + html.EscapeString(it.Href) + "\">" +
+		"<div class=\"sc-prev__head\">" +
+		"<span class=\"sc-crest sc-prev__crest\"><span class=\"sc-prev__glyph\">" + traitGlyph + "</span></span>" +
+		"<div class=\"sc-prev__titles\">" +
 		"<div class=\"sc-prev__eyebrow\"><span class=\"sc-prev__dia\"></span>" + eyebrow + "</div>" +
 		"<h3 class=\"sc-prev__name\">" + html.EscapeString(it.Name) + "</h3></div>" + tag + "</div>" +
-		flavor + foot + "</a>\n"
+		flavor + traitFootMarker(it) + "</a>\n"
+}
+
+// traitFootMarker renders the foot marker: "Grants the X maneuver" for a single
+// granted ability, else "N option(s)" for a choice/option list, else nothing.
+func traitFootMarker(it browseItem) string {
+	text := ""
+	switch {
+	case it.Grants != "":
+		text = "Grants " + html.EscapeString(it.Grants)
+	case it.Options == 1:
+		text = "1 option"
+	case it.Options > 1:
+		text = strconv.Itoa(it.Options) + " options"
+	}
+	if text == "" {
+		return ""
+	}
+	return "<div class=\"sc-prev__foot\"><span class=\"sc-prev__grant\"><span class=\"dot\"></span>" + text + "</span></div>"
 }
 
 func renderAbilityPrev(it browseItem, ctx bool) string {
@@ -439,9 +490,10 @@ var (
 	reTraitLeadinP = regexp.MustCompile(`(?s)<p class="sc-trait__leadin">(.*?)</p>`)
 	reTraitFirstP  = regexp.MustCompile(`(?s)<p[^>]*>(.*?)</p>`)
 	reHTMLTag      = regexp.MustCompile(`<[^>]+>`)
-	reNestAbility  = regexp.MustCompile(`<article class="sc-ability[^"]*" data-action="([^"]+)"`)
-	reNestAbName   = regexp.MustCompile(`<h3 class="sc-ability__name">([^<]*)</h3>`)
-	reNestAbEye    = regexp.MustCompile(`<div class="sc-ability__eyebrow"><span class="sc-ability__dia"></span>([^<]*)</div>`)
+	// data-* markers stamped onto the top-level <section class="sc-trait"> by
+	// trait_cards.go (the first match is the root trait).
+	reDataSub   = regexp.MustCompile(`data-sub="(\d+)"`)
+	reDataGrant = regexp.MustCompile(`data-grant="([^"]*)"`)
 )
 
 // traitFlavorFromHTML returns the trait's one-line summary: the italic flavor if
@@ -456,33 +508,6 @@ func traitFlavorFromHTML(body string) string {
 		}
 	}
 	return ""
-}
-
-// traitGrantFromHTML reports the action accent and "grants" marker for a trait by
-// inspecting any nested .sc-ability plates rendered into its body.
-func traitGrantFromHTML(body string) (action, grants string) {
-	abilities := reNestAbility.FindAllStringSubmatch(body, -1)
-	if len(abilities) == 0 {
-		return "trait", ""
-	}
-	action = abilities[0][1]
-	if len(abilities) > 1 {
-		return action, fmt.Sprintf("%d abilities", len(abilities))
-	}
-	name, label := "", ""
-	if m := reNestAbName.FindStringSubmatch(body); m != nil {
-		name = plainText(m[1])
-	}
-	if m := reNestAbEye.FindStringSubmatch(body); m != nil {
-		label = plainText(m[1])
-	}
-	if name != "" && label != "" {
-		return action, "the " + name + " " + strings.ToLower(label)
-	}
-	if name != "" {
-		return action, "the " + name + " ability"
-	}
-	return action, "an ability"
 }
 
 // plainText strips HTML tags, decodes entities, and collapses whitespace.
