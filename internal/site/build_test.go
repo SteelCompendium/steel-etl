@@ -218,13 +218,19 @@ func TestBuild_GeneratesIndexPages(t *testing.T) {
 	if !strings.Contains(content, "# Features") {
 		t.Error("feature index missing title")
 	}
-	// Subdirectories that themselves contain content are rendered as collapsible
-	// <details> sections with a linked <summary>, not plain markdown links.
-	if !strings.Contains(content, `<summary><a href="ability/">Abilities</a></summary>`) {
-		t.Error("feature index missing ability subdir summary link")
+	// The feature/ landing is an index-of-indexes node (its children are
+	// directories), so it renders navigational folder cards (steel-indexes.css),
+	// not the old collapsible <details> list.
+	if !strings.Contains(content, `<div class="sc-folders`) {
+		t.Error("feature index should render folder cards")
 	}
-	if !strings.Contains(content, `<summary><a href="trait/">Traits</a></summary>`) {
-		t.Error("feature index missing trait subdir summary link")
+	if !strings.Contains(content, `<a class="sc-folder" href="ability/">`) ||
+		!strings.Contains(content, `<h3 class="sc-folder__name">Abilities</h3>`) {
+		t.Error("feature index missing Abilities folder card")
+	}
+	if !strings.Contains(content, `<a class="sc-folder" href="trait/">`) ||
+		!strings.Contains(content, `<h3 class="sc-folder__name">Traits</h3>`) {
+		t.Error("feature index missing Traits folder card")
 	}
 }
 

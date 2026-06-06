@@ -923,6 +923,11 @@ func buildIndexContent(dir, dirName string, files, subdirs []string) string {
 	if cards, ok := buildCardsContent(dir, dirName, files, subdirs); ok {
 		return cards
 	}
+	// Folder cards (index-of-indexes) + trait/ability preview cards
+	// (parent-of-leaves) for the nested feature & treasure trees.
+	if idx, ok := buildFeatureIndexContent(dir, dirName, files, subdirs); ok {
+		return idx
+	}
 	title := dirToTitle(dirName)
 
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
