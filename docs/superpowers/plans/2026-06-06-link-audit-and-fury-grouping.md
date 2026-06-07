@@ -74,7 +74,7 @@ Linked (unambiguous, per-instance verified or high-precision-guarded):
   (Val/Ord/Kul/OV) left per the guide.
 - **Truncation:** Templar `Domain Piety and Effects` → full conduit entity.
 
-## Deliberately deferred (FOLLOWUPS #6)
+## Deliberately deferred (FOLLOWUPS #6) — CLOSED 2026-06-07 (see follow-up below)
 
 The remaining tail is low-yield / ambiguity-heavy, *not* safely scriptable:
 - Lowercase/mundane maneuver phrasings (~half the leftover Hide/Grab/Charge are genuinely
@@ -95,3 +95,30 @@ The remaining tail is low-yield / ambiguity-heavy, *not* safely scriptable:
   table.
 - A heading's **level + annotation type drives its SCC path segment**; an H3 `@type: feature`
   under a class silently flattens its children. Use `@type: feature-group | @id: …` to group.
+
+## Follow-up: FOLLOWUPS #6 tail closed (2026-06-07)
+
+Ran the full A+B+C pass. **+27 links** (~4,595 → ~4,622); `gen` 0 WARN (1807 classified), no
+malformed links. New tool: `scripts/link_audit_sectioned.py` (buckets unlinked occurrences by
+enclosing class section).
+
+- **A (reference-table sync):** the Combat Actions & Maneuvers + Gods sections were already
+  present (added in this plan's pass); the FOLLOWUPS "they're absent" note was stale. Verified
+  all 25 universal `common.*` codes are listed; added a **Heroic Resources (9 terms)** section
+  and a **"Generic per-class mechanics — deliberately NOT linkable"** note (460 → 469 terms).
+- **B (common-verb maneuvers):** read every remaining unlinked occurrence of Hide/Charge/Grab/
+  Stand Up/Disengage/Advance/Defend/Heal/Ride/Knockback. Only **7** were genuine mechanic refs
+  (Knockback ×2, Grab ×2, Charge ×2, Defend ×1); the rest are mundane, the Hide/Ride **skills**,
+  the "Disengage Bonus" stat label, ability **names**, keyword stat rows, or own-section defns.
+- **C (heroic-resource sweep):** the section-aware audit confirmed each resource is ≈80–95%
+  inside its own class section and was already linked once (progression table). Linked the **20**
+  genuine cross-refs only: 9 Introduction-glossary defn lines + 9 "Heroic Resources" overview-list
+  items + 2 prose refs ("spend 1 piety", "gain 1 additional drama").
+- **Deliberately NOT linked (documented in `linking-reference.md`):** generic per-class terms
+  (`Triggered Action`, `Signature Ability`, `Skill`, `Perk`) — each maps to only one arbitrary
+  class's code though **every class has its own**, so there is no canonical target; `Steel`
+  (≈always the game name); and all within-class / mundane-flavor resource uses.
+
+**Rule added:** a term that exists only as **per-class codes** has no single canonical target —
+leave generic prose uses unlinked rather than point at one arbitrary class. Resources are linked
+sparingly (cross-references only, never within-class/flavor).

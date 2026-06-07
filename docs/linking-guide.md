@@ -31,6 +31,22 @@ session and followed step by step.
 > own-section excluded) and the Templar `Domain Piety and Effects` truncation.
 > **Tooling:** `scripts/link_audit.py`, `link_audit_category.py`, `link_apply.py`.
 
+> **2026-06-07 — Audit tail closed (FOLLOWUPS #6 A+B+C).** Cleared the deferred tail (+27
+> links, ~4,595 → ~4,622; `gen` 0 WARN). (B) Read every remaining unlinked common-verb
+> maneuver/action occurrence (Hide/Charge/Grab/Defend/Heal/Knockback/…); only **7** were
+> genuine mechanic refs — the rest are mundane, the Hide/Ride *skills*, the "Disengage Bonus"
+> stat label, ability *names*, or own-section definitions. (C) Linked each **Heroic Resource**
+> (wrath/piety/essence/ferocity/discipline/insight/focus/clarity/drama) only at its genuine
+> cross-references — the Introduction glossary defn line + the "Heroic Resources" overview list
+> + 2 other-chapter mechanic refs (**20** links) — having confirmed (via the new section-aware
+> `scripts/link_audit_sectioned.py`) that each resource sits ≈80–95% **inside its own class
+> section** and was already linked once in its class progression table. **Rule clarified:** a
+> term that exists only as **per-class codes** (`Triggered Action`, `Signature Ability`,
+> `Skill`, `Perk` — every class has its own) has **no single canonical target**, so generic
+> prose uses are left unlinked rather than pointed at one arbitrary class. Heroic resources are
+> linked **sparingly** (cross-references only, never within-class/flavor). See
+> `docs/linking-reference.md` (Heroic Resources + "deliberately NOT linkable" sections).
+
 ## Reference
 
 - **Reference table:** `docs/linking-reference.md` — all linkable terms with display names, variants, and SCC codes

@@ -2,7 +2,7 @@
 
 Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 460
+**Total linkable terms:** 469
 
 ## Classes (9 terms)
 
@@ -592,3 +592,25 @@ The shared move actions, main actions, maneuvers, and free strikes from Chapter 
 | Use Consumable | use consumable | `mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable` |
 | Melee Weapon Free Strike | melee weapon free strike | `mcdm.heroes.v1/feature.ability.common/melee-weapon-free-strike` |
 | Ranged Weapon Free Strike | ranged weapon free strike | `mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike` |
+
+## Heroic Resources (9 terms)
+
+Each class's Heroic Resource trait (`feature.trait.<class>.level-1/<resource>`). Added 2026-06-07 (FOLLOWUPS #6 part C).
+
+**Disambiguation required — link sparingly.** These words are overwhelmingly used *inside their own class section* (the definition/usage site — not cross-linked, consistent with the prior passes that linked each resource only once, in its class progression table) or as ordinary English: "speed is of the **essence**", "personal **drama**", "a spirit of **wrath**", "a moment of **focus**", "**ferocity** of the Primordial Chaos". **Link only genuine cross-references *outside* the owning class** — chiefly the Introduction glossary definition line (`**Wrath:** The censor's Heroic Resource.`), the "Heroic Resources" overview list, and explicit mechanic refs in other chapters ("spend 1 **piety**", "gain 1 additional **drama**"). Do **not** link within-class mentions or flavor uses.
+
+| Display Name | Class | SCC Code |
+|-------------|-------|----------|
+| Wrath | Censor | `mcdm.heroes.v1/feature.trait.censor.level-1/wrath` |
+| Piety | Conduit | `mcdm.heroes.v1/feature.trait.conduit.level-1/piety` |
+| Essence | Elementalist | `mcdm.heroes.v1/feature.trait.elementalist.level-1/essence` |
+| Ferocity | Fury | `mcdm.heroes.v1/feature.trait.fury.level-1/ferocity` |
+| Discipline | Null | `mcdm.heroes.v1/feature.trait.null.level-1/discipline` |
+| Insight | Shadow | `mcdm.heroes.v1/feature.trait.shadow.level-1/insight` |
+| Focus | Tactician | `mcdm.heroes.v1/feature.trait.tactician.level-1/focus` |
+| Clarity | Talent | `mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain` |
+| Drama | Troubadour | `mcdm.heroes.v1/feature.trait.troubadour.level-1/drama` |
+
+## Generic per-class mechanics — deliberately NOT linkable
+
+`Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.trait.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See FOLLOWUPS #6 and `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md`.

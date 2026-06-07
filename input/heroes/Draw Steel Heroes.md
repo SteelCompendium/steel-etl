@@ -163,7 +163,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Ceiling:** Any solid surface above a creature.
 
-**Clarity:** The [talent's](scc:mcdm.heroes.v1/class/talent) Heroic Resource. Unlike other Heroic Resources, clarity can go below 0, leaving a [talent](scc:mcdm.heroes.v1/class/talent) strained.
+**[Clarity](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain):** The [talent's](scc:mcdm.heroes.v1/class/talent) Heroic Resource. Unlike other Heroic Resources, clarity can go below 0, leaving a [talent](scc:mcdm.heroes.v1/class/talent) strained.
 
 **Class:** A hero's current role, which largely determines how they interact with the game's rules.
 
@@ -229,7 +229,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Director:** The player who prepares, presents, and adjudicates the game for all the other players, who each create and run a hero.
 
-**Discipline:** The [null's](scc:mcdm.heroes.v1/class/null) Heroic Resource.
+**[Discipline](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline):** The [null's](scc:mcdm.heroes.v1/class/null) Heroic Resource.
 
 **[Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) Move Action:** A move action that allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
 
@@ -243,7 +243,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** An ancestry with a draconic heritage.
 
-**Drama:** The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) Heroic Resource.
+**[Drama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/drama):** The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) Heroic Resource.
 
 **[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** An ancestry with stone skin and short stature.
 
@@ -263,19 +263,19 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an ability roll to escape.
 
-**Essence:** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) Heroic Resource.
+**[Essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/essence):** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) Heroic Resource.
 
 **Experience (XP):** A hero's Victories convert to Experience when they finish a respite. Experience permanently increases a hero's capabilities by allowing them to increase in level.
 
 **Falling:** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land [prone](scc:mcdm.heroes.v1/condition/prone). A falling creature can reduce the effective height of their fall by a number of squares equal to their Agility score (minimum 0).
 
-**Ferocity:** The [fury's](scc:mcdm.heroes.v1/class/fury) Heroic Resource.
+**[Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.level-1/ferocity):** The [fury's](scc:mcdm.heroes.v1/class/fury) Heroic Resource.
 
 **Flanking:** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an edge on melee strikes against that enemy.
 
 **[Fly](scc:mcdm.heroes.v1/movement/fly):** A movement mode available to creatures with "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gain the capability to temporarily [fly](scc:mcdm.heroes.v1/movement/fly). Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made [prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall.
 
-**Focus:** The [tactician's](scc:mcdm.heroes.v1/class/tactician) Heroic Resource.
+**[Focus](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/focus):** The [tactician's](scc:mcdm.heroes.v1/class/tactician) Heroic Resource.
 
 **[Forced Movement](scc:mcdm.heroes.v1/movement/forced-movement):** When an ability or effect compels a creature to move, usually against their will. There are three types of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement): a pull, a push, and a slide. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is always along the ground unless noted as vertical. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can be reduced by stability.
 
@@ -329,7 +329,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Implement:** A piece of jewelry, a staff, an orb, a wand, or some other object used by a creature to channel supernatural power.
 
-**Insight:** The [shadow's](scc:mcdm.heroes.v1/class/shadow) Heroic Resource.
+**[Insight](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/insight):** The [shadow's](scc:mcdm.heroes.v1/class/shadow) Heroic Resource.
 
 **Interest:** A negotiation statistic that determines how interested an NPC is in helping out the heroes.
 
@@ -409,7 +409,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Perk:** A feature available to all heroes that helps with exploration, investigation, negotiation, and more.
 
-**Piety:** The [conduit's](scc:mcdm.heroes.v1/class/conduit) Heroic Resource.
+**[Piety](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/piety):** The [conduit's](scc:mcdm.heroes.v1/class/conduit) Heroic Resource.
 
 **Pitfall:** A negotiation trait an NPC has that determines what type of arguments will not work on them.
 
@@ -585,7 +585,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Wode Elf](scc:mcdm.heroes.v1/ancestry/wode-elf):** A fey ancestry in tune with magical forests.
 
-**Wrath:** The [censor's](scc:mcdm.heroes.v1/class/censor) Heroic Resource.
+**[Wrath](scc:mcdm.heroes.v1/feature.trait.censor.level-1/wrath):** The [censor's](scc:mcdm.heroes.v1/class/censor) Heroic Resource.
 
 <!-- @type: chapter | @id: the-basics -->
 # The Basics
@@ -4188,7 +4188,7 @@ Each class also has a number of subclasses presented in this book. Your subclass
 
 ### Abilities
 
-Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including [free strikes](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike) and maneuvers such as [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab) and Knockback (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). But your class, ancestry (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)), kit (Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)), titles and treasures (Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), and other heroic options give you access to more powerful abilities that make your hero stand out.
+Abilities are special actions, maneuvers, and more that allow you to affect creatures, objects, and the environment. They represent the main activities your character can undertake when the game is in combat or some other time-sensitive scenario. All characters have access to a few basic abilities, including [free strikes](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike) and maneuvers such as [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). But your class, ancestry (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)), kit (Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)), titles and treasures (Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), and other heroic options give you access to more powerful abilities that make your hero stand out.
 
 Abilities are presented in a special format that first describes the ability, then summarizes its mechanical details, and finally breaks out the ability's power roll (if it has one) and effects.
 
@@ -4208,15 +4208,15 @@ Each class has a Heroic Resource that your hero earns during combat, with some o
 
 The nine Heroic Resources in the game are:
 
-- The [censor's](scc:mcdm.heroes.v1/class/censor) wrath
-- The [conduit's](scc:mcdm.heroes.v1/class/conduit) piety
-- The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) essence
-- The [fury's](scc:mcdm.heroes.v1/class/fury) ferocity
-- The [null's](scc:mcdm.heroes.v1/class/null) discipline
-- The [shadow's](scc:mcdm.heroes.v1/class/shadow) insight
-- The [tactician's](scc:mcdm.heroes.v1/class/tactician) focus
-- The [talent's](scc:mcdm.heroes.v1/class/talent) clarity
-- The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) drama
+- The [censor's](scc:mcdm.heroes.v1/class/censor) [wrath](scc:mcdm.heroes.v1/feature.trait.censor.level-1/wrath)
+- The [conduit's](scc:mcdm.heroes.v1/class/conduit) [piety](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/piety)
+- The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) [essence](scc:mcdm.heroes.v1/feature.trait.elementalist.level-1/essence)
+- The [fury's](scc:mcdm.heroes.v1/class/fury) [ferocity](scc:mcdm.heroes.v1/feature.trait.fury.level-1/ferocity)
+- The [null's](scc:mcdm.heroes.v1/class/null) [discipline](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipline)
+- The [shadow's](scc:mcdm.heroes.v1/class/shadow) [insight](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/insight)
+- The [tactician's](scc:mcdm.heroes.v1/class/tactician) [focus](scc:mcdm.heroes.v1/feature.trait.tactician.level-1/focus)
+- The [talent's](scc:mcdm.heroes.v1/class/talent) [clarity](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain)
+- The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) [drama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/drama)
 
 ##### Heroic Abilities
 
@@ -11270,7 +11270,7 @@ You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes
 <!-- @type: feature -->
 #### Psionic Martial Arts
 
-Whenever you use the Knockback or [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab) maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) maneuver, you can choose to slide the target instead of pushing them.
+Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) or [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab) maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) maneuver, you can choose to slide the target instead of pushing them.
 
 <!-- @type: feature -->
 #### Null Abilities
@@ -17755,7 +17755,7 @@ Your Agility and Presence scores each increase to 5.
 <!-- @type: feature -->
 #### Dramaturgy
 
-You gain 1 additional drama or other Heroic Resource whenever you use your [Appeal to the Muses](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/appeal-to-the-muses) feature. Additionally, your performances no longer have a distance, but can affect any target on the encounter map within your line of effect.
+You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/drama) or other Heroic Resource whenever you use your [Appeal to the Muses](scc:mcdm.heroes.v1/feature.trait.troubadour.level-2/appeal-to-the-muses) feature. Additionally, your performances no longer have a distance, but can affect any target on the encounter map within your line of effect.
 
 <!-- @type: feature -->
 #### Greatest of All Time
@@ -19369,7 +19369,7 @@ Your parents made a deal, and as part of that deal, you're supposed to marry som
 
 You came into contact with a mote of pure chaos energy, or were subjected to a supernatural effect or object that fused chaos into your very being. Now you can sprout and retract your limbs in a way that horrifies unprepared onlookers.
 
-**Benefit:** You gain an edge on the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab), Grab, and [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) maneuvers. Additionally, you can hold an additional item even when your hands are full.
+**Benefit:** You gain an edge on the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab), [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab), and [Knockback](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/knockback) maneuvers. Additionally, you can hold an additional item even when your hands are full.
 
 **Drawback:** While dying, you grow and retract uncoordinated limbs at random, imposing a bane on your power rolls.
 
@@ -21742,7 +21742,7 @@ A creature who is dying (see Dying and Death in Stamina below) can't use the [Ca
 <!-- @type: feature | @id: escape-grab -->
 #### Escape Grab
 
-A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another creature, an object, or an effect (see Grab below) can attempt to escape by using the following ability.
+A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another creature, an object, or an effect (see [Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/grab) below) can attempt to escape by using the following ability.
 
 <!-- @type: ability -->
 > ###### Escape Grab
@@ -21837,7 +21837,7 @@ Unless otherwise noted in its description, a creature can activate a consumable 
 
 When you take a main action, you most often do so to use a unique ability granted by your class, kit, or a treasure (see Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). These abilities represent the most unique, flavorful, and impactful things you can do with your main action.
 
-You can also use your main action to help another creature regain Stamina, charge into battle, defend yourself, or make a [free strike](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike).
+You can also use your main action to help another creature regain Stamina, [charge](scc:mcdm.heroes.v1/feature.trait.common.main-actions/charge) into battle, [defend](scc:mcdm.heroes.v1/feature.trait.common.main-actions/defend) yourself, or make a [free strike](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike).
 
 You can convert your main action into a maneuver or a move action, allowing you to [take two](scc:mcdm.heroes.v1/feature.ability.troubadour.level-5/take-two) maneuvers or move actions on your turn.
 
@@ -26377,7 +26377,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Healing Gift:* You can use the 1st-level [Conduit](scc:mcdm.heroes.v1/class/conduit) feature [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) as if you had spent 1 piety (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Healing Gift:* You can use the 1st-level [Conduit](scc:mcdm.heroes.v1/class/conduit) feature [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) as if you had spent 1 [piety](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/piety) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Last-Ditch Prayer:* As a free maneuver, you recite a prayer for help, gaining a pool of 2d10 of the Heroic Resource granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
 - *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or saint's domains, choose a [Conduit](scc:mcdm.heroes.v1/class/conduit) 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
@@ -26510,7 +26510,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 - *From Hell's Heart:* While you are winded, your melee strikes gain a +3 damage bonus.
 - *Furious Attack:* Choose one signature ability from the [fury](scc:mcdm.heroes.v1/class/fury) class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend ferocity, you can't do so unless you have the Ferocity class feature.
-- *Furious Charge:* When you use the Charge action, your strike made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.
+- *Furious Charge:* When you use the [Charge](scc:mcdm.heroes.v1/feature.trait.common.main-actions/charge) action, your strike made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.
 
 <!-- @type: feature-group | @id: 3-echelon-titles -->
 ### 3rd-Echelon Titles
