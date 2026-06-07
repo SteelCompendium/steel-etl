@@ -2,7 +2,7 @@
 
 Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 469
+**Total linkable terms:** 577
 
 ## Classes (9 terms)
 
@@ -614,3 +614,181 @@ Each class's Heroic Resource trait (`feature.trait.<class>.level-1/<resource>`).
 ## Generic per-class mechanics — deliberately NOT linkable
 
 `Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.trait.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See FOLLOWUPS #6 and `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md`.
+
+## Rules (`rule.<group>/<term>`)
+
+Rules-glossary terms (added 2026-06-07). Each is a `rule.<group>/<id>` code anchored to the rules section that defines the term; the Introduction glossary headwords link here. 108 terms across 12 groups. See `docs/rule-term-mapping.md` for the full term→anchor mapping and `docs/superpowers/plans/2026-06-07-rule-glossary-scc-linking.md`.
+
+**Disambiguation required.** Many of these are common English words. Link ONLY the game-mechanic use, not ordinary prose:
+
+- **Link:** "gains an edge on the roll", "the target has cover", "a size 1 creature", "reduced to 0 Stamina (winded)", "spend a Recovery".
+- **Don't link:** "the edge of the cliff", "cover the distance", "a creature of habit", "the cutting edge", "took the high road".
+
+### dice (9)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Ability Roll | ability roll, ability rolls | `mcdm.heroes.v1/rule.dice/ability-roll` |
+| Bane | bane, banes | `mcdm.heroes.v1/rule.dice/bane` |
+| Bonus | bonus, bonuses | `mcdm.heroes.v1/rule.dice/bonuses-and-penalties` |
+| Edge | edge, edges | `mcdm.heroes.v1/rule.dice/edge` |
+| Natural 19 or 20 | natural 19, natural 20, natural 19 or 20, nat 19, nat 20 | `mcdm.heroes.v1/rule.dice/natural-19-20` |
+| Natural Roll | natural roll, natural rolls | `mcdm.heroes.v1/rule.dice/natural-roll` |
+| Opposed Power Roll | opposed power roll, opposed power rolls | `mcdm.heroes.v1/rule.dice/opposed-power-roll` |
+| Power Roll | power roll, power rolls | `mcdm.heroes.v1/rule.dice/power-roll` |
+| Tier Outcome | tier outcome, tier outcomes, tier | `mcdm.heroes.v1/rule.dice/tier-outcome` |
+
+### character (10)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Agility | Agility | `mcdm.heroes.v1/rule.character/agility` |
+| Characteristics | characteristic, characteristics | `mcdm.heroes.v1/rule.character/characteristic` |
+| Intuition | Intuition | `mcdm.heroes.v1/rule.character/intuition` |
+| Might | Might | `mcdm.heroes.v1/rule.character/might` |
+| Potency | potency, potencies | `mcdm.heroes.v1/rule.character/potency` |
+| Presence | Presence | `mcdm.heroes.v1/rule.character/presence` |
+| Reason | Reason | `mcdm.heroes.v1/rule.character/reason` |
+| Size | size, sizes | `mcdm.heroes.v1/rule.character/size` |
+| Speed | speed, speeds | `mcdm.heroes.v1/rule.character/speed` |
+| Stability | stability | `mcdm.heroes.v1/rule.character/stability` |
+
+### health (7)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Dying | dying, dies, died, death | `mcdm.heroes.v1/rule.health/dying` |
+| Falling | falling, fall, falls, fell | `mcdm.heroes.v1/rule.health/falling` |
+| Recoveries | recovery, recoveries | `mcdm.heroes.v1/rule.health/recoveries` |
+| Stamina | stamina | `mcdm.heroes.v1/rule.health/stamina` |
+| Suffocating | suffocating, suffocate, suffocation | `mcdm.heroes.v1/rule.health/suffocating` |
+| Temporary Stamina | temporary stamina, temp stamina | `mcdm.heroes.v1/rule.health/temporary-stamina` |
+| Winded | winded | `mcdm.heroes.v1/rule.health/winded` |
+
+### resource (8)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Experience (XP) | Experience, XP, experience points | `mcdm.heroes.v1/rule.resource/experience` |
+| Hero Tokens | hero token, hero tokens | `mcdm.heroes.v1/rule.resource/hero-token` |
+| Heroic Resource | heroic resource, heroic resources | `mcdm.heroes.v1/rule.resource/heroic-resource` |
+| Renown | renown | `mcdm.heroes.v1/rule.resource/renown` |
+| Respite | respite, respites | `mcdm.heroes.v1/rule.resource/respite` |
+| Surge | surge, surges | `mcdm.heroes.v1/rule.resource/surge` |
+| Victories | victory, victories | `mcdm.heroes.v1/rule.resource/victories` |
+| Wealth | wealth | `mcdm.heroes.v1/rule.resource/wealth` |
+
+### combat (32)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Adjacent | adjacent | `mcdm.heroes.v1/rule.combat/adjacent` |
+| Ally | ally, allies, allied | `mcdm.heroes.v1/rule.combat/ally` |
+| Area of Effect | area of effect, areas of effect, AoE | `mcdm.heroes.v1/rule.combat/area-of-effect` |
+| Aura | aura, auras | `mcdm.heroes.v1/rule.combat/aura` |
+| Burst | burst, bursts | `mcdm.heroes.v1/rule.combat/burst` |
+| Combat Round | combat round, combat rounds, round, rounds | `mcdm.heroes.v1/rule.combat/combat-round` |
+| Concealment | concealment | `mcdm.heroes.v1/rule.combat/concealment` |
+| Condition | condition, conditions | `mcdm.heroes.v1/rule.combat/condition` |
+| Cover | cover | `mcdm.heroes.v1/rule.combat/cover` |
+| Critical Hit | critical hit, critical hits, crit | `mcdm.heroes.v1/rule.combat/critical-hit` |
+| Cube | cube, cubes | `mcdm.heroes.v1/rule.combat/cube` |
+| Distance | distance, distances | `mcdm.heroes.v1/rule.combat/distance` |
+| Enemy | enemy, enemies | `mcdm.heroes.v1/rule.combat/enemy` |
+| EoT | EoT | `mcdm.heroes.v1/rule.combat/end-of-turn` |
+| Flanking | flanking, flank, flanked | `mcdm.heroes.v1/rule.combat/flanking` |
+| Free Maneuver | free maneuver, free maneuvers | `mcdm.heroes.v1/rule.combat/free-maneuver` |
+| Line | line, lines | `mcdm.heroes.v1/rule.combat/line` |
+| Line of Effect | line of effect | `mcdm.heroes.v1/rule.combat/line-of-effect` |
+| Melee | melee | `mcdm.heroes.v1/rule.combat/melee` |
+| Mounted Combat | mounted combat | `mcdm.heroes.v1/rule.combat/mounted-combat` |
+| Objective | objective, objectives | `mcdm.heroes.v1/rule.combat/objective` |
+| Opportunity Attack | opportunity attack, opportunity attacks | `mcdm.heroes.v1/rule.combat/opportunity-attack` |
+| Ranged | ranged | `mcdm.heroes.v1/rule.combat/ranged` |
+| Side | side, sides | `mcdm.heroes.v1/rule.combat/side` |
+| Signature Ability | signature ability, signature abilities | `mcdm.heroes.v1/rule.combat/signature-ability` |
+| Strike | strike, strikes | `mcdm.heroes.v1/rule.combat/strike` |
+| Surprised | surprised, surprise | `mcdm.heroes.v1/rule.combat/surprised` |
+| Target | target, targets, targeted | `mcdm.heroes.v1/rule.combat/target` |
+| Triggered Action | triggered action, triggered actions | `mcdm.heroes.v1/rule.combat/triggered-action` |
+| Turn | turn, turns | `mcdm.heroes.v1/rule.combat/turn` |
+| Underwater combat | underwater combat | `mcdm.heroes.v1/rule.combat/underwater-combat` |
+| Wall | wall, walls | `mcdm.heroes.v1/rule.combat/wall` |
+
+### damage (5)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Damage | damage, damages | `mcdm.heroes.v1/rule.damage/damage` |
+| Damage Immunity | damage immunity, immunity, immune | `mcdm.heroes.v1/rule.damage/damage-immunity` |
+| Damage Type | damage type, damage types | `mcdm.heroes.v1/rule.damage/damage-type` |
+| Damage Weakness | damage weakness, weakness | `mcdm.heroes.v1/rule.damage/damage-weakness` |
+| Rolled Damage | rolled damage | `mcdm.heroes.v1/rule.damage/rolled-damage` |
+
+### test (4)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Group Test | group test, group tests | `mcdm.heroes.v1/rule.test/group-test` |
+| Montage Test | montage test, montage tests | `mcdm.heroes.v1/rule.test/montage-test` |
+| Reactive Test | reactive test, reactive tests | `mcdm.heroes.v1/rule.test/reactive-test` |
+| Test | test, tests | `mcdm.heroes.v1/rule.test/test` |
+
+### downtime (8)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Crafting Project | crafting project, crafting projects | `mcdm.heroes.v1/rule.downtime/crafting-project` |
+| Guide | guide, guides | `mcdm.heroes.v1/rule.downtime/guide` |
+| Item Prerequisite | item prerequisite, item prerequisites | `mcdm.heroes.v1/rule.downtime/item-prerequisite` |
+| Project Event | project event, project events | `mcdm.heroes.v1/rule.downtime/project-event` |
+| Project Points | project points | `mcdm.heroes.v1/rule.downtime/project-points` |
+| Project Roll | project roll, project rolls | `mcdm.heroes.v1/rule.downtime/project-roll` |
+| Project Source | project source, project sources | `mcdm.heroes.v1/rule.downtime/project-source` |
+| Research Project | research project, research projects | `mcdm.heroes.v1/rule.downtime/research-project` |
+
+### negotiation (4)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Interest | interest | `mcdm.heroes.v1/rule.negotiation/interest` |
+| Motivation | motivation, motivations | `mcdm.heroes.v1/rule.negotiation/motivation` |
+| Patience | patience | `mcdm.heroes.v1/rule.negotiation/patience` |
+| Pitfall | pitfall, pitfalls | `mcdm.heroes.v1/rule.negotiation/pitfall` |
+
+### treasure (5)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Consumable | consumable, consumables | `mcdm.heroes.v1/rule.treasure/consumable` |
+| Enhancement | enhancement, enhancements | `mcdm.heroes.v1/rule.treasure/enhancement` |
+| Implement | implement, implements | `mcdm.heroes.v1/rule.treasure/implement` |
+| Leveled Treasure | leveled treasure, leveled treasures | `mcdm.heroes.v1/rule.treasure/leveled-treasure` |
+| Trinket | trinket, trinkets | `mcdm.heroes.v1/rule.treasure/trinket` |
+
+### world (4)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Capital | Capital, capitals | `mcdm.heroes.v1/rule.world/capital` |
+| Orden | Orden | `mcdm.heroes.v1/rule.world/orden` |
+| Saint | saint, saints | `mcdm.heroes.v1/rule.world/saint` |
+| Vasloria | Vasloria | `mcdm.heroes.v1/rule.world/vasloria` |
+
+### general (12)
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Ability | ability, abilities | `mcdm.heroes.v1/rule.general/ability` |
+| Creature | creature, creatures | `mcdm.heroes.v1/rule.general/creature` |
+| Echelon | echelon, echelons | `mcdm.heroes.v1/rule.general/echelon` |
+| Follower | follower, followers | `mcdm.heroes.v1/rule.general/follower` |
+| Ground | ground, grounds | `mcdm.heroes.v1/rule.general/ground` |
+| Heroic Ability | heroic ability, heroic abilities | `mcdm.heroes.v1/rule.general/heroic-ability` |
+| NPC | NPC, NPCs, nonplayer character | `mcdm.heroes.v1/rule.general/npc` |
+| Retainer | retainer, retainers | `mcdm.heroes.v1/rule.general/retainer` |
+| Saving Throw | saving throw, saving throws, save | `mcdm.heroes.v1/rule.general/saving-throw` |
+| Subclass | subclass, subclasses | `mcdm.heroes.v1/rule.general/subclass` |
+| Supernatural | supernatural | `mcdm.heroes.v1/rule.general/supernatural` |
+| Unattended Object | unattended object, unattended objects | `mcdm.heroes.v1/rule.general/unattended-object` |
+

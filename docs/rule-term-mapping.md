@@ -35,13 +35,13 @@ separately (see "Collisions resolved" at the bottom).
 | Ancestry | ancestry, ancestries | reuse | mcdm.heroes.v1/chapter/ancestries | (existing) | Links to the Ancestries chapter; individual ancestries have `ancestry/<id>` codes. |
 | Area of Effect | area of effect, areas of effect, AoE | new-rule | mcdm.heroes.v1/rule.combat/area-of-effect | `#### Area Abilities` (4305) | Covers aura/burst/cube/line/wall collectively. |
 | Argument | argument, arguments | reuse | mcdm.heroes.v1/chapter/negotiation | (existing) | Negotiation plea; defined in the Negotiation chapter. No standalone heading; chapter is nearest typed home. |
-| Artifact | artifact, artifacts | new-rule | mcdm.heroes.v1/rule.treasure/artifact | NO HEADING — needs new heading OR map to nearest parent: Treasures chapter. Best parent `mcdm.heroes.v1/chapter/treasures` | Glossary-only; no artifact section in heroes book (artifacts are a teaser). |
+| Artifact | artifact, artifacts | reuse | mcdm.heroes.v1/chapter/treasures | (reuse — no own heading) | Glossary-only; no artifact section in heroes book (artifacts are a teaser). |
 | Artisan | artisan, artisans | reuse | mcdm.heroes.v1/career/artisan | (existing) | Glossary defines artisan as a crafting follower; the Artisan career is the typed entity. Judgment call: could instead be a follower-type rule — see Notes for Follower. |
 | Aura | aura, auras | new-rule | mcdm.heroes.v1/rule.combat/aura | `##### Aura` (4315) | Area-ability subtype. |
 | Background | background, backgrounds | reuse | mcdm.heroes.v1/chapter/background | (existing) | "Culture and career"; Background chapter. |
 | Bane | bane, banes | new-rule | mcdm.heroes.v1/rule.dice/bane | `##### Bane` (733) | −2 penalty. |
 | Bonus | bonus, bonuses | new-rule | mcdm.heroes.v1/rule.dice/bonuses-and-penalties | `#### Bonuses and Penalties` (757) | Primary for the Bonuses and Penalties section; Penalty reuses this code. |
-| Breakthrough | breakthrough, breakthroughs | new-rule | mcdm.heroes.v1/rule.downtime/breakthrough | NO HEADING — needs new heading OR map to nearest parent: Project Roll. Best parent `mcdm.heroes.v1/rule.downtime/project-roll` (`### Project Roll` 22720) | Natural 19–20 on a project roll; defined inline under project rolls. |
+| Breakthrough | breakthrough, breakthroughs | reuse | mcdm.heroes.v1/rule.downtime/project-roll | (reuse — no own heading) | Natural 19–20 on a project roll; defined inline under project rolls. |
 | Burst | burst, bursts | new-rule | mcdm.heroes.v1/rule.combat/burst | `##### Burst` (4319) | Area-ability subtype. |
 | Capital | Capital, capitals | new-rule | mcdm.heroes.v1/rule.world/capital | `#### Capital` (964) | Setting term ("largest city in Orden"). |
 | Career | career, careers | reuse | mcdm.heroes.v1/chapter/careers | (existing) | Careers chapter; individual careers have `career/<id>`. |
@@ -53,7 +53,7 @@ separately (see "Collisions resolved" at the bottom).
 | Complication | complication, complications | reuse | mcdm.heroes.v1/chapter/complications | (existing) | Complications chapter; individual `complication/<id>`. |
 | Concealment | concealment | new-rule | mcdm.heroes.v1/rule.combat/concealment | `### Concealment` (21927) | |
 | Condition | condition, conditions | new-rule | mcdm.heroes.v1/rule.combat/condition | `#### Conditions` (4582) | Umbrella term; individual conditions are `condition/<id>` (reuse those for named conditions). |
-| Consequence | consequence, consequences | new-rule | mcdm.heroes.v1/rule.general/consequence | NO HEADING — needs new heading OR map to nearest parent: Test outcomes. Best parent `mcdm.heroes.v1/rule.test/test` (`### How to Make a Test` 20353) | Test-related setback; defined in glossary, discussed under tests/rewards. |
+| Consequence | consequence, consequences | reuse | mcdm.heroes.v1/rule.test/test | (reuse — no own heading) | Test-related setback; defined in glossary, discussed under tests/rewards. |
 | Consumable | consumable, consumables | new-rule | mcdm.heroes.v1/rule.treasure/consumable | `### Consumables` (23803) | Treasure category. Individual consumables are `treasure.<echelon>.consumable/<id>`. |
 | Cover | cover | new-rule | mcdm.heroes.v1/rule.combat/cover | `### Cover` (21923) | Common word — link only in ranged-combat/concealment rules context. |
 | Crafting Project | crafting project, crafting projects | new-rule | mcdm.heroes.v1/rule.downtime/crafting-project | `### Crafting Projects` (22789) | |
@@ -67,7 +67,7 @@ separately (see "Collisions resolved" at the bottom).
 | Damage Type | damage type, damage types | new-rule | mcdm.heroes.v1/rule.damage/damage-type | `#### Damage Types` (21939) | |
 | Damage Weakness | damage weakness, weakness | new-rule | mcdm.heroes.v1/rule.damage/damage-weakness | `##### Damage Weakness` (21955) | |
 | Dig Maneuver | dig maneuver, dig | reuse | mcdm.heroes.v1/movement/burrow | `###### Dig Maneuver` (21477) | Judgment call: maps to the burrow movement type it depends on. Alternative: new-rule combat maneuver. Chose reuse since it has no common-trait code and is a burrow application. |
-| Director | Director, directors, GM | new-rule | mcdm.heroes.v1/rule.general/director | NO HEADING — needs new heading OR map to nearest parent: For the Director chapter. Best parent `mcdm.heroes.v1/chapter/for-the-director` | Role definition; the For the Director chapter is the closest typed home. |
+| Director | Director, directors, GM | reuse | mcdm.heroes.v1/chapter/for-the-director | (reuse — no own heading) | Role definition; the For the Director chapter is the closest typed home. |
 | Distance | distance, distances | new-rule | mcdm.heroes.v1/rule.combat/distance | `#### Distance` (4281) | Ability "Distance" entry. Note: there is also a kit `#### Distance Bonus`; this term is the ability/measurement concept. |
 | Double Bane | double bane, double banes | reuse | mcdm.heroes.v1/rule.dice/bane | (shares Bane section) | Glossary-only; no own heading. The Bane section (733) is where it is defined; collapsed to the Bane primary (one heading mints one code). |
 | Double Edge | double edge, double edges | reuse | mcdm.heroes.v1/rule.dice/edge | (shares Edge section) | Glossary-only; no own heading. The Edge section (727) is where it is defined; collapsed to the Edge primary. |
@@ -77,29 +77,29 @@ separately (see "Collisions resolved" at the bottom).
 | Edge | edge, edges | new-rule | mcdm.heroes.v1/rule.dice/edge | `##### Edge` (727) | +2 bonus. |
 | EoT | EoT | new-rule | mcdm.heroes.v1/rule.combat/end-of-turn | `##### End of Next Turn (EoT)` (4540) | Abbreviation for end-of-turn effect duration. |
 | Enemy | enemy, enemies | new-rule | mcdm.heroes.v1/rule.combat/enemy | `##### Enemy` (4357) | Its own dedicated heading. |
-| Enhancement | enhancement, enhancements | new-rule | mcdm.heroes.v1/rule.treasure/enhancement | `#### Imbue Treasure` (22892) | Crafting-applied treasure property; defined under Imbue Treasure (armor/implement/weapon enhancement subsections follow). |
+| Enhancement | enhancement, enhancements | new-rule | mcdm.heroes.v1/rule.treasure/enhancement | `##### Imbue Armor` (23002) | Crafting-applied treasure property; defined under Imbue Treasure (armor/implement/weapon enhancement subsections follow). |
 | Experience (XP) | Experience, XP, experience points | new-rule | mcdm.heroes.v1/rule.resource/experience | `#### Experience` (854) | |
-| Falling | falling, fall, falls, fell | new-rule | mcdm.heroes.v1/rule.health/falling | NO HEADING — needs new heading OR map to nearest parent: Forced Into a Fall. Best parent `mcdm.heroes.v1/rule.health/dying` sibling under combat; nearest section `##### Forced Into a Fall` (21680) | Falling damage rule; defined in glossary, mechanics under Forced Into a Fall. Flag for a dedicated heading. |
+| Falling | falling, fall, falls, fell | new-rule | mcdm.heroes.v1/rule.health/falling | `#### Falling` (21656) | Falling damage rule; defined in glossary, mechanics under Forced Into a Fall. Flag for a dedicated heading. |
 | Flanking | flanking, flank, flanked | new-rule | mcdm.heroes.v1/rule.combat/flanking | `### Flanking` (21915) | |
-| Follower | follower, followers | new-rule | mcdm.heroes.v1/rule.general/follower | `#### Follower Types` (26894) | Defined in the Follower Types section. Artisan/Sage/Retainer are follower kinds. |
+| Follower | follower, followers | new-rule | mcdm.heroes.v1/rule.general/follower | `### Attract Followers` (26978) | Defined in the Follower Types section. Artisan/Sage/Retainer are follower kinds. |
 | Free Maneuver | free maneuver, free maneuvers | new-rule | mcdm.heroes.v1/rule.combat/free-maneuver | `#### Free Maneuvers` (21420) | |
 | Free Triggered Action | free triggered action, free triggered actions | reuse | mcdm.heroes.v1/rule.combat/triggered-action | (shares Triggered Action section) | The Triggered Actions and Free Triggered Actions section defines both; collapsed to the Triggered Action primary. |
 | God | god, gods, deity, deities | reuse | mcdm.heroes.v1/chapter/gods-and-religion | (existing) | Gods and Religion chapter; individual gods are `god/<id>`. Glossary "God" → chapter; named gods → `god/<id>`. |
 | Ground | ground, grounds | new-rule | mcdm.heroes.v1/rule.general/ground | `#### Ground and Ceiling` (4576) | Primary for the Ground and Ceiling section; Ceiling reuses this code. |
 | Group Test | group test, group tests | new-rule | mcdm.heroes.v1/rule.test/group-test | `### Group Tests` (21157) | |
 | Guide | guide, guides | new-rule | mcdm.heroes.v1/rule.downtime/guide | `#### Guides` (22742) | Downtime manual granting project points. |
-| Hero | hero, heroes | new-rule | mcdm.heroes.v1/rule.general/hero | NO HEADING — needs new heading OR map to nearest parent: Making a Hero chapter. Best parent `mcdm.heroes.v1/chapter/making-a-hero` | Core but glossary-only definition; extremely common — link sparingly. |
+| Hero | hero, heroes | reuse | mcdm.heroes.v1/chapter/making-a-hero | (reuse — no own heading) | Core but glossary-only definition; extremely common — link sparingly. |
 | Heroic Ability | heroic ability, heroic abilities | new-rule | mcdm.heroes.v1/rule.general/heroic-ability | `##### Heroic Abilities` (4221) | Distinct heading of its own. Group is `rule.general` — defines a class of ability, not a resource. (Multiple per-class `##### Heroic Abilities` headings exist; anchor the definitional one at 4221.) |
 | Hero Tokens | hero token, hero tokens | new-rule | mcdm.heroes.v1/rule.resource/hero-token | `### Hero Tokens` (769) | |
 | Heroic Resource | heroic resource, heroic resources | new-rule | mcdm.heroes.v1/rule.resource/heroic-resource | `#### Heroic Resources` (860) | Sole new-rule at this anchor; Heroic Ability now anchors its own `##### Heroic Abilities` (4221). |
-| Humanoid | humanoid, humanoids | new-rule | mcdm.heroes.v1/rule.general/humanoid | NO HEADING — needs new heading OR map to nearest parent: Ancestries chapter. Best parent `mcdm.heroes.v1/chapter/ancestries` | Creature category; glossary-only. |
+| Humanoid | humanoid, humanoids | reuse | mcdm.heroes.v1/chapter/ancestries | (reuse — no own heading) | Creature category; glossary-only. |
 | Implement | implement, implements | new-rule | mcdm.heroes.v1/rule.treasure/implement | `##### Imbue Implement` (23075) | Treasure/equipment category. Distinct from the named treasure "Implement of Wrath" (an ability). |
 | Interest | interest | new-rule | mcdm.heroes.v1/rule.negotiation/interest | `#### Interest` (22163) | Negotiation stat. Common word — match in negotiation context. |
 | Intuition | Intuition | new-rule | mcdm.heroes.v1/rule.character/intuition | `#### Intuition` (653) | Characteristic. Match capitalized form. |
 | Item Prerequisite | item prerequisite, item prerequisites | new-rule | mcdm.heroes.v1/rule.downtime/item-prerequisite | `#### Item Prerequisite` (22702) | |
 | Jump | jump, jumps, jumping, jumped | reuse | mcdm.heroes.v1/movement/jump | (existing) | Movement. (Also a `skill/jump`; the glossary term is the movement action.) |
 | Kit | kit, kits | reuse | mcdm.heroes.v1/chapter/kits | (existing) | Kits chapter; individual `kit/<id>`. |
-| Level | level, levels | new-rule | mcdm.heroes.v1/rule.general/level | NO HEADING — needs new heading OR map to nearest parent: Echelons of Play. Best parent `mcdm.heroes.v1/rule.general/echelon` (`### Echelons of Play` 892) | Very common word; link sparingly. |
+| Level | level, levels | reuse | mcdm.heroes.v1/rule.general/echelon | (reuse — no own heading) | Very common word; link sparingly. |
 | Leveled Treasure | leveled treasure, leveled treasures | new-rule | mcdm.heroes.v1/rule.treasure/leveled-treasure | `### Leveled Treasures` (25021) | |
 | Line | line, lines | new-rule | mcdm.heroes.v1/rule.combat/line | `##### Line` (4327) | Area-ability subtype. Common word — match area-of-effect context. |
 | Line of Effect | line of effect | new-rule | mcdm.heroes.v1/rule.combat/line-of-effect | `#### Line of Effect` (4562) | |
@@ -119,7 +119,7 @@ separately (see "Collisions resolved" at the bottom).
 | Natural 19 or 20 | natural 19, natural 20, natural 19 or 20, nat 19, nat 20 | new-rule | mcdm.heroes.v1/rule.dice/natural-19-20 | `##### Natural 19 or 20: Success With a Reward` (20442) | Its own distinct heading (re-anchored off Critical Hit 4493 to avoid sharing that anchor with the Critical Hit row). |
 | Natural Roll | natural roll, natural rolls | new-rule | mcdm.heroes.v1/rule.dice/natural-roll | `##### Natural Roll` (717) | |
 | Negotiation | negotiation, negotiations, negotiate | reuse | mcdm.heroes.v1/chapter/negotiation | (existing) | Negotiation chapter. |
-| No Action | no action, no actions | new-rule | mcdm.heroes.v1/rule.combat/no-action | NO HEADING — needs new heading OR map to nearest parent: action categories. Best parent `mcdm.heroes.v1/rule.combat/main-action` (`### Main Actions` 21836) | Glossary-defined "no action" activity type; no dedicated heading. Flag. |
+| No Action | no action, no actions | reuse | mcdm.heroes.v1/rule.combat/turn | (reuse — no own heading) | Glossary-defined "no action" activity type; no dedicated heading. Flag. |
 | NPC | NPC, NPCs, nonplayer character | new-rule | mcdm.heroes.v1/rule.general/npc | `### PCs and NPCs` (822) | Defined in the PCs and NPCs section. |
 | Object | object, objects | reuse | mcdm.heroes.v1/rule.general/creature | (shares Creature section) | The Creatures and Objects section (808) defines both; Object Stamina is durability, not the term "object". Common word — link sparingly. |
 | Objective | objective, objectives | new-rule | mcdm.heroes.v1/rule.combat/objective | `#### Objective Endings` (22058) | Combat encounter goal. |
@@ -134,7 +134,7 @@ separately (see "Collisions resolved" at the bottom).
 | Power Roll | power roll, power rolls | new-rule | mcdm.heroes.v1/rule.dice/power-roll | `### Power Rolls` (683) | |
 | Presence | Presence | new-rule | mcdm.heroes.v1/rule.character/presence | `#### Presence` (657) | Characteristic. Match capitalized form. |
 | Project Event | project event, project events | new-rule | mcdm.heroes.v1/rule.downtime/project-event | `#### For the Director: Project Events` (22750) | |
-| Project Goal | project goal, project goals | new-rule | mcdm.heroes.v1/rule.downtime/project-goal | NO HEADING — needs new heading OR map to nearest parent: Project Roll / Discover Lore Project Goals. Best parent `mcdm.heroes.v1/rule.downtime/project-points` (`#### Project Points` 3619) | Defined in glossary; "project points needed". Flag. |
+| Project Goal | project goal, project goals | reuse | mcdm.heroes.v1/rule.downtime/project-points | (reuse — no own heading) | Defined in glossary; "project points needed". Flag. |
 | Project Points | project points | new-rule | mcdm.heroes.v1/rule.downtime/project-points | `#### Project Points` (3619) | |
 | Project Roll | project roll, project rolls | new-rule | mcdm.heroes.v1/rule.downtime/project-roll | `### Project Roll` (22720) | |
 | Project Source | project source, project sources | new-rule | mcdm.heroes.v1/rule.downtime/project-source | `#### Project Source` (22706) | |
@@ -149,12 +149,12 @@ separately (see "Collisions resolved" at the bottom).
 | Renown | renown | new-rule | mcdm.heroes.v1/rule.resource/renown | `## Renown` (26857) | Two headings exist (`#### Renown` 3611 brief mention; `## Renown` 26857 the rules section). Anchor the rules section. |
 | Research Project | research project, research projects | new-rule | mcdm.heroes.v1/rule.downtime/research-project | `### Research Projects` (23371) | |
 | Respite | respite, respites | new-rule | mcdm.heroes.v1/rule.resource/respite | `#### Respite` (882) | Defined in The Basics (882). (Downtime detail uses respites but the definition sits here.) |
-| Respite Activity | respite activity, respite activities | new-rule | mcdm.heroes.v1/rule.downtime/respite-activity | NO HEADING — needs new heading OR map to nearest parent: Respite. Best parent `mcdm.heroes.v1/rule.resource/respite` (`#### Respite` 882) | Glossary-only; one activity per respite. Flag. |
+| Respite Activity | respite activity, respite activities | reuse | mcdm.heroes.v1/rule.resource/respite | (reuse — no own heading) | Glossary-only; one activity per respite. Flag. |
 | Retainer | retainer, retainers | new-rule | mcdm.heroes.v1/rule.general/retainer | `##### Retainer` (26904) | Its own dedicated heading (a follower who adventures along). Note: the Monsters book also has a `retainer` type. |
 | Reward | reward, rewards | reuse | mcdm.heroes.v1/chapter/rewards | (existing) | Rewards chapter is the typed home. (Could mint `rule.general/reward` at `### How to Make a Test` reward subsection; chose chapter reuse.) |
 | Rolled Damage | rolled damage | new-rule | mcdm.heroes.v1/rule.damage/rolled-damage | `#### Rolled Damage` (4429) | |
 | Sage | sage, sages | reuse | mcdm.heroes.v1/career/sage | (existing) | Glossary defines sage as a research follower; the Sage career is the typed entity. (Parallel to Artisan.) |
-| Saint | saint, saints | new-rule | mcdm.heroes.v1/rule.world/saint | `### Gods and Religion` (26952) | No `/saint/` type exists; saints are discussed in Gods and Religion (Saints and Domains table 27069). Setting/world term. |
+| Saint | saint, saints | new-rule | mcdm.heroes.v1/rule.world/saint | `### Churches and Temples` (27079) | No `/saint/` type exists; saints are discussed in Gods and Religion (Saints and Domains table 27069). Setting/world term. |
 | Save Ends | save ends, (save ends) | reuse | mcdm.heroes.v1/rule.general/saving-throw | (shares Saving Throw section) | The Saving Throw (Save Ends) section defines both; collapsed to the Saving Throw primary. |
 | Saving Throw | saving throw, saving throws, save | new-rule | mcdm.heroes.v1/rule.general/saving-throw | `##### Saving Throw (Save Ends)` (4544) | Primary for the section; Save Ends reuses this code. |
 | Side | side, sides | new-rule | mcdm.heroes.v1/rule.combat/side | `#### Sides` (21346) | Combat side. Common word — link in combat context. |
@@ -164,7 +164,7 @@ separately (see "Collisions resolved" at the bottom).
 | Slide | slide, slides, slid, sliding | reuse | mcdm.heroes.v1/movement/forced-movement | (existing) | Forced movement form. |
 | Space | space, spaces | reuse | mcdm.heroes.v1/rule.character/size | (shares Size section) | The Size and Space section defines both; collapsed to the Size primary (one heading mints one code). |
 | Speed | speed, speeds | new-rule | mcdm.heroes.v1/rule.character/speed | `### Starting Size and Speed` (1511) | Shares this Basics anchor with Stability; distinct id. (Also a kit `#### Speed Bonus` — different concept.) |
-| Square | square, squares | new-rule | mcdm.heroes.v1/rule.combat/square | NO HEADING — needs new heading OR map to nearest parent: measurement/Distance. Best parent `mcdm.heroes.v1/rule.combat/distance` (`#### Distance` 4281) | Unit of measurement; glossary-only. Common word — link sparingly. |
+| Square | square, squares | reuse | mcdm.heroes.v1/rule.combat/distance | (reuse — no own heading) | Unit of measurement; glossary-only. Common word — link sparingly. |
 | Stability | stability | new-rule | mcdm.heroes.v1/rule.character/stability | `##### Stability` (21689) | Detailed section under Forced Movement. (Also defined in Starting Size and Speed 1511; chose the dedicated Stability section as anchor.) |
 | Stamina | stamina | new-rule | mcdm.heroes.v1/rule.health/stamina | `### Stamina` (21965) | |
 | Strained | strained | reuse | mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain | (existing) | Talent-only clarity state, defined by the talent's Clarity and Strain feature (verified in classification.json). |
@@ -190,7 +190,7 @@ separately (see "Collisions resolved" at the bottom).
 | Turn | turn, turns | new-rule | mcdm.heroes.v1/rule.combat/turn | `### Taking a Turn` (21469) | Defined in glossary; "main action, maneuver, move action." Common word — link in combat context. Anchored on Taking a Turn; Main/Maneuver/Move Action reuse this code. |
 | Unattended Object | unattended object, unattended objects | new-rule | mcdm.heroes.v1/rule.general/unattended-object | `#### Object Stamina` (22017) | Object not worn/held/controlled; Object Stamina is its nearest object-rules heading. Sole new-rule at this anchor (Object now reuses Creature). |
 | Underwater combat | underwater combat | new-rule | mcdm.heroes.v1/rule.combat/underwater-combat | `### Underwater Combat` (22028) | |
-| Untyped Damage | untyped damage | new-rule | mcdm.heroes.v1/rule.damage/untyped-damage | NO HEADING — needs new heading OR map to nearest parent: Damage Types. Best parent `mcdm.heroes.v1/rule.damage/damage-type` (`#### Damage Types` 21939) | Glossary-only; damage with no type. Flag. |
+| Untyped Damage | untyped damage | reuse | mcdm.heroes.v1/rule.damage/damage-type | (reuse — no own heading) | Glossary-only; damage with no type. Flag. |
 | Vasloria | Vasloria | new-rule | mcdm.heroes.v1/rule.world/vasloria | `#### Vasloria` (924) | Setting continent. |
 | Vertical | vertical | reuse | mcdm.heroes.v1/movement/forced-movement | (existing) | Vertical forced movement → forced-movement code. |
 | Victories | victory, victories | new-rule | mcdm.heroes.v1/rule.resource/victories | `#### Victories` (838) | |

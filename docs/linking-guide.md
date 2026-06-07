@@ -17,6 +17,21 @@ session and followed step by step.
 > **Rule reinforced:** when a short term is the prefix of a longer game entity, link the
 > *whole* entity to its own code, not just the prefix.
 
+> **2026-06-07 — New `rule.<group>/<term>` type (rules-glossary linking).** Added a
+> grouped `rule` SCC type so every Draw Steel rules/glossary term is linkable. 108 codes
+> across 12 groups: `dice`, `character`, `health`, `resource`, `combat`, `damage`, `test`,
+> `downtime`, `negotiation`, `treasure`, `world`, `general`. Each code is anchored to the
+> existing rules section that defines the term (e.g. `rule.combat/flanking` → `### Flanking`,
+> `rule.health/winded` → `#### Winded`); terms with no own heading either map to the nearest
+> headed parent (e.g. `square` → `rule.combat/distance`) or already-typed code. The
+> Introduction glossary headwords now link to these. Terms already covered by another type
+> (conditions, movement, skills, classes, …) keep linking to that type — see
+> `docs/rule-term-mapping.md` for every term's decision. **Disambiguation:** most rule terms
+> are common English words (edge, bane, cover, size, distance, surge, strike, line, wall,
+> creature, hero, level) — link ONLY the game-mechanic use, never ordinary prose. Full term
+> list in `docs/linking-reference.md` (`## Rules`); design record in
+> `docs/superpowers/plans/2026-06-07-rule-glossary-scc-linking.md`.
+
 > **2026-06-06 — Audit pass (kits, combat mechanics, gods).** A whole-document audit
 > (`scripts/link_audit.py`) surfaced gaps the earlier passes missed:
 > (1) **Hyphen/spacing variants** — the reference lists "Rapid Fire" (space) but the doc
