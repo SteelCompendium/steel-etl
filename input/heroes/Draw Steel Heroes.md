@@ -22120,6 +22120,7 @@ During combat or under similarly stressful circumstances, you can hold your brea
 
 Out of combat, you can hold your breath for a number of minutes equal to your Might score. Being unable to breathe after that time counts as a stressful condition, causing you to run out of air as above.
 
+<!-- @type: rule | @group: combat | @id: mounted-combat -->
 ### Mounted Combat
 
 A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their size is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
@@ -22140,6 +22141,7 @@ To avoid a battle dragging, the Director can set objectives when they build the 
 
 When the Director ends combat this way, the players typically choose how the battle ends by narrating a dramatic finish. Or in rarer cases when the heroes achieve a major objective that sets off a story-defining event, the Director narrates the end of the battle with a positive outcome for the players, called an event ending (see below).
 
+<!-- @type: rule | @group: combat | @id: objective -->
 #### Objective Endings
 
 While planning a combat encounter, the Director can set one or more objectives the heroes can achieve to end the encounter without dropping every last foe. Some broad categories of objectives are described in this section, but the Director should feel free to create their own. As well, Directors can always end combat anytime it becomes clear that the heroes are going to win an encounter with minimal effort, even if they haven't achieved all the objectives.
@@ -22245,12 +22247,14 @@ Negotiation is about persuading someone to help you willingly because you've con
 
 During negotiation, the Director assigns NPCs four temporary statistics and features—interest, patience, motivations, and pitfalls. The heroes can strike a favorable deal if they maximize an NPC's interest by making arguments that invoke the NPC's motivations and avoid their pitfalls—but they have to do all that before the NPC's patience wears out.
 
+<!-- @type: rule | @group: negotiation | @id: interest -->
 #### Interest
 
 An NPC's interest represents how eager they are to make a deal with the heroes. Interest is graded on a scale of 0 (no interest) to 5 (the most possible interest). When a negotiation begins, an NPC's interest is between 1 and 4. If the NPC's interest goes to 5, they make a final offer and the negotiation ends (see Keep Going or Stop, below). If the NPC's interest drops to 0, they end a negotiation without offering the heroes any deal.
 
 Interest increases and decreases during the negotiation based on the arguments the heroes make.
 
+<!-- @type: rule | @group: negotiation | @id: patience -->
 #### Patience
 
 An NPC's patience represents how much time and effort they're willing to devote to a negotiation. Patience is graded on a scale of 0 to 5, with each NPC starting a negotiation with their patience higher than 0. If an NPC's patience reaches 0, the NPC makes a final offer and negotiation ends (see Keep Going or Stop).
@@ -22261,12 +22265,14 @@ Patience can decrease each time the heroes make an argument during a negotiation
 
 If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) has information on some of the languages in the game.
 
+<!-- @type: rule | @group: negotiation | @id: motivation -->
 #### Motivations
 
 Each NPC has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an NPC's motivation require an easier power roll to increase the NPC's interest. Arguments that don't appeal to a motivation require a more difficult power roll. See Making Arguments below for more information.
 
 Each motivation can be successfully appealed to only once during a negotiation. To successfully appeal to a motivation, the heroes must use the motivation in an argument without mentioning one of the NPC's pitfalls or being caught in a lie.
 
+<!-- @type: rule | @group: negotiation | @id: pitfall -->
 #### Pitfalls
 
 Pitfalls are motivations that spark ire, discomfort, shame, fear, or some other negative response in an NPC. Using a pitfall in an argument causes an NPC's interest and patience to wane. Each NPC has at least one pitfall, and many have at least two.
@@ -22784,10 +22790,12 @@ You track project progress on your character sheet. As you work on a downtime pr
 
 All downtime projects have prerequisites you must meet before you can undertake them.
 
+<!-- @type: rule | @group: downtime | @id: item-prerequisite -->
 #### Item Prerequisite
 
 Many downtime projects have one or more special items you must possess or obtain before you can start the project. For instance, you can't build an airship without first finding a Wind Crystal of Quintessence, a rare and key component in that vehicle's construction. Other projects have a prerequisite that involves undertaking certain activities during the project process.
 
+<!-- @type: rule | @group: downtime | @id: project-source -->
 #### Project Source
 
 To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a project roll for that particular project (see Project Roll below).
@@ -22802,6 +22810,7 @@ Whenever the Director determines that a creature with needed knowledge can be us
 
 If you need a project source for a particular project, ask your Director if the source is common enough that it might be found in a substantial library, among a group of sages or guild artisans, and so forth. If the Director says yes, then the next time you take a respite in a place with a library or access to creatures with the knowledge you seek, you can locate the project source you need as a respite activity.
 
+<!-- @type: rule | @group: downtime | @id: project-roll -->
 ### Project Roll
 
 As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
@@ -22824,6 +22833,7 @@ You can apply skills from either the crafting or lore skill groups to project ro
 
 If you know the language of a project source, you can make a project roll without any issues. If you don't know the language of the source but you know a related language, the project roll takes a bane. If you don't know the source's language or a related language, the project roll has a double bane.
 
+<!-- @type: rule | @group: downtime | @id: guide -->
 #### Guides
 
 Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a respite activity, they gain the guide's knowledge value as project points toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
@@ -22832,6 +22842,7 @@ Guides are awarded at the Director's discretion, usually as a tool that can be u
 
 A guide must provide its information in a language you understand for you to gain its full benefit. If a guide uses a language related to one you know, you gain only half the guide's knowledge value (rounded down) as project points toward your project.
 
+<!-- @type: rule | @group: downtime | @id: project-event -->
 #### For the Director: Project Events
 
 Project events are story events that present boons and challenges to heroes as they complete research and crafting projects. These events are entirely optional. If your group prefers a game where the heroes simply work toward their goals by making project rolls, that's fine. But using these events can help a Director inject more drama into the processes of research and crafting.
@@ -22871,6 +22882,7 @@ A project event occurs when a hero makes a project roll. You can roll for or cho
 
 If an event grants an automatic breakthrough on a downtime project, the project gains 20 project points and the hero can make another project roll for the same project as part of the same respite activity.
 
+<!-- @type: rule | @group: downtime | @id: crafting-project -->
 ### Crafting Projects
 
 Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their respite activity to contribute a project roll in order to get the work done faster.
@@ -22986,6 +22998,7 @@ Enhancements are broken out by item type (armor, implement, or weapon) and level
 
 Imbuing treasure with supernatural power as a downtime project typically means you undertake that project to make use of the treasure yourself. As such, all the features of imbuing refer to "you" as the user of the item. However, imbued items can be created for other creatures, or created by other creatures and found as treasure.
 
+<!-- @type: rule | @group: treasure | @id: enhancement -->
 ##### Imbue Armor
 
 Armor imbued with an enhancement grants you special benefits while it is worn. Additionally, when your armor receives its 1st-level enhancement, it also grants a +6 bonus to Stamina. A 5th-level enhancement increases the Stamina bonus to +12, and a 9th-level enhancement increases it to +21.
@@ -23157,6 +23170,7 @@ On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the im
 | Temporal Flux          | An experimental temporal capacitor invented by the kuran'zoi                                         | Voll                    |
 | Unbending              | A spearhead or other weapon broken off in the body of a stone giant, and ossified for a year or more | High Kuric              |
 
+<!-- @type: rule | @group: treasure | @id: implement -->
 ##### Imbue Implement
 
 Implements are jewelry, spectacles, orbs, staffs, tomes, wands, weapons, and other objects used by those who channel magic and psionic power to focus that power. You decide what object to imbue when you create an implement treasure, but it must be an object you can carry or wear. You must have a mundane version of the item you plan to imbue when you start this project.
@@ -23453,6 +23467,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 | Vengeance III  | The true name of a [devil](scc:mcdm.heroes.v1/ancestry/devil) who hunts other [devils](scc:mcdm.heroes.v1/ancestry/devil)                                                                                       | Kalliak                 |
 | Windcutting    | A feather from a bird, once thought extinct, who dwells at the eye of an ever-whirling tornado                                        | Yllyric                 |
 
+<!-- @type: rule | @group: downtime | @id: research-project -->
 ### Research Projects
 
 Heroes can undertake many different types of research downtime projects, which can involve seeking out new lore, improving existing knowledge with study, uncovering rumors or secrets, and more.
@@ -23885,6 +23900,7 @@ The Magic and Psionic keywords for treasures refer to how those treasures are cr
 
 If two treasures give a creature a bonus to their Stamina or a bonus to the rolled damage of their abilities, only the higher bonus applies unless the treasure's description notes otherwise. Stamina bonuses and damage bonuses from consumables ignore this rule, and can be stacked with other Stamina bonuses and damage bonuses granted by treasures.
 
+<!-- @type: rule | @group: treasure | @id: consumable -->
 ### Consumables
 
 Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them supernatural. You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
@@ -24566,6 +24582,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Effect:** When opened as a maneuver, this vial bursts into a storm of multicolored lights. You and each ally within 5 squares of you regain 1d6 Recoveries. However, any mortal using this treasure draws the interest of a powerful fey noble.
 
+<!-- @type: rule | @group: treasure | @id: trinket -->
 ### Trinkets
 
 Trinkets are treasures that can be used at will without a reduction in their potency. They generally provide a small benefit, such as allowing you to see farther or become a bit better at picking locks.
@@ -25103,6 +25120,7 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 
 **Effect:** While wearing this metallic band, you can use a maneuver to project a glowing blade of rippling psychic energy that extends parallel to your arm. While the blade is active, you can use a maneuver once per turn to make a melee weapon free strike that deals an extra 3 psychic damage.
 
+<!-- @type: rule | @group: treasure | @id: leveled-treasure -->
 ### Leveled Treasures
 
 Like trinkets, leveled treasures can be used at will without a reduction in potency. However, leveled treasures tap into their wielder's will in a way that trinkets don't, becoming more powerful and increasing their capabilities as you gain new levels.
@@ -26939,6 +26957,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 - *Laughs at Locks:* Whenever you make a test to open a lock or break a restraint, you don't need any tools and you automatically obtain a tier 3 outcome.
 - *Slippery:* You can't be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) against your will.
 
+<!-- @type: rule | @group: resource | @id: renown -->
 ## Renown
 
 As you accomplish heroic deeds, your fame allows you to influence NPCs and attract followers. Your infamy among your enemies also grows. Every hero has a Renown score that represents how they can use their reputation to influence others. The higher the score, the greater your impact with those who know of your legend.
@@ -26955,6 +26974,7 @@ In most campaigns, the Director sets the characters up to earn 1 Renown per leve
 
 Renown changes the way NPCs respond to heroes during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), whether that renown takes the form of fame or infamy.
 
+<!-- @type: rule | @group: general | @id: follower -->
 ### Attract Followers
 
 Your Renown score allows you to attract and employ followers who perform different duties or favors for you. The Renown and Followers table shows how many followers a hero can have at one time based on Renown. You can always let go of a follower in your employ to hire a new one.
@@ -26986,6 +27006,7 @@ Artisans are crafting experts who can contribute to your research and crafting p
 
 When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
 
+<!-- @type: rule | @group: general | @id: retainer -->
 ##### Retainer
 
 Retainers are heroic NPCs who adventure alongside the player characters. They are controlled by players in combat and are both simpler to run and less powerful than player characters. A hero can have only one retainer in their service at a time unless the Director deems otherwise. Because retainers and their stat blocks are combat focused, the Director can also decide that a large party can have only one retainer in total—or can't have any retainers at all—to keep combat from getting long and tedious.
@@ -27054,6 +27075,7 @@ something like that happened and not worry overmuch about the details. They call
 
 If no aid is forthcoming folks assume this is because the gods and saints are all very busy and cannot be arsed to answer every prayer. People are never surprised when the gods and saints are silent. They are usually silent.
 
+<!-- @type: rule | @group: world | @id: saint -->
 ### Churches and Temples
 
 Most religions in Orden organize themselves into hierarchies and build temples or cathedrals, but some religions are little more than traditions handed down from shaman to shaman, or wise-woman to wise-daughter. Some religions are secret!
