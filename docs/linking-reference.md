@@ -2,7 +2,7 @@
 
 Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 441
+**Total linkable terms:** 460
 
 ## Classes (9 terms)
 
@@ -564,3 +564,31 @@ Deities from the Gods and Religion chapter (added 2026-05-29).
 | Salorna | salorna | `mcdm.heroes.v1/god/salorna` |
 | Thellasko the Great Designer | thellasko | `mcdm.heroes.v1/god/thellasko` |
 | Val | val | `mcdm.heroes.v1/god/val` |
+
+## Combat Actions & Maneuvers (19 terms)
+
+The shared move actions, main actions, maneuvers, and free strikes from Chapter 10: Combat (`feature.{trait,ability}.common.*`). Added 2026-06-06 (these were previously absent from this table and unlinked). See `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md` and `FOLLOWUPS.md` #6.
+
+**Disambiguation required:** Several names are common English verbs. Link only the game mechanic — **link** "the Grab maneuver", "uses the Charge main action", "make a free strike"; **don't link** "grab two dice", "in charge of the mission", "stand up for the innocent", "tests made to hide". Distinctive names (Disengage, Aid Attack, Catch Breath, Escape Grab) are effectively always the mechanic. For the dual-coded maneuvers (Grab, Knockback, Escape Grab — which have both a `feature.trait…` page and a `feature.ability…` page) link the `feature.trait…` (maneuver) code.
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Advance | advance | `mcdm.heroes.v1/feature.trait.common.move-actions/advance` |
+| Disengage | disengage | `mcdm.heroes.v1/feature.trait.common.move-actions/disengage` |
+| Ride | ride | `mcdm.heroes.v1/feature.trait.common.move-actions/ride` |
+| Charge | charge | `mcdm.heroes.v1/feature.trait.common.main-actions/charge` |
+| Defend | defend | `mcdm.heroes.v1/feature.trait.common.main-actions/defend` |
+| Free Strike | free strike, free strikes | `mcdm.heroes.v1/feature.trait.common.main-actions/free-strike` |
+| Heal | heal | `mcdm.heroes.v1/feature.trait.common.main-actions/heal` |
+| Aid Attack | aid attack | `mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack` |
+| Catch Breath | catch breath | `mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath` |
+| Escape Grab | escape grab | `mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab` |
+| Grab | grab | `mcdm.heroes.v1/feature.trait.common.maneuvers/grab` |
+| Hide | hide | `mcdm.heroes.v1/feature.trait.common.maneuvers/hide` |
+| Knockback | knockback | `mcdm.heroes.v1/feature.trait.common.maneuvers/knockback` |
+| Make or Assist a Test | make or assist a test | `mcdm.heroes.v1/feature.trait.common.maneuvers/make-or-assist-a-test` |
+| Search for Hidden Creatures | search for hidden creatures | `mcdm.heroes.v1/feature.trait.common.maneuvers/search-for-hidden-creatures` |
+| Stand Up | stand up | `mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up` |
+| Use Consumable | use consumable | `mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable` |
+| Melee Weapon Free Strike | melee weapon free strike | `mcdm.heroes.v1/feature.ability.common/melee-weapon-free-strike` |
+| Ranged Weapon Free Strike | ranged weapon free strike | `mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike` |
