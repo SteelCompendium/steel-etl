@@ -1586,14 +1586,14 @@ Your companion may not be much of a talker, but they've got a lifetime of experi
 
 Your wild nature grants you a feature, as shown on the 2nd-Level Wild Nature Features table.
 
-###### 2nd-Level Wild Nature Features®
+###### 2nd-Level Wild Nature Features
 
 | Wild Nature | Feature |
 | ---- | ---- |
 | Guardian | [Watchdog](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/watchdog) |
 | Prowler |  [Supersniffer](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/supersniffer) |
 | Punisher | [This One’s Yours](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/this-ones-yours) |
-| Spark | [Stormheart](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/stornheart) |
+| Spark | [Stormheart](scc:mcdm.beastheart.v1/feature.trait.beastheart.level-2/stormheart) |
 
 <!-- @type: feature | @id: stormheart | @level: 2 | @subclass: spark -->
 ##### Stormheart
