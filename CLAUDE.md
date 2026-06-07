@@ -37,7 +37,7 @@ just run gen --config pipeline.yaml  # Run with args
 | `pipeline.yaml` | Pipeline config: input, output formats, classification settings |
 | `classification.json` | SCC registry (generated, gitignored) |
 | `input/heroes/Draw Steel Heroes.md` | Annotated source — hand-maintained, canonical (the former `annotate_heroes.py` generator was retired; the `.md` holds ~4,055 cross-reference links and annotations that live only here) |
-| `input/monsters/Draw Steel Monsters.md` | Annotated Monsters book source. Hand-maintained going forward; the initial annotation pass was bootstrapped by `scripts/annotate_monsters.pl` (by-heading-level: H2→monster group, H7→statblock, H9→featureblock/terrain). |
+| `input/monsters/Draw Steel Monsters.md` | Annotated Monsters book source. Hand-maintained going forward; the initial annotation pass was bootstrapped by a since-removed `annotate_monsters.pl` (by-heading-level: H2→monster group, H7→statblock, H9→featureblock/terrain). |
 | `internal/cli/*.go` | CLI commands: gen, validate, classify, strip, site |
 | `internal/content/registry.go` | Content parser registry (24 parsers) |
 | `internal/pipeline/pipeline.go` | Main pipeline: parse -> classify -> generate |

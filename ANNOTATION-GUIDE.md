@@ -187,7 +187,7 @@ Notes:
 - Statblocks are H7 and malice/terrain are H9 — heading levels above goldmark's H6 limit, captured by `collectDeepHeadings`. H8 folds into its parent statblock (retainer advancement abilities).
 - `@subcategory` adds an echelon path segment (`1st-echelon`…) for groups whose statblock names repeat per echelon (Rivals, Demons, Undead, War Dogs).
 - A featureblock keeps a `(Level N+ …)` qualifier in its id (tiered malice stays distinct) but drops a bare descriptor like `(Malice Features)` / `(Ajax Feature)`.
-- The initial book-wide annotation was bootstrapped by `scripts/annotate_monsters.pl`.
+- The initial book-wide annotation was bootstrapped by a since-removed `annotate_monsters.pl` (the source is now hand-maintained in place).
 
 ```markdown
 <!-- @type: monster | @category: goblins -->

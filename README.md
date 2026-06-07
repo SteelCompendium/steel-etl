@@ -35,7 +35,7 @@ steel-etl/
 ├── testdata/fixtures/             # Test fixtures (simple_class.md)
 ├── pipeline.yaml                  # Pipeline configuration (heroes + beastheart + monsters)
 ├── Makefile                       # Build, test, lint targets
-├── scripts/                       # One-off bootstrap helpers (e.g. annotate_monsters.pl)
+├── scripts/                       # Reusable SCC link-audit/linking tooling (link_audit*.py, link_apply.py)
 └── input/                         # Annotated sources (hand-maintained, canonical)
     ├── heroes/Draw Steel Heroes.md
     ├── beastheart/Draw Steel Beastheart.md
@@ -114,7 +114,7 @@ The **Monsters** book adds 437 statblocks, 64 malice featureblocks, 35 dynamic-t
 
 ## The annotated input
 
-`input/heroes/Draw Steel Heroes.md`, `input/beastheart/Draw Steel Beastheart.md`, and `input/monsters/Draw Steel Monsters.md` are **hand-maintained and canonical**. The heroes file holds ~4,055 SCC cross-reference links and all annotations directly. (Heroes was originally bootstrapped by an `annotate_heroes.py` script plus one-off link-adder scripts; the Monsters annotation pass was bootstrapped by `scripts/annotate_monsters.pl`. Both are now edited in place — re-running the bootstrap scripts would clobber hand edits.) See `docs/linking-guide.md` for the rules on adding cross-reference links.
+`input/heroes/Draw Steel Heroes.md`, `input/beastheart/Draw Steel Beastheart.md`, and `input/monsters/Draw Steel Monsters.md` are **hand-maintained and canonical**. The heroes file holds ~4,055 SCC cross-reference links and all annotations directly. (Heroes was originally bootstrapped by a since-removed `annotate_heroes.py` script plus one-off link-adder scripts; the Monsters annotation pass was bootstrapped by a since-removed `annotate_monsters.pl`. Those one-time bootstrap scripts have been deleted — the sources are now hand-maintained in place.) See `docs/linking-guide.md` for the rules on adding cross-reference links.
 
 ## Pipeline configuration
 
