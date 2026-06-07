@@ -21653,6 +21653,7 @@ When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move fro
 - If you [teleport](scc:mcdm.heroes.v1/movement/teleport) while affected by the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained) conditions, those conditions end for you.
 - When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they must leave the space where they start and enter a new space. A creature can't [teleport](scc:mcdm.heroes.v1/movement/teleport) to and from the same space.
 
+<!-- @type: rule | @group: health | @id: falling -->
 #### Falling
 
 When a creature falls 2 or more squares and lands on the ground, they take 2 damage for each square they fall (to a maximum of 50 damage) and l[and prone](scc:mcdm.heroes.v1/condition/prone). A creature who falls can reduce the effective height of the fall by a number of squares equal to their Agility score (to a minimum of 0). Falling into liquid that is 1 square or more deep reduces the effective height of a fall by 4 squares (to a minimum of 0).
