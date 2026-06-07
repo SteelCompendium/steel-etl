@@ -1532,6 +1532,7 @@ How tall is a [polder](scc:mcdm.heroes.v1/ancestry/polder)? How long does a [dwa
 | [Polder](scc:mcdm.heroes.v1/ancestry/polder)        | 3'3''-3'6''               | 20-50               | 50-90                       |
 | [Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider)   | 5'0''-6'0''               | 120-250             | 50-90                       |
 
+<!-- @type: rule | @group: character | @id: speed -->
 ### Starting Size and Speed
 
 Unless otherwise noted, a character of any of these ancestries is size 1M and has speed 5 and stability 0.
@@ -3636,10 +3637,12 @@ Some careers allow you to learn extra languages, chosen from those available in 
 
 Some careers increase your starting Renown score (from a base score of 0). See Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) for more information.
 
+<!-- @type: rule | @group: resource | @id: wealth -->
 #### Wealth
 
 Some careers increase your starting Wealth score (from a base score of 1). See Wealth in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) for more information.
 
+<!-- @type: rule | @group: downtime | @id: project-points -->
 #### Project Points
 
 Some careers provide project points you can put toward crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
@@ -4206,6 +4209,7 @@ Your class provides you with many of your features, most of your abilities—you
 
 **[Troubadour](scc:mcdm.heroes.v1/class/troubadour):** A [troubadour](scc:mcdm.heroes.v1/class/troubadour) inspires their allies with storytelling and swordplay that is as much an art as it is an act of war. Their quips, songs, poems, and epic tales produce actual magic that harms foes and bolsters allies. They can even use their magic to tweak the campaign's story in real time to better suit their needs.
 
+<!-- @type: rule | @group: general | @id: subclass -->
 ### Subclasses
 
 Each class also has a number of subclasses presented in this book. Your subclass determines many of your hero's abilities and features, and further defines how you interact with the world from 1st level on. You choose a subclass when you create your character.
@@ -4242,16 +4246,19 @@ The nine Heroic Resources in the game are:
 - The [talent's](scc:mcdm.heroes.v1/class/talent) [clarity](scc:mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain)
 - The [troubadour's](scc:mcdm.heroes.v1/class/troubadour) [drama](scc:mcdm.heroes.v1/feature.trait.troubadour.level-1/drama)
 
+<!-- @type: rule | @group: general | @id: heroic-ability -->
 ##### Heroic Abilities
 
 If an ability has a Heroic Resource cost to activate—as in, you can't use the ability at all without spending some of your Heroic Resource—then it is a heroic ability. If an effect allows you to use a heroic ability when it isn't your turn, you must still pay its Heroic Resource cost to use it unless the effect says otherwise.
 
 Some abilities don't cost your Heroic Resource to use but allow you to spend your Heroic Resource to enhance or add effects to the ability, such as the [conduit's](scc:mcdm.heroes.v1/class/conduit) [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace). These abilities are not heroic abilities unless the baseline ability can't be used without spending your Heroic Resource.
 
+<!-- @type: rule | @group: combat | @id: signature-ability -->
 ##### Signature Abilities
 
 Some abilities granted by your class, kit, and other parts of the game are signature abilities. The rules specifically state when an ability is a signature ability. Signature abilities don't require your Heroic Resource to use, but sometimes let you spend your Heroic Resource to enhance or add to their effects.
 
+<!-- @type: rule | @group: general | @id: ability -->
 #### Ability Keywords
 
 Each ability has one or more keywords that explain how the ability functions. Keywords appear in the first line of the ability beneath the flavor text, on the left side, and can include any of the following entries. (An ability that has no keywords is noted as "-".)
@@ -4268,6 +4275,7 @@ Abilities with the Charge keyword can be used with the [Charge](scc:mcdm.heroes.
 
 Abilities with the Magic keyword are used by characters who can cast spells, have innate magical features, or wield magic treasures. Such abilities do magical things such as create rays of fire, open swirling portals, or summon creatures.
 
+<!-- @type: rule | @group: combat | @id: melee -->
 ##### Melee
 
 Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in Imbue Treasure in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
@@ -4276,10 +4284,12 @@ Abilities with the Melee keyword can be used only over very short distances, typ
 
 Abilities with the Psionic keyword are used by characters who can manifest psionic powers, have innate psionic features, or wield psionic items. These abilities might create blasts of psychic energy, move objects with telekinesis, or slow down time with chronopathy.
 
+<!-- @type: rule | @group: combat | @id: ranged -->
 ##### Ranged
 
 Abilities with the Ranged keyword can be used to affect creatures who are too far away to make contact with.
 
+<!-- @type: rule | @group: combat | @id: strike -->
 ##### Strike
 
 Abilities with the Strike keyword (often referred to simply as "strikes") deal damage to or impose a harmful effect on specific creatures or objects.
@@ -4302,6 +4312,7 @@ Each ability notes the type of activity required to use it, on the right side of
 
 If an ability requires a triggered action or a free triggered action to use, a "Trigger" entry is part of the ability. For example, the trigger for the [tactician's](scc:mcdm.heroes.v1/class/tactician) Parry ability is: "A creature deals damage to the target." A [tactician](scc:mcdm.heroes.v1/class/tactician) can use their Parry ability only when that specific triggering event occurs.
 
+<!-- @type: rule | @group: combat | @id: distance -->
 #### Distance
 
 An ability's "Distance" entry, represented by this symbol 📏, indicates how close you need to be to a creature or object to affect that target with the ability.
@@ -4326,6 +4337,7 @@ An ability never has both the Melee and Ranged keywords at the same time. For ex
 
 If an ability has a distance of "Self," that ability originates from you, and often affects only you. The ability's description specifies how it works.
 
+<!-- @type: rule | @group: combat | @id: area-of-effect -->
 #### Area Abilities
 
 Area abilities cover a number of squares on the battlefield at once, creating an effect within that area that lets you target multiple creatures or objects. When an ability creates an area of effect, it sometimes notes a distance for the effect in the form "within X." The number X tells you how many squares away from you the area can be. If an area ability doesn't have this distance, it originates from you and you are at the center of the area.
@@ -4336,22 +4348,27 @@ You can place an area of effect to include one or more squares where you don't h
 
 An area ability might use any of the following areas of effect.
 
+<!-- @type: rule | @group: combat | @id: aura -->
 ##### Aura
 
 When an ability creates an aura, that area is expressed as "X aura." The number X is the radius of the aura, which always originates from you and moves with you for the duration of the ability that created it. A creature or object must be within X squares of you to be targeted by an aura ability.
 
+<!-- @type: rule | @group: combat | @id: burst -->
 ##### Burst
 
 When an ability creates a burst area, that area is expressed as "X burst." The number X is the radius of the burst, which always originates from you and lasts only for as long as it takes to affect its targets. A creature or object must be within X squares of you to be targeted by a burst ability.
 
+<!-- @type: rule | @group: combat | @id: cube -->
 ##### Cube
 
 When an ability affects a cubic area, that area is expressed as "X cube." The number X is the length of each of the area's sides. A creature or object must be within the area to be targeted by a cube ability.
 
+<!-- @type: rule | @group: combat | @id: line -->
 ##### Line
 
 When an ability affects a linear area, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line area of effect, the squares in that area must be in a straight line. A creature or object must be within the area to be targeted by a line ability.
 
+<!-- @type: rule | @group: combat | @id: wall -->
 ##### Wall
 
 When an ability creates a wall, that area is expressed as "X wall." The number X is how many squares are used to make the wall. When you place a wall, you can build it one square at a time, but each square must share at least one side (not just a corner) with another square of the wall. A creature or object must be within the area to be targeted by a wall ability.
@@ -4364,6 +4381,7 @@ You can stack squares on top of each other to make the wall higher. Unless other
 >
 > Likewise, abilities and effects that require a creature to move in a straight line, such as the [Charge](scc:mcdm.heroes.v1/feature.trait.common.main-actions/charge) main action or [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that is a push or a pull, don't have to take the form of a straight series of squares on the grid. Simply move the creature one square at a time in a single direction without ever bending back in a direction opposite to where they've already moved.
 
+<!-- @type: rule | @group: combat | @id: target -->
 #### Target
 
 The "Target" entry of an ability, represented by this symbol 🎯, notes the number of creatures, objects, or both who can be targeted by that ability. You can always affect fewer targets than the number indicated by this entry.
@@ -4378,10 +4396,12 @@ If an ability targets one or more objects, it can affect any object within the a
 
 When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) [Minor Telekinesis](scc:mcdm.heroes.v1/feature.ability.talent.level-1/minor-telekinesis) ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
 
+<!-- @type: rule | @group: combat | @id: enemy -->
 ##### Enemy
 
 If an ability targets one or more enemies, it can affect only creatures who are hostile to the creature using the ability. Typically, you decide who counts as an enemy for the purpose of using your hero's abilities, though the Director has the final say.
 
+<!-- @type: rule | @group: combat | @id: ally -->
 ##### Ally
 
 If an ability targets one or more allies, it can affect only willing creatures who are friendly to the creature using the ability. Typically, you and any other player whose character you target with an ability decide who counts as an ally, though the Director has the final say.
@@ -4400,6 +4420,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 >
 > There might be times when a foe disguises or obscures themself so that they're temporarily seen as an ally—or at least not seen as an enemy. Until the effect ends, such a creature can't be targeted by abilities that would usually target them by targeting enemies. Fear not, though. All classes have access to at least one ability that targets creatures, whether friend or foe.
 
+<!-- @type: rule | @group: dice | @id: ability-roll -->
 #### Ability Roll
 
 If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about power rolls.)
@@ -4450,10 +4471,12 @@ Unless otherwise indicated, any effects that are determined by a power roll's ti
 
 Certain ability effects allow you to move and affect other creatures or objects during that move, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) [One Hundred Throats](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/one-hundred-throats) ability. For such abilities, the move begins in the space you first leave when you start the move and ends in the last space you move into.
 
+<!-- @type: rule | @group: damage | @id: rolled-damage -->
 #### Rolled Damage
 
 Certain effects talk about rolled damage, which refers to the variable damage determined by making an ability roll. If an ability or effect deals damage without requiring a power roll, that is not rolled damage, and effects that add to or are triggered by rolled damage don't apply.
 
+<!-- @type: rule | @group: character | @id: potency -->
 #### Potencies
 
 Many abilities and other effects impose conditions and unique statuses on targets. But creatures sometimes get a chance to resist such effects. After all, a monster with a high Might should be harder to knock [prone](scc:mcdm.heroes.v1/condition/prone) most of the time than a creature lacking in that characteristic.
@@ -4514,6 +4537,7 @@ For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch abi
 
 This rule also applies to Director-controlled creatures who spend Malice on abilities and features that affect a target using a potency and have no other automatic effects.
 
+<!-- @type: rule | @group: combat | @id: critical-hit -->
 #### Critical Hit
 
 Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
@@ -4526,6 +4550,7 @@ When an ability has multiple targets (whether a strike with more than one target
 
 For example, if you target three creatures with a strike ability and the power roll totals 11, each of the targets should be affected by the tier 1 outcome of the ability. However, if you gain an edge on strikes against one of the targets to add 2 to the power roll, your total against that target is 13, and they are affected by the tier 2 outcome of the ability.
 
+<!-- @type: rule | @group: resource | @id: surge -->
 #### Surges
 
 A [troubadour's](scc:mcdm.heroes.v1/class/troubadour) battle song, a [fury's](scc:mcdm.heroes.v1/class/fury) building ferocity, and a [shadow's](scc:mcdm.heroes.v1/class/shadow) patient insight can all make a hero more effective in a fight. These advantages are represented by surges, with many abilities granting heroes surges during a battle.
@@ -4561,10 +4586,12 @@ Different effects that impose the same condition (see Conditions below) don't st
 
 When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and conditions that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being winded, unconscious, or dying. After combat, effects and conditions imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
 
+<!-- @type: rule | @group: combat | @id: end-of-turn -->
 ##### End of Next Turn (EoT)
 
 Many effects last until the end of the target's next turn, abbreviated as "(EoT)" in the tier outcomes for an ability's power roll. A creature suffers from such an effect until the end of their next turn, or the end of their current turn if the effect was imposed on their current turn.
 
+<!-- @type: rule | @group: general | @id: saving-throw -->
 ##### Saving Throw (Save Ends)
 
 If an effect has "(save ends)" at the end of its description, a creature suffering the effect makes a saving throw at the end of each of their turns to remove the effect. A saving throw represents the sheer luck involved in shaking off an effect. Because a target typically had a chance to avoid a "save ends" effect using a characteristic score to resist a potency, it's now down to fate.
@@ -4579,10 +4606,12 @@ Some effects last until the end of the encounter. If such an effect is used outs
 
 A creature who imposes an effect on another creature using an ability can end that effect as a free maneuver unless the ability says otherwise.
 
+<!-- @type: rule | @group: combat | @id: adjacent -->
 ##### Adjacent
 
 Many abilities and other options refer to creatures, objects, or spaces that are adjacent to a specified creature. Something is adjacent to a creature if it is within 1 square of that creature.
 
+<!-- @type: rule | @group: combat | @id: line-of-effect -->
 #### Line of Effect
 
 To target a creature or object with an ability or effect, including making a strike against them, you must have line of effect to that target. If any solid object, such as a wall or pillar, completely blocks the target from you, then you don't have line of effect.
@@ -4597,12 +4626,14 @@ If you use an ability that creates an environmental effect, such as a portal, yo
 
 Whenever a creature moves or is subjected to [forced movement](scc:mcdm.heroes.v1/movement/forced-movement)—a push, pull, or slide (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat))—that movement is typically in a straight line. Abilities that allow you to move or to force move another creature often talk about moving straight toward or away from a creature or an object. But even when movement must be in a straight line, it doesn't have to be a horizontal or vertical line on an encounter map. (See the Straight Lines sidebar earlier in this chapter.)
 
+<!-- @type: rule | @group: general | @id: ground -->
 #### Ground and Ceiling
 
 Some abilities and other effects refer to a hero or their targets being "on the ground." Unless otherwise indicated, "ground" means any surface a creature could typically stand, sit, or lie upon, whether a castle's stone floor, the dirt of a road, the deck of a ship, or a metal platform suspended high in the air.
 
 Likewise, if an effect refers to a "ceiling," that means any solid surface above a creature, whether a wooden tavern ceiling, the rocky roof of a cave, or an invisible wall of force.
 
+<!-- @type: rule | @group: combat | @id: condition -->
 #### Conditions
 
 Some abilities and other effects apply specific negative effects called conditions to a creature. The following conditions show up regularly in the game and can be tracked on your character sheet when they affect your hero.
@@ -20374,6 +20405,7 @@ When a hero attempts to solve a task that typically requires a test with clever,
 
 That said, such clever ideas often work for free the first time, but the Director could decide they require tests if they are used again.
 
+<!-- @type: rule | @group: test | @id: test -->
 ### How to Make a Test
 
 Each test has the following steps:
@@ -20463,6 +20495,7 @@ A hard test has a greater risk of failure, and most heroes are likely to suffer 
 - **12-16:** You fail the task.
 - **17+:** You succeed on the task.
 
+<!-- @type: rule | @group: dice | @id: natural-19-20 -->
 ##### Natural 19 or 20: Success With a Reward
 
 Whenever you get a natural 19 or 20 on the power roll for a test—a total of 19 or 20 before adding your characteristic score or other modifiers you score a critical success. This critical success automatically lets you succeed on the task with a reward, even if the test has a medium or hard difficulty.
@@ -20571,6 +20604,7 @@ An NPC might also make a Presence test if they lie to the heroes, as long as the
 
 As an optional rule, the Director is also free to ask the heroes to make a reactive test to a deceptive NPC instead (see Reactive Tests below) whenever they choose.
 
+<!-- @type: rule | @group: dice | @id: opposed-power-roll -->
 #### Opposed Power Rolls
 
 When two creatures are engaged in a particularly dramatic struggle that requires them both to make tests, the Director can have all the creatures involved make a test. The creature with the highest power roll wins. You can't earn a reward as part of these opposed power rolls, and they don't follow the typical difficulty structure or have three different tiers of possible outcomes.
@@ -20581,6 +20615,7 @@ In the event of a tie in an opposed test, the state of the scene doesn't change.
 
 Since opposed power rolls don't use tiers, when you make an opposed power roll, a double edge provides a +4 bonus to the roll, a double bane provides a -4 penalty to the roll, an automatic tier increase counts as a +4 bonus to the roll, and an automatic tier decrease counts as a -4 penalty to the roll.
 
+<!-- @type: rule | @group: test | @id: reactive-test -->
 ### Reactive Tests
 
 At certain times when a hero isn't engaged in overcoming a task, the Director might ask the player of the hero to make a test without context, explaining the test only after the power roll is made. This often happens when a hero has a chance of knowing or noticing something of significance that the player doesn't know to look for or ask about.
@@ -21178,6 +21213,7 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an Agility test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another characteristic at the Director's discretion, such as using Presence to blend in with a crowd on a packed city street.
 
+<!-- @type: rule | @group: test | @id: group-test -->
 ### Group Tests
 
 Whenever two or more heroes attempt to overcome a single, simple task together that calls for them to make the same test, the Director can call for a group test. For example, if several heroes are all attempting to climb the outside of a tower at the same time, giving each other assistance and advice, they could be asked to make a Might group test. If a group of heroes attempt to sneak by a sleeping ogre, they might make an Agility group test.
@@ -21200,6 +21236,7 @@ If the heroes failed the group test and more than half of them incurred a conseq
 
 If fewer than half the heroes incur a consequence or earn a reward on their individual tests, then the group test simply succeeds or fails.
 
+<!-- @type: rule | @group: test | @id: montage-test -->
 ### Montage Tests
 
 When a group of heroes works together over time to accomplish a common goal that requires more than a single characteristic, the Director can call for a montage test. Such tests typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage tests.
@@ -21344,6 +21381,7 @@ When combat begins, the Director should position miniatures or tokens on a gridd
 >
 > It's helpful to know how big a square is for abilities and features that heroes and NPCs can use outside of combat. By default, a square is 5 feet on all sides. But the Director can change this measurement to 2 yards, 2 meters, 1 meter, or any other measurement you prefer, as long as that scale stays consistent throughout your game.
 
+<!-- @type: rule | @group: character | @id: size -->
 #### Size and Space
 
 A creature's size indicates how many squares they occupy during combat, which defines the creature's space. If a creature's size is 1, they occupy a space of 1 square. If a creature is larger than 1 square, their size equals the number of squares they take up in length, width, and height. For example, a horse has a size of 2, which means that during combat, they occupy a space that is 2 squares long, 2 squares wide, and 2 squares high. You could also think of that space as a cube that is 2 squares on all sides.
@@ -21367,6 +21405,7 @@ The Creature Sizes table shows example sizes for creatures up to size 5, but lar
 | 4     | Hill giant       |
 | 5     | Omen dragon      |
 
+<!-- @type: rule | @group: combat | @id: side -->
 #### Sides
 
 Every combat encounter is a conflict between two sides. The heroes and any of their allies are one side, controlled by the players. Any creatures who oppose the heroes are the other side, controlled by the Director. All creatures who oppose the heroes are on the same side, even if those creatures also oppose each other. For example, if the heroes are battling a group of bandits when a kingfissure worm suddenly bursts into the fray to devour player characters and brigands alike, the worm is still on the side of the bandits for the purpose of the game's combat rules.
@@ -21375,6 +21414,7 @@ Every combat encounter is a conflict between two sides. The heroes and any of th
 >
 > If an NPC ally fights alongside the heroes, the Director should give the players the ally's stat block and let them control the NPC during combat. The Director has enough to worry about. As well, any missteps, mistakes, or triumphs the ally makes will be thanks to the decisions of the players and not the Director, which can make the outcome of the battle more satisfying for the players.
 
+<!-- @type: rule | @group: combat | @id: combat-round -->
 ### Combat Round
 
 Combat takes place over a series of combat rounds. During a combat round, each creature in the battle takes a turn. Once every creature has taken a turn, a new round begins.
@@ -21383,6 +21423,7 @@ Combat takes place over a series of combat rounds. During a combat round, each c
 
 Combat starts as soon as one creature intends to harm another, or when some environmental effect is in a position to deal damage to or impose other negative effects on one or more creatures. This means that even before the action happens, a hero can't use a heroic ability without spending their Heroic Resource on it, because combat has already begun!
 
+<!-- @type: rule | @group: combat | @id: surprised -->
 #### Determine Surprise
 
 When battle starts, the Director determines which creatures, if any, are caught off guard. Any creature who isn't ready for combat at the start of an encounter is surprised until the end of the first combat round. A surprised creature can't take triggered actions or free triggered actions, and ability rolls made against them gain an edge.
@@ -21425,12 +21466,14 @@ Director-controlled creatures act in groups, with information for building group
 
 Once all creatures on both sides of a battle have acted, the combat round ends and a new combat round begins. The side whose members acted first during the initial combat round goes first in all subsequent rounds.
 
+<!-- @type: rule | @group: combat | @id: turn -->
 ### Taking a Turn
 
 Each creature in combat—whether hero, adversary, or something in between—gets to take a **main action**, a **maneuver**, and a **move action** on their turn (explained later in this chapter). Each combatant can perform their maneuver and main action in any order, and can break up the movement granted by their move action before, after, or between their maneuver and main action however they like. You can also turn your main action into a move action or a maneuver, so that your turn can alternatively consist of two move actions and a maneuver, or two maneuvers and a move action.
 
 The Movement section below breaks down how your move action works, while the Maneuvers and Main Actions sections break down the baseline maneuvers and main actions your character can undertake. For any activities not specifically covered in those rules, such as cutting down a chandelier to drop on enemies, the Director decides whether such an activity is a maneuver or a main action.
 
+<!-- @type: rule | @group: combat | @id: triggered-action -->
 #### Triggered Actions and Free Triggered Actions
 
 Your hero might have one or more unique triggered actions, each of which has a specified trigger that allows the action to be used. You can use one triggered action per round, either on your turn or another creature's turn, but only when the action's trigger occurs. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) hero can use the [Lines of Force](scc:mcdm.heroes.v1/feature.ability.fury.level-1/lines-of-force) triggered action to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target, but only after an enemy has first tried to [force move](scc:mcdm.heroes.v1/movement/forced-movement) the [fury](scc:mcdm.heroes.v1/class/fury) or another nearby creature.
@@ -21441,6 +21484,7 @@ If multiple triggered actions occur in response to the same trigger, any heroes 
 
 Any effect that prevents you from using triggered actions also prevents you from using free triggered actions.
 
+<!-- @type: rule | @group: combat | @id: free-maneuver -->
 #### Free Maneuvers
 
 Boring stuff like opening an unlocked door, picking up an arrow from the ground, giving an object to an adjacent ally, or drawing a weapon doesn't require a maneuver or a main action. Rather, you can undertake such straightforward activities as free maneuvers on your turn. A free maneuver follows the same rules as a regular maneuver, but you can typically take as many free maneuvers as you like.
@@ -21710,6 +21754,7 @@ If any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) remains af
 
 If you can't [fly](scc:mcdm.heroes.v1/movement/fly) and are force moved across an open space that would cause you to fall, such as being pushed over the edge of a cliff, you continue moving the total distance you were moved first. If you are still in a position to fall when the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ends, you fall.
 
+<!-- @type: rule | @group: character | @id: stability -->
 ##### Stability
 
 Each creature has a stability that allows them to resist [forced movement](scc:mcdm.heroes.v1/movement/forced-movement). When a creature is force moved, they can reduce that movement up to a number of squares equal to their stability. Heroes start with stability 0 and can increase their stability through ancestry, class, and kit options.
@@ -21898,6 +21943,7 @@ Many rules and abilities allow heroes to make [free strikes](scc:mcdm.heroes.v1/
 
 Some abilities, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) or I'll Open and You'll Close abilities, allow another creature to use a signature ability or heroic ability when it isn't their turn. Unless otherwise stated, a creature can always use a [free strike](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike) instead of a granted signature ability or heroic ability.
 
+<!-- @type: rule | @group: combat | @id: opportunity-attack -->
 #### Opportunity Attacks
 
 Whenever a creature has an enemy adjacent to them and the enemy willingly moves to a space that isn't adjacent to the creature without [shifting](scc:mcdm.heroes.v1/movement/shifting), the creature can take advantage of that movement to quickly make a melee [free strike](scc:mcdm.heroes.v1/feature.trait.common.main-actions/free-strike) against the enemy as a free triggered action. This is called an opportunity attack.
@@ -21936,6 +21982,7 @@ A melee weapon free strike is a melee strike made with an unarmed strike or an i
 - **12-16:** 4 + M or A damage
 - **17+:** 6 + M or A damage
 
+<!-- @type: rule | @group: combat | @id: flanking -->
 ### Flanking
 
 When you and one or more allies are adjacent to the same enemy and on opposite sides of the enemy, you are flanking that enemy. While flanking an enemy, you gain an edge on melee strikes against them.
@@ -21944,10 +21991,12 @@ If you're unsure whether your hero and an ally are flanking a foe, imagine a lin
 
 You must have line of effect to the enemy and be able to take triggered actions to gain or grant the flanking benefit.
 
+<!-- @type: rule | @group: combat | @id: cover -->
 ### Cover
 
 When you have line of effect to a creature or object but that target has at least half their form blocked by a solid object such as a tree, wall, or overturned table, the target has cover. You take a bane on damage-dealing abilities used against creatures or objects that have cover from you.
 
+<!-- @type: rule | @group: combat | @id: concealment -->
 ### Concealment
 
 Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, strikes against such targets take a bane.
@@ -21956,16 +22005,19 @@ Darkness, fog, invisibility magic, and any other effect that fully obscures a cr
 
 Invisible creatures always have concealment from other creatures. If an invisible creature isn't hidden, they can still be targeted by abilities. The test made to find a hidden creature who is invisible takes a bane.
 
+<!-- @type: rule | @group: damage | @id: damage -->
 ### Damage
 
 Strikes, area attacks, environmental effects, and other hazards can all deal damage to the heroes and their foes. Whenever a creature takes damage, they reduce their Stamina (see below) by an amount equal to the damage taken.
 
+<!-- @type: rule | @group: damage | @id: damage-type -->
 #### Damage Types
 
 Typical damage, such as that caused by weapons, falling, traps, and monstrous claws, has no type associated with it. That's because for most creatures, there's no difference in the amount of harm caused by being run through with a pike, dropped from a height onto a stone floor, slashed by a pendulum scythe, or skewered on a minotaur's horns.
 
 However, when it comes to elemental and supernatural damage sources, some creatures might have an immunity or weakness to that damage. As such, abilities and effects note when they deal any of the following damage types: acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic.
 
+<!-- @type: rule | @group: damage | @id: damage-immunity -->
 ##### Damage Immunity
 
 Damage immunity means that a creature can ignore some or all of the damage they would usually take from certain attacks or effects.
@@ -21976,6 +22028,7 @@ Damage immunity should be the last thing applied when calculating damage. For in
 
 If multiple damage immunities apply to a source of damage, only the immunity with the highest value applies. For instance, a creature with damage immunity 5 and fire immunity 10 who takes 12 fire damage reduces the damage by 10 points.
 
+<!-- @type: rule | @group: damage | @id: damage-weakness -->
 ##### Damage Weakness
 
 Damage weakness works like damage immunity, except that creatures take extra damage whenever they take damage of the indicated type. For instance, if a creature has fire weakness 5 and is dealt 10 fire damage, they take 15 fire damage instead.
@@ -21986,22 +22039,26 @@ If a creature has both damage immunity and damage weakness for a source of damag
 
 If multiple damage weaknesses apply to a source of damage, only the weakness with the highest value applies.
 
+<!-- @type: rule | @group: health | @id: stamina -->
 ### Stamina
 
 Your hero's survivability is represented by your Stamina. Think of Stamina as a combination of a creature's physical vitality and their overall energy for dodging and resisting incoming blows, spells, and other violence. It's not that every instance of damage deals a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) wound to you, but that each one chips away at your ability to fight effectively. One attack might make you sweat as you leap back to avoid an arrow, while another might graze your elbow with a dagger nick, leaving a dull, distracting pain. Eventually, this draining of energy leaves you open for bigger blows that can truly harm your body—or possibly kill you.
 
 After any damage you take is reduced by damage immunity or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
 
+<!-- @type: rule | @group: health | @id: recoveries -->
 #### Recoveries and Recovery Value
 
 Each hero has a number of Recoveries determined by their class. A hero also has a recovery value that equals one-third of their Stamina maximum, rounded down. When you use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver in combat (see Maneuvers above), you spend a Recovery and regain Stamina equal to your recovery value. Outside of combat, you can spend as many Recoveries as you have remaining. Some abilities, items, and other effects allow you to spend a Recovery to regain Stamina equal to your recovery value plus a little extra (as described by the effect), or to regain Stamina without spending a Recovery.
 
+<!-- @type: rule | @group: health | @id: winded -->
 #### Winded
 
 Your winded value equals half your Stamina maximum. When your Stamina is equal to or less than your winded value, you are winded. Although being winded has no effects on its own, certain ancestry, class, item, title, and monster abilities affect winded creatures.
 
 You can tell when other creatures are winded and vice versa.
 
+<!-- @type: rule | @group: health | @id: dying -->
 #### Dying and Death
 
 When your Stamina is 0 or lower, you are dying. While dying, you can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver in combat. Additionally, you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding), and this instance of the condition can't be negated or removed in any way until you are no longer dying. While you are dying, you can still act, your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.
@@ -22028,6 +22085,7 @@ Heroes remain unconscious for 1 hour if no one does anything to wake them. After
 
 While you are unconscious, you can't take main actions, maneuvers, triggered actions, free triggered actions, or free maneuvers; your speed is 0; you are unaware of your surroundings; and you [are prone](scc:mcdm.heroes.v1/condition/prone). Ability rolls against you have a double edge. If you wake up from being unconscious, you can stand up from prone as a free maneuver.
 
+<!-- @type: rule | @group: health | @id: temporary-stamina -->
 #### Temporary Stamina
 
 Some abilities, treasures, and other effects grant a creature temporary Stamina. Temporary Stamina shouldn't be included in a creature's Stamina total when figuring out a creature's recovery value or winded value. If you have temporary Stamina while winded, dying, or dead, the temporary Stamina doesn't change those states.
@@ -22038,6 +22096,7 @@ There is no maximum to how much temporary Stamina you can have. Regaining Stamin
 
 Unless otherwise indicated, temporary Stamina disappears at the end of an encounter.
 
+<!-- @type: rule | @group: general | @id: unattended-object -->
 #### Object Stamina
 
 Mundane objects in the game have Stamina based on the material they're made of. When an object's Stamina is reduced to 0, the object is destroyed. Objects have poison immunity all and psychic immunity all, though the Director can remove one or both of these immunities in the case of living objects, such as plants. A size 1 object or 1 square of a larger object made of common materials has Stamina as follows:
@@ -22049,10 +22108,12 @@ Mundane objects in the game have Stamina based on the material they're made of. 
 
 The Director can decide that a well-made or poorly made object has more or less Stamina. Destroying a supernatural object often (but not always) requires a specific quest, such as throwing a magic ring back into the volcano where it was forged.
 
+<!-- @type: rule | @group: combat | @id: underwater-combat -->
 ### Underwater Combat
 
 If a creature is fully submerged in water, they have fire immunity 5 and lightning weakness 5. If they can't automatically swim at full speed while moving, their power rolls take a bane.
 
+<!-- @type: rule | @group: health | @id: suffocating -->
 ### Suffocating
 
 During combat or under similarly stressful circumstances, you can hold your breath for a number of combat rounds equal to your Might score (minimum 1 round). At the end of each combat round after that, you take 1d6 damage while holding your breath.
