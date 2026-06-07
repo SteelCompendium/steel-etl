@@ -64,3 +64,10 @@ func TestClassifyEmptyTypePath(t *testing.T) {
 		t.Errorf("expected mcdm.heroes.v1/fury, got %s", scc)
 	}
 }
+
+func TestClassifyGroupedRule(t *testing.T) {
+	got := Classify("mcdm.heroes.v1", []string{"rule", "combat"}, "flanking")
+	if want := "mcdm.heroes.v1/rule.combat/flanking"; got != want {
+		t.Errorf("Classify = %q, want %q", got, want)
+	}
+}
