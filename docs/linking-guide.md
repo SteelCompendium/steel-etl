@@ -17,6 +17,20 @@ session and followed step by step.
 > **Rule reinforced:** when a short term is the prefix of a longer game entity, link the
 > *whole* entity to its own code, not just the prefix.
 
+> **2026-06-06 — Audit pass (kits, combat mechanics, gods).** A whole-document audit
+> (`scripts/link_audit.py`) surfaced gaps the earlier passes missed:
+> (1) **Hyphen/spacing variants** — the reference lists "Rapid Fire" (space) but the doc
+> writes "Rapid-Fire" (hyphen), so it was skipped in the kit table while every other kit
+> was linked. **Always check hyphen↔space and plural/possessive variants of a term.**
+> (2) **Combat mechanics were never linkable** — the `feature.{trait,ability}.common.*`
+> move actions / maneuvers / free strikes are absent from `linking-reference.md` and were
+> never linked. Linked the unambiguous ones (Advance/Disengage/Ride move actions; Catch
+> Breath, Escape Grab, Aid Attack, Search for Hidden Creatures, Use Consumable, Stand Up
+> maneuvers); the common-verb ones (Hide, Charge, Grab, Knockback, Heal, Defend) and
+> Free Strike remain — see `FOLLOWUPS.md` #6. (3) Linked distinctive gods (Cavall, etc.,
+> own-section excluded) and the Templar `Domain Piety and Effects` truncation.
+> **Tooling:** `scripts/link_audit.py`, `link_audit_category.py`, `link_apply.py`.
+
 ## Reference
 
 - **Reference table:** `docs/linking-reference.md` — all linkable terms with display names, variants, and SCC codes

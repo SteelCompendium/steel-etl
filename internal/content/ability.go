@@ -112,6 +112,16 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 			typePath = append(typePath, groupID)
 		}
 	}
+	// Named feature-group grouping under a class (mirrors FeatureParser): an
+	// ability sitting directly inside a named feature-group — class-scoped, no
+	// level — takes the group id as a path segment (e.g. the fury's "Aspect of
+	// the Wild" under "Stormwight Kits"). Kit-scoped signature abilities use
+	// parentType=="kit" and are unaffected.
+	if parentType == "class" && levelStr == "" {
+		if groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group"); groupID != "" {
+			typePath = append(typePath, groupID)
+		}
+	}
 	if levelStr != "" {
 		typePath = append(typePath, "level-"+levelStr)
 	}

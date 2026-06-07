@@ -108,6 +108,17 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 			typePath = append(typePath, groupID)
 		}
 	}
+	// Named feature-group grouping under a class/ancestry (e.g. the fury's
+	// "Stormwight Kits"): a feature sitting directly inside a named feature-group
+	// — no level, no nearer kit — takes the group id as a path segment so its
+	// siblings collapse into one browse-index group instead of dangling at the
+	// class root. Level groups carry @level (not @id) so they never match here;
+	// the kit branch below handles kit-scoped features (Boren, Corven, …).
+	if levelStr == "" && kitID == "" && (classID != "" || ancestryID != "") {
+		if groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group"); groupID != "" {
+			typePath = append(typePath, groupID)
+		}
+	}
 	if levelStr != "" {
 		typePath = append(typePath, "level-"+levelStr)
 	}

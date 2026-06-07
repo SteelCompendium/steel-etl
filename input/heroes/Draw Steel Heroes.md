@@ -115,11 +115,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Adjacent:** Within 1 square.
 
-**Advance Move Action:** A move action that allows a creature to move a number of squares up to their speed. This movement can be broken up by a creature's maneuver and main action.
+**[Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) Move Action:** A move action that allows a creature to move a number of squares up to their speed. This movement can be broken up by a creature's maneuver and main action.
 
 **Agility:** A characteristic that represents a creature's coordination and nimbleness.
 
-**Aid Attack Maneuver:** A maneuver that allows a creature to choose an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
+**[Aid Attack](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack) Maneuver:** A maneuver that allows a creature to choose an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
 
 **Ally:** A creature who is willingly friendly to another creature.
 
@@ -153,7 +153,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Career:** The job a hero had before becoming a hero.
 
-**Catch Breath Maneuver:** A maneuver that allows a hero to spend a Recovery and regain Stamina equal to their recovery value.
+**[Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) Maneuver:** A maneuver that allows a hero to spend a Recovery and regain Stamina equal to their recovery value.
 
 **[Censor](scc:mcdm.heroes.v1/class/censor):** A class for a hero who is a trained warrior devoted to a saint or god.
 
@@ -231,7 +231,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Discipline:** The [null's](scc:mcdm.heroes.v1/class/null) Heroic Resource.
 
-**Disengage Move Action:** A move action that allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
+**[Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) Move Action:** A move action that allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
 
 **Distance:** The number of squares away that a creature using an ability can affect targets with that ability. The "Distance" entry in an area ability also includes the type of area of effect created by that ability.
 
@@ -247,7 +247,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** An ancestry with stone skin and short stature.
 
-**Dying:** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and they can't use the Catch Breath maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
+**Dying:** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and they can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
 
 **Echelon:** A grouping of heroic levels that informs players of the types of heroic deeds the heroes can achieve. There are four echelons of play: 1st echelon (1st to 3rd level), 2nd echelon (4th to 6th level), 3rd echelon (7th to 9th level), and 4th echelon (10th level).
 
@@ -261,7 +261,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Enhancement:** A property given to an armor, implement, or weapon treasure that a hero creates as part of a crafting project.
 
-**Escape Grab Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an ability roll to escape.
+**[Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an ability roll to escape.
 
 **Essence:** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) Heroic Resource.
 
@@ -457,7 +457,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Respite Activity:** An activity that can be undertaken during a respite. A hero can take one respite activity per respite.
 
-**[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's speed to 0 and prevents them from using the Stand Up maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
+**[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's speed to 0 and prevents them from using the [Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
 **Retainer:** A follower who adventures alongside a hero.
 
@@ -465,7 +465,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Reward:** A helpful boon granted by succeeding on a test, gained in addition to the creature making the test accomplishing what they set out to do. A creature always gains a reward on a test that is a natural 19 or 20.
 
-**Ride Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's speed, taking the rider with them.
+**[Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's speed, taking the rider with them.
 
 **Rolled Damage:** Variable damage determined by the outcome of an ability roll. Effects that grant bonuses to rolled damage have no effect on damage that is dealt without an ability roll.
 
@@ -477,7 +477,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Saving Throw:** A creature makes a saving throw to end a "save ends" effect at the end of their turn. They roll a d10, and if the roll is 6 or higher, the effect ends.
 
-**Search for Hidden Creatures Maneuver:** A maneuver that allows a creature to make a test to locate nearby creatures who are hidden from them.
+**[Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/search-for-hidden-creatures) Maneuver:** A maneuver that allows a creature to make a test to locate nearby creatures who are hidden from them.
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** A class for a hero who is an expert infiltrator and thief utilizing magic.
 
@@ -497,7 +497,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Space:** The number of squares taken up by a creature or object in length, width, and height, and the area of the same size that a creature or object occupies on an encounter map.
 
-**Speed:** A measure of how many squares a creature can move when taking the Advance move action during combat.
+**Speed:** A measure of how many squares a creature can move when taking the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action during combat.
 
 **Square:** The smallest unit of measurement on an encounter map. Distance, space, and speed are all reckoned in squares.
 
@@ -505,7 +505,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Stamina:** A measure of a creature's health and vitality. When a hero's Stamina is reduced to 0 or lower, they are dying. When a nonhero creature's Stamina is reduced to 0, they die or are knocked unconscious, as determined by the creature who reduced them to 0 Stamina.
 
-**Stand Up Maneuver:** A maneuver that a [prone](scc:mcdm.heroes.v1/condition/prone) creature can use to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent [prone](scc:mcdm.heroes.v1/condition/prone) creature to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on them.
+**[Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) Maneuver:** A maneuver that a [prone](scc:mcdm.heroes.v1/condition/prone) creature can use to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent [prone](scc:mcdm.heroes.v1/condition/prone) creature to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on them.
 
 **Strained:** A state the [talent](scc:mcdm.heroes.v1/class/talent) enters when they have clarity below 0, and which effects their abilities.
 
@@ -871,7 +871,7 @@ When you spend a Recovery, you regain Stamina equal to your **recovery value**, 
 
 ##### Spending Recoveries
 
-During combat encounters and similarly dangerous situations when time is tracked in rounds (see Combat), you can use the Catch Breath maneuver to regain Stamina. (See Catch Breath in Maneuvers for more information.) Some heroes have abilities that allow them or their allies to spend more Recoveries without using the Catch Breath maneuver.
+During combat encounters and similarly dangerous situations when time is tracked in rounds (see Combat), you can use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver to regain Stamina. (See [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) in Maneuvers for more information.) Some heroes have abilities that allow them or their allies to spend more Recoveries without using the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver.
 
 Outside of combat and other dangerous situations, you can spend Recoveries freely.
 
@@ -2234,7 +2234,7 @@ When a foe strikes, you reverse the magic of your glamor to instill fear into th
 <!-- @type: feature -->
 ##### Graceful Retreat (1 Point)
 
-You gain a +1 bonus to the distance you can shift when you take the Disengage move action.
+You gain a +1 bonus to the distance you can shift when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### High Senses (1 Point)
@@ -2772,7 +2772,7 @@ The magic coursing through your veins makes you run faster in the heat of battle
 <!-- @type: feature -->
 ##### Glowing Recovery (2 Points)
 
-Your bloodfire allows you to regain your strength quicker than others. Whenever you use the Catch Breath maneuver, you can spend as many Recoveries as you like.
+Your bloodfire allows you to regain your strength quicker than others. Whenever you use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver, you can spend as many Recoveries as you like.
 
 <!-- @type: feature -->
 ##### Grounded (1 Point)
@@ -2832,7 +2832,7 @@ Jago, Sarah, and Beth all smiled at the exchange.
 
 "Do we have to... can we talk about something else, please?" John said.
 
-"I just..." The [polder](scc:mcdm.heroes.v1/ancestry/polder) wouldn't let it go. "You seriously never... you never been to an inn? Cavall's teeth, I can't count how many inns and taverns I've been to run by [polders](scc:mcdm.heroes.v1/ancestry/polder), got [polders](scc:mcdm.heroes.v1/ancestry/polder) in the kitchen or waiting tables. One of the only two things we're good at, I think."
+"I just..." The [polder](scc:mcdm.heroes.v1/ancestry/polder) wouldn't let it go. "You seriously never... you never been to an inn? [Cavall](scc:mcdm.heroes.v1/god/cavall)'s teeth, I can't count how many inns and taverns I've been to run by [polders](scc:mcdm.heroes.v1/ancestry/polder), got [polders](scc:mcdm.heroes.v1/ancestry/polder) in the kitchen or waiting tables. One of the only two things we're good at, I think."
 
 "Yeah?" John asked. "What's the other one?"
 
@@ -2950,7 +2950,7 @@ Courage is all you know. You can't be made [frightened](scc:mcdm.heroes.v1/condi
 <!-- @type: feature -->
 ##### Graceful Retreat (1 Point)
 
-Your small size makes it easier for you to slip away from the fray. You gain a +1 bonus to the distance you can shift when you take the Disengage move action.
+Your small size makes it easier for you to slip away from the fray. You gain a +1 bonus to the distance you can shift when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### Nimblestep (2 Points)
@@ -4607,7 +4607,7 @@ A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) has speed 0, c
 
 A creature who has another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) can use a maneuver to move the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature into an unoccupied space adjacent to them.
 
-A creature can release a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at any time to end that condition (no action required). A [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature can attempt to escape being [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the Escape Grab maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature [teleports](scc:mcdm.heroes.v1/movement/teleport), or if either the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or the creature grabbing them is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) so that both creatures are not adjacent to each other, that creature is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
+A creature can release a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at any time to end that condition (no action required). A [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature can attempt to escape being [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature [teleports](scc:mcdm.heroes.v1/movement/teleport), or if either the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or the creature grabbing them is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) so that both creatures are not adjacent to each other, that creature is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 A creature can grab only creatures of their size or smaller. If a creature's Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
 
@@ -4618,12 +4618,12 @@ Unless otherwise indicated, a creature can grab only one creature at a time.
 
 While a creature is [prone](scc:mcdm.heroes.v1/condition/prone), they are flat on the ground, any strike they make takes a bane, and melee abilities used against them gain an edge. A [prone](scc:mcdm.heroes.v1/condition/prone) creature must [crawl](scc:mcdm.heroes.v1/movement/crawl) to move along the ground, which costs 1 additional square of movement for every square crawled. A creature can't climb, [jump](scc:mcdm.heroes.v1/movement/jump), swim, or [fly](scc:mcdm.heroes.v1/movement/fly) while [prone](scc:mcdm.heroes.v1/condition/prone). If they are climbing, [flying](scc:mcdm.heroes.v1/movement/fly), or jumping when knocked [prone](scc:mcdm.heroes.v1/condition/prone), they fall.
 
-Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/condition/prone) condition says otherwise, a [prone](scc:mcdm.heroes.v1/condition/prone) creature can stand up using the Stand Up maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). A creature adjacent to a willing [prone](scc:mcdm.heroes.v1/condition/prone) creature can likewise use the Stand Up maneuver to make that creature stand up.
+Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/condition/prone) condition says otherwise, a [prone](scc:mcdm.heroes.v1/condition/prone) creature can stand up using the [Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). A creature adjacent to a willing [prone](scc:mcdm.heroes.v1/condition/prone) creature can likewise use the [Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) maneuver to make that creature stand up.
 
 <!-- @type: condition | @id: restrained -->
 ##### Restrained
 
-A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the Stand Up maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
+A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
 
 If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/restrained), that condition ends.
 
@@ -4725,7 +4725,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.trait.censor.level-1/censor-order
 
 Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
-After choosing your deity, pick one domain from their portfolio. Your choice of domain determines many of the features you'll gain from this class. (*Quick Build:* Cavall as deity and War as domain.)
+After choosing your deity, pick one domain from their portfolio. Your choice of domain determines many of the features you'll gain from this class. (*Quick Build:* [Cavall](scc:mcdm.heroes.v1/god/cavall) as deity and War as domain.)
 
 <!-- @type: feature -->
 #### Wrath
@@ -6092,7 +6092,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Templar
 
-You are the ultimate representation of your god's justice in the timescape. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see Domain Piety and Effects in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with [virtue](scc:mcdm.heroes.v1/feature.trait.censor.level-10/virtue) (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
+You are the ultimate representation of your god's justice in the timescape. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.trait.conduit.level-1/domain-piety-and-effects) in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with [virtue](scc:mcdm.heroes.v1/feature.trait.censor.level-10/virtue) (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
 
 Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
 
@@ -6171,7 +6171,7 @@ As a [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the following feature
 
 Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
-After choosing your deity, pick two domains from their portfolio. The two domains you pick make up your subclass, and your choice of domains determines many of the features you'll gain as you gain new levels. (*Quick Build:* Adûn for deity, and Life and Protection as domains.)
+After choosing your deity, pick two domains from their portfolio. The two domains you pick make up your subclass, and your choice of domains determines many of the features you'll gain as you gain new levels. (*Quick Build:* [Adûn](scc:mcdm.heroes.v1/god/adun) for deity, and Life and Protection as domains.)
 
 <!-- @type: feature -->
 #### Piety
@@ -6230,7 +6230,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 
 ###### Love Domain Piety and Effect
 
-- **Piety:** You gain 2 piety the first time in an encounter that you or any ally within 10 squares uses the Aid Attack maneuver or an ability that targets an ally.
+- **Piety:** You gain 2 piety the first time in an encounter that you or any ally within 10 squares uses the [Aid Attack](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack) maneuver or an ability that targets an ally.
 - **Prayer Effect:** Each ally within 10 squares of you gains temporary Stamina equal to two times your Intuition score.
 
 ###### Nature Domain Piety and Effect
@@ -6255,7 +6255,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 
 ###### Trickery Domain Piety and Effect
 
-- **Piety:** You gain 2 piety the first time in an encounter that you or a creature within 10 squares takes the Aid Attack or [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver.
+- **Piety:** You gain 2 piety the first time in an encounter that you or a creature within 10 squares takes the [Aid Attack](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack) or [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver.
 - **Prayer Effect:** You slide one creature within 10 squares of you up to a number of squares equal to 5 + your [conduit](scc:mcdm.heroes.v1/class/conduit) level.
 
 ###### War Domain Piety and Effect
@@ -6493,7 +6493,7 @@ If you have a kit, you can't take this blessing.
 <!-- @type: feature -->
 ##### Prayer of Speed
 
-Your god blesses your flesh and infuses it with divine quickness. You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action.
+Your god blesses your flesh and infuses it with divine quickness. You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### Prayer of Steel
@@ -8232,7 +8232,7 @@ If you have a kit, you can't take this [enchantment](scc:mcdm.heroes.v1/feature.
 <!-- @type: feature -->
 ##### Enchantment of Celerity
 
-You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action.
+You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### Enchantment of Destruction
@@ -8621,7 +8621,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Giant<br>salamander | 6th   | 5                 | 5             | 1L   | +3              | +2/+2/+2           | Your melee free strike deals fire damage. Additionally, you have fire immunity<br>3.                                                                                                                                                                                            |
 | Giant spider        | 6th   | 0                 | 5 (climb)     | 2    | +0              | +0/+1/+2           | You have a double edge on melee free strikes against creatures you are hidden<br>from.                                                                                                                                                                                          |
 | Giant snake         | 7th   | 5                 | 5             | 3    | +0              | +0/+1/+2           | Whenever you obtain a tier 2 or tier 3 outcome on a melee free strike, you<br>can automatically grab the target. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes 2<br>damage at the start of each of their turns.                                                                      |
-| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a critical hit with a melee free strike, the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the Advance move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
+| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a critical hit with a melee free strike, the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an adjacent creature's melee ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
 | Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke opportunity attacks.                                                                                                                                                                                                                             |
 | Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an edge on strikes against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or winded.                                                                                                                              |
@@ -9264,7 +9264,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |--------------------------|----------------:|
 > | **📏 Ranged 10**         |  **🎯 Special** |
 > 
-> **Effect:** A size 5 tree appears in an unoccupied space within distance. The tree has 100 Stamina and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the Catch Breath maneuver as a free maneuver. Additionally, when you start your turn with line of effect to the tree, you can end one effect on yourself that is ended by a saving throw or that ends at the end of your turn, or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within distance also gains this benefit.
+> **Effect:** A size 5 tree appears in an unoccupied space within distance. The tree has 100 Stamina and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver as a free maneuver. Additionally, when you start your turn with line of effect to the tree, you can end one effect on yourself that is ended by a saving throw or that ends at the end of your turn, or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within distance also gains this benefit.
 > 
 > Each enemy who ends their turn within 3 squares of the tree is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn. A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way can use a main action to end the effect early.
 
@@ -9596,7 +9596,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordia
 <!-- @type: feature -->
 ##### Beast Shape
 
-You can use and gain the benefits of a stormwight kit (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits)). Your stormwight kit grants you a number of benefits, including benefits tied to your [Growing Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.boren/growing-ferocity) feature.
+You can use and gain the benefits of a stormwight kit (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features)). Your stormwight kit grants you a number of benefits, including benefits tied to your [Growing Ferocity](scc:mcdm.heroes.v1/feature.trait.fury.boren/growing-ferocity) feature.
 
 <!-- @type: feature -->
 ##### Kit
@@ -10049,7 +10049,7 @@ Choose one of the following abilities.
 > - **12-16:** 5 damage; push 2; M < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 7 damage; push 3; M < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > 
-> **Effect:** This ability deals your primordial damage type (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits)).
+> **Effect:** This ability deals your primordial damage type (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features)).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -10081,7 +10081,7 @@ Additionally, you have a bonus to stability equal to your Might score.
 
 You can speak with animals and elementals. Additionally, you automatically sense the presence of animals and elementals within 10 squares of you, even if they are hidden.
 
-When you are in a negotiation with an animal or elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown in a negotiation with an animal of your type while in [animal form](scc:mcdm.heroes.v1/complication/animal-form) (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits)).
+When you are in a negotiation with an animal or elemental, you treat your Renown as 1 higher than usual. This stacks with the increase to your effective Renown in a negotiation with an animal of your type while in [animal form](scc:mcdm.heroes.v1/complication/animal-form) (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features)).
 
 <!-- @type: feature -->
 ##### See Through Their Tricks
@@ -10420,7 +10420,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Until the end of the encounter or until you are dying, each enemy target takes damage of your primordial damage type equal to twice your Might score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
 >
-> **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
+> **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -10437,7 +10437,7 @@ Each of your characteristic scores increases by 1, to a maximum of 4.
 
 You exhibit ever-stronger signs of how the force of the Primordial Chaos flows within you. Whenever you show strong emotion or increase your ferocity, elemental motes attuned to your mood flit around you, and your skin changes in appearance to reflect an element of your choice.
 
-Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Might score. If you are a stormwight, you have immunity to the damage type of your [Primordial Storm](scc:mcdm.heroes.v1/feature.trait.fury/primordial-storm) feature equal to twice your Might score.
+Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Might score. If you are a stormwight, you have immunity to the damage type of your [Primordial Storm](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/primordial-storm) feature equal to twice your Might score.
 
 <!-- @type: feature -->
 #### Greater Ferocity
@@ -10480,12 +10480,12 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordia
 <!-- @type: feature -->
 ##### Menagerie
 
-You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits). During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a test to track another creature, you can roll three dice and choose which two to use.
+You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features). During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a test to track another creature, you can roll three dice and choose which two to use.
 
 <!-- @type: feature -->
 ##### A Step Ahead
 
-You move with legendary grace. Whenever you make an Agility test, you can roll three dice and choose which two to use. Additionally, whenever you use the Disengage move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.
+You move with legendary grace. Whenever you make an Agility test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.
 
 <!-- @type: feature -->
 ##### Strongest There Is
@@ -10666,7 +10666,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Deluge (11 Ferocity)
 >
-> *You summon your [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury/primordial-storm).*
+> *You summon your [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/primordial-storm).*
 >
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
@@ -10688,7 +10688,7 @@ As a 10th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fe
 <!-- @type: feature -->
 #### Chaos Incarnate
 
-Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your [Primordial Storm](scc:mcdm.heroes.v1/feature.trait.fury/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits)) increases to three times your Might score.
+Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your [Primordial Storm](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features)) increases to three times your Might score.
 
 When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
@@ -10730,15 +10730,15 @@ You can also spend 3 [primordial power](scc:mcdm.heroes.v1/feature.trait.fury.le
 
 You gain one skill of your choice.
 
-<!-- @type: feature -->
+<!-- @type: feature-group | @id: stormwight-kits -->
 ### Stormwight Kits
 
-The stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect) lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional [stormwight kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits) through play, changing them out during a respite as with any other kit (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
+The stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.trait.fury.level-1/primordial-aspect) lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional [stormwight kits](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/kit-features) through play, changing them out during a respite as with any other kit (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 <!-- @type: feature -->
 #### Kit Features
 
-All [stormwight kits](scc:mcdm.heroes.v1/feature.trait.fury/stormwight-kits) have the following features in common.
+All stormwight kits have the following features in common.
 
 <!-- @type: feature -->
 ##### Aspect Benefits and Animal Form
@@ -10766,7 +10766,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Primordial Storm
 
-Each stormwight kit is associated with a [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury/primordial-storm), which channels a specific damage type used by some of your abilities.
+Each stormwight kit is associated with a [primordial storm](scc:mcdm.heroes.v1/feature.trait.fury.stormwight-kits/primordial-storm), which channels a specific damage type used by some of your abilities.
 
 <!-- @type: feature -->
 ##### Equipment
@@ -10860,12 +10860,12 @@ With this stormwight kit, you channel your [primordial ferocity](scc:mcdm.heroes
 <!-- @type: feature -->
 ##### Aspect Benefits
 
-You gain an edge on tests made to hide and sneak. Additionally, whenever you fall, you can use a free triggered action to use your [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury/aspect-of-the-wild) ability.
+You gain an edge on tests made to hide and sneak. Additionally, whenever you fall, you can use a free triggered action to use your [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild) ability.
 
 <!-- @type: feature -->
 ##### Animal Form: Crow
 
-While you are in your crow form, your size is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the Hide maneuver as a free maneuver, and you can use your allies as cover when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury/aspect-of-the-wild).
+While you are in your crow form, your size is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the Hide maneuver as a free maneuver, and you can use your allies as cover when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Crow
@@ -10913,11 +10913,11 @@ As your ferocity grows, you gain benefits as noted on the [Corven](scc:mcdm.hero
 
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the Disengage move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
+| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 surge.                                                                                             |
-| 6               | You gain an edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.                                                          |
+| 6               | You gain an edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver, and the Knockback maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 surges instead of 1.                                                                               |
-| 10 (7th level)  | You have a double edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.                                                    |
+| 10 (7th level)  | You have a double edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver, and the Knockback maneuver.                                                    |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, the potency of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: raden -->
@@ -10933,7 +10933,7 @@ You gain an edge on tests made to hide and sneak. Additionally, you ignore [diff
 <!-- @type: feature -->
 ##### Animal Form: Rat
 
-While you are in your rat form, your size is 1T and you can automatically climb at full speed while moving. You can use the Hide maneuver as a free maneuver, you can use your allies as cover when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an edge on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury/aspect-of-the-wild).
+While you are in your rat form, your size is 1T and you can automatically climb at full speed while moving. You can use the Hide maneuver as a free maneuver, you can use your allies as cover when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an edge on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Rat
@@ -10981,11 +10981,11 @@ As your ferocity grows, you gain benefits as noted on the [Raden](scc:mcdm.heroe
 
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the Disengage move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
+| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 surge.                                                                                             |
-| 6               | You gain an edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver.                                                          |
+| 6               | You gain an edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver, and the Knockback maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 surges instead of 1.                                                                               |
-| 10 (7th level)  | You have a double edge on Agility tests, the Escape Grab maneuver, and the Knockback maneuver                                                     |
+| 10 (7th level)  | You have a double edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver, and the Knockback maneuver                                                     |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 temporary Stamina. Additionally, the potency of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: vuken -->
@@ -10996,7 +10996,7 @@ With this stormwight kit, you channel your [primordial ferocity](scc:mcdm.heroes
 <!-- @type: feature -->
 ##### Aspect Benefits
 
-Whenever you use the Knockback maneuver, you can then use the Aid Attack maneuver as a free triggered action.
+Whenever you use the Knockback maneuver, you can then use the [Aid Attack](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack) maneuver as a free triggered action.
 
 <!-- @type: feature -->
 ##### Animal Form: Wolf
@@ -11191,7 +11191,7 @@ Some [Discipline Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/discipli
 <!-- @type: feature -->
 ##### Chronokinetic Mastery
 
-Whenever you use the [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield) ability, you can use the Disengage move action as a free triggered action.
+Whenever you use the [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield) ability, you can use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free triggered action.
 
 Additionally, as your discipline grows, your psionic mastery of your body intensifies, granting benefits from the [Chronokinetic Mastery](scc:mcdm.heroes.v1/feature.trait.null.level-1/chronokinetic-mastery) table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
@@ -11199,7 +11199,7 @@ Additionally, as your discipline grows, your psionic mastery of your body intens
 
 | Discipline      | Benefit                                                                                                                                                                                     |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the Knockback maneuver, you can use the Disengage move action as a free triggered action either before or after the maneuver.                                              |
+| 2               | Whenever you use the Knockback maneuver, you can use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free triggered action either before or after the maneuver.                                              |
 | 4               | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 1 surge.                                                                                 |
 | 6               | You gain an edge on the Grab and Knockback maneuvers.                                                                                                                                       |
 | 8 (4th level)   | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 surges.                                                                                |
@@ -11245,7 +11245,7 @@ Additionally, as your discipline grows, your psionic potential is amplified, gra
 <!-- @type: feature -->
 #### Null Speed
 
-The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to speed and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action equal to your Agility score.
+The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to speed and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action equal to your Agility score.
 
 <!-- @type: feature -->
 #### Psionic Augmentation
@@ -11265,7 +11265,7 @@ Your damage-dealing psionic abilities gain a +1 bonus to rolled damage.
 <!-- @type: feature -->
 ##### Speed Augmentation
 
-You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action.
+You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 #### Psionic Martial Arts
@@ -11547,7 +11547,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > - **12-16:** 9 damage
 > - **17+:** 13 damage
 >
-> **Effect:** You can take the Disengage move action as a free maneuver before or after you use this ability.
+> **Effect:** You can take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free maneuver before or after you use this ability.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -11861,7 +11861,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > - **12-16:** 14 + A damage; A < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 18 + A damage; A < STRONG, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes a bane on the Escape Grab maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.
+> **Effect:** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes a bane on the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Phase Leap (9 Discipline)
@@ -12102,7 +12102,7 @@ You and each creature or object of your choice in the area of your [Null Field](
 <!-- @type: feature -->
 ##### Shared Momentum
 
-When you take the Disengage move action, one ally in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability can also take the Disengage move action as a free triggered action, using your distance for that move action.
+When you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, one ally in the area of your [Null Field](scc:mcdm.heroes.v1/feature.trait.null.level-1/null-field) ability can also take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free triggered action, using your distance for that move action.
 
 <!-- @type: feature -->
 ##### Synaptic Triage
@@ -12442,7 +12442,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-col
 |-----------------|----------------------------|
 | Black Ash       | [Black Ash Teleport](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport)         |
 | Caustic Alchemy | [Coat the Blade](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/coat-the-blade), [Smoke Bomb](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/smoke-bomb) |
-| Harlequin Mask  | I'm No Threat              |
+| Harlequin Mask  | [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat)              |
 
 <!-- @type: feature -->
 ##### Black Ash Teleport
@@ -12494,7 +12494,7 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |    **🎯 Self** |
 > 
-> **Effect:** You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the Disengage move action, you gain a +1 bonus to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your size, such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an edge, and when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, you gain a +1 bonus to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting).
 > 
 > The illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 surge.
 > 
@@ -12828,7 +12828,7 @@ The ash you leave behind burns your foes. The first time on a turn that you use 
 
 Your illusions make your enemies believe you are their friend in critical moments. Whenever an enemy uses an ability or trait that targets multiple allies and you are within distance of the effect, you can choose to be a target of the effect as well.
 
-Additionally, when you use your I'm No Threat ability, you can take the Disengage move action as part of that ability.
+Additionally, when you use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability, you can take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as part of that ability.
 
 <!-- @type: feature -->
 ##### Trained Assassin
@@ -12979,7 +12979,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, whenever an enemy moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) adjacent to you or damages you, you can take the Disengage move action as a free triggered action.
+> **Effect:** Until the end of the encounter, whenever an enemy moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) adjacent to you or damages you, you can take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free triggered action.
 
 <!-- @type: ability | @cost: 7 Insight -->
 > ###### Misdirecting Strike (7 Insight)
@@ -13099,9 +13099,9 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.trait.shadow.level-1/shadow-col
 <!-- @type: feature -->
 ##### Harlequin Gambit
 
-Whenever you reduce an adjacent non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your I'm No Threat ability and then move up to your speed.
+Whenever you reduce an adjacent non-minion creature to 0 Stamina, you can immediately use a free maneuver to use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your speed.
 
-If the creature is the same size as you, you can disguise yourself as them using I'm No Threat without spending insight. If you do, while I'm No Threat is active, the creature's body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature's body, it ends for both.
+If the creature is the same size as you, you can disguise yourself as them using [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) without spending insight. If you do, while [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) is active, the creature's body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature's body, it ends for both.
 
 <!-- @type: feature -->
 ##### Trail of Cinders
@@ -13257,7 +13257,7 @@ Choose one of the following abilities.
 > |------------------|-----------------------:|
 > | **📏 Ranged 10** | **🎯 Three creatures** |
 >
-> **Effect:** You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don't drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.
+> **Effect:** You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don't drink the potion right away, they must use the [Use Consumable](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable) maneuver to consume it later. The potion loses its potency at the end of the encounter.
 >
 > A creature who drinks the potion can spend up to 2 Recoveries, and has acid immunity, fire immunity, or poison immunity (their choice) equal to your level until the end of the encounter.
 
@@ -13270,7 +13270,7 @@ Choose one of the following abilities.
 > |------------------|-----------------------:|
 > | **📏 Ranged 10** | **🎯 Three creatures** |
 >
-> **Effect:** You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don't drink the potion right away, they must use the Use Consumable maneuver to consume it later. The potion loses its potency at the end of the encounter.
+> **Effect:** You ready, hand, or lob a potion to each target, who can immediately quaff the potion (no action required). If they don't drink the potion right away, they must use the [Use Consumable](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable) maneuver to consume it later. The potion loses its potency at the end of the encounter.
 >
 > A creature who drinks the potion receives benefits based on your power roll.
 >
@@ -13581,7 +13581,7 @@ Choose one of the following abilities.
 > - **12-16:** 21 + A damage
 > - **17+:** 28 + A damage
 >
-> **Effect:** If you are disguised as a creature the target knew using your I'm No Threat ability, this ability deals extra damage equal to three times your Agility score.
+> **Effect:** If you are disguised as a creature the target knew using your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability, this ability deals extra damage equal to three times your Agility score.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -13825,7 +13825,7 @@ You have drilled with a broad array of arms and armor, and have developed techni
 
 If both kits grant you the same benefit, you take one or the other and can't change your choice until you finish a respite. (This usually means taking the higher of two bonuses.)
 
-For example, if you take the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) and Sniper kits, you gain the following benefits overall:
+For example, if you take the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) and [Sniper](scc:mcdm.heroes.v1/kit/sniper) kits, you gain the following benefits overall:
 
 - Stamina Bonus: +12 per echelon
 - Stability Bonus: +1
@@ -14937,7 +14937,7 @@ Your damage-dealing psionic abilities gain a +1 bonus to rolled damage.
 <!-- @type: feature -->
 ##### Speed Augmentation
 
-You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action.
+You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 #### Talent Ward
@@ -17803,7 +17803,7 @@ If a kit provides no armor, you can wear whatever clothing you like! Robes, a fa
 
 ##### Light Armor
 
-If a [kit features](scc:mcdm.heroes.v1/feature.trait.fury/kit-features) light armor, you might wear padded cloth, leather armor, or a chain shirt.
+If a kit features light armor, you might wear padded cloth, leather armor, or a chain shirt.
 
 ##### Medium Armor
 
@@ -17895,7 +17895,7 @@ A distance bonus doesn't increase the size of any ability's area of effect.
 
 #### Disengage Bonus
 
-A kit that has a disengage bonus increases the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the Disengage move action (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+A kit that has a disengage bonus increases the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 ### Kit Signature Ability
 
@@ -18735,7 +18735,7 @@ The rules of the game expect that heroes always have access to their equipment. 
 | [Pugilist](scc:mcdm.heroes.v1/kit/pugilist)         | None           | Unarmed strikes    | +6                  | +2    | +1        | +1/+1/+1     | -             | -              | -               | -         |
 | [Raider](scc:mcdm.heroes.v1/kit/raider)           | Light, shield  | Light              | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
 | [Ranger](scc:mcdm.heroes.v1/kit/ranger)           | Medium         | Bow, medium        | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
-| Rapid-Fire       | Light          | Bow                | +3                  | +1    | -         | -            | +2/+2/+2      | -              | +7              | +1        |
+| [Rapid-Fire](scc:mcdm.heroes.v1/kit/rapid-fire)       | Light          | Bow                | +3                  | +1    | -         | -            | +2/+2/+2      | -              | +7              | +1        |
 | [Retiarius](scc:mcdm.heroes.v1/kit/retiarius)        | Light          | Ensnaring, polearm | +3                  | +1    | -         | +2/+2/+2     | -             | +1             | -               | +1        |
 | [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor)    | Heavy, shield  | Medium             | +12                 | -     | +1        | +2/+2/+2     | -             | -              | -               | -         |
 | [Sniper](scc:mcdm.heroes.v1/kit/sniper)           | None           | Bow                | -                   | +1    | -         | -            | +0/+0/+4      | -              | +10             | +1        |
@@ -19322,7 +19322,7 @@ You have no memory of your past before the... incident. Hopefully, you'll regain
 
 Due to a magical accident, your being has fused with that of a small, harmless animal. You turn into this animal when it's convenient—and sometimes when it's inconvenient as well.
 
-**Benefit:** As a maneuver, you take the form of a specific animal of size 1T. You retain all your other statistics aside from your size, but you can't talk or use actions, and the only maneuvers you can use are Escape Grab, Hide, and Stand Up. Based on the animal you can turn into, you might be able to [burrow](scc:mcdm.heroes.v1/movement/burrow) or [fly](scc:mcdm.heroes.v1/movement/fly), or to automatically climb or swim at full speed while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to speed.
+**Benefit:** As a maneuver, you take the form of a specific animal of size 1T. You retain all your other statistics aside from your size, but you can't talk or use actions, and the only maneuvers you can use are [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab), Hide, and Stand Up. Based on the animal you can turn into, you might be able to [burrow](scc:mcdm.heroes.v1/movement/burrow) or [fly](scc:mcdm.heroes.v1/movement/fly), or to automatically climb or swim at full speed while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to speed.
 
 Unless you use this benefit again, you return to your true form at the start of your next turn.
 
@@ -19369,7 +19369,7 @@ Your parents made a deal, and as part of that deal, you're supposed to marry som
 
 You came into contact with a mote of pure chaos energy, or were subjected to a supernatural effect or object that fused chaos into your very being. Now you can sprout and retract your limbs in a way that horrifies unprepared onlookers.
 
-**Benefit:** You gain an edge on the Escape Grab, Grab, and Knockback maneuvers. Additionally, you can hold an additional item even when your hands are full.
+**Benefit:** You gain an edge on the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab), Grab, and Knockback maneuvers. Additionally, you can hold an additional item even when your hands are full.
 
 **Drawback:** While dying, you grow and retract uncoordinated limbs at random, imposing a bane on your power rolls.
 
@@ -21435,9 +21435,9 @@ The Director can limit what kinds of no-action activities you can attempt when i
 
 ### Movement
 
-During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the Advance or Disengage move action (detailed under Move Actions below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
+During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the Advance or [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action (detailed under Move Actions below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
 
-Your hero starts with a speed granted by their ancestry—usually 5. This represents the maximum number of squares you can move when you take the Advance move action or when another effect allows you to move. Your speed can be increased by your kit and other game options.
+Your hero starts with a speed granted by their ancestry—usually 5. This represents the maximum number of squares you can move when you take the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action or when another effect allows you to move. Your speed can be increased by your kit and other game options.
 
 All squares adjacent to your character cost 1 movement to move into. No, there's no Pythagorean theorem on the grid. It's a game, don't overthink it.
 
@@ -21543,7 +21543,7 @@ If you are [knocked prone](scc:mcdm.heroes.v1/condition/prone) while climbing or
 <!-- @type: movement | @id: jump -->
 ##### Jump
 
-Whenever an effect allows you to move (including using the Advance move action), you can automatically long jump a number of squares up to your Might or Agility score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
+Whenever an effect allows you to move (including using the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action), you can automatically long jump a number of squares up to your Might or Agility score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
 
 If you want to jump even longer or higher than your baseline jump allows, make a Might or Agility test:
 
@@ -21580,7 +21580,7 @@ When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move fro
 - A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) themself must have line of effect to their destination space. A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) another creature must have line of effect from the space the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature leaves and to their destination space.
 - A [teleporting](scc:mcdm.heroes.v1/movement/teleport) creature's destination space can't be occupied by another creature or object.
 - The effect that lets a creature [teleport](scc:mcdm.heroes.v1/movement/teleport) indicates how far they can [teleport](scc:mcdm.heroes.v1/movement/teleport). That distance can be greater than the creature's speed.
-- If a creature can [teleport](scc:mcdm.heroes.v1/movement/teleport) as part of their usual movement, they can use the Advance move action to [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares up to their usual speed, unmodified by conditions or effects.
+- If a creature can [teleport](scc:mcdm.heroes.v1/movement/teleport) as part of their usual movement, they can use the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action to [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares up to their usual speed, unmodified by conditions or effects.
 - If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) [while prone](scc:mcdm.heroes.v1/condition/prone), they can be standing when they reach their destination space provided they are able to stand. If a prone creature is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed by another creature, it is up to that creature whether the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature remains prone or stands if they are able.
 - If you [teleport](scc:mcdm.heroes.v1/movement/teleport) while affected by the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained) conditions, those conditions end for you.
 - When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they must leave the space where they start and enter a new space. A creature can't [teleport](scc:mcdm.heroes.v1/movement/teleport) to and from the same space.
@@ -21708,17 +21708,17 @@ A move action allows a creature to move around the battlefield. Sometimes you'll
 <!-- @type: feature | @id: advance -->
 #### Advance
 
-When a creature takes the Advance move action, they move a number of squares up to their speed. They can break up this movement with their maneuver and main action however they wish.
+When a creature takes the [Advance](scc:mcdm.heroes.v1/feature.trait.common.move-actions/advance) move action, they move a number of squares up to their speed. They can break up this movement with their maneuver and main action however they wish.
 
 <!-- @type: feature | @id: disengage -->
 #### Disengage
 
-When a creature takes the Disengage move action, they can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. Certain class features, kits, and other rules allow a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) more than 1 square when they disengage. A creature who does so can break up their [shift](scc:mcdm.heroes.v1/movement/shifting) with their maneuver and main action however they wish.
+When a creature takes the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action, they can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. Certain class features, kits, and other rules allow a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) more than 1 square when they disengage. A creature who does so can break up their [shift](scc:mcdm.heroes.v1/movement/shifting) with their maneuver and main action however they wish.
 
 <!-- @type: feature | @id: ride -->
 #### Ride
 
-A creature can take the Ride move action only while mounted on another creature (see Mounted Combat below). When a creature takes the Ride move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the Ride move action to have their mount use the Disengage move action as a free triggered action. A creature can use the Ride move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
+A creature can take the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action only while mounted on another creature (see Mounted Combat below). When a creature takes the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action to have their mount use the [Disengage](scc:mcdm.heroes.v1/feature.trait.common.move-actions/disengage) move action as a free triggered action. A creature can use the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
 
 <!-- @type: feature-group | @id: maneuvers -->
 ### Maneuvers
@@ -21730,14 +21730,14 @@ Sometimes you might not have anything you can do with your maneuver. That's tota
 <!-- @type: feature | @id: aid-attack -->
 #### Aid Attack
 
-A creature who uses the Aid Attack maneuver chooses an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
+A creature who uses the [Aid Attack](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack) maneuver chooses an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
 
 <!-- @type: feature | @id: catch-breath -->
 #### Catch Breath
 
-A creature who uses the Catch Breath maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
+A creature who uses the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
-A creature who is dying (see Dying and Death in Stamina below) can't use the Catch Breath maneuver, but other creatures can help them spend Recoveries in other ways.
+A creature who is dying (see Dying and Death in Stamina below) can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver, but other creatures can help them spend Recoveries in other ways.
 
 <!-- @type: feature | @id: escape-grab -->
 #### Escape Grab
@@ -21820,17 +21820,17 @@ Complex or time-consuming tests might require a main action if made in combat—
 <!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
 
-The Search for Hidden Creatures maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+The [Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/search-for-hidden-creatures) maneuver allows a creature to attempt to locate creatures hidden from them (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: feature | @id: stand-up -->
 #### Stand Up
 
-A creature can use the Stand Up maneuver to stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone), ending that condition. Alternatively, they can use this maneuver to make a willing adjacent prone creature stand up.
+A creature can use the [Stand Up](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up) maneuver to stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone), ending that condition. Alternatively, they can use this maneuver to make a willing adjacent prone creature stand up.
 
 <!-- @type: feature | @id: use-consumable -->
 #### Use Consumable
 
-Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the Use Consumable maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
+Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the [Use Consumable](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable) maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
 <!-- @type: feature-group | @id: main-actions -->
 ### Main Actions
@@ -21970,7 +21970,7 @@ After any damage you take is reduced by damage immunity or other effects, your S
 
 #### Recoveries and Recovery Value
 
-Each hero has a number of Recoveries determined by their class. A hero also has a recovery value that equals one-third of their Stamina maximum, rounded down. When you use the Catch Breath maneuver in combat (see Maneuvers above), you spend a Recovery and regain Stamina equal to your recovery value. Outside of combat, you can spend as many Recoveries as you have remaining. Some abilities, items, and other effects allow you to spend a Recovery to regain Stamina equal to your recovery value plus a little extra (as described by the effect), or to regain Stamina without spending a Recovery.
+Each hero has a number of Recoveries determined by their class. A hero also has a recovery value that equals one-third of their Stamina maximum, rounded down. When you use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver in combat (see Maneuvers above), you spend a Recovery and regain Stamina equal to your recovery value. Outside of combat, you can spend as many Recoveries as you have remaining. Some abilities, items, and other effects allow you to spend a Recovery to regain Stamina equal to your recovery value plus a little extra (as described by the effect), or to regain Stamina without spending a Recovery.
 
 #### Winded
 
@@ -21980,7 +21980,7 @@ You can tell when other creatures are winded and vice versa.
 
 #### Dying and Death
 
-When your Stamina is 0 or lower, you are dying. While dying, you can't use the Catch Breath maneuver in combat. Additionally, you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding), and this instance of the condition can't be negated or removed in any way until you are no longer dying. While you are dying, you can still act, your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.
+When your Stamina is 0 or lower, you are dying. While dying, you can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath) maneuver in combat. Additionally, you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding), and this instance of the condition can't be negated or removed in any way until you are no longer dying. While you are dying, you can still act, your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.
 
 While your Stamina is lower than 0, if it reaches the negative of your winded value, you die. When you die, you can't be brought back to life without the use of a special powerful item, such as a Scroll of Resurrection.
 
@@ -22037,7 +22037,7 @@ Out of combat, you can hold your breath for a number of minutes equal to your Mi
 
 ### Mounted Combat
 
-A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their size is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the Ride move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
+A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their size is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the [Ride](scc:mcdm.heroes.v1/feature.trait.common.move-actions/ride) move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
 
 If a creature riding a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they are knocked off the mount and must make a test to determine how they land (see Climbing Other Creatures\). If a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they carry any riders with them. Riders and mounts [teleport](scc:mcdm.heroes.v1/movement/teleport) separately.
 
@@ -22907,7 +22907,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 > **Clothing as Armor Treasures**
 >
-> A hero who has a kit that provides no armor, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) or Sniper kit, can create and make use of leveled armor treasures that imbue mundane clothing with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+> A hero who has a kit that provides no armor, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) or [Sniper](scc:mcdm.heroes.v1/kit/sniper) kit, can create and make use of leveled armor treasures that imbue mundane clothing with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Armor Enhancement
 
@@ -23130,7 +23130,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares, or you can use the Escape Grab maneuver as a free maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares, or you can use the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver as a free maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 **Celestine:** As a main action, you conjure up to three stars, which [hover](scc:mcdm.heroes.v1/movement/hover) in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have line of effect to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
@@ -24634,7 +24634,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** While you wear these gloves, your grip is all but impossible to break. You can't be disarmed, you can't lose your grip while climbing unless you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you takes a bane on the test for the Escape Grab maneuver.
+**Effect:** While you wear these gloves, your grip is all but impossible to break. You can't be disarmed, you can't lose your grip while climbing unless you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you takes a bane on the test for the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver.
 
 <!-- @type: treasure -->
 ##### Hellcharger Helm
@@ -25169,7 +25169,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to Stamina increases to +12, and when you return to your true form, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) only until the end of your next turn. Additionally, while you are paper thin, you can use a maneuver to wrap yourself around an adjacent target who is the same size or smaller than you, automatically grabbing them.
 
-**9th Level:** The armor's bonus to Stamina increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the Escape Grab maneuver against you and when making strikes against you.
+**9th Level:** The armor's bonus to Stamina increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a bane when using the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver against you and when making strikes against you.
 
 <!-- @type: treasure -->
 ##### Shrouded Memory
@@ -25251,7 +25251,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** While you wield or carry this shield, you gain a +2 bonus to Stamina. This Stamina bonus adds to the Stamina bonus granted by other treasures. Additionally, once per turn when an adjacent enemy uses an ability, you can use a free triggered action to use the Grab maneuver against that enemy. You can have any number of enemies [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way.
 
-**5th Level:** The shield's bonus to Stamina increases to +5, and you can use the shield's free triggered action against any enemy within 10 squares who uses an ability. Additionally, any enemy who uses the Escape Grab maneuver while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a bane on the test.
+**5th Level:** The shield's bonus to Stamina increases to +5, and you can use the shield's free triggered action against any enemy within 10 squares who uses an ability. Additionally, any enemy who uses the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a bane on the test.
 
 **9th Level:** The shield's bonus to Stamina increases to +9. Additionally, you can use a maneuver to pull any number of targets the shield has [grabbed](scc:mcdm.heroes.v1/condition/grabbed) up to 5 squares.
 
@@ -25574,9 +25574,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 fire damage. Additionally, whenever you make a strike using the net and obtain a tier 3 outcome, you can automatically grab the target. A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way takes a bane when using the Escape Grab maneuver.
+**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 fire damage. Additionally, whenever you make a strike using the net and obtain a tier 3 outcome, you can automatically grab the target. A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way takes a bane when using the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver.
 
-**5th Level:** The weapon's extra fire damage increases to 2. Additionally, a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by a strike using the net takes 8 fire damage each time they attempt to escape using the Escape Grab maneuver.
+**5th Level:** The weapon's extra fire damage increases to 2. Additionally, a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by a strike using the net takes 8 fire damage each time they attempt to escape using the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver.
 
 **9th Level:** The weapon's extra fire damage increases to 3, and the damage taken by a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature attempting to escape increases to 15. Additionally, you can use a maneuver to make a free strike with another weapon against a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the net.
 
@@ -26193,7 +26193,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *Honor Among Thieves:* When negotiating with criminals, your Renown score is considered to be 2 higher than usual.
 - *Minion Mower:* When you make a melee strike that targets a minion and at least one more minion is within distance of the strike, the strike gains a +3 damage bonus.
-- *No, You're Under Arrest!:* You gain an edge on the Escape Grab maneuver. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same size without them immediately noticing.
+- *No, You're Under Arrest!:* You gain an edge on the [Escape Grab](scc:mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab) maneuver. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same size without them immediately noticing.
 
 <!-- @type: title -->
 #### Zombie Slayer
@@ -26961,9 +26961,9 @@ Each god has many saints, some obscure. They sometimes manifest in the world. Th
 
 No one knows.
 
-As a result of this complex tapestry of belief and personalities, a farmer in Aendrim might call upon Adûn for strength while tilling the earth. But if a cool breeze suddenly came along, easing the bite of the sun on their back, they would almost certainly not thank Adûn or any of his saints. They would probably thank Saint Elspeth the Blithe, sometimes called the Summer Breeze. If they had a neighbor or relative with a shrine to Saint Elspeth in their home, they might give that person a small gift or offering and ask them to place it on their shrine. More likely, they would silently promise to do this, and then forget or get distracted.
+As a result of this complex tapestry of belief and personalities, a farmer in Aendrim might call upon [Adûn](scc:mcdm.heroes.v1/god/adun) for strength while tilling the earth. But if a cool breeze suddenly came along, easing the bite of the sun on their back, they would almost certainly not thank [Adûn](scc:mcdm.heroes.v1/god/adun) or any of his saints. They would probably thank Saint Elspeth the Blithe, sometimes called the Summer Breeze. If they had a neighbor or relative with a shrine to Saint Elspeth in their home, they might give that person a small gift or offering and ask them to place it on their shrine. More likely, they would silently promise to do this, and then forget or get distracted.
 
-If questioned about this-"Why did you call upon one god, but thank the saint of a completely different god?"-they would first be surprised by the question. It would not have occurred to them to examine this behavior. If pressed they would say, "Oh, I'm sure they worked it out between them." They would not imagine, "Adûn told Viras, who told her saint, Elspeth, to send a cooling breeze," but they would assume
+If questioned about this-"Why did you call upon one god, but thank the saint of a completely different god?"-they would first be surprised by the question. It would not have occurred to them to examine this behavior. If pressed they would say, "Oh, I'm sure they worked it out between them." They would not imagine, "[Adûn](scc:mcdm.heroes.v1/god/adun) told Viras, who told her saint, Elspeth, to send a cooling breeze," but they would assume
 
 something like that happened and not worry overmuch about the details. They called out, they received aid—that's what's important.
 
@@ -26973,7 +26973,7 @@ If no aid is forthcoming folks assume this is because the gods and saints are al
 
 Most religions in Orden organize themselves into hierarchies and build temples or cathedrals, but some religions are little more than traditions handed down from shaman to shaman, or wise-woman to wise-daughter. Some religions are secret!
 
-Because the gods are forbidden from acting directly upon the world, churches and temples in Orden are consecrated to saints, or heroes. There are no temples to Ord or churches of Cavall. Instead, there is the Church of Zarok the Law-Giver and the Church of Saint Llewellyn the Valiant. Everyone knows which god these heroes and saints serve, it's common knowledge. A [human](scc:mcdm.heroes.v1/ancestry/human) in Vasloria might call out to Cavall for aid in times of need but they know that, should Cavall choose to help, it will be by sending one of his saints.
+Because the gods are forbidden from acting directly upon the world, churches and temples in Orden are consecrated to saints, or heroes. There are no temples to Ord or churches of [Cavall](scc:mcdm.heroes.v1/god/cavall). Instead, there is the Church of Zarok the Law-Giver and the Church of Saint Llewellyn the Valiant. Everyone knows which god these heroes and saints serve, it's common knowledge. A [human](scc:mcdm.heroes.v1/ancestry/human) in Vasloria might call out to [Cavall](scc:mcdm.heroes.v1/god/cavall) for aid in times of need but they know that, should [Cavall](scc:mcdm.heroes.v1/god/cavall) choose to help, it will be by sending one of his saints.
 
 The most popular saints and heroes can have several churches meaning distinct organizations—devoted to them, each with their own rituals. In Corwell, there is the Church of Saint Llewellyn the Valiant, but there is also the smaller Church of Saint Llewellyn the Charitable with only a few temples.
 
@@ -27055,15 +27055,15 @@ The Deities and Domains table and the Saints and Domains table summarize each of
 
 | Deity                   | Domains                                       |
 |-------------------------|-----------------------------------------------|
-| Adûn                    | Creation, Life, Love, Protection              |
-| Cavall                  | Life, Love, Protection, War                   |
+| [Adûn](scc:mcdm.heroes.v1/god/adun)                    | Creation, Life, Love, Protection              |
+| [Cavall](scc:mcdm.heroes.v1/god/cavall)                  | Life, Love, Protection, War                   |
 | Cyrvis                  | Death, Fate, Knowledge, Trickery              |
 | Kul                     | Knowledge, Life, Sun, Trickery, War           |
-| Nebular the Star Mother | Creation, Life, Love, Sun                     |
+| [Nebular](scc:mcdm.heroes.v1/god/nebular) the Star Mother | Creation, Life, Love, Sun                     |
 | Nikros                  | Death, Fate, Storm, War                       |
 | Ord                     | Creation, Knowledge, Protection, Sun, War     |
 | OV the Wave Pilot       | Fate, Knowledge, Storm, Sun                   |
-| Salorna                 | Life, Nature, Storm, Sun                      |
+| [Salorna](scc:mcdm.heroes.v1/god/salorna)                 | Life, Nature, Storm, Sun                      |
 | Val                     | Creation, Knowledge, Life, Nature, Protection |
 
 ###### Saints and Domains Table
@@ -27092,7 +27092,7 @@ The Deities and Domains table and the Saints and Domains table summarize each of
 | A Sea of Suns                       | Creation, Life                |
 | Stakros the Engineer                | Creation, Knowledge           |
 | The Taste of Morning                | Creation, Knowledge           |
-| Thellasko the Great Designer        | Knowledge, War                |
+| [Thellasko](scc:mcdm.heroes.v1/god/thellasko) the Great Designer        | Knowledge, War                |
 | Thyll Hylacae                       | Life, Nature                  |
 | Uryal the Subtle                    | Knowledge, Trickery           |
 | Valak-koth the Seeker               | Knowledge, Sun                |
@@ -27467,11 +27467,11 @@ Kuryalka features in many folktales in Hell, including "Of the Childe Whomst Kep
 
 Like all the Innumerable Younger Gods, the gods of Vasloria embody the attitudes of the people who live in that region. This includes the [humans](scc:mcdm.heroes.v1/ancestry/human), [polder](scc:mcdm.heroes.v1/ancestry/polder), and draconians of Vasloria.
 
-Vasloria is a polytheistic, preindustrial, pre-Enlightenment, feudal culture. Its people have many superstitions and prejudices, some of which are reflected in the teachings of their gods. Adûn, for instance, teaches that hard physical labor is a moral good and people who work hard every day are honest. Most people in Vasloria, especially Aendrim where Adûn's faith is most popular, believe this to one extent or another.
+Vasloria is a polytheistic, preindustrial, pre-Enlightenment, feudal culture. Its people have many superstitions and prejudices, some of which are reflected in the teachings of their gods. [Adûn](scc:mcdm.heroes.v1/god/adun), for instance, teaches that hard physical labor is a moral good and people who work hard every day are honest. Most people in Vasloria, especially Aendrim where [Adûn](scc:mcdm.heroes.v1/god/adun)'s faith is most popular, believe this to one extent or another.
 
 Some of them take it more seriously than others though. People in the most distant villages tend to believe it more literally, while people in the cities are perfectly aware than one may work and work and be a villain. And this is true of most of the beliefs presented in this chapter. Some people take it very seriously; some not so much.
 
-Like all peoples of Orden, the people of Vasloria are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of Cavall who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of Vasloria aren't that big a deal here, but these gods certainly are!" The peoples of each region of Orden prefer their own gods because they understand them best, not because they think they are "more powerful."
+Like all peoples of Orden, the people of Vasloria are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of [Cavall](scc:mcdm.heroes.v1/god/cavall) who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of Vasloria aren't that big a deal here, but these gods certainly are!" The peoples of each region of Orden prefer their own gods because they understand them best, not because they think they are "more powerful."
 
 <!-- @type: god | @id: adun -->
 #### Adûn
@@ -27484,9 +27484,9 @@ Vaslorians in remote villages still use the ancient test of strength to determin
 
 A priest following Adûn expresses their faith through labor. They build things. Many priests are also masons or carpenters. Joining the church for them did not mean abandoning their former trade. It intensified it.
 
-A knight following Adûn spends their time aiding others through hard work, inspiring people to honest speech and hard labor, as opposed to Adûn's brother Cavall who seeks to right wrongs.
+A knight following Adûn spends their time aiding others through hard work, inspiring people to honest speech and hard labor, as opposed to Adûn's brother [Cavall](scc:mcdm.heroes.v1/god/cavall) who seeks to right wrongs.
 
-Adûn and Cavall are brothers and the line between them is not a sharply defined one. Truth and justice are close companions.
+Adûn and [Cavall](scc:mcdm.heroes.v1/god/cavall) are brothers and the line between them is not a sharply defined one. Truth and justice are close companions.
 
 ##### Gaed the Confessor
 
@@ -27541,7 +27541,7 @@ A watchhouse chaplain is almost certainly a priest of Cavall. A rector serving a
 
 [Censors](scc:mcdm.heroes.v1/class/censor) of Cavall, on the other hand, have no such motto. The nobility often sponsor knights of Cavall to roam the countryside and dispense justice in remote wilderness areas where the noble's influence cannot reach.
 
-Brother to Adûn and patron of the country of Corwell, Cavall also believes that people, no matter how vile, can be bettered. "Let the law judge," said Saint Llewellyn, "Let us forgive."
+Brother to [Adûn](scc:mcdm.heroes.v1/god/adun) and patron of the country of Corwell, Cavall also believes that people, no matter how vile, can be bettered. "Let the law judge," said Saint Llewellyn, "Let us forgive."
 
 ##### Llewellyn the Valiant
 
@@ -27718,7 +27718,7 @@ Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-
 
 Nikros is strength. He is dominance. His is the right of the strong to rule over the weak. He is the Tyrant.
 
-Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, followers of Nikros are often mistaken for followers of Adûn—a mask they are happy to wear. Both teach that strength is good. But for Adûn strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. Might is right.
+Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, followers of Nikros are often mistaken for followers of [Adûn](scc:mcdm.heroes.v1/god/adun)—a mask they are happy to wear. Both teach that strength is good. But for [Adûn](scc:mcdm.heroes.v1/god/adun) strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. Might is right.
 
 Many is the baron or duke who attained power through sheer strength and ruthlessness, seeing their people as mere resources to be spent. Many of these rulers only come to Nikros after achieving power, their ears poisoned by a priest of the Tyrant.
 
@@ -27778,7 +27778,7 @@ Eseld teaches that spite is a virtue. Only fools follow rules, and sorcery is a 
 
 ### Space Gods of the Timescape
 
-The nature and origin of the gods of the timescape is not well understood. Unlike the gods of Orden, the Space Gods are corporeal beings, usually of immense—even planetary—size. Some are humanoid, others, like Nebular the Star Mother and XXAXX, decidedly not so.
+The nature and origin of the gods of the timescape is not well understood. Unlike the gods of Orden, the Space Gods are corporeal beings, usually of immense—even planetary—size. Some are humanoid, others, like [Nebular](scc:mcdm.heroes.v1/god/nebular) the Star Mother and XXAXX, decidedly not so.
 
 They have godlike power—greater it seems than the Innumerable Younger Gods. But there is no evidence that they can create whole realities like the Elder Gods. They are not, as far as sages can make out, the authors of the worlds or people of the timescape. They may represent the last survivors of previous realities, High Science experiments run amok, or ascended beings from ancient civilizations who outlasted the fall of their people.
 
