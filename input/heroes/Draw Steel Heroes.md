@@ -125,7 +125,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Ancestry](scc:mcdm.heroes.v1/chapter/ancestries):** A humanoid creature's species. Every hero has an ancestry.
 
-**[Area of Effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect):** The squares affected by an ability that creates an aura, burst, cube, line, or wall. (An ability that creates an area of effect affects targets simply by those targets being in its area, as opposed to a strike.)
+**[Area of Effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect):** The squares affected by an ability that creates an aura, burst, cube, line, or wall. (An ability that creates an area of effect affects targets simply by those targets being in its area, as opposed to a [strike](scc:mcdm.heroes.v1/rule.combat/strike).)
 
 **[Argument](scc:mcdm.heroes.v1/chapter/negotiation):** A plea the heroes make during a negotiation to convince one or more NPCs to work with them.
 
@@ -271,7 +271,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Ferocity](scc:mcdm.heroes.v1/feature.fury.level-1/ferocity):** The [fury's](scc:mcdm.heroes.v1/class/fury) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-**[Flanking](scc:mcdm.heroes.v1/rule.combat/flanking):** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee strikes against that enemy.
+**[Flanking](scc:mcdm.heroes.v1/rule.combat/flanking):** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against that enemy.
 
 **[Fly](scc:mcdm.heroes.v1/movement/fly):** A movement mode available to creatures with "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gain the capability to temporarily [fly](scc:mcdm.heroes.v1/movement/fly). Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made [prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall.
 
@@ -431,7 +431,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Lore that must be obtained before a downtime project can be started.
 
-**[Prone](scc:mcdm.heroes.v1/condition/prone):** A condition that causes a creature to become flat on the ground. Strikes made by a [prone](scc:mcdm.heroes.v1/condition/prone) creature take a [bane](scc:mcdm.heroes.v1/rule.dice/bane), and melee abilities used against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+**[Prone](scc:mcdm.heroes.v1/condition/prone):** A condition that causes a creature to become flat on the ground. [Strikes](scc:mcdm.heroes.v1/rule.combat/strike) made by a [prone](scc:mcdm.heroes.v1/condition/prone) creature take a [bane](scc:mcdm.heroes.v1/rule.dice/bane), and melee abilities used against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 **[Pull](scc:mcdm.heroes.v1/movement/forced-movement):** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that pulls a target toward a creature or effect, moving them in a horizontal straight line.
 
@@ -710,9 +710,9 @@ When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 i
 
 The total of a power roll determines your outcome tier—three levels that determine how successful your power roll is.
 
-- **Tier 1:** If your power roll total is **11 or lower**, it is a tier 1 outcome. This is the worst outcome a power roll can have. If you're using an ability, a tier 1 outcome means you still do something, but the impact of what you do is minimal. With this outcome, a strike ability might deal a little bit of damage and not do much else. For a test, a tier 1 outcome might mean you fail at what you set out to do, and you might also incur a negative consequence.
-- **Tier 2:** If your power roll total is **12 to 16**, it is a tier 2 outcome. This is the average outcome of many power rolls, especially for heroes who are 1st level. When using an ability, a tier 2 outcome means that what you do has a moderate impact. With this outcome, a strike ability deals a decent amount of damage and has an effect that briefly helps allies or hinders enemies. For a test, a tier 2 outcome means you might succeed at what you set out to do—though depending on the difficulty, success might have a cost.
-- **Tier 3:** If your power roll total is **17 or higher**, it is a tier 3 outcome. This is the best outcome a power roll can have. When using an ability, a tier 3 outcome means you deliver the maximum impact possible. With this outcome, a strike ability deals a lot of damage and has a powerful or lasting effect on enemies or allies. For a test, a tier 3 outcome means you succeed at what you set out to do. If the test has an easy difficulty, you also get a little something extra in addition to your success.
+- **Tier 1:** If your power roll total is **11 or lower**, it is a tier 1 outcome. This is the worst outcome a power roll can have. If you're using an ability, a tier 1 outcome means you still do something, but the impact of what you do is minimal. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability might deal a little bit of damage and not do much else. For a test, a tier 1 outcome might mean you fail at what you set out to do, and you might also incur a negative consequence.
+- **Tier 2:** If your power roll total is **12 to 16**, it is a tier 2 outcome. This is the average outcome of many power rolls, especially for heroes who are 1st level. When using an ability, a tier 2 outcome means that what you do has a moderate impact. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a decent amount of damage and has an effect that briefly helps allies or hinders enemies. For a test, a tier 2 outcome means you might succeed at what you set out to do—though depending on the difficulty, success might have a cost.
+- **Tier 3:** If your power roll total is **17 or higher**, it is a tier 3 outcome. This is the best outcome a power roll can have. When using an ability, a tier 3 outcome means you deliver the maximum impact possible. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a lot of damage and has a powerful or lasting effect on enemies or allies. For a test, a tier 3 outcome means you succeed at what you set out to do. If the test has an easy difficulty, you also get a little something extra in addition to your success.
 
 The specific outcome of any power roll is determined by the effect or ability that requires the roll (see Abilities) or the rules for tests (see [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
@@ -736,14 +736,14 @@ An archer standing on a castle wall fires down into a throng of enemies, hitting
 <!-- @type: rule | @group: dice | @id: edge -->
 ##### Edge
 
-An **edge** represents a situational advantage a hero or an enemy has when making a power roll. For example, a standing hero who makes a melee strike against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gains an edge on the power roll for their strike. A pair of magic gloves that makes your hands sticky might grant you an edge when making a power roll to climb walls!
+An **edge** represents a situational advantage a hero or an enemy has when making a power roll. For example, a standing hero who makes a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a [prone](scc:mcdm.heroes.v1/condition/prone) creature gains an edge on the power roll for their [strike](scc:mcdm.heroes.v1/rule.combat/strike). A pair of magic gloves that makes your hands sticky might grant you an edge when making a power roll to climb walls!
 
 When you make a power roll with an edge, you gain a +2 bonus to the roll. If you make a power roll with two or more edges, you have a **double edge**. With a double edge, you don't add anything to the power roll, but the outcome of the roll automatically improves one tier (to a maximum of tier 3).
 
 <!-- @type: rule | @group: dice | @id: bane -->
 ##### Bane
 
-A **bane** represents a situational disadvantage a hero or an enemy has when making a power roll. For example, if you make a strike while [prone](scc:mcdm.heroes.v1/condition/prone), the power roll for the strike takes a bane. A rainstorm might give you a bane on a power roll made to climb an outdoor wall because the weather makes the stone surface extra slick.
+A **bane** represents a situational disadvantage a hero or an enemy has when making a power roll. For example, if you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) while [prone](scc:mcdm.heroes.v1/condition/prone), the power roll for the [strike](scc:mcdm.heroes.v1/rule.combat/strike) takes a bane. A rainstorm might give you a bane on a power roll made to climb an outdoor wall because the weather makes the stone surface extra slick.
 
 When you make a power roll with a bane, you take a −2 penalty to the roll. If you make a power roll with two or more banes, you have a **double bane**. With a double bane, you don't subtract anything from the power roll, but the outcome of the roll automatically decreases one tier (to a minimum of tier 1).
 
@@ -1172,7 +1172,7 @@ See [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) i
 <!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike -->
 ###### Melee Weapon Free Strike
 
-| **Charge, Melee, Strike, Weapon**  |               **Main action** |
+| **Charge, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 |------------------------------------|------------------------------:|
 | **📏 Melee 1**                     | **🎯 One creature or object** |
 
@@ -1185,7 +1185,7 @@ See [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) i
 <!-- @type: ability | @subtype: free-strike | @id: ranged-weapon-free-strike -->
 ###### Ranged Weapon Free Strike
 
-| **Ranged, Strike, Weapon**  |               **Main action** |
+| **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 |-----------------------------|------------------------------:|
 | **📏 Ranged 5**             | **🎯 One creature or object** |
 
@@ -1230,7 +1230,7 @@ At the Director's discretion, you might lose certain gear during an adventure, o
 
 If you pick a skill, ability, class, or any other option that you end up not liking after using it in the game—even your character's ancestry—you can always freely change that option between game sessions. If you want to change some aspect of your character during a session, ask your Director. If they say it's fine to swap that aspect out for something else, go for it. You shouldn't be stuck with any option that makes the game less fun for you.
 
-If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon strikes, doing so during a respite as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) would be more helpful against undead in an upcoming encounter, talk to your Director.
+If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon [strikes](scc:mcdm.heroes.v1/rule.combat/strike), doing so during a respite as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) would be more helpful against undead in an upcoming encounter, talk to your Director.
 
 #### Optional Rule: Respite Ability Changes
 
@@ -1671,7 +1671,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Bea
 <!-- @type: feature -->
 ##### Barbed Tail (1 Point)
 
-Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee strike, you can deal extra damage with the strike equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
+Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can deal extra damage with the [strike](scc:mcdm.heroes.v1/rule.combat/strike) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 <!-- @type: feature -->
 ##### Beast Legs (1 Point)
@@ -1686,7 +1686,7 @@ Your eyes are a solid, vibrant color that flares to show your excitement or rage
 <!-- @type: feature -->
 ##### Hellsight (1 Point)
 
-Your eyes let you see through darkness, fog, and other obscuring effects. You don't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes made against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
+Your eyes let you see through darkness, fog, and other obscuring effects. You don't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 
 <!-- @type: feature -->
 ##### Impressive Horns (2 Points)
@@ -1807,7 +1807,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* [Dr
 <!-- @type: feature -->
 ##### Draconian Guard (1 Point)
 
-Whenever you or an adjacent creature takes damage from a strike, you can use a triggered action to guard against the blow. You reduce any damage from the strike by an amount equal to your level.
+Whenever you or an adjacent creature takes damage from a [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can use a triggered action to guard against the blow. You reduce any damage from the [strike](scc:mcdm.heroes.v1/rule.combat/strike) by an amount equal to your level.
 
 <!-- @type: feature -->
 ##### Draconian Pride (2 Points)
@@ -2154,7 +2154,7 @@ You have the following signature ability. Signature abilities can be used at wil
 
 *Thorny vines erupt from every surface and attempt to bind your foe.*
 
-| **Magic, Ranged, Strike** |               **Main action** |
+| **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 |---------------------------|------------------------------:|
 | **📏 Ranged 10**          |           **🎯 One creature** |
 
@@ -2783,7 +2783,7 @@ Khorva shook her head. "[Orcs](scc:mcdm.heroes.v1/ancestry/orc) have no great lo
 <!-- @type: feature | @id: relentless -->
 #### Signature Trait: Relentless
 
-Whenever a creature deals damage to you that leaves you [dying](scc:mcdm.heroes.v1/rule.health/dying), you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any creature. If the creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by your strike, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+Whenever a creature deals damage to you that leaves you [dying](scc:mcdm.heroes.v1/rule.health/dying), you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any creature. If the creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by your [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 #### Purchased Orc Traits
 
@@ -2949,7 +2949,7 @@ You have the following ability.
 |-------------|----------------:|
 | **📏 Self** |     **🎯 Self** |
 
-**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against you and tests made to search for you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
@@ -3112,7 +3112,7 @@ Additionally, you have the following signature ability. Signature abilities can 
 
 *A magic sigil you placed on a creature explodes with energy.*
 
-| **Magic, Ranged, Strike** |                        **Main action** |
+| **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |                        **Main action** |
 |---------------------------|---------------------------------------:|
 | **📏 Ranged 10**          | **🎯 One creature bearing your sigil** |
 
@@ -3241,7 +3241,7 @@ As a maneuver, you can adjust your vision to allow you to see through mundane ob
 <!-- @type: feature -->
 ##### Foresight (1 Point)
 
-Your senses extend past mundane obscuration and the veil of the future alike. You automatically know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) who isn't hidden from you within 20, and you negate the usual [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against such creatures. Additionally, whenever you are targeted by a strike, you can use a triggered action to impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the power roll.
+Your senses extend past mundane obscuration and the veil of the future alike. You automatically know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) who isn't hidden from you within 20, and you negate the usual [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against such creatures. Additionally, whenever you are targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can use a triggered action to impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the power roll.
 
 <!-- @type: feature -->
 ##### Four-Armed Athletics (1 Point)
@@ -3263,7 +3263,7 @@ Choose one signature ability from the following options. Signature abilities can
 
 *You slam an invisible force down upon the target.*
 
-| **Psionic, Ranged, Strike**  | Main action                   |
+| **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  | Main action                   |
 |------------------------------|-------------------------------|
 | **📏 Ranged 10**             | **🎯 One creature or object** |
 
@@ -3278,7 +3278,7 @@ Choose one signature ability from the following options. Signature abilities can
 
 *You shoot forth a purple beam of psychic force that moves your target.*
 
-| **Psionic, Ranged, Strike**  | Main action                   |
+| **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  | Main action                   |
 |------------------------------|-------------------------------|
 | **📏 Ranged 10**             | **🎯 One creature or object** |
 
@@ -4265,7 +4265,7 @@ Each ability has one or more keywords that explain how the ability functions. Ke
 
 ##### Area
 
-Abilities with the Area keyword create an area of effect. Many area abilities deal damage to targets in their area, but such abilities are treated differently than strikes made against specific targets. (See the It's Not All Strikes! sidebar, as well as Strike and Area Abilities below for more information.)
+Abilities with the Area keyword create an area of effect. Many area abilities deal damage to targets in their area, but such abilities are treated differently than [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against specific targets. (See the It's Not All Strikes! sidebar, as well as Strike and Area Abilities below for more information.)
 
 ##### Charge
 
@@ -4325,7 +4325,7 @@ Melee abilities have a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "M
 
 Ranged abilities have a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "Ranged X" and can be used to target creatures or objects too far away for you to make contact with. The number X is the maximum [distance](scc:mcdm.heroes.v1/rule.combat/distance) in squares at which a creature or object can be targeted by the ability. For instance, a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "Ranged 5" can be used to target creatures or objects within 5 squares of you.
 
-If you make a ranged strike while any enemy is adjacent to you (within 1 square), you have a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike's power roll. (See [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [Banes](scc:mcdm.heroes.v1/rule.dice/bane) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
+If you make a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike) while any enemy is adjacent to you (within 1 square), you have a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [strike](scc:mcdm.heroes.v1/rule.combat/strike)'s power roll. (See [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [Banes](scc:mcdm.heroes.v1/rule.dice/bane) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 ##### Melee or Ranged
 
@@ -4425,7 +4425,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 
 If an ability requires a power roll, it has a "Power Roll" entry that tells you which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about power rolls.)
 
-Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
+Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets one adjacent creature (within 1 square), and which has the following effects:
 
 - **Tier 1 (11 or lower):** The ability deals damage equal to 3 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 1 square.
 - **Tier 2 (12-16):** The ability deals damage equal to 6 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 2 squares.
@@ -4546,9 +4546,9 @@ You can't score a critical hit with an ability roll made as a maneuver or any ot
 
 #### Roll Against Multiple Creatures
 
-When an ability has multiple targets (whether a strike with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have [edges](scc:mcdm.heroes.v1/rule.dice/edge) or [banes](scc:mcdm.heroes.v1/rule.dice/bane) (see Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) against some but not all of your targets, you might apply a different tier outcome to individual targets.
+When an ability has multiple targets (whether a [strike](scc:mcdm.heroes.v1/rule.combat/strike) with more than one target or an area affect), you make one power roll and apply the total to all targets. If you have [edges](scc:mcdm.heroes.v1/rule.dice/edge) or [banes](scc:mcdm.heroes.v1/rule.dice/bane) (see Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) against some but not all of your targets, you might apply a different tier outcome to individual targets.
 
-For example, if you target three creatures with a strike ability and the power roll totals 11, each of the targets should be affected by the tier 1 outcome of the ability. However, if you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against one of the targets to add 2 to the power roll, your total against that target is 13, and they are affected by the tier 2 outcome of the ability.
+For example, if you target three creatures with a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability and the power roll totals 11, each of the targets should be affected by the tier 1 outcome of the ability. However, if you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against one of the targets to add 2 to the power roll, your total against that target is 13, and they are affected by the tier 2 outcome of the ability.
 
 <!-- @type: rule | @group: resource | @id: surge -->
 #### Surges
@@ -4614,7 +4614,7 @@ Many abilities and other options refer to creatures, objects, or spaces that are
 <!-- @type: rule | @group: combat | @id: line-of-effect -->
 #### Line of Effect
 
-To target a creature or object with an ability or effect, including making a strike against them, you must have line of effect to that target. If any solid object, such as a wall or pillar, completely blocks the target from you, then you don't have line of effect.
+To target a creature or object with an ability or effect, including making a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against them, you must have line of effect to that target. If any solid object, such as a wall or pillar, completely blocks the target from you, then you don't have line of effect.
 
 If you're not sure whether you have line of effect to a target, imagine drawing a straight line from any corner of the space you occupy on an encounter map to any corner of a space the target occupies. If one or more corners of your space connect to any corner of the target's space with no obstruction in between, you have line of effect to the target.
 
@@ -5020,7 +5020,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *You show your foe a glimpse of their fate after death.*
 > 
-> | **Magic, Ranged, Strike** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          |           **🎯 One creature** |
 > 
@@ -5037,7 +5037,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *You infuse your weapon with holy magic that makes it difficult for your foe to get away.*
 > 
-> | **Melee, Strike, Weapon**  |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
@@ -5050,9 +5050,9 @@ Choose one signature ability from the following options. Signature abilities can
 <!-- @type: ability | @subtype: signature | @id: your-allies-cannot-save-you -->
 > ###### Your Allies Cannot Save You!
 > 
-> *Your magic strike turns your foe's guilt into a burst of holy power.*
+> *Your magic [strike](scc:mcdm.heroes.v1/rule.combat/strike) turns your foe's guilt into a burst of holy power.*
 > 
-> | **Melee, Strike, Weapon**  |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
@@ -5077,7 +5077,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > 
 > *A mighty blow turns your foe's vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.*
 > 
-> | **Melee, Strike, Weapon**  |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
@@ -5094,7 +5094,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > 
 > *As you force your enemy back with your weapon, you use your faith to stay close.*
 > 
-> | **Melee, Strike, Weapon**  |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
@@ -5111,7 +5111,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > 
 > *You channel holy energy to smite a foe and heal an ally.*
 > 
-> | **Magic, Melee, Strike, Weapon** |               **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature or object** |
 > 
@@ -5128,7 +5128,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > 
 > *You conjure memories of their sins to harry your foes.*
 > 
-> | **Magic, Ranged, Strike**  |    **Main action**  |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |    **Main action**  |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -5147,7 +5147,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > 
 > *"I got you, you son of a bitch."*
 > 
-> | **Magic, Melee, Strike, Weapon** |               **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   |           **🎯 One creature** |
 > 
@@ -5157,14 +5157,14 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > - **12-16:** 9 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 13 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > 
-> **Effect:** If the target makes a strike against a creature while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, you can spend 3 wrath to deal holy damage to them equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, then change the target of the strike to another target within the strike's [distance](scc:mcdm.heroes.v1/rule.combat/distance).
+> **Effect:** If the target makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, you can spend 3 wrath to deal holy damage to them equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, then change the target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike) to another target within the [strike](scc:mcdm.heroes.v1/rule.combat/strike)'s [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 
 <!-- @type: ability | @cost: 5 Wrath | @id: behold-the-face-of-justice -->
 > ###### Behold the Face of Justice! (5 Wrath)
 > 
 > *You attack a foe and your enemies behold a vision of the true nature of your resolve.*
 > 
-> | **Magic, Melee, Ranged, Strike, Weapon**  |               **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |-------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**                |           **🎯 One creature** |
 > 
@@ -5181,7 +5181,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > 
 > *Judged and [sentenced](scc:mcdm.heroes.v1/feature.ability.censor.level-2/sentenced).*
 > 
-> | **Melee, Strike, Weapon**  |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             |           **🎯 One creature** |
 > 
@@ -5198,7 +5198,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > 
 > *The gods judge, fire cleanses.*
 > 
-> | **Magic, Melee, Ranged, Strike, Weapon**  |               **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |-------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**                |           **🎯 One creature** |
 > 
@@ -5277,7 +5277,7 @@ Choose one of the following abilities.
 > 
 > *I am but a vessel. Your own deeds weigh upon you.*
 > 
-> | **Magic, Ranged, Strike** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
@@ -5326,7 +5326,7 @@ Choose one of the following abilities.
 > |-------------------|------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self or one ally** |
 > 
-> **Effect:** The target can use a free triggered action to use a strike signature ability or a strike heroic ability, and has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on that ability. If a heroic ability is chosen, reduce its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost by 3 (to a minimum cost of 0).
+> **Effect:** The target can use a free triggered action to use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability or a [strike](scc:mcdm.heroes.v1/rule.combat/strike) heroic ability, and has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on that ability. If a heroic ability is chosen, reduce its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost by 3 (to a minimum cost of 0).
 
 ##### 2nd-Level Paragon Ability
 
@@ -5348,7 +5348,7 @@ Choose one of the following abilities.
 > 
 > *The shock of your condemnation freezes your enemy in their boots.*
 > 
-> | **Magic, Melee, Strike, Weapon** |               **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   |           **🎯 One creature** |
 > 
@@ -5406,7 +5406,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a strike, they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Stillness (7 Wrath)
@@ -5588,7 +5588,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > |------------------|------------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 > 
-> **Effect:** The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a strike signature ability as a free triggered action.
+> **Effect:** The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability as a free triggered action.
 
 <!-- @type: ability | @cost: 9 Wrath -->
 > ###### Orison of Victory (9 Wrath)
@@ -5612,7 +5612,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > 
 > *You amplify the power of your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment).*
 > 
-> | **Melee, Strike, Weapon**   |          **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**   |          **Main action** |
 > |----------------------------|-------------------------:|
 > | **📏 Melee 1**             |      **🎯 One creature** |
 > 
@@ -5629,7 +5629,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > 
 > *You strike a foe and create a fleet of divine shields that protect your allies.*
 > 
-> | **Melee, Strike, Weapon** |          **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |          **Main action** |
 > |---------------------------|-------------------------:|
 > | **📏 Melee 1**            |      **🎯 One creature** |
 > 
@@ -5651,7 +5651,7 @@ Each time you finish a respite, you can choose one hero's weapon, including your
 
 - Strikes with the weapon deal extra holy damage equal to the wielder's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - Any creature struck by the weapon who has holy weakness and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
-- Any minion targeted by a strike using the weapon dies. That minion's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is removed from the minion [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool before any damage is applied to the rest of the squad.
+- Any minion targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike) using the weapon dies. That minion's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is removed from the minion [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool before any damage is applied to the rest of the squad.
 - The weapon's wielder can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 <!-- @type: feature -->
@@ -5705,7 +5705,7 @@ Choose one of the following abilities.
 > 
 > *You reveal a vision of your enemies' fate that causes them to scramble as it staggers them.*
 > 
-> | **Magic, Ranged, Strike** |         **Maneuver** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |         **Maneuver** |
 > |---------------------------|---------------------:|
 > | **📏 Ranged 10**          | **🎯 Three enemies** |
 > 
@@ -5735,17 +5735,17 @@ Choose one of the following abilities.
 > 
 > *You focus your allies' wrath on a chosen foe.*
 > 
-> | **Melee, Strike, Weapon** |   **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |   **Main action** |
 > |---------------------------|------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
 > **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
-> - **≤11:** 8 + M damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability against the target
-> - **12-16:** 12 + M damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target
-> - **17+:** 16 + M damage; as a free triggered action, two allies within 10 squares of the target can each use a strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target
+> - **≤11:** 8 + M damage; as a free triggered action, one ally within 10 squares of the target can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability against the target
+> - **12-16:** 12 + M damage; as a free triggered action, one ally within 10 squares of the target can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target
+> - **17+:** 16 + M damage; as a free triggered action, two allies within 10 squares of the target can each use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target
 > 
-> **Effect:** Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) before making the strike.
+> **Effect:** Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) before making the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: ability | @cost: 9 Wrath | @subtype: triggered -->
 > ###### Intercede (9 Wrath)
@@ -5756,9 +5756,9 @@ Choose one of the following abilities.
 > |-------------------|-------------------:|
 > | **📏 Ranged 10**  |    **🎯 One ally** |
 > 
-> **Trigger:** A creature makes a strike against the target.
+> **Trigger:** A creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against the target.
 > 
-> **Effect:** The target is unaffected by the strike and you become the target instead, even if you aren't a valid target for it. You take half the damage from the strike, and the target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** The target is unaffected by the [strike](scc:mcdm.heroes.v1/rule.combat/strike) and you become the target instead, even if you aren't a valid target for it. You take half the damage from the [strike](scc:mcdm.heroes.v1/rule.combat/strike), and the target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -5795,7 +5795,7 @@ You gain a domain feature from your domain, as shown on the 7th-Level [Censor](s
 <!-- @type: feature -->
 ##### Blessing of Iron
 
-The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against you or any ally within 3 squares of you.
+The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you or any ally within 3 squares of you.
 
 <!-- @type: feature -->
 ##### Covenant of the Heart
@@ -5942,7 +5942,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > 
 > *You curse your foe to become a bane to their allies.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -5959,7 +5959,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > 
 > *You use your foe as a tool against your enemies.*
 > 
-> | **Ranged, Strike, Weapon** |               **Main action** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           |           **🎯 One creature** |
 > 
@@ -5976,7 +5976,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > 
 > *Your enemy's guilt fuels a holy flame that burns your foes.*
 > 
-> | **Melee, Strike, Weapon**  |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 > 
@@ -5993,7 +5993,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > 
 > *You turn your enemies' ire to the target.*
 > 
-> | **Ranged, Strike, Weapon** |               **Main action** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           |           **🎯 One creature** |
 > 
@@ -6033,7 +6033,7 @@ Choose one of the following abilities.
 > 
 > *You sever the target's tenuous connection to the world.*
 > 
-> | **Melee, Strike, Weapon**  |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 > 
@@ -6050,7 +6050,7 @@ Choose one of the following abilities.
 > 
 > *"I know what you fear."*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -6101,7 +6101,7 @@ Choose one of the following abilities.
 > 
 > *You channel holy energy to seal an enemy's fate.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -6476,7 +6476,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > 
 > *You unleash a blast of holy light upon your foe.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -6573,7 +6573,7 @@ The gods imbue a divine swiftness within you. Whenever an adjacent creature deal
 <!-- @type: feature -->
 ##### Sanctuary Ward
 
-In response to a foe's aggression, your god protects you. Whenever another creature damages you, that creature can't target you with a strike until you harm them or one of their allies, or until the end of their next turn.
+In response to a foe's aggression, your god protects you. Whenever another creature damages you, that creature can't target you with a [strike](scc:mcdm.heroes.v1/rule.combat/strike) until you harm them or one of their allies, or until the end of their next turn.
 
 <!-- @type: feature -->
 ##### Spirit Ward
@@ -6594,7 +6594,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Burning radiance falls upon your foe, transferring some of their energy to a nearby ally.*
 > 
-> | **Magic, Ranged, Strike** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
@@ -6611,7 +6611,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *You drain the energy from your target to revitalize yourself or an ally.*
 > 
-> | **Magic, Melee, Strike** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |--------------------------|--------------------:|
 > | **📏 Melee 1**           | **🎯 One creature** |
 > 
@@ -6628,7 +6628,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *A tendril of divine energy shoots forth to draw in your foe.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -6660,7 +6660,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Divine magic tears at your foe and defends a nearby friend.*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -6677,7 +6677,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *A blast of judgment disorients your foe.*
 > 
-> | **Magic, Melee, Strike**  |               **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
@@ -6692,7 +6692,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Your quickly uttered prayer lends aggressive divine energy to a friend engaged in melee.*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -6709,7 +6709,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *A bolt of holy energy saps the life from a foe.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -6760,7 +6760,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > 
 > *Your divine [fury](scc:mcdm.heroes.v1/class/fury) is a hammer that crashes down upon the unrighteous.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -6775,7 +6775,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > 
 > *After some holy lightning, your enemy will think twice about their next attack.*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -6796,7 +6796,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > 
 > *Cursed by you, your enemy takes more damage from your allies.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -6811,7 +6811,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > 
 > *Fear of divine judgment overwhelms your foe.*
 > 
-> | **Magic, Ranged, Strike**  |                      **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |                      **Main action** |
 > |----------------------------|-------------------------------------:|
 > | **📏 Ranged 10**           |                  **🎯 One creature** |
 > 
@@ -6932,7 +6932,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > *You speak with the voice of your saint, commanding your enemies.*
 > 
-> | **Magic, Ranged, Strike** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
@@ -7094,7 +7094,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > 
 > *A beam of energy connects a foe to a friend, draining life from one to heal the other.*
 > 
-> | **Magic, Ranged, Strike** |  **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |  **Main action** |
 > |---------------------------|-----------------:|
 > | **📏 Ranged 10**          | **🎯 One enemy** |
 > 
@@ -7251,7 +7251,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > 
 > *You ignite a foe with holy radiance, rewarding allies who attack them.*
 > 
-> | **Magic, Ranged, Strike** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
@@ -7358,7 +7358,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > *A greatsword streams down from the sky, threatening to pin your foe.*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 > 
@@ -7496,7 +7496,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > *You bend the fate of a foe, willing them to die.*
 > 
-> | **Magic, Ranged, Strike** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
@@ -7553,7 +7553,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 <!-- @type: feature -->
 ##### Blessing of Iron
 
-The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against you or any ally within 3 squares of you.
+The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you or any ally within 3 squares of you.
 
 <!-- @type: feature -->
 ##### Covenant of the Heart
@@ -7700,7 +7700,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > 
 > *You conjure an angel who moves a foe and heals your allies.*
 > 
-> | **Magic, Ranged, Strike**  |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
@@ -7801,7 +7801,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **12-16:** 9 fire damage
 > - **17+:** 12 fire damage
 > 
-> Additionally, you can use a maneuver to move the dragon up to their speed, or to make a melee weapon strike with their claw against an adjacent creature or object. The dragon can also make this strike as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+> Additionally, you can use a maneuver to move the dragon up to their speed, or to make a melee weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with their claw against an adjacent creature or object. The dragon can also make this [strike](scc:mcdm.heroes.v1/rule.combat/strike) as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > 
 > **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7879,7 +7879,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > *Vines burst forth from the ground and bind your foe, slowly closing around them.*
 > 
-> | **Magic, Ranged, Strike**  |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
@@ -7909,7 +7909,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > *You utter a divine word that makes a foe brittle.*
 > 
-> | **Magic, Ranged, Strike** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
@@ -8082,7 +8082,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > 
 > *You cast a ball of elemental energy at a foe.*
 > 
-> | **Magic, Ranged, Strike** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
@@ -8092,7 +8092,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > - **12-16:** 4 + R damage
 > - **17+:** 6 + R damage
 > 
-> **Effect:** When you make this strike, choose the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from one of the following options: acid, cold, corruption, fire, lightning, poison, or sonic.
+> **Effect:** When you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike), choose the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from one of the following options: acid, cold, corruption, fire, lightning, poison, or sonic.
 
 <!-- @type: feature -->
 #### Persistent Magic
@@ -8343,7 +8343,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Your curse causes your foe's flesh to rot off as spores that aid your allies.*
 > 
-> | **Green, Magic, Ranged, Rot, Strike**  |     **Main action** |
+> | **Green, Magic, Ranged, Rot, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 > 
@@ -8360,7 +8360,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Two jets of flame lance out at your command.*
 > 
-> | **Fire, Magic, Ranged, Strike** |                 **Main action** |
+> | **Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |                 **Main action** |
 > |---------------------------------|--------------------------------:|
 > | **📏 Ranged 10**                | **🎯 Two creatures or objects** |
 > 
@@ -8375,7 +8375,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *You absorb the life energy of another creature and use it to [teleport](scc:mcdm.heroes.v1/movement/teleport).*
 > 
-> | **Magic, Melee, Strike, Void** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Void** |     **Main action** |
 > |--------------------------------|--------------------:|
 > | **📏 Melee 1**                 | **🎯 One creature** |
 > 
@@ -8392,7 +8392,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *Whipping vines erupt from a foe's body to grasp at another close by.*
 > 
-> | **Green, Magic, Ranged, Strike** |      **Main action** |
+> | **Green, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |      **Main action** |
 > |----------------------------------|---------------------:|
 > | **📏 Ranged 10**                 |  **🎯 One creature** |
 > 
@@ -8409,7 +8409,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *You give your enemy a gentle tap-like an asteroid impact.*
 > 
-> | **Earth, Magic, Melee, Strike** |               **Main action** |
+> | **Earth, Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------------|------------------------------:|
 > | **📏 Melee 1**                  | **🎯 One creature or object** |
 > 
@@ -8424,7 +8424,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *You inflict pain and doubt in equal measure.*
 > 
-> | **Magic, Ranged, Strike, Void** |               **Main action** | 
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Void** |               **Main action** | 
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
@@ -8456,7 +8456,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > *A jet of heavy fire erupts where you strike.*
 > 
-> | **Fire, Magic, Ranged, Strike** |               **Main action** | 
+> | **Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** | 
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
@@ -8496,7 +8496,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > 
 > *Fire engulfs your target and continues to churn.*
 > 
-> | **Fire, Magic, Ranged, Strike** |               **Main action** |
+> | **Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
@@ -8513,7 +8513,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > 
 > *Mushrooms erupt from a foe, sapping their vitality to spread strengthening spores.*
 > 
-> | **Green, Magic, Ranged, Strike** |      **Main action** |
+> | **Green, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |      **Main action** |
 > |----------------------------------|---------------------:|
 > | **📏 Ranged 10**                 |  **🎯 One creature** |
 > 
@@ -8679,7 +8679,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a critical hit with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an adjacent creature's melee ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
 | Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke opportunity attacks.                                                                                                                                                                                                                             |
-| Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
+| Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
 | Giant octopus       | 9th   | 5                 | 5 (swim)      | 3    | +2              | +0/+0/+0           | You can breathe in water. Additionally, you can target two creatures or objects<br>with your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Whenever you obtain a tier 2 or tier 3 outcome on<br>a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can automatically grab the target. You can have up to<br>eight creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed). |
 | Rhinoceros          | 9th   | 10                | 8             | 2    | +5              | +2/+2/+2           | Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of the Charge action, that<br>strike gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).                                                                                                                                                                               |
 | King terror lizard  | 10th  | 20                | 5             | 4    | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a 1 burst with the Area and Strike keywords.                                                                                                                                                                                                          |
@@ -8729,7 +8729,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > *Fungal spores sprout inside your enemy's brain, allowing you to control their actions.*
 > 
-> | **Green, Magic, Ranged, Strike, Void** |     **Main action** |
+> | **Green, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Void** |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 > 
@@ -8763,7 +8763,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > *Wrap them up in fire and melting stone.*
 > 
-> | **Earth, Fire, Magic, Ranged, Strike** |     **Main action** |
+> | **Earth, Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 > 
@@ -8844,7 +8844,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > 
 > *With a flick of the wrist, you phase creatures out of existence.*
 > 
-> | **Magic, Ranged, Strike, Void** | **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Void** | **Main action** |
 > |---------------------------------|----------------:|
 > | **📏 Ranged 10**                |  **🎯 Special** |
 > 
@@ -9023,7 +9023,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > 
 > *Your flames dance from kindling to kindling to kindling.*
 > 
-> | **Fire, Magic, Ranged, Strike** |               **Main action** |
+> | **Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
@@ -9059,7 +9059,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > 
 > *You rip an enemy's world in twain.*
 > 
-> | **Magic, Ranged, Strike, Void** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Void** |               **Main action** |
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
@@ -9141,7 +9141,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > 
 > - Their [size](scc:mcdm.heroes.v1/rule.character/size) and stability increase by 2, with any [size](scc:mcdm.heroes.v1/rule.character/size) 1 target becoming [size](scc:mcdm.heroes.v1/rule.character/size) 3. Each creature who is within the target's new space slides to the nearest unoccupied space, ignoring stability. If the target doesn't have space to grow, they grow as much as they can and become [restrained](scc:mcdm.heroes.v1/condition/restrained) until the effect ends.
 > - They have fire immunity 10.
-> - Their strikes deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> - Their [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - When the target force moves a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +2 bonus.
 > - They can use their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for [Might](scc:mcdm.heroes.v1/rule.character/might) power rolls.
 > 
@@ -9295,7 +9295,7 @@ You have the following ability.
 >
 >> **Boulder Bash**
 >>
->> | **Melee, Ranged, Strike, Weapon** |                 **Signature** |
+>> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Signature** |
 >> |-----------------------------------|------------------------------:|
 >> | **📏 Melee 2 or ranged 10**       | **🎯 One creature or object** |
 >>
@@ -9431,7 +9431,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > 
 > *You let fly a fiery missile braided with pure primal energy.*
 > 
-> | **Fire, Magic, Ranged, Strike** |            **Main action** |
+> | **Fire, Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |            **Main action** |
 > |---------------------------------|---------------------------:|
 > | **📏 Ranged 10**                | **🎯 One enemy or object** |
 > 
@@ -9668,7 +9668,7 @@ As your ferocity grows, you gain benefits as noted on the Reaver [Growing Feroci
 <!-- @type: feature -->
 ##### Primordial Strength
 
-Whenever you damage an object with a weapon strike, the strike deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, whenever you push another creature into an object, the creature takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
+Whenever you damage an object with a weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, whenever you push another creature into an object, the creature takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 As your ferocity grows, you gain benefits as noted on the Berserker [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
@@ -9754,7 +9754,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *The heavy impact of your weapon attacks drives your foes ever back.*
 > 
-> | **Melee, Strike, Weapon** |                **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                **Main action** |
 > |---------------------------|-------------------------------:|
 > | **📏 Melee 1**            |  **🎯 One creature or object** |
 > 
@@ -9769,7 +9769,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *Staying in constant motion helps you slip out of reach after a brutal assault.*
 > 
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
@@ -9786,7 +9786,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *You skewer your enemy like a boar upon a spit.*
 > 
-> | **Melee, Strike, Weapon** |                             **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                             **Main action** |
 > |---------------------------|--------------------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller** |
 > 
@@ -9801,7 +9801,7 @@ Choose one signature ability from the following options. Signature abilities can
 > 
 > *Your reckless assault leaves you tactically vulnerable.*
 > 
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
@@ -9841,7 +9841,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > 
 > *Your enemies will clear your path—whether they want to or not.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -9877,7 +9877,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > 
 > *Hard for them to fight when they're busy holding in their giblets.*
 > 
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
@@ -9898,7 +9898,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > 
 > *See how well they fight after you've bled them dry.*
 > 
-> | **Melee, Strike, Weapon**   |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**   |               **Main action** |
 > |-----------------------------|------------------------------:|
 > | **📏 Melee 1**              | **🎯 One creature or object** |
 > 
@@ -9943,7 +9943,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > 
 > *You gut your life force to ensure a foe's demise.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -9953,7 +9953,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > - **12-16:** 11 + M damage
 > - **17+:** 16 + M damage
 > 
-> **Spend 1+ Ferocity:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), this ability deals an extra 1d6 damage for each ferocity spent. While you are [dying](scc:mcdm.heroes.v1/rule.health/dying), it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) after making this strike.
+> **Spend 1+ Ferocity:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), this ability deals an extra 1d6 damage for each ferocity spent. While you are [dying](scc:mcdm.heroes.v1/rule.health/dying), it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) after making this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -9991,7 +9991,7 @@ At the end of each of your turns, each enemy adjacent to you takes damage equal 
 <!-- @type: feature -->
 ##### Unstoppable Force
 
-Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, you can use a strike signature ability or a strike heroic ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Additionally, you can jump as part of your charge.
+Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, you can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability or a [strike](scc:mcdm.heroes.v1/rule.combat/strike) heroic ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Additionally, you can jump as part of your charge.
 
 <!-- @type: feature -->
 #### 2nd-Level Aspect Ability
@@ -10041,7 +10041,7 @@ Choose one of the following abilities.
 > 
 > *Your unbridled rage strikes terror in their hearts.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10077,7 +10077,7 @@ Choose one of the following abilities.
 > 
 > *I will hunt you down.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10168,7 +10168,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a melee strike against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score and increases its potency by 1.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score and increases its potency by 1.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
 > ###### Steelbreaker (7 Ferocity)
@@ -10186,7 +10186,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > 
 > *Slash. Walk away.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10225,7 +10225,7 @@ As your ferocity manifests elemental forces created by the Primordial Chaos, you
 <!-- @type: feature -->
 #### Primordial Strike
 
-You can manifest your ferocity directly as an elemental force created by the Primordial Chaos. As part of any strike, you can spend 1 ferocity to gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used for that strike. The extra damage dealt by the [surge](scc:mcdm.heroes.v1/rule.resource/surge) can be acid, cold, corruption, fire, lightning, poison, or sonic (your choice).
+You can manifest your ferocity directly as an elemental force created by the Primordial Chaos. As part of any strike, you can spend 1 ferocity to gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used for that [strike](scc:mcdm.heroes.v1/rule.combat/strike). The extra damage dealt by the [surge](scc:mcdm.heroes.v1/rule.resource/surge) can be acid, cold, corruption, fire, lightning, poison, or sonic (your choice).
 
 <!-- @type: feature -->
 #### Skill
@@ -10275,7 +10275,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > 
 > *You need just one blow to sabotage your target.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10292,7 +10292,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > 
 > *You quickly strike back at a foe.*
 > 
-> | **Melee, Strike, Weapon** |             **Free triggered** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |             **Free triggered** |
 > |---------------------------|-------------------------------:|
 > | **📏 Melee 1**            | **🎯 The triggering creature** |
 > 
@@ -10311,7 +10311,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > 
 > *You knock around enemies like playthings.*
 > 
-> | **Melee, Strike, Weapon** |                 **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
 > | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 > 
@@ -10328,7 +10328,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > 
 > *You channel the Primordial Chaos into blows that petrify your foe... literally.*
 > 
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 > 
@@ -10395,7 +10395,7 @@ Choose one of the following abilities.
 > 
 > *You strike an enemy hard enough to be a projectile that knocks a crowd of creatures around.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10416,11 +10416,11 @@ Choose one of the following abilities.
 > 
 > *Once you taste your foe's blood, you become more efficient and turn every killing blow into an opportunity.*
 > 
-> | **Melee, Strike, Weapon** | **Free triggered** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Free triggered** |
 > |---------------------------|-------------------:|
 > | **📏 Melee 1**            |        **🎯 Self** |
 > 
-> **Trigger:** You reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) with a strike.
+> **Trigger:** You reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) with a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 > 
 > **Effect:** You target a creature adjacent to you with the same strike, using the same power roll as the triggering strike.
 
@@ -10429,7 +10429,7 @@ Choose one of the following abilities.
 > 
 > *You break through the enemy lines to make an example.*
 > 
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
@@ -10441,7 +10441,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 + M damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **17+:** 10 + M damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > 
-> **Effect:** If a target who is not a leader or solo creature is [winded](scc:mcdm.heroes.v1/rule.health/winded) by this strike, they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and you choose an enemy within 5 squares of you. If that enemy has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
+> **Effect:** If a target who is not a leader or solo creature is [winded](scc:mcdm.heroes.v1/rule.health/winded) by this [strike](scc:mcdm.heroes.v1/rule.combat/strike), they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and you choose an enemy within 5 squares of you. If that enemy has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
 ##### 6th-Level Stormwight Abilities
 
@@ -10452,7 +10452,7 @@ Choose one of the following abilities.
 >
 > *You strike at the target like the ultimate predator you are.*
 >
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
@@ -10568,7 +10568,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 >
 > *You strike so no damage is wasted.*
 >
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
@@ -10596,7 +10596,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 >
 > *You won't escape your fate.*
 >
-> | **Magic, Melee, Strike, Weapon** | **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Main action** |
 > |----------------------------------|----------------:|
 > | **📏 Self; see below**           |     **🎯 Self** |
 >
@@ -10670,7 +10670,7 @@ Choose one of the following abilities.
 >
 > *You attune the target to be weaker to a specific element.*
 >
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
@@ -10685,9 +10685,9 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Shower of Blood (11 Ferocity)
 >
-> *You shock your foes with the brutality of your strike, resetting the balance of combat.*
+> *You shock your foes with the brutality of your [strike](scc:mcdm.heroes.v1/rule.combat/strike), resetting the balance of combat.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -10747,7 +10747,7 @@ Your mastery of elemental forces protects and emboldens you. If you are a berser
 
 When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
-Additionally, when you use [Primordial Strike](scc:mcdm.heroes.v1/feature.fury.level-4/primordial-strike), you can spend up to 3 ferocity, gaining 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) per ferocity spent to use for that strike.
+Additionally, when you use [Primordial Strike](scc:mcdm.heroes.v1/feature.fury.level-4/primordial-strike), you can spend up to 3 ferocity, gaining 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) per ferocity spent to use for that [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature -->
 #### Characteristic Increase
@@ -10826,7 +10826,7 @@ Each stormwight kit is associated with a [primordial storm](scc:mcdm.heroes.v1/f
 <!-- @type: feature -->
 ##### Equipment
 
-You wear no armor and wield only your unarmed strikes—which become devastating natural weapons as your ferocity grows.
+You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike)—which become devastating natural weapons as your ferocity grows.
 
 <!-- @type: feature -->
 ##### Kit Bonuses
@@ -10881,7 +10881,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is col
 
 *Attacks with your sharp and deadly claws grab the weak.*
 
-| **Melee, Strike, Weapon** |               **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
@@ -10900,7 +10900,7 @@ As your ferocity grows, you gain benefits as noted on the [Boren](scc:mcdm.heroe
 
 | Ferocity        | Benefit                                                                                                                                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | You can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time. Additionally, whenever you make a strike against a creature you have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                       |
+| 2               | You can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time. Additionally, whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature you have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                       |
 | 4               | The first time you grab a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                           |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                                                     |
 | 8 (4th level)   | The first time you grab a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                                                                                             |
@@ -11015,7 +11015,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is cor
 
 *Your enemies try in vain to fall back from your pouncing attack.*
 
-| **Melee, Strike, Weapon** |               **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
@@ -11083,7 +11083,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is lig
 
 *A wild assault forces your foe onto their back.*
 
-| **Melee, Strike, Weapon** |               **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
@@ -11358,7 +11358,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You strike so quickly that your hands become a blur.*
 >
-> | **Melee, Psionic, Strike, Weapon** |                 **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 > |------------------------------------|--------------------------------:|
 > | **📏 Melee 1**                     | **🎯 Two creatures or objects** |
 >
@@ -11375,7 +11375,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You flit about the battlefield and take an opportunistic strike.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11385,14 +11385,14 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **12-16:** 7 + A damage
 > - **17+:** 10 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this strike.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Joint Lock
 >
 > *You contort your enemy's body into a stance they struggle to escape from.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11407,7 +11407,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *Your opponent staggers. They cannot ignore you.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11422,7 +11422,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *The force of your blow extends past the limits of your body, pulling your enemy closer.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 2**                     | **🎯 One creature** |
 >
@@ -11437,7 +11437,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You step momentarily out of phase as you pull an enemy through you.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11454,7 +11454,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You strike at key nerve clusters to leave your foe staggered.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11477,7 +11477,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 >
 > *You foresee the best moment to strike, then exploit it.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11487,7 +11487,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > - **12-16:** 10 + A damage
 > - **17+:** 13 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this strike. Additionally, whenever an effect lets you make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use a signature ability, you can use this ability instead, paying its discipline cost as usual.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike). Additionally, whenever an effect lets you make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use a signature ability, you can use this ability instead, paying its discipline cost as usual.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Psychic Pulse (3 Discipline)
@@ -11505,7 +11505,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 >
 > *You strike, and for the next few moments, your enemy can't escape you.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11522,7 +11522,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 >
 > *You focus your psionic technique into a concussive punch.*
 >
-> | **Melee, Psionic, Strike, Weapon** |               **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11541,7 +11541,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 >
 > *Your blow reorders a foe's body, causing pain if they attempt to channel sorcery.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -11558,7 +11558,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 >
 > *A single touch from you, and your enemy flies backward.*
 >
-> | **Melee, Psionic, Strike, Weapon** |                  **Maneuver** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                  **Maneuver** |
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
@@ -11575,7 +11575,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 >
 > *For a moment, your foe slips out of phase with this manifold.*
 >
-> | **Melee, Psionic, Strike, Weapon** |                           **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                           **Main action** |
 > |------------------------------------|------------------------------------------:|
 > | **📏 Melee 1**                     |                       **🎯 One creature** |
 >
@@ -11667,9 +11667,9 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 5 Discipline -->
 > ###### Force Redirected (5 Discipline)
 >
-> *The force of your strike moves your target in a surprising direction.*
+> *The force of your [strike](scc:mcdm.heroes.v1/rule.combat/strike) moves your target in a surprising direction.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 3**                     | **🎯 One creature** |
 >
@@ -11718,7 +11718,7 @@ Choose one of the following abilities.
 >
 > *Your fist emanates gravitic force that pulls a distant enemy closer.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 3**                     | **🎯 One creature** |
 >
@@ -11887,7 +11887,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 >
 > *You suddenly strike an enemy, then grab them in a psionically enhanced grip.*
 >
-> | **Melee, Psionic, Strike, Weapon** |  **Free triggered** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |  **Free triggered** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -11899,14 +11899,14 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > - **12-16:** 10 + A damage; I < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 13 + A damage; I < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** This strike resolves before the triggering movement or main action.
+> **Effect:** This [strike](scc:mcdm.heroes.v1/rule.combat/strike) resolves before the triggering movement or main action.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Iron Grip (9 Discipline)
 >
 > *You grab the target with supernatural force.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -12174,7 +12174,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 >
 > *You focus your [null field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) into a pressure point strike that prevents your foe from channeling sorcery.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -12191,7 +12191,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 >
 > *You throw your foe out of phase with this manifold, causing them to harm other enemies as they return.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -12308,7 +12308,7 @@ Choose one of the following abilities.
 >
 > *You drain all the heat from the target.*
 >
-> | **Melee, Psionic, Strike** |        **Maneuver** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |        **Maneuver** |
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 >
@@ -12342,7 +12342,7 @@ Choose one of the following abilities.
 >
 > *Your essential hyperreality disrupts your enemy's connection to existence.*
 >
-> | **Melee, Psionic, Strike, Weapon** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
@@ -12549,7 +12549,7 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |    **🎯 Self** |
 > 
-> **Effect:** You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your [size](scc:mcdm.heroes.v1/rule.character/size), such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your strikes gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge), and when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, you gain a +1 bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You envelop yourself in an illusion that makes you appear nonthreatening and harmless to your enemies. You might take on the appearance of a harmless animal of your [size](scc:mcdm.heroes.v1/rule.character/size), such as a sheep or capybara, or you might appear as a less heroic and unarmed version of yourself. While this illusion lasts, your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge), and when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, you gain a +1 bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting).
 > 
 > The illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 > 
@@ -12582,9 +12582,9 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 > |-------------|--------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Trigger:** An enemy targets you with a strike.
+> **Trigger:** An enemy targets you with a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
-> **Effect:** Choose an enemy within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the triggering strike, including the enemy who targeted you. The strike targets that enemy instead.
+> **Effect:** Choose an enemy within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the triggering strike, including the enemy who targeted you. The [strike](scc:mcdm.heroes.v1/rule.combat/strike) targets that enemy instead.
 
 <!-- @type: ability | @subtype: triggered -->
 > ###### Defensive Roll
@@ -12653,7 +12653,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *Your precise strikes let your allies take advantage of a target's agony.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -12670,7 +12670,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *"It's better, just you and me. Isn't it?"*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -12687,7 +12687,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *You attack an enemy as an ally exposes their weakness.*
 >
-> | **Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
@@ -12704,7 +12704,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *They can't watch both of you at once.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -12729,7 +12729,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 >
 > *Your attack leaves them reeling, allowing you to follow up.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -12746,7 +12746,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 >
 > *You leave your foe bleeding out after a devastating attack.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -12761,7 +12761,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 >
 > *Move unexpectedly, strike fast, and be gone!*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -12771,14 +12771,14 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > - **12-16:** 8 + A damage
 > - **17+:** 11 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed, dividing that movement before or after your strike as desired.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed, dividing that movement before or after your [strike](scc:mcdm.heroes.v1/rule.combat/strike) as desired.
 
 <!-- @type: ability | @cost: 3 Insight -->
 > ###### Two Throats at Once (3 Insight)
 >
 > *A bargain.*
 >
-> | **Melee, Ranged, Strike, Weapon** |                 **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 > |-----------------------------------|--------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 Two creatures or objects** |
 >
@@ -12797,7 +12797,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 >
 > *Your blade might be the last thing they see.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -12829,7 +12829,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 >
 > *Your friends will thank you.*
 >
-> | **Ranged, Strike, Weapon** |     **Main action** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
@@ -12848,7 +12848,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > |------------------------|----------------:|
 > | **📏 Self; see below** |     **🎯 Self** |
 >
-> **Effect:** You use a strike signature ability twice.
+> **Effect:** You use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability twice.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -12888,7 +12888,7 @@ Additionally, when you use your [I'm No Threat](scc:mcdm.heroes.v1/feature.abili
 <!-- @type: feature -->
 ##### Trained Assassin
 
-You know just where to cut your enemies. Whenever you make a strike that has no [bane](scc:mcdm.heroes.v1/rule.dice/bane) or double [bane](scc:mcdm.heroes.v1/rule.dice/bane), and that incorporates 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 1 additional [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use only on that strike.
+You know just where to cut your enemies. Whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that has no [bane](scc:mcdm.heroes.v1/rule.dice/bane) or double [bane](scc:mcdm.heroes.v1/rule.dice/bane), and that incorporates 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 1 additional [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use only on that [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature -->
 #### 2nd-Level College Ability
@@ -12902,9 +12902,9 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 5 Insight -->
 > ###### In a Puff of Ash (5 Insight)
 >
-> *You enchant a strike with your [teleport](scc:mcdm.heroes.v1/movement/teleport)ation magic.*
+> *You enchant a [strike](scc:mcdm.heroes.v1/rule.combat/strike) with your [teleport](scc:mcdm.heroes.v1/movement/teleport)ation magic.*
 >
-> | **Magic, Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**               | **🎯 One creature** |
 >
@@ -12995,7 +12995,7 @@ Choose one of the following abilities.
 > |----------------------|-------------------:|
 > | **📏 Self**          |        **🎯 Self** |
 >
-> **Trigger:** Another creature targets you with a strike.
+> **Trigger:** Another creature targets you with a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
 > **Effect:** You use your [Clever Trick](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/clever-trick) ability with no insight cost against the triggering creature and strike. You can [teleport](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space within 3 squares of that creature and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them. You can then spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -13018,7 +13018,7 @@ You have the following ability.
 > |------------------|--------------------:|
 > | **📏 Ranged 20** | **🎯 One creature** |
 > 
-> **Effect:** As long as you remain within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the target, maintain line of effect to them, and strike no other creature first, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next strike you make against the assessed creature, and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) you can use only on that strike.
+> **Effect:** As long as you remain within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the target, maintain line of effect to them, and strike no other creature first, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next strike you make against the assessed creature, and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) you can use only on that [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature -->
 #### 7-Insight Ability
@@ -13041,7 +13041,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 >
 > *"Why are you looking at ME?!"*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -13058,7 +13058,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 >
 > *One missile—placed well and placed hard.*
 >
-> | **Ranged, Strike, Weapon** |     **Main action** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
@@ -13073,7 +13073,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 >
 > *There's no recovering from this.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -13193,7 +13193,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 >
 > *You sweep your foe off their feet and plunge them into absolute darkness.*
 >
-> | **Magic, Melee, Strike, Weapon** |               **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature or object** |
 >
@@ -13227,7 +13227,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 >
 > *Silence is a virtue. A knife pinning their mouth shut is the next best thing.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -13259,7 +13259,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 - If you end your turn with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
 - You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns.
 - You have corruption immunity equal to 5 + your level.
-- Creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against you.
+- Creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 - You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with other creatures.
 
 <!-- @type: feature -->
@@ -13276,7 +13276,7 @@ Choose one of the following abilities.
 >
 > *Your attack produces a cloud of black ash that launches an enemy into the air.*
 >
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
@@ -13390,7 +13390,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Careful Observation Improvement
 
-You can target two creatures simultaneously with your [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation) ability, observing both simultaneously. Making a strike against one target doesn't end your observation of the other target.
+You can target two creatures simultaneously with your [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation) ability, observing both simultaneously. Making a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against one target doesn't end your observation of the other target.
 
 <!-- @type: feature -->
 #### Ventriloquist
@@ -13460,7 +13460,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 >
 > *A practiced attack will instantly kill an already weakened foe.*
 >
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
@@ -13490,13 +13490,13 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 <!-- @type: ability | @cost: 11 Insight -->
 > ###### Speed of Shadows (11 Insight)
 >
-> *You make multiple strikes against a foe before they even notice they're dead.*
+> *You make multiple [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against a foe before they even notice they're dead.*
 >
 > | **Magic**   | **Main action** |
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** You can use a strike signature ability four times, use a strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) three times, or use a strike signature ability that has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) twice. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares between each use.
+> **Effect:** You can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability four times, use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) three times, or use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) twice. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares between each use.
 
 <!-- @type: ability | @cost: 11 Insight -->
 > ###### They Always Line Up (11 Insight)
@@ -13556,7 +13556,7 @@ Choose one of the following abilities.
 >
 > *You create a temporary portal to allow a massive demonic hand to reach through.*
 >
-> | **Magic, Melee, Strike, Weapon** |     **Main action** |
+> | **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 3**                   | **🎯 One creature** |
 >
@@ -13594,7 +13594,7 @@ Choose one of the following abilities.
 >
 > *You attach your most potent explosive to your foe. Under less pressing circumstances, you're sure you could launch them into orbit.*
 >
-> | **Melee, Ranged, Strike**   |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**   |               **Main action** |
 > |-----------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10** | **🎯 One creature or object** |
 >
@@ -13626,7 +13626,7 @@ Choose one of the following abilities.
 >
 > *After everything you've been through together, you twist the blade and make the pain extra personal.*
 >
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
@@ -13671,7 +13671,7 @@ You can target three creatures simultaneously with your [Careful Observation](sc
 <!-- @type: feature -->
 #### Improved Umbral Form
 
-You gain full control over the [shadow](scc:mcdm.heroes.v1/class/shadow) creature you become with your [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in this form, and creatures no longer gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against you.
+You gain full control over the [shadow](scc:mcdm.heroes.v1/class/shadow) creature you become with your [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in this form, and creatures no longer gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 
 While you are in your [umbral form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form), you can spend 1 uninterrupted minute concentrating on a location where you've been before. At the end of that minute, you and each willing creature of your choice within 10 squares of you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to unoccupied spaces of your choice within that location. Each creature who [teleports](scc:mcdm.heroes.v1/movement/teleport) this way is invisible for 1 hour or until they use an ability.
 
@@ -13976,7 +13976,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 >
 > *Your precise strike leaves your foe struggling to respond.*
 >
-> | **Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
@@ -13991,7 +13991,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 >
 > *Your attack gives an ally hope.*
 >
-> | **Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
@@ -14022,24 +14022,24 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 >
 > *"Let's not argue about who's the hammer and who's the anvil!"*
 >
-> | **Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
 > **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
-> - **≤11:** 5 + M damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action
-> - **12-16:** 9 + M damage; one ally within 10 squares of you can use a strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target as a free triggered action
-> - **17+:** 12 + M damage; two allies within 10 squares of you can each use a strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target as a free triggered action
+> - **≤11:** 5 + M damage; one ally within 10 squares of you can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability against the target as a free triggered action
+> - **12-16:** 9 + M damage; one ally within 10 squares of you can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target as a free triggered action
+> - **17+:** 12 + M damage; two allies within 10 squares of you can each use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against the target as a free triggered action
 >
-> **Effect:** If the target is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before one or both chosen allies has made their strike, the ally or allies can pick a different target.
+> **Effect:** If the target is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before one or both chosen allies has made their [strike](scc:mcdm.heroes.v1/rule.combat/strike), the ally or allies can pick a different target.
 
 <!-- @type: ability | @cost: 5 Focus -->
 > ###### Mind Game (5 Focus)
 >
 > *Your attack demoralizes your foe. Your allies begin to think you can win.*
 >
-> | **Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
@@ -14101,7 +14101,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 <!-- @type: feature -->
 ##### Goaded
 
-You have learned to leverage your marked foes' psychology and goad them into acting before they're tactically ready. Whenever a creature marked by you uses a strike that targets you or any ally within your line of effect, you can use a free triggered action to change one target of the strike to you or another ally within your line of effect. The new target must be within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the ability and within line of effect of the creature using it.
+You have learned to leverage your marked foes' psychology and goad them into acting before they're tactically ready. Whenever a creature marked by you uses a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets you or any ally within your line of effect, you can use a free triggered action to change one target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike) to you or another ally within your line of effect. The new target must be within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the ability and within line of effect of the creature using it.
 
 <!-- @type: feature -->
 ##### Infiltration Tactics
@@ -14135,18 +14135,18 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target is marked by you, and must immediately make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of your choice within 5 squares of them.
 >
-> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to force that target to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of your choice within 5 squares of them.
+> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to force that target to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of your choice within 5 squares of them.
 
 <!-- @type: ability | @cost: 5 Focus -->
 > ###### Try Me Instead (5 Focus)
 >
 > *"Try picking on someone my [size](scc:mcdm.heroes.v1/rule.character/size)."*
 >
-> | **Melee, Strike, Weapon** | **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Main action** |
 > |---------------------------|----------------:|
 > | **📏 Self; see below**    |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other's spaces. The ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), and you can make the following weapon strike with a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 1 against a creature.
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other's spaces. The ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), and you can make the following weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 1 against a creature.
 >
 > **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -14163,7 +14163,7 @@ Choose one of the following abilities.
 >
 > *Your enemy will think twice about attacking your friend.*
 >
-> | **Ranged, Strike, Weapon** |     **Main action** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
@@ -14186,7 +14186,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target is marked by you, and you gain two [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 >
-> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to add one additional target to the strike.
+> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to add one additional target to the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 ##### 2nd-Level Vanguard Ability
 
@@ -14197,7 +14197,7 @@ Choose one of the following abilities.
 >
 > *You prioritize saving an ally over your own safety.*
 >
-> | **Ranged, Strike, Weapon** |    **Triggered** |
+> | **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |    **Triggered** |
 > |----------------------------|-----------------:|
 > | **📏 Ranged 5**            | **🎯 One enemy** |
 >
@@ -14246,7 +14246,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability or a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) heroic ability instead of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @cost: 7 Focus | @id: hit-em-hard -->
 > ###### Hit 'Em Hard! (7 Focus)
@@ -14369,7 +14369,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 >
 > *You distract a foe while your allies secure their defensive gear.*
 >
-> | **Melee, Strike, Weapon** | **Main action**     |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Main action**     |
 > |---------------------------|---------------------|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -14412,7 +14412,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > |------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One ally** |
 >
-> **Effect:** The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The ability has its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost reduced by 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score (minimum cost 0).
+> **Effect:** The target uses a heroic ability with the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword as a free triggered action, and deals extra damage with that ability equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The ability has its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost reduced by 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score (minimum cost 0).
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -14456,7 +14456,7 @@ Choose one of the following abilities.
 >
 > *You confuse your foes, causing them to turn on each other.*
 >
-> | **Melee, Ranged, Strike, Weapon** |      **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |      **Main action** |
 > |-----------------------------------|---------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 Two creatures** |
 >
@@ -14483,7 +14483,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target is marked by you. Immediately and until the end of the encounter, the Director tells you if any creatures marked by you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or weakness and the value of that immunity or weakness. Additionally, you and each ally within 3 squares of you gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 >
-> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and deal extra damage equal to three times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to make the [strike](scc:mcdm.heroes.v1/rule.combat/strike) ignore [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and deal extra damage equal to three times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: ability | @cost: 9 Focus | @id: hustle -->
 > ###### Hustle! (9 Focus)
@@ -14524,17 +14524,17 @@ Choose one of the following abilities.
 >
 > *You lead your allies in a charge.*
 >
-> | **Charge, Melee, Strike, Weapon** |     **Main action** |
+> | **Charge, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1**                    | **🎯 One creature** |
 >
 > **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
-> - **≤11:** 6 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee strike signature ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
-> - **12-16:** 9 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
-> - **17+:** 13 + M damage; two allies within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can each use a melee strike signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
+> - **≤11:** 6 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
+> - **12-16:** 9 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
+> - **17+:** 13 + M damage; two allies within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can each use a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
 >
-> **Effect:** If the target is hit with two or more strikes as part of this ability and they have R < STRONG, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). If the target is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before one or both allies has made their strike, the ally or allies can pick a different target.
+> **Effect:** If the target is hit with two or more strikes as part of this ability and they have R < STRONG, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). If the target is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before one or both allies has made their [strike](scc:mcdm.heroes.v1/rule.combat/strike), the ally or allies can pick a different target.
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -14617,21 +14617,21 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 
 You have trained your squad to be silent ambushers.
 
-**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to let the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the strike is resolved.
+**Mark Benefit:** When you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to let the character making the [strike](scc:mcdm.heroes.v1/rule.combat/strike) [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the [strike](scc:mcdm.heroes.v1/rule.combat/strike) is resolved.
 
 <!-- @type: feature -->
 ##### Pincer Movement
 
 You have trained your squad to coordinate their movements to maximize combat impact.
 
-**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to have the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score before the strike is resolved. If you didn't make the strike, you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well. If you did make the strike, one ally within 10 squares of you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well.
+**Mark Benefit:** When you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to have the character making the [strike](scc:mcdm.heroes.v1/rule.combat/strike) [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score before the [strike](scc:mcdm.heroes.v1/rule.combat/strike) is resolved. If you didn't make the [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well. If you did make the [strike](scc:mcdm.heroes.v1/rule.combat/strike), one ally within 10 squares of you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well.
 
 <!-- @type: feature -->
 ##### See Your Enemies Driven Before You
 
 You have trained your squad to maximize impact and break enemy lines when they attack.
 
-**Mark Benefit:** When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. That character can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, ending this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
+**Mark Benefit:** When you or any ally makes a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to have the character making the [strike](scc:mcdm.heroes.v1/rule.combat/strike) push the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. That character can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, ending this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
 
 <!-- @type: feature -->
 #### 11-Focus Ability
@@ -14678,7 +14678,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 >
 > *You create an opening for an ally.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -14750,7 +14750,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 3 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against any enemy marked by you within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of their ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). A target ignores [banes](scc:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane) when making this strike.
+> **Effect:** Each target can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against any enemy marked by you within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of their ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). A target ignores [banes](scc:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane) when making this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: ability | @cost: 11 Focus -->
 > ###### Counterstrategy (11 Focus)
@@ -14772,7 +14772,7 @@ Choose one of the following abilities.
 >
 > *Nothing will stop you from reaching your foe.*
 >
-> | **Charge, Melee, Strike, Weapon** |     **Main action** |
+> | **Charge, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > | --------------------------------- | ------------------: |
 > | **📏 Melee 1**                    | **🎯 One creature** |
 >
@@ -14791,7 +14791,7 @@ Choose one of the following abilities.
 >
 > *You focus on making an enemy irrelevant.*
 >
-> | **Melee, Ranged, Strike, Weapon** |     **Main action** |
+> | **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
@@ -15162,7 +15162,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You advance an enemy's age for a moment.*
 >
-> | **Chronopathy, Psionic, Ranged, Strike** |               **Main action** |
+> | **Chronopathy, Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature or object** |
 >
@@ -15251,7 +15251,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You picture an object in your mind and give it form—directly above your opponent's head.*
 >
-> | **Psionic, Ranged, Resopathy, Strike** |               **Main action** |
+> | **Psionic, Ranged, Resopathy, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |----------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature or object** |
 >
@@ -15289,7 +15289,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > *You form a blade of mind energy and stab your target, invigorating yourself.*
 >
-> | **Animapathy, Melee, Psionic, Strike** |               **Main action** |
+> | **Animapathy, Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |----------------------------------------|------------------------------:|
 > | **📏 Melee 2**                         | **🎯 One creature or object** |
 >
@@ -15316,7 +15316,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 >
 > *You project psionic energy out to a creature and take on a new visage in their mind.*
 >
-> | **Psionic, Ranged, Strike, Telepathy** |     **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
@@ -15361,7 +15361,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 >
 > *Smoke flows from your enemy like tears as their skin begins to blacken and flake.*
 >
-> | **Psionic, Pyrokinesis, Ranged, Strike** |     **Main action** |
+> | **Psionic, Pyrokinesis, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature** |
 >
@@ -15540,7 +15540,7 @@ Choose one of the following abilities.
 >
 > *You raise the target slightly into the air, then smother them against the ground.*
 >
-> | **Psionic, Ranged, Strike, Telekinesis** |               **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telekinesis** |               **Main action** |
 > |------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature or object** |
 >
@@ -15561,7 +15561,7 @@ Choose one of the following abilities.
 >
 > *You overload their senses, turning all their subconscious thoughts into conscious ones.*
 >
-> | **Psionic, Ranged, Strike, Telepathy** |     **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
@@ -15631,13 +15631,13 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 >
 > *Spheres of solid psionic energy float around you.*
 >
-> | **Psionic, Ranged, Strike, Telekinesis** | **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telekinesis** | **Main action** |
 > |------------------------------------------|----------------:|
 > | **📏 Self; see below**                   |     **🎯 Self** |
 >
 > **Effect:** You create three [size](scc:mcdm.heroes.v1/rule.character/size) 1T orbs that orbit your body. Each orb gives you a cumulative [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 1. Each time you take damage, you lose 1 orb.
 >
-> Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.
+> Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike), losing the orb after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
 > **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15782,7 +15782,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > |----------------------------------|------------------------:|
 > | **📏 Ranged 10**                 | **🎯 Self or one ally** |
 >
-> **Effect:** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.
+> **Effect:** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.
 >
 > **Strained:** The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). You are [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
@@ -15810,7 +15810,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 >
 > *You latch onto your prey's brain and don't let go, like a song they can't get out of their head.*
 >
-> | **Psionic, Ranged, Strike, Telepathy** |     **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |     **Main action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
@@ -15829,7 +15829,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 >
 > *You fire a piercing bolt of psychic energy that lances through two foes and leaves a faint intangible thread between them.*
 >
-> | **Animapathy, Psionic, Ranged, Strike** |    **Main action** |
+> | **Animapathy, Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |    **Main action** |
 > |-----------------------------------------|-------------------:|
 > | **📏 Ranged 10**                        | **🎯 Two enemies** |
 >
@@ -15913,7 +15913,7 @@ Choose one of the following abilities.
 >
 > **Effect:** The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are [knocked prone](scc:mcdm.heroes.v1/condition/prone).
 >
-> **Strained:** This ability gains the Strike keyword as the vision hurts the target's psyche. You make a power roll, then are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
+> **Strained:** This ability gains the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword as the vision hurts the target's psyche. You make a power roll, then are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
 > **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16008,7 +16008,7 @@ Choose one of the following abilities.
 >
 > *You manipulate your enemies' minds and make them wonder if you were ever really there in the first place.*
 >
-> | **Psionic, Ranged, Strike, Telepathy** |   **Maneuver** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |   **Maneuver** |
 > |----------------------------------------|---------------:|
 > | **📏 Ranged 10**                       | **🎯 Special** |
 >
@@ -16162,7 +16162,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 >
 > *You attempt to make them forget all their training.*
 >
-> | **Melee, Psionic, Strike, Telepathy** |     **Main action** |
+> | **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |     **Main action** |
 > |---------------------------------------|--------------------:|
 > | **📏 Melee 2**                        | **🎯 One creature** |
 >
@@ -16312,7 +16312,7 @@ Choose one of the following abilities.
 >
 > *You fire a telepathic bolt empowered by every consciousness within reach directly into your foe's mind.*
 >
-> | **Psionic, Ranged, Strike, Telepathy** |     **Main action** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Telepathy** |     **Main action** |
 > | ------------------------------------|--------------------:|
 > | **📏 Ranged 10**  | **🎯 One creature** |
 >
@@ -16647,7 +16647,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > *All for thunder motherrr! ♪ Run and hide for coverrr!♪*
 >
-> | **Magic, Performance, Ranged, Strike** |       **No action** |
+> | **Magic, Performance, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |       **No action** |
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
@@ -16707,7 +16707,7 @@ Your [troubadour class act](scc:mcdm.heroes.v1/feature.troubadour.level-1/trouba
 > |----------------|------------------------:|
 > | **📏 Melee 1** | **🎯 Self or one ally** |
 >
-> **Trigger:** The target takes damage from a melee strike.
+> **Trigger:** The target takes damage from a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
 > **Effect:** The target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the creature who made the triggering strike.
 
@@ -16741,7 +16741,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *And they said practicing fencing was a waste!*
 >
-> | **Melee, Strike, Weapon** |                 **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
 > | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 >
@@ -16760,7 +16760,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *There you are, radiating your usual charisma.*
 >
-> | **Magic, Ranged, Strike, Weapon** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |-----------------------------------|--------------------:|
 > | **📏 Ranged 10**                  | **🎯 One creature** |
 >
@@ -16775,7 +16775,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *I didn't do it! What?*
 >
-> | **Melee, Strike, Weapon**             | **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**             | **Main action** |
 > |---------------------------------------|----------------:|
 > | **📏 Melee 1**                        | **🎯 One creature** |
 >
@@ -16792,7 +16792,7 @@ Choose one signature ability from the following options. Signature abilities can
 >
 > *A lyrical (and physical) jab insults an enemy and inspires an ally.*
 >
-> | **Magic, Melee, Ranged, Strike** |     **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**       | **🎯 One creature** |
 >
@@ -16819,7 +16819,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 >
 > *Just one bad review will ruin their day.*
 >
-> | **Magic, Melee, Ranged, Strike** |               **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**      | **🎯 One creature or object** |
 >
@@ -16870,7 +16870,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 >
 > *As you bob and weave through the crowd, you can't help but leave the audience wanting more.*
 >
-> | **Melee, Strike, Weapon** | **Maneuver** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Maneuver** |
 > |---------------------------|-------------:|
 > | **📏 Self; see below**    |  **🎯 Self** |
 >
@@ -16928,7 +16928,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 >
 > *They're so hurt by your performance, you start to believe it yourself.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -17025,7 +17025,7 @@ Choose one of the following abilities.
 >
 > *Audiences love this bit.*
 >
-> | **Melee, Strike, Weapon** |                  **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                  **Main action** |
 > |---------------------------|---------------------------------:|
 > | **📏 Melee 1**            | **🎯 Self and one willing ally** |
 >
@@ -17036,7 +17036,7 @@ Choose one of the following abilities.
 >
 > *Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -17057,11 +17057,11 @@ Choose one of the following abilities.
 >
 > *Again! Again!*
 >
-> | **Magic, Strike** | **Main action** |
+> | **Magic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** | **Main action** |
 > |-------------------|----------------:|
 > | **📏 Special**    |  **🎯 Special** |
 >
-> **Effect:** You use an ability that you have observed being used this combat round. The ability must have the Strike keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the strike, you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score for any power rolls, and any damage you deal is sonic damage.
+> **Effect:** You use an ability that you have observed being used this combat round. The ability must have the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the [strike](scc:mcdm.heroes.v1/rule.combat/strike), you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score for any power rolls, and any damage you deal is sonic damage.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Tough Crowd (5 Drama)
@@ -17122,7 +17122,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability -->
 > ###### "Never-Ending Hero"
@@ -17179,7 +17179,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 >
 > *Your performance travels and doesn't stop moving until your audience is completely rocked.*
 >
-> | **Magic, Melee, Ranged, Strike, Weapon** |               **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**              | **🎯 One creature or object** |
 >
@@ -17461,7 +17461,7 @@ Choose one of the following abilities.
 >
 > *It's love and blood or drama and blood. Either way, there's always blood.*
 >
-> | **Melee, Strike, Weapon** |               **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
@@ -17476,7 +17476,7 @@ Choose one of the following abilities.
 >
 > *You and your partner make a flashy show of derring-do, then get back to your corners.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -17719,9 +17719,9 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### Expert Fencer (11 Drama)
 >
-> *If you can land the strike, the crowd goes wild.*
+> *If you can land the [strike](scc:mcdm.heroes.v1/rule.combat/strike), the crowd goes wild.*
 >
-> | **Charge, Melee, Strike, Weapon** |               **Main action** |
+> | **Charge, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 3**                    | **🎯 One creature or object** |
 >
@@ -17738,7 +17738,7 @@ Choose one of the following abilities.
 >
 > *No, no. You don't die until the sequel.*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -17776,7 +17776,7 @@ Choose one of the following abilities.
 >
 > *The power of music rips through the reality around the target and blows them away.*
 >
-> | **Magic, Melee, Ranged, Strike** |               **Main action** |
+> | **Magic, Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**      | **🎯 One creature or object** |
 >
@@ -17904,7 +17904,7 @@ Polearms are two-handed melee weapons with long hafts that increase the wielder'
 
 ##### Unarmed Strikes
 
-Any kit that uses unarmed strikes allows you to use your body as a weapon. Punches, kicks, eye gouges, and the like are your forte.
+Any kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) allows you to use your body as a weapon. Punches, kicks, eye gouges, and the like are your forte.
 
 ##### Whip
 
@@ -17964,14 +17964,14 @@ This section details each kit, whose bonuses and benefits are summarized in the 
 
 > **Improvised Weapons**
 >
-> Improvised weapons include rocks, bottles, plates, furniture, and anything else you pick up that can be bashed, hurled, or stabbed into an enemy. As well, any weapons that aren't part of your kit count as improvised weapons for you. If you're not using a kit with unarmed strikes, then your feet and fists are improvised weapons. If you're not using any kit and pick up a sword to use as part of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the sword counts as an improvised weapon.
+> Improvised weapons include rocks, bottles, plates, furniture, and anything else you pick up that can be bashed, hurled, or stabbed into an enemy. As well, any weapons that aren't part of your kit count as improvised weapons for you. If you're not using a kit with unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), then your feet and fists are improvised weapons. If you're not using any kit and pick up a sword to use as part of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the sword counts as an improvised weapon.
 >
 > Improvised weapons can be used with weapon abilities you gain from your class. For instance, many melee-focused heroes choose a kit that maximizes their melee capabilities, then make ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) with improvised weapons. However, you can't use improvised weapons with weapon abilities gained from your kit, and you add no special bonuses from your kit to a weapon ability used with an improvised weapon.
 
 <!-- @type: kit | @id: arcane-archer -->
 #### Arcane Archer
 
-The [Arcane Archer](scc:mcdm.heroes.v1/kit/arcane-archer) kit allows you to combine magic and ranged weapon strikes. Your lack of armor keeps you mobile, and your magic makes your arrows explode to devastate your foes.
+The [Arcane Archer](scc:mcdm.heroes.v1/kit/arcane-archer) kit allows you to combine magic and ranged weapon [strikes](scc:mcdm.heroes.v1/rule.combat/strike). Your lack of armor keeps you mobile, and your magic makes your arrows explode to devastate your foes.
 
 ##### Equipment
 
@@ -17994,7 +17994,7 @@ You wear no armor and wield a bow.
 
 *Your ammunition explodes with magical energy.*
 
-| **Magic, Ranged, Strike, Weapon** |               **Main action** |
+| **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |-----------------------------------|------------------------------:|
 | **📏 Ranged 15**                  | **🎯 One creature or object** |
 
@@ -18032,7 +18032,7 @@ You wear light armor and wield a medium weapon.
 
 *Your weapon unleashes psionic energy that reduces your target's weight.*
 
-| **Melee, Psionic, Strike, Weapon** |     **Main action** |
+| **Melee, Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |------------------------------------|--------------------:|
 | **📏 Melee 1**                     | **🎯 One creature** |
 
@@ -18074,7 +18074,7 @@ You wear light armor and wield one or two light weapons.
 
 *A stab, and a few quick, careful steps back.*
 
-| **Melee, Ranged, Strike, Weapon** |     **Main action** |
+| **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |-----------------------------------|--------------------:|
 | **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
 
@@ -18110,7 +18110,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 
 *Why strike once when you could do it twice?*
 
-| **Melee, Strike, Weapon** |                 **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 |---------------------------|--------------------------------:|
 | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 
@@ -18148,7 +18148,7 @@ You wear medium armor and wield a polearm.
 
 *In your hands, the haft is as good as the head.*
 
-| **Melee, Strike, Weapon** |                 **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 |---------------------------|--------------------------------:|
 | **📏 Melee 2**            | **🎯 Two creatures or objects** |
 
@@ -18161,11 +18161,11 @@ You wear medium armor and wield a polearm.
 <!-- @type: kit | @id: martial-artist -->
 #### Martial Artist
 
-If you want to be fast in a fight, then [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed strikes against opponents, and allows you to be the ultimate skirmisher.
+If you want to be fast in a fight, then [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) is the kit for you. Unencumbered by weapons or armor, this fighting style rewards quick, focused unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against opponents, and allows you to be the ultimate skirmisher.
 
 ##### Equipment
 
-You wear no armor and wield only your unarmed strikes.
+You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike).
 
 ##### Kit Bonuses
 
@@ -18184,7 +18184,7 @@ You wear no armor and wield only your unarmed strikes.
 
 *You feint to move your enemies into perfect position.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18220,7 +18220,7 @@ You wear heavy armor and wield a heavy weapon.
 
 *An enemy who tagged you will pay for that.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18230,7 +18230,7 @@ You wear heavy armor and wield a heavy weapon.
 - **12-16:** 5 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
+**Effect:** If the target dealt damage to you since the end of your last turn, this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals additional damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: panther -->
 #### Panther
@@ -18258,7 +18258,7 @@ You wear no armor and wield a heavy weapon.
 
 *The faster you move, the harder you hit.*
 
-| **Melee, Strike, Weapon** |               **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
@@ -18268,7 +18268,7 @@ You wear no armor and wield a heavy weapon.
 - **12-16:** 6 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** You can move up to 3 squares straight toward the target before this strike, which deals extra damage equal to the number of squares you move this way.
+**Effect:** You can move up to 3 squares straight toward the target before this [strike](scc:mcdm.heroes.v1/rule.combat/strike), which deals extra damage equal to the number of squares you move this way.
 
 <!-- @type: kit | @id: pugilist -->
 #### Pugilist
@@ -18277,7 +18277,7 @@ Meant for brawlers and boxers, the [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) k
 
 ##### Equipment
 
-You wear no armor and wield only your unarmed strikes.
+You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike).
 
 ##### Kit Bonuses
 
@@ -18296,7 +18296,7 @@ You wear no armor and wield only your unarmed strikes.
 
 *Keeping your enemies stumbling around the battlefield is second nature to you.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18338,7 +18338,7 @@ You wear light armor and wield a shield and a light weapon.
 
 *You execute a brutal strike that leaves your foe reeling. (Previously known as "[Shock and Awe](scc:mcdm.heroes.v1/feature.tactician.level-7/shock-and-awe)")*
 
-| **Melee, Ranged, Strike, Weapon** |     **Main action** |
+| **Melee, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |-----------------------------------|--------------------:|
 | **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
 
@@ -18380,7 +18380,7 @@ You wear medium armor and wield a bow and a medium weapon.
 
 *A well-placed shot leaves your enemy struggling to move.*
 
-| **Ranged, Strike, Weapon** |     **Main action** |
+| **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |----------------------------|--------------------:|
 | **📏 Ranged 10**           | **🎯 One creature** |
 
@@ -18418,7 +18418,7 @@ You wear light armor and wield a bow.
 
 *When you fire two arrows back-to-back, both hit their mark.*
 
-| **Ranged, Strike, Weapon** |                 **Main action** |
+| **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |                 **Main action** |
 |----------------------------|--------------------------------:|
 | **📏 Ranged 12**           | **🎯 Two creatures or objects** |
 
@@ -18456,7 +18456,7 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 
 *The well-thrown net that follows your main attack leaves your foes right where you want them.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 2**            | **🎯 One creature** |
 
@@ -18490,7 +18490,7 @@ You wear heavy armor and wield a shield and a medium weapon.
 
 *The strength of your assault makes it impossible for your foe to ignore you.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18528,7 +18528,7 @@ You wear no armor and wield a bow.
 
 *Breathe... aim... wait... then strike!*
 
-| **Ranged, Strike, Weapon** |     **Main action** |
+| **Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |----------------------------|--------------------:|
 | **📏 Ranged 15**           | **🎯 One creature** |
 
@@ -18538,12 +18538,12 @@ You wear no armor and wield a bow.
 - **12-16:** 6 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If you don't take a move action this turn, this strike deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
+**Effect:** If you don't take a move action this turn, this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: spellsword -->
 #### Spellsword
 
-The [Spellsword](scc:mcdm.heroes.v1/kit/spellsword) kit combines melee strikes and a little bit of magic, letting you create a warrior who doesn't have to choose between the incantation and the blade.
+The [Spellsword](scc:mcdm.heroes.v1/kit/spellsword) kit combines melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) and a little bit of magic, letting you create a warrior who doesn't have to choose between the incantation and the blade.
 
 ##### Equipment
 
@@ -18566,7 +18566,7 @@ You wear light armor and wield a shield and a medium weapon.
 
 *Lightning jumps from your weapon as you strike to harm a nearby foe.*
 
-| **Magic, Melee, Strike, Weapon** |               **Main action** |
+| **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |----------------------------------|------------------------------:|
 | **📏 Melee 1**                   | **🎯 One creature or object** |
 
@@ -18606,7 +18606,7 @@ You wear light armor and wield a polearm.
 
 *When your stick speaks, your enemy moves.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 2**            | **🎯 One creature** |
 
@@ -18619,7 +18619,7 @@ You wear light armor and wield a polearm.
 <!-- @type: kit | @id: swashbuckler -->
 #### Swashbuckler
 
-If you want to be mobile and deal a lot of damage with melee strikes, then you should reach for the [Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler) kit. This is a great kit for heroes who want to be master duelists.
+If you want to be mobile and deal a lot of damage with melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike), then you should reach for the [Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler) kit. This is a great kit for heroes who want to be master duelists.
 
 ##### Equipment
 
@@ -18642,7 +18642,7 @@ You wear light armor and wield a medium weapon.
 
 *All combat is a dance—and you'll be the one leading.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18680,7 +18680,7 @@ You wear medium armor and wield a shield and a medium weapon.
 
 *In your hands, a shield isn't just for protection.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
@@ -18716,7 +18716,7 @@ You wear heavy armor and wield a light weapon.
 
 *The impact of your weapon brands your target for destruction.*
 
-| **Magic, Melee, Strike, Weapon** |               **Main action** |
+| **Magic, Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |----------------------------------|------------------------------:|
 | **📏 Melee 1**                   | **🎯 One creature or object** |
 
@@ -18754,7 +18754,7 @@ You wear no armor and wield a whip.
 
 *When you draw your whip back after an attack, your enemy is drawn ever closer.*
 
-| **Melee, Strike, Weapon** |     **Main action** |
+| **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 |---------------------------|--------------------:|
 | **📏 Melee 3**            | **🎯 One creature** |
 
@@ -18784,10 +18784,10 @@ The rules of the game expect that heroes always have access to their equipment. 
 | [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) | Light          | Light              | +3                  | +2    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
 | [Dual Wielder](scc:mcdm.heroes.v1/kit/dual-wielder)     | Medium         | Light, medium      | +6                  | +2    | -         | +2/+2/+2     | -             | -              | -               | +1        |
 | [Guisarmier](scc:mcdm.heroes.v1/kit/guisarmier)       | Medium         | Polearm            | +6                  | -     | +1        | +2/+2/+2     | -             | +1             | -               | -         |
-| [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist)   | None           | Unarmed strikes    | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
+| [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist)   | None           | Unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike)    | +3                  | +3    | -         | +2/+2/+2     | -             | -              | -               | +1        |
 | [Mountain](scc:mcdm.heroes.v1/kit/mountain)         | Heavy          | Heavy              | +9                  | -     | +2        | +0/+0/+4     | -             | -              | -               | -         |
 | [Panther](scc:mcdm.heroes.v1/kit/panther)          | None           | Heavy              | +6                  | +1    | +1        | +0/+0/+4     | -             | -              | -               | -         |
-| [Pugilist](scc:mcdm.heroes.v1/kit/pugilist)         | None           | Unarmed strikes    | +6                  | +2    | +1        | +1/+1/+1     | -             | -              | -               | -         |
+| [Pugilist](scc:mcdm.heroes.v1/kit/pugilist)         | None           | Unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike)    | +6                  | +2    | +1        | +1/+1/+1     | -             | -              | -               | -         |
 | [Raider](scc:mcdm.heroes.v1/kit/raider)           | Light, shield  | Light              | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
 | [Ranger](scc:mcdm.heroes.v1/kit/ranger)           | Medium         | Bow, medium        | +6                  | +1    | -         | +1/+1/+1     | +1/+1/+1      | -              | +5              | +1        |
 | [Rapid-Fire](scc:mcdm.heroes.v1/kit/rapid-fire)       | Light          | Bow                | +3                  | +1    | -         | -            | +2/+2/+2      | -              | +7              | +1        |
@@ -19674,7 +19674,7 @@ You are in love with someone powerful, but tragic circumstances mean you cannot 
 
 At the edge of the world, you were lost in a winter storm and [presumed dead](scc:mcdm.heroes.v1/title/presumed-dead). But an unknown fate or power kept you alive, bringing you back with frosty skin and pale eyes.
 
-**Benefit:** You have cold immunity 5. Additionally, whenever you make a strike that deals untyped damage, that strike can deal cold damage instead.
+**Benefit:** You have cold immunity 5. Additionally, whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that deals untyped damage, that [strike](scc:mcdm.heroes.v1/rule.combat/strike) can deal cold damage instead.
 
 **Drawback:** You have fire weakness 5.
 
@@ -19732,7 +19732,7 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 
 **Benefit:** You're determined to stay alive so you can set things right. When your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you can use a free triggered action to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**Drawback:** Many people blame you for the evils you caused. They might be unfriendly or hostile to you—and you can understand their point of view. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to interact with those who know what you did, and on strikes made against such creatures.
+**Drawback:** Many people blame you for the evils you caused. They might be unfriendly or hostile to you—and you can understand their point of view. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to interact with those who know what you did, and on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against such creatures.
 
 <!-- @type: complication -->
 #### Hawk Rider
@@ -19932,7 +19932,7 @@ Your mother and father never saw eye to eye. You know this because your father i
 >
 > *Your looks don't kill—they petrify.*
 >
-> | **Magic, Ranged, Strike** |     **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 >
@@ -20079,7 +20079,7 @@ You are the only survivor of a cataclysmic psionic event—an experiment gone wr
 >
 > *You reach out with your mind to move a creature or object.*
 >
-> | **Psionic, Ranged, Strike**   |                  **Maneuver** |
+> | **Psionic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**   |                  **Maneuver** |
 > |-------------------------------|------------------------------:|
 > | **📏 Ranged 10**              | **🎯 One creature or object** |
 >
@@ -20132,7 +20132,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 
 While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a guide. What you lost in polish and tactical acumen, you now make up for in raw power.
 
-**Benefit and Drawback:** At the start of each of your turns during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next turn. If you do, your strikes gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next turn.
+**Benefit and Drawback:** At the start of each of your turns during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next turn. If you do, your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next turn.
 
 <!-- @type: complication -->
 #### Sewer Folk
@@ -20347,7 +20347,7 @@ You nearly lost your life at sea, but then you heard the voice. Someone—or som
 >
 > *You summon a wave of water to batter your foe.*
 >
-> | **Magic, Ranged, Strike** |               **Main action** |
+> | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |               **Main action** |
 > |---------------------------| -----------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 >
@@ -20375,9 +20375,9 @@ You were dying in the wode, collapsing while starving and wounded. When you woke
 
 You're quick to anger, never letting an insult go without slinging one right back. In combat, you fight as if possessed by a literal spirit of wrath. No matter the tactical circumstances, when someone injures you, you feel compelled to answer blood with blood.
 
-**Benefit:** While you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by a creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against that creature. Additionally, you can spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead.
+**Benefit:** While you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by a creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against that creature. Additionally, you can spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead.
 
-**Drawback:** In combat, whenever a creature makes a strike against you and you are not [taunted](scc:mcdm.heroes.v1/condition/taunted), you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by that creature until the end of your next turn. Additionally, whether in casual conversation or if you are involved in a negotiation, whenever a creature insults you, you must either spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or be compelled to reply with an insult.
+**Drawback:** In combat, whenever a creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against you and you are not [taunted](scc:mcdm.heroes.v1/condition/taunted), you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by that creature until the end of your next turn. Additionally, whether in casual conversation or if you are involved in a negotiation, whenever a creature insults you, you must either spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or be compelled to reply with an insult.
 
 <!-- @type: complication -->
 #### Wrongly Imprisoned
@@ -21195,7 +21195,7 @@ Additionally, while you are hidden from another creature, you gain an [edge](scc
 
 Draw Steel
 
-You are no longer hidden from a creature if you don't have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a strike, you resolve the strike first, then are no longer hidden.
+You are no longer hidden from a creature if you don't have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a [strike](scc:mcdm.heroes.v1/rule.combat/strike), you resolve the [strike](scc:mcdm.heroes.v1/rule.combat/strike) first, then are no longer hidden.
 
 ##### Searching for Hidden Creatures
 
@@ -21509,7 +21509,7 @@ Your hero starts with a speed granted by their ancestry—usually 5. This repres
 
 All squares adjacent to your character cost 1 movement to move into. No, there's no Pythagorean theorem on the grid. It's a game, don't overthink it.
 
-Your hero can move freely through an ally's space. You can move through an enemy's space, but that space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) (see below). You can't stop moving in any other creature's space, including to make a strike or use a main action or maneuver while in that space and then continuing your move, unless that creature's [size](scc:mcdm.heroes.v1/rule.character/size) is two or more [sizes](scc:mcdm.heroes.v1/rule.character/size) greater or smaller than your own.
+Your hero can move freely through an ally's space. You can move through an enemy's space, but that space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) (see below). You can't stop moving in any other creature's space, including to make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) or use a main action or maneuver while in that space and then continuing your move, unless that creature's [size](scc:mcdm.heroes.v1/rule.character/size) is two or more [sizes](scc:mcdm.heroes.v1/rule.character/size) greater or smaller than your own.
 
 At the Director's discretion, you can be forced into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, such as by falling down a narrow shaft with such a creature already at the bottom. When you are squeezed into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, your ability rolls and tests take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
@@ -21926,7 +21926,7 @@ When a creature takes the [Defend](scc:mcdm.heroes.v1/feature.common.main-action
 <!-- @type: feature | @id: free-strike -->
 #### Free Strike
 
-A creature can use this main action to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (see Free  Strikes below). Most of the time, you'll want to use the more impactful main actions granted by your class, kit, or other feature, just as the Director will use the main actions in a creature's stat block, but [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) are available for when all else fails. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) who has no other options for ranged strikes might use the [Ranged Weapon Free Strike](scc:mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike) ability with an improvised weapon when battling a [flying](scc:mcdm.heroes.v1/movement/fly) foe.
+A creature can use this main action to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (see Free  Strikes below). Most of the time, you'll want to use the more impactful main actions granted by your class, kit, or other feature, just as the Director will use the main actions in a creature's stat block, but [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) are available for when all else fails. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) who has no other options for ranged [strikes](scc:mcdm.heroes.v1/rule.combat/strike) might use the [Ranged Weapon Free Strike](scc:mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike) ability with an improvised weapon when battling a [flying](scc:mcdm.heroes.v1/movement/fly) foe.
 
 <!-- @type: feature | @id: heal -->
 #### Heal
@@ -21955,7 +21955,7 @@ If a creature has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) or double [bane](s
 
 Every hero has two standard [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) abilities available to them. Your class might give you additional [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) options, and your kit can improve the standard options (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
-A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+A melee weapon free strike is a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) made with an unarmed [strike](scc:mcdm.heroes.v1/rule.combat/strike) or an improvised weapon. A ranged weapon free strike is a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike) made with an improvised weapon. At the Director's discretion, the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike-combat -->
 ###### Melee Weapon Free Strike
@@ -21986,7 +21986,7 @@ A melee weapon free strike is a melee strike made with an unarmed strike or an i
 <!-- @type: rule | @group: combat | @id: flanking -->
 ### Flanking
 
-When you and one or more allies are adjacent to the same enemy and on opposite sides of the enemy, you are flanking that enemy. While flanking an enemy, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee strikes against them.
+When you and one or more allies are adjacent to the same enemy and on opposite sides of the enemy, you are flanking that enemy. While flanking an enemy, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against them.
 
 If you're unsure whether your hero and an ally are flanking a foe, imagine a line extending from the center of your space to the center of your ally's space. If that line passes through opposite sides or corners of the enemy's space, then you and your ally are flanking the enemy.
 
@@ -22000,7 +22000,7 @@ When you have line of effect to a creature or object but that target has at leas
 <!-- @type: rule | @group: combat | @id: concealment -->
 ### Concealment
 
-Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a strike, provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, strikes against such targets take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a [strike](scc:mcdm.heroes.v1/rule.combat/strike), provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against such targets take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 #### Invisible Creatures
 
@@ -23188,7 +23188,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability's effects resolve. This strike deals extra damage equal to the highest of your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores.
+**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability's effects resolve. This [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to the highest of your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores.
 
 **Displacing I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) that creature up to 2 squares after the ability's effects resolve. If the creature started on a horizontal surface, they must end on a horizontal surface.
 
@@ -23310,7 +23310,7 @@ A weapon imbued with an enhancement grants you special benefits while it is wiel
 
 ###### Unarmed Strike Treasures
 
-A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) and [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit, can create leveled weapon treasures that enhance their unarmed strikes by imbuing hand wraps, rings, shoes, or any other item worn on the body with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) and [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit, can create leveled weapon treasures that enhance their unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) by imbuing hand wraps, rings, shoes, or any other item worn on the body with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Weapon Enhancement
 
@@ -23370,7 +23370,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 >
 > *Their momentum, your impact.*
 >
-> | **Melee, Strike, Weapon** | **Free triggered** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Free triggered** |
 > |---------------------------|-------------------:|
 > | **📏 Melee 1**            |   **🎯 One enemy** |
 >
@@ -23948,7 +23948,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 45 (yields 1d3 darts, or three darts if crafted by a shadow)
 
-**Effect:** As a maneuver, you make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using a black ash dart. The strike deals an extra 1 damage and adds the following effects to the tier outcomes of the power roll:
+**Effect:** As a maneuver, you make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using a black ash dart. The [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 damage and adds the following effects to the tier outcomes of the power roll:
 
 - **≤11:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 2 squares.
 - **12-16:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 4 squares.
@@ -24092,11 +24092,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Goal:** 45 (yields 1d3 teeth)
 
-**Effect:** As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to supernaturally flicker in and out of reality. Your next strike that uses the weapon can tear through multiple targets in a line (for a ranged strike) or surrounding you (for a melee strike). The strike adds the following effects to the tier outcomes of the power roll:
+**Effect:** As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to supernaturally flicker in and out of reality. Your next strike that uses the weapon can tear through multiple targets in a line (for a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike)) or surrounding you (for a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike)). The [strike](scc:mcdm.heroes.v1/rule.combat/strike) adds the following effects to the tier outcomes of the power roll:
 
-- **≤11:** You can affect one additional target with this strike.
-- **12-16:** You can affect up to three additional targets with this strike.
-- **17+:** You can affect up to seven additional targets with this strike.
+- **≤11:** You can affect one additional target with this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+- **12-16:** You can affect up to three additional targets with this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+- **17+:** You can affect up to seven additional targets with this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: treasure -->
 ##### Mirror Token
@@ -24113,7 +24113,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Goal:** 45
 
-**Effect:** While the Mirror Token is on your person and you are targeted by a ranged strike, you can use a triggered action to crush the token and ignore the strike. Half the damage you would have taken and any effects of the triggering strike are imposed on the creature making the strike.
+**Effect:** While the Mirror Token is on your person and you are targeted by a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can use a triggered action to crush the token and ignore the [strike](scc:mcdm.heroes.v1/rule.combat/strike). Half the damage you would have taken and any effects of the triggering strike are imposed on the creature making the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: treasure -->
 ##### Pocket Homunculus
@@ -24230,7 +24230,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 90
 
-**Effect:** When you drink this potion as a maneuver, you sprout 3-foot sharpened horns from your forehead. Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, the target of your strike is gored upon your horns and [grabbed](scc:mcdm.heroes.v1/condition/grabbed). While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). You can also grab another creature with your limbs. The horns harmlessly fall off your head at the end of the encounter.
+**Effect:** When you drink this potion as a maneuver, you sprout 3-foot sharpened horns from your forehead. Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, the target of your [strike](scc:mcdm.heroes.v1/rule.combat/strike) is gored upon your horns and [grabbed](scc:mcdm.heroes.v1/condition/grabbed). While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). You can also grab another creature with your limbs. The horns harmlessly fall off your head at the end of the encounter.
 
 <!-- @type: treasure -->
 ##### Chocolate of Immovability
@@ -24247,7 +24247,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 90
 
-**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to stability. Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any strikes against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. This effect and the bonus to stability lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
+**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to stability. Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. This effect and the bonus to stability lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
 
 <!-- @type: treasure -->
 ##### Concealment Potion
@@ -24466,7 +24466,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 180
 
-**Effect:** As a maneuver, you make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using the Timesplitter, which shatters upon impact. The strike deals an extra 1d6 psychic damage and adds the following effects to the tier outcomes of the power roll:
+**Effect:** As a maneuver, you make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using the Timesplitter, which shatters upon impact. The [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1d6 psychic damage and adds the following effects to the tier outcomes of the power roll:
 
 - **≤11:** The target and each creature within 3 squares of them a [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 - **12-16:** The target and each creature within 5 squares of them is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
@@ -24701,7 +24701,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Goal:** 150
 
-**Effect:** As a maneuver, you call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver at a distance. If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a strike, the target escapes your grab, or you call upon the vine to release the target (no action required).
+**Effect:** As a maneuver, you call upon the Divine Vine in Yllyric, causing it to extend up to 5 squares from you and attach its jaws to a creature or object, allowing you to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver at a distance. If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you can choose to keep the divine vine extended, pull the target adjacent to you, or pull yourself adjacent to the target. The divine vine stays attached to the target until it takes damage from a [strike](scc:mcdm.heroes.v1/rule.combat/strike), the target escapes your grab, or you call upon the vine to release the target (no action required).
 
 <!-- @type: treasure -->
 ##### Flameshade Gloves
@@ -25210,7 +25210,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, you no longer need to end your turn on the ground to avoid falling.
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, if you [fly](scc:mcdm.heroes.v1/movement/fly) any [distance](scc:mcdm.heroes.v1/rule.combat/distance) before making a strike, that strike gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, if you [fly](scc:mcdm.heroes.v1/movement/fly) any [distance](scc:mcdm.heroes.v1/rule.combat/distance) before making a [strike](scc:mcdm.heroes.v1/rule.combat/strike), that [strike](scc:mcdm.heroes.v1/rule.combat/strike) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: treasure -->
 ##### King's Roar
@@ -25273,7 +25273,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and when you return to your true form, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) only until the end of your next turn. Additionally, while you are paper thin, you can use a maneuver to wrap yourself around an adjacent target who is the same [size](scc:mcdm.heroes.v1/rule.character/size) or smaller than you, automatically grabbing them.
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver against you and when making strikes against you.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver against you and when making [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 
 <!-- @type: treasure -->
 ##### Shrouded Memory
@@ -25421,7 +25421,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, if you make a magic strike, the strike must deal cold damage instead of its usual damage.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, if you make a magic [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) must deal cold damage instead of its usual damage.
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you use a magic or psionic ability, a whirlwind of sleet and ice whips around you, dealing 3 cold damage to each adjacent enemy.
 
@@ -25640,7 +25640,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **5th Level:** Whenever you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) with an ability using this weapon, one of its indentations glows brighter. When you use a signature ability using the weapon, you can use a triggered action to expend any number of bright-glowing indentations, with the ability dealing extra psychic damage equal to the number of indentations. The expended indentations then return to a dim glow.
 
-**9th Level:** If you make a weapon strike using this weapon against a target after dropping down on them from a height of 2 squares or more, the attack deals an extra 10 psychic damage. You can distribute all extra psychic damage dealt by the attack between the target and any enemies adjacent to them.
+**9th Level:** If you make a weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) using this weapon against a target after dropping down on them from a height of 2 squares or more, the attack deals an extra 10 psychic damage. You can distribute all extra psychic damage dealt by the attack between the target and any enemies adjacent to them.
 
 <!-- @type: treasure -->
 ##### Lance of the Sundered Star
@@ -25678,9 +25678,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 fire damage. Additionally, whenever you make a strike using the net and obtain a tier 3 outcome, you can automatically grab the target. A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
+**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 fire damage. Additionally, whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) using the net and obtain a tier 3 outcome, you can automatically grab the target. A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
 
-**5th Level:** The weapon's extra fire damage increases to 2. Additionally, a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by a strike using the net takes 8 fire damage each time they attempt to escape using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
+**5th Level:** The weapon's extra fire damage increases to 2. Additionally, a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by a [strike](scc:mcdm.heroes.v1/rule.combat/strike) using the net takes 8 fire damage each time they attempt to escape using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
 
 **9th Level:** The weapon's extra fire damage increases to 3, and the damage taken by a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature attempting to escape increases to 15. Additionally, you can use a maneuver to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) with another weapon against a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the net.
 
@@ -25762,9 +25762,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 sonic damage. Additionally, when the weapon is used with any ability that pushes a target, you gain a +1 bonus to the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance). If the weapon is used with a damage-dealing ability that doesn't impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), you can push the target 1 square.
 
-**5th Level:** The weapon's extra sonic damage increases to 2, and the additional [distance](scc:mcdm.heroes.v1/rule.combat/distance) or [distance](scc:mcdm.heroes.v1/rule.combat/distance) of a push for abilities using the weapon increases to 2 squares. Additionally, the weapon can be used with ranged weapon abilities, and gains power the farther it is hurled. For each 2 squares the weapon travels to the target of a ranged strike, the strike deals an extra 1 sonic damage.
+**5th Level:** The weapon's extra sonic damage increases to 2, and the additional [distance](scc:mcdm.heroes.v1/rule.combat/distance) or [distance](scc:mcdm.heroes.v1/rule.combat/distance) of a push for abilities using the weapon increases to 2 squares. Additionally, the weapon can be used with ranged weapon abilities, and gains power the farther it is hurled. For each 2 squares the weapon travels to the target of a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 sonic damage.
 
-**9th Level:** The weapon's extra sonic damage increases to 3, and it deals an extra 1 sonic damage for each square it travels as part of a ranged strike. Additionally, whenever you make a weapon strike using this weapon, each enemy adjacent to the target takes 6 sonic damage.
+**9th Level:** The weapon's extra sonic damage increases to 3, and it deals an extra 1 sonic damage for each square it travels as part of a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike). Additionally, whenever you make a weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) using this weapon, each enemy adjacent to the target takes 6 sonic damage.
 
 <!-- @type: treasure -->
 ##### Wetwork
@@ -25783,7 +25783,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 psychic damage. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using this weapon, you can immediately use a maneuver to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-**5th Level:** The weapon's extra psychic damage increases to 2. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) and can move up to 2 squares before or after the strike.
+**5th Level:** The weapon's extra psychic damage increases to 2. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) and can move up to 2 squares before or after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 **9th Level:** The weapon's extra psychic damage increases to 3. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to move up to your speed and make either a signature ability strike or a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
@@ -25828,7 +25828,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear these hand wraps, any weapon ability that deals rolled damage using your unarmed strikes gains a +1 damage bonus. Additionally, once per turn, you can take 5 damage that can't be reduced in any way to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver (no action required).
+**1st Level:** While you wear these hand wraps, any weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gains a +1 damage bonus. Additionally, once per turn, you can take 5 damage that can't be reduced in any way to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver (no action required).
 
 **5th Level:** The damage bonus granted by the hand wraps increases to +2. Additionally, once per turn, you can take 10 damage that can't be reduced in any way to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (no action required). On your turn, you can use the wraps' melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) option or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver option, but only one.
 
@@ -25849,9 +25849,9 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear these boots, any weapon ability that deals rolled damage using your unarmed strikes deals an extra 1 lightning damage. Additionally, you gain a +2 bonus to speed.
+**1st Level:** While you wear these boots, any weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 lightning damage. Additionally, you gain a +2 bonus to speed.
 
-**5th Level:** The extra lightning damage granted by the treads increases to 2. Additionally, for each square you move on your turn before you use a weapon ability that deals rolled damage using your unarmed strikes, this extra damage increases by 1 (to a maximum of 4).
+**5th Level:** The extra lightning damage granted by the treads increases to 2. Additionally, for each square you move on your turn before you use a weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), this extra damage increases by 1 (to a maximum of 4).
 
 **9th Level:** The extra lightning damage granted by the treads increases to 3, and your movement can increase that extra damage to a maximum of 6. Additionally, you can use a maneuver to perform a [flying](scc:mcdm.heroes.v1/movement/fly) lightning kick on one adjacent creature. That target is pushed up to 5 squares, and you can move to any square adjacent to the target after the push.
 
@@ -26068,7 +26068,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Duck!:* When an enemy strikes you while a second creature is [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) you, you can use a triggered action to redirect the strike against the second creature. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Duck!:* When an enemy strikes you while a second creature is [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) you, you can use a triggered action to redirect the [strike](scc:mcdm.heroes.v1/rule.combat/strike) against the second creature. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Furniture Fighter:* When you use a weapon ability with an improvised weapon or a weapon that isn't part of your kit, the ability benefits from your kit's melee weapon damage bonus.
 - *Headbutt:* While you are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) don't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when those conditions would impose one.
 - *If I Wanted You Dead, You'd Be Dead:* Whenever you defeat foes without killing any of them (including the foes you defeat to meet the prerequisite for this title), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests during negotiations with those foes.
@@ -26192,7 +26192,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** Choose one of the following benefits:
 
-- *Beast [Bane](scc:mcdm.heroes.v1/rule.dice/bane):* Creatures with the Animal keyword take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes made against you.
+- *Beast [Bane](scc:mcdm.heroes.v1/rule.dice/bane):* Creatures with the Animal keyword take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against you.
 - *Monster Soother:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to calm or tame nonsapient creatures.
 - *Monster Trophy:* You decorate your equipment with a trophy from a creature you defeated. While the trophy is visible, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to intimidate sapient creatures.
 
@@ -26239,7 +26239,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 >
 > **Effect:** Each target who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn, and you know the location of each creature [taunted](scc:mcdm.heroes.v1/condition/taunted) in this way.
 
-- *Deadly and Big:* Your strikes gain a +3 damage bonus against creatures whose [size](scc:mcdm.heroes.v1/rule.character/size) is smaller than yours.
+- *Deadly and Big:* Your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a +3 damage bonus against creatures whose [size](scc:mcdm.heroes.v1/rule.character/size) is smaller than yours.
 - *Everybody Move!:* When you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature of your [size](scc:mcdm.heroes.v1/rule.character/size) or two additional smaller creatures.
 
 <!-- @type: title -->
@@ -26296,7 +26296,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 **Effect:** Choose one of the following benefits:
 
 - *Honor Among Thieves:* When negotiating with criminals, your Renown score is considered to be 2 higher than usual.
-- *Minion Mower:* When you make a melee strike that targets a minion and at least one more minion is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the strike, the strike gains a +3 damage bonus.
+- *Minion Mower:* When you make a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets a minion and at least one more minion is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) gains a +3 damage bonus.
 - *No, You're Under Arrest!:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same [size](scc:mcdm.heroes.v1/rule.character/size) without them immediately noticing.
 
 <!-- @type: title -->
@@ -26336,14 +26336,14 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Dirty Fighting:* While you are standing, your melee strikes gain a +3 damage bonus against [prone creature](scc:mcdm.heroes.v1/condition/prone)s. Additionally, being prone doesn't impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on your strikes.
-- *Foes as Weapons:* Whenever you have a creature of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you can use them as a weapon when you make a melee weapon free strike. Both the target and the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) enemy take the strike's damage.
+- *Dirty Fighting:* While you are standing, your melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a +3 damage bonus against [prone creature](scc:mcdm.heroes.v1/condition/prone)s. Additionally, being prone doesn't impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on your [strikes](scc:mcdm.heroes.v1/rule.combat/strike).
+- *Foes as Weapons:* Whenever you have a creature of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you can use them as a weapon when you make a melee weapon free strike. Both the target and the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) enemy take the [strike](scc:mcdm.heroes.v1/rule.combat/strike)'s damage.
 - *Instant Celebrity:* You earn 1 Renown.
 - *Showstopper:* You have the following ability, which can be paid for using the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) of your class.
 
 > ###### Showstopper (5 Heroic Resource)
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -26402,7 +26402,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Blood Mage:* When you use an area ability with the Magic or Psionic keyword, you can take damage equal to your level to increase the ability's area by 1 until the end of the encounter. If the area is a line, you increase the size of one dimension, not both. This damage can't be reduced in any way. You can use this benefit only once per use of an ability.
-- *Bloody Murder:* When you deal rolled damage to a creature with a strike, you can take damage equal to your level to deal twice that much corruption damage to the creature. The damage you take from this title can't be reduced in any way. You can use this benefit only once per ability. If the creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this corruption damage, the creature explodes in a [shower of blood](scc:mcdm.heroes.v1/feature.ability.fury.level-9/shower-of-blood) and you regain the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) you lost. You can't use this benefit on creatures without blood, such as constructs, elementals, or undead.
+- *Bloody Murder:* When you deal rolled damage to a creature with a [strike](scc:mcdm.heroes.v1/rule.combat/strike), you can take damage equal to your level to deal twice that much corruption damage to the creature. The damage you take from this title can't be reduced in any way. You can use this benefit only once per ability. If the creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this corruption damage, the creature explodes in a [shower of blood](scc:mcdm.heroes.v1/feature.ability.fury.level-9/shower-of-blood) and you regain the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) you lost. You can't use this benefit on creatures without blood, such as constructs, elementals, or undead.
 - *I Reject This Evil Power!:* You gain corruption immunity equal to your level.
 
 <!-- @type: title -->
@@ -26415,7 +26415,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Artillerist:* You gain a +5 damage bonus when using a ship's weapons
-- *Black Flag:* You have a recognizable flag that strikes terror on the high seas. While your flag is [flying](scc:mcdm.heroes.v1/movement/fly) from your ship, crewmembers of other ships who have line of effect to the flag take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes made against your ship or its crew.
+- *Black Flag:* You have a recognizable flag that strikes terror on the high seas. While your flag is [flying](scc:mcdm.heroes.v1/movement/fly) from your ship, crewmembers of other ships who have line of effect to the flag take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against your ship or its crew.
 - *Fearsome Reputation:* You earn 1 Renown.
 - *Scoundrel Tactics:* While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have line of effect to you, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when you do so. You can use Disguise to hide your ship's identity or general type, Intimidate to convince another ship's crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.
 
@@ -26453,12 +26453,12 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Smallfolk Dodge:* Any creature of [size](scc:mcdm.heroes.v1/rule.character/size) 2 or larger takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against you.
+- *Smallfolk Dodge:* Any creature of [size](scc:mcdm.heroes.v1/rule.character/size) 2 or larger takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 - *The Harder They Fall:* You have the following ability, which can be paid for using the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) of your class.
 
 > ###### The Harder They Fall (7 Heroic Resource)
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -26470,7 +26470,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 >
 > **Special:** If the target is [size](scc:mcdm.heroes.v1/rule.character/size) 2 or larger, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on this ability.
 
-- *Up the Beanstalk:* You have the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. While you're climbing a creature, the creature has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes against you and you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stay on the creature.
+- *Up the Beanstalk:* You have the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. While you're climbing a creature, the creature has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you and you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stay on the creature.
 
 <!-- @type: title -->
 #### Godsworn
@@ -26527,7 +26527,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 >
 > *Have at thee!*
 >
-> | **Melee, Strike, Weapon** |     **Main action** |
+> | **Melee, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
@@ -26612,9 +26612,9 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 **Effect:** Choose one of the following benefits:
 
-- *From Hell's Heart:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your melee strikes gain a +3 damage bonus.
+- *From Hell's Heart:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a +3 damage bonus.
 - *Furious Attack:* Choose one signature ability from the [fury](scc:mcdm.heroes.v1/class/fury) class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend ferocity, you can't do so unless you have the Ferocity class feature.
-- *Furious Charge:* When you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) action, your strike made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.
+- *Furious Charge:* When you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) action, your [strike](scc:mcdm.heroes.v1/rule.combat/strike) made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.
 
 <!-- @type: feature-group | @id: 3-echelon-titles -->
 ### 3rd-Echelon Titles
@@ -26650,7 +26650,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 *Demonic Lore:* You know the Proto-Ctholl language. Additionally, when you deal damage using a magic ability, you can change the ability's [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to holy.
 
-- *Lethe:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your strikes gain a +5 damage bonus
+- *Lethe:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a +5 damage bonus
 - *Made of Teeth:* Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).
 - *Soulsight:* Any creature within 2 squares can't be hidden from you.
 
@@ -26729,7 +26729,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 >
 > **Effect:** The soul of any creature killed by this ability is dragged to Hell.
 
-- *Music of the Spheres:* As a main action, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a strike, they take 8 sonic damage. Whenever you make a strike during that same period, you also take 8 sonic damage.
+- *Music of the Spheres:* As a main action, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they take 8 sonic damage. Whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) during that same period, you also take 8 sonic damage.
 
 <!-- @type: title -->
 #### Master Crafter
