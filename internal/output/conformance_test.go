@@ -42,11 +42,11 @@ func TestConformance_GrowingFerocity(t *testing.T) {
 	if etl["type"] != "feature" {
 		t.Errorf("type = %v, want feature", etl["type"])
 	}
-	if etl["feature_type"] != "trait" {
-		t.Errorf("feature_type = %v, want trait", etl["feature_type"])
+	if etl["feature_type"] != "feature" {
+		t.Errorf("feature_type = %v, want feature", etl["feature_type"])
 	}
 
-	// Effects: trait body as single effect
+	// Effects: feature body as single effect
 	etlEffects := getEffects(t, etl)
 	if len(etlEffects) < 1 {
 		t.Fatal("expected at least 1 effect")
@@ -187,7 +187,9 @@ func TestConformance_SchemaStructure_Traits(t *testing.T) {
 	for _, section := range traits {
 		t.Run(section.Heading, func(t *testing.T) {
 			parsed := parseTrait(t, section, "fury", "1")
-			scc := "mcdm.heroes.v1/feature.trait.fury.level-1/" + content.Slugify(content.CleanHeading(section.Heading))
+			// Fury is a class, so its non-ability features are plain features
+			// (feature.fury.level-1), not traits, post-taxonomy-refactor.
+			scc := "mcdm.heroes.v1/feature.fury.level-1/" + content.Slugify(content.CleanHeading(section.Heading))
 			out := TransformToSDKFormat(scc, parsed)
 
 			assertRequiredSchemaFields(t, out)
@@ -195,8 +197,8 @@ func TestConformance_SchemaStructure_Traits(t *testing.T) {
 			if out["type"] != "feature" {
 				t.Errorf("type = %v, want feature", out["type"])
 			}
-			if out["feature_type"] != "trait" {
-				t.Errorf("feature_type = %v, want trait", out["feature_type"])
+			if out["feature_type"] != "feature" {
+				t.Errorf("feature_type = %v, want feature", out["feature_type"])
 			}
 
 			effects := getEffects(t, out)

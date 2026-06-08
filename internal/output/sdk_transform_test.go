@@ -200,6 +200,27 @@ func TestTransformAbility_Trigger(t *testing.T) {
 	assertEqual(t, out["trigger"], "The target starts their turn.")
 }
 
+func TestTransformFeature_PlainFeature(t *testing.T) {
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{
+			"name": "A Beyonding of Vision",
+			"type": "feature",
+		},
+		Body:     "Your void sense reaches further.",
+		TypePath: []string{"feature", "elementalist", "level-1"},
+		ItemID:   "a-beyonding-of-vision",
+	}
+	out := TransformToSDKFormat("mcdm.heroes.v1/feature.elementalist.level-1/a-beyonding-of-vision", parsed)
+	assertEqual(t, out["type"], "feature")
+	assertEqual(t, out["feature_type"], "feature")
+	if _, ok := out["effects"]; !ok {
+		t.Error("expected effects[] on a plain feature")
+	}
+	meta := out["metadata"].(map[string]any)
+	assertEqual(t, meta["feature_type"], "feature")
+	assertEqual(t, meta["action_type"], "feature")
+}
+
 func TestTransformTrait_Basic(t *testing.T) {
 	parsed := &content.ParsedContent{
 		Frontmatter: map[string]any{

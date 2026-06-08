@@ -17,7 +17,7 @@ func TransformToSDKFormat(sccCode string, parsed *content.ParsedContent) map[str
 	switch contentType {
 	case "ability":
 		return transformAbility(sccCode, parsed)
-	case "trait":
+	case "trait", "feature":
 		return transformTrait(sccCode, parsed)
 	case "kit":
 		return transformKit(sccCode, parsed)
@@ -69,14 +69,17 @@ func transformAbility(sccCode string, parsed *content.ParsedContent) map[string]
 	return out
 }
 
-// transformTrait produces a feature.schema.json-compliant map for traits.
+// transformTrait produces a feature.schema.json-compliant map for non-ability
+// features — both traits (ancestry/monster) and plain features (everything else).
+// The feature_type is carried through from the parser's fm["type"].
 func transformTrait(sccCode string, parsed *content.ParsedContent) map[string]any {
 	fm := parsed.Frontmatter
 	out := make(map[string]any)
 
 	// Required schema fields
 	out["type"] = "feature"
-	out["feature_type"] = "trait"
+	ftype, _ := fm["type"].(string) // "trait" or "feature"
+	out["feature_type"] = ftype
 
 	setIfPresent(out, "name", fm, "name")
 
