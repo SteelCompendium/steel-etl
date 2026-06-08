@@ -115,7 +115,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent):** Within 1 square.
 
-**[Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) Move Action:** A move action that allows a creature to move a number of squares up to their speed. This movement can be broken up by a creature's maneuver and main action.
+**[Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) Move Action:** A move action that allows a creature to move a number of squares up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). This movement can be broken up by a creature's maneuver and main action.
 
 **[Agility](scc:mcdm.heroes.v1/rule.character/agility):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's coordination and nimbleness.
 
@@ -143,9 +143,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** A positive number that increases a creature's statistics or the roll of a die.
 
-**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A natural 19 or 20 on a project roll. When a character experiences a breakthrough, they can make another project roll for the same project as part of the same respite activity.
+**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A natural 19 or 20 on a project roll. When a character experiences a breakthrough, they can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
-**[Burrow](scc:mcdm.heroes.v1/movement/burrow):** A movement mode available to creatures with "burrow" in their speed entry, or who gain the capability to temporarily [burrow](scc:mcdm.heroes.v1/movement/burrow). Such creatures can move through dirt horizontally at full speed.
+**[Burrow](scc:mcdm.heroes.v1/movement/burrow):** A movement mode available to creatures with "burrow" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gain the capability to temporarily [burrow](scc:mcdm.heroes.v1/movement/burrow). Such creatures can move through dirt horizontally at full [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 **[Burst](scc:mcdm.heroes.v1/rule.combat/burst):** When an ability or other effect creates a burst, that area is expressed as "X burst." The number X is the radius of the burst, which always originates from the creature or object who created it, extends from the outside of the creator's space, and lasts only for as long as it takes to affect its targets.
 
@@ -159,7 +159,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** Statistics used to represent a creature's mental and physical prowess, broken out as [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence). Each characteristic has a score that ranges from −5 to +5.
 
-**[Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) Main Action:** A main action that allows a creature to move up to their speed in a straight line, then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use an ability with the Charge keyword against a target when they end their move.
+**[Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) Main Action:** A main action that allows a creature to move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) in a straight line, then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use an ability with the Charge keyword against a target when they end their move.
 
 **[Ceiling](scc:mcdm.heroes.v1/rule.general/ground):** Any solid surface above a creature.
 
@@ -167,9 +167,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Class](scc:mcdm.heroes.v1/chapter/classes):** A hero's current role, which largely determines how they interact with the game's rules.
 
-**[Claw Dirt](scc:mcdm.heroes.v1/feature.ability.common/claw-dirt):** An ability that uses a maneuver to allow a creature without "burrow" in their speed entry to [burrow](scc:mcdm.heroes.v1/movement/burrow).
+**[Claw Dirt](scc:mcdm.heroes.v1/feature.ability.common/claw-dirt):** An ability that uses a maneuver to allow a creature without "burrow" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry to [burrow](scc:mcdm.heroes.v1/movement/burrow).
 
-**[Climb](scc:mcdm.heroes.v1/movement/climb-or-swim):** A movement mode that allows a creature to climb without using additional squares of movement. A creature without "climb" in their speed entry or the temporary ability to climb must use 2 squares of movement to climb 1 square.
+**[Climb](scc:mcdm.heroes.v1/movement/climb-or-swim):** A movement mode that allows a creature to climb without using additional squares of movement. A creature without "climb" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry or the temporary ability to climb must use 2 squares of movement to climb 1 square.
 
 **[Combat Round](scc:mcdm.heroes.v1/rule.combat/combat-round):** A segment of a combat encounter in which each creature participating in the battle takes a turn.
 
@@ -225,7 +225,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Difficult Terrain](scc:mcdm.heroes.v1/movement/difficult-terrain):** An area of obstacles that are difficult to move through. It costs 1 additional square of movement to enter a square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). A creature can't shift into or out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can't jump out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
-**[Dig Maneuver](scc:mcdm.heroes.v1/movement/burrow):** A maneuver that allows a creature with "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their speed entry or the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow) to move a number of squares equal to their [size](scc:mcdm.heroes.v1/rule.character/size) vertically through dirt.
+**[Dig Maneuver](scc:mcdm.heroes.v1/movement/burrow):** A maneuver that allows a creature with "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry or the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow) to move a number of squares equal to their [size](scc:mcdm.heroes.v1/rule.character/size) vertically through dirt.
 
 **[Director](scc:mcdm.heroes.v1/chapter/for-the-director):** The player who prepares, presents, and adjudicates the game for all the other players, who each create and run a hero.
 
@@ -239,7 +239,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Double Edge](scc:mcdm.heroes.v1/rule.dice/edge):** When a creature has two or more [edges](scc:mcdm.heroes.v1/rule.dice/edge) and no [banes](scc:mcdm.heroes.v1/rule.dice/bane) applied to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), they have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the roll. A double [edge](scc:mcdm.heroes.v1/rule.dice/edge) adds no bonus to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), but instead automatically increases the [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the roll by one tier.
 
-**[Downtime Project](scc:mcdm.heroes.v1/chapter/downtime-projects):** A task a hero undertakes during one or more respites.
+**[Downtime Project](scc:mcdm.heroes.v1/chapter/downtime-projects):** A task a hero undertakes during one or more [respites](scc:mcdm.heroes.v1/rule.resource/respite).
 
 **[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** An ancestry with a draconic heritage.
 
@@ -265,7 +265,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Essence](scc:mcdm.heroes.v1/feature.elementalist.level-1/essence):** The [elementalist's](scc:mcdm.heroes.v1/class/elementalist) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-**[Experience (XP)](scc:mcdm.heroes.v1/rule.resource/experience):** A hero's [Victories](scc:mcdm.heroes.v1/rule.resource/victories) convert to Experience when they finish a respite. Experience permanently increases a hero's capabilities by allowing them to increase in level.
+**[Experience (XP)](scc:mcdm.heroes.v1/rule.resource/experience):** A hero's [Victories](scc:mcdm.heroes.v1/rule.resource/victories) convert to Experience when they finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Experience permanently increases a hero's capabilities by allowing them to increase in level.
 
 **[Falling](scc:mcdm.heroes.v1/rule.health/falling):** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land [prone](scc:mcdm.heroes.v1/condition/prone). A falling creature can reduce the effective height of their fall by a number of squares equal to their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (minimum 0).
 
@@ -273,7 +273,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Flanking](scc:mcdm.heroes.v1/rule.combat/flanking):** When two or more allied creatures are adjacent to and on opposite sides of an enemy, those creatures are flanking that enemy. A creature flanking an enemy gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against that enemy.
 
-**[Fly](scc:mcdm.heroes.v1/movement/fly):** A movement mode available to creatures with "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gain the capability to temporarily [fly](scc:mcdm.heroes.v1/movement/fly). Such creatures can move through the air horizontally or diagonally at full speed and remain in midair. If a flying creature is made [prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall.
+**[Fly](scc:mcdm.heroes.v1/movement/fly):** A movement mode available to creatures with "[fly](scc:mcdm.heroes.v1/movement/fly)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gain the capability to temporarily [fly](scc:mcdm.heroes.v1/movement/fly). Such creatures can move through the air horizontally or diagonally at full [speed](scc:mcdm.heroes.v1/rule.character/speed) and remain in midair. If a flying creature is made [prone](scc:mcdm.heroes.v1/condition/prone) or has their [speed](scc:mcdm.heroes.v1/rule.character/speed) reduced to 0, they fall.
 
 **[Focus](scc:mcdm.heroes.v1/feature.tactician.level-1/focus):** The [tactician's](scc:mcdm.heroes.v1/class/tactician) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -295,7 +295,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) Maneuver:** A maneuver that allows a creature to make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) to make another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by them.
 
-**[Grabbed](scc:mcdm.heroes.v1/condition/grabbed):** A condition that reduces a creature's speed to 0 and causes them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
+**[Grabbed](scc:mcdm.heroes.v1/condition/grabbed):** A condition that reduces a creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) to 0 and causes them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 **[Ground](scc:mcdm.heroes.v1/rule.general/ground):** Any surface a creature could typically stand, sit, or lie upon.
 
@@ -321,7 +321,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[High Ground](scc:mcdm.heroes.v1/movement/high-ground):** A creature has the advantage of [high ground](scc:mcdm.heroes.v1/movement/high-ground) when they use an ability against a target while standing on the ground and occupying a space that is fully above the target's space. This advantage grants the creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll).
 
-**[Hover](scc:mcdm.heroes.v1/movement/hover):** A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their speed entry (commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the ability to temporarily [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are knocked [prone](scc:mcdm.heroes.v1/condition/prone) or their speed is reduced to 0.
+**[Hover](scc:mcdm.heroes.v1/movement/hover):** A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry (commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the ability to temporarily [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are knocked [prone](scc:mcdm.heroes.v1/condition/prone) or their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 0.
 
 **[Human](scc:mcdm.heroes.v1/ancestry/human):** An ancestry much like [humans](scc:mcdm.heroes.v1/ancestry/human) in the real world, except that they can sense magic.
 
@@ -427,7 +427,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** Points earned by a hero toward a project goal.
 
-**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special [test](scc:mcdm.heroes.v1/rule.test/test) a hero makes while working on a downtime project during a respite. A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as project points toward completing the project.
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special [test](scc:mcdm.heroes.v1/rule.test/test) a hero makes while working on a downtime project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as project points toward completing the project.
 
 **[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Lore that must be obtained before a downtime project can be started.
 
@@ -455,9 +455,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Respite](scc:mcdm.heroes.v1/rule.resource/respite):** A 24-hour period of focused rest that allows heroes to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), and to work on downtime projects.
 
-**[Respite Activity](scc:mcdm.heroes.v1/rule.resource/respite):** An activity that can be undertaken during a respite. A hero can take one respite activity per respite.
+**[Respite Activity](scc:mcdm.heroes.v1/rule.resource/respite):** An activity that can be undertaken during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). A hero can take one [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity per [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
-**[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's speed to 0 and prevents them from using the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
+**[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) to 0 and prevents them from using the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
 **[Retainer](scc:mcdm.heroes.v1/rule.general/retainer):** A follower who adventures alongside a hero.
 
@@ -465,7 +465,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a [test](scc:mcdm.heroes.v1/rule.test/test), gained in addition to the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) accomplishing what they set out to do. A creature always gains a reward on a [test](scc:mcdm.heroes.v1/rule.test/test) that is a natural 19 or 20.
 
-**[Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's speed, taking the rider with them.
+**[Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's [speed](scc:mcdm.heroes.v1/rule.character/speed), taking the rider with them.
 
 **[Rolled Damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage):** Variable damage determined by the outcome of an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll). Effects that grant bonuses to rolled damage have no effect on damage that is dealt without an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll).
 
@@ -493,13 +493,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Slide](scc:mcdm.heroes.v1/movement/forced-movement):** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that slides a target in any direction, moving them along any horizontal line.
 
-**[Slowed](scc:mcdm.heroes.v1/condition/slowed):** A condition that reduces a creature's speed to 2.
+**[Slowed](scc:mcdm.heroes.v1/condition/slowed):** A condition that reduces a creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) to 2.
 
 **[Space](scc:mcdm.heroes.v1/rule.character/size):** The number of squares taken up by a creature or object in length, width, and height, and the area of the same [size](scc:mcdm.heroes.v1/rule.character/size) that a creature or object occupies on an encounter map.
 
 **[Speed](scc:mcdm.heroes.v1/rule.character/speed):** A measure of how many squares a creature can move when taking the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action during combat.
 
-**[Square](scc:mcdm.heroes.v1/rule.combat/distance):** The smallest unit of measurement on an encounter map. [Distance](scc:mcdm.heroes.v1/rule.combat/distance), space, and speed are all reckoned in squares.
+**[Square](scc:mcdm.heroes.v1/rule.combat/distance):** The smallest unit of measurement on an encounter map. [Distance](scc:mcdm.heroes.v1/rule.combat/distance), space, and [speed](scc:mcdm.heroes.v1/rule.character/speed) are all reckoned in squares.
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability):** A measure of a creature's immovability. When a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), the [distance](scc:mcdm.heroes.v1/rule.combat/distance) they can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to their stability.
 
@@ -521,7 +521,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Surprised](scc:mcdm.heroes.v1/rule.combat/surprised):** A creature who is surprised can't take triggered actions or free triggered actions, and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
-**[Swim](scc:mcdm.heroes.v1/movement/climb-or-swim):** A movement mode that allows a creature to swim without using additional squares of movement. A creature without "swim" in their speed entry or the temporary ability to swim must use 2 squares of movement to swim 1 square.
+**[Swim](scc:mcdm.heroes.v1/movement/climb-or-swim):** A movement mode that allows a creature to swim without using additional squares of movement. A creature without "swim" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry or the temporary ability to swim must use 2 squares of movement to swim 1 square.
 
 **[Tactician](scc:mcdm.heroes.v1/class/tactician):** A class for a hero who is a brilliant strategist and weapons expert.
 
@@ -849,7 +849,7 @@ The game takes place in a series of scenes with the heroes as the main character
 
 This game is built so that each adventure you play and each battle you fight gets more exciting as it goes on. In fantastic tales, the heroes and their foes both grow in power over the course of an adventure. But it isn't time alone that grows a hero's capabilities. Rather, it's the adrenaline that comes from battle, the danger of the hero's profession, and the pressure to save the world—or at least some small part of it that pushes a character to do the impossible. Each small act of heroism gives a hero the confidence and bravery to perform legendary feats against all odds.
 
-The things a hero can achieve at the end of the story are far more daring and impactful than what they do at the start, and the final showdown against a villain's forces is more deadly and desperate than the first. The rules of the game help build a heroic narrative in this same fashion, making use of the four most important mechanics for building heroic narratives: [Victories](scc:mcdm.heroes.v1/rule.resource/victories), Experience, [Heroic Resources](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
+The things a hero can achieve at the end of the story are far more daring and impactful than what they do at the start, and the final showdown against a villain's forces is more deadly and desperate than the first. The rules of the game help build a heroic narrative in this same fashion, making use of the four most important mechanics for building heroic narratives: [Victories](scc:mcdm.heroes.v1/rule.resource/victories), [Experience](scc:mcdm.heroes.v1/rule.resource/experience), [Heroic Resources](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: rule | @group: resource | @id: victories -->
 #### Victories
@@ -866,12 +866,12 @@ When your hero successfully overcomes a big challenge that doesn't involve comba
 
 ##### Victories Reset
 
-Whenever you finish a respite (see Respite below), your Victories are converted into Experience.
+Whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) below), your Victories are converted into [Experience](scc:mcdm.heroes.v1/rule.resource/experience).
 
 <!-- @type: rule | @group: resource | @id: experience -->
 #### Experience
 
-[Victories](scc:mcdm.heroes.v1/rule.resource/victories) temporarily increase a hero's power during an adventure, but Experience (abbreviated "XP") permanently improves their capabilities. Each time you finish a respite (see below), you gain XP equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories), then your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) reset to 0. In other words, your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to XP when you finish a respite.
+[Victories](scc:mcdm.heroes.v1/rule.resource/victories) temporarily increase a hero's power during an adventure, but Experience (abbreviated "XP") permanently improves their capabilities. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) (see below), you gain XP equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories), then your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) reset to 0. In other words, your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to XP when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 For more information on how XP increases your hero's power, see Heroic Advancement in [Making a Hero](scc:mcdm.heroes.v1/chapter/making-a-hero).
 
@@ -896,14 +896,14 @@ Outside of combat and other dangerous situations, you can spend [Recoveries](scc
 
 ##### Regaining Recoveries
 
-You regain all lost [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) when you finish a respite (see below).
+You regain all lost [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) (see below).
 
 <!-- @type: rule | @group: resource | @id: respite -->
 #### Respite
 
 A respite is a focused period of rest and recuperation that allows heroes to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). During a respite, you must spend 24 hours uninterrupted and doing nothing but sleeping, eating, dressing your wounds, and recuperating. You can also undertake one respite activity, such as making a project roll (see [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) or changing your kit (see [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
-After 24 hours, your respite ends. When you finish a respite, you regain all your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) convert to Experience. You can take as many respites as you like in a row to keep accomplishing respite activities. Just keep in mind that while you're resting, your enemies are still scheming and carrying out their dastardly plans.
+After 24 hours, your respite ends. When you finish a respite, you regain all your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) convert to [Experience](scc:mcdm.heroes.v1/rule.resource/experience). You can take as many respites as you like in a row to keep accomplishing respite activities. Just keep in mind that while you're resting, your enemies are still scheming and carrying out their dastardly plans.
 
 It is best to take a respite in a safe place where you aren't in a hostile environment or at risk of being attacked. If your respite is interrupted by enemies attacking, an earth tremor, swarms of biting insects, and similar serious distractions, the respite ends early and you don't gain the benefits for finishing it.
 
@@ -1230,17 +1230,17 @@ At the Director's discretion, you might lose certain gear during an adventure, o
 
 If you pick a skill, ability, class, or any other option that you end up not liking after using it in the game—even your character's ancestry—you can always freely change that option between game sessions. If you want to change some aspect of your character during a session, ask your Director. If they say it's fine to swap that aspect out for something else, go for it. You shouldn't be stuck with any option that makes the game less fun for you.
 
-If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon [strikes](scc:mcdm.heroes.v1/rule.combat/strike), doing so during a respite as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) would be more helpful against undead in an upcoming encounter, talk to your Director.
+If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon [strikes](scc:mcdm.heroes.v1/rule.combat/strike), doing so during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) would be more helpful against undead in an upcoming encounter, talk to your Director.
 
 #### Optional Rule: Respite Ability Changes
 
-An optional rule the Director can include in your game is to allow heroes to change any number of signature and heroic abilities granted by their class as a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). This allows heroes to prepare for upcoming encounters and try new builds, but the Director and the players should all be comfortable with constantly juggling and learning new abilities.
+An optional rule the Director can include in your game is to allow heroes to change any number of signature and heroic abilities granted by their class as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). This allows heroes to prepare for upcoming encounters and try new builds, but the Director and the players should all be comfortable with constantly juggling and learning new abilities.
 
 ### Heroic Advancement
 
 Your character's heroic advancement is marked by level. Each time you gain a new level in your class, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases, and you gain new features or abilities according to your class's advancement, as detailed in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes).
 
-In the standard setup for the game, heroes gain Experience each time they finish a respite (see Building a Heroic Narrative in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). When you gain sufficient Experience, you gain a level during the same respite. The Heroic Advancement table shows exactly how much Experience (XP) you need to advance from one level to the next. The amount of Experience you gain is cumulative.
+In the standard setup for the game, heroes gain [Experience](scc:mcdm.heroes.v1/rule.resource/experience) each time they finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) (see Building a Heroic Narrative in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). When you gain sufficient [Experience](scc:mcdm.heroes.v1/rule.resource/experience), you gain a level during the same [respite](scc:mcdm.heroes.v1/rule.resource/respite). The Heroic Advancement table shows exactly how much [Experience](scc:mcdm.heroes.v1/rule.resource/experience) ([XP](scc:mcdm.heroes.v1/rule.resource/experience)) you need to advance from one level to the next. The amount of [Experience](scc:mcdm.heroes.v1/rule.resource/experience) you gain is cumulative.
 
 #### Alternative Advancement
 
@@ -1248,21 +1248,21 @@ Though many games might advance using the standard setup for heroic advancement,
 
 ##### Adjusted XP Advancement
 
-Some Directors prefer that heroes gain new levels faster or slower to suit the pace of their story. The Adjusted XP Advancement table is set up for campaigns where heroes advance at double or half the usual pace. Directors can also create their own customized pace for XP-based advancement.
+Some Directors prefer that heroes gain new levels faster or slower to suit the pace of their story. The Adjusted [XP](scc:mcdm.heroes.v1/rule.resource/experience) Advancement table is set up for campaigns where heroes advance at double or half the usual pace. Directors can also create their own customized pace for [XP](scc:mcdm.heroes.v1/rule.resource/experience)-based advancement.
 
 ##### Milestone Advancement
 
-Rather than tracking XP, some games have the heroes advance in level when they achieve a particular story milestone. For example, when a party defeats the main villain of an adventure and foils their dastardly plot, each hero gains a level for achieving this objective, no matter how many obstacles they faced along the way.
+Rather than tracking [XP](scc:mcdm.heroes.v1/rule.resource/experience), some games have the heroes advance in level when they achieve a particular story milestone. For example, when a party defeats the main villain of an adventure and foils their dastardly plot, each hero gains a level for achieving this objective, no matter how many obstacles they faced along the way.
 
 For many Directors using milestone advancement, the end of each adventure within a campaign serves as a milestone for gaining a new level. The Director can share these milestones with the players to encourage them to work toward particular goals, and to engage with the story and world the Director has prepared. For example, in a campaign where the heroes have to face nine evil mages, it makes sense that each time the heroes defeat a mage, they gain a level. The Director should keep milestone goals flexible, though. Defeating a mage could mean stopping them with violence, using negotiation to make them stand down, or anything else that thwarts their evil plans.
 
 ##### Director Says So
 
-Some games don't track XP or goals at all. The heroes simply gain a level whenever the Director decides it's appropriate for the story.
+Some games don't track [XP](scc:mcdm.heroes.v1/rule.resource/experience) or goals at all. The heroes simply gain a level whenever the Director decides it's appropriate for the story.
 
 ###### Heroic Advancement Table
 
-| Level              | XP    | Level | XP      |
+| Level              | [XP](scc:mcdm.heroes.v1/rule.resource/experience)    | Level | [XP](scc:mcdm.heroes.v1/rule.resource/experience)      |
 |--------------------|-------|-------|---------|
 | 1st                | 0-15  | 6th   | 80-95   |
 | 2nd                | 16-31 | 7th   | 96-111  |
@@ -1272,7 +1272,7 @@ Some games don't track XP or goals at all. The heroes simply gain a level whenev
 
 ###### Adjusted XP Advancement Table
 
-| Level | XP for Double Speed | XP for Half Speed |
+| Level | [XP](scc:mcdm.heroes.v1/rule.resource/experience) for Double [Speed](scc:mcdm.heroes.v1/rule.character/speed) | [XP](scc:mcdm.heroes.v1/rule.resource/experience) for Half [Speed](scc:mcdm.heroes.v1/rule.character/speed) |
 |-------|---------------------|-------------------|
 | 1st   | 0-7                 | 0-31              |
 | 2nd   | 8-15                | 32-63             |
@@ -1310,7 +1310,7 @@ This chapter details twelve ancestries for the game:
 
 **[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in Orden and many other fantasy worlds! In *Draw Steel*, [humans](scc:mcdm.heroes.v1/ancestry/human) have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
 
-**[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** Originating on Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower speeds.
+**[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** Originating on Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower [speeds](scc:mcdm.heroes.v1/rule.character/speed).
 
 **[Orc](scc:mcdm.heroes.v1/ancestry/orc):** [Orcs](scc:mcdm.heroes.v1/ancestry/orc) have skin in green tones and stand slightly taller and wider than [humans](scc:mcdm.heroes.v1/ancestry/human). A supernatural energy they call "the blood fire" flows through their veins, igniting colorful lines in an [orc's](scc:mcdm.heroes.v1/ancestry/orc) skin during life-or-death battles.
 
@@ -1324,7 +1324,7 @@ This chapter details twelve ancestries for the game:
 >
 > The rules for using ancestries refer to lots of other parts of the game. You can find information on specific topics as follows:
 >
-> [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane), [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), respites: Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
+> [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane), [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), [respites](scc:mcdm.heroes.v1/rule.resource/respite): Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
 >
 > Languages: Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)
 >
@@ -1676,7 +1676,7 @@ Your pointy tail allows you to punctuate all your actions. Once per round when y
 <!-- @type: feature -->
 ##### Beast Legs (1 Point)
 
-Your powerful legs make you faster. You have speed 6.
+Your powerful legs make you faster. You have [speed](scc:mcdm.heroes.v1/rule.character/speed) 6.
 
 <!-- @type: feature -->
 ##### Glowing Eyes (1 Point)
@@ -1798,7 +1798,7 @@ The [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) looked at the peo
 <!-- @type: feature | @id: wyrmplate -->
 #### Signature Trait: Wyrmplate
 
-Your hardened scales grant you [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your level to one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type): acid, cold, corruption, fire, lightning, or poison. You can change your [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) type when you finish a respite.
+Your hardened scales grant you [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your level to one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type): acid, cold, corruption, fire, lightning, or poison. You can change your [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) type when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 #### Purchased Dragon Knight Traits
 
@@ -2142,7 +2142,7 @@ Accessing memories is as easy as living in the present for you. You gain an [edg
 <!-- @type: feature -->
 ##### Swift (1 Point)
 
-You have speed 6.
+You have [speed](scc:mcdm.heroes.v1/rule.character/speed) 6.
 
 <!-- @type: feature -->
 ##### The Wode Defends (2 Points)
@@ -2302,7 +2302,7 @@ The gate, or door, or whatever it was started to close. With Dazar on the other 
 
 "Embers!" John called out, but the [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) was surrounded. At that moment, a detonation. An explosion of sound that knocked the demons back. And a giant stood before the lumbering egress.
 
-Dust settled on the ground behind the giant, and John realized the thunderclap was the sound of the giant running to them. Air that couldn't get out of the way fast enough, tortured by the pressure of his speed.
+Dust settled on the ground behind the giant, and John realized the thunderclap was the sound of the giant running to them. Air that couldn't get out of the way fast enough, tortured by the pressure of his [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 The rectangular, toothed egress demon was twelve feet tall at least, the giant almost matching its immense [size](scc:mcdm.heroes.v1/rule.character/size).
 
@@ -2493,7 +2493,7 @@ A tolerance for pain and distress allows you to push through difficult situation
 <!-- @type: feature -->
 ##### Perseverance (1 Point)
 
-Giving up is for other people. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your speed is reduced to 3 instead of 2.
+Giving up is for other people. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 3 instead of 2.
 
 <!-- @type: feature -->
 ##### Resist the Unnatural (1 Point)
@@ -2628,7 +2628,7 @@ Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos
 <!-- @type: feature -->
 ##### Lightning Nimbleness (2 Points)
 
-You can push your body to move at incredible speeds. Your speed is 7.
+You can push your body to move at incredible [speeds](scc:mcdm.heroes.v1/rule.character/speed). Your [speed](scc:mcdm.heroes.v1/rule.character/speed) is 7.
 
 <!-- @type: feature -->
 ##### Nonstop (2 Points)
@@ -2792,7 +2792,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Glo
 <!-- @type: feature -->
 ##### Bloodfire Rush (1 Point)
 
-The magic coursing through your veins makes you run faster in the heat of battle. The first time in any combat round that you take damage, you gain a +2 bonus to speed until the end of the round.
+The magic coursing through your veins makes you run faster in the heat of battle. The first time in any combat round that you take damage, you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the round.
 
 <!-- @type: feature -->
 ##### Glowing Recovery (2 Points)
@@ -2980,12 +2980,12 @@ Your small [size](scc:mcdm.heroes.v1/rule.character/size) makes it easier for yo
 <!-- @type: feature -->
 ##### Nimblestep (2 Points)
 
-A light step serves you well when speed is of the essence. You ignore the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and can move at full speed while sneaking.
+A light step serves you well when [speed](scc:mcdm.heroes.v1/rule.character/speed) is of the essence. You ignore the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and can move at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while sneaking.
 
 <!-- @type: feature -->
 ##### Polder Geist (1 Point)
 
-Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, you gain a +3 bonus to speed until the end of your turn.
+Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your turn.
 
 <!-- @type: feature -->
 ##### Reactive Tumble (1 Point)
@@ -3065,7 +3065,7 @@ Lady Filliamo shrugged. "I'm a knight of the church. Jurisdiction's for the city
 <!-- @type: feature | @id: former-life -->
 #### Signature Trait: Former Life
 
-Choose the ancestry you were before you died. Your [size](scc:mcdm.heroes.v1/rule.character/size) is that ancestry's [size](scc:mcdm.heroes.v1/rule.character/size) and your speed is 5. Unless you select one of the Previous Life traits (see below), you don't receive any other ancestral traits from your original ancestry.
+Choose the ancestry you were before you died. Your [size](scc:mcdm.heroes.v1/rule.character/size) is that ancestry's [size](scc:mcdm.heroes.v1/rule.character/size) and your [speed](scc:mcdm.heroes.v1/rule.character/speed) is 5. Unless you select one of the Previous Life traits (see below), you don't receive any other ancestral traits from your original ancestry.
 
 <!-- @type: feature | @id: tough-but-withered -->
 #### Signature Trait: Tough But Withered
@@ -3291,13 +3291,13 @@ Choose one signature ability from the following options. Signature abilities can
 <!-- @type: ability | @subtype: signature | @id: minor-acceleration -->
 ###### Minor Acceleration
 
-*You fill yourself or an ally with a burst of speed.*
+*You fill yourself or an ally with a burst of [speed](scc:mcdm.heroes.v1/rule.character/speed).*
 
 | **Psionic, Melee** | Maneuver               |
 |-------------------|------------------------|
 | **📏 Melee 1**    | **🎯 Self or one ally** |
 
-**Effect:** The target gains a bonus to speed equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice) until the start of your next turn.
+**Effect:** The target gains a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice) until the start of your next turn.
 
 ##### Unstoppable Mind (2 Points)
 
@@ -4658,7 +4658,7 @@ When a creature is [frightened](scc:mcdm.heroes.v1/condition/frightened), any [a
 <!-- @type: condition | @id: grabbed -->
 ##### Grabbed
 
-A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) has speed 0, can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) except by a creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed), can't use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), and takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed). If a creature is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another creature and that creature moves, they bring the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature with them. If a creature's [size](scc:mcdm.heroes.v1/rule.character/size) is equal to or less than the size of a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), their speed is halved while they have that creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
+A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) has [speed](scc:mcdm.heroes.v1/rule.character/speed) 0, can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) except by a creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed), can't use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), and takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on abilities that don't target the creature, object, or effect that has them [grabbed](scc:mcdm.heroes.v1/condition/grabbed). If a creature is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another creature and that creature moves, they bring the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature with them. If a creature's [size](scc:mcdm.heroes.v1/rule.character/size) is equal to or less than the size of a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), their [speed](scc:mcdm.heroes.v1/rule.character/speed) is halved while they have that creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 A creature who has another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) can use a maneuver to move the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature into an unoccupied space adjacent to them.
 
@@ -4678,14 +4678,14 @@ Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/conditi
 <!-- @type: condition | @id: restrained -->
 ##### Restrained
 
-A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and on [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), and abilities used against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has [speed](scc:mcdm.heroes.v1/rule.character/speed) 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and on [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), and abilities used against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/restrained), that condition ends.
 
 <!-- @type: condition | @id: slowed -->
 ##### Slowed
 
-A creature who is [slowed](scc:mcdm.heroes.v1/condition/slowed) has speed 2 unless their speed is already lower, and they can't [shift](scc:mcdm.heroes.v1/movement/shifting).
+A creature who is [slowed](scc:mcdm.heroes.v1/condition/slowed) has [speed](scc:mcdm.heroes.v1/rule.character/speed) 2 unless their [speed](scc:mcdm.heroes.v1/rule.character/speed) is already lower, and they can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 <!-- @type: condition | @id: taunted -->
 ##### Taunted
@@ -4797,7 +4797,7 @@ You lose any remaining wrath at the end of the encounter.
 
 ##### Wrath Outside of Combat
 
-Though you can't gain wrath outside of combat, you can use your heroic abilities and effects that cost wrath without spending it. Whenever you use an ability or effect outside of combat that costs wrath, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain wrath outside of combat, you can use your heroic abilities and effects that cost wrath without spending it. Whenever you use an ability or effect outside of combat that costs wrath, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited wrath on its effect, you can use it as if you had spent an amount of wrath equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). (Such abilities aren't part of the core rules for the [censor](scc:mcdm.heroes.v1/class/censor), but they might appear in future products.)
 
@@ -4823,7 +4823,7 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 > 
 > Additionally, you can spend 1 wrath to take one of the following free triggered actions:
 > 
-> - When an adjacent creature judged by you starts to [shift](scc:mcdm.heroes.v1/movement/shifting), you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them and their speed becomes 0 until the end of the current turn, preventing them from [shifting](scc:mcdm.heroes.v1/movement/shifting).
+> - When an adjacent creature judged by you starts to [shift](scc:mcdm.heroes.v1/movement/shifting), you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them and their [speed](scc:mcdm.heroes.v1/rule.character/speed) becomes 0 until the end of the current turn, preventing them from [shifting](scc:mcdm.heroes.v1/movement/shifting).
 > - When a creature judged by you within 10 squares makes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you cause them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll.
 > - When a creature judged by you within 10 squares uses an ability with a [potency](scc:mcdm.heroes.v1/rule.character/potency) that targets only one creature, the [potency](scc:mcdm.heroes.v1/rule.character/potency) is reduced by 1 for that creature.
 > - If you damage a creature judged by you with a melee ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
@@ -4901,7 +4901,7 @@ You can interpret diagrams and charts even if you don't understand the language 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
 
-Each time you finish a respite, you can decide the weather conditions within 100 squares. Until you finish another respite, the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can decide the weather conditions within 100 squares. Until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite), the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
 
 **Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Search](scc:mcdm.heroes.v1/skill/search) or [Navigate](scc:mcdm.heroes.v1/skill/navigate) skills.
 
@@ -4927,7 +4927,7 @@ You have the following ability.
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 > 
-> **Effect:** You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has speed 5 and can [fly](scc:mcdm.heroes.v1/movement/fly), but can't physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can't be reduced in any way.
+> **Effect:** You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has [speed](scc:mcdm.heroes.v1/rule.character/speed) 5 and can [fly](scc:mcdm.heroes.v1/movement/fly), but can't physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can't be reduced in any way.
 
 <!-- @type: feature -->
 ##### Grave Speech
@@ -4964,7 +4964,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Inner Light
 
-Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. You place a ray of [morning light](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 bonus to saving throws that lasts until you finish another respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. You place a ray of [morning light](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 bonus to saving throws that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Inspired Deception
@@ -4974,7 +4974,7 @@ The gods favor your thievery with magic. Whenever you make a [test](scc:mcdm.her
 <!-- @type: feature -->
 ##### Oracular Visions
 
-Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a respite.
+Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Protective Circle
@@ -4984,12 +4984,12 @@ You can spend 10 uninterrupted minutes to create a [protective circle](scc:mcdm.
 <!-- @type: feature -->
 ##### Revitalizing Ritual
 
-Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. The chosen character gains a bonus to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. The chosen character gains a bonus to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Sanctified Weapon
 
-As a respite activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another respite.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Censor Abilities
@@ -5104,7 +5104,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > - **12-16:** 6 + M damage; push 3
 > - **17+:** 9 + M damage; push 5
 > 
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed in a straight line toward the target after pushing them.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) in a straight line toward the target after pushing them.
 
 <!-- @type: ability | @cost: 3 Wrath -->
 > ###### The Gods Punish and Defend (3 Wrath)
@@ -5517,22 +5517,22 @@ As a maneuver, you make your body shine brightly, illuminating your space and ea
 <!-- @type: feature -->
 ##### Oracular Warning
 
-Each time you finish a respite, you can share the vague dreams of the future granted to you by the gods with allies who finished the respite with you. These premonitions help you and your allies stay alive, granting each of you [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + your level that lasts until you finish another respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can share the vague dreams of the future granted to you by the gods with allies who finished the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you. These premonitions help you and your allies stay alive, granting each of you [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + your level that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Seance
 
-You can commune with a network of spirits. As a respite activity, you speak the name of a creature who died and isn't undead. If the creature's spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn't free or willing to appear, you can speak another name or choose another respite activity.
+You can commune with a network of spirits. As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you speak the name of a creature who died and isn't undead. If the creature's spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn't free or willing to appear, you can speak another name or choose another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature -->
 ##### Saint's Epiphany
 
-At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the roll.
+At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the roll.
 
 <!-- @type: feature -->
 ##### Windwalk
 
-While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can [fly](scc:mcdm.heroes.v1/movement/fly). If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to speed while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
+While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can [fly](scc:mcdm.heroes.v1/movement/fly). If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
 
 <!-- @type: feature -->
 ##### Wode Road
@@ -5567,7 +5567,7 @@ Your order has taught you methods to discern the disguises of both mortals and m
 
 You can better sift through the constant fragmentary visions from your deity and act to make them manifest. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can make a number of 2d10 rolls equal to the number of [Victories](scc:mcdm.heroes.v1/rule.resource/victories) you earned. Record each roll in order. Then whenever you or a creature within 10 squares makes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you can use a free triggered action to replace the total on the dice with your first recorded roll.
 
-You discard each roll as it is used, and each time you earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you add new rolls to the bottom of the list. Any unused rolls are discarded when you finish a respite.
+You discard each roll as it is used, and each time you earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you add new rolls to the bottom of the list. Any unused rolls are discarded when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature | @id: stand-fast -->
 ##### Stand Fast!
@@ -5588,7 +5588,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > |------------------|------------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 > 
-> **Effect:** The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability as a free triggered action.
+> **Effect:** The target ends any condition or effect on them that is ended by a saving throw or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) signature ability as a free triggered action.
 
 <!-- @type: ability | @cost: 9 Wrath -->
 > ###### Orison of Victory (9 Wrath)
@@ -5647,7 +5647,7 @@ As a 6th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Implement of Wrath
 
-Each time you finish a respite, you can choose one hero's weapon, including your own, to channel supernatural power as an implement of your god's wrath. The weapon becomes magic and gains the following benefits until your next respite:
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose one hero's weapon, including your own, to channel supernatural power as an implement of your god's wrath. The weapon becomes magic and gains the following benefits until your next [respite](scc:mcdm.heroes.v1/rule.resource/respite):
 
 - Strikes with the weapon deal extra holy damage equal to the wielder's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - Any creature struck by the weapon who has holy weakness and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
@@ -5816,7 +5816,7 @@ You can maintain bonds with up to three willing creatures using your [Invocation
 <!-- @type: feature -->
 ##### Divine Quartermaster
 
-Each time you finish a respite, you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another respite or it is consumed.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite) or it is consumed.
 
 <!-- @type: feature -->
 ##### Font of Grace
@@ -5836,20 +5836,20 @@ Sun infuses your body. Whenever you use an ability to deal rolled damage to anot
 <!-- @type: feature -->
 ##### Nature's Bounty
 
-When you finish a respite, you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
+When you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
 
 - Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) each time.
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
-- Each creature gains a +1 bonus to speed.
+- Each creature gains a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 - Each creature gains a +1 bonus to saving throws.
 - Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence other creatures.
 
-Each benefit lasts until the creature who gains it finishes another respite.
+Each benefit lasts until the creature who gains it finishes another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Ride the Lightning
 
-Lightning and thunder infuse your body. Whenever you use an ability to deal rolled damage to another creature, the ability deals extra lightning damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. While you are under the effect of your [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) feature, lightning enhances your locomotion to grant you a bonus to speed equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) already grants you a bonus to speed, this bonus adds to that.
+Lightning and thunder infuse your body. Whenever you use an ability to deal rolled damage to another creature, the ability deals extra lightning damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. While you are under the effect of your [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) feature, lightning enhances your locomotion to grant you a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) already grants you a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), this bonus adds to that.
 
 <!-- @type: feature -->
 ##### Trinity of Trickery
@@ -5865,7 +5865,7 @@ You have the following ability.
 > |-------------------|------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free triggered action to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free triggered action to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -5882,7 +5882,7 @@ When an ally within 10 squares takes damage that would leave them [dying](scc:mc
 <!-- @type: feature -->
 ##### Your Triumphs Are Remembered
 
-The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a respite, you and any other heroes who rested with you regain 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to XP. This [Victory](scc:mcdm.heroes.v1/rule.resource/victories) isn't converted into XP at the end of a subsequent respite.
+The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you and any other heroes who rested with you regain 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to [XP](scc:mcdm.heroes.v1/rule.resource/experience). This [Victory](scc:mcdm.heroes.v1/rule.resource/victories) isn't converted into [XP](scc:mcdm.heroes.v1/rule.resource/experience) at the end of a subsequent [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Focused Wrath
@@ -6149,16 +6149,16 @@ You gain one skill of your choice.
 
 You are the ultimate representation of your god's justice in the timescape. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.conduit.level-1/domain-piety-and-effects) in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) (see below). If the effect calls for the use of your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
 
-Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
+Additionally, whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your [respite](scc:mcdm.heroes.v1/rule.resource/respite), you and your allies can appear at any location in the timescape where someone worships your deity.
 
 While you rest in their presence, your god might also give you priority targets to enact justice upon. You and your allies each have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against such targets. If you attempt to open a portal to your deity again before you have defeated your priority targets, you suffer your god's wrath, as determined by the Director.
 
 <!-- @type: feature -->
 #### Virtue
 
-You have an epic resource called [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue). Each time you finish a respite, you gain [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) equal to the XP you gain. You can spend [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) on your abilities as if it were wrath.
+You have an epic resource called [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) on your abilities as if it were wrath.
 
-Additionally, you can spend 3 [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) to access one of your deity's domains that you usually don't have access to. When you do, you can use that domain's features until you finish another respite.
+Additionally, you can spend 3 [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) to access one of your deity's domains that you usually don't have access to. When you do, you can use that domain's features until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 [Virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) remains until you spend it.
 
@@ -6247,7 +6247,7 @@ You lose any remaining piety at the end of the encounter.
 
 ##### Piety Outside of Combat
 
-Though you can't gain piety outside of combat, you can use your heroic abilities and effects that cost piety without spending it. Whenever you use an ability or effect outside of combat that costs piety, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain piety outside of combat, you can use your heroic abilities and effects that cost piety without spending it. Whenever you use an ability or effect outside of combat that costs piety, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited piety on its effect, such as [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace), you can use it as if you had spent an amount of piety equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -6355,7 +6355,7 @@ You can interpret diagrams and charts even if you don't understand the language 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
 
-Each time you finish a respite, you can decide the weather conditions within 100 squares. Until you finish another respite, the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can decide the weather conditions within 100 squares. Until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite), the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
 
 **Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Search or Navigate skills.
 
@@ -6379,7 +6379,7 @@ You have the following ability.
 > |-------------|-----------------:|
 > | **📏 Self** |      **🎯 Self** |
 > 
-> **Effect:** You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has speed 5 and can [fly](scc:mcdm.heroes.v1/movement/fly), but can't physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can't be reduced in any way.
+> **Effect:** You conjure a spirit that takes the form of any animal you have seen. The incorporeal animal has [speed](scc:mcdm.heroes.v1/rule.character/speed) 5 and can [fly](scc:mcdm.heroes.v1/movement/fly), but can't physically interact with the world. While you are within 10 squares of the spirit, you automatically sense everything that type of animal would sense, in addition to sensing your own surroundings. You can dismiss the spirit at any time (no action required). If the spirit takes any damage, they are dismissed and you take 1d10 psychic damage that can't be reduced in any way.
 
 <!-- @type: feature -->
 ##### Grave Speech
@@ -6416,7 +6416,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Inner Light
 
-Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. You place a ray of [morning light](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 bonus to saving throws that lasts until you finish another respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. You place a ray of [morning light](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light) into the chosen character's soul, granting them a +1 bonus to saving throws that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Inspired Deception
@@ -6426,7 +6426,7 @@ The gods favor your thievery with magic. Whenever you make a [test](scc:mcdm.her
 <!-- @type: feature -->
 ##### Oracular Visions
 
-Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a respite.
+Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Protective Circle
@@ -6436,12 +6436,12 @@ You can spend 10 uninterrupted minutes to create a [protective circle](scc:mcdm.
 <!-- @type: feature -->
 ##### Revitalizing Ritual
 
-Each time you finish a respite, you can choose yourself or one ally who is also finishing a respite to gain the benefit of a divine ritual. The chosen character gains a bonus to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose yourself or one ally who is also finishing a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to gain the benefit of a divine ritual. The chosen character gains a bonus to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) equal to your level that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Sanctified Weapon
 
-As a respite activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another respite.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can bless a weapon. Any creature who wields the weapon gains a +1 bonus to rolled damage with abilities that use the weapon. This benefit lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Healing Grace
@@ -6526,7 +6526,7 @@ Choose one of the following triggered actions. (*Quick Build:* [Word of Guidance
 <!-- @type: feature -->
 #### Prayer
 
-Your god answers a prayer with enhancements to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/conduit-ward) below) by praying to your god as a respite activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.conduit.level-1/prayer-of-distance).)
+Your god answers a prayer with enhancements to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/conduit-ward) below) by praying to your god as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.conduit.level-1/prayer-of-distance).)
 
 <!-- @type: feature -->
 ##### Prayer of Destruction
@@ -6548,7 +6548,7 @@ If you have a kit, you can't take this blessing.
 <!-- @type: feature -->
 ##### Prayer of Speed
 
-Your god blesses your flesh and infuses it with divine quickness. You gain a +1 bonus to speed and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
+Your god blesses your flesh and infuses it with divine quickness. You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### Prayer of Steel
@@ -6558,7 +6558,7 @@ Your god fills your body with the light of creation, making you harder to hurt a
 <!-- @type: feature -->
 #### Conduit Ward
 
-Your god grants you a ward that protects you from the faithless. Choose one of the following wards. You can change your ward along with your prayer (see Prayer above) by praying to your god as a respite activity. (*Quick Build:* [Bastion Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/bastion-ward).)
+Your god grants you a ward that protects you from the faithless. Choose one of the following wards. You can change your ward along with your prayer (see Prayer above) by praying to your god as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Bastion Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/bastion-ward).)
 
 <!-- @type: feature -->
 ##### Bastion Ward
@@ -6940,7 +6940,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > - **≤11:** 4 + I holy damage; P < WEAK, before taking damage, the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a target you choose
 > - **12-16:** 7 + I holy damage; P < AVERAGE, before taking damage, the target uses an ability of your choice and you choose any targets for that ability
-> - **17+:** 11 + I holy damage; P < STRONG, before taking damage, the target shifts up to their speed to a location you choose, uses an ability of your choice, and you choose any targets for that ability
+> - **17+:** 11 + I holy damage; P < STRONG, before taking damage, the target shifts up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) to a location you choose, uses an ability of your choice, and you choose any targets for that ability
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Morning Light (5 Piety)
@@ -6983,7 +6983,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|-------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self and one ally** |
 > 
-> **Effect:** Until the end of the encounter or until the target is [dying](scc:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's turns, they gain a bonus to speed and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
+> **Effect:** Until the end of the encounter or until the target is [dying](scc:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's turns, they gain a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Reap (5 Piety)
@@ -7052,9 +7052,9 @@ As a 3rd-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 <!-- @type: feature -->
 #### Minor Miracle
 
-As a respite activity, you can perform a religious ritual and beseech the gods to restore a dead creature to life. You must have at least half the creature's remains, and they must have died within the last 24 hours from an effect that isn't age related. The creature's soul must be willing to return to life for the ritual to work. If they are not willing, you instinctively understand that as you start the respite activity and can cease it immediately.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can perform a religious ritual and beseech the gods to restore a dead creature to life. You must have at least half the creature's remains, and they must have died within the last 24 hours from an effect that isn't age related. The creature's soul must be willing to return to life for the ritual to work. If they are not willing, you instinctively understand that as you start the [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity and can cease it immediately.
 
-A creature with a willing soul returns to life at the end of the respite with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and half their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). You regain only half your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) at the end of the respite.
+A creature with a willing soul returns to life at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and half their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). You regain only half your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### 7-Piety Ability
@@ -7213,19 +7213,19 @@ As a maneuver, you make your body shine brightly, illuminating your space and ea
 
 ###### Oracular Warning
 
-Each time you finish a respite, you can share the vague dreams of the future granted to you by the gods with allies who finished the respite with you. These premonitions help you and your allies stay alive, granting each of you [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + your level that lasts until you finish a respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can share the vague dreams of the future granted to you by the gods with allies who finished the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you. These premonitions help you and your allies stay alive, granting each of you [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + your level that lasts until you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 ###### Seance
 
-You can commune with a network of spirits. As a respite activity, you speak the name of a creature who died and isn't undead. If the creature's spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn't free or willing to appear, you can speak another name or choose another respite activity.
+You can commune with a network of spirits. As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you speak the name of a creature who died and isn't undead. If the creature's spirit is free and willing to speak with you, they appear and you can have a conversation with them. During this time, the creature responds to you as they would have in life. If the creature isn't free or willing to appear, you can speak another name or choose another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 ###### Saint's Epiphany
 
-At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to the roll.
+At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to the roll.
 
 ###### Windwalk
 
-While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can [fly](scc:mcdm.heroes.v1/movement/fly). If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to speed while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
+While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can [fly](scc:mcdm.heroes.v1/movement/fly). If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
 
 ###### Wode Road
 
@@ -7574,7 +7574,7 @@ You can maintain bonds with up to three willing creatures using your Invocation 
 <!-- @type: feature -->
 ##### Divine Quartermaster
 
-Each time you finish a respite, you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another respite or it is consumed.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a treasure with a project goal equal to 50 times your level or less. You gain a divine version of this treasure that lasts until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite) or it is consumed.
 
 <!-- @type: feature -->
 ##### Font of Grace
@@ -7594,15 +7594,15 @@ Sun infuses your body. Whenever you use an ability to deal rolled damage to anot
 <!-- @type: feature -->
 ##### Nature's Bounty
 
-When you finish a respite, you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
+When you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
 
 - Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) each time.
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
-- Each creature gains a +1 bonus to speed.
+- Each creature gains a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 - Each creature gains a +1 bonus to saving throws.
 - Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence other creatures.
 
-Each benefit lasts until the creature who gains it finishes another respite.
+Each benefit lasts until the creature who gains it finishes another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Thunderstruck
@@ -7623,7 +7623,7 @@ You have the following ability.
 > |--------------------|------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -7640,7 +7640,7 @@ When an ally within 10 squares takes damage that would leave them [dying](scc:mc
 <!-- @type: feature -->
 ##### Your Triumphs Are Remembered
 
-The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a respite, you and any other heroes who rested with you regain 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to XP. This [Victory](scc:mcdm.heroes.v1/rule.resource/victories) isn't converted into XP at the end of a subsequent respite.
+The gods allow you and your companions to bask in the glory of past successes. Whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you and any other heroes who rested with you regain 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) after your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) are converted to [XP](scc:mcdm.heroes.v1/rule.resource/experience). This [Victory](scc:mcdm.heroes.v1/rule.resource/victories) isn't converted into [XP](scc:mcdm.heroes.v1/rule.resource/experience) at the end of a subsequent [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -7720,7 +7720,7 @@ As a 9th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 <!-- @type: feature -->
 #### Faith's Sword
 
-Each time you finish a respite, you can choose a willing hero ally who finished the respite with you. That ally gains the benefits of your [Burgeoning Saint](scc:mcdm.heroes.v1/feature.conduit.level-6/burgeoning-saint) feature until you finish another respite. Additionally, you can spend piety as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to give the hero 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) for every 2 piety spent.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a willing hero ally who finished the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you. That ally gains the benefits of your [Burgeoning Saint](scc:mcdm.heroes.v1/feature.conduit.level-6/burgeoning-saint) feature until you finish another [respite](scc:mcdm.heroes.v1/rule.resource/respite). Additionally, you can spend piety as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to give the hero 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) for every 2 piety spent.
 
 <!-- @type: feature -->
 #### Ordained
@@ -7791,7 +7791,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|----------------:|
 > | **📏 Ranged 10**   |  **🎯 Special** |
 > 
-> **Effect:** You conjure a [size](scc:mcdm.heroes.v1/rule.character/size) 4 dragon that appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The dragon has speed 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), [stability](scc:mcdm.heroes.v1/rule.character/stability) 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
+> **Effect:** You conjure a [size](scc:mcdm.heroes.v1/rule.character/size) 4 dragon that appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The dragon has [speed](scc:mcdm.heroes.v1/rule.character/speed) 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), [stability](scc:mcdm.heroes.v1/rule.character/stability) 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
 > On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 cube within 1 square of them. Make the following [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy in the area.
 > 
@@ -7801,7 +7801,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **12-16:** 9 fire damage
 > - **17+:** 12 fire damage
 > 
-> Additionally, you can use a maneuver to move the dragon up to their speed, or to make a melee weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with their claw against an adjacent creature or object. The dragon can also make this [strike](scc:mcdm.heroes.v1/rule.combat/strike) as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+> Additionally, you can use a maneuver to move the dragon up to their [speed](scc:mcdm.heroes.v1/rule.character/speed), or to make a melee weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with their claw against an adjacent creature or object. The dragon can also make this [strike](scc:mcdm.heroes.v1/rule.combat/strike) as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7929,9 +7929,9 @@ As a 10th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the follow
 <!-- @type: feature -->
 #### Avatar
 
-You are now an [avatar](scc:mcdm.heroes.v1/feature.conduit.level-10/avatar) of your god! When you use your Prayer feature, you can be affected by up to three prayers at once, and you can change all those prayers and your ward as a respite activity. You can also use a maneuver to activate one of your domain effects (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.conduit.level-1/domain-piety-and-effects)) without needing to pray.
+You are now an [avatar](scc:mcdm.heroes.v1/feature.conduit.level-10/avatar) of your god! When you use your Prayer feature, you can be affected by up to three prayers at once, and you can change all those prayers and your ward as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. You can also use a maneuver to activate one of your domain effects (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.conduit.level-1/domain-piety-and-effects)) without needing to pray.
 
-Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
+Additionally, whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your [respite](scc:mcdm.heroes.v1/rule.resource/respite), you and your allies can appear at any location in the timescape where someone worships your deity.
 
 <!-- @type: feature -->
 #### Characteristic Increase
@@ -7941,7 +7941,7 @@ Your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score increases to
 <!-- @type: feature -->
 #### Divine Power
 
-You have an epic resource called [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power). Each time you finish a respite, you gain [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) equal to the XP you gain. You can spend [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) on your abilities as if it were piety.
+You have an epic resource called [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) on your abilities as if it were piety.
 
 Additionally, you can spend [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) as if it were piety to use any [conduit](scc:mcdm.heroes.v1/class/conduit) abilities you don't have, as the gods answer your prayers with temporary and unique gifts. If you use a [conduit](scc:mcdm.heroes.v1/class/conduit) ability you don't have that usually costs no piety, you must spend 1 [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) to use it.
 
@@ -8021,7 +8021,7 @@ As a 1st-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 
 Through your studies, you know and can manipulate the seven primal elements of the timescape:
 
-- **Air** is the element of movement. Air abilities allow you to manipulate speed, quickness, flight, and breath.
+- **Air** is the element of movement. Air abilities allow you to manipulate [speed](scc:mcdm.heroes.v1/rule.character/speed), quickness, flight, and breath.
 - **Earth** is the element of permanence. Earth abilities bolster your body and grant the power to permanently create and shape physical terrain.
 - **Fire** is the element of destruction. Fire abilities devastate enemies and melt objects to slag.
 - **Green** is the element of creation and growth. Green abilities make and manipulate plants, fungi, and other forms of life to hamper foes and nourish your allies.
@@ -8066,7 +8066,7 @@ You lose any remaining essence at the end of the encounter.
 
 ##### Essence Outside of Combat
 
-Though you can't gain essence outside of combat, you can use your heroic abilities and effects that cost essence without spending it. Whenever you use an ability or effect outside of combat that costs essence, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain essence outside of combat, you can use your heroic abilities and effects that cost essence without spending it. Whenever you use an ability or effect outside of combat that costs essence, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use a persistent ability outside of combat (see [Persistent Magic](scc:mcdm.heroes.v1/feature.elementalist.level-1/persistent-magic) below), you can maintain it for a number of rounds equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -8275,7 +8275,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 <!-- @type: feature -->
 #### Enchantment
 
-You weave an elemental [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) into your body that enhances your statistics. Choose one of the following enchantments. You can change your [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) and ward (see [Elementalist Ward](scc:mcdm.heroes.v1/feature.elementalist.level-1/elementalist-ward) below) by performing a complex ritual as a respite activity. (*Quick Build:*  [Enchantment of Destruction](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment-of-destruction).)
+You weave an elemental [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) into your body that enhances your statistics. Choose one of the following enchantments. You can change your [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) and ward (see [Elementalist Ward](scc:mcdm.heroes.v1/feature.elementalist.level-1/elementalist-ward) below) by performing a complex ritual as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:*  [Enchantment of Destruction](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment-of-destruction).)
 
 <!-- @type: feature -->
 ##### Enchantment of Battle
@@ -8287,7 +8287,7 @@ If you have a kit, you can't take this [enchantment](scc:mcdm.heroes.v1/feature.
 <!-- @type: feature -->
 ##### Enchantment of Celerity
 
-You gain a +1 bonus to speed and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
+You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 ##### Enchantment of Destruction
@@ -8307,7 +8307,7 @@ You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and th
 <!-- @type: feature -->
 #### Elementalist Ward
 
-You create an invisible elemental ward that protects you. Choose one of the following wards. You can change your ward and [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) (see above) by performing a complex ritual as a respite activity. (*Quick Build:*  [Ward of Surprising Reactivity](scc:mcdm.heroes.v1/feature.elementalist.level-1/ward-of-surprising-reactivity).)
+You create an invisible elemental ward that protects you. Choose one of the following wards. You can change your ward and [enchantment](scc:mcdm.heroes.v1/feature.elementalist.level-1/enchantment) (see above) by performing a complex ritual as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:*  [Ward of Surprising Reactivity](scc:mcdm.heroes.v1/feature.elementalist.level-1/ward-of-surprising-reactivity).)
 
 <!-- @type: feature -->
 ##### Ward of Delightful Consequences
@@ -8661,14 +8661,14 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 
 ###### Green Animal Forms Table
 
-| Animal Type         | Level | [Temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) | Speed         | [Size](scc:mcdm.heroes.v1/rule.character/size) | [Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus | Melee Damage Bonus | Special                                                                                                                                                                                                                                                                         |
+| Animal Type         | Level | [Temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) | [Speed](scc:mcdm.heroes.v1/rule.character/speed)         | [Size](scc:mcdm.heroes.v1/rule.character/size) | [Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus | Melee Damage Bonus | Special                                                                                                                                                                                                                                                                         |
 |---------------------|-------|-------------------|---------------|------|-----------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Canine              | 2nd   | 5                 | 7             | 1M   | +0              | +1/+1/+1           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that involve smell.                                                                                                                                                                                                                                   |
 | Fish                | 2nd   | 0                 | 5 (swim only) | 1T   | +0              | +0/+0/+0           | You can breathe in water but can't breathe outside of it.                                                                                                                                                                                                                       |
 | Rodent              | 2nd   | 0                 | 5 (climb)     | 1T   | +0              | +0/+0/+0           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that involve smell.                                                                                                                                                                                                                                   |
 | Bird                | 3rd   | 0                 | 5 ([fly](scc:mcdm.heroes.v1/movement/fly))       | 1T   | +0              | +0/+0/+0           | -                                                                                                                                                                                                                                                                               |
 | Great cat           | 3rd   | 5                 | 6 (climb)     | 2    | +0              | +1/+1/+1           | As a maneuver, you can jump up to 3 squares in any direction. If you land on<br>an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, that enemy is [knocked prone](scc:mcdm.heroes.v1/condition/prone), and you can<br>make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them (no action required).                                                       |
-| Giant frog          | 4th   | 5                 | 5 (swim)      | 2    | +0              | +0/+0/+0           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 3. When you take the Advance<br>move action, you can high jump or long jump up to half your speed. This<br>jump can allow you to move more squares than your speed.                                                              |
+| Giant frog          | 4th   | 5                 | 5 (swim)      | 2    | +0              | +0/+0/+0           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 3. When you take the Advance<br>move action, you can high jump or long jump up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed). This<br>jump can allow you to move more squares than your [speed](scc:mcdm.heroes.v1/rule.character/speed).                                                              |
 | Horse               | 4th   | 5                 | 8             | 2    | +1              | +0/+0/+0           | You can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a maneuver. You can't use two Charge<br>main actions on the same turn.                                                                                                                                                                    |
 | Mohler              | 4th   | 0                 | 7 ([burrow](scc:mcdm.heroes.v1/movement/burrow))    | 1S   | +1              | +0/+0/+0           | Your melee [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +1 bonus.                                                                                                                                                                                                                                           |
 | Bear                | 5th   | 10                | 5 (climb)     | 2    | +1              | +2/+2/+2           | Your melee [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +1 bonus.                                                                                                                                                                                                                                           |
@@ -8676,7 +8676,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Giant<br>salamander | 6th   | 5                 | 5             | 1L   | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deals fire damage. Additionally, you have fire immunity<br>3.                                                                                                                                                                                            |
 | Giant spider        | 6th   | 0                 | 5 (climb)     | 2    | +0              | +0/+1/+2           | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against creatures you are hidden<br>from.                                                                                                                                                                                          |
 | Giant snake         | 7th   | 5                 | 5             | 3    | +0              | +0/+1/+2           | Whenever you obtain a tier 2 or tier 3 outcome on a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you<br>can automatically grab the target. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes 2<br>damage at the start of each of their turns.                                                                      |
-| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
+| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed). This jump can allow you to move more squares<br>than your [speed](scc:mcdm.heroes.v1/rule.character/speed).                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an adjacent creature's melee ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
 | Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).                                                                                                                                                                                                                             |
 | Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
@@ -8800,7 +8800,7 @@ When you spend 1 uninterrupted minute in front of a fire, you can speak the name
 <!-- @type: feature -->
 ##### Distance Is Only Memory
 
-Each time you finish a respite, you can open a two-way portal that leads to any place you have previously been. You and your allies can pass through the portal, which remains open for 1 hour or until you dismiss it as a main action.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can open a two-way portal that leads to any place you have previously been. You and your allies can pass through the portal, which remains open for 1 hour or until you dismiss it as a main action.
 
 <!-- @type: feature -->
 ##### Earth Accepts Me
@@ -9124,7 +9124,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |--------------------------------------|------------------------:|
 > | **📏 Ranged 10**                     | **🎯 Self or one ally** |
 > 
-> **Effect:** The target has a +3 bonus to speed, they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Additionally, whenever the target gains their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), they gain 1 additional [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This effect lasts until the start of your next turn.
+> **Effect:** The target has a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Additionally, whenever the target gains their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), they gain 1 additional [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This effect lasts until the start of your next turn.
 > 
 > **Persistent 1:** The effect lasts until the start of your next turn.
 
@@ -9240,7 +9240,7 @@ Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.l
 
 Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) the first time you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your turn.
 
-Additionally, whenever you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature, you can select an additional [animal form](scc:mcdm.heroes.v1/complication/animal-form) and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest speed between the two animal forms and have all types of movement from both forms.
+Additionally, whenever you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature, you can select an additional [animal form](scc:mcdm.heroes.v1/complication/animal-form) and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest [speed](scc:mcdm.heroes.v1/rule.character/speed) between the two animal forms and have all types of movement from both forms.
 
 You can only combine animal forms whose levels add up to 12 or less. For example, you can combine a shark (8th level) with a horse (4th level), but you can't combine a shark with a bear (5th level).
 
@@ -9265,7 +9265,7 @@ You have the following ability.
 > |--------------------------|----------------:|
 > | **📏 Ranged 10**         |  **🎯 Special** |
 > 
-> **Effect:** A **source of earth** emerges from an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The source takes their turn immediately after you, moving up to their speed and either taking a main action or a maneuver. The source is dismissed at the start of your next turn.
+> **Effect:** A **source of earth** emerges from an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The source takes their turn immediately after you, moving up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and either taking a main action or a maneuver. The source is dismissed at the start of your next turn.
 > 
 > The source starts an encounter at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), but maintains their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) throughout the encounter, even if they are dismissed and you use this ability again. They can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) during the encounter. When the source's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is reduced to 0, you can't use this ability again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 > 
@@ -9277,7 +9277,7 @@ You have the following ability.
 >
 >|      Elemental      |           -            |      Level 8      |         BRUTE         |         EV -         |
 >|:-------------------:|:----------------------:|:-----------------:|:---------------------:|:--------------------:|
->|    **2**<br>[Size](scc:mcdm.heroes.v1/rule.character/size)    |     **6**<br>Speed     | **45**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **5**<br>[Stability](scc:mcdm.heroes.v1/rule.character/stability)   | **5**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
+>|    **2**<br>[Size](scc:mcdm.heroes.v1/rule.character/size)    |     **6**<br>[Speed](scc:mcdm.heroes.v1/rule.character/speed)     | **45**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **5**<br>[Stability](scc:mcdm.heroes.v1/rule.character/stability)   | **5**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
 >| **-**<br>Immunities | **[Burrow](scc:mcdm.heroes.v1/movement/burrow)**<br>Movement |                   | **-**<br>With Captain | **-**<br>Weaknesses  |
 >|   **+3**<br>[Might](scc:mcdm.heroes.v1/rule.character/might)   |   **+1**<br>[Agility](scc:mcdm.heroes.v1/rule.character/agility)    | **-5**<br>[Reason](scc:mcdm.heroes.v1/rule.character/reason)  |  **-5**<br>[Intuition](scc:mcdm.heroes.v1/rule.character/intuition)  |  **-3**<br>[Presence](scc:mcdm.heroes.v1/rule.character/presence)  |
 >
@@ -9451,7 +9451,7 @@ As a 10th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain 
 <!-- @type: feature -->
 #### Breath
 
-You have an epic resource called breath. Each time you finish a respite, you gain breath equal to the XP you gain. You can spend any number of breath to gain essence (no action required). When you do, 1 breath becomes 3 essence.
+You have an epic resource called breath. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain breath equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend any number of breath to gain essence (no action required). When you do, 1 breath becomes 3 essence.
 
 Breath remains until you convert it to essence.
 
@@ -9484,7 +9484,7 @@ You become the embodiment of the element of your chosen specialization. Whenever
 
 You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5.
 
-Additionally, as a respite activity, you can shape the mundane earth around you in a 1-mile radius. You can open sinkholes, form mountains, level mundane structures or whole settlements, create canyons, raise islands or sink them in the sea, and perform similar feats. You can't use this respite activity if another creature within 1 mile is already using it. Once you use this respite activity, you can't use it again for 10 days.
+Additionally, as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can shape the mundane earth around you in a 1-mile radius. You can open sinkholes, form mountains, level mundane structures or whole settlements, create canyons, raise islands or sink them in the sea, and perform similar feats. You can't use this [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity if another creature within 1 mile is already using it. Once you use this [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can't use it again for 10 days.
 
 <!-- @type: feature -->
 ##### Master of Fire
@@ -9496,9 +9496,9 @@ Additionally, your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.e
 <!-- @type: feature -->
 ##### Master of Green
 
-The number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) you have increases by 2, and each time you finish a respite, you can grant each ally who finished the respite with you 2 additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Your allies' additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) disappear when they finish their next respite.
+The number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) you have increases by 2, and each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can grant each ally who finished the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you 2 additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Your allies' additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) disappear when they finish their next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
-Additionally, as a respite activity, you can perform a ritual that causes a fruit tree to spring from the ground, grow, mature, and produce 1d6 of a treasure called Life Fruit. You can use a respite activity to cause an existing tree to produce another 1d6 Life Fruit, but it does not grow these magic consumables on its own.
+Additionally, as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can perform a ritual that causes a fruit tree to spring from the ground, grow, mature, and produce 1d6 of a treasure called Life Fruit. You can use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to cause an existing tree to produce another 1d6 Life Fruit, but it does not grow these magic consumables on its own.
 
 As a maneuver, a creature can consume a Life Fruit or feed it to an adjacent willing ally. When a creature eats a Life Fruit, they restore all their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can end all conditions or effects on themself, and they can stand up if [prone](scc:mcdm.heroes.v1/condition/prone). Additionally, if the creature desires, their aging pauses for 1d10 years. If the creature eats additional Life Fruit and chooses to pause their aging, the effects don't stack. Instead, the creature gains the benefit from the Life Fruit that pauses their aging for the longest time.
 
@@ -9507,7 +9507,7 @@ As a maneuver, a creature can consume a Life Fruit or feed it to an adjacent wil
 
 Whenever you willingly move, you can [teleport](scc:mcdm.heroes.v1/movement/teleport).
 
-Additionally, your mind is connected to the mystery and helps you find the answers you seek. You no longer require project sources for research projects. Whenever you use a respite activity to make a project roll for a research project, you automatically complete the project.
+Additionally, your mind is connected to the mystery and helps you find the answers you seek. You no longer require project sources for research projects. Whenever you use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to make a project roll for a research project, you automatically complete the project.
 
 <!-- @type: feature -->
 #### Perk
@@ -9602,7 +9602,7 @@ You lose any remaining ferocity at the end of the encounter.
 
 ##### Ferocity Outside of Combat
 
-Though you can't gain ferocity outside of combat, you can use your heroic abilities and effects that cost ferocity without spending it. Whenever you use an ability or effect outside of combat that costs ferocity, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain ferocity outside of combat, you can use your heroic abilities and effects that cost ferocity without spending it. Whenever you use an ability or effect outside of combat that costs ferocity, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited ferocity on its effect, such as [To the Uttermost End](scc:mcdm.heroes.v1/feature.ability.fury.level-1/to-the-uttermost-end), you can use it as if you had spent an amount of ferocity equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -9862,7 +9862,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > |------------------------|----------------:|
 > | **📏 Self; see below** |     **🎯 Self** |
 > 
-> **Effect:** You move up to your speed in a straight line, and enemy squares are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this movement. You can end this movement in a creature's space and move them to an adjacent unoccupied space. You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy whose space you move through.
+> **Effect:** You move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) in a straight line, and enemy squares are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this movement. You can end this movement in a creature's space and move them to an adjacent unoccupied space. You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy whose space you move through.
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
@@ -9981,7 +9981,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 <!-- @type: feature -->
 ##### Inescapable Wrath
 
-You have a bonus to speed equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+You have a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: feature -->
 ##### Tooth and Claw
@@ -10022,7 +10022,7 @@ Choose one of the following abilities.
 > |------------------------|-------------:|
 > | **📏 Self; see below** |  **🎯 Self** |
 > 
-> **Effect:** You move up to your speed in a straight line. During this movement, you can move through mundane structures, including walls, which are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. You automatically destroy each square of structure you move through and leave behind a square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+> **Effect:** You move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) in a straight line. During this movement, you can move through mundane structures, including walls, which are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. You automatically destroy each square of structure you move through and leave behind a square of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 > 
 > Additionally, you make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you move adjacent to during this movement.
 > 
@@ -10060,7 +10060,7 @@ Choose one of the following abilities.
 > |------------------------|----------------:|
 > | **📏 Self; see below** |     **🎯 Self** |
 > 
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed and make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets up to three enemies you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) and make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets up to three enemies you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
@@ -10433,7 +10433,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed.
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed).
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
@@ -10535,7 +10535,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 <!-- @type: feature -->
 ##### Menagerie
 
-You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features). During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to track another creature, you can roll three dice and choose which two to use.
+You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features). During a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose to swap your stormwight kit and still take another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to track another creature, you can roll three dice and choose which two to use.
 
 <!-- @type: feature -->
 ##### A Step Ahead
@@ -10600,7 +10600,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > |----------------------------------|----------------:|
 > | **📏 Self; see below**           |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. Each enemy you move adjacent to during this movement takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Then make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting). You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). Each enemy you move adjacent to during this movement takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Then make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting). You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -10616,7 +10616,7 @@ As a 9th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fea
 <!-- @type: feature -->
 #### Harbinger of the Primordial Chaos
 
-You can create a temporary source of elemental power as a respite activity. This source of elemental power lasts 24 hours after creation, and can be used to create a portal to Quintessence with your [Primordial Portal](scc:mcdm.heroes.v1/feature.fury.level-6/primordial-portal) feature. If you do so, the source of elemental power lasts as long as the portal is maintained in your network.
+You can create a temporary source of elemental power as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. This source of elemental power lasts 24 hours after creation, and can be used to create a portal to Quintessence with your [Primordial Portal](scc:mcdm.heroes.v1/feature.fury.level-6/primordial-portal) feature. If you do so, the source of elemental power lasts as long as the portal is maintained in your network.
 
 <!-- @type: feature -->
 #### 9th-Level Aspect Ability
@@ -10772,7 +10772,7 @@ The first time you take damage each combat round, you gain 3 ferocity instead of
 <!-- @type: feature -->
 #### Primordial Power
 
-You have an epic resource called [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power). Each time you finish a respite, you gain [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) equal to the XP you gain. You can spend [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) on your abilities as if it were ferocity.
+You have an epic resource called [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) on your abilities as if it were ferocity.
 
 Additionally, you can spend any amount of [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), ending one effect on you for each [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) spent.
 
@@ -10788,7 +10788,7 @@ You gain one skill of your choice.
 <!-- @type: feature-group | @id: stormwight-kits -->
 ### Stormwight Kits
 
-The stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspect) lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features) through play, changing them out during a respite as with any other kit (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
+The stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspect) lets you channel your ferocity into the form of an animal and grants you knowledge of one stormwight kit of your choice. You can master additional [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features) through play, changing them out during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) as with any other kit (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 <!-- @type: feature -->
 #### Kit Features
@@ -10936,7 +10936,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is fir
 ##### Kit Bonuses
 
 - **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
-- **Speed Bonus:** +3
+- **[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +3
 - **Melee Damage Bonus:** +2/+2/+2
 - **Disengage Bonus:** +1
 
@@ -10988,12 +10988,12 @@ You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes
 <!-- @type: feature -->
 ##### Animal Form: Rat
 
-While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Rat
 
-While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character/size) is your choice of 1S or 1M. At 4th level, you can automatically climb at full speed while moving.
+While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character/size) is your choice of 1S or 1M. At 4th level, you can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
 
 <!-- @type: feature -->
 ##### Primordial Storm: Rat Flood
@@ -11004,7 +11004,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is cor
 ##### Kit Bonuses
 
 - **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
-- **Speed Bonus:** +3
+- **[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +3
 - **Melee Damage Bonus:** +2/+2/+2
 - **Disengage Bonus:** +1
 
@@ -11056,12 +11056,12 @@ Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/kno
 <!-- @type: feature -->
 ##### Animal Form: Wolf
 
-While you are in your wolf form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1L, you have a +2 bonus to speed, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+While you are in your wolf form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1L, you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Wolf
 
-While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1L, you have a +2 bonus to speed, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). At 4th level, the first time you take hybrid form in an encounter, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
+While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1L, you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). At 4th level, the first time you take hybrid form in an encounter, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 
 <!-- @type: feature -->
 ##### Primordial Storm: Lightning Storm
@@ -11072,7 +11072,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is lig
 ##### Kit Bonuses
 
 - **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +9 per echelon
-- **Speed Bonus:** +2
+- **[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 - **Melee Damage Bonus:** +2/+2/+2
 - **Disengage Bonus:** +1
 
@@ -11188,7 +11188,7 @@ You lose any remaining discipline at the end of the encounter.
 
 ##### Discipline Outside of Combat
 
-Though you can't gain discipline outside of combat, you can use your heroic abilities and effects that cost discipline without spending it. Whenever you use an ability or effect outside of combat that costs discipline, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain discipline outside of combat, you can use your heroic abilities and effects that cost discipline without spending it. Whenever you use an ability or effect outside of combat that costs discipline, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited discipline on its effect, you can use it as if you had spent an amount of discipline equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). (Such abilities aren't part of the core rules for the [null](scc:mcdm.heroes.v1/class/null), but they might appear in future products.)
 
@@ -11300,12 +11300,12 @@ Additionally, as your discipline grows, your psionic potential is amplified, gra
 <!-- @type: feature -->
 #### Null Speed
 
-The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to speed and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
+The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature -->
 #### Psionic Augmentation
 
-Your training has turned your body into the perfect psionic weapon, shaping pathways in your mind that enhance your physical form. Choose one of the following augmentations. You can change your augmentation by undergoing a psionic meditation as a respite activity. (*Quick Build:* [Speed Augmentation](scc:mcdm.heroes.v1/feature.null.level-1/speed-augmentation).)
+Your training has turned your body into the perfect psionic weapon, shaping pathways in your mind that enhance your physical form. Choose one of the following augmentations. You can change your augmentation by undergoing a psionic meditation as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Speed Augmentation](scc:mcdm.heroes.v1/feature.null.level-1/speed-augmentation).)
 
 <!-- @type: feature -->
 ##### Density Augmentation
@@ -11320,7 +11320,7 @@ Your damage-dealing psionic abilities gain a +1 bonus to rolled damage.
 <!-- @type: feature -->
 ##### Speed Augmentation
 
-You gain a +1 bonus to speed and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
+You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 #### Psionic Martial Arts
@@ -11385,7 +11385,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > - **12-16:** 7 + A damage
 > - **17+:** 10 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed) before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Joint Lock
@@ -11487,7 +11487,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > - **12-16:** 10 + A damage
 > - **17+:** 13 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your speed before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike). Additionally, whenever an effect lets you make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use a signature ability, you can use this ability instead, paying its discipline cost as usual.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed) before or after you make this [strike](scc:mcdm.heroes.v1/rule.combat/strike). Additionally, whenever an effect lets you make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use a signature ability, you can use this ability instead, paying its discipline cost as usual.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Psychic Pulse (3 Discipline)
@@ -11515,7 +11515,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > - **12-16:** 8 + A damage
 > - **17+:** 12 + A damage
 >
-> **Effect:** Until the start of your next turn, whenever the target finishes moving or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. You must end this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
+> **Effect:** Until the start of your next turn, whenever the target finishes moving or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). You must end this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Stunning Blow (3 Discipline)
@@ -11630,7 +11630,7 @@ Your [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition) gr
 <!-- @type: feature -->
 ##### Entropic Adaptability
 
-You have cold immunity equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) related to cold and ice, and you can automatically climb at full speed while moving.
+You have cold immunity equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) related to cold and ice, and you can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
 
 <!-- @type: feature -->
 ##### Inertial Sink
@@ -11642,7 +11642,7 @@ Additionally, when you fall, you reduce the effective height of the fall by 5 sq
 <!-- @type: feature -->
 ##### Rapid Processing
 
-As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any respite, you can take an additional respite activity.
+As a maneuver, you can read an entire book or process a similar amount of information. Additionally, during any [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can take an additional [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature -->
 #### 2nd-Level Tradition Ability
@@ -11927,7 +11927,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** You jump up to your speed without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
+> **Effect:** You jump up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Synaptic Reset (9 Discipline)
@@ -11989,7 +11989,7 @@ Choose one of the following abilities.
 > |----------------------------|----------------:|
 > | **📏 Self; see below**     |     **🎯 Self** |
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed, and squares occupied by enemies or objects are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this [shift](scc:mcdm.heroes.v1/movement/shifting). You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you moved through during this [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed), and squares occupied by enemies or objects are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this [shift](scc:mcdm.heroes.v1/movement/shifting). You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you moved through during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -12272,7 +12272,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
 > ###### Time Loop (11 Discipline)
 >
-> *You show shadows what true speed is.*
+> *You show shadows what true [speed](scc:mcdm.heroes.v1/rule.character/speed) is.*
 >
 > | **Psionic** | **Free triggered** |
 > |-------------|-------------------:|
@@ -12377,14 +12377,14 @@ When you gain discipline at the start of each of your turns during combat, you g
 <!-- @type: feature -->
 #### Manifold Resonance
 
-Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a respite, you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
+Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
 
 Whenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your [Psi Boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) feature to that ability. Additionally, you and allies in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability ignore [banes](scc:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane) on your [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: feature -->
 #### Order
 
-You have an epic resource called order. Each time you finish a respite, you gain order equal to the XP you gain. You can spend order on your abilities as if it were discipline.
+You have an epic resource called order. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain order equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend order on your abilities as if it were discipline.
 
 At the start of a combat encounter, you can spend 1 order to increase the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) by 1 until the end of the encounter.
 
@@ -12482,7 +12482,7 @@ You lose any remaining insight at the end of the encounter.
 
 ##### Insight Outside of Combat
 
-Although you can't gain insight outside of combat, you can use your heroic abilities and effects that cost insight without spending it. Whenever you use an ability or effect outside of combat that costs insight, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Although you can't gain insight outside of combat, you can use your heroic abilities and effects that cost insight without spending it. Whenever you use an ability or effect outside of combat that costs insight, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited insight on its effect, such as [Black Ash Teleport](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport), you can use it as if you had spent an amount of insight equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -12771,7 +12771,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > - **12-16:** 8 + A damage
 > - **17+:** 11 + A damage
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed, dividing that movement before or after your [strike](scc:mcdm.heroes.v1/rule.combat/strike) as desired.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed), dividing that movement before or after your [strike](scc:mcdm.heroes.v1/rule.combat/strike) as desired.
 
 <!-- @type: ability | @cost: 3 Insight -->
 > ###### Two Throats at Once (3 Insight)
@@ -12816,7 +12816,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > |------------------------|----------------:|
 > | **📏 Self; see below** |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed and make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets up to three enemies who came adjacent to you during the move.
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) and make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets up to three enemies who came adjacent to you during the move.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -13154,7 +13154,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 <!-- @type: feature -->
 ##### Harlequin Gambit
 
-Whenever you reduce an adjacent non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your speed.
+Whenever you reduce an adjacent non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 If the creature is the same [size](scc:mcdm.heroes.v1/rule.character/size) as you, you can disguise yourself as them using [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) without spending insight. If you do, while [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) is active, the creature's body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature's body, it ends for both.
 
@@ -13254,7 +13254,7 @@ You gain one perk of your choice.
 
 As a maneuver, you lose control of yourself, becoming a shadow creature dripping with ash. This transformation lasts until the end of the encounter, until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:
 
-- You can automatically climb at full speed while moving.
+- You can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
 - Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score the first time you pass through their space on a turn.
 - If you end your turn with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
 - You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns.
@@ -13331,7 +13331,7 @@ Choose one of the following abilities.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
-> - **≤11:** The creature's speed is increased by 2 until the end of the encounter.
+> - **≤11:** The creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) is increased by 2 until the end of the encounter.
 > - **12-16:** The creature can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of the encounter.
 > - **17+:** The creature turns invisible until the end of their next turn.
 
@@ -13363,7 +13363,7 @@ Choose one of the following abilities.
 >
 > - **≤11:** 2 damage; if the target has R < WEAK, before the damage is resolved, they make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > - **12-16:** 5 damage; if the target has R < AVERAGE, before the damage is resolved, they use a main action ability of your choice.
-> - **17+:** 7 damage; if the target has R < STRONG, before the damage is resolved, they can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed and use a main action ability of your choice.
+> - **17+:** 7 damage; if the target has R < STRONG, before the damage is resolved, they can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and use a main action ability of your choice.
 >
 > **Effect:** You choose the new targets for the original target's [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or ability. Additionally, if you are hidden or disguised, using this ability doesn't cause you to be revealed.
 
@@ -13543,7 +13543,7 @@ Choose one of the following abilities.
 > |--------------------------|----------------:|
 > | **📏 Self; see below**   |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to twice your speed, making one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each creature you come adjacent to during the [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to twice your [speed](scc:mcdm.heroes.v1/rule.character/speed), making one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each creature you come adjacent to during the [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -13619,7 +13619,7 @@ Choose one of the following abilities.
 > |-------------------|------------------------:|
 > | **📏 Ranged 10**  |     **🎯 One creature** |
 >
-> **Effect:** Until the end of the encounter, you gain the target's damage immunities and speed (if they are better than yours), and can use any types of movement they can use. You can also use the target's signature ability, using their bonus for the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> **Effect:** Until the end of the encounter, you gain the target's damage immunities and [speed](scc:mcdm.heroes.v1/rule.character/speed) (if they are better than yours), and can use any types of movement they can use. You can also use the target's signature ability, using their bonus for the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: ability | @cost: 11 Insight -->
 > ###### It Was Me All Along (11 Insight)
@@ -13678,7 +13678,7 @@ While you are in your [umbral form](scc:mcdm.heroes.v1/feature.shadow.level-6/um
 <!-- @type: feature -->
 #### Subterfuge
 
-You have an epic resource called [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge). Each time you finish a respite, you gain [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) equal to the XP you gain. You can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) on your abilities as if it were insight.
+You have an epic resource called [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) on your abilities as if it were insight.
 
 Additionally, you can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) to take additional maneuvers on your turn. You can use one maneuver for each [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) you spend.
 
@@ -13763,7 +13763,7 @@ You lose any remaining focus at the end of the encounter.
 
 ##### Focus Outside of Combat
 
-Though you can't gain focus outside of combat, you can use your heroic abilities and effects that cost focus without spending it. Whenever you use an ability or effect outside of combat that costs focus, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain focus outside of combat, you can use your heroic abilities and effects that cost focus without spending it. Whenever you use an ability or effect outside of combat that costs focus, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited focus on its effect, you can use it as if you had spent an amount of focus equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). (Such abilities aren't part of the core rules for the [tactician](scc:mcdm.heroes.v1/class/tactician), but they might appear in future products.)
 
@@ -13799,9 +13799,9 @@ At the Director's discretion, you and your allies can use skills from the intrig
 <!-- @type: feature -->
 ##### Studied Commander
 
-Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
+Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to complete. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
 
-Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) as a respite activity. The following [test](scc:mcdm.heroes.v1/rule.test/test) outcomes apply to a combat encounter:
+Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. The following [test](scc:mcdm.heroes.v1/rule.test/test) outcomes apply to a combat encounter:
 
 - **≤11:** The Director tells you the number of creatures in the encounter.
 - **12-16:** The Director tells you the number and level of the creatures in the encounter.
@@ -13878,7 +13878,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 
 You have drilled with a broad array of arms and armor, and have developed techniques to optimize their use. You can use and gain the benefits of two kits, including both their signature abilities. Whenever you would choose or change one kit, you can choose or change your second kit as well. See Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits) for more information. (*Quick Build:* [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor), Sniper.)
 
-If both kits grant you the same benefit, you take one or the other and can't change your choice until you finish a respite. (This usually means taking the higher of two bonuses.)
+If both kits grant you the same benefit, you take one or the other and can't change your choice until you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite). (This usually means taking the higher of two bonuses.)
 
 For example, if you take the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) and [Sniper](scc:mcdm.heroes.v1/kit/sniper) kits, you gain the following benefits overall:
 
@@ -13886,7 +13886,7 @@ For example, if you take the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armo
 - [Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus: +1
 - Melee Damage Bonus: +2/+2/+2
 - Ranged Damage Bonus: +0/+0/+4
-- Speed Bonus: +1
+- [Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus: +1
 - Ranged [Distance](scc:mcdm.heroes.v1/rule.combat/distance) Bonus: +10
 - Disengage Bonus: +1
 - You can use the [Patient Shot](scc:mcdm.heroes.v1/feature.ability.sniper/patient-shot) and [Protective Attack](scc:mcdm.heroes.v1/feature.ability.shining-armor/protective-attack) signature abilities.
@@ -14010,7 +14010,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > |------------------|---------------------------:|
 > | **📏 Ranged 10** | **🎯 Self and two allies** |
 >
-> **Effect:** Each target can move up to their speed.
+> **Effect:** Each target can move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 <!-- @type: feature -->
 #### 5-Focus Ability
@@ -14111,7 +14111,7 @@ You have trained your squad to work together, stay silent, and wait for the oppo
 <!-- @type: feature -->
 ##### Melee Superiority
 
-After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's speed is reduced to 0 until the end of the current turn.
+After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 0 until the end of the current turn.
 
 **Mark Benefit:** When a creature marked by you attempts to move or [shift](scc:mcdm.heroes.v1/movement/shifting) within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can use a free triggered action and spend 2 focus to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that creature.
 
@@ -14146,7 +14146,7 @@ Choose one of the following abilities.
 > |---------------------------|----------------:|
 > | **📏 Self; see below**    |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other's spaces. The ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), and you can make the following weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 1 against a creature.
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other's spaces. The ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), and you can make the following weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) with a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 1 against a creature.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -14203,7 +14203,7 @@ Choose one of the following abilities.
 >
 > **Trigger:** The target deals damage to an ally.
 >
-> **Effect:** You move up to your speed toward the triggering ally, ending this movement adjacent to them or in the nearest square if you can't reach an adjacent square. The triggering ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) for each enemy you came adjacent to during the move. You then make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against the target.
+> **Effect:** You move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) toward the triggering ally, ending this movement adjacent to them or in the nearest square if you can't reach an adjacent square. The triggering ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) for each enemy you came adjacent to during the move. You then make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against the target.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -14347,7 +14347,7 @@ Your expertise in history and lore allows you and your allies to outthink rivals
 <!-- @type: feature -->
 ##### Leave No Trace
 
-You and any ally within 10 squares of you can move at full speed while sneaking. Additionally, enemies within 10 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you or your allies while any of you are hidden.
+You and any ally within 10 squares of you can move at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while sneaking. Additionally, enemies within 10 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you or your allies while any of you are hidden.
 
 <!-- @type: feature -->
 ##### Shake It Off
@@ -14494,7 +14494,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 2 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** You mark two enemies within 10 squares of you. Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed. You and each target gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** You mark two enemies within 10 squares of you. Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You and each target gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 ##### 6th-Level Vanguard Abilities
 
@@ -14503,7 +14503,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
 > ###### Instant Retaliation (9 Focus)
 >
-> *You [parry](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/parry) with almost supernatural speed.*
+> *You [parry](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/parry) with almost supernatural [speed](scc:mcdm.heroes.v1/rule.character/speed).*
 >
 > | **Melee, Weapon** | **Free triggered** |
 > | ------------------------------------|-------------------:|
@@ -14582,12 +14582,12 @@ You have advanced your skills in subterfuge, now directing full battlefield stra
 <!-- @type: feature -->
 ##### Grand Strategy
 
-You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.
+You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the lore skill group. Additionally, when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a project roll for a research project in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature -->
 ##### Shock and Awe
 
-You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.
+You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a project roll for a crafting project in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -14818,7 +14818,7 @@ Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Reason](scc:mcdm.hero
 <!-- @type: feature -->
 #### Command
 
-You have an epic resource called command. Each time you finish a respite, you gain command equal to the XP you gain. You can spend command on your abilities as if it were focus.
+You have an epic resource called command. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain command equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend command on your abilities as if it were focus.
 
 Additionally, whenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 command as a free triggered action to increase the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) outcome for that target by one tier. Whenever an enemy marked by you makes an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll), you can spend 1 command as a free triggered action to decrease the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) outcome by one tier.
 
@@ -14934,7 +14934,7 @@ You lose any remaining clarity or reset any negative clarity at the end of the e
 
 ##### Clarity Outside of Combat
 
-Though you can't gain clarity outside of combat, you can use your heroic abilities and effects that cost clarity without spending it. Whenever you use an ability or effect outside of combat that costs clarity, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain clarity outside of combat, you can use your heroic abilities and effects that cost clarity without spending it. Whenever you use an ability or effect outside of combat that costs clarity, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 Additionally, whenever you use any ability or effect that costs clarity within 1 minute of using another such ability, you take 1d6 damage and incur any strain effect from using the new ability. Whenever you use an ability with a strain effect outside of combat, you can take 1d6 damage and incur the effect if you don't incur it for other reasons.
 
@@ -14965,7 +14965,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 <!-- @type: feature -->
 #### Psionic Augmentation
 
-Through meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation and ward (see [Talent Ward](scc:mcdm.heroes.v1/feature.talent.level-1/talent-ward) below) by undergoing a psionic meditation as a respite activity. (*Quick Build:*  [Force Augmentation](scc:mcdm.heroes.v1/feature.null.level-1/force-augmentation).)
+Through meditation, you create pathways in your mind that enhance your statistics. Choose one of the following augmentations. You can change your augmentation and ward (see [Talent Ward](scc:mcdm.heroes.v1/feature.talent.level-1/talent-ward) below) by undergoing a psionic meditation as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:*  [Force Augmentation](scc:mcdm.heroes.v1/feature.null.level-1/force-augmentation).)
 
 <!-- @type: feature -->
 ##### Battle Augmentation
@@ -14992,17 +14992,17 @@ Your damage-dealing psionic abilities gain a +1 bonus to rolled damage.
 <!-- @type: feature -->
 ##### Speed Augmentation
 
-You gain a +1 bonus to speed and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
+You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action.
 
 <!-- @type: feature -->
 #### Talent Ward
 
-Through meditation, you create a ward that protects you. Choose one of the following wards. You can change your ward and [psionic augmentation](scc:mcdm.heroes.v1/feature.null.level-1/psionic-augmentation) (see above) by undergoing a psionic meditation as a respite activity. (*Quick Build:* [Repulsive Ward](scc:mcdm.heroes.v1/feature.talent.level-1/repulsive-ward).)
+Through meditation, you create a ward that protects you. Choose one of the following wards. You can change your ward and [psionic augmentation](scc:mcdm.heroes.v1/feature.null.level-1/psionic-augmentation) (see above) by undergoing a psionic meditation as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Repulsive Ward](scc:mcdm.heroes.v1/feature.talent.level-1/repulsive-ward).)
 
 <!-- @type: feature -->
 ##### Entropy Ward
 
-Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and they can't use triggered actions until the end of their next turn.
+Your ward slows time for your enemies. Whenever a creature deals damage to you, their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and they can't use triggered actions until the end of their next turn.
 
 <!-- @type: feature -->
 ##### Repulsive Ward
@@ -15425,7 +15425,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > |--------------------------------|------------------------:|
 > | **📏 Ranged 10**               | **🎯 Self or one ally** |
 >
-> **Effect:** Until the start of your next turn, the target gains a +3 bonus to speed, and they have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.
+> **Effect:** Until the start of your next turn, the target gains a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), and they have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.
 >
 > **Strained:** You take 1d6 damage, and you can't use triggered actions (save ends).
 
@@ -15491,9 +15491,9 @@ Choose one of the following abilities.
 > - **12-16:** You target three creatures, one of which can be you.
 > - **17+:** You target four creatures, one of which can be you.
 >
-> **Effect:** Until the start of your next turn, each target gains a +5 bonus to speed, they can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed), and they can use an additional maneuver on their turn. If a target is already [dazed](scc:mcdm.heroes.v1/condition/dazed), that condition ends for them.
+> **Effect:** Until the start of your next turn, each target gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed), and they can use an additional maneuver on their turn. If a target is already [dazed](scc:mcdm.heroes.v1/condition/dazed), that condition ends for them.
 >
-> **Strained:** Your speed is halved until the end of the encounter.
+> **Strained:** Your [speed](scc:mcdm.heroes.v1/rule.character/speed) is halved until the end of the encounter.
 
 <!-- @type: ability | @cost: 5 Clarity -->
 > ###### Slow (5 Clarity)
@@ -15506,11 +15506,11 @@ Choose one of the following abilities.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
-> - **≤11:** The target's speed is halved (save ends), or if P < WEAK, the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
-> - **12-16:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), or if P < AVERAGE, the target's speed is 0 (save ends).
-> - **17+:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), or if P < STRONG, the target's speed is 0 (save ends).
+> - **≤11:** The target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is halved (save ends), or if P < WEAK, the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
+> - **12-16:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), or if P < AVERAGE, the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is 0 (save ends).
+> - **17+:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), or if P < STRONG, the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is 0 (save ends).
 >
-> **Effect:** A target can't use triggered actions while their speed is reduced this way.
+> **Effect:** A target can't use triggered actions while their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced this way.
 >
 > **Strained:** The [potency](scc:mcdm.heroes.v1/rule.character/potency) of this ability increases by 1 and you take 1d6 damage. At the start of each combat round while any target is affected by this ability, you take 1d6 damage. You can end the effect on all affected targets at any time (no action required).
 
@@ -15585,8 +15585,8 @@ Choose one of the following abilities.
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** The target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of your choice.
-> - **12-16:** The target shifts up to their speed and uses their signature ability against any enemies of your choice.
-> - **17+:** The target moves up to their speed and uses their signature ability against any enemies of your choice.
+> - **12-16:** The target shifts up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and uses their signature ability against any enemies of your choice.
+> - **17+:** The target moves up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and uses their signature ability against any enemies of your choice.
 >
 > **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect. However, you can move them to provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 >
@@ -15716,7 +15716,7 @@ You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.her
 <!-- @type: feature -->
 #### Suspensor Field
 
-You can [fly](scc:mcdm.heroes.v1/movement/fly). While [flying](scc:mcdm.heroes.v1/movement/fly), your [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased. If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to speed while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
+You can [fly](scc:mcdm.heroes.v1/movement/fly). While [flying](scc:mcdm.heroes.v1/movement/fly), your [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased. If you can already [fly](scc:mcdm.heroes.v1/movement/fly), you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) while [flying](scc:mcdm.heroes.v1/movement/fly) instead.
 
 If you are strained while [flying](scc:mcdm.heroes.v1/movement/fly) and are force moved, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +2 bonus.
 
@@ -15746,7 +15746,7 @@ Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) usi
 <!-- @type: feature -->
 ##### Distortion Temporal
 
-While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 aura. That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to speed until the end of the turn.
+While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 aura. That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the turn.
 
 <!-- @type: feature -->
 ##### Kinetic Amplifier
@@ -15937,7 +15937,7 @@ Choose one of the following abilities.
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** P < WEAK, the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the effect ends
-> - **12-16:** P < AVERAGE, the target's speed is 0 until the effect ends
+> - **12-16:** P < AVERAGE, the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is 0 until the effect ends
 > - **17+:** P < STRONG, the target is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the effect ends
 >
 > **Strained:** Any creature or object [force moved](scc:mcdm.heroes.v1/movement/forced-movement) in the area takes 2 corruption damage for each square of the area they enter. Creatures and objects [restrained](scc:mcdm.heroes.v1/condition/restrained) in the area can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You are [restrained](scc:mcdm.heroes.v1/condition/restrained) until the effect ends.
@@ -16030,7 +16030,7 @@ As a 7th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Ancestral Memory
 
-Each time you finish a respite, you can choose a number of skills you have up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next respite.
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a number of skills you have up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Cascading Strain
@@ -16078,7 +16078,7 @@ Your [talent tradition](scc:mcdm.heroes.v1/feature.talent.level-1/talent-traditi
 <!-- @type: feature -->
 ##### Doubling the Hours
 
-While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can undertake an additional respite activity during a respite.
+While you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can undertake an additional [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Levitation Field
@@ -16094,7 +16094,7 @@ You have the following ability.
 > |-------------------|-----------------------------:|
 > | **📏 3 burst**    | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) until the start of your next turn, and can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed. You can also [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. While [flying](scc:mcdm.heroes.v1/movement/fly), a target's [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased.
+> **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) until the start of your next turn, and can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You can also [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). While [flying](scc:mcdm.heroes.v1/movement/fly), a target's [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased.
 >
 > **Spend 5 Clarity:** The effects last for 1 hour instead.
 
@@ -16106,7 +16106,7 @@ Your mind can carry your body through tough times. You ignore [difficult terrain
 <!-- @type: feature -->
 ##### Mindlink
 
-During a respite, you can choose a number of creatures up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score who you have communicated with using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+During a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a number of creatures up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score who you have communicated with using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature -->
 #### Stasis Shield
@@ -16155,7 +16155,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 >
 > **Effect:** This ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against a target with a soul (see *Draw Steel: Monsters*). After you make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make before the end of the encounter.
 >
-> **Strained:** You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you and the target each have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends).
+> **Strained:** You feel dispirited until you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If you obtain a tier 3 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you and the target each have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends).
 
 <!-- @type: ability | @cost: 11 Clarity -->
 > ###### Mindwipe (11 Clarity)
@@ -16189,7 +16189,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 >
 > - The target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - The target gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and can end any effects on them that are ended by a saving throw or that end at the end of their turn.
-> - The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), and gains a +3 bonus to speed until the end of the encounter.
+> - The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), and gains a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the encounter.
 >
 > **Strained:** You and the target both permanently grow visibly younger (the equivalent of 20 [human](scc:mcdm.heroes.v1/ancestry/human) years, to the minimum of an 18-year-old). Additionally, you are [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
@@ -16385,7 +16385,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Vision
 
-You have an epic resource called vision. Each time you finish a respite, you gain vision equal to the XP you gain. You can spend vision on your abilities as if it were clarity.
+You have an epic resource called vision. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain vision equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend vision on your abilities as if it were clarity.
 
 Additionally, you can spend vision to use one additional psionic ability on your turn, provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.
 
@@ -16477,7 +16477,7 @@ You lose any remaining drama at the end of the encounter.
 
 ##### Drama Outside of Combat
 
-Though you can't gain drama outside of combat, you can use your heroic abilities and effects that cost drama without spending it. Whenever you use an ability or effect outside of combat that costs drama, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a respite.
+Though you can't gain drama outside of combat, you can use your heroic abilities and effects that cost drama without spending it. Whenever you use an ability or effect outside of combat that costs drama, you can't use that same ability or effect outside of combat again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 When you use an ability outside of combat that lets you spend unlimited drama on its effect, such as [Artful Flourish](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/artful-flourish), you can use it as if you had spent an amount of drama equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -16519,7 +16519,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area gains a +2 bonus to speed until the end of their turn.
+> **Effect:** While this performance is active, each target who starts their turn in the area gains a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their turn.
 
 <!-- @type: ability -->
 > ###### Revitalizing Limerick
@@ -16633,9 +16633,9 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You gain a +2 bonus to speed until the end of your turn. Additionally, the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make this turn can't have an outcome lower than tier 2.
+> **Effect:** You gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your turn. Additionally, the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make this turn can't have an outcome lower than tier 2.
 >
-> **Spend 1 Drama:** You gain a +4 bonus to speed instead.
+> **Spend 1 Drama:** You gain a +4 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) instead.
 
 <!-- @type: feature -->
 ##### Virtuoso Performances
@@ -16874,7 +16874,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > |---------------------------|-------------:|
 > | **📏 Self; see below**    |  **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). You make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16910,7 +16910,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to speed and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.
+> **Effect:** You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Flip the Script (5 Drama)
@@ -16964,12 +16964,12 @@ You have a specific manner that helps define your presence on the battlefield. C
 <!-- @type: feature -->
 ##### Allow Me to Introduce Tonight's Players
 
-Whenever you take the first turn in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed, and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the end of the combat round. Additionally, any surprised enemy is no longer surprised.
+Whenever you take the first turn in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed), and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the end of the combat round. Additionally, any surprised enemy is no longer surprised.
 
 <!-- @type: feature -->
 ##### Formal Introductions
 
-As a respite activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.
 
 The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). These [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of the encounter.
 
@@ -17240,7 +17240,7 @@ You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.her
 <!-- @type: feature -->
 #### Zeitgeist
 
-You always have your ear to the ground, your finger on the pulse. When you start or finish a respite, choose one of the following effects.
+You always have your ear to the ground, your finger on the pulse. When you start or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), choose one of the following effects.
 
 <!-- @type: feature -->
 ##### Foreshadowing
@@ -17254,12 +17254,12 @@ By bragging, intimidating, leading, or lying, you attempt to spread one piece of
 
 - **≤11:** Your information reaches no one.
 - **12-16:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger. You and each ally present when you make the [test](scc:mcdm.heroes.v1/rule.test/test) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) in that area until one of you spends a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- **17+:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger, plus the next closest such population. You and allies present for your [test](scc:mcdm.heroes.v1/rule.test/test) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made in those areas until you start your next respite.
+- **17+:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger, plus the next closest such population. You and allies present for your [test](scc:mcdm.heroes.v1/rule.test/test) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made in those areas until you start your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 ##### Latest Goss
 
-You can ask the Director for three rumors regarding the area you're in or an area you plan on entering before your next respite. One of the rumors can be false.
+You can ask the Director for three rumors regarding the area you're in or an area you plan on entering before your next [respite](scc:mcdm.heroes.v1/rule.resource/respite). One of the rumors can be false.
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -17340,7 +17340,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 <!-- @type: ability | @cost: 9 Drama -->
 > ###### Action Hero (9 Drama)
 >
-> *You wield your weapon at blistering speed, leaving everyone around you fighting for their lives.*
+> *You wield your weapon at blistering [speed](scc:mcdm.heroes.v1/rule.character/speed), leaving everyone around you fighting for their lives.*
 >
 > | **Area, Melee, Weapon** |               **Main action** |
 > |-------------------------|------------------------------:|
@@ -17450,7 +17450,7 @@ Choose one of the following abilities.
 > |-----------------|-----------------------------:|
 > | **📏 5 burst**  | **🎯 Each ally in the area** |
 >
-> **Effect:** Until the end of the encounter, each target gains the speed bonus, weapon [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus, disengage bonus, and [stability](scc:mcdm.heroes.v1/rule.character/stability) bonus of your currently equipped kit in addition to their own kit's bonuses.
+> **Effect:** Until the end of the encounter, each target gains the [speed](scc:mcdm.heroes.v1/rule.character/speed) bonus, weapon [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus, disengage bonus, and [stability](scc:mcdm.heroes.v1/rule.character/stability) bonus of your currently equipped kit in addition to their own kit's bonuses.
 
 ##### 6th-Level Duelist Abilities
 
@@ -17643,8 +17643,8 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 >
 > - The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score against any magic, psionic, or weapon ability.
 > - The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
-> - The target has a bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) and a penalty to speed equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
-> - The target has a bonus to speed and a penalty to [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
+> - The target has a bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) and a penalty to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
+> - The target has a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and a penalty to [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### The Show Must Go On (11 Drama)
@@ -17769,7 +17769,7 @@ Choose one of the following abilities.
 > - **12-16:** 11 sonic damage
 > - **17+:** 15 sonic damage
 >
-> **Effect:** Each creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus to speed until the end of their next turn. While under this effect, each target must use their full movement during their turn.
+> **Effect:** Each creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their next turn. While under this effect, each target must use their full movement during their turn.
 
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### Melt Their Faces (11 Drama)
@@ -17796,7 +17796,7 @@ As a 10th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the 
 <!-- @type: feature -->
 #### Applause
 
-You have an epic resource called [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause). Each time you finish a respite, you gain [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) equal to the XP you gain. You can spend [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) on your abilities as if it were drama.
+You have an epic resource called [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) on your abilities as if it were drama.
 
 Additionally, whenever you or a creature within 3 squares would obtain a failure or a tier 1 outcome on a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) to improve the outcome by 1 tier.
 
@@ -17815,7 +17815,7 @@ You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.troubadour.level-1/dram
 <!-- @type: feature -->
 #### Greatest of All Time
 
-Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [test](scc:mcdm.heroes.v1/rule.test/test). These effects last until you start your next respite.
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [test](scc:mcdm.heroes.v1/rule.test/test). These effects last until you start your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Perk
@@ -17834,7 +17834,7 @@ The knight in [shining armor](scc:mcdm.heroes.v1/kit/shining-armor). The [warrio
 
 ### Changing Your Kit
 
-Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
+Your choice of kit is always flexible, and your hero is never locked into a specific kit. If you want to change your kit, you can do so as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
 
 ### Kit Equipment
 
@@ -17914,11 +17914,11 @@ Whip weapons include the standard whip, spiked chains, flails, and any similarly
 
 When you find a supernatural treasure such as a magic sword, you can use the item as long as it's in one of your kit's equipment categories. A Blade of Quintessence is a medium weapon, so you can use it with the [Ranger](scc:mcdm.heroes.v1/kit/ranger) or [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kits. However, you can't use it with the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) or [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe) kits because those kits don't include medium weapons, meaning you haven't done the necessary preparations to use the weapon effectively. You can still swing a Blade of Quintessence around as an improvised weapon, but you don't get any of its bonuses or benefits.
 
-If you find a piece of equipment you really want to use that isn't part of your kit, you can always change your kit as a respite activity.
+If you find a piece of equipment you really want to use that isn't part of your kit, you can always change your kit as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 ### Kit Bonuses and Traits
 
-A kit can grant a bonus to your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), speed, and [stability](scc:mcdm.heroes.v1/rule.character/stability), as well as the damage and [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your weapon abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). (Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) has information on abilities, ability keywords, and more.)
+A kit can grant a bonus to your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [speed](scc:mcdm.heroes.v1/rule.character/speed), and [stability](scc:mcdm.heroes.v1/rule.character/stability), as well as the damage and [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your weapon abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). (Abilities in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) has information on abilities, ability keywords, and more.)
 
 #### Stamina Bonus
 
@@ -17926,7 +17926,7 @@ Your kit's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus is added to y
 
 #### Speed Bonus
 
-Your kit's speed bonus is added to your speed.
+Your kit's [speed](scc:mcdm.heroes.v1/rule.character/speed) bonus is added to your [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 #### Stability Bonus
 
@@ -17979,7 +17979,7 @@ You wear no armor and wield a bow.
 
 ##### Kit Bonuses
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Ranged Damage Bonus:** +2/+2/+2
 
@@ -18019,7 +18019,7 @@ You wear light armor and wield a medium weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +2
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus:** +1
 
@@ -18057,7 +18057,7 @@ You wear light armor and wield one or two light weapons.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +2
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 
 **Melee Damage Bonus:** +1/+1/+1
 
@@ -18097,7 +18097,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +2
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 
 **Melee Damage Bonus:** +2/+2/+2
 
@@ -18171,7 +18171,7 @@ You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +3
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +3
 
 **Melee Damage Bonus:** +2/+2/+2
 
@@ -18235,7 +18235,7 @@ You wear heavy armor and wield a heavy weapon.
 <!-- @type: kit | @id: panther -->
 #### Panther
 
-If you want a good balance of protection, speed, and damage, the [Panther](scc:mcdm.heroes.v1/kit/panther) kit is for you. This kit increases your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) not by wearing armor, but through the focused battle preparation of body and mind, letting you be fast and mobile while swinging a heavy weapon at your foes.
+If you want a good balance of protection, [speed](scc:mcdm.heroes.v1/rule.character/speed), and damage, the [Panther](scc:mcdm.heroes.v1/kit/panther) kit is for you. This kit increases your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) not by wearing armor, but through the focused battle preparation of body and mind, letting you be fast and mobile while swinging a heavy weapon at your foes.
 
 ##### Equipment
 
@@ -18245,7 +18245,7 @@ You wear no armor and wield a heavy weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus:** +1
 
@@ -18283,7 +18283,7 @@ You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +2
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus:** +1
 
@@ -18311,7 +18311,7 @@ You wear no armor and wield only your unarmed [strikes](scc:mcdm.heroes.v1/rule.
 <!-- @type: kit | @id: raider -->
 #### Raider
 
-The [Raider](scc:mcdm.heroes.v1/kit/raider) kit keeps you protected while granting you full mobility, providing a boost to speed and [distance](scc:mcdm.heroes.v1/rule.combat/distance) that lets you run around the battlefield like a Viking warrior.
+The [Raider](scc:mcdm.heroes.v1/kit/raider) kit keeps you protected while granting you full mobility, providing a boost to [speed](scc:mcdm.heroes.v1/rule.character/speed) and [distance](scc:mcdm.heroes.v1/rule.combat/distance) that lets you run around the battlefield like a Viking warrior.
 
 ##### Equipment
 
@@ -18321,7 +18321,7 @@ You wear light armor and wield a shield and a light weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Melee Damage Bonus:** +1/+1/+1
 
@@ -18363,7 +18363,7 @@ You wear medium armor and wield a bow and a medium weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Melee Damage Bonus:** +1/+1/+1
 
@@ -18403,7 +18403,7 @@ You wear light armor and wield a bow.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Ranged Damage Bonus:** +2/+2/+2
 
@@ -18441,7 +18441,7 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Melee Damage Bonus:** +2/+2/+2
 
@@ -18513,7 +18513,7 @@ You wear no armor and wield a bow.
 
 ##### Kit Bonuses
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **Ranged Damage Bonus:** +0/+0/+4
 
@@ -18553,7 +18553,7 @@ You wear light armor and wield a shield and a medium weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +6 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus:** +1
 
@@ -18591,7 +18591,7 @@ You wear light armor and wield a polearm.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +2
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +2
 
 **Melee Damage Bonus:** +1/+1/+1
 
@@ -18629,7 +18629,7 @@ You wear light armor and wield a medium weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +3 per echelon
 
-**Speed Bonus:** +3
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +3
 
 **Melee Damage Bonus:** +2/+2/+2
 
@@ -18703,7 +18703,7 @@ You wear heavy armor and wield a light weapon.
 
 **[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Bonus:** +9 per echelon
 
-**Speed Bonus:** +1
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +1
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus:** +1
 
@@ -18739,7 +18739,7 @@ You wear no armor and wield a whip.
 
 ##### Kit Bonuses
 
-**Speed Bonus:** +3
+**[Speed](scc:mcdm.heroes.v1/rule.character/speed) Bonus:** +3
 
 **Melee Damage Bonus:** +1/+1/+1
 
@@ -18777,7 +18777,7 @@ The rules of the game expect that heroes always have access to their equipment. 
 
 ###### Kits Table
 
-| Kit              | Armor          | Weapon             | [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per Echelon | Speed | [Stability](scc:mcdm.heroes.v1/rule.character/stability) | Melee Damage | Ranged Damage | Melee [Distance](scc:mcdm.heroes.v1/rule.combat/distance) | Ranged [Distance](scc:mcdm.heroes.v1/rule.combat/distance) | Disengage |
+| Kit              | Armor          | Weapon             | [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per Echelon | [Speed](scc:mcdm.heroes.v1/rule.character/speed) | [Stability](scc:mcdm.heroes.v1/rule.character/stability) | Melee Damage | Ranged Damage | Melee [Distance](scc:mcdm.heroes.v1/rule.combat/distance) | Ranged [Distance](scc:mcdm.heroes.v1/rule.combat/distance) | Disengage |
 |------------------|----------------|--------------------|---------------------|-------|-----------|--------------|---------------|----------------|-----------------|-----------|
 | [Arcane Archer](scc:mcdm.heroes.v1/kit/arcane-archer)    | None           | Bow                | -                   | +1    | -         | -            | +2/+2/+2      | -              | +10             | +1        |
 | [Battlemind](scc:mcdm.heroes.v1/kit/battlemind)       | Light          | Medium             | +3                  | +2    | +1        | +2/+2/+2     | -             | -              | -               | -         |
@@ -18854,12 +18854,12 @@ Without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test)—and even w
 <!-- @type: perk -->
 #### Inspired Artisan
 
-When you make a project roll using a skill from the crafting skill group, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make another project roll for the same project as part of the same respite activity. You can't use this perk more than once per respite.
+When you make a project roll using a skill from the crafting skill group, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. You can't use this perk more than once per [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: perk -->
 #### Traveling Artisan
 
-On any day when you don't take a respite, you can spend 1 uninterrupted hour working on a crafting project using a skill you have from the crafting skill group. If you do so, you gain 1d10 project points toward that project.
+On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a crafting project using a skill you have from the crafting skill group. If you do so, you gain 1d10 project points toward that project.
 
 > **Perks and [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
@@ -18985,7 +18985,7 @@ This section presents intrigue perks in alphabetical order.
 <!-- @type: perk -->
 #### Criminal Contacts
 
-You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
+You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity while you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
 
 <!-- @type: perk -->
 #### Forgettable Face
@@ -19025,7 +19025,7 @@ Whenever you fail a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore usi
 <!-- @type: perk -->
 #### Eidetic Memory
 
-Your mind is an encyclopedia, though not always an easy one to organize. When you finish a respite, choose one skill from the lore skill group that you don't have. You have that skill until you finish your next respite. Additionally, if you spend 1 uninterrupted minute or more reading any page of text, you can memorize its contents, allowing you to memorize entire books with sufficient time.
+Your mind is an encyclopedia, though not always an easy one to organize. When you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), choose one skill from the lore skill group that you don't have. You have that skill until you finish your next [respite](scc:mcdm.heroes.v1/rule.resource/respite). Additionally, if you spend 1 uninterrupted minute or more reading any page of text, you can memorize its contents, allowing you to memorize entire books with sufficient time.
 
 <!-- @type: perk -->
 #### Expert Sage
@@ -19061,7 +19061,7 @@ You are a leading expert on a particular subject. Choose one skill you have from
 <!-- @type: perk -->
 #### Traveling Sage
 
-On any day when you don't take a respite, you can spend 1 uninterrupted hour working on a research project using a skill you have from the lore skill group. If you do so, you gain 1d10 project points toward that project.
+On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a research project using a skill you have from the lore skill group. If you do so, you gain 1d10 project points toward that project.
 
 <!-- @type: feature-group | @id: supernatural-perks -->
 ### Supernatural Perks
@@ -19105,7 +19105,7 @@ The spirit uses the [familiar](scc:mcdm.heroes.v1/perk/familiar) stat block.
 
 The [familiar](scc:mcdm.heroes.v1/perk/familiar) can hold small objects in their mouth or claws, but can't perform activities that would typically require hands (opening a door, unrolling a scroll, and so forth). They can't harm other creatures or objects. They can flank in combat, but only with you.
 
-If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can restore them as a respite activity, or by spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) as a main action to bring them back into existence in an unoccupied space adjacent to you.
+If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can restore them as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, or by spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) as a main action to bring them back into existence in an unoccupied space adjacent to you.
 
 ###### Familiar Statblock
 
@@ -19113,7 +19113,7 @@ If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can resto
 
 |      [Familiar](scc:mcdm.heroes.v1/perk/familiar)       |         -         |           Level -            |           -           |         EV -         |
 |:-------------------:|:-----------------:|:----------------------------:|:---------------------:|:--------------------:|
-|   **1T**<br>[Size](scc:mcdm.heroes.v1/rule.character/size)    |  **5**<br>Speed   | **2x your level**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **0**<br>[Stability](scc:mcdm.heroes.v1/rule.character/stability)   | **-**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
+|   **1T**<br>[Size](scc:mcdm.heroes.v1/rule.character/size)    |  **5**<br>[Speed](scc:mcdm.heroes.v1/rule.character/speed)   | **2x your level**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **0**<br>[Stability](scc:mcdm.heroes.v1/rule.character/stability)   | **-**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
 | **-**<br>Immunities | **-**<br>Movement |                              | **-**<br>With Captain | **-**<br>Weaknesses  |
 |   **-3**<br>[Might](scc:mcdm.heroes.v1/rule.character/might)   | **+2**<br>[Agility](scc:mcdm.heroes.v1/rule.character/agility) |       **0**<br>[Reason](scc:mcdm.heroes.v1/rule.character/reason)        |  **0**<br>[Intuition](scc:mcdm.heroes.v1/rule.character/intuition)   |  **+1**<br>[Presence](scc:mcdm.heroes.v1/rule.character/presence)  |
 
@@ -19165,7 +19165,7 @@ When you hold an object in your hand for 1 uninterrupted minute, you can sense w
 - Why does this emotion linger on the object?
 - How long has it been since the object was held by the person whose emotion lingers on it?
 
-After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until you finish a respite, and you can't use this perk again while you suffer this [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), and you can't use this perk again while you suffer this [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: chapter | @id: complications -->
 # Complications
@@ -19357,11 +19357,11 @@ Complications are presented in alphabetical order.
 
 You somehow obtained the notebook of a brilliant but eccentric member of your class. The knowledge held within those notes should help you unlock powerful new abilities—if you can ever figure out what the notes mean.
 
-**Benefit and Drawback:** As a respite activity, you can study the notebook. Make a [test](scc:mcdm.heroes.v1/rule.test/test) using your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score:
+**Benefit and Drawback:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can study the notebook. Make a [test](scc:mcdm.heroes.v1/rule.test/test) using your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score:
 
-- **≤11:** You summon a hostile demon of your level or lower who attacks you at the end of the respite. The demon acts first in the combat, regardless of the traits or abilities of you or any other creature involved.
+- **≤11:** You summon a hostile demon of your level or lower who attacks you at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite). The demon acts first in the combat, regardless of the traits or abilities of you or any other creature involved.
 - **12-16:** You learn nothing and your time is wasted.
-- **17+:** You learn one bonus heroic ability from your class that you qualify for. You can use that ability until you finish your next respite.
+- **17+:** You learn one bonus heroic ability from your class that you qualify for. You can use that ability until you finish your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: complication -->
 #### Amnesia
@@ -19377,11 +19377,11 @@ You have no memory of your past before the... incident. Hopefully, you'll regain
 
 Due to a magical accident, your being has fused with that of a small, harmless animal. You turn into this animal when it's convenient—and sometimes when it's inconvenient as well.
 
-**Benefit:** As a maneuver, you take the form of a specific animal of [size](scc:mcdm.heroes.v1/rule.character/size) 1T. You retain all your other statistics aside from your [size](scc:mcdm.heroes.v1/rule.character/size), but you can't talk or use actions, and the only maneuvers you can use are [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab), Hide, and Stand Up. Based on the animal you can turn into, you might be able to [burrow](scc:mcdm.heroes.v1/movement/burrow) or [fly](scc:mcdm.heroes.v1/movement/fly), or to automatically climb or swim at full speed while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to speed.
+**Benefit:** As a maneuver, you take the form of a specific animal of [size](scc:mcdm.heroes.v1/rule.character/size) 1T. You retain all your other statistics aside from your [size](scc:mcdm.heroes.v1/rule.character/size), but you can't talk or use actions, and the only maneuvers you can use are [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab), Hide, and Stand Up. Based on the animal you can turn into, you might be able to [burrow](scc:mcdm.heroes.v1/movement/burrow) or [fly](scc:mcdm.heroes.v1/movement/fly), or to automatically climb or swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 Unless you use this benefit again, you return to your true form at the start of your next turn.
 
-**Drawback:** At the start of any turn while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a respite.
+**Drawback:** At the start of any turn while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: complication -->
 #### Antihero
@@ -19511,7 +19511,7 @@ When you were young, you did something reckless and unthinking that endangered a
 
 **Benefit:** Until you've taken your turn in a combat round, any strike made against you takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
-**Drawback:** You have a −1 penalty to speed.
+**Drawback:** You have a −1 penalty to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 <!-- @type: complication -->
 #### Curse of Immortality
@@ -19534,7 +19534,7 @@ You should have never pissed off that mage! Maybe they deserved your ire, or may
 
 A soothsayer once predicted you would have a long life, even as they told you you'd never be rich. But you're determined to prove them wrong. You'll get rich or die trying!
 
-**Benefit and Drawback:** Whenever you take a respite while your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) is higher than 1, some improbable event occurs that causes most of your money to vanish—including money you've hidden, loaned to others, or given away. Your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) is reduced to 1. For each point of [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) you lose this way, your number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) increases by 1. Your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) reset to their usual value the first time you take a respite with fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than your maximum.
+**Benefit and Drawback:** Whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) while your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) is higher than 1, some improbable event occurs that causes most of your money to vanish—including money you've hidden, loaned to others, or given away. Your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) is reduced to 1. For each point of [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) you lose this way, your number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) increases by 1. Your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) reset to their usual value the first time you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) with fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than your maximum.
 
 <!-- @type: complication -->
 #### Curse of Punishment
@@ -19597,7 +19597,7 @@ You have contracted a rare magical disease called [evanesceria](scc:mcdm.heroes.
 
 **Benefit:** At the start of any combat round, you can attempt to absent yourself from reality by rolling a d10. On a 6 or higher, you disappear, then reappear in the space you left or the nearest unoccupied space of your choice when you take your turn. You can't attempt to absent yourself again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
-**Drawback:** Whenever you start a respite activity, roll 2d10. If you roll a 1 on either die, you inadvertently absent yourself from reality, reappearing at the end of the respite. You gain the benefits of taking a respite but don't perform the respite activity.
+**Drawback:** Whenever you start a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, roll 2d10. If you roll a 1 on either die, you inadvertently absent yourself from reality, reappearing at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite). You gain the benefits of taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) but don't perform the [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: complication -->
 #### Exile
@@ -19685,14 +19685,14 @@ You were once a [renown](scc:mcdm.heroes.v1/rule.resource/renown)ed hero, but yo
 
 **Benefit:** On your turn, you can choose a heroic ability that you would be able to learn if you were one level higher. Provided you meet the ability's other prerequisites and can spend any required [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), you can use the ability. Once you use this benefit, you can't do so again until you earn 2 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
-**Drawback:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you take a −2 penalty to speed.
+**Drawback:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you take a −2 penalty to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 <!-- @type: complication -->
 #### Gnoll-Mauled
 
 As a child, you survived a gnoll attack. But that attack left you with a jagged scar and the occasional fit of bloodlust.
 
-**Benefit:** Whenever an ally within 5 squares is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can use a triggered action to move up to your speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+**Benefit:** Whenever an ally within 5 squares is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can use a triggered action to move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 **Drawback:** While you are [dazed](scc:mcdm.heroes.v1/condition/dazed), if you start your turn adjacent to one or more creatures, you must use your main action to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature.
 
@@ -19739,7 +19739,7 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 
 You travel with a giant hawk who you stole from the Hawklords (see Vasloria in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
 
-**Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the [Humans](scc:mcdm.heroes.v1/ancestry/human) entry in *Draw Steel: Monsters*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a respite activity.
+**Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the [Humans](scc:mcdm.heroes.v1/ancestry/human) entry in *Draw Steel: Monsters*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 **Drawback:** People aware of the origin of your mount are afraid to interact with you, since they worry the Hawklords will come after them by association. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to influence anyone who knows of the Hawklords and who has observed you with your giant hawk. Such people might also report you to the Hawklords, who come looking for you at the Director's discretion.
 
@@ -19757,7 +19757,7 @@ You travel with a giant hawk who you stole from the Hawklords (see Vasloria in C
 
 You have long stayed one step ahead of a pursuer—perhaps a bounty [hunter](scc:mcdm.heroes.v1/complication/hunter) determined to bring you to justice, a [revenant](scc:mcdm.heroes.v1/ancestry/revenant), or an assassin intent on your death. Someday, you'll be strong enough to face your pursuer. But for now, you live your life on the run.
 
-**Benefit:** You have one skill of your choice from the intrigue skill group. Additionally, whenever one or more creatures are pursuing you, you can lay low as a respite activity. When you do so, anyone pursuing you loses track of your and your party's location and must start their search again.
+**Benefit:** You have one skill of your choice from the intrigue skill group. Additionally, whenever one or more creatures are pursuing you, you can lay low as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. When you do so, anyone pursuing you loses track of your and your party's location and must start their search again.
 
 **Drawback:** Each time you earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown), your pursuer learns your location. Unless you lay low or move to a new location, you'll be visited by agents of the pursuer within 1d10 days. If you linger after that, your pursuer finds you.
 
@@ -19821,7 +19821,7 @@ You studied in an academy or other educational institution. Your training was th
 
 In a sinister ritual, your soul has been bound to that of another creature. This might be a companion, a creature you are beholden to, or an enemy. When they die, you die—making you the perfect bodyguard.
 
-**Benefit:** Choose another creature who doesn't have the [Lifebonded](scc:mcdm.heroes.v1/complication/lifebonded) complication. When you die, your body disappears until that creature finishes a respite or earns 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories). You then appear next to the creature, fully healed.
+**Benefit:** Choose another creature who doesn't have the [Lifebonded](scc:mcdm.heroes.v1/complication/lifebonded) complication. When you die, your body disappears until that creature finishes a [respite](scc:mcdm.heroes.v1/rule.resource/respite) or earns 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories). You then appear next to the creature, fully healed.
 
 **Drawback:** If the creature you're bound to dies, you die as well, no matter what other traits or features you have.
 
@@ -19839,7 +19839,7 @@ You were caught in a storm and struck by lightning—but something saved you fro
 
 You've always been a lone wolf. With no one else to lean on, you've picked up a million survival tricks. Which made it all the more surprising when you joined your current adventuring group and found the family you'd never known you needed.
 
-**Benefit:** When you finish a respite, choose a skill you don't have. You have that skill until the end of your next respite.
+**Benefit:** When you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), choose a skill you don't have. You have that skill until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 **Drawback:** Now that you finally have people who care about you, you won't let anyone take them away! Whenever a creature reduces one of your allies to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by that creature until your ally's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is higher than 0, another creature makes you [taunted](scc:mcdm.heroes.v1/condition/taunted), or the end of the encounter.
 
@@ -19885,7 +19885,7 @@ You've always had a [lucky](scc:mcdm.heroes.v1/complication/lucky) streak. When 
 
 Before you were a hero, you were a chef—and when you retire, you have big plans for your next restaurant or inn. In the meantime, you're on the lookout for rare ingredients that only a wandering adventurer can find. After all, it's food that makes the world go round.
 
-**Benefit:** You have the Cooking skill (from the crafting skill group). Additionally, whenever you finish a respite or wake up after a night's sleep, you can spend 1 uninterrupted hour to prepare an excellent meal for up to ten creatures, provided you have ingredients and cooking tools. Once over the next 24 hours, each creature who eats the meal can gain the benefit of spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) without spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+**Benefit:** You have the Cooking skill (from the crafting skill group). Additionally, whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) or wake up after a night's sleep, you can spend 1 uninterrupted hour to prepare an excellent meal for up to ten creatures, provided you have ingredients and cooking tools. Once over the next 24 hours, each creature who eats the meal can gain the benefit of spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) without spending a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 **Drawback:** The first time each day you eat food you didn't prepare, you lose 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -19985,9 +19985,9 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
 
-**Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means) leaves you, their faith in you shaken. If you have no followers, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is reduced by 1. If you need to reduce your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and it's already 0, you gain no benefits from the respite during which you make the conversion attempt.
+**Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means) leaves you, their faith in you shaken. If you have no followers, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is reduced by 1. If you need to reduce your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and it's already 0, you gain no benefits from the [respite](scc:mcdm.heroes.v1/rule.resource/respite) during which you make the conversion attempt.
 
 <!-- @type: complication -->
 #### Primordial Sickness
@@ -20125,7 +20125,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 
 **Benefit:** You have a 1st-echelon trinket of your choice. This was a signature treasure of your twin, and has their name or sigil written, sewn, or emblazoned on it somewhere.
 
-**Drawback:** Your twin disappeared because someone wanted them dead. Whenever you finish a respite, roll a d10. On a 1 or 2, the Director can decide that your past catches up with you in the near future in some way—an assassin seeking your twin, someone who knows your real identity and threatens to reveal it, and so forth.
+**Drawback:** Your twin disappeared because someone wanted them dead. Whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), roll a d10. On a 1 or 2, the Director can decide that your past catches up with you in the near future in some way—an assassin seeking your twin, someone who knows your real identity and threatens to reveal it, and so forth.
 
 <!-- @type: complication -->
 #### Self-Taught
@@ -20139,7 +20139,7 @@ While your peers were learning their trades in fancy schools, you honed your cap
 
 Impoverished or on the run, you spent your formative years living in the sewers of a major city. There, you learned lessons that have served you well, although the miasma of the sewers did permanent damage to your health.
 
-**Benefit:** You can automatically climb or swim (your choice) at full speed while moving, and you never get lost while underground. Additionally, while in a city with sewers, you and your companions can move from place to place without being detected, as the Director determines.
+**Benefit:** You can automatically climb or swim (your choice) at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, and you never get lost while underground. Additionally, while in a city with sewers, you and your companions can move from place to place without being detected, as the Director determines.
 
 **Drawback:** You have poison weakness 5.
 
@@ -20184,7 +20184,7 @@ You were tasked with delivering a ceremonial shield to your older sibling, a cel
 
 **Benefit:** While you wear your sibling's shield on your back, you can't be flanked.
 
-**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a respite, make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the respite.
+**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: complication -->
 #### Silent Sentinel
@@ -20202,7 +20202,7 @@ Maybe you were bitten as a child, or maybe it's a family curse. Either way, you 
 
 **Benefit:** Whenever you make a non-minion creature [winded](scc:mcdm.heroes.v1/rule.health/winded) or kill a non-minion creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
-**Drawback:** At the start of each of your turns, if you have five or more [surges](scc:mcdm.heroes.v1/rule.resource/surge)—or one or more [surges](scc:mcdm.heroes.v1/rule.resource/surge) while in moonlight—you lose all your [surges](scc:mcdm.heroes.v1/rule.resource/surge) and become a wolfish hybrid until the end of your turn. While in that form, you have your usual statistics, but you must make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest creature if you can. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed toward that creature if necessary. If allies and enemies are equally near, you target an ally.
+**Drawback:** At the start of each of your turns, if you have five or more [surges](scc:mcdm.heroes.v1/rule.resource/surge)—or one or more [surges](scc:mcdm.heroes.v1/rule.resource/surge) while in moonlight—you lose all your [surges](scc:mcdm.heroes.v1/rule.resource/surge) and become a wolfish hybrid until the end of your turn. While in that form, you have your usual statistics, but you must make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest creature if you can. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) toward that creature if necessary. If allies and enemies are equally near, you target an ally.
 
 **Special:** You can't take this complication if you are a [fury](scc:mcdm.heroes.v1/class/fury) with the stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspect).
 
@@ -20259,7 +20259,7 @@ You live for danger. Whether in battle or [mundane](scc:mcdm.heroes.v1/complicat
 
 A vampire has bitten you. You're not undead—or not yet, anyway—but your connection with your vampire progenitor fills you with urges you fight to control.
 
-**Benefit:** Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can do so by biting that creature. If you obtain a tier 3 outcome on the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
+**Benefit:** Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can do so by biting that creature. If you obtain a tier 3 outcome on the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 **Drawback:** While you have [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this complication, you grow visible fangs, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with humanoids, and your vampire progenitor can sense your location.
 
@@ -20270,7 +20270,7 @@ You occasionally hear a [voice in your head](scc:mcdm.heroes.v1/complication/voi
 
 **Benefit:** The Director tells you when you hear the voice. The voice seems to be aware of your surroundings, and its advice is usually vague but helpful. Someday its motivations might be different from your own, but for now, the voice seems keen on making sure you survive.
 
-**Drawback:** Eventually, the voice reveals it wants something from you that you might not want to provide. If the voice is displeased with you, it can interrupt your rest during a respite, causing you to regain 2 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.
+**Drawback:** Eventually, the voice reveals it wants something from you that you might not want to provide. If the voice is displeased with you, it can interrupt your rest during a [respite](scc:mcdm.heroes.v1/rule.resource/respite), causing you to regain 2 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.
 
 <!-- @type: complication -->
 #### Vow of Duty
@@ -20293,11 +20293,11 @@ You were brought up to a strict standard of behavior. You cannot tell a lie.
 <!-- @type: complication -->
 #### Waking Dreams
 
-You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a respite, make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to determine whether you gain this complication's benefit or drawback.
+You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to determine whether you gain this complication's benefit or drawback.
 
 **Benefit:** With a tier 2 outcome, you experience a vision of an event currently happening in your world. The vision lasts for only a few seconds, but the information you glean is helpful to you. With a tier 3 outcome, the vision lasts for 1 minute or more.
 
-**Drawback:** With a tier 1 outcome, you receive a painful vision that is fractal and inscrutable. When you finish the respite, you lose 1 [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+**Drawback:** With a tier 1 outcome, you receive a painful vision that is fractal and inscrutable. When you finish the [respite](scc:mcdm.heroes.v1/rule.resource/respite), you lose 1 [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: complication -->
 #### War Dog Collar
@@ -20334,14 +20334,14 @@ Your childhood sweetheart was royalty, and the two of you stayed close throughou
 
 **Benefit:** You know how to talk to monarchs, aristocrats, and other wealthy leaders. When you engage with any such NPC during a negotiation, their patience increases by 1 (to a maximum of 5).
 
-**Drawback:** Your royal [ward](scc:mcdm.heroes.v1/complication/ward) can be a burden. Whenever you take a respite, roll a d10. On a 1, your [ward](scc:mcdm.heroes.v1/complication/ward) contacts you and requires your help during the respite, requiring you to spend your time helping them instead of undertaking a respite activity.
+**Drawback:** Your royal [ward](scc:mcdm.heroes.v1/complication/ward) can be a burden. Whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), roll a d10. On a 1, your [ward](scc:mcdm.heroes.v1/complication/ward) contacts you and requires your help during the [respite](scc:mcdm.heroes.v1/rule.resource/respite), requiring you to spend your time helping them instead of undertaking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: complication -->
 #### Waterborn
 
 You nearly lost your life at sea, but then you heard the voice. Someone—or something—in the water called out to you, telling you to swim. The ocean was suddenly no longer your doom but your parent, granting you a fragment of its power. But for what purpose, you can't be sure.
 
-**Benefit:** You can automatically swim at full speed while moving, and you can breathe underwater. Additionally, you have the following ability.
+**Benefit:** You can automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, and you can breathe underwater. Additionally, you have the following ability.
 
 > ###### Rogue Wave
 >
@@ -21212,7 +21212,7 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 #### Sneaking
 
-While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This [test](scc:mcdm.heroes.v1/rule.test/test) can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using [Presence](scc:mcdm.heroes.v1/rule.character/presence) to blend in with a crowd on a packed city street.
+While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your [speed](scc:mcdm.heroes.v1/rule.character/speed) is halved. To sneak, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This [test](scc:mcdm.heroes.v1/rule.test/test) can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using [Presence](scc:mcdm.heroes.v1/rule.character/presence) to blend in with a crowd on a packed city street.
 
 <!-- @type: rule | @group: test | @id: group-test -->
 ### Group Tests
@@ -21252,11 +21252,11 @@ Once a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), assists with a [t
 
 As the name suggests, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) create a kind of cinematic montage in the action of the game. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can take place over the course of several hours or days, with each individual [test](scc:mcdm.heroes.v1/rule.test/test) or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) (see Sample [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) below).
 
-The Director should deploy [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a respite to use a new kit, can be narrated in montage style, but they don't require a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+The Director should deploy [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to use a new kit, can be narrated in montage style, but they don't require a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 #### Director Sets the Scene
 
-At the start of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the Director should describe the scenario underlying the task at hand, and the various challenges the heroes might face as they attempt to collectively accomplish it. For example, if the heroes are chasing down a pickpocket through a crowded market, the Director might talk about the throngs of innocent people blocking the way forward, obscuring the characters' vision, and making noise that complicates attempts to hear the thief's nimble footsteps. There are also traveling carts to dodge, the speed and dexterity of the pursued character to contend with, and a pack of stray dogs who chase after anyone who sprints through the market. Describing these obstacles gives the heroes ideas about what they're trying to overcome as they attempt to achieve their goals.
+At the start of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the Director should describe the scenario underlying the task at hand, and the various challenges the heroes might face as they attempt to collectively accomplish it. For example, if the heroes are chasing down a pickpocket through a crowded market, the Director might talk about the throngs of innocent people blocking the way forward, obscuring the characters' vision, and making noise that complicates attempts to hear the thief's nimble footsteps. There are also traveling carts to dodge, the [speed](scc:mcdm.heroes.v1/rule.character/speed) and dexterity of the pursued character to contend with, and a pack of stray dogs who chase after anyone who sprints through the market. Describing these obstacles gives the heroes ideas about what they're trying to overcome as they attempt to achieve their goals.
 
 #### Individual Tests in Montage Tests
 
@@ -21506,7 +21506,7 @@ The Director can limit what kinds of no-action activities you can attempt when i
 
 During combat, creatures can employ multiple mechanics that allow them to move around the battlefield. The most common of those mechanics is the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) or [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action (detailed under Move Actions below), but abilities granted by your class, equipment, ancestry, title, or other options might allow you other ways to move.
 
-Your hero starts with a speed granted by their ancestry—usually 5. This represents the maximum number of squares you can move when you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action or when another effect allows you to move. Your speed can be increased by your kit and other game options.
+Your hero starts with a [speed](scc:mcdm.heroes.v1/rule.character/speed) granted by their ancestry—usually 5. This represents the maximum number of squares you can move when you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action or when another effect allows you to move. Your [speed](scc:mcdm.heroes.v1/rule.character/speed) can be increased by your kit and other game options.
 
 All squares adjacent to your character cost 1 movement to move into. No, there's no Pythagorean theorem on the grid. It's a game, don't overthink it.
 
@@ -21516,7 +21516,7 @@ At the Director's discretion, you can be forced into the same space as another c
 
 #### Can't Exceed Speed
 
-A single move or other effect can never allow a creature to move more squares than their speed, unless the effect states otherwise. For example, a creature with speed 5 might have that speed reduced to 2 by the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current speed.
+A single move or other effect can never allow a creature to move more squares than their [speed](scc:mcdm.heroes.v1/rule.character/speed), unless the effect states otherwise. For example, a creature with [speed](scc:mcdm.heroes.v1/rule.character/speed) 5 might have that [speed](scc:mcdm.heroes.v1/rule.character/speed) reduced to 2 by the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). If an ally then targets them with an effect that allows them to move up to 3 squares, the creature can move only 2 squares because that's their current [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 #### Can't Cut Corners
 
@@ -21525,7 +21525,7 @@ A creature can't move diagonally when doing so would involve passing through the
 <!-- @type: movement | @id: shifting -->
 #### Shifting
 
-[Shifting](scc:mcdm.heroes.v1/movement/shifting) is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to [shift](scc:mcdm.heroes.v1/movement/shifting) a specific number of squares, sometimes up to your speed. Whenever you [shift](scc:mcdm.heroes.v1/movement/shifting), creatures can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you triggered by that movement (see [Opportunity Attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) later in this chapter).
+[Shifting](scc:mcdm.heroes.v1/movement/shifting) is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to [shift](scc:mcdm.heroes.v1/movement/shifting) a specific number of squares, sometimes up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). Whenever you [shift](scc:mcdm.heroes.v1/movement/shifting), creatures can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you triggered by that movement (see [Opportunity Attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) later in this chapter).
 
 You can't [shift](scc:mcdm.heroes.v1/movement/shifting) into or while within [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) (see below). If a rule allows you to [shift](scc:mcdm.heroes.v1/movement/shifting), you can choose to instead move up to the number of squares you would have shifted (for example, to get out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)). However, you can't combine moving and [shifting](scc:mcdm.heroes.v1/movement/shifting) within that movement.
 
@@ -21541,11 +21541,11 @@ Walking is the most common movement type, whether it refers to ambulating on leg
 <!-- @type: movement | @id: burrow -->
 ##### Burrow
 
-A creature who has "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their speed entry, or who gains the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow), can move through dirt horizontally, and either has the means to breathe while doing so or doesn't require air to live. Such creatures can't move through more solid ground, such as stone, unless their stat block or the effect that lets them [burrow](scc:mcdm.heroes.v1/movement/burrow) says otherwise. Similarly, a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature doesn't leave a tunnel unless the rules say so.
+A creature who has "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gains the temporary ability to [burrow](scc:mcdm.heroes.v1/movement/burrow), can move through dirt horizontally, and either has the means to breathe while doing so or doesn't require air to live. Such creatures can't move through more solid ground, such as stone, unless their stat block or the effect that lets them [burrow](scc:mcdm.heroes.v1/movement/burrow) says otherwise. Similarly, a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature doesn't leave a tunnel unless the rules say so.
 
 ###### Dig Maneuver
 
-It takes extra effort to dig vertically through the ground as opposed to tunneling horizontally, requiring a creature to use a special maneuver. To use the Dig maneuver, a creature must have "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their speed entry, they must have a speed that is equal to or greater than their [size](scc:mcdm.heroes.v1/rule.character/size), and they must be touching terrain that can be burrowed through.
+It takes extra effort to dig vertically through the ground as opposed to tunneling horizontally, requiring a creature to use a special maneuver. To use the Dig maneuver, a creature must have "[burrow](scc:mcdm.heroes.v1/movement/burrow)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, they must have a [speed](scc:mcdm.heroes.v1/rule.character/speed) that is equal to or greater than their [size](scc:mcdm.heroes.v1/rule.character/size), and they must be touching terrain that can be burrowed through.
 
 When a creature uses the Dig maneuver, they can move vertically up to a number of squares equal to their [size](scc:mcdm.heroes.v1/rule.character/size). If a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature has a creature who is not unconscious [grabbed](scc:mcdm.heroes.v1/condition/grabbed), they can't willingly move deeper into the ground. It's too difficult to dig with a flailing enemy in your claws.
 
@@ -21563,7 +21563,7 @@ You can't gain the benefit of [high ground](scc:mcdm.heroes.v1/movement/high-gro
 
 If you are on the ground and adjacent to a creature who is beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow), you can use a maneuver to pull that creature up 1 square out of the ground, provided the creature is willing.
 
-If a creature who can't [burrow](scc:mcdm.heroes.v1/movement/burrow) wants to dig into the ground, they can use the following ability provided their speed is 2 or more.
+If a creature who can't [burrow](scc:mcdm.heroes.v1/movement/burrow) wants to dig into the ground, they can use the following ability provided their [speed](scc:mcdm.heroes.v1/rule.character/speed) is 2 or more.
 
 <!-- @type: ability | @id: claw-dirt -->
 ###### Claw Dirt
@@ -21585,7 +21585,7 @@ While a creature who is completely beneath the ground while [burrowing](scc:mcdm
 <!-- @type: movement | @id: climb-or-swim -->
 ##### Climb or Swim
 
-A creature who has "climb" in their speed entry, or who gains the temporary ability to automatically climb, can climb across vertical and horizontal surfaces at full speed. Likewise, a creature who has "swim" in their speed entry, or who gains the temporary ability to automatically swim, can swim in liquid at full speed.
+A creature who has "climb" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gains the temporary ability to automatically climb, can climb across vertical and horizontal surfaces at full [speed](scc:mcdm.heroes.v1/rule.character/speed). Likewise, a creature who has "swim" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gains the temporary ability to automatically swim, can swim in liquid at full [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 Creatures without those types of movement can still climb or swim when a rule allows them to move, but each square of climbing or swimming costs 2 squares of movement. If a surface is difficult to climb (for instance, a sheer cliff or ice-covered wall) or a liquid is hard to swim through (a raging river or whirlpool), the Director can call for a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). On a failure, a creature can't climb or swim but wastes no movement in the attempt. The Director can also impose other consequences to failure, such as being caught in the spinning current of a whirlpool.
 
@@ -21632,12 +21632,12 @@ If you [are prone](scc:mcdm.heroes.v1/condition/prone) (see Conditions in Chapte
 <!-- @type: movement | @id: fly -->
 ##### Fly
 
-A creature who has "[fly](scc:mcdm.heroes.v1/movement/fly)" in their speed entry, or who gains the temporary ability to [fly](scc:mcdm.heroes.v1/movement/fly), can move through the air vertically or horizontally at full speed and remain in midair. If a [flying](scc:mcdm.heroes.v1/movement/fly) creature is [knocked prone](scc:mcdm.heroes.v1/condition/prone) or has their speed reduced to 0, they fall (see Falling below).
+A creature who has "[fly](scc:mcdm.heroes.v1/movement/fly)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gains the temporary ability to [fly](scc:mcdm.heroes.v1/movement/fly), can move through the air vertically or horizontally at full [speed](scc:mcdm.heroes.v1/rule.character/speed) and remain in midair. If a [flying](scc:mcdm.heroes.v1/movement/fly) creature is [knocked prone](scc:mcdm.heroes.v1/condition/prone) or has their [speed](scc:mcdm.heroes.v1/rule.character/speed) reduced to 0, they fall (see Falling below).
 
 <!-- @type: movement | @id: hover -->
 ##### Hover
 
-A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their speed entry (most commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the temporary ability to [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are [knocked prone](scc:mcdm.heroes.v1/condition/prone) or their speed is reduced to 0.
+A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry (most commonly alongside "[fly](scc:mcdm.heroes.v1/movement/fly)" or "[teleport](scc:mcdm.heroes.v1/movement/teleport)"), or who gains the temporary ability to [hover](scc:mcdm.heroes.v1/movement/hover), can remain motionless in midair. They don't fall even if they are [knocked prone](scc:mcdm.heroes.v1/condition/prone) or their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 0.
 
 <!-- @type: movement | @id: teleport -->
 ##### Teleport
@@ -21648,8 +21648,8 @@ When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move fro
 - When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they bypass any obstacles between the space they leave and their destination space.
 - A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) themself must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to their destination space. A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) another creature must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) from the space the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature leaves and to their destination space.
 - A [teleporting](scc:mcdm.heroes.v1/movement/teleport) creature's destination space can't be occupied by another creature or object.
-- The effect that lets a creature [teleport](scc:mcdm.heroes.v1/movement/teleport) indicates how far they can [teleport](scc:mcdm.heroes.v1/movement/teleport). That [distance](scc:mcdm.heroes.v1/rule.combat/distance) can be greater than the creature's speed.
-- If a creature can [teleport](scc:mcdm.heroes.v1/movement/teleport) as part of their usual movement, they can use the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action to [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares up to their usual speed, unmodified by conditions or effects.
+- The effect that lets a creature [teleport](scc:mcdm.heroes.v1/movement/teleport) indicates how far they can [teleport](scc:mcdm.heroes.v1/movement/teleport). That [distance](scc:mcdm.heroes.v1/rule.combat/distance) can be greater than the creature's [speed](scc:mcdm.heroes.v1/rule.character/speed).
+- If a creature can [teleport](scc:mcdm.heroes.v1/movement/teleport) as part of their usual movement, they can use the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action to [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares up to their usual [speed](scc:mcdm.heroes.v1/rule.character/speed), unmodified by conditions or effects.
 - If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) [while prone](scc:mcdm.heroes.v1/condition/prone), they can be standing when they reach their destination space provided they are able to stand. If a prone creature is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed by another creature, it is up to that creature whether the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature remains prone or stands if they are able.
 - If you [teleport](scc:mcdm.heroes.v1/movement/teleport) while affected by the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained) conditions, those conditions end for you.
 - When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they must leave the space where they start and enter a new space. A creature can't [teleport](scc:mcdm.heroes.v1/movement/teleport) to and from the same space.
@@ -21684,7 +21684,7 @@ Areas of acid, fire, sharp rocks, lava, or any other terrain that causes damage 
 
 Whenever a creature uses an ability to target a creature or object while standing on the ground and occupying a space that is fully above the target's space, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against that target. To be fully above a target, the bottom of a creature's space must be higher than or bordering on the top of the target's space.
 
-A creature can gain this benefit while climbing only if they have "climb" in their speed entry or can automatically climb at full speed while moving.
+A creature can gain this benefit while climbing only if they have "climb" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry or can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
 
 <!-- @type: movement | @id: forced-movement -->
 #### Forced Movement
@@ -21779,7 +21779,7 @@ A move action allows a creature to move around the battlefield. Sometimes you'll
 <!-- @type: feature | @id: advance -->
 #### Advance
 
-When a creature takes the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, they move a number of squares up to their speed. They can break up this movement with their maneuver and main action however they wish.
+When a creature takes the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, they move a number of squares up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). They can break up this movement with their maneuver and main action however they wish.
 
 <!-- @type: feature | @id: disengage -->
 #### Disengage
@@ -21789,7 +21789,7 @@ When a creature takes the [Disengage](scc:mcdm.heroes.v1/feature.common.move-act
 <!-- @type: feature | @id: ride -->
 #### Ride
 
-A creature can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only while mounted on another creature (see [Mounted Combat](scc:mcdm.heroes.v1/rule.combat/mounted-combat) below). When a creature takes the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action to have their mount use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free triggered action. A creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
+A creature can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only while mounted on another creature (see [Mounted Combat](scc:mcdm.heroes.v1/rule.combat/mounted-combat) below). When a creature takes the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, they cause their mount to move up to the mount's [speed](scc:mcdm.heroes.v1/rule.character/speed), taking the rider with them. Alternatively, a creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action to have their mount use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free triggered action. A creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
 
 <!-- @type: feature-group | @id: maneuvers -->
 ### Maneuvers
@@ -21915,9 +21915,9 @@ You can convert your main action into a maneuver or a move action, allowing you 
 <!-- @type: feature | @id: charge -->
 #### Charge
 
-When a creature takes the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, they move up to their speed in a straight line, then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (see [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) below) against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+When a creature takes the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, they move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) in a straight line, then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (see [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) below) against a target when they end their move. If the creature has an ability with the Charge keyword, they can use that ability against the target instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-A creature can't move through [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or [shift](scc:mcdm.heroes.v1/movement/shifting) when they charge. They can [fly](scc:mcdm.heroes.v1/movement/fly) or [burrow](scc:mcdm.heroes.v1/movement/burrow) as part of the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action if they have that movement available to them, but they can't climb or swim while charging unless they can automatically use that movement at full speed.
+A creature can't move through [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or [shift](scc:mcdm.heroes.v1/movement/shifting) when they charge. They can [fly](scc:mcdm.heroes.v1/movement/fly) or [burrow](scc:mcdm.heroes.v1/movement/burrow) as part of the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action if they have that movement available to them, but they can't climb or swim while charging unless they can automatically use that movement at full [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 <!-- @type: feature | @id: defend -->
 #### Defend
@@ -22081,11 +22081,11 @@ If you damage a creature with an ability that would kill them, you can choose to
 
 Director-controlled creatures remain unconscious for 1 hour if no one does anything to wake them. They then gain 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and are no longer unconscious.
 
-Heroes remain unconscious for 1 hour if no one does anything to wake them. After 1 hour, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and are no longer unconscious. If the hero has no [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) left, they can't wake up until they finish a respite.
+Heroes remain unconscious for 1 hour if no one does anything to wake them. After 1 hour, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and are no longer unconscious. If the hero has no [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) left, they can't wake up until they finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 ##### Unconscious
 
-While you are unconscious, you can't take main actions, maneuvers, triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver); your speed is 0; you are unaware of your surroundings; and you [are prone](scc:mcdm.heroes.v1/condition/prone). [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge). If you wake up from being unconscious, you can stand up from prone as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
+While you are unconscious, you can't take main actions, maneuvers, triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver); your [speed](scc:mcdm.heroes.v1/rule.character/speed) is 0; you are unaware of your surroundings; and you [are prone](scc:mcdm.heroes.v1/condition/prone). [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge). If you wake up from being unconscious, you can stand up from prone as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: rule | @group: health | @id: temporary-stamina -->
 #### Temporary Stamina
@@ -22113,7 +22113,7 @@ The Director can decide that a well-made or poorly made object has more or less 
 <!-- @type: rule | @group: combat | @id: underwater-combat -->
 ### Underwater Combat
 
-If a creature is fully submerged in water, they have fire immunity 5 and lightning weakness 5. If they can't automatically swim at full speed while moving, their [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+If a creature is fully submerged in water, they have fire immunity 5 and lightning weakness 5. If they can't automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, their [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: rule | @group: health | @id: suffocating -->
 ### Suffocating
@@ -22780,11 +22780,11 @@ The heroes could have pushed for a better deal, but they're satisfied with the o
 <!-- @type: chapter | @id: downtime-projects -->
 # Downtime Projects
 
-As a team, you and your fellow heroes can achieve great things. But the time between adventures gives you a chance to pursue your own individual goals: uncover forbidden lore in ancient tomes, forge weapons of great power, build ships that can sail the skies, and more. *Draw Steel*'s rules for downtime projects allow heroes to use their time during respites to obtain important information, make new equipment, and engage in other activities to support their adventuring.
+As a team, you and your fellow heroes can achieve great things. But the time between adventures gives you a chance to pursue your own individual goals: uncover forbidden lore in ancient tomes, forge weapons of great power, build ships that can sail the skies, and more. *Draw Steel*'s rules for downtime projects allow heroes to use their time during [respites](scc:mcdm.heroes.v1/rule.resource/respite) to obtain important information, make new equipment, and engage in other activities to support their adventuring.
 
 ### Tracking Projects
 
-You start a downtime project during a respite. You can start as many projects as you like, but you can't work on more than one project at a time during a respite. Eventually, you'll be able to hire creatures who can work on additional downtime projects for you.
+You start a downtime project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). You can start as many projects as you like, but you can't work on more than one project at a time during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Eventually, you'll be able to hire creatures who can work on additional downtime projects for you.
 
 You track project progress on your character sheet. As you work on a downtime project, you might look over old books that you've found in your travels, perform experiments, converse with experts and scholars, or work with tools to create something.
 
@@ -22806,18 +22806,18 @@ Some project sources are relatively easy to find. Building a castle doesn't requ
 
 The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you might be able to find a version of a source in other languages as well.
 
-Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a respite activity to be your project source whenever you make a project roll related to the project.
+Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to be your project source whenever you make a project roll related to the project.
 
 ##### Search for Common Project Sources
 
-If you need a project source for a particular project, ask your Director if the source is common enough that it might be found in a substantial library, among a group of sages or guild artisans, and so forth. If the Director says yes, then the next time you take a respite in a place with a library or access to creatures with the knowledge you seek, you can locate the project source you need as a respite activity.
+If you need a project source for a particular project, ask your Director if the source is common enough that it might be found in a substantial library, among a group of sages or guild artisans, and so forth. If the Director says yes, then the next time you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a place with a library or access to creatures with the knowledge you seek, you can locate the project source you need as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: rule | @group: downtime | @id: project-roll -->
 ### Project Roll
 
-As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a [test](scc:mcdm.heroes.v1/rule.test/test) with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the project.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a [test](scc:mcdm.heroes.v1/rule.test/test) with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the project.
 
-When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same respite activity.
+When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 A downtime project is complete when it accrues project points equal to or greater than its **project goal**-the number of points it takes to complete the project, noted in each project's description.
 
@@ -22838,9 +22838,9 @@ If you know the language of a project source, you can make a project roll withou
 <!-- @type: rule | @group: downtime | @id: guide -->
 #### Guides
 
-Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a respite activity, they gain the guide's knowledge value as project points toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
+Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as project points toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
 
-Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the speed of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more project points toward the Build Airship project, the crafting time can be significantly reduced.
+Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the [speed](scc:mcdm.heroes.v1/rule.character/speed) of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more project points toward the Build Airship project, the crafting time can be significantly reduced.
 
 A guide must provide its information in a language you understand for you to gain its full benefit. If a guide uses a language related to one you know, you gain only half the guide's knowledge value (rounded down) as project points toward your project.
 
@@ -22855,7 +22855,7 @@ Projects don't need an event every time a hero makes a project roll. If they did
 
 ##### Roll for Event
 
-If you want events to be a surprise for you as much as for the other players, then once during any respite when one or more heroes makes a project roll, roll a d6. On a 6, an event occurs. This is a good option if you enjoy coming up with story on the fly during play.
+If you want events to be a surprise for you as much as for the other players, then once during any [respite](scc:mcdm.heroes.v1/rule.resource/respite) when one or more heroes makes a project roll, roll a d6. On a 6, an event occurs. This is a good option if you enjoy coming up with story on the fly during play.
 
 ##### Event Milestones
 
@@ -22874,7 +22874,7 @@ You can use the Suggested Event Milestones table to determine when an event shou
 
 ##### Whenever You Want
 
-Whenever you think the heroes could use a little drama during a respite, throw in an event. This approach allows you to plan an event in detail when a downtime project starts, then deploy it at the most dramatic moment—or even throw it in during an encounter if you're feeling saucy!
+Whenever you think the heroes could use a little drama during a [respite](scc:mcdm.heroes.v1/rule.resource/respite), throw in an event. This approach allows you to plan an event in detail when a downtime project starts, then deploy it at the most dramatic moment—or even throw it in during an encounter if you're feeling saucy!
 
 ##### Deploying Events
 
@@ -22882,12 +22882,12 @@ A project event occurs when a hero makes a project roll. You can roll for or cho
 
 ##### Automatic Breakthrough
 
-If an event grants an automatic breakthrough on a downtime project, the project gains 20 project points and the hero can make another project roll for the same project as part of the same respite activity.
+If an event grants an automatic breakthrough on a downtime project, the project gains 20 project points and the hero can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: rule | @group: downtime | @id: crafting-project -->
 ### Crafting Projects
 
-Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their respite activity to contribute a project roll in order to get the work done faster.
+Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to contribute a project roll in order to get the work done faster.
 
 Unless a project has an event table of its own, the Director uses the Crafting and Research Events table for crafting project events.
 
@@ -22904,9 +22904,9 @@ Unless a project has an event table of its own, the Director uses the Crafting a
 
 When you start this project, you hire a crew of carpenters, mages, and shipwrights who work in the area where the project is undertaken, with these artisans building the ship for you. You can make a project roll whenever you are overseeing the project, which you might be able to do remotely through the use of magic or psionics.
 
-When the project is completed, you have an airship. You and any creatures you designate can operate the ship by touching the ship's wheel. During combat, a creature touching the wheel can use a maneuver to make the ship move up to 10 squares. The ship can be moved only once per round. Out of combat, the ship has a speed of 130 miles per day.
+When the project is completed, you have an airship. You and any creatures you designate can operate the ship by touching the ship's wheel. During combat, a creature touching the wheel can use a maneuver to make the ship move up to 10 squares. The ship can be moved only once per round. Out of combat, the ship has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 130 miles per day.
 
-An airship is an object (giving it [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) all to poison and psychic damage) and can take 200 damage before it is destroyed. If the damage the ship takes is not too severe (as the Director determines), as long as you have access to materials that can repair the ship, you can restore it back to its original condition as a respite activity.
+An airship is an object (giving it [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) all to poison and psychic damage) and can take 200 damage before it is destroyed. If the damage the ship takes is not too severe (as the Director determines), as long as you have access to materials that can repair the ship, you can restore it back to its original condition as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 ###### Build or Repair Road Renown Table
 
@@ -22961,9 +22961,9 @@ Time spent traveling between locations on the road is cut in half. Access to res
 
 **Project Goal:** 1,500
 
-When you complete this project, you end up with a 3-square-by-3 square [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform activated by a supernatural password. The platform is permanently affixed to the ground in the location where you create it. Any creature with the password can use the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform to instantly [teleport](scc:mcdm.heroes.v1/movement/teleport) any creatures or objects on the platform to a location they know, including another [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform whose supernatural password they know. You and any creature you designate upon completion of the activity can change the password as a respite activity.
+When you complete this project, you end up with a 3-square-by-3 square [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform activated by a supernatural password. The platform is permanently affixed to the ground in the location where you create it. Any creature with the password can use the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform to instantly [teleport](scc:mcdm.heroes.v1/movement/teleport) any creatures or objects on the platform to a location they know, including another [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform whose supernatural password they know. You and any creature you designate upon completion of the activity can change the password as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
-Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is used, the chance of it malfunctioning and [teleporting](scc:mcdm.heroes.v1/movement/teleport) creatures or objects on it to a random platform increases by 1 percent (to a maximum of 50 percent). You can restore the platform back to its original condition and reset this chance of malfunction as a respite activity.
+Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is used, the chance of it malfunctioning and [teleporting](scc:mcdm.heroes.v1/movement/teleport) creatures or objects on it to a random platform increases by 1 percent (to a maximum of 50 percent). You can restore the platform back to its original condition and reset this chance of malfunction as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: project -->
 #### Craft Treasure
@@ -23035,7 +23035,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Psionic Resistance I:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of psionic abilities.
 
-**Swift:** You gain a +1 bonus to speed.
+**Swift:** You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 **Tempest I:** As a maneuver, you infuse this armor with the essence of a storm. The first time an adjacent creature deals damage to you before the end of your next turn, they take lightning damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score and you can push them 1 square.
 
@@ -23197,7 +23197,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Forceful I:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 2 squares.
 
-**Rat Form:** As a maneuver, you transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your [Might](scc:mcdm.heroes.v1/rule.character/might) is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a maneuver, and do so automatically if you take any damage.
+**Rat Form:** As a maneuver, you transform into a rat. Your equipment transforms with you. As a rat, you have [speed](scc:mcdm.heroes.v1/rule.character/speed) 5 and can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your [Might](scc:mcdm.heroes.v1/rule.character/might) is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a maneuver, and do so automatically if you take any damage.
 
 **Rejuvenating I:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 9 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -23526,7 +23526,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 07-08  | After the roll, the hero receives a mysterious note from a person who wants to exchange a treasure or other reward for the project source when the project is complete. The buyer could be someone with their own interest in a similar project, an enemy eager to exploit what the hero is working on, or a superfan who wants to emulate the hero.                                                                                                                                                            |
 | 09-10  | Before the roll, a pest starts devouring important components of the project. This could be rats gnawing at alchemical components, moths eating rare silks, mites devouring a printed project source, and so forth. If the pests aren't dealt with quickly, some of the components will need to be replaced.                                                                                                                                                                                                    |
 | 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
-| 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of respite, demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
+| 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of [respite](scc:mcdm.heroes.v1/rule.resource/respite), demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
 | 15-16  | Before the roll, the hero's rival comes to visit and shows off a guide for the project. The rival is willing to hand the guide over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
 | 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
 | 19-20  | Before the roll, the hero finds that a significant amount of the project has been completed by a group of fairies. The fairies might have completed the job out of boredom, or they might want something from the hero in return.                                                                                                                                                                                                                                                                               |
@@ -23539,17 +23539,17 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 33-34  | After the roll, the project source suddenly becomes impossible to understand. A psionic NPC has used a mighty power to obscure or corrupt the project source to prevent a potential catastrophe they foresaw. If the heroes can help prevent the catastrophe in another way, the NPC will end the effect.                                                                                                                                                                                                       |
 | 35-36  | After the roll, the hero discovers that the project source contains a piece of helpful knowledge unrelated to the current project.                                                                                                                                                                                                                                                                                                                                                                              |
 | 37-38  | Before the roll, the hero learns that several sages working on similar projects have all mysteriously disappeared. Someone or something is abducting these experts for some nefarious purpose... and the hero could be next!                                                                                                                                                                                                                                                                                   |
-| 39-40  | After the roll, a group of scholars approach the hero and ask if they can review the project source, promising to help the hero complete the project in return. If the hero accepts, the scholars take the project source until the end of the hero's next respite. Three of the scholars then contribute project rolls during the following respite, each with a +3 modifier.                                                                                                                                  |
+| 39-40  | After the roll, a group of scholars approach the hero and ask if they can review the project source, promising to help the hero complete the project in return. If the hero accepts, the scholars take the project source until the end of the hero's next [respite](scc:mcdm.heroes.v1/rule.resource/respite). Three of the scholars then contribute project rolls during the following [respite](scc:mcdm.heroes.v1/rule.resource/respite), each with a +3 modifier.                                                                                                                                  |
 | 41-42  | After the roll, a physical project source or crafting components come to life and attack the hero. Magic within these items has become corrupted! If the hero can fix the corruption without destroying the items, the project is saved, but doing so requires a special ritual.                                                                                                                                                                                                                                |
 | 43-44  | After the roll, an otherworldly specter appears and warns the hero not to complete the project, explaining that they died attempting the same project and are now attached to the project source. If the hero can convince the spirit that they will not die similarly, the creature shares their knowledge, contributing one project roll to the project with a +3 modifier.                                                                                                                                   |
 | 45-46  | Before the roll, the servants of a dragon appear and demand that the hero hand over the project source. If the hero refuses, the servants warn that the dragon will come to claim the project source for themself.                                                                                                                                                                                                                                                                                              |
 | 47-48  | Before the roll, the hero notices a contract written on a physical project source or other accompanying materials that appears only under certain conditions (in the presence of magic, in the light of a full moon, and so forth). The contract promises that anyone who signs it in blood will receive the true and full answer to three questions, in exchange for a week of service to the hag Corrine Withersnipe. The hag appears instantly if the contract is signed.                                    |
-| 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per respite when any creature makes another project roll for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
+| 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per [respite](scc:mcdm.heroes.v1/rule.resource/respite) when any creature makes another project roll for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
 | 51-52  | Before the roll, the hero gets a visit from an NPC who they helped in the past. The NPC has found a guide that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
 | 53-54  | After the roll, a local officer of the law appears and tells the hero to stop working on their project. The nature of the hero's project has just become outlawed in the region, and the constable insists on locking up the project source and arresting anyone who gets in the way.                                                                                                                                                                                                                           |
 | 55-56  | Before the roll, the hero determines that the research or crafting they are planning requires only part of their attention. They can either make two project rolls for their current project, or can make one for that project and one for another project.                                                                                                                                                                                                                                                     |
 | 57-58  | After the roll, a component or tool the hero is using for the project suddenly reveals itself to be magic or psionic as it starts to hum with energy and glow red hot. If the item isn't quickly cooled, it explodes, and work on the project can't continue until a replacement is found.                                                                                                                                                                                                                      |
-| 59-60  | Before the roll, the hero realizes they're at a critical point in the project, and can achieve more if they just shave off a few hours of rest. By choosing to lose some sleep, the character can make two project rolls for the project, but when they end the current respite, they do so with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                 |
+| 59-60  | Before the roll, the hero realizes they're at a critical point in the project, and can achieve more if they just shave off a few hours of rest. By choosing to lose some sleep, the character can make two project rolls for the project, but when they end the current [respite](scc:mcdm.heroes.v1/rule.resource/respite), they do so with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                 |
 | 61-62  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're an assassin hoping to catch the hero off guard.                                                                                                                                                                                                                                                                                                                                  |
 | 63-64  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're a bard who wishes to compose a song about the hero's deeds. The NPC is to ingratiate themself to the hero while contributing nothing to the actual project.                                                                                                                                                                                                                      |
 | 65-66  | After the roll, a physical project source or a component of the project creates an unstable portal to another world related to the nature of the project. Tiny [devils](scc:mcdm.heroes.v1/ancestry/devil), elementals, or other creatures start clawing their way out of the item and causing mischief.                                                                                                                                                                                                                                             |
@@ -23567,7 +23567,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 89-90  | After the roll, the hero completes their work on the project earlier than expected, and can either relax or go carousing with other heroes who are free. The hero and every character who joins them starts the next encounter with 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).                                                                                                                                                                                                                                                       |
 | 91-92  | Before the roll, the hero is approached by a wagoneer who needs help fixing their wagon. If the hero helps, they find out that the wagoneer is allied with the campaign's villain. If the hero doesn't attack or threaten the wagoneer, then in some future combat, an NPC of the Director's choice turns out to be a friend or relative of the wagoneer. They leave the battle peacefully when they recognize the hero.                                                                                        |
 | 93-94  | After the roll, the project source and any evidence of the project disappear into thin air. Any investigation of the area turns up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
-| 95-96  | After the roll, the hero suddenly no longer understands or comprehends the project source after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its project rolls for the next two respites. If they leave the project alone for the next two respites, they'll be able to comprehend the research again, gaining an automatic breakthrough before the next project roll.                                                                                      |
+| 95-96  | After the roll, the hero suddenly no longer understands or comprehends the project source after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its project rolls for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite). If they leave the project alone for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite), they'll be able to comprehend the research again, gaining an automatic breakthrough before the next project roll.                                                                                      |
 | 97-98  | Before the roll, part of the hero's project source or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
 | 99-100 | Before the roll, an elemental springs forth from the project source and pulls the hero into a duel. If the hero can survive 3 rounds of combat with the elemental on their own, the elemental vanishes and leaves behind a completed project. If the hero flees, falls unconscious, or gets help from an ally, the elemental destroys the project source as they disappear.                                                                                                                                     |
 
@@ -23597,7 +23597,7 @@ Additionally, while you work to complete this project, you might be called upon 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Before the roll, an old colleague from the hero's past asks the hero to give up adventuring and come back to their former career. A hero who reaffirms their intent to remain a hero gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). However, if they do so—or if they lie to say they will return to their old career—the project goal increases by 50 points as their old colleague refuses to help them.                                       |
-| 2   | After the roll, the hero is hurt on the job. They end the respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                                                                                                                                                 |
+| 2   | After the roll, the hero is hurt on the job. They end the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                                                                                                                                                 |
 | 3   | Before the roll, the hero stumbles upon an individual seeking guidance about entering the same career as the hero. If the hero forgoes their project roll to help this NPC, the individual becomes one of the hero's followers, which they gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The follower is an artisan or a sage depending on the hero's career, as the Director determines. |
 | 4   | After the roll, the hero finds inspiration from their old life that helps out with a different project they or another hero are currently working on. The hero working on the second project can immediately make a project roll for that project.                                                                                                                                                                    |
 | 5   | Before the roll, the hero stumbles into a negative aspect of their career that they forgot was particularly grueling. If the project roll is 11 or lower, it is halved.                                                                                                                                                                                                                                               |
@@ -23640,11 +23640,11 @@ When you seek to learn from a master, you choose the goal you wish to work on as
 | 1   | After the roll, the hero experiences a revelation and all their training snaps into place. The hero makes two additional project rolls for this project.                                                                                                                                                                                                        |
 | 2   | Before the roll, the master dies midway through training, or the lore they left behind is found to be incomplete. To complete the project, the hero must seek out another master who was trained by the first master, or find another copy of the records of their teaching. Before the roll, the hero discovers that although the master's knowledge is sound, |
 | 3   | they are less adept at the teaching of that knowledge. The project requires an additional 50 project points to complete.                                                                                                                                                                                                                                        |
-| 4   | Before the roll, the master requires the hero's aid with manual labor before their training can begin. The hero must spend this respite completing that labor, earning a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for their efforts instead of making a project roll.                                                                                                                         |
-| 5   | Before the roll, the hero must undertake the master's grueling training regimen. The hero rolls an additional d10 for the project roll during this respite, but at the end of the respite, they regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                           |
+| 4   | Before the roll, the master requires the hero's aid with manual labor before their training can begin. The hero must spend this [respite](scc:mcdm.heroes.v1/rule.resource/respite) completing that labor, earning a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for their efforts instead of making a project roll.                                                                                                                         |
+| 5   | Before the roll, the hero must undertake the master's grueling training regimen. The hero rolls an additional d10 for the project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), but at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite), they regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                           |
 | 6   | After the roll, the hero's relationship with the master deepens. In addition to the current project, the master provides information relevant to the hero's goals, another project, or a surprising connection to a mystery from the hero's past.                                                                                                               |
 | 7   | Before the roll, the hero discovers that the master has been working with an enemy of the hero by covertly providing them information about the hero's activities. The hero can continue learning from the master, but risks exposing themself and their allies to danger by doing so.                                                                          |
-| 8   | After the roll, an accident, fire, or other natural disaster disrupts the hero's training. The project points rolled for this respite are halved, but if the hero acts to stop the disaster, their heroism sees them earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                             |
+| 8   | After the roll, an accident, fire, or other natural disaster disrupts the hero's training. The project points rolled for this [respite](scc:mcdm.heroes.v1/rule.resource/respite) are halved, but if the hero acts to stop the disaster, their heroism sees them earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                             |
 | 9   | After the roll, the master gifts the hero with an item prerequisite for a crafting project.                                                                                                                                                                                                                                                                     |
 | 10  | After the roll, the hero uncovers a secret in their studies, something that the master had never anticipated or that their teachings hadn't covered. The project goal is halved.                                                                                                                                                                                |
 
@@ -23707,12 +23707,12 @@ When you start this project, choose a skill taught by the project source. When t
 
 When you start this project, you choose a recipe for a specific type of dish. The item prerequisite for the project is the ingredients required, which depend on the recipe and which might be difficult to acquire depending on the recipe and its place of origin. You gain a +3 bonus to the project roll if the recipe is one from your culture.
 
-When you complete the project, you can make five servings of food from the recipe as a respite activity whenever you have access to the ingredients. You and other creatures taking a respite with you can eat a serving of the food and gain its benefits (see below).
+When you complete the project, you can make five servings of food from the recipe as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity whenever you have access to the ingredients. You and other creatures taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you can eat a serving of the food and gain its benefits (see below).
 
-A creature who eats a serving of food from a particular type of recipe gains one of the following benefits, which lasts until the creature takes another respite.
+A creature who eats a serving of food from a particular type of recipe gains one of the following benefits, which lasts until the creature takes another [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 - **Comforting:** When the creature fails a saving throw, they can choose to succeed instead. This benefit then ends.
-- **Hearty:** The creature increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 at the end of the respite in which the food is consumed.
+- **Hearty:** The creature increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite) in which the food is consumed.
 - **Supernatural Power:** The creature temporarily increases one of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1 (to a maximum of 6).
 
 A creature can benefit from the food of only one recipe at a time, and can't benefit from more than one serving of a recipe at a time.
@@ -23754,9 +23754,9 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 4   | Before the roll, a sympathetic NPC—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 bonus to the project roll.                                                                                                                                                                                                                                         |
 | 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the project roll. |
 | 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all project rolls they make are halved.                                                                                                                                                                                                                                                                       |
-| 7   | After the roll, a saint blesses the hero's work. The hero feels supernaturally rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite. If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
+| 7   | After the roll, a saint blesses the hero's work. The hero feels supernaturally rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
 | 8   | Before the roll, the hero becomes aware of a previously unknown radenwight warren within the community, which has the potential to become a point of tension and conflict. The hero must engage with the radenwights and other locals to create understanding between the two communities or take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the project roll.                                                                                                    |
-| 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the respite) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
+| 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the [respite](scc:mcdm.heroes.v1/rule.resource/respite)) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
 | 10  | Before the roll, a thief, assassin, or other criminal offers to assist the hero. They can offer 50 points toward the completion of the project, as long as the hero looks the other way if they ever cross paths again.                                                                                                                                                                                                          |
 
 <!-- @type: project -->
@@ -23773,16 +23773,16 @@ While undertaking this project, you provide help to people in need, doing odd jo
 Whether for sustenance, relaxation, or bragging rights, you've gone fishing, provided you are near a body of water. The project roll for this project has the following changes:
 
 - The project points earned by your roll represent the relative size of the fish (or some other fishlike creature) you catch.
-- During each respite when you undertake this activity, you continue making project rolls until you obtain a tier 1 outcome (indicating that a fish got away, earning you no points) or a breakthrough.
+- During each [respite](scc:mcdm.heroes.v1/rule.resource/respite) when you undertake this activity, you continue making project rolls until you obtain a tier 1 outcome (indicating that a fish got away, earning you no points) or a breakthrough.
 - When you obtain a breakthrough, the Director rolls on the Fishing Events table rather than you gaining points from the roll and making another project roll.
-- When you've made your last Fishing project roll for the respite, you can spend the project points you accrued on a reward from the Tackle table. Any points you don't spend during the current respite are lost.
+- When you've made your last Fishing project roll for the [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend the project points you accrued on a reward from the Tackle table. Any points you don't spend during the current [respite](scc:mcdm.heroes.v1/rule.resource/respite) are lost.
 
 ##### Tackle Table
 
 | Reward                  | Cost | Effect                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hearty meal (1 serving) | 50   | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite. A creature can benefit from only one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time.                                                                                                       |
-| Great meal (1 serving)  | 100  | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite, and gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
+| Hearty meal (1 serving) | 50   | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). A creature can benefit from only one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time.                                                                                                       |
+| Great meal (1 serving)  | 100  | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | Better tackle           | 120  | You gain the following title and benefit. <br/>**Angler:** You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on Fishing project rolls.                                                                                                                                                                                                                                                                                                     |
 | Fishing event           | 200  | You roll on the Fishing Events table.                                                                                                                                                                                                                                                                                                                                                                     |
 | Legendary fisher        | 300  | You gain the following title and benefit. <br/>**Goldenrod:** Each time you undertake the Fishing project, you can reroll one project roll.                                                                                                                                                                                                                                                               |
@@ -23794,12 +23794,12 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 | 1   | While fishing, the hero reels in a talking fish. The fish informs the hero of any events that have occurred within 10 squares of the body of water where they were caught over the last week, or provides one piece of Forbidden Knowledge (see the Discover Lore project), as the Director determines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | 2   | While fishing, the hero reels in a note in a bottle. The note is written in Anjali and binds the reader into a deal with a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil) if read out loud. This gives the [devil](scc:mcdm.heroes.v1/ancestry/devil) ownership of the reader's soul in exchange for rolling an additional d10 on all future Fishing project rolls.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 3   | While the hero is fishing, passersby inform them of a rumor of a magic fishing rod that allows the fisher to double the size of the fish they reel in. The Director can decide whether the rumor is true, and if so, where the rod might be found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 4   | While fishing, the hero reels in an **angulotl daybringer** (see *Draw Steel:  Monsters*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite, and gains 25 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
+| 4   | While fishing, the hero reels in an **angulotl daybringer** (see *Draw Steel:  Monsters*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and gains 25 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | 5   | While fishing, the hero reels in half of a mysterious ancient treasure of the Director's choice. If the other half is found, both halves magically meld together to restore the treasure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 7   | The hero reaches a new fishing milestone, gaining the following title and benefit.<br/>**Master of Reels:** Whenever you deal damage to a target who is 2 or more squares away from you and that target isn't also [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can pull the target a number of squares equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score (your choice).                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 8   | While fishing, the hero engages in relaxing meditation that grants an automatic breakthrough on another project they're working on. Alternatively, they gain insight that grants an automatic breakthrough on another hero's project of their choice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current [respite](scc:mcdm.heroes.v1/rule.resource/respite) with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 10  | While fishing, the hero notes what appears to be an underwater cavern. If the cavern is explored, it reveals a treasure of the Director's choice guarded by a [revenant](scc:mcdm.heroes.v1/ancestry/revenant) knight fulfilling their duty until their captain returns.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <!-- @type: project -->
@@ -23813,14 +23813,14 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 
 **Project Goal:** 60
 
-You revitalize your spirit by spending time with people you love who you haven't seen in a long while. You must be able to communicate with those people to undertake this project or make project rolls for it. When you complete this project, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 12 + your level until the end of your next respite, and you can't start another Spend Time With Loved Ones project for a month.
+You revitalize your spirit by spending time with people you love who you haven't seen in a long while. You must be able to communicate with those people to undertake this project or make project rolls for it. When you complete this project, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 12 + your level until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and you can't start another Spend Time With Loved Ones project for a month.
 
 ###### Spend Time With Loved Ones Events Table
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                           |
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Before the roll, the hero is presented with an heirloom, artifact, or secret that aids another project they've undertaken or want to undertake. They can immediately make a project roll for that project as well as for this one.                                                                                                                                              |
-| 2   | Before the roll, the hero's people embrace their loved one's companions as their own. Additional party members can make one project roll each for this project without doing so as a respite activity. When the project is completed, each character who contributed a project roll gains the benefit of completion.                                                            |
+| 2   | Before the roll, the hero's people embrace their loved one's companions as their own. Additional party members can make one project roll each for this project without doing so as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. When the project is completed, each character who contributed a project roll gains the benefit of completion.                                                            |
 | 3   | Before the roll, the hero's enemies track them to the home or community of their loved ones. These enemies immediately launch an attack, hoping to catch the hero off guard.                                                                                                                                                                                                    |
 | 4   | After the roll, the hero learns that a distant friend or family member has joined the cause of their enemies. Their loved ones plead with the hero to bring this person back home safely.                                                                                                                                                                                       |
 | 5   | After the roll, a loved one gives the hero a consumable treasure to aid them in their travels.                                                                                                                                                                                                                                                                                  |
@@ -23915,7 +23915,7 @@ Your character can carry any number of consumables at a time.
 >
 > The rules for using treasures refer to lots of other parts of the game. You can find information on specific topics as follows:
 >
-> [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), respites, [Victories](scc:mcdm.heroes.v1/rule.resource/victories): Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
+> [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), [respites](scc:mcdm.heroes.v1/rule.resource/respite), [Victories](scc:mcdm.heroes.v1/rule.resource/victories): Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)
 >
 > Languages: Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)
 >
@@ -23987,7 +23987,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you rub the balm on your body and feel it tingle across your skin. You immediately end the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) conditions on yourself, and you gain a +2 bonus to speed until the start of your next turn.
+**Effect:** As a maneuver, you rub the balm on your body and feel it tingle across your skin. You immediately end the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) conditions on yourself, and you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the start of your next turn.
 
 <!-- @type: treasure -->
 ##### Catapult Dust
@@ -24131,7 +24131,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Goal:** 45
 
-**Effect:** When activated as a maneuver, this item erupts in a bright flash, you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) 15, a 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic), and a speed and [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to yours. They appear indistinguishable from you but can't use any abilities.
+**Effect:** When activated as a maneuver, this item erupts in a bright flash, you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) 15, a 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic), and a [speed](scc:mcdm.heroes.v1/rule.character/speed) and [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to yours. They appear indistinguishable from you but can't use any abilities.
 
 While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to your homunculus, you can use a maneuver to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
@@ -24248,7 +24248,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 90
 
-**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability). Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. This effect and the bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
+**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability). Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. This effect and the bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: treasure -->
 ##### Concealment Potion
@@ -24316,9 +24316,9 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 90
 
-**Effect:** As a respite activity, you repeatedly chant the contents of this scroll over the remains of a creature who has been dead for less than 1 year. The creature's soul must be willing to return to life for the scroll to work. If they are not willing, you instinctively understand that as you start the respite activity and can cease it immediately. The scroll is not consumed, and you can undertake a new respite activity.
+**Effect:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you repeatedly chant the contents of this scroll over the remains of a creature who has been dead for less than 1 year. The creature's soul must be willing to return to life for the scroll to work. If they are not willing, you instinctively understand that as you start the [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity and can cease it immediately. The scroll is not consumed, and you can undertake a new [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
-A creature with a willing soul returns to life at the end of the respite with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and half their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). You regain only half your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) at the end of the respite, and the scroll is consumed.
+A creature with a willing soul returns to life at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and half their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). You regain only half your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite), and the scroll is consumed.
 
 <!-- @type: treasure -->
 ##### Telemagnet
@@ -24433,7 +24433,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 120
 
-**Effect:** The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a maneuver to manually light and burn the effigy and bring the creature back to life. The creature returns to life with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [winded](scc:mcdm.heroes.v1/rule.health/winded) value and 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next respite. If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.
+**Effect:** The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a maneuver to manually light and burn the effigy and bring the creature back to life. The creature returns to life with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [winded](scc:mcdm.heroes.v1/rule.health/winded) value and 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.
 
 <!-- @type: treasure -->
 ##### Stygian Liquor
@@ -24755,7 +24755,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to speed until the end of your current turn. After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
+**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your current turn. After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
 
 <!-- @type: treasure -->
 ##### Mask of the Many
@@ -24913,7 +24913,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Goal:** 300
 
-**Effect:** While you wear this necklace, you can breathe underwater, you can automatically swim at full speed while moving, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by water or in marsh and similar terrain.
+**Effect:** While you wear this necklace, you can breathe underwater, you can automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by water or in marsh and similar terrain.
 
 <!-- @type: treasure -->
 ##### Scannerstone
@@ -24950,7 +24950,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 **Effect:** As a maneuver, you toss the coin in the air and let it fall to the ground in front of you. Roll a d3 to determine the coin's effect, depending on which face shows when it lands:
 
 - **1-Red:** The area within 2 squares of you is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of your next turn.
-- **2-Green:** You and each ally who starts their turn within 2 squares of you gains a +1 bonus to speed until the end of your next turn.
+- **2-Green:** You and each ally who starts their turn within 2 squares of you gains a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your next turn.
 - **3-Spinning Coin:** Both the red and green effects occur while the coin continuously spins.
 
 The coin must be picked up before it can be used again. If any creature picks up the coin, its effects immediately end.
@@ -25135,7 +25135,7 @@ Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. Yo
 
 Your connection with leveled treasures doesn't just make them useful. It also makes them dangerous. Each leveled treasure is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three leveled treasures at a time. If you carry more leveled treasures, those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
 
-It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each respite:
+It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each [respite](scc:mcdm.heroes.v1/rule.resource/respite):
 
 - **≤11:** One of your leveled treasures (chosen by the Director) grabs hold of your psyche. It forces you to sleepwalk or otherwise enter an active fugue state and discard the rest of your leveled treasures in locations you can't remember. If you want those items back, you'd better get looking before someone else finds them.
 - **12-16:** Your items work together to prevent you from moving until you pick three items and leave the rest behind.
@@ -25186,7 +25186,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can automatically swim at full speed while moving, and you can breathe underwater for up to 1 hour. Returning to the surface to breathe air again for any length of time reset's the armor's water-breathing benefit.
+**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, and you can breathe underwater for up to 1 hour. Returning to the surface to breathe air again for any length of time reset's the armor's water-breathing benefit.
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and you have cold immunity 5. Additionally, whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during each of your turns.
 
@@ -25253,7 +25253,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, when you capture a moment of time in the armor, the triggering creature also takes corruption damage equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to speed that lasts until the end of your next turn.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) that lasts until the end of your next turn.
 
 <!-- @type: treasure -->
 ##### Paper Trappings
@@ -25786,7 +25786,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **5th Level:** The weapon's extra psychic damage increases to 2. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) and can move up to 2 squares before or after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
-**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to move up to your speed and make either a signature ability strike or a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, if you reduce a creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) using the weapon, you can use a maneuver to move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) and make either a signature ability strike or a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
@@ -25808,7 +25808,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this ring, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Additionally, during a respite, you can touch the ring to any number of other Bloodbound Bands worn by willing creatures to form a bond among all of you. Creatures related by blood can't form bonds in this way. Bonded creatures can each use the highest [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) of any bonded creature in place of their own, and can spend each other's [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) as if they were their own. Whenever any other bonded creature takes damage, each bonded creature takes 1 damage that can't be reduced in any way. Your bond ends if you remove the ring, use it to bond with one or more other creatures, or die, but other rings continue to be bonded to each other.
+**1st Level:** While you wear this ring, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Additionally, during a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can touch the ring to any number of other Bloodbound Bands worn by willing creatures to form a bond among all of you. Creatures related by blood can't form bonds in this way. Bonded creatures can each use the highest [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) of any bonded creature in place of their own, and can spend each other's [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) as if they were their own. Whenever any other bonded creature takes damage, each bonded creature takes 1 damage that can't be reduced in any way. Your bond ends if you remove the ring, use it to bond with one or more other creatures, or die, but other rings continue to be bonded to each other.
 
 **5th Level:** The ring's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2.
 
@@ -25838,7 +25838,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 <!-- @type: treasure -->
 ##### Lightning Treads
 
-*Sparks strike from these boots whenever they touch the ground, increasing in number as the wearer gathers speed.*
+*Sparks strike from these boots whenever they touch the ground, increasing in number as the wearer gathers [speed](scc:mcdm.heroes.v1/rule.character/speed).*
 
 **Keywords:** Feet, Magic
 
@@ -25850,7 +25850,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear these boots, any weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 lightning damage. Additionally, you gain a +2 bonus to speed.
+**1st Level:** While you wear these boots, any weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 lightning damage. Additionally, you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 **5th Level:** The extra lightning damage granted by the treads increases to 2. Additionally, for each square you move on your turn before you use a weapon ability that deals rolled damage using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), this extra damage increases by 1 (to a maximum of 4).
 
@@ -25964,7 +25964,7 @@ When the Mortal Coil is left unattended or is in the possession of a creature wh
 
 **One Foot in the Grave:** Any creature in the penumbra has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 2 and can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-**Get Busy Dyin':** Each creature in the penumbra ages at 10 times the usual rate, and diseases and poisons affecting creatures in the penumbra run their course at 10 times their usual rate. A creature with no natural maximum lifespan permanently reduces their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum by 10 each year. Each creature can undertake one additional respite activity during each respite.
+**Get Busy Dyin':** Each creature in the penumbra ages at 10 times the usual rate, and diseases and poisons affecting creatures in the penumbra run their course at 10 times their usual rate. A creature with no natural maximum lifespan permanently reduces their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum by 10 each year. Each creature can undertake one additional [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity during each [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 **If You Meet God on the Road, Kill Them:** Every non-mortal entity in the penumbra is granted the gift of mortality. Previously immortal or invulnerable entities—from planar creatures to the gods themselves can be killed while in the penumbra, though not necessarily easily. Any creature or entity who dies in the Mortal Coil's penumbra experiences perfect death. They are permanently, irrevocably dead, and no magic, psionics, or technology can restore them to life.
 
@@ -26079,7 +26079,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 *Stay out all night, visit the dives. Get in a fight, run from the cops. That's the real city.*
 
-**Prerequisite:** You have spent at least five respites in a metropolis.
+**Prerequisite:** You have spent at least five [respites](scc:mcdm.heroes.v1/rule.resource/respite) in a metropolis.
 
 **Effect:** Choose one of the following benefits:
 
@@ -26133,8 +26133,8 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 Additionally, the Director assigns you one of the following benefits, as appropriate to the faction in question. The Director can also create a custom benefit for a type of faction not noted here. You can use this benefit only in a settlement where your faction has a presence, and once you use this benefit, you can't use it again until you complete a task for your faction.
 
-- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 minutes each and don't need to be made during a respite.
-- *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 uninterrupted minutes each and don't need to be made during a respite.
+- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+- *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 uninterrupted minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Martial Faction:* You recruit up to three minions with levels no greater than your own, of a type appropriate for the faction (such as **[human](scc:mcdm.heroes.v1/ancestry/human) guards**). These minions follow your orders for a day.
 - *Spy Faction:* You find an agent who can provide you with three pieces of information about the settlement you're in, such as the location of a hidden person, a secret entrance into a guarded area, or the negotiation motivation or pitfall of an important person.
 
@@ -26151,7 +26151,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 - *Easy Marks:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using skills from the interpersonal and intrigue skill groups when influencing members of a community that you have saved.
 - *Local Fame:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
-- *A New Dawn:* Each time you finish a respite while in a community you have saved, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). This [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) disappears at the end of your next respite if it hasn't been used.
+- *A New Dawn:* Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) while in a community you have saved, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). This [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) disappears at the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it hasn't been used.
 
 > **[Renown](scc:mcdm.heroes.v1/rule.resource/renown) and [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth)**
 >
@@ -26255,7 +26255,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 The Director chooses one of the following benefits, based on the fate your captors have in mind for you. Each hero gains the same benefit. Additionally, you must face an encounter, [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), or adventure related to the benefit, as the Director determines.
 
 - *Gladiators:* You must fight to the death for your captors' amusement. Your intended opponents wield or guard a trinket or leveled treasure, which you can earn if you are victorious.
-- *Prey:* Your captors plan to release you and hunt you down, but it's no fun unless you offer a challenge. Each of you is given a medicinal draught that grants a +1 bonus to speed and increases your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2. This benefit lasts until the end of your next respite.
+- *Prey:* Your captors plan to release you and hunt you down, but it's no fun unless you offer a challenge. Each of you is given a medicinal draught that grants a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and increases your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2. This benefit lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Sacrifices:* You are to be dropped in a volcano, fed to a sacred monster, abandoned in a desert, or otherwise sacrificed to a higher power. You are bedecked with holy jewelry. Each hero earns 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 - *Saviors:* Your captors fear an even stronger foe, and they want you to defeat this enemy for them. You can even keep any treasure you find while doing so.
 
@@ -26268,7 +26268,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 **Effect:** Choose one of the following benefits:
 
-- *Deep-Sea Diver:* You can automatically swim at full speed while moving.
+- *Deep-Sea Diver:* You can automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
 - *Ship Speaker:* You magically know the location of any ship controlled by your party even while you aren't aboard. You can telepathically communicate with anyone on board one of your ships who understands a language, and they can respond, no matter your [distance](scc:mcdm.heroes.v1/rule.combat/distance) from the ship.
 - *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to each other. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made while negotiating in this way.
 - *Trained Crewmember:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to handle air or sea vessels.
@@ -26552,7 +26552,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Arcane Improvisation:* When you use a damage-dealing magic signature ability, you can change its [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to acid, cold, corruption, fire, lightning, poison, or sonic damage.
-- *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.
+- *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 - *Picked Up a Few Things:* You know a skill from the lore skill group.
 - *Polyglot:* You know two languages. Additionally, the project goal for the Learn New Language project is halved for you.
 
@@ -26600,7 +26600,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 **Effect:** You return to life 1 minute after being killed with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. You gain corruption immunity equal to your level and one of the benefits below, based on the type of creature who killed you. If you die again, you rise as an undead creature under the Director's control.
 
-- *Ghoul or Vampire:* When you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can bite that creature. If you do so and obtain a tier 3 outcome, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
+- *Ghoul or Vampire:* When you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can bite that creature. If you do so and obtain a tier 3 outcome, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Incorporeal Undead:* You can move through other creatures and objects. The first time in a combat round that you pass through a creature, that creature takes corruption damage equal to half your level. You don't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 - *Other Corporeal Undead:* When you are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire or holy damage and your body isn't destroyed, you can regain half your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [fall prone](scc:mcdm.heroes.v1/condition/prone). Once you use this benefit, you can't use it again until you earn 10 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -26693,14 +26693,14 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *First Mate:* You have a pirate retainer, such as a **[human](scc:mcdm.heroes.v1/ancestry/human) warrior**, chosen by the Director from *Draw Steel: Monsters*. This retainer's level increases to your level.
-- *[Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler):* You can automatically climb at full speed while moving
+- *[Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler):* You can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving
 - *Treasure Keeper:* You earn 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 - *Weather Wizard:* Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Choose from one of the following weather types:
   - *Calm:* Wind-powered vessels and technology cease working
   - *Fog:* Visibility is reduced to 6 squares.
-  - *High Winds:* The speed of wind-powered vessels is doubled.
+  - *High Winds:* The [speed](scc:mcdm.heroes.v1/rule.character/speed) of wind-powered vessels is doubled.
   - *Light Winds:* No effects due to weather.
-  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test). On a failure, the vessel needs repairs and moves at half speed until those repairs are made.
+  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test). On a failure, the vessel needs repairs and moves at half [speed](scc:mcdm.heroes.v1/rule.character/speed) until those repairs are made.
 
 <!-- @type: title -->
 #### Maestro
@@ -26855,7 +26855,7 @@ Additionally, choose one of the following benefits:
 
 - *Cosmic Revelation:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) with a skill from the lore skill group and obtain a tier 1 or tier 2 outcome, you can instead obtain a tier 3 outcome. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Mind Over Matter:* Whenever you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can end one condition on yourself.
-- *Rearrange the Game Pieces:* You can reach behind the curtain and alter reality. At the start of combat, choose yourself or any creature within 5 squares. The chosen target must move up to their speed to a space you choose, but can't enter [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) or terrain that could impose a condition on them. The target doesn't appear to move or [teleport](scc:mcdm.heroes.v1/movement/teleport) to that space—they are simply there. No one but you has any memory of the target's previous position.
+- *Rearrange the Game Pieces:* You can reach behind the curtain and alter reality. At the start of combat, choose yourself or any creature within 5 squares. The chosen target must move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) to a space you choose, but can't enter [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) or terrain that could impose a condition on them. The target doesn't appear to move or [teleport](scc:mcdm.heroes.v1/movement/teleport) to that space—they are simply there. No one but you has any memory of the target's previous position.
 
 <!-- @type: title -->
 #### Forsaken
@@ -26942,7 +26942,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 **Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Bounce Back Fast:* Whenever you rest for 8 hours or more, you can gain the benefit of a respite. Once you use this benefit, you can't use it again until you have taken a regular respite.
+- *Bounce Back Fast:* Whenever you rest for 8 hours or more, you can gain the benefit of a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Once you use this benefit, you can't use it again until you have taken a regular [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Reserves of Strength:* Your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) is half your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)
 - *Undying:* You can't be affected by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
 
@@ -26981,7 +26981,7 @@ In most campaigns, the Director sets the characters up to earn 1 [Renown](scc:mc
 
 Your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) score allows you to attract and employ followers who perform different duties or favors for you. The [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and Followers table shows how many followers a hero can have at one time based on [Renown](scc:mcdm.heroes.v1/rule.resource/renown). You can always let go of a follower in your employ to hire a new one.
 
-You can recruit followers up to the maximum your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) allows as a respite activity, provided you are in a place or have a means of communication that allows you to recruit such followers.
+You can recruit followers up to the maximum your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) allows as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, provided you are in a place or have a means of communication that allows you to recruit such followers.
 
 ###### Renown and Followers Table
 
@@ -27004,7 +27004,7 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 ##### Artisan
 
-Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
+Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 1 (your choice), a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
@@ -27017,7 +27017,7 @@ Rules for retainers are found in *Draw Steel: Monsters*.
 
 ##### Sage
 
-Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
+Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
@@ -27954,7 +27954,7 @@ Then, crackling across every signal unit, a voice. "COME FORTH LADY MAGNETAR, CH
 
 It was Kalisdrossa, still wearing the helmet that marked her captain of Sword Squadron, holding in her hand the blue-topaz Fusion Rod—a powerful artifact that would serve as her weapon, and the symbol of her office as Herald of Nebular.
 
-Lady Magnetar flew across the void of space at lightning speed, evaporating protean fighters as she went. Until finally she faced Grotenhulk the Evolver, his maw poised to envelop the UNISOL capital ship.
+Lady Magnetar flew across the void of space at lightning [speed](scc:mcdm.heroes.v1/rule.character/speed), evaporating protean fighters as she went. Until finally she faced Grotenhulk the Evolver, his maw poised to envelop the UNISOL capital ship.
 
 She punched a hole right through the hullskin of the changeship and battled her way, deck by deck, toward the heart of the beast. Though a thousand protean soldiers stood in her way, none could touch her or slow her relentless progress.
 
@@ -28173,7 +28173,7 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 ### House Rules
 
-You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
+You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a [respite](scc:mcdm.heroes.v1/rule.resource/respite) last 8 hours, or perhaps a [respite](scc:mcdm.heroes.v1/rule.resource/respite) should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
 
 The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
 
@@ -28224,7 +28224,7 @@ You can run many different types of campaigns in *Draw Steel*, with some of the 
 
 The long arc is a campaign model in which one villain or organization is behind almost every threat the heroes face. If every adventure sees the heroes battle the forces of Ajax or the vampire Count Rhodar von Glaur before eventually facing this main villain in their final adventure, then you've got yourself a long-arc campaign. Long arcs allow the heroes to learn of and even meet the villain several times before the final showdown, allowing for the creation of personal drama with the main antagonist and their underlings.
 
-If you're planning on running a long-arc campaign, you might want to make sure the villain's threat is quieter at certain times. Doing so gives the heroes a chance to take a respite now and then and work on their downtime projects.
+If you're planning on running a long-arc campaign, you might want to make sure the villain's threat is quieter at certain times. Doing so gives the heroes a chance to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) now and then and work on their downtime projects.
 
 ##### Adventure of the Week
 
@@ -28408,11 +28408,11 @@ When you create a specific site, ask the following questions in addition to the 
 
 #### Plan Scenes
 
-Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), negotiations, respites, and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
+Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), negotiations, [respites](scc:mcdm.heroes.v1/rule.resource/respite), and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
 
 When you're thinking about scenes, write down which sites and NPCs are tied to those scenes, then try to arrange the scenes in an order that makes sense for the story. It might be that after your inciting incident, certain scenes can be tackled in any order. For example, if the adventure goal is to recover three pieces of an ancient staff before the villain does, the heroes might be able to explore the three sites where the pieces are hidden in any order they choose. Their choice might even have consequences. It might be that the first site they choose has none of the villain's lackeys investigating it yet, the second site features a showdown with those lackeys, and the third site has already been cleaned out by the villain by the time the characters get there! Other scenes might have to happen more linearly. An investigation typically includes a trail of clues that takes the heroes from one scene to the next, but the players can surprise you.
 
-Don't get married to the order in which you plan your scenes. If the heroes have terrible luck with dice in a couple of combat encounters, they might stop to take a respite and regain their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) before you anticipated they would. If the heroes are unraveling a mystery, they might make unexpected deductions or good guesses that allow them to skip a scene altogether! This is part of the fun of the game. The dice and the players will surprise you.
+Don't get married to the order in which you plan your scenes. If the heroes have terrible luck with dice in a couple of combat encounters, they might stop to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) and regain their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) before you anticipated they would. If the heroes are unraveling a mystery, they might make unexpected deductions or good guesses that allow them to skip a scene altogether! This is part of the fun of the game. The dice and the players will surprise you.
 
 Embrace this unpredictability by keeping an open mind as you plan out your scenes and allowing yourself to be flexible. Odds are that a combat encounter the characters skipped over during one session can be tweaked and moved to another session, so don't sweat it. The game is most rewarding for you and the other players if you let the heroes' choices and actions mean something and affect the game.
 
@@ -28457,7 +28457,7 @@ When preparing an exploration scene, you'll want to come up with answers to the 
 - What information or objects do the heroes need to recover in this scene that will help them advance the story?
 - What bonus pieces of information and other rewards can they earn during this scene if they explore fully and successfully?
 
-Information or objects the heroes need to obtain from an exploration scene to advance the story should have some way of being found without a [test](scc:mcdm.heroes.v1/rule.test/test). Simply by entering a monarch's private chambers, the heroes learn that the king is dead and has been slain by a knife, because his body and the murder weapon are plainly visible. They should also automatically notice that the knife bears the crest of a noble house, providing an obvious path to continue the adventure. Other details in the room might help speed along their investigation of who killed the king, but they can find the bare minimum of what they need to continue for free.
+Information or objects the heroes need to obtain from an exploration scene to advance the story should have some way of being found without a [test](scc:mcdm.heroes.v1/rule.test/test). Simply by entering a monarch's private chambers, the heroes learn that the king is dead and has been slain by a knife, because his body and the murder weapon are plainly visible. They should also automatically notice that the knife bears the crest of a noble house, providing an obvious path to continue the adventure. Other details in the room might help [speed](scc:mcdm.heroes.v1/rule.character/speed) along their investigation of who killed the king, but they can find the bare minimum of what they need to continue for free.
 
 It's okay for a [test](scc:mcdm.heroes.v1/rule.test/test) to be the *best* way to get necessary information or objects. But if the heroes fail or don't make the [test](scc:mcdm.heroes.v1/rule.test/test), make sure there's another way—likely a more difficult way—for the story to continue. When searching a necromancer's tower for a book that will help stop a ritual, characters might miss all the clues pointing to the book. But they can later run into the necromancer's apprentices, who know where the book is—and who aren't willing to give up that information without a difficult fight.
 
@@ -28599,7 +28599,7 @@ Some hazards deal effects in addition to or instead of damage. A hazard that is 
 
 - A character loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 - A curse leaves a character with a demonic-sounding voice that imposes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test).
-- A character receives a gaping wound that causes them to take 1d10 damage whenever they roll a natural 2 before they next finish a respite.
+- A character receives a gaping wound that causes them to take 1d10 damage whenever they roll a natural 2 before they next finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - A character is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed into the middle of a nearby body of water.
 
 But although lasting and interesting consequences are fun, make sure they don't derail your story to the point where the whole game becomes about solving the problems created by a hazard—unless your group thinks that's fun!
@@ -29190,7 +29190,7 @@ The wilds hold unknown dangers. Characters need to figure out the best route whi
 The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
-- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift.
+- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's [speed](scc:mcdm.heroes.v1/rule.character/speed). *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift.
 - **Find the Path:** Avoiding getting lost is a major challenge for the characters. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alertness, Nature, Navigate.
 - **Keep Up Spirits:** Characters can keep up the party's morale during a forced march with cheer and song. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lead, Music, Perform.
 - **Keep Watch:** Characters must be on constant guard against danger. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Eavesdrop, Track.
@@ -29215,47 +29215,47 @@ One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.te
 
 ### Running Respites
 
-When the heroes decide to take a respite (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), your role as Director changes a bit. Most of the heroes' activities during respites revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
+When the heroes decide to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), your role as Director changes a bit. Most of the heroes' activities during [respites](scc:mcdm.heroes.v1/rule.resource/respite) revolve around downtime projects, which are typically self-directed. However, you still have levers you can pull to make the story interesting.
 
 #### Safe Place
 
-Heroes can't take a respite unless they're in a safe place. This typically means a place with a bed and four walls and a roof around them, where they're unlikely to get stabbed in their sleep. Characters aren't going to find 24 hours of peace to take a respite in a villain's lair, even if they barricade a door. However, this can become more of a gray area if the heroes attempt to take a respite while traveling in the wild.
+Heroes can't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) unless they're in a safe place. This typically means a place with a bed and four walls and a roof around them, where they're unlikely to get stabbed in their sleep. Characters aren't going to find 24 hours of peace to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a villain's lair, even if they barricade a door. However, this can become more of a gray area if the heroes attempt to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) while traveling in the wild.
 
-"Why can't we camp in this seemingly peaceful wode for a day?" is the kind of thing you might decide is fine if you want the characters to be able to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Alternatively, you might want them to work harder for those resources, marking the wode as a dangerous place in the story. If the players want the heroes to take a respite in a place you deem unsafe, let them know it's impossible to get any meaningful rest or make progress on projects in that place while remaining constantly on guard for danger.
+"Why can't we camp in this seemingly peaceful wode for a day?" is the kind of thing you might decide is fine if you want the characters to be able to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Alternatively, you might want them to work harder for those resources, marking the wode as a dangerous place in the story. If the players want the heroes to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a place you deem unsafe, let them know it's impossible to get any meaningful rest or make progress on projects in that place while remaining constantly on guard for danger.
 
 #### Too Many Respites?
 
-It's up to the players how many respites the heroes take in a row. Characters eager to take a long series of respites to undertake downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with respites so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
+It's up to the players how many [respites](scc:mcdm.heroes.v1/rule.resource/respite) the heroes take in a row. Characters eager to take a long series of [respites](scc:mcdm.heroes.v1/rule.resource/respite) to undertake downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with [respites](scc:mcdm.heroes.v1/rule.resource/respite) so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
 
-If you prefer a campaign that has few respites, you might want to deploy artisans, sages, and readily available project sources to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
+If you prefer a campaign that has few [respites](scc:mcdm.heroes.v1/rule.resource/respite), you might want to deploy artisans, sages, and readily available project sources to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
 
 #### Project Events
 
-Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) are optional, and you can use them as frequently as you like. In general, more than one or two events per respite can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
+Downtime project events are a Director's time to shine during downtime. Remember that these events (detailed in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) are optional, and you can use them as frequently as you like. In general, more than one or two events per [respite](scc:mcdm.heroes.v1/rule.resource/respite) can be disruptive to the overall campaign. It's also fine to have no events if you just want to keep the campaign's main story rolling along.
 
 When you're running downtime events, be sure to rotate which heroes are in the spotlight of the action. Don't focus on the same hero over and over again. You can also do a little preparation for events before you play them out, reading the event prompt and fleshing it out into a scene. Prompts are intentionally vaguely written so you can modify them as you see fit or easily create your own.
 
 #### Respites Between Sessions
 
-If your play time is limited, you can have the players do everything they need to do during a respite between your game sessions, provided they end a game session by taking a respite. Doing so lets you run any events over email or through a chat app. Then when folks return for the next session, they'll be ready to go with project rolls completed, XP tallied, and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) restored.
+If your play time is limited, you can have the players do everything they need to do during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) between your game sessions, provided they end a game session by taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Doing so lets you run any events over email or through a chat app. Then when folks return for the next session, they'll be ready to go with project rolls completed, [XP](scc:mcdm.heroes.v1/rule.resource/experience) tallied, and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) restored.
 
 #### How Many Respites?
 
-There's no right number of respites that works for every group. If you want the characters to be able to craft and research, you'll want to give them more downtime to do so. If you prefer to hand out all the treasure and secrets through adventuring, then they'll need fewer respites. A good pace for many games sees the heroes taking between ten and twenty respites during each level of play, with many of those respites strung together.
+There's no right number of [respites](scc:mcdm.heroes.v1/rule.resource/respite) that works for every group. If you want the characters to be able to craft and research, you'll want to give them more downtime to do so. If you prefer to hand out all the treasure and secrets through adventuring, then they'll need fewer [respites](scc:mcdm.heroes.v1/rule.resource/respite). A good pace for many games sees the heroes taking between ten and twenty [respites](scc:mcdm.heroes.v1/rule.resource/respite) during each level of play, with many of those [respites](scc:mcdm.heroes.v1/rule.resource/respite) strung together.
 
 ##### Victories and Respites
 
-Ultimately, the players, not the Director, decide when the heroes take a respite. So even though you adjudicate whether the conditions are safe enough for a respite, this part of the pacing is effectively out of your hands. Typically, most heroes want to rest after every 4 to 6 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) they earn, depending on how many [Victories](scc:mcdm.heroes.v1/rule.resource/victories) were earned in combat encounters.
+Ultimately, the players, not the Director, decide when the heroes take a [respite](scc:mcdm.heroes.v1/rule.resource/respite). So even though you adjudicate whether the conditions are safe enough for a [respite](scc:mcdm.heroes.v1/rule.resource/respite), this part of the pacing is effectively out of your hands. Typically, most heroes want to rest after every 4 to 6 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) they earn, depending on how many [Victories](scc:mcdm.heroes.v1/rule.resource/victories) were earned in combat encounters.
 
 #### Optional Rule: Average Roll
 
-When the heroes take a long series of respites, it might not be fun for the players to do a ton of die rolling covering many projects. Instead of rolling, you can calculate the progress for each respite as if a hero had rolled a natural 11 on their progress roll, then adding appropriate bonuses. Although rolling lots of dice and hoping for breakthroughs can be a lot of fun, taking the average of the 2d10 roll allows players to get through a lot of downtime with minimal math.
+When the heroes take a long series of [respites](scc:mcdm.heroes.v1/rule.resource/respite), it might not be fun for the players to do a ton of die rolling covering many projects. Instead of rolling, you can calculate the progress for each [respite](scc:mcdm.heroes.v1/rule.resource/respite) as if a hero had rolled a natural 11 on their progress roll, then adding appropriate bonuses. Although rolling lots of dice and hoping for breakthroughs can be a lot of fun, taking the average of the 2d10 roll allows players to get through a lot of downtime with minimal math.
 
 #### Optional Rule: Easier Crafting
 
 Every crafting project requires that a hero obtain the project's item prerequisite and a project source in a specific language before the project can be started. These requirements exist so you can control the pace at which heroes can craft an arsenal of treasures to defeat their foes.
 
-That said, you can make it easier to craft treasures and other items by changing the rules to require either the item prerequisite or the project source but not both, or by removing the language restrictions on project sources. This works well in campaigns that don't have a lot of respites. Just keep in mind that removing these barriers can lead to the heroes crafting more items and unbalancing the game in their favor.
+That said, you can make it easier to craft treasures and other items by changing the rules to require either the item prerequisite or the project source but not both, or by removing the language restrictions on project sources. This works well in campaigns that don't have a lot of [respites](scc:mcdm.heroes.v1/rule.resource/respite). Just keep in mind that removing these barriers can lead to the heroes crafting more items and unbalancing the game in their favor.
 
 ### Granting Rewards
 
