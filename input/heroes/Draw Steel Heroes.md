@@ -247,7 +247,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** An ancestry with stone skin and short stature.
 
-**[Dying](scc:mcdm.heroes.v1/rule.health/dying):** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their winded value. While dying, a hero is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and they can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver in combat. A hero dies when their Stamina equals the negative of their winded value.
+**[Dying](scc:mcdm.heroes.v1/rule.health/dying):** A state a hero enters when their Stamina is 0 or lower but doesn't reach the negative of their [winded](scc:mcdm.heroes.v1/rule.health/winded) value. While dying, a hero is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and they can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver in combat. A hero dies when their Stamina equals the negative of their [winded](scc:mcdm.heroes.v1/rule.health/winded) value.
 
 **[Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** A grouping of heroic levels that informs players of the types of heroic deeds the heroes can achieve. There are four echelons of play: 1st echelon (1st to 3rd level), 2nd echelon (4th to 6th level), 3rd echelon (7th to 9th level), and 4th echelon (10th level).
 
@@ -1334,7 +1334,7 @@ This chapter details twelve ancestries for the game:
 >
 > Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
@@ -2406,7 +2406,7 @@ Working with your Director, you can predetermine an encounter in which you will 
 
 If you don't predetermine your death encounter, you can choose to become doomed while you are dying with the Director's approval (no action required). Doing so should be reserved for encounters in which you are dying as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you—not because you're playing a one-shot and have nothing to lose, Hacaarl.
 
-Additionally, when your Stamina reaches the negative of your winded value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can't regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your recovery value.
+Additionally, when your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can't regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your recovery value.
 
 <!-- @type: feature -->
 ##### Forceful (1 Point)
@@ -3072,7 +3072,7 @@ Choose the ancestry you were before you died. Your size is that ancestry's size 
 
 Your undead body grants you immunity to cold, corruption, lightning, and poison damage equal to your level, but you have fire weakness 5. You can't suffocate, and you don't need to eat or drink to stay alive.
 
-Additionally, when your Stamina reaches the negative of your winded value, you become inert instead of dying. You fall [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
+Additionally, when your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you become inert instead of dying. You fall [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
 
 ##### Purchased Revenant Traits
 
@@ -4584,7 +4584,7 @@ Different effects that impose the same condition (see Conditions below) don't st
 
 #### Ending Effects
 
-When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and conditions that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being winded, unconscious, or dying. After combat, effects and conditions imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
+When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and conditions that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or dying. After combat, effects and conditions imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
 
 <!-- @type: rule | @group: combat | @id: end-of-turn -->
 ##### End of Next Turn (EoT)
@@ -5191,7 +5191,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > - **12-16:** 3 + M holy damage
 > - **17+:** 5 + M holy damage
 > 
-> **Effect:** When a target who is not a leader or solo creature is made winded by this ability, they are reduced to 0 Stamina.
+> **Effect:** When a target who is not a leader or solo creature is made [winded](scc:mcdm.heroes.v1/rule.health/winded) by this ability, they are reduced to 0 Stamina.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Purifying Fire (5 Wrath)
@@ -5872,7 +5872,7 @@ You have the following ability.
 
 You can stop death from taking your allies. When an ally within distance of your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability dies and you are not dying, you can use a free triggered action to instead have that ally fall unconscious until they regain Stamina.
 
-Additionally, your abilities deal an extra 5 damage to winded creatures.
+Additionally, your abilities deal an extra 5 damage to [winded](scc:mcdm.heroes.v1/rule.health/winded) creatures.
 
 <!-- @type: feature -->
 ##### Word of Fate Denied
@@ -6060,7 +6060,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 + P psychic damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **17+:** 13 + P psychic damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > 
-> **Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, if a target who is a leader or solo creature is winded, they take an extra 25 psychic damage. If a target [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is not a leader or solo creature and is winded, they are reduced to 0 Stamina.
+> **Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, if a target who is a leader or solo creature is [winded](scc:mcdm.heroes.v1/rule.health/winded), they take an extra 25 psychic damage. If a target [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is not a leader or solo creature and is [winded](scc:mcdm.heroes.v1/rule.health/winded), they are reduced to 0 Stamina.
 
 ##### 9th-Level Oracle Abilities
 
@@ -6265,7 +6265,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 
 ###### Death Domain Piety and Effect
 
-- **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares who isn't a minion is reduced to 0 Stamina, or the first time in an encounter that a solo creature within 10 squares becomes winded.
+- **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares who isn't a minion is reduced to 0 Stamina, or the first time in an encounter that a solo creature within 10 squares becomes [winded](scc:mcdm.heroes.v1/rule.health/winded).
 - **Prayer Effect:** You inflict a deadly curse on up to two enemies within 10 squares of you. Each target takes corruption damage equal to twice your Intuition score.
 
 ###### Fate Domain Piety and Effect
@@ -7298,7 +7298,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > |--------------------|-------------------------|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** The first time the target is dying or winded before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.
+> **Effect:** The first time the target is dying or [winded](scc:mcdm.heroes.v1/rule.health/winded) before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -7630,7 +7630,7 @@ You have the following ability.
 
 You can stop death from taking your allies. When an ally within distance of your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability dies and you are not dying, you can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to instead have that ally fall unconscious until they regain Stamina.
 
-Additionally, your abilities deal an extra 5 damage to winded creatures.
+Additionally, your abilities deal an extra 5 damage to [winded](scc:mcdm.heroes.v1/rule.health/winded) creatures.
 
 <!-- @type: feature -->
 ##### Word of Fate Denied
@@ -8679,7 +8679,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a critical hit with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an adjacent creature's melee ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
 | Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke opportunity attacks.                                                                                                                                                                                                                             |
-| Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an edge on strikes against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or winded.                                                                                                                              |
+| Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an edge on strikes against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
 | Giant octopus       | 9th   | 5                 | 5 (swim)      | 3    | +2              | +0/+0/+0           | You can breathe in water. Additionally, you can target two creatures or objects<br>with your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Whenever you obtain a tier 2 or tier 3 outcome on<br>a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can automatically grab the target. You can have up to<br>eight creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed). |
 | Rhinoceros          | 9th   | 10                | 8             | 2    | +5              | +2/+2/+2           | Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of the Charge action, that<br>strike gains an edge.                                                                                                                                                                               |
 | King terror lizard  | 10th  | 20                | 5             | 4    | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a 1 burst with the Area and Strike keywords.                                                                                                                                                                                                          |
@@ -9349,7 +9349,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |-------------------------------|----------------:|
 > | **📏 Ranged 10**              |  **🎯 Special** |
 > 
-> **Effect:** You create a size 1L vortex that lasts until the end of the encounter. At the start of each combat round while the vortex is unoccupied, the vortex vertical pulls 3 each enemy within 5 squares of it. Each enemy who enters the vortex or starts their turn there is [knocked prone](scc:mcdm.heroes.v1/condition/prone). At the end of the round, if a winded enemy who is not a leader or solo creature is in the vortex, they are instantly destroyed.
+> **Effect:** You create a size 1L vortex that lasts until the end of the encounter. At the start of each combat round while the vortex is unoccupied, the vortex vertical pulls 3 each enemy within 5 squares of it. Each enemy who enters the vortex or starts their turn there is [knocked prone](scc:mcdm.heroes.v1/condition/prone). At the end of the round, if a [winded](scc:mcdm.heroes.v1/rule.health/winded) enemy who is not a leader or solo creature is in the vortex, they are instantly destroyed.
 
 <!-- @type: ability | @cost: 11 Essence -->
 > ###### World Torn Asunder (11 Essence)
@@ -9596,7 +9596,7 @@ Within the heat of battle, your determination and anger grow, fueling a Heroic R
 
 At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain ferocity equal to your Victories. At the start of each of your turns during combat, you gain 1d3 ferocity.
 
-Additionally, the first time each combat round that you take damage, you gain 1 ferocity. The first time you become winded or are dying in an encounter, you gain 1d3 ferocity.
+Additionally, the first time each combat round that you take damage, you gain 1 ferocity. The first time you become [winded](scc:mcdm.heroes.v1/rule.health/winded) or are dying in an encounter, you gain 1d3 ferocity.
 
 You lose any remaining ferocity at the end of the encounter.
 
@@ -9953,7 +9953,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > - **12-16:** 11 + M damage
 > - **17+:** 16 + M damage
 > 
-> **Spend 1+ Ferocity:** While you are winded, this ability deals an extra 1d6 damage for each ferocity spent. While you are dying, it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 Stamina after making this strike.
+> **Spend 1+ Ferocity:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), this ability deals an extra 1d6 damage for each ferocity spent. While you are dying, it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 Stamina after making this strike.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -10296,7 +10296,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > |---------------------------|-------------------------------:|
 > | **📏 Melee 1**            | **🎯 The triggering creature** |
 > 
-> **Trigger:** A creature causes you to be winded or dying, or damages you while you are winded or dying.
+> **Trigger:** A creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying, or damages you while you are [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying.
 > 
 > **Power Roll + Might:**
 > 
@@ -10441,7 +10441,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 + M damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **17+:** 10 + M damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > 
-> **Effect:** If a target who is not a leader or solo creature is winded by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
+> **Effect:** If a target who is not a leader or solo creature is [winded](scc:mcdm.heroes.v1/rule.health/winded) by this strike, they are reduced to 0 Stamina and you choose an enemy within 5 squares of you. If that enemy has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
 ##### 6th-Level Stormwight Abilities
 
@@ -10578,7 +10578,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > - **12-16:** 10 + M damage
 > - **17+:** 14 + M damage
 >
-> **Effect:** If the target is a minion or is winded but isn't a leader or solo creature, they are reduced to 0 Stamina before this ability's damage is dealt. If the target is killed by this damage, you can deal any damage over what was required to kill them to another creature within 5 squares of the target.
+> **Effect:** If the target is a minion or is [winded](scc:mcdm.heroes.v1/rule.health/winded) but isn't a leader or solo creature, they are reduced to 0 Stamina before this ability's damage is dealt. If the target is killed by this damage, you can deal any damage over what was required to kill them to another creature within 5 squares of the target.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Primordial Rage (11 Ferocity)
@@ -10715,8 +10715,8 @@ Choose one of the following abilities.
 > **Power Roll + Might:**
 >
 > - **≤11:** 4 psychic damage; any target who is a minion is reduced to 0 Stamina
-> - **12-16:** 6 psychic damage; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature
-> - **17+:** 10 psychic damage; each target who is not a leader or solo creature is winded; any target who is a minion is reduced to 0 Stamina, as does one winded target who is not a leader or solo creature
+> - **12-16:** 6 psychic damage; any target who is a minion is reduced to 0 Stamina, as does one [winded](scc:mcdm.heroes.v1/rule.health/winded) target who is not a leader or solo creature
+> - **17+:** 10 psychic damage; each target who is not a leader or solo creature is [winded](scc:mcdm.heroes.v1/rule.health/winded); any target who is a minion is reduced to 0 Stamina, as does one [winded](scc:mcdm.heroes.v1/rule.health/winded) target who is not a leader or solo creature
 
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Deluge (11 Ferocity)
@@ -12352,7 +12352,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 + A psychic damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 > - **17+:** 13 + A psychic damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 >
-> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your Intuition score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become winded, they are instead reduced to 0 Stamina. Any creature reduced to 0 Stamina by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your Intuition score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become [winded](scc:mcdm.heroes.v1/rule.health/winded), they are instead reduced to 0 Stamina. Any creature reduced to 0 Stamina by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -13470,7 +13470,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > - **12-16:** 18 + A damage
 > - **17+:** 24 + A damage
 >
-> **Effect:** A target who is not a minion, leader, or solo creature and who is winded after taking this damage is reduced to 0 Stamina.
+> **Effect:** A target who is not a minion, leader, or solo creature and who is [winded](scc:mcdm.heroes.v1/rule.health/winded) after taking this damage is reduced to 0 Stamina.
 
 <!-- @type: ability | @cost: 11 Insight -->
 > ###### Shadowgrasp (11 Insight)
@@ -14658,9 +14658,9 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > |------------------|--------------------:|
 > | **📏 Ranged 10** | **🎯 One creature** |
 >
-> **Trigger:** The target is not a leader or solo creature, and becomes winded.
+> **Trigger:** The target is not a leader or solo creature, and becomes [winded](scc:mcdm.heroes.v1/rule.health/winded).
 >
-> **Effect:** The target is killed. Additionally, the creature who caused the target to be winded can spend a Recovery.
+> **Effect:** The target is killed. Additionally, the creature who caused the target to be [winded](scc:mcdm.heroes.v1/rule.health/winded) can spend a Recovery.
 
 <!-- @type: ability | @cost: 11 Focus -->
 > ###### Floodgates Open (11 Focus)
@@ -16467,7 +16467,7 @@ At the start of a combat encounter or some other stressful situation tracked in 
 Additionally, you gain drama when certain events occur during a combat encounter:
 
 - The first time three or more heroes use an ability on the same turn, you gain 2 drama.
-- The first time any hero is made winded during the encounter, you gain 2 drama.
+- The first time any hero is made [winded](scc:mcdm.heroes.v1/rule.health/winded) during the encounter, you gain 2 drama.
 - Whenever a creature within your line of effect rolls a natural 19 or 20, you gain 3 drama.
 - When you or another hero dies, you gain 10 drama.
 
@@ -17628,7 +17628,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > |-------------------|------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self or one ally** |
 >
-> **Effect:** Until the end of the encounter, whenever the target takes damage while winded, they can use a free triggered action to deal half the damage they took to the source of the damage.
+> **Effect:** Until the end of the encounter, whenever the target takes damage while [winded](scc:mcdm.heroes.v1/rule.health/winded), they can use a free triggered action to deal half the damage they took to the source of the damage.
 
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### Saved in the Edit (11 Drama)
@@ -19381,7 +19381,7 @@ Due to a magical accident, your being has fused with that of a small, harmless a
 
 Unless you use this benefit again, you return to your true form at the start of your next turn.
 
-**Drawback:** At the start of any turn while you are winded, the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a respite.
+**Drawback:** At the start of any turn while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a respite.
 
 <!-- @type: complication -->
 #### Antihero
@@ -19552,7 +19552,7 @@ As a child, you met a creature who turns people to stone, such as a medusa. You 
 
 **Benefit:** You have a +1 bonus to stability. Additionally, you can use a free maneuver to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a [mundane](scc:mcdm.heroes.v1/complication/mundane) statue while you remain unmoving.
 
-**Drawback:** You have sonic weakness 5. Additionally, while you are winded, you are [dazed](scc:mcdm.heroes.v1/condition/dazed).
+**Drawback:** You have sonic weakness 5. Additionally, while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 <!-- @type: complication -->
 #### Cursed Weapon
@@ -19685,7 +19685,7 @@ You were once a renowned hero, but you've been living the last few years in blis
 
 **Benefit:** On your turn, you can choose a heroic ability that you would be able to learn if you were one level higher. Provided you meet the ability's other prerequisites and can spend any required Heroic Resource, you can use the ability. Once you use this benefit, you can't do so again until you earn 2 or more Victories.
 
-**Drawback:** While you are winded, you take a −2 penalty to speed.
+**Drawback:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you take a −2 penalty to speed.
 
 <!-- @type: complication -->
 #### Gnoll-Mauled
@@ -19730,7 +19730,7 @@ Once when you were a child, your settlement was in danger and you called out to 
 
 The world is in trouble—and it's partly your fault. Maybe you helped a villain rise to power or inadvertently released a demon from imprisonment. Now it's your mission to repair the damage you caused.
 
-**Benefit:** You're determined to stay alive so you can set things right. When your Stamina reaches the negative of your winded value, you can use a free triggered action to spend a Recovery.
+**Benefit:** You're determined to stay alive so you can set things right. When your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you can use a free triggered action to spend a Recovery.
 
 **Drawback:** Many people blame you for the evils you caused. They might be unfriendly or hostile to you—and you can understand their point of view. You take a bane on any test made to interact with those who know what you did, and on strikes made against such creatures.
 
@@ -20200,7 +20200,7 @@ You were trained by a group of spies, who psionically infused silence into your 
 
 Maybe you were bitten as a child, or maybe it's a family curse. Either way, you have a malady that is best not discussed in public, lest torches and pitchforks make an appearance.
 
-**Benefit:** Whenever you make a non-minion creature winded or kill a non-minion creature, you gain 1 surge.
+**Benefit:** Whenever you make a non-minion creature [winded](scc:mcdm.heroes.v1/rule.health/winded) or kill a non-minion creature, you gain 1 surge.
 
 **Drawback:** At the start of each of your turns, if you have five or more surges—or one or more surges while in moonlight—you lose all your surges and become a wolfish hybrid until the end of your turn. While in that form, you have your usual statistics, but you must make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest creature if you can. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed toward that creature if necessary. If allies and enemies are equally near, you target an ally.
 
@@ -20386,7 +20386,7 @@ You spent many years imprisoned for a crime you didn't commit. During your long 
 
 **Benefit:** You have two skills of your choice, neither of which can be from the interpersonal skill group.
 
-**Drawback:** Your health suffered in prison. Whenever you are winded, you are stricken with a hacking cough that makes it impossible for you to hide or sneak.
+**Drawback:** Your health suffered in prison. Whenever you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you are stricken with a hacking cough that makes it impossible for you to hide or sneak.
 
 <!-- @type: chapter | @id: tests -->
 # Tests
@@ -22064,7 +22064,7 @@ You can tell when other creatures are winded and vice versa.
 
 When your Stamina is 0 or lower, you are dying. While dying, you can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver in combat. Additionally, you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding), and this instance of the condition can't be negated or removed in any way until you are no longer dying. While you are dying, you can still act, your allies can help you spend Recoveries in combat, and you can spend Recoveries out of combat as usual.
 
-While your Stamina is lower than 0, if it reaches the negative of your winded value, you die. When you die, you can't be brought back to life without the use of a special powerful item, such as a Scroll of Resurrection.
+While your Stamina is lower than 0, if it reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you die. When you die, you can't be brought back to life without the use of a special powerful item, such as a Scroll of Resurrection.
 
 #### Director-Controlled Creatures
 
@@ -22089,7 +22089,7 @@ While you are unconscious, you can't take main actions, maneuvers, triggered act
 <!-- @type: rule | @group: health | @id: temporary-stamina -->
 #### Temporary Stamina
 
-Some abilities, treasures, and other effects grant a creature temporary Stamina. Temporary Stamina shouldn't be included in a creature's Stamina total when figuring out a creature's recovery value or winded value. If you have temporary Stamina while winded, dying, or dead, the temporary Stamina doesn't change those states.
+Some abilities, treasures, and other effects grant a creature temporary Stamina. Temporary Stamina shouldn't be included in a creature's Stamina total when figuring out a creature's recovery value or [winded](scc:mcdm.heroes.v1/rule.health/winded) value. If you have temporary Stamina while [winded](scc:mcdm.heroes.v1/rule.health/winded), dying, or dead, the temporary Stamina doesn't change those states.
 
 Whenever you take damage while you have temporary Stamina, the temporary Stamina decreases first, and any leftover damage is applied to your Stamina as usual. For instance, if you have 10 temporary Stamina and take 16 damage, you lose the temporary Stamina and then lose another 6 Stamina.
 
@@ -22132,7 +22132,7 @@ If your mount dies, they [fall prone](scc:mcdm.heroes.v1/condition/prone), and y
 
 ### End of Combat
 
-At the end of combat, the Director determines if the heroes earn any Victories. Any effect or condition on you that you suffered during combat (except for being winded, unconscious, or dying) ends if you want it to.
+At the end of combat, the Director determines if the heroes earn any Victories. Any effect or condition on you that you suffered during combat (except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or dying) ends if you want it to.
 
 #### How Combat Ends
 
@@ -23069,7 +23069,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Damage Immunity II:** The damage immunity conveyed by the armor increases to 10.
 
-**Dragon Soul:** When another creature causes you to be winded or dying, you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
+**Dragon Soul:** When another creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying, you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
 
 **Power Roll + Your Highest Characteristic Score:**
 
@@ -23087,7 +23087,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Reactive:** Whenever you take damage, you have damage immunity 2 until the end of your next turn after the triggering damage is resolved.
 
-**Second Wind:** Whenever you become winded, you can use a free triggered action to spend a Recovery.
+**Second Wind:** Whenever you become [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a free triggered action to spend a Recovery.
 
 **Shattering:** Whenever an enemy scores a critical hit against you, they take 10 sonic damage.
 
@@ -23121,7 +23121,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Devil's Bargain:** You can [fly](scc:mcdm.heroes.v1/movement/fly). Additionally, if an effect would make you [prone](scc:mcdm.heroes.v1/condition/prone) while [flying](scc:mcdm.heroes.v1/movement/fly), you can choose to not make you [prone](scc:mcdm.heroes.v1/condition/prone) by losing Stamina equal to the distance you would have fallen from make you [prone](scc:mcdm.heroes.v1/condition/prone).
 
-**Dragon Soul II:** While you are winded, your head transforms into a dragon's head and you have the following ability.
+**Dragon Soul II:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your head transforms into a dragon's head and you have the following ability.
 
 <!-- @type: ability -->
 ###### Dragon's Fire
@@ -23430,7 +23430,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Imprisoning:** Whenever you damage a creature with an ability using this weapon and obtain a tier 3 outcome, that creature is also [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends). While [restrained](scc:mcdm.heroes.v1/condition/restrained) in this way, the creature can't use magic or psionic abilities.
 
-**Nova:** Whenever you damage a creature using this weapon, each enemy adjacent to you takes damage based on the tier outcome of the power roll-2 damage for tier 1, 6 for tier 2, or 10 for tier 3. Additionally, while you are winded, you have the following ability.
+**Nova:** Whenever you damage a creature using this weapon, each enemy adjacent to you takes damage based on the tier outcome of the power roll-2 damage for tier 1, 6 for tier 2, or 10 for tier 3. Additionally, while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you have the following ability.
 
 > ###### Nova
 >
@@ -23924,7 +23924,7 @@ Your character can carry any number of consumables at a time.
 >
 > Item creation rules, crafting and research projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), winded: Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, dying and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 >
 > Negotiation rules, motivations, pitfalls, interest, and patience: Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation).
 
@@ -24432,7 +24432,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 120
 
-**Effect:** The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a maneuver to manually light and burn the effigy and bring the creature back to life. The creature returns to life with Stamina equal to their winded value and 10 temporary Stamina that lasts until the end of their next respite. If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.
+**Effect:** The Personal Effigy is crafted to depict a specific humanoid creature it is tied to, and activates only for the first minute after the creature dies. While you are within 5 squares of the remains of the creature the effigy is tied to, you can use a maneuver to manually light and burn the effigy and bring the creature back to life. The creature returns to life with Stamina equal to their [winded](scc:mcdm.heroes.v1/rule.health/winded) value and 10 temporary Stamina that lasts until the end of their next respite. If the creature has been dead for more than 1 minute, they remain dead and the effigy dissolves into dust.
 
 <!-- @type: treasure -->
 ##### Stygian Liquor
@@ -24449,7 +24449,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 180
 
-**Effect:** When you drink this potion as a maneuver, you gain a tenacious will to cling to life for 24 hours. If you are dying during this time, you don't die until you reach the negative of your Stamina maximum rather than your winded value. Additionally, while you are dying, you gain on edge on power rolls and you take half the damage dealt by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition. Once the potion's magic is triggered, it ends when you are no longer dying.
+**Effect:** When you drink this potion as a maneuver, you gain a tenacious will to cling to life for 24 hours. If you are dying during this time, you don't die until you reach the negative of your Stamina maximum rather than your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. Additionally, while you are dying, you gain on edge on power rolls and you take half the damage dealt by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition. Once the potion's magic is triggered, it ends when you are no longer dying.
 
 <!-- @type: treasure -->
 ##### Timesplitter
@@ -25400,7 +25400,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage deal an extra 2 psychic damage. Additionally, you have damage weakness 3, and you gain an edge on magic or psionic abilities if you aren't at full Stamina, or a double edge if you are winded.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage deal an extra 2 psychic damage. Additionally, you have damage weakness 3, and you gain an edge on magic or psionic abilities if you aren't at full Stamina, or a double edge if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
 **5th Level:** The implement's extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the implement's extra damage is doubled until the end of your next turn.
 
@@ -25594,11 +25594,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 psychic damage, or an extra 2 psychic damage if the target is winded. Additionally, the first time in an encounter that you cause an enemy to become winded with an ability using the weapon, you gain 10 temporary Stamina.
+**1st Level:** Any weapon ability that deals rolled damage using this weapon deals an extra 1 psychic damage, or an extra 2 psychic damage if the target is [winded](scc:mcdm.heroes.v1/rule.health/winded). Additionally, the first time in an encounter that you cause an enemy to become [winded](scc:mcdm.heroes.v1/rule.health/winded) with an ability using the weapon, you gain 10 temporary Stamina.
 
-**5th Level:** The weapon's extra psychic damage increases to 2, or to 4 if the target is winded. Additionally, whenever you cause an enemy to become winded with an ability using the weapon, you gain 2 surges that you can immediately spend.
+**5th Level:** The weapon's extra psychic damage increases to 2, or to 4 if the target is [winded](scc:mcdm.heroes.v1/rule.health/winded). Additionally, whenever you cause an enemy to become [winded](scc:mcdm.heroes.v1/rule.health/winded) with an ability using the weapon, you gain 2 surges that you can immediately spend.
 
-**9th Level:** The weapon's extra psychic damage increases to 3, or to 6 if the target is winded. Additionally, you gain an edge on any ability using the weapon against a winded target.
+**9th Level:** The weapon's extra psychic damage increases to 3, or to 6 if the target is [winded](scc:mcdm.heroes.v1/rule.health/winded). Additionally, you gain an edge on any ability using the weapon against a [winded](scc:mcdm.heroes.v1/rule.health/winded) target.
 
 <!-- @type: treasure -->
 ##### Icemaker Maul
@@ -25811,7 +25811,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **5th Level:** The ring's bonus to Stamina increases to +12. Additionally, you have damage immunity 2.
 
-**9th Level:** The ring's bonus to Stamina increases to +21. Additionally, if a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain Stamina equal to their winded value. Your ring then [teleports](scc:mcdm.heroes.v1/movement/teleport) into their possession and ceases to be magic.
+**9th Level:** The ring's bonus to Stamina increases to +21. Additionally, if a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain Stamina equal to their [winded](scc:mcdm.heroes.v1/rule.health/winded) value. Your ring then [teleports](scc:mcdm.heroes.v1/movement/teleport) into their possession and ceases to be magic.
 
 <!-- @type: treasure -->
 ##### Bloody Hand Wraps
@@ -26597,7 +26597,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 **Prerequisite:** You are killed by an undead creature.
 
-**Effect:** You return to life 1 minute after being killed with Stamina equal to your winded value. You gain corruption immunity equal to your level and one of the benefits below, based on the type of creature who killed you. If you die again, you rise as an undead creature under the Director's control.
+**Effect:** You return to life 1 minute after being killed with Stamina equal to your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. You gain corruption immunity equal to your level and one of the benefits below, based on the type of creature who killed you. If you die again, you rise as an undead creature under the Director's control.
 
 - *Ghoul or Vampire:* When you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can bite that creature. If you do so and obtain a tier 3 outcome, you gain temporary Stamina equal to the damage dealt. If not lost beforehand, this temporary Stamina lasts until the end of your next respite.
 - *Incorporeal Undead:* You can move through other creatures and objects. The first time in a combat round that you pass through a creature, that creature takes corruption damage equal to half your level. You don't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
@@ -26612,7 +26612,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 **Effect:** Choose one of the following benefits:
 
-- *From Hell's Heart:* While you are winded, your melee strikes gain a +3 damage bonus.
+- *From Hell's Heart:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your melee strikes gain a +3 damage bonus.
 - *Furious Attack:* Choose one signature ability from the [fury](scc:mcdm.heroes.v1/class/fury) class. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend ferocity, you can't do so unless you have the Ferocity class feature.
 - *Furious Charge:* When you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) action, your strike made as part of that action gains a damage bonus equal to the number of squares you moved as part of the charge.
 
@@ -26650,7 +26650,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 *Demonic Lore:* You know the Proto-Ctholl language. Additionally, when you deal damage using a magic ability, you can change the ability's damage type to holy.
 
-- *Lethe:* While you are winded, your strikes gain a +5 damage bonus
+- *Lethe:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your strikes gain a +5 damage bonus
 - *Made of Teeth:* Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).
 - *Soulsight:* Any creature within 2 squares can't be hidden from you.
 
@@ -26865,7 +26865,7 @@ Additionally, choose one of the following benefits:
 
 **Effect:** A characteristic of your choice increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Brief Reunion:* While you're winded, you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Perfect Protection:* The Director chooses a damage type that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen damage type.
 - *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a trinket or leveled treasure of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
 
@@ -28269,7 +28269,7 @@ Matt, playing Linn the [talent](scc:mcdm.heroes.v1/class/talent), has the [Eleme
 Matt tells the Director that Linn enjoys the extra protection afforded to her by Bruulv, since it makes her a tougher hero, and she would like to find a way to keep her benefit while losing the drawback. The Director comes up with an echelon outline for Linn that will enrich the [talent's](scc:mcdm.heroes.v1/class/talent) story and have ties to the main campaign (which happens to be the example campaign in the echelon outline above).
 
 - **1st Echelon:** After the heroes start riling up Lord Saxton's forces, Sorin offers her services to the tyrant for a chance to face Linn. During the heroes' assault on the keep, Sorin attacks.
-- **2nd Echelon:** Assuming Sorin's defeat, Bruulv becomes even angrier, and can now try to wrestle control away from Linn whenever she is winded in addition to when she is dying. Linn finds a Crown of Elements, a special magic treasure that allows her to force Bruulv back to a "takes control only while dying" state as long as she wears it. The crown has other elemental powers too—and is one of the items desired by Ajax.
+- **2nd Echelon:** Assuming Sorin's defeat, Bruulv becomes even angrier, and can now try to wrestle control away from Linn whenever she is [winded](scc:mcdm.heroes.v1/rule.health/winded) in addition to when she is dying. Linn finds a Crown of Elements, a special magic treasure that allows her to force Bruulv back to a "takes control only while dying" state as long as she wears it. The crown has other elemental powers too—and is one of the items desired by Ajax.
 - **3rd Echelon:** As Linn and the other heroes build a coalition, an elderly [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) named Leaves of the Autumn Wind offers to enhance the crown, allowing the [talent](scc:mcdm.heroes.v1/class/talent) to speak directly to Bruulv. The catch is that Leaves needs a magic fire opal from the lair of a fire giant to enhance the crown.
 - **4th Echelon:** With the crown enhanced, Linn can speak directly to Bruulv. By learning the elemental's history and desires through negotiation, she can see that Bruulv mostly wants to return to the City of Brass so they might once again see the raw elemental powers come together. If Linn can visit this city that is literally worlds away, she earns Bruulv's trust and the elemental stops taking over her form.
 
