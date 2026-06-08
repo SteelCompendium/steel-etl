@@ -95,7 +95,7 @@ For us, fantasy includes magic, like wizards casting spells, and psionics, the n
 
 We know that many folks are coming to this game having only experienced d20 fantasy RPGs. This section details a few key distinctions between this game and typical d20 fantasy that you'll notice right away. These aren't the only distinctions, but they're the most obvious.
 
-- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're dying to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
+- **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're [dying](scc:mcdm.heroes.v1/rule.health/dying) to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
 - **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent characteristic bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your Stamina and Recoveries—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
@@ -503,7 +503,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Stability](scc:mcdm.heroes.v1/rule.character/stability):** A measure of a creature's immovability. When a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), the distance they can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to their stability.
 
-**[Stamina](scc:mcdm.heroes.v1/rule.health/stamina):** A measure of a creature's health and vitality. When a hero's Stamina is reduced to 0 or lower, they are dying. When a nonhero creature's Stamina is reduced to 0, they die or are knocked unconscious, as determined by the creature who reduced them to 0 Stamina.
+**[Stamina](scc:mcdm.heroes.v1/rule.health/stamina):** A measure of a creature's health and vitality. When a hero's Stamina is reduced to 0 or lower, they are [dying](scc:mcdm.heroes.v1/rule.health/dying). When a nonhero creature's Stamina is reduced to 0, they die or are knocked unconscious, as determined by the creature who reduced them to 0 Stamina.
 
 **[Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) Maneuver:** A maneuver that a [prone](scc:mcdm.heroes.v1/condition/prone) creature can use to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on themself. Alternatively, a creature can use this maneuver on a willing adjacent [prone](scc:mcdm.heroes.v1/condition/prone) creature to end the [prone](scc:mcdm.heroes.v1/condition/prone) condition on them.
 
@@ -1334,7 +1334,7 @@ This chapter details twelve ancestries for the game:
 >
 > Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
@@ -2288,7 +2288,7 @@ In spite of their friendly, outgoing nature, the rare presence of a [hakaan](scc
 
 Descended from a tribe of giants in upper Vanigar, the original Haka'an tribe made a bargain with Holkatya the Vanigar trickster god. They traded some of their gigantic size and strength for the ability to see the future.
 
-But Holkatya betrayed them, and the only future a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) is allowed to see is the moment and nature of their own death. These visions are never of some mundane tragedy. No [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) ever received a vision of dying from choking on a grape. This Doomsight is always momentous. Always dramatic.
+But Holkatya betrayed them, and the only future a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) is allowed to see is the moment and nature of their own death. These visions are never of some mundane tragedy. No [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) ever received a vision of [dying](scc:mcdm.heroes.v1/rule.health/dying) from choking on a grape. This Doomsight is always momentous. Always dramatic.
 
 The Doomsight can happen at any moment. It does not come for all or even most [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan), but when it comes, it is considered an act of overwhelming hubris to ignore it. Trying to escape the Doomsight means a painful, tragic death, and cursing your family to live with shame.
 
@@ -2404,7 +2404,7 @@ You are exceptionally strong. You gain an edge on tests made to lift and haul he
 
 Working with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on tests and ability rolls, and you don't die no matter how low your Stamina falls. You then die immediately at the end of the encounter, and can't be returned to life by any means.
 
-If you don't predetermine your death encounter, you can choose to become doomed while you are dying with the Director's approval (no action required). Doing so should be reserved for encounters in which you are dying as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you—not because you're playing a one-shot and have nothing to lose, Hacaarl.
+If you don't predetermine your death encounter, you can choose to become doomed while you are [dying](scc:mcdm.heroes.v1/rule.health/dying) with the Director's approval (no action required). Doing so should be reserved for encounters in which you are [dying](scc:mcdm.heroes.v1/rule.health/dying) as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you—not because you're playing a one-shot and have nothing to lose, Hacaarl.
 
 Additionally, when your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value and you are not doomed, you turn to rubble instead of experiencing death. You are unaware of your surroundings in this state, and you can't regain Stamina or have this effect undone in any way. After 12 hours, you regain Stamina equal to your recovery value.
 
@@ -2444,7 +2444,7 @@ I was here, teaching this class during the fire of Chaos 373. The fire *leveled 
 
 *Six months* after the Great Fire, your ancestors had rebuilt... everything. I have seen many miracles in my life. Witnessing that feat might be chief among them.
 
-Liches are almost always [humans](scc:mcdm.heroes.v1/ancestry/human). Did you know that? I think I know why. Your lives are so short—almost as soon as you're born, you're thinking about dying, and you refuse to yield.
+Liches are almost always [humans](scc:mcdm.heroes.v1/ancestry/human). Did you know that? I think I know why. Your lives are so short—almost as soon as you're born, you're thinking about [dying](scc:mcdm.heroes.v1/rule.health/dying), and you refuse to yield.
 
 That refusal to yield to death... to *death*... is what drives you, I think. Drives you to leave the world better than you found it. Causes ruined people to rebuild great city.
 
@@ -2542,7 +2542,7 @@ Count Revile shook his head. "Not like this. We are creatures of reason, we of A
 
 "At yourself ? Why? What did you...?"
 
-"John," the [memonek](scc:mcdm.heroes.v1/ancestry/memonek) said, and now it was his turn to whisper. "I was afraid. Afraid of... of being wounded, of failing you, failing my friends. Of dying. And out of that fear came... enormous anger. At myself. Anger that I was so weak so... useless. Anger so... strong, so powerful... I forgot who I was."
+"John," the [memonek](scc:mcdm.heroes.v1/ancestry/memonek) said, and now it was his turn to whisper. "I was afraid. Afraid of... of being wounded, of failing you, failing my friends. Of [dying](scc:mcdm.heroes.v1/rule.health/dying). And out of that fear came... enormous anger. At myself. Anger that I was so weak so... useless. Anger so... strong, so powerful... I forgot who I was."
 
 John chuckled. "That's just..." He smiled broadly. "That's just normal. We all feel that way."
 
@@ -2783,7 +2783,7 @@ Khorva shook her head. "[Orcs](scc:mcdm.heroes.v1/ancestry/orc) have no great lo
 <!-- @type: feature | @id: relentless -->
 #### Signature Trait: Relentless
 
-Whenever a creature deals damage to you that leaves you dying, you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any creature. If the creature is reduced to 0 Stamina by your strike, you can spend a Recovery.
+Whenever a creature deals damage to you that leaves you [dying](scc:mcdm.heroes.v1/rule.health/dying), you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any creature. If the creature is reduced to 0 Stamina by your strike, you can spend a Recovery.
 
 #### Purchased Orc Traits
 
@@ -3072,7 +3072,7 @@ Choose the ancestry you were before you died. Your size is that ancestry's size 
 
 Your undead body grants you immunity to cold, corruption, lightning, and poison damage equal to your level, but you have fire weakness 5. You can't suffocate, and you don't need to eat or drink to stay alive.
 
-Additionally, when your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you become inert instead of dying. You fall [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
+Additionally, when your Stamina reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you become inert instead of [dying](scc:mcdm.heroes.v1/rule.health/dying). You fall [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand. You continue to observe your surroundings, but you can't speak, take main actions, maneuvers, move actions, or triggered actions. While inert this way, if you take any fire damage, your body is destroyed and you die. Otherwise, after 12 hours, you regain Stamina equal to your recovery value.
 
 ##### Purchased Revenant Traits
 
@@ -3081,7 +3081,7 @@ You have 2 ancestry points to spend on the following traits, or 3 ancestry point
 <!-- @type: feature -->
 ##### Bloodless (2 Points)
 
-For you, an open wound is indistinguishable from a scratch. You can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying.
+For you, an open wound is indistinguishable from a scratch. You can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 <!-- @type: feature -->
 ##### Previous Life: 1 Point (1 Point)
@@ -3924,7 +3924,7 @@ You gain the following career benefits:
 | 3  | **Joined the Arena:** As a child, you loved gladiatorial matches, captivated by the fierce displays of bravery and bravado, never giving much thought to how the competitors ended up in the ring. Then your friend was wrongly accused of a crime and sentenced to compete. You went in their place. After viewing what life was like for those forced to fight, you survived your sentence and resolved to protect the unfairly condemned. |
 | 4  | **New Challenges:** You earned every title you could. You beat every opponent willing to face you in the arena. Your final battle with your rival ended with you victorious—and still you were unsatisfied. Other, greater foes are out there. And you mean to find them. | 
 | 5  | **Scion's Compassion:** You were born a noble, but the duplicitous and power-hungry nature of your family had you seeking your own fortune in the arena. You saw that competitors brought there by circumstance and not choice suffered. You gave all you could of your family money to those lessfortunate folk, and then set out to make a real difference in this cruel world. |
-| 6  | **Warriors' Home:** The orphanage you grew up in secretly supplied gladiators to the arena. Forced to fight against many childhood friends as an adult, you vowed to dismantle the arena and free other victims. You became a liberator, dedicated to ending the oppression of others until your dying breath. |
+| 6  | **Warriors' Home:** The orphanage you grew up in secretly supplied gladiators to the arena. Forced to fight against many childhood friends as an adult, you vowed to dismantle the arena and free other victims. You became a liberator, dedicated to ending the oppression of others until your [dying](scc:mcdm.heroes.v1/rule.health/dying) breath. |
 
 <!-- @type: career -->
 #### Laborer
@@ -4584,7 +4584,7 @@ Different effects that impose the same condition (see Conditions below) don't st
 
 #### Ending Effects
 
-When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and conditions that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or dying. After combat, effects and conditions imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
+When a creature suffers a lasting effect, whatever ability, feature, hazard, or other mechanic imposed the effect specifies how long the effect lasts. Unless otherwise noted, all effects and conditions that are imposed on heroes during a combat encounter end when the encounter is over if the hero wants them to, except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or [dying](scc:mcdm.heroes.v1/rule.health/dying). After combat, effects and conditions imposed on other creatures end when it's convenient for the heroes, allowing characters to easily bind or slip away from unconscious foes. However, the Director is free to decide that an unconscious dragon doesn't stay that way long enough to be tied up.
 
 <!-- @type: rule | @group: combat | @id: end-of-turn -->
 ##### End of Next Turn (EoT)
@@ -4943,7 +4943,7 @@ You have the following ability.
 > |----------------|-------------------------:|
 > | **📏 Melee 1** | **🎯 One dead creature** |
 > 
-> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of dying can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
+> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
 
 <!-- @type: feature -->
 ##### Hands of the Maker
@@ -5341,7 +5341,7 @@ Choose one of the following abilities.
 > |-----------------|--------------------------------------:|
 > | **📏 3 aura**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each target gains 1 surge at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Sentenced (5 Wrath)
@@ -5384,7 +5384,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Perfect Order (7 Wrath)
@@ -5395,7 +5395,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever a target uses an ability that costs Malice (see *Draw Steel: Monsters*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target uses an ability that costs Malice (see *Draw Steel: Monsters*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Purifying Pacifism (7 Wrath)
@@ -5406,7 +5406,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Stillness (7 Wrath)
@@ -5417,7 +5417,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever a target moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -5724,7 +5724,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever any target takes a triggered action or a free triggered action, that action is negated and the target takes holy damage equal to your Presence score.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever any target takes a triggered action or a free triggered action, that action is negated and the target takes holy damage equal to your Presence score.
 
 ##### 6th-Level Paragon Abilities
 
@@ -5795,7 +5795,7 @@ You gain a domain feature from your domain, as shown on the 7th-Level [Censor](s
 <!-- @type: feature -->
 ##### Blessing of Iron
 
-The gods send divine favor to you and your allies. While you are not dying, enemies take a bane on strikes against you or any ally within 3 squares of you.
+The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a bane on strikes against you or any ally within 3 squares of you.
 
 <!-- @type: feature -->
 ##### Covenant of the Heart
@@ -5870,14 +5870,14 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Word of Death Deferred
 
-You can stop death from taking your allies. When an ally within distance of your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability dies and you are not dying, you can use a free triggered action to instead have that ally fall unconscious until they regain Stamina.
+You can stop death from taking your allies. When an ally within distance of your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability dies and you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free triggered action to instead have that ally fall unconscious until they regain Stamina.
 
 Additionally, your abilities deal an extra 5 damage to [winded](scc:mcdm.heroes.v1/rule.health/winded) creatures.
 
 <!-- @type: feature -->
 ##### Word of Fate Denied
 
-When an ally within 10 squares takes damage that would leave them dying, you can use a free triggered action to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
+When an ally within 10 squares takes damage that would leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free triggered action to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
 
 <!-- @type: feature -->
 ##### Your Triumphs Are Remembered
@@ -6111,7 +6111,7 @@ Choose one of the following abilities.
 > - **12-16:** 19 + M holy damage
 > - **17+:** 26 + M holy damage
 > 
-> **Effect:** Until the end of the encounter or until you are dying, the target has damage weakness 10.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target has damage weakness 10.
 
 <!-- @type: ability | @cost: 11 Wrath -->
 > ###### Edict of Unyielding Resolve (11 Wrath)
@@ -6122,7 +6122,7 @@ Choose one of the following abilities.
 > |-----------------|--------------------------------------:|
 > | **📏 2 aura**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each target who starts their turn in the area gains 10 temporary Stamina.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target who starts their turn in the area gains 10 temporary Stamina.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -6395,7 +6395,7 @@ You have the following ability.
 > |----------------|-------------------------:|
 > | **📏 Melee 1** | **🎯 One dead creature** |
 > 
-> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of dying can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
+> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
 
 <!-- @type: feature -->
 ##### Hands of the Maker
@@ -6900,7 +6900,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|-----------------------:|
 > | **📏 Ranged 10**   | **🎯 Three creatures** |
 > 
-> **Effect:** You can target yourself instead of one creature with this ability. Choose one of the following effects, which lasts until the end of the encounter or until you are dying:
+> **Effect:** You can target yourself instead of one creature with this ability. Choose one of the following effects, which lasts until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying):
 > 
 > - Whenever a target makes a power roll, they can roll three dice and choose which two rolls to use.
 > - Whenever a target makes a power roll, they must roll three dice and use the lowest two rolls.
@@ -6914,7 +6914,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|--------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self and each ally** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each target gains 1 surge at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Divine Comedy (5 Piety)
@@ -6983,7 +6983,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|-------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self and one ally** |
 > 
-> **Effect:** Until the end of the encounter or until the target is dying, at the start of each of the target's turns, they gain a bonus to speed and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
+> **Effect:** Until the end of the encounter or until the target is [dying](scc:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's turns, they gain a bonus to speed and a bonus to rolled damage equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Reap (5 Piety)
@@ -7042,7 +7042,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|-----------------------------:|
 > | **📏 3 aura**    | **🎯 Each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, whenever a target starts their turn in the area, they can spend a Recovery.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target starts their turn in the area, they can spend a Recovery.
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -7298,7 +7298,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > |--------------------|-------------------------|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** The first time the target is dying or [winded](scc:mcdm.heroes.v1/rule.health/winded) before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.
+> **Effect:** The first time the target is [dying](scc:mcdm.heroes.v1/rule.health/dying) or [winded](scc:mcdm.heroes.v1/rule.health/winded) before the end of the encounter, each enemy within 5 squares of them takes 15 holy damage.
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -7351,7 +7351,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|---------------------------------:|
 > | **📏 4 aura**    | **🎯 Each creature in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your Intuition score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability for your allies.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your Intuition score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability for your allies.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Blade of the Heavens (9 Piety)
@@ -7377,7 +7377,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|------------------------------------------:|
 > | **📏 4 aura**    | **🎯 Self and each creature in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each enemy in the area takes a bane on power rolls, and you and each ally in the area gain 1 surge at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy in the area takes a bane on power rolls, and you and each ally in the area gain 1 surge at the end of each of your turns.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Cuirass of the Gods (9 Piety)
@@ -7399,7 +7399,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |-------------------|-----------------|
 > | **📏 Ranged 10**  | **🎯 Special**  |
 > 
-> **Effect:** You conjure a size 2 rolling machine that appears in an unoccupied space within distance. The machine has 50 Stamina and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its Stamina drops to 0, or if you are dying. When the machine first appears, make the following power roll once, targeting each enemy adjacent to it.
+> **Effect:** You conjure a size 2 rolling machine that appears in an unoccupied space within distance. The machine has 50 Stamina and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its Stamina drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying). When the machine first appears, make the following power roll once, targeting each enemy adjacent to it.
 > 
 > **Power Roll + Intuition:**
 > 
@@ -7553,7 +7553,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 <!-- @type: feature -->
 ##### Blessing of Iron
 
-The gods send divine favor to you and your allies. While you are not dying, enemies take a bane on strikes against you or any ally within 3 squares of you.
+The gods send divine favor to you and your allies. While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), enemies take a bane on strikes against you or any ally within 3 squares of you.
 
 <!-- @type: feature -->
 ##### Covenant of the Heart
@@ -7628,14 +7628,14 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Word of Death Deferred
 
-You can stop death from taking your allies. When an ally within distance of your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability dies and you are not dying, you can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to instead have that ally fall unconscious until they regain Stamina.
+You can stop death from taking your allies. When an ally within distance of your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability dies and you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to instead have that ally fall unconscious until they regain Stamina.
 
 Additionally, your abilities deal an extra 5 damage to [winded](scc:mcdm.heroes.v1/rule.health/winded) creatures.
 
 <!-- @type: feature -->
 ##### Word of Fate Denied
 
-When an ally within 10 squares takes damage that would leave them dying, you can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
+When an ally within 10 squares takes damage that would leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to make yourself or another willing creature within 10 squares of you the target of the triggering damage instead. The creature you choose takes the damage and suffers any effects associated with it, and that damage can't be reduced in any way.
 
 <!-- @type: feature -->
 ##### Your Triumphs Are Remembered
@@ -7671,7 +7671,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > |--------------------|------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Additionally, at the start of each of their turns until the end of the encounter or until they are dying, the target gains 3 surges.
+> **Effect:** The target can spend any number of Recoveries, can end any effects on them that are ended by a saving throw or that end at the end of their turn, and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Additionally, at the start of each of their turns until the end of the encounter or until they are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target gains 3 surges.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Blessing of Steel (11 Piety)
@@ -7693,7 +7693,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > |-------------------|--------------------------------------:|
 > | **📏 5 aura**     | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** At the end of each of your turns until the end of the encounter or until you are dying, each target gains 3 surges.
+> **Effect:** At the end of each of your turns until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 3 surges.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Drag the Unworthy (11 Piety)
@@ -7769,7 +7769,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each of the target's power rolls has its outcome improved by one tier.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each of the target's power rolls has its outcome improved by one tier.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Blessing of the Fortress (11 Piety)
@@ -7780,7 +7780,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------------|-------------:|
 > | **📏 Self; see below** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, no enemy can approach within 5 squares of you by moving or by being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by any enemy. Targets can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) closer to you by you or your allies, or can move closer because of your movement.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), no enemy can approach within 5 squares of you by moving or by being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by any enemy. Targets can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) closer to you by you or your allies, or can move closer because of your movement.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Divine Dragon (11 Piety)
@@ -7791,7 +7791,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|----------------:|
 > | **📏 Ranged 10**   |  **🎯 Special** |
 > 
-> **Effect:** You conjure a size 4 dragon that appears in an unoccupied space within distance. The dragon has speed 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), stability 4, 100 Stamina, immunity all to fire damage, and uses your characteristics. The dragon disappears at the end of the encounter, if their Stamina drops to 0, or if you are dying.
+> **Effect:** You conjure a size 4 dragon that appears in an unoccupied space within distance. The dragon has speed 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), stability 4, 100 Stamina, immunity all to fire damage, and uses your characteristics. The dragon disappears at the end of the encounter, if their Stamina drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
 > On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 cube within 1 square of them. Make the following power roll targeting each enemy in the area.
 > 
@@ -7824,7 +7824,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **12-16:** 3 lightning damage, 3 sonic damage
 > - **17+:** 5 lightning damage, 5 sonic damage
 > 
-> **Effect:** A raging storm fills the area until the end of the encounter or until you are dying. At the start of each of your turns, you can move the storm up to 5 squares (no action required). On subsequent turns while the storm is active, you can use a maneuver to make its power roll.
+> **Effect:** A raging storm fills the area until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying). At the start of each of your turns, you can move the storm up to 5 squares (no action required). On subsequent turns while the storm is active, you can use a maneuver to make its power roll.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Night Falls (11 Piety)
@@ -7835,7 +7835,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |-------------------------|-----------------:|
 > | **📏 5 cube within 10** |   **🎯 Special** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, the area is filled with magic darkness that your enemies can't see through, but you and your allies can.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the area is filled with magic darkness that your enemies can't see through, but you and your allies can.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Radiance of Grace (11 Piety)
@@ -7857,7 +7857,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------------|----------------:|
 > | **📏 15 wall within 10** |  **🎯 Special** |
 > 
-> **Effect:** The wall lasts until the end of the encounter or until you are dying, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 15 damage.
+> **Effect:** The wall lasts until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 15 damage.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Solar Flare (11 Piety)
@@ -8657,7 +8657,7 @@ Each form has a prerequisite level that you must attain before you can adopt it.
 
 You choose a specific animal and appearance while in [animal form](scc:mcdm.heroes.v1/complication/animal-form). For example, if you become a rodent, you might become a mouse, a rat, a shrew, or any other size 1T animal who fits the rodent type. When you take on an [animal form](scc:mcdm.heroes.v1/complication/animal-form), your equipment either melds into your new form or falls undamaged to the ground (your choice). When you return to your true form, any melded gear reappears on your person.
 
-You can revert back to your true form as a maneuver. You can't enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) unless you are in your true form. When you are dying, you revert to your true form and can't turn back into an animal until you are no longer dying.
+You can revert back to your true form as a maneuver. You can't enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) unless you are in your true form. When you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you revert to your true form and can't turn back into an animal until you are no longer [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 ###### Green Animal Forms Table
 
@@ -8698,7 +8698,7 @@ You have the following ability.
 > |-------------------------|---------------:|
 > | **📏 Ranged 10**        | **🎯 Special** |
 > 
-> **Effect:** You open two size 1 portals in unoccupied spaces within distance, which last until you move beyond distance from any portal, end the effect as a maneuver, or are dying. Each portal must be placed at a height of no more than 1 square above the ground. When you or any ally touch a portal, that creature can choose to be instantly [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to an unoccupied space of their choice adjacent to the other portal. If an enemy is force moved into a portal, their [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ends and they emerge from the other portal in an unoccupied space chosen by the creature who force moved them.
+> **Effect:** You open two size 1 portals in unoccupied spaces within distance, which last until you move beyond distance from any portal, end the effect as a maneuver, or are [dying](scc:mcdm.heroes.v1/rule.health/dying). Each portal must be placed at a height of no more than 1 square above the ground. When you or any ally touch a portal, that creature can choose to be instantly [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to an unoccupied space of their choice adjacent to the other portal. If an enemy is force moved into a portal, their [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ends and they emerge from the other portal in an unoccupied space chosen by the creature who force moved them.
 > 
 > At the start of each of your turns while the portals are active, you can open a new portal connected to the others. If three or more portals are present, you and your allies choose which portal to emerge from when entering a portal, and a creature who [force move](scc:mcdm.heroes.v1/movement/forced-movement)s an enemy into a portal chooses that enemy's destination portal.
 
@@ -8925,7 +8925,7 @@ The first time each combat round that you or a creature within 10 squares takes 
 <!-- @type: feature -->
 #### Mantle of Essence
 
-While you have 3 or more essence and are not dying, you exude an aura of magic whose distance is equal to your Reason score. The effects within the area of the aura are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the aura at will (no action required).
+While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you exude an aura of magic whose distance is equal to your Reason score. The effects within the area of the aura are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the aura at will (no action required).
 
 ###### Mantle of Essence Specialization Effects Table
 
@@ -9596,7 +9596,7 @@ Within the heat of battle, your determination and anger grow, fueling a Heroic R
 
 At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain ferocity equal to your Victories. At the start of each of your turns during combat, you gain 1d3 ferocity.
 
-Additionally, the first time each combat round that you take damage, you gain 1 ferocity. The first time you become [winded](scc:mcdm.heroes.v1/rule.health/winded) or are dying in an encounter, you gain 1d3 ferocity.
+Additionally, the first time each combat round that you take damage, you gain 1 ferocity. The first time you become [winded](scc:mcdm.heroes.v1/rule.health/winded) or are [dying](scc:mcdm.heroes.v1/rule.health/dying) in an encounter, you gain 1d3 ferocity.
 
 You lose any remaining ferocity at the end of the encounter.
 
@@ -9699,11 +9699,11 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 > |-------------|--------------:|
 > | **📏 Self** |   **🎯 Self** |
 > 
-> **Trigger:** You lose Stamina and are not dying.
+> **Trigger:** You lose Stamina and are not [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
 > **Effect:** You gain temporary Stamina equal to your Might score and can enter your [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form.
 > 
-> **Spend 1 Ferocity:** If you are not dying, you can spend a Recovery.
+> **Spend 1 Ferocity:** If you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can spend a Recovery.
 
 <!-- @type: ability | @subtype: triggered -->
 > ###### Lines of Force
@@ -9953,7 +9953,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > - **12-16:** 11 + M damage
 > - **17+:** 16 + M damage
 > 
-> **Spend 1+ Ferocity:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), this ability deals an extra 1d6 damage for each ferocity spent. While you are dying, it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 Stamina after making this strike.
+> **Spend 1+ Ferocity:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), this ability deals an extra 1d6 damage for each ferocity spent. While you are [dying](scc:mcdm.heroes.v1/rule.health/dying), it deals an extra 1d10 damage for each ferocity spent. In either case, you lose 1d6 Stamina after making this strike.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -10157,7 +10157,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each enemy who starts their turn adjacent to you and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their turn.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy who starts their turn adjacent to you and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their turn.
 
 <!-- @type: ability | @cost: 7 Ferocity | @id: face-the-storm -->
 > ###### Face the Storm! (7 Ferocity)
@@ -10168,7 +10168,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are dying, each creature you make a melee strike against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a melee strike against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
 > ###### Steelbreaker (7 Ferocity)
@@ -10296,7 +10296,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > |---------------------------|-------------------------------:|
 > | **📏 Melee 1**            | **🎯 The triggering creature** |
 > 
-> **Trigger:** A creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying, or damages you while you are [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying.
+> **Trigger:** A creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying), or damages you while you are [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
 > **Power Roll + Might:**
 > 
@@ -10473,7 +10473,7 @@ Choose one of the following abilities.
 > |-----------------|---------------------------------:|
 > | **📏 3 aura**   | **🎯 Each creature in the area** |
 >
-> **Effect:** Until the end of the encounter or until you are dying, each enemy target takes damage of your primordial damage type equal to twice your Might score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial damage type equal to twice your Might score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
 >
 > **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
@@ -10561,7 +10561,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You gain 10 temporary Stamina. Additionally, choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, whenever an enemy damages you, they take 10 damage of the chosen type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.
+> **Effect:** You gain 10 temporary Stamina. Additionally, choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever an enemy damages you, they take 10 damage of the chosen type. If this damage reduces the enemy to 0 Stamina, you gain 10 temporary Stamina.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Overkill (11 Ferocity)
@@ -10589,7 +10589,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are dying, you can choose one target of any ability you use, with that target taking an extra 15 damage of the chosen type. Additionally, whenever you gain ferocity from taking damage, the source of the damage takes 5 damage of the chosen type.
+> **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you can choose one target of any ability you use, with that target taking an extra 15 damage of the chosen type. Additionally, whenever you gain ferocity from taking damage, the source of the damage takes 5 damage of the chosen type.
 
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Relentless Death (11 Ferocity)
@@ -11214,7 +11214,7 @@ You project a psionic field of order around your body, dampening the effects of 
 > - Inertial Anchor: Any target who starts their turn in the area can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 > - Synaptic Break: Whenever you or any ally uses an ability against a target that has a potency effect, the potency is increased by 1.
 > 
-> This ability remains active even after an encounter ends. It ends only if you are dying or if you willingly end it (no action required).
+> This ability remains active even after an encounter ends. It ends only if you are [dying](scc:mcdm.heroes.v1/rule.health/dying) or if you willingly end it (no action required).
 
 <!-- @type: feature -->
 #### Inertial Shield
@@ -11743,7 +11743,7 @@ Choose one of the following abilities.
 > - **12-16:** You gain 15 temporary Stamina.
 > - **17+:** You gain 20 temporary Stamina.
 >
-> **Effect:** While you have temporary Stamina from this ability, you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying.
+> **Effect:** While you have temporary Stamina from this ability, you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -12027,7 +12027,7 @@ Choose one of the following abilities.
 > |---------------------------|----------------:|
 > | **📏 10 wall within 10**  |  **🎯 Special** |
 >
-> **Effect:** You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are dying. The wall's squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < AVERAGE is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends). Each enemy who is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into the wall and has M < AVERAGE is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
+> **Effect:** You can place this wall in occupied squares, sliding each creature in the area into the nearest unoccupied space of your choice. The wall remains until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying). The wall's squares are treated as stone squares for the purpose of damage, and you and allies can move freely through the wall. Each enemy who enters a square adjacent to the wall and has M < AVERAGE is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends). Each enemy who is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into the wall and has M < AVERAGE is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 ##### 6th-Level Metakinetic Abilities
 
@@ -12239,7 +12239,7 @@ As a 9th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### I Am the Weapon
 
-Your Stamina increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while dying. You no longer age or have need of food. Additionally, you can use Intuition instead of another characteristic when resisting potencies.
+Your Stamina increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying). You no longer age or have need of food. Additionally, you can use Intuition instead of another characteristic when resisting potencies.
 
 <!-- @type: feature -->
 #### 9th-Level Tradition Ability
@@ -12301,7 +12301,7 @@ Choose one of the following abilities.
 > - **12-16:** You gain 30 temporary Stamina.
 > - **17+:** You gain 40 temporary Stamina.
 >
-> **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your [Entropic Adaptability](scc:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) trait, you ignore the negative effects of dying, and you have a +2 bonus to potencies.
+> **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your [Entropic Adaptability](scc:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) trait, you ignore the negative effects of [dying](scc:mcdm.heroes.v1/rule.health/dying), and you have a +2 bonus to potencies.
 
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Heat Drain (11 Discipline)
@@ -13252,7 +13252,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Umbral Form
 
-As a maneuver, you lose control of yourself, becoming a shadow creature dripping with ash. This transformation lasts until the end of the encounter, until you are dying, or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:
+As a maneuver, you lose control of yourself, becoming a shadow creature dripping with ash. This transformation lasts until the end of the encounter, until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:
 
 - You can automatically climb at full speed while moving.
 - Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.
@@ -13907,7 +13907,7 @@ You know how to focus the attention of your allies as you push them toward victo
 > |------------------|--------------------:|
 > | **📏 Ranged 10** | **🎯 One creature** |
 >
-> **Effect:** The target is marked by you until the end of the encounter, until you are dying, or until you use this ability again. You can willingly end your mark on a creature (no action required), and if another [tactician](scc:mcdm.heroes.v1/class/tactician) marks a creature, your mark on that creature ends. When a creature marked by you is reduced to 0 Stamina, you can use a free triggered action to mark a new target within distance.
+> **Effect:** The target is marked by you until the end of the encounter, until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), or until you use this ability again. You can willingly end your mark on a creature (no action required), and if another [tactician](scc:mcdm.heroes.v1/class/tactician) marks a creature, your mark on that creature ends. When a creature marked by you is reduced to 0 Stamina, you can use a free triggered action to mark a new target within distance.
 >
 > You can initially mark only one creature using this ability, though other [tactician](scc:mcdm.heroes.v1/class/tactician) abilities allow you to mark additional creatures at the same time. The mastermind [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-doctrine)'s [Anticipation](scc:mcdm.heroes.v1/feature.tactician.level-5/anticipation) feature allows you to target additional creatures with this ability starting at 5th level.
 >
@@ -14230,7 +14230,7 @@ As a 3rd-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 <!-- @type: feature -->
 #### Out of Position
 
-Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can't be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.
+Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
 <!-- @type: feature -->
 #### 7-Focus Ability
@@ -14246,7 +14246,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are dying, the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a melee strike signature ability or a melee strike heroic ability instead of a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @cost: 7 Focus | @id: hit-em-hard -->
 > ###### Hit 'Em Hard! (7 Focus)
@@ -14257,7 +14257,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever you or any ally deals damage to a target marked by you, that creature gains 2 surges, which they can use immediately.
 
 <!-- @type: ability | @cost: 7 Focus -->
 > ###### Rout (7 Focus)
@@ -14268,7 +14268,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you who has R < AVERAGE, the target is [frightened](scc:mcdm.heroes.v1/condition/frightened) of the creature who dealt the damage (save ends).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever you or any ally deals damage to a target marked by you who has R < AVERAGE, the target is [frightened](scc:mcdm.heroes.v1/condition/frightened) of the creature who dealt the damage (save ends).
 
 <!-- @type: ability | @cost: 7 Focus | @id: stay-strong-and-focus -->
 > ###### Stay Strong and Focus! (7 Focus)
@@ -14279,7 +14279,7 @@ Choose one heroic ability from the following options, each of which costs 7 focu
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are dying, whenever you or any ally deals damage to a target marked by you, the creature who dealt the damage can spend a Recovery.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever you or any ally deals damage to a target marked by you, the creature who dealt the damage can spend a Recovery.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -14761,7 +14761,7 @@ Choose one of the following abilities.
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** You gain 6 surges. Until the end of the encounter or until you are dying, whenever the Director spends Malice (see *Draw Steel: Monsters*), choose yourself or one ally within 10 squares. The chosen character gains 2 of their Heroic Resource.
+> **Effect:** You gain 6 surges. Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever the Director spends Malice (see *Draw Steel: Monsters*), choose yourself or one ally within 10 squares. The chosen character gains 2 of their Heroic Resource.
 
 ##### 9th-Level Vanguard Abilities
 
@@ -14803,7 +14803,7 @@ Choose one of the following abilities.
 > - **12-16:** 13 + M damage
 > - **17+:** 17 + M damage
 >
-> **Effect:** Until the end of the encounter or until you are dying, you can use a signature or heroic ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any target marked by you.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a signature or heroic ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against any target marked by you.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -15588,7 +15588,7 @@ Choose one of the following abilities.
 > - **12-16:** The target shifts up to their speed and uses their signature ability against any enemies of your choice.
 > - **17+:** The target moves up to their speed and uses their signature ability against any enemies of your choice.
 >
-> **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect. However, you can move them to provoke opportunity attacks.
+> **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect. However, you can move them to provoke opportunity attacks.
 >
 > **Strained:** You take 1d6 damage and are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
 
@@ -15746,7 +15746,7 @@ Whenever you obtain a success on a test using a skill from the interpersonal ski
 <!-- @type: feature -->
 ##### Distortion Temporal
 
-While you are not dying, time behaves irregularly around you in a 3 aura. That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to speed until the end of the turn.
+While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 aura. That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to speed until the end of the turn.
 
 <!-- @type: feature -->
 ##### Kinetic Amplifier
@@ -15761,7 +15761,7 @@ The distance of your ranged psionic abilities increases by 5. Additionally, the 
 <!-- @type: feature -->
 ##### Speed of Thought
 
-Once per combat round while you are not dying, you can spend 2 clarity when you use a triggered action to turn it into a free triggered action.
+Once per combat round while you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can spend 2 clarity when you use a triggered action to turn it into a free triggered action.
 
 <!-- @type: feature -->
 ##### Triangulate
@@ -16575,7 +16575,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|---------------------------------:|
 > | **📏 2 aura**                | **🎯 Each creature in the area** |
 >
-> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them dying, or result in them suffering a condition or other negative effect.
+> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
 <!-- @type: feature -->
 ##### Dramatic Monologue
@@ -17133,7 +17133,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn dying while in the area gains an edge on power rolls and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their turn.
+> **Effect:** While this performance is active, each target who starts their turn [dying](scc:mcdm.heroes.v1/rule.health/dying) while in the area gains an edge on power rolls and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their turn.
 
 <!-- @type: feature -->
 #### 7-Drama Ability
@@ -19426,7 +19426,7 @@ You came into contact with a mote of pure chaos energy, or were subjected to a s
 
 **Benefit:** You gain an edge on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab), [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab), and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers. Additionally, you can hold an additional item even when your hands are full.
 
-**Drawback:** While dying, you grow and retract uncoordinated limbs at random, imposing a bane on your power rolls.
+**Drawback:** While [dying](scc:mcdm.heroes.v1/rule.health/dying), you grow and retract uncoordinated limbs at random, imposing a bane on your power rolls.
 
 <!-- @type: complication -->
 #### Chosen One
@@ -19518,7 +19518,7 @@ When you were young, you did something reckless and unthinking that endangered a
 
 For as long as you can remember, you've never gotten older. You've simply adventured through one age after another. Still, your memory of past events—even those you were involved with—is a little hazy. Apparently, your memory isn't as long-lived as you are.
 
-**Benefit:** You don't age. Additionally, whenever you would die, you instead enter a state of suspended animation indistinguishable from death. If your body isn't destroyed by dying or while you remain in this state, you come back to life after 12 hours and regain Stamina equal to your recovery value.
+**Benefit:** You don't age. Additionally, whenever you would die, you instead enter a state of suspended animation indistinguishable from death. If your body isn't destroyed by [dying](scc:mcdm.heroes.v1/rule.health/dying) or while you remain in this state, you come back to life after 12 hours and regain Stamina equal to your recovery value.
 
 **Drawback:** You take a bane on any test made to recall lore.
 
@@ -19543,7 +19543,7 @@ Through ignorance, fear, spite, or selfishness, you refused to help someone in n
 
 **Benefit:** You have 1 additional Recovery.
 
-**Drawback:** When you are out of Recoveries, you are dying, no matter what your current Stamina is.
+**Drawback:** When you are out of Recoveries, you are [dying](scc:mcdm.heroes.v1/rule.health/dying), no matter what your current Stamina is.
 
 <!-- @type: complication -->
 #### Curse of Stone
@@ -19588,7 +19588,7 @@ When an evil mage threatened someone you loved, you blocked that foe's summoning
 
 **Benefit:** You gain a +3 bonus to Stamina at 1st level, then again at 4th, 7th, and 10th levels.
 
-**Drawback:** While you are dying, your possessing elemental takes control of your body. The elemental yearns for destruction, causing you to attack the nearest creature you notice without regard for your desires or your body's safety. If you don't do your best to fulfill the elemental's rage, the Director can take temporary control of your hero.
+**Drawback:** While you are [dying](scc:mcdm.heroes.v1/rule.health/dying), your possessing elemental takes control of your body. The elemental yearns for destruction, causing you to attack the nearest creature you notice without regard for your desires or your body's safety. If you don't do your best to fulfill the elemental's rage, the Director can take temporary control of your hero.
 
 <!-- @type: complication -->
 #### Evanesceria
@@ -21807,7 +21807,7 @@ A creature who uses the [Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers
 
 A creature who uses the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver spends a Recovery and regains Stamina equal to their recovery value. (See below for Stamina. See Recoveries in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
-A creature who is dying (see Dying and Death in Stamina below) can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver, but other creatures can help them spend Recoveries in other ways.
+A creature who is [dying](scc:mcdm.heroes.v1/rule.health/dying) (see [Dying](scc:mcdm.heroes.v1/rule.health/dying) and Death in Stamina below) can't use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver, but other creatures can help them spend Recoveries in other ways.
 
 <!-- @type: feature | @id: escape-grab -->
 #### Escape Grab
@@ -22089,7 +22089,7 @@ While you are unconscious, you can't take main actions, maneuvers, triggered act
 <!-- @type: rule | @group: health | @id: temporary-stamina -->
 #### Temporary Stamina
 
-Some abilities, treasures, and other effects grant a creature temporary Stamina. Temporary Stamina shouldn't be included in a creature's Stamina total when figuring out a creature's recovery value or [winded](scc:mcdm.heroes.v1/rule.health/winded) value. If you have temporary Stamina while [winded](scc:mcdm.heroes.v1/rule.health/winded), dying, or dead, the temporary Stamina doesn't change those states.
+Some abilities, treasures, and other effects grant a creature temporary Stamina. Temporary Stamina shouldn't be included in a creature's Stamina total when figuring out a creature's recovery value or [winded](scc:mcdm.heroes.v1/rule.health/winded) value. If you have temporary Stamina while [winded](scc:mcdm.heroes.v1/rule.health/winded), [dying](scc:mcdm.heroes.v1/rule.health/dying), or dead, the temporary Stamina doesn't change those states.
 
 Whenever you take damage while you have temporary Stamina, the temporary Stamina decreases first, and any leftover damage is applied to your Stamina as usual. For instance, if you have 10 temporary Stamina and take 16 damage, you lose the temporary Stamina and then lose another 6 Stamina.
 
@@ -22132,7 +22132,7 @@ If your mount dies, they [fall prone](scc:mcdm.heroes.v1/condition/prone), and y
 
 ### End of Combat
 
-At the end of combat, the Director determines if the heroes earn any Victories. Any effect or condition on you that you suffered during combat (except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or dying) ends if you want it to.
+At the end of combat, the Director determines if the heroes earn any Victories. Any effect or condition on you that you suffered during combat (except for being [winded](scc:mcdm.heroes.v1/rule.health/winded), unconscious, or [dying](scc:mcdm.heroes.v1/rule.health/dying)) ends if you want it to.
 
 #### How Combat Ends
 
@@ -23069,7 +23069,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Damage Immunity II:** The damage immunity conveyed by the armor increases to 10.
 
-**Dragon Soul:** When another creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or dying, you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
+**Dragon Soul:** When another creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
 
 **Power Roll + Your Highest Characteristic Score:**
 
@@ -23924,7 +23924,7 @@ Your character can carry any number of consumables at a time.
 >
 > Item creation rules, crafting and research projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, dying and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 >
 > Negotiation rules, motivations, pitfalls, interest, and patience: Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation).
 
@@ -24449,7 +24449,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 180
 
-**Effect:** When you drink this potion as a maneuver, you gain a tenacious will to cling to life for 24 hours. If you are dying during this time, you don't die until you reach the negative of your Stamina maximum rather than your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. Additionally, while you are dying, you gain on edge on power rolls and you take half the damage dealt by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition. Once the potion's magic is triggered, it ends when you are no longer dying.
+**Effect:** When you drink this potion as a maneuver, you gain a tenacious will to cling to life for 24 hours. If you are [dying](scc:mcdm.heroes.v1/rule.health/dying) during this time, you don't die until you reach the negative of your Stamina maximum rather than your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. Additionally, while you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you gain on edge on power rolls and you take half the damage dealt by the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition. Once the potion's magic is triggered, it ends when you are no longer [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 <!-- @type: treasure -->
 ##### Timesplitter
@@ -25292,7 +25292,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** You gain a +6 bonus to Stamina while you wear this armor. Additionally, you gain an edge on tests made to lie about or conceal your identity.
 
-**5th Level:** The armor's bonus to Stamina increases to +12. Additionally, whenever you take damage, you can use a triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you do, you create an illusion of you dying in your previous space, which fades at the end of your next turn.
+**5th Level:** The armor's bonus to Stamina increases to +12. Additionally, whenever you take damage, you can use a triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you do, you create an illusion of you [dying](scc:mcdm.heroes.v1/rule.health/dying) in your previous space, which fades at the end of your next turn.
 
 **9th Level:** The armor's bonus to Stamina increases to +21. Whenever you use the armor's triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to the damage taken (minimum 5 squares). Additionally, if a creature dealt you the triggering damage, you become invisible to that creature until the end of your next turn.
 
@@ -27410,7 +27410,7 @@ Grole is the orcish hero of those facing impossible decisions. He is favored by 
 
 Khravila Who Ran Forty Leagues, The Eternal Runner, Khravila The Unstoppable.
 
-On the eve of a war between elves and [humans](scc:mcdm.heroes.v1/ancestry/human) that would certainly result in the death of many [orcs](scc:mcdm.heroes.v1/ancestry/orc) caught between the two great powers, Khravila's dying father had been incapable of deciding what should be done. Equally incapable of choosing who should succeed him as chieftain—his son or daughter.
+On the eve of a war between elves and [humans](scc:mcdm.heroes.v1/ancestry/human) that would certainly result in the death of many [orcs](scc:mcdm.heroes.v1/ancestry/orc) caught between the two great powers, Khravila's [dying](scc:mcdm.heroes.v1/rule.health/dying) father had been incapable of deciding what should be done. Equally incapable of choosing who should succeed him as chieftain—his son or daughter.
 
 At the moment of his death, when the god-caller rang the bell of souls officially announcing her father's passing to the tribe, Khravila looked at her brother and saw hesitation. Khravila had never known doubt.
 
@@ -28264,12 +28264,12 @@ Discuss the details of a hero's complication with that hero's player. Complicati
 
 Once you understand a hero's desires for their complication, you can create an echelon outline for the complication to give the hero's backstory some narrative teeth throughout the campaign. Consider the following example.
 
-Matt, playing Linn the [talent](scc:mcdm.heroes.v1/class/talent), has the [Elemental Inside](scc:mcdm.heroes.v1/complication/elemental-inside) complication. After discussing the details with the Director, Matt decides that years ago, Linn threw herself in front of a spell cast by Sorin the Brown, an evil earth [elementalist](scc:mcdm.heroes.v1/class/elementalist). Sorin wanted to abduct Linn's [talent](scc:mcdm.heroes.v1/class/talent) mentor, a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) who was a perfect subject for her next deadly experiment. In taking decisive action, Linn saved her mentor but absorbed an angry force of earth named Bruulv. Sorin escaped and desires the return of her pet elemental. Meanwhile Linn is tougher thanks to the elemental within, but whenever she is dying, Bruulv takes control of her body and goes on a violent rampage.
+Matt, playing Linn the [talent](scc:mcdm.heroes.v1/class/talent), has the [Elemental Inside](scc:mcdm.heroes.v1/complication/elemental-inside) complication. After discussing the details with the Director, Matt decides that years ago, Linn threw herself in front of a spell cast by Sorin the Brown, an evil earth [elementalist](scc:mcdm.heroes.v1/class/elementalist). Sorin wanted to abduct Linn's [talent](scc:mcdm.heroes.v1/class/talent) mentor, a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) who was a perfect subject for her next deadly experiment. In taking decisive action, Linn saved her mentor but absorbed an angry force of earth named Bruulv. Sorin escaped and desires the return of her pet elemental. Meanwhile Linn is tougher thanks to the elemental within, but whenever she is [dying](scc:mcdm.heroes.v1/rule.health/dying), Bruulv takes control of her body and goes on a violent rampage.
 
 Matt tells the Director that Linn enjoys the extra protection afforded to her by Bruulv, since it makes her a tougher hero, and she would like to find a way to keep her benefit while losing the drawback. The Director comes up with an echelon outline for Linn that will enrich the [talent's](scc:mcdm.heroes.v1/class/talent) story and have ties to the main campaign (which happens to be the example campaign in the echelon outline above).
 
 - **1st Echelon:** After the heroes start riling up Lord Saxton's forces, Sorin offers her services to the tyrant for a chance to face Linn. During the heroes' assault on the keep, Sorin attacks.
-- **2nd Echelon:** Assuming Sorin's defeat, Bruulv becomes even angrier, and can now try to wrestle control away from Linn whenever she is [winded](scc:mcdm.heroes.v1/rule.health/winded) in addition to when she is dying. Linn finds a Crown of Elements, a special magic treasure that allows her to force Bruulv back to a "takes control only while dying" state as long as she wears it. The crown has other elemental powers too—and is one of the items desired by Ajax.
+- **2nd Echelon:** Assuming Sorin's defeat, Bruulv becomes even angrier, and can now try to wrestle control away from Linn whenever she is [winded](scc:mcdm.heroes.v1/rule.health/winded) in addition to when she is [dying](scc:mcdm.heroes.v1/rule.health/dying). Linn finds a Crown of Elements, a special magic treasure that allows her to force Bruulv back to a "takes control only while [dying](scc:mcdm.heroes.v1/rule.health/dying)" state as long as she wears it. The crown has other elemental powers too—and is one of the items desired by Ajax.
 - **3rd Echelon:** As Linn and the other heroes build a coalition, an elderly [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) named Leaves of the Autumn Wind offers to enhance the crown, allowing the [talent](scc:mcdm.heroes.v1/class/talent) to speak directly to Bruulv. The catch is that Leaves needs a magic fire opal from the lair of a fire giant to enhance the crown.
 - **4th Echelon:** With the crown enhanced, Linn can speak directly to Bruulv. By learning the elemental's history and desires through negotiation, she can see that Bruulv mostly wants to return to the City of Brass so they might once again see the raw elemental powers come together. If Linn can visit this city that is literally worlds away, she earns Bruulv's trust and the elemental stops taking over her form.
 
