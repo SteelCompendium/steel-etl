@@ -183,6 +183,11 @@ A shared glossary blurb + an explicit "⚠️ meaning of `trait` narrowed on
   class targets that change shape.
 - `data-sdk-npm/src/schema/feature.schema.json` (`feature_type` description) and
   `feature.schema.json.md` — enumerate the three values and define each.
+- `steel-etl/schemas/feature.schema.json` — **steel-etl ships its own hand-synced
+  copy** of the SDK schemas (it is Go and cannot import the npm package; nothing
+  programmatically links the two). The `feature_type` enum/description must be
+  updated here too, in the same change. See workspace `ARCHITECTURE.md` →
+  "Schemas: two hand-synced copies".
 - Inline comments in `internal/content/feature.go`, `internal/content/ability.go`,
   `internal/content/statblock_parse.go` describing the inference rule.
 

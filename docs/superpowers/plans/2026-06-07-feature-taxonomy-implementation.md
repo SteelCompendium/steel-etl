@@ -15,6 +15,22 @@
 
 ---
 
+## Execution status — COMPLETE (2026-06-07)
+
+All seven phases executed and merged to `origin/main` (steel-etl + workspace); full suite green with `-race`, `gen --all` clean (zero unresolved links), `validate --scc-stable` passing.
+
+- **Phase 1–3** (parser / output / site): done.
+- **Phase 4** (feature-group audit): **no-op** — every named feature-group is an organizational container, not a book-granted leaf; "College Features" was already `@type: feature`.
+- **Phase 5** (regenerate + link rewrite): done — 760 `feature.trait.<class|common|companion>` links rewritten across `Draw Steel Heroes.md` + `Draw Steel Beastheart.md`; ancestry/monster codes untouched.
+- **Phase 6** (docs): done.
+- **Phase 7** (SDK schema docs): done — **and extended beyond the original plan** to `steel-etl/schemas/feature.schema.json`, the hand-synced second copy the plan missed (steel-etl does not import the SDK; see workspace `ARCHITECTURE.md` → "Schemas: two hand-synced copies").
+
+**Not done (out of this plan's scope, pending decisions):**
+- `data-sdk-npm` schema commit is on branch `fork/feature-type-taxonomy` (PR-ready), **not merged to its `origin/main`**.
+- **No deploy run.** `just deploy*` has not been executed, so the published data repos and the live v2 site still serve the old `feature.trait.<class>` codes. The breaking change is in source + `main`, not yet live.
+
+---
+
 ## File Structure
 
 | File | Responsibility | Change |

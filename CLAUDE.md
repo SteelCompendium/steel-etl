@@ -97,6 +97,8 @@ A **feature** is the umbrella type (`type: feature`); an **ability** is a featur
 
 ⚠️ **`trait` was narrowed 2026-06-07.** It used to mean *any* non-ability feature; now it is reserved for ancestry traits + monster statblock passives. `FeatureParser` emits `trait` only when the home is an ancestry (monster passives come from `statblock_parse.go`); everything else is a plain `feature`. `kit` and `companion` are **not** trait homes. See `docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md` and the implementation plan alongside it.
 
+⚠️ **Schemas live in two hand-synced copies.** `schemas/*.schema.json` here is steel-etl's own copy; the published contract is `../data-sdk-npm/src/schema/*.schema.json`. steel-etl is Go and does **not** import the npm SDK — it emits SDK-shaped JSON by convention, and `internal/output/schema_validation_test.go` validates against hand-maintained allowlists, not the schema files. **Any schema edit must land in BOTH copies.** (See workspace `ARCHITECTURE.md` → "Schemas: two hand-synced copies".)
+
 ## Content embedding patterns
 
 Kits and non-ability features can embed child abilities as structured nested objects in JSON/YAML output:
