@@ -81,11 +81,11 @@ You should imagine your [tactician](scc:mcdm.heroes.v1/class/tactician) characte
 
 Just... you know... it's got dragons and stuff.
 
-It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! Vasloria is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing Capital, the City of the Great Game, the Greatest City in This or Any Age. Vasloria is mostly [humans](scc:mcdm.heroes.v1/ancestry/human) and elves and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), but Capital has dozens, *hundreds* of different ancestries in it.
+It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing Capital, the City of the Great Game, the Greatest City in This or Any Age. [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is mostly [humans](scc:mcdm.heroes.v1/ancestry/human) and elves and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), but Capital has dozens, *hundreds* of different ancestries in it.
 
 Looking back at movies like *Star Wars* and the work of artists like Chris Foss, that '70s stuff now seems explicitly fantastical. There's nothing scientific or even plausible about a lightsaber or a John Berkey spaceship. But damn, they look cool!
 
-So our setting includes the timescape—our multiverse, of which the world of Orden containing Capital and Vasloria is only one part. The timescape is more explicitly "space fantasy."
+So our setting includes the timescape—our multiverse, of which the world of [Orden](scc:mcdm.heroes.v1/rule.world/orden) containing Capital and [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is only one part. The timescape is more explicitly "space fantasy."
 
 These core rules mostly cover the classic fantasy stuff. But we think Capital and the timescape will help us deliver a game where more people can see their fantasy in our worlds.
 
@@ -131,7 +131,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Artifact](scc:mcdm.heroes.v1/chapter/treasures):** A powerful treasure that can unbalance the game.
 
-**[Artisan](scc:mcdm.heroes.v1/career/artisan):** A follower who undertakes crafting projects for a hero.
+**[Artisan](scc:mcdm.heroes.v1/career/artisan):** A follower who undertakes [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) for a hero.
 
 **[Aura](scc:mcdm.heroes.v1/rule.combat/aura):** When an ability or other effect creates an aura, that area is expressed as "X aura." The number X is the radius of the aura, which always originates from the creature or object who created it, extends from the outside of the creator's space, and moves with them.
 
@@ -143,13 +143,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** A positive number that increases a creature's statistics or the roll of a die.
 
-**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A natural 19 or 20 on a project roll. When a character experiences a breakthrough, they can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A natural 19 or 20 on a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). When a character experiences a breakthrough, they can make another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 **[Burrow](scc:mcdm.heroes.v1/movement/burrow):** A movement mode available to creatures with "burrow" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gain the capability to temporarily [burrow](scc:mcdm.heroes.v1/movement/burrow). Such creatures can move through dirt horizontally at full [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 **[Burst](scc:mcdm.heroes.v1/rule.combat/burst):** When an ability or other effect creates a burst, that area is expressed as "X burst." The number X is the radius of the burst, which always originates from the creature or object who created it, extends from the outside of the creator's space, and lasts only for as long as it takes to affect its targets.
 
-**[Capital](scc:mcdm.heroes.v1/rule.world/capital):** The largest city in Orden, filled with art, culture, and intrigue.
+**[Capital](scc:mcdm.heroes.v1/rule.world/capital):** The largest city in [Orden](scc:mcdm.heroes.v1/rule.world/orden), filled with art, culture, and intrigue.
 
 **[Career](scc:mcdm.heroes.v1/chapter/careers):** The job a hero had before becoming a hero.
 
@@ -259,7 +259,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Enemy](scc:mcdm.heroes.v1/rule.combat/enemy):** A creature who is hostile to another creature.
 
-**[Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement):** A property given to an armor, implement, or weapon treasure that a hero creates as part of a crafting project.
+**[Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement):** A property given to an armor, implement, or weapon treasure that a hero creates as part of a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project).
 
 **[Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) to escape.
 
@@ -301,7 +301,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Group Test](scc:mcdm.heroes.v1/rule.test/group-test):** Two or more creatures attempting to overcome a single, simple task together can make a group [test](scc:mcdm.heroes.v1/rule.test/test). If half or more of the creatures succeed on their individual [test](scc:mcdm.heroes.v1/rule.test/test), the group [test](scc:mcdm.heroes.v1/rule.test/test) succeeds. Otherwise the group [test](scc:mcdm.heroes.v1/rule.test/test) fails.
 
-**[Guide](scc:mcdm.heroes.v1/rule.downtime/guide):** A manual that gives a downtime project a specific number of project points without requiring a project roll.
+**[Guide](scc:mcdm.heroes.v1/rule.downtime/guide):** A manual that gives a downtime project a specific number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) without requiring a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).
 
 **[Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan):** An ancestry with stone giant blood.
 
@@ -421,13 +421,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Presence](scc:mcdm.heroes.v1/rule.character/presence):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's force of personality.
 
-**[Project Event](scc:mcdm.heroes.v1/rule.downtime/project-event):** An event that can occur when a hero undertakes a project roll for a downtime project.
+**[Project Event](scc:mcdm.heroes.v1/rule.downtime/project-event):** An event that can occur when a hero undertakes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a downtime project.
 
-**[Project Goal](scc:mcdm.heroes.v1/rule.downtime/project-points):** The number of project points that must be accrued to complete a downtime project, providing a rough representation of the effort required to complete the project.
+**[Project Goal](scc:mcdm.heroes.v1/rule.downtime/project-points):** The number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) that must be accrued to complete a downtime project, providing a rough representation of the effort required to complete the project.
 
 **[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** Points earned by a hero toward a project goal.
 
-**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special [test](scc:mcdm.heroes.v1/rule.test/test) a hero makes while working on a downtime project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as project points toward completing the project.
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special [test](scc:mcdm.heroes.v1/rule.test/test) a hero makes while working on a downtime project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward completing the project.
 
 **[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Lore that must be obtained before a downtime project can be started.
 
@@ -469,7 +469,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Rolled Damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage):** Variable damage determined by the outcome of an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll). Effects that grant bonuses to rolled damage have no effect on damage that is dealt without an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll).
 
-**[Sage](scc:mcdm.heroes.v1/career/sage):** A follower who undertakes research projects for a hero.
+**[Sage](scc:mcdm.heroes.v1/career/sage):** A follower who undertakes [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) for a hero.
 
 **[Saint](scc:mcdm.heroes.v1/rule.world/saint):** A legendary disciple of a god who can grant [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) to creatures who venerate them.
 
@@ -567,7 +567,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Untyped Damage](scc:mcdm.heroes.v1/rule.damage/damage-type):** Damage dealt by an ability or other effect that has no [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) associated with it.
 
-**[Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria):** A forested, feudal-medieval continent in Orden.
+**[Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria):** A forested, feudal-medieval continent in [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
 **[Vertical](scc:mcdm.heroes.v1/movement/forced-movement):** When any form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is noted as vertical, the creature performing the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can move the target up or down in addition to horizontally.
 
@@ -901,7 +901,7 @@ You regain all lost [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) when
 <!-- @type: rule | @group: resource | @id: respite -->
 #### Respite
 
-A respite is a focused period of rest and recuperation that allows heroes to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). During a respite, you must spend 24 hours uninterrupted and doing nothing but sleeping, eating, dressing your wounds, and recuperating. You can also undertake one respite activity, such as making a project roll (see [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) or changing your kit (see [Kits](scc:mcdm.heroes.v1/chapter/kits)).
+A respite is a focused period of rest and recuperation that allows heroes to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). During a respite, you must spend 24 hours uninterrupted and doing nothing but sleeping, eating, dressing your wounds, and recuperating. You can also undertake one respite activity, such as making a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) (see [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) or changing your kit (see [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
 After 24 hours, your respite ends. When you finish a respite, you regain all your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) convert to [Experience](scc:mcdm.heroes.v1/rule.resource/experience). You can take as many respites as you like in a row to keep accomplishing respite activities. Just keep in mind that while you're resting, your enemies are still scheming and carrying out their dastardly plans.
 
@@ -922,13 +922,13 @@ The 1st echelon of play details the stories of characters of 1st to 3rd level. A
 
 #### 2nd Echelon (4th to 6th Level)
 
-The 2nd echelon of play covers 4th to 6th level. At this echelon, the heroes are now known throughout the wider region they serve. In Vasloria, this means the characters might save and be celebrated by an entire country. In Capital, their reputation and work could encompass several different neighborhoods of the enormous city. Heroes of the timescape might be known for saving a planet!
+The 2nd echelon of play covers 4th to 6th level. At this echelon, the heroes are now known throughout the wider region they serve. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), this means the characters might save and be celebrated by an entire country. In Capital, their reputation and work could encompass several different neighborhoods of the enormous city. Heroes of the timescape might be known for saving a planet!
 
 Heroes in this echelon battle humanoids of great supernatural power, such as draconians, [devils](scc:mcdm.heroes.v1/ancestry/devil), and hobgoblins. They face bosses possessed of cunning and ambition as great as their terrible influence, such as medusas and overminds. Heroes at this level also face the humanoid threats of earlier levels, but those foes are villainous counterparts of equal power rather than bands of ruffians or marauding armies.
 
 #### 3rd Echelon (7th to 9th Level)
 
-The 3rd echelon of play covers 7th to 9th level. At this echelon, the heroes are saving and are known throughout the setting where they serve. Most folks in Vasloria, Capital, or across the larger timescape know of the heroes and are grateful for their efforts saving the continent, the entire city, or multiple worlds, respectively. Foes at this echelon include beings of great power such as giants, vampires, and valok.
+The 3rd echelon of play covers 7th to 9th level. At this echelon, the heroes are saving and are known throughout the setting where they serve. Most folks in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), Capital, or across the larger timescape know of the heroes and are grateful for their efforts saving the continent, the entire city, or multiple worlds, respectively. Foes at this echelon include beings of great power such as giants, vampires, and valok.
 
 #### 4th Echelon (10th Level)
 
@@ -941,26 +941,26 @@ A new game demands new worlds! Welcome to the timescape—a collection of worlds
 
 Our tour begins on the world of Orden, the prime manifold, where [humans](scc:mcdm.heroes.v1/ancestry/human), elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) share a world with dragons, goblins, kobolds, and dozens of other speaking peoples. But [human](scc:mcdm.heroes.v1/ancestry/human) civilization and politics dominate here.
 
-Orden contains eight major regions, the largest of which is Vasloria.
+Orden contains eight major regions, the largest of which is [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria).
 
 <!-- @type: rule | @group: world | @id: vasloria -->
 #### Vasloria
 
 A forested, medieval, feudal land, Vasloria is peppered with few cities, mostly just towns and villages. While there will someday be nations here with proper borders, as of now in the Age of Chaos those nations are merely geographic areas with names people use to distinguish lands that share similar terrain and subcultures.
 
-Aendrim, the land of hills and farms. Corwell with its knights and castles. The marshlands of Tull where witches and wise women battle hags and swamp monsters. The thick forests of Farrow with its bands of archers, and the horselands of Graid home to the best cavalry in Orden.
+Aendrim, the land of hills and farms. Corwell with its knights and castles. The marshlands of Tull where witches and wise women battle hags and swamp monsters. The thick forests of Farrow with its bands of archers, and the horselands of Graid home to the best cavalry in [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
 Mountainous northeastern Vasloria is home to the small earldoms of Sednia, Olvaria, and Sărda, and the earldom of Rhöl containing the land of Glauer once ruled by a deathless count.
 
-Scattered across it all, Vasloria boasts the densest collection of elf-haunted wodes in Orden. All regions have wodes, but Vasloria's northern border is the Great Wode where the world still works as it did before [humans](scc:mcdm.heroes.v1/ancestry/human) arrived.
+Scattered across it all, Vasloria boasts the densest collection of elf-haunted wodes in [Orden](scc:mcdm.heroes.v1/rule.world/orden). All regions have wodes, but Vasloria's northern border is the Great Wode where the world still works as it did before [humans](scc:mcdm.heroes.v1/ancestry/human) arrived.
 
 Within the wodes, time misbehaves. Cause and effect are only distant cousins, as all lands were before Ord placed the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) in the world,
 
-imposing the Law of Time on Orden. Children's tales of villagers wandering into a wode and emerging unchanged 100 years later are based on real events. When pressed on how this "works," the elves look baffled. "How does what work?"
+imposing the Law of Time on [Orden](scc:mcdm.heroes.v1/rule.world/orden). Children's tales of villagers wandering into a wode and emerging unchanged 100 years later are based on real events. When pressed on how this "works," the elves look baffled. "How does what work?"
 
 ##### Omund's Land
 
-Western Vasloria, including most of Aendrim and Corwell and parts of Graid, was until recently ruled by Good King Omund. His draconian knights, the Dragon Phalanx, protected the weak from the strong, dispensing justice. Omund's rule lasted 35 years and in his life this area was known as Omund's Land.
+Western [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), including most of Aendrim and Corwell and parts of Graid, was until recently ruled by Good King Omund. His draconian knights, the Dragon Phalanx, protected the weak from the strong, dispensing justice. Omund's rule lasted 35 years and in his life this area was known as Omund's Land.
 
 Under Omund's rule, order thrived. Roads were safe. People could even walk into the woods unafraid of meeting anything more threatening than a nymph or conversational manticore.
 
@@ -987,7 +987,7 @@ Isolated and outnumbered, the [human](scc:mcdm.heroes.v1/ancestry/human) baronie
 <!-- @type: rule | @group: world | @id: capital -->
 #### Capital
 
-The Greatest City in This or Any Age! City of the Great Game! Located west across the Bale Sea from Vasloria, on the eastern coast of Rioja, Capital is not only the largest city in Orden—it's the largest city there has ever been. Larger than the fabled steel [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) capital of Kalas Valiar, larger even than Alloy, the City at the Center of the Timescape. Capital is the exception to many rules.
+The Greatest City in This or Any Age! City of the Great Game! Located west across the Bale Sea from [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), on the eastern coast of Rioja, Capital is not only the largest city in [Orden](scc:mcdm.heroes.v1/rule.world/orden)—it's the largest city there has ever been. Larger than the fabled steel [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) capital of Kalas Valiar, larger even than Alloy, the City at the Center of the Timescape. Capital is the exception to many rules.
 
 It is a city of playwrights and opera, of spies and sorcery. Famed throughout the world as a city of high magic where flying tapestries act as taxis, the reality of living in Capital is somewhat more mundane. Only the very wealthy can afford such luxuries.
 
@@ -995,11 +995,11 @@ The great houses, ancient noble families, reluctantly share power with the upsta
 
 The guilds, by contrast, are more egalitarian, more democratic, and largely obsessed with accruing wealth, city be damned. Three of them recently used their obscene wealth to buy great house status and now play the great game with the best of them.
 
-The "great game" is espionage, and **House Alvaro** are the best players in the world. Led by Duke Prospero, House Alvaro sponsor the Imperial University, the greatest center of learning in the world. Nobles from across Orden, including Vanigar, send their children to learn diplomacy and statecraft at the university. While the greatest spies in the world are all graduates of the Actian School, one of the colleges in the university, which has historically doubled as the prince's intelligence agency.
+The "great game" is espionage, and **House Alvaro** are the best players in the world. Led by Duke Prospero, House Alvaro sponsor the Imperial University, the greatest center of learning in the world. Nobles from across [Orden](scc:mcdm.heroes.v1/rule.world/orden), including Vanigar, send their children to learn diplomacy and statecraft at the university. While the greatest spies in the world are all graduates of the Actian School, one of the colleges in the university, which has historically doubled as the prince's intelligence agency.
 
-**House Vorona** run the city's navy, the largest military organization of any kind in Orden. Their engineers perfected the secret of blackpowder and guard it jealously. The Imperial Navy's cannons protect trade across Orden, placing Capital at the center of international affairs. Vorona's Far Mariners, aka the marines, are the closest thing Capital has to a city-wide law enforcement organization. Each great house is expected to police its own district.
+**House Vorona** run the city's navy, the largest military organization of any kind in [Orden](scc:mcdm.heroes.v1/rule.world/orden). Their engineers perfected the secret of blackpowder and guard it jealously. The Imperial Navy's cannons protect trade across [Orden](scc:mcdm.heroes.v1/rule.world/orden), placing Capital at the center of international affairs. Vorona's Far Mariners, aka the marines, are the closest thing Capital has to a city-wide law enforcement organization. Each great house is expected to police its own district.
 
-Duke Marco Vorona sponsors the Imperial War College, also known as the Academy. A prestigious institution rivaling any college of the Imperial University, the Academy boasts graduates among all the noble families in Orden. This widespread allegiance creates a vast informal network in the city referred to cynically as the Old Class Ring that gives Vorona access to intelligence other factions can only dream of.
+Duke Marco Vorona sponsors the Imperial War College, also known as the Academy. A prestigious institution rivaling any college of the Imperial University, the Academy boasts graduates among all the noble families in [Orden](scc:mcdm.heroes.v1/rule.world/orden). This widespread allegiance creates a vast informal network in the city referred to cynically as the Old Class Ring that gives Vorona access to intelligence other factions can only dream of.
 
 **House Navarr**, oldest of the great houses, enforces the church's law, which they call justice. Led by His Grace Orsino, Duke Navarr, archbishop of the most powerful church in the city—the Church of Saint Ysabella the Pitiless—House Navarr consolidates a vast network of different churches and orders of knights across the region under one elaborate system of patronage.
 
@@ -1009,7 +1009,7 @@ After the Lilac Night, when the prince was no longer able to rely on House Valet
 
 coordinated with two other guilds to buy Great House status for themselves.
 
-Lady Shirome runs the city's assayers guild, **the Fulcrum**. The guild controls the Trade Integrity Board, which sets lending rates and leads trade negotiations between Capital and other governments in Orden. It was the Fulcrum that convinced the prince to switch the city to paper money. As a result, Capital is the first and only city in Orden to have a robust monetary policy.
+Lady Shirome runs the city's assayers guild, **the Fulcrum**. The guild controls the Trade Integrity Board, which sets lending rates and leads trade negotiations between Capital and other governments in [Orden](scc:mcdm.heroes.v1/rule.world/orden). It was the Fulcrum that convinced the prince to switch the city to paper money. As a result, Capital is the first and only city in [Orden](scc:mcdm.heroes.v1/rule.world/orden) to have a robust monetary policy.
 
 The Broadsheets, formally known as **the Font**, publish the thrice-daily news sheets everyone in the city reads. Guildmaster Inān al-Adwiyya uses a vast network of young people called the Paperfeathers to deliver and sell the broadsheets throughout the city. Lady al-Adwiyya knows almost everything happening anywhere in the city.
 
@@ -1021,7 +1021,7 @@ Now the great game takes on a new meaning as the four great houses and three new
 
 #### The Myriad Worlds of the Timescape
 
-Orden is only one world in the timescape! Each star in the night sky is another, though this fact is not known to most people living on Orden. Old fashioned people still use the archaic term "plane" to describe these worlds, while sages use geometric formulae, describing these worlds they call "manifolds," but they all mean the same thing.
+[Orden](scc:mcdm.heroes.v1/rule.world/orden) is only one world in the timescape! Each star in the night sky is another, though this fact is not known to most people living on [Orden](scc:mcdm.heroes.v1/rule.world/orden). Old fashioned people still use the archaic term "plane" to describe these worlds, while sages use geometric formulae, describing these worlds they call "manifolds," but they all mean the same thing.
 
 Higher worlds are more energetic, affording access to alien technologies. Great starfreighters ply the space-lanes, and knights wield psionically powered hard-light blades dueling against star pirates with hard-light blasters.
 
@@ -1033,11 +1033,11 @@ Meanwhile, on Proteus, the Sea of Eternal Change, the formless proteans rebelled
 
 On Quintessence, the lowest of the upper worlds, proteans and [memonek](scc:mcdm.heroes.v1/ancestry/memonek) alike rub shoulders with [devils](scc:mcdm.heroes.v1/ancestry/devil), fire [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), even [humans](scc:mcdm.heroes.v1/ancestry/human) in Quintessence's capital city of Alloy, the City at the Center of the Timescape. The Free City of Alloy, also known as the City of Brass, is the gateway to the timescape. People travelling to or from the upper and lower worlds meet here to trade goods and information, free from the inflexible law of UNISOL.
 
-Traveling downward from Quintessence one arrives on Orden, the Plane of Gods and Sorcery, highest of the lower worlds where magic rules. The gods, forbidden from interfering directly in a world with such a low energy state, rely on saints to enact their will. Technology from the upper worlds does not function down here, unless powered by a strong psionic mind or the miracle mineral iridoss, also known as prismacore.
+Traveling downward from Quintessence one arrives on [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Plane of Gods and Sorcery, highest of the lower worlds where magic rules. The gods, forbidden from interfering directly in a world with such a low energy state, rely on saints to enact their will. Technology from the upper worlds does not function down here, unless powered by a strong psionic mind or the miracle mineral iridoss, also known as prismacore.
 
-Almost coterminal with Orden is its sister-manifold, the World Below, the Dark Under All, a plane of exiles ruled by A Lie Cloaked In Star's Silver, the Queen of Night, first of the Three Sisters Below. The World Below is a land of vast caves, and sunless seas. There are no stars here, no sky, only endless caverns and warrens, some vast enough to hold entire cities, like Or-Mazaar City of the Black Star from which the Queen of Night rules.
+Almost coterminal with [Orden](scc:mcdm.heroes.v1/rule.world/orden) is its sister-manifold, the World Below, the Dark Under All, a plane of exiles ruled by A Lie Cloaked In Star's Silver, the Queen of Night, first of the Three Sisters Below. The World Below is a land of vast caves, and sunless seas. There are no stars here, no sky, only endless caverns and warrens, some vast enough to hold entire cities, like Or-Mazaar City of the Black Star from which the Queen of Night rules.
 
-The power of the World Below wanes, while the power of Equinox waxes. A smaller, parasitic manifold home to the twilight celestials and their servants the shadow elves, Equinox is ruled by Every Strike of Lightning a Lover Betrayed, the Queen of [Shadows](scc:mcdm.heroes.v1/class/shadow), third of the Three Sisters Below who plots to bridge the sea between worlds and colonize Orden making a new home for her people before their old world dies. A fierce, fairy-tale, weird magic, jungle world of permanent twilight also known as Dusk.
+The power of the World Below wanes, while the power of Equinox waxes. A smaller, parasitic manifold home to the twilight celestials and their servants the shadow elves, Equinox is ruled by Every Strike of Lightning a Lover Betrayed, the Queen of [Shadows](scc:mcdm.heroes.v1/class/shadow), third of the Three Sisters Below who plots to bridge the sea between worlds and colonize [Orden](scc:mcdm.heroes.v1/rule.world/orden) making a new home for her people before their old world dies. A fierce, fairy-tale, weird magic, jungle world of permanent twilight also known as Dusk.
 
 The last plane of law, the Seven Cities of Hell is among the lowest of the lower planes. A land of [devils](scc:mcdm.heroes.v1/ancestry/devil) proud of their civilization, each of the seven cities is ruled by an archduke who schemes to ascend to the Throne of Hell. A world of bureaucratic law, the [devil](scc:mcdm.heroes.v1/ancestry/devil) denizens of Hell have little interest in the other planes. Life is so much more *interesting* down here.
 
@@ -1045,29 +1045,29 @@ The seven archdevils conspired together once; agreeing to create the Order of De
 
 The demons of the Abyssal Waste, the lowest plane, claw and scramble over each other, competing for souls in this heat-blasted desert under a baleful, giant orange sun. Mindless collections of organs, claws, and teeth, demons collect souls until they reach sentience and gain identity and the blessing of memory. These demons will do anything to escape upwards, out of the wasteland, lest they lose their collected souls, lose their identity, and fall into that mindless state called lethe.
 
-At the center of the Abyssal Waste lies the Necropolitan Ruin, the Last City, a city of the dead, ruled by Khorsekef, once the Infinite Pharaoh of Khemhara, now the Ultralich. Khorsekef intends to return to Orden and sit once again on his throne in the Heliopolis.
+At the center of the Abyssal Waste lies the Necropolitan Ruin, the Last City, a city of the dead, ruled by Khorsekef, once the Infinite Pharaoh of Khemhara, now the Ultralich. Khorsekef intends to return to [Orden](scc:mcdm.heroes.v1/rule.world/orden) and sit once again on his throne in the Heliopolis.
 
 #### Setting Design
 
-Orden and the timescape were both designed over the last 25 years to be an explicitly commercial setting. A product where you could find all the things everyone expects to find in a classic fantasy setting, with new takes on classic tropes and a little more "Why are things like this?" work done to ground everything and make things feel plausible. None of this makes Orden "better" than other settings, it just gives it character.
+[Orden](scc:mcdm.heroes.v1/rule.world/orden) and the timescape were both designed over the last 25 years to be an explicitly commercial setting. A product where you could find all the things everyone expects to find in a classic fantasy setting, with new takes on classic tropes and a little more "Why are things like this?" work done to ground everything and make things feel plausible. None of this makes [Orden](scc:mcdm.heroes.v1/rule.world/orden) "better" than other settings, it just gives it character.
 
-Orden is not explicitly a high fantasy world, even though there are some pretty high fantasy things going on in it, because the average person has *very little* access to magic. The typical village might have a priest who knows some real prayers that close wounds or cure minor ailments, or an alchemist or hedge wizard who can brew some potions or conjure minor spells, but that's the extent of it. The result is, though Orden is a pre-industrial world with technology and societies akin to 13th-century Europe, the quality of life of the people who live there is a lot closer to ours. They live about as long as we do, die from disease about as often as we do, and generally have diets similar to ours, though with vastly more basic and constricted options on their menus.
+[Orden](scc:mcdm.heroes.v1/rule.world/orden) is not explicitly a high fantasy world, even though there are some pretty high fantasy things going on in it, because the average person has *very little* access to magic. The typical village might have a priest who knows some real prayers that close wounds or cure minor ailments, or an alchemist or hedge wizard who can brew some potions or conjure minor spells, but that's the extent of it. The result is, though [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a pre-industrial world with technology and societies akin to 13th-century Europe, the quality of life of the people who live there is a lot closer to ours. They live about as long as we do, die from disease about as often as we do, and generally have diets similar to ours, though with vastly more basic and constricted options on their menus.
 
 In Capital, for instance, people use flying tapestries to get around the city quickly, but these are a luxury available only to the rich. The vast majority of Capital's citizens live a life basically the same as your average Londoner in Shakespeare's time. Less plague and fire, though.
 
-It's not clear to us, looking in, but it doesn't seem as though Orden operates according to the real-world laws of physics, chemistry, and biology. People in the middle ages here on Earth didn't know about quarks or DNA, but they still knew everything was made of "stuff" and everyone expected a child to more or less resemble their parents. Essentially, Orden works the way people living in any culture's medieval era believed the real world actually worked. Because of the presence of magic, prayer, and psionics in the world, it's unlikely anything like science or an industrial age will *ever* come to Orden.
+It's not clear to us, looking in, but it doesn't seem as though [Orden](scc:mcdm.heroes.v1/rule.world/orden) operates according to the real-world laws of physics, chemistry, and biology. People in the middle ages here on Earth didn't know about quarks or DNA, but they still knew everything was made of "stuff" and everyone expected a child to more or less resemble their parents. Essentially, [Orden](scc:mcdm.heroes.v1/rule.world/orden) works the way people living in any culture's medieval era believed the real world actually worked. Because of the presence of magic, prayer, and psionics in the world, it's unlikely anything like science or an industrial age will *ever* come to [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
-Ultimately, while there are 10th-level characters out there, these are exceedingly rare. Most people in Orden do not have class levels. Only a few are 1st level anything! No one has ever tried to take a census of all the [censors](scc:mcdm.heroes.v1/class/censor), [conduits](scc:mcdm.heroes.v1/class/conduit), [furies](scc:mcdm.heroes.v1/class/fury), and so forth, but if they did, they'd probably end up with a chart that looks a lot like Zipf's Law.
+Ultimately, while there are 10th-level characters out there, these are exceedingly rare. Most people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) do not have class levels. Only a few are 1st level anything! No one has ever tried to take a census of all the [censors](scc:mcdm.heroes.v1/class/censor), [conduits](scc:mcdm.heroes.v1/class/conduit), [furies](scc:mcdm.heroes.v1/class/fury), and so forth, but if they did, they'd probably end up with a chart that looks a lot like Zipf's Law.
 
-Finally, most information about Orden and the timescape is presented from the point of view of someone living in Orden. They can tell you what they think they know, but even learned historians do not agree, and new information constantly comes to light challenging the accepted academic wisdom. Just like... you get it.
+Finally, most information about [Orden](scc:mcdm.heroes.v1/rule.world/orden) and the timescape is presented from the point of view of someone living in [Orden](scc:mcdm.heroes.v1/rule.world/orden). They can tell you what they think they know, but even learned historians do not agree, and new information constantly comes to light challenging the accepted academic wisdom. Just like... you get it.
 
-This lack of objective certainty not only makes it more fun for us to work on Orden, it makes it easier for you to make Orden yours. This comes at the price of certainty. (Are the Dragon Phalanx *really* "incorruptible?" Well, a lot of people still say that! In spite of concrete evidence to the contrary!) But we think it helps relieve some of the anxiety Directors have when they want to run a game in Orden but are afraid they don't know "enough" or "everything." Not to worry. No one knows everything!
+This lack of objective certainty not only makes it more fun for us to work on [Orden](scc:mcdm.heroes.v1/rule.world/orden), it makes it easier for you to make [Orden](scc:mcdm.heroes.v1/rule.world/orden) yours. This comes at the price of certainty. (Are the Dragon Phalanx *really* "incorruptible?" Well, a lot of people still say that! In spite of concrete evidence to the contrary!) But we think it helps relieve some of the anxiety Directors have when they want to run a game in [Orden](scc:mcdm.heroes.v1/rule.world/orden) but are afraid they don't know "enough" or "everything." Not to worry. No one knows everything!
 
-P.S. We use the phrase "Orden and the timescape" because Orden is, as it were, the star of the show. But Orden is very clearly only one world *in* the timescape. It's like those astronomy maps hanging on the wall in your grade school science class that said, "Earth and the solar system." Like that map, any map of the timescape will be an artist's interpretation, not drawn to scale, and never wholly accurate depending on what information you're looking for.
+P.S. We use the phrase "[Orden](scc:mcdm.heroes.v1/rule.world/orden) and the timescape" because [Orden](scc:mcdm.heroes.v1/rule.world/orden) is, as it were, the star of the show. But [Orden](scc:mcdm.heroes.v1/rule.world/orden) is very clearly only one world *in* the timescape. It's like those astronomy maps hanging on the wall in your grade school science class that said, "Earth and the solar system." Like that map, any map of the timescape will be an artist's interpretation, not drawn to scale, and never wholly accurate depending on what information you're looking for.
 
 > **The Timescape in Your Game**
 >
-> We use the timescape and its medieval fantasyland Orden as the default setting presented in these books. Doing so makes it easier for us as designers to marry our design with real examples from a real (imaginary) fantasy world. We also think it's easier for you to take the names for places, languages, and gods, and replace them with your own. We might reference some hero or villain, saint or god, whose name makes you think, "Well, I don't have that in my setting." If we do a good job, though, you might be inspired to say, "But that makes me think..." And being inspired is part of the fun!
+> We use the timescape and its medieval fantasyland [Orden](scc:mcdm.heroes.v1/rule.world/orden) as the default setting presented in these books. Doing so makes it easier for us as designers to marry our design with real examples from a real (imaginary) fantasy world. We also think it's easier for you to take the names for places, languages, and gods, and replace them with your own. We might reference some hero or villain, saint or god, whose name makes you think, "Well, I don't have that in my setting." If we do a good job, though, you might be inspired to say, "But that makes me think..." And being inspired is part of the fun!
 
 If you're the Director, you can use as many or as few of the details of the timescape as you like. You might wish to create your own world within the timescape, or use a setting you've created that exists outside of the official MCDM manifolds. You can use details from settings published by other companies. There are no rules when it comes to worldbuilding. Feel free to take what you like from this book and change the rest. For example, you might not care for our [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) having literal stone skin. That's fine. You can make them fleshy, stout, bearded folk, or mohawked, barrel-chested punk rockers, or anything else you wish. As long as you're running a heroic fantasy campaign about fighting monsters, then the game's rules are still likely to serve your narrative even if that narrative deviates from ours.
 
@@ -1213,7 +1213,7 @@ Ask the Director if all the heroes start the campaign knowing each other. If the
 - What's one thing your fellow heroes know about you that other people do not?
 - What's your favorite way to bond with your fellow heroes?
 - You've known one of the other heroes in your party longer than the rest. Who is it, and how did you meet?
-- Another hero creates food, music, clothing, trinkets, or something else that you enjoy. Who is that hero, and what do they make?
+- Another hero creates food, music, clothing, [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket), or something else that you enjoy. Who is that hero, and what do they make?
 - Another hero is teaching you a new skill. Who is it, and what are they teaching you?
 
 Answer these questions with the other players present, and be sure to get a player's approval if your answer makes use of their character.
@@ -1308,7 +1308,7 @@ This chapter details twelve ancestries for the game:
 
 **[Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan):** Descended from stone giants, the mighty [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) stand over 9 feet tall and have well-muscled bodies made of organic stone. They are the largest ancestry in this book!
 
-**[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in Orden and many other fantasy worlds! In *Draw Steel*, [humans](scc:mcdm.heroes.v1/ancestry/human) have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
+**[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) and many other fantasy worlds! In *Draw Steel*, [humans](scc:mcdm.heroes.v1/ancestry/human) have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
 
 **[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** Originating on Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower [speeds](scc:mcdm.heroes.v1/rule.character/speed).
 
@@ -1332,19 +1332,19 @@ This chapter details twelve ancestries for the game:
 >
 > Skills, [tests](scc:mcdm.heroes.v1/rule.test/test): Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
-> Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
+> [Crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project): Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
 > Main actions and maneuvers, creature [size](scc:mcdm.heroes.v1/rule.character/size), damage and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, [flanking](scc:mcdm.heroes.v1/rule.combat/flanking), movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
-Orden (talked about in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) is a fantasy world. It works on principles similar to those many people throughout history believed governed the real world. "I dunno, a god did it probably."
+[Orden](scc:mcdm.heroes.v1/rule.world/orden) (talked about in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)) is a fantasy world. It works on principles similar to those many people throughout history believed governed the real world. "I dunno, a god did it probably."
 
 [Humans](scc:mcdm.heroes.v1/ancestry/human), elves, [orcs](scc:mcdm.heroes.v1/ancestry/orc), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), dragons, all have creator gods—the Elder Gods, four of whom made the world for some reason. Maybe they were bored.
 
 The fashion among those gods for creating new, intelligent, species petered out after the [orcs](scc:mcdm.heroes.v1/ancestry/orc). Once [humans](scc:mcdm.heroes.v1/ancestry/human) came along and invented war, it stopped being fun.
 
-It may be all species were created by gods. That's certainly what a lot of people throughout our own history assumed. Orden has no Darwin and probably won't ever. There's still inheritance. People expect children to look like their parents, but there aren't evolutionary pressures except on a very local scale.
+It may be all species were created by gods. That's certainly what a lot of people throughout our own history assumed. [Orden](scc:mcdm.heroes.v1/rule.world/orden) has no Darwin and probably won't ever. There's still inheritance. People expect children to look like their parents, but there aren't evolutionary pressures except on a very local scale.
 
 And in a world where powerful, world-altering magics are available, mortals sometimes try to recreate the gods' efforts. Some succeed, and new intelligent, speaking peoples are born.
 
@@ -1364,19 +1364,19 @@ wondering when someone will invent a fabric that doesn't get moldy in the swamp.
 
 This also carries serious ethical repercussions! "You didn't create angulotls! You screwed up some perfectly good frogs! Look at them, you gave them anxiety!"
 
-This is only how it works on Orden. You may have completely different explanations for why there are several different intelligent species walking around in your world. Or no explanation! Or competing and irreconcilable theories on the matter! Use whatever inspires you.
+This is only how it works on [Orden](scc:mcdm.heroes.v1/rule.world/orden). You may have completely different explanations for why there are several different intelligent species walking around in your world. Or no explanation! Or competing and irreconcilable theories on the matter! Use whatever inspires you.
 
 At the end of the day, if you throw out all of this and replace it with something you made up, it will be better. Because it's *yours*!
 
 ### Names by Ancestry
 
-Obviously you're free to invent whatever name you want for your character! And your director might have their own setting that uses different cultures than those in Orden. But if you want to pick an Orden-appropriate name for your hero, keep reading.
+Obviously you're free to invent whatever name you want for your character! And your director might have their own setting that uses different cultures than those in [Orden](scc:mcdm.heroes.v1/rule.world/orden). But if you want to pick an [Orden](scc:mcdm.heroes.v1/rule.world/orden)-appropriate name for your hero, keep reading.
 
 Equally obviously; names are cultural, not biological. Your character probably has a name appropriate to whatever culture they were born into, or grew up in. A [human](scc:mcdm.heroes.v1/ancestry/human) raised by [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) would probably have a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) name.
 
 #### Last Names and Bynames
 
-Most people living in Orden—and this is especially true of Vasloria live in villages. They do not have and do not use last names or family names. Everyone in the village knows who you mean when you refer to "William." Even if there's more than one William in the village, you can usually tell who someone's referring to from context. Sometimes folks prepend "our" to someone's name meaning: the one related to or otherwise concerned with me and my family. "Our William" for instance.
+Most people living in [Orden](scc:mcdm.heroes.v1/rule.world/orden)—and this is especially true of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) live in villages. They do not have and do not use last names or family names. Everyone in the village knows who you mean when you refer to "William." Even if there's more than one William in the village, you can usually tell who someone's referring to from context. Sometimes folks prepend "our" to someone's name meaning: the one related to or otherwise concerned with me and my family. "Our William" for instance.
 
 If that's not enough, folks use another identifier known as a byname. If there were two boys in the village named Much, one of them might be called Much the Miller's Son, to distinguish them from the other lad.
 
@@ -1384,13 +1384,13 @@ If you leave your village regularly, say to trade with others in a distant marke
 
 A byname might refer to your profession. Clyde the Cartwright is a perfectly normal byname. But no one you met would assume "Cartwright" was your 'family name.' People who live permanently in a very large city like Capital use family names, because almost no first name is sufficiently unique to identify you, and "Marissa the Cartwright's Daughter" quickly evolves into Marissa Cartwright.
 
-Most nobles in Orden also use the name of the area they rule as part of their name. When someone refers to Lord Edmund Bedegar everyone listening silently, without thinking about it, adds "of" between the name and the place. Edmund is both Edmund, and the Lord of Bedegar, and Edmund, Lord of Bedegar, and therefore sometimes Lord Edmund Bedegar. Even though "Bedegar" looks like a "last name" to us, and is being used in that manner sometimes, it's not exactly his last name. It's still just another kind of byname.
+Most nobles in [Orden](scc:mcdm.heroes.v1/rule.world/orden) also use the name of the area they rule as part of their name. When someone refers to Lord Edmund Bedegar everyone listening silently, without thinking about it, adds "of" between the name and the place. Edmund is both Edmund, and the Lord of Bedegar, and Edmund, Lord of Bedegar, and therefore sometimes Lord Edmund Bedegar. Even though "Bedegar" looks like a "last name" to us, and is being used in that manner sometimes, it's not exactly his last name. It's still just another kind of byname.
 
 Unlike remote villages, well settled areas where many towns and villages are all networked by roads often do use surnames to help differentiate one William from the other twenty within a densely populated area.
 
 #### Names and Gender
 
-Most cultures in Vasloria make a distinction between masculine and feminine names, though not all do. And for some cultures that make such a distinction, almost no one outside the culture can tell the difference.
+Most cultures in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) make a distinction between masculine and feminine names, though not all do. And for some cultures that make such a distinction, almost no one outside the culture can tell the difference.
 
 Among those cultures which do make a distinction between masculine and feminine names, there are always names that *could* refer to a person of any gender. Here in the real world, you can't tell a person's gender just from the name "Shane." This is mostly because which names are considered masculine or feminine changes over time, and when this happens, there's a period—maybe a few generations—where the name could refer to a person of any gender.
 
@@ -1456,7 +1456,7 @@ Elves in general have a casual attitude toward gender, it having no direct beari
 
 ##### Western Vasloria Human Names
 
-[Human](scc:mcdm.heroes.v1/ancestry/human) names vary widely by culture. The following examples are from Western Vasloria.
+[Human](scc:mcdm.heroes.v1/ancestry/human) names vary widely by culture. The following examples are from Western [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria).
 
 **Feminine:** Brenwyn, Demelza, Elzbeth, Gwynhyvyr, Maerwyn, Margaret, Meliora, Rowenna, Tamara, Wenna
 
@@ -1482,7 +1482,7 @@ Elves in general have a casual attitude toward gender, it having no direct beari
 
 ##### Polder Names
 
-For reasons not well understood, [polders](scc:mcdm.heroes.v1/ancestry/polder) in Vasloria use surnames. First names seem chosen to imply a degree of sophistication (or, at least, what [polders](scc:mcdm.heroes.v1/ancestry/polder) consider sophisticated) while last names are typically common, compound words. No one knows why they do this.
+For reasons not well understood, [polders](scc:mcdm.heroes.v1/ancestry/polder) in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) use surnames. First names seem chosen to imply a degree of sophistication (or, at least, what [polders](scc:mcdm.heroes.v1/ancestry/polder) consider sophisticated) while last names are typically common, compound words. No one knows why they do this.
 
 **Feminine:** Agatha, Amaryllis, Beverly, Esmerelda, Marceline, Modesty, Penelope, Rosemarie, Ursula, Weatherly
 
@@ -1514,7 +1514,7 @@ How tall is a [polder](scc:mcdm.heroes.v1/ancestry/polder)? How long does a [dwa
 
 [Revenants](scc:mcdm.heroes.v1/ancestry/revenant) aren't on the table, since their height and weight is based on their previous ancestry. Likewise, they live until destroyed or moving on after completing their unfinished business.
 
-[Humans](scc:mcdm.heroes.v1/ancestry/human) have the potential to live a little longer on Orden than they do in the real world thanks to the presence of magic.
+[Humans](scc:mcdm.heroes.v1/ancestry/human) have the potential to live a little longer on [Orden](scc:mcdm.heroes.v1/rule.world/orden) than they do in the real world thanks to the presence of magic.
 
 ###### Ancestry Measurements Table
 
@@ -1556,9 +1556,9 @@ Hell is dominated by the Seven Cities of Hell, each ruled by a different archdev
 
 Those [devils](scc:mcdm.heroes.v1/ancestry/devil) who join "the trade," as their civil service is called, spend their days in bureaucratic service hoping or scheming for promotion. [Devils](scc:mcdm.heroes.v1/ancestry/devil) looking for a quick path up the bureaucratic ladder sign up for the Exchange, whereby mortals in the mundane world who perform the right rituals can summon a [devil](scc:mcdm.heroes.v1/ancestry/devil), who bargains with the supplicant on behalf of their archdevil. Archdevils can grant temporary worldly power in exchange for a supplicant's soul, with the summoned [devil](scc:mcdm.heroes.v1/ancestry/devil) acting as the broker.
 
-On rare occasions, though, the summoning goes wrong and the supplicant dies before the deal can be struck, stranding the summoned [devil](scc:mcdm.heroes.v1/ancestry/devil) on Orden permanently. Some stranded [devils](scc:mcdm.heroes.v1/ancestry/devil) seek to return to Hell, but most prefer life in Orden, where the phrase "stabbed in the back by a colleague" is usually a metaphor.
+On rare occasions, though, the summoning goes wrong and the supplicant dies before the deal can be struck, stranding the summoned [devil](scc:mcdm.heroes.v1/ancestry/devil) on [Orden](scc:mcdm.heroes.v1/rule.world/orden) permanently. Some stranded [devils](scc:mcdm.heroes.v1/ancestry/devil) seek to return to Hell, but most prefer life in [Orden](scc:mcdm.heroes.v1/rule.world/orden), where the phrase "stabbed in the back by a colleague" is usually a metaphor.
 
-The majority of [devils](scc:mcdm.heroes.v1/ancestry/devil) in Orden are not from, nor have ever been to, the Seven Cities. They are descendants of [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded in the mundane world decades, centuries, even millennia ago.
+The majority of [devils](scc:mcdm.heroes.v1/ancestry/devil) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are not from, nor have ever been to, the Seven Cities. They are descendants of [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded in the mundane world decades, centuries, even millennia ago.
 
 ### On Devils
 
@@ -1708,7 +1708,7 @@ You possess wings powerful enough to take you airborne. While using your wings t
 
 The ritual of Dracogenesis that grants the power to create a generation of [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight)—also known as draconians or wyrmwights—is obscure and supremely difficult for even an experienced sorcerer to master. Small populations of draconians in Khemhara, Higara, and Khoursir attest to this. Descendants of original generations created millennia ago by powerful wizards, they have never been numerous. A typical clutch yields only a single egg. After only a few generations, these draconians begin to show new adaptations like feathers or frilled ridges.
 
-The largest extant population of draconians is the remnants of the Dragon Phalanx in Vasloria. Created by Good King Omund's wizard Vitae, the Dragon Phalanx once numbered several thousand of the king's greatest knights, ensuring the rule of law across the land.
+The largest extant population of draconians is the remnants of the Dragon Phalanx in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria). Created by Good King Omund's wizard Vitae, the Dragon Phalanx once numbered several thousand of the king's greatest knights, ensuring the rule of law across the land.
 
 Knighthood was a title carried by every member of that first generation of [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight). Within the Dragon Phalanx were [shadows](scc:mcdm.heroes.v1/class/shadow), [censors](scc:mcdm.heroes.v1/class/censor), [tacticians](scc:mcdm.heroes.v1/class/tactician), and [elementalists](scc:mcdm.heroes.v1/class/elementalist). Members of virtually every heroic vocation could be found in one of the eight dragonflights that made up the phalanx. For over 30 years, these heroes were symbols of justice, protecting the weak from the strong, and standing between the common folk and those who sought power over others. Those who grew up in that place and time could not imagine any other way of life.
 
@@ -1871,7 +1871,7 @@ You possess wings powerful enough to take you airborne. While using your wings t
 <!-- @type: ancestry | @id: dwarf -->
 ## Dwarf
 
-Possessed of a strength that belies their [size](scc:mcdm.heroes.v1/rule.character/size), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have flesh infused with stone—a silico-organic hybrid making them physically denser than other humanoids. They enjoy a reputation in Orden as savvy engineers and technologists thanks to the lore they inherited from their elder siblings, the long-extinct steel [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf).
+Possessed of a strength that belies their [size](scc:mcdm.heroes.v1/rule.character/size), [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have flesh infused with stone—a silico-organic hybrid making them physically denser than other humanoids. They enjoy a reputation in [Orden](scc:mcdm.heroes.v1/rule.world/orden) as savvy engineers and technologists thanks to the lore they inherited from their elder siblings, the long-extinct steel [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf).
 
 [Dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) are the children of the elder god Ord, and a common phrase among [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) is "Ord made the world"-their way of saying, "What will be, will be." They take great pride in knowing that along with Aan, Eth, and Kul, their god created the mundane world, and many [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) leave their homes to see the world and seek glory in Ord's name.
 
@@ -2510,7 +2510,7 @@ Your [human](scc:mcdm.heroes.v1/ancestry/human) physiology allows you to fight, 
 
 The native denizens of Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) dwell in a land with lakes and trees and birds and flowers. But on this alien world, the lakes are seas of mercury, the birds glitter with wings of glass stretched gossamer thin, and the flowers' petals are iridescent metal as flexible and fragile as any earthly rose.
 
-The minds of [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are highly ordered. Their reason is their great pride. But when descending to the lower planes, including a manifold like Orden where law and chaos mix, a sickness comes over them—an uncontrollable sensation called emotion.
+The minds of [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are highly ordered. Their reason is their great pride. But when descending to the lower planes, including a manifold like [Orden](scc:mcdm.heroes.v1/rule.world/orden) where law and chaos mix, a sickness comes over them—an uncontrollable sensation called emotion.
 
 ### On Memonek
 
@@ -2655,7 +2655,7 @@ Velloparatha—the worldsickness—might hinder you, but you know how to turn yo
 
 An anger that cannot be hidden. A [fury](scc:mcdm.heroes.v1/class/fury) that drives them in battle. [Orcs](scc:mcdm.heroes.v1/ancestry/orc) are famed throughout the world as consummate warriors—a reputation that the peace—loving [orcs](scc:mcdm.heroes.v1/ancestry/orc) find distasteful.
 
-The fifth of the speaking peoples, [orcs](scc:mcdm.heroes.v1/ancestry/orc) arrived on Orden after [humans](scc:mcdm.heroes.v1/ancestry/human) and elves. They made their homes in the borderlands between those two cultures, preferring the natural forests and avoiding the elf-haunted wodes. For generations, this put them directly in the path of [humans](scc:mcdm.heroes.v1/ancestry/human) who cut down the trees and built roads and farms.
+The fifth of the speaking peoples, [orcs](scc:mcdm.heroes.v1/ancestry/orc) arrived on [Orden](scc:mcdm.heroes.v1/rule.world/orden) after [humans](scc:mcdm.heroes.v1/ancestry/human) and elves. They made their homes in the borderlands between those two cultures, preferring the natural forests and avoiding the elf-haunted wodes. For generations, this put them directly in the path of [humans](scc:mcdm.heroes.v1/ancestry/human) who cut down the trees and built roads and farms.
 
 Each [orc](scc:mcdm.heroes.v1/ancestry/orc) has within them a fire that causes their veins to glow once blood is drawn. This anger propels them right to the edge of death. The dichotomy between their desire to be left alone and their zeal in battle is summarized in a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) proverb:
 
@@ -2812,12 +2812,12 @@ Your bloodfire supplies you with a constant rush of adrenaline. You can't be mad
 <!-- @type: feature -->
 ##### Passionate Artisan (1 Point)
 
-When you are stirred by a passion for creation, your bloodfire allows you to work longer and harder. When you gain your initial skills from your career, culture, class, or other source, choose two skills from the crafting skill group, whether you have those skills or not. Whenever you make a project roll for a crafting project that uses these skills, you gain a +2 bonus to the roll.
+When you are stirred by a passion for creation, your bloodfire allows you to work longer and harder. When you gain your initial skills from your career, culture, class, or other source, choose two skills from the crafting skill group, whether you have those skills or not. Whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) that uses these skills, you gain a +2 bonus to the roll.
 
 <!-- @type: ancestry | @id: polder -->
 ## Polder
 
-After [humans](scc:mcdm.heroes.v1/ancestry/human), [polders](scc:mcdm.heroes.v1/ancestry/polder) are the most numerous and diverse ancestry in Orden. They are not [humans](scc:mcdm.heroes.v1/ancestry/human), but they live in and among [humans](scc:mcdm.heroes.v1/ancestry/human) and share their gods and culture. Almost every [human](scc:mcdm.heroes.v1/ancestry/human) culture in Orden has a [polder](scc:mcdm.heroes.v1/ancestry/polder) saint or a [human](scc:mcdm.heroes.v1/ancestry/human) saint venerated by [polder](scc:mcdm.heroes.v1/ancestry/polder).
+After [humans](scc:mcdm.heroes.v1/ancestry/human), [polders](scc:mcdm.heroes.v1/ancestry/polder) are the most numerous and diverse ancestry in [Orden](scc:mcdm.heroes.v1/rule.world/orden). They are not [humans](scc:mcdm.heroes.v1/ancestry/human), but they live in and among [humans](scc:mcdm.heroes.v1/ancestry/human) and share their gods and culture. Almost every [human](scc:mcdm.heroes.v1/ancestry/human) culture in [Orden](scc:mcdm.heroes.v1/rule.world/orden) has a [polder](scc:mcdm.heroes.v1/ancestry/polder) saint or a [human](scc:mcdm.heroes.v1/ancestry/human) saint venerated by [polder](scc:mcdm.heroes.v1/ancestry/polder).
 
 Short, averaging 31/2 feet tall, the [polders](scc:mcdm.heroes.v1/ancestry/polder)' origins are obscure. They are a young species who, like [humans](scc:mcdm.heroes.v1/ancestry/human), have no single patron god. Their ability to *shadowmeld* means they enjoy a reputation as excellent spies and thieves. Many [polders](scc:mcdm.heroes.v1/ancestry/polder) consider this a base slander and point out they're also famed as chefs, though [polders](scc:mcdm.heroes.v1/ancestry/polder) can be found in every profession, especially in cities.
 
@@ -3129,7 +3129,7 @@ Additionally, you have the following signature ability. Signature abilities can 
 
 The original servitor species of the synliroi—evil psions with near godlike power—the kuran'zoi liberated themselves during the First Psychic War. In the centuries since, they built their own culture and civilization as nomads of the timescape. The exonym "[time raiders](scc:mcdm.heroes.v1/ancestry/time-raider)" was given to them by denizens of the lower worlds who, seeing the advanced technology the kuran'zoi wield, concluded they must be from the future.
 
-Extraordinarily rare in Orden, [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) thrive on the Sea of Stars, the Sea Between Worlds, where the winds of limbo roar.
+Extraordinarily rare in [Orden](scc:mcdm.heroes.v1/rule.world/orden), [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) thrive on the Sea of Stars, the Sea Between Worlds, where the winds of limbo roar.
 
 In place of eyes, kuran'zoi possess crystalline ocular sensors that grant them high-spectral vision and which are hardened against the extreme radiations encountered in the Sea of Stars, permitting them to operate freely outside their vessels with only their portable rebreathers. [Time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) also have two sets of arms, allowing them to wield melee weapons at the same time as ranged weapons. A single well-trained kuran'zoi is like a squad unto themself.
 
@@ -3321,7 +3321,7 @@ For our purposes, a hero's culture represents people, not a place. Yes, you migh
 
 Directors can use the rules in this section to build cultures that players can choose for their characters. Players can use these rules to build a unique culture or modify an existing culture for their character, working with the Director to find the right place for that culture within the world of the campaign.
 
-In many worlds, at least some cultures have a majority ancestry. The people of Bedegar, a duchy in the region of Vasloria on Orden, are mostly [humans](scc:mcdm.heroes.v1/ancestry/human). The folk dwelling in the Great Wode, a forest realm north of Bedegar, are primarily [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf). However, you can always choose to be from one of these cultures and take a different ancestry. A [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the culture of the Great Wode speaks Yllyric and probably knows a lot about nature, while a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) thanedom of Kal Kalavar speaks Zaliac and might know a good deal about smithing.
+In many worlds, at least some cultures have a majority ancestry. The people of Bedegar, a duchy in the region of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) on [Orden](scc:mcdm.heroes.v1/rule.world/orden), are mostly [humans](scc:mcdm.heroes.v1/ancestry/human). The folk dwelling in the Great Wode, a forest realm north of Bedegar, are primarily [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf). However, you can always choose to be from one of these cultures and take a different ancestry. A [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the culture of the Great Wode speaks Yllyric and probably knows a lot about nature, while a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) raised in the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) thanedom of Kal Kalavar speaks Zaliac and might know a good deal about smithing.
 
 You can build your culture one aspect at a time, or you can use the following tables if you want to assess sample cultures or make your own culture quickly. To create an archetypical culture for a hero who grew up surrounded mostly by other members of their ancestry, use or modify the aspect options on the Typical Ancestry Cultures table. ([Revenants](scc:mcdm.heroes.v1/ancestry/revenant) are missing from this table because they don't gain their ancestry until after they die.) If you'd rather quickly create a culture based on a cultural archetype, such as a noble house or a pirate crew, use the Archetypical Cultures table, then add a language that fits the culture's concept.
 
@@ -3377,7 +3377,7 @@ The culture you choose or create grants you the following benefits:
 
 #### Language
 
-Your culture's language aspect determines how the people of your culture communicate. Languages in Orden below discusses the many languages of the world of Orden, including Caelian—the language of the fallen empire that once dominated that world.
+Your culture's language aspect determines how the people of your culture communicate. Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) below discusses the many languages of the world of [Orden](scc:mcdm.heroes.v1/rule.world/orden), including Caelian—the language of the fallen empire that once dominated that world.
 
 #### Environment
 
@@ -3506,25 +3506,25 @@ Your hero grew up among leaders who rule over others and play the games of polit
 
 #### Languages in Orden
 
-The languages granted by your hero's culture shape their understanding of the world and their relationship to the creatures within it. The following section details the languages of Orden, the baseline world of the game, but the Director can use these languages in their own campaign world or can swap this list with their own list of languages.
+The languages granted by your hero's culture shape their understanding of the world and their relationship to the creatures within it. The following section details the languages of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the baseline world of the game, but the Director can use these languages in their own campaign world or can swap this list with their own list of languages.
 
 If your hero knows a language, they can speak, read, write, and understand it.
 
 ##### Caelian Empire
 
-The Caelian Empire dominated five of the eight regions of Orden 3,000 years ago. During the height of this most recent [human](scc:mcdm.heroes.v1/ancestry/human) empire, all [humans](scc:mcdm.heroes.v1/ancestry/human) (including folks from Vanigar in the far north, but not folks from the islands of Ix) learned to speak the Caelian tongue. For many, especially the noble classes and the well-to-do, Caelian effectively replaced their native language.
+The Caelian Empire dominated five of the eight regions of [Orden](scc:mcdm.heroes.v1/rule.world/orden) 3,000 years ago. During the height of this most recent [human](scc:mcdm.heroes.v1/ancestry/human) empire, all [humans](scc:mcdm.heroes.v1/ancestry/human) (including folks from Vanigar in the far north, but not folks from the islands of Ix) learned to speak the Caelian tongue. For many, especially the noble classes and the well-to-do, Caelian effectively replaced their native language.
 
 Some 1,300 years after the fall of the Caelian Empire, the languages of the different regions of the empire are enjoying a resurgence. Still, the Caelian tongue is spoken by most [humans](scc:mcdm.heroes.v1/ancestry/human) in most regions to one extent or another.
 
-Most people in Orden can speak and understand some Caelian, simply because the empire was so powerful and so widespread. Anyone trading with the empire or living near its borders or under its influence eventually learned to speak Caelian, including [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight), elves, [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan), [orcs](scc:mcdm.heroes.v1/ancestry/orc), [polders](scc:mcdm.heroes.v1/ancestry/polder), lizardfolk, and goblins. If a person speaks more than one language in Orden, the second language is almost always Caelian. All player characters know Caelian! As a result, that language of empire is now colloquially referred to as "the common tongue"-the language that most folk of Orden have in common.
+Most people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) can speak and understand some Caelian, simply because the empire was so powerful and so widespread. Anyone trading with the empire or living near its borders or under its influence eventually learned to speak Caelian, including [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight), elves, [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan), [orcs](scc:mcdm.heroes.v1/ancestry/orc), [polders](scc:mcdm.heroes.v1/ancestry/polder), lizardfolk, and goblins. If a person speaks more than one language in [Orden](scc:mcdm.heroes.v1/rule.world/orden), the second language is almost always Caelian. All player characters know Caelian! As a result, that language of empire is now colloquially referred to as "the common tongue"-the language that most folk of [Orden](scc:mcdm.heroes.v1/rule.world/orden) have in common.
 
 ##### Extant Languages
 
-Folk have been speaking, signing, and writing in Orden for at least thirty thousand years, but most of the world's ancient languages are now dead. Many have been forgotten. Others were spoken by peoples who never developed writing, preventing those languages from being preserved. And many languages that were preserved in writing left no related descendants, so that no one now knows what sounds that writing represented.
+Folk have been speaking, signing, and writing in [Orden](scc:mcdm.heroes.v1/rule.world/orden) for at least thirty thousand years, but most of the world's ancient languages are now dead. Many have been forgotten. Others were spoken by peoples who never developed writing, preventing those languages from being preserved. And many languages that were preserved in writing left no related descendants, so that no one now knows what sounds that writing represented.
 
-The languages on the Languages by Ancestry table are the most common languages actively spoken and signed by significant populations of people in Orden. The Vaslorian [Human](scc:mcdm.heroes.v1/ancestry/human) Languages table shows the dominant languages in that region's human-centric territories. Most languages are associated with a specific ancestry and its culture, but being a member of an ancestry doesn't automatically make you part of the associated culture the language is tied to. For example, if your [orc](scc:mcdm.heroes.v1/ancestry/orc) hero was raised in a culture of elves, you probably speak one of the elf languages, and might never have learned Kalliak.
+The languages on the Languages by Ancestry table are the most common languages actively spoken and signed by significant populations of people in [Orden](scc:mcdm.heroes.v1/rule.world/orden). The Vaslorian [Human](scc:mcdm.heroes.v1/ancestry/human) Languages table shows the dominant languages in that region's human-centric territories. Most languages are associated with a specific ancestry and its culture, but being a member of an ancestry doesn't automatically make you part of the associated culture the language is tied to. For example, if your [orc](scc:mcdm.heroes.v1/ancestry/orc) hero was raised in a culture of elves, you probably speak one of the elf languages, and might never have learned Kalliak.
 
-Most languages have colloquial or casual names. For instance, many people in Orden call Kalliak "Orcish" and Hyrallic "Elvish," but any sage knows there are lots of orcish and elf languages, just as there are multiple [human](scc:mcdm.heroes.v1/ancestry/human) languages.
+Most languages have colloquial or casual names. For instance, many people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) call Kalliak "Orcish" and Hyrallic "Elvish," but any sage knows there are lots of orcish and elf languages, just as there are multiple [human](scc:mcdm.heroes.v1/ancestry/human) languages.
 
 Each extant language has a spoken, signed, and written version. When you learn a language, you know how to speak, sign, and read it.
 
@@ -3540,7 +3540,7 @@ Each extant language has a spoken, signed, and written version. When you learn a
 | Phaedros                  | Phaedran    |
 | Rioja                     | Riojan      |
 | Vanigar                   | Vaniric     |
-| Vasloria                  | Vaslorian   |
+| [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)                  | Vaslorian   |
 
 ###### Languages by Ancestry Table
 
@@ -3548,7 +3548,7 @@ Each extant language has a spoken, signed, and written version. When you learn a
 |-----------------------|---------------------------------------|--------------------------------------------------------------------------------|
 | Anjali                | [Devils](scc:mcdm.heroes.v1/ancestry/devil), hobgoblins                    | Language of contract law                                                       |
 | Axiomatic             | [Memonek](scc:mcdm.heroes.v1/ancestry/memonek)                               | Native language of Axiom, and the common<br>language of the timescape by trade |
-| Caelian               | Orden denizens                        | Common language of Orden                                                       |
+| Caelian               | [Orden](scc:mcdm.heroes.v1/rule.world/orden) denizens                        | Common language of [Orden](scc:mcdm.heroes.v1/rule.world/orden)                                                       |
 | Filliaric             | Angulotls                             |                                                                                |
 | The First<br>Language | Elder dragons                         | Language of magic                                                              |
 | Hyrallic              | [High elves](scc:mcdm.heroes.v1/ancestry/high-elf)                            | Language of interspecies diplomacy                                             |
@@ -3574,15 +3574,15 @@ Each extant language has a spoken, signed, and written version. When you learn a
 
 ##### Language Usage
 
-**Hyrallic** is the primary language of the [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) in Orden. Although young for an elf language, Hyrallic is older than almost all other modern cultural languages, save those of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). As a result, while anyone who lives near or trades with a [human](scc:mcdm.heroes.v1/ancestry/human) culture probably speaks at least a little Caelian, most nobles across all ancestries make sure their children or offspring speak Hyrallic. Caelian is new from many cultures' point of view, while Hyrallic as a language for diplomacy is considered cultured and traditional.
+**Hyrallic** is the primary language of the [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) in [Orden](scc:mcdm.heroes.v1/rule.world/orden). Although young for an elf language, Hyrallic is older than almost all other modern cultural languages, save those of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). As a result, while anyone who lives near or trades with a [human](scc:mcdm.heroes.v1/ancestry/human) culture probably speaks at least a little Caelian, most nobles across all ancestries make sure their children or offspring speak Hyrallic. Caelian is new from many cultures' point of view, while Hyrallic as a language for diplomacy is considered cultured and traditional.
 
-**Yllyric** is the cultural language of [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), and also the common language among those who defend and protect the natural forests of Orden.
+**Yllyric** is the cultural language of [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf), and also the common language among those who defend and protect the natural forests of [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
 Within any document concerning the workings of machines, masonry, or geology, you are likely to find a healthy supply of jargon using **Zaliac**, the most popular [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) language. Even when such texts aren't fully written in Zaliac, they use a lot of [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) language when describing esoteric, complex ideas.
 
 Just as Zaliac is used in engineering, contract law isn't written purely in **Anjali**, the dominant language of the Seven Cities of Hell. But a lot of the legal jargon in any contract, as well as some of the language of trial courts, features many Anjali words. People are sticklers for detail in the Seven Cities, and this makes their language popular among lawyers.
 
-In the same way that intelligent creatures in Orden who live near or trade with other cultures use Caelian as a common language, the denizens of the World Below, the Dark Under All, often speak **Variac**, the language of the voiceless talkers.
+In the same way that intelligent creatures in [Orden](scc:mcdm.heroes.v1/rule.world/orden) who live near or trade with other cultures use Caelian as a common language, the denizens of the World Below, the Dark Under All, often speak **Variac**, the language of the voiceless talkers.
 
 ##### Dead Languages
 
@@ -3592,7 +3592,7 @@ Most of these ancient writings were written by people who expected other people 
 
 Sages can reconstruct many of these languages by learning which modern languages descended from them, then comparing them to related languages from the same time period that might have survived. Translating such ancient languages has been extremely useful for crafting and research.
 
-The Dead Languages table shows some of the dead languages of Orden, and the modern languages related to those ancient languages.
+The Dead Languages table shows some of the dead languages of [Orden](scc:mcdm.heroes.v1/rule.world/orden), and the modern languages related to those ancient languages.
 
 ###### Dead Languages Table
 
@@ -3631,7 +3631,7 @@ Each career grants you two or three skills, detailed in the Skills section of Ch
 
 #### Languages
 
-Some careers allow you to learn extra languages, chosen from those available in Languages in Orden above.
+Some careers allow you to learn extra languages, chosen from those available in Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) above.
 
 #### Renown
 
@@ -3645,9 +3645,9 @@ Some careers increase your starting [Wealth](scc:mcdm.heroes.v1/rule.resource/we
 <!-- @type: rule | @group: downtime | @id: project-points -->
 #### Project Points
 
-Some careers provide project points you can put toward crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). These project points can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
+Some careers provide [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) you can put toward crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). These [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) can be divided among multiple projects, but they can't be used more than once. You must meet the other prerequisites for a project to start it, as usual.
 
-At the Director's discretion, your career might also let you start the game with the materials needed for one or more projects, so you can immediately put your project points toward those projects—possibly before the adventure begins! This is especially useful for characters who are going on only one adventure. Otherwise, you can hold onto the points and spend them once you do start a project.
+At the Director's discretion, your career might also let you start the game with the materials needed for one or more projects, so you can immediately put your [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward those projects—possibly before the adventure begins! This is especially useful for characters who are going on only one adventure. Otherwise, you can hold onto the points and spend them once you do start a project.
 
 #### Perk
 
@@ -3744,7 +3744,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 240
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 240
 
 **Perk:** One crafting perk (*Quick Build:* [Area of Expertise](scc:mcdm.heroes.v1/perk/area-of-expertise).)
 
@@ -3800,7 +3800,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 120
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 120
 
 **Perk:** One intrigue perk (*Quick Build:* [Criminal Contacts](scc:mcdm.heroes.v1/perk/criminal-contacts).)
 
@@ -3827,7 +3827,7 @@ You gain the following career benefits:
 
 **Skills:** The [Religion](scc:mcdm.heroes.v1/skill/religion) skill (from the lore skill group), plus two more skills from the lore group (*Quick Build:* [Culture](scc:mcdm.heroes.v1/skill/culture), [Magic](scc:mcdm.heroes.v1/skill/magic), [Religion](scc:mcdm.heroes.v1/skill/religion).)
 
-**Project Points:** 240
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 240
 
 **Perk:** One supernatural perk (*Quick Build:* [Ritualist](scc:mcdm.heroes.v1/perk/ritualist).)
 
@@ -3884,7 +3884,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 120
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 120
 
 **Perk:** One exploration perk (*Quick Build:* [Monster Whisperer](scc:mcdm.heroes.v1/perk/monster-whisperer).)
 
@@ -3942,7 +3942,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 120
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 120
 
 **Perk:** One exploration perk (*Quick Build:* Brawny.)
 
@@ -4058,7 +4058,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 240
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 240
 
 **Perk:** One lore perk (*Quick Build:* [Expert Sage](scc:mcdm.heroes.v1/perk/expert-sage).)
 
@@ -4143,7 +4143,7 @@ You gain the following career benefits:
 
 **Languages:** One language
 
-**Project Points:** 120
+**[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 120
 
 **Perk:** One exploration perk (*Quick Build:* [Camouflage Hunter](scc:mcdm.heroes.v1/perk/camouflage-hunter).)
 
@@ -4896,7 +4896,7 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 <!-- @type: feature -->
 ##### Blessing of Comprehension
 
-You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any crafting or research project (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
+You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for any crafting or [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
@@ -5527,7 +5527,7 @@ You can commune with a network of spirits. As a [respite](scc:mcdm.heroes.v1/rul
 <!-- @type: feature -->
 ##### Saint's Epiphany
 
-At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the roll.
+At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the roll.
 
 <!-- @type: feature -->
 ##### Windwalk
@@ -5826,7 +5826,7 @@ Each time you use your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.ce
 <!-- @type: feature -->
 ##### Gods' Library
 
-You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
+You can gain access to information you need through prayer, so that you no longer require research materials for crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) you make for crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project). You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
 
 <!-- @type: feature -->
 ##### Light of the Burning Sun
@@ -6350,7 +6350,7 @@ Additionally, when you are present at the start of a negotiation, one NPC of you
 <!-- @type: feature -->
 ##### Blessing of Comprehension
 
-You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the project source for any research or crafting project (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
+You can interpret diagrams and charts even if you don't understand the language associated with them. You are considered fluent in all languages for the purpose of understanding the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for any research or [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: feature -->
 ##### Blessing of Fortunate Weather
@@ -7221,7 +7221,7 @@ You can commune with a network of spirits. As a [respite](scc:mcdm.heroes.v1/rul
 
 ###### Saint's Epiphany
 
-At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to the roll.
+At the start of a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can inspire yourself or another creature taking the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with divine knowledge. If the target makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), they can add 1d10 plus your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to the roll.
 
 ###### Windwalk
 
@@ -7584,7 +7584,7 @@ Each time you use your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.condui
 <!-- @type: feature -->
 ##### Gods' Library
 
-You can gain access to information you need through prayer, so that you no longer require research materials for crafting and research projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to project rolls you make for crafting and research projects. You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
+You can gain access to information you need through prayer, so that you no longer require research materials for crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). Additionally, you add your level to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) you make for crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project). You also have any skills in the lore skill group you don't already have, and you gain a number of skills from any other skill groups equal to the number of skills you had in the lore skill group before you gained this feature.
 
 <!-- @type: feature -->
 ##### Light of the Burning Sun
@@ -9498,7 +9498,7 @@ Additionally, your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.e
 
 The number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) you have increases by 2, and each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can grant each ally who finished the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you 2 additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Your allies' additional [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) disappear when they finish their next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
-Additionally, as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can perform a ritual that causes a fruit tree to spring from the ground, grow, mature, and produce 1d6 of a treasure called Life Fruit. You can use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to cause an existing tree to produce another 1d6 Life Fruit, but it does not grow these magic consumables on its own.
+Additionally, as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can perform a ritual that causes a fruit tree to spring from the ground, grow, mature, and produce 1d6 of a treasure called Life Fruit. You can use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to cause an existing tree to produce another 1d6 Life Fruit, but it does not grow these magic [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) on its own.
 
 As a maneuver, a creature can consume a Life Fruit or feed it to an adjacent willing ally. When a creature eats a Life Fruit, they restore all their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can end all conditions or effects on themself, and they can stand up if [prone](scc:mcdm.heroes.v1/condition/prone). Additionally, if the creature desires, their aging pauses for 1d10 years. If the creature eats additional Life Fruit and chooses to pause their aging, the effects don't stack. Instead, the creature gains the benefit from the Life Fruit that pauses their aging for the longest time.
 
@@ -9507,7 +9507,7 @@ As a maneuver, a creature can consume a Life Fruit or feed it to an adjacent wil
 
 Whenever you willingly move, you can [teleport](scc:mcdm.heroes.v1/movement/teleport).
 
-Additionally, your mind is connected to the mystery and helps you find the answers you seek. You no longer require project sources for research projects. Whenever you use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to make a project roll for a research project, you automatically complete the project.
+Additionally, your mind is connected to the mystery and helps you find the answers you seek. You no longer require [project sources](scc:mcdm.heroes.v1/rule.downtime/project-source) for [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project). Whenever you use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [research project](scc:mcdm.heroes.v1/rule.downtime/research-project), you automatically complete the project.
 
 <!-- @type: feature -->
 #### Perk
@@ -14582,12 +14582,12 @@ You have advanced your skills in subterfuge, now directing full battlefield stra
 <!-- @type: feature -->
 ##### Grand Strategy
 
-You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the lore skill group. Additionally, when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a project roll for a research project in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the lore skill group. Additionally, when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature -->
 ##### Shock and Awe
 
-You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a project roll for a crafting project in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -15022,7 +15022,7 @@ Your ward allows you to slip away from threats. Whenever you take damage, you be
 <!-- @type: feature -->
 #### Telepathic Speech
 
-You know the Mindspeech language (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Additionally, you can telepathically communicate with any creatures within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.
+You know the Mindspeech language (see Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)). Additionally, you can telepathically communicate with any creatures within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability if they share a language with you and you know of each other. When you communicate with someone this way, they can respond telepathically.
 
 <!-- @type: feature -->
 #### 1st-Level Tradition Features
@@ -18839,7 +18839,7 @@ Choose one skill you already have from the crafting skill group. Whenever you ob
 <!-- @type: perk -->
 #### Expert Artisan
 
-Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or research project that uses a skill you already have from the crafting skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) that uses a skill you already have from the crafting skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
 
 <!-- @type: perk -->
 #### Handy
@@ -18854,12 +18854,12 @@ Without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test)—and even w
 <!-- @type: perk -->
 #### Inspired Artisan
 
-When you make a project roll using a skill from the crafting skill group, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. You can't use this perk more than once per [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+When you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) using a skill from the crafting skill group, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. You can't use this perk more than once per [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: perk -->
 #### Traveling Artisan
 
-On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a crafting project using a skill you have from the crafting skill group. If you do so, you gain 1d10 project points toward that project.
+On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) using a skill you have from the crafting skill group. If you do so, you gain 1d10 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward that project.
 
 > **Perks and [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
@@ -19030,7 +19030,7 @@ Your mind is an encyclopedia, though not always an easy one to organize. When yo
 <!-- @type: perk -->
 #### Expert Sage
 
-Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or research project using a skill from the lore skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) using a skill from the lore skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
 
 <!-- @type: perk -->
 #### I've Read About This Place
@@ -19046,7 +19046,7 @@ If the Director doesn't have an answer to the question you ask, or doesn't want 
 <!-- @type: perk -->
 #### Linguist
 
-You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language research project at half the usual project goal cost (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
+You automatically learn two new languages, as long as you have regularly heard those languages spoken or seen them written before. Additionally, if you spend 7 days or more in a place where you regularly hear or read a language you don't know, you can pick up enough of that language to hold a conversation or understand basic written information. Having picked up a language this way, you can subsequently learn it using the Learn New Language [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) at half the usual project goal cost (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)).
 
 <!-- @type: perk -->
 #### Polymath
@@ -19061,7 +19061,7 @@ You are a leading expert on a particular subject. Choose one skill you have from
 <!-- @type: perk -->
 #### Traveling Sage
 
-On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a research project using a skill you have from the lore skill group. If you do so, you gain 1d10 project points toward that project.
+On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend 1 uninterrupted hour working on a [research project](scc:mcdm.heroes.v1/rule.downtime/research-project) using a skill you have from the lore skill group. If you do so, you gain 1d10 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward that project.
 
 <!-- @type: feature-group | @id: supernatural-perks -->
 ### Supernatural Perks
@@ -19368,7 +19368,7 @@ You somehow obtained the notebook of a brilliant but eccentric member of your cl
 
 You have no memory of your past before the... incident. Hopefully, you'll regain your memory soon and find out what the incident was. In the meantime, you need friends so you won't be alone when your past catches up to you.
 
-**Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
+**Benefit:** You have a supernatural possession—a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
 
 **Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
@@ -19415,7 +19415,7 @@ The most important person to you—perhaps a family member, mentor, or lover—w
 
 Your parents made a deal, and as part of that deal, you're supposed to marry someone—or something—you didn't choose. But no one is going to tell you what to do! They'll all be sorry to find that you've run away to become a mighty adventurer.
 
-**Benefit:** You escaped with a dowry present—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
+**Benefit:** You escaped with a dowry present—a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
 **Drawback:** All those who learn of you running out on your commitment think less of you and spread nasty rumors about you. Your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) can't ever be more than your level − 1.
 
@@ -19442,17 +19442,17 @@ Perhaps the stars marked you out at birth, or maybe your name appears in an anci
 
 Ever since you were a kid, you've been obsessed with a certain topic. During your travels, you spend your free time gleaning all the information you can on that obsession. You might not be the world's leading expert quite yet, but people should certainly trust your opinion on the topic.
 
-**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
+**Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), and the project goal increases. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
 
 **Drawback:** You can't imagine ever being wrong on the topic of your obsession. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore using your chosen skill, the Director makes the [test](scc:mcdm.heroes.v1/rule.test/test) in secret. Instead of informing you whether you're right or wrong, they provide you with correct information if you succeeded and false information if you failed.
 
 ##### Study Lore
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** A significant source of information on the topic of your obsession, such as a major library or a world-[renown](scc:mcdm.heroes.v1/rule.resource/renown)ed sage 
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** A significant source of information on the topic of your obsession, such as a major library or a world-[renown](scc:mcdm.heroes.v1/rule.resource/renown)ed sage 
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 120, 150, 180
 
@@ -19604,7 +19604,7 @@ You have contracted a rare magical disease called [evanesceria](scc:mcdm.heroes.
 
 Whether you're a convicted criminal, a noble stripped of their title, or a person who made one too many enemies, you've been cast forth from your homeland, never to return. At least not until you're strong enough to set things right.
 
-**Benefit:** You know one extant language of your choice (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
+**Benefit:** You know one extant language of your choice (see Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 **Drawback:** If any NPC from your homeland recognizes you, whether in your homeland or elsewhere, they attempt to harm you at the Director's discretion.
 
@@ -19737,7 +19737,7 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 <!-- @type: complication -->
 #### Hawk Rider
 
-You travel with a giant hawk who you stole from the Hawklords (see Vasloria in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
+You travel with a giant hawk who you stole from the Hawklords (see [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). You might once have been a Hawklord yourself, or perhaps you escaped their captivity. Having a giant hawk companion comes with its share of inconveniences and dangers, but those are a small price to pay for the freedom of the open sky.
 
 **Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the [Humans](scc:mcdm.heroes.v1/ancestry/human) entry in *Draw Steel: Monsters*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
@@ -19812,7 +19812,7 @@ You made a deal with a [devil](scc:mcdm.heroes.v1/ancestry/devil). Not a very go
 
 You studied in an academy or other educational institution. Your training was thorough and your reading list was wide-ranging. But when you left school, you discovered there were serious gaps in your education. Maybe some of those books were a little out of date.
 
-**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
+**Benefit:** You have three skills of your choice, and you know one dead language of your choice (see Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 **Drawback:** The Director chooses one of the skills you have from this complication. You lose that skill and can't ever learn it again. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) to which that skill would apply.
 
@@ -20055,7 +20055,7 @@ You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes,
 
 A hostile army—perhaps the forces of Ajax, the Iron Saint—conquered your homeland. Your family escaped, but you can't return home until your oppressors are defeated once and for all.
 
-**Benefit:** When your family fled your homeland, they left their most valuable asset behind. Work with the Director to determine whether this asset is a trinket or leveled treasure, several points of [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth), the project source to create a treasure, or the like. This asset is in the hands of the invaders but can be won back as the Director determines.
+**Benefit:** When your family fled your homeland, they left their most valuable asset behind. Work with the Director to determine whether this asset is a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), several points of [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth), the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) to create a treasure, or the like. This asset is in the hands of the invaders but can be won back as the Director determines.
 
 **Drawback:** The faction that invaded your homeland wants you captured or dead. Any of their agents or sympathizers attempt to harm you if they recognize you, as the Director determines.
 
@@ -20123,7 +20123,7 @@ You're secretly important—but it's not safe for your true identity to be known
 
 You have an identical twin—either a sibling or someone who looks so much like you that no one would ever know the difference. Your [secret twin](scc:mcdm.heroes.v1/complication/secret-twin) had a life you coveted, or perhaps had obligations that couldn't go unfulfilled. So when they went missing, you stepped in and started living their life. Most folks are none the wiser.
 
-**Benefit:** You have a 1st-echelon trinket of your choice. This was a signature treasure of your twin, and has their name or sigil written, sewn, or emblazoned on it somewhere.
+**Benefit:** You have a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice. This was a signature treasure of your twin, and has their name or sigil written, sewn, or emblazoned on it somewhere.
 
 **Drawback:** Your twin disappeared because someone wanted them dead. Whenever you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), roll a d10. On a 1 or 2, the Director can decide that your past catches up with you in the near future in some way—an assassin seeking your twin, someone who knows your real identity and threatens to reveal it, and so forth.
 
@@ -20164,9 +20164,9 @@ A supernatural spirit occupies your body, with each of you controlling your body
 
 You're the heir to a powerful supernatural treasure that has been in your family for generations. One problem, though: that treasure is broken. Some ancestor of yours sundered it while saving the world. Or maybe they tripped and smashed it on a rock. Either way, it's your job to fix it.
 
-**Benefit:** You know one language of your choice. Additionally, you have one leveled treasure of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
+**Benefit:** You know one language of your choice. Additionally, you have one [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
-**Drawback:** The chosen leveled treasure is broken and completely inoperative. Repairing the treasure requires that you complete the Craft Treasure project for it. The project goal is half of what it would cost to create such an item, and you already have the project source you need. You must seek out any item prerequisite.
+**Drawback:** The chosen [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) is broken and completely inoperative. Repairing the treasure requires that you complete the Craft Treasure project for it. The project goal is half of what it would cost to create such an item, and you already have the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) you need. You must seek out any [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite).
 
 <!-- @type: complication -->
 #### Shipwrecked
@@ -20218,9 +20218,9 @@ An evil fairy cursed you, leaving you with a blank visage instead of a face. Alt
 <!-- @type: complication -->
 #### Strange Inheritance
 
-Your siblings each inherited money or land, but you received a strange, seemingly useless trinket—along with the advice that maybe you weren't cut out for an ordinary, peaceful life.
+Your siblings each inherited money or land, but you received a strange, seemingly useless [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket)—along with the advice that maybe you weren't cut out for an ordinary, peaceful life.
 
-**Benefit:** You have a somewhat inoperative 2nd-echelon trinket of the Director's choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This trinket functions only while the total of your level plus your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) is 5 or higher. You don't learn what the trinket's powers are until the first time it becomes operative.
+**Benefit:** You have a somewhat inoperative 2nd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of the Director's choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) functions only while the total of your level plus your [Victories](scc:mcdm.heroes.v1/rule.resource/victories) is 5 or higher. You don't learn what the [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket)'s powers are until the first time it becomes operative.
 
 **Drawback:** With no other inheritance, you accumulated debts. The first time your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) exceeds 1, you lose 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 
@@ -20534,7 +20534,7 @@ When a hero rolls a failure without a consequence, the Director can offer to let
 
 ##### Success With a Consequence
 
-If you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) and incur a consequence, you do what you set out to do, but with an added cost. A hero might succeed in climbing up a wall, but the surface of the wall crumbles and becomes unstable as they do, making the climb more difficult for the ally ascending after them. When trying to sneak by a cultist, a hero successfully does so, but leaves footprints or other evidence of trespassing behind. If a hero bribes a guard to be allowed to sneak into a prison, the guard lets them in—but then demands a gemstone the hero needs for an important crafting project before they let the hero out.
+If you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) and incur a consequence, you do what you set out to do, but with an added cost. A hero might succeed in climbing up a wall, but the surface of the wall crumbles and becomes unstable as they do, making the climb more difficult for the ally ascending after them. When trying to sneak by a cultist, a hero successfully does so, but leaves footprints or other evidence of trespassing behind. If a hero bribes a guard to be allowed to sneak into a prison, the guard lets them in—but then demands a gemstone the hero needs for an important [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) before they let the hero out.
 
 Just like failure with a consequence, the consequences accompanying success don't need to be immediately apparent. In lieu of other consequences, the Director has the option to gain 2 additional Malice at the start of the next combat encounter.
 
@@ -20556,7 +20556,7 @@ Common rewards accompanying success on a [test](scc:mcdm.heroes.v1/rule.test/tes
 
 - Automatically accomplishing a related follow-up task that would typically require a [test](scc:mcdm.heroes.v1/rule.test/test)
 - Allowing an ally engaged in the same task to accomplish the task without needing to make the [test](scc:mcdm.heroes.v1/rule.test/test) as well
-- Obtaining a consumable treasure or useful piece of mundane equipment
+- Obtaining a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure or useful piece of mundane equipment
 - Learning a piece of helpful information
 - Impressing or ingratiating yourself with someone who grants you a small favor
 - Noticing a hidden danger well before it strikes, giving you time to avoid or prepare for it
@@ -21231,7 +21231,7 @@ Each hero participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-t
 
 When interpreting the outcome of a [group test](scc:mcdm.heroes.v1/rule.test/group-test), the Director first determines if the task succeeded or not before figuring out rewards and consequences. If half or more of the heroes making the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeed, then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeeds. Otherwise, the [group test](scc:mcdm.heroes.v1/rule.test/group-test) fails.
 
-If the heroes succeeded and half or more of them obtained a reward from the [test](scc:mcdm.heroes.v1/rule.test/test), the Director gives the group a collective reward and ignores any consequences incurred in the [test](scc:mcdm.heroes.v1/rule.test/test). This collective reward should be equivalent to earning two individual rewards. In fact, it could be two consumable items, juicy pieces of information, or [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, it could also be something more tailored to the task. For instance, if the heroes earn a collective reward while sneaking through the camp of an enemy army, the Director might allow them to sabotage a bunch of war engines or steal a few horses on their way out.
+If the heroes succeeded and half or more of them obtained a reward from the [test](scc:mcdm.heroes.v1/rule.test/test), the Director gives the group a collective reward and ignores any consequences incurred in the [test](scc:mcdm.heroes.v1/rule.test/test). This collective reward should be equivalent to earning two individual rewards. In fact, it could be two [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) items, juicy pieces of information, or [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, it could also be something more tailored to the task. For instance, if the heroes earn a collective reward while sneaking through the camp of an enemy army, the Director might allow them to sabotage a bunch of war engines or steal a few horses on their way out.
 
 If the heroes failed the [group test](scc:mcdm.heroes.v1/rule.test/group-test) and more than half of them incurred a consequence as a result, the Director gives the group a collective consequence and ignores any earned rewards. This collective consequence should affect everyone. An easy option is for the stress of failing the [test](scc:mcdm.heroes.v1/rule.test/test) to cause each hero to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), or for the Director to gain 2 Malice per hero at the start of the next combat encounter. But the consequence could also be tailored to the task. For instance, if the heroes fail in their attempt to sneak through the camp of an enemy army, they're spotted and the camp immediately goes on alert as waves of enemies attack them.
 
@@ -21901,7 +21901,7 @@ A creature can use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/st
 <!-- @type: feature | @id: use-consumable -->
 #### Use Consumable
 
-Unless otherwise noted in its description, a creature can activate a consumable treasure such as a potion with the [Use Consumable](scc:mcdm.heroes.v1/feature.common.maneuvers/use-consumable) maneuver. A creature can use this maneuver to administer a consumable treasure that benefits the user either to themself or to a willing adjacent creature. See Consumables in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
+Unless otherwise noted in its description, a creature can activate a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure such as a potion with the [Use Consumable](scc:mcdm.heroes.v1/feature.common.maneuvers/use-consumable) maneuver. A creature can use this maneuver to administer a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure that benefits the user either to themself or to a willing adjacent creature. See [Consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
 <!-- @type: feature-group | @id: main-actions -->
 ### Main Actions
@@ -22800,66 +22800,66 @@ Many downtime projects have one or more special items you must possess or obtain
 <!-- @type: rule | @group: downtime | @id: project-source -->
 #### Project Source
 
-To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a project roll for that particular project (see Project Roll below).
+To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that particular project (see [Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) below).
 
 Some project sources are relatively easy to find. Building a castle doesn't require tomes filled with ancient lore, but it's also not something every stonemason knows how to do. However, the location of the tomb of Ashrya, the mummified protector of one hundred slumbering sorcerer-sovereigns, might exist only in a single tome that requires an accompanying adventure to unearth.
 
-The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in Orden (see that section in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you might be able to find a version of a source in other languages as well.
+The language with which project sources are set down or can be shared is chosen by the Director. The sample projects below have suggestions using languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) (see that section in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you might be able to find a version of a source in other languages as well.
 
-Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to be your project source whenever you make a project roll related to the project.
+Whenever the Director determines that a creature with needed knowledge can be used as a project source, another hero can serve as this source of knowledge. However, they must use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to be your project source whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) related to the project.
 
 ##### Search for Common Project Sources
 
-If you need a project source for a particular project, ask your Director if the source is common enough that it might be found in a substantial library, among a group of sages or guild artisans, and so forth. If the Director says yes, then the next time you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a place with a library or access to creatures with the knowledge you seek, you can locate the project source you need as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+If you need a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for a particular project, ask your Director if the source is common enough that it might be found in a substantial library, among a group of sages or guild artisans, and so forth. If the Director says yes, then the next time you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a place with a library or access to creatures with the knowledge you seek, you can locate the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) you need as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: rule | @group: downtime | @id: project-roll -->
 ### Project Roll
 
 As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a [test](scc:mcdm.heroes.v1/rule.test/test) with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the project.
 
-When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+When you make a project roll, the total—no matter how low—becomes [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
-A downtime project is complete when it accrues project points equal to or greater than its **project goal**-the number of points it takes to complete the project, noted in each project's description.
+A downtime project is complete when it accrues [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) equal to or greater than its **project goal**-the number of points it takes to complete the project, noted in each project's description.
 
-As you work on a downtime project, the Director can add events that help form the narrative of your research, crafting, or other activities. These events might provide unexpected benefits or challenges as you work on your project, to help make the journey as dramatic as arriving at the destination. See For the Director: Project Events below for more information.
+As you work on a downtime project, the Director can add events that help form the narrative of your research, crafting, or other activities. These events might provide unexpected benefits or challenges as you work on your project, to help make the journey as dramatic as arriving at the destination. See For the Director: [Project Events](scc:mcdm.heroes.v1/rule.downtime/project-event) below for more information.
 
 #### Project Roll Edges and Banes
 
-Since project rolls don't use success tiers, they don't follow the usual rules for double [edges](scc:mcdm.heroes.v1/rule.dice/edge) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane). If you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a project roll, you add 2 to the roll, as usual. But if you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge), you add 4 to the roll. Likewise, you subtract 2 from a project roll that takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane), and you subtract 4 from a roll that has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+Since [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) don't use success tiers, they don't follow the usual rules for double [edges](scc:mcdm.heroes.v1/rule.dice/edge) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane). If you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), you add 2 to the roll, as usual. But if you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge), you add 4 to the roll. Likewise, you subtract 2 from a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) that takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane), and you subtract 4 from a roll that has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 #### Skills and Project Rolls
 
-You can apply skills from either the crafting or lore skill groups to project rolls that directly relate to a downtime project (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). For example, you could use the Tailoring skill for project rolls related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a project roll must be directly related to the project.
+You can apply skills from either the crafting or lore skill groups to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) that directly relate to a downtime project (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). For example, you could use the Tailoring skill for [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) must be directly related to the project.
 
 #### Language and Project Rolls
 
-If you know the language of a project source, you can make a project roll without any issues. If you don't know the language of the source but you know a related language, the project roll takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane). If you don't know the source's language or a related language, the project roll has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+If you know the language of a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), you can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) without any issues. If you don't know the language of the source but you know a related language, the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane). If you don't know the source's language or a related language, the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: rule | @group: downtime | @id: guide -->
 #### Guides
 
-Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as project points toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
+Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
 
-Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the [speed](scc:mcdm.heroes.v1/rule.character/speed) of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more project points toward the Build Airship project, the crafting time can be significantly reduced.
+Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the [speed](scc:mcdm.heroes.v1/rule.character/speed) of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward the Build Airship project, the crafting time can be significantly reduced.
 
-A guide must provide its information in a language you understand for you to gain its full benefit. If a guide uses a language related to one you know, you gain only half the guide's knowledge value (rounded down) as project points toward your project.
+A guide must provide its information in a language you understand for you to gain its full benefit. If a guide uses a language related to one you know, you gain only half the guide's knowledge value (rounded down) as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward your project.
 
 <!-- @type: rule | @group: downtime | @id: project-event -->
 #### For the Director: Project Events
 
-Project events are story events that present boons and challenges to heroes as they complete research and crafting projects. These events are entirely optional. If your group prefers a game where the heroes simply work toward their goals by making project rolls, that's fine. But using these events can help a Director inject more drama into the processes of research and crafting.
+[Project events](scc:mcdm.heroes.v1/rule.downtime/project-event) are story events that present boons and challenges to heroes as they complete research and [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project). These events are entirely optional. If your group prefers a game where the heroes simply work toward their goals by making [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll), that's fine. But using these events can help a Director inject more drama into the processes of research and crafting.
 
 ##### When To Use Project Events
 
-Projects don't need an event every time a hero makes a project roll. If they did, the heroes would likely spend all their time trying to manage their projects and never do any adventuring. Instead, you as the Director pick one of the following methods to determine when an event occurs during a downtime project. You can always switch up the method you use during a campaign, doing whatever you think works best for the current situation.
+Projects don't need an event every time a hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). If they did, the heroes would likely spend all their time trying to manage their projects and never do any adventuring. Instead, you as the Director pick one of the following methods to determine when an event occurs during a downtime project. You can always switch up the method you use during a campaign, doing whatever you think works best for the current situation.
 
 ##### Roll for Event
 
-If you want events to be a surprise for you as much as for the other players, then once during any [respite](scc:mcdm.heroes.v1/rule.resource/respite) when one or more heroes makes a project roll, roll a d6. On a 6, an event occurs. This is a good option if you enjoy coming up with story on the fly during play.
+If you want events to be a surprise for you as much as for the other players, then once during any [respite](scc:mcdm.heroes.v1/rule.resource/respite) when one or more heroes makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), roll a d6. On a 6, an event occurs. This is a good option if you enjoy coming up with story on the fly during play.
 
 ##### Event Milestones
 
-If you want to guarantee that events occur during a downtime project, use event milestones based on project points. When the project accrues a certain number of points, an event occurs the next time a hero wants to make a project roll. This approach works well if you want to plan your event in detail before it occurs.
+If you want to guarantee that events occur during a downtime project, use event milestones based on [project points](scc:mcdm.heroes.v1/rule.downtime/project-points). When the project accrues a certain number of points, an event occurs the next time a hero wants to make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). This approach works well if you want to plan your event in detail before it occurs.
 
 You can use the Suggested Event Milestones table to determine when an event should occur during a project.
 
@@ -22878,31 +22878,31 @@ Whenever you think the heroes could use a little drama during a [respite](scc:mc
 
 ##### Deploying Events
 
-A project event occurs when a hero makes a project roll. You can roll for or choose an event from the appropriate events prompts table, or use the tables to inspire your own events. Each event entry on the table is a narrative prompt written for you as the Director, and which you can change and flesh out as you determine. Each event specifies whether it occurs before or after the project roll is resolved.
+A [project event](scc:mcdm.heroes.v1/rule.downtime/project-event) occurs when a hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). You can roll for or choose an event from the appropriate events prompts table, or use the tables to inspire your own events. Each event entry on the table is a narrative prompt written for you as the Director, and which you can change and flesh out as you determine. Each event specifies whether it occurs before or after the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) is resolved.
 
 ##### Automatic Breakthrough
 
-If an event grants an automatic breakthrough on a downtime project, the project gains 20 project points and the hero can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+If an event grants an automatic breakthrough on a downtime project, the project gains 20 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) and the hero can make another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: rule | @group: downtime | @id: crafting-project -->
 ### Crafting Projects
 
-Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to contribute a project roll in order to get the work done faster.
+Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to contribute a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in order to get the work done faster.
 
-Unless a project has an event table of its own, the Director uses the Crafting and Research Events table for crafting project events.
+Unless a project has an event table of its own, the Director uses the Crafting and Research Events table for crafting [project events](scc:mcdm.heroes.v1/rule.downtime/project-event).
 
 <!-- @type: project -->
 #### Build Airship
 
-**Item Prerequisite:** Wind Crystal of Quintessence
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Wind Crystal of Quintessence
 
-**Project Source:** Texts or lore in Low Rhyvian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Low Rhyvian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 3,000
 
-When you start this project, you hire a crew of carpenters, mages, and shipwrights who work in the area where the project is undertaken, with these artisans building the ship for you. You can make a project roll whenever you are overseeing the project, which you might be able to do remotely through the use of magic or psionics.
+When you start this project, you hire a crew of carpenters, mages, and shipwrights who work in the area where the project is undertaken, with these artisans building the ship for you. You can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) whenever you are overseeing the project, which you might be able to do remotely through the use of magic or psionics.
 
 When the project is completed, you have an airship. You and any creatures you designate can operate the ship by touching the ship's wheel. During combat, a creature touching the wheel can use a maneuver to make the ship move up to 10 squares. The ship can be moved only once per round. Out of combat, the ship has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 130 miles per day.
 
@@ -22919,45 +22919,45 @@ An airship is an object (giving it [damage immunity](scc:mcdm.heroes.v1/rule.dam
 <!-- @type: project -->
 #### Build or Repair Road
 
-**Item Prerequisite:** Three writs of approval, from an engineers' guild, a masons' guild, and a guards' guild
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Three writs of approval, from an engineers' guild, a masons' guild, and a guards' guild
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** Varies
 
-When you start this project, you hire a crew of masons, engineers, and guards who start work at the location where the project begins and build or repair the road for you. You can make a project roll whenever you are overseeing the project, whether you do so in person or remotely through the use of magic or psionics.
+When you start this project, you hire a crew of masons, engineers, and guards who start work at the location where the project begins and build or repair the road for you. You can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) whenever you are overseeing the project, whether you do so in person or remotely through the use of magic or psionics.
 
-The number of project points required to complete work on the road equals 10 x the road's length in miles. The goal is cut in half if you are repairing an existing road, or if someone else starts work on a second road project that connects to your project.
+The number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required to complete work on the road equals 10 x the road's length in miles. The goal is cut in half if you are repairing an existing road, or if someone else starts work on a second road project that connects to your project.
 
 When you complete the project, you earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown) among people in the area where the road is built, depending on the length of the road.
 
-Time spent traveling between locations on the road is cut in half. Access to resources and knowledge is improved in locations along the road, giving you and your allies an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on project rolls to discover lore while you are in those areas.
+Time spent traveling between locations on the road is cut in half. Access to resources and knowledge is improved in locations along the road, giving you and your allies an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) to discover lore while you are in those areas.
 
 ###### Build or Repair Roads Events Table
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Before the roll, crews uncover an ancient road following the intended route, crafted with remarkable techniques that make it a sturdy base on which to build. The project gains an automatic breakthrough and the project goal is halved if it was not already halved.                                                                                                                                                                                    |
-| 2   | After the roll, the local population grows in excitement with each completed portion of the road. The name of the hero making the project roll spreads as a builder of bridges both literal and social. If the project roll is 12 or higher, the local community comes together to complete the project alongside the hero's hired crew. The hero doubles the [renown](scc:mcdm.heroes.v1/rule.resource/renown) earned at the end of the project.                                                    |
-| 3   | Before the roll, a local religious or civic authority hears of the project and sends laborers to accelerate it—in exchange for a future favor. The hero gains an immediate 50 project points for the project if they accept the help.                                                                                                                                                                                                                     |
-| 4   | After the roll, local hired hands and the project engineers find themselves at odds, hindering the project. If the hero can't help defuse the situation, the project requires an additional 50 project points to complete.                                                                                                                                                                                                                                |
-| 5   | Before the roll, supply caravans are disrupted by bandits, requiring extra guards. If the hero can't deal with the bandit threat personally, the project requires an additional 50 project points to complete.                                                                                                                                                                                                                                            |
+| 2   | After the roll, the local population grows in excitement with each completed portion of the road. The name of the hero making the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) spreads as a builder of bridges both literal and social. If the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) is 12 or higher, the local community comes together to complete the project alongside the hero's hired crew. The hero doubles the [renown](scc:mcdm.heroes.v1/rule.resource/renown) earned at the end of the project.                                                    |
+| 3   | Before the roll, a local religious or civic authority hears of the project and sends laborers to accelerate it—in exchange for a future favor. The hero gains an immediate 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) for the project if they accept the help.                                                                                                                                                                                                                     |
+| 4   | After the roll, local hired hands and the project engineers find themselves at odds, hindering the project. If the hero can't help defuse the situation, the project requires an additional 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) to complete.                                                                                                                                                                                                                                |
+| 5   | Before the roll, supply caravans are disrupted by bandits, requiring extra guards. If the hero can't deal with the bandit threat personally, the project requires an additional 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) to complete.                                                                                                                                                                                                                                            |
 | 6   | After the roll, word is heard that not everyone in the local area is happy about the road being built. The project is hindered by supernatural curses that cause stones to move, vines and overgrowth to reclaim sections already built, or churning earth to restore the road back to its previous form. The hero must make amends to the local supernatural community or have the [renown](scc:mcdm.heroes.v1/rule.resource/renown) earned by completing the project not extend to that community. |
-| 7   | After the roll, ditchers working on the project hit an ancient well, retaining wall, or hidden stream that results in an immediate flood. The work is delayed, but the new water source ultimately provides a boon to local farming communities. Project points earned by this roll are halved, but upon the project's completion, the hero earns 1 additional [renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                    |
-| 8   | Before the roll, a new engineer arrives with specialist experience such as building sturdy wooden bridges, using bilge pumps to keep rainwater from slowing the work, and so forth. They want to work on the project, but insist on receiving a consumable treasure first. If they are hired, the project gains an automatic breakthrough.                                                                                                                |
-| 9   | Before the roll, the proposed road touches on a supernatural intersection—a crossing place between multiple worlds that draws interest from a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil). The completion of the project becomes the personal interest of this being, who offers to increase progress—but demands a future favor from the hero. If the deal is accepted, each project roll for the project is doubled until its completion.                                            |
+| 7   | After the roll, ditchers working on the project hit an ancient well, retaining wall, or hidden stream that results in an immediate flood. The work is delayed, but the new water source ultimately provides a boon to local farming communities. [Project points](scc:mcdm.heroes.v1/rule.downtime/project-points) earned by this roll are halved, but upon the project's completion, the hero earns 1 additional [renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                    |
+| 8   | Before the roll, a new engineer arrives with specialist experience such as building sturdy wooden bridges, using bilge pumps to keep rainwater from slowing the work, and so forth. They want to work on the project, but insist on receiving a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure first. If they are hired, the project gains an automatic breakthrough.                                                                                                                |
+| 9   | Before the roll, the proposed road touches on a supernatural intersection—a crossing place between multiple worlds that draws interest from a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil). The completion of the project becomes the personal interest of this being, who offers to increase progress—but demands a future favor from the hero. If the deal is accepted, each [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project is doubled until its completion.                                            |
 | 10  | After the roll, a guildmaster has it out for the hero. Whether from a past conflict or something about the way this project has unfolded, the guildmaster has made it their mission to hinder the project by dragging the hero's name through the mud. The hero's [renown](scc:mcdm.heroes.v1/rule.resource/renown) is treated as 1 less than usual while these rumors persist.                                                                                                                      |
 
 <!-- @type: project -->
 #### Craft Teleportation Platform
 
-**Item Prerequisite:** One spatial navigator
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One spatial navigator
 
-**Project Source:** Texts or lore in Voll
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 1,500
 
@@ -22968,35 +22968,35 @@ Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is 
 <!-- @type: project -->
 #### Craft Treasure
 
-You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its item prerequisite, project source, project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal.
+You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite), [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal.
 
 <!-- @type: project -->
 #### Find a Cure
 
-**Item Prerequisite:** Varies (see description)
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies (see description)
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** Varies
 
-You research a cure for a disease, curse, or supernatural affliction whose text states that it can be ended by the Find a Cure downtime project. If the affliction was caused by the innate feature of a creature, you need the remains of that creature or another creature of the same kind as an item prerequisite for crafting the cure. For example, you can research the cure for the affliction of a werewolf's Accursed Bite by studying the corpse of any werewolf, not just the one who did the biting.
+You research a cure for a disease, curse, or supernatural affliction whose text states that it can be ended by the Find a Cure downtime project. If the affliction was caused by the innate feature of a creature, you need the remains of that creature or another creature of the same kind as an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for crafting the cure. For example, you can research the cure for the affliction of a werewolf's Accursed Bite by studying the corpse of any werewolf, not just the one who did the biting.
 
-The number of project points it takes to complete this project is equal to 50 times the level of the creature who caused the affliction. If the affliction was created by an environmental or supernatural effect, that effect notes the item prerequisite and project points required to complete this project.
+The number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) it takes to complete this project is equal to 50 times the level of the creature who caused the affliction. If the affliction was created by an environmental or supernatural effect, that effect notes the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required to complete this project.
 
-When you complete this project, you craft one dose of an alchemical cure for the affliction. Once the project is completed, you can craft subsequent doses for the same affliction for half the number of project points required for the initial project.
+When you complete this project, you craft one dose of an alchemical cure for the affliction. Once the project is completed, you can craft subsequent doses for the same affliction for half the number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required for the initial project.
 
 <!-- @type: project -->
 #### Imbue Treasure
 
-You can create leveled treasures by imbuing items with magic or psionic power. You must have a mundane version of the item you plan to imbue, such as a sword or shield, when you start this project.
+You can create [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) by imbuing items with magic or psionic power. You must have a mundane version of the item you plan to imbue, such as a sword or shield, when you start this project.
 
 You can imbue any item three times. The first time you imbue it, you pick a 1st-level enhancement. The second time you imbue it, you pick a 5th-level enhancement. The third time you imbue it, you pick a 9th-level enhancement. A hero using armor or a weapon can't benefit from an enhancement unless they are using a kit that includes the armor or weapon type, and their level matches the enhancement's level.
 
 If an enhancement has a Roman numeral greater than I after it, such as the Phasing III enhancement, that enhancement can't be applied unless the item has all previous versions of the enhancement. This means you can't imbue armor with the Phasing III enhancement unless it has the Phasing I and Phasing II enhancements first. The effects of numbered enhancements are cumulative unless otherwise noted.
 
-Enhancements are broken out by item type (armor, implement, or weapon) and level. Each item type and level features a table showing the name, item prerequisite, and project source language of each enhancement. Imbued items take the Magic or Psionic keyword (your choice) and are part of any kit categories appropriate to the type of item (light armor, medium weapon, and so forth).
+Enhancements are broken out by item type (armor, implement, or weapon) and level. Each item type and level features a table showing the name, [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite), and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language of each enhancement. Imbued items take the Magic or Psionic keyword (your choice) and are part of any kit categories appropriate to the type of item (light armor, medium weapon, and so forth).
 
 Imbuing treasure with supernatural power as a downtime project typically means you undertake that project to make use of the treasure yourself. As such, all the features of imbuing refer to "you" as the user of the item. However, imbued items can be created for other creatures, or created by other creatures and found as treasure.
 
@@ -23011,11 +23011,11 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 ###### 1st-Level Armor Enhancement
 
-**Item Prerequisite:** Varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23041,10 +23041,10 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 ###### 1st-Level Armor Enhancements Table
 
-| Enhancement          | Item Prerequisite                                                                                | Project Source Language |
+| Enhancement          | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |----------------------|--------------------------------------------------------------------------------------------------|-------------------------|
 | Awe                  | A lock of hair from a fey, taken in amicable bargain for Charming or in violence for Threatening | Khelt                   |
-| [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I    | Elemental sand left behind when an elemental enters Orden from Quintessence                      | Zaliac                  |
+| [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I    | Elemental sand left behind when an elemental enters [Orden](scc:mcdm.heroes.v1/rule.world/orden) from Quintessence                      | Zaliac                  |
 | Disguise             | The blood of a lycanthrope                                                                       | Khelt                   |
 | Iridescent           | Fur from a lightbender                                                                           | Hyrallic                |
 | Magic Resistance I   | A scale from a dragon                                                                            | The First Language      |
@@ -23056,11 +23056,11 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 ###### 5th-Level Armor Enhancement
 
-**Item Prerequisite:** Armor with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 1st-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23096,7 +23096,7 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 ###### 5th-Level Armor Enhancements Table
 
-| Enhancement           | Item Prerequisite                                                                 | Project Source Language |
+| Enhancement           | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------------|-----------------------------------------------------------------------------------|-------------------------|
 | Absorption            | A mirror blessed by a priest of a god of magic                                    | The First Language      |
 | [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) II    | The essence of an elemental who is still alive                                    | Zaliac                  |
@@ -23112,11 +23112,11 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 ###### 9th-Level Armor Enhancement
 
-**Item Prerequisite:** Armor with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 5th-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23159,7 +23159,7 @@ On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the im
 
 ###### 9th-Level Armor Enhancements Table
 
-| Enhancement            | Item Prerequisite                                                                                    | Project Source Language |
+| Enhancement            | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |------------------------|------------------------------------------------------------------------------------------------------|-------------------------|
 | Devil's Bargain        | The wing of an archdevil                                                                             | Anjali                  |
 | Dragon Soul II         | An offering of gems, coins, and art stolen from a dragon's hoard, sacrificed in ritual fire          | Vastariax               |
@@ -23181,11 +23181,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 1st-Level Implement Enhancement
 
-**Item Prerequisite:** Varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23209,7 +23209,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 1st-Level Implement Enhancements Table
 
-| Enhancement     | Item Prerequisite                               | Project Source Language |
+| Enhancement     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                               | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------|-------------------------------------------------|-------------------------|
 | Berserking      | The tusk of a feral boar                        | Kalliak                 |
 | Displacing I    | Slime from an ooze                              | Khelt                   |
@@ -23223,11 +23223,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 5th-Level Implement Enhancement
 
-**Item Prerequisite:** An implement with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An implement with a 1st-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23251,7 +23251,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 5th-Level Implement Enhancements Table
 
-| Enhancement     | Item Prerequisite                                 | Project Source Language |
+| Enhancement     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------|---------------------------------------------------|-------------------------|
 | Celerity        | A dire falcon's beak                              | Khelt                   |
 | Celestine       | A still-warm piece of a meteorite                 | Ullorvic                |
@@ -23265,11 +23265,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 9th-Level Implement Enhancement
 
-**Item Prerequisite:** An implement with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An implement with a 5th-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23293,7 +23293,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 9th-Level Implement Enhancements Table
 
-| Enhancement      | Item Prerequisite                                         | Project Source Language |
+| Enhancement      | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                         | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |------------------|-----------------------------------------------------------|-------------------------|
 | Anathema         | An olothec tentacle                                       | Variac                  |
 | Displacing III   | The keystone from a gate used for crossing between worlds | Voll                    |
@@ -23315,11 +23315,11 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 1st-Level Weapon Enhancement
 
-**Item Prerequisite:** Varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23343,7 +23343,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 1st-Level Weapon Enhancements Table
 
-| Enhancement   | Item Prerequisite                                                    | Project Source Language |
+| Enhancement   | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |---------------|----------------------------------------------------------------------|-------------------------|
 | Blood Bargain | The blood of a [devil](scc:mcdm.heroes.v1/ancestry/devil)                                                 | Anjali                  |
 | Chilling I    | A piece of ice from Quintessence that never melts                    | Yllyric                 |
@@ -23357,11 +23357,11 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 5th-Level Weapon Enhancement
 
-**Item Prerequisite:** A weapon with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 1st-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23401,7 +23401,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 5th-Level Weapon Enhancements
 
-| Enchantment   | Item Prerequisite                                               | Project Source Language |
+| Enchantment   | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                               | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |---------------|-----------------------------------------------------------------|-------------------------|
 | Chargebreaker | An adamantine spearhead                                         | Zaliac                  |
 | Chilling II   | Frozen bones from the lair of a white dragon                    | Yllyric                 |
@@ -23415,11 +23415,11 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 9th-Level Weapon Enhancement
 
-**Item Prerequisite:** A weapon with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 5th-level enhancement; varies
 
-**Project Source:** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23457,7 +23457,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 9th-Level Weapon Enhancements
 
-| Enhancement    | Item Prerequisite                                                                                                                     | Project Source Language |
+| Enhancement    | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                                                     | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
 | Chilling III   | The weapon must be dipped in the Glacial Forge in the coldest depths of Hell                                                          | Yllyric                 |
 | Disrupting III | Wrappings from a mummy buried at least a century ago                                                                                  | Anjali                  |
@@ -23474,22 +23474,22 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 Heroes can undertake many different types of research downtime projects, which can involve seeking out new lore, improving existing knowledge with study, uncovering rumors or secrets, and more.
 
-Unless a project has an event table of its own or a special event entry, the Director uses the Crafting and Research Events table for research project events.
+Unless a project has an event table of its own or a special event entry, the Director uses the Crafting and Research Events table for research [project events](scc:mcdm.heroes.v1/rule.downtime/project-event).
 
 <!-- @type: project -->
 #### Discover Lore
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** Texts or knowledge related to the subject you wish to research
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or knowledge related to the subject you wish to research
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** Varies (see the table)
 
 If you want to track the location of a lost treasure, decipher a ritual, or trace the lineage of a royal family to find the next heir to the throne, you can start a downtime project to delve into whatever mysteries you seek to unravel. You might start a project to discover lore because the information can't be discovered through a single [test](scc:mcdm.heroes.v1/rule.test/test), or you could do so because you failed a [test](scc:mcdm.heroes.v1/rule.test/test) to recall information and now want to learn it through research.
 
-When you start a downtime project to discover lore, you choose the lore you want investigated and the questions you want answered. The Director tells you if the lore you seek amounts to common, obscure, lost, or forbidden knowledge. The more esoteric the knowledge, the more project points are required to find the answers you seek.
+When you start a downtime project to discover lore, you choose the lore you want investigated and the questions you want answered. The Director tells you if the lore you seek amounts to common, obscure, lost, or forbidden knowledge. The more esoteric the knowledge, the more [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) are required to find the answers you seek.
 
 ###### Discover Lore Project Goals Table
 
@@ -23520,65 +23520,65 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 
 | d100   | Event                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01-02  | After the roll, a thief who wants the project source or an item needed for the project approaches the hero and pretends to be someone who wants to help. The thief might want to sell the project source or item, or use it to undertake the same project as the hero.                                                                                                                                                                                                                                          |
-| 03-04  | Before the roll, a traveler in need of food, shelter, or some other necessity happens upon the heroes and asks for their help. If the heroes show kindness, the traveler reveals themself to be an artisan or sage who can help with the project. The traveler can contribute one project roll to the project with a +3 modifier.                                                                                                                                                                               |
-| 05-06  | Before the roll, an NPC who is already friendly with the characters and has helped them before asks the hero to let them join the project. The NPC explains that they need the project source or the object being crafted for a personal matter of great importance (saving someone's life, righting a great wrong, and so forth). The NPC can contribute one project roll to the project with a +3 modifier, but the characters must commit to letting the NPC use the finished project before they can do so. |
-| 07-08  | After the roll, the hero receives a mysterious note from a person who wants to exchange a treasure or other reward for the project source when the project is complete. The buyer could be someone with their own interest in a similar project, an enemy eager to exploit what the hero is working on, or a superfan who wants to emulate the hero.                                                                                                                                                            |
-| 09-10  | Before the roll, a pest starts devouring important components of the project. This could be rats gnawing at alchemical components, moths eating rare silks, mites devouring a printed project source, and so forth. If the pests aren't dealt with quickly, some of the components will need to be replaced.                                                                                                                                                                                                    |
+| 01-02  | After the roll, a thief who wants the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or an item needed for the project approaches the hero and pretends to be someone who wants to help. The thief might want to sell the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or item, or use it to undertake the same project as the hero.                                                                                                                                                                                                                                          |
+| 03-04  | Before the roll, a traveler in need of food, shelter, or some other necessity happens upon the heroes and asks for their help. If the heroes show kindness, the traveler reveals themself to be an artisan or sage who can help with the project. The traveler can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier.                                                                                                                                                                               |
+| 05-06  | Before the roll, an NPC who is already friendly with the characters and has helped them before asks the hero to let them join the project. The NPC explains that they need the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or the object being crafted for a personal matter of great importance (saving someone's life, righting a great wrong, and so forth). The NPC can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier, but the characters must commit to letting the NPC use the finished project before they can do so. |
+| 07-08  | After the roll, the hero receives a mysterious note from a person who wants to exchange a treasure or other reward for the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) when the project is complete. The buyer could be someone with their own interest in a similar project, an enemy eager to exploit what the hero is working on, or a superfan who wants to emulate the hero.                                                                                                                                                            |
+| 09-10  | Before the roll, a pest starts devouring important components of the project. This could be rats gnawing at alchemical components, moths eating rare silks, mites devouring a printed [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), and so forth. If the pests aren't dealt with quickly, some of the components will need to be replaced.                                                                                                                                                                                                    |
 | 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
 | 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of [respite](scc:mcdm.heroes.v1/rule.resource/respite), demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
 | 15-16  | Before the roll, the hero's rival comes to visit and shows off a guide for the project. The rival is willing to hand the guide over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
-| 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
+| 17-18  | The [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source).                                                                                                                                     |
 | 19-20  | Before the roll, the hero finds that a significant amount of the project has been completed by a group of fairies. The fairies might have completed the job out of boredom, or they might want something from the hero in return.                                                                                                                                                                                                                                                                               |
-| 21-22  | After the roll, the hero realizes that the project source contains only half the information they need, and they must find the rest of the information to complete the project.                                                                                                                                                                                                                                                                                                                                 |
+| 21-22  | After the roll, the hero realizes that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) contains only half the information they need, and they must find the rest of the information to complete the project.                                                                                                                                                                                                                                                                                                                                 |
 | 23-24  | After the roll, the hero discovers a new bit of knowledge or a technique that allows them to immediately start and finish a second project with a project goal of 50 or lower.                                                                                                                                                                                                                                                                                                                                  |
-| 25-26  | Before the roll, the hero finds that someone has attempted to sabotage their project, resulting in damage to notes, the project source, or crafting components. The damage is negligible, but the creature responsible will strike again to worse effect if not discovered.                                                                                                                                                                                                                                     |
-| 27-28  | Before the roll, the project source is found to hold additional information, letting the hero treat the project roll as an automatic breakthrough. The note could have been left by a helpful visitor, or by someone who wants the hero's work to be finished for their own gain.                                                                                                                                                                                                                               |
-| 29-30  | After the roll, the project draws the attention of a [devil](scc:mcdm.heroes.v1/ancestry/devil), who tries to subtly change the project source from the Seven Cities of Hell. If the hero doesn't notice, the [devil](scc:mcdm.heroes.v1/ancestry/devil) is summoned the next time the hero makes a project roll, with goals of the Director's determination.                                                                                                                                                                                                                             |
-| 31-32  | Before the roll, the hero stumbles upon a tool, expert, or book that helps them with the project, letting them treat the project roll as an automatic breakthrough.                                                                                                                                                                                                                                                                                                                                             |
-| 33-34  | After the roll, the project source suddenly becomes impossible to understand. A psionic NPC has used a mighty power to obscure or corrupt the project source to prevent a potential catastrophe they foresaw. If the heroes can help prevent the catastrophe in another way, the NPC will end the effect.                                                                                                                                                                                                       |
-| 35-36  | After the roll, the hero discovers that the project source contains a piece of helpful knowledge unrelated to the current project.                                                                                                                                                                                                                                                                                                                                                                              |
+| 25-26  | Before the roll, the hero finds that someone has attempted to sabotage their project, resulting in damage to notes, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), or crafting components. The damage is negligible, but the creature responsible will strike again to worse effect if not discovered.                                                                                                                                                                                                                                     |
+| 27-28  | Before the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) is found to hold additional information, letting the hero treat the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) as an automatic breakthrough. The note could have been left by a helpful visitor, or by someone who wants the hero's work to be finished for their own gain.                                                                                                                                                                                                                               |
+| 29-30  | After the roll, the project draws the attention of a [devil](scc:mcdm.heroes.v1/ancestry/devil), who tries to subtly change the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) from the Seven Cities of Hell. If the hero doesn't notice, the [devil](scc:mcdm.heroes.v1/ancestry/devil) is summoned the next time the hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), with goals of the Director's determination.                                                                                                                                                                                                                             |
+| 31-32  | Before the roll, the hero stumbles upon a tool, expert, or book that helps them with the project, letting them treat the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) as an automatic breakthrough.                                                                                                                                                                                                                                                                                                                                             |
+| 33-34  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) suddenly becomes impossible to understand. A psionic NPC has used a mighty power to obscure or corrupt the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) to prevent a potential catastrophe they foresaw. If the heroes can help prevent the catastrophe in another way, the NPC will end the effect.                                                                                                                                                                                                       |
+| 35-36  | After the roll, the hero discovers that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) contains a piece of helpful knowledge unrelated to the current project.                                                                                                                                                                                                                                                                                                                                                                              |
 | 37-38  | Before the roll, the hero learns that several sages working on similar projects have all mysteriously disappeared. Someone or something is abducting these experts for some nefarious purpose... and the hero could be next!                                                                                                                                                                                                                                                                                   |
-| 39-40  | After the roll, a group of scholars approach the hero and ask if they can review the project source, promising to help the hero complete the project in return. If the hero accepts, the scholars take the project source until the end of the hero's next [respite](scc:mcdm.heroes.v1/rule.resource/respite). Three of the scholars then contribute project rolls during the following [respite](scc:mcdm.heroes.v1/rule.resource/respite), each with a +3 modifier.                                                                                                                                  |
-| 41-42  | After the roll, a physical project source or crafting components come to life and attack the hero. Magic within these items has become corrupted! If the hero can fix the corruption without destroying the items, the project is saved, but doing so requires a special ritual.                                                                                                                                                                                                                                |
-| 43-44  | After the roll, an otherworldly specter appears and warns the hero not to complete the project, explaining that they died attempting the same project and are now attached to the project source. If the hero can convince the spirit that they will not die similarly, the creature shares their knowledge, contributing one project roll to the project with a +3 modifier.                                                                                                                                   |
-| 45-46  | Before the roll, the servants of a dragon appear and demand that the hero hand over the project source. If the hero refuses, the servants warn that the dragon will come to claim the project source for themself.                                                                                                                                                                                                                                                                                              |
-| 47-48  | Before the roll, the hero notices a contract written on a physical project source or other accompanying materials that appears only under certain conditions (in the presence of magic, in the light of a full moon, and so forth). The contract promises that anyone who signs it in blood will receive the true and full answer to three questions, in exchange for a week of service to the hag Corrine Withersnipe. The hag appears instantly if the contract is signed.                                    |
-| 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per [respite](scc:mcdm.heroes.v1/rule.resource/respite) when any creature makes another project roll for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
+| 39-40  | After the roll, a group of scholars approach the hero and ask if they can review the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), promising to help the hero complete the project in return. If the hero accepts, the scholars take the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) until the end of the hero's next [respite](scc:mcdm.heroes.v1/rule.resource/respite). Three of the scholars then contribute [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) during the following [respite](scc:mcdm.heroes.v1/rule.resource/respite), each with a +3 modifier.                                                                                                                                  |
+| 41-42  | After the roll, a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or crafting components come to life and attack the hero. Magic within these items has become corrupted! If the hero can fix the corruption without destroying the items, the project is saved, but doing so requires a special ritual.                                                                                                                                                                                                                                |
+| 43-44  | After the roll, an otherworldly specter appears and warns the hero not to complete the project, explaining that they died attempting the same project and are now attached to the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). If the hero can convince the spirit that they will not die similarly, the creature shares their knowledge, contributing one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier.                                                                                                                                   |
+| 45-46  | Before the roll, the servants of a dragon appear and demand that the hero hand over the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). If the hero refuses, the servants warn that the dragon will come to claim the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for themself.                                                                                                                                                                                                                                                                                              |
+| 47-48  | Before the roll, the hero notices a contract written on a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other accompanying materials that appears only under certain conditions (in the presence of magic, in the light of a full moon, and so forth). The contract promises that anyone who signs it in blood will receive the true and full answer to three questions, in exchange for a week of service to the hag Corrine Withersnipe. The hag appears instantly if the contract is signed.                                    |
+| 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per [respite](scc:mcdm.heroes.v1/rule.resource/respite) when any creature makes another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
 | 51-52  | Before the roll, the hero gets a visit from an NPC who they helped in the past. The NPC has found a guide that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
-| 53-54  | After the roll, a local officer of the law appears and tells the hero to stop working on their project. The nature of the hero's project has just become outlawed in the region, and the constable insists on locking up the project source and arresting anyone who gets in the way.                                                                                                                                                                                                                           |
-| 55-56  | Before the roll, the hero determines that the research or crafting they are planning requires only part of their attention. They can either make two project rolls for their current project, or can make one for that project and one for another project.                                                                                                                                                                                                                                                     |
+| 53-54  | After the roll, a local officer of the law appears and tells the hero to stop working on their project. The nature of the hero's project has just become outlawed in the region, and the constable insists on locking up the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and arresting anyone who gets in the way.                                                                                                                                                                                                                           |
+| 55-56  | Before the roll, the hero determines that the research or crafting they are planning requires only part of their attention. They can either make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for their current project, or can make one for that project and one for another project.                                                                                                                                                                                                                                                     |
 | 57-58  | After the roll, a component or tool the hero is using for the project suddenly reveals itself to be magic or psionic as it starts to hum with energy and glow red hot. If the item isn't quickly cooled, it explodes, and work on the project can't continue until a replacement is found.                                                                                                                                                                                                                      |
-| 59-60  | Before the roll, the hero realizes they're at a critical point in the project, and can achieve more if they just shave off a few hours of rest. By choosing to lose some sleep, the character can make two project rolls for the project, but when they end the current [respite](scc:mcdm.heroes.v1/rule.resource/respite), they do so with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                 |
+| 59-60  | Before the roll, the hero realizes they're at a critical point in the project, and can achieve more if they just shave off a few hours of rest. By choosing to lose some sleep, the character can make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project, but when they end the current [respite](scc:mcdm.heroes.v1/rule.resource/respite), they do so with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                 |
 | 61-62  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're an assassin hoping to catch the hero off guard.                                                                                                                                                                                                                                                                                                                                  |
 | 63-64  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're a bard who wishes to compose a song about the hero's deeds. The NPC is to ingratiate themself to the hero while contributing nothing to the actual project.                                                                                                                                                                                                                      |
-| 65-66  | After the roll, a physical project source or a component of the project creates an unstable portal to another world related to the nature of the project. Tiny [devils](scc:mcdm.heroes.v1/ancestry/devil), elementals, or other creatures start clawing their way out of the item and causing mischief.                                                                                                                                                                                                                                             |
-| 67-68  | After the roll, the hero realizes that the project source also holds information regarding the location of another project source or certain items, which are needed for another project the hero or one of their allies wants to pursue.                                                                                                                                                                                                                                                                       |
+| 65-66  | After the roll, a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or a component of the project creates an unstable portal to another world related to the nature of the project. Tiny [devils](scc:mcdm.heroes.v1/ancestry/devil), elementals, or other creatures start clawing their way out of the item and causing mischief.                                                                                                                                                                                                                                             |
+| 67-68  | After the roll, the hero realizes that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) also holds information regarding the location of another [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or certain items, which are needed for another project the hero or one of their allies wants to pursue.                                                                                                                                                                                                                                                                       |
 | 69-70  | Before the roll, a group of enemies working for the campaign's villain attacks the hero, intent on destroying as much of the project's source or other resources as possible.                                                                                                                                                                                                                                                                                                                                   |
 | 71-72  | Before the roll, a storm moves into the area that threatens to persist until the project is completed. The closer to completion the hero gets on the project, the more violent the storm becomes. It's possible that the storm is conscious, or that someone is controlling the storm to stand in the hero's way.                                                                                                                                                                                               |
 | 73-74  | After the roll, the hero falls asleep. They go on to complete the project in their dreams, but they have no access to that progress while they're awake. The hero can rectify this by finding a way to physically enter into their dreams, where the completed project can be found.                                                                                                                                                                                                                            |
-| 75-76  | Before the roll, a band of goblins barge in on the hero. If the hero has been fighting goblins on their recent adventures, the goblins attempt to run away with the project source. Otherwise, the goblins are merely curious about the project, and the hero can make two project rolls if they choose to explain it and have the goblins help.                                                                                                                                                                |
+| 75-76  | Before the roll, a band of goblins barge in on the hero. If the hero has been fighting goblins on their recent adventures, the goblins attempt to run away with the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). Otherwise, the goblins are merely curious about the project, and the hero can make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) if they choose to explain it and have the goblins help.                                                                                                                                                                |
 | 77-78  | After the roll, the hero watches as any progress made is reversed—as if the project were moving backward through time. Any character familiar with psionics recognizes the phenomena as a chrono-anomaly. The project loses the same amount of progress each successive night until the hero finds and stops the source of the anomaly, which restores the project's progress.                                                                                                                                  |
-| 79-80  | Before the roll, the hero hears a voice beckoning them into the nearest wode to work on their project. Each time the hero makes a project roll in the wode, they make three times the progress but feel more pressure to stay in the wode forever.                                                                                                                                                                                                                                                              |
-| 81-82  | After the roll, the hero stumbles upon knowledge of an expert a day's travel away who could complete the project, and who possesses a project source or guide for another hero's project.                                                                                                                                                                                                                                                                                                                       |
-| 83-84  | Before the roll, fire rips through the hero's project source or other materials and threatens to destroy the entire project. If the hero puts out the fire before everything is lost, they find that the fire activated secret notes that double each subsequent project roll for the project.                                                                                                                                                                                                                  |
-| 85-86  | After the roll, a auteur NPC approaches the hero and asks if they would like to make the project "a little more exciting." If the hero agrees, the auteur narrates the hero's progress on the project, prompting another project roll. If the second roll is lower than the first, the hero subtracts the second roll from the original roll. If it's equal or higher, the hero adds the second roll to the original roll.                                                                                      |
-| 87-88  | Before the roll, the hero's rival reluctantly comes seeking the hero's help on their own project. If the hero agrees, the hero makes their project roll toward the rival's project, and the Director makes the rival's project roll toward the hero's project.                                                                                                                                                                                                                                                  |
+| 79-80  | Before the roll, the hero hears a voice beckoning them into the nearest wode to work on their project. Each time the hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in the wode, they make three times the progress but feel more pressure to stay in the wode forever.                                                                                                                                                                                                                                                              |
+| 81-82  | After the roll, the hero stumbles upon knowledge of an expert a day's travel away who could complete the project, and who possesses a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or guide for another hero's project.                                                                                                                                                                                                                                                                                                                       |
+| 83-84  | Before the roll, fire rips through the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials and threatens to destroy the entire project. If the hero puts out the fire before everything is lost, they find that the fire activated secret notes that double each subsequent [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project.                                                                                                                                                                                                                  |
+| 85-86  | After the roll, a auteur NPC approaches the hero and asks if they would like to make the project "a little more exciting." If the hero agrees, the auteur narrates the hero's progress on the project, prompting another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). If the second roll is lower than the first, the hero subtracts the second roll from the original roll. If it's equal or higher, the hero adds the second roll to the original roll.                                                                                      |
+| 87-88  | Before the roll, the hero's rival reluctantly comes seeking the hero's help on their own project. If the hero agrees, the hero makes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the rival's project, and the Director makes the rival's [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the hero's project.                                                                                                                                                                                                                                                  |
 | 89-90  | After the roll, the hero completes their work on the project earlier than expected, and can either relax or go carousing with other heroes who are free. The hero and every character who joins them starts the next encounter with 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).                                                                                                                                                                                                                                                       |
 | 91-92  | Before the roll, the hero is approached by a wagoneer who needs help fixing their wagon. If the hero helps, they find out that the wagoneer is allied with the campaign's villain. If the hero doesn't attack or threaten the wagoneer, then in some future combat, an NPC of the Director's choice turns out to be a friend or relative of the wagoneer. They leave the battle peacefully when they recognize the hero.                                                                                        |
-| 93-94  | After the roll, the project source and any evidence of the project disappear into thin air. Any investigation of the area turns up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
-| 95-96  | After the roll, the hero suddenly no longer understands or comprehends the project source after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its project rolls for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite). If they leave the project alone for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite), they'll be able to comprehend the research again, gaining an automatic breakthrough before the next project roll.                                                                                      |
-| 97-98  | Before the roll, part of the hero's project source or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
-| 99-100 | Before the roll, an elemental springs forth from the project source and pulls the hero into a duel. If the hero can survive 3 rounds of combat with the elemental on their own, the elemental vanishes and leaves behind a completed project. If the hero flees, falls unconscious, or gets help from an ally, the elemental destroys the project source as they disappear.                                                                                                                                     |
+| 93-94  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and any evidence of the project disappear into thin air. Any investigation of the area turns up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
+| 95-96  | After the roll, the hero suddenly no longer understands or comprehends the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite). If they leave the project alone for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite), they'll be able to comprehend the research again, gaining an automatic breakthrough before the next [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                      |
+| 97-98  | Before the roll, part of the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
+| 99-100 | Before the roll, an elemental springs forth from the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and pulls the hero into a duel. If the hero can survive 3 rounds of combat with the elemental on their own, the elemental vanishes and leaves behind a completed project. If the hero flees, falls unconscious, or gets help from an ally, the elemental destroys the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) as they disappear.                                                                                                                                     |
 
 <!-- @type: project -->
 #### Go Undercover
 
-**Item Prerequisite:** Special
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Special
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 15
 
@@ -23598,23 +23598,23 @@ Additionally, while you work to complete this project, you might be called upon 
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Before the roll, an old colleague from the hero's past asks the hero to give up adventuring and come back to their former career. A hero who reaffirms their intent to remain a hero gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). However, if they do so—or if they lie to say they will return to their old career—the project goal increases by 50 points as their old colleague refuses to help them.                                       |
 | 2   | After the roll, the hero is hurt on the job. They end the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                                                                                                                                                 |
-| 3   | Before the roll, the hero stumbles upon an individual seeking guidance about entering the same career as the hero. If the hero forgoes their project roll to help this NPC, the individual becomes one of the hero's followers, which they gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The follower is an artisan or a sage depending on the hero's career, as the Director determines. |
-| 4   | After the roll, the hero finds inspiration from their old life that helps out with a different project they or another hero are currently working on. The hero working on the second project can immediately make a project roll for that project.                                                                                                                                                                    |
-| 5   | Before the roll, the hero stumbles into a negative aspect of their career that they forgot was particularly grueling. If the project roll is 11 or lower, it is halved.                                                                                                                                                                                                                                               |
+| 3   | Before the roll, the hero stumbles upon an individual seeking guidance about entering the same career as the hero. If the hero forgoes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to help this NPC, the individual becomes one of the hero's followers, which they gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The follower is an artisan or a sage depending on the hero's career, as the Director determines. |
+| 4   | After the roll, the hero finds inspiration from their old life that helps out with a different project they or another hero are currently working on. The hero working on the second project can immediately make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that project.                                                                                                                                                                    |
+| 5   | Before the roll, the hero stumbles into a negative aspect of their career that they forgot was particularly grueling. If the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) is 11 or lower, it is halved.                                                                                                                                                                                                                                               |
 | 6   | After the roll, the hero learns rumors of a treasure of the Director's choice that other members of the hero's previous career are seeking. If the hero doesn't seek the treasure ahead of time, they automatically determine where the treasure is to be found when they complete their project.                                                                                                                     |
-| 7   | Before the roll, a vaguely familiar stranger in the same career asks if they can work with the hero on their project. If the hero accepts their help, the stranger makes one project roll for the project with a +2 modifier. Only afterward does the hero learn whether the stranger supports their motivation for working on the project or whether they work for the campaign's villain.                           |
+| 7   | Before the roll, a vaguely familiar stranger in the same career asks if they can work with the hero on their project. If the hero accepts their help, the stranger makes one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project with a +2 modifier. Only afterward does the hero learn whether the stranger supports their motivation for working on the project or whether they work for the campaign's villain.                           |
 | 8   | After the roll, the hero strangely feels 5 years younger. Any character familiar with psionics recognizes the phenomena as a chrono-anomaly. The hero grows younger each time they make progress on the project—but will cease to exist if they complete the project without first finding and stopping the source of the anomaly.                                                                                    |
-| 9   | Before the roll, the hero stumbles upon an old memento from when they worked their former career. They can choose between gaining an automatic breakthrough on the project roll or gaining a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).                                                                                                                                                                                                              |
-| 10  | After the roll, the hero gets back into the rhythm of their former career. They can make two additional project rolls.                                                                                                                                                                                                                                                                                                |
+| 9   | Before the roll, the hero stumbles upon an old memento from when they worked their former career. They can choose between gaining an automatic breakthrough on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) or gaining a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).                                                                                                                                                                                                              |
+| 10  | After the roll, the hero gets back into the rhythm of their former career. They can make two additional [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                                                                                |
 
 <!-- @type: project -->
 #### Hone Career Skills
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
 
@@ -23623,11 +23623,11 @@ You revisit your previous life to freshen up on the experience it provided you. 
 <!-- @type: project -->
 #### Learn From a Master
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** An NPC of a higher level, or records of such an NPC's teachings in a language you know
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** An NPC of a higher level, or records of such an NPC's teachings in a language you know
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic)
 
 **Project Goal:** Varies
 
@@ -23637,15 +23637,15 @@ When you seek to learn from a master, you choose the goal you wish to work on as
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                           |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | After the roll, the hero experiences a revelation and all their training snaps into place. The hero makes two additional project rolls for this project.                                                                                                                                                                                                        |
+| 1   | After the roll, the hero experiences a revelation and all their training snaps into place. The hero makes two additional [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for this project.                                                                                                                                                                                                        |
 | 2   | Before the roll, the master dies midway through training, or the lore they left behind is found to be incomplete. To complete the project, the hero must seek out another master who was trained by the first master, or find another copy of the records of their teaching. Before the roll, the hero discovers that although the master's knowledge is sound, |
-| 3   | they are less adept at the teaching of that knowledge. The project requires an additional 50 project points to complete.                                                                                                                                                                                                                                        |
-| 4   | Before the roll, the master requires the hero's aid with manual labor before their training can begin. The hero must spend this [respite](scc:mcdm.heroes.v1/rule.resource/respite) completing that labor, earning a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for their efforts instead of making a project roll.                                                                                                                         |
-| 5   | Before the roll, the hero must undertake the master's grueling training regimen. The hero rolls an additional d10 for the project roll during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), but at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite), they regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                           |
+| 3   | they are less adept at the teaching of that knowledge. The project requires an additional 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) to complete.                                                                                                                                                                                                                                        |
+| 4   | Before the roll, the master requires the hero's aid with manual labor before their training can begin. The hero must spend this [respite](scc:mcdm.heroes.v1/rule.resource/respite) completing that labor, earning a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for their efforts instead of making a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                         |
+| 5   | Before the roll, the hero must undertake the master's grueling training regimen. The hero rolls an additional d10 for the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) during this [respite](scc:mcdm.heroes.v1/rule.resource/respite), but at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite), they regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                           |
 | 6   | After the roll, the hero's relationship with the master deepens. In addition to the current project, the master provides information relevant to the hero's goals, another project, or a surprising connection to a mystery from the hero's past.                                                                                                               |
 | 7   | Before the roll, the hero discovers that the master has been working with an enemy of the hero by covertly providing them information about the hero's activities. The hero can continue learning from the master, but risks exposing themself and their allies to danger by doing so.                                                                          |
-| 8   | After the roll, an accident, fire, or other natural disaster disrupts the hero's training. The project points rolled for this [respite](scc:mcdm.heroes.v1/rule.resource/respite) are halved, but if the hero acts to stop the disaster, their heroism sees them earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                             |
-| 9   | After the roll, the master gifts the hero with an item prerequisite for a crafting project.                                                                                                                                                                                                                                                                     |
+| 8   | After the roll, an accident, fire, or other natural disaster disrupts the hero's training. The [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) rolled for this [respite](scc:mcdm.heroes.v1/rule.resource/respite) are halved, but if the hero acts to stop the disaster, their heroism sees them earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                             |
+| 9   | After the roll, the master gifts the hero with an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project).                                                                                                                                                                                                                                                                     |
 | 10  | After the roll, the hero uncovers a secret in their studies, something that the master had never anticipated or that their teachings hadn't covered. The project goal is halved.                                                                                                                                                                                |
 
 ###### Learn from Master Project Goals Table
@@ -23671,41 +23671,41 @@ You learn to use one of your heroic abilities more efficiently, reducing its bas
 <!-- @type: project -->
 #### Learn New Language
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** Texts or instruction that teaches the language you want to learn
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or instruction that teaches the language you want to learn
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
-When you start this project, choose a language taught by the project source. When the project is complete, you understand the language.
+When you start this project, choose a language taught by the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). When the project is complete, you understand the language.
 
 <!-- @type: project -->
 #### Learn New Skill
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** Texts or instruction that teaches the skill you want to learn
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or instruction that teaches the skill you want to learn
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
-When you start this project, choose a skill taught by the project source. When the project is complete, you have that skill.
+When you start this project, choose a skill taught by the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). When the project is complete, you have that skill.
 
 <!-- @type: project -->
 #### Perfect New Recipe
 
-**Item Prerequisite:** Varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**Project Source:** A recipe in a language you know, or someone who can tutor you in that recipe
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** A recipe in a language you know, or someone who can tutor you in that recipe
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 100
 
-When you start this project, you choose a recipe for a specific type of dish. The item prerequisite for the project is the ingredients required, which depend on the recipe and which might be difficult to acquire depending on the recipe and its place of origin. You gain a +3 bonus to the project roll if the recipe is one from your culture.
+When you start this project, you choose a recipe for a specific type of dish. The [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for the project is the ingredients required, which depend on the recipe and which might be difficult to acquire depending on the recipe and its place of origin. You gain a +3 bonus to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) if the recipe is one from your culture.
 
 When you complete the project, you can make five servings of food from the recipe as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity whenever you have access to the ingredients. You and other creatures taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you can eat a serving of the food and gain its benefits (see below).
 
@@ -23719,7 +23719,7 @@ A creature can benefit from the food of only one recipe at a time, and can't ben
 
 ###### Recipe Table
 
-| Type of Recipe  | Item Prerequisite                                                     | Benefits           |
+| Type of Recipe  | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                     | Benefits           |
 |-----------------|-----------------------------------------------------------------------|--------------------|
 | Modern          | Common ingredients (flour, carrots, beef, and so forth)               | Hearty             |
 | Vintage or home | Key ingredients (starfruit, kindleseeds, oarfish, and so forth)       | Comforting         |
@@ -23732,17 +23732,17 @@ Not all heroes want to craft or research during their time between adventures. S
 <!-- @type: project -->
 #### Community Service
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Varies
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Varies
 
 **Project Goal:** 75
 
-When you start this project, you must be in a settlement or other location where people gather, and you must be in that same place each time you make a project roll for the project. You can undertake several Community Service projects at the same time, but each one must be in a different community.
+When you start this project, you must be in a settlement or other location where people gather, and you must be in that same place each time you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project. You can undertake several Community Service projects at the same time, but each one must be in a different community.
 
-While undertaking this project, you provide help to people in need, doing odd jobs, tutoring life skills, cleaning streets or public spaces, finding lost valuables, and the like. The Director determines the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that applies to the project roll based on the activities you undertake. When you complete this project, you receive a random consumable treasure of the Director's choice from someone in the community as thanks for your hard work.
+While undertaking this project, you provide help to people in need, doing odd jobs, tutoring life skills, cleaning streets or public spaces, finding lost valuables, and the like. The Director determines the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that applies to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) based on the activities you undertake. When you complete this project, you receive a random [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure of the Director's choice from someone in the community as thanks for your hard work.
 
 ###### Community Service Events Table
 
@@ -23751,31 +23751,31 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 1   | After the roll, the hero's service is recognized by the local nobility or authorities. Upon completion of the project, the hero earns 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                                                                                                                                                                                  |
 | 2   | Before the roll, a mysterious force hinders the work in an unfortunate way, with tools going missing, tutoring materials vanishing, cleaning supplies turning up already filthy, and so forth. The hero can't continue the project until the culprit—a maligned [devil](scc:mcdm.heroes.v1/ancestry/devil) or spirit connected to the hero's past—is identified and dealt with.                                                                                       |
 | 3   | Before the roll, the community is so excited by the project that they join in to lend a hand. The project gains an automatic breakthrough.                                                                                                                                                                                                                                                                                       |
-| 4   | Before the roll, a sympathetic NPC—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 bonus to the project roll.                                                                                                                                                                                                                                         |
-| 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the project roll. |
-| 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all project rolls they make are halved.                                                                                                                                                                                                                                                                       |
+| 4   | Before the roll, a sympathetic NPC—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 bonus to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                         |
+| 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). |
+| 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) they make are halved.                                                                                                                                                                                                                                                                       |
 | 7   | After the roll, a saint blesses the hero's work. The hero feels supernaturally rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
-| 8   | Before the roll, the hero becomes aware of a previously unknown radenwight warren within the community, which has the potential to become a point of tension and conflict. The hero must engage with the radenwights and other locals to create understanding between the two communities or take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the project roll.                                                                                                    |
+| 8   | Before the roll, the hero becomes aware of a previously unknown radenwight warren within the community, which has the potential to become a point of tension and conflict. The hero must engage with the radenwights and other locals to create understanding between the two communities or take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                    |
 | 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the [respite](scc:mcdm.heroes.v1/rule.resource/respite)) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
 | 10  | Before the roll, a thief, assassin, or other criminal offers to assist the hero. They can offer 50 points toward the completion of the project, as long as the hero looks the other way if they ever cross paths again.                                                                                                                                                                                                          |
 
 <!-- @type: project -->
 #### Fishing
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** Varies
 
-Whether for sustenance, relaxation, or bragging rights, you've gone fishing, provided you are near a body of water. The project roll for this project has the following changes:
+Whether for sustenance, relaxation, or bragging rights, you've gone fishing, provided you are near a body of water. The [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for this project has the following changes:
 
-- The project points earned by your roll represent the relative size of the fish (or some other fishlike creature) you catch.
-- During each [respite](scc:mcdm.heroes.v1/rule.resource/respite) when you undertake this activity, you continue making project rolls until you obtain a tier 1 outcome (indicating that a fish got away, earning you no points) or a breakthrough.
-- When you obtain a breakthrough, the Director rolls on the Fishing Events table rather than you gaining points from the roll and making another project roll.
-- When you've made your last Fishing project roll for the [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend the project points you accrued on a reward from the Tackle table. Any points you don't spend during the current [respite](scc:mcdm.heroes.v1/rule.resource/respite) are lost.
+- The [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) earned by your roll represent the relative size of the fish (or some other fishlike creature) you catch.
+- During each [respite](scc:mcdm.heroes.v1/rule.resource/respite) when you undertake this activity, you continue making [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) until you obtain a tier 1 outcome (indicating that a fish got away, earning you no points) or a breakthrough.
+- When you obtain a breakthrough, the Director rolls on the Fishing Events table rather than you gaining points from the roll and making another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).
+- When you've made your last Fishing [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can spend the [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) you accrued on a reward from the Tackle table. Any points you don't spend during the current [respite](scc:mcdm.heroes.v1/rule.resource/respite) are lost.
 
 ##### Tackle Table
 
@@ -23783,16 +23783,16 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 |-------------------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hearty meal (1 serving) | 50   | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). A creature can benefit from only one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time.                                                                                                       |
 | Great meal (1 serving)  | 100  | A creature who eats a serving of a meal prepared with the fish caught during the project increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
-| Better tackle           | 120  | You gain the following title and benefit. <br/>**Angler:** You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on Fishing project rolls.                                                                                                                                                                                                                                                                                                     |
+| Better tackle           | 120  | You gain the following title and benefit. <br/>**Angler:** You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on Fishing [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                                                                                     |
 | Fishing event           | 200  | You roll on the Fishing Events table.                                                                                                                                                                                                                                                                                                                                                                     |
-| Legendary fisher        | 300  | You gain the following title and benefit. <br/>**Goldenrod:** Each time you undertake the Fishing project, you can reroll one project roll.                                                                                                                                                                                                                                                               |
+| Legendary fisher        | 300  | You gain the following title and benefit. <br/>**Goldenrod:** Each time you undertake the Fishing project, you can reroll one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                                               |
 
 ###### Fishing Events Table
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | While fishing, the hero reels in a talking fish. The fish informs the hero of any events that have occurred within 10 squares of the body of water where they were caught over the last week, or provides one piece of Forbidden Knowledge (see the Discover Lore project), as the Director determines.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| 2   | While fishing, the hero reels in a note in a bottle. The note is written in Anjali and binds the reader into a deal with a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil) if read out loud. This gives the [devil](scc:mcdm.heroes.v1/ancestry/devil) ownership of the reader's soul in exchange for rolling an additional d10 on all future Fishing project rolls.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 2   | While fishing, the hero reels in a note in a bottle. The note is written in Anjali and binds the reader into a deal with a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil) if read out loud. This gives the [devil](scc:mcdm.heroes.v1/ancestry/devil) ownership of the reader's soul in exchange for rolling an additional d10 on all future Fishing [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 3   | While the hero is fishing, passersby inform them of a rumor of a magic fishing rod that allows the fisher to double the size of the fish they reel in. The Director can decide whether the rumor is true, and if so, where the rod might be found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | 4   | While fishing, the hero reels in an **angulotl daybringer** (see *Draw Steel:  Monsters*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and gains 25 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | 5   | While fishing, the hero reels in half of a mysterious ancient treasure of the Director's choice. If the other half is found, both halves magically meld together to restore the treasure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -23805,30 +23805,30 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 <!-- @type: project -->
 #### Spend Time With Loved Ones
 
-**Item Prerequisite:** None
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**Project Source:** None
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 60
 
-You revitalize your spirit by spending time with people you love who you haven't seen in a long while. You must be able to communicate with those people to undertake this project or make project rolls for it. When you complete this project, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 12 + your level until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and you can't start another Spend Time With Loved Ones project for a month.
+You revitalize your spirit by spending time with people you love who you haven't seen in a long while. You must be able to communicate with those people to undertake this project or make [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for it. When you complete this project, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 12 + your level until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite), and you can't start another Spend Time With Loved Ones project for a month.
 
 ###### Spend Time With Loved Ones Events Table
 
 | d10 | Event                                                                                                                                                                                                                                                                                                                                                                           |
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Before the roll, the hero is presented with an heirloom, artifact, or secret that aids another project they've undertaken or want to undertake. They can immediately make a project roll for that project as well as for this one.                                                                                                                                              |
-| 2   | Before the roll, the hero's people embrace their loved one's companions as their own. Additional party members can make one project roll each for this project without doing so as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. When the project is completed, each character who contributed a project roll gains the benefit of completion.                                                            |
+| 1   | Before the roll, the hero is presented with an heirloom, artifact, or secret that aids another project they've undertaken or want to undertake. They can immediately make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that project as well as for this one.                                                                                                                                              |
+| 2   | Before the roll, the hero's people embrace their loved one's companions as their own. Additional party members can make one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) each for this project without doing so as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. When the project is completed, each character who contributed a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) gains the benefit of completion.                                                            |
 | 3   | Before the roll, the hero's enemies track them to the home or community of their loved ones. These enemies immediately launch an attack, hoping to catch the hero off guard.                                                                                                                                                                                                    |
 | 4   | After the roll, the hero learns that a distant friend or family member has joined the cause of their enemies. Their loved ones plead with the hero to bring this person back home safely.                                                                                                                                                                                       |
-| 5   | After the roll, a loved one gives the hero a consumable treasure to aid them in their travels.                                                                                                                                                                                                                                                                                  |
+| 5   | After the roll, a loved one gives the hero a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure to aid them in their travels.                                                                                                                                                                                                                                                                                  |
 | 6   | After the roll, the hero's loved ones share that they have been subjected to a curse. The only way to lift the curse is by returning an heirloom to its place of origin.                                                                                                                                                                                                        |
 | 7   | Before the roll, the hero meets an old friend who is a more experienced adventurer. They offer to mentor the hero in exchange for a treasure or favor. If the hero accepts, they also complete the Learn From a Master project when this project is complete, with the Director choosing the NPC's class.                                                                       |
 | 8   | Before the roll, the hero discovers that by returning, they've put the community surrounding their loved ones in danger, either with the authorities or an opposing power in the region. To complete the project, the hero needs to earn the trust of that community.                                                                                                           |
-| 9   | After the roll, the hero learns that spending time with loved ones isn't always as rejuvenating as one hopes. Completing the project requires an additional 20 project points thanks to difficult friends or relatives.                                                                                                                                                         |
-| 10  | Before the roll, the hero's loved ones ask if the hero would like to cook with them. If the hero accepts, they can apply their project roll both to this project and to the Perfect New Recipe project. If the hero is not currently undertaking the Perfect New Recipe project, they start that project and their loved ones provide the item prerequisite and project source. |
+| 9   | After the roll, the hero learns that spending time with loved ones isn't always as rejuvenating as one hopes. Completing the project requires an additional 20 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) thanks to difficult friends or relatives.                                                                                                                                                         |
+| 10  | Before the roll, the hero's loved ones ask if the hero would like to cook with them. If the hero accepts, they can apply their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) both to this project and to the Perfect New Recipe project. If the hero is not currently undertaking the Perfect New Recipe project, they start that project and their loved ones provide the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). |
 
 <!-- @type: chapter | @id: rewards -->
 # Rewards
@@ -23844,31 +23844,31 @@ Treasures are the supernatural items that heroes find on their adventures, or th
 
 Treasures come in all shapes and sizes, and are broken down into four types.
 
-**Consumables** are the most numerous treasures. These include potions, dusts, and other items that are consumed by you when you activate them. Most consumables can be used only once!
+**[Consumables](scc:mcdm.heroes.v1/rule.treasure/consumable)** are the most numerous treasures. These include potions, dusts, and other items that are consumed by you when you activate them. Most [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) can be used only once!
 
-**Trinkets** are treasures with supernatural properties that never fade. These include magic bags, boots, cloaks, gloves, jewelry, and other oddities.
+**[Trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket)** are treasures with supernatural properties that never fade. These include magic bags, boots, cloaks, gloves, jewelry, and other oddities.
 
-**Leveled treasures** are treasures that become even more powerful in the hands of a higher-level hero. They connect with their user, building a bond that fuels the item's supernatural power. Armor, implements, and weapons are the most common types of leveled treasure.
+**[Leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure)** are treasures that become even more powerful in the hands of a higher-level hero. They connect with their user, building a bond that fuels the item's supernatural power. Armor, implements, and weapons are the most common types of [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure).
 
 **Artifacts** are treasures of legendary power that can change or shape an adventure—or even an entire campaign. Each of these game-breaking items is unique, highly coveted, and well guarded.
 
 ### Found, Earned, or Crafted
 
-The rules of the game account for worlds where the average person sometimes even the average noble—doesn't have regular access to treasures. There might be an apothecary in the capital city of a region, but they're selling herbal remedies, not supernatural potions. In Vasloria, a town blacksmith isn't selling magic maces, and the local tailor doesn't make psionic capes. There simply aren't enough treasures readily available to create a good trade economy. Word sometimes gets around of mysterious clubs where heroes and treasure seekers can meet up to swap items, but the constant threat of thieves makes such markets difficult to find.
+The rules of the game account for worlds where the average person sometimes even the average noble—doesn't have regular access to treasures. There might be an apothecary in the capital city of a region, but they're selling herbal remedies, not supernatural potions. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), a town blacksmith isn't selling magic maces, and the local tailor doesn't make psionic capes. There simply aren't enough treasures readily available to create a good trade economy. Word sometimes gets around of mysterious clubs where heroes and treasure seekers can meet up to swap items, but the constant threat of thieves makes such markets difficult to find.
 
 Most treasures are found as part of adventures. Many people concoct dastardly schemes, but only those with the will and power to enact that vision become villains—and acquiring treasures of great power is often part of a villain's plans. As such, the heroes who vanquish those evildoers often get to claim those treasures for themselves. At
 
 other times, generous and well-off individuals such as monarchs and powerful mages can reward treasures as thanks for heroic deeds.
 
-Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their item prerequisite, project source, project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal (the number of project points needed to complete the project) noted in their descriptions.
+Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite), [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal (the number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) needed to complete the project) noted in their descriptions.
 
 #### What Does This Treasure Do?
 
 When a hero finds a treasure, they learn its properties if they examine it for 5 uninterrupted minutes, unless the item's description says otherwise.
 
-> **Treasure Item Prerequisite**
+> **Treasure [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)**
 >
-> Each treasure has an item prerequisite necessary for crafting it. The exact nature of many of the materials used as an item's prerequisite is left nebulous so that the Director can more easily work those materials into a campaign. What's a mindspider, and how rare is their silk? That's for the Director to decide, whether they want to drop prerequisite items into their planned adventures or craft an entire side quest around finding them.
+> Each treasure has an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) necessary for crafting it. The exact nature of many of the materials used as an item's prerequisite is left nebulous so that the Director can more easily work those materials into a campaign. What's a mindspider, and how rare is their silk? That's for the Director to decide, whether they want to drop prerequisite items into their planned adventures or craft an entire side quest around finding them.
 
 #### Wearing Treasures
 
@@ -23900,7 +23900,7 @@ The Magic and Psionic keywords for treasures refer to how those treasures are cr
 
 #### Stamina Bonuses and Damage Bonuses
 
-If two treasures give a creature a bonus to their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or a bonus to the rolled damage of their abilities, only the higher bonus applies unless the treasure's description notes otherwise. [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonuses and damage bonuses from consumables ignore this rule, and can be stacked with other [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonuses and damage bonuses granted by treasures.
+If two treasures give a creature a bonus to their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or a bonus to the rolled damage of their abilities, only the higher bonus applies unless the treasure's description notes otherwise. [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonuses and damage bonuses from [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) ignore this rule, and can be stacked with other [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonuses and damage bonuses granted by treasures.
 
 <!-- @type: rule | @group: treasure | @id: consumable -->
 ### Consumables
@@ -23923,7 +23923,7 @@ Your character can carry any number of consumables at a time.
 >
 > Skills, [tests](scc:mcdm.heroes.v1/rule.test/test): Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
-> Item creation rules, crafting and research projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
+> Item creation rules, crafting and [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project): Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
 > Main actions and maneuvers, creature [size](scc:mcdm.heroes.v1/rule.character/size), damage and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 >
@@ -23932,7 +23932,7 @@ Your character can carry any number of consumables at a time.
 <!-- @type: treasure-group | @echelon: 1 | @treasure-type: consumable -->
 #### 1st-Echelon Consumables
 
-This section presents 1st-echelon consumable treasures in alphabetical order.
+This section presents 1st-echelon [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Black Ash Dart
@@ -23941,11 +23941,11 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** Three vials of black ash from the College of Black Ash
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Three vials of black ash from the College of Black Ash
 
-**Project Source:** Texts or lore in Szetch
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Szetch
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d3 darts, or three darts if crafted by a shadow)
 
@@ -23962,11 +23962,11 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Potion, Psionic
 
-**Item Prerequisite:** A ruby purloined from a vampire
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A ruby purloined from a vampire
 
-**Project Source:** Texts or lore in Proto-Ctholl
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Proto-Ctholl
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
@@ -23979,11 +23979,11 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic, Oil
 
-**Item Prerequisite:** An ounce of demon honey
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of demon honey
 
-**Project Source:** Texts or lore in Kalliak
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Kalliak
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -23996,11 +23996,11 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** An ounce of witherite crystal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of witherite crystal
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24013,11 +24013,11 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic, Oil
 
-**Item Prerequisite:** One vial of fire giant blood
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One vial of fire giant blood
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24034,11 +24034,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** A half-pound of seagrass
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A half-pound of seagrass
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24051,11 +24051,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** An ounce of costmary leaves
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of costmary leaves
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24068,11 +24068,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** One imp's tongue
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One imp's tongue
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24085,11 +24085,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A leftover carcass of a lachomp meal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A leftover carcass of a lachomp meal
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d3 teeth)
 
@@ -24106,11 +24106,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** Three sheets of glass, sunbaked gold dust
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Three sheets of glass, sunbaked gold dust
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24123,11 +24123,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A strip of starmetal coated in the blood of the item's crafter
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A strip of starmetal coated in the blood of the item's crafter
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
@@ -24142,23 +24142,23 @@ While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) t
 
 **Keywords:** Magic
 
-**Item Prerequisite:** A cup of rainwater from a sacred fey grove, plus an optional prerequisite (see below)
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A cup of rainwater from a sacred fey grove, plus an optional prerequisite (see below)
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 30 or 45 (see below)
 
 **Effect:** As a maneuver, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 cube of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.
 
-Enterprising mages within various thieves' guilds have developed variations of the Portable Cloud. Each variation has a secondary item prerequisite and a project goal of 45.
+Enterprising mages within various thieves' guilds have developed variations of the Portable Cloud. Each variation has a secondary [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and a project goal of 45.
 
 **Noxious Cloud:** Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-smelling mist when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 poison damage. Additionally, any creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) while in the fog.
 
-**Item Prerequisite:** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 cube of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 cube of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
 
-**Item Prerequisite:** A spool of copper wire.
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A spool of copper wire.
 
 <!-- @type: treasure -->
 ##### Professor Veratismo's Quaff 'n Huff Snuff
@@ -24167,11 +24167,11 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Keywords:** Potion, Psionic
 
-**Item Prerequisite:** The roots of a just-budded nightshade
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The roots of a just-budded nightshade
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
@@ -24184,11 +24184,11 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Keywords:** Magic
 
-**Item Prerequisite:** Fifty snapdragon seeds
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Fifty snapdragon seeds
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d6 + 1 snapdragons)
 
@@ -24197,7 +24197,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 <!-- @type: treasure-group | @echelon: 2 | @treasure-type: consumable -->
 #### 2nd-Echelon Consumables
 
-This section presents 2nd-echelon consumable treasures in alphabetical order.
+This section presents 2nd-echelon [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Breath of Dawn
@@ -24206,11 +24206,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** The breath of a mystic sage captured at sunrise
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The breath of a mystic sage captured at sunrise
 
-**Project Source:** Texts or lore in Hyrallic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90
 
@@ -24223,11 +24223,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** One vial of pure bovine essence
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One vial of pure bovine essence
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24240,11 +24240,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** A chocolate made by a gnome confectioner
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A chocolate made by a gnome confectioner
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24257,11 +24257,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Potion, Psionic
 
-**Item Prerequisite:** An ounce of sap from a tree damaged by psionic fire
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of sap from a tree damaged by psionic fire
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24274,11 +24274,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** Several strands of hag hair
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Several strands of hag hair
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90 (yields 1d3 vials)
 
@@ -24291,11 +24291,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Potion, Psionic
 
-**Item Prerequisite:** A cup of algae from glacial water
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A cup of algae from glacial water
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90 (yields 1d3 doses)
 
@@ -24308,11 +24308,11 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Magic, Scroll
 
-**Item Prerequisite:** A sheet of paper infused with the dust of a painite
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A sheet of paper infused with the dust of a painite
 
-**Project Source:** Texts or lore in the First Language
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90
 
@@ -24327,11 +24327,11 @@ A creature with a willing soul returns to life at the end of the [respite](scc:m
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A shard of prismacore, an ounce of ferrous metal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A shard of prismacore, an ounce of ferrous metal
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24350,11 +24350,11 @@ If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object adjacent 
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A signed agreement with a ghost, a large obsidian disk
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A signed agreement with a ghost, a large obsidian disk
 
-**Project Source:** Texts or lore in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24363,7 +24363,7 @@ If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object adjacent 
 <!-- @type: treasure-group | @echelon: 3 | @treasure-type: consumable -->
 #### 3rd-Echelon Consumables
 
-This section presents 3rd-echelon consumable treasures in alphabetical order.
+This section presents 3rd-echelon [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Anamorphic Larva
@@ -24372,11 +24372,11 @@ This section presents 3rd-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A grub steeped in voiceless talker bile
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A grub steeped in voiceless talker bile
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24391,11 +24391,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** A month's lifespan from the creator or another willing creature, ground sapphire
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A month's lifespan from the creator or another willing creature, ground sapphire
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24408,11 +24408,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Magic
 
-**Item Prerequisite:** One vial of archdevil's blood, an expired contract
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One vial of archdevil's blood, an expired contract
 
-**Project Source:** Texts or lore in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24425,11 +24425,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Magic
 
-**Item Prerequisite:** A brief period of contact with the creature the effigy is tied to
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A brief period of contact with the creature the effigy is tied to
 
-**Project Source:** Texts or lore in Khemharic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khemharic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
@@ -24442,11 +24442,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** An ounce of scrapings from a coven's used cauldron
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of scrapings from a coven's used cauldron
 
-**Project Source:** Texts in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24459,11 +24459,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A time crystal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A time crystal
 
-**Project Source:** Texts or lore in Voll
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24480,11 +24480,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A small quartz
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A small quartz
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24497,11 +24497,11 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Keywords:** Potion, Psionic
 
-**Item Prerequisite:** An ounce of troll's blood, raw honey
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of troll's blood, raw honey
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24510,7 +24510,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 <!-- @type: treasure-group | @echelon: 4 | @treasure-type: consumable -->
 #### 4th-Echelon Consumables
 
-This section presents 4th-echelon consumable treasures in alphabetical order.
+This section presents 4th-echelon [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Breath of Creation
@@ -24519,11 +24519,11 @@ This section presents 4th-echelon consumable treasures in alphabetical order.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** The captured breath of a god, an ounce of condensed dreams
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The captured breath of a god, an ounce of condensed dreams
 
-**Project Source:** Texts or lore in the First Language
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24538,11 +24538,11 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 **Keywords:** Magic, Potion
 
-**Item Prerequisite:** An ounce of the blood of Saint Elspeth
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of the blood of Saint Elspeth
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24555,13 +24555,13 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 **Keywords:** Magic
 
-**Item Prerequisite:** One vial of sacred ink, blessed parchment
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One vial of sacred ink, blessed parchment
 
-**Project Source:** Reference materials in the First Language from the
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Reference materials in the First Language from the
 
 Infinite Library detailing incomplete instructions for building a sun
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 360
 
@@ -24574,11 +24574,11 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Keywords:** Magic
 
-**Item Prerequisite:** A year's lifespan from the creator or another willing creature, the laughter of a young hero
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A year's lifespan from the creator or another willing creature, the laughter of a young hero
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24589,12 +24589,12 @@ Infinite Library detailing incomplete instructions for building a sun
 
 Trinkets are treasures that can be used at will without a reduction in their [potency](scc:mcdm.heroes.v1/rule.character/potency). They generally provide a small benefit, such as allowing you to see farther or become a bit better at picking locks.
 
-Like consumables, trinket treasures are organized by echelon. You can carry any number of trinkets.
+Like [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable), trinket treasures are organized by echelon. You can carry any number of trinkets.
 
 <!-- @type: treasure-group | @echelon: 1 | @treasure-type: trinket -->
 #### 1st-Echelon Trinkets
 
-This section presents 1st-echelon trinket treasures in alphabetical order.
+This section presents 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Color Cloak (Blue)
@@ -24603,11 +24603,11 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Magic, Neck
 
-**Item Prerequisite:** A pint of blue ichor, soul chalk
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A pint of blue ichor, soul chalk
 
-**Project Source:** Licensing agreements in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24622,11 +24622,11 @@ Additionally, when you are targeted by any effect that deals cold damage, you ca
 
 **Keywords:** Magic, Neck
 
-**Item Prerequisite:** A pint of red ichor, soul chalk
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A pint of red ichor, soul chalk
 
-**Project Source:** Licensing agreements in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24641,11 +24641,11 @@ Additionally, when you are targeted by any effect that deals fire damage, you ca
 
 **Keywords:** Magic, Neck
 
-**Item Prerequisite:** A pint of yellow ichor, soul chalk
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A pint of yellow ichor, soul chalk
 
-**Project Source:** Licensing agreements in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24660,11 +24660,11 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Keywords:** Magic
 
-**Item Prerequisite:** One humanoid femur, one bar of lead laced with starmetal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One humanoid femur, one bar of lead laced with starmetal
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24677,11 +24677,11 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Keywords:** Arms, Psionic
 
-**Item Prerequisite:** Petrified wood from a tree that has not been observed since falling
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Petrified wood from a tree that has not been observed since falling
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
@@ -24694,11 +24694,11 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Keywords:** Magic
 
-**Item Prerequisite:** Three withered mundane vines, a tree's blessing
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Three withered mundane vines, a tree's blessing
 
-**Project Source:** Songs in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Songs in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 150
 
@@ -24711,11 +24711,11 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Keywords:** Hands, Psionic
 
-**Item Prerequisite:** A humanoid's shadow disconnected from its source
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A humanoid's shadow disconnected from its source
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
@@ -24730,11 +24730,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Keywords:** Hands, Magic
 
-**Item Prerequisite:** Ten gecko tails
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Ten gecko tails
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24747,11 +24747,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Keywords:** Head, Magic
 
-**Item Prerequisite:** One broken contract, one ingot of steel
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One broken contract, one ingot of steel
 
-**Project Source:** Texts or lore in Anjali and Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Anjali and Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
@@ -24764,11 +24764,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Keywords:** Head, Magic
 
-**Item Prerequisite:** One used death shroud
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One used death shroud
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24781,11 +24781,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Keywords:** Magic
 
-**Item Prerequisite:** One uncut opal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One uncut opal
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24798,11 +24798,11 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Keywords:** Feet, Magic
 
-**Item Prerequisite:** One battered gold chain of at least fifty links
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One battered gold chain of at least fifty links
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24811,7 +24811,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 <!-- @type: treasure-group | @echelon: 2 | @treasure-type: trinket -->
 #### 2nd-Echelon Trinkets
 
-This section presents 2nd-echelon trinket treasures in alphabetical order.
+This section presents 2nd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bastion Belt
@@ -24820,11 +24820,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Magic, Waist
 
-**Item Prerequisite:** A giant's tooth
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A giant's tooth
 
-**Project Source:** Texts or lore in High Kuric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in High Kuric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24837,11 +24837,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Neck, Psionic
 
-**Item Prerequisite:** An eyeball from a pirate captain who drowned at sea
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An eyeball from a pirate captain who drowned at sea
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24854,11 +24854,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Head, Psionic
 
-**Item Prerequisite:** One measure of pure crystal, a jarred memory of true joy
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One measure of pure crystal, a jarred memory of true joy
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24871,11 +24871,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** The finger bone of a creature with telepathy, three black opals
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The finger bone of a creature with telepathy, three black opals
 
-**Project Source:** Texts or lore in Ullorvic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Ullorvic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24888,11 +24888,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Head, Psionic
 
-**Item Prerequisite:** The gold nib of a fountain pen used to sign a major treaty or compact, a ruby once worn by a [devil](scc:mcdm.heroes.v1/ancestry/devil)
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The gold nib of a fountain pen used to sign a major treaty or compact, a ruby once worn by a [devil](scc:mcdm.heroes.v1/ancestry/devil)
 
-**Project Source:** Texts or lore in Hyrallic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 300
 
@@ -24905,11 +24905,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Magic, Neck
 
-**Item Prerequisite:** A gallon of swamp water, the limbs of four different newts
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A gallon of swamp water, the limbs of four different newts
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24922,11 +24922,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Psionic
 
-**Item Prerequisite:** A piece of polished obsidian, seven flawless pea-sized diamonds
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A piece of polished obsidian, seven flawless pea-sized diamonds
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24939,11 +24939,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** A coin minted during an earthquake
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A coin minted during an earthquake
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24958,7 +24958,7 @@ The coin must be picked up before it can be used again. If any creature picks up
 <!-- @type: treasure-group | @echelon: 3 | @treasure-type: trinket -->
 #### 3rd-Echelon Trinkets
 
-This section presents 3rd-echelon trinket treasures in alphabetical order.
+This section presents 3rd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bracers of Strife
@@ -24967,11 +24967,11 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Arms, Magic
 
-**Item Prerequisite:** The severed hand of a giant
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The severed hand of a giant
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -24984,11 +24984,11 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Head, Magic
 
-**Item Prerequisite:** An overmind egg, the skin of any shapeshifter
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An overmind egg, the skin of any shapeshifter
 
-**Project Source:** Texts or lore in the First Language
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25003,11 +25003,11 @@ While the eyes circle your head, you can use a maneuver to launch up to three of
 
 **Keywords:** Head, Psionic
 
-**Item Prerequisite:** A spool of mindspider silk, an ingot of white gold
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A spool of mindspider silk, an ingot of white gold
 
-**Project Source:** Texts or lore in Higaran
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Higaran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25032,11 +25032,11 @@ Additionally, you have the following ability.
 
 **Keywords:** Psionic, Ring
 
-**Item Prerequisite:** A wafer of gallium arsenide
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A wafer of gallium arsenide
 
-**Project Source:** Texts or lore in Mindspeech
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Mindspeech
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25067,11 +25067,11 @@ Additionally, you have the following ability.
 
 **Keywords:** Psionic, Ring
 
-**Item Prerequisite:** One-third of a pound of diamond dust, one nugget of pure silver
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One-third of a pound of diamond dust, one nugget of pure silver
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25080,7 +25080,7 @@ Additionally, you have the following ability.
 <!-- @type: treasure-group | @echelon: 4 | @treasure-type: trinket -->
 #### 4th-Echelon Trinkets
 
-This section presents 4th-echelon trinket treasures in alphabetical order.
+This section presents 4th-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) treasures in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Gravekeeper's Lantern
@@ -25089,11 +25089,11 @@ This section presents 4th-echelon trinket treasures in alphabetical order.
 
 **Keywords:** Magic
 
-**Item Prerequisite:** The powdered jawbone of a powerful spellcaster, wood from a tree marking multiple graves
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The powdered jawbone of a powerful spellcaster, wood from a tree marking multiple graves
 
-**Project Source:** Texts or lore in Hyrallic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 600
 
@@ -25112,11 +25112,11 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 
 **Keywords:** Arms, Psionic
 
-**Item Prerequisite:** Steel alloy, one fine-cut topaz
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Steel alloy, one fine-cut topaz
 
-**Project Source:** Texts or lore in Mindspeech
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Mindspeech
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 600
 
@@ -25125,25 +25125,25 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 <!-- @type: rule | @group: treasure | @id: leveled-treasure -->
 ### Leveled Treasures
 
-Like trinkets, leveled treasures can be used at will without a reduction in [potency](scc:mcdm.heroes.v1/rule.character/potency). However, leveled treasures tap into their wielder's will in a way that trinkets don't, becoming more powerful and increasing their capabilities as you gain new levels.
+Like [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket), leveled treasures can be used at will without a reduction in [potency](scc:mcdm.heroes.v1/rule.character/potency). However, leveled treasures tap into their wielder's will in a way that [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) don't, becoming more powerful and increasing their capabilities as you gain new levels.
 
 #### Leveled Benefits
 
-Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/treasures) are cumulative.
+Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/treasures) are cumulative.
 
 #### Carry Three Safely
 
-Your connection with leveled treasures doesn't just make them useful. It also makes them dangerous. Each leveled treasure is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three leveled treasures at a time. If you carry more leveled treasures, those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
+Your connection with [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) doesn't just make them useful. It also makes them dangerous. Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) at a time. If you carry more [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
 
-It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each [respite](scc:mcdm.heroes.v1/rule.resource/respite):
+It's fine to own or possess more than three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), as long as the extras are stored away or in the possession of other creatures. But if you carry more than three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each [respite](scc:mcdm.heroes.v1/rule.resource/respite):
 
-- **≤11:** One of your leveled treasures (chosen by the Director) grabs hold of your psyche. It forces you to sleepwalk or otherwise enter an active fugue state and discard the rest of your leveled treasures in locations you can't remember. If you want those items back, you'd better get looking before someone else finds them.
+- **≤11:** One of your [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) (chosen by the Director) grabs hold of your psyche. It forces you to sleepwalk or otherwise enter an active fugue state and discard the rest of your [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in locations you can't remember. If you want those items back, you'd better get looking before someone else finds them.
 - **12-16:** Your items work together to prevent you from moving until you pick three items and leave the rest behind.
 - **17+:** Nothing happens.
 
 > **You Don't Need Three**
 >
-> Because you can carry up to three leveled treasures safely, it's easy to assume that your hero should always seek out and carry three such treasures. The truth is that many heroes find carrying just one or two leveled treasures a perfect thematic and mechanical fit, and have no real need for more. That's totally fine! You'll still be super powerful with just one leveled treasure, especially if you obtain or craft trinkets and consumables that might serve you better.
+> Because you can carry up to three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) safely, it's easy to assume that your hero should always seek out and carry three such treasures. The truth is that many heroes find carrying just one or two [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) a perfect thematic and mechanical fit, and have no real need for more. That's totally fine! You'll still be super powerful with just one [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), especially if you obtain or craft [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) and [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) that might serve you better.
 
 <!-- @type: treasure-group | @treasure-type: armor -->
 #### Leveled Armor Treasures
@@ -25157,11 +25157,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Light Armor, Magic
 
-**Item Prerequisite:** Five rabid honey badger pelts, the quills of a hedgehog
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Five rabid honey badger pelts, the quills of a hedgehog
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25178,11 +25178,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Heavy Armor, Magic
 
-**Item Prerequisite:** A set of wings from a [flying](scc:mcdm.heroes.v1/movement/fly) carp, a set of chain mail rusted by seawater
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A set of wings from a [flying](scc:mcdm.heroes.v1/movement/fly) carp, a set of chain mail rusted by seawater
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25199,11 +25199,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Magic, Medium Armor
 
-**Item Prerequisite:** A giant scarab beetle carapace
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A giant scarab beetle carapace
 
-**Project Source:** Texts or lore in Phaedran
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Phaedran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25220,11 +25220,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Magic, Shield
 
-**Item Prerequisite:** A ballad of heroism, two ingots of sunmetal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A ballad of heroism, two ingots of sunmetal
 
-**Project Source:** Songs in High Rhyvian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Songs in High Rhyvian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25241,11 +25241,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Medium Armor, Psionic
 
-**Item Prerequisite:** The eyes of a [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) who died valiantly in battle
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The eyes of a [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) who died valiantly in battle
 
-**Project Source:** Texts or lore in Voll
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25262,11 +25262,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Light Armor, Magic
 
-**Item Prerequisite:** Ten pages from each of a hundred different books
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Ten pages from each of a hundred different books
 
-**Project Source:** Texts or lore in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25283,11 +25283,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Light Armor, Psionic
 
-**Item Prerequisite:** The will of a deceased person with no heirs
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The will of a deceased person with no heirs
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25304,11 +25304,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Heavy Armor, Magic
 
-**Item Prerequisite:** Ten steel gears from an ancient construct
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Ten steel gears from an ancient construct
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25325,11 +25325,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Heavy Armor, Psionic
 
-**Item Prerequisite:** A large vessel of astral ice, a pint of supercooled mercury
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A large vessel of astral ice, a pint of supercooled mercury
 
-**Project Source:** Texts or lore in Voll
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25346,11 +25346,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Keywords:** Psionic, Shield
 
-**Item Prerequisite:** Three ingots of steel, six crystals that resonate with psionic power
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Three ingots of steel, six crystals that resonate with psionic power
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25372,11 +25372,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Implement, Magic
 
-**Item Prerequisite:** A diamond ring
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A diamond ring
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25393,11 +25393,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Psionic, Wand
 
-**Item Prerequisite:** A handful of shattered quartz
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A handful of shattered quartz
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25414,11 +25414,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Implement, Magic
 
-**Item Prerequisite:** An ounce of primordial ice, an ounce of mammoth-ivory shards
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of primordial ice, an ounce of mammoth-ivory shards
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25435,11 +25435,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Implement, Psionic
 
-**Item Prerequisite:** Incense distilled from the essence of ether
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Incense distilled from the essence of ether
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25456,11 +25456,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Implement, Psionic
 
-**Item Prerequisite:** Two clear lenses carved from volcanic glass
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Two clear lenses carved from volcanic glass
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25477,11 +25477,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Keywords:** Implement, Magic
 
-**Item Prerequisite:** Written permission from a [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) magistrate
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Written permission from a [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) magistrate
 
-**Project Source:** Texts or lore in Hyrallic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25503,11 +25503,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Psionic, Whip
 
-**Item Prerequisite:** A lash used to punish a mutineer
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A lash used to punish a mutineer
 
-**Project Source:** Texts or lore in Khelt
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25515,7 +25515,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **5th Level:** The weapon's damage bonus increases to +2. Additionally, you and each ally within 2 squares of you gains a +1 bonus to saving throws.
 
-**9th Level:** The weapon's damage bonus increases to +3. Additionally, you no longer need to use a maneuver to end one effect when you damage a creature with the weapon. The weapon also refuses to vie for control of your psyche, and no longer counts against the limit of leveled treasures you can carry safely.
+**9th Level:** The weapon's damage bonus increases to +3. Additionally, you no longer need to use a maneuver to end one effect when you damage a creature with the weapon. The weapon also refuses to vie for control of your psyche, and no longer counts against the limit of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) you can carry safely.
 
 <!-- @type: treasure -->
 ##### Blade of Quintessence
@@ -25524,11 +25524,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Magic, Medium Weapon
 
-**Item Prerequisite:** A ruby hardened in the fires of the City of Brass, a sapphire that has been struck by lightning
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A ruby hardened in the fires of the City of Brass, a sapphire that has been struck by lightning
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450 
 
@@ -25545,11 +25545,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Light Weapon, Magic
 
-**Item Prerequisite:** A personal blessing from the greatest duelist in the land, six fake and extremely shiny gemstones
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A personal blessing from the greatest duelist in the land, six fake and extremely shiny gemstones
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25566,11 +25566,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Medium Weapon, Psionic
 
-**Item Prerequisite:** An ancient bronze gear covered in indecipherable runes
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ancient bronze gear covered in indecipherable runes
 
-**Project Source:** Texts in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25587,11 +25587,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Heavy Weapon, Psionic
 
-**Item Prerequisite:** The skull of a convicted criminal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** The skull of a convicted criminal
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25608,11 +25608,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Heavy Weapon, Magic
 
-**Item Prerequisite:** Eight iron bars cooled in a glacier, the branch of an ancient evergreen
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Eight iron bars cooled in a glacier, the branch of an ancient evergreen
 
-**Project Source:** Texts in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25629,11 +25629,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Light Weapon, Psionic
 
-**Item Prerequisite:** Eighteen daggers—nine taken from personal enemies and nine gifted by friends
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Eighteen daggers—nine taken from personal enemies and nine gifted by friends
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25650,11 +25650,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Magic, Polearm
 
-**Item Prerequisite:** Night-blooming flower petals, a starmetal meteorite
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Night-blooming flower petals, a starmetal meteorite
 
-**Project Source:** Texts or lore in Hyrallic
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25671,11 +25671,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Magic, Net
 
-**Item Prerequisite:** Four iron bars coated in magma slag
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Four iron bars coated in magma slag
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25692,11 +25692,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Bow, Magic
 
-**Item Prerequisite:** A venom sac from a giant spider, one valok gyroscope
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A venom sac from a giant spider, one valok gyroscope
 
-**Project Source:** Texts or lore in Caelian and Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian and Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25713,11 +25713,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Magic, Whip
 
-**Item Prerequisite:** One hundred steel arrowheads stained with blood
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One hundred steel arrowheads stained with blood
 
-**Project Source:** Texts or lore in Caelian and Kalliak
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian and Kalliak
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25734,11 +25734,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Bow, Psionic
 
-**Item Prerequisite:** Heart strings of a tapir, a pound of tiger's eye gemstones
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Heart strings of a tapir, a pound of tiger's eye gemstones
 
-**Project Source:** Texts or lore in Variac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25753,11 +25753,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Magic, Medium Weapon
 
-**Item Prerequisite:** A jar of captured thunder, two ingots of moon metal
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A jar of captured thunder, two ingots of moon metal
 
-**Project Source:** Texts or lore in Zaliac
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25774,11 +25774,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Keywords:** Polearm, Psionic
 
-**Item Prerequisite:** A folded metal blade infused with blood
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A folded metal blade infused with blood
 
-**Project Source:** Texts or lore in Higaran
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Higaran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25791,7 +25791,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 <!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of leveled treasures in alphabetical order.
+In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bloodbound Band
@@ -25800,11 +25800,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Keywords:** Magic, Ring
 
-**Item Prerequisite:** A pair of obituaries that each mention the subject of the other
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A pair of obituaries that each mention the subject of the other
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25821,11 +25821,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Keywords:** Hands, Psionic
 
-**Item Prerequisite:** One cotton bolt soaked in the blood of six adventurers
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One cotton bolt soaked in the blood of six adventurers
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25842,11 +25842,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Keywords:** Feet, Magic
 
-**Item Prerequisite:** One jar of lightning
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** One jar of lightning
 
-**Project Source:** Texts or lore in Yllyric
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25863,11 +25863,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Keywords:** Neck, Magic
 
-**Item Prerequisite:** A cloak worn by a murdered monarch
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A cloak worn by a murdered monarch
 
-**Project Source:** Texts or lore in Caelian
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25884,11 +25884,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Keywords:** Neck, Psionic
 
-**Item Prerequisite:** A pound of feathers, a pound of bricks from the Seven Cities of Hell
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A pound of feathers, a pound of bricks from the Seven Cities of Hell
 
-**Project Source:** Texts or lore in Anjali
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -26017,7 +26017,7 @@ Most titles, however, are earned by all the heroes at once for accomplishing a g
 
 ### Granting Titles
 
-Titles are rewards for heroic activities, and they often go hand in hand with treasure and other goodies. If the party defeats a fearsome monster and earns [Renown](scc:mcdm.heroes.v1/rule.resource/renown), or accomplishes a quest and wins a magic leveled treasure, one or more characters might earn a title at the same time.
+Titles are rewards for heroic activities, and they often go hand in hand with treasure and other goodies. If the party defeats a fearsome monster and earns [Renown](scc:mcdm.heroes.v1/rule.resource/renown), or accomplishes a quest and wins a magic [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), one or more characters might earn a title at the same time.
 
 There is no hard-and-fast rule for the number of titles characters should accumulate by a certain level. If a character wins a title whenever they accomplish a truly notable deed—once every few adventures—then they might earn about one title per echelon. Sticking to this rate isn't a requirement, though. Characters might easily earn twice or half as many titles, making them a bit more or less powerful than they otherwise would be. A Director can even skip granting titles altogether if they wish.
 
@@ -26044,7 +26044,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Leverage:* You know a priceless secret. The Director chooses the type of person who would value this secret—usually a member of a particular faction, such as a Higaran [noble](scc:mcdm.heroes.v1/title/noble), or a type of person, such as a fence of stolen goods. When engaged in a negotiation with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can share this secret only once.
-- *Rare Books:* You add rare, ancient books to your collection. Whenever you undertake a research project, roll 1d6 for each dead language you know and add the total to the project roll.
+- *Rare Books:* You add rare, ancient books to your collection. Whenever you undertake a [research project](scc:mcdm.heroes.v1/rule.downtime/research-project), roll 1d6 for each dead language you know and add the total to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).
 - *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) and take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test). You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
 
 <!-- @type: title -->
@@ -26083,7 +26083,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Discerning Shopper:* When looking for an item prerequisite for a crafting project, you can remember meeting someone who might have the item—or at least information about it.
+- *Discerning Shopper:* When looking for an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project), you can remember meeting someone who might have the item—or at least information about it.
 - *One with the Crowd:* While you're using one or more creatures as [cover](scc:mcdm.heroes.v1/rule.combat/cover), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak.
 - *Street Smart:* While in a settlement, you can't be surprised.
 
@@ -26133,8 +26133,8 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 Additionally, the Director assigns you one of the following benefits, as appropriate to the faction in question. The Director can also create a custom benefit for a type of faction not noted here. You can use this benefit only in a settlement where your faction has a presence, and once you use this benefit, you can't use it again until you complete a task for your faction.
 
-- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
-- *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 uninterrupted minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) to recall lore or make [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) on your behalf. The sage has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) take 10 minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+- *Guild Faction:* You find an expert crafter who can make up to three [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) on your behalf. The crafter has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) take 10 uninterrupted minutes each and don't need to be made during a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Martial Faction:* You recruit up to three minions with levels no greater than your own, of a type appropriate for the faction (such as **[human](scc:mcdm.heroes.v1/ancestry/human) guards**). These minions follow your orders for a day.
 - *Spy Faction:* You find an agent who can provide you with three pieces of information about the settlement you're in, such as the location of a hidden person, a secret entrance into a guarded area, or the negotiation motivation or pitfall of an important person.
 
@@ -26175,7 +26175,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 *I said you had twenty-four hours to leave town. That was... what, about twenty-four hours ago?*
 
-**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see Orden and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), or you are deputized to act for the local authorities.
+**Prerequisite:** You join an organization that hunts criminals, such as the Far Mariners (see [Orden](scc:mcdm.heroes.v1/rule.world/orden) and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), or you are deputized to act for the local authorities.
 
 **Effect:** Choose one of the following benefits:
 
@@ -26215,9 +26215,9 @@ Additionally, the faction is a good source of information. The Director chooses 
 
 **Prerequisite:** You die in a way that prevents your body from being recovered or examined (for instance, by falling off a cliff).
 
-**Effect:** While it might appear that you died, you did not. Instead, you regain 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can spend 1 or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, you gain a 1st-echelon trinket of the Director's choice (see Treasures earlier in this chapter).
+**Effect:** While it might appear that you died, you did not. Instead, you regain 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can spend 1 or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, you gain a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of the Director's choice (see Treasures earlier in this chapter).
 
-At a dramatic moment determined by the Director, you rejoin your party with an explanation for your narrow escape, and how you found your new trinket along the way.
+At a dramatic moment determined by the Director, you rejoin your party with an explanation for your narrow escape, and how you found your new [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) along the way.
 
 <!-- @type: title -->
 #### Ratcatcher
@@ -26254,7 +26254,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 The Director chooses one of the following benefits, based on the fate your captors have in mind for you. Each hero gains the same benefit. Additionally, you must face an encounter, [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), or adventure related to the benefit, as the Director determines.
 
-- *Gladiators:* You must fight to the death for your captors' amusement. Your intended opponents wield or guard a trinket or leveled treasure, which you can earn if you are victorious.
+- *Gladiators:* You must fight to the death for your captors' amusement. Your intended opponents wield or guard a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), which you can earn if you are victorious.
 - *Prey:* Your captors plan to release you and hunt you down, but it's no fun unless you offer a challenge. Each of you is given a medicinal draught that grants a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and increases your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2. This benefit lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 - *Sacrifices:* You are to be dropped in a volcano, fed to a sacred monster, abandoned in a desert, or otherwise sacrificed to a higher power. You are bedecked with holy jewelry. Each hero earns 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 - *Saviors:* Your captors fear an even stronger foe, and they want you to defeat this enemy for them. You can even keep any treasure you find while doing so.
@@ -26429,7 +26429,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** You are given a position of great authority in your faction. Additionally, you gain the following benefits:
 
-- *Requisition:* When you gain this title, you gain a 1st- or 2nd-echelon magic trinket of your choice from your faction (see Treasures earlier in this chapter). Whenever you gain a level, you can swap the trinket out for another one.
+- *Requisition:* When you gain this title, you gain a 1st- or 2nd-echelon magic [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice from your faction (see Treasures earlier in this chapter). Whenever you gain a level, you can swap the [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) out for another one.
 - *You're the Boss:* Lower-ranking members of your faction follow your routine orders. In nonroutine matters, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence those characters' behavior.
 
 <!-- @type: title -->
@@ -26552,7 +26552,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Arcane Improvisation:* When you use a damage-dealing magic signature ability, you can change its [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to acid, cold, corruption, fire, lightning, poison, or sonic damage.
-- *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+- *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 - *Picked Up a Few Things:* You know a skill from the lore skill group.
 - *Polyglot:* You know two languages. Additionally, the project goal for the Learn New Language project is halved for you.
 
@@ -26716,7 +26716,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 > ###### The Devil's Chord (9 Heroic Resource)
 >
-> *Helloooo Orden!*
+> *Helloooo [Orden](scc:mcdm.heroes.v1/rule.world/orden)!*
 >
 > | **Area, Magic** |                  **Main action** |
 > |-----------------|---------------------------------:|
@@ -26742,9 +26742,9 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Masterpiece:* The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.
-- *Research Dividends:* You gain the item prerequisite for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the project source language for that enhancement.
+- *Research Dividends:* You gain the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language for that enhancement.
 - *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
-- *Strong Hands Make Light Work:* Whenever you make a project roll, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) as the project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+- *Strong Hands Make Light Work:* Whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), you can use [Might](scc:mcdm.heroes.v1/rule.character/might) as the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: title -->
 #### Noble
@@ -26771,7 +26771,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Prismacore Eyes:* Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can't use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) against magic or psionic abilities.
-- *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
+- *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for a psionic [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket).
 - *[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider) Training:* You gain 2 ancestry points to spend on purchased [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 
 <!-- @type: title -->
@@ -26823,7 +26823,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 
 - *Best of the Best:* Choose a skill you used during the competition. You gain a +4 bonus to [tests](scc:mcdm.heroes.v1/rule.test/test) made using that skill instead of a +2 bonus
 - *Glory and Riches:* You earn 2 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
-- *I'll Just Take the Prize:* You gain a trinket or leveled treasure of the Director's choice.
+- *I'll Just Take the Prize:* You gain a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice.
 
 <!-- @type: title -->
 #### Demigod
@@ -26868,7 +26868,7 @@ Additionally, choose one of the following benefits:
 
 - *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Perfect Protection:* The Director chooses a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
-- *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a trinket or leveled treasure of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
+- *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
 
 <!-- @type: title -->
 #### Monarch
@@ -26884,7 +26884,7 @@ Additionally, choose one of the following benefits:
 
 Additionally, choose one of the following benefits:
 
-- *Crown Jewels:* You gain one of your nation's treasures—a trinket of the Director's choice.
+- *Crown Jewels:* You gain one of your nation's treasures—a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of the Director's choice.
 - *Royal Fame:* You earn 2 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 - *Royal Retinue:* The number of followers you can recruit increases by 2
 - *Royal [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth):* You earn 2 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
@@ -26916,7 +26916,7 @@ Additionally, choose one of the following benefits:
 
 Additionally, choose one of the following benefits:
 
-- *Holy Weapon:* You have a leveled treasure of the Director's choice.
+- *Holy Weapon:* You have a [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice.
 - *Kill Me Once, Shame On You:* Choose a creature keyword belonging to one of the creatures who defeated you. Any creature with that keyword takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against you.
 - *Memories of the Beyond:* You have two skills of your choice.
 
@@ -27004,7 +27004,7 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 ##### Artisan
 
-Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
+Artisans are crafting experts who can contribute to your research and [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 1 (your choice), a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
@@ -27017,7 +27017,7 @@ Rules for retainers are found in *Draw Steel: Monsters*.
 
 ##### Sage
 
-Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
+Sages are research experts who can contribute to your research and [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project). A sage can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) per day to a downtime project you choose, whether you spend those days in [respite](scc:mcdm.heroes.v1/rule.resource/respite), adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
 When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
@@ -27059,7 +27059,7 @@ As an optional rule, the Director can allow a hero to make a purchase that is on
 <!-- @type: chapter | @id: gods-and-religion -->
 # Gods and Religion
 
-Orden is a fantasy world in which the gods are objectively real. In spite of this the people of Orden, regardless of ancestry, do not believe the gods control everything that happens in the world. They believe the gods created a natural world with its own cycles that are sometimes predictable, but which cannot be understood. It rained last Lyleth, and the Lyleth before that, so it'll probably rain this Lyleth—but maybe not! And if not, that may be because the gods are displeased. But it might just as easily be because the gods are bored, or fickle or—even more likely, it has nothing to do with the gods, and there's no way to know which.
+[Orden](scc:mcdm.heroes.v1/rule.world/orden) is a fantasy world in which the gods are objectively real. In spite of this the people of [Orden](scc:mcdm.heroes.v1/rule.world/orden), regardless of ancestry, do not believe the gods control everything that happens in the world. They believe the gods created a natural world with its own cycles that are sometimes predictable, but which cannot be understood. It rained last Lyleth, and the Lyleth before that, so it'll probably rain this Lyleth—but maybe not! And if not, that may be because the gods are displeased. But it might just as easily be because the gods are bored, or fickle or—even more likely, it has nothing to do with the gods, and there's no way to know which.
 
 When a river floods or crops fail, some people may curse the gods, but those people do not all believe a god caused these events. They may curse simply because the gods didn't prevent catastrophe. They do not think, "Why did the gods do that?" They think, "Why did the gods make a world that behaves like this?"
 
@@ -27080,9 +27080,9 @@ If no aid is forthcoming folks assume this is because the gods and saints are al
 <!-- @type: rule | @group: world | @id: saint -->
 ### Churches and Temples
 
-Most religions in Orden organize themselves into hierarchies and build temples or cathedrals, but some religions are little more than traditions handed down from shaman to shaman, or wise-woman to wise-daughter. Some religions are secret!
+Most religions in [Orden](scc:mcdm.heroes.v1/rule.world/orden) organize themselves into hierarchies and build temples or cathedrals, but some religions are little more than traditions handed down from shaman to shaman, or wise-woman to wise-daughter. Some religions are secret!
 
-Because the gods are forbidden from acting directly upon the world, churches and temples in Orden are consecrated to saints, or heroes. There are no temples to Ord or churches of [Cavall](scc:mcdm.heroes.v1/god/cavall). Instead, there is the Church of Zarok the Law-Giver and the Church of Saint Llewellyn the Valiant. Everyone knows which god these heroes and saints serve, it's common knowledge. A [human](scc:mcdm.heroes.v1/ancestry/human) in Vasloria might call out to [Cavall](scc:mcdm.heroes.v1/god/cavall) for aid in times of need but they know that, should [Cavall](scc:mcdm.heroes.v1/god/cavall) choose to help, it will be by sending one of his saints.
+Because the gods are forbidden from acting directly upon the world, churches and temples in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are consecrated to saints, or heroes. There are no temples to Ord or churches of [Cavall](scc:mcdm.heroes.v1/god/cavall). Instead, there is the Church of Zarok the Law-Giver and the Church of Saint Llewellyn the Valiant. Everyone knows which god these heroes and saints serve, it's common knowledge. A [human](scc:mcdm.heroes.v1/ancestry/human) in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) might call out to [Cavall](scc:mcdm.heroes.v1/god/cavall) for aid in times of need but they know that, should [Cavall](scc:mcdm.heroes.v1/god/cavall) choose to help, it will be by sending one of his saints.
 
 The most popular saints and heroes can have several churches meaning distinct organizations—devoted to them, each with their own rituals. In Corwell, there is the Church of Saint Llewellyn the Valiant, but there is also the smaller Church of Saint Llewellyn the Charitable with only a few temples.
 
@@ -27092,7 +27092,7 @@ There are churches dedicated to nature or knowledge or the sun, with no clear mo
 
 > **How To Use This Chapter**
 >
-> *Draw Steel* isn't about religion any more than it is about language or treasure, but understanding how religion works in a day-to-day sense can help make the game world feel more real. The people in Orden aren't any more religious than the people of Earth were in the premodern era. It is a factor in their lives, but not the only factor—and for some people, not a very important one.
+> *Draw Steel* isn't about religion any more than it is about language or treasure, but understanding how religion works in a day-to-day sense can help make the game world feel more real. The people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) aren't any more religious than the people of Earth were in the premodern era. It is a factor in their lives, but not the only factor—and for some people, not a very important one.
 >
 > Obviously, [conduit](scc:mcdm.heroes.v1/class/conduit) and [censor](scc:mcdm.heroes.v1/class/censor) players can use this chapter to choose a saint, each saint's entry also lists which domains they represent. But each god also has a list of domains, so an enterprising player could just invent a new saint, hero, or herald choosing two domains from a god's list.
 >
@@ -27108,13 +27108,13 @@ Elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), and [orcs](scc:mcdm.heroes.
 
 Each culture's pantheon reflects the mores and folkways of the people who live there. In far northern Vanigar, villains in folktales often gain their power by tricking others through clever wordplay. Riddles. Though they are villains, they are clever, and this earns them some respect even from their enemies. So the Vanigar pantheon includes Holkatya, a trickster god.
 
-Whereas Vasloria has no folk tradition of trickster figures, and so has no trickster god. Instead, villains in Vaslorian folktales tend to be people who seek quick ways to power in order to avoid honest work. So Vasloria has the dark god Cyrvis who teaches that magic can subvert fate and make you master of not only your destiny, but also the world. This also reveals the common Vaslorian's attitude toward magic.
+Whereas [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) has no folk tradition of trickster figures, and so has no trickster god. Instead, villains in Vaslorian folktales tend to be people who seek quick ways to power in order to avoid honest work. So [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) has the dark god Cyrvis who teaches that magic can subvert fate and make you master of not only your destiny, but also the world. This also reveals the common Vaslorian's attitude toward magic.
 
 The gods of each pantheon tell you what the people of that region value, and what they fear, disapprove of, or distrust. The Vaslorian pantheon is wholly different from the pantheon of Vanigar which is different from the pantheon of Rioja. The gods and saints can hear their worshippers anywhere in the timescape and even small cities can have temples to distant gods of other peoples and regions. All it takes is one dedicated [conduit](scc:mcdm.heroes.v1/class/conduit) to establish a church of their saint or hero in some distant land.
 
 For instance, the High City of Dalrath, a small barony in northern Aendrim, has a temple to Sektahre the Boatman, a saint of Khemhara, a distant desert region. The people of Dalrath do not find this strange. The priestess of Sektahre does all the same things any native curate would do: perform rituals, heal the sick, and otherwise tend to the spiritual and physical wellbeing of the locals without asking much in return. Some people may be suspicious of a stranger peddling their religion far from home, but yet more people consider the presence of such a priestess a sign that their city must be very important indeed.
 
-Because of all these gods and saints, religion in Orden is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) saints in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their followers' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of Saints is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
+Because of all these gods and saints, religion in [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) saints in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their followers' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of Saints is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
 
 Lastly, though rulers across the land instinctively believe the gods are paying more attention to them because they are queens or dukes or the heads of a powerful wizard order or guild... there is no evidence of this. As far as theologists can tell, the gods seem to view every soul as equally worthy. Many of the tales of saints and heroes feature characters of enormous [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) battling over the soul of a normal person with no station or power or inheritance.
 
@@ -27128,11 +27128,11 @@ But the world is not for heroes alone. There are villains, as well as those who 
 
 These religions do not usually build public temples and worship in the open, but most communities know, or very strongly suspect, who among them serve evil gods and saints.
 
-Among the people of Vasloria, there are the gods Nikros the Tyrant and Cyrvis the Lich, evil gods, each with their own saints. When tyrants rule, these religions tend to come out from the basements and sewer-temples and start worshipping openly.
+Among the people of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), there are the gods Nikros the Tyrant and Cyrvis the Lich, evil gods, each with their own saints. When tyrants rule, these religions tend to come out from the basements and sewer-temples and start worshipping openly.
 
 ### Afterlife in Orden
 
-Folk in Orden believe that most, maybe all, living things have a soul, which is the source of personality, creativity, and memory. The loss of one's soul, either through bargaining with a [devil](scc:mcdm.heroes.v1/ancestry/devil), or being consumed by a demon or otherwise trapped by a warlock, results in slowly losing your personality, your distinctiveness—even memory.
+Folk in [Orden](scc:mcdm.heroes.v1/rule.world/orden) believe that most, maybe all, living things have a soul, which is the source of personality, creativity, and memory. The loss of one's soul, either through bargaining with a [devil](scc:mcdm.heroes.v1/ancestry/devil), or being consumed by a demon or otherwise trapped by a warlock, results in slowly losing your personality, your distinctiveness—even memory.
 
 However, there is no popular idea that everyone's soul is immortal and persists forever after death. Most people believe their soul dissipates after death and becomes one with creation. When asked where the soul goes after death, the elf sage responded by blowing out a candle and asking, "Where did the fire go?"
 
@@ -27142,7 +27142,7 @@ Much the same way the [humans](scc:mcdm.heroes.v1/ancestry/human) of Vanigar bel
 
 Most [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) believe that those members of each generation who best distinguish themselves earn the right to live forever in Ord's memory. This, they believe, is where their heroes go after death. Uniquely among the speaking peoples, the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) believe their god is watching them, watching the world. Ord cannot act, but he judges and remembers.
 
-Some people in Orden, like the [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) believe their ancestors watch over them, although there is no agreement whether their ancestor's souls are watching over them, or just their memory. Or something in between. Sages differ. This belief among the [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) is more of an attitude, an assumption, than a religion.
+Some people in [Orden](scc:mcdm.heroes.v1/rule.world/orden), like the [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) believe their ancestors watch over them, although there is no agreement whether their ancestor's souls are watching over them, or just their memory. Or something in between. Sages differ. This belief among the [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) is more of an attitude, an assumption, than a religion.
 
 ### Conduits and Censors
 
@@ -27213,9 +27213,9 @@ The Deities and Domains table and the Saints and Domains table summarize each of
 
 **Domains:** Creation, Knowledge, Life, Nature, Protection
 
-Val, the Noble Lord, First Among Equals, is the patron of the elves. He created the celestials—the true elves, second of the five speaking peoples—who then created the younger elves: the high, wode, and shadow elves. His name is the root of the Caelian word "valiant," and the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) named the most precious ore in Orden—Valiar, the truemetal—after him.
+Val, the Noble Lord, First Among Equals, is the patron of the elves. He created the celestials—the true elves, second of the five speaking peoples—who then created the younger elves: the high, wode, and shadow elves. His name is the root of the Caelian word "valiant," and the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) named the most precious ore in [Orden](scc:mcdm.heroes.v1/rule.world/orden)—Valiar, the truemetal—after him.
 
-Val holds that the greatest purpose a thinking being can commit themselves to is the creation of art and the appreciation of beauty. He keeps the magical, elf-haunted forests called wodes close to his heart because they represent his vision for Orden. What the world could have been. His growing disgust with the concept of war led him to leave Orden and take up residence in his private manifold, *Arcadia* where all elves hope to someday join their patron.
+Val holds that the greatest purpose a thinking being can commit themselves to is the creation of art and the appreciation of beauty. He keeps the magical, elf-haunted forests called wodes close to his heart because they represent his vision for [Orden](scc:mcdm.heroes.v1/rule.world/orden). What the world could have been. His growing disgust with the concept of war led him to leave [Orden](scc:mcdm.heroes.v1/rule.world/orden) and take up residence in his private manifold, *Arcadia* where all elves hope to someday join their patron.
 
 #### Heroes of the Elves
 
@@ -27251,13 +27251,13 @@ He canonized the idea that knowledge, truth, was a kind of beauty. The Library o
 
 Ripples of Honey on a Shore of Gold, also known as Warkiller, the Diplomat, was both scholar, sage, and soldier. She served as emissary between the [humans](scc:mcdm.heroes.v1/ancestry/human) and the dragons when the former sought war against the latter. For many years she brokered peace, but she could not stem the tides of war forever.
 
-In the end, her efforts failed, and the elder dragons live no more in this world. Like Val, the Diplomat hated war so much, after her failure she sought to pen a new codex. A work so powerful it would bind the world. The Codex Pax Universalis would banish the concept of war from Orden. Alas, in the end she realized there was only one way to finish her great work, and she was not willing to take that final step.
+In the end, her efforts failed, and the elder dragons live no more in this world. Like Val, the Diplomat hated war so much, after her failure she sought to pen a new codex. A work so powerful it would bind the world. The Codex Pax Universalis would banish the concept of war from [Orden](scc:mcdm.heroes.v1/rule.world/orden). Alas, in the end she realized there was only one way to finish her great work, and she was not willing to take that final step.
 
 ##### Yllin Dyrvis
 
 **Domains:** Knowledge, Nature
 
-Yllin Dyrvis, also known as the Beast Heart, the Wodespeaker, the Warden, witnessed the Composer's first song, and took it upon themselves to communicate with and care for the speaking creatures A Sea of Suns created. The dryads, elgenwights, the giant birds and intelligent fish who populated the ancient wode that once covered all Orden, all came under the Beast Heart's care. Dyrvis learned their speech and taught them who they were.
+Yllin Dyrvis, also known as the Beast Heart, the Wodespeaker, the Warden, witnessed the Composer's first song, and took it upon themselves to communicate with and care for the speaking creatures A Sea of Suns created. The dryads, elgenwights, the giant birds and intelligent fish who populated the ancient wode that once covered all [Orden](scc:mcdm.heroes.v1/rule.world/orden), all came under the Beast Heart's care. Dyrvis learned their speech and taught them who they were.
 
 To this day, many ages of the world later, the [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) consider themselves the stewards of the speaking creatures, and those creatures rely upon the [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) for protection.
 
@@ -27267,13 +27267,13 @@ To this day, many ages of the world later, the [wode elves](scc:mcdm.heroes.v1/a
 
 Thyll Hylacae, the Forestal, Apothachron, also known as the Sacrifice. Thyll spoke to the plants, learned their truths—discovered many magics hidden within. The power to heal, harm, change. It was Hylacae who first sensed, then learned, the language of trees. She studied, cared for them, and protected them when the folk of farm and field came to cut them down.
 
-Though she was mighty in warlore, she could not be everywhere. In the end, she sacrificed herself for the trees, the ritual she performed uplifted a small population of trees, creating the derwic—the thinking speaking tree-peoples few of whom remain in Orden.
+Though she was mighty in warlore, she could not be everywhere. In the end, she sacrificed herself for the trees, the ritual she performed uplifted a small population of trees, creating the derwic—the thinking speaking tree-peoples few of whom remain in [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
 ##### Illwyv li Orchiax
 
 **Domains:** Nature, Protection
 
-Illwyv li Orchiax, the Moonknight, Marshall of the Gloaming, Manslayer. When [humans](scc:mcdm.heroes.v1/ancestry/human) first arrived in Orden—it is said—they were welcomed by the other speaking peoples. But they were unlike the other creations in the world. While the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) cut rock for the ore within, [humans](scc:mcdm.heroes.v1/ancestry/human) cut down trees simply because they were in the way. Other ancestries had their own territories and homelands, but [humans](scc:mcdm.heroes.v1/ancestry/human) sought constant expansion into even the most inhospitable territories.
+Illwyv li Orchiax, the Moonknight, Marshall of the Gloaming, Manslayer. When [humans](scc:mcdm.heroes.v1/ancestry/human) first arrived in [Orden](scc:mcdm.heroes.v1/rule.world/orden)—it is said—they were welcomed by the other speaking peoples. But they were unlike the other creations in the world. While the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) cut rock for the ore within, [humans](scc:mcdm.heroes.v1/ancestry/human) cut down trees simply because they were in the way. Other ancestries had their own territories and homelands, but [humans](scc:mcdm.heroes.v1/ancestry/human) sought constant expansion into even the most inhospitable territories.
 
 Illwyv it was who first realized the folly of treating with these creatures. A great hunter of the Quercus Court, she gathered her band of elite Helriath Harriers and made war on the [humans](scc:mcdm.heroes.v1/ancestry/human) who would kill the wode.
 
@@ -27282,7 +27282,7 @@ Illwyv it was who first realized the folly of treating with these creatures. A g
 
 **Domains:** Creation, Knowledge, Protection, Sun, War
 
-Ord, the Maker, the Engineer, is the patron of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). Ord, along with his siblings Aan, Eth, and Kul, created Orden. These four saw the world as a dynamic expression of their philosophies.
+Ord, the Maker, the Engineer, is the patron of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). Ord, along with his siblings Aan, Eth, and Kul, created [Orden](scc:mcdm.heroes.v1/rule.world/orden). These four saw the world as a dynamic expression of their philosophies.
 
 Ord values integrity, honor, faithfulness to an ideal. Courage in battle and fair play. Treating your opponent honorably, Ord teaches, is an expression of your own worthiness. Ord is associated with permanence, which some elder [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) take to mean a kind of slavish devotion to tradition. But Ord teaches permanence is the quality of reliability, of steadfastness. Young [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) who chafe at the stale and stifling traditions of their elders remind the greybeards that Ord is the Maker. He expects his children to create marvels, to bring forth new discoveries, new insights. To remake the world anew each generation.
 
@@ -27300,7 +27300,7 @@ The first, great hero of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), Zarok
 
 It was after Zarok retired from his career as a warmaster and became the ambassador to the elves that he undertook a study of how different cultures express the idea of justice. He surveyed the various traditions of elves, [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and wrote *The Conversations*-a series of fictional dialogues in which two characters, deliberately chosen from [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) theater so as to be familiar to his audience, debate the question: "What are the [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) of a just society?"
 
-*The Conversations* marks the beginning of legal theory in Orden. It sought not only to state what a just society was, but to prove it ethically through a series of logical statements. Most of the work concerns itself with the proper, ethical uses of political power. The adversarial system of legal representation is his.
+*The Conversations* marks the beginning of legal theory in [Orden](scc:mcdm.heroes.v1/rule.world/orden). It sought not only to state what a just society was, but to prove it ethically through a series of logical statements. Most of the work concerns itself with the proper, ethical uses of political power. The adversarial system of legal representation is his.
 
 Zarok teaches that all people should be equal under the law. His is the principle of fair play—sportsmanship. Respect for your adversary. The responsibility of the strong to protect the weak.
 
@@ -27324,7 +27324,7 @@ Stakros the Engineer, the Machine Mind, the Operator, founder of the Order of Fa
 
 Stakros it was—*not* a steel [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf)—who forged the first strife-engine, a great war-walker manned by thirty [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf). At the battle of Kalas Mithral, the war-walker grappled with the legion of yllindyr the star elves summoned to defeat the walls of the steel [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) capital.
 
-After the war, Stakros turned his [talents](scc:mcdm.heroes.v1/class/talent) to peaceful pursuits. He forged the first magma diver, designed to withstand enormous temperatures and pressures, all the while protecting the operator within. Inside his marvel Stakros personally dove into the great volcano Oxor-myr, returning with marvelous ores never before seen in Orden. His design soon evolved into a variety of armored frames to suit a variety of purposes.
+After the war, Stakros turned his [talents](scc:mcdm.heroes.v1/class/talent) to peaceful pursuits. He forged the first magma diver, designed to withstand enormous temperatures and pressures, all the while protecting the operator within. Inside his marvel Stakros personally dove into the great volcano Oxor-myr, returning with marvelous ores never before seen in [Orden](scc:mcdm.heroes.v1/rule.world/orden). His design soon evolved into a variety of armored frames to suit a variety of purposes.
 
 Stakros teaches the value of knowledge for knowledge's sake, and the power of the mind to overcome any obstacle. He also teaches that knowledge is power, and in unready hands can only be dangerous.
 
@@ -27425,7 +27425,7 @@ Khravila teaches the virtue of persistence, endurance, and—above all—wits. N
 
 #### Heroes of the Hakaan
 
-Most [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) in Orden are animists. They know and respect the four Elder Gods who created the world and believe these gods watch the world and see what happens within it. But the [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) do not create churches or formal belief systems around this attitude.
+Most [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are animists. They know and respect the four Elder Gods who created the world and believe these gods watch the world and see what happens within it. But the [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) do not create churches or formal belief systems around this attitude.
 
 Instead they believe the world is filled with innumerable nature spirits. Each river, tree, stone, has their own spirit, which the [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) revere. They have no organized religion in the way the other ancestries in this chapter do, though a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) brought up in a city, or among another people, would naturally venerate in whatever gods and saints are worshiped by the folk who raised them.
 
@@ -27453,7 +27453,7 @@ Mahsiti teaches that art and science, creativity and knowledge, are the same thi
 
 **Domains:** Nature, Protection, Sun
 
-Prexaspes Stargazer, the Astronomer, the Sun-sage mapped the skies and was one of the first people in all Orden to correctly calculate the repeating pattern of Orden's three moons. Because of his growing mastery of the cycles of nature, he predicted a coming famine and prepared his clan. When the famine came but the people had storehouses of food ready, he became a hero of his tribe.
+Prexaspes Stargazer, the Astronomer, the Sun-sage mapped the skies and was one of the first people in all [Orden](scc:mcdm.heroes.v1/rule.world/orden) to correctly calculate the repeating pattern of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s three moons. Because of his growing mastery of the cycles of nature, he predicted a coming famine and prepared his clan. When the famine came but the people had storehouses of food ready, he became a hero of his tribe.
 
 After receiving the doomsight, Prexaspes turned his attention to the sun itself. He studied ancient tomes written by scholars of many people, believing eclipses were predictable events. His research yielded a pattern, but his insight led him further. What if, he wondered, an eclipse was more than a celestial event? What if it was an opening, a portal? Prexaspes studied the stars and prepared a ritual.
 
@@ -27465,7 +27465,7 @@ With his people watching, shielding their eyes from the brilliant light, Prexasp
 
 Though he died in the act, Prexaspes saved his people becoming a hero of all [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan), taking his place among the stars as a new constellation.
 
-Prexaspes teaches that nature is a moral good and is worth defending, and that the sun is the source of power for all life on Orden.
+Prexaspes teaches that nature is a moral good and is worth defending, and that the sun is the source of power for all life on [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
 ##### Atossa the Shepherd
 
@@ -27497,22 +27497,22 @@ Atossa teaches that it is not for the shepherd to judge the flock—only to prot
 
 ### Devil Gods
 
-[Devil](scc:mcdm.heroes.v1/ancestry/devil) heroes in Orden usually serve the gods and saints of the culture in which they were raised. Few [devils](scc:mcdm.heroes.v1/ancestry/devil) in Orden are from the Seven Cities, most are descended from [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded on Orden hundreds or thousands of years ago. [Devils](scc:mcdm.heroes.v1/ancestry/devil) who are from the Seven Cities have their own unique pantheon.
+[Devil](scc:mcdm.heroes.v1/ancestry/devil) heroes in [Orden](scc:mcdm.heroes.v1/rule.world/orden) usually serve the gods and saints of the culture in which they were raised. Few [devils](scc:mcdm.heroes.v1/ancestry/devil) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are from the Seven Cities, most are descended from [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded on [Orden](scc:mcdm.heroes.v1/rule.world/orden) hundreds or thousands of years ago. [Devils](scc:mcdm.heroes.v1/ancestry/devil) who are from the Seven Cities have their own unique pantheon.
 
-The Seven Cities have saints just like [humans](scc:mcdm.heroes.v1/ancestry/human) in Orden do but in place of gods, these saints serve the seven Archdukes of Hell, also known as Archdevils or the Lords of Hell. Unlike the gods of Orden, the Lords of Hell are corporeal. Giant figures, 30 feet tall, who each sit upon the throne of their city, projecting their consciousness out into the world, dealing with politics, sorcery, and treachery, manifesting avatars when necessary. They are, effectively, the Gods of Hell.
+The Seven Cities have saints just like [humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) do but in place of gods, these saints serve the seven Archdukes of Hell, also known as Archdevils or the Lords of Hell. Unlike the gods of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Lords of Hell are corporeal. Giant figures, 30 feet tall, who each sit upon the throne of their city, projecting their consciousness out into the world, dealing with politics, sorcery, and treachery, manifesting avatars when necessary. They are, effectively, the Gods of Hell.
 
-Like the other gods of the timescape, the Lords of Hell are too busy to attend to every petition and request and so employ saints just like other gods. Religion in Hell is superficially similar to religion among the peoples of Orden. There are churches and rites and rituals, but [devils](scc:mcdm.heroes.v1/ancestry/devil) tend to view attending church and performing the expected rituals at the appropriate times as akin to paying taxes. Annoying but necessary.
+Like the other gods of the timescape, the Lords of Hell are too busy to attend to every petition and request and so employ saints just like other gods. Religion in Hell is superficially similar to religion among the peoples of [Orden](scc:mcdm.heroes.v1/rule.world/orden). There are churches and rites and rituals, but [devils](scc:mcdm.heroes.v1/ancestry/devil) tend to view attending church and performing the expected rituals at the appropriate times as akin to paying taxes. Annoying but necessary.
 
 #### Saints of Hell
 
-Like Orden, there are dozens of saints in Hell, some obscure. These three are some of the most popular and the most likely saints for a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to follow.
+Like [Orden](scc:mcdm.heroes.v1/rule.world/orden), there are dozens of saints in Hell, some obscure. These three are some of the most popular and the most likely saints for a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to follow.
 
 <!-- @type: god | @id: thellasko -->
 #### Thellasko the Great Designer
 
 **Domains:** Knowledge, War
 
-Thellasko the Great Designer, the Game Master, Saint of Strategy did not invent war—[humans](scc:mcdm.heroes.v1/ancestry/human) in Orden hold that honor. Thellasko invented war simulation. Creating what were effectively games to train cadets and lieutenants at the wartable to ensure [victory](scc:mcdm.heroes.v1/rule.resource/victories) on the field.
+Thellasko the Great Designer, the Game Master, Saint of Strategy did not invent war—[humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) hold that honor. Thellasko invented war simulation. Creating what were effectively games to train cadets and lieutenants at the wartable to ensure [victory](scc:mcdm.heroes.v1/rule.resource/victories) on the field.
 
 Thellasko served in Dispater's army, rising to the rank of major general. He retired with honors after the Battle of the River Rhye, intending to take what he had learned on the field and write a book about the proper way to conduct a war.
 
@@ -27558,7 +27558,7 @@ Uryal is the Saint of Hell's diplomatic corps. His *unofficial* motto, falsely a
 
 **Domains:** Death, Trickery
 
-Kuryalka the False Principle, Soulstealer, Audacity, Saint of Ambition is credited with inventing the trading scheme known as the Kuryalka Ploy. Daughter and eldest child of Orliath IX—Marquis of Naraka, the City of Blood—tradition held Kuryalka would ascend to the house throne upon her mother's death and rule, but from childhood Kuryalka was obsessed with what was informally known as "the Trade"—the buying and selling of mortal souls from Orden and elsewhere in the timescape.
+Kuryalka the False Principle, Soulstealer, Audacity, Saint of Ambition is credited with inventing the trading scheme known as the Kuryalka Ploy. Daughter and eldest child of Orliath IX—Marquis of Naraka, the City of Blood—tradition held Kuryalka would ascend to the house throne upon her mother's death and rule, but from childhood Kuryalka was obsessed with what was informally known as "the Trade"—the buying and selling of mortal souls from [Orden](scc:mcdm.heroes.v1/rule.world/orden) and elsewhere in the timescape.
 
 It occurred to Kuryalka that as long as people saw their soul-power increasing on paper they wouldn't inquire too closely about her stewardship of their investment. They signed their accumulated souls over to young Kuryalka, who promised them great returns. It seemed too good to be true! But she published a report every quarter showing marvelous gains, and while no one could understand her math or references to "integrals," they were well pleased with their growing wealth. Whenever someone complained about the lack of disbursements, Kuryalka would quickly pay them out of her growing hoard of souls.
 
@@ -27574,13 +27574,13 @@ Kuryalka features in many folktales in Hell, including "Of the Childe Whomst Kep
 
 ### Human Gods of Vasloria
 
-Like all the Innumerable Younger Gods, the gods of Vasloria embody the attitudes of the people who live in that region. This includes the [humans](scc:mcdm.heroes.v1/ancestry/human), [polder](scc:mcdm.heroes.v1/ancestry/polder), and draconians of Vasloria.
+Like all the Innumerable Younger Gods, the gods of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) embody the attitudes of the people who live in that region. This includes the [humans](scc:mcdm.heroes.v1/ancestry/human), [polder](scc:mcdm.heroes.v1/ancestry/polder), and draconians of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria).
 
-Vasloria is a polytheistic, preindustrial, pre-Enlightenment, feudal culture. Its people have many superstitions and prejudices, some of which are reflected in the teachings of their gods. [Adûn](scc:mcdm.heroes.v1/god/adun), for instance, teaches that hard physical labor is a moral good and people who work hard every day are honest. Most people in Vasloria, especially Aendrim where [Adûn](scc:mcdm.heroes.v1/god/adun)'s faith is most popular, believe this to one extent or another.
+[Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is a polytheistic, preindustrial, pre-Enlightenment, feudal culture. Its people have many superstitions and prejudices, some of which are reflected in the teachings of their gods. [Adûn](scc:mcdm.heroes.v1/god/adun), for instance, teaches that hard physical labor is a moral good and people who work hard every day are honest. Most people in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), especially Aendrim where [Adûn](scc:mcdm.heroes.v1/god/adun)'s faith is most popular, believe this to one extent or another.
 
 Some of them take it more seriously than others though. People in the most distant villages tend to believe it more literally, while people in the cities are perfectly aware than one may work and work and be a villain. And this is true of most of the beliefs presented in this chapter. Some people take it very seriously; some not so much.
 
-Like all peoples of Orden, the people of Vasloria are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of [Cavall](scc:mcdm.heroes.v1/god/cavall) who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of Vasloria aren't that big a deal here, but these gods certainly are!" The peoples of each region of Orden prefer their own gods because they understand them best, not because they think they are "more powerful."
+Like all peoples of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the people of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) are well aware there are other gods. They do not particularly think their gods are *better*, just, "These are the local ones who matter to us." A priest of [Cavall](scc:mcdm.heroes.v1/god/cavall) who journeyed far from Corwell and found themselves in the distant desert land Khemhara could still act as a [conduit](scc:mcdm.heroes.v1/class/conduit) of Saint Llewellyn the Valiant, but they would look around the Heliopolis and see the animal-headed gods of the Khemharans and the astonishing feats of masonry and astronomy the Khemharans achieved and think: "Well. Obviously the gods of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) aren't that big a deal here, but these gods certainly are!" The peoples of each region of [Orden](scc:mcdm.heroes.v1/rule.world/orden) prefer their own gods because they understand them best, not because they think they are "more powerful."
 
 <!-- @type: god | @id: adun -->
 #### Adûn
@@ -27722,7 +27722,7 @@ Well-versed in the faith of Ord and the [dwarves](scc:mcdm.heroes.v1/ancestry/dw
 
 For ten days and nine nights, Zür spoke his weaving and lighting sprang from his fingertips as he grappled with the demon of the spring. And horrors came as he did so.
 
-Creatures unseen in Orden, assemblages of organs, teeth, and claws. Animals with too many legs or too few heads. The dead came, trees that walked whose branches dripped blood came. The tale of all
+Creatures unseen in [Orden](scc:mcdm.heroes.v1/rule.world/orden), assemblages of organs, teeth, and claws. Animals with too many legs or too few heads. The dead came, trees that walked whose branches dripped blood came. The tale of all
 
 detailed in the Lay of Lady Gwenllian. And while the endurance of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) is well documented, Lady Gwenllian did not falter, did not rest.
 
@@ -27751,7 +27751,7 @@ Killing for food is likewise natural. People need to eat and the pig knows this 
 
 A wheel that harnesses the power of the river is a beautiful thing. [Humans](scc:mcdm.heroes.v1/ancestry/human) and river physically connected. A dam that blocks the river is a desecration.
 
-Some of Salorna's priests are [conduits](scc:mcdm.heroes.v1/class/conduit); some are mages of the green. Both seek to preserve the balance and respect for nature. Because much of Vasloria is covered in elven forest, Salorna's druids are also often diplomats to the elves.
+Some of Salorna's priests are [conduits](scc:mcdm.heroes.v1/class/conduit); some are mages of the green. Both seek to preserve the balance and respect for nature. Because much of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is covered in elven forest, Salorna's druids are also often diplomats to the elves.
 
 Salorna has few [censors](scc:mcdm.heroes.v1/class/censor), but not none! Favoring light armor and ranged weapons, her [censors](scc:mcdm.heroes.v1/class/censor) are often mistaken for rangers. They seek to punish those who hunt for sport, or those who would defile the natural order.
 
@@ -27819,7 +27819,7 @@ Eriarwen teaches that nature holds the power to destroy—that Mother Nature is 
 
 #### Evil Gods
 
-Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-villains! This section presents one archetypal saint from each of Vasloria's evil gods; the brothers Nikros and Cyrvis for those players who wish to play such heroes.
+Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-villains! This section presents one archetypal saint from each of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)'s evil gods; the brothers Nikros and Cyrvis for those players who wish to play such heroes.
 
 ##### Nikros the Tyrant
 
@@ -27887,13 +27887,13 @@ Eseld teaches that spite is a virtue. Only fools follow rules, and sorcery is a 
 
 ### Space Gods of the Timescape
 
-The nature and origin of the gods of the timescape is not well understood. Unlike the gods of Orden, the Space Gods are corporeal beings, usually of immense—even planetary—[size](scc:mcdm.heroes.v1/rule.character/size). Some are humanoid, others, like [Nebular](scc:mcdm.heroes.v1/god/nebular) the Star Mother and XXAXX, decidedly not so.
+The nature and origin of the gods of the timescape is not well understood. Unlike the gods of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Space Gods are corporeal beings, usually of immense—even planetary—[size](scc:mcdm.heroes.v1/rule.character/size). Some are humanoid, others, like [Nebular](scc:mcdm.heroes.v1/god/nebular) the Star Mother and XXAXX, decidedly not so.
 
 They have godlike power—greater it seems than the Innumerable Younger Gods. But there is no evidence that they can create whole realities like the Elder Gods. They are not, as far as sages can make out, the authors of the worlds or people of the timescape. They may represent the last survivors of previous realities, High Science experiments run amok, or ascended beings from ancient civilizations who outlasted the fall of their people.
 
-Rather than moral principles, the Space Gods represent abstract concepts and often alien points of view. They are more inscrutable than the gods of Orden, more capricious in their dealings with mortals. In some ways more accessible. In others, more dangerous.
+Rather than moral principles, the Space Gods represent abstract concepts and often alien points of view. They are more inscrutable than the gods of [Orden](scc:mcdm.heroes.v1/rule.world/orden), more capricious in their dealings with mortals. In some ways more accessible. In others, more dangerous.
 
-Only a handful of those who dwell on Orden have ever heard of these figures, or know that the stars are anything other than pinholes in the curtain of night.
+Only a handful of those who dwell on [Orden](scc:mcdm.heroes.v1/rule.world/orden) have ever heard of these figures, or know that the stars are anything other than pinholes in the curtain of night.
 
 #### Lords of Law and Chaos
 
@@ -27903,15 +27903,15 @@ The Space Gods do not concern themselves overmuch with what [humans](scc:mcdm.he
 
 Whether it is a tradition or some real limitation, each Space God has, instead of saints, a single herald—a mortal chosen to be the voice of the Space God and communicate with their worshippers where the god themself cannot due to their alien mind.
 
-These heralds function much the same way as saints. They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of Orden's gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their followers and take an active interest in the mortal affairs of the timescape.
+These heralds function much the same way as saints. They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their followers and take an active interest in the mortal affairs of the timescape.
 
 #### Religion in the Timescape
 
-The people of the timescape know and believe in their gods just like the people of Orden do. There are churches throughout the worlds to Quasax the Ultra Nova, temples to Mynoth the Way. Even XXAXX the Anti-God has his worshippers: the Cult of Undoing.
+The people of the timescape know and believe in their gods just like the people of [Orden](scc:mcdm.heroes.v1/rule.world/orden) do. There are churches throughout the worlds to Quasax the Ultra Nova, temples to Mynoth the Way. Even XXAXX the Anti-God has his worshippers: the Cult of Undoing.
 
-But most citizens of the timescape do not carry the gods with them in their daily lives the way the people of Orden do. The gods of the timescape are powerful and reward their worshippers, but they are remote and unknowable. Most denizens of the upper worlds view a church as just another kind of shop. A place to go to renew your soul and speak the rites that your parents spoke. For many denizens of the upper worlds, religion is more of a cultural phenomenon than a way of life.
+But most citizens of the timescape do not carry the gods with them in their daily lives the way the people of [Orden](scc:mcdm.heroes.v1/rule.world/orden) do. The gods of the timescape are powerful and reward their worshippers, but they are remote and unknowable. Most denizens of the upper worlds view a church as just another kind of shop. A place to go to renew your soul and speak the rites that your parents spoke. For many denizens of the upper worlds, religion is more of a cultural phenomenon than a way of life.
 
-The closest analog to worship in Orden to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and saint and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from Orden arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
+The closest analog to worship in [Orden](scc:mcdm.heroes.v1/rule.world/orden) to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and saint and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from [Orden](scc:mcdm.heroes.v1/rule.world/orden) arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
 
 <!-- @type: god | @id: nebular -->
 #### Nebular the Star Mother
@@ -28087,13 +28087,13 @@ Here's an example of an opening overview that Matthew Colville created for his g
 
 ##### Overview: Wards of the Last Emperor
 
-*Long before the time of Good King Omund, the lands of Vasloria and all of Orden belonged to the Caelian Empire. The last emperor, Marcus Octavius, held near-omnipotent power, which he used to protect his citizens and extend the borders of the empire. But his greatest general, Actius Vispania, betrayed him and schemed to usurp the throne.*
+*Long before the time of Good King Omund, the lands of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) and all of [Orden](scc:mcdm.heroes.v1/rule.world/orden) belonged to the Caelian Empire. The last emperor, Marcus Octavius, held near-omnipotent power, which he used to protect his citizens and extend the borders of the empire. But his greatest general, Actius Vispania, betrayed him and schemed to usurp the throne.*
 
-*Knowing he had discovered this betrayal too late to stop it, Octavius took his knowledge and his weapons and spread them across Orden, sealing them behind powerful wards. All this was done in secret. Even his closest allies did not know the location of the wards, the number of which is now lost to the mists of time. Were there seven? Nine? Legends differ.*
+*Knowing he had discovered this betrayal too late to stop it, Octavius took his knowledge and his weapons and spread them across [Orden](scc:mcdm.heroes.v1/rule.world/orden), sealing them behind powerful wards. All this was done in secret. Even his closest allies did not know the location of the wards, the number of which is now lost to the mists of time. Were there seven? Nine? Legends differ.*
 
 *The rebellion against Ajax begins here. Surely the wards of the emperor contain the power to stop the Overlord. The heroes must travel across the world and brave many dangers to find and unlock the last emperor's wards. Whoever does will wield the lost empire's power.*
 
-As you can see, this opening overview introduces the setting—Vasloria (see Orden and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
+As you can see, this opening overview introduces the setting—[Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) (see [Orden](scc:mcdm.heroes.v1/rule.world/orden) and the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). It also gives just enough history and background information for the players to understand their heroes' goal—to recover the knowledge and weapons of the last emperor, sealed behind powerful wards, in order to stop the tyrant Ajax.
 
 > **Personal Problems at the Table**
 >
@@ -28131,7 +28131,7 @@ Category frequencies aren't hard and fast rules. They're simply meant to give th
 The Wards of the Last Emperor campaign pitch has the following gameplay breakdown:
 
 - **Combat:** Medium. The heroes might tussle with the forces of Ajax, guardians of the lost wards, and other factions who desire the last emperor's treasures.
-- **Exploration:** High. The heroes must traverse Vasloria's most remote locations to find the wards.
+- **Exploration:** High. The heroes must traverse [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)'s most remote locations to find the wards.
 - **Interpersonal:** Low. Heroes will likely interact with other NPCs as they track down leads on wards, but won't have frequent conversations or negotiations with them.
 - **Intrigue:** Medium. Heroes will regularly contend with all the other entities who want the prizes hidden behind the wards, engaging in counterintelligence and sabotage.
 
@@ -28149,7 +28149,7 @@ The buy-in tells the players that their heroes are going to travel to far-flung 
 
 #### Player Option Restrictions
 
-Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all [memonek](scc:mcdm.heroes.v1/ancestry/memonek) and [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) who have come to Vasloria searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)) so that no one can take Aristocrat or Politician.
+Some campaigns include restrictions on the character options players can choose. For example, a Director might be interested in running a game where the heroes are all [memonek](scc:mcdm.heroes.v1/ancestry/memonek) and [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider) who have come to [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) searching for a secret incursion of voiceless talkers. In this case, the Director might restrict all ancestries (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)) except those two. A campaign about citizens forming a rebellion to take on a tyrannical leader might restrict career options (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)) so that no one can take Aristocrat or Politician.
 
 Put any restrictions your campaign has into your pitch!
 
@@ -28165,7 +28165,7 @@ It's also okay if, after hearing out potential players, you're not interested in
 
 #### Pitching a Published Campaign
 
-Writing your own campaign setting and adventures takes time! Maybe you want to save yourself some of that work and instead run a campaign in an official MCDM setting such as Vasloria, using our published adventures that take place in that setting. We also allow third-party publishers to make their own *Draw Steel* settings and adventures, so you might want to use one of those instead.
+Writing your own campaign setting and adventures takes time! Maybe you want to save yourself some of that work and instead run a campaign in an official MCDM setting such as [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), using our published adventures that take place in that setting. We also allow third-party publishers to make their own *Draw Steel* settings and adventures, so you might want to use one of those instead.
 
 If you want to run a campaign built on published material, give that material a read, think about anything you'd like to change, and then pitch it as you would any campaign you create yourself. When you're running published material, you're still the Director. You can change anything you don't like or that you think isn't a good fit for your group.
 
@@ -28189,7 +28189,7 @@ If your campaign takes place in a published campaign setting, read the material 
 
 As you read, make notes on anything interesting in the setting that you might want to incorporate in your campaign, as well as anything you want to change.
 
-Your top priority should be the campaign's starting location. In which district of Capital do the players start their first adventure? Which world of the timescape will be the first the heroes visit? What settlement in Vasloria holds their first adventure? Answer that question and get familiar with that place first. You'll have plenty of time to read further as you plan out your games.
+Your top priority should be the campaign's starting location. In which district of Capital do the players start their first adventure? Which world of the timescape will be the first the heroes visit? What settlement in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) holds their first adventure? Answer that question and get familiar with that place first. You'll have plenty of time to read further as you plan out your games.
 
 #### Building Your Own Setting
 
@@ -28251,7 +28251,7 @@ As part of your worldbuilding, you can create an outline of the events that migh
 Your outline should include the plans of the villains in your campaign. Review Echelons of Play in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) to get an idea of the threat level and stories the heroes should be experiencing at each stage of the campaign. An echelon outline might look like this:
 
 - **1st Echelon:** The heroes protect the village of Gravesford in the Barony of Bedegar from the forces of Lord Saxton, an usurper and tyrant loyal to Ajax. Eventually, they must bring the fight to Lord Saxton's keep in Bedegar City.
-- **2nd Echelon:** After toppling Saxton's keep, the heroes find a letter from Ajax detailing plans to amass powerful treasures from throughout Vasloria. The heroes can race to these locations to claim the treasures before Ajax's forces do.
+- **2nd Echelon:** After toppling Saxton's keep, the heroes find a letter from Ajax detailing plans to amass powerful treasures from throughout [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria). The heroes can race to these locations to claim the treasures before Ajax's forces do.
 - **3rd Echelon:** With some or all of the treasures secure, it's only a matter of time before Ajax's army seeks out the heroes. The characters can build a coalition of allies to face Ajax, but those allies first require help getting out from under the rule of the Iron Saint.
 - **4th Echelon:** Ajax brings the fight to the heroes. If the Iron Saint loses, he retreats to his sanctum, where the heroes can follow if they dare.
 
@@ -29227,7 +29227,7 @@ Heroes can't take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) unless t
 
 It's up to the players how many [respites](scc:mcdm.heroes.v1/rule.resource/respite) the heroes take in a row. Characters eager to take a long series of [respites](scc:mcdm.heroes.v1/rule.resource/respite) to undertake downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)) is fine, but they should always feel pressure to get back to the fight. Remember that villains don't stop plotting and conquering while the heroes rest. Their plans continue! If the characters are taking their sweet time with [respites](scc:mcdm.heroes.v1/rule.resource/respite) so they can create as many Healing Potions as possible, have them get wind of the latest evil actions that nearby villains are taking. Heroes wanting to defend the people and values they love had better stop respiting and start adventuring.
 
-If you prefer a campaign that has few [respites](scc:mcdm.heroes.v1/rule.resource/respite), you might want to deploy artisans, sages, and readily available project sources to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
+If you prefer a campaign that has few [respites](scc:mcdm.heroes.v1/rule.resource/respite), you might want to deploy artisans, sages, and readily available [project sources](scc:mcdm.heroes.v1/rule.downtime/project-source) to allow the heroes a chance to craft useful items and do research, since their available time to do so will be limited.
 
 #### Project Events
 
@@ -29237,7 +29237,7 @@ When you're running downtime events, be sure to rotate which heroes are in the s
 
 #### Respites Between Sessions
 
-If your play time is limited, you can have the players do everything they need to do during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) between your game sessions, provided they end a game session by taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Doing so lets you run any events over email or through a chat app. Then when folks return for the next session, they'll be ready to go with project rolls completed, [XP](scc:mcdm.heroes.v1/rule.resource/experience) tallied, and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) restored.
+If your play time is limited, you can have the players do everything they need to do during a [respite](scc:mcdm.heroes.v1/rule.resource/respite) between your game sessions, provided they end a game session by taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite). Doing so lets you run any events over email or through a chat app. Then when folks return for the next session, they'll be ready to go with [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) completed, [XP](scc:mcdm.heroes.v1/rule.resource/experience) tallied, and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) restored.
 
 #### How Many Respites?
 
@@ -29253,9 +29253,9 @@ When the heroes take a long series of [respites](scc:mcdm.heroes.v1/rule.resourc
 
 #### Optional Rule: Easier Crafting
 
-Every crafting project requires that a hero obtain the project's item prerequisite and a project source in a specific language before the project can be started. These requirements exist so you can control the pace at which heroes can craft an arsenal of treasures to defeat their foes.
+Every [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) requires that a hero obtain the project's [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) in a specific language before the project can be started. These requirements exist so you can control the pace at which heroes can craft an arsenal of treasures to defeat their foes.
 
-That said, you can make it easier to craft treasures and other items by changing the rules to require either the item prerequisite or the project source but not both, or by removing the language restrictions on project sources. This works well in campaigns that don't have a lot of [respites](scc:mcdm.heroes.v1/rule.resource/respite). Just keep in mind that removing these barriers can lead to the heroes crafting more items and unbalancing the game in their favor.
+That said, you can make it easier to craft treasures and other items by changing the rules to require either the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) or the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) but not both, or by removing the language restrictions on [project sources](scc:mcdm.heroes.v1/rule.downtime/project-source). This works well in campaigns that don't have a lot of [respites](scc:mcdm.heroes.v1/rule.resource/respite). Just keep in mind that removing these barriers can lead to the heroes crafting more items and unbalancing the game in their favor.
 
 ### Granting Rewards
 
@@ -29267,11 +29267,11 @@ Whenever you're planning on awarding treasures to the heroes, focus on items tha
 
 Once you have treasures in mind, you can use the following progression as a baseline for the heroes to earn those treasures:
 
-- A party should earn two leveled treasures per hero by 10th level. Some heroes need only one leveled treasure to be happy, though, so if you feel as if giving out another leveled treasure wouldn't actually help a character, you can swap that item out for a trinket of the character's current echelon.
-- A party should earn one trinket per hero per echelon. Any trinket earned should be of a character's current echelon or lower.
-- A party should also earn one to three consumables of their current echelon or lower each level.
+- A party should earn two [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) per hero by 10th level. Some heroes need only one [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) to be happy, though, so if you feel as if giving out another [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) wouldn't actually help a character, you can swap that item out for a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of the character's current echelon.
+- A party should earn one [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) per hero per echelon. Any [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) earned should be of a character's current echelon or lower.
+- A party should also earn one to three [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) of their current echelon or lower each level.
 
-You don't have to award the full complement of treasure to heroes especially those using their downtime to craft things! You can spread out the pace at which characters earn treasures by having them find the project sources and item prerequisites for crafting an item instead of finding an item outright.
+You don't have to award the full complement of treasure to heroes especially those using their downtime to craft things! You can spread out the pace at which characters earn treasures by having them find the [project sources](scc:mcdm.heroes.v1/rule.downtime/project-source) and [item prerequisites](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for crafting an item instead of finding an item outright.
 
 When you're planning an adventure, put the treasures and crafting materials the heroes can earn into your adventure outline (see Creating Adventures earlier in this chapter). Enemies who have access to treasures that can help them against the heroes don't keep those treasures hidden away. They use them in battle, after which victorious characters can claim them!
 
@@ -29279,16 +29279,16 @@ When you're planning an adventure, put the treasures and crafting materials the 
 
 For a campaign in which the heroes start at 2nd level or higher, you can give those heroes the following starting treasures:
 
-- At 1st echelon, each hero starts with a 1st-echelon trinket.
-- At 2nd echelon, each hero starts with a leveled treasure and a 1st-echelon trinket.
-- At 3rd echelon, each hero starts with two leveled treasures, a 1st-echelon trinket, and a 2nd-echelon trinket.
-- At 4th echelon, each hero starts with two leveled treasures, a 1st-echelon trinket, a 2nd-echelon trinket, and a 3rd-echelon trinket.
+- At 1st echelon, each hero starts with a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket).
+- At 2nd echelon, each hero starts with a [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) and a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket).
+- At 3rd echelon, each hero starts with two [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket), and a 2nd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket).
+- At 4th echelon, each hero starts with two [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), a 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket), a 2nd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket), and a 3rd-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket).
 
-The players can choose their hero's treasures, and can replace any leveled treasure or trinket for a consumable treasure of the hero's echelon or lower.
+The players can choose their hero's treasures, and can replace any [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) or [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) for a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure of the hero's echelon or lower.
 
 #### Making New Treasures
 
-You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
+You can easily create new types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
 You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type), and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
 
