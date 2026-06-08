@@ -573,47 +573,47 @@ The shared move actions, main actions, maneuvers, and free strikes from Chapter 
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Advance | advance | `mcdm.heroes.v1/feature.trait.common.move-actions/advance` |
-| Disengage | disengage | `mcdm.heroes.v1/feature.trait.common.move-actions/disengage` |
-| Ride | ride | `mcdm.heroes.v1/feature.trait.common.move-actions/ride` |
-| Charge | charge | `mcdm.heroes.v1/feature.trait.common.main-actions/charge` |
-| Defend | defend | `mcdm.heroes.v1/feature.trait.common.main-actions/defend` |
-| Free Strike | free strike, free strikes | `mcdm.heroes.v1/feature.trait.common.main-actions/free-strike` |
-| Heal | heal | `mcdm.heroes.v1/feature.trait.common.main-actions/heal` |
-| Aid Attack | aid attack | `mcdm.heroes.v1/feature.trait.common.maneuvers/aid-attack` |
-| Catch Breath | catch breath | `mcdm.heroes.v1/feature.trait.common.maneuvers/catch-breath` |
-| Escape Grab | escape grab | `mcdm.heroes.v1/feature.trait.common.maneuvers/escape-grab` |
-| Grab | grab | `mcdm.heroes.v1/feature.trait.common.maneuvers/grab` |
-| Hide | hide | `mcdm.heroes.v1/feature.trait.common.maneuvers/hide` |
-| Knockback | knockback | `mcdm.heroes.v1/feature.trait.common.maneuvers/knockback` |
-| Make or Assist a Test | make or assist a test | `mcdm.heroes.v1/feature.trait.common.maneuvers/make-or-assist-a-test` |
-| Search for Hidden Creatures | search for hidden creatures | `mcdm.heroes.v1/feature.trait.common.maneuvers/search-for-hidden-creatures` |
-| Stand Up | stand up | `mcdm.heroes.v1/feature.trait.common.maneuvers/stand-up` |
-| Use Consumable | use consumable | `mcdm.heroes.v1/feature.trait.common.maneuvers/use-consumable` |
+| Advance | advance | `mcdm.heroes.v1/feature.common.move-actions/advance` |
+| Disengage | disengage | `mcdm.heroes.v1/feature.common.move-actions/disengage` |
+| Ride | ride | `mcdm.heroes.v1/feature.common.move-actions/ride` |
+| Charge | charge | `mcdm.heroes.v1/feature.common.main-actions/charge` |
+| Defend | defend | `mcdm.heroes.v1/feature.common.main-actions/defend` |
+| Free Strike | free strike, free strikes | `mcdm.heroes.v1/feature.common.main-actions/free-strike` |
+| Heal | heal | `mcdm.heroes.v1/feature.common.main-actions/heal` |
+| Aid Attack | aid attack | `mcdm.heroes.v1/feature.common.maneuvers/aid-attack` |
+| Catch Breath | catch breath | `mcdm.heroes.v1/feature.common.maneuvers/catch-breath` |
+| Escape Grab | escape grab | `mcdm.heroes.v1/feature.common.maneuvers/escape-grab` |
+| Grab | grab | `mcdm.heroes.v1/feature.common.maneuvers/grab` |
+| Hide | hide | `mcdm.heroes.v1/feature.common.maneuvers/hide` |
+| Knockback | knockback | `mcdm.heroes.v1/feature.common.maneuvers/knockback` |
+| Make or Assist a Test | make or assist a test | `mcdm.heroes.v1/feature.common.maneuvers/make-or-assist-a-test` |
+| Search for Hidden Creatures | search for hidden creatures | `mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures` |
+| Stand Up | stand up | `mcdm.heroes.v1/feature.common.maneuvers/stand-up` |
+| Use Consumable | use consumable | `mcdm.heroes.v1/feature.common.maneuvers/use-consumable` |
 | Melee Weapon Free Strike | melee weapon free strike | `mcdm.heroes.v1/feature.ability.common/melee-weapon-free-strike` |
 | Ranged Weapon Free Strike | ranged weapon free strike | `mcdm.heroes.v1/feature.ability.common/ranged-weapon-free-strike` |
 
 ## Heroic Resources (9 terms)
 
-Each class's Heroic Resource trait (`feature.trait.<class>.level-1/<resource>`). Added 2026-06-07 (FOLLOWUPS #6 part C).
+Each class's Heroic Resource feature (`feature.<class>.level-1/<resource>`). Added 2026-06-07 (FOLLOWUPS #6 part C). (These are plain class `feature`s, not `trait`s, post-taxonomy-refactor 2026-06-07.)
 
 **Disambiguation required — link sparingly.** These words are overwhelmingly used *inside their own class section* (the definition/usage site — not cross-linked, consistent with the prior passes that linked each resource only once, in its class progression table) or as ordinary English: "speed is of the **essence**", "personal **drama**", "a spirit of **wrath**", "a moment of **focus**", "**ferocity** of the Primordial Chaos". **Link only genuine cross-references *outside* the owning class** — chiefly the Introduction glossary definition line (`**Wrath:** The censor's Heroic Resource.`), the "Heroic Resources" overview list, and explicit mechanic refs in other chapters ("spend 1 **piety**", "gain 1 additional **drama**"). Do **not** link within-class mentions or flavor uses.
 
 | Display Name | Class | SCC Code |
 |-------------|-------|----------|
-| Wrath | Censor | `mcdm.heroes.v1/feature.trait.censor.level-1/wrath` |
-| Piety | Conduit | `mcdm.heroes.v1/feature.trait.conduit.level-1/piety` |
-| Essence | Elementalist | `mcdm.heroes.v1/feature.trait.elementalist.level-1/essence` |
-| Ferocity | Fury | `mcdm.heroes.v1/feature.trait.fury.level-1/ferocity` |
-| Discipline | Null | `mcdm.heroes.v1/feature.trait.null.level-1/discipline` |
-| Insight | Shadow | `mcdm.heroes.v1/feature.trait.shadow.level-1/insight` |
-| Focus | Tactician | `mcdm.heroes.v1/feature.trait.tactician.level-1/focus` |
-| Clarity | Talent | `mcdm.heroes.v1/feature.trait.talent.level-1/clarity-and-strain` |
-| Drama | Troubadour | `mcdm.heroes.v1/feature.trait.troubadour.level-1/drama` |
+| Wrath | Censor | `mcdm.heroes.v1/feature.censor.level-1/wrath` |
+| Piety | Conduit | `mcdm.heroes.v1/feature.conduit.level-1/piety` |
+| Essence | Elementalist | `mcdm.heroes.v1/feature.elementalist.level-1/essence` |
+| Ferocity | Fury | `mcdm.heroes.v1/feature.fury.level-1/ferocity` |
+| Discipline | Null | `mcdm.heroes.v1/feature.null.level-1/discipline` |
+| Insight | Shadow | `mcdm.heroes.v1/feature.shadow.level-1/insight` |
+| Focus | Tactician | `mcdm.heroes.v1/feature.tactician.level-1/focus` |
+| Clarity | Talent | `mcdm.heroes.v1/feature.talent.level-1/clarity-and-strain` |
+| Drama | Troubadour | `mcdm.heroes.v1/feature.troubadour.level-1/drama` |
 
 ## Generic per-class mechanics — deliberately NOT linkable
 
-`Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.trait.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See FOLLOWUPS #6 and `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md`.
+`Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See FOLLOWUPS #6 and `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md`.
 
 ## Rules (`rule.<group>/<term>`)
 

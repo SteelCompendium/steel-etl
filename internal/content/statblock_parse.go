@@ -224,6 +224,9 @@ func parseOneFeature(block string) map[string]any {
 	} else if len(prose) > 0 {
 		// No power roll and no keyword/usage table → a trait.
 		if _, hasUsage := f["usage"]; !hasUsage {
+			// Monster statblocks ARE a trait home (Monsters book defines traits
+			// as passive creature features), so this stays `trait` under the
+			// narrowed taxonomy: docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md
 			f["feature_type"] = "trait"
 		}
 		f["effects"] = []map[string]any{{"effect": strings.Join(prose, "\n")}}

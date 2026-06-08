@@ -100,6 +100,9 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 
 	// Build type path: feature.ability.{parent}.level-{N}
 	// Companion abilities use feature.ability.companion.{species}.level-{N}.
+	// `ability` is the marked rigorous specialization in the hub-and-spoke feature
+	// taxonomy (see docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md);
+	// plain features (feature.go) carry no kind segment.
 	typePath := []string{"feature", "ability"}
 	if companionID != "" {
 		typePath = append(typePath, "companion", companionID)

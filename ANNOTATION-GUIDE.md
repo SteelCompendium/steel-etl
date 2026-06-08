@@ -98,7 +98,26 @@ The parser extracts most structured data from the **body text** of each section 
 | @type | Use for | Parser extracts |
 |-------|---------|-----------------|
 | `ability` | Individual abilities (Gouge, Brutal Slam...) | Keywords, action, distance, target, power roll, effect, flavor |
-| `feature` | Non-ability features (Growing Ferocity...) | Name, description |
+| `feature` | Non-ability features (Growing Ferocity, A Beyonding of Vision...) | Name, description |
+
+> #### ⚠️ Feature / ability / trait taxonomy (`trait` narrowed 2026-06-07)
+>
+> A **feature** is the umbrella; an **ability** is a feature plus combat rigor
+> (keywords/usage/distance/target/power roll). You only ever **author** `@type:
+> ability` or `@type: feature` — you never write `@type: trait`. The parser
+> derives the **`feature_type`** (and the SCC path shape) from the feature's home:
+>
+> | `feature_type` | When | SCC path |
+> |----------------|------|----------|
+> | `ability` | `@type: ability`, any home | `feature.ability.<entity>…` |
+> | `trait` | `@type: feature` **and** home is an **ancestry** or **monster** (the only books that say "trait") | `feature.trait.<entity>…` |
+> | `feature` | `@type: feature`, every other home (class/domain/college/**kit**/**companion**/common) | `feature.<entity>…` (no kind segment) |
+>
+> **`trait` no longer means "any non-ability feature."** Before 2026-06-07 every
+> non-ability feature was a `trait`; now `trait` is reserved for ancestry traits
+> and monster statblock passives. `kit` and `companion` are **not** trait homes
+> (the Beastheart book calls companion grants "features"). See
+> `docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md`.
 
 ### Character Creation
 
