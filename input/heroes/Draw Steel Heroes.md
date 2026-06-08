@@ -862,7 +862,7 @@ Each time your hero survives a combat encounter in which the party's objectives 
 
 ##### Victories For Noncombat Challenges
 
-When your hero successfully overcomes a big challenge that doesn't involve combat, the Director can award you 1 Victory. Such challenges can include things such as a particularly complicated and deadly trap, a negotiation, a montage test, a complicated puzzle, or the execution of a clever idea that avoids a battle. Especially difficult challenges might earn you more than 1 Victory.
+When your hero successfully overcomes a big challenge that doesn't involve combat, the Director can award you 1 Victory. Such challenges can include things such as a particularly complicated and deadly trap, a negotiation, a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a complicated puzzle, or the execution of a clever idea that avoids a battle. Especially difficult challenges might earn you more than 1 Victory.
 
 ##### Victories Reset
 
@@ -5236,7 +5236,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) gran
 <!-- @type: feature -->
 ##### It Was Foretold
 
-Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a montage test, you can make one free test before the montage begins, which counts as an earned success or failure as usual.
+Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can make one free test before the montage begins, which counts as an earned success or failure as usual.
 
 <!-- @type: feature -->
 ##### Judge of Character
@@ -14577,17 +14577,17 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 <!-- @type: feature -->
 ##### Asymmetric Warfare
 
-You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the intrigue skill group. Additionally, you can use skills from the intrigue skill group to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.
+You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the intrigue skill group. Additionally, you can use skills from the intrigue skill group to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.
 
 <!-- @type: feature -->
 ##### Grand Strategy
 
-You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.
+You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.
 
 <!-- @type: feature -->
 ##### Shock and Awe
 
-You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a montage test or negotiation, you can obtain one automatic success on a test made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.
+You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -15455,7 +15455,7 @@ Your [talent tradition](scc:mcdm.heroes.v1/feature.talent.level-1/talent-traditi
 <!-- @type: feature -->
 ##### Ease the Hours
 
-You can increase the number of rounds in a montage test by 1 if the test would end before the heroes hit the success limit.
+You can increase the number of rounds in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by 1 if the test would end before the heroes hit the success limit.
 
 <!-- @type: feature -->
 ##### Ease the Mind
@@ -18905,17 +18905,17 @@ You can use the Handle Animals skill to interact with nonsapient creatures who a
 <!-- @type: perk | @id: put-your-back-into-it -->
 #### Put Your Back Into It!
 
-During montage tests, whenever you make a test to assist a test and obtain a tier 1 outcome, the assisted test doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per montage test, you can turn an ally's tier 1 test outcome into a tier 2 outcome.
+During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you make a test to assist a test and obtain a tier 1 outcome, the assisted test doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can turn an ally's tier 1 test outcome into a tier 2 outcome.
 
 <!-- @type: perk -->
 #### Team Leader
 
-At the start of a group test or montage test, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make tests as if they also had any skill you have from the exploration group.
+At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make tests as if they also had any skill you have from the exploration group.
 
 <!-- @type: perk -->
 #### Teamwork
 
-When you take your first turn during any montage test, you can both make a test and assist another hero's test.
+When you take your first turn during any [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can both make a test and assist another hero's test.
 
 <!-- @type: perk -->
 #### Wood Wise
@@ -20410,7 +20410,7 @@ That said, such clever ideas often work for free the first time, but the Directo
 
 Each test has the following steps:
 
-The Director decides that a hero's activities call for a test and asks the hero's player to make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) using an appropriate [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) (see [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and Tests below). The Director then selects a difficulty for the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), either secretly or publicly (see Test Difficulty below).
+The Director decides that a hero's activities call for a test and asks the hero's player to make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) using an appropriate [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) (see [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and Tests below). The Director then selects a difficulty for the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), either secretly or publicly (see [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) below).
 
 The player makes the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). If the character has a skill that applies to the test (see Skills later in this chapter), they can ask the Director if the skill applies and justify the use of the skill. If the Director agrees the skill applies, the hero gains a +2 bonus to the roll.
 
@@ -20450,6 +20450,7 @@ You make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test whenever 
 >
 > That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *https://mcdm.gg/SafetyToolkit*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
 
+<!-- @type: rule | @group: test | @id: test-difficulty -->
 #### Test Difficulty
 
 The Director decides how difficult a task that requires a test is: easy, medium, or hard. If a task seems as though it's easier than easy, then no test is necessary. The hero simply accomplishes the task. If the task seems harder than hard, then the Director is free to decide that it's impossible to complete with a test.
@@ -20519,7 +20520,7 @@ Common consequences for failing a test include the following:
 - Triggering a trap or hazard that captures or significantly harms you or an ally
 - Breaking an important piece of equipment that is difficult to replace or repair
 - Thinking you know something that you don't
-- Getting stuck in a situation that must be resolved with a negotiation or a montage test you didn't need to make before
+- Getting stuck in a situation that must be resolved with a negotiation or a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) you didn't need to make before
 
 In lieu of other consequences, the Director also has the option to gain 2 additional Malice—a resource that creatures run by the Director use in combat—at the start of the next combat encounter.
 
@@ -20602,7 +20603,7 @@ For example, when an assassin attempts to ambush the heroes while they sit aroun
 
 An NPC might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a test to discern the NPC's honesty.
 
-As an optional rule, the Director is also free to ask the heroes to make a reactive test to a deceptive NPC instead (see Reactive Tests below) whenever they choose.
+As an optional rule, the Director is also free to ask the heroes to make a [reactive test](scc:mcdm.heroes.v1/rule.test/reactive-test) to a deceptive NPC instead (see [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) below) whenever they choose.
 
 <!-- @type: rule | @group: dice | @id: opposed-power-roll -->
 #### Opposed Power Rolls
@@ -21010,7 +21011,7 @@ Skills from the lore skill group are used to research and recall specific inform
 
 Rewards for tests made with lore skills typically include learning an extra piece of useful information.
 
-Consequences for tests made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard tests with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (see the Optional Rule: Secret Reactive Tests sidebar earlier in this chapter).
+Consequences for tests made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard tests with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (see the Optional Rule: Secret [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) sidebar earlier in this chapter).
 
 ###### Lore Skills Table
 
@@ -21115,7 +21116,7 @@ Alyssa rolls 2d10 and gets a 13. She then adds her [Might](scc:mcdm.heroes.v1/ru
 
 **Alyssa:** *A 17! That's tier 3, baby!*
 
-The Director checks the Test Difficulty Outcomes table to confirm that a tier 3 outcome is a success on a hard test.
+The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table to confirm that a tier 3 outcome is a success on a hard test.
 
 **Director:** *Okay, you're on top of the wall. You notice a few guards patrolling atop the opposite side of the wall in the distance, but they're looking out at the city right now.*
 
@@ -21131,7 +21132,7 @@ Given the rope, the Director decides that this second climb attempt is an easy t
 
 **Grace:** *13! That's a tier 2 outcome for Val.*
 
-The Director checks the Test Difficulty Outcomes table once more, confirming that a tier 2 outcome is a success on an easy test.
+The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table once more, confirming that a tier 2 outcome is a success on an easy test.
 
 **Director:** *Good news! You make it to the top of the wall alongside Jorn.*
 
@@ -21220,21 +21221,21 @@ Whenever two or more heroes attempt to overcome a single, simple task together t
 
 #### Group Test Difficulty
 
-The Director determines the difficulty of a group test the same way they do for individual tests. Group tests can be easy, medium, or hard.
+The Director determines the difficulty of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) the same way they do for individual tests. [Group tests](scc:mcdm.heroes.v1/rule.test/group-test) can be easy, medium, or hard.
 
 #### Making a Group Test
 
-Each hero participating in the group test makes the test individually as usual, but the Director waits until all the tests have been made to interpret the outcome. A hero who is participating in the group test can't assist another hero participating in the test.
+Each hero participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) makes the test individually as usual, but the Director waits until all the tests have been made to interpret the outcome. A hero who is participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) can't assist another hero participating in the test.
 
 #### Group Test Outcome
 
-When interpreting the outcome of a group test, the Director first determines if the task succeeded or not before figuring out rewards and consequences. If half or more of the heroes making the group test succeed, then the group test succeeds. Otherwise, the group test fails.
+When interpreting the outcome of a [group test](scc:mcdm.heroes.v1/rule.test/group-test), the Director first determines if the task succeeded or not before figuring out rewards and consequences. If half or more of the heroes making the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeed, then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeeds. Otherwise, the [group test](scc:mcdm.heroes.v1/rule.test/group-test) fails.
 
 If the heroes succeeded and half or more of them obtained a reward from the test, the Director gives the group a collective reward and ignores any consequences incurred in the test. This collective reward should be equivalent to earning two individual rewards. In fact, it could be two consumable items, juicy pieces of information, or [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, it could also be something more tailored to the task. For instance, if the heroes earn a collective reward while sneaking through the camp of an enemy army, the Director might allow them to sabotage a bunch of war engines or steal a few horses on their way out.
 
-If the heroes failed the group test and more than half of them incurred a consequence as a result, the Director gives the group a collective consequence and ignores any earned rewards. This collective consequence should affect everyone. An easy option is for the stress of failing the test to cause each hero to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), or for the Director to gain 2 Malice per hero at the start of the next combat encounter. But the consequence could also be tailored to the task. For instance, if the heroes fail in their attempt to sneak through the camp of an enemy army, they're spotted and the camp immediately goes on alert as waves of enemies attack them.
+If the heroes failed the [group test](scc:mcdm.heroes.v1/rule.test/group-test) and more than half of them incurred a consequence as a result, the Director gives the group a collective consequence and ignores any earned rewards. This collective consequence should affect everyone. An easy option is for the stress of failing the test to cause each hero to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), or for the Director to gain 2 Malice per hero at the start of the next combat encounter. But the consequence could also be tailored to the task. For instance, if the heroes fail in their attempt to sneak through the camp of an enemy army, they're spotted and the camp immediately goes on alert as waves of enemies attack them.
 
-If fewer than half the heroes incur a consequence or earn a reward on their individual tests, then the group test simply succeeds or fails.
+If fewer than half the heroes incur a consequence or earn a reward on their individual tests, then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) simply succeeds or fails.
 
 <!-- @type: rule | @group: test | @id: montage-test -->
 ### Montage Tests
@@ -21249,51 +21250,51 @@ Once a hero makes a test, assists with a test, or uses an ability or other optio
 
 #### Time and Stakes
 
-As the name suggests, montage tests create a kind of cinematic montage in the action of the game. A montage test can take place over the course of several hours or days, with each individual test or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a montage test (see Sample Montage Test below).
+As the name suggests, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) create a kind of cinematic montage in the action of the game. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can take place over the course of several hours or days, with each individual test or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) (see Sample [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) below).
 
-The Director should deploy montage tests only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A montage test is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a respite to use a new kit, can be narrated in montage style, but they don't require a montage test.
+The Director should deploy [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a respite to use a new kit, can be narrated in montage style, but they don't require a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 #### Director Sets the Scene
 
-At the start of a montage test, the Director should describe the scenario underlying the task at hand, and the various challenges the heroes might face as they attempt to collectively accomplish it. For example, if the heroes are chasing down a pickpocket through a crowded market, the Director might talk about the throngs of innocent people blocking the way forward, obscuring the characters' vision, and making noise that complicates attempts to hear the thief's nimble footsteps. There are also traveling carts to dodge, the speed and dexterity of the pursued character to contend with, and a pack of stray dogs who chase after anyone who sprints through the market. Describing these obstacles gives the heroes ideas about what they're trying to overcome as they attempt to achieve their goals.
+At the start of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the Director should describe the scenario underlying the task at hand, and the various challenges the heroes might face as they attempt to collectively accomplish it. For example, if the heroes are chasing down a pickpocket through a crowded market, the Director might talk about the throngs of innocent people blocking the way forward, obscuring the characters' vision, and making noise that complicates attempts to hear the thief's nimble footsteps. There are also traveling carts to dodge, the speed and dexterity of the pursued character to contend with, and a pack of stray dogs who chase after anyone who sprints through the market. Describing these obstacles gives the heroes ideas about what they're trying to overcome as they attempt to achieve their goals.
 
 #### Individual Tests in Montage Tests
 
-The difficulty of each individual test in a montage test is set by the Director and can vary from test to test. For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) test. Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.
+The difficulty of each individual test in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is set by the Director and can vary from test to test. For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) test. Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.
 
-The same rules and guidelines that apply to all individual tests apply in montage tests. If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the test should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual test outcomes shouldn't halt the story.
+The same rules and guidelines that apply to all individual tests apply in [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the test should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual test outcomes shouldn't halt the story.
 
-The Director should couch each success or failure as it relates to the overall goal of the montage test. If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) test to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
+The Director should couch each success or failure as it relates to the overall goal of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) test to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
 
-The rewards and consequences of individual tests made during a montage test are handled on an individual basis. The Director can use the default of gaining additional Malice in the next combat encounter for consequences and having the party gain [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) for rewards to keep the montage moving.
+The rewards and consequences of individual tests made during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) are handled on an individual basis. The Director can use the default of gaining additional Malice in the next combat encounter for consequences and having the party gain [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) for rewards to keep the montage moving.
 
 #### Can't Use the Same Skill Twice
 
-An individual character can't use the same skill more than once in a montage test. Though multiple heroes can use the same skill, a test or an assist with a specific skill represents each characters' entire contribution to the montage test with that skill. At the Director's discretion, this restriction can be lifted for prolonged montage tests, or for montage tests that are limited in scope and have only a small number of skills that apply to them.
+An individual character can't use the same skill more than once in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Though multiple heroes can use the same skill, a test or an assist with a specific skill represents each characters' entire contribution to the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) with that skill. At the Director's discretion, this restriction can be lifted for prolonged [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), or for [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) that are limited in scope and have only a small number of skills that apply to them.
 
 #### New Challenges for Each Test
 
-In general, when a hero makes a test as part of a montage test, they should choose new obstacles to overcome that haven't already been overcome as part of the test. If the heroes are chasing a thief through the marketplace and one of them has already distracted the pack of stray dogs with a deft hand and a piece of meat, additional tests made to distract the animals don't count toward the outcome of the montage test.
+In general, when a hero makes a test as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), they should choose new obstacles to overcome that haven't already been overcome as part of the test. If the heroes are chasing a thief through the marketplace and one of them has already distracted the pack of stray dogs with a deft hand and a piece of meat, additional tests made to distract the animals don't count toward the outcome of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-When it fits the scenario, the Director can adjust this restriction. If part of a montage test involves searching for people trapped in a burning building, the Director is likely to allow multiple tests to fight or avoid the fire, since this will happen throughout the montage test, not just once.
+When it fits the scenario, the Director can adjust this restriction. If part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) involves searching for people trapped in a burning building, the Director is likely to allow multiple tests to fight or avoid the fire, since this will happen throughout the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), not just once.
 
 ##### Introducing More Challenges
 
-During a montage test, a Director can introduce new challenges for the heroes to face. While attempting to run out of a burning building from the top floor, the characters might discover that by the time they reach the second floor, beams are starting to fall and glass windows are exploding as the structure starts to collapse. These new challenges can be incorporated into the tests the heroes subsequently make.
+During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a Director can introduce new challenges for the heroes to face. While attempting to run out of a burning building from the top floor, the characters might discover that by the time they reach the second floor, beams are starting to fall and glass windows are exploding as the structure starts to collapse. These new challenges can be incorporated into the tests the heroes subsequently make.
 
 #### Total Successes and Failures
 
-The Director or another player will track the total number of successes and failures the heroes earn during a montage test. Every montage test has a success limit and a failure limit. When the number of successful tests equals the success limit, the montage test ends and the heroes achieve total success (see Montage Test Outcomes below). The montage test can also end when the number of failed tests equals the failure limit, and the heroes suffer total failure.
+The Director or another player will track the total number of successes and failures the heroes earn during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Every [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has a success limit and a failure limit. When the number of successful tests equals the success limit, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) ends and the heroes achieve total success (see [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Outcomes below). The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can also end when the number of failed tests equals the failure limit, and the heroes suffer total failure.
 
 #### Limited Rounds
 
-A montage test should last only 2 montage test rounds. If the heroes don't end the montage test by achieving the success limit or failure limit, the montage test ends when the second montage test round is over. This time limit helps to keep a montage test from becoming a slog, and prevents heroes from simply using their turns to assist the one hero with the best chance of success. This can inspire each hero to be a more active participant in the montage test. That said, the Director can increase the number of rounds a montage test lasts if they wish to create a particularly grueling challenge.
+A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) should last only 2 [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) rounds. If the heroes don't end the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by achieving the success limit or failure limit, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) ends when the second [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round is over. This time limit helps to keep a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) from becoming a slog, and prevents heroes from simply using their turns to assist the one hero with the best chance of success. This can inspire each hero to be a more active participant in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). That said, the Director can increase the number of rounds a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) lasts if they wish to create a particularly grueling challenge.
 
 #### Montage Test Difficulty
 
-The Director determines the success limit and failure limit of a montage test. They can share this information or keep it secret, depending on what feels the most fun and dramatic for the situation and the players.
+The Director determines the success limit and failure limit of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). They can share this information or keep it secret, depending on what feels the most fun and dramatic for the situation and the players.
 
-In general, the higher the success limit, the harder and more complicated it is for the heroes to overcome the montage test, since a hero can't make the same test twice. The Montage Test Difficulty table gives a recommended success limit and failure limit for easy, moderate, and hard montage tests for groups with five heroes.
+In general, the higher the success limit, the harder and more complicated it is for the heroes to overcome the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), since a hero can't make the same test twice. The [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Difficulty table gives a recommended success limit and failure limit for easy, moderate, and hard [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) for groups with five heroes.
 
 ###### Montage Test Difficulty Table
 
@@ -21303,14 +21304,14 @@ In general, the higher the success limit, the harder and more complicated it is 
 | Moderate                | 6             | 4             |
 | Hard                    | 7             | 3             |
 
-For larger or smaller groups, the Director can make the following adjustments to keep montage tests achievable but challenging:
+For larger or smaller groups, the Director can make the following adjustments to keep [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) achievable but challenging:
 
-- For four or fewer heroes, decrease the success limit and failure limits by 1 (to a minimum of 2) for every hero fewer than five. For example, if a group has only three heroes, an easy montage test has a success limit and failure limit of 3.
+- For four or fewer heroes, decrease the success limit and failure limits by 1 (to a minimum of 2) for every hero fewer than five. For example, if a group has only three heroes, an easy [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has a success limit and failure limit of 3.
 - For six or more heroes, increase the success and failure limits by 1 for every hero more than five.
 
 #### Montage Test Outcomes
 
-A montage test can have three different outcomes:
+A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can have three different outcomes:
 
 - If the heroes hit the success limit before hitting the failure limit or before the time runs out for the test, they achieve total success.
 - If the heroes hit the failure limit or time runs out, and if they've achieved at least two more successes than failures, they achieve a partial success.
@@ -21318,51 +21319,51 @@ A montage test can have three different outcomes:
 
 ##### Total Success
 
-If the heroes earn a total success, they achieve what they set out to do without complication. For instance, if the heroes engaged in a montage test to cross a desert and reach a city before a tyrant's army arrives there and levels the place, a total success sees them arrive at the city gates with plenty of time to warn people of the impending assault.
+If the heroes earn a total success, they achieve what they set out to do without complication. For instance, if the heroes engaged in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to cross a desert and reach a city before a tyrant's army arrives there and levels the place, a total success sees them arrive at the city gates with plenty of time to warn people of the impending assault.
 
-The heroes earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve total success on an easy or moderate montage test, and 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) on a hard montage test.
+The heroes earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve total success on an easy or moderate [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), and 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) on a hard [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Partial Success
 
 If the heroes earn a partial success, they succeed at what they set out to do, but there is a complication or a cost involved. For instance, when crossing the desert to reach and warn the city of the tyrant's army, a mixed success sees the characters arrive at the city gates with the enemy forces just behind them. Alternatively, the Director might allow the heroes to arrive well before the army, but they don't cover their movements well enough. The tyrant realizes the city has been warned and decides to call in a favor to have a powerful dragon join the siege.
 
-The heroes earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve partial success on a hard or moderate montage test.
+The heroes earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve partial success on a hard or moderate [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Total Failure
 
-If the heroes suffer total failure, they don't achieve what they set out to do. Just as with standard tests, failure on a group test shouldn't bring a story to a halt. Total failure should make things more interesting and challenging! With a total failure in a montage test to cross the desert and warn the city, the characters arrive at the city to find it already under siege by the tyrant.
+If the heroes suffer total failure, they don't achieve what they set out to do. Just as with standard tests, failure on a [group test](scc:mcdm.heroes.v1/rule.test/group-test) shouldn't bring a story to a halt. Total failure should make things more interesting and challenging! With a total failure in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to cross the desert and warn the city, the characters arrive at the city to find it already under siege by the tyrant.
 
 #### Sample Montage Test
 
 Four heroes must cross the vast and inhospitable Infinite Desert to warn the city of Ahset that the tyrannical Empress Vardo is coming to conquer them. If the characters arrive in time, they can organize the defenses of the city, giving its people a greater chance of defeating the tyrant.
 
-The Director determines that crossing the desert is a montage test of hard difficulty. With four heroes involved, the success limit is 6 and the failure limit is 2 as the montage test begins.
+The Director determines that crossing the desert is a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) of hard difficulty. With four heroes involved, the success limit is 6 and the failure limit is 2 as the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) begins.
 
 ##### Montage Test Round 1
 
 When the test begins, the Director sets the scene. They tell the players that the desert has extreme temperatures, sudden sandstorms, high dunes to cross, deep sand, chasms, and quicksand lakes. The Director decides that the challenges of dunes, deep sand, and quicksand can be tackled multiple times in the test, since the Infinite Desert is filled with these hazards.
 
-Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy test. Urdoncara makes the test and gets a total of 12, earning 1 success for the montage test.
+Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy test. Urdoncara makes the test and gets a total of 12, earning 1 success for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the test and fails with a consequence, which the Director decides will cause him to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on his next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) due to the exertion. The montage test has 1 success and 1 failure.
+Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the test and fails with a consequence, which the Director decides will cause him to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on his next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) due to the exertion. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 1 success and 1 failure.
 
-Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the montage test.
+Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the montage test an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test. At the end of the first montage test round, the heroes have 3 successes and 1 failure.
+Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test. At the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the heroes have 3 successes and 1 failure.
 
 ##### Interlude
 
-Before the next montage test round, the Director pauses the montage test to run a battle with a kingfissure worm, who attacks the heroes as they cross over an ancient ruin partially buried in the sand. After the heroes defeat the kingfissure worm, the test continues.
+Before the next [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the Director pauses the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to run a battle with a kingfissure worm, who attacks the heroes as they cross over an ancient ruin partially buried in the sand. After the heroes defeat the kingfissure worm, the test continues.
 
 ##### Montage Test Round 2
 
-Urdoncara wants to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the test thanks to the [edge](scc:mcdm.heroes.v1/rule.dice/edge) from Val's earlier success. The montage test has 4 successes and 1 failure.
+Urdoncara wants to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the test thanks to the [edge](scc:mcdm.heroes.v1/rule.dice/edge) from Val's earlier success. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 4 successes and 1 failure.
 
-Jorn, eager to prove himself after his last failure, asks to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the test at medium difficulty. Making the test with a [bane](scc:mcdm.heroes.v1/rule.dice/bane) because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The montage test has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
+Jorn, eager to prove himself after his last failure, asks to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the test at medium difficulty. Making the test with a [bane](scc:mcdm.heroes.v1/rule.dice/bane) because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
 
 Since the group needs only one more success to achieve total success, Karrel says she'd like to assist Val in whatever task she decides to take on. Val wants to recall lore about the Khem-hor-the inhabitants of the Infinite Desert—to remember their time-honored travel techniques using the History skill. Karrel has the Culture skill, which she can use to assist by providing information about the lives and society of the Khem-hor. She makes a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to assist and gets a 16, granting Val an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on her upcoming test.
 
-Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test with an [edge](scc:mcdm.heroes.v1/rule.dice/edge), thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the montage test, achieving total success, and earn 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test with an [edge](scc:mcdm.heroes.v1/rule.dice/edge), thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), achieving total success, and earn 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Other Options
 
@@ -26251,7 +26252,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 
 **Effect:** After being defeated, each character awakes, alive and with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). You are all captives of the creatures who defeated you, and a gruesome end awaits you—unless you can escape or overcome the nefarious challenge your captors have planned.
 
-The Director chooses one of the following benefits, based on the fate your captors have in mind for you. Each hero gains the same benefit. Additionally, you must face an encounter, montage test, or adventure related to the benefit, as the Director determines.
+The Director chooses one of the following benefits, based on the fate your captors have in mind for you. Each hero gains the same benefit. Additionally, you must face an encounter, [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), or adventure related to the benefit, as the Director determines.
 
 - *Gladiators:* You must fight to the death for your captors' amusement. Your intended opponents wield or guard a trinket or leveled treasure, which you can earn if you are victorious.
 - *Prey:* Your captors plan to release you and hunt you down, but it's no fun unless you offer a challenge. Each of you is given a medicinal draught that grants a +1 bonus to speed and increases your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2. This benefit lasts until the end of your next respite.
@@ -26283,7 +26284,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *[Flying](scc:mcdm.heroes.v1/movement/fly) Circus:* When you are adjacent to a willing ally on their turn, you can use a triggered action to push them up to 2 squares if their [size](scc:mcdm.heroes.v1/rule.character/size) is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.
 - *Spotlight:* You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can't sneak or hide, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests made to perform any action secretly, and they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Lead, Music, or Perform skills.
-- *Supporting Player:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on group tests using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on tests made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.
+- *Supporting Player:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [group tests](scc:mcdm.heroes.v1/rule.test/group-test) using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on tests made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.
 - *Work the Crowd:* While any of your allies is playing music or performing, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to conceal objects, hide, pick pockets, or sneak.
 
 <!-- @type: title -->
@@ -26495,7 +26496,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Mother Hen:* You can spend 10 uninterrupted minutes to psionically enhance up to five willing creatures within 10 squares of you who understand a language you know. For the next hour, you and each target can communicate telepathically with each other no matter the [distance](scc:mcdm.heroes.v1/rule.combat/distance) between you.
-- *Sneakers:* You gain the Sneak skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Sneak skill. During group tests, you can both use the Sneak skill and assist another hero using the Sneak skill.
+- *Sneakers:* You gain the Sneak skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Sneak skill. During [group tests](scc:mcdm.heroes.v1/rule.test/group-test), you can both use the Sneak skill and assist another hero using the Sneak skill.
 - *Timely Distraction:* You have the following triggered action.
 
 > ###### Timely Distraction
@@ -26937,7 +26938,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 *To reach Giant's Foot by dawn, we'll have to run every step of the way. Let's get moving.*
 
-**Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a test as part of a montage test that obtains a full success.
+**Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a test as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) that obtains a full success.
 
 **Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
@@ -28031,7 +28032,7 @@ Before we dive into helpful advice for Directors, we want to make you aware of t
 
 A campaign is the entire story of a group of heroes told while playing the game. It starts with a campaign pitch from the Director to the other players. During the pitch, the Director tells the players about the setting where the game takes place and what kinds of stories the heroes will undertake.
 
-If the players like the pitch, they create heroes and then the game begins! The Director prepares and runs adventures which are played out over a series of game sessions. During these sessions, the heroes play out scenes that include combat encounters, negotiations, montage tests, investigations, downtime projects, and more.
+If the players like the pitch, they create heroes and then the game begins! The Director prepares and runs adventures which are played out over a series of game sessions. During these sessions, the heroes play out scenes that include combat encounters, negotiations, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), investigations, downtime projects, and more.
 
 The best way to think of a campaign is to compare it to a film saga, a series of novels, or an epic television show. Each adventure that makes up a campaign is one film, book, or season of television in that series. Each game session is then an act of the adventure's film, a chapter of its book, or an episode in its TV season. Adventures might be tied together by an overarching villain who the heroes face in a thrilling final encounter. Or they might have connected goals, such as the heroes hunting and destroying evil artifacts, that tie them together in a campaign. These ties between adventures aren't necessary, but many players are drawn in by a cohesive campaign story.
 
@@ -28407,7 +28408,7 @@ When you create a specific site, ask the following questions in addition to the 
 
 #### Plan Scenes
 
-Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, montage tests, negotiations, respites, and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
+Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), negotiations, respites, and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
 
 When you're thinking about scenes, write down which sites and NPCs are tied to those scenes, then try to arrange the scenes in an order that makes sense for the story. It might be that after your inciting incident, certain scenes can be tackled in any order. For example, if the adventure goal is to recover three pieces of an ancient staff before the villain does, the heroes might be able to explore the three sites where the pieces are hidden in any order they choose. Their choice might even have consequences. It might be that the first site they choose has none of the villain's lackeys investigating it yet, the second site features a showdown with those lackeys, and the third site has already been cleaned out by the villain by the time the characters get there! Other scenes might have to happen more linearly. An investigation typically includes a trail of clues that takes the heroes from one scene to the next, but the players can surprise you.
 
@@ -28435,7 +28436,7 @@ Not everything the heroes do is worthy of a scene, and you don't need to play ou
 
 #### Director Sheets
 
-Director sheets are a resource you can use to prepare and track the progress of characters during combat encounters, negotiations, and montage tests. These sheets allow you to track the objectives and numbers relevant to the challenge, such as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of enemies, NPC interest and patience, and the number of successes and failures in a montage test. Each sheet has an optional second page you can use to track narrative details, potential rewards, and supporting NPCs in the scene. You can download these sheets at *https://mcdm.gg/DS-Resources*.
+Director sheets are a resource you can use to prepare and track the progress of characters during combat encounters, negotiations, and [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). These sheets allow you to track the objectives and numbers relevant to the challenge, such as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of enemies, NPC interest and patience, and the number of successes and failures in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Each sheet has an optional second page you can use to track narrative details, potential rewards, and supporting NPCs in the scene. You can download these sheets at *https://mcdm.gg/DS-Resources*.
 
 #### Creating and Running Combat
 
@@ -28532,7 +28533,7 @@ Sample consequences and rewards for tests are detailed in Chapter 9: [Tests](scc
 
 #### Creating and Running Hazards
 
-Hazards include traps, natural dangers such as quicksand and avalanches, and supernatural dangers such as magic-irradiated ruins or floating clouds of unstable psionic energy. Hazards can appear in combat and exploration scenes as dangers the heroes need to contend with as they solve other problems. An elaborate hazard can be a scene all on its own as well, whether tackled in a montage test or run round by round as if it were a combat scenario.
+Hazards include traps, natural dangers such as quicksand and avalanches, and supernatural dangers such as magic-irradiated ruins or floating clouds of unstable psionic energy. Hazards can appear in combat and exploration scenes as dangers the heroes need to contend with as they solve other problems. An elaborate hazard can be a scene all on its own as well, whether tackled in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or run round by round as if it were a combat scenario.
 
 A good hazard presents a real threat to the heroes and stands in the way of something they want. Crossing a pool of lava isn't much of an issue if the heroes can simply walk around it. But if the pool is too big to walk around, or if the treasure the party seeks is at the bottom of it, it becomes something they can't easily ignore.
 
@@ -28660,7 +28661,7 @@ If players are having trouble roleplaying during a negotiation, try running your
 
 #### Research and Reconnaissance
 
-If the players want to negotiate with an NPC and the heroes have some time before the conversation starts, they might think to do a bit of research and reconnaissance into the NPC, hoping to discover their motivations and pitfalls. Characters have multiple ways to tackle this. They might do research into the NPC as a downtime project, they could employ a montage test to gather rumors and grease a few palms, or they might attempt to do favors for people close to the NPC and earn information in exchange.
+If the players want to negotiate with an NPC and the heroes have some time before the conversation starts, they might think to do a bit of research and reconnaissance into the NPC, hoping to discover their motivations and pitfalls. Characters have multiple ways to tackle this. They might do research into the NPC as a downtime project, they could employ a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to gather rumors and grease a few palms, or they might attempt to do favors for people close to the NPC and earn information in exchange.
 
 It's always a good idea to let the heroes do a little recon before jumping into a negotiation. Doing so makes for a richer story and can help the players better engage with the negotiation system, since they'll feel more prepared for it.
 
@@ -29000,37 +29001,37 @@ The deity has the following possible pitfalls:
 
 ### Create and Run Montage Tests
 
-You can use montage tests to play out chases, escapes, investigations, wilderness travel, attempts to track other creatures, and any other exciting moments in a story that can be told by transitioning or cutting back and forth among the heroes.
+You can use [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) to play out chases, escapes, investigations, wilderness travel, attempts to track other creatures, and any other exciting moments in a story that can be told by transitioning or cutting back and forth among the heroes.
 
 #### Preparing Montage Tests
 
-When you prepare a montage test, you'll want to write down some key information.
+When you prepare a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you'll want to write down some key information.
 
-First, make a list of potential challenges the heroes can face during the montage test. This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the montage test, but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as a default consequence and reward (see Test Outcomes in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+First, make a list of potential challenges the heroes can face during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as a default consequence and reward (see Test Outcomes in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 You'll then need to create the three outcomes of the montage: total success, partial success, and total failure. With a total success, the heroes should accomplish whatever they set out to do. With a partial success, they should accomplish their goal at a cost, create a new problem for themselves after doing what they set out to do, or not quite accomplish their full goal. With a total failure, the characters fail to do whatever they set out to do, but this result should not grind the story to a halt. Maybe they lose track of the fleeing lackeys they were pursuing, but they know they can now raid a mage's tower to find that information. Even if failure costs the characters dearly, they should still have options for continuing the adventure.
 
 #### Running Montage Tests
 
-When you run a montage test, start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make tests.
+When you run a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make tests.
 
-When you adjudicate individual tests as part of a montage test, do so as you would any other test (see Adjudicating Tests in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a test made later as part of the montage test. Do whatever makes sense for the heroes' actions in the narrative.
+When you adjudicate individual tests as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), do so as you would any other test (see Adjudicating Tests in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a test made later as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Do whatever makes sense for the heroes' actions in the narrative.
 
 After each test, narrate the hero's failure or success in such a way that the other players can understand if and how the challenge has been overcome. Your description might even spark some new ideas for what the characters can do next.
 
-If a hero decides to tackle a problem using an ability, trait, or other feature instead of a test and it makes sense for them to do so, allow it. In a lot of cases, you can treat that approach as an automatic success that allows the group to overcome one of the challenges of the montage test, but you could decide that the success incurs a consequence. Alternatively, maybe the use of an ability or trait is beneficial enough to provide an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future test, or maybe it's so effective that it counts for multiple successes or solves the entire montage test in one fell swoop! Always reward the clever actions of the players.
+If a hero decides to tackle a problem using an ability, trait, or other feature instead of a test and it makes sense for them to do so, allow it. In a lot of cases, you can treat that approach as an automatic success that allows the group to overcome one of the challenges of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but you could decide that the success incurs a consequence. Alternatively, maybe the use of an ability or trait is beneficial enough to provide an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future test, or maybe it's so effective that it counts for multiple successes or solves the entire [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) in one fell swoop! Always reward the clever actions of the players.
 
-At the end of a montage test, narrate the outcome for the players as you describe the overall success or failure and any consequences. Then let them know the montage test is done!
+At the end of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), narrate the outcome for the players as you describe the overall success or failure and any consequences. Then let them know the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is done!
 
 #### Montage Twist!
 
-You can break up the individual tests within a montage test by introducing a quick combat encounter, negotiation, or trap into the scene, or by adding more challenges to overcome. Keep track of the heroes' successes and failures, and decide how many tests they must attempt before introducing your twist. A single twist in a montage test can often be introduced at the end of the first montage test round.
+You can break up the individual tests within a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by introducing a quick combat encounter, negotiation, or trap into the scene, or by adding more challenges to overcome. Keep track of the heroes' successes and failures, and decide how many tests they must attempt before introducing your twist. A single twist in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can often be introduced at the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round.
 
-When a twist is introduced, make sure the players understand that the montage test has been paused but isn't over. Then when the twist has been established and dealt with, continue the montage test.
+When a twist is introduced, make sure the players understand that the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has been paused but isn't over. Then when the twist has been established and dealt with, continue the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 #### Example Montage Tests
 
-You can use any of the following montage tests in your game, or as inspiration that you can modify to your heart's content.
+You can use any of the following [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) in your game, or as inspiration that you can modify to your heart's content.
 
 ##### Fight Fire
 
@@ -29042,11 +29043,11 @@ Fire blazes in several buildings whose occupants need to be rescued. Elsewhere, 
 
 ###### Montage Challenges
 
-The following challenges can be part of the montage test:
+The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Bucket Brigades:** Characters can organize the would-be firefighters into disciplined bucket brigades, or can fight the fire directly in some other way. *Suggested* C*haracteristics:* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, Intimidate, Lead.
 - **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the montage test.
+- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 - **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Intimidate, Lead, Persuade.
 - **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Handle Animals, Lift, Ride.
 - **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
@@ -29054,19 +29055,19 @@ The following challenges can be part of the montage test:
 
 ###### Optional Twists
 
-At the end of the first montage test round, an emergency crops up. One or more heroes, selected by the players, must deal with the situation before the end of the round. If the heroes successfully deal with the twist, they earn a success for the montage test. Otherwise, they earn a failure.
+At the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, an emergency crops up. One or more heroes, selected by the players, must deal with the situation before the end of the round. If the heroes successfully deal with the twist, they earn a success for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Otherwise, they earn a failure.
 
 - **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Cause of the Fire:** At the end of the first round of the montage test, the hostile cause of the fire appears—a squad of an invading army, a dragon, a team of arsonists, and so forth. The characters must engage in a standard or hard encounter with this threat.
-- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lift, Persuade.
+- **Cause of the Fire:** At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the hostile cause of the fire appears—a squad of an invading army, a dragon, a team of arsonists, and so forth. The characters must engage in a standard or hard encounter with this threat.
+- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lift, Persuade.
 
 ###### Montage Test Outcomes
 
-One of the following outcomes ends the montage test:
+One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
-- **Total Success:** The fire is extinguished. Buildings are damaged but no lives were lost. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Partial Success:** The fire is quenched, although many buildings burned and a few lives were lost. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Total Failure:** When the fire finally burns out, the town lies in ruins. Townsfolk mourn their dead or grimly prepare to find a new home. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the montage test, but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the montage test.
+- **Total Success:** The fire is extinguished. Buildings are damaged but no lives were lost. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Partial Success:** The fire is quenched, although many buildings burned and a few lives were lost. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Total Failure:** When the fire finally burns out, the town lies in ruins. Townsfolk mourn their dead or grimly prepare to find a new home. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Infiltrate the Palace
 
@@ -29078,7 +29079,7 @@ The palace is well defended, with exterior patrols always on the alert. The few 
 
 ###### Montage Challenges
 
-Half the work of any successful infiltration is done before setting foot in the target site. The players can choose to have the heroes make individual tests as part of the montage test before they attempt to enter the palace. One round of tests can be made this way, and those tests don't affect the alarm level within the palace (see below).
+Half the work of any successful infiltration is done before setting foot in the target site. The players can choose to have the heroes make individual tests as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) before they attempt to enter the palace. One round of tests can be made this way, and those tests don't affect the alarm level within the palace (see below).
 
 The following challenges can be part of this initial preparation:
 
@@ -29088,9 +29089,9 @@ The following challenges can be part of this initial preparation:
 - **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alertness, Eavesdrop, Track.
 - **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Disguise, Forgery, Lie.
 
-When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a test as part of the montage test, the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a test, the alarm level decreases, to a minimum of 0. While the alarm level is 1, tests made inside the palace by the characters as part of the montage test take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). While the alarm level is 2, such tests have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a test as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a test, the alarm level decreases, to a minimum of 0. While the alarm level is 1, tests made inside the palace by the characters as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). While the alarm level is 2, such tests have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
-The first time any hero fails a test made as part of the montage test while the alarm level is 2, they encounter guards and must engage in a hard combat encounter. The second time any hero fails such a test while the alarm level is 2, the montage test is a total failure.
+The first time any hero fails a test made as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) while the alarm level is 2, they encounter guards and must engage in a hard combat encounter. The second time any hero fails such a test while the alarm level is 2, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is a total failure.
 
 The following challenges can be part of the heroes' infiltration:
 
@@ -29099,19 +29100,19 @@ The following challenges can be part of the heroes' infiltration:
 - **Lie Low:** Once while the alarm level is greater than 0, the heroes can find a place to hide for a bit, reducing the alarm level by 1. This activity doesn't require a test or generate a success or failure.
 - **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Alchemy, Perform, Sabotage.
 - **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Lie, Search.
-- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility). *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility). *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ###### Optional Twist
 
-At any time during the infiltration section of the montage test, immediately after one hero's turn, the characters run into another group breaking into the palace at the same time, and possibly after the same prize. The characters can choose to fight or negotiate with the other party, or simply let them pass—in which case they might meet them again when they reach their final goal.
+At any time during the infiltration section of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), immediately after one hero's turn, the characters run into another group breaking into the palace at the same time, and possibly after the same prize. The characters can choose to fight or negotiate with the other party, or simply let them pass—in which case they might meet them again when they reach their final goal.
 
 ###### Montage Test Outcomes
 
-One of the following outcomes ends the montage test:
+One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
-- **Total Success:** The heroes reach their goal and secure an escape route that lets them leave the palace safely. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Partial Success:** The heroes reach their goal, but they need to fight a standard combat encounter to escape the palace. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Total Failure:** The palace is locked down and the heroes' goal is out of reach. The characters need to fight a hard combat encounter to escape. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the montage test, but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the montage test.
+- **Total Success:** The heroes reach their goal and secure an escape route that lets them leave the palace safely. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Partial Success:** The heroes reach their goal, but they need to fight a standard combat encounter to escape the palace. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Total Failure:** The palace is locked down and the heroes' goal is out of reach. The characters need to fight a hard combat encounter to escape. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Prepare For Battle
 
@@ -29123,7 +29124,7 @@ The walls or palisades around the settlement (if any) are in poor shape. Roads o
 
 ###### Montage Challenges
 
-The following challenges can be part of the montage test:
+The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Arms and Armor:** Crafting or repairing weapons and armor of all kinds can help rebuild the defenders' stores. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alchemy, Blacksmithing, Fletching.
 - **Evacuation:** Heroes can help get noncombatants to safety before the invaders arrive. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Handle Animals, Lead, Persuade.
@@ -29136,15 +29137,15 @@ The following challenges can be part of the montage test:
 
 ###### Optional Twist
 
-At the end of the first round of the montage test, a fast-moving enemy vanguard attacks before the settlement's defenders are ready. The heroes must engage in an easy combat encounter.
+At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a fast-moving enemy vanguard attacks before the settlement's defenders are ready. The heroes must engage in an easy combat encounter.
 
 ###### Montage Test Outcomes
 
-One of the following outcomes ends the montage test:
+One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
-- **Total Success:** The settlement is fully fortified, and even if the heroes don't fight in its defense, the settlement and its people survive. If the heroes wish, they can leave the settlement and fight a standard combat encounter against the leader of the invaders and their lackeys, possibly killing or capturing the leader. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Partial Success:** The settlement's fortifications are improved, but the settlement will still fall unless the heroes fight in its defense. To save the settlement, the heroes must triumph in a hard combat encounter against the leader of the invaders and their lackeys. If the heroes lose the encounter, the settlement falls. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Total Failure:** The heroes each lose a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) from their failed efforts to defend the settlement, which is taken over by the invaders. If the players wish, the characters can fight two hard combat encounters against waves of invaders to allow some of the settlement's inhabitants to retreat to safety. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the montage test, but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the montage test.
+- **Total Success:** The settlement is fully fortified, and even if the heroes don't fight in its defense, the settlement and its people survive. If the heroes wish, they can leave the settlement and fight a standard combat encounter against the leader of the invaders and their lackeys, possibly killing or capturing the leader. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Partial Success:** The settlement's fortifications are improved, but the settlement will still fall unless the heroes fight in its defense. To save the settlement, the heroes must triumph in a hard combat encounter against the leader of the invaders and their lackeys. If the heroes lose the encounter, the settlement falls. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Total Failure:** The heroes each lose a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) from their failed efforts to defend the settlement, which is taken over by the invaders. If the players wish, the characters can fight two hard combat encounters against waves of invaders to allow some of the settlement's inhabitants to retreat to safety. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Track the Fugitive
 
@@ -29156,25 +29157,25 @@ The fugitive's route is easy to follow, but could they be setting a false trail?
 
 ###### Montage Challenges
 
-The following challenges can be part of the montage test:
+The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Interrogate, Persuade, Rumors.
-- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 - **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Climb, Gymnastics, Jump.
 - **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
 - **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): [Might](scc:mcdm.heroes.v1/rule.character/might). Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Optional Twist
 
-At the end of the first round of the montage test, the heroes stumble upon a trap set by the quarry or a problem they left behind. This might include such things as a pit trap set with poison spikes, a mob of angry locals who've been told the characters are criminals, or an intentionally set fire. The heroes must deal with the trap or problem before they continue the montage test.
+At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the heroes stumble upon a trap set by the quarry or a problem they left behind. This might include such things as a pit trap set with poison spikes, a mob of angry locals who've been told the characters are criminals, or an intentionally set fire. The heroes must deal with the trap or problem before they continue the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ###### Montage Test Outcomes
 
-One of the following outcomes ends the montage test:
+One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
-- **Total Success:** The heroes catch their quarry before the fugitive reaches their destination, or before a lost or kidnapped creature comes to harm. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Partial Success:** If the quarry was trying to evade capture, they reach their destination. They find allies and a fortified position from which to defend themselves, or they might have time to cause more harm. If the quarry was lost or kidnapped, they are grievously injured when found. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Total Failure:** The trail has gone cold, and the heroes will need to seek fresh clues or a different approach before they can resume the hunt. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the montage test, but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the montage test.
+- **Total Success:** The heroes catch their quarry before the fugitive reaches their destination, or before a lost or kidnapped creature comes to harm. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Partial Success:** If the quarry was trying to evade capture, they reach their destination. They find allies and a fortified position from which to defend themselves, or they might have time to cause more harm. If the quarry was lost or kidnapped, they are grievously injured when found. Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Total Failure:** The trail has gone cold, and the heroes will need to seek fresh clues or a different approach before they can resume the hunt. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Wilderness Race
 
@@ -29186,7 +29187,7 @@ The wilds hold unknown dangers. Characters need to figure out the best route whi
 
 ###### Montage Challenges
 
-The following challenges can be part of the montage test:
+The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
 - **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift.
@@ -29198,19 +29199,19 @@ The following challenges can be part of the montage test:
 
 ###### Optional Twist
 
-At the end of the first round of the montage test, the characters' journey is interrupted by one of the following threats:
+At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the characters' journey is interrupted by one of the following threats:
 
-**Predatory Monster:** The characters stumble into or are stalked by a monstrous predator, and must engage in a standard combat encounter to overcome the threat or drive it off. If any character has obtained a success on the Scout Ahead challenge, you can let the characters make a group test to sneak past or set an ambush for the monster.
+**Predatory Monster:** The characters stumble into or are stalked by a monstrous predator, and must engage in a standard combat encounter to overcome the threat or drive it off. If any character has obtained a success on the Scout Ahead challenge, you can let the characters make a [group test](scc:mcdm.heroes.v1/rule.test/group-test) to sneak past or set an ambush for the monster.
 
 **Unexpected Hazard:** A natural hazard such as an avalanche, rockslide, or wildfire interrupts the journey. Each hero must make a test of your choice to avoid the hazard, losing a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) on a failure.
 
 ###### Montage Test Outcomes
 
-One of the following outcomes ends the montage test:
+One of the following outcomes ends the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
-- **Total Success:** The heroes reach their goal in time. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Partial Success:** To reach their goal in time, the heroes must sprint over the last leg of the journey, with each character spending 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) to do so. (If even one character doesn't have 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) remaining, the characters instead earn a total failure for the montage test.) Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the montage test was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the montage test.
-- **Total Failure:** The heroes don't arrive in time to avert catastrophe. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the montage test, but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the montage test.
+- **Total Success:** The heroes reach their goal in time. Each character earns 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was hard, or 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if it was easy or moderate, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Partial Success:** To reach their goal in time, the heroes must sprint over the last leg of the journey, with each character spending 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) to do so. (If even one character doesn't have 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) remaining, the characters instead earn a total failure for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).) Each character earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) was moderate or hard, in addition to any [Victories](scc:mcdm.heroes.v1/rule.resource/victories) earned from combat during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Total Failure:** The heroes don't arrive in time to avert catastrophe. Characters earn no [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but might earn [Victories](scc:mcdm.heroes.v1/rule.resource/victories) from combat undertaken during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ### Running Respites
 
@@ -29333,7 +29334,7 @@ A successful combat encounter in which the party's objectives are achieved earns
 
 ##### Montage Tests
 
-Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve total success on an easy or moderate montage test, and 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) for total success on a hard montage test. They earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if they achieve a partial success on a moderate or hard montage test.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when they achieve total success on an easy or moderate [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), and 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) for total success on a hard [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). They earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if they achieve a partial success on a moderate or hard [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ##### Negotiation
 
@@ -29353,7 +29354,7 @@ If the heroes achieve a major story goal that accomplishes a quest, such as savi
 
 ##### Clever Thinking
 
-If the heroes use clever thinking to easily and surprisingly overcome or bypass a combat encounter, a negotiation, a montage test, a trap, a puzzle, or some other challenge that would have awarded them 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) in a more difficult fashion, award each character the [Victories](scc:mcdm.heroes.v1/rule.resource/victories) they would have earned had they faced and overcome the problem head on.
+If the heroes use clever thinking to easily and surprisingly overcome or bypass a combat encounter, a negotiation, a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a trap, a puzzle, or some other challenge that would have awarded them 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories) in a more difficult fashion, award each character the [Victories](scc:mcdm.heroes.v1/rule.resource/victories) they would have earned had they faced and overcome the problem head on.
 
 ### Campaign: First Session
 
