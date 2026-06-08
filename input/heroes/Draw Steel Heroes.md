@@ -155,7 +155,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) Maneuver:** A maneuver that allows a hero to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**[Censor](scc:mcdm.heroes.v1/class/censor):** A class for a hero who is a trained warrior devoted to a saint or god.
+**[Censor](scc:mcdm.heroes.v1/class/censor):** A class for a hero who is a trained warrior devoted to a [saint](scc:mcdm.heroes.v1/rule.world/saint) or god.
 
 **[Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** Statistics used to represent a creature's mental and physical prowess, broken out as [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence). Each characteristic has a score that ranges from −5 to +5.
 
@@ -179,7 +179,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Condition](scc:mcdm.heroes.v1/rule.combat/condition):** A negative effect that applies to a creature and uses a universal shorthand name. [Bleeding](scc:mcdm.heroes.v1/condition/bleeding), [dazed](scc:mcdm.heroes.v1/condition/dazed), [frightened](scc:mcdm.heroes.v1/condition/frightened), [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone),  [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), [taunted](scc:mcdm.heroes.v1/condition/taunted), and [weakened](scc:mcdm.heroes.v1/condition/weakened) are conditions in *Draw Steel*.
 
-**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A class for a hero who is the devoted spellcasting priest of a saint or god.
+**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A class for a hero who is the devoted spellcasting priest of a [saint](scc:mcdm.heroes.v1/rule.world/saint) or god.
 
 **[Consequence](scc:mcdm.heroes.v1/rule.test/test):** An impactful setback suffered by a creature when they make a [test](scc:mcdm.heroes.v1/rule.test/test). A consequence can occur whether or not the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) succeeds or fails.
 
@@ -291,7 +291,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Fury](scc:mcdm.heroes.v1/class/fury):** A class for a hero warrior who courses with the ferocity of the Primordial Chaos.
 
-**[God](scc:mcdm.heroes.v1/chapter/gods-and-religion):** A deity who grants power to their most devout worshipers through saint intermediaries.
+**[God](scc:mcdm.heroes.v1/chapter/gods-and-religion):** A deity who grants power to their most devout worshipers through [saint](scc:mcdm.heroes.v1/rule.world/saint) intermediaries.
 
 **[Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) Maneuver:** A maneuver that allows a creature to make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) to make another creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by them.
 
@@ -966,9 +966,9 @@ Under Omund's rule, order thrived. Roads were safe. People could even walk into 
 
 Omund died 15 years ago and so died the rule of law. Now the forest claims the towns and roads once held safe. The woods are dangerous. Their only law... [tooth and claw](scc:mcdm.heroes.v1/feature.fury.level-2/tooth-and-claw).
 
-Omund was betrayed and his castle fell to Ajax the Invincible, now called the Iron Saint. His wizard Mortum unlocked the secret of the ancient sky elf flying cities, and raised the Chrysopolis, Ajax's city-fortress in the sky.
+Omund was betrayed and his castle fell to Ajax the Invincible, now called the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint). His wizard Mortum unlocked the secret of the ancient sky elf flying cities, and raised the Chrysopolis, Ajax's city-fortress in the sky.
 
-It was Mortum who used the secrets of the synliroi body banks, granting immortality to those nobles who voluntarily submit to Ajax. Those same body banks produce Ajax's war dogs, his brutal, patchwork—soldiers who owe their new lives to the Iron Saint and fight for him fanatically.
+It was Mortum who used the secrets of the synliroi body banks, granting immortality to those nobles who voluntarily submit to Ajax. Those same body banks produce Ajax's war dogs, his brutal, patchwork—soldiers who owe their new lives to the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint) and fight for him fanatically.
 
 Ajax abolished all faiths and temples. He executed the dukes who organized and united the barons, leaving the far-flung baronies to try and hold [human](scc:mcdm.heroes.v1/ancestry/human) civilization together. Once, these people were loose allies. There was trade between [humans](scc:mcdm.heroes.v1/ancestry/human), elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) and [orcs](scc:mcdm.heroes.v1/ancestry/orc).
 
@@ -1033,7 +1033,7 @@ Meanwhile, on Proteus, the Sea of Eternal Change, the formless proteans rebelled
 
 On Quintessence, the lowest of the upper worlds, proteans and [memonek](scc:mcdm.heroes.v1/ancestry/memonek) alike rub shoulders with [devils](scc:mcdm.heroes.v1/ancestry/devil), fire [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), even [humans](scc:mcdm.heroes.v1/ancestry/human) in Quintessence's capital city of Alloy, the City at the Center of the Timescape. The Free City of Alloy, also known as the City of Brass, is the gateway to the timescape. People travelling to or from the upper and lower worlds meet here to trade goods and information, free from the inflexible law of UNISOL.
 
-Traveling downward from Quintessence one arrives on [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Plane of Gods and Sorcery, highest of the lower worlds where magic rules. The gods, forbidden from interfering directly in a world with such a low energy state, rely on saints to enact their will. Technology from the upper worlds does not function down here, unless powered by a strong psionic mind or the miracle mineral iridoss, also known as prismacore.
+Traveling downward from Quintessence one arrives on [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Plane of Gods and Sorcery, highest of the lower worlds where magic rules. The gods, forbidden from interfering directly in a world with such a low energy state, rely on [saints](scc:mcdm.heroes.v1/rule.world/saint) to enact their will. Technology from the upper worlds does not function down here, unless powered by a strong psionic mind or the miracle mineral iridoss, also known as prismacore.
 
 Almost coterminal with [Orden](scc:mcdm.heroes.v1/rule.world/orden) is its sister-manifold, the World Below, the Dark Under All, a plane of exiles ruled by A Lie Cloaked In Star's Silver, the Queen of Night, first of the Three Sisters Below. The World Below is a land of vast caves, and sunless seas. There are no stars here, no sky, only endless caverns and warrens, some vast enough to hold entire cities, like Or-Mazaar City of the Black Star from which the Queen of Night rules.
 
@@ -1067,7 +1067,7 @@ P.S. We use the phrase "[Orden](scc:mcdm.heroes.v1/rule.world/orden) and the tim
 
 > **The Timescape in Your Game**
 >
-> We use the timescape and its medieval fantasyland [Orden](scc:mcdm.heroes.v1/rule.world/orden) as the default setting presented in these books. Doing so makes it easier for us as designers to marry our design with real examples from a real (imaginary) fantasy world. We also think it's easier for you to take the names for places, languages, and gods, and replace them with your own. We might reference some hero or villain, saint or god, whose name makes you think, "Well, I don't have that in my setting." If we do a good job, though, you might be inspired to say, "But that makes me think..." And being inspired is part of the fun!
+> We use the timescape and its medieval fantasyland [Orden](scc:mcdm.heroes.v1/rule.world/orden) as the default setting presented in these books. Doing so makes it easier for us as designers to marry our design with real examples from a real (imaginary) fantasy world. We also think it's easier for you to take the names for places, languages, and gods, and replace them with your own. We might reference some hero or villain, [saint](scc:mcdm.heroes.v1/rule.world/saint) or god, whose name makes you think, "Well, I don't have that in my setting." If we do a good job, though, you might be inspired to say, "But that makes me think..." And being inspired is part of the fun!
 
 If you're the Director, you can use as many or as few of the details of the timescape as you like. You might wish to create your own world within the timescape, or use a setting you've created that exists outside of the official MCDM manifolds. You can use details from settings published by other companies. There are no rules when it comes to worldbuilding. Feel free to take what you like from this book and change the rest. For example, you might not care for our [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) having literal stone skin. That's fine. You can make them fleshy, stout, bearded folk, or mohawked, barrel-chested punk rockers, or anything else you wish. As long as you're running a heroic fantasy campaign about fighting monsters, then the game's rules are still likely to serve your narrative even if that narrative deviates from ours.
 
@@ -2199,7 +2199,7 @@ The king tapped the scroll against his lap, seeming to have reached a decision.
 
 Llyander nodded deferentially, silently congratulating the king on his insight.
 
-"Alas, your escort's efforts are for naught." Then the king's face became softer. He held up the heavy scroll. "But this is not nothing," he said. "We made a treaty with Ajax to deliver unto him any artifacts our search teams discover from the ruins of this city. He benefits from this bargain more than we. But this, methinks, will stay with us. It was written by my grandmother's grandmother in the youth of the world, and there are some things which must be denied the Iron Saint, even should they violate the treaty."
+"Alas, your escort's efforts are for naught." Then the king's face became softer. He held up the heavy scroll. "But this is not nothing," he said. "We made a treaty with Ajax to deliver unto him any artifacts our search teams discover from the ruins of this city. He benefits from this bargain more than we. But this, methinks, will stay with us. It was written by my grandmother's grandmother in the youth of the world, and there are some things which must be denied the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint), even should they violate the treaty."
 
 Llyander turned to the children and smiled brilliantly, eyebrows waggling in a show of glee. Wenna and Credan couldn't help but smile. "Well, you see children?" Llyander said. "We only have *more* to do, not everything to do."
 
@@ -2462,7 +2462,7 @@ Those great [humans](scc:mcdm.heroes.v1/ancestry/human), your ancestors, did not
 
 The people who stand against Ajax and tyrants like him will be just like you—normal people. Priests and scholars and merchants and farmers. Maybe even teachers.
 
-Stopping Ajax will require you to become something else. You must become heroes. [Conduits](scc:mcdm.heroes.v1/class/conduit) of saints, warmasters of great armies. [Censors](scc:mcdm.heroes.v1/class/censor) and [shadows](scc:mcdm.heroes.v1/class/shadow). That may seem unlikely now, but the future has a way of surprising us.
+Stopping Ajax will require you to become something else. You must become heroes. [Conduits](scc:mcdm.heroes.v1/class/conduit) of [saints](scc:mcdm.heroes.v1/rule.world/saint), warmasters of great armies. [Censors](scc:mcdm.heroes.v1/class/censor) and [shadows](scc:mcdm.heroes.v1/class/shadow). That may seem unlikely now, but the future has a way of surprising us.
 
 Some of your names, I will see written in future textbooks. But some of your names, I will see written in the stars.
 
@@ -2817,7 +2817,7 @@ When you are stirred by a passion for creation, your bloodfire allows you to wor
 <!-- @type: ancestry | @id: polder -->
 ## Polder
 
-After [humans](scc:mcdm.heroes.v1/ancestry/human), [polders](scc:mcdm.heroes.v1/ancestry/polder) are the most numerous and diverse ancestry in [Orden](scc:mcdm.heroes.v1/rule.world/orden). They are not [humans](scc:mcdm.heroes.v1/ancestry/human), but they live in and among [humans](scc:mcdm.heroes.v1/ancestry/human) and share their gods and culture. Almost every [human](scc:mcdm.heroes.v1/ancestry/human) culture in [Orden](scc:mcdm.heroes.v1/rule.world/orden) has a [polder](scc:mcdm.heroes.v1/ancestry/polder) saint or a [human](scc:mcdm.heroes.v1/ancestry/human) saint venerated by [polder](scc:mcdm.heroes.v1/ancestry/polder).
+After [humans](scc:mcdm.heroes.v1/ancestry/human), [polders](scc:mcdm.heroes.v1/ancestry/polder) are the most numerous and diverse ancestry in [Orden](scc:mcdm.heroes.v1/rule.world/orden). They are not [humans](scc:mcdm.heroes.v1/ancestry/human), but they live in and among [humans](scc:mcdm.heroes.v1/ancestry/human) and share their gods and culture. Almost every [human](scc:mcdm.heroes.v1/ancestry/human) culture in [Orden](scc:mcdm.heroes.v1/rule.world/orden) has a [polder](scc:mcdm.heroes.v1/ancestry/polder) [saint](scc:mcdm.heroes.v1/rule.world/saint) or a [human](scc:mcdm.heroes.v1/ancestry/human) [saint](scc:mcdm.heroes.v1/rule.world/saint) venerated by [polder](scc:mcdm.heroes.v1/ancestry/polder).
 
 Short, averaging 31/2 feet tall, the [polders](scc:mcdm.heroes.v1/ancestry/polder)' origins are obscure. They are a young species who, like [humans](scc:mcdm.heroes.v1/ancestry/human), have no single patron god. Their ability to *shadowmeld* means they enjoy a reputation as excellent spies and thieves. Many [polders](scc:mcdm.heroes.v1/ancestry/polder) consider this a base slander and point out they're also famed as chefs, though [polders](scc:mcdm.heroes.v1/ancestry/polder) can be found in every profession, especially in cities.
 
@@ -3818,7 +3818,7 @@ You gain the following career benefits:
 
 You worked in a church, temple, or other religious institution as part of the clergy. In defining your career, think about the following questions:
 
-- What gods or saints did your institution venerate?
+- What gods or [saints](scc:mcdm.heroes.v1/rule.world/saint) did your institution venerate?
 - What initiation rites did you undergo to get the job?
 - What were your responsibilities as a [disciple](scc:mcdm.heroes.v1/career/disciple)?
 - How was your institution viewed by members of the local culture?
@@ -4191,9 +4191,9 @@ While all your character creation decisions bear narrative weight, none influenc
 
 Your class provides you with many of your features, most of your abilities—your most potent combat moves and noncombat options and a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) that fuels many of those abilities. This book presents nine classes to choose from.
 
-**[Censor](scc:mcdm.heroes.v1/class/censor):** A [censor](scc:mcdm.heroes.v1/class/censor) is a trained warrior devoted to a saint or god. They hunt down the forces of evil using [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapons and magic granted to them by their divine patron, specializing in confronting the wicked and locking down single enemies during combat.
+**[Censor](scc:mcdm.heroes.v1/class/censor):** A [censor](scc:mcdm.heroes.v1/class/censor) is a trained warrior devoted to a [saint](scc:mcdm.heroes.v1/rule.world/saint) or god. They hunt down the forces of evil using [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapons and magic granted to them by their divine patron, specializing in confronting the wicked and locking down single enemies during combat.
 
-**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A [conduit](scc:mcdm.heroes.v1/class/conduit) is the devoted priest of a saint or god. They wield divine magic that smites enemies with holy energy and supports their allies, and are [renown](scc:mcdm.heroes.v1/rule.resource/renown)ed for their healing abilities.
+**[Conduit](scc:mcdm.heroes.v1/class/conduit):** A [conduit](scc:mcdm.heroes.v1/class/conduit) is the devoted priest of a [saint](scc:mcdm.heroes.v1/rule.world/saint) or god. They wield divine magic that smites enemies with holy energy and supports their allies, and are [renown](scc:mcdm.heroes.v1/rule.resource/renown)ed for their healing abilities.
 
 **[Elementalist](scc:mcdm.heroes.v1/class/elementalist):** An [elementalist](scc:mcdm.heroes.v1/class/elementalist) studies the elemental forces of the timescape and controls earth, fire, the void, and more with magic. Many of their abilities cover wide areas of the battlefield, and they have a versatile array of tricks that allow them to both control combat and manipulate the environment around them when the fight is done.
 
@@ -4778,7 +4778,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) is y
 <!-- @type: feature -->
 #### Deity and Domains
 
-Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
+Choose a god or [saint](scc:mcdm.heroes.v1/rule.world/saint) who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
 After choosing your deity, pick one domain from their portfolio. Your choice of domain determines many of the features you'll gain from this class. (*Quick Build:* [Cavall](scc:mcdm.heroes.v1/god/cavall) as deity and War as domain.)
 
@@ -5229,7 +5229,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) gran
 
 | Order                    | Features                             |
 |--------------------------|--------------------------------------|
-| Exorcist                 | Saint's Vigilance, [A Sense for Truth](scc:mcdm.heroes.v1/feature.censor.level-2/a-sense-for-truth) |
+| Exorcist                 | [Saint](scc:mcdm.heroes.v1/rule.world/saint)'s Vigilance, [A Sense for Truth](scc:mcdm.heroes.v1/feature.censor.level-2/a-sense-for-truth) |
 | Oracle                   | [It Was Foretold](scc:mcdm.heroes.v1/feature.censor.level-2/it-was-foretold), [Judge of Character](scc:mcdm.heroes.v1/feature.censor.level-2/judge-of-character)  |
 | Paragon                  | [Lead by Example](scc:mcdm.heroes.v1/feature.censor.level-2/lead-by-example), [Stalwart Icon](scc:mcdm.heroes.v1/feature.censor.level-2/stalwart-icon)       |
 
@@ -5456,7 +5456,7 @@ You gain a domain feature from your domain, as shown on the 4th-Level [Censor](s
 | Creation                         | [Improved Hands of the Maker](scc:mcdm.heroes.v1/feature.censor.level-4/improved-hands-of-the-maker) |
 | Death                            | [Seance](scc:mcdm.heroes.v1/feature.censor.level-4/seance)                      |
 | Fate                             | [Oracular Warning](scc:mcdm.heroes.v1/feature.censor.level-4/oracular-warning)            |
-| Knowledge                        | Saint's Epiphany            |
+| Knowledge                        | [Saint](scc:mcdm.heroes.v1/rule.world/saint)'s Epiphany            |
 | Life                             | [Blessing of Life](scc:mcdm.heroes.v1/feature.censor.level-4/blessing-of-life)            |
 | Love                             | [Invocation of the Heart](scc:mcdm.heroes.v1/feature.censor.level-4/invocation-of-the-heart)     |
 | Nature                           | [Wode Road](scc:mcdm.heroes.v1/feature.censor.level-4/wode-road)                   |
@@ -6170,7 +6170,7 @@ When you gain wrath at the start of each of your [turns](scc:mcdm.heroes.v1/rule
 <!-- @type: class | @id: conduit -->
 ## Conduit
 
-The power of the gods flows through you! As a vessel for [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power), you don't just keep your allies in the fight. You make those allies more effective, even as you rain divine energy down upon your foes. Though the deity or saint you serve might have other faithful and clergy, you are special among worshippers, receiving your abilities from the highest source.
+The power of the gods flows through you! As a vessel for [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power), you don't just keep your allies in the fight. You make those allies more effective, even as you rain divine energy down upon your foes. Though the deity or [saint](scc:mcdm.heroes.v1/rule.world/saint) you serve might have other faithful and clergy, you are special among worshippers, receiving your abilities from the highest source.
 
 **As a [conduit](scc:mcdm.heroes.v1/class/conduit), you heal and buff your allies, and debuff your foes while smiting them with divine magic. The spark of divinity within you shines, filling your enemies with awe and making you more worldly and aware.**
 
@@ -6224,7 +6224,7 @@ As a [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the following feature
 <!-- @type: feature -->
 #### Deity and Domains
 
-Choose a god or saint who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
+Choose a god or [saint](scc:mcdm.heroes.v1/rule.world/saint) who your character reveres from Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion), or ask your Director about the deities in your campaign world. With the Director's permission, you can also create your own deity and choose four domains to be part of their portfolio.
 
 After choosing your deity, pick two domains from their portfolio. The two domains you pick make up your [subclass](scc:mcdm.heroes.v1/rule.general/subclass), and your choice of domains determines many of the features you'll gain as you gain new levels. (*Quick Build:* [Adûn](scc:mcdm.heroes.v1/god/adun) for deity, and Life and Protection as domains.)
 
@@ -6730,7 +6730,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 3 Piety -->
 > ###### Call the Thunder Down (3 Piety)
 > 
-> *You ask your saint for thunder and your prayer is answered.*
+> *You ask your [saint](scc:mcdm.heroes.v1/rule.world/saint) for thunder and your prayer is answered.*
 > 
 > | **Area, Magic, [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged)** |               **Main action** |
 > |-------------------------|------------------------------:|
@@ -6841,7 +6841,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Sermon of Grace (5 Piety)
 > 
-> *You inspire your allies with tales of your saint's great deeds.*
+> *You inspire your allies with tales of your [saint](scc:mcdm.heroes.v1/rule.world/saint)'s great deeds.*
 > 
 > | **Area, Magic** |              **Main action** |
 > |-----------------|-----------------------------:|
@@ -6886,7 +6886,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 | Love       | [Our Hearts Your Strength](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/our-hearts-your-strength)     |
 | Nature     | [Nature Judges Thee](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/nature-judges-thee)           |
 | Protection | [Sacred Bond](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/sacred-bond)                  |
-| Storm      | Saint's Tempest              |
+| Storm      | [Saint](scc:mcdm.heroes.v1/rule.world/saint)'s Tempest              |
 | Sun        | [Morning Light](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/morning-light)                |
 | Trickery   | [Divine Comedy](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/divine-comedy)                |
 | War        | [Blessing of Insight](scc:mcdm.heroes.v1/feature.ability.conduit.level-2/blessing-of-insight)          |
@@ -6930,7 +6930,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### The Gods Command You Obey (5 Piety)
 > 
-> *You speak with the voice of your saint, commanding your enemies.*
+> *You speak with the voice of your [saint](scc:mcdm.heroes.v1/rule.world/saint), commanding your enemies.*
 > 
 > | **Magic, [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc:mcdm.heroes.v1/rule.combat/strike)** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -7109,7 +7109,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 7 Piety -->
 > ###### Words of Wrath and Grace (7 Piety)
 > 
-> *Your saint grants your enemies a vision of pain and fills your allies with healing energy.*
+> *Your [saint](scc:mcdm.heroes.v1/rule.world/saint) grants your enemies a vision of pain and fills your allies with healing energy.*
 > 
 > | **Area, Magic**  |               **Main action** |
 > |------------------|------------------------------:|
@@ -7160,7 +7160,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 | Creation   | Improved [Hands of the Maker](scc:mcdm.heroes.v1/feature.ability.censor.level-1/hands-of-the-maker) |
 | Death      | Seance                      |
 | Fate       | [Oracular Warning](scc:mcdm.heroes.v1/feature.censor.level-4/oracular-warning)            |
-| Knowledge  | Saint's Epiphany            |
+| Knowledge  | [Saint](scc:mcdm.heroes.v1/rule.world/saint)'s Epiphany            |
 | Life       | [Blessing of Life](scc:mcdm.heroes.v1/feature.censor.level-4/blessing-of-life)            |
 | Love       | Invocation of the Heart     |
 | Nature     | [Wode Road](scc:mcdm.heroes.v1/feature.censor.level-4/wode-road)                   |
@@ -19983,7 +19983,7 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 <!-- @type: complication -->
 #### Preacher
 
-When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
+When you were young, you almost died in an accident or attack, but a vision of a god or [saint](scc:mcdm.heroes.v1/rule.world/saint) showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
 **Benefit:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one [NPC](scc:mcdm.heroes.v1/rule.general/npc) into a [follower](scc:mcdm.heroes.v1/rule.general/follower) (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any [followers](scc:mcdm.heroes.v1/rule.general/follower) acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of [follower](scc:mcdm.heroes.v1/rule.general/follower). Once you have converted an [NPC](scc:mcdm.heroes.v1/rule.general/npc) into a [follower](scc:mcdm.heroes.v1/rule.general/follower) this way, you can't use this benefit again until you gain a level.
 
@@ -20053,7 +20053,7 @@ You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes,
 <!-- @type: complication -->
 #### Refugee
 
-A hostile army—perhaps the forces of Ajax, the Iron Saint—conquered your homeland. Your family escaped, but you can't return home until your oppressors are defeated once and for all.
+A hostile army—perhaps the forces of Ajax, the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint)—conquered your homeland. Your family escaped, but you can't return home until your oppressors are defeated once and for all.
 
 **Benefit:** When your family fled your homeland, they left their most valuable asset behind. Work with the Director to determine whether this asset is a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), several points of [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth), the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) to create a treasure, or the like. This asset is in the hands of the invaders but can be won back as the Director determines.
 
@@ -23165,7 +23165,7 @@ On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can [teleport](scc:mcdm
 | Dragon Soul II         | An offering of gems, coins, and art stolen from a dragon's hoard, sacrificed in ritual fire          | Vastariax               |
 | Invulnerable           | Repurposed metal plates from a servok war engine                                                     | Rallarian               |
 | Leyline Walker         | A cutting from an ethereal tree that manifests in the mundane world only once a year                 | Yllyric                 |
-| Life                   | The tear of a saint                                                                                  | High Kuric              |
+| Life                   | The tear of a [saint](scc:mcdm.heroes.v1/rule.world/saint)                                                                                  | High Kuric              |
 | Magic Resistance III   | A scale from an ancient dragon                                                                       | The First Language      |
 | Phasing III            | Perfectly clear glass from a house that disappeared into the Ethereal Plane                          | Szetch                  |
 | Psionic Resistance III | The skull of a voiceless talker at least a century old                                               | Voll                    |
@@ -23347,7 +23347,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 |---------------|----------------------------------------------------------------------|-------------------------|
 | Blood Bargain | The blood of a [devil](scc:mcdm.heroes.v1/ancestry/devil)                                                 | Anjali                  |
 | Chilling I    | A piece of ice from Quintessence that never melts                    | Yllyric                 |
-| Disrupting I  | A vial of blood from a living saint                                  | Anjali                  |
+| Disrupting I  | A vial of blood from a living [saint](scc:mcdm.heroes.v1/rule.world/saint)                                  | Anjali                  |
 | Hurling       | A magnet made from rare metals                                       | Variac                  |
 | Merciful      | A sprig of dockwart, a rare plant with natural anesthetic properties | Yllyric                 |
 | Terrifying I  | The preserved, intact amygdala of a mindkiller                       | Variac                  |
@@ -23754,7 +23754,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 4   | Before the roll, a sympathetic [NPC](scc:mcdm.heroes.v1/rule.general/npc)—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                         |
 | 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). |
 | 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) they make are halved.                                                                                                                                                                                                                                                                       |
-| 7   | After the roll, a saint blesses the hero's work. The hero feels [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
+| 7   | After the roll, a [saint](scc:mcdm.heroes.v1/rule.world/saint) blesses the hero's work. The hero feels [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
 | 8   | Before the roll, the hero becomes aware of a previously unknown radenwight warren within the community, which has the potential to become a point of tension and conflict. The hero must engage with the radenwights and other locals to create understanding between the two communities or take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                    |
 | 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the [respite](scc:mcdm.heroes.v1/rule.resource/respite)) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
 | 10  | Before the roll, a thief, assassin, or other criminal offers to assist the hero. They can offer 50 points toward the completion of the project, as long as the hero looks the other way if they ever cross paths again.                                                                                                                                                                                                          |
@@ -26478,13 +26478,13 @@ Titles suitable for 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 *He seemed like he needed help! Now the dead speak to me. I think maybe that old man was more than he appeared.*
 
-**Prerequisite:** You do a favor for an agent of a god or saint, or promise to do so.
+**Prerequisite:** You do a favor for an agent of a god or [saint](scc:mcdm.heroes.v1/rule.world/saint), or promise to do so.
 
 **Effect:** Choose one of the following benefits:
 
 - *Healing Gift:* You can use the 1st-level [Conduit](scc:mcdm.heroes.v1/class/conduit) feature [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) as if you had spent 1 [piety](scc:mcdm.heroes.v1/feature.conduit.level-1/piety) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
-- *Last-Ditch Prayer:* As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
-- *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or saint's domains, choose a [Conduit](scc:mcdm.heroes.v1/class/conduit) 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+- *Last-Ditch Prayer:* As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or [saint](scc:mcdm.heroes.v1/rule.world/saint), or until you gain a level.
+- *Touched by the Divine:* Choose a god or [saint](scc:mcdm.heroes.v1/rule.world/saint) from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or [saint](scc:mcdm.heroes.v1/rule.world/saint)'s domains, choose a [Conduit](scc:mcdm.heroes.v1/class/conduit) 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: title -->
 #### Heist Hero
@@ -27063,19 +27063,19 @@ As an optional rule, the Director can allow a hero to make a purchase that is on
 
 When a river floods or crops fail, some people may curse the gods, but those people do not all believe a god caused these events. They may curse simply because the gods didn't prevent catastrophe. They do not think, "Why did the gods do that?" They think, "Why did the gods make a world that behaves like this?"
 
-The gods are powerful, but forbidden from acting directly upon or within the world. To enact their will, they use intermediaries—beings of [demigod](scc:mcdm.heroes.v1/title/demigod)-like status, once mortals, who now serve their patron god in eternity. Many [humans](scc:mcdm.heroes.v1/ancestry/human) call these beings saints, while the other speaking peoples use the term heroes, or legendary heroes, not to be confused with the heroes you make using the character creation rules in this book.
+The gods are powerful, but forbidden from acting directly upon or within the world. To enact their will, they use intermediaries—beings of [demigod](scc:mcdm.heroes.v1/title/demigod)-like status, once mortals, who now serve their patron god in eternity. Many [humans](scc:mcdm.heroes.v1/ancestry/human) call these beings [saints](scc:mcdm.heroes.v1/rule.world/saint), while the other speaking peoples use the term heroes, or legendary heroes, not to be confused with the heroes you make using the character creation rules in this book.
 
-Each god has many saints, some obscure. They sometimes manifest in the world. These encounters are always brief, leading sages and theologians to conclude there must be some limit to how much time or energy these saints and legendary heroes can spend on the prime manifold. Who created or enforces these limits?
+Each god has many [saints](scc:mcdm.heroes.v1/rule.world/saint), some obscure. They sometimes manifest in the world. These encounters are always brief, leading sages and theologians to conclude there must be some limit to how much time or energy these [saints](scc:mcdm.heroes.v1/rule.world/saint) and legendary heroes can spend on the prime manifold. Who created or enforces these limits?
 
 No one knows.
 
-As a result of this complex tapestry of belief and personalities, a farmer in Aendrim might call upon [Adûn](scc:mcdm.heroes.v1/god/adun) for strength while tilling the earth. But if a cool breeze suddenly came along, easing the bite of the sun on their back, they would almost certainly not thank [Adûn](scc:mcdm.heroes.v1/god/adun) or any of his saints. They would probably thank Saint Elspeth the Blithe, sometimes called the Summer Breeze. If they had a neighbor or relative with a shrine to Saint Elspeth in their home, they might give that person a small gift or offering and ask them to place it on their shrine. More likely, they would silently promise to do this, and then forget or get distracted.
+As a result of this complex tapestry of belief and personalities, a farmer in Aendrim might call upon [Adûn](scc:mcdm.heroes.v1/god/adun) for strength while tilling the earth. But if a cool breeze suddenly came along, easing the bite of the sun on their back, they would almost certainly not thank [Adûn](scc:mcdm.heroes.v1/god/adun) or any of his [saints](scc:mcdm.heroes.v1/rule.world/saint). They would probably thank Saint Elspeth the Blithe, sometimes called the Summer Breeze. If they had a neighbor or relative with a shrine to Saint Elspeth in their home, they might give that person a small gift or offering and ask them to place it on their shrine. More likely, they would silently promise to do this, and then forget or get distracted.
 
-If questioned about this-"Why did you call upon one god, but thank the saint of a completely different god?"-they would first be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) by the question. It would not have occurred to them to examine this behavior. If pressed they would say, "Oh, I'm sure they worked it out between them." They would not imagine, "[Adûn](scc:mcdm.heroes.v1/god/adun) told Viras, who told her saint, Elspeth, to send a cooling breeze," but they would assume
+If questioned about this-"Why did you call upon one god, but thank the [saint](scc:mcdm.heroes.v1/rule.world/saint) of a completely different god?"-they would first be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) by the question. It would not have occurred to them to examine this behavior. If pressed they would say, "Oh, I'm sure they worked it out between them." They would not imagine, "[Adûn](scc:mcdm.heroes.v1/god/adun) told Viras, who told her [saint](scc:mcdm.heroes.v1/rule.world/saint), Elspeth, to send a cooling breeze," but they would assume
 
 something like that happened and not worry overmuch about the details. They called out, they received aid—that's what's important.
 
-If no aid is forthcoming folks assume this is because the gods and saints are all very busy and cannot be arsed to answer every prayer. People are never [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) when the gods and saints are silent. They are usually silent.
+If no aid is forthcoming folks assume this is because the gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) are all very busy and cannot be arsed to answer every prayer. People are never [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) when the gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) are silent. They are usually silent.
 
 <!-- @type: rule | @group: world | @id: saint -->
 ### Churches and Temples
@@ -27104,31 +27104,31 @@ There are churches dedicated to nature or knowledge or the sun, with no clear mo
 
 Elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) revere their own creator gods. Val, Ord, and Kul respectively. [Humans](scc:mcdm.heroes.v1/ancestry/human), uniquely, worship many gods. The difference between the Innumerable Younger Gods of the [humans](scc:mcdm.heroes.v1/ancestry/human) and the Elder Gods who created the other speaking peoples is not well understood.
 
-[Dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) mostly venerate [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) heroes, [humans](scc:mcdm.heroes.v1/ancestry/human) mostly worship [human](scc:mcdm.heroes.v1/ancestry/human) saints, and so on... But this is just a side effect of the fact that members of the same ancestry share the same culture and language and self-assemble along those lines. Any sufficiently large city, regardless of which species founded it, has churches and temples to gods of many species because cities attract people of many different species.
+[Dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) mostly venerate [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) heroes, [humans](scc:mcdm.heroes.v1/ancestry/human) mostly worship [human](scc:mcdm.heroes.v1/ancestry/human) [saints](scc:mcdm.heroes.v1/rule.world/saint), and so on... But this is just a side effect of the fact that members of the same ancestry share the same culture and language and self-assemble along those lines. Any sufficiently large city, regardless of which species founded it, has churches and temples to gods of many species because cities attract people of many different species.
 
 Each culture's pantheon reflects the mores and folkways of the people who live there. In far northern Vanigar, villains in folktales often gain their power by tricking others through clever wordplay. Riddles. Though they are villains, they are clever, and this earns them some respect even from their enemies. So the Vanigar pantheon includes Holkatya, a trickster god.
 
 Whereas [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) has no folk tradition of trickster figures, and so has no trickster god. Instead, villains in Vaslorian folktales tend to be people who seek quick ways to power in order to avoid honest work. So [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) has the dark god Cyrvis who teaches that magic can subvert fate and make you master of not only your destiny, but also the world. This also reveals the common Vaslorian's attitude toward magic.
 
-The gods of each pantheon tell you what the people of that region value, and what they fear, disapprove of, or distrust. The Vaslorian pantheon is wholly different from the pantheon of Vanigar which is different from the pantheon of Rioja. The gods and saints can hear their worshippers anywhere in the timescape and even small cities can have temples to distant gods of other peoples and regions. All it takes is one dedicated [conduit](scc:mcdm.heroes.v1/class/conduit) to establish a church of their saint or hero in some distant land.
+The gods of each pantheon tell you what the people of that region value, and what they fear, disapprove of, or distrust. The Vaslorian pantheon is wholly different from the pantheon of Vanigar which is different from the pantheon of Rioja. The gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) can hear their worshippers anywhere in the timescape and even small cities can have temples to distant gods of other peoples and regions. All it takes is one dedicated [conduit](scc:mcdm.heroes.v1/class/conduit) to establish a church of their [saint](scc:mcdm.heroes.v1/rule.world/saint) or hero in some distant land.
 
-For instance, the High City of Dalrath, a small barony in northern Aendrim, has a temple to Sektahre the Boatman, a saint of Khemhara, a distant desert region. The people of Dalrath do not find this strange. The priestess of Sektahre does all the same things any native curate would do: perform rituals, heal the sick, and otherwise tend to the spiritual and physical wellbeing of the locals without asking much in return. Some people may be suspicious of a stranger peddling their religion far from home, but yet more people consider the presence of such a priestess a sign that their city must be very important indeed.
+For instance, the High City of Dalrath, a small barony in northern Aendrim, has a temple to Sektahre the Boatman, a [saint](scc:mcdm.heroes.v1/rule.world/saint) of Khemhara, a distant desert region. The people of Dalrath do not find this strange. The priestess of Sektahre does all the same things any native curate would do: perform rituals, heal the sick, and otherwise tend to the spiritual and physical wellbeing of the locals without asking much in return. Some people may be suspicious of a stranger peddling their religion far from home, but yet more people consider the presence of such a priestess a sign that their city must be very important indeed.
 
-Because of all these gods and saints, religion in [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) saints in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their [followers](scc:mcdm.heroes.v1/rule.general/follower)' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of Saints is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
+Because of all these gods and [saints](scc:mcdm.heroes.v1/rule.world/saint), religion in [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) [saints](scc:mcdm.heroes.v1/rule.world/saint) in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their [followers](scc:mcdm.heroes.v1/rule.general/follower)' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of [Saints](scc:mcdm.heroes.v1/rule.world/saint) is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
 
-Lastly, though rulers across the land instinctively believe the gods are paying more attention to them because they are queens or dukes or the heads of a powerful wizard order or guild... there is no evidence of this. As far as theologists can tell, the gods seem to view every soul as equally worthy. Many of the tales of saints and heroes feature characters of enormous [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) battling over the soul of a normal person with no station or power or inheritance.
+Lastly, though rulers across the land instinctively believe the gods are paying more attention to them because they are queens or dukes or the heads of a powerful wizard order or guild... there is no evidence of this. As far as theologists can tell, the gods seem to view every soul as equally worthy. Many of the tales of [saints](scc:mcdm.heroes.v1/rule.world/saint) and heroes feature characters of enormous [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) battling over the soul of a normal person with no station or power or inheritance.
 
 As much as it annoys the great and the good, the gods view all mortals as equals.
 
 ### Evil Gods and Saints
 
-The gods and saints presented in this chapter are popular and well-known. Their priests, shamans, or god-callers serve the public weal and tend to the souls of the people.
+The gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) presented in this chapter are popular and well-known. Their priests, shamans, or god-callers serve the public weal and tend to the souls of the people.
 
-But the world is not for heroes alone. There are villains, as well as those who are simply mis[guide](scc:mcdm.heroes.v1/rule.downtime/guide)d or desperate. Every pantheon has saints, even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
+But the world is not for heroes alone. There are villains, as well as those who are simply mis[guide](scc:mcdm.heroes.v1/rule.downtime/guide)d or desperate. Every pantheon has [saints](scc:mcdm.heroes.v1/rule.world/saint), even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
 
-These religions do not usually build public temples and worship in the open, but most communities know, or very strongly suspect, who among them serve evil gods and saints.
+These religions do not usually build public temples and worship in the open, but most communities know, or very strongly suspect, who among them serve evil gods and [saints](scc:mcdm.heroes.v1/rule.world/saint).
 
-Among the people of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), there are the gods Nikros the Tyrant and Cyrvis the Lich, evil gods, each with their own saints. When tyrants rule, these religions tend to come out from the basements and sewer-temples and start worshipping openly.
+Among the people of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), there are the gods Nikros the Tyrant and Cyrvis the Lich, evil gods, each with their own [saints](scc:mcdm.heroes.v1/rule.world/saint). When tyrants rule, these religions tend to come out from the basements and sewer-temples and start worshipping openly.
 
 ### Afterlife in Orden
 
@@ -27146,19 +27146,19 @@ Some people in [Orden](scc:mcdm.heroes.v1/rule.world/orden), like the [hakaan](s
 
 ### Conduits and Censors
 
-"[Conduit](scc:mcdm.heroes.v1/class/conduit)" and "[censor](scc:mcdm.heroes.v1/class/censor)" are not titles within any church—they are jobs or ranks. An abbot, rector, even a bishop may be, or may have been, a [conduit](scc:mcdm.heroes.v1/class/conduit) or a [censor](scc:mcdm.heroes.v1/class/censor). [Conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) are those members of the church expected to go out into the world and actively, sometimes very actively, represent their saint's ethos. It is for this purpose [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) are given access to powerful prayers.
+"[Conduit](scc:mcdm.heroes.v1/class/conduit)" and "[censor](scc:mcdm.heroes.v1/class/censor)" are not titles within any church—they are jobs or ranks. An abbot, rector, even a bishop may be, or may have been, a [conduit](scc:mcdm.heroes.v1/class/conduit) or a [censor](scc:mcdm.heroes.v1/class/censor). [Conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) are those members of the church expected to go out into the world and actively, sometimes very actively, represent their [saint](scc:mcdm.heroes.v1/rule.world/saint)'s ethos. It is for this purpose [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) are given access to powerful prayers.
 
-Any sufficiently large organization has [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) just like they have [shadows](scc:mcdm.heroes.v1/class/shadow) and wizards. The thieves' guild needs healers, just as the church needs spies! A [conduit](scc:mcdm.heroes.v1/class/conduit) who works for the thieves' guild still serves their saint which implicitly means the church approves of the guild's activities and the two organizations are at least pointing in the same direction if not actively allied.
+Any sufficiently large organization has [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) just like they have [shadows](scc:mcdm.heroes.v1/class/shadow) and wizards. The thieves' guild needs healers, just as the church needs spies! A [conduit](scc:mcdm.heroes.v1/class/conduit) who works for the thieves' guild still serves their [saint](scc:mcdm.heroes.v1/rule.world/saint) which implicitly means the church approves of the guild's activities and the two organizations are at least pointing in the same direction if not actively allied.
 
 Churches have bureaucracy just like any organization and while some prelates, abbots, bishops, or hierarchs are [conduits](scc:mcdm.heroes.v1/class/conduit), many are not. They are normal people who serve the church in administrative, political, or bureaucratic roles. While they know the same minor orisons every acolyte and abbot know, they do not go out into the world righting wrongs, and so do not gain access to the powers of the [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor).
 
-The prayers acolytes perform in churches are little more than magical rituals. They say the right words, make the right gestures, touch the appropriate fetish or talisman, and wounds close, curses are lifted, blessings bestowed. There's no direct connection in these examples between the acolyte and their god or saint. Though, even a lowly acolyte can expect to find their prayers fall on deaf ears if they fail to uphold the tenets of their faith.
+The prayers acolytes perform in churches are little more than magical rituals. They say the right words, make the right gestures, touch the appropriate fetish or talisman, and wounds close, curses are lifted, blessings bestowed. There's no direct connection in these examples between the acolyte and their god or [saint](scc:mcdm.heroes.v1/rule.world/saint). Though, even a lowly acolyte can expect to find their prayers fall on deaf ears if they fail to uphold the tenets of their faith.
 
-Should the acolyte continue in their studies and deeds and earn the rank of [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor), they gain access to greater prayers granted them by their saint. As they advance in their faith they call upon their saint more directly, and they begin to form a personal relationship with their saint. It is a feeling that develops whereby the [conduit](scc:mcdm.heroes.v1/class/conduit) learns the... mood, for lack of a better term, of their saint or hero.
+Should the acolyte continue in their studies and deeds and earn the rank of [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor), they gain access to greater prayers granted them by their [saint](scc:mcdm.heroes.v1/rule.world/saint). As they advance in their faith they call upon their [saint](scc:mcdm.heroes.v1/rule.world/saint) more directly, and they begin to form a personal relationship with their [saint](scc:mcdm.heroes.v1/rule.world/saint). It is a feeling that develops whereby the [conduit](scc:mcdm.heroes.v1/class/conduit) learns the... mood, for lack of a better term, of their [saint](scc:mcdm.heroes.v1/rule.world/saint) or hero.
 
-As they gain experience, a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) may even enter into dialogue with their saint. When they call upon their saint for power in battle, their saint personally answers them. They might literally be on first-name terms. At even higher levels, [conduits](scc:mcdm.heroes.v1/class/conduit) begin to get a sense of the greater power behind the saint or legendary hero: their god, who begins answering prayers directly. They become, in effect, little mini-saints. The pathway from high-level [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to saint is now obscure, but was once well-known. In earlier ages of the world, it was expected that certain holy heroes who had served their god and saint well would—should appropriately dramatic circumstances reveal themselves—be elevated to sainthood.
+As they gain experience, a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) may even enter into dialogue with their [saint](scc:mcdm.heroes.v1/rule.world/saint). When they call upon their [saint](scc:mcdm.heroes.v1/rule.world/saint) for power in battle, their [saint](scc:mcdm.heroes.v1/rule.world/saint) personally answers them. They might literally be on first-name terms. At even higher levels, [conduits](scc:mcdm.heroes.v1/class/conduit) begin to get a sense of the greater power behind the [saint](scc:mcdm.heroes.v1/rule.world/saint) or legendary hero: their god, who begins answering prayers directly. They become, in effect, little mini-[saints](scc:mcdm.heroes.v1/rule.world/saint). The pathway from high-level [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to [saint](scc:mcdm.heroes.v1/rule.world/saint) is now obscure, but was once well-known. In earlier ages of the world, it was expected that certain holy heroes who had served their god and [saint](scc:mcdm.heroes.v1/rule.world/saint) well would—should appropriately dramatic circumstances reveal themselves—be elevated to sainthood.
 
-The Deities and Domains table and the Saints and Domains table summarize each of the gods and saints mentioned in this chapter and their available domains.
+The Deities and Domains table and the [Saints](scc:mcdm.heroes.v1/rule.world/saint) and Domains table summarize each of the gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) mentioned in this chapter and their available domains.
 
 ###### Deities and Domains Table
 
@@ -27177,7 +27177,7 @@ The Deities and Domains table and the Saints and Domains table summarize each of
 
 ###### Saints and Domains Table
 
-| Saint                               | Domains                       |
+| [Saint](scc:mcdm.heroes.v1/rule.world/saint)                               | Domains                       |
 |-------------------------------------|-------------------------------|
 | Atossa the Shepherd                 | Fate, Protection, Trickery    |
 | Cho'kassa the Time Rider            | Storm, Sun                    |
@@ -27219,7 +27219,7 @@ Val holds that the greatest purpose a thinking being can commit themselves to is
 
 #### Heroes of the Elves
 
-The legendary heroes of the elves are once-mortal heroes who now dwell in Arcadia and make up Val's court there. They answer prayers and dispense blessings and boons, even manifest in the world during times of great need. (Though, like all the speaking people's saints and heroes, what these legendary figures consider "great need" is very personal and has little to do with politics or great kingdoms.)
+The legendary heroes of the elves are once-mortal heroes who now dwell in Arcadia and make up Val's court there. They answer prayers and dispense blessings and boons, even manifest in the world during times of great need. (Though, like all the speaking people's [saints](scc:mcdm.heroes.v1/rule.world/saint) and heroes, what these legendary figures consider "great need" is very personal and has little to do with politics or great kingdoms.)
 
 The [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) heroes detailed in this book are A Sea of Suns, the Taste of Morning, and Ripples of Honey on a Shore of Gold. The [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) heroes are Yllin Dyrvis, Thyll Hylacae, and Illwyv li Orchiax.
 
@@ -27397,9 +27397,9 @@ Voyrik gave his warleader's torque to her son, who grew to lead the Lightning fi
 
 **Domains:** Life, War
 
-Grole the One-Handed, Grole who Slew the Saint of Skulls, lost his left hand at the Battle of Dur Mothe where he stood alone against the horde of deathless and their master, the living saint Morath of Many Tendrils. Grole thought to buy time for his army to escape the flood of death, but when they saw their warleader grappling alone with the Saint of Rot, they reversed their retreat. When Morath lashed out with his greataxe Viscerator and severed Grole's left hand from his arm, Grole's army surged forward, breaking the tide of deathless.
+Grole the One-Handed, Grole who Slew the [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Skulls, lost his left hand at the Battle of Dur Mothe where he stood alone against the horde of deathless and their master, the living saint Morath of Many Tendrils. Grole thought to buy time for his army to escape the flood of death, but when they saw their warleader grappling alone with the [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Rot, they reversed their retreat. When Morath lashed out with his greataxe Viscerator and severed Grole's left hand from his arm, Grole's army surged forward, breaking the tide of deathless.
 
-His army watched as Kul's light descended on their wounded leader, and they knew Grole had been chosen by Kul in that moment. At the last, Grole and Morath fought as equals. [Orc](scc:mcdm.heroes.v1/ancestry/orc) hero and dark [human](scc:mcdm.heroes.v1/ancestry/human) saint grappled atop the ancient hill. With his one good hand Grole plunged the Green Fire, his grandmother's saber, into Morath's heart, ending the Saint of Many Tendrils.
+His army watched as Kul's light descended on their wounded leader, and they knew Grole had been chosen by Kul in that moment. At the last, Grole and Morath fought as equals. [Orc](scc:mcdm.heroes.v1/ancestry/orc) hero and dark [human](scc:mcdm.heroes.v1/ancestry/human) [saint](scc:mcdm.heroes.v1/rule.world/saint) grappled atop the ancient hill. With his one good hand Grole plunged the Green Fire, his grandmother's saber, into Morath's heart, ending the [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Many Tendrils.
 
 Grole teaches the extraordinary deeds common people can accomplish if they cast fear from their minds. It was Grole who said, "Even should an [orc](scc:mcdm.heroes.v1/ancestry/orc) be pierced by many arrows, they should still be able to perform one last act of revenge."
 
@@ -27427,7 +27427,7 @@ Khravila teaches the virtue of persistence, endurance, and—above all—wits. N
 
 Most [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are animists. They know and respect the four Elder Gods who created the world and believe these gods watch the world and see what happens within it. But the [Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) do not create churches or formal belief systems around this attitude.
 
-Instead they believe the world is filled with innumerable nature spirits. Each river, tree, stone, has their own spirit, which the [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) revere. They have no organized religion in the way the other ancestries in this chapter do, though a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) brought up in a city, or among another people, would naturally venerate in whatever gods and saints are worshiped by the folk who raised them.
+Instead they believe the world is filled with innumerable nature spirits. Each river, tree, stone, has their own spirit, which the [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) revere. They have no organized religion in the way the other ancestries in this chapter do, though a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) brought up in a city, or among another people, would naturally venerate in whatever gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) are worshiped by the folk who raised them.
 
 The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) know they are descended from stone giants, but they do not think of themselves as stone giants. They know their ancestors were tricked by Holkatya, one of the gods of Vanigar, into trading some of their great strength for the doomsight. But while they respect Holkatya, they do not worship her. Nor do they resent her. She's merely a detail of their history.
 
@@ -27497,22 +27497,22 @@ Atossa teaches that it is not for the shepherd to judge the flock—only to prot
 
 ### Devil Gods
 
-[Devil](scc:mcdm.heroes.v1/ancestry/devil) heroes in [Orden](scc:mcdm.heroes.v1/rule.world/orden) usually serve the gods and saints of the culture in which they were raised. Few [devils](scc:mcdm.heroes.v1/ancestry/devil) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are from the Seven Cities, most are descended from [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded on [Orden](scc:mcdm.heroes.v1/rule.world/orden) hundreds or thousands of years ago. [Devils](scc:mcdm.heroes.v1/ancestry/devil) who are from the Seven Cities have their own unique pantheon.
+[Devil](scc:mcdm.heroes.v1/ancestry/devil) heroes in [Orden](scc:mcdm.heroes.v1/rule.world/orden) usually serve the gods and [saints](scc:mcdm.heroes.v1/rule.world/saint) of the culture in which they were raised. Few [devils](scc:mcdm.heroes.v1/ancestry/devil) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) are from the Seven Cities, most are descended from [devils](scc:mcdm.heroes.v1/ancestry/devil) who were stranded on [Orden](scc:mcdm.heroes.v1/rule.world/orden) hundreds or thousands of years ago. [Devils](scc:mcdm.heroes.v1/ancestry/devil) who are from the Seven Cities have their own unique pantheon.
 
-The Seven Cities have saints just like [humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) do but in place of gods, these saints serve the seven Archdukes of Hell, also known as Archdevils or the Lords of Hell. Unlike the gods of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Lords of Hell are corporeal. Giant figures, 30 feet tall, who each sit upon the throne of their city, projecting their consciousness out into the world, dealing with politics, sorcery, and treachery, manifesting avatars when necessary. They are, effectively, the Gods of Hell.
+The Seven Cities have [saints](scc:mcdm.heroes.v1/rule.world/saint) just like [humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) do but in place of gods, these [saints](scc:mcdm.heroes.v1/rule.world/saint) serve the seven Archdukes of Hell, also known as Archdevils or the Lords of Hell. Unlike the gods of [Orden](scc:mcdm.heroes.v1/rule.world/orden), the Lords of Hell are corporeal. Giant figures, 30 feet tall, who each sit upon the throne of their city, projecting their consciousness out into the world, dealing with politics, sorcery, and treachery, manifesting avatars when necessary. They are, effectively, the Gods of Hell.
 
-Like the other gods of the timescape, the Lords of Hell are too busy to attend to every petition and request and so employ saints just like other gods. Religion in Hell is superficially similar to religion among the peoples of [Orden](scc:mcdm.heroes.v1/rule.world/orden). There are churches and rites and rituals, but [devils](scc:mcdm.heroes.v1/ancestry/devil) tend to view attending church and performing the expected rituals at the appropriate times as akin to paying taxes. Annoying but necessary.
+Like the other gods of the timescape, the Lords of Hell are too busy to attend to every petition and request and so employ [saints](scc:mcdm.heroes.v1/rule.world/saint) just like other gods. Religion in Hell is superficially similar to religion among the peoples of [Orden](scc:mcdm.heroes.v1/rule.world/orden). There are churches and rites and rituals, but [devils](scc:mcdm.heroes.v1/ancestry/devil) tend to view attending church and performing the expected rituals at the appropriate times as akin to paying taxes. Annoying but necessary.
 
 #### Saints of Hell
 
-Like [Orden](scc:mcdm.heroes.v1/rule.world/orden), there are dozens of saints in Hell, some obscure. These three are some of the most popular and the most likely saints for a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to follow.
+Like [Orden](scc:mcdm.heroes.v1/rule.world/orden), there are dozens of [saints](scc:mcdm.heroes.v1/rule.world/saint) in Hell, some obscure. These three are some of the most popular and the most likely [saints](scc:mcdm.heroes.v1/rule.world/saint) for a [conduit](scc:mcdm.heroes.v1/class/conduit) or [censor](scc:mcdm.heroes.v1/class/censor) to follow.
 
 <!-- @type: god | @id: thellasko -->
 #### Thellasko the Great Designer
 
 **Domains:** Knowledge, War
 
-Thellasko the Great Designer, the Game Master, Saint of Strategy did not invent war—[humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) hold that honor. Thellasko invented war simulation. Creating what were effectively games to train cadets and lieutenants at the wartable to ensure [victory](scc:mcdm.heroes.v1/rule.resource/victories) on the field.
+Thellasko the Great Designer, the Game Master, [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Strategy did not invent war—[humans](scc:mcdm.heroes.v1/ancestry/human) in [Orden](scc:mcdm.heroes.v1/rule.world/orden) hold that honor. Thellasko invented war simulation. Creating what were effectively games to train cadets and lieutenants at the wartable to ensure [victory](scc:mcdm.heroes.v1/rule.resource/victories) on the field.
 
 Thellasko served in Dispater's army, rising to the rank of major general. He retired with honors after the Battle of the River Rhye, intending to take what he had learned on the field and write a book about the proper way to conduct a war.
 
@@ -27534,7 +27534,7 @@ Thellasko teaches the virtue of accepting the battle as it is, not as you wish i
 
 **Domains:** Knowledge, Trickery
 
-Uryal the Subtle, Deception, the Hidden Hand, Saint of Lies rose to the rank of senior adjudicator in the Bank of Vorilom in Styx. His manager had been permanent undersecretary of finance for over three hundred years, which Uryal felt was taking the title a *tad* literally.
+Uryal the Subtle, Deception, the Hidden Hand, [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Lies rose to the rank of senior adjudicator in the Bank of Vorilom in Styx. His manager had been permanent undersecretary of finance for over three hundred years, which Uryal felt was taking the title a *tad* literally.
 
 A dozen senior adjudicators had tried to usurp the permanent undersecretary for generations. Their corpses made excellent lamps and even better examples. But Uryal believed he was different. He knew the game the finance managers played, and thought it was stale. Lying, double-dealing, and backstabbing have their place, but there are even subtler tools in the deceiver's toolbox.
 
@@ -27552,13 +27552,13 @@ Uryal teaches that deception is only one tool in the art of lies. That the point
 
 be used to achieve one's ends. Uryal teaches the virtue of flexibility of character and morality. The virtue of unpredictability—always behaving in a manner that is open to interpretation so as to prevent your opponent from learning your tells.
 
-Uryal is the Saint of Hell's diplomatic corps. His *unofficial* motto, falsely attributed to him but oft-repeated: "*Do unto the other guy as he would do unto you. But do it to him first.*"
+Uryal is the [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Hell's diplomatic corps. His *unofficial* motto, falsely attributed to him but oft-repeated: "*Do unto the other guy as he would do unto you. But do it to him first.*"
 
 ##### Kuryalka the False Principle
 
 **Domains:** Death, Trickery
 
-Kuryalka the False Principle, Soulstealer, Audacity, Saint of Ambition is credited with inventing the trading scheme known as the Kuryalka Ploy. Daughter and eldest child of Orliath IX—Marquis of Naraka, the City of Blood—tradition held Kuryalka would ascend to the house throne upon her mother's death and rule, but from childhood Kuryalka was obsessed with what was informally known as "the Trade"—the buying and selling of mortal souls from [Orden](scc:mcdm.heroes.v1/rule.world/orden) and elsewhere in the timescape.
+Kuryalka the False Principle, Soulstealer, Audacity, [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Ambition is credited with inventing the trading scheme known as the Kuryalka Ploy. Daughter and eldest child of Orliath IX—Marquis of Naraka, the City of Blood—tradition held Kuryalka would ascend to the house throne upon her mother's death and rule, but from childhood Kuryalka was obsessed with what was informally known as "the Trade"—the buying and selling of mortal souls from [Orden](scc:mcdm.heroes.v1/rule.world/orden) and elsewhere in the timescape.
 
 It occurred to Kuryalka that as long as people saw their soul-power increasing on paper they wouldn't inquire too closely about her stewardship of their investment. They signed their accumulated souls over to young Kuryalka, who promised them great returns. It seemed too good to be true! But she published a report every quarter showing marvelous gains, and while no one could understand her math or references to "integrals," they were well pleased with their growing wealth. Whenever someone complained about the lack of disbursements, Kuryalka would quickly pay them out of her growing hoard of souls.
 
@@ -27566,7 +27566,7 @@ Of course, there was no investment taking place. She simply kept the souls and g
 
 Days before that moment, supreme in the fullness of her soulpower, Kuryalka did not withdraw her souls and escape into the timescape with her near-infinite wealth. She went to the Archdevil Sutekh, Lord of Naraka, and offered him her vast soul wealth in exchange for immortality and a place in the Court of the Seven Cities.
 
-Sutekh's terrifying hollow laughter could be heard throughout Hell. No mortal, he said, had ever embodied such naked ambition. He accepted her offer, making her the first Saint of Hell. Sutekh took Kuryalka's souls and founded the Exchange, making the trade in souls an official government department in Hell, and building an entire bureaucracy around it.
+Sutekh's terrifying hollow laughter could be heard throughout Hell. No mortal, he said, had ever embodied such naked ambition. He accepted her offer, making her the first [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Hell. Sutekh took Kuryalka's souls and founded the Exchange, making the trade in souls an official government department in Hell, and building an entire bureaucracy around it.
 
 Kuryalka teaches the virtue of ambition—that if you are willing to risk everything, you can gain everything. "The world is yours, if only you tell a lie big enough." That the greatest ambitions are those that are so audacious, no one else has even imagined them yet. In this manner does one avoid competition.
 
@@ -27601,7 +27601,7 @@ Adûn and [Cavall](scc:mcdm.heroes.v1/god/cavall) are brothers and the line betw
 
 **Domains:** Love, Protection
 
-Gaed the Confessor, son of Malgen, son of Germoc, was the abbot of a small monastery dedicated to Saint Anthony—Shield of the North—in eastern Aendrim during the rule of the tyrant Baron Kaveran. Kaveran was a secret [censor](scc:mcdm.heroes.v1/class/censor) of the church of Saint Pallad, winning the baronial throne though a combination of treachery and good strategic battle principles. Once on the throne, he threw off the black cloth covering the device on his shield, revealing himself to be a servant of Pallad, Saint of Nikros.
+Gaed the Confessor, son of Malgen, son of Germoc, was the abbot of a small monastery dedicated to Saint Anthony—Shield of the North—in eastern Aendrim during the rule of the tyrant Baron Kaveran. Kaveran was a secret [censor](scc:mcdm.heroes.v1/class/censor) of the church of Saint Pallad, winning the baronial throne though a combination of treachery and good strategic battle principles. Once on the throne, he threw off the black cloth covering the device on his shield, revealing himself to be a servant of Pallad, [Saint](scc:mcdm.heroes.v1/rule.world/saint) of Nikros.
 
 Kaveran sought to consolidate his rule by extinguishing the church of Saint Anthony, Shield of the North specifically, and worship of Adûn generally. In this, he almost succeeded. Gaed's monastery was small, his province obscure. But as he refused to renounce his faith, his monastery attracted more and more refugees, making it harder and harder for Kaveran to deal with him without causing a revolt.
 
@@ -27678,15 +27678,15 @@ Llewellyn and Silverheart plunged into the bog and though it was night and the m
 
 Looking to the upper window of the tower, Llewellyn saw someone performing a dark ritual. A flash of lightning illuminated the figure. It was Melianus! Melianus was the sorcerer! Llewellyn called out, and the duke descended the tower and mounted his hellsteed. On his shield now—the screaming-skull symbol of Cyrvis, the Lich, god of malice.
 
-Cyrvis had rewarded his loyal servant for years of cruelty, and the figure astride the nightmare was Saint Melianus the Bright. The Dark Saint charged Llewellyn, his lance gleaming with balefire. Llewellyn and Silverheart returned the charge and the two clashed together, Melianus's blow strong enough to unseat a giant. But Llewellyn was not thrown. His strength was the strength of ten, for his heart was pure.
+Cyrvis had rewarded his loyal servant for years of cruelty, and the figure astride the nightmare was Saint Melianus the Bright. The Dark [Saint](scc:mcdm.heroes.v1/rule.world/saint) charged Llewellyn, his lance gleaming with balefire. Llewellyn and Silverheart returned the charge and the two clashed together, Melianus's blow strong enough to unseat a giant. But Llewellyn was not thrown. His strength was the strength of ten, for his heart was pure.
 
 Coalfire struck with flaming hooves at Silverheart but the destrier struck back, blow for bite and bite for blow. Then the hellsteed, roared and a rotting green flame burned Silverheart's flesh and stole her breath until, choking, she fell to the ground, dead.
 
 Llewellyn's heart [burst](scc:mcdm.heroes.v1/rule.combat/burst). He threw his body over the corpse of his loyal steed, and Melianus's lance pierced his armor, his back, and his heart. Knight and horse, dead. Melianus crowed as the lightning flashed again. But, in that moment, the miracle.
 
-Cavall stood between the Dark Saint and loyal knight. Cavall pulled the lance from Llewellyn's back. "Rise my son, and rise thy steed. Thy work shalt never be done."
+Cavall stood between the Dark [Saint](scc:mcdm.heroes.v1/rule.world/saint) and loyal knight. Cavall pulled the lance from Llewellyn's back. "Rise my son, and rise thy steed. Thy work shalt never be done."
 
-Saint Llewellyn the Valiant and Silverheart his Eversteed rose, immortal, and the battle against evil renewed itself, the two armored saints clashing on barded steeds.
+Saint Llewellyn the Valiant and Silverheart his Eversteed rose, immortal, and the battle against evil renewed itself, the two armored [saints](scc:mcdm.heroes.v1/rule.world/saint) clashing on barded steeds.
 
 Weeks later, neither having returned, the people of Gant laboriously forded the swamp and found the tower of the sorcerer. The ground
 
@@ -27694,7 +27694,7 @@ around the tower turned black from the baleful energies unleashed. Though no bod
 
 Llewellyn and Silverheart had rid the people of their cursed, hateful duke.
 
-Saint Llewellyn is Cavall's greatest saint. He teaches that the greatest loyalty is to the well-being of the people, and that it is the responsibility of the strong to protect the weak. That the only proper use of power is in pursuit of justice.
+Saint Llewellyn is Cavall's greatest [saint](scc:mcdm.heroes.v1/rule.world/saint). He teaches that the greatest loyalty is to the well-being of the people, and that it is the responsibility of the strong to protect the weak. That the only proper use of power is in pursuit of justice.
 
 ##### Gwenllian the Fell-Handed
 
@@ -27734,7 +27734,7 @@ Twelve days after they rode out, Zür returned with Lady Gwenllian's body on her
 
 "I bring you her body," Zür said to the baron. "And one thing more will I do for you. I shall build you a church here. A cathedral worthy of the life of Saint Gwenllian."
 
-Gwenllian is the saint of those who stand watch, of all those who must carry a burden ceaselessly. Gwenllian teaches that vigilance is its own reward.
+Gwenllian is the [saint](scc:mcdm.heroes.v1/rule.world/saint) of those who stand watch, of all those who must carry a burden ceaselessly. Gwenllian teaches that vigilance is its own reward.
 
 <!-- @type: god | @id: salorna -->
 #### Salorna
@@ -27779,7 +27779,7 @@ Draighen teaches solutions can always be found if people are willing to talk. Th
 
 **Domains:** Nature, Storm
 
-Eriarwen the Wroth apprenticed to her mother as a witch just as her mother had apprenticed under her mother. Her family were witches in service to Halcyon the Moonmaiden, saint of Viras, the Lady of Spring. They had tended to the souls and health of the people of five villages for two centuries. Eriarwen was not yet of age, and so not yet a full mistress of the craft when the blight came.
+Eriarwen the Wroth apprenticed to her mother as a witch just as her mother had apprenticed under her mother. Her family were witches in service to Halcyon the Moonmaiden, [saint](scc:mcdm.heroes.v1/rule.world/saint) of Viras, the Lady of Spring. They had tended to the souls and health of the people of five villages for two centuries. Eriarwen was not yet of age, and so not yet a full mistress of the craft when the blight came.
 
 At first it was a newborn foal born with seven eyes and a writhing grasping tentacle where it tongue should have been. It took three farmers to kill the infant beast and though they dismissed it as an accident of birth, the three were harrowed.
 
@@ -27795,7 +27795,7 @@ Then Eriarwen saw the beast rip her grandmother apart with a single bite.
 
 Her mother raced to her mother's corpse. And Eriarwen called out.
 
-Eriarwen did not scream or cry, nor call out for aid or even mercy. She did not call to Viras, nor any of her saints. She called out to Salorna the Summer Storm and demanded the Woodland Mistress act.
+Eriarwen did not scream or cry, nor call out for aid or even mercy. She did not call to Viras, nor any of her [saints](scc:mcdm.heroes.v1/rule.world/saint). She called out to Salorna the Summer Storm and demanded the Woodland Mistress act.
 
 Eriarwen felt a growing heat and joy in her heart, and, feeling like she could [fly](scc:mcdm.heroes.v1/movement/fly), she suddenly saw the world through a million eyes all at once, and where she had stood, a humanoid figure composed entirely of bees filled the space. Eriarwen the Swarm exploded in a cloud of bees and each bee was Eriarwen. She sped across the countryside from one village to the next, stinging every animal affected by the Red Blight, and the villagers watched as the woodland creatures, their own pets and livestock, returned to normal. Good as new! None knew then that it was Eriarwen who saved them, but all knew it must be a member of her family. Who else?
 
@@ -27803,15 +27803,15 @@ But Eriarwen was just getting started. Returning to her grandmother's corpse, th
 
 "CASWYN!" she thundered. "I SUMMON THEE! COME! YOU CANNOT RESIST! I COMPEL THEE!"
 
-Caswyn, furious at the death of his blight, furious at the girl who dared oppose him, could not resist. He revealed himself and in that moment, it was Caswyn the Pestilent, saint of Cyrvis who appeared.
+Caswyn, furious at the death of his blight, furious at the girl who dared oppose him, could not resist. He revealed himself and in that moment, it was Caswyn the Pestilent, [saint](scc:mcdm.heroes.v1/rule.world/saint) of Cyrvis who appeared.
 
 Saint Caswyn and Saint Eriarwen battled and grappled with each other, each growing to great size infused with the power of their gods. But their figures were unrecognizable. Caswyn was a rotting giant, a mutated dragon, a griffon oozing blood.
 
 Eriarwen was a wolf made of fire, a crow made of lightning, a bear made of stone.
 
-Caswyn the Chimera hurled Eriarwen the Lion to the ground and it was Caswyn the Cobra who struck. But it was Eriarwen the Elk who spit Caswyn upon her antlers, banishing the saint from the mundane world.
+Caswyn the Chimera hurled Eriarwen the Lion to the ground and it was Caswyn the Cobra who struck. But it was Eriarwen the Elk who spit Caswyn upon her antlers, banishing the [saint](scc:mcdm.heroes.v1/rule.world/saint) from the mundane world.
 
-Eriarwen returned to herself, and though she was now an immortal saint, she sensed that Salorna had given her yet more power. She saw her mother weeping over her grandmother's body. The old woman's horse, restored by Eriarwen's sting, nuzzled at her mistress's curled gray hair.
+Eriarwen returned to herself, and though she was now an immortal [saint](scc:mcdm.heroes.v1/rule.world/saint), she sensed that Salorna had given her yet more power. She saw her mother weeping over her grandmother's body. The old woman's horse, restored by Eriarwen's sting, nuzzled at her mistress's curled gray hair.
 
 Eriarwen smiled, and knew the task before her. She conjured lightning from her fingertip, and her grandmother was renewed. Mothers and daughters reunited.
 
@@ -27819,7 +27819,7 @@ Eriarwen teaches that nature holds the power to destroy—that Mother Nature is 
 
 #### Evil Gods
 
-Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-villains! This section presents one archetypal saint from each of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)'s evil gods; the brothers Nikros and Cyrvis for those players who wish to play such heroes.
+Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-villains! This section presents one archetypal [saint](scc:mcdm.heroes.v1/rule.world/saint) from each of [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)'s evil gods; the brothers Nikros and Cyrvis for those players who wish to play such heroes.
 
 ##### Nikros the Tyrant
 
@@ -27849,7 +27849,7 @@ Eventually serving at the right hand of the conqueror was not enough. Pentalion 
 
 He used all his usual tactics. His agents aided the duke's daughter and helped her build her insurgency, but in a critical moment when she confronted Uther with only Lord Pentalion as witness, the evil paladin killed first Uther, then the duke's daughter assuming leadership of both the kingdom and the rebellion.
 
-Savior to all, Pentalion was made a saint of Nikros for this act. He ruled well into old age, always finding new enemies within and without to be cruel to. And the more cruel he was to his invented enemies, the more the people loved him.
+Savior to all, Pentalion was made a [saint](scc:mcdm.heroes.v1/rule.world/saint) of Nikros for this act. He ruled well into old age, always finding new enemies within and without to be cruel to. And the more cruel he was to his invented enemies, the more the people loved him.
 
 Saint Pentalion teaches that one should bide their time and build their power before striking. That treachery in service to growing your own power is no vice.
 
@@ -27879,7 +27879,7 @@ But though the tome was written in an ancient dialect Eseld knew, the words move
 
 With a flash of certain insight, Eseld understood the riddle. She took a dagger and carved out her own eye. With only one good eye remaining, blood from her eyesocket pouring onto the page, she could read the lore within.
 
-In that moment was Eseld made a saint of Cyrvis.
+In that moment was Eseld made a [saint](scc:mcdm.heroes.v1/rule.world/saint) of Cyrvis.
 
 Filled with sorcerous power, Eseld no long sought mastery of the Tower of Enchantment, returning instead to the hidden Tower of Blood, restoring it to its former glory—there to start her own cult. Eventually Eseld was overthrown by the Darkling Shades, her own cadre of elite sorceresses who pass on her lore to this day.
 
@@ -27901,9 +27901,9 @@ The Space Gods do not concern themselves overmuch with what [humans](scc:mcdm.he
 
 #### Heralds of the Space Gods
 
-Whether it is a tradition or some real limitation, each Space God has, instead of saints, a single herald—a mortal chosen to be the voice of the Space God and communicate with their worshippers where the god themself cannot due to their alien mind.
+Whether it is a tradition or some real limitation, each Space God has, instead of [saints](scc:mcdm.heroes.v1/rule.world/saint), a single herald—a mortal chosen to be the voice of the Space God and communicate with their worshippers where the god themself cannot due to their alien mind.
 
-These heralds function much the same way as saints. They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their [followers](scc:mcdm.heroes.v1/rule.general/follower) and take an active interest in the mortal affairs of the timescape.
+These heralds function much the same way as [saints](scc:mcdm.heroes.v1/rule.world/saint). They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their [followers](scc:mcdm.heroes.v1/rule.general/follower) and take an active interest in the mortal affairs of the timescape.
 
 #### Religion in the Timescape
 
@@ -27911,7 +27911,7 @@ The people of the timescape know and believe in their gods just like the people 
 
 But most citizens of the timescape do not carry the gods with them in their daily lives the way the people of [Orden](scc:mcdm.heroes.v1/rule.world/orden) do. The gods of the timescape are powerful and reward their worshippers, but they are remote and unknowable. Most denizens of the upper worlds view a church as just another kind of shop. A place to go to renew your soul and speak the rites that your parents spoke. For many denizens of the upper worlds, religion is more of a cultural phenomenon than a way of life.
 
-The closest analog to worship in [Orden](scc:mcdm.heroes.v1/rule.world/orden) to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and saint and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from [Orden](scc:mcdm.heroes.v1/rule.world/orden) arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
+The closest analog to worship in [Orden](scc:mcdm.heroes.v1/rule.world/orden) to be found in the upper worlds would be in Alloy, the City at the Center of the Timescape. The great port city where civilizations across the timescape come to trade is also a city of temples. Temples to every god and [saint](scc:mcdm.heroes.v1/rule.world/saint) and hero and herald in the timescape—some dead, some forgotten—can be found somewhere in the ancient city's limits. Folk from [Orden](scc:mcdm.heroes.v1/rule.world/orden) arriving in Alloy (an incredibly rare event, as it takes enormous energies to lift one's ship up out of the slow-time of the lower words) remark at how familiar Alloy seems to them. It is a city where the upper and lower worlds mingle and steel sabers sometimes cross with swords made of hard light.
 
 <!-- @type: god | @id: nebular -->
 #### Nebular the Star Mother
@@ -28252,8 +28252,8 @@ Your outline should include the plans of the villains in your campaign. Review [
 
 - **1st [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** The heroes protect the village of Gravesford in the Barony of Bedegar from the forces of Lord Saxton, an usurper and tyrant loyal to Ajax. Eventually, they must bring the fight to Lord Saxton's keep in Bedegar City.
 - **2nd [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** After toppling Saxton's keep, the heroes find a letter from Ajax detailing plans to amass powerful treasures from throughout [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria). The heroes can race to these locations to claim the treasures before Ajax's forces do.
-- **3rd [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** With some or all of the treasures secure, it's only a matter of time before Ajax's army seeks out the heroes. The characters can build a coalition of allies to face Ajax, but those allies first require help getting out from under the rule of the Iron Saint.
-- **4th [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** Ajax brings the fight to the heroes. If the Iron Saint loses, he retreats to his sanctum, where the heroes can follow if they dare.
+- **3rd [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** With some or all of the treasures secure, it's only a matter of time before Ajax's army seeks out the heroes. The characters can build a coalition of allies to face Ajax, but those allies first require help getting out from under the rule of the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint).
+- **4th [Echelon](scc:mcdm.heroes.v1/rule.general/echelon):** Ajax brings the fight to the heroes. If the Iron [Saint](scc:mcdm.heroes.v1/rule.world/saint) loses, he retreats to his sanctum, where the heroes can follow if they dare.
 
 #### Complications and Campaigns
 
