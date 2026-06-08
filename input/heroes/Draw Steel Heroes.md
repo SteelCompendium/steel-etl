@@ -1334,7 +1334,7 @@ This chapter details twelve ancestries for the game:
 >
 > Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
-> Main actions and maneuvers, creature size, damage and Stamina, [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, flanking, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
+> Main actions and maneuvers, creature size, damage and Stamina, [dying](scc:mcdm.heroes.v1/rule.health/dying) and death, [flanking](scc:mcdm.heroes.v1/rule.combat/flanking), movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [winded](scc:mcdm.heroes.v1/rule.health/winded): Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)
 
 ### On the Origin of Species
 
@@ -1686,7 +1686,7 @@ Your eyes are a solid, vibrant color that flares to show your excitement or rage
 <!-- @type: feature -->
 ##### Hellsight (1 Point)
 
-Your eyes let you see through darkness, fog, and other obscuring effects. You don't take a bane on strikes made against creatures with concealment.
+Your eyes let you see through darkness, fog, and other obscuring effects. You don't take a bane on strikes made against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 
 <!-- @type: feature -->
 ##### Impressive Horns (2 Points)
@@ -2949,7 +2949,7 @@ You have the following ability.
 |-------------|----------------:|
 | **📏 Self** |     **🎯 Self** |
 
-**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or concealment from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
@@ -2985,7 +2985,7 @@ A light step serves you well when speed is of the essence. You ignore the effect
 <!-- @type: feature -->
 ##### Polder Geist (1 Point)
 
-Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have concealment from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.
+Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.
 
 <!-- @type: feature -->
 ##### Reactive Tumble (1 Point)
@@ -3241,7 +3241,7 @@ As a maneuver, you can adjust your vision to allow you to see through mundane ob
 <!-- @type: feature -->
 ##### Foresight (1 Point)
 
-Your senses extend past mundane obscuration and the veil of the future alike. You automatically know the location of any creature with concealment who isn't hidden from you within 20, and you negate the usual bane on strikes against such creatures. Additionally, whenever you are targeted by a strike, you can use a triggered action to impose a bane on the power roll.
+Your senses extend past mundane obscuration and the veil of the future alike. You automatically know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) who isn't hidden from you within 20, and you negate the usual bane on strikes against such creatures. Additionally, whenever you are targeted by a strike, you can use a triggered action to impose a bane on the power roll.
 
 <!-- @type: feature -->
 ##### Four-Armed Athletics (1 Point)
@@ -5246,7 +5246,7 @@ Your focus on your fragmentary visions grants divine insight into the world and 
 <!-- @type: feature -->
 ##### Lead by Example
 
-Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are adjacent to a creature, your allies gain the benefits of flanking against that creature. Additionally, your allies gain an edge on tests made to aid other creatures with their tests.
+Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are adjacent to a creature, your allies gain the benefits of [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) against that creature. Additionally, your allies gain an edge on tests made to aid other creatures with their tests.
 
 <!-- @type: feature -->
 ##### Saint's Vigilance
@@ -5969,7 +5969,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > - **12-16:** 15 + M damage
 > - **17+:** 21 + M damage
 > 
-> **Effect:** Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of flanking.
+> **Effect:** Until the end of the encounter, while the target is judged by you, you can choose to make them the source of any of your abilities. Additionally, the target counts as an ally for the purpose of [flanking](scc:mcdm.heroes.v1/rule.combat/flanking).
 
 <!-- @type: ability | @cost: 11 Wrath -->
 > ###### Pillar of Holy Fire (11 Wrath)
@@ -8954,7 +8954,7 @@ At the end of each of your turns, you can push each enemy in the area up to a nu
 <!-- @type: feature -->
 ##### Veiling Bed
 
-The area provides concealment for you and your allies.
+The area provides [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) for you and your allies.
 
 <!-- @type: feature -->
 #### Perk
@@ -9050,7 +9050,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 > 
-> **Effect:** The area lasts until the start of your next turn. It is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and you and your allies have concealment while in the area.
+> **Effect:** The area lasts until the start of your next turn. It is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and you and your allies have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area.
 > 
 > **Persistent 1:** The area remains until the start of your next turn, and you can move it up to 5 squares (no action required). As a maneuver, you can make the power roll again without spending essence.
 
@@ -9124,7 +9124,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |--------------------------------------|------------------------:|
 > | **📏 Ranged 10**                     | **🎯 Self or one ally** |
 > 
-> **Effect:** The target has a +3 bonus to speed, they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore concealment. Additionally, whenever the target gains their Heroic Resource, they gain 1 additional Heroic Resource. This effect lasts until the start of your next turn.
+> **Effect:** The target has a +3 bonus to speed, they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Additionally, whenever the target gains their Heroic Resource, they gain 1 additional Heroic Resource. This effect lasts until the start of your next turn.
 > 
 > **Persistent 1:** The effect lasts until the start of your next turn.
 
@@ -11707,7 +11707,7 @@ Choose one of the following heroic abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from concealment while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.
+> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.
 
 ##### 2nd-Level Metakinetic Ability
 
@@ -12513,7 +12513,7 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you have concealment or cover at your destination, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.
+> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover at your destination, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.
 > 
 > **Spend 1+ Insight:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) 1 additional square for each insight spent.
 
@@ -12558,7 +12558,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Smoke Bomb
 
-You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have cover or concealment. When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your Agility score. If you end this movement with cover or concealment, you are automatically hidden.
+You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your Agility score. If you end this movement with cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
 
 <!-- @type: feature -->
 #### College Triggered Action
@@ -12597,7 +12597,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 >
 > **Trigger:** Another creature damages you.
 >
-> **Effect:** You take half the triggering damage, then can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after the triggering effect resolves. If you end this [shift](scc:mcdm.heroes.v1/movement/shifting) with concealment or cover, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed.
+> **Effect:** You take half the triggering damage, then can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after the triggering effect resolves. If you end this [shift](scc:mcdm.heroes.v1/movement/shifting) with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed.
 >
 > **Spend 1 Insight:** The potency of any effects associated with the damage are reduced by 1 for you.
 
@@ -12714,7 +12714,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **12-16:** 5 + A damage
 > - **17+:** 8 + A damage
 >
-> **Effect:** As long as you have one or more allies within 5 squares of the target, you gain 1 surge. If you are flanking the target when you use this ability, choose one ally who is flanking with you. That ally also gains 1 surge.
+> **Effect:** As long as you have one or more allies within 5 squares of the target, you gain 1 surge. If you are [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) the target when you use this ability, choose one ally who is [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) with you. That ally also gains 1 surge.
 
 ##### Heroic Abilities
 
@@ -13186,7 +13186,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > |-----------------|---------------:|
 > | **📏 3 burst**  | **🎯 Special** |
 >
-> **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies concealment against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) to a new location within the area and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
+> **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free triggered action to [shift](scc:mcdm.heroes.v1/movement/shifting) to a new location within the area and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 <!-- @type: ability | @cost: 9 Insight -->
 > ###### Into the Shadows (9 Insight)
@@ -13256,7 +13256,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 
 - You can automatically climb at full speed while moving.
 - Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.
-- If you end your turn with cover or concealment from another creature, you are automatically hidden from that creature.
+- If you end your turn with cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
 - You gain 1 surge at the start of each of your turns.
 - You have corruption immunity equal to 5 + your level.
 - Creatures gain an edge on strikes against you.
@@ -13297,7 +13297,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 4 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in concealment or cover can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
 
 ##### 6th-Level Caustic Alchemy Abilities
 
@@ -13671,7 +13671,7 @@ You can target three creatures simultaneously with your [Careful Observation](sc
 <!-- @type: feature -->
 #### Improved Umbral Form
 
-You gain full control over the [shadow](scc:mcdm.heroes.v1/class/shadow) creature you become with your [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you concealment while in this form, and creatures no longer gain an edge on strikes against you.
+You gain full control over the [shadow](scc:mcdm.heroes.v1/class/shadow) creature you become with your [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, and you can end the transformation at will (no action required). Additionally, you are always wreathed in darkness that grants you [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in this form, and creatures no longer gain an edge on strikes against you.
 
 While you are in your [umbral form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form), you can spend 1 uninterrupted minute concentrating on a location where you've been before. At the end of that minute, you and each willing creature of your choice within 10 squares of you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to unoccupied spaces of your choice within that location. Each creature who [teleports](scc:mcdm.heroes.v1/movement/teleport) this way is invisible for 1 hour or until they use an ability.
 
@@ -14718,7 +14718,7 @@ Choose one of the following abilities.
 > |------------------|---------------------------:|
 > | **📏 Ranged 10** | **🎯 Self and two allies** |
 >
-> **Effect:** Each target gains 2 surges, and can use a free triggered action to use a signature ability that gains an edge. After resolving their ability, each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and become hidden even if they have no cover or concealment, or if they are observed.
+> **Effect:** Each target gains 2 surges, and can use a free triggered action to use a signature ability that gains an edge. After resolving their ability, each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and become hidden even if they have no cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), or if they are observed.
 
 <!-- @type: ability | @cost: 11 Focus -->
 > ###### Their Lack of Focus Is Their Undoing (11 Focus)
@@ -15692,7 +15692,7 @@ Your Reason and Presence scores each increase to 3.
 <!-- @type: feature -->
 #### Mind Projection
 
-As a maneuver, you project your mind outside your body. While you are in this state, your body remains unconscious [and prone](scc:mcdm.heroes.v1/condition/prone), and your mind is a separate entity with size 1T. Your mind automatically has concealment, and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.
+As a maneuver, you project your mind outside your body. While you are in this state, your body remains unconscious [and prone](scc:mcdm.heroes.v1/condition/prone), and your mind is a separate entity with size 1T. Your mind automatically has [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.
 
 Any abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your Stamina. Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a free maneuver.
 
@@ -16322,7 +16322,7 @@ Choose one of the following abilities.
 > - **12-16:** 24 + R psychic damage
 > - **17+:** 28 + R psychic damage
 >
-> **Effect:** This ability ignores cover and concealment.
+> **Effect:** This ability ignores cover and [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 >
 > **Strained:** The ability roll scores a critical hit on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
 
@@ -17122,7 +17122,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a bane on strikes against creatures with concealment. Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a bane on strikes against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability -->
 > ###### "Never-Ending Hero"
@@ -18880,7 +18880,7 @@ Whenever you fail a Might test, you can lose Stamina equal to 1d6 + your level t
 <!-- @type: perk -->
 #### Camouflage Hunter
 
-Whenever you are in wilderness, once you are hidden from a creature, you don't need cover or concealment to stay hidden from them.
+Whenever you are in wilderness, once you are hidden from a creature, you don't need cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) to stay hidden from them.
 
 <!-- @type: perk -->
 #### Danger Sense
@@ -20148,7 +20148,7 @@ Impoverished or on the run, you spent your formative years living in the sewers 
 
 You were born in the dusk land ruled by the Queen of [Shadows](scc:mcdm.heroes.v1/class/shadow), and its darkness has seeped into your bones. (See The Myriad Worlds of the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
-**Benefit:** Whenever you start your turn with concealment, you gain 1 surge.
+**Benefit:** Whenever you start your turn with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you gain 1 surge.
 
 **Drawback:** You have holy weakness 5.
 
@@ -21185,17 +21185,17 @@ Hiding and sneaking are important tools for heroes and their foes. You might wan
 
 #### Hiding
 
-To hide from a creature, you must have cover or concealment from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
+To hide from a creature, you must have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
 
-When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have cover or concealment from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
+When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
 
 While you are hidden from another creature, the creature can't target you with abilities that don't have the Area keyword. This benefit ends as soon as you are no longer hidden from that creature.
 
-Additionally, while you are hidden from another creature, you gain an edge on ability rolls made against that creature. This benefit lasts until the end of the turn in which you are no longer hidden. This means you can be hidden from another creature at the start of your turn, move out of cover or concealment toward them and use an ability against them, and still gain an edge on ability rolls made against the creature as long as you use the ability before the end of that turn.
+Additionally, while you are hidden from another creature, you gain an edge on ability rolls made against that creature. This benefit lasts until the end of the turn in which you are no longer hidden. This means you can be hidden from another creature at the start of your turn, move out of cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) toward them and use an ability against them, and still gain an edge on ability rolls made against the creature as long as you use the ability before the end of that turn.
 
 Draw Steel
 
-You are no longer hidden from a creature if you don't have cover or concealment from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a strike, you resolve the strike first, then are no longer hidden.
+You are no longer hidden from a creature if you don't have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a strike, you resolve the strike first, then are no longer hidden.
 
 ##### Searching for Hidden Creatures
 
@@ -21858,7 +21858,7 @@ See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for i
 <!-- @type: feature | @id: hide -->
 #### Hide
 
-Using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or concealment. See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
+Using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
 
 <!-- @type: feature | @id: knockback -->
 #### Knockback
@@ -22004,7 +22004,7 @@ Darkness, fog, invisibility magic, and any other effect that fully obscures a cr
 
 #### Invisible Creatures
 
-Invisible creatures always have concealment from other creatures. If an invisible creature isn't hidden, they can still be targeted by abilities. The test made to find a hidden creature who is invisible takes a bane.
+Invisible creatures always have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from other creatures. If an invisible creature isn't hidden, they can still be targeted by abilities. The test made to find a hidden creature who is invisible takes a bane.
 
 <!-- @type: rule | @group: damage | @id: damage -->
 ### Damage
@@ -25332,11 +25332,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this armor, you gain a +6 bonus to Stamina, but any magic ability gains an edge when targeting you. Additionally, you instinctively know the location of any creature with concealment within 2 squares. You can also turn invisible as a maneuver. Your invisibility ends if you take damage or use an ability, or at the end of your next turn.
+**1st Level:** While you wear this armor, you gain a +6 bonus to Stamina, but any magic ability gains an edge when targeting you. Additionally, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 2 squares. You can also turn invisible as a maneuver. Your invisibility ends if you take damage or use an ability, or at the end of your next turn.
 
-**5th Level:** The armor's bonus to Stamina increases to +12, you instinctively know the location of any creature with concealment within 5 squares, and your invisibility no longer ends at the end of your next turn. Additionally, you have psychic immunity 5.
+**5th Level:** The armor's bonus to Stamina increases to +12, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 5 squares, and your invisibility no longer ends at the end of your next turn. Additionally, you have psychic immunity 5.
 
-**9th Level:** The armor's bonus to Stamina increases to +21, and you instinctively know the location of any creature with concealment within 10 squares. Your invisibility no longer ends when you use an ability, and you have psychic immunity 10.
+**9th Level:** The armor's bonus to Stamina increases to +21, and you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 10 squares. Your invisibility no longer ends when you use an ability, and you have psychic immunity 10.
 
 <!-- @type: treasure -->
 ##### Telekinetic Bulwark
@@ -26068,7 +26068,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Duck!:* When an enemy strikes you while a second creature is flanking you, you can use a triggered action to redirect the strike against the second creature. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
+- *Duck!:* When an enemy strikes you while a second creature is [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) you, you can use a triggered action to redirect the strike against the second creature. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Furniture Fighter:* When you use a weapon ability with an improvised weapon or a weapon that isn't part of your kit, the ability benefits from your kit's melee weapon damage bonus.
 - *Headbutt:* While you are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) don't take a bane when those conditions would impose one.
 - *If I Wanted You Dead, You'd Be Dead:* Whenever you defeat foes without killing any of them (including the foes you defeat to meet the prerequisite for this title), you gain an edge on tests during negotiations with those foes.
@@ -26106,7 +26106,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 - *Close Formation:* While adjacent to two or more allies, you gain a +2 bonus to stability.
 - *Rune of Alarm:* You can spend 10 uninterrupted minutes to inscribe a magic eye-shaped rune on a surface. The rune sheds light for 2 squares. The rune is dispelled 1 minute after it is activated or if you inscribe the rune elsewhere. The rune activates when an enemy comes within 2 squares of it. When the rune is activated, you wake up if you are nonmagically asleep, and you can perceive through the rune for 1 minute as if you were in its square.
-- *Stonemeld:* While adjacent to a stone wall, you can use a maneuver to gain concealment. This concealment lasts until you leave the square or use an ability.
+- *Stonemeld:* While adjacent to a stone wall, you can use a maneuver to gain [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). This [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) lasts until you leave the square or use an ability.
 
 <!-- @type: title -->
 #### Elemental Dabbler
@@ -26364,7 +26364,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Foresight:* You don't take a bane when using abilities against creatures with concealment.
+- *Foresight:* You don't take a bane when using abilities against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 - *Rogue [Talent](scc:mcdm.heroes.v1/class/talent):* Choose one triggered action that the [talent](scc:mcdm.heroes.v1/class/talent) class has access to at 1st level. You gain that ability regardless of whether your class and subclass allow you to take it. If this ability allows you to gain or spend clarity, you can't do so unless you have the Clarity class feature.
 - *Telepathy:* As a maneuver, you communicate telepathically with a creature within 10 squares who understands a language you know. The creature can respond telepathically as part of the same maneuver.
 
