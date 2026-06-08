@@ -96,7 +96,7 @@ For us, fantasy includes magic, like wizards casting spells, and psionics, the n
 We know that many folks are coming to this game having only experienced d20 fantasy RPGs. This section details a few key distinctions between this game and typical d20 fantasy that you'll notice right away. These aren't the only distinctions, but they're the most obvious.
 
 - **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're [dying](scc:mcdm.heroes.v1/rule.health/dying) to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
-- **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll)—the rolls you make to determine success both in and out of combat—if you have a decent [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) bonus to add to those rolls. And if you have a specific skill that applies to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made as a test outside of combat, you'll do even better.
+- **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll)—the rolls you make to determine success both in and out of combat—if you have a decent [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) bonus to add to those rolls. And if you have a specific skill that applies to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made as a [test](scc:mcdm.heroes.v1/rule.test/test) outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
 - **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence)—the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
@@ -181,7 +181,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Conduit](scc:mcdm.heroes.v1/class/conduit):** A class for a hero who is the devoted spellcasting priest of a saint or god.
 
-**[Consequence](scc:mcdm.heroes.v1/rule.test/test):** An impactful setback suffered by a creature when they make a test. A consequence can occur whether or not the creature making the test succeeds or fails.
+**[Consequence](scc:mcdm.heroes.v1/rule.test/test):** An impactful setback suffered by a creature when they make a [test](scc:mcdm.heroes.v1/rule.test/test). A consequence can occur whether or not the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) succeeds or fails.
 
 **[Consumable](scc:mcdm.heroes.v1/rule.treasure/consumable):** A treasure that can be used a limited number of times before it is expended.
 
@@ -219,7 +219,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
-**[Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Main Action:** A main action that allows a creature to impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on all [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them until the start of their next turn. Additionally, the creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when called for to resist environmental effects or a creature's traits or abilities.
+**[Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Main Action:** A main action that allows a creature to impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on all [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them until the start of their next turn. Additionally, the creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities.
 
 **[Devil](scc:mcdm.heroes.v1/ancestry/devil):** An ancestry from the Seven Cities of Hell.
 
@@ -299,7 +299,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Ground](scc:mcdm.heroes.v1/rule.general/ground):** Any surface a creature could typically stand, sit, or lie upon.
 
-**[Group Test](scc:mcdm.heroes.v1/rule.test/group-test):** Two or more creatures attempting to overcome a single, simple task together can make a group test. If half or more of the creatures succeed on their individual test, the group test succeeds. Otherwise the group test fails.
+**[Group Test](scc:mcdm.heroes.v1/rule.test/group-test):** Two or more creatures attempting to overcome a single, simple task together can make a group [test](scc:mcdm.heroes.v1/rule.test/test). If half or more of the creatures succeed on their individual [test](scc:mcdm.heroes.v1/rule.test/test), the group [test](scc:mcdm.heroes.v1/rule.test/test) succeeds. Otherwise the group [test](scc:mcdm.heroes.v1/rule.test/test) fails.
 
 **[Guide](scc:mcdm.heroes.v1/rule.downtime/guide):** A manual that gives a downtime project a specific number of project points without requiring a project roll.
 
@@ -311,7 +311,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Heroic Ability](scc:mcdm.heroes.v1/rule.general/heroic-ability):** An ability used by a hero that costs a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to activate.
 
-**[Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token):** A group resource that is shared by all heroes, and which can be spent to gain [surges](scc:mcdm.heroes.v1/rule.resource/surge), succeed on saving throws, reroll tests, or regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+**[Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token):** A group resource that is shared by all heroes, and which can be spent to gain [surges](scc:mcdm.heroes.v1/rule.resource/surge), succeed on saving throws, reroll [tests](scc:mcdm.heroes.v1/rule.test/test), or regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 **[Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource):** A measure of a hero's combat power that increases during battle, and which can be spent to use abilities or improve their effectiveness.
 
@@ -337,7 +337,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Raw materials, a foundational object, or some other item that must be obtained before a downtime project can be started.
 
-**[Jump](scc:mcdm.heroes.v1/movement/jump):** A creature can automatically long jump a number of squares up to their [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (their choice). The height of their jump is automatically 1 square as part of that movement. A creature who wants to jump farther or higher must make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) test.
+**[Jump](scc:mcdm.heroes.v1/movement/jump):** A creature can automatically long jump a number of squares up to their [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (their choice). The height of their jump is automatically 1 square as part of that movement. A creature who wants to jump farther or higher must make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test).
 
 **[Kit](scc:mcdm.heroes.v1/chapter/kits):** A fighting style that comes with equipment to match. Kits are available to most heroes who wield weapons and wear armor.
 
@@ -367,7 +367,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Might](scc:mcdm.heroes.v1/rule.character/might):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's strength and brawn.
 
-**[Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test):** Heroes making a series of different tests that represent them working together over time to accomplish a common goal.
+**[Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test):** Heroes making a series of different [tests](scc:mcdm.heroes.v1/rule.test/test) that represent them working together over time to accomplish a common goal.
 
 **[Motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation):** A negotiation trait an NPC has that determines what type of arguments could more easily sway them.
 
@@ -397,7 +397,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Opportunity Attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack):** When an adjacent enemy willingly moves away from a creature without [shifting](scc:mcdm.heroes.v1/movement/shifting) or [teleporting](scc:mcdm.heroes.v1/movement/teleport), the creature can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as an opportunity attack against the enemy.
 
-**[Opposed Power Roll](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll):** Two creatures with opposed goals each make a test to see who wins out. The test totals are compared, and the higher total succeeds while the lower fails.
+**[Opposed Power Roll](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll):** Two creatures with opposed goals each make a [test](scc:mcdm.heroes.v1/rule.test/test) to see who wins out. The [test](scc:mcdm.heroes.v1/rule.test/test) totals are compared, and the higher total succeeds while the lower fails.
 
 **[Orc](scc:mcdm.heroes.v1/ancestry/orc):** An ancestry of people with magic blood in their glowing veins.
 
@@ -417,7 +417,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Potency](scc:mcdm.heroes.v1/rule.character/potency):** A value that determines if a target has a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) low enough to be affected by an effect.
 
-**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll):** A roll of 2d10 plus a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score that has three different possible [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome)—tier 1, tier 2, or tier 3. A power roll can be an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) or a test.
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll):** A roll of 2d10 plus a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score that has three different possible [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome)—tier 1, tier 2, or tier 3. A power roll can be an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) or a [test](scc:mcdm.heroes.v1/rule.test/test).
 
 **[Presence](scc:mcdm.heroes.v1/rule.character/presence):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's force of personality.
 
@@ -427,7 +427,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** Points earned by a hero toward a project goal.
 
-**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special test a hero makes while working on a downtime project during a respite. A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as project points toward completing the project.
+**[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A special [test](scc:mcdm.heroes.v1/rule.test/test) a hero makes while working on a downtime project during a respite. A project roll doesn't have any [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome). Instead, its total is earned as project points toward completing the project.
 
 **[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Lore that must be obtained before a downtime project can be started.
 
@@ -441,7 +441,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **Ranged [Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) made using a ranged ability.
 
-**[Reactive Test](scc:mcdm.heroes.v1/rule.test/reactive-test):** When the Director asks for a test without context to see if a hero can react to an event or effect they are unaware of.
+**[Reactive Test](scc:mcdm.heroes.v1/rule.test/reactive-test):** When the Director asks for a [test](scc:mcdm.heroes.v1/rule.test/test) without context to see if a hero can react to an event or effect they are unaware of.
 
 **[Reason](scc:mcdm.heroes.v1/rule.character/reason):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's logical mind and education.
 
@@ -463,7 +463,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Revenant](scc:mcdm.heroes.v1/ancestry/revenant):** An undead ancestry. [Revenants](scc:mcdm.heroes.v1/ancestry/revenant) return to the mortal world to complete unfinished business they had in life.
 
-**[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a test, gained in addition to the creature making the test accomplishing what they set out to do. A creature always gains a reward on a test that is a natural 19 or 20.
+**[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a [test](scc:mcdm.heroes.v1/rule.test/test), gained in addition to the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) accomplishing what they set out to do. A creature always gains a reward on a [test](scc:mcdm.heroes.v1/rule.test/test) that is a natural 19 or 20.
 
 **[Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's speed, taking the rider with them.
 
@@ -477,7 +477,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Saving Throw](scc:mcdm.heroes.v1/rule.general/saving-throw):** A creature makes a saving throw to end a "save ends" effect at the end of their turn. They roll a d10, and if the roll is 6 or higher, the effect ends.
 
-**[Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) Maneuver:** A maneuver that allows a creature to make a test to locate nearby creatures who are hidden from them.
+**[Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) Maneuver:** A maneuver that allows a creature to make a [test](scc:mcdm.heroes.v1/rule.test/test) to locate nearby creatures who are hidden from them.
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** A class for a hero who is an expert infiltrator and thief utilizing magic.
 
@@ -489,7 +489,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Size](scc:mcdm.heroes.v1/rule.character/size):** An indication of a creature's space and their overall weight and height relative to other creatures.
 
-**[Skill](scc:mcdm.heroes.v1/chapter/skills):** Special knowledge or training that can be applied to a test. When a skill applies to a test, it grants a +2 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+**[Skill](scc:mcdm.heroes.v1/chapter/skills):** Special knowledge or training that can be applied to a [test](scc:mcdm.heroes.v1/rule.test/test). When a skill applies to a [test](scc:mcdm.heroes.v1/rule.test/test), it grants a +2 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 **[Slide](scc:mcdm.heroes.v1/movement/forced-movement):** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that slides a target in any direction, moving them along any horizontal line.
 
@@ -608,7 +608,7 @@ At some point, a player will have their hero attempt a task that has a risk of f
 
 **Grace (playing Val, a [conduit](scc:mcdm.heroes.v1/class/conduit)):** *Before anyone steps on them, I want to examine the symbols and figure out what they mean.*
 
-**Director:** *Okay, well for that, I need you to make an easy [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.*
+**Director:** *Okay, well for that, I need you to make an easy [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test).*
 
 **Grace:** *I got a 12! What do I know?*
 
@@ -695,7 +695,7 @@ Whenever a hero or other creature in the game attempts a task with an uncertain 
 
 The game uses two types of power rolls. An **[ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll)** is used when you use certain abilities to determine their impact. For instance, if a [fury](scc:mcdm.heroes.v1/class/fury) uses their [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability to strike an enemy, their [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) determines how much [damage](scc:mcdm.heroes.v1/rule.damage/damage) the enemy takes and how far back the enemy is pushed. See Abilities for more information.
 
-A **test** is a power roll you make outside of using your abilities to affect or interact with the world around you. A [tactician](scc:mcdm.heroes.v1/class/tactician) might not have an ability that lets them climb up the face of a cliff, so climbing is an activity they can attempt with a test. An [elementalist](scc:mcdm.heroes.v1/class/elementalist) doesn't have an ability that lets them automatically intimidate a cultist into backing down from a fight, but they can make a test if they want to try. See [Tests](scc:mcdm.heroes.v1/chapter/tests) for more information.
+A **[test](scc:mcdm.heroes.v1/rule.test/test)** is a power roll you make outside of using your abilities to affect or interact with the world around you. A [tactician](scc:mcdm.heroes.v1/class/tactician) might not have an ability that lets them climb up the face of a cliff, so climbing is an activity they can attempt with a [test](scc:mcdm.heroes.v1/rule.test/test). An [elementalist](scc:mcdm.heroes.v1/class/elementalist) doesn't have an ability that lets them automatically intimidate a cultist into backing down from a fight, but they can make a [test](scc:mcdm.heroes.v1/rule.test/test) if they want to try. See [Tests](scc:mcdm.heroes.v1/chapter/tests) for more information.
 
 > **Sapient Creatures**
 >
@@ -703,18 +703,18 @@ A **test** is a power roll you make outside of using your abilities to affect or
 
 #### Making a Power Roll
 
-When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) you add depends on the kind of roll you're making, as outlined in Abilities and Tests.
+When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) you add depends on the kind of roll you're making, as outlined in Abilities and [Tests](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: rule | @group: dice | @id: tier-outcome -->
 ##### Power Roll Outcomes
 
 The total of a power roll determines your outcome tier—three levels that determine how successful your power roll is.
 
-- **Tier 1:** If your power roll total is **11 or lower**, it is a tier 1 outcome. This is the worst outcome a power roll can have. If you're using an ability, a tier 1 outcome means you still do something, but the impact of what you do is minimal. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability might deal a little bit of damage and not do much else. For a test, a tier 1 outcome might mean you fail at what you set out to do, and you might also incur a negative consequence.
-- **Tier 2:** If your power roll total is **12 to 16**, it is a tier 2 outcome. This is the average outcome of many power rolls, especially for heroes who are 1st level. When using an ability, a tier 2 outcome means that what you do has a moderate impact. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a decent amount of damage and has an effect that briefly helps allies or hinders enemies. For a test, a tier 2 outcome means you might succeed at what you set out to do—though depending on the difficulty, success might have a cost.
-- **Tier 3:** If your power roll total is **17 or higher**, it is a tier 3 outcome. This is the best outcome a power roll can have. When using an ability, a tier 3 outcome means you deliver the maximum impact possible. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a lot of damage and has a powerful or lasting effect on enemies or allies. For a test, a tier 3 outcome means you succeed at what you set out to do. If the test has an easy difficulty, you also get a little something extra in addition to your success.
+- **Tier 1:** If your power roll total is **11 or lower**, it is a tier 1 outcome. This is the worst outcome a power roll can have. If you're using an ability, a tier 1 outcome means you still do something, but the impact of what you do is minimal. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability might deal a little bit of damage and not do much else. For a [test](scc:mcdm.heroes.v1/rule.test/test), a tier 1 outcome might mean you fail at what you set out to do, and you might also incur a negative consequence.
+- **Tier 2:** If your power roll total is **12 to 16**, it is a tier 2 outcome. This is the average outcome of many power rolls, especially for heroes who are 1st level. When using an ability, a tier 2 outcome means that what you do has a moderate impact. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a decent amount of damage and has an effect that briefly helps allies or hinders enemies. For a [test](scc:mcdm.heroes.v1/rule.test/test), a tier 2 outcome means you might succeed at what you set out to do—though depending on the difficulty, success might have a cost.
+- **Tier 3:** If your power roll total is **17 or higher**, it is a tier 3 outcome. This is the best outcome a power roll can have. When using an ability, a tier 3 outcome means you deliver the maximum impact possible. With this outcome, a [strike](scc:mcdm.heroes.v1/rule.combat/strike) ability deals a lot of damage and has a powerful or lasting effect on enemies or allies. For a [test](scc:mcdm.heroes.v1/rule.test/test), a tier 3 outcome means you succeed at what you set out to do. If the [test](scc:mcdm.heroes.v1/rule.test/test) has an easy difficulty, you also get a little something extra in addition to your success.
 
-The specific outcome of any power roll is determined by the effect or ability that requires the roll (see Abilities) or the rules for tests (see [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+The specific outcome of any power roll is determined by the effect or ability that requires the roll (see Abilities) or the rules for [tests](scc:mcdm.heroes.v1/rule.test/test) (see [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 ##### Downgrade a Power Roll
 
@@ -791,7 +791,7 @@ At the start of a new game session, the heroes have a number of [hero tokens](sc
 
 Heroes can earn more tokens through play by taking big risks to save others. A hero who leaps off a cliff to reach the bottom and aid a friend, who crosses a burning bridge to save a stray cat, or who wagers their most prized treasure as part of a negotiation to get shelter for a group of refugees might earn a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for the group. The Director has the final say regarding which heroic acts earn [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token).
 
-Players can also be awarded [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as part of a test's outcome when they succeed on the test with a reward (see [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+Players can also be awarded [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as part of a [test](scc:mcdm.heroes.v1/rule.test/test)'s outcome when they succeed on the [test](scc:mcdm.heroes.v1/rule.test/test) with a reward (see [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 #### Spending Hero Tokens
 
@@ -799,10 +799,10 @@ Whenever [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) are availabl
 
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), allowing you to increase the [damage](scc:mcdm.heroes.v1/rule.damage/damage) or [potency](scc:mcdm.heroes.v1/rule.character/potency) of an ability. (See [Surges](scc:mcdm.heroes.v1/rule.resource/surge) in [Classes](scc:mcdm.heroes.v1/chapter/classes).)
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) when you fail a saving throw, letting you succeed on the save instead.
-- You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll a test. You must use the new roll.
+- You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll a [test](scc:mcdm.heroes.v1/rule.test/test). You must use the new roll.
 - You can spend 2 [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) on your turn or when you take [damage](scc:mcdm.heroes.v1/rule.damage/damage) (no action required) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) before taking the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
-You can use only one [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) benefit per turn or per test. Unless the Director decides otherwise, unused [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of a session.
+You can use only one [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) benefit per turn or per [test](scc:mcdm.heroes.v1/rule.test/test). Unless the Director decides otherwise, unused [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of a session.
 
 > **Optional Rule: [Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) Don't Reset**
 >
@@ -1330,7 +1330,7 @@ This chapter details twelve ancestries for the game:
 >
 > Abilities, conditions, [potencies](scc:mcdm.heroes.v1/rule.character/potency), saving throws, [surges](scc:mcdm.heroes.v1/rule.resource/surge): Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)
 >
-> Skills, tests: Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
+> Skills, [tests](scc:mcdm.heroes.v1/rule.test/test): Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
 > Crafting projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
@@ -1662,7 +1662,7 @@ She blushed in spite of herself and raised her own glass in a toast. "You silver
 <!-- @type: feature | @id: silver-tongue -->
 #### Signature Trait: Silver Tongue
 
-Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
+Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
 
 #### Purchased Devil Traits
 
@@ -2013,7 +2013,7 @@ Your stone skin affords you potent protection. You have a +6 bonus to [Stamina](
 <!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
-Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) tests when called for to resist environmental effects or a creature's traits or abilities.
+Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities.
 
 <!-- @type: feature -->
 ##### Stone Singer (1 Point)
@@ -2099,7 +2099,7 @@ Llyander turned and marched off. "Come!" they called. The children ran to catch 
 
 The elf stopped suddenly and spun toward them, serious but kindly. They pointed to each of the children in turn.
 
-"I will instruct you on the proper etiquette, but remember this: Lord Tear will test us. Some tests for you and some for me. The [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) and the [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) are but distant cousins. You will hear much that is polite, much that is flattering, but it is all another kind of glamor. It hides deep tensions, recently exacerbated by the treaty with Ajax."
+"I will instruct you on the proper etiquette, but remember this: Lord Tear will [test](scc:mcdm.heroes.v1/rule.test/test) us. Some [tests](scc:mcdm.heroes.v1/rule.test/test) for you and some for me. The [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) and the [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) are but distant cousins. You will hear much that is polite, much that is flattering, but it is all another kind of glamor. It hides deep tensions, recently exacerbated by the treaty with Ajax."
 
 The children nodded. The elf, satisfied, marched off and they followed.
 
@@ -2113,7 +2113,7 @@ Jeremy turned to Dade. "I feel like we're in a dream," he whispered. "You are!" 
 <!-- @type: feature | @id: wode-elf-glamor -->
 #### Signature Trait: Wode Elf Glamor
 
-You can magically alter your appearance to better blend in with your surroundings. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and sneak, and tests made to search for you while you are hidden take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+You can magically alter your appearance to better blend in with your surroundings. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak, and [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you while you are hidden take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 #### Purchased Wode Elf Traits
 
@@ -2137,7 +2137,7 @@ Your elf body and mind can't be contained for long. Whenever you make a saving t
 <!-- @type: feature -->
 ##### Revisit Memory (1 Point)
 
-Accessing memories is as easy as living in the present for you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to recall lore.
+Accessing memories is as easy as living in the present for you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
 <!-- @type: feature -->
 ##### Swift (1 Point)
@@ -2245,7 +2245,7 @@ Llyander put their hands on their hips and regarded the children. "Not bad for y
 <!-- @type: feature | @id: high-elf-glamor -->
 #### Signature Trait: High Elf Glamor
 
-A magic glamor makes others perceive you as interesting and engaging, granting you an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
+A magic glamor makes others perceive you as interesting and engaging, granting you an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
 
 #### Purchased High Elf Traits
 
@@ -2264,7 +2264,7 @@ You gain a +1 bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) y
 <!-- @type: feature -->
 ##### High Senses (1 Point)
 
-Your senses are especially keen and perceptive. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to notice threats.
+Your senses are especially keen and perceptive. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice threats.
 
 <!-- @type: feature -->
 ##### Otherworldly Grace (2 Points)
@@ -2274,7 +2274,7 @@ Your elf body and mind can't be contained for long. Whenever you make a saving t
 <!-- @type: feature -->
 ##### Revisit Memory (1 Point)
 
-Accessing memories is as easy as living in the present for you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to recall lore.
+Accessing memories is as easy as living in the present for you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
 <!-- @type: feature -->
 ##### Unstoppable Mind (2 Points)
@@ -2397,12 +2397,12 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Doo
 <!-- @type: feature -->
 ##### All Is a Feather (1 Point)
 
-You are exceptionally strong. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to lift and haul heavy objects.
+You are exceptionally strong. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to lift and haul heavy objects.
 
 <!-- @type: feature -->
 ##### Doomsight (2 Points)
 
-Working with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on tests and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll), and you don't die no matter how low your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) falls. You then die immediately at the end of the encounter, and can't be returned to life by any means.
+Working with your Director, you can predetermine an encounter in which you will die. When that encounter begins, you become doomed. While doomed, you automatically obtain a tier 3 outcome on [tests](scc:mcdm.heroes.v1/rule.test/test) and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll), and you don't die no matter how low your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) falls. You then die immediately at the end of the encounter, and can't be returned to life by any means.
 
 If you don't predetermine your death encounter, you can choose to become doomed while you are [dying](scc:mcdm.heroes.v1/rule.health/dying) with the Director's approval (no action required). Doing so should be reserved for encounters in which you are [dying](scc:mcdm.heroes.v1/rule.health/dying) as a result of suitable heroism, such as making a last stand against a boss or saving civilians, or when the consequences of your actions have finally caught up to you—not because you're playing a one-shot and have nothing to lose, Hacaarl.
 
@@ -2421,7 +2421,7 @@ Your hearty constitution prevents you from losing strength. You can't be made [w
 <!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
-Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) tests when called for to resist environmental effects or a creature's traits or abilities.
+Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities.
 
 <!-- @type: ancestry | @id: human -->
 ## Human
@@ -2493,7 +2493,7 @@ A tolerance for pain and distress allows you to push through difficult situation
 <!-- @type: feature -->
 ##### Perseverance (1 Point)
 
-Giving up is for other people. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your speed is reduced to 3 instead of 2.
+Giving up is for other people. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill. Additionally, when you are [slowed](scc:mcdm.heroes.v1/condition/slowed), your speed is reduced to 3 instead of 2.
 
 <!-- @type: feature -->
 ##### Resist the Unnatural (1 Point)
@@ -2638,7 +2638,7 @@ Your connection to Axiom allows you to regulate your movement. You can't be made
 <!-- @type: feature -->
 ##### Systematic Mind (1 Point)
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to parse schematics, maps, and other systematic documents that aren't inherently chaotic. In addition, you treat any language you don't know as if you know a related language.
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to parse schematics, maps, and other systematic documents that aren't inherently chaotic. In addition, you treat any language you don't know as if you know a related language.
 
 <!-- @type: feature -->
 ##### Unphased (1 Point)
@@ -2767,9 +2767,9 @@ Khorva shook her head. "[Orcs](scc:mcdm.heroes.v1/ancestry/orc) have no great lo
 
 "It's about living with yourself. Sleeping at night."
 
-"Battles do not bring restful sleep," Khorva said. "The opposite, I find." "Battles bring glory! Battles make heroes!" Dazar insisted, and John felt like he learned something about the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) in that moment. He could hear that Dazar believed this to be true, and knew it was a lie. It was a test.
+"Battles do not bring restful sleep," Khorva said. "The opposite, I find." "Battles bring glory! Battles make heroes!" Dazar insisted, and John felt like he learned something about the [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) in that moment. He could hear that Dazar believed this to be true, and knew it was a lie. It was a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-"War makes only one thing. Corpses." Khorva looked down at the high theochron, who nodded. Test passed.
+"War makes only one thing. Corpses." Khorva looked down at the high theochron, who nodded. [Test](scc:mcdm.heroes.v1/rule.test/test) passed.
 
 "And veterans," Sir John said. "Who covet peace." Khorva nodded. Respect. "Aye," she said. She looked at each hero then at John again.
 
@@ -2877,7 +2877,7 @@ He looked at his drink, at the expensive clear glass the innkeep had given him b
 
 John took a deep breath and came back to reality. "Well. If we could be picky, we wouldn't need a hero," he said.
 
-The [polder](scc:mcdm.heroes.v1/ancestry/polder) looked at the [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) and nodded, impressed. Test passed. "Okay. Well, if you've already got a candidate, I could get things started. The other half is: We need a good story—short, punchy. Something that'll catch on, needs to be easy to relate to, but bigger than life. A tax. A toll! Bridge toll, classic. An ogre... no, three ogres. Yeah, three is better. Three ogres in Ajax's livery. A lone figure standing against them. See? Easy."
+The [polder](scc:mcdm.heroes.v1/ancestry/polder) looked at the [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) and nodded, impressed. [Test](scc:mcdm.heroes.v1/rule.test/test) passed. "Okay. Well, if you've already got a candidate, I could get things started. The other half is: We need a good story—short, punchy. Something that'll catch on, needs to be easy to relate to, but bigger than life. A tax. A toll! Bridge toll, classic. An ogre... no, three ogres. Yeah, three is better. Three ogres in Ajax's livery. A lone figure standing against them. See? Easy."
 
 "Where are we going to find three ogres?" John asked.
 
@@ -2949,7 +2949,7 @@ You have the following ability.
 |-------------|----------------:|
 | **📏 Self** |     **🎯 Self** |
 
-**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against you and tests made to search for you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against you and [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
@@ -3096,7 +3096,7 @@ You select a purchased trait that costs 2 ancestry points from your previous anc
 <!-- @type: feature -->
 ##### Undead Influence (1 Point)
 
-Your supernatural gifts allow you to influence other undead. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with undead creatures.
+Your supernatural gifts allow you to influence other undead. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with undead creatures.
 
 <!-- @type: feature -->
 ##### Vengeance Mark (2 Points)
@@ -3246,7 +3246,7 @@ Your senses extend past mundane obscuration and the veil of the future alike. Yo
 <!-- @type: feature -->
 ##### Four-Armed Athletics (1 Point)
 
-Your unique physiology enhances your movement. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Climb](scc:mcdm.heroes.v1/skill/climb), [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), or [Swim](scc:mcdm.heroes.v1/skill/swim) skills when you can use all your arms in the attempt.
+Your unique physiology enhances your movement. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Climb](scc:mcdm.heroes.v1/skill/climb), [Gymnastics](scc:mcdm.heroes.v1/skill/gymnastics), or [Swim](scc:mcdm.heroes.v1/skill/swim) skills when you can use all your arms in the attempt.
 
 <!-- @type: feature -->
 ##### Four-Armed Martial Arts (2 Points)
@@ -3373,7 +3373,7 @@ The culture you choose or create grants you the following benefits:
 
 - You know the language of your culture, in addition to knowing Caelian.
 - From the environment, organization, and upbringing aspects of your culture, you gain access to skills. You can select one skill from each aspect's list of options. (Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) has information on the part skills play in the game.)
-- You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to recall lore about your culture, and on tests made to influence and interact with people of your culture. (See [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [Banes](scc:mcdm.heroes.v1/rule.dice/bane) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
+- You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore about your culture, and on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence and interact with people of your culture. (See [Edges](scc:mcdm.heroes.v1/rule.dice/edge) and [Banes](scc:mcdm.heroes.v1/rule.dice/bane) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
 #### Language
 
@@ -4394,7 +4394,7 @@ If an ability targets one or more creatures, it can affect creatures within the 
 
 If an ability targets one or more objects, it can affect any object within the ability's [distance](scc:mcdm.heroes.v1/rule.combat/distance) or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has information on [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity).)
 
-When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) [Minor Telekinesis](scc:mcdm.heroes.v1/feature.ability.talent.level-1/minor-telekinesis) ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
+When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) [Minor Telekinesis](scc:mcdm.heroes.v1/feature.ability.talent.level-1/minor-telekinesis) ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a [test](scc:mcdm.heroes.v1/rule.test/test), the object automatically gets a tier 1 result on the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: rule | @group: combat | @id: enemy -->
 ##### Enemy
@@ -4425,7 +4425,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 
 If an ability requires a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), it has a "[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll)" entry that tells you which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).)
 
-Unlike [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets one adjacent creature (within 1 square), and which has the following effects:
+Unlike [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made as [tests](scc:mcdm.heroes.v1/rule.test/test) (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets one adjacent creature (within 1 square), and which has the following effects:
 
 - **Tier 1 (11 or lower):** The ability deals damage equal to 3 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 1 square.
 - **Tier 2 (12-16):** The ability deals damage equal to 6 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 2 squares.
@@ -4641,7 +4641,7 @@ Some abilities and other effects apply specific negative effects called conditio
 <!-- @type: condition | @id: bleeding -->
 ##### Bleeding
 
-While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a triggered action, or make a test or [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) using [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility), they lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + their level after the main action, triggered action, or [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is resolved. This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss can't be prevented in any way, and only happens once per action.
+While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a triggered action, or make a [test](scc:mcdm.heroes.v1/rule.test/test) or [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) using [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility), they lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + their level after the main action, triggered action, or [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is resolved. This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss can't be prevented in any way, and only happens once per action.
 
 You take damage from this condition when you use a main action off your turn. For example, a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
 
@@ -4678,7 +4678,7 @@ Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/conditi
 <!-- @type: condition | @id: restrained -->
 ##### Restrained
 
-A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and on [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, and abilities used against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and on [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), and abilities used against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/restrained), that condition ends.
 
@@ -4889,9 +4889,9 @@ You gain a domain feature from your domain, as shown on the 1st-Level [Censor](s
 <!-- @type: feature -->
 ##### Blessing of Compassion
 
-You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test made to assist another creature with a test.
+You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first test made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 ##### Blessing of Comprehension
@@ -4903,13 +4903,13 @@ You can interpret diagrams and charts even if you don't understand the language 
 
 Each time you finish a respite, you can decide the weather conditions within 100 squares. Until you finish another respite, the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
 
-**Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Search](scc:mcdm.heroes.v1/skill/search) or [Navigate](scc:mcdm.heroes.v1/skill/navigate) skills.
+**Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Search](scc:mcdm.heroes.v1/skill/search) or [Navigate](scc:mcdm.heroes.v1/skill/navigate) skills.
 
-**Foggy:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Hide](scc:mcdm.heroes.v1/skill/hide) skill.
+**Foggy:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Hide](scc:mcdm.heroes.v1/skill/hide) skill.
 
-**Overcast:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
+**Overcast:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
 
-**Precipitation:** When the ground is muddy or snowy, you and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Track](scc:mcdm.heroes.v1/skill/track) skill.
+**Precipitation:** When the ground is muddy or snowy, you and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Track](scc:mcdm.heroes.v1/skill/track) skill.
 
 If you are in the same area as a creature using this or a similar feature who has chosen a different weather effect, the features negate each other where their areas overlap.
 
@@ -4943,7 +4943,7 @@ You have the following ability.
 > |----------------|-------------------------:|
 > | **📏 Melee 1** | **🎯 One dead creature** |
 > 
-> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
+> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make [tests](scc:mcdm.heroes.v1/rule.test/test) to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
 
 <!-- @type: feature -->
 ##### Hands of the Maker
@@ -4969,12 +4969,12 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence) on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+The gods favor your thievery with magic. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) that uses a skill you have from the intrigue skill group, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence) on the [test](scc:mcdm.heroes.v1/rule.test/test) instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
 
-Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a test, you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test. You lose any remaining fate points when you finish a respite.
+Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a respite.
 
 <!-- @type: feature -->
 ##### Protective Circle
@@ -5236,17 +5236,17 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) gran
 <!-- @type: feature -->
 ##### It Was Foretold
 
-Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can make one free test before the montage begins, which counts as an earned success or failure as usual.
+Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can make one free [test](scc:mcdm.heroes.v1/rule.test/test) before the montage begins, which counts as an earned success or failure as usual.
 
 <!-- @type: feature -->
 ##### Judge of Character
 
-Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, you can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test instead.
+Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test), you can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) instead.
 
 <!-- @type: feature -->
 ##### Lead by Example
 
-Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are adjacent to a creature, your allies gain the benefits of [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) against that creature. Additionally, your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to aid other creatures with their tests.
+Your devotion to your deity allows you to take command of the battlefield, letting your allies benefit from your wisdom. While you are adjacent to a creature, your allies gain the benefits of [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) against that creature. Additionally, your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to aid other creatures with their [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: feature -->
 ##### Saint's Vigilance
@@ -5256,12 +5256,12 @@ You have honed your ability to detect sin and can use it to find those who hide 
 <!-- @type: feature -->
 ##### A Sense for Truth
 
-You are trained in secret techniques from your order that allow you to discern the truth with supernatural precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to detect lies or hidden motives.
+You are trained in secret techniques from your order that allow you to discern the truth with supernatural precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to detect lies or hidden motives.
 
 <!-- @type: feature -->
 ##### Stalwart Icon
 
-You exhibit a small spark of your deity's power, causing creatures to trust or fear you, depending on what you need. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to intimidate or persuade others.
+You exhibit a small spark of your deity's power, causing creatures to trust or fear you, depending on what you need. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to intimidate or persuade others.
 
 <!-- @type: feature -->
 #### 2nd-Level Order Ability
@@ -5485,7 +5485,7 @@ You have the following ability.
 > |-----------------|--------------------------------------:|
 > | **📏 3 aura**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
+> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
 
 <!-- @type: feature -->
 ##### Impervious Touch
@@ -5507,12 +5507,12 @@ The weapon improved by your [Sanctified Weapon](scc:mcdm.heroes.v1/feature.censo
 <!-- @type: feature -->
 ##### Invocation of the Heart
 
-As a main action, you forge a bond of love and friendship with one willing creature you touch. While this bond is active, you can telepathically speak with the creature over any [distance](scc:mcdm.heroes.v1/rule.combat/distance), including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any test they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).
+As a main action, you forge a bond of love and friendship with one willing creature you touch. While this bond is active, you can telepathically speak with the creature over any [distance](scc:mcdm.heroes.v1/rule.combat/distance), including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any [test](scc:mcdm.heroes.v1/rule.test/test) they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).
 
 <!-- @type: feature -->
 ##### Light of Revelation
 
-As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares until you dismiss the light (no action required). This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to notice hidden objects and entrances and to detect supernatural illusions.
+As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares until you dismiss the light (no action required). This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect supernatural illusions.
 
 <!-- @type: feature -->
 ##### Oracular Warning
@@ -5560,7 +5560,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) gran
 <!-- @type: feature -->
 ##### Evil Revealed
 
-Your order has taught you methods to discern the disguises of both mortals and monsters. You automatically see through disguises and illusions created by creatures of your level or lower, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to see through the disguises and illusions of more powerful creatures. Whenever you see through a creature's disguise or illusion, you can use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against them as a free triggered action.
+Your order has taught you methods to discern the disguises of both mortals and monsters. You automatically see through disguises and illusions created by creatures of your level or lower, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to see through the disguises and illusions of more powerful creatures. Whenever you see through a creature's disguise or illusion, you can use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against them as a free triggered action.
 
 <!-- @type: feature -->
 ##### Prophecy
@@ -5842,7 +5842,7 @@ When you finish a respite, you can prepare a magic meal using local flora for an
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 - Each creature gains a +1 bonus to speed.
 - Each creature gains a +1 bonus to saving throws.
-- Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to influence other creatures.
+- Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence other creatures.
 
 Each benefit lasts until the creature who gains it finishes another respite.
 
@@ -5925,7 +5925,7 @@ The most esoteric secrets of your order teach you that to defeat your enemy, you
 <!-- @type: feature -->
 ##### Their Past Revealed
 
-Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to see visions from their past. On a success, you see a clear view of any subject related to the creature's past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to see visions from their past. On a success, you see a clear view of any subject related to the creature's past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: feature -->
 ##### Vow
@@ -6343,9 +6343,9 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 <!-- @type: feature -->
 ##### Blessing of Compassion
 
-You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test made to assist another creature with a test.
+You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first test made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 ##### Blessing of Comprehension
@@ -6357,11 +6357,11 @@ You can interpret diagrams and charts even if you don't understand the language 
 
 Each time you finish a respite, you can decide the weather conditions within 100 squares. Until you finish another respite, the weather conditions you establish follow you through any mundane outdoor locations. Choose one of the following types of weather, each of which grants a benefit to you and your allies:
 
-**Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the Search or Navigate skills.
+**Clear:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Search or Navigate skills.
 
-**Foggy:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the Hide skill. **Overcast:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
+**Foggy:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Hide skill. **Overcast:** You and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
 
-**Precipitation:** When the ground is muddy or snowy, you and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Track](scc:mcdm.heroes.v1/skill/track) skill.
+**Precipitation:** When the ground is muddy or snowy, you and your allies gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Track](scc:mcdm.heroes.v1/skill/track) skill.
 
 If you are in the same area as a creature using this or a similar feature who has chosen a different weather effect, the features negate each other where their areas overlap.
 
@@ -6395,7 +6395,7 @@ You have the following ability.
 > |----------------|-------------------------:|
 > | **📏 Melee 1** | **🎯 One dead creature** |
 > 
-> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make tests to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
+> **Effect:** You can speak to the target if they are a creature who has died within the last 24 hours and who can speak a language you know, even if they are just a head. The target regards you as they would have in life, and you might need to make [tests](scc:mcdm.heroes.v1/rule.test/test) to influence them and convince them to speak with you. The trauma of [dying](scc:mcdm.heroes.v1/rule.health/dying) can make a creature's memory of that event hazy, but the target otherwise knows all they knew in life. After 1 minute, the effect ends. You can't use this ability on the same creature twice.
 
 <!-- @type: feature -->
 ##### Hands of the Maker
@@ -6421,12 +6421,12 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+The gods favor your thievery with magic. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) that uses a skill you have from the intrigue skill group, you can use [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) on the [test](scc:mcdm.heroes.v1/rule.test/test) instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
 
-Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a test, you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test. You lose any remaining fate points when you finish a respite.
+Your deity rewards you with hazy visions of things to come. Each time you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you earn an equal number of fate points. Whenever you or a creature within 10 squares makes a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 fate point to tap into a vision of the outcome, granting that creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). You lose any remaining fate points when you finish a respite.
 
 <!-- @type: feature -->
 ##### Protective Circle
@@ -7187,7 +7187,7 @@ You have the following ability.
 > |-----------------|--------------------------------------:|
 > | **📏 3 aura**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
+> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
 
 ###### Impervious Touch
 
@@ -7205,11 +7205,11 @@ The weapon improved by your [Sanctified Weapon](scc:mcdm.heroes.v1/feature.censo
 
 ###### Invocation of the Heart
 
-As a main action, you forge a bond of love and friendship with a willing creature you touch. While this bond is active, you can telepathically speak with the creature over any [distance](scc:mcdm.heroes.v1/rule.combat/distance), including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any test they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).
+As a main action, you forge a bond of love and friendship with a willing creature you touch. While this bond is active, you can telepathically speak with the creature over any [distance](scc:mcdm.heroes.v1/rule.combat/distance), including across different worlds. Additionally, while this bond is active, you can attempt to assist the creature with any [test](scc:mcdm.heroes.v1/rule.test/test) they make regardless of their proximity to you. You can maintain only one bond at a time, and you can end a bond at any time (no action required).
 
 ###### Light of Revelation
 
-As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares. This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to notice hidden objects and entrances and to detect supernatural illusions.
+As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares. This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect supernatural illusions.
 
 ###### Oracular Warning
 
@@ -7310,7 +7310,7 @@ As a 6th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 
 You are infused with the power your deity reserves for their most worthy instruments. You have the following benefits:
 
-- You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with other creatures.
+- You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with other creatures.
 - Whenever you deal damage to an enemy, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 - You have corruption immunity 10 or holy immunity 10 (your choice).
 - Your clothing and equipment changes in a way that reflects your status as your deity's chosen champion, such as ordinary robes turning into gold vestments or a simple dagger becoming a wicked blade with intricate etching.
@@ -7600,7 +7600,7 @@ When you finish a respite, you can prepare a magic meal using local flora for an
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 - Each creature gains a +1 bonus to speed.
 - Each creature gains a +1 bonus to saving throws.
-- Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to influence other creatures.
+- Each creature gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence other creatures.
 
 Each benefit lasts until the creature who gains it finishes another respite.
 
@@ -7725,7 +7725,7 @@ Each time you finish a respite, you can choose a willing hero ally who finished 
 <!-- @type: feature -->
 #### Ordained
 
-Your god elevates the power flowing through you. Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency). Additionally, while you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you speak with the voice of your deity. You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to influence other creatures.
+Your god elevates the power flowing through you. Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency). Additionally, while you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you speak with the voice of your deity. You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence other creatures.
 
 <!-- @type: feature -->
 #### 9th-Level Domain Ability
@@ -8160,7 +8160,7 @@ You also gain the following ability.
 <!-- @type: feature -->
 ##### It Is the Soul Which Hears
 
-You can speak with and understand animals, beasts, and plant creatures, even if they don't share a language with you. Your ability to communicate with these creatures doesn't make them inherently more intelligent, but you can use [Reason](scc:mcdm.heroes.v1/rule.character/reason) instead of [Presence](scc:mcdm.heroes.v1/rule.character/presence) while making tests to influence them.
+You can speak with and understand animals, beasts, and plant creatures, even if they don't share a language with you. Your ability to communicate with these creatures doesn't make them inherently more intelligent, but you can use [Reason](scc:mcdm.heroes.v1/rule.character/reason) instead of [Presence](scc:mcdm.heroes.v1/rule.character/presence) while making [tests](scc:mcdm.heroes.v1/rule.test/test) to influence them.
 
 Additionally, you can touch a living plant that is not a plant creature to communicate with it telepathically. You can use words to communicate with the plant, but it communicates with you only by transmitting feelings and sensations that can't be overly specific.
 
@@ -8663,9 +8663,9 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 
 | Animal Type         | Level | [Temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) | Speed         | [Size](scc:mcdm.heroes.v1/rule.character/size) | [Stability](scc:mcdm.heroes.v1/rule.character/stability) Bonus | Melee Damage Bonus | Special                                                                                                                                                                                                                                                                         |
 |---------------------|-------|-------------------|---------------|------|-----------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Canine              | 2nd   | 5                 | 7             | 1M   | +0              | +1/+1/+1           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that involve smell.                                                                                                                                                                                                                                   |
+| Canine              | 2nd   | 5                 | 7             | 1M   | +0              | +1/+1/+1           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that involve smell.                                                                                                                                                                                                                                   |
 | Fish                | 2nd   | 0                 | 5 (swim only) | 1T   | +0              | +0/+0/+0           | You can breathe in water but can't breathe outside of it.                                                                                                                                                                                                                       |
-| Rodent              | 2nd   | 0                 | 5 (climb)     | 1T   | +0              | +0/+0/+0           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that involve smell.                                                                                                                                                                                                                                   |
+| Rodent              | 2nd   | 0                 | 5 (climb)     | 1T   | +0              | +0/+0/+0           | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that involve smell.                                                                                                                                                                                                                                   |
 | Bird                | 3rd   | 0                 | 5 ([fly](scc:mcdm.heroes.v1/movement/fly))       | 1T   | +0              | +0/+0/+0           | -                                                                                                                                                                                                                                                                               |
 | Great cat           | 3rd   | 5                 | 6 (climb)     | 2    | +0              | +1/+1/+1           | As a maneuver, you can jump up to 3 squares in any direction. If you land on<br>an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, that enemy is [knocked prone](scc:mcdm.heroes.v1/condition/prone), and you can<br>make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them (no action required).                                                       |
 | Giant frog          | 4th   | 5                 | 5 (swim)      | 2    | +0              | +0/+0/+0           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of melee 3. When you take the Advance<br>move action, you can high jump or long jump up to half your speed. This<br>jump can allow you to move more squares than your speed.                                                              |
@@ -9192,7 +9192,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 
 Your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) feature no longer requires essence.
 
-Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) now radiates magic that creates a calming air. Creatures in the area of the mantle's aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill. If you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), the bonus to patience increases to 2 and tests that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) now radiates magic that creates a calming air. Creatures in the area of the mantle's aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill. If you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), the bonus to patience increases to 2 and [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 #### Surging Essence
@@ -9619,9 +9619,9 @@ Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) 
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.                                                                                                                 |
 | 4               | The first time you push a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
-| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time you push a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                               |
-| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. |
 
 ###### Reaver Growing Ferocity Table
@@ -9630,9 +9630,9 @@ Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) 
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                                                                                                 |
 | 4               | The first time you slide a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                 |
-| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time you slide a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
-| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
 <!-- @type: feature -->
@@ -9675,7 +9675,7 @@ As your ferocity grows, you gain benefits as noted on the Berserker [Growing Fer
 <!-- @type: feature -->
 ##### Relentless Hunter
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the [Track](scc:mcdm.heroes.v1/skill/track) skill.
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the [Track](scc:mcdm.heroes.v1/skill/track) skill.
 
 <!-- @type: feature -->
 #### Aspect Triggered Action
@@ -9738,7 +9738,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 <!-- @type: feature -->
 #### Mighty Leaps
 
-You can't obtain lower than a tier 2 outcome on any [Might](scc:mcdm.heroes.v1/rule.character/might) test made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+You can't obtain lower than a tier 2 outcome on any [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 <!-- @type: feature -->
 #### Fury Abilities
@@ -10141,7 +10141,7 @@ When you are in a negotiation with an animal or elemental, you treat your [Renow
 <!-- @type: feature -->
 ##### See Through Their Tricks
 
-You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to search for hidden creatures, discern hidden motives, or detect lies. You also have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to gamble!
+You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for hidden creatures, discern hidden motives, or detect lies. You also have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to gamble!
 
 <!-- @type: feature -->
 #### 7-Ferocity Ability
@@ -10263,7 +10263,7 @@ You and each ally within 5 squares of you ignore negative effects from inclement
 <!-- @type: feature -->
 ##### Unfettered
 
-At the start of your turn, you can end any [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on you. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to escape being confined or imprisoned.
+At the start of your turn, you can end any [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on you. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to escape being confined or imprisoned.
 
 <!-- @type: feature -->
 #### 9-Ferocity Ability
@@ -10535,17 +10535,17 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 <!-- @type: feature -->
 ##### Menagerie
 
-You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features). During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a test to track another creature, you can roll three dice and choose which two to use.
+You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features). During a respite, you can choose to swap your stormwight kit and still take another respite activity. Your Nature's Knight feature now lets you automatically sense the presence of animals within 1 mile of you. Additionally, whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to track another creature, you can roll three dice and choose which two to use.
 
 <!-- @type: feature -->
 ##### A Step Ahead
 
-You move with legendary grace. Whenever you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
+You move with legendary grace. Whenever you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test), you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature -->
 ##### Strongest There Is
 
-Your strength is unmatched. Whenever you make a [Might](scc:mcdm.heroes.v1/rule.character/might) test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
+Your strength is unmatched. Whenever you make a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test), you can roll three dice and choose which two to use. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 #### 11-Ferocity Ability
@@ -10915,7 +10915,7 @@ With this stormwight kit, you channel your [primordial ferocity](scc:mcdm.heroes
 <!-- @type: feature -->
 ##### Aspect Benefits
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and sneak. Additionally, whenever you fall, you can use a free triggered action to use your [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild) ability.
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak. Additionally, whenever you fall, you can use a free triggered action to use your [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild) ability.
 
 <!-- @type: feature -->
 ##### Animal Form: Crow
@@ -10970,9 +10970,9 @@ As your ferocity grows, you gain benefits as noted on the [Corven](scc:mcdm.hero
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
-| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
+| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
-| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                    |
+| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                    |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: raden -->
@@ -10983,12 +10983,12 @@ With this stormwight kit, you channel your [primordial ferocity](scc:mcdm.heroes
 <!-- @type: feature -->
 ##### Aspect Benefits
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and sneak. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: feature -->
 ##### Animal Form: Rat
 
-While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Rat
@@ -11038,9 +11038,9 @@ As your ferocity grows, you gain benefits as noted on the [Raden](scc:mcdm.heroe
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
-| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
+| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
-| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver                                                     |
+| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver                                                     |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: vuken -->
@@ -11104,9 +11104,9 @@ As your ferocity grows, you gain benefits as noted on the [Vuken](scc:mcdm.heroe
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature.                                                                                                                                                 |
 | 4               | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                   |
-| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                  |
-| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
 <!-- @type: class | @id: null -->
@@ -11753,7 +11753,7 @@ As a 3rd-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Psionic Leap
 
-You can long jump and high jump a [distance](scc:mcdm.heroes.v1/rule.combat/distance) equal to twice your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score without needing to make a test.
+You can long jump and high jump a [distance](scc:mcdm.heroes.v1/rule.combat/distance) equal to twice your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: feature -->
 #### Reorder
@@ -12455,7 +12455,7 @@ As a 1st-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Shadow College
 
-[Shadow](scc:mcdm.heroes.v1/class/shadow) colleges are secret institutions that turn ordinary folk into something else. Finding a college is the first step in a rigorous initiation process that tests the mettle of an applicant. Even those who make the cut often wash out—or are kicked out—as the master [shadows](scc:mcdm.heroes.v1/class/shadow) who teach stealth, magic, and assassination to their students are often less than gentle in their approach.
+[Shadow](scc:mcdm.heroes.v1/class/shadow) colleges are secret institutions that turn ordinary folk into something else. Finding a college is the first step in a rigorous initiation process that [tests](scc:mcdm.heroes.v1/rule.test/test) the mettle of an applicant. Even those who make the cut often wash out—or are kicked out—as the master [shadows](scc:mcdm.heroes.v1/class/shadow) who teach stealth, magic, and assassination to their students are often less than gentle in their approach.
 
 You graduated from a [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) chosen from the following options, each of which grants you a skill. (*Quick Build:* College of Black Ash.)
 
@@ -12553,7 +12553,7 @@ You have the following ability.
 > 
 > The illusion ends when you harm another creature, when you physically interact with a creature, when you use this ability again, or when you end the illusion (no action required). If you end this illusion by harming another creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 > 
-> **Spend 1 Insight:** Choose a creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is no more than 1 greater than yours and who is within 10 squares. This ability's illusion makes you appear as that creature. This illusion covers your entire body, including clothing and armor, and alters your voice to sound like that of the creature. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to convince the creature's allies that you are the creature.
+> **Spend 1 Insight:** Choose a creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is no more than 1 greater than yours and who is within 10 squares. This ability's illusion makes you appear as that creature. This illusion covers your entire body, including clothing and armor, and alters your voice to sound like that of the creature. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to convince the creature's allies that you are the creature.
 
 <!-- @type: feature -->
 ##### Smoke Bomb
@@ -13101,7 +13101,7 @@ While conversing with any creature you share a language with, you can decide whe
 <!-- @type: feature -->
 #### Night Watch
 
-Your sense for stealth shows those around you how to evade notice. While you are hidden, enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests made to search for you or other hidden creatures within 10 squares of you.
+Your sense for stealth shows those around you how to evade notice. While you are hidden, enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you or other hidden creatures within 10 squares of you.
 
 Additionally, you have the following ability.
 
@@ -13260,7 +13260,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 - You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns.
 - You have corruption immunity equal to 5 + your level.
 - Creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
-- You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with other creatures.
+- You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with other creatures.
 
 <!-- @type: feature -->
 #### 6th-Level College Ability
@@ -13787,12 +13787,12 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 <!-- @type: feature -->
 ##### Commanding Presence
 
-You command any room you walk into. While you are present during a negotiation, each hero with you treats their [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual. Additionally, each hero with you during a combat encounter has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stop combat and start a negotiation.
+You command any room you walk into. While you are present during a negotiation, each hero with you treats their [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual. Additionally, each hero with you during a combat encounter has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation.
 
 <!-- @type: feature -->
 ##### Covert Operations
 
-While in your presence or working according to your plans, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests using any skill from the intrigue skill group. Additionally, you can use the [Lead](scc:mcdm.heroes.v1/skill/lead) skill to assist another creature with any test made using a skill from the intrigue group.
+While in your presence or working according to your plans, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) using any skill from the intrigue skill group. Additionally, you can use the [Lead](scc:mcdm.heroes.v1/skill/lead) skill to assist another creature with any [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the intrigue group.
 
 At the Director's discretion, you and your allies can use skills from the intrigue skill group to attempt research or reconnaissance during a negotiation instead of outside of a negotiation.
 
@@ -13801,19 +13801,19 @@ At the Director's discretion, you and your allies can use skills from the intrig
 
 Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
 
-Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test as a respite activity. The following test outcomes apply to a combat encounter:
+Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) as a respite activity. The following [test](scc:mcdm.heroes.v1/rule.test/test) outcomes apply to a combat encounter:
 
 - **≤11:** The Director tells you the number of creatures in the encounter.
 - **12-16:** The Director tells you the number and level of the creatures in the encounter.
 - **17+:** The Director tells you the tier 2 outcome information, and when the encounter begins, all enemies are surprised.
 
-The following test outcomes apply to a negotiation:
+The following [test](scc:mcdm.heroes.v1/rule.test/test) outcomes apply to a negotiation:
 
 - **≤11:** The Director gives you three motivations, one of which belongs to an NPC in the negotiation.
 - **12-16:** The Director gives you one motivation for an NPC in the negotiation.
-- **17+:** The Director tells you the tier 2 outcome information, and you and each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to influence NPCs during the negotiation.
+- **17+:** The Director tells you the tier 2 outcome information, and you and each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence NPCs during the negotiation.
 
-You can make this test only once for any encounter or negotiation.
+You can make this [test](scc:mcdm.heroes.v1/rule.test/test) only once for any encounter or negotiation.
 
 <!-- @type: feature -->
 #### Doctrine Triggered Action
@@ -14342,17 +14342,17 @@ You have mastered the ability to distract your foes, allowing you and your allie
 <!-- @type: feature -->
 ##### I Predicted That
 
-Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests.
+Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: feature -->
 ##### Leave No Trace
 
-You and any ally within 10 squares of you can move at full speed while sneaking. Additionally, enemies within 10 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests made to search for you or your allies while any of you are hidden.
+You and any ally within 10 squares of you can move at full speed while sneaking. Additionally, enemies within 10 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for you or your allies while any of you are hidden.
 
 <!-- @type: feature -->
 ##### Shake It Off
 
-As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a test, or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
+As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a [test](scc:mcdm.heroes.v1/rule.test/test), or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
 
 <!-- @type: feature -->
 ##### Tactical Offensive
@@ -14577,17 +14577,17 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 <!-- @type: feature -->
 ##### Asymmetric Warfare
 
-You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the intrigue skill group. Additionally, you can use skills from the intrigue skill group to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.
+You have advanced your skills in subterfuge, now directing full battlefield strategy and logistics. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the intrigue skill group. Additionally, you can use skills from the intrigue skill group to conceal large groups of people, such as escaping civilians and groups of guerilla warriors.
 
 <!-- @type: feature -->
 ##### Grand Strategy
 
-You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.
+You have grown your skills in strategy, wielding intricate battlefield tactics and plans. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the lore skill group. Additionally, when you take a respite, you can make a project roll for a research project in addition to undertaking another respite activity.
 
 <!-- @type: feature -->
 ##### Shock and Awe
 
-You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a test made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.
+You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a crafting project during a respite. If these people are available when you take a respite, you can make a project roll for a crafting project in addition to undertaking another respite activity.
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -15455,12 +15455,12 @@ Your [talent tradition](scc:mcdm.heroes.v1/feature.talent.level-1/talent-traditi
 <!-- @type: feature -->
 ##### Ease the Hours
 
-You can increase the number of rounds in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by 1 if the test would end before the heroes hit the success limit.
+You can increase the number of rounds in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by 1 if the [test](scc:mcdm.heroes.v1/rule.test/test) would end before the heroes hit the success limit.
 
 <!-- @type: feature -->
 ##### Ease the Mind
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).
 
 <!-- @type: feature -->
 ##### Ease Their Fall
@@ -15675,7 +15675,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > - **12-16:** 10 + P damage; P < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 14 + P damage; P < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until the end of the encounter.
+> **Effect:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until the end of the encounter.
 >
 > **Strained:** The [potency](scc:mcdm.heroes.v1/rule.character/potency) of this ability increases by 1. You take 2d6 damage and gain 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately.
 
@@ -15741,7 +15741,7 @@ Your [talent tradition](scc:mcdm.heroes.v1/feature.talent.level-1/talent-traditi
 <!-- @type: feature -->
 ##### Compulsion
 
-Whenever you obtain a success on a test using a skill from the interpersonal skill group while interacting with an NPC, you can ask them a question using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature. The NPC must answer the question truthfully to the best of their ability.
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) using a skill from the interpersonal skill group while interacting with an NPC, you can ask them a question using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature. The NPC must answer the question truthfully to the best of their ability.
 
 <!-- @type: feature -->
 ##### Distortion Temporal
@@ -16499,7 +16499,7 @@ You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroe
 <!-- @type: feature -->
 #### Scene Partner
 
-Whenever you obtain a success on a test to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC's interest by 1, you instead increase their interest by 2 (to a maximum of 5).
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC's interest by 1, you instead increase their interest by 2 (to a maximum of 5).
 
 You can have a number of bonds active equal to your level. When you form a bond with a new NPC that would exceed the limit, you must choose which of your active bonds to lose.
 
@@ -16559,7 +16559,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one test made to jump, tumble, or climb as part of their movement before the end of their turn.
+> **Effect:** While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one [test](scc:mcdm.heroes.v1/rule.test/test) made to jump, tumble, or climb as part of their movement before the end of their turn.
 
 <!-- @type: feature -->
 ##### Blocking
@@ -16978,7 +16978,7 @@ The Director determines when the target receives your notice. When the target re
 
 You can invoke your reputation at the start of a social interaction with one or more NPCs who haven't met you before, automatically creating a bond with one of those NPCs from that group as if using your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature (above). This bond counts against the limit on active bonds from your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature. While the bond is active, all heroes present treat their [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual for the purpose of entering into a negotiation with the bonded NPC.
 
-The Director can award the heroes 1 [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to find allies within the group.
+The Director can award the heroes 1 [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to find allies within the group.
 
 <!-- @type: feature -->
 #### Perk
@@ -17250,11 +17250,11 @@ You can ask the Director for two clues regarding an upcoming encounter or negoti
 <!-- @type: feature | @id: hear-ye-hear-ye -->
 ##### Hear Ye, Hear Ye!
 
-By bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test:
+By bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test):
 
 - **≤11:** Your information reaches no one.
-- **12-16:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger. You and each ally present when you make the test gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests in that area until one of you spends a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- **17+:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger, plus the next closest such population. You and allies present for your test gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made in those areas until you start your next respite.
+- **12-16:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger. You and each ally present when you make the [test](scc:mcdm.heroes.v1/rule.test/test) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) in that area until one of you spends a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- **17+:** Your information reaches the nearest populated area of town [size](scc:mcdm.heroes.v1/rule.character/size) or larger, plus the next closest such population. You and allies present for your [test](scc:mcdm.heroes.v1/rule.test/test) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made in those areas until you start your next respite.
 
 <!-- @type: feature -->
 ##### Latest Goss
@@ -17302,7 +17302,7 @@ Choose one of the following features.
 
 ###### Verbal Duel
 
-Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
+Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
 
 ###### We Can't Be Upstaged!
 
@@ -17527,7 +17527,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Equal Billing
 
-You can use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to form a bond with one willing hero instead of an NPC you interact with using a test. If you bond with another hero, you lose your existing bond with a hero.
+You can use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to form a bond with one willing hero instead of an NPC you interact with using a [test](scc:mcdm.heroes.v1/rule.test/test). If you bond with another hero, you lose your existing bond with a hero.
 
 Additionally, you and creatures you are bonded with gain a +1 bonus to saving throws. Whenever you or a bonded creature succeeds on a saving throw, you and each creature you are bonded with gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your level.
 
@@ -17661,7 +17661,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > - **12-16:** 8 damage; P < AVERAGE, the target can't willingly leave the area (save ends)
 > - **17+:** 12 damage; the target can't willingly leave the area (EoT); if P < STRONG, they can't willingly leave the area (save ends)
 >
-> **Effect:** Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can't obtain lower than a tier 2 outcome on the next test they make before the start of your next turn.
+> **Effect:** Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can't obtain lower than a tier 2 outcome on the next [test](scc:mcdm.heroes.v1/rule.test/test) they make before the start of your next turn.
 
 <!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
@@ -17798,7 +17798,7 @@ As a 10th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the 
 
 You have an epic resource called [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause). Each time you finish a respite, you gain [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) equal to the XP you gain. You can spend [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) on your abilities as if it were drama.
 
-Additionally, whenever you or a creature within 3 squares would obtain a failure or a tier 1 outcome on a test, you can spend 1 [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) to improve the outcome by 1 tier.
+Additionally, whenever you or a creature within 3 squares would obtain a failure or a tier 1 outcome on a [test](scc:mcdm.heroes.v1/rule.test/test), you can spend 1 [applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) to improve the outcome by 1 tier.
 
 [Applause](scc:mcdm.heroes.v1/feature.troubadour.level-10/applause) remains until you spend it.
 
@@ -17815,7 +17815,7 @@ You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.troubadour.level-1/dram
 <!-- @type: feature -->
 #### Greatest of All Time
 
-Whenever you obtain a success on a test, each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next test. These effects last until you start your next respite.
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [test](scc:mcdm.heroes.v1/rule.test/test). These effects last until you start your next respite.
 
 <!-- @type: feature -->
 #### Perk
@@ -18834,22 +18834,22 @@ This section presents crafting perks in alphabetical order.
 <!-- @type: perk -->
 #### Area of Expertise
 
-Choose one skill you already have from the crafting skill group. Whenever you obtain a tier 1 outcome on an easy or medium test using this skill, you treat it as a tier 2 outcome instead. Additionally, if you spend 1 minute inspecting an object related to the chosen skill, you can estimate its value and learn of any flaws in its construction.
+Choose one skill you already have from the crafting skill group. Whenever you obtain a tier 1 outcome on an easy or medium [test](scc:mcdm.heroes.v1/rule.test/test) using this skill, you treat it as a tier 2 outcome instead. Additionally, if you spend 1 minute inspecting an object related to the chosen skill, you can estimate its value and learn of any flaws in its construction.
 
 <!-- @type: perk -->
 #### Expert Artisan
 
-Whenever you make a test as part of a crafting or research project that uses a skill you already have from the crafting skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or research project that uses a skill you already have from the crafting skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
 
 <!-- @type: perk -->
 #### Handy
 
-Whenever you make a test to craft something and don't have a skill that applies to the test, you gain a +1 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to craft something and don't have a skill that applies to the [test](scc:mcdm.heroes.v1/rule.test/test), you gain a +1 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: perk -->
 #### Improvisation Creation
 
-Without needing to make a test—and even without tools—you can quickly jury-rig or repair a mundane item or piece of equipment related to a skill you have from the crafting skill group. That item lasts for 1 hour or works for one use or activation (whichever comes first, as the Director determines), then breaks beyond repair. For example, if you have the Carpentry skill, you could repair a rickety wooden bridge long enough for a group of creatures to cross it, or build a simple shovel made of wood that can be used for 1 hour.
+Without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test)—and even without tools—you can quickly jury-rig or repair a mundane item or piece of equipment related to a skill you have from the crafting skill group. That item lasts for 1 hour or works for one use or activation (whichever comes first, as the Director determines), then breaks beyond repair. For example, if you have the Carpentry skill, you could repair a rickety wooden bridge long enough for a group of creatures to cross it, or build a simple shovel made of wood that can be used for 1 hour.
 
 <!-- @type: perk -->
 #### Inspired Artisan
@@ -18861,11 +18861,11 @@ When you make a project roll using a skill from the crafting skill group, you ca
 
 On any day when you don't take a respite, you can spend 1 uninterrupted hour working on a crafting project using a skill you have from the crafting skill group. If you do so, you gain 1d10 project points toward that project.
 
-> **Perks and Tests**
+> **Perks and [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
-> The existence of specific perks doesn't mean that a hero can't attempt the task related to a perk without having that perk. Aside from supernatural perks, a Director can always allow a hero to attempt a mundane task mentioned in a perk by making a test. Perks are special because they allow a hero to attempt a specific task without a test, and often give a better result than a successful test—or even a test with a reward would give.
+> The existence of specific perks doesn't mean that a hero can't attempt the task related to a perk without having that perk. Aside from supernatural perks, a Director can always allow a hero to attempt a mundane task mentioned in a perk by making a [test](scc:mcdm.heroes.v1/rule.test/test). Perks are special because they allow a hero to attempt a specific task without a [test](scc:mcdm.heroes.v1/rule.test/test), and often give a better result than a successful [test](scc:mcdm.heroes.v1/rule.test/test)—or even a [test](scc:mcdm.heroes.v1/rule.test/test) with a reward would give.
 >
-> For example, can a hero catch a falling ally if they don't have the I've Got You perk? A Director can absolutely allow it, but might decide that the hero needs to succeed on a [Might](scc:mcdm.heroes.v1/rule.character/might) test to accomplish the task, using a main action or maneuver to prepare for it. Being able to catch an ally automatically as a free triggered action is what the perk gets you!
+> For example, can a hero catch a falling ally if they don't have the I've Got You perk? A Director can absolutely allow it, but might decide that the hero needs to succeed on a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to accomplish the task, using a main action or maneuver to prepare for it. Being able to catch an ally automatically as a free triggered action is what the perk gets you!
 
 <!-- @type: feature-group | @id: exploration-perks -->
 ### Exploration Perks
@@ -18875,7 +18875,7 @@ This section presents exploration perks in alphabetical order.
 <!-- @type: perk -->
 #### Brawny
 
-Whenever you fail a [Might](scc:mcdm.heroes.v1/rule.character/might) test, you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.
+Whenever you fail a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test), you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the [test](scc:mcdm.heroes.v1/rule.test/test) by one tier. You can use this perk only once per [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Camouflage Hunter
@@ -18885,7 +18885,7 @@ Whenever you are in wilderness, once you are hidden from a creature, you don't n
 <!-- @type: perk -->
 #### Danger Sense
 
-Whenever you are in a natural environment (but not in a settlement in that environment), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Alertness skill, and you can't be surprised. Additionally, you have a connection to nature that warns you if any natural disaster is imminent within the next 72 hours, though you don't know exactly what it will entail (an earthquake, a wildfire, and so forth).
+Whenever you are in a natural environment (but not in a settlement in that environment), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the Alertness skill, and you can't be surprised. Additionally, you have a connection to nature that warns you if any natural disaster is imminent within the next 72 hours, though you don't know exactly what it will entail (an earthquake, a wildfire, and so forth).
 
 <!-- @type: perk -->
 #### Friend Catapult
@@ -18905,22 +18905,22 @@ You can use the Handle Animals skill to interact with nonsapient creatures who a
 <!-- @type: perk | @id: put-your-back-into-it -->
 #### Put Your Back Into It!
 
-During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you make a test to assist a test and obtain a tier 1 outcome, the assisted test doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can turn an ally's tier 1 test outcome into a tier 2 outcome.
+During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to assist a [test](scc:mcdm.heroes.v1/rule.test/test) and obtain a tier 1 outcome, the assisted [test](scc:mcdm.heroes.v1/rule.test/test) doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can turn an ally's tier 1 [test](scc:mcdm.heroes.v1/rule.test/test) outcome into a tier 2 outcome.
 
 <!-- @type: perk -->
 #### Team Leader
 
-At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make tests as if they also had any skill you have from the exploration group.
+At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make [tests](scc:mcdm.heroes.v1/rule.test/test) as if they also had any skill you have from the exploration group.
 
 <!-- @type: perk -->
 #### Teamwork
 
-When you take your first turn during any [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can both make a test and assist another hero's test.
+When you take your first turn during any [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can both make a [test](scc:mcdm.heroes.v1/rule.test/test) and assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Wood Wise
 
-When you make a test using a skill from the exploration skill group and at least one of the d10s rolled is a 1, you can reroll one d10. You can use this perk only once per test.
+When you make a [test](scc:mcdm.heroes.v1/rule.test/test) using a skill from the exploration skill group and at least one of the d10s rolled is a 1, you can reroll one d10. You can use this perk only once per [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: feature-group | @id: interpersonal-perks -->
 ### Interpersonal Perks
@@ -18930,22 +18930,22 @@ This section presents interpersonal perks in alphabetical order.
 <!-- @type: perk -->
 #### Charming Liar
 
-If you fail a test using the Lie skill, you don't suffer any consequences associated with the failure. Additionally, during a negotiation, you can be caught in one lie without negative consequences. When you use either benefit of this perk, you can't use this perk again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+If you fail a [test](scc:mcdm.heroes.v1/rule.test/test) using the Lie skill, you don't suffer any consequences associated with the failure. Additionally, during a negotiation, you can be caught in one lie without negative consequences. When you use either benefit of this perk, you can't use this perk again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 <!-- @type: perk -->
 #### Dazzler
 
-Whenever a creature watches you sing, dance, or perform a role (as an actor, not just in disguise) for 1 uninterrupted minute or more, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test made to influence that creature for 1 hour after the performance ends.
+Whenever a creature watches you sing, dance, or perform a role (as an actor, not just in disguise) for 1 uninterrupted minute or more, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to influence that creature for 1 hour after the performance ends.
 
 <!-- @type: perk -->
 #### Engrossing Monologue
 
-Whenever you are not in combat, you can shout to get the attention of hearing creatures within 10 squares of you. Each such creature who is not hostile toward you listens to what you have to say for 1 uninterrupted minute or more, or until they sense danger or any form of imminent harm. While creatures are listening to you, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to avoid being noticed by those creatures.
+Whenever you are not in combat, you can shout to get the attention of hearing creatures within 10 squares of you. Each such creature who is not hostile toward you listens to what you have to say for 1 uninterrupted minute or more, or until they sense danger or any form of imminent harm. While creatures are listening to you, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to avoid being noticed by those creatures.
 
 <!-- @type: perk -->
 #### Harmonizer
 
-You can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the Music skill to influence creatures who don't have emotions or can't understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test.
+You can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the Music skill to influence creatures who don't have emotions or can't understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Lie Detector
@@ -18960,22 +18960,22 @@ Whenever you speak one-on-one with a creature, you can ask them one question abo
 <!-- @type: perk -->
 #### Pardon My Friend
 
-When an ally within 5 squares fails a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test, you can step in and make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test that takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane), with your roll replacing the ally's roll. This perk can be used only once per test, even if more than one character has it.
+When an ally within 5 squares fails a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test), you can step in and make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) that takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane), with your roll replacing the ally's roll. This perk can be used only once per [test](scc:mcdm.heroes.v1/rule.test/test), even if more than one character has it.
 
 <!-- @type: perk -->
 #### Power Player
 
-Whenever you make a test that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) instead of any other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test calls for.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) instead of any other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the [test](scc:mcdm.heroes.v1/rule.test/test) calls for.
 
 <!-- @type: perk -->
 #### So Tell Me...
 
-Whenever you succeed on a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to influence one or more creatures, you can ask one creature you influenced a follow-up question after the test resolves, which they must answer honestly. At the Director's discretion, the creature doesn't have to answer the question completely—or at all—if the response would put them or a loved one in danger.
+Whenever you succeed on a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to influence one or more creatures, you can ask one creature you influenced a follow-up question after the [test](scc:mcdm.heroes.v1/rule.test/test) resolves, which they must answer honestly. At the Director's discretion, the creature doesn't have to answer the question completely—or at all—if the response would put them or a loved one in danger.
 
 <!-- @type: perk -->
 #### Spot the Tell
 
-Whenever you make a test to read a person and obtain a tier 3 outcome, you notice several tells that give away their true feelings. Any test you make to read that person in the future gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to read a person and obtain a tier 3 outcome, you notice several tells that give away their true feelings. Any [test](scc:mcdm.heroes.v1/rule.test/test) you make to read that person in the future gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature-group | @id: intrigue-perks -->
 ### Intrigue Perks
@@ -18985,12 +18985,12 @@ This section presents intrigue perks in alphabetical order.
 <!-- @type: perk -->
 #### Criminal Contacts
 
-You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
+You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
 
 <!-- @type: perk -->
 #### Forgettable Face
 
-If you spend 10 minutes or less interacting with a creature who hasn't met you before, you can cause them to forget your face when you part. If asked to describe you, the creature gives only a vague, blank, and unhelpful description. Additionally, if you spend 1 hour or more assembling a disguise, you automatically obtain a tier 2 outcome on any test that could make use of the Disguise skill. If you have the Disguise skill, you automatically obtain a tier 3 outcome on the test.
+If you spend 10 minutes or less interacting with a creature who hasn't met you before, you can cause them to forget your face when you part. If asked to describe you, the creature gives only a vague, blank, and unhelpful description. Additionally, if you spend 1 hour or more assembling a disguise, you automatically obtain a tier 2 outcome on any [test](scc:mcdm.heroes.v1/rule.test/test) that could make use of the Disguise skill. If you have the Disguise skill, you automatically obtain a tier 3 outcome on the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Gum Up the Works
@@ -19000,17 +19000,17 @@ Whenever a mundane trap activates within 3 squares, you can use a triggered acti
 <!-- @type: perk -->
 #### Lucky Dog
 
-Whenever you fail a test using any skill from the intrigue skill group, you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.
+Whenever you fail a [test](scc:mcdm.heroes.v1/rule.test/test) using any skill from the intrigue skill group, you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the [test](scc:mcdm.heroes.v1/rule.test/test) by one tier. You can use this perk only once per [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Master of Disguise
 
-You can don or remove a disguise as part of any test you make using the Hide skill, or while using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver.
+You can don or remove a disguise as part of any [test](scc:mcdm.heroes.v1/rule.test/test) you make using the Hide skill, or while using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver.
 
 <!-- @type: perk -->
 #### Slipped Lead
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to escape bonds. Given 1 uninterrupted minute, you can escape any mundane bonds without making a test. Additionally, it's not immediately obvious when you've escaped bonds until you do something that makes it clear you have done so (cast them off, use an ability that harms one or more creatures, and so forth).
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to escape bonds. Given 1 uninterrupted minute, you can escape any mundane bonds without making a [test](scc:mcdm.heroes.v1/rule.test/test). Additionally, it's not immediately obvious when you've escaped bonds until you do something that makes it clear you have done so (cast them off, use an ability that harms one or more creatures, and so forth).
 
 <!-- @type: feature-group | @id: lore-perks -->
 ### Lore Perks
@@ -19020,7 +19020,7 @@ This section presents lore perks in alphabetical order.
 <!-- @type: perk -->
 #### But I Know Who Does
 
-Whenever you fail a test to recall lore using a skill from the lore skill group, you instinctively recall the nearest location where the information you seek might be found. This could be the tower of a local sage, a library in a nearby city, somewhere deep in a dungeon, or any other location of the Director's determination. The Director can decide that certain lore can't be revealed this way.
+Whenever you fail a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore using a skill from the lore skill group, you instinctively recall the nearest location where the information you seek might be found. This could be the tower of a local sage, a library in a nearby city, somewhere deep in a dungeon, or any other location of the Director's determination. The Director can decide that certain lore can't be revealed this way.
 
 <!-- @type: perk -->
 #### Eidetic Memory
@@ -19030,7 +19030,7 @@ Your mind is an encyclopedia, though not always an easy one to organize. When yo
 <!-- @type: perk -->
 #### Expert Sage
 
-Whenever you make a test as part of a crafting or research project using a skill from the lore skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a crafting or research project using a skill from the lore skill group, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) twice and use either roll.
 
 <!-- @type: perk -->
 #### I've Read About This Place
@@ -19051,12 +19051,12 @@ You automatically learn two new languages, as long as you have regularly heard t
 <!-- @type: perk -->
 #### Polymath
 
-Whenever you make a test to recall lore and don't have a skill that applies to the test, you gain a +1 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore and don't have a skill that applies to the [test](scc:mcdm.heroes.v1/rule.test/test), you gain a +1 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: perk -->
 #### Specialist
 
-You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to recall lore using this skill. Additionally, your [specialist](scc:mcdm.heroes.v1/perk/specialist) knowledge grants you notoriety in fields related to the chosen skill. You treat your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
+You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore using this skill. Additionally, your [specialist](scc:mcdm.heroes.v1/perk/specialist) knowledge grants you notoriety in fields related to the chosen skill. You treat your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
 
 <!-- @type: perk -->
 #### Traveling Sage
@@ -19154,7 +19154,7 @@ You have the following ability.
 <!-- @type: perk -->
 #### Ritualist
 
-You can spend 1 uninterrupted minute to perform a magic ritual of blessing, targeting yourself or one willing creature you touch. The target has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next test they make within the next minute. A target can't use this benefit on an activity that takes longer than 1 minute.
+You can spend 1 uninterrupted minute to perform a magic ritual of blessing, targeting yourself or one willing creature you touch. The target has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [test](scc:mcdm.heroes.v1/rule.test/test) they make within the next minute. A target can't use this benefit on an activity that takes longer than 1 minute.
 
 <!-- @type: perk -->
 #### Thingspeaker
@@ -19165,7 +19165,7 @@ When you hold an object in your hand for 1 uninterrupted minute, you can sense w
 - Why does this emotion linger on the object?
 - How long has it been since the object was held by the person whose emotion lingers on it?
 
-After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until you finish a respite, and you can't use this perk again while you suffer this [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until you finish a respite, and you can't use this perk again while you suffer this [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: chapter | @id: complications -->
 # Complications
@@ -19357,7 +19357,7 @@ Complications are presented in alphabetical order.
 
 You somehow obtained the notebook of a brilliant but eccentric member of your class. The knowledge held within those notes should help you unlock powerful new abilities—if you can ever figure out what the notes mean.
 
-**Benefit and Drawback:** As a respite activity, you can study the notebook. Make a test using your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score:
+**Benefit and Drawback:** As a respite activity, you can study the notebook. Make a [test](scc:mcdm.heroes.v1/rule.test/test) using your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score:
 
 - **≤11:** You summon a hostile demon of your level or lower who attacks you at the end of the respite. The demon acts first in the combat, regardless of the traits or abilities of you or any other creature involved.
 - **12-16:** You learn nothing and your time is wasted.
@@ -19370,7 +19370,7 @@ You have no memory of your past before the... incident. Hopefully, you'll regain
 
 **Benefit:** You have a supernatural possession—a 1st-echelon trinket of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
 
-**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to recall lore.
+**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
 <!-- @type: complication -->
 #### Animal Form
@@ -19390,7 +19390,7 @@ You used to be a villain. You're (mostly) reformed now, but in desperate moments
 
 **Benefit:** You have 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens. Whenever you use an ability or other effect that costs your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), you can spend 1 [antihero](scc:mcdm.heroes.v1/complication/antihero) token in place of 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). Whenever you have fewer than 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens and you would earn a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) for your party through your deeds, you instead regain 1 [antihero](scc:mcdm.heroes.v1/complication/antihero) token.
 
-**Drawback:** While you have fewer than 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens, you exude a villainous aspect. You and each ally within 5 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to interact with other creatures.
+**Drawback:** While you have fewer than 3 [antihero](scc:mcdm.heroes.v1/complication/antihero) tokens, you exude a villainous aspect. You and each ally within 5 squares of you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to interact with other creatures.
 
 <!-- @type: complication -->
 #### Artifact Bonded
@@ -19444,7 +19444,7 @@ Ever since you were a kid, you've been obsessed with a certain topic. During you
 
 **Benefit:** You have one skill of your choice from the lore skill group, and you can use the Study Lore project (see below) up to three times for that skill. Each time you use the project, you must use a different project source, and the project goal increases. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
 
-**Drawback:** You can't imagine ever being wrong on the topic of your obsession. Whenever you make a test to recall lore using your chosen skill, the Director makes the test in secret. Instead of informing you whether you're right or wrong, they provide you with correct information if you succeeded and false information if you failed.
+**Drawback:** You can't imagine ever being wrong on the topic of your obsession. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore using your chosen skill, the Director makes the [test](scc:mcdm.heroes.v1/rule.test/test) in secret. Instead of informing you whether you're right or wrong, they provide you with correct information if you succeeded and false information if you failed.
 
 ##### Study Lore
 
@@ -19456,7 +19456,7 @@ Ever since you were a kid, you've been obsessed with a certain topic. During you
 
 **Project Goal:** 120, 150, 180
 
-Each time you complete this project, your knowledge of your chosen field expands, and the bonus to tests provided by your chosen skill increases by 1.
+Each time you complete this project, your knowledge of your chosen field expands, and the bonus to [tests](scc:mcdm.heroes.v1/rule.test/test) provided by your chosen skill increases by 1.
 
 <!-- @type: complication -->
 #### Corrupted Mentor
@@ -19493,7 +19493,7 @@ You used to flit around the stars in your own ship. But an ugly run-in with a [p
 
 **Benefit:** You have the Timescape skill (from the lore skill group). Additionally, you have a power pack that you can activate or deactivate as a maneuver. When you activate the power pack, choose an energy type from cold, fire, lightning, or sonic. Until you deactivate the power pack, your damage-dealing abilities deal that [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
-**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to know about anything related to the world where you [crash landed](scc:mcdm.heroes.v1/complication/crash-landed).
+**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to know about anything related to the world where you [crash landed](scc:mcdm.heroes.v1/complication/crash-landed).
 
 <!-- @type: complication -->
 #### Cult Victim
@@ -19520,14 +19520,14 @@ For as long as you can remember, you've never gotten older. You've simply advent
 
 **Benefit:** You don't age. Additionally, whenever you would die, you instead enter a state of suspended animation indistinguishable from death. If your body isn't destroyed by [dying](scc:mcdm.heroes.v1/rule.health/dying) or while you remain in this state, you come back to life after 12 hours and regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to recall lore.
+**Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
 <!-- @type: complication -->
 #### Curse of Misfortune
 
 You should have never pissed off that mage! Maybe they deserved your ire, or maybe you were just being a bully. But whatever the case, they cursed you before skipping town. Now, in moments of pressure that require great skill, you have a tendency to choke, falling and flailing in such a dramatic fashion that you take everyone else with you.
 
-**Benefit and Drawback:** Whenever you make a test in combat and incur a consequence, you ignore that consequence. Instead, you and each ally adjacent to you [fall prone](scc:mcdm.heroes.v1/condition/prone).
+**Benefit and Drawback:** Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) in combat and incur a consequence, you ignore that consequence. Instead, you and each ally adjacent to you [fall prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: complication -->
 #### Curse of Poverty
@@ -19615,7 +19615,7 @@ You used to be an immortal creature, dispensing justice and doing the bidding of
 
 **Benefit:** You have the Religion skill (from the lore skill group). Additionally, whenever you use an ability that deals untyped damage, that ability can deal holy damage instead.
 
-**Drawback:** You will never fully gain a mortal's comfort with untruth. Any test you make to deceive another creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+**Drawback:** You will never fully gain a mortal's comfort with untruth. Any [test](scc:mcdm.heroes.v1/rule.test/test) you make to deceive another creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: complication -->
 #### Famous Relative
@@ -19732,7 +19732,7 @@ The world is in trouble—and it's partly your fault. Maybe you helped a villain
 
 **Benefit:** You're determined to stay alive so you can set things right. When your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) reaches the negative of your [winded](scc:mcdm.heroes.v1/rule.health/winded) value, you can use a free triggered action to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**Drawback:** Many people blame you for the evils you caused. They might be unfriendly or hostile to you—and you can understand their point of view. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to interact with those who know what you did, and on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against such creatures.
+**Drawback:** Many people blame you for the evils you caused. They might be unfriendly or hostile to you—and you can understand their point of view. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to interact with those who know what you did, and on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against such creatures.
 
 <!-- @type: complication -->
 #### Hawk Rider
@@ -19741,7 +19741,7 @@ You travel with a giant hawk who you stole from the Hawklords (see Vasloria in C
 
 **Benefit:** As long as you are not in a building or other structure, you can spend 1 uninterrupted minute to summon your giant hawk (see the [Humans](scc:mcdm.heroes.v1/ancestry/human) entry in *Draw Steel: Monsters*), which acts as your mount. You can dismiss the hawk at any time (no action required). The hawk won't go inside buildings, dungeons, or other structures, and it won't accept anyone but you as a rider. If the hawk takes damage or dies, you can restore them to full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a respite activity.
 
-**Drawback:** People aware of the origin of your mount are afraid to interact with you, since they worry the Hawklords will come after them by association. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to influence anyone who knows of the Hawklords and who has observed you with your giant hawk. Such people might also report you to the Hawklords, who come looking for you at the Director's discretion.
+**Drawback:** People aware of the origin of your mount are afraid to interact with you, since they worry the Hawklords will come after them by association. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to influence anyone who knows of the Hawklords and who has observed you with your giant hawk. Such people might also report you to the Hawklords, who come looking for you at the Director's discretion.
 
 <!-- @type: complication -->
 #### Host Body
@@ -19750,7 +19750,7 @@ You travel with a giant hawk who you stole from the Hawklords (see Vasloria in C
 
 **Benefit:** You are a sapient fungus who inhabits a humanoid body. Your [host body](scc:mcdm.heroes.v1/complication/host-body) follows all the usual rules for a character and is considered to be alive. At any time while your [host body](scc:mcdm.heroes.v1/complication/host-body) is alive, or for 24 hours after it dies, you can use a main action to move to a dead humanoid within 10 squares of the body and use it as your new [host body](scc:mcdm.heroes.v1/complication/host-body), provided the body belongs to a playable ancestry. When you do so, your original [host body](scc:mcdm.heroes.v1/complication/host-body) dies if it was alive. Your new [host body](scc:mcdm.heroes.v1/complication/host-body) gains all your statistics except [size](scc:mcdm.heroes.v1/rule.character/size), [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries), and other statistics related to your former [host body's](scc:mcdm.heroes.v1/complication/host-body) ancestry, which you instead gain from your new [host body](scc:mcdm.heroes.v1/complication/host-body). When you inhabit a new [host body](scc:mcdm.heroes.v1/complication/host-body), you start with 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can immediately spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**Drawback:** You have fire weakness 5. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to read a humanoid creature's emotions or body language.
+**Drawback:** You have fire weakness 5. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to read a humanoid creature's emotions or body language.
 
 <!-- @type: complication -->
 #### Hunted
@@ -19772,9 +19772,9 @@ You are hunting someone or something—perhaps a wanted criminal, a person who w
 - Alertness, Eavesdrop, Search, or Track (from the intrigue skill group)
 - Criminal Underworld, Rumors, or Society (from the lore skill group)
 
-You have that skill, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to find or learn clues about your quarry.
+You have that skill, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to find or learn clues about your quarry.
 
-**Drawback:** You are so obsessed with finding your quarry that you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to track other creatures.
+**Drawback:** You are so obsessed with finding your quarry that you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to track other creatures.
 
 <!-- @type: complication -->
 #### Indebted
@@ -19805,7 +19805,7 @@ You made a deal with a [devil](scc:mcdm.heroes.v1/ancestry/devil). Not a very go
 - Your [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth) increases by 2.
 - You gain a +3 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-**Drawback:** Your body bears a fiendish mark. Any creature who understands religion and notes the mark can tell that your soul belongs to Hell, imposing a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test you make to interact with those creatures (unless they're into that). Additionally, when you die, your soul goes to Hell and you can't be restored to life.
+**Drawback:** Your body bears a fiendish mark. Any creature who understands religion and notes the mark can tell that your soul belongs to Hell, imposing a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) you make to interact with those creatures (unless they're into that). Additionally, when you die, your soul goes to Hell and you can't be restored to life.
 
 <!-- @type: complication -->
 #### Ivory Tower
@@ -19814,7 +19814,7 @@ You studied in an academy or other educational institution. Your training was th
 
 **Benefit:** You have three skills of your choice, and you know one dead language of your choice (see Languages in Orden in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
-**Drawback:** The Director chooses one of the skills you have from this complication. You lose that skill and can't ever learn it again. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test to which that skill would apply.
+**Drawback:** The Director chooses one of the skills you have from this complication. You lose that skill and can't ever learn it again. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) to which that skill would apply.
 
 <!-- @type: complication -->
 #### Lifebonded
@@ -19850,7 +19850,7 @@ In a long-ago age, a cataclysm overtook your city. You weren't killed, but some 
 
 **Benefit:** Choose a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic. Whenever you use a signature ability, you can have it deal your chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) instead of its usual damage.
 
-**Drawback:** You automatically fail any test made to recall information from the period during which you were suspended in time.
+**Drawback:** You automatically fail any [test](scc:mcdm.heroes.v1/rule.test/test) made to recall information from the period during which you were suspended in time.
 
 <!-- @type: complication -->
 #### Lost Your Head
@@ -19876,9 +19876,9 @@ A bredbeddle stole your head! Usually, being beheaded by one of those magical gi
 
 You've always had a [lucky](scc:mcdm.heroes.v1/complication/lucky) streak. When you leave things in the hands of fate, you succeed more than you fail. But luck is fickle—and when you don't trust it, it deserts you.
 
-**Benefit:** When you spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to succeed on a saving throw or to reroll a test, roll a d10. On a 6 or higher, you gain the benefit but don't spend the [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).
+**Benefit:** When you spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to succeed on a saving throw or to reroll a [test](scc:mcdm.heroes.v1/rule.test/test), roll a d10. On a 6 or higher, you gain the benefit but don't spend the [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).
 
-**Drawback:** Whenever you obtain a tier 1 outcome on a test and don't spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next test you make.
+**Drawback:** Whenever you obtain a tier 1 outcome on a [test](scc:mcdm.heroes.v1/rule.test/test) and don't spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [test](scc:mcdm.heroes.v1/rule.test/test) you make.
 
 <!-- @type: complication -->
 #### Master Chef
@@ -19951,7 +19951,7 @@ Your mother and father never saw eye to eye. You know this because your father i
 
 Your appearance marks you as part of a group that is universally feared. You might be a gentle soul, but you're not often given a chance to prove it. It's no wonder you usually wear a hood.
 
-**Benefit and Drawback:** When you reveal your appearance to creatures who don't know you personally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test involving those creatures where the [Brag](scc:mcdm.heroes.v1/skill/brag) or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied, but you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test where the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied.
+**Benefit and Drawback:** When you reveal your appearance to creatures who don't know you personally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) involving those creatures where the [Brag](scc:mcdm.heroes.v1/skill/brag) or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied, but you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) where the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied.
 
 <!-- @type: complication -->
 #### Mundane
@@ -19985,7 +19985,7 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
 
 **Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means) leaves you, their faith in you shaken. If you have no followers, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is reduced by 1. If you need to reduce your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and it's already 0, you gain no benefits from the respite during which you make the conversion attempt.
 
@@ -20012,9 +20012,9 @@ You were captured by the psionic beings known as voiceless talkers (see *Draw St
 
 You were apprenticed to learn a crafting trade. Your mentor said you had a special gift and might well become a master of your craft someday. But before your training was complete, your mentor was killed.
 
-**Benefit:** You have one skill of your choice from the crafting skill group. Additionally, choose one of your skills from the crafting group. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test that uses that skill.
+**Benefit:** You have one skill of your choice from the crafting skill group. Additionally, choose one of your skills from the crafting group. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) that uses that skill.
 
-**Drawback:** Whoever killed your mentor cursed you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test that doesn't use one of your skills.
+**Drawback:** Whoever killed your mentor cursed you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) that doesn't use one of your skills.
 
 <!-- @type: complication -->
 #### Psychic Eruption
@@ -20046,7 +20046,7 @@ In times of stress, you get headaches. Psionic energy builds up in your mind unt
 
 You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes, bears, or wolves) took you in. Returning to so-called civilization was a shock, but you're now determined to learn all you can about your own kind.
 
-**Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're supernaturally compelled to be.
+**Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're supernaturally compelled to be.
 
 **Drawback:** You don't have a culture (see Culture in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you can speak Caelian.
 
@@ -20064,9 +20064,9 @@ A hostile army—perhaps the forces of Ajax, the Iron Saint—conquered your hom
 
 Whatever your accomplishments, you'll forever measure yourself against a former companion who always seemed to stay one step ahead of you.
 
-**Benefit:** Choose one of your skills. That skill grants a +3 bonus to tests instead of +2.
+**Benefit:** Choose one of your skills. That skill grants a +3 bonus to [tests](scc:mcdm.heroes.v1/rule.test/test) instead of +2.
 
-**Drawback:** Your [rival](scc:mcdm.heroes.v1/complication/rival) has similar statistics to yours, but always had one skill they excelled at, as determined by the Director. Intimidated by their prowess, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests using that skill.
+**Drawback:** Your [rival](scc:mcdm.heroes.v1/complication/rival) has similar statistics to yours, but always had one skill they excelled at, as determined by the Director. Intimidated by their prowess, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) using that skill.
 
 <!-- @type: complication -->
 #### Rogue Talent
@@ -20184,7 +20184,7 @@ You were tasked with delivering a ceremonial shield to your older sibling, a cel
 
 **Benefit:** While you wear your sibling's shield on your back, you can't be flanked.
 
-**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a respite, make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the respite.
+**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a respite, make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the respite.
 
 <!-- @type: complication -->
 #### Silent Sentinel
@@ -20211,7 +20211,7 @@ Maybe you were bitten as a child, or maybe it's a family curse. Either way, you 
 
 An evil fairy cursed you, leaving you with a blank visage instead of a face. Although you're able to imitate other peoples' features, you'd like to have your own back.
 
-**Benefit:** You can spend 5 uninterrupted minutes to rearrange your face to resemble the face of another creature of your ancestry who you've observed before. You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to impersonate that creature or to disguise your identity. You are unable to change your hair or other nonfacial features.
+**Benefit:** You can spend 5 uninterrupted minutes to rearrange your face to resemble the face of another creature of your ancestry who you've observed before. You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to impersonate that creature or to disguise your identity. You are unable to change your hair or other nonfacial features.
 
 **Drawback:** Whenever you take damage, your face becomes blank, with no eyes, nose, mouth, or ears. This doesn't affect your senses or your ability to speak. Your face doesn't return until you use the benefit of this complication to restore it.
 
@@ -20261,7 +20261,7 @@ A vampire has bitten you. You're not undead—or not yet, anyway—but your conn
 
 **Benefit:** Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can do so by biting that creature. If you obtain a tier 3 outcome on the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
 
-**Drawback:** While you have [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this complication, you grow visible fangs, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with humanoids, and your vampire progenitor can sense your location.
+**Drawback:** While you have [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this complication, you grow visible fangs, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with humanoids, and your vampire progenitor can sense your location.
 
 <!-- @type: complication -->
 #### Voice in Your Head
@@ -20286,14 +20286,14 @@ You have sworn an oath to an organization. That organization is your rock, and a
 
 You were brought up to a strict standard of behavior. You cannot tell a lie.
 
-**Benefit:** If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test made to persuade a creature of some specific fact.
+**Benefit:** If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to persuade a creature of some specific fact.
 
-**Drawback:** When you lie, your honor is stained and you lose this complication's benefit. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test that uses a skill from the interpersonal skill group. You can lose the [bane](scc:mcdm.heroes.v1/rule.dice/bane) and regain this complication's benefit only by doing penance, such as gaining the forgiveness of the creature you lied to.
+**Drawback:** When you lie, your honor is stained and you lose this complication's benefit. Additionally, you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) that uses a skill from the interpersonal skill group. You can lose the [bane](scc:mcdm.heroes.v1/rule.dice/bane) and regain this complication's benefit only by doing penance, such as gaining the forgiveness of the creature you lied to.
 
 <!-- @type: complication -->
 #### Waking Dreams
 
-You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a respite, make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to determine whether you gain this complication's benefit or drawback.
+You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a respite, make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to determine whether you gain this complication's benefit or drawback.
 
 **Benefit:** With a tier 2 outcome, you experience a vision of an event currently happening in your world. The vision lasts for only a few seconds, but the information you glean is helpful to you. With a tier 3 outcome, the vision lasts for 1 minute or more.
 
@@ -20391,19 +20391,19 @@ You spent many years imprisoned for a crime you didn't commit. During your long 
 <!-- @type: chapter | @id: tests -->
 # Tests
 
-When you want your hero to rifle through a desk and locate a specific document, scale a castle wall, negotiate a treaty with a monarch, or undertake any other activity with a chance of failure, you'll need to make a test to determine how successful you are at the task. A test is any [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that has failure or consequences as an option.
+When you want your hero to rifle through a desk and locate a specific document, scale a castle wall, negotiate a treaty with a monarch, or undertake any other activity with a chance of failure, you'll need to make a [test](scc:mcdm.heroes.v1/rule.test/test) to determine how successful you are at the task. A [test](scc:mcdm.heroes.v1/rule.test/test) is any [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that has failure or consequences as an option.
 
 ### When to Make a Test
 
-The Director should ask a player to make a test only when the player's hero attempts a task where the consequences of failure are interesting or dramatic, and where failure won't grind the story to a halt. For example, if a hero wants to leap over a waist-high wall while casually walking through a peaceful city neighborhood, the worst case for failure is probably that the hero falls on their butt, takes no damage, and can stand up to either try again or walk around the wall. As such, no test is required. But if the hero were being chased by enemies, failing to leap over the wall means the pursuers can catch them, so the Director might decide to call for a test to determine what happens.
+The Director should ask a player to make a [test](scc:mcdm.heroes.v1/rule.test/test) only when the player's hero attempts a task where the consequences of failure are interesting or dramatic, and where failure won't grind the story to a halt. For example, if a hero wants to leap over a waist-high wall while casually walking through a peaceful city neighborhood, the worst case for failure is probably that the hero falls on their butt, takes no damage, and can stand up to either try again or walk around the wall. As such, no [test](scc:mcdm.heroes.v1/rule.test/test) is required. But if the hero were being chased by enemies, failing to leap over the wall means the pursuers can catch them, so the Director might decide to call for a [test](scc:mcdm.heroes.v1/rule.test/test) to determine what happens.
 
-The advancement of a story shouldn't be halted by failing a test. For instance, the heroes might need to know the color of a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) king's crown to solve a puzzle, with that puzzle opening the only entrance to a tomb they must enter to stop a world-ending ritual. It could be that a successful [Reason](scc:mcdm.heroes.v1/rule.character/reason) test allows the heroes to recall that lore, but the test shouldn't be their only option to get the information. If the test fails, perhaps the heroes need to go to a [flying](scc:mcdm.heroes.v1/movement/fly) library to do research, or they might be able to delve into a ruin to find the ancient monarch's portrait. A failed test should always result in a story becoming more interesting, not in the action coming to an end.
+The advancement of a story shouldn't be halted by failing a [test](scc:mcdm.heroes.v1/rule.test/test). For instance, the heroes might need to know the color of a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) king's crown to solve a puzzle, with that puzzle opening the only entrance to a tomb they must enter to stop a world-ending ritual. It could be that a successful [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) allows the heroes to recall that lore, but the [test](scc:mcdm.heroes.v1/rule.test/test) shouldn't be their only option to get the information. If the [test](scc:mcdm.heroes.v1/rule.test/test) fails, perhaps the heroes need to go to a [flying](scc:mcdm.heroes.v1/movement/fly) library to do research, or they might be able to delve into a ruin to find the ancient monarch's portrait. A failed [test](scc:mcdm.heroes.v1/rule.test/test) should always result in a story becoming more interesting, not in the action coming to an end.
 
 #### It Just Works!
 
-When a hero attempts to solve a task that typically requires a test with clever, outside-the-box thinking, the Director can instead decide that no test is required and the attempt automatically works! For example, if a hero who wants to climb a wall first covers their hands and feet in giant strands of sticky spider webs, the Director might decide that they can climb up the wall without needing to make a test.
+When a hero attempts to solve a task that typically requires a [test](scc:mcdm.heroes.v1/rule.test/test) with clever, outside-the-box thinking, the Director can instead decide that no [test](scc:mcdm.heroes.v1/rule.test/test) is required and the attempt automatically works! For example, if a hero who wants to climb a wall first covers their hands and feet in giant strands of sticky spider webs, the Director might decide that they can climb up the wall without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-That said, such clever ideas often work for free the first time, but the Director could decide they require tests if they are used again.
+That said, such clever ideas often work for free the first time, but the Director could decide they require [tests](scc:mcdm.heroes.v1/rule.test/test) if they are used again.
 
 <!-- @type: rule | @group: test | @id: test -->
 ### How to Make a Test
@@ -20418,63 +20418,63 @@ The player reports the total of the roll, and the Director interprets its succes
 
 #### Characteristics and Tests
 
-When you describe a task you want your hero to undertake and the Director determines that a test is necessary, they then determine which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a [Might](scc:mcdm.heroes.v1/rule.character/might) test to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test if you're attempting to win over the jury with your personality, or a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test if you're laying out a logical argument to support your innocence.
+When you describe a task you want your hero to undertake and the Director determines that a [test](scc:mcdm.heroes.v1/rule.test/test) is necessary, they then determine which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the [test](scc:mcdm.heroes.v1/rule.test/test) uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) if you're attempting to win over the jury with your personality, or a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) if you're laying out a logical argument to support your innocence.
 
-Though the Director can decide to call for tests in any circumstances, a number of tasks that heroes routinely undertake are commonly set up as tests.
+Though the Director can decide to call for [tests](scc:mcdm.heroes.v1/rule.test/test) in any circumstances, a number of tasks that heroes routinely undertake are commonly set up as [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 ##### Might Tests
 
-You make a [Might](scc:mcdm.heroes.v1/rule.character/might) test whenever a risky task calls for the use of physical strength. [Might](scc:mcdm.heroes.v1/rule.character/might) tests are most often used for breaking down doors and other structures, hurling heavy objects, pulling your body up a sheer wall, swimming against a mighty current, and other feats of physical power.
+You make a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) whenever a risky task calls for the use of physical strength. [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) are most often used for breaking down doors and other structures, hurling heavy objects, pulling your body up a sheer wall, swimming against a mighty current, and other feats of physical power.
 
 ##### Agility Tests
 
-You make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test whenever a risky task calls for the use of your physical coordination and nimbleness. [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests are most often used for tumbling, sneaking quietly, picking locks, and engaging in sleight of hand.
+You make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) whenever a risky task calls for the use of your physical coordination and nimbleness. [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) are most often used for tumbling, sneaking quietly, picking locks, and engaging in sleight of hand.
 
 ##### Reason Tests
 
-You make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test whenever you attempt a risky task that requires the use of your mental acumen and education, formal or otherwise. [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests are most often used to recall lore, deduce information based on clues, complete a puzzle, forge counterfeit items or documents, break a code, convince others of a logical argument, or make an estimation.
+You make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) whenever you attempt a risky task that requires the use of your mental acumen and education, formal or otherwise. [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) are most often used to recall lore, deduce information based on clues, complete a puzzle, forge counterfeit items or documents, break a code, convince others of a logical argument, or make an estimation.
 
 ##### Intuition Tests
 
-You make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test whenever you attempt a risky task that requires the use of your powers of observation and instinct. [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests are most often used to notice hidden creatures or details, discern another person's motivations or honesty, calm and reassure others, and train animals.
+You make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) whenever you attempt a risky task that requires the use of your powers of observation and instinct. [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [tests](scc:mcdm.heroes.v1/rule.test/test) are most often used to notice hidden creatures or details, discern another person's motivations or honesty, calm and reassure others, and train animals.
 
 ##### Presence Tests
 
-You make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test whenever you attempt a risky task that requires the use of your force of personality. [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests are most often used to gain trust, project confidence, and influence and lead other creatures.
+You make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) whenever you attempt a risky task that requires the use of your force of personality. [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) are most often used to gain trust, project confidence, and influence and lead other creatures.
 
-> **Influencing Player Characters With Tests**
+> **Influencing Player Characters With [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
-> The things player characters do can't be influenced by any creature making a test, whether a monster, an NPC, or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an NPC convinced them to do so with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. For most players, it's not fun to be in control of a hero and lose some of that control.
+> The things player characters do can't be influenced by any creature making a [test](scc:mcdm.heroes.v1/rule.test/test), whether a monster, an NPC, or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an NPC convinced them to do so with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). For most players, it's not fun to be in control of a hero and lose some of that control.
 >
-> Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to discern another PC's motivations or honesty.
+> Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to discern another PC's motivations or honesty.
 >
 > That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *https://mcdm.gg/SafetyToolkit*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
 
 <!-- @type: rule | @group: test | @id: test-difficulty -->
 #### Test Difficulty
 
-The Director decides how difficult a task that requires a test is: easy, medium, or hard. If a task seems as though it's easier than easy, then no test is necessary. The hero simply accomplishes the task. If the task seems harder than hard, then the Director is free to decide that it's impossible to complete with a test.
+The Director decides how difficult a task that requires a [test](scc:mcdm.heroes.v1/rule.test/test) is: easy, medium, or hard. If a task seems as though it's easier than easy, then no [test](scc:mcdm.heroes.v1/rule.test/test) is necessary. The hero simply accomplishes the task. If the task seems harder than hard, then the Director is free to decide that it's impossible to complete with a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-On a test-by-test basis, the Director can share the difficulty of a task before the player makes the test, which makes interpreting the outcome faster at the table. The Director can also keep a test's difficulty secret until after the player rolls the test, for dramatic effect.
+On a [test](scc:mcdm.heroes.v1/rule.test/test)-by-[test](scc:mcdm.heroes.v1/rule.test/test) basis, the Director can share the difficulty of a task before the player makes the [test](scc:mcdm.heroes.v1/rule.test/test), which makes interpreting the outcome faster at the table. The Director can also keep a [test](scc:mcdm.heroes.v1/rule.test/test)'s difficulty secret until after the player rolls the [test](scc:mcdm.heroes.v1/rule.test/test), for dramatic effect.
 
-The Test Difficulty Outcomes table shows all the possible outcomes of the different difficulties of tests. The Director will keep this information handy so as to be able to compare the different difficulties and their outcomes during play.
+The [Test](scc:mcdm.heroes.v1/rule.test/test) Difficulty Outcomes table shows all the possible outcomes of the different difficulties of [tests](scc:mcdm.heroes.v1/rule.test/test). The Director will keep this information handy so as to be able to compare the different difficulties and their outcomes during play.
 
 ###### Test Difficulty Outcomes Table
 
-| [Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll)       | Easy Test Outcomes         | Medium Test Outcomes       | Hard Test Outcomes         |
+| [Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll)       | Easy [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes         | Medium [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes       | Hard [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes         |
 |------------------|----------------------------|----------------------------|----------------------------|
 | ≤11              | Success with a consequence | Failure                    | Failure with a consequence |
 | 12-16            | Success                    | Success with a consequence | Failure                    |
 | 17+              | Success with a reward      | Success                    | Success                    |
 | Natural 19 or 20 | Success with a reward      | Success with a reward      | Success with a reward      |
 
-Whenever the rules talk about obtaining a success on a test, that includes a straight success, a success with a consequence, or a success with a reward. Whenever the rules talk about a failure on a test, that includes a straight failure or a failure with a consequence.
+Whenever the rules talk about obtaining a success on a [test](scc:mcdm.heroes.v1/rule.test/test), that includes a straight success, a success with a consequence, or a success with a reward. Whenever the rules talk about a failure on a [test](scc:mcdm.heroes.v1/rule.test/test), that includes a straight failure or a failure with a consequence.
 
-Whenever you make a test whose outcome you don't like, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll the test. You must use the new roll.
+Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) whose outcome you don't like, you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll the [test](scc:mcdm.heroes.v1/rule.test/test). You must use the new roll.
 
 ##### Easy Tests
 
-An easy test has some risk of consequence, but most heroes will likely overcome it. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for an easy test determines the outcome (see Test Outcomes below):
+An easy [test](scc:mcdm.heroes.v1/rule.test/test) has some risk of consequence, but most heroes will likely overcome it. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for an easy [test](scc:mcdm.heroes.v1/rule.test/test) determines the outcome (see [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes below):
 
 - **≤11:** You succeed on the task and incur a consequence.
 - **12-16:** You succeed on the task.
@@ -20482,7 +20482,7 @@ An easy test has some risk of consequence, but most heroes will likely overcome 
 
 ##### Medium Tests
 
-A medium test has some risk of failure that most heroes will likely overcome—but with a cost. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for a medium test determines the outcome:
+A medium [test](scc:mcdm.heroes.v1/rule.test/test) has some risk of failure that most heroes will likely overcome—but with a cost. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for a medium [test](scc:mcdm.heroes.v1/rule.test/test) determines the outcome:
 
 - **≤11:** You fail the task.
 - **12-16:** You succeed on the task and incur a consequence.
@@ -20490,7 +20490,7 @@ A medium test has some risk of failure that most heroes will likely overcome—b
 
 ##### Hard Tests
 
-A hard test has a greater risk of failure, and most heroes are likely to suffer some hardship while trying to overcome the intended task. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for a hard test determines the outcome:
+A hard [test](scc:mcdm.heroes.v1/rule.test/test) has a greater risk of failure, and most heroes are likely to suffer some hardship while trying to overcome the intended task. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make for a hard [test](scc:mcdm.heroes.v1/rule.test/test) determines the outcome:
 
 - **≤11:** You fail the task and incur a consequence.
 - **12-16:** You fail the task.
@@ -20499,21 +20499,21 @@ A hard test has a greater risk of failure, and most heroes are likely to suffer 
 <!-- @type: rule | @group: dice | @id: natural-19-20 -->
 ##### Natural 19 or 20: Success With a Reward
 
-Whenever you get a natural 19 or 20 on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for a test—a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers you score a critical success. This critical success automatically lets you succeed on the task with a reward, even if the test has a medium or hard difficulty.
+Whenever you get a natural 19 or 20 on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for a [test](scc:mcdm.heroes.v1/rule.test/test)—a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers you score a critical success. This critical success automatically lets you succeed on the task with a reward, even if the [test](scc:mcdm.heroes.v1/rule.test/test) has a medium or hard difficulty.
 
 #### Test Outcomes
 
-Depending on a test's difficulty and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made to accomplish the task represented by the test, you can obtain one of the following outcomes.
+Depending on a [test](scc:mcdm.heroes.v1/rule.test/test)'s difficulty and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made to accomplish the task represented by the [test](scc:mcdm.heroes.v1/rule.test/test), you can obtain one of the following outcomes.
 
 ##### Failure With a Consequence
 
-If you fail a hard test and incur a consequence, you don't do what you set out to do—in addition to which, you suffer an impactful setback. The Director determines the exact nature of the consequence, which is typically related to the specific task.
+If you fail a hard [test](scc:mcdm.heroes.v1/rule.test/test) and incur a consequence, you don't do what you set out to do—in addition to which, you suffer an impactful setback. The Director determines the exact nature of the consequence, which is typically related to the specific task.
 
-For instance, if a hero suffers a consequence while trying to climb a wall, they might make it halfway up the wall and then fall, taking damage and landing [prone](scc:mcdm.heroes.v1/condition/prone). A hero trying to sneak by cultists might be spotted by those foes, who immediately attack. If a consequence strikes when a hero attempts to bribe a prison guard, the guard might decide to arrest the hero or lead them into a trap. If a hero suffers a consequence on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test made to recall lore about the king's favorite meal, they might confuse it for a dish to which the monarch is deathly allergic.
+For instance, if a hero suffers a consequence while trying to climb a wall, they might make it halfway up the wall and then fall, taking damage and landing [prone](scc:mcdm.heroes.v1/condition/prone). A hero trying to sneak by cultists might be spotted by those foes, who immediately attack. If a consequence strikes when a hero attempts to bribe a prison guard, the guard might decide to arrest the hero or lead them into a trap. If a hero suffers a consequence on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) made to recall lore about the king's favorite meal, they might confuse it for a dish to which the monarch is deathly allergic.
 
-Not all consequences need to be immediate or apparent. For example, a hero might fail with a consequence on a test made to cheat at a high-stakes game of cards with a noble. The failure means the cheating is noticed, but the Director decides that the noble doesn't say anything. This consequence isn't made apparent until later in the evening, when the noble has guards surround the hero, intent on taking the cheater down to the dungeon for stacking the deck.
+Not all consequences need to be immediate or apparent. For example, a hero might fail with a consequence on a [test](scc:mcdm.heroes.v1/rule.test/test) made to cheat at a high-stakes game of cards with a noble. The failure means the cheating is noticed, but the Director decides that the noble doesn't say anything. This consequence isn't made apparent until later in the evening, when the noble has guards surround the hero, intent on taking the cheater down to the dungeon for stacking the deck.
 
-Common consequences for failing a test include the following:
+Common consequences for failing a [test](scc:mcdm.heroes.v1/rule.test/test) include the following:
 
 - Making an NPC so upset that they storm off, or betray, attack, or otherwise attempt to harm you
 - Drawing the attention of a group of foes
@@ -20526,154 +20526,154 @@ In lieu of other consequences, the Director also has the option to gain 2 additi
 
 ##### Failure
 
-If you fail a test without incurring a consequence, you simply don't do what you set out to do. A hero attempting to climb a wall finds no purchase. A hero trying to recall lore can't remember the desired facts. If a hero attempts to bribe a guard, they don't take the bait.
+If you fail a [test](scc:mcdm.heroes.v1/rule.test/test) without incurring a consequence, you simply don't do what you set out to do. A hero attempting to climb a wall finds no purchase. A hero trying to recall lore can't remember the desired facts. If a hero attempts to bribe a guard, they don't take the bait.
 
-On a failed test, the Director can decide that there might still be a small penalty for failure, depending on the circumstances of the test. This penalty shouldn't be as harsh as rolling a failure with a consequence, though. For instance, a hero who gets this outcome on an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test made to sneak by a group of cultists might draw the attention of one cultist with their failure. Now that cultist is coming to investigate, but they haven't raised the alarm... yet.
+On a failed [test](scc:mcdm.heroes.v1/rule.test/test), the Director can decide that there might still be a small penalty for failure, depending on the circumstances of the [test](scc:mcdm.heroes.v1/rule.test/test). This penalty shouldn't be as harsh as rolling a failure with a consequence, though. For instance, a hero who gets this outcome on an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) made to sneak by a group of cultists might draw the attention of one cultist with their failure. Now that cultist is coming to investigate, but they haven't raised the alarm... yet.
 
-When a hero rolls a failure without a consequence, the Director can offer to let them succeed with a consequence instead. For instance, when a hero rolls a 10 on a medium [Might](scc:mcdm.heroes.v1/rule.character/might) test to break down a locked door, that's a failure and the door stays closed. But the Director could suggest to the player that instead of not breaking down the door, they can break down the door and lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) from being injured in the effort.
+When a hero rolls a failure without a consequence, the Director can offer to let them succeed with a consequence instead. For instance, when a hero rolls a 10 on a medium [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to break down a locked door, that's a failure and the door stays closed. But the Director could suggest to the player that instead of not breaking down the door, they can break down the door and lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) from being injured in the effort.
 
 ##### Success With a Consequence
 
-If you succeed on a test and incur a consequence, you do what you set out to do, but with an added cost. A hero might succeed in climbing up a wall, but the surface of the wall crumbles and becomes unstable as they do, making the climb more difficult for the ally ascending after them. When trying to sneak by a cultist, a hero successfully does so, but leaves footprints or other evidence of trespassing behind. If a hero bribes a guard to be allowed to sneak into a prison, the guard lets them in—but then demands a gemstone the hero needs for an important crafting project before they let the hero out.
+If you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) and incur a consequence, you do what you set out to do, but with an added cost. A hero might succeed in climbing up a wall, but the surface of the wall crumbles and becomes unstable as they do, making the climb more difficult for the ally ascending after them. When trying to sneak by a cultist, a hero successfully does so, but leaves footprints or other evidence of trespassing behind. If a hero bribes a guard to be allowed to sneak into a prison, the guard lets them in—but then demands a gemstone the hero needs for an important crafting project before they let the hero out.
 
 Just like failure with a consequence, the consequences accompanying success don't need to be immediately apparent. In lieu of other consequences, the Director has the option to gain 2 additional Malice at the start of the next combat encounter.
 
-When a hero rolls a success with a consequence, the Director might give them a chance to fail instead. For instance, when a hero rolls a 10 on an easy [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick the lock on a chest, that's a success with a consequence. The Director could suggest that the character has opened the lock but broken their lockpicks in the process (knowing the picks can't be replaced until the hero returns to town), but can also give them the option of failing to pick the lock but keeping their lockpicks intact.
+When a hero rolls a success with a consequence, the Director might give them a chance to fail instead. For instance, when a hero rolls a 10 on an easy [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to pick the lock on a chest, that's a success with a consequence. The Director could suggest that the character has opened the lock but broken their lockpicks in the process (knowing the picks can't be replaced until the hero returns to town), but can also give them the option of failing to pick the lock but keeping their lockpicks intact.
 
 ##### Success
 
-If you succeed on a test without consequence or reward, you simply achieve whatever you set out to do. A hero climbs that wall, sneaks by those cultists, or bribes that guard just as they planned. Smooth.
+If you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) without consequence or reward, you simply achieve whatever you set out to do. A hero climbs that wall, sneaks by those cultists, or bribes that guard just as they planned. Smooth.
 
 ##### Success With a Reward
 
-If you succeed on a test with a reward, you accomplish whatever you set out to do. But you also gain a little something extra, in the form of momentum or luck that makes the immediate future easier for you or your friends.
+If you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) with a reward, you accomplish whatever you set out to do. But you also gain a little something extra, in the form of momentum or luck that makes the immediate future easier for you or your friends.
 
-The Director determines the reward for a success, which is most often related to the task at hand. For instance, if a hero succeeds with a reward while climbing a wall, they might find a ladder at the top they can lower so that any allies climbing up after them can do so without needing to make a test. A hero trying to sneak by cultists who succeeds with a reward might be able to dose the cultists' nearby water barrel with sleeping poison as they pass by unseen. Succeeding with a reward while bribing a prison guard could mean that the guard unlocks a door for the hero in addition to forgetting they were ever there.
+The Director determines the reward for a success, which is most often related to the task at hand. For instance, if a hero succeeds with a reward while climbing a wall, they might find a ladder at the top they can lower so that any allies climbing up after them can do so without needing to make a [test](scc:mcdm.heroes.v1/rule.test/test). A hero trying to sneak by cultists who succeeds with a reward might be able to dose the cultists' nearby water barrel with sleeping poison as they pass by unseen. Succeeding with a reward while bribing a prison guard could mean that the guard unlocks a door for the hero in addition to forgetting they were ever there.
 
-As with consequences, the reward that comes with a success doesn't need to be immediate or apparent. For example, a hero succeeds with a reward on an easy test made to cheat at a high-stakes game of cards with a noble. Not only does the hero win the game, but the Director decides that their reward comes from a servant watching the game who's impressed with the character's performance. After the game, the servant approaches the hero, offering magic from the noble's private stash in congratulations and admiration.
+As with consequences, the reward that comes with a success doesn't need to be immediate or apparent. For example, a hero succeeds with a reward on an easy [test](scc:mcdm.heroes.v1/rule.test/test) made to cheat at a high-stakes game of cards with a noble. Not only does the hero win the game, but the Director decides that their reward comes from a servant watching the game who's impressed with the character's performance. After the game, the servant approaches the hero, offering magic from the noble's private stash in congratulations and admiration.
 
-Common rewards accompanying success on a test include the following:
+Common rewards accompanying success on a [test](scc:mcdm.heroes.v1/rule.test/test) include the following:
 
-- Automatically accomplishing a related follow-up task that would typically require a test
-- Allowing an ally engaged in the same task to accomplish the task without needing to make the test as well
+- Automatically accomplishing a related follow-up task that would typically require a [test](scc:mcdm.heroes.v1/rule.test/test)
+- Allowing an ally engaged in the same task to accomplish the task without needing to make the [test](scc:mcdm.heroes.v1/rule.test/test) as well
 - Obtaining a consumable treasure or useful piece of mundane equipment
 - Learning a piece of helpful information
 - Impressing or ingratiating yourself with someone who grants you a small favor
 - Noticing a hidden danger well before it strikes, giving you time to avoid or prepare for it
 
-In lieu of other rewards, the Director can also decide that a hero who succeeds on a test with a reward earns the players a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) (see [Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
+In lieu of other rewards, the Director can also decide that a hero who succeeds on a [test](scc:mcdm.heroes.v1/rule.test/test) with a reward earns the players a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) (see [Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)).
 
 > **Optional Rule: Pitching Consequences and Rewards**
 >
-> Coming up with consequences and rewards for tests can be a big part of the fun for many Directors, but even the best Directors occasionally run low on ideas. That's why the game gives the default option of consequences and rewards in the form of Malice and [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, a Director who prefers narrative consequences and rewards can ask the players to pitch different consequences and rewards when they make a test. The Director can reject, add to, or modify the players' ideas as they choose, and will remind the players that they need to pitch real consequences, and not minor rewards disguised as consequences.
+> Coming up with consequences and rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) can be a big part of the fun for many Directors, but even the best Directors occasionally run low on ideas. That's why the game gives the default option of consequences and rewards in the form of Malice and [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, a Director who prefers narrative consequences and rewards can ask the players to pitch different consequences and rewards when they make a [test](scc:mcdm.heroes.v1/rule.test/test). The Director can reject, add to, or modify the players' ideas as they choose, and will remind the players that they need to pitch real consequences, and not minor rewards disguised as consequences.
 
 #### How Long Does It Take?
 
-The amount of time required for a task involving a test is determined by the Director. A task such as recalling lore with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test might take no time at all. Ducking behind a barrel to hide with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test might require a maneuver or a main action, while tracking a band of voiceless talkers through the World Below could take hours or even days.
+The amount of time required for a task involving a [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the Director. A task such as recalling lore with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) might take no time at all. Ducking behind a barrel to hide with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) might require a maneuver or a main action, while tracking a band of voiceless talkers through the World Below could take hours or even days.
 
 ##### Tests During Combat
 
-Many (but not all) tests that a hero might make during combat are made as maneuvers. See Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) for more information.
+Many (but not all) [tests](scc:mcdm.heroes.v1/rule.test/test) that a hero might make during combat are made as maneuvers. See Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) for more information.
 
 #### Can I Try Again?
 
-In many cases when you fail a test, you can't attempt the test again unless the circumstances of the test change. For instance, if you attempt an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick a lock and fail, you can't attempt to pick the lock again unless you get better lockpicks, oil the lock, have someone demonstrate how to pick a similar lock, and so on.
+In many cases when you fail a [test](scc:mcdm.heroes.v1/rule.test/test), you can't attempt the [test](scc:mcdm.heroes.v1/rule.test/test) again unless the circumstances of the [test](scc:mcdm.heroes.v1/rule.test/test) change. For instance, if you attempt an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to pick a lock and fail, you can't attempt to pick the lock again unless you get better lockpicks, oil the lock, have someone demonstrate how to pick a similar lock, and so on.
 
-The Director decides when the circumstances have changed enough to allow a new attempt at a test.
+The Director decides when the circumstances have changed enough to allow a new attempt at a [test](scc:mcdm.heroes.v1/rule.test/test).
 
 ### Heroes Make Tests
 
-If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to sneak, or should the guard make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to conceal the truth, or does the hero roll an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to discern the cultist's honesty?
+If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to sneak, or should the guard make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to conceal the truth, or does the hero roll an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to discern the cultist's honesty?
 
-Except in certain scenarios (explored at NPCs Roll for Deceptive Tasks and [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make tests and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of tests have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC retainer or companion, that NPC will almost certainly make tests from time to time. But for the most part, NPCs and other creatures never need to make tests when what they do opposes what the heroes do.
+Except in certain scenarios (explored at NPCs Roll for Deceptive Tasks and [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make [tests](scc:mcdm.heroes.v1/rule.test/test) and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of [tests](scc:mcdm.heroes.v1/rule.test/test) have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC retainer or companion, that NPC will almost certainly make [tests](scc:mcdm.heroes.v1/rule.test/test) from time to time. But for the most part, NPCs and other creatures never need to make [tests](scc:mcdm.heroes.v1/rule.test/test) when what they do opposes what the heroes do.
 
-To quickly assess the difficulty of a task opposed by one or more creatures and the test made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
+To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
 
-- **Easy Test:** A test is easy if only one creature opposes the hero, and that opposed creature would have a lower bonus to their test roll for the task than the hero does. If a hero with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 2 attempts to sneak by a guard with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 0, the test is easy.
-- **Moderate Test:** A test is moderate if multiple creatures oppose the hero and those creatures would have lower bonuses to their test rolls than the hero, or if only one creature opposes the hero and has the same test bonus as the hero.
-- **Hard Test:** A test is hard if an opposed creature would have a higher bonus to their test roll than the hero, or if multiple creatures with the same test bonus as the hero oppose the hero.
+- **Easy [Test](scc:mcdm.heroes.v1/rule.test/test):** A [test](scc:mcdm.heroes.v1/rule.test/test) is easy if only one creature opposes the hero, and that opposed creature would have a lower bonus to their [test](scc:mcdm.heroes.v1/rule.test/test) roll for the task than the hero does. If a hero with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 2 attempts to sneak by a guard with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 0, the [test](scc:mcdm.heroes.v1/rule.test/test) is easy.
+- **Moderate [Test](scc:mcdm.heroes.v1/rule.test/test):** A [test](scc:mcdm.heroes.v1/rule.test/test) is moderate if multiple creatures oppose the hero and those creatures would have lower bonuses to their [test](scc:mcdm.heroes.v1/rule.test/test) rolls than the hero, or if only one creature opposes the hero and has the same [test](scc:mcdm.heroes.v1/rule.test/test) bonus as the hero.
+- **Hard [Test](scc:mcdm.heroes.v1/rule.test/test):** A [test](scc:mcdm.heroes.v1/rule.test/test) is hard if an opposed creature would have a higher bonus to their [test](scc:mcdm.heroes.v1/rule.test/test) roll than the hero, or if multiple creatures with the same [test](scc:mcdm.heroes.v1/rule.test/test) bonus as the hero oppose the hero.
 
 The failure consequences of opposed tasks are some of the easiest to create on the fly. Fail to hide from someone, and they notice you. Fail to lie to someone, and they catch your duplicity. Fail to arm wrestle someone for a free ale, and you're picking up the tab. The consequence is that the opposition bests the hero.
 
 #### NPCs Roll for Deceptive Tasks
 
-At times, the Director might choose for an NPC to make a test when engaged in a deceptive task, rather than having characters attempt to note the deception. By having the NPC roll in these scenarios, the Director doesn't tip their hand to the players that subterfuge is afoot.
+At times, the Director might choose for an NPC to make a [test](scc:mcdm.heroes.v1/rule.test/test) when engaged in a deceptive task, rather than having characters attempt to note the deception. By having the NPC roll in these scenarios, the Director doesn't tip their hand to the players that subterfuge is afoot.
 
-For example, when an assassin attempts to ambush the heroes while they sit around a campfire, if any player says their hero is on the lookout for danger, that hero would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice the danger. But if no one is keeping watch, the assassin makes an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to sneak up on the heroes unnoticed. If the assassin fails the test, the heroes notice immediately as their assailant loudly steps on a twig. If the assassin succeeds, the heroes don't notice until the assailant is right on top of them.
+For example, when an assassin attempts to ambush the heroes while they sit around a campfire, if any player says their hero is on the lookout for danger, that hero would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice the danger. But if no one is keeping watch, the assassin makes an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to sneak up on the heroes unnoticed. If the assassin fails the [test](scc:mcdm.heroes.v1/rule.test/test), the heroes notice immediately as their assailant loudly steps on a twig. If the assassin succeeds, the heroes don't notice until the assailant is right on top of them.
 
-An NPC might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a test to discern the NPC's honesty.
+An NPC might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a [test](scc:mcdm.heroes.v1/rule.test/test) to discern the NPC's honesty.
 
 As an optional rule, the Director is also free to ask the heroes to make a [reactive test](scc:mcdm.heroes.v1/rule.test/reactive-test) to a deceptive NPC instead (see [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) below) whenever they choose.
 
 <!-- @type: rule | @group: dice | @id: opposed-power-roll -->
 #### Opposed Power Rolls
 
-When two creatures are engaged in a particularly dramatic struggle that requires them both to make tests, the Director can have all the creatures involved make a test. The creature with the highest [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) wins. You can't earn a reward as part of these opposed [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and they don't follow the typical difficulty structure or have three different tiers of possible outcomes.
+When two creatures are engaged in a particularly dramatic struggle that requires them both to make [tests](scc:mcdm.heroes.v1/rule.test/test), the Director can have all the creatures involved make a [test](scc:mcdm.heroes.v1/rule.test/test). The creature with the highest [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) wins. You can't earn a reward as part of these opposed [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and they don't follow the typical difficulty structure or have three different tiers of possible outcomes.
 
-For example, if your hero attempts to sneak by a demon lord, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to move stealthily while the demon makes an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice you. If your hero gets the higher [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you sneak by without the demon noticing. If the demon gets the higher roll, they catch you in the act of sneaking. If multiple sneaking heroes attempt to get by multiple demons, then each creature makes a test and all the totals are compared to determine which demons notice which heroes.
+For example, if your hero attempts to sneak by a demon lord, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to move stealthily while the demon makes an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice you. If your hero gets the higher [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you sneak by without the demon noticing. If the demon gets the higher roll, they catch you in the act of sneaking. If multiple sneaking heroes attempt to get by multiple demons, then each creature makes a [test](scc:mcdm.heroes.v1/rule.test/test) and all the totals are compared to determine which demons notice which heroes.
 
-In the event of a tie in an opposed test, the state of the scene doesn't change. In the previous example, a tie means that if a demon on guard duty didn't know a sneaking hero was there, the demon remains oblivious. If the demon did know the hero was out there somewhere while trying to avoid being noticed, a tie means the demon still knows the hero is there but hasn't determined their location.
+In the event of a tie in an opposed [test](scc:mcdm.heroes.v1/rule.test/test), the state of the scene doesn't change. In the previous example, a tie means that if a demon on guard duty didn't know a sneaking hero was there, the demon remains oblivious. If the demon did know the hero was out there somewhere while trying to avoid being noticed, a tie means the demon still knows the hero is there but hasn't determined their location.
 
 Since opposed [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) don't use tiers, when you make an opposed [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) provides a +4 bonus to the roll, a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) provides a -4 penalty to the roll, an automatic tier increase counts as a +4 bonus to the roll, and an automatic tier decrease counts as a -4 penalty to the roll.
 
 <!-- @type: rule | @group: test | @id: reactive-test -->
 ### Reactive Tests
 
-At certain times when a hero isn't engaged in overcoming a task, the Director might ask the player of the hero to make a test without context, explaining the test only after the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is made. This often happens when a hero has a chance of knowing or noticing something of significance that the player doesn't know to look for or ask about.
+At certain times when a hero isn't engaged in overcoming a task, the Director might ask the player of the hero to make a [test](scc:mcdm.heroes.v1/rule.test/test) without context, explaining the [test](scc:mcdm.heroes.v1/rule.test/test) only after the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is made. This often happens when a hero has a chance of knowing or noticing something of significance that the player doesn't know to look for or ask about.
 
-Reactive tests are typically made in the following circumstances, though the Director can call for them in any appropriate scenario:
+Reactive [tests](scc:mcdm.heroes.v1/rule.test/test) are typically made in the following circumstances, though the Director can call for them in any appropriate scenario:
 
-**Hidden Environmental Features:** The Director asks for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice a secret door, a hidden trap, or some other disguised environmental feature.
+**Hidden Environmental Features:** The Director asks for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice a secret door, a hidden trap, or some other disguised environmental feature.
 
-- **Hidden Foes:** The Director calls for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice a hidden foe (or they could use the rules in NPCs Roll for Deceptive Tasks above).
-- **Hidden Motives:** The Director can ask for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in NPCs Roll for Deceptive Tasks.)
-- **Recall Lore:** The Director might ask a hero to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
-- **Creature and DTO Tests:** Some creatures and dynamic terrain objects in *Draw Steel: Monsters* have features and abilities that require heroes to make reactive tests. These tests can't be modified by skills.
+- **Hidden Foes:** The Director calls for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice a hidden foe (or they could use the rules in NPCs Roll for Deceptive Tasks above).
+- **Hidden Motives:** The Director can ask for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in NPCs Roll for Deceptive Tasks.)
+- **Recall Lore:** The Director might ask a hero to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
+- **Creature and DTO [Tests](scc:mcdm.heroes.v1/rule.test/test):** Some creatures and dynamic terrain objects in *Draw Steel: Monsters* have features and abilities that require heroes to make reactive [tests](scc:mcdm.heroes.v1/rule.test/test). These [tests](scc:mcdm.heroes.v1/rule.test/test) can't be modified by skills.
 
-> **Optional Rule: Secret Reactive Tests**
+> **Optional Rule: Secret Reactive [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
-> Some Directors prefer to make the [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) for reactive tests for the heroes rather than asking the players to do so. This allows the Director to make the rolls when appropriate for hidden objects, creatures, motivations, and information without tipping off the players that there is information to be gained. Having the Director roll requires the Director to have everyone's [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills recorded (whether physically or digitally) for easy reference.
+> Some Directors prefer to make the [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) for reactive [tests](scc:mcdm.heroes.v1/rule.test/test) for the heroes rather than asking the players to do so. This allows the Director to make the rolls when appropriate for hidden objects, creatures, motivations, and information without tipping off the players that there is information to be gained. Having the Director roll requires the Director to have everyone's [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills recorded (whether physically or digitally) for easy reference.
 
 <!-- @type: chapter | @id: skills -->
 ### Skills
 
-Skills represent the different specializations a hero has outside of attacking, defending, and using their ancestry features, class features, and equipment. Whenever you make a test, having a particular skill associated with the test increases your chance of success.
+Skills represent the different specializations a hero has outside of attacking, defending, and using their ancestry features, class features, and equipment. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test), having a particular skill associated with the [test](scc:mcdm.heroes.v1/rule.test/test) increases your chance of success.
 
 #### Applying Skills
 
-If you have a skill that applies to a test you make, you gain a +2 bonus to the test. For instance, if your hero has the [Hide](scc:mcdm.heroes.v1/skill/hide) skill, you have a +2 bonus to any test you make that involves hiding yourself. This might include an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to hide behind a barrel, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to disappear into a crowd.
+If you have a skill that applies to a [test](scc:mcdm.heroes.v1/rule.test/test) you make, you gain a +2 bonus to the [test](scc:mcdm.heroes.v1/rule.test/test). For instance, if your hero has the [Hide](scc:mcdm.heroes.v1/skill/hide) skill, you have a +2 bonus to any [test](scc:mcdm.heroes.v1/rule.test/test) you make that involves hiding yourself. This might include an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to hide behind a barrel, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to disappear into a crowd.
 
-The +2 bonus gained for a skill isn't an [edge](scc:mcdm.heroes.v1/rule.dice/edge). A player can make a test that has both the +2 bonus for a skill and the +2 bonus for an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+The +2 bonus gained for a skill isn't an [edge](scc:mcdm.heroes.v1/rule.dice/edge). A player can make a [test](scc:mcdm.heroes.v1/rule.test/test) that has both the +2 bonus for a skill and the +2 bonus for an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
-You can't apply more than one skill to a test.
+You can't apply more than one skill to a [test](scc:mcdm.heroes.v1/rule.test/test).
 
 ##### Justify the Skill
 
-It's not the Director's job to know every task potentially covered by the skills in the game, or to know the specific skills your hero has. Instead, the Director asks you to make a test using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) and you tell the Director if you think you have a skill that applies. If it's not obvious why the skill applies, tell the Director how your hero is approaching the task and justify why that approach uses the skill. The Director then decides if you get the +2 bonus the skill represents. If the Director disagrees with you, that's the final word.
+It's not the Director's job to know every task potentially covered by the skills in the game, or to know the specific skills your hero has. Instead, the Director asks you to make a [test](scc:mcdm.heroes.v1/rule.test/test) using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) and you tell the Director if you think you have a skill that applies. If it's not obvious why the skill applies, tell the Director how your hero is approaching the task and justify why that approach uses the skill. The Director then decides if you get the +2 bonus the skill represents. If the Director disagrees with you, that's the final word.
 
-Approaching problems creatively while remaining reasonable can help you get the most out of your skills. For example, if you're making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to impress a noble at a party, using the [Brag](scc:mcdm.heroes.v1/skill/brag) skill is an obvious choice. But what if you don't have that skill? Maybe you could instead try to impress the noble with a brief but exciting lecture about the nature of the elements, making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Magic](scc:mcdm.heroes.v1/skill/magic) skill that you do have!
+Approaching problems creatively while remaining reasonable can help you get the most out of your skills. For example, if you're making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to impress a noble at a party, using the [Brag](scc:mcdm.heroes.v1/skill/brag) skill is an obvious choice. But what if you don't have that skill? Maybe you could instead try to impress the noble with a brief but exciting lecture about the nature of the elements, making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Magic](scc:mcdm.heroes.v1/skill/magic) skill that you do have!
 
-Sometimes you won't have a skill that applies to a test. That's okay! If your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score is decent, you likely have a good chance of success without a skill.
+Sometimes you won't have a skill that applies to a [test](scc:mcdm.heroes.v1/rule.test/test). That's okay! If your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score is decent, you likely have a good chance of success without a skill.
 
 ##### Mixing Characteristics and Skills
 
-Although certain skills are often paired with one [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) more than others, a skill can apply to a test made using any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that makes sense. The Director has the final say on which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is used to complete a task, and can call for a different [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) based on the circumstances.
+Although certain skills are often paired with one [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) more than others, a skill can apply to a [test](scc:mcdm.heroes.v1/rule.test/test) made using any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that makes sense. The Director has the final say on which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is used to complete a task, and can call for a different [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) based on the circumstances.
 
-For example, intimidating someone with a purely verbal threat is a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. But if a player describes their character tearing a log in half with their bare hands to intimidate a foe, the Director is likely to call for a [Might](scc:mcdm.heroes.v1/rule.character/might) test instead. The [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill can apply to both tests. In the same way, scaling the side of a building is covered by a [Might](scc:mcdm.heroes.v1/rule.character/might) test, but if a hero does a series of leaps from one balcony to another to reach a roof, the Director could call for an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test instead. The [Climb](scc:mcdm.heroes.v1/skill/climb) skill applies to both of these tests.
+For example, intimidating someone with a purely verbal threat is a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). But if a player describes their character tearing a log in half with their bare hands to intimidate a foe, the Director is likely to call for a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) instead. The [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill can apply to both [tests](scc:mcdm.heroes.v1/rule.test/test). In the same way, scaling the side of a building is covered by a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test), but if a hero does a series of leaps from one balcony to another to reach a roof, the Director could call for an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) instead. The [Climb](scc:mcdm.heroes.v1/skill/climb) skill applies to both of these [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 #### Many Specific Skills
 
 *Draw Steel* includes a big list of skills, and each is fairly specific. For example, instead of one Athletics skill that covers climbing, jumping, swimming, and lifting heavy objects, your character might use separate [Climb](scc:mcdm.heroes.v1/skill/climb), [Jump](scc:mcdm.heroes.v1/skill/jump), [Lift](scc:mcdm.heroes.v1/skill/lift), and [Swim](scc:mcdm.heroes.v1/skill/swim) skills. Instead of a Thievery skill that covers picking locks, picking pockets, and disabling traps, the game has three skills: [Pick Lock](scc:mcdm.heroes.v1/skill/pick-lock), [Pick Pocket](scc:mcdm.heroes.v1/skill/pick-pocket), and [Sabotage](scc:mcdm.heroes.v1/skill/sabotage).
 
-Having a wide range of specific skills means you'll frequently make tests that don't use one of your character's skills, simply applying a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). By not having a few broader skills, it means that having a character who covers the spread of every skill is actually impossible. Luckily, the math of the game doesn't require you to have a skill to have a decent chance of success on a test. That means heroes can attempt tasks without the help of a skill just because someone needs to do it, and that's pretty darn heroic!
+Having a wide range of specific skills means you'll frequently make [tests](scc:mcdm.heroes.v1/rule.test/test) that don't use one of your character's skills, simply applying a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). By not having a few broader skills, it means that having a character who covers the spread of every skill is actually impossible. Luckily, the math of the game doesn't require you to have a skill to have a decent chance of success on a [test](scc:mcdm.heroes.v1/rule.test/test). That means heroes can attempt tasks without the help of a skill just because someone needs to do it, and that's pretty darn heroic!
 
 Since you don't need to worry about your character covering a wide spread of skills, you're free to choose the skills you think fit your hero best and are the most fun to work with. Maybe you're thinking about an [elementalist](scc:mcdm.heroes.v1/class/elementalist) who has a gymnastic background in jumping and tumbling, and who also studied religion and blacksmithing. Having that kind of specific backstory is a big part of cinematic storytelling.
 
-The rules for skills allow for them to be flexibly applied to any test that is appropriate for the skill. This encourages clever thinking. A player can ask the Director, "I want to impress the duke with a story about how I ascended the sheer Cliffs of Azgahnan. Can I use my [Climb](scc:mcdm.heroes.v1/skill/climb) skill for a +2 bonus to my [Presence](scc:mcdm.heroes.v1/rule.character/presence) test?" Getting creative like that is a lot of fun. It paints a visual picture, and it's good tactical thinking! However, if the skills in a game are too broad in the kinds of activities they represent, players inevitably end up applying the same skill over and over again to as many tests as possible. This isn't fun for anyone, and doesn't make a very compelling story.
+The rules for skills allow for them to be flexibly applied to any [test](scc:mcdm.heroes.v1/rule.test/test) that is appropriate for the skill. This encourages clever thinking. A player can ask the Director, "I want to impress the duke with a story about how I ascended the sheer Cliffs of Azgahnan. Can I use my [Climb](scc:mcdm.heroes.v1/skill/climb) skill for a +2 bonus to my [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test)?" Getting creative like that is a lot of fun. It paints a visual picture, and it's good tactical thinking! However, if the skills in a game are too broad in the kinds of activities they represent, players inevitably end up applying the same skill over and over again to as many [tests](scc:mcdm.heroes.v1/rule.test/test) as possible. This isn't fun for anyone, and doesn't make a very compelling story.
 
-> **[Edges](scc:mcdm.heroes.v1/rule.dice/edge) on Tests With Specific Skills**
+> **[Edges](scc:mcdm.heroes.v1/rule.dice/edge) on [Tests](scc:mcdm.heroes.v1/rule.test/test) With Specific Skills**
 >
-> Certain features and abilities grant a creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made with a specific skill. A creature making a test where the specific skill would apply gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test even if they don't have the skill. For example, the [conduit's](scc:mcdm.heroes.v1/class/conduit) Blessing of Fortunate Weather can create foggy weather that grants creatures who make tests using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on those tests. Any creature who attempts to hide in the fog gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test as long as the [Hide](scc:mcdm.heroes.v1/skill/hide) skill would apply to that test, regardless of whether they have that skill or not.
+> Certain features and abilities grant a creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made with a specific skill. A creature making a [test](scc:mcdm.heroes.v1/rule.test/test) where the specific skill would apply gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test) even if they don't have the skill. For example, the [conduit's](scc:mcdm.heroes.v1/class/conduit) Blessing of Fortunate Weather can create foggy weather that grants creatures who make [tests](scc:mcdm.heroes.v1/rule.test/test) using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on those [tests](scc:mcdm.heroes.v1/rule.test/test). Any creature who attempts to hide in the fog gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test) as long as the [Hide](scc:mcdm.heroes.v1/skill/hide) skill would apply to that [test](scc:mcdm.heroes.v1/rule.test/test), regardless of whether they have that skill or not.
 
 > **Are All Skills Equal?**
 >
@@ -20687,9 +20687,9 @@ Skills are broken down into five skill groups: crafting, exploration, interperso
 
 Skills from the crafting skill group are used in the creation and appraisal of goods and for jury-rigging contraptions. They are especially useful during rests and downtime.
 
-Rewards for tests made with crafting skills typically include having leftover rare material used in the creation process, knowing a buyer willing to pay extra for goods or items you're appraising, or making a jury-rigged device so amazing that it lasts for more uses than it should.
+Rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) made with crafting skills typically include having leftover rare material used in the creation process, knowing a buyer willing to pay extra for goods or items you're appraising, or making a jury-rigged device so amazing that it lasts for more uses than it should.
 
-Consequences for tests made with crafting skills typically include wasting rare materials used in the creation process, greatly overestimating or underestimating an item's value, and poorly jury-rigging a contraption so that it harms people (or at least the wrong people).
+Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with crafting skills typically include wasting rare materials used in the creation process, greatly overestimating or underestimating an item's value, and poorly jury-rigging a contraption so that it harms people (or at least the wrong people).
 
 ###### Crafting Skills Table
 
@@ -20760,9 +20760,9 @@ Craft clothing of cloth or leather.
 
 Skills from the exploration skill group are used to physically explore the environment around the characters, and to overcome physical obstacles.
 
-Rewards for tests made with exploration skills typically include helping another creature engaging in the same task succeed without needing to also make a test, automatically succeeding on a follow-up test while engaged in the same task, reaching a destination faster than anticipated, and learning about or avoiding an upcoming hazard.
+Rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) made with exploration skills typically include helping another creature engaging in the same task succeed without needing to also make a [test](scc:mcdm.heroes.v1/rule.test/test), automatically succeeding on a follow-up [test](scc:mcdm.heroes.v1/rule.test/test) while engaged in the same task, reaching a destination faster than anticipated, and learning about or avoiding an upcoming hazard.
 
-Consequences for tests made with exploration skills include harming yourself, your gear, or your allies; becoming lost; or stumbling headlong into a hazard or a place you were trying to avoid.
+Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with exploration skills include harming yourself, your gear, or your allies; becoming lost; or stumbling headlong into a hazard or a place you were trying to avoid.
 
 ###### Exploration Skills Table
 
@@ -20833,9 +20833,9 @@ Move through deep liquid.
 
 Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)). Aside from the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
 
-Rewards for tests made with interpersonal skills typically include gaining an extra favor, item, or piece of information from the people or creatures you interact with.
+Rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) made with interpersonal skills typically include gaining an extra favor, item, or piece of information from the people or creatures you interact with.
 
-Consequences for tests made with interpersonal skills include making the creature you're interacting with angry, sad, embarrassed, offended, or otherwise upset or uncomfortable. This might cause them to ignore you, storm off, spread rumors about you, attack you, betray you, blackmail you, or otherwise attempt to harm you.
+Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with interpersonal skills include making the creature you're interacting with angry, sad, embarrassed, offended, or otherwise upset or uncomfortable. This might cause them to ignore you, storm off, spread rumors about you, attack you, betray you, blackmail you, or otherwise attempt to harm you.
 
 ###### Interpersonal Skills Table
 
@@ -20924,9 +20924,9 @@ Read the emotions and body language of other creatures.
 
 Skills from the intrigue skill group are used in tasks centered around investigation, thievery, and spycraft.
 
-Rewards for tests made with skills from this group typically include helping another creature engaging in the same task succeed without needing to also make a test, automatically succeeding on a follow-up test while engaged in the same task, discovering helpful information in addition to what you set out to learn, and performing an extra bit of clandestine activity in addition to what you set out to do.
+Rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) made with skills from this group typically include helping another creature engaging in the same task succeed without needing to also make a [test](scc:mcdm.heroes.v1/rule.test/test), automatically succeeding on a follow-up [test](scc:mcdm.heroes.v1/rule.test/test) while engaged in the same task, discovering helpful information in addition to what you set out to learn, and performing an extra bit of clandestine activity in addition to what you set out to do.
 
-Consequences for tests made with intrigue skills include getting caught in the act or failing to notice a detail that places you in danger, such as triggering a trap or walking into an ambush.
+Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with intrigue skills include getting caught in the act or failing to notice a detail that places you in danger, such as triggering a trap or walking into an ambush.
 
 ###### Intrigue Skills Table
 
@@ -21009,9 +21009,9 @@ Follow a trail that another creature has left behind.
 
 Skills from the lore skill group are used to research and recall specific information. They are especially useful during rests and downtime.
 
-Rewards for tests made with lore skills typically include learning an extra piece of useful information.
+Rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) made with lore skills typically include learning an extra piece of useful information.
 
-Consequences for tests made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard tests with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (see the Optional Rule: Secret [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) sidebar earlier in this chapter).
+Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with lore skills typically include learning an incorrect piece of information that seems useful, but which actually works against your interests or wastes time. (It's fun to roleplay these kinds of moments, so lean in!) Alternatively, the Director can make medium and hard [tests](scc:mcdm.heroes.v1/rule.test/test) with lore group skills for each hero in secret, then let the players know the narrative outcome without revealing the outcome of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (see the Optional Rule: Secret [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) sidebar earlier in this chapter).
 
 ###### Lore Skills Table
 
@@ -21104,9 +21104,9 @@ In this scenario, a trio of adventurers want to scale the 40-foot-high walls sur
 
 **Grace (playing Val, a [conduit](scc:mcdm.heroes.v1/class/conduit)):** *Agreed.*
 
-**Director:** *Okay. It'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) test to get up to the top of the wall.*
+**Director:** *Okay. It'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to get up to the top of the wall.*
 
-The Director knows that the walls around the Star Chamber, the headquarters of the evil knights Lady Morgant leads, are smooth and hard to climb, designed to repel invaders. The test's difficulty is hard, but the Director keeps that information a secret for now.
+The Director knows that the walls around the Star Chamber, the headquarters of the evil knights Lady Morgant leads, are smooth and hard to climb, designed to repel invaders. The [test](scc:mcdm.heroes.v1/rule.test/test)'s difficulty is hard, but the Director keeps that information a secret for now.
 
 **Alyssa (playing Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician)):** *Let me go first. I've got good [Might](scc:mcdm.heroes.v1/rule.character/might) and can throw the others down a rope once I'm up there. And I've got the [Climb](scc:mcdm.heroes.v1/skill/climb) skill.*
 
@@ -21116,23 +21116,23 @@ Alyssa rolls 2d10 and gets a 13. She then adds her [Might](scc:mcdm.heroes.v1/ru
 
 **Alyssa:** *A 17! That's tier 3, baby!*
 
-The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table to confirm that a tier 3 outcome is a success on a hard test.
+The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table to confirm that a tier 3 outcome is a success on a hard [test](scc:mcdm.heroes.v1/rule.test/test).
 
 **Director:** *Okay, you're on top of the wall. You notice a few guards patrolling atop the opposite side of the wall in the distance, but they're looking out at the city right now.*
 
 **Alyssa:** *Great! I toss down a rope. Val, you're next.*
 
-**Grace:** *So it's a [Might](scc:mcdm.heroes.v1/rule.character/might) test. Would you let me use Endurance? It's a lot of physical exertion to climb.*
+**Grace:** *So it's a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). Would you let me use Endurance? It's a lot of physical exertion to climb.*
 
-**Director:** *It's not a climb that would take you hours, so I don't think Endurance applies here. But hey, the rope does make this an easier test.*
+**Director:** *It's not a climb that would take you hours, so I don't think Endurance applies here. But hey, the rope does make this an easier [test](scc:mcdm.heroes.v1/rule.test/test).*
 
 **Grace:** *Fair. Okay, dice. Let's do this.*
 
-Given the rope, the Director decides that this second climb attempt is an easy test. Grace rolls 2d10 and gets an 11. With her [Might](scc:mcdm.heroes.v1/rule.character/might) score of 2, that's a 13.
+Given the rope, the Director decides that this second climb attempt is an easy [test](scc:mcdm.heroes.v1/rule.test/test). Grace rolls 2d10 and gets an 11. With her [Might](scc:mcdm.heroes.v1/rule.character/might) score of 2, that's a 13.
 
 **Grace:** *13! That's a tier 2 outcome for Val.*
 
-The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table once more, confirming that a tier 2 outcome is a success on an easy test.
+The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-difficulty) Outcomes table once more, confirming that a tier 2 outcome is a success on an easy [test](scc:mcdm.heroes.v1/rule.test/test).
 
 **Director:** *Good news! You make it to the top of the wall alongside Jorn.*
 
@@ -21142,13 +21142,13 @@ The Director checks the [Test Difficulty](scc:mcdm.heroes.v1/rule.test/test-diff
 
 **Alyssa:** *What if Korvo grabs onto the rope and I lift him up while he just hangs on for the ride?*
 
-**Director:** *Sure. That'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) test if Korvo's down for it.*
+**Director:** *Sure. That'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) if Korvo's down for it.*
 
 **James:** *Nothing risked, nothing saved. Let's do it. Just be careful. Any loud noises could attract those guards.*
 
 **Alyssa:** *Please. I'm a pro. Since I'm lifting this [polder](scc:mcdm.heroes.v1/ancestry/polder) off the ground, does the Lift skill apply?*
 
-**Director:** *Yes, it does. Roll it up. That's a medium difficulty test.*
+**Director:** *Yes, it does. Roll it up. That's a medium difficulty [test](scc:mcdm.heroes.v1/rule.test/test).*
 
 Lifting the diminutive [polder](scc:mcdm.heroes.v1/ancestry/polder), Alyssa rolls 2d10-but gets a 2! With her [Might](scc:mcdm.heroes.v1/rule.character/might) score and Lift skill bonus of +2, the total is 6.
 
@@ -21170,15 +21170,15 @@ The Director then decides to make the failure potentially more interesting, by a
 
 ### Assist a Test
 
-You can attempt to assist another creature with a test they make, provided you have a skill that applies to the test, the other creature isn't using that same skill on the test, and you can describe how your character helps to the Director's satisfaction. In other words, your attempt to help has to make sense, and you have to bring some useful expertise to the table. Helping another creature sneak by shouting encouragement at them isn't going to make them stealthier.
+You can attempt to assist another creature with a [test](scc:mcdm.heroes.v1/rule.test/test) they make, provided you have a skill that applies to the [test](scc:mcdm.heroes.v1/rule.test/test), the other creature isn't using that same skill on the [test](scc:mcdm.heroes.v1/rule.test/test), and you can describe how your character helps to the Director's satisfaction. In other words, your attempt to help has to make sense, and you have to bring some useful expertise to the table. Helping another creature sneak by shouting encouragement at them isn't going to make them stealthier.
 
-When you attempt to assist another creature, make a test using the skill you choose, and using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) chosen by the Director based on the activity you use to help. The outcome of that test determines the bonus applied to the test you're assisting:
+When you attempt to assist another creature, make a [test](scc:mcdm.heroes.v1/rule.test/test) using the skill you choose, and using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) chosen by the Director based on the activity you use to help. The outcome of that [test](scc:mcdm.heroes.v1/rule.test/test) determines the bonus applied to the [test](scc:mcdm.heroes.v1/rule.test/test) you're assisting:
 
-- **≤11:** You get in the way or make things worse. The creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their test.
-- **12-16:** Your help grants the other creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test.
-- **17+:** Your help gives the other creature a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test.
+- **≤11:** You get in the way or make things worse. The creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their [test](scc:mcdm.heroes.v1/rule.test/test).
+- **12-16:** Your help grants the other creature an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their [test](scc:mcdm.heroes.v1/rule.test/test).
+- **17+:** Your help gives the other creature a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their [test](scc:mcdm.heroes.v1/rule.test/test).
 
-For example, when an ally tries to pick a jailer's pocket, you might attempt to assist by using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill to distract the jailer. The Director accepts this, and asks you to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using Flirt. The outcome of that test determines the bonus you provide to the other hero's [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick the jailer's pocket—or whether you fumble the distraction and potentially draw attention to the attempt.
+For example, when an ally tries to pick a jailer's pocket, you might attempt to assist by using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill to distract the jailer. The Director accepts this, and asks you to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using Flirt. The outcome of that [test](scc:mcdm.heroes.v1/rule.test/test) determines the bonus you provide to the other hero's [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to pick the jailer's pocket—or whether you fumble the distraction and potentially draw attention to the attempt.
 
 ### Hide and Sneak
 
@@ -21188,7 +21188,7 @@ Hiding and sneaking are important tools for heroes and their foes. You might wan
 
 To hide from a creature, you must have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
 
-When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
+When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
 
 While you are hidden from another creature, the creature can't target you with abilities that don't have the Area keyword. This benefit ends as soon as you are no longer hidden from that creature.
 
@@ -21200,11 +21200,11 @@ You are no longer hidden from a creature if you don't have [cover](scc:mcdm.hero
 
 ##### Searching for Hidden Creatures
 
-You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them. To do so, you use a maneuver to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
+You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them. To do so, you use a maneuver to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) using the Search skill, and any hidden creatures within 10 squares of you each make an opposed [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed [test](scc:mcdm.heroes.v1/rule.test/test). For example, your foe might make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
 
-If the total of your test is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
+If the total of your [test](scc:mcdm.heroes.v1/rule.test/test) is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
 
-If a creature is hidden from your allies but not from you, you can use a maneuver without making a test to point that creature out to your allies.
+If a creature is hidden from your allies but not from you, you can use a maneuver without making a [test](scc:mcdm.heroes.v1/rule.test/test) to point that creature out to your allies.
 
 > **What Does It Mean to Be Observed?**
 >
@@ -21212,45 +21212,45 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 #### Sneaking
 
-While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using [Presence](scc:mcdm.heroes.v1/rule.character/presence) to blend in with a crowd on a packed city street.
+While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This [test](scc:mcdm.heroes.v1/rule.test/test) can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using [Presence](scc:mcdm.heroes.v1/rule.character/presence) to blend in with a crowd on a packed city street.
 
 <!-- @type: rule | @group: test | @id: group-test -->
 ### Group Tests
 
-Whenever two or more heroes attempt to overcome a single, simple task together that calls for them to make the same test, the Director can call for a group test. For example, if several heroes are all attempting to climb the outside of a tower at the same time, giving each other assistance and advice, they could be asked to make a [Might](scc:mcdm.heroes.v1/rule.character/might) group test. If a group of heroes attempt to sneak by a sleeping ogre, they might make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) group test.
+Whenever two or more heroes attempt to overcome a single, simple task together that calls for them to make the same [test](scc:mcdm.heroes.v1/rule.test/test), the Director can call for a group [test](scc:mcdm.heroes.v1/rule.test/test). For example, if several heroes are all attempting to climb the outside of a tower at the same time, giving each other assistance and advice, they could be asked to make a [Might](scc:mcdm.heroes.v1/rule.character/might) group [test](scc:mcdm.heroes.v1/rule.test/test). If a group of heroes attempt to sneak by a sleeping ogre, they might make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) group [test](scc:mcdm.heroes.v1/rule.test/test).
 
 #### Group Test Difficulty
 
-The Director determines the difficulty of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) the same way they do for individual tests. [Group tests](scc:mcdm.heroes.v1/rule.test/group-test) can be easy, medium, or hard.
+The Director determines the difficulty of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) the same way they do for individual [tests](scc:mcdm.heroes.v1/rule.test/test). [Group tests](scc:mcdm.heroes.v1/rule.test/group-test) can be easy, medium, or hard.
 
 #### Making a Group Test
 
-Each hero participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) makes the test individually as usual, but the Director waits until all the tests have been made to interpret the outcome. A hero who is participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) can't assist another hero participating in the test.
+Each hero participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) makes the [test](scc:mcdm.heroes.v1/rule.test/test) individually as usual, but the Director waits until all the [tests](scc:mcdm.heroes.v1/rule.test/test) have been made to interpret the outcome. A hero who is participating in the [group test](scc:mcdm.heroes.v1/rule.test/group-test) can't assist another hero participating in the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 #### Group Test Outcome
 
 When interpreting the outcome of a [group test](scc:mcdm.heroes.v1/rule.test/group-test), the Director first determines if the task succeeded or not before figuring out rewards and consequences. If half or more of the heroes making the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeed, then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) succeeds. Otherwise, the [group test](scc:mcdm.heroes.v1/rule.test/group-test) fails.
 
-If the heroes succeeded and half or more of them obtained a reward from the test, the Director gives the group a collective reward and ignores any consequences incurred in the test. This collective reward should be equivalent to earning two individual rewards. In fact, it could be two consumable items, juicy pieces of information, or [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, it could also be something more tailored to the task. For instance, if the heroes earn a collective reward while sneaking through the camp of an enemy army, the Director might allow them to sabotage a bunch of war engines or steal a few horses on their way out.
+If the heroes succeeded and half or more of them obtained a reward from the [test](scc:mcdm.heroes.v1/rule.test/test), the Director gives the group a collective reward and ignores any consequences incurred in the [test](scc:mcdm.heroes.v1/rule.test/test). This collective reward should be equivalent to earning two individual rewards. In fact, it could be two consumable items, juicy pieces of information, or [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token). However, it could also be something more tailored to the task. For instance, if the heroes earn a collective reward while sneaking through the camp of an enemy army, the Director might allow them to sabotage a bunch of war engines or steal a few horses on their way out.
 
-If the heroes failed the [group test](scc:mcdm.heroes.v1/rule.test/group-test) and more than half of them incurred a consequence as a result, the Director gives the group a collective consequence and ignores any earned rewards. This collective consequence should affect everyone. An easy option is for the stress of failing the test to cause each hero to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), or for the Director to gain 2 Malice per hero at the start of the next combat encounter. But the consequence could also be tailored to the task. For instance, if the heroes fail in their attempt to sneak through the camp of an enemy army, they're spotted and the camp immediately goes on alert as waves of enemies attack them.
+If the heroes failed the [group test](scc:mcdm.heroes.v1/rule.test/group-test) and more than half of them incurred a consequence as a result, the Director gives the group a collective consequence and ignores any earned rewards. This collective consequence should affect everyone. An easy option is for the stress of failing the [test](scc:mcdm.heroes.v1/rule.test/test) to cause each hero to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), or for the Director to gain 2 Malice per hero at the start of the next combat encounter. But the consequence could also be tailored to the task. For instance, if the heroes fail in their attempt to sneak through the camp of an enemy army, they're spotted and the camp immediately goes on alert as waves of enemies attack them.
 
-If fewer than half the heroes incur a consequence or earn a reward on their individual tests, then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) simply succeeds or fails.
+If fewer than half the heroes incur a consequence or earn a reward on their individual [tests](scc:mcdm.heroes.v1/rule.test/test), then the [group test](scc:mcdm.heroes.v1/rule.test/group-test) simply succeeds or fails.
 
 <!-- @type: rule | @group: test | @id: montage-test -->
 ### Montage Tests
 
-When a group of heroes works together over time to accomplish a common goal that requires more than a single [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), the Director can call for a montage test. Such tests typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage tests.
+When a group of heroes works together over time to accomplish a common goal that requires more than a single [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), the Director can call for a montage [test](scc:mcdm.heroes.v1/rule.test/test). Such [tests](scc:mcdm.heroes.v1/rule.test/test) typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage [tests](scc:mcdm.heroes.v1/rule.test/test).
 
-In a montage test, the players take turns making tests as their characters tackle a task together in a montage test round. Each hero has a chance to make a test (or to assist another hero's test; see Assist a Test above) intended to influence the outcome of the task.
+In a montage [test](scc:mcdm.heroes.v1/rule.test/test), the players take turns making [tests](scc:mcdm.heroes.v1/rule.test/test) as their characters tackle a task together in a montage [test](scc:mcdm.heroes.v1/rule.test/test) round. Each hero has a chance to make a [test](scc:mcdm.heroes.v1/rule.test/test) (or to assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test); see Assist a [Test](scc:mcdm.heroes.v1/rule.test/test) above) intended to influence the outcome of the task.
 
-A hero can also spend their turn using an item, ability, or other option they have available that they believe can help in the montage test. For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage test, with no individual tests necessary (see Total Successes and Failures below).
+A hero can also spend their turn using an item, ability, or other option they have available that they believe can help in the montage [test](scc:mcdm.heroes.v1/rule.test/test). For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage [test](scc:mcdm.heroes.v1/rule.test/test), with no individual [tests](scc:mcdm.heroes.v1/rule.test/test) necessary (see Total Successes and Failures below).
 
-Once a hero makes a test, assists with a test, or uses an ability or other option, they can't do anything else as part of the montage test until each other hero involved in the montage test does so as well. A hero can also choose to do nothing, most often if they have no one to assist and fear that their actions might make the situation worse (see Montage Test Outcomes below). Once every hero has had a chance to act, the montage test round ends and a new one begins.
+Once a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), assists with a [test](scc:mcdm.heroes.v1/rule.test/test), or uses an ability or other option, they can't do anything else as part of the montage [test](scc:mcdm.heroes.v1/rule.test/test) until each other hero involved in the montage [test](scc:mcdm.heroes.v1/rule.test/test) does so as well. A hero can also choose to do nothing, most often if they have no one to assist and fear that their actions might make the situation worse (see Montage [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes below). Once every hero has had a chance to act, the montage [test](scc:mcdm.heroes.v1/rule.test/test) round ends and a new one begins.
 
 #### Time and Stakes
 
-As the name suggests, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) create a kind of cinematic montage in the action of the game. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can take place over the course of several hours or days, with each individual test or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) (see Sample [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) below).
+As the name suggests, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) create a kind of cinematic montage in the action of the game. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can take place over the course of several hours or days, with each individual [test](scc:mcdm.heroes.v1/rule.test/test) or other activity set up as a brief vignette within the montage that stars one of the heroes. Combat encounters, negotiations, and other challenges and scenes can break up a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) (see Sample [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) below).
 
 The Director should deploy [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) only when the players are engaged in overcoming a goal that has stakes for the story and some sort of pressure, such as a looming deadline or impending harm. A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is great for a race to get to another location before an enemy army does, a chase to escape or catch up to a foe, weathering a hazard, preparing a village for war, or similar activities. Low- or no-stakes activities such as travel through a forest with no time pressure, or training during a respite to use a new kit, can be narrated in montage style, but they don't require a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
@@ -21260,31 +21260,31 @@ At the start of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the
 
 #### Individual Tests in Montage Tests
 
-The difficulty of each individual test in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is set by the Director and can vary from test to test. For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) test. Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.
+The difficulty of each individual [test](scc:mcdm.heroes.v1/rule.test/test) in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is set by the Director and can vary from [test](scc:mcdm.heroes.v1/rule.test/test) to [test](scc:mcdm.heroes.v1/rule.test/test). For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test).
 
-The same rules and guidelines that apply to all individual tests apply in [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the test should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual test outcomes shouldn't halt the story.
+The same rules and guidelines that apply to all individual [tests](scc:mcdm.heroes.v1/rule.test/test) apply in [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the [test](scc:mcdm.heroes.v1/rule.test/test) should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual [test](scc:mcdm.heroes.v1/rule.test/test) outcomes shouldn't halt the story.
 
-The Director should couch each success or failure as it relates to the overall goal of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) test to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
+The Director should couch each success or failure as it relates to the overall goal of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
 
-The rewards and consequences of individual tests made during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) are handled on an individual basis. The Director can use the default of gaining additional Malice in the next combat encounter for consequences and having the party gain [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) for rewards to keep the montage moving.
+The rewards and consequences of individual [tests](scc:mcdm.heroes.v1/rule.test/test) made during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) are handled on an individual basis. The Director can use the default of gaining additional Malice in the next combat encounter for consequences and having the party gain [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) for rewards to keep the montage moving.
 
 #### Can't Use the Same Skill Twice
 
-An individual character can't use the same skill more than once in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Though multiple heroes can use the same skill, a test or an assist with a specific skill represents each characters' entire contribution to the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) with that skill. At the Director's discretion, this restriction can be lifted for prolonged [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), or for [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) that are limited in scope and have only a small number of skills that apply to them.
+An individual character can't use the same skill more than once in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Though multiple heroes can use the same skill, a [test](scc:mcdm.heroes.v1/rule.test/test) or an assist with a specific skill represents each characters' entire contribution to the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) with that skill. At the Director's discretion, this restriction can be lifted for prolonged [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), or for [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) that are limited in scope and have only a small number of skills that apply to them.
 
 #### New Challenges for Each Test
 
-In general, when a hero makes a test as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), they should choose new obstacles to overcome that haven't already been overcome as part of the test. If the heroes are chasing a thief through the marketplace and one of them has already distracted the pack of stray dogs with a deft hand and a piece of meat, additional tests made to distract the animals don't count toward the outcome of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+In general, when a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), they should choose new obstacles to overcome that haven't already been overcome as part of the [test](scc:mcdm.heroes.v1/rule.test/test). If the heroes are chasing a thief through the marketplace and one of them has already distracted the pack of stray dogs with a deft hand and a piece of meat, additional [tests](scc:mcdm.heroes.v1/rule.test/test) made to distract the animals don't count toward the outcome of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-When it fits the scenario, the Director can adjust this restriction. If part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) involves searching for people trapped in a burning building, the Director is likely to allow multiple tests to fight or avoid the fire, since this will happen throughout the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), not just once.
+When it fits the scenario, the Director can adjust this restriction. If part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) involves searching for people trapped in a burning building, the Director is likely to allow multiple [tests](scc:mcdm.heroes.v1/rule.test/test) to fight or avoid the fire, since this will happen throughout the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), not just once.
 
 ##### Introducing More Challenges
 
-During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a Director can introduce new challenges for the heroes to face. While attempting to run out of a burning building from the top floor, the characters might discover that by the time they reach the second floor, beams are starting to fall and glass windows are exploding as the structure starts to collapse. These new challenges can be incorporated into the tests the heroes subsequently make.
+During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), a Director can introduce new challenges for the heroes to face. While attempting to run out of a burning building from the top floor, the characters might discover that by the time they reach the second floor, beams are starting to fall and glass windows are exploding as the structure starts to collapse. These new challenges can be incorporated into the [tests](scc:mcdm.heroes.v1/rule.test/test) the heroes subsequently make.
 
 #### Total Successes and Failures
 
-The Director or another player will track the total number of successes and failures the heroes earn during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Every [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has a success limit and a failure limit. When the number of successful tests equals the success limit, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) ends and the heroes achieve total success (see [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Outcomes below). The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can also end when the number of failed tests equals the failure limit, and the heroes suffer total failure.
+The Director or another player will track the total number of successes and failures the heroes earn during a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Every [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has a success limit and a failure limit. When the number of successful [tests](scc:mcdm.heroes.v1/rule.test/test) equals the success limit, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) ends and the heroes achieve total success (see [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Outcomes below). The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can also end when the number of failed [tests](scc:mcdm.heroes.v1/rule.test/test) equals the failure limit, and the heroes suffer total failure.
 
 #### Limited Rounds
 
@@ -21294,7 +21294,7 @@ A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) should last only 2 [
 
 The Director determines the success limit and failure limit of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). They can share this information or keep it secret, depending on what feels the most fun and dramatic for the situation and the players.
 
-In general, the higher the success limit, the harder and more complicated it is for the heroes to overcome the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), since a hero can't make the same test twice. The [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Difficulty table gives a recommended success limit and failure limit for easy, moderate, and hard [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) for groups with five heroes.
+In general, the higher the success limit, the harder and more complicated it is for the heroes to overcome the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), since a hero can't make the same [test](scc:mcdm.heroes.v1/rule.test/test) twice. The [Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test) Difficulty table gives a recommended success limit and failure limit for easy, moderate, and hard [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) for groups with five heroes.
 
 ###### Montage Test Difficulty Table
 
@@ -21313,7 +21313,7 @@ For larger or smaller groups, the Director can make the following adjustments to
 
 A [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can have three different outcomes:
 
-- If the heroes hit the success limit before hitting the failure limit or before the time runs out for the test, they achieve total success.
+- If the heroes hit the success limit before hitting the failure limit or before the time runs out for the [test](scc:mcdm.heroes.v1/rule.test/test), they achieve total success.
 - If the heroes hit the failure limit or time runs out, and if they've achieved at least two more successes than failures, they achieve a partial success.
 - If the heroes hit the failure limit or time runs out, and if they don't have at least two more successes than failures, they suffer total failure.
 
@@ -21331,7 +21331,7 @@ The heroes earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when the
 
 ##### Total Failure
 
-If the heroes suffer total failure, they don't achieve what they set out to do. Just as with standard tests, failure on a [group test](scc:mcdm.heroes.v1/rule.test/group-test) shouldn't bring a story to a halt. Total failure should make things more interesting and challenging! With a total failure in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to cross the desert and warn the city, the characters arrive at the city to find it already under siege by the tyrant.
+If the heroes suffer total failure, they don't achieve what they set out to do. Just as with standard [tests](scc:mcdm.heroes.v1/rule.test/test), failure on a [group test](scc:mcdm.heroes.v1/rule.test/group-test) shouldn't bring a story to a halt. Total failure should make things more interesting and challenging! With a total failure in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to cross the desert and warn the city, the characters arrive at the city to find it already under siege by the tyrant.
 
 #### Sample Montage Test
 
@@ -21341,33 +21341,33 @@ The Director determines that crossing the desert is a [montage test](scc:mcdm.he
 
 ##### Montage Test Round 1
 
-When the test begins, the Director sets the scene. They tell the players that the desert has extreme temperatures, sudden sandstorms, high dunes to cross, deep sand, chasms, and quicksand lakes. The Director decides that the challenges of dunes, deep sand, and quicksand can be tackled multiple times in the test, since the Infinite Desert is filled with these hazards.
+When the [test](scc:mcdm.heroes.v1/rule.test/test) begins, the Director sets the scene. They tell the players that the desert has extreme temperatures, sudden sandstorms, high dunes to cross, deep sand, chasms, and quicksand lakes. The Director decides that the challenges of dunes, deep sand, and quicksand can be tackled multiple times in the [test](scc:mcdm.heroes.v1/rule.test/test), since the Infinite Desert is filled with these hazards.
 
-Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy test. Urdoncara makes the test and gets a total of 12, earning 1 success for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy [test](scc:mcdm.heroes.v1/rule.test/test). Urdoncara makes the [test](scc:mcdm.heroes.v1/rule.test/test) and gets a total of 12, earning 1 success for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the test and fails with a consequence, which the Director decides will cause him to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on his next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) due to the exertion. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 1 success and 1 failure.
+Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the [test](scc:mcdm.heroes.v1/rule.test/test) and fails with a consequence, which the Director decides will cause him to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on his next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) due to the exertion. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 1 success and 1 failure.
 
-Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test). Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
-Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their test. At the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the heroes have 3 successes and 1 failure.
+Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test), using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their [test](scc:mcdm.heroes.v1/rule.test/test). At the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the heroes have 3 successes and 1 failure.
 
 ##### Interlude
 
-Before the next [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the Director pauses the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to run a battle with a kingfissure worm, who attacks the heroes as they cross over an ancient ruin partially buried in the sand. After the heroes defeat the kingfissure worm, the test continues.
+Before the next [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round, the Director pauses the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to run a battle with a kingfissure worm, who attacks the heroes as they cross over an ancient ruin partially buried in the sand. After the heroes defeat the kingfissure worm, the [test](scc:mcdm.heroes.v1/rule.test/test) continues.
 
 ##### Montage Test Round 2
 
-Urdoncara wants to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the test thanks to the [edge](scc:mcdm.heroes.v1/rule.dice/edge) from Val's earlier success. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 4 successes and 1 failure.
+Urdoncara wants to make a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the [test](scc:mcdm.heroes.v1/rule.test/test) thanks to the [edge](scc:mcdm.heroes.v1/rule.dice/edge) from Val's earlier success. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 4 successes and 1 failure.
 
-Jorn, eager to prove himself after his last failure, asks to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the test at medium difficulty. Making the test with a [bane](scc:mcdm.heroes.v1/rule.dice/bane) because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
+Jorn, eager to prove himself after his last failure, asks to make a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the [test](scc:mcdm.heroes.v1/rule.test/test) at medium difficulty. Making the [test](scc:mcdm.heroes.v1/rule.test/test) with a [bane](scc:mcdm.heroes.v1/rule.dice/bane) because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
 
-Since the group needs only one more success to achieve total success, Karrel says she'd like to assist Val in whatever task she decides to take on. Val wants to recall lore about the Khem-hor-the inhabitants of the Infinite Desert—to remember their time-honored travel techniques using the History skill. Karrel has the Culture skill, which she can use to assist by providing information about the lives and society of the Khem-hor. She makes a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to assist and gets a 16, granting Val an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on her upcoming test.
+Since the group needs only one more success to achieve total success, Karrel says she'd like to assist Val in whatever task she decides to take on. Val wants to recall lore about the Khem-hor-the inhabitants of the Infinite Desert—to remember their time-honored travel techniques using the History skill. Karrel has the Culture skill, which she can use to assist by providing information about the lives and society of the Khem-hor. She makes a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to assist and gets a 16, granting Val an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on her upcoming [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test with an [edge](scc:mcdm.heroes.v1/rule.dice/edge), thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), achieving total success, and earn 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) with an [edge](scc:mcdm.heroes.v1/rule.dice/edge), thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), achieving total success, and earn 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Other Options
 
-The heroes could have attempted other tests during their travels, such as an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the Sneak skill to lead the group through dangerous shortcuts in the desert without being seen or waylaid by predators, a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Nature skill to find enough food and water to keep the group hydrated and fed, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the Music skill to inspire allies to travel faster with song.
+The heroes could have attempted other [tests](scc:mcdm.heroes.v1/rule.test/test) during their travels, such as an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) using the Sneak skill to lead the group through dangerous shortcuts in the desert without being seen or waylaid by predators, a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) using the Nature skill to find enough food and water to keep the group hydrated and fed, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the Music skill to inspire allies to travel faster with song.
 
 <!-- @type: chapter | @id: combat -->
 # Combat
@@ -21455,7 +21455,7 @@ If the players do end up arguing in circles about what to do next, the Director 
 
 > **Alternative Turn Order**
 >
-> If planning everyone's turn order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero turn, the hero with the second-highest total takes their turn, and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests to determine who among the tied creatures acts before the others.
+> If planning everyone's turn order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test), then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero turn, the hero with the second-highest total takes their turn, and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) to determine who among the tied creatures acts before the others.
 >
 > At the Director's discretion, a hero can swap their turn in the order with another willing hero at the start of a new combat round. This allows certain abilities that interact with the core turn order system, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability, to better work with this alternative system.
 
@@ -21512,7 +21512,7 @@ All squares adjacent to your character cost 1 movement to move into. No, there's
 
 Your hero can move freely through an ally's space. You can move through an enemy's space, but that space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) (see below). You can't stop moving in any other creature's space, including to make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) or use a main action or maneuver while in that space and then continuing your move, unless that creature's [size](scc:mcdm.heroes.v1/rule.character/size) is two or more [sizes](scc:mcdm.heroes.v1/rule.character/size) greater or smaller than your own.
 
-At the Director's discretion, you can be forced into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, such as by falling down a narrow shaft with such a creature already at the bottom. When you are squeezed into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, your [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and tests take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+At the Director's discretion, you can be forced into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, such as by falling down a narrow shaft with such a creature already at the bottom. When you are squeezed into the same space as another creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is within 1 of yours, your [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and [tests](scc:mcdm.heroes.v1/rule.test/test) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 #### Can't Exceed Speed
 
@@ -21587,11 +21587,11 @@ While a creature who is completely beneath the ground while [burrowing](scc:mcdm
 
 A creature who has "climb" in their speed entry, or who gains the temporary ability to automatically climb, can climb across vertical and horizontal surfaces at full speed. Likewise, a creature who has "swim" in their speed entry, or who gains the temporary ability to automatically swim, can swim in liquid at full speed.
 
-Creatures without those types of movement can still climb or swim when a rule allows them to move, but each square of climbing or swimming costs 2 squares of movement. If a surface is difficult to climb (for instance, a sheer cliff or ice-covered wall) or a liquid is hard to swim through (a raging river or whirlpool), the Director can call for a [Might](scc:mcdm.heroes.v1/rule.character/might) test. On a failure, a creature can't climb or swim but wastes no movement in the attempt. The Director can also impose other consequences to failure, such as being caught in the spinning current of a whirlpool.
+Creatures without those types of movement can still climb or swim when a rule allows them to move, but each square of climbing or swimming costs 2 squares of movement. If a surface is difficult to climb (for instance, a sheer cliff or ice-covered wall) or a liquid is hard to swim through (a raging river or whirlpool), the Director can call for a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). On a failure, a creature can't climb or swim but wastes no movement in the attempt. The Director can also impose other consequences to failure, such as being caught in the spinning current of a whirlpool.
 
 ###### Climbing Other Creatures
 
-You can attempt to climb a creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is greater than yours. If the creature is willing, you can climb them without any trouble. If the creature is unwilling, you make the following test:
+You can attempt to climb a creature whose [size](scc:mcdm.heroes.v1/rule.character/size) is greater than yours. If the creature is willing, you can climb them without any trouble. If the creature is unwilling, you make the following [test](scc:mcdm.heroes.v1/rule.test/test):
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
@@ -21599,7 +21599,7 @@ You can attempt to climb a creature whose [size](scc:mcdm.heroes.v1/rule.charact
 - **12-16:** You fail to climb the creature.
 - **17+:** You climb the creature.
 
-While you climb or ride a creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee abilities used against them. The creature can use a maneuver to attempt to knock you off, forcing you to make the following test:
+While you climb or ride a creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee abilities used against them. The creature can use a maneuver to attempt to knock you off, forcing you to make the following [test](scc:mcdm.heroes.v1/rule.test/test):
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
@@ -21614,7 +21614,7 @@ If you are [knocked prone](scc:mcdm.heroes.v1/condition/prone) while climbing or
 
 Whenever an effect allows you to move (including using the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action), you can automatically long jump a number of squares up to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
 
-If you want to jump even longer or higher than your baseline jump allows, make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) test:
+If you want to jump even longer or higher than your baseline jump allows, make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test):
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
@@ -21884,9 +21884,9 @@ A creature wanting to push an adjacent creature away from them can attempt to sh
 <!-- @type: feature | @id: make-or-assist-a-test -->
 #### Make or Assist a Test
 
-Many tests are maneuvers if made in combat. Searching a chest with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test, picking a door's lock with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, or lifting a portcullis with a [Might](scc:mcdm.heroes.v1/rule.character/might) test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+Many [tests](scc:mcdm.heroes.v1/rule.test/test) are maneuvers if made in combat. Searching a chest with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test), picking a door's lock with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test), or lifting a portcullis with a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) would all be maneuvers. Assisting a [test](scc:mcdm.heroes.v1/rule.test/test) is also a maneuver in combat (see Assist a [Test](scc:mcdm.heroes.v1/rule.test/test) in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
-Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to recall lore about mummies, are usually [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) in combat. The Director has the final say regarding which tests can be made as maneuvers.
+Complex or time-consuming [tests](scc:mcdm.heroes.v1/rule.test/test) might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other [tests](scc:mcdm.heroes.v1/rule.test/test) that take no time at all, such as a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore about mummies, are usually [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) in combat. The Director has the final say regarding which [tests](scc:mcdm.heroes.v1/rule.test/test) can be made as maneuvers.
 
 <!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
@@ -21922,7 +21922,7 @@ A creature can't move through [difficult terrain](scc:mcdm.heroes.v1/movement/di
 <!-- @type: feature | @id: defend -->
 #### Defend
 
-When a creature takes the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action, [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of their next turn. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+When a creature takes the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action, [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of their next turn. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: feature | @id: free-strike -->
 #### Free Strike
@@ -22005,7 +22005,7 @@ Darkness, fog, invisibility magic, and any other effect that fully obscures a cr
 
 #### Invisible Creatures
 
-Invisible creatures always have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from other creatures. If an invisible creature isn't hidden, they can still be targeted by abilities. The test made to find a hidden creature who is invisible takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+Invisible creatures always have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from other creatures. If an invisible creature isn't hidden, they can still be targeted by abilities. The [test](scc:mcdm.heroes.v1/rule.test/test) made to find a hidden creature who is invisible takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: rule | @group: damage | @id: damage -->
 ### Damage
@@ -22127,7 +22127,7 @@ Out of combat, you can hold your breath for a number of minutes equal to your [M
 
 A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their [size](scc:mcdm.heroes.v1/rule.character/size) is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
 
-If a creature riding a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they are knocked off the mount and must make a test to determine how they land (see Climbing Other Creatures\). If a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they carry any riders with them. Riders and mounts [teleport](scc:mcdm.heroes.v1/movement/teleport) separately.
+If a creature riding a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they are knocked off the mount and must make a [test](scc:mcdm.heroes.v1/rule.test/test) to determine how they land (see Climbing Other Creatures\). If a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they carry any riders with them. Riders and mounts [teleport](scc:mcdm.heroes.v1/movement/teleport) separately.
 
 If your mount dies, they [fall prone](scc:mcdm.heroes.v1/condition/prone), and you fall off them and l[and prone](scc:mcdm.heroes.v1/condition/prone) in the nearest unoccupied space of your choice.
 
@@ -22223,11 +22223,11 @@ Negotiation is a framework for important roleplaying encounters in which the her
 
 In order for a negotiation to occur, an NPC must have an interest in negotiating with the heroes—but must also have a reason to not simply jump on board with whatever the heroes propose. Negotiations happen only when an NPC has that internal tension between interest and reluctance. For example, if the characters ask a king to send his army into a neighboring kingdom to battle a demon incursion, the king needs to be conflicted. He wants to stop the incursion, but he doesn't want to risk the lives of his soldiers defending a foreign nation while leaving their own people unprotected. If the heroes want the help of the king's army, they need to negotiate.
 
-Heroes aren't expected to use the negotiation rules every time one character tries to convince an NPC to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a [Might](scc:mcdm.heroes.v1/rule.character/might) test using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
+Heroes aren't expected to use the negotiation rules every time one character tries to convince an NPC to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
 
 By contrast, negotiations typically involve all the heroes interacting with one or more important named NPCs who can provide information, items, or services that dramatically change the course of an adventure. Often, this involves the heroes seeking an item of great power, a retainer or companion, the services of an influential organization or nation, or a plot-twist-worthy piece of information. Convincing a lich to lend the party the legendary *Codex Mortis*, trying to convince a dragon to halt an attack on a wizard's tower, or talking the leaders of an enemy army into standing down means that a negotiation is in order.
 
-To negotiate successfully, the heroes must make persuasive arguments to convince NPCs to do what they want. "Do it or we kill you" is a threat that might well accompany a single [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
+To negotiate successfully, the heroes must make persuasive arguments to convince NPCs to do what they want. "Do it or we kill you" is a threat that might well accompany a single [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
 
 #### Limits of Negotiation
 
@@ -22447,7 +22447,7 @@ The Director can decide that an NPC who has something the players want could sho
 
 #### Stop Combat, Start Negotiation
 
-If a hero wants to halt hostilities to negotiate with the other side, they can use a maneuver to make a hard [Presence](scc:mcdm.heroes.v1/rule.character/presence) test (or another applicable test, as the Director determines) in an attempt to stop combat and start a negotiation. The test has a chance of success only if the Director believes the other side is willing and capable of negotiating. A foe who has the upper hand, who hates the heroes beyond measure, or who lacks sapience is unlikely to negotiate.
+If a hero wants to halt hostilities to negotiate with the other side, they can use a maneuver to make a hard [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) (or another applicable [test](scc:mcdm.heroes.v1/rule.test/test), as the Director determines) in an attempt to stop combat and start a negotiation. The [test](scc:mcdm.heroes.v1/rule.test/test) has a chance of success only if the Director believes the other side is willing and capable of negotiating. A foe who has the upper hand, who hates the heroes beyond measure, or who lacks sapience is unlikely to negotiate.
 
 #### Starting Stats
 
@@ -22470,7 +22470,7 @@ If a hero wishes to figure out an NPC's motivations, they can begin by simply as
 
 NPC can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the NPC might offer up similar suggestions without the heroes asking, provided the NPC already has an interest of 3 or higher.
 
-If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's pitfalls, a hero can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) test while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The test has the following outcomes:
+If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's pitfalls, a hero can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
@@ -22478,11 +22478,11 @@ If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's 
 - **12-16:** The hero learns no information regarding the NPC's motivations or pitfalls.
 - **17+:** The hero learns one of the NPC's motivations or pitfalls (their choice).
 
-After this test is made, the heroes can't make another test to determine the same NPC's motivations or pitfalls until they make an argument to the NPC or the negotiation ends.
+After this [test](scc:mcdm.heroes.v1/rule.test/test) is made, the heroes can't make another [test](scc:mcdm.heroes.v1/rule.test/test) to determine the same NPC's motivations or pitfalls until they make an argument to the NPC or the negotiation ends.
 
 #### Outside of Negotiation
 
-While the heroes can discover an NPC's motivations or pitfalls through tests made during negotiation, they can employ other methods of investigating motivations or pitfalls before negotiation. Research or a little reconnaissance (for instance, reading the NPC's diary or talking to their closest friends) can reveal quite a bit about a person!
+While the heroes can discover an NPC's motivations or pitfalls through [tests](scc:mcdm.heroes.v1/rule.test/test) made during negotiation, they can employ other methods of investigating motivations or pitfalls before negotiation. Research or a little reconnaissance (for instance, reading the NPC's diary or talking to their closest friends) can reveal quite a bit about a person!
 
 ### Making Arguments
 
@@ -22496,7 +22496,7 @@ This is a good topic for discussion before a group actually gets into a negotiat
 
 #### Appeal to Motivation
 
-If an argument doesn't include a pitfall and appeals to one of the NPC's motivations that hasn't already been appealed to, the hero making the argument can make an medium test to attempt to sway the NPC with the argument. Depending on the argument, this can be a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using any applicable skill—most commonly a skill from the interpersonal skill group. The test has the following outcomes:
+If an argument doesn't include a pitfall and appeals to one of the NPC's motivations that hasn't already been appealed to, the hero making the argument can make an medium [test](scc:mcdm.heroes.v1/rule.test/test) to attempt to sway the NPC with the argument. Depending on the argument, this can be a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using any applicable skill—most commonly a skill from the interpersonal skill group. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
@@ -22504,7 +22504,7 @@ If an argument doesn't include a pitfall and appeals to one of the NPC's motivat
 - **12-16:** The NPC's interest increases by 1, and their patience decreases by 1.
 - **17+:** The NPC's interest increases by 1, and their patience doesn't change.
 
-At the Director's discretion, a particularly well-roleplayed or well-reasoned argument automatically counts as a tier 3 outcome without a test. Good roleplaying should be rewarded!
+At the Director's discretion, a particularly well-roleplayed or well-reasoned argument automatically counts as a tier 3 outcome without a [test](scc:mcdm.heroes.v1/rule.test/test). Good roleplaying should be rewarded!
 
 If the heroes attempt to appeal to a motivation that's already been appealed to, the NPC's interest remains the same and their patience decreases by 1.
 
@@ -22514,7 +22514,7 @@ If the heroes attempt to appeal to a motivation that's already been appealed to,
 
 #### No Motivation or Pitfall
 
-If an argument doesn't include one of the NPC's motivations or pitfalls, the hero who makes the argument must make a more difficult test to appeal to the NPC. The test has the following outcomes:
+If an argument doesn't include one of the NPC's motivations or pitfalls, the hero who makes the argument must make a more difficult [test](scc:mcdm.heroes.v1/rule.test/test) to appeal to the NPC. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
@@ -22524,7 +22524,7 @@ If an argument doesn't include one of the NPC's motivations or pitfalls, the her
 
 **Effect:** On a natural 19 or 20, the NPC's patience remains the same.
 
-If the heroes try to use the same argument without a pitfall or motivation twice, the test automatically obtains a tier 1 outcome.
+If the heroes try to use the same argument without a pitfall or motivation twice, the [test](scc:mcdm.heroes.v1/rule.test/test) automatically obtains a tier 1 outcome.
 
 #### Caught in a Lie
 
@@ -22532,7 +22532,7 @@ If a hero lies to an NPC with an argument that fails to increase the NPC's inter
 
 > **Everyone Can Participate**
 >
-> Since [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) with creatively applied skills can be used to make arguments, all heroes can actively participate in the process of negotiation. The hero with the highest [Presence](scc:mcdm.heroes.v1/rule.character/presence) who has the [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill doesn't automatically have to be the one who makes all the tests.
+> Since [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) with creatively applied skills can be used to make arguments, all heroes can actively participate in the process of negotiation. The hero with the highest [Presence](scc:mcdm.heroes.v1/rule.character/presence) who has the [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill doesn't automatically have to be the one who makes all the [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 #### Pitfall Used
 
@@ -22569,7 +22569,7 @@ If a hero has enough [Renown](scc:mcdm.heroes.v1/rule.resource/renown) for their
 
 ##### Influencing Tests
 
-If a hero is famous to an NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when making arguments to which the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied. If they are infamous to the NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when making arguments to which the [Brag](scc:mcdm.heroes.v1/skill/brag), [Interrogate](scc:mcdm.heroes.v1/skill/interrogate), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied. A hero gains this [edge](scc:mcdm.heroes.v1/rule.dice/edge) even if they don't have the appropriate skill.
+If a hero is famous to an NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied. If they are infamous to the NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Brag](scc:mcdm.heroes.v1/skill/brag), [Interrogate](scc:mcdm.heroes.v1/skill/interrogate), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied. A hero gains this [edge](scc:mcdm.heroes.v1/rule.dice/edge) even if they don't have the appropriate skill.
 
 ### NPC Response and Offer
 
@@ -22691,7 +22691,7 @@ Before making an argument, Alyssa is attempting to learn what Zola's motivations
 
 **James:** *Aha! I got this, folks. I stand atop my crate and say, "Well, we can surely offer that, Ms. Honeycut. We have convinced Lord Edmund to*
 
-*grant amnesty to any who swear to serve him." I'd like to roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to convince her.*
+*grant amnesty to any who swear to serve him." I'd like to roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to convince her.*
 
 **Director:** *Hold it there, champ. Zola's eyes narrow as you speak, and she holds up a hand to cut you off. "I will not swear to serve any ruler, no matter how benevolent. I'll consider being a partner, but even that outlook is grim if you tell me again that I need to bend the knee."*
 
@@ -22699,7 +22699,7 @@ Korvo inadvertently made an argument using a pitfall by appealing to a higher au
 
 **James:** *Sorry! I thought that'd work. Seems like higher authority is a pitfall for her*.
 
-**Grace:** *Let's try to avoid any others. Val says, "We're sorry, Zola. We don't want to do anything else to offend you." I'd like to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test and use my Read Person skill to gauge her reaction and try to discern any other pitfalls.*
+**Grace:** *Let's try to avoid any others. Val says, "We're sorry, Zola. We don't want to do anything else to offend you." I'd like to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) and use my Read Person skill to gauge her reaction and try to discern any other pitfalls.*
 
 **Director:** *Cool. Hard difficulty.*
 
@@ -22711,7 +22711,7 @@ The heroes now know both of Zola's pitfalls: higher authority and revelry.
 
 **Matt:** *Linn is going to say, "We're recruiting more than just the Clock. We have a good chance of recruiting the elves of the wode and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) of Forest Rend, and we're already training the people of Gravesford to put up a fight. If we strike before Saxton can fully build his forces, we all stand a better chance of survival. If you don't stand with us, Saxton will still come for you. He's already coming for you. The Clock stands less of a chance alone."*
 
-**Director:** *I think that's a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test, since you're using logic to point out that you have a better chance together than on your own. It's easy too, since you're appealing to one of her motivations.*
+**Director:** *I think that's a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test), since you're using logic to point out that you have a better chance together than on your own. It's easy too, since you're appealing to one of her motivations.*
 
 **Matt:** *Great! Can I use Lead here, since I'm demonstrating our ability to bring people together?*
 
@@ -22737,7 +22737,7 @@ The Director makes it clear in Zola's response that the negotiation can still co
 
 **James:** *Is there anything I know about Zola's reputation? I have the Criminal Underworld skill.*
 
-**Director:** *Make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.*
+**Director:** *Make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test).*
 
 **James:** *That's an 18! Success!*
 
@@ -22755,7 +22755,7 @@ Korvo's success has revealed Zola's benevolence motivation.
 
 **Alyssa:** *"Even before his coup, Saxton had a considerable amount of wealth. If he's deposed, those riches need to go somewhere. The Clock will get a cut—a honey of a cut, you might say. Edmund has also promised to share his family's fortune with any who stand with him against Saxton—no oath of fealty necessary. After the young lord reclaims the throne, that is."*
 
-**Director:** *You're appealing to one of her motivations, so make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.*
+**Director:** *You're appealing to one of her motivations, so make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test).*
 
 **Alyssa:** *Can I use my [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill too?*
 
@@ -22815,7 +22815,7 @@ If you need a project source for a particular project, ask your Director if the 
 <!-- @type: rule | @group: downtime | @id: project-roll -->
 ### Project Roll
 
-As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the test is determined by the project.
+As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a [test](scc:mcdm.heroes.v1/rule.test/test) with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the project.
 
 When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same respite activity.
 
@@ -23019,7 +23019,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Project Goal:** 150
 
-**Awe:** When you start this project, choose either Charming or Threatening. If you choose Charming, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to win other creatures over or make a good impression. If you choose Threatening, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to intimidate, coerce, or bully.
+**Awe:** When you start this project, choose either Charming or Threatening. If you choose Charming, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to win other creatures over or make a good impression. If you choose Threatening, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to intimidate, coerce, or bully.
 
 **[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I:** When you start this project, select three [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type). You have immunity 5 to those [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
@@ -23487,7 +23487,7 @@ Unless a project has an event table of its own or a special event entry, the Dir
 
 **Project Goal:** Varies (see the table)
 
-If you want to track the location of a lost treasure, decipher a ritual, or trace the lineage of a royal family to find the next heir to the throne, you can start a downtime project to delve into whatever mysteries you seek to unravel. You might start a project to discover lore because the information can't be discovered through a single test, or you could do so because you failed a test to recall information and now want to learn it through research.
+If you want to track the location of a lost treasure, decipher a ritual, or trace the lineage of a royal family to find the next heir to the throne, you can start a downtime project to delve into whatever mysteries you seek to unravel. You might start a project to discover lore because the information can't be discovered through a single [test](scc:mcdm.heroes.v1/rule.test/test), or you could do so because you failed a [test](scc:mcdm.heroes.v1/rule.test/test) to recall information and now want to learn it through research.
 
 When you start a downtime project to discover lore, you choose the lore you want investigated and the questions you want answered. The Director tells you if the lore you seek amounts to common, obscure, lost, or forbidden knowledge. The more esoteric the knowledge, the more project points are required to find the answers you seek.
 
@@ -23528,7 +23528,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
 | 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of respite, demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
 | 15-16  | Before the roll, the hero's rival comes to visit and shows off a guide for the project. The rival is willing to hand the guide over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
-| 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
+| 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
 | 19-20  | Before the roll, the hero finds that a significant amount of the project has been completed by a group of fairies. The fairies might have completed the job out of boredom, or they might want something from the hero in return.                                                                                                                                                                                                                                                                               |
 | 21-22  | After the roll, the hero realizes that the project source contains only half the information they need, and they must find the rest of the information to complete the project.                                                                                                                                                                                                                                                                                                                                 |
 | 23-24  | After the roll, the hero discovers a new bit of knowledge or a technique that allows them to immediately start and finish a second project with a project goal of 50 or lower.                                                                                                                                                                                                                                                                                                                                  |
@@ -23618,7 +23618,7 @@ Additionally, while you work to complete this project, you might be called upon 
 
 **Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
 
-You revisit your previous life to freshen up on the experience it provided you. When this project is complete, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the skills provided by your career.
+You revisit your previous life to freshen up on the experience it provided you. When this project is complete, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skills provided by your career.
 
 <!-- @type: project -->
 #### Learn From a Master
@@ -23796,10 +23796,10 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 | 3   | While the hero is fishing, passersby inform them of a rumor of a magic fishing rod that allows the fisher to double the size of the fish they reel in. The Director can decide whether the rumor is true, and if so, where the rod might be found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | 4   | While fishing, the hero reels in an **angulotl daybringer** (see *Draw Steel:  Monsters*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite, and gains 25 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | 5   | While fishing, the hero reels in half of a mysterious ancient treasure of the Director's choice. If the other half is found, both halves magically meld together to restore the treasure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 7   | The hero reaches a new fishing milestone, gaining the following title and benefit.<br/>**Master of Reels:** Whenever you deal damage to a target who is 2 or more squares away from you and that target isn't also [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can pull the target a number of squares equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score (your choice).                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 8   | While fishing, the hero engages in relaxing meditation that grants an automatic breakthrough on another project they're working on. Alternatively, they gain insight that grants an automatic breakthrough on another hero's project of their choice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard [Might](scc:mcdm.heroes.v1/rule.character/might) test. On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 10  | While fishing, the hero notes what appears to be an underwater cavern. If the cavern is explored, it reveals a treasure of the Director's choice guarded by a [revenant](scc:mcdm.heroes.v1/ancestry/revenant) knight fulfilling their duty until their captain returns.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <!-- @type: project -->
@@ -23921,7 +23921,7 @@ Your character can carry any number of consumables at a time.
 >
 > Abilities, conditions, [potencies](scc:mcdm.heroes.v1/rule.character/potency), [surges](scc:mcdm.heroes.v1/rule.resource/surge): Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)
 >
-> Skills, tests: Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
+> Skills, [tests](scc:mcdm.heroes.v1/rule.test/test): Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)
 >
 > Item creation rules, crafting and research projects: Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)
 >
@@ -24042,7 +24042,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you can drink this potion or pour it over an object of [size](scc:mcdm.heroes.v1/rule.character/size) 2 or smaller, causing the target's [size](scc:mcdm.heroes.v1/rule.character/size) to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and [Stability](scc:mcdm.heroes.v1/rule.character/stability) are doubled, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. You shrink back to your original [size](scc:mcdm.heroes.v1/rule.character/size) after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and [Stability](scc:mcdm.heroes.v1/rule.character/stability), and losing the potion's other benefits. Objects maintain their new [size](scc:mcdm.heroes.v1/rule.character/size) permanently.
+**Effect:** As a maneuver, you can drink this potion or pour it over an object of [size](scc:mcdm.heroes.v1/rule.character/size) 2 or smaller, causing the target's [size](scc:mcdm.heroes.v1/rule.character/size) to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and [Stability](scc:mcdm.heroes.v1/rule.character/stability) are doubled, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test), and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. You shrink back to your original [size](scc:mcdm.heroes.v1/rule.character/size) after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and [Stability](scc:mcdm.heroes.v1/rule.character/stability), and losing the potion's other benefits. Objects maintain their new [size](scc:mcdm.heroes.v1/rule.character/size) permanently.
 
 <!-- @type: treasure -->
 ##### Healing Potion
@@ -24175,7 +24175,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [restrained](scc:mcdm.heroes.v1/condition/restrained), or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to convince the target to communicate, or to read the target's emotions. Any such creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test if the target doesn't realize they've been affected by the snuff.
+**Effect:** As a maneuver, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [restrained](scc:mcdm.heroes.v1/condition/restrained), or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to convince the target to communicate, or to read the target's emotions. Any such creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test) if the target doesn't realize they've been affected by the snuff.
 
 <!-- @type: treasure -->
 ##### Snapdragon
@@ -24265,7 +24265,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Goal:** 90
 
-**Effect:** When you drink this potion as a maneuver, light shifts around your body, letting you blend into the environment around you for 10 minutes. While this effect is active, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and sneak, and you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even while you are observed.
+**Effect:** When you drink this potion as a maneuver, light shifts around your body, letting you blend into the environment around you for 10 minutes. While this effect is active, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak, and you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even while you are observed.
 
 <!-- @type: treasure -->
 ##### Float Powder
@@ -24399,7 +24399,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 180
 
-**Effect:** As a maneuver, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a test you made in the last minute, then reroll that test repeatedly until the outcome changes. If the potion is thrown, it creates a 3-cube area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.
+**Effect:** As a maneuver, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a [test](scc:mcdm.heroes.v1/rule.test/test) you made in the last minute, then reroll that [test](scc:mcdm.heroes.v1/rule.test/test) repeatedly until the outcome changes. If the potion is thrown, it creates a 3-cube area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.
 
 <!-- @type: treasure -->
 ##### G'Allios Visiting Card
@@ -24721,7 +24721,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Effect:** When you use a move action while wearing these gloves, you can place one hand upon a mundane object as part of that move action. If the object is 1 square thick or less and has open space on the other side (for example, a door or wall), you pull your body through it as though the object wasn't there.
 
-If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard [Might](scc:mcdm.heroes.v1/rule.character/might) test made as a main action.
+If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) made as a main action.
 
 <!-- @type: treasure -->
 ##### Gecko Gloves
@@ -24738,7 +24738,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** While you wear these gloves, your grip is all but impossible to break. You can't be disarmed, you can't lose your grip while climbing unless you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the test for the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
+**Effect:** While you wear these gloves, your grip is all but impossible to break. You can't be disarmed, you can't lose your grip while climbing unless you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [test](scc:mcdm.heroes.v1/rule.test/test) for the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
 
 <!-- @type: treasure -->
 ##### Hellcharger Helm
@@ -24862,7 +24862,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Goal:** 300
 
-**Effect:** While wearing the crown, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests made to read the emotions and discern the honesty of other creatures. If you succeed on an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director's discretion, you might not be able to tap into the creature's deepest secrets this way.
+**Effect:** While wearing the crown, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [tests](scc:mcdm.heroes.v1/rule.test/test) made to read the emotions and discern the honesty of other creatures. If you succeed on an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director's discretion, you might not be able to tap into the creature's deepest secrets this way.
 
 <!-- @type: treasure -->
 ##### Key of Inquiry
@@ -24992,7 +24992,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Project Goal:** 450
 
-**Effect:** While wearing this grotesque mask, you can use a maneuver to cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to discover hidden creatures, items, or mechanisms, but you have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests that don't use the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill. As a maneuver, you can return your eyes to your head and make the additional eyes disappear.
+**Effect:** While wearing this grotesque mask, you can use a maneuver to cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to discover hidden creatures, items, or mechanisms, but you have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) that don't use the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill. As a maneuver, you can return your eyes to your head and make the additional eyes disappear.
 
 While the eyes circle your head, you can use a maneuver to launch up to three of the eyes at one creature within 10 squares. Each eye you launch deals 5 damage to the target before it is destroyed. You can't reduce the number of eyes to fewer than two in this way. If you reduce the number of eyes to two, those eyes return to your head, and you can't use the mask again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
@@ -25097,7 +25097,7 @@ This section presents 4th-echelon trinket treasures in alphabetical order.
 
 **Project Goal:** 600
 
-**Effect:** The Gravekeeper's Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test as a main action. Once a spirit is trapped, you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to coax them into answering your questions:
+**Effect:** The Gravekeeper's Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) as a main action. Once a spirit is trapped, you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to coax them into answering your questions:
 
 - **≤11:** You can ask two questions of the spirit, one of which they must answer fully and honestly.
 - **12-16:** You can ask three questions, two of which the spirit must answer fully and honestly.
@@ -25135,7 +25135,7 @@ Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. Yo
 
 Your connection with leveled treasures doesn't just make them useful. It also makes them dangerous. Each leveled treasure is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three leveled treasures at a time. If you carry more leveled treasures, those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
 
-It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test during each respite:
+It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each respite:
 
 - **≤11:** One of your leveled treasures (chosen by the Director) grabs hold of your psyche. It forces you to sleepwalk or otherwise enter an active fugue state and discard the rest of your leveled treasures in locations you can't remember. If you want those items back, you'd better get looking before someone else finds them.
 - **12-16:** Your items work together to prevent you from moving until you pick three items and leave the rest behind.
@@ -25291,7 +25291,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to lie about or conceal your identity.
+**1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to lie about or conceal your identity.
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever you take damage, you can use a triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you do, you create an illusion of you [dying](scc:mcdm.heroes.v1/rule.health/dying) in your previous space, which fades at the end of your next turn.
 
@@ -25356,7 +25356,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** While you wield or carry this shield, you gain a +2 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus adds to the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus granted by other treasures. Additionally, once per turn when an adjacent enemy uses an ability, you can use a free triggered action to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver against that enemy. You can have any number of enemies [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way.
 
-**5th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +5, and you can use the shield's free triggered action against any enemy within 10 squares who uses an ability. Additionally, any enemy who uses the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the test.
+**5th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +5, and you can use the shield's free triggered action against any enemy within 10 squares who uses an ability. Additionally, any enemy who uses the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 **9th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +9. Additionally, you can use a maneuver to pull any number of targets the shield has [grabbed](scc:mcdm.heroes.v1/condition/grabbed) up to 5 squares.
 
@@ -25485,11 +25485,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** You can open or close the tome as a maneuver while speaking or thinking its full name. While the tome is open, it floats in an adjacent space and flips to specific pages at your command, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and you gain a +3 bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities.
+**1st Level:** You can open or close the tome as a maneuver while speaking or thinking its full name. While the tome is open, it floats in an adjacent space and flips to specific pages at your command, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore, and you gain a +3 bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities.
 
 **5th Level:** While the tome is open, the bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities increases to +5. Additionally, when you or a creature you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to uses a magic or psionic ability, you can use a triggered action to grant a +3 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
-**9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and when you use a heroic ability, its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost is reduced by 1 (to a minimum of 1).
+**9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore, and when you use a heroic ability, its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost is reduced by 1 (to a minimum of 1).
 
 <!-- @type: treasure-group | @treasure-type: weapon -->
 #### Leveled Weapon Treasures
@@ -25557,7 +25557,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **5th Level:** The weapon's damage bonus increases to +2. Additionally, when you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, you can use [fancy footwork](scc:mcdm.heroes.v1/feature.ability.swashbuckler/fancy-footwork) to knock them [prone](scc:mcdm.heroes.v1/condition/prone). You also earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 
-**9th Level:** The weapon's damage bonus increases to +3. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test you make using a skill you have from the interpersonal skill group.
+**9th Level:** The weapon's damage bonus increases to +3. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) you make using a skill you have from the interpersonal skill group.
 
 <!-- @type: treasure -->
 ##### Displacer
@@ -26045,7 +26045,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 - *Leverage:* You know a priceless secret. The Director chooses the type of person who would value this secret—usually a member of a particular faction, such as a Higaran [noble](scc:mcdm.heroes.v1/title/noble), or a type of person, such as a fence of stolen goods. When engaged in a negotiation with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can share this secret only once.
 - *Rare Books:* You add rare, ancient books to your collection. Whenever you undertake a research project, roll 1d6 for each dead language you know and add the total to the project roll.
-- *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests and take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests. You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
+- *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) and take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test). You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
 
 <!-- @type: title -->
 #### Battleaxe Diplomat
@@ -26056,9 +26056,9 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Iron Hand in Velvet Glove:* The first time during a negotiation that you make a test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill and don't make an argument that appeals to an NPC's motivation, you don't lower the NPC's patience or interest no matter the outcome of the roll.
-- *Truce!:* You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stop combat and start a negotiation.
-- *Warriors' Understanding:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with creatures you have fought against in combat encounters.
+- *Iron Hand in Velvet Glove:* The first time during a negotiation that you make a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill and don't make an argument that appeals to an NPC's motivation, you don't lower the NPC's patience or interest no matter the outcome of the roll.
+- *Truce!:* You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation.
+- *Warriors' Understanding:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with creatures you have fought against in combat encounters.
 
 <!-- @type: title -->
 #### Brawler
@@ -26072,7 +26072,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 - *Duck!:* When an enemy strikes you while a second creature is [flanking](scc:mcdm.heroes.v1/rule.combat/flanking) you, you can use a triggered action to redirect the [strike](scc:mcdm.heroes.v1/rule.combat/strike) against the second creature. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Furniture Fighter:* When you use a weapon ability with an improvised weapon or a weapon that isn't part of your kit, the ability benefits from your kit's melee weapon damage bonus.
 - *Headbutt:* While you are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) don't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when those conditions would impose one.
-- *If I Wanted You Dead, You'd Be Dead:* Whenever you defeat foes without killing any of them (including the foes you defeat to meet the prerequisite for this title), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests during negotiations with those foes.
+- *If I Wanted You Dead, You'd Be Dead:* Whenever you defeat foes without killing any of them (including the foes you defeat to meet the prerequisite for this title), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) during negotiations with those foes.
 
 <!-- @type: title -->
 #### City Rat
@@ -26084,7 +26084,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Discerning Shopper:* When looking for an item prerequisite for a crafting project, you can remember meeting someone who might have the item—or at least information about it.
-- *One with the Crowd:* While you're using one or more creatures as [cover](scc:mcdm.heroes.v1/rule.combat/cover), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and sneak.
+- *One with the Crowd:* While you're using one or more creatures as [cover](scc:mcdm.heroes.v1/rule.combat/cover), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to hide and sneak.
 - *Street Smart:* While in a settlement, you can't be surprised.
 
 <!-- @type: title -->
@@ -26094,7 +26094,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** You aren't a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) but have witnessed the death of a [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan).
 
-**Effect:** You aren't destined for a meaningful death, but you still might achieve one. When you're reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) but remain conscious, you can become [doomed](scc:mcdm.heroes.v1/title/doomed). If you do, you can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you automatically obtain a tier 3 outcome on tests and [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and you don't die until your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) reaches the negative of your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum. At the end of the encounter, you die.
+**Effect:** You aren't destined for a meaningful death, but you still might achieve one. When you're reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) but remain conscious, you can become [doomed](scc:mcdm.heroes.v1/title/doomed). If you do, you can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you automatically obtain a tier 3 outcome on [tests](scc:mcdm.heroes.v1/rule.test/test) and [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and you don't die until your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) reaches the negative of your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum. At the end of the encounter, you die.
 
 <!-- @type: title -->
 #### Dwarven Legionnaire
@@ -26133,8 +26133,8 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 Additionally, the Director assigns you one of the following benefits, as appropriate to the faction in question. The Director can also create a custom benefit for a type of faction not noted here. You can use this benefit only in a settlement where your faction has a presence, and once you use this benefit, you can't use it again until you complete a task for your faction.
 
-- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these tests. These project rolls take 10 minutes each and don't need to be made during a respite.
-- *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these tests. These project rolls take 10 uninterrupted minutes each and don't need to be made during a respite.
+- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) [tests](scc:mcdm.heroes.v1/rule.test/test) to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 minutes each and don't need to be made during a respite.
+- *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these [tests](scc:mcdm.heroes.v1/rule.test/test). These project rolls take 10 uninterrupted minutes each and don't need to be made during a respite.
 - *Martial Faction:* You recruit up to three minions with levels no greater than your own, of a type appropriate for the faction (such as **[human](scc:mcdm.heroes.v1/ancestry/human) guards**). These minions follow your orders for a day.
 - *Spy Faction:* You find an agent who can provide you with three pieces of information about the settlement you're in, such as the location of a hidden person, a secret entrance into a guarded area, or the negotiation motivation or pitfall of an important person.
 
@@ -26149,7 +26149,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** Choose one of the following benefits:
 
-- *Easy Marks:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using skills from the interpersonal and intrigue skill groups when influencing members of a community that you have saved.
+- *Easy Marks:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using skills from the interpersonal and intrigue skill groups when influencing members of a community that you have saved.
 - *Local Fame:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 - *A New Dawn:* Each time you finish a respite while in a community you have saved, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). This [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) disappears at the end of your next respite if it hasn't been used.
 
@@ -26182,7 +26182,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 - *Guess It's the Hard Way Then:* When combat begins and you aren't surprised, the first time you take damage before taking your turn, you halve that damage.
 - *Heedless Pursuer:* Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to deal yourself 1d6 damage that can't be reduced in any way. When you do, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and you can increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of any jump you make by 1 square, both until the end of your turn.
 - *Silver Shield:* You have a badge granted to you by your organization. While you wear it, you gain the My Life for Yours feature from the [censor](scc:mcdm.heroes.v1/class/censor) class. When you use that ability, you can't spend wrath unless you have the Wrath class feature.
-- *Trained Tracker:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to track criminals.
+- *Trained Tracker:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to track criminals.
 
 <!-- @type: title -->
 #### Monster Bane
@@ -26194,8 +26194,8 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 **Effect:** Choose one of the following benefits:
 
 - *Beast [Bane](scc:mcdm.heroes.v1/rule.dice/bane):* Creatures with the Animal keyword take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against you.
-- *Monster Soother:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to calm or tame nonsapient creatures.
-- *Monster Trophy:* You decorate your equipment with a trophy from a creature you defeated. While the trophy is visible, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to intimidate sapient creatures.
+- *Monster Soother:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to calm or tame nonsapient creatures.
+- *Monster Trophy:* You decorate your equipment with a trophy from a creature you defeated. While the trophy is visible, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to intimidate sapient creatures.
 
 <!-- @type: title -->
 #### Owed a Favor
@@ -26206,7 +26206,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** The faction will perform one favor for the party, provided it doesn't interfere with the faction's goals.
 
-Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a [noble](scc:mcdm.heroes.v1/title/noble) house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the skill.
+Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a [noble](scc:mcdm.heroes.v1/title/noble) house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill.
 
 <!-- @type: title -->
 #### Presumed Dead
@@ -26270,8 +26270,8 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *Deep-Sea Diver:* You can automatically swim at full speed while moving.
 - *Ship Speaker:* You magically know the location of any ship controlled by your party even while you aren't aboard. You can telepathically communicate with anyone on board one of your ships who understands a language, and they can respond, no matter your [distance](scc:mcdm.heroes.v1/rule.combat/distance) from the ship.
-- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to each other. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made while negotiating in this way.
-- *Trained Crewmember:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to handle air or sea vessels.
+- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to each other. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made while negotiating in this way.
+- *Trained Crewmember:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to handle air or sea vessels.
 
 <!-- @type: title -->
 #### Troupe Leading Player
@@ -26283,9 +26283,9 @@ The Director chooses one of the following benefits, based on the fate your capto
 **Effect:** Choose one of the following benefits:
 
 - *[Flying](scc:mcdm.heroes.v1/movement/fly) Circus:* When you are adjacent to a willing ally on their turn, you can use a triggered action to push them up to 2 squares if their [size](scc:mcdm.heroes.v1/rule.character/size) is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.
-- *Spotlight:* You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can't sneak or hide, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on tests made to perform any action secretly, and they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Lead, Music, or Perform skills.
-- *Supporting Player:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [group tests](scc:mcdm.heroes.v1/rule.test/group-test) using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on tests made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.
-- *Work the Crowd:* While any of your allies is playing music or performing, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to conceal objects, hide, pick pockets, or sneak.
+- *Spotlight:* You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can't sneak or hide, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to perform any action secretly, and they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the Lead, Music, or Perform skills.
+- *Supporting Player:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [group tests](scc:mcdm.heroes.v1/rule.test/group-test) using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on [tests](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test).
+- *Work the Crowd:* While any of your allies is playing music or performing, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to conceal objects, hide, pick pockets, or sneak.
 
 <!-- @type: title -->
 #### Wanted Dead or Alive
@@ -26298,7 +26298,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *Honor Among Thieves:* When negotiating with criminals, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) score is considered to be 2 higher than usual.
 - *Minion Mower:* When you make a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets a minion and at least one more minion is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) gains a +3 damage bonus.
-- *No, You're Under Arrest!:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver. Additionally, when you succeed on a test to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same [size](scc:mcdm.heroes.v1/rule.character/size) without them immediately noticing.
+- *No, You're Under Arrest!:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver. Additionally, when you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) to escape bonds or manacles, as part of the same maneuver, you can transfer the bonds or manacles to an adjacent creature of the same [size](scc:mcdm.heroes.v1/rule.character/size) without them immediately noticing.
 
 <!-- @type: title -->
 #### Zombie Slayer
@@ -26418,7 +26418,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 - *Artillerist:* You gain a +5 damage bonus when using a ship's weapons
 - *Black Flag:* You have a recognizable flag that strikes terror on the high seas. While your flag is [flying](scc:mcdm.heroes.v1/movement/fly) from your ship, crewmembers of other ships who have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the flag take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against your ship or its crew.
 - *Fearsome Reputation:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
-- *Scoundrel Tactics:* While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when you do so. You can use Disguise to hide your ship's identity or general type, Intimidate to convince another ship's crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.
+- *Scoundrel Tactics:* While aboard a ship, you can use the following skills to make a [test](scc:mcdm.heroes.v1/rule.test/test) to influence another ship up to 5 miles away whose crewmembers have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when you do so. You can use Disguise to hide your ship's identity or general type, Intimidate to convince another ship's crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.
 
 <!-- @type: title -->
 #### Faction Officer
@@ -26430,7 +26430,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** You are given a position of great authority in your faction. Additionally, you gain the following benefits:
 
 - *Requisition:* When you gain this title, you gain a 1st- or 2nd-echelon magic trinket of your choice from your faction (see Treasures earlier in this chapter). Whenever you gain a level, you can swap the trinket out for another one.
-- *You're the Boss:* Lower-ranking members of your faction follow your routine orders. In nonroutine matters, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to influence those characters' behavior.
+- *You're the Boss:* Lower-ranking members of your faction follow your routine orders. In nonroutine matters, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence those characters' behavior.
 
 <!-- @type: title -->
 #### Fey Friend
@@ -26443,7 +26443,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 - *Gift of Charm:* You have a skill of your choice from the interpersonal skill group.
 - *Gift of Foresight:* When resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score is considered to be 1 higher than usual.
-- *Gift of Knowledge:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests you make that use any skill from the lore skill group.
+- *Gift of Knowledge:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) you make that use any skill from the lore skill group.
 
 <!-- @type: title -->
 #### Giant Slayer
@@ -26471,7 +26471,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 >
 > **Special:** If the target is [size](scc:mcdm.heroes.v1/rule.character/size) 2 or larger, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on this ability.
 
-- *Up the Beanstalk:* You have the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. While you're climbing a creature, the creature has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you and you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to stay on the creature.
+- *Up the Beanstalk:* You have the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill. While you're climbing a creature, the creature has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you and you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stay on the creature.
 
 <!-- @type: title -->
 #### Godsworn
@@ -26496,7 +26496,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Mother Hen:* You can spend 10 uninterrupted minutes to psionically enhance up to five willing creatures within 10 squares of you who understand a language you know. For the next hour, you and each target can communicate telepathically with each other no matter the [distance](scc:mcdm.heroes.v1/rule.combat/distance) between you.
-- *Sneakers:* You gain the Sneak skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the Sneak skill. During [group tests](scc:mcdm.heroes.v1/rule.test/group-test), you can both use the Sneak skill and assist another hero using the Sneak skill.
+- *Sneakers:* You gain the Sneak skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the Sneak skill. During [group tests](scc:mcdm.heroes.v1/rule.test/group-test), you can both use the Sneak skill and assist another hero using the Sneak skill.
 - *Timely Distraction:* You have the following triggered action.
 
 > ###### Timely Distraction
@@ -26507,9 +26507,9 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 > |------------------|--------------------:|
 > | **📏 Ranged 10** | **🎯 One creature** |
 >
-> **Trigger:** An ally makes a test to lie to, pick the pocket of, hide from, or sneak by the target and doesn't like the outcome.
+> **Trigger:** An ally makes a [test](scc:mcdm.heroes.v1/rule.test/test) to lie to, pick the pocket of, hide from, or sneak by the target and doesn't like the outcome.
 >
-> **Effect:** You momentarily attract the target's notice to let your ally reroll their test. Once you use this ability, you can't use it again against the same target for 1 hour.
+> **Effect:** You momentarily attract the target's notice to let your ally reroll their [test](scc:mcdm.heroes.v1/rule.test/test). Once you use this ability, you can't use it again against the same target for 1 hour.
 
 <!-- @type: title -->
 #### Knight
@@ -26567,13 +26567,13 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 - *Boffin:* You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver (see below).
 - *Caustic Alchemy:* You have your choice of the 1st-level [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) features Coat the Blade or [Smoke Bomb](scc:mcdm.heroes.v1/feature.shadow.level-1/smoke-bomb) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). When you use that feature, you can't spend insight unless you have the Insight class feature.
-- *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
+- *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to. This disguise lets you automatically succeed on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the Disguise skill based solely on visual identification.
 
 ##### Boffin Properties
 
 Taking the Boffin benefit lets you use the following boffin properties as a maneuver:
 
-- Make a test that uses the Disguise skill. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test.
+- Make a [test](scc:mcdm.heroes.v1/rule.test/test) that uses the Disguise skill. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test).
 - One mundane lock you touch is unlocked.
 - Choose a square within 10 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to it. You can observe the area around that square as if you were in it.
 - You throw the boffin up to 10 squares, where it explodes in a 5 cube. Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster... though they don't like doing so too often.
@@ -26655,7 +26655,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Made of Teeth:* Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).
 - *Soulsight:* Any creature within 2 squares can't be hidden from you.
 
-**Special:** When you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.
+**Special:** When you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.
 
 <!-- @type: title -->
 #### Diabolist
@@ -26700,7 +26700,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
   - *Fog:* Visibility is reduced to 6 squares.
   - *High Winds:* The speed of wind-powered vessels is doubled.
   - *Light Winds:* No effects due to weather.
-  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. On a failure, the vessel needs repairs and moves at half speed until those repairs are made.
+  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test). On a failure, the vessel needs repairs and moves at half speed until those repairs are made.
 
 <!-- @type: title -->
 #### Maestro
@@ -26743,7 +26743,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 - *Masterpiece:* The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.
 - *Research Dividends:* You gain the item prerequisite for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the project source language for that enhancement.
-- *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
+- *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
 - *Strong Hands Make Light Work:* Whenever you make a project roll, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) as the project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: title -->
@@ -26755,7 +26755,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *I Know How to Talk to These People:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
+- *I Know How to Talk to These People:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
 - *Noble Splendor:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 - *Retinue:* The number of followers you can recruit increases by two.
 
@@ -26771,7 +26771,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Prismacore Eyes:* Exposure to prismacore has given your eyes a mirrorlike sheen. You have psychic immunity 10, creatures can't use magic or psionic abilities or other effects to determine your location or read your thoughts unless you allow them to, and you gain a +3 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) against magic or psionic abilities.
-- *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
+- *Stellar Knowledge:* You gain the Mechanics skill. If you already have this skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain the item prerequisite and project source for a psionic trinket.
 - *[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider) Training:* You gain 2 ancestry points to spend on purchased [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 
 <!-- @type: title -->
@@ -26805,7 +26805,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** You train or command at least three lower-level members of your class.
 
-**Effect:** You can travel with a student who shares your class. The student has the statistics of a 1st-level member of your class and has the same skills as you, but doesn't engage in combat. They can perform any out-of-combat tasks a 1st-level member of your class can perform. Whenever they make a test to assist you in a task, they can't obtain less than a tier 2 outcome on the test.
+**Effect:** You can travel with a student who shares your class. The student has the statistics of a 1st-level member of your class and has the same skills as you, but doesn't engage in combat. They can perform any out-of-combat tasks a 1st-level member of your class can perform. Whenever they make a [test](scc:mcdm.heroes.v1/rule.test/test) to assist you in a task, they can't obtain less than a tier 2 outcome on the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: feature-group | @id: 4-echelon-titles -->
 ### 4th-Echelon Titles
@@ -26821,7 +26821,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 
 **Effect:** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used during the competition increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Best of the Best:* Choose a skill you used during the competition. You gain a +4 bonus to tests made using that skill instead of a +2 bonus
+- *Best of the Best:* Choose a skill you used during the competition. You gain a +4 bonus to [tests](scc:mcdm.heroes.v1/rule.test/test) made using that skill instead of a +2 bonus
 - *Glory and Riches:* You earn 2 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 - *I'll Just Take the Prize:* You gain a trinket or leveled treasure of the Director's choice.
 
@@ -26853,7 +26853,7 @@ Additionally, choose one of the following benefits:
 
 **Effect:** Your choice of your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Cosmic Revelation:* When you make a test with a skill from the lore skill group and obtain a tier 1 or tier 2 outcome, you can instead obtain a tier 3 outcome. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+- *Cosmic Revelation:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) with a skill from the lore skill group and obtain a tier 1 or tier 2 outcome, you can instead obtain a tier 3 outcome. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Mind Over Matter:* Whenever you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can end one condition on yourself.
 - *Rearrange the Game Pieces:* You can reach behind the curtain and alter reality. At the start of combat, choose yourself or any creature within 5 squares. The chosen target must move up to their speed to a space you choose, but can't enter [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) or terrain that could impose a condition on them. The target doesn't appear to move or [teleport](scc:mcdm.heroes.v1/movement/teleport) to that space—they are simply there. No one but you has any memory of the target's previous position.
 
@@ -26900,10 +26900,10 @@ Additionally, choose one of the following benefits:
 
 **Effect:** Your choice of your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Calm Heads Prevail:* When you make a test to stop combat and start a negotiation, you always obtain a tier 3 outcome.
-- *Drop Your Sword:* When you succeed on a test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, you can cause affected creatures to drop any items they are holding.
+- *Calm Heads Prevail:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) to stop combat and start a negotiation, you always obtain a tier 3 outcome.
+- *Drop Your Sword:* When you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, you can cause affected creatures to drop any items they are holding.
 - *Hear Me Out:* While you are present in a negotiation, an NPC's starting patience increases by 3 (to a maximum of 5).
-- *Many Paths to Peace:* When you make a test with a skill from the interpersonal skill group, you can use any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice for the test.
+- *Many Paths to Peace:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) with a skill from the interpersonal skill group, you can use any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice for the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: title -->
 #### Reborn
@@ -26938,7 +26938,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 *To reach Giant's Foot by dawn, we'll have to run every step of the way. Let's get moving.*
 
-**Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a test as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) that obtains a full success.
+**Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a [test](scc:mcdm.heroes.v1/rule.test/test) as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) that obtains a full success.
 
 **Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
@@ -26956,7 +26956,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 **Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Bye-Bye:* You can use a maneuver to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and each willing ally within 5 squares of you to new positions within 10 squares of your original starting point. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
-- *Laughs at Locks:* Whenever you make a test to open a lock or break a restraint, you don't need any tools and you automatically obtain a tier 3 outcome.
+- *Laughs at Locks:* Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to open a lock or break a restraint, you don't need any tools and you automatically obtain a tier 3 outcome.
 - *Slippery:* You can't be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) against your will.
 
 <!-- @type: rule | @group: resource | @id: renown -->
@@ -27421,7 +27421,7 @@ Less than five hours after her father died, Khravila arrived at the Astragalus C
 
 The elves called off their attacks and Khravila brokered peace between them and the [humans](scc:mcdm.heroes.v1/ancestry/human). When her brother arrived with their kin folk some hours later—itself an impressive feat—Khravila handed him the oriflamme, and collapsed, dead. It was Khravila the chieftain who ran. It was Khravila the Unstoppable who died, a legendary [orc](scc:mcdm.heroes.v1/ancestry/orc) hero.
 
-Khravila teaches the virtue of persistence, endurance, and—above all—wits. Not only the wits necessary to foil the tests that barred her way, but to conceive her legendary plan in the first place, and the dedication to pull it off. "Perhaps another [orc](scc:mcdm.heroes.v1/ancestry/orc) could have run," her brother said. "But only Khravila could have bluffed."
+Khravila teaches the virtue of persistence, endurance, and—above all—wits. Not only the wits necessary to foil the [tests](scc:mcdm.heroes.v1/rule.test/test) that barred her way, but to conceive her legendary plan in the first place, and the dedication to pull it off. "Perhaps another [orc](scc:mcdm.heroes.v1/ancestry/orc) could have run," her brother said. "But only Khravila could have bluffed."
 
 #### Heroes of the Hakaan
 
@@ -28110,9 +28110,9 @@ After your opening overview, you should break down roughly how much time you thi
 You can break down your game into the following categories:
 
 - **Combat:** How often are the heroes using violence to overcome challenges?
-- **Exploration:** How often are the heroes exploring new environments that are difficult to traverse? How often do you expect the heroes to make tests using skills from the exploration skill group?
-- **Interpersonal:** How often are the heroes using negotiation and conversing with NPCs to overcome challenges? How often do you expect the heroes to make tests using skills from the interpersonal skill group?
-- **Intrigue:** How often are the heroes solving mysteries, finding double agents, and skulking about the shadows to achieve their goals? How embroiled will they get in the politics of competing people and factions? How often do you expect the heroes to make tests using skills from the intrigue skill group?
+- **Exploration:** How often are the heroes exploring new environments that are difficult to traverse? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the exploration skill group?
+- **Interpersonal:** How often are the heroes using negotiation and conversing with NPCs to overcome challenges? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the interpersonal skill group?
+- **Intrigue:** How often are the heroes solving mysteries, finding double agents, and skulking about the shadows to achieve their goals? How embroiled will they get in the politics of competing people and factions? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the intrigue skill group?
 
 These are the primary types of scenes found in many campaigns, but you could also add your own. For instance, if you want to run a campaign full of diabolical brain teasers and traps, you could add a "Puzzles" category to your campaign pitch document.
 
@@ -28369,7 +28369,7 @@ What character flaw does this NPC have? They might be selfish when it comes to w
 
 ##### Helping the Heroes
 
-Why would this NPC want to help the heroes during this adventure? They don't have to be fully on board with helping the characters at first. It might take some convincing, in the form of a test, a negotiation, or a task the heroes need to accomplish to win the NPC's help. But there should be at least a kernel of motivation in the NPC already—or they have no reason to help. It could be that they don't want the villain to succeed, they see a profitable opportunity in working with the heroes, or they feel they owe the heroes a favor thanks to a previous adventure.
+Why would this NPC want to help the heroes during this adventure? They don't have to be fully on board with helping the characters at first. It might take some convincing, in the form of a [test](scc:mcdm.heroes.v1/rule.test/test), a negotiation, or a task the heroes need to accomplish to win the NPC's help. But there should be at least a kernel of motivation in the NPC already—or they have no reason to help. It could be that they don't want the villain to succeed, they see a profitable opportunity in working with the heroes, or they feel they owe the heroes a favor thanks to a previous adventure.
 
 ##### Denying Aid
 
@@ -28430,7 +28430,7 @@ When you're preparing scenes for an adventure, keep in mind that **you cannot an
 
 It's best to set up scenes along the lines of: "Here's the situation when the heroes arrive." The game world is an authentic setting. Whether or not the heroes show up, bandits still pillage and plunder, politicians still plot and backstab, and vast sandstorms still sweep across the desert. Each scene should thus start with the question: "What's happening when the heroes arrive?"
 
-After setting up your scene, make a list of the narrative elements the heroes can discover or achieve in that scene that can advance the story of the adventure. When running the game, you'll allow the players to approach how they discover or achieve those elements in their own way. However, you might have ideas as to how they could accomplish those goals, such as which tests they might make to find clues leading to a murderer, or a possible negotiation to secure safe passage across the sea. Note these possible solutions and any rules you need to prepare to make use of them as you set up your scenes.
+After setting up your scene, make a list of the narrative elements the heroes can discover or achieve in that scene that can advance the story of the adventure. When running the game, you'll allow the players to approach how they discover or achieve those elements in their own way. However, you might have ideas as to how they could accomplish those goals, such as which [tests](scc:mcdm.heroes.v1/rule.test/test) they might make to find clues leading to a murderer, or a possible negotiation to secure safe passage across the sea. Note these possible solutions and any rules you need to prepare to make use of them as you set up your scenes.
 
 Not everything the heroes do is worthy of a scene, and you don't need to play out adventures in real time. If the characters want to walk from a farm to a castle, don't turn the walk into a scene unless doing so is fun for you and the players, or if something significant happens along the way (for instance, a bandit attack or the discovery of a dead body). You don't need to narrate every shopping trip or boat journey if they're just going to be a bore. It's a game! Run the scenes that are fun for you and that move the campaign story along, and your games will be better for it.
 
@@ -28457,15 +28457,15 @@ When preparing an exploration scene, you'll want to come up with answers to the 
 - What information or objects do the heroes need to recover in this scene that will help them advance the story?
 - What bonus pieces of information and other rewards can they earn during this scene if they explore fully and successfully?
 
-Information or objects the heroes need to obtain from an exploration scene to advance the story should have some way of being found without a test. Simply by entering a monarch's private chambers, the heroes learn that the king is dead and has been slain by a knife, because his body and the murder weapon are plainly visible. They should also automatically notice that the knife bears the crest of a noble house, providing an obvious path to continue the adventure. Other details in the room might help speed along their investigation of who killed the king, but they can find the bare minimum of what they need to continue for free.
+Information or objects the heroes need to obtain from an exploration scene to advance the story should have some way of being found without a [test](scc:mcdm.heroes.v1/rule.test/test). Simply by entering a monarch's private chambers, the heroes learn that the king is dead and has been slain by a knife, because his body and the murder weapon are plainly visible. They should also automatically notice that the knife bears the crest of a noble house, providing an obvious path to continue the adventure. Other details in the room might help speed along their investigation of who killed the king, but they can find the bare minimum of what they need to continue for free.
 
-It's okay for a test to be the *best* way to get necessary information or objects. But if the heroes fail or don't make the test, make sure there's another way—likely a more difficult way—for the story to continue. When searching a necromancer's tower for a book that will help stop a ritual, characters might miss all the clues pointing to the book. But they can later run into the necromancer's apprentices, who know where the book is—and who aren't willing to give up that information without a difficult fight.
+It's okay for a [test](scc:mcdm.heroes.v1/rule.test/test) to be the *best* way to get necessary information or objects. But if the heroes fail or don't make the [test](scc:mcdm.heroes.v1/rule.test/test), make sure there's another way—likely a more difficult way—for the story to continue. When searching a necromancer's tower for a book that will help stop a ritual, characters might miss all the clues pointing to the book. But they can later run into the necromancer's apprentices, who know where the book is—and who aren't willing to give up that information without a difficult fight.
 
-Other information and rewards the heroes can earn in an exploration scene can be hidden behind tests that can be failed or missed. If heroes don't think to check under the dead king's desk, they don't find the chalice that rolled under there. If they do find the chalice but fail a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to examine it, they don't learn that the chalice carries the residue of a rare poison, potentially leading them to a nearby alchemist who sells it. They can still solve the mystery without this information,
+Other information and rewards the heroes can earn in an exploration scene can be hidden behind [tests](scc:mcdm.heroes.v1/rule.test/test) that can be failed or missed. If heroes don't think to check under the dead king's desk, they don't find the chalice that rolled under there. If they do find the chalice but fail a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to examine it, they don't learn that the chalice carries the residue of a rare poison, potentially leading them to a nearby alchemist who sells it. They can still solve the mystery without this information,
 
 but it'll take them a little longer. However, the longer it takes them, the more time the assassin has to prepare for their arrival, so missing those details has consequences!
 
-Once you have your list of information and objects the heroes can find, make a list of where those things can be found, and how. Some reveals might require a test. Some might simply require a player to say that their hero performs a certain action, such as searching a bookshelf or desk. But as you note what's required to find information or objects, don't try to cover every option. Even if you do so, the players with their multiple brains will think of other options that you never would have, and you'll have to adjudicate their choices on the spot. Knowing where and how information and objects are hidden or guarded from the heroes is more important than knowing how they're going to obtain those things. If you can think of at least one option and are open to other possibilities, the heroes have a fair shot.
+Once you have your list of information and objects the heroes can find, make a list of where those things can be found, and how. Some reveals might require a [test](scc:mcdm.heroes.v1/rule.test/test). Some might simply require a player to say that their hero performs a certain action, such as searching a bookshelf or desk. But as you note what's required to find information or objects, don't try to cover every option. Even if you do so, the players with their multiple brains will think of other options that you never would have, and you'll have to adjudicate their choices on the spot. Knowing where and how information and objects are hidden or guarded from the heroes is more important than knowing how they're going to obtain those things. If you can think of at least one option and are open to other possibilities, the heroes have a fair shot.
 
 ##### Setting the Scene
 
@@ -28491,45 +28491,45 @@ Allow the heroes' investigation to drive the action. In an exploration scene, yo
 
 ##### When to Call for a Test
 
-The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a test. However, following the tracks that lead out of the cave toward the bandits' new hideout does require a test, because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no test is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
+The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a [test](scc:mcdm.heroes.v1/rule.test/test). However, following the tracks that lead out of the cave toward the bandits' new hideout does require a [test](scc:mcdm.heroes.v1/rule.test/test), because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no [test](scc:mcdm.heroes.v1/rule.test/test) is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
 
-Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
+Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) explains [tests](scc:mcdm.heroes.v1/rule.test/test) in detail and provides examples of different difficulties of [tests](scc:mcdm.heroes.v1/rule.test/test). A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for [tests](scc:mcdm.heroes.v1/rule.test/test) only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer [tests](scc:mcdm.heroes.v1/rule.test/test) than you're used to—and that's the way the game is meant to be played!
 
 Additionally, if a player has a particularly clever and plausible idea for attempting to overcome a challenge, you can have them automatically succeed on a task even if failure would make the story more interesting. It's important to reward clever thinking with success once in a while, so that the players are encouraged to think outside the box and create memorable moments!
 
-By contrast, sometimes a player will propose what they think is a plausible or clever idea, but you'll think there's no way it could ever succeed. It's fine for you to tell the player, "That's not going to work." You're under no obligation to allow a player to attempt a test that should automatically fail.
+By contrast, sometimes a player will propose what they think is a plausible or clever idea, but you'll think there's no way it could ever succeed. It's fine for you to tell the player, "That's not going to work." You're under no obligation to allow a player to attempt a [test](scc:mcdm.heroes.v1/rule.test/test) that should automatically fail.
 
 ##### Test Difficulty
 
-Tests in *Draw Steel* have three levels of outcome, and all players know those outcomes and the dice rolls that generate them. Making a test always means something because every test comes with risks and stakes! Before you call for a test, you need to set a difficulty for the test of easy, moderate, or hard.
+[Tests](scc:mcdm.heroes.v1/rule.test/test) in *Draw Steel* have three levels of outcome, and all players know those outcomes and the dice rolls that generate them. Making a [test](scc:mcdm.heroes.v1/rule.test/test) always means something because every [test](scc:mcdm.heroes.v1/rule.test/test) comes with risks and stakes! Before you call for a [test](scc:mcdm.heroes.v1/rule.test/test), you need to set a difficulty for the [test](scc:mcdm.heroes.v1/rule.test/test) of easy, moderate, or hard.
 
-A hero always succeeds on an **easy test**. It's just a question of whether they might incur a consequence or earn a reward alongside success. For this reason, you should use easy tests sparingly in your adventures.
+A hero always succeeds on an **easy [test](scc:mcdm.heroes.v1/rule.test/test)**. It's just a question of whether they might incur a consequence or earn a reward alongside success. For this reason, you should use easy [tests](scc:mcdm.heroes.v1/rule.test/test) sparingly in your adventures.
 
-A hero who has a modifier of +1 or more on a test will likely succeed on a **moderate test**. Success with a consequence is common for heroes if their bonus to the test is lower than +4, so they're succeeding at a cost. Odds are that most of the tests you'll call for in your games will be moderate tests. They give most heroes a decent chance of success without it being a sure thing, and the story gets interesting whenever consequences are involved.
+A hero who has a modifier of +1 or more on a [test](scc:mcdm.heroes.v1/rule.test/test) will likely succeed on a **moderate [test](scc:mcdm.heroes.v1/rule.test/test)**. Success with a consequence is common for heroes if their bonus to the [test](scc:mcdm.heroes.v1/rule.test/test) is lower than +4, so they're succeeding at a cost. Odds are that most of the [tests](scc:mcdm.heroes.v1/rule.test/test) you'll call for in your games will be moderate [tests](scc:mcdm.heroes.v1/rule.test/test). They give most heroes a decent chance of success without it being a sure thing, and the story gets interesting whenever consequences are involved.
 
-**Hard tests** do exactly what it says on the tin. Success on a hard test requires a roll of 17 or higher, which means a hero has better than a 50 percent chance of success only if they have a +6 or higher bonus on the test. At 1st level, that means a character using their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), using a skill, and having an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test. Failure on a hard test often means consequences beyond failing, making hard tests really risky! You likely find that hard tests aren't as common as moderate tests in your game, but they're used more than easy tests.
+**Hard [tests](scc:mcdm.heroes.v1/rule.test/test)** do exactly what it says on the tin. Success on a hard [test](scc:mcdm.heroes.v1/rule.test/test) requires a roll of 17 or higher, which means a hero has better than a 50 percent chance of success only if they have a +6 or higher bonus on the [test](scc:mcdm.heroes.v1/rule.test/test). At 1st level, that means a character using their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), using a skill, and having an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test). Failure on a hard [test](scc:mcdm.heroes.v1/rule.test/test) often means consequences beyond failing, making hard [tests](scc:mcdm.heroes.v1/rule.test/test) really risky! You likely find that hard [tests](scc:mcdm.heroes.v1/rule.test/test) aren't as common as moderate [tests](scc:mcdm.heroes.v1/rule.test/test) in your game, but they're used more than easy [tests](scc:mcdm.heroes.v1/rule.test/test).
 
 ##### Setting Difficulty During Play
 
-When you call for a test, you can tell the player making the test the difficulty. Saying "Make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test" can create a dramatic moment at the table as everyone holds their collective breath to see whether the outcome is success, failure, or failure with an additional consequence.
+When you call for a [test](scc:mcdm.heroes.v1/rule.test/test), you can tell the player making the [test](scc:mcdm.heroes.v1/rule.test/test) the difficulty. Saying "Make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test)" can create a dramatic moment at the table as everyone holds their collective breath to see whether the outcome is success, failure, or failure with an additional consequence.
 
-On the other hand, not sharing the difficulty of every test with the players lets you do a little fudging of those difficulties if you want to. You might call for a test and then realize that a test really wasn't necessary even as the player makes the roll. It's easy to simply say, "Hey, sorry. I shouldn't have asked for a test. You just do the thing." But if you want to play it cool, remember that every level of an easy test is a success. It's simply a matter of whether a consequence or reward comes with it. If a hero gets an 11 or lower on a test and you think they should still succeed, then the test was easy difficulty.
+On the other hand, not sharing the difficulty of every [test](scc:mcdm.heroes.v1/rule.test/test) with the players lets you do a little fudging of those difficulties if you want to. You might call for a [test](scc:mcdm.heroes.v1/rule.test/test) and then realize that a [test](scc:mcdm.heroes.v1/rule.test/test) really wasn't necessary even as the player makes the roll. It's easy to simply say, "Hey, sorry. I shouldn't have asked for a [test](scc:mcdm.heroes.v1/rule.test/test). You just do the thing." But if you want to play it cool, remember that every level of an easy [test](scc:mcdm.heroes.v1/rule.test/test) is a success. It's simply a matter of whether a consequence or reward comes with it. If a hero gets an 11 or lower on a [test](scc:mcdm.heroes.v1/rule.test/test) and you think they should still succeed, then the [test](scc:mcdm.heroes.v1/rule.test/test) was easy difficulty.
 
 ##### Test Outcomes
 
-After a hero makes a test, it's up to you to narrate and decide the outcome, keeping some basic guidelines in mind.
+After a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic guidelines in mind.
 
-If a test is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a future test, losing a mundane item, making a friendly NPC angry, or even earning you a little future Malice. The consequence is up to you!
+If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a future [test](scc:mcdm.heroes.v1/rule.test/test), losing a mundane item, making a friendly NPC angry, or even earning you a little future Malice. The consequence is up to you!
 
-If a test is a **failure**, the hero doesn't do what they set out to do. But even though they don't incur a formal consequence, negative effects can still accompany a failed test depending on circumstances. If a hero attempts to move silently past a group of guards, a failure on the test might draw the guards' attention, but the character should have a chance to react before the alarm is raised. But if the character had incurred a failure with a consequence, they would be spotted immediately as the shouting guards rush to the attack.
+If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure**, the hero doesn't do what they set out to do. But even though they don't incur a formal consequence, negative effects can still accompany a failed [test](scc:mcdm.heroes.v1/rule.test/test) depending on circumstances. If a hero attempts to move silently past a group of guards, a failure on the [test](scc:mcdm.heroes.v1/rule.test/test) might draw the guards' attention, but the character should have a chance to react before the alarm is raised. But if the character had incurred a failure with a consequence, they would be spotted immediately as the shouting guards rush to the attack.
 
-If a test is a **success with a consequence**, the hero succeeds but suffers a significant negative effect. They might sneak past the guards successfully but lose their belt pouch in the process, forcing them to decide whether to return for it or move on.
+If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **success with a consequence**, the hero succeeds but suffers a significant negative effect. They might sneak past the guards successfully but lose their belt pouch in the process, forcing them to decide whether to return for it or move on.
 
-If a test is a **success**, the hero does what they set out to do! You can even let a player narrate the outcome of a successful test by asking them, "How did you pull this off ?"
+If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **success**, the hero does what they set out to do! You can even let a player narrate the outcome of a successful [test](scc:mcdm.heroes.v1/rule.test/test) by asking them, "How did you pull this off ?"
 
-If the test is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same test an automatic success, grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future test for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby NPC to come forth and offer aid, or earn the group a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). A reward on a test is yours to choose.
+If the [test](scc:mcdm.heroes.v1/rule.test/test) is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same [test](scc:mcdm.heroes.v1/rule.test/test) an automatic success, grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future [test](scc:mcdm.heroes.v1/rule.test/test) for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby NPC to come forth and offer aid, or earn the group a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). A reward on a [test](scc:mcdm.heroes.v1/rule.test/test) is yours to choose.
 
-Sample consequences and rewards for tests are detailed in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
+Sample consequences and rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) are detailed in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
 #### Creating and Running Hazards
 
@@ -28541,7 +28541,7 @@ The hazards you'll create and use in your adventures come in one of three types:
 
 - **Activated Perpetual:** An activated perpetual hazard might be triggered by a tripwire, a loud noise, a pressure plate, or some other mechanism that responds to the heroes' actions. The hazard then remains active until it's dealt with, such as a pendulum scythe trap that's activated by a tripwire and then swings indefinitely across a bridge.
 - **Activated One-Time:** An activated one-time hazard is triggered and then creates one instance of danger. Sometimes that danger ends almost as soon as it begins, such as a trap that fires a single poison dart. Other times, that one instance of danger can create other lasting problems the heroes must deal with, such as a cave-in that deals damage, then leaves the party trapped in an abandoned mine.
-- **Obstruction:** Obstructions are hazards the heroes must find their way over or around, such as pools of acid, chasms, and rivers of lava. Since obstruction hazards are typically static, a hero takes damage or suffers other effects from an obstruction only as the result of a failed test made to traverse the hazard.
+- **Obstruction:** Obstructions are hazards the heroes must find their way over or around, such as pools of acid, chasms, and rivers of lava. Since obstruction hazards are typically static, a hero takes damage or suffers other effects from an obstruction only as the result of a failed [test](scc:mcdm.heroes.v1/rule.test/test) made to traverse the hazard.
 
 > **Terrain as Hazards**
 >
@@ -28549,9 +28549,9 @@ The hazards you'll create and use in your adventures come in one of three types:
 
 ##### Activated Hazard Triggers
 
-All activated hazards have some kind of trigger, and the heroes should be allowed to make tests—typically [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests—to notice and then disable that trigger. The deadlier the hazard, the harder the test.
+All activated hazards have some kind of trigger, and the heroes should be allowed to make [tests](scc:mcdm.heroes.v1/rule.test/test)—typically [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [tests](scc:mcdm.heroes.v1/rule.test/test)—to notice and then disable that trigger. The deadlier the hazard, the harder the [test](scc:mcdm.heroes.v1/rule.test/test).
 
-If a hero doesn't think to search for a trigger before stumbling into a hazard, you can still call for a test to let them notice the trigger when the hazard is about to activate, provided it makes sense to do so. If a hero is about to cross over a tripwire that triggers a trap, you might call for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice the wire at the point when it can be clearly seen. On a failed test, the character walks into the tripwire and activates the trap.
+If a hero doesn't think to search for a trigger before stumbling into a hazard, you can still call for a [test](scc:mcdm.heroes.v1/rule.test/test) to let them notice the trigger when the hazard is about to activate, provided it makes sense to do so. If a hero is about to cross over a tripwire that triggers a trap, you might call for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice the wire at the point when it can be clearly seen. On a failed [test](scc:mcdm.heroes.v1/rule.test/test), the character walks into the tripwire and activates the trap.
 
 Once a trigger is noticed, the heroes might get a chance to disarm it if that's possible. There's probably nothing to be done short of renovating an old mine to stop it from collapsing when anyone damages its walls, but the characters can try to disable a magic rune in a corridor that [teleports](scc:mcdm.heroes.v1/movement/teleport) any creature moving over it into the middle of an ocean. Just remember that trying and failing to disarm a trigger might trigger the hazard!
 
@@ -28559,9 +28559,9 @@ Once a trigger is noticed, the heroes might get a chance to disarm it if that's 
 
 The damage dealt by a hazard depends on two factors. First, how deadly would you like the hazard to be? Do you want it to leave the heroes just a little banged up, or should it cost them a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or two? Second, is the hazard a perpetual hazard or a one-time hazard? If it's an obstruction, answer this question by asking whether you expect a creature to be able to take damage from the obstruction more than once? If the answer is yes, treat it as a perpetual hazard in terms of damage. If not, it's a one-time hazard.
 
-A hero might get a chance to mitigate damage from a hazard, such as by making an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to outrun or dodge an avalanche, or making a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to resist the psychic damage of a psionic cloud. You can decide what sort of test needs to be made based on the circumstances.
+A hero might get a chance to mitigate damage from a hazard, such as by making an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to outrun or dodge an avalanche, or making a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) to resist the psychic damage of a psionic cloud. You can decide what sort of [test](scc:mcdm.heroes.v1/rule.test/test) needs to be made based on the circumstances.
 
-The One-Time Hazard Deadliness and Perpetual Hazard Deadliness tables show the damage dealt by hazards. Hazards are organized by level, indicating their relative threat compared to the level of the heroes. Each entry features three damage expressions for a tier 1, tier 2, and tier 3 outcome on the test made to mitigate the hazard's damage. The worse the test outcome, the higher the damage.
+The One-Time Hazard Deadliness and Perpetual Hazard Deadliness tables show the damage dealt by hazards. Hazards are organized by level, indicating their relative threat compared to the level of the heroes. Each entry features three damage expressions for a tier 1, tier 2, and tier 3 outcome on the [test](scc:mcdm.heroes.v1/rule.test/test) made to mitigate the hazard's damage. The worse the [test](scc:mcdm.heroes.v1/rule.test/test) outcome, the higher the damage.
 
 ###### One-Time Hazard Deadliness Table
 
@@ -28598,7 +28598,7 @@ The One-Time Hazard Deadliness and Perpetual Hazard Deadliness tables show the d
 Some hazards deal effects in addition to or instead of damage. A hazard that is part of a combat encounter can impose just about any effect, including conditions, and can have a real impact on the story. However, if the heroes are facing a hazard outside of combat, you want any effects it imposes to be something more impactful and lasting. The following effects each reflect the interesting and lasting consequences a noncombat hazard should have:
 
 - A character loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- A curse leaves a character with a demonic-sounding voice that imposes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests.
+- A curse leaves a character with a demonic-sounding voice that imposes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test).
 - A character receives a gaping wound that causes them to take 1d10 damage whenever they roll a natural 2 before they next finish a respite.
 - A character is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed into the middle of a nearby body of water.
 
@@ -28606,7 +28606,7 @@ But although lasting and interesting consequences are fun, make sure they don't 
 
 #### Creating and Running Interaction
 
-Interaction scenes are similar to exploration scenes, except that the heroes obtain the information and objects they need by talking to one or more NPCs instead of exploring an area. Just like with an exploration encounter, you make a list of necessary information that the NPCs can offer to the heroes freely. NPCs might then have other information or objects they can be convinced to give to the heroes if they make a persuasive argument, do something kind for the NPC, or succeed on a test.
+Interaction scenes are similar to exploration scenes, except that the heroes obtain the information and objects they need by talking to one or more NPCs instead of exploring an area. Just like with an exploration encounter, you make a list of necessary information that the NPCs can offer to the heroes freely. NPCs might then have other information or objects they can be convinced to give to the heroes if they make a persuasive argument, do something kind for the NPC, or succeed on a [test](scc:mcdm.heroes.v1/rule.test/test).
 
 Interaction scenes aren't full negotiations, which are reserved for adventure-changing conversations. Still, keep in mind that different NPCs react differently to various forms of persuasion. A coward might be easy to intimidate, while a battle-hardened soldier might be impossible to awe with displays of ferocity. A bribe might work for a corrupt noble, but a goodly queen who already has wealth beyond measure likely has no interest in whatever riches the heroes possess.
 
@@ -28620,7 +28620,7 @@ When assigning negotiation stats, keep the following guidelines in mind:
 
 - The higher an NPC's starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the NPC.
 - The higher an NPC's starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your NPC a higher patience score.
-- The more motivations an NPC has, the more likely the heroes are to make easier tests while engaging the NPC.
+- The more motivations an NPC has, the more likely the heroes are to make easier [tests](scc:mcdm.heroes.v1/rule.test/test) while engaging the NPC.
 - The more pitfalls an NPC has, the more likely the heroes are to stumble into a topic that turns negotiation sour. However, too many pitfalls can feel like a "Gotcha!" setup to players, especially if they don't have time to do a little research or reconnaissance on the NPC before going into the negotiation.
 
 #### Plan the Outcomes
@@ -28653,11 +28653,11 @@ A negotiation should always be initiated by the heroes, and the character (as wi
 
 New Directors and players might feel a bit overwhelmed by negotiation, wondering if they need the rules at all for roleplaying a quid pro quo discussion. If you'd rather play without the negotiation rules, go for it! The *Draw Steel* designers aren't going to come to your house and take your books if you do so. However, the negotiation rules exist to provide you with robust mechanics that create an exciting back and forth between two parties, with high stakes and drama.
 
-An NPC's interest helps you determine their attitude toward the party's proposals, while their patience indicates how much time they're willing to give the heroes. In the same way that [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) tells you when a monster is done with a fight, patience tells you when an NPC is done talking and is ready to deal. The negotiation rules mean you never have to just roleplay a conversation until you and the players become bored with the scene, then someone makes a single test to see what happens. The negotiation rules let you roleplay with structure, risks, and rewards!
+An NPC's interest helps you determine their attitude toward the party's proposals, while their patience indicates how much time they're willing to give the heroes. In the same way that [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) tells you when a monster is done with a fight, patience tells you when an NPC is done talking and is ready to deal. The negotiation rules mean you never have to just roleplay a conversation until you and the players become bored with the scene, then someone makes a single [test](scc:mcdm.heroes.v1/rule.test/test) to see what happens. The negotiation rules let you roleplay with structure, risks, and rewards!
 
-The most important thing to remember when it comes to negotiation is that the rules are meant to work with you—not against you. They're flexible on purpose. If a hero makes an excellent argument that you think should work without a test, then it does. If a hero makes an unfortunate argument that should fail no matter what, then they're out of luck. You're empowered to run negotiation in whatever way will be the most fun for you and your players.
+The most important thing to remember when it comes to negotiation is that the rules are meant to work with you—not against you. They're flexible on purpose. If a hero makes an excellent argument that you think should work without a [test](scc:mcdm.heroes.v1/rule.test/test), then it does. If a hero makes an unfortunate argument that should fail no matter what, then they're out of luck. You're empowered to run negotiation in whatever way will be the most fun for you and your players.
 
-If players are having trouble roleplaying during a negotiation, try running your next negotiation without announcing that the characters are now in a negotiation. Simply ask them for tests when appropriate and have the NPC respond based on the test outcomes and their motivations and pitfalls. This approach might help your players shake off focusing on the rules to simply roleplay as you track interest and patience on the side.
+If players are having trouble roleplaying during a negotiation, try running your next negotiation without announcing that the characters are now in a negotiation. Simply ask them for [tests](scc:mcdm.heroes.v1/rule.test/test) when appropriate and have the NPC respond based on the [test](scc:mcdm.heroes.v1/rule.test/test) outcomes and their motivations and pitfalls. This approach might help your players shake off focusing on the rules to simply roleplay as you track interest and patience on the side.
 
 #### Research and Reconnaissance
 
@@ -28673,7 +28673,7 @@ One important decision you should make ahead of time is how upfront the NPC will
 
 During negotiation, let the players talk freely about their strategy if that fits their playstyle and sense of fun. You can intervene if an argument crops up, but otherwise, let the players plot, scheme, and guess while you play it cool.
 
-Once a negotiation starts, the players and characters can obtain information about the NPC involved only by making tests, using their characters' features, or through engaging in conversation with the NPC. Whenever the NPC makes an offer to the heroes after a test, make it clear what the terms of the offer are. While some NPCs might speak cryptically, it's best for the players to understand what they're getting their heroes into. It can be fun to trick the heroes, but many players don't feel the fun when they get tricked instead.
+Once a negotiation starts, the players and characters can obtain information about the NPC involved only by making [tests](scc:mcdm.heroes.v1/rule.test/test), using their characters' features, or through engaging in conversation with the NPC. Whenever the NPC makes an offer to the heroes after a [test](scc:mcdm.heroes.v1/rule.test/test), make it clear what the terms of the offer are. While some NPCs might speak cryptically, it's best for the players to understand what they're getting their heroes into. It can be fun to trick the heroes, but many players don't feel the fun when they get tricked instead.
 
 > **Sharing Interest and Patience**
 >
@@ -29007,25 +29007,25 @@ You can use [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test) to play o
 
 When you prepare a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you'll want to write down some key information.
 
-First, make a list of potential challenges the heroes can face during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual tests made during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but since you can't predict what approaches the players will take to their characters' tests, don't worry about covering every scenario. You can always fall back on earning Malice and giving out [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as a default consequence and reward (see Test Outcomes in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+First, make a list of potential challenges the heroes can face during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). This list should be at least as long as the number of successes the heroes must achieve to earn a total success. You might also prepare a list of consequences and rewards that could come up for individual [tests](scc:mcdm.heroes.v1/rule.test/test) made during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but since you can't predict what approaches the players will take to their characters' [tests](scc:mcdm.heroes.v1/rule.test/test), don't worry about covering every scenario. You can always fall back on earning Malice and giving out [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) as a default consequence and reward (see [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 You'll then need to create the three outcomes of the montage: total success, partial success, and total failure. With a total success, the heroes should accomplish whatever they set out to do. With a partial success, they should accomplish their goal at a cost, create a new problem for themselves after doing what they set out to do, or not quite accomplish their full goal. With a total failure, the characters fail to do whatever they set out to do, but this result should not grind the story to a halt. Maybe they lose track of the fleeing lackeys they were pursuing, but they know they can now raid a mage's tower to find that information. Even if failure costs the characters dearly, they should still have options for continuing the adventure.
 
 #### Running Montage Tests
 
-When you run a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make tests.
+When you run a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), start by setting the scene for the players and listing the various challenges the heroes must overcome. Allow the players to strategize about the order in which they'll tackle these challenges and make [tests](scc:mcdm.heroes.v1/rule.test/test).
 
-When you adjudicate individual tests as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), do so as you would any other test (see Adjudicating Tests in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Individual tests should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a test made later as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Do whatever makes sense for the heroes' actions in the narrative.
+When you adjudicate individual [tests](scc:mcdm.heroes.v1/rule.test/test) as part of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), do so as you would any other [test](scc:mcdm.heroes.v1/rule.test/test) (see Adjudicating [Tests](scc:mcdm.heroes.v1/rule.test/test) in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Individual [tests](scc:mcdm.heroes.v1/rule.test/test) should have rewards and consequences when appropriate. In addition to the usual options for rewards or consequences, you can choose to have those outcomes grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a [test](scc:mcdm.heroes.v1/rule.test/test) made later as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Do whatever makes sense for the heroes' actions in the narrative.
 
-After each test, narrate the hero's failure or success in such a way that the other players can understand if and how the challenge has been overcome. Your description might even spark some new ideas for what the characters can do next.
+After each [test](scc:mcdm.heroes.v1/rule.test/test), narrate the hero's failure or success in such a way that the other players can understand if and how the challenge has been overcome. Your description might even spark some new ideas for what the characters can do next.
 
-If a hero decides to tackle a problem using an ability, trait, or other feature instead of a test and it makes sense for them to do so, allow it. In a lot of cases, you can treat that approach as an automatic success that allows the group to overcome one of the challenges of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but you could decide that the success incurs a consequence. Alternatively, maybe the use of an ability or trait is beneficial enough to provide an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future test, or maybe it's so effective that it counts for multiple successes or solves the entire [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) in one fell swoop! Always reward the clever actions of the players.
+If a hero decides to tackle a problem using an ability, trait, or other feature instead of a [test](scc:mcdm.heroes.v1/rule.test/test) and it makes sense for them to do so, allow it. In a lot of cases, you can treat that approach as an automatic success that allows the group to overcome one of the challenges of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), but you could decide that the success incurs a consequence. Alternatively, maybe the use of an ability or trait is beneficial enough to provide an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future [test](scc:mcdm.heroes.v1/rule.test/test), or maybe it's so effective that it counts for multiple successes or solves the entire [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) in one fell swoop! Always reward the clever actions of the players.
 
 At the end of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), narrate the outcome for the players as you describe the overall success or failure and any consequences. Then let them know the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is done!
 
 #### Montage Twist!
 
-You can break up the individual tests within a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by introducing a quick combat encounter, negotiation, or trap into the scene, or by adding more challenges to overcome. Keep track of the heroes' successes and failures, and decide how many tests they must attempt before introducing your twist. A single twist in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can often be introduced at the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round.
+You can break up the individual [tests](scc:mcdm.heroes.v1/rule.test/test) within a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) by introducing a quick combat encounter, negotiation, or trap into the scene, or by adding more challenges to overcome. Keep track of the heroes' successes and failures, and decide how many [tests](scc:mcdm.heroes.v1/rule.test/test) they must attempt before introducing your twist. A single twist in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) can often be introduced at the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) round.
 
 When a twist is introduced, make sure the players understand that the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) has been paused but isn't over. Then when the twist has been established and dealt with, continue the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
@@ -29046,11 +29046,11 @@ Fire blazes in several buildings whose occupants need to be rescued. Elsewhere, 
 The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test):
 
 - **Bucket Brigades:** Characters can organize the would-be firefighters into disciplined bucket brigades, or can fight the fire directly in some other way. *Suggested* C*haracteristics:* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, Intimidate, Lead.
-- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
+- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge.
+- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge. The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 - **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Intimidate, Lead, Persuade.
 - **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Handle Animals, Lift, Ride.
-- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
+- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge.
 - **Use the Freed Horses (if the Free the Horses challenge was successful):**  Characters can put the horses to work clearing rubble or bringing people to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Drive, Handle Animals, Ride.
 
 ###### Optional Twists
@@ -29059,7 +29059,7 @@ At the end of the first [montage test](scc:mcdm.heroes.v1/rule.test/montage-test
 
 - **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Climb, Gymnastics, Jump.
 - **Cause of the Fire:** At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the hostile cause of the fire appears—a squad of an invading army, a dragon, a team of arsonists, and so forth. The characters must engage in a standard or hard encounter with this threat.
-- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lift, Persuade.
+- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two [tests](scc:mcdm.heroes.v1/rule.test/test), each of which nets a success or a failure for the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lift, Persuade.
 
 ###### Montage Test Outcomes
 
@@ -29079,7 +29079,7 @@ The palace is well defended, with exterior patrols always on the alert. The few 
 
 ###### Montage Challenges
 
-Half the work of any successful infiltration is done before setting foot in the target site. The players can choose to have the heroes make individual tests as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) before they attempt to enter the palace. One round of tests can be made this way, and those tests don't affect the alarm level within the palace (see below).
+Half the work of any successful infiltration is done before setting foot in the target site. The players can choose to have the heroes make individual [tests](scc:mcdm.heroes.v1/rule.test/test) as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) before they attempt to enter the palace. One round of [tests](scc:mcdm.heroes.v1/rule.test/test) can be made this way, and those [tests](scc:mcdm.heroes.v1/rule.test/test) don't affect the alarm level within the palace (see below).
 
 The following challenges can be part of this initial preparation:
 
@@ -29089,17 +29089,17 @@ The following challenges can be part of this initial preparation:
 - **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alertness, Eavesdrop, Track.
 - **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Disguise, Forgery, Lie.
 
-When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a test as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a test, the alarm level decreases, to a minimum of 0. While the alarm level is 1, tests made inside the palace by the characters as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). While the alarm level is 2, such tests have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a [test](scc:mcdm.heroes.v1/rule.test/test) as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a [test](scc:mcdm.heroes.v1/rule.test/test), the alarm level decreases, to a minimum of 0. While the alarm level is 1, [tests](scc:mcdm.heroes.v1/rule.test/test) made inside the palace by the characters as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). While the alarm level is 2, such [tests](scc:mcdm.heroes.v1/rule.test/test) have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
-The first time any hero fails a test made as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) while the alarm level is 2, they encounter guards and must engage in a hard combat encounter. The second time any hero fails such a test while the alarm level is 2, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is a total failure.
+The first time any hero fails a [test](scc:mcdm.heroes.v1/rule.test/test) made as part of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) while the alarm level is 2, they encounter guards and must engage in a hard combat encounter. The second time any hero fails such a [test](scc:mcdm.heroes.v1/rule.test/test) while the alarm level is 2, the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is a total failure.
 
 The following challenges can be part of the heroes' infiltration:
 
 - **Aerial Route:** Characters can follow a path that leads along catwalks or high ledges. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Climb, Gymnastics, Jump.
 - **Avoid Traffic:** By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Search, Track.
-- **Lie Low:** Once while the alarm level is greater than 0, the heroes can find a place to hide for a bit, reducing the alarm level by 1. This activity doesn't require a test or generate a success or failure.
+- **Lie Low:** Once while the alarm level is greater than 0, the heroes can find a place to hide for a bit, reducing the alarm level by 1. This activity doesn't require a [test](scc:mcdm.heroes.v1/rule.test/test) or generate a success or failure.
 - **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Alchemy, Perform, Sabotage.
-- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Lie, Search.
+- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Lie, Search.
 - **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility). *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 
 ###### Optional Twist
@@ -29162,8 +29162,8 @@ The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/ru
 - **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Interrogate, Persuade, Rumors.
 - **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test).
 - **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
-- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): [Might](scc:mcdm.heroes.v1/rule.character/might). Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
+- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): [Might](scc:mcdm.heroes.v1/rule.character/might). Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the [test](scc:mcdm.heroes.v1/rule.test/test) for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Optional Twist
 
@@ -29203,7 +29203,7 @@ At the end of the first round of the [montage test](scc:mcdm.heroes.v1/rule.test
 
 **Predatory Monster:** The characters stumble into or are stalked by a monstrous predator, and must engage in a standard combat encounter to overcome the threat or drive it off. If any character has obtained a success on the Scout Ahead challenge, you can let the characters make a [group test](scc:mcdm.heroes.v1/rule.test/group-test) to sneak past or set an ambush for the monster.
 
-**Unexpected Hazard:** A natural hazard such as an avalanche, rockslide, or wildfire interrupts the journey. Each hero must make a test of your choice to avoid the hazard, losing a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) on a failure.
+**Unexpected Hazard:** A natural hazard such as an avalanche, rockslide, or wildfire interrupts the journey. Each hero must make a [test](scc:mcdm.heroes.v1/rule.test/test) of your choice to avoid the hazard, losing a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) on a failure.
 
 ###### Montage Test Outcomes
 
@@ -29342,7 +29342,7 @@ Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the p
 
 ##### Hazards and Traps
 
-If the heroes overcome a complicated hazard or trap that required multiple tests to detect and survive, each earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories).
+If the heroes overcome a complicated hazard or trap that required multiple [tests](scc:mcdm.heroes.v1/rule.test/test) to detect and survive, each earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Puzzles
 
