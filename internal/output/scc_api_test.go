@@ -171,6 +171,40 @@ func TestSCCAPIGenerator(t *testing.T) {
 	})
 }
 
+func TestSCCAPIGenerator_PrunesStaleResolveFiles(t *testing.T) {
+	dir := t.TempDir()
+	base := "https://steelcompendium.io/v2"
+	stale := filepath.Join(dir, "v1", "resolve", "mcdm.heroes.v1/feature.trait.fury.level-1/old-code.json")
+	kept := filepath.Join(dir, "v1", "resolve", "mcdm.heroes.v1/feature.fury.level-1/kept-code.json")
+
+	// Run 1: two codes written.
+	gen1 := &SCCAPIGenerator{OutputDir: dir, BaseURL: base}
+	_ = gen1.WriteSection("mcdm.heroes.v1/feature.trait.fury.level-1/old-code",
+		&content.ParsedContent{Frontmatter: map[string]any{"name": "Old", "type": "trait"}, ItemID: "old-code"})
+	_ = gen1.WriteSection("mcdm.heroes.v1/feature.fury.level-1/kept-code",
+		&content.ParsedContent{Frontmatter: map[string]any{"name": "Kept", "type": "feature"}, ItemID: "kept-code"})
+	if err := gen1.Finalize(); err != nil {
+		t.Fatalf("run 1 Finalize: %v", err)
+	}
+	if _, err := os.Stat(stale); err != nil {
+		t.Fatalf("run 1 should have written %s: %v", stale, err)
+	}
+
+	// Run 2: fresh generator, same dir, with old-code removed from the registry.
+	gen2 := &SCCAPIGenerator{OutputDir: dir, BaseURL: base}
+	_ = gen2.WriteSection("mcdm.heroes.v1/feature.fury.level-1/kept-code",
+		&content.ParsedContent{Frontmatter: map[string]any{"name": "Kept", "type": "feature"}, ItemID: "kept-code"})
+	if err := gen2.Finalize(); err != nil {
+		t.Fatalf("run 2 Finalize: %v", err)
+	}
+	if _, err := os.Stat(stale); !os.IsNotExist(err) {
+		t.Errorf("stale resolve file should have been pruned: %s (stat err=%v)", stale, err)
+	}
+	if _, err := os.Stat(kept); err != nil {
+		t.Errorf("kept resolve file should still exist: %v", err)
+	}
+}
+
 func TestSCCAPIGenerator_AliasWithCanonical(t *testing.T) {
 	dir := t.TempDir()
 

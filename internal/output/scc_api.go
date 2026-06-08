@@ -147,7 +147,14 @@ func (g *SCCAPIGenerator) Finalize() error {
 	}
 
 	// 4. resolve/{scc}.json (per-entry files)
+	// Wipe the resolve tree first so codes that were renamed or removed since the
+	// last run don't linger as stale dead-link files (the index/scc/types files
+	// above are single files and self-correct on overwrite; resolve/ accumulates).
+	// See FOLLOWUPS #7.
 	resolveDir := filepath.Join(apiDir, "resolve")
+	if err := os.RemoveAll(resolveDir); err != nil {
+		return fmt.Errorf("clean resolve dir: %w", err)
+	}
 	for _, e := range sorted {
 		relPath := e.SCC + ".json"
 		if err := g.writeJSON(filepath.Join(resolveDir, relPath), e); err != nil {
