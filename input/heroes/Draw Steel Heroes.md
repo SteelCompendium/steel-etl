@@ -43,9 +43,9 @@ Tactics is about: "How are we going to do that?" We're going to... surround them
 
 In a tactical game, *positioning matters*. So our game is played on a grid. Effects and [distances](scc:mcdm.heroes.v1/rule.combat/distance) are measured in squares. This means all players are focused on the same problem, and there is no ambiguity regarding where the heroes and villains are in relation to each other. The hobgoblin troopers are setting themselves up in a line to stop our [tactician](scc:mcdm.heroes.v1/class/tactician) and [fury](scc:mcdm.heroes.v1/class/fury) from getting into [melee](scc:mcdm.heroes.v1/rule.combat/melee) with the hobgoblin war mage. We're all aware of what's happening, and we can talk about what we're going to do to stop it.
 
-That means *teamwork matters*. That's why the order of combat works the way it does—to encourage the players to plan! "Okay, you use [Concussive Slam](scc:mcdm.heroes.v1/feature.ability.time-raider/concussive-slam) on that trooper, it'll push him back, and on my turn, I can use Squad! Forward! to get us all into [melee](scc:mcdm.heroes.v1/rule.combat/melee) with the death captain." We think focusing on teamwork also makes the game more heroic!
+That means *teamwork matters*. That's why the order of combat works the way it does—to encourage the players to plan! "Okay, you use [Concussive Slam](scc:mcdm.heroes.v1/feature.ability.time-raider/concussive-slam) on that trooper, it'll push him back, and on my [turn](scc:mcdm.heroes.v1/rule.combat/turn), I can use Squad! Forward! to get us all into [melee](scc:mcdm.heroes.v1/rule.combat/melee) with the death captain." We think focusing on teamwork also makes the game more heroic!
 
-In a tactical game, you have many choices each combat round. You are never reduced to just swinging your sword. You have options. If we do a good job, you don't feel as if you outlasted your opponents because you wore their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) down before they could reduce yours to 0-you feel like you *beat* those hobgoblins! Through stealth and sorcery, coordination and ferocity!
+In a tactical game, you have many choices each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). You are never reduced to just swinging your sword. You have options. If we do a good job, you don't feel as if you outlasted your opponents because you wore their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) down before they could reduce yours to 0-you feel like you *beat* those hobgoblins! Through stealth and sorcery, coordination and ferocity!
 
 As you play with the same group of characters, you learn what they can all do. You discover synergies, "combos." Some of them intended by the designers, some not! You start to learn these unique characters, and to rely on them to do their cool things. It's a great feeling when another player comes up with a cool plan that relies on your unique abilities.
 
@@ -73,7 +73,7 @@ Basically, we worry only about those things you'd see your characters doing in a
 
 Closely tied to the heroic keyword, the cinematic keyword is about how we like abilities and features to be strongly evocative. You can imagine your character doing or saying these things. "In All This Confusion" is a good name for the [shadow's](scc:mcdm.heroes.v1/class/shadow) ability to slip out of [melee](scc:mcdm.heroes.v1/rule.combat/melee) and retreat to safety. The text of the ability says how it works, but the name creates an awareness that explains *how* it's working.
 
-When Sir Vanazor the [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) [fury](scc:mcdm.heroes.v1/class/fury) leaps onto a goblin war spider, cleaving through the goblins riding the creature in a single turn, you *experience* that action in your mind. It feels like a movie. It doesn't feel simply as if you rolled well, but like an epic scene, complete with slow motion and a Carpenter Brut soundtrack.
+When Sir Vanazor the [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) [fury](scc:mcdm.heroes.v1/class/fury) leaps onto a goblin war spider, cleaving through the goblins riding the creature in a single [turn](scc:mcdm.heroes.v1/rule.combat/turn), you *experience* that action in your mind. It feels like a movie. It doesn't feel simply as if you rolled well, but like an epic scene, complete with slow motion and a Carpenter Brut soundtrack.
 
 You should imagine your [tactician](scc:mcdm.heroes.v1/class/tactician) character leading the battle, granting your allies [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), extra maneuvers. *Coordinating* the battle. That's what the name implies. And if we've done a good job, when you read through your character's abilities, you think, "Yes! This is what I was imagining! I can't wait to do this!"
 
@@ -97,7 +97,7 @@ We know that many folks are coming to this game having only experienced d20 fant
 
 - **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're [dying](scc:mcdm.heroes.v1/rule.health/dying) to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
 - **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll)—the rolls you make to determine success both in and out of combat—if you have a decent [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) bonus to add to those rolls. And if you have a specific skill that applies to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made as a [test](scc:mcdm.heroes.v1/rule.test/test) outside of combat, you'll do even better.
-- **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
+- **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad [turn](scc:mcdm.heroes.v1/rule.combat/turn)! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
 - **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence)—the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
 - **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *MCDM Discord* and ask. We've got tons of awesome community members ready to help!
@@ -119,7 +119,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Agility](scc:mcdm.heroes.v1/rule.character/agility):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's coordination and nimbleness.
 
-**[Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) Maneuver:** A maneuver that allows a creature to choose an enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against that enemy before the start of the aiding creature's next turn gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+**[Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) Maneuver:** A maneuver that allows a creature to choose an enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against that enemy before the start of the aiding creature's next [turn](scc:mcdm.heroes.v1/rule.combat/turn) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 **[Ally](scc:mcdm.heroes.v1/rule.combat/ally):** A creature who is willingly friendly to another creature.
 
@@ -171,7 +171,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Climb](scc:mcdm.heroes.v1/movement/climb-or-swim):** A movement mode that allows a creature to climb without using additional squares of movement. A creature without "climb" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry or the temporary ability to climb must use 2 squares of movement to climb 1 square.
 
-**[Combat Round](scc:mcdm.heroes.v1/rule.combat/combat-round):** A segment of a combat encounter in which each creature participating in the battle takes a turn.
+**[Combat Round](scc:mcdm.heroes.v1/rule.combat/combat-round):** A segment of a combat encounter in which each creature participating in the battle takes a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **[Complication](scc:mcdm.heroes.v1/chapter/complications):** A dramatic narrative twist that deepens a hero's backstory and gives them a rules benefit and drawback. Complications are an optional rule.
 
@@ -217,9 +217,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Damaging Terrain](scc:mcdm.heroes.v1/movement/damaging-terrain):** An area of obstacles that deal damage to creatures who are in the area or move through it. A creature can't shift into or out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain), and can't jump out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain).
 
-**[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
+**[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their [turn](scc:mcdm.heroes.v1/rule.combat/turn): use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
-**[Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Main Action:** A main action that allows a creature to impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on all [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them until the start of their next turn. Additionally, the creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities.
+**[Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Main Action:** A main action that allows a creature to impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on all [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, the creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities.
 
 **[Devil](scc:mcdm.heroes.v1/ancestry/devil):** An ancestry from the Seven Cities of Hell.
 
@@ -255,7 +255,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Elementalist](scc:mcdm.heroes.v1/class/elementalist):** A class for a hero mage who wields the elemental forces of the timescape—earth, green, fire, the void, and more.
 
-**[EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn):** An abbreviation used in an ability [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) for an effect that lasts until the end of the affected creature's next turn.
+**[EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn):** An abbreviation used in an ability [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) for an effect that lasts until the end of the affected creature's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **[Enemy](scc:mcdm.heroes.v1/rule.combat/enemy):** A creature who is hostile to another creature.
 
@@ -281,11 +281,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Follower](scc:mcdm.heroes.v1/rule.general/follower):** An [NPC](scc:mcdm.heroes.v1/rule.general/npc) dedicated to helping a hero. Many of the actions of a [follower](scc:mcdm.heroes.v1/rule.general/follower) are controlled by a player.
 
-**[Free Maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver):** A maneuver that doesn't count against the one maneuver per turn a creature can take. A free maneuver can only be used by a creature on their turn.
+**[Free Maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver):** A maneuver that doesn't count against the one maneuver per [turn](scc:mcdm.heroes.v1/rule.combat/turn) a creature can take. A free maneuver can only be used by a creature on their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** The simplest and most basic weapon attack any creature can make. A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is most often used on another creature's turn, when a rule gives a creature not taking their turn an opportunity to make a quick hit against a foe. A creature can also make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a main action, but it's not the best bang for buck.
+**[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** The simplest and most basic weapon attack any creature can make. A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is most often used on another creature's [turn](scc:mcdm.heroes.v1/rule.combat/turn), when a rule gives a creature not taking their [turn](scc:mcdm.heroes.v1/rule.combat/turn) an opportunity to make a quick hit against a foe. A creature can also make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a main action, but it's not the best bang for buck.
 
-**[Free Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any turn, including their own, but only when a specific trigger occurs. There is no limit to the number of free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) a creature can take during combat.
+**[Free Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any [turn](scc:mcdm.heroes.v1/rule.combat/turn), including their own, but only when a specific trigger occurs. There is no limit to the number of free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) a creature can take during combat.
 
 **[Frightened](scc:mcdm.heroes.v1/condition/frightened):** A condition that causes a creature to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against the source of their fear. The creature can't willingly move closer to the source of their fear, and that source gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against the creature.
 
@@ -385,7 +385,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Negotiation](scc:mcdm.heroes.v1/chapter/negotiation):** A social interaction encounter where the heroes attempt to make a deal with an [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 
-**[No Action](scc:mcdm.heroes.v1/rule.combat/turn):** Denoting a very simple activity that can be done anytime during combat, and generally without limit. A creature can undertake "no action" activities even when it isn't their turn.
+**[No Action](scc:mcdm.heroes.v1/rule.combat/turn):** Denoting a very simple activity that can be done anytime during combat, and generally without limit. A creature can undertake "no action" activities even when it isn't their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **[NPC](scc:mcdm.heroes.v1/rule.general/npc):** A nonplayer character, usually created and run by the Director.
 
@@ -475,7 +475,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Save Ends](scc:mcdm.heroes.v1/rule.general/saving-throw):** An effect noted as "(save ends)" lasts until the creature affected by it succeeds on a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), or until a combat encounter ends.
 
-**[Saving Throw](scc:mcdm.heroes.v1/rule.general/saving-throw):** A creature makes a saving throw to end a "save ends" effect at the end of their turn. They roll a d10, and if the roll is 6 or higher, the effect ends.
+**[Saving Throw](scc:mcdm.heroes.v1/rule.general/saving-throw):** A creature makes a saving throw to end a "save ends" effect at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn). They roll a d10, and if the roll is 6 or higher, the effect ends.
 
 **[Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) Maneuver:** A maneuver that allows a creature to make a [test](scc:mcdm.heroes.v1/rule.test/test) to locate nearby creatures who are hidden from them.
 
@@ -553,7 +553,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A piece of supernatural equipment, from weapons and armor to implements and more.
 
-**[Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any turn, including their own, but only when a specific trigger occurs. Each creature can use one triggered action per round.
+**[Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any [turn](scc:mcdm.heroes.v1/rule.combat/turn), including their own, but only when a specific trigger occurs. Each creature can use one triggered action per round.
 
 **[Trinket](scc:mcdm.heroes.v1/rule.treasure/trinket):** A treasure that can be used at will without any reduction in its power.
 
@@ -800,9 +800,9 @@ Whenever [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) are availabl
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), allowing you to increase the [damage](scc:mcdm.heroes.v1/rule.damage/damage) or [potency](scc:mcdm.heroes.v1/rule.character/potency) of an ability. (See [Surges](scc:mcdm.heroes.v1/rule.resource/surge) in [Classes](scc:mcdm.heroes.v1/chapter/classes).)
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) when you fail a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), letting you succeed on the save instead.
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll a [test](scc:mcdm.heroes.v1/rule.test/test). You must use the new roll.
-- You can spend 2 [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) on your turn or when you take [damage](scc:mcdm.heroes.v1/rule.damage/damage) (no action required) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) before taking the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
+- You can spend 2 [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) or when you take [damage](scc:mcdm.heroes.v1/rule.damage/damage) (no action required) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) before taking the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
-You can use only one [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) benefit per turn or per [test](scc:mcdm.heroes.v1/rule.test/test). Unless the Director decides otherwise, unused [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of a session.
+You can use only one [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) benefit per [turn](scc:mcdm.heroes.v1/rule.combat/turn) or per [test](scc:mcdm.heroes.v1/rule.test/test). Unless the Director decides otherwise, unused [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of a session.
 
 > **Optional Rule: [Hero Tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) Don't Reset**
 >
@@ -1163,7 +1163,7 @@ Your class might grant your hero a kit that helps define your approach to martia
 
 #### 7. Add Free Strikes
 
-A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a combat ability you can use when it's not your turn, representing the simplest and most basic weapon attack you can make. An enemy is foolish enough to walk away from you in [melee](scc:mcdm.heroes.v1/rule.combat/melee)? [Free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)! Every hero has a [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapon free strike and a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike. They're all the same—until modified by your kit or class—and it's up to you to decide what exactly your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) are. A thrown dagger? A punch? The design is intended to let you use your imagination.
+A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a combat ability you can use when it's not your [turn](scc:mcdm.heroes.v1/rule.combat/turn), representing the simplest and most basic weapon attack you can make. An enemy is foolish enough to walk away from you in [melee](scc:mcdm.heroes.v1/rule.combat/melee)? [Free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)! Every hero has a [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapon free strike and a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike. They're all the same—until modified by your kit or class—and it's up to you to decide what exactly your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) are. A thrown dagger? A punch? The design is intended to let you use your imagination.
 
 You can also make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) on your turn to represent using weapons your hero isn't otherwise themed to use. A [wode elf](scc:mcdm.heroes.v1/ancestry/wode-elf) master archer can stab a too-close enemy with a dagger as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), and a greataxe-wielding [orc](scc:mcdm.heroes.v1/ancestry/orc) [fury](scc:mcdm.heroes.v1/class/fury) can use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) to hurl a handaxe at a flying enemy staying annoyingly out of [melee](scc:mcdm.heroes.v1/rule.combat/melee) range.
 
@@ -1859,7 +1859,7 @@ Select one [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) gra
 <!-- @type: feature -->
 ##### Remember Your Oath (1 Point)
 
-As a maneuver, you can recite the following oath. Until the start of your next turn, whenever you make a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), you succeed on a 4 or higher.
+As a maneuver, you can recite the following oath. Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever you make a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), you succeed on a 4 or higher.
 
 *Even should the sun stop in the sky Even should the night last a thousand years I will stand forever I shall not yield Those who suffer and yearn for justice I am your sword and shield I will yield no ground I will speak no lies I will stand against all tyrants Until the last villain dies*
 
@@ -1985,7 +1985,7 @@ You can carve a rune onto your skin with 10 uninterrupted minutes of work, which
 
 **Detection:** Pick a specific type of creature (such as goblins or [humans](scc:mcdm.heroes.v1/ancestry/human)) or object (such as gems or potions). Your rune glows softly when you are within 20 squares of any creature or object of that type, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the creature or object. You can change the type of creature or object as a maneuver.
 
-**Light:** Your skin sheds light for 10 squares. You can turn this light on and off as a maneuver.
+**Light:** Your skin sheds light for 10 squares. You can [turn](scc:mcdm.heroes.v1/rule.combat/turn) this light on and off as a maneuver.
 
 **Voice:** As a maneuver, you can communicate telepathically with a willing creature you have met before and who is within 1 mile of you. You must know the creature's name, and they must speak and understand a language you know. You and the creature can respond to one another as if having a spoken conversation. You can communicate with a different creature by changing the rune.
 
@@ -2097,7 +2097,7 @@ Llyander turned and marched off. "Come!" they called. The children ran to catch 
 
 "I enjoy the favor of Lord Tear," Llyander said. "We are old friends. With me as your guide, he will treat you well—likely bestow favor upon you! You should be in anticipation of great treasure." They smiled.
 
-The elf stopped suddenly and spun toward them, serious but kindly. They pointed to each of the children in turn.
+The elf stopped suddenly and spun toward them, serious but kindly. They pointed to each of the children in [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 "I will instruct you on the proper etiquette, but remember this: Lord Tear will [test](scc:mcdm.heroes.v1/rule.test/test) us. Some [tests](scc:mcdm.heroes.v1/rule.test/test) for you and some for me. The [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) and the [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) are but distant cousins. You will hear much that is polite, much that is flattering, but it is all another kind of glamor. It hides deep tensions, recently exacerbated by the treaty with Ajax."
 
@@ -2254,7 +2254,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Hig
 <!-- @type: feature -->
 ##### Glamor of Terror (2 Points)
 
-When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make that creature [frightened](scc:mcdm.heroes.v1/condition/frightened) of you until the end of their next turn.
+When a foe strikes, you reverse the magic of your glamor to instill fear into their heart. Whenever you take damage from a creature, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make that creature [frightened](scc:mcdm.heroes.v1/condition/frightened) of you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Graceful Retreat (1 Point)
@@ -2474,7 +2474,7 @@ Some of your names, I will see written in future textbooks. But some of your nam
 <!-- @type: feature | @id: detect-the-supernatural -->
 #### Signature Trait: Detect the Supernatural
 
-As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next turn, you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
+As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
 
 #### Purchased Human Traits
 
@@ -2623,7 +2623,7 @@ Your lawful nature and quick reflexes mean you give no quarter to creatures tryi
 <!-- @type: feature -->
 ##### Keeper of Order (2 Points)
 
-Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you. Once per round when you or an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature makes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to remove an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll, to turn a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) into an [edge](scc:mcdm.heroes.v1/rule.dice/edge), or to turn a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) into a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+Your connection to Axiom, the plane of Uttermost Law, allows you to manage chaos around you. Once per round when you or an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature makes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to remove an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll, to [turn](scc:mcdm.heroes.v1/rule.combat/turn) a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) into an [edge](scc:mcdm.heroes.v1/rule.dice/edge), or to [turn](scc:mcdm.heroes.v1/rule.combat/turn) a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) into a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 <!-- @type: feature -->
 ##### Lightning Nimbleness (2 Points)
@@ -2648,7 +2648,7 @@ Your ordered mind can't be caught off guard. You can't be made [surprised](scc:m
 <!-- @type: feature -->
 ##### Useful Emotion (1 Point)
 
-Velloparatha—the worldsickness—might hinder you, but you know how to turn your pain into something your enemies feel. At the start of any combat, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
+Velloparatha—the worldsickness—might hinder you, but you know how to [turn](scc:mcdm.heroes.v1/rule.combat/turn) your pain into something your enemies feel. At the start of any combat, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: ancestry | @id: orc -->
 ## Orc
@@ -2792,7 +2792,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Glo
 <!-- @type: feature -->
 ##### Bloodfire Rush (1 Point)
 
-The magic coursing through your veins makes you run faster in the heat of battle. The first time in any combat round that you take damage, you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the round.
+The magic coursing through your veins makes you run faster in the heat of battle. The first time in any [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you take damage, you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the round.
 
 <!-- @type: feature -->
 ##### Glowing Recovery (2 Points)
@@ -2985,7 +2985,7 @@ A light step serves you well when [speed](scc:mcdm.heroes.v1/rule.character/spee
 <!-- @type: feature -->
 ##### Polder Geist (1 Point)
 
-Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your turn.
+Evading others' notice gives you freedom to move. At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, if no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Reactive Tumble (1 Point)
@@ -3297,7 +3297,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 |-------------------|------------------------|
 | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1**    | **🎯 Self or one ally** |
 
-**Effect:** The target gains a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice) until the start of your next turn.
+**Effect:** The target gains a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ##### Unstoppable Mind (2 Points)
 
@@ -3437,7 +3437,7 @@ When you build a culture, select its organization aspect from the following opti
 
 [Bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures are steeped in official leadership and formally recorded laws. Members of such a culture are often ranked in power according to those laws, with a small group of people holding the power to rule according to birthright, popular vote, or some other official and measurable standard. Many bureaucratic communities
 
-have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in turn rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures.
+have one person at the top, though others might be ruled by a council. A trade guild with a guildmaster, treasurer, secretary, and a charter of rules and regulations for membership; a feudal lord who rules over a group of knights who in [turn](scc:mcdm.heroes.v1/rule.combat/turn) rule over peasants working the land; and a militaristic society with ranks and rules that its people must abide are all examples of bureaucratic cultures.
 
 Those who thrive in [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
 
@@ -4152,7 +4152,7 @@ You gain the following career benefits:
 | 1  | **Betrayed:** When outsiders arrived in your lands with the intent to exploit the wilds for their resources, you spoke out against them. However, several other wardens spoke in favor of these outsiders, and allowed them in to despoil nature. Refusing to watch your homeland destroyed, you left. Now you help others avoid such a fate. |
 | 2  | **Corruption:** A disease has infected the lands you protect, causing animals to become violent and twisting plants into something sinister. You've tried everything, magical and mundane, to stop the scourge, but it continues to spread. As such, you've set out in search of a cure or an unblighted land to protect. |
 | 3  | **Exiled:** You made a mistake that could not be forgiven. The other wardens of the region decided your fate, exiling you from your lands with an order never to return. |
-| 4  | **Honor the Fallen:** A group of heroes arrived in your territory with trouble close on their heels. You fought alongside them to turn back the evil, but it was too much. The heroes fell, and your wilderness was forever altered. Though your lands are beyond saving, there are other lands you can help. |
+| 4  | **Honor the Fallen:** A group of heroes arrived in your territory with trouble close on their heels. You fought alongside them to [turn](scc:mcdm.heroes.v1/rule.combat/turn) back the evil, but it was too much. The heroes fell, and your wilderness was forever altered. Though your lands are beyond saving, there are other lands you can help. |
 | 5  | **Portents:** There were signs. You tried to ignore them, but when a great beast died at your feet, you had to recognize the truth. You were meant to leave your home territory, meant to fight a battle for the fate of all lands—and so you gave up the only life you've ever known. |
 | 6  | **Theft:** You were responsible for guarding something precious, something vital to your region's survival. But you let someone in, and they betrayed your trust by stealing the thing you were meant to guard. You left your chosen territory to atone for your mistake. |
 
@@ -4222,7 +4222,7 @@ Abilities are presented in a special format that first describes the ability, th
 
 > **Abilities in Combat**
 >
-> All the abilities appearing in this book are used as a main action, a maneuver, a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), or some other part of your turn. As such, these abilities are all explicitly usable in combat or some other time-sensitive scenario where the game unfolds as combat rounds. If a creature has an ability that takes 1 minute or longer to use, that ability can't be used in combat.
+> All the abilities appearing in this book are used as a main action, a maneuver, a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), or some other part of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). As such, these abilities are all explicitly usable in combat or some other time-sensitive scenario where the game unfolds as [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round). If a creature has an ability that takes 1 minute or longer to use, that ability can't be used in combat.
 
 #### Name and Story Text
 
@@ -4249,7 +4249,7 @@ The nine [Heroic Resources](scc:mcdm.heroes.v1/rule.resource/heroic-resource) in
 <!-- @type: rule | @group: general | @id: heroic-ability -->
 ##### Heroic Abilities
 
-If an ability has a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost to activate—as in, you can't use the ability at all without spending some of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource)—then it is a heroic ability. If an effect allows you to use a heroic ability when it isn't your turn, you must still pay its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost to use it unless the effect says otherwise.
+If an ability has a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost to activate—as in, you can't use the ability at all without spending some of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource)—then it is a heroic ability. If an effect allows you to use a heroic ability when it isn't your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you must still pay its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost to use it unless the effect says otherwise.
 
 Some abilities don't cost your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to use but allow you to spend your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to enhance or add effects to the ability, such as the [conduit's](scc:mcdm.heroes.v1/class/conduit) [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace). These abilities are not heroic abilities unless the baseline ability can't be used without spending your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -4306,7 +4306,7 @@ Your character's kit determines the types of weapons you wield and use with your
 
 #### Type
 
-Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), or a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) (with all those terms explained in Taking a Turn in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
+Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), or a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) (with all those terms explained in Taking a [Turn](scc:mcdm.heroes.v1/rule.combat/turn) in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
 
 ##### Trigger
 
@@ -4540,9 +4540,9 @@ This rule also applies to Director-controlled creatures who spend Malice on abil
 <!-- @type: rule | @group: combat | @id: critical-hit -->
 #### Critical Hit
 
-Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) as a main action and the roll is a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) or [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20)-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
+Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) as a main action and the roll is a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) or [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20)-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), whether or not it's your [turn](scc:mcdm.heroes.v1/rule.combat/turn) and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
 
-You can't score a critical hit with an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) made as a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) or a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
+You can't score a critical hit with an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your [turn](scc:mcdm.heroes.v1/rule.combat/turn). For example, an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) made as a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) or a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
 
 #### Roll Against Multiple Creatures
 
@@ -4589,7 +4589,7 @@ When a creature suffers a lasting effect, whatever ability, feature, hazard, or 
 <!-- @type: rule | @group: combat | @id: end-of-turn -->
 ##### End of Next Turn (EoT)
 
-Many effects last until the end of the target's next turn, abbreviated as "(EoT)" in the [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) for an ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). A creature suffers from such an effect until the end of their next turn, or the end of their current turn if the effect was imposed on their current turn.
+Many effects last until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn), abbreviated as "(EoT)" in the [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) for an ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). A creature suffers from such an effect until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), or the end of their current [turn](scc:mcdm.heroes.v1/rule.combat/turn) if the effect was imposed on their current [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: rule | @group: general | @id: saving-throw -->
 ##### Saving Throw (Save Ends)
@@ -4643,12 +4643,12 @@ Some abilities and other effects apply specific negative effects called conditio
 
 While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), or make a [test](scc:mcdm.heroes.v1/rule.test/test) or [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) using [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility), they lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + their level after the main action, [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), or [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is resolved. This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss can't be prevented in any way, and only happens once per action.
 
-You take damage from this condition when you use a main action off your turn. For example, a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
+You take damage from this condition when you use a main action off your [turn](scc:mcdm.heroes.v1/rule.combat/turn). For example, a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
 
 <!-- @type: condition | @id: dazed -->
 ##### Dazed
 
-A creature who is [dazed](scc:mcdm.heroes.v1/condition/dazed) can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
+A creature who is [dazed](scc:mcdm.heroes.v1/condition/dazed) can do only one thing on their [turn](scc:mcdm.heroes.v1/rule.combat/turn): use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: condition | @id: frightened -->
 ##### Frightened
@@ -4789,9 +4789,9 @@ The power you serve grants you a [Heroic Resource](scc:mcdm.heroes.v1/rule.resou
 
 ##### Wrath in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain wrath equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 2 wrath.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain wrath equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 wrath.
 
-Additionally, the first time each combat round that a creature judged by you (see [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) below) deals damage to you, you gain 1 wrath. The first time each combat round that you deal damage to a creature judged by you, you gain 1 wrath.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that a creature judged by you (see [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) below) deals damage to you, you gain 1 wrath. The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you deal damage to a creature judged by you, you gain 1 wrath.
 
 You lose any remaining wrath at the end of the encounter.
 
@@ -4823,17 +4823,17 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 > 
 > Additionally, you can spend 1 wrath to take one of the following free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action):
 > 
-> - When an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature judged by you starts to [shift](scc:mcdm.heroes.v1/movement/shifting), you make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them and their [speed](scc:mcdm.heroes.v1/rule.character/speed) becomes 0 until the end of the current turn, preventing them from [shifting](scc:mcdm.heroes.v1/movement/shifting).
+> - When an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature judged by you starts to [shift](scc:mcdm.heroes.v1/movement/shifting), you make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them and their [speed](scc:mcdm.heroes.v1/rule.character/speed) becomes 0 until the end of the current [turn](scc:mcdm.heroes.v1/rule.combat/turn), preventing them from [shifting](scc:mcdm.heroes.v1/movement/shifting).
 > - When a creature judged by you within 10 squares makes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you cause them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll.
 > - When a creature judged by you within 10 squares uses an ability with a [potency](scc:mcdm.heroes.v1/rule.character/potency) that targets only one creature, the [potency](scc:mcdm.heroes.v1/rule.character/potency) is reduced by 1 for that creature.
-> - If you damage a creature judged by you with a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
+> - If you damage a creature judged by you with a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >   
 > You can choose only one free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) option at a time, even if multiple options are triggered by the same effect.
 
 <!-- @type: feature -->
 ##### Judgment Order Benefit
 
-The first time on a turn that you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability to judge a creature, you gain the following benefit based on your order:
+The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability to judge a creature, you gain the following benefit based on your order:
 
 - **Exorcist:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. This movement must take you closer to the judged creature. You do not need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to your destination.
 - **Oracle:** You can deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the judged creature.
@@ -4858,11 +4858,11 @@ You channel your will to mend your wounds or the wounds of your allies. You have
 > |-------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 Self or one ally** |
 > 
-> **Trigger:** The target starts their turn or takes damage.
+> **Trigger:** The target starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) or takes damage.
 > 
 > **Effect:** You spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and the target regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 > 
-> **Spend 1 Wrath:** You can end one effect on the target that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or a [prone](scc:mcdm.heroes.v1/condition/prone) target can stand up.
+> **Spend 1 Wrath:** You can end one effect on the target that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or a [prone](scc:mcdm.heroes.v1/condition/prone) target can stand up.
 
 <!-- @type: feature -->
 #### 1st-Level Domain Feature
@@ -5030,7 +5030,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 > - **12-16:** 7 + P psychic damage
 > - **17+:** 10 + P psychic damage
 > 
-> **Effect:** Each time the target willingly moves before the end of your next turn, they take 1 psychic damage for each square they move.
+> **Effect:** Each time the target willingly moves before the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), they take 1 psychic damage for each square they move.
 
 <!-- @type: ability | @subtype: signature | @id: halt-miscreant -->
 > ###### Halt Miscreant!
@@ -5050,7 +5050,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 <!-- @type: ability | @subtype: signature | @id: your-allies-cannot-save-you -->
 > ###### Your Allies Cannot Save You!
 > 
-> *Your magic [strike](scc:mcdm.heroes.v1/rule.combat/strike) turns your foe's guilt into a burst of holy power.*
+> *Your magic [strike](scc:mcdm.heroes.v1/rule.combat/strike) [turns](scc:mcdm.heroes.v1/rule.combat/turn) your foe's guilt into a burst of holy power.*
 > 
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -5075,7 +5075,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 3 Wrath | @id: behold-a-shield-of-faith -->
 > ###### Behold a Shield of Faith! (3 Wrath)
 > 
-> *A mighty blow turns your foe's vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.*
+> *A mighty blow [turns](scc:mcdm.heroes.v1/rule.combat/turn) your foe's vitality into a holy light that envelops you and an ally, discouraging enemies who might attack you.*
 > 
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon**  |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -5087,7 +5087,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 + M holy damage
 > - **17+:** 9 + M holy damage
 > 
-> **Effect:** Until the start of your next turn, enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against you or any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), enemies take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against you or any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 
 <!-- @type: ability | @cost: 3 Wrath -->
 > ###### Driving Assault (3 Wrath)
@@ -5236,7 +5236,7 @@ Your [censor order](scc:mcdm.heroes.v1/feature.censor.level-1/censor-order) gran
 <!-- @type: feature -->
 ##### It Was Foretold
 
-Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first turn. Additionally, whenever the Director calls for a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can make one free [test](scc:mcdm.heroes.v1/rule.test/test) before the montage begins, which counts as an earned success or failure as usual.
+Your order has trained you to understand fragments of the visions granted to you by your deity, giving you a momentary advantage in challenging situations. At the start of an encounter, you can take one main action before any other creature and before your first [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, whenever the Director calls for a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can make one free [test](scc:mcdm.heroes.v1/rule.test/test) before the montage begins, which counts as an earned success or failure as usual.
 
 <!-- @type: feature -->
 ##### Judge of Character
@@ -5298,7 +5298,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Each target takes holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, each hidden target is automatically revealed and can't become hidden again until the start of your next turn. You can then use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against one target as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
+> **Effect:** Each target takes holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, each hidden target is automatically revealed and can't become hidden again until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can then use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against one target as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 ##### 2nd-Level Oracle Ability
 
@@ -5313,9 +5313,9 @@ Choose one of the following abilities.
 > |-------------------|-----------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 Self or one ally** |
 > 
-> **Trigger:** An enemy within 10 squares starts their turn.
+> **Trigger:** An enemy within 10 squares starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
-> **Effect:** You can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to allow the target to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). The target can then take their turn immediately before the triggering enemy.
+> **Effect:** You can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to allow the target to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). The target can then take their [turn](scc:mcdm.heroes.v1/rule.combat/turn) immediately before the triggering enemy.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### With My Blessing (5 Wrath)
@@ -5341,7 +5341,7 @@ Choose one of the following abilities.
 > |-----------------|--------------------------------------:|
 > | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Sentenced (5 Wrath)
@@ -5384,7 +5384,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-----------------|------------------------------:|
 > | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to any enemy.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn). A target takes an extra 2d6 holy damage if they are judged by you or if they are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to any enemy.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Perfect Order (7 Wrath)
@@ -5442,7 +5442,7 @@ You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.her
 <!-- @type: feature -->
 #### Wrath Beyond Wrath
 
-The first time each combat round that you deal damage to a creature judged by you, you gain 2 wrath instead of 1.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you deal damage to a creature judged by you, you gain 2 wrath instead of 1.
 
 <!-- @type: feature -->
 #### 4th-Level Domain Feature
@@ -5572,7 +5572,7 @@ You discard each roll as it is used, and each time you earn [Victories](scc:mcdm
 <!-- @type: feature | @id: stand-fast -->
 ##### Stand Fast!
 
-Your divine spark grows in power, allowing you and your allies to focus and endure. At the start of each of your turns, you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn. Any ally who starts their turn within 5 squares of you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to gain this benefit.
+Your divine spark grows in power, allowing you and your allies to focus and endure. At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Any ally who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 5 squares of you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to gain this benefit.
 
 <!-- @type: feature -->
 #### 9-Wrath Ability
@@ -5588,7 +5588,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10** | **🎯 Self or one ally** |
 > 
-> **Effect:** The target ends any condition or effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
+> **Effect:** The target ends any condition or effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up. The target then gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) while ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and can use a [strike](scc:mcdm.heroes.v1/rule.combat/strike) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 <!-- @type: ability | @cost: 9 Wrath -->
 > ###### Orison of Victory (9 Wrath)
@@ -5605,7 +5605,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** Each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 > - **17+:** Each target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 > 
-> **Effect:** A target can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up.
+> **Effect:** A target can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or a [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up.
 
 <!-- @type: ability | @cost: 9 Wrath -->
 > ###### Righteous Judgment (9 Wrath)
@@ -5692,7 +5692,7 @@ Choose one of the following abilities.
 > |-------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 Self or one ally** |
 > 
-> **Trigger:** The target gains a condition or effect that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn.
+> **Trigger:** The target gains a condition or effect that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
 > **Effect:** The effect ends on the target and is applied to the creature who imposed the effect on them. That creature also takes damage equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
@@ -5821,7 +5821,7 @@ Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you 
 <!-- @type: feature -->
 ##### Font of Grace
 
-Each time you use your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability, you gain 1 wrath that can be spent only on that ability during the same turn. If you don't use this wrath, it is lost. Additionally, the target of [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
+Each time you use your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability, you gain 1 wrath that can be spent only on that ability during the same [turn](scc:mcdm.heroes.v1/rule.combat/turn). If you don't use this wrath, it is lost. Additionally, the target of [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 
 <!-- @type: feature -->
 ##### Gods' Library
@@ -5865,7 +5865,7 @@ You have the following ability.
 > |-------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -5887,7 +5887,7 @@ The gods allow you and your companions to bask in the glory of past successes. W
 <!-- @type: feature -->
 #### Focused Wrath
 
-When you gain wrath at the start of each of your turns during combat, you gain 3 wrath instead of 2.
+When you gain wrath at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 3 wrath instead of 2.
 
 <!-- @type: feature -->
 #### Skill
@@ -5952,7 +5952,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 13 + M damage; I < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 18 + M damage; I < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > 
-> **Effect:** At the end of each of your turns, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them. Additionally, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way can't be targeted by their allies' abilities.
+> **Effect:** At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them. Additionally, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way can't be targeted by their allies' abilities.
 
 <!-- @type: ability | @cost: 11 Wrath -->
 > ###### Hand of the Gods (11 Wrath)
@@ -5986,12 +5986,12 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 13 + M damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 18 + M damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > 
-> **Effect:** At the end of each of your turns, a target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them.
+> **Effect:** At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), a target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them.
 
 <!-- @type: ability | @cost: 11 Wrath | @id: your-allies-turn-on-you -->
 > ###### Your Allies Turn on You! (11 Wrath)
 > 
-> *You turn your enemies' ire to the target.*
+> *You [turn](scc:mcdm.heroes.v1/rule.combat/turn) your enemies' ire to the target.*
 > 
 > | **[Ranged](scc:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -6003,7 +6003,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 9 + P damage; I < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 12 + P damage; I < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > 
-> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies who starts their turn within 5 squares of them must use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. Additionally, while the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies within 5 squares of them who can make a triggered [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a different creature must make the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target instead.
+> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 5 squares of them must use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. Additionally, while the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies within 5 squares of them who can make a triggered [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a different creature must make the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target instead.
 
 <!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
@@ -6016,7 +6016,7 @@ As a 9th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 The weapon you target with your [Implement of Wrath](scc:mcdm.heroes.v1/feature.censor.level-6/implement-of-wrath) feature gains the following additional benefits:
 
 - The weapon's wielder and each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them gain a +2 bonus to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
-- At the end of each of the weapon wielder's turns, each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the wielder makes a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) against each effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
+- At the end of each of the weapon wielder's [turns](scc:mcdm.heroes.v1/rule.combat/turn), each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the wielder makes a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) against each effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
 - The weapon's wielder has corruption immunity 10.
 
 <!-- @type: feature -->
@@ -6088,9 +6088,9 @@ Choose one of the following abilities.
 > |--------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 One ally** |
 > 
-> **Trigger:** You or another hero ends their turn.
+> **Trigger:** You or another hero ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
-> **Effect:** The target takes their turn after the triggering hero, and immediately removes all conditions and negative effects on themself. During their turn, the target has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> **Effect:** The target takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn) after the triggering hero, and immediately removes all conditions and negative effects on themself. During their [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 ##### 9th-Level Paragon Abilities
 
@@ -6122,7 +6122,7 @@ Choose one of the following abilities.
 > |-----------------|--------------------------------------:|
 > | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target who starts their turn in the area gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -6165,7 +6165,7 @@ Additionally, you can spend 3 [virtue](scc:mcdm.heroes.v1/feature.censor.level-1
 <!-- @type: feature -->
 #### Wrath of the Gods
 
-When you gain wrath at the start of each of your turns during combat, you gain 4 wrath instead of 3.
+When you gain wrath at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 4 wrath instead of 3.
 
 <!-- @type: class | @id: conduit -->
 ## Conduit
@@ -6235,9 +6235,9 @@ Your deity grants you a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroi
 
 ##### Piety in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain piety equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 1d3 piety.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain piety equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 piety.
 
-Additionally, you can gain more piety by praying to the gods—but beware! Doing so can easily draw their ire, as the gods hate to be annoyed. Before you roll to gain piety at the start of your turn, you can pray (no action required). If you do, your roll gains the following additional effects:
+Additionally, you can gain more piety by praying to the gods—but beware! Doing so can easily draw their ire, as the gods hate to be annoyed. Before you roll to gain piety at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can pray (no action required). If you do, your roll gains the following additional effects:
 
 - If the roll is a 1, you gain 1 additional piety but anger the gods! You take psychic damage equal to 1d6 + your level, which can't be reduced in any way.
 - If the roll is a 2, you gain 1 additional piety.
@@ -6281,7 +6281,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 ###### Life Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
-- **Prayer Effect:** Choose yourself or one ally within 10 squares. That character can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Alternatively, you or one ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+- **Prayer Effect:** Choose yourself or one ally within 10 squares. That character can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Alternatively, you or one ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Love Domain Piety and Effect
 
@@ -6315,7 +6315,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 
 ###### War Domain Piety and Effect
 
-- **Piety:** You gain 2 piety the first time in an encounter that you or a creature within 10 squares takes damage greater than 10 + your level in a single turn.
+- **Piety:** You gain 2 piety the first time in an encounter that you or a creature within 10 squares takes damage greater than 10 + your level in a single [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 - **Prayer Effect:** Choose up to three allies within 10 squares of you, or choose yourself instead of one ally. Each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: feature -->
@@ -6446,7 +6446,7 @@ As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can bless
 <!-- @type: feature -->
 #### Healing Grace
 
-You have the following ability, which you can use once on your turn.
+You have the following ability, which you can use once on your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability -->
 > ###### Healing Grace
@@ -6462,7 +6462,7 @@ You have the following ability, which you can use once on your turn.
 > **Spend 1+ Piety:** For each piety spent, choose one of the following enhancements:
 > 
 > - You can target one additional ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance).
-> - You can end one effect on a target that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn.
+> - You can end one effect on a target that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > - A [prone target](scc:mcdm.heroes.v1/condition/prone) can stand up.
 > - A target can spend 1 additional [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -6573,7 +6573,7 @@ The gods imbue a divine swiftness within you. Whenever an [adjacent](scc:mcdm.he
 <!-- @type: feature -->
 ##### Sanctuary Ward
 
-In response to a foe's aggression, your god protects you. Whenever another creature damages you, that creature can't target you with a [strike](scc:mcdm.heroes.v1/rule.combat/strike) until you harm them or one of their allies, or until the end of their next turn.
+In response to a foe's aggression, your god protects you. Whenever another creature damages you, that creature can't target you with a [strike](scc:mcdm.heroes.v1/rule.combat/strike) until you harm them or one of their allies, or until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Spirit Ward
@@ -6670,7 +6670,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 4 + I corruption damage
 > - **17+:** 6 + I corruption damage
 > 
-> **Effect:** Choose yourself or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance). That character can impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made against them before the end of their next turn.
+> **Effect:** Choose yourself or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance). That character can impose a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made against them before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Staggering Curse
@@ -6753,7 +6753,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   |  **🎯 Special** |
 > 
-> **Effect:** You summon a spirit of [size](scc:mcdm.heroes.v1/rule.character/size) 2 who can't be harmed, and who appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The spirit lasts until the end of your next turn. You and your allies can move through the spirit's space, but enemies can't. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+> **Effect:** You summon a spirit of [size](scc:mcdm.heroes.v1/rule.character/size) 2 who can't be harmed, and who appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The spirit lasts until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). You and your allies can move through the spirit's space, but enemies can't. Any enemy who moves within 2 squares of the spirit for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes holy damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 3 Piety -->
 > ###### Judgment's Hammer (3 Piety)
@@ -6785,7 +6785,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 + I lightning damage
 > - **17+:** 9 + I lightning damage
 > 
-> **Effect:** The first time on a turn that the target deals damage to another creature, the target of this ability takes 1d10 lightning damage (save ends).
+> **Effect:** The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that the target deals damage to another creature, the target of this ability takes 1d10 lightning damage (save ends).
 
 ###### 5-Piety Ability
 
@@ -6847,7 +6847,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-----------------|-----------------------------:|
 > | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each ally in the area** |
 > 
-> **Effect:** Each target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or to stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
+> **Effect:** Each target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or to stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -6914,7 +6914,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|--------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Self and each ally** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Divine Comedy (5 Piety)
@@ -6957,7 +6957,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > - **12-16:** 6 fire damage
 > - **17+:** 10 fire damage
 > 
-> **Effect:** Each ally in the area deals fire damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score with their next strike made before the end of their next turn.
+> **Effect:** Each ally in the area deals fire damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score with their next strike made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Nature Judges Thee (5 Piety)
@@ -6983,7 +6983,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|-------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Self and one ally** |
 > 
-> **Effect:** Until the end of the encounter or until the target is [dying](scc:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's turns, they gain a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and a bonus to [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next turn.
+> **Effect:** Until the end of the encounter or until the target is [dying](scc:mcdm.heroes.v1/rule.health/dying), at the start of each of the target's [turns](scc:mcdm.heroes.v1/rule.combat/turn), they gain a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and a bonus to [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) equal to the number of allies within 10 squares of them. This bonus lasts until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Reap (5 Piety)
@@ -6994,7 +6994,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|-----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Each ally** |
 > 
-> **Effect:** Until the start of your next turn, each time a target kills an enemy, they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 + your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), each time a target kills an enemy, they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 + your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Sacred Bond (5 Piety)
@@ -7031,7 +7031,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|---------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Special** |
 > 
-> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 2 statue rises out of the ground in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance) and lasts until the end of the encounter. While within 3 squares of the statue, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns. Each ally within 3 squares of the statue gains this same benefit. The statue is destroyed if it takes 20 or more damage. It has immunity all to poison and psychic damage.
+> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 2 statue rises out of the ground in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance) and lasts until the end of the encounter. While within 3 squares of the statue, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn). Each ally within 3 squares of the statue gains this same benefit. The statue is destroyed if it takes 20 or more damage. It has immunity all to poison and psychic damage.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Wellspring of Grace (5 Piety)
@@ -7042,7 +7042,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |------------------|-----------------------------:|
 > | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target starts their turn in the area, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -7287,7 +7287,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** The target is removed from the encounter map until the start of their next turn and can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). At the start of their turn, the target reappears in the space they left or the nearest unoccupied space of their choice.
+> **Effect:** The target is removed from the encounter map until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn) and can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). At the start of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target reappears in the space they left or the nearest unoccupied space of their choice.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Vessel of Retribution (9 Piety)
@@ -7351,7 +7351,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |------------------|---------------------------------:|
 > | **📏 4 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Each creature in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can slide each creature in the area up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Blade of the Heavens (9 Piety)
@@ -7377,7 +7377,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |------------------|------------------------------------------:|
 > | **📏 4 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Self and each creature in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy in the area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and you and each ally in the area gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your turns.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy in the area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and you and each ally in the area gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Cuirass of the Gods (9 Piety)
@@ -7388,7 +7388,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------------|-----------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**         | **🎯 Three creatures** |
 > 
-> **Effect:** You can target yourself instead of one creature with this ability. Each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 until the start of your next turn.
+> **Effect:** You can target yourself instead of one creature with this ability. Each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Gods' Machine (9 Piety)
@@ -7407,7 +7407,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > - **12-16:** 5 damage
 > - **17+:** 8 damage
 > 
-> Once on each subsequent turn, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to move the machine a number of squares up to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score then repeat the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> Once on each subsequent [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to move the machine a number of squares up to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score then repeat the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Invocation of Mystery (9 Piety)
@@ -7418,7 +7418,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |------------------|--------------------------------------:|
 > | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each target is invisible until the start of your next turn.
+> **Effect:** Each target is invisible until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Invocation of Undoing (9 Piety)
@@ -7474,7 +7474,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |------------------|--------------------------------------:|
 > | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can end one effect on themself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or they can stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
+> **Effect:** Each target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can end one effect on themself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), or they can stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Spirit Stampede (9 Piety)
@@ -7521,7 +7521,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Faithful's Reward
 
-When you roll for piety at the start of your turn in combat, you gain 1d3 + 1 piety.
+When you roll for piety at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat, you gain 1d3 + 1 piety.
 
 <!-- @type: feature -->
 #### Skill
@@ -7579,7 +7579,7 @@ Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you 
 <!-- @type: feature -->
 ##### Font of Grace
 
-Each time you use your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability, you gain 1 piety that can be spent only on that ability during the same turn. If you don't use this piety, it is lost. Additionally, you can use your [Minor Miracle](scc:mcdm.heroes.v1/feature.conduit.level-3/minor-miracle) feature to return a creature to life even if you don't have their remains.
+Each time you use your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability, you gain 1 piety that can be spent only on that ability during the same [turn](scc:mcdm.heroes.v1/rule.combat/turn). If you don't use this piety, it is lost. Additionally, you can use your [Minor Miracle](scc:mcdm.heroes.v1/feature.conduit.level-3/minor-miracle) feature to return a creature to life even if you don't have their remains.
 
 <!-- @type: feature -->
 ##### Gods' Library
@@ -7623,7 +7623,7 @@ You have the following ability.
 > |--------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), the target can move each duplicate up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -7671,7 +7671,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** The target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their turn, and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Additionally, at the start of each of their turns until the end of the encounter or until they are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** The target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Additionally, at the start of each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn) until the end of the encounter or until they are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Blessing of Steel (11 Piety)
@@ -7693,7 +7693,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**     | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** At the end of each of your turns until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Drag the Unworthy (11 Piety)
@@ -7758,7 +7758,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10** | **🎯 One ally** |
 > 
-> **Effect:** The target has an additional main action they can use on their next turn, and gains 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
+> **Effect:** The target has an additional main action they can use on their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and gains 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Bend Fate (11 Piety)
@@ -7793,7 +7793,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > **Effect:** You conjure a [size](scc:mcdm.heroes.v1/rule.character/size) 4 dragon that appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The dragon has [speed](scc:mcdm.heroes.v1/rule.character/speed) 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), [stability](scc:mcdm.heroes.v1/rule.character/stability) 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
-> On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1 square of them. Make the following [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy in the area.
+> On subsequent [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a main action to command the dragon to breathe magic fire in a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1 square of them. Make the following [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy in the area.
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7824,7 +7824,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > - **12-16:** 3 lightning damage, 3 sonic damage
 > - **17+:** 5 lightning damage, 5 sonic damage
 > 
-> **Effect:** A raging storm fills the area until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying). At the start of each of your turns, you can move the storm up to 5 squares (no action required). On subsequent turns while the storm is active, you can use a maneuver to make its [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> **Effect:** A raging storm fills the area until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can move the storm up to 5 squares (no action required). On subsequent [turns](scc:mcdm.heroes.v1/rule.combat/turn) while the storm is active, you can use a maneuver to make its [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Night Falls (11 Piety)
@@ -7846,7 +7846,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------|-------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**   | **🎯 Four allies** |
 > 
-> **Effect:** You can target yourself instead of one ally with this ability. Each target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their turn, and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone).
+> **Effect:** You can target yourself instead of one ally with this ability. Each target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn), and can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Righteous Phalanx (11 Piety)
@@ -7857,7 +7857,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > |--------------------------|----------------:|
 > | **📏 15 wall within 10** |  **🎯 Special** |
 > 
-> **Effect:** The wall lasts until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 15 damage.
+> **Effect:** The wall lasts until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 15 damage.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Solar Flare (11 Piety)
@@ -7889,7 +7889,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > - **12-16:** 15 + I damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 21 + I damage; A < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > 
-> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes 10 damage at the start of each of your turns.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes 10 damage at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 11 Piety | @subtype: triggered -->
 > ###### Word of Final Redemption (11 Piety)
@@ -7950,7 +7950,7 @@ Additionally, you can spend [divine power](scc:mcdm.heroes.v1/feature.conduit.le
 <!-- @type: feature -->
 #### Most Pious
 
-When you roll for piety at the start of your turn in combat and you pray, you gain 1 additional piety.
+When you roll for piety at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat and you pray, you gain 1 additional piety.
 
 <!-- @type: feature -->
 #### Perk
@@ -8034,7 +8034,7 @@ You choose an [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist
 <!-- @type: feature -->
 ##### Earth: Acolyte of Earth
 
-You harness the flow of earth magic to become harder to move. Whenever you use an ability that has the Earth and Magic keywords, your [stability](scc:mcdm.heroes.v1/rule.character/stability) increases by 1 until the start of your next turn. This benefit is cumulative.
+You harness the flow of earth magic to become harder to move. Whenever you use an ability that has the Earth and Magic keywords, your [stability](scc:mcdm.heroes.v1/rule.character/stability) increases by 1 until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). This benefit is cumulative.
 
 <!-- @type: feature -->
 ##### Fire: Acolyte of Fire
@@ -8058,9 +8058,9 @@ You channel the substance of creation in the form of a [Heroic Resource](scc:mcd
 
 ##### Essence in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain essence equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 2 essence.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain essence equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 essence.
 
-Additionally, the first time each combat round that you or a creature within 10 squares takes damage that isn't untyped or holy damage, you gain 1 essence.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you or a creature within 10 squares takes damage that isn't untyped or holy damage, you gain 1 essence.
 
 You lose any remaining essence at the end of the encounter.
 
@@ -8097,13 +8097,13 @@ You have the following ability, which can be used as a [ranged](scc:mcdm.heroes.
 <!-- @type: feature -->
 #### Persistent Magic
 
-Some of your [heroic abilities](scc:mcdm.heroes.v1/rule.general/heroic-ability) have a persistent effect entry. For example, the [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation) ability has an effect noted as "Persistent 1." Whenever you use a persistent ability, you decide whether you want to maintain it, and start doing so immediately after you first use the ability. If you maintain a persistent ability in combat, you reduce the amount of essence you earn at the start of your turn by an amount equal to the ability's persistent value, which enables the ability's persistent effect. All your active persistent abilities end at the end of the encounter.
+Some of your [heroic abilities](scc:mcdm.heroes.v1/rule.general/heroic-ability) have a persistent effect entry. For example, the [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation) ability has an effect noted as "Persistent 1." Whenever you use a persistent ability, you decide whether you want to maintain it, and start doing so immediately after you first use the ability. If you maintain a persistent ability in combat, you reduce the amount of essence you earn at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) by an amount equal to the ability's persistent value, which enables the ability's persistent effect. All your active persistent abilities end at the end of the encounter.
 
-You can't maintain any abilities that would make you earn a negative amount of essence at the start of your turn. You can stop maintaining an ability at any time (no action required).
+You can't maintain any abilities that would make you earn a negative amount of essence at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can stop maintaining an ability at any time (no action required).
 
 If you maintain the same ability on several targets and the effect includes a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you make that roll once and apply the same effect to all targets. A creature can't be affected by multiple instances of a persistent ability.
 
-If you take damage equal to or greater than 5 times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score in one turn, you stop maintaining any persistent abilities. For instance, if you have a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 2 and are maintaining [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation), taking 10 or more damage in one turn causes you to stop maintaining the ability.
+If you take damage equal to or greater than 5 times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score in one [turn](scc:mcdm.heroes.v1/rule.combat/turn), you stop maintaining any persistent abilities. For instance, if you have a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 2 and are maintaining [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation), taking 10 or more damage in one [turn](scc:mcdm.heroes.v1/rule.combat/turn) causes you to stop maintaining the ability.
 
 <!-- @type: feature -->
 #### Practical Magic
@@ -8155,7 +8155,7 @@ You also gain the following ability.
 > |-------------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**        |  **🎯 Special** |
 > 
-> **Effect:** For each [Victory](scc:mcdm.heroes.v1/rule.resource/victories) you have, you can target one creature. Each target gains the benefit of your [A Beyonding of Vision](scc:mcdm.heroes.v1/feature.elementalist.level-1/a-beyonding-of-vision) feature until the end of your next turn, but doesn't gain the use of the [Shared Void Sense](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/shared-void-sense) ability.
+> **Effect:** For each [Victory](scc:mcdm.heroes.v1/rule.resource/victories) you have, you can target one creature. Each target gains the benefit of your [A Beyonding of Vision](scc:mcdm.heroes.v1/feature.elementalist.level-1/a-beyonding-of-vision) feature until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), but doesn't gain the use of the [Shared Void Sense](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/shared-void-sense) ability.
 
 <!-- @type: feature -->
 ##### It Is the Soul Which Hears
@@ -8221,7 +8221,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 > |-----------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                  | **🎯 Self or one ally** |
 > 
-> **Trigger:** The target starts their turn or takes damage.
+> **Trigger:** The target starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) or takes damage.
 > 
 > **Effect:** The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 > 
@@ -8266,7 +8266,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 > |--------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**         | **🎯 Self or one ally** |
 > 
-> **Trigger:** The target starts their turn, moves, or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement). 
+> **Trigger:** The target starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn), moves, or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement). 
 > 
 > **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If the target moves to trigger this ability, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) them at any point during the move.
 > 
@@ -8353,7 +8353,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 4 + R corruption damage
 > - **17+:** 6 + R corruption damage
 > 
-> **Effect:** Choose yourself or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance). That character can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn.
+> **Effect:** Choose yourself or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance). That character can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Bifurcated Incineration
@@ -8489,7 +8489,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 4 psychic damage
 > - **17+:** 6 psychic damage
 > 
-> **Persistent 1:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
+> **Persistent 1:** At the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 3 Essence -->
 > ###### The Flesh, a Crucible (3 Essence)
@@ -8506,7 +8506,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 8 + R fire damage
 > - **17+:** 11 + R fire damage
 > 
-> **Persistent 1:** If the target is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) at the start of your turn, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again without spending essence (no action required).
+> **Persistent 1:** If the target is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again without spending essence (no action required).
 
 <!-- @type: ability | @cost: 3 Essence -->
 > ###### Invigorating Growth (3 Essence)
@@ -8561,7 +8561,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 fire damage
 > - **17+:** 10 fire damage
 > 
-> **Persistent 2:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
+> **Persistent 2:** At the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 5 Essence -->
 > ###### Instantaneous Excavation (5 Essence)
@@ -8580,7 +8580,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** The target falls into the hole.
 > - **17+:** The target falls into the hole and can't reduce the height of the fall.
 > 
-> **Persistent 1:** At the start of your turn, you open another hole, making a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against each creature who could fall into the hole when it opens without spending essence.
+> **Persistent 1:** At the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you open another hole, making a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against each creature who could fall into the hole when it opens without spending essence.
 
 <!-- @type: ability | @cost: 5 Essence -->
 > ###### No More Than a Breeze (5 Essence)
@@ -8591,9 +8591,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**        | **🎯 Self or one ally** |
 > 
-> **Effect:** Until the start of your next turn, the target can move through solid matter, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and their movement can't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). If the target ends their turn inside solid matter, they are forced out into the space where they entered it and this effect ends.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target can move through solid matter, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and their movement can't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). If the target ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) inside solid matter, they are forced out into the space where they entered it and this effect ends.
 > 
-> **Persistent 1:** The effect lasts until the start of your next turn.
+> **Persistent 1:** The effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Essence -->
 > ###### Test of Rain (5 Essence)
@@ -8610,7 +8610,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 acid damage
 > - **17+:** 10 acid damage
 > 
-> **Effect:** You can end one effect on yourself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn. Each ally in the area also gains this benefit.
+> **Effect:** You can end one effect on yourself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each ally in the area also gains this benefit.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -8657,7 +8657,7 @@ Each form has a prerequisite level that you must attain before you can adopt it.
 
 You choose a specific animal and appearance while in [animal form](scc:mcdm.heroes.v1/complication/animal-form). For example, if you become a rodent, you might become a mouse, a rat, a shrew, or any other [size](scc:mcdm.heroes.v1/rule.character/size) 1T animal who fits the rodent type. When you take on an [animal form](scc:mcdm.heroes.v1/complication/animal-form), your equipment either melds into your new form or falls undamaged to the ground (your choice). When you return to your true form, any melded gear reappears on your person.
 
-You can revert back to your true form as a maneuver. You can't enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) unless you are in your true form. When you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you revert to your true form and can't turn back into an animal until you are no longer [dying](scc:mcdm.heroes.v1/rule.health/dying).
+You can revert back to your true form as a maneuver. You can't enter an [animal form](scc:mcdm.heroes.v1/complication/animal-form) unless you are in your true form. When you are [dying](scc:mcdm.heroes.v1/rule.health/dying), you revert to your true form and can't [turn](scc:mcdm.heroes.v1/rule.combat/turn) back into an animal until you are no longer [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 ###### Green Animal Forms Table
 
@@ -8669,13 +8669,13 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Bird                | 3rd   | 0                 | 5 ([fly](scc:mcdm.heroes.v1/movement/fly))       | 1T   | +0              | +0/+0/+0           | -                                                                                                                                                                                                                                                                               |
 | Great cat           | 3rd   | 5                 | 6 (climb)     | 2    | +0              | +1/+1/+1           | As a maneuver, you can jump up to 3 squares in any direction. If you land on<br>an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, that enemy is [knocked prone](scc:mcdm.heroes.v1/condition/prone), and you can<br>make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them (no action required).                                                       |
 | Giant frog          | 4th   | 5                 | 5 (swim)      | 2    | +0              | +0/+0/+0           | Your [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of [melee](scc:mcdm.heroes.v1/rule.combat/melee) 3. When you take the Advance<br>move action, you can high jump or long jump up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed). This<br>jump can allow you to move more squares than your [speed](scc:mcdm.heroes.v1/rule.character/speed).                                                              |
-| Horse               | 4th   | 5                 | 8             | 2    | +1              | +0/+0/+0           | You can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a maneuver. You can't use two Charge<br>main actions on the same turn.                                                                                                                                                                    |
+| Horse               | 4th   | 5                 | 8             | 2    | +1              | +0/+0/+0           | You can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a maneuver. You can't use two Charge<br>main actions on the same [turn](scc:mcdm.heroes.v1/rule.combat/turn).                                                                                                                                                                    |
 | Mohler              | 4th   | 0                 | 7 ([burrow](scc:mcdm.heroes.v1/movement/burrow))    | 1S   | +1              | +0/+0/+0           | Your [melee](scc:mcdm.heroes.v1/rule.combat/melee) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +1 bonus.                                                                                                                                                                                                                                           |
 | Bear                | 5th   | 10                | 5 (climb)     | 2    | +1              | +2/+2/+2           | Your [melee](scc:mcdm.heroes.v1/rule.combat/melee) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +1 bonus.                                                                                                                                                                                                                                           |
 | Giant bird          | 5th   | 0                 | 7 ([fly](scc:mcdm.heroes.v1/movement/fly))       | 2    | +0              | +1/+1/+1           | After making a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares as a free<br>[triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).                                                                                                                                                                                  |
 | Giant<br>salamander | 6th   | 5                 | 5             | 1L   | +3              | +2/+2/+2           | Your [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deals fire damage. Additionally, you have fire immunity<br>3.                                                                                                                                                                                            |
 | Giant spider        | 6th   | 0                 | 5 (climb)     | 2    | +0              | +0/+1/+2           | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against creatures you are hidden<br>from.                                                                                                                                                                                          |
-| Giant snake         | 7th   | 5                 | 5             | 3    | +0              | +0/+1/+2           | Whenever you obtain a tier 2 or tier 3 outcome on a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you<br>can automatically grab the target. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes 2<br>damage at the start of each of their turns.                                                                      |
+| Giant snake         | 7th   | 5                 | 5             | 3    | +0              | +0/+1/+2           | Whenever you obtain a tier 2 or tier 3 outcome on a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you<br>can automatically grab the target. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes 2<br>damage at the start of each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn).                                                                      |
 | Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your [speed](scc:mcdm.heroes.v1/rule.character/speed). This jump can allow you to move more squares<br>than your [speed](scc:mcdm.heroes.v1/rule.character/speed).                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature's [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
 | Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).                                                                                                                                                                                                                             |
@@ -8700,7 +8700,7 @@ You have the following ability.
 > 
 > **Effect:** You open two [size](scc:mcdm.heroes.v1/rule.character/size) 1 portals in unoccupied spaces within [distance](scc:mcdm.heroes.v1/rule.combat/distance), which last until you move beyond [distance](scc:mcdm.heroes.v1/rule.combat/distance) from any portal, end the effect as a maneuver, or are [dying](scc:mcdm.heroes.v1/rule.health/dying). Each portal must be placed at a height of no more than 1 square above the ground. When you or any ally touch a portal, that creature can choose to be instantly [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to an unoccupied space of their choice [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the other portal. If an enemy is force moved into a portal, their [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ends and they emerge from the other portal in an unoccupied space chosen by the creature who force moved them.
 > 
-> At the start of each of your turns while the portals are active, you can open a new portal connected to the others. If three or more portals are present, you and your allies choose which portal to emerge from when entering a portal, and a creature who [force move](scc:mcdm.heroes.v1/movement/forced-movement)s an enemy into a portal chooses that enemy's destination portal.
+> At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) while the portals are active, you can open a new portal connected to the others. If three or more portals are present, you and your allies choose which portal to emerge from when entering a portal, and a creature who [force move](scc:mcdm.heroes.v1/movement/forced-movement)s an enemy into a portal chooses that enemy's destination portal.
 
 <!-- @type: feature -->
 #### New 5-Essence Ability
@@ -8716,13 +8716,13 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |---------------------------------------|---------------:|
 > | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**               | **🎯 Special** |
 > 
-> **Effect:** Until the start of your next turn, the area gains the following effects:
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the area gains the following effects:
 > 
-> - Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) at the start of your turn, you allow yourself and each ally in the area to spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
+> - Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you allow yourself and each ally in the area to spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
-> - Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> - Each enemy who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > 
-> **Persistent 1:** The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
+> **Persistent 1:** The area remains until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
 
 <!-- @type: ability | @cost: 5 Essence -->
 > ###### Subvert the Green Within (5 Essence)
@@ -8856,7 +8856,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** Two creatures
 > - **17+:** Three creatures
 > 
-> **Effect:** Each target begins to fade from existence (save ends). On their first turn while fading from existence, a target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll). At the end of their first turn, they have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll). At the end of their second turn, they fade from existence for 1 hour, after which they reappear in their original space or the nearest unoccupied space.
+> **Effect:** Each target begins to fade from existence (save ends). On their first [turn](scc:mcdm.heroes.v1/rule.combat/turn) while fading from existence, a target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll). At the end of their first [turn](scc:mcdm.heroes.v1/rule.combat/turn), they have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll). At the end of their second [turn](scc:mcdm.heroes.v1/rule.combat/turn), they fade from existence for 1 hour, after which they reappear in their original space or the nearest unoccupied space.
 
 <!-- @type: ability | @cost: 7 Essence -->
 > ###### Maw of Earth (7 Essence)
@@ -8890,9 +8890,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 damage
 > - **17+:** 9 damage
 > 
-> **Effect:** Until the end of your next turn, each ally in the area has each of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and has a +1 bonus to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
+> **Effect:** Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), each ally in the area has each of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and has a +1 bonus to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
 > 
-> **Persistent 1:** You make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again to target each enemy in the area without spending essence, and the effect lasts until the start of your next turn.
+> **Persistent 1:** You make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again to target each enemy in the area without spending essence, and the effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 7 Essence -->
 > ###### Wall of Fire (7 Essence)
@@ -8903,9 +8903,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------------------|---------------:|
 > | **📏 10 wall within 10**      | **🎯 Special** |
 > 
-> **Effect:** The wall lasts until the start of your next turn, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score for each square of the area they start their turn in or enter.
+> **Effect:** The wall lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score for each square of the area they start their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in or enter.
 > 
-> **Persistent 1:** The wall lasts until the start of your next turn, and you can add a number of squares to the wall equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> **Persistent 1:** The wall lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and you can add a number of squares to the wall equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -8920,7 +8920,7 @@ Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score increases to 3. Ad
 <!-- @type: feature -->
 #### Font of Essence
 
-The first time each combat round that you or a creature within 10 squares takes damage that isn't untyped or holy damage, you gain 2 essence instead of 1.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you or a creature within 10 squares takes damage that isn't untyped or holy damage, you gain 2 essence instead of 1.
 
 <!-- @type: feature -->
 #### Mantle of Essence
@@ -8939,17 +8939,17 @@ While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.hea
 <!-- @type: feature -->
 ##### Burning Grounds
 
-At the end of each of your turns, each enemy in the area takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), each enemy in the area takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Flowering Bed
 
-At the end of each of your turns, each ally in the area gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), each ally in the area gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Quaking Earth
 
-At the end of each of your turns, you can push each enemy in the area up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can push each enemy in the area up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Veiling Bed
@@ -9033,7 +9033,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 13 + R fire damage
 > - **17+:** 17 + R fire damage
 > 
-> **Effect:** When the target ends their next turn, or if they drop to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before then, each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Each affected enemy then gains this same effect.
+> **Effect:** When the target ends their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), or if they drop to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before then, each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Each affected enemy then gains this same effect.
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Storm of Sands (9 Essence)
@@ -9050,9 +9050,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 > 
-> **Effect:** The area lasts until the start of your next turn. It is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and you and your allies have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area.
+> **Effect:** The area lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). It is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and you and your allies have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area.
 > 
-> **Persistent 1:** The area remains until the start of your next turn, and you can move it up to 5 squares (no action required). As a maneuver, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again without spending essence.
+> **Persistent 1:** The area remains until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and you can move it up to 5 squares (no action required). As a maneuver, you can make the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) again without spending essence.
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Subverted Perception of Space (9 Essence)
@@ -9066,8 +9066,8 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 9 + R corruption damage
-> - **12-16:** 10 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to creatures and objects within 4 squares of them until the start of your next turn
-> - **17+:** 15 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creatures and objects until the start of your next turn
+> - **12-16:** 10 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to creatures and objects within 4 squares of them until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn)
+> - **17+:** 15 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creatures and objects until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn)
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Web of All That's Come Before (9 Essence)
@@ -9084,9 +9084,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 3 corruption damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 5 corruption damage; A < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > 
-> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) until the start of your next turn. Each enemy who ends their turn in the area is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each enemy who ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 > 
-> **Persistent 1:** The area remains until the start of your next turn.
+> **Persistent 1:** The area remains until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -9124,9 +9124,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                     | **🎯 Self or one ally** |
 > 
-> **Effect:** The target has a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Additionally, whenever the target gains their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), they gain 1 additional [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This effect lasts until the start of your next turn.
+> **Effect:** The target has a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can [fly](scc:mcdm.heroes.v1/movement/fly), and their abilities ignore [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Additionally, whenever the target gains their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), they gain 1 additional [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
-> **Persistent 1:** The effect lasts until the start of your next turn.
+> **Persistent 1:** The effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Magma Titan (9 Essence)
@@ -9137,7 +9137,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |---------------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                      | **🎯 Self or one ally** |
 > 
-> **Effect:** Until the start of your next turn, the target has the following benefits:
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target has the following benefits:
 > 
 > - Their [size](scc:mcdm.heroes.v1/rule.character/size) and [stability](scc:mcdm.heroes.v1/rule.character/stability) increase by 2, with any [size](scc:mcdm.heroes.v1/rule.character/size) 1 target becoming [size](scc:mcdm.heroes.v1/rule.character/size) 3. Each creature who is within the target's new space slides to the nearest unoccupied space, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability). If the target doesn't have space to grow, they grow as much as they can and become [restrained](scc:mcdm.heroes.v1/condition/restrained) until the effect ends.
 > - They have fire immunity 10.
@@ -9145,7 +9145,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - When the target force moves a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +2 bonus.
 > - They can use their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for [Might](scc:mcdm.heroes.v1/rule.character/might) [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).
 > 
-> **Persistent 2:** The effect lasts until the start of your next turn. Additionally, at the start of your turn, the target can spend 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Persistent 2:** The effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target can spend 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Meteor (9 Essence)
@@ -9173,9 +9173,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------------------------|----------------:|
 > | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                      |  **🎯 Special** |
 > 
-> **Effect:** The area becomes dark and verdant, with trees and plant life appearing in unoccupied spaces within it until the start of your next turn. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any ally who ends their turn in the area has [cover](scc:mcdm.heroes.v1/rule.combat/cover).
+> **Effect:** The area becomes dark and verdant, with trees and plant life appearing in unoccupied spaces within it until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any ally who ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area has [cover](scc:mcdm.heroes.v1/rule.combat/cover).
 > 
-> **Persistent 2:** The area remains until the start of your next turn. Additionally, at the start of your turn, each ally in the area can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Persistent 2:** The area remains until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), each ally in the area can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -9197,7 +9197,7 @@ Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.l
 <!-- @type: feature -->
 #### Surging Essence
 
-When you gain essence at the start of each of your turns during combat, you gain 3 essence instead of 2.
+When you gain essence at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 3 essence instead of 2.
 
 <!-- @type: feature -->
 #### Skill
@@ -9231,14 +9231,14 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 <!-- @type: feature -->
 ##### Black Hole Star
 
-You warp gravity around your heavenly body and can pull even the sturdiest titans toward your core. At the end of each of your turns, you target one creature or object within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and vertical pull that target up to 5 squares. If their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduces this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), they are pulled a minimum of 2 squares. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
+You warp gravity around your heavenly body and can pull even the sturdiest titans toward your core. At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you target one creature or object within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and vertical pull that target up to 5 squares. If their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduces this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), they are pulled a minimum of 2 squares. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
 
 Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) improves. While in the area of the [aura](scc:mcdm.heroes.v1/rule.combat/aura), enemies and objects have their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduced by an amount equal to your level.
 
 <!-- @type: feature -->
 ##### Chimeric Manifestation
 
-Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) the first time you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your turn.
+Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) the first time you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 Additionally, whenever you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature, you can select an additional [animal form](scc:mcdm.heroes.v1/complication/animal-form) and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest [speed](scc:mcdm.heroes.v1/rule.character/speed) between the two animal forms and have all types of movement from both forms.
 
@@ -9249,7 +9249,7 @@ You can only combine animal forms whose levels add up to 12 or less. For example
 
 You produce a fire that entrances the fates, distracting them from aiding your foes. Whenever you deal fire damage to a creature or object, they take an extra 1d6 fire damage. If you deal fire damage to a mundane object, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to target it with your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability instead.
 
-Additionally, any enemy who starts their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you has fire weakness equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the start of their next turn. This increases to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score if the enemy is made of or is wearing mostly metal.
+Additionally, any enemy who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you has fire weakness equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). This increases to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score if the enemy is made of or is wearing mostly metal.
 
 <!-- @type: feature -->
 ##### Summon Source of Earth
@@ -9265,11 +9265,11 @@ You have the following ability.
 > |--------------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**         |  **🎯 Special** |
 > 
-> **Effect:** A **source of earth** emerges from an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The source takes their turn immediately after you, moving up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and either taking a main action or a maneuver. The source is dismissed at the start of your next turn.
+> **Effect:** A **source of earth** emerges from an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The source takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn) immediately after you, moving up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and either taking a main action or a maneuver. The source is dismissed at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
 > The source starts an encounter at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), but maintains their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) throughout the encounter, even if they are dismissed and you use this ability again. They can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) during the encounter. When the source's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is reduced to 0, you can't use this ability again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 > 
-> **Persistent 2:** The source takes another turn. They are dismissed at the start of your next turn.
+> **Persistent 2:** The source takes another [turn](scc:mcdm.heroes.v1/rule.combat/turn). They are dismissed at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 >####### Source of Earth Statblock
 >
@@ -9319,9 +9319,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**         |  **🎯 Special** |
 > 
-> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 5 tree appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The tree has 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Additionally, when you start your turn with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the tree, you can end one effect on yourself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn, or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) also gains this benefit.
+> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 5 tree appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The tree has 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Additionally, when you start your [turn](scc:mcdm.heroes.v1/rule.combat/turn) with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the tree, you can end one effect on yourself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) also gains this benefit.
 > 
-> Each enemy who ends their turn within 3 squares of the tree is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn. A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way can use a main action to end the effect early.
+> Each enemy who ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the tree is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way can use a main action to end the effect early.
 
 <!-- @type: ability | @cost: 11 Essence -->
 > ###### Muse of Fire (11 Essence)
@@ -9349,7 +9349,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**              |  **🎯 Special** |
 > 
-> **Effect:** You create a [size](scc:mcdm.heroes.v1/rule.character/size) 1L vortex that lasts until the end of the encounter. At the start of each combat round while the vortex is unoccupied, the vortex vertical pulls 3 each enemy within 5 squares of it. Each enemy who enters the vortex or starts their turn there is [knocked prone](scc:mcdm.heroes.v1/condition/prone). At the end of the round, if a [winded](scc:mcdm.heroes.v1/rule.health/winded) enemy who is not a leader or solo creature is in the vortex, they are instantly destroyed.
+> **Effect:** You create a [size](scc:mcdm.heroes.v1/rule.character/size) 1L vortex that lasts until the end of the encounter. At the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) while the vortex is unoccupied, the vortex vertical pulls 3 each enemy within 5 squares of it. Each enemy who enters the vortex or starts their turn there is [knocked prone](scc:mcdm.heroes.v1/condition/prone). At the end of the round, if a [winded](scc:mcdm.heroes.v1/rule.health/winded) enemy who is not a leader or solo creature is in the vortex, they are instantly destroyed.
 
 <!-- @type: ability | @cost: 11 Essence -->
 > ###### World Torn Asunder (11 Essence)
@@ -9400,7 +9400,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 9 damage
 > - **17+:** 13 damage
 > 
-> **Persistent 2:** At the start of your turn, you can use a maneuver to use this ability again without spending essence.
+> **Persistent 2:** At the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a maneuver to use this ability again without spending essence.
 
 <!-- @type: ability | @cost: 11 Essence -->
 > ###### The Green Defends Its Servants (11 Essence)
@@ -9411,9 +9411,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**         | **🎯 Self or one ally** |
 > 
-> **Effect:** You conjure an elemental shield that protects the target until the end of your next turn. While the shield is active, the target can take the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action as a maneuver on each of their turns. The target gains 30 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until depleted or until the effect ends. If this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) disappears, the effect ends and the shield explodes, dealing 10 damage to each enemy within 5 squares of the target.
+> **Effect:** You conjure an elemental shield that protects the target until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). While the shield is active, the target can take the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action as a maneuver on each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn). The target gains 30 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until depleted or until the effect ends. If this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) disappears, the effect ends and the shield explodes, dealing 10 damage to each enemy within 5 squares of the target.
 > 
-> **Persistent 2:** The effect lasts until the start of your next turn.
+> **Persistent 2:** The effect lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 11 Essence -->
 > ###### Prism (11 Essence)
@@ -9463,7 +9463,7 @@ Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score increases to 5. Ad
 <!-- @type: feature -->
 #### Essential Being
 
-When you gain essence at the start of each of your turns during combat, you gain 4 essence instead of 3.
+When you gain essence at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 4 essence instead of 3.
 
 <!-- @type: feature -->
 #### One
@@ -9594,9 +9594,9 @@ Within the heat of battle, your determination and anger grow, fueling a [Heroic 
 
 ##### Ferocity in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain ferocity equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 1d3 ferocity.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain ferocity equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 ferocity.
 
-Additionally, the first time each combat round that you take damage, you gain 1 ferocity. The first time you become [winded](scc:mcdm.heroes.v1/rule.health/winded) or are [dying](scc:mcdm.heroes.v1/rule.health/dying) in an encounter, you gain 1d3 ferocity.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you take damage, you gain 1 ferocity. The first time you become [winded](scc:mcdm.heroes.v1/rule.health/winded) or are [dying](scc:mcdm.heroes.v1/rule.health/dying) in an encounter, you gain 1d3 ferocity.
 
 You lose any remaining ferocity at the end of the encounter.
 
@@ -9609,7 +9609,7 @@ When you use an ability outside of combat that lets you spend unlimited ferocity
 <!-- @type: feature -->
 #### Growing Ferocity
 
-You gain certain benefits in combat based on the amount of ferocity you have (see 1st-Level Aspect Features for details). These benefits last until the end of your turn, even if a benefit would become unavailable to you because of the amount of ferocity you spend during your turn.
+You gain certain benefits in combat based on the amount of ferocity you have (see 1st-Level Aspect Features for details). These benefits last until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), even if a benefit would become unavailable to you because of the amount of ferocity you spend during your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) benefits can be applied only if you are a specific level or higher, with the level of those benefits noted in the various [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) tables in this section.
 
@@ -9618,9 +9618,9 @@ Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) 
 | Ferocity        | Benefit                                                                                                                                                                                                                        |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.                                                                                                                 |
-| 4               | The first time you push a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
+| 4               | The first time you push a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
-| 8 (4th level)   | The first time you push a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                               |
+| 8 (4th level)   | The first time you push a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                               |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Might](scc:mcdm.heroes.v1/rule.character/might) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. |
 
@@ -9629,9 +9629,9 @@ Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) 
 | Ferocity        | Benefit                                                                                                                                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                                                                                                 |
-| 4               | The first time you slide a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                 |
+| 4               | The first time you slide a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                 |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
-| 8 (4th level)   | The first time you slide a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
+| 8 (4th level)   | The first time you slide a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
@@ -9887,7 +9887,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 5 + M damage; M < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **17+:** 8 + M damage; M < STRONG, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > 
-> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ###### 5-Ferocity Ability
 
@@ -9919,7 +9919,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|------------------:|
 > | **📏 Self** |       **🎯 Self** |
 > 
-> **Effect:** You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), and the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) you make this turn automatically obtains a tier 3 outcome.
+> **Effect:** You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), and the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) you make this [turn](scc:mcdm.heroes.v1/rule.combat/turn) automatically obtains a tier 3 outcome.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
 > ###### Thunder Roar (5 Ferocity)
@@ -9986,7 +9986,7 @@ You have a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) equal to yo
 <!-- @type: feature -->
 ##### Tooth and Claw
 
-At the end of each of your turns, each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
+At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 ##### Unstoppable Force
@@ -10157,7 +10157,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy who starts their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their turn.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 7 Ferocity | @id: face-the-storm -->
 > ###### Face the Storm! (7 Ferocity)
@@ -10168,7 +10168,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score and increases its [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, when you use an ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score and increases its [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
 > ###### Steelbreaker (7 Ferocity)
@@ -10190,7 +10190,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |---------------------------|--------------------:|
 > | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1**            | **🎯 One creature** |
 > 
-> **Effect:** If the target is not a leader or solo creature, they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at the end of their next turn. If the target is a leader or solo creature, you gain 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge) and can make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
+> **Effect:** If the target is not a leader or solo creature, they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). If the target is a leader or solo creature, you gain 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge) and can make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -10205,7 +10205,7 @@ Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.her
 <!-- @type: feature -->
 #### Damaging Ferocity
 
-The first time you take damage each combat round, you gain 2 ferocity instead of 1.
+The first time you take damage each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), you gain 2 ferocity instead of 1.
 
 <!-- @type: feature -->
 #### Growing Ferocity Improvement
@@ -10263,7 +10263,7 @@ You and each ally within 5 squares of you ignore negative effects from inclement
 <!-- @type: feature -->
 ##### Unfettered
 
-At the start of your turn, you can end any [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on you. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to escape being confined or imprisoned.
+At the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can end any [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on you. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to escape being confined or imprisoned.
 
 <!-- @type: feature -->
 #### 9-Ferocity Ability
@@ -10414,7 +10414,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 9 Ferocity | @subtype: triggered -->
 > ###### Death Strike (9 Ferocity)
 > 
-> *Once you taste your foe's blood, you become more efficient and turn every killing blow into an opportunity.*
+> *Once you taste your foe's blood, you become more efficient and [turn](scc:mcdm.heroes.v1/rule.combat/turn) every killing blow into an opportunity.*
 > 
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** | **Free triggered** |
 > |---------------------------|-------------------:|
@@ -10462,7 +10462,7 @@ Choose one of the following abilities.
 > - **12-16:** 13 damage; M < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 17 damage; M < STRONG, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares, bringing the target with you. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the start of each of your turns.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares, bringing the target with you. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Ferocity -->
 > ###### Riders on the Storm (9 Ferocity)
@@ -10473,7 +10473,7 @@ Choose one of the following abilities.
 > |-----------------|---------------------------------:|
 > | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each creature in the area** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the [aura](scc:mcdm.heroes.v1/rule.combat/aura) is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the [aura](scc:mcdm.heroes.v1/rule.combat/aura) is active. Each ally target who starts or ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn) or until the effect ends.
 >
 > **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
@@ -10497,7 +10497,7 @@ Additionally, if you are a berserker or reaver, you have immunity to acid, cold,
 <!-- @type: feature -->
 #### Greater Ferocity
 
-When you gain ferocity at the start of each of your turns during combat, you gain 1d3 + 1 ferocity instead of 1d3.
+When you gain ferocity at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 + 1 ferocity instead of 1d3.
 
 <!-- @type: feature -->
 #### Growing Ferocity Improvement
@@ -10767,7 +10767,7 @@ You gain one crafting, exploration, or intrigue perk of your choice.
 <!-- @type: feature -->
 #### Primordial Ferocity
 
-The first time you take damage each combat round, you gain 3 ferocity instead of 2.
+The first time you take damage each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), you gain 3 ferocity instead of 2.
 
 <!-- @type: feature -->
 #### Primordial Power
@@ -10901,9 +10901,9 @@ As your ferocity grows, you gain benefits as noted on the [Boren](scc:mcdm.heroe
 | Ferocity        | Benefit                                                                                                                                                                                                                   |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | You can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time. Additionally, whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature you have [grabbed](scc:mcdm.heroes.v1/condition/grabbed), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                       |
-| 4               | The first time you grab a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                           |
+| 4               | The first time you grab a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                           |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                                                     |
-| 8 (4th level)   | The first time you grab a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                                                                                             |
+| 8 (4th level)   | The first time you grab a creature on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                                                                                             |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                                               |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed), any [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against that creature gains a bonus to its [potency](scc:mcdm.heroes.v1/rule.character/potency) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. |
 
@@ -10969,9 +10969,9 @@ As your ferocity grows, you gain benefits as noted on the [Corven](scc:mcdm.hero
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
-| 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
+| 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
-| 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
+| 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                    |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of any effects targeting you is reduced by 2 for you. |
 
@@ -11037,9 +11037,9 @@ As your ferocity grows, you gain benefits as noted on the [Raden](scc:mcdm.heroe
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
-| 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
+| 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
-| 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
+| 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test), the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver                                                     |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of any effects targeting you is reduced by 2 for you. |
 
@@ -11103,9 +11103,9 @@ As your ferocity grows, you gain benefits as noted on the [Vuken](scc:mcdm.heroe
 | Ferocity        | Benefit                                                                                                                                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature.                                                                                                                                                 |
-| 4               | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                   |
+| 4               | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                   |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
-| 8 (4th level)   | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                  |
+| 8 (4th level)   | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                  |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
 | 12 (10th level) | Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
@@ -11180,9 +11180,9 @@ As your mastery of your body and tradition grows, it imbues you with a [Heroic R
 
 ##### Discipline in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain discipline equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 2 discipline.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain discipline equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 discipline.
 
-Additionally, the first time each combat round that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability (see below) uses a main action, you gain 1 discipline. The first time each combat round that the Director uses an ability that costs Malice (see *Draw Steel: Monsters*), you gain 1 discipline.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability (see below) uses a main action, you gain 1 discipline. The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that the Director uses an ability that costs Malice (see *Draw Steel: Monsters*), you gain 1 discipline.
 
 You lose any remaining discipline at the end of the encounter.
 
@@ -11208,10 +11208,10 @@ You project a psionic field of order around your body, dampening the effects of 
 > 
 > **Effect:** Each target reduces their [potencies](scc:mcdm.heroes.v1/rule.character/potency) by 1.
 > 
-> Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on each of your turns, you can spend 1 discipline and give your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) one of the following additional effects until the start of your next turn:
+> Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can spend 1 discipline and give your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) one of the following additional effects until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn):
 > 
-> - Gravitic Disruption: The first time on a turn that a target takes damage, you can slide them up to 2 squares.
-> - Inertial Anchor: Any target who starts their turn in the area can't [shift](scc:mcdm.heroes.v1/movement/shifting).
+> - Gravitic Disruption: The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that a target takes damage, you can slide them up to 2 squares.
+> - Inertial Anchor: Any target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 > - Synaptic Break: Whenever you or any ally uses an ability against a target that has a [potency](scc:mcdm.heroes.v1/rule.character/potency) effect, the [potency](scc:mcdm.heroes.v1/rule.character/potency) is increased by 1.
 > 
 > This ability remains active even after an encounter ends. It ends only if you are [dying](scc:mcdm.heroes.v1/rule.health/dying) or if you willingly end it (no action required).
@@ -11239,7 +11239,7 @@ Your instincts for danger let you predict attacks before they happen.
 <!-- @type: feature -->
 #### Discipline Mastery
 
-As you advance in your chosen [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition), you gain certain benefits in combat, including benefits based on the amount of discipline you have. Benefits based on how much discipline you have last until the end of your turn, even if a benefit would become unavailable to you because of the amount of discipline you spend during your turn.
+As you advance in your chosen [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition), you gain certain benefits in combat, including benefits based on the amount of discipline you have. Benefits based on how much discipline you have last until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), even if a benefit would become unavailable to you because of the amount of discipline you spend during your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 Some [Discipline Mastery](scc:mcdm.heroes.v1/feature.null.level-1/discipline-mastery) benefits can be applied only if you are a specific level or higher, with the level of those benefits noted in the tables below.
 
@@ -11255,9 +11255,9 @@ Additionally, as your discipline grows, your psionic mastery of your body intens
 | Discipline      | Benefit                                                                                                                                                                                     |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) either before or after the maneuver.                                              |
-| 4               | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                 |
+| 4               | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you willingly move 1 or more squares as part of an ability, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                 |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
-| 8 (4th level)   | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                |
+| 8 (4th level)   | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you willingly move 1 or more squares as part of an ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                 |
 | 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
 
@@ -11273,9 +11273,9 @@ Additionally, as your discipline grows, you strengthen the psionic power suffusi
 | Discipline      | Benefit                                                                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature. Additionally, whenever you deal untyped damage with a psionic ability, you can change it to cold damage instead. |
-| 4               | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                   |
+| 4               | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                   |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                             |
-| 8 (4th level)   | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                  |
+| 8 (4th level)   | The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                  |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
 | 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).       |
 
@@ -11291,9 +11291,9 @@ Additionally, as your discipline grows, your psionic potential is amplified, gra
 | Discipline      | Benefit                                                                                                                                                                                     |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.                                                                          |
-| 4               | The first time in a combat round that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                  |
+| 4               | The first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                  |
 | 6               | You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
-| 8 (4th level)   | The first time in a combat round that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                 |
+| 8 (4th level)   | The first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                 |
 | 10 (7th level)  | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                 |
 | 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
 
@@ -11498,7 +11498,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------|------------------------------:|
 > | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. At the end of your current turn, each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability takes psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+> **Effect:** Each target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. At the end of your current [turn](scc:mcdm.heroes.v1/rule.combat/turn), each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability takes psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Relentless Nemesis (3 Discipline)
@@ -11515,7 +11515,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 8 + A damage
 > - **17+:** 12 + A damage
 >
-> **Effect:** Until the start of your next turn, whenever the target finishes moving or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). You must end this [shift](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever the target finishes moving or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). You must end this [shift](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Stunning Blow (3 Discipline)
@@ -11707,7 +11707,7 @@ Choose one of the following [heroic abilities](scc:mcdm.heroes.v1/rule.general/h
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area. At the end of this [turn](scc:mcdm.heroes.v1/rule.combat/turn), each enemy in the area takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ##### 2nd-Level Metakinetic Ability
 
@@ -11758,7 +11758,7 @@ You can long jump and high jump a [distance](scc:mcdm.heroes.v1/rule.combat/dist
 <!-- @type: feature -->
 #### Reorder
 
-At the start of each of your turns, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn. Alternatively, you can grant this benefit to one creature in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Alternatively, you can grant this benefit to one creature in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability.
 
 <!-- @type: feature -->
 #### 7-Discipline Ability
@@ -11785,7 +11785,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Stabilizing Field (7 Discipline)
@@ -11796,7 +11796,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and reduce the [potency](scc:mcdm.heroes.v1/rule.character/potency) of enemy effects targeting you by 1 for you. You can also use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) at the start of each of your turns to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn. Each ally in the area also gains these benefits.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and reduce the [potency](scc:mcdm.heroes.v1/rule.character/potency) of enemy effects targeting you by 1 for you. You can also use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) at the start of each of your turns to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each ally in the area also gains these benefits.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Synapse Field (7 Discipline)
@@ -11837,7 +11837,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Regenerative Field
 
-The first time each combat round that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability uses a main action, you gain 2 discipline instead of 1.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that an enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability uses a main action, you gain 2 discipline instead of 1.
 
 <!-- @type: feature -->
 #### Skill
@@ -11875,7 +11875,7 @@ Whenever you use an ability to reduce damage dealt to you or to reduce the [dist
 <!-- @type: feature -->
 #### Instant Action
 
-If you're not [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) at the start of your first turn in combat, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). If you are [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), you can spend 3 discipline to no longer be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) and gain the benefits of this feature.
+If you're not [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) at the start of your first [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) and gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). If you are [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), you can spend 3 discipline to no longer be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) and gain the benefits of this feature.
 
 <!-- @type: feature -->
 #### 9-Discipline Ability
@@ -11927,7 +11927,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** You jump up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the [aura](scc:mcdm.heroes.v1/rule.combat/aura) from that ability, which you control as if you were in the afterimage's space.
+> **Effect:** You jump up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), a static afterimage of you remains in the space you left, and any enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the [aura](scc:mcdm.heroes.v1/rule.combat/aura) from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Synaptic Reset (9 Discipline)
@@ -12079,7 +12079,7 @@ Your [Discipline Mastery](scc:mcdm.heroes.v1/feature.null.level-1/discipline-mas
 <!-- @type: feature -->
 #### Psi Boost
 
-Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) to it and enhance its effects. A [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost)'s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
+Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) to it and enhance its effects. A [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost)'s effects only last until the end of the [turn](scc:mcdm.heroes.v1/rule.combat/turn) which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
 
 <!-- @type: feature -->
 ##### Dynamic Power (1 Discipline)
@@ -12119,7 +12119,7 @@ If the ability has any [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), th
 <!-- @type: feature -->
 #### Improved Body
 
-When you gain discipline at the start of each of your turns during combat, you gain 3 discipline instead of 2.
+When you gain discipline at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 3 discipline instead of 2.
 
 <!-- @type: feature -->
 #### Skill
@@ -12184,7 +12184,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 19 + A damage; M < AVERAGE, the target is suppressed (save ends)
 > - **17+:** 24 + A damage; M < STRONG, the target is suppressed (save ends)
 >
-> **Effect:** While suppressed, a target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
+> **Effect:** While suppressed, a target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
 
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Phase Hurl (11 Discipline)
@@ -12259,15 +12259,15 @@ Choose one of the following abilities.
 > |---------------------|--------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**    | **🎯 One creature** |
 >
-> **Trigger:** The triggering creature starts their turn.
+> **Trigger:** The triggering creature starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
-> - **≤11:** I < WEAK, the target loses their turn
-> - **12-16:** I < AVERAGE, the target loses their turn
-> - **17+:** I < STRONG, the target loses their turn
+> - **≤11:** I < WEAK, the target loses their [turn](scc:mcdm.heroes.v1/rule.combat/turn)
+> - **12-16:** I < AVERAGE, the target loses their [turn](scc:mcdm.heroes.v1/rule.combat/turn)
+> - **17+:** I < STRONG, the target loses their [turn](scc:mcdm.heroes.v1/rule.combat/turn)
 >
-> **Effect:** If the target loses their turn, the round continues as if they had acted. A target who doesn't lose their turn takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score for each main action they take until the end of their next turn.
+> **Effect:** If the target loses their [turn](scc:mcdm.heroes.v1/rule.combat/turn), the round continues as if they had acted. A target who doesn't lose their [turn](scc:mcdm.heroes.v1/rule.combat/turn) takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score for each main action they take until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
 > ###### Time Loop (11 Discipline)
@@ -12278,9 +12278,9 @@ Choose one of the following abilities.
 > |-------------|-------------------:|
 > | **📏 Self** |        **🎯 Self** |
 >
-> **Trigger:** Another creature on the encounter map ends their turn.
+> **Trigger:** Another creature on the encounter map ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
-> **Effect:** You take a bonus turn immediately after the triggering creature. This ability can be used only once per combat round.
+> **Effect:** You take a bonus [turn](scc:mcdm.heroes.v1/rule.combat/turn) immediately after the triggering creature. This ability can be used only once per [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
 ##### 9th-Level Cryokinetic Abilities
 
@@ -12318,7 +12318,7 @@ Choose one of the following abilities.
 > - **12-16:** 11 + I cold damage; M < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 15 + I cold damage; M < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your turns. Additionally, whenever the target damages another creature while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, any [potency](scc:mcdm.heroes.v1/rule.character/potency) associated with the damage is reduced by 2.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, whenever the target damages another creature while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, any [potency](scc:mcdm.heroes.v1/rule.character/potency) associated with the damage is reduced by 2.
 
 ##### 9th-Level Metakinetic Abilities
 
@@ -12352,7 +12352,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 + A psychic damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 > - **17+:** 13 + A psychic damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 >
-> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become [winded](scc:mcdm.heroes.v1/rule.health/winded), they are instead reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Any creature reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn). If this ability causes a creature who is not a leader or solo creature to become [winded](scc:mcdm.heroes.v1/rule.health/winded), they are instead reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Any creature reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -12372,7 +12372,7 @@ Your [Discipline Mastery](scc:mcdm.heroes.v1/feature.null.level-1/discipline-mas
 <!-- @type: feature -->
 #### Manifold Body
 
-When you gain discipline at the start of each of your turns during combat, you gain 4 discipline instead of 3.
+When you gain discipline at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 4 discipline instead of 3.
 
 <!-- @type: feature -->
 #### Manifold Resonance
@@ -12455,7 +12455,7 @@ As a 1st-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Shadow College
 
-[Shadow](scc:mcdm.heroes.v1/class/shadow) colleges are secret institutions that turn ordinary folk into something else. Finding a college is the first step in a rigorous initiation process that [tests](scc:mcdm.heroes.v1/rule.test/test) the mettle of an applicant. Even those who make the cut often wash out—or are kicked out—as the master [shadows](scc:mcdm.heroes.v1/class/shadow) who teach stealth, magic, and assassination to their students are often less than gentle in their approach.
+[Shadow](scc:mcdm.heroes.v1/class/shadow) colleges are secret institutions that [turn](scc:mcdm.heroes.v1/rule.combat/turn) ordinary folk into something else. Finding a college is the first step in a rigorous initiation process that [tests](scc:mcdm.heroes.v1/rule.test/test) the mettle of an applicant. Even those who make the cut often wash out—or are kicked out—as the master [shadows](scc:mcdm.heroes.v1/class/shadow) who teach stealth, magic, and assassination to their students are often less than gentle in their approach.
 
 You graduated from a [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) chosen from the following options, each of which grants you a skill. (*Quick Build:* College of Black Ash.)
 
@@ -12472,9 +12472,9 @@ By observing your enemy, you learn how to use their weaknesses against them, bui
 
 ##### Insight in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain insight equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 1d3 insight.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain insight equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 insight.
 
-Additionally, the first time each combat round that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 1 insight.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 1 insight.
 
 Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) that makes use of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), that ability costs 1 fewer insight if you have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on it. If the ability has multiple targets, the cost is reduced even if the ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) against only one target.
 
@@ -12630,9 +12630,9 @@ You have the following ability.
 > |-------------|-------------------:|
 > | **📏 Self** |        **🎯 Self** |
 > 
-> **Trigger:** Another hero ends their turn. That hero can't have used this ability to start their turn.
+> **Trigger:** Another hero ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn). That hero can't have used this ability to start their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
-> **Effect:** You take your turn after the triggering hero.
+> **Effect:** You take your [turn](scc:mcdm.heroes.v1/rule.combat/turn) after the triggering hero.
 
 <!-- @type: feature -->
 #### Kit
@@ -12876,7 +12876,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 <!-- @type: feature -->
 ##### Burning Ash
 
-The ash you leave behind burns your foes. The first time on a turn that you use a shadow ability to [teleport](scc:mcdm.heroes.v1/movement/teleport) away from or into a space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an enemy, that enemy takes fire damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
+The ash you leave behind burns your foes. The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you use a shadow ability to [teleport](scc:mcdm.heroes.v1/movement/teleport) away from or into a space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an enemy, that enemy takes fire damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature | @id: friend -->
 ##### Friend!
@@ -12940,7 +12940,7 @@ Choose one of the following abilities.
 > |------------------|--------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10** | **🎯 One creature** |
 >
-> **Effect:** You attach a small bomb to a creature. If you are hidden from the creature, they don't notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don't, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy within 2 squares of it.
+> **Effect:** You attach a small bomb to a creature. If you are hidden from the creature, they don't notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don't, at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the bomb detonates. When the bomb detonates, you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy within 2 squares of it.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -12963,7 +12963,7 @@ Choose one of the following abilities.
 > - **12-16:** 5 poison damage
 > - **17+:** 7 poison damage
 >
-> **Effect:** The gas remains in the area until the end of the encounter. Any creature who starts their turn in the area and has M < AVERAGE is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
+> **Effect:** The gas remains in the area until the end of the encounter. Any creature who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area and has M < AVERAGE is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 ##### 2nd-Level Harlequin Mask Ability
 
@@ -13051,7 +13051,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 13 + A damage
 > - **17+:** 18 + A damage
 >
-> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by a willing ally within 5 squares of you until the end of the target's next turn.
+> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by a willing ally within 5 squares of you until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 7 Insight -->
 > ###### Pinning Shot (7 Insight)
@@ -13131,7 +13131,7 @@ You gain one skill of your choice. See Skills in Chapter 9: [Tests](scc:mcdm.her
 <!-- @type: feature -->
 #### Surge of Insight
 
-The first time each combat round that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 2 insight instead of 1.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 2 insight instead of 1.
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -13186,7 +13186,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-----------------|---------------:|
 > | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Special** |
 >
-> **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [shift](scc:mcdm.heroes.v1/movement/shifting) to a new location within the area and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
+> **Effect:** A black cloud fills the area until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), granting you and your allies [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) against enemies. While you are in the area, whenever an enemy ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [shift](scc:mcdm.heroes.v1/movement/shifting) to a new location within the area and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 <!-- @type: ability | @cost: 9 Insight -->
 > ###### Into the Shadows (9 Insight)
@@ -13197,7 +13197,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |----------------------------------|------------------------------:|
 > | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1**                   | **🎯 One creature or object** |
 >
-> **Effect:** You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) upon your return.
+> **Effect:** You and the target are removed from the encounter map until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). You reappear in the spaces you left or the nearest unoccupied spaces. Make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) upon your return.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -13255,9 +13255,9 @@ You gain one perk of your choice.
 As a maneuver, you lose control of yourself, becoming a shadow creature dripping with ash. This transformation lasts until the end of the encounter, until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:
 
 - You can automatically climb at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving.
-- Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score the first time you pass through their space on a turn.
-- If you end your turn with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
-- You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns.
+- Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score the first time you pass through their space on a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+- If you end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
+- You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 - You have corruption immunity equal to 5 + your level.
 - Creatures gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 - You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with other creatures.
@@ -13333,7 +13333,7 @@ Choose one of the following abilities.
 >
 > - **≤11:** The creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) is increased by 2 until the end of the encounter.
 > - **12-16:** The creature can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of the encounter.
-> - **17+:** The creature turns invisible until the end of their next turn.
+> - **17+:** The creature [turns](scc:mcdm.heroes.v1/rule.combat/turn) invisible until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ##### 6th-Level Harlequin Mask Abilities
 
@@ -13348,7 +13348,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
-> **Effect:** Until the start of your next turn, any [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against a target gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), any [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against a target gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: ability | @cost: 9 Insight -->
 > ###### Puppet Strings (9 Insight)
@@ -13380,7 +13380,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Keen Insight
 
-At the start of each of your turns during combat, you gain 1d3 + 1 insight instead of 1d3.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 + 1 insight instead of 1d3.
 
 <!-- @type: feature -->
 #### Skill
@@ -13433,7 +13433,7 @@ Your movement no longer provokes [opportunity attacks](scc:mcdm.heroes.v1/rule.c
 <!-- @type: feature -->
 ##### Time Bomb
 
-You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) against area abilities and effects equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your turn.
+You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) against area abilities and effects equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability -->
 > ###### Time Bomb
@@ -13446,7 +13446,7 @@ You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) again
 >
 > **Effect:** Each target takes acid, fire, or poison damage (your choice) equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 >
-> For each combat round that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used with this ability. After using the ability or at the end of the encounter, its area and [surges](scc:mcdm.heroes.v1/rule.resource/surge) are reset.
+> For each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used with this ability. After using the ability or at the end of the encounter, its area and [surges](scc:mcdm.heroes.v1/rule.resource/surge) are reset.
 >
 > **Spend 2+ Insight:** For every 2 insight spent, you increase the [cube](scc:mcdm.heroes.v1/rule.combat/cube)'s [size](scc:mcdm.heroes.v1/rule.character/size) by 1 and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that can be used only with this ability.
 
@@ -13521,7 +13521,7 @@ As a 9th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Gloom Squad
 
-At the start of each of your turns, you can forgo gaining insight to create 1d6 clones of yourself in unoccupied [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) spaces. A clone acts on your turn and uses your statistics, except they have 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). They are affected by any conditions and effects on you, and last until the start of your next turn. A clone doesn't have insight and can't use the [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation) ability, the [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, or any [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action). On their turn, a clone has a move action, a maneuver, and a main action that they can use only to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). While making a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), a clone must choose targets that you or another clone aren't also striking.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can forgo gaining insight to create 1d6 clones of yourself in unoccupied [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) spaces. A clone acts on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) and uses your statistics, except they have 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). They are affected by any conditions and effects on you, and last until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). A clone doesn't have insight and can't use the [Careful Observation](scc:mcdm.heroes.v1/feature.ability.shadow.level-3/careful-observation) ability, the [Umbral Form](scc:mcdm.heroes.v1/feature.shadow.level-6/umbral-form) feature, or any [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action). On their [turn](scc:mcdm.heroes.v1/rule.combat/turn), a clone has a move action, a maneuver, and a main action that they can use only to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). While making a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), a clone must choose targets that you or another clone aren't also striking.
 
 Outside of combat, you can have one clone active for every 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) you have. If a clone is destroyed, you must wait 1 hour before creating another one.
 
@@ -13651,7 +13651,7 @@ Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score increases to 5. 
 <!-- @type: feature -->
 #### Death Pool
 
-The first time each combat round that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 3 insight instead of 2.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you deal damage incorporating 1 or more [surges](scc:mcdm.heroes.v1/rule.resource/surge), you gain 3 insight instead of 2.
 
 <!-- @type: feature -->
 #### Perk
@@ -13680,7 +13680,7 @@ While you are in your [umbral form](scc:mcdm.heroes.v1/feature.shadow.level-6/um
 
 You have an epic resource called [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge). Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) on your abilities as if it were insight.
 
-Additionally, you can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) to take additional maneuvers on your turn. You can use one maneuver for each [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) you spend.
+Additionally, you can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) to take additional maneuvers on your [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can use one maneuver for each [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) you spend.
 
 [Subterfuge](scc:mcdm.heroes.v1/feature.shadow.level-10/subterfuge) remains until you spend it.
 
@@ -13755,9 +13755,9 @@ The ring of steel panics others but brings order to your mind, granting you a [H
 
 ##### Focus in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain focus equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 2 focus.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain focus equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 focus.
 
-Additionally, the first time each combat round that you or any ally damages a creature marked by you (see Mark below), you gain 1 focus. The first time in a combat round that any ally within 10 squares of you uses a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 1 focus.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you or any ally damages a creature marked by you (see Mark below), you gain 1 focus. The first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that any ally within 10 squares of you uses a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability), you gain 1 focus.
 
 You lose any remaining focus at the end of the encounter.
 
@@ -13916,7 +13916,7 @@ You know how to focus the attention of your allies as you push them toward [vict
 > - The ability deals extra damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - The creature dealing the damage can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - The creature dealing the damage can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
-> - If you damage a creature marked by you with a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
+> - If you damage a creature marked by you with a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > You can't gain more than one benefit from the same trigger.
 
@@ -14051,7 +14051,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 6 + M damage; R < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 10 + M damage; R < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Before the start of your next turn, the first time any ally deals damage to any target marked by you, that ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Effect:** Before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the first time any ally deals damage to any target marked by you, that ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: ability | @cost: 5 Focus | @id: now -->
 > ###### Now! (5 Focus)
@@ -14073,7 +14073,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |------------------|------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10** | **🎯 Two allies** |
 >
-> **Effect:** Each target who hasn't acted yet this combat round can take their turn in any order immediately after yours.
+> **Effect:** Each target who hasn't acted yet this [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) can take their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in any order immediately after yours.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -14111,7 +14111,7 @@ You have trained your squad to work together, stay silent, and wait for the oppo
 <!-- @type: feature -->
 ##### Melee Superiority
 
-After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 0 until the end of the current turn.
+After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced to 0 until the end of the current [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Mark Benefit:** When a creature marked by you attempts to move or [shift](scc:mcdm.heroes.v1/movement/shifting) within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) and spend 2 focus to make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that creature.
 
@@ -14220,7 +14220,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Until the start of your next turn, each target has a bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), each target has a bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -14246,7 +14246,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the first time on a turn that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) instead of a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that you or any ally deals damage to a target marked by you, the creature who dealt the damage can push the target up to 2 squares and then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. Additionally, any ally using the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action to target a creature marked by you can use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) instead of a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @cost: 7 Focus | @id: hit-em-hard -->
 > ###### Hit 'Em Hard! (7 Focus)
@@ -14262,7 +14262,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 7 Focus -->
 > ###### Rout (7 Focus)
 >
-> *The tide begins to turn.*
+> *The tide begins to [turn](scc:mcdm.heroes.v1/rule.combat/turn).*
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
@@ -14294,7 +14294,7 @@ Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Reason](scc:mcdm.hero
 <!-- @type: feature -->
 #### Focus on Their Weaknesses
 
-The first time each combat round that you or any ally damages a target marked by you, you gain 2 focus instead of 1.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you or any ally damages a target marked by you, you gain 2 focus instead of 1.
 
 <!-- @type: feature -->
 #### Improved Field Arsenal
@@ -14352,7 +14352,7 @@ You and any ally within 10 squares of you can move at full [speed](scc:mcdm.hero
 <!-- @type: feature -->
 ##### Shake It Off
 
-As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a [test](scc:mcdm.heroes.v1/rule.test/test), or to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turn. Any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
+As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a [test](scc:mcdm.heroes.v1/rule.test/test), or to end one effect on you that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
 
 <!-- @type: feature -->
 ##### Tactical Offensive
@@ -14549,7 +14549,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Heightened Focus
 
-When you gain focus at the start of each of your turns during combat, you gain 3 focus instead of 2.
+When you gain focus at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 3 focus instead of 2.
 
 <!-- @type: feature -->
 #### Seize the Initiative
@@ -14837,7 +14837,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### True Focus
 
-When you gain focus at the start of each of your turns during combat, you gain 4 focus instead of 3.
+When you gain focus at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 4 focus instead of 3.
 
 <!-- @type: feature -->
 #### Warmaster
@@ -14922,11 +14922,11 @@ The focus and precision of your thoughts grant you a [Heroic Resource](scc:mcdm.
 
 ##### Clarity in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain clarity equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 1d3 clarity.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain clarity equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 clarity.
 
-Additionally, the first time each combat round that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 clarity.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 clarity.
 
-You can spend clarity you don't have, pushing that [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) into negative numbers to a maximum negative value equal to 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. At the end of each of your turns, you take 1 damage for each negative point of clarity.
+You can spend clarity you don't have, pushing that [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) into negative numbers to a maximum negative value equal to 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you take 1 damage for each negative point of clarity.
 
 Whenever you have clarity below 0, you are strained. Some psionic abilities have additional effects if you are already strained or become strained when you use them. Strained effects can still impact you even after you are no longer strained.
 
@@ -15002,7 +15002,7 @@ Through meditation, you create a ward that protects you. Choose one of the follo
 <!-- @type: feature -->
 ##### Entropy Ward
 
-Your ward slows time for your enemies. Whenever a creature deals damage to you, their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and they can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) until the end of their next turn.
+Your ward slows time for your enemies. Whenever a creature deals damage to you, their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and they can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Repulsive Ward
@@ -15012,12 +15012,12 @@ You surround yourself with an invisible ward of telekinetic energy. Whenever an 
 <!-- @type: feature -->
 ##### Steel Ward
 
-Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the end of your next turn.
+Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Vanishing Ward
 
-Your ward allows you to slip away from threats. Whenever you take damage, you become invisible until the end of your next turn.
+Your ward allows you to slip away from threats. Whenever you take damage, you become invisible until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 #### Telepathic Speech
@@ -15126,7 +15126,7 @@ You have the following ability.
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**    | **🎯 One creature or object** |
 >
 >
-> **Effect:** The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against the target before the start of your next turn gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+> **Effect:** The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against the target before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 >
 > **Spend 1 Clarity:** You target one additional creature or object.
 
@@ -15191,7 +15191,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 4 + R cold damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 > - **17+:** 6 + R cold damage; M < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> **Strained:** You are [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of your next turn. Additionally, a target [slowed](scc:mcdm.heroes.v1/condition/slowed) by this ability is [restrained](scc:mcdm.heroes.v1/condition/restrained) instead.
+> **Strained:** You are [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, a target [slowed](scc:mcdm.heroes.v1/condition/slowed) by this ability is [restrained](scc:mcdm.heroes.v1/condition/restrained) instead.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Incinerate
@@ -15208,9 +15208,9 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 4 fire damage
 > - **17+:** 6 fire damage
 >
-> **Effect:** A column of fire remains in the area until the start of your next turn. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 2 fire damage.
+> **Effect:** A column of fire remains in the area until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each enemy who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 2 fire damage.
 >
-> **Strained:** The size of the [cube](scc:mcdm.heroes.v1/rule.combat/cube) increases by 2, but the fire disappears at the end of your turn.
+> **Strained:** The size of the [cube](scc:mcdm.heroes.v1/rule.combat/cube) increases by 2, but the fire disappears at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Kinetic Grip
@@ -15244,7 +15244,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 5 psychic damage; push 1
 > - **17+:** 7 psychic damage; push 2
 >
-> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 2, and you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the start of your next turn.
+> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 2, and you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Materialize
@@ -15320,7 +15320,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |----------------------------------------|--------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                       | **🎯 One creature** |
 >
-> **Effect:** If you target an ally, they gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, and they can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn. If you target an enemy, you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> **Effect:** If you target an ally, they gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, and they can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn). If you target an enemy, you make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -15354,7 +15354,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |---------------------------------|------------------------:|
 > | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 2**                  | **🎯 Self or one ally** |
 >
-> **Effect:** [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against the target take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. Whenever the target takes damage while under this effect, they can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the source of the damage.
+> **Effect:** [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against the target take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever the target takes damage while under this effect, they can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the source of the damage.
 
 <!-- @type: ability | @cost: 3 Clarity -->
 > ###### Smolder (3 Clarity)
@@ -15399,7 +15399,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |----------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                 | **🎯 Self or one ally** |
 >
-> **Effect:** The target ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and takes no damage from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) until the start of your next turn. Whenever the target enters a square while under this effect, they can push one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. When pushing an ally, the target can ignore that ally's [stability](scc:mcdm.heroes.v1/rule.character/stability). A creature can only be force moved this way once a turn.
+> **Effect:** The target ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and takes no damage from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever the target enters a square while under this effect, they can push one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. When pushing an ally, the target can ignore that ally's [stability](scc:mcdm.heroes.v1/rule.character/stability). A creature can only be force moved this way once a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **Strained:** You are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). While you are [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, whenever you are force moved, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus.
 
@@ -15425,7 +15425,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |--------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**               | **🎯 Self or one ally** |
 >
-> **Effect:** Until the start of your next turn, the target gains a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), and they have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target gains a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), and they have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make. If the target obtains a tier 3 outcome on that roll, you gain 1 clarity.
 >
 > **Strained:** You take 1d6 damage, and you can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) (save ends).
 
@@ -15491,7 +15491,7 @@ Choose one of the following abilities.
 > - **12-16:** You target three creatures, one of which can be you.
 > - **17+:** You target four creatures, one of which can be you.
 >
-> **Effect:** Until the start of your next turn, each target gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed), and they can use an additional maneuver on their turn. If a target is already [dazed](scc:mcdm.heroes.v1/condition/dazed), that condition ends for them.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), each target gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), they can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed), and they can use an additional maneuver on their [turn](scc:mcdm.heroes.v1/rule.combat/turn). If a target is already [dazed](scc:mcdm.heroes.v1/condition/dazed), that condition ends for them.
 >
 > **Strained:** Your [speed](scc:mcdm.heroes.v1/rule.character/speed) is halved until the end of the encounter.
 
@@ -15512,7 +15512,7 @@ Choose one of the following abilities.
 >
 > **Effect:** A target can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) while their [speed](scc:mcdm.heroes.v1/rule.character/speed) is reduced this way.
 >
-> **Strained:** The [potency](scc:mcdm.heroes.v1/rule.character/potency) of this ability increases by 1 and you take 1d6 damage. At the start of each combat round while any target is affected by this ability, you take 1d6 damage. You can end the effect on all affected targets at any time (no action required).
+> **Strained:** The [potency](scc:mcdm.heroes.v1/rule.character/potency) of this ability increases by 1 and you take 1d6 damage. At the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) while any target is affected by this ability, you take 1d6 damage. You can end the effect on all affected targets at any time (no action required).
 
 ##### 2nd-Level Telekinesis Ability
 
@@ -15533,7 +15533,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 damage; vertical push 4
 > - **17+:** 9 damage; vertical push 6
 >
-> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 1, and you are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
+> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 1, and you are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Clarity -->
 > ###### Levity and Gravity (5 Clarity)
@@ -15571,7 +15571,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 + R psychic damage; I < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 14 + R psychic damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Strained:** You start crying, and you can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) or make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) until the end of the target's next turn.
+> **Strained:** You start crying, and you can't use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) or make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 5 Clarity -->
 > ###### Synaptic Override (5 Clarity)
@@ -15590,7 +15590,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect. However, you can move them to provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 >
-> **Strained:** You take 1d6 damage and are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
+> **Strained:** You take 1d6 damage and are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -15600,7 +15600,7 @@ As a 3rd-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Scan
 
-You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a thinking creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature until they move beyond that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
+You can extend your psionic senses beyond their usual range. Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a thinking creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature until they move beyond that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 
 <!-- @type: feature -->
 #### 7-Clarity Ability
@@ -15622,7 +15622,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 5 + P corruption damage; the target is flung through time, and if P < AVERAGE, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 8 + P corruption damage; the target is flung through time, and if P < STRONG, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** A target who is flung through time is removed from the encounter map until the end of their next turn, reappearing in their original space or the nearest unoccupied space.
+> **Effect:** A target who is flung through time is removed from the encounter map until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), reappearing in their original space or the nearest unoccupied space.
 >
 > **Strained:** You take 2d6 damage and permanently grow visibly older (the equivalent of 10 years for a [human](scc:mcdm.heroes.v1/ancestry/human)). If you obtain a tier 3 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), you gain 2 clarity.
 
@@ -15637,7 +15637,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > **Effect:** You create three [size](scc:mcdm.heroes.v1/rule.character/size) 1T orbs that orbit your body. Each orb gives you a cumulative [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 1. Each time you take damage, you lose 1 orb.
 >
-> Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to fire an orb at a creature or object within 5 squares as a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [strike](scc:mcdm.heroes.v1/rule.combat/strike), losing the orb after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+> Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to fire an orb at a creature or object within 5 squares as a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [strike](scc:mcdm.heroes.v1/rule.combat/strike), losing the orb after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15656,7 +15656,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |------------------------------|----------------:|
 > | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                |  **🎯 Special** |
 >
-> **Effect:** The [aura](scc:mcdm.heroes.v1/rule.combat/aura) lasts until the start of your next turn. Whenever an enemy targets an ally in the area with a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.
+> **Effect:** The [aura](scc:mcdm.heroes.v1/rule.combat/aura) lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever an enemy targets an ally in the area with a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.
 >
 > **Strained:** The size of the [aura](scc:mcdm.heroes.v1/rule.combat/aura) increases by 1. Whenever your [aura](scc:mcdm.heroes.v1/rule.combat/aura) reflects an ability, you take 2d6 damage and forget a memory, as determined by you and the Director.
 
@@ -15692,7 +15692,7 @@ Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Presence](scc:mcdm.
 <!-- @type: feature -->
 #### Mind Projection
 
-As a maneuver, you project your mind outside your body. While you are in this state, your body remains unconscious [and prone](scc:mcdm.heroes.v1/condition/prone), and your mind is a separate entity with [size](scc:mcdm.heroes.v1/rule.character/size) 1T. Your mind automatically has [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.
+As a maneuver, you project your mind outside your body. While you are in this state, your body remains unconscious [and prone](scc:mcdm.heroes.v1/condition/prone), and your mind is a separate entity with [size](scc:mcdm.heroes.v1/rule.character/size) 1T. Your mind automatically has [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), and can freely move through solid matter. If you end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) inside solid matter, you are forced out into the space where you entered it.
 
 Any abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
@@ -15701,7 +15701,7 @@ Any abilities or features you use originate from your mind. Both your mind and y
 
 Whenever you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while strained, you can forgo the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and gain 3 clarity instead.
 
-Additionally, the first time each combat round that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 2 clarity instead of 1.
+Additionally, the first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 2 clarity instead of 1.
 
 <!-- @type: feature -->
 #### Perk
@@ -15746,7 +15746,7 @@ Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) usi
 <!-- @type: feature -->
 ##### Distortion Temporal
 
-While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura). That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the turn.
+While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura). That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there, they gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Kinetic Amplifier
@@ -15761,7 +15761,7 @@ The [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [ranged](scc:mcd
 <!-- @type: feature -->
 ##### Speed of Thought
 
-Once per combat round while you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can spend 2 clarity when you use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to turn it into a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
+Once per [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) while you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can spend 2 clarity when you use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [turn](scc:mcdm.heroes.v1/rule.combat/turn) it into a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 <!-- @type: feature -->
 ##### Triangulate
@@ -15782,14 +15782,14 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |----------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                 | **🎯 Self or one ally** |
 >
-> **Effect:** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Additionally, whenever an enemy uses a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability against the target while they are under this effect, the enemy takes 5 fire damage.
+> **Effect:** Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the target has cold immunity 10 and fire immunity 10, and their [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Additionally, whenever an enemy uses a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability against the target while they are under this effect, the enemy takes 5 fire damage.
 >
 > **Strained:** The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). You are [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
 <!-- @type: ability | @cost: 9 Clarity -->
 > ###### Hypersonic (9 Clarity)
 >
-> *You move fast enough to turn around and watch your foes feel the aftermath.*
+> *You move fast enough to [turn](scc:mcdm.heroes.v1/rule.combat/turn) around and watch your foes feel the aftermath.*
 >
 > | **Area, Charge, Psionic, Telekinesis** |               **Main action** |
 > |----------------------------------------|------------------------------:|
@@ -15803,7 +15803,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 18 sonic damage
 > - **17+:** 24 sonic damage
 >
-> **Strained:** If you obtain a tier 2 outcome or better, you are [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of your turn and each target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their turn.
+> **Strained:** If you obtain a tier 2 outcome or better, you are [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) and each target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 9 Clarity -->
 > ###### Mind Snare (9 Clarity)
@@ -15856,7 +15856,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice.
 <!-- @type: feature -->
 #### Psi Boost
 
-Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) to it and enhance its effects. A [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost)'s effects only last until the end of the turn which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
+Whenever you use an ability that is a main action or a maneuver with the Psionic keyword, you can spend additional discipline to apply a [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) to it and enhance its effects. A [psi boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost)'s effects only last until the end of the [turn](scc:mcdm.heroes.v1/rule.combat/turn) which the ability is first used. You can apply multiple psi boosts to an ability, but only one instance of each specific boost. You can use the following psi boosts.
 
 <!-- @type: feature -->
 ##### Dynamic Power (1 Clarity)
@@ -15911,7 +15911,7 @@ Choose one of the following abilities.
 > |---------------------------------|-----------------:|
 > | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 2**                  | **🎯 One enemy** |
 >
-> **Effect:** The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are [knocked prone](scc:mcdm.heroes.v1/condition/prone).
+> **Effect:** The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever the target takes damage while they have this weakness, they are [knocked prone](scc:mcdm.heroes.v1/condition/prone).
 >
 > **Strained:** This ability gains the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword as the vision hurts the target's psyche. You make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), then are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
@@ -15930,7 +15930,7 @@ Choose one of the following abilities.
 > |----------------------------------------|--------------------------------------------:|
 > | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**                | **🎯 Each creature and object in the area** |
 >
-> **Effect:** The area is frozen in time until the start of your next turn. Each object in the area is [restrained](scc:mcdm.heroes.v1/condition/restrained) and can't fall until the effect ends. Until the effect ends, creatures in the area who are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or would die stay alive, and objects in the area that are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) remain undestroyed.
+> **Effect:** The area is frozen in time until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each object in the area is [restrained](scc:mcdm.heroes.v1/condition/restrained) and can't fall until the effect ends. Until the effect ends, creatures in the area who are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or would die stay alive, and objects in the area that are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) remain undestroyed.
 >
 > Make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy in the area.
 >
@@ -16012,7 +16012,7 @@ Choose one of the following abilities.
 > |----------------------------------------|---------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                       | **🎯 Special** |
 >
-> **Effect:** You target a number of creatures with this ability determined by the outcome of your [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). You and your allies are invisible to each target until the start of your next turn.
+> **Effect:** You target a number of creatures with this ability determined by the outcome of your [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). You and your allies are invisible to each target until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -16045,7 +16045,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Lucid Mind
 
-At the start of each of your turns during combat, you gain 1d3 + 1 clarity instead of 1d3.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 + 1 clarity instead of 1d3.
 
 <!-- @type: feature -->
 #### Skill
@@ -16094,7 +16094,7 @@ You have the following ability.
 > |-------------------|-----------------------------:|
 > | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) until the start of your next turn, and can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You can also [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). While [flying](scc:mcdm.heroes.v1/movement/fly), a target's [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased.
+> **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You can also [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). While [flying](scc:mcdm.heroes.v1/movement/fly), a target's [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased.
 >
 > **Spend 5 Clarity:** The effects last for 1 hour instead.
 
@@ -16188,7 +16188,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > **Effect:** Choose two of the following effects:
 >
 > - The target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
-> - The target gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their turn.
+> - The target gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and can end any effects on them that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > - The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), and gains a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the encounter.
 >
 > **Strained:** You and the target both permanently grow visibly younger (the equivalent of 20 [human](scc:mcdm.heroes.v1/ancestry/human) years, to the minimum of an 18-year-old). Additionally, you are [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
@@ -16202,7 +16202,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |------------------------------------|------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                   | **🎯 Self or one ally** |
 >
-> **Effect:** The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 and can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus.
+> **Effect:** The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 and can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever the target force moves a creature or object while under this effect, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus.
 >
 > **Strained:** You can't use maneuvers (save ends).
 
@@ -16240,7 +16240,7 @@ Choose one of the following abilities.
 > |----------------------------------|--------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 5**                  | **🎯 Three allies** |
 > 
-> **Effect:** Each target can use any main action available to them as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), but they lose their main action on their next turn.
+> **Effect:** Each target can use any main action available to them as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), but they lose their main action on their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > 
 > **Strained:** Make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets you and each enemy within [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 > 
@@ -16259,7 +16259,7 @@ Choose one of the following abilities.
 > |--------------------------------|-----------------------------:|
 > | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each ally in the area** |
 >
-> **Effect:** The targets share 6 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) among themselves, as you determine. A target can't gain more than 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) this way. After using this ability, you can't gain any clarity until the end of the next combat round.
+> **Effect:** The targets share 6 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) among themselves, as you determine. A target can't gain more than 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) this way. After using this ability, you can't gain any clarity until the end of the next [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
 ##### 9th-Level Telekinesis Abilities
 
@@ -16335,7 +16335,7 @@ Choose one of the following abilities.
 > |------------------------------|---------------------------------------:|
 > | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**               | **🎯 Each ally and enemy in the area** |
 >
-> **Effect:** You and each target ally can't obtain lower than a tier 2 outcome on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) until the start of your next turn. Each target enemy is affected by the ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> **Effect:** You and each target ally can't obtain lower than a tier 2 outcome on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each target enemy is affected by the ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -16358,7 +16358,7 @@ Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Presence](scc:mcdm.
 <!-- @type: feature -->
 #### Clear Mind
 
-The first time each combat round that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 3 clarity instead of 2.
+The first time each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 3 clarity instead of 2.
 
 <!-- @type: feature -->
 #### Omnisensory
@@ -16373,7 +16373,7 @@ You gain one interpersonal, lore, or supernatural perk of your choice.
 <!-- @type: feature -->
 #### Psion
 
-At the start of each of your turns during combat, you gain 1d3 + 2 clarity instead of 1d3 + 1.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 + 2 clarity instead of 1d3 + 1.
 
 Additionally, you can choose to not take damage from having negative clarity. You can also choose to take on any ability's strained effect even if you're not strained.
 
@@ -16387,7 +16387,7 @@ You gain one skill of your choice.
 
 You have an epic resource called vision. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain vision equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend vision on your abilities as if it were clarity.
 
-Additionally, you can spend vision to use one additional psionic ability on your turn, provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.
+Additionally, you can spend vision to use one additional psionic ability on your [turn](scc:mcdm.heroes.v1/rule.combat/turn), provided you pay the entire cost of the ability in vision. If you choose to use a psionic ability that usually costs no clarity, you must spend 1 vision to use it.
 
 Vision remains until you spend it.
 
@@ -16462,11 +16462,11 @@ During battles, you are fueled by the dynamic ups, downs, and upside downs of th
 
 ##### Drama in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain drama equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your turns during combat, you gain 1d3 drama.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain drama equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 drama.
 
 Additionally, you gain drama when certain events occur during a combat encounter:
 
-- The first time three or more heroes use an ability on the same turn, you gain 2 drama.
+- The first time three or more heroes use an ability on the same [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain 2 drama.
 - The first time any hero is made [winded](scc:mcdm.heroes.v1/rule.health/winded) during the encounter, you gain 2 drama.
 - Whenever a creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) rolls a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), you gain 3 drama.
 - When you or another hero dies, you gain 10 drama.
@@ -16506,7 +16506,7 @@ You can have a number of bonds active equal to your level. When you form a bond 
 <!-- @type: feature -->
 #### Routines
 
-You enter every battle with a set of performance abilities at the ready. Performances are magical presentations (such as songs, dances, poems, or gymnastic feats) that your allies can participate in. These abilities have the Performance keyword. At the start of each combat round, as long as you are not [dazed](scc:mcdm.heroes.v1/condition/dazed), dead, or [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), you can either choose a new performance or maintain your current performance (no action required). Your performance lasts until you are unable to maintain it or until the end of the encounter.
+You enter every battle with a set of performance abilities at the ready. Performances are magical presentations (such as songs, dances, poems, or gymnastic feats) that your allies can participate in. These abilities have the Performance keyword. At the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), as long as you are not [dazed](scc:mcdm.heroes.v1/condition/dazed), dead, or [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), you can either choose a new performance or maintain your current performance (no action required). Your performance lasts until you are unable to maintain it or until the end of the encounter.
 
 You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/choreography) and [Revitalizing Limerick](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/revitalizing-limerick) performance abilities. Your choice of class act grants you additional performances.
 
@@ -16519,7 +16519,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area gains a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their turn.
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area gains a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability -->
 > ###### Revitalizing Limerick
@@ -16530,7 +16530,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Each chosen target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Effect:** At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Each chosen target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature -->
 #### 1st-Level Class Act Features
@@ -16559,7 +16559,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one [test](scc:mcdm.heroes.v1/rule.test/test) made to jump, tumble, or climb as part of their movement before the end of their turn.
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area can automatically obtain a tier 3 outcome on one [test](scc:mcdm.heroes.v1/rule.test/test) made to jump, tumble, or climb as part of their movement before the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Blocking
@@ -16575,7 +16575,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|---------------------------------:|
 > | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each creature in the area** |
 >
-> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
+> **Effect:** At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
 <!-- @type: feature -->
 ##### Dramatic Monologue
@@ -16593,9 +16593,9 @@ You have the following ability.
 >
 > **Effect:** Choose one of the following effects:
 >
-> - You orate a rousing tale of [victory](scc:mcdm.heroes.v1/rule.resource/victories). One ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make before the start of your next turn.
+> - You orate a rousing tale of [victory](scc:mcdm.heroes.v1/rule.resource/victories). One ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 > - You weave a tale of high-stakes heroics. One ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
-> - You insult a foe where they're most vulnerable. One enemy within [distance](scc:mcdm.heroes.v1/rule.combat/distance) takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make before the end of their next turn.
+> - You insult a foe where they're most vulnerable. One enemy within [distance](scc:mcdm.heroes.v1/rule.combat/distance) takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) they make before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **Spend 1 Drama:** You can choose two targets for the chosen effect.
 
@@ -16633,7 +16633,7 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your turn. Additionally, the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make this turn can't have an outcome lower than tier 2.
+> **Effect:** You gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, the next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) you make this [turn](scc:mcdm.heroes.v1/rule.combat/turn) can't have an outcome lower than tier 2.
 >
 > **Spend 1 Drama:** You gain a +4 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) instead.
 
@@ -16651,7 +16651,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |----------------------------------------|--------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**                       | **🎯 One creature** |
 >
-> **Effect:** At the end of each combat round while this performance is active, you can make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against the target that ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover). You can't target the same creature twice with this effect.
+> **Effect:** At the end of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) while this performance is active, you can make a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) against the target that ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover). You can't target the same creature twice with this effect.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16668,7 +16668,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: feature -->
 #### Class Act Triggered Action
@@ -16785,7 +16785,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 > - **12-16:** 6 + P damage
 > - **17+:** 9 + P damage
 >
-> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you or a willing ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you until the end of the target's next turn.
+> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you or a willing ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Witty Banter
@@ -16802,7 +16802,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 > - **12-16:** 5 + P psychic damage
 > - **17+:** 7 + P psychic damage
 >
-> **Effect:** One ally within 10 squares of you can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn.
+> **Effect:** One ally within 10 squares of you can end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **Spend 1 Drama:** The chosen ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -16829,7 +16829,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 10 + P sonic damage
 > - **17+:** 13 + P sonic damage
 >
-> **Effect:** The first time the target uses an ability before the start of your next turn, any effects from the ability's [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) other than damage are negated for all targets. Ability effects that always happen regardless of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) work as usual.
+> **Effect:** The first time the target uses an ability before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), any effects from the ability's [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) other than damage are negated for all targets. Ability effects that always happen regardless of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) work as usual.
 
 <!-- @type: ability | @cost: 3 Drama -->
 > ###### Hypnotic Overtones (3 Drama)
@@ -16910,7 +16910,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You turn invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The illusion and your invisibility last until the end of your next turn, or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.
+> **Effect:** You [turn](scc:mcdm.heroes.v1/rule.combat/turn) invisible and create a magical illusion of your corpse falling in your space. While you are invisible, you gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The illusion and your invisibility last until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), or until the illusion is interacted with, you take damage, or you use a main action or a maneuver.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Flip the Script (5 Drama)
@@ -16950,7 +16950,7 @@ As a 2nd-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 
 You can give a rousing speech, invoke your inspirations, or lift your fellows' spirits, appealing to the muses to heighten a battle's drama. However, irony is eager to hand your fortune to the villain to achieve the same end.
 
-Before you roll to gain drama at the start of your turn, you can make your appeal (no action required). If you do, your roll gains the following additional effects:
+Before you roll to gain drama at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can make your appeal (no action required). If you do, your roll gains the following additional effects:
 
 - If the roll is a 1, you gain 1 additional drama. The Director gains 1d3 Malice (see *Draw Steel: Monsters*).
 - If the roll is a 2, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), which you can keep or give to an ally within the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your active performance. The Director gains 1 Malice.
@@ -16964,14 +16964,14 @@ You have a specific manner that helps define your presence on the battlefield. C
 <!-- @type: feature -->
 ##### Allow Me to Introduce Tonight's Players
 
-Whenever you take the first turn in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed), and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the end of the combat round. Additionally, any [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) enemy is no longer [surprised](scc:mcdm.heroes.v1/rule.combat/surprised).
+Whenever you take the first [turn](scc:mcdm.heroes.v1/rule.combat/turn) in a combat encounter, you can use a main action to introduce yourself and your allies to your opponents. Each ally can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed), and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the end of the [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). Additionally, any [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) enemy is no longer [surprised](scc:mcdm.heroes.v1/rule.combat/surprised).
 
 <!-- @type: feature -->
 ##### Formal Introductions
 
 As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can scribe a notice of your arrival (such as a calling card or a formal letter) addressed to an enemy. You can deliver the notice to the target personally if you are in the same general area, send it by courier, or leave it in a covert location for the target to find. You can have only one notice active at a time.
 
-The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per combat round during encounters involving the target. The heroes start each such encounter with 2 additional [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). These [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of the encounter.
+The Director determines when the target receives your notice. When the target receives the notice, they become alarmed and take desperate measures to stop you. The Director gains 1 additional Malice per [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) during encounters involving the target. The heroes start each such encounter with 2 additional [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). These [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of the encounter.
 
 <!-- @type: feature -->
 ##### My Reputation Precedes Me
@@ -17003,7 +17003,7 @@ Choose one of the following abilities.
 > |-------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  |  **🎯 Special** |
 >
-> **Effect:** A [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) appears to help you during the encounter: either a bystander within [distance](scc:mcdm.heroes.v1/rule.combat/distance) uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). This [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is controlled by you, has their own turn, and shares your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). Their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is half yours. They have no abilities other than your [melee](scc:mcdm.heroes.v1/rule.combat/melee) and [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). At the end of the encounter, or when the [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
+> **Effect:** A [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) appears to help you during the encounter: either a bystander within [distance](scc:mcdm.heroes.v1/rule.combat/distance) uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). This [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is controlled by you, has their own [turn](scc:mcdm.heroes.v1/rule.combat/turn), and shares your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). Their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is half yours. They have no abilities other than your [melee](scc:mcdm.heroes.v1/rule.combat/melee) and [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). At the end of the encounter, or when the [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Twist at the End (5 Drama)
@@ -17014,7 +17014,7 @@ Choose one of the following abilities.
 > |-------------------|----------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 One dead enemy** |
 >
-> **Effect:** A target who is not a leader or solo creature comes back to life with half their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and becomes an ally under the Director's control. The players can work with the Director to determine when the target takes their turn each combat round. At the end of the encounter, the target turns to dust and is blown away.
+> **Effect:** A target who is not a leader or solo creature comes back to life with half their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and becomes an ally under the Director's control. The players can work with the Director to determine when the target takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn) each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). At the end of the encounter, the target turns to dust and is blown away.
 
 ##### 2nd-Level Duelist Ability
 
@@ -17034,7 +17034,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 5 Drama | @id: en-garde -->
 > ###### En Garde! (5 Drama)
 >
-> *Wait, it's... Guard! Turn! Parry! Dodge! Spin! Thrust! Ha!*
+> *Wait, it's... Guard! [Turn](scc:mcdm.heroes.v1/rule.combat/turn)! Parry! Dodge! Spin! Thrust! Ha!*
 >
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -17061,7 +17061,7 @@ Choose one of the following abilities.
 > |-------------------|----------------:|
 > | **📏 Special**    |  **🎯 Special** |
 >
-> **Effect:** You use an ability that you have observed being used this combat round. The ability must have the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the [strike](scc:mcdm.heroes.v1/rule.combat/strike), you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score for any [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and any damage you deal is sonic damage.
+> **Effect:** You use an ability that you have observed being used this [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). The ability must have the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the [strike](scc:mcdm.heroes.v1/rule.combat/strike), you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score for any [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and any damage you deal is sonic damage.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Tough Crowd (5 Drama)
@@ -17072,7 +17072,7 @@ Choose one of the following abilities.
 > |-------------------------|----------------:|
 > | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** |  **🎯 Special** |
 >
-> **Effect:** The area is haunted by a swirling horde of phantoms until the end of the encounter. Allies can enter any square of the area without spending movement. At the end of each of your turns, you can make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy in the area.
+> **Effect:** The area is haunted by a swirling horde of phantoms until the end of the encounter. Allies can enter any square of the area without spending movement. At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy in the area.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -17101,12 +17101,12 @@ Your [troubadour class act](scc:mcdm.heroes.v1/feature.troubadour.level-1/trouba
 <!-- @type: feature -->
 ##### Foil
 
-At the start of an encounter, choose one creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with that creature. The chosen creature also has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with you. If the chosen creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can choose a new foil at the start of the next combat round.
+At the start of an encounter, choose one creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with that creature. The chosen creature also has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with you. If the chosen creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can choose a new foil at the start of the next [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
 <!-- @type: feature -->
 ##### Missed Cue
 
-If you aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) at the start of an encounter, you can choose one enemy within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second combat round. You must earn 3 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) before you can use this feature again.
+If you aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) at the start of an encounter, you can choose one enemy within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). You must earn 3 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) before you can use this feature again.
 
 <!-- @type: feature -->
 ##### Second Album
@@ -17122,7 +17122,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their [turn](scc:mcdm.heroes.v1/rule.combat/turn), they can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability -->
 > ###### "Never-Ending Hero"
@@ -17133,7 +17133,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn [dying](scc:mcdm.heroes.v1/rule.health/dying) while in the area gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their turn.
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) [dying](scc:mcdm.heroes.v1/rule.health/dying) while in the area gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 #### 7-Drama Ability
@@ -17189,7 +17189,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 8 + P damage; push 3
 > - **17+:** 11 + P damage; push 5
 >
-> **Effect:** You can choose to have this ability deal sonic damage. Additionally, you can use this ability against the same target for the next 2 combat rounds without spending drama.
+> **Effect:** You can choose to have this ability deal sonic damage. Additionally, you can use this ability against the same target for the next 2 [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) without spending drama.
 
 <!-- @type: ability | @cost: 7 Drama -->
 > ###### We Meet at Last (7 Drama)
@@ -17202,7 +17202,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > **Effect:** Until the end of the encounter, both you and the target can target each other with abilities even if you are beyond [distance](scc:mcdm.heroes.v1/rule.combat/distance), with the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of this ability replacing those abilities' [distances](scc:mcdm.heroes.v1/rule.combat/distance). The target can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by an ability used beyond [distance](scc:mcdm.heroes.v1/rule.combat/distance) this way.
 >
-> Additionally, once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to communicate a motivating or dispiriting message to the target, either granting them 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) or forcing them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) they make before the start of your next turn.
+> Additionally, once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to communicate a motivating or dispiriting message to the target, either granting them 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) or forcing them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) they make before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -17278,7 +17278,7 @@ Choose one of the following features.
 
 ###### Fix It in Post
 
-Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to change one condition affecting a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability. Choose one of the following conditions on the target: [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [frightened](scc:mcdm.heroes.v1/condition/frightened)[, prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [taunted](scc:mcdm.heroes.v1/condition/taunted). You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.
+Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to change one condition affecting a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability. Choose one of the following conditions on the target: [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [frightened](scc:mcdm.heroes.v1/condition/frightened)[, prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [taunted](scc:mcdm.heroes.v1/condition/taunted). You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.
 
 ###### Take Two!
 
@@ -17293,7 +17293,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area can reroll the first [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that turn that obtains a tier 2 outcome. They must use the new roll.
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area can reroll the first [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that [turn](scc:mcdm.heroes.v1/rule.combat/turn) that obtains a tier 2 outcome. They must use the new roll.
 
 <!-- @type: feature -->
 ##### Duelist Features
@@ -17302,7 +17302,7 @@ Choose one of the following features.
 
 ###### Verbal Duel
 
-Once on each of your turns while the target of your Foil feature is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
+Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) while the target of your Foil feature is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
 
 ###### We Can't Be Upstaged!
 
@@ -17317,7 +17317,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, a target who starts their turn in the area gains a bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) they can [shift](scc:mcdm.heroes.v1/movement/shifting) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score until the end of their turn.
+> **Effect:** While this performance is active, a target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area gains a bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) they can [shift](scc:mcdm.heroes.v1/movement/shifting) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature -->
 ##### Virtuoso Features
@@ -17326,7 +17326,7 @@ Choose one of the following features.
 
 ###### Bolstering Banter
 
-Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with a target of your current performance, other than yourself. The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
+Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with a target of your current performance, other than yourself. The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Medley
 
@@ -17363,7 +17363,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------------|---------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 One enemy or object** |
 >
-> **Effect:** The target is split into two separate entities, one of which remains in the target's space while the other appears in an unoccupied space of your choice within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If the target is a creature, this creates a new creature under the Director's control. Each entity has half the original target's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), is [weakened](scc:mcdm.heroes.v1/condition/weakened), and takes 1d6 corruption damage at the start of each of their turns. If either entity is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the other entity persists as the original entity and this effect ends. The effect also ends if both entities occupy the same space, causing them to automatically merge and combine their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+> **Effect:** The target is split into two separate entities, one of which remains in the target's space while the other appears in an unoccupied space of your choice within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If the target is a creature, this creates a new creature under the Director's control. Each entity has half the original target's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), is [weakened](scc:mcdm.heroes.v1/condition/weakened), and takes 1d6 corruption damage at the start of each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn). If either entity is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the other entity persists as the original entity and this effect ends. The effect also ends if both entities occupy the same space, causing them to automatically merge and combine their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: ability | @cost: 9 Drama -->
 > ###### Love Song (9 Drama)
@@ -17387,9 +17387,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
-> - **≤11:** One ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their turn immediately after yours.
-> - **12-16:** Two allies within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their turns immediately after yours in any order.
-> - **17+:** Three allies within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their turns immediately after yours in any order. One of those allies can have already taken a turn this combat round.
+> - **≤11:** One ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their [turn](scc:mcdm.heroes.v1/rule.combat/turn) immediately after yours.
+> - **12-16:** Two allies within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their [turns](scc:mcdm.heroes.v1/rule.combat/turn) immediately after yours in any order.
+> - **17+:** Three allies within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can take their [turns](scc:mcdm.heroes.v1/rule.combat/turn) immediately after yours in any order. One of those allies can have already taken a [turn](scc:mcdm.heroes.v1/rule.combat/turn) this [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -17415,7 +17415,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) disappears at the end of the target's turn if they don't spend it.
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) disappears at the end of the target's [turn](scc:mcdm.heroes.v1/rule.combat/turn) if they don't spend it.
 
 <!-- @type: feature -->
 #### 6th-Level Class Act Ability
@@ -17512,7 +17512,7 @@ Choose one of the following abilities.
 > |-----------------|--------------------------------------:|
 > | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), then gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each combat round until the end of the encounter.
+> **Effect:** Each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), then gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) until the end of the encounter.
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -17534,7 +17534,7 @@ Additionally, you and creatures you are bonded with gain a +1 bonus to [saving t
 <!-- @type: feature -->
 #### A Muse's Muse
 
-At the start of each of your turns during combat, you gain 1d3 + 1 drama instead of 1d3.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 1d3 + 1 drama instead of 1d3.
 
 <!-- @type: feature -->
 #### Skill
@@ -17578,7 +17578,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|-----------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who is dead can choose to continue taking turns after death. On each of their turns, a target can move and use either a main action or a maneuver, but can't spend [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action). At the end of the encounter, each target who chose to take turns this way turns to dust and blows away.
+> **Effect:** While this performance is active, each target who is dead can choose to continue taking [turns](scc:mcdm.heroes.v1/rule.combat/turn) after death. On each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), a target can move and use either a main action or a maneuver, but can't spend [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action). At the end of the encounter, each target who chose to take [turns](scc:mcdm.heroes.v1/rule.combat/turn) this way turns to dust and blows away.
 
 <!-- @type: ability -->
 > ###### Radical Fantasia
@@ -17589,7 +17589,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and any ability they use that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) gains a +2 bonus to the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) until the end of their turn. Additionally, once per combat round, each target can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
+> **Effect:** While this performance is active, each target who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the area ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and any ability they use that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) gains a +2 bonus to the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, once per [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), each target can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 <!-- @type: feature -->
 ##### Deleted Scene
@@ -17639,7 +17639,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature or object, or enable a creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) simultaneously, each target receives the same effect:
+> **Effect:** Until the end of the encounter, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature or object, or enable a creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to give that creature or object one of the following effects until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). If this ability is triggered by multiple targets taking damage or multiple creatures spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) simultaneously, each target receives the same effect:
 >
 > - The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score against any magic, psionic, or weapon ability.
 > - The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
@@ -17661,7 +17661,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 8 damage; P < AVERAGE, the target can't willingly leave the area (save ends)
 > - **17+:** 12 damage; the target can't willingly leave the area ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)); if P < STRONG, they can't willingly leave the area (save ends)
 >
-> **Effect:** Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can't obtain lower than a tier 2 outcome on the next [test](scc:mcdm.heroes.v1/rule.test/test) they make before the start of your next turn.
+> **Effect:** Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can't obtain lower than a tier 2 outcome on the next [test](scc:mcdm.heroes.v1/rule.test/test) they make before the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
@@ -17704,13 +17704,13 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### Rising Tension (11 Drama)
 >
-> *You narrate the tension of the scene and put all hope into your protagonist to turn things around.*
+> *You narrate the tension of the scene and put all hope into your protagonist to [turn](scc:mcdm.heroes.v1/rule.combat/turn) things around.*
 >
 > | **Magic, [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged)** |    **Maneuver** |
 > |-------------------|----------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**  | **🎯 One ally** |
 >
-> **Effect:** The target gains 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) of their choice made during their next turn, is no longer [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) if they were before, and can immediately take their turn after yours if they have not taken their turn already this round.
+> **Effect:** The target gains 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) of their choice made during their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), is no longer [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) if they were before, and can immediately take their [turn](scc:mcdm.heroes.v1/rule.combat/turn) after yours if they have not taken their [turn](scc:mcdm.heroes.v1/rule.combat/turn) already this round.
 
 ##### 9th-Level Duelist Abilities
 
@@ -17746,9 +17746,9 @@ Choose one of the following abilities.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
-> - **≤11:** You and the target can each end one effect on yourselves that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your turns.
-> - **12-16:** You and the target can end any effects on yourselves that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of your turns.
-> - **17+:** You can choose any of the current effects on you and the target that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of your turns, apply the chosen effects to the target, and end the rest.
+> - **≤11:** You and the target can each end one effect on yourselves that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
+> - **12-16:** You and the target can end any effects on yourselves that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
+> - **17+:** You can choose any of the current effects on you and the target that are ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that end at the end of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), apply the chosen effects to the target, and end the rest.
 
 ##### 9th-Level Virtuoso Abilities
 
@@ -17769,7 +17769,7 @@ Choose one of the following abilities.
 > - **12-16:** 11 sonic damage
 > - **17+:** 15 sonic damage
 >
-> **Effect:** Each creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their next turn. While under this effect, each target must use their full movement during their turn.
+> **Effect:** Each creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). While under this effect, each target must use their full movement during their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### Melt Their Faces (11 Drama)
@@ -18042,7 +18042,7 @@ You wear light armor and wield a medium weapon.
 - **12-16:** 8 + M, R, I, or P damage
 - **17+:** 11 + M, R, I, or P damage
 
-**Effect:** Until the end of the target's next turn, any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that affects the target has its [distance](scc:mcdm.heroes.v1/rule.combat/distance) increased by 2.
+**Effect:** Until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn), any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that affects the target has its [distance](scc:mcdm.heroes.v1/rule.combat/distance) increased by 2.
 
 <!-- @type: kit | @id: cloak-and-dagger -->
 #### Cloak and Dagger
@@ -18120,7 +18120,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 - **12-16:** 6 damage
 - **17+:** 8 damage
 
-**Effect:** If you use this ability on your turn, you can use it against one target, then use your maneuver and your move action for that turn before using the ability against a second target. You still use the same [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for both targets.
+**Effect:** If you use this ability on your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use it against one target, then use your maneuver and your move action for that [turn](scc:mcdm.heroes.v1/rule.combat/turn) before using the ability against a second target. You still use the same [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for both targets.
 
 <!-- @type: kit | @id: guisarmier -->
 #### Guisarmier
@@ -18230,7 +18230,7 @@ You wear heavy armor and wield a heavy weapon.
 - **12-16:** 5 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If the target dealt damage to you since the end of your last turn, this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals additional damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
+**Effect:** If the target dealt damage to you since the end of your last [turn](scc:mcdm.heroes.v1/rule.combat/turn), this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals additional damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: panther -->
 #### Panther
@@ -18348,7 +18348,7 @@ You wear light armor and wield a shield and a light weapon.
 - **12-16:** 6 + M or A damage
 - **17+:** 8 + M or A damage
 
-**Effect:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next turn.
+**Effect:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: kit | @id: ranger -->
 #### Ranger
@@ -18500,7 +18500,7 @@ You wear heavy armor and wield a shield and a medium weapon.
 - **12-16:** 8 + M or A damage
 - **17+:** 11 + M or A damage
 
-**Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn.
+**Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: kit | @id: sniper -->
 #### Sniper
@@ -18538,7 +18538,7 @@ You wear no armor and wield a bow.
 - **12-16:** 6 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If you don't take a move action this turn, this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
+**Effect:** If you don't take a move action this [turn](scc:mcdm.heroes.v1/rule.combat/turn), this [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: spellsword -->
 #### Spellsword
@@ -18726,7 +18726,7 @@ You wear heavy armor and wield a light weapon.
 - **12-16:** 5 + M, R, I, or P holy damage
 - **17+:** 8 + M, R, I, or P holy damage
 
-**Effect:** Until the end of the target's next turn, they have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+**Effect:** Until the end of the target's next [turn](scc:mcdm.heroes.v1/rule.combat/turn), they have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: kit | @id: whirlwind -->
 #### Whirlwind
@@ -18905,7 +18905,7 @@ You can use the Handle Animals skill to interact with nonsapient creatures who a
 <!-- @type: perk | @id: put-your-back-into-it -->
 #### Put Your Back Into It!
 
-During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to assist a [test](scc:mcdm.heroes.v1/rule.test/test) and obtain a tier 1 outcome, the assisted [test](scc:mcdm.heroes.v1/rule.test/test) doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can turn an ally's tier 1 [test](scc:mcdm.heroes.v1/rule.test/test) outcome into a tier 2 outcome.
+During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to assist a [test](scc:mcdm.heroes.v1/rule.test/test) and obtain a tier 1 outcome, the assisted [test](scc:mcdm.heroes.v1/rule.test/test) doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Additionally, once per [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can [turn](scc:mcdm.heroes.v1/rule.combat/turn) an ally's tier 1 [test](scc:mcdm.heroes.v1/rule.test/test) outcome into a tier 2 outcome.
 
 <!-- @type: perk -->
 #### Team Leader
@@ -18915,7 +18915,7 @@ At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [mont
 <!-- @type: perk -->
 #### Teamwork
 
-When you take your first turn during any [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can both make a [test](scc:mcdm.heroes.v1/rule.test/test) and assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test).
+When you take your first [turn](scc:mcdm.heroes.v1/rule.combat/turn) during any [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can both make a [test](scc:mcdm.heroes.v1/rule.test/test) and assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: perk -->
 #### Wood Wise
@@ -18955,7 +18955,7 @@ In response to another creature communicating information to you, you can spend 
 <!-- @type: perk -->
 #### Open Book
 
-Whenever you speak one-on-one with a creature, you can ask them one question about themself that might typically offend them or raise suspicion. If they choose not to answer honestly, they simply deflect or redirect the question, with no further complications. If they choose to answer honestly, the creature can immediately ask you a question about yourself in turn, which you must answer honestly.
+Whenever you speak one-on-one with a creature, you can ask them one question about themself that might typically offend them or raise suspicion. If they choose not to answer honestly, they simply deflect or redirect the question, with no further complications. If they choose to answer honestly, the creature can immediately ask you a question about yourself in [turn](scc:mcdm.heroes.v1/rule.combat/turn), which you must answer honestly.
 
 <!-- @type: perk -->
 #### Pardon My Friend
@@ -19084,10 +19084,10 @@ You have the following ability.
 > **Effect:** Choose one of the following effects:
 >
 > - You [teleport](scc:mcdm.heroes.v1/movement/teleport) a [size](scc:mcdm.heroes.v1/rule.character/size) 1S or smaller object [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
-> - Until the start of your next turn, a part of your body shoots a shower of harmless noisy sparks that light up each square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
+> - Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), a part of your body shoots a shower of harmless noisy sparks that light up each square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 > - You ignite or snuff out (your choice) every mundane light source of 1L or smaller [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 > - You transform up to 1 pound of edible food you touch to make it taste delicious or disgusting.
-> - Until the start of your next turn, you make your body exude a particular odor you've smelled before. This smell can be sensed by each creature within 5 squares of you, but can't impose any condition or other drawback on those creatures.
+> - Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you make your body exude a particular odor you've smelled before. This smell can be sensed by each creature within 5 squares of you, but can't impose any condition or other drawback on those creatures.
 > - You place a small magical inscription on the surface of a mundane object you touch, or you can remove an inscription that was made by you or by another creature using [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick).
 > - You touch a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object to cover it with an illusion that makes it look like a different object. Any creature who handles the object becomes aware of the illusion. The illusion ends when you stop touching the object.
 
@@ -19134,7 +19134,7 @@ You have the following ability.
 > |---------------------|--------------------------:|
 > | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 10**    | **🎯 One [size](scc:mcdm.heroes.v1/rule.character/size) 1T object** |
 >
-> **Effect:** You can grab or manipulate the target object with your mind, moving the object up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice). You can use this ability to turn doorknobs, pull levers, and so forth. You can manipulate any small movable piece of a larger object as long as the piece is unattended and [size](scc:mcdm.heroes.v1/rule.character/size) 1T. You can't use this ability to break a smaller piece off a larger object.
+> **Effect:** You can grab or manipulate the target object with your mind, moving the object up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice). You can use this ability to [turn](scc:mcdm.heroes.v1/rule.combat/turn) doorknobs, pull levers, and so forth. You can manipulate any small movable piece of a larger object as long as the piece is unattended and [size](scc:mcdm.heroes.v1/rule.character/size) 1T. You can't use this ability to break a smaller piece off a larger object.
 
 <!-- @type: perk -->
 #### Psychic Whisper
@@ -19379,9 +19379,9 @@ Due to a magical accident, your being has fused with that of a small, harmless a
 
 **Benefit:** As a maneuver, you take the form of a specific animal of [size](scc:mcdm.heroes.v1/rule.character/size) 1T. You retain all your other statistics aside from your [size](scc:mcdm.heroes.v1/rule.character/size), but you can't talk or use actions, and the only maneuvers you can use are [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab), Hide, and Stand Up. Based on the animal you can turn into, you might be able to [burrow](scc:mcdm.heroes.v1/movement/burrow) or [fly](scc:mcdm.heroes.v1/movement/fly), or to automatically climb or swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving. If your [animal form](scc:mcdm.heroes.v1/complication/animal-form) doesn't provide such additional movement, you have a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
-Unless you use this benefit again, you return to your true form at the start of your next turn.
+Unless you use this benefit again, you return to your true form at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**Drawback:** At the start of any turn while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+**Drawback:** At the start of any [turn](scc:mcdm.heroes.v1/rule.combat/turn) while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), the Director can spend 1 Malice to force you to take your [animal form](scc:mcdm.heroes.v1/complication/animal-form). Once the Director has done so, they can't do so again until you have finished a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: complication -->
 #### Antihero
@@ -19397,7 +19397,7 @@ You used to be a villain. You're (mostly) reformed now, but in desperate moments
 
 A powerful artifact has bonded to you, though you don't know whether you're destined to wield the artifact or to destroy it. You're not powerful enough to use it at the moment, although you might be someday. For now, though, the artifact has no effect beyond getting you in trouble.
 
-**Benefit:** Choose an artifact (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). The first time in an encounter that you are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) against your will, the artifact appears on your person. It disappears at the end of your next turn, when you benefit from one of its properties, or when you have more than 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), whichever comes first.
+**Benefit:** Choose an artifact (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). The first time in an encounter that you are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) against your will, the artifact appears on your person. It disappears at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), when you benefit from one of its properties, or when you have more than 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), whichever comes first.
 
 **Drawback:** Each time the artifact appears, you lose a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). If you have no [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) remaining, you take 1d10 damage instead, which can't be reduced in any way.
 
@@ -19473,7 +19473,7 @@ Your mentor taught you everything and you trusted them completely until they wen
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of your turn, whenever you use a damage-dealing [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) against a single target, you can weaken that target's life force. The ability deals extra corruption damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
+> **Effect:** Until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever you use a damage-dealing [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) against a single target, you can weaken that target's life force. The ability deals extra corruption damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **Drawback:** You have holy weakness 1. Each time you use Corrupt Spirit, your holy weakness increases by 1, to a maximum equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). Whenever you take holy damage, this weakness resets to 1.
 
@@ -19498,9 +19498,9 @@ You used to flit around the stars in your own ship. But an ugly run-in with a [p
 <!-- @type: complication -->
 #### Cult Victim
 
-Cultists captured you while raiding your home, then began an unholy ritual to turn your body into an undead spirit. Though the ritual failed, your body became infused with corrupted magic, turning you partially incorporeal.
+Cultists captured you while raiding your home, then began an unholy ritual to [turn](scc:mcdm.heroes.v1/rule.combat/turn) your body into an undead spirit. Though the ritual failed, your body became infused with corrupted magic, turning you partially incorporeal.
 
-**Benefit:** Once per turn, you can move through solid matter 1 square thick or less. If you end your turn inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can't be reduced in any way.
+**Benefit:** Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can move through solid matter 1 square thick or less. If you end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can't be reduced in any way.
 
 **Drawback:** You have corruption weakness 5.
 
@@ -19509,7 +19509,7 @@ Cultists captured you while raiding your home, then began an unholy ritual to tu
 
 When you were young, you did something reckless and unthinking that endangered a hag or cost them something dear. The hag cursed you to always take your time, forcing you to be cautious and thorough—even to your detriment. The curse has saved you from trouble a few times, but not being able to get away from trouble might be your downfall if you can't shake it.
 
-**Benefit:** Until you've taken your turn in a combat round, any strike made against you takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+**Benefit:** Until you've taken your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), any strike made against you takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 **Drawback:** You have a −1 penalty to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
@@ -19548,7 +19548,7 @@ Through ignorance, fear, spite, or selfishness, you refused to help someone in n
 <!-- @type: complication -->
 #### Curse of Stone
 
-As a child, you met a creature who turns people to stone, such as a medusa. You escaped half petrified, avoiding the fate of others who stand as statues now.
+As a child, you met a creature who [turns](scc:mcdm.heroes.v1/rule.combat/turn) people to stone, such as a medusa. You escaped half petrified, avoiding the fate of others who stand as statues now.
 
 **Benefit:** You have a +1 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability). Additionally, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a [mundane](scc:mcdm.heroes.v1/complication/mundane) statue while you remain unmoving.
 
@@ -19595,7 +19595,7 @@ When an evil mage threatened someone you loved, you blocked that foe's summoning
 
 You have contracted a rare magical disease called [evanesceria](scc:mcdm.heroes.v1/complication/evanesceria). From time to time, you're not quite yourself—or anyone else either. You simply... vanish, then return later with no memory of your absence.
 
-**Benefit:** At the start of any combat round, you can attempt to absent yourself from reality by rolling a d10. On a 6 or higher, you disappear, then reappear in the space you left or the nearest unoccupied space of your choice when you take your turn. You can't attempt to absent yourself again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+**Benefit:** At the start of any [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), you can attempt to absent yourself from reality by rolling a d10. On a 6 or higher, you disappear, then reappear in the space you left or the nearest unoccupied space of your choice when you take your [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can't attempt to absent yourself again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 **Drawback:** Whenever you start a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, roll 2d10. If you roll a 1 on either die, you inadvertently absent yourself from reality, reappearing at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite). You gain the benefits of taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) but don't perform the [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
@@ -19683,7 +19683,7 @@ At the edge of the world, you were lost in a winter storm and [presumed dead](sc
 
 You were once a [renown](scc:mcdm.heroes.v1/rule.resource/renown)ed hero, but you've been living the last few years in blissful peace. Now you're coming out of retirement for one last hurrah. Your fighting skills might have atrophied to the point where you're no stronger than a wet-behind-the-ears novice adventurer, but you still remember some of your old tricks.
 
-**Benefit:** On your turn, you can choose a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) that you would be able to learn if you were one level higher. Provided you meet the ability's other prerequisites and can spend any required [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), you can use the ability. Once you use this benefit, you can't do so again until you earn 2 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+**Benefit:** On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can choose a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) that you would be able to learn if you were one level higher. Provided you meet the ability's other prerequisites and can spend any required [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), you can use the ability. Once you use this benefit, you can't do so again until you earn 2 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 **Drawback:** While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you take a −2 penalty to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
@@ -19694,7 +19694,7 @@ As a child, you survived a gnoll attack. But that attack left you with a jagged 
 
 **Benefit:** Whenever an ally within 5 squares is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to move up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-**Drawback:** While you are [dazed](scc:mcdm.heroes.v1/condition/dazed), if you start your turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more creatures, you must use your main action to make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature.
+**Drawback:** While you are [dazed](scc:mcdm.heroes.v1/condition/dazed), if you start your [turn](scc:mcdm.heroes.v1/rule.combat/turn) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more creatures, you must use your main action to make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature.
 
 **Special:** You can't take this complication if you can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
@@ -19790,7 +19790,7 @@ A deal you made went south, or you got involved with the wrong people. Now you o
 
 You made a deal (perhaps unknowingly) with an archdevil that has tied you to that fiend's service. When you first learned of this deal, you were taken to the Seven Cities of Hell, where some of the timescape's best minds taught you the ways of battle. The archdevil allows you to use these gifts as you will... until they require a favor from you.
 
-**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), your side determines who goes first if the d10 roll is a 4 or higher (see Combat Round in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+**Benefit:** Whenever you are present for a battle in which both sides have creatures who aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), your side determines who goes first if the d10 roll is a 4 or higher (see [Combat Round](scc:mcdm.heroes.v1/rule.combat/combat-round) in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 **Drawback:** The archdevil occasionally asks you to defeat enemies on their behalf. If you refuse, your fiendish patron sends [devils](scc:mcdm.heroes.v1/ancestry/devil) after you and those you care about.
 
@@ -20132,7 +20132,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 
 While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a guide. What you lost in polish and tactical acumen, you now make up for in raw power.
 
-**Benefit and Drawback:** At the start of each of your turns during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next turn. If you do, your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next turn.
+**Benefit and Drawback:** At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). If you do, your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: complication -->
 #### Sewer Folk
@@ -20148,14 +20148,14 @@ Impoverished or on the run, you spent your formative years living in the sewers 
 
 You were born in the dusk land ruled by the Queen of [Shadows](scc:mcdm.heroes.v1/class/shadow), and its darkness has seeped into your bones. (See The Myriad Worlds of the Timescape in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics).)
 
-**Benefit:** Whenever you start your turn with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
+**Benefit:** Whenever you start your [turn](scc:mcdm.heroes.v1/rule.combat/turn) with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
 **Drawback:** You have holy weakness 5.
 
 <!-- @type: complication -->
 #### Shared Spirit
 
-A supernatural spirit occupies your body, with each of you controlling your body by turns. You and the spirit share the same short-term goals and work equally well with your companions, though you might have different personalities, mannerisms, and long-term goals.
+A supernatural spirit occupies your body, with each of you controlling your body by [turns](scc:mcdm.heroes.v1/rule.combat/turn). You and the spirit share the same short-term goals and work equally well with your companions, though you might have different personalities, mannerisms, and long-term goals.
 
 **Benefit and Drawback:** At the start of each day, roll a d6. On a 1-4, you control your body. On a 5-6, the spirit does. Alternatively, if you and the spirit are on good terms, you can choose each day who is in control. Choose three of your skills. You can use those skills only while you are in control of your body. Then choose three new skills, which you have and can use only while your spirit is in control.
 
@@ -20193,7 +20193,7 @@ You were trained by a group of spies, who psionically infused silence into your 
 
 **Benefit:** You have the Eavesdrop and Sneak skills from the intrigue skill group, plus one skill of your choice from the lore skill group. Additionally, you can telepathically communicate with any creature provided they share a language with you and you can observe each other. A creature you communicate with this way can respond telepathically if they choose.
 
-**Drawback:** You have sonic weakness 5. Additionally, whenever you take sonic damage, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of your next turn.
+**Drawback:** You have sonic weakness 5. Additionally, whenever you take sonic damage, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: complication -->
 #### Slight Case of Lycanthropy
@@ -20202,7 +20202,7 @@ Maybe you were bitten as a child, or maybe it's a family curse. Either way, you 
 
 **Benefit:** Whenever you make a non-minion creature [winded](scc:mcdm.heroes.v1/rule.health/winded) or kill a non-minion creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
-**Drawback:** At the start of each of your turns, if you have five or more [surges](scc:mcdm.heroes.v1/rule.resource/surge)—or one or more [surges](scc:mcdm.heroes.v1/rule.resource/surge) while in moonlight—you lose all your [surges](scc:mcdm.heroes.v1/rule.resource/surge) and become a wolfish hybrid until the end of your turn. While in that form, you have your usual statistics, but you must make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest creature if you can. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) toward that creature if necessary. If allies and enemies are equally near, you target an ally.
+**Drawback:** At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), if you have five or more [surges](scc:mcdm.heroes.v1/rule.resource/surge)—or one or more [surges](scc:mcdm.heroes.v1/rule.resource/surge) while in moonlight—you lose all your [surges](scc:mcdm.heroes.v1/rule.resource/surge) and become a wolfish hybrid until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn). While in that form, you have your usual statistics, but you must make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest creature if you can. You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) toward that creature if necessary. If allies and enemies are equally near, you target an ally.
 
 **Special:** You can't take this complication if you are a [fury](scc:mcdm.heroes.v1/class/fury) with the stormwight [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspect).
 
@@ -20377,7 +20377,7 @@ You're quick to anger, never letting an insult go without slinging one right bac
 
 **Benefit:** While you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by a creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against that creature. Additionally, you can spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) instead.
 
-**Drawback:** In combat, whenever a creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against you and you are not [taunted](scc:mcdm.heroes.v1/condition/taunted), you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by that creature until the end of your next turn. Additionally, whether in casual conversation or if you are involved in a negotiation, whenever a creature insults you, you must either spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or be compelled to reply with an insult.
+**Drawback:** In combat, whenever a creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against you and you are not [taunted](scc:mcdm.heroes.v1/condition/taunted), you are [taunted](scc:mcdm.heroes.v1/condition/taunted) by that creature until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, whether in casual conversation or if you are involved in a negotiation, whenever a creature insults you, you must either spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or be compelled to reply with an insult.
 
 <!-- @type: complication -->
 #### Wrongly Imprisoned
@@ -21166,7 +21166,7 @@ The Director then decides to make the failure potentially more interesting, by a
 
 **James:** *Thanks for not leaving me behind!*
 
-**Director:** *As Jorn yanks Korvo off the ground and pulls him up to the top of the wall, a guard turns a bullseye lantern your way, calling out, "Who goes there?"*
+**Director:** *As Jorn yanks Korvo off the ground and pulls him up to the top of the wall, a guard [turns](scc:mcdm.heroes.v1/rule.combat/turn) a bullseye lantern your way, calling out, "Who goes there?"*
 
 ### Assist a Test
 
@@ -21192,7 +21192,7 @@ When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuv
 
 While you are hidden from another creature, the creature can't target you with abilities that don't have the Area keyword. This benefit ends as soon as you are no longer hidden from that creature.
 
-Additionally, while you are hidden from another creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against that creature. This benefit lasts until the end of the turn in which you are no longer hidden. This means you can be hidden from another creature at the start of your turn, move out of [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) toward them and use an ability against them, and still gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against the creature as long as you use the ability before the end of that turn.
+Additionally, while you are hidden from another creature, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against that creature. This benefit lasts until the end of the [turn](scc:mcdm.heroes.v1/rule.combat/turn) in which you are no longer hidden. This means you can be hidden from another creature at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), move out of [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) toward them and use an ability against them, and still gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against the creature as long as you use the ability before the end of that [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 Draw Steel
 
@@ -21242,9 +21242,9 @@ If fewer than half the heroes incur a consequence or earn a reward on their indi
 
 When a group of heroes works together over time to accomplish a common goal that requires more than a single [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), the Director can call for a montage [test](scc:mcdm.heroes.v1/rule.test/test). Such [tests](scc:mcdm.heroes.v1/rule.test/test) typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage [tests](scc:mcdm.heroes.v1/rule.test/test).
 
-In a montage [test](scc:mcdm.heroes.v1/rule.test/test), the players take turns making [tests](scc:mcdm.heroes.v1/rule.test/test) as their characters tackle a task together in a montage [test](scc:mcdm.heroes.v1/rule.test/test) round. Each hero has a chance to make a [test](scc:mcdm.heroes.v1/rule.test/test) (or to assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test); see Assist a [Test](scc:mcdm.heroes.v1/rule.test/test) above) intended to influence the outcome of the task.
+In a montage [test](scc:mcdm.heroes.v1/rule.test/test), the players take [turns](scc:mcdm.heroes.v1/rule.combat/turn) making [tests](scc:mcdm.heroes.v1/rule.test/test) as their characters tackle a task together in a montage [test](scc:mcdm.heroes.v1/rule.test/test) round. Each hero has a chance to make a [test](scc:mcdm.heroes.v1/rule.test/test) (or to assist another hero's [test](scc:mcdm.heroes.v1/rule.test/test); see Assist a [Test](scc:mcdm.heroes.v1/rule.test/test) above) intended to influence the outcome of the task.
 
-A hero can also spend their turn using an item, ability, or other option they have available that they believe can help in the montage [test](scc:mcdm.heroes.v1/rule.test/test). For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage [test](scc:mcdm.heroes.v1/rule.test/test), with no individual [tests](scc:mcdm.heroes.v1/rule.test/test) necessary (see Total Successes and Failures below).
+A hero can also spend their [turn](scc:mcdm.heroes.v1/rule.combat/turn) using an item, ability, or other option they have available that they believe can help in the montage [test](scc:mcdm.heroes.v1/rule.test/test). For example, if a group of heroes want to cross an ocean on a sailing ship before a storm begins, one hero might make use of a magic fan that creates wind to keep the sails full day and night. The Director decides that this clever action gives the heroes 2 automatic successes in the montage [test](scc:mcdm.heroes.v1/rule.test/test), with no individual [tests](scc:mcdm.heroes.v1/rule.test/test) necessary (see Total Successes and Failures below).
 
 Once a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), assists with a [test](scc:mcdm.heroes.v1/rule.test/test), or uses an ability or other option, they can't do anything else as part of the montage [test](scc:mcdm.heroes.v1/rule.test/test) until each other hero involved in the montage [test](scc:mcdm.heroes.v1/rule.test/test) does so as well. A hero can also choose to do nothing, most often if they have no one to assist and fear that their actions might make the situation worse (see Montage [Test](scc:mcdm.heroes.v1/rule.test/test) Outcomes below). Once every hero has had a chance to act, the montage [test](scc:mcdm.heroes.v1/rule.test/test) round ends and a new one begins.
 
@@ -21418,7 +21418,7 @@ Every combat encounter is a conflict between two sides. The heroes and any of th
 <!-- @type: rule | @group: combat | @id: combat-round -->
 ### Combat Round
 
-Combat takes place over a series of combat rounds. During a combat round, each creature in the battle takes a turn. Once every creature has taken a turn, a new round begins.
+Combat takes place over a series of combat rounds. During a combat round, each creature in the battle takes a [turn](scc:mcdm.heroes.v1/rule.combat/turn). Once every creature has taken a [turn](scc:mcdm.heroes.v1/rule.combat/turn), a new round begins.
 
 #### When Does Combat Start?
 
@@ -21427,21 +21427,21 @@ Combat starts as soon as one creature intends to harm another, or when some envi
 <!-- @type: rule | @group: combat | @id: surprised -->
 #### Determine Surprise
 
-When battle starts, the Director determines which creatures, if any, are caught off guard. Any creature who isn't ready for combat at the start of an encounter is surprised until the end of the first combat round. A surprised creature can't take [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) or free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+When battle starts, the Director determines which creatures, if any, are caught off guard. Any creature who isn't ready for combat at the start of an encounter is surprised until the end of the first [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). A surprised creature can't take [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) or free [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), and [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 For example, if the heroes sneak up unnoticed on a camp of marauders and attack, each marauder is surprised. Likewise, if the heroes fail to notice that all the cloaked figures in a tavern are actually brain-devouring zombies, then the heroes are surprised. If one of the heroes notices the disguised undead before the zombies attack but has no opportunity to warn their allies, that hero isn't surprised but the rest of the characters are.
 
 #### Determine Who Goes First
 
-Sometimes figuring out who gets to take the first turn in combat is automatic. If all the creatures on one side are [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), then a creature on the other side gets to act first. But if both sides have creatures who aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), the Director or a player they choose rolls a d10. On a 6 or higher, the players determine who goes first—the heroes' side or the other side. Otherwise, the Director decides which side goes first.
+Sometimes figuring out who gets to take the first [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat is automatic. If all the creatures on one side are [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), then a creature on the other side gets to act first. But if both sides have creatures who aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), the Director or a player they choose rolls a d10. On a 6 or higher, the players determine who goes first—the heroes' side or the other side. Otherwise, the Director decides which side goes first.
 
 #### Creatures Take Turns
 
-Whichever side goes first chooses a creature (or sometimes a group of creatures on the Director's side) to act at the start of combat. Whenever the rules talk about a creature acting in combat, that creature gets to take their turn. When that turn is over, the other side chooses a creature to act. Play continues back and forth this way as each creature takes their turn.
+Whichever side goes first chooses a creature (or sometimes a group of creatures on the Director's side) to act at the start of combat. Whenever the rules talk about a creature acting in combat, that creature gets to take their [turn](scc:mcdm.heroes.v1/rule.combat/turn). When that [turn](scc:mcdm.heroes.v1/rule.combat/turn) is over, the other side chooses a creature to act. Play continues back and forth this way as each creature takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-Unless an ability or special rule allows them to do so, any creature who has taken a turn during a combat round can't act again until a new round begins. To help track which creatures have already acted in the current round, each creature can have a coin, token, or card they flip over on the table, or some kind of flag they set on their virtual tabletop token, once they've taken a turn. That way, all the players know who has already acted and who hasn't.
+Unless an ability or special rule allows them to do so, any creature who has taken a [turn](scc:mcdm.heroes.v1/rule.combat/turn) during a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) can't act again until a new round begins. To help track which creatures have already acted in the current round, each creature can have a coin, token, or card they flip over on the table, or some kind of flag they set on their virtual tabletop token, once they've taken a [turn](scc:mcdm.heroes.v1/rule.combat/turn). That way, all the players know who has already acted and who hasn't.
 
-In many encounters, a point comes when one side has creatures who haven't acted yet but all the creatures on the other side have. The creatures who have yet to act get to take their turns in any order they choose, without turns in between from the other side. For example, consider four heroes taking on six enemies. When all four heroes have taken their turns and four of the enemies have taken theirs, the two enemies who are left take their turns one after the other to end the round.
+In many encounters, a point comes when one side has creatures who haven't acted yet but all the creatures on the other side have. The creatures who have yet to act get to take their [turns](scc:mcdm.heroes.v1/rule.combat/turn) in any order they choose, without [turns](scc:mcdm.heroes.v1/rule.combat/turn) in between from the other side. For example, consider four heroes taking on six enemies. When all four heroes have taken their [turns](scc:mcdm.heroes.v1/rule.combat/turn) and four of the enemies have taken theirs, the two enemies who are left take their turns one after the other to end the round.
 
 ##### Determining Who Acts Next
 
@@ -21453,19 +21453,19 @@ In general, though, most groups find that it's usually only one or two players i
 
 If the players do end up arguing in circles about what to do next, the Director can place a timer on the discussion. Usually, giving the players a warning and 30 seconds to decide who goes next does the trick. If they can't choose by the end of that time, the Director chooses a hero to act.
 
-> **Alternative Turn Order**
+> **Alternative [Turn](scc:mcdm.heroes.v1/rule.combat/turn) Order**
 >
-> If planning everyone's turn order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test), then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero turn, the hero with the second-highest total takes their turn, and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) to determine who among the tied creatures acts before the others.
+> If planning everyone's [turn](scc:mcdm.heroes.v1/rule.combat/turn) order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test), then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero [turn](scc:mcdm.heroes.v1/rule.combat/turn), the hero with the second-highest total takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn), and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied [Agility](scc:mcdm.heroes.v1/rule.character/agility) [tests](scc:mcdm.heroes.v1/rule.test/test) to determine who among the tied creatures acts before the others.
 >
-> At the Director's discretion, a hero can swap their turn in the order with another willing hero at the start of a new combat round. This allows certain abilities that interact with the core turn order system, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability, to better work with this alternative system.
+> At the Director's discretion, a hero can swap their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the order with another willing hero at the start of a new [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round). This allows certain abilities that interact with the core [turn](scc:mcdm.heroes.v1/rule.combat/turn) order system, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability, to better work with this alternative system.
 
 ##### Enemies Act In Groups
 
-Director-controlled creatures act in groups, with information for building groups found in *Draw Steel: Monsters*. When a group of enemies acts, the Director chooses a single creature or minion squad to take a turn. Once that turn is over, the Director chooses another creature in that group to take a turn, continuing until all members of the group have taken their turn.
+Director-controlled creatures act in groups, with information for building groups found in *Draw Steel: Monsters*. When a group of enemies acts, the Director chooses a single creature or minion squad to take a [turn](scc:mcdm.heroes.v1/rule.combat/turn). Once that [turn](scc:mcdm.heroes.v1/rule.combat/turn) is over, the Director chooses another creature in that group to take a [turn](scc:mcdm.heroes.v1/rule.combat/turn), continuing until all members of the group have taken their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 #### End of Round
 
-Once all creatures on both sides of a battle have acted, the combat round ends and a new combat round begins. The side whose members acted first during the initial combat round goes first in all subsequent rounds.
+Once all creatures on both sides of a battle have acted, the [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) ends and a new [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) begins. The side whose members acted first during the initial [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) goes first in all subsequent rounds.
 
 <!-- @type: rule | @group: combat | @id: turn -->
 ### Taking a Turn
@@ -21477,9 +21477,9 @@ The Movement section below breaks down how your move action works, while the Man
 <!-- @type: rule | @group: combat | @id: triggered-action -->
 #### Triggered Actions and Free Triggered Actions
 
-Your hero might have one or more unique triggered actions, each of which has a specified trigger that allows the action to be used. You can use one triggered action per round, either on your turn or another creature's turn, but only when the action's trigger occurs. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) hero can use the [Lines of Force](scc:mcdm.heroes.v1/feature.ability.fury.level-1/lines-of-force) triggered action to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target, but only after an enemy has first tried to [force move](scc:mcdm.heroes.v1/movement/forced-movement) the [fury](scc:mcdm.heroes.v1/class/fury) or another nearby creature.
+Your hero might have one or more unique triggered actions, each of which has a specified trigger that allows the action to be used. You can use one triggered action per round, either on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) or another creature's [turn](scc:mcdm.heroes.v1/rule.combat/turn), but only when the action's trigger occurs. For instance, a [fury](scc:mcdm.heroes.v1/class/fury) hero can use the [Lines of Force](scc:mcdm.heroes.v1/feature.ability.fury.level-1/lines-of-force) triggered action to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target, but only after an enemy has first tried to [force move](scc:mcdm.heroes.v1/movement/forced-movement) the [fury](scc:mcdm.heroes.v1/class/fury) or another nearby creature.
 
-A free triggered action follows the same rules as a triggered action, but it doesn't count against your limit of one triggered action per round. For instance, a [shadow](scc:mcdm.heroes.v1/class/shadow) hero can use their [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability to take their turn in response to the trigger of another hero ending their turn. But because that ability is a free triggered action, the [shadow](scc:mcdm.heroes.v1/class/shadow) can still use their In All This Confusion triggered action later in the round.
+A free triggered action follows the same rules as a triggered action, but it doesn't count against your limit of one triggered action per round. For instance, a [shadow](scc:mcdm.heroes.v1/class/shadow) hero can use their [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability to take their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in response to the trigger of another hero ending their [turn](scc:mcdm.heroes.v1/rule.combat/turn). But because that ability is a free triggered action, the [shadow](scc:mcdm.heroes.v1/class/shadow) can still use their In All This Confusion triggered action later in the round.
 
 If multiple triggered actions occur in response to the same trigger, any heroes and other player-controlled creatures taking a triggered action or a free triggered action decide among themselves which of those triggered actions are resolved first. Then the Director decides the same for creatures they control.
 
@@ -21488,7 +21488,7 @@ Any effect that prevents you from using triggered actions also prevents you from
 <!-- @type: rule | @group: combat | @id: free-maneuver -->
 #### Free Maneuvers
 
-Boring stuff like opening an unlocked door, picking up an arrow from the ground, giving an object to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) ally, or drawing a weapon doesn't require a maneuver or a main action. Rather, you can undertake such straightforward activities as free maneuvers on your turn. A free maneuver follows the same rules as a regular maneuver, but you can typically take as many free maneuvers as you like.
+Boring stuff like opening an unlocked door, picking up an arrow from the ground, giving an object to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) ally, or drawing a weapon doesn't require a maneuver or a main action. Rather, you can undertake such straightforward activities as free maneuvers on your [turn](scc:mcdm.heroes.v1/rule.combat/turn). A free maneuver follows the same rules as a regular maneuver, but you can typically take as many free maneuvers as you like.
 
 At the Director's discretion, circumstances could make something that is typically boring more impactful and exciting. For instance, if you need to pick a magic arrow up off the ground during a violent earthquake, what would otherwise be a free maneuver could require a maneuver or a main action to accomplish.
 
@@ -21498,9 +21498,9 @@ Any effect that prevents you from using maneuvers also prevents you from using f
 
 #### No-Action Activities
 
-[Free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) cover most of the simple activities you might want to undertake on your turn. When it isn't your turn, you can typically undertake even simpler activities requiring no action with the Director's approval. For instance, shouting out a warning to an ally or dropping an item so another creature can pick it up require no action.
+[Free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) cover most of the simple activities you might want to undertake on your [turn](scc:mcdm.heroes.v1/rule.combat/turn). When it isn't your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can typically undertake even simpler activities requiring no action with the Director's approval. For instance, shouting out a warning to an ally or dropping an item so another creature can pick it up require no action.
 
-The Director can limit what kinds of no-action activities you can attempt when it isn't your turn. For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's turn requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your turn, saying that doing so instead requires a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on your turn.
+The Director can limit what kinds of no-action activities you can attempt when it isn't your [turn](scc:mcdm.heroes.v1/rule.combat/turn). For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's [turn](scc:mcdm.heroes.v1/rule.combat/turn) requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your [turn](scc:mcdm.heroes.v1/rule.combat/turn), saying that doing so instead requires a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ### Movement
 
@@ -21774,7 +21774,7 @@ Some creatures have traits or abilities that trigger when they die or are reduce
 <!-- @type: feature-group | @id: move-actions -->
 ### Move Actions
 
-A move action allows a creature to move around the battlefield. Sometimes you'll already be exactly where you want to be so that you don't need to use a move action on your turn. That's okay! The decision to not move is just as tactical as the decision to move.
+A move action allows a creature to move around the battlefield. Sometimes you'll already be exactly where you want to be so that you don't need to use a move action on your [turn](scc:mcdm.heroes.v1/rule.combat/turn). That's okay! The decision to not move is just as tactical as the decision to move.
 
 <!-- @type: feature | @id: advance -->
 #### Advance
@@ -21796,12 +21796,12 @@ A creature can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ri
 
 A maneuver typically involves less focus and exertion than a main action (see below). It can be an opportunity to move other creatures, drink a potion, or undertake similar activities.
 
-Sometimes you might not have anything you can do with your maneuver. That's totally fine! Often, the best thing to do on your turn is take a main action and move on.
+Sometimes you might not have anything you can do with your maneuver. That's totally fine! Often, the best thing to do on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) is take a main action and move on.
 
 <!-- @type: feature | @id: aid-attack -->
 #### Aid Attack
 
-A creature who uses the [Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) maneuver chooses an enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against that enemy before the start of the aiding creature's next turn gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+A creature who uses the [Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) maneuver chooses an enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. The next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) an ally makes against that enemy before the start of the aiding creature's next [turn](scc:mcdm.heroes.v1/rule.combat/turn) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature | @id: catch-breath -->
 #### Catch Breath
@@ -21910,7 +21910,7 @@ When you take a main action, you most often do so to use a unique ability grante
 
 You can also use your main action to help another creature regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) into battle, [defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) yourself, or make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-You can convert your main action into a maneuver or a move action, allowing you to [take two](scc:mcdm.heroes.v1/feature.ability.troubadour.level-5/take-two) maneuvers or move actions on your turn.
+You can convert your main action into a maneuver or a move action, allowing you to [take two](scc:mcdm.heroes.v1/feature.ability.troubadour.level-5/take-two) maneuvers or move actions on your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature | @id: charge -->
 #### Charge
@@ -21922,7 +21922,7 @@ A creature can't move through [difficult terrain](scc:mcdm.heroes.v1/movement/di
 <!-- @type: feature | @id: defend -->
 #### Defend
 
-When a creature takes the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action, [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of their next turn. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+When a creature takes the [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) main action, [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when called for to resist environmental effects or a creature's traits or abilities. A creature gains no benefit from this action while another creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by them (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: feature | @id: free-strike -->
 #### Free Strike
@@ -21937,13 +21937,13 @@ A creature who uses the [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/he
 <!-- @type: feature-group | @id: free-strikes -->
 ### Free Strikes
 
-Every creature can use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) ability as a main action on their turn, though doing so typically isn't the most effective choice. Most of the time, you'll use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when the rules call for it. Specific rules let you use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of an action that allows you to also do something else impactful, such as how the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action lets you move and use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) in one main action (see Charge above).
+Every creature can use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) ability as a main action on their [turn](scc:mcdm.heroes.v1/rule.combat/turn), though doing so typically isn't the most effective choice. Most of the time, you'll use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when the rules call for it. Specific rules let you use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of an action that allows you to also do something else impactful, such as how the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action lets you move and use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) in one main action (see Charge above).
 
-Many rules and abilities allow heroes to make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when it isn't their turn, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability. As well, all characters can make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+Many rules and abilities allow heroes to make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when it isn't their [turn](scc:mcdm.heroes.v1/rule.combat/turn), such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability. As well, all characters can make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 #### Granted Abilities
 
-Some abilities, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) or I'll Open and You'll Close abilities, allow another creature to use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) when it isn't their turn. Unless otherwise stated, a creature can always use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) instead of a granted [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability).
+Some abilities, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) or I'll Open and You'll Close abilities, allow another creature to use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) when it isn't their [turn](scc:mcdm.heroes.v1/rule.combat/turn). Unless otherwise stated, a creature can always use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) instead of a granted [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) or [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability).
 
 <!-- @type: rule | @group: combat | @id: opportunity-attack -->
 #### Opportunity Attacks
@@ -22118,14 +22118,14 @@ If a creature is fully submerged in water, they have fire immunity 5 and lightni
 <!-- @type: rule | @group: health | @id: suffocating -->
 ### Suffocating
 
-During combat or under similarly stressful circumstances, you can hold your breath for a number of combat rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round). At the end of each combat round after that, you take 1d6 damage while holding your breath.
+During combat or under similarly stressful circumstances, you can hold your breath for a number of [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round). At the end of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) after that, you take 1d6 damage while holding your breath.
 
 Out of combat, you can hold your breath for a number of minutes equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Being unable to breathe after that time counts as a stressful condition, causing you to run out of air as above.
 
 <!-- @type: rule | @group: combat | @id: mounted-combat -->
 ### Mounted Combat
 
-A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their [size](scc:mcdm.heroes.v1/rule.character/size) is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, but a mount can only be ridden this way once per round. Both mount and rider each take a turn during combat.
+A willing creature with the Mount role (see Creature Roles in *Draw Steel: Monsters*) can serve as your mount as long as their [size](scc:mcdm.heroes.v1/rule.character/size) is greater than yours. You can climb onto your mount freely (see Climbing Other Creatures above). You determine which space you occupy. While mounted, you can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, but a mount can only be ridden this way once per round. Both mount and rider each take a [turn](scc:mcdm.heroes.v1/rule.combat/turn) during combat.
 
 If a creature riding a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they are knocked off the mount and must make a [test](scc:mcdm.heroes.v1/rule.test/test) to determine how they land (see Climbing Other Creatures\). If a mount is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they carry any riders with them. Riders and mounts [teleport](scc:mcdm.heroes.v1/movement/teleport) separately.
 
@@ -22206,7 +22206,7 @@ Event endings can cover big scenarios such as the characters destroying a dam to
 
 > **Fleeing Foes**
 >
-> If you've played a fantasy RPG before, odds are you've had an encounter where you didn't chase down every last fleeing foe—and then one such foe [grabbed](scc:mcdm.heroes.v1/condition/grabbed) another bunch of evil buddies and came back to ambush you. It takes only one experience like this to create players who promise, "No survivors. No mercy!" whenever foes break ranks. Chasing down every last foe can be fun once in a while, but it can easily turn a tactical encounter into a slog.
+> If you've played a fantasy RPG before, odds are you've had an encounter where you didn't chase down every last fleeing foe—and then one such foe [grabbed](scc:mcdm.heroes.v1/condition/grabbed) another bunch of evil buddies and came back to ambush you. It takes only one experience like this to create players who promise, "No survivors. No mercy!" whenever foes break ranks. Chasing down every last foe can be fun once in a while, but it can easily [turn](scc:mcdm.heroes.v1/rule.combat/turn) a tactical encounter into a slog.
 >
 > Luckily, this is a heroic game. Although the Director can surprise the players with dramatic reveals and twisty-turny stories, "Gotcha!" moments that make players suspicious of every fleeing bandit shouldn't be part of those stories. If a bandit is fleeing an encounter, they're running away to rethink their life. If they're going for help, the players should get some sense of that—for example, the bandit screaming at the top of their lungs for help as they run toward their leader's tent. That way, the players can process what's happening, and will understand that stopping that fleeing bandit is part of the challenge of the encounter.
 
@@ -22241,7 +22241,7 @@ If some players want to use the negotiation system as a means to an end by havin
 
 In the real world, negotiations rarely come with a threat of immediate violence. Ambassadors don't usually get into fistfights. But this is a heroic fantasy RPG, featuring heroes who are armed to the teeth and able to alter reality with their minds. The threat of violence is already implied. Everyone involved knows that the characters could draw steel at any moment.
 
-The Director typically assumes that the underlying potential for events to turn violent is already factored into every negotiation. However, if the heroes decide to bring that threat to the forefront, then they've exited the realm of negotiation and have entered into a different type of relationship—and it's probably time to draw steel.
+The Director typically assumes that the underlying potential for events to [turn](scc:mcdm.heroes.v1/rule.combat/turn) violent is already factored into every negotiation. However, if the heroes decide to bring that threat to the forefront, then they've exited the realm of negotiation and have entered into a different type of relationship—and it's probably time to draw steel.
 
 Negotiation is about persuading someone to help you willingly because you've convinced them that meeting your [objectives](scc:mcdm.heroes.v1/rule.combat/objective) is a good idea. Working with you is wise or logical, or might make them look good. A hero can absolutely threaten someone with violence and force them to do what they want, but this is an incredibly temporary state. A threatened [NPC](scc:mcdm.heroes.v1/rule.general/npc) isn't willingly doing what they've been asked. They're doing it on threat of violence, and will comply only while that threat is evident—after which, they'll likely go back to their previous behavior as soon as they think they can get away with it.
 
@@ -22383,7 +22383,7 @@ An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [peace](scc:mcdm.heroes.v
 Arguments that appeal to a peace [motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation) contend that helping the heroes will earn the [NPC](scc:mcdm.heroes.v1/rule.general/npc) some peace, at least for a little while. Example arguments include the following:
 
 - "You have a good thing going here. A little burgling of nobles, some alcohol smuggling, and some illegal gambling dens. No one's getting hurt, but Constable Cofax is closing in on you. We could redirect him toward some real danger to the community, if you can help us set a trap for the Watchmaker."
-- "I know you don't sell to outsiders, but we need that helm. I'm going to use it to turn back a group of hobgoblins marching this way. They're not going to be as friendly as us."
+- "I know you don't sell to outsiders, but we need that helm. I'm going to use it to [turn](scc:mcdm.heroes.v1/rule.combat/turn) back a group of hobgoblins marching this way. They're not going to be as friendly as us."
 
 <!-- @type: negotiation | @id: power -->
 ##### Power
@@ -22437,7 +22437,7 @@ Arguments that appeal to the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeanc
 
 > **[NPCs](scc:mcdm.heroes.v1/rule.general/npc) Change Over Time**
 >
-> Just like the heroes, [NPCs](scc:mcdm.heroes.v1/rule.general/npc) in negotiations are complex individuals who can change over time. It's possible that the heroes might have to negotiate with the same [NPC](scc:mcdm.heroes.v1/rule.general/npc) for several different favors during the course of a campaign, over which time the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation) and [pitfalls](scc:mcdm.heroes.v1/rule.negotiation/pitfall) might change. If the heroes turn a bandit captain with the [greed](scc:mcdm.heroes.v1/negotiation/greed) and [power](scc:mcdm.heroes.v1/negotiation/power) [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation) into a temporary ally, that criminal might learn from them, changing their ways to rob only those who exploit the poor and giving those earnings to people in need. The next time the heroes negotiate with the bandit captain, they have the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) and [protection](scc:mcdm.heroes.v1/negotiation/protection) [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation).
+> Just like the heroes, [NPCs](scc:mcdm.heroes.v1/rule.general/npc) in negotiations are complex individuals who can change over time. It's possible that the heroes might have to negotiate with the same [NPC](scc:mcdm.heroes.v1/rule.general/npc) for several different favors during the course of a campaign, over which time the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation) and [pitfalls](scc:mcdm.heroes.v1/rule.negotiation/pitfall) might change. If the heroes [turn](scc:mcdm.heroes.v1/rule.combat/turn) a bandit captain with the [greed](scc:mcdm.heroes.v1/negotiation/greed) and [power](scc:mcdm.heroes.v1/negotiation/power) [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation) into a temporary ally, that criminal might learn from them, changing their ways to rob only those who exploit the poor and giving those earnings to people in need. The next time the heroes negotiate with the bandit captain, they have the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) and [protection](scc:mcdm.heroes.v1/negotiation/protection) [motivations](scc:mcdm.heroes.v1/rule.negotiation/motivation).
 
 ### Opening a Negotiation
 
@@ -22663,7 +22663,7 @@ Here's how the negotiation with Zola might play out.
 
 **James (playing Korvo, a [shadow](scc:mcdm.heroes.v1/class/shadow)):** *I have a seat and say, "Korvo at your service, Ms. Honeycut. And these here are the finest companions a [polder](scc:mcdm.heroes.v1/ancestry/polder) could ask for: Linn, Jorn, and Val."*
 
-**Director:** *Zola nods to each of you in turn, then says, "You'll excuse me if I dispense with more pleasantries. These days, no place is safe for the Clock. We keep moving. So tell me, what are you here for?"*
+**Director:** *Zola nods to each of you in [turn](scc:mcdm.heroes.v1/rule.combat/turn), then says, "You'll excuse me if I dispense with more pleasantries. These days, no place is safe for the Clock. We keep moving. So tell me, what are you here for?"*
 
 **Alyssa (playing Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician)):** *"We're building an army to take down Saxton once and for all."*
 
@@ -23031,13 +23031,13 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Nettlebloom:** Whenever you are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature, your armor sprouts toxic nettles. While that creature has you [grabbed](scc:mcdm.heroes.v1/condition/grabbed), they are [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
-**Phasing I:** Once per turn, you can move through 1 square of solid matter. If you end your turn inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can't be reduced in any way.
+**Phasing I:** Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can move through 1 square of solid matter. If you end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can't be reduced in any way.
 
 **Psionic Resistance I:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of psionic abilities.
 
 **Swift:** You gain a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
-**Tempest I:** As a maneuver, you infuse this armor with the essence of a storm. The first time an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature deals damage to you before the end of your next turn, they take lightning damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score and you can push them 1 square.
+**Tempest I:** As a maneuver, you infuse this armor with the essence of a storm. The first time an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature deals damage to you before the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), they take lightning damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score and you can push them 1 square.
 
 ###### 1st-Level Armor Enhancements Table
 
@@ -23078,15 +23078,15 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 - **12-16:** 12 damage; push 4
 - **17+:** 15 damage; push 5
 
-**Levitating:** On your turn, you can treat up to 5 consecutive squares of movement as [flying](scc:mcdm.heroes.v1/movement/fly) movement. If you are still in midair at the end of your turn, you [fall prone](scc:mcdm.heroes.v1/condition/prone).
+**Levitating:** On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can treat up to 5 consecutive squares of movement as [flying](scc:mcdm.heroes.v1/movement/fly) movement. If you are still in midair at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you [fall prone](scc:mcdm.heroes.v1/condition/prone).
 
 **Magic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of magic abilities. This benefit replaces Magic Resistance I.
 
-**Phasing II:** When you use the armor's Phasing I enhancement, you can move through 3 squares of solid matter per turn.
+**Phasing II:** When you use the armor's Phasing I enhancement, you can move through 3 squares of solid matter per [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Psionic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of psionic abilities. This benefit replaces Psionic Resistance I.
 
-**Reactive:** Whenever you take damage, you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 until the end of your next turn after the triggering damage is resolved.
+**Reactive:** Whenever you take damage, you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn) after the triggering damage is resolved.
 
 **Second Wind:** Whenever you become [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -23141,19 +23141,19 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Invulnerable:** When an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against you obtains a tier 1 outcome, you can ignore its damage and effects.
 
-**Leyline Walker:** Once per turn as a move action, you can spend any amount of your movement to instead [teleport](scc:mcdm.heroes.v1/movement/teleport) that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
+**Leyline Walker:** Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) as a move action, you can spend any amount of your movement to instead [teleport](scc:mcdm.heroes.v1/movement/teleport) that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 
 **Life:** Whenever you would die, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead. If you have no [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) to spend, you die.
 
 **Magic Resistance III:** The benefit of the armor's Magic Resistance II enhancement extends to each ally within 3 squares of you.
 
-**Phasing III:** Your movement doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), and you can move through the space of any enemy as if they were an ally. You can't end your turn in an enemy's space.
+**Phasing III:** Your movement doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), and you can move through the space of any enemy as if they were an ally. You can't end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in an enemy's space.
 
 **Psionic Resistance III:** The benefit of the armor's Psionic Resistance II enhancement extends to each ally within 3 squares of you.
 
 **Temporal Flux:** Whenever you move out of a square, you can choose to leave an imprint behind that lasts until the end of the encounter, until your imprint takes 20 or more damage, or until you create a new imprint. The square is occupied by your imprint, and you can share that space with it.
 
-On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the imprint's space as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). When you are targeted by an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport) to your imprint, and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is an automatic tier 1 result.
+On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the imprint's space as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). When you are targeted by an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport) to your imprint, and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is an automatic tier 1 result.
 
 **Unbending:** You can't be subjected to [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) unless you choose to be. Effects that ignore [Stability](scc:mcdm.heroes.v1/rule.character/stability) also ignore this enhancement.
 
@@ -23235,7 +23235,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Celestine:** As a main action, you conjure up to three stars, which [hover](scc:mcdm.heroes.v1/movement/hover) in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
-**Displacing II:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 4 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next turn.
+**Displacing II:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 4 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Erupting I:** Whenever you damage a creature using a magic or psionic ability that targets only a single creature and obtain a tier 3 outcome, each enemy within 2 squares of the creature takes 3 fire damage after the ability's effects resolve.
 
@@ -23243,7 +23243,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Hallucinatory:** As a maneuver, you create an area of sensory in[stability](scc:mcdm.heroes.v1/rule.character/stability) in a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) centered on yourself. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for your enemies until the end of the encounter.
 
-**Lingering I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 8 damage at the start of your next turn.
+**Lingering I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 8 damage at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Rejuvenating II:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On an 8 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) and you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating I.
 
@@ -23275,17 +23275,17 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Anathema:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature is also [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). If the creature is within 10 squares when this [weakened](scc:mcdm.heroes.v1/condition/weakened) effect ends, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
-**Displacing III:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 5 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next turn.
+**Displacing III:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 5 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Erupting II:** The fire damage dealt by the implement's Erupting I enhancement increases to 6.
 
 **Forceful III:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 3 squares and that movement can be vertical. This replaces the benefit of Forceful II.
 
-**Lingering II:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 15 damage at the start of your next turn. This replaces the benefit of Lingering I.
+**Lingering II:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 15 damage at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). This replaces the benefit of Lingering I.
 
 **Piercing:** Your magic and psionic abilities ignore damage immunities.
 
-**Psionic Siphon:** Once per turn when you damage one or more creatures using a magic or psionic ability and obtain a tier 3 outcome, you gain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and one creature you damage takes an extra 5 damage.
+**Psionic Siphon:** Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) when you damage one or more creatures using a magic or psionic ability and obtain a tier 3 outcome, you gain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and one creature you damage takes an extra 5 damage.
 
 **Rejuvenating III:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 7 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and you or a creature of your choice within 3 squares can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating II.
 
@@ -23337,7 +23337,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 **Thundering I:** Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using this weapon, you can push that creature 1 square after the other effects of the ability resolve.
 
-**Vengeance I:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last turn, the ability deals an extra 2 damage.
+**Vengeance I:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last [turn](scc:mcdm.heroes.v1/rule.combat/turn), the ability deals an extra 2 damage.
 
 **Wingbane:** Whenever you damage a [flying](scc:mcdm.heroes.v1/movement/fly) creature using this weapon, that creature is also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) in this way, the creature takes 1 damage per square they [fly](scc:mcdm.heroes.v1/movement/fly). If the creature starts and ends their turn on the same solid surface, the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition ends.
 
@@ -23391,13 +23391,13 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 > - **Large:** Abilities using this weapon gain a +1 [melee](scc:mcdm.heroes.v1/rule.combat/melee) [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus or a +3 [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus.
 > - **Vicious:** Whenever you damage a creature using this weapon, you deal an extra 1 damage on a tier 1 outcome, an extra 2 damage on a tier 2 outcome, and an extra 3 damage on a tier 3 outcome.
 >
-> **Silencing:** Whenever you damage a creature with an ability using this weapon and obtain a tier 3 outcome, that creature also can't use magic abilities until the end of their next turn.
+> **Silencing:** Whenever you damage a creature with an ability using this weapon and obtain a tier 3 outcome, that creature also can't use magic abilities until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 >
 > **Terrifying II:** Whenever you damage a creature with an ability using this weapon and obtain a tier 3 outcome, that creature takes 4 psychic damage and is [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends). This replaces the benefit of Terrifying I.
 >
 > **Thundering II:** Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using this weapon, you can push that creature up to 3 squares after the other effects of the ability resolve. If you obtained a tier 3 outcome, the creature is also [knocked prone](scc:mcdm.heroes.v1/condition/prone) after being pushed. This replaces the benefit of Thundering I.
 >
-> **Vengeance II:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last turn, the ability deals an extra 4 damage. This replaces the benefit of Vengeance I.
+> **Vengeance II:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last [turn](scc:mcdm.heroes.v1/rule.combat/turn), the ability deals an extra 4 damage. This replaces the benefit of Vengeance I.
 
 ###### 5th-Level Weapon Enhancements
 
@@ -23451,9 +23451,9 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 >
 > **Thundering III:** Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using this weapon, you can vertical push that creature up to 5 squares and knock them [prone](scc:mcdm.heroes.v1/condition/prone) after the other effects of the ability resolve. If the creature takes or deals damage as a result of this movement, they also take 5 thunder damage. This replaces the benefit of Thundering II.
 >
-> **Vengeance III:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last turn, the ability deals an extra 6 damage. This replaces the benefit of Vengeance II.
+> **Vengeance III:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last [turn](scc:mcdm.heroes.v1/rule.combat/turn), the ability deals an extra 6 damage. This replaces the benefit of Vengeance II.
 >
-> **Windcutting:** Whenever you use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that usually targets one creature, you can take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the ability to target each enemy in a [cube](scc:mcdm.heroes.v1/rule.combat/cube) 3 within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If your [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) would usually cause its target to become [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), each target in the area is instead [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
+> **Windcutting:** Whenever you use a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that usually targets one creature, you can take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the ability to target each enemy in a [cube](scc:mcdm.heroes.v1/rule.combat/cube) 3 within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If your [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) would usually cause its target to become [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), each target in the area is instead [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ###### 9th-Level Weapon Enhancements
 
@@ -23566,7 +23566,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 87-88  | Before the roll, the hero's rival reluctantly comes seeking the hero's help on their own project. If the hero agrees, the hero makes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the rival's project, and the Director makes the rival's [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the hero's project.                                                                                                                                                                                                                                                  |
 | 89-90  | After the roll, the hero completes their work on the project earlier than expected, and can either relax or go carousing with other heroes who are free. The hero and every character who joins them starts the next encounter with 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).                                                                                                                                                                                                                                                       |
 | 91-92  | Before the roll, the hero is approached by a wagoneer who needs help fixing their wagon. If the hero helps, they find out that the wagoneer is allied with the campaign's villain. If the hero doesn't attack or threaten the wagoneer, then in some future combat, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) of the Director's choice turns out to be a friend or relative of the wagoneer. They leave the battle peacefully when they recognize the hero.                                                                                        |
-| 93-94  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and any evidence of the project disappear into thin air. Any investigation of the area turns up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
+| 93-94  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and any evidence of the project disappear into thin air. Any investigation of the area [turns](scc:mcdm.heroes.v1/rule.combat/turn) up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
 | 95-96  | After the roll, the hero suddenly no longer understands or comprehends the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite). If they leave the project alone for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite), they'll be able to comprehend the research again, gaining an automatic breakthrough before the next [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                      |
 | 97-98  | Before the roll, part of the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
 | 99-100 | Before the roll, an elemental springs forth from the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and pulls the hero into a duel. If the hero can survive 3 rounds of combat with the elemental on their own, the elemental vanishes and leaves behind a completed project. If the hero flees, falls unconscious, or gets help from an ally, the elemental destroys the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) as they disappear.                                                                                                                                     |
@@ -23987,7 +23987,7 @@ This section presents 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you rub the balm on your body and feel it tingle across your skin. You immediately end the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) conditions on yourself, and you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the start of your next turn.
+**Effect:** As a maneuver, you rub the balm on your body and feel it tingle across your skin. You immediately end the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) conditions on yourself, and you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Catapult Dust
@@ -24004,7 +24004,7 @@ This section presents 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Project Goal:** 45
 
-**Effect:** Catapult Dust was developed as a cost-effective magic siege weapon. As a main action, you pour the dust out in an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) unoccupied space to fill an area as large as a 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube). At the start of your next turn, the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any [unattended objects](scc:mcdm.heroes.v1/rule.general/unattended-object) in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.
+**Effect:** Catapult Dust was developed as a cost-effective magic siege weapon. As a main action, you pour the dust out in an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) unoccupied space to fill an area as large as a 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube). At the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any [unattended objects](scc:mcdm.heroes.v1/rule.general/unattended-object) in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.
 
 <!-- @type: treasure -->
 ##### Giant's-Blood Flame
@@ -24154,9 +24154,9 @@ While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) t
 
 Enterprising mages within various thieves' guilds have developed variations of the Portable Cloud. Each variation has a secondary [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and a project goal of 45.
 
-**Noxious Cloud:** Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-smelling mist when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 poison damage. Additionally, any creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) while in the fog.
+**Noxious Cloud:** Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-smelling mist when broken. Each creature who enters the cloud for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 5 poison damage. Additionally, any creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) while in the fog.
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) of cloud and lightning when broken. Each creature who enters the cloud for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A spool of copper wire.
 
@@ -24248,7 +24248,7 @@ This section presents 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Project Goal:** 90
 
-**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability). Additionally, if you don't use your movement during your turn, any strikes you make on that turn deal an extra 5 damage, and any [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next turn. This effect and the bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+**Effect:** When you consume this delicious piece of candy as a maneuver, you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and a +10 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability). Additionally, if you don't use your movement during your [turn](scc:mcdm.heroes.v1/rule.combat/turn), any strikes you make on that [turn](scc:mcdm.heroes.v1/rule.combat/turn) deal an extra 5 damage, and any [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). This effect and the bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) lasts until the end of the encounter, after which you are sleepy. If not reduced beforehand, the [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: treasure -->
 ##### Concealment Potion
@@ -24358,7 +24358,7 @@ If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object [adjacent
 
 **Project Goal:** 90
 
-**Effect:** As a maneuver, you throw this vial up to 10 squares, destroying the vial and creating a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a combat round or starts their turn there takes 10 psychic damage. At the start of each of your turns, you can move the vortex up to 5 squares (no action required).
+**Effect:** As a maneuver, you throw this vial up to 10 squares, destroying the vial and creating a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 10 psychic damage. At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can move the vortex up to 5 squares (no action required).
 
 <!-- @type: treasure-group | @echelon: 3 | @treasure-type: consumable -->
 #### 3rd-Echelon Consumables
@@ -24382,7 +24382,7 @@ This section presents 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Effect:** When you release the larva as a maneuver, it feeds on psychic energy to grow exponentially, creating a 10 wall of larval flesh [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you. The wall can't be created to fill any square occupied by a creature with [stability](scc:mcdm.heroes.v1/rule.character/stability) 1 or higher. Each other creature in the wall when it is created is pushed to the nearest unoccupied space.
 
-At the start of each of your turns, each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the wall takes psychic damage equal to three times their [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your turn, the larva dies and the wall disappears.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the wall takes psychic damage equal to three times their [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), the larva dies and the wall disappears.
 
 <!-- @type: treasure -->
 ##### Bottled Paradox
@@ -24505,7 +24505,7 @@ At the start of each of your turns, each creature [adjacent](scc:mcdm.heroes.v1/
 
 **Project Goal:** 180
 
-**Effect:** When you drink this tonic as a maneuver, you feel a surge of physical and spiritual immunity. You can immediately end up to three conditions or effects affecting you. Additionally, until the start of your next turn, you can ignore any effect that would last until the end of your next turn or be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
+**Effect:** When you drink this tonic as a maneuver, you feel a surge of physical and spiritual immunity. You can immediately end up to three conditions or effects affecting you. Additionally, until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can ignore any effect that would last until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn) or be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
 
 <!-- @type: treasure-group | @echelon: 4 | @treasure-type: consumable -->
 #### 4th-Echelon Consumables
@@ -24565,7 +24565,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Project Goal:** 360
 
-**Effect:** As a maneuver, you spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to destroy this page and create a 4-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a combat round or starts their turn there takes 20 fire damage and is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their turn.
+**Effect:** As a maneuver, you spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to destroy this page and create a 4-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 20 fire damage and is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Restorative of the Bright Court
@@ -24755,7 +24755,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your current turn. After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
+**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your current [turn](scc:mcdm.heroes.v1/rule.combat/turn). After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
 
 <!-- @type: treasure -->
 ##### Mask of the Many
@@ -24806,7 +24806,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** These boots can temporarily unbind themselves from the chains of the earth, letting you move through the air as high as 3 squares above the ground from where you started. If you end your turn while you are still airborne, you fall.
+**Effect:** These boots can temporarily unbind themselves from the chains of the earth, letting you move through the air as high as 3 squares above the ground from where you started. If you end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) while you are still airborne, you fall.
 
 <!-- @type: treasure-group | @echelon: 2 | @treasure-type: trinket -->
 #### 2nd-Echelon Trinkets
@@ -24949,8 +24949,8 @@ This section presents 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [tr
 
 **Effect:** As a maneuver, you toss the coin in the air and let it fall to the ground in front of you. Roll a d3 to determine the coin's effect, depending on which face shows when it lands:
 
-- **1-Red:** The area within 2 squares of you is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of your next turn.
-- **2-Green:** You and each ally who starts their turn within 2 squares of you gains a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your next turn.
+- **1-Red:** The area within 2 squares of you is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+- **2-Green:** You and each ally who starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 2 squares of you gains a +1 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 - **3-Spinning Coin:** Both the red and green effects occur while the coin continuously spins.
 
 The coin must be picked up before it can be used again. If any creature picks up the coin, its effects immediately end.
@@ -25075,7 +25075,7 @@ Additionally, you have the following ability.
 
 **Project Goal:** 450
 
-**Effect:** Once per turn, you can use a maneuver to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares. Additionally, when targeted by any other effect that causes you to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 additional squares.
+**Effect:** Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a maneuver to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares. Additionally, when targeted by any other effect that causes you to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 additional squares.
 
 <!-- @type: treasure-group | @echelon: 4 | @treasure-type: trinket -->
 #### 4th-Echelon Trinkets
@@ -25169,7 +25169,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature deals damage to you, they take 3 acid or poison damage (your choice).
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature who deals damage to you takes 6 acid or poison damage. Additionally, you can use a maneuver to transmute a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area of liquid or gas [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you into liquid acid or poison gas until the start of your next turn. Any creature who enters the area for the first time in a combat round or starts their turn there takes 6 acid or poison damage, as appropriate.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature who deals damage to you takes 6 acid or poison damage. Additionally, you can use a maneuver to transmute a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area of liquid or gas [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you into liquid acid or poison gas until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Any creature who enters the area for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 6 acid or poison damage, as appropriate.
 
 <!-- @type: treasure -->
 ##### Chain of the Sea and Sky
@@ -25188,7 +25188,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can automatically swim at full [speed](scc:mcdm.heroes.v1/rule.character/speed) while moving, and you can breathe underwater for up to 1 hour. Returning to the surface to breathe air again for any length of time reset's the armor's water-breathing benefit.
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and you have cold immunity 5. Additionally, whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during each of your turns.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and you have cold immunity 5. Additionally, whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you have cold immunity 10. Additionally, whenever your feet are not touching the ground (including floating in water or being in midair), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll), and any ability takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when targeting you.
 
@@ -25232,7 +25232,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +6. When you cause the shield to roar, you target one creature or object within 3 squares and push that target up to 4 squares.
 
-**9th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +9. When you cause the shield to roar, you target one creature or object within 6 squares, you push that target up to 5 squares, and the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
+**9th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +9. When you cause the shield to roar, you target one creature or object within 6 squares, you push that target up to 5 squares, and the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Kuran'zoi Prismscale
@@ -25249,11 +25249,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, whenever a creature within 5 squares deals damage to you, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to capture a moment of time in the armor, making that creature [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
+**1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, whenever a creature within 5 squares deals damage to you, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to capture a moment of time in the armor, making that creature [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, when you capture a moment of time in the armor, the triggering creature also takes corruption damage equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) that lasts until the end of your next turn.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) that lasts until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Paper Trappings
@@ -25272,7 +25272,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Additionally, you can use a main action to fold in on yourself until you and your gear are paper thin. This effect lasts for 1 minute, letting you easily slip through any opening that is 1 inch wide or more. When you return to your three-dimensional form, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) for 1 minute. If you return to your true form while in a space that is too small for you, you are violently expelled into the nearest open space of your choice and take 3d6 damage.
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and when you return to your true form, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) only until the end of your next turn. Additionally, while you are paper thin, you can use a maneuver to wrap yourself around an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) target who is the same [size](scc:mcdm.heroes.v1/rule.character/size) or smaller than you, automatically grabbing them.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and when you return to your true form, you are [dazed](scc:mcdm.heroes.v1/condition/dazed) only until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, while you are paper thin, you can use a maneuver to wrap yourself around an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) target who is the same [size](scc:mcdm.heroes.v1/rule.character/size) or smaller than you, automatically grabbing them.
 
 **9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you are no longer [dazed](scc:mcdm.heroes.v1/condition/dazed) when you return to your true form. Additionally, while you have a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) when you are paper thin, you can use a maneuver to constrict the target, dealing 10 damage to them. A creature damaged this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver against you and when making [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against you.
 
@@ -25293,9 +25293,9 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to lie about or conceal your identity.
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever you take damage, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you do, you create an illusion of you [dying](scc:mcdm.heroes.v1/rule.health/dying) in your previous space, which fades at the end of your next turn.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever you take damage, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you do, you create an illusion of you [dying](scc:mcdm.heroes.v1/rule.health/dying) in your previous space, which fades at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Whenever you use the armor's [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to the damage taken (minimum 5 squares). Additionally, if a creature dealt you the triggering damage, you become invisible to that creature until the end of your next turn.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Whenever you use the armor's [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to the damage taken (minimum 5 squares). Additionally, if a creature dealt you the triggering damage, you become invisible to that creature until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Spiny Turtle
@@ -25333,9 +25333,9 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), but any magic ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when targeting you. Additionally, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 2 squares. You can also turn invisible as a maneuver. Your invisibility ends if you take damage or use an ability, or at the end of your next turn.
+**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), but any magic ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when targeting you. Additionally, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 2 squares. You can also [turn](scc:mcdm.heroes.v1/rule.combat/turn) invisible as a maneuver. Your invisibility ends if you take damage or use an ability, or at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 5 squares, and your invisibility no longer ends at the end of your next turn. Additionally, you have psychic immunity 5.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 5 squares, and your invisibility no longer ends at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Additionally, you have psychic immunity 5.
 
 **9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you instinctively know the location of any creature with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) within 10 squares. Your invisibility no longer ends when you use an ability, and you have psychic immunity 10.
 
@@ -25354,7 +25354,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Goal:** 450
 
-**1st Level:** While you wield or carry this shield, you gain a +2 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus adds to the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus granted by other treasures. Additionally, once per turn when an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy uses an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver against that enemy. You can have any number of enemies [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way.
+**1st Level:** While you wield or carry this shield, you gain a +2 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus adds to the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus granted by other treasures. Additionally, once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) when an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy uses an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver against that enemy. You can have any number of enemies [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in this way.
 
 **5th Level:** The shield's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +5, and you can use the shield's free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) against any enemy within 10 squares who uses an ability. Additionally, any enemy who uses the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [test](scc:mcdm.heroes.v1/rule.test/test).
 
@@ -25382,7 +25382,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 [cube](scc:mcdm.heroes.v1/rule.combat/cube), around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next turn.
+**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 [cube](scc:mcdm.heroes.v1/rule.combat/cube), around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **9th Level:** The implement's damage bonus increases to +3. Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube), and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
@@ -25403,9 +25403,9 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) deal an extra 2 psychic damage. Additionally, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic or psionic abilities if you aren't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
-**5th Level:** The implement's extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the implement's extra damage is doubled until the end of your next turn.
+**5th Level:** The implement's extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the implement's extra damage is doubled until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The implement's extra psychic damage increases to 4. Additionally, whenever you use a damage-dealing magic or psionic ability, you can take half as much total damage as is dealt to all targets to immediately use the same ability again. The damage you take can't be reduced in any way. You can't use this benefit more than once a turn.
+**9th Level:** The implement's extra psychic damage increases to 4. Additionally, whenever you use a damage-dealing magic or psionic ability, you can take half as much total damage as is dealt to all targets to immediately use the same ability again. The damage you take can't be reduced in any way. You can't use this benefit more than once a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Chaldorb
@@ -25426,7 +25426,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you use a magic or psionic ability, a whirlwind of sleet and ice whips around you, dealing 3 cold damage to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
-**9th Level:** The implement's damage bonus increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) around you that lasts until the start of your next turn. Each enemy who enters the [aura](scc:mcdm.heroes.v1/rule.combat/aura) for the first time in a combat round or starts their turn there takes 6 cold damage.
+**9th Level:** The implement's damage bonus increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) around you that lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each enemy who enters the [aura](scc:mcdm.heroes.v1/rule.combat/aura) for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 6 cold damage.
 
 <!-- @type: treasure -->
 ##### Ether-Fueled Vessel
@@ -25443,7 +25443,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next turn, allowing you to pass through them freely. While insubstantial, a creature can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to pass through them freely. While insubstantial, a creature can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you.
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to deal damage to them equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) space outside them.
 
@@ -25464,11 +25464,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you can use that creature's senses until the end of your next turn, allowing you to experience all they observe and to use your abilities as if you were in their space. You also benefit from your own senses at the same time.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you can use that creature's senses until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to experience all they observe and to use your abilities as if you were in their space. You also benefit from your own senses at the same time.
 
-**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal 20 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is weakend until the end of their next turn.
+**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal 20 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is weakend until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The implement's damage bonus increases to +3. Additionally, whenever you deal 30 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
+**9th Level:** The implement's damage bonus increases to +3. Additionally, whenever you deal 30 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Words Become Wonders at Next Breath
@@ -25578,7 +25578,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **5th Level:** The weapon's extra psychic damage increases to 2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature, you can use a maneuver to trade places with that creature or any creature within 4 squares of them, provided you both fit into each other's spaces.
 
-**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature, you can use a maneuver to trade places with that creature or any creature within 8 squares of them, provided you both fit into each other's spaces. Additionally, you can cause the creature you traded places with to be [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn, or you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature, you can use a maneuver to trade places with that creature or any creature within 8 squares of them, provided you both fit into each other's spaces. Additionally, you can cause the creature you traded places with to be [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), or you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: treasure -->
 ##### Executioner's Blade
@@ -25700,9 +25700,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 poison damage. Additionally, any [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) using the weapon that obtains a tier 3 outcome also makes the target [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
+**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 poison damage. Additionally, any [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) using the weapon that obtains a tier 3 outcome also makes the target [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**5th Level:** The weapon's extra poison damage increases to 2. A [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) made using the weapon that obtains a tier 3 outcome also makes the target [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
+**5th Level:** The weapon's extra poison damage increases to 2. A [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) made using the weapon that obtains a tier 3 outcome also makes the target [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **9th Level:** The weapon's extra poison damage increases to 3. Additionally, if you use an ability using the weapon that targets one creature and you don't have a [bane](scc:mcdm.heroes.v1/rule.dice/bane) or double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the ability, you can take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). Doing so lets you target another creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the original target. Alternatively, you can have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) to target two creatures [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the original target.
 
@@ -25742,9 +25742,9 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 psychic damage. Additionally, any damage-dealing weapon ability using the weapon that achieves a tier 3 outcome also leaves the target [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn. **5th Level:** The weapon's extra psychic damage increases to 2. Additionally, whenever a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike uses a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) after their [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) resolves to make a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike using this weapon against the creature.
+**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 psychic damage. Additionally, any damage-dealing weapon ability using the weapon that achieves a tier 3 outcome also leaves the target [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn). **5th Level:** The weapon's extra psychic damage increases to 2. Additionally, whenever a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike uses a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) after their [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) resolves to make a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike using this weapon against the creature.
 
-**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities that use the weapon against creatures who have used a psionic ability since the end of your last turn.
+**9th Level:** The weapon's extra psychic damage increases to 3. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities that use the weapon against creatures who have used a psionic ability since the end of your last [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Thunderhead Bident
@@ -25829,11 +25829,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear these hand wraps, any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gains a +1 damage bonus. Additionally, once per turn, you can take 5 damage that can't be reduced in any way to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver (no action required).
+**1st Level:** While you wear these hand wraps, any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gains a +1 damage bonus. Additionally, once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can take 5 damage that can't be reduced in any way to use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver (no action required).
 
-**5th Level:** The damage bonus granted by the hand wraps increases to +2. Additionally, once per turn, you can take 10 damage that can't be reduced in any way to make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (no action required). On your turn, you can use the wraps' [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) option or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver option, but only one.
+**5th Level:** The damage bonus granted by the hand wraps increases to +2. Additionally, once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can take 10 damage that can't be reduced in any way to make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (no action required). On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use the wraps' [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) option or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver option, but only one.
 
-**9th Level:** The damage bonus granted by the hand wraps increases to +3. Additionally, once per turn, you can take 15 damage that can't be reduced in any way to use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) (no action required). On your turn, you can use the wraps' [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) option, [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) option, or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver option, but only one.
+**9th Level:** The damage bonus granted by the hand wraps increases to +3. Additionally, once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can take 15 damage that can't be reduced in any way to use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) (no action required). On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use the wraps' [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) option, [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) option, or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver option, but only one.
 
 <!-- @type: treasure -->
 ##### Lightning Treads
@@ -25852,7 +25852,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **1st Level:** While you wear these boots, any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 1 lightning damage. Additionally, you gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
-**5th Level:** The extra lightning damage granted by the treads increases to 2. Additionally, for each square you move on your turn before you use a weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), this extra damage increases by 1 (to a maximum of 4).
+**5th Level:** The extra lightning damage granted by the treads increases to 2. Additionally, for each square you move on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) before you use a weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using your unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), this extra damage increases by 1 (to a maximum of 4).
 
 **9th Level:** The extra lightning damage granted by the treads increases to 3, and your movement can increase that extra damage to a maximum of 6. Additionally, you can use a maneuver to perform a [flying](scc:mcdm.heroes.v1/movement/fly) lightning kick on one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature. That target is pushed up to 5 squares, and you can move to any square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target after the push.
 
@@ -25871,9 +25871,9 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this cloak, any creature who damages you is marked for revenge until the end of your next turn or until another creature damages you. Any strike you make against a creature marked for revenge deals extra damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
+**1st Level:** While you wear this cloak, any creature who damages you is marked for revenge until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn) or until another creature damages you. Any strike you make against a creature marked for revenge deals extra damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**5th Level:** Each creature who damages you is marked for revenge until the end of your next turn. Whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
+**5th Level:** Each creature who damages you is marked for revenge until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 **9th Level:** When you have three or more creatures marked for revenge and you target one of them with an ability that targets only one creature, you target all the creatures marked for revenge, regardless of their [distance](scc:mcdm.heroes.v1/rule.combat/distance) from you and even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them.
 
@@ -25918,7 +25918,7 @@ Whether drawn from a stone, gifted by a lake spirit, forged by a god, or used to
 
 Though its size and make are often debated, the sword is consistently described as having a crossguard made from pure starlight. When wielded, a brilliant metal blade springs forth from that hilt, suiting the holder's taste in weapons. Those who touch the blade are filled with the vigor and power of the heroes who have held it before.
 
-**Suited for [Victory](scc:mcdm.heroes.v1/rule.resource/victories):** This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using the Blade of a Thousand Years gains a +5 damage bonus, and that ability always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
+**Suited for [Victory](scc:mcdm.heroes.v1/rule.resource/victories):** This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using the Blade of a Thousand Years gains a +5 damage bonus, and that ability always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Rally the Righteous:** This blade fills all around it with hope and courage. Each ally within 1 mile of the weapon gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, and has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. Additionally, each such creature's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 15 and they gain a +15 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) when this ability first affects them.
 
@@ -25958,7 +25958,7 @@ The Encepter is said to have first manifested in a young world doomed to apocaly
 
 Change is the engine of existence. Permanence begets stagnation. When the past refuses to relinquish control, a path must be cleared for the future. Energized by the flickering of minds and souls passing through the void, the Mortal Coil taps into the entropic potential inherent in every living creature to cast a shadow capable of felling even gods. For the true gift of life is death, and gifts are meant to be given.
 
-Only one destined for death can contain the power of the Mortal Coil. A mortal creature who carries this artifact serves as its host, gaining an additional main action on each of their turns, aging at ten times the usual rate, and becoming unable to ever regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). A host with no natural maximum lifespan permanently reduces their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum by 10 each year.
+Only one destined for death can contain the power of the Mortal Coil. A mortal creature who carries this artifact serves as its host, gaining an additional main action on each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), aging at ten times the usual rate, and becoming unable to ever regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). A host with no natural maximum lifespan permanently reduces their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum by 10 each year.
 
 When the Mortal Coil is left unattended or is in the possession of a creature who is not mortal, it activates and can't be deactivated until a mortal creature becomes its host once more. While active, the artifact extends a penumbra of influence for 10 miles in every direction. Every creature in the penumbra is subject to the following effects.
 
@@ -26003,7 +26003,7 @@ The easiest way to create custom titles is to modify an existing title's require
 
 > **For the Director: Perks as Custom Titles**
 >
-> You can turn a perk into a 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) title simply by giving it a prerequisite (see Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks)). For example, a hero might gain the Familiar perk as a title instead if they complete a quest for an archmage, who then teaches the hero the conjuring ritual as a reward.
+> You can [turn](scc:mcdm.heroes.v1/rule.combat/turn) a perk into a 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) title simply by giving it a prerequisite (see Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks)). For example, a hero might gain the Familiar perk as a title instead if they complete a quest for an archmage, who then teaches the hero the conjuring ritual as a reward.
 
 ### How Many Titles?
 
@@ -26168,7 +26168,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 - *Arcane Dampening:* When resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) from magic abilities, your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are considered to be 1 higher than usual.
 - *Oh No, You Don't!:* Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature uses an ability with the Magic keyword, you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them as a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
-- *Stink of Magic:* As a maneuver, you open your senses to the residue of magic. Until the end of your next turn, you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can't be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) by constructs, undead, or creatures from another world.
+- *Stink of Magic:* As a maneuver, you open your senses to the residue of magic. Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can't be [surprised](scc:mcdm.heroes.v1/rule.combat/surprised) by constructs, undead, or creatures from another world.
 
 <!-- @type: title -->
 #### Marshal
@@ -26179,8 +26179,8 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** Choose one of the following benefits:
 
-- *Guess It's the Hard Way Then:* When combat begins and you aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), the first time you take damage before taking your turn, you halve that damage.
-- *Heedless Pursuer:* Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to deal yourself 1d6 damage that can't be reduced in any way. When you do, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and you can increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of any jump you make by 1 square, both until the end of your turn.
+- *Guess It's the Hard Way Then:* When combat begins and you aren't [surprised](scc:mcdm.heroes.v1/rule.combat/surprised), the first time you take damage before taking your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you halve that damage.
+- *Heedless Pursuer:* Once on each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to deal yourself 1d6 damage that can't be reduced in any way. When you do, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and you can increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of any jump you make by 1 square, both until the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 - *Silver Shield:* You have a badge granted to you by your organization. While you wear it, you gain the My Life for Yours feature from the [censor](scc:mcdm.heroes.v1/class/censor) class. When you use that ability, you can't spend wrath unless you have the Wrath class feature.
 - *Trained Tracker:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to track criminals.
 
@@ -26238,7 +26238,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 > |-----------------|--------------------------------------------:|
 > | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area hidden to you** |
 >
-> **Effect:** Each target who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn, and you know the location of each creature [taunted](scc:mcdm.heroes.v1/condition/taunted) in this way.
+> **Effect:** Each target who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), and you know the location of each creature [taunted](scc:mcdm.heroes.v1/condition/taunted) in this way.
 
 - *Deadly and Big:* Your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a +3 damage bonus against creatures whose [size](scc:mcdm.heroes.v1/rule.character/size) is smaller than yours.
 - *Everybody Move!:* When you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature of your [size](scc:mcdm.heroes.v1/rule.character/size) or two additional smaller creatures.
@@ -26282,7 +26282,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 **Effect:** Choose one of the following benefits:
 
-- *[Flying](scc:mcdm.heroes.v1/movement/fly) Circus:* When you are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a willing ally on their turn, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to push them up to 2 squares if their [size](scc:mcdm.heroes.v1/rule.character/size) is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.
+- *[Flying](scc:mcdm.heroes.v1/movement/fly) Circus:* When you are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a willing ally on their [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to push them up to 2 squares if their [size](scc:mcdm.heroes.v1/rule.character/size) is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.
 - *Spotlight:* You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can't sneak or hide, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to perform any action secretly, and they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the Lead, Music, or Perform skills.
 - *Supporting Player:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [group tests](scc:mcdm.heroes.v1/rule.test/group-test) using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on [tests](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test).
 - *Work the Crowd:* While any of your allies is playing music or performing, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to conceal objects, hide, pick pockets, or sneak.
@@ -26483,7 +26483,7 @@ Titles suitable for 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 **Effect:** Choose one of the following benefits:
 
 - *Healing Gift:* You can use the 1st-level [Conduit](scc:mcdm.heroes.v1/class/conduit) feature [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) as if you had spent 1 [piety](scc:mcdm.heroes.v1/feature.conduit.level-1/piety) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
-- *Last-Ditch Prayer:* As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
+- *Last-Ditch Prayer:* As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn) if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
 - *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or saint's domains, choose a [Conduit](scc:mcdm.heroes.v1/class/conduit) 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: title -->
@@ -26601,7 +26601,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 **Effect:** You return to life 1 minute after being killed with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [winded](scc:mcdm.heroes.v1/rule.health/winded) value. You gain corruption immunity equal to your level and one of the benefits below, based on the type of creature who killed you. If you die again, you rise as an undead creature under the Director's control.
 
 - *Ghoul or Vampire:* When you make a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature, you can bite that creature. If you do so and obtain a tier 3 outcome, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
-- *Incorporeal Undead:* You can move through other creatures and objects. The first time in a combat round that you pass through a creature, that creature takes corruption damage equal to half your level. You don't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
+- *Incorporeal Undead:* You can move through other creatures and objects. The first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) that you pass through a creature, that creature takes corruption damage equal to half your level. You don't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 - *Other Corporeal Undead:* When you are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire or holy damage and your body isn't destroyed, you can regain half your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [fall prone](scc:mcdm.heroes.v1/condition/prone). Once you use this benefit, you can't use it again until you earn 10 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 <!-- @type: title -->
@@ -26730,7 +26730,7 @@ Titles suitable for 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 >
 > **Effect:** The soul of any creature killed by this ability is dragged to Hell.
 
-- *Music of the Spheres:* As a main action, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next turn, whenever a creature within 10 squares makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they take 8 sonic damage. Whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) during that same period, you also take 8 sonic damage.
+- *Music of the Spheres:* As a main action, you sing or play a note as delicate and sharp as glass—and just as easily shattered. Until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever a creature within 10 squares makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they take 8 sonic damage. Whenever you make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) during that same period, you also take 8 sonic damage.
 
 <!-- @type: title -->
 #### Master Crafter
@@ -26866,7 +26866,7 @@ Additionally, choose one of the following benefits:
 
 **Effect:** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
-- *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+- *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Perfect Protection:* The Director chooses a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 - *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
 
@@ -27363,7 +27363,7 @@ Death Captain Voyrik's eyes went wide. "It's three thousand miles," he pointed o
 
 How long it took the bloodrunners of the Lightning to cross the desert is not well-attested. It took four or six months depending on which accounts you read, but even six months would make their march a legendary journey.
 
-Opposed at every turn by the local noble houses and then eventually the desert clans who sought the bounty placed on Khorvath's head, the ten thousand grew in battle prowess as they demolished any enemy foolish enough to get in their way. Given the many tens of thousands of warriors the bloodrunners dispatched over the course of four (or six) months, it may well be that Khorvath's sobriquet was literal.
+Opposed at every [turn](scc:mcdm.heroes.v1/rule.combat/turn) by the local noble houses and then eventually the desert clans who sought the bounty placed on Khorvath's head, the ten thousand grew in battle prowess as they demolished any enemy foolish enough to get in their way. Given the many tens of thousands of warriors the bloodrunners dispatched over the course of four (or six) months, it may well be that Khorvath's sobriquet was literal.
 
 Success was a double edged sword. The more [victories](scc:mcdm.heroes.v1/rule.resource/victories) they earned in battle, the easier they were to follow. "Our enemies walk the red road," Voyrik once said, looking at the vast swath of blood they left in their wake.
 
@@ -28621,7 +28621,7 @@ When assigning negotiation stats, keep the following guidelines in mind:
 - The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 - The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your [NPC](scc:mcdm.heroes.v1/rule.general/npc) a higher patience score.
 - The more motivations an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has, the more likely the heroes are to make easier [tests](scc:mcdm.heroes.v1/rule.test/test) while engaging the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
-- The more pitfalls an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has, the more likely the heroes are to stumble into a topic that turns negotiation sour. However, too many pitfalls can feel like a "Gotcha!" setup to players, especially if they don't have time to do a little research or reconnaissance on the [NPC](scc:mcdm.heroes.v1/rule.general/npc) before going into the negotiation.
+- The more pitfalls an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has, the more likely the heroes are to stumble into a topic that [turns](scc:mcdm.heroes.v1/rule.combat/turn) negotiation sour. However, too many pitfalls can feel like a "Gotcha!" setup to players, especially if they don't have time to do a little research or reconnaissance on the [NPC](scc:mcdm.heroes.v1/rule.general/npc) before going into the negotiation.
 
 #### Plan the Outcomes
 
@@ -29104,7 +29104,7 @@ The following challenges can be part of the heroes' infiltration:
 
 ###### Optional Twist
 
-At any time during the infiltration section of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), immediately after one hero's turn, the characters run into another group breaking into the palace at the same time, and possibly after the same prize. The characters can choose to fight or negotiate with the other party, or simply let them pass—in which case they might meet them again when they reach their final goal.
+At any time during the infiltration section of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), immediately after one hero's [turn](scc:mcdm.heroes.v1/rule.combat/turn), the characters run into another group breaking into the palace at the same time, and possibly after the same prize. The characters can choose to fight or negotiate with the other party, or simply let them pass—in which case they might meet them again when they reach their final goal.
 
 ###### Montage Test Outcomes
 
