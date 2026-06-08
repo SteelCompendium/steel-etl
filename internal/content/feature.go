@@ -63,9 +63,21 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 	// Companion species (beastheart book) takes precedence over class in the path.
 	companionID, _ := ctx.Lookup(section.HeadingLevel, "companion")
 
+	// Trait is reserved for the rulebook's trait homes. The only trait home
+	// reachable through FeatureParser is an ancestry (monster traits are emitted
+	// by statblock_parse.go; companions are NOT a trait home — the Beastheart
+	// book calls companion grants "features", never "traits"). Everything else
+	// (class/domain/college/kit/companion/common) is a plain feature. See
+	// docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md.
+	isTrait := ancestryID != ""
+	featureKind := "feature"
+	if isTrait {
+		featureKind = "trait"
+	}
+
 	fm := map[string]any{
 		"name": cleanName,
-		"type": "trait",
+		"type": featureKind,
 	}
 
 	// Look up level from context (set by parent feature-group)
@@ -92,9 +104,14 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		fm["subclass"] = parseSubclass(v)
 	}
 
-	// Build type path: feature.trait.{parent}.level-{N}[.{kit}]
-	// Companion traits use feature.trait.companion.{species}.level-{N}.
-	typePath := []string{"feature", "trait"}
+	// Build the hub-and-spoke type path. The base case is unmarked; the `trait`
+	// marker is inserted only for trait homes (ancestry). Plain features take
+	// feature.{entity}.level-{N}[.{kit}]; ability.go handles feature.ability.*.
+	// Companion features: feature.companion.{species}.level-{N} (no trait marker).
+	typePath := []string{"feature"}
+	if isTrait {
+		typePath = append(typePath, "trait")
+	}
 	if companionID != "" {
 		typePath = append(typePath, "companion", companionID)
 	} else if classID != "" {

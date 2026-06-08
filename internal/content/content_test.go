@@ -134,8 +134,8 @@ func TestFeatureParser(t *testing.T) {
 	if result.ItemID != "growing-ferocity" {
 		t.Errorf("expected itemID=growing-ferocity, got %s", result.ItemID)
 	}
-	// feature.trait.fury.level-1
-	expected := []string{"feature", "trait", "fury", "level-1"}
+	// fury is a class → plain feature: feature.fury.level-1 (no trait segment)
+	expected := []string{"feature", "fury", "level-1"}
 	if len(result.TypePath) != len(expected) {
 		t.Errorf("expected TypePath=%v, got %v", expected, result.TypePath)
 	} else {
@@ -145,6 +145,52 @@ func TestFeatureParser(t *testing.T) {
 				break
 			}
 		}
+	}
+}
+
+func TestFeatureParser_TaxonomyPaths(t *testing.T) {
+	cases := []struct {
+		name     string
+		homeType string // "class" | "ancestry" | "companion"
+		homeID   string
+		wantType string   // fm["type"]
+		wantPath []string // full TypePath
+	}{
+		{"class feature is plain feature", "class", "shadow", "feature", []string{"feature", "shadow"}},
+		{"ancestry feature is trait", "ancestry", "dwarf", "trait", []string{"feature", "trait", "dwarf"}},
+		{"companion feature is plain feature", "companion", "wolf", "feature", []string{"feature", "companion", "wolf"}},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+			if tc.homeType == "companion" {
+				ctx.Push(2, context.Metadata{"type": "feature-group", "companion": tc.homeID})
+			} else {
+				ctx.Push(2, context.Metadata{"type": tc.homeType, "id": tc.homeID})
+			}
+			section := &parser.Section{
+				Heading:      "Sample Feature",
+				HeadingLevel: 3,
+				Annotation:   map[string]string{"type": "feature"},
+			}
+			p := &FeatureParser{}
+			got, err := p.Parse(ctx, section)
+			if err != nil {
+				t.Fatalf("Parse failed: %v", err)
+			}
+			if got.Frontmatter["type"] != tc.wantType {
+				t.Errorf("type = %v, want %v", got.Frontmatter["type"], tc.wantType)
+			}
+			if len(got.TypePath) != len(tc.wantPath) {
+				t.Fatalf("TypePath = %v, want %v", got.TypePath, tc.wantPath)
+			}
+			for i, seg := range tc.wantPath {
+				if got.TypePath[i] != seg {
+					t.Errorf("TypePath = %v, want %v", got.TypePath, tc.wantPath)
+					break
+				}
+			}
+		})
 	}
 }
 
@@ -482,7 +528,7 @@ func TestFeatureCompanionTypePath(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.trait.companion.wolf.level-3/my-what-big-teeth-you-have"
+	want := "mcdm.beastheart.v1/feature.companion.wolf.level-3/my-what-big-teeth-you-have"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
@@ -570,7 +616,7 @@ func TestFeatureSubclassFrontmatter(t *testing.T) {
 		t.Errorf("subclass frontmatter = %v, want spark", parsed.Frontmatter["subclass"])
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.trait.beastheart.level-2/stormheart"
+	want := "mcdm.beastheart.v1/feature.beastheart.level-2/stormheart"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
