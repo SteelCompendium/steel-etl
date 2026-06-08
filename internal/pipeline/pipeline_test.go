@@ -40,7 +40,7 @@ func TestRunPipelineOnFixture(t *testing.T) {
 	checkFileExists(t, outputDir, "class/shadow.md")
 	checkFileExists(t, outputDir, "feature/ability/fury/level-1/brutal-slam.md")
 	checkFileExists(t, outputDir, "feature/ability/fury/level-1/gouge.md")
-	checkFileExists(t, outputDir, "feature/trait/fury/level-1/growing-ferocity.md")
+	checkFileExists(t, outputDir, "feature/fury/level-1/growing-ferocity.md")
 
 	// Verify registry was written
 	if _, err := os.Stat(registryPath); os.IsNotExist(err) {
@@ -106,7 +106,7 @@ func TestRunPipeline_SubheadingContentIncluded(t *testing.T) {
 	}
 
 	// --- Growing Ferocity should include both unannotated tables ---
-	growingFerocityPath := filepath.Join(outputDir, "feature/trait/fury/level-1/growing-ferocity.md")
+	growingFerocityPath := filepath.Join(outputDir, "feature/fury/level-1/growing-ferocity.md")
 	growingFerocity := readFileContent(t, growingFerocityPath)
 
 	if !strings.Contains(growingFerocity, "Berserker Growing Ferocity Table") {
@@ -127,7 +127,7 @@ func TestRunPipeline_SubheadingContentIncluded(t *testing.T) {
 	}
 
 	// --- 1st-Level Aspect Features should include the lookup table ---
-	aspectFeaturesPath := filepath.Join(outputDir, "feature/trait/fury/level-1/1st-level-aspect-features.md")
+	aspectFeaturesPath := filepath.Join(outputDir, "feature/fury/level-1/1st-level-aspect-features.md")
 	aspectFeatures := readFileContent(t, aspectFeaturesPath)
 
 	if !strings.Contains(aspectFeatures, "1st-Level Aspect Features Table") {
@@ -152,7 +152,7 @@ func TestRunPipeline_SubheadingContentIncluded(t *testing.T) {
 	}
 
 	// --- Damaging Ferocity (level 2) should include its additions table ---
-	damagingPath := filepath.Join(outputDir, "feature/trait/fury/level-2/damaging-ferocity.md")
+	damagingPath := filepath.Join(outputDir, "feature/fury/level-2/damaging-ferocity.md")
 	damaging := readFileContent(t, damagingPath)
 
 	if !strings.Contains(damaging, "Damaging Ferocity Additions") {
