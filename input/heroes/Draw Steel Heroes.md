@@ -99,7 +99,7 @@ We know that many folks are coming to this game having only experienced d20 fant
 - **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
-- **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use Presence—the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
+- **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence)—the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
 - **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *MCDM Discord* and ask. We've got tons of awesome community members ready to help!
 - **We don't expect you to do everything to the letter.** This is actually one thing *Draw Steel* does have in common with d20 fantasy. This is a big book of rules! Don't stress if you need to look something up or make a ruling about an edge case on the fly. If everyone's having fun, you're doing it right.
 
@@ -139,7 +139,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Bane](scc:mcdm.heroes.v1/rule.dice/bane):** A situational disadvantage that gives a creature a −2 penalty to a power roll.
 
-**[Bleeding](scc:mcdm.heroes.v1/condition/bleeding):** A condition that causes a creature to take 1d6 + level damage whenever they use a main action or triggered action, or make a power roll using Might or Agility.
+**[Bleeding](scc:mcdm.heroes.v1/condition/bleeding):** A condition that causes a creature to take 1d6 + level damage whenever they use a main action or triggered action, or make a power roll using [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility).
 
 **[Bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** A positive number that increases a creature's statistics or the roll of a die.
 
@@ -157,7 +157,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Censor](scc:mcdm.heroes.v1/class/censor):** A class for a hero who is a trained warrior devoted to a saint or god.
 
-**[Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** Statistics used to represent a creature's mental and physical prowess, broken out as Might, Agility, Reason, Intuition, and Presence. Each characteristic has a score that ranges from −5 to +5.
+**[Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** Statistics used to represent a creature's mental and physical prowess, broken out as [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence). Each characteristic has a score that ranges from −5 to +5.
 
 **[Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) Main Action:** A main action that allows a creature to move up to their speed in a straight line, then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use an ability with the Charge keyword against a target when they end their move.
 
@@ -267,7 +267,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Experience (XP)](scc:mcdm.heroes.v1/rule.resource/experience):** A hero's Victories convert to Experience when they finish a respite. Experience permanently increases a hero's capabilities by allowing them to increase in level.
 
-**[Falling](scc:mcdm.heroes.v1/rule.health/falling):** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land [prone](scc:mcdm.heroes.v1/condition/prone). A falling creature can reduce the effective height of their fall by a number of squares equal to their Agility score (minimum 0).
+**[Falling](scc:mcdm.heroes.v1/rule.health/falling):** When a creature falls 2 or more squares, they take 2 damage for each square they fall (to a maximum of 50 damage) and land [prone](scc:mcdm.heroes.v1/condition/prone). A falling creature can reduce the effective height of their fall by a number of squares equal to their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (minimum 0).
 
 **[Ferocity](scc:mcdm.heroes.v1/feature.fury.level-1/ferocity):** The [fury's](scc:mcdm.heroes.v1/class/fury) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -337,7 +337,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Raw materials, a foundational object, or some other item that must be obtained before a downtime project can be started.
 
-**[Jump](scc:mcdm.heroes.v1/movement/jump):** A creature can automatically long jump a number of squares up to their Might or Agility score (their choice). The height of their jump is automatically 1 square as part of that movement. A creature who wants to jump farther or higher must make a Might or Agility test.
+**[Jump](scc:mcdm.heroes.v1/movement/jump):** A creature can automatically long jump a number of squares up to their [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (their choice). The height of their jump is automatically 1 square as part of that movement. A creature who wants to jump farther or higher must make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) test.
 
 **[Kit](scc:mcdm.heroes.v1/chapter/kits):** A fighting style that comes with equipment to match. Kits are available to most heroes who wield weapons and wear armor.
 
@@ -608,7 +608,7 @@ At some point, a player will have their hero attempt a task that has a risk of f
 
 **Grace (playing Val, a [conduit](scc:mcdm.heroes.v1/class/conduit)):** *Before anyone steps on them, I want to examine the symbols and figure out what they mean.*
 
-**Director:** *Okay, well for that, I need you to make an easy Reason test.*
+**Director:** *Okay, well for that, I need you to make an easy [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.*
 
 **Grace:** *I got a 12! What do I know?*
 
@@ -666,7 +666,7 @@ Presence (P) represents force of personality. A creature's capacity to lie to a 
 
 #### Characteristic Scores
 
-Each [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). A baby bunny rabbit would have a Might score of −5, while an ancient dragon would have a Might score of 5. The average [human](scc:mcdm.heroes.v1/ancestry/human) has a score of 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see Power Rolls below).
+Each [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). A baby bunny rabbit would have a [Might](scc:mcdm.heroes.v1/rule.character/might) score of −5, while an ancient dragon would have a [Might](scc:mcdm.heroes.v1/rule.character/might) score of 5. The average [human](scc:mcdm.heroes.v1/ancestry/human) has a score of 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see Power Rolls below).
 
 ### Dice
 
@@ -699,7 +699,7 @@ A **test** is a power roll you make outside of using your abilities to affect or
 
 > **Sapient Creatures**
 >
-> All creatures in the game are sentient, capable of sensing and reacting to the world around them. But only some creatures are sapient, possessed of advanced intellect and consciousness. Being sapient has nothing to do with a creature's Reason score, but is determined solely by whether a creature is capable of human-like levels of thought and emotion. The Director decides whether creatures are sapient for the purpose of being affected by abilities and features that affect only sapient or nonsapient creatures.
+> All creatures in the game are sentient, capable of sensing and reacting to the world around them. But only some creatures are sapient, possessed of advanced intellect and consciousness. Being sapient has nothing to do with a creature's [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, but is determined solely by whether a creature is capable of human-like levels of thought and emotion. The Director decides whether creatures are sapient for the purpose of being affected by abilities and features that affect only sapient or nonsapient creatures.
 
 #### Making a Power Roll
 
@@ -1176,7 +1176,7 @@ See [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) i
 |------------------------------------|------------------------------:|
 | **📏 Melee 1**                     | **🎯 One creature or object** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 2 + M or A damage
 - **12-16:** 5 + M or A damage
@@ -1189,7 +1189,7 @@ See [Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) i
 |-----------------------------|------------------------------:|
 | **📏 Ranged 5**             | **🎯 One creature or object** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 2 + M or A damage
 - **12-16:** 4 + M or A damage
@@ -1701,7 +1701,7 @@ Your prehensile tail allows you to challenge foes on all sides. You can't be fla
 <!-- @type: feature -->
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
 
 <!-- @type: ancestry | @id: dragon-knight -->
 ## Dragon Knight
@@ -1823,7 +1823,7 @@ You have the following signature ability.
 |-----------------|------------------------------:|
 | **📏 1 burst**  | **🎯 Each enemy in the area** |
 
-**Power Roll + Might or Presence:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 2 damage
 - **12-16:** 5 damage; push 1
@@ -1843,7 +1843,7 @@ You have the following signature ability.
 |------------------------|------------------------------:|
 | **📏 3 cube within 1** | **🎯 Each enemy in the area** |
 
-**Power Roll + Might or Presence:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 2 damage
 - **12-16:** 4 damage
@@ -1866,7 +1866,7 @@ As a maneuver, you can recite the following oath. Until the start of your next t
 <!-- @type: feature -->
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your Might score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
 
 <!-- @type: ancestry | @id: dwarf -->
 ## Dwarf
@@ -2013,7 +2013,7 @@ Your stone skin affords you potent protection. You have a +6 bonus to [Stamina](
 <!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
-Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature's traits or abilities.
+Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on [Might](scc:mcdm.heroes.v1/rule.character/might) tests when called for to resist environmental effects or a creature's traits or abilities.
 
 <!-- @type: feature -->
 ##### Stone Singer (1 Point)
@@ -2158,7 +2158,7 @@ You have the following signature ability. Signature abilities can be used at wil
 |---------------------------|------------------------------:|
 | **📏 Ranged 10**          |           **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 2 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 - **12-16:** 3 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -2245,7 +2245,7 @@ Llyander put their hands on their hips and regarded the children. "Not bad for y
 <!-- @type: feature | @id: high-elf-glamor -->
 #### Signature Trait: High Elf Glamor
 
-A magic glamor makes others perceive you as interesting and engaging, granting you an edge on Presence tests using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
+A magic glamor makes others perceive you as interesting and engaging, granting you an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skills. This glamor makes you appear and sound slightly different to each creature you meet, since what is engaging to one might be different for another. However, you never appear to be anyone other than yourself.
 
 #### Purchased High Elf Traits
 
@@ -2421,7 +2421,7 @@ Your hearty constitution prevents you from losing strength. You can't be made [w
 <!-- @type: feature -->
 ##### Stand Tough (1 Point)
 
-Your body is made to withstand the blows of your enemies. Your Might score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on Might tests when called for to resist environmental effects or a creature's traits or abilities.
+Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.heroes.v1/rule.character/might) score is treated as 1 higher for the purpose of resisting potencies, and you gain an edge on [Might](scc:mcdm.heroes.v1/rule.character/might) tests when called for to resist environmental effects or a creature's traits or abilities.
 
 <!-- @type: ancestry | @id: human -->
 ## Human
@@ -3096,7 +3096,7 @@ You select a purchased trait that costs 2 ancestry points from your previous anc
 <!-- @type: feature -->
 ##### Undead Influence (1 Point)
 
-Your supernatural gifts allow you to influence other undead. You gain an edge on Reason, Intuition, and Presence tests made to interact with undead creatures.
+Your supernatural gifts allow you to influence other undead. You gain an edge on [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with undead creatures.
 
 <!-- @type: feature -->
 ##### Vengeance Mark (2 Points)
@@ -3116,7 +3116,7 @@ Additionally, you have the following signature ability. Signature abilities can 
 |---------------------------|---------------------------------------:|
 | **📏 Ranged 10**          | **🎯 One creature bearing your sigil** |
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 3 + R, I, or P damage; slide 1
 - **12-16:** 5 + R, I, or P damage; slide 2
@@ -3267,7 +3267,7 @@ Choose one signature ability from the following options. Signature abilities can
 |------------------------------|-------------------------------|
 | **📏 Ranged 10**             | **🎯 One creature or object** |
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 2 + R, I, or P damage;
 - **12-16:** 5 + R, I, or P damage; push 1
@@ -3282,7 +3282,7 @@ Choose one signature ability from the following options. Signature abilities can
 |------------------------------|-------------------------------|
 | **📏 Ranged 10**             | **🎯 One creature or object** |
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 2 + R, I, or P psychic damage; slide 1
 - **12-16:** 5 + R, I, or P psychic damage; slide 2
@@ -3297,7 +3297,7 @@ Choose one signature ability from the following options. Signature abilities can
 |-------------------|------------------------|
 | **📏 Melee 1**    | **🎯 Self or one ally** |
 
-**Effect:** The target gains a bonus to speed equal to your Reason, Intuition, or Presence score (your choice) until the start of your next turn.
+**Effect:** The target gains a bonus to speed equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice) until the start of your next turn.
 
 ##### Unstoppable Mind (2 Points)
 
@@ -4181,7 +4181,7 @@ You gain the following career benefits:
 | 2  | **Corruption Within:** You joined the force to help the helpless and bring justice to those wronged. You weren't prepared for the rampant corruption reaching the top of your organization. You refused to cover for your fellow officers and were told in no uncertain terms to leave town or face the consequences. Now you travel as a hero, acting as the protector you always wanted to be. |
 | 3  | **Frame Job:** Your partner was murdered. That much is irrefutable. But you didn't do it, despite what the evidence implies. When it became clear you'd take the fall, you fled, leaving everything behind. Not content to cower in the shadows, you decided to adventure under a new name while you work to clear your own. |
 | 4  | **Missing Mentor:** You learned everything you know about the job from someone you always looked up to in a corrupt organization. One night, they sent you a cryptic message saying they had discovered "something big," but before you could find out more, they disappeared. No longer sure who you could trust, you slipped away and sought a new life. Now you do what good you can and search to find the truth. | 
-| 5  | **One That Got Away:** A violent or depraved [criminal](scc:mcdm.heroes.v1/career/criminal) began targeting you- perhaps stealing something personal or hurting someone you love—after slipping through your grasp. You left your career to pursue the [criminal](scc:mcdm.heroes.v1/career/criminal), but the trail has gone cold... for now. Might as well help folk in the meantime. |
+| 5  | **One That Got Away:** A violent or depraved [criminal](scc:mcdm.heroes.v1/career/criminal) began targeting you- perhaps stealing something personal or hurting someone you love—after slipping through your grasp. You left your career to pursue the [criminal](scc:mcdm.heroes.v1/career/criminal), but the trail has gone cold... for now. [Might](scc:mcdm.heroes.v1/rule.character/might) as well help folk in the meantime. |
 | 6  | **Powerful Enemies:** You made it your responsibility to root out and bring down the region's foremost crime syndicate. They sent goons to burn down your home and teach you a lesson, leaving you bleeding in the street with nothing left except your life. You've since taken on the life of a hero to gain the power and influence you need to destroy the syndicate once and for all. |
 
 <!-- @type: chapter | @id: classes -->
@@ -4427,21 +4427,21 @@ If an ability requires a power roll, it has a "Power Roll" entry that tells you 
 
 Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
 
-- **Tier 1 (11 or lower):** The ability deals damage equal to 3 + your Might score, then pushes the target back 1 square.
-- **Tier 2 (12-16):** The ability deals damage equal to 6 + your Might score, then pushes the target back 2 squares.
-- **Tier 3 (17 or higher):** The ability deals damage equal to 9 + your Might score, then pushes the target back 4 squares.
+- **Tier 1 (11 or lower):** The ability deals damage equal to 3 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 1 square.
+- **Tier 2 (12-16):** The ability deals damage equal to 6 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 2 squares.
+- **Tier 3 (17 or higher):** The ability deals damage equal to 9 + your [Might](scc:mcdm.heroes.v1/rule.character/might) score, then pushes the target back 4 squares.
 
 ###### Characteristics and Damage
 
-Certain damage-dealing abilities note that damage as a number followed by a plus sign (+) and the letter M, A, R, I, or P. The indicated letter means you add your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score—either Might, Agility, Reason, Intuition, or Presence—to the damage dealt by the ability. Certain abilities let you use your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score for the power roll.
+Certain damage-dealing abilities note that damage as a number followed by a plus sign (+) and the letter M, A, R, I, or P. The indicated letter means you add your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score—either [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)—to the damage dealt by the ability. Certain abilities let you use your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score for the power roll.
 
-Using the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability as an example again, that ability uses a Might power roll and features the following damage expressions in the three tier outcomes of the power roll:
+Using the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability as an example again, that ability uses a [Might](scc:mcdm.heroes.v1/rule.character/might) power roll and features the following damage expressions in the three tier outcomes of the power roll:
 
 - **≤11:** 3 + M damage
 - **12-16:** 6 + M damage
 - **17+:** 9 + M damage
 
-For a [fury](scc:mcdm.heroes.v1/class/fury) with a Might of 2, the ability's damage breakdown would be:
+For a [fury](scc:mcdm.heroes.v1/class/fury) with a [Might](scc:mcdm.heroes.v1/rule.character/might) of 2, the ability's damage breakdown would be:
 
 - **≤11:** 5
 - **12-16:** 8
@@ -4449,7 +4449,7 @@ For a [fury](scc:mcdm.heroes.v1/class/fury) with a Might of 2, the ability's dam
 
 The damage for these abilities increases at each echelon of play, since your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) improve each time you reach a new echelon.
 
-Some abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), allow you to pick which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your Might or your Agility to determine the damage.
+Some abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), allow you to pick which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your [Might](scc:mcdm.heroes.v1/rule.character/might) or your [Agility](scc:mcdm.heroes.v1/rule.character/agility) to determine the damage.
 
 (Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has more information on damage.)
 
@@ -4459,7 +4459,7 @@ Strikes and area abilities can deal damage and have an additional effect on a ta
 
 To keep things moving quickly and to make abilities easy to read during play, damage and effects are separated with a semicolon in a power roll tier entry, with effects abbreviated whenever possible. An effect determined by a power roll always applies to the target unless otherwise specified. For example, the [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability mentioned above has the following power roll setup in the ability format:
 
-**Power Roll + Might:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 
 - **≤11:** 3 + M damage; push 1
 - **12-16:** 6 + M damage; push 2
@@ -4479,7 +4479,7 @@ Certain effects talk about rolled damage, which refers to the variable damage de
 <!-- @type: rule | @group: character | @id: potency -->
 #### Potencies
 
-Many abilities and other effects impose conditions and unique statuses on targets. But creatures sometimes get a chance to resist such effects. After all, a monster with a high Might should be harder to knock [prone](scc:mcdm.heroes.v1/condition/prone) most of the time than a creature lacking in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+Many abilities and other effects impose conditions and unique statuses on targets. But creatures sometimes get a chance to resist such effects. After all, a monster with a high [Might](scc:mcdm.heroes.v1/rule.character/might) should be harder to knock [prone](scc:mcdm.heroes.v1/condition/prone) most of the time than a creature lacking in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 Ability effects that have a **potency** are applied to a target only if the effect's potency value is higher than the target's indicated [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) a target uses to resist a potency is based on the ability used, while the value of the potency for your hero's abilities is based on one of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and determined by your class.
 
@@ -4489,41 +4489,41 @@ Your character has a **weak**, an **average**, and a **strong** potency value, a
 - Your average potency value is equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score − 1.
 - Your strong potency value is equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-In abilities and other effects, a potency always appears as the single-letter abbreviation for the target's [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): M for Might, A for Agility, R for Reason, I for Intuition, or P for Presence. That [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is followed by a "less than" sign (<) and your potency value—for example, M < WEAK or R < AVERAGE -with the value indicating the minimum score in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that the target needs to beat the effect.
+In abilities and other effects, a potency always appears as the single-letter abbreviation for the target's [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): M for [Might](scc:mcdm.heroes.v1/rule.character/might), A for [Agility](scc:mcdm.heroes.v1/rule.character/agility), R for [Reason](scc:mcdm.heroes.v1/rule.character/reason), I for [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or P for [Presence](scc:mcdm.heroes.v1/rule.character/presence). That [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is followed by a "less than" sign (<) and your potency value—for example, M < WEAK or R < AVERAGE -with the value indicating the minimum score in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that the target needs to beat the effect.
 
 As an example, consider the [conduit's](scc:mcdm.heroes.v1/class/conduit) Judgment's Hammer ability, which has the following power roll:
 
-**Power Roll + Intuition:**
+**Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 
 - **≤11:** 3 + I holy damage; A < WEAK, [prone](scc:mcdm.heroes.v1/condition/prone)
 - **12-16:** 6 + I holy damage; A < AVERAGE, [prone](scc:mcdm.heroes.v1/condition/prone)
 - **17+:** 9 + I holy damage; A < STRONG, [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 
-At 1st level, a [conduit](scc:mcdm.heroes.v1/class/conduit) uses their Intuition score to determine their potency values, and that score is 2. That gives the [conduit](scc:mcdm.heroes.v1/class/conduit) the following potencies:
+At 1st level, a [conduit](scc:mcdm.heroes.v1/class/conduit) uses their [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to determine their potency values, and that score is 2. That gives the [conduit](scc:mcdm.heroes.v1/class/conduit) the following potencies:
 
 - Weak: 0
 - Average: 1
 - Strong: 2
 
-When writing Judgment's Hammer on their character sheet, the [conduit's](scc:mcdm.heroes.v1/class/conduit) player updates the damage and converts the weak, average, and strong potencies into their numerical values, knowing that those values won't change until the character hits 2nd echelon and their Intuition score becomes 3. That produces the following:
+When writing Judgment's Hammer on their character sheet, the [conduit's](scc:mcdm.heroes.v1/class/conduit) player updates the damage and converts the weak, average, and strong potencies into their numerical values, knowing that those values won't change until the character hits 2nd echelon and their [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score becomes 3. That produces the following:
 
-**Power Roll + Intuition:**
+**Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 
 - **≤11:** 5 holy damage; A < 0, [prone](scc:mcdm.heroes.v1/condition/prone)
 - **12-16:** 8 holy damage; A < 1, [prone](scc:mcdm.heroes.v1/condition/prone)
 - **17+:** 11 holy damage; A < 2, [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 
-During a game session, the [conduit](scc:mcdm.heroes.v1/class/conduit) uses Judgment's Hammer to target a bandit with an Agility score of 0. The ability thus has the following outcomes at each tier:
+During a game session, the [conduit](scc:mcdm.heroes.v1/class/conduit) uses Judgment's Hammer to target a bandit with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 0. The ability thus has the following outcomes at each tier:
 
-- With a tier 1 outcome (11 or lower), the ability deals 5 holy damage to the bandit. But the bandit resists the additional effect because they have Agility 0 (and therefore don't have an Agility of less than 0).
-- With a tier 2 outcome (12-16), the ability deals 8 holy damage. But the bandit is also knocked [prone](scc:mcdm.heroes.v1/condition/prone), unable to resist the additional effect because they would need an Agility of 1 or higher to do so. If the bandit had Agility 1 or higher, they would have taken 8 holy damage but stayed standing.
-- With a tier 3 outcome (17 or higher), the bandit takes 11 holy damage and is knocked flat and left struggling to stand, unable to resist the strong potency of the additional effect with a mere Agility 0.
+- With a tier 1 outcome (11 or lower), the ability deals 5 holy damage to the bandit. But the bandit resists the additional effect because they have [Agility](scc:mcdm.heroes.v1/rule.character/agility) 0 (and therefore don't have an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of less than 0).
+- With a tier 2 outcome (12-16), the ability deals 8 holy damage. But the bandit is also knocked [prone](scc:mcdm.heroes.v1/condition/prone), unable to resist the additional effect because they would need an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 1 or higher to do so. If the bandit had [Agility](scc:mcdm.heroes.v1/rule.character/agility) 1 or higher, they would have taken 8 holy damage but stayed standing.
+- With a tier 3 outcome (17 or higher), the bandit takes 11 holy damage and is knocked flat and left struggling to stand, unable to resist the strong potency of the additional effect with a mere [Agility](scc:mcdm.heroes.v1/rule.character/agility) 0.
 
 ##### Potency Presentation
 
-Potencies are presented in an abbreviated style in abilities so they don't take up too much space, and so you can read them by saying: "If the target's [characteristic] is less than [potency value], they [suffer effect]." If our 1st-level [conduit](scc:mcdm.heroes.v1/class/conduit) obtained a tier 2 outcome when using Judgment's Hammer, the player would say, "I deal 8 holy damage, and if the bandit's Agility is less than 1, they fall [prone](scc:mcdm.heroes.v1/condition/prone)."
+Potencies are presented in an abbreviated style in abilities so they don't take up too much space, and so you can read them by saying: "If the target's [characteristic] is less than [potency value], they [suffer effect]." If our 1st-level [conduit](scc:mcdm.heroes.v1/class/conduit) obtained a tier 2 outcome when using Judgment's Hammer, the player would say, "I deal 8 holy damage, and if the bandit's [Agility](scc:mcdm.heroes.v1/rule.character/agility) is less than 1, they fall [prone](scc:mcdm.heroes.v1/condition/prone)."
 
-Reading the ability this way prevents a lot of back and forth. You don't need to ask, "What's the target's Agility score?", wait for a response, and then give the outcome. You can simply say, "If they don't have an Agility of 1 or higher, they [fall prone](scc:mcdm.heroes.v1/condition/prone)." Players can let the Director figure out whether the target [is prone](scc:mcdm.heroes.v1/condition/prone) and keep the game moving, with the Director doing the same in reverse when monsters and other foes use abilities with potencies against the heroes.
+Reading the ability this way prevents a lot of back and forth. You don't need to ask, "What's the target's [Agility](scc:mcdm.heroes.v1/rule.character/agility) score?", wait for a response, and then give the outcome. You can simply say, "If they don't have an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 1 or higher, they [fall prone](scc:mcdm.heroes.v1/condition/prone)." Players can let the Director figure out whether the target [is prone](scc:mcdm.heroes.v1/condition/prone) and keep the game moving, with the Director doing the same in reverse when monsters and other foes use abilities with potencies against the heroes.
 
 ##### Adjusting Potencies
 
@@ -4533,7 +4533,7 @@ Potencies are made for quick resolution at the table, but a number of triggered 
 
 If an ability or feature allows you to spend your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) on an effect that is entirely dependent on a potency and the target is unaffected because their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is high enough to resist the potency, then you don't spend the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the [tactician](scc:mcdm.heroes.v1/class/tactician) targets a creature whose high Reason leaves them unaffected, the [tactician](scc:mcdm.heroes.v1/class/tactician) doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
+For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the [tactician](scc:mcdm.heroes.v1/class/tactician) targets a creature whose high [Reason](scc:mcdm.heroes.v1/rule.character/reason) leaves them unaffected, the [tactician](scc:mcdm.heroes.v1/class/tactician) doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
 
 This rule also applies to Director-controlled creatures who spend Malice on abilities and features that affect a target using a potency and have no other automatic effects.
 
@@ -4641,7 +4641,7 @@ Some abilities and other effects apply specific negative effects called conditio
 <!-- @type: condition | @id: bleeding -->
 ##### Bleeding
 
-While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a triggered action, or make a test or ability roll using Might or Agility, they lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + their level after the main action, triggered action, or power roll is resolved. This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss can't be prevented in any way, and only happens once per action.
+While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), whenever they use a main action, use a triggered action, or make a test or ability roll using [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility), they lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + their level after the main action, triggered action, or power roll is resolved. This [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss can't be prevented in any way, and only happens once per action.
 
 You take damage from this condition when you use a main action off your turn. For example, a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability triggers the damage from the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) condition.
 
@@ -4664,7 +4664,7 @@ A creature who has another creature [grabbed](scc:mcdm.heroes.v1/condition/grabb
 
 A creature can release a creature they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at any time to end that condition (no action required). A [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature can attempt to escape being [grabbed](scc:mcdm.heroes.v1/condition/grabbed) using the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). If a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature [teleports](scc:mcdm.heroes.v1/movement/teleport), or if either the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or the creature grabbing them is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) so that both creatures are not adjacent to each other, that creature is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
-A creature can grab only creatures of their size or smaller. If a creature's Might score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their Might score.
+A creature can grab only creatures of their size or smaller. If a creature's [Might](scc:mcdm.heroes.v1/rule.character/might) score is 2 or higher, they can grab any creature larger than them with a size equal to or less than their [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 Unless otherwise indicated, a creature can grab only one creature at a time.
 
@@ -4678,7 +4678,7 @@ Unless the ability or effect that imposed the [prone](scc:mcdm.heroes.v1/conditi
 <!-- @type: condition | @id: restrained -->
 ##### Restrained
 
-A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a bane on ability rolls and on Might and Agility tests, and abilities used against them gain an edge.
+A creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) has speed 0, can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). A [restrained](scc:mcdm.heroes.v1/condition/restrained) creature takes a bane on ability rolls and on [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, and abilities used against them gain an edge.
 
 If a creature [teleports](scc:mcdm.heroes.v1/movement/teleport) while [restrained](scc:mcdm.heroes.v1/condition/restrained), that condition ends.
 
@@ -4724,17 +4724,17 @@ As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the 
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a [Might](scc:mcdm.heroes.v1/rule.character/might) of 2 and a [Presence](scc:mcdm.heroes.v1/rule.character/presence) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Presence − 2
+**Weak Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence) − 2
 
-**Average Potency:** Presence − 1
+**Average Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence) − 1
 
-**Strong Potency:** Presence
+**Strong Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 21
 
@@ -4817,7 +4817,7 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 > 
 > **Effect:** The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another [censor](scc:mcdm.heroes.v1/class/censor) judges the target.
 > 
-> Whenever a creature judged by you uses a main action and is within your line of effect, you can use a free triggered action to deal holy damage equal to twice your Presence score to them.
+> Whenever a creature judged by you uses a main action and is within your line of effect, you can use a free triggered action to deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to them.
 > 
 > When a creature judged by you is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can use a free triggered action to use this ability against a new target.
 > 
@@ -4835,9 +4835,9 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 
 The first time on a turn that you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability to judge a creature, you gain the following benefit based on your order:
 
-- **Exorcist:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to twice your Presence score. This movement must take you closer to the judged creature. You do not need line of effect to your destination.
-- **Oracle:** You can deal holy damage equal to twice your Presence score to the judged creature.
-- **Paragon:** You can vertical pull the judged creature up to a number of squares equal to twice your Presence score.
+- **Exorcist:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. This movement must take you closer to the judged creature. You do not need line of effect to your destination.
+- **Oracle:** You can deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the judged creature.
+- **Paragon:** You can vertical pull the judged creature up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: feature -->
 #### Kit
@@ -4959,7 +4959,7 @@ You have the following ability.
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 > 
-> **Effect:** You create a mundane object of size 1S or smaller. You can maintain a number of objects created this way equal to your Presence score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
+> **Effect:** You create a mundane object of size 1S or smaller. You can maintain a number of objects created this way equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
 
 <!-- @type: feature -->
 ##### Inner Light
@@ -4969,7 +4969,7 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Presence on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use [Presence](scc:mcdm.heroes.v1/rule.character/presence) on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
@@ -5009,7 +5009,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |--------------------------------|------------------------------:|
 > | **📏 2 cube within 1**         | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 2 holy damage; push 1
 > - **12-16:** 4 holy damage; push 2
@@ -5024,7 +5024,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          |           **🎯 One creature** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 5 + P psychic damage
 > - **12-16:** 7 + P psychic damage
@@ -5041,7 +5041,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 + M holy damage; P < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 5 + M holy damage; P < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -5056,13 +5056,13 @@ Choose one signature ability from the following options. Signature abilities can
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M holy damage
 > - **12-16:** 5 + M holy damage
 > - **17+:** 8 + M holy damage
 > 
-> **Effect:** Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your Presence score.
+> **Effect:** Each enemy adjacent to the target is pushed away from the target up to a number of squares equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 ##### Heroic Abilities
 
@@ -5081,7 +5081,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M holy damage
 > - **12-16:** 6 + M holy damage
@@ -5098,7 +5098,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage; push 1
 > - **12-16:** 6 + M damage; push 3
@@ -5115,7 +5115,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 5 + M holy damage
 > - **12-16:** 8 + M holy damage
@@ -5132,7 +5132,7 @@ Choose one heroic ability from the following options, each of which costs 3 wrat
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 5 + P holy damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 8 + P holy damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -5151,13 +5151,13 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   |           **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 6 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **12-16:** 9 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 13 + M holy damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > 
-> **Effect:** If the target makes a strike against a creature while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, you can spend 3 wrath to deal holy damage to them equal to your Presence score, then change the target of the strike to another target within the strike's distance.
+> **Effect:** If the target makes a strike against a creature while [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, you can spend 3 wrath to deal holy damage to them equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, then change the target of the strike to another target within the strike's distance.
 
 <!-- @type: ability | @cost: 5 Wrath | @id: behold-the-face-of-justice -->
 > ###### Behold the Face of Justice! (5 Wrath)
@@ -5168,13 +5168,13 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > |-------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**                |           **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M holy damage; if the target has P < WEAK, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
 > - **12-16:** 5 + M holy damage; if the target has P < AVERAGE, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
 > - **17+:** 8 + M holy damage; if the target has P < STRONG, each enemy within 2 squares of them is [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends)
 > 
-> **Effect:** Each enemy [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is pushed up to 2 squares away from the target and takes psychic damage equal to your Presence score.
+> **Effect:** Each enemy [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is pushed up to 2 squares away from the target and takes psychic damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Censored (5 Wrath)
@@ -5185,7 +5185,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > |----------------------------|------------------------------:|
 > | **📏 Melee 1**             |           **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 + M holy damage
 > - **12-16:** 3 + M holy damage
@@ -5202,7 +5202,7 @@ Choose one heroic ability from the following options, each of which costs 5 wrat
 > |-------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**                |           **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 5 + M holy damage; M < WEAK, the target has fire weakness 3 (save ends)
 > - **12-16:** 9 + M holy damage; M < AVERAGE, the target has fire weakness 5 (save ends)
@@ -5241,7 +5241,7 @@ Your order has trained you to understand fragments of the visions granted to you
 <!-- @type: feature -->
 ##### Judge of Character
 
-Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an Intuition test, you can make a Presence test instead.
+Your focus on your fragmentary visions grants divine insight into the world and its creatures beyond your usual senses. Whenever you would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, you can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test instead.
 
 <!-- @type: feature -->
 ##### Lead by Example
@@ -5281,13 +5281,13 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 8 + M holy damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 12 + M holy damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **17+:** 15 + M holy damage; P < STRONG, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > 
-> **Effect:** If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your Presence score.
+> **Effect:** If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you or another creature and this ability would frighten them again, they instead take psychic damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: ability | @cost: 5 Wrath -->
 > ###### Revelator (5 Wrath)
@@ -5298,7 +5298,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 burst**  | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Each target takes holy damage equal to twice your Presence score. Additionally, each hidden target is automatically revealed and can't become hidden again until the start of your next turn. You can then use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against one target as a free triggered action.
+> **Effect:** Each target takes holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, each hidden target is automatically revealed and can't become hidden again until the start of your next turn. You can then use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against one target as a free triggered action.
 
 ##### 2nd-Level Oracle Ability
 
@@ -5352,7 +5352,7 @@ Choose one of the following abilities.
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1**                   |           **🎯 One creature** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 5 + P damage; P < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 9 + P damage; P < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -5368,7 +5368,7 @@ As a 3rd-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Look On My Work and Despair
 
-Your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) has grown in [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power), instilling fear in those you condemn. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can spend 1 wrath, and if the target has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and you use [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) as a free triggered action, if the new target has P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you, they instead take holy damage equal to twice your Presence score.
+Your [judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) has grown in [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power), instilling fear in those you condemn. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can spend 1 wrath, and if the target has P < AVERAGE, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). Additionally, whenever a creature judged by you is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and you use [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) as a free triggered action, if the new target has P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends). If the target is already [frightened](scc:mcdm.heroes.v1/condition/frightened) of you, they instead take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: feature -->
 #### 7-Wrath Ability
@@ -5384,7 +5384,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your Presence score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Perfect Order (7 Wrath)
@@ -5395,7 +5395,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target uses an ability that costs Malice (see *Draw Steel: Monsters*), they take holy damage equal to three times your Presence score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target uses an ability that costs Malice (see *Draw Steel: Monsters*), they take holy damage equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Purifying Pacifism (7 Wrath)
@@ -5406,7 +5406,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a strike, they take holy damage equal to twice your Presence score. A target judged by you takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a strike, they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Stillness (7 Wrath)
@@ -5417,7 +5417,7 @@ Choose one heroic ability from the following options, each of which costs 7 wrat
 > |-----------------|------------------------------:|
 > | **📏 2 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) out of the area, they take holy damage equal to twice your Presence score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) out of the area, they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -5427,7 +5427,7 @@ As a 4th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Presence scores each increase to 3.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Perk
@@ -5469,7 +5469,7 @@ You gain a domain feature from your domain, as shown on the 4th-Level [Censor](s
 <!-- @type: feature -->
 ##### Blessing of Life
 
-Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they regain additional [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your Presence score.
+Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your [My Life for Yours](scc:mcdm.heroes.v1/feature.ability.censor.level-1/my-life-for-yours) ability regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they regain additional [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: feature -->
 ##### Blessing of Secrets
@@ -5490,9 +5490,9 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Impervious Touch
 
-As a maneuver, you can touch an object with a size equal to your Presence score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your Presence score, and you can end the spell on any object at any time (no action required).
+As a maneuver, you can touch an object with a size equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, and you can end the spell on any object at any time (no action required).
 
-Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director's approval) that is of a size larger than your Presence score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your Presence score simultaneously.
+Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director's approval) that is of a size larger than your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score simultaneously.
 
 <!-- @type: feature -->
 ##### Improved Hands of the Maker
@@ -5527,7 +5527,7 @@ You can commune with a network of spirits. As a respite activity, you speak the 
 <!-- @type: feature -->
 ##### Saint's Epiphany
 
-At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your Presence score to the roll.
+At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the roll.
 
 <!-- @type: feature -->
 ##### Windwalk
@@ -5537,7 +5537,7 @@ While you have 5 or more Victories, you can [fly](scc:mcdm.heroes.v1/movement/fl
 <!-- @type: feature -->
 ##### Wode Road
 
-As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your Presence score. Whenever you touch any tree in your network, you can use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your distance from it, including across different worlds (no action required).
+As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Whenever you touch any tree in your network, you can use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your distance from it, including across different worlds (no action required).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -5599,7 +5599,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > |----------------|--------------------------------------:|
 > | **📏 1 burst** | **🎯 Self and each ally in the area** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** Each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 > - **12-16:** Each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
@@ -5616,7 +5616,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > |----------------------------|-------------------------:|
 > | **📏 Melee 1**             |      **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 10 + M damage
 > - **12-16:** 14 + M damage
@@ -5633,7 +5633,7 @@ Choose one heroic ability from the following options, each of which costs 9 wrat
 > |---------------------------|-------------------------:|
 > | **📏 Melee 1**            |      **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 10 + M damage; you and each ally adjacent to you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina)
 > - **12-16:** 14 + M damage; you and each ally adjacent to you gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina)
@@ -5677,7 +5677,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 burst**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 4 psychic damage; slide 3
 > - **12-16:** 6 psychic damage; slide 5
@@ -5694,7 +5694,7 @@ Choose one of the following abilities.
 > 
 > **Trigger:** The target gains a condition or effect that is ended by a saving throw or that ends at the end of their turn.
 > 
-> **Effect:** The effect ends on the target and is applied to the creature who imposed the effect on them. That creature also takes damage equal to three times your Presence score.
+> **Effect:** The effect ends on the target and is applied to the creature who imposed the effect on them. That creature also takes damage equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 ##### 6th-Level Oracle Abilities
 
@@ -5709,7 +5709,7 @@ Choose one of the following abilities.
 > |---------------------------|---------------------:|
 > | **📏 Ranged 10**          | **🎯 Three enemies** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** Slide 3; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** Slide 5; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -5724,7 +5724,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 aura**   | **🎯 Each enemy in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever any target takes a triggered action or a free triggered action, that action is negated and the target takes holy damage equal to your Presence score.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever any target takes a triggered action or a free triggered action, that action is negated and the target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 ##### 6th-Level Paragon Abilities
 
@@ -5739,7 +5739,7 @@ Choose one of the following abilities.
 > |---------------------------|------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 8 + M damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability against the target
 > - **12-16:** 12 + M damage; as a free triggered action, one ally within 10 squares of the target can use a strike signature ability that gains an edge against the target
@@ -5849,7 +5849,7 @@ Each benefit lasts until the creature who gains it finishes another respite.
 <!-- @type: feature -->
 ##### Ride the Lightning
 
-Lightning and thunder infuse your body. Whenever you use an ability to deal rolled damage to another creature, the ability deals extra lightning damage equal to your Presence score. Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Presence score. While you are under the effect of your [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) feature, lightning enhances your locomotion to grant you a bonus to speed equal to your Might score. If [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) already grants you a bonus to speed, this bonus adds to that.
+Lightning and thunder infuse your body. Whenever you use an ability to deal rolled damage to another creature, the ability deals extra lightning damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. While you are under the effect of your [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) feature, lightning enhances your locomotion to grant you a bonus to speed equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If [Windwalk](scc:mcdm.heroes.v1/feature.censor.level-4/windwalk) already grants you a bonus to speed, this bonus adds to that.
 
 <!-- @type: feature -->
 ##### Trinity of Trickery
@@ -5925,7 +5925,7 @@ The most esoteric secrets of your order teach you that to defeat your enemy, you
 <!-- @type: feature -->
 ##### Their Past Revealed
 
-Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium Presence test to see visions from their past. On a success, you see a clear view of any subject related to the creature's past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+Your constant fragmentary visions become clearer, and can be honed to understand the past of creatures you interact with. While speaking with any creature, you can make a medium [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to see visions from their past. On a success, you see a clear view of any subject related to the creature's past that you wish to understand. On a success with a consequence, you see two visions, one false and one true. On a failure, you lose 2d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: feature -->
 ##### Vow
@@ -5946,13 +5946,13 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 9 + M damage; I < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 13 + M damage; I < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 18 + M damage; I < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > 
-> **Effect:** At the end of each of your turns, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them. Additionally, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way can't be targeted by their allies' abilities.
+> **Effect:** At the end of each of your turns, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them. Additionally, a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way can't be targeted by their allies' abilities.
 
 <!-- @type: ability | @cost: 11 Wrath -->
 > ###### Hand of the Gods (11 Wrath)
@@ -5963,7 +5963,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           |           **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 10 + M damage
 > - **12-16:** 15 + M damage
@@ -5980,13 +5980,13 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 9 + M damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 13 + M damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 18 + M damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > 
-> **Effect:** At the end of each of your turns, a target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way deals holy damage equal to twice your Presence score to each enemy within 2 squares of them.
+> **Effect:** At the end of each of your turns, a target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way deals holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to each enemy within 2 squares of them.
 
 <!-- @type: ability | @cost: 11 Wrath | @id: your-allies-turn-on-you -->
 > ###### Your Allies Turn on You! (11 Wrath)
@@ -5997,7 +5997,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           |           **🎯 One creature** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 5 + P damage; I < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 9 + P damage; I < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -6037,7 +6037,7 @@ Choose one of the following abilities.
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 5 + M damage; P < WEAK, the target is banished (save ends)
 > - **12-16:** 8 + M damage; P < AVERAGE, the target is banished (save ends)
@@ -6054,7 +6054,7 @@ Choose one of the following abilities.
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 7 + P psychic damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 10 + P psychic damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -6105,7 +6105,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 13 + M holy damage
 > - **12-16:** 19 + M holy damage
@@ -6132,7 +6132,7 @@ As a 10th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the followin
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Presence scores each increase to 5.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Perk
@@ -6147,7 +6147,7 @@ You gain one skill of your choice.
 <!-- @type: feature -->
 #### Templar
 
-You are the ultimate representation of your god's justice in the timescape. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.conduit.level-1/domain-piety-and-effects) in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) (see below). If the effect calls for the use of your Intuition score, you use your Presence score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
+You are the ultimate representation of your god's justice in the timescape. Whenever you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability, you can use a free triggered action to use a [conduit](scc:mcdm.heroes.v1/class/conduit) domain effect (see [Domain Piety and Effects](scc:mcdm.heroes.v1/feature.conduit.level-1/domain-piety-and-effects) in the [Conduit](scc:mcdm.heroes.v1/class/conduit) section) associated with your chosen domain, or a domain you access with [virtue](scc:mcdm.heroes.v1/feature.censor.level-10/virtue) (see below). If the effect calls for the use of your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score instead. If the effect uses your [conduit](scc:mcdm.heroes.v1/class/conduit) level, use your [censor](scc:mcdm.heroes.v1/class/censor) level instead.
 
 Additionally, whenever you take a respite, you can open a portal to rest in the presence of your deity and bring along any allies. When you do, you can ask your deity three questions, which the Director must answer honestly if your deity knows the answers (though they might answer cryptically or incompletely). When you finish your respite, you and your allies can appear at any location in the timescape where someone worships your deity.
 
@@ -6180,18 +6180,18 @@ The power of the gods flows through you! As a vessel for [divine power](scc:mcdm
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Intuition of 2, and can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) of 2, and can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
 - 2, 1, 0, 0
 - 1, 1, 1, 0
 
-**Weak Potency:** Intuition - 2
+**Weak Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) - 2
 
-**Average Potency:** Intuition - 1
+**Average Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) - 1
 
-**Strong Potency:** Intuition
+**Strong Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 18
 
@@ -6261,12 +6261,12 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 ###### Creation Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares uses an area ability.
-- **Prayer Effect:** You summon the forces of creation and create a wall of stone within 10 squares whose size is 5 + your Intuition score. The wall lasts until the end of the encounter.
+- **Prayer Effect:** You summon the forces of creation and create a wall of stone within 10 squares whose size is 5 + your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. The wall lasts until the end of the encounter.
 
 ###### Death Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares who isn't a minion is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or the first time in an encounter that a solo creature within 10 squares becomes [winded](scc:mcdm.heroes.v1/rule.health/winded).
-- **Prayer Effect:** You inflict a deadly curse on up to two enemies within 10 squares of you. Each target takes corruption damage equal to twice your Intuition score.
+- **Prayer Effect:** You inflict a deadly curse on up to two enemies within 10 squares of you. Each target takes corruption damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Fate Domain Piety and Effect
 
@@ -6281,32 +6281,32 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 ###### Life Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that a creature within 10 squares regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
-- **Prayer Effect:** Choose yourself or one ally within 10 squares. That character can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Alternatively, you or one ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your Intuition score.
+- **Prayer Effect:** Choose yourself or one ally within 10 squares. That character can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), can end one effect on them that is ended by a saving throw or that ends at the end of their turn, or can stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone). Alternatively, you or one ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Love Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that you or any ally within 10 squares uses the [Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) maneuver or an ability that targets an ally.
-- **Prayer Effect:** Each ally within 10 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your Intuition score.
+- **Prayer Effect:** Each ally within 10 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to two times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Nature Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that you or a creature within 10 squares takes acid, cold, fire, lightning, poison, or sonic damage.
-- **Prayer Effect:** Vines whip up from the floor or ground within 10 squares, wrapping around a number of creatures equal to your Intuition score. You can slide each creature up to a number of squares equal to your Intuition score. The vines then fade away.
+- **Prayer Effect:** Vines whip up from the floor or ground within 10 squares, wrapping around a number of creatures equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. You can slide each creature up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. The vines then fade away.
 
 ###### Protection Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that you or any ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina), or uses a [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to reduce incoming damage or to impose a bane or double bane on an enemy's power roll.
-- **Prayer Effect:** One ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to four times your Intuition score.
+- **Prayer Effect:** One ally within 10 squares gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to four times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Storm Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that an enemy within 10 squares is [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
-- **Prayer Effect:** Each enemy in a 3 cube within 10 squares takes lightning damage equal to twice your Intuition score.
+- **Prayer Effect:** Each enemy in a 3 cube within 10 squares takes lightning damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Sun Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that an enemy within 10 squares takes fire or holy damage.
-- **Prayer Effect:** One enemy within 10 squares takes fire damage equal to three times your Intuition score.
+- **Prayer Effect:** One enemy within 10 squares takes fire damage equal to three times your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Trickery Domain Piety and Effect
 
@@ -6411,7 +6411,7 @@ You have the following ability.
 > |--------------------------|--------------:|
 > | **📏 Self**              |   **🎯 Self** |
 > 
-> **Effect:** You create a mundane object of size 1S or smaller. You can maintain a number of objects created this way equal to your Intuition score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
+> **Effect:** You create a mundane object of size 1S or smaller. You can maintain a number of objects created this way equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. You can destroy an object created this way with a thought, no matter how far you are from it (no action required).
 
 <!-- @type: feature -->
 ##### Inner Light
@@ -6421,7 +6421,7 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Intuition on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
@@ -6480,7 +6480,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 + I damage
 > - **12-16:** 4 + I damage
@@ -6568,7 +6568,7 @@ Your god grants you a holy countenance that protects you at all times. You gain 
 <!-- @type: feature -->
 ##### Quickness Ward
 
-The gods imbue a divine swiftness within you. Whenever an adjacent creature deals damage to you, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Intuition score after the damage is dealt.
+The gods imbue a divine swiftness within you. Whenever an adjacent creature deals damage to you, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score after the damage is dealt.
 
 <!-- @type: feature -->
 ##### Sanctuary Ward
@@ -6578,7 +6578,7 @@ In response to a foe's aggression, your god protects you. Whenever another creat
 <!-- @type: feature -->
 ##### Spirit Ward
 
-Invisible spirits surround you if you are harmed. Whenever an adjacent creature deals damage to you, they take corruption damage equal to your Intuition score.
+Invisible spirits surround you if you are harmed. Whenever an adjacent creature deals damage to you, they take corruption damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 #### Conduit Abilities
@@ -6598,7 +6598,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I holy damage
 > - **12-16:** 5 + I holy damage
@@ -6615,7 +6615,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |--------------------------|--------------------:|
 > | **📏 Melee 1**           | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 + I corruption damage
 > - **12-16:** 5 + I corruption damage
@@ -6632,7 +6632,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I holy damage; vertical pull 2
 > - **12-16:** 5 + I holy damage; vertical pull 3
@@ -6647,7 +6647,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------|------------------------------:|
 > | **📏 2 burst**   | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 holy damage
 > - **12-16:** 3 holy damage
@@ -6664,7 +6664,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 + I corruption damage
 > - **12-16:** 4 + I corruption damage
@@ -6681,7 +6681,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I holy damage; slide 1
 > - **12-16:** 5 + I holy damage; slide 2
@@ -6696,13 +6696,13 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I holy damage
 > - **12-16:** 6 + I holy damage
 > - **17+:** 9 + I holy damage
 > 
-> **Effect:** You or one ally within distance gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your Intuition score.
+> **Effect:** You or one ally within distance gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Wither
@@ -6713,7 +6713,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I corruption damage; P < WEAK, the target takes a bane on their next power roll
 > - **12-16:** 5 + I corruption damage; P < AVERAGE, the target takes a bane on their next power roll
@@ -6736,7 +6736,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > |-------------------------|------------------------------:|
 > | **📏 3 cube within 10** | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 sonic damage; push 1
 > - **12-16:** 3 sonic damage; push 2
@@ -6753,7 +6753,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > |--------------------|----------------:|
 > | **📏 Ranged 10**   |  **🎯 Special** |
 > 
-> **Effect:** You summon a spirit of size 2 who can't be harmed, and who appears in an unoccupied space within distance. The spirit lasts until the end of your next turn. You and your allies can move through the spirit's space, but enemies can't. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your Intuition score.
+> **Effect:** You summon a spirit of size 2 who can't be harmed, and who appears in an unoccupied space within distance. The spirit lasts until the end of your next turn. You and your allies can move through the spirit's space, but enemies can't. Any enemy who moves within 2 squares of the spirit for the first time in a combat round or starts their turn there takes holy damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 3 Piety -->
 > ###### Judgment's Hammer (3 Piety)
@@ -6764,7 +6764,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I holy damage; A < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** 6 + I holy damage; A < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -6779,7 +6779,7 @@ Choose one heroic ability from the following options, each of which costs 3 piet
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I lightning damage
 > - **12-16:** 6 + I lightning damage
@@ -6800,7 +6800,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I corruption damage; M < WEAK, damage weakness 5 (save ends)
 > - **12-16:** 6 + I corruption damage; M < AVERAGE, damage weakness 5 (save ends)
@@ -6815,7 +6815,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > |----------------------------|-------------------------------------:|
 > | **📏 Ranged 10**           |                  **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 6 + I holy damage; I < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 9 + I holy damage; I < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -6832,7 +6832,7 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > 
 > **Effect:** You can target yourself instead of one ally with this ability.
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** The target gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 > - **12-16:** The target gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
@@ -6936,7 +6936,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 4 + I holy damage; P < WEAK, before taking damage, the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a target you choose
 > - **12-16:** 7 + I holy damage; P < AVERAGE, before taking damage, the target uses an ability of your choice and you choose any targets for that ability
@@ -6951,13 +6951,13 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|------------------------------:|
 > | **📏 3 burst**   | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 4 fire damage
 > - **12-16:** 6 fire damage
 > - **17+:** 10 fire damage
 > 
-> **Effect:** Each ally in the area deals fire damage equal to your Intuition score with their next strike made before the end of their next turn.
+> **Effect:** Each ally in the area deals fire damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score with their next strike made before the end of their next turn.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Nature Judges Thee (5 Piety)
@@ -6968,7 +6968,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------------|------------------------------:|
 > | **📏 3 cube within 10**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 3 damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -6994,7 +6994,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|-----------------:|
 > | **📏 Ranged 10**   | **🎯 Each ally** |
 > 
-> **Effect:** Until the start of your next turn, each time a target kills an enemy, they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 + your Intuition score.
+> **Effect:** Until the start of your next turn, each time a target kills an enemy, they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 + your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Sacred Bond (5 Piety)
@@ -7016,7 +7016,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------------|------------------------------:|
 > | **📏 3 cube within 10**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 lightning damage; vertical slide 1
 > - **12-16:** 5 lightning damage; vertical slide 2
@@ -7070,7 +7070,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > |--------------------------|------------------------------:|
 > | **📏 5 cube within 10**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 6 psychic damage; I < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 9 psychic damage; I < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -7098,7 +7098,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > |---------------------------|-----------------:|
 > | **📏 Ranged 10**          | **🎯 One enemy** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 7 + I corruption damage
 > - **12-16:** 10 + I corruption damage
@@ -7115,7 +7115,7 @@ Choose one heroic ability from the following options, each of which costs 7 piet
 > |------------------|------------------------------:|
 > | **📏 5 burst**   | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 holy damage
 > - **12-16:** 5 holy damage
@@ -7136,7 +7136,7 @@ Whenever you gain piety from a domain effect, you gain 1 additional piety.
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Intuition score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
+Your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Perk
@@ -7172,7 +7172,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 
 ###### Blessing of Life
 
-Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they regain additional [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your Intuition score.
+Your divine presence causes those you deem worthy to recover quickly from a fight. Whenever an ally within distance of your [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) ability regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they regain additional [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Blessing of Secrets
 
@@ -7191,9 +7191,9 @@ You have the following ability.
 
 ###### Impervious Touch
 
-As a maneuver, you can touch an object with a size equal to your Intuition score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your Intuition score, and you can end the spell on any object at any time (no action required).
+As a maneuver, you can touch an object with a size equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score or smaller and place a protective spell on it. The object has immunity all to untyped damage. You can maintain this spell on a number of objects equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, and you can end the spell on any object at any time (no action required).
 
-Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director's approval) that is of a size larger than your Intuition score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your Intuition score simultaneously.
+Additionally, you can place this spell on a building or vehicle (or a similar structure with the Director's approval) that is of a size larger than your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. You can place the spell on only one such target at a time, and you can maintain the spell on a larger target and a number of objects equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score simultaneously.
 
 ###### Improved Hands of the Maker
 
@@ -7221,7 +7221,7 @@ You can commune with a network of spirits. As a respite activity, you speak the 
 
 ###### Saint's Epiphany
 
-At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your Intuition score to the roll.
+At the start of a respite, you can inspire yourself or another creature taking the same respite with divine knowledge. If the target makes a project roll during this respite, they can add 1d10 plus your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to the roll.
 
 ###### Windwalk
 
@@ -7229,7 +7229,7 @@ While you have 5 or more Victories, you can [fly](scc:mcdm.heroes.v1/movement/fl
 
 ###### Wode Road
 
-As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your Intuition score. Whenever you touch any tree in your network, you can use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your distance from it, including across different worlds (no action required).
+As a main action, you touch a living tree and make it part of a divine transportation network. You can maintain a number of trees in your network equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Whenever you touch any tree in your network, you can use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you to a tree in your network on the same world. If a tree in your network dies, it is no longer part of the network. You can remove a tree from your network no matter your distance from it, including across different worlds (no action required).
 
 <!-- @type: feature-group | @level: 5 -->
 ### 5th-Level Features
@@ -7255,7 +7255,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 8 + I holy damage
 > - **12-16:** 13 + I holy damage
@@ -7272,7 +7272,7 @@ Choose one heroic ability from the following options, each of which costs 9 piet
 > |--------------------------|------------------------------:|
 > | **📏 4 cube within 10**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 4 corruption damage; I < WEAK, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (save ends)
 > - **12-16:** 7 corruption damage; I < AVERAGE, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (save ends)
@@ -7310,7 +7310,7 @@ As a 6th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 
 You are infused with the power your deity reserves for their most worthy instruments. You have the following benefits:
 
-- You gain an edge on Presence tests made to interact with other creatures.
+- You gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with other creatures.
 - Whenever you deal damage to an enemy, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 - You have corruption immunity 10 or holy immunity 10 (your choice).
 - Your clothing and equipment changes in a way that reflects your status as your deity's chosen champion, such as ordinary robes turning into gold vestments or a simple dagger becoming a wicked blade with intricate etching.
@@ -7351,7 +7351,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|---------------------------------:|
 > | **📏 4 aura**    | **🎯 Each creature in the area** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your Intuition score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability for your allies.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability for your allies.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Blade of the Heavens (9 Piety)
@@ -7362,7 +7362,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 8 + I damage; A < WEAK, [prone and](scc:mcdm.heroes.v1/condition/prone) [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 12 + I damage; A < AVERAGE, [prone and](scc:mcdm.heroes.v1/condition/prone) [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -7401,13 +7401,13 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > **Effect:** You conjure a size 2 rolling machine that appears in an unoccupied space within distance. The machine has 50 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and immunity all to poison and psychic damage. It disappears at the end of the encounter, if its [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying). When the machine first appears, make the following power roll once, targeting each enemy adjacent to it.
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 damage
 > - **12-16:** 5 damage
 > - **17+:** 8 damage
 > 
-> Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares up to your Intuition score then repeat the power roll.
+> Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares up to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score then repeat the power roll.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Invocation of Mystery (9 Piety)
@@ -7429,7 +7429,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------|------------------------------:|
 > | **📏 4 burst**   | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 sonic damage; push 3
 > - **12-16:** 6 sonic damage; push 5
@@ -7457,7 +7457,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |------------------------------------|------------------------------:|
 > | **📏 Three 10 x 1 lines within 1** | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 6 lightning damage; push 1
 > - **12-16:** 9 lightning damage; push 2
@@ -7485,7 +7485,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |-----------------------------|------------------------------:|
 > | **📏 10 x 2 line within 5** | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 5 damage; M < WEAK, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (save ends)
 > - **12-16:** 8 damage; M < AVERAGE, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (save ends)
@@ -7500,7 +7500,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 9 + I corruption damage; R < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 14 + I corruption damage; R < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -7607,7 +7607,7 @@ Each benefit lasts until the creature who gains it finishes another respite.
 <!-- @type: feature -->
 ##### Thunderstruck
 
-Lightning and thunder infuse your body. Whenever you use an ability to deal lightning or sonic damage to another creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge). Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score.
+Lightning and thunder infuse your body. Whenever you use an ability to deal lightning or sonic damage to another creature, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge). Additionally, if you use an ability that force moves a creature, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 ##### Trinity of Trickery
@@ -7704,7 +7704,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 9 + I holy damage; slide 3
 > - **12-16:** 13 + I holy damage; slide 4
@@ -7725,7 +7725,7 @@ Each time you finish a respite, you can choose a willing hero ally who finished 
 <!-- @type: feature -->
 #### Ordained
 
-Your god elevates the power flowing through you. Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.
+Your god elevates the power flowing through you. Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to influence other creatures.
 
 <!-- @type: feature -->
 #### 9th-Level Domain Ability
@@ -7795,7 +7795,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 cube within 1 square of them. Make the following power roll targeting each enemy in the area.
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 5 fire damage
 > - **12-16:** 9 fire damage
@@ -7803,7 +7803,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > 
 > Additionally, you can use a maneuver to move the dragon up to their speed, or to make a melee weapon strike with their claw against an adjacent creature or object. The dragon can also make this strike as a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 3 + I damage
 > - **12-16:** 5 + I damage
@@ -7818,7 +7818,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |-------------------------|------------------------------:|
 > | **📏 5 cube within 5**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 2 lightning damage, 2 sonic damage
 > - **12-16:** 3 lightning damage, 3 sonic damage
@@ -7868,7 +7868,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |-------------------------|------------------------------:|
 > | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 9 fire damage
 > - **12-16:** 14 fire damage
@@ -7883,7 +7883,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |----------------------------|--------------------:|
 > | **📏 Ranged 10**           | **🎯 One creature** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 10 + I damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 15 + I damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -7913,7 +7913,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
 > - **≤11:** 10 + I corruption damage; A < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 15 + I corruption damage; A < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -7936,7 +7936,7 @@ Additionally, whenever you take a respite, you can open a portal to rest in the 
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Intuition score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
+Your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Divine Power
@@ -7975,18 +7975,18 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Reason of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
 - 2, 1, 0, 0
 - 1, 1, 1, 0
 
-**Weak Potency:** Reason − 2
+**Weak Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 2
 
-**Average Potency:** Reason − 1
+**Average Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 1
 
-**Strong Potency:** Reason
+**Strong Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 18
 
@@ -8044,7 +8044,7 @@ You become an expert at wielding destructive flames. Your abilities that have th
 <!-- @type: feature -->
 ##### Green: Acolyte of the Green
 
-You harness the residual magic from your green spells to bolster yourself and your allies. Whenever you deal damage to one or more creatures using an ability that has the Green and Magic keywords and that costs essence to use (see below), you or one creature within 10 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your Reason score.
+You harness the residual magic from your green spells to bolster yourself and your allies. Whenever you deal damage to one or more creatures using an ability that has the Green and Magic keywords and that costs essence to use (see below), you or one creature within 10 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Void: Acolyte of the Mystery
@@ -8086,7 +8086,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > |---------------------------|------------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R damage
 > - **12-16:** 4 + R damage
@@ -8103,7 +8103,7 @@ You can't maintain any abilities that would make you earn a negative amount of e
 
 If you maintain the same ability on several targets and the effect includes a power roll, you make that roll once and apply the same effect to all targets. A creature can't be affected by multiple instances of a persistent ability.
 
-If you take damage equal to or greater than 5 times your Reason score in one turn, you stop maintaining any persistent abilities. For instance, if you have a Reason score of 2 and are maintaining [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation), taking 10 or more damage in one turn causes you to stop maintaining the ability.
+If you take damage equal to or greater than 5 times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score in one turn, you stop maintaining any persistent abilities. For instance, if you have a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 2 and are maintaining [Instantaneous Excavation](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/instantaneous-excavation), taking 10 or more damage in one turn causes you to stop maintaining the ability.
 
 <!-- @type: feature -->
 #### Practical Magic
@@ -8121,9 +8121,9 @@ You have the following ability.
 > 
 > **Effect:** Choose one of the following effects:
 > 
-> - You use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), but its distance becomes the range of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability, and you use Reason instead of Might for the power roll.
-> - You choose a creature within the distance of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. That creature takes damage of the chosen type equal to your Reason score.
-> - You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to your Reason score. If you choose this option, you can spend essence to [teleport](scc:mcdm.heroes.v1/movement/teleport) 1 additional square for each essence spent.
+> - You use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), but its distance becomes the range of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability, and you use [Reason](scc:mcdm.heroes.v1/rule.character/reason) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for the power roll.
+> - You choose a creature within the distance of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. That creature takes damage of the chosen type equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> - You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If you choose this option, you can spend essence to [teleport](scc:mcdm.heroes.v1/movement/teleport) 1 additional square for each essence spent.
 
 <!-- @type: feature -->
 #### 1st-Level Specialization Feature
@@ -8160,7 +8160,7 @@ You also gain the following ability.
 <!-- @type: feature -->
 ##### It Is the Soul Which Hears
 
-You can speak with and understand animals, beasts, and plant creatures, even if they don't share a language with you. Your ability to communicate with these creatures doesn't make them inherently more intelligent, but you can use Reason instead of Presence while making tests to influence them.
+You can speak with and understand animals, beasts, and plant creatures, even if they don't share a language with you. Your ability to communicate with these creatures doesn't make them inherently more intelligent, but you can use [Reason](scc:mcdm.heroes.v1/rule.character/reason) instead of [Presence](scc:mcdm.heroes.v1/rule.character/presence) while making tests to influence them.
 
 Additionally, you can touch a living plant that is not a plant creature to communicate with it telepathically. You can use words to communicate with the plant, but it communicates with you only by transmitting feelings and sensations that can't be overly specific.
 
@@ -8238,9 +8238,9 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 > 
 > **Trigger:** The target [force move](scc:mcdm.heroes.v1/movement/forced-movement)s a creature or object. 
 > 
-> **Effect:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Reason score.
+> **Effect:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > 
-> **Spend 1 Essence:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to twice your Reason score instead.
+> **Spend 1 Essence:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score instead.
 
 <!-- @type: ability | @subtype: triggered -->
 > ###### Skin Like Castle Walls
@@ -8268,9 +8268,9 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 > 
 > **Trigger:** The target starts their turn, moves, or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement). 
 > 
-> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to a number of squares equal to your Reason score. If the target moves to trigger this ability, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) them at any point during the move.
+> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If the target moves to trigger this ability, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) them at any point during the move.
 > 
-> **Spend 1 Essence:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to a number of squares equal to twice your Reason score instead.
+> **Spend 1 Essence:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to a number of squares equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score instead.
 
 <!-- @type: feature -->
 #### Enchantment
@@ -8317,17 +8317,17 @@ A protective field of void magic absorbs violence aimed at you, then lets you hu
 <!-- @type: feature -->
 ##### Ward of Excellent Protection
 
-You weave a shield of all the elements around yourself, channeling their full protective power. You have immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your Reason score.
+You weave a shield of all the elements around yourself, channeling their full protective power. You have immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Ward of Nature's Affection
 
-The green energy writhing within your body allows you to produce powerful vines when you're in danger. Whenever a creature within a number of squares equal to your Reason score deals damage to you, you can use a free triggered action to slide that creature up to a number of squares equal to your Reason score.
+The green energy writhing within your body allows you to produce powerful vines when you're in danger. Whenever a creature within a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score deals damage to you, you can use a free triggered action to slide that creature up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Ward of Surprising Reactivity
 
-You use the magic of fire to create a ward of explosive energy. Whenever an adjacent creature deals damage to you, you can use a free triggered action to push that creature up to a number of squares equal to twice your Reason score.
+You use the magic of fire to create a ward of explosive energy. Whenever an adjacent creature deals damage to you, you can use a free triggered action to push that creature up to a number of squares equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 #### Elementalist Abilities
@@ -8347,7 +8347,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R corruption damage
 > - **12-16:** 4 + R corruption damage
@@ -8364,7 +8364,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------------|--------------------------------:|
 > | **📏 Ranged 10**                | **🎯 Two creatures or objects** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 fire damage
 > - **12-16:** 4 fire damage
@@ -8379,13 +8379,13 @@ Choose two signature abilities from the following options. Signature abilities c
 > |--------------------------------|--------------------:|
 > | **📏 Melee 1**                 | **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 3 + R corruption damage
 > - **12-16:** 6 + R corruption damage
 > - **17+:** 9 + R corruption damage
 > 
-> **Effect:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to your Reason score.
+> **Effect:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### The Green Within, the Green Without
@@ -8396,7 +8396,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------|---------------------:|
 > | **📏 Ranged 10**                 |  **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R damage
 > - **12-16:** 5 + R damage
@@ -8413,7 +8413,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------------|------------------------------:|
 > | **📏 Melee 1**                  | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 3 + R damage; push 2
 > - **12-16:** 5 + R damage; push 3
@@ -8428,7 +8428,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R corruption damage; R < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 4 + R corruption damage; R < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -8443,7 +8443,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |--------------------------------|------------------------------:|
 > | **📏 2 cube within 10**        | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 damage
 > - **12-16:** 5 damage
@@ -8460,7 +8460,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R fire damage; push 2
 > - **12-16:** 5 + R fire damage; push 3
@@ -8483,7 +8483,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > |-------------------------------|------------------------------:|
 > | **📏 3 cube within 10**       | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 psychic damage
 > - **12-16:** 4 psychic damage
@@ -8500,7 +8500,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 5 + R fire damage
 > - **12-16:** 8 + R fire damage
@@ -8517,7 +8517,7 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > |----------------------------------|---------------------:|
 > | **📏 Ranged 10**                 |  **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 4 + R poison damage
 > - **12-16:** 7 + R poison damage
@@ -8534,13 +8534,13 @@ Choose one heroic ability from the following options, each of which costs 3 esse
 > |------------------------|------------------------------:|
 > | **📏 2 burst**         | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 3 damage
 > - **12-16:** 5 damage
 > - **17+:** 8 damage; M < STRONG[, prone](scc:mcdm.heroes.v1/condition/prone)
 > 
-> **Effect:** You must be touching the ground to use this ability. Additionally, you can choose a square of ground in the area that is unoccupied or is occupied by you or any ally. A pillar of earth rises out of the ground in that square, with a height in squares up to your Reason score. The pillar can't collide with any creatures or objects, nor can it force creatures raised by it to collide with other creatures or objects.
+> **Effect:** You must be touching the ground to use this ability. Additionally, you can choose a square of ground in the area that is unoccupied or is occupied by you or any ally. A pillar of earth rises out of the ground in that square, with a height in squares up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The pillar can't collide with any creatures or objects, nor can it force creatures raised by it to collide with other creatures or objects.
 
 ###### 5-Essence Ability
 
@@ -8555,7 +8555,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > |-------------------------------|------------------------------:|
 > | **📏 3 cube within 10**       | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 4 fire damage
 > - **12-16:** 6 fire damage
@@ -8574,7 +8574,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > **Effect:** You open up two holes with 1-square openings that are 4 squares deep, which can be placed on any mundane surface within distance. You can place these holes next to each other to create fewer holes with wider openings. When the holes open, make a separate power roll for each creature on the ground above a hole and small enough to fall in. (You can't score a critical hit with this ability because it uses a maneuver.)
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** The target can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square from the edge of the hole to the nearest unoccupied space of their choice.
 > - **12-16:** The target falls into the hole.
@@ -8604,7 +8604,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > |--------------------------------|------------------------------:|
 > | **📏 3 cube within 10**        | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 4 acid damage
 > - **12-16:** 6 acid damage
@@ -8651,7 +8651,7 @@ At the start of a combat encounter, you gain a number of [surges](scc:mcdm.heroe
 <!-- @type: feature -->
 ##### Disciple of the Green
 
-You can use a maneuver to shapeshift into a type of creature on the Green Animal Forms table. While in [animal form](scc:mcdm.heroes.v1/complication/animal-form), you can speak, and you use your Reason score to make melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Your statistics stay the same except as noted on the table.
+You can use a maneuver to shapeshift into a type of creature on the Green Animal Forms table. While in [animal form](scc:mcdm.heroes.v1/complication/animal-form), you can speak, and you use your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score to make melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Your statistics stay the same except as noted on the table.
 
 Each form has a prerequisite level that you must attain before you can adopt it. Some animal forms grant you [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). You lose this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) when you revert back to your true form.
 
@@ -8720,7 +8720,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > - Once as a free maneuver at the start of your turn, you allow yourself and each ally in the area to spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
-> - Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to your Reason score.
+> - Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > 
 > **Persistent 1:** The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your line of effect.
 
@@ -8735,7 +8735,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > **Effect:** The target uses their signature ability against a creature of your choice. This signature ability can target the creature even if it usually wouldn't. You then make a power roll against the target of this ability.
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 5 + R poison damage
 > - **12-16:** 9 + R poison damage
@@ -8752,7 +8752,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > **Effect:** The target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to another space within distance. Make a power roll that affects each enemy adjacent to the target's new space.
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 3 fire damage
 > - **12-16:** 5 fire damage
@@ -8767,7 +8767,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 5 + R fire damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 9 + R fire damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -8850,7 +8850,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > 
 > **Special:** The number of creatures you target with this ability is determined by your power roll.
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** One creature
 > - **12-16:** Two creatures
@@ -8867,7 +8867,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > |--------------------------------|-------------------------------:|
 > | **📏 3 cube within 10**        |  **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 5 damage
 > - **12-16:** 9 damage
@@ -8884,7 +8884,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > |------------------------|------------------------------:|
 > | **📏 3 aura**          | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 3 damage
 > - **12-16:** 6 damage
@@ -8903,9 +8903,9 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > |-------------------------------|---------------:|
 > | **📏 10 wall within 10**      | **🎯 Special** |
 > 
-> **Effect:** The wall lasts until the start of your next turn, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes fire damage equal to your Reason score for each square of the area they start their turn in or enter.
+> **Effect:** The wall lasts until the start of your next turn, and can be placed in occupied squares. Creatures can enter and pass through the wall. Each enemy who enters the area for the first time in a combat round or starts their turn there takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score for each square of the area they start their turn in or enter.
 > 
-> **Persistent 1:** The wall lasts until the start of your next turn, and you can add a number of squares to the wall equal to your Reason score.
+> **Persistent 1:** The wall lasts until the start of your next turn, and you can add a number of squares to the wall equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -8915,7 +8915,7 @@ As a 4th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
+Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Font of Essence
@@ -8925,7 +8925,7 @@ The first time each combat round that you or a creature within 10 squares takes 
 <!-- @type: feature -->
 #### Mantle of Essence
 
-While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you exude an aura of magic whose distance is equal to your Reason score. The effects within the area of the aura are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the aura at will (no action required).
+While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you exude an aura of magic whose distance is equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The effects within the area of the aura are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the aura at will (no action required).
 
 ###### Mantle of Essence Specialization Effects Table
 
@@ -8939,17 +8939,17 @@ While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.hea
 <!-- @type: feature -->
 ##### Burning Grounds
 
-At the end of each of your turns, each enemy in the area takes fire damage equal to your Reason score.
+At the end of each of your turns, each enemy in the area takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Flowering Bed
 
-At the end of each of your turns, each ally in the area gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your Reason score.
+At the end of each of your turns, each ally in the area gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Quaking Earth
 
-At the end of each of your turns, you can push each enemy in the area up to a number of squares equal to your Reason score.
+At the end of each of your turns, you can push each enemy in the area up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Veiling Bed
@@ -9004,14 +9004,14 @@ Additionally, whenever an ally within distance of your [Hurl Element](scc:mcdm.h
 
 Solidity is merely a suggestion to you. Mundane barriers that are 1 square thick or less do not block your senses or line of effect. You can only sense or have line of effect past one such barrier at a time.
 
-Additionally, whenever you use a void ability, you or one ally within distance of the ability can [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares equal to your Reason score.
+Additionally, whenever you use a void ability, you or one ally within distance of the ability can [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Smoldering Step
 
 You can use 1 square of movement to walk into an area of fire your size or larger and [teleport](scc:mcdm.heroes.v1/movement/teleport) to any other area of fire your size or larger within 10 squares of the first area.
 
-Additionally, whenever you use a fire ability or are targeted by an ability that deals fire damage, each enemy adjacent to you takes fire damage equal to your Reason score.
+Additionally, whenever you use a fire ability or are targeted by an ability that deals fire damage, each enemy adjacent to you takes fire damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 #### 9-Essence Ability
@@ -9027,13 +9027,13 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 8 + R fire damage
 > - **12-16:** 13 + R fire damage
 > - **17+:** 17 + R fire damage
 > 
-> **Effect:** When the target ends their next turn, or if they drop to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before then, each enemy adjacent to them takes fire damage equal to twice your Reason score. Each affected enemy then gains this same effect.
+> **Effect:** When the target ends their next turn, or if they drop to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) before then, each enemy adjacent to them takes fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Each affected enemy then gains this same effect.
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Storm of Sands (9 Essence)
@@ -9044,7 +9044,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |--------------------------------|------------------------------:|
 > | **📏 4 cube within 10**        | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 damage
 > - **12-16:** 5 damage
@@ -9063,7 +9063,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |---------------------------------|------------------------------:|
 > | **📏 Ranged 10**                | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 9 + R corruption damage
 > - **12-16:** 10 + R corruption damage; the target has line of effect only to creatures and objects within 4 squares of them until the start of your next turn
@@ -9078,7 +9078,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |--------------------------------|------------------------------:|
 > | **📏 4 cube within 10**        | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 corruption damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 3 corruption damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -9103,10 +9103,10 @@ You gain one crafting, lore, or supernatural perk of your choice.
 
 You can spend 10 uninterrupted minutes to create a freeform magic spell for a variety of situations. Choose one of the following magical effects:
 
-- You create a mundane object of a size equal to your Reason score or smaller.
+- You create a mundane object of a size equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score or smaller.
 - You construct a place of shelter suitable for twenty creatures that lasts for 24 hours and can't be detected by enemies.
-- You restore all [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to a mundane object of a size equal to your Reason score or smaller.
-- Choose a cube with a size up to your Reason score within 5 squares. You can fill that area with [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or natural phenomena such as fire, water, or plant life, or can clear the area of those things.
+- You restore all [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to a mundane object of a size equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score or smaller.
+- Choose a cube with a size up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score within 5 squares. You can fill that area with [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or natural phenomena such as fire, water, or plant life, or can clear the area of those things.
 - You can preserve a corpse or up to 5 pounds of food for a week, or can cause a corpse or that amount of food to instantly rot.
 - You create a seal on a surface that can't be seen or felt by anyone but you. When a creature comes adjacent to the surface, you can see and hear through the seal for as long as the creature remains adjacent to it. When you create the seal, you can decide to limit the number of creatures who activate it by choosing a creature keyword (such as Undead) or a specific name (such as Ajax the Invincible) or organization (such as the Black Iron Pact). If you do, the seal alerts you only when creatures with the keyword, name, or organizational affiliation you provide pass by it. If you create a second seal, the first one disappears. You can dispel a seal at any time (no action required).
 
@@ -9141,9 +9141,9 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > 
 > - Their size and stability increase by 2, with any size 1 target becoming size 3. Each creature who is within the target's new space slides to the nearest unoccupied space, ignoring stability. If the target doesn't have space to grow, they grow as much as they can and become [restrained](scc:mcdm.heroes.v1/condition/restrained) until the effect ends.
 > - They have fire immunity 10.
-> - Their strikes deal extra fire damage equal to twice your Reason score.
+> - Their strikes deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - When the target force moves a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a +2 bonus.
-> - They can use their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) instead of Might for Might power rolls.
+> - They can use their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for [Might](scc:mcdm.heroes.v1/rule.character/might) power rolls.
 > 
 > **Persistent 2:** The effect lasts until the start of your next turn. Additionally, at the start of your turn, the target can spend 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -9156,13 +9156,13 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |--------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                     | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 4 squares.
 > - **12-16:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 6 squares.
 > - **17+:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 8 squares.
 > 
-> **Effect:** If the target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to a space where they would fall, they immediately do so, treating the fall as if their Agility score were 0. The target takes fire damage from the fall, and each enemy within 3 squares of where they land takes the same amount of fire damage. The ground within 3 squares of where the target lands is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+> **Effect:** If the target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to a space where they would fall, they immediately do so, treating the fall as if their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score were 0. The target takes fire damage from the fall, and each enemy within 3 squares of where they land takes the same amount of fire damage. The ground within 3 squares of where the target lands is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### The Wode Remembers and Returns (9 Essence)
@@ -9249,7 +9249,7 @@ You can only combine animal forms whose levels add up to 12 or less. For example
 
 You produce a fire that entrances the fates, distracting them from aiding your foes. Whenever you deal fire damage to a creature or object, they take an extra 1d6 fire damage. If you deal fire damage to a mundane object, you can use a free triggered action to target it with your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability instead.
 
-Additionally, any enemy who starts their turn adjacent to you has fire weakness equal to your Reason score until the start of their next turn. This increases to twice your Reason score if the enemy is made of or is wearing mostly metal.
+Additionally, any enemy who starts their turn adjacent to you has fire weakness equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the start of their next turn. This increases to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score if the enemy is made of or is wearing mostly metal.
 
 <!-- @type: feature -->
 ##### Summon Source of Earth
@@ -9279,7 +9279,7 @@ You have the following ability.
 >|:-------------------:|:----------------------:|:-----------------:|:---------------------:|:--------------------:|
 >|    **2**<br>Size    |     **6**<br>Speed     | **45**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **5**<br>Stability   | **5**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
 >| **-**<br>Immunities | **[Burrow](scc:mcdm.heroes.v1/movement/burrow)**<br>Movement |                   | **-**<br>With Captain | **-**<br>Weaknesses  |
->|   **+3**<br>Might   |   **+1**<br>Agility    | **-5**<br>Reason  |  **-5**<br>Intuition  |  **-3**<br>Presence  |
+>|   **+3**<br>[Might](scc:mcdm.heroes.v1/rule.character/might)   |   **+1**<br>[Agility](scc:mcdm.heroes.v1/rule.character/agility)    | **-5**<br>[Reason](scc:mcdm.heroes.v1/rule.character/reason)  |  **-5**<br>[Intuition](scc:mcdm.heroes.v1/rule.character/intuition)  |  **-3**<br>[Presence](scc:mcdm.heroes.v1/rule.character/presence)  |
 >
 >> **Earthwalk**
 >>
@@ -9332,7 +9332,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |-------------------------------|------------------------------:|
 > | **📏 5 cube within 10**       | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 7 fire damage; the Director loses 2 Malice (see *Draw Steel: Monsters*)
 > - **12-16:** 10 fire damage; the Director loses 3 Malice
@@ -9360,7 +9360,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |------------------------|------------------------------:|
 > | **📏 5 burst**         | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** M < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** M < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -9394,7 +9394,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |--------------------------------|-----------------------------------------:|
 > | **📏 5 cube within 10**        | **🎯 Each enemy and object in the area** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
@@ -9435,7 +9435,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |---------------------------------|---------------------------:|
 > | **📏 Ranged 10**                | **🎯 One enemy or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 13 + R fire damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 18 + R fire damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -9458,7 +9458,7 @@ Breath remains until you convert it to essence.
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
+Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Essential Being
@@ -9532,17 +9532,17 @@ You do not temper the heat of battle within you. You unleash it! Your experience
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and an Agility of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a [Might](scc:mcdm.heroes.v1/rule.character/might) of 2 and an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Might − 2
+**Weak Potency:** [Might](scc:mcdm.heroes.v1/rule.character/might) − 2
 
-**Average Potency:** Might − 1
+**Average Potency:** [Might](scc:mcdm.heroes.v1/rule.character/might) − 1
 
-**Strong Potency:** Might
+**Strong Potency:** [Might](scc:mcdm.heroes.v1/rule.character/might)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 21
 
@@ -9617,23 +9617,23 @@ Some [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) 
 
 | Ferocity        | Benefit                                                                                                                                                                                                                        |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Might score.                                                                                                                 |
+| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.                                                                                                                 |
 | 4               | The first time you push a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
-| 6               | You gain an edge on Might tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an edge on [Might](scc:mcdm.heroes.v1/rule.character/might) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time you push a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                               |
-| 10 (7th level)  | You have a double edge on Might tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
-| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Might score. |
+| 10 (7th level)  | You have a double edge on [Might](scc:mcdm.heroes.v1/rule.character/might) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. |
 
 ###### Reaver Growing Ferocity Table
 
 | Ferocity        | Benefit                                                                                                                                                                                                                          |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Agility score.                                                                                                                 |
+| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                                                                                                 |
 | 4               | The first time you slide a creature on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                 |
-| 6               | You gain an edge on Agility tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time you slide a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                                                |
-| 10 (7th level)  | You have a double edge on Agility tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
-| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Agility score. |
+| 10 (7th level)  | You have a double edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
 <!-- @type: feature -->
 #### 1st-Level Aspect Features
@@ -9668,7 +9668,7 @@ As your ferocity grows, you gain benefits as noted on the Reaver [Growing Feroci
 <!-- @type: feature -->
 ##### Primordial Strength
 
-Whenever you damage an object with a weapon strike, the strike deals extra damage equal to your Might score. Additionally, whenever you push another creature into an object, the creature takes extra damage equal to your Might score.
+Whenever you damage an object with a weapon strike, the strike deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, whenever you push another creature into an object, the creature takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 As your ferocity grows, you gain benefits as noted on the Berserker [Growing Ferocity](scc:mcdm.heroes.v1/feature.fury.boren/growing-ferocity) table. Benefits are cumulative except where an improved benefit replaces a lesser benefit.
 
@@ -9701,7 +9701,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 > 
 > **Trigger:** You lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and are not [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
-> **Effect:** You gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your Might score and can enter your [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form.
+> **Effect:** You gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score and can enter your [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form.
 > 
 > **Spend 1 Ferocity:** If you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -9716,9 +9716,9 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 > 
 > **Trigger:** The target would be [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 > 
-> **Effect:** You can select a new target of the same size or smaller within distance to be force moved instead. You become the source of the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), determine the new target's destination, and can push the target instead of using the original [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) type. Additionally, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Might score.
+> **Effect:** You can select a new target of the same size or smaller within distance to be force moved instead. You become the source of the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), determine the new target's destination, and can push the target instead of using the original [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) type. Additionally, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 > 
-> **Spend 1 Ferocity:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to twice your Might score instead.
+> **Spend 1 Ferocity:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score instead.
 
 <!-- @type: ability | @subtype: triggered -->
 > ###### Unearthly Reflexes
@@ -9731,14 +9731,14 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 > 
 > **Trigger:** You take damage.
 > 
-> **Effect:** You take half the damage from the triggering effect and can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Agility score.
+> **Effect:** You take half the damage from the triggering effect and can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 > 
 > **Spend 1 Ferocity:** If the damage has any potency effects associated with it, the potency is reduced by 1 for you.
 
 <!-- @type: feature -->
 #### Mighty Leaps
 
-You can't obtain lower than a tier 2 outcome on any Might test made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+You can't obtain lower than a tier 2 outcome on any [Might](scc:mcdm.heroes.v1/rule.character/might) test made to jump (see Movement Types in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
 <!-- @type: feature -->
 #### Fury Abilities
@@ -9758,7 +9758,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|-------------------------------:|
 > | **📏 Melee 1**            |  **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage; push 1
 > - **12-16:** 6 + M damage; push 2
@@ -9773,7 +9773,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 + M damage
 > - **12-16:** 5 + M damage
@@ -9790,7 +9790,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|--------------------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature of your size or smaller** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 + M damage; M < WEAK, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **12-16:** 5 + M damage; M < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
@@ -9805,7 +9805,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage
 > - **12-16:** 6 + M damage
@@ -9830,7 +9830,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > |-------------------------|------------------------------:|
 > | **📏 1 burst**          | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 5 damage
 > - **12-16:** 8 damage; push 1
@@ -9845,7 +9845,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage; slide 2
 > - **12-16:** 5 + M damage; slide 3
@@ -9864,13 +9864,13 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > 
 > **Effect:** You move up to your speed in a straight line, and enemy squares are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this movement. You can end this movement in a creature's space and move them to an adjacent unoccupied space. You make one power roll that targets each enemy whose space you move through.
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 damage
 > - **12-16:** 3 damage
 > - **17+:** 5 damage
 > 
-> **Effect:** The last target you damage takes extra damage equal to your Might score for each opportunity attack you trigger during your move.
+> **Effect:** The last target you damage takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score for each opportunity attack you trigger during your move.
 
 <!-- @type: ability | @cost: 3 Ferocity | @id: your-entrails-are-your-extrails -->
 > ###### Your Entrails Are Your Extrails! (3 Ferocity)
@@ -9881,13 +9881,13 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage; M < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **12-16:** 5 + M damage; M < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **17+:** 8 + M damage; M < STRONG, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > 
-> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes damage equal to your Might score at the end of each of your turns.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns.
 
 ###### 5-Ferocity Ability
 
@@ -9902,7 +9902,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > |-----------------------------|------------------------------:|
 > | **📏 Melee 1**              | **🎯 One creature or object** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 4 + M damage; M < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 6 + M damage; M < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -9930,7 +9930,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > |----------------------------|------------------------------:|
 > | **📏 5 x 1 line within 1** | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 6 damage; push 2
 > - **12-16:** 9 damage; push 4
@@ -9947,7 +9947,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 7 + M damage
 > - **12-16:** 11 + M damage
@@ -9981,12 +9981,12 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 <!-- @type: feature -->
 ##### Inescapable Wrath
 
-You have a bonus to speed equal to your Agility score, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+You have a bonus to speed equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score, and you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: feature -->
 ##### Tooth and Claw
 
-At the end of each of your turns, each enemy adjacent to you takes damage equal to your Might score.
+At the end of each of your turns, each enemy adjacent to you takes damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 ##### Unstoppable Force
@@ -10011,7 +10011,7 @@ Choose one of the following abilities.
 > |-------------------|------------------------:|
 > | **📏 Melee 1**    | **🎯 One willing ally** |
 > 
-> **Effect:** You vertically push the target up to 4 squares. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores the target's stability, and the target takes no damage from colliding with creatures or objects. At the end of this movement, the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that deals extra damage equal to your Might score.
+> **Effect:** You vertically push the target up to 4 squares. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores the target's stability, and the target takes no damage from colliding with creatures or objects. At the end of this movement, the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: ability | @cost: 5 Ferocity -->
 > ###### Wrecking Ball (5 Ferocity)
@@ -10026,7 +10026,7 @@ Choose one of the following abilities.
 > 
 > Additionally, you make one power roll that targets each enemy you move adjacent to during this movement.
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** Push 1
 > - **12-16:** Push 2
@@ -10045,7 +10045,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 3 + M damage; P < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) and [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 5 + M damage; P < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) and [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -10062,7 +10062,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed and make one power roll that targets up to three enemies you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 damage; A < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 4 damage; A < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -10081,7 +10081,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 4 damage; I < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 6 damage; I < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -10098,7 +10098,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 2 burst**  | **🎯 Each enemy in the area** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 2 damage; push 1; M < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 5 damage; push 2; M < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -10129,7 +10129,7 @@ Your [primordial aspect](scc:mcdm.heroes.v1/feature.fury.level-1/primordial-aspe
 
 You add your level to your effective size for the purpose of interacting with creatures and objects, including determining whether you can lift an object, are affected by [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), and so forth. This has no effect on whether you can be [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
-Additionally, you have a bonus to stability equal to your Might score.
+Additionally, you have a bonus to stability equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 ##### Nature's Knight
@@ -10168,7 +10168,7 @@ Choose one heroic ability from the following options, each of which costs 7 fero
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a melee strike against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your Might score and increases its potency by 1.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each creature you make a melee strike against who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn. Additionally, when you use an ability that deals rolled damage against any enemy [taunted](scc:mcdm.heroes.v1/condition/taunted) by you, the ability deals extra damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score and increases its potency by 1.
 
 <!-- @type: ability | @cost: 7 Ferocity -->
 > ###### Steelbreaker (7 Ferocity)
@@ -10200,7 +10200,7 @@ As a 4th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fea
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Agility scores each increase to 3.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Damaging Ferocity
@@ -10279,7 +10279,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 10 + M damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 14 + M damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -10298,7 +10298,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > 
 > **Trigger:** A creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying), or damages you while you are [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 6 + M damage
 > - **12-16:** 9 + M damage
@@ -10315,7 +10315,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > |---------------------------|--------------------------------:|
 > | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 9 damage; push 3
 > - **12-16:** 14 damage; push 5
@@ -10332,7 +10332,7 @@ Choose one heroic ability from the following options, each of which costs 9 fero
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 9 + M damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 13 + M damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -10355,7 +10355,7 @@ Additionally, you can speak with elemental creatures, and when you are in a nego
 <!-- @type: feature -->
 #### Primordial Portal
 
-As a main action, you can touch a magic source of elemental power and use it to create a portal to Quintessence. You can then use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you through the portal and onto a safe island in Quintessence, or to [teleport](scc:mcdm.heroes.v1/movement/teleport) back again. You can maintain a number of portals equal to your Might score, each leading to the same safe island in Quintessence. If a portal in your network is destroyed, it is no longer part of the network. You can remove a portal from your network no matter your distance from it, including across different worlds (no action required).
+As a main action, you can touch a magic source of elemental power and use it to create a portal to Quintessence. You can then use a main action to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and any willing creatures within 10 squares of you through the portal and onto a safe island in Quintessence, or to [teleport](scc:mcdm.heroes.v1/movement/teleport) back again. You can maintain a number of portals equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score, each leading to the same safe island in Quintessence. If a portal in your network is destroyed, it is no longer part of the network. You can remove a portal from your network no matter your distance from it, including across different worlds (no action required).
 
 (Exploring Quintessence is possible from your island, but continued safety is not guaranteed.)
 
@@ -10384,7 +10384,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** You jump up to your maximum jump distance and make one power roll that targets each creature adjacent to the space where you land.
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 4 damage; push 1
 > - **12-16:** 7 damage; push 2
@@ -10399,7 +10399,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 7 + M damage; push 3
 > - **12-16:** 11 + M damage; push 5
@@ -10435,7 +10435,7 @@ Choose one of the following abilities.
 > 
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed.
 > 
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
 > - **≤11:** 4 + M damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 6 + M damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -10456,13 +10456,13 @@ Choose one of the following abilities.
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 8 damage; M < WEAK, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **12-16:** 13 damage; M < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 17 damage; M < STRONG, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares, bringing the target with you. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes damage equal to twice your Might score at the start of each of your turns.
+> **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares, bringing the target with you. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the start of each of your turns.
 
 <!-- @type: ability | @cost: 9 Ferocity -->
 > ###### Riders on the Storm (9 Ferocity)
@@ -10473,7 +10473,7 @@ Choose one of the following abilities.
 > |-----------------|---------------------------------:|
 > | **📏 3 aura**   | **🎯 Each creature in the area** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial damage type equal to twice your Might score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial damage type equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
 >
 > **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
@@ -10492,7 +10492,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 
 You exhibit ever-stronger signs of how the force of the Primordial Chaos flows within you. Whenever you show strong emotion or increase your ferocity, elemental motes attuned to your mood flit around you, and your skin changes in appearance to reflect an element of your choice.
 
-Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Might score. If you are a stormwight, you have immunity to the damage type of your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature equal to twice your Might score.
+Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, you have immunity to the damage type of your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 #### Greater Ferocity
@@ -10540,12 +10540,12 @@ You can use all [stormwight kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kit
 <!-- @type: feature -->
 ##### A Step Ahead
 
-You move with legendary grace. Whenever you make an Agility test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.
+You move with legendary grace. Whenever you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature -->
 ##### Strongest There Is
 
-Your strength is unmatched. Whenever you make a Might test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Might score.
+Your strength is unmatched. Whenever you make a [Might](scc:mcdm.heroes.v1/rule.character/might) test, you can roll three dice and choose which two to use. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 #### 11-Ferocity Ability
@@ -10572,7 +10572,7 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 6 + M damage
 > - **12-16:** 10 + M damage
@@ -10600,9 +10600,9 @@ Choose one heroic ability from the following options, each of which costs 11 fer
 > |----------------------------------|----------------:|
 > | **📏 Self; see below**           |     **🎯 Self** |
 >
-> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. Each enemy you move adjacent to during this movement takes damage equal to twice your Might score. Then make one power roll that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting). You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).
+> **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. Each enemy you move adjacent to during this movement takes damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Then make one power roll that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting). You gain 1 ferocity for each target who dies as a result of this ability (maximum 11 ferocity).
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** Any target whose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is equal to or less than 8 dies.
 > - **12-16:** Any target whose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is equal to or less than 11 dies.
@@ -10636,7 +10636,7 @@ Choose one of the following abilities.
 > |--------------------------------|------------------------------:|
 > | **📏 3 burst**                 | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 7 damage; push 3
 > - **12-16:** 10 damage; push 5
@@ -10653,7 +10653,7 @@ Choose one of the following abilities.
 > |--------------------------------|------------------------------:|
 > | **📏 3 burst**                 | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 3 damage; vertical pull 3
 > - **12-16:** 5 damage; vertical pull 5
@@ -10674,7 +10674,7 @@ Choose one of the following abilities.
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 11 + M damage
 > - **12-16:** 16 + M damage
@@ -10691,7 +10691,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 12 + M damage
 > - **12-16:** 18 + M damage
@@ -10712,7 +10712,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 3 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 4 psychic damage; any target who is a minion is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)
 > - **12-16:** 6 psychic damage; any target who is a minion is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), as does one [winded](scc:mcdm.heroes.v1/rule.health/winded) target who is not a leader or solo creature
@@ -10727,7 +10727,7 @@ Choose one of the following abilities.
 > |-------------------------|------------------------------:|
 > | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 7 damage
 > - **12-16:** 10 damage
@@ -10743,7 +10743,7 @@ As a 10th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fe
 <!-- @type: feature -->
 #### Chaos Incarnate
 
-Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your Might score. If you are a stormwight, your damage immunity from your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)) increases to three times your Might score.
+Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, your damage immunity from your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)) increases to three times your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
@@ -10752,7 +10752,7 @@ Additionally, when you use [Primordial Strike](scc:mcdm.heroes.v1/feature.fury.l
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Agility scores each increase to 5.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Agility](scc:mcdm.heroes.v1/rule.character/agility) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Growing Ferocity Improvement
@@ -10885,7 +10885,7 @@ Your primordial damage type is cold.
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
-**Power Roll + Might:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 
 - **≤11:** 2 + M damage; M < WEAK, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 - **12-16:** 5 + M damage; M < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
@@ -10905,7 +10905,7 @@ As your ferocity grows, you gain benefits as noted on the [Boren](scc:mcdm.heroe
 | 6               | You gain an edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                                                     |
 | 8 (4th level)   | The first time you grab a creature on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                                                                                             |
 | 10 (7th level)  | You have a double edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                                               |
-| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed), any ability roll made against that creature gains a bonus to its potency equal to your Might score. |
+| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed), any ability roll made against that creature gains a bonus to its potency equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. |
 
 <!-- @type: kit | @id: corven -->
 #### Corven
@@ -10951,7 +10951,7 @@ Your primordial damage type is fire.
 |-------------------------|------------------------------:|
 | **📏 1 burst**          | **🎯 Each enemy in the area** |
 
-**Power Roll + Agility:**
+**Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 damage
 - **12-16:** 6 damage
@@ -10968,11 +10968,11 @@ As your ferocity grows, you gain benefits as noted on the [Corven](scc:mcdm.hero
 
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
+| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
-| 6               | You gain an edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
+| 6               | You gain an edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
-| 10 (7th level)  | You have a double edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                    |
+| 10 (7th level)  | You have a double edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                    |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the potency of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: raden -->
@@ -11019,7 +11019,7 @@ Your primordial damage type is corruption.
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
-**Power Roll + Agility:**
+**Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 + A damage
 - **12-16:** 7 + A damage; push 1
@@ -11036,11 +11036,11 @@ As your ferocity grows, you gain benefits as noted on the [Raden](scc:mcdm.heroe
 
 | Ferocity        | Benefit                                                                                                                                           |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your Agility score.                                 |
+| 2               | Whenever you use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, the distance you can [shift](scc:mcdm.heroes.v1/movement/shifting) gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.                                 |
 | 4               | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                             |
-| 6               | You gain an edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
+| 6               | You gain an edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                          |
 | 8 (4th level)   | The first time you [shift](scc:mcdm.heroes.v1/movement/shifting) on a turn, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) instead of 1.                                                                               |
-| 10 (7th level)  | You have a double edge on Agility tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver                                                     |
+| 10 (7th level)  | You have a double edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests, the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver                                                     |
 | 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, the potency of any effects targeting you is reduced by 2 for you. |
 
 <!-- @type: kit | @id: vuken -->
@@ -11087,7 +11087,7 @@ Your primordial damage type is lightning.
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
-**Power Roll + Might:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 
 - **≤11:** 4 + M damage; A < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 - **12-16:** 7 + M damage; A < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -11104,10 +11104,10 @@ As your ferocity grows, you gain benefits as noted on the [Vuken](scc:mcdm.heroe
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can target one additional creature.                                                                                                                                                 |
 | 4               | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                   |
-| 6               | You gain an edge on Agility tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
+| 6               | You gain an edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                                    |
 | 8 (4th level)   | The first time on a turn that you push a creature or knock a [creature prone](scc:mcdm.heroes.v1/condition/prone), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                                                                  |
-| 10 (7th level)  | You have a double edge on Agility tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
-| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Agility score. |
+| 10 (7th level)  | You have a double edge on [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests and the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver.                                                                                                                                                              |
+| 12 (10th level) | Whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, whenever you make a power roll that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) on a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. |
 
 <!-- @type: class | @id: null -->
 ## Null
@@ -11122,17 +11122,17 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2 and an Intuition of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 2 and an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Intuition − 2
+**Weak Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) − 2
 
-**Average Potency:** Intuition − 1
+**Average Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) − 1
 
-**Strong Potency:** Intuition
+**Strong Potency:** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 21
 
@@ -11259,7 +11259,7 @@ Additionally, as your discipline grows, your psionic mastery of your body intens
 | 6               | You gain an edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
 | 8 (4th level)   | The first time on a turn that you willingly move 1 or more squares as part of an ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                                                |
 | 10 (7th level)  | You have a double edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                 |
-| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
+| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
 
 <!-- @type: feature -->
 ##### Cryokinetic Mastery
@@ -11277,7 +11277,7 @@ Additionally, as your discipline grows, you strengthen the psionic power suffusi
 | 6               | You gain an edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                             |
 | 8 (4th level)   | The first time on a turn that you grab a creature or an enemy moves 1 or more squares in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).                                                  |
 | 10 (7th level)  | You have a double edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
-| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).       |
+| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).       |
 
 <!-- @type: feature -->
 ##### Metakinetic Mastery
@@ -11290,17 +11290,17 @@ Additionally, as your discipline grows, your psionic potential is amplified, gra
 
 | Discipline      | Benefit                                                                                                                                                                                     |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score.                                                                          |
+| 2               | Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.                                                                          |
 | 4               | The first time in a combat round that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                  |
 | 6               | You gain an edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                       |
 | 8 (4th level)   | The first time in a combat round that you take damage or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), even if you resist the effect.                                                                 |
 | 10 (7th level)  | You have a double edge on the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers.                                                                                                                                 |
-| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
+| 12 (10th level) | Whenever you force move a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, whenever you use a heroic ability, you gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). |
 
 <!-- @type: feature -->
 #### Null Speed
 
-The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to speed and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action equal to your Agility score.
+The flow of psionic power through you allows you to achieve high velocity. You gain a bonus to speed and to the number of squares you can [shift](scc:mcdm.heroes.v1/movement/shifting) when you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature -->
 #### Psionic Augmentation
@@ -11325,7 +11325,7 @@ You gain a +1 bonus to speed and to the distance you can [shift](scc:mcdm.heroes
 <!-- @type: feature -->
 #### Psionic Martial Arts
 
-Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver, you use Intuition instead of Might for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can choose to slide the target instead of pushing them.
+Whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) or [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver, you use [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for the power roll and for determining if you can target creatures larger than you. Additionally, whenever you use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver, you can choose to slide the target instead of pushing them.
 
 <!-- @type: feature -->
 #### Null Abilities
@@ -11345,13 +11345,13 @@ Choose two signature abilities from the following options. Signature abilities c
 > |---------------------------|------------------------------:|
 > | **📏 1 burst**            | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 damage
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** You can slide one adjacent enemy up to a number of squares equal to your Intuition score.
+> **Effect:** You can slide one adjacent enemy up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Faster Than the Eye
@@ -11362,13 +11362,13 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|--------------------------------:|
 > | **📏 Melee 1**                     | **🎯 Two creatures or objects** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 damage
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 >
-> **Effect:** You can deal damage equal to your Agility score to one creature or object adjacent to you.
+> **Effect:** You can deal damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score to one creature or object adjacent to you.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Inertial Step
@@ -11379,7 +11379,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 5 + A damage
 > - **12-16:** 7 + A damage
@@ -11396,7 +11396,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; A < WEAK, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **12-16:** 7 + A damage; A < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
@@ -11411,7 +11411,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 > - **12-16:** 5 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT), slide 1
@@ -11426,7 +11426,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|--------------------:|
 > | **📏 Melee 2**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 5 + A psychic damage; vertical pull 1
 > - **12-16:** 8 + A psychic damage; vertical pull 2
@@ -11441,7 +11441,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; push 2
 > - **12-16:** 6 + A damage; push 4
@@ -11458,7 +11458,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; A < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 7 + A damage; A < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -11481,7 +11481,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 + A damage
 > - **12-16:** 10 + A damage
@@ -11498,7 +11498,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > |-------------------|------------------------------:|
 > | **📏 2 burst**    | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target takes psychic damage equal to twice your Intuition score. Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. At the end of your current turn, each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability takes psychic damage equal to your Intuition score.
+> **Effect:** Each target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. At the end of your current turn, each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability takes psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 3 Discipline -->
 > ###### Relentless Nemesis (3 Discipline)
@@ -11509,7 +11509,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 + A damage
 > - **12-16:** 8 + A damage
@@ -11526,7 +11526,7 @@ Choose one heroic ability from the following options, each of which costs 3 disc
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 5 + A damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -11545,13 +11545,13 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 8 + **A** psychic damage; M < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 12 + **A** psychic damage; M < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 16 + **A** psychic damage; M < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target takes damage equal to your Intuition score whenever they use a supernatural ability that costs Malice.
+> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target takes damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score whenever they use a supernatural ability that costs Malice.
 
 <!-- @type: ability | @cost: 5 Discipline -->
 > ###### Impart Force (5 Discipline)
@@ -11562,7 +11562,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > |------------------------------------|------------------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature or object** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** Push 3
 > - **12-16:** Push 5
@@ -11579,7 +11579,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > |------------------------------------|------------------------------------------:|
 > | **📏 Melee 1**                     |                       **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A psychic damage; I < WEAK, the target goes out of phase (save ends)
 > - **12-16:** 4 + A psychic damage; I < AVERAGE, the target goes out of phase (save ends)
@@ -11596,7 +11596,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > |---------------------------|------------------------------:|
 > | **📏 2 burst**            | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
@@ -11630,12 +11630,12 @@ Your [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition) gr
 <!-- @type: feature -->
 ##### Entropic Adaptability
 
-You have cold immunity equal to twice your Intuition score. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) related to cold and ice, and you can automatically climb at full speed while moving.
+You have cold immunity equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Additionally, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) related to cold and ice, and you can automatically climb at full speed while moving.
 
 <!-- @type: feature -->
 ##### Inertial Sink
 
-You add your Intuition score to your effective size for the purpose of interacting with creatures and objects, such as for determining whether you can lift an object, whether you are affected by [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), and so forth. This has no effect on whether you can be [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
+You add your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score to your effective size for the purpose of interacting with creatures and objects, such as for determining whether you can lift an object, whether you are affected by [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), and so forth. This has no effect on whether you can be [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 Additionally, when you fall, you reduce the effective height of the fall by 5 squares in addition to any other reductions. Whenever you take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you reduce that damage by an amount equal to your level.
 
@@ -11673,7 +11673,7 @@ Choose one of the following abilities.
 > |------------------------------------|--------------------:|
 > | **📏 Melee 3**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 8 + A damage; slide 1
 > - **12-16:** 12 + A damage; slide 3
@@ -11692,7 +11692,7 @@ Choose one of the following heroic abilities.
 > |---------------------------|------------------------------:|
 > | **📏 3 cube within 1**    | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 cold damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 9 cold damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -11707,7 +11707,7 @@ Choose one of the following heroic abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your Intuition score.
+> **Effect:** Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1, and you and any ally benefit from [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) while in the area. At the end of this turn, each enemy in the area takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ##### 2nd-Level Metakinetic Ability
 
@@ -11722,7 +11722,7 @@ Choose one of the following abilities.
 > |------------------------------------|--------------------:|
 > | **📏 Melee 3**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 8 + A psychic damage; vertical pull 3
 > - **12-16:** 12 + A psychic damage; vertical pull 5
@@ -11737,7 +11737,7 @@ Choose one of the following abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** You gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 > - **12-16:** You gain 15 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
@@ -11753,7 +11753,7 @@ As a 3rd-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Psionic Leap
 
-You can long jump and high jump a distance equal to twice your Agility score without needing to make a test.
+You can long jump and high jump a distance equal to twice your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score without needing to make a test.
 
 <!-- @type: feature -->
 #### Reorder
@@ -11785,7 +11785,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your Intuition score.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, each enemy who has I < AVERAGE and enters the area for the first time in a combat round or starts their turn there is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each ally who enters the area for the first time in a combat round or starts their turn there gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 7 Discipline -->
 > ###### Stabilizing Field (7 Discipline)
@@ -11807,7 +11807,7 @@ Choose one heroic ability from the following options, each of which costs 7 disc
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your Intuition score.
+> **Effect:** Until the end of the encounter, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. While the area of that ability is enlarged this way, whenever an enemy in the area takes rolled damage, they take extra psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -11817,7 +11817,7 @@ As a 4th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility and Intuition scores each increase to 3.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Discipline Mastery Improvement
@@ -11870,7 +11870,7 @@ You steel yourself for imminent danger by tapping into your body's cold energy. 
 <!-- @type: feature -->
 #### Inertial Fulcrum
 
-Whenever you use an ability to reduce damage dealt to you or to reduce the distance of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability equal to your Intuition score.
+Whenever you use an ability to reduce damage dealt to you or to reduce the distance of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) imposed upon you, you can deal damage to one enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 #### Instant Action
@@ -11893,7 +11893,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 >
 > **Trigger:** The target moves or uses a main action.
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 + A damage; I < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 10 + A damage; I < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -11910,13 +11910,13 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 10 + A damage; A < WEAK, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **12-16:** 14 + A damage; A < AVERAGE, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** 18 + A damage; A < STRONG, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes a bane on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver. Each time they use that maneuver, they take damage equal to twice your Agility score.
+> **Effect:** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes a bane on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver. Each time they use that maneuver, they take damage equal to twice your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Phase Leap (9 Discipline)
@@ -11948,7 +11948,7 @@ As a 6th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Elemental Absorption
 
-Whenever you use your [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield) triggered action, you gain immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your Intuition score against the triggering damage.
+Whenever you use your [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.level-1/inertial-shield) triggered action, you gain immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score against the triggering damage.
 
 <!-- @type: feature -->
 #### Elemental Buffer
@@ -11991,7 +11991,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed, and squares occupied by enemies or objects are not [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for this [shift](scc:mcdm.heroes.v1/movement/shifting). You make one power roll that targets each enemy you moved through during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 damage; M < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 > - **12-16:** 8 damage; M < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed)
@@ -12010,7 +12010,7 @@ Choose one of the following abilities.
 > |---------------------|----------------------------------:|
 > | **📏 Ranged 10**    | **🎯 Three creatures or objects** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** Vertical slide 6
 > - **12-16:** Vertical slide 8
@@ -12042,7 +12042,7 @@ Choose one of the following abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** Vertical slide 5
 > - **12-16:** Vertical slide 7
@@ -12059,7 +12059,7 @@ Choose one of the following abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** You gain 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, until the end of the encounter, your stability gains a bonus equal to your Intuition score.
+> **Effect:** You gain 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). Additionally, until the end of the encounter, your stability gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature-group | @level: 7 -->
 ### 7th-Level Features
@@ -12084,7 +12084,7 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 <!-- @type: feature -->
 ##### Dynamic Power (1 Discipline)
 
-If the ability force moves a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Intuition score.
+If the ability force moves a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 ##### Expanded Power (3 Discipline)
@@ -12094,17 +12094,17 @@ If the ability targets an area, you increase the size of the area by 1. If the a
 <!-- @type: feature -->
 ##### Extended Power (1 Discipline)
 
-If the ability is ranged, the distance gains a bonus equal to your Intuition score. If the ability is melee, the distance gains a +2 bonus.
+If the ability is ranged, the distance gains a bonus equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. If the ability is melee, the distance gains a +2 bonus.
 
 <!-- @type: feature -->
 ##### Heightened Power (1 Discipline)
 
-If the ability deals rolled damage, it deals extra damage equal to your Intuition score.
+If the ability deals rolled damage, it deals extra damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 ##### Magnified Power (5 Discipline)
 
-If the ability has a potency, you increase that potency by an amount equal to your Intuition score.
+If the ability has a potency, you increase that potency by an amount equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 ##### Shared Power (5 Discipline)
@@ -12152,7 +12152,7 @@ Your [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition) gr
 <!-- @type: feature -->
 ##### Inertial Dampener
 
-You and each creature or object of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability gain a bonus to stability equal to your Intuition score. A creature who attempts to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target with this bonus takes psychic damage equal to your Intuition score.
+You and each creature or object of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability gain a bonus to stability equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. A creature who attempts to [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target with this bonus takes psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: feature -->
 ##### Shared Momentum
@@ -12178,13 +12178,13 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 13 + A damage; M < WEAK, the target is suppressed (save ends)
 > - **12-16:** 19 + A damage; M < AVERAGE, the target is suppressed (save ends)
 > - **17+:** 24 + A damage; M < STRONG, the target is suppressed (save ends)
 >
-> **Effect:** While suppressed, a target takes psychic damage equal to twice your Intuition score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
+> **Effect:** While suppressed, a target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of their turns, whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
 
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Phase Hurl (11 Discipline)
@@ -12195,7 +12195,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 9 + A damage; push 5; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 13 + A damage; push 7; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -12212,7 +12212,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 > |------------------------|------------------------------:|
 > | **📏 3 cube within 1** | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 12 psychic damage; push 3
 > - **12-16:** 17 psychic damage; push 5
@@ -12229,7 +12229,7 @@ Choose one heroic ability from the following options, each of which costs 11 dis
 >
 > **Trigger:** The target takes damage from another creature's ability while in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability.
 >
-> **Effect:** The target takes half the damage, and if the triggering creature has I < AVERAGE, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). While the triggering creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, they take psychic damage equal to your Intuition score whenever they use a main action.
+> **Effect:** The target takes half the damage, and if the triggering creature has I < AVERAGE, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). While the triggering creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, they take psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score whenever they use a main action.
 
 <!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
@@ -12239,7 +12239,7 @@ As a 9th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### I Am the Weapon
 
-Your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying). You no longer age or have need of food. Additionally, you can use Intuition instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) when resisting potencies.
+Your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying). You no longer age or have need of food. Additionally, you can use [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) when resisting potencies.
 
 <!-- @type: feature -->
 #### 9th-Level Tradition Ability
@@ -12261,13 +12261,13 @@ Choose one of the following abilities.
 >
 > **Trigger:** The triggering creature starts their turn.
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** I < WEAK, the target loses their turn
 > - **12-16:** I < AVERAGE, the target loses their turn
 > - **17+:** I < STRONG, the target loses their turn
 >
-> **Effect:** If the target loses their turn, the round continues as if they had acted. A target who doesn't lose their turn takes psychic damage equal to twice your Intuition score for each main action they take until the end of their next turn.
+> **Effect:** If the target loses their turn, the round continues as if they had acted. A target who doesn't lose their turn takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score for each main action they take until the end of their next turn.
 
 <!-- @type: ability | @cost: 11 Discipline | @subtype: triggered -->
 > ###### Time Loop (11 Discipline)
@@ -12295,7 +12295,7 @@ Choose one of the following abilities.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** You gain 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 > - **12-16:** You gain 30 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
@@ -12312,13 +12312,13 @@ Choose one of the following abilities.
 > |----------------------------|--------------------:|
 > | **📏 Melee 1**             | **🎯 One creature** |
 >
-> **Power Roll + Intuition:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 >
 > - **≤11:** 8 + I cold damage; M < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 11 + I cold damage; M < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **17+:** 15 + I cold damage; M < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes cold damage equal to your Intuition score at the start of each of your turns. Additionally, whenever the target damages another creature while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, any potency associated with the damage is reduced by 2.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, the target takes cold damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your turns. Additionally, whenever the target damages another creature while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, any potency associated with the damage is reduced by 2.
 
 ##### 9th-Level Metakinetic Abilities
 
@@ -12346,13 +12346,13 @@ Choose one of the following abilities.
 > |------------------------------------|--------------------:|
 > | **📏 Melee 1**                     | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 + A psychic damage; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 > - **12-16:** 10 + A psychic damage; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 > - **17+:** 13 + A psychic damage; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed)
 >
-> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your Intuition score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become [winded](scc:mcdm.heroes.v1/rule.health/winded), they are instead reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Any creature reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, the target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of each of your turns. If this ability causes a creature who is not a leader or solo creature to become [winded](scc:mcdm.heroes.v1/rule.health/winded), they are instead reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Any creature reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this ability is forgotten by all creatures of your level or lower in the timescape who are not present in the encounter. Loved ones of the forgotten creature retain a faint sense of melancholy. This effect can be reversed only at the Director's discretion.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -12362,7 +12362,7 @@ As a 10th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fe
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility and Intuition scores each increase to 5.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Discipline Mastery Improvement
@@ -12411,18 +12411,18 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
 - 2, 1, 0, 0
 - 1, 1, 1, 0
 
-**Weak Potency:** Agility − 2
+**Weak Potency:** [Agility](scc:mcdm.heroes.v1/rule.character/agility) − 2
 
-**Average Potency:** Agility − 1
+**Average Potency:** [Agility](scc:mcdm.heroes.v1/rule.character/agility) − 1
 
-**Strong Potency:** Agility
+**Strong Potency:** [Agility](scc:mcdm.heroes.v1/rule.character/agility)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 18
 
@@ -12558,7 +12558,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Smoke Bomb
 
-You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your Agility score. If you end this movement with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
+You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. If you end this movement with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
 
 <!-- @type: feature -->
 #### College Triggered Action
@@ -12657,7 +12657,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A damage
 > - **12-16:** 5 + A damage
@@ -12674,7 +12674,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A damage
 > - **12-16:** 6 + A damage
@@ -12691,7 +12691,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A damage
 > - **12-16:** 6 + A damage
@@ -12708,7 +12708,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A damage
 > - **12-16:** 5 + A damage
@@ -12733,7 +12733,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; slide 2
 > - **12-16:** 6 + A damage; slide 3
@@ -12750,7 +12750,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A damage; A < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **12-16:** 6 + A damage; A < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
@@ -12765,7 +12765,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 5 + A damage
 > - **12-16:** 8 + A damage
@@ -12782,7 +12782,7 @@ Choose one heroic ability from the following options, each of which costs 3 insi
 > |-----------------------------------|--------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 Two creatures or objects** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 damage
 > - **12-16:** 6 damage
@@ -12801,7 +12801,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 2d6 + 7 + A damage
 > - **12-16:** 2d6 + 11 + A damage
@@ -12818,7 +12818,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 >
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed and make one power roll that targets up to three enemies who came adjacent to you during the move.
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 damage
 > - **12-16:** 6 damage
@@ -12833,7 +12833,7 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 + A damage; R < WEAK, the target has damage weakness 5 (save ends)
 > - **12-16:** 9 + A damage; R < AVERAGE, the target has damage weakness 5 (save ends)
@@ -12876,7 +12876,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 <!-- @type: feature -->
 ##### Burning Ash
 
-The ash you leave behind burns your foes. The first time on a turn that you use a shadow ability to [teleport](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score.
+The ash you leave behind burns your foes. The first time on a turn that you use a shadow ability to [teleport](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature | @id: friend -->
 ##### Friend!
@@ -12908,7 +12908,7 @@ Choose one of the following abilities.
 > |------------------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**               | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 + A damage; you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target 1 square
 > - **12-16:** 10 + A damage; you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the target up to 3 squares
@@ -12942,7 +12942,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You attach a small bomb to a creature. If you are hidden from the creature, they don't notice the bomb and you remain hidden. The creature otherwise notices the bomb and can disarm and remove it as a main action. If they don't, at the end of your next turn, the bomb detonates. When the bomb detonates, you make a power roll targeting each enemy within 2 squares of it.
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A fire damage
 > - **12-16:** 7 + A fire damage
@@ -12957,7 +12957,7 @@ Choose one of the following abilities.
 > |-------------------------|---------------------------------:|
 > | **📏 3 cube within 10** | **🎯 Each creature in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 2 poison damage
 > - **12-16:** 5 poison damage
@@ -12978,13 +12978,13 @@ Choose one of the following abilities.
 > |-------------------------|---------------------------------:|
 > | **📏 3 cube within 10** | **🎯 Each creature in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** Slide 4
 > - **12-16:** Slide 5
 > - **17+:** Slide 7
 >
-> **Effect:** This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability. Instead, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number equal to the target's Intuition score.
+> **Effect:** This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores stability. Instead, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number equal to the target's [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 <!-- @type: ability | @cost: 5 Insight | @subtype: triggered -->
 > ###### So Gullible (5 Insight)
@@ -13045,7 +13045,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 9 + A damage
 > - **12-16:** 13 + A damage
@@ -13062,7 +13062,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 8 + A damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 12 + A damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -13077,7 +13077,7 @@ Choose one heroic ability from the following options, each of which costs 7 insi
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 + A damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 11 + A damage; M < AVERAGE, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (save ends)
@@ -13091,7 +13091,7 @@ As a 4th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Keep It Down
@@ -13168,7 +13168,7 @@ Additionally, you can now bring an adjacent willing creature along with you when
 <!-- @type: feature -->
 ##### Volatile Reagents
 
-Whenever you take damage, each enemy adjacent to you takes fire, acid, or poison damage (your choice) equal to your Agility score.
+Whenever you take damage, each enemy adjacent to you takes fire, acid, or poison damage (your choice) equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 Additionally, your [Defensive Roll](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/defensive-roll) ability now allows you to [shift](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares, including [shifting](scc:mcdm.heroes.v1/movement/shifting) vertically. If you don't end this [shift](scc:mcdm.heroes.v1/movement/shifting) on solid ground and are not [flying](scc:mcdm.heroes.v1/movement/fly), you fall.
 
@@ -13199,7 +13199,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 >
 > **Effect:** You and the target are removed from the encounter map until the start of your next turn. You reappear in the spaces you left or the nearest unoccupied spaces. Make a power roll upon your return.
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 8 + A corruption damage
 > - **12-16:** 13 + A corruption damage
@@ -13214,7 +13214,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > |-----------------------------|------------------------------:|
 > | **📏 10 x 1 line within 1** | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 10 damage
 > - **12-16:** 14 damage
@@ -13231,7 +13231,7 @@ Choose one heroic ability from the following options, each of which costs 9 insi
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 10 + A damage; P < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 15 + A damage; P < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -13255,12 +13255,12 @@ You gain one perk of your choice.
 As a maneuver, you lose control of yourself, becoming a shadow creature dripping with ash. This transformation lasts until the end of the encounter, until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), or after 1 uninterrupted hour of quiet focus outside of combat. You gain the following effects while in this form:
 
 - You can automatically climb at full speed while moving.
-- Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.
+- Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score the first time you pass through their space on a turn.
 - If you end your turn with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
 - You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each of your turns.
 - You have corruption immunity equal to 5 + your level.
 - Creatures gain an edge on strikes against you.
-- You take a bane on Presence tests made to interact with other creatures.
+- You take a bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with other creatures.
 
 <!-- @type: feature -->
 #### 6th-Level College Ability
@@ -13280,7 +13280,7 @@ Choose one of the following abilities.
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1**                   | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 + A damage; vertical push 5
 > - **12-16:** 6 + A damage; vertical push 10
@@ -13297,7 +13297,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 4 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover) can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover) can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
 
 ##### 6th-Level Caustic Alchemy Abilities
 
@@ -13329,7 +13329,7 @@ Choose one of the following abilities.
 >
 > A creature who drinks the potion receives benefits based on your power roll.
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** The creature's speed is increased by 2 until the end of the encounter.
 > - **12-16:** The creature can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of the encounter.
@@ -13359,7 +13359,7 @@ Choose one of the following abilities.
 > |--------------------------------------|-------------------:|
 > | **📏 Melee 1**                       | **🎯 Two enemies** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 2 damage; if the target has R < WEAK, before the damage is resolved, they make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > - **12-16:** 5 damage; if the target has R < AVERAGE, before the damage is resolved, they use a main action ability of your choice.
@@ -13433,7 +13433,7 @@ Your movement no longer provokes opportunity attacks. Additionally, you can use 
 <!-- @type: feature -->
 ##### Time Bomb
 
-You have damage immunity against area abilities and effects equal to your Agility score. You also have the following ability, which you can use once per round on your turn.
+You have damage immunity against area abilities and effects equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your turn.
 
 <!-- @type: ability -->
 > ###### Time Bomb
@@ -13444,7 +13444,7 @@ You have damage immunity against area abilities and effects equal to your Agilit
 > |-------------------------|------------------------------:|
 > | **📏 2 cube within 10** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target takes acid, fire, or poison damage (your choice) equal to your Agility score.
+> **Effect:** Each target takes acid, fire, or poison damage (your choice) equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 >
 > For each combat round that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used with this ability. After using the ability or at the end of the encounter, its area and [surges](scc:mcdm.heroes.v1/rule.resource/surge) are reset.
 >
@@ -13464,7 +13464,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 12 + A damage
 > - **12-16:** 18 + A damage
@@ -13481,7 +13481,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > |-----------------|------------------------------:|
 > | **📏 2 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 11 corruption damage; A < WEAK, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > - **12-16:** 16 corruption damage; A < AVERAGE, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
@@ -13507,7 +13507,7 @@ Choose one heroic ability from the following options, each of which costs 11 ins
 > |----------------------------|------------------------------:|
 > | **📏 5 x 1 line within 5** | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 12 damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 18 damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -13545,7 +13545,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to twice your speed, making one power roll that targets each creature you come adjacent to during the [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** An enemy takes 6 damage; an ally can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares.
 > - **12-16:** An enemy takes 10 damage; an ally can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares.
@@ -13560,7 +13560,7 @@ Choose one of the following abilities.
 > |----------------------------------|--------------------:|
 > | **📏 Melee 3**                   | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 13 + A corruption damage; push 3
 > - **12-16:** 18 + A corruption damage; push 5
@@ -13583,7 +13583,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each enemy within 3 squares of the target who is not currently targeted by this ability also becomes targeted by this ability. This effect continues until there are no more available targets. The ability deals acid, fire, or poison damage (your choice).
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 damage
 > - **12-16:** 10 damage
@@ -13598,7 +13598,7 @@ Choose one of the following abilities.
 > |-----------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10** | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 4 + A fire damage; vertical push 8
 > - **12-16:** 7 + A fire damage; vertical push 10
@@ -13630,13 +13630,13 @@ Choose one of the following abilities.
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 15 + A damage
 > - **12-16:** 21 + A damage
 > - **17+:** 28 + A damage
 >
-> **Effect:** If you are disguised as a creature the target knew using your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability, this ability deals extra damage equal to three times your Agility score.
+> **Effect:** If you are disguised as a creature the target knew using your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability, this ability deals extra damage equal to three times your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -13646,7 +13646,7 @@ As a 10th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the followin
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Death Pool
@@ -13697,17 +13697,17 @@ Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw 
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and a Reason of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a [Might](scc:mcdm.heroes.v1/rule.character/might) of 2 and a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Reason − 2
+**Weak Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 2
 
-**Average Potency:** Reason − 1
+**Average Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 1
 
-**Strong Potency:** Reason
+**Strong Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 21
 
@@ -13801,7 +13801,7 @@ At the Director's discretion, you and your allies can use skills from the intrig
 
 Your encyclopedic knowledge of the history of battle lets you apply that knowledge to current challenges. While you are present, each hero with you treats the Discover Lore project related to a war or battle as one category cheaper. This makes projects seeking common lore free, but such projects still require a respite activity to complete. (See Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects) for more information.)
 
-Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a Reason test as a respite activity. The following test outcomes apply to a combat encounter:
+Additionally, if you have 24 hours or more before a combat encounter or negotiation, and you have one or more clues or rumors regarding the encounter or negotiation, you can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test as a respite activity. The following test outcomes apply to a combat encounter:
 
 - **≤11:** The Director tells you the number of creatures in the encounter.
 - **12-16:** The Director tells you the number and level of the creatures in the encounter.
@@ -13871,7 +13871,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 >
 > **Effect:** You can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. If the target is you, or if you end this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target, the target takes half the damage. If the damage has any potency effect associated with it, the potency is decreased by 1.
 >
-> **Spend 1 Focus:** This ability's distance becomes Melee 1 + your Reason score, and you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score instead of 1 square.
+> **Spend 1 Focus:** This ability's distance becomes Melee 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, and you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score instead of 1 square.
 
 <!-- @type: feature -->
 #### Field Arsenal
@@ -13913,9 +13913,9 @@ You know how to focus the attention of your allies as you push them toward victo
 >
 > While a creature marked by you is within your line of effect, you and allies within your line of effect gain an edge on power rolls made against that creature. Additionally, whenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 focus to gain one of the following benefits as a free triggered action:
 >
-> - The ability deals extra damage equal to twice your Reason score.
+> - The ability deals extra damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - The creature dealing the damage can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-> - The creature dealing the damage can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score.
+> - The creature dealing the damage can [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - If you damage a creature marked by you with a melee ability, the creature is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn.
 >
 > You can't gain more than one benefit from the same trigger.
@@ -13965,7 +13965,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > |------------------|--------------------:|
 > | **📏 Ranged 10** | **🎯 Three allies** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** Each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 > - **12-16:** Each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
@@ -13980,7 +13980,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 3 + M damage; M < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 5 + M damage; M < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -13995,7 +13995,7 @@ Choose one heroic ability from the following options, each of which costs 3 focu
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 3 + M damage; you or one ally within 10 squares of you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries)
 > - **12-16:** 5 + M damage; you or one ally within 10 squares of you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries)
@@ -14026,7 +14026,7 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature or object** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 5 + M damage; one ally within 10 squares of you can use a strike signature ability against the target as a free triggered action
 > - **12-16:** 9 + M damage; one ally within 10 squares of you can use a strike signature ability that gains an edge against the target as a free triggered action
@@ -14045,7 +14045,7 @@ Choose one heroic ability from the following options, each of which costs 5 focu
 >
 > **Effect:** You mark the target.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 4 + M damage; R < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 6 + M damage; R < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -14148,7 +14148,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed directly toward an ally, ending adjacent to them, then swapping locations with that ally as long as you can fit into each other's spaces. The ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), and you can make the following weapon strike with a distance of melee 1 against a creature.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 + R damage; R < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 3 + R damage; R < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -14167,7 +14167,7 @@ Choose one of the following abilities.
 > |----------------------------|--------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 5 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 > - **12-16:** 9 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
@@ -14205,7 +14205,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You move up to your speed toward the triggering ally, ending this movement adjacent to them or in the nearest square if you can't reach an adjacent square. The triggering ally can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) for each enemy you came adjacent to during the move. You then make a power roll against the target.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** R < WEAK, the target is [frightened](scc:mcdm.heroes.v1/condition/frightened) of the triggering ally (save ends)
 > - **12-16:** R < AVERAGE, the target is [frightened](scc:mcdm.heroes.v1/condition/frightened) of the triggering ally (save ends)
@@ -14220,7 +14220,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 1 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Until the start of your next turn, each target has a bonus to stability equal to your Might score. Additionally, each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** Until the start of your next turn, each target has a bonus to stability equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -14289,7 +14289,7 @@ As a 4th-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Reason scores each increase to 3.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Reason](scc:mcdm.heroes.v1/rule.character/reason) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Focus on Their Weaknesses
@@ -14342,7 +14342,7 @@ You have mastered the ability to distract your foes, allowing you and your allie
 <!-- @type: feature -->
 ##### I Predicted That
 
-Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an edge on Reason tests.
+Your expertise in history and lore allows you and your allies to outthink rivals in the present day. You and any ally within 10 squares of you gain an edge on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests.
 
 <!-- @type: feature -->
 ##### Leave No Trace
@@ -14373,7 +14373,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > |---------------------------|---------------------|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 9 + M damage
 > - **12-16:** 13 + M damage
@@ -14412,7 +14412,7 @@ Choose one heroic ability from the following options, each of which costs 9 focu
 > |------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One ally** |
 >
-> **Effect:** The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your Reason score. The ability has its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost reduced by 1 + your Reason score (minimum cost 0).
+> **Effect:** The target uses a heroic ability with the Strike keyword as a free triggered action, and deals extra damage with that ability equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The ability has its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost reduced by 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score (minimum cost 0).
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -14460,7 +14460,7 @@ Choose one of the following abilities.
 > |-----------------------------------|---------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 Two creatures** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 6 + M damage; slide 1
 > - **12-16:** 9 + M damage; slide 3
@@ -14483,7 +14483,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target is marked by you. Immediately and until the end of the encounter, the Director tells you if any creatures marked by you have damage immunity or weakness and the value of that immunity or weakness. Additionally, you and each ally within 3 squares of you gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 >
-> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore damage immunity and deal extra damage equal to three times your Reason score.
+> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore damage immunity and deal extra damage equal to three times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: ability | @cost: 9 Focus | @id: hustle -->
 > ###### Hustle! (9 Focus)
@@ -14513,7 +14513,7 @@ Choose one of the following abilities.
 >
 > **Effect:** The target takes half the damage. You then make a power roll against the triggering creature.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** A < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** A < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -14528,7 +14528,7 @@ Choose one of the following abilities.
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1**                    | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 6 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee strike signature ability instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
 > - **12-16:** 9 + M damage; one ally within 10 squares can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action as a free triggered action, and can use a melee strike signature ability that gains an edge instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) for the charge
@@ -14617,21 +14617,21 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 
 You have trained your squad to be silent ambushers.
 
-**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to let the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the strike is resolved.
+**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to let the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the strike is resolved.
 
 <!-- @type: feature -->
 ##### Pincer Movement
 
 You have trained your squad to coordinate their movements to maximize combat impact.
 
-**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to have the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score before the strike is resolved. If you didn't make the strike, you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well. If you did make the strike, one ally within 10 squares of you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well.
+**Mark Benefit:** When you or any ally makes a strike against a creature marked by you, you can spend 2 focus to have the character making the strike [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score before the strike is resolved. If you didn't make the strike, you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well. If you did make the strike, one ally within 10 squares of you can make this [shift](scc:mcdm.heroes.v1/movement/shifting) as well.
 
 <!-- @type: feature -->
 ##### See Your Enemies Driven Before You
 
 You have trained your squad to maximize impact and break enemy lines when they attack.
 
-**Mark Benefit:** When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your Reason score. That character can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your Reason score, ending this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
+**Mark Benefit:** When you or any ally makes a melee strike against a creature marked by you, you can spend 2 focus to have the character making the strike push the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. That character can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, ending this [shift](scc:mcdm.heroes.v1/movement/shifting) adjacent to the target.
 
 <!-- @type: feature -->
 #### 11-Focus Ability
@@ -14682,7 +14682,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**        | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 6 + M damage
 > - **12-16:** 10 + M damage
@@ -14731,7 +14731,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Each target uses a signature ability against one or more targets of your choosing, with each ability automatically obtaining a tier 3 outcome on the power roll. After resolving the targets' abilities, you make a power roll against each original target.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** R < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** R < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -14778,7 +14778,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You mark the target.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 11 + M damage
 > - **12-16:** 16 + M damage
@@ -14797,7 +14797,7 @@ Choose one of the following abilities.
 >
 > **Effect:** The target is marked by you.
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** 8 + M damage
 > - **12-16:** 13 + M damage
@@ -14813,7 +14813,7 @@ As a 10th-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fo
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Might and Reason scores each increase to 5.
+Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Reason](scc:mcdm.heroes.v1/rule.character/reason) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Command
@@ -14859,17 +14859,17 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Reason of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2 and a [Presence](scc:mcdm.heroes.v1/rule.character/presence) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Reason − 2
+**Weak Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 2
 
-**Average Potency:** Reason − 1
+**Average Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 1
 
-**Strong Potency:** Reason
+**Strong Potency:** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 18
 
@@ -14926,7 +14926,7 @@ At the start of a combat encounter or some other stressful situation tracked in 
 
 Additionally, the first time each combat round that a creature is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you gain 1 clarity.
 
-You can spend clarity you don't have, pushing that [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) into negative numbers to a maximum negative value equal to 1 + your Reason score. At the end of each of your turns, you take 1 damage for each negative point of clarity.
+You can spend clarity you don't have, pushing that [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) into negative numbers to a maximum negative value equal to 1 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. At the end of each of your turns, you take 1 damage for each negative point of clarity.
 
 Whenever you have clarity below 0, you are strained. Some psionic abilities have additional effects if you are already strained or become strained when you use them. Strained effects can still impact you even after you are no longer strained.
 
@@ -14954,7 +14954,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > |--------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                           | **🎯 One creature** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R psychic damage
 > - **12-16:** 4 + R psychic damage
@@ -15002,17 +15002,17 @@ Through meditation, you create a ward that protects you. Choose one of the follo
 <!-- @type: feature -->
 ##### Entropy Ward
 
-Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your Reason score and they can't use triggered actions until the end of their next turn.
+Your ward slows time for your enemies. Whenever a creature deals damage to you, their speed is reduced by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and they can't use triggered actions until the end of their next turn.
 
 <!-- @type: feature -->
 ##### Repulsive Ward
 
-You surround yourself with an invisible ward of telekinetic energy. Whenever an adjacent creature deals damage to you, you can use a free triggered action to push them up to a number of squares equal to your Reason score.
+You surround yourself with an invisible ward of telekinetic energy. Whenever an adjacent creature deals damage to you, you can use a free triggered action to push them up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Steel Ward
 
-Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain damage immunity equal to your Reason score until the end of your next turn.
+Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain damage immunity equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the end of your next turn.
 
 <!-- @type: feature -->
 ##### Vanishing Ward
@@ -15051,7 +15051,7 @@ You have the following ability.
 > |---------------------|----------------------------:|
 > | **📏 Ranged 10**    | **🎯 Self or one creature** |
 >
-> **Effect:** The target shifts up to a number of squares equal to your Reason score.
+> **Effect:** The target shifts up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 >
 > **Spend 2 Clarity:** The target can use a maneuver.
 
@@ -15105,7 +15105,7 @@ You have the following ability.
 > |---------------------|---------------------------------------------:|
 > | **📏 Ranged 10**    | **🎯 Self or one size 1 creature or object** |
 >
-> **Effect:** You slide the target up to a number of squares equal to your Reason score.
+> **Effect:** You slide the target up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 >
 > **Spend 2+ Clarity:** The size of the creature or object you can target increases by 1 for every 2 clarity spent.
 >
@@ -15146,7 +15146,7 @@ You have the following ability.
 >
 > **Trigger:** The target takes damage or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 >
-> **Effect:** The target takes half the triggering damage, or the distance of the triggering [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to your Reason score. If the target took damage and was force moved, you choose the effect. If the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced to 0 squares, the target can push the source of the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to your Reason score.
+> **Effect:** The target takes half the triggering damage, or the distance of the triggering [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced by a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If the target took damage and was force moved, you choose the effect. If the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is reduced to 0 squares, the target can push the source of the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 #### Talent Abilities
@@ -15166,7 +15166,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 2 + P corruption damage; P < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 3 + P corruption damage; P < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -15185,7 +15185,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                             | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 + R cold damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 > - **12-16:** 4 + R cold damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
@@ -15202,7 +15202,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------------------|------------------------------:|
 > | **📏 3 cube within 10**                      | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 fire damage
 > - **12-16:** 4 fire damage
@@ -15221,7 +15221,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------|------------------------------:|
 > | **📏 Ranged 10**                 | **🎯 One creature or object** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** Slide 2 + R
 > - **12-16:** Slide 4 + R
@@ -15238,7 +15238,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------|------------------------------:|
 > | **📏 1 burst**               | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 psychic damage
 > - **12-16:** 5 psychic damage; push 1
@@ -15255,7 +15255,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature or object** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 3 + R damage
 > - **12-16:** 5 + R damage
@@ -15263,7 +15263,7 @@ Choose two signature abilities from the following options. Signature abilities c
 >
 > **Effect:** A worthless size 1M object drops onto the target to deal the damage, then rolls into an adjacent unoccupied space of your choice. The object is made of wood, stone, or metal (your choice).
 >
-> **Strained:** The object explodes after the damage is dealt, and each creature adjacent to the target takes damage equal to your Reason score. You also take damage equal to your Reason score that can't be reduced in any way.
+> **Strained:** The object explodes after the damage is dealt, and each creature adjacent to the target takes damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. You also take damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score that can't be reduced in any way.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Optic Blast
@@ -15274,7 +15274,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |------------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                               | **🎯 One creature or object** |
 > 
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 2 + R damage; M < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** 4 + R damage; M < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -15282,7 +15282,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > 
 > **Effect:** When targeting an object with a solid reflective surface or a creature carrying or wearing such an object (such as a mirror, an unpainted metal shield, or shiny metal plate armor), you can target one additional creature or object within 3 squares of the first target.
 > 
-> **Strained:** You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately, and you take damage equal to your Reason score that can't be reduced in any way.
+> **Strained:** You gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately, and you take damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score that can't be reduced in any way.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Spirit Sword
@@ -15293,7 +15293,7 @@ Choose two signature abilities from the following options. Signature abilities c
 > |----------------------------------------|------------------------------:|
 > | **📏 Melee 2**                         | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 3 + P damage
 > - **12-16:** 6 + P damage
@@ -15320,9 +15320,9 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
-> **Effect:** If you target an ally, they gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to three times your Presence score, and they can end one effect on them that is ended by a saving throw or that ends at the end of their turn. If you target an enemy, you make a power roll.
+> **Effect:** If you target an ally, they gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score, and they can end one effect on them that is ended by a saving throw or that ends at the end of their turn. If you target an enemy, you make a power roll.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 3 + P psychic damage; I < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 6 + P psychic damage; I < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -15337,7 +15337,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > |----------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                             | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 3 + R damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 5 + R damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -15367,11 +15367,11 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 >
 > **Effect:** Choose the damage type and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 3 + R damage; R < WEAK, the target has weakness 5 (save ends)
 > - **12-16:** 6 + R damage; R < AVERAGE, the target has weakness 5 (save ends)
-> - **17+:** 9 + R damage; R < STRONG, the target has weakness equal to 5 + your Reason score (save ends)
+> - **17+:** 9 + R damage; R < STRONG, the target has weakness equal to 5 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score (save ends)
 
 ###### 5-Clarity Ability
 
@@ -15399,7 +15399,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > |----------------------------------|------------------------:|
 > | **📏 Ranged 10**                 | **🎯 Self or one ally** |
 >
-> **Effect:** The target ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and takes no damage from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your Reason score. When pushing an ally, the target can ignore that ally's stability. A creature can only be force moved this way once a turn.
+> **Effect:** The target ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and takes no damage from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) until the start of your next turn. Whenever the target enters a square while under this effect, they can push one adjacent creature up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. When pushing an ally, the target can ignore that ally's stability. A creature can only be force moved this way once a turn.
 >
 > **Strained:** You are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). While you are [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, whenever you are force moved, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a +5 bonus.
 
@@ -15412,7 +15412,7 @@ Choose one heroic ability from the following options, each of which costs 5 clar
 > |------------------------------------|------------------------:|
 > | **📏 Ranged 10**                   | **🎯 Self or one ally** |
 >
-> **Effect:** The target's stability increases by an amount equal to your Reason score, and they gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). This stability increase lasts until the target no longer has [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this ability.
+> **Effect:** The target's stability increases by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score, and they gain 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). This stability increase lasts until the target no longer has [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this ability.
 >
 > **Strained:** You can't use maneuvers (save ends).
 
@@ -15465,7 +15465,7 @@ You gain an edge on tests made to stop combat and start a negotiation. Additiona
 <!-- @type: feature -->
 ##### Ease Their Fall
 
-Whenever you land after a fall, or if any falling creature lands within 2 squares of you, you can use a free triggered action to reduce the falling damage by an amount equal to 2 + your Reason score.
+Whenever you land after a fall, or if any falling creature lands within 2 squares of you, you can use a free triggered action to reduce the falling damage by an amount equal to 2 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 #### 2nd-Level Tradition Ability
@@ -15485,7 +15485,7 @@ Choose one of the following abilities.
 > |----------------------------------|---------------:|
 > | **📏 Ranged 10**                 | **🎯 Special** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** You target two creatures, one of which can be you.
 > - **12-16:** You target three creatures, one of which can be you.
@@ -15504,7 +15504,7 @@ Choose one of the following abilities.
 > |----------------------------------|----------------------------------:|
 > | **📏 Ranged 10**                 | **🎯 Three creatures or objects** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** The target's speed is halved (save ends), or if P < WEAK, the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 > - **12-16:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), or if P < AVERAGE, the target's speed is 0 (save ends).
@@ -15527,7 +15527,7 @@ Choose one of the following abilities.
 > |--------------------------------|------------------------------:|
 > | **📏 1 burst**                 | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 3 damage; vertical push 2
 > - **12-16:** 6 damage; vertical push 4
@@ -15544,7 +15544,7 @@ Choose one of the following abilities.
 > |------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature or object** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 6 + R damage; M < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** 10 + R damage; M < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -15565,7 +15565,7 @@ Choose one of the following abilities.
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 6 + R psychic damage; I < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 10 + R psychic damage; I < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -15582,7 +15582,7 @@ Choose one of the following abilities.
 > |--------------------------------|-----------------:|
 > | **📏 Ranged 10**               | **🎯 One enemy** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** The target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of your choice.
 > - **12-16:** The target shifts up to their speed and uses their signature ability against any enemies of your choice.
@@ -15616,7 +15616,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > |----------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                             | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 3 + P corruption damage; P < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 5 + P corruption damage; the target is flung through time, and if P < AVERAGE, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -15639,7 +15639,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 >
 > Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 damage
 > - **12-16:** 3 damage
@@ -15669,13 +15669,13 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > |---------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                            | **🎯 One creature** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 6 + P damage; P < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** 10 + P damage; P < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 14 + P damage; P < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The target takes a bane on Presence tests until the end of the encounter.
+> **Effect:** The target takes a bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until the end of the encounter.
 >
 > **Strained:** The potency of this ability increases by 1. You take 2d6 damage and gain 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately.
 
@@ -15687,7 +15687,7 @@ As a 4th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason and Presence scores each increase to 3.
+Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Mind Projection
@@ -15751,7 +15751,7 @@ While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves ir
 <!-- @type: feature -->
 ##### Kinetic Amplifier
 
-Whenever you force move a creature, you can spend up to 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). For each [surge](scc:mcdm.heroes.v1/rule.resource/surge) spent, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Reason score.
+Whenever you force move a creature, you can spend up to 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). For each [surge](scc:mcdm.heroes.v1/rule.resource/surge) spent, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Remote Amplification
@@ -15782,7 +15782,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > |----------------------------------|------------------------:|
 > | **📏 Ranged 10**                 | **🎯 Self or one ally** |
 >
-> **Effect:** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your Reason score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.
+> **Effect:** Until the start of your next turn, the target has cold immunity 10 and fire immunity 10, and their strikes deal extra fire damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. Additionally, whenever an enemy uses a melee ability against the target while they are under this effect, the enemy takes 5 fire damage.
 >
 > **Strained:** The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). You are [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
@@ -15797,7 +15797,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 >
 > **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) to a square on the opposite side of the area before making the power roll.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 12 sonic damage
 > - **12-16:** 18 sonic damage
@@ -15814,7 +15814,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 10 + R psychic damage; R < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 14 + R psychic damage; R < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -15833,7 +15833,7 @@ Choose one heroic ability from the following options, each of which costs 9 clar
 > |-----------------------------------------|-------------------:|
 > | **📏 Ranged 10**                        | **🎯 Two enemies** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 8 damage; A < WEAK, the target is stitched to the other target (save ends)
 > - **12-16:** 13 damage; A < AVERAGE, the target is stitched to the other target (save ends)
@@ -15861,7 +15861,7 @@ Whenever you use an ability that is a main action or a maneuver with the Psionic
 <!-- @type: feature -->
 ##### Dynamic Power (1 Clarity)
 
-If the ability force moves a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your Reason score.
+If the ability force moves a target, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a bonus equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Expanded Power (3 Clarity)
@@ -15871,17 +15871,17 @@ If the ability targets an area, you increase the size of the area by 1. If the a
 <!-- @type: feature -->
 ##### Extended Power (1 Clarity)
 
-If the ability is ranged, the distance gains a bonus equal to your Reason score. If the ability is melee, the distance gains a +2 bonus.
+If the ability is ranged, the distance gains a bonus equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If the ability is melee, the distance gains a +2 bonus.
 
 <!-- @type: feature -->
 ##### Heightened Power (1 Clarity)
 
-If the ability deals rolled damage, it deals extra damage equal to your Reason score.
+If the ability deals rolled damage, it deals extra damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Magnified Power (5 Clarity)
 
-If the ability has a potency, you increase that potency by an amount equal to your Reason score.
+If the ability has a potency, you increase that potency by an amount equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature -->
 ##### Shared Power (5 Clarity)
@@ -15915,7 +15915,7 @@ Choose one of the following abilities.
 >
 > **Strained:** This ability gains the Strike keyword as the vision hurts the target's psyche. You make a power roll, then are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 8 + P psychic damage
 > - **12-16:** 13 + P psychic damage
@@ -15934,7 +15934,7 @@ Choose one of the following abilities.
 >
 > Make a power roll that targets each enemy in the area.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** P < WEAK, the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) until the effect ends
 > - **12-16:** P < AVERAGE, the target's speed is 0 until the effect ends
@@ -15955,7 +15955,7 @@ Choose one of the following abilities.
 > |----------------------------------------|--------------------------------------------:|
 > | **📏 4 cube within 10**                | **🎯 Each creature and object in the area** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 6 damage; vertical pull 5 toward the center of the area
 > - **12-16:** 9 damage; vertical pull 7 toward the center of the area
@@ -15974,7 +15974,7 @@ Choose one of the following abilities.
 > |----------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                             | **🎯 One creature or object** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** Slide 4 + R; M < WEAK, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
 > - **12-16:** Slide 8 + R; M < AVERAGE, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
@@ -15995,7 +15995,7 @@ Choose one of the following abilities.
 > |-------------------------------------------|--------------------:|
 > | **📏 Melee 2**                            | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 10 psychic damage; the target takes a bane on ability rolls made to harm you or your allies (save ends)
 > - **12-16:** 14 psychic damage; the target has a double bane on ability rolls made to harm you or your allies (save ends)
@@ -16014,7 +16014,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You target a number of creatures with this ability determined by the outcome of your power roll. You and your allies are invisible to each target until the start of your next turn.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** Two creatures
 > - **12-16:** Three creatures
@@ -16030,7 +16030,7 @@ As a 7th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Ancestral Memory
 
-Each time you finish a respite, you can choose a number of skills you have up to your Reason score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next respite.
+Each time you finish a respite, you can choose a number of skills you have up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next respite.
 
 <!-- @type: feature -->
 #### Cascading Strain
@@ -16106,7 +16106,7 @@ Your mind can carry your body through tough times. You ignore [difficult terrain
 <!-- @type: feature -->
 ##### Mindlink
 
-During a respite, you can choose a number of creatures up to your Reason score who you have communicated with using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+During a respite, you can choose a number of creatures up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score who you have communicated with using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature, creating a telepathic link among all of you. Whenever a linked creature spends one or more [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), each other linked creature can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature -->
 #### Stasis Shield
@@ -16147,7 +16147,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > |---------------------------------------------|------------------------------:|
 > | **📏 Ranged 10**                            | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 10 + P damage; P < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 14 + P damage; P < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -16166,7 +16166,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > |---------------------------------------|--------------------:|
 > | **📏 Melee 2**                        | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 12 + R damage; R < WEAK, the target takes a bane on their next power roll
 > - **12-16:** 17 + R damage; R < AVERAGE, the target takes a bane on power rolls (save ends)
@@ -16219,7 +16219,7 @@ Your mind is an impenetrable palace that shields you from danger. You gain the f
 - You can breathe even when there is no breathable air.
 - You have psychic immunity 10.
 - Creatures can't read your thoughts unless you allow them to.
-- Your Reason and Intuition are treated as 2 higher for the purpose of resisting the potency of abilities.
+- Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) are treated as 2 higher for the purpose of resisting the potency of abilities.
 - You can't be made [taunted](scc:mcdm.heroes.v1/condition/taunted) or [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 <!-- @type: feature -->
@@ -16244,7 +16244,7 @@ Choose one of the following abilities.
 > 
 > **Strained:** Make a power roll that targets you and each enemy within distance.
 > 
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
 > - **≤11:** 4 corruption damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 6 corruption damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -16276,7 +16276,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Make a power roll to determine the area of this ability. Each target is vertical pushed 6 squares. You can target only objects of size 1L or smaller.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 2 burst
 > - **12-16:** 3 burst
@@ -16293,7 +16293,7 @@ Choose one of the following abilities.
 > |--------------------------------|-----------------------------------------:|
 > | **📏 3 burst**                 | **🎯 Each enemy and object in the area** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 6 damage; push 7
 > - **12-16:** 9 damage; push 10
@@ -16316,7 +16316,7 @@ Choose one of the following abilities.
 > | ------------------------------------|--------------------:|
 > | **📏 Ranged 10**  | **🎯 One creature** |
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** 15 + R psychic damage
 > - **12-16:** 24 + R psychic damage
@@ -16337,7 +16337,7 @@ Choose one of the following abilities.
 >
 > **Effect:** You and each target ally can't obtain lower than a tier 2 outcome on power rolls until the start of your next turn. Each target enemy is affected by the ability's power roll.
 >
-> **Power Roll + Reason:**
+> **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
 > - **≤11:** R < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** R < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -16353,7 +16353,7 @@ As a 10th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the followin
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason and Presence scores each increase to 5.
+Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Clear Mind
@@ -16404,17 +16404,17 @@ There is no visible text in the image provided. The image appears to show a deco
 
 ### Basics
 
-**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) of 2 and a [Presence](scc:mcdm.heroes.v1/rule.character/presence) of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
 - 1, 0, 0
 
-**Weak Potency:** Presence − 2
+**Weak Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence) − 2
 
-**Average Potency:** Presence − 1
+**Average Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence) − 1
 
-**Strong Potency:** Presence
+**Strong Potency:** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 18
 
@@ -16530,7 +16530,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score. Each chosen target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Each chosen target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 <!-- @type: feature -->
 #### 1st-Level Class Act Features
@@ -16575,7 +16575,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|---------------------------------:|
 > | **📏 2 aura**                | **🎯 Each creature in the area** |
 >
-> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your Presence score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
+> **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
 <!-- @type: feature -->
 ##### Dramatic Monologue
@@ -16613,7 +16613,7 @@ You have the following ability.
 > |-----------------|------------------------------:|
 > | **📏 2 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** Push 1
 > - **12-16:** Push 2
@@ -16653,7 +16653,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > **Effect:** At the end of each combat round while this performance is active, you can make a power roll against the target that ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover). You can't target the same creature twice with this effect.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** Lightning damage equal to your level
 > - **12-16:** Lightning damage equal to 5 + your level
@@ -16745,7 +16745,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------|--------------------------------:|
 > | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 2 damage
 > - **12-16:** 5 damage
@@ -16764,7 +16764,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |-----------------------------------|--------------------:|
 > | **📏 Ranged 10**                  | **🎯 One creature** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 2 + P psychic damage; P < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **12-16:** 5 + P psychic damage; P < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
@@ -16779,7 +16779,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |---------------------------------------|----------------:|
 > | **📏 Melee 1**                        | **🎯 One creature** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 3 + P damage
 > - **12-16:** 6 + P damage
@@ -16796,7 +16796,7 @@ Choose one signature ability from the following options. Signature abilities can
 > |----------------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 5**       | **🎯 One creature** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 4 + P psychic damage
 > - **12-16:** 5 + P psychic damage
@@ -16823,7 +16823,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**      | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 7 + P sonic damage
 > - **12-16:** 10 + P sonic damage
@@ -16840,7 +16840,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > |-----------------|------------------------------:|
 > | **📏 2 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** Slide 1; I < WEAK, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **12-16:** Slide 1; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
@@ -16857,7 +16857,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 > |-----------------------------|------------------------------:|
 > | **📏 3 cube within 10**     | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 4 damage; P < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 5 damage; P < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -16876,7 +16876,7 @@ Choose one heroic ability from the following options, each of which costs 3 dram
 >
 > **Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed. You make one power roll that targets each enemy you move adjacent to during this [shift](scc:mcdm.heroes.v1/movement/shifting).
 >
-> **Power Roll + Agility or Presence:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT); A < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT); A < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -16895,7 +16895,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > |-----------------|--------------------------------------:|
 > | **📏 3 burst**  | **🎯 Self and each ally in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** The target can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 > - **12-16:** The target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that gains an edge.
@@ -16932,7 +16932,7 @@ Choose one heroic ability from the following options, each of which costs 5 dram
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 + A damage; P < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 10 + A damage; P < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -17040,7 +17040,7 @@ Choose one of the following abilities.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 + **A** damage
 > - **12-16:** 11 + **A** damage
@@ -17061,7 +17061,7 @@ Choose one of the following abilities.
 > |-------------------|----------------:|
 > | **📏 Special**    |  **🎯 Special** |
 >
-> **Effect:** You use an ability that you have observed being used this combat round. The ability must have the Strike keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the strike, you use your Presence score for any power rolls, and any damage you deal is sonic damage.
+> **Effect:** You use an ability that you have observed being used this combat round. The ability must have the Strike keyword, cost 5 or fewer of a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and cost no Malice. When you make the strike, you use your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score for any power rolls, and any damage you deal is sonic damage.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Tough Crowd (5 Drama)
@@ -17074,7 +17074,7 @@ Choose one of the following abilities.
 >
 > **Effect:** The area is haunted by a swirling horde of phantoms until the end of the encounter. Allies can enter any square of the area without spending movement. At the end of each of your turns, you can make one power roll that targets each enemy in the area.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 5 corruption damage; M < WEAK, pull 1 toward the center of the area
 > - **12-16:** 9 corruption damage; M < AVERAGE, pull 2 toward the center of the area
@@ -17149,7 +17149,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > |-----------------|------------------------------:|
 > | **📏 4 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** Slide 3; P < WEAK, this slide ignores the target's stability
 > - **12-16:** Slide 5; P < AVERAGE, this slide ignores the target's stability
@@ -17166,7 +17166,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > |--------------------------------|------------------------------:|
 > | **📏 3 burst**                 | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 5 fire damage; A < WEAK, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 7 fire damage; A < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -17183,7 +17183,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 > |------------------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**              | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 5 + P damage
 > - **12-16:** 8 + P damage; push 3
@@ -17212,7 +17212,7 @@ As a 4th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility and Presence scores each increase to 3.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 3.
 
 <!-- @type: feature -->
 #### Melodrama
@@ -17250,11 +17250,11 @@ You can ask the Director for two clues regarding an upcoming encounter or negoti
 <!-- @type: feature | @id: hear-ye-hear-ye -->
 ##### Hear Ye, Hear Ye!
 
-By bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a Presence test:
+By bragging, intimidating, leading, or lying, you attempt to spread one piece of information into the local area. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test:
 
 - **≤11:** Your information reaches no one.
-- **12-16:** Your information reaches the nearest populated area of town size or larger. You and each ally present when you make the test gain an edge on Presence tests in that area until one of you spends a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- **17+:** Your information reaches the nearest populated area of town size or larger, plus the next closest such population. You and allies present for your test gain an edge on Presence tests made in those areas until you start your next respite.
+- **12-16:** Your information reaches the nearest populated area of town size or larger. You and each ally present when you make the test gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests in that area until one of you spends a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- **17+:** Your information reaches the nearest populated area of town size or larger, plus the next closest such population. You and allies present for your test gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made in those areas until you start your next respite.
 
 <!-- @type: feature -->
 ##### Latest Goss
@@ -17302,7 +17302,7 @@ Choose one of the following features.
 
 ###### Verbal Duel
 
-Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a free maneuver to exchange words with them. Make an opposed Presence test with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
+Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a free maneuver to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
 
 ###### We Can't Be Upstaged!
 
@@ -17317,7 +17317,7 @@ You have the following performance ability, which is usable with your [Routines]
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, a target who starts their turn in the area gains a bonus to the distance they can [shift](scc:mcdm.heroes.v1/movement/shifting) equal to your Presence score until the end of their turn.
+> **Effect:** While this performance is active, a target who starts their turn in the area gains a bonus to the distance they can [shift](scc:mcdm.heroes.v1/movement/shifting) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score until the end of their turn.
 
 <!-- @type: feature -->
 ##### Virtuoso Features
@@ -17346,7 +17346,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > |-------------------------|------------------------------:|
 > | **📏 3 burst**          | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 10 damage
 > - **12-16:** 14 damage
@@ -17385,7 +17385,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > |-------------------|---------------:|
 > | **📏 Ranged 10**  | **🎯 Special** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** One ally within distance can take their turn immediately after yours.
 > - **12-16:** Two allies within distance can take their turns immediately after yours in any order.
@@ -17435,7 +17435,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 5 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 2 psychic damage; P < WEAK, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** 5 psychic damage; P < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -17465,7 +17465,7 @@ Choose one of the following abilities.
 > |---------------------------|------------------------------:|
 > | **📏 Melee 1**            | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 12 + A damage; M < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **12-16:** 18 + A damage; M < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
@@ -17497,7 +17497,7 @@ Choose one of the following abilities.
 >
 > **Effect:** A [prone target](scc:mcdm.heroes.v1/condition/prone) ignores this ability.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 7 sonic damage; P < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** 10 sonic damage; P < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
@@ -17641,10 +17641,10 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 >
 > **Effect:** Until the end of the encounter, whenever you deal rolled damage to a creature or object, or enable a creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can use a free triggered action to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) simultaneously, each target receives the same effect:
 >
-> - The target has damage weakness equal to your Presence score against any magic, psionic, or weapon ability.
-> - The target has damage immunity equal to your Presence score.
-> - The target has a bonus to stability and a penalty to speed equal to your Presence score.
-> - The target has a bonus to speed and a penalty to stability equal to your Presence score.
+> - The target has damage weakness equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score against any magic, psionic, or weapon ability.
+> - The target has damage immunity equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
+> - The target has a bonus to stability and a penalty to speed equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
+> - The target has a bonus to speed and a penalty to stability equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
 <!-- @type: ability | @cost: 11 Drama -->
 > ###### The Show Must Go On (11 Drama)
@@ -17655,7 +17655,7 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 > |-------------------------|-------------------------------|
 > | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 6 damage; P < WEAK, the target can't willingly leave the area (EoT)
 > - **12-16:** 8 damage; P < AVERAGE, the target can't willingly leave the area (save ends)
@@ -17693,7 +17693,7 @@ Choose one of the following abilities.
 > |-----------------------------|--------------------:|
 > | **📏 Melee 1 or ranged 10** | **🎯 One creature** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** The target takes a bane on ability rolls (save ends).
 > - **12-16:** The target has a double bane on ability rolls (save ends).
@@ -17725,7 +17725,7 @@ Choose one of the following abilities.
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 3**                    | **🎯 One creature or object** |
 >
-> **Power Roll + Agility:**
+> **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 15 + A damage
 > - **12-16:** 21 + A damage
@@ -17744,7 +17744,7 @@ Choose one of the following abilities.
 >
 > **Effect:** Add your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to your target's current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), then you have half that total [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and the target has the remainder. If either of you would gain more [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) this way than their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum, the difference in [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) between what that creature would gain and their maximum is gained by the other creature. Neither of you can gain more [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) than your maximum this way. You then make a power roll.
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** You and the target can each end one effect on yourselves that is ended by a saving throw or that ends at the end of your turns.
 > - **12-16:** You and the target can end any effects on yourselves that are ended by a saving throw or that end at the end of your turns.
@@ -17763,7 +17763,7 @@ Choose one of the following abilities.
 > |-----------------|------------------------------:|
 > | **📏 5 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 8 sonic damage
 > - **12-16:** 11 sonic damage
@@ -17780,7 +17780,7 @@ Choose one of the following abilities.
 > |----------------------------------|------------------------------:|
 > | **📏 Melee 1 or ranged 10**      | **🎯 One creature or object** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 12 + P sonic damage; push 5
 > - **12-16:** 16 + P sonic damage; push 10
@@ -17805,7 +17805,7 @@ Additionally, whenever you or a creature within 3 squares would obtain a failure
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility and Presence scores each increase to 5.
+Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores each increase to 5.
 
 <!-- @type: feature -->
 #### Dramaturgy
@@ -17998,7 +17998,7 @@ You wear no armor and wield a bow.
 |-----------------------------------|------------------------------:|
 | **📏 Ranged 15**                  | **🎯 One creature or object** |
 
-**Power Roll + Agility, Reason, Intuition, or Presence:**
+**Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 5 + A, R, I, or P fire damage
 - **12-16:** 7 + A, R, I, or P fire damage
@@ -18036,7 +18036,7 @@ You wear light armor and wield a medium weapon.
 |------------------------------------|--------------------:|
 | **📏 Melee 1**                     | **🎯 One creature** |
 
-**Power Roll + Might, Reason, Intuition, or Presence:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 5 + M, R, I, or P damage
 - **12-16:** 8 + M, R, I, or P damage
@@ -18078,7 +18078,7 @@ You wear light armor and wield one or two light weapons.
 |-----------------------------------|--------------------:|
 | **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage; you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
 - **12-16:** 6 + M or A damage; you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
@@ -18114,7 +18114,7 @@ You wear medium armor and wield a light weapon and a medium weapon.
 |---------------------------|--------------------------------:|
 | **📏 Melee 1**            | **🎯 Two creatures or objects** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 damage
 - **12-16:** 6 damage
@@ -18152,7 +18152,7 @@ You wear medium armor and wield a polearm.
 |---------------------------|--------------------------------:|
 | **📏 Melee 2**            | **🎯 Two creatures or objects** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 damage
 - **12-16:** 7 damage
@@ -18188,7 +18188,7 @@ You wear no armor and wield only your unarmed strikes.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 5 + M or A damage
 - **12-16:** 8 + M or A damage; you can swap places with the target
@@ -18224,13 +18224,13 @@ You wear heavy armor and wield a heavy weapon.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage
 - **12-16:** 5 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your Might or Agility score (your choice).
+**Effect:** If the target dealt damage to you since the end of your last turn, this strike deals additional damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: panther -->
 #### Panther
@@ -18262,7 +18262,7 @@ You wear no armor and wield a heavy weapon.
 |---------------------------|------------------------------:|
 | **📏 Melee 1**            | **🎯 One creature or object** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage
 - **12-16:** 6 + M or A damage
@@ -18300,7 +18300,7 @@ You wear no armor and wield only your unarmed strikes.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage
 - **12-16:** 6 + M or A damage; slide 1
@@ -18342,7 +18342,7 @@ You wear light armor and wield a shield and a light weapon.
 |-----------------------------------|--------------------:|
 | **📏 Melee 1 or ranged 10**       | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage
 - **12-16:** 6 + M or A damage
@@ -18384,7 +18384,7 @@ You wear medium armor and wield a bow and a medium weapon.
 |----------------------------|--------------------:|
 | **📏 Ranged 10**           | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 - **12-16:** 5 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -18422,7 +18422,7 @@ You wear light armor and wield a bow.
 |----------------------------|--------------------------------:|
 | **📏 Ranged 12**           | **🎯 Two creatures or objects** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 damage
 - **12-16:** 6 damage
@@ -18460,7 +18460,7 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 |---------------------------|--------------------:|
 | **📏 Melee 2**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 - **12-16:** 6 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
@@ -18494,7 +18494,7 @@ You wear heavy armor and wield a shield and a medium weapon.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 5 + M or A damage
 - **12-16:** 8 + M or A damage
@@ -18532,13 +18532,13 @@ You wear no armor and wield a bow.
 |----------------------------|--------------------:|
 | **📏 Ranged 15**           | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 3 + M or A damage
 - **12-16:** 6 + M or A damage
 - **17+:** 13 + M or A damage
 
-**Effect:** If you don't take a move action this turn, this strike deals extra damage equal to your Might or Agility score (your choice).
+**Effect:** If you don't take a move action this turn, this strike deals extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice).
 
 <!-- @type: kit | @id: spellsword -->
 #### Spellsword
@@ -18570,7 +18570,7 @@ You wear light armor and wield a shield and a medium weapon.
 |----------------------------------|------------------------------:|
 | **📏 Melee 1**                   | **🎯 One creature or object** |
 
-**Power Roll + Might, Reason, Intuition, or Presence:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 5 + M, R, I, or P lightning damage
 - **12-16:** 8 + M, R, I, or P lightning damage
@@ -18610,7 +18610,7 @@ You wear light armor and wield a polearm.
 |---------------------------|--------------------:|
 | **📏 Melee 2**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 + M or A damage
 - **12-16:** 7 + M or A damage; slide 1
@@ -18646,7 +18646,7 @@ You wear light armor and wield a medium weapon.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 5 + M or A damage
 - **12-16:** 7 + M or A damage; push 1
@@ -18684,7 +18684,7 @@ You wear medium armor and wield a shield and a medium weapon.
 |---------------------------|--------------------:|
 | **📏 Melee 1**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 + M or A damage; push 1
 - **12-16:** 7 + M or A damage; push 2
@@ -18720,7 +18720,7 @@ You wear heavy armor and wield a light weapon.
 |----------------------------------|------------------------------:|
 | **📏 Melee 1**                   | **🎯 One creature or object** |
 
-**Power Roll + Might, Reason, Intuition, or Presence:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** 3 + M, R, I, or P holy damage
 - **12-16:** 5 + M, R, I, or P holy damage
@@ -18758,7 +18758,7 @@ You wear no armor and wield a whip.
 |---------------------------|--------------------:|
 | **📏 Melee 3**            | **🎯 One creature** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 4 + M or A damage; vertical pull 1
 - **12-16:** 7 + M or A damage; vertical pull 2
@@ -18865,7 +18865,7 @@ On any day when you don't take a respite, you can spend 1 uninterrupted hour wor
 >
 > The existence of specific perks doesn't mean that a hero can't attempt the task related to a perk without having that perk. Aside from supernatural perks, a Director can always allow a hero to attempt a mundane task mentioned in a perk by making a test. Perks are special because they allow a hero to attempt a specific task without a test, and often give a better result than a successful test—or even a test with a reward would give.
 >
-> For example, can a hero catch a falling ally if they don't have the I've Got You perk? A Director can absolutely allow it, but might decide that the hero needs to succeed on a Might test to accomplish the task, using a main action or maneuver to prepare for it. Being able to catch an ally automatically as a free triggered action is what the perk gets you!
+> For example, can a hero catch a falling ally if they don't have the I've Got You perk? A Director can absolutely allow it, but might decide that the hero needs to succeed on a [Might](scc:mcdm.heroes.v1/rule.character/might) test to accomplish the task, using a main action or maneuver to prepare for it. Being able to catch an ally automatically as a free triggered action is what the perk gets you!
 
 <!-- @type: feature-group | @id: exploration-perks -->
 ### Exploration Perks
@@ -18875,7 +18875,7 @@ This section presents exploration perks in alphabetical order.
 <!-- @type: perk -->
 #### Brawny
 
-Whenever you fail a Might test, you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.
+Whenever you fail a [Might](scc:mcdm.heroes.v1/rule.character/might) test, you can lose [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 1d6 + your level to improve the outcome of the test by one tier. You can use this perk only once per test.
 
 <!-- @type: perk -->
 #### Camouflage Hunter
@@ -18890,7 +18890,7 @@ Whenever you are in a natural environment (but not in a settlement in that envir
 <!-- @type: perk -->
 #### Friend Catapult
 
-As a maneuver, you grab a willing adjacent ally or object of your size or smaller, then vertical push that target up to a number of squares equal to twice your Might score. If a creature you push falls as a result of this movement, the effective distance of the fall is reduced by a number of squares equal to twice your Might score. When you use this perk, you can't use it again until you earn 1 or more Victories.
+As a maneuver, you grab a willing adjacent ally or object of your size or smaller, then vertical push that target up to a number of squares equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If a creature you push falls as a result of this movement, the effective distance of the fall is reduced by a number of squares equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. When you use this perk, you can't use it again until you earn 1 or more Victories.
 
 <!-- @type: perk | @id: ive-got-you -->
 #### I've Got You!
@@ -18945,7 +18945,7 @@ Whenever you are not in combat, you can shout to get the attention of hearing cr
 <!-- @type: perk -->
 #### Harmonizer
 
-You can make a Presence test using the Music skill to influence creatures who don't have emotions or can't understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.
+You can make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the Music skill to influence creatures who don't have emotions or can't understand you. Additionally, once during a negotiation when an ally makes an argument, you can play music to give that ally an edge on their test.
 
 <!-- @type: perk -->
 #### Lie Detector
@@ -18960,17 +18960,17 @@ Whenever you speak one-on-one with a creature, you can ask them one question abo
 <!-- @type: perk -->
 #### Pardon My Friend
 
-When an ally within 5 squares fails a Presence test, you can step in and make a Presence test that takes a bane, with your roll replacing the ally's roll. This perk can be used only once per test, even if more than one character has it.
+When an ally within 5 squares fails a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test, you can step in and make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test that takes a bane, with your roll replacing the ally's roll. This perk can be used only once per test, even if more than one character has it.
 
 <!-- @type: perk -->
 #### Power Player
 
-Whenever you make a test that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use Might instead of any other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test calls for.
+Whenever you make a test that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) instead of any other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test calls for.
 
 <!-- @type: perk -->
 #### So Tell Me...
 
-Whenever you succeed on a Presence test to influence one or more creatures, you can ask one creature you influenced a follow-up question after the test resolves, which they must answer honestly. At the Director's discretion, the creature doesn't have to answer the question completely—or at all—if the response would put them or a loved one in danger.
+Whenever you succeed on a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to influence one or more creatures, you can ask one creature you influenced a follow-up question after the test resolves, which they must answer honestly. At the Director's discretion, the creature doesn't have to answer the question completely—or at all—if the response would put them or a loved one in danger.
 
 <!-- @type: perk -->
 #### Spot the Tell
@@ -18985,7 +18985,7 @@ This section presents intrigue perks in alphabetical order.
 <!-- @type: perk -->
 #### Criminal Contacts
 
-You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a Presence test. On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
+You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a respite activity while you take a respite in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
 
 <!-- @type: perk -->
 #### Forgettable Face
@@ -19115,7 +19115,7 @@ If your [familiar](scc:mcdm.heroes.v1/perk/familiar) is destroyed, you can resto
 |:-------------------:|:-----------------:|:----------------------------:|:---------------------:|:--------------------:|
 |   **1T**<br>Size    |  **5**<br>Speed   | **2x your level**<br>[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) |  **0**<br>Stability   | **-**<br>[Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) |
 | **-**<br>Immunities | **-**<br>Movement |                              | **-**<br>With Captain | **-**<br>Weaknesses  |
-|   **-3**<br>Might   | **+2**<br>Agility |       **0**<br>Reason        |  **0**<br>Intuition   |  **+1**<br>Presence  |
+|   **-3**<br>[Might](scc:mcdm.heroes.v1/rule.character/might)   | **+2**<br>[Agility](scc:mcdm.heroes.v1/rule.character/agility) |       **0**<br>[Reason](scc:mcdm.heroes.v1/rule.character/reason)        |  **0**<br>[Intuition](scc:mcdm.heroes.v1/rule.character/intuition)   |  **+1**<br>[Presence](scc:mcdm.heroes.v1/rule.character/presence)  |
 
 > **Telepathic**
 > 
@@ -19134,7 +19134,7 @@ You have the following ability.
 > |---------------------|--------------------------:|
 > | **📏 Ranged 10**    | **🎯 One size 1T object** |
 >
-> **Effect:** You can grab or manipulate the target object with your mind, moving the object up to a number of squares equal to your Reason, Intuition, or Presence score (your choice). You can use this ability to turn doorknobs, pull levers, and so forth. You can manipulate any small movable piece of a larger object as long as the piece is unattended and size 1T. You can't use this ability to break a smaller piece off a larger object.
+> **Effect:** You can grab or manipulate the target object with your mind, moving the object up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice). You can use this ability to turn doorknobs, pull levers, and so forth. You can manipulate any small movable piece of a larger object as long as the piece is unattended and size 1T. You can't use this ability to break a smaller piece off a larger object.
 
 <!-- @type: perk -->
 #### Psychic Whisper
@@ -19165,7 +19165,7 @@ When you hold an object in your hand for 1 uninterrupted minute, you can sense w
 - Why does this emotion linger on the object?
 - How long has it been since the object was held by the person whose emotion lingers on it?
 
-After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a bane on Intuition and Presence tests until you finish a respite, and you can't use this perk again while you suffer this bane.
+After asking one question, you can choose to delve deeper by asking one additional question from the list, but you are then overcome with emotions that do not belong to you. You take a bane on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until you finish a respite, and you can't use this perk again while you suffer this bane.
 
 <!-- @type: chapter | @id: complications -->
 # Complications
@@ -19452,7 +19452,7 @@ Ever since you were a kid, you've been obsessed with a certain topic. During you
 
 **Project Source:** A significant source of information on the topic of your obsession, such as a major library or a world-renowned sage 
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 120, 150, 180
 
@@ -19913,7 +19913,7 @@ You can perceive ghosts and spirits that others don't sense. These supernatural 
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Power Roll + Intuition or Presence:**
+> **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** You take corruption damage equal to 5 + your level.
 > - **12-16:** The spirit of anyone you know of who has died speaks to you, provided they are on the same world as you. You learn how they died and can ask them one question, which they can answer truthfully or untruthfully. The spirit knows everything they knew in life, and is aware of events that took place in their immediate surroundings since their death.
@@ -19936,7 +19936,7 @@ Your mother and father never saw eye to eye. You know this because your father i
 > |---------------------------|--------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature** |
 >
-> **Power Roll + Might or Presence:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** 2 damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 4 damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -19985,7 +19985,7 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a Presence test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a respite activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see Renown in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through Renown or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
 
 **Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your Renown or other means) leaves you, their faith in you shaken. If you have no followers, your Renown is reduced by 1. If you need to reduce your Renown and it's already 0, you gain no benefits from the respite during which you make the conversion attempt.
 
@@ -20083,7 +20083,7 @@ You are the only survivor of a cataclysmic psionic event—an experiment gone wr
 > |-------------------------------|------------------------------:|
 > | **📏 Ranged 10**              | **🎯 One creature or object** |
 >
-> **Power Roll + Might, Intuition, or Presence:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** Push or pull 1
 > - **12-16:** Push or pull 2
@@ -20184,7 +20184,7 @@ You were tasked with delivering a ceremonial shield to your older sibling, a cel
 
 **Benefit:** While you wear your sibling's shield on your back, you can't be flanked.
 
-**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a respite, make an Intuition test that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the respite.
+**Drawback:** Visions of your dead sibling haunt you at night. Whenever you take a respite, make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test that can't make use of any skill. On a tier 1 or tier 2 outcome, you regain 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual when you finish the respite.
 
 <!-- @type: complication -->
 #### Silent Sentinel
@@ -20261,7 +20261,7 @@ A vampire has bitten you. You're not undead—or not yet, anyway—but your conn
 
 **Benefit:** Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an adjacent creature, you can do so by biting that creature. If you obtain a tier 3 outcome on the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to the damage dealt. If not lost beforehand, this [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the end of your next respite.
 
-**Drawback:** While you have [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this complication, you grow visible fangs, you take a bane on Presence tests made to interact with humanoids, and your vampire progenitor can sense your location.
+**Drawback:** While you have [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from this complication, you grow visible fangs, you take a bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with humanoids, and your vampire progenitor can sense your location.
 
 <!-- @type: complication -->
 #### Voice in Your Head
@@ -20293,7 +20293,7 @@ You were brought up to a strict standard of behavior. You cannot tell a lie.
 <!-- @type: complication -->
 #### Waking Dreams
 
-You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a respite, make a Reason test to determine whether you gain this complication's benefit or drawback.
+You broke a magic amulet, immersing your mind in weird energy that granted you the power of premonition. However, you struggle to control this new gift. Whenever you take a respite, make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to determine whether you gain this complication's benefit or drawback.
 
 **Benefit:** With a tier 2 outcome, you experience a vision of an event currently happening in your world. The vision lasts for only a few seconds, but the information you glean is helpful to you. With a tier 3 outcome, the vision lasts for 1 minute or more.
 
@@ -20397,7 +20397,7 @@ When you want your hero to rifle through a desk and locate a specific document, 
 
 The Director should ask a player to make a test only when the player's hero attempts a task where the consequences of failure are interesting or dramatic, and where failure won't grind the story to a halt. For example, if a hero wants to leap over a waist-high wall while casually walking through a peaceful city neighborhood, the worst case for failure is probably that the hero falls on their butt, takes no damage, and can stand up to either try again or walk around the wall. As such, no test is required. But if the hero were being chased by enemies, failing to leap over the wall means the pursuers can catch them, so the Director might decide to call for a test to determine what happens.
 
-The advancement of a story shouldn't be halted by failing a test. For instance, the heroes might need to know the color of a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) king's crown to solve a puzzle, with that puzzle opening the only entrance to a tomb they must enter to stop a world-ending ritual. It could be that a successful Reason test allows the heroes to recall that lore, but the test shouldn't be their only option to get the information. If the test fails, perhaps the heroes need to go to a [flying](scc:mcdm.heroes.v1/movement/fly) library to do research, or they might be able to delve into a ruin to find the ancient monarch's portrait. A failed test should always result in a story becoming more interesting, not in the action coming to an end.
+The advancement of a story shouldn't be halted by failing a test. For instance, the heroes might need to know the color of a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) king's crown to solve a puzzle, with that puzzle opening the only entrance to a tomb they must enter to stop a world-ending ritual. It could be that a successful [Reason](scc:mcdm.heroes.v1/rule.character/reason) test allows the heroes to recall that lore, but the test shouldn't be their only option to get the information. If the test fails, perhaps the heroes need to go to a [flying](scc:mcdm.heroes.v1/movement/fly) library to do research, or they might be able to delve into a ruin to find the ancient monarch's portrait. A failed test should always result in a story becoming more interesting, not in the action coming to an end.
 
 #### It Just Works!
 
@@ -20418,35 +20418,35 @@ The player reports the total of the roll, and the Director interprets its succes
 
 #### Characteristics and Tests
 
-When you describe a task you want your hero to undertake and the Director determines that a test is necessary, they then determine which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a Might test to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a Presence test if you're attempting to win over the jury with your personality, or a Reason test if you're laying out a logical argument to support your innocence.
+When you describe a task you want your hero to undertake and the Director determines that a test is necessary, they then determine which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a [Might](scc:mcdm.heroes.v1/rule.character/might) test to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test if you're attempting to win over the jury with your personality, or a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test if you're laying out a logical argument to support your innocence.
 
 Though the Director can decide to call for tests in any circumstances, a number of tasks that heroes routinely undertake are commonly set up as tests.
 
 ##### Might Tests
 
-You make a Might test whenever a risky task calls for the use of physical strength. Might tests are most often used for breaking down doors and other structures, hurling heavy objects, pulling your body up a sheer wall, swimming against a mighty current, and other feats of physical power.
+You make a [Might](scc:mcdm.heroes.v1/rule.character/might) test whenever a risky task calls for the use of physical strength. [Might](scc:mcdm.heroes.v1/rule.character/might) tests are most often used for breaking down doors and other structures, hurling heavy objects, pulling your body up a sheer wall, swimming against a mighty current, and other feats of physical power.
 
 ##### Agility Tests
 
-You make an Agility test whenever a risky task calls for the use of your physical coordination and nimbleness. Agility tests are most often used for tumbling, sneaking quietly, picking locks, and engaging in sleight of hand.
+You make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test whenever a risky task calls for the use of your physical coordination and nimbleness. [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests are most often used for tumbling, sneaking quietly, picking locks, and engaging in sleight of hand.
 
 ##### Reason Tests
 
-You make a Reason test whenever you attempt a risky task that requires the use of your mental acumen and education, formal or otherwise. Reason tests are most often used to recall lore, deduce information based on clues, complete a puzzle, forge counterfeit items or documents, break a code, convince others of a logical argument, or make an estimation.
+You make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test whenever you attempt a risky task that requires the use of your mental acumen and education, formal or otherwise. [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests are most often used to recall lore, deduce information based on clues, complete a puzzle, forge counterfeit items or documents, break a code, convince others of a logical argument, or make an estimation.
 
 ##### Intuition Tests
 
-You make an Intuition test whenever you attempt a risky task that requires the use of your powers of observation and instinct. Intuition tests are most often used to notice hidden creatures or details, discern another person's motivations or honesty, calm and reassure others, and train animals.
+You make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test whenever you attempt a risky task that requires the use of your powers of observation and instinct. [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests are most often used to notice hidden creatures or details, discern another person's motivations or honesty, calm and reassure others, and train animals.
 
 ##### Presence Tests
 
-You make a Presence test whenever you attempt a risky task that requires the use of your force of personality. Presence tests are most often used to gain trust, project confidence, and influence and lead other creatures.
+You make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test whenever you attempt a risky task that requires the use of your force of personality. [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests are most often used to gain trust, project confidence, and influence and lead other creatures.
 
 > **Influencing Player Characters With Tests**
 >
-> The things player characters do can't be influenced by any creature making a test, whether a monster, an NPC, or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an NPC convinced them to do so with a Presence test. For most players, it's not fun to be in control of a hero and lose some of that control.
+> The things player characters do can't be influenced by any creature making a test, whether a monster, an NPC, or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an NPC convinced them to do so with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. For most players, it's not fun to be in control of a hero and lose some of that control.
 >
-> Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an Intuition test to discern another PC's motivations or honesty.
+> Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to discern another PC's motivations or honesty.
 >
 > That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *https://mcdm.gg/SafetyToolkit*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
 
@@ -20508,7 +20508,7 @@ Depending on a test's difficulty and the power roll made to accomplish the task 
 
 If you fail a hard test and incur a consequence, you don't do what you set out to do—in addition to which, you suffer an impactful setback. The Director determines the exact nature of the consequence, which is typically related to the specific task.
 
-For instance, if a hero suffers a consequence while trying to climb a wall, they might make it halfway up the wall and then fall, taking damage and landing [prone](scc:mcdm.heroes.v1/condition/prone). A hero trying to sneak by cultists might be spotted by those foes, who immediately attack. If a consequence strikes when a hero attempts to bribe a prison guard, the guard might decide to arrest the hero or lead them into a trap. If a hero suffers a consequence on a Reason test made to recall lore about the king's favorite meal, they might confuse it for a dish to which the monarch is deathly allergic.
+For instance, if a hero suffers a consequence while trying to climb a wall, they might make it halfway up the wall and then fall, taking damage and landing [prone](scc:mcdm.heroes.v1/condition/prone). A hero trying to sneak by cultists might be spotted by those foes, who immediately attack. If a consequence strikes when a hero attempts to bribe a prison guard, the guard might decide to arrest the hero or lead them into a trap. If a hero suffers a consequence on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test made to recall lore about the king's favorite meal, they might confuse it for a dish to which the monarch is deathly allergic.
 
 Not all consequences need to be immediate or apparent. For example, a hero might fail with a consequence on a test made to cheat at a high-stakes game of cards with a noble. The failure means the cheating is noticed, but the Director decides that the noble doesn't say anything. This consequence isn't made apparent until later in the evening, when the noble has guards surround the hero, intent on taking the cheater down to the dungeon for stacking the deck.
 
@@ -20527,9 +20527,9 @@ In lieu of other consequences, the Director also has the option to gain 2 additi
 
 If you fail a test without incurring a consequence, you simply don't do what you set out to do. A hero attempting to climb a wall finds no purchase. A hero trying to recall lore can't remember the desired facts. If a hero attempts to bribe a guard, they don't take the bait.
 
-On a failed test, the Director can decide that there might still be a small penalty for failure, depending on the circumstances of the test. This penalty shouldn't be as harsh as rolling a failure with a consequence, though. For instance, a hero who gets this outcome on an Agility test made to sneak by a group of cultists might draw the attention of one cultist with their failure. Now that cultist is coming to investigate, but they haven't raised the alarm... yet.
+On a failed test, the Director can decide that there might still be a small penalty for failure, depending on the circumstances of the test. This penalty shouldn't be as harsh as rolling a failure with a consequence, though. For instance, a hero who gets this outcome on an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test made to sneak by a group of cultists might draw the attention of one cultist with their failure. Now that cultist is coming to investigate, but they haven't raised the alarm... yet.
 
-When a hero rolls a failure without a consequence, the Director can offer to let them succeed with a consequence instead. For instance, when a hero rolls a 10 on a medium Might test to break down a locked door, that's a failure and the door stays closed. But the Director could suggest to the player that instead of not breaking down the door, they can break down the door and lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) from being injured in the effort.
+When a hero rolls a failure without a consequence, the Director can offer to let them succeed with a consequence instead. For instance, when a hero rolls a 10 on a medium [Might](scc:mcdm.heroes.v1/rule.character/might) test to break down a locked door, that's a failure and the door stays closed. But the Director could suggest to the player that instead of not breaking down the door, they can break down the door and lose 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) from being injured in the effort.
 
 ##### Success With a Consequence
 
@@ -20537,7 +20537,7 @@ If you succeed on a test and incur a consequence, you do what you set out to do,
 
 Just like failure with a consequence, the consequences accompanying success don't need to be immediately apparent. In lieu of other consequences, the Director has the option to gain 2 additional Malice at the start of the next combat encounter.
 
-When a hero rolls a success with a consequence, the Director might give them a chance to fail instead. For instance, when a hero rolls a 10 on an easy Agility test to pick the lock on a chest, that's a success with a consequence. The Director could suggest that the character has opened the lock but broken their lockpicks in the process (knowing the picks can't be replaced until the hero returns to town), but can also give them the option of failing to pick the lock but keeping their lockpicks intact.
+When a hero rolls a success with a consequence, the Director might give them a chance to fail instead. For instance, when a hero rolls a 10 on an easy [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick the lock on a chest, that's a success with a consequence. The Director could suggest that the character has opened the lock but broken their lockpicks in the process (knowing the picks can't be replaced until the hero returns to town), but can also give them the option of failing to pick the lock but keeping their lockpicks intact.
 
 ##### Success
 
@@ -20568,7 +20568,7 @@ In lieu of other rewards, the Director can also decide that a hero who succeeds 
 
 #### How Long Does It Take?
 
-The amount of time required for a task involving a test is determined by the Director. A task such as recalling lore with a Reason test might take no time at all. Ducking behind a barrel to hide with an Agility test might require a maneuver or a main action, while tracking a band of voiceless talkers through the World Below could take hours or even days.
+The amount of time required for a task involving a test is determined by the Director. A task such as recalling lore with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test might take no time at all. Ducking behind a barrel to hide with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test might require a maneuver or a main action, while tracking a band of voiceless talkers through the World Below could take hours or even days.
 
 ##### Tests During Combat
 
@@ -20576,19 +20576,19 @@ Many (but not all) tests that a hero might make during combat are made as maneuv
 
 #### Can I Try Again?
 
-In many cases when you fail a test, you can't attempt the test again unless the circumstances of the test change. For instance, if you attempt an Agility test to pick a lock and fail, you can't attempt to pick the lock again unless you get better lockpicks, oil the lock, have someone demonstrate how to pick a similar lock, and so on.
+In many cases when you fail a test, you can't attempt the test again unless the circumstances of the test change. For instance, if you attempt an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick a lock and fail, you can't attempt to pick the lock again unless you get better lockpicks, oil the lock, have someone demonstrate how to pick a similar lock, and so on.
 
 The Director decides when the circumstances have changed enough to allow a new attempt at a test.
 
 ### Heroes Make Tests
 
-If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an Agility test to sneak, or should the guard make an Intuition test to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a Presence test to conceal the truth, or does the hero roll an Intuition test to discern the cultist's honesty?
+If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to sneak, or should the guard make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to conceal the truth, or does the hero roll an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to discern the cultist's honesty?
 
 Except in certain scenarios (explored at NPCs Roll for Deceptive Tasks and Opposed Power Rolls below), heroes make tests and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of tests have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC retainer or companion, that NPC will almost certainly make tests from time to time. But for the most part, NPCs and other creatures never need to make tests when what they do opposes what the heroes do.
 
 To quickly assess the difficulty of a task opposed by one or more creatures and the test made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
 
-- **Easy Test:** A test is easy if only one creature opposes the hero, and that opposed creature would have a lower bonus to their test roll for the task than the hero does. If a hero with an Agility score of 2 attempts to sneak by a guard with an Intuition score of 0, the test is easy.
+- **Easy Test:** A test is easy if only one creature opposes the hero, and that opposed creature would have a lower bonus to their test roll for the task than the hero does. If a hero with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 2 attempts to sneak by a guard with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 0, the test is easy.
 - **Moderate Test:** A test is moderate if multiple creatures oppose the hero and those creatures would have lower bonuses to their test rolls than the hero, or if only one creature opposes the hero and has the same test bonus as the hero.
 - **Hard Test:** A test is hard if an opposed creature would have a higher bonus to their test roll than the hero, or if multiple creatures with the same test bonus as the hero oppose the hero.
 
@@ -20598,9 +20598,9 @@ The failure consequences of opposed tasks are some of the easiest to create on t
 
 At times, the Director might choose for an NPC to make a test when engaged in a deceptive task, rather than having characters attempt to note the deception. By having the NPC roll in these scenarios, the Director doesn't tip their hand to the players that subterfuge is afoot.
 
-For example, when an assassin attempts to ambush the heroes while they sit around a campfire, if any player says their hero is on the lookout for danger, that hero would make an Intuition test to notice the danger. But if no one is keeping watch, the assassin makes an Agility test to sneak up on the heroes unnoticed. If the assassin fails the test, the heroes notice immediately as their assailant loudly steps on a twig. If the assassin succeeds, the heroes don't notice until the assailant is right on top of them.
+For example, when an assassin attempts to ambush the heroes while they sit around a campfire, if any player says their hero is on the lookout for danger, that hero would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice the danger. But if no one is keeping watch, the assassin makes an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to sneak up on the heroes unnoticed. If the assassin fails the test, the heroes notice immediately as their assailant loudly steps on a twig. If the assassin succeeds, the heroes don't notice until the assailant is right on top of them.
 
-An NPC might also make a Presence test if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a test to discern the NPC's honesty.
+An NPC might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a test to discern the NPC's honesty.
 
 As an optional rule, the Director is also free to ask the heroes to make a reactive test to a deceptive NPC instead (see Reactive Tests below) whenever they choose.
 
@@ -20609,7 +20609,7 @@ As an optional rule, the Director is also free to ask the heroes to make a react
 
 When two creatures are engaged in a particularly dramatic struggle that requires them both to make tests, the Director can have all the creatures involved make a test. The creature with the highest power roll wins. You can't earn a reward as part of these opposed power rolls, and they don't follow the typical difficulty structure or have three different tiers of possible outcomes.
 
-For example, if your hero attempts to sneak by a demon lord, you make an Agility test to move stealthily while the demon makes an Intuition test to notice you. If your hero gets the higher power roll, you sneak by without the demon noticing. If the demon gets the higher roll, they catch you in the act of sneaking. If multiple sneaking heroes attempt to get by multiple demons, then each creature makes a test and all the totals are compared to determine which demons notice which heroes.
+For example, if your hero attempts to sneak by a demon lord, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to move stealthily while the demon makes an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice you. If your hero gets the higher power roll, you sneak by without the demon noticing. If the demon gets the higher roll, they catch you in the act of sneaking. If multiple sneaking heroes attempt to get by multiple demons, then each creature makes a test and all the totals are compared to determine which demons notice which heroes.
 
 In the event of a tie in an opposed test, the state of the scene doesn't change. In the previous example, a tie means that if a demon on guard duty didn't know a sneaking hero was there, the demon remains oblivious. If the demon did know the hero was out there somewhere while trying to avoid being noticed, a tie means the demon still knows the hero is there but hasn't determined their location.
 
@@ -20622,11 +20622,11 @@ At certain times when a hero isn't engaged in overcoming a task, the Director mi
 
 Reactive tests are typically made in the following circumstances, though the Director can call for them in any appropriate scenario:
 
-**Hidden Environmental Features:** The Director asks for an Intuition test to notice a secret door, a hidden trap, or some other disguised environmental feature.
+**Hidden Environmental Features:** The Director asks for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice a secret door, a hidden trap, or some other disguised environmental feature.
 
-- **Hidden Foes:** The Director calls for an Intuition test to notice a hidden foe (or they could use the rules in NPCs Roll for Deceptive Tasks above).
-- **Hidden Motives:** The Director can ask for an Intuition test during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in NPCs Roll for Deceptive Tasks.)
-- **Recall Lore:** The Director might ask a hero to make a Reason test when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
+- **Hidden Foes:** The Director calls for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice a hidden foe (or they could use the rules in NPCs Roll for Deceptive Tasks above).
+- **Hidden Motives:** The Director can ask for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in NPCs Roll for Deceptive Tasks.)
+- **Recall Lore:** The Director might ask a hero to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
 - **Creature and DTO Tests:** Some creatures and dynamic terrain objects in *Draw Steel: Monsters* have features and abilities that require heroes to make reactive tests. These tests can't be modified by skills.
 
 > **Optional Rule: Secret Reactive Tests**
@@ -20640,7 +20640,7 @@ Skills represent the different specializations a hero has outside of attacking, 
 
 #### Applying Skills
 
-If you have a skill that applies to a test you make, you gain a +2 bonus to the test. For instance, if your hero has the [Hide](scc:mcdm.heroes.v1/skill/hide) skill, you have a +2 bonus to any test you make that involves hiding yourself. This might include an Agility test to hide behind a barrel, or a Presence test to disappear into a crowd.
+If you have a skill that applies to a test you make, you gain a +2 bonus to the test. For instance, if your hero has the [Hide](scc:mcdm.heroes.v1/skill/hide) skill, you have a +2 bonus to any test you make that involves hiding yourself. This might include an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to hide behind a barrel, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to disappear into a crowd.
 
 The +2 bonus gained for a skill isn't an edge. A player can make a test that has both the +2 bonus for a skill and the +2 bonus for an edge.
 
@@ -20650,7 +20650,7 @@ You can't apply more than one skill to a test.
 
 It's not the Director's job to know every task potentially covered by the skills in the game, or to know the specific skills your hero has. Instead, the Director asks you to make a test using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) and you tell the Director if you think you have a skill that applies. If it's not obvious why the skill applies, tell the Director how your hero is approaching the task and justify why that approach uses the skill. The Director then decides if you get the +2 bonus the skill represents. If the Director disagrees with you, that's the final word.
 
-Approaching problems creatively while remaining reasonable can help you get the most out of your skills. For example, if you're making a Presence test to impress a noble at a party, using the [Brag](scc:mcdm.heroes.v1/skill/brag) skill is an obvious choice. But what if you don't have that skill? Maybe you could instead try to impress the noble with a brief but exciting lecture about the nature of the elements, making a Presence test using the [Magic](scc:mcdm.heroes.v1/skill/magic) skill that you do have!
+Approaching problems creatively while remaining reasonable can help you get the most out of your skills. For example, if you're making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to impress a noble at a party, using the [Brag](scc:mcdm.heroes.v1/skill/brag) skill is an obvious choice. But what if you don't have that skill? Maybe you could instead try to impress the noble with a brief but exciting lecture about the nature of the elements, making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Magic](scc:mcdm.heroes.v1/skill/magic) skill that you do have!
 
 Sometimes you won't have a skill that applies to a test. That's okay! If your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score is decent, you likely have a good chance of success without a skill.
 
@@ -20658,7 +20658,7 @@ Sometimes you won't have a skill that applies to a test. That's okay! If your [c
 
 Although certain skills are often paired with one [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) more than others, a skill can apply to a test made using any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that makes sense. The Director has the final say on which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is used to complete a task, and can call for a different [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) based on the circumstances.
 
-For example, intimidating someone with a purely verbal threat is a Presence test. But if a player describes their character tearing a log in half with their bare hands to intimidate a foe, the Director is likely to call for a Might test instead. The [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill can apply to both tests. In the same way, scaling the side of a building is covered by a Might test, but if a hero does a series of leaps from one balcony to another to reach a roof, the Director could call for an Agility test instead. The [Climb](scc:mcdm.heroes.v1/skill/climb) skill applies to both of these tests.
+For example, intimidating someone with a purely verbal threat is a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test. But if a player describes their character tearing a log in half with their bare hands to intimidate a foe, the Director is likely to call for a [Might](scc:mcdm.heroes.v1/rule.character/might) test instead. The [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill can apply to both tests. In the same way, scaling the side of a building is covered by a [Might](scc:mcdm.heroes.v1/rule.character/might) test, but if a hero does a series of leaps from one balcony to another to reach a roof, the Director could call for an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test instead. The [Climb](scc:mcdm.heroes.v1/skill/climb) skill applies to both of these tests.
 
 #### Many Specific Skills
 
@@ -20668,7 +20668,7 @@ Having a wide range of specific skills means you'll frequently make tests that d
 
 Since you don't need to worry about your character covering a wide spread of skills, you're free to choose the skills you think fit your hero best and are the most fun to work with. Maybe you're thinking about an [elementalist](scc:mcdm.heroes.v1/class/elementalist) who has a gymnastic background in jumping and tumbling, and who also studied religion and blacksmithing. Having that kind of specific backstory is a big part of cinematic storytelling.
 
-The rules for skills allow for them to be flexibly applied to any test that is appropriate for the skill. This encourages clever thinking. A player can ask the Director, "I want to impress the duke with a story about how I ascended the sheer Cliffs of Azgahnan. Can I use my [Climb](scc:mcdm.heroes.v1/skill/climb) skill for a +2 bonus to my Presence test?" Getting creative like that is a lot of fun. It paints a visual picture, and it's good tactical thinking! However, if the skills in a game are too broad in the kinds of activities they represent, players inevitably end up applying the same skill over and over again to as many tests as possible. This isn't fun for anyone, and doesn't make a very compelling story.
+The rules for skills allow for them to be flexibly applied to any test that is appropriate for the skill. This encourages clever thinking. A player can ask the Director, "I want to impress the duke with a story about how I ascended the sheer Cliffs of Azgahnan. Can I use my [Climb](scc:mcdm.heroes.v1/skill/climb) skill for a +2 bonus to my [Presence](scc:mcdm.heroes.v1/rule.character/presence) test?" Getting creative like that is a lot of fun. It paints a visual picture, and it's good tactical thinking! However, if the skills in a game are too broad in the kinds of activities they represent, players inevitably end up applying the same skill over and over again to as many tests as possible. This isn't fun for anyone, and doesn't make a very compelling story.
 
 > **Edges on Tests With Specific Skills**
 >
@@ -21103,15 +21103,15 @@ In this scenario, a trio of adventurers want to scale the 40-foot-high walls sur
 
 **Grace (playing Val, a [conduit](scc:mcdm.heroes.v1/class/conduit)):** *Agreed.*
 
-**Director:** *Okay. It'll be a Might test to get up to the top of the wall.*
+**Director:** *Okay. It'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) test to get up to the top of the wall.*
 
 The Director knows that the walls around the Star Chamber, the headquarters of the evil knights Lady Morgant leads, are smooth and hard to climb, designed to repel invaders. The test's difficulty is hard, but the Director keeps that information a secret for now.
 
-**Alyssa (playing Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician)):** *Let me go first. I've got good Might and can throw the others down a rope once I'm up there. And I've got the [Climb](scc:mcdm.heroes.v1/skill/climb) skill.*
+**Alyssa (playing Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician)):** *Let me go first. I've got good [Might](scc:mcdm.heroes.v1/rule.character/might) and can throw the others down a rope once I'm up there. And I've got the [Climb](scc:mcdm.heroes.v1/skill/climb) skill.*
 
 **Director:** *For sure. Okay, roll it up.*
 
-Alyssa rolls 2d10 and gets a 13. She then adds her Might score of 2 and her +2 bonus for having an applicable skill to the roll, for a total of 17.
+Alyssa rolls 2d10 and gets a 13. She then adds her [Might](scc:mcdm.heroes.v1/rule.character/might) score of 2 and her +2 bonus for having an applicable skill to the roll, for a total of 17.
 
 **Alyssa:** *A 17! That's tier 3, baby!*
 
@@ -21121,13 +21121,13 @@ The Director checks the Test Difficulty Outcomes table to confirm that a tier 3 
 
 **Alyssa:** *Great! I toss down a rope. Val, you're next.*
 
-**Grace:** *So it's a Might test. Would you let me use Endurance? It's a lot of physical exertion to climb.*
+**Grace:** *So it's a [Might](scc:mcdm.heroes.v1/rule.character/might) test. Would you let me use Endurance? It's a lot of physical exertion to climb.*
 
 **Director:** *It's not a climb that would take you hours, so I don't think Endurance applies here. But hey, the rope does make this an easier test.*
 
 **Grace:** *Fair. Okay, dice. Let's do this.*
 
-Given the rope, the Director decides that this second climb attempt is an easy test. Grace rolls 2d10 and gets an 11. With her Might score of 2, that's a 13.
+Given the rope, the Director decides that this second climb attempt is an easy test. Grace rolls 2d10 and gets an 11. With her [Might](scc:mcdm.heroes.v1/rule.character/might) score of 2, that's a 13.
 
 **Grace:** *13! That's a tier 2 outcome for Val.*
 
@@ -21135,13 +21135,13 @@ The Director checks the Test Difficulty Outcomes table once more, confirming tha
 
 **Director:** *Good news! You make it to the top of the wall alongside Jorn.*
 
-**James:** *Ah, crap. I have a Might of −1 and no skills to use. Unless I can Intimidate the rope into lifting me up?*
+**James:** *Ah, crap. I have a [Might](scc:mcdm.heroes.v1/rule.character/might) of −1 and no skills to use. Unless I can Intimidate the rope into lifting me up?*
 
 **Director:** *Wishful thinking.*
 
 **Alyssa:** *What if Korvo grabs onto the rope and I lift him up while he just hangs on for the ride?*
 
-**Director:** *Sure. That'll be a Might test if Korvo's down for it.*
+**Director:** *Sure. That'll be a [Might](scc:mcdm.heroes.v1/rule.character/might) test if Korvo's down for it.*
 
 **James:** *Nothing risked, nothing saved. Let's do it. Just be careful. Any loud noises could attract those guards.*
 
@@ -21149,7 +21149,7 @@ The Director checks the Test Difficulty Outcomes table once more, confirming tha
 
 **Director:** *Yes, it does. Roll it up. That's a medium difficulty test.*
 
-Lifting the diminutive [polder](scc:mcdm.heroes.v1/ancestry/polder), Alyssa rolls 2d10-but gets a 2! With her Might score and Lift skill bonus of +2, the total is 6.
+Lifting the diminutive [polder](scc:mcdm.heroes.v1/ancestry/polder), Alyssa rolls 2d10-but gets a 2! With her [Might](scc:mcdm.heroes.v1/rule.character/might) score and Lift skill bonus of +2, the total is 6.
 
 **Alyssa:** *A 6! Oof. That's tier 1.*
 
@@ -21177,7 +21177,7 @@ When you attempt to assist another creature, make a test using the skill you cho
 - **12-16:** Your help grants the other creature an edge on their test.
 - **17+:** Your help gives the other creature a double edge on their test.
 
-For example, when an ally tries to pick a jailer's pocket, you might attempt to assist by using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill to distract the jailer. The Director accepts this, and asks you to make a Presence test using Flirt. The outcome of that test determines the bonus you provide to the other hero's Agility test to pick the jailer's pocket—or whether you fumble the distraction and potentially draw attention to the attempt.
+For example, when an ally tries to pick a jailer's pocket, you might attempt to assist by using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill to distract the jailer. The Director accepts this, and asks you to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using Flirt. The outcome of that test determines the bonus you provide to the other hero's [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to pick the jailer's pocket—or whether you fumble the distraction and potentially draw attention to the attempt.
 
 ### Hide and Sneak
 
@@ -21199,7 +21199,7 @@ You are no longer hidden from a creature if you don't have [cover](scc:mcdm.hero
 
 ##### Searching for Hidden Creatures
 
-You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see Opposed Power Rolls earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a Presence test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a Reason test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
+You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see Opposed Power Rolls earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
 
 If the total of your test is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
 
@@ -21211,12 +21211,12 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 #### Sneaking
 
-While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an Agility test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using Presence to blend in with a crowd on a packed city street.
+While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using [Presence](scc:mcdm.heroes.v1/rule.character/presence) to blend in with a crowd on a packed city street.
 
 <!-- @type: rule | @group: test | @id: group-test -->
 ### Group Tests
 
-Whenever two or more heroes attempt to overcome a single, simple task together that calls for them to make the same test, the Director can call for a group test. For example, if several heroes are all attempting to climb the outside of a tower at the same time, giving each other assistance and advice, they could be asked to make a Might group test. If a group of heroes attempt to sneak by a sleeping ogre, they might make an Agility group test.
+Whenever two or more heroes attempt to overcome a single, simple task together that calls for them to make the same test, the Director can call for a group test. For example, if several heroes are all attempting to climb the outside of a tower at the same time, giving each other assistance and advice, they could be asked to make a [Might](scc:mcdm.heroes.v1/rule.character/might) group test. If a group of heroes attempt to sneak by a sleeping ogre, they might make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) group test.
 
 #### Group Test Difficulty
 
@@ -21259,11 +21259,11 @@ At the start of a montage test, the Director should describe the scenario underl
 
 #### Individual Tests in Montage Tests
 
-The difficulty of each individual test in a montage test is set by the Director and can vary from test to test. For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy Might test. Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard Reason test.
+The difficulty of each individual test in a montage test is set by the Director and can vary from test to test. For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) test. Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.
 
 The same rules and guidelines that apply to all individual tests apply in montage tests. If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the test should grant an edge or a bane, they do. Individual test outcomes shouldn't halt the story.
 
-The Director should couch each success or failure as it relates to the overall goal of the montage test. If the heroes are trying to reach an ancient temple, failing a Might test to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
+The Director should couch each success or failure as it relates to the overall goal of the montage test. If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) test to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
 
 The rewards and consequences of individual tests made during a montage test are handled on an individual basis. The Director can use the default of gaining additional Malice in the next combat encounter for consequences and having the party gain [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) for rewards to keep the montage moving.
 
@@ -21342,13 +21342,13 @@ The Director determines that crossing the desert is a montage test of hard diffi
 
 When the test begins, the Director sets the scene. They tell the players that the desert has extreme temperatures, sudden sandstorms, high dunes to cross, deep sand, chasms, and quicksand lakes. The Director decides that the challenges of dunes, deep sand, and quicksand can be tackled multiple times in the test, since the Infinite Desert is filled with these hazards.
 
-Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an Intuition test using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy test. Urdoncara makes the test and gets a total of 12, earning 1 success for the montage test.
+Urdoncara, a [fury](scc:mcdm.heroes.v1/class/fury), starts things off by asking to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Nature skill to predict the best times of day to travel and rest. She wants the party to avoid the worst of the desert's extreme temperatures and any sandstorms or other weather phenomena, so that the journey is quickened. The Director decides this is an easy test. Urdoncara makes the test and gets a total of 12, earning 1 success for the montage test.
 
-Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a Reason test using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the test and fails with a consequence, which the Director decides will cause him to take a bane on his next power roll due to the exertion. The montage test has 1 success and 1 failure.
+Jorn, a [tactician](scc:mcdm.heroes.v1/class/tactician), wants to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the [Climb](scc:mcdm.heroes.v1/skill/climb) skill to lead the party over dunes and other hazards with minimal effort. The Director allows the attempt, but says that knowing what makes one dune easier to climb than another is tricky, setting the difficulty at hard. Jorn gets a 9 on the test and fails with a consequence, which the Director decides will cause him to take a bane on his next power roll due to the exertion. The montage test has 1 success and 1 failure.
 
-Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium Reason test. Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the montage test.
+Karrel, an [elementalist](scc:mcdm.heroes.v1/class/elementalist), thinks the group might cross the desert faster if they have specially modified sandshoes that distribute their weight and prevent their feet from sinking into the sand. The Director loves the idea, and decides that making four pairs of the shoes while traveling the desert is a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. Karrel gets to use their Tailoring skill and winds up with a total of 13-a success with a consequence. The Director decides to gain an additional 2 Malice at the start of the next combat encounter as a consequence, but the group now has 2 successes and 1 failure on the montage test.
 
-Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an Intuition test, using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the montage test an edge on their test. At the end of the first montage test round, the heroes have 3 successes and 1 failure.
+Val, a [conduit](scc:mcdm.heroes.v1/class/conduit), offers to scout ahead for the group with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test, using the Navigate skill to find the best path forward and avoid hazards such as chasms and quicksand. The Director thinks that acting as lookout in a vast desert is an easy task. Val smashes it with a 21-a success with a reward—and the Director decides to get creative. Val's lookout skills grant the next hero to act in the montage test an edge on their test. At the end of the first montage test round, the heroes have 3 successes and 1 failure.
 
 ##### Interlude
 
@@ -21356,17 +21356,17 @@ Before the next montage test round, the Director pauses the montage test to run 
 
 ##### Montage Test Round 2
 
-Urdoncara wants to make a Might test using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the test thanks to the edge from Val's earlier success. The montage test has 4 successes and 1 failure.
+Urdoncara wants to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the Lift skill to carry most of the group's equipment as they cross the desert, allowing her allies to move more quickly while she keeps up with her superior fortitude. The Director thinks this arduous task has a hard difficulty. Urdoncara gets a 17 on the test thanks to the edge from Val's earlier success. The montage test has 4 successes and 1 failure.
 
-Jorn, eager to prove himself after his last failure, asks to make a Might test using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the test at medium difficulty. Making the test with a bane because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The montage test has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
+Jorn, eager to prove himself after his last failure, asks to make a [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Lead](scc:mcdm.heroes.v1/skill/lead) skill, representing tying a rope around his waist to drag his weaker friends over the tallest dunes. The Director likes the idea but doesn't think the [Lead](scc:mcdm.heroes.v1/skill/lead) skill applies to the task. They tell Jorn that Lift is more appropriate, since the [tactician](scc:mcdm.heroes.v1/class/tactician) is using his physical skill to aid his friends and not really doing anything interpersonal. Jorn agrees, and the Director sets the test at medium difficulty. Making the test with a bane because of his previous failure, the [tactician](scc:mcdm.heroes.v1/class/tactician) rolls a 15, which is a success with a consequence. The montage test has 5 successes and 1 failure, but the consequence gives the Director another 2 Malice at the start of the next combat encounter.
 
-Since the group needs only one more success to achieve total success, Karrel says she'd like to assist Val in whatever task she decides to take on. Val wants to recall lore about the Khem-hor-the inhabitants of the Infinite Desert—to remember their time-honored travel techniques using the History skill. Karrel has the Culture skill, which she can use to assist by providing information about the lives and society of the Khem-hor. She makes a Reason test to assist and gets a 16, granting Val an edge on her upcoming test.
+Since the group needs only one more success to achieve total success, Karrel says she'd like to assist Val in whatever task she decides to take on. Val wants to recall lore about the Khem-hor-the inhabitants of the Infinite Desert—to remember their time-honored travel techniques using the History skill. Karrel has the Culture skill, which she can use to assist by providing information about the lives and society of the Khem-hor. She makes a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to assist and gets a 16, granting Val an edge on her upcoming test.
 
-Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard Reason test with an edge, thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the montage test, achieving total success, and earn 2 Victories.
+Val attempts to recall lore about the Khem-hor, wanting to know if she can remember any of their travel from her studies of the history of the region. The Director has her make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test with an edge, thanks to Karrel's input on the current state of Khem-hor culture. Val gets a 17, and the Director decides that the [conduit](scc:mcdm.heroes.v1/class/conduit) recalls a shortcut through a canyon tunnel that leads directly to Ahset, avoiding a vast lake of quicksand. The heroes get their sixth success in the montage test, achieving total success, and earn 2 Victories.
 
 ##### Other Options
 
-The heroes could have attempted other tests during their travels, such as an Agility test using the Sneak skill to lead the group through dangerous shortcuts in the desert without being seen or waylaid by predators, a Reason test using the Nature skill to find enough food and water to keep the group hydrated and fed, or a Presence test using the Music skill to inspire allies to travel faster with song.
+The heroes could have attempted other tests during their travels, such as an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the Sneak skill to lead the group through dangerous shortcuts in the desert without being seen or waylaid by predators, a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Nature skill to find enough food and water to keep the group hydrated and fed, or a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the Music skill to inspire allies to travel faster with song.
 
 <!-- @type: chapter | @id: combat -->
 # Combat
@@ -21454,7 +21454,7 @@ If the players do end up arguing in circles about what to do next, the Director 
 
 > **Alternative Turn Order**
 >
-> If planning everyone's turn order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an Agility test, then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero turn, the hero with the second-highest total takes their turn, and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied Agility tests to determine who among the tied creatures acts before the others.
+> If planning everyone's turn order isn't fun for your group, you can leave it to the dice instead. At the start of combat, have each hero, enemy, and group of enemies make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, then record the totals. When it's time for someone on the heroes' side to act, the hero with the highest total goes first. On the next hero turn, the hero with the second-highest total takes their turn, and so on. The Director-controlled creatures act the same way. Creatures on the same side should reroll tied [Agility](scc:mcdm.heroes.v1/rule.character/agility) tests to determine who among the tied creatures acts before the others.
 >
 > At the Director's discretion, a hero can swap their turn in the order with another willing hero at the start of a new combat round. This allows certain abilities that interact with the core turn order system, such as the [shadow's](scc:mcdm.heroes.v1/class/shadow) [Hesitation Is Weakness](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/hesitation-is-weakness) ability, to better work with this alternative system.
 
@@ -21491,7 +21491,7 @@ Boring stuff like opening an unlocked door, picking up an arrow from the ground,
 
 At the Director's discretion, circumstances could make something that is typically boring more impactful and exciting. For instance, if you need to pick a magic arrow up off the ground during a violent earthquake, what would otherwise be a free maneuver could require a maneuver or a main action to accomplish.
 
-Likewise, the nature of an activity might make it too complicated for a free maneuver. For example, picking up the body of an unconscious [talent](scc:mcdm.heroes.v1/class/talent) ally to carry them to safety can probably be done as a free maneuver. But if your Might is lacking and you need to pick up a [tactician](scc:mcdm.heroes.v1/class/tactician) ally decked out in the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit, the Director might determine that you need to use a regular maneuver to hoist their armored form over your shoulders.
+Likewise, the nature of an activity might make it too complicated for a free maneuver. For example, picking up the body of an unconscious [talent](scc:mcdm.heroes.v1/class/talent) ally to carry them to safety can probably be done as a free maneuver. But if your [Might](scc:mcdm.heroes.v1/rule.character/might) is lacking and you need to pick up a [tactician](scc:mcdm.heroes.v1/class/tactician) ally decked out in the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit, the Director might determine that you need to use a regular maneuver to hoist their armored form over your shoulders.
 
 Any effect that prevents you from using maneuvers also prevents you from using free maneuvers.
 
@@ -21571,7 +21571,7 @@ If a creature who can't [burrow](scc:mcdm.heroes.v1/movement/burrow) wants to di
 |-------------|-------------:|
 | **📏 Self** |  **🎯 Self** |
 
-**Power Roll + Might:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 
 - **≤11:** You can move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT).
 - **12-16:** You can use your main action this turn to move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
@@ -21586,13 +21586,13 @@ While a creature who is completely beneath the ground while [burrowing](scc:mcdm
 
 A creature who has "climb" in their speed entry, or who gains the temporary ability to automatically climb, can climb across vertical and horizontal surfaces at full speed. Likewise, a creature who has "swim" in their speed entry, or who gains the temporary ability to automatically swim, can swim in liquid at full speed.
 
-Creatures without those types of movement can still climb or swim when a rule allows them to move, but each square of climbing or swimming costs 2 squares of movement. If a surface is difficult to climb (for instance, a sheer cliff or ice-covered wall) or a liquid is hard to swim through (a raging river or whirlpool), the Director can call for a Might test. On a failure, a creature can't climb or swim but wastes no movement in the attempt. The Director can also impose other consequences to failure, such as being caught in the spinning current of a whirlpool.
+Creatures without those types of movement can still climb or swim when a rule allows them to move, but each square of climbing or swimming costs 2 squares of movement. If a surface is difficult to climb (for instance, a sheer cliff or ice-covered wall) or a liquid is hard to swim through (a raging river or whirlpool), the Director can call for a [Might](scc:mcdm.heroes.v1/rule.character/might) test. On a failure, a creature can't climb or swim but wastes no movement in the attempt. The Director can also impose other consequences to failure, such as being caught in the spinning current of a whirlpool.
 
 ###### Climbing Other Creatures
 
 You can attempt to climb a creature whose size is greater than yours. If the creature is willing, you can climb them without any trouble. If the creature is unwilling, you make the following test:
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** You fail to climb the creature, and they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against you.
 - **12-16:** You fail to climb the creature.
@@ -21600,7 +21600,7 @@ You can attempt to climb a creature whose size is greater than yours. If the cre
 
 While you climb or ride a creature, you gain an edge on melee abilities used against them. The creature can use a maneuver to attempt to knock you off, forcing you to make the following test:
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** You fall off the creature into an unoccupied adjacent space of your choice, taking falling damage and landing [prone](scc:mcdm.heroes.v1/condition/prone) as usual (see Falling below).
 - **12-16:** You slide down the creature into an unoccupied adjacent space of your choice and don't l[and prone](scc:mcdm.heroes.v1/condition/prone).
@@ -21611,11 +21611,11 @@ If you are [knocked prone](scc:mcdm.heroes.v1/condition/prone) while climbing or
 <!-- @type: movement | @id: jump -->
 ##### Jump
 
-Whenever an effect allows you to move (including using the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action), you can automatically long jump a number of squares up to your Might or Agility score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
+Whenever an effect allows you to move (including using the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action), you can automatically long jump a number of squares up to your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (your choice; minimum 1 square) as part of that movement. The height of your jump is automatically 1 square as part of that movement.
 
-If you want to jump even longer or higher than your baseline jump allows, make a Might or Agility test:
+If you want to jump even longer or higher than your baseline jump allows, make a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) test:
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** You don't jump any farther than your baseline jump allows.
 - **12-16:** You jump 1 square longer and higher than your baseline jump allows.
@@ -21656,13 +21656,13 @@ When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move fro
 <!-- @type: rule | @group: health | @id: falling -->
 #### Falling
 
-When a creature falls 2 or more squares and lands on the ground, they take 2 damage for each square they fall (to a maximum of 50 damage) and l[and prone](scc:mcdm.heroes.v1/condition/prone). A creature who falls can reduce the effective height of the fall by a number of squares equal to their Agility score (to a minimum of 0). Falling into liquid that is 1 square or more deep reduces the effective height of a fall by 4 squares (to a minimum of 0).
+When a creature falls 2 or more squares and lands on the ground, they take 2 damage for each square they fall (to a maximum of 50 damage) and l[and prone](scc:mcdm.heroes.v1/condition/prone). A creature who falls can reduce the effective height of the fall by a number of squares equal to their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (to a minimum of 0). Falling into liquid that is 1 square or more deep reduces the effective height of a fall by 4 squares (to a minimum of 0).
 
 Falling is not [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), but being force moved downward is considered falling. Movement from falling doesn't provoke opportunity attacks (see Opportunity Attacks below).
 
 ##### Falling Onto Another Creature
 
-A creature who falls and lands on another creature causes that creature to take the same damage from the fall. The falling creature then lands prone in the nearest unoccupied space of their choice. If the falling creature's size is greater than the Might score of the creature they land on, that creature is [knocked prone](scc:mcdm.heroes.v1/condition/prone).
+A creature who falls and lands on another creature causes that creature to take the same damage from the fall. The falling creature then lands prone in the nearest unoccupied space of their choice. If the falling creature's size is greater than the [Might](scc:mcdm.heroes.v1/rule.character/might) score of the creature they land on, that creature is [knocked prone](scc:mcdm.heroes.v1/condition/prone).
 
 ##### Falling Far
 
@@ -21728,7 +21728,7 @@ You can [force move](scc:mcdm.heroes.v1/movement/forced-movement) another creatu
 
 When a creature force moves a target into a stationary object that is the target's size or larger and the object doesn't break (see below), the movement ends and the target takes 2 damage plus 1 damage for each square remaining in their [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
 
-If you [force move](scc:mcdm.heroes.v1/movement/forced-movement) a creature downward into an object that doesn't break (including the ground), they also take falling damage as if they had fallen the distance [force moved](scc:mcdm.heroes.v1/movement/forced-movement) and their Agility score was 0 (see Falling above).
+If you [force move](scc:mcdm.heroes.v1/movement/forced-movement) a creature downward into an object that doesn't break (including the ground), they also take falling damage as if they had fallen the distance [force moved](scc:mcdm.heroes.v1/movement/forced-movement) and their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score was 0 (see Falling above).
 
 > **Tracking Object Forced-Movement Damage**
 >
@@ -21821,7 +21821,7 @@ A creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by another cre
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Power Roll + Might or Agility:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** No effect.
 > - **12-16:** You can escape the grab, but if you do, a creature who has you [grabbed](scc:mcdm.heroes.v1/condition/grabbed) can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against you before you are no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
@@ -21843,13 +21843,13 @@ A creature seeking to keep a foe close and locked down can attempt to grab a cre
 > |-------------------|--------------------:|
 > | **📏 Melee 1**    | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** No effect.
 > - **12-16:** You can grab the target, but if you do, the target can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against you before they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 > - **17+:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by you.
 >
-> **Effect:** You can usually target only creatures of your size or smaller. If your Might score is 2 or higher, you can target any creature with a size equal to or less than your Might score.
+> **Effect:** You can usually target only creatures of your size or smaller. If your [Might](scc:mcdm.heroes.v1/rule.character/might) score is 2 or higher, you can target any creature with a size equal to or less than your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 Unless otherwise indicated, a creature can grab only one creature at a time.
 
@@ -21872,20 +21872,20 @@ A creature wanting to push an adjacent creature away from them can attempt to sh
 > |-------------------|--------------------:|
 > | **📏 Melee 1**    | **🎯 One creature** |
 >
-> **Power Roll + Might:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
 > - **≤11:** Push 1
 > - **12-16:** Push 2
 > - **17+:** Push 3
 >
-> **Effect:** You can usually target only creatures of your size or smaller. If your Might score is 2 or higher, you can target any creature with a size equal to or less than your Might score.
+> **Effect:** You can usually target only creatures of your size or smaller. If your [Might](scc:mcdm.heroes.v1/rule.character/might) score is 2 or higher, you can target any creature with a size equal to or less than your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature | @id: make-or-assist-a-test -->
 #### Make or Assist a Test
 
-Many tests are maneuvers if made in combat. Searching a chest with a Reason test, picking a door's lock with an Agility test, or lifting a portcullis with a Might test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+Many tests are maneuvers if made in combat. Searching a chest with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test, picking a door's lock with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, or lifting a portcullis with a [Might](scc:mcdm.heroes.v1/rule.character/might) test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
-Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a Reason test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.
+Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.
 
 <!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
@@ -21964,7 +21964,7 @@ A melee weapon free strike is a melee strike made with an unarmed strike or an i
 | -------------------------------- | -----------------------------:|
 | **📏 Melee 1**                   | **🎯 One creature or object** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 2 + M or A damage
 - **12-16:** 5 + M or A damage
@@ -21977,7 +21977,7 @@ A melee weapon free strike is a melee strike made with an unarmed strike or an i
 |---------------------------| -----------------------------:|
 | **📏 Ranged 5**           | **🎯 One creature or object** |
 
-**Power Roll + Might or Agility:**
+**Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
 - **≤11:** 2 + M or A damage
 - **12-16:** 4 + M or A damage
@@ -22117,9 +22117,9 @@ If a creature is fully submerged in water, they have fire immunity 5 and lightni
 <!-- @type: rule | @group: health | @id: suffocating -->
 ### Suffocating
 
-During combat or under similarly stressful circumstances, you can hold your breath for a number of combat rounds equal to your Might score (minimum 1 round). At the end of each combat round after that, you take 1d6 damage while holding your breath.
+During combat or under similarly stressful circumstances, you can hold your breath for a number of combat rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round). At the end of each combat round after that, you take 1d6 damage while holding your breath.
 
-Out of combat, you can hold your breath for a number of minutes equal to your Might score. Being unable to breathe after that time counts as a stressful condition, causing you to run out of air as above.
+Out of combat, you can hold your breath for a number of minutes equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Being unable to breathe after that time counts as a stressful condition, causing you to run out of air as above.
 
 <!-- @type: rule | @group: combat | @id: mounted-combat -->
 ### Mounted Combat
@@ -22222,11 +22222,11 @@ Negotiation is a framework for important roleplaying encounters in which the her
 
 In order for a negotiation to occur, an NPC must have an interest in negotiating with the heroes—but must also have a reason to not simply jump on board with whatever the heroes propose. Negotiations happen only when an NPC has that internal tension between interest and reluctance. For example, if the characters ask a king to send his army into a neighboring kingdom to battle a demon incursion, the king needs to be conflicted. He wants to stop the incursion, but he doesn't want to risk the lives of his soldiers defending a foreign nation while leaving their own people unprotected. If the heroes want the help of the king's army, they need to negotiate.
 
-Heroes aren't expected to use the negotiation rules every time one character tries to convince an NPC to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single Presence test using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a Might test using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a Presence test using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
+Heroes aren't expected to use the negotiation rules every time one character tries to convince an NPC to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a [Might](scc:mcdm.heroes.v1/rule.character/might) test using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
 
 By contrast, negotiations typically involve all the heroes interacting with one or more important named NPCs who can provide information, items, or services that dramatically change the course of an adventure. Often, this involves the heroes seeking an item of great power, a retainer or companion, the services of an influential organization or nation, or a plot-twist-worthy piece of information. Convincing a lich to lend the party the legendary *Codex Mortis*, trying to convince a dragon to halt an attack on a wizard's tower, or talking the leaders of an enemy army into standing down means that a negotiation is in order.
 
-To negotiate successfully, the heroes must make persuasive arguments to convince NPCs to do what they want. "Do it or we kill you" is a threat that might well accompany a single Might test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
+To negotiate successfully, the heroes must make persuasive arguments to convince NPCs to do what they want. "Do it or we kill you" is a threat that might well accompany a single [Might](scc:mcdm.heroes.v1/rule.character/might) test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
 
 #### Limits of Negotiation
 
@@ -22446,7 +22446,7 @@ The Director can decide that an NPC who has something the players want could sho
 
 #### Stop Combat, Start Negotiation
 
-If a hero wants to halt hostilities to negotiate with the other side, they can use a maneuver to make a hard Presence test (or another applicable test, as the Director determines) in an attempt to stop combat and start a negotiation. The test has a chance of success only if the Director believes the other side is willing and capable of negotiating. A foe who has the upper hand, who hates the heroes beyond measure, or who lacks sapience is unlikely to negotiate.
+If a hero wants to halt hostilities to negotiate with the other side, they can use a maneuver to make a hard [Presence](scc:mcdm.heroes.v1/rule.character/presence) test (or another applicable test, as the Director determines) in an attempt to stop combat and start a negotiation. The test has a chance of success only if the Director believes the other side is willing and capable of negotiating. A foe who has the upper hand, who hates the heroes beyond measure, or who lacks sapience is unlikely to negotiate.
 
 #### Starting Stats
 
@@ -22469,9 +22469,9 @@ If a hero wishes to figure out an NPC's motivations, they can begin by simply as
 
 NPC can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the NPC might offer up similar suggestions without the heroes asking, provided the NPC already has an interest of 3 or higher.
 
-If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's pitfalls, a hero can make a Reason, Intuition, or Presence test while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The test has the following outcomes:
+If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's pitfalls, a hero can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) test while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** The hero learns no information regarding the NPC's motivations or pitfalls, and the NPC realizes the hero is trying to read them and becomes annoyed. As a consequence, the NPC's patience is reduced by 1.
 - **12-16:** The hero learns no information regarding the NPC's motivations or pitfalls.
@@ -22495,9 +22495,9 @@ This is a good topic for discussion before a group actually gets into a negotiat
 
 #### Appeal to Motivation
 
-If an argument doesn't include a pitfall and appeals to one of the NPC's motivations that hasn't already been appealed to, the hero making the argument can make an medium test to attempt to sway the NPC with the argument. Depending on the argument, this can be a Reason, Intuition, or Presence test using any applicable skill—most commonly a skill from the interpersonal skill group. The test has the following outcomes:
+If an argument doesn't include a pitfall and appeals to one of the NPC's motivations that hasn't already been appealed to, the hero making the argument can make an medium test to attempt to sway the NPC with the argument. Depending on the argument, this can be a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using any applicable skill—most commonly a skill from the interpersonal skill group. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** The NPC's patience decreases by 1.
 - **12-16:** The NPC's interest increases by 1, and their patience decreases by 1.
@@ -22515,7 +22515,7 @@ If the heroes attempt to appeal to a motivation that's already been appealed to,
 
 If an argument doesn't include one of the NPC's motivations or pitfalls, the hero who makes the argument must make a more difficult test to appeal to the NPC. The test has the following outcomes:
 
-**Power Roll + Reason, Intuition, or Presence:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
 - **≤11:** The NPC's patience decreases by 1, and their interest decreases by 1.
 - **12-16:** The NPC's patience decreases by 1.
@@ -22531,7 +22531,7 @@ If a hero lies to an NPC with an argument that fails to increase the NPC's inter
 
 > **Everyone Can Participate**
 >
-> Since Reason and Intuition with creatively applied skills can be used to make arguments, all heroes can actively participate in the process of negotiation. The hero with the highest Presence who has the [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill doesn't automatically have to be the one who makes all the tests.
+> Since [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) with creatively applied skills can be used to make arguments, all heroes can actively participate in the process of negotiation. The hero with the highest [Presence](scc:mcdm.heroes.v1/rule.character/presence) who has the [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill doesn't automatically have to be the one who makes all the tests.
 
 #### Pitfall Used
 
@@ -22690,7 +22690,7 @@ Before making an argument, Alyssa is attempting to learn what Zola's motivations
 
 **James:** *Aha! I got this, folks. I stand atop my crate and say, "Well, we can surely offer that, Ms. Honeycut. We have convinced Lord Edmund to*
 
-*grant amnesty to any who swear to serve him." I'd like to roll a Presence test to convince her.*
+*grant amnesty to any who swear to serve him." I'd like to roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to convince her.*
 
 **Director:** *Hold it there, champ. Zola's eyes narrow as you speak, and she holds up a hand to cut you off. "I will not swear to serve any ruler, no matter how benevolent. I'll consider being a partner, but even that outlook is grim if you tell me again that I need to bend the knee."*
 
@@ -22698,7 +22698,7 @@ Korvo inadvertently made an argument using a pitfall by appealing to a higher au
 
 **James:** *Sorry! I thought that'd work. Seems like higher authority is a pitfall for her*.
 
-**Grace:** *Let's try to avoid any others. Val says, "We're sorry, Zola. We don't want to do anything else to offend you." I'd like to make an Intuition test and use my Read Person skill to gauge her reaction and try to discern any other pitfalls.*
+**Grace:** *Let's try to avoid any others. Val says, "We're sorry, Zola. We don't want to do anything else to offend you." I'd like to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test and use my Read Person skill to gauge her reaction and try to discern any other pitfalls.*
 
 **Director:** *Cool. Hard difficulty.*
 
@@ -22710,7 +22710,7 @@ The heroes now know both of Zola's pitfalls: higher authority and revelry.
 
 **Matt:** *Linn is going to say, "We're recruiting more than just the Clock. We have a good chance of recruiting the elves of the wode and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) of Forest Rend, and we're already training the people of Gravesford to put up a fight. If we strike before Saxton can fully build his forces, we all stand a better chance of survival. If you don't stand with us, Saxton will still come for you. He's already coming for you. The Clock stands less of a chance alone."*
 
-**Director:** *I think that's a Reason test, since you're using logic to point out that you have a better chance together than on your own. It's easy too, since you're appealing to one of her motivations.*
+**Director:** *I think that's a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test, since you're using logic to point out that you have a better chance together than on your own. It's easy too, since you're appealing to one of her motivations.*
 
 **Matt:** *Great! Can I use Lead here, since I'm demonstrating our ability to bring people together?*
 
@@ -22736,7 +22736,7 @@ The Director makes it clear in Zola's response that the negotiation can still co
 
 **James:** *Is there anything I know about Zola's reputation? I have the Criminal Underworld skill.*
 
-**Director:** *Make a Reason test.*
+**Director:** *Make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test.*
 
 **James:** *That's an 18! Success!*
 
@@ -22754,7 +22754,7 @@ Korvo's success has revealed Zola's benevolence motivation.
 
 **Alyssa:** *"Even before his coup, Saxton had a considerable amount of wealth. If he's deposed, those riches need to go somewhere. The Clock will get a cut—a honey of a cut, you might say. Edmund has also promised to share his family's fortune with any who stand with him against Saxton—no oath of fealty necessary. After the young lord reclaims the throne, that is."*
 
-**Director:** *You're appealing to one of her motivations, so make a Presence test.*
+**Director:** *You're appealing to one of her motivations, so make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.*
 
 **Alyssa:** *Can I use my [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill too?*
 
@@ -22897,7 +22897,7 @@ Unless a project has an event table of its own, the Director uses the Crafting a
 
 **Project Source:** Texts or lore in Low Rhyvian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 3,000
 
@@ -22922,7 +22922,7 @@ An airship is an object (giving it damage immunity all to poison and psychic dam
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** Varies
 
@@ -22956,7 +22956,7 @@ Time spent traveling between locations on the road is cut in half. Access to res
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 1,500
 
@@ -22976,7 +22976,7 @@ You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.her
 
 **Project Source:** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** Varies
 
@@ -23014,11 +23014,11 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
-**Awe:** When you start this project, choose either Charming or Threatening. If you choose Charming, you gain an edge on Presence tests made to win other creatures over or make a good impression. If you choose Threatening, you gain an edge on Presence tests made to intimidate, coerce, or bully.
+**Awe:** When you start this project, choose either Charming or Threatening. If you choose Charming, you gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to win other creatures over or make a good impression. If you choose Threatening, you gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to intimidate, coerce, or bully.
 
 **Damage Immunity I:** When you start this project, select three damage types. You have immunity 5 to those damage types.
 
@@ -23059,13 +23059,13 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
 **Absorption:** Whenever you are targeted by a magic or psionic ability that targets only one creature, you can use a free triggered action to cause this armor to absorb the ability after the ability's effects resolve. While the armor has an ability absorbed, you can't absorb another.
 
-You can use an absorbed ability as if you knew it, making power rolls for the ability using your choice of Reason, Intuition, or Presence. You don't need to spend any [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to activate the ability. Once you use the ability, the armor loses it, and you can absorb another.
+You can use an absorbed ability as if you knew it, making power rolls for the ability using your choice of [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence). You don't need to spend any [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to activate the ability. Once you use the ability, the armor loses it, and you can absorb another.
 
 **Damage Immunity II:** The damage immunity conveyed by the armor increases to 10.
 
@@ -23115,7 +23115,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23184,11 +23184,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
-**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability's effects resolve. This strike deals extra damage equal to the highest of your Reason, Intuition, or Presence scores.
+**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability's effects resolve. This strike deals extra damage equal to the highest of your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores.
 
 **Displacing I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) that creature up to 2 squares after the ability's effects resolve. If the creature started on a horizontal surface, they must end on a horizontal surface.
 
@@ -23196,7 +23196,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Forceful I:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 2 squares.
 
-**Rat Form:** As a maneuver, you transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your size is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your Might is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a maneuver, and do so automatically if you take any damage.
+**Rat Form:** As a maneuver, you transform into a rat. Your equipment transforms with you. As a rat, you have speed 5 and can automatically climb at full speed while moving, your size is 1T, and you can see in the dark. You can speak and keep your skills while in rat form, but your [Might](scc:mcdm.heroes.v1/rule.character/might) is −5 and you lose all your regular abilities, features, and benefits. You can revert to your natural form as a maneuver, and do so automatically if you take any damage.
 
 **Rejuvenating I:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 9 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -23226,7 +23226,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23268,7 +23268,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23318,7 +23318,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23360,7 +23360,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23418,7 +23418,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -23482,7 +23482,7 @@ Unless a project has an event table of its own or a special event entry, the Dir
 
 **Project Source:** Texts or knowledge related to the subject you wish to research
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** Varies (see the table)
 
@@ -23527,7 +23527,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
 | 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of respite, demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
 | 15-16  | Before the roll, the hero's rival comes to visit and shows off a guide for the project. The rival is willing to hand the guide over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
-| 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard Intuition test or become obsessed with the project. Until the project is complete, the hero can't use Victories to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
+| 17-18  | The project source is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test or become obsessed with the project. Until the project is complete, the hero can't use Victories to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the project source.                                                                                                                                     |
 | 19-20  | Before the roll, the hero finds that a significant amount of the project has been completed by a group of fairies. The fairies might have completed the job out of boredom, or they might want something from the hero in return.                                                                                                                                                                                                                                                                               |
 | 21-22  | After the roll, the hero realizes that the project source contains only half the information they need, and they must find the rest of the information to complete the project.                                                                                                                                                                                                                                                                                                                                 |
 | 23-24  | After the roll, the hero discovers a new bit of knowledge or a technique that allows them to immediately start and finish a second project with a project goal of 50 or lower.                                                                                                                                                                                                                                                                                                                                  |
@@ -23577,7 +23577,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 
 **Project Source:** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 15
 
@@ -23613,7 +23613,7 @@ Additionally, while you work to complete this project, you might be called upon 
 
 **Project Source:** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
 
@@ -23674,7 +23674,7 @@ You learn to use one of your heroic abilities more efficiently, reducing its bas
 
 **Project Source:** Texts or instruction that teaches the language you want to learn
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
@@ -23687,7 +23687,7 @@ When you start this project, choose a language taught by the project source. Whe
 
 **Project Source:** Texts or instruction that teaches the skill you want to learn
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
@@ -23700,7 +23700,7 @@ When you start this project, choose a skill taught by the project source. When t
 
 **Project Source:** A recipe in a language you know, or someone who can tutor you in that recipe
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 100
 
@@ -23765,7 +23765,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 
 **Project Source:** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** Varies
 
@@ -23795,10 +23795,10 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 | 3   | While the hero is fishing, passersby inform them of a rumor of a magic fishing rod that allows the fisher to double the size of the fish they reel in. The Director can decide whether the rumor is true, and if so, where the rod might be found.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | 4   | While fishing, the hero reels in an **angulotl daybringer** (see *Draw Steel:  Monsters*). The angulotl is insulted by the hero catching them, and threatens to summon heavy thunderstorms and drown the region in a flood. However, they can be negotiated with, and might provide the hero with one serving of an amazing meal if they stay on good terms. A creature who eats a serving of this meal increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next respite, and gains 25 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) that lasts until the end of their next respite if it isn't lost first. A creature can benefit only from one serving of this meal or another like it (such as from the Perfect New Recipe project) at a time. |
 | 5   | While fishing, the hero reels in half of a mysterious ancient treasure of the Director's choice. If the other half is found, both halves magically meld together to restore the treasure.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an edge on Presence tests until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| 7   | The hero reaches a new fishing milestone, gaining the following title and benefit.<br/>**Master of Reels:** Whenever you deal damage to a target who is 2 or more squares away from you and that target isn't also [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can pull the target a number of squares equal to your Agility, Reason, or Intuition score (your choice).                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| 6   | While fishing, the hero is energized by fond memories of their life up to that point. They gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests until the end of their next respite.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 7   | The hero reaches a new fishing milestone, gaining the following title and benefit.<br/>**Master of Reels:** Whenever you deal damage to a target who is 2 or more squares away from you and that target isn't also [force moved](scc:mcdm.heroes.v1/movement/forced-movement), you can pull the target a number of squares equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score (your choice).                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 8   | While fishing, the hero engages in relaxing meditation that grants an automatic breakthrough on another project they're working on. Alternatively, they gain insight that grants an automatic breakthrough on another hero's project of their choice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard Might test. On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| 9   | While fishing, the hero is pulled into the water by an ancient fish and must make a hard [Might](scc:mcdm.heroes.v1/rule.character/might) test. On a success, the hero reels in a humongous fish worth 100 points. On a failure, they end the current respite with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual. On a success with a complication, the hero obtains both outcomes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | 10  | While fishing, the hero notes what appears to be an underwater cavern. If the cavern is explored, it reveals a treasure of the Director's choice guarded by a [revenant](scc:mcdm.heroes.v1/ancestry/revenant) knight fulfilling their duty until their captain returns.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <!-- @type: project -->
@@ -23808,7 +23808,7 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 
 **Project Source:** None
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 60
 
@@ -23944,7 +23944,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Szetch
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d3 darts, or three darts if crafted by a shadow)
 
@@ -23965,7 +23965,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Proto-Ctholl
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
@@ -23982,7 +23982,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Kalliak
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -23999,7 +23999,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24016,7 +24016,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24037,11 +24037,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you can drink this potion or pour it over an object of size 2 or smaller, causing the target's size to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability are doubled, you gain an edge on Might tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. You shrink back to your original size after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability, and losing the potion's other benefits. Objects maintain their new size permanently.
+**Effect:** As a maneuver, you can drink this potion or pour it over an object of size 2 or smaller, causing the target's size to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability are doubled, you gain an edge on [Might](scc:mcdm.heroes.v1/rule.character/might) tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. You shrink back to your original size after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability, and losing the potion's other benefits. Objects maintain their new size permanently.
 
 <!-- @type: treasure -->
 ##### Healing Potion
@@ -24054,7 +24054,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24071,7 +24071,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24088,7 +24088,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d3 teeth)
 
@@ -24109,7 +24109,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45
 
@@ -24126,7 +24126,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
@@ -24145,7 +24145,7 @@ While you have line of effect to your homunculus, you can use a maneuver to issu
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 30 or 45 (see below)
 
@@ -24170,11 +24170,11 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [restrained](scc:mcdm.heroes.v1/condition/restrained), or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an edge on Intuition and Presence tests made to convince the target to communicate, or to read the target's emotions. Any such creature has a double edge on the test if the target doesn't realize they've been affected by the snuff.
+**Effect:** As a maneuver, you sprinkle a dose of this powder onto food or drink, or blow it at an adjacent creature who is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [restrained](scc:mcdm.heroes.v1/condition/restrained), or unconscious. A creature who is exposed to blown powder (even if they hold their breath) or consumes a dose of the powder must communicate in only true statements for 1 hour. Additionally, other creatures gain an edge on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) and [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to convince the target to communicate, or to read the target's emotions. Any such creature has a double edge on the test if the target doesn't realize they've been affected by the snuff.
 
 <!-- @type: treasure -->
 ##### Snapdragon
@@ -24187,7 +24187,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 45 (yields 1d6 + 1 snapdragons)
 
@@ -24209,7 +24209,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90
 
@@ -24226,7 +24226,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24243,7 +24243,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24260,7 +24260,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24277,7 +24277,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90 (yields 1d3 vials)
 
@@ -24294,7 +24294,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90 (yields 1d3 doses)
 
@@ -24311,7 +24311,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 90
 
@@ -24330,7 +24330,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24353,7 +24353,7 @@ If you pull a size 1T object adjacent to you, you can catch it. This treasure ca
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 90
 
@@ -24375,13 +24375,13 @@ This section presents 3rd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
 **Effect:** When you release the larva as a maneuver, it feeds on psychic energy to grow exponentially, creating a 10 wall of larval flesh adjacent to you. The wall can't be created to fill any square occupied by a creature with stability 1 or higher. Each other creature in the wall when it is created is pushed to the nearest unoccupied space.
 
-At the start of each of your turns, each creature adjacent to the wall takes psychic damage equal to three times their Intuition score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your turn, the larva dies and the wall disappears.
+At the start of each of your turns, each creature adjacent to the wall takes psychic damage equal to three times their [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score, and you can add 1 square to the wall for each creature who takes this damage. If no creature takes damage at the start of your turn, the larva dies and the wall disappears.
 
 <!-- @type: treasure -->
 ##### Bottled Paradox
@@ -24394,7 +24394,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24411,7 +24411,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24428,7 +24428,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Khemharic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 120
 
@@ -24445,7 +24445,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24462,7 +24462,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24483,7 +24483,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24500,7 +24500,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 180
 
@@ -24522,7 +24522,7 @@ This section presents 4th-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24541,7 +24541,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24560,7 +24560,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 Infinite Library detailing incomplete instructions for building a sun
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 360
 
@@ -24577,7 +24577,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 360
 
@@ -24606,7 +24606,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24625,7 +24625,7 @@ Additionally, when you are targeted by any effect that deals cold damage, you ca
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24644,7 +24644,7 @@ Additionally, when you are targeted by any effect that deals fire damage, you ca
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24663,7 +24663,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24680,7 +24680,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
@@ -24697,7 +24697,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Songs in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 150
 
@@ -24714,13 +24714,13 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
 **Effect:** When you use a move action while wearing these gloves, you can place one hand upon a mundane object as part of that move action. If the object is 1 square thick or less and has open space on the other side (for example, a door or wall), you pull your body through it as though the object wasn't there.
 
-If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard Might test made as a main action.
+If the object is too thick or has no open space on the other side, your hand becomes stuck inside the object. Removing your hand takes a successful hard [Might](scc:mcdm.heroes.v1/rule.character/might) test made as a main action.
 
 <!-- @type: treasure -->
 ##### Gecko Gloves
@@ -24733,7 +24733,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24750,7 +24750,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Anjali and Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
 **Project Goal:** 150
 
@@ -24767,7 +24767,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24784,7 +24784,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24801,7 +24801,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
@@ -24823,7 +24823,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in High Kuric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24840,7 +24840,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24857,11 +24857,11 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
-**Effect:** While wearing the crown, you gain an edge on Intuition tests made to read the emotions and discern the honesty of other creatures. If you succeed on an Intuition test to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director's discretion, you might not be able to tap into the creature's deepest secrets this way.
+**Effect:** While wearing the crown, you gain an edge on [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests made to read the emotions and discern the honesty of other creatures. If you succeed on an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to read the emotions of another creature within 5 squares, you can ask the Director one question about something the creature knows, which the Director must answer honestly. At the Director's discretion, you might not be able to tap into the creature's deepest secrets this way.
 
 <!-- @type: treasure -->
 ##### Key of Inquiry
@@ -24874,7 +24874,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Ullorvic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24891,7 +24891,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 300
 
@@ -24908,7 +24908,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24925,7 +24925,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24942,7 +24942,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
@@ -24970,7 +24970,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -24987,11 +24987,11 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**Effect:** While wearing this grotesque mask, you can use a maneuver to cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double edge on tests made to discover hidden creatures, items, or mechanisms, but you have a double bane on Presence tests that don't use the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill. As a maneuver, you can return your eyes to your head and make the additional eyes disappear.
+**Effect:** While wearing this grotesque mask, you can use a maneuver to cause your eyes to erupt from their sockets and multiply until six eyes orbit your head. This grants you a 360-degree arc of vision and prevents you from being surprised. Additionally, you have a double edge on tests made to discover hidden creatures, items, or mechanisms, but you have a double bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests that don't use the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill. As a maneuver, you can return your eyes to your head and make the additional eyes disappear.
 
 While the eyes circle your head, you can use a maneuver to launch up to three of the eyes at one creature within 10 squares. Each eye you launch deals 5 damage to the target before it is destroyed. You can't reduce the number of eyes to fewer than two in this way. If you reduce the number of eyes to two, those eyes return to your head, and you can't use the mask again until you earn 1 or more Victories.
 
@@ -25006,7 +25006,7 @@ While the eyes circle your head, you can use a maneuver to launch up to three of
 
 **Project Source:** Texts or lore in Higaran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25035,7 +25035,7 @@ Additionally, you have the following ability.
 
 **Project Source:** Texts or lore in Mindspeech
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25051,7 +25051,7 @@ Additionally, you have the following ability.
 > |----------------------------------------|------------------------------:|
 > | **📏 Melee 1**                         | **🎯 One creature or object** |
 >
-> **Power Roll + Might or Agility:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 3 psychic damage
 > - **12-16:** 5 psychic damage; I < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
@@ -25070,7 +25070,7 @@ Additionally, you have the following ability.
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25092,11 +25092,11 @@ This section presents 4th-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 600
 
-**Effect:** The Gravekeeper's Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard Intuition test as a main action. Once a spirit is trapped, you make a Presence test to coax them into answering your questions:
+**Effect:** The Gravekeeper's Lantern can temporarily trap a nonhostile spirit of the dead—either an incorporeal undead or the wandering spirit of a creature who died within the last 30 days—allowing you to interrogate them. Trapping a spirit requires you to be within 10 squares of them and succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test as a main action. Once a spirit is trapped, you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test to coax them into answering your questions:
 
 - **≤11:** You can ask two questions of the spirit, one of which they must answer fully and honestly.
 - **12-16:** You can ask three questions, two of which the spirit must answer fully and honestly.
@@ -25115,7 +25115,7 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 
 **Project Source:** Texts or lore in Mindspeech
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 600
 
@@ -25134,7 +25134,7 @@ Each leveled treasure has benefits that you gain at 1st, 5th, and 9th levels. Yo
 
 Your connection with leveled treasures doesn't just make them useful. It also makes them dangerous. Each leveled treasure is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three leveled treasures at a time. If you carry more leveled treasures, those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
 
-It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a Presence test during each respite:
+It's fine to own or possess more than three leveled treasures, as long as the extras are stored away or in the possession of other creatures. But if you carry more than three leveled treasures, you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test during each respite:
 
 - **≤11:** One of your leveled treasures (chosen by the Director) grabs hold of your psyche. It forces you to sleepwalk or otherwise enter an active fugue state and discard the rest of your leveled treasures in locations you can't remember. If you want those items back, you'd better get looking before someone else finds them.
 - **12-16:** Your items work together to prevent you from moving until you pick three items and leave the rest behind.
@@ -25160,7 +25160,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25181,7 +25181,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25202,7 +25202,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Phaedran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25223,7 +25223,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Songs in High Rhyvian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason, Intuition, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25244,7 +25244,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25265,7 +25265,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25286,7 +25286,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25307,7 +25307,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25328,7 +25328,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25349,7 +25349,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25375,7 +25375,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25396,7 +25396,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25417,7 +25417,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25438,7 +25438,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25459,7 +25459,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25480,15 +25480,15 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**1st Level:** You can open or close the tome as a maneuver while speaking or thinking its full name. While the tome is open, it floats in an adjacent space and flips to specific pages at your command, you gain an edge on Reason tests made to recall lore, and you gain a +3 bonus to distance for your ranged magic or psionic abilities.
+**1st Level:** You can open or close the tome as a maneuver while speaking or thinking its full name. While the tome is open, it floats in an adjacent space and flips to specific pages at your command, you gain an edge on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and you gain a +3 bonus to distance for your ranged magic or psionic abilities.
 
 **5th Level:** While the tome is open, the bonus to distance for your ranged magic or psionic abilities increases to +5. Additionally, when you or a creature you have line of effect to uses a magic or psionic ability, you can use a triggered action to grant a +3 bonus to the power roll.
 
-**9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on Reason tests made to recall lore, and when you use a heroic ability, its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost is reduced by 1 (to a minimum of 1).
+**9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and when you use a heroic ability, its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost is reduced by 1 (to a minimum of 1).
 
 <!-- @type: treasure-group | @treasure-type: weapon -->
 #### Leveled Weapon Treasures
@@ -25506,7 +25506,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason, Intuition, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25527,7 +25527,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450 
 
@@ -25548,7 +25548,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25569,7 +25569,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25590,7 +25590,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25611,7 +25611,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25632,7 +25632,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25653,7 +25653,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25674,7 +25674,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25695,7 +25695,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian and Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25716,7 +25716,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian and Kalliak
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25737,7 +25737,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25756,7 +25756,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25777,7 +25777,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Higaran
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25803,7 +25803,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25824,7 +25824,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Agility, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Agility](scc:mcdm.heroes.v1/rule.character/agility), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25845,7 +25845,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25866,7 +25866,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
@@ -25887,7 +25887,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
@@ -25938,7 +25938,7 @@ This scepter waits high in the sky, resting within an endlessly raging cyclone. 
 
 The Encepter is said to have first manifested in a young world doomed to apocalypse—unless every last inhabitant of that world could stand together. The scepter is said to impose either dominion or obliteration over any threat its light is drawn around. Today, it is most commonly known as a bad omen, and should the Encepter reveal itself, folk know that the world teeters on the brink of destruction. Whether any of the stories are true, few can say, for the only living eyes that have witnessed the Encepter belong to dragons deep in slumber.
 
-**Shining Presence:** The one who wields the Encepter is always cast in a brilliant glow. Any power roll made by the wielder that uses Presence automatically achieves a tier 3 outcome, though the wielder can still roll in an attempt to score a critical success or critical hit.
+**Shining [Presence](scc:mcdm.heroes.v1/rule.character/presence):** The one who wields the Encepter is always cast in a brilliant glow. Any power roll made by the wielder that uses [Presence](scc:mcdm.heroes.v1/rule.character/presence) automatically achieves a tier 3 outcome, though the wielder can still roll in an attempt to score a critical success or critical hit.
 
 **Champion's Lasso:** As a free maneuver, the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder's choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.
 
@@ -26044,7 +26044,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 - *Leverage:* You know a priceless secret. The Director chooses the type of person who would value this secret—usually a member of a particular faction, such as a Higaran [noble](scc:mcdm.heroes.v1/title/noble), or a type of person, such as a fence of stolen goods. When engaged in a negotiation with this type of person, you can offer this secret. If they accept, their interest increases by 3 (to a maximum of 5). You can share this secret only once.
 - *Rare Books:* You add rare, ancient books to your collection. Whenever you undertake a research project, roll 1d6 for each dead language you know and add the total to the project roll.
-- *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an edge on Reason tests and take a bane on Presence tests. You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
+- *Susurrus Codex:* You find a sinister book that whispers advice in a voice no one else can hear. As long as you follow the book's advice, you gain an edge on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests and take a bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests. You can stop following the book's advice at any time, but the book won't speak to you for the rest of the day.
 
 <!-- @type: title -->
 #### Battleaxe Diplomat
@@ -26057,7 +26057,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 - *Iron Hand in Velvet Glove:* The first time during a negotiation that you make a test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill and don't make an argument that appeals to an NPC's motivation, you don't lower the NPC's patience or interest no matter the outcome of the roll.
 - *Truce!:* You have a double edge on tests made to stop combat and start a negotiation.
-- *Warriors' Understanding:* You gain an edge on Presence tests made to interact with creatures you have fought against in combat encounters.
+- *Warriors' Understanding:* You gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with creatures you have fought against in combat encounters.
 
 <!-- @type: title -->
 #### Brawler
@@ -26132,7 +26132,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 Additionally, the Director assigns you one of the following benefits, as appropriate to the faction in question. The Director can also create a custom benefit for a type of faction not noted here. You can use this benefit only in a settlement where your faction has a presence, and once you use this benefit, you can't use it again until you complete a task for your faction.
 
-- *Academic Faction:* You find a sage who can make up to three Reason tests to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these tests. These project rolls take 10 minutes each and don't need to be made during a respite.
+- *Academic Faction:* You find a sage who can make up to three [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests to recall lore or make project rolls for research projects on your behalf. The sage has a +5 bonus to these tests. These project rolls take 10 minutes each and don't need to be made during a respite.
 - *Guild Faction:* You find an expert crafter who can make up to three project rolls for crafting projects on your behalf. The crafter has a +5 bonus to these tests. These project rolls take 10 uninterrupted minutes each and don't need to be made during a respite.
 - *Martial Faction:* You recruit up to three minions with levels no greater than your own, of a type appropriate for the faction (such as **[human](scc:mcdm.heroes.v1/ancestry/human) guards**). These minions follow your orders for a day.
 - *Spy Faction:* You find an agent who can provide you with three pieces of information about the settlement you're in, such as the location of a hidden person, a secret entrance into a guarded area, or the negotiation motivation or pitfall of an important person.
@@ -26188,7 +26188,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 *You dare mock Blunwin Mousebane? You think my deed trivial? Ah, but you didn't see the size of the mouse!*
 
-**Prerequisite:** You defeat a leader or solo creature with a Reason score of −2 or lower, such as an arixx.
+**Prerequisite:** You defeat a leader or solo creature with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of −2 or lower, such as an arixx.
 
 **Effect:** Choose one of the following benefits:
 
@@ -26269,7 +26269,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *Deep-Sea Diver:* You can automatically swim at full speed while moving.
 - *Ship Speaker:* You magically know the location of any ship controlled by your party even while you aren't aboard. You can telepathically communicate with anyone on board one of your ships who understands a language, and they can respond, no matter your distance from the ship.
-- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have line of effect to each other. You gain an edge on Presence tests made while negotiating in this way.
+- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have line of effect to each other. You gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made while negotiating in this way.
 - *Trained Crewmember:* You gain an edge on tests made to handle air or sea vessels.
 
 <!-- @type: title -->
@@ -26283,7 +26283,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *[Flying](scc:mcdm.heroes.v1/movement/fly) Circus:* When you are adjacent to a willing ally on their turn, you can use a triggered action to push them up to 2 squares if their size is the same as yours, or 4 squares if they are smaller. If this push causes the ally to fall, they can use a maneuver before they fall to reduce the height of the fall by 2.
 - *Spotlight:* You magically cause a creature within 10 squares to shed light for 5 squares. This light lasts for 1 minute, until the creature is more than 10 squares away from you, or until you dismiss the effect (no action required). While illuminated, a creature can't sneak or hide, they take a bane on tests made to perform any action secretly, and they gain an edge on tests made using the Lead, Music, or Perform skills.
-- *Supporting Player:* You gain an edge on group tests using Presence and on tests made to assist another creature with a Presence test.
+- *Supporting Player:* You gain an edge on group tests using [Presence](scc:mcdm.heroes.v1/rule.character/presence) and on tests made to assist another creature with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test.
 - *Work the Crowd:* While any of your allies is playing music or performing, you gain an edge on tests made to conceal objects, hide, pick pockets, or sneak.
 
 <!-- @type: title -->
@@ -26320,7 +26320,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 > |-----------------|-------------------------------------:|
 > | **📏 3 burst**  | **🎯 Each undead enemy in the area** |
 >
-> **Effect:** Each target takes holy damage equal to your Reason, Intuition, or Presence score (your choice). Additionally, each target who has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
+> **Effect:** Each target takes holy damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice). Additionally, each target who has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
 
 <!-- @type: feature-group | @id: 2-echelon-titles -->
 ### 2nd-Echelon Titles
@@ -26347,7 +26347,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Might or Agility:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 6 damage; I < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 10 damage; I < AVERAGE, [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
@@ -26441,7 +26441,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** You know the Khelt language. Additionally, choose one of the following benefits:
 
 - *Gift of Charm:* You have a skill of your choice from the interpersonal skill group.
-- *Gift of Foresight:* When resisting potencies, your Intuition score is considered to be 1 higher than usual.
+- *Gift of Foresight:* When resisting potencies, your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score is considered to be 1 higher than usual.
 - *Gift of Knowledge:* You gain an edge on tests you make that use any skill from the lore skill group.
 
 <!-- @type: title -->
@@ -26462,7 +26462,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Might or Agility:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 damage; M < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 > - **12-16:** 11 damage; M < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
@@ -26531,7 +26531,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 > |---------------------------|--------------------:|
 > | **📏 Melee 1**            | **🎯 One creature** |
 >
-> **Power Roll + Might or Agility:**
+> **Power Roll + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
 > - **≤11:** 7 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
 > - **12-16:** 11 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
@@ -26654,7 +26654,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Made of Teeth:* Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).
 - *Soulsight:* Any creature within 2 squares can't be hidden from you.
 
-**Special:** When you make a Presence test and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.
+**Special:** When you make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test and roll a natural 5 or lower, you are cursed to communicate in only Proto-Ctholl for 1 minute, whether you know that language or not.
 
 <!-- @type: title -->
 #### Diabolist
@@ -26665,7 +26665,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target Reason, Intuition, or Presence increase by 1.
+- *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increase by 1.
 - *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly [Devil](scc:mcdm.heroes.v1/ancestry/devil):* You gain the Silver Tongue signature trait from the [devil](scc:mcdm.heroes.v1/ancestry/devil) ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
@@ -26699,7 +26699,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
   - *Fog:* Visibility is reduced to 6 squares.
   - *High Winds:* The speed of wind-powered vessels is doubled.
   - *Light Winds:* No effects due to weather.
-  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group Reason test. On a failure, the vessel needs repairs and moves at half speed until those repairs are made.
+  - *Storm:* The crew of an unsheltered wind-powered vessel must make a medium group [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. On a failure, the vessel needs repairs and moves at half speed until those repairs are made.
 
 <!-- @type: title -->
 #### Maestro
@@ -26721,7 +26721,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 > |-----------------|---------------------------------:|
 > | **📏 5 burst**  | **🎯 Each creature in the area** |
 >
-> **Power Roll + Presence:**
+> **Power Roll + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
 > - **≤11:** You take 4 sonic damage unless you have the Performance skill.
 > - **12-16:** 6 sonic damage; M < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
@@ -26743,7 +26743,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Masterpiece:* The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.
 - *Research Dividends:* You gain the item prerequisite for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the project source language for that enhancement.
 - *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an edge on tests made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
-- *Strong Hands Make Light Work:* Whenever you make a project roll, you can use Might as the project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
+- *Strong Hands Make Light Work:* Whenever you make a project roll, you can use [Might](scc:mcdm.heroes.v1/rule.character/might) as the project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: title -->
 #### Noble
@@ -26754,7 +26754,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *I Know How to Talk to These People:* You gain an edge on Presence tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
+- *I Know How to Talk to These People:* You gain an edge on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
 - *Noble Splendor:* You earn 1 Renown and 1 Wealth.
 - *Retinue:* The number of followers you can recruit increases by two.
 
@@ -26850,7 +26850,7 @@ Additionally, choose one of the following benefits:
 
 **Prerequisite:** You learn a cosmic truth that alters your understanding of reality.
 
-**Effect:** Your choice of your Reason or Intuition increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** Your choice of your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Cosmic Revelation:* When you make a test with a skill from the lore skill group and obtain a tier 1 or tier 2 outcome, you can instead obtain a tier 3 outcome. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Mind Over Matter:* Whenever you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can end one condition on yourself.
@@ -26879,7 +26879,7 @@ Additionally, choose one of the following benefits:
 **Effect:** You gain the following benefits:
 
 - *Royal Authority:* Inhabitants of your nation must obey your lawful orders or suffer the consequences.
-- *Royal Majesty:* Your choice of your Might or Presence increases by 1 (to a maximum of 6).
+- *Royal Majesty:* Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increases by 1 (to a maximum of 6).
 
 Additionally, choose one of the following benefits:
 
@@ -26897,7 +26897,7 @@ Additionally, choose one of the following benefits:
 
 **Prerequisite:** You conduct a successful negotiation on which the fate of a nation or a world stands.
 
-**Effect:** Your choice of your Reason or Presence increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** Your choice of your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Calm Heads Prevail:* When you make a test to stop combat and start a negotiation, you always obtain a tier 3 outcome.
 - *Drop Your Sword:* When you succeed on a test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, you can cause affected creatures to drop any items they are holding.
@@ -26911,7 +26911,7 @@ Additionally, choose one of the following benefits:
 
 **Prerequisite:** You died in glorious battle while on a quest for a higher power.
 
-**Effect:** A god or other powerful being has determined that it is not yet your time to die. Your body fades away, but you reappear alive 24 hours later in a location of your choice. You regain all your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), and your choice of your Intuition or Presence increases by 1 (to a maximum of 6).
+**Effect:** A god or other powerful being has determined that it is not yet your time to die. Your body fades away, but you reappear alive 24 hours later in a location of your choice. You regain all your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), and your choice of your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increases by 1 (to a maximum of 6).
 
 Additionally, choose one of the following benefits:
 
@@ -26928,7 +26928,7 @@ Additionally, choose one of the following benefits:
 
 **Prerequisite:** You have the [Master Librarian](scc:mcdm.heroes.v1/title/master-librarian) title, and you complete a Learn From a Master project with a project goal of 1,000.
 
-**Effect:** Your choice of your Reason or Intuition increases by 1 (to a maximum of 6).
+**Effect:** Your choice of your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) increases by 1 (to a maximum of 6).
 
 Additionally, choose a heroic ability belonging to any class. You gain this heroic ability, which can be paid for using the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) of your class. You can't use a heroic ability that requires a class feature you don't have.
 
@@ -26939,7 +26939,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 **Prerequisite:** You have the [Unstoppable](scc:mcdm.heroes.v1/title/unstoppable) title, and you make or assist on a test as part of a montage test that obtains a full success.
 
-**Effect:** Your choice of your Might or Agility increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Bounce Back Fast:* Whenever you rest for 8 hours or more, you can gain the benefit of a respite. Once you use this benefit, you can't use it again until you have taken a regular respite.
 - *Reserves of Strength:* Your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) is half your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)
@@ -26952,7 +26952,7 @@ Additionally, choose a heroic ability belonging to any class. You gain this hero
 
 **Prerequisite:** You have the [Heist Hero](scc:mcdm.heroes.v1/title/heist-hero) title, and you have stolen a precious object or escaped from captivity while evading guards of 8th level or higher.
 
-**Effect:** Your choice of your Might or Agility increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** Your choice of your [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Bye-Bye:* You can use a maneuver to [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself and each willing ally within 5 squares of you to new positions within 10 squares of your original starting point. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Laughs at Locks:* Whenever you make a test to open a lock or break a restraint, you don't need any tools and you automatically obtain a tier 3 outcome.
@@ -27005,7 +27005,7 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
+When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 1 (your choice), a [Reason](scc:mcdm.heroes.v1/rule.character/reason) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
 <!-- @type: rule | @group: general | @id: retainer -->
 ##### Retainer
@@ -27018,7 +27018,7 @@ Rules for retainers are found in *Draw Steel: Monsters*.
 
 Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a Reason and Intuition score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
+When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
 ## Wealth
 
@@ -27826,7 +27826,7 @@ Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-
 
 Nikros is strength. He is dominance. His is the right of the strong to rule over the weak. He is the Tyrant.
 
-Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, followers of Nikros are often mistaken for followers of [Adûn](scc:mcdm.heroes.v1/god/adun)—a mask they are happy to wear. Both teach that strength is good. But for [Adûn](scc:mcdm.heroes.v1/god/adun) strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. Might is right.
+Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, followers of Nikros are often mistaken for followers of [Adûn](scc:mcdm.heroes.v1/god/adun)—a mask they are happy to wear. Both teach that strength is good. But for [Adûn](scc:mcdm.heroes.v1/god/adun) strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. [Might](scc:mcdm.heroes.v1/rule.character/might) is right.
 
 Many is the baron or duke who attained power through sheer strength and ruthlessness, seeing their people as mere resources to be spent. Many of these rulers only come to Nikros after achieving power, their ears poisoned by a priest of the Tyrant.
 
@@ -28460,7 +28460,7 @@ Information or objects the heroes need to obtain from an exploration scene to ad
 
 It's okay for a test to be the *best* way to get necessary information or objects. But if the heroes fail or don't make the test, make sure there's another way—likely a more difficult way—for the story to continue. When searching a necromancer's tower for a book that will help stop a ritual, characters might miss all the clues pointing to the book. But they can later run into the necromancer's apprentices, who know where the book is—and who aren't willing to give up that information without a difficult fight.
 
-Other information and rewards the heroes can earn in an exploration scene can be hidden behind tests that can be failed or missed. If heroes don't think to check under the dead king's desk, they don't find the chalice that rolled under there. If they do find the chalice but fail a Reason test to examine it, they don't learn that the chalice carries the residue of a rare poison, potentially leading them to a nearby alchemist who sells it. They can still solve the mystery without this information,
+Other information and rewards the heroes can earn in an exploration scene can be hidden behind tests that can be failed or missed. If heroes don't think to check under the dead king's desk, they don't find the chalice that rolled under there. If they do find the chalice but fail a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to examine it, they don't learn that the chalice carries the residue of a rare poison, potentially leading them to a nearby alchemist who sells it. They can still solve the mystery without this information,
 
 but it'll take them a little longer. However, the longer it takes them, the more time the assassin has to prepare for their arrival, so missing those details has consequences!
 
@@ -28490,7 +28490,7 @@ Allow the heroes' investigation to drive the action. In an exploration scene, yo
 
 ##### When to Call for a Test
 
-The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a test. However, following the tracks that lead out of the cave toward the bandits' new hideout does require a test, because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no test is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a Reason test to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
+The heroes can usually obtain basic information just by interacting with their environment. If a player asks, "Does it look like the muddy floor of the cave would cling to someone's boots?", getting confirmation doesn't require a test. However, following the tracks that lead out of the cave toward the bandits' new hideout does require a test, because that's a harder task whose failure gives the bandits extra time to prepare an ambush for when the heroes arrive! If a character wants to meticulously dig through the refuse pile and examine each piece of trash, no test is required to find the torn-up pieces of the map unless they're under serious time pressure to do so. However, a character piecing the map back together needs to succeed on a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to do so, because failing that task means the heroes obtain only incomplete information as they continue their search.
 
 Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) explains tests in detail and provides examples of different difficulties of tests. A lot of other fantasy games reflexively ask for a roll of the dice anytime a hero attempts a task. However, *Draw Steel* is built around the idea that the Director calls for tests only when failure would make the story more interesting for the heroes and not grind the game to a halt. You might end up asking for fewer tests than you're used to—and that's the way the game is meant to be played!
 
@@ -28510,7 +28510,7 @@ A hero who has a modifier of +1 or more on a test will likely succeed on a **mod
 
 ##### Setting Difficulty During Play
 
-When you call for a test, you can tell the player making the test the difficulty. Saying "Make a hard Reason test" can create a dramatic moment at the table as everyone holds their collective breath to see whether the outcome is success, failure, or failure with an additional consequence.
+When you call for a test, you can tell the player making the test the difficulty. Saying "Make a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) test" can create a dramatic moment at the table as everyone holds their collective breath to see whether the outcome is success, failure, or failure with an additional consequence.
 
 On the other hand, not sharing the difficulty of every test with the players lets you do a little fudging of those difficulties if you want to. You might call for a test and then realize that a test really wasn't necessary even as the player makes the roll. It's easy to simply say, "Hey, sorry. I shouldn't have asked for a test. You just do the thing." But if you want to play it cool, remember that every level of an easy test is a success. It's simply a matter of whether a consequence or reward comes with it. If a hero gets an 11 or lower on a test and you think they should still succeed, then the test was easy difficulty.
 
@@ -28548,9 +28548,9 @@ The hazards you'll create and use in your adventures come in one of three types:
 
 ##### Activated Hazard Triggers
 
-All activated hazards have some kind of trigger, and the heroes should be allowed to make tests—typically Reason or Intuition tests—to notice and then disable that trigger. The deadlier the hazard, the harder the test.
+All activated hazards have some kind of trigger, and the heroes should be allowed to make tests—typically [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) tests—to notice and then disable that trigger. The deadlier the hazard, the harder the test.
 
-If a hero doesn't think to search for a trigger before stumbling into a hazard, you can still call for a test to let them notice the trigger when the hazard is about to activate, provided it makes sense to do so. If a hero is about to cross over a tripwire that triggers a trap, you might call for an Intuition test to notice the wire at the point when it can be clearly seen. On a failed test, the character walks into the tripwire and activates the trap.
+If a hero doesn't think to search for a trigger before stumbling into a hazard, you can still call for a test to let them notice the trigger when the hazard is about to activate, provided it makes sense to do so. If a hero is about to cross over a tripwire that triggers a trap, you might call for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test to notice the wire at the point when it can be clearly seen. On a failed test, the character walks into the tripwire and activates the trap.
 
 Once a trigger is noticed, the heroes might get a chance to disarm it if that's possible. There's probably nothing to be done short of renovating an old mine to stop it from collapsing when anyone damages its walls, but the characters can try to disable a magic rune in a corridor that [teleports](scc:mcdm.heroes.v1/movement/teleport) any creature moving over it into the middle of an ocean. Just remember that trying and failing to disarm a trigger might trigger the hazard!
 
@@ -28558,7 +28558,7 @@ Once a trigger is noticed, the heroes might get a chance to disarm it if that's 
 
 The damage dealt by a hazard depends on two factors. First, how deadly would you like the hazard to be? Do you want it to leave the heroes just a little banged up, or should it cost them a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or two? Second, is the hazard a perpetual hazard or a one-time hazard? If it's an obstruction, answer this question by asking whether you expect a creature to be able to take damage from the obstruction more than once? If the answer is yes, treat it as a perpetual hazard in terms of damage. If not, it's a one-time hazard.
 
-A hero might get a chance to mitigate damage from a hazard, such as by making an Agility test to outrun or dodge an avalanche, or making a Reason test to resist the psychic damage of a psionic cloud. You can decide what sort of test needs to be made based on the circumstances.
+A hero might get a chance to mitigate damage from a hazard, such as by making an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test to outrun or dodge an avalanche, or making a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to resist the psychic damage of a psionic cloud. You can decide what sort of test needs to be made based on the circumstances.
 
 The One-Time Hazard Deadliness and Perpetual Hazard Deadliness tables show the damage dealt by hazards. Hazards are organized by level, indicating their relative threat compared to the level of the heroes. Each entry features three damage expressions for a tier 1, tier 2, and tier 3 outcome on the test made to mitigate the hazard's damage. The worse the test outcome, the higher the damage.
 
@@ -28597,7 +28597,7 @@ The One-Time Hazard Deadliness and Perpetual Hazard Deadliness tables show the d
 Some hazards deal effects in addition to or instead of damage. A hazard that is part of a combat encounter can impose just about any effect, including conditions, and can have a real impact on the story. However, if the heroes are facing a hazard outside of combat, you want any effects it imposes to be something more impactful and lasting. The following effects each reflect the interesting and lasting consequences a noncombat hazard should have:
 
 - A character loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- A curse leaves a character with a demonic-sounding voice that imposes a bane on Presence tests.
+- A curse leaves a character with a demonic-sounding voice that imposes a bane on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests.
 - A character receives a gaping wound that causes them to take 1d10 damage whenever they roll a natural 2 before they next finish a respite.
 - A character is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed into the middle of a nearby body of water.
 
@@ -29044,21 +29044,21 @@ Fire blazes in several buildings whose occupants need to be rescued. Elsewhere, 
 
 The following challenges can be part of the montage test:
 
-- **Bucket Brigades:** Characters can organize the would-be firefighters into disciplined bucket brigades, or can fight the fire directly in some other way. *Suggested* C*haracteristics:* Presence, Reason. *Suggested Skills:* Architecture, Intimidate, Lead.
-- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the montage test.
-- **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Intimidate, Lead, Persuade.
-- **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Handle Animals, Lift, Ride.
-- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Use the Freed Horses (if the Free the Horses challenge was successful):**  Characters can put the horses to work clearing rubble or bringing people to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Reason, Presence. *Suggested Skills:* Drive, Handle Animals, Ride.
+- **Bucket Brigades:** Characters can organize the would-be firefighters into disciplined bucket brigades, or can fight the fire directly in some other way. *Suggested* C*haracteristics:* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, Intimidate, Lead.
+- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
+- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the montage test.
+- **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Intimidate, Lead, Persuade.
+- **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Handle Animals, Lift, Ride.
+- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
+- **Use the Freed Horses (if the Free the Horses challenge was successful):**  Characters can put the horses to work clearing rubble or bringing people to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Drive, Handle Animals, Ride.
 
 ###### Optional Twists
 
 At the end of the first montage test round, an emergency crops up. One or more heroes, selected by the players, must deal with the situation before the end of the round. If the heroes successfully deal with the twist, they earn a success for the montage test. Otherwise, they earn a failure.
 
-- **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Climb, Gymnastics, Jump.
 - **Cause of the Fire:** At the end of the first round of the montage test, the hostile cause of the fire appears—a squad of an invading army, a dragon, a team of arsonists, and so forth. The characters must engage in a standard or hard encounter with this threat.
-- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Lift, Persuade.
+- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lift, Persuade.
 
 ###### Montage Test Outcomes
 
@@ -29082,11 +29082,11 @@ Half the work of any successful infiltration is done before setting foot in the 
 
 The following challenges can be part of this initial preparation:
 
-- **Bribe Guards:** The heroes can pay off the guards outside the palace to look the other way. If successful, one or more heroes' Wealth is lowered by 1. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Criminal Underworld, Flirt, Persuade.
-- **Find Blueprints:** Researching secret entrances and little-known passageways can be undertaken in forgotten libraries or well-guarded town halls. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Reason. *Suggested Skills:* Architecture, History, Sneak.
-- **Identify Unguarded Entrances:** Scouting around or consulting contacts can reveal a forgotten back door or accessible window. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Alertness, Architecture, Criminal Underworld.
-- **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Alertness, Eavesdrop, Track.
-- **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence, Reason. *Suggested Skills:* Disguise, Forgery, Lie.
+- **Bribe Guards:** The heroes can pay off the guards outside the palace to look the other way. If successful, one or more heroes' Wealth is lowered by 1. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Criminal Underworld, Flirt, Persuade.
+- **Find Blueprints:** Researching secret entrances and little-known passageways can be undertaken in forgotten libraries or well-guarded town halls. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, History, Sneak.
+- **Identify Unguarded Entrances:** Scouting around or consulting contacts can reveal a forgotten back door or accessible window. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Architecture, Criminal Underworld.
+- **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alertness, Eavesdrop, Track.
+- **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Disguise, Forgery, Lie.
 
 When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a test as part of the montage test, the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a test, the alarm level decreases, to a minimum of 0. While the alarm level is 1, tests made inside the palace by the characters as part of the montage test take a bane. While the alarm level is 2, such tests have a double bane.
 
@@ -29094,12 +29094,12 @@ The first time any hero fails a test made as part of the montage test while the 
 
 The following challenges can be part of the heroes' infiltration:
 
-- **Aerial Route:** Characters can follow a path that leads along catwalks or high ledges. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Avoid Traffic:** By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Navigate, Search, Track.
+- **Aerial Route:** Characters can follow a path that leads along catwalks or high ledges. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Avoid Traffic:** By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Search, Track.
 - **Lie Low:** Once while the alarm level is greater than 0, the heroes can find a place to hide for a bit, reducing the alarm level by 1. This activity doesn't require a test or generate a success or failure.
-- **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Alchemy, Perform, Sabotage.
-- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an edge if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Disguise, Lie, Search.
-- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility. *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Alchemy, Perform, Sabotage.
+- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an edge if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Lie, Search.
+- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility). *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the montage test.
 
 ###### Optional Twist
 
@@ -29125,14 +29125,14 @@ The walls or palisades around the settlement (if any) are in poor shape. Roads o
 
 The following challenges can be part of the montage test:
 
-- **Arms and Armor:** Crafting or repairing weapons and armor of all kinds can help rebuild the defenders' stores. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Alchemy, Blacksmithing, Fletching.
-- **Evacuation:** Heroes can help get noncombatants to safety before the invaders arrive. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Handle Animals, Lead, Persuade.
-- **Fortification:** Characters can help build or repair walls and other defensive structures. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Architecture, Endurance, Lift.
-- **Inspiration:** Improving morale with rousing speeches or performances can help prepare the locals for the fight to come. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Brag, Lead, Perform.
-- **Propaganda:** Characters can attempt to sow confusion or rebellion in the ranks of the approaching army. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Presence. *Suggested Skills:* Disguise, Forgery, Lie.
-- **Stockpiling:** Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement's supplies. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Reason. *Suggested Skills:* Nature, Sneak, Track.
-- **Training:** Heroes can help to train the settlement's defenders. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Endurance, Intimidate, Lead.
-- **Trapmaking:** Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Conceal Object, Endurance, Mechanics.
+- **Arms and Armor:** Crafting or repairing weapons and armor of all kinds can help rebuild the defenders' stores. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alchemy, Blacksmithing, Fletching.
+- **Evacuation:** Heroes can help get noncombatants to safety before the invaders arrive. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Handle Animals, Lead, Persuade.
+- **Fortification:** Characters can help build or repair walls and other defensive structures. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, Endurance, Lift.
+- **Inspiration:** Improving morale with rousing speeches or performances can help prepare the locals for the fight to come. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Brag, Lead, Perform.
+- **Propaganda:** Characters can attempt to sow confusion or rebellion in the ranks of the approaching army. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Forgery, Lie.
+- **Stockpiling:** Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement's supplies. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Nature, Sneak, Track.
+- **Training:** Heroes can help to train the settlement's defenders. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Endurance, Intimidate, Lead.
+- **Trapmaking:** Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Conceal Object, Endurance, Mechanics.
 
 ###### Optional Twist
 
@@ -29158,11 +29158,11 @@ The fugitive's route is easy to follow, but could they be setting a false trail?
 
 The following challenges can be part of the montage test:
 
-- **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Interrogate, Persuade, Rumors.
-- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition. *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the montage test.
-- **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an edge on the test for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
-- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): Might. Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Interrogate, Persuade, Rumors.
+- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an edge on the test for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
+- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): [Might](scc:mcdm.heroes.v1/rule.character/might). Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Optional Twist
 
@@ -29188,13 +29188,13 @@ The wilds hold unknown dangers. Characters need to figure out the best route whi
 
 The following challenges can be part of the montage test:
 
-- **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
-- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lift.
-- **Find the Path:** Avoiding getting lost is a major challenge for the characters. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Alertness, Nature, Navigate.
-- **Keep Up Spirits:** Characters can keep up the party's morale during a forced march with cheer and song. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Lead, Music, Perform.
-- **Keep Watch:** Characters must be on constant guard against danger. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition. *Suggested Skills:* Alertness, Eavesdrop, Track.
-- **Push On:** Characters must be ready to pick up the pace and push past their fatigue. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lead; Drive, Handle Animals, or Ride if the party has mounts or vehicles.
-- **Scout Ahead:** Investigating the path ahead lets the characters avoid dead-ends and arduous terrain. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Alertness, Navigate, Sneak.
+- **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
+- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lift.
+- **Find the Path:** Avoiding getting lost is a major challenge for the characters. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Alertness, Nature, Navigate.
+- **Keep Up Spirits:** Characters can keep up the party's morale during a forced march with cheer and song. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Lead, Music, Perform.
+- **Keep Watch:** Characters must be on constant guard against danger. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Eavesdrop, Track.
+- **Push On:** Characters must be ready to pick up the pace and push past their fatigue. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might). *Suggested Skills:* Endurance, Lead; Drive, Handle Animals, or Ride if the party has mounts or vehicles.
+- **Scout Ahead:** Investigating the path ahead lets the characters avoid dead-ends and arduous terrain. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition). *Suggested Skills:* Alertness, Navigate, Sneak.
 
 ###### Optional Twist
 
