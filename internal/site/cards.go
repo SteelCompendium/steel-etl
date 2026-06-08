@@ -164,7 +164,7 @@ func kitCard(fm, body, file, name string) string {
 	}
 	inner := "  <div class=\"sc-card__equip\">" + equip + "</div>\n"
 	// First flavor line — the kit's brief description (links stripped, truncated).
-	if desc := firstProse(body); desc != "" {
+	if desc := cardFlavor(fm, body); desc != "" {
 		inner += flavorDiv(desc, 160)
 	}
 	// Row 1 — defensive / movement stats. Stamina bonuses are per echelon.
@@ -209,7 +209,7 @@ func ancestryCard(fm, body, file, name string) string {
 		inner += lineBlock("Signature Trait", "<span class=\"hl\">"+html.EscapeString(t)+"</span>")
 	}
 	// First flavor paragraph, shown in full (no truncation).
-	if f := firstProse(body); f != "" {
+	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 0)
 	}
 	if inner == "" {
@@ -221,7 +221,9 @@ func ancestryCard(fm, body, file, name string) string {
 func careerCard(fm, body, file, name string) string {
 	inner := ""
 	// First line of flavor (minus the "In defining your career…" boilerplate).
-	if f := careerFlavor(body); f != "" {
+	if f := strings.TrimSpace(parseFrontmatterField(fm, "flavor")); f != "" {
+		inner += flavorDiv(f, 200)
+	} else if f := careerFlavor(body); f != "" {
 		inner += flavorDiv(f, 200)
 	}
 	// Four standard numeric fields as stat boxes. The source carries the
@@ -263,18 +265,18 @@ func treasureCard(fm, body, file, name string) string {
 	// Flavor: the first prose paragraph (the italic descriptor), shown in full (no
 	// truncation). The --clamp modifier reserves a fixed 3-line height so a 1-line
 	// and a 3-line descriptor still produce the same card height.
-	if f := firstProse(body); f != "" {
+	if f := cardFlavor(fm, body); f != "" {
 		inner += "  <div class=\"sc-card__flavor sc-card__flavor--clamp\">" + html.EscapeString(f) + "</div>\n"
 	}
 	// Project goal & roll characteristic are short, fixed values — render them as
 	// stat sub-cards (the kit-card treatment). They live as "**Label:**" lines in
 	// the body; the parser doesn't lift them into frontmatter.
 	var stats []statCell
-	if v := bodyLabeledLine(body, "Project Goal"); v != "" {
+	if v := firstNonEmpty(parseFrontmatterField(fm, "project_goal"), bodyLabeledLine(body, "Project Goal")); v != "" {
 		disp, tip := goalStat(stripMD(v))
 		stats = append(stats, statCell{val: disp, label: "Project Goal", title: tip})
 	}
-	if v := bodyLabeledLine(body, "Project Roll Characteristic"); v != "" {
+	if v := firstNonEmpty(parseFrontmatterField(fm, "project_roll_characteristic"), bodyLabeledLine(body, "Project Roll Characteristic")); v != "" {
 		stats = append(stats, statCell{val: stripMD(v), label: "Roll Characteristic"})
 	}
 	inner += statsCells(stats)
@@ -313,7 +315,7 @@ func titleCard(fm, body, file, name string) string {
 	}
 	inner := ""
 	// First paragraph is flavor — shown in full (no truncation).
-	if f := firstProse(body); f != "" {
+	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 0)
 	}
 	if v := firstField(fm, "prerequisites", "prerequisite"); v != "" {
@@ -324,7 +326,10 @@ func titleCard(fm, body, file, name string) string {
 
 func complicationCard(fm, body, file, name string) string {
 	// Take the 1–2 line description/flavor that sits ABOVE the benefit/drawback.
-	flavor := complicationFlavor(body)
+	flavor := strings.TrimSpace(parseFrontmatterField(fm, "flavor"))
+	if flavor == "" {
+		flavor = complicationFlavor(body)
+	}
 	if flavor == "" {
 		// Combined "Benefit and Drawback:" entries have no lead-in — fall back to
 		// the benefit (or drawback) text so the card isn't empty.
@@ -344,7 +349,7 @@ func cultureCard(fm, body, file, name string) string {
 	}
 	inner := tagsBlock(tags)
 	// First flavor paragraph.
-	if f := firstProse(body); f != "" {
+	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 240)
 	}
 	// "Skill Options" lives in the body as a bolded "**Skill Options:**" lead-in,
@@ -735,6 +740,27 @@ func isProse(t string) bool {
 	}
 	return !strings.HasPrefix(t, "#") && !strings.HasPrefix(t, "|") &&
 		!strings.HasPrefix(t, ">") && !strings.HasPrefix(t, "- ")
+}
+
+// cardFlavor returns the structured `flavor` frontmatter field (the parser is
+// the single source of truth), falling back to the first body prose paragraph
+// for pages produced before the field existed. Keeps card output stable while
+// making the data field authoritative.
+func cardFlavor(fm, body string) string {
+	if f := strings.TrimSpace(parseFrontmatterField(fm, "flavor")); f != "" {
+		return f
+	}
+	return firstProse(body)
+}
+
+// firstNonEmpty returns the first trimmed-non-empty value among the args.
+func firstNonEmpty(vals ...string) string {
+	for _, v := range vals {
+		if s := strings.TrimSpace(v); s != "" {
+			return s
+		}
+	}
+	return ""
 }
 
 // firstProse returns the first prose paragraph of a page body, markdown-stripped.
