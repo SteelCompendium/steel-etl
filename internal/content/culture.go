@@ -23,6 +23,10 @@ func (p *CultureParser) Parse(ctx *context.ContextStack, section *parser.Section
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract structured fields
 	if v := extractField(body, "Environment"); v != "" {
 		fm["environment"] = v

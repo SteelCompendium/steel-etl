@@ -25,6 +25,10 @@ func (p *AncestryParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract signature trait name. Source uses two formats:
 	//   1. Inline: **Signature Trait:** Name
 	//   2. Heading: #### Signature Trait: Name (inside child "Traits" section)

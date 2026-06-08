@@ -66,6 +66,15 @@ func (p *TreasureParser) Parse(ctx *context.ContextStack, section *parser.Sectio
 	if v := extractField(body, "Effect"); v != "" {
 		fm["effect"] = v
 	}
+	if v := extractField(body, "Project Goal"); v != "" {
+		fm["project_goal"] = v
+	}
+	if v := extractField(body, "Project Roll Characteristic"); v != "" {
+		fm["project_roll_characteristic"] = v
+	}
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
 
 	// Annotation overrides for fields not easily extracted from body
 	if ann := section.Annotation; ann != nil {

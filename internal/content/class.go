@@ -25,6 +25,10 @@ func (p *ClassParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract heroic resource from body
 	if hr := extractHeroicResource(body); hr != "" {
 		fm["heroic_resource"] = hr

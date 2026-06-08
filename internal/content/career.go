@@ -25,6 +25,15 @@ func (p *CareerParser) Parse(ctx *context.ContextStack, section *parser.Section)
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		if i := strings.Index(f, "In defining your career"); i >= 0 {
+			f = strings.TrimSpace(f[:i])
+		}
+		if f != "" {
+			fm["flavor"] = f
+		}
+	}
+
 	// Extract structured fields from body
 	// Skills: wrap as single-element array (source text is natural language, not a clean list)
 	if v := extractField(body, "Skill"); v != "" {
