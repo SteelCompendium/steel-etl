@@ -693,7 +693,7 @@ Whenever a hero or other creature in the game attempts a task with an uncertain 
 
 #### Types of Power Rolls
 
-The game uses two types of power rolls. An **ability roll** is used when you use certain abilities to determine their impact. For instance, if a [fury](scc:mcdm.heroes.v1/class/fury) uses their [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability to strike an enemy, their ability roll determines how much damage the enemy takes and how far back the enemy is pushed. See Abilities for more information.
+The game uses two types of power rolls. An **ability roll** is used when you use certain abilities to determine their impact. For instance, if a [fury](scc:mcdm.heroes.v1/class/fury) uses their [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability to strike an enemy, their ability roll determines how much [damage](scc:mcdm.heroes.v1/rule.damage/damage) the enemy takes and how far back the enemy is pushed. See Abilities for more information.
 
 A **test** is a power roll you make outside of using your abilities to affect or interact with the world around you. A [tactician](scc:mcdm.heroes.v1/class/tactician) might not have an ability that lets them climb up the face of a cliff, so climbing is an activity they can attempt with a test. An [elementalist](scc:mcdm.heroes.v1/class/elementalist) doesn't have an ability that lets them automatically intimidate a cultist into backing down from a fight, but they can make a test if they want to try. See [Tests](scc:mcdm.heroes.v1/chapter/tests) for more information.
 
@@ -797,10 +797,10 @@ Players can also be awarded [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-
 
 Whenever [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) are available, you can spend them in the following ways:
 
-- You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), allowing you to increase the damage or potency of an ability. (See [Surges](scc:mcdm.heroes.v1/rule.resource/surge) in [Classes](scc:mcdm.heroes.v1/chapter/classes).)
+- You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), allowing you to increase the [damage](scc:mcdm.heroes.v1/rule.damage/damage) or potency of an ability. (See [Surges](scc:mcdm.heroes.v1/rule.resource/surge) in [Classes](scc:mcdm.heroes.v1/chapter/classes).)
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) when you fail a saving throw, letting you succeed on the save instead.
 - You can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to reroll a test. You must use the new roll.
-- You can spend 2 [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) on your turn or when you take damage (no action required) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) before taking the damage.
+- You can spend 2 [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) on your turn or when you take [damage](scc:mcdm.heroes.v1/rule.damage/damage) (no action required) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) before taking the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
 You can use only one [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) benefit per turn or per test. Unless the Director decides otherwise, unused [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) disappear at the end of a session.
 
@@ -884,7 +884,7 @@ Your hero's class description has more information about how to use your Heroic 
 
 #### Recoveries
 
-[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) represent the number of times your hero can take a breather and keep fighting. Spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) lets you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)—the measure of any creature's physical vitality and capacity to shrug off or avoid damage (see [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in [Combat](scc:mcdm.heroes.v1/chapter/combat)). Running out of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) means your hero has reached their uttermost limit.
+[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) represent the number of times your hero can take a breather and keep fighting. Spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) lets you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)—the measure of any creature's physical vitality and capacity to shrug off or avoid [damage](scc:mcdm.heroes.v1/rule.damage/damage) (see [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in [Combat](scc:mcdm.heroes.v1/chapter/combat)). Running out of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) means your hero has reached their uttermost limit.
 
 When you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your **[recovery value](scc:mcdm.heroes.v1/rule.health/recoveries)**, which is one-third your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum. You can spend your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) with a special maneuver (see below), or you might do so with a little supernatural help from a [conduit](scc:mcdm.heroes.v1/class/conduit), a boost of adrenaline from an allied [tactician](scc:mcdm.heroes.v1/class/tactician), or inspiration from your party's [troubadour](scc:mcdm.heroes.v1/class/troubadour).
 
@@ -22043,9 +22043,9 @@ If multiple damage weaknesses apply to a source of damage, only the weakness wit
 <!-- @type: rule | @group: health | @id: stamina -->
 ### Stamina
 
-Your hero's survivability is represented by your Stamina. Think of Stamina as a combination of a creature's physical vitality and their overall energy for dodging and resisting incoming blows, spells, and other violence. It's not that every instance of damage deals a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) wound to you, but that each one chips away at your ability to fight effectively. One attack might make you sweat as you leap back to avoid an arrow, while another might graze your elbow with a dagger nick, leaving a dull, distracting pain. Eventually, this draining of energy leaves you open for bigger blows that can truly harm your body—or possibly kill you.
+Your hero's survivability is represented by your Stamina. Think of Stamina as a combination of a creature's physical vitality and their overall energy for dodging and resisting incoming blows, spells, and other violence. It's not that every instance of [damage](scc:mcdm.heroes.v1/rule.damage/damage) deals a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) wound to you, but that each one chips away at your ability to fight effectively. One attack might make you sweat as you leap back to avoid an arrow, while another might graze your elbow with a dagger nick, leaving a dull, distracting pain. Eventually, this draining of energy leaves you open for bigger blows that can truly harm your body—or possibly kill you.
 
-After any damage you take is reduced by [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
+After any [damage](scc:mcdm.heroes.v1/rule.damage/damage) you take is reduced by [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or other effects, your Stamina is reduced by an amount equal to the remaining [damage](scc:mcdm.heroes.v1/rule.damage/damage). Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
 
 <!-- @type: rule | @group: health | @id: recoveries -->
 #### Recoveries and Recovery Value
