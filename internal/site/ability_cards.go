@@ -27,10 +27,11 @@ import (
 	"strings"
 )
 
-// buildAbilityCardPage replaces an ability/trait page's body with its steel card:
-// abilities become the raised `.sc-ability` plate (renderAbilityCard), traits the
-// recessed `.sc-trait` codex niche (renderTraitCard, see trait_cards.go). Returns
-// (newData, true) when the page is an ability or trait; (data, false) otherwise so
+// buildAbilityCardPage replaces an ability/trait/feature page's body with its
+// steel card: abilities become the raised `.sc-ability` plate (renderAbilityCard);
+// traits AND plain features (type: feature) become the recessed `.sc-trait` codex
+// niche (renderTraitCard, see trait_cards.go). Returns
+// (newData, true) when the page is an ability, trait, or feature; (data, false) otherwise so
 // the caller writes it unchanged. The frontmatter is preserved verbatim; injectH1
 // (called next in buildSection) prepends the "# Name" MkDocs needs for the
 // title/nav/TOC, which the CSS hides.
@@ -40,7 +41,7 @@ func buildAbilityCardPage(data []byte) ([]byte, bool) {
 	switch parseFrontmatterField(fm, "type") {
 	case "ability":
 		card = renderAbilityCard(fm, body)
-	case "trait":
+	case "trait", "feature":
 		card = renderTraitCard(fm, body)
 	default:
 		return data, false

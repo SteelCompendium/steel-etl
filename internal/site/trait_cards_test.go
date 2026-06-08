@@ -5,6 +5,18 @@ import (
 	"testing"
 )
 
+// A plain feature (type: feature) routes through the recessed niche, same as a trait.
+func TestBuildAbilityCardPage_PlainFeature(t *testing.T) {
+	page := "---\ntype: feature\nname: A Beyonding of Vision\n---\n\nYour void sense reaches further.\n"
+	out, ok := buildAbilityCardPage([]byte(page))
+	if !ok {
+		t.Fatal("expected plain feature to be rendered as a card")
+	}
+	if !strings.Contains(string(out), "sc-trait") {
+		t.Errorf("plain feature should render the recessed .sc-trait niche\n%s", string(out))
+	}
+}
+
 // A pure-prose trait → a flat niche with the drop-cap modifier and one paragraph.
 func TestRenderTraitCard_ProseOnly(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait\nscc: mcdm.heroes.v1/feature.trait.dragon-knight/prismatic-scales"
