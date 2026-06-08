@@ -96,10 +96,10 @@ For us, fantasy includes magic, like wizards casting spells, and psionics, the n
 We know that many folks are coming to this game having only experienced d20 fantasy RPGs. This section details a few key distinctions between this game and typical d20 fantasy that you'll notice right away. These aren't the only distinctions, but they're the most obvious.
 
 - **Character options are different.** We strongly recommend you start exploring *Draw Steel* by looking through the character creation section before you decide what you want to play. You can't just assume the [conduit](scc:mcdm.heroes.v1/class/conduit) is "basically a cleric." In some ways, it is! But in other ways, it's quite different. You might have some cool character archetype you love to play in d20 fantasy, and you're [dying](scc:mcdm.heroes.v1/rule.health/dying) to see how that might work in *Draw Steel*. But you'll have a lot more fun if you start by browsing the [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries) and [Classes](scc:mcdm.heroes.v1/chapter/classes) sections and getting inspired. Once you know a bit more about how the game works, you'll have a better handle on how to build your favorite character the *Draw Steel* way.
-- **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent characteristic bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
+- **Smaller bonuses and penalties.** *Draw Steel* is built around the roll of two ten-sided dice to produce three possible outcomes—tier 1, tier 2, or tier 3. On the surface, this might not seem that different from rolling a twenty-sided die and having two outcomes—success or failure. But we've run the math. A lot. A bonus of +1 or penalty of −2 is significant in *Draw Steel*, much more so than in a typical d20 fantasy game. That means you should feel pretty good attempting most power rolls—the rolls you make to determine success both in and out of combat—if you have a decent [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) bonus to add to those rolls. And if you have a specific skill that applies to a power roll made as a test outside of combat, you'll do even better.
 - **Abilities automatically deal damage.** When you use an ability—one of the unique combat features that defines your character—you can still have a bad turn! A tier 1 outcome with minimal damage and effects is the worst outcome you can obtain with an ability. It's not awesome. But you're still always making progress. The question is: Who's making progress faster? You or the monsters? Since there's no, "I miss, who's next?" in this game, fights typically last 3 or fewer rounds. A fight that lasts 5 rounds is a *long* fight. Because everyone's always doing damage!
 - **You don't need to rest all the time.** Most d20 fantasy games are games of attrition. Your spell slots and other features dwindle as the adventuring day goes on. In *Draw Steel*, you need to rest to regain your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)—the stats that determine how robust you are in combat. But all characters earn the capability to use their magic and other awesome abilities as they adventure, encouraging you to press on heroically.
-- **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to characteristics. If you're trying to lose someone in a crowd, you can use Presence—the characteristic that represents your character's force of personality—to try to hide! Why not?
+- **Our game has a lot of skills.** Your character can make use of a long list of skills, but we don't expect you to memorize that list. We get into why the [Tests](scc:mcdm.heroes.v1/chapter/tests) chapter features so many skills, but the short version is that we think having a lot of skills allows you to create more distinct and specialized heroes, which supports the sort of gameplay we want to see in *Draw Steel*. And skills in the game aren't tied to [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). If you're trying to lose someone in a crowd, you can use Presence—the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents your character's force of personality—to try to hide! Why not?
 - **We won't be able to point out every difference.** Beyond what's noted here, don't assume that these rules work like any d20 fantasy game you've played. We don't have the space to point out every exception. So if you're in doubt about how something works, put d20 fantasy out of your mind and read our rules without those assumptions, and you'll find that things make better sense. If you're still confused, stop by the *MCDM Discord* and ask. We've got tons of awesome community members ready to help!
 - **We don't expect you to do everything to the letter.** This is actually one thing *Draw Steel* does have in common with d20 fantasy. This is a big book of rules! Don't stress if you need to look something up or make a ruling about an edge case on the fly. If everyone's having fun, you're doing it right.
 
@@ -117,7 +117,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) Move Action:** A move action that allows a creature to move a number of squares up to their speed. This movement can be broken up by a creature's maneuver and main action.
 
-**[Agility](scc:mcdm.heroes.v1/rule.character/agility):** A characteristic that represents a creature's coordination and nimbleness.
+**[Agility](scc:mcdm.heroes.v1/rule.character/agility):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's coordination and nimbleness.
 
 **[Aid Attack](scc:mcdm.heroes.v1/feature.common.maneuvers/aid-attack) Maneuver:** A maneuver that allows a creature to choose an enemy adjacent to them. The next ability roll an ally makes against that enemy before the start of the aiding creature's next turn gains an edge.
 
@@ -333,7 +333,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Interest](scc:mcdm.heroes.v1/rule.negotiation/interest):** A negotiation statistic that determines how interested an NPC is in helping out the heroes.
 
-**[Intuition](scc:mcdm.heroes.v1/rule.character/intuition):** A characteristic that represents a creature's instincts and experience.
+**[Intuition](scc:mcdm.heroes.v1/rule.character/intuition):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's instincts and experience.
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Raw materials, a foundational object, or some other item that must be obtained before a downtime project can be started.
 
@@ -365,7 +365,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** An ancestry of machine people.
 
-**[Might](scc:mcdm.heroes.v1/rule.character/might):** A characteristic that represents a creature's strength and brawn.
+**[Might](scc:mcdm.heroes.v1/rule.character/might):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's strength and brawn.
 
 **[Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test):** Heroes making a series of different tests that represent them working together over time to accomplish a common goal.
 
@@ -415,11 +415,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Polder](scc:mcdm.heroes.v1/ancestry/polder):** An ancestry of short folk who can slip into shadows to hide.
 
-**[Potency](scc:mcdm.heroes.v1/rule.character/potency):** A value that determines if a target has a characteristic low enough to be affected by an effect.
+**[Potency](scc:mcdm.heroes.v1/rule.character/potency):** A value that determines if a target has a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) low enough to be affected by an effect.
 
-**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll):** A roll of 2d10 plus a characteristic score that has three different possible tier outcomes—tier 1, tier 2, or tier 3. A power roll can be an ability roll or a test.
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll):** A roll of 2d10 plus a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score that has three different possible tier outcomes—tier 1, tier 2, or tier 3. A power roll can be an ability roll or a test.
 
-**[Presence](scc:mcdm.heroes.v1/rule.character/presence):** A characteristic that represents a creature's force of personality.
+**[Presence](scc:mcdm.heroes.v1/rule.character/presence):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's force of personality.
 
 **[Project Event](scc:mcdm.heroes.v1/rule.downtime/project-event):** An event that can occur when a hero undertakes a project roll for a downtime project.
 
@@ -443,7 +443,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Reactive Test](scc:mcdm.heroes.v1/rule.test/reactive-test):** When the Director asks for a test without context to see if a hero can react to an event or effect they are unaware of.
 
-**[Reason](scc:mcdm.heroes.v1/rule.character/reason):** A characteristic that represents a creature's logical mind and education.
+**[Reason](scc:mcdm.heroes.v1/rule.character/reason):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's logical mind and education.
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** A limited healing resource that all heroes have, allowing them to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) lost to damage.
 
@@ -666,7 +666,7 @@ Presence (P) represents force of personality. A creature's capacity to lie to a 
 
 #### Characteristic Scores
 
-Each characteristic has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that characteristic. A baby bunny rabbit would have a Might score of −5, while an ancient dragon would have a Might score of 5. The average [human](scc:mcdm.heroes.v1/ancestry/human) has a score of 0 in all their characteristics. Characteristic scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see Power Rolls below).
+Each [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) has a score that runs from −5 to +5. The higher a score, the more impact a creature has with that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). A baby bunny rabbit would have a Might score of −5, while an ancient dragon would have a Might score of 5. The average [human](scc:mcdm.heroes.v1/ancestry/human) has a score of 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are added to power rolls—the dice rolls you make whenever your character attempts a task with an uncertain outcome (see Power Rolls below).
 
 ### Dice
 
@@ -703,7 +703,7 @@ A **test** is a power roll you make outside of using your abilities to affect or
 
 #### Making a Power Roll
 
-When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your characteristics. The characteristic you add depends on the kind of roll you're making, as outlined in Abilities and Tests.
+When you make a power roll, you roll two ten-sided dice (usually noted as 2d10 in the rules) and add one of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) you add depends on the kind of roll you're making, as outlined in Abilities and Tests.
 
 <!-- @type: rule | @group: dice | @id: tier-outcome -->
 ##### Power Roll Outcomes
@@ -725,13 +725,13 @@ If you downgrade a critical hit, you still get the extra action benefit of the c
 <!-- @type: rule | @group: dice | @id: natural-roll -->
 ##### Natural Roll
 
-The total of your power roll before your characteristic or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your characteristic, this is called rolling a natural 20.
+The total of your power roll before your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), this is called rolling a natural 20.
 
 When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a critical hit (see Critical Hit in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 #### Edges and Banes
 
-An archer standing on a castle wall fires down into a throng of enemies, hitting the mark each time thanks to their [high ground](scc:mcdm.heroes.v1/movement/high-ground). A drunken bandit struggles to land blows on sober opponents as alcohol clouds their senses. Under certain circumstances, you need more than just a characteristic to represent the advantages and disadvantages that heroes, their enemies, and their allies might have.
+An archer standing on a castle wall fires down into a throng of enemies, hitting the mark each time thanks to their [high ground](scc:mcdm.heroes.v1/movement/high-ground). A drunken bandit struggles to land blows on sober opponents as alcohol clouds their senses. Under certain circumstances, you need more than just a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) to represent the advantages and disadvantages that heroes, their enemies, and their allies might have.
 
 <!-- @type: rule | @group: dice | @id: edge -->
 ##### Edge
@@ -1155,7 +1155,7 @@ Choose your hero's career, which describes what you did for a living before you 
 
 #### 5. Class
 
-Choose your hero's class. This choice has the biggest impact on how your hero interacts with the rules of the game, particularly the rules for combat. Your class provides your starting characteristic scores that determine your character's physical and mental acumen, as well as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) that determine your physical hardiness. A class also provides your character with skills, several abilities—the unique features that define what your hero can do—and other features and benefits. You can be a [censor](scc:mcdm.heroes.v1/class/censor), [conduit](scc:mcdm.heroes.v1/class/conduit), [elementalist](scc:mcdm.heroes.v1/class/elementalist), [fury](scc:mcdm.heroes.v1/class/fury), [null](scc:mcdm.heroes.v1/class/null), [shadow](scc:mcdm.heroes.v1/class/shadow), [tactician](scc:mcdm.heroes.v1/class/tactician), [talent](scc:mcdm.heroes.v1/class/talent), or [troubadour](scc:mcdm.heroes.v1/class/troubadour). See Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for more information on each class, as well as the different types of abilities—signature abilities, heroic abilities, and more—that heroes of a specific class have access to.
+Choose your hero's class. This choice has the biggest impact on how your hero interacts with the rules of the game, particularly the rules for combat. Your class provides your starting [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores that determine your character's physical and mental acumen, as well as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) that determine your physical hardiness. A class also provides your character with skills, several abilities—the unique features that define what your hero can do—and other features and benefits. You can be a [censor](scc:mcdm.heroes.v1/class/censor), [conduit](scc:mcdm.heroes.v1/class/conduit), [elementalist](scc:mcdm.heroes.v1/class/elementalist), [fury](scc:mcdm.heroes.v1/class/fury), [null](scc:mcdm.heroes.v1/class/null), [shadow](scc:mcdm.heroes.v1/class/shadow), [tactician](scc:mcdm.heroes.v1/class/tactician), [talent](scc:mcdm.heroes.v1/class/talent), or [troubadour](scc:mcdm.heroes.v1/class/troubadour). See Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for more information on each class, as well as the different types of abilities—signature abilities, heroic abilities, and more—that heroes of a specific class have access to.
 
 #### 6. Kit
 
@@ -1671,7 +1671,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Bea
 <!-- @type: feature -->
 ##### Barbed Tail (1 Point)
 
-Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee strike, you can deal extra damage with the strike equal to your highest characteristic score.
+Your pointy tail allows you to punctuate all your actions. Once per round when you make a melee strike, you can deal extra damage with the strike equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 <!-- @type: feature -->
 ##### Beast Legs (1 Point)
@@ -4423,7 +4423,7 @@ If an area ability doesn't provide a number of targets but instead says it appli
 <!-- @type: rule | @group: dice | @id: ability-roll -->
 #### Ability Roll
 
-If an ability requires a power roll, it has a "Power Roll" entry that tells you which characteristic to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about power rolls.)
+If an ability requires a power roll, it has a "Power Roll" entry that tells you which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) to add to the 2d10 roll you make when you use the ability. (Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics) talks about power rolls.)
 
 Unlike power rolls made as tests (see Chapter 9), ability rolls always do something useful. You're rolling to determine the impact of the ability, including how much damage it deals and any other effects it imposes based on the tier outcome of the power roll. For instance, the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability is a melee strike that targets one adjacent creature (within 1 square), and which has the following effects:
 
@@ -4433,7 +4433,7 @@ Unlike power rolls made as tests (see Chapter 9), ability rolls always do someth
 
 ###### Characteristics and Damage
 
-Certain damage-dealing abilities note that damage as a number followed by a plus sign (+) and the letter M, A, R, I, or P. The indicated letter means you add your characteristic score—either Might, Agility, Reason, Intuition, or Presence—to the damage dealt by the ability. Certain abilities let you use your highest characteristic score for the power roll.
+Certain damage-dealing abilities note that damage as a number followed by a plus sign (+) and the letter M, A, R, I, or P. The indicated letter means you add your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score—either Might, Agility, Reason, Intuition, or Presence—to the damage dealt by the ability. Certain abilities let you use your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score for the power roll.
 
 Using the [fury's](scc:mcdm.heroes.v1/class/fury) [Brutal Slam](scc:mcdm.heroes.v1/feature.ability.fury.level-1/brutal-slam) ability as an example again, that ability uses a Might power roll and features the following damage expressions in the three tier outcomes of the power roll:
 
@@ -4447,9 +4447,9 @@ For a [fury](scc:mcdm.heroes.v1/class/fury) with a Might of 2, the ability's dam
 - **12-16:** 8
 - **17+:** 11
 
-The damage for these abilities increases at each echelon of play, since your characteristics improve each time you reach a new echelon.
+The damage for these abilities increases at each echelon of play, since your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) improve each time you reach a new echelon.
 
-Some abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), allow you to pick which characteristic score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your Might or your Agility to determine the damage.
+Some abilities, including your [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), allow you to pick which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score you add to their damage. Such abilities use a format similar to "7 + M or A damage," indicating that you can add your Might or your Agility to determine the damage.
 
 (Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has more information on damage.)
 
@@ -4479,17 +4479,17 @@ Certain effects talk about rolled damage, which refers to the variable damage de
 <!-- @type: rule | @group: character | @id: potency -->
 #### Potencies
 
-Many abilities and other effects impose conditions and unique statuses on targets. But creatures sometimes get a chance to resist such effects. After all, a monster with a high Might should be harder to knock [prone](scc:mcdm.heroes.v1/condition/prone) most of the time than a creature lacking in that characteristic.
+Many abilities and other effects impose conditions and unique statuses on targets. But creatures sometimes get a chance to resist such effects. After all, a monster with a high Might should be harder to knock [prone](scc:mcdm.heroes.v1/condition/prone) most of the time than a creature lacking in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
-Ability effects that have a **potency** are applied to a target only if the effect's potency value is higher than the target's indicated characteristic score. The characteristic a target uses to resist a potency is based on the ability used, while the value of the potency for your hero's abilities is based on one of your characteristics and determined by your class.
+Ability effects that have a **potency** are applied to a target only if the effect's potency value is higher than the target's indicated [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) a target uses to resist a potency is based on the ability used, while the value of the potency for your hero's abilities is based on one of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and determined by your class.
 
 Your character has a **weak**, an **average**, and a **strong** potency value, as follows:
 
-- Your weak potency value is equal to your highest characteristic score − 2.
-- Your average potency value is equal to your highest characteristic score − 1.
-- Your strong potency value is equal to your highest characteristic score.
+- Your weak potency value is equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score − 2.
+- Your average potency value is equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score − 1.
+- Your strong potency value is equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-In abilities and other effects, a potency always appears as the single-letter abbreviation for the target's characteristic: M for Might, A for Agility, R for Reason, I for Intuition, or P for Presence. That characteristic is followed by a "less than" sign (<) and your potency value—for example, M < WEAK or R < AVERAGE -with the value indicating the minimum score in that characteristic that the target needs to beat the effect.
+In abilities and other effects, a potency always appears as the single-letter abbreviation for the target's [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): M for Might, A for Agility, R for Reason, I for Intuition, or P for Presence. That [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is followed by a "less than" sign (<) and your potency value—for example, M < WEAK or R < AVERAGE -with the value indicating the minimum score in that [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that the target needs to beat the effect.
 
 As an example, consider the [conduit's](scc:mcdm.heroes.v1/class/conduit) Judgment's Hammer ability, which has the following power roll:
 
@@ -4531,7 +4531,7 @@ Potencies are made for quick resolution at the table, but a number of triggered 
 
 ##### Spending Resources on Potencies
 
-If an ability or feature allows you to spend your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) on an effect that is entirely dependent on a potency and the target is unaffected because their characteristic is high enough to resist the potency, then you don't spend the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
+If an ability or feature allows you to spend your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) on an effect that is entirely dependent on a potency and the target is unaffected because their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is high enough to resist the potency, then you don't spend the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
 For example, the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability allows the [tactician](scc:mcdm.heroes.v1/class/tactician) to spend 1 focus to impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition on a target who has R < AVERAGE. Since spending focus this way has no other effect, if the [tactician](scc:mcdm.heroes.v1/class/tactician) targets a creature whose high Reason leaves them unaffected, the [tactician](scc:mcdm.heroes.v1/class/tactician) doesn't waste any focus. However, if spending this focus had another automatic effect such as dealing extra damage to the target, the 1 focus would be spent even though the potency was resisted.
 
@@ -4540,7 +4540,7 @@ This rule also applies to Director-controlled creatures who spend Malice on abil
 <!-- @type: rule | @group: combat | @id: critical-hit -->
 #### Critical Hit
 
-Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your characteristic score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
+Whenever you make an ability roll as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the power roll, whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
 
 You can't score a critical hit with an ability roll made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an opportunity attack made as a triggered action or a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
 
@@ -4557,7 +4557,7 @@ A [troubadour's](scc:mcdm.heroes.v1/class/troubadour) battle song, a [fury's](sc
 
 When you gain surges, you keep track of them on your character sheet. Surges can be used in combat to deal extra damage to your foes and increase the value of your potencies, as follows:
 
-- Whenever you deal rolled damage, you can spend up to 3 surges to deal extra damage to one creature or object targeted by the ability. Each surge you spend deals extra damage equal to your highest characteristic score.
+- Whenever you deal rolled damage, you can spend up to 3 surges to deal extra damage to one creature or object targeted by the ability. Each surge you spend deals extra damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - Whenever you target one or more creatures with an ability that has a potency, you can spend 2 surges to increase the potency by 1 for one target. You can't increase a potency by more than 1 using surges, though you can spend additional surges to increase the potency for multiple targets.
 
 You lose surges as you spend them. At the end of combat, you lose any surges you have remaining.
@@ -4594,7 +4594,7 @@ Many effects last until the end of the target's next turn, abbreviated as "(EoT)
 <!-- @type: rule | @group: general | @id: saving-throw -->
 ##### Saving Throw (Save Ends)
 
-If an effect has "(save ends)" at the end of its description, a creature suffering the effect makes a saving throw at the end of each of their turns to remove the effect. A saving throw represents the sheer luck involved in shaking off an effect. Because a target typically had a chance to avoid a "save ends" effect using a characteristic score to resist a potency, it's now down to fate.
+If an effect has "(save ends)" at the end of its description, a creature suffering the effect makes a saving throw at the end of each of their turns to remove the effect. A saving throw represents the sheer luck involved in shaking off an effect. Because a target typically had a chance to avoid a "save ends" effect using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score to resist a potency, it's now down to fate.
 
 To make a saving throw, a creature rolls a d10. On a 6 or higher, the effect ends. Otherwise, it continues.
 
@@ -4724,7 +4724,7 @@ As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the 
 
 ### Basics
 
-**Starting Characteristics:** You start with a Might of 2 and a Presence of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -4969,7 +4969,7 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Presence on the test instead of another characteristic.
+The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Presence on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
@@ -5649,7 +5649,7 @@ As a 6th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 
 Each time you finish a respite, you can choose one hero's weapon, including your own, to channel supernatural power as an implement of your god's wrath. The weapon becomes magic and gains the following benefits until your next respite:
 
-- Strikes with the weapon deal extra holy damage equal to the wielder's highest characteristic score.
+- Strikes with the weapon deal extra holy damage equal to the wielder's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - Any creature struck by the weapon who has holy weakness and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 - Any minion targeted by a strike using the weapon dies. That minion's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is removed from the minion [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool before any damage is applied to the rest of the squad.
 - The weapon's wielder can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened).
@@ -5768,7 +5768,7 @@ As a 7th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### 7th-Level Domain Feature
@@ -6180,7 +6180,7 @@ The power of the gods flows through you! As a vessel for [divine power](scc:mcdm
 
 ### Basics
 
-**Starting Characteristics:** You start with an Intuition of 2, and can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Intuition of 2, and can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
@@ -6421,7 +6421,7 @@ Each time you finish a respite, you can choose yourself or one ally who is also 
 <!-- @type: feature -->
 ##### Inspired Deception
 
-The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Intuition on the test instead of another characteristic.
+The gods favor your thievery with magic. Whenever you make a test that uses a skill you have from the intrigue skill group, you can use Intuition on the test instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: feature -->
 ##### Oracular Visions
@@ -7136,7 +7136,7 @@ Whenever you gain piety from a domain effect, you gain 1 additional piety.
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Intuition score increases to 3. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.
+Your Intuition score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Perk
@@ -7516,7 +7516,7 @@ As a 7th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Faithful's Reward
@@ -7725,7 +7725,7 @@ Each time you finish a respite, you can choose a willing hero ally who finished 
 <!-- @type: feature -->
 #### Ordained
 
-Your god elevates the power flowing through you. Your characteristic scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.
+Your god elevates the power flowing through you. Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting potencies. Additionally, while you have 5 or more Victories, you speak with the voice of your deity. You have a double edge on Presence tests made to influence other creatures.
 
 <!-- @type: feature -->
 #### 9th-Level Domain Ability
@@ -7791,7 +7791,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------|----------------:|
 > | **📏 Ranged 10**   |  **🎯 Special** |
 > 
-> **Effect:** You conjure a size 4 dragon that appears in an unoccupied space within distance. The dragon has speed 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), stability 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your characteristics. The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
+> **Effect:** You conjure a size 4 dragon that appears in an unoccupied space within distance. The dragon has speed 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), stability 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
 > On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 cube within 1 square of them. Make the following power roll targeting each enemy in the area.
 > 
@@ -7936,7 +7936,7 @@ Additionally, whenever you take a respite, you can open a portal to rest in the 
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Intuition score increases to 5. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.
+Your Intuition score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Divine Power
@@ -7975,7 +7975,7 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 ### Basics
 
-**Starting Characteristics:** You start with a Reason of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Reason of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
@@ -8890,7 +8890,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 > - **12-16:** 6 damage
 > - **17+:** 9 damage
 > 
-> **Effect:** Until the end of your next turn, each ally in the area has each of their characteristic scores treated as 1 higher for the purpose of resisting potencies, and has a +1 bonus to saving throws.
+> **Effect:** Until the end of your next turn, each ally in the area has each of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting potencies, and has a +1 bonus to saving throws.
 > 
 > **Persistent 1:** You make the power roll again to target each enemy in the area without spending essence, and the effect lasts until the start of your next turn.
 
@@ -8915,7 +8915,7 @@ As a 4th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason score increases to 3. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.
+Your Reason score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Font of Essence
@@ -9143,7 +9143,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > - They have fire immunity 10.
 > - Their strikes deal extra fire damage equal to twice your Reason score.
 > - When the target force moves a creature or object, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance gains a +2 bonus.
-> - They can use their highest characteristic instead of Might for Might power rolls.
+> - They can use their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) instead of Might for Might power rolls.
 > 
 > **Persistent 2:** The effect lasts until the start of your next turn. Additionally, at the start of your turn, the target can spend 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -9185,7 +9185,7 @@ As a 7th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Mantle of Quintessence
@@ -9458,7 +9458,7 @@ Breath remains until you convert it to essence.
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Reason score increases to 5. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.
+Your Reason score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Essential Being
@@ -9532,7 +9532,7 @@ You do not temper the heat of battle within you. You unleash it! Your experience
 
 ### Basics
 
-**Starting Characteristics:** You start with a Might of 2 and an Agility of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and an Agility of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -10485,7 +10485,7 @@ As a 7th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fea
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Elemental Form
@@ -10697,7 +10697,7 @@ Choose one of the following abilities.
 > - **12-16:** 18 + M damage
 > - **17+:** 24 + M damage
 >
-> **Effect:** Each enemy within 5 squares of you is distracted until the end of the round. While a creature is distracted this way, they can't take triggered actions or free triggered actions, ability rolls made against them gain an edge, and their characteristic scores are considered 1 lower for the purpose of resisting potencies.
+> **Effect:** Each enemy within 5 squares of you is distracted until the end of the round. While a creature is distracted this way, they can't take triggered actions or free triggered actions, ability rolls made against them gain an edge, and their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are considered 1 lower for the purpose of resisting potencies.
 
 ##### 9th-Level Stormwight Abilities
 
@@ -11122,7 +11122,7 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 ### Basics
 
-**Starting Characteristics:** You start with an Agility of 2 and an Intuition of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2 and an Intuition of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -12069,7 +12069,7 @@ As a 7th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Discipline Mastery Improvement
@@ -12239,7 +12239,7 @@ As a 9th-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 <!-- @type: feature -->
 #### I Am the Weapon
 
-Your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying). You no longer age or have need of food. Additionally, you can use Intuition instead of another characteristic when resisting potencies.
+Your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases by 21 and you can't be made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) even while [dying](scc:mcdm.heroes.v1/rule.health/dying). You no longer age or have need of food. Additionally, you can use Intuition instead of another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) when resisting potencies.
 
 <!-- @type: feature -->
 #### 9th-Level Tradition Ability
@@ -12411,7 +12411,7 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 ### Basics
 
-**Starting Characteristics:** You start with an Agility of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
@@ -13091,7 +13091,7 @@ As a 4th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility score increases to 3. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 3.
+Your Agility score increases to 3. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 3.
 
 <!-- @type: feature -->
 #### Keep It Down
@@ -13375,7 +13375,7 @@ As a 7th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the following
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Keen Insight
@@ -13646,7 +13646,7 @@ As a 10th-level [shadow](scc:mcdm.heroes.v1/class/shadow), you gain the followin
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Your Agility score increases to 5. Additionally, you can increase one of your characteristic scores by 1, to a maximum of 5.
+Your Agility score increases to 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum of 5.
 
 <!-- @type: feature -->
 #### Death Pool
@@ -13697,7 +13697,7 @@ Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw 
 
 ### Basics
 
-**Starting Characteristics:** You start with a Might of 2 and a Reason of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Might of 2 and a Reason of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -14544,7 +14544,7 @@ As a 7th-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Heightened Focus
@@ -14859,7 +14859,7 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 ### Basics
 
-**Starting Characteristics:** You start with a Reason of 2 and a Presence of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with a Reason of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -16040,7 +16040,7 @@ Whenever you take damage from a strained effect or from having negative clarity,
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Lucid Mind
@@ -16404,7 +16404,7 @@ There is no visible text in the image provided. The image appears to show a deco
 
 ### Basics
 
-**Starting Characteristics:** You start with an Agility of 2 and a Presence of 2, and you can choose one of the following arrays for your other characteristic scores:
+**Starting [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** You start with an Agility of 2 and a Presence of 2, and you can choose one of the following arrays for your other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, −1, −1
 - 1, 1, −1
@@ -17003,7 +17003,7 @@ Choose one of the following abilities.
 > |-------------------|----------------:|
 > | **📏 Ranged 10**  |  **🎯 Special** |
 >
-> **Effect:** A [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) appears to help you during the encounter: either a bystander within distance uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within distance. This [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is controlled by you, has their own turn, and shares your characteristics. Their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is half yours. They have no abilities other than your melee and ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). At the end of the encounter, or when the [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
+> **Effect:** A [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) appears to help you during the encounter: either a bystander within distance uplifted by your magic, or a mysterious new hero who appears in an unoccupied space within distance. This [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is controlled by you, has their own turn, and shares your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). Their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum is half yours. They have no abilities other than your melee and ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). At the end of the encounter, or when the [guest star](scc:mcdm.heroes.v1/feature.ability.troubadour.level-2/guest-star) is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they retreat or revert to a bystander. The same bystander can't be uplifted this way more than once during an encounter.
 
 <!-- @type: ability | @cost: 5 Drama -->
 > ###### Twist at the End (5 Drama)
@@ -17029,7 +17029,7 @@ Choose one of the following abilities.
 > |---------------------------|---------------------------------:|
 > | **📏 Melee 1**            | **🎯 Self and one willing ally** |
 >
-> **Effect:** Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares, including vertically, but must end this movement adjacent to the other target and on solid ground. Each target can then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that deals extra damage equal to twice their highest characteristic score.
+> **Effect:** Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares, including vertically, but must end this movement adjacent to the other target and on solid ground. Each target can then make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that deals extra damage equal to twice their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 <!-- @type: ability | @cost: 5 Drama | @id: en-garde -->
 > ###### En Garde! (5 Drama)
@@ -17522,7 +17522,7 @@ As a 7th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### Characteristic Increase
 
-Each of your characteristic scores increases by 1, to a maximum of 4.
+Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores increases by 1, to a maximum of 4.
 
 <!-- @type: feature -->
 #### Equal Billing
@@ -18004,7 +18004,7 @@ You wear no armor and wield a bow.
 - **12-16:** 7 + A, R, I, or P fire damage
 - **17+:** 10 + A, R, I, or P fire damage
 
-**Effect:** One creature or object of your choice within 2 squares of the target takes fire damage equal to the characteristic score used for this ability's power roll.
+**Effect:** One creature or object of your choice within 2 squares of the target takes fire damage equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's power roll.
 
 <!-- @type: kit | @id: battlemind -->
 #### Battlemind
@@ -18576,7 +18576,7 @@ You wear light armor and wield a shield and a medium weapon.
 - **12-16:** 8 + M, R, I, or P lightning damage
 - **17+:** 11 + M, R, I, or P lightning damage
 
-**Effect:** A creature or object of your choice within 2 squares of the target takes lightning damage equal to the characteristic score used for this ability's power roll.
+**Effect:** A creature or object of your choice within 2 squares of the target takes lightning damage equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's power roll.
 
 <!-- @type: kit | @id: stick-and-robe -->
 #### Stick and Robe
@@ -18726,7 +18726,7 @@ You wear heavy armor and wield a light weapon.
 - **12-16:** 5 + M, R, I, or P holy damage
 - **17+:** 8 + M, R, I, or P holy damage
 
-**Effect:** Until the end of the target's next turn, they have damage weakness equal to the characteristic score used for this ability's power roll.
+**Effect:** Until the end of the target's next turn, they have damage weakness equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's power roll.
 
 <!-- @type: kit | @id: whirlwind -->
 #### Whirlwind
@@ -18965,7 +18965,7 @@ When an ally within 5 squares fails a Presence test, you can step in and make a 
 <!-- @type: perk -->
 #### Power Player
 
-Whenever you make a test that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use Might instead of any other characteristic the test calls for.
+Whenever you make a test that uses the [Brag](scc:mcdm.heroes.v1/skill/brag), [Flirt](scc:mcdm.heroes.v1/skill/flirt), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skills, you can use Might instead of any other [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test calls for.
 
 <!-- @type: perk -->
 #### So Tell Me...
@@ -19357,7 +19357,7 @@ Complications are presented in alphabetical order.
 
 You somehow obtained the notebook of a brilliant but eccentric member of your class. The knowledge held within those notes should help you unlock powerful new abilities—if you can ever figure out what the notes mean.
 
-**Benefit and Drawback:** As a respite activity, you can study the notebook. Make a test using your highest characteristic score:
+**Benefit and Drawback:** As a respite activity, you can study the notebook. Make a test using your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score:
 
 - **≤11:** You summon a hostile demon of your level or lower who attacks you at the end of the respite. The demon acts first in the combat, regardless of the traits or abilities of you or any other creature involved.
 - **12-16:** You learn nothing and your time is wasted.
@@ -19452,7 +19452,7 @@ Ever since you were a kid, you've been obsessed with a certain topic. During you
 
 **Project Source:** A significant source of information on the topic of your obsession, such as a major library or a world-renowned sage 
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 120, 150, 180
 
@@ -19473,7 +19473,7 @@ Your mentor taught you everything and you trusted them completely until they wen
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Until the end of your turn, whenever you use a damage-dealing heroic ability against a single target, you can weaken that target's life force. The ability deals extra corruption damage equal to your highest characteristic score.
+> **Effect:** Until the end of your turn, whenever you use a damage-dealing heroic ability against a single target, you can weaken that target's life force. The ability deals extra corruption damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **Drawback:** You have holy weakness 1. Each time you use Corrupt Spirit, your holy weakness increases by 1, to a maximum equal to your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). Whenever you take holy damage, this weakness resets to 1.
 
@@ -19638,7 +19638,7 @@ Your birth was attended by faeries. A friendly fairy blessed you, granting you s
 
 A spirit beyond your comprehension instilled in you a special purpose, choosing you to be the guardian of a place, a cause, or a philosophy. The flame that now burns in your soul can sear your enemies—or you if you fall short of expectations.
 
-**Benefit:** While you fight on behalf of your special purpose, whenever you obtain a tier 3 outcome with a damage-dealing ability, the ability deals extra fire damage equal to your highest characteristic score.
+**Benefit:** While you fight on behalf of your special purpose, whenever you obtain a tier 3 outcome with a damage-dealing ability, the ability deals extra fire damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **Drawback:** Whenever the Director determines that you act against your purpose or fail to live up to the high standards associated with it, you take fire damage equal to 5 + your level. This damage can't be reduced in any way.
 
@@ -20033,10 +20033,10 @@ In times of stress, you get headaches. Psionic energy builds up in your mind unt
 >
 > **Effect:** Using this ability costs all your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 >
-> **Power Roll + Your Highest Characteristic Score:**
+> **Power Roll + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 >
 > - **≤11:** 1 psychic damage for each [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) you spend, to a maximum equal to your level
-> - **12-16:** 1 psychic damage for each [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) you spend, to a maximum equal to your level + your highest characteristic
+> - **12-16:** 1 psychic damage for each [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) you spend, to a maximum equal to your level + your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic)
 > - **17+:** 1 psychic damage for each [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) you spend
 
 **Drawback:** Whenever you become [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [frightened](scc:mcdm.heroes.v1/condition/frightened), or [weakened](scc:mcdm.heroes.v1/condition/weakened), you must use Psychic Blast as a free triggered action.
@@ -20105,7 +20105,7 @@ To your embarrassment, no sinister omens attended your birth and your closet con
 
 Your homeland has been corrupted by some terrible curse or plague, and you're the only one who escaped it. The members of your family still exist, but in changed forms—perhaps as vampire spawn, zombies, or living statues. People tell you the situation is hopeless, but you're determined to find a cure that can undo your loved ones' suffering.
 
-**Benefit:** Choose a type of monster connected to your homeland's plight, such as a vampire, ghost, or medusa. You have a +1 bonus to saving throws related to that monster's abilities, and you treat your characteristic scores as 1 higher than usual for the purpose of resisting potencies related to those abilities.
+**Benefit:** Choose a type of monster connected to your homeland's plight, such as a vampire, ghost, or medusa. You have a +1 bonus to saving throws related to that monster's abilities, and you treat your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores as 1 higher than usual for the purpose of resisting potencies related to those abilities.
 
 **Drawback:** You have started to succumb to the curse or plague, and will suffer the fate of your family if you don't find a cure soon. Work with the Director to determine the timeline of your transformation, which should be something that could happen during the campaign!
 
@@ -20132,7 +20132,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 
 While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a guide. What you lost in polish and tactical acumen, you now make up for in raw power.
 
-**Benefit and Drawback:** At the start of each of your turns during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next turn. If you do, your strikes gain a damage bonus equal to your highest characteristic score until the start of your next turn.
+**Benefit and Drawback:** At the start of each of your turns during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next turn. If you do, your strikes gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next turn.
 
 <!-- @type: complication -->
 #### Sewer Folk
@@ -20351,7 +20351,7 @@ You nearly lost your life at sea, but then you heard the voice. Someone—or som
 > |---------------------------| -----------------------------:|
 > | **📏 Ranged 10**          | **🎯 One creature or object** |
 >
-> **Power Roll + Your Highest Characteristic Score:**
+> **Power Roll + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 >
 > - **≤11:** 2 damage; push or pull 1
 > - **12-16:** 5 damage; push or pull 2
@@ -20366,7 +20366,7 @@ You nearly lost your life at sea, but then you heard the voice. Someone—or som
 
 You were dying in the wode, collapsing while starving and wounded. When you woke, you discovered that a group of green [elementalists](scc:mcdm.heroes.v1/class/elementalist) had saved your life by infusing the regenerative bark of a tree to your body.
 
-**Benefit:** Your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) increases by an amount equal to your highest characteristic score.
+**Benefit:** Your [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) increases by an amount equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **Drawback:** You have fire weakness 5.
 
@@ -20410,7 +20410,7 @@ That said, such clever ideas often work for free the first time, but the Directo
 
 Each test has the following steps:
 
-The Director decides that a hero's activities call for a test and asks the hero's player to make a power roll using an appropriate characteristic (see Characteristics and Tests below). The Director then selects a difficulty for the power roll, either secretly or publicly (see Test Difficulty below).
+The Director decides that a hero's activities call for a test and asks the hero's player to make a power roll using an appropriate [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) (see [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and Tests below). The Director then selects a difficulty for the power roll, either secretly or publicly (see Test Difficulty below).
 
 The player makes the power roll. If the character has a skill that applies to the test (see Skills later in this chapter), they can ask the Director if the skill applies and justify the use of the skill. If the Director agrees the skill applies, the hero gains a +2 bonus to the roll.
 
@@ -20418,7 +20418,7 @@ The player reports the total of the roll, and the Director interprets its succes
 
 #### Characteristics and Tests
 
-When you describe a task you want your hero to undertake and the Director determines that a test is necessary, they then determine which characteristic the test uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a Might test to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a Presence test if you're attempting to win over the jury with your personality, or a Reason test if you're laying out a logical argument to support your innocence.
+When you describe a task you want your hero to undertake and the Director determines that a test is necessary, they then determine which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) the test uses based on the nature of the task. For instance, if you're scaling a wall, the Director could ask for a Might test to determine how far and how quickly you're able to climb. If you're attempting to plead your innocence in court for a murder you didn't commit, the Director might ask for a Presence test if you're attempting to win over the jury with your personality, or a Reason test if you're laying out a logical argument to support your innocence.
 
 Though the Director can decide to call for tests in any circumstances, a number of tasks that heroes routinely undertake are commonly set up as tests.
 
@@ -20498,7 +20498,7 @@ A hard test has a greater risk of failure, and most heroes are likely to suffer 
 <!-- @type: rule | @group: dice | @id: natural-19-20 -->
 ##### Natural 19 or 20: Success With a Reward
 
-Whenever you get a natural 19 or 20 on the power roll for a test—a total of 19 or 20 before adding your characteristic score or other modifiers you score a critical success. This critical success automatically lets you succeed on the task with a reward, even if the test has a medium or hard difficulty.
+Whenever you get a natural 19 or 20 on the power roll for a test—a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers you score a critical success. This critical success automatically lets you succeed on the task with a reward, even if the test has a medium or hard difficulty.
 
 #### Test Outcomes
 
@@ -20631,7 +20631,7 @@ Reactive tests are typically made in the following circumstances, though the Dir
 
 > **Optional Rule: Secret Reactive Tests**
 >
-> Some Directors prefer to make the power rolls for reactive tests for the heroes rather than asking the players to do so. This allows the Director to make the rolls when appropriate for hidden objects, creatures, motivations, and information without tipping off the players that there is information to be gained. Having the Director roll requires the Director to have everyone's characteristics and skills recorded (whether physically or digitally) for easy reference.
+> Some Directors prefer to make the power rolls for reactive tests for the heroes rather than asking the players to do so. This allows the Director to make the rolls when appropriate for hidden objects, creatures, motivations, and information without tipping off the players that there is information to be gained. Having the Director roll requires the Director to have everyone's [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills recorded (whether physically or digitally) for easy reference.
 
 <!-- @type: chapter | @id: skills -->
 ### Skills
@@ -20648,15 +20648,15 @@ You can't apply more than one skill to a test.
 
 ##### Justify the Skill
 
-It's not the Director's job to know every task potentially covered by the skills in the game, or to know the specific skills your hero has. Instead, the Director asks you to make a test using a characteristic and you tell the Director if you think you have a skill that applies. If it's not obvious why the skill applies, tell the Director how your hero is approaching the task and justify why that approach uses the skill. The Director then decides if you get the +2 bonus the skill represents. If the Director disagrees with you, that's the final word.
+It's not the Director's job to know every task potentially covered by the skills in the game, or to know the specific skills your hero has. Instead, the Director asks you to make a test using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) and you tell the Director if you think you have a skill that applies. If it's not obvious why the skill applies, tell the Director how your hero is approaching the task and justify why that approach uses the skill. The Director then decides if you get the +2 bonus the skill represents. If the Director disagrees with you, that's the final word.
 
 Approaching problems creatively while remaining reasonable can help you get the most out of your skills. For example, if you're making a Presence test to impress a noble at a party, using the [Brag](scc:mcdm.heroes.v1/skill/brag) skill is an obvious choice. But what if you don't have that skill? Maybe you could instead try to impress the noble with a brief but exciting lecture about the nature of the elements, making a Presence test using the [Magic](scc:mcdm.heroes.v1/skill/magic) skill that you do have!
 
-Sometimes you won't have a skill that applies to a test. That's okay! If your characteristic score is decent, you likely have a good chance of success without a skill.
+Sometimes you won't have a skill that applies to a test. That's okay! If your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score is decent, you likely have a good chance of success without a skill.
 
 ##### Mixing Characteristics and Skills
 
-Although certain skills are often paired with one characteristic more than others, a skill can apply to a test made using any characteristic that makes sense. The Director has the final say on which characteristic is used to complete a task, and can call for a different characteristic based on the circumstances.
+Although certain skills are often paired with one [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) more than others, a skill can apply to a test made using any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that makes sense. The Director has the final say on which [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) is used to complete a task, and can call for a different [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) based on the circumstances.
 
 For example, intimidating someone with a purely verbal threat is a Presence test. But if a player describes their character tearing a log in half with their bare hands to intimidate a foe, the Director is likely to call for a Might test instead. The [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill can apply to both tests. In the same way, scaling the side of a building is covered by a Might test, but if a hero does a series of leaps from one balcony to another to reach a roof, the Director could call for an Agility test instead. The [Climb](scc:mcdm.heroes.v1/skill/climb) skill applies to both of these tests.
 
@@ -20664,7 +20664,7 @@ For example, intimidating someone with a purely verbal threat is a Presence test
 
 *Draw Steel* includes a big list of skills, and each is fairly specific. For example, instead of one Athletics skill that covers climbing, jumping, swimming, and lifting heavy objects, your character might use separate [Climb](scc:mcdm.heroes.v1/skill/climb), [Jump](scc:mcdm.heroes.v1/skill/jump), [Lift](scc:mcdm.heroes.v1/skill/lift), and [Swim](scc:mcdm.heroes.v1/skill/swim) skills. Instead of a Thievery skill that covers picking locks, picking pockets, and disabling traps, the game has three skills: [Pick Lock](scc:mcdm.heroes.v1/skill/pick-lock), [Pick Pocket](scc:mcdm.heroes.v1/skill/pick-pocket), and [Sabotage](scc:mcdm.heroes.v1/skill/sabotage).
 
-Having a wide range of specific skills means you'll frequently make tests that don't use one of your character's skills, simply applying a characteristic. By not having a few broader skills, it means that having a character who covers the spread of every skill is actually impossible. Luckily, the math of the game doesn't require you to have a skill to have a decent chance of success on a test. That means heroes can attempt tasks without the help of a skill just because someone needs to do it, and that's pretty darn heroic!
+Having a wide range of specific skills means you'll frequently make tests that don't use one of your character's skills, simply applying a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic). By not having a few broader skills, it means that having a character who covers the spread of every skill is actually impossible. Luckily, the math of the game doesn't require you to have a skill to have a decent chance of success on a test. That means heroes can attempt tasks without the help of a skill just because someone needs to do it, and that's pretty darn heroic!
 
 Since you don't need to worry about your character covering a wide spread of skills, you're free to choose the skills you think fit your hero best and are the most fun to work with. Maybe you're thinking about an [elementalist](scc:mcdm.heroes.v1/class/elementalist) who has a gymnastic background in jumping and tumbling, and who also studied religion and blacksmithing. Having that kind of specific backstory is a big part of cinematic storytelling.
 
@@ -21171,7 +21171,7 @@ The Director then decides to make the failure potentially more interesting, by a
 
 You can attempt to assist another creature with a test they make, provided you have a skill that applies to the test, the other creature isn't using that same skill on the test, and you can describe how your character helps to the Director's satisfaction. In other words, your attempt to help has to make sense, and you have to bring some useful expertise to the table. Helping another creature sneak by shouting encouragement at them isn't going to make them stealthier.
 
-When you attempt to assist another creature, make a test using the skill you choose, and using a characteristic chosen by the Director based on the activity you use to help. The outcome of that test determines the bonus applied to the test you're assisting:
+When you attempt to assist another creature, make a test using the skill you choose, and using a [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) chosen by the Director based on the activity you use to help. The outcome of that test determines the bonus applied to the test you're assisting:
 
 - **≤11:** You get in the way or make things worse. The creature takes a bane on their test.
 - **12-16:** Your help grants the other creature an edge on their test.
@@ -21199,7 +21199,7 @@ You are no longer hidden from a creature if you don't have [cover](scc:mcdm.hero
 
 ##### Searching for Hidden Creatures
 
-You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see Opposed Power Rolls earlier in this chapter). At the Director's discretion, different characteristics and skills can be used in this opposed test. For example, your foe might make a Presence test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a Reason test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
+You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an Intuition test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed Agility test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see Opposed Power Rolls earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a Presence test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a Reason test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
 
 If the total of your test is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
 
@@ -21211,7 +21211,7 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 #### Sneaking
 
-While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an Agility test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another characteristic at the Director's discretion, such as using Presence to blend in with a crowd on a packed city street.
+While you are hidden from another creature and not in combat, you can attempt to sneak—avoiding the senses of other creatures as you move around them in the open—to remain hidden. While sneaking, your speed is halved. To sneak, you make an Agility test using the Sneak skill with a difficulty set by the Director. If you succeed, you remain hidden during your movement. This test can use another [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) at the Director's discretion, such as using Presence to blend in with a crowd on a packed city street.
 
 <!-- @type: rule | @group: test | @id: group-test -->
 ### Group Tests
@@ -21239,7 +21239,7 @@ If fewer than half the heroes incur a consequence or earn a reward on their indi
 <!-- @type: rule | @group: test | @id: montage-test -->
 ### Montage Tests
 
-When a group of heroes works together over time to accomplish a common goal that requires more than a single characteristic, the Director can call for a montage test. Such tests typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage tests.
+When a group of heroes works together over time to accomplish a common goal that requires more than a single [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), the Director can call for a montage test. Such tests typically take place over a prolonged period and focus on collective or shared activities. Navigating a vast desert, convincing farmers to rise up against a tyrannical leader, and performing a ritual to open a magically sealed gate can all be accomplished with montage tests.
 
 In a montage test, the players take turns making tests as their characters tackle a task together in a montage test round. Each hero has a chance to make a test (or to assist another hero's test; see Assist a Test above) intended to influence the outcome of the task.
 
@@ -22814,7 +22814,7 @@ If you need a project source for a particular project, ask your Director if the 
 <!-- @type: rule | @group: downtime | @id: project-roll -->
 ### Project Roll
 
-As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The characteristic used in the test is determined by the project.
+As a respite activity (see Respite in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a test with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the test is determined by the project.
 
 When you make a project roll, the total—no matter how low—becomes project points that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same respite activity.
 
@@ -22897,7 +22897,7 @@ Unless a project has an event table of its own, the Director uses the Crafting a
 
 **Project Source:** Texts or lore in Low Rhyvian
 
-**Project Roll Characteristic:** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
 
 **Project Goal:** 3,000
 
@@ -22922,7 +22922,7 @@ An airship is an object (giving it damage immunity all to poison and psychic dam
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
 
 **Project Goal:** Varies
 
@@ -22956,7 +22956,7 @@ Time spent traveling between locations on the road is cut in half. Access to res
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 1,500
 
@@ -22967,7 +22967,7 @@ Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is 
 <!-- @type: project -->
 #### Craft Treasure
 
-You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its item prerequisite, project source, project roll characteristic, and project goal.
+You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards). Each treasure notes its item prerequisite, project source, project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal.
 
 <!-- @type: project -->
 #### Find a Cure
@@ -22976,7 +22976,7 @@ You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.her
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** Varies
 
@@ -23014,7 +23014,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23026,17 +23026,17 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Iridescent:** When you are the sole target of an ability, you can use a free triggered action to reveal that the ability was targeting an afterimage of you in the same space as you. The power roll for the ability is treated as an 11. You can't use this enhancement again until you earn 1 or more Victories.
 
-**Magic Resistance I:** Your characteristic scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of magic abilities.
+**Magic Resistance I:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of magic abilities.
 
 **Nettlebloom:** Whenever you are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by an adjacent creature, your armor sprouts toxic nettles. While that creature has you [grabbed](scc:mcdm.heroes.v1/condition/grabbed), they are [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
 **Phasing I:** Once per turn, you can move through 1 square of solid matter. If you end your turn inside solid matter, you are forced out into the space from which you entered it and you take 5 damage that can't be reduced in any way.
 
-**Psionic Resistance I:** Your characteristic scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of psionic abilities.
+**Psionic Resistance I:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the potencies of psionic abilities.
 
 **Swift:** You gain a +1 bonus to speed.
 
-**Tempest I:** As a maneuver, you infuse this armor with the essence of a storm. The first time an adjacent creature deals damage to you before the end of your next turn, they take lightning damage equal to your highest characteristic score and you can push them 1 square.
+**Tempest I:** As a maneuver, you infuse this armor with the essence of a storm. The first time an adjacent creature deals damage to you before the end of your next turn, they take lightning damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score and you can push them 1 square.
 
 ###### 1st-Level Armor Enhancements Table
 
@@ -23059,7 +23059,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23071,7 +23071,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Dragon Soul:** When another creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
 
-**Power Roll + Your Highest Characteristic Score:**
+**Power Roll + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 
 - **≤11:** 8 damage; push 3
 - **12-16:** 12 damage; push 4
@@ -23079,11 +23079,11 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Levitating:** On your turn, you can treat up to 5 consecutive squares of movement as [flying](scc:mcdm.heroes.v1/movement/fly) movement. If you are still in midair at the end of your turn, you [fall prone](scc:mcdm.heroes.v1/condition/prone).
 
-**Magic Resistance II:** Your characteristic scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of magic abilities. This benefit replaces Magic Resistance I.
+**Magic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of magic abilities. This benefit replaces Magic Resistance I.
 
 **Phasing II:** When you use the armor's Phasing I enhancement, you can move through 3 squares of solid matter per turn.
 
-**Psionic Resistance II:** Your characteristic scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of psionic abilities. This benefit replaces Psionic Resistance I.
+**Psionic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of psionic abilities. This benefit replaces Psionic Resistance I.
 
 **Reactive:** Whenever you take damage, you have damage immunity 2 until the end of your next turn after the triggering damage is resolved.
 
@@ -23115,7 +23115,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23132,7 +23132,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 |----------------------------|------------------------------:|
 | **📏 5 x 1 line within 1** | **🎯 Each enemy in the area** |
 
-**Power Roll + Your Highest Characteristic Score:**
+**Power Roll + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 
 - **≤11:** 5 fire damage
 - **12-16:** 8 fire damage
@@ -23184,7 +23184,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23226,7 +23226,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23246,7 +23246,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Rejuvenating II:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On an 8 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) and you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating I.
 
-**Warding II:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus for the Warding I enhancement becomes +12. Additionally, your characteristic scores are treated as 1 higher for the purpose of resisting potencies.
+**Warding II:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus for the Warding I enhancement becomes +12. Additionally, your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting potencies.
 
 ###### 5th-Level Implement Enhancements Table
 
@@ -23268,7 +23268,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23284,11 +23284,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Piercing:** Your magic and psionic abilities ignore damage immunities.
 
-**Psionic Siphon:** Once per turn when you damage one or more creatures using a magic or psionic ability and obtain a tier 3 outcome, you gain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your highest characteristic score, and one creature you damage takes an extra 5 damage.
+**Psionic Siphon:** Once per turn when you damage one or more creatures using a magic or psionic ability and obtain a tier 3 outcome, you gain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and one creature you damage takes an extra 5 damage.
 
 **Rejuvenating III:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 7 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and you or a creature of your choice within 3 squares can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating II.
 
-**Warding III:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus for the Warding I enhancement becomes +18. Additionally, you and each ally within 3 squares of you has their characteristic scores treated as 1 higher for the purpose of resisting potencies. This replaces the benefit of Warding II.
+**Warding III:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) bonus for the Warding I enhancement becomes +18. Additionally, you and each ally within 3 squares of you has their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting potencies. This replaces the benefit of Warding II.
 
 ###### 9th-Level Implement Enhancements Table
 
@@ -23318,7 +23318,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23360,7 +23360,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23418,7 +23418,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 
 **Project Source:** Texts or lore in a language determined by the enhancement
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 150
 
@@ -23440,7 +23440,7 @@ A hero who has a kit that uses unarmed strikes, such as the [Martial Artist](scc
 > |-----------------|------------------------------:|
 > | **📏 3 burst**  | **🎯 Each enemy in the area** |
 >
-> **Power Roll + Your Highest Characteristic Score:**
+> **Power Roll + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 >
 > - **≤11:** 7 fire damage
 > - **12-16:** 11 fire damage
@@ -23482,7 +23482,7 @@ Unless a project has an event table of its own or a special event entry, the Dir
 
 **Project Source:** Texts or knowledge related to the subject you wish to research
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** Varies (see the table)
 
@@ -23577,7 +23577,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 15
 
@@ -23613,7 +23613,7 @@ Additionally, while you work to complete this project, you might be called upon 
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition
 
 **Project Goal:** 240 if your career granted you two skills, or 360 if your career granted you three skills
 
@@ -23626,7 +23626,7 @@ You revisit your previous life to freshen up on the experience it provided you. 
 
 **Project Source:** An NPC of a higher level, or records of such an NPC's teachings in a language you know
 
-**Project Roll Characteristic:** Your highest characteristic
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic)
 
 **Project Goal:** Varies
 
@@ -23674,7 +23674,7 @@ You learn to use one of your heroic abilities more efficiently, reducing its bas
 
 **Project Source:** Texts or instruction that teaches the language you want to learn
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 120
 
@@ -23687,7 +23687,7 @@ When you start this project, choose a language taught by the project source. Whe
 
 **Project Source:** Texts or instruction that teaches the skill you want to learn
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 120
 
@@ -23700,7 +23700,7 @@ When you start this project, choose a skill taught by the project source. When t
 
 **Project Source:** A recipe in a language you know, or someone who can tutor you in that recipe
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 100
 
@@ -23712,7 +23712,7 @@ A creature who eats a serving of food from a particular type of recipe gains one
 
 - **Comforting:** When the creature fails a saving throw, they can choose to succeed instead. This benefit then ends.
 - **Hearty:** The creature increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 at the end of the respite in which the food is consumed.
-- **Supernatural Power:** The creature temporarily increases one of their characteristic scores by 1 (to a maximum of 6).
+- **Supernatural Power:** The creature temporarily increases one of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1 (to a maximum of 6).
 
 A creature can benefit from the food of only one recipe at a time, and can't benefit from more than one serving of a recipe at a time.
 
@@ -23735,13 +23735,13 @@ Not all heroes want to craft or research during their time between adventures. S
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Varies
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Varies
 
 **Project Goal:** 75
 
 When you start this project, you must be in a settlement or other location where people gather, and you must be in that same place each time you make a project roll for the project. You can undertake several Community Service projects at the same time, but each one must be in a different community.
 
-While undertaking this project, you provide help to people in need, doing odd jobs, tutoring life skills, cleaning streets or public spaces, finding lost valuables, and the like. The Director determines the characteristic that applies to the project roll based on the activities you undertake. When you complete this project, you receive a random consumable treasure of the Director's choice from someone in the community as thanks for your hard work.
+While undertaking this project, you provide help to people in need, doing odd jobs, tutoring life skills, cleaning streets or public spaces, finding lost valuables, and the like. The Director determines the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that applies to the project roll based on the activities you undertake. When you complete this project, you receive a random consumable treasure of the Director's choice from someone in the community as thanks for your hard work.
 
 ###### Community Service Events Table
 
@@ -23765,7 +23765,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** Varies
 
@@ -23808,7 +23808,7 @@ Whether for sustenance, relaxation, or bragging rights, you've gone fishing, pro
 
 **Project Source:** None
 
-**Project Roll Characteristic:** Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Presence
 
 **Project Goal:** 60
 
@@ -23859,7 +23859,7 @@ Most treasures are found as part of adventures. Many people concoct dastardly sc
 
 other times, generous and well-off individuals such as monarchs and powerful mages can reward treasures as thanks for heroic deeds.
 
-Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their item prerequisite, project source, project roll characteristic, and project goal (the number of project points needed to complete the project) noted in their descriptions.
+Heroes can also craft their own treasures, forging the tools they need to get the job done using the rules in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects). Items that can be crafted have their item prerequisite, project source, project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), and project goal (the number of project points needed to complete the project) noted in their descriptions.
 
 #### What Does This Treasure Do?
 
@@ -23944,7 +23944,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Szetch
 
-**Project Roll Characteristic:** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
 
 **Project Goal:** 45 (yields 1d3 darts, or three darts if crafted by a shadow)
 
@@ -23965,7 +23965,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Proto-Ctholl
 
-**Project Roll Characteristic:** Agility or Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Reason
 
 **Project Goal:** 45
 
@@ -23982,7 +23982,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Kalliak
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -23999,7 +23999,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -24016,7 +24016,7 @@ This section presents 1st-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -24037,11 +24037,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
-**Effect:** As a maneuver, you can drink this potion or pour it over an object of size 2 or smaller, causing the target's size to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability are doubled, you gain an edge on Might tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest characteristic score. You shrink back to your original size after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability, and losing the potion's other benefits. Objects maintain their new size permanently.
+**Effect:** As a maneuver, you can drink this potion or pour it over an object of size 2 or smaller, causing the target's size to increase by 1(to a minimum size of 2). If you are the target, your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability are doubled, you gain an edge on Might tests, and your weapon abilities that deal rolled damage gain a damage bonus equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. You shrink back to your original size after 3 rounds, halving your current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum and Stability, and losing the potion's other benefits. Objects maintain their new size permanently.
 
 <!-- @type: treasure -->
 ##### Healing Potion
@@ -24054,7 +24054,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -24071,7 +24071,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -24088,7 +24088,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45 (yields 1d3 teeth)
 
@@ -24109,7 +24109,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45
 
@@ -24126,11 +24126,11 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 45
 
-**Effect:** When activated as a maneuver, this item erupts in a bright flash, you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) 15, a 0 in all their characteristics, and a speed and stability equal to yours. They appear indistinguishable from you but can't use any abilities.
+**Effect:** When activated as a maneuver, this item erupts in a bright flash, you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) 15, a 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic), and a speed and stability equal to yours. They appear indistinguishable from you but can't use any abilities.
 
 While you have line of effect to your homunculus, you can use a maneuver to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
@@ -24145,7 +24145,7 @@ While you have line of effect to your homunculus, you can use a maneuver to issu
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 30 or 45 (see below)
 
@@ -24170,7 +24170,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 45
 
@@ -24187,7 +24187,7 @@ Enterprising mages within various thieves' guilds have developed variations of t
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 45 (yields 1d6 + 1 snapdragons)
 
@@ -24209,7 +24209,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 90
 
@@ -24226,7 +24226,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 90
 
@@ -24243,7 +24243,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 90
 
@@ -24260,7 +24260,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
 
 **Project Goal:** 90
 
@@ -24277,7 +24277,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 90 (yields 1d3 vials)
 
@@ -24294,7 +24294,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 90 (yields 1d3 doses)
 
@@ -24311,7 +24311,7 @@ This section presents 2nd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 90
 
@@ -24330,7 +24330,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 90
 
@@ -24353,7 +24353,7 @@ If you pull a size 1T object adjacent to you, you can catch it. This treasure ca
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 90
 
@@ -24375,7 +24375,7 @@ This section presents 3rd-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
 
 **Project Goal:** 180
 
@@ -24394,7 +24394,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 180
 
@@ -24411,7 +24411,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 180
 
@@ -24428,7 +24428,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Khemharic
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 120
 
@@ -24445,7 +24445,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 180
 
@@ -24462,7 +24462,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 180
 
@@ -24483,7 +24483,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
 
 **Project Goal:** 180
 
@@ -24500,7 +24500,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
 
 **Project Goal:** 180
 
@@ -24522,7 +24522,7 @@ This section presents 4th-echelon consumable treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 360
 
@@ -24541,7 +24541,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Presence
 
 **Project Goal:** 360
 
@@ -24560,7 +24560,7 @@ Each time you use another Breath of Creation, you can create a new demiplane or 
 
 Infinite Library detailing incomplete instructions for building a sun
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 360
 
@@ -24577,7 +24577,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
 
 **Project Goal:** 360
 
@@ -24606,7 +24606,7 @@ This section presents 1st-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24625,7 +24625,7 @@ Additionally, when you are targeted by any effect that deals cold damage, you ca
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24644,7 +24644,7 @@ Additionally, when you are targeted by any effect that deals fire damage, you ca
 
 **Project Source:** Licensing agreements in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24663,7 +24663,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24680,7 +24680,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 150
 
@@ -24697,7 +24697,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Songs in Yllyric
 
-**Project Roll Characteristic:** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
 
 **Project Goal:** 150
 
@@ -24714,7 +24714,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason
 
 **Project Goal:** 150
 
@@ -24733,7 +24733,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24750,7 +24750,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Anjali and Caelian
 
-**Project Roll Characteristic:** Might or Reason
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Reason
 
 **Project Goal:** 150
 
@@ -24767,7 +24767,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24784,7 +24784,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24801,7 +24801,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 150
 
@@ -24823,7 +24823,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in High Kuric
 
-**Project Roll Characteristic:** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
 
 **Project Goal:** 300
 
@@ -24840,7 +24840,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24857,7 +24857,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24874,7 +24874,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Ullorvic
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24891,7 +24891,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll Characteristic:** Reason or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Presence
 
 **Project Goal:** 300
 
@@ -24908,7 +24908,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24925,7 +24925,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24942,7 +24942,7 @@ This section presents 2nd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 300
 
@@ -24970,7 +24970,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -24987,7 +24987,7 @@ This section presents 3rd-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25006,7 +25006,7 @@ While the eyes circle your head, you can use a maneuver to launch up to three of
 
 **Project Source:** Texts or lore in Higaran
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25035,7 +25035,7 @@ Additionally, you have the following ability.
 
 **Project Source:** Texts or lore in Mindspeech
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25070,7 +25070,7 @@ Additionally, you have the following ability.
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
 
 **Project Goal:** 450
 
@@ -25092,7 +25092,7 @@ This section presents 4th-echelon trinket treasures in alphabetical order.
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 600
 
@@ -25115,7 +25115,7 @@ A trapped spirit remains in the lantern for 10 minutes. They remember being trap
 
 **Project Source:** Texts or lore in Mindspeech
 
-**Project Roll Characteristic:** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
 
 **Project Goal:** 600
 
@@ -25160,11 +25160,11 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Agility or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Intuition
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and you have immunity to acid and poison damage equal to your highest characteristic score.
+**1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and you have immunity to acid and poison damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever an adjacent creature deals damage to you, they take 3 acid or poison damage (your choice).
 
@@ -25181,7 +25181,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25202,7 +25202,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Phaedran
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25223,7 +25223,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Songs in High Rhyvian
 
-**Project Roll Characteristic:** Reason, Intuition, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason, Intuition, or Presence
 
 **Project Goal:** 450
 
@@ -25244,13 +25244,13 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll Characteristic:** Intuition or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Intuition or Presence
 
 **Project Goal:** 450
 
 **1st Level:** You gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while you wear this armor. Additionally, whenever a creature within 5 squares deals damage to you, you can use a triggered action to capture a moment of time in the armor, making that creature [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, when you capture a moment of time in the armor, the triggering creature also takes corruption damage equal to twice your highest characteristic score.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, when you capture a moment of time in the armor, the triggering creature also takes corruption damage equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, whenever you capture a moment of time in the armor, you can immediately release it to gain a +3 bonus to speed that lasts until the end of your next turn.
 
@@ -25265,7 +25265,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25286,7 +25286,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
 
 **Project Goal:** 450
 
@@ -25307,7 +25307,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25328,7 +25328,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Voll
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25349,7 +25349,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25375,15 +25375,15 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest characteristic score.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal rolled damage using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 cube, around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has damage immunity 5. The field disappears at the start of your next turn.
 
-**9th Level:** The implement's damage bonus increases to +3. Whenever you deal rolled damage to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest characteristic score. Additionally, the size of your field of protection increases to a 3 cube, and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
+**9th Level:** The implement's damage bonus increases to +3. Whenever you deal rolled damage to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 cube, and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
 <!-- @type: treasure -->
 ##### Brittlebreaker
@@ -25396,7 +25396,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25417,7 +25417,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25438,13 +25438,13 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
 **1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next turn, allowing you to pass through them freely. While insubstantial, a creature can't make opportunity attacks against you.
 
-**5th Level:** The implement's damage bonus increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free triggered action to deal damage to them equal to your highest characteristic score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an adjacent space outside them.
+**5th Level:** The implement's damage bonus increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free triggered action to deal damage to them equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an adjacent space outside them.
 
 **9th Level:** The implement's damage bonus increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make opportunity attacks against your allies while they remain insubstantial.
 
@@ -25459,7 +25459,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25480,7 +25480,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25506,7 +25506,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Reason, Intuition, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason, Intuition, or Presence
 
 **Project Goal:** 450
 
@@ -25527,7 +25527,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450 
 
@@ -25548,7 +25548,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25569,7 +25569,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts in Zaliac
 
-**Project Roll Characteristic:** Might or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might or Intuition
 
 **Project Goal:** 450
 
@@ -25590,7 +25590,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25611,7 +25611,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25632,7 +25632,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25653,7 +25653,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Hyrallic
 
-**Project Roll Characteristic:** Agility or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility or Presence
 
 **Project Goal:** 450
 
@@ -25674,7 +25674,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25695,7 +25695,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian and Variac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25716,7 +25716,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Caelian and Kalliak
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25737,7 +25737,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Variac
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Reason or Intuition
 
 **Project Goal:** 450
 
@@ -25756,7 +25756,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25777,7 +25777,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Source:** Texts or lore in Higaran
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25803,7 +25803,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25824,7 +25824,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Agility, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Agility, or Intuition
 
 **Project Goal:** 450
 
@@ -25845,7 +25845,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Yllyric
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Agility, Reason, or Intuition
 
 **Project Goal:** 450
 
@@ -25866,11 +25866,11 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Intuition
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this cloak, any creature who damages you is marked for revenge until the end of your next turn or until another creature damages you. Any strike you make against a creature marked for revenge deals extra damage equal to your highest characteristic score, and whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
+**1st Level:** While you wear this cloak, any creature who damages you is marked for revenge until the end of your next turn or until another creature damages you. Any strike you make against a creature marked for revenge deals extra damage equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score, and whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
 **5th Level:** Each creature who damages you is marked for revenge until the end of your next turn. Whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
@@ -25887,17 +25887,17 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll Characteristic:** Might, Reason, or Presence
+**Project Roll [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Might, Reason, or Presence
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this torque, you gain a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to twice your highest characteristic score. Additionally, you can use a maneuver to choose a creature in your line of effect and learn their level. If their level is higher than yours, the torque grants you envy. If their level is equal to or lower than yours, the torque grants you disdain. You can have both envy and disdain from different creatures, but not more than one instance of either.
+**1st Level:** While you wear this torque, you gain a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can use a maneuver to choose a creature in your line of effect and learn their level. If their level is higher than yours, the torque grants you envy. If their level is equal to or lower than yours, the torque grants you disdain. You can have both envy and disdain from different creatures, but not more than one instance of either.
 
 Whenever a creature within 10 squares of you deals damage to another creature, you can use a triggered action to expend your envy or disdain. If you expend envy, you deal damage equal to the triggering damage to a creature adjacent to you. If you expend disdain, you reduce the triggering damage by half. At the end of the encounter, you lose any envy or disdain granted by the torque.
 
-**5th Level:** The torque's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to three times your highest characteristic score. Additionally, when you use the torque's maneuver and the target creature is the same level as you, you gain your choice of envy or disdain.
+**5th Level:** The torque's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to three times your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, when you use the torque's maneuver and the target creature is the same level as you, you gain your choice of envy or disdain.
 
-**9th Level:** The torque's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to five times your highest characteristic score. Additionally, you can have multiple instances of envy and disdain, with no limit on either.
+**9th Level:** The torque's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to five times your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can have multiple instances of envy and disdain, with no limit on either.
 
 <!-- @type: treasure-group | @tier: artifact -->
 ### Artifacts
@@ -26118,7 +26118,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 **Effect:** Choose a damage type to which the defeated creature had an immunity (such as fire). Then choose one of the following benefits:
 
 - *Elemental Blaster:* You have the [Elementalist](scc:mcdm.heroes.v1/class/elementalist) 1st-level [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) feature, dealing the chosen damage type.
-- *Elemental Immunity:* You have immunity to the chosen damage type equal to your highest characteristic score.
+- *Elemental Immunity:* You have immunity to the chosen damage type equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - *Elemental Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal damage of the chosen type instead of its usual damage type.
 
 <!-- @type: title -->
@@ -26165,7 +26165,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** Choose one of the following benefits:
 
-- *Arcane Dampening:* When resisting potencies from magic abilities, your characteristic scores are considered to be 1 higher than usual.
+- *Arcane Dampening:* When resisting potencies from magic abilities, your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are considered to be 1 higher than usual.
 - *Oh No, You Don't!:* Whenever an adjacent creature uses an ability with the Magic keyword, you can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them as a triggered action.
 - *Stink of Magic:* As a maneuver, you open your senses to the residue of magic. Until the end of your next turn, you are aware of whether each creature within 5 squares is a construct, an undead, or a creature from another world, and whether they have used a magic ability in the previous hour. Additionally, you can't be surprised by constructs, undead, or creatures from another world.
 
@@ -26309,7 +26309,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 **Effect:** Choose one of the following benefits:
 
 - *Blessed Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal holy damage instead of its usual damage type.
-- *Divine Health:* You gain corruption immunity equal to your highest characteristic score. Additionally, you can't be turned into an undead creature.
+- *Divine Health:* You gain corruption immunity equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can't be turned into an undead creature.
 - *Holy Terror:* You have the following ability, which can be paid for using the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) of your class.
 
 > ###### Holy Terror (3 Heroic Resource)
@@ -26743,7 +26743,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Masterpiece:* The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.
 - *Research Dividends:* You gain the item prerequisite for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the project source language for that enhancement.
 - *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an edge on tests made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
-- *Strong Hands Make Light Work:* Whenever you make a project roll, you can use Might as the project roll characteristic.
+- *Strong Hands Make Light Work:* Whenever you make a project roll, you can use Might as the project roll [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
 <!-- @type: title -->
 #### Noble
@@ -26818,7 +26818,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** You beat the best in the world at a game or sport.
 
-**Effect:** A characteristic used during the competition increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used during the competition increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Best of the Best:* Choose a skill you used during the competition. You gain a +4 bonus to tests made using that skill instead of a +2 bonus
 - *Glory and Riches:* You earn 2 Renown and 1 Wealth.
@@ -26833,7 +26833,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 
 **Effect:** You gain the following benefits:
 
-- *Immortal Excellence:* A characteristic of your choice increases by 1 (to a maximum of 6).
+- *Immortal Excellence:* A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice increases by 1 (to a maximum of 6).
 - *Longevity:* Your natural lifespan doubles and you can appear to be any age.
 - *Worshippers:* You magically hear prayers directed to you.
 
@@ -26863,7 +26863,7 @@ Additionally, choose one of the following benefits:
 
 **Prerequisite:** Your party loses, destroys, or otherwise parts with an artifact.
 
-**Effect:** A characteristic of your choice increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
+**Effect:** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
 - *Perfect Protection:* The Director chooses a damage type that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen damage type.
@@ -26902,7 +26902,7 @@ Additionally, choose one of the following benefits:
 - *Calm Heads Prevail:* When you make a test to stop combat and start a negotiation, you always obtain a tier 3 outcome.
 - *Drop Your Sword:* When you succeed on a test using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, you can cause affected creatures to drop any items they are holding.
 - *Hear Me Out:* While you are present in a negotiation, an NPC's starting patience increases by 3 (to a maximum of 5).
-- *Many Paths to Peace:* When you make a test with a skill from the interpersonal skill group, you can use any characteristic of your choice for the test.
+- *Many Paths to Peace:* When you make a test with a skill from the interpersonal skill group, you can use any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice for the test.
 
 <!-- @type: title -->
 #### Reborn
@@ -27005,7 +27005,7 @@ When you attract a new follower, you decide on their name and ancestry, and choo
 
 Artisans are crafting experts who can contribute to your research and crafting projects (see Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)). An artisan can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
+When you recruit an artisan, choose four skills from the crafting skill group that they know (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). An artisan has a Might or Agility score of 1 (your choice), a Reason score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
 <!-- @type: rule | @group: general | @id: retainer -->
 ##### Retainer
@@ -27018,7 +27018,7 @@ Rules for retainers are found in *Draw Steel: Monsters*.
 
 Sages are research experts who can contribute to your research and crafting projects. A sage can contribute one project roll per day to a downtime project you choose, whether you spend those days in respite, adventuring, or other activities. They must remain at your [stronghold](scc:mcdm.heroes.v1/title/stronghold) or at the site where the project is undertaken, and must have access to the necessary materials.
 
-When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a Reason and Intuition score of 1, and a 0 in all other characteristics. They know Caelian and two other languages of your choice.
+When you recruit a sage, choose four skills from the lore skill group that they know. A sage has a Reason and Intuition score of 1, and a 0 in all other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). They know Caelian and two other languages of your choice.
 
 ## Wealth
 
@@ -27297,7 +27297,7 @@ Zarok the Law-Giver. Zarok the Teacher. Zarok who is Justice.
 
 The first, great hero of the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), Zarok was a noted general, diplomat, and poet. In his time each [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) city-state had its own laws which were mostly just lists of offenses with punishments listed next to them. There was no consistency from one city to another and no underlying theory of law. The strong ruled, the rest obeyed.
 
-It was after Zarok retired from his career as a warmaster and became the ambassador to the elves that he undertook a study of how different cultures express the idea of justice. He surveyed the various traditions of elves, [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and wrote *The Conversations*-a series of fictional dialogues in which two characters, deliberately chosen from [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) theater so as to be familiar to his audience, debate the question: "What are the characteristics of a just society?"
+It was after Zarok retired from his career as a warmaster and became the ambassador to the elves that he undertook a study of how different cultures express the idea of justice. He surveyed the various traditions of elves, [humans](scc:mcdm.heroes.v1/ancestry/human), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and wrote *The Conversations*-a series of fictional dialogues in which two characters, deliberately chosen from [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) theater so as to be familiar to his audience, debate the question: "What are the [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) of a just society?"
 
 *The Conversations* marks the beginning of legal theory in Orden. It sought not only to state what a just society was, but to prove it ethically through a series of logical statements. Most of the work concerns itself with the proper, ethical uses of political power. The adversarial system of legal representation is his.
 
@@ -27336,7 +27336,7 @@ Kul, Father of Flames, Lord of the Forge, the Cleansing Fire who put fire and ma
 
 He saw his sibling gods creating their own children and placing them within the world, and so followed suit, creating the [orcs](scc:mcdm.heroes.v1/ancestry/orc), the last of the original five speaking peoples.
 
-Kul's fire is the fire that destroys, but it is also the fire that creates, the fire of the forge, the fire that makes meat safe to eat, the fire that cauterizes wounds. Kul teaches that action is the defining characteristic of being. Kul's heroes are not philosophers or poets, but warriors and hunters.
+Kul's fire is the fire that destroys, but it is also the fire that creates, the fire of the forge, the fire that makes meat safe to eat, the fire that cauterizes wounds. Kul teaches that action is the defining [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of being. Kul's heroes are not philosophers or poets, but warriors and hunters.
 
 Uniquely among the Elder Creator Gods, Kul does not desire worship finds it distasteful. [Orcs](scc:mcdm.heroes.v1/ancestry/orc) still call out to Kul in desperate times as "Kul Who Once Spoke." But in those moments, they do not call out for aid—only that Kul witness them, and that they might prove worthy of his attention.
 
@@ -28172,7 +28172,7 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 ### House Rules
 
-You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if critical hits are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any characteristic of their choice at 1st level.
+You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if critical hits are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
 
 The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that critical hits only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
 
@@ -28506,7 +28506,7 @@ A hero always succeeds on an **easy test**. It's just a question of whether they
 
 A hero who has a modifier of +1 or more on a test will likely succeed on a **moderate test**. Success with a consequence is common for heroes if their bonus to the test is lower than +4, so they're succeeding at a cost. Odds are that most of the tests you'll call for in your games will be moderate tests. They give most heroes a decent chance of success without it being a sure thing, and the story gets interesting whenever consequences are involved.
 
-**Hard tests** do exactly what it says on the tin. Success on a hard test requires a roll of 17 or higher, which means a hero has better than a 50 percent chance of success only if they have a +6 or higher bonus on the test. At 1st level, that means a character using their highest characteristic, using a skill, and having an edge on the test. Failure on a hard test often means consequences beyond failing, making hard tests really risky! You likely find that hard tests aren't as common as moderate tests in your game, but they're used more than easy tests.
+**Hard tests** do exactly what it says on the tin. Success on a hard test requires a roll of 17 or higher, which means a hero has better than a 50 percent chance of success only if they have a +6 or higher bonus on the test. At 1st level, that means a character using their highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), using a skill, and having an edge on the test. Failure on a hard test often means consequences beyond failing, making hard tests really risky! You likely find that hard tests aren't as common as moderate tests in your game, but they're used more than easy tests.
 
 ##### Setting Difficulty During Play
 
@@ -29045,20 +29045,20 @@ Fire blazes in several buildings whose occupants need to be rescued. Elsewhere, 
 The following challenges can be part of the montage test:
 
 - **Bucket Brigades:** Characters can organize the would-be firefighters into disciplined bucket brigades, or can fight the fire directly in some other way. *Suggested* C*haracteristics:* Presence, Reason. *Suggested Skills:* Architecture, Intimidate, Lead.
-- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested Characteristics:* Might, Reason. *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested Characteristics:* Might, Presence. *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the montage test.
-- **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested Characteristic:* Presence. *Suggested Skills:* Intimidate, Lead, Persuade.
-- **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested Characteristics:* Might, Presence. *Suggested Skills:* Handle Animals, Lift, Ride.
-- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested Characteristic:* Might. *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
-- **Use the Freed Horses (if the Free the Horses challenge was successful):**  Characters can put the horses to work clearing rubble or bringing people to safety. *Suggested Characteristics:* Reason, Presence. *Suggested Skills:* Drive, Handle Animals, Ride.
+- **Clearing a Firebreak:** Preventing the fire from spreading might involve clearing the ground of flammable materials, either by moving it or burning it away under controlled conditions. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills and Abilities:* Endurance, Lift; abilities that deal fire damage. *Special:* A creature loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
+- **Evacuating Buildings:** Characters must save people trapped in burning buildings. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Climb, Endurance, Persuade. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge. The heroes can attempt this challenge twice during the montage test.
+- **Find More Firefighters:** By finding groups that aren't fighting the fire, such as fleeing civilians, characters can convince them to help. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Intimidate, Lead, Persuade.
+- **Free the Horses:** Characters can loose the stabled horses threatened by the fire and lead them to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Handle Animals, Lift, Ride.
+- **Move Burning Rubble:** [Shifting](scc:mcdm.heroes.v1/movement/shifting) burning debris blocking doorways can allow people to escape the blaze. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lift. *Special:* A creature who doesn't have fire immunity loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) if they incur a consequence on the test for this challenge.
+- **Use the Freed Horses (if the Free the Horses challenge was successful):**  Characters can put the horses to work clearing rubble or bringing people to safety. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Reason, Presence. *Suggested Skills:* Drive, Handle Animals, Ride.
 
 ###### Optional Twists
 
 At the end of the first montage test round, an emergency crops up. One or more heroes, selected by the players, must deal with the situation before the end of the round. If the heroes successfully deal with the twist, they earn a success for the montage test. Otherwise, they earn a failure.
 
-- **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested Characteristics:* Agility, Intuition. *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Building Collapse:** While a hero is in or near a blazing building, it starts to collapse. The hero must escape before the building crumbles. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Climb, Gymnastics, Jump.
 - **Cause of the Fire:** At the end of the first round of the montage test, the hostile cause of the fire appears—a squad of an invading army, a dragon, a team of arsonists, and so forth. The characters must engage in a standard or hard encounter with this threat.
-- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested Characteristics:* Might, Presence. *Suggested Skills:* Lift, Persuade.
+- **Help!** Townsfolk are about to run into a burning building to save a trapped relative. This twist requires two tests, each of which nets a success or a failure for the montage test. One hero can try to prevent the townspeople from entering the burning building while another rescues the relative. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Lift, Persuade.
 
 ###### Montage Test Outcomes
 
@@ -29082,11 +29082,11 @@ Half the work of any successful infiltration is done before setting foot in the 
 
 The following challenges can be part of this initial preparation:
 
-- **Bribe Guards:** The heroes can pay off the guards outside the palace to look the other way. If successful, one or more heroes' Wealth is lowered by 1. *Suggested Characteristic:* Presence. *Suggested Skills:* Criminal Underworld, Flirt, Persuade.
-- **Find Blueprints:** Researching secret entrances and little-known passageways can be undertaken in forgotten libraries or well-guarded town halls. *Suggested Characteristics:* Agility, Reason. *Suggested Skills:* Architecture, History, Sneak.
-- **Identify Unguarded Entrances:** Scouting around or consulting contacts can reveal a forgotten back door or accessible window. *Suggested Characteristics:* Agility, Intuition. *Suggested Skills:* Alertness, Architecture, Criminal Underworld.
-- **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested Characteristics:* Intuition, Reason. *Suggested Skills:* Alertness, Eavesdrop, Track.
-- **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested Characteristics:* Presence, Reason. *Suggested Skills:* Disguise, Forgery, Lie.
+- **Bribe Guards:** The heroes can pay off the guards outside the palace to look the other way. If successful, one or more heroes' Wealth is lowered by 1. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Criminal Underworld, Flirt, Persuade.
+- **Find Blueprints:** Researching secret entrances and little-known passageways can be undertaken in forgotten libraries or well-guarded town halls. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Reason. *Suggested Skills:* Architecture, History, Sneak.
+- **Identify Unguarded Entrances:** Scouting around or consulting contacts can reveal a forgotten back door or accessible window. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Alertness, Architecture, Criminal Underworld.
+- **Learn Guard Schedules:** By keeping their ears and eyes open, characters can learn when guards go off duty. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Alertness, Eavesdrop, Track.
+- **Use False Identities:** By procuring forged documents or badges, characters can prepare to walk into the palace in plain sight. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence, Reason. *Suggested Skills:* Disguise, Forgery, Lie.
 
 When the heroes start their infiltration, the alarm level of the palace starts at 0. While they infiltrate the site, whenever any hero fails a test as part of the montage test, the alarm level increases by 1, to a maximum of 2. Each time the heroes succeed on such a test, the alarm level decreases, to a minimum of 0. While the alarm level is 1, tests made inside the palace by the characters as part of the montage test take a bane. While the alarm level is 2, such tests have a double bane.
 
@@ -29094,12 +29094,12 @@ The first time any hero fails a test made as part of the montage test while the 
 
 The following challenges can be part of the heroes' infiltration:
 
-- **Aerial Route:** Characters can follow a path that leads along catwalks or high ledges. *Suggested Characteristics:* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Avoid Traffic:** By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice. *Suggested Characteristics:* Intuition, Reason. *Suggested Skills:* Navigate, Search, Track.
+- **Aerial Route:** Characters can follow a path that leads along catwalks or high ledges. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Avoid Traffic:** By finding the dustiest, least-traveled areas and sticking to them, characters can avoid notice. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Navigate, Search, Track.
 - **Lie Low:** Once while the alarm level is greater than 0, the heroes can find a place to hide for a bit, reducing the alarm level by 1. This activity doesn't require a test or generate a success or failure.
-- **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested Characteristics:* Might, Presence. *Suggested Skills:* Alchemy, Perform, Sabotage.
-- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an edge if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested Characteristics:* Intuition, Presence. *Suggested Skills:* Disguise, Lie, Search.
-- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested Characteristic:* Agility. *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Make a Diversion:** After causing a ruckus, the characters quickly go the other way. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Alchemy, Perform, Sabotage.
+- **Pose as Guards:** Using stolen or specially prepared uniforms can let the characters move freely through the palace. The test for this challenge gains an edge if the characters prepared disguises in advance (including succeeding on the Use False Identities challenge) or defeated guards during their infiltration. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Disguise, Lie, Search.
+- **Skulk in the [Shadows](scc:mcdm.heroes.v1/class/shadow):** Keeping out of sight is the simplest way for characters to move through the palace. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility. *Suggested Skills:* Hide, Sneak. *Special:* The heroes can attempt this challenge twice during the montage test.
 
 ###### Optional Twist
 
@@ -29125,14 +29125,14 @@ The walls or palisades around the settlement (if any) are in poor shape. Roads o
 
 The following challenges can be part of the montage test:
 
-- **Arms and Armor:** Crafting or repairing weapons and armor of all kinds can help rebuild the defenders' stores. *Suggested Characteristics:* Might, Reason. *Suggested Skills:* Alchemy, Blacksmithing, Fletching.
-- **Evacuation:** Heroes can help get noncombatants to safety before the invaders arrive. *Suggested Characteristics:* Intuition, Presence. *Suggested Skills:* Handle Animals, Lead, Persuade.
-- **Fortification:** Characters can help build or repair walls and other defensive structures. *Suggested Characteristics:* Might, Reason. *Suggested Skills:* Architecture, Endurance, Lift.
-- **Inspiration:** Improving morale with rousing speeches or performances can help prepare the locals for the fight to come. *Suggested Characteristics:* Intuition, Presence. *Suggested Skills:* Brag, Lead, Perform.
-- **Propaganda:** Characters can attempt to sow confusion or rebellion in the ranks of the approaching army. *Suggested Characteristics:* Agility, Presence. *Suggested Skills:* Disguise, Forgery, Lie.
-- **Stockpiling:** Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement's supplies. *Suggested Characteristics:* Agility, Reason. *Suggested Skills:* Nature, Sneak, Track.
-- **Training:** Heroes can help to train the settlement's defenders. *Suggested Characteristics:* Might, Presence. *Suggested Skills:* Endurance, Intimidate, Lead.
-- **Trapmaking:** Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement. *Suggested Characteristics:* Might, Reason. *Suggested Skills:* Conceal Object, Endurance, Mechanics.
+- **Arms and Armor:** Crafting or repairing weapons and armor of all kinds can help rebuild the defenders' stores. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Alchemy, Blacksmithing, Fletching.
+- **Evacuation:** Heroes can help get noncombatants to safety before the invaders arrive. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Handle Animals, Lead, Persuade.
+- **Fortification:** Characters can help build or repair walls and other defensive structures. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Architecture, Endurance, Lift.
+- **Inspiration:** Improving morale with rousing speeches or performances can help prepare the locals for the fight to come. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Brag, Lead, Perform.
+- **Propaganda:** Characters can attempt to sow confusion or rebellion in the ranks of the approaching army. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Presence. *Suggested Skills:* Disguise, Forgery, Lie.
+- **Stockpiling:** Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement's supplies. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Reason. *Suggested Skills:* Nature, Sneak, Track.
+- **Training:** Heroes can help to train the settlement's defenders. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Presence. *Suggested Skills:* Endurance, Intimidate, Lead.
+- **Trapmaking:** Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might, Reason. *Suggested Skills:* Conceal Object, Endurance, Mechanics.
 
 ###### Optional Twist
 
@@ -29158,11 +29158,11 @@ The fugitive's route is easy to follow, but could they be setting a false trail?
 
 The following challenges can be part of the montage test:
 
-- **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested Characteristics:* Intuition, Presence. *Suggested Skills:* Interrogate, Persuade, Rumors.
-- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested Characteristic:* Intuition. *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the montage test.
-- **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested Characteristics:* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
-- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an edge on the test for this challenge if they know the quarry well. *Suggested Characteristics:* Intuition, Reason. *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
-- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested Characteristic: Might. Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- **Ask Around:** Characters can gather clues from locals or bystanders—or if they have access to the proper magic, from animals or the dead. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Presence. *Suggested Skills:* Interrogate, Persuade, Rumors.
+- **Follow the Trail:** Looking for tracks or other signs of the fugitive's passage can lead the characters on. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition. *Suggested Skills:* Alertness, Search, Track. *Special:* The heroes can attempt this challenge twice during the montage test.
+- **Obtain a Good View:** Characters can climb up high to get the big picture of where the fugitive might have gone. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Might. *Suggested Skills:* Climb, Gymnastics, Jump.
+- **Predict the Next Move:** The heroes might have an idea where the quarry is headed. A character gains an edge on the test for this challenge if they know the quarry well. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Navigate, Read Person, an appropriate skill from the lore skill group (Nature to follow an animal, Criminal Underworld to follow a criminal, and so forth).
+- **Push Ahead:** While the quarry is resting, the heroes have a chance to close in. Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic): Might. Suggested Skills: Drive, Endurance, Navigate, Ride. Special: The hero making the test for this challenge loses a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Optional Twist
 
@@ -29188,13 +29188,13 @@ The wilds hold unknown dangers. Characters need to figure out the best route whi
 
 The following challenges can be part of the montage test:
 
-- **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested Characteristics:* Intuition, Reason. *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
-- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested Characteristic:* Might. *Suggested Skills:* Endurance, Lift.
-- **Find the Path:** Avoiding getting lost is a major challenge for the characters. *Suggested Characteristics:* Intuition, Reason. *Suggested Skills:* Alertness, Nature, Navigate.
-- **Keep Up Spirits:** Characters can keep up the party's morale during a forced march with cheer and song. *Suggested Characteristic:* Presence. *Suggested Skills:* Lead, Music, Perform.
-- **Keep Watch:** Characters must be on constant guard against danger. *Suggested Characteristic:* Intuition. *Suggested Skills:* Alertness, Eavesdrop, Track.
-- **Push On:** Characters must be ready to pick up the pace and push past their fatigue. *Suggested Characteristics:* Might. *Suggested Skills:* Endurance, Lead; Drive, Handle Animals, or Ride if the party has mounts or vehicles.
-- **Scout Ahead:** Investigating the path ahead lets the characters avoid dead-ends and arduous terrain. *Suggested Characteristics:* Agility, Intuition. *Suggested Skills:* Alertness, Navigate, Sneak.
+- **Avoid Hazards:** Characters can determine ways to overcome the natural hazards of the wilderness, such as finding insect-repelling herbs in a swamp or making snowshoes to cross tundra. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Heal, Nature, appropriate skill from the crafting skill group (such as Alchemy to make bug repellent).
+- **Carry Baggage:** By carrying supplies for weaker party members, characters can increase the whole party's speed. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lift.
+- **Find the Path:** Avoiding getting lost is a major challenge for the characters. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition, Reason. *Suggested Skills:* Alertness, Nature, Navigate.
+- **Keep Up Spirits:** Characters can keep up the party's morale during a forced march with cheer and song. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Presence. *Suggested Skills:* Lead, Music, Perform.
+- **Keep Watch:** Characters must be on constant guard against danger. *Suggested [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):* Intuition. *Suggested Skills:* Alertness, Eavesdrop, Track.
+- **Push On:** Characters must be ready to pick up the pace and push past their fatigue. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Might. *Suggested Skills:* Endurance, Lead; Drive, Handle Animals, or Ride if the party has mounts or vehicles.
+- **Scout Ahead:** Investigating the path ahead lets the characters avoid dead-ends and arduous terrain. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* Agility, Intuition. *Suggested Skills:* Alertness, Navigate, Sneak.
 
 ###### Optional Twist
 
