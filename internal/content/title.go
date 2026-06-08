@@ -23,6 +23,10 @@ func (p *TitleParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract echelon from annotation or body
 	if ann := section.Annotation; ann != nil {
 		if v, ok := ann["echelon"]; ok {

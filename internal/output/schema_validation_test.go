@@ -33,6 +33,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 	},
 	"perk": {
 		"name": true, "type": true, "prerequisites": true, "perk_group": true,
+		"flavor": true,
 		"content": true, "metadata": true,
 	},
 	"career": {
@@ -50,7 +51,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 	},
 	"culture": {
 		"name": true, "type": true, "environment": true,
-		"organization": true, "upbringing": true,
+		"organization": true, "upbringing": true, "flavor": true,
 		"culture_benefit_type": true, "skill_options": true, "quick_build_skill": true,
 		"language": true,
 		"content": true, "metadata": true,
@@ -62,7 +63,7 @@ var schemaAllowedFields = map[string]map[string]bool{
 	},
 	"treasure": {
 		"name": true, "type": true, "treasure_type": true,
-		"level": true, "rarity": true,
+		"level": true, "echelon": true, "rarity": true,
 		"flavor": true, "keywords": true, "item_prerequisite": true,
 		"project_source": true, "project_roll_characteristic": true,
 		"project_goal": true, "effect": true, "level_effects": true,
@@ -155,7 +156,7 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 		},
 		{
 			"perk with prerequisites and perk_group",
-			map[string]any{"name": "Coward", "type": "perk", "prerequisites": "None", "perk_group": "Exploration"},
+			map[string]any{"name": "Coward", "type": "perk", "prerequisites": "None", "perk_group": "Exploration", "flavor": "You always keep one eye on the door"},
 			"You know when to run.",
 		},
 		{
@@ -179,6 +180,7 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 				"name": "Nomadic", "type": "culture",
 				"environment": "Wilderness", "organization": "Communal",
 				"upbringing": "Martial", "skill_options": []string{"Nature"}, "language": "Caelian",
+				"flavor": "A wandering people of the high steppes",
 			},
 			"Culture body.",
 		},
@@ -195,9 +197,10 @@ func TestSchema_NoUnevaluatedProperties(t *testing.T) {
 			"treasure with all fields",
 			map[string]any{
 				"name": "Bag of Holding", "type": "treasure",
-				"treasure_type": "Leveled", "level": "3", "rarity": "Rare",
+				"treasure_type": "Leveled", "level": "3", "echelon": "3", "rarity": "Rare",
 				"keywords": []string{"Magic", "Container"},
-				"effect":   "This bag can hold 500 pounds.",
+				"project_goal": "45", "project_roll_characteristic": "Reason",
+				"effect": "This bag can hold 500 pounds.",
 			},
 			"Treasure body.",
 		},

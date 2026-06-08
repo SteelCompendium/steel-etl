@@ -110,6 +110,17 @@ Both patterns: the child ability is parsed by `AbilityParser`, stored in `Parsed
 
 Blockquote headings (`> ######`) get context-aware tree levels (previous regular heading + 1, capped at 6) so they nest as proper children of their parent sections.
 
+## Card ⇄ data field parity
+
+Index/preview cards (`internal/site/cards.go`, `feature_index.go`, …) are
+site-only and may read the page **body**, but the body is **not** a data
+contract — only frontmatter flows into JSON/YAML + the schemas. When you upgrade
+a parser to surface a new field on a card, promote it into the data formats too:
+emit `fm["<field>"]` in the parser (share extractors like `firstFlavorParagraph`
+in `internal/content/flavor.go`), declare it in BOTH schema copies, update the
+`schema_validation_test.go` allowlist, and have the card read the field (with a
+body fallback, e.g. `cardFlavor`). Full checklist: `docs/card-data-parity.md`.
+
 ## Monsters book (statblocks)
 
 The Monsters book uses **H7 for statblocks and H9 for malice/terrain blocks** — heading levels goldmark doesn't parse (CommonMark caps at H6). `collectDeepHeadings` (`internal/parser/document.go`) captures these at level 6; **H8 is intentionally not collected** so retainer advancement sub-blocks fold into their parent statblock's body. Parsers: `monster` (group lore page + `category` context), `statblock`, `featureblock` (malice), `dynamic-terrain`, and the non-code `monster-group` container (`internal/content/monster.go`).

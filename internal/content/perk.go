@@ -25,6 +25,10 @@ func (p *PerkParser) Parse(ctx *context.ContextStack, section *parser.Section) (
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract prerequisites from body
 	if prereq := extractField(body, "Prerequisite"); prereq != "" {
 		fm["prerequisites"] = prereq

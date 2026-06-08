@@ -32,6 +32,10 @@ func (p *KitParser) Parse(ctx *context.ContextStack, section *parser.Section) (*
 	// Extract equipment text — look for the paragraph after "##### Equipment" heading
 	extractKitEquipmentText(body, fm)
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract kit type from annotation
 	if ann := section.Annotation; ann != nil {
 		if v, ok := ann["kit-type"]; ok {

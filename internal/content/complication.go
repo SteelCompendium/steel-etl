@@ -23,6 +23,10 @@ func (p *ComplicationParser) Parse(ctx *context.ContextStack, section *parser.Se
 
 	body := section.FullBodySource()
 
+	if f := firstFlavorParagraph(body); f != "" {
+		fm["flavor"] = f
+	}
+
 	// Extract structured fields
 	if v := extractField(body, "Benefit"); v != "" {
 		fm["benefit"] = v

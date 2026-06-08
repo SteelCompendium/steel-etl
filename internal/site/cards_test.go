@@ -318,3 +318,19 @@ func TestBuildCardsContent_TreasureIntermediateFallsBack(t *testing.T) {
 		t.Errorf("buildCardsContent ok=true for intermediate dir, want false")
 	}
 }
+
+func TestCardFlavor_PrefersFrontmatter(t *testing.T) {
+	fm := "flavor: From the frontmatter field\n"
+	body := "From the body prose paragraph.\n"
+	if got := cardFlavor(fm, body); got != "From the frontmatter field" {
+		t.Errorf("cardFlavor = %q, want frontmatter value", got)
+	}
+}
+
+func TestCardFlavor_FallsBackToBody(t *testing.T) {
+	fm := "name: Thing\n"
+	body := "From the body prose paragraph.\n"
+	if got := cardFlavor(fm, body); got != "From the body prose paragraph." {
+		t.Errorf("cardFlavor = %q, want body fallback", got)
+	}
+}
