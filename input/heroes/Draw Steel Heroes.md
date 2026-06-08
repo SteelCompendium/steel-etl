@@ -31,7 +31,7 @@ Our game is heroic fantasy. That's its genre. Extraordinary people fighting drag
 
 But "heroic fantasy" is still a little too broad for our purposes, so we added two other keywords to explain how our game might be different from other games in this genre: tactical and cinematic.
 
-These terms are just guidelines. A vibe. But we find them useful when trying to choose between different features. "Both of these ideas are cool, but which is the most cinematic? The most heroic?"
+These terms are just [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines. A vibe. But we find them useful when trying to choose between different features. "Both of these ideas are cool, but which is the most cinematic? The most heroic?"
 
 So let's talk about what we mean when we use these terms.
 
@@ -81,13 +81,13 @@ You should imagine your [tactician](scc:mcdm.heroes.v1/class/tactician) characte
 
 Just... you know... it's got dragons and stuff.
 
-It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing Capital, the City of the Great Game, the Greatest City in This or Any Age. [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is mostly [humans](scc:mcdm.heroes.v1/ancestry/human) and elves and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), but Capital has dozens, *hundreds* of different ancestries in it.
+It's worth mentioning—while everyone basically already knows what fantasy means in this context, we do imagine it a little more broadly than your average classical medieval fantasy. We like that stuff! [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is our medieval European fantasy analog with knights on horseback and wizards in towers. But we also like high fantasy urban intrigue, and so we're developing [Capital](scc:mcdm.heroes.v1/rule.world/capital), the City of the Great Game, the Greatest City in This or Any Age. [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is mostly [humans](scc:mcdm.heroes.v1/ancestry/human) and elves and [orcs](scc:mcdm.heroes.v1/ancestry/orc) and [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), but [Capital](scc:mcdm.heroes.v1/rule.world/capital) has dozens, *hundreds* of different ancestries in it.
 
 Looking back at movies like *Star Wars* and the work of artists like Chris Foss, that '70s stuff now seems explicitly fantastical. There's nothing scientific or even plausible about a lightsaber or a John Berkey spaceship. But damn, they look cool!
 
-So our setting includes the timescape—our multiverse, of which the world of [Orden](scc:mcdm.heroes.v1/rule.world/orden) containing Capital and [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is only one part. The timescape is more explicitly "space fantasy."
+So our setting includes the timescape—our multiverse, of which the world of [Orden](scc:mcdm.heroes.v1/rule.world/orden) containing [Capital](scc:mcdm.heroes.v1/rule.world/capital) and [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) is only one part. The timescape is more explicitly "space fantasy."
 
-These core rules mostly cover the classic fantasy stuff. But we think Capital and the timescape will help us deliver a game where more people can see their fantasy in our worlds.
+These core rules mostly cover the classic fantasy stuff. But we think [Capital](scc:mcdm.heroes.v1/rule.world/capital) and the timescape will help us deliver a game where more people can see their fantasy in our worlds.
 
 For us, fantasy includes magic, like wizards casting spells, and psionics, the natural and focused ability some creatures have to manipulate and warp reality with their minds. You know, telekinesis and telepathy! Jean Grey style!
 
@@ -211,7 +211,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity):** A trait that allows a target to reduce damage they take of a specific damage type. Damage immunity is expressed as "[damage type] immunity X," or "damage immunity X" to represent immunity to all damage. Damage of the specified type dealt to the target is reduced by X.
 
-**[Damage Type](scc:mcdm.heroes.v1/rule.damage/damage-type):** A classification often given to elemental and supernatural damage sources. Acid, cold, corruption, fire, holy, lightning, poison, psychic, and sonic are damage types in *Draw Steel*.
+**[Damage Type](scc:mcdm.heroes.v1/rule.damage/damage-type):** A classification often given to elemental and [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) damage sources. Acid, cold, corruption, fire, holy, lightning, poison, psychic, and sonic are damage types in *Draw Steel*.
 
 **[Damage Weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness):** A trait that makes a target increase damage they take of a specific damage type. Damage weakness is expressed as "[damage type] weakness X," or "damage weakness X" to represent weakness to all damage. Damage of the specified type dealt to the target is increased by X.
 
@@ -259,7 +259,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Enemy](scc:mcdm.heroes.v1/rule.combat/enemy):** A creature who is hostile to another creature.
 
-**[Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement):** A property given to an armor, implement, or weapon treasure that a hero creates as part of a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project).
+**[Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement):** A property given to an armor, [implement](scc:mcdm.heroes.v1/rule.treasure/implement), or weapon treasure that a hero creates as part of a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project).
 
 **[Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) Maneuver:** A maneuver that allows a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature to make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) to escape.
 
@@ -327,7 +327,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Humanoid](scc:mcdm.heroes.v1/chapter/ancestries):** Creatures who are of similar [size](scc:mcdm.heroes.v1/rule.character/size) to, have similar limb arrangements as, and have sapience on par with [humans](scc:mcdm.heroes.v1/ancestry/human).
 
-**[Implement](scc:mcdm.heroes.v1/rule.treasure/implement):** A piece of jewelry, a staff, an orb, a wand, or some other object used by a creature to channel supernatural power.
+**[Implement](scc:mcdm.heroes.v1/rule.treasure/implement):** A piece of jewelry, a staff, an orb, a wand, or some other object used by a creature to channel [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power.
 
 **[Insight](scc:mcdm.heroes.v1/feature.shadow.level-1/insight):** The [shadow's](scc:mcdm.heroes.v1/class/shadow) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
@@ -359,7 +359,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Manifold](scc:mcdm.heroes.v1/rule.world/orden):** A world or plane of existence.
 
-**[Melee](scc:mcdm.heroes.v1/rule.combat/melee):** Melee abilities require a creature to make contact with a target using the creature's body, a weapon, or an implement.
+**[Melee](scc:mcdm.heroes.v1/rule.combat/melee):** Melee abilities require a creature to make contact with a target using the creature's body, a weapon, or an [implement](scc:mcdm.heroes.v1/rule.treasure/implement).
 
 **[Melee](scc:mcdm.heroes.v1/rule.combat/melee) [Free Strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** A [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) made using a [melee](scc:mcdm.heroes.v1/rule.combat/melee) ability.
 
@@ -377,7 +377,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Movement](scc:mcdm.heroes.v1/movement/walk):** The act of moving on an encounter map, measured in squares.
 
-**[Mundane](scc:mcdm.heroes.v1/rule.general/supernatural):** Used to describe an ability, creature, object, or effect that isn't magic or psionic. The opposite of supernatural.
+**[Mundane](scc:mcdm.heroes.v1/rule.general/supernatural):** Used to describe an ability, creature, object, or effect that isn't magic or psionic. The opposite of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural).
 
 **[Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20):** When the result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is 19 or 20 before adding any modifiers. A [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) always achieves a tier 3 outcome on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). On an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) with an ability that uses a main action, it is also a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
 
@@ -389,7 +389,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[NPC](scc:mcdm.heroes.v1/rule.general/npc):** A nonplayer character, usually created and run by the Director.
 
-**[Null](scc:mcdm.heroes.v1/class/null):** A class for a hero who is an unarmed psionic warrior with the ability to dampen supernatural effects.
+**[Null](scc:mcdm.heroes.v1/class/null):** A class for a hero who is an unarmed psionic warrior with the ability to dampen [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effects.
 
 **[Object](scc:mcdm.heroes.v1/rule.general/creature):** Inanimate matter, including walls, rocks, vehicles, and corpses (the kind that can't move around and bite you), as well as living non-creatures such as plants.
 
@@ -551,7 +551,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Timescape](scc:mcdm.heroes.v1/rule.world/orden):** A multiverse of worlds, also known as manifolds, connected by the Sea of Stars.
 
-**[Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A piece of supernatural equipment, from weapons and armor to implements and more.
+**[Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A piece of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) equipment, from weapons and armor to [implements](scc:mcdm.heroes.v1/rule.treasure/implement) and more.
 
 **[Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any [turn](scc:mcdm.heroes.v1/rule.combat/turn), including their own, but only when a specific trigger occurs. Each creature can use one triggered action per round.
 
@@ -886,7 +886,7 @@ Your hero's class description has more information about how to use your Heroic 
 
 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) represent the number of times your hero can take a breather and keep fighting. Spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) lets you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)—the measure of any creature's physical vitality and capacity to shrug off or avoid [damage](scc:mcdm.heroes.v1/rule.damage/damage) (see [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in [Combat](scc:mcdm.heroes.v1/chapter/combat)). Running out of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) means your hero has reached their uttermost limit.
 
-When you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your **[recovery value](scc:mcdm.heroes.v1/rule.health/recoveries)**, which is one-third your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum. You can spend your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) with a special maneuver (see below), or you might do so with a little supernatural help from a [conduit](scc:mcdm.heroes.v1/class/conduit), a boost of adrenaline from an allied [tactician](scc:mcdm.heroes.v1/class/tactician), or inspiration from your party's [troubadour](scc:mcdm.heroes.v1/class/troubadour).
+When you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to your **[recovery value](scc:mcdm.heroes.v1/rule.health/recoveries)**, which is one-third your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum. You can spend your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) with a special maneuver (see below), or you might do so with a little [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) help from a [conduit](scc:mcdm.heroes.v1/class/conduit), a boost of adrenaline from an allied [tactician](scc:mcdm.heroes.v1/class/tactician), or inspiration from your party's [troubadour](scc:mcdm.heroes.v1/class/troubadour).
 
 ##### Spending Recoveries
 
@@ -922,13 +922,13 @@ The 1st [echelon](scc:mcdm.heroes.v1/rule.general/echelon) of play details the s
 
 #### 2nd Echelon (4th to 6th Level)
 
-The 2nd [echelon](scc:mcdm.heroes.v1/rule.general/echelon) of play covers 4th to 6th level. At this [echelon](scc:mcdm.heroes.v1/rule.general/echelon), the heroes are now known throughout the wider region they serve. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), this means the characters might save and be celebrated by an entire country. In Capital, their reputation and work could encompass several different neighborhoods of the enormous city. Heroes of the timescape might be known for saving a planet!
+The 2nd [echelon](scc:mcdm.heroes.v1/rule.general/echelon) of play covers 4th to 6th level. At this [echelon](scc:mcdm.heroes.v1/rule.general/echelon), the heroes are now known throughout the wider region they serve. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), this means the characters might save and be celebrated by an entire country. In [Capital](scc:mcdm.heroes.v1/rule.world/capital), their reputation and work could encompass several different neighborhoods of the enormous city. Heroes of the timescape might be known for saving a planet!
 
-Heroes in this [echelon](scc:mcdm.heroes.v1/rule.general/echelon) battle humanoids of great supernatural power, such as draconians, [devils](scc:mcdm.heroes.v1/ancestry/devil), and hobgoblins. They face bosses possessed of cunning and ambition as great as their terrible influence, such as medusas and overminds. Heroes at this level also face the humanoid threats of earlier levels, but those foes are villainous counterparts of equal power rather than bands of ruffians or marauding armies.
+Heroes in this [echelon](scc:mcdm.heroes.v1/rule.general/echelon) battle humanoids of great [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power, such as draconians, [devils](scc:mcdm.heroes.v1/ancestry/devil), and hobgoblins. They face bosses possessed of cunning and ambition as great as their terrible influence, such as medusas and overminds. Heroes at this level also face the humanoid threats of earlier levels, but those foes are villainous counterparts of equal power rather than bands of ruffians or marauding armies.
 
 #### 3rd Echelon (7th to 9th Level)
 
-The 3rd [echelon](scc:mcdm.heroes.v1/rule.general/echelon) of play covers 7th to 9th level. At this [echelon](scc:mcdm.heroes.v1/rule.general/echelon), the heroes are saving and are known throughout the setting where they serve. Most folks in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), Capital, or across the larger timescape know of the heroes and are grateful for their efforts saving the continent, the entire city, or multiple worlds, respectively. Foes at this [echelon](scc:mcdm.heroes.v1/rule.general/echelon) include beings of great power such as giants, vampires, and valok.
+The 3rd [echelon](scc:mcdm.heroes.v1/rule.general/echelon) of play covers 7th to 9th level. At this [echelon](scc:mcdm.heroes.v1/rule.general/echelon), the heroes are saving and are known throughout the setting where they serve. Most folks in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), [Capital](scc:mcdm.heroes.v1/rule.world/capital), or across the larger timescape know of the heroes and are grateful for their efforts saving the continent, the entire city, or multiple worlds, respectively. Foes at this [echelon](scc:mcdm.heroes.v1/rule.general/echelon) include beings of great power such as giants, vampires, and valok.
 
 #### 4th Echelon (10th Level)
 
@@ -1053,7 +1053,7 @@ At the center of the Abyssal Waste lies the Necropolitan Ruin, the Last City, a 
 
 [Orden](scc:mcdm.heroes.v1/rule.world/orden) is not explicitly a high fantasy world, even though there are some pretty high fantasy things going on in it, because the average person has *very little* access to magic. The typical village might have a priest who knows some real prayers that close wounds or cure minor ailments, or an alchemist or hedge wizard who can brew some potions or conjure minor spells, but that's the extent of it. The result is, though [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a pre-industrial world with technology and societies akin to 13th-century Europe, the quality of life of the people who live there is a lot closer to ours. They live about as long as we do, die from disease about as often as we do, and generally have diets similar to ours, though with vastly more basic and constricted options on their menus.
 
-In Capital, for instance, people use flying tapestries to get around the city quickly, but these are a luxury available only to the rich. The vast majority of Capital's citizens live a life basically the same as your average Londoner in Shakespeare's time. Less plague and fire, though.
+In [Capital](scc:mcdm.heroes.v1/rule.world/capital), for instance, people use flying tapestries to get around the city quickly, but these are a luxury available only to the rich. The vast majority of [Capital](scc:mcdm.heroes.v1/rule.world/capital)'s citizens live a life basically the same as your average Londoner in Shakespeare's time. Less plague and fire, though.
 
 It's not clear to us, looking in, but it doesn't seem as though [Orden](scc:mcdm.heroes.v1/rule.world/orden) operates according to the real-world laws of physics, chemistry, and biology. People in the middle ages here on Earth didn't know about quarks or DNA, but they still knew everything was made of "stuff" and everyone expected a child to more or less resemble their parents. Essentially, [Orden](scc:mcdm.heroes.v1/rule.world/orden) works the way people living in any culture's medieval era believed the real world actually worked. Because of the presence of magic, prayer, and psionics in the world, it's unlikely anything like science or an industrial age will *ever* come to [Orden](scc:mcdm.heroes.v1/rule.world/orden).
 
@@ -1099,7 +1099,7 @@ The Director should make an agenda for a campaign's first session often called "
 
 ### Step-by-Step Hero Making
 
-Use the following step-by-step guide to create a hero. These steps are presented in what we believe is the best way to approach making your first hero for *Draw Steel*. That said, the order of the steps is still a suggestion, not a hard and fast rule.
+Use the following step-by-step [guide](scc:mcdm.heroes.v1/rule.downtime/guide) to create a hero. These steps are presented in what we believe is the best way to approach making your first hero for *Draw Steel*. That said, the order of the steps is still a suggestion, not a hard and fast rule.
 
 Many players like to build a hero from the backstory up, making ancestry and culture ideal first choices. However, some players like to start more in the present, choosing a career and a class—the choices with the most potential impact on what your character can do in the game—and then going back and figuring out where their hero came from. There's no wrong way to do it! (The sections below tell you where to look to learn about ancestries, classes, and other options.)
 
@@ -1296,23 +1296,23 @@ In *Draw Steel*, ancestry describes how you were born. Culture (part of Chapter 
 
 This chapter details twelve ancestries for the game:
 
-**[Devil](scc:mcdm.heroes.v1/ancestry/devil):** [Devils](scc:mcdm.heroes.v1/ancestry/devil) originated in the Seven Cities of Hell and have a supernatural charisma that helps them persuade others. They are similar in stature to [humans](scc:mcdm.heroes.v1/ancestry/human), and their skin tones include deep blues, purples, and reds. They sport horns, eyes of all shades (including gold and red), and tails, and some have feathered or leathery wings.
+**[Devil](scc:mcdm.heroes.v1/ancestry/devil):** [Devils](scc:mcdm.heroes.v1/ancestry/devil) originated in the Seven Cities of Hell and have a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) charisma that helps them persuade others. They are similar in stature to [humans](scc:mcdm.heroes.v1/ancestry/human), and their skin tones include deep blues, purples, and reds. They sport horns, eyes of all shades (including gold and red), and tails, and some have feathered or leathery wings.
 
 **[Dragon Knight](scc:mcdm.heroes.v1/ancestry/dragon-knight):** [Dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) are muscled draconic humanoids who stand between 6 and 7 feet tall. The scales covering their reptilian heads, bodies, and tails can be almost any color. All [dragon knights](scc:mcdm.heroes.v1/ancestry/dragon-knight) have wings, but on only a few are those wings big enough to let them [fly](scc:mcdm.heroes.v1/movement/fly).
 
-**[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** Humanoids with stony skin, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have short and stout bodies. Many carve supernatural runes into their flesh, and some have beards made of crystals.
+**[Dwarf](scc:mcdm.heroes.v1/ancestry/dwarf):** Humanoids with stony skin, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) have short and stout bodies. Many carve [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) runes into their flesh, and some have beards made of crystals.
 
-**[Wode Elf](scc:mcdm.heroes.v1/ancestry/wode-elf):** Lithe humanoids with finely furred skin in all shades of blue, [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) have angular features and large, pointed ears akin to a bat's. They possess a supernatural glamor that allows them to blend in with their surroundings when they wish to hide.
+**[Wode Elf](scc:mcdm.heroes.v1/ancestry/wode-elf):** Lithe humanoids with finely furred skin in all shades of blue, [wode elves](scc:mcdm.heroes.v1/ancestry/wode-elf) have angular features and large, pointed ears akin to a bat's. They possess a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) glamor that allows them to blend in with their surroundings when they wish to hide.
 
-**[High Elf](scc:mcdm.heroes.v1/ancestry/high-elf):** Stately and graceful, [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) have tall, willowy bodies, pointed ears, and smoother skin than most other humanoids. Rare metal inlays such as gold, platinum, palladium, and iridium act as organic components within their skin. The truest form of any [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) is hidden from most—sometimes even from themself—thanks to a supernatural glamor that makes them more attractive to others, whatever that might mean to an individual. This glamor transcends physical appearance, also slightly altering a [high elf's](scc:mcdm.heroes.v1/ancestry/high-elf) tone and smell.
+**[High Elf](scc:mcdm.heroes.v1/ancestry/high-elf):** Stately and graceful, [high elves](scc:mcdm.heroes.v1/ancestry/high-elf) have tall, willowy bodies, pointed ears, and smoother skin than most other humanoids. Rare metal inlays such as gold, platinum, palladium, and iridium act as organic components within their skin. The truest form of any [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) is hidden from most—sometimes even from themself—thanks to a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) glamor that makes them more attractive to others, whatever that might mean to an individual. This glamor transcends physical appearance, also slightly altering a [high elf's](scc:mcdm.heroes.v1/ancestry/high-elf) tone and smell.
 
 **[Hakaan](scc:mcdm.heroes.v1/ancestry/hakaan):** Descended from stone giants, the mighty [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) stand over 9 feet tall and have well-muscled bodies made of organic stone. They are the largest ancestry in this book!
 
-**[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) and many other fantasy worlds! In *Draw Steel*, [humans](scc:mcdm.heroes.v1/ancestry/human) have all the diversity that our species displays in real life—and they can sense the presence of supernatural energy!
+**[Human](scc:mcdm.heroes.v1/ancestry/human):** [Humans](scc:mcdm.heroes.v1/ancestry/human) are the most numerous people in [Orden](scc:mcdm.heroes.v1/rule.world/orden) and many other fantasy worlds! In *Draw Steel*, [humans](scc:mcdm.heroes.v1/ancestry/human) have all the diversity that our species displays in real life—and they can sense the presence of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) energy!
 
 **[Memonek](scc:mcdm.heroes.v1/ancestry/memonek):** Originating on Axiom, the Plane of Uttermost Law, [memonek](scc:mcdm.heroes.v1/ancestry/memonek) are a machine people made of metal, marble, glass, and other inorganic materials. Their bodies are lightweight, making them easier to move and letting them fall at slower [speeds](scc:mcdm.heroes.v1/rule.character/speed).
 
-**[Orc](scc:mcdm.heroes.v1/ancestry/orc):** [Orcs](scc:mcdm.heroes.v1/ancestry/orc) have skin in green tones and stand slightly taller and wider than [humans](scc:mcdm.heroes.v1/ancestry/human). A supernatural energy they call "the blood fire" flows through their veins, igniting colorful lines in an [orc's](scc:mcdm.heroes.v1/ancestry/orc) skin during life-or-death battles.
+**[Orc](scc:mcdm.heroes.v1/ancestry/orc):** [Orcs](scc:mcdm.heroes.v1/ancestry/orc) have skin in green tones and stand slightly taller and wider than [humans](scc:mcdm.heroes.v1/ancestry/human). A [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) energy they call "the blood fire" flows through their veins, igniting colorful lines in an [orc's](scc:mcdm.heroes.v1/ancestry/orc) skin during life-or-death battles.
 
 **[Polder](scc:mcdm.heroes.v1/ancestry/polder):** The smallest of the ancestries in this book, [polders](scc:mcdm.heroes.v1/ancestry/polder) stand no taller than 3-1/2 feet. They look like smaller [humans](scc:mcdm.heroes.v1/ancestry/human), and they have the ability to blend in with the shadows.
 
@@ -1382,7 +1382,7 @@ If that's not enough, folks use another identifier known as a byname. If there w
 
 If you leave your village regularly, say to trade with others in a distant market, then your byname might be the place you're from. Alan from the village in the dale, might become known as Alan from the Dale, or even Alan-a-Dale. But everyone back home just calls you Alan.
 
-A byname might refer to your profession. Clyde the Cartwright is a perfectly normal byname. But no one you met would assume "Cartwright" was your 'family name.' People who live permanently in a very large city like Capital use family names, because almost no first name is sufficiently unique to identify you, and "Marissa the Cartwright's Daughter" quickly evolves into Marissa Cartwright.
+A byname might refer to your profession. Clyde the Cartwright is a perfectly normal byname. But no one you met would assume "Cartwright" was your 'family name.' People who live permanently in a very large city like [Capital](scc:mcdm.heroes.v1/rule.world/capital) use family names, because almost no first name is sufficiently unique to identify you, and "Marissa the Cartwright's Daughter" quickly evolves into Marissa Cartwright.
 
 Most nobles in [Orden](scc:mcdm.heroes.v1/rule.world/orden) also use the name of the area they rule as part of their name. When someone refers to Lord Edmund Bedegar everyone listening silently, without thinking about it, adds "of" between the name and the place. Edmund is both Edmund, and the Lord of Bedegar, and Edmund, Lord of Bedegar, and therefore sometimes Lord Edmund Bedegar. Even though "Bedegar" looks like a "last name" to us, and is being used in that manner sometimes, it's not exactly his last name. It's still just another kind of byname.
 
@@ -1640,7 +1640,7 @@ He waggled his eyebrows. "Style counts for something."
 
 "But wait, that was..." She did some quick mental math. "Fifteen years ago?"
 
-"Well, I was an accountant here in Capital for several years in between." "An accountant!"
+"Well, I was an accountant here in [Capital](scc:mcdm.heroes.v1/rule.world/capital) for several years in between." "An accountant!"
 
 Riyalkin shrugged. "It's what I did before. I'm moderately good at it." "And how does one go from being an alien accountant to a famous [troubadour](scc:mcdm.heroes.v1/class/troubadour)?"
 
@@ -2095,7 +2095,7 @@ Llyander turned and marched off. "Come!" they called. The children ran to catch 
 
 "Where are we going?" Wenna asked.
 
-"I enjoy the favor of Lord Tear," Llyander said. "We are old friends. With me as your guide, he will treat you well—likely bestow favor upon you! You should be in anticipation of great treasure." They smiled.
+"I enjoy the favor of Lord Tear," Llyander said. "We are old friends. With me as your [guide](scc:mcdm.heroes.v1/rule.downtime/guide), he will treat you well—likely bestow favor upon you! You should be in anticipation of great treasure." They smiled.
 
 The elf stopped suddenly and spun toward them, serious but kindly. They pointed to each of the children in [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
@@ -2372,11 +2372,11 @@ The giant nodded solemnly. "You are lorewise. My trust in you was well-placed. I
 
 "Many do!" Ardashir said. "I do not. I left the hills of my people long ago to pursue a different path. A path of order and discipline. It is my birthright perhaps."
 
-"He's a [null](scc:mcdm.heroes.v1/class/null)," Embers explained. "They eschew all weapons and implements of war. It is part of their creed, as I understand it."
+"He's a [null](scc:mcdm.heroes.v1/class/null)," Embers explained. "They eschew all weapons and [implements](scc:mcdm.heroes.v1/rule.treasure/implement) of war. It is part of their creed, as I understand it."
 
 "Strength alone might serve," Dazar nodded, "when the strength is such as yours."
 
-Ardashir grinned. "Strength alone is not enough." He assumed a fighting pose, hands clenched, arms in a guarding position before him. "Discipline, training, focus. These are my implements."
+Ardashir grinned. "Strength alone is not enough." He assumed a fighting pose, hands clenched, arms in a guarding position before him. "Discipline, training, focus. These are my [implements](scc:mcdm.heroes.v1/rule.treasure/implement)."
 
 "Well you can't ever be disarmed," John said. "That could be useful." Ardashir's smile was brilliant. "I suffice," he said.
 
@@ -2426,7 +2426,7 @@ Your body is made to withstand the blows of your enemies. Your [Might](scc:mcdm.
 <!-- @type: ancestry | @id: human -->
 ## Human
 
-[Humans](scc:mcdm.heroes.v1/ancestry/human) belong to the world in a way the other speaking peoples do not. You can sense the presence of the supernatural—that... oily smell in the air, as I've heard it described. And the presence of deathless causes the hairs on the back of your neck to stand up. Or why do you think graveyards affect you so? Whatever magic is, its grip on you is light. Whatever drives the deathless, your nature rebels against it.
+[Humans](scc:mcdm.heroes.v1/ancestry/human) belong to the world in a way the other speaking peoples do not. You can sense the presence of the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)—that... oily smell in the air, as I've heard it described. And the presence of deathless causes the hairs on the back of your neck to stand up. Or why do you think graveyards affect you so? Whatever magic is, its grip on you is light. Whatever drives the deathless, your nature rebels against it.
 
 "No one knows why this should be. We elves have no such senses. Nor do the elementals or the kanin... the [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf) and the [orcs](scc:mcdm.heroes.v1/ancestry/orc) as you say. What is it that sets [humans](scc:mcdm.heroes.v1/ancestry/human) apart? I am an historian, not a physician. I cannot say. Perhaps some of you will one day find out and teach us all the reason."
 
@@ -2474,7 +2474,7 @@ Some of your names, I will see written in future textbooks. But some of your nam
 <!-- @type: feature | @id: detect-the-supernatural -->
 #### Signature Trait: Detect the Supernatural
 
-As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
+As a maneuver, you can open your awareness to detect [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) creatures and phenomena. Until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), you know the location of any [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) object, or any undead, construct, or creature from another world within 5 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
 
 #### Purchased Human Traits
 
@@ -2483,7 +2483,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Per
 <!-- @type: feature -->
 ##### Can't Take Hold (1 Point)
 
-Your connection to the natural world allows you to resist certain supernatural effects. You ignore temporary [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by magic and psionic abilities. Additionally, when you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by a magic or psionic ability, you can reduce the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) by 1.
+Your connection to the natural world allows you to resist certain [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effects. You ignore temporary [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by magic and psionic abilities. Additionally, when you are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by a magic or psionic ability, you can reduce the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) by 1.
 
 <!-- @type: feature -->
 ##### Determination (2 Points)
@@ -2999,7 +2999,7 @@ The dead walk among us. Some of them are happier about it than others.
 
 Unlike the necromantic rituals that produce wights and wraiths and zombies, [revenants](scc:mcdm.heroes.v1/ancestry/revenant) rise from the grave through a combination of an unjust death and a burning desire for vengeance. Creatures sustained on pure will, they have no need of food or water or air—and, unlike their zombified cousins, they retain all their memories and personality from life.
 
-These [revenants](scc:mcdm.heroes.v1/ancestry/revenant) are rare. Many are hunted by ignorant villagers who see only their dead flesh and assume the worst. Those who survive the pitchfork brigade either choose a solitary life, often as a wandering soul seeking out living company yet constantly in fear of it, or they migrate to a metropolis such as Blackbottom or Capital, where lost souls gather to make a home.
+These [revenants](scc:mcdm.heroes.v1/ancestry/revenant) are rare. Many are hunted by ignorant villagers who see only their dead flesh and assume the worst. Those who survive the pitchfork brigade either choose a solitary life, often as a wandering soul seeking out living company yet constantly in fear of it, or they migrate to a metropolis such as Blackbottom or [Capital](scc:mcdm.heroes.v1/rule.world/capital), where lost souls gather to make a home.
 
 ### On Revenants
 
@@ -3011,7 +3011,7 @@ These [revenants](scc:mcdm.heroes.v1/ancestry/revenant) are rare. Many are hunte
 
 "Hey," the head thief said, his brow furrowed as he looked at the label on the vial. "Where'd you say you bought this stuff ? You said a ship—a ship from where?"
 
-"I dunno, uh... uh, Capital I think."
+"I dunno, uh... uh, [Capital](scc:mcdm.heroes.v1/rule.world/capital) I think."
 
 The head thief looked at the panicking cutpurse. "This lady knight she have a red and blue device on her shield?"
 
@@ -3021,7 +3021,7 @@ from the outside, looked like an unremarkable section of wall.
 
 "Oh, you've got to be kidding me."
 
-"Nonono! How could she... Capital was *nine months ago!*"
+"Nonono! How could she... [Capital](scc:mcdm.heroes.v1/rule.world/capital) was *nine months ago!*"
 
 "She's a [revenant](scc:mcdm.heroes.v1/ancestry/revenant), idiot! She doesn't even need air. She could have walked here! Just... into the water and across the bottom of the sea! Why didn't you say anything?"
 
@@ -3043,15 +3043,15 @@ The gray-skinned knight walked into the room. Metal heels rang out on the wooden
 
 "How did you... this is impossible, how did you *find* us?" She looked at the man groaning on the floor. "Your boss didn't tell you about the vengeance mark?"
 
-"You marked us. Back in Capital. You marked one of us and just... just *walked* here."
+"You marked us. Back in [Capital](scc:mcdm.heroes.v1/rule.world/capital). You marked one of us and just... just *walked* here."
 
-"Don't be stupid. I marked you in Blackbottom. Capital was just normal detective work. I came here by *ship*." She smiled—black lips on pale gray skin.
+"Don't be stupid. I marked you in Blackbottom. [Capital](scc:mcdm.heroes.v1/rule.world/capital) was just normal detective work. I came here by *ship*." She smiled—black lips on pale gray skin.
 
 "Come on." The braver of the three remaining thieves drew twin daggers. "She can't get all of us at-"
 
 Lady Filliamo made a broad gesture with her right hand and argent marks flared across the foreheads of all three thieves. A clatter of weapons hitting the floor. Three pairs of hands slowly rose in the air. "Good boys. Here, put these on." She tossed three pairs of manacles on the floor.
 
-"Hang on, you can't arrest us," one of the thieves, unarmed and still holding his hands up, said. "This isn't Capital. You don't have jurisdiction!"
+"Hang on, you can't arrest us," one of the thieves, unarmed and still holding his hands up, said. "This isn't [Capital](scc:mcdm.heroes.v1/rule.world/capital). You don't have jurisdiction!"
 
 Lady Filliamo shrugged. "I'm a knight of the church. Jurisdiction's for the city watch." She drew her silver sword a few inches from the scabbard just to show them the blade.
 
@@ -3096,7 +3096,7 @@ You select a purchased trait that costs 2 ancestry points from your previous anc
 <!-- @type: feature -->
 ##### Undead Influence (1 Point)
 
-Your supernatural gifts allow you to influence other undead. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with undead creatures.
+Your [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) gifts allow you to influence other undead. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), and [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with undead creatures.
 
 <!-- @type: feature -->
 ##### Vengeance Mark (2 Points)
@@ -3315,7 +3315,7 @@ No. A hero's life experience and background make them what they are. That backgr
 
 A hero's culture describes the beliefs, customs, values, and way of life held by the community in which they were raised. This community provides life experiences that give a character some of their game statistics. Even if a hero doesn't share their culture's values, those values shaped their early development and way of life. In fact, some people become heroes primarily from the rejection of the ways of their culture.
 
-For our purposes, a hero's culture represents people, not a place. Yes, you might have grown up in the great city of Capital, but your culture is more specific than that. One hero's culture might be House Alvaro, a noble house in Capital where they were raised. Another's culture could be a group or organization that moves around, such as a band of pirates or a secret order of sorcerers sworn to protect books of fell magic. It helps to get specific when thinking about your culture, and working with the four aspects of a culture can help you do that: **language**, **environment**, **organization**, and **upbringing**.
+For our purposes, a hero's culture represents people, not a place. Yes, you might have grown up in the great city of [Capital](scc:mcdm.heroes.v1/rule.world/capital), but your culture is more specific than that. One hero's culture might be House Alvaro, a noble house in [Capital](scc:mcdm.heroes.v1/rule.world/capital) where they were raised. Another's culture could be a group or organization that moves around, such as a band of pirates or a secret order of sorcerers sworn to protect books of fell magic. It helps to get specific when thinking about your culture, and working with the four aspects of a culture can help you do that: **language**, **environment**, **organization**, and **upbringing**.
 
 ## Using Culture
 
@@ -3415,7 +3415,7 @@ When people live together in close quarters, they typically learn to get along. 
 <!-- @type: culture | @id: urban -->
 ##### Urban
 
-An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of Capital, a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
+An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of [Capital](scc:mcdm.heroes.v1/rule.world/capital), a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
 
 **Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill/alertness).)
 
@@ -3722,7 +3722,7 @@ You gain the following career benefits:
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | **Blood Money:** When you entered adulthood, you heard unsavory whispers about your family's fortune before learning that their wealth came at the cost of others' suffering. Whether you shed light on the secret or not, you left to become a hero stripped of noble title. |
-| 2  | **Charmed Life:** Whether through some supernatural power or your innate persuasiveness, you were able to defraud other aristocrats. You did it for fun. And when you were found out, you lost your status. Whether you served time or escaped punishment, you decided to rehabilitate yourself and became a hero. |
+| 2  | **Charmed Life:** Whether through some [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power or your innate persuasiveness, you were able to defraud other aristocrats. You did it for fun. And when you were found out, you lost your status. Whether you served time or escaped punishment, you decided to rehabilitate yourself and became a hero. |
 | 3  | **Inheritance:** The guardians who instilled in you the virtues of doing the right thing were murdered in a senseless petty robbery. Though their wealth was bequeathed to you, it did little to assuage the guilt you felt for being unable to stop the deadly crime. You decided to use your riches to fund your life as a hero, whether publicly or using an alter ego. |
 | 4  | **Privileged Position:** Life outside the manor never piqued your interest. You had everything you wanted. It thus came as a surprise when the peasants came to overthrow your family. You narrowly escaped, and for the first time witnessed the world. It caused you to become a hero for the people, fighting against inequities. |
 | 5  | **Royal Pauper:** Seeking a break from noble duties, you sought a lookalike to switch identities with. It went so well that you made a habit of switching whenever you were bored. Unfortunately, your counterpart became so good at imitating you that they convinced all those around you that you were an impostor. You lost contact with your family, but now pursue a heroic path free of the pomp of your old life. |
@@ -3829,7 +3829,7 @@ You gain the following career benefits:
 
 **[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 240
 
-**Perk:** One supernatural perk (*Quick Build:* [Ritualist](scc:mcdm.heroes.v1/perk/ritualist).)
+**Perk:** One [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk (*Quick Build:* [Ritualist](scc:mcdm.heroes.v1/perk/ritualist).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3837,7 +3837,7 @@ You gain the following career benefits:
 | 2  | **Dogma:** Although you joined your religious institution under the guidance of a kind mentor, others within the house of worship became increasingly fanatical in their convictions. Your mentor sought to be a voice of reason in the rising tide of hatred and was tried as a heretic before being executed. Leaving the institution behind, you became a hero to uphold the beliefs you hold dear. |
 | 3  | **Freedom to Worship:** Your temple was destroyed in a religious conflict. The institution's leaders sought retaliation, but you saw in these actions a ceaseless cycle of destruction that would lead to more conflict. Instead, you became a hero to protect religious freedoms, so all worshippers might practice their faith without fear. |
 | 4  | **Lost Faith:** You devoted your life to ministering to the sick and needy, alongside other charitable work. Time and time again, tragedy struck those you served without rhyme or reason. Your prayers went unanswered, and your efforts went thankless. Eventually, you lost your faith in a higher power, and you left your church or temple to do good outside of any religious affiliation. |
-| 5  | **Near-Death Experience:** While serving at a religious institution, you almost died in an accident. When you woke, you had lost all memory of ever having worked for the church or temple. Though the clergy encouraged you to stay, you left to forge a new path. Your sense of altruism—whether instilled in you by your past work or a part of who you naturally are—guides you in your life. |
+| 5  | **Near-Death Experience:** While serving at a religious institution, you almost died in an accident. When you woke, you had lost all memory of ever having worked for the church or temple. Though the clergy encouraged you to stay, you left to forge a new path. Your sense of altruism—whether instilled in you by your past work or a part of who you naturally are—[guides](scc:mcdm.heroes.v1/rule.downtime/guide) you in your life. |
 | 6  | **Taxing Times:** The faith-based organization you were once part of became corrupt. It used its status in the community to accumulate wealth through tithes, while its leaders sought political appointments. During a season of drought, the institution stockpiled resources and refused to give aid, resulting in the deaths of many. You became a hero to fight against such corruption and to honor those you lost. |
 
 <!-- @type: career -->
@@ -3952,7 +3952,7 @@ You gain the following career benefits:
 | 2  | **Disaster:** A disaster, such as a cave-in, wildfire, or tidal wave, hit the work crew you were in charge of. You saved as many as you could, but the ones you couldn't save weigh heavily on your mind. You took up the life of a hero to save as many people as possible, vowing that what happened to you then won't happen again. |
 | 3  | **Embarrassment:** A noble you worked for admonished you publicly for work done poorly—and more than once. Finally, you'd had enough. You vowed to take up a new path and show this noble you're far more than what they make you out to be. |
 | 4  | **Live the Dream:** You worked with a good friend, and on the job, you would always fantasize about what it would be like to hit the road as adventuring heroes... someday. You didn't expect that your friend would fall ill and pass away. Now it's time to live out that dream for both of you. |
-| 5  | **Shining Light:** You kept a lighthouse along the constantly stormy cliffs of your village with your mentor. On a clear and sunny day, your mentor vanished. Finding only a cryptic notebook filled with his musings on the supernatural, you left to find out what really happened. The trail has gone cold for now, and you're helping others find their loved ones in the meantime. |
+| 5  | **Shining Light:** You kept a lighthouse along the constantly stormy cliffs of your village with your mentor. On a clear and sunny day, your mentor vanished. Finding only a cryptic notebook filled with his musings on the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural), you left to find out what really happened. The trail has gone cold for now, and you're helping others find their loved ones in the meantime. |
 | 6  | **Slow and Steady:** You labored silently as an uncaring boss drove those around you into the ground, pushing you to work harder to lessen the burden on your companions. But when the boss pushed too far and killed a friend of yours, you led an uprising against them. That was the start of your adventuring life. |
 
 <!-- @type: career -->
@@ -3973,7 +3973,7 @@ You gain the following career benefits:
 
 **[Renown](scc:mcdm.heroes.v1/rule.resource/renown):** +1
 
-**Perk:** One supernatural perk (*Quick Build:* [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick).)
+**Perk:** One [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk (*Quick Build:* [Arcane Trick](scc:mcdm.heroes.v1/perk/arcane-trick).)
 
 | d6 | Inciting Incident                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -4130,7 +4130,7 @@ You gain the following career benefits:
 <!-- @type: career -->
 #### Warden
 
-You protected a wild region from those who sought to harm it, such as poachers and cultists bent on the destruction of the natural world. Knowing your land well, you could also serve as a guide or the leader of a rescue party for those wandering the wilds. In defining your career, think about the following questions:
+You protected a wild region from those who sought to harm it, such as poachers and cultists bent on the destruction of the natural world. Knowing your land well, you could also serve as a [guide](scc:mcdm.heroes.v1/rule.downtime/guide) or the leader of a rescue party for those wandering the wilds. In defining your career, think about the following questions:
 
 - What environment did you protect?
 - Were you part of a formal group of wardens or did you take the job upon yourself ?
@@ -4199,7 +4199,7 @@ Your class provides you with many of your features, most of your abilities—you
 
 **[Fury](scc:mcdm.heroes.v1/class/fury):** Coursing with the ferocity of the Primordial Chaos in their veins, a [fury](scc:mcdm.heroes.v1/class/fury) is a mobile warrior who gets up close and personal with enemies to dish out lots of damage. Leaping around the battlefield felling foes and breaking down walls is where the [fury](scc:mcdm.heroes.v1/class/fury) lives.
 
-**[Null](scc:mcdm.heroes.v1/class/null):** Disciplined and calm, the [null](scc:mcdm.heroes.v1/class/null) is an unarmed warrior who manifests an [aura](scc:mcdm.heroes.v1/rule.combat/aura) that quells the supernatural and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
+**[Null](scc:mcdm.heroes.v1/class/null):** Disciplined and calm, the [null](scc:mcdm.heroes.v1/class/null) is an unarmed warrior who manifests an [aura](scc:mcdm.heroes.v1/rule.combat/aura) that quells the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** Stalking from the darkness, the [shadow](scc:mcdm.heroes.v1/class/shadow) is an expert assassin and thief who fights equally well in [melee](scc:mcdm.heroes.v1/rule.combat/melee) and at range as they get the drop on their foes. They utilize magic to help them stay mobile on the battlefield and sneak up on their prey.
 
@@ -4278,7 +4278,7 @@ Abilities with the Magic keyword are used by characters who can cast spells, hav
 <!-- @type: rule | @group: combat | @id: melee -->
 ##### Melee
 
-Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an implement. (An implement is a special object used by characters channeling magic or psionic power, described in Imbue Treasure in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
+Abilities with the Melee keyword can be used only over very short distances, typically within a character's reach, because they require a character to make contact with a creature or object with their body, a weapon, or an [implement](scc:mcdm.heroes.v1/rule.treasure/implement). (An [implement](scc:mcdm.heroes.v1/rule.treasure/implement) is a special object used by characters channeling magic or psionic power, described in Imbue Treasure in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).)
 
 ##### Psionic
 
@@ -4319,7 +4319,7 @@ An ability's "Distance" entry, represented by this symbol 📏, indicates how cl
 
 ##### Melee
 
-[Melee](scc:mcdm.heroes.v1/rule.combat/melee) abilities have a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) X" and require you to make contact with a creature with your body, a weapon, or an implement. The number X is the maximum [distance](scc:mcdm.heroes.v1/rule.combat/distance) in squares at which you can physically make contact with another creature or object targeted by the ability. For instance, a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) 2" can be used to target creatures or objects within 2 squares of you, while "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1" limits you to [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) targets (those within 1 square).
+[Melee](scc:mcdm.heroes.v1/rule.combat/melee) abilities have a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) X" and require you to make contact with a creature with your body, a weapon, or an [implement](scc:mcdm.heroes.v1/rule.treasure/implement). The number X is the maximum [distance](scc:mcdm.heroes.v1/rule.combat/distance) in squares at which you can physically make contact with another creature or object targeted by the ability. For instance, a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) 2" can be used to target creatures or objects within 2 squares of you, while "[Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1" limits you to [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) targets (those within 1 square).
 
 ##### Ranged
 
@@ -5218,7 +5218,7 @@ As a 2nd-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Order Features
@@ -5256,7 +5256,7 @@ You have honed your ability to detect sin and can use it to find those who hide 
 <!-- @type: feature -->
 ##### A Sense for Truth
 
-You are trained in secret techniques from your order that allow you to discern the truth with supernatural precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to detect lies or hidden motives.
+You are trained in secret techniques from your order that allow you to discern the truth with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) precision. If a creature is of a lower level than you, you automatically know when they are lying, though you don't necessarily know the actual truth behind their lie. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to detect lies or hidden motives.
 
 <!-- @type: feature -->
 ##### Stalwart Icon
@@ -5512,7 +5512,7 @@ As a main action, you forge a bond of love and friendship with one willing creat
 <!-- @type: feature -->
 ##### Light of Revelation
 
-As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares until you dismiss the light (no action required). This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect supernatural illusions.
+As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares until you dismiss the light (no action required). This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) illusions.
 
 <!-- @type: feature -->
 ##### Oracular Warning
@@ -5647,7 +5647,7 @@ As a 6th-level [censor](scc:mcdm.heroes.v1/class/censor), you gain the following
 <!-- @type: feature -->
 #### Implement of Wrath
 
-Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose one hero's weapon, including your own, to channel supernatural power as an implement of your god's wrath. The weapon becomes magic and gains the following benefits until your next [respite](scc:mcdm.heroes.v1/rule.resource/respite):
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose one hero's weapon, including your own, to channel [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power as an [implement](scc:mcdm.heroes.v1/rule.treasure/implement) of your god's wrath. The weapon becomes magic and gains the following benefits until your next [respite](scc:mcdm.heroes.v1/rule.resource/respite):
 
 - Strikes with the weapon deal extra holy damage equal to the wielder's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 - Any creature struck by the weapon who has holy weakness and has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
@@ -5657,7 +5657,7 @@ Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you 
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice.
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### 6th-Level Order Ability
@@ -6137,7 +6137,7 @@ Your [Might](scc:mcdm.heroes.v1/rule.character/might) and [Presence](scc:mcdm.he
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice.
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Skill
@@ -6459,7 +6459,7 @@ You have the following ability, which you can use once on your [turn](scc:mcdm.h
 > 
 > **Effect:** The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 > 
-> **Spend 1+ Piety:** For each piety spent, choose one of the following enhancements:
+> **Spend 1+ Piety:** For each piety spent, choose one of the following [enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement):
 > 
 > - You can target one additional ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 > - You can end one effect on a target that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
@@ -6526,7 +6526,7 @@ Choose one of the following [triggered actions](scc:mcdm.heroes.v1/rule.combat/t
 <!-- @type: feature -->
 #### Prayer
 
-Your god answers a prayer with enhancements to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/conduit-ward) below) by praying to your god as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.conduit.level-1/prayer-of-distance).)
+Your god answers a prayer with [enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement) to your body and mind. Choose one of the following prayers. You can change your prayer along with your ward (see [Conduit Ward](scc:mcdm.heroes.v1/feature.conduit.level-1/conduit-ward) below) by praying to your god as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Prayer of Distance](scc:mcdm.heroes.v1/feature.conduit.level-1/prayer-of-distance).)
 
 <!-- @type: feature -->
 ##### Prayer of Destruction
@@ -6862,7 +6862,7 @@ Your deity is aware of your growing influence, making it easier to draw their at
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Domain Feature
@@ -7209,7 +7209,7 @@ As a main action, you forge a bond of love and friendship with a willing creatur
 
 ###### Light of Revelation
 
-As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares. This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect supernatural illusions.
+As a maneuver, you make your body shine brightly, illuminating your space and each square within 5 squares. This light shines through any darkness. Hidden creatures in the area are automatically revealed, and creatures in the light, including you, can't hide. While this feature is active, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to notice hidden objects and entrances and to detect [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) illusions.
 
 ###### Oracular Warning
 
@@ -7318,7 +7318,7 @@ You are infused with the power your deity reserves for their most worthy instrum
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice.
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### 6th-Level Domain Ability
@@ -7955,7 +7955,7 @@ When you roll for piety at the start of your [turn](scc:mcdm.heroes.v1/rule.comb
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice.
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Skill
@@ -8142,7 +8142,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 <!-- @type: feature -->
 ##### A Beyonding of Vision
 
-You instantly recognize illusions for what they are, you can see invisible creatures, and supernatural effects can't conceal creatures and objects from you. Additionally, you always know if an area or object you observe is magical or affected by magic, and you know the specifics of what that magic can do.
+You instantly recognize illusions for what they are, you can see invisible creatures, and [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effects can't conceal creatures and objects from you. Additionally, you always know if an area or object you observe is magical or affected by magic, and you know the specifics of what that magic can do.
 
 You also gain the following ability.
 
@@ -8620,7 +8620,7 @@ As a 2nd-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Specialization Feature
@@ -9096,7 +9096,7 @@ As a 6th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice.
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Wyrding
@@ -9491,7 +9491,7 @@ Additionally, as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity,
 
 The damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) of your Acolyte of Fire feature increases to +5 and applies to all your magic abilities.
 
-Additionally, your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability can be used on supernatural objects (but not on artifacts). When you melt a treasure (see Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), you gain breath equal to its [echelon](scc:mcdm.heroes.v1/rule.general/echelon).
+Additionally, your [Return to Formlessness](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/return-to-formlessness) ability can be used on [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) objects (but not on artifacts). When you melt a treasure (see Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), you gain breath equal to its [echelon](scc:mcdm.heroes.v1/rule.general/echelon).
 
 <!-- @type: feature -->
 ##### Master of Green
@@ -9512,7 +9512,7 @@ Additionally, your mind is connected to the mystery and helps you find the answe
 <!-- @type: feature -->
 #### Perk
 
-You gain one crafting, lore, or supernatural perk of your choice.
+You gain one crafting, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Skill
@@ -10338,7 +10338,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 13 + M damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 18 + M damage; M < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > 
-> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, any other effect that would make the target [slowed](scc:mcdm.heroes.v1/condition/slowed) instead makes them [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability. Additionally, a creature who fails the [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is petrified until they are given a supernatural cure or you choose to reverse the effect (no action required).
+> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, any other effect that would make the target [slowed](scc:mcdm.heroes.v1/condition/slowed) instead makes them [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability. Additionally, a creature who fails the [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) while [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is petrified until they are given a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) cure or you choose to reverse the effect (no action required).
 
 <!-- @type: feature-group | @level: 6 -->
 ### 6th-Level Features
@@ -11114,7 +11114,7 @@ As your ferocity grows, you gain benefits as noted on the [Vuken](scc:mcdm.heroe
 
 The mind is not separate from the body. Perfection of one requires perfection of the other. You strive for perfect discipline, perfect order, mastery over mind and body, becoming an unarmed psionic warrior who dampens and absorbs magic and psionics. You require no weapons, no tools. You suffice.
 
-**As a [null](scc:mcdm.heroes.v1/class/null), you resist the supernatural forces of the universe with composure and confidence. As you strive for perfect order, you are an enemy of the ultimate expression of chaos: the supernatural. Those who break the laws of nature using sorcery or psionics should fear you.**
+**As a [null](scc:mcdm.heroes.v1/class/null), you resist the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) forces of the universe with composure and confidence. As you strive for perfect order, you are an enemy of the ultimate expression of chaos: the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural). Those who break the laws of nature using sorcery or psionics should fear you.**
 
 > "Any weapon can be turned against the hand that wields it."
 >
@@ -11195,7 +11195,7 @@ When you use an ability outside of combat that lets you spend unlimited discipli
 <!-- @type: feature -->
 #### Null Field
 
-You project a psionic field of order around your body, dampening the effects of supernatural abilities harmful to you and your allies.
+You project a psionic field of order around your body, dampening the effects of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) abilities harmful to you and your allies.
 
 <!-- @type: ability -->
 > ###### Null Field
@@ -11551,7 +11551,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 12 + **A** psychic damage; M < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 16 + **A** psychic damage; M < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target takes damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score whenever they use a supernatural ability that costs Malice.
+> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target takes damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score whenever they use a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) ability that costs Malice.
 
 <!-- @type: ability | @cost: 5 Discipline -->
 > ###### Impart Force (5 Discipline)
@@ -11827,7 +11827,7 @@ Your [Discipline Mastery](scc:mcdm.heroes.v1/feature.null.level-1/discipline-mas
 <!-- @type: feature -->
 #### Enhanced Null Field
 
-While using your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary supernatural terrain effects of your level or lower are removed when your [aura](scc:mcdm.heroes.v1/rule.combat/aura) partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your [aura](scc:mcdm.heroes.v1/rule.combat/aura) overlaps with their location, but return when the [aura](scc:mcdm.heroes.v1/rule.combat/aura) no longer overlaps with them.
+While using your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) terrain effects of your level or lower are removed when your [aura](scc:mcdm.heroes.v1/rule.combat/aura) partially or fully overlaps with their location. Permanent [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) terrain effects of your level or lower are temporarily negated while your [aura](scc:mcdm.heroes.v1/rule.combat/aura) overlaps with their location, but return when the [aura](scc:mcdm.heroes.v1/rule.combat/aura) no longer overlaps with them.
 
 <!-- @type: feature -->
 #### Perk
@@ -11904,7 +11904,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Iron Grip (9 Discipline)
 >
-> *You grab the target with supernatural force.*
+> *You grab the target with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) force.*
 >
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), Psionic, [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
@@ -12184,7 +12184,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** 19 + A damage; M < AVERAGE, the target is suppressed (save ends)
 > - **17+:** 24 + A damage; M < STRONG, the target is suppressed (save ends)
 >
-> **Effect:** While suppressed, a target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), whenever they use a supernatural ability, or whenever they use an ability that costs Malice.
+> **Effect:** While suppressed, a target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score at the start of their [turns](scc:mcdm.heroes.v1/rule.combat/turn), whenever they use a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) ability, or whenever they use an ability that costs Malice.
 
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Phase Hurl (11 Discipline)
@@ -12377,7 +12377,7 @@ When you gain discipline at the start of each of your [turns](scc:mcdm.heroes.v1
 <!-- @type: feature -->
 #### Manifold Resonance
 
-Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability to any location in the timescape known to you, known to any other creature in the area, or where any supernatural treasure in the area has been before.
+Your body becomes perfected matter, beyond the whims and chaos of the timescape and the restrictions of the manifolds. Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can [shift](scc:mcdm.heroes.v1/movement/shifting) yourself and any creatures in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability to any location in the timescape known to you, known to any other creature in the area, or where any [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) treasure in the area has been before.
 
 Whenever you use an ability, you gain 1 discipline that can be used only to apply a benefit from your [Psi Boost](scc:mcdm.heroes.v1/feature.null.level-7/psi-boost) feature to that ability. Additionally, you and allies in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability ignore [banes](scc:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane) on your [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
@@ -14503,7 +14503,7 @@ Choose one of the following abilities.
 <!-- @type: ability | @cost: 9 Focus | @subtype: triggered -->
 > ###### Instant Retaliation (9 Focus)
 >
-> *You [parry](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/parry) with almost supernatural [speed](scc:mcdm.heroes.v1/rule.character/speed).*
+> *You [parry](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/parry) with almost [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) [speed](scc:mcdm.heroes.v1/rule.character/speed).*
 >
 > | **[Melee](scc:mcdm.heroes.v1/rule.combat/melee), Weapon** | **Free triggered** |
 > | ------------------------------------|-------------------:|
@@ -15437,7 +15437,7 @@ As a 2nd-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Tradition Feature
@@ -15851,7 +15851,7 @@ As a 6th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice.
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Psi Boost
@@ -16368,7 +16368,7 @@ You have a +10 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to th
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice.
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Psion
@@ -16524,7 +16524,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 <!-- @type: ability -->
 > ###### Revitalizing Limerick
 >
-> *There once was a man from Capital...*
+> *There once was a man from [Capital](scc:mcdm.heroes.v1/rule.world/capital)...*
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
@@ -16983,7 +16983,7 @@ The Director can award the heroes 1 [hero token](scc:mcdm.heroes.v1/rule.resourc
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice. See Chapter 7: [Perks](scc:mcdm.heroes.v1/chapter/perks).
 
 <!-- @type: feature -->
 #### 2nd-Level Class Act Ability
@@ -17399,7 +17399,7 @@ As a 6th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice.
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Spotlight
@@ -17820,7 +17820,7 @@ Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), ea
 <!-- @type: feature -->
 #### Perk
 
-You gain one interpersonal, lore, or supernatural perk of your choice.
+You gain one interpersonal, lore, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perk of your choice.
 
 <!-- @type: feature -->
 #### Skill
@@ -17892,7 +17892,7 @@ If your kit uses a light weapon, you can wield two light weapons at a time.
 
 ##### Medium Weapon
 
-Medium weapons are one-handed [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapons that can be carried into battle while leaving one hand free, allowing you to use that hand to hold a shield or implement. Battleaxes, clubs, longswords, and warhammers are medium weapons.
+Medium weapons are one-handed [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapons that can be carried into battle while leaving one hand free, allowing you to use that hand to hold a shield or [implement](scc:mcdm.heroes.v1/rule.treasure/implement). Battleaxes, clubs, longswords, and warhammers are medium weapons.
 
 ##### Heavy Weapon
 
@@ -17912,7 +17912,7 @@ Whip weapons include the standard whip, spiked chains, flails, and any similarly
 
 #### Kits and Treasures
 
-When you find a supernatural treasure such as a magic sword, you can use the item as long as it's in one of your kit's equipment categories. A Blade of Quintessence is a medium weapon, so you can use it with the [Ranger](scc:mcdm.heroes.v1/kit/ranger) or [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kits. However, you can't use it with the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) or [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe) kits because those kits don't include medium weapons, meaning you haven't done the necessary preparations to use the weapon effectively. You can still swing a Blade of Quintessence around as an improvised weapon, but you don't get any of its [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties)es or benefits.
+When you find a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) treasure such as a magic sword, you can use the item as long as it's in one of your kit's equipment categories. A Blade of Quintessence is a medium weapon, so you can use it with the [Ranger](scc:mcdm.heroes.v1/kit/ranger) or [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kits. However, you can't use it with the [Cloak and Dagger](scc:mcdm.heroes.v1/kit/cloak-and-dagger) or [Stick and Robe](scc:mcdm.heroes.v1/kit/stick-and-robe) kits because those kits don't include medium weapons, meaning you haven't done the necessary preparations to use the weapon effectively. You can still swing a Blade of Quintessence around as an improvised weapon, but you don't get any of its [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties)es or benefits.
 
 If you find a piece of equipment you really want to use that isn't part of your kit, you can always change your kit as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
@@ -18810,7 +18810,7 @@ You are granted one perk from your career and can choose other perks from your c
 
 ### Perk Types
 
-Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to supernatural power.
+Six types of perks are available to your character. Five of those types reflect the setup of the five skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and feature many perks related to the skills from those groups. The sixth type of perk allows characters of all types access to [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power.
 
 **Crafting perks** improve your talent for crafting materials, and let you become an expert in the things you create.
 
@@ -18822,7 +18822,7 @@ Six types of perks are available to your character. Five of those types reflect 
 
 **Lore perks** improve your mastery of memory, language, and knowledge across a range of topics.
 
-**Supernatural perks** let you use magic and psionics to influence the world around you.
+**[Supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perks** let you use magic and psionics to influence the world around you.
 
 Whenever a feature allows you to gain a perk, that feature tells you which type of perk to choose.
 
@@ -18863,7 +18863,7 @@ On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/resp
 
 > **Perks and [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
-> The existence of specific perks doesn't mean that a hero can't attempt the task related to a perk without having that perk. Aside from supernatural perks, a Director can always allow a hero to attempt a mundane task mentioned in a perk by making a [test](scc:mcdm.heroes.v1/rule.test/test). Perks are special because they allow a hero to attempt a specific task without a [test](scc:mcdm.heroes.v1/rule.test/test), and often give a better result than a successful [test](scc:mcdm.heroes.v1/rule.test/test)—or even a [test](scc:mcdm.heroes.v1/rule.test/test) with a reward would give.
+> The existence of specific perks doesn't mean that a hero can't attempt the task related to a perk without having that perk. Aside from [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perks, a Director can always allow a hero to attempt a mundane task mentioned in a perk by making a [test](scc:mcdm.heroes.v1/rule.test/test). Perks are special because they allow a hero to attempt a specific task without a [test](scc:mcdm.heroes.v1/rule.test/test), and often give a better result than a successful [test](scc:mcdm.heroes.v1/rule.test/test)—or even a [test](scc:mcdm.heroes.v1/rule.test/test) with a reward would give.
 >
 > For example, can a hero catch a falling ally if they don't have the I've Got You perk? A Director can absolutely allow it, but might decide that the hero needs to succeed on a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to accomplish the task, using a main action or maneuver to prepare for it. Being able to catch an ally automatically as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) is what the perk gets you!
 
@@ -19066,7 +19066,7 @@ On any day when you don't take a [respite](scc:mcdm.heroes.v1/rule.resource/resp
 <!-- @type: feature-group | @id: supernatural-perks -->
 ### Supernatural Perks
 
-This section presents supernatural perks in alphabetical order.
+This section presents [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) perks in alphabetical order.
 
 <!-- @type: perk -->
 #### Arcane Trick
@@ -19099,7 +19099,7 @@ As a maneuver, choose a creature within 10 squares. If that creature is your lev
 <!-- @type: perk -->
 #### Familiar
 
-A supernatural spirit who has taken the form of a specific small animal or animated object has chosen to be your [familiar](scc:mcdm.heroes.v1/perk/familiar)—or to adopt you as their [familiar](scc:mcdm.heroes.v1/perk/familiar).
+A [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) spirit who has taken the form of a specific small animal or animated object has chosen to be your [familiar](scc:mcdm.heroes.v1/perk/familiar)—or to adopt you as their [familiar](scc:mcdm.heroes.v1/perk/familiar).
 
 The spirit uses the [familiar](scc:mcdm.heroes.v1/perk/familiar) stat block.
 
@@ -19368,7 +19368,7 @@ You somehow obtained the notebook of a brilliant but eccentric member of your cl
 
 You have no memory of your past before the... incident. Hopefully, you'll regain your memory soon and find out what the incident was. In the meantime, you need friends so you won't be alone when your past catches up to you.
 
-**Benefit:** You have a supernatural possession—a 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
+**Benefit:** You have a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) possession—a 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) that might have some connection with your former life.
 
 **Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to recall lore.
 
@@ -19422,7 +19422,7 @@ Your parents made a deal, and as part of that deal, you're supposed to marry som
 <!-- @type: complication -->
 #### Chaos Touched
 
-You came into contact with a mote of pure chaos energy, or were subjected to a supernatural effect or object that fused chaos into your very being. Now you can sprout and retract your limbs in a way that horrifies unprepared onlookers.
+You came into contact with a mote of pure chaos energy, or were subjected to a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effect or object that fused chaos into your very being. Now you can sprout and retract your limbs in a way that horrifies unprepared onlookers.
 
 **Benefit:** You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab), [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab), and [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers. Additionally, you can hold an additional item even when your hands are full.
 
@@ -19701,7 +19701,7 @@ As a child, you survived a gnoll attack. But that attack left you with a jagged 
 <!-- @type: complication -->
 #### Greening
 
-You once felt the call of a great tree in the middle of a forest, whose life force was being drained by a parasitic supernatural moss clinging to its roots. As you removed the moss, you felt as if you were being filled with green elemental energy. Sadly, the great tree withered before you could finish the job, but left behind a golden sapling you now carry with you, seeking the perfect place to plant it.
+You once felt the call of a great tree in the middle of a forest, whose life force was being drained by a parasitic [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) moss clinging to its roots. As you removed the moss, you felt as if you were being filled with green elemental energy. Sadly, the great tree withered before you could finish the job, but left behind a golden sapling you now carry with you, seeking the perfect place to plant it.
 
 **Benefit:** You have corruption immunity 5.
 
@@ -19901,7 +19901,7 @@ You're not sure what you did to deserve it, but for some reason, your family sad
 <!-- @type: complication -->
 #### Medium
 
-You can perceive ghosts and spirits that others don't sense. These supernatural entities constantly whisper unsettling secrets in your mind—when they're not trying to kill you.
+You can perceive ghosts and spirits that others don't sense. These [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) entities constantly whisper unsettling secrets in your mind—when they're not trying to kill you.
 
 **Benefit and Drawback:** Incorporeal undead within 10 squares of you can communicate telepathically with you. Additionally, you have the Contact Spirits ability.
 
@@ -20046,7 +20046,7 @@ In times of stress, you get headaches. Psionic energy builds up in your mind unt
 
 You were orphaned or lost in the wild, and a friendly animal pack (perhaps apes, bears, or wolves) took you in. Returning to so-called civilization was a shock, but you're now determined to learn all you can about your own kind.
 
-**Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're supernaturally compelled to be.
+**Benefit:** You have the Handle Animals skill (from the interpersonal skill group). Additionally, choose a type of animal related to the animals who helped you, such as wolf. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the Handle Animals skill when interacting with animals of this type. You can also communicate with animals of this type as if you shared a language, and animals of this type aren't initially hostile to you unless they're [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly compelled to be.
 
 **Drawback:** You don't have a culture (see Culture in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)), though you can speak Caelian.
 
@@ -20130,7 +20130,7 @@ You have an identical twin—either a sibling or someone who looks so much like 
 <!-- @type: complication -->
 #### Self-Taught
 
-While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a guide. What you lost in polish and tactical acumen, you now make up for in raw power.
+While your peers were learning their trades in fancy schools, you honed your capabilities on the mean streets with nothing but your own instinct as a [guide](scc:mcdm.heroes.v1/rule.downtime/guide). What you lost in polish and tactical acumen, you now make up for in raw power.
 
 **Benefit and Drawback:** At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you can forgo gaining your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). If you do, your [strikes](scc:mcdm.heroes.v1/rule.combat/strike) gain a damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
@@ -20155,14 +20155,14 @@ You were born in the dusk land ruled by the Queen of [Shadows](scc:mcdm.heroes.v
 <!-- @type: complication -->
 #### Shared Spirit
 
-A supernatural spirit occupies your body, with each of you controlling your body by [turns](scc:mcdm.heroes.v1/rule.combat/turn). You and the spirit share the same short-term goals and work equally well with your companions, though you might have different personalities, mannerisms, and long-term goals.
+A [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) spirit occupies your body, with each of you controlling your body by [turns](scc:mcdm.heroes.v1/rule.combat/turn). You and the spirit share the same short-term goals and work equally well with your companions, though you might have different personalities, mannerisms, and long-term goals.
 
 **Benefit and Drawback:** At the start of each day, roll a d6. On a 1-4, you control your body. On a 5-6, the spirit does. Alternatively, if you and the spirit are on good terms, you can choose each day who is in control. Choose three of your skills. You can use those skills only while you are in control of your body. Then choose three new skills, which you have and can use only while your spirit is in control.
 
 <!-- @type: complication -->
 #### Shattered Legacy
 
-You're the heir to a powerful supernatural treasure that has been in your family for generations. One problem, though: that treasure is broken. Some ancestor of yours sundered it while saving the world. Or maybe they tripped and smashed it on a rock. Either way, it's your job to fix it.
+You're the heir to a powerful [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) treasure that has been in your family for generations. One problem, though: that treasure is broken. Some ancestor of yours sundered it while saving the world. Or maybe they tripped and smashed it on a rock. Either way, it's your job to fix it.
 
 **Benefit:** You know one language of your choice. Additionally, you have one [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
@@ -20587,7 +20587,7 @@ If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an
 
 Except in certain scenarios (explored at [NPCs](scc:mcdm.heroes.v1/rule.general/npc) Roll for Deceptive Tasks and [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make [tests](scc:mcdm.heroes.v1/rule.test/test) and [NPCs](scc:mcdm.heroes.v1/rule.general/npc) do not. Heroes are the stars of the story, and the consequences and rewards of [tests](scc:mcdm.heroes.v1/rule.test/test) have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or companion, that [NPC](scc:mcdm.heroes.v1/rule.general/npc) will almost certainly make [tests](scc:mcdm.heroes.v1/rule.test/test) from time to time. But for the most part, [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and other creatures never need to make [tests](scc:mcdm.heroes.v1/rule.test/test) when what they do opposes what the heroes do.
 
-To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
+To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines (though these are not hard and fast rules):
 
 - **Easy [Test](scc:mcdm.heroes.v1/rule.test/test):** A [test](scc:mcdm.heroes.v1/rule.test/test) is easy if only one creature opposes the hero, and that opposed creature would have a lower [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to their [test](scc:mcdm.heroes.v1/rule.test/test) roll for the task than the hero does. If a hero with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) score of 2 attempts to sneak by a guard with an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score of 0, the [test](scc:mcdm.heroes.v1/rule.test/test) is easy.
 - **Moderate [Test](scc:mcdm.heroes.v1/rule.test/test):** A [test](scc:mcdm.heroes.v1/rule.test/test) is moderate if multiple creatures oppose the hero and those creatures would have lower [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties)es to their [test](scc:mcdm.heroes.v1/rule.test/test) rolls than the hero, or if only one creature opposes the hero and has the same [test](scc:mcdm.heroes.v1/rule.test/test) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) as the hero.
@@ -21262,7 +21262,7 @@ At the start of a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), the
 
 The difficulty of each individual [test](scc:mcdm.heroes.v1/rule.test/test) in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) is set by the Director and can vary from [test](scc:mcdm.heroes.v1/rule.test/test) to [test](scc:mcdm.heroes.v1/rule.test/test). For instance, if the heroes are preparing the defenses of a village threatened by a band of approaching raiders, the Director might decide that a character who wants to dig a trench around the village needs to make an easy [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test). Another hero wants to train the untested farmers of the village in the ways of war, and the Director decides this is a hard [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test).
 
-The same rules and guidelines that apply to all individual [tests](scc:mcdm.heroes.v1/rule.test/test) apply in [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the [test](scc:mcdm.heroes.v1/rule.test/test) should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual [test](scc:mcdm.heroes.v1/rule.test/test) outcomes shouldn't halt the story.
+The same rules and [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines that apply to all individual [tests](scc:mcdm.heroes.v1/rule.test/test) apply in [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). If a hero has a clever, out-of-the-box idea that the Director thinks should automatically succeed without rolling dice, it does. If the circumstances of the [test](scc:mcdm.heroes.v1/rule.test/test) should grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or a [bane](scc:mcdm.heroes.v1/rule.dice/bane), they do. Individual [test](scc:mcdm.heroes.v1/rule.test/test) outcomes shouldn't halt the story.
 
 The Director should couch each success or failure as it relates to the overall goal of the [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). If the heroes are trying to reach an ancient temple, failing a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) to ford a river in their path doesn't mean they don't cross the river and are stuck on the other side. But it could mean that failing to cross the river in a timely manner gives a rival group of villains the chance to beat the party to the temple.
 
@@ -22017,7 +22017,7 @@ Strikes, area attacks, environmental effects, and other hazards can all deal dam
 
 Typical damage, such as that caused by weapons, falling, traps, and monstrous claws, has no type associated with it. That's because for most creatures, there's no difference in the amount of harm caused by being run through with a pike, dropped from a height onto a stone floor, slashed by a pendulum scythe, or skewered on a minotaur's horns.
 
-However, when it comes to elemental and supernatural damage sources, some creatures might have an immunity or weakness to that damage. As such, abilities and effects note when they deal any of the following damage types: acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic.
+However, when it comes to elemental and [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) damage sources, some creatures might have an immunity or weakness to that damage. As such, abilities and effects note when they deal any of the following damage types: acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic.
 
 <!-- @type: rule | @group: damage | @id: damage-immunity -->
 ##### Damage Immunity
@@ -22108,7 +22108,7 @@ Mundane objects in the game have [Stamina](scc:mcdm.heroes.v1/rule.health/stamin
 - Stone: 6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)
 - Metal: 9 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)
 
-The Director can decide that a well-made or poorly made object has more or less [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Destroying a supernatural object often (but not always) requires a specific quest, such as throwing a magic ring back into the volcano where it was forged.
+The Director can decide that a well-made or poorly made object has more or less [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Destroying a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) object often (but not always) requires a specific quest, such as throwing a magic ring back into the volcano where it was forged.
 
 <!-- @type: rule | @group: combat | @id: underwater-combat -->
 ### Underwater Combat
@@ -22296,7 +22296,7 @@ An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [benevolence](scc:mcdm.he
 
 Arguments that appeal to a [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) [motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation) contend that if the [NPC](scc:mcdm.heroes.v1/rule.general/npc) strikes a deal with the heroes, the people the [NPC](scc:mcdm.heroes.v1/rule.general/npc) cares about will benefit from the deal. Example arguments include the following:
 
-- "If you lend us the Sword of Agathor, we can make Capital safer for your guild by using it to lay your enemies low."
+- "If you lend us the Sword of Agathor, we can make [Capital](scc:mcdm.heroes.v1/rule.world/capital) safer for your guild by using it to lay your enemies low."
 - "If you can [teleport](scc:mcdm.heroes.v1/movement/teleport) us into the dragon's cave, we'll give you half the wyrm's hoard once we cut off the creature's head. That could benefit generations of students at your academy!"
 
 <!-- @type: negotiation | @id: discovery -->
@@ -22388,7 +22388,7 @@ Arguments that appeal to a peace [motivation](scc:mcdm.heroes.v1/rule.negotiatio
 <!-- @type: negotiation | @id: power -->
 ##### Power
 
-An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [power](scc:mcdm.heroes.v1/negotiation/power) [motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation) covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of supernatural rituals—though why choose one method when all three together achieve the best results? Some such [NPCs](scc:mcdm.heroes.v1/rule.general/npc) are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [power](scc:mcdm.heroes.v1/negotiation/power) [motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation) covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) rituals—though why choose one method when all three together achieve the best results? Some such [NPCs](scc:mcdm.heroes.v1/rule.general/npc) are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.
 
 An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [power](scc:mcdm.heroes.v1/negotiation/power) [pitfall](scc:mcdm.heroes.v1/rule.negotiation/pitfall) has no [interest](scc:mcdm.heroes.v1/rule.negotiation/interest) in authority for themself. They might respect the authority of others, but they hate the thought of ruling over other people and roundly reject any suggestion of the idea.
 
@@ -22800,7 +22800,7 @@ Many downtime projects have one or more special items you must possess or obtain
 <!-- @type: rule | @group: downtime | @id: project-source -->
 #### Project Source
 
-To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a supernatural manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that particular project (see [Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) below).
+To start a downtime project, you must have access to specific lore detailing how the project is to be undertaken. This can take the form of written information (a book, scroll, schematic, and so forth), an expert tutor with wisdom to share, a master artisan with skills to teach, a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) manifestation of the project's scope and secrets, or any other form of the Director's determination. This project-focused lore is referred to as a project source. Not only do you need project sources to start a downtime project, but you must have access to those sources whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that particular project (see [Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) below).
 
 Some project sources are relatively easy to find. Building a castle doesn't require tomes filled with ancient lore, but it's also not something every stonemason knows how to do. However, the location of the tomb of Ashrya, the mummified protector of one hundred slumbering sorcerer-sovereigns, might exist only in a single tome that requires an accompanying adventure to unearth.
 
@@ -22838,7 +22838,7 @@ If you know the language of a [project source](scc:mcdm.heroes.v1/rule.downtime/
 <!-- @type: rule | @group: downtime | @id: guide -->
 #### Guides
 
-Heroes sometimes find guides—special books, schematics, knowledgeable [NPCs](scc:mcdm.heroes.v1/rule.general/npc), supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
+Heroes sometimes find guides—special books, schematics, knowledgeable [NPCs](scc:mcdm.heroes.v1/rule.general/npc), [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
 
 Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the [speed](scc:mcdm.heroes.v1/rule.character/speed) of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward the Build Airship project, the crafting time can be significantly reduced.
 
@@ -22887,7 +22887,7 @@ If an event grants an automatic breakthrough on a downtime project, the project 
 <!-- @type: rule | @group: downtime | @id: crafting-project -->
 ### Crafting Projects
 
-Crafting projects enable heroes to create vehicles, supernatural treasures, and more. When you start a crafting project, other creatures can also work on the project, using their [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to contribute a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in order to get the work done faster.
+Crafting projects enable heroes to create vehicles, [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) treasures, and more. When you start a crafting project, other creatures can also work on the project, using their [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity to contribute a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in order to get the work done faster.
 
 Unless a project has an event table of its own, the Director uses the Crafting and Research Events table for crafting [project events](scc:mcdm.heroes.v1/rule.downtime/project-event).
 
@@ -22944,10 +22944,10 @@ Time spent traveling between locations on the road is cut in half. Access to res
 | 3   | Before the roll, a local religious or civic authority hears of the project and sends laborers to accelerate it—in exchange for a future favor. The hero gains an immediate 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) for the project if they accept the help.                                                                                                                                                                                                                     |
 | 4   | After the roll, local hired hands and the project engineers find themselves at odds, hindering the project. If the hero can't help defuse the situation, the project requires an additional 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) to complete.                                                                                                                                                                                                                                |
 | 5   | Before the roll, supply caravans are disrupted by bandits, requiring extra guards. If the hero can't deal with the bandit threat personally, the project requires an additional 50 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) to complete.                                                                                                                                                                                                                                            |
-| 6   | After the roll, word is heard that not everyone in the local area is happy about the road being built. The project is hindered by supernatural curses that cause stones to move, vines and overgrowth to reclaim sections already built, or churning earth to restore the road back to its previous form. The hero must make amends to the local supernatural community or have the [renown](scc:mcdm.heroes.v1/rule.resource/renown) earned by completing the project not extend to that community. |
+| 6   | After the roll, word is heard that not everyone in the local area is happy about the road being built. The project is hindered by [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) curses that cause stones to move, vines and overgrowth to reclaim sections already built, or churning earth to restore the road back to its previous form. The hero must make amends to the local [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) community or have the [renown](scc:mcdm.heroes.v1/rule.resource/renown) earned by completing the project not extend to that community. |
 | 7   | After the roll, ditchers working on the project hit an ancient well, retaining wall, or hidden stream that results in an immediate flood. The work is delayed, but the new water source ultimately provides a boon to local farming communities. [Project points](scc:mcdm.heroes.v1/rule.downtime/project-points) earned by this roll are halved, but upon the project's completion, the hero earns 1 additional [renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                    |
 | 8   | Before the roll, a new engineer arrives with specialist experience such as building sturdy wooden bridges, using bilge pumps to keep rainwater from slowing the work, and so forth. They want to work on the project, but insist on receiving a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure first. If they are hired, the project gains an automatic breakthrough.                                                                                                                |
-| 9   | Before the roll, the proposed road touches on a supernatural intersection—a crossing place between multiple worlds that draws interest from a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil). The completion of the project becomes the personal interest of this being, who offers to increase progress—but demands a future favor from the hero. If the deal is accepted, each [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project is doubled until its completion.                                            |
+| 9   | Before the roll, the proposed road touches on a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) intersection—a crossing place between multiple worlds that draws interest from a powerful [devil](scc:mcdm.heroes.v1/ancestry/devil). The completion of the project becomes the personal interest of this being, who offers to increase progress—but demands a future favor from the hero. If the deal is accepted, each [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project is doubled until its completion.                                            |
 | 10  | After the roll, a guildmaster has it out for the hero. Whether from a past conflict or something about the way this project has unfolded, the guildmaster has made it their mission to hinder the project by dragging the hero's name through the mud. The hero's [renown](scc:mcdm.heroes.v1/rule.resource/renown) is treated as 1 less than usual while these rumors persist.                                                                                                                      |
 
 <!-- @type: project -->
@@ -22961,7 +22961,7 @@ Time spent traveling between locations on the road is cut in half. Access to res
 
 **Project Goal:** 1,500
 
-When you complete this project, you end up with a 3-square-by-3 square [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform activated by a supernatural password. The platform is permanently affixed to the ground in the location where you create it. Any creature with the password can use the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform to instantly [teleport](scc:mcdm.heroes.v1/movement/teleport) any creatures or objects on the platform to a location they know, including another [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform whose supernatural password they know. You and any creature you designate upon completion of the activity can change the password as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+When you complete this project, you end up with a 3-square-by-3 square [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform activated by a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) password. The platform is permanently affixed to the ground in the location where you create it. Any creature with the password can use the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform to instantly [teleport](scc:mcdm.heroes.v1/movement/teleport) any creatures or objects on the platform to a location they know, including another [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform whose [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) password they know. You and any creature you designate upon completion of the activity can change the password as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 Each time the [teleport](scc:mcdm.heroes.v1/movement/teleport)ation platform is used, the chance of it malfunctioning and [teleporting](scc:mcdm.heroes.v1/movement/teleport) creatures or objects on it to a random platform increases by 1 percent (to a maximum of 50 percent). You can restore the platform back to its original [condition](scc:mcdm.heroes.v1/rule.combat/condition) and reset this chance of malfunction as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
@@ -22981,9 +22981,9 @@ You can craft the items found in Treasures in Chapter 13: [Rewards](scc:mcdm.her
 
 **Project Goal:** Varies
 
-You research a cure for a disease, curse, or supernatural affliction whose text states that it can be ended by the Find a Cure downtime project. If the affliction was caused by the innate feature of a creature, you need the remains of that creature or another creature of the same kind as an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for crafting the cure. For example, you can research the cure for the affliction of a werewolf's Accursed Bite by studying the corpse of any werewolf, not just the one who did the biting.
+You research a cure for a disease, curse, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) affliction whose text states that it can be ended by the Find a Cure downtime project. If the affliction was caused by the innate feature of a creature, you need the remains of that creature or another creature of the same kind as an [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for crafting the cure. For example, you can research the cure for the affliction of a werewolf's Accursed Bite by studying the corpse of any werewolf, not just the one who did the biting.
 
-The number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) it takes to complete this project is equal to 50 times the level of the creature who caused the affliction. If the affliction was created by an environmental or supernatural effect, that effect notes the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required to complete this project.
+The number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) it takes to complete this project is equal to 50 times the level of the creature who caused the affliction. If the affliction was created by an environmental or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effect, that effect notes the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required to complete this project.
 
 When you complete this project, you craft one dose of an alchemical cure for the affliction. Once the project is completed, you can craft subsequent doses for the same affliction for half the number of [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) required for the initial project.
 
@@ -22992,13 +22992,13 @@ When you complete this project, you craft one dose of an alchemical cure for the
 
 You can create [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) by imbuing items with magic or psionic power. You must have a mundane version of the item you plan to imbue, such as a sword or shield, when you start this project.
 
-You can imbue any item three times. The first time you imbue it, you pick a 1st-level enhancement. The second time you imbue it, you pick a 5th-level enhancement. The third time you imbue it, you pick a 9th-level enhancement. A hero using armor or a weapon can't benefit from an enhancement unless they are using a kit that includes the armor or weapon type, and their level matches the enhancement's level.
+You can imbue any item three times. The first time you imbue it, you pick a 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement). The second time you imbue it, you pick a 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement). The third time you imbue it, you pick a 9th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement). A hero using armor or a weapon can't benefit from an [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) unless they are using a kit that includes the armor or weapon type, and their level matches the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)'s level.
 
-If an enhancement has a Roman numeral greater than I after it, such as the Phasing III enhancement, that enhancement can't be applied unless the item has all previous versions of the enhancement. This means you can't imbue armor with the Phasing III enhancement unless it has the Phasing I and Phasing II enhancements first. The effects of numbered enhancements are cumulative unless otherwise noted.
+If an [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) has a Roman numeral greater than I after it, such as the Phasing III [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), that [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) can't be applied unless the item has all previous versions of the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement). This means you can't imbue armor with the Phasing III [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) unless it has the Phasing I and Phasing II [enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement) first. The effects of numbered [enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement) are cumulative unless otherwise noted.
 
-Enhancements are broken out by item type (armor, implement, or weapon) and level. Each item type and level features a table showing the name, [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite), and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language of each enhancement. Imbued items take the Magic or Psionic keyword (your choice) and are part of any kit categories appropriate to the type of item (light armor, medium weapon, and so forth).
+[Enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement) are broken out by item type (armor, [implement](scc:mcdm.heroes.v1/rule.treasure/implement), or weapon) and level. Each item type and level features a table showing the name, [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite), and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language of each [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement). Imbued items take the Magic or Psionic keyword (your choice) and are part of any kit categories appropriate to the type of item (light armor, medium weapon, and so forth).
 
-Imbuing treasure with supernatural power as a downtime project typically means you undertake that project to make use of the treasure yourself. As such, all the features of imbuing refer to "you" as the user of the item. However, imbued items can be created for other creatures, or created by other creatures and found as treasure.
+Imbuing treasure with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power as a downtime project typically means you undertake that project to make use of the treasure yourself. As such, all the features of imbuing refer to "you" as the user of the item. However, imbued items can be created for other creatures, or created by other creatures and found as treasure.
 
 <!-- @type: rule | @group: treasure | @id: enhancement -->
 ##### Imbue Armor
@@ -23007,13 +23007,13 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 > **Clothing as Armor Treasures**
 >
-> A hero who has a kit that provides no armor, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) or [Sniper](scc:mcdm.heroes.v1/kit/sniper) kit, can create and make use of leveled armor treasures that imbue mundane clothing with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+> A hero who has a kit that provides no armor, such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) or [Sniper](scc:mcdm.heroes.v1/kit/sniper) kit, can create and make use of leveled armor treasures that imbue mundane clothing with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Armor Enhancement
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23025,7 +23025,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Disguise:** You can use a maneuver to cause this armor to take the form of any type of clothing that you have been in the presence of—a noble's dress, a guard's uniform, a cultist's robes, and so forth. The armor loses none of its protective qualities while transformed into other clothing.
 
-**Iridescent:** When you are the sole target of an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to reveal that the ability was targeting an afterimage of you in the same space as you. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is treated as an 11. You can't use this enhancement again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
+**Iridescent:** When you are the sole target of an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to reveal that the ability was targeting an afterimage of you in the same space as you. The [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is treated as an 11. You can't use this [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 **Magic Resistance I:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher (to a maximum of 2) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of magic abilities.
 
@@ -23041,7 +23041,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 ###### 1st-Level Armor Enhancements Table
 
-| Enhancement          | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)          | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |----------------------|--------------------------------------------------------------------------------------------------|-------------------------|
 | Awe                  | A lock of hair from a fey, taken in amicable bargain for Charming or in violence for Threatening | Khelt                   |
 | [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I    | Elemental sand left behind when an elemental enters [Orden](scc:mcdm.heroes.v1/rule.world/orden) from Quintessence                      | Zaliac                  |
@@ -23056,9 +23056,9 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 ###### 5th-Level Armor Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23082,7 +23082,7 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Magic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of magic abilities. This benefit replaces Magic Resistance I.
 
-**Phasing II:** When you use the armor's Phasing I enhancement, you can move through 3 squares of solid matter per [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**Phasing II:** When you use the armor's Phasing I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), you can move through 3 squares of solid matter per [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Psionic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of psionic abilities. This benefit replaces Psionic Resistance I.
 
@@ -23092,11 +23092,11 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Shattering:** Whenever an enemy scores a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) against you, they take 10 sonic damage.
 
-**Tempest II:** When you use the armor's Tempest I enhancement, the affected creature takes 8 lightning damage and you push them up to 3 squares.
+**Tempest II:** When you use the armor's Tempest I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), the affected creature takes 8 lightning damage and you push them up to 3 squares.
 
 ###### 5th-Level Armor Enhancements Table
 
-| Enhancement           | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)           | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------------|-----------------------------------------------------------------------------------|-------------------------|
 | Absorption            | A mirror blessed by a priest of a god of magic                                    | The First Language      |
 | [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) II    | The essence of an elemental who is still alive                                    | Zaliac                  |
@@ -23112,9 +23112,9 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 ###### 9th-Level Armor Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Armor with a 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23145,21 +23145,21 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Life:** Whenever you would die, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead. If you have no [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) to spend, you die.
 
-**Magic Resistance III:** The benefit of the armor's Magic Resistance II enhancement extends to each ally within 3 squares of you.
+**Magic Resistance III:** The benefit of the armor's Magic Resistance II [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) extends to each ally within 3 squares of you.
 
 **Phasing III:** Your movement doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), and you can move through the space of any enemy as if they were an ally. You can't end your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in an enemy's space.
 
-**Psionic Resistance III:** The benefit of the armor's Psionic Resistance II enhancement extends to each ally within 3 squares of you.
+**Psionic Resistance III:** The benefit of the armor's Psionic Resistance II [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) extends to each ally within 3 squares of you.
 
 **Temporal Flux:** Whenever you move out of a square, you can choose to leave an imprint behind that lasts until the end of the encounter, until your imprint takes 20 or more damage, or until you create a new imprint. The square is occupied by your imprint, and you can share that space with it.
 
 On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the imprint's space as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). When you are targeted by an ability, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [teleport](scc:mcdm.heroes.v1/movement/teleport) to your imprint, and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is an automatic tier 1 result.
 
-**Unbending:** You can't be subjected to [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) unless you choose to be. Effects that ignore [Stability](scc:mcdm.heroes.v1/rule.character/stability) also ignore this enhancement.
+**Unbending:** You can't be subjected to [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) unless you choose to be. Effects that ignore [Stability](scc:mcdm.heroes.v1/rule.character/stability) also ignore this [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement).
 
 ###### 9th-Level Armor Enhancements Table
 
-| Enhancement            | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)            | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |------------------------|------------------------------------------------------------------------------------------------------|-------------------------|
 | Devil's Bargain        | The wing of an archdevil                                                                             | Anjali                  |
 | Dragon Soul II         | An offering of gems, coins, and art stolen from a dragon's hoard, sacrificed in ritual fire          | Vastariax               |
@@ -23177,13 +23177,13 @@ On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can [teleport](scc:mcdm
 
 Implements are jewelry, spectacles, orbs, staffs, tomes, wands, weapons, and other objects used by those who channel magic and psionic power to focus that power. You decide what object to imbue when you create an implement treasure, but it must be an object you can carry or wear. You must have a mundane version of the item you plan to imbue when you start this project.
 
-An implement imbued with an enhancement grants you special benefits while it is wielded. Additionally, when an implement receives its 1st-level enhancement, it grants your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). A 5th-level enhancement increases the [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to +2, and a 9th-level enhancement increases it to +3. [Censors](scc:mcdm.heroes.v1/class/censor), [conduits](scc:mcdm.heroes.v1/class/conduit), [elementalists](scc:mcdm.heroes.v1/class/elementalist), [nulls](scc:mcdm.heroes.v1/class/null), [talents](scc:mcdm.heroes.v1/class/talent), and [troubadours](scc:mcdm.heroes.v1/class/troubadour) benefit from using implements more than the other classes in this book.
+An implement imbued with an [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) grants you special benefits while it is wielded. Additionally, when an implement receives its 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), it grants your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). A 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) increases the [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to +2, and a 9th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) increases it to +3. [Censors](scc:mcdm.heroes.v1/class/censor), [conduits](scc:mcdm.heroes.v1/class/conduit), [elementalists](scc:mcdm.heroes.v1/class/elementalist), [nulls](scc:mcdm.heroes.v1/class/null), [talents](scc:mcdm.heroes.v1/class/talent), and [troubadours](scc:mcdm.heroes.v1/class/troubadour) benefit from using implements more than the other classes in this book.
 
 ###### 1st-Level Implement Enhancement
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23193,7 +23193,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Displacing I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) that creature up to 2 squares after the ability's effects resolve. If the creature started on a horizontal surface, they must end on a horizontal surface.
 
-**Elemental:** Whenever you use an ability with the Air, Earth, Fire, Green, Rot, Void, or Water keyword, you can attune this implement to that element until the end of the encounter. While the implement is attuned, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) with that elemental keyword. The implement can be attuned to only one element at a time.
+**Elemental:** Whenever you use an ability with the Air, Earth, Fire, Green, Rot, Void, or Water keyword, you can attune this [implement](scc:mcdm.heroes.v1/rule.treasure/implement) to that element until the end of the encounter. While the [implement](scc:mcdm.heroes.v1/rule.treasure/implement) is attuned, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) with that elemental keyword. The [implement](scc:mcdm.heroes.v1/rule.treasure/implement) can be attuned to only one element at a time.
 
 **Forceful I:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 2 squares.
 
@@ -23201,7 +23201,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Rejuvenating I:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 9 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-**Seeking:** Your [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) magic or psionic abilities gain a +2 [distance](scc:mcdm.heroes.v1/rule.combat/distance) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, if you think the name of a specific creature, place, or object to the implement, the implement points toward that target, provided you are on the same world.
+**Seeking:** Your [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) magic or psionic abilities gain a +2 [distance](scc:mcdm.heroes.v1/rule.combat/distance) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, if you think the name of a specific creature, place, or object to the [implement](scc:mcdm.heroes.v1/rule.treasure/implement), the [implement](scc:mcdm.heroes.v1/rule.treasure/implement) points toward that target, provided you are on the same world.
 
 **Thought Sending:** Your [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) magic and psionic abilities gain a +2 [distance](scc:mcdm.heroes.v1/rule.combat/distance) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, you can telepathically communicate with any willing creature who knows a language and whose name you know, provided they are on the same world as you. You must initiate the conversation, but once you do, the creature can respond until you end the conversation.
 
@@ -23209,7 +23209,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 1st-Level Implement Enhancements Table
 
-| Enhancement     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                               | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                               | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------|-------------------------------------------------|-------------------------|
 | Berserking      | The tusk of a feral boar                        | Kalliak                 |
 | Displacing I    | Slime from an ooze                              | Khelt                   |
@@ -23223,9 +23223,9 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 5th-Level Implement Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An implement with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An [implement](scc:mcdm.heroes.v1/rule.treasure/implement) with a 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23235,7 +23235,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Celestine:** As a main action, you conjure up to three stars, which [hover](scc:mcdm.heroes.v1/movement/hover) in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
-**Displacing II:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 4 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**Displacing II:** When you use the [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s Displacing I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 4 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 **Erupting I:** Whenever you damage a creature using a magic or psionic ability that targets only a single creature and obtain a tier 3 outcome, each enemy within 2 squares of the creature takes 3 fire damage after the ability's effects resolve.
 
@@ -23247,11 +23247,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Rejuvenating II:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On an 8 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) and you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating I.
 
-**Warding II:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) for the Warding I enhancement becomes +12. Additionally, your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency).
+**Warding II:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) for the Warding I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) becomes +12. Additionally, your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency).
 
 ###### 5th-Level Implement Enhancements Table
 
-| Enhancement     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)     | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                 | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |-----------------|---------------------------------------------------|-------------------------|
 | Celerity        | A dire falcon's beak                              | Khelt                   |
 | Celestine       | A still-warm piece of a meteorite                 | Ullorvic                |
@@ -23265,9 +23265,9 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ###### 9th-Level Implement Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An implement with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An [implement](scc:mcdm.heroes.v1/rule.treasure/implement) with a 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23275,9 +23275,9 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Anathema:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature is also [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). If the creature is within 10 squares when this [weakened](scc:mcdm.heroes.v1/condition/weakened) effect ends, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
-**Displacing III:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 5 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**Displacing III:** When you use the [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s Displacing I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 5 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**Erupting II:** The fire damage dealt by the implement's Erupting I enhancement increases to 6.
+**Erupting II:** The fire damage dealt by the [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s Erupting I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) increases to 6.
 
 **Forceful III:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 3 squares and that movement can be vertical. This replaces the benefit of Forceful II.
 
@@ -23289,11 +23289,11 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Rejuvenating III:** Whenever you use an ability that costs 1 or more of your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), roll a d10. On a 7 or higher, you gain 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), and you or a creature of your choice within 3 squares can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). This replaces the benefit of Rejuvenating II.
 
-**Warding III:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) for the Warding I enhancement becomes +18. Additionally, you and each ally within 3 squares of you has their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency). This replaces the benefit of Warding II.
+**Warding III:** The [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) for the Warding I [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) becomes +18. Additionally, you and each ally within 3 squares of you has their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores treated as 1 higher for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency). This replaces the benefit of Warding II.
 
 ###### 9th-Level Implement Enhancements Table
 
-| Enhancement      | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                         | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)      | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                         | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |------------------|-----------------------------------------------------------|-------------------------|
 | Anathema         | An olothec tentacle                                       | Variac                  |
 | Displacing III   | The keystone from a gate used for crossing between worlds | Voll                    |
@@ -23307,17 +23307,17 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 ##### Imbue Weapon
 
-A weapon imbued with an enhancement grants you special benefits while it is wielded. Additionally, when a weapon receives its 1st-level enhancement, it grants your weapon abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). A 5th-level enhancement increases the damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to +2, and a 9th-level enhancement increases it to +3.
+A weapon imbued with an [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) grants you special benefits while it is wielded. Additionally, when a weapon receives its 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement), it grants your weapon abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). A 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) increases the damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to +2, and a 9th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) increases it to +3.
 
 ###### Unarmed Strike Treasures
 
-A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) and [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit, can create leveled weapon treasures that enhance their unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) by imbuing hand wraps, rings, shoes, or any other item worn on the body with supernatural power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
+A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike), such as the [Martial Artist](scc:mcdm.heroes.v1/kit/martial-artist) and [Pugilist](scc:mcdm.heroes.v1/kit/pugilist) kit, can create leveled weapon treasures that enhance their unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/strike) by imbuing hand wraps, rings, shoes, or any other item worn on the body with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power. At the Director's discretion, heroes who don't use kits, such as [elementalists](scc:mcdm.heroes.v1/class/elementalist) and [nulls](scc:mcdm.heroes.v1/class/null), can also benefit from such treasures.
 
 ###### 1st-Level Weapon Enhancement
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23343,7 +23343,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 1st-Level Weapon Enhancements Table
 
-| Enhancement   | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)   | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                    | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |---------------|----------------------------------------------------------------------|-------------------------|
 | Blood Bargain | The blood of a [devil](scc:mcdm.heroes.v1/ancestry/devil)                                                 | Anjali                  |
 | Chilling I    | A piece of ice from Quintessence that never melts                    | Yllyric                 |
@@ -23357,9 +23357,9 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 5th-Level Weapon Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 1st-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 1st-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23415,9 +23415,9 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 9th-Level Weapon Enhancement
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 5th-level enhancement; varies
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A weapon with a 5th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement); varies
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the enhancement
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** Texts or lore in a language determined by the [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
@@ -23457,7 +23457,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 
 ###### 9th-Level Weapon Enhancements
 
-| Enhancement    | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                                                     | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
+| [Enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement)    | [Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite)                                                                                                                     | [Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source) Language |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
 | Chilling III   | The weapon must be dipped in the Glacial Forge in the coldest depths of Hell                                                          | Yllyric                 |
 | Disrupting III | Wrappings from a mummy buried at least a century ago                                                                                  | Anjali                  |
@@ -23525,9 +23525,9 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 05-06  | Before the roll, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who is already friendly with the characters and has helped them before asks the hero to let them join the project. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) explains that they need the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or the object being crafted for a personal matter of great importance (saving someone's life, righting a great wrong, and so forth). The [NPC](scc:mcdm.heroes.v1/rule.general/npc) can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier, but the characters must commit to letting the [NPC](scc:mcdm.heroes.v1/rule.general/npc) use the finished project before they can do so. |
 | 07-08  | After the roll, the hero receives a mysterious note from a person who wants to exchange a treasure or other reward for the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) when the project is complete. The buyer could be someone with their own interest in a similar project, an enemy eager to exploit what the hero is working on, or a superfan who wants to emulate the hero.                                                                                                                                                            |
 | 09-10  | Before the roll, a pest starts devouring important components of the project. This could be rats gnawing at alchemical components, moths eating rare silks, mites devouring a printed [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), and so forth. If the pests aren't dealt with quickly, some of the components will need to be replaced.                                                                                                                                                                                                    |
-| 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
+| 11-12  | Before the roll, a powerful [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
 | 13-14  | Before the roll, a rumor arises that the project is being worked on in service to an evil entity. People start showing up to the hero's place of [respite](scc:mcdm.heroes.v1/rule.resource/respite), demanding that they repent their wicked ways. If the rumors aren't disproved, locals form a mob to stop the project.                                                                                                                                                                                                                                  |
-| 15-16  | Before the roll, the hero's rival comes to visit and shows off a guide for the project. The rival is willing to hand the guide over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
+| 15-16  | Before the roll, the hero's rival comes to visit and shows off a [guide](scc:mcdm.heroes.v1/rule.downtime/guide) for the project. The rival is willing to hand the [guide](scc:mcdm.heroes.v1/rule.downtime/guide) over... provided the hero publicly humiliates themself by proclaiming that the rival is their better.                                                                                                                                                                                                                                                                             |
 | 17-18  | The [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) is cursed. Before the roll, the hero must succeed on a hard [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) or become obsessed with the project. Until the project is complete, the hero can't use [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to increase their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). The curse can be broken by slaying the creature who bestowed it, or by finding a priest to perform a holy ritual over the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source).                                                                                                                                     |
 | 19-20  | Before the roll, the hero finds that a significant amount of the project has been completed by a group of fairies. The fairies might have completed the job out of boredom, or they might want something from the hero in return.                                                                                                                                                                                                                                                                               |
 | 21-22  | After the roll, the hero realizes that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) contains only half the information they need, and they must find the rest of the information to complete the project.                                                                                                                                                                                                                                                                                                                                 |
@@ -23545,7 +23545,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 45-46  | Before the roll, the servants of a dragon appear and demand that the hero hand over the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). If the hero refuses, the servants warn that the dragon will come to claim the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for themself.                                                                                                                                                                                                                                                                                              |
 | 47-48  | Before the roll, the hero notices a contract written on a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other accompanying materials that appears only under certain [conditions](scc:mcdm.heroes.v1/rule.combat/condition) (in the presence of magic, in the light of a full moon, and so forth). The contract promises that anyone who signs it in blood will receive the true and full answer to three questions, in exchange for a week of service to the hag Corrine Withersnipe. The hag appears instantly if the contract is signed.                                    |
 | 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per [respite](scc:mcdm.heroes.v1/rule.resource/respite) when any creature makes another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
-| 51-52  | Before the roll, the hero gets a visit from an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who they helped in the past. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) has found a guide that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
+| 51-52  | Before the roll, the hero gets a visit from an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who they helped in the past. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) has found a [guide](scc:mcdm.heroes.v1/rule.downtime/guide) that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
 | 53-54  | After the roll, a local officer of the law appears and tells the hero to stop working on their project. The nature of the hero's project has just become outlawed in the region, and the constable insists on locking up the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and arresting anyone who gets in the way.                                                                                                                                                                                                                           |
 | 55-56  | Before the roll, the hero determines that the research or crafting they are planning requires only part of their attention. They can either make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for their current project, or can make one for that project and one for another project.                                                                                                                                                                                                                                                     |
 | 57-58  | After the roll, a component or tool the hero is using for the project suddenly reveals itself to be magic or psionic as it starts to hum with energy and glow red hot. If the item isn't quickly cooled, it explodes, and work on the project can't continue until a replacement is found.                                                                                                                                                                                                                      |
@@ -23560,7 +23560,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 75-76  | Before the roll, a band of goblins barge in on the hero. If the hero has been fighting goblins on their recent adventures, the goblins attempt to run away with the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). Otherwise, the goblins are merely curious about the project, and the hero can make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) if they choose to explain it and have the goblins help.                                                                                                                                                                |
 | 77-78  | After the roll, the hero watches as any progress made is reversed—as if the project were moving backward through time. Any character familiar with psionics recognizes the phenomena as a chrono-anomaly. The project loses the same amount of progress each successive night until the hero finds and stops the source of the anomaly, which restores the project's progress.                                                                                                                                  |
 | 79-80  | Before the roll, the hero hears a voice beckoning them into the nearest wode to work on their project. Each time the hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in the wode, they make three times the progress but feel more pressure to stay in the wode forever.                                                                                                                                                                                                                                                              |
-| 81-82  | After the roll, the hero stumbles upon knowledge of an expert a day's travel away who could complete the project, and who possesses a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or guide for another hero's project.                                                                                                                                                                                                                                                                                                                       |
+| 81-82  | After the roll, the hero stumbles upon knowledge of an expert a day's travel away who could complete the project, and who possesses a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or [guide](scc:mcdm.heroes.v1/rule.downtime/guide) for another hero's project.                                                                                                                                                                                                                                                                                                                       |
 | 83-84  | Before the roll, fire rips through the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials and threatens to destroy the entire project. If the hero puts out the fire before everything is lost, they find that the fire activated secret notes that double each subsequent [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project.                                                                                                                                                                                                                  |
 | 85-86  | After the roll, a auteur [NPC](scc:mcdm.heroes.v1/rule.general/npc) approaches the hero and asks if they would like to make the project "a little more exciting." If the hero agrees, the auteur narrates the hero's progress on the project, prompting another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). If the second roll is lower than the first, the hero subtracts the second roll from the original roll. If it's equal or higher, the hero adds the second roll to the original roll.                                                                                      |
 | 87-88  | Before the roll, the hero's rival reluctantly comes seeking the hero's help on their own project. If the hero agrees, the hero makes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the rival's project, and the Director makes the rival's [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the hero's project.                                                                                                                                                                                                                                                  |
@@ -23713,7 +23713,7 @@ A creature who eats a serving of food from a particular type of recipe gains one
 
 - **Comforting:** When the creature fails a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), they can choose to succeed instead. This benefit then ends.
 - **Hearty:** The creature increases their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 at the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite) in which the food is consumed.
-- **Supernatural Power:** The creature temporarily increases one of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1 (to a maximum of 6).
+- **[Supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) Power:** The creature temporarily increases one of their [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1 (to a maximum of 6).
 
 A creature can benefit from the food of only one recipe at a time, and can't benefit from more than one serving of a recipe at a time.
 
@@ -23723,7 +23723,7 @@ A creature can benefit from the food of only one recipe at a time, and can't ben
 |-----------------|-----------------------------------------------------------------------|--------------------|
 | Modern          | Common ingredients (flour, carrots, beef, and so forth)               | Hearty             |
 | Vintage or home | Key ingredients (starfruit, kindleseeds, oarfish, and so forth)       | Comforting         |
-| Ancient or lost | Rare or extinct ingredients (honeylilies, steel apples, and so forth) | Supernatural power |
+| Ancient or lost | Rare or extinct ingredients (honeylilies, steel apples, and so forth) | [Supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power |
 
 ### Other Projects
 
@@ -23754,7 +23754,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 4   | Before the roll, a sympathetic [NPC](scc:mcdm.heroes.v1/rule.general/npc)—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                         |
 | 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). |
 | 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) they make are halved.                                                                                                                                                                                                                                                                       |
-| 7   | After the roll, a saint blesses the hero's work. The hero feels supernaturally rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
+| 7   | After the roll, a saint blesses the hero's work. The hero feels [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
 | 8   | Before the roll, the hero becomes aware of a previously unknown radenwight warren within the community, which has the potential to become a point of tension and conflict. The hero must engage with the radenwights and other locals to create understanding between the two communities or take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                    |
 | 9   | Before the roll, a local malcontent has turned their focus on the hero and roused the people against them. The hero must either contend with angry locals preventing them from resting (losing the usual benefit of the [respite](scc:mcdm.heroes.v1/rule.resource/respite)) or find the malcontent and win them over before proceeding.                                                                                                                                     | 
 | 10  | Before the roll, a thief, assassin, or other criminal offers to assist the hero. They can offer 50 points toward the completion of the project, as long as the hero looks the other way if they ever cross paths again.                                                                                                                                                                                                          |
@@ -23840,21 +23840,21 @@ Virtue is its own reward... but wouldn't a magic sword also be kind of nice? As 
 
 You've helped save the world! Or at least a corner of that world important to you. Now you deserve the treasures that can help you do so even more efficiently next time. So claim your magic sword, psionic shield, and Catapult Dust, and ride to your next adventure!
 
-Treasures are the supernatural items that heroes find on their adventures, or that they craft themselves to help with their heroics. You might claim a magic whip from a bandit captain or create a psionic necklace that will help you take down a dread cult.
+Treasures are the [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) items that heroes find on their adventures, or that they craft themselves to help with their heroics. You might claim a magic whip from a bandit captain or create a psionic necklace that will help you take down a dread cult.
 
 Treasures come in all shapes and sizes, and are broken down into four types.
 
 **[Consumables](scc:mcdm.heroes.v1/rule.treasure/consumable)** are the most numerous treasures. These include potions, dusts, and other items that are consumed by you when you activate them. Most [consumables](scc:mcdm.heroes.v1/rule.treasure/consumable) can be used only once!
 
-**[Trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket)** are treasures with supernatural properties that never fade. These include magic bags, boots, cloaks, gloves, jewelry, and other oddities.
+**[Trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket)** are treasures with [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) properties that never fade. These include magic bags, boots, cloaks, gloves, jewelry, and other oddities.
 
-**[Leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure)** are treasures that become even more powerful in the hands of a higher-level hero. They connect with their user, building a bond that fuels the item's supernatural power. Armor, implements, and weapons are the most common types of [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure).
+**[Leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure)** are treasures that become even more powerful in the hands of a higher-level hero. They connect with their user, building a bond that fuels the item's [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) power. Armor, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), and weapons are the most common types of [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure).
 
 **Artifacts** are treasures of legendary power that can change or shape an adventure—or even an entire campaign. Each of these game-breaking items is unique, highly coveted, and well guarded.
 
 ### Found, Earned, or Crafted
 
-The rules of the game account for worlds where the average person sometimes even the average noble—doesn't have regular access to treasures. There might be an apothecary in the capital city of a region, but they're selling herbal remedies, not supernatural potions. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), a town blacksmith isn't selling magic maces, and the local tailor doesn't make psionic capes. There simply aren't enough treasures readily available to create a good trade economy. Word sometimes gets around of mysterious clubs where heroes and treasure seekers can meet up to swap items, but the constant threat of thieves makes such markets difficult to find.
+The rules of the game account for worlds where the average person sometimes even the average noble—doesn't have regular access to treasures. There might be an apothecary in the capital city of a region, but they're selling herbal remedies, not [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) potions. In [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), a town blacksmith isn't selling magic maces, and the local tailor doesn't make psionic capes. There simply aren't enough treasures readily available to create a good trade economy. Word sometimes gets around of mysterious clubs where heroes and treasure seekers can meet up to swap items, but the constant threat of thieves makes such markets difficult to find.
 
 Most treasures are found as part of adventures. Many people concoct dastardly schemes, but only those with the will and power to enact that vision become villains—and acquiring treasures of great power is often part of a villain's plans. As such, the heroes who vanquish those evildoers often get to claim those treasures for themselves. At
 
@@ -23872,7 +23872,7 @@ When a hero finds a treasure, they learn its properties if they examine it for 5
 
 #### Wearing Treasures
 
-Many treasures, such as cloaks, jewelry, hats, and boots, must be worn. Unless the Director deems otherwise, these items supernaturally resize themselves to fit the creature using them.
+Many treasures, such as cloaks, jewelry, hats, and boots, must be worn. Unless the Director deems otherwise, these items [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly resize themselves to fit the creature using them.
 
 Wearable treasures have keywords that indicate which part of the body they are meant to adorn—Arms, Feet, Hands, Head, Neck, or Waist. The Ring keyword marks treasures typically worn on the finger. You can wear any number of treasures that have the same body keyword as long as the Director deems it reasonable. For example, it might be fine for a four-armed [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) to wear two pairs of bracers, but the Director might decide that the same hero can't benefit from wearing two magic cloaks at once. If the Director decides you're wearing too many treasures with the same body keyword, none of those treasures function.
 
@@ -23882,9 +23882,9 @@ If a wearable treasure comes as a set, such as a pair of bracers, boots, or earr
 
 #### Wielding Treasures
 
-Some treasures are wielded in the form of weapons or implements. A weapon might have the Light Weapon, Medium Weapon, or Heavy Weapon keywords, or might have a keyword denoting a specific category of weapon (Bow, Polearm, and so forth). An implement might have the Implement keyword or a keyword denoting the type of implement (Orb, Wand, and so forth). Armor is also considered a wielded treasure, with the Light Armor, Medium Armor, or Heavy Armor keywords, or the Shield keyword.
+Some treasures are wielded in the form of weapons or [implements](scc:mcdm.heroes.v1/rule.treasure/implement). A weapon might have the Light Weapon, Medium Weapon, or Heavy Weapon keywords, or might have a keyword denoting a specific category of weapon (Bow, Polearm, and so forth). An [implement](scc:mcdm.heroes.v1/rule.treasure/implement) might have the [Implement](scc:mcdm.heroes.v1/rule.treasure/implement) keyword or a keyword denoting the type of [implement](scc:mcdm.heroes.v1/rule.treasure/implement) (Orb, Wand, and so forth). Armor is also considered a wielded treasure, with the Light Armor, Medium Armor, or Heavy Armor keywords, or the Shield keyword.
 
-A hero can wield as many weapons, implements, suits of armor, or shields as they can feasibly hold or wear. However, an ability can benefit only from one weapon or implement at a time.
+A hero can wield as many weapons, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), suits of armor, or shields as they can feasibly hold or wear. However, an ability can benefit only from one weapon or [implement](scc:mcdm.heroes.v1/rule.treasure/implement) at a time.
 
 ##### Treasures and Kits
 
@@ -23896,7 +23896,7 @@ A weapon's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) on
 
 #### Magic and Psionic Treasures
 
-The Magic and Psionic keywords for treasures refer to how those treasures are created, not how they are used. Just as magic potions and swords aren't limited only to characters who wield magic themselves, the Magic and Psionic keywords don't restrict the use of treasures to only certain types of characters, so that an implement with the Magic keyword can be used to enhance abilities with the Psionic keyword, and vice versa. Treasures that have the Magic or Psionic keyword and are used to enhance an ability don't add those keywords to the ability.
+The Magic and Psionic keywords for treasures refer to how those treasures are created, not how they are used. Just as magic potions and swords aren't limited only to characters who wield magic themselves, the Magic and Psionic keywords don't restrict the use of treasures to only certain types of characters, so that an [implement](scc:mcdm.heroes.v1/rule.treasure/implement) with the Magic keyword can be used to enhance abilities with the Psionic keyword, and vice versa. Treasures that have the Magic or Psionic keyword and are used to enhance an ability don't add those keywords to the ability.
 
 #### Stamina Bonuses and Damage Bonuses
 
@@ -23905,9 +23905,9 @@ If two treasures give a creature a [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-
 <!-- @type: rule | @group: treasure | @id: consumable -->
 ### Consumables
 
-Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them supernatural. You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
+Consumables are treasures that can be used a limited number of times before they expire, losing whatever makes them [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural). You can drink a potion once, and when you do so, that's it. It's consumed. Other consumables might have a specific number of charges that can be spent. Once those charges are gone, the treasure is useless.
 
-Consumables are organized by [echelon](scc:mcdm.heroes.v1/rule.general/echelon) to make life easy for the Director handing them out (see [Echelons](scc:mcdm.heroes.v1/rule.general/echelon) of Play in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). As a guideline, a hero should always be able to find consumable treasures or the materials required to craft consumables of their [echelon](scc:mcdm.heroes.v1/rule.general/echelon) and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd [echelon](scc:mcdm.heroes.v1/rule.general/echelon). In some cases, the Director might decide to award consumables of an [echelon](scc:mcdm.heroes.v1/rule.general/echelon) higher than the heroes' [echelon](scc:mcdm.heroes.v1/rule.general/echelon), but such a choice means giving the heroes more power than the encounter-building guidelines in *Draw Steel: Monsters* accounts for.
+Consumables are organized by [echelon](scc:mcdm.heroes.v1/rule.general/echelon) to make life easy for the Director handing them out (see [Echelons](scc:mcdm.heroes.v1/rule.general/echelon) of Play in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)). As a [guide](scc:mcdm.heroes.v1/rule.downtime/guide)line, a hero should always be able to find consumable treasures or the materials required to craft consumables of their [echelon](scc:mcdm.heroes.v1/rule.general/echelon) and lower. For example, heroes who are 5th level should be able to find consumables of 1st and 2nd [echelon](scc:mcdm.heroes.v1/rule.general/echelon). In some cases, the Director might decide to award consumables of an [echelon](scc:mcdm.heroes.v1/rule.general/echelon) higher than the heroes' [echelon](scc:mcdm.heroes.v1/rule.general/echelon), but such a choice means giving the heroes more power than the encounter-building [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines in *Draw Steel: Monsters* accounts for.
 
 Your character can carry any number of consumables at a time.
 
@@ -24093,7 +24093,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Project Goal:** 45 (yields 1d3 teeth)
 
-**Effect:** As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to supernaturally flicker in and out of reality. Your next strike that uses the weapon can tear through multiple targets in a line (for a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [strike](scc:mcdm.heroes.v1/rule.combat/strike)) or surrounding you (for a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike)). The [strike](scc:mcdm.heroes.v1/rule.combat/strike) adds the following effects to the [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll):
+**Effect:** As a maneuver, you attach a lachomp tooth to a weapon, allowing that weapon to [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly flicker in and out of reality. Your next strike that uses the weapon can tear through multiple targets in a line (for a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [strike](scc:mcdm.heroes.v1/rule.combat/strike)) or surrounding you (for a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike)). The [strike](scc:mcdm.heroes.v1/rule.combat/strike) adds the following effects to the [tier outcomes](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll):
 
 - **≤11:** You can affect one additional target with this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 - **12-16:** You can affect up to three additional targets with this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
@@ -25011,7 +25011,7 @@ While the eyes circle your head, you can use a maneuver to launch up to three of
 
 **Project Goal:** 450
 
-**Effect:** While wearing the Mirage Band, you automatically perceive illusions for what they are, you can see invisible creatures, and supernatural effects can't conceal creatures and objects from you.
+**Effect:** While wearing the Mirage Band, you automatically perceive illusions for what they are, you can see invisible creatures, and [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effects can't conceal creatures and objects from you.
 
 Additionally, you have the following ability.
 
@@ -25133,7 +25133,7 @@ Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) has b
 
 #### Carry Three Safely
 
-Your connection with [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) doesn't just make them useful. It also makes them dangerous. Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic implement yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) at a time. If you carry more [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
+Your connection with [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) doesn't just make them useful. It also makes them dangerous. Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) is a quasi-sentient, purpose-driven entity. A magic sword wishes to be used in combat. A psionic [implement](scc:mcdm.heroes.v1/rule.treasure/implement) yearns to unleash its powerful magic. As such, a creature can safely carry a maximum of three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) at a time. If you carry more [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), those items become jealous of one another and fight for your attention, attempting to subconsciously influence you into using them—and leaving your other items behind.
 
 It's fine to own or possess more than three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), as long as the extras are stored away or in the possession of other creatures. But if you carry more than three [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure), you must make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) during each [respite](scc:mcdm.heroes.v1/rule.resource/respite):
 
@@ -25363,14 +25363,14 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 <!-- @type: treasure-group | @treasure-type: implement -->
 #### Leveled Implement Treasures
 
-Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
+[Implements](scc:mcdm.heroes.v1/rule.treasure/implement) are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Abjurer's Bastion
 
 *An ornate ring is set with a large diamond that swirls with blue light, and whose inner surface is etched with protective runes.*
 
-**Keywords:** Implement, Magic
+**Keywords:** [Implement](scc:mcdm.heroes.v1/rule.treasure/implement), Magic
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A diamond ring
 
@@ -25380,11 +25380,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
+**1st Level:** While you wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement), your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**5th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 [cube](scc:mcdm.heroes.v1/rule.combat/cube), around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**5th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 [cube](scc:mcdm.heroes.v1/rule.combat/cube), around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube), and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
+**9th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube), and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
 <!-- @type: treasure -->
 ##### Brittlebreaker
@@ -25401,18 +25401,18 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) deal an extra 2 psychic damage. Additionally, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic or psionic abilities if you aren't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
+**1st Level:** While you wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement), your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) deal an extra 2 psychic damage. Additionally, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic or psionic abilities if you aren't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
-**5th Level:** The implement's extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the implement's extra damage is doubled until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**5th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s extra damage is doubled until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The implement's extra psychic damage increases to 4. Additionally, whenever you use a damage-dealing magic or psionic ability, you can take half as much total damage as is dealt to all targets to immediately use the same ability again. The damage you take can't be reduced in any way. You can't use this benefit more than once a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**9th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s extra psychic damage increases to 4. Additionally, whenever you use a damage-dealing magic or psionic ability, you can take half as much total damage as is dealt to all targets to immediately use the same ability again. The damage you take can't be reduced in any way. You can't use this benefit more than once a [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Chaldorb
 
 *A perfectly clear sphere is embossed with fine ivory and crystal that is frigid to the touch.*
 
-**Keywords:** Implement, Magic
+**Keywords:** [Implement](scc:mcdm.heroes.v1/rule.treasure/implement), Magic
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of primordial ice, an ounce of mammoth-ivory shards
 
@@ -25422,18 +25422,18 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, if you make a magic [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) must deal cold damage instead of its usual damage.
+**1st Level:** While you wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement), your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, if you make a magic [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) must deal cold damage instead of its usual damage.
 
-**5th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you use a magic or psionic ability, a whirlwind of sleet and ice whips around you, dealing 3 cold damage to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
+**5th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you use a magic or psionic ability, a whirlwind of sleet and ice whips around you, dealing 3 cold damage to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
-**9th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) around you that lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each enemy who enters the [aura](scc:mcdm.heroes.v1/rule.combat/aura) for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 6 cold damage.
+**9th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) around you that lasts until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Each enemy who enters the [aura](scc:mcdm.heroes.v1/rule.combat/aura) for the first time in a [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) or starts their turn there takes 6 cold damage.
 
 <!-- @type: treasure -->
 ##### Ether-Fueled Vessel
 
 *This bronze bottle has been shaped into the form of a ghostly figure.*
 
-**Keywords:** Implement, Psionic
+**Keywords:** [Implement](scc:mcdm.heroes.v1/rule.treasure/implement), Psionic
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Incense distilled from the essence of ether
 
@@ -25443,18 +25443,18 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to pass through them freely. While insubstantial, a creature can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you.
+**1st Level:** While you wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement), your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to pass through them freely. While insubstantial, a creature can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you.
 
-**5th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to deal damage to them equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) space outside them.
+**5th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to deal damage to them equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) space outside them.
 
-**9th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against your allies while they remain insubstantial.
+**9th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against your allies while they remain insubstantial.
 
 <!-- @type: treasure -->
 ##### Foesense Lenses
 
 *These spectacles feature pink-tinted glass lenses held in a silver frame.*
 
-**Keywords:** Implement, Psionic
+**Keywords:** [Implement](scc:mcdm.heroes.v1/rule.treasure/implement), Psionic
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Two clear lenses carved from volcanic glass
 
@@ -25464,18 +25464,18 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you can use that creature's senses until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to experience all they observe and to use your abilities as if you were in their space. You also benefit from your own senses at the same time.
+**1st Level:** While you wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement), your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties). Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you can use that creature's senses until the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn), allowing you to experience all they observe and to use your abilities as if you were in their space. You also benefit from your own senses at the same time.
 
-**5th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you deal 20 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is weakend until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**5th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +2. Additionally, whenever you deal 20 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is weakend until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-**9th Level:** The implement's damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Additionally, whenever you deal 30 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+**9th Level:** The [implement](scc:mcdm.heroes.v1/rule.treasure/implement)'s damage [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) increases to +3. Additionally, whenever you deal 30 or more [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with a magic or psionic ability to a creature whose senses you are using, that creature is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: treasure -->
 ##### Words Become Wonders at Next Breath
 
 *This ornate [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) tome seems to sigh each time it is opened.*
 
-**Keywords:** Implement, Magic
+**Keywords:** [Implement](scc:mcdm.heroes.v1/rule.treasure/implement), Magic
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** Written permission from a [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) magistrate
 
@@ -25791,7 +25791,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 <!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, implements, and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in alphabetical order.
+In addition to armor, shields, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bloodbound Band
@@ -25903,7 +25903,7 @@ Whenever a creature within 10 squares of you deals damage to another creature, y
 <!-- @type: treasure-group | @tier: artifact -->
 ### Artifacts
 
-Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building guidelines in *Draw Steel: Monsters* expect. That's part of the fun!
+Artifacts are powerful treasures, with entire campaigns to be built around finding, using, hiding, protecting, or destroying one. Make no mistake—these items unbalance the game. If the heroes or villains have access to such a treasure, their power is far beyond what the encounter—building [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines in *Draw Steel: Monsters* expect. That's part of the fun!
 
 Typically, one creature never holds onto an artifact for too long. Most of these treasures have a sentience of their own and an eagerness to move on. Since many powerful entities might want to get their hands on an artifact, characters might see armies, dragons, and even gods come to collect one from a wielder who refuses to let go.
 
@@ -26666,7 +26666,7 @@ Titles suitable for 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 **Effect:** Choose one of the following benefits:
 
-- *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The [potencies](scc:mcdm.heroes.v1/rule.character/potency) of your magic or psionic abilities that target [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increase by 1.
+- *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effects. The [potencies](scc:mcdm.heroes.v1/rule.character/potency) of your magic or psionic abilities that target [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increase by 1.
 - *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly [Devil](scc:mcdm.heroes.v1/ancestry/devil):* You gain the Silver Tongue signature trait from the [devil](scc:mcdm.heroes.v1/ancestry/devil) ancestry.
 - *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
@@ -26737,12 +26737,12 @@ Titles suitable for 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 *The sword Vanartha has been remade, mightier now than on the day it was forged.*
 
-**Prerequisite:** You complete a downtime project to imbue armor, an implement, or a weapon with a 9th-level enhancement.
+**Prerequisite:** You complete a downtime project to imbue armor, an [implement](scc:mcdm.heroes.v1/rule.treasure/implement), or a weapon with a 9th-level [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement).
 
 **Effect:** Choose one of the following benefits:
 
-- *Masterpiece:* The armor, implement, or weapon can be imbued a fourth time, with any enhancement the item qualifies for.
-- *Research Dividends:* You gain the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for an armor, implement, or weapon enhancement of your choice. Additionally, you learn the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language for that enhancement.
+- *Masterpiece:* The armor, [implement](scc:mcdm.heroes.v1/rule.treasure/implement), or weapon can be imbued a fourth time, with any [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) the item qualifies for.
+- *Research Dividends:* You gain the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) for an armor, [implement](scc:mcdm.heroes.v1/rule.treasure/implement), or weapon [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement) of your choice. Additionally, you learn the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) language for that [enhancement](scc:mcdm.heroes.v1/rule.treasure/enhancement).
 - *Skilled Hands:* You have a skill from the crafting skill group that would have been used during the creation of the prerequisite item. If you already have that skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill. Additionally, you gain a second skill of your choice from the crafting skill group.
 - *Strong Hands Make Light Work:* Whenever you make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), you can use [Might](scc:mcdm.heroes.v1/rule.character/might) as the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic).
 
@@ -26868,7 +26868,7 @@ Additionally, choose one of the following benefits:
 
 - *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn). Once you use this benefit, you can't use it again until you earn 1 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 - *Perfect Protection:* The Director chooses a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
-- *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
+- *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) or [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any [implement](scc:mcdm.heroes.v1/rule.treasure/implement) for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
 
 <!-- @type: title -->
 #### Monarch
@@ -27049,7 +27049,7 @@ As an optional rule, the Director can allow a hero to make a purchase that is on
 
 | Score       | Affordable                                                                                                                            |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| 1           | Mundane clothing, gear, armor, implements, and weapons; meals or drinks at a common tavern; a stay at a common inn; passage on a boat |
+| 1           | Mundane clothing, gear, armor, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), and weapons; meals or drinks at a common tavern; a stay at a common inn; passage on a boat |
 | 2           | Horse and cart; dinner at a fine tavern; a stay at a fine inn                                                                         |
 | 3           | Catapult; small house                                                                                                                 |
 | 4           | Library; tavern; manor home; sailing boat                                                                                             |
@@ -27124,7 +27124,7 @@ As much as it annoys the great and the good, the gods view all mortals as equals
 
 The gods and saints presented in this chapter are popular and well-known. Their priests, shamans, or god-callers serve the public weal and tend to the souls of the people.
 
-But the world is not for heroes alone. There are villains, as well as those who are simply misguided or desperate. Every pantheon has saints, even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
+But the world is not for heroes alone. There are villains, as well as those who are simply mis[guide](scc:mcdm.heroes.v1/rule.downtime/guide)d or desperate. Every pantheon has saints, even gods, who teach the virtues of selfishness, cruelty, the pursuit of power for its own sake, and the right of the strong to do as they please.
 
 These religions do not usually build public temples and worship in the open, but most communities know, or very strongly suspect, who among them serve evil gods and saints.
 
@@ -27304,7 +27304,7 @@ It was after Zarok retired from his career as a warmaster and became the ambassa
 
 Zarok teaches that all people should be equal under the law. His is the principle of fair play—sportsmanship. Respect for your adversary. The responsibility of the strong to protect the weak.
 
-Zarok's *The Conversations* are still quoted today. There is a long legal tradition, when a prestigious lawyer in Capital wishes to write an amicus brief without revealing their identity, they sign it "Z."
+Zarok's *The Conversations* are still quoted today. There is a long legal tradition, when a prestigious lawyer in [Capital](scc:mcdm.heroes.v1/rule.world/capital) wishes to write an amicus brief without revealing their identity, they sign it "Z."
 
 ##### Valak-koth the Seeker
 
@@ -27973,7 +27973,7 @@ Lost ships sometimes find their navigation systems lighting up, a clear path hom
 
 OV is the god of navigators and those who seek safe passage through treacherous scenarios. Because he cares little for the politics of the timescape, he is respected by the [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider), though none would call him or any other being their "god."
 
-When a [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) swears, "OV guide me," the meaning is not, "Show me the right thing to do." But: "Show me a way out of this mess."
+When a [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) swears, "OV [guide](scc:mcdm.heroes.v1/rule.downtime/guide) me," the meaning is not, "Show me the right thing to do." But: "Show me a way out of this mess."
 
 ##### The Calling of Cho'kassa the Time Rider
 
@@ -28145,7 +28145,7 @@ You want to be upfront about what kind of buy-in you need from the players. So i
 
 Visiting lots of different locations and cultures has to sound cool. You won't start in a town and eventually become the heroes of the barony, but will instead become legendary heroes across multiple realms. You'll constantly be leaving the people you've met behind, but you'll eventually have a base you return to after completing each quest. You'll have allies and enemies all across the world!
 
-The buy-in tells the players that their heroes are going to travel to far-flung locations, and that it might take them a while to find a home. If a player is looking for a different experience, such as a game that takes place entirely in the city of Capital, they now know that your game isn't for them!
+The buy-in tells the players that their heroes are going to travel to far-flung locations, and that it might take them a while to find a home. If a player is looking for a different experience, such as a game that takes place entirely in the city of [Capital](scc:mcdm.heroes.v1/rule.world/capital), they now know that your game isn't for them!
 
 #### Player Option Restrictions
 
@@ -28175,7 +28175,7 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a [respite](scc:mcdm.heroes.v1/rule.resource/respite) last 8 hours, or perhaps a [respite](scc:mcdm.heroes.v1/rule.resource/respite) should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20). You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
 
-The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), the worst time for a player to find that out is right after they roll a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) in combat.
+The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before [implement](scc:mcdm.heroes.v1/rule.treasure/implement)ing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), the worst time for a player to find that out is right after they roll a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) in combat.
 
 Talk to the players about the house rules you want to use in your campaign, and discuss any ideas they bring to you for house rules during your first session.
 
@@ -28189,7 +28189,7 @@ If your campaign takes place in a published campaign setting, read the material 
 
 As you read, make notes on anything interesting in the setting that you might want to incorporate in your campaign, as well as anything you want to change.
 
-Your top priority should be the campaign's starting location. In which district of Capital do the players start their first adventure? Which world of the timescape will be the first the heroes visit? What settlement in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) holds their first adventure? Answer that question and get familiar with that place first. You'll have plenty of time to read further as you plan out your games.
+Your top priority should be the campaign's starting location. In which district of [Capital](scc:mcdm.heroes.v1/rule.world/capital) do the players start their first adventure? Which world of the timescape will be the first the heroes visit? What settlement in [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria) holds their first adventure? Answer that question and get familiar with that place first. You'll have plenty of time to read further as you plan out your games.
 
 #### Building Your Own Setting
 
@@ -28197,7 +28197,7 @@ If you plan on building your own campaign setting, the work of worldbuilding can
 
 ##### Start Small
 
-If you're planning on making your own campaign setting, start small. Instead of detailing every settlement on every continent on every planet in a universe, build a starting town or an initial district in a city, then work up the surrounding area in which the first adventure takes place. Use the following steps as a guide:
+If you're planning on making your own campaign setting, start small. Instead of detailing every settlement on every continent on every planet in a universe, build a starting town or an initial district in a city, then work up the surrounding area in which the first adventure takes place. Use the following steps as a [guide](scc:mcdm.heroes.v1/rule.downtime/guide):
 
 **Locations:** Make a list of any important locations in the campaign starting point, such as an inn or house where the heroes are staying, merchants they might want to visit, and the headquarters of organizations that might be important to them.
 
@@ -28284,7 +28284,7 @@ Every good adventure includes villains, a task to accomplish, [NPCs](scc:mcdm.he
 
 > **Player Ambition Writes Adventures**
 >
-> Players have ambition driven by their characters' complications, personal stories, and desires for titles, supernatural treasures, and other rewards. Indulge these desires! If a hero wants to go on a quest to gain a Blade of Quintessence, let them know where they can find one (after they put in the proper research or questing time, of course). You can then plan an adventure, even just a short one, around the weapon's retrieval!
+> Players have ambition driven by their characters' complications, personal stories, and desires for titles, [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) treasures, and other rewards. Indulge these desires! If a hero wants to go on a quest to gain a Blade of Quintessence, let them know where they can find one (after they put in the proper research or questing time, of course). You can then plan an adventure, even just a short one, around the weapon's retrieval!
 
 #### Villain
 
@@ -28333,7 +28333,7 @@ An adventure's goal doesn't always result in a total failure for the villain. So
 
 An adventure's goal isn't always clear to the players at the start, but the heroes should always have a good idea of how to keep pursuing the story. Gameplay and fun can grind to a halt if the players don't have any idea what their characters should do to further their goals.
 
-Every adventure should have an inciting incident that either sees the heroes discovering the adventure's goal, or that puts them on the path to discovering it. If the characters start an adventure by finding the freshly murdered body of a noble in the streets of Capital, they're likely to look for clues that could lead them to catching a murderer—a solid, straightforward adventure goal. Or it could be that the murder leads them to uncovering a grand conspiracy in which one of Capital's Great Houses is planning a coordinated and violent takeover of the city. The heroes must stop those plots—an adventure goal that might take them several scenes to fully uncover. But each of those scenes should lead directly to the next without leaving the players wondering, "What should we do?"
+Every adventure should have an inciting incident that either sees the heroes discovering the adventure's goal, or that puts them on the path to discovering it. If the characters start an adventure by finding the freshly murdered body of a noble in the streets of [Capital](scc:mcdm.heroes.v1/rule.world/capital), they're likely to look for clues that could lead them to catching a murderer—a solid, straightforward adventure goal. Or it could be that the murder leads them to uncovering a grand conspiracy in which one of [Capital](scc:mcdm.heroes.v1/rule.world/capital)'s Great Houses is planning a coordinated and violent takeover of the city. The heroes must stop those plots—an adventure goal that might take them several scenes to fully uncover. But each of those scenes should lead directly to the next without leaving the players wondering, "What should we do?"
 
 > **Complications and Adventures**
 >
@@ -28385,7 +28385,7 @@ Make a list of the different locations the heroes might visit during the adventu
 
 A general location is a settlement or a defined wilderness region that the heroes visit during the adventure.
 
-If the adventure takes place in a giant, sprawling metropolis like Capital, then different city districts and large landmarks such as catacombs and parks count as general locations. If the adventure takes place in and around a regional area larger than a city but no bigger than a planet, then full settlements and biomes such as deserts and forests count as general locations. If the adventure takes place across the timescape (or in a similar milieu of many worlds), then a general location could be an entire world and any specific settlements or biomes the heroes visit in that world.
+If the adventure takes place in a giant, sprawling metropolis like [Capital](scc:mcdm.heroes.v1/rule.world/capital), then different city districts and large landmarks such as catacombs and parks count as general locations. If the adventure takes place in and around a regional area larger than a city but no bigger than a planet, then full settlements and biomes such as deserts and forests count as general locations. If the adventure takes place across the timescape (or in a similar milieu of many worlds), then a general location could be an entire world and any specific settlements or biomes the heroes visit in that world.
 
 You don't have to define everything about these general locations, because you'll develop more in-depth information about the specific sites the heroes might visit in any location later. You can use the following questions about each general location as a starting point for what you'll want to cover (and you might already have done some of this when creating a starting area during your campaign preparation):
 
@@ -28517,7 +28517,7 @@ On the other hand, not sharing the difficulty of every [test](scc:mcdm.heroes.v1
 
 ##### Test Outcomes
 
-After a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic guidelines in mind.
+After a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines in mind.
 
 If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a future [test](scc:mcdm.heroes.v1/rule.test/test), losing a mundane item, making a friendly [NPC](scc:mcdm.heroes.v1/rule.general/npc) angry, or even earning you a little future Malice. The consequence is up to you!
 
@@ -28533,7 +28533,7 @@ Sample consequences and rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) a
 
 #### Creating and Running Hazards
 
-Hazards include traps, natural dangers such as quicksand and avalanches, and supernatural dangers such as magic-irradiated ruins or floating clouds of unstable psionic energy. Hazards can appear in combat and exploration scenes as dangers the heroes need to contend with as they solve other problems. An elaborate hazard can be a scene all on its own as well, whether tackled in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or run round by round as if it were a combat scenario.
+Hazards include traps, natural dangers such as quicksand and avalanches, and [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) dangers such as magic-irradiated ruins or floating clouds of unstable psionic energy. Hazards can appear in combat and exploration scenes as dangers the heroes need to contend with as they solve other problems. An elaborate hazard can be a scene all on its own as well, whether tackled in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or run round by round as if it were a combat scenario.
 
 A good hazard presents a real threat to the heroes and stands in the way of something they want. Crossing a pool of lava isn't much of an issue if the heroes can simply walk around it. But if the pool is too big to walk around, or if the treasure the party seeks is at the bottom of it, it becomes something they can't easily ignore.
 
@@ -28616,7 +28616,7 @@ Refer to the details you wrote down for your [NPCs](scc:mcdm.heroes.v1/rule.gene
 
 When you're preparing for a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), you'll want to pick an [NPC](scc:mcdm.heroes.v1/rule.general/npc) and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
 
-When assigning negotiation stats, keep the following guidelines in mind:
+When assigning negotiation stats, keep the following [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines in mind:
 
 - The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 - The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your [NPC](scc:mcdm.heroes.v1/rule.general/npc) a higher patience score.
@@ -29131,7 +29131,7 @@ The following challenges can be part of the [montage test](scc:mcdm.heroes.v1/ru
 - **Fortification:** Characters can help build or repair walls and other defensive structures. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Architecture, Endurance, Lift.
 - **Inspiration:** Improving morale with rousing speeches or performances can help prepare the locals for the fight to come. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Brag, Lead, Perform.
 - **Propaganda:** Characters can attempt to sow confusion or rebellion in the ranks of the approaching army. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Disguise, Forgery, Lie.
-- **Stockpiling:** Characters can hunt, forage, or supernaturally conjure food or water to augment the settlement's supplies. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Nature, Sneak, Track.
+- **Stockpiling:** Characters can hunt, forage, or [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural)ly conjure food or water to augment the settlement's supplies. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Nature, Sneak, Track.
 - **Training:** Heroes can help to train the settlement's defenders. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Presence](scc:mcdm.heroes.v1/rule.character/presence). *Suggested Skills:* Endurance, Intimidate, Lead.
 - **Trapmaking:** Digging concealed pits, placing hindrances, and setting up ambushes will make it harder for the invaders to approach the settlement. *Suggested [Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):* [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason). *Suggested Skills:* Conceal Object, Endurance, Mechanics.
 
@@ -29288,13 +29288,13 @@ The players can choose their hero's treasures, and can replace any [leveled trea
 
 #### Making New Treasures
 
-You can easily create new types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
+You can easily create new types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) for heroes to find using the [enhancements](scc:mcdm.heroes.v1/rule.treasure/enhancement) from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
 You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type), and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
 
 #### Awarding Titles
 
-You don't need to grant heroes every title they qualify for. In fact, you probably shouldn't, lest they become too powerful too fast. As a general guideline, a hero should gain a new title about every other level, which you can accomplish using either of the following options:
+You don't need to grant heroes every title they qualify for. In fact, you probably shouldn't, lest they become too powerful too fast. As a general [guide](scc:mcdm.heroes.v1/rule.downtime/guide)line, a hero should gain a new title about every other level, which you can accomplish using either of the following options:
 
 - You can grant a hero a title during a significant moment in a campaign, such as after defeating a villain. The heroes are each awarded a title they earned that is chosen by you.
 - You can allow a hero to choose a title they've earned from the titles available at their [echelon](scc:mcdm.heroes.v1/rule.general/echelon) each time they achieve an even-numbered level.
@@ -29303,7 +29303,7 @@ You should check in with your players occasionally to see if they have any speci
 
 #### Awarding Renown
 
-The heroes earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown) whenever they do something of significance, such as saving a town or... well, saving the world! As a general guideline, heroes should earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) per level.
+The heroes earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown) whenever they do something of significance, such as saving a town or... well, saving the world! As a general [guide](scc:mcdm.heroes.v1/rule.downtime/guide)line, heroes should earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) per level.
 
 If you want the characters to be less famous than in a standard heroic tale, you can adjust this to give out [Renown](scc:mcdm.heroes.v1/rule.resource/renown) every other level. Alternatively, you can award [Renown](scc:mcdm.heroes.v1/rule.resource/renown) after each adventure if you want the heroes to become power players in the world more quickly.
 
@@ -29326,7 +29326,7 @@ You can award [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to the 
 
 #### Awarding Victories
 
-Use the following guidelines for awarding [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to the heroes, increasing these values as desired for notably difficult challenges.
+Use the following [guide](scc:mcdm.heroes.v1/rule.downtime/guide)lines for awarding [Victories](scc:mcdm.heroes.v1/rule.resource/victories) to the heroes, increasing these values as desired for notably difficult challenges.
 
 ##### Combat Encounters
 
