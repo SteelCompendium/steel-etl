@@ -125,13 +125,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Ancestry](scc:mcdm.heroes.v1/chapter/ancestries):** A humanoid creature's species. Every hero has an ancestry.
 
-**[Area of Effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect):** The squares affected by an ability that creates an aura, burst, cube, line, or wall. (An ability that creates an area of effect affects targets simply by those targets being in its area, as opposed to a [strike](scc:mcdm.heroes.v1/rule.combat/strike).)
+**[Area of Effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect):** The squares affected by an ability that creates an [aura](scc:mcdm.heroes.v1/rule.combat/aura), [burst](scc:mcdm.heroes.v1/rule.combat/burst), [cube](scc:mcdm.heroes.v1/rule.combat/cube), line, or wall. (An ability that creates an area of effect affects targets simply by those targets being in its area, as opposed to a [strike](scc:mcdm.heroes.v1/rule.combat/strike).)
 
-**[Argument](scc:mcdm.heroes.v1/chapter/negotiation):** A plea the heroes make during a negotiation to convince one or more NPCs to work with them.
+**[Argument](scc:mcdm.heroes.v1/chapter/negotiation):** A plea the heroes make during a negotiation to convince one or more [NPCs](scc:mcdm.heroes.v1/rule.general/npc) to work with them.
 
 **[Artifact](scc:mcdm.heroes.v1/chapter/treasures):** A powerful treasure that can unbalance the game.
 
-**[Artisan](scc:mcdm.heroes.v1/career/artisan):** A follower who undertakes [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) for a hero.
+**[Artisan](scc:mcdm.heroes.v1/career/artisan):** A [follower](scc:mcdm.heroes.v1/rule.general/follower) who undertakes [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) for a hero.
 
 **[Aura](scc:mcdm.heroes.v1/rule.combat/aura):** When an ability or other effect creates an aura, that area is expressed as "X aura." The number X is the radius of the aura, which always originates from the creature or object who created it, extends from the outside of the creator's space, and moves with them.
 
@@ -143,7 +143,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** A positive number that increases a creature's statistics or the roll of a die.
 
-**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A natural 19 or 20 on a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). When a character experiences a breakthrough, they can make another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+**[Breakthrough](scc:mcdm.heroes.v1/rule.downtime/project-roll):** A [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) on a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). When a character experiences a breakthrough, they can make another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 **[Burrow](scc:mcdm.heroes.v1/movement/burrow):** A movement mode available to creatures with "burrow" in their [speed](scc:mcdm.heroes.v1/rule.character/speed) entry, or who gain the capability to temporarily [burrow](scc:mcdm.heroes.v1/movement/burrow). Such creatures can move through dirt horizontally at full [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
@@ -193,9 +193,9 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Creature](scc:mcdm.heroes.v1/rule.general/creature):** Living and unliving beings, including constructs and undead.
 
-**[Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit):** When a creature rolls a natural 19 or 20 on an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as part of a main action, that creature gains an additional main action that they can use immediately. An [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as part of a maneuver can't score a critical hit.
+**[Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit):** When a creature rolls a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) on an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as part of a main action, that creature gains an additional main action that they can use immediately. An [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as part of a maneuver can't score a critical hit.
 
-**[Cube](scc:mcdm.heroes.v1/rule.combat/cube):** When an ability or other effect creates a cube, that area is expressed as "X cube." The number X is the length of each of the area's sides. A cube effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
+**[Cube](scc:mcdm.heroes.v1/rule.combat/cube):** When an ability or other effect creates a [cube](scc:mcdm.heroes.v1/rule.combat/cube), that area is expressed as "X [cube](scc:mcdm.heroes.v1/rule.combat/cube)." The number X is the length of each of the area's sides. A [cube](scc:mcdm.heroes.v1/rule.combat/cube) effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
 
 **[Culture](scc:mcdm.heroes.v1/chapter/cultures):** The community in which a hero was raised.
 
@@ -279,7 +279,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Forced Movement](scc:mcdm.heroes.v1/movement/forced-movement):** When an ability or effect compels a creature to move, usually against their will. There are three types of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement): a pull, a push, and a slide. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is always along the ground unless noted as vertical. [Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) can be reduced by [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
-**[Follower](scc:mcdm.heroes.v1/rule.general/follower):** An NPC dedicated to helping a hero. Many of the actions of a follower are controlled by a player.
+**[Follower](scc:mcdm.heroes.v1/rule.general/follower):** An [NPC](scc:mcdm.heroes.v1/rule.general/npc) dedicated to helping a hero. Many of the actions of a [follower](scc:mcdm.heroes.v1/rule.general/follower) are controlled by a player.
 
 **[Free Maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver):** A maneuver that doesn't count against the one maneuver per turn a creature can take. A free maneuver can only be used by a creature on their turn.
 
@@ -331,7 +331,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Insight](scc:mcdm.heroes.v1/feature.shadow.level-1/insight):** The [shadow's](scc:mcdm.heroes.v1/class/shadow) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-**[Interest](scc:mcdm.heroes.v1/rule.negotiation/interest):** A negotiation statistic that determines how interested an NPC is in helping out the heroes.
+**[Interest](scc:mcdm.heroes.v1/rule.negotiation/interest):** A negotiation statistic that determines how interested an [NPC](scc:mcdm.heroes.v1/rule.general/npc) is in helping out the heroes.
 
 **[Intuition](scc:mcdm.heroes.v1/rule.character/intuition):** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) that represents a creature's instincts and experience.
 
@@ -369,7 +369,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Montage Test](scc:mcdm.heroes.v1/rule.test/montage-test):** Heroes making a series of different [tests](scc:mcdm.heroes.v1/rule.test/test) that represent them working together over time to accomplish a common goal.
 
-**[Motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation):** A negotiation trait an NPC has that determines what type of arguments could more easily sway them.
+**[Motivation](scc:mcdm.heroes.v1/rule.negotiation/motivation):** A negotiation trait an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has that determines what type of arguments could more easily sway them.
 
 **[Mounted Combat](scc:mcdm.heroes.v1/rule.combat/mounted-combat):** Special rules that apply when one creature rides another into battle.
 
@@ -379,11 +379,11 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Mundane](scc:mcdm.heroes.v1/rule.general/supernatural):** Used to describe an ability, creature, object, or effect that isn't magic or psionic. The opposite of supernatural.
 
-**[Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20):** When the result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is 19 or 20 before adding any modifiers. A natural 19 or 20 always achieves a tier 3 outcome on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). On an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) with an ability that uses a main action, it is also a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
+**[Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20):** When the result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is 19 or 20 before adding any modifiers. A [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) always achieves a tier 3 outcome on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). On an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) with an ability that uses a main action, it is also a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
 
 **[Natural Roll](scc:mcdm.heroes.v1/rule.dice/natural-roll):** The result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) before adding any modifiers.
 
-**[Negotiation](scc:mcdm.heroes.v1/chapter/negotiation):** A social interaction encounter where the heroes attempt to make a deal with an NPC.
+**[Negotiation](scc:mcdm.heroes.v1/chapter/negotiation):** A social interaction encounter where the heroes attempt to make a deal with an [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 
 **[No Action](scc:mcdm.heroes.v1/rule.combat/turn):** Denoting a very simple activity that can be done anytime during combat, and generally without limit. A creature can undertake "no action" activities even when it isn't their turn.
 
@@ -403,7 +403,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Orden](scc:mcdm.heroes.v1/rule.world/orden):** The prime manifold, where [humans](scc:mcdm.heroes.v1/ancestry/human), elves, [dwarves](scc:mcdm.heroes.v1/ancestry/dwarf), and [orcs](scc:mcdm.heroes.v1/ancestry/orc) share a world with dragons, goblins, kobolds, and dozens of other speaking peoples.
 
-**[Patience](scc:mcdm.heroes.v1/rule.negotiation/patience):** A negotiation statistic that determines how much time and effort an NPC is willing to expend listening to and arguing with the heroes.
+**[Patience](scc:mcdm.heroes.v1/rule.negotiation/patience):** A negotiation statistic that determines how much time and effort an [NPC](scc:mcdm.heroes.v1/rule.general/npc) is willing to expend listening to and arguing with the heroes.
 
 **[Penalty](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties):** A negative number that decreases a creature's statistics or the roll of a die.
 
@@ -411,7 +411,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Piety](scc:mcdm.heroes.v1/feature.conduit.level-1/piety):** The [conduit's](scc:mcdm.heroes.v1/class/conduit) [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-**[Pitfall](scc:mcdm.heroes.v1/rule.negotiation/pitfall):** A negotiation trait an NPC has that determines what type of arguments will not work on them.
+**[Pitfall](scc:mcdm.heroes.v1/rule.negotiation/pitfall):** A negotiation trait an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has that determines what type of arguments will not work on them.
 
 **[Polder](scc:mcdm.heroes.v1/ancestry/polder):** An ancestry of short folk who can slip into shadows to hide.
 
@@ -459,17 +459,17 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Restrained](scc:mcdm.heroes.v1/condition/restrained):** A condition that reduces a creature's [speed](scc:mcdm.heroes.v1/rule.character/speed) to 0 and prevents them from using the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver or being [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
-**[Retainer](scc:mcdm.heroes.v1/rule.general/retainer):** A follower who adventures alongside a hero.
+**[Retainer](scc:mcdm.heroes.v1/rule.general/retainer):** A [follower](scc:mcdm.heroes.v1/rule.general/follower) who adventures alongside a hero.
 
 **[Revenant](scc:mcdm.heroes.v1/ancestry/revenant):** An undead ancestry. [Revenants](scc:mcdm.heroes.v1/ancestry/revenant) return to the mortal world to complete unfinished business they had in life.
 
-**[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a [test](scc:mcdm.heroes.v1/rule.test/test), gained in addition to the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) accomplishing what they set out to do. A creature always gains a reward on a [test](scc:mcdm.heroes.v1/rule.test/test) that is a natural 19 or 20.
+**[Reward](scc:mcdm.heroes.v1/chapter/rewards):** A helpful boon granted by succeeding on a [test](scc:mcdm.heroes.v1/rule.test/test), gained in addition to the creature making the [test](scc:mcdm.heroes.v1/rule.test/test) accomplishing what they set out to do. A creature always gains a reward on a [test](scc:mcdm.heroes.v1/rule.test/test) that is a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20).
 
 **[Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) Move Action:** A move action that allows a rider on a mount to move the mount up to the mount's [speed](scc:mcdm.heroes.v1/rule.character/speed), taking the rider with them.
 
 **[Rolled Damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage):** Variable damage determined by the outcome of an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll). Effects that grant bonuses to rolled damage have no effect on damage that is dealt without an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll).
 
-**[Sage](scc:mcdm.heroes.v1/career/sage):** A follower who undertakes [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) for a hero.
+**[Sage](scc:mcdm.heroes.v1/career/sage):** A [follower](scc:mcdm.heroes.v1/rule.general/follower) who undertakes [research projects](scc:mcdm.heroes.v1/rule.downtime/research-project) for a hero.
 
 **[Saint](scc:mcdm.heroes.v1/rule.world/saint):** A legendary disciple of a god who can grant [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) to creatures who venerate them.
 
@@ -725,9 +725,9 @@ If you downgrade a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), 
 <!-- @type: rule | @group: dice | @id: natural-roll -->
 ##### Natural Roll
 
-The total of your power roll before your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), this is called rolling a natural 20.
+The total of your power roll before your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), this is called rolling a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20).
 
-When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) (see [Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+When you roll a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) (see [Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 #### Edges and Banes
 
@@ -1092,7 +1092,7 @@ The Director should make an agenda for a campaign's first session often called "
 
 - The Director and players talk about the safety tools they want to employ at the game table (whether physical or virtual), so that everyone has a good time and understands which topics should be avoided in the game's narrative and which should be embraced. For more information, check out the MCDM Tabletop Safety Toolkit at *mcdm.gg/SafetyToolkit*, which includes advice for running a successful first session.
 - The Director discusses the campaign's world and the major story themes they want to introduce into the game. This often takes the form of a campaign pitch the Director presents to the players.
-- The Director should tell the players if any options are limited or rare in their campaign. For example, some Directors don't want psionics to appear in their game worlds, so they might decide that heroes can't be [nulls](scc:mcdm.heroes.v1/class/null) or [talents](scc:mcdm.heroes.v1/class/talent). Another campaign might be grounded in more typical medieval fantasy and not have any [memonek](scc:mcdm.heroes.v1/ancestry/memonek) or [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider), or those ancestries might be exceedingly rare. In the latter case, players should know that their [memonek](scc:mcdm.heroes.v1/ancestry/memonek) or [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) heroes are likely to get a lot of questions from curious NPCs.
+- The Director should tell the players if any options are limited or rare in their campaign. For example, some Directors don't want psionics to appear in their game worlds, so they might decide that heroes can't be [nulls](scc:mcdm.heroes.v1/class/null) or [talents](scc:mcdm.heroes.v1/class/talent). Another campaign might be grounded in more typical medieval fantasy and not have any [memonek](scc:mcdm.heroes.v1/ancestry/memonek) or [time raiders](scc:mcdm.heroes.v1/ancestry/time-raider), or those ancestries might be exceedingly rare. In the latter case, players should know that their [memonek](scc:mcdm.heroes.v1/ancestry/memonek) or [time raider](scc:mcdm.heroes.v1/ancestry/time-raider) heroes are likely to get a lot of questions from curious [NPCs](scc:mcdm.heroes.v1/rule.general/npc).
 - The players get a chance to tell the Director what they would like to experience in the campaign. This can include anything from "I'd love to play out some chase scenes!" to "I want to explore themes of loss and grief." These wishes should be starting points for a conversation. If not all players are comfortable with certain themes or content requested by other players, then session zero is a great time to discuss that and come to a consensus about what everyone wants out of the game.
 - Make heroes! Once everyone understands what the campaign is about, it's the perfect time to get into character creation. When a group of players make heroes together, they can tie backstories together and strategize to build a tactically dominant party both in and out of combat.
 - The Director runs an encounter to kick off the campaign. If all the players have the time, it's totally worth it to get some play in during the first session, even if it's just a quick brawl in a tavern with some cultists! Starting off with a little action lets you see what the game is all about—and raises anticipation for the next session.
@@ -1662,7 +1662,7 @@ She blushed in spite of herself and raised her own glass in a toast. "You silver
 <!-- @type: feature | @id: silver-tongue -->
 #### Signature Trait: Silver Tongue
 
-Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when attempting to discover an NPC's motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
+Your innate magic allows you to twist how your words are perceived to get a better read on people and convince them to see things your way. You have one skill of your choice from the interpersonal skill group (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)), and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when attempting to discover an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations and pitfalls during a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)).
 
 #### Purchased Devil Traits
 
@@ -1821,7 +1821,7 @@ You have the following [signature ability](scc:mcdm.heroes.v1/rule.combat/signat
 
 | **Area, Magic** |               **Main action** |
 |-----------------|------------------------------:|
-| **📏 1 burst**  | **🎯 Each enemy in the area** |
+| **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
@@ -1841,7 +1841,7 @@ You have the following [signature ability](scc:mcdm.heroes.v1/rule.combat/signat
 
 | **Area, Magic**        |               **Main action** |
 |------------------------|------------------------------:|
-| **📏 3 cube within 1** | **🎯 Each enemy in the area** |
+| **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1** | **🎯 Each enemy in the area** |
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
@@ -3211,7 +3211,7 @@ The [time raider's](scc:mcdm.heroes.v1/ancestry/time-raider) right upper hand sh
 
 John felt his skin tighten as Dazar warded him, and from the sun's shadow cast by Taxiarch Lycaon the [polder](scc:mcdm.heroes.v1/ancestry/polder) Jackson Bootblack emerged, a rapier in each hand, and no one saw him move from where he'd been a moment before.
 
-The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) burst into action and sped past him like a blur.
+The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) [burst](scc:mcdm.heroes.v1/rule.combat/burst) into action and sped past him like a blur.
 
 At the same instant, a call—a horn. From directly behind John a blast of sound like a chord played by a dozen trumpets, and hope sang in his heart—the clarion call of the last Storm Knight!
 
@@ -4199,7 +4199,7 @@ Your class provides you with many of your features, most of your abilities—you
 
 **[Fury](scc:mcdm.heroes.v1/class/fury):** Coursing with the ferocity of the Primordial Chaos in their veins, a [fury](scc:mcdm.heroes.v1/class/fury) is a mobile warrior who gets up close and personal with enemies to dish out lots of damage. Leaping around the battlefield felling foes and breaking down walls is where the [fury](scc:mcdm.heroes.v1/class/fury) lives.
 
-**[Null](scc:mcdm.heroes.v1/class/null):** Disciplined and calm, the [null](scc:mcdm.heroes.v1/class/null) is an unarmed warrior who manifests an aura that quells the supernatural and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
+**[Null](scc:mcdm.heroes.v1/class/null):** Disciplined and calm, the [null](scc:mcdm.heroes.v1/class/null) is an unarmed warrior who manifests an [aura](scc:mcdm.heroes.v1/rule.combat/aura) that quells the supernatural and hinders the offensive prowess of their enemies. They use psionics to make their body stronger than any steel and faster than any steed.
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** Stalking from the darkness, the [shadow](scc:mcdm.heroes.v1/class/shadow) is an expert assassin and thief who fights equally well in melee and at range as they get the drop on their foes. They utilize magic to help them stay mobile on the battlefield and sneak up on their prey.
 
@@ -4540,7 +4540,7 @@ This rule also applies to Director-controlled creatures who spend Malice on abil
 <!-- @type: rule | @group: combat | @id: critical-hit -->
 #### Critical Hit
 
-Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
+Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) as a main action and the roll is a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) or [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20)-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
 
 You can't score a critical hit with an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) made as a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) or a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) used as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
 
@@ -4891,7 +4891,7 @@ You gain a domain feature from your domain, as shown on the 1st-Level [Censor](s
 
 You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, when you are present at the start of a negotiation, one [NPC](scc:mcdm.heroes.v1/rule.general/npc) of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 ##### Blessing of Comprehension
@@ -5007,7 +5007,7 @@ Choose one [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)
 > 
 > | **Area, Magic, Melee, Weapon** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 2 cube within 1**         | **🎯 Each enemy in the area** |
+> | **📏 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1**         | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
@@ -5296,7 +5296,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 3 burst**  | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Each target takes holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Additionally, each hidden target is automatically revealed and can't become hidden again until the start of your next turn. You can then use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability against one target as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
@@ -5339,7 +5339,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |                          **Maneuver** |
 > |-----------------|--------------------------------------:|
-> | **📏 3 aura**   | **🎯 Self and each ally in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your turns.
 
@@ -5382,7 +5382,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 2 aura**   | **🎯 Each enemy in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score at the end of each of your turns. A target takes an extra 2d6 holy damage if they are judged by you or if they are adjacent to any enemy.
 
@@ -5393,7 +5393,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 2 aura**   | **🎯 Each enemy in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target uses an ability that costs Malice (see *Draw Steel: Monsters*), they take holy damage equal to three times your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
 
@@ -5404,18 +5404,18 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 2 aura**   | **🎯 Each enemy in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you takes an extra 2d6 holy damage.
 
 <!-- @type: ability | @cost: 7 Wrath -->
 > ###### Edict of Stillness (7 Wrath)
 > 
-> *The holy aura you project makes it painful for evil-doers to leave your reach.*
+> *The holy [aura](scc:mcdm.heroes.v1/rule.combat/aura) you project makes it painful for evil-doers to leave your reach.*
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 2 aura**   | **🎯 Each enemy in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) out of the area, they take holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. A target judged by you who moves willingly takes an extra 2d6 holy damage.
 
@@ -5479,13 +5479,13 @@ You have the following ability.
 <!-- @type: ability -->
 > ###### Blessing of Secrets
 > 
-> *You project an illusory aura that makes you and allies harder to notice.*
+> *You project an illusory [aura](scc:mcdm.heroes.v1/rule.combat/aura) that makes you and allies harder to notice.*
 > 
 > | **Area, Magic** |                          **Maneuver** |
 > |-----------------|--------------------------------------:|
-> | **📏 3 aura**   | **🎯 Self and each ally in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
+> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The [aura](scc:mcdm.heroes.v1/rule.combat/aura) lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
 
 <!-- @type: feature -->
 ##### Impervious Touch
@@ -5597,7 +5597,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
-> | **📏 1 burst** | **🎯 Self and each ally in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
@@ -5675,7 +5675,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 3 burst**  | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 > 
@@ -5722,7 +5722,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 3 aura**   | **🎯 Each enemy in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever any target takes a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) or a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), that action is negated and the target takes holy damage equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
@@ -6120,7 +6120,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |                          **Maneuver** |
 > |-----------------|--------------------------------------:|
-> | **📏 2 aura**   | **🎯 Self and each ally in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target who starts their turn in the area gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 
@@ -6301,7 +6301,7 @@ Additionally, whenever you activate a domain effect by praying for piety, you ca
 ###### Storm Domain Piety and Effect
 
 - **Piety:** You gain 2 piety the first time in an encounter that an enemy within 10 squares is [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
-- **Prayer Effect:** Each enemy in a 3 cube within 10 squares takes lightning damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
+- **Prayer Effect:** Each enemy in a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10 squares takes lightning damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
 ###### Sun Domain Piety and Effect
 
@@ -6345,7 +6345,7 @@ Choose one of your domains. You gain a domain feature for that domain, as shown 
 
 You exude a magic presence that can soothe those willing to socially engage with you. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) made to assist another creature with a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Additionally, when you are present at the start of a negotiation, one NPC of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, when you are present at the start of a negotiation, one [NPC](scc:mcdm.heroes.v1/rule.general/npc) of your choice has their patience increased by 1 (to a maximum of 5), and the first [test](scc:mcdm.heroes.v1/rule.test/test) made to influence them gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 ##### Blessing of Comprehension
@@ -6645,7 +6645,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > 
 > | **Area, Magic**  |               **Main action** |
 > |------------------|------------------------------:|
-> | **📏 2 burst**   | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -6734,7 +6734,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 3 cube within 10** | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -6845,7 +6845,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic** |              **Main action** |
 > |-----------------|-----------------------------:|
-> | **📏 4 burst**  | **🎯 Each ally in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each ally in the area** |
 > 
 > **Effect:** Each target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to end one effect on them that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or to stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
 
@@ -6923,7 +6923,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |                          **Maneuver** |
 > |------------------|--------------------------------------:|
-> | **📏 5 burst**   | **🎯 Self and each ally in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Each target can choose another creature in the area, then swap places with that creature. The creature they choose must be able to fit into the space they leave and vice versa.
 
@@ -6949,7 +6949,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |               **Main action** |
 > |------------------|------------------------------:|
-> | **📏 3 burst**   | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -6966,7 +6966,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic, Ranged**  |               **Main action** |
 > |--------------------------|------------------------------:|
-> | **📏 3 cube within 10**  | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7014,7 +7014,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic, Ranged**  |               **Main action** |
 > |--------------------------|------------------------------:|
-> | **📏 3 cube within 10**  | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7040,7 +7040,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |              **Main action** |
 > |------------------|-----------------------------:|
-> | **📏 3 aura**    | **🎯 Each ally in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Each ally in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), whenever a target starts their turn in the area, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -7068,7 +7068,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic, Ranged**  |               **Main action** |
 > |--------------------------|------------------------------:|
-> | **📏 5 cube within 10**  | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7113,7 +7113,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic**  |               **Main action** |
 > |------------------|------------------------------:|
-> | **📏 5 burst**   | **🎯 Each enemy in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7181,13 +7181,13 @@ You have the following ability.
 <!-- @type: ability -->
 > ###### Blessing of Secrets
 > 
-> *You project an illusory aura that makes you and allies harder to notice.*
+> *You project an illusory [aura](scc:mcdm.heroes.v1/rule.combat/aura) that makes you and allies harder to notice.*
 > 
 > | **Area, Magic** |                         **Maneuver**  |
 > |-----------------|--------------------------------------:|
-> | **📏 3 aura**   | **🎯 Self and each ally in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The aura lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
+> **Effect:** Each creature in the area has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to [hide](scc:mcdm.heroes.v1/skill/hide) or [sneak](scc:mcdm.heroes.v1/skill/sneak). The [aura](scc:mcdm.heroes.v1/rule.combat/aura) lasts until you end it (no action required) or until a target harms or deals damage to a creature or object.
 
 ###### Impervious Touch
 
@@ -7270,7 +7270,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic, Ranged**  |               **Main action** |
 > |--------------------------|------------------------------:|
-> | **📏 4 cube within 10**  | **🎯 Each enemy in the area** |
+> | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7349,7 +7349,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |                     **Maneuver** |
 > |------------------|---------------------------------:|
-> | **📏 4 aura**    | **🎯 Each creature in the area** |
+> | **📏 4 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Each creature in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), at the end of each of your turns, you can slide each creature in the area up to a number of squares equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
 
@@ -7375,7 +7375,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |                              **Maneuver** |
 > |------------------|------------------------------------------:|
-> | **📏 4 aura**    | **🎯 Self and each creature in the area** |
+> | **📏 4 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**    | **🎯 Self and each creature in the area** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy in the area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), and you and each ally in the area gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the end of each of your turns.
 
@@ -7416,7 +7416,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |                          **Maneuver** |
 > |------------------|--------------------------------------:|
-> | **📏 4 burst**   | **🎯 Self and each ally in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Each target is invisible until the start of your next turn.
 
@@ -7427,7 +7427,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |               **Main action** |
 > |------------------|------------------------------:|
-> | **📏 4 burst**   | **🎯 Each enemy in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7451,7 +7451,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Lightning Lord (9 Piety)
 > 
-> *Lightning bursts forth from your body in several directions.*
+> *Lightning [bursts](scc:mcdm.heroes.v1/rule.combat/burst) forth from your body in several directions.*
 > 
 > | **Area, Magic**                    |               **Main action** |
 > |------------------------------------|------------------------------:|
@@ -7472,7 +7472,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic**  |                       **Main action** |
 > |------------------|--------------------------------------:|
-> | **📏 4 burst**   | **🎯 Self and each ally in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**   | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Each target can spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). Additionally, each target can end one effect on themself that is ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, or they can stand up if [prone](scc:mcdm.heroes.v1/condition/prone).
 
@@ -7676,11 +7676,11 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Blessing of Steel (11 Piety)
 > 
-> *A protective aura defends your allies from harm.*
+> *A protective [aura](scc:mcdm.heroes.v1/rule.combat/aura) defends your allies from harm.*
 > 
 > | **Area, Magic**   |                          **Maneuver** |
 > |-------------------|--------------------------------------:|
-> | **📏 5 aura**     | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**     | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** Until the end of the encounter, any [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against a target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) and each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5.
 
@@ -7691,7 +7691,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic**   |                          **Maneuver** |
 > |-------------------|--------------------------------------:|
-> | **📏 5 aura**     | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**     | **🎯 Self and each ally in the area** |
 > 
 > **Effect:** At the end of each of your turns until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target gains 3 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
@@ -7793,7 +7793,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > **Effect:** You conjure a [size](scc:mcdm.heroes.v1/rule.character/size) 4 dragon that appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The dragon has [speed](scc:mcdm.heroes.v1/rule.character/speed) 6 and can [fly](scc:mcdm.heroes.v1/movement/fly), [stability](scc:mcdm.heroes.v1/rule.character/stability) 4, 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), immunity all to fire damage, and uses your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic). The dragon disappears at the end of the encounter, if their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 0, or if you are [dying](scc:mcdm.heroes.v1/rule.health/dying).
 > 
-> On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 cube within 1 square of them. Make the following [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy in the area.
+> On subsequent turns, you can use a main action to command the dragon to breathe magic fire in a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1 square of them. Make the following [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) targeting each enemy in the area.
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7816,7 +7816,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 5 cube within 5**  | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 5**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7833,7 +7833,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic, Ranged** |  **Main action** |
 > |-------------------------|-----------------:|
-> | **📏 5 cube within 10** |   **🎯 Special** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** |   **🎯 Special** |
 > 
 > **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the area is filled with magic darkness that your enemies can't see through, but you and your allies can.
 
@@ -7866,7 +7866,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 > 
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
@@ -7877,7 +7877,7 @@ Choose one of your domains. You gain a [heroic ability](scc:mcdm.heroes.v1/rule.
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Thorn Cage (11 Piety)
 > 
-> *Vines burst forth from the ground and bind your foe, slowly closing around them.*
+> *Vines [burst](scc:mcdm.heroes.v1/rule.combat/burst) forth from the ground and bind your foe, slowly closing around them.*
 > 
 > | **Magic, Ranged, [Strike](scc:mcdm.heroes.v1/rule.combat/strike)**  |     **Main action** |
 > |----------------------------|--------------------:|
@@ -8441,7 +8441,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > 
 > | **Area, Earth, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 2 cube within 10**        | **🎯 Each enemy in the area** |
+> | **📏 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8481,7 +8481,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Magic, Ranged, Void** |               **Main action** |
 > |-------------------------------|------------------------------:|
-> | **📏 3 cube within 10**       | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**       | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8532,7 +8532,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Magic** |               **Main action** |
 > |------------------------|------------------------------:|
-> | **📏 2 burst**         | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**         | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8553,7 +8553,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Fire, Magic, Ranged** |               **Main action** |
 > |-------------------------------|------------------------------:|
-> | **📏 3 cube within 10**       | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**       | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8602,7 +8602,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 3 cube within 10**        | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8682,7 +8682,7 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
 | Giant octopus       | 9th   | 5                 | 5 (swim)      | 3    | +2              | +0/+0/+0           | You can breathe in water. Additionally, you can target two creatures or objects<br>with your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Whenever you obtain a tier 2 or tier 3 outcome on<br>a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can automatically grab the target. You can have up to<br>eight creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed). |
 | Rhinoceros          | 9th   | 10                | 8             | 2    | +5              | +2/+2/+2           | Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of the Charge action, that<br>strike gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).                                                                                                                                                                               |
-| King terror lizard  | 10th  | 20                | 5             | 4    | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a 1 burst with the Area and Strike keywords.                                                                                                                                                                                                          |
+| King terror lizard  | 10th  | 20                | 5             | 4    | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is a 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst) with the Area and Strike keywords.                                                                                                                                                                                                          |
 
 <!-- @type: feature -->
 ##### There Is No Space Between
@@ -8714,7 +8714,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Green, Magic, Ranged** |   **Maneuver** |
 > |---------------------------------------|---------------:|
-> | **📏 3 cube within 10**               | **🎯 Special** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**               | **🎯 Special** |
 > 
 > **Effect:** Until the start of your next turn, the area gains the following effects:
 > 
@@ -8865,7 +8865,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Magic, Ranged** |                **Main action** |
 > |--------------------------------|-------------------------------:|
-> | **📏 3 cube within 10**        |  **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        |  **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8882,7 +8882,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Green, Magic** |               **Main action** |
 > |------------------------|------------------------------:|
-> | **📏 3 aura**          | **🎯 Each enemy in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**          | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8925,7 +8925,7 @@ The first time each combat round that you or a creature within 10 squares takes 
 <!-- @type: feature -->
 #### Mantle of Essence
 
-While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you exude an aura of magic whose [distance](scc:mcdm.heroes.v1/rule.combat/distance) is equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The effects within the area of the aura are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the aura at will (no action required).
+While you have 3 or more essence and are not [dying](scc:mcdm.heroes.v1/rule.health/dying), you exude an aura of magic whose [distance](scc:mcdm.heroes.v1/rule.combat/distance) is equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. The effects within the area of the [aura](scc:mcdm.heroes.v1/rule.combat/aura) are based on your specialization, as shown on the [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) Specialization Effects table. You can activate and deactivate the [aura](scc:mcdm.heroes.v1/rule.combat/aura) at will (no action required).
 
 ###### Mantle of Essence Specialization Effects Table
 
@@ -9042,7 +9042,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 4 cube within 10**        | **🎯 Each enemy in the area** |
+> | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -9076,7 +9076,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 4 cube within 10**        | **🎯 Each enemy in the area** |
+> | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -9106,7 +9106,7 @@ You can spend 10 uninterrupted minutes to create a freeform magic spell for a va
 - You create a mundane object of a [size](scc:mcdm.heroes.v1/rule.character/size) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score or smaller.
 - You construct a place of shelter suitable for twenty creatures that lasts for 24 hours and can't be detected by enemies.
 - You restore all [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to a mundane object of a [size](scc:mcdm.heroes.v1/rule.character/size) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score or smaller.
-- Choose a cube with a [size](scc:mcdm.heroes.v1/rule.character/size) up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score within 5 squares. You can fill that area with [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or natural phenomena such as fire, water, or plant life, or can clear the area of those things.
+- Choose a [cube](scc:mcdm.heroes.v1/rule.combat/cube) with a [size](scc:mcdm.heroes.v1/rule.character/size) up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score within 5 squares. You can fill that area with [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or natural phenomena such as fire, water, or plant life, or can clear the area of those things.
 - You can preserve a corpse or up to 5 pounds of food for a week, or can cause a corpse or that amount of food to instantly rot.
 - You create a seal on a surface that can't be seen or felt by anyone but you. When a creature comes adjacent to the surface, you can see and hear through the seal for as long as the creature remains adjacent to it. When you create the seal, you can decide to limit the number of creatures who activate it by choosing a creature keyword (such as Undead) or a specific name (such as Ajax the Invincible) or organization (such as the Black Iron Pact). If you do, the seal alerts you only when creatures with the keyword, name, or organizational affiliation you provide pass by it. If you create a second seal, the first one disappears. You can dispel a seal at any time (no action required).
 
@@ -9171,7 +9171,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Green, Magic, Void** | **Main action** |
 > |-------------------------------------|----------------:|
-> | **📏 4 burst**                      |  **🎯 Special** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                      |  **🎯 Special** |
 > 
 > **Effect:** The area becomes dark and verdant, with trees and plant life appearing in unoccupied spaces within it until the start of your next turn. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any ally who ends their turn in the area has [cover](scc:mcdm.heroes.v1/rule.combat/cover).
 > 
@@ -9192,7 +9192,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 
 Your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) feature no longer requires essence.
 
-Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) now radiates magic that creates a calming air. Creatures in the area of the mantle's aura have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill. If you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), the bonus to patience increases to 2 and [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge).
+Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) now radiates magic that creates a calming air. Creatures in the area of the mantle's [aura](scc:mcdm.heroes.v1/rule.combat/aura) have their starting patience increased by 1 (to a maximum of 5) during any negotiation. While in the area, you and any ally gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill. If you have 5 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), the bonus to patience increases to 2 and [tests](scc:mcdm.heroes.v1/rule.test/test) that use the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature -->
 #### Surging Essence
@@ -9233,7 +9233,7 @@ Your [elemental specialization](scc:mcdm.heroes.v1/feature.elementalist.level-1/
 
 You warp gravity around your heavenly body and can pull even the sturdiest titans toward your core. At the end of each of your turns, you target one creature or object within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and vertical pull that target up to 5 squares. If their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduces this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), they are pulled a minimum of 2 squares. This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability) for your allies.
 
-Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) improves. While in the area of the aura, enemies and objects have their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduced by an amount equal to your level.
+Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.level-4/mantle-of-essence) improves. While in the area of the [aura](scc:mcdm.heroes.v1/rule.combat/aura), enemies and objects have their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduced by an amount equal to your level.
 
 <!-- @type: feature -->
 ##### Chimeric Manifestation
@@ -9259,7 +9259,7 @@ You have the following ability.
 <!-- @type: ability -->
 > ###### Summon Source of Earth
 > 
-> *The ground rumbles as an elemental bursts forth, ready to serve.*
+> *The ground rumbles as an elemental [bursts](scc:mcdm.heroes.v1/rule.combat/burst) forth, ready to serve.*
 > 
 > | **Earth, Magic, Ranged** | **Main action** |
 > |--------------------------|----------------:|
@@ -9330,7 +9330,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Fire, Magic, Ranged** |               **Main action** |
 > |-------------------------------|------------------------------:|
-> | **📏 5 cube within 10**       | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**       | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -9358,7 +9358,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Magic** |               **Main action** |
 > |------------------------|------------------------------:|
-> | **📏 5 burst**         | **🎯 Each enemy in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**         | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -9392,7 +9392,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Earth, Magic, Ranged** |                          **Main action** |
 > |--------------------------------|-----------------------------------------:|
-> | **📏 5 cube within 10**        | **🎯 Each enemy and object in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**        | **🎯 Each enemy and object in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -9828,7 +9828,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > 
 > | **Area, Melee, Weapon** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 1 burst**          | **🎯 Each enemy in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**          | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
@@ -10096,7 +10096,7 @@ Choose one of the following abilities.
 > 
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 2 burst**  | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 > 
@@ -10471,9 +10471,9 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |                     **Maneuver** |
 > |-----------------|---------------------------------:|
-> | **📏 3 aura**   | **🎯 Each creature in the area** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**   | **🎯 Each creature in the area** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the [aura](scc:mcdm.heroes.v1/rule.combat/aura) is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
 >
 > **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
@@ -10634,7 +10634,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic, Melee, Weapon** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 3 burst**                 | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -10651,7 +10651,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic, Melee, Weapon** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 3 burst**                 | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -10710,7 +10710,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 3 burst**  | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -10725,7 +10725,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 >
@@ -10949,7 +10949,7 @@ Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is fir
 
 | **Area, Melee, Weapon** |               **Main action** |
 |-------------------------|------------------------------:|
-| **📏 1 burst**          | **🎯 Each enemy in the area** |
+| **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**          | **🎯 Each enemy in the area** |
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
@@ -11200,11 +11200,11 @@ You project a psionic field of order around your body, dampening the effects of 
 <!-- @type: ability -->
 > ###### Null Field
 > 
-> *You project an aura that dampens the power of your foes.*
+> *You project an [aura](scc:mcdm.heroes.v1/rule.combat/aura) that dampens the power of your foes.*
 > 
 > | **Area, Psionic** |                  **Maneuver** |
 > |-------------------|------------------------------:|
-> | **📏 1 aura**     | **🎯 Each enemy in the area** |
+> | **📏 1 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**     | **🎯 Each enemy in the area** |
 > 
 > **Effect:** Each target reduces their [potencies](scc:mcdm.heroes.v1/rule.character/potency) by 1.
 > 
@@ -11343,7 +11343,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > | **Area, Psionic, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
-> | **📏 1 burst**            | **🎯 Each enemy in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**            | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -11413,9 +11413,9 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
-> - **≤11:** 4 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
-> - **12-16:** 5 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT), slide 1
-> - **17+:** 6 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT), slide 2
+> - **≤11:** 4 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+> - **12-16:** 5 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)), slide 1
+> - **17+:** 6 + A damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)), slide 2
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Magnetic Strike
@@ -11496,7 +11496,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Psionic** |                  **Maneuver** |
 > |-------------------|------------------------------:|
-> | **📏 2 burst**    | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Each enemy in the area** |
 >
 > **Effect:** Each target takes psychic damage equal to twice your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score. Until the start of your next turn, the size of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability increases by 1. At the end of your current turn, each enemy in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability takes psychic damage equal to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score.
 
@@ -11594,7 +11594,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Psionic, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
-> | **📏 2 burst**            | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**            | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -11690,7 +11690,7 @@ Choose one of the following [heroic abilities](scc:mcdm.heroes.v1/rule.general/h
 >
 > | **Area, Psionic, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
-> | **📏 3 cube within 1**    | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1**    | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -11827,7 +11827,7 @@ Your [Discipline Mastery](scc:mcdm.heroes.v1/feature.null.level-1/discipline-mas
 <!-- @type: feature -->
 #### Enhanced Null Field
 
-While using your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary supernatural terrain effects of your level or lower are removed when your aura partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your aura overlaps with their location, but return when the aura no longer overlaps with them.
+While using your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability, you disrupt magic and psionic power suffusing the area around you. During combat, any temporary supernatural terrain effects of your level or lower are removed when your [aura](scc:mcdm.heroes.v1/rule.combat/aura) partially or fully overlaps with their location. Permanent supernatural terrain effects of your level or lower are temporarily negated while your [aura](scc:mcdm.heroes.v1/rule.combat/aura) overlaps with their location, but return when the [aura](scc:mcdm.heroes.v1/rule.combat/aura) no longer overlaps with them.
 
 <!-- @type: feature -->
 #### Perk
@@ -11927,7 +11927,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** You jump up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
+> **Effect:** You jump up to your [speed](scc:mcdm.heroes.v1/rule.character/speed) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the [aura](scc:mcdm.heroes.v1/rule.combat/aura) from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Synaptic Reset (9 Discipline)
@@ -11936,7 +11936,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Psionic** |                          **Maneuver** |
 > |-------------------|--------------------------------------:|
-> | **📏 3 burst**    | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target can end any conditions or effects on themself, and gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) for each condition or effect removed.
 
@@ -12210,7 +12210,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Psionic**      |               **Main action** |
 > |------------------------|------------------------------:|
-> | **📏 3 cube within 1** | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 1** | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -12955,7 +12955,7 @@ Choose one of the following abilities.
 >
 > | **Area, Ranged**        |                  **Main action** |
 > |-------------------------|---------------------------------:|
-> | **📏 3 cube within 10** | **🎯 Each creature in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each creature in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -12976,7 +12976,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic, Ranged** |                     **Maneuver** |
 > |-------------------------|---------------------------------:|
-> | **📏 3 cube within 10** | **🎯 Each creature in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each creature in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -13184,7 +13184,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |   **Maneuver** |
 > |-----------------|---------------:|
-> | **📏 3 burst**  | **🎯 Special** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Special** |
 >
 > **Effect:** A black cloud fills the area until the end of your next turn, granting you and your allies [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) against enemies. While you are in the area, whenever an enemy ends their turn in the area, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to [shift](scc:mcdm.heroes.v1/movement/shifting) to a new location within the area and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
@@ -13295,7 +13295,7 @@ Choose one of the following abilities.
 >
 > | **Magic**      |                          **Maneuver** |
 > |----------------|--------------------------------------:|
-> | **📏 4 burst** | **🎯 Self and each ally in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover) can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
 
@@ -13346,7 +13346,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 5 burst**  | **🎯 Each enemy in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **Effect:** Until the start of your next turn, any [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against a target gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
@@ -13442,13 +13442,13 @@ You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) again
 >
 > | **Area, Ranged**        |             **[Free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver)** |
 > |-------------------------|------------------------------:|
-> | **📏 2 cube within 10** | **🎯 Each enemy in the area** |
+> | **📏 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each enemy in the area** |
 >
 > **Effect:** Each target takes acid, fire, or poison damage (your choice) equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score.
 >
 > For each combat round that has passed since this ability was last used in the current encounter, the area increases by 1 and you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that must be used with this ability. After using the ability or at the end of the encounter, its area and [surges](scc:mcdm.heroes.v1/rule.resource/surge) are reset.
 >
-> **Spend 2+ Insight:** For every 2 insight spent, you increase the cube's [size](scc:mcdm.heroes.v1/rule.character/size) by 1 and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that can be used only with this ability.
+> **Spend 2+ Insight:** For every 2 insight spent, you increase the [cube](scc:mcdm.heroes.v1/rule.combat/cube)'s [size](scc:mcdm.heroes.v1/rule.character/size) by 1 and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that can be used only with this ability.
 
 <!-- @type: feature -->
 #### 11-Insight Ability
@@ -13479,7 +13479,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 2 burst**  | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -13604,7 +13604,7 @@ Choose one of the following abilities.
 > - **12-16:** 7 + A fire damage; vertical push 10
 > - **17+:** 11 + A fire damage; vertical push 15
 >
-> **Effect:** The ground beneath a 3-cube area around the target's starting position is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
+> **Effect:** The ground beneath a 3-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area around the target's starting position is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 ##### 9th-Level Harlequin Mask Abilities
 
@@ -13687,7 +13687,7 @@ Additionally, you can spend [subterfuge](scc:mcdm.heroes.v1/feature.shadow.level
 <!-- @type: class | @id: tactician -->
 ## Tactician
 
-Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw of battle, barking out commands that inspire your fellow heroes to move faster and strike more precisely. All the while, you stand between your compatriots and death, taunting the followers of evil to best you if they can.
+Strategist. Defender. Leader. With weapon in hand, you lead allies into the maw of battle, barking out commands that inspire your fellow heroes to move faster and strike more precisely. All the while, you stand between your compatriots and death, taunting the [followers](scc:mcdm.heroes.v1/rule.general/follower) of evil to best you if they can.
 
 **As a [tactician](scc:mcdm.heroes.v1/class/tactician), you have abilities that heal your allies and grant them increased damage, movement, and attacks, even as you leave your enemies struggling to respond.**
 
@@ -13809,9 +13809,9 @@ Additionally, if you have 24 hours or more before a combat encounter or negotiat
 
 The following [test](scc:mcdm.heroes.v1/rule.test/test) outcomes apply to a negotiation:
 
-- **≤11:** The Director gives you three motivations, one of which belongs to an NPC in the negotiation.
-- **12-16:** The Director gives you one motivation for an NPC in the negotiation.
-- **17+:** The Director tells you the tier 2 outcome information, and you and each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence NPCs during the negotiation.
+- **≤11:** The Director gives you three motivations, one of which belongs to an [NPC](scc:mcdm.heroes.v1/rule.general/npc) in the negotiation.
+- **12-16:** The Director gives you one motivation for an [NPC](scc:mcdm.heroes.v1/rule.general/npc) in the negotiation.
+- **17+:** The Director tells you the tier 2 outcome information, and you and each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to influence [NPCs](scc:mcdm.heroes.v1/rule.general/npc) during the negotiation.
 
 You can make this [test](scc:mcdm.heroes.v1/rule.test/test) only once for any encounter or negotiation.
 
@@ -13856,7 +13856,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 >
 > **Effect:** At any time during the target's movement, one ally can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 >
-> **Spend 1 Focus:** If the target has R < AVERAGE, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
+> **Spend 1 Focus:** If the target has R < AVERAGE, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 <!-- @type: ability | @subtype: triggered -->
 > ###### Parry
@@ -14169,9 +14169,9 @@ Choose one of the following abilities.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
-> - **≤11:** 5 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
-> - **12-16:** 9 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
-> - **17+:** 12 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **≤11:** 5 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+> - **12-16:** 9 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+> - **17+:** 12 + R damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
 > **Effect:** One ally adjacent to the target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -14218,7 +14218,7 @@ Choose one of the following abilities.
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
-> | **📏 1 burst** | **🎯 Self and each ally in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Until the start of your next turn, each target has a bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability) equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. Additionally, each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
@@ -14399,7 +14399,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area**       |                       **Main action** |
 > |----------------|--------------------------------------:|
-> | **📏 3 burst** | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge). Additionally, they can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), remove any conditions or effects on them, and stand up if they [are prone](scc:mcdm.heroes.v1/condition/prone).
 
@@ -14492,7 +14492,7 @@ Choose one of the following abilities.
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
-> | **📏 2 burst** | **🎯 Self and each ally in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** You mark two enemies within 10 squares of you. Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You and each target gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
@@ -14587,7 +14587,7 @@ You have grown your skills in strategy, wielding intricate battlefield tactics a
 <!-- @type: feature -->
 ##### Shock and Awe
 
-You have expanded your leadership skills, strengthening your followers' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+You have expanded your leadership skills, strengthening your [followers](scc:mcdm.heroes.v1/rule.general/follower)' morale and providing logistical support. During a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) or negotiation, you can obtain one automatic success on a [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the interpersonal skill group. Additionally, you can convince a group of people to help you with a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) during a [respite](scc:mcdm.heroes.v1/rule.resource/respite). If these people are available when you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for a [crafting project](scc:mcdm.heroes.v1/rule.downtime/crafting-project) in addition to undertaking another [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: feature-group | @level: 8 -->
 ### 8th-Level Features
@@ -14748,7 +14748,7 @@ Choose one of the following abilities.
 >
 > | **Area**       |                       **Main action** |
 > |----------------|--------------------------------------:|
-> | **📏 3 burst** | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) that gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against any enemy marked by you within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of their ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). A target ignores [banes](scc:mcdm.heroes.v1/rule.dice/bane) and double [banes](scc:mcdm.heroes.v1/rule.dice/bane) when making this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
@@ -15187,9 +15187,9 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
-> - **≤11:** 2 + R cold damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
-> - **12-16:** 4 + R cold damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
-> - **17+:** 6 + R cold damage; M < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **≤11:** 2 + R cold damage; M < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+> - **12-16:** 4 + R cold damage; M < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+> - **17+:** 6 + R cold damage; M < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
 > **Strained:** You are [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of your next turn. Additionally, a target [slowed](scc:mcdm.heroes.v1/condition/slowed) by this ability is [restrained](scc:mcdm.heroes.v1/condition/restrained) instead.
 
@@ -15200,7 +15200,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > | **Area, Fire, Psionic, Pyrokinesis, Ranged** |               **Main action** |
 > |----------------------------------------------|------------------------------:|
-> | **📏 3 cube within 10**                      | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**                      | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15210,7 +15210,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > **Effect:** A column of fire remains in the area until the start of your next turn. Each enemy who enters the area for the first time in a combat round or starts their turn there takes 2 fire damage.
 >
-> **Strained:** The size of the cube increases by 2, but the fire disappears at the end of your turn.
+> **Strained:** The size of the [cube](scc:mcdm.heroes.v1/rule.combat/cube) increases by 2, but the fire disappears at the end of your turn.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Kinetic Grip
@@ -15236,7 +15236,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 >
 > | **Area, Psionic, Telepathy** |               **Main action** |
 > |------------------------------|------------------------------:|
-> | **📏 1 burst**               | **🎯 Each enemy in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**               | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15244,7 +15244,7 @@ Choose two [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-abilit
 > - **12-16:** 5 psychic damage; push 1
 > - **17+:** 7 psychic damage; push 2
 >
-> **Strained:** The size of the burst increases by 2, and you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the start of your next turn.
+> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 2, and you are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the start of your next turn.
 
 <!-- @type: ability | @subtype: signature -->
 > ###### Materialize
@@ -15460,7 +15460,7 @@ You can increase the number of rounds in a [montage test](scc:mcdm.heroes.v1/rul
 <!-- @type: feature -->
 ##### Ease the Mind
 
-You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any NPC who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).
+You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation. Additionally, if you are present during a negotiation, any [NPC](scc:mcdm.heroes.v1/rule.general/npc) who has a hostile or suspicious starting attitude has their patience increased by 1 (to a maximum of 5).
 
 <!-- @type: feature -->
 ##### Ease Their Fall
@@ -15525,7 +15525,7 @@ Choose one of the following abilities.
 >
 > | **Area, Psionic, Telekinesis** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 1 burst**                 | **🎯 Each enemy in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15533,7 +15533,7 @@ Choose one of the following abilities.
 > - **12-16:** 6 damage; vertical push 4
 > - **17+:** 9 damage; vertical push 6
 >
-> **Strained:** The size of the burst increases by 1, and you are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
+> **Strained:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 1, and you are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
 
 <!-- @type: ability | @cost: 5 Clarity -->
 > ###### Levity and Gravity (5 Clarity)
@@ -15654,11 +15654,11 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Psionic, Telepathy** | **Main action** |
 > |------------------------------|----------------:|
-> | **📏 3 aura**                |  **🎯 Special** |
+> | **📏 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                |  **🎯 Special** |
 >
-> **Effect:** The aura lasts until the start of your next turn. Whenever an enemy targets an ally in the area with a ranged ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.
+> **Effect:** The [aura](scc:mcdm.heroes.v1/rule.combat/aura) lasts until the start of your next turn. Whenever an enemy targets an ally in the area with a ranged ability, the ability is negated on the ally and reflected back at the enemy. The ability deals half the damage to the enemy that it would have dealt to the ally and loses any additional effects.
 >
-> **Strained:** The size of the aura increases by 1. Whenever your aura reflects an ability, you take 2d6 damage and forget a memory, as determined by you and the Director.
+> **Strained:** The size of the [aura](scc:mcdm.heroes.v1/rule.combat/aura) increases by 1. Whenever your [aura](scc:mcdm.heroes.v1/rule.combat/aura) reflects an ability, you take 2d6 damage and forget a memory, as determined by you and the Director.
 
 <!-- @type: ability | @cost: 7 Clarity -->
 > ###### Soul Burn (7 Clarity)
@@ -15741,12 +15741,12 @@ Your [talent tradition](scc:mcdm.heroes.v1/feature.talent.level-1/talent-traditi
 <!-- @type: feature -->
 ##### Compulsion
 
-Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) using a skill from the interpersonal skill group while interacting with an NPC, you can ask them a question using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature. The NPC must answer the question truthfully to the best of their ability.
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) using a skill from the interpersonal skill group while interacting with an [NPC](scc:mcdm.heroes.v1/rule.general/npc), you can ask them a question using your [Telepathic Speech](scc:mcdm.heroes.v1/feature.talent.level-1/telepathic-speech) feature. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) must answer the question truthfully to the best of their ability.
 
 <!-- @type: feature -->
 ##### Distortion Temporal
 
-While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 aura. That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the turn.
+While you are not [dying](scc:mcdm.heroes.v1/rule.health/dying), time behaves irregularly around you in a 3 [aura](scc:mcdm.heroes.v1/rule.combat/aura). That area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, when an ally enters the area for the first time in a combat round or starts their turn there, they gain a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of the turn.
 
 <!-- @type: feature -->
 ##### Kinetic Amplifier
@@ -15928,7 +15928,7 @@ Choose one of the following abilities.
 >
 > | **Area, Chronopathy, Psionic, Ranged** |                             **Main action** |
 > |----------------------------------------|--------------------------------------------:|
-> | **📏 4 cube within 10**                | **🎯 Each creature and object in the area** |
+> | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**                | **🎯 Each creature and object in the area** |
 >
 > **Effect:** The area is frozen in time until the start of your next turn. Each object in the area is [restrained](scc:mcdm.heroes.v1/condition/restrained) and can't fall until the effect ends. Until the effect ends, creatures in the area who are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or would die stay alive, and objects in the area that are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) remain undestroyed.
 >
@@ -15953,7 +15953,7 @@ Choose one of the following abilities.
 >
 > | **Area, Psionic, Ranged, Telekinesis** |                             **Main action** |
 > |----------------------------------------|--------------------------------------------:|
-> | **📏 4 cube within 10**                | **🎯 Each creature and object in the area** |
+> | **📏 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**                | **🎯 Each creature and object in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -16092,7 +16092,7 @@ You have the following ability.
 >
 > | **Area, Psionic** |                 **Maneuver** |
 > |-------------------|-----------------------------:|
-> | **📏 3 burst**    | **🎯 Each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Each ally in the area** |
 >
 > **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) until the start of your next turn, and can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed). You can also [shift](scc:mcdm.heroes.v1/movement/shifting) up to your [speed](scc:mcdm.heroes.v1/rule.character/speed). While [flying](scc:mcdm.heroes.v1/movement/fly), a target's [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0 and can't be increased.
 >
@@ -16257,7 +16257,7 @@ Choose one of the following abilities.
 >
 > | **Area, Chronopathy, Psionic** |                 **Maneuver** |
 > |--------------------------------|-----------------------------:|
-> | **📏 2 burst**                 | **🎯 Each ally in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each ally in the area** |
 >
 > **Effect:** The targets share 6 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) among themselves, as you determine. A target can't gain more than 3 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) this way. After using this ability, you can't gain any clarity until the end of the next combat round.
 
@@ -16278,11 +16278,11 @@ Choose one of the following abilities.
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
-> - **≤11:** 2 burst
-> - **12-16:** 3 burst
-> - **17+:** 4 burst
+> - **≤11:** 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)
+> - **12-16:** 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)
+> - **17+:** 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)
 >
-> **Strained:** You can choose to reduce the size of the burst by 2 (to a minimum of 1 burst) to give the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) a +2 bonus. You take half the total damage all targets take from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
+> **Strained:** You can choose to reduce the size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) by 2 (to a minimum of 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)) to give the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) a +2 bonus. You take half the total damage all targets take from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
 
 <!-- @type: ability | @cost: 11 Clarity -->
 > ###### Gravitic Nova (11 Clarity)
@@ -16291,7 +16291,7 @@ Choose one of the following abilities.
 >
 > | **Area, Psionic, Telekinesis** |                          **Main action** |
 > |--------------------------------|-----------------------------------------:|
-> | **📏 3 burst**                 | **🎯 Each enemy and object in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each enemy and object in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -16333,7 +16333,7 @@ Choose one of the following abilities.
 >
 > | **Area, Psionic, Telepathy** |                        **Main action** |
 > |------------------------------|---------------------------------------:|
-> | **📏 3 burst**               | **🎯 Each ally and enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**               | **🎯 Each ally and enemy in the area** |
 >
 > **Effect:** You and each target ally can't obtain lower than a tier 2 outcome on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) until the start of your next turn. Each target enemy is affected by the ability's [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 >
@@ -16468,7 +16468,7 @@ Additionally, you gain drama when certain events occur during a combat encounter
 
 - The first time three or more heroes use an ability on the same turn, you gain 2 drama.
 - The first time any hero is made [winded](scc:mcdm.heroes.v1/rule.health/winded) during the encounter, you gain 2 drama.
-- Whenever a creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) rolls a natural 19 or 20, you gain 3 drama.
+- Whenever a creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) rolls a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), you gain 3 drama.
 - When you or another hero dies, you gain 10 drama.
 
 When you are dead, you continue to gain drama during combat as long as your body is intact. If you have 30 drama during the encounter in which you died, you can come back to life with 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and 0 drama (no action required). If you are still dead after the encounter in which you died, you can't gain drama during future encounters.
@@ -16499,9 +16499,9 @@ You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroe
 <!-- @type: feature -->
 #### Scene Partner
 
-Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) to interact with an NPC using a skill from the interpersonal group, you can form a bond with that NPC. When you enter into a negotiation with a bonded NPC, their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded NPC's interest by 1, you instead increase their interest by 2 (to a maximum of 5).
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) to interact with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) using a skill from the interpersonal group, you can form a bond with that [NPC](scc:mcdm.heroes.v1/rule.general/npc). When you enter into a negotiation with a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc), their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest by 1, you instead increase their interest by 2 (to a maximum of 5).
 
-You can have a number of bonds active equal to your level. When you form a bond with a new NPC that would exceed the limit, you must choose which of your active bonds to lose.
+You can have a number of bonds active equal to your level. When you form a bond with a new [NPC](scc:mcdm.heroes.v1/rule.general/npc) that would exceed the limit, you must choose which of your active bonds to lose.
 
 <!-- @type: feature -->
 #### Routines
@@ -16517,7 +16517,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area gains a +2 bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed) until the end of their turn.
 
@@ -16528,7 +16528,7 @@ You start off with the [Choreography](scc:mcdm.heroes.v1/feature.ability.troubad
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. Each chosen target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -16557,7 +16557,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area can automatically obtain a tier 3 outcome on one [test](scc:mcdm.heroes.v1/rule.test/test) made to jump, tumble, or climb as part of their movement before the end of their turn.
 
@@ -16573,7 +16573,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > | **Area, Magic, Performance** |                    **No action** |
 > |------------------------------|---------------------------------:|
-> | **📏 2 aura**                | **🎯 Each creature in the area** |
+> | **📏 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each creature in the area** |
 >
 > **Effect:** At the end of each of your turns while this performance is active, you can choose up to a number of targets equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score and [teleport](scc:mcdm.heroes.v1/movement/teleport) those targets to unoccupied spaces in the area. A target can't be [teleport](scc:mcdm.heroes.v1/movement/teleport)ed in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
@@ -16611,7 +16611,7 @@ You have the following ability.
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 2 burst**  | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16666,7 +16666,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
@@ -16838,7 +16838,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 2 burst**  | **🎯 Each enemy in the area** |
+> | **📏 2 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16846,7 +16846,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 > - **12-16:** Slide 1; I < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** Slide 2; I < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Spend 2+ Drama:** The size of the burst increases by 1 for every 2 drama spent.
+> **Spend 2+ Drama:** The size of the [burst](scc:mcdm.heroes.v1/rule.combat/burst) increases by 1 for every 2 drama spent.
 
 <!-- @type: ability | @cost: 3 Drama -->
 > ###### Quick Rewrite (3 Drama)
@@ -16855,7 +16855,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic, Ranged**     |               **Main action** |
 > |-----------------------------|------------------------------:|
-> | **📏 3 cube within 10**     | **🎯 Each enemy in the area** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10**     | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16878,9 +16878,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility) or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
-> - **≤11:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT); A < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
-> - **12-16:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT); A < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
-> - **17+:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT); A < STRONG, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand (EoT)
+> - **≤11:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)); A < WEAK[, prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)); A < AVERAGE[, prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** [Taunted](scc:mcdm.heroes.v1/condition/taunted) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)); A < STRONG, [prone and](scc:mcdm.heroes.v1/condition/prone) can't stand ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 
 ###### 5-Drama Ability
 
@@ -16893,7 +16893,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |                       **Main action** |
 > |-----------------|--------------------------------------:|
-> | **📏 3 burst**  | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Self and each ally in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -16919,7 +16919,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |                       **Main action** |
 > |-----------------|--------------------------------------:|
-> | **📏 3 burst**  | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. Any [teleport](scc:mcdm.heroes.v1/movement/teleport)ed target who was [slowed](scc:mcdm.heroes.v1/condition/slowed) is no longer [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
@@ -16976,7 +16976,7 @@ The Director determines when the target receives your notice. When the target re
 <!-- @type: feature -->
 ##### My Reputation Precedes Me
 
-You can invoke your reputation at the start of a social interaction with one or more NPCs who haven't met you before, automatically creating a bond with one of those NPCs from that group as if using your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature (above). This bond counts against the limit on active bonds from your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature. While the bond is active, all heroes present treat their [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual for the purpose of entering into a negotiation with the bonded NPC.
+You can invoke your reputation at the start of a social interaction with one or more [NPCs](scc:mcdm.heroes.v1/rule.general/npc) who haven't met you before, automatically creating a bond with one of those [NPCs](scc:mcdm.heroes.v1/rule.general/npc) from that group as if using your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature (above). This bond counts against the limit on active bonds from your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature. While the bond is active, all heroes present treat their [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 2 higher than usual for the purpose of entering into a negotiation with the bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 
 The Director can award the heroes 1 [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) to make you infamous among the group of creatures instead, and preventing you from forming this bond. Until you take action to improve your reputation, all heroes present take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with creatures in the group using skills from the interpersonal skill group. You can still use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to find allies within the group.
 
@@ -17070,7 +17070,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic, Ranged** | **Main action** |
 > |-------------------------|----------------:|
-> | **📏 3 cube within 10** |  **🎯 Special** |
+> | **📏 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** |  **🎯 Special** |
 >
 > **Effect:** The area is haunted by a swirling horde of phantoms until the end of the encounter. Allies can enter any square of the area without spending movement. At the end of each of your turns, you can make one [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that targets each enemy in the area.
 >
@@ -17120,7 +17120,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
@@ -17131,7 +17131,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn [dying](scc:mcdm.heroes.v1/rule.health/dying) while in the area gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) and ignores the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their turn.
 
@@ -17147,7 +17147,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 4 burst**  | **🎯 Each enemy in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -17164,7 +17164,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic, Melee, Weapon** |               **Main action** |
 > |--------------------------------|------------------------------:|
-> | **📏 3 burst**                 | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**                 | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -17291,7 +17291,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area can reroll the first [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) that turn that obtains a tier 2 outcome. They must use the new roll.
 
@@ -17315,7 +17315,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, a target who starts their turn in the area gains a bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) they can [shift](scc:mcdm.heroes.v1/movement/shifting) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score until the end of their turn.
 
@@ -17344,7 +17344,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Melee, Weapon** |               **Main action** |
 > |-------------------------|------------------------------:|
-> | **📏 3 burst**          | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**          | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
@@ -17413,7 +17413,7 @@ You have the following performance ability, which is usable with your [Routines]
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area gains 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) disappears at the end of the target's turn if they don't spend it.
 
@@ -17433,7 +17433,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 5 burst**  | **🎯 Each enemy in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -17448,7 +17448,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |                 **Maneuver** |
 > |-----------------|-----------------------------:|
-> | **📏 5 burst**  | **🎯 Each ally in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each ally in the area** |
 >
 > **Effect:** Until the end of the encounter, each target gains the [speed](scc:mcdm.heroes.v1/rule.character/speed) bonus, weapon [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus, disengage bonus, and [stability](scc:mcdm.heroes.v1/rule.character/stability) bonus of your currently equipped kit in addition to their own kit's bonuses.
 
@@ -17469,7 +17469,7 @@ Choose one of the following abilities.
 >
 > - **≤11:** 12 + A damage; M < WEAK, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **12-16:** 18 + A damage; M < AVERAGE, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
-> - **17+:** 24 + A damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT), or if M < STRONG, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 24 + A damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)), or if M < STRONG, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 <!-- @type: ability | @cost: 9 Drama -->
 > ###### Fight Choreography (9 Drama)
@@ -17493,7 +17493,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic**               |               **Main action** |
 > |-------------------------------|------------------------------:|
-> | **📏 Three 3 cubes within 1** | **🎯 Each enemy in the area** |
+> | **📏 Three 3 [cubes](scc:mcdm.heroes.v1/rule.combat/cube) within 1** | **🎯 Each enemy in the area** |
 >
 > **Effect:** A [prone target](scc:mcdm.heroes.v1/condition/prone) ignores this ability.
 >
@@ -17510,7 +17510,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |                          **Maneuver** |
 > |-----------------|--------------------------------------:|
-> | **📏 4 burst**  | **🎯 Self and each ally in the area** |
+> | **📏 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge), then gains 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) at the start of each combat round until the end of the encounter.
 
@@ -17527,7 +17527,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 <!-- @type: feature -->
 #### Equal Billing
 
-You can use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to form a bond with one willing hero instead of an NPC you interact with using a [test](scc:mcdm.heroes.v1/rule.test/test). If you bond with another hero, you lose your existing bond with a hero.
+You can use your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature to form a bond with one willing hero instead of an [NPC](scc:mcdm.heroes.v1/rule.general/npc) you interact with using a [test](scc:mcdm.heroes.v1/rule.test/test). If you bond with another hero, you lose your existing bond with a hero.
 
 Additionally, you and creatures you are bonded with gain a +1 bonus to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw). Whenever you or a bonded creature succeeds on a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), you and each creature you are bonded with gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your level.
 
@@ -17576,7 +17576,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > | **Area, Magic, Performance** |                **No action** |
 > |------------------------------|-----------------------------:|
-> | **📏 5 aura**                | **🎯 Each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who is dead can choose to continue taking turns after death. On each of their turns, a target can move and use either a main action or a maneuver, but can't spend [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or use [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action). At the end of the encounter, each target who chose to take turns this way turns to dust and blows away.
 
@@ -17587,7 +17587,7 @@ You have the following performance abilities, which are usable with your [Routin
 >
 > | **Area, Magic, Performance** |                         **No action** |
 > |------------------------------|--------------------------------------:|
-> | **📏 5 aura**                | **🎯 Self and each ally in the area** |
+> | **📏 5 [aura](scc:mcdm.heroes.v1/rule.combat/aura)**                | **🎯 Self and each ally in the area** |
 >
 > **Effect:** While this performance is active, each target who starts their turn in the area ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and any ability they use that imposes [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) gains a +2 bonus to the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) until the end of their turn. Additionally, once per combat round, each target can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
@@ -17653,13 +17653,13 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 >
 > | **Area, Magic, Ranged** | **Maneuver**                  |
 > |-------------------------|-------------------------------|
-> | **📏 5 cube within 10** | **🎯 Each enemy in the area** |
+> | **📏 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube) within 10** | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
-> - **≤11:** 6 damage; P < WEAK, the target can't willingly leave the area (EoT)
+> - **≤11:** 6 damage; P < WEAK, the target can't willingly leave the area ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 > - **12-16:** 8 damage; P < AVERAGE, the target can't willingly leave the area (save ends)
-> - **17+:** 12 damage; the target can't willingly leave the area (EoT); if P < STRONG, they can't willingly leave the area (save ends)
+> - **17+:** 12 damage; the target can't willingly leave the area ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)); if P < STRONG, they can't willingly leave the area (save ends)
 >
 > **Effect:** Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can't obtain lower than a tier 2 outcome on the next [test](scc:mcdm.heroes.v1/rule.test/test) they make before the start of your next turn.
 
@@ -17761,7 +17761,7 @@ Choose one of the following abilities.
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 5 burst**  | **🎯 Each enemy in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -17815,7 +17815,7 @@ You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.troubadour.level-1/dram
 <!-- @type: feature -->
 #### Greatest of All Time
 
-Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [test](scc:mcdm.heroes.v1/rule.test/test). These effects last until you start your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test), each [NPC](scc:mcdm.heroes.v1/rule.general/npc) within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [test](scc:mcdm.heroes.v1/rule.test/test). These effects last until you start your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Perk
@@ -18462,9 +18462,9 @@ You wear light armor and wield several ensnaring weapons and a polearm.
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 
-- **≤11:** 4 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
-- **12-16:** 6 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
-- **17+:** 8 + M or A damage; A < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+- **≤11:** 4 + M or A damage; A < WEAK, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+- **12-16:** 6 + M or A damage; A < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+- **17+:** 8 + M or A damage; A < STRONG, [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 
 <!-- @type: kit | @id: shining-armor -->
 #### Shining Armor
@@ -18985,7 +18985,7 @@ This section presents intrigue perks in alphabetical order.
 <!-- @type: perk -->
 #### Criminal Contacts
 
-You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity while you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an NPC secretly bankrolling a local assassin's guild, and so forth.
+You have access to a network of [criminal contacts](scc:mcdm.heroes.v1/perk/criminal-contacts). As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity while you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) in a settlement, you can ask a question of your contacts by making a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On a tier 2 outcome, you learn one piece of information that would be common among criminals—the secret entrances into a building, the location of a local criminal in hiding, the name of a local thieves' guild leader, and so forth. On a tier 3 outcome, you can instead gain knowledge that would be uncommon among criminals as long as such information exists—the location of a local treasure cache, the location of a murder weapon used in a noble's assassination, the name of an [NPC](scc:mcdm.heroes.v1/rule.general/npc) secretly bankrolling a local assassin's guild, and so forth.
 
 <!-- @type: perk -->
 #### Forgettable Face
@@ -19056,7 +19056,7 @@ Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test) to recall lore and
 <!-- @type: perk -->
 #### Specialist
 
-You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore using this skill. Additionally, your [specialist](scc:mcdm.heroes.v1/perk/specialist) knowledge grants you notoriety in fields related to the chosen skill. You treat your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 1 higher when negotiating with an NPC who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
+You are a leading expert on a particular subject. Choose one skill you have from the lore skill group. You always have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to recall lore using this skill. Additionally, your [specialist](scc:mcdm.heroes.v1/perk/specialist) knowledge grants you notoriety in fields related to the chosen skill. You treat your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) as 1 higher when negotiating with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who knows your reputation, or 2 higher if they have the same skill you chose for this perk.
 
 <!-- @type: perk -->
 #### Traveling Sage
@@ -19570,7 +19570,7 @@ You're a [disgraced](scc:mcdm.heroes.v1/complication/disgraced) member of a powe
 
 **Benefit:** You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown), and you have one skill of your choice from the interpersonal or intrigue skill group.
 
-**Drawback:** Anyone who has heard of you and is influenced by your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) treats you as infamous. Whenever you are part of a negotiation with an NPC who has an interest of 2 or lower, that NPC makes a plan to hurt you personally after the negotiation ends—and carries that plan out.
+**Drawback:** Anyone who has heard of you and is influenced by your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) treats you as infamous. Whenever you are part of a negotiation with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who has an interest of 2 or lower, that [NPC](scc:mcdm.heroes.v1/rule.general/npc) makes a plan to hurt you personally after the negotiation ends—and carries that plan out.
 
 <!-- @type: complication -->
 #### Dragon Dreams
@@ -19606,7 +19606,7 @@ Whether you're a convicted criminal, a noble stripped of their title, or a perso
 
 **Benefit:** You know one extant language of your choice (see Languages in [Orden](scc:mcdm.heroes.v1/rule.world/orden) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
-**Drawback:** If any NPC from your homeland recognizes you, whether in your homeland or elsewhere, they attempt to harm you at the Director's discretion.
+**Drawback:** If any [NPC](scc:mcdm.heroes.v1/rule.general/npc) from your homeland recognizes you, whether in your homeland or elsewhere, they attempt to harm you at the Director's discretion.
 
 <!-- @type: complication -->
 #### Fallen Immortal
@@ -19714,7 +19714,7 @@ You used to be a con artist, but those days are pretty much behind you. Being a 
 
 **Benefit:** You have one skill of your choice from the intrigue skill group.
 
-**Drawback:** Whenever you meet an NPC for the first time, the Director can decide that NPC was a victim of one of your previous cons and remembers you. If they do so, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).
+**Drawback:** Whenever you meet an [NPC](scc:mcdm.heroes.v1/rule.general/npc) for the first time, the Director can decide that [NPC](scc:mcdm.heroes.v1/rule.general/npc) was a victim of one of your previous cons and remembers you. If they do so, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token).
 
 <!-- @type: complication -->
 #### Grounded
@@ -19894,7 +19894,7 @@ Before you were a hero, you were a chef—and when you retire, you have big plan
 
 You're not sure what you did to deserve it, but for some reason, your family saddled you with an old, trusted, and extremely irritating family servant. They're supremely competent, of course, but they sometimes seem to forget who's in charge.
 
-**Benefit:** You have a [retainer](scc:mcdm.heroes.v1/rule.general/retainer), in addition to any followers you acquire through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. As usual, you can have only one [retainer](scc:mcdm.heroes.v1/rule.general/retainer) in your service at a time. (See [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) and [Retainers](scc:mcdm.heroes.v1/rule.general/retainer) in *Draw Steel: Monsters*).
+**Benefit:** You have a [retainer](scc:mcdm.heroes.v1/rule.general/retainer), in addition to any [followers](scc:mcdm.heroes.v1/rule.general/follower) you acquire through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. As usual, you can have only one [retainer](scc:mcdm.heroes.v1/rule.general/retainer) in your service at a time. (See [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards) and [Retainers](scc:mcdm.heroes.v1/rule.general/retainer) in *Draw Steel: Monsters*).
 
 **Drawback:** Outside of combat, your [retainer](scc:mcdm.heroes.v1/rule.general/retainer) is under the Director's control. The [retainer](scc:mcdm.heroes.v1/rule.general/retainer) sometimes acts without orders—always with your best interests at heart, but often in embarrassing or inconvenient ways.
 
@@ -19985,9 +19985,9 @@ You have a piratical past (and maybe a piratical present and future as well). Th
 
 When you were young, you almost died in an accident or attack, but a vision of a god or saint showed you the way to save yourself and others you loved. That event drove you into the church and gave you a strong belief in a particular religion or cause—and you can't wait to tell other people all about it.
 
-**Benefit:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one NPC into a follower (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of follower. Once you have converted an NPC into a follower this way, you can't use this benefit again until you gain a level.
+**Benefit:** As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can attempt to convert members of a community to your cause. Make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) with a difficulty determined by the Director based on the community's receptiveness to your ideas. On a success, you convert one [NPC](scc:mcdm.heroes.v1/rule.general/npc) into a [follower](scc:mcdm.heroes.v1/rule.general/follower) (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)), which you gain in addition to any [followers](scc:mcdm.heroes.v1/rule.general/follower) acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The Director determines the type of [follower](scc:mcdm.heroes.v1/rule.general/follower). Once you have converted an [NPC](scc:mcdm.heroes.v1/rule.general/npc) into a [follower](scc:mcdm.heroes.v1/rule.general/follower) this way, you can't use this benefit again until you gain a level.
 
-**Drawback:** If you fail in your conversion attempt, one of your existing followers of the Director's choice (whether gained through this complication or your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means) leaves you, their faith in you shaken. If you have no followers, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is reduced by 1. If you need to reduce your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and it's already 0, you gain no benefits from the [respite](scc:mcdm.heroes.v1/rule.resource/respite) during which you make the conversion attempt.
+**Drawback:** If you fail in your conversion attempt, one of your existing [followers](scc:mcdm.heroes.v1/rule.general/follower) of the Director's choice (whether gained through this complication or your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means) leaves you, their faith in you shaken. If you have no [followers](scc:mcdm.heroes.v1/rule.general/follower), your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is reduced by 1. If you need to reduce your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and it's already 0, you gain no benefits from the [respite](scc:mcdm.heroes.v1/rule.resource/respite) during which you make the conversion attempt.
 
 <!-- @type: complication -->
 #### Primordial Sickness
@@ -20025,11 +20025,11 @@ In times of stress, you get headaches. Psionic energy builds up in your mind unt
 
 > ###### Psychic Blast (Special Heroic Resource Cost)
 >
-> *Psionic energy bursts from your body in an iridescent shimmer.*
+> *Psionic energy [bursts](scc:mcdm.heroes.v1/rule.combat/burst) from your body in an iridescent shimmer.*
 >
 > | **Area, Psionic** |                  **Main action** |
 > |-------------------|---------------------------------:|
-> | **📏 3 burst**    | **🎯 Each creature in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**    | **🎯 Each creature in the area** |
 >
 > **Effect:** Using this ability costs all your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 >
@@ -20243,7 +20243,7 @@ You were trained as an officer, but you no longer serve. Whether you fled from a
 >
 > **Special:** If you have the [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) [tactician](scc:mcdm.heroes.v1/class/tactician) ability, the target can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) instead of a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to gain the benefit of this ability.
 
-**Drawback:** Rather than attracting followers at 3, 6, 9, and 12 [Renown](scc:mcdm.heroes.v1/rule.resource/renown), you can attract followers only when your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) reaches 4, 8, 12, and 16. See [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
+**Drawback:** Rather than attracting [followers](scc:mcdm.heroes.v1/rule.general/follower) at 3, 6, 9, and 12 [Renown](scc:mcdm.heroes.v1/rule.resource/renown), you can attract [followers](scc:mcdm.heroes.v1/rule.general/follower) only when your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) reaches 4, 8, 12, and 16. See [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards).
 
 <!-- @type: complication -->
 #### Thrill Seeker
@@ -20312,7 +20312,7 @@ You wear a loyalty collar from one of Ajax's war dogs (see *Draw Steel: Monsters
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
-> | **📏 1 burst**  | **🎯 Each enemy in the area** |
+> | **📏 1 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **Effect:** Your loyalty collar detonates, dealing fire damage equal to 5 plus your level to each target. Once you use this ability, you can't use it again until you spend 1 uninterrupted minute out of combat resetting the collar.
 
@@ -20332,7 +20332,7 @@ Being in the wrong place at the wrong time saw you caught in the middle of a con
 
 Your childhood sweetheart was royalty, and the two of you stayed close throughout the years. When your former sweetheart died, you swore an oath to dedicate your life to become a role model for their child, advising them in the ways of being a benevolent monarch.
 
-**Benefit:** You know how to talk to monarchs, aristocrats, and other wealthy leaders. When you engage with any such NPC during a negotiation, their patience increases by 1 (to a maximum of 5).
+**Benefit:** You know how to talk to monarchs, aristocrats, and other wealthy leaders. When you engage with any such [NPC](scc:mcdm.heroes.v1/rule.general/npc) during a negotiation, their patience increases by 1 (to a maximum of 5).
 
 **Drawback:** Your royal [ward](scc:mcdm.heroes.v1/complication/ward) can be a burden. Whenever you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), roll a d10. On a 1, your [ward](scc:mcdm.heroes.v1/complication/ward) contacts you and requires your help during the [respite](scc:mcdm.heroes.v1/rule.resource/respite), requiring you to spend your time helping them instead of undertaking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
@@ -20444,9 +20444,9 @@ You make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcd
 
 > **Influencing Player Characters With [Tests](scc:mcdm.heroes.v1/rule.test/test)**
 >
-> The things player characters do can't be influenced by any creature making a [test](scc:mcdm.heroes.v1/rule.test/test), whether a monster, an NPC, or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an NPC convinced them to do so with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). For most players, it's not fun to be in control of a hero and lose some of that control.
+> The things player characters do can't be influenced by any creature making a [test](scc:mcdm.heroes.v1/rule.test/test), whether a monster, an [NPC](scc:mcdm.heroes.v1/rule.general/npc), or another player character. Many players feel that their agency is taken away if they're compelled to jump into a pile of gold filled with hidden scorpions because an [NPC](scc:mcdm.heroes.v1/rule.general/npc) convinced them to do so with a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). For most players, it's not fun to be in control of a hero and lose some of that control.
 >
-> Instead, Directors should do their level best to have an NPC suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to discern another PC's motivations or honesty.
+> Instead, Directors should do their level best to have an [NPC](scc:mcdm.heroes.v1/rule.general/npc) suggest that a character dive headlong into the gold like a billionaire duck, then let the player decide what their character does. Similarly, a Director might decide that one player character can't make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to discern another PC's motivations or honesty.
 >
 > That said, if everyone in your gaming group decides to lift one or more of these restrictions after talking about it, go for it! There's no wrong way to play as long as everyone is having fun. The MCDM Safety Toolkit (available for download at *https://mcdm.gg/SafetyToolkit*) discusses how to talk about potentially problematic topics such as limiting character agency at your table.
 
@@ -20466,7 +20466,7 @@ The [Test](scc:mcdm.heroes.v1/rule.test/test) Difficulty Outcomes table shows al
 | ≤11              | Success with a consequence | Failure                    | Failure with a consequence |
 | 12-16            | Success                    | Success with a consequence | Failure                    |
 | 17+              | Success with a reward      | Success                    | Success                    |
-| Natural 19 or 20 | Success with a reward      | Success with a reward      | Success with a reward      |
+| [Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20) | Success with a reward      | Success with a reward      | Success with a reward      |
 
 Whenever the rules talk about obtaining a success on a [test](scc:mcdm.heroes.v1/rule.test/test), that includes a straight success, a success with a consequence, or a success with a reward. Whenever the rules talk about a failure on a [test](scc:mcdm.heroes.v1/rule.test/test), that includes a straight failure or a failure with a consequence.
 
@@ -20515,7 +20515,7 @@ Not all consequences need to be immediate or apparent. For example, a hero might
 
 Common consequences for failing a [test](scc:mcdm.heroes.v1/rule.test/test) include the following:
 
-- Making an NPC so upset that they storm off, or betray, attack, or otherwise attempt to harm you
+- Making an [NPC](scc:mcdm.heroes.v1/rule.general/npc) so upset that they storm off, or betray, attack, or otherwise attempt to harm you
 - Drawing the attention of a group of foes
 - Triggering a trap or hazard that captures or significantly harms you or an ally
 - Breaking an important piece of equipment that is difficult to replace or repair
@@ -20585,7 +20585,7 @@ The Director decides when the circumstances have changed enough to allow a new a
 
 If a hero attempts to sneak by an enemy guard unnoticed, should the hero make an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to sneak, or should the guard make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to catch the hero in the act? If a cultist lies to a hero about the location of a secret temple, does the cultist roll a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) to conceal the truth, or does the hero roll an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to discern the cultist's honesty?
 
-Except in certain scenarios (explored at NPCs Roll for Deceptive Tasks and [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make [tests](scc:mcdm.heroes.v1/rule.test/test) and NPCs do not. Heroes are the stars of the story, and the consequences and rewards of [tests](scc:mcdm.heroes.v1/rule.test/test) have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an NPC [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or companion, that NPC will almost certainly make [tests](scc:mcdm.heroes.v1/rule.test/test) from time to time. But for the most part, NPCs and other creatures never need to make [tests](scc:mcdm.heroes.v1/rule.test/test) when what they do opposes what the heroes do.
+Except in certain scenarios (explored at [NPCs](scc:mcdm.heroes.v1/rule.general/npc) Roll for Deceptive Tasks and [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) below), heroes make [tests](scc:mcdm.heroes.v1/rule.test/test) and [NPCs](scc:mcdm.heroes.v1/rule.general/npc) do not. Heroes are the stars of the story, and the consequences and rewards of [tests](scc:mcdm.heroes.v1/rule.test/test) have longer-lasting implications for them. There are exceptions to this rule, of course. If a hero travels with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or companion, that [NPC](scc:mcdm.heroes.v1/rule.general/npc) will almost certainly make [tests](scc:mcdm.heroes.v1/rule.test/test) from time to time. But for the most part, [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and other creatures never need to make [tests](scc:mcdm.heroes.v1/rule.test/test) when what they do opposes what the heroes do.
 
 To quickly assess the difficulty of a task opposed by one or more creatures and the [test](scc:mcdm.heroes.v1/rule.test/test) made to attempt it, the Director can use the following guidelines (though these are not hard and fast rules):
 
@@ -20597,13 +20597,13 @@ The failure consequences of opposed tasks are some of the easiest to create on t
 
 #### NPCs Roll for Deceptive Tasks
 
-At times, the Director might choose for an NPC to make a [test](scc:mcdm.heroes.v1/rule.test/test) when engaged in a deceptive task, rather than having characters attempt to note the deception. By having the NPC roll in these scenarios, the Director doesn't tip their hand to the players that subterfuge is afoot.
+At times, the Director might choose for an [NPC](scc:mcdm.heroes.v1/rule.general/npc) to make a [test](scc:mcdm.heroes.v1/rule.test/test) when engaged in a deceptive task, rather than having characters attempt to note the deception. By having the [NPC](scc:mcdm.heroes.v1/rule.general/npc) roll in these scenarios, the Director doesn't tip their hand to the players that subterfuge is afoot.
 
 For example, when an assassin attempts to ambush the heroes while they sit around a campfire, if any player says their hero is on the lookout for danger, that hero would make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice the danger. But if no one is keeping watch, the assassin makes an [Agility](scc:mcdm.heroes.v1/rule.character/agility) [test](scc:mcdm.heroes.v1/rule.test/test) to sneak up on the heroes unnoticed. If the assassin fails the [test](scc:mcdm.heroes.v1/rule.test/test), the heroes notice immediately as their assailant loudly steps on a twig. If the assassin succeeds, the heroes don't notice until the assailant is right on top of them.
 
-An NPC might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a [test](scc:mcdm.heroes.v1/rule.test/test) to discern the NPC's honesty.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) might also make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) if they lie to the heroes, as long as the heroes have no reason to believe the character would be deceptive. The Director knows if the heroes are wary in that way because the players will ask if they can make a [test](scc:mcdm.heroes.v1/rule.test/test) to discern the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s honesty.
 
-As an optional rule, the Director is also free to ask the heroes to make a [reactive test](scc:mcdm.heroes.v1/rule.test/reactive-test) to a deceptive NPC instead (see [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) below) whenever they choose.
+As an optional rule, the Director is also free to ask the heroes to make a [reactive test](scc:mcdm.heroes.v1/rule.test/reactive-test) to a deceptive [NPC](scc:mcdm.heroes.v1/rule.general/npc) instead (see [Reactive Tests](scc:mcdm.heroes.v1/rule.test/reactive-test) below) whenever they choose.
 
 <!-- @type: rule | @group: dice | @id: opposed-power-roll -->
 #### Opposed Power Rolls
@@ -20625,8 +20625,8 @@ Reactive [tests](scc:mcdm.heroes.v1/rule.test/test) are typically made in the fo
 
 **Hidden Environmental Features:** The Director asks for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice a secret door, a hidden trap, or some other disguised environmental feature.
 
-- **Hidden Foes:** The Director calls for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice a hidden foe (or they could use the rules in NPCs Roll for Deceptive Tasks above).
-- **Hidden Motives:** The Director can ask for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) during a conversation to gauge how well a hero can read an NPC, judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in NPCs Roll for Deceptive Tasks.)
+- **Hidden Foes:** The Director calls for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) to notice a hidden foe (or they could use the rules in [NPCs](scc:mcdm.heroes.v1/rule.general/npc) Roll for Deceptive Tasks above).
+- **Hidden Motives:** The Director can ask for an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) during a conversation to gauge how well a hero can read an [NPC](scc:mcdm.heroes.v1/rule.general/npc), judging whether they're lying, withholding information, or concealing an emotional response. (The Director could also use the rules in [NPCs](scc:mcdm.heroes.v1/rule.general/npc) Roll for Deceptive Tasks.)
 - **Recall Lore:** The Director might ask a hero to make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test) when dealing with a new object, a piece of information, or an event to determine what history or details the hero might already know about it.
 - **Creature and DTO [Tests](scc:mcdm.heroes.v1/rule.test/test):** Some creatures and dynamic terrain objects in *Draw Steel: Monsters* have features and abilities that require heroes to make reactive [tests](scc:mcdm.heroes.v1/rule.test/test). These [tests](scc:mcdm.heroes.v1/rule.test/test) can't be modified by skills.
 
@@ -21380,12 +21380,12 @@ When combat begins, the Director should position miniatures or tokens on a gridd
 
 > **How Big is a Square?**
 >
-> It's helpful to know how big a square is for abilities and features that heroes and NPCs can use outside of combat. By default, a square is 5 feet on all sides. But the Director can change this measurement to 2 yards, 2 meters, 1 meter, or any other measurement you prefer, as long as that scale stays consistent throughout your game.
+> It's helpful to know how big a square is for abilities and features that heroes and [NPCs](scc:mcdm.heroes.v1/rule.general/npc) can use outside of combat. By default, a square is 5 feet on all sides. But the Director can change this measurement to 2 yards, 2 meters, 1 meter, or any other measurement you prefer, as long as that scale stays consistent throughout your game.
 
 <!-- @type: rule | @group: character | @id: size -->
 #### Size and Space
 
-A creature's size indicates how many squares they occupy during combat, which defines the creature's space. If a creature's size is 1, they occupy a space of 1 square. If a creature is larger than 1 square, their size equals the number of squares they take up in length, width, and height. For example, a horse has a size of 2, which means that during combat, they occupy a space that is 2 squares long, 2 squares wide, and 2 squares high. You could also think of that space as a cube that is 2 squares on all sides.
+A creature's size indicates how many squares they occupy during combat, which defines the creature's space. If a creature's size is 1, they occupy a space of 1 square. If a creature is larger than 1 square, their size equals the number of squares they take up in length, width, and height. For example, a horse has a size of 2, which means that during combat, they occupy a space that is 2 squares long, 2 squares wide, and 2 squares high. You could also think of that space as a [cube](scc:mcdm.heroes.v1/rule.combat/cube) that is 2 squares on all sides.
 
 The minimum amount of space a creature can take up during combat is 1 square, but size 1 creatures can run the range from tiny pixies to small [polders](scc:mcdm.heroes.v1/ancestry/polder), medium [humans](scc:mcdm.heroes.v1/ancestry/human), and large [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan). As such, for creatures of size 1, that size is further broken down as 1T, 1S, 1M, or 1L—abbreviations for tiny, small, medium, and large. Size 1T is one size smaller than size 1S, two sizes smaller than 1M, three sizes smaller than 1L, and four sizes smaller than size 2. If a mechanic mentions size 1 creatures, that mechanic applies to all creatures of size 1.
 
@@ -21409,11 +21409,11 @@ The Creature Sizes table shows example sizes for creatures up to size 5, but lar
 <!-- @type: rule | @group: combat | @id: side -->
 #### Sides
 
-Every combat encounter is a conflict between two sides. The heroes and any of their allies are one side, controlled by the players. Any creatures who oppose the heroes are the other side, controlled by the Director. All creatures who oppose the heroes are on the same side, even if those creatures also oppose each other. For example, if the heroes are battling a group of bandits when a kingfissure worm suddenly bursts into the fray to devour player characters and brigands alike, the worm is still on the side of the bandits for the purpose of the game's combat rules.
+Every combat encounter is a conflict between two sides. The heroes and any of their allies are one side, controlled by the players. Any creatures who oppose the heroes are the other side, controlled by the Director. All creatures who oppose the heroes are on the same side, even if those creatures also oppose each other. For example, if the heroes are battling a group of bandits when a kingfissure worm suddenly [bursts](scc:mcdm.heroes.v1/rule.combat/burst) into the fray to devour player characters and brigands alike, the worm is still on the side of the bandits for the purpose of the game's combat rules.
 
-> **NPC Allies**
+> **[NPC](scc:mcdm.heroes.v1/rule.general/npc) Allies**
 >
-> If an NPC ally fights alongside the heroes, the Director should give the players the ally's stat block and let them control the NPC during combat. The Director has enough to worry about. As well, any missteps, mistakes, or triumphs the ally makes will be thanks to the decisions of the players and not the Director, which can make the outcome of the battle more satisfying for the players.
+> If an [NPC](scc:mcdm.heroes.v1/rule.general/npc) ally fights alongside the heroes, the Director should give the players the ally's stat block and let them control the [NPC](scc:mcdm.heroes.v1/rule.general/npc) during combat. The Director has enough to worry about. As well, any missteps, mistakes, or triumphs the ally makes will be thanks to the decisions of the players and not the Director, which can make the outcome of the battle more satisfying for the players.
 
 <!-- @type: rule | @group: combat | @id: combat-round -->
 ### Combat Round
@@ -21574,8 +21574,8 @@ If a creature who can't [burrow](scc:mcdm.heroes.v1/movement/burrow) wants to di
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might):**
 
-- **≤11:** You can move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT).
-- **12-16:** You can use your main action this turn to move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
+- **≤11:** You can move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
+- **12-16:** You can use your main action this turn to move 1 square into, out of, or through ground you are touching that can be burrowed through, and you are [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 - **17+:** You can move 1 square into, out of, or through ground you are touching that can be burrowed through.
 
 ###### Burrowing Forced Movement
@@ -22073,7 +22073,7 @@ In most circumstances, Director-controlled creatures die or are destroyed when t
 
 ##### No Recoveries
 
-Director-controlled creatures don't have [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or a [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). Any such creatures who regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) during a battle do so by way of a special item or an ability in their stat block. However, there are times when a hero might wish to use an ability that allows another creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) on an injured NPC. In such cases, a Director-controlled creature regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to one-third of their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum.
+Director-controlled creatures don't have [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or a [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries). Any such creatures who regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) during a battle do so by way of a special item or an ability in their stat block. However, there are times when a hero might wish to use an ability that allows another creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) on an injured [NPC](scc:mcdm.heroes.v1/rule.general/npc). In such cases, a Director-controlled creature regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to one-third of their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum.
 
 #### Knocking Creatures Out
 
@@ -22217,25 +22217,25 @@ Negotiation gives the heroes a chance to get what they want without combat... or
 
 Think of negotiation as something like learning a new system for combat, exploration, or investigation in an RPG. This set of rules provides a framework for roleplaying. The negotiation rules are meant to be read by players and Directors, so that both understand the rules of negotiation. If you've never played a game with a dedicated negotiation system like this, you might need to run it once or twice before you master it, similar to learning any new subsystem in an RPG. If a player hasn't read these rules, the Director and other players who have can explain them to that player during their first negotiation.
 
-Negotiation is a framework for important roleplaying encounters in which the heroes want to convince an NPC to take a particular course of action, such as lending the heroes an artifact or pardoning a prisoner. This framework tracks the NPC's interest in the hero's arguments and their patience, so that the Director know what the NPC is willing to offer and when it's time to end the scene. This framework shouldn't replace roleplaying (though it certainly can if your group doesn't enjoy that part of RPGs). It's here to help players and Directors understand the structure of a give and take conversation and give some rules that can make a high-stakes conversation even more dramatic!
+Negotiation is a framework for important roleplaying encounters in which the heroes want to convince an [NPC](scc:mcdm.heroes.v1/rule.general/npc) to take a particular course of action, such as lending the heroes an artifact or pardoning a prisoner. This framework tracks the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest in the hero's arguments and their patience, so that the Director know what the [NPC](scc:mcdm.heroes.v1/rule.general/npc) is willing to offer and when it's time to end the scene. This framework shouldn't replace roleplaying (though it certainly can if your group doesn't enjoy that part of RPGs). It's here to help players and Directors understand the structure of a give and take conversation and give some rules that can make a high-stakes conversation even more dramatic!
 
 ### When to Negotiate
 
-In order for a negotiation to occur, an NPC must have an interest in negotiating with the heroes—but must also have a reason to not simply jump on board with whatever the heroes propose. Negotiations happen only when an NPC has that internal tension between interest and reluctance. For example, if the characters ask a king to send his army into a neighboring kingdom to battle a demon incursion, the king needs to be conflicted. He wants to stop the incursion, but he doesn't want to risk the lives of his soldiers defending a foreign nation while leaving their own people unprotected. If the heroes want the help of the king's army, they need to negotiate.
+In order for a negotiation to occur, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) must have an interest in negotiating with the heroes—but must also have a reason to not simply jump on board with whatever the heroes propose. Negotiations happen only when an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has that internal tension between interest and reluctance. For example, if the characters ask a king to send his army into a neighboring kingdom to battle a demon incursion, the king needs to be conflicted. He wants to stop the incursion, but he doesn't want to risk the lives of his soldiers defending a foreign nation while leaving their own people unprotected. If the heroes want the help of the king's army, they need to negotiate.
 
-Heroes aren't expected to use the negotiation rules every time one character tries to convince an NPC to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
+Heroes aren't expected to use the negotiation rules every time one character tries to convince an [NPC](scc:mcdm.heroes.v1/rule.general/npc) to see things their way. For instance, if a hero wants information about a cult leader from a captured cultist, a single [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Lie](scc:mcdm.heroes.v1/skill/lie) skill or a [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) is likely all that's needed. A character who wants to flirt with the local alchemist to obtain a free Healing Potion likely just needs to make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Flirt](scc:mcdm.heroes.v1/skill/flirt) skill.
 
-By contrast, negotiations typically involve all the heroes interacting with one or more important named NPCs who can provide information, items, or services that dramatically change the course of an adventure. Often, this involves the heroes seeking an item of great power, a [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or companion, the services of an influential organization or nation, or a plot-twist-worthy piece of information. Convincing a lich to lend the party the legendary *Codex Mortis*, trying to convince a dragon to halt an attack on a wizard's tower, or talking the leaders of an enemy army into standing down means that a negotiation is in order.
+By contrast, negotiations typically involve all the heroes interacting with one or more important named [NPCs](scc:mcdm.heroes.v1/rule.general/npc) who can provide information, items, or services that dramatically change the course of an adventure. Often, this involves the heroes seeking an item of great power, a [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or companion, the services of an influential organization or nation, or a plot-twist-worthy piece of information. Convincing a lich to lend the party the legendary *Codex Mortis*, trying to convince a dragon to halt an attack on a wizard's tower, or talking the leaders of an enemy army into standing down means that a negotiation is in order.
 
-To negotiate successfully, the heroes must make persuasive arguments to convince NPCs to do what they want. "Do it or we kill you" is a threat that might well accompany a single [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
+To negotiate successfully, the heroes must make persuasive arguments to convince [NPCs](scc:mcdm.heroes.v1/rule.general/npc) to do what they want. "Do it or we kill you" is a threat that might well accompany a single [Might](scc:mcdm.heroes.v1/rule.character/might) [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, but it's not a negotiating tactic.
 
 #### Limits of Negotiation
 
-Some players might instinctively feel that the negotiation rules should give them something akin to mind-control superpowers. They're not used to imagining NPCs complexly, and might attempt to negotiate in situations where negotiation is either completely unreasonable or literally impossible. No matter how persuasive or well-spoken a hero is, there's no argument to be made that might convince the vile Lord Syuul to give up his pursuit of evil and become a gardener. A negotiation typically can't convince a queen to hand over her crown to the heroes and name them the new rulers of the land, or inspire a dragon to fork over every piece of treasure in their hoard. Negotiations only work when the heroes ask for something from an NPC that the NPC is willing to seriously consider giving them.
+Some players might instinctively feel that the negotiation rules should give them something akin to mind-control superpowers. They're not used to imagining [NPCs](scc:mcdm.heroes.v1/rule.general/npc) complexly, and might attempt to negotiate in situations where negotiation is either completely unreasonable or literally impossible. No matter how persuasive or well-spoken a hero is, there's no argument to be made that might convince the vile Lord Syuul to give up his pursuit of evil and become a gardener. A negotiation typically can't convince a queen to hand over her crown to the heroes and name them the new rulers of the land, or inspire a dragon to fork over every piece of treasure in their hoard. Negotiations only work when the heroes ask for something from an [NPC](scc:mcdm.heroes.v1/rule.general/npc) that the [NPC](scc:mcdm.heroes.v1/rule.general/npc) is willing to seriously consider giving them.
 
-**Negotiation is not a process that changes an NPC's character.** Rather, the heroes are trying to make an NPC understand how behaving differently would be in character. You might well be able to get the hitherto loyal lieutenant of an evil boss to reconsider the error of their ways. That's a classic dramatic trope. But even then, you're not changing their character—you're convincing them that their current evil ways are out of character. "Is this who you are? Is this how you want to be remembered?!"
+**Negotiation is not a process that changes an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s character.** Rather, the heroes are trying to make an [NPC](scc:mcdm.heroes.v1/rule.general/npc) understand how behaving differently would be in character. You might well be able to get the hitherto loyal lieutenant of an evil boss to reconsider the error of their ways. That's a classic dramatic trope. But even then, you're not changing their character—you're convincing them that their current evil ways are out of character. "Is this who you are? Is this how you want to be remembered?!"
 
-If some players want to use the negotiation system as a means to an end by having their characters say, "Just do what we tell you, or else!", you can remind them that that's not how most people, including NPCs, work. Any heroes who open with that attitude are likely to lose the negotiation before it begins.
+If some players want to use the negotiation system as a means to an end by having their characters say, "Just do what we tell you, or else!", you can remind them that that's not how most people, including [NPCs](scc:mcdm.heroes.v1/rule.general/npc), work. Any heroes who open with that attitude are likely to lose the negotiation before it begins.
 
 #### The Threat of Violence
 
@@ -22243,58 +22243,58 @@ In the real world, negotiations rarely come with a threat of immediate violence.
 
 The Director typically assumes that the underlying potential for events to turn violent is already factored into every negotiation. However, if the heroes decide to bring that threat to the forefront, then they've exited the realm of negotiation and have entered into a different type of relationship—and it's probably time to draw steel.
 
-Negotiation is about persuading someone to help you willingly because you've convinced them that meeting your [objectives](scc:mcdm.heroes.v1/rule.combat/objective) is a good idea. Working with you is wise or logical, or might make them look good. A hero can absolutely threaten someone with violence and force them to do what they want, but this is an incredibly temporary state. A threatened NPC isn't willingly doing what they've been asked. They're doing it on threat of violence, and will comply only while that threat is evident—after which, they'll likely go back to their previous behavior as soon as they think they can get away with it.
+Negotiation is about persuading someone to help you willingly because you've convinced them that meeting your [objectives](scc:mcdm.heroes.v1/rule.combat/objective) is a good idea. Working with you is wise or logical, or might make them look good. A hero can absolutely threaten someone with violence and force them to do what they want, but this is an incredibly temporary state. A threatened [NPC](scc:mcdm.heroes.v1/rule.general/npc) isn't willingly doing what they've been asked. They're doing it on threat of violence, and will comply only while that threat is evident—after which, they'll likely go back to their previous behavior as soon as they think they can get away with it.
 
 ### Negotiation Stats
 
-During negotiation, the Director assigns NPCs four temporary statistics and features—interest, patience, motivations, and pitfalls. The heroes can strike a favorable deal if they maximize an NPC's interest by making arguments that invoke the NPC's motivations and avoid their pitfalls—but they have to do all that before the NPC's patience wears out.
+During negotiation, the Director assigns [NPCs](scc:mcdm.heroes.v1/rule.general/npc) four temporary statistics and features—interest, patience, motivations, and pitfalls. The heroes can strike a favorable deal if they maximize an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest by making arguments that invoke the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations and avoid their pitfalls—but they have to do all that before the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience wears out.
 
 <!-- @type: rule | @group: negotiation | @id: interest -->
 #### Interest
 
-An NPC's interest represents how eager they are to make a deal with the heroes. Interest is graded on a scale of 0 (no interest) to 5 (the most possible interest). When a negotiation begins, an NPC's interest is between 1 and 4. If the NPC's interest goes to 5, they make a final offer and the negotiation ends (see Keep Going or Stop, below). If the NPC's interest drops to 0, they end a negotiation without offering the heroes any deal.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest represents how eager they are to make a deal with the heroes. Interest is graded on a scale of 0 (no interest) to 5 (the most possible interest). When a negotiation begins, an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is between 1 and 4. If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest goes to 5, they make a final offer and the negotiation ends (see Keep Going or Stop, below). If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest drops to 0, they end a negotiation without offering the heroes any deal.
 
 Interest increases and decreases during the negotiation based on the arguments the heroes make.
 
 <!-- @type: rule | @group: negotiation | @id: patience -->
 #### Patience
 
-An NPC's patience represents how much time and effort they're willing to devote to a negotiation. Patience is graded on a scale of 0 to 5, with each NPC starting a negotiation with their patience higher than 0. If an NPC's patience reaches 0, the NPC makes a final offer and negotiation ends (see Keep Going or Stop).
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience represents how much time and effort they're willing to devote to a negotiation. Patience is graded on a scale of 0 to 5, with each [NPC](scc:mcdm.heroes.v1/rule.general/npc) starting a negotiation with their patience higher than 0. If an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience reaches 0, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) makes a final offer and negotiation ends (see Keep Going or Stop).
 
 Patience can decrease each time the heroes make an argument during a negotiation.
 
 ##### Language and Patience
 
-If one or more heroes negotiating with an NPC can communicate in the NPC's native language (not including Caelian), then the NPC's patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an NPC can communicate in the NPC's native language, the NPC's patience increases by 2 (to a maximum of 5). Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) has information on some of the languages in the game.
+If one or more heroes negotiating with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) can communicate in the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s native language (not including Caelian), then the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience increases by 1 at the start of the negotiation (to a maximum of 5). If three or more heroes negotiating with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) can communicate in the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s native language, the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience increases by 2 (to a maximum of 5). Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) has information on some of the languages in the game.
 
 <!-- @type: rule | @group: negotiation | @id: motivation -->
 #### Motivations
 
-Each NPC has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an NPC's motivation require an easier [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) to increase the NPC's interest. Arguments that don't appeal to a motivation require a more difficult [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). See Making Arguments below for more information.
+Each [NPC](scc:mcdm.heroes.v1/rule.general/npc) has at least two motivations the heroes can appeal to with their arguments. Arguments that appeal to an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivation require an easier [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) to increase the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest. Arguments that don't appeal to a motivation require a more difficult [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). See Making Arguments below for more information.
 
-Each motivation can be successfully appealed to only once during a negotiation. To successfully appeal to a motivation, the heroes must use the motivation in an argument without mentioning one of the NPC's pitfalls or being caught in a lie.
+Each motivation can be successfully appealed to only once during a negotiation. To successfully appeal to a motivation, the heroes must use the motivation in an argument without mentioning one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s pitfalls or being caught in a lie.
 
 <!-- @type: rule | @group: negotiation | @id: pitfall -->
 #### Pitfalls
 
-Pitfalls are motivations that spark ire, discomfort, shame, fear, or some other negative response in an NPC. Using a pitfall in an argument causes an NPC's interest and patience to wane. Each NPC has at least one pitfall, and many have at least two.
+Pitfalls are motivations that spark ire, discomfort, shame, fear, or some other negative response in an [NPC](scc:mcdm.heroes.v1/rule.general/npc). Using a pitfall in an argument causes an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest and patience to wane. Each [NPC](scc:mcdm.heroes.v1/rule.general/npc) has at least one pitfall, and many have at least two.
 
-Pitfalls and motivations are two sides of the same concept. They're presented below as a single list, because what might be a motivation for one NPC is a pitfall for another. Whenever the heroes make an argument, they risk stumbling into one of an NPC's pitfalls unless they do their research beforehand or read the NPC well.
+Pitfalls and motivations are two sides of the same concept. They're presented below as a single list, because what might be a motivation for one [NPC](scc:mcdm.heroes.v1/rule.general/npc) is a pitfall for another. Whenever the heroes make an argument, they risk stumbling into one of an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s pitfalls unless they do their research beforehand or read the [NPC](scc:mcdm.heroes.v1/rule.general/npc) well.
 
 #### List of Motivations and Pitfalls
 
-An NPC can have any of the following twelve motivations or pitfalls.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) can have any of the following twelve motivations or pitfalls.
 
 <!-- @type: negotiation | @id: benevolence -->
 ##### Benevolence
 
-An NPC with the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) motivation believes in sharing what they have with others. However, an NPC involved in a negotiation must be limited in their benevolence, so that they don't just give the heroes what they need.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) motivation believes in sharing what they have with others. However, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) involved in a negotiation must be limited in their benevolence, so that they don't just give the heroes what they need.
 
-Sometimes an NPC's benevolence might extend only to a specific group of people, so that a benevolent pirate captain might share their plunder freely with the rest of their crew—but they're still plundering! Other times, an NPC's charity might be limited by the fact that they don't have much to give. A benevolent NPC might be hesitant to give the heroes help because they believe their limited resources are more necessary or could do more good somewhere else.
+Sometimes an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s benevolence might extend only to a specific group of people, so that a benevolent pirate captain might share their plunder freely with the rest of their crew—but they're still plundering! Other times, an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s charity might be limited by the fact that they don't have much to give. A benevolent [NPC](scc:mcdm.heroes.v1/rule.general/npc) might be hesitant to give the heroes help because they believe their limited resources are more necessary or could do more good somewhere else.
 
-An NPC with the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) pitfall has a cynical view of the world, believing that no creature has a right to anything just by being alive. The idea of helping others because it's the right thing to do is a preposterous, immature, or inexperienced idea to be laughed off or snuffed out.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) pitfall has a cynical view of the world, believing that no creature has a right to anything just by being alive. The idea of helping others because it's the right thing to do is a preposterous, immature, or inexperienced idea to be laughed off or snuffed out.
 
-Arguments that appeal to a [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) motivation contend that if the NPC strikes a deal with the heroes, the people the NPC cares about will benefit from the deal. Example arguments include the following:
+Arguments that appeal to a [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) motivation contend that if the [NPC](scc:mcdm.heroes.v1/rule.general/npc) strikes a deal with the heroes, the people the [NPC](scc:mcdm.heroes.v1/rule.general/npc) cares about will benefit from the deal. Example arguments include the following:
 
 - "If you lend us the Sword of Agathor, we can make Capital safer for your guild by using it to lay your enemies low."
 - "If you can [teleport](scc:mcdm.heroes.v1/movement/teleport) us into the dragon's cave, we'll give you half the wyrm's hoard once we cut off the creature's head. That could benefit generations of students at your academy!"
@@ -22302,11 +22302,11 @@ Arguments that appeal to a [benevolence](scc:mcdm.heroes.v1/negotiation/benevole
 <!-- @type: negotiation | @id: discovery -->
 ##### Discovery
 
-An NPC with the [discovery](scc:mcdm.heroes.v1/negotiation/discovery) motivation wants to learn new lore, explore forgotten places, break ground with new experiments, or uncover artifacts lost to time. Their curiosity and quest for knowledge might be driven by a specific goal, such as seeking the cure for a rare disease or a portal to a specific far-off world. Or they could be a naturally inquisitive person who simply wants to understand all they can about the timescape.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [discovery](scc:mcdm.heroes.v1/negotiation/discovery) motivation wants to learn new lore, explore forgotten places, break ground with new experiments, or uncover artifacts lost to time. Their curiosity and quest for knowledge might be driven by a specific goal, such as seeking the cure for a rare disease or a portal to a specific far-off world. Or they could be a naturally inquisitive person who simply wants to understand all they can about the timescape.
 
-An NPC with the [discovery](scc:mcdm.heroes.v1/negotiation/discovery) pitfall has no interest in finding new places, peoples, or ideas. It might be that the unknown scares them or makes them so uncomfortable that they'd rather remain ignorant. Alternatively, a previous pursuit of discovery might have turned out poorly for them.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [discovery](scc:mcdm.heroes.v1/negotiation/discovery) pitfall has no interest in finding new places, peoples, or ideas. It might be that the unknown scares them or makes them so uncomfortable that they'd rather remain ignorant. Alternatively, a previous pursuit of discovery might have turned out poorly for them.
 
-Arguments that appeal to a [discovery](scc:mcdm.heroes.v1/negotiation/discovery) motivation contend that striking a deal with the heroes will allow the NPC to gain new knowledge or acquire unique property. Example arguments include the following:
+Arguments that appeal to a [discovery](scc:mcdm.heroes.v1/negotiation/discovery) motivation contend that striking a deal with the heroes will allow the [NPC](scc:mcdm.heroes.v1/rule.general/npc) to gain new knowledge or acquire unique property. Example arguments include the following:
 
 - "Allow us to use your cipher to translate the only copy of the *Codex Mortis*, and then we'll let you read the book when we're done."
 - "We know the journey to Decant Isle is dangerous, but we're going into uncharted territory. We thought that your crew of sailors might want to be among the few mortals to lay eyes on the place."
@@ -22314,11 +22314,11 @@ Arguments that appeal to a [discovery](scc:mcdm.heroes.v1/negotiation/discovery)
 <!-- @type: negotiation | @id: freedom -->
 ##### Freedom
 
-An NPC with the [freedom](scc:mcdm.heroes.v1/negotiation/freedom) motivation wants no authority above them and desires no authority over others. They might already have personal freedom and wish to maintain that status quo, or they might wish to liberate themself or others from someone else's authority.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [freedom](scc:mcdm.heroes.v1/negotiation/freedom) motivation wants no authority above them and desires no authority over others. They might already have personal freedom and wish to maintain that status quo, or they might wish to liberate themself or others from someone else's authority.
 
-An NPC with the [freedom](scc:mcdm.heroes.v1/negotiation/freedom) pitfall believes that a world without authority is one in turmoil and chaos. They might even believe that they are the right person to rule, and that their ideals should be the ones that become the law of the land.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [freedom](scc:mcdm.heroes.v1/negotiation/freedom) pitfall believes that a world without authority is one in turmoil and chaos. They might even believe that they are the right person to rule, and that their ideals should be the ones that become the law of the land.
 
-Arguments that appeal to a freedom motivation contend that by helping the heroes, an NPC will maintain or grant freedom to themself or other people. Example arguments include the following:
+Arguments that appeal to a freedom motivation contend that by helping the heroes, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) will maintain or grant freedom to themself or other people. Example arguments include the following:
 
 - "I know you want to have the queen's authority revoked forever. She has no heirs. Give us the key to her study so that we can prove her corruption and give you a chance to topple the monarchy henceforth."
 - "If you promise to give us ten vials of Assassin's Kiss, we'll see to it that the baron's prison is emptied."
@@ -22326,13 +22326,13 @@ Arguments that appeal to a freedom motivation contend that by helping the heroes
 <!-- @type: negotiation | @id: greed -->
 ##### Greed
 
-An NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation desires wealth and resources above almost anything else. Sometimes these NPCs are misers, much like wyrms who hoard coins and gems but never spend or donate them. Others flaunt their wealth, viewing it as a sign of their station in life.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation desires wealth and resources above almost anything else. Sometimes these [NPCs](scc:mcdm.heroes.v1/rule.general/npc) are misers, much like wyrms who hoard coins and gems but never spend or donate them. Others flaunt their wealth, viewing it as a sign of their station in life.
 
-Greed-driven NPCs might share their wealth with a select group of people they love, such as a noble lord who indulges his children's every desire. Some NPCs might be greedy for resources other than money, such as a demon who wants to collect and devour souls, or a troll lord who hungers endlessly for the flesh of others.
+Greed-driven [NPCs](scc:mcdm.heroes.v1/rule.general/npc) might share their wealth with a select group of people they love, such as a noble lord who indulges his children's every desire. Some [NPCs](scc:mcdm.heroes.v1/rule.general/npc) might be greedy for resources other than money, such as a demon who wants to collect and devour souls, or a troll lord who hungers endlessly for the flesh of others.
 
-An NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) pitfall has no interest in accumulating wealth or other resources, and becomes offended if anyone tries to buy their partnership. They hold their ideals above material desires.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [greed](scc:mcdm.heroes.v1/negotiation/greed) pitfall has no interest in accumulating wealth or other resources, and becomes offended if anyone tries to buy their partnership. They hold their ideals above material desires.
 
-Arguments that appeal to a greed motivation contend that helping the heroes will increase the NPC's wealth or assets. Example arguments include the following:
+Arguments that appeal to a greed motivation contend that helping the heroes will increase the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s wealth or assets. Example arguments include the following:
 
 - "You should help us battle the overmind. Xorranox's wealth is legendary, and we'll see to it that you get your fair share."
 - "Give us a week to do research among your private collection of books, and we'll give you another ten unique tomes we found in an ancient star elf sanctuary."
@@ -22340,11 +22340,11 @@ Arguments that appeal to a greed motivation contend that helping the heroes will
 <!-- @type: negotiation | @id: higher-authority -->
 ##### Higher Authority
 
-An NPC with the [higher authority](scc:mcdm.heroes.v1/negotiation/higher-authority) motivation remains staunchly loyal to a person or force they perceive as more important than themself. This higher authority could be an organization, a deity or being of great power, a formal leader such as a noble or monarch, a mystical presence or force the NPC might not fully understand, or a person the NPC sees as an informal authority figure (an older sibling, a personal hero, and so forth).
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [higher authority](scc:mcdm.heroes.v1/negotiation/higher-authority) motivation remains staunchly loyal to a person or force they perceive as more important than themself. This higher authority could be an organization, a deity or being of great power, a formal leader such as a noble or monarch, a mystical presence or force the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might not fully understand, or a person the [NPC](scc:mcdm.heroes.v1/rule.general/npc) sees as an informal authority figure (an older sibling, a personal hero, and so forth).
 
-An NPC with the [higher authority](scc:mcdm.heroes.v1/negotiation/higher-authority) pitfall scoffs at the idea of serving another. The NPC might not believe that all people should be free, but they certainly believe that they personally shouldn't have to answer to anyone.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [higher authority](scc:mcdm.heroes.v1/negotiation/higher-authority) pitfall scoffs at the idea of serving another. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) might not believe that all people should be free, but they certainly believe that they personally shouldn't have to answer to anyone.
 
-Arguments that appeal to a higher authority motivation contend that it's in the interest of the higher authority for the NPC to strike a deal with the heroes. A hero might even tell the NPC that if the higher authority were in the NPC's position, they would take the deal. Example arguments include the following:
+Arguments that appeal to a higher authority motivation contend that it's in the interest of the higher authority for the [NPC](scc:mcdm.heroes.v1/rule.general/npc) to strike a deal with the heroes. A hero might even tell the [NPC](scc:mcdm.heroes.v1/rule.general/npc) that if the higher authority were in the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s position, they would take the deal. Example arguments include the following:
 
 - "All great creations honor your god, Malus. If you teach me to forge the Hammer of Azdul, that will be a great honor to bestow upon your god."
 - "You know what Jarith the Bold would do? He'd guide us through the vast wasteland of the desert to reach the tower. Will you be our Jarith?"
@@ -22352,11 +22352,11 @@ Arguments that appeal to a higher authority motivation contend that it's in the 
 <!-- @type: negotiation | @id: justice -->
 ##### Justice
 
-An NPC with the [justice](scc:mcdm.heroes.v1/negotiation/justice) motivation wants to see the righteous rewarded and the wicked punished, however subjective their sense of who or what is good and evil. A priest who venerates a god of nature might believe that all who protect plants and animals are righteous, and that those who harvest natural resources as miners and lumberjacks do must die. Having a justice motivation doesn't necessarily make an NPC kind or charitable.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [justice](scc:mcdm.heroes.v1/negotiation/justice) motivation wants to see the righteous rewarded and the wicked punished, however subjective their sense of who or what is good and evil. A priest who venerates a god of nature might believe that all who protect plants and animals are righteous, and that those who harvest natural resources as miners and lumberjacks do must die. Having a justice motivation doesn't necessarily make an [NPC](scc:mcdm.heroes.v1/rule.general/npc) kind or charitable.
 
-An NPC with the [justice](scc:mcdm.heroes.v1/negotiation/justice) pitfall doesn't believe that the timescape is an inherently just place, and has no interest in making it one. The world is eternal conflict, there is no such thing as justice, and anyone who thinks otherwise is a naive fool.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [justice](scc:mcdm.heroes.v1/negotiation/justice) pitfall doesn't believe that the timescape is an inherently just place, and has no interest in making it one. The world is eternal conflict, there is no such thing as justice, and anyone who thinks otherwise is a naive fool.
 
-Arguments that appeal to a justice motivation position the heroes on the good side of an NPC's sense of right and wrong. Example arguments include the following:
+Arguments that appeal to a justice motivation position the heroes on the good side of an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s sense of right and wrong. Example arguments include the following:
 
 - "You despise those who steal from nature. Allow us peacefully into your wode so we may bottle the Blessed Spring's water. We're going to use it to stop an army from felling every tree and tearing up the earth wherever they go."
 - "You think nobles are lazy barons who get rich off the backs of peasants. We want to dethrone Lord Saxton. Lend us your crew of thieves, and we'll make sure that when Saxton falls, the people can choose their own leaders."
@@ -22364,11 +22364,11 @@ Arguments that appeal to a justice motivation position the heroes on the good si
 <!-- @type: negotiation | @id: legacy -->
 ##### Legacy
 
-An NPC with the [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motivation desires fame while alive and acclaim that lasts long after their death. They hope others will know and remember their deeds, great or terrible. Some of these NPCs might even seek immortality through deification or undeath, so that the eventual shedding of their mortal coil doesn't prevent them from continuing to make history.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motivation desires fame while alive and acclaim that lasts long after their death. They hope others will know and remember their deeds, great or terrible. Some of these [NPCs](scc:mcdm.heroes.v1/rule.general/npc) might even seek immortality through deification or undeath, so that the eventual shedding of their mortal coil doesn't prevent them from continuing to make history.
 
-An NPC with a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) pitfall cares nothing about leaving a personal mark on the world. To them, such vain thinking is nothing but a waste of time.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) pitfall cares nothing about leaving a personal mark on the world. To them, such vain thinking is nothing but a waste of time.
 
-Arguments that appeal to a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motivation contend that striking a deal with the heroes increases the likelihood that people will talk about the NPC for centuries to come. Example arguments include the following:
+Arguments that appeal to a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motivation contend that striking a deal with the heroes increases the likelihood that people will talk about the [NPC](scc:mcdm.heroes.v1/rule.general/npc) for centuries to come. Example arguments include the following:
 
 - "If you give us the vizier's itinerary, I'll compose a song about your bravery in defying him, then sing it in every tavern from here to Ix!"
 - "Yes, losing the battle is a possibility. If we do, the gnolls will still come for you eventually. But if we crush our foes, imagine the honors, the histories, the poems, the statues—all of it created for you because your siege engines turned the tide."
@@ -22376,11 +22376,11 @@ Arguments that appeal to a [legacy](scc:mcdm.heroes.v1/negotiation/legacy) motiv
 <!-- @type: negotiation | @id: peace -->
 ##### Peace
 
-An NPC with the [peace](scc:mcdm.heroes.v1/negotiation/peace) motivation wants calm in their life. Under typical circumstances, they want to be left alone to run their business, farm, kingdom, criminal empire, or whatever small slice of the timescape is theirs. Some such NPCs don't have peace and need help obtaining it, while others want their peaceful status quo to be maintained.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [peace](scc:mcdm.heroes.v1/negotiation/peace) motivation wants calm in their life. Under typical circumstances, they want to be left alone to run their business, farm, kingdom, criminal empire, or whatever small slice of the timescape is theirs. Some such [NPCs](scc:mcdm.heroes.v1/rule.general/npc) don't have peace and need help obtaining it, while others want their peaceful status quo to be maintained.
 
-An NPC with the [peace](scc:mcdm.heroes.v1/negotiation/peace) pitfall hates being bored. They want excitement, drama, and danger in their life. For them, there's nothing worse than the status quo.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [peace](scc:mcdm.heroes.v1/negotiation/peace) pitfall hates being bored. They want excitement, drama, and danger in their life. For them, there's nothing worse than the status quo.
 
-Arguments that appeal to a peace motivation contend that helping the heroes will earn the NPC some peace, at least for a little while. Example arguments include the following:
+Arguments that appeal to a peace motivation contend that helping the heroes will earn the [NPC](scc:mcdm.heroes.v1/rule.general/npc) some peace, at least for a little while. Example arguments include the following:
 
 - "You have a good thing going here. A little burgling of nobles, some alcohol smuggling, and some illegal gambling dens. No one's getting hurt, but Constable Cofax is closing in on you. We could redirect him toward some real danger to the community, if you can help us set a trap for the Watchmaker."
 - "I know you don't sell to outsiders, but we need that helm. I'm going to use it to turn back a group of hobgoblins marching this way. They're not going to be as friendly as us."
@@ -22388,11 +22388,11 @@ Arguments that appeal to a peace motivation contend that helping the heroes will
 <!-- @type: negotiation | @id: power -->
 ##### Power
 
-An NPC with the [power](scc:mcdm.heroes.v1/negotiation/power) motivation covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of supernatural rituals—though why choose one method when all three together achieve the best results? Some such NPCs are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [power](scc:mcdm.heroes.v1/negotiation/power) motivation covets the authority of others. They want to increase their influence, no matter how great it already is, and maintain their domain. They might seek power through conquering others, the collection of artifacts, or through the infusion of supernatural rituals—though why choose one method when all three together achieve the best results? Some such [NPCs](scc:mcdm.heroes.v1/rule.general/npc) are world-traversing tyrants, but the petty administrators of village organizations and shrines can covet power just as hungrily.
 
-An NPC with the [power](scc:mcdm.heroes.v1/negotiation/power) pitfall has no interest in authority for themself. They might respect the authority of others, but they hate the thought of ruling over other people and roundly reject any suggestion of the idea.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [power](scc:mcdm.heroes.v1/negotiation/power) pitfall has no interest in authority for themself. They might respect the authority of others, but they hate the thought of ruling over other people and roundly reject any suggestion of the idea.
 
-Arguments that appeal to a power motivation contend that working with the heroes will increase or protect the NPC's power. Example arguments include the following:
+Arguments that appeal to a power motivation contend that working with the heroes will increase or protect the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s power. Example arguments include the following:
 
 - "Everyone knows you should be running the watch, Percy. The old lady's retiring, and our friend Baron Kuglar is naming the replacement. Now, you let us into the restricted armory, and we'll put in a good word."
 - "We know he's your brother, Your Highness, but he's older—first in line for the throne. If you help us prove he's in a cult, you become the favorite son."
@@ -22400,13 +22400,13 @@ Arguments that appeal to a power motivation contend that working with the heroes
 <!-- @type: negotiation | @id: protection -->
 ##### Protection
 
-An NPC with the [protection](scc:mcdm.heroes.v1/negotiation/protection) motivation has land, people, information, items, or an organization they want protected above all else. Keeping
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [protection](scc:mcdm.heroes.v1/negotiation/protection) motivation has land, people, information, items, or an organization they want protected above all else. Keeping
 
-their charge safe is a duty they hold dear, and aiding in that protection earns their favor. Most people have friends or family they wish to protect, but an NPC with the [protection](scc:mcdm.heroes.v1/negotiation/protection) motivation believes in doing so at any cost.
+their charge safe is a duty they hold dear, and aiding in that protection earns their favor. Most people have friends or family they wish to protect, but an [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [protection](scc:mcdm.heroes.v1/negotiation/protection) motivation believes in doing so at any cost.
 
-An NPC with the [protection](scc:mcdm.heroes.v1/negotiation/protection) pitfall is happy to leave others to fend for themselves. They don't believe it's their responsibility to protect anyone other than themself, and might be outright disgusted at the thought of risking their life or their property to protect others.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [protection](scc:mcdm.heroes.v1/negotiation/protection) pitfall is happy to leave others to fend for themselves. They don't believe it's their responsibility to protect anyone other than themself, and might be outright disgusted at the thought of risking their life or their property to protect others.
 
-Arguments that appeal to a protection motivation contend that helping the heroes allows an NPC to better protect their charge. Example arguments include the following:
+Arguments that appeal to a protection motivation contend that helping the heroes allows an [NPC](scc:mcdm.heroes.v1/rule.general/npc) to better protect their charge. Example arguments include the following:
 
 - "Dead soldiers grow the necromancer's ranks. Total annihilation is the only way to defeat her. March with us now, while her army is small, and we'll defeat her. Or you could gamble that someone else tries, fails, and suddenly she's at the border, ready to overrun your kingdom with an army tenfold larger than what it is now."
 - "I understand your grandchild is hell-bent on joining the service. I happen to have a magic suit of armor that could help them ward off the blows of monsters and ruffians. I'd be happy to give it to you, in exchange for borrowing your griffons for a few days. After all, I won't need the armor if I can simply fly over the marsh's monsters."
@@ -22414,11 +22414,11 @@ Arguments that appeal to a protection motivation contend that helping the heroes
 <!-- @type: negotiation | @id: revelry -->
 ##### Revelry
 
-An NPC with the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) motivation just wants to have fun. They enjoy socializing at parties, thrill-seeking, or indulging in other hedonistic activities. Getting pleasure out of life while spending time with people they like is paramount to such NPCs.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) motivation just wants to have fun. They enjoy socializing at parties, thrill-seeking, or indulging in other hedonistic activities. Getting pleasure out of life while spending time with people they like is paramount to such [NPCs](scc:mcdm.heroes.v1/rule.general/npc).
 
-An NPC with the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) pitfall sees social encounters and hedonism as a waste of time. They take pleasure only in work or in building their own skills and character. Others who suggest immature debauchery are not worth their time.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) pitfall sees social encounters and hedonism as a waste of time. They take pleasure only in work or in building their own skills and character. Others who suggest immature debauchery are not worth their time.
 
-Arguments that appeal to the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) motivation contend that striking a deal with the heroes will allow the NPC to get back to reveling sooner, longer, or harder. Example arguments include the following:
+Arguments that appeal to the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) motivation contend that striking a deal with the heroes will allow the [NPC](scc:mcdm.heroes.v1/rule.general/npc) to get back to reveling sooner, longer, or harder. Example arguments include the following:
 
 - "How would you like to have the most exclusive songs for your exclusive birthday celebration next week? I'll write you a whole original set list, free of charge... provided you extend me and my band here an invitation."
 - "I know you don't want to forge five Chronokinesis Crowns. How's this instead? You do that for me, and I'll give you the fourteen kegs of whiskey we found in a steel-[dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) ruin. This stuff is old, unique, and forget-your-first-name potent. You can crack a keg with your friends to celebrate a job well done."
@@ -22426,24 +22426,24 @@ Arguments that appeal to the [revelry](scc:mcdm.heroes.v1/negotiation/revelry) m
 <!-- @type: negotiation | @id: vengeance -->
 ##### Vengeance
 
-An NPC with the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) motivation wants to harm another who has hurt them. Their desire for revenge could be proportional to the harm that was inflicted upon them, or they might wish to pay back their pain with interest. In some cases, a desire for vengeance can be satisfied only by the death of another, but an NPC might wish to pay back their own suffering with embarrassment, career failure, or some other less permanent pain.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) motivation wants to harm another who has hurt them. Their desire for revenge could be proportional to the harm that was inflicted upon them, or they might wish to pay back their pain with interest. In some cases, a desire for vengeance can be satisfied only by the death of another, but an [NPC](scc:mcdm.heroes.v1/rule.general/npc) might wish to pay back their own suffering with embarrassment, career failure, or some other less permanent pain.
 
-An NPC with the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) pitfall believes that revenge solves nothing. They might have gained this belief firsthand, or they might simply not have the ambition to seek revenge—and they take a dim view of others who do.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) pitfall believes that revenge solves nothing. They might have gained this belief firsthand, or they might simply not have the ambition to seek revenge—and they take a dim view of others who do.
 
-Arguments that appeal to the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) motivation contend that the NPC can gain payback for their pain by helping the heroes. Example arguments include the following:
+Arguments that appeal to the [vengeance](scc:mcdm.heroes.v1/negotiation/vengeance) motivation contend that the [NPC](scc:mcdm.heroes.v1/rule.general/npc) can gain payback for their pain by helping the heroes. Example arguments include the following:
 
 - "The servants of Ajax killed your sister as she scoured the city for his cults. The Black Iron Pact works for the Overlord. Give us her diaries, and we might uncover the pact's hideaway and deal a great blow to your hated foes."
 - "That prankster Huckable made your trousers tear at the last council meeting. Don't you want to pay him back? We can arrange a delicious prank at the next gathering, but we need you to guarantee the safety of the [orc](scc:mcdm.heroes.v1/ancestry/orc) refugees."
 
-> **NPCs Change Over Time**
+> **[NPCs](scc:mcdm.heroes.v1/rule.general/npc) Change Over Time**
 >
-> Just like the heroes, NPCs in negotiations are complex individuals who can change over time. It's possible that the heroes might have to negotiate with the same NPC for several different favors during the course of a campaign, over which time the NPC's motivations and pitfalls might change. If the heroes turn a bandit captain with the [greed](scc:mcdm.heroes.v1/negotiation/greed) and [power](scc:mcdm.heroes.v1/negotiation/power) motivations into a temporary ally, that criminal might learn from them, changing their ways to rob only those who exploit the poor and giving those earnings to people in need. The next time the heroes negotiate with the bandit captain, they have the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) and [protection](scc:mcdm.heroes.v1/negotiation/protection) motivations.
+> Just like the heroes, [NPCs](scc:mcdm.heroes.v1/rule.general/npc) in negotiations are complex individuals who can change over time. It's possible that the heroes might have to negotiate with the same [NPC](scc:mcdm.heroes.v1/rule.general/npc) for several different favors during the course of a campaign, over which time the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations and pitfalls might change. If the heroes turn a bandit captain with the [greed](scc:mcdm.heroes.v1/negotiation/greed) and [power](scc:mcdm.heroes.v1/negotiation/power) motivations into a temporary ally, that criminal might learn from them, changing their ways to rob only those who exploit the poor and giving those earnings to people in need. The next time the heroes negotiate with the bandit captain, they have the [benevolence](scc:mcdm.heroes.v1/negotiation/benevolence) and [protection](scc:mcdm.heroes.v1/negotiation/protection) motivations.
 
 ### Opening a Negotiation
 
-A negotiation begins when the heroes ask something of an NPC and the Director deems that the circumstances require a negotiation. Those circumstances always involve the heroes requiring assistance that could change the course of the adventure, and having the NPC conflicted about working with them. Unlike combat, which can be thrust upon the heroes by violent allies or unexpected circumstances, the heroes must be the ones to willingly start a negotiation. Characters must want something from an NPC. Otherwise they have no reason to negotiate!
+A negotiation begins when the heroes ask something of an [NPC](scc:mcdm.heroes.v1/rule.general/npc) and the Director deems that the circumstances require a negotiation. Those circumstances always involve the heroes requiring assistance that could change the course of the adventure, and having the [NPC](scc:mcdm.heroes.v1/rule.general/npc) conflicted about working with them. Unlike combat, which can be thrust upon the heroes by violent allies or unexpected circumstances, the heroes must be the ones to willingly start a negotiation. Characters must want something from an [NPC](scc:mcdm.heroes.v1/rule.general/npc). Otherwise they have no reason to negotiate!
 
-The Director can decide that an NPC who has something the players want could show up at their door and ask if the heroes want to negotiate. But it's always okay for the characters to say, "Not interested," and refuse to do so.
+The Director can decide that an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who has something the players want could show up at their door and ask if the heroes want to negotiate. But it's always okay for the characters to say, "Not interested," and refuse to do so.
 
 #### Stop Combat, Start Negotiation
 
@@ -22451,11 +22451,11 @@ If a hero wants to halt hostilities to negotiate with the other side, they can u
 
 #### Starting Stats
 
-An NPC's starting negotiation stats depend on their attitude toward the heroes, as shown on the Negotiation Starting Attitudes table, and can be adjusted by the Director as they see fit. A naturally irascible NPC might have lower patience, while a hostile NPC with a greater-than-expected stake in the negotiation topic might have a higher-than-typical interest.
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting negotiation stats depend on their attitude toward the heroes, as shown on the Negotiation Starting Attitudes table, and can be adjusted by the Director as they see fit. A naturally irascible [NPC](scc:mcdm.heroes.v1/rule.general/npc) might have lower patience, while a hostile [NPC](scc:mcdm.heroes.v1/rule.general/npc) with a greater-than-expected stake in the negotiation topic might have a higher-than-typical interest.
 
 ### Uncovering Motivations
 
-If a hero wishes to figure out an NPC's motivations, they can begin by simply asking, "What do you want out of this deal?" In response, the
+If a hero wishes to figure out an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations, they can begin by simply asking, "What do you want out of this deal?" In response, the
 
 ###### Negotiation Starting Attitudes Table
 
@@ -22465,70 +22465,70 @@ If a hero wishes to figure out an NPC's motivations, they can begin by simply as
 | Suspicious | Doubts the heroes' motives but is willing to listen.                                                     | 2        | 2        |
 | Neutral    | Doesn't feel one way or the other. Would probably rather be somewhere else, but doesn't want to be rude. | 2        | 3        |
 | Open       | Willing to listen, willing to help, as long as the heroes aren't asking too much.                        | 3        | 3        |
-| Friendly   | The heroes seem like the NPC's people. The NPC is willing to give them the benefit of the doubt.         | 3        | 4        |
-| Trusting   | The NPC has reason to take the heroes at their word and will help if the characters don't screw this up. | 3        | 5        |
+| Friendly   | The heroes seem like the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s people. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) is willing to give them the benefit of the doubt.         | 3        | 4        |
+| Trusting   | The [NPC](scc:mcdm.heroes.v1/rule.general/npc) has reason to take the heroes at their word and will help if the characters don't screw this up. | 3        | 5        |
 
-NPC can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch NPC with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the NPC might offer up similar suggestions without the heroes asking, provided the NPC already has an interest of 3 or higher.
+[NPC](scc:mcdm.heroes.v1/rule.general/npc) can willingly hint at or reveal one of their motivations, usually by asking for something. For instance, a monarch [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the [greed](scc:mcdm.heroes.v1/negotiation/greed) motivation and a penchant for collecting rare animals might suggest that the heroes retrieving a griffon egg would earn the monarch's gratitude. The Director can also decide that during the natural course of the negotiation, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might offer up similar suggestions without the heroes asking, provided the [NPC](scc:mcdm.heroes.v1/rule.general/npc) already has an interest of 3 or higher.
 
-If an NPC isn't as forthcoming, or if the heroes want to learn one of the NPC's pitfalls, a hero can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) while interacting with the NPC during the negotiation, based on the tactics used to draw out the NPC. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
+If an [NPC](scc:mcdm.heroes.v1/rule.general/npc) isn't as forthcoming, or if the heroes want to learn one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s pitfalls, a hero can make a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) while interacting with the [NPC](scc:mcdm.heroes.v1/rule.general/npc) during the negotiation, based on the tactics used to draw out the [NPC](scc:mcdm.heroes.v1/rule.general/npc). The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
-- **≤11:** The hero learns no information regarding the NPC's motivations or pitfalls, and the NPC realizes the hero is trying to read them and becomes annoyed. As a consequence, the NPC's patience is reduced by 1.
-- **12-16:** The hero learns no information regarding the NPC's motivations or pitfalls.
-- **17+:** The hero learns one of the NPC's motivations or pitfalls (their choice).
+- **≤11:** The hero learns no information regarding the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls, and the [NPC](scc:mcdm.heroes.v1/rule.general/npc) realizes the hero is trying to read them and becomes annoyed. As a consequence, the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience is reduced by 1.
+- **12-16:** The hero learns no information regarding the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls.
+- **17+:** The hero learns one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls (their choice).
 
-After this [test](scc:mcdm.heroes.v1/rule.test/test) is made, the heroes can't make another [test](scc:mcdm.heroes.v1/rule.test/test) to determine the same NPC's motivations or pitfalls until they make an argument to the NPC or the negotiation ends.
+After this [test](scc:mcdm.heroes.v1/rule.test/test) is made, the heroes can't make another [test](scc:mcdm.heroes.v1/rule.test/test) to determine the same [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls until they make an argument to the [NPC](scc:mcdm.heroes.v1/rule.general/npc) or the negotiation ends.
 
 #### Outside of Negotiation
 
-While the heroes can discover an NPC's motivations or pitfalls through [tests](scc:mcdm.heroes.v1/rule.test/test) made during negotiation, they can employ other methods of investigating motivations or pitfalls before negotiation. Research or a little reconnaissance (for instance, reading the NPC's diary or talking to their closest friends) can reveal quite a bit about a person!
+While the heroes can discover an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls through [tests](scc:mcdm.heroes.v1/rule.test/test) made during negotiation, they can employ other methods of investigating motivations or pitfalls before negotiation. Research or a little reconnaissance (for instance, reading the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s diary or talking to their closest friends) can reveal quite a bit about a person!
 
 ### Making Arguments
 
-As part of their initial request to an NPC in a negotiation, a hero makes an argument as to why the NPC should give the heroes what they want. The hero might offer to do something in exchange as part of their argument, such as clearing bandits from a forest, handing over a piece of treasure, or slaying a dragon for the NPC. Or instead of offering something, the hero could attempt to convince the NPC that it's in their own best interest to help—or even that it's a moral imperative. For example, a hero could appeal to a knight's sense of duty, the potential wealth a mercenary could make, or the final wish of a queen's dearly departed grandmother as part of an argument. NPCs who admire the heroes are more likely to respond to compliments and buttering up, while those who fear the heroes are more likely to respond to intimidation and awe.
+As part of their initial request to an [NPC](scc:mcdm.heroes.v1/rule.general/npc) in a negotiation, a hero makes an argument as to why the [NPC](scc:mcdm.heroes.v1/rule.general/npc) should give the heroes what they want. The hero might offer to do something in exchange as part of their argument, such as clearing bandits from a forest, handing over a piece of treasure, or slaying a dragon for the [NPC](scc:mcdm.heroes.v1/rule.general/npc). Or instead of offering something, the hero could attempt to convince the [NPC](scc:mcdm.heroes.v1/rule.general/npc) that it's in their own best interest to help—or even that it's a moral imperative. For example, a hero could appeal to a knight's sense of duty, the potential wealth a mercenary could make, or the final wish of a queen's dearly departed grandmother as part of an argument. [NPCs](scc:mcdm.heroes.v1/rule.general/npc) who admire the heroes are more likely to respond to compliments and buttering up, while those who fear the heroes are more likely to respond to intimidation and awe.
 
-Arguments need a justification as to why they're true. "Helping us defeat Lord Saxton is good for you in the long run," is half an argument, but the hero also needs to explain why this is the case. "Helping us defeat Lord Saxton is good for you in the long run, because we know he's coming for your kingdom after Bedegar falls!" If a hero makes half an argument, the NPC might follow up with questions such as, "Why do you say that?" or "What makes you think that's true?" to get the full argument from them.
+Arguments need a justification as to why they're true. "Helping us defeat Lord Saxton is good for you in the long run," is half an argument, but the hero also needs to explain why this is the case. "Helping us defeat Lord Saxton is good for you in the long run, because we know he's coming for your kingdom after Bedegar falls!" If a hero makes half an argument, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might follow up with questions such as, "Why do you say that?" or "What makes you think that's true?" to get the full argument from them.
 
-One hero makes an argument to an NPC, but the players can discuss the details of the argument out of character beforehand. It's up to the group to decide how much discussion to have before making an argument, and to decide what argument the players think will best sway the NPC.
+One hero makes an argument to an [NPC](scc:mcdm.heroes.v1/rule.general/npc), but the players can discuss the details of the argument out of character beforehand. It's up to the group to decide how much discussion to have before making an argument, and to decide what argument the players think will best sway the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 
 This is a good topic for discussion before a group actually gets into a negotiation, so everyone knows the other players' thoughts. Some groups have the most fun without any around-the-table discussion, while others prefer being able to strategize as often as possible.
 
 #### Appeal to Motivation
 
-If an argument doesn't include a pitfall and appeals to one of the NPC's motivations that hasn't already been appealed to, the hero making the argument can make an medium [test](scc:mcdm.heroes.v1/rule.test/test) to attempt to sway the NPC with the argument. Depending on the argument, this can be a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using any applicable skill—most commonly a skill from the interpersonal skill group. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
+If an argument doesn't include a pitfall and appeals to one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations that hasn't already been appealed to, the hero making the argument can make an medium [test](scc:mcdm.heroes.v1/rule.test/test) to attempt to sway the [NPC](scc:mcdm.heroes.v1/rule.general/npc) with the argument. Depending on the argument, this can be a [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) using any applicable skill—most commonly a skill from the interpersonal skill group. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
-- **≤11:** The NPC's patience decreases by 1.
-- **12-16:** The NPC's interest increases by 1, and their patience decreases by 1.
-- **17+:** The NPC's interest increases by 1, and their patience doesn't change.
+- **≤11:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience decreases by 1.
+- **12-16:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest increases by 1, and their patience decreases by 1.
+- **17+:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest increases by 1, and their patience doesn't change.
 
 At the Director's discretion, a particularly well-roleplayed or well-reasoned argument automatically counts as a tier 3 outcome without a [test](scc:mcdm.heroes.v1/rule.test/test). Good roleplaying should be rewarded!
 
-If the heroes attempt to appeal to a motivation that's already been appealed to, the NPC's interest remains the same and their patience decreases by 1.
+If the heroes attempt to appeal to a motivation that's already been appealed to, the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest remains the same and their patience decreases by 1.
 
 > **Appealing to Multiple Motivations**
 >
-> If a hero makes an argument that appears to appeal to more than one of an NPC's motivations, the Director can ask for clarification. After listing the motivations it seemed as though the player was trying to appeal to, they can ask the player to pick one from the list. If the player had another motivation in mind, it's up to the Director whether the argument appealed to that specific motivation or not.
+> If a hero makes an argument that appears to appeal to more than one of an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations, the Director can ask for clarification. After listing the motivations it seemed as though the player was trying to appeal to, they can ask the player to pick one from the list. If the player had another motivation in mind, it's up to the Director whether the argument appealed to that specific motivation or not.
 
 #### No Motivation or Pitfall
 
-If an argument doesn't include one of the NPC's motivations or pitfalls, the hero who makes the argument must make a more difficult [test](scc:mcdm.heroes.v1/rule.test/test) to appeal to the NPC. The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
+If an argument doesn't include one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls, the hero who makes the argument must make a more difficult [test](scc:mcdm.heroes.v1/rule.test/test) to appeal to the [NPC](scc:mcdm.heroes.v1/rule.general/npc). The [test](scc:mcdm.heroes.v1/rule.test/test) has the following outcomes:
 
 **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 
-- **≤11:** The NPC's patience decreases by 1, and their interest decreases by 1.
-- **12-16:** The NPC's patience decreases by 1.
-- **17+:** The NPC's interest increases by 1, and their patience decreases by 1.
+- **≤11:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience decreases by 1, and their interest decreases by 1.
+- **12-16:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience decreases by 1.
+- **17+:** The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest increases by 1, and their patience decreases by 1.
 
-**Effect:** On a natural 19 or 20, the NPC's patience remains the same.
+**Effect:** On a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience remains the same.
 
 If the heroes try to use the same argument without a pitfall or motivation twice, the [test](scc:mcdm.heroes.v1/rule.test/test) automatically obtains a tier 1 outcome.
 
 #### Caught in a Lie
 
-If a hero lies to an NPC with an argument that fails to increase the NPC's interest, the Director can decide that the NPC catches the lie and is offended by it. The NPC's interest decreases by 1, in addition to any decrease imposed by the failure.
+If a hero lies to an [NPC](scc:mcdm.heroes.v1/rule.general/npc) with an argument that fails to increase the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest, the Director can decide that the [NPC](scc:mcdm.heroes.v1/rule.general/npc) catches the lie and is offended by it. The [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest decreases by 1, in addition to any decrease imposed by the failure.
 
 > **Everyone Can Participate**
 >
@@ -22536,23 +22536,23 @@ If a hero lies to an NPC with an argument that fails to increase the NPC's inter
 
 #### Pitfall Used
 
-If an argument uses one of the NPC's pitfalls, it automatically fails and the NPC's interest and patience each decrease by 1. The NPC might also warn the heroes not to treat them in such a way again.
+If an argument uses one of the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s pitfalls, it automatically fails and the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest and patience each decrease by 1. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) might also warn the heroes not to treat them in such a way again.
 
 #### Renown and Negotiation
 
-[Renown](scc:mcdm.heroes.v1/rule.resource/renown) determines whether a hero's fame (or infamy) has any sway over an NPC. A hero's reputation can make a negotiation easier, provided that hero knows how to capitalize on it.
+[Renown](scc:mcdm.heroes.v1/rule.resource/renown) determines whether a hero's fame (or infamy) has any sway over an [NPC](scc:mcdm.heroes.v1/rule.general/npc). A hero's reputation can make a negotiation easier, provided that hero knows how to capitalize on it.
 
-During a negotiation, an NPC has an **Impression score** that determines the amount of [Renown](scc:mcdm.heroes.v1/rule.resource/renown) needed to influence them with fame alone (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This score matters only if the NPC knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's [Renown](scc:mcdm.heroes.v1/rule.resource/renown). (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the NPC does know of the hero and has an Impression score that is equal to or lower than the hero's [Renown](scc:mcdm.heroes.v1/rule.resource/renown), the NPC can be influenced by that hero's reputation.
+During a negotiation, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has an **Impression score** that determines the amount of [Renown](scc:mcdm.heroes.v1/rule.resource/renown) needed to influence them with fame alone (see [Renown](scc:mcdm.heroes.v1/rule.resource/renown) in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)). This score matters only if the [NPC](scc:mcdm.heroes.v1/rule.general/npc) knows of the heroes. A dragon who slumbered away the last hundred years and was just woken up to negotiate can't be influenced by a hero's [Renown](scc:mcdm.heroes.v1/rule.resource/renown). (By the way, it's a terrible idea to wake a dragon, even if they do know you're famous.) If the [NPC](scc:mcdm.heroes.v1/rule.general/npc) does know of the hero and has an Impression score that is equal to or lower than the hero's [Renown](scc:mcdm.heroes.v1/rule.resource/renown), the [NPC](scc:mcdm.heroes.v1/rule.general/npc) can be influenced by that hero's reputation.
 
-The higher an NPC's Impression score, the harder they are to influence with [Renown](scc:mcdm.heroes.v1/rule.resource/renown). A small-time brigand has a lower Impression score than a monarch who meets with powerful and famous people all the time. The NPCs and Impression table provides examples of different archetypical NPC Impression scores. If a creature has a level, then their Impression score equals their level unless the Director deems otherwise.
+The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s Impression score, the harder they are to influence with [Renown](scc:mcdm.heroes.v1/rule.resource/renown). A small-time brigand has a lower Impression score than a monarch who meets with powerful and famous people all the time. The [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and Impression table provides examples of different archetypical [NPC](scc:mcdm.heroes.v1/rule.general/npc) Impression scores. If a creature has a level, then their Impression score equals their level unless the Director deems otherwise.
 
 ##### Fame or Infamy?
 
-If a hero has enough [Renown](scc:mcdm.heroes.v1/rule.resource/renown) for their score to influence an NPC during negotiation, the Director decides if the hero is famous or infamous to the NPC. If the NPC appreciates a character's deeds and views them as a hero who makes the world a better place, that hero is famous to them. If the NPC believes the hero's accomplishments make the world worse and views them as an enemy, the hero is infamous to the NPC.
+If a hero has enough [Renown](scc:mcdm.heroes.v1/rule.resource/renown) for their score to influence an [NPC](scc:mcdm.heroes.v1/rule.general/npc) during negotiation, the Director decides if the hero is famous or infamous to the [NPC](scc:mcdm.heroes.v1/rule.general/npc). If the [NPC](scc:mcdm.heroes.v1/rule.general/npc) appreciates a character's deeds and views them as a hero who makes the world a better place, that hero is famous to them. If the [NPC](scc:mcdm.heroes.v1/rule.general/npc) believes the hero's accomplishments make the world worse and views them as an enemy, the hero is infamous to the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
 
 ###### NPCs and Impresion Table
 
-| Impression | Example NPC                                                 |
+| Impression | Example [NPC](scc:mcdm.heroes.v1/rule.general/npc)                                                 |
 |------------|-------------------------------------------------------------|
 | 1          | Brigand leader, commoner, shop owner                        |
 | 2          | Knight, local guildmaster, professor                        |
@@ -22569,59 +22569,59 @@ If a hero has enough [Renown](scc:mcdm.heroes.v1/rule.resource/renown) for their
 
 ##### Influencing Tests
 
-If a hero is famous to an NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied. If they are infamous to the NPC, they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Brag](scc:mcdm.heroes.v1/skill/brag), [Interrogate](scc:mcdm.heroes.v1/skill/interrogate), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied. A hero gains this [edge](scc:mcdm.heroes.v1/rule.dice/edge) even if they don't have the appropriate skill.
+If a hero is famous to an [NPC](scc:mcdm.heroes.v1/rule.general/npc), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Flirt](scc:mcdm.heroes.v1/skill/flirt), Lead, or [Persuade](scc:mcdm.heroes.v1/skill/persuade) skill could be applied. If they are infamous to the [NPC](scc:mcdm.heroes.v1/rule.general/npc), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) when making arguments to which the [Brag](scc:mcdm.heroes.v1/skill/brag), [Interrogate](scc:mcdm.heroes.v1/skill/interrogate), or [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill could be applied. A hero gains this [edge](scc:mcdm.heroes.v1/rule.dice/edge) even if they don't have the appropriate skill.
 
 ### NPC Response and Offer
 
-After a hero makes an argument, an NPC responds in one of three ways:
+After a hero makes an argument, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) responds in one of three ways:
 
-- An NPC responds positively if the heroes increase the NPC's interest. "That's an excellent point." "You've given me much to consider." "Fair enough." "Makes sense to me."
-- An NPC responds negatively if the heroes decrease their interest. "I don't buy that." "Poppycock!" "I hear you, but I disagree." "That's not going to sway me."
-- An NPC responds with impatience if the heroes fail to increase or decrease their interest. "I've heard that before." "Are you going to offer me anything real?" "This debate is tiresome." "BORING!"
+- An [NPC](scc:mcdm.heroes.v1/rule.general/npc) responds positively if the heroes increase the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest. "That's an excellent point." "You've given me much to consider." "Fair enough." "Makes sense to me."
+- An [NPC](scc:mcdm.heroes.v1/rule.general/npc) responds negatively if the heroes decrease their interest. "I don't buy that." "Poppycock!" "I hear you, but I disagree." "That's not going to sway me."
+- An [NPC](scc:mcdm.heroes.v1/rule.general/npc) responds with impatience if the heroes fail to increase or decrease their interest. "I've heard that before." "Are you going to offer me anything real?" "This debate is tiresome." "BORING!"
 
-Unless the NPC is deceitful, it should be clear to the heroes if their argument helped convince the NPC, if they need to take a new approach, or if the argument actually did more harm than good.
+Unless the [NPC](scc:mcdm.heroes.v1/rule.general/npc) is deceitful, it should be clear to the heroes if their argument helped convince the [NPC](scc:mcdm.heroes.v1/rule.general/npc), if they need to take a new approach, or if the argument actually did more harm than good.
 
-The initial response should come with an offer (or a refusal to make an offer) based on the NPC's current interest. If a hero's argument reduces an NPC's patience to 0, the NPC lets the heroes know that this is their final offer.
+The initial response should come with an offer (or a refusal to make an offer) based on the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s current interest. If a hero's argument reduces an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience to 0, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) lets the heroes know that this is their final offer.
 
 #### Interest 5 ("Yes, and...")
 
-If the NPC's interest is 5, they offer everything the heroes initially asked for—and then sweeten the deal. This represents the best possible outcome for the heroes. If they offered to perform any services or make payments as part of the deal, the NPC might waive those obligations, allowing the heroes to get what they want for free. Alternatively, the NPC might hold the heroes to any offers they made and instead offer an extra service or item on top of what was asked for.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 5, they offer everything the heroes initially asked for—and then sweeten the deal. This represents the best possible outcome for the heroes. If they offered to perform any services or make payments as part of the deal, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might waive those obligations, allowing the heroes to get what they want for free. Alternatively, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might hold the heroes to any offers they made and instead offer an extra service or item on top of what was asked for.
 
 For example, if the heroes asked the boss of a thieves' guild for that organization's help in standing against Lord Saxton, the guildmaster might pledge to send a unit of elite assassins to aid in the battle against that tyrannical noble, and then offer the heroes a quiver filled with explosive arrows to give them an additional advantage in the fight.
 
-The NPC should let the heroes know that this is the best offer they can make.
+The [NPC](scc:mcdm.heroes.v1/rule.general/npc) should let the heroes know that this is the best offer they can make.
 
 #### Interest 4 ("Yes.")
 
-If the NPC's interest is 4, they offer the heroes everything they asked for but won't sweeten the deal. The NPC also accepts anything the heroes have offered as part of the deal with this outcome.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 4, they offer the heroes everything they asked for but won't sweeten the deal. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) also accepts anything the heroes have offered as part of the deal with this outcome.
 
-For example, if the heroes offered to help spring a guild thief from prison in exchange for the elite assassins of the thieves' guild standing against Lord Saxton, the guildmaster agrees to those terms without attempting to adjust anything. This likely ends the negotiation, but it's possible that the heroes could push for a little more, provided the NPC has the patience for another argument. A Director could prompt the heroes to push for more by having the NPC ask a leading question, such as, "Is there anything else?" or "What else do you want from me?"
+For example, if the heroes offered to help spring a guild thief from prison in exchange for the elite assassins of the thieves' guild standing against Lord Saxton, the guildmaster agrees to those terms without attempting to adjust anything. This likely ends the negotiation, but it's possible that the heroes could push for a little more, provided the [NPC](scc:mcdm.heroes.v1/rule.general/npc) has the patience for another argument. A Director could prompt the heroes to push for more by having the [NPC](scc:mcdm.heroes.v1/rule.general/npc) ask a leading question, such as, "Is there anything else?" or "What else do you want from me?"
 
 #### Interest 3 ("Yes, but...")
 
-If the NPC's interest is 3, they offer the heroes what they want in exchange for everything the heroes offered... then they ask for a little extra, such as a favor or a payment from the characters. If the heroes offered to free a thieves' guild member from prison in exchange for the service of the organization's assassins, the guildmaster might ask them to free an additional prisoner, or to grant the prisoner they rescue a sum of cash or a magic weapon.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 3, they offer the heroes what they want in exchange for everything the heroes offered... then they ask for a little extra, such as a favor or a payment from the characters. If the heroes offered to free a thieves' guild member from prison in exchange for the service of the organization's assassins, the guildmaster might ask them to free an additional prisoner, or to grant the prisoner they rescue a sum of cash or a magic weapon.
 
 #### Interest 2 ("No, but...")
 
-If the NPC's interest is 2, the NPC can't give the heroes what they want. However, they are willing to offer other less impactful goods or services in exchange for whatever the heroes have promised. The guildmaster might not be willing to spare any troops to fight Lord Saxton, but could instead offer the latest spy reports on Saxton's movements in exchange for the jailbreak.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 2, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) can't give the heroes what they want. However, they are willing to offer other less impactful goods or services in exchange for whatever the heroes have promised. The guildmaster might not be willing to spare any troops to fight Lord Saxton, but could instead offer the latest spy reports on Saxton's movements in exchange for the jailbreak.
 
 #### Interest 1 ("No.")
 
-If the NPC's interest is 1, they outright reject the heroes' idea without a counteroffer. If the NPC still has patience, they might press the heroes for a better deal, saying something like, "Why should we risk our necks to help you fight Lord Saxton? What's really in it for the thieves' guild, other than a short, brutal end when you inevitably fail?"
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 1, they outright reject the heroes' idea without a counteroffer. If the [NPC](scc:mcdm.heroes.v1/rule.general/npc) still has patience, they might press the heroes for a better deal, saying something like, "Why should we risk our necks to help you fight Lord Saxton? What's really in it for the thieves' guild, other than a short, brutal end when you inevitably fail?"
 
 #### Interest 0 ("No, and...")
 
-If an NPC's interest is 0, they offer nothing, refuse to negotiate further, and seek to harm the heroes. The NPC might attack immediately, or they could take a different approach, perhaps spreading malicious rumors about the characters, sending assassins after them, or otherwise making their lives difficult. If the heroes don't want to be at odds with the NPC, they'll need to offer a valuable gift or undertake a quest just to make amends.
+If an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 0, they offer nothing, refuse to negotiate further, and seek to harm the heroes. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) might attack immediately, or they could take a different approach, perhaps spreading malicious rumors about the characters, sending assassins after them, or otherwise making their lives difficult. If the heroes don't want to be at odds with the [NPC](scc:mcdm.heroes.v1/rule.general/npc), they'll need to offer a valuable gift or undertake a quest just to make amends.
 
-It is impossible to continue a negotiation when an NPC's interest drops to 0.
+It is impossible to continue a negotiation when an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest drops to 0.
 
 ### Keep Going or Stop
 
-If an NPC still has patience after making an offer and their interest is between 1 and 4, the heroes can make another argument to attempt to improve the deal. Alternatively, they can accept the offer and end the negotiation. Let the players drive this decision. You can always have an NPC show they have patience remaining by asking, "Is there anything else?"
+If an [NPC](scc:mcdm.heroes.v1/rule.general/npc) still has patience after making an offer and their interest is between 1 and 4, the heroes can make another argument to attempt to improve the deal. Alternatively, they can accept the offer and end the negotiation. Let the players drive this decision. You can always have an [NPC](scc:mcdm.heroes.v1/rule.general/npc) show they have patience remaining by asking, "Is there anything else?"
 
-If the NPC's patience is 0 or their interest is 5, then the offer the NPC makes is their final offer to the characters. The heroes can accept the offer or not, but either way, the negotiation ends.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience is 0 or their interest is 5, then the offer the [NPC](scc:mcdm.heroes.v1/rule.general/npc) makes is their final offer to the characters. The heroes can accept the offer or not, but either way, the negotiation ends.
 
-If the NPC's interest is 0, the NPC ends the negotiation without accepting a deal. The heroes can walk away from a negotiation without accepting a deal at any time.
+If the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest is 0, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) ends the negotiation without accepting a deal. The heroes can walk away from a negotiation without accepting a deal at any time.
 
 ### Sample Negotiation
 
@@ -22695,7 +22695,7 @@ Before making an argument, Alyssa is attempting to learn what Zola's motivations
 
 **Director:** *Hold it there, champ. Zola's eyes narrow as you speak, and she holds up a hand to cut you off. "I will not swear to serve any ruler, no matter how benevolent. I'll consider being a partner, but even that outlook is grim if you tell me again that I need to bend the knee."*
 
-Korvo inadvertently made an argument using a pitfall by appealing to a higher authority. The Director notes that Zola's interest drops to 1 and her patience drops to 3. Zola gave a pretty firm "No" response here, which is what an NPC with an interest of 1 would say. However, the Director phrased Zola's response in such a way that the heroes know they can keep making arguments if they wish, since her patience hasn't run out.
+Korvo inadvertently made an argument using a pitfall by appealing to a higher authority. The Director notes that Zola's interest drops to 1 and her patience drops to 3. Zola gave a pretty firm "No" response here, which is what an [NPC](scc:mcdm.heroes.v1/rule.general/npc) with an interest of 1 would say. However, the Director phrased Zola's response in such a way that the heroes know they can keep making arguments if they wish, since her patience hasn't run out.
 
 **James:** *Sorry! I thought that'd work. Seems like higher authority is a pitfall for her*.
 
@@ -22817,7 +22817,7 @@ If you need a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) 
 
 As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity (see [Respite](scc:mcdm.heroes.v1/rule.resource/respite) in Chapter 1: [The Basics](scc:mcdm.heroes.v1/chapter/the-basics)), you make a project roll for one of your own projects. Alternatively, you can make a project roll to contribute to another hero's project. A project roll is a [test](scc:mcdm.heroes.v1/rule.test/test) with a special outcome that isn't divided into tiers. The [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) used in the [test](scc:mcdm.heroes.v1/rule.test/test) is determined by the project.
 
-When you make a project roll, the total—no matter how low—becomes [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a natural 19 or 20—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
+When you make a project roll, the total—no matter how low—becomes [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) that are accrued by the project. Even if you have a penalty on a project roll, the minimum total for the roll is 1. If you obtain a critical success—a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20)—on a project roll, this is called a **breakthrough**, and you can make another project roll for the same project as part of the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 A downtime project is complete when it accrues [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) equal to or greater than its **project goal**-the number of points it takes to complete the project, noted in each project's description.
 
@@ -22838,7 +22838,7 @@ If you know the language of a [project source](scc:mcdm.heroes.v1/rule.downtime/
 <!-- @type: rule | @group: downtime | @id: guide -->
 #### Guides
 
-Heroes sometimes find guides—special books, schematics, knowledgeable NPCs, supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
+Heroes sometimes find guides—special books, schematics, knowledgeable [NPCs](scc:mcdm.heroes.v1/rule.general/npc), supernatural recordings, and so forth—providing important and easy-to-understand information relating to a downtime project. Each guide has a knowledge value and a connection to a specific project that greatly decreases the time required to complete the project. When a hero studies a guide as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, they gain the guide's knowledge value as [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward its project. The guide can't be used with that specific instance of the project again, though it can be used for a different project of the same type.
 
 Guides are awarded at the Director's discretion, usually as a tool that can be used to increase the [speed](scc:mcdm.heroes.v1/rule.character/speed) of complex projects for campaigns with little downtime. For example, the Build Airship downtime project has a project goal of 3,000, requiring a fair bit of downtime. But if a hero finds a manual that describes how to craft an airship and grants them 1,000 or more [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) toward the Build Airship project, the crafting time can be significantly reduced.
 
@@ -23241,7 +23241,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Forceful II:** Whenever you use a magic or psionic ability to push or pull a creature, you can move that creature an additional 3 squares. This replaces the benefit of Forceful I.
 
-**Hallucinatory:** As a maneuver, you create an area of sensory in[stability](scc:mcdm.heroes.v1/rule.character/stability) in a 2 aura centered on yourself. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for your enemies until the end of the encounter.
+**Hallucinatory:** As a maneuver, you create an area of sensory in[stability](scc:mcdm.heroes.v1/rule.character/stability) in a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) centered on yourself. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for your enemies until the end of the encounter.
 
 **Lingering I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature takes 8 damage at the start of your next turn.
 
@@ -23439,7 +23439,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
-> | **📏 3 burst**  | **🎯 Each enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + Your Highest [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) Score:**
 >
@@ -23453,7 +23453,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 >
 > **Vengeance III:** Whenever you use a damage-dealing ability using this weapon against a creature who has dealt damage to you since the end of your last turn, the ability deals an extra 6 damage. This replaces the benefit of Vengeance II.
 >
-> **Windcutting:** Whenever you use a melee [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that usually targets one creature, you can take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the ability to target each enemy in a cube 3 within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If your [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) would usually cause its target to become [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), each target in the area is instead [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
+> **Windcutting:** Whenever you use a melee [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that usually targets one creature, you can take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the ability to target each enemy in a [cube](scc:mcdm.heroes.v1/rule.combat/cube) 3 within [distance](scc:mcdm.heroes.v1/rule.combat/distance). If your [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) would usually cause its target to become [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [restrained](scc:mcdm.heroes.v1/condition/restrained), each target in the area is instead [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn.
 
 ###### 9th-Level Weapon Enhancements
 
@@ -23514,7 +23514,7 @@ Lost knowledge is so esoteric that even among a field's most dedicated scholars,
 
 ##### Forbidden Knowledge
 
-Forbidden knowledge is lore that a powerful individual or organization is attempting to keep secret. Those who know the secrets speak of them in whispered codes after passwords are exchanged, and write texts using ciphers. Hunting down leads and making sense of them typically takes weeks. The location of the dagger that slit the throat of the god of death is hidden behind layers of encoded text and written in a dead language known only to that god's most devout followers.
+Forbidden knowledge is lore that a powerful individual or organization is attempting to keep secret. Those who know the secrets speak of them in whispered codes after passwords are exchanged, and write texts using ciphers. Hunting down leads and making sense of them typically takes weeks. The location of the dagger that slit the throat of the god of death is hidden behind layers of encoded text and written in a dead language known only to that god's most devout [followers](scc:mcdm.heroes.v1/rule.general/follower).
 
 ###### Crafting and Research Events Table
 
@@ -23522,7 +23522,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 01-02  | After the roll, a thief who wants the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or an item needed for the project approaches the hero and pretends to be someone who wants to help. The thief might want to sell the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or item, or use it to undertake the same project as the hero.                                                                                                                                                                                                                                          |
 | 03-04  | Before the roll, a traveler in need of food, shelter, or some other necessity happens upon the heroes and asks for their help. If the heroes show kindness, the traveler reveals themself to be an artisan or sage who can help with the project. The traveler can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier.                                                                                                                                                                               |
-| 05-06  | Before the roll, an NPC who is already friendly with the characters and has helped them before asks the hero to let them join the project. The NPC explains that they need the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or the object being crafted for a personal matter of great importance (saving someone's life, righting a great wrong, and so forth). The NPC can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier, but the characters must commit to letting the NPC use the finished project before they can do so. |
+| 05-06  | Before the roll, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who is already friendly with the characters and has helped them before asks the hero to let them join the project. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) explains that they need the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or the object being crafted for a personal matter of great importance (saving someone's life, righting a great wrong, and so forth). The [NPC](scc:mcdm.heroes.v1/rule.general/npc) can contribute one [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to the project with a +3 modifier, but the characters must commit to letting the [NPC](scc:mcdm.heroes.v1/rule.general/npc) use the finished project before they can do so. |
 | 07-08  | After the roll, the hero receives a mysterious note from a person who wants to exchange a treasure or other reward for the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) when the project is complete. The buyer could be someone with their own interest in a similar project, an enemy eager to exploit what the hero is working on, or a superfan who wants to emulate the hero.                                                                                                                                                            |
 | 09-10  | Before the roll, a pest starts devouring important components of the project. This could be rats gnawing at alchemical components, moths eating rare silks, mites devouring a printed [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), and so forth. If the pests aren't dealt with quickly, some of the components will need to be replaced.                                                                                                                                                                                                    |
 | 11-12  | Before the roll, a powerful supernatural entity sends an agent or premonition to the hero, offering them knowledge that will let them complete the project immediately. In exchange, the hero must agree to do a favor for the entity, which might not be specified at the time of the bargain.                                                                                                                                                                                                                 |
@@ -23536,7 +23536,7 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 27-28  | Before the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) is found to hold additional information, letting the hero treat the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) as an automatic breakthrough. The note could have been left by a helpful visitor, or by someone who wants the hero's work to be finished for their own gain.                                                                                                                                                                                                                               |
 | 29-30  | After the roll, the project draws the attention of a [devil](scc:mcdm.heroes.v1/ancestry/devil), who tries to subtly change the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) from the Seven Cities of Hell. If the hero doesn't notice, the [devil](scc:mcdm.heroes.v1/ancestry/devil) is summoned the next time the hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll), with goals of the Director's determination.                                                                                                                                                                                                                             |
 | 31-32  | Before the roll, the hero stumbles upon a tool, expert, or book that helps them with the project, letting them treat the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) as an automatic breakthrough.                                                                                                                                                                                                                                                                                                                                             |
-| 33-34  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) suddenly becomes impossible to understand. A psionic NPC has used a mighty power to obscure or corrupt the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) to prevent a potential catastrophe they foresaw. If the heroes can help prevent the catastrophe in another way, the NPC will end the effect.                                                                                                                                                                                                       |
+| 33-34  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) suddenly becomes impossible to understand. A psionic [NPC](scc:mcdm.heroes.v1/rule.general/npc) has used a mighty power to obscure or corrupt the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) to prevent a potential catastrophe they foresaw. If the heroes can help prevent the catastrophe in another way, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) will end the effect.                                                                                                                                                                                                       |
 | 35-36  | After the roll, the hero discovers that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) contains a piece of helpful knowledge unrelated to the current project.                                                                                                                                                                                                                                                                                                                                                                              |
 | 37-38  | Before the roll, the hero learns that several sages working on similar projects have all mysteriously disappeared. Someone or something is abducting these experts for some nefarious purpose... and the hero could be next!                                                                                                                                                                                                                                                                                   |
 | 39-40  | After the roll, a group of scholars approach the hero and ask if they can review the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source), promising to help the hero complete the project in return. If the hero accepts, the scholars take the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) until the end of the hero's next [respite](scc:mcdm.heroes.v1/rule.resource/respite). Three of the scholars then contribute [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) during the following [respite](scc:mcdm.heroes.v1/rule.resource/respite), each with a +3 modifier.                                                                                                                                  |
@@ -23545,13 +23545,13 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 45-46  | Before the roll, the servants of a dragon appear and demand that the hero hand over the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). If the hero refuses, the servants warn that the dragon will come to claim the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) for themself.                                                                                                                                                                                                                                                                                              |
 | 47-48  | Before the roll, the hero notices a contract written on a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other accompanying materials that appears only under certain conditions (in the presence of magic, in the light of a full moon, and so forth). The contract promises that anyone who signs it in blood will receive the true and full answer to three questions, in exchange for a week of service to the hag Corrine Withersnipe. The hag appears instantly if the contract is signed.                                    |
 | 49-50  | After the roll, an unexpected total eclipse of the sun occurs, lasting 1 hour. Once per [respite](scc:mcdm.heroes.v1/rule.resource/respite) when any creature makes another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project, another eclipse occurs and lasts twice as long as the previous. Some take this phenomenon as a sign of impending doom that will descend when the project is completed. Others believe that a powerful enemy is trying to scare the heroes into not finishing the project.                                                                         |
-| 51-52  | Before the roll, the hero gets a visit from an NPC who they helped in the past. The NPC has found a guide that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
+| 51-52  | Before the roll, the hero gets a visit from an [NPC](scc:mcdm.heroes.v1/rule.general/npc) who they helped in the past. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) has found a guide that relates to the project and gives it to the hero as a gift of thanks.                                                                                                                                                                                                                                                                                                                             |
 | 53-54  | After the roll, a local officer of the law appears and tells the hero to stop working on their project. The nature of the hero's project has just become outlawed in the region, and the constable insists on locking up the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and arresting anyone who gets in the way.                                                                                                                                                                                                                           |
 | 55-56  | Before the roll, the hero determines that the research or crafting they are planning requires only part of their attention. They can either make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for their current project, or can make one for that project and one for another project.                                                                                                                                                                                                                                                     |
 | 57-58  | After the roll, a component or tool the hero is using for the project suddenly reveals itself to be magic or psionic as it starts to hum with energy and glow red hot. If the item isn't quickly cooled, it explodes, and work on the project can't continue until a replacement is found.                                                                                                                                                                                                                      |
 | 59-60  | Before the roll, the hero realizes they're at a critical point in the project, and can achieve more if they just shave off a few hours of rest. By choosing to lose some sleep, the character can make two [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project, but when they end the current [respite](scc:mcdm.heroes.v1/rule.resource/respite), they do so with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                 |
-| 61-62  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're an assassin hoping to catch the hero off guard.                                                                                                                                                                                                                                                                                                                                  |
-| 63-64  | Before the roll, a sage approaches the hero and offers to help with the project. This NPC isn't really a sage, however—they're a bard who wishes to compose a song about the hero's deeds. The NPC is to ingratiate themself to the hero while contributing nothing to the actual project.                                                                                                                                                                                                                      |
+| 61-62  | Before the roll, a sage approaches the hero and offers to help with the project. This [NPC](scc:mcdm.heroes.v1/rule.general/npc) isn't really a sage, however—they're an assassin hoping to catch the hero off guard.                                                                                                                                                                                                                                                                                                                                  |
+| 63-64  | Before the roll, a sage approaches the hero and offers to help with the project. This [NPC](scc:mcdm.heroes.v1/rule.general/npc) isn't really a sage, however—they're a bard who wishes to compose a song about the hero's deeds. The [NPC](scc:mcdm.heroes.v1/rule.general/npc) is to ingratiate themself to the hero while contributing nothing to the actual project.                                                                                                                                                                                                                      |
 | 65-66  | After the roll, a physical [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or a component of the project creates an unstable portal to another world related to the nature of the project. Tiny [devils](scc:mcdm.heroes.v1/ancestry/devil), elementals, or other creatures start clawing their way out of the item and causing mischief.                                                                                                                                                                                                                                             |
 | 67-68  | After the roll, the hero realizes that the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) also holds information regarding the location of another [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or certain items, which are needed for another project the hero or one of their allies wants to pursue.                                                                                                                                                                                                                                                                       |
 | 69-70  | Before the roll, a group of enemies working for the campaign's villain attacks the hero, intent on destroying as much of the project's source or other resources as possible.                                                                                                                                                                                                                                                                                                                                   |
@@ -23562,10 +23562,10 @@ Forbidden knowledge is lore that a powerful individual or organization is attemp
 | 79-80  | Before the roll, the hero hears a voice beckoning them into the nearest wode to work on their project. Each time the hero makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) in the wode, they make three times the progress but feel more pressure to stay in the wode forever.                                                                                                                                                                                                                                                              |
 | 81-82  | After the roll, the hero stumbles upon knowledge of an expert a day's travel away who could complete the project, and who possesses a [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or guide for another hero's project.                                                                                                                                                                                                                                                                                                                       |
 | 83-84  | Before the roll, fire rips through the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials and threatens to destroy the entire project. If the hero puts out the fire before everything is lost, they find that the fire activated secret notes that double each subsequent [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the project.                                                                                                                                                                                                                  |
-| 85-86  | After the roll, a auteur NPC approaches the hero and asks if they would like to make the project "a little more exciting." If the hero agrees, the auteur narrates the hero's progress on the project, prompting another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). If the second roll is lower than the first, the hero subtracts the second roll from the original roll. If it's equal or higher, the hero adds the second roll to the original roll.                                                                                      |
+| 85-86  | After the roll, a auteur [NPC](scc:mcdm.heroes.v1/rule.general/npc) approaches the hero and asks if they would like to make the project "a little more exciting." If the hero agrees, the auteur narrates the hero's progress on the project, prompting another [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). If the second roll is lower than the first, the hero subtracts the second roll from the original roll. If it's equal or higher, the hero adds the second roll to the original roll.                                                                                      |
 | 87-88  | Before the roll, the hero's rival reluctantly comes seeking the hero's help on their own project. If the hero agrees, the hero makes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the rival's project, and the Director makes the rival's [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) toward the hero's project.                                                                                                                                                                                                                                                  |
 | 89-90  | After the roll, the hero completes their work on the project earlier than expected, and can either relax or go carousing with other heroes who are free. The hero and every character who joins them starts the next encounter with 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).                                                                                                                                                                                                                                                       |
-| 91-92  | Before the roll, the hero is approached by a wagoneer who needs help fixing their wagon. If the hero helps, they find out that the wagoneer is allied with the campaign's villain. If the hero doesn't attack or threaten the wagoneer, then in some future combat, an NPC of the Director's choice turns out to be a friend or relative of the wagoneer. They leave the battle peacefully when they recognize the hero.                                                                                        |
+| 91-92  | Before the roll, the hero is approached by a wagoneer who needs help fixing their wagon. If the hero helps, they find out that the wagoneer is allied with the campaign's villain. If the hero doesn't attack or threaten the wagoneer, then in some future combat, an [NPC](scc:mcdm.heroes.v1/rule.general/npc) of the Director's choice turns out to be a friend or relative of the wagoneer. They leave the battle peacefully when they recognize the hero.                                                                                        |
 | 93-94  | After the roll, the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) and any evidence of the project disappear into thin air. Any investigation of the area turns up footprints fleeing the scene and traces of gnoll hair.                                                                                                                                                                                                                                                                                                                       |
 | 95-96  | After the roll, the hero suddenly no longer understands or comprehends the [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) after focusing on those materials for too long. If they continue with the project, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on its [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite). If they leave the project alone for the next two [respites](scc:mcdm.heroes.v1/rule.resource/respite), they'll be able to comprehend the research again, gaining an automatic breakthrough before the next [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                      |
 | 97-98  | Before the roll, part of the hero's [project source](scc:mcdm.heroes.v1/rule.downtime/project-source) or other materials shrinks and is pulled through a mousehole. A group of radenwights sent magical mice to steal the resources so they can finish their own project. The radenwights are willing to negotiate if the hero doesn't approach them aggressively.                                                                                                                                                                                                 |
@@ -23598,7 +23598,7 @@ Additionally, while you work to complete this project, you might be called upon 
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1   | Before the roll, an old colleague from the hero's past asks the hero to give up adventuring and come back to their former career. A hero who reaffirms their intent to remain a hero gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). However, if they do so—or if they lie to say they will return to their old career—the project goal increases by 50 points as their old colleague refuses to help them.                                       |
 | 2   | After the roll, the hero is hurt on the job. They end the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with 1 fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than usual.                                                                                                                                                                                                                                                                                                                 |
-| 3   | Before the roll, the hero stumbles upon an individual seeking guidance about entering the same career as the hero. If the hero forgoes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to help this NPC, the individual becomes one of the hero's followers, which they gain in addition to any followers acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The follower is an artisan or a sage depending on the hero's career, as the Director determines. |
+| 3   | Before the roll, the hero stumbles upon an individual seeking guidance about entering the same career as the hero. If the hero forgoes their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) to help this [NPC](scc:mcdm.heroes.v1/rule.general/npc), the individual becomes one of the hero's [followers](scc:mcdm.heroes.v1/rule.general/follower), which they gain in addition to any [followers](scc:mcdm.heroes.v1/rule.general/follower) acquired through [Renown](scc:mcdm.heroes.v1/rule.resource/renown) or other means. The [follower](scc:mcdm.heroes.v1/rule.general/follower) is an artisan or a sage depending on the hero's career, as the Director determines. |
 | 4   | After the roll, the hero finds inspiration from their old life that helps out with a different project they or another hero are currently working on. The hero working on the second project can immediately make a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) for that project.                                                                                                                                                                    |
 | 5   | Before the roll, the hero stumbles into a negative aspect of their career that they forgot was particularly grueling. If the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) is 11 or lower, it is halved.                                                                                                                                                                                                                                               |
 | 6   | After the roll, the hero learns rumors of a treasure of the Director's choice that other members of the hero's previous career are seeking. If the hero doesn't seek the treasure ahead of time, they automatically determine where the treasure is to be found when they complete their project.                                                                                                                     |
@@ -23625,7 +23625,7 @@ You revisit your previous life to freshen up on the experience it provided you. 
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** None
 
-**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** An NPC of a higher level, or records of such an NPC's teachings in a language you know
+**[Project Source](scc:mcdm.heroes.v1/rule.downtime/project-source):** An [NPC](scc:mcdm.heroes.v1/rule.general/npc) of a higher level, or records of such an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s teachings in a language you know
 
 **[Project Roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) [Characteristic](scc:mcdm.heroes.v1/rule.character/characteristic):** Your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic)
 
@@ -23751,7 +23751,7 @@ While undertaking this project, you provide help to people in need, doing odd jo
 | 1   | After the roll, the hero's service is recognized by the local nobility or authorities. Upon completion of the project, the hero earns 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).                                                                                                                                                                                                                                                                                  |
 | 2   | Before the roll, a mysterious force hinders the work in an unfortunate way, with tools going missing, tutoring materials vanishing, cleaning supplies turning up already filthy, and so forth. The hero can't continue the project until the culprit—a maligned [devil](scc:mcdm.heroes.v1/ancestry/devil) or spirit connected to the hero's past—is identified and dealt with.                                                                                       |
 | 3   | Before the roll, the community is so excited by the project that they join in to lend a hand. The project gains an automatic breakthrough.                                                                                                                                                                                                                                                                                       |
-| 4   | Before the roll, a sympathetic NPC—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 bonus to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                         |
+| 4   | Before the roll, a sympathetic [NPC](scc:mcdm.heroes.v1/rule.general/npc)—perhaps a friend or ally from the community or from the hero's past—offers to assist with the project. The hero gains a +3 bonus to the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll).                                                                                                                                                                                                                                         |
 | 5   | Before the roll, work on the project unearths a previously lost detail of the community—a lost or hidden section of a settlement, a surprising historical detail, a secret regarding a prominent local, and so forth. The locals take a keen interest in the development, but the revelation threatens to tear the community apart. If the character can't take steps to undo this strife, they take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll). |
 | 6   | After the roll, a seemingly benign action taken by the hero curses them with bad luck. Until they break the curse, all [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) they make are halved.                                                                                                                                                                                                                                                                       |
 | 7   | After the roll, a saint blesses the hero's work. The hero feels supernaturally rejuvenated, increasing their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 1 until the end of their next [respite](scc:mcdm.heroes.v1/rule.resource/respite). If the character is a [conduit](scc:mcdm.heroes.v1/class/conduit), they also gain an automatic breakthrough on the project.                                                                                                                                                                        |
@@ -23825,7 +23825,7 @@ You revitalize your spirit by spending time with people you love who you haven't
 | 4   | After the roll, the hero learns that a distant friend or family member has joined the cause of their enemies. Their loved ones plead with the hero to bring this person back home safely.                                                                                                                                                                                       |
 | 5   | After the roll, a loved one gives the hero a [consumable](scc:mcdm.heroes.v1/rule.treasure/consumable) treasure to aid them in their travels.                                                                                                                                                                                                                                                                                  |
 | 6   | After the roll, the hero's loved ones share that they have been subjected to a curse. The only way to lift the curse is by returning an heirloom to its place of origin.                                                                                                                                                                                                        |
-| 7   | Before the roll, the hero meets an old friend who is a more experienced adventurer. They offer to mentor the hero in exchange for a treasure or favor. If the hero accepts, they also complete the Learn From a Master project when this project is complete, with the Director choosing the NPC's class.                                                                       |
+| 7   | Before the roll, the hero meets an old friend who is a more experienced adventurer. They offer to mentor the hero in exchange for a treasure or favor. If the hero accepts, they also complete the Learn From a Master project when this project is complete, with the Director choosing the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s class.                                                                       |
 | 8   | Before the roll, the hero discovers that by returning, they've put the community surrounding their loved ones in danger, either with the authorities or an opposing power in the region. To complete the project, the hero needs to earn the trust of that community.                                                                                                           |
 | 9   | After the roll, the hero learns that spending time with loved ones isn't always as rejuvenating as one hopes. Completing the project requires an additional 20 [project points](scc:mcdm.heroes.v1/rule.downtime/project-points) thanks to difficult friends or relatives.                                                                                                                                                         |
 | 10  | Before the roll, the hero's loved ones ask if the hero would like to cook with them. If the hero accepts, they can apply their [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) both to this project and to the Perfect New Recipe project. If the hero is not currently undertaking the Perfect New Recipe project, they start that project and their loved ones provide the [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and [project source](scc:mcdm.heroes.v1/rule.downtime/project-source). |
@@ -23833,7 +23833,7 @@ You revitalize your spirit by spending time with people you love who you haven't
 <!-- @type: chapter | @id: rewards -->
 # Rewards
 
-Virtue is its own reward... but wouldn't a magic sword also be kind of nice? As heroes adventure, they find and craft treasures even as they are awarded titles, earn [renown](scc:mcdm.heroes.v1/rule.resource/renown), attract followers, and amass wealth. This chapter presents all the various rewards a hero can earn during their career! As you read over the rewards within, make note of the treasures and titles your hero would like to earn. Then you can start pursuing them during your adventures.
+Virtue is its own reward... but wouldn't a magic sword also be kind of nice? As heroes adventure, they find and craft treasures even as they are awarded titles, earn [renown](scc:mcdm.heroes.v1/rule.resource/renown), attract [followers](scc:mcdm.heroes.v1/rule.general/follower), and amass wealth. This chapter presents all the various rewards a hero can earn during their career! As you read over the rewards within, make note of the treasures and titles your hero would like to earn. Then you can start pursuing them during your adventures.
 
 <!-- @type: chapter | @id: treasures -->
 ## Treasures
@@ -24004,7 +24004,7 @@ This section presents 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Project Goal:** 45
 
-**Effect:** Catapult Dust was developed as a cost-effective magic siege weapon. As a main action, you pour the dust out in an adjacent unoccupied space to fill an area as large as a 2 cube. At the start of your next turn, the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any [unattended objects](scc:mcdm.heroes.v1/rule.general/unattended-object) in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.
+**Effect:** Catapult Dust was developed as a cost-effective magic siege weapon. As a main action, you pour the dust out in an adjacent unoccupied space to fill an area as large as a 2 [cube](scc:mcdm.heroes.v1/rule.combat/cube). At the start of your next turn, the ground at the bottom of the area erupts violently upwards and in a direction of your choice. Any [unattended objects](scc:mcdm.heroes.v1/rule.general/unattended-object) in the area, or creatures who have entered the area since the dust was poured, are launched in an arc that is 6 + 1d6 squares long and 3 + 1d6 squares high.
 
 <!-- @type: treasure -->
 ##### Giant's-Blood Flame
@@ -24150,13 +24150,13 @@ While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) t
 
 **Project Goal:** 30 or 45 (see below)
 
-**Effect:** As a maneuver, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 cube of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.
+**Effect:** As a maneuver, you throw this delicate glass sphere up to 5 squares, breaking it and creating a 4 [cube](scc:mcdm.heroes.v1/rule.combat/cube) of fog. The fog dissipates after 10 minutes or if a strong gust of wind created by a storm or magic passes through the area.
 
 Enterprising mages within various thieves' guilds have developed variations of the Portable Cloud. Each variation has a secondary [item prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite) and a project goal of 45.
 
 **Noxious Cloud:** Filled with a green or putrid yellow haze, this sphere spreads a choking, foul-smelling mist when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 poison damage. Additionally, any creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) while in the fog.
 
-**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 cube of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
+**[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** An ounce of undead flesh. **Thunderhead Cloud:** Small lightning bolts arc around the black cloud in this sphere, which creates a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube) of cloud and lightning when broken. Each creature who enters the cloud for the first time in a combat round or starts their turn there takes 5 lightning damage. Additionally, any creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) while in the cloud.
 
 **[Item Prerequisite](scc:mcdm.heroes.v1/rule.downtime/item-prerequisite):** A spool of copper wire.
 
@@ -24358,7 +24358,7 @@ If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object adjacent 
 
 **Project Goal:** 90
 
-**Effect:** As a maneuver, you throw this vial up to 10 squares, destroying the vial and creating a 2-cube ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a combat round or starts their turn there takes 10 psychic damage. At the start of each of your turns, you can move the vortex up to 5 squares (no action required).
+**Effect:** As a maneuver, you throw this vial up to 10 squares, destroying the vial and creating a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) ethereal vortex centered on the spot where it lands. The vortex dissipates at the end of the encounter or when you dismiss it (no action required). Any creature who enters the vortex for the first time in a combat round or starts their turn there takes 10 psychic damage. At the start of each of your turns, you can move the vortex up to 5 squares (no action required).
 
 <!-- @type: treasure-group | @echelon: 3 | @treasure-type: consumable -->
 #### 3rd-Echelon Consumables
@@ -24399,7 +24399,7 @@ At the start of each of your turns, each creature adjacent to the wall takes psy
 
 **Project Goal:** 180
 
-**Effect:** As a maneuver, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a [test](scc:mcdm.heroes.v1/rule.test/test) you made in the last minute, then reroll that [test](scc:mcdm.heroes.v1/rule.test/test) repeatedly until the outcome changes. If the potion is thrown, it creates a 3-cube area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.
+**Effect:** As a maneuver, you can drink this potion or throw it up to 10 squares. If you drink it, you choose a [test](scc:mcdm.heroes.v1/rule.test/test) you made in the last minute, then reroll that [test](scc:mcdm.heroes.v1/rule.test/test) repeatedly until the outcome changes. If the potion is thrown, it creates a 3-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area of shimmering magic. Any event that took place in that area in the previous minute changes at the discretion of the Director, who has full freedom to decide what happens. The energy then dissipates.
 
 <!-- @type: treasure -->
 ##### G'Allios Visiting Card
@@ -24527,7 +24527,7 @@ This section presents 4th-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [co
 
 **Project Goal:** 360
 
-**Effect:** When you inhale the Breath of Creation as a maneuver, you are imbued with cosmic power. You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown), and you create a [size](scc:mcdm.heroes.v1/rule.character/size) 2 portal to a new demiplane in an adjacent square. The demiplane is a 20-cube area whose form and mundane features are chosen by you. The portal appears only to you and creatures you designate, and only you and those creatures can enter the demiplane. When a creature moves into the portal, they emerge from a corresponding portal inside the demiplane, and vice versa. Objects created within the demiplane turn to dust if removed from it.
+**Effect:** When you inhale the Breath of Creation as a maneuver, you are imbued with cosmic power. You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown), and you create a [size](scc:mcdm.heroes.v1/rule.character/size) 2 portal to a new demiplane in an adjacent square. The demiplane is a 20-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area whose form and mundane features are chosen by you. The portal appears only to you and creatures you designate, and only you and those creatures can enter the demiplane. When a creature moves into the portal, they emerge from a corresponding portal inside the demiplane, and vice versa. Objects created within the demiplane turn to dust if removed from it.
 
 Each time you use another Breath of Creation, you can create a new demiplane or expand a demiplane you have already created or visited. The size of an expanded demiplane increases by 20, and you create a second portal to the demiplane with a corresponding portal inside.
 
@@ -24565,7 +24565,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Project Goal:** 360
 
-**Effect:** As a maneuver, you spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to destroy this page and create a 4-cube area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a combat round or starts their turn there takes 20 fire damage and is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their turn.
+**Effect:** As a maneuver, you spend 1 [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to destroy this page and create a 4-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area within 20 squares. The area is filled with the energy of a tiny sun that lasts until the end of the encounter. Any creature who enters the area for the first time in a combat round or starts their turn there takes 20 fire damage and is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their turn.
 
 <!-- @type: treasure -->
 ##### Restorative of the Bright Court
@@ -24582,7 +24582,7 @@ Infinite Library detailing incomplete instructions for building a sun
 
 **Project Goal:** 360
 
-**Effect:** When opened as a maneuver, this vial bursts into a storm of multicolored lights. You and each ally within 5 squares of you regain 1d6 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). However, any mortal using this treasure draws the interest of a powerful fey noble.
+**Effect:** When opened as a maneuver, this vial [bursts](scc:mcdm.heroes.v1/rule.combat/burst) into a storm of multicolored lights. You and each ally within 5 squares of you regain 1d6 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). However, any mortal using this treasure draws the interest of a powerful fey noble.
 
 <!-- @type: rule | @group: treasure | @id: trinket -->
 ### Trinkets
@@ -24896,7 +24896,7 @@ This section presents 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) [tr
 
 **Project Goal:** 300
 
-**Effect:** While you wear the Mediator's Charm, the patience of any NPC you negotiate with increases by 1 (to a maximum of 5). Additionally, at the start of a negotiation, you learn one of an NPC's motivations or pitfalls of the Director's choice.
+**Effect:** While you wear the Mediator's Charm, the patience of any [NPC](scc:mcdm.heroes.v1/rule.general/npc) you negotiate with increases by 1 (to a maximum of 5). Additionally, at the start of a negotiation, you learn one of an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivations or pitfalls of the Director's choice.
 
 <!-- @type: treasure -->
 ##### Necklace of the Bayou
@@ -25169,7 +25169,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, whenever an adjacent creature deals damage to you, they take 3 acid or poison damage (your choice).
 
-**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and an adjacent creature who deals damage to you takes 6 acid or poison damage. Additionally, you can use a maneuver to transmute a 2-cube area of liquid or gas adjacent to you into liquid acid or poison gas until the start of your next turn. Any creature who enters the area for the first time in a combat round or starts their turn there takes 6 acid or poison damage, as appropriate.
+**9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and an adjacent creature who deals damage to you takes 6 acid or poison damage. Additionally, you can use a maneuver to transmute a 2-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area of liquid or gas adjacent to you into liquid acid or poison gas until the start of your next turn. Any creature who enters the area for the first time in a combat round or starts their turn there takes 6 acid or poison damage, as appropriate.
 
 <!-- @type: treasure -->
 ##### Chain of the Sea and Sky
@@ -25382,9 +25382,9 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **1st Level:** While you wield this implement, your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 cube, around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next turn.
+**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 [cube](scc:mcdm.heroes.v1/rule.combat/cube), around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next turn.
 
-**9th Level:** The implement's damage bonus increases to +3. Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 cube, and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
+**9th Level:** The implement's damage bonus increases to +3. Whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 [cube](scc:mcdm.heroes.v1/rule.combat/cube), and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
 <!-- @type: treasure -->
 ##### Brittlebreaker
@@ -25426,7 +25426,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you use a magic or psionic ability, a whirlwind of sleet and ice whips around you, dealing 3 cold damage to each adjacent enemy.
 
-**9th Level:** The implement's damage bonus increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 aura around you that lasts until the start of your next turn. Each enemy who enters the aura for the first time in a combat round or starts their turn there takes 6 cold damage.
+**9th Level:** The implement's damage bonus increases to +3, and the whirlwind you create when you use a magic or psionic ability deals 6 cold damage to each enemy within 2 squares of you. Additionally, the whirlwind creates a 2 [aura](scc:mcdm.heroes.v1/rule.combat/aura) around you that lasts until the start of your next turn. Each enemy who enters the [aura](scc:mcdm.heroes.v1/rule.combat/aura) for the first time in a combat round or starts their turn there takes 6 cold damage.
 
 <!-- @type: treasure -->
 ##### Ether-Fueled Vessel
@@ -25553,7 +25553,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon gains a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with this weapon, you can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. As well, while you wield or carry the weapon and are present in a negotiation, if an NPC in the negotiation has the greed, legacy, power, or revelry motivation, their starting interest increases by 1 (to a maximum of 5).
+**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon gains a +1 damage bonus. Additionally, whenever you deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) with this weapon, you can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. As well, while you wield or carry the weapon and are present in a negotiation, if an [NPC](scc:mcdm.heroes.v1/rule.general/npc) in the negotiation has the greed, legacy, power, or revelry motivation, their starting interest increases by 1 (to a maximum of 5).
 
 **5th Level:** The weapon's damage bonus increases to +2. Additionally, when you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, you can use [fancy footwork](scc:mcdm.heroes.v1/feature.ability.swashbuckler/fancy-footwork) to knock them [prone](scc:mcdm.heroes.v1/condition/prone). You also earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 
@@ -25616,11 +25616,11 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450
 
-**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 cold damage. Additionally, you can use a maneuver to create an ice field in a 3 burst. The ground in this area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and lasts until the end of the encounter or when you use this ability again.
+**1st Level:** Any weapon ability that deals [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) using this weapon deals an extra 1 cold damage. Additionally, you can use a maneuver to create an ice field in a 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst). The ground in this area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and lasts until the end of the encounter or when you use this ability again.
 
-**5th Level:** The weapon's extra cold damage increases to 2, and the ice field becomes a 4 burst. Additionally, whenever you use a weapon ability using this weapon against one or more enemies in the ice field, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately.
+**5th Level:** The weapon's extra cold damage increases to 2, and the ice field becomes a 4 [burst](scc:mcdm.heroes.v1/rule.combat/burst). Additionally, whenever you use a weapon ability using this weapon against one or more enemies in the ice field, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that you can use immediately.
 
-**9th Level:** The weapon's extra cold damage increases to 3, and the ice field becomes a 5 burst. Additionally, any enemy in the ice field who is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by an ability using the weapon can be shattered, killing them and dealing 15 cold damage to each enemy within 3 squares of them.
+**9th Level:** The weapon's extra cold damage increases to 3, and the ice field becomes a 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst). Additionally, any enemy in the ice field who is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by an ability using the weapon can be shattered, killing them and dealing 15 cold damage to each enemy within 3 squares of them.
 
 <!-- @type: treasure -->
 ##### Knife of Nine
@@ -25997,7 +25997,7 @@ Each title is assigned to an [echelon](scc:mcdm.heroes.v1/rule.general/echelon) 
 
 ### Customizing Titles
 
-This section details a number of ready-to-use titles. But the Director can also create custom titles, both to reward specific player accomplishments and to flesh out organizations, locations, and foes within their own game world. When a hero finally achieves a long-term goal after many game sessions of struggle, the Director can memorialize the moment by granting a unique title. Similarly, the Director can grant custom titles when the heroes befriend specific factions, defeat notorious villains, or learn new moves from skilled NPCs.
+This section details a number of ready-to-use titles. But the Director can also create custom titles, both to reward specific player accomplishments and to flesh out organizations, locations, and foes within their own game world. When a hero finally achieves a long-term goal after many game sessions of struggle, the Director can memorialize the moment by granting a unique title. Similarly, the Director can grant custom titles when the heroes befriend specific factions, defeat notorious villains, or learn new moves from skilled [NPCs](scc:mcdm.heroes.v1/rule.general/npc).
 
 The easiest way to create custom titles is to modify an existing title's requirements to fit the adventure at hand. For instance, your world might contain a secretive organization of freedom fighters—the Jesters—who never carry weapons, defeating foes with unarmed attacks and improvised weapons. Creating a Jester title can be as easy as modifying the [Brawler](scc:mcdm.heroes.v1/title/brawler) title by changing its requirements to "Fight alongside the Jesters against a mutual foe."
 
@@ -26056,7 +26056,7 @@ Titles suitable for 1st-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 **Effect:** Choose one of the following benefits:
 
-- *Iron Hand in Velvet Glove:* The first time during a negotiation that you make a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill and don't make an argument that appeals to an NPC's motivation, you don't lower the NPC's patience or interest no matter the outcome of the roll.
+- *Iron Hand in Velvet Glove:* The first time during a negotiation that you make a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill and don't make an argument that appeals to an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s motivation, you don't lower the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s patience or interest no matter the outcome of the roll.
 - *Truce!:* You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to stop combat and start a negotiation.
 - *Warriors' Understanding:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with creatures you have fought against in combat encounters.
 
@@ -26155,7 +26155,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 > **[Renown](scc:mcdm.heroes.v1/rule.resource/renown) and [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth)**
 >
-> Many titles bestow [Renown](scc:mcdm.heroes.v1/rule.resource/renown), followers, and wealth upon heroes. Those topics are covered later in this chapter.
+> Many titles bestow [Renown](scc:mcdm.heroes.v1/rule.resource/renown), [followers](scc:mcdm.heroes.v1/rule.general/follower), and wealth upon heroes. Those topics are covered later in this chapter.
 
 <!-- @type: title -->
 #### Mage Hunter
@@ -26236,7 +26236,7 @@ At a dramatic moment determined by the Director, you rejoin your party with an e
 >
 > | **Area, Magic** |                                **Maneuver** |
 > |-----------------|--------------------------------------------:|
-> | **📏 5 burst**  | **🎯 Each enemy in the area hidden to you** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each enemy in the area hidden to you** |
 >
 > **Effect:** Each target who has P < AVERAGE is [taunted](scc:mcdm.heroes.v1/condition/taunted) by you until the end of their next turn, and you know the location of each creature [taunted](scc:mcdm.heroes.v1/condition/taunted) in this way.
 
@@ -26319,7 +26319,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 >
 > | **Area, Magic** |                         **Maneuver** |
 > |-----------------|-------------------------------------:|
-> | **📏 3 burst**  | **🎯 Each undead enemy in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each undead enemy in the area** |
 >
 > **Effect:** Each target takes holy damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) score (your choice). Additionally, each target who has P < STRONG is [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
 
@@ -26386,7 +26386,7 @@ Titles suitable for 2nd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 >
 > | **Area**       |                       **Main action** |
 > |----------------|--------------------------------------:|
-> | **📏 3 burst** | **🎯 Self and each ally in the area** |
+> | **📏 3 [burst](scc:mcdm.heroes.v1/rule.combat/burst)** | **🎯 Self and each ally in the area** |
 >
 > **Effect:** Each target can use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action.
 
@@ -26576,7 +26576,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 - Make a [test](scc:mcdm.heroes.v1/rule.test/test) that uses the Disguise skill. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [test](scc:mcdm.heroes.v1/rule.test/test).
 - One mundane lock you touch is unlocked.
 - Choose a square within 10 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to it. You can observe the area around that square as if you were in it.
-- You throw the boffin up to 10 squares, where it explodes in a 5 cube. Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster... though they don't like doing so too often.
+- You throw the boffin up to 10 squares, where it explodes in a 5 [cube](scc:mcdm.heroes.v1/rule.combat/cube). Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster... though they don't like doing so too often.
 
 <!-- @type: title -->
 #### Sworn Hunter
@@ -26720,7 +26720,7 @@ Titles suitable for 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 >
 > | **Area, Magic** |                  **Main action** |
 > |-----------------|---------------------------------:|
-> | **📏 5 burst**  | **🎯 Each creature in the area** |
+> | **📏 5 [burst](scc:mcdm.heroes.v1/rule.combat/burst)**  | **🎯 Each creature in the area** |
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Presence](scc:mcdm.heroes.v1/rule.character/presence):**
 >
@@ -26755,9 +26755,9 @@ Titles suitable for 3rd-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 **Effect:** Choose one of the following benefits:
 
-- *I Know How to Talk to These People:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with royals, nobles, and their feudal followers, provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
+- *I Know How to Talk to These People:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) [tests](scc:mcdm.heroes.v1/rule.test/test) made to interact with royals, nobles, and their feudal [followers](scc:mcdm.heroes.v1/rule.general/follower), provided they are aware of your [noble](scc:mcdm.heroes.v1/title/noble) rank.
 - *Noble Splendor:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) and 1 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
-- *Retinue:* The number of followers you can recruit increases by two.
+- *Retinue:* The number of [followers](scc:mcdm.heroes.v1/rule.general/follower) you can recruit increases by two.
 
 **Special:** If you take this title, you might occasionally be called upon to perform duties for the person who granted your [noble](scc:mcdm.heroes.v1/title/noble) rank.
 
@@ -26840,7 +26840,7 @@ Titles suitable for 4th-[echelon](scc:mcdm.heroes.v1/rule.general/echelon) chara
 
 Additionally, choose one of the following benefits:
 
-- *Acolytes:* The number of followers you can recruit increases by two
+- *Acolytes:* The number of [followers](scc:mcdm.heroes.v1/rule.general/follower) you can recruit increases by two
 - *Divine Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal corruption or holy damage instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 - *Missionaries:* You earn 2 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 
@@ -26886,7 +26886,7 @@ Additionally, choose one of the following benefits:
 
 - *Crown Jewels:* You gain one of your nation's treasures—a [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) of the Director's choice.
 - *Royal Fame:* You earn 2 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
-- *Royal Retinue:* The number of followers you can recruit increases by 2
+- *Royal Retinue:* The number of [followers](scc:mcdm.heroes.v1/rule.general/follower) you can recruit increases by 2
 - *Royal [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth):* You earn 2 [Wealth](scc:mcdm.heroes.v1/rule.resource/wealth).
 
 **Special:** If you take this title, you might be called upon to perform duties for your nation.
@@ -26902,7 +26902,7 @@ Additionally, choose one of the following benefits:
 
 - *Calm Heads Prevail:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) to stop combat and start a negotiation, you always obtain a tier 3 outcome.
 - *Drop Your Sword:* When you succeed on a [test](scc:mcdm.heroes.v1/rule.test/test) using the [Intimidate](scc:mcdm.heroes.v1/skill/intimidate) skill, you can cause affected creatures to drop any items they are holding.
-- *Hear Me Out:* While you are present in a negotiation, an NPC's starting patience increases by 3 (to a maximum of 5).
+- *Hear Me Out:* While you are present in a negotiation, an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting patience increases by 3 (to a maximum of 5).
 - *Many Paths to Peace:* When you make a [test](scc:mcdm.heroes.v1/rule.test/test) with a skill from the interpersonal skill group, you can use any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice for the [test](scc:mcdm.heroes.v1/rule.test/test).
 
 <!-- @type: title -->
@@ -26962,19 +26962,19 @@ Additionally, choose a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-a
 <!-- @type: rule | @group: resource | @id: renown -->
 ## Renown
 
-As you accomplish heroic deeds, your fame allows you to influence NPCs and attract followers. Your infamy among your enemies also grows. Every hero has a Renown score that represents how they can use their reputation to influence others. The higher the score, the greater your impact with those who know of your legend.
+As you accomplish heroic deeds, your fame allows you to influence [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and attract [followers](scc:mcdm.heroes.v1/rule.general/follower). Your infamy among your enemies also grows. Every hero has a Renown score that represents how they can use their reputation to influence others. The higher the score, the greater your impact with those who know of your legend.
 
 At the start of character creation, your Renown is 0. Some careers can increase your initial Renown score (see Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background)).
 
 ### Increasing Renown
 
-Some perks (see Chapter 7), downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)), and titles and treasures (part of Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) can increase your [renown](scc:mcdm.heroes.v1/rule.resource/renown). But for the most part, you earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown) at the end of an exciting adventure, often after the acknowledgement of a powerful NPC that you helped save them, their family, their home, their organization—or even their nation or world. That NPC and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
+Some perks (see Chapter 7), downtime projects (Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects)), and titles and treasures (part of Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)) can increase your [renown](scc:mcdm.heroes.v1/rule.resource/renown). But for the most part, you earn [Renown](scc:mcdm.heroes.v1/rule.resource/renown) at the end of an exciting adventure, often after the acknowledgement of a powerful [NPC](scc:mcdm.heroes.v1/rule.general/npc) that you helped save them, their family, their home, their organization—or even their nation or world. That [NPC](scc:mcdm.heroes.v1/rule.general/npc) and anyone else who witnessed your heroics can tell the tale, and from there, your legend grows.
 
 In most campaigns, the Director sets the characters up to earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown) per level, but some campaigns will feature heroes who are more or less famous (or infamous) than that.
 
 ### Influence Negotiation
 
-[Renown](scc:mcdm.heroes.v1/rule.resource/renown) changes the way NPCs respond to heroes during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), whether that [renown](scc:mcdm.heroes.v1/rule.resource/renown) takes the form of fame or infamy.
+[Renown](scc:mcdm.heroes.v1/rule.resource/renown) changes the way [NPCs](scc:mcdm.heroes.v1/rule.general/npc) respond to heroes during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), whether that [renown](scc:mcdm.heroes.v1/rule.resource/renown) takes the form of fame or infamy.
 
 <!-- @type: rule | @group: general | @id: follower -->
 ### Attract Followers
@@ -26985,7 +26985,7 @@ You can recruit followers up to the maximum your [Renown](scc:mcdm.heroes.v1/rul
 
 ###### Renown and Followers Table
 
-| [Renown](scc:mcdm.heroes.v1/rule.resource/renown) | Number of Followers |
+| [Renown](scc:mcdm.heroes.v1/rule.resource/renown) | Number of [Followers](scc:mcdm.heroes.v1/rule.general/follower) |
 |--------|---------------------|
 | 3      | 1                   |
 | 6      | 2                   |
@@ -26995,12 +26995,12 @@ You can recruit followers up to the maximum your [Renown](scc:mcdm.heroes.v1/rul
 <!-- @type: title -->
 #### Stronghold
 
-Many followers stay at a [stronghold](scc:mcdm.heroes.v1/title/stronghold), which is a home base you designate and can change. Your [stronghold](scc:mcdm.heroes.v1/title/stronghold) is typically a location shared by your fellow heroes. It could be a few rooms at an inn in a sleepy village, an old castle you claimed after clearing it of monsters, or a fleet of sailing ships.
+Many [followers](scc:mcdm.heroes.v1/rule.general/follower) stay at a [stronghold](scc:mcdm.heroes.v1/title/stronghold), which is a home base you designate and can change. Your [stronghold](scc:mcdm.heroes.v1/title/stronghold) is typically a location shared by your fellow heroes. It could be a few rooms at an inn in a sleepy village, an old castle you claimed after clearing it of monsters, or a fleet of sailing ships.
 
 <!-- @type: title -->
 #### Follower Types
 
-When you attract a new follower, you decide on their name and ancestry, and choose what role they play in their service to you.
+When you attract a new [follower](scc:mcdm.heroes.v1/rule.general/follower), you decide on their name and ancestry, and choose what role they play in their service to you.
 
 ##### Artisan
 
@@ -27011,7 +27011,7 @@ When you recruit an artisan, choose four skills from the crafting skill group th
 <!-- @type: rule | @group: general | @id: retainer -->
 ##### Retainer
 
-Retainers are heroic NPCs who adventure alongside the player characters. They are controlled by players in combat and are both simpler to run and less powerful than player characters. A hero can have only one retainer in their service at a time unless the Director deems otherwise. Because retainers and their stat blocks are combat focused, the Director can also decide that a large party can have only one retainer in total—or can't have any retainers at all—to keep combat from getting long and tedious.
+Retainers are heroic [NPCs](scc:mcdm.heroes.v1/rule.general/npc) who adventure alongside the player characters. They are controlled by players in combat and are both simpler to run and less powerful than player characters. A hero can have only one retainer in their service at a time unless the Director deems otherwise. Because retainers and their stat blocks are combat focused, the Director can also decide that a large party can have only one retainer in total—or can't have any retainers at all—to keep combat from getting long and tedious.
 
 Rules for retainers are found in *Draw Steel: Monsters*.
 
@@ -27023,13 +27023,13 @@ When you recruit a sage, choose four skills from the lore skill group that they 
 
 ## Wealth
 
-Draw Steel isn't about accumulating and counting every piece of copper you acquire. Instead of tracking a bank account, the amount of stuff your hero can purchase is based on their Wealth score. As you accomplish more deeds, you acquire more treasure and rewards from grateful NPCs that allow you to be an even more effective hero.
+Draw Steel isn't about accumulating and counting every piece of copper you acquire. Instead of tracking a bank account, the amount of stuff your hero can purchase is based on their Wealth score. As you accomplish more deeds, you acquire more treasure and rewards from grateful [NPCs](scc:mcdm.heroes.v1/rule.general/npc) that allow you to be an even more effective hero.
 
 The Hero Wealth table shows the types of items, gear, services, property, and more that you can purchase in the game. For a hero to make a purchase, the item must be available to them. Being able to afford a suit of armor or a stay at an inn doesn't do much good in the middle of a trackless forest, an empty desert, or a remote dungeon ruin. As well, the Director can also decide that a hero can afford only a limited number of purchases. For example, a hero with Wealth 3 can easily buy a small house, but that Wealth doesn't mean they can buy up every available small house in the local area to become a landlord.
 
 The table isn't meant to be an exhaustive list, but you and the Director can use it to judge what your character can and can't purchase. For instance, the relative value of an ox isn't on the table, but you can reasonably assume that if you can buy a horse, you can probably afford an ox as well. (Don't @ us, farm nerds.) And if you can't afford something you want, fear not! You might still be able to acquire a specific good or service through negotiation, or by trading your heroic services instead of spending cash.
 
-Treasures such as magic swords, psionic crowns, and even healing potions are rare to the point where they don't appear on the Hero Wealth table. Such items typically can't be purchased, and are instead found on adventures, traded for other treasures, given as rewards by NPCs, or crafted by the heroes.
+Treasures such as magic swords, psionic crowns, and even healing potions are rare to the point where they don't appear on the Hero Wealth table. Such items typically can't be purchased, and are instead found on adventures, traded for other treasures, given as rewards by [NPCs](scc:mcdm.heroes.v1/rule.general/npc), or crafted by the heroes.
 
 ### Earning Wealth
 
@@ -27114,7 +27114,7 @@ The gods of each pantheon tell you what the people of that region value, and wha
 
 For instance, the High City of Dalrath, a small barony in northern Aendrim, has a temple to Sektahre the Boatman, a saint of Khemhara, a distant desert region. The people of Dalrath do not find this strange. The priestess of Sektahre does all the same things any native curate would do: perform rituals, heal the sick, and otherwise tend to the spiritual and physical wellbeing of the locals without asking much in return. Some people may be suspicious of a stranger peddling their religion far from home, but yet more people consider the presence of such a priestess a sign that their city must be very important indeed.
 
-Because of all these gods and saints, religion in [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) saints in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their followers' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of Saints is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
+Because of all these gods and saints, religion in [Orden](scc:mcdm.heroes.v1/rule.world/orden) is a very à la carte affair. There are [human](scc:mcdm.heroes.v1/ancestry/human) heroes in the elf pantheon. There are [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) saints in many [human](scc:mcdm.heroes.v1/ancestry/human) pantheons. Elder or younger, the gods do not care much about their [followers](scc:mcdm.heroes.v1/rule.general/follower)' biology. If you devote your life to the teachings of a god and do good works in their name, you can expect to be rewarded regardless of your ancestry. And, though the Age of Saints is long past, most folk believe it is still possible for a mortal to ascend to sainthood or herodom, even in this late age.
 
 Lastly, though rulers across the land instinctively believe the gods are paying more attention to them because they are queens or dukes or the heads of a powerful wizard order or guild... there is no evidence of this. As far as theologists can tell, the gods seem to view every soul as equally worthy. Many of the tales of saints and heroes feature characters of enormous [divine power](scc:mcdm.heroes.v1/feature.conduit.level-10/divine-power) battling over the soul of a normal person with no station or power or inheritance.
 
@@ -27475,7 +27475,7 @@ The great dam built by their ancestors that created Lake Tospah was going to fai
 
 When the rains came and would not stop, and the water in Lake Tospah rose putting more pressure on the dam, Atossa opened the gates to the sheep pen and let the tribe's herd of sheep out.
 
-The people ran after them, effectively evacuating the village. But the rains stopped, and the damn did not burst. The people returned to their homes, put the sheep back in the pen, and blamed the shepherd for worrying too much and leading them on wild goose chases.
+The people ran after them, effectively evacuating the village. But the rains stopped, and the damn did not [burst](scc:mcdm.heroes.v1/rule.combat/burst). The people returned to their homes, put the sheep back in the pen, and blamed the shepherd for worrying too much and leading them on wild goose chases.
 
 The next year, the rains came again. And this time the lake was already near capacity. When the shepherd tried to warn the people, they reminded her that it had rained the year before and there was no danger—and so would not listen.
 
@@ -27489,7 +27489,7 @@ When the crack widened and water began to pour through at incredible pressure, t
 
 She let the flowing water carry her toward the widening crack until her body slammed against the stone, blocking the water. The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) are famed for being able to hold their breath, but though her people ran as quickly as they could, there was no way Atossa could block the water long enough.
 
-When the dam eventually burst and washed away the village, the people were not there. Atossa had bought them the time to run to safety. They walked among the ruins and found her crushed body among the rubble. They knew they would see her again.
+When the dam eventually [burst](scc:mcdm.heroes.v1/rule.combat/burst) and washed away the village, the people were not there. Atossa had bought them the time to run to safety. They walked among the ruins and found her crushed body among the rubble. They knew they would see her again.
 
 That night, there was a new constellation in the sky.
 
@@ -27609,9 +27609,9 @@ Kaveran abducted Gaed, his knights dragging the abbot out of his monastery in th
 
 Kaveran was no fool, and knew killing Gaed would make a martyr of him, and so attacked the abbot's flock. Hoping—by putting their homes to the fire—to pressure Gaed into recanting his faith. Kaveran barred several families in a tavern, set fire to it, and brought Gaed to witness the horror.
 
-But Kaveran had not thought to shackle Gaed, and the abbot countered by lifting the bar on the burning building and walking into the tavern in full view of hundreds of his followers. He spoke Saint Anthony's words as he did so, but it was Adûn who clothed him in a shimmering blue light.
+But Kaveran had not thought to shackle Gaed, and the abbot countered by lifting the bar on the burning building and walking into the tavern in full view of hundreds of his [followers](scc:mcdm.heroes.v1/rule.general/follower). He spoke Saint Anthony's words as he did so, but it was Adûn who clothed him in a shimmering blue light.
 
-It was Gaed, son of Malgen, son of Germoc, who entered the tavern—it was Saint Gaed the Confessor who emerged, unscathed, leading the people inside to safety. In that moment the people and many of Kaveran's own followers turned on the cruel Baron, dragging him off his horse and spitting his body with kitchen knives and pitchforks.
+It was Gaed, son of Malgen, son of Germoc, who entered the tavern—it was Saint Gaed the Confessor who emerged, unscathed, leading the people inside to safety. In that moment the people and many of Kaveran's own [followers](scc:mcdm.heroes.v1/rule.general/follower) turned on the cruel Baron, dragging him off his horse and spitting his body with kitchen knives and pitchforks.
 
 Gaed teaches the virtue of being true to one's principles even—especially—when doing so is the most difficult thing in the world. The title "confessor" is granted to those who persisted in their faith in public, even when doing so was dangerous or deadly.
 
@@ -27631,7 +27631,7 @@ One day, years later after his parents had passed, hundreds of people from other
 
 The people were appalled, the White Ravine was impossible to cross for any but the most experienced ranger. "There is no choice" Gryffyn said. "Cinis's army will be here in a matter of days, and there is nowhere else to run."
 
-The people cried and prepared for death. Gryffyn saw this, and his heart felt like it would burst. "There are stones enough in the quarry," he said enigmatically. "Yoke the oxen and bring the stones to the ravine and do not stop, even in darkness, even in rain, until the ghouls come or the quarry is empty."
+The people cried and prepared for death. Gryffyn saw this, and his heart felt like it would [burst](scc:mcdm.heroes.v1/rule.combat/burst). "There are stones enough in the quarry," he said enigmatically. "Yoke the oxen and bring the stones to the ravine and do not stop, even in darkness, even in rain, until the ghouls come or the quarry is empty."
 
 When the army of Cinis the Pale arrived, the people fled to the ravine, the path being easy as their carts and oxen had worn a clear road. Thinking they would throw themselves into the ravine rather than be eaten by the ghouls, they were astonished to discover... the miracle. A great stone bridge crossing the ravine. It had not existed three days prior, and all agreed it could not have taken less than a year to build.
 
@@ -27644,7 +27644,7 @@ Saint Gryffyn the Stout teaches that despair is the enemy of action. That unyiel
 
 **Domains:** Life, Love, Protection, War
 
-Cavall believes that mortals cannot live where injustice thrives. To followers of Cavall, the unjust society is the Wasted Land, where people live false lives. The concepts of civil law and just punishment are his.
+Cavall believes that mortals cannot live where injustice thrives. To [followers](scc:mcdm.heroes.v1/rule.general/follower) of Cavall, the unjust society is the Wasted Land, where people live false lives. The concepts of civil law and just punishment are his.
 
 A watchhouse chaplain is almost certainly a priest of Cavall. A rector serving a small town may be welcome on the town council, but would consider passing judgment on a fellow citizen a breach of duty. The maxim of the church of Saint Gwiddon the Vigilant translates as: "To watch, report, but not to judge." The law, Cavall says, belongs to mortals.
 
@@ -27670,7 +27670,7 @@ When Llewellyn slew Ghruk the Trollhag, she cried out, "Follow Melianus!" as she
 
 That night, Llewellyn waited in the stables and, at midnight, Melianus appeared. He mounted his great black warhorse Coalfire and rode. To where, Llewellyn could not guess. But the knight followed the duke as he rode east toward the marsh, he remembered the rumors.
 
-At the edge of the marsh, Coalfire's eyes began to glow with a baleful flame and his mane burst into crimson fire. Llewellyn's breath caught in his throat. "A nightmare!" he realized. The rumors were true! The sorcerer had given Melianus a [devil](scc:mcdm.heroes.v1/ancestry/devil) steed.
+At the edge of the marsh, Coalfire's eyes began to glow with a baleful flame and his mane [burst](scc:mcdm.heroes.v1/rule.combat/burst) into crimson fire. Llewellyn's breath caught in his throat. "A nightmare!" he realized. The rumors were true! The sorcerer had given Melianus a [devil](scc:mcdm.heroes.v1/ancestry/devil) steed.
 
 On flaming nightmare hooves was Melianus able to cross the impassable swamp. Llewellyn balked, no one could cross the cursed bog. But Silverheart champed at her bit, pulled on the reins. She would not yield. Placing his trust in his steed, Llewellyn let the reins lie slack, and Silverheart took the lead.
 
@@ -27682,7 +27682,7 @@ Cyrvis had rewarded his loyal servant for years of cruelty, and the figure astri
 
 Coalfire struck with flaming hooves at Silverheart but the destrier struck back, blow for bite and bite for blow. Then the hellsteed, roared and a rotting green flame burned Silverheart's flesh and stole her breath until, choking, she fell to the ground, dead.
 
-Llewellyn's heart burst. He threw his body over the corpse of his loyal steed, and Melianus's lance pierced his armor, his back, and his heart. Knight and horse, dead. Melianus crowed as the lightning flashed again. But, in that moment, the miracle.
+Llewellyn's heart [burst](scc:mcdm.heroes.v1/rule.combat/burst). He threw his body over the corpse of his loyal steed, and Melianus's lance pierced his armor, his back, and his heart. Knight and horse, dead. Melianus crowed as the lightning flashed again. But, in that moment, the miracle.
 
 Cavall stood between the Dark Saint and loyal knight. Cavall pulled the lance from Llewellyn's back. "Rise my son, and rise thy steed. Thy work shalt never be done."
 
@@ -27827,13 +27827,13 @@ Most heroes are hero-heroes, but some heroes are anti-heroes, and some are anti-
 
 Nikros is strength. He is dominance. His is the right of the strong to rule over the weak. He is the Tyrant.
 
-Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, followers of Nikros are often mistaken for followers of [Adûn](scc:mcdm.heroes.v1/god/adun)—a mask they are happy to wear. Both teach that strength is good. But for [Adûn](scc:mcdm.heroes.v1/god/adun) strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. [Might](scc:mcdm.heroes.v1/rule.character/might) is right.
+Nikros believes that strength is the only virtue, and those who are born strong were born to rule. Because of this, [followers](scc:mcdm.heroes.v1/rule.general/follower) of Nikros are often mistaken for [followers](scc:mcdm.heroes.v1/rule.general/follower) of [Adûn](scc:mcdm.heroes.v1/god/adun)—a mask they are happy to wear. Both teach that strength is good. But for [Adûn](scc:mcdm.heroes.v1/god/adun) strength is a tool for helping others. For Nikros, strength is power to enact your will heedless of the consequences. [Might](scc:mcdm.heroes.v1/rule.character/might) is right.
 
 Many is the baron or duke who attained power through sheer strength and ruthlessness, seeing their people as mere resources to be spent. Many of these rulers only come to Nikros after achieving power, their ears poisoned by a priest of the Tyrant.
 
 Though he and Cyrvis are brothers, Nikros hates Cyrvis because Cyrvis is feeble and weak. Both teach that strength is the only virtue. But Cyrvis teaches that the weak can exploit treachery and sorcery to become strong. Nikros spits upon these feeble wastes and preaches to the strong to take what is theirs by right.
 
-Like Cyrvis, his priests worship in secret. Like Cyrvis, folk hate followers of Nikros, while sometimes secretly admiring them. Bullies always have their sycophants.
+Like Cyrvis, his priests worship in secret. Like Cyrvis, folk hate [followers](scc:mcdm.heroes.v1/rule.general/follower) of Nikros, while sometimes secretly admiring them. Bullies always have their sycophants.
 
 Nikros's [censors](scc:mcdm.heroes.v1/class/censor) take what they want, ignore the law heedless of consequence, and teach that all folk should live thus. To subjugate one's will to the law, or the community, or the family, is to be weak! Weakness is a disease and it must be eradicated!
 
@@ -27863,7 +27863,7 @@ A person bullied, a criminal arrested, a servant dismissed—all who harbor secr
 
 It is dangerous to worship Cyrvis in public, but those who gain power through his worship often parade this fact gladly and teach Cyrvis' hatred as virtue. Many is the knight who rides with Cyrvis's screaming-skull talisman on their shield, teaching folk to take what they want, the law be damned. The law is a coward! The law is a system designed by cowards to keep us from seeking real power!
 
-His churches are often underground—in dungeons, cellars. His priests worship in secret, plotting against those with power, or those who are merely popular. To be liked and loved is reason enough for a follower of Cyrvis to hate you.
+His churches are often underground—in dungeons, cellars. His priests worship in secret, plotting against those with power, or those who are merely popular. To be liked and loved is reason enough for a [follower](scc:mcdm.heroes.v1/rule.general/follower) of Cyrvis to hate you.
 
 ##### Eseld of the Eye
 
@@ -27903,7 +27903,7 @@ The Space Gods do not concern themselves overmuch with what [humans](scc:mcdm.he
 
 Whether it is a tradition or some real limitation, each Space God has, instead of saints, a single herald—a mortal chosen to be the voice of the Space God and communicate with their worshippers where the god themself cannot due to their alien mind.
 
-These heralds function much the same way as saints. They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their followers and take an active interest in the mortal affairs of the timescape.
+These heralds function much the same way as saints. They grant [conduits](scc:mcdm.heroes.v1/class/conduit) and [censors](scc:mcdm.heroes.v1/class/censor) power in battle, but without the moral expectations of [Orden](scc:mcdm.heroes.v1/rule.world/orden)'s gods. The Space Gods themselves are more capricious, but their heralds often arrive in person to aid their [followers](scc:mcdm.heroes.v1/rule.general/follower) and take an active interest in the mortal affairs of the timescape.
 
 #### Religion in the Timescape
 
@@ -27922,7 +27922,7 @@ The Queen of Suns. A living nebula. Desperate ships in need sometimes find thems
 
 She is a stellar nursery leaving a trail of infant stars in her wake. Hers is the Engine of Law transforming darkness into light, chaos into order. She is the most popular god among the [memonek](scc:mcdm.heroes.v1/ancestry/memonek) and the senior god among the Lords of Law insofar as their hierarchy can be discerned by mortal minds.
 
-She is the goddess of creation and for some of her followers, life itself, as her children's energies feed all life on all worlds. Her priests teach that life is the opposite of entropy, and the natural byproduct of her solar incubator.
+She is the goddess of creation and for some of her [followers](scc:mcdm.heroes.v1/rule.general/follower), life itself, as her children's energies feed all life on all worlds. Her priests teach that life is the opposite of entropy, and the natural byproduct of her solar incubator.
 
 ##### The Calling of Lady Magnetar
 
@@ -28051,7 +28051,7 @@ The Director has a number of key jobs in this game, which we'll go over in this 
 - Before a campaign starts, the Director pitches the idea of their campaign to the players.
 - Before each game, the Director prepares the adventure by building scenes that include encounters, negotiations, and downtime activities.
 - During the game, the Director presents the scenes they've prepared to the players.
-- During the game, the Director is responsible for how the NPCs and the environment react to the actions of the heroes. This includes changing and skipping prepared scenes and running new scenes on the fly.
+- During the game, the Director is responsible for how the [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and the environment react to the actions of the heroes. This includes changing and skipping prepared scenes and running new scenes on the fly.
 - During the game, the Director acts as a referee, adjudicating the rules. If something isn't covered by the rules, the Director decides how to determine what happens next in the game.
 - After the game, the Director makes or reviews notes covering what happened during the game, then starts planning for the next game session.
 
@@ -28111,7 +28111,7 @@ You can break down your game into the following categories:
 
 - **Combat:** How often are the heroes using violence to overcome challenges?
 - **Exploration:** How often are the heroes exploring new environments that are difficult to traverse? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the exploration skill group?
-- **Interpersonal:** How often are the heroes using negotiation and conversing with NPCs to overcome challenges? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the interpersonal skill group?
+- **Interpersonal:** How often are the heroes using negotiation and conversing with [NPCs](scc:mcdm.heroes.v1/rule.general/npc) to overcome challenges? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the interpersonal skill group?
 - **Intrigue:** How often are the heroes solving mysteries, finding double agents, and skulking about the shadows to achieve their goals? How embroiled will they get in the politics of competing people and factions? How often do you expect the heroes to make [tests](scc:mcdm.heroes.v1/rule.test/test) using skills from the intrigue skill group?
 
 These are the primary types of scenes found in many campaigns, but you could also add your own. For instance, if you want to run a campaign full of diabolical brain teasers and traps, you could add a "Puzzles" category to your campaign pitch document.
@@ -28132,7 +28132,7 @@ The Wards of the Last Emperor campaign pitch has the following gameplay breakdow
 
 - **Combat:** Medium. The heroes might tussle with the forces of Ajax, guardians of the lost wards, and other factions who desire the last emperor's treasures.
 - **Exploration:** High. The heroes must traverse [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria)'s most remote locations to find the wards.
-- **Interpersonal:** Low. Heroes will likely interact with other NPCs as they track down leads on wards, but won't have frequent conversations or negotiations with them.
+- **Interpersonal:** Low. Heroes will likely interact with other [NPCs](scc:mcdm.heroes.v1/rule.general/npc) as they track down leads on wards, but won't have frequent conversations or negotiations with them.
 - **Intrigue:** Medium. Heroes will regularly contend with all the other entities who want the prizes hidden behind the wards, engaging in counterintelligence and sabotage.
 
 #### Player Buy-In
@@ -28173,9 +28173,9 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 ### House Rules
 
-You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a [respite](scc:mcdm.heroes.v1/rule.resource/respite) last 8 hours, or perhaps a [respite](scc:mcdm.heroes.v1/rule.resource/respite) should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
+You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a [respite](scc:mcdm.heroes.v1/rule.resource/respite) last 8 hours, or perhaps a [respite](scc:mcdm.heroes.v1/rule.resource/respite) should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20). You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
 
-The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
+The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a [natural 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), the worst time for a player to find that out is right after they roll a [natural 19](scc:mcdm.heroes.v1/rule.dice/natural-19-20) in combat.
 
 Talk to the players about the house rules you want to use in your campaign, and discuss any ideas they bring to you for house rules during your first session.
 
@@ -28201,8 +28201,8 @@ If you're planning on making your own campaign setting, start small. Instead of 
 
 **Locations:** Make a list of any important locations in the campaign starting point, such as an inn or house where the heroes are staying, merchants they might want to visit, and the headquarters of organizations that might be important to them.
 
-- **NPCS:** Write the name, ancestry, age, gender, and a brief note on personality for each NPC the characters might interact with in the locations you've created.
-- **Adventure Sites:** Repeat the above two steps for any adventure sites the heroes might visit during their first adventure. Detail the sites, as well as any important NPCs and villains the heroes might interact with.
+- **[NPC](scc:mcdm.heroes.v1/rule.general/npc)S:** Write the name, ancestry, age, gender, and a brief note on personality for each [NPC](scc:mcdm.heroes.v1/rule.general/npc) the characters might interact with in the locations you've created.
+- **Adventure Sites:** Repeat the above two steps for any adventure sites the heroes might visit during their first adventure. Detail the sites, as well as any important [NPCs](scc:mcdm.heroes.v1/rule.general/npc) and villains the heroes might interact with.
 - **Organizations:** You can also detail the laws and function of organizations the heroes might interact with during their first adventure. What governments, churches, and guilds could they come across? How might these organizations interact with the characters? You don't need to write up every bylaw in a pirate code, but it would be good to know how the pirates react to adventurers asking to sail the seas on their ship.
 - **Map:** Make a map of the starting area. It doesn't need to be good! Just a few clearly labeled dots and squiggles showing the setup of city neighborhoods or the locations of forests, deserts, mountains, bodies of water, and other landforms should be plenty.
 
@@ -28280,7 +28280,7 @@ At each [echelon](scc:mcdm.heroes.v1/rule.general/echelon), you should revisit y
 
 A lot of Directors prefer to make their own adventures rather than use published ones. Creating your own adventures lets you tailor the story to perfectly fit the motivations of the heroes in your game, thus maximizing the fun for the players.
 
-Every good adventure includes villains, a task to accomplish, NPCs, and interesting locations and adventure sites.
+Every good adventure includes villains, a task to accomplish, [NPCs](scc:mcdm.heroes.v1/rule.general/npc), and interesting locations and adventure sites.
 
 > **Player Ambition Writes Adventures**
 >
@@ -28298,7 +28298,7 @@ The best way to let the players know that your villain must be defeated is to ha
 
 The two most important things that make your adventure's villain worth the heroes' time is what they've done—and what they're planning to do. What they've done shows that they're not just evil but capable. What they plan to do is worse than what they've done, and by golly, someone needs to stop it.
 
-Give your villain a history of evil that the heroes can uncover. It might be a short history. Maybe the villain just performed the first in a series of murders a few hours before the heroes come to town. Or it could cover years spent as a warlord, tyrant, or entity of destruction leaving behind entire worlds reduced to rubble. Let the sins of the villain be what hooks the heroes into the adventure—and remember that there's no motivation stronger than the players deciding they must stop the villain before being asked to. A self-inspired goal works better than having an NPC beg or pay the heroes to get the job done. Still, what starts out as a job often becomes a personal mission, so don't be afraid to start there if doing so feels like the best idea.
+Give your villain a history of evil that the heroes can uncover. It might be a short history. Maybe the villain just performed the first in a series of murders a few hours before the heroes come to town. Or it could cover years spent as a warlord, tyrant, or entity of destruction leaving behind entire worlds reduced to rubble. Let the sins of the villain be what hooks the heroes into the adventure—and remember that there's no motivation stronger than the players deciding they must stop the villain before being asked to. A self-inspired goal works better than having an [NPC](scc:mcdm.heroes.v1/rule.general/npc) beg or pay the heroes to get the job done. Still, what starts out as a job often becomes a personal mission, so don't be afraid to start there if doing so feels like the best idea.
 
 Once a villain discovers that the heroes are meddling in their plans, they don't sit idly by and wait for the fight to come to them. No! Great villains are proactive, sending lackeys to battle the heroes, frame them for crimes, capture their loved ones, or burn their hometowns.
 
@@ -28319,7 +28319,7 @@ Of course, some villains want to cause violence and mayhem just for the sake of 
 
 > **Stealing is Encouraged**
 >
-> When you're coming up with ideas for campaigns, adventures, and scenes, you should feel free to steal plots, action set pieces, characters, and anything else you want from your favorite movies, television shows, novels, comic books, and podcasts. You can then modify a few cosmetic details to make things your own. Borrowing a character who's a [human](scc:mcdm.heroes.v1/ancestry/human) man in your favorite novel to make an NPC? Make the NPC a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) woman with a new name and no one is the wiser. Got an idea for an encounter based on a battle scene from your favorite science fiction flick? Make those invading aliens gnolls instead! Let your favorite stories inspire you, especially when you're looking for new ideas.
+> When you're coming up with ideas for campaigns, adventures, and scenes, you should feel free to steal plots, action set pieces, characters, and anything else you want from your favorite movies, television shows, novels, comic books, and podcasts. You can then modify a few cosmetic details to make things your own. Borrowing a character who's a [human](scc:mcdm.heroes.v1/ancestry/human) man in your favorite novel to make an [NPC](scc:mcdm.heroes.v1/rule.general/npc)? Make the [NPC](scc:mcdm.heroes.v1/rule.general/npc) a [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) woman with a new name and no one is the wiser. Got an idea for an encounter based on a battle scene from your favorite science fiction flick? Make those invading aliens gnolls instead! Let your favorite stories inspire you, especially when you're looking for new ideas.
 
 #### Adventure Goal
 
@@ -28341,39 +28341,39 @@ Every adventure should have an inciting incident that either sees the heroes dis
 
 #### Creating NPCs
 
-The heroes and the fell monsters they slay shouldn't be the only folks in an adventure. A few friendly (or at least nonhostile) NPCs can supply the characters with information, equipment, and—most importantly—a good reason for putting their lives on the line. If all the people the characters come across are villainous, apathetic, or selfish, the players won't feel very motivated to get their heroics on.
+The heroes and the fell monsters they slay shouldn't be the only folks in an adventure. A few friendly (or at least nonhostile) [NPCs](scc:mcdm.heroes.v1/rule.general/npc) can supply the characters with information, equipment, and—most importantly—a good reason for putting their lives on the line. If all the people the characters come across are villainous, apathetic, or selfish, the players won't feel very motivated to get their heroics on.
 
-The NPCs the heroes meet during their adventures should be complex people. They have personal motivations for helping the heroes, personality and behavioral quirks, and character flaws. An adventure typically features at least three or four NPCs you'll want to flesh out, depending on how many scenes you plan to play out and how many NPCs each scene requires.
+The [NPCs](scc:mcdm.heroes.v1/rule.general/npc) the heroes meet during their adventures should be complex people. They have personal motivations for helping the heroes, personality and behavioral quirks, and character flaws. An adventure typically features at least three or four [NPCs](scc:mcdm.heroes.v1/rule.general/npc) you'll want to flesh out, depending on how many scenes you plan to play out and how many [NPCs](scc:mcdm.heroes.v1/rule.general/npc) each scene requires.
 
-When you create an NPC, quickly jot down the following information about them.
+When you create an [NPC](scc:mcdm.heroes.v1/rule.general/npc), quickly jot down the following information about them.
 
 ##### Personal Details
 
-What's this NPC's name? What do they do for a living?
+What's this [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s name? What do they do for a living?
 
 ##### Features
 
-What's notable about the NPC's appearance? Do they have distinguishing features such as a streak of gray or color in their hair, a bushy beard, a tattoo of a snake skull, or a scar over one eye? Do they have a specific scent (good or bad)?
+What's notable about the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s appearance? Do they have distinguishing features such as a streak of gray or color in their hair, a bushy beard, a tattoo of a snake skull, or a scar over one eye? Do they have a specific scent (good or bad)?
 
 ##### Voice
 
-When the NPC speaks, how does their voice sound? You don't have to put on a character voice every time you speak as the NPC, but telling the players, "This elf talks like a pirate," or "This [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) has a high-pitched voice that keeps cracking," helps them remember and differentiate that NPC from others.
+When the [NPC](scc:mcdm.heroes.v1/rule.general/npc) speaks, how does their voice sound? You don't have to put on a character voice every time you speak as the [NPC](scc:mcdm.heroes.v1/rule.general/npc), but telling the players, "This elf talks like a pirate," or "This [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) has a high-pitched voice that keeps cracking," helps them remember and differentiate that [NPC](scc:mcdm.heroes.v1/rule.general/npc) from others.
 
 ##### Behavior
 
-What noticeable behavior does the NPC have? Maybe they maintain constant, unbreaking eye contact, or maybe they rarely look up from their feet. They could pick their nose, repeat a catch phrase, talk to themself, bite their nails, whisper whenever they say something profound (or profane!), or constantly clear their throat. Giving an NPC just one distinct behavior helps cement them in the players' minds and makes them more authentic.
+What noticeable behavior does the [NPC](scc:mcdm.heroes.v1/rule.general/npc) have? Maybe they maintain constant, unbreaking eye contact, or maybe they rarely look up from their feet. They could pick their nose, repeat a catch phrase, talk to themself, bite their nails, whisper whenever they say something profound (or profane!), or constantly clear their throat. Giving an [NPC](scc:mcdm.heroes.v1/rule.general/npc) just one distinct behavior helps cement them in the players' minds and makes them more authentic.
 
 ##### Flaw
 
-What character flaw does this NPC have? They might be selfish when it comes to wealth, ignore their personal hygiene, lie to cover up their insecurities, or act cowardly in the face of threats. A single flaw does the trick. Too many flaws, and your NPC will go from authentic to authentically unlikable fast.
+What character flaw does this [NPC](scc:mcdm.heroes.v1/rule.general/npc) have? They might be selfish when it comes to wealth, ignore their personal hygiene, lie to cover up their insecurities, or act cowardly in the face of threats. A single flaw does the trick. Too many flaws, and your [NPC](scc:mcdm.heroes.v1/rule.general/npc) will go from authentic to authentically unlikable fast.
 
 ##### Helping the Heroes
 
-Why would this NPC want to help the heroes during this adventure? They don't have to be fully on board with helping the characters at first. It might take some convincing, in the form of a [test](scc:mcdm.heroes.v1/rule.test/test), a negotiation, or a task the heroes need to accomplish to win the NPC's help. But there should be at least a kernel of motivation in the NPC already—or they have no reason to help. It could be that they don't want the villain to succeed, they see a profitable opportunity in working with the heroes, or they feel they owe the heroes a favor thanks to a previous adventure.
+Why would this [NPC](scc:mcdm.heroes.v1/rule.general/npc) want to help the heroes during this adventure? They don't have to be fully on board with helping the characters at first. It might take some convincing, in the form of a [test](scc:mcdm.heroes.v1/rule.test/test), a negotiation, or a task the heroes need to accomplish to win the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s help. But there should be at least a kernel of motivation in the [NPC](scc:mcdm.heroes.v1/rule.general/npc) already—or they have no reason to help. It could be that they don't want the villain to succeed, they see a profitable opportunity in working with the heroes, or they feel they owe the heroes a favor thanks to a previous adventure.
 
 ##### Denying Aid
 
-What would prevent this NPC from helping the heroes? It's possible that the answer is "nothing," but most people have something or someone they're not willing to risk even if the fate of the world hangs in the balance. What could the villain threaten that makes the NPC think twice about helping out the heroes? It might be a loved one, a meaningful location, or a valuable treasure.
+What would prevent this [NPC](scc:mcdm.heroes.v1/rule.general/npc) from helping the heroes? It's possible that the answer is "nothing," but most people have something or someone they're not willing to risk even if the fate of the world hangs in the balance. What could the villain threaten that makes the [NPC](scc:mcdm.heroes.v1/rule.general/npc) think twice about helping out the heroes? It might be a loved one, a meaningful location, or a valuable treasure.
 
 #### Interesting Locations
 
@@ -28403,14 +28403,14 @@ When you create a specific site, ask the following questions in addition to the 
 
 - Why would the heroes come here during the adventure?
 - What types of scenes might play out at this site?
-- Which NPCs who the heroes might interact with are found here?
+- Which [NPCs](scc:mcdm.heroes.v1/rule.general/npc) who the heroes might interact with are found here?
 - What information, items, or confrontations might the heroes discover here that will help them advance the story of the adventure?
 
 #### Plan Scenes
 
-Once you have your villain, your adventure goal, your NPCs, and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), negotiations, [respites](scc:mcdm.heroes.v1/rule.resource/respite), and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
+Once you have your villain, your adventure goal, your [NPCs](scc:mcdm.heroes.v1/rule.general/npc), and your general locations and specific sites, it's time to start stitching those elements together to create scenes. Your adventure will have combat encounters, [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), negotiations, [respites](scc:mcdm.heroes.v1/rule.resource/respite), and scenes of exploration and social interaction. Creating Scenes below has more information about detailing the scenes in your adventures, but planning out those scenes is the first step.
 
-When you're thinking about scenes, write down which sites and NPCs are tied to those scenes, then try to arrange the scenes in an order that makes sense for the story. It might be that after your inciting incident, certain scenes can be tackled in any order. For example, if the adventure goal is to recover three pieces of an ancient staff before the villain does, the heroes might be able to explore the three sites where the pieces are hidden in any order they choose. Their choice might even have consequences. It might be that the first site they choose has none of the villain's lackeys investigating it yet, the second site features a showdown with those lackeys, and the third site has already been cleaned out by the villain by the time the characters get there! Other scenes might have to happen more linearly. An investigation typically includes a trail of clues that takes the heroes from one scene to the next, but the players can surprise you.
+When you're thinking about scenes, write down which sites and [NPCs](scc:mcdm.heroes.v1/rule.general/npc) are tied to those scenes, then try to arrange the scenes in an order that makes sense for the story. It might be that after your inciting incident, certain scenes can be tackled in any order. For example, if the adventure goal is to recover three pieces of an ancient staff before the villain does, the heroes might be able to explore the three sites where the pieces are hidden in any order they choose. Their choice might even have consequences. It might be that the first site they choose has none of the villain's lackeys investigating it yet, the second site features a showdown with those lackeys, and the third site has already been cleaned out by the villain by the time the characters get there! Other scenes might have to happen more linearly. An investigation typically includes a trail of clues that takes the heroes from one scene to the next, but the players can surprise you.
 
 Don't get married to the order in which you plan your scenes. If the heroes have terrible luck with dice in a couple of combat encounters, they might stop to take a [respite](scc:mcdm.heroes.v1/rule.resource/respite) and regain their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) before you anticipated they would. If the heroes are unraveling a mystery, they might make unexpected deductions or good guesses that allow them to skip a scene altogether! This is part of the fun of the game. The dice and the players will surprise you.
 
@@ -28420,9 +28420,9 @@ Once you have all your scenes planned, it's time to put together the adventure o
 
 #### Adventure Outline
 
-Your adventure outline is a document you can use to run your game sessions. It contains information about the villain, the adventure goal, NPCs, locations and sites, and scenes. You can format this outline however you like, whether as fully written sentences, bullet points, a plotting web, or anything else that makes sense to you.
+Your adventure outline is a document you can use to run your game sessions. It contains information about the villain, the adventure goal, [NPCs](scc:mcdm.heroes.v1/rule.general/npc), locations and sites, and scenes. You can format this outline however you like, whether as fully written sentences, bullet points, a plotting web, or anything else that makes sense to you.
 
-A standard adventure outline contains a bit of overview information regarding the adventure's villain, goal, and NPCs. It then contains a list of locations and sites, with specific sites breaking out the details of each scene that occurs there. The outline then wraps up with a conclusion section discussing the impact the heroes' actions have on the overall campaign and the game world.
+A standard adventure outline contains a bit of overview information regarding the adventure's villain, goal, and [NPCs](scc:mcdm.heroes.v1/rule.general/npc). It then contains a list of locations and sites, with specific sites breaking out the details of each scene that occurs there. The outline then wraps up with a conclusion section discussing the impact the heroes' actions have on the overall campaign and the game world.
 
 #### Creating Scenes
 
@@ -28436,7 +28436,7 @@ Not everything the heroes do is worthy of a scene, and you don't need to play ou
 
 #### Director Sheets
 
-Director sheets are a resource you can use to prepare and track the progress of characters during combat encounters, negotiations, and [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). These sheets allow you to track the [objectives](scc:mcdm.heroes.v1/rule.combat/objective) and numbers relevant to the challenge, such as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of enemies, NPC interest and patience, and the number of successes and failures in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Each sheet has an optional second page you can use to track narrative details, potential rewards, and supporting NPCs in the scene. You can download these sheets at *https://mcdm.gg/DS-Resources*.
+Director sheets are a resource you can use to prepare and track the progress of characters during combat encounters, negotiations, and [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test). These sheets allow you to track the [objectives](scc:mcdm.heroes.v1/rule.combat/objective) and numbers relevant to the challenge, such as the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of enemies, [NPC](scc:mcdm.heroes.v1/rule.general/npc) interest and patience, and the number of successes and failures in a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test). Each sheet has an optional second page you can use to track narrative details, potential rewards, and supporting [NPCs](scc:mcdm.heroes.v1/rule.general/npc) in the scene. You can download these sheets at *https://mcdm.gg/DS-Resources*.
 
 #### Creating and Running Combat
 
@@ -28519,7 +28519,7 @@ On the other hand, not sharing the difficulty of every [test](scc:mcdm.heroes.v1
 
 After a hero makes a [test](scc:mcdm.heroes.v1/rule.test/test), it's up to you to narrate and decide the outcome, keeping some basic guidelines in mind.
 
-If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a future [test](scc:mcdm.heroes.v1/rule.test/test), losing a mundane item, making a friendly NPC angry, or even earning you a little future Malice. The consequence is up to you!
+If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure with a consequence**, the hero doesn't just fail—they make things worse. This might mean drawing the attention of nearby foes, setting off a hazard or trap, taking damage or causing an ally to take damage, taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on a future [test](scc:mcdm.heroes.v1/rule.test/test), losing a mundane item, making a friendly [NPC](scc:mcdm.heroes.v1/rule.general/npc) angry, or even earning you a little future Malice. The consequence is up to you!
 
 If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **failure**, the hero doesn't do what they set out to do. But even though they don't incur a formal consequence, negative effects can still accompany a failed [test](scc:mcdm.heroes.v1/rule.test/test) depending on circumstances. If a hero attempts to move silently past a group of guards, a failure on the [test](scc:mcdm.heroes.v1/rule.test/test) might draw the guards' attention, but the character should have a chance to react before the alarm is raised. But if the character had incurred a failure with a consequence, they would be spotted immediately as the shouting guards rush to the attack.
 
@@ -28527,7 +28527,7 @@ If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **success with a consequence
 
 If a [test](scc:mcdm.heroes.v1/rule.test/test) is a **success**, the hero does what they set out to do! You can even let a player narrate the outcome of a successful [test](scc:mcdm.heroes.v1/rule.test/test) by asking them, "How did you pull this off ?"
 
-If the [test](scc:mcdm.heroes.v1/rule.test/test) is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same [test](scc:mcdm.heroes.v1/rule.test/test) an automatic success, grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future [test](scc:mcdm.heroes.v1/rule.test/test) for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby NPC to come forth and offer aid, or earn the group a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). A reward on a [test](scc:mcdm.heroes.v1/rule.test/test) is yours to choose.
+If the [test](scc:mcdm.heroes.v1/rule.test/test) is a **success with a reward**, the hero does what they set out to do—and then some. A reward might grant another character who needs to make the same [test](scc:mcdm.heroes.v1/rule.test/test) an automatic success, grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on a future [test](scc:mcdm.heroes.v1/rule.test/test) for the hero, reveal a hidden treasure the hero wasn't looking for, inspire a nearby [NPC](scc:mcdm.heroes.v1/rule.general/npc) to come forth and offer aid, or earn the group a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). A reward on a [test](scc:mcdm.heroes.v1/rule.test/test) is yours to choose.
 
 Sample consequences and rewards for [tests](scc:mcdm.heroes.v1/rule.test/test) are detailed in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests).
 
@@ -28606,40 +28606,40 @@ But although lasting and interesting consequences are fun, make sure they don't 
 
 #### Creating and Running Interaction
 
-Interaction scenes are similar to exploration scenes, except that the heroes obtain the information and objects they need by talking to one or more NPCs instead of exploring an area. Just like with an exploration encounter, you make a list of necessary information that the NPCs can offer to the heroes freely. NPCs might then have other information or objects they can be convinced to give to the heroes if they make a persuasive argument, do something kind for the NPC, or succeed on a [test](scc:mcdm.heroes.v1/rule.test/test).
+Interaction scenes are similar to exploration scenes, except that the heroes obtain the information and objects they need by talking to one or more [NPCs](scc:mcdm.heroes.v1/rule.general/npc) instead of exploring an area. Just like with an exploration encounter, you make a list of necessary information that the [NPCs](scc:mcdm.heroes.v1/rule.general/npc) can offer to the heroes freely. [NPCs](scc:mcdm.heroes.v1/rule.general/npc) might then have other information or objects they can be convinced to give to the heroes if they make a persuasive argument, do something kind for the [NPC](scc:mcdm.heroes.v1/rule.general/npc), or succeed on a [test](scc:mcdm.heroes.v1/rule.test/test).
 
-Interaction scenes aren't full negotiations, which are reserved for adventure-changing conversations. Still, keep in mind that different NPCs react differently to various forms of persuasion. A coward might be easy to intimidate, while a battle-hardened soldier might be impossible to awe with displays of ferocity. A bribe might work for a corrupt noble, but a goodly queen who already has wealth beyond measure likely has no interest in whatever riches the heroes possess.
+Interaction scenes aren't full negotiations, which are reserved for adventure-changing conversations. Still, keep in mind that different [NPCs](scc:mcdm.heroes.v1/rule.general/npc) react differently to various forms of persuasion. A coward might be easy to intimidate, while a battle-hardened soldier might be impossible to awe with displays of ferocity. A bribe might work for a corrupt noble, but a goodly queen who already has wealth beyond measure likely has no interest in whatever riches the heroes possess.
 
-Refer to the details you wrote down for your NPCs while you roleplay them. Keep in mind any distinct behaviors or attitudes you can throw in to help make the scene fun. You don't have to be a great actor to create a memorable interaction scene! Simply describing how an NPC looks, sounds, and acts goes a long way even without doing funny voices. If you want to put on a character voice, go for it—but there's no obligation to.
+Refer to the details you wrote down for your [NPCs](scc:mcdm.heroes.v1/rule.general/npc) while you roleplay them. Keep in mind any distinct behaviors or attitudes you can throw in to help make the scene fun. You don't have to be a great actor to create a memorable interaction scene! Simply describing how an [NPC](scc:mcdm.heroes.v1/rule.general/npc) looks, sounds, and acts goes a long way even without doing funny voices. If you want to put on a character voice, go for it—but there's no obligation to.
 
 ### Creating and Running Negotiations
 
-When you're preparing for a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), you'll want to pick an NPC and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
+When you're preparing for a negotiation (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)), you'll want to pick an [NPC](scc:mcdm.heroes.v1/rule.general/npc) and give them their negotiation stats—a starting interest and patience, motivations and pitfalls, and an Impression score. The Starting Attitudes table in the Negotiation chapter should give you an idea of where to start with some of these stats, but you should feel free to adjust the numbers as you see fit.
 
 When assigning negotiation stats, keep the following guidelines in mind:
 
-- The higher an NPC's starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the NPC.
-- The higher an NPC's starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your NPC a higher patience score.
-- The more motivations an NPC has, the more likely the heroes are to make easier [tests](scc:mcdm.heroes.v1/rule.test/test) while engaging the NPC.
-- The more pitfalls an NPC has, the more likely the heroes are to stumble into a topic that turns negotiation sour. However, too many pitfalls can feel like a "Gotcha!" setup to players, especially if they don't have time to do a little research or reconnaissance on the NPC before going into the negotiation.
+- The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting interest, the more likely the heroes are to end the negotiation with everything they want—and then some—from the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
+- The higher an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s starting patience, the longer the negotiation and the more chances the heroes have to make arguments. If you want a long, rich negotiation, give your [NPC](scc:mcdm.heroes.v1/rule.general/npc) a higher patience score.
+- The more motivations an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has, the more likely the heroes are to make easier [tests](scc:mcdm.heroes.v1/rule.test/test) while engaging the [NPC](scc:mcdm.heroes.v1/rule.general/npc).
+- The more pitfalls an [NPC](scc:mcdm.heroes.v1/rule.general/npc) has, the more likely the heroes are to stumble into a topic that turns negotiation sour. However, too many pitfalls can feel like a "Gotcha!" setup to players, especially if they don't have time to do a little research or reconnaissance on the [NPC](scc:mcdm.heroes.v1/rule.general/npc) before going into the negotiation.
 
 #### Plan the Outcomes
 
-It helps to know the various outcomes an NPC might offer during a negotiation ahead of time. An adventure or campaign continuing should never hinge entirely on the outcome of a negotiation. You don't want the story to come grinding to a halt if the heroes fail to secure information, treasure, or help from an NPC. A failed negotiation might mean the adventure gets a lot harder, but should always provide options for continuing when the characters' negotiation skills fail them.
+It helps to know the various outcomes an [NPC](scc:mcdm.heroes.v1/rule.general/npc) might offer during a negotiation ahead of time. An adventure or campaign continuing should never hinge entirely on the outcome of a negotiation. You don't want the story to come grinding to a halt if the heroes fail to secure information, treasure, or help from an [NPC](scc:mcdm.heroes.v1/rule.general/npc). A failed negotiation might mean the adventure gets a lot harder, but should always provide options for continuing when the characters' negotiation skills fail them.
 
-A negotiation has six possible outcomes, but two of those are predetermined. If a negotiation ends with the NPC at interest 4, then the heroes get what they want. If the heroes end the negotiation at interest 1, the NPC can't offer them anything. Even with four options left wide open, however, setting up outcomes actually requires less prep work than you might think.
+A negotiation has six possible outcomes, but two of those are predetermined. If a negotiation ends with the [NPC](scc:mcdm.heroes.v1/rule.general/npc) at interest 4, then the heroes get what they want. If the heroes end the negotiation at interest 1, the [NPC](scc:mcdm.heroes.v1/rule.general/npc) can't offer them anything. Even with four options left wide open, however, setting up outcomes actually requires less prep work than you might think.
 
-> **Multiple NPCs**
+> **Multiple [NPCs](scc:mcdm.heroes.v1/rule.general/npc)**
 >
-> The negotiation rules are built around the idea of the heroes facing off against a single dominant NPC—a powerful leader, a ranking diplomat, a warlord, a key villain, and so forth. But this isn't to say that you can't run a negotiation with the heroes interacting with a group of NPCs, each with their own slightly different take on wheeling and dealing.
+> The negotiation rules are built around the idea of the heroes facing off against a single dominant [NPC](scc:mcdm.heroes.v1/rule.general/npc)—a powerful leader, a ranking diplomat, a warlord, a key villain, and so forth. But this isn't to say that you can't run a negotiation with the heroes interacting with a group of [NPCs](scc:mcdm.heroes.v1/rule.general/npc), each with their own slightly different take on wheeling and dealing.
 >
-> If you set up a negotiation using more than one NPC, you don't give each NPC their own negotiation stats, motivations, and pitfalls. Rather, you assign stats to the group as a whole, then have different NPCs step to the fore in the negotiation when a particular motivation or pitfall is in play. For example, if you assign the greed pitfall to a group of knights, the well-dressed captain of that group might appear as though they're open to being bribed by the heroes. But when the dour sergeant-at-arms who resents the captain's flamboyant lifestyle angrily rejects the characters' offer, the captain must go along with it to keep the peace among their followers.
+> If you set up a negotiation using more than one [NPC](scc:mcdm.heroes.v1/rule.general/npc), you don't give each [NPC](scc:mcdm.heroes.v1/rule.general/npc) their own negotiation stats, motivations, and pitfalls. Rather, you assign stats to the group as a whole, then have different [NPCs](scc:mcdm.heroes.v1/rule.general/npc) step to the fore in the negotiation when a particular motivation or pitfall is in play. For example, if you assign the greed pitfall to a group of knights, the well-dressed captain of that group might appear as though they're open to being bribed by the heroes. But when the dour sergeant-at-arms who resents the captain's flamboyant lifestyle angrily rejects the characters' offer, the captain must go along with it to keep the peace among their [followers](scc:mcdm.heroes.v1/rule.general/follower).
 
-If a negotiation ends with the NPC's interest at 2 or 5, you need to know what the NPC might offer the heroes instead of or in addition to their main ask. It's also a good idea to have a list of two favors, items, pieces of information, or other help the NPC can offer the heroes, so that you aren't scrambling to think of something if these results come up.
+If a negotiation ends with the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest at 2 or 5, you need to know what the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might offer the heroes instead of or in addition to their main ask. It's also a good idea to have a list of two favors, items, pieces of information, or other help the [NPC](scc:mcdm.heroes.v1/rule.general/npc) can offer the heroes, so that you aren't scrambling to think of something if these results come up.
 
-Likewise, if the NPC's interest hits 3, they'll ask the heroes for a favor in exchange for what's being asked of them. The heroes might also directly ask the NPC what they can offer to cinch the negotiation. In this case, it helps to have in mind two favors, items, pieces of information, or other help the NPC could ask for from the heroes.
+Likewise, if the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest hits 3, they'll ask the heroes for a favor in exchange for what's being asked of them. The heroes might also directly ask the [NPC](scc:mcdm.heroes.v1/rule.general/npc) what they can offer to cinch the negotiation. In this case, it helps to have in mind two favors, items, pieces of information, or other help the [NPC](scc:mcdm.heroes.v1/rule.general/npc) could ask for from the heroes.
 
-Finally, if the heroes really offend the NPC and end the negotiation with their interest at 0, have some idea of what the NPC might do to try to punish the heroes. If you don't have this ready, though, don't sweat it. Revenge is a dish best served cold—and maybe a few sessions from now—so you've got time to plan.
+Finally, if the heroes really offend the [NPC](scc:mcdm.heroes.v1/rule.general/npc) and end the negotiation with their interest at 0, have some idea of what the [NPC](scc:mcdm.heroes.v1/rule.general/npc) might do to try to punish the heroes. If you don't have this ready, though, don't sweat it. Revenge is a dish best served cold—and maybe a few sessions from now—so you've got time to plan.
 
 #### Hero Negotiation Stats
 
@@ -28647,43 +28647,43 @@ Many heroes have class features, titles, or other character options that make th
 
 #### Heroes Must Initiate
 
-A negotiation should always be initiated by the heroes, and the character (as with people in general) can't be forced to negotiate for something they don't want. As you prepare your negotiation, remember that the players might decide to gain what the characters need from the NPC in some other way—calling in a favor from someone else who has the means to help them, stealing what they need from the NPC, simply pushing forward without the NPC's help, and so on.
+A negotiation should always be initiated by the heroes, and the character (as with people in general) can't be forced to negotiate for something they don't want. As you prepare your negotiation, remember that the players might decide to gain what the characters need from the [NPC](scc:mcdm.heroes.v1/rule.general/npc) in some other way—calling in a favor from someone else who has the means to help them, stealing what they need from the [NPC](scc:mcdm.heroes.v1/rule.general/npc), simply pushing forward without the [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s help, and so on.
 
 #### Framework for Roleplaying
 
 New Directors and players might feel a bit overwhelmed by negotiation, wondering if they need the rules at all for roleplaying a quid pro quo discussion. If you'd rather play without the negotiation rules, go for it! The *Draw Steel* designers aren't going to come to your house and take your books if you do so. However, the negotiation rules exist to provide you with robust mechanics that create an exciting back and forth between two parties, with high stakes and drama.
 
-An NPC's interest helps you determine their attitude toward the party's proposals, while their patience indicates how much time they're willing to give the heroes. In the same way that [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) tells you when a monster is done with a fight, patience tells you when an NPC is done talking and is ready to deal. The negotiation rules mean you never have to just roleplay a conversation until you and the players become bored with the scene, then someone makes a single [test](scc:mcdm.heroes.v1/rule.test/test) to see what happens. The negotiation rules let you roleplay with structure, risks, and rewards!
+An [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest helps you determine their attitude toward the party's proposals, while their patience indicates how much time they're willing to give the heroes. In the same way that [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) tells you when a monster is done with a fight, patience tells you when an [NPC](scc:mcdm.heroes.v1/rule.general/npc) is done talking and is ready to deal. The negotiation rules mean you never have to just roleplay a conversation until you and the players become bored with the scene, then someone makes a single [test](scc:mcdm.heroes.v1/rule.test/test) to see what happens. The negotiation rules let you roleplay with structure, risks, and rewards!
 
 The most important thing to remember when it comes to negotiation is that the rules are meant to work with you—not against you. They're flexible on purpose. If a hero makes an excellent argument that you think should work without a [test](scc:mcdm.heroes.v1/rule.test/test), then it does. If a hero makes an unfortunate argument that should fail no matter what, then they're out of luck. You're empowered to run negotiation in whatever way will be the most fun for you and your players.
 
-If players are having trouble roleplaying during a negotiation, try running your next negotiation without announcing that the characters are now in a negotiation. Simply ask them for [tests](scc:mcdm.heroes.v1/rule.test/test) when appropriate and have the NPC respond based on the [test](scc:mcdm.heroes.v1/rule.test/test) outcomes and their motivations and pitfalls. This approach might help your players shake off focusing on the rules to simply roleplay as you track interest and patience on the side.
+If players are having trouble roleplaying during a negotiation, try running your next negotiation without announcing that the characters are now in a negotiation. Simply ask them for [tests](scc:mcdm.heroes.v1/rule.test/test) when appropriate and have the [NPC](scc:mcdm.heroes.v1/rule.general/npc) respond based on the [test](scc:mcdm.heroes.v1/rule.test/test) outcomes and their motivations and pitfalls. This approach might help your players shake off focusing on the rules to simply roleplay as you track interest and patience on the side.
 
 #### Research and Reconnaissance
 
-If the players want to negotiate with an NPC and the heroes have some time before the conversation starts, they might think to do a bit of research and reconnaissance into the NPC, hoping to discover their motivations and pitfalls. Characters have multiple ways to tackle this. They might do research into the NPC as a downtime project, they could employ a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to gather rumors and grease a few palms, or they might attempt to do favors for people close to the NPC and earn information in exchange.
+If the players want to negotiate with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) and the heroes have some time before the conversation starts, they might think to do a bit of research and reconnaissance into the [NPC](scc:mcdm.heroes.v1/rule.general/npc), hoping to discover their motivations and pitfalls. Characters have multiple ways to tackle this. They might do research into the [NPC](scc:mcdm.heroes.v1/rule.general/npc) as a downtime project, they could employ a [montage test](scc:mcdm.heroes.v1/rule.test/montage-test) to gather rumors and grease a few palms, or they might attempt to do favors for people close to the [NPC](scc:mcdm.heroes.v1/rule.general/npc) and earn information in exchange.
 
 It's always a good idea to let the heroes do a little recon before jumping into a negotiation. Doing so makes for a richer story and can help the players better engage with the negotiation system, since they'll feel more prepared for it.
 
 #### Roleplaying Negotiators
 
-When it comes time for you to roleplay an NPC during a negotiation, remember that the NPC, like all sapient creatures, is complex. Every NPC has their own way of approaching negotiation. Some might be full of bluster. Others might say everything with a smile even while rejecting the heroes. One NPC might be verbose, while yet another says as little as possible to keep the heroes guessing as to their real desires. As a starting point to figuring out how a specific NPC might negotiate, you can refer to the notes on the NPC that you created while preparing the adventure, reviewing their voice, behavior, and flaw, in addition to any motivations for helping or denying characters in need.
+When it comes time for you to roleplay an [NPC](scc:mcdm.heroes.v1/rule.general/npc) during a negotiation, remember that the [NPC](scc:mcdm.heroes.v1/rule.general/npc), like all sapient creatures, is complex. Every [NPC](scc:mcdm.heroes.v1/rule.general/npc) has their own way of approaching negotiation. Some might be full of bluster. Others might say everything with a smile even while rejecting the heroes. One [NPC](scc:mcdm.heroes.v1/rule.general/npc) might be verbose, while yet another says as little as possible to keep the heroes guessing as to their real desires. As a starting point to figuring out how a specific [NPC](scc:mcdm.heroes.v1/rule.general/npc) might negotiate, you can refer to the notes on the [NPC](scc:mcdm.heroes.v1/rule.general/npc) that you created while preparing the adventure, reviewing their voice, behavior, and flaw, in addition to any motivations for helping or denying characters in need.
 
-One important decision you should make ahead of time is how upfront the NPC will be regarding what they want from the heroes. A straightforward NPC can make for a faster negotiation if the heroes are willing to give the NPC whatever they need. An unreadable NPC can be a puzzle for the heroes to figure out, and can be more difficult to roleplay. If it's your first time using the negotiation rules, you should start out with a more straightforward NPC before playing a coy customer.
+One important decision you should make ahead of time is how upfront the [NPC](scc:mcdm.heroes.v1/rule.general/npc) will be regarding what they want from the heroes. A straightforward [NPC](scc:mcdm.heroes.v1/rule.general/npc) can make for a faster negotiation if the heroes are willing to give the [NPC](scc:mcdm.heroes.v1/rule.general/npc) whatever they need. An unreadable [NPC](scc:mcdm.heroes.v1/rule.general/npc) can be a puzzle for the heroes to figure out, and can be more difficult to roleplay. If it's your first time using the negotiation rules, you should start out with a more straightforward [NPC](scc:mcdm.heroes.v1/rule.general/npc) before playing a coy customer.
 
 During negotiation, let the players talk freely about their strategy if that fits their playstyle and sense of fun. You can intervene if an argument crops up, but otherwise, let the players plot, scheme, and guess while you play it cool.
 
-Once a negotiation starts, the players and characters can obtain information about the NPC involved only by making [tests](scc:mcdm.heroes.v1/rule.test/test), using their characters' features, or through engaging in conversation with the NPC. Whenever the NPC makes an offer to the heroes after a [test](scc:mcdm.heroes.v1/rule.test/test), make it clear what the terms of the offer are. While some NPCs might speak cryptically, it's best for the players to understand what they're getting their heroes into. It can be fun to trick the heroes, but many players don't feel the fun when they get tricked instead.
+Once a negotiation starts, the players and characters can obtain information about the [NPC](scc:mcdm.heroes.v1/rule.general/npc) involved only by making [tests](scc:mcdm.heroes.v1/rule.test/test), using their characters' features, or through engaging in conversation with the [NPC](scc:mcdm.heroes.v1/rule.general/npc). Whenever the [NPC](scc:mcdm.heroes.v1/rule.general/npc) makes an offer to the heroes after a [test](scc:mcdm.heroes.v1/rule.test/test), make it clear what the terms of the offer are. While some [NPCs](scc:mcdm.heroes.v1/rule.general/npc) might speak cryptically, it's best for the players to understand what they're getting their heroes into. It can be fun to trick the heroes, but many players don't feel the fun when they get tricked instead.
 
 > **Sharing Interest and Patience**
 >
-> It's up to you as the Director to decide whether to share an NPC's interest or patience during a negotiation. Sometimes sharing this information can make an encounter more dramatic, with the players watching their progress rise and fall in real time. Other groups might find negotiation more fun and immersive if those exact numbers are hidden from the players, just as some groups like knowing the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of every creature in a battle and others prefer to keep that information secret. Talk to your players about what they'd prefer.
+> It's up to you as the Director to decide whether to share an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest or patience during a negotiation. Sometimes sharing this information can make an encounter more dramatic, with the players watching their progress rise and fall in real time. Other groups might find negotiation more fun and immersive if those exact numbers are hidden from the players, just as some groups like knowing the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of every creature in a battle and others prefer to keep that information secret. Talk to your players about what they'd prefer.
 
 #### Sample Negotiators
 
-This section contains a number of sample NPCs you can use for negotiation, sorted by their Impression scores. Each of these NPCs is an archetype that you can easily adapt to specific situations. For example, the bandit chief could be the leader of a brigand gang, a pirate captain, or a rebel who redistributes wealth by stealing from corrupt nobles and giving the booty to those less fortunate.
+This section contains a number of sample [NPCs](scc:mcdm.heroes.v1/rule.general/npc) you can use for negotiation, sorted by their Impression scores. Each of these [NPCs](scc:mcdm.heroes.v1/rule.general/npc) is an archetype that you can easily adapt to specific situations. For example, the bandit chief could be the leader of a brigand gang, a pirate captain, or a rebel who redistributes wealth by stealing from corrupt nobles and giving the booty to those less fortunate.
 
-Each archetype includes a list of motivations and pitfalls an NPC could have. You should pick at least two from each list for any NPC you create using the archetype. Feel free to change the wording on motivations and pitfalls and adjust numbers as you see fit.
+Each archetype includes a list of motivations and pitfalls an [NPC](scc:mcdm.heroes.v1/rule.general/npc) could have. You should pick at least two from each list for any [NPC](scc:mcdm.heroes.v1/rule.general/npc) you create using the archetype. Feel free to change the wording on motivations and pitfalls and adjust numbers as you see fit.
 
 ##### Bandit Chief
 
@@ -28708,7 +28708,7 @@ The bandit chief has the following possible pitfalls:
 
 - **Higher Authority:** By order of the baron? You can keep your fancy titles and lands. I give the orders around here!
 - **Justice:** Only the weak whine for justice. The strong make their own rules.
-- **Legacy:** Listen, I don't care what happens when I'm gone. I want my followers shouting my name now, not in a hundred years.
+- **Legacy:** Listen, I don't care what happens when I'm gone. I want my [followers](scc:mcdm.heroes.v1/rule.general/follower) shouting my name now, not in a hundred years.
 - **Peace:** In times of peace, if you pick up a silver coin that's not yours, the sheriff comes knocking on your door. In war, whole caravans disappear and nobody blinks. Give me war.
 
 ##### Knight
@@ -29338,7 +29338,7 @@ Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) when the
 
 ##### Negotiation
 
-Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the party ends a Negotiation with an NPC's interest at 3 or higher, with that interest 2 or more higher than it started, and with agreement on a deal.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the party ends a Negotiation with an [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest at 3 or higher, with that interest 2 or more higher than it started, and with agreement on a deal.
 
 ##### Hazards and Traps
 
