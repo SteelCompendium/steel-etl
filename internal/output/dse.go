@@ -57,7 +57,7 @@ func buildDSEFile(sccCode string, parsed *content.ParsedContent) (string, error)
 	featureType, _ := parsed.Frontmatter["type"].(string)
 
 	// Abilities and traits get ds-feature codeblock format
-	if featureType == "ability" || featureType == "trait" {
+	if featureType == "ability" || featureType == "trait" || featureType == "feature" {
 		codeblock, err := buildDSFeatureBlock(parsed)
 		if err != nil {
 			return "", err
@@ -102,7 +102,7 @@ func buildDSEFrontmatter(sccCode string, parsed *content.ParsedContent) map[stri
 
 	// Feature-specific enrichment
 	featureType, _ := parsed.Frontmatter["type"].(string)
-	if featureType == "ability" || featureType == "trait" {
+	if featureType == "ability" || featureType == "trait" || featureType == "feature" {
 		fm["feature_type"] = featureType
 		if featureType == "ability" {
 			fm["action_type"] = getStringOr(parsed.Frontmatter, "action_type", "Main action")

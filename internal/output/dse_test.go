@@ -119,6 +119,31 @@ func TestDSEGenerator_Condition(t *testing.T) {
 	}
 }
 
+func TestDSEGenerator_PlainFeature(t *testing.T) {
+	dir := t.TempDir()
+	gen := &DSEGenerator{BaseDir: dir}
+	parsed := &content.ParsedContent{
+		Frontmatter: map[string]any{"name": "Growing Ferocity", "type": "feature"},
+		Body:        "You grow more ferocious.",
+		TypePath:    []string{"feature", "fury", "level-1"},
+		ItemID:      "growing-ferocity",
+	}
+	if err := gen.WriteSection("mcdm.heroes.v1/feature.fury.level-1/growing-ferocity", parsed); err != nil {
+		t.Fatal(err)
+	}
+	data, err := os.ReadFile(filepath.Join(dir, "feature", "fury", "level-1", "growing-ferocity.md"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	out := string(data)
+	if !strings.Contains(out, "```ds-feature") {
+		t.Error("plain features should still get a ds-feature codeblock")
+	}
+	if !strings.Contains(out, "feature_type: feature") {
+		t.Error("expected feature_type: feature")
+	}
+}
+
 func TestDSEGenerator_Trait(t *testing.T) {
 	dir := t.TempDir()
 	gen := &DSEGenerator{BaseDir: dir}
