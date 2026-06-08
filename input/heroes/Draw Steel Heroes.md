@@ -2949,7 +2949,7 @@ You have the following ability.
 |-------------|----------------:|
 | **📏 Self** |     **🎯 Self** |
 
-**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
+**Effect:** You flatten yourself into a shadow against a wall or floor you are touching, and become hidden from any creature you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from or who isn't observing you. While in shadow form, you have full awareness of your surroundings, and strikes made against you and tests made to search for you take a bane. You can't move or be [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and you can't take main actions or maneuvers except to exit this form or to direct creatures under your control, such as one you summon using an ability. Any ability or effect that targets more than 1 square affects you in this form only if it explicitly affects the surface you are flattened against. You can exit this form as a maneuver.
 
 If the surface you are flattened against is destroyed, this ability ends and you take 1d6 damage that can't be reduced in any way.
 
@@ -9173,7 +9173,7 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > |-------------------------------------|----------------:|
 > | **📏 4 burst**                      |  **🎯 Special** |
 > 
-> **Effect:** The area becomes dark and verdant, with trees and plant life appearing in unoccupied spaces within it until the start of your next turn. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any ally who ends their turn in the area has cover.
+> **Effect:** The area becomes dark and verdant, with trees and plant life appearing in unoccupied spaces within it until the start of your next turn. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any ally who ends their turn in the area has [cover](scc:mcdm.heroes.v1/rule.combat/cover).
 > 
 > **Persistent 2:** The area remains until the start of your next turn. Additionally, at the start of your turn, each ally in the area can spend a Recovery.
 
@@ -10920,7 +10920,7 @@ You gain an edge on tests made to hide and sneak. Additionally, whenever you fal
 <!-- @type: feature -->
 ##### Animal Form: Crow
 
-While you are in your crow form, your size is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, and you can use your allies as cover when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your crow form, your size is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, and you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Crow
@@ -10988,7 +10988,7 @@ You gain an edge on tests made to hide and sneak. Additionally, you ignore [diff
 <!-- @type: feature -->
 ##### Animal Form: Rat
 
-While you are in your rat form, your size is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, you can use your allies as cover when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an edge on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your rat form, your size is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an edge on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Rat
@@ -12513,7 +12513,7 @@ You have the following ability.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 > 
-> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover at your destination, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.
+> **Effect:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If you have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover) at your destination, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed. If you successfully hide using this maneuver, you gain 1 surge.
 > 
 > **Spend 1+ Insight:** You [teleport](scc:mcdm.heroes.v1/movement/teleport) 1 additional square for each insight spent.
 
@@ -12558,7 +12558,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Smoke Bomb
 
-You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your Agility score. If you end this movement with cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
+You always carry a supply of smoke bombs to use for distractions and easy getaways. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed and don't initially have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). When you do so, you can [shift](scc:mcdm.heroes.v1/movement/shifting) a number of squares equal to your Agility score. If you end this movement with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), you are automatically hidden.
 
 <!-- @type: feature -->
 #### College Triggered Action
@@ -12597,7 +12597,7 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 >
 > **Trigger:** Another creature damages you.
 >
-> **Effect:** You take half the triggering damage, then can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after the triggering effect resolves. If you end this [shift](scc:mcdm.heroes.v1/movement/shifting) with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover, you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed.
+> **Effect:** You take half the triggering damage, then can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after the triggering effect resolves. If you end this [shift](scc:mcdm.heroes.v1/movement/shifting) with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover), you can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if you are observed.
 >
 > **Spend 1 Insight:** The potency of any effects associated with the damage are reduced by 1 for you.
 
@@ -13256,7 +13256,7 @@ As a maneuver, you lose control of yourself, becoming a shadow creature dripping
 
 - You can automatically climb at full speed while moving.
 - Enemies' spaces don't count as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you. An enemy takes corruption damage equal to your Agility score the first time you pass through their space on a turn.
-- If you end your turn with cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
+- If you end your turn with [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from another creature, you are automatically hidden from that creature.
 - You gain 1 surge at the start of each of your turns.
 - You have corruption immunity equal to 5 + your level.
 - Creatures gain an edge on strikes against you.
@@ -13297,7 +13297,7 @@ Choose one of the following abilities.
 > |----------------|--------------------------------------:|
 > | **📏 4 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or cover can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. For each target in addition to you who [teleports](scc:mcdm.heroes.v1/movement/teleport) away from or into a space adjacent to an enemy, that enemy takes fire damage equal to your Agility score. Additionally, a target who ends this movement in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) or [cover](scc:mcdm.heroes.v1/rule.combat/cover) can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver even if they are observed.
 
 ##### 6th-Level Caustic Alchemy Abilities
 
@@ -14337,7 +14337,7 @@ You have learned to be more preemptive on the battlefield, thinking more steps a
 <!-- @type: feature -->
 ##### Distracted
 
-You have mastered the ability to distract your foes, allowing you and your allies to take advantage of their gaps in attention. Whenever you or any ally attempts to hide, any creature marked by you doesn't count as an observer. Additionally, you and your allies can use other allies as cover for the purpose of hiding.
+You have mastered the ability to distract your foes, allowing you and your allies to take advantage of their gaps in attention. Whenever you or any ally attempts to hide, any creature marked by you doesn't count as an observer. Additionally, you and your allies can use other allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) for the purpose of hiding.
 
 <!-- @type: feature -->
 ##### I Predicted That
@@ -14718,7 +14718,7 @@ Choose one of the following abilities.
 > |------------------|---------------------------:|
 > | **📏 Ranged 10** | **🎯 Self and two allies** |
 >
-> **Effect:** Each target gains 2 surges, and can use a free triggered action to use a signature ability that gains an edge. After resolving their ability, each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and become hidden even if they have no cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), or if they are observed.
+> **Effect:** Each target gains 2 surges, and can use a free triggered action to use a signature ability that gains an edge. After resolving their ability, each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares and become hidden even if they have no [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), or if they are observed.
 
 <!-- @type: ability | @cost: 11 Focus -->
 > ###### Their Lack of Focus Is Their Undoing (11 Focus)
@@ -16322,7 +16322,7 @@ Choose one of the following abilities.
 > - **12-16:** 24 + R psychic damage
 > - **17+:** 28 + R psychic damage
 >
-> **Effect:** This ability ignores cover and [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
+> **Effect:** This ability ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover) and [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 >
 > **Strained:** The ability roll scores a critical hit on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
 
@@ -16651,7 +16651,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |----------------------------------------|--------------------:|
 > | **📏 Ranged 10**                       | **🎯 One creature** |
 >
-> **Effect:** At the end of each combat round while this performance is active, you can make a power roll against the target that ignores cover. You can't target the same creature twice with this effect.
+> **Effect:** At the end of each combat round while this performance is active, you can make a power roll against the target that ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover). You can't target the same creature twice with this effect.
 >
 > **Power Roll + Presence:**
 >
@@ -18880,7 +18880,7 @@ Whenever you fail a Might test, you can lose Stamina equal to 1d6 + your level t
 <!-- @type: perk -->
 #### Camouflage Hunter
 
-Whenever you are in wilderness, once you are hidden from a creature, you don't need cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) to stay hidden from them.
+Whenever you are in wilderness, once you are hidden from a creature, you don't need [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) to stay hidden from them.
 
 <!-- @type: perk -->
 #### Danger Sense
@@ -21185,17 +21185,17 @@ Hiding and sneaking are important tools for heroes and their foes. You might wan
 
 #### Hiding
 
-To hide from a creature, you must have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
+To hide from a creature, you must have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from that creature (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), who can't observe you attempting to hide. A creature is observing you if they're aware of your specific location before you attempt to hide. This means they can pinpoint you with their senses and point a finger (or paw or tentacle) at you as if to shout, "There they are!" If you duck behind a barrel to hide from a foe, your attempt to hide has a chance of succeeding only if your foe doesn't notice you doing so. If you're being chased by a hungry dragon, you can hide only if you first move to a location where the dragon can't observe you—for instance, by turning a sharp corner into a tunnel full of giant stalagmites before the dragon does. You then make your hide attempt.
 
-When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
+When you use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver to hide during combat while you have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from a creature who isn't observing you, you are automatically hidden from them unless the Director deems otherwise. If you hide outside of combat, the Director might ask you to make a test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill to determine how well hidden you are.
 
 While you are hidden from another creature, the creature can't target you with abilities that don't have the Area keyword. This benefit ends as soon as you are no longer hidden from that creature.
 
-Additionally, while you are hidden from another creature, you gain an edge on ability rolls made against that creature. This benefit lasts until the end of the turn in which you are no longer hidden. This means you can be hidden from another creature at the start of your turn, move out of cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) toward them and use an ability against them, and still gain an edge on ability rolls made against the creature as long as you use the ability before the end of that turn.
+Additionally, while you are hidden from another creature, you gain an edge on ability rolls made against that creature. This benefit lasts until the end of the turn in which you are no longer hidden. This means you can be hidden from another creature at the start of your turn, move out of [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) toward them and use an ability against them, and still gain an edge on ability rolls made against the creature as long as you use the ability before the end of that turn.
 
 Draw Steel
 
-You are no longer hidden from a creature if you don't have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a strike, you resolve the strike first, then are no longer hidden.
+You are no longer hidden from a creature if you don't have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from them. If you use an ability, interact with an enemy, move without sneaking, or otherwise make noise or reveal yourself while hidden, you are no longer hidden once the activity that reveals you resolves. For instance, if you are hidden and then make a strike, you resolve the strike first, then are no longer hidden.
 
 ##### Searching for Hidden Creatures
 
@@ -21550,11 +21550,11 @@ When a creature uses the Dig maneuver, they can move vertically up to a number o
 
 ###### Targeting Burrowing Creatures
 
-If you are on the ground, you have line of effect to a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature if that creature occupies 1 or more squares of terrain that can be burrowed through and that touch the ground, and if you have line of effect to any of those squares. The [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature gains the benefit of cover from you.
+If you are on the ground, you have line of effect to a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature if that creature occupies 1 or more squares of terrain that can be burrowed through and that touch the ground, and if you have line of effect to any of those squares. The [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature gains the benefit of [cover](scc:mcdm.heroes.v1/rule.combat/cover) from you.
 
 If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow), you don't have line of effect to any creature on the surface unless a rule states otherwise.
 
-If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow) and are adjacent to another creature who is [burrowing](scc:mcdm.heroes.v1/movement/burrow), you have line of effect to that creature, though you both have cover from each other.
+If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow) and are adjacent to another creature who is [burrowing](scc:mcdm.heroes.v1/movement/burrow), you have line of effect to that creature, though you both have [cover](scc:mcdm.heroes.v1/rule.combat/cover) from each other.
 
 You can't gain the benefit of [high ground](scc:mcdm.heroes.v1/movement/high-ground) (see below) against creatures who are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow).
 
@@ -21858,7 +21858,7 @@ See Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes) for i
 <!-- @type: feature | @id: hide -->
 #### Hide
 
-Using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have cover or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
+Using the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver, a creature attempts to hide from other creatures who aren't observing them while they have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). See Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests) for full details.
 
 <!-- @type: feature | @id: knockback -->
 #### Knockback
@@ -26083,7 +26083,7 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Discerning Shopper:* When looking for an item prerequisite for a crafting project, you can remember meeting someone who might have the item—or at least information about it.
-- *One with the Crowd:* While you're using one or more creatures as cover, you gain an edge on tests made to hide and sneak.
+- *One with the Crowd:* While you're using one or more creatures as [cover](scc:mcdm.heroes.v1/rule.combat/cover), you gain an edge on tests made to hide and sneak.
 - *Street Smart:* While in a settlement, you can't be surprised.
 
 <!-- @type: title -->
