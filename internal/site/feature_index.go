@@ -70,18 +70,20 @@ func underFeatureOrTreasure(dir string) bool {
 	return false
 }
 
-// featureKind returns "trait" or "ability" when dir is within feature/trait or
-// feature/ability (the only subtrees that get preview cards), else "".
+// featureKind returns "ability" for feature/ability/** dirs and "trait" for any
+// other dir under feature/** — both ancestry/monster traits (feature/trait/**)
+// and plain class/domain/college/kit/companion features (feature/<entity>/**),
+// which all render as the recessed niche. Returns "" for dirs outside feature/**.
+// The segment after `feature` is either the reserved `ability` kind or an entity
+// id; everything that is not `ability` is niche-styled (hub-and-spoke paths).
 func featureKind(dir string) string {
 	parts := strings.Split(filepath.ToSlash(dir), "/")
 	for i, p := range parts {
 		if p == "feature" && i+1 < len(parts) {
-			switch parts[i+1] {
-			case "trait":
-				return "trait"
-			case "ability":
+			if parts[i+1] == "ability" {
 				return "ability"
 			}
+			return "trait"
 		}
 	}
 	return ""

@@ -32,6 +32,23 @@ func traitLeaf(name, attrs string) string {
 	return "---\nname: " + name + "\ntype: trait\nclass: censor\nlevel: \"1\"\n---\n\n" + body
 }
 
+func TestFeatureKind_PlainFeatureDir(t *testing.T) {
+	// Plain features now live at feature/<class>/... with no kind segment; they
+	// should be treated as the recessed niche ("trait") for preview cards.
+	if got := featureKind("Browse/feature/elementalist/level-1"); got != "trait" {
+		t.Errorf("featureKind(plain feature dir) = %q, want trait", got)
+	}
+	if got := featureKind("Browse/feature/ability/Kits"); got != "ability" {
+		t.Errorf("featureKind(ability dir) = %q, want ability", got)
+	}
+	if got := featureKind("Browse/feature/trait/dwarf"); got != "trait" {
+		t.Errorf("featureKind(ancestry trait dir) = %q, want trait", got)
+	}
+	if got := featureKind("Browse/treasure/artifact"); got != "" {
+		t.Errorf("featureKind(non-feature dir) = %q, want empty", got)
+	}
+}
+
 func TestExtractPreviewItem_Ability(t *testing.T) {
 	// No cost + (implicitly) signature subtype is handled elsewhere; here cost set.
 	fm, body := splitFrontmatter(abilityLeaf("Judgment", "Maneuver", ""))
