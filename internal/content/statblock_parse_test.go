@@ -63,6 +63,11 @@ func TestParseStatblockFeatures(t *testing.T) {
 	if ability["name"] != "Eye of Surlach" {
 		t.Errorf("name: got %v", ability["name"])
 	}
+	// Monster actions stay feature_type=ability; passives stay trait (Crafty,
+	// below). The taxonomy refactor must not disturb the statblock split.
+	if ability["feature_type"] != "ability" {
+		t.Errorf("feature_type: got %v, want ability", ability["feature_type"])
+	}
 	if ability["ability_type"] != "Signature Ability" {
 		t.Errorf("ability_type: got %v", ability["ability_type"])
 	}
