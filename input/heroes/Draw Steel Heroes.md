@@ -565,7 +565,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Underwater combat](scc:mcdm.heroes.v1/rule.combat/underwater-combat):** Special rules that apply when creatures fight beneath the sea, in rivers or pools, in underwater lairs, and similar areas.
 
-**[Untyped Damage](scc:mcdm.heroes.v1/rule.damage/damage-type):** Damage dealt by an ability or other effect that has no damage type associated with it.
+**[Untyped Damage](scc:mcdm.heroes.v1/rule.damage/damage-type):** Damage dealt by an ability or other effect that has no [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) associated with it.
 
 **[Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria):** A forested, feudal-medieval continent in Orden.
 
@@ -1230,7 +1230,7 @@ At the Director's discretion, you might lose certain gear during an adventure, o
 
 If you pick a skill, ability, class, or any other option that you end up not liking after using it in the game—even your character's ancestry—you can always freely change that option between game sessions. If you want to change some aspect of your character during a session, ask your Director. If they say it's fine to swap that aspect out for something else, go for it. You shouldn't be stuck with any option that makes the game less fun for you.
 
-If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon strikes, doing so during a respite as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different damage type would be more helpful against undead in an upcoming encounter, talk to your Director.
+If you're changing an option for some reason other than fun, you need to follow the usual rules for changing that option. For example, you might want to swap a kit out because you think the next adventure is going to require you to have better [distance](scc:mcdm.heroes.v1/rule.combat/distance) with weapon strikes, doing so during a respite as talked about in Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits). If no rule for swapping out an option exists, such as wanting to change a signature ability granted by your class because you think a different [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) would be more helpful against undead in an upcoming encounter, talk to your Director.
 
 #### Optional Rule: Respite Ability Changes
 
@@ -1701,7 +1701,7 @@ Your prehensile tail allows you to challenge foes on all sides. You can't be fla
 <!-- @type: feature -->
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5.
 
 <!-- @type: ancestry | @id: dragon-knight -->
 ## Dragon Knight
@@ -1798,7 +1798,7 @@ The [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) looked at the peo
 <!-- @type: feature | @id: wyrmplate -->
 #### Signature Trait: Wyrmplate
 
-Your hardened scales grant you damage immunity equal to your level to one of the following damage types: acid, cold, corruption, fire, lightning, or poison. You can change your damage immunity type when you finish a respite.
+Your hardened scales grant you [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your level to one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type): acid, cold, corruption, fire, lightning, or poison. You can change your [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) type when you finish a respite.
 
 #### Purchased Dragon Knight Traits
 
@@ -1849,12 +1849,12 @@ You have the following signature ability.
 - **12-16:** 4 damage
 - **17+:** 6 damage
 
-**Effect:** You choose the ability's damage type from acid, cold, corruption, fire, lightning, or poison.
+**Effect:** You choose the ability's [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from acid, cold, corruption, fire, lightning, or poison.
 
 <!-- @type: feature -->
 ##### Prismatic Scales (1 Point)
 
-Select one damage immunity granted by your Wyrmplate trait. You always have this immunity, in addition to the immunity granted by Wyrmplate.
+Select one [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) granted by your Wyrmplate trait. You always have this immunity, in addition to the immunity granted by Wyrmplate.
 
 <!-- @type: feature -->
 ##### Remember Your Oath (1 Point)
@@ -1866,7 +1866,7 @@ As a maneuver, you can recite the following oath. Until the start of your next t
 <!-- @type: feature -->
 ##### Wings (2 Points)
 
-You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have damage weakness 5.
+You possess wings powerful enough to take you airborne. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly), you can stay aloft for a number of rounds equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score (minimum 1 round) before you fall. While using your wings to [fly](scc:mcdm.heroes.v1/movement/fly) at 3rd level or lower, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5.
 
 <!-- @type: ancestry | @id: dwarf -->
 ## Dwarf
@@ -4392,7 +4392,7 @@ If an ability targets one or more creatures, it can affect creatures within the 
 
 ##### Object
 
-If an ability targets one or more objects, it can affect any object within the ability's [distance](scc:mcdm.heroes.v1/rule.combat/distance) or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has information on damage immunity.)
+If an ability targets one or more objects, it can affect any object within the ability's [distance](scc:mcdm.heroes.v1/rule.combat/distance) or area. Unless otherwise noted, objects have poison immunity all and psychic immunity all. \(Damage in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat) has information on [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity).)
 
 When an ability can target creatures and objects, the ability can damage objects. However, unless otherwise noted (as with the [talent's](scc:mcdm.heroes.v1/class/talent) [Minor Telekinesis](scc:mcdm.heroes.v1/feature.ability.talent.level-1/minor-telekinesis) ability) or if the Director allows it, objects are immune to an ability's other effects. If an ability forces an object to make a test, the object automatically gets a tier 1 result on the test.
 
@@ -5838,7 +5838,7 @@ Sun infuses your body. Whenever you use an ability to deal rolled damage to anot
 
 When you finish a respite, you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
 
-- Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different damage immunity each time.
+- Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) each time.
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 - Each creature gains a +1 bonus to speed.
 - Each creature gains a +1 bonus to saving throws.
@@ -6111,7 +6111,7 @@ Choose one of the following abilities.
 > - **12-16:** 19 + M holy damage
 > - **17+:** 26 + M holy damage
 > 
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target has damage weakness 10.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), the target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 10.
 
 <!-- @type: ability | @cost: 11 Wrath -->
 > ###### Edict of Unyielding Resolve (11 Wrath)
@@ -6802,9 +6802,9 @@ Choose one heroic ability from the following options, each of which costs 5 piet
 > 
 > **Power Roll + [Intuition](scc:mcdm.heroes.v1/rule.character/intuition):**
 > 
-> - **≤11:** 3 + I corruption damage; M < WEAK, damage weakness 5 (save ends)
-> - **12-16:** 6 + I corruption damage; M < AVERAGE, damage weakness 5 (save ends)
-> - **17+:** 9 + I corruption damage; M < STRONG, damage weakness 5 (save ends)
+> - **≤11:** 3 + I corruption damage; M < WEAK, [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
+> - **12-16:** 6 + I corruption damage; M < AVERAGE, [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
+> - **17+:** 9 + I corruption damage; M < STRONG, [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
 
 <!-- @type: ability | @cost: 5 Piety -->
 > ###### Curse of Terror (5 Piety)
@@ -7388,7 +7388,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > |--------------------------|-----------------------:|
 > | **📏 Ranged 10**         | **🎯 Three creatures** |
 > 
-> **Effect:** You can target yourself instead of one creature with this ability. Each target has damage immunity 5 until the start of your next turn.
+> **Effect:** You can target yourself instead of one creature with this ability. Each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 until the start of your next turn.
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Gods' Machine (9 Piety)
@@ -7596,7 +7596,7 @@ Sun infuses your body. Whenever you use an ability to deal rolled damage to anot
 
 When you finish a respite, you can prepare a magic meal using local flora for any companions who rested with you. Choose two of the following benefits for creatures who consume the meal:
 
-- Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different damage immunity each time.
+- Each creature gains immunity to acid, cold, corruption, fire, lightning, poison, or sonic damage equal to your level. You can choose this benefit twice, choosing a different [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) each time.
 - Each creature gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 - Each creature gains a +1 bonus to speed.
 - Each creature gains a +1 bonus to saving throws.
@@ -7682,7 +7682,7 @@ Choose one heroic ability from the following options, each of which costs 11 pie
 > |-------------------|--------------------------------------:|
 > | **📏 5 aura**     | **🎯 Self and each ally in the area** |
 > 
-> **Effect:** Until the end of the encounter, any ability roll made against a target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) and each target has damage immunity 5.
+> **Effect:** Until the end of the encounter, any ability roll made against a target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) and each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5.
 
 <!-- @type: ability | @cost: 11 Piety -->
 > ###### Blessing of the Blade (11 Piety)
@@ -7919,7 +7919,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **12-16:** 15 + I corruption damage; A < AVERAGE, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **17+:** 21 + I corruption damage; A < STRONG, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > 
-> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target has damage weakness 10.
+> **Effect:** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 10.
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -8092,7 +8092,7 @@ You have the following ability, which can be used as a ranged [free strike](scc:
 > - **12-16:** 4 + R damage
 > - **17+:** 6 + R damage
 > 
-> **Effect:** When you make this strike, choose the damage type from one of the following options: acid, cold, corruption, fire, lightning, poison, or sonic.
+> **Effect:** When you make this strike, choose the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from one of the following options: acid, cold, corruption, fire, lightning, poison, or sonic.
 
 <!-- @type: feature -->
 #### Persistent Magic
@@ -8122,7 +8122,7 @@ You have the following ability.
 > **Effect:** Choose one of the following effects:
 > 
 > - You use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver (see Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)), but its [distance](scc:mcdm.heroes.v1/rule.combat/distance) becomes the range of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability, and you use [Reason](scc:mcdm.heroes.v1/rule.character/reason) instead of [Might](scc:mcdm.heroes.v1/rule.character/might) for the power roll.
-> - You choose a creature within the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. That creature takes damage of the chosen type equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> - You choose a creature within the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) ability and one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type): acid, cold, corruption, fire, lightning, poison, or sonic. That creature takes damage of the chosen type equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - You [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. If you choose this option, you can spend essence to [teleport](scc:mcdm.heroes.v1/movement/teleport) 1 additional square for each essence spent.
 
 <!-- @type: feature -->
@@ -9378,7 +9378,7 @@ As a 9th-level [elementalist](scc:mcdm.heroes.v1/class/elementalist), you gain t
 
 You have mastered the magic of shaping a wyrd, and can use your [Wyrding](scc:mcdm.heroes.v1/feature.elementalist.level-6/wyrding) feature as a main action.
 
-Additionally, when you have 5 or more Victories, choose one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. You have immunity all to that type.
+Additionally, when you have 5 or more Victories, choose one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type): acid, cold, corruption, fire, lightning, poison, or sonic. You have immunity all to that type.
 
 <!-- @type: feature -->
 #### New 11-Essence Ability
@@ -9482,7 +9482,7 @@ You become the embodiment of the element of your chosen specialization. Whenever
 <!-- @type: feature -->
 ##### Master of Earth
 
-You have damage immunity 5.
+You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5.
 
 Additionally, as a respite activity, you can shape the mundane earth around you in a 1-mile radius. You can open sinkholes, form mountains, level mundane structures or whole settlements, create canyons, raise islands or sink them in the sea, and perform similar feats. You can't use this respite activity if another creature within 1 mile is already using it. Once you use this respite activity, you can't use it again for 10 days.
 
@@ -10104,7 +10104,7 @@ Choose one of the following abilities.
 > - **12-16:** 5 damage; push 2; M < AVERAGE, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > - **17+:** 7 damage; push 3; M < STRONG, [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 > 
-> **Effect:** This ability deals your primordial damage type (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)).
+> **Effect:** This ability deals your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)).
 
 <!-- @type: feature-group | @level: 3 -->
 ### 3rd-Level Features
@@ -10220,7 +10220,7 @@ You gain one perk of your choice.
 <!-- @type: feature -->
 #### Primordial Attunement
 
-As your ferocity manifests elemental forces created by the Primordial Chaos, you are aware of how elemental power interacts with those around you. You automatically sense whether any creature within 10 squares has damage immunity or damage weakness to acid, cold, corruption, fire, lightning, poison, or sonic damage, learning whether they have immunity or weakness, the value of that immunity or weakness, and the specific damage type. Additionally, you automatically sense any source of one of those damage types within 10 squares, such as a fire or a source of elemental power.
+As your ferocity manifests elemental forces created by the Primordial Chaos, you are aware of how elemental power interacts with those around you. You automatically sense whether any creature within 10 squares has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) to acid, cold, corruption, fire, lightning, poison, or sonic damage, learning whether they have immunity or weakness, the value of that immunity or weakness, and the specific [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type). Additionally, you automatically sense any source of one of those [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type) within 10 squares, such as a fire or a source of elemental power.
 
 <!-- @type: feature -->
 #### Primordial Strike
@@ -10473,7 +10473,7 @@ Choose one of the following abilities.
 > |-----------------|---------------------------------:|
 > | **📏 3 aura**   | **🎯 Each creature in the area** |
 >
-> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial damage type equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
+> **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each enemy target takes damage of your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score at the end of each of your turns. Additionally, you can [fly](scc:mcdm.heroes.v1/movement/fly) while the aura is active. Each ally target who starts or ends their turn in the area can also [fly](scc:mcdm.heroes.v1/movement/fly) until the start of their next turn or until the effect ends.
 >
 > **Special:** When you use this ability outside of combat without spending ferocity, you must spend 1 uninterrupted minute summoning a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) that fills the area, and you take 1d6 damage before the ability takes effect. The storm lasts for 1 hour or until a combat encounter begins.
 
@@ -10492,7 +10492,7 @@ Each of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) 
 
 You exhibit ever-stronger signs of how the force of the Primordial Chaos flows within you. Whenever you show strong emotion or increase your ferocity, elemental motes attuned to your mood flit around you, and your skin changes in appearance to reflect an element of your choice.
 
-Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, you have immunity to the damage type of your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
+Additionally, if you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, you have immunity to the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 <!-- @type: feature -->
 #### Greater Ferocity
@@ -10680,7 +10680,7 @@ Choose one of the following abilities.
 > - **12-16:** 16 + M damage
 > - **17+:** 21 + M damage
 >
-> **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The target loses any damage immunity to the chosen type and gains weakness 10 to the chosen type (save ends).
+> **Effect:** Choose acid, cold, corruption, fire, lightning, poison, or sonic damage. The target loses any [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) to the chosen type and gains weakness 10 to the chosen type (save ends).
 
 <!-- @type: ability | @cost: 11 Ferocity -->
 > ###### Shower of Blood (11 Ferocity)
@@ -10733,7 +10733,7 @@ Choose one of the following abilities.
 > - **12-16:** 10 damage
 > - **17+:** 15 damage
 >
-> **Effect:** This ability deals your primordial damage type and ignores damage immunity.
+> **Effect:** This ability deals your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) and ignores [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity).
 
 <!-- @type: feature-group | @level: 10 -->
 ### 10th-Level Features
@@ -10743,7 +10743,7 @@ As a 10th-level [fury](scc:mcdm.heroes.v1/class/fury), you gain the following fe
 <!-- @type: feature -->
 #### Chaos Incarnate
 
-Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, your damage immunity from your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)) increases to three times your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
+Your mastery of elemental forces protects and emboldens you. If you are a berserker or reaver, you have immunity to acid, cold, corruption, fire, lightning, poison, and sonic damage equal to twice your [Might](scc:mcdm.heroes.v1/rule.character/might) score. If you are a stormwight, your [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) from your [Primordial Storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm) feature (see [Stormwight Kits](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/kit-features)) increases to three times your [Might](scc:mcdm.heroes.v1/rule.character/might) score.
 
 When any elemental or any other creature whose abilities deal acid, cold, corruption, fire, lightning, poison, or sonic damage first becomes aware of you in combat, if they have P < STRONG, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) of you (save ends).
 
@@ -10821,7 +10821,7 @@ You have the following ability.
 <!-- @type: feature -->
 ##### Primordial Storm
 
-Each stormwight kit is associated with a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm), which channels a specific damage type used by some of your abilities.
+Each stormwight kit is associated with a [primordial storm](scc:mcdm.heroes.v1/feature.fury.stormwight-kits/primordial-storm), which channels a specific [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) used by some of your abilities.
 
 <!-- @type: feature -->
 ##### Equipment
@@ -10865,7 +10865,7 @@ While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character
 <!-- @type: feature -->
 ##### Primordial Storm: Blizzard
 
-Your primordial damage type is cold.
+Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is cold.
 
 <!-- @type: feature -->
 ##### Kit Bonuses
@@ -10930,7 +10930,7 @@ While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character
 <!-- @type: feature -->
 ##### Primordial Storm: Anabatic Wind
 
-Your primordial damage type is fire.
+Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is fire.
 
 <!-- @type: feature -->
 ##### Kit Bonuses
@@ -10998,7 +10998,7 @@ While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character
 <!-- @type: feature -->
 ##### Primordial Storm: Rat Flood
 
-Your primordial damage type is corruption.
+Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is corruption.
 
 <!-- @type: feature -->
 ##### Kit Bonuses
@@ -11066,7 +11066,7 @@ While you are in your hybrid form, your [size](scc:mcdm.heroes.v1/rule.character
 <!-- @type: feature -->
 ##### Primordial Storm: Lightning Storm
 
-Your primordial damage type is lightning.
+Your primordial [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) is lightning.
 
 <!-- @type: feature -->
 ##### Kit Bonuses
@@ -11953,7 +11953,7 @@ Whenever you use your [Inertial Shield](scc:mcdm.heroes.v1/feature.ability.null.
 <!-- @type: feature -->
 #### Elemental Buffer
 
-Whenever you reduce acid, cold, corruption, fire, lightning, poison, or sonic damage with damage immunity, you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) that can be used only to increase the damage of your next strike.
+Whenever you reduce acid, cold, corruption, fire, lightning, poison, or sonic damage with [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity), you gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) that can be used only to increase the damage of your next strike.
 
 <!-- @type: feature -->
 #### Perk
@@ -12301,7 +12301,7 @@ Choose one of the following abilities.
 > - **12-16:** You gain 30 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 > - **17+:** You gain 40 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 >
-> **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold damage immunity granted by your [Entropic Adaptability](scc:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) trait, you ignore the negative effects of [dying](scc:mcdm.heroes.v1/rule.health/dying), and you have a +2 bonus to potencies.
+> **Effect:** Until the end of the encounter or until you are dead, you become an avatar of uttermost cold. You gain immunity to all damage equal to the cold [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) granted by your [Entropic Adaptability](scc:mcdm.heroes.v1/feature.null.level-2/entropic-adaptability) trait, you ignore the negative effects of [dying](scc:mcdm.heroes.v1/rule.health/dying), and you have a +2 bonus to potencies.
 
 <!-- @type: ability | @cost: 11 Discipline -->
 > ###### Heat Drain (11 Discipline)
@@ -12835,9 +12835,9 @@ Choose one heroic ability from the following options, each of which costs 5 insi
 >
 > **Power Roll + [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
 >
-> - **≤11:** 6 + A damage; R < WEAK, the target has damage weakness 5 (save ends)
-> - **12-16:** 9 + A damage; R < AVERAGE, the target has damage weakness 5 (save ends)
-> - **17+:** 13 + A damage; R < STRONG, the target has damage weakness 5 (save ends)
+> - **≤11:** 6 + A damage; R < WEAK, the target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
+> - **12-16:** 9 + A damage; R < AVERAGE, the target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
+> - **17+:** 13 + A damage; R < STRONG, the target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends)
 
 <!-- @type: ability | @cost: 5 Insight -->
 > ###### Shadowstrike (5 Insight)
@@ -13433,7 +13433,7 @@ Your movement no longer provokes opportunity attacks. Additionally, you can use 
 <!-- @type: feature -->
 ##### Time Bomb
 
-You have damage immunity against area abilities and effects equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your turn.
+You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) against area abilities and effects equal to your [Agility](scc:mcdm.heroes.v1/rule.character/agility) score. You also have the following ability, which you can use once per round on your turn.
 
 <!-- @type: ability -->
 > ###### Time Bomb
@@ -14481,9 +14481,9 @@ Choose one of the following abilities.
 > |------------------|-----------------------:|
 > | **📏 Ranged 10** | **🎯 Three creatures** |
 >
-> **Effect:** Each target is marked by you. Immediately and until the end of the encounter, the Director tells you if any creatures marked by you have damage immunity or weakness and the value of that immunity or weakness. Additionally, you and each ally within 3 squares of you gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
+> **Effect:** Each target is marked by you. Immediately and until the end of the encounter, the Director tells you if any creatures marked by you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or weakness and the value of that immunity or weakness. Additionally, you and each ally within 3 squares of you gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 >
-> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore damage immunity and deal extra damage equal to three times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+> **Mark Benefit:** Until the end of the encounter, whenever you or any ally makes a strike against a creature marked by you, you can spend 2 focus to make the strike ignore [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and deal extra damage equal to three times your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: ability | @cost: 9 Focus | @id: hustle -->
 > ###### Hustle! (9 Focus)
@@ -14647,7 +14647,7 @@ Choose one heroic ability from the following options, each of which costs 11 foc
 > |------------------|------------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
-> **Effect:** The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) and can use a signature or heroic ability as a free triggered action. The ability has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the power roll, ignores damage immunity, and increases the potency of any potency effects by 1.
+> **Effect:** The target gains 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) and can use a signature or heroic ability as a free triggered action. The ability has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the power roll, ignores [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity), and increases the potency of any potency effects by 1.
 
 <!-- @type: ability | @cost: 11 Focus | @subtype: triggered | @id: finish-them -->
 > ###### Finish Them! (11 Focus)
@@ -15012,7 +15012,7 @@ You surround yourself with an invisible ward of telekinetic energy. Whenever an 
 <!-- @type: feature -->
 ##### Steel Ward
 
-Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain damage immunity equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the end of your next turn.
+Your ward reacts to danger, protecting you from future harm. Whenever you take damage, after the damage resolves, you gain [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score until the end of your next turn.
 
 <!-- @type: feature -->
 ##### Vanishing Ward
@@ -15365,7 +15365,7 @@ Choose one heroic ability from the following options, each of which costs 3 clar
 > |------------------------------------------|--------------------:|
 > | **📏 Ranged 10**                         | **🎯 One creature** |
 >
-> **Effect:** Choose the damage type and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.
+> **Effect:** Choose the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) and the weakness for this ability from one of the following: acid, corruption, or fire. The target takes damage before this ability imposes any weakness.
 >
 > **Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15635,7 +15635,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 > |------------------------------------------|----------------:|
 > | **📏 Self; see below**                   |     **🎯 Self** |
 >
-> **Effect:** You create three [size](scc:mcdm.heroes.v1/rule.character/size) 1T orbs that orbit your body. Each orb gives you a cumulative damage immunity 1. Each time you take damage, you lose 1 orb.
+> **Effect:** You create three [size](scc:mcdm.heroes.v1/rule.character/size) 1T orbs that orbit your body. Each orb gives you a cumulative [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 1. Each time you take damage, you lose 1 orb.
 >
 > Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged strike, losing the orb after the strike.
 >
@@ -15911,7 +15911,7 @@ Choose one of the following abilities.
 > |---------------------------------|-----------------:|
 > | **📏 Melee 2**                  | **🎯 One enemy** |
 >
-> **Effect:** The target has damage weakness 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are [knocked prone](scc:mcdm.heroes.v1/condition/prone).
+> **Effect:** The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 until the end of your next turn. Whenever the target takes damage while they have this weakness, they are [knocked prone](scc:mcdm.heroes.v1/condition/prone).
 >
 > **Strained:** This ability gains the Strike keyword as the vision hurts the target's psyche. You make a power roll, then are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
@@ -16155,7 +16155,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 >
 > **Effect:** This ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against a target with a soul (see *Draw Steel: Monsters*). After you make the power roll, you or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next power roll you make before the end of the encounter.
 >
-> **Strained:** You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the power roll, you and the target each have damage weakness 5 (save ends).
+> **Strained:** You feel dispirited until you finish a respite. If you obtain a tier 3 outcome on the power roll, you and the target each have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends).
 
 <!-- @type: ability | @cost: 11 Clarity -->
 > ###### Mindwipe (11 Clarity)
@@ -16202,7 +16202,7 @@ Choose one heroic ability from the following options, each of which costs 11 cla
 > |------------------------------------|------------------------:|
 > | **📏 Ranged 10**                   | **🎯 Self or one ally** |
 >
-> **Effect:** The target has damage immunity 5 and can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus.
+> **Effect:** The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 and can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened) until the start of your next turn. Whenever the target force moves a creature or object while under this effect, the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) [distance](scc:mcdm.heroes.v1/rule.combat/distance) gains a +5 bonus.
 >
 > **Strained:** You can't use maneuvers (save ends).
 
@@ -17641,8 +17641,8 @@ Choose one heroic ability from the following options, each of which costs 11 dra
 >
 > **Effect:** Until the end of the encounter, whenever you deal rolled damage to a creature or object, or enable a creature to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can use a free triggered action to give that creature or object one of the following effects until the start of your next turn. If this ability is triggered by multiple targets taking damage or multiple creatures spending [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) simultaneously, each target receives the same effect:
 >
-> - The target has damage weakness equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score against any magic, psionic, or weapon ability.
-> - The target has damage immunity equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
+> - The target has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score against any magic, psionic, or weapon ability.
+> - The target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 > - The target has a bonus to stability and a penalty to speed equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 > - The target has a bonus to speed and a penalty to stability equal to your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
@@ -18726,7 +18726,7 @@ You wear heavy armor and wield a light weapon.
 - **12-16:** 5 + M, R, I, or P holy damage
 - **17+:** 8 + M, R, I, or P holy damage
 
-**Effect:** Until the end of the target's next turn, they have damage weakness equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's power roll.
+**Effect:** Until the end of the target's next turn, they have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) equal to the [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score used for this ability's power roll.
 
 <!-- @type: kit | @id: whirlwind -->
 #### Whirlwind
@@ -19491,7 +19491,7 @@ Some call you a [coward](scc:mcdm.heroes.v1/complication/coward), just because y
 
 You used to flit around the stars in your own ship. But an ugly run-in with a [pirate](scc:mcdm.heroes.v1/complication/pirate) (or a [pirate](scc:mcdm.heroes.v1/complication/pirate) [hunter](scc:mcdm.heroes.v1/complication/hunter)) has left you marooned on this backwater world. You're prepared to carve out a life here—at least until you can hitch a ride somewhere else.
 
-**Benefit:** You have the Timescape skill (from the lore skill group). Additionally, you have a power pack that you can activate or deactivate as a maneuver. When you activate the power pack, choose an energy type from cold, fire, lightning, or sonic. Until you deactivate the power pack, your damage-dealing abilities deal that damage type.
+**Benefit:** You have the Timescape skill (from the lore skill group). Additionally, you have a power pack that you can activate or deactivate as a maneuver. When you activate the power pack, choose an energy type from cold, fire, lightning, or sonic. Until you deactivate the power pack, your damage-dealing abilities deal that [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
 **Drawback:** You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any test made to know about anything related to the world where you [crash landed](scc:mcdm.heroes.v1/complication/crash-landed).
 
@@ -19561,7 +19561,7 @@ When you were young, you found or were given a magic weapon. Since then, you've 
 
 **Benefit:** You have a leveled weapon of your choice (see Treasures in Chapter 13: [Rewards](scc:mcdm.heroes.v1/chapter/rewards)).
 
-**Drawback:** You have damage weakness 2.
+**Drawback:** You have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 2.
 
 <!-- @type: complication -->
 #### Disgraced
@@ -19832,7 +19832,7 @@ You were caught in a storm and struck by lightning—but something saved you fro
 
 **Benefit:** Whenever you regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in combat, you gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge). Whenever you spend a [surge](scc:mcdm.heroes.v1/rule.resource/surge) to deal extra damage, you can make that extra damage into lightning damage.
 
-**Drawback:** Whenever you are wet, you have damage weakness 5.
+**Drawback:** Whenever you are wet, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5.
 
 <!-- @type: complication -->
 #### Loner
@@ -19848,7 +19848,7 @@ You've always been a lone wolf. With no one else to lean on, you've picked up a 
 
 In a long-ago age, a cataclysm overtook your city. You weren't killed, but some arcane accident caused you to be suspended in time until now. Alone, you must navigate the world around you with a head full of outdated memories—and a few ancient secrets.
 
-**Benefit:** Choose a damage type from acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic. Whenever you use a signature ability, you can have it deal your chosen damage type instead of its usual damage.
+**Benefit:** Choose a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) from acid, cold, corruption, fire, holy, lightning, poison, psychic, or sonic. Whenever you use a signature ability, you can have it deal your chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) instead of its usual damage.
 
 **Drawback:** You automatically fail any test made to recall information from the period during which you were suspended in time.
 
@@ -21955,7 +21955,7 @@ If a creature has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) or double [bane](s
 
 Every hero has two standard [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) abilities available to them. Your class might give you additional [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) options, and your kit can improve the standard options (see Chapter 6: [Kits](scc:mcdm.heroes.v1/chapter/kits)).
 
-A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the damage type of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+A melee weapon free strike is a melee strike made with an unarmed strike or an improvised weapon. A ranged weapon free strike is a ranged strike made with an improvised weapon. At the Director's discretion, the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike-combat -->
 ###### Melee Weapon Free Strike
@@ -22023,7 +22023,7 @@ However, when it comes to elemental and supernatural damage sources, some creatu
 
 Damage immunity means that a creature can ignore some or all of the damage they would usually take from certain attacks or effects.
 
-Damage immunity might have a damage type associated with it, expressed as "[damage type] immunity." Damage immunity often has a value associated with it, so that one creature's stat block notes "damage immunity 5" (representing immunity to all damage), while another creature has "lightning immunity 5." Whenever a target with damage immunity takes damage of the indicated type, they can reduce the damage by the value of the immunity (to a minimum of 0 damage). If the value of the immunity is "all," then the target ignores all damage of the indicated type.
+Damage immunity might have a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) associated with it, expressed as "[damage type] immunity." Damage immunity often has a value associated with it, so that one creature's stat block notes "damage immunity 5" (representing immunity to all damage), while another creature has "lightning immunity 5." Whenever a target with damage immunity takes damage of the indicated type, they can reduce the damage by the value of the immunity (to a minimum of 0 damage). If the value of the immunity is "all," then the target ignores all damage of the indicated type.
 
 Damage immunity should be the last thing applied when calculating damage. For instance, if your hero has fire immunity 5 and takes 8 fire damage, they take 3 damage. But if an ally first halved the damage with a triggered action, your hero would take 4 damage before immunity is applied, with immunity then reducing the damage to 0.
 
@@ -22032,11 +22032,11 @@ If multiple damage immunities apply to a source of damage, only the immunity wit
 <!-- @type: rule | @group: damage | @id: damage-weakness -->
 ##### Damage Weakness
 
-Damage weakness works like damage immunity, except that creatures take extra damage whenever they take damage of the indicated type. For instance, if a creature has fire weakness 5 and is dealt 10 fire damage, they take 15 fire damage instead.
+Damage weakness works like [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity), except that creatures take extra damage whenever they take damage of the indicated type. For instance, if a creature has fire weakness 5 and is dealt 10 fire damage, they take 15 fire damage instead.
 
 A creature who has "damage weakness X" with no specific type or keyword indicated has weakness of the indicated amount when they take damage of any type.
 
-If a creature has both damage immunity and damage weakness for a source of damage, apply the weakness first, then the immunity.
+If a creature has both [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and damage weakness for a source of damage, apply the weakness first, then the immunity.
 
 If multiple damage weaknesses apply to a source of damage, only the weakness with the highest value applies.
 
@@ -22045,7 +22045,7 @@ If multiple damage weaknesses apply to a source of damage, only the weakness wit
 
 Your hero's survivability is represented by your Stamina. Think of Stamina as a combination of a creature's physical vitality and their overall energy for dodging and resisting incoming blows, spells, and other violence. It's not that every instance of damage deals a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) wound to you, but that each one chips away at your ability to fight effectively. One attack might make you sweat as you leap back to avoid an arrow, while another might graze your elbow with a dagger nick, leaving a dull, distracting pain. Eventually, this draining of energy leaves you open for bigger blows that can truly harm your body—or possibly kill you.
 
-After any damage you take is reduced by damage immunity or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
+After any damage you take is reduced by [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or other effects, your Stamina is reduced by an amount equal to the remaining damage. Some effects can also reduce your Stamina maximum, limiting the amount of Stamina you can regain.
 
 <!-- @type: rule | @group: health | @id: recoveries -->
 #### Recoveries and Recovery Value
@@ -22905,7 +22905,7 @@ When you start this project, you hire a crew of carpenters, mages, and shipwrigh
 
 When the project is completed, you have an airship. You and any creatures you designate can operate the ship by touching the ship's wheel. During combat, a creature touching the wheel can use a maneuver to make the ship move up to 10 squares. The ship can be moved only once per round. Out of combat, the ship has a speed of 130 miles per day.
 
-An airship is an object (giving it damage immunity all to poison and psychic damage) and can take 200 damage before it is destroyed. If the damage the ship takes is not too severe (as the Director determines), as long as you have access to materials that can repair the ship, you can restore it back to its original condition as a respite activity.
+An airship is an object (giving it [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) all to poison and psychic damage) and can take 200 damage before it is destroyed. If the damage the ship takes is not too severe (as the Director determines), as long as you have access to materials that can repair the ship, you can restore it back to its original condition as a respite activity.
 
 ###### Build or Repair Road Renown Table
 
@@ -23020,7 +23020,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 **Awe:** When you start this project, choose either Charming or Threatening. If you choose Charming, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to win other creatures over or make a good impression. If you choose Threatening, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made to intimidate, coerce, or bully.
 
-**Damage Immunity I:** When you start this project, select three damage types. You have immunity 5 to those damage types.
+**[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I:** When you start this project, select three [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type). You have immunity 5 to those [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
 **Disguise:** You can use a maneuver to cause this armor to take the form of any type of clothing that you have been in the presence of—a noble's dress, a guard's uniform, a cultist's robes, and so forth. The armor loses none of its protective qualities while transformed into other clothing.
 
@@ -23043,7 +23043,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 | Enhancement          | Item Prerequisite                                                                                | Project Source Language |
 |----------------------|--------------------------------------------------------------------------------------------------|-------------------------|
 | Awe                  | A lock of hair from a fey, taken in amicable bargain for Charming or in violence for Threatening | Khelt                   |
-| Damage Immunity I    | Elemental sand left behind when an elemental enters Orden from Quintessence                      | Zaliac                  |
+| [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) I    | Elemental sand left behind when an elemental enters Orden from Quintessence                      | Zaliac                  |
 | Disguise             | The blood of a lycanthrope                                                                       | Khelt                   |
 | Iridescent           | Fur from a lightbender                                                                           | Hyrallic                |
 | Magic Resistance I   | A scale from a dragon                                                                            | The First Language      |
@@ -23067,7 +23067,7 @@ Armor imbued with an enhancement grants you special benefits while it is worn. A
 
 You can use an absorbed ability as if you knew it, making power rolls for the ability using your choice of [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence). You don't need to spend any [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) to activate the ability. Once you use the ability, the armor loses it, and you can absorb another.
 
-**Damage Immunity II:** The damage immunity conveyed by the armor increases to 10.
+**[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) II:** The [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) conveyed by the armor increases to 10.
 
 **Dragon Soul:** When another creature causes you to be [winded](scc:mcdm.heroes.v1/rule.health/winded) or [dying](scc:mcdm.heroes.v1/rule.health/dying), you can use a free triggered action to cause the soul of a dragon to emerge from this armor and hurtle toward the creature. Make the following power roll against the creature.
 
@@ -23085,7 +23085,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 
 **Psionic Resistance II:** Your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores are treated as 2 higher (to a maximum of 3) for the purpose of resisting the potencies of psionic abilities. This benefit replaces Psionic Resistance I.
 
-**Reactive:** Whenever you take damage, you have damage immunity 2 until the end of your next turn after the triggering damage is resolved.
+**Reactive:** Whenever you take damage, you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 until the end of your next turn after the triggering damage is resolved.
 
 **Second Wind:** Whenever you become [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a free triggered action to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -23098,7 +23098,7 @@ You can use an absorbed ability as if you knew it, making power rolls for the ab
 | Enhancement           | Item Prerequisite                                                                 | Project Source Language |
 |-----------------------|-----------------------------------------------------------------------------------|-------------------------|
 | Absorption            | A mirror blessed by a priest of a god of magic                                    | The First Language      |
-| Damage Immunity II    | The essence of an elemental who is still alive                                    | Zaliac                  |
+| [Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) II    | The essence of an elemental who is still alive                                    | Zaliac                  |
 | Dragon Soul           | A scale from a dead dragon                                                        | Vastariax               |
 | Levitating            | A palm-sized crystal grown in the subterranean lair of an overmind                | Zaliac                  |
 | Magic Resistance II   | A scale from a mature dragon                                                      | The First Language      |
@@ -25381,7 +25381,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, you gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
 
-**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal rolled damage using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 cube, around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has damage immunity 5. The field disappears at the start of your next turn.
+**5th Level:** The implement's damage bonus increases to +2. Additionally, whenever you deal rolled damage using a magic or psionic ability, you can use a maneuver to create an immobile field of protection that is a 1 cube, around yourself or around an ally within 5 squares. While in the area, you or the chosen ally has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. The field disappears at the start of your next turn.
 
 **9th Level:** The implement's damage bonus increases to +3. Whenever you deal rolled damage to a creature using a magic or psionic ability, you and each ally within 5 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, the size of your field of protection increases to a 3 cube, and it can be placed anywhere within 10 squares of you. You and each ally in the area gain its benefits.
 
@@ -25400,7 +25400,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage deal an extra 2 psychic damage. Additionally, you have damage weakness 3, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic or psionic abilities if you aren't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage deal an extra 2 psychic damage. Additionally, you have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic or psionic abilities if you aren't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if you are [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
 **5th Level:** The implement's extra psychic damage increases to 3. Additionally, once per round when you take more than 20 damage from a single source, the implement's extra damage is doubled until the end of your next turn.
 
@@ -25531,7 +25531,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **Project Goal:** 450 
 
-**1st Level:** Any weapon ability that deals rolled damage using this weapon gains a +1 damage bonus. Additionally, you can change the damage type of such abilities to cold, fire, lightning, or sonic.
+**1st Level:** Any weapon ability that deals rolled damage using this weapon gains a +1 damage bonus. Additionally, you can change the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of such abilities to cold, fire, lightning, or sonic.
 
 **5th Level:** The weapon's damage bonus increases to +2. Additionally, the weapon can be used with ranged weapon abilities, and returns to you when a ranged ability is resolved. Ranged abilities used with the weapon increase their [distance](scc:mcdm.heroes.v1/rule.combat/distance) by 3, and must deal cold, fire, lightning, or sonic damage (chosen when you use the ability).
 
@@ -25809,7 +25809,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **1st Level:** While you wear this ring, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Additionally, during a respite, you can touch the ring to any number of other Bloodbound Bands worn by willing creatures to form a bond among all of you. Creatures related by blood can't form bonds in this way. Bonded creatures can each use the highest [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries) of any bonded creature in place of their own, and can spend each other's [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) as if they were their own. Whenever any other bonded creature takes damage, each bonded creature takes 1 damage that can't be reduced in any way. Your bond ends if you remove the ring, use it to bond with one or more other creatures, or die, but other rings continue to be bonded to each other.
 
-**5th Level:** The ring's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, you have damage immunity 2.
+**5th Level:** The ring's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12. Additionally, you have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2.
 
 **9th Level:** The ring's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21. Additionally, if a creature bonded with you dies, you can choose to die in their place. Your sacrifice twists fate to remove the creature from danger, and they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [winded](scc:mcdm.heroes.v1/rule.health/winded) value. Your ring then [teleports](scc:mcdm.heroes.v1/movement/teleport) into their possession and ceases to be magic.
 
@@ -25919,13 +25919,13 @@ Though its size and make are often debated, the sword is consistently described 
 
 **Suited for Victory:** This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a free maneuver. Any weapon ability that deals rolled damage using the Blade of a Thousand Years gains a +5 damage bonus, and that ability always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
 
-**Rally the Righteous:** This blade fills all around it with hope and courage. Each ally within 1 mile of the weapon gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, and has damage immunity 5. Additionally, each such creature's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 15 and they gain a +15 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) when this ability first affects them.
+**Rally the Righteous:** This blade fills all around it with hope and courage. Each ally within 1 mile of the weapon gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, and has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. Additionally, each such creature's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 15 and they gain a +15 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) when this ability first affects them.
 
 **Turn the Tide:** Each enemy minion within 1 mile of the sword is [dazed](scc:mcdm.heroes.v1/condition/dazed). Any enemy leader or solo creature in that area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on ability rolls.
 
 **Victory's Assurance:** This weapon always appears on the eve before what will later come to be known as a historic battle. It disappears after 24 hours or when the battle is won, whichever comes first. By taking the blade, the wielder unwittingly enters into a pact with the weapon. If they don't secure victory against monumental odds or some great foe by the time the sword disappears, they are pulled into the sword, preventing any chance of resurrection, and forever dooming them to lend their strength to the heroes of other ages.
 
-**Soul of the Martyr:** If the wielder dies while holding this blade, their soul is drawn into the starlight hilt, where it remains for the rest of time to prevent any chance of resurrection. The sword disappears, but the lingering feeling of hope that spreads from it remains. For the next hour, the effects of Rally the Righteous increase to provide a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, damage immunity 10, an increase to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum of 30, and a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of +30.
+**Soul of the Martyr:** If the wielder dies while holding this blade, their soul is drawn into the starlight hilt, where it remains for the rest of time to prevent any chance of resurrection. The sword disappears, but the lingering feeling of hope that spreads from it remains. For the next hour, the effects of Rally the Righteous increase to provide a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 10, an increase to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum of 30, and a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) of +30.
 
 <!-- @type: treasure -->
 ##### Encepter
@@ -25961,7 +25961,7 @@ Only one destined for death can contain the power of the Mortal Coil. A mortal c
 
 When the Mortal Coil is left unattended or is in the possession of a creature who is not mortal, it activates and can't be deactivated until a mortal creature becomes its host once more. While active, the artifact extends a penumbra of influence for 10 miles in every direction. Every creature in the penumbra is subject to the following effects.
 
-**One Foot in the Grave:** Any creature in the penumbra has damage weakness 2 and can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+**One Foot in the Grave:** Any creature in the penumbra has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 2 and can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 **Get Busy Dyin':** Each creature in the penumbra ages at 10 times the usual rate, and diseases and poisons affecting creatures in the penumbra run their course at 10 times their usual rate. A creature with no natural maximum lifespan permanently reduces their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum by 10 each year. Each creature can undertake one additional respite activity during each respite.
 
@@ -26115,11 +26115,11 @@ Titles suitable for 1st-echelon characters are presented in alphabetical order.
 
 **Prerequisite:** You defeat a creature with the Elemental keyword, such as a crux of fire.
 
-**Effect:** Choose a damage type to which the defeated creature had an immunity (such as fire). Then choose one of the following benefits:
+**Effect:** Choose a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to which the defeated creature had an immunity (such as fire). Then choose one of the following benefits:
 
-- *Elemental Blaster:* You have the [Elementalist](scc:mcdm.heroes.v1/class/elementalist) 1st-level [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) feature, dealing the chosen damage type.
-- *Elemental Immunity:* You have immunity to the chosen damage type equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
-- *Elemental Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal damage of the chosen type instead of its usual damage type.
+- *Elemental Blaster:* You have the [Elementalist](scc:mcdm.heroes.v1/class/elementalist) 1st-level [Hurl Element](scc:mcdm.heroes.v1/feature.ability.elementalist.level-1/hurl-element) feature, dealing the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
+- *Elemental Immunity:* You have immunity to the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score.
+- *Elemental Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal damage of the chosen type instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
 <!-- @type: title -->
 #### Faction Member
@@ -26308,7 +26308,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 **Effect:** Choose one of the following benefits:
 
-- *Blessed Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal holy damage instead of its usual damage type.
+- *Blessed Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal holy damage instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 - *Divine Health:* You gain corruption immunity equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can't be turned into an undead creature.
 - *Holy Terror:* You have the following ability, which can be paid for using the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) of your class.
 
@@ -26550,7 +26550,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-- *Arcane Improvisation:* When you use a damage-dealing magic signature ability, you can change its damage type to acid, cold, corruption, fire, lightning, poison, or sonic damage.
+- *Arcane Improvisation:* When you use a damage-dealing magic signature ability, you can change its [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to acid, cold, corruption, fire, lightning, poison, or sonic damage.
 - *I Have Just the Book:* If you start a Discover Lore project in your hero's [stronghold](scc:mcdm.heroes.v1/title/stronghold) or other a permanent base of operations you immediately gain 60 project points toward the completion of that project. If the project costs 60 or fewer points, you complete it in 10 uninterrupted minutes without needing to use a respite activity.
 - *Picked Up a Few Things:* You know a skill from the lore skill group.
 - *Polyglot:* You know two languages. Additionally, the project goal for the Learn New Language project is halved for you.
@@ -26648,7 +26648,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 
 **Effect:** Choose one of the following benefits:
 
-*Demonic Lore:* You know the Proto-Ctholl language. Additionally, when you deal damage using a magic ability, you can change the ability's damage type to holy.
+*Demonic Lore:* You know the Proto-Ctholl language. Additionally, when you deal damage using a magic ability, you can change the ability's [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to holy.
 
 - *Lethe:* While you are [winded](scc:mcdm.heroes.v1/rule.health/winded), your strikes gain a +5 damage bonus
 - *Made of Teeth:* Your body can sprout teeth in unusual places. Whenever a creature makes physical contact with you or starts their turn touching you, you can deal 5 damage to them (no action required).
@@ -26668,7 +26668,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *Devil Lore:* You know the Anjali language, and your understanding of this language helps you create irresistible supernatural effects. The potencies of your magic or psionic abilities that target [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) increase by 1.
 - *Infernal Legacy:* You gain 3 ancestry points to spend on purchased [devil](scc:mcdm.heroes.v1/ancestry/devil) [ancestry traits](scc:mcdm.heroes.v1/chapter/ancestries) (see Chapter 3: [Ancestries](scc:mcdm.heroes.v1/chapter/ancestries)).
 - *Sly [Devil](scc:mcdm.heroes.v1/ancestry/devil):* You gain the Silver Tongue signature trait from the [devil](scc:mcdm.heroes.v1/ancestry/devil) ancestry.
-- *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual damage type.
+- *Untouched by Corruption:* Whenever you use a damage-dealing ability, that ability can deal holy damage instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 
 <!-- @type: title -->
 #### Dragon Blooded
@@ -26840,7 +26840,7 @@ Titles suitable for 4th-echelon characters are presented in alphabetical order.
 Additionally, choose one of the following benefits:
 
 - *Acolytes:* The number of followers you can recruit increases by two
-- *Divine Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal corruption or holy damage instead of its usual damage type.
+- *Divine Weapons:* Whenever you use a damage-dealing weapon ability, that ability can deal corruption or holy damage instead of its usual [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 - *Missionaries:* You earn 2 Renown.
 
 <!-- @type: title -->
@@ -26866,7 +26866,7 @@ Additionally, choose one of the following benefits:
 **Effect:** A [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of your choice increases by 1 (to a maximum of 6). Additionally, choose one of the following benefits:
 
 - *Brief Reunion:* While you're [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a maneuver to summon the artifact to your hand. It disappears at the end of your next turn. Once you use this benefit, you can't use it again until you earn 1 or more Victories.
-- *Perfect Protection:* The Director chooses a damage type that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen damage type.
+- *Perfect Protection:* The Director chooses a [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) that is dealt by or thematically related to the artifact—for instance, holy for the Blade of a Thousand Years, psychic for the Encepter, or corruption for the Mortal Coil. You have immunity all to the chosen [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type).
 - *Poor Compensation:* Instead of disappearing or otherwise departing, the artifact turns into a trinket or leveled treasure of the Director's choice that has the same approximate shape as the lost item—for instance, any magic sword for the Blade of a Thousand Years, any implement for the Encepter, or a Thief of Joy or any other torque for the Mortal Coil.
 
 <!-- @type: title -->
@@ -29289,7 +29289,7 @@ The players can choose their hero's treasures, and can replace any leveled treas
 
 You can easily create new types of leveled treasures for heroes to find using the enhancements from the Imbue Treasure project in Chapter 12: [Downtime Projects](scc:mcdm.heroes.v1/chapter/downtime-projects).
 
-You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the damage types, and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
+You can also take any of the treasures in this book and easily reskin them. Do you wish Gecko Gloves were actually boots? Just change the description and the Hands keywords and you're good to go. Do you want the Icemaker Maul to be a dagger that creates pools of acid instead of an ice field? Change the Heavy Weapon keyword and swap the [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type), and you're ready to rock! Simply changing keywords, damage, and descriptions for treasures isn't going to break the game.
 
 #### Awarding Titles
 
