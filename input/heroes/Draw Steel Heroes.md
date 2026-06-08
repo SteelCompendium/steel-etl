@@ -175,7 +175,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Complication](scc:mcdm.heroes.v1/chapter/complications):** A dramatic narrative twist that deepens a hero's backstory and gives them a rules benefit and drawback. Complications are an optional rule.
 
-**[Concealment](scc:mcdm.heroes.v1/rule.combat/concealment):** A state where a target has their form entirely covered in a concealing effect that doesn't block line of effect, such as darkness or fog. While a target has concealment, strikes used against them take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+**[Concealment](scc:mcdm.heroes.v1/rule.combat/concealment):** A state where a target has their form entirely covered in a concealing effect that doesn't block [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), such as darkness or fog. While a target has concealment, strikes used against them take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 **[Condition](scc:mcdm.heroes.v1/rule.combat/condition):** A negative effect that applies to a creature and uses a universal shorthand name. [Bleeding](scc:mcdm.heroes.v1/condition/bleeding), [dazed](scc:mcdm.heroes.v1/condition/dazed), [frightened](scc:mcdm.heroes.v1/condition/frightened), [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone),  [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), [taunted](scc:mcdm.heroes.v1/condition/taunted), and [weakened](scc:mcdm.heroes.v1/condition/weakened) are conditions in *Draw Steel*.
 
@@ -217,7 +217,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Damaging Terrain](scc:mcdm.heroes.v1/movement/damaging-terrain):** An area of obstacles that deal damage to creatures who are in the area or move through it. A creature can't shift into or out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain), and can't jump out of [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain).
 
-**[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or free maneuvers.
+**[Dazed](scc:mcdm.heroes.v1/condition/dazed):** A condition that limits a creature to doing only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 **[Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Main Action:** A main action that allows a creature to impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on all [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) made against them until the start of their next turn. Additionally, the creature has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests when called for to resist environmental effects or a creature's traits or abilities.
 
@@ -233,7 +233,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) Move Action:** A move action that allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
 
-**[Distance](scc:mcdm.heroes.v1/rule.combat/distance):** The number of squares away that a creature using an ability can affect targets with that ability. The "Distance" entry in an area ability also includes the type of area of effect created by that ability.
+**[Distance](scc:mcdm.heroes.v1/rule.combat/distance):** The number of squares away that a creature using an ability can affect targets with that ability. The "Distance" entry in an area ability also includes the type of [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect) created by that ability.
 
 **[Double Bane](scc:mcdm.heroes.v1/rule.dice/bane):** When a creature has two or more [banes](scc:mcdm.heroes.v1/rule.dice/bane) and no [edges](scc:mcdm.heroes.v1/rule.dice/edge) applied to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), they have a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll. A double [bane](scc:mcdm.heroes.v1/rule.dice/bane) applies no penalty to a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), but instead automatically decreases the [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of the roll by one tier.
 
@@ -347,7 +347,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Leveled Treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure):** A treasure that can be used at will, and which increases in power as its hero wielder gains new levels.
 
-**[Line](scc:mcdm.heroes.v1/rule.combat/line):** When an ability or other effect creates a line, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line area of effect, the squares in that area must be in a straight line. A line effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
+**[Line](scc:mcdm.heroes.v1/rule.combat/line):** When an ability or other effect creates a line, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect), the squares in that area must be in a straight line. A line effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
 
 **[Line of Effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect):** To target a creature or object with an ability or other effect, a creature must have line of effect to that target. If any solid object, such as a wall or pillar, completely blocks the target from the creature, then the creature doesn't have line of effect.
 
@@ -379,7 +379,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Mundane](scc:mcdm.heroes.v1/rule.general/supernatural):** Used to describe an ability, creature, object, or effect that isn't magic or psionic. The opposite of supernatural.
 
-**[Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20):** When the result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is 19 or 20 before adding any modifiers. A natural 19 or 20 always achieves a tier 3 outcome on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). On an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) with an ability that uses a main action, it is also a critical hit.
+**[Natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20):** When the result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) is 19 or 20 before adding any modifiers. A natural 19 or 20 always achieves a tier 3 outcome on a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). On an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) with an ability that uses a main action, it is also a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
 
 **[Natural Roll](scc:mcdm.heroes.v1/rule.dice/natural-roll):** The result of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) before adding any modifiers.
 
@@ -481,7 +481,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Shadow](scc:mcdm.heroes.v1/class/shadow):** A class for a hero who is an expert infiltrator and thief utilizing magic.
 
-**[Shift](scc:mcdm.heroes.v1/movement/shifting):** A movement mode that doesn't provoke opportunity attacks. Whenever a rule allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting), they can choose to make a regular move of the same number of squares instead.
+**[Shift](scc:mcdm.heroes.v1/movement/shifting):** A movement mode that doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Whenever a rule allows a creature to [shift](scc:mcdm.heroes.v1/movement/shifting), they can choose to make a regular move of the same number of squares instead.
 
 **[Side](scc:mcdm.heroes.v1/rule.combat/side):** A group of creatures working together in a combat encounter.
 
@@ -509,7 +509,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Strained](scc:mcdm.heroes.v1/feature.talent.level-1/clarity-and-strain):** A state the [talent](scc:mcdm.heroes.v1/class/talent) enters when they have clarity below 0, and which effects their abilities.
 
-**[Strike](scc:mcdm.heroes.v1/rule.combat/strike):** An ability that deals damage to or imposes an effect on specific chosen targets. (A strike is different this way than an ability that produces an area of effect.)
+**[Strike](scc:mcdm.heroes.v1/rule.combat/strike):** An ability that deals damage to or imposes an effect on specific chosen targets. (A strike is different this way than an ability that produces an [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect).)
 
 **[Subclass](scc:mcdm.heroes.v1/rule.general/subclass):** A choice each hero makes at 1st level that determines a specialization within their class.
 
@@ -531,7 +531,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Target](scc:mcdm.heroes.v1/rule.combat/target):** A creature or object affected by an ability or other effect. The target of an enemy's ability typically takes damage, has a condition or harmful effect imposed on them, or both. The target of an ally's ability typically gains some beneficial effect.
 
-**[Teleport](scc:mcdm.heroes.v1/movement/teleport):** Moving from one location to another instantaneously. [Teleporting](scc:mcdm.heroes.v1/movement/teleport) requires line of effect to the space where a creature ends up, bypasses obstacles, and doesn't provoke opportunity attacks or other effects triggered by moving.
+**[Teleport](scc:mcdm.heroes.v1/movement/teleport):** Moving from one location to another instantaneously. [Teleporting](scc:mcdm.heroes.v1/movement/teleport) requires [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the space where a creature ends up, bypasses obstacles, and doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) or other effects triggered by moving.
 
 **[Temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina):** An additional pool of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) that decreases first when a creature takes damage, and which disappears at the end of an encounter if not already lost.
 
@@ -543,7 +543,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Tier 2](scc:mcdm.heroes.v1/rule.dice/tier-outcome):** The second-worst [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), achieved when the total of the roll is between 12 and 16.
 
-**[Tier 3](scc:mcdm.heroes.v1/rule.dice/tier-outcome):** The best [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (other than a critical hit), achieved when the total of the roll is 17 or higher.
+**[Tier 3](scc:mcdm.heroes.v1/rule.dice/tier-outcome):** The best [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (other than a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit)), achieved when the total of the roll is 17 or higher.
 
 **[Title](scc:mcdm.heroes.v1/chapter/titles):** A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.
 
@@ -720,14 +720,14 @@ The specific outcome of any power roll is determined by the effect or ability th
 
 Whenever you make a power roll, you can downgrade it to select the outcome of a lower tier. For instance, if an ability has a tier 3 outcome that lets you impose the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition on a creature, but the tier 2 outcome for that ability lets you impose the [slowed](scc:mcdm.heroes.v1/condition/slowed) condition, you can use the tier 2 outcome if you would rather have the creature [slowed](scc:mcdm.heroes.v1/condition/slowed) than [restrained](scc:mcdm.heroes.v1/condition/restrained).
 
-If you downgrade a critical hit, you still get the extra action benefit of the critical hit (see Critical Hit in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+If you downgrade a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), you still get the extra action benefit of the [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) (see [Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: rule | @group: dice | @id: natural-roll -->
 ##### Natural Roll
 
 The total of your power roll before your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) or any other modifiers are added is called the natural roll. The rules often refer to this as "rolling a natural X," where X is the total of the roll. For example, if you get a 20 on a power roll before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic), this is called rolling a natural 20.
 
-When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a critical hit (see Critical Hit in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
+When you roll a natural 19 or 20 on a power roll, it is always a tier 3 result regardless of any modifiers, and on certain types of power rolls, this is a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) (see [Critical Hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) in [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 #### Edges and Banes
 
@@ -774,7 +774,7 @@ Though it might sound as if the math with bonuses and penalties can get confusin
 
 #### Automatic Tier Outcomes
 
-Effects in the game sometimes allow a creature to obtain an automatic tier 1, 2, or 3 outcome on a power roll. Such effects supersede any [edges](scc:mcdm.heroes.v1/rule.dice/edge), [banes](scc:mcdm.heroes.v1/rule.dice/bane), bonuses, or penalties that might affect the roll. If you obtain an automatic [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) and the power roll would have an additional effect if you get a specific roll, such as scoring a critical hit in combat, you can still make the roll to determine if you obtain the additional effect in addition to the automatic outcome.
+Effects in the game sometimes allow a creature to obtain an automatic tier 1, 2, or 3 outcome on a power roll. Such effects supersede any [edges](scc:mcdm.heroes.v1/rule.dice/edge), [banes](scc:mcdm.heroes.v1/rule.dice/bane), bonuses, or penalties that might affect the roll. If you obtain an automatic [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) and the power roll would have an additional effect if you get a specific roll, such as scoring a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) in combat, you can still make the roll to determine if you obtain the additional effect in addition to the automatic outcome.
 
 If you are under multiple effects that each grant you a different automatic outcome, those effects cancel each other out and all automatic outcomes are ignored. If multiple effects grant you the same automatic outcome, you obtain that outcome.
 
@@ -1983,7 +1983,7 @@ John was grinning madly at Embers. She held up three fingers.
 
 You can carve a rune onto your skin with 10 uninterrupted minutes of work, which is activated by the magic within your body. The rune you carve determines the benefit you receive, chosen from among the following:
 
-**Detection:** Pick a specific type of creature (such as goblins or [humans](scc:mcdm.heroes.v1/ancestry/human)) or object (such as gems or potions). Your rune glows softly when you are within 20 squares of any creature or object of that type, even if you don't have line of effect to the creature or object. You can change the type of creature or object as a maneuver.
+**Detection:** Pick a specific type of creature (such as goblins or [humans](scc:mcdm.heroes.v1/ancestry/human)) or object (such as gems or potions). Your rune glows softly when you are within 20 squares of any creature or object of that type, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the creature or object. You can change the type of creature or object as a maneuver.
 
 **Light:** Your skin sheds light for 10 squares. You can turn this light on and off as a maneuver.
 
@@ -2127,7 +2127,7 @@ You can [shift](scc:mcdm.heroes.v1/movement/shifting) into and while within [dif
 <!-- @type: feature -->
 ##### Quick and Brutal (1 Point)
 
-Whenever you score a critical hit, you can take an additional main action and an additional move action instead of just a main action.
+Whenever you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), you can take an additional main action and an additional move action instead of just a main action.
 
 <!-- @type: feature -->
 ##### Otherworldly Grace (2 Points)
@@ -2474,7 +2474,7 @@ Some of your names, I will see written in future textbooks. But some of your nam
 <!-- @type: feature | @id: detect-the-supernatural -->
 #### Signature Trait: Detect the Supernatural
 
-As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next turn, you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have line of effect to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
+As a maneuver, you can open your awareness to detect supernatural creatures and phenomena. Until the end of your next turn, you know the location of any supernatural object, or any undead, construct, or creature from another world within 5 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that object or creature. You know if you're detecting an item or a creature, and you know the nature of any creature you detect.
 
 #### Purchased Human Traits
 
@@ -2985,7 +2985,7 @@ A light step serves you well when speed is of the essence. You ignore the effect
 <!-- @type: feature -->
 ##### Polder Geist (1 Point)
 
-Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has line of effect to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with line of effect to you, you gain a +3 bonus to speed until the end of your turn.
+Evading others' notice gives you freedom to move. At the start of each of your turns during combat, if no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you or if you are hidden from or have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from any enemy with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, you gain a +3 bonus to speed until the end of your turn.
 
 <!-- @type: feature -->
 ##### Reactive Tumble (1 Point)
@@ -3236,7 +3236,7 @@ You have 3 ancestry points to spend on the following traits. (*Quick Build:* Bey
 <!-- @type: feature -->
 ##### Beyondsight (1 Point)
 
-As a maneuver, you can adjust your vision to allow you to see through mundane obstructions that are 1 square thick or less. While your vision is adjusted this way, you can't see the area within 1 square of you and you don't have line of effect to any creature or object in that area. You can restore your usual vision as a maneuver.
+As a maneuver, you can adjust your vision to allow you to see through mundane obstructions that are 1 square thick or less. While your vision is adjusted this way, you can't see the area within 1 square of you and you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to any creature or object in that area. You can restore your usual vision as a maneuver.
 
 <!-- @type: feature -->
 ##### Foresight (1 Point)
@@ -4265,7 +4265,7 @@ Each ability has one or more keywords that explain how the ability functions. Ke
 
 ##### Area
 
-Abilities with the Area keyword create an area of effect. Many area abilities deal damage to targets in their area, but such abilities are treated differently than [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against specific targets. (See the It's Not All Strikes! sidebar, as well as Strike and Area Abilities below for more information.)
+Abilities with the Area keyword create an [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect). Many area abilities deal damage to targets in their area, but such abilities are treated differently than [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against specific targets. (See the It's Not All Strikes! sidebar, as well as Strike and Area Abilities below for more information.)
 
 ##### Charge
 
@@ -4296,7 +4296,7 @@ Abilities with the Strike keyword (often referred to simply as "strikes") deal d
 
 > **It's Not All Strikes!**
 >
-> The Strike keyword and phrases such as "makes a strike" are reserved for abilities that have a creature targeting specific creatures or objects (not affecting creatures or objects in an area) and harming those targets in some way by making a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). The many abilities in the game that target areas of effect are not strikes. They instead use the Area keyword. That means if a feature distinctly interacts with a strike, that feature has no effect on abilities with the Area keyword.
+> The Strike keyword and phrases such as "makes a strike" are reserved for abilities that have a creature targeting specific creatures or objects (not affecting creatures or objects in an area) and harming those targets in some way by making a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). The many abilities in the game that target [areas of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect) are not strikes. They instead use the Area keyword. That means if a feature distinctly interacts with a strike, that feature has no effect on abilities with the Area keyword.
 
 ##### Weapon
 
@@ -4306,7 +4306,7 @@ Your character's kit determines the types of weapons you wield and use with your
 
 #### Type
 
-Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a free maneuver, or a free triggered action (with all those terms explained in Taking a Turn in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
+Each ability notes the type of activity required to use it, on the right side of the first line beneath the flavor text. Most abilities require you to use a main action, a maneuver, a move action, a triggered action, a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), or a free triggered action (with all those terms explained in Taking a Turn in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)). For instance, if you use an ability that has "Main Action" as its type entry, you must use your main action to activate the ability.
 
 ##### Trigger
 
@@ -4342,9 +4342,9 @@ If an ability has a [distance](scc:mcdm.heroes.v1/rule.combat/distance) of "Self
 
 Area abilities cover a number of squares on the battlefield at once, creating an effect within that area that lets you target multiple creatures or objects. When an ability creates an area of effect, it sometimes notes a [distance](scc:mcdm.heroes.v1/rule.combat/distance) for the effect in the form "within X." The number X tells you how many squares away from you the area can be. If an area ability doesn't have this [distance](scc:mcdm.heroes.v1/rule.combat/distance), it originates from you and you are at the center of the area.
 
-If an area ability originates a [distance](scc:mcdm.heroes.v1/rule.combat/distance) away from you, then one square of the area of effect must be within that [distance](scc:mcdm.heroes.v1/rule.combat/distance), and must also be within your line of effect (see below). This square is referred to as the **origin square** of the area of effect. The area of effect can spread from the origin square however you choose, according to the rules for the shape and arrangement of that particular area.
+If an area ability originates a [distance](scc:mcdm.heroes.v1/rule.combat/distance) away from you, then one square of the area of effect must be within that [distance](scc:mcdm.heroes.v1/rule.combat/distance), and must also be within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) (see below). This square is referred to as the **origin square** of the area of effect. The area of effect can spread from the origin square however you choose, according to the rules for the shape and arrangement of that particular area.
 
-You can place an area of effect to include one or more squares where you don't have line of effect, as long as you have line of effect to the origin square. Unless otherwise noted, area abilities don't pass through solid barriers such as walls or ceilings, and they don't spread around corners.
+You can place an area of effect to include one or more squares where you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), as long as you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the origin square. Unless otherwise noted, area abilities don't pass through solid barriers such as walls or ceilings, and they don't spread around corners.
 
 An area ability might use any of the following areas of effect.
 
@@ -4366,18 +4366,18 @@ When an ability affects a cubic area, that area is expressed as "X cube." The nu
 <!-- @type: rule | @group: combat | @id: line -->
 ##### Line
 
-When an ability affects a linear area, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line area of effect, the squares in that area must be in a straight line. A creature or object must be within the area to be targeted by a line ability.
+When an ability affects a linear area, that area is expressed as "A x B line." The number A denotes the line's length in squares, while the number B equals the line's width and height in squares. When you create a line [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect), the squares in that area must be in a straight line. A creature or object must be within the area to be targeted by a line ability.
 
 <!-- @type: rule | @group: combat | @id: wall -->
 ##### Wall
 
 When an ability creates a wall, that area is expressed as "X wall." The number X is how many squares are used to make the wall. When you place a wall, you can build it one square at a time, but each square must share at least one side (not just a corner) with another square of the wall. A creature or object must be within the area to be targeted by a wall ability.
 
-You can stack squares on top of each other to make the wall higher. Unless otherwise stated, a wall can't be placed in occupied squares, and a wall blocks line of effect.
+You can stack squares on top of each other to make the wall higher. Unless otherwise stated, a wall can't be placed in occupied squares, and a wall blocks [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
 
 > **Straight Lines**
 >
-> Talking about a straight line area of effect on an encounter map doesn't mean the line can only be a straight vertical or horizontal line of contiguous squares. It means each square in the line's length must move in the same direction without bending back in an opposite direction. To make a line area quickly, pick your line's origin square, then pick each subsquent square in the line one at a time in a single direction without bending back in an opposite direction.
+> Talking about a straight line [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect) on an encounter map doesn't mean the line can only be a straight vertical or horizontal line of contiguous squares. It means each square in the line's length must move in the same direction without bending back in an opposite direction. To make a line area quickly, pick your line's origin square, then pick each subsquent square in the line one at a time in a single direction without bending back in an opposite direction.
 >
 > Likewise, abilities and effects that require a creature to move in a straight line, such as the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action or [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that is a push or a pull, don't have to take the form of a straight series of squares on the grid. Simply move the creature one square at a time in a single direction without ever bending back in a direction opposite to where they've already moved.
 
@@ -4542,7 +4542,7 @@ This rule also applies to Director-controlled creatures who spend Malice on abil
 
 Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) as a main action and the roll is a natural 19 or natural 20-a total of 19 or 20 before adding your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score or other modifiers—you score a critical hit. A critical hit allows you to immediately take an additional main action after resolving the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), whether or not it's your turn and even if you are [dazed](scc:mcdm.heroes.v1/condition/dazed) (see Conditions below).
 
-You can't score a critical hit with an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an opportunity attack made as a triggered action or a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
+You can't score a critical hit with an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) made as a maneuver or any other action type, but you can score a critical hit with a main action you use off your turn. For example, an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) made as a triggered action or a signature ability used as a free triggered action with the assistance of the [tactician's](scc:mcdm.heroes.v1/class/tactician) [Strike Now](scc:mcdm.heroes.v1/feature.ability.tactician.level-1/strike-now) ability can be critical hits.
 
 #### Roll Against Multiple Creatures
 
@@ -4604,7 +4604,7 @@ Some effects last until the end of the encounter. If such an effect is used outs
 
 ##### Creature Ends an Ability Effect
 
-A creature who imposes an effect on another creature using an ability can end that effect as a free maneuver unless the ability says otherwise.
+A creature who imposes an effect on another creature using an ability can end that effect as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) unless the ability says otherwise.
 
 <!-- @type: rule | @group: combat | @id: adjacent -->
 ##### Adjacent
@@ -4620,7 +4620,7 @@ If you're not sure whether you have line of effect to a target, imagine drawing 
 
 At the Director's discretion, flimsy or fragile obstructions such as a glass window or linen curtains don't block line of effect, and might be automatically broken or torn by strikes or other abilities used through them.
 
-If you use an ability that creates an environmental effect, such as a portal, you must have line of effect to the space where you create the environmental effect. If you want to create an area of effect in a specific area, you must have line of effect to at least one of the squares in that area. See Area Abilities above.
+If you use an ability that creates an environmental effect, such as a portal, you must have line of effect to the space where you create the environmental effect. If you want to create an [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect) in a specific area, you must have line of effect to at least one of the squares in that area. See Area Abilities above.
 
 #### Straight Line
 
@@ -4648,7 +4648,7 @@ You take damage from this condition when you use a main action off your turn. Fo
 <!-- @type: condition | @id: dazed -->
 ##### Dazed
 
-A creature who is [dazed](scc:mcdm.heroes.v1/condition/dazed) can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or free maneuvers.
+A creature who is [dazed](scc:mcdm.heroes.v1/condition/dazed) can do only one thing on their turn: use a main action, use a maneuver, or use a move action. A [dazed](scc:mcdm.heroes.v1/condition/dazed) creature also can't use triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: condition | @id: frightened -->
 ##### Frightened
@@ -4690,7 +4690,7 @@ A creature who is [slowed](scc:mcdm.heroes.v1/condition/slowed) has speed 2 unle
 <!-- @type: condition | @id: taunted -->
 ##### Taunted
 
-A creature who is [taunted](scc:mcdm.heroes.v1/condition/taunted) has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) for any ability that doesn't target the creature who [taunted](scc:mcdm.heroes.v1/condition/taunted) them, as long as they have line of effect to that creature. If a creature gains the [taunted](scc:mcdm.heroes.v1/condition/taunted) condition from one source while already [taunted](scc:mcdm.heroes.v1/condition/taunted) by a different source, the new condition replaces the old one.
+A creature who is [taunted](scc:mcdm.heroes.v1/condition/taunted) has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) for any ability that doesn't target the creature who [taunted](scc:mcdm.heroes.v1/condition/taunted) them, as long as they have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature. If a creature gains the [taunted](scc:mcdm.heroes.v1/condition/taunted) condition from one source while already [taunted](scc:mcdm.heroes.v1/condition/taunted) by a different source, the new condition replaces the old one.
 
 <!-- @type: condition | @id: weakened -->
 ##### Weakened
@@ -4817,7 +4817,7 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 > 
 > **Effect:** The target is judged by you until the end of the encounter, you use this ability again, you willingly end this effect (no action required), or another [censor](scc:mcdm.heroes.v1/class/censor) judges the target.
 > 
-> Whenever a creature judged by you uses a main action and is within your line of effect, you can use a free triggered action to deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to them.
+> Whenever a creature judged by you uses a main action and is within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), you can use a free triggered action to deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to them.
 > 
 > When a creature judged by you is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can use a free triggered action to use this ability against a new target.
 > 
@@ -4835,7 +4835,7 @@ You pick out the enemies most worthy of your wrath and place a divine [judgment]
 
 The first time on a turn that you use your [Judgment](scc:mcdm.heroes.v1/feature.ability.censor.level-1/judgment) ability to judge a creature, you gain the following benefit based on your order:
 
-- **Exorcist:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. This movement must take you closer to the judged creature. You do not need line of effect to your destination.
+- **Exorcist:** You can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score. This movement must take you closer to the judged creature. You do not need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to your destination.
 - **Oracle:** You can deal holy damage equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score to the judged creature.
 - **Paragon:** You can vertical pull the judged creature up to a number of squares equal to twice your [Presence](scc:mcdm.heroes.v1/rule.character/presence) score.
 
@@ -5811,7 +5811,7 @@ You can maintain bonds with up to three willing creatures using your [Invocation
 > |-------------------|--------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and each ally** |
 > 
-> **Effect:** Each target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your [Invocation of the Heart](scc:mcdm.heroes.v1/feature.censor.level-4/invocation-of-the-heart) feature. You don't need line of effect to the bonded creature but you must be on the same world.
+> **Effect:** Each target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your [Invocation of the Heart](scc:mcdm.heroes.v1/feature.censor.level-4/invocation-of-the-heart) feature. You don't need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the bonded creature but you must be on the same world.
 
 <!-- @type: feature -->
 ##### Divine Quartermaster
@@ -5865,7 +5865,7 @@ You have the following ability.
 > |-------------------|------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free triggered action to switch places with a duplicate within their line of effect, making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free triggered action to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -6003,7 +6003,7 @@ Choose one heroic ability from the following options, each of which costs 11 wra
 > - **12-16:** 9 + P damage; I < AVERAGE, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 12 + P damage; I < STRONG, [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > 
-> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies who starts their turn within 5 squares of them must use a free maneuver to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. Additionally, while the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies within 5 squares of them who can make a triggered [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a different creature must make the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target instead.
+> **Effect:** While the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies who starts their turn within 5 squares of them must use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. Additionally, while the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, each of their allies within 5 squares of them who can make a triggered [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a different creature must make the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target instead.
 
 <!-- @type: feature-group | @level: 9 -->
 ### 9th-Level Features
@@ -7407,7 +7407,7 @@ Choose one of your domains. You gain a heroic ability from that domain, as shown
 > - **12-16:** 5 damage
 > - **17+:** 8 damage
 > 
-> Once on each subsequent turn, you can use a free maneuver to move the machine a number of squares up to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score then repeat the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+> Once on each subsequent turn, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to move the machine a number of squares up to your [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) score then repeat the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 <!-- @type: ability | @cost: 9 Piety -->
 > ###### Invocation of Mystery (9 Piety)
@@ -7569,7 +7569,7 @@ You can maintain bonds with up to three willing creatures using your Invocation 
 > |--------------------|--------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self and each ally** |
 > 
-> **Effect:** Each target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your Invocation of the Heart feature. You don't need line of effect to the bonded creature but you must be on the same world.
+> **Effect:** Each target is [teleport](scc:mcdm.heroes.v1/movement/teleport)ed to unoccupied spaces within 5 squares of a willing creature who you are bonded to with your Invocation of the Heart feature. You don't need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the bonded creature but you must be on the same world.
 
 <!-- @type: feature -->
 ##### Divine Quartermaster
@@ -7623,7 +7623,7 @@ You have the following ability.
 > |--------------------|------------------------:|
 > | **📏 Ranged 10**   | **🎯 Self or one ally** |
 > 
-> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their line of effect, making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
+> **Effect:** You create two illusory duplicates of the target, which appear anywhere within [distance](scc:mcdm.heroes.v1/rule.combat/distance). These duplicates last until the end of the encounter. On each of their turns, the target can move each duplicate up to their speed. If the target is targeted by an ability, they can use a free [triggered action](scc:mcdm.heroes.v1/feature.conduit.level-1/triggered-action) to switch places with a duplicate within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), making the duplicate the target of the ability instead. When either duplicate takes damage, it is destroyed.
 
 <!-- @type: feature -->
 ##### Word of Death Deferred
@@ -7720,7 +7720,7 @@ As a 9th-level [conduit](scc:mcdm.heroes.v1/class/conduit), you gain the followi
 <!-- @type: feature -->
 #### Faith's Sword
 
-Each time you finish a respite, you can choose a willing hero ally who finished the respite with you. That ally gains the benefits of your [Burgeoning Saint](scc:mcdm.heroes.v1/feature.conduit.level-6/burgeoning-saint) feature until you finish another respite. Additionally, you can spend piety as a free maneuver to give the hero 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) for every 2 piety spent.
+Each time you finish a respite, you can choose a willing hero ally who finished the respite with you. That ally gains the benefits of your [Burgeoning Saint](scc:mcdm.heroes.v1/feature.conduit.level-6/burgeoning-saint) feature until you finish another respite. Additionally, you can spend piety as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to give the hero 1 of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) for every 2 piety spent.
 
 <!-- @type: feature -->
 #### Ordained
@@ -8572,7 +8572,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > |--------------------------|----------------:|
 > | **📏 Ranged 10**         |  **🎯 Special** |
 > 
-> **Effect:** You open up two holes with 1-square openings that are 4 squares deep, which can be placed on any mundane surface within [distance](scc:mcdm.heroes.v1/rule.combat/distance). You can place these holes next to each other to create fewer holes with wider openings. When the holes open, make a separate [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for each creature on the ground above a hole and small enough to fall in. (You can't score a critical hit with this ability because it uses a maneuver.)
+> **Effect:** You open up two holes with 1-square openings that are 4 squares deep, which can be placed on any mundane surface within [distance](scc:mcdm.heroes.v1/rule.combat/distance). You can place these holes next to each other to create fewer holes with wider openings. When the holes open, make a separate [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for each creature on the ground above a hole and small enough to fall in. (You can't score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with this ability because it uses a maneuver.)
 > 
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
@@ -8591,7 +8591,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > |-------------------------|------------------------:|
 > | **📏 Ranged 10**        | **🎯 Self or one ally** |
 > 
-> **Effect:** Until the start of your next turn, the target can move through solid matter, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and their movement can't provoke opportunity attacks. If the target ends their turn inside solid matter, they are forced out into the space where they entered it and this effect ends.
+> **Effect:** Until the start of your next turn, the target can move through solid matter, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and their movement can't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). If the target ends their turn inside solid matter, they are forced out into the space where they entered it and this effect ends.
 > 
 > **Persistent 1:** The effect lasts until the start of your next turn.
 
@@ -8676,9 +8676,9 @@ You can revert back to your true form as a maneuver. You can't enter an [animal 
 | Giant<br>salamander | 6th   | 5                 | 5             | 1L   | +3              | +2/+2/+2           | Your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deals fire damage. Additionally, you have fire immunity<br>3.                                                                                                                                                                                            |
 | Giant spider        | 6th   | 0                 | 5 (climb)     | 2    | +0              | +0/+1/+2           | You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against creatures you are hidden<br>from.                                                                                                                                                                                          |
 | Giant snake         | 7th   | 5                 | 5             | 3    | +0              | +0/+1/+2           | Whenever you obtain a tier 2 or tier 3 outcome on a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you<br>can automatically grab the target. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the target takes 2<br>damage at the start of each of their turns.                                                                      |
-| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a critical hit with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
+| Kangaroo            | 7th   | 0                 | 7             | 1L   | +1              | +0/+0/+4           | When you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), the target is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save<br>ends). When you take the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action, you can high jump or long<br>jump up to half your speed. This jump can allow you to move more squares<br>than your speed.                    |
 | Spiny armadillo     | 7th   | 10                | 5             | 1M   | +2              | +0/+0/+0           | Whenever you take damage from an adjacent creature's melee ability, that<br>creature takes 3 damage.                                                                                                                                                                            |
-| Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke opportunity attacks.                                                                                                                                                                                                                             |
+| Ostrich             | 8th   | 0                 | 10            | 2    | +0              | +1/+1/+1           | Your movement does not provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).                                                                                                                                                                                                                             |
 | Shark               | 8th   | 0                 | 8 (swim only) | 2    | +0              | +2/+2/+2           | You can breathe in water but can't breathe outside of it. Additionally, you gain<br>an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against targets who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).                                                                                                                              |
 | Giant octopus       | 9th   | 5                 | 5 (swim)      | 3    | +2              | +0/+0/+0           | You can breathe in water. Additionally, you can target two creatures or objects<br>with your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Whenever you obtain a tier 2 or tier 3 outcome on<br>a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can automatically grab the target. You can have up to<br>eight creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed). |
 | Rhinoceros          | 9th   | 10                | 8             | 2    | +5              | +2/+2/+2           | Whenever you make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of the Charge action, that<br>strike gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).                                                                                                                                                                               |
@@ -8718,11 +8718,11 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 > 
 > **Effect:** Until the start of your next turn, the area gains the following effects:
 > 
-> - Once as a free maneuver at the start of your turn, you allow yourself and each ally in the area to spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
+> - Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) at the start of your turn, you allow yourself and each ally in the area to spend any number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 > - Each enemy who enters the area for the first time in a combat round or starts their turn there takes damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > 
-> **Persistent 1:** The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your line of effect.
+> **Persistent 1:** The area remains until the start of your next turn. As a maneuver, you can move the area up to 5 squares. This ability ends if the area is ever not within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
 
 <!-- @type: ability | @cost: 5 Essence -->
 > ###### Subvert the Green Within (5 Essence)
@@ -8816,7 +8816,7 @@ You have the following ability.
 > |------------------|----------------:|
 > | **📏 Self**      |     **🎯 Self** |
 > 
-> **Effect:** You step into a mundane dirt, metal, or stone object (including a wall) that is as large as you or larger. You can remain inside the object for as long as you like. While inside the object, you can observe events and speak to creatures outside it, but you don't have line of effect to anything outside the object and vice versa. You can travel through the object freely until you exit it. If the object you meld with is destroyed, you take 10 damage and exit the object.
+> **Effect:** You step into a mundane dirt, metal, or stone object (including a wall) that is as large as you or larger. You can remain inside the object for as long as you like. While inside the object, you can observe events and speak to creatures outside it, but you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to anything outside the object and vice versa. You can travel through the object freely until you exit it. If the object you meld with is destroyed, you take 10 damage and exit the object.
 
 <!-- @type: feature -->
 ##### Remember Growth and Sun and Rain
@@ -9002,7 +9002,7 @@ Additionally, whenever an ally within [distance](scc:mcdm.heroes.v1/rule.combat/
 <!-- @type: feature -->
 ##### Pierce the Veil of Substance
 
-Solidity is merely a suggestion to you. Mundane barriers that are 1 square thick or less do not block your senses or line of effect. You can only sense or have line of effect past one such barrier at a time.
+Solidity is merely a suggestion to you. Mundane barriers that are 1 square thick or less do not block your senses or [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). You can only sense or have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) past one such barrier at a time.
 
 Additionally, whenever you use a void ability, you or one ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the ability can [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
@@ -9066,8 +9066,8 @@ Choose one heroic ability from the following options, each of which costs 9 esse
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 > 
 > - **≤11:** 9 + R corruption damage
-> - **12-16:** 10 + R corruption damage; the target has line of effect only to creatures and objects within 4 squares of them until the start of your next turn
-> - **17+:** 15 + R corruption damage; the target has line of effect only to adjacent creatures and objects until the start of your next turn
+> - **12-16:** 10 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to creatures and objects within 4 squares of them until the start of your next turn
+> - **17+:** 15 + R corruption damage; the target has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only to adjacent creatures and objects until the start of your next turn
 
 <!-- @type: ability | @cost: 9 Essence -->
 > ###### Web of All That's Come Before (9 Essence)
@@ -9238,7 +9238,7 @@ Additionally, your [Mantle of Essence](scc:mcdm.heroes.v1/feature.elementalist.l
 <!-- @type: feature -->
 ##### Chimeric Manifestation
 
-Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a free maneuver the first time you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your turn.
+Nature isn't static and unchanging, and neither are you. You can enter or exit your [animal form](scc:mcdm.heroes.v1/complication/animal-form) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) the first time you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature on your turn.
 
 Additionally, whenever you use your [Disciple of the Green](scc:mcdm.heroes.v1/feature.elementalist.level-2/disciple-of-the-green) feature, you can select an additional [animal form](scc:mcdm.heroes.v1/complication/animal-form) and gain the positive benefits from both forms. You can choose the size of either animal, and if both animal forms grant you the same benefit, you can choose whichever you prefer. You gain the highest speed between the two animal forms and have all types of movement from both forms.
 
@@ -9319,7 +9319,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 > |--------------------------|----------------:|
 > | **📏 Ranged 10**         |  **🎯 Special** |
 > 
-> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 5 tree appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The tree has 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver as a free maneuver. Additionally, when you start your turn with line of effect to the tree, you can end one effect on yourself that is ended by a saving throw or that ends at the end of your turn, or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) also gains this benefit.
+> **Effect:** A [size](scc:mcdm.heroes.v1/rule.character/size) 5 tree appears in an unoccupied space within [distance](scc:mcdm.heroes.v1/rule.combat/distance). The tree has 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). You and any ally can touch the tree to use the [Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Additionally, when you start your turn with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the tree, you can end one effect on yourself that is ended by a saving throw or that ends at the end of your turn, or you can stand up if you [are prone](scc:mcdm.heroes.v1/condition/prone). Each ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) also gains this benefit.
 > 
 > Each enemy who ends their turn within 3 squares of the tree is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn. A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way can use a main action to end the effect early.
 
@@ -9811,7 +9811,7 @@ Choose one signature ability from the following options. Signature abilities can
 > - **12-16:** 6 + M damage
 > - **17+:** 9 + M damage
 > 
-> **Effect:** You gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), and the target can make an opportunity attack against you as a free triggered action.
+> **Effect:** You gain 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge), and the target can make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you as a free triggered action.
 
 ##### Heroic Abilities
 
@@ -9851,7 +9851,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > - **12-16:** 5 + M damage; slide 3
 > - **17+:** 8 + M damage; slide 5
 > 
-> **Effect:** When you slide the target, you can move into any square they leave. If you take damage from an opportunity attack by moving this way, the target takes the same damage.
+> **Effect:** When you slide the target, you can move into any square they leave. If you take damage from an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving this way, the target takes the same damage.
 
 <!-- @type: ability | @cost: 3 Ferocity -->
 > ###### Tide of Death (3 Ferocity)
@@ -9870,7 +9870,7 @@ Choose one heroic ability from the following options, each of which costs 3 fero
 > - **12-16:** 3 damage
 > - **17+:** 5 damage
 > 
-> **Effect:** The last target you damage takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score for each opportunity attack you trigger during your move.
+> **Effect:** The last target you damage takes extra damage equal to your [Might](scc:mcdm.heroes.v1/rule.character/might) score for each [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) you trigger during your move.
 
 <!-- @type: ability | @cost: 3 Ferocity | @id: your-entrails-are-your-extrails -->
 > ###### Your Entrails Are Your Extrails! (3 Ferocity)
@@ -9915,7 +9915,7 @@ Choose one heroic ability from the following options, each of which costs 5 fero
 > 
 > *Anger is your energy.*
 > 
-> | **-**       | **Free maneuver** |
+> | **-**       | **[Free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver)** |
 > |-------------|------------------:|
 > | **📏 Self** |       **🎯 Self** |
 > 
@@ -10774,7 +10774,7 @@ The first time you take damage each combat round, you gain 3 ferocity instead of
 
 You have an epic resource called [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power). Each time you finish a respite, you gain [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) equal to the XP you gain. You can spend [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) on your abilities as if it were ferocity.
 
-Additionally, you can spend any amount of [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) as a free maneuver, ending one effect on you for each [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) spent.
+Additionally, you can spend any amount of [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), ending one effect on you for each [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) spent.
 
 You can also spend 3 [primordial power](scc:mcdm.heroes.v1/feature.fury.level-10/primordial-power) to create a portal to Quintessence without needing a source of elemental power.
 
@@ -10816,7 +10816,7 @@ You have the following ability.
 > 
 > **Effect:** You can shapeshift into the animal defined by your stormwight kit, into a hybrid form, or back into your true form. While in [animal form](scc:mcdm.heroes.v1/complication/animal-form) or hybrid form, you can speak as you usually do, and you can also speak to animals who share your form. If you are in a negotiation with an animal while in [animal form](scc:mcdm.heroes.v1/complication/animal-form), you treat your Renown as 2 higher than usual.
 > 
-> **Spend 1 Ferocity:** As a free maneuver, you can shapeshift a second time, either into another [animal form](scc:mcdm.heroes.v1/complication/animal-form), into your hybrid form, or back into your true form.
+> **Spend 1 Ferocity:** As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can shapeshift a second time, either into another [animal form](scc:mcdm.heroes.v1/complication/animal-form), into your hybrid form, or back into your true form.
 
 <!-- @type: feature -->
 ##### Primordial Storm
@@ -10920,7 +10920,7 @@ You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and 
 <!-- @type: feature -->
 ##### Animal Form: Crow
 
-While you are in your crow form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, and you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your crow form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can [fly](scc:mcdm.heroes.v1/movement/fly). You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), and you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Crow
@@ -10988,7 +10988,7 @@ You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to hide and 
 <!-- @type: feature -->
 ##### Animal Form: Rat
 
-While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver, you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
+While you are in your rat form, your [size](scc:mcdm.heroes.v1/rule.character/size) is 1T and you can automatically climb at full speed while moving. You can use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can use your allies as [cover](scc:mcdm.heroes.v1/rule.combat/cover) when you hide, and you can stay hidden while you move through squares occupied by any creature. Additionally, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to climb other creatures. You can't use any abilities while in this form except for [Aspect of the Wild](scc:mcdm.heroes.v1/feature.ability.fury.stormwight-kits/aspect-of-the-wild).
 
 <!-- @type: feature -->
 ##### Hybrid Form: Rat
@@ -11208,7 +11208,7 @@ You project a psionic field of order around your body, dampening the effects of 
 > 
 > **Effect:** Each target reduces their potencies by 1.
 > 
-> Once as a free maneuver on each of your turns, you can spend 1 discipline and give your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) one of the following additional effects until the start of your next turn:
+> Once as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on each of your turns, you can spend 1 discipline and give your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) one of the following additional effects until the start of your next turn:
 > 
 > - Gravitic Disruption: The first time on a turn that a target takes damage, you can slide them up to 2 squares.
 > - Inertial Anchor: Any target who starts their turn in the area can't [shift](scc:mcdm.heroes.v1/movement/shifting).
@@ -11602,7 +11602,7 @@ Choose one heroic ability from the following options, each of which costs 5 disc
 > - **12-16:** 9 damage
 > - **17+:** 13 damage
 >
-> **Effect:** You can take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free maneuver before or after you use this ability.
+> **Effect:** You can take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) before or after you use this ability.
 
 <!-- @type: feature-group | @level: 2 -->
 ### 2nd-Level Features
@@ -11927,7 +11927,7 @@ Choose one heroic ability from the following options, each of which costs 9 disc
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** You jump up to your speed without provoking opportunity attacks. Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
+> **Effect:** You jump up to your speed without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Until the end of your next turn, a static afterimage of you remains in the space you left, and any enemy adjacent to your afterimage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll). You can use your abilities from your own space or from the space of your afterimage as if you were still there. Additionally, if your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability is active, your afterimage also projects the aura from that ability, which you control as if you were in the afterimage's space.
 
 <!-- @type: ability | @cost: 9 Discipline -->
 > ###### Synaptic Reset (9 Discipline)
@@ -12162,7 +12162,7 @@ When you take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/dis
 <!-- @type: feature -->
 ##### Synaptic Triage
 
-As a free maneuver, you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to remove one effect on you. Each creature of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability also gains this benefit.
+As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to remove one effect on you. Each creature of your choice in the area of your [Null Field](scc:mcdm.heroes.v1/feature.null.level-1/null-field) ability also gains this benefit.
 
 <!-- @type: feature -->
 #### 11-Discipline Ability
@@ -13018,7 +13018,7 @@ You have the following ability.
 > |------------------|--------------------:|
 > | **📏 Ranged 20** | **🎯 One creature** |
 > 
-> **Effect:** As long as you remain within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the target, maintain line of effect to them, and strike no other creature first, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next strike you make against the assessed creature, and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) you can use only on that [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+> **Effect:** As long as you remain within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the target, maintain [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them, and strike no other creature first, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the next strike you make against the assessed creature, and gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) you can use only on that [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature -->
 #### 7-Insight Ability
@@ -13154,14 +13154,14 @@ Your [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) 
 <!-- @type: feature -->
 ##### Harlequin Gambit
 
-Whenever you reduce an adjacent non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a free maneuver to use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your speed.
+Whenever you reduce an adjacent non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) ability and then move up to your speed.
 
 If the creature is the same [size](scc:mcdm.heroes.v1/rule.character/size) as you, you can disguise yourself as them using [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) without spending insight. If you do, while [I'm No Threat](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/im-no-threat) is active, the creature's body is disguised to look like your body. The illusion ends on their body if another creature physically interacts with it. When the illusion would end for either you or the creature's body, it ends for both.
 
 <!-- @type: feature -->
 ##### Trail of Cinders
 
-Whenever you reduce a non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a free maneuver to use your [Black Ash Teleport](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport) ability.
+Whenever you reduce a non-minion creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can immediately use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to use your [Black Ash Teleport](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/black-ash-teleport) ability.
 
 Additionally, you can now bring an adjacent willing creature along with you whenever you use a shadow ability to [teleport](scc:mcdm.heroes.v1/movement/teleport). The creature appears in an unoccupied space adjacent to the space into which you [teleport](scc:mcdm.heroes.v1/movement/teleport)ed. If no such space exists, they can't [teleport](scc:mcdm.heroes.v1/movement/teleport) with you.
 
@@ -13428,7 +13428,7 @@ Whenever you willingly move, you can [teleport](scc:mcdm.heroes.v1/movement/tele
 <!-- @type: feature -->
 ##### Parkour
 
-Your movement no longer provokes opportunity attacks. Additionally, you can use your [Harlequin Gambit](scc:mcdm.heroes.v1/feature.shadow.level-5/harlequin-gambit) feature as a free triggered action when a creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by your [Clever Trick](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/clever-trick) ability.
+Your movement no longer provokes [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Additionally, you can use your [Harlequin Gambit](scc:mcdm.heroes.v1/feature.shadow.level-5/harlequin-gambit) feature as a free triggered action when a creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by your [Clever Trick](scc:mcdm.heroes.v1/feature.ability.shadow.level-1/clever-trick) ability.
 
 <!-- @type: feature -->
 ##### Time Bomb
@@ -13440,7 +13440,7 @@ You have [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) again
 >
 > *The longer it cooks, the bigger the boom.*
 >
-> | **Area, Ranged**        |             **Free maneuver** |
+> | **Area, Ranged**        |             **[Free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver)** |
 > |-------------------------|------------------------------:|
 > | **📏 2 cube within 10** | **🎯 Each enemy in the area** |
 >
@@ -13566,7 +13566,7 @@ Choose one of the following abilities.
 > - **12-16:** 18 + A corruption damage; push 5
 > - **17+:** 25 + A corruption damage; push 7
 >
-> **Effect:** On a critical hit, the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the demon and pulled through the portal before it closes, never to be seen again.
+> **Effect:** On a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the demon and pulled through the portal before it closes, never to be seen again.
 
 ##### 9th-Level Caustic Alchemy Abilities
 
@@ -13911,7 +13911,7 @@ You know how to focus the attention of your allies as you push them toward victo
 >
 > You can initially mark only one creature using this ability, though other [tactician](scc:mcdm.heroes.v1/class/tactician) abilities allow you to mark additional creatures at the same time. The mastermind [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-doctrine)'s [Anticipation](scc:mcdm.heroes.v1/feature.tactician.level-5/anticipation) feature allows you to target additional creatures with this ability starting at 5th level.
 >
-> While a creature marked by you is within your line of effect, you and allies within your line of effect gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against that creature. Additionally, whenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 focus to gain one of the following benefits as a free triggered action:
+> While a creature marked by you is within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), you and allies within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against that creature. Additionally, whenever you or any ally uses an ability to deal rolled damage to a creature marked by you, you can spend 1 focus to gain one of the following benefits as a free triggered action:
 >
 > - The ability deals extra damage equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 > - The creature dealing the damage can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
@@ -14101,7 +14101,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 <!-- @type: feature -->
 ##### Goaded
 
-You have learned to leverage your marked foes' psychology and goad them into acting before they're tactically ready. Whenever a creature marked by you uses a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets you or any ally within your line of effect, you can use a free triggered action to change one target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike) to you or another ally within your line of effect. The new target must be within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the ability and within line of effect of the creature using it.
+You have learned to leverage your marked foes' psychology and goad them into acting before they're tactically ready. Whenever a creature marked by you uses a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets you or any ally within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), you can use a free triggered action to change one target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike) to you or another ally within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). The new target must be within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the ability and within [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) of the creature using it.
 
 <!-- @type: feature -->
 ##### Infiltration Tactics
@@ -14111,7 +14111,7 @@ You have trained your squad to work together, stay silent, and wait for the oppo
 <!-- @type: feature -->
 ##### Melee Superiority
 
-After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an opportunity attack, the target's speed is reduced to 0 until the end of the current turn.
+After constant drills, you can more accurately anticipate an enemy's plan and thwart their attempts to move across the battlefield. Whenever you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), the target's speed is reduced to 0 until the end of the current turn.
 
 **Mark Benefit:** When a creature marked by you attempts to move or [shift](scc:mcdm.heroes.v1/movement/shifting) within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), you can use a free triggered action and spend 2 focus to make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that creature.
 
@@ -14230,7 +14230,7 @@ As a 3rd-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 <!-- @type: feature -->
 #### Out of Position
 
-Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have line of effect to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
+Even before battle begins, your enemies struggle to keep up with your tactics. At the start of an encounter, you can use a free triggered action to use your Mark ability against one enemy you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to, even if you are surprised. You can then slide the marked target up to 3 squares, ignoring stability. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect.
 
 <!-- @type: feature -->
 #### 7-Focus Ability
@@ -14352,7 +14352,7 @@ You and any ally within 10 squares of you can move at full speed while sneaking.
 <!-- @type: feature -->
 ##### Shake It Off
 
-As a free maneuver, you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a test, or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a free maneuver to gain this benefit.
+As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you can spend 1d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to ignore a consequence from a test, or to end one effect on you that is ended by a saving throw or that ends at the end of your turn. Any ally adjacent to you can also spend [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to gain this benefit.
 
 <!-- @type: feature -->
 ##### Tactical Offensive
@@ -14617,7 +14617,7 @@ Your [tactical doctrine](scc:mcdm.heroes.v1/feature.tactician.level-1/tactical-d
 
 You have trained your squad to be silent ambushers.
 
-**Mark Benefit:** When you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to let the character making the [strike](scc:mcdm.heroes.v1/rule.combat/strike) [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a free maneuver once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the [strike](scc:mcdm.heroes.v1/rule.combat/strike) is resolved.
+**Mark Benefit:** When you or any ally makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a creature marked by you, you can spend 2 focus to let the character making the [strike](scc:mcdm.heroes.v1/rule.combat/strike) [shift](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and use the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during the [shift](scc:mcdm.heroes.v1/movement/shifting). The creature can [shift](scc:mcdm.heroes.v1/movement/shifting) before or after the [strike](scc:mcdm.heroes.v1/rule.combat/strike) is resolved.
 
 <!-- @type: feature -->
 ##### Pincer Movement
@@ -14698,7 +14698,7 @@ As a 9th-level [tactician](scc:mcdm.heroes.v1/class/tactician), you gain the fol
 <!-- @type: feature -->
 #### Grandmaster of Arms
 
-Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using a weapon from one of your equipped kits, you automatically obtain a tier 3 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). You can still roll to determine if you score a critical hit.
+Your expertise with weapons has grown to true mastery. Whenever you use a signature ability from one of your equipped kits or make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) using a weapon from one of your equipped kits, you automatically obtain a tier 3 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). You can still roll to determine if you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
 
 <!-- @type: feature -->
 #### 9th-Level Doctrine Ability
@@ -15588,7 +15588,7 @@ Choose one of the following abilities.
 > - **12-16:** The target shifts up to their speed and uses their signature ability against any enemies of your choice.
 > - **17+:** The target moves up to their speed and uses their signature ability against any enemies of your choice.
 >
-> **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect. However, you can move them to provoke opportunity attacks.
+> **Effect:** You control the target's movement. The target can't be moved in a way that would harm them (such as over a cliff), leave them [dying](scc:mcdm.heroes.v1/rule.health/dying), or result in them suffering a condition or other negative effect. However, you can move them to provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 >
 > **Strained:** You take 1d6 damage and are [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of your turn.
 
@@ -15600,7 +15600,7 @@ As a 3rd-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Scan
 
-You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish line of effect to a thinking creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have line of effect to that creature until they move beyond that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
+You can extend your psionic senses beyond their usual range. Once on each of your turns, you can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Additionally, once you establish [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a thinking creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Mind Spike](scc:mcdm.heroes.v1/feature.ability.talent.level-1/mind-spike) ability, you always have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature until they move beyond that [distance](scc:mcdm.heroes.v1/rule.combat/distance).
 
 <!-- @type: feature -->
 #### 7-Clarity Ability
@@ -15637,7 +15637,7 @@ Choose one heroic ability from the following options, each of which costs 7 clar
 >
 > **Effect:** You create three [size](scc:mcdm.heroes.v1/rule.character/size) 1T orbs that orbit your body. Each orb gives you a cumulative [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 1. Each time you take damage, you lose 1 orb.
 >
-> Once on each of your turns, you can use a free maneuver to fire an orb at a creature or object within 5 squares as a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike), losing the orb after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+> Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to fire an orb at a creature or object within 5 squares as a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike), losing the orb after the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
 > **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 >
@@ -15694,7 +15694,7 @@ Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) and [Presence](scc:mcdm.
 
 As a maneuver, you project your mind outside your body. While you are in this state, your body remains unconscious [and prone](scc:mcdm.heroes.v1/condition/prone), and your mind is a separate entity with [size](scc:mcdm.heroes.v1/rule.character/size) 1T. Your mind automatically has [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), and can freely move through solid matter. If you end your turn inside solid matter, you are forced out into the space where you entered it.
 
-Any abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a free maneuver.
+Any abilities or features you use originate from your mind. Both your mind and your body can take damage while separated, with any such damage applied to your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Your mind is instantly forced back into your body if you take any damage, and you can immediately return to your body as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: feature -->
 #### Mind Recovery
@@ -16299,9 +16299,9 @@ Choose one of the following abilities.
 > - **12-16:** 9 damage; push 10
 > - **17+:** 13 damage; push 15
 >
-> **Effect:** On a critical hit, the size of the area increases by 3, and this ability deals an extra 10 damage.
+> **Effect:** On a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), the size of the area increases by 3, and this ability deals an extra 10 damage.
 >
-> **Strained:** You are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). If you scored a critical hit with this ability, you die.
+> **Strained:** You are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). If you scored a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with this ability, you die.
 
 ##### 9th-Level Telepathy Abilities
 
@@ -16324,7 +16324,7 @@ Choose one of the following abilities.
 >
 > **Effect:** This ability ignores [cover](scc:mcdm.heroes.v1/rule.combat/cover) and [concealment](scc:mcdm.heroes.v1/rule.combat/concealment).
 >
-> **Strained:** The [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) scores a critical hit on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
+> **Strained:** The [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) scores a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) on a natural 17 or higher. You take half the damage the target takes, and you can't reduce this damage in any way.
 
 <!-- @type: ability | @cost: 11 Clarity -->
 > ###### Synaptic Terror (11 Clarity)
@@ -16363,7 +16363,7 @@ The first time each combat round that a creature is [force moved](scc:mcdm.heroe
 <!-- @type: feature -->
 #### Omnisensory
 
-You have a +10 bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your ranged abilities. Additionally, you don't need line of effect to a target of a ranged ability if the target is a creature capable of thought who you have previously had line of effect to.
+You have a +10 bonus to the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your ranged abilities. Additionally, you don't need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a target of a ranged ability if the target is a creature capable of thought who you have previously had [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to.
 
 <!-- @type: feature -->
 #### Perk
@@ -16468,7 +16468,7 @@ Additionally, you gain drama when certain events occur during a combat encounter
 
 - The first time three or more heroes use an ability on the same turn, you gain 2 drama.
 - The first time any hero is made [winded](scc:mcdm.heroes.v1/rule.health/winded) during the encounter, you gain 2 drama.
-- Whenever a creature within your line of effect rolls a natural 19 or 20, you gain 3 drama.
+- Whenever a creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) rolls a natural 19 or 20, you gain 3 drama.
 - When you or another hero dies, you gain 10 drama.
 
 When you are dead, you continue to gain drama during combat as long as your body is intact. If you have 30 drama during the encounter in which you died, you can come back to life with 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and 0 drama (no action required). If you are still dead after the encounter in which you died, you can't gain drama during future encounters.
@@ -17101,12 +17101,12 @@ Your [troubadour class act](scc:mcdm.heroes.v1/feature.troubadour.level-1/trouba
 <!-- @type: feature -->
 ##### Foil
 
-At the start of an encounter, choose one creature within your line of effect. You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with that creature. The chosen creature also has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with you. If the chosen creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can choose a new foil at the start of the next combat round.
+At the start of an encounter, choose one creature within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with that creature. The chosen creature also has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against or in competition with you. If the chosen creature is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can choose a new foil at the start of the next combat round.
 
 <!-- @type: feature -->
 ##### Missed Cue
 
-If you aren't surprised at the start of an encounter, you can choose one enemy within your line of effect who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second combat round. You must earn 3 Victories before you can use this feature again.
+If you aren't surprised at the start of an encounter, you can choose one enemy within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) who is not a leader or solo creature. The Director temporarily removes the chosen creature from the encounter. The chosen creature enters the encounter at the start of the second combat round. You must earn 3 Victories before you can use this feature again.
 
 <!-- @type: feature -->
 ##### Second Album
@@ -17122,7 +17122,7 @@ You have the following performance abilities, which are usable with your [Routin
 > |------------------------------|--------------------------------------:|
 > | **📏 5 aura**                | **🎯 Self and each ally in the area** |
 >
-> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a free maneuver (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
+> **Effect:** While this performance is active, each target who starts their turn in the area doesn't take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against creatures with [concealment](scc:mcdm.heroes.v1/rule.combat/concealment). Once during their turn, they can search for hidden creatures as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Hide and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
 <!-- @type: ability -->
 > ###### "Never-Ending Hero"
@@ -17202,7 +17202,7 @@ Choose one heroic ability from the following options, each of which costs 7 dram
 >
 > **Effect:** Until the end of the encounter, both you and the target can target each other with abilities even if you are beyond [distance](scc:mcdm.heroes.v1/rule.combat/distance), with the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of this ability replacing those abilities' [distances](scc:mcdm.heroes.v1/rule.combat/distance). The target can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by an ability used beyond [distance](scc:mcdm.heroes.v1/rule.combat/distance) this way.
 >
-> Additionally, once on each of your turns, you can use a free maneuver to communicate a motivating or dispiriting message to the target, either granting them 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) or forcing them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) they make before the start of your next turn.
+> Additionally, once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to communicate a motivating or dispiriting message to the target, either granting them 2 [surges](scc:mcdm.heroes.v1/rule.resource/surge) or forcing them to take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) they make before the start of your next turn.
 
 <!-- @type: feature-group | @level: 4 -->
 ### 4th-Level Features
@@ -17278,7 +17278,7 @@ Choose one of the following features.
 
 ###### Fix It in Post
 
-Once on each of your turns, you can use a free maneuver to change one condition affecting a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability. Choose one of the following conditions on the target: [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [frightened](scc:mcdm.heroes.v1/condition/frightened)[, prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [taunted](scc:mcdm.heroes.v1/condition/taunted). You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.
+Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to change one condition affecting a creature within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your [Dramatic Monologue](scc:mcdm.heroes.v1/feature.ability.troubadour.level-1/dramatic-monologue) ability. Choose one of the following conditions on the target: [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [frightened](scc:mcdm.heroes.v1/condition/frightened)[, prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [taunted](scc:mcdm.heroes.v1/condition/taunted). You change that condition to another of those conditions, maintaining the duration and origin of the original condition. A target who is no longer prone can stand up.
 
 ###### Take Two!
 
@@ -17302,7 +17302,7 @@ Choose one of the following features.
 
 ###### Verbal Duel
 
-Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a free maneuver to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
+Once on each of your turns while the target of your Foil feature is adjacent to you, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with them. Make an opposed [Presence](scc:mcdm.heroes.v1/rule.character/presence) test with the target. Whoever gets the higher result can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), which deals psychic damage instead of its usual damage.
 
 ###### We Can't Be Upstaged!
 
@@ -17326,7 +17326,7 @@ Choose one of the following features.
 
 ###### Bolstering Banter
 
-Once on each of your turns, you can use a free maneuver to exchange words with a target of your current performance, other than yourself. The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
+Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to exchange words with a target of your current performance, other than yourself. The target can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 
 ###### Medley
 
@@ -17352,7 +17352,7 @@ Choose one heroic ability from the following options, each of which costs 9 dram
 > - **12-16:** 14 damage
 > - **17+:** 20 damage
 >
-> **Effect:** Unless you score a critical hit, this ability can't reduce a non-minion target below 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+> **Effect:** Unless you score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit), this ability can't reduce a non-minion target below 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: ability | @cost: 9 Drama -->
 > ###### Continuity Error (9 Drama)
@@ -17671,7 +17671,7 @@ As a 9th-level [troubadour](scc:mcdm.heroes.v1/class/troubadour), you gain the f
 <!-- @type: feature -->
 #### Roar of the Crowd
 
-You are empowered by your audience, near and far. You can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened), and if you [are prone](scc:mcdm.heroes.v1/condition/prone), you can stand up as a free maneuver.
+You are empowered by your audience, near and far. You can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened), and if you [are prone](scc:mcdm.heroes.v1/condition/prone), you can stand up as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 Additionally, whenever you spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries), you can forgo regaining [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to invoke the roar of an invisible applauding audience. You and each ally within 3 squares of you gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 10 + the number of active bonds from your [Scene Partner](scc:mcdm.heroes.v1/feature.troubadour.level-1/scene-partner) feature + either your Victories or the number of players in your game (whichever is higher).
 
@@ -17810,12 +17810,12 @@ Your [Agility](scc:mcdm.heroes.v1/rule.character/agility) and [Presence](scc:mcd
 <!-- @type: feature -->
 #### Dramaturgy
 
-You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.troubadour.level-1/drama) or other [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) whenever you use your [Appeal to the Muses](scc:mcdm.heroes.v1/feature.troubadour.level-2/appeal-to-the-muses) feature. Additionally, your performances no longer have a [distance](scc:mcdm.heroes.v1/rule.combat/distance), but can affect any target on the encounter map within your line of effect.
+You gain 1 additional [drama](scc:mcdm.heroes.v1/feature.troubadour.level-1/drama) or other [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) whenever you use your [Appeal to the Muses](scc:mcdm.heroes.v1/feature.troubadour.level-2/appeal-to-the-muses) feature. Additionally, your performances no longer have a [distance](scc:mcdm.heroes.v1/rule.combat/distance), but can affect any target on the encounter map within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
 
 <!-- @type: feature -->
 #### Greatest of All Time
 
-Whenever you obtain a success on a test, each NPC within your line of effect has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next test. These effects last until you start your next respite.
+Whenever you obtain a success on a test, each NPC within your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) has their Impression score decreased by 4 during a negotiation (to a minimum of 1), and each ally within 3 squares of you gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next test. These effects last until you start your next respite.
 
 <!-- @type: feature -->
 #### Perk
@@ -17946,7 +17946,7 @@ For example, the [Shining Armor](scc:mcdm.heroes.v1/kit/shining-armor) kit has a
 
 A kit's melee [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus increases the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of abilities with the Melee and Weapon keywords. A kit's ranged [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus increases the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of abilities with the Ranged and Weapon keywords.
 
-A [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus doesn't increase the size of any ability's area of effect.
+A [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus doesn't increase the size of any ability's [area of effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect).
 
 #### Disengage Bonus
 
@@ -19550,7 +19550,7 @@ Through ignorance, fear, spite, or selfishness, you refused to help someone in n
 
 As a child, you met a creature who turns people to stone, such as a medusa. You escaped half petrified, avoiding the fate of others who stand as statues now.
 
-**Benefit:** You have a +1 bonus to stability. Additionally, you can use a free maneuver to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a [mundane](scc:mcdm.heroes.v1/complication/mundane) statue while you remain unmoving.
+**Benefit:** You have a +1 bonus to stability. Additionally, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to cause your body, gear, and any items you hold to take on the appearance of stone, making you appear to be a [mundane](scc:mcdm.heroes.v1/complication/mundane) statue while you remain unmoving.
 
 **Drawback:** You have sonic weakness 5. Additionally, while you are [winded](scc:mcdm.heroes.v1/rule.health/winded), you are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
@@ -21199,7 +21199,7 @@ You are no longer hidden from a creature if you don't have [cover](scc:mcdm.hero
 
 ##### Searching for Hidden Creatures
 
-You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have line of effect to them. To do so, you use a maneuver to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
+You can search for creatures who are hidden from you as long as those creatures are within 10 squares and you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them. To do so, you use a maneuver to make an [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test using the Search skill, and any hidden creatures within 10 squares of you each make an opposed [Agility](scc:mcdm.heroes.v1/rule.character/agility) test using the [Hide](scc:mcdm.heroes.v1/skill/hide) skill (see [Opposed Power Rolls](scc:mcdm.heroes.v1/rule.dice/opposed-power-roll) earlier in this chapter). At the Director's discretion, different [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills can be used in this opposed test. For example, your foe might make a [Presence](scc:mcdm.heroes.v1/rule.character/presence) test using the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill to hide among a flock of sheep without disturbing them, or you could make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test using the Eavesdrop skill to pick out the breathing of a creature hidden in the dark.
 
 If the total of your test is higher than that of a hidden creature, they are no longer hidden from you. Otherwise, they remain hidden from you. As part of the maneuver used to search for hidden creatures, you can point out any creatures you notice to allies within 10 squares of you, making those creatures no longer hidden from those allies.
 
@@ -21207,7 +21207,7 @@ If a creature is hidden from your allies but not from you, you can use a maneuve
 
 > **What Does It Mean to Be Observed?**
 >
-> Most of the time, if a creature has line of effect to you, they're able to observe you—especially if you're an active threat to them, such as in a combat encounter. However, the game leaves what it means to be observed open to interpretation, because there are circumstances where a creature might have line of effect to you but isn't observing you, giving you a chance to hide. For example, a guard in a crowded marketplace likely isn't able to observe every creature within their line of effect, so slipping away to hide in that situation is probably easier than hiding from them in an otherwise empty street. The Director has the final say on who is observing you, and who you are able to observe.
+> Most of the time, if a creature has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, they're able to observe you—especially if you're an active threat to them, such as in a combat encounter. However, the game leaves what it means to be observed open to interpretation, because there are circumstances where a creature might have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you but isn't observing you, giving you a chance to hide. For example, a guard in a crowded marketplace likely isn't able to observe every creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect), so slipping away to hide in that situation is probably easier than hiding from them in an otherwise empty street. The Director has the final say on who is observing you, and who you are able to observe.
 
 #### Sneaking
 
@@ -21497,9 +21497,9 @@ Any effect that prevents you from using maneuvers also prevents you from using f
 
 #### No-Action Activities
 
-Free maneuvers cover most of the simple activities you might want to undertake on your turn. When it isn't your turn, you can typically undertake even simpler activities requiring no action with the Director's approval. For instance, shouting out a warning to an ally or dropping an item so another creature can pick it up require no action.
+[Free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) cover most of the simple activities you might want to undertake on your turn. When it isn't your turn, you can typically undertake even simpler activities requiring no action with the Director's approval. For instance, shouting out a warning to an ally or dropping an item so another creature can pick it up require no action.
 
-The Director can limit what kinds of no-action activities you can attempt when it isn't your turn. For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's turn requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your turn, saying that doing so instead requires a free maneuver on your turn.
+The Director can limit what kinds of no-action activities you can attempt when it isn't your turn. For instance, shouting out a warning about an unseen foe to an ally on the ally's or the foe's turn requires no action. But the Director might stop you from giving that ally complex tactical advice when it isn't your turn, saying that doing so instead requires a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) on your turn.
 
 ### Movement
 
@@ -21524,7 +21524,7 @@ A creature can't move diagonally when doing so would involve passing through the
 <!-- @type: movement | @id: shifting -->
 #### Shifting
 
-[Shifting](scc:mcdm.heroes.v1/movement/shifting) is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to [shift](scc:mcdm.heroes.v1/movement/shifting) a specific number of squares, sometimes up to your speed. Whenever you [shift](scc:mcdm.heroes.v1/movement/shifting), creatures can't make opportunity attacks against you triggered by that movement (see Opportunity Attacks later in this chapter).
+[Shifting](scc:mcdm.heroes.v1/movement/shifting) is a careful form of movement that allows a creature to move safely past dangerous foes. Certain abilities, features, and other rules allow you to [shift](scc:mcdm.heroes.v1/movement/shifting) a specific number of squares, sometimes up to your speed. Whenever you [shift](scc:mcdm.heroes.v1/movement/shifting), creatures can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you triggered by that movement (see [Opportunity Attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) later in this chapter).
 
 You can't [shift](scc:mcdm.heroes.v1/movement/shifting) into or while within [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) (see below). If a rule allows you to [shift](scc:mcdm.heroes.v1/movement/shifting), you can choose to instead move up to the number of squares you would have shifted (for example, to get out of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)). However, you can't combine moving and [shifting](scc:mcdm.heroes.v1/movement/shifting) within that movement.
 
@@ -21550,11 +21550,11 @@ When a creature uses the Dig maneuver, they can move vertically up to a number o
 
 ###### Targeting Burrowing Creatures
 
-If you are on the ground, you have line of effect to a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature if that creature occupies 1 or more squares of terrain that can be burrowed through and that touch the ground, and if you have line of effect to any of those squares. The [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature gains the benefit of [cover](scc:mcdm.heroes.v1/rule.combat/cover) from you.
+If you are on the ground, you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature if that creature occupies 1 or more squares of terrain that can be burrowed through and that touch the ground, and if you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to any of those squares. The [burrowing](scc:mcdm.heroes.v1/movement/burrow) creature gains the benefit of [cover](scc:mcdm.heroes.v1/rule.combat/cover) from you.
 
-If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow), you don't have line of effect to any creature on the surface unless a rule states otherwise.
+If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow), you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to any creature on the surface unless a rule states otherwise.
 
-If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow) and are adjacent to another creature who is [burrowing](scc:mcdm.heroes.v1/movement/burrow), you have line of effect to that creature, though you both have [cover](scc:mcdm.heroes.v1/rule.combat/cover) from each other.
+If you are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow) and are adjacent to another creature who is [burrowing](scc:mcdm.heroes.v1/movement/burrow), you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to that creature, though you both have [cover](scc:mcdm.heroes.v1/rule.combat/cover) from each other.
 
 You can't gain the benefit of [high ground](scc:mcdm.heroes.v1/movement/high-ground) (see below) against creatures who are completely beneath the ground while [burrowing](scc:mcdm.heroes.v1/movement/burrow).
 
@@ -21626,7 +21626,7 @@ You can't jump farther or higher than the [distance](scc:mcdm.heroes.v1/rule.com
 <!-- @type: movement | @id: crawl -->
 ##### Crawl
 
-If you [are prone](scc:mcdm.heroes.v1/condition/prone) (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)), you can remain prone and [crawl](scc:mcdm.heroes.v1/movement/crawl) on the ground. Doing so costs you 1 additional square of movement for every square you [crawl](scc:mcdm.heroes.v1/movement/crawl). If you intentionally want to [crawl](scc:mcdm.heroes.v1/movement/crawl), you can [fall prone](scc:mcdm.heroes.v1/condition/prone) as a free maneuver. While voluntarily prone, you can choose to stand as a free maneuver.
+If you [are prone](scc:mcdm.heroes.v1/condition/prone) (see Conditions in Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)), you can remain prone and [crawl](scc:mcdm.heroes.v1/movement/crawl) on the ground. Doing so costs you 1 additional square of movement for every square you [crawl](scc:mcdm.heroes.v1/movement/crawl). If you intentionally want to [crawl](scc:mcdm.heroes.v1/movement/crawl), you can [fall prone](scc:mcdm.heroes.v1/condition/prone) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). While voluntarily prone, you can choose to stand as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: movement | @id: fly -->
 ##### Fly
@@ -21643,9 +21643,9 @@ A creature who has "[hover](scc:mcdm.heroes.v1/movement/hover)" in their speed e
 
 When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move from one space to another space instantaneously. The following rules apply to [teleporting](scc:mcdm.heroes.v1/movement/teleport):
 
-- [Teleporting](scc:mcdm.heroes.v1/movement/teleport) doesn't provoke opportunity attacks or other effects that are triggered by a creature moving.
+- [Teleporting](scc:mcdm.heroes.v1/movement/teleport) doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) or other effects that are triggered by a creature moving.
 - When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they bypass any obstacles between the space they leave and their destination space.
-- A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) themself must have line of effect to their destination space. A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) another creature must have line of effect from the space the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature leaves and to their destination space.
+- A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) themself must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to their destination space. A creature [teleporting](scc:mcdm.heroes.v1/movement/teleport) another creature must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) from the space the [teleport](scc:mcdm.heroes.v1/movement/teleport)ed creature leaves and to their destination space.
 - A [teleporting](scc:mcdm.heroes.v1/movement/teleport) creature's destination space can't be occupied by another creature or object.
 - The effect that lets a creature [teleport](scc:mcdm.heroes.v1/movement/teleport) indicates how far they can [teleport](scc:mcdm.heroes.v1/movement/teleport). That [distance](scc:mcdm.heroes.v1/rule.combat/distance) can be greater than the creature's speed.
 - If a creature can [teleport](scc:mcdm.heroes.v1/movement/teleport) as part of their usual movement, they can use the [Advance](scc:mcdm.heroes.v1/feature.common.move-actions/advance) move action to [teleport](scc:mcdm.heroes.v1/movement/teleport) a number of squares up to their usual speed, unmodified by conditions or effects.
@@ -21658,7 +21658,7 @@ When a creature [teleports](scc:mcdm.heroes.v1/movement/teleport), they move fro
 
 When a creature falls 2 or more squares and lands on the ground, they take 2 damage for each square they fall (to a maximum of 50 damage) and l[and prone](scc:mcdm.heroes.v1/condition/prone). A creature who falls can reduce the effective height of the fall by a number of squares equal to their [Agility](scc:mcdm.heroes.v1/rule.character/agility) score (to a minimum of 0). Falling into liquid that is 1 square or more deep reduces the effective height of a fall by 4 squares (to a minimum of 0).
 
-Falling is not [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), but being force moved downward is considered falling. Movement from falling doesn't provoke opportunity attacks (see Opportunity Attacks below).
+Falling is not [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), but being force moved downward is considered falling. Movement from falling doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) (see [Opportunity Attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) below).
 
 ##### Falling Onto Another Creature
 
@@ -21696,7 +21696,7 @@ Some actions and maneuvers allow a creature to push, pull, or slide a target cre
 
 When you [force move](scc:mcdm.heroes.v1/movement/forced-movement) a target, you can always move that target fewer squares than the number indicated. For example, when the [conduit](scc:mcdm.heroes.v1/class/conduit) obtains a tier 3 "push 3" outcome with their Call the Thunder Down ability, they can push targets any [distance](scc:mcdm.heroes.v1/rule.combat/distance) up to 3 squares, including choosing to not move certain targets at all.
 
-[Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and never provokes opportunity attacks. When you force move a target into [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) or into terrain that produces an effect, they are affected as if they had moved into it willingly.
+[Forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and never provokes [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). When you force move a target into [damaging terrain](scc:mcdm.heroes.v1/movement/damaging-terrain) or into terrain that produces an effect, they are affected as if they had moved into it willingly.
 
 > **Multitarget Abilities and [Forced Movement](scc:mcdm.heroes.v1/movement/forced-movement)**
 >
@@ -21788,7 +21788,7 @@ When a creature takes the [Disengage](scc:mcdm.heroes.v1/feature.common.move-act
 <!-- @type: feature | @id: ride -->
 #### Ride
 
-A creature can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only while mounted on another creature (see Mounted Combat below). When a creature takes the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action to have their mount use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free triggered action. A creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
+A creature can take the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only while mounted on another creature (see [Mounted Combat](scc:mcdm.heroes.v1/rule.combat/mounted-combat) below). When a creature takes the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action, they cause their mount to move up to the mount's speed, taking the rider with them. Alternatively, a creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action to have their mount use the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action as a free triggered action. A creature can use the [Ride](scc:mcdm.heroes.v1/feature.common.move-actions/ride) move action only once per round. A mounted creature can only have this move action applied to them once per round. This movement can be broken up with the rider's maneuver and main action however they wish.
 
 <!-- @type: feature-group | @id: maneuvers -->
 ### Maneuvers
@@ -21885,7 +21885,7 @@ A creature wanting to push an adjacent creature away from them can attempt to sh
 
 Many tests are maneuvers if made in combat. Searching a chest with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test, picking a door's lock with an [Agility](scc:mcdm.heroes.v1/rule.character/agility) test, or lifting a portcullis with a [Might](scc:mcdm.heroes.v1/rule.character/might) test would all be maneuvers. Assisting a test is also a maneuver in combat (see Assist a Test in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)).
 
-Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to recall lore about mummies, are usually free maneuvers in combat. The Director has the final say regarding which tests can be made as maneuvers.
+Complex or time-consuming tests might require a main action if made in combat—or could take so long that they can't be made during combat at all. Other tests that take no time at all, such as a [Reason](scc:mcdm.heroes.v1/rule.character/reason) test to recall lore about mummies, are usually [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver) in combat. The Director has the final say regarding which tests can be made as maneuvers.
 
 <!-- @type: feature | @id: search-for-hidden-creatures -->
 #### Search for Hidden Creatures
@@ -21938,7 +21938,7 @@ A creature who uses the [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/he
 
 Every creature can use a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) ability as a main action on their turn, though doing so typically isn't the most effective choice. Most of the time, you'll use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when the rules call for it. Specific rules let you use [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of an action that allows you to also do something else impactful, such as how the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action lets you move and use a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) in one main action (see Charge above).
 
-Many rules and abilities allow heroes to make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when it isn't their turn, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability. As well, all characters can make an opportunity attack [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
+Many rules and abilities allow heroes to make [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when it isn't their turn, such as the [tactician's](scc:mcdm.heroes.v1/class/tactician) Overwatch ability. As well, all characters can make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 #### Granted Abilities
 
@@ -21990,17 +21990,17 @@ When you and one or more allies are adjacent to the same enemy and on opposite s
 
 If you're unsure whether your hero and an ally are flanking a foe, imagine a line extending from the center of your space to the center of your ally's space. If that line passes through opposite sides or corners of the enemy's space, then you and your ally are flanking the enemy.
 
-You must have line of effect to the enemy and be able to take triggered actions to gain or grant the flanking benefit.
+You must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the enemy and be able to take triggered actions to gain or grant the flanking benefit.
 
 <!-- @type: rule | @group: combat | @id: cover -->
 ### Cover
 
-When you have line of effect to a creature or object but that target has at least half their form blocked by a solid object such as a tree, wall, or overturned table, the target has cover. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on damage-dealing abilities used against creatures or objects that have cover from you.
+When you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a creature or object but that target has at least half their form blocked by a solid object such as a tree, wall, or overturned table, the target has cover. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on damage-dealing abilities used against creatures or objects that have cover from you.
 
 <!-- @type: rule | @group: combat | @id: concealment -->
 ### Concealment
 
-Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have line of effect to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a [strike](scc:mcdm.heroes.v1/rule.combat/strike), provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against such targets take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
+Darkness, fog, invisibility magic, and any other effect that fully obscures a creature or object but doesn't protect their physical form grants that creature or object concealment. Even if you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to such a target, a creature or object has concealment from you if you can't see or otherwise observe them. You can target a creature or object with concealment using a [strike](scc:mcdm.heroes.v1/rule.combat/strike), provided they aren't hidden (see Hide  and Sneak in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). However, [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against such targets take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 #### Invisible Creatures
 
@@ -22084,7 +22084,7 @@ Heroes remain unconscious for 1 hour if no one does anything to wake them. After
 
 ##### Unconscious
 
-While you are unconscious, you can't take main actions, maneuvers, triggered actions, free triggered actions, or free maneuvers; your speed is 0; you are unaware of your surroundings; and you [are prone](scc:mcdm.heroes.v1/condition/prone). [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge). If you wake up from being unconscious, you can stand up from prone as a free maneuver.
+While you are unconscious, you can't take main actions, maneuvers, triggered actions, free triggered actions, or [free maneuvers](scc:mcdm.heroes.v1/rule.combat/free-maneuver); your speed is 0; you are unaware of your surroundings; and you [are prone](scc:mcdm.heroes.v1/condition/prone). [Ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll) against you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge). If you wake up from being unconscious, you can stand up from prone as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 <!-- @type: rule | @group: health | @id: temporary-stamina -->
 #### Temporary Stamina
@@ -23089,7 +23089,7 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Second Wind:** Whenever you become [winded](scc:mcdm.heroes.v1/rule.health/winded), you can use a free triggered action to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 
-**Shattering:** Whenever an enemy scores a critical hit against you, they take 10 sonic damage.
+**Shattering:** Whenever an enemy scores a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) against you, they take 10 sonic damage.
 
 **Tempest II:** When you use the armor's Tempest I enhancement, the affected creature takes 8 lightning damage and you push them up to 3 squares.
 
@@ -23146,13 +23146,13 @@ You can use an absorbed ability as if you knew it, making [power rolls](scc:mcdm
 
 **Magic Resistance III:** The benefit of the armor's Magic Resistance II enhancement extends to each ally within 3 squares of you.
 
-**Phasing III:** Your movement doesn't provoke opportunity attacks, and you can move through the space of any enemy as if they were an ally. You can't end your turn in an enemy's space.
+**Phasing III:** Your movement doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), and you can move through the space of any enemy as if they were an ally. You can't end your turn in an enemy's space.
 
 **Psionic Resistance III:** The benefit of the armor's Psionic Resistance II enhancement extends to each ally within 3 squares of you.
 
 **Temporal Flux:** Whenever you move out of a square, you can choose to leave an imprint behind that lasts until the end of the encounter, until your imprint takes 20 or more damage, or until you create a new imprint. The square is occupied by your imprint, and you can share that space with it.
 
-On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the imprint's space as a free maneuver. When you are targeted by an ability, you can use a free triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport) to your imprint, and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is an automatic tier 1 result.
+On your turn, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to the imprint's space as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). When you are targeted by an ability, you can use a free triggered action to [teleport](scc:mcdm.heroes.v1/movement/teleport) to your imprint, and the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) for the ability is an automatic tier 1 result.
 
 **Unbending:** You can't be subjected to [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) unless you choose to be. Effects that ignore Stability also ignore this enhancement.
 
@@ -23188,7 +23188,7 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an opportunity attack against their nearest ally if possible after the ability's effects resolve. This [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to the highest of your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores.
+**Berserking:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, that creature must make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against their nearest ally if possible after the ability's effects resolve. This [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage equal to the highest of your [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence) scores.
 
 **Displacing I:** Whenever you damage a creature using a magic or psionic ability and obtain a tier 3 outcome, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) that creature up to 2 squares after the ability's effects resolve. If the creature started on a horizontal surface, they must end on a horizontal surface.
 
@@ -23230,9 +23230,9 @@ An implement imbued with an enhancement grants you special benefits while it is 
 
 **Project Goal:** 150
 
-**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares, or you can use the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver as a free maneuver (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
+**Celerity:** Immediately after using a magic or psionic ability that requires a main action, you can [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares, or you can use the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) (see Maneuvers in Chapter 10: [Combat](scc:mcdm.heroes.v1/chapter/combat)).
 
-**Celestine:** As a main action, you conjure up to three stars, which [hover](scc:mcdm.heroes.v1/movement/hover) in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have line of effect to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
+**Celestine:** As a main action, you conjure up to three stars, which [hover](scc:mcdm.heroes.v1/movement/hover) in unoccupied squares of your choice within 5 squares of you. The stars remain in place, and disappear if you create more stars. When an enemy enters any star's space, the star detonates and is destroyed, and the enemy takes 10 fire damage. If you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the enemy, you can also slide them 1 square. Otherwise, the enemy slides 1 square in a random direction.
 
 **Displacing II:** When you use the implement's Displacing I enhancement, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) the creature up to 4 squares. Additionally, the creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made before the end of their next turn.
 
@@ -23380,7 +23380,7 @@ A hero who has a kit that uses unarmed [strikes](scc:mcdm.heroes.v1/rule.combat/
 >
 > **Chilling II:** Whenever you damage a creature with an ability using this weapon and obtain a tier 3 outcome, that creature takes 6 cold damage and is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends). This replaces the benefit of Chilling I.
 >
-> **Devastating:** Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) using this weapon, the number you need to roll to score a critical hit is reduced by 1.
+> **Devastating:** Whenever you make an [ability roll](scc:mcdm.heroes.v1/rule.dice/ability-roll) using this weapon, the number you need to roll to score a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) is reduced by 1.
 >
 > **Disrupting II:** Whenever you damage an undead using this weapon and leave that undead with 30 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or less, they drop to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). This replaces the benefit of Disrupting I.
 >
@@ -24132,7 +24132,7 @@ Any fire caused by the oil is extinguished after burning for 1 hour.
 
 **Effect:** When activated as a maneuver, this item erupts in a bright flash, you can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square without your enemies noticing your movement, and a homunculus perfectly resembling you appears in an adjacent space. The homunculus is a creature with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) 15, a 0 in all their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic), and a speed and stability equal to yours. They appear indistinguishable from you but can't use any abilities.
 
-While you have line of effect to your homunculus, you can use a maneuver to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to your homunculus, you can use a maneuver to issue them a telepathic command. The homunculus performs the command to the best of their ability. If not commanded, the homunculus mimics your movements and speech. When you move, the homunculus moves with you, matching your pace. The homunculus crumbles to dust after 1 hour or if reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: treasure -->
 ##### Portable Cloud
@@ -24340,7 +24340,7 @@ A creature with a willing soul returns to life at the end of the respite with fu
 - **[Size](scc:mcdm.heroes.v1/rule.character/size) 2:** vertical pull 3
 - **[Size](scc:mcdm.heroes.v1/rule.character/size) 3:** vertical pull 1
 
-If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object adjacent to you, you can catch it. This treasure can affect any target within line of effect.
+If you pull a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object adjacent to you, you can catch it. This treasure can affect any target within [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect).
 
 <!-- @type: treasure -->
 ##### Vial of Ethereal Attack
@@ -24667,7 +24667,7 @@ Additionally, when you are targeted by any effect that deals lightning damage, y
 
 **Project Goal:** 150
 
-**Effect:** While holding the Deadweight, you fall twice as fast, taking an extra 1 damage for each square you fall (to a maximum of 75 total damage from a single fall). If you fall 5 or more squares this way, you can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a free maneuver once during the fall before you hit the ground.
+**Effect:** While holding the Deadweight, you fall twice as fast, taking an extra 1 damage for each square you fall (to a maximum of 75 total damage from a single fall). If you fall 5 or more squares this way, you can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during the fall before you hit the ground.
 
 <!-- @type: treasure -->
 ##### Displacing Replacement Bracer
@@ -24754,7 +24754,7 @@ If the object is too thick or has no open space on the other side, your hand bec
 
 **Project Goal:** 150
 
-**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to speed until the end of your current turn. After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a free maneuver, regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
+**Effect:** Whenever you use the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action while wearing this helmet, you gain a +5 bonus to speed until the end of your current turn. After charging, you can use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), regardless of the target creature's [size](scc:mcdm.heroes.v1/rule.character/size).
 
 <!-- @type: treasure -->
 ##### Mask of the Many
@@ -25187,7 +25187,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 
 **1st Level:** While you wear this armor, you gain a +6 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can automatically swim at full speed while moving, and you can breathe underwater for up to 1 hour. Returning to the surface to breathe air again for any length of time reset's the armor's water-breathing benefit.
 
-**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and you have cold immunity 5. Additionally, whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a free maneuver once during each of your turns.
+**5th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +12, and you have cold immunity 5. Additionally, whenever you fall, you can extend your arms (no action required) to unfurl a thick membrane between your arms and your body, slowing your fall and allowing you to glide. While gliding this way, you move downward at 1 square per round, and you can glide up to 6 squares horizontally as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during each of your turns.
 
 **9th Level:** The armor's bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increases to +21, and you have cold immunity 10. Additionally, whenever your feet are not touching the ground (including floating in water or being in midair), you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [ability rolls](scc:mcdm.heroes.v1/rule.dice/ability-roll), and any ability takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) when targeting you.
 
@@ -25442,11 +25442,11 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next turn, allowing you to pass through them freely. While insubstantial, a creature can't make opportunity attacks against you.
+**1st Level:** While you wield this implement, your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. Additionally, whenever you deal rolled damage to a creature using a magic or psionic ability, they become insubstantial to you until the end of their next turn, allowing you to pass through them freely. While insubstantial, a creature can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against you.
 
 **5th Level:** The implement's damage bonus increases to +2. Additionally, when you move through a creature who is insubstantial to you, you can use a free triggered action to deal damage to them equal to your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. If you do, the insubstantial effect ends immediately after you pass through the creature and into an adjacent space outside them.
 
-**9th Level:** The implement's damage bonus increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make opportunity attacks against your allies while they remain insubstantial.
+**9th Level:** The implement's damage bonus increases to +3. Additionally, any creature who is insubstantial to you and isn't a leader or solo creature also can't make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against your allies while they remain insubstantial.
 
 <!-- @type: treasure -->
 ##### Foesense Lenses
@@ -25486,7 +25486,7 @@ Implements are pieces of jewelry, orbs, staffs, tomes, wands, and other objects 
 
 **1st Level:** You can open or close the tome as a maneuver while speaking or thinking its full name. While the tome is open, it floats in an adjacent space and flips to specific pages at your command, you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and you gain a +3 bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities.
 
-**5th Level:** While the tome is open, the bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities increases to +5. Additionally, when you or a creature you have line of effect to uses a magic or psionic ability, you can use a triggered action to grant a +3 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+**5th Level:** While the tome is open, the bonus to [distance](scc:mcdm.heroes.v1/rule.combat/distance) for your ranged magic or psionic abilities increases to +5. Additionally, when you or a creature you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to uses a magic or psionic ability, you can use a triggered action to grant a +3 bonus to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 **9th Level:** While the tome is open, you automatically obtain a tier 3 outcome on [Reason](scc:mcdm.heroes.v1/rule.character/reason) tests made to recall lore, and when you use a heroic ability, its [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) cost is reduced by 1 (to a minimum of 1).
 
@@ -25554,7 +25554,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 
 **1st Level:** Any weapon ability that deals rolled damage using this weapon gains a +1 damage bonus. Additionally, whenever you deal rolled damage with this weapon, you can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square. As well, while you wield or carry the weapon and are present in a negotiation, if an NPC in the negotiation has the greed, legacy, power, or revelry motivation, their starting interest increases by 1 (to a maximum of 5).
 
-**5th Level:** The weapon's damage bonus increases to +2. Additionally, when you make an opportunity attack against an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, you can use [fancy footwork](scc:mcdm.heroes.v1/feature.ability.swashbuckler/fancy-footwork) to knock them [prone](scc:mcdm.heroes.v1/condition/prone). You also earn 1 Renown.
+**5th Level:** The weapon's damage bonus increases to +2. Additionally, when you make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against an enemy of your [size](scc:mcdm.heroes.v1/rule.character/size) or smaller, you can use [fancy footwork](scc:mcdm.heroes.v1/feature.ability.swashbuckler/fancy-footwork) to knock them [prone](scc:mcdm.heroes.v1/condition/prone). You also earn 1 Renown.
 
 **9th Level:** The weapon's damage bonus increases to +3. Additionally, you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any test you make using a skill you have from the interpersonal skill group.
 
@@ -25874,7 +25874,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **5th Level:** Each creature who damages you is marked for revenge until the end of your next turn. Whenever you damage a creature marked for revenge, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
-**9th Level:** When you have three or more creatures marked for revenge and you target one of them with an ability that targets only one creature, you target all the creatures marked for revenge, regardless of their [distance](scc:mcdm.heroes.v1/rule.combat/distance) from you and even if you don't have line of effect to them.
+**9th Level:** When you have three or more creatures marked for revenge and you target one of them with an ability that targets only one creature, you target all the creatures marked for revenge, regardless of their [distance](scc:mcdm.heroes.v1/rule.combat/distance) from you and even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them.
 
 <!-- @type: treasure -->
 ##### Thief of Joy
@@ -25891,7 +25891,7 @@ In addition to armor, shields, implements, and weapons, heroes can make use of a
 
 **Project Goal:** 450
 
-**1st Level:** While you wear this torque, you gain a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can use a maneuver to choose a creature in your line of effect and learn their level. If their level is higher than yours, the torque grants you envy. If their level is equal to or lower than yours, the torque grants you disdain. You can have both envy and disdain from different creatures, but not more than one instance of either.
+**1st Level:** While you wear this torque, you gain a bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to twice your highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. Additionally, you can use a maneuver to choose a creature in your [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) and learn their level. If their level is higher than yours, the torque grants you envy. If their level is equal to or lower than yours, the torque grants you disdain. You can have both envy and disdain from different creatures, but not more than one instance of either.
 
 Whenever a creature within 10 squares of you deals damage to another creature, you can use a triggered action to expend your envy or disdain. If you expend envy, you deal damage equal to the triggering damage to a creature adjacent to you. If you expend disdain, you reduce the triggering damage by half. At the end of the encounter, you lose any envy or disdain granted by the torque.
 
@@ -25917,7 +25917,7 @@ Whether drawn from a stone, gifted by a lake spirit, forged by a god, or used to
 
 Though its size and make are often debated, the sword is consistently described as having a crossguard made from pure starlight. When wielded, a brilliant metal blade springs forth from that hilt, suiting the holder's taste in weapons. Those who touch the blade are filled with the vigor and power of the heroes who have held it before.
 
-**Suited for Victory:** This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a free maneuver. Any weapon ability that deals rolled damage using the Blade of a Thousand Years gains a +5 damage bonus, and that ability always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
+**Suited for Victory:** This sword takes on the size, shape, and make that the wielder wills into it. It can be a light, medium, or heavy weapon, and you can change its weapon type and appearance as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Any weapon ability that deals rolled damage using the Blade of a Thousand Years gains a +5 damage bonus, and that ability always deals holy damage. Any creature with weakness to holy damage who takes damage from this weapon is also [frightened](scc:mcdm.heroes.v1/condition/frightened) and [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
 
 **Rally the Righteous:** This blade fills all around it with hope and courage. Each ally within 1 mile of the weapon gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on weapon abilities and magic abilities, and has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. Additionally, each such creature's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum increases by 15 and they gain a +15 bonus to [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) when this ability first affects them.
 
@@ -25938,9 +25938,9 @@ This scepter waits high in the sky, resting within an endlessly raging cyclone. 
 
 The Encepter is said to have first manifested in a young world doomed to apocalypse—unless every last inhabitant of that world could stand together. The scepter is said to impose either dominion or obliteration over any threat its light is drawn around. Today, it is most commonly known as a bad omen, and should the Encepter reveal itself, folk know that the world teeters on the brink of destruction. Whether any of the stories are true, few can say, for the only living eyes that have witnessed the Encepter belong to dragons deep in slumber.
 
-**Shining [Presence](scc:mcdm.heroes.v1/rule.character/presence):** The one who wields the Encepter is always cast in a brilliant glow. Any [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made by the wielder that uses [Presence](scc:mcdm.heroes.v1/rule.character/presence) automatically achieves a tier 3 outcome, though the wielder can still roll in an attempt to score a critical success or critical hit.
+**Shining [Presence](scc:mcdm.heroes.v1/rule.character/presence):** The one who wields the Encepter is always cast in a brilliant glow. Any [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made by the wielder that uses [Presence](scc:mcdm.heroes.v1/rule.character/presence) automatically achieves a tier 3 outcome, though the wielder can still roll in an attempt to score a critical success or [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit).
 
-**Champion's Lasso:** As a free maneuver, the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder's choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.
+**Champion's Lasso:** As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), the wielder of the scepter can trigger a glowing line of light that traces their path as they move, or can dismiss the glowing line. If the wielder crosses over this line, each creature and object of the wielder's choice enclosed inside the line and within 2 squares above and below it are considered lassoed by the Encepter. Creatures remain lassoed until the lasso is released or until a new line is drawn.
 
 **Dominion:** Each creature lassoed by the Encepter is [restrained](scc:mcdm.heroes.v1/condition/restrained) and can't [teleport](scc:mcdm.heroes.v1/movement/teleport). A creature caught in midair while lassoed stays in place rather than falling.
 
@@ -26179,7 +26179,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 **Effect:** Choose one of the following benefits:
 
 - *Guess It's the Hard Way Then:* When combat begins and you aren't surprised, the first time you take damage before taking your turn, you halve that damage.
-- *Heedless Pursuer:* Once on each of your turns, you can use a free maneuver to deal yourself 1d6 damage that can't be reduced in any way. When you do, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and you can increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of any jump you make by 1 square, both until the end of your turn.
+- *Heedless Pursuer:* Once on each of your turns, you can use a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) to deal yourself 1d6 damage that can't be reduced in any way. When you do, you ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and you can increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of any jump you make by 1 square, both until the end of your turn.
 - *Silver Shield:* You have a badge granted to you by your organization. While you wear it, you gain the My Life for Yours feature from the [censor](scc:mcdm.heroes.v1/class/censor) class. When you use that ability, you can't spend wrath unless you have the Wrath class feature.
 - *Trained Tracker:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to track criminals.
 
@@ -26269,7 +26269,7 @@ The Director chooses one of the following benefits, based on the fate your capto
 
 - *Deep-Sea Diver:* You can automatically swim at full speed while moving.
 - *Ship Speaker:* You magically know the location of any ship controlled by your party even while you aren't aboard. You can telepathically communicate with anyone on board one of your ships who understands a language, and they can respond, no matter your [distance](scc:mcdm.heroes.v1/rule.combat/distance) from the ship.
-- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have line of effect to each other. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made while negotiating in this way.
+- *Signal Flags:* While aboard a ship, you can communicate with and conduct negotiations with another ship up to 5 miles away, as long as you and creatures on the other ship have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to each other. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [Presence](scc:mcdm.heroes.v1/rule.character/presence) tests made while negotiating in this way.
 - *Trained Crewmember:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on tests made to handle air or sea vessels.
 
 <!-- @type: title -->
@@ -26415,9 +26415,9 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Artillerist:* You gain a +5 damage bonus when using a ship's weapons
-- *Black Flag:* You have a recognizable flag that strikes terror on the high seas. While your flag is [flying](scc:mcdm.heroes.v1/movement/fly) from your ship, crewmembers of other ships who have line of effect to the flag take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against your ship or its crew.
+- *Black Flag:* You have a recognizable flag that strikes terror on the high seas. While your flag is [flying](scc:mcdm.heroes.v1/movement/fly) from your ship, crewmembers of other ships who have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the flag take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against your ship or its crew.
 - *Fearsome Reputation:* You earn 1 Renown.
-- *Scoundrel Tactics:* While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have line of effect to you, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when you do so. You can use Disguise to hide your ship's identity or general type, Intimidate to convince another ship's crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.
+- *Scoundrel Tactics:* While aboard a ship, you can use the following skills to make a test to influence another ship up to 5 miles away whose crewmembers have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to you, and you gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) when you do so. You can use Disguise to hide your ship's identity or general type, Intimidate to convince another ship's crew to flee or surrender, or Hide or Sneak to let your ship avoid notice.
 
 <!-- @type: title -->
 #### Faction Officer
@@ -26482,7 +26482,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 **Effect:** Choose one of the following benefits:
 
 - *Healing Gift:* You can use the 1st-level [Conduit](scc:mcdm.heroes.v1/class/conduit) feature [Healing Grace](scc:mcdm.heroes.v1/feature.ability.conduit.level-1/healing-grace) as if you had spent 1 [piety](scc:mcdm.heroes.v1/feature.conduit.level-1/piety) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). Once you use this benefit, you can't use it again until you earn 1 or more Victories.
-- *Last-Ditch Prayer:* As a free maneuver, you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
+- *Last-Ditch Prayer:* As a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), you recite a prayer for help, gaining a pool of 2d10 of the [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) granted by your class. This pool disappears at the end of your turn if you haven't used it. Once you use this benefit, you can't use it again until you perform another service for a god or saint, or until you gain a level.
 - *Touched by the Divine:* Choose a god or saint from the Deities and  Domains table in Chapter 14: [Gods and Religion](scc:mcdm.heroes.v1/chapter/gods-and-religion). From that god or saint's domains, choose a [Conduit](scc:mcdm.heroes.v1/class/conduit) 1st-level domain feature (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)).
 
 <!-- @type: title -->
@@ -26537,7 +26537,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 > - **12-16:** 11 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
 > - **17+:** 16 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends)
 >
-> **Effect:** You can end the [taunted](scc:mcdm.heroes.v1/condition/taunted) condition on the target as a free maneuver.
+> **Effect:** You can end the [taunted](scc:mcdm.heroes.v1/condition/taunted) condition on the target as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 >
 > **Special:** If you take this title, you might occasionally be called upon to perform duties for the person who knighted you.
 
@@ -26566,7 +26566,7 @@ Titles suitable for 2nd-echelon characters are presented in alphabetical order.
 
 - *Boffin:* You gain a small magic spy device called a boffin. Once per encounter, you can activate a boffin property as a maneuver (see below).
 - *Caustic Alchemy:* You have your choice of the 1st-level [shadow college](scc:mcdm.heroes.v1/feature.shadow.level-1/shadow-college) features Coat the Blade or [Smoke Bomb](scc:mcdm.heroes.v1/feature.shadow.level-1/smoke-bomb) (see Chapter 5: [Classes](scc:mcdm.heroes.v1/chapter/classes)). When you use that feature, you can't spend insight unless you have the Insight class feature.
-- *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have line of effect to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
+- *Spy Ring:* You gain a piece of magic jewelry, such as a ring. As a main action while wearing the jewelry, you can take on the illusory appearance of an individual within 10 squares who you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to. This disguise lets you automatically succeed on tests made using the Disguise skill based solely on visual identification.
 
 ##### Boffin Properties
 
@@ -26574,7 +26574,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 - Make a test that uses the Disguise skill. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the test.
 - One mundane lock you touch is unlocked.
-- Choose a square within 10 squares, even if you don't have line of effect to it. You can observe the area around that square as if you were in it.
+- Choose a square within 10 squares, even if you don't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to it. You can observe the area around that square as if you were in it.
 - You throw the boffin up to 10 squares, where it explodes in a 5 cube. Each creature in the area takes fire damage equal to 2d10 + your level. The boffin is permanently destroyed but can be replaced by your spymaster... though they don't like doing so too often.
 
 <!-- @type: title -->
@@ -26586,7 +26586,7 @@ Taking the Boffin benefit lets you use the following boffin properties as a mane
 
 **Effect:** Choose one of the following benefits:
 
-- *Hunter's Oath:* As a main action, you swear a hunter's oath against a creature within 10 squares who you have line of effect to. This oath lasts until the target dies or until you swear a hunter's oath against a different creature. As long as the hunter's oath lasts, you magically know the direction to the target if they are within 50 miles of you, and your damage-dealing abilities gain a +5 damage bonus against the target.
+- *Hunter's Oath:* As a main action, you swear a hunter's oath against a creature within 10 squares who you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to. This oath lasts until the target dies or until you swear a hunter's oath against a different creature. As long as the hunter's oath lasts, you magically know the direction to the target if they are within 50 miles of you, and your damage-dealing abilities gain a +5 damage bonus against the target.
 - *Particular Set of Skills:* You know a skill from the intrigue skill group.
 - *We're In This Together:* When you have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and take damage from an ability not used by that creature, the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature takes the same damage.
 
@@ -26694,7 +26694,7 @@ Titles suitable for 3rd-echelon characters are presented in alphabetical order.
 - *First Mate:* You have a pirate retainer, such as a **[human](scc:mcdm.heroes.v1/ancestry/human) warrior**, chosen by the Director from *Draw Steel: Monsters*. This retainer's level increases to your level.
 - *[Swashbuckler](scc:mcdm.heroes.v1/kit/swashbuckler):* You can automatically climb at full speed while moving
 - *Treasure Keeper:* You earn 1 Wealth.
-- *Weather Wizard:* Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a free maneuver. Choose from one of the following weather types:
+- *Weather Wizard:* Once per day, you can spend 10 uninterrupted minutes to magically alter mundane weather in a 5-mile radius around you. The weather moves with you and persists for 6 hours or until you dismiss it as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Choose from one of the following weather types:
   - *Calm:* Wind-powered vessels and technology cease working
   - *Fog:* Visibility is reduced to 6 squares.
   - *High Winds:* The speed of wind-powered vessels is doubled.
@@ -28172,9 +28172,9 @@ If your players participate in other games of *Draw Steel*, it's a good idea to 
 
 ### House Rules
 
-You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if critical hits are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
+You can always change the rules of the game to fit your campaign and taste! Maybe it better suits the pace of the campaign to have a respite last 8 hours, or perhaps a respite should take a week. You might prefer if [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) are super rare and happen only on a natural 20. You could allow heroes to spend [hero tokens](scc:mcdm.heroes.v1/rule.resource/hero-token) to reduce the amount of Malice you have (see *Draw Steel: Monsters*). You might decide that all heroes have a free +1 bonus to any [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) of their choice at 1st level.
 
-The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that critical hits only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
+The rules you create or modify to suit your group are called house rules. You can have as many house rules as you like, but you should discuss these rule changes with the players before implementing them. If you decide that [critical hits](scc:mcdm.heroes.v1/rule.combat/critical-hit) only occur on a natural 20, the worst time for a player to find that out is right after they roll a natural 19 in combat.
 
 Talk to the players about the house rules you want to use in your campaign, and discuss any ideas they bring to you for house rules during your first session.
 
