@@ -138,7 +138,7 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 }
 
 // MonsterParser handles @type: monster sections — a monster group (e.g.
-// "Goblins"). It produces a lore landing page at monster/{category}/{category}
+// "Goblins"). It produces a lore landing page at monster.group/{category}
 // AND seeds the `category` (and optional `domain`) context the pipeline pushes
 // for its descendant statblocks and featureblocks.
 type MonsterParser struct{}
@@ -165,7 +165,7 @@ func (p *MonsterParser) Parse(ctx *context.ContextStack, section *parser.Section
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        section.FullBodySource(),
-		TypePath:    []string{"monster", category},
+		TypePath:    []string{"monster", "group"},
 		ItemID:      category,
 	}, nil
 }

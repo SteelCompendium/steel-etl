@@ -70,8 +70,8 @@ func TestMonsterParser(t *testing.T) {
 	if got.ItemID != "goblins" {
 		t.Errorf("ItemID: got %q", got.ItemID)
 	}
-	if strings.Join(got.TypePath, "/") != "monster/goblins" {
-		t.Errorf("TypePath: got %v, want [monster goblins]", got.TypePath)
+	if strings.Join(got.TypePath, "/") != "monster/group" {
+		t.Errorf("TypePath: got %v, want [monster group]", got.TypePath)
 	}
 	if got.Frontmatter["type"] != "monster" {
 		t.Errorf("type: got %v", got.Frontmatter["type"])
