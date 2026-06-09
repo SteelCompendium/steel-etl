@@ -47,7 +47,7 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 	// index-of-indexes: every child is a directory → folder cards. Scoped to the
 	// feature & treasure trees so other sections (e.g. a future Bestiary) keep
 	// their own index style.
-	if len(subdirs) > 0 && len(files) == 0 && underFeatureOrTreasure(dir) {
+	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) {
 		return buildFolderIndex(dir, dirName, subdirs), true
 	}
 
@@ -59,11 +59,12 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 	return "", false
 }
 
-// underFeatureOrTreasure reports whether dir is the feature/ or treasure/ node
-// itself, or any node beneath them.
-func underFeatureOrTreasure(dir string) bool {
+// usesFolderIndex reports whether dir is one of the grouped Browse trees
+// (feature/, treasure/, skill/) — the index-of-indexes nodes that render as
+// .sc-folder cards. Other sections keep the default browse-index list.
+func usesFolderIndex(dir string) bool {
 	for _, p := range strings.Split(filepath.ToSlash(dir), "/") {
-		if p == "feature" || p == "treasure" {
+		if p == "feature" || p == "treasure" || p == "skill" {
 			return true
 		}
 	}
@@ -163,6 +164,8 @@ func folderCrestIcon(parentDir, childDir string) string {
 		return "scroll"
 	case strings.Contains(slash, "/treasure"):
 		return "treasure"
+	case strings.Contains(slash, "/skill"):
+		return "skill"
 	default:
 		return "scroll"
 	}
@@ -192,7 +195,8 @@ func countLeafFiles(dir string) int {
 			return nil
 		}
 		base := info.Name()
-		if strings.HasSuffix(base, ".md") && base != "index.md" && base != "_Index.md" {
+		if strings.HasSuffix(base, ".md") && base != "index.md" && base != "_Index.md" &&
+			strings.TrimSuffix(base, ".md") != filepath.Base(filepath.Dir(path)) {
 			n++
 		}
 		return nil
