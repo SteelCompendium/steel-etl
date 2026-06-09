@@ -338,18 +338,47 @@ func TestBuildFeatureIndex_SearchIslandOnLanding(t *testing.T) {
 	}
 }
 
-func TestUnderFeatureOrTreasure(t *testing.T) {
+func TestUsesFolderIndex(t *testing.T) {
 	cases := map[string]bool{
 		"/x/Browse/feature":              true,
 		"/x/Browse/feature/trait/censor": true,
 		"/x/Browse/treasure/1st-echelon": true,
+		"/x/Browse/skill":                true,
+		"/x/Browse/skill/crafting":       true,
 		"/x/Browse/class":                false,
 		"/x/Browse/kit":                  false,
 	}
 	for in, want := range cases {
-		if got := underFeatureOrTreasure(in); got != want {
-			t.Errorf("underFeatureOrTreasure(%q)=%v want %v", in, got, want)
+		if got := usesFolderIndex(in); got != want {
+			t.Errorf("usesFolderIndex(%q)=%v want %v", in, got, want)
 		}
+	}
+}
+
+func TestBuildFeatureIndexContentSkillRoot(t *testing.T) {
+	root := t.TempDir()
+	skillRoot := filepath.Join(root, "skill")
+	craft := filepath.Join(skillRoot, "crafting")
+	if err := os.MkdirAll(craft, 0755); err != nil {
+		t.Fatal(err)
+	}
+	// self-named container + two skills → count should be 2, not 3
+	for _, f := range []string{"crafting.md", "alchemy.md", "carpentry.md"} {
+		os.WriteFile(filepath.Join(craft, f), []byte("---\nname: X\n---\n"), 0644)
+	}
+	content, ok := buildFeatureIndexContent(skillRoot, "skill", nil, []string{"crafting"})
+	if !ok {
+		t.Fatalf("buildFeatureIndexContent ok=false, want true for skill root")
+	}
+	if !strings.Contains(content, `<a class="sc-folder" href="crafting/">`) ||
+		!strings.Contains(content, `<h3 class="sc-folder__name">Crafting</h3>`) {
+		t.Errorf("expected a Crafting folder card; got:\n%s", content)
+	}
+	if !strings.Contains(content, `<span class="sc-folder__count">2</span>`) {
+		t.Errorf("expected count 2 (container excluded); got:\n%s", content)
+	}
+	if !strings.Contains(content, iconPaths["skill"]) {
+		t.Errorf("expected the skill crest glyph on group folder cards; got:\n%s", content)
 	}
 }
 

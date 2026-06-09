@@ -237,6 +237,33 @@ func TestCardStretchedLinkStructure(t *testing.T) {
 	}
 }
 
+func TestBuildCardsContentNestedSkillLeaf(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "skill", "crafting")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	// self-named container page (must be excluded from the card grid)
+	os.WriteFile(filepath.Join(leaf, "crafting.md"),
+		[]byte("---\nname: Crafting Skills\ntype: skill-group\n---\n\nOverview.\n"), 0644)
+	os.WriteFile(filepath.Join(leaf, "alchemy.md"),
+		[]byte("---\nname: Alchemy\ntype: skill\n---\n\nMake bombs and potions.\n"), 0644)
+	os.WriteFile(filepath.Join(leaf, "carpentry.md"),
+		[]byte("---\nname: Carpentry\ntype: skill\n---\n\nCreate items out of wood.\n"), 0644)
+
+	content, ok := buildCardsContent(leaf, "crafting",
+		[]string{"crafting.md", "alchemy.md", "carpentry.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true for nested skill leaf")
+	}
+	if !strings.Contains(content, ">Alchemy<") || !strings.Contains(content, ">Carpentry<") {
+		t.Errorf("expected skill cards for Alchemy and Carpentry; got:\n%s", content)
+	}
+	if strings.Contains(content, "Crafting Skills") || strings.Contains(content, "crafting/\"") {
+		t.Errorf("self-named container card should be excluded; got:\n%s", content)
+	}
+}
+
 func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	root := t.TempDir()
 	leaf := filepath.Join(root, "treasure", "1st-echelon", "consumable")
