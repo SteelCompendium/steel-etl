@@ -83,6 +83,38 @@ session and followed step by step.
 - The term appears in its own section heading (`## Fury` does not link to itself)
 - The text is inside an annotation comment (`<!-- @type: ... -->`)
 
+### ⚠️ Footgun: linking a keyword can break body-text parsers
+
+Wrapping a keyword as `[term](scc:…)` changes the raw markdown a body-text parser
+sees. **Any parser/regex that matches the body by a literal keyword prefix breaks
+when its anchor word gets linked** — silently, because parsers fail "closed" (the
+field just goes empty).
+
+Concrete failure (2026-06-08): linking the power-roll header turned
+`**Power Roll + Might or Agility:**` into
+`**[Power Roll](scc:…) + [Might](scc:…) or [Agility](scc:…):**`, which no longer
+matched two regexes anchored on the literal `**Power Roll +`:
+
+- `internal/site/ability_cards.go` `prHeadRe` — the standalone ability card lost its
+  power-roll panel and tier glyph badges (header fell into a generic section; tiers
+  rendered as a plain `<ul>`).
+- `internal/content/ability.go` `powerRollHeaderRe` — `extractPowerRoll` never fired,
+  so `power_roll_characteristic` + `tier1/2/3` were absent and `buildAbilityEffects`
+  dropped the **entire power-roll effect** from JSON/YAML/DSE output.
+
+The runtime JS (`docs/javascripts/ability-cards.js`) was immune — it matches the
+DOM's `textContent`, which flattens links away; only the Go raw-markdown regexes broke.
+
+**Before linking a keyword that anchors a structured block** (power-roll headers,
+`**Effect:**`, `**Trigger:**`, `**Spend …:**`, stat-table cells, statblock fields),
+check whether a parser keys off that literal text. If so, make the regex tolerate
+link-wrapping — e.g. `(?:\[Power Roll\]\([^)]*\)|Power Roll)` — and capture the
+link-wrapped value verbatim (data fields keep the raw `[x](scc:…)`, matching the
+effect/distance convention; cards render it via `richInline`). Run `go test ./...`
+and spot-check a regenerated JSON + card after any such link. The Monsters statblock
+parser (`sbPowerRollRe`) is spared **only because the Monsters book isn't link-swept
+yet** — it will hit the same wall when it is.
+
 ### Mundane vs. game-mechanic disambiguation
 
 Many new linkable terms (conditions, skills, negotiation motivations, movement types, cultures) are common English words. **Each instance must be evaluated individually** — scripted regex replacement is not appropriate for these types.
