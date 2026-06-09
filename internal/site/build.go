@@ -504,7 +504,7 @@ func mergeGroupLanding(dir, generated string) string {
 	if parseFrontmatterField(fm, "scc") == "" {
 		return generated
 	}
-	lore := stripTrailingTable(strings.TrimRight(body, "\n"))
+	lore := loreIntro(body)
 	listing := stripLeadingHeading(generated)
 
 	var sb strings.Builder
@@ -529,25 +529,20 @@ func stripLeadingHeading(s string) string {
 	return s
 }
 
-// stripTrailingTable removes a trailing GFM table (and its blank separator) from
-// a group landing's lore — the index listing below already enumerates those rows.
-func stripTrailingTable(body string) string {
+// loreIntro returns just the landing's intro — its H1 + lead prose up to the
+// first H2 (## ) — dropping any book-faithful subtree the page body carries. A
+// skill-group page's RenderSubtree body inlines a "## <Group> Skills Table" plus
+// every child skill (## Alchemy …); the card grid below already enumerates them,
+// so that inline dump would be redundant. Monster lore has no H2, so it is kept
+// whole.
+func loreIntro(body string) string {
 	lines := strings.Split(body, "\n")
-	end := len(lines)
-	for end > 0 && strings.TrimSpace(lines[end-1]) == "" {
-		end--
+	for i, line := range lines {
+		if strings.HasPrefix(line, "## ") {
+			return strings.TrimRight(strings.Join(lines[:i], "\n"), "\n")
+		}
 	}
-	start := end
-	for start > 0 && strings.HasPrefix(strings.TrimSpace(lines[start-1]), "|") {
-		start--
-	}
-	if start == end { // no trailing table
-		return body
-	}
-	for start > 0 && strings.TrimSpace(lines[start-1]) == "" {
-		start-- // drop the blank line before the table
-	}
-	return strings.TrimRight(strings.Join(lines[:start], "\n"), "\n")
+	return strings.TrimRight(body, "\n")
 }
 
 // injectH1 adds a "# Name" header after frontmatter if the body doesn't already

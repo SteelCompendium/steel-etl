@@ -1173,22 +1173,24 @@ func TestStripLeadingHeading(t *testing.T) {
 	}
 }
 
-func TestStripTrailingTable(t *testing.T) {
-	in := "# Crafting Skills\n\nIntro prose.\n\n| Skill | Desc |\n|---|---|\n| Cooking | food |\n"
-	want := "# Crafting Skills\n\nIntro prose."
-	if got := stripTrailingTable(in); got != want {
-		t.Errorf("stripTrailingTable = %q, want %q", got, want)
+func TestLoreIntro(t *testing.T) {
+	// Skill-group body: H1 + intro, then a "## Skills Table" + inline child skills.
+	// Truncate at the first H2 → keep only H1 + intro.
+	in := "# Crafting Skills\n\n---\n\nIntro prose.\n\n## Crafting Skills Table\n\n| Skill | Use |\n|---|---|\n| Alchemy | bombs |\n\n## Alchemy\n\nMake bombs.\n"
+	want := "# Crafting Skills\n\n---\n\nIntro prose."
+	if got := loreIntro(in); got != want {
+		t.Errorf("loreIntro = %q, want %q", got, want)
 	}
-	// No trailing table → unchanged (trimmed).
-	noTable := "# Goblins\n\nThey are crafty."
-	if got := stripTrailingTable(noTable); got != noTable {
-		t.Errorf("stripTrailingTable(noTable) = %q, want unchanged", got)
+	// Monster lore: no H2 → kept whole (trimmed).
+	noH2 := "# Goblins\n\nThey are crafty."
+	if got := loreIntro(noH2); got != noH2 {
+		t.Errorf("loreIntro(noH2) = %q, want unchanged", got)
 	}
 }
 
 func TestMergeGroupLanding(t *testing.T) {
 	dir := t.TempDir()
-	landing := "---\nname: Crafting Skills\nscc: mcdm.heroes.v1/skill.group/crafting\ntype: skill-group\n---\n# Crafting Skills\n\nThe crafting group makes things.\n\n| Skill | Desc |\n|---|---|\n| Cooking | food |\n"
+	landing := "---\nname: Crafting Skills\nscc: mcdm.heroes.v1/skill.group/crafting\ntype: skill-group\n---\n# Crafting Skills\n\nThe crafting group makes things.\n\n## Crafting Skills Table\n\n| Skill | Desc |\n|---|---|\n| Cooking | food |\n\n## Cooking\n\nCook food.\n"
 	if err := os.WriteFile(filepath.Join(dir, "index.md"), []byte(landing), 0644); err != nil {
 		t.Fatal(err)
 	}
