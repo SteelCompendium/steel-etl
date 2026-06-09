@@ -8,7 +8,7 @@ import (
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 )
 
-func TestSkillGroupParserSelfNamedLeaf(t *testing.T) {
+func TestSkillGroupParserGroupLanding(t *testing.T) {
 	p := &SkillGroupParser{}
 	if p.Type() != "skill-group" {
 		t.Fatalf("Type() = %q, want skill-group", p.Type())
@@ -22,7 +22,7 @@ func TestSkillGroupParserSelfNamedLeaf(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Parse error: %v", err)
 	}
-	if want := []string{"skill", "crafting"}; !slices.Equal(got.TypePath, want) {
+	if want := []string{"skill", "group"}; !slices.Equal(got.TypePath, want) {
 		t.Errorf("TypePath = %v, want %v", got.TypePath, want)
 	}
 	if got.ItemID != "crafting" {
@@ -49,7 +49,7 @@ func TestSkillGroupParserDerivesIDFromHeading(t *testing.T) {
 	if got.ItemID != "lore-skills" {
 		t.Errorf("ItemID = %q, want lore-skills (slug of heading when @id absent)", got.ItemID)
 	}
-	if want := []string{"skill", "lore-skills"}; !slices.Equal(got.TypePath, want) {
+	if want := []string{"skill", "group"}; !slices.Equal(got.TypePath, want) {
 		t.Errorf("TypePath = %v, want %v", got.TypePath, want)
 	}
 }
