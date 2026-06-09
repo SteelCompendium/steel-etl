@@ -338,6 +338,38 @@ func TestBuildFeatureIndex_SearchIslandOnLanding(t *testing.T) {
 	}
 }
 
+func TestBuildFeatureIndex_RuleLanding(t *testing.T) {
+	root := t.TempDir()
+	// rule/<group>/<term>.md tree: rule/ is the index-of-indexes node whose
+	// children are the topic-group folders.
+	ruleDir := filepath.Join(root, "rule")
+	writeFile(t, filepath.Join(ruleDir, "dice", "power-roll.md"), "---\nname: Power Rolls\ntype: rule\n---\n")
+	writeFile(t, filepath.Join(ruleDir, "dice", "edge.md"), "---\nname: Edge\ntype: rule\n---\n")
+	writeFile(t, filepath.Join(ruleDir, "combat", "flanking.md"), "---\nname: Flanking\ntype: rule\n---\n")
+
+	content, ok := buildFeatureIndexContent(ruleDir, "rule", nil, []string{"combat", "dice"})
+	if !ok {
+		t.Fatal("expected folder-card index for rule/")
+	}
+	for _, want := range []string{
+		`# Rule`,
+		`<div class="sc-folders sc-folders--lg">`, // 2 groups → large
+		`<a class="sc-folder" href="dice/">`,
+		`<h3 class="sc-folder__name">Dice</h3>`,
+		`<span class="sc-folder__count">2</span>`, // 2 terms beneath dice
+		`<path d="M12 21.5`,                       // rule (book) crest on the folders
+		"glossary entry",                          // the rule landing intro
+	} {
+		if !strings.Contains(content, want) {
+			t.Errorf("rule folder index missing %q\n%s", want, content)
+		}
+	}
+	// The cross-tree Search & Filter island is feature-only — rule must not get it.
+	if strings.Contains(content, "Search & Filter") {
+		t.Errorf("rule landing should not carry the feature Search & Filter island\n%s", content)
+	}
+}
+
 func TestUsesFolderIndex(t *testing.T) {
 	cases := map[string]bool{
 		"/x/Browse/feature":              true,
@@ -345,6 +377,8 @@ func TestUsesFolderIndex(t *testing.T) {
 		"/x/Browse/treasure/1st-echelon": true,
 		"/x/Browse/skill":                true,
 		"/x/Browse/skill/crafting":       true,
+		"/x/Browse/rule":                 true,
+		"/x/Browse/rule/dice":            true,
 		"/x/Browse/class":                false,
 		"/x/Browse/kit":                  false,
 	}

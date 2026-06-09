@@ -53,21 +53,28 @@ var wideCardTypes = map[string]bool{
 // buildCardsContent returns rich-card index markup for a supported flat type.
 // ok=false → caller falls back to the default browse-index list.
 func buildCardsContent(dir, dirName string, files, subdirs []string) (content string, ok bool) {
-	cardType := dirName
-	if !richCardTypes[dirName] {
-		switch {
-		// Treasure leaves are nested (treasure/<tier>/<category>); render their
-		// items as treasure cards even though the leaf dirName isn't "treasure".
-		case len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "treasure"):
-			cardType = "treasure"
-		// Skill leaves are nested (skill/<group>/<item>); render their items as
-		// skill cards. The self-named <group>.md container page is dropped below.
-		case len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "skill"):
-			cardType = "skill"
-			files = dropSelfNamed(files, dirName)
-		default:
-			return "", false
-		}
+	leaf := len(subdirs) == 0 && len(files) > 0
+	var cardType string
+	switch {
+	// Rule (glossary) leaves are nested one level under rule/<group>; render their
+	// terms as rule cards keyed by the group. This MUST precede richCardTypes:
+	// several group names (treasure, negotiation) collide with rich card types, and
+	// every rule term should render as the same rule card regardless of its group.
+	case leaf && pathHasSegment(dir, "rule"):
+		cardType = "rule"
+	case richCardTypes[dirName]:
+		cardType = dirName
+	// Treasure leaves are nested (treasure/<tier>/<category>); render their items as
+	// treasure cards even though the leaf dirName isn't "treasure".
+	case leaf && pathHasSegment(dir, "treasure"):
+		cardType = "treasure"
+	// Skill leaves are nested (skill/<group>/<item>); render their items as skill
+	// cards. The self-named <group>.md container page is dropped below.
+	case leaf && pathHasSegment(dir, "skill"):
+		cardType = "skill"
+		files = dropSelfNamed(files, dirName)
+	default:
+		return "", false
 	}
 	if len(files) == 0 || len(subdirs) > 0 {
 		return "", false
@@ -91,7 +98,7 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 		if name == "" {
 			name = fileToTitle(f)
 		}
-		sb.WriteString(cardFor(cardType, fm, body, f, name))
+		sb.WriteString(cardFor(cardType, dirName, fm, body, f, name))
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
@@ -121,10 +128,12 @@ func pathHasSegment(dir, seg string) bool {
 	return false
 }
 
-func cardFor(t, fm, body, file, name string) string {
+func cardFor(t, dirName, fm, body, file, name string) string {
 	switch t {
 	case "kit":
 		return kitCard(fm, body, file, name)
+	case "rule":
+		return ruleCard(fm, body, file, name, dirName)
 	case "class":
 		return classCard(fm, body, file, name)
 	case "ancestry":
@@ -385,6 +394,14 @@ func cultureCard(fm, body, file, name string) string {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
 	return card(file, "culture", "Culture", name, inner)
+}
+
+// ruleCard renders a glossary term: crest + its group as the type label (e.g.
+// "Dice", "Combat") + the term name + the first prose line of its definition.
+// Rule pages carry no structured fields beyond name/scc/type, so the blurb is
+// the only body content — a generous cap keeps short definitions whole.
+func ruleCard(fm, body, file, name, groupDir string) string {
+	return card(file, "rule", dirToTitle(groupDir), name, blurbBlock(bodyBlurb(body, 200)))
 }
 
 // ── shared builders ─────────────────────────────────────────────────────────
@@ -994,4 +1011,6 @@ var iconPaths = map[string]string{
 	"paw":         `<path d="M8.35,3C9.53,2.83 10.78,4.12 11.14,5.9C11.5,7.67 10.85,9.25 9.67,9.43C8.5,9.61 7.24,8.32 6.87,6.54C6.5,4.77 7.17,3.19 8.35,3M15.5,3C16.69,3.19 17.35,4.77 17,6.54C16.62,8.32 15.37,9.61 14.19,9.43C13,9.25 12.35,7.67 12.72,5.9C13.08,4.12 14.33,2.83 15.5,3M3,7.6C4.14,7.11 5.69,8 6.5,9.55C7.26,11.13 7,12.79 5.87,13.28C4.74,13.77 3.2,12.89 2.41,11.32C1.62,9.75 1.9,8.08 3,7.6M21,7.6C22.1,8.08 22.38,9.75 21.59,11.32C20.8,12.89 19.26,13.77 18.13,13.28C17,12.79 16.74,11.13 17.5,9.55C18.31,8 19.86,7.11 21,7.6M19.33,18.38C19.37,19.32 18.65,20.36 17.79,20.75C16,21.57 13.88,19.87 11.89,19.87C9.9,19.87 7.76,21.64 6,20.75C5,20.26 4.31,18.96 4.44,17.88C4.62,16.39 6.41,15.59 7.47,14.5C8.88,13.09 9.88,10.44 11.89,10.44C13.89,10.44 14.95,13.05 16.3,14.5C17.41,15.72 19.26,16.75 19.33,18.38Z"/>`,                                                                                                                                                                                        // paw
 	"skull":       `<path d="M12,2A9,9 0 0,0 3,11C3,14.03 4.53,16.82 7,18.47V22H9V19H11V22H13V19H15V22H17V18.46C19.47,16.81 21,14 21,11A9,9 0 0,0 12,2M8,11A2,2 0 0,1 10,13A2,2 0 0,1 8,15A2,2 0 0,1 6,13A2,2 0 0,1 8,11M16,11A2,2 0 0,1 18,13A2,2 0 0,1 16,15A2,2 0 0,1 14,13A2,2 0 0,1 16,11M12,14L13.5,17H10.5L12,14Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         // skull
 	"scroll":      `<path d="M17.8,20C17.4,21.2 16.3,22 15,22H5C3.3,22 2,20.7 2,19V18H5L14.2,18C14.6,19.2 15.7,20 17,20H17.8M19,2C20.7,2 22,3.3 22,5V6H20V5C20,4.4 19.6,4 19,4C18.4,4 18,4.4 18,5V18H17C16.4,18 16,17.6 16,17V16H5V5C5,3.3 6.3,2 8,2H19M8,6V8H15V6H8M8,10V12H14V10H8Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // script-text
+	// rule = the rules/glossary tree's crest (rule/ landing folders + term cards).
+	"rule": `<path d="M12 21.5C10.65 20.65 8.2 20 6.5 20C4.85 20 3.15 20.3 1.75 21.05C1.65 21.1 1.6 21.1 1.5 21.1C1.25 21.1 1 20.85 1 20.6V6C1.6 5.55 2.25 5.25 3 5C4.11 4.65 5.33 4.5 6.5 4.5C8.45 4.5 10.55 4.9 12 6C13.45 4.9 15.55 4.5 17.5 4.5C18.67 4.5 19.89 4.65 21 5C21.75 5.25 22.4 5.55 23 6V20.6C23 20.85 22.75 21.1 22.5 21.1C22.4 21.1 22.35 21.1 22.25 21.05C20.85 20.3 19.15 20 17.5 20C15.8 20 13.35 20.65 12 21.5M12 8V19.5C13.35 18.65 15.8 18 17.5 18C18.7 18 19.9 18.15 21 18.5V7C19.9 6.65 18.7 6.5 17.5 6.5C15.8 6.5 13.35 7.15 12 8Z"/>`, // book-open-variant
 }

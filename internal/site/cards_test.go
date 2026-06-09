@@ -314,6 +314,66 @@ func TestBuildCardsContent_TreasureLeaf(t *testing.T) {
 	}
 }
 
+func TestBuildCardsContent_RuleLeaf(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "rule", "dice")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	term := "---\nname: Power Rolls\nscc: mcdm.heroes.v1/rule.dice/power-roll\ntype: rule\n---\n\n# Power Rolls\n\n---\n\nA power roll is a 2d10 roll you make to determine the impact of an ability.\n"
+	if err := os.WriteFile(filepath.Join(leaf, "power-roll.md"), []byte(term), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	content, ok := buildCardsContent(leaf, "dice", []string{"power-roll.md"}, nil)
+	if !ok {
+		t.Fatalf("buildCardsContent ok=false, want true for rule leaf dir")
+	}
+	for _, want := range []string{
+		"# Dice", // title from the group dirName
+		`<div class="sc-cards">`,
+		`href="power-roll/"`,                    // .md → directory URL
+		`<div class="sc-card__type">Dice</div>`, // group is the type label
+		`<div class="sc-card__name">Power Rolls</div>`,
+		"A power roll is a 2d10 roll", // definition blurb from the body
+		`<path d="M12 21.5`,           // the rule (book) crest glyph
+	} {
+		if !strings.Contains(content, want) {
+			t.Errorf("rule leaf index missing %q\n%s", want, content)
+		}
+	}
+}
+
+// A rule group whose name collides with a rich card type (treasure, negotiation)
+// must still render as rule cards — the rule-tree check precedes richCardTypes.
+func TestBuildCardsContent_RuleGroupNameCollision(t *testing.T) {
+	root := t.TempDir()
+	leaf := filepath.Join(root, "rule", "treasure")
+	if err := os.MkdirAll(leaf, 0755); err != nil {
+		t.Fatal(err)
+	}
+	term := "---\nname: Leveled Treasure\nscc: mcdm.heroes.v1/rule.treasure/leveled-treasure\ntype: rule\n---\n\nLeveled treasures grow more powerful as their wielder gains levels.\n"
+	if err := os.WriteFile(filepath.Join(leaf, "leveled-treasure.md"), []byte(term), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	content, ok := buildCardsContent(leaf, "treasure", []string{"leveled-treasure.md"}, nil)
+	if !ok {
+		t.Fatal("buildCardsContent ok=false, want true for rule/treasure leaf")
+	}
+	// The group is the type label and the rule (book) crest is used — NOT the
+	// treasure-chest crest or a treasureCard layout (no Project Goal stat boxes).
+	if !strings.Contains(content, `<div class="sc-card__type">Treasures</div>`) {
+		t.Errorf("expected the group as type label, got:\n%s", content)
+	}
+	if !strings.Contains(content, `<path d="M12 21.5`) {
+		t.Errorf("expected the rule (book) crest, got:\n%s", content)
+	}
+	if strings.Contains(content, "Project Goal") || strings.Contains(content, "sc-card__flavor--clamp") {
+		t.Errorf("rule term rendered as a treasure card (treasure-only markup present):\n%s", content)
+	}
+}
+
 func TestGoalStat(t *testing.T) {
 	cases := []struct {
 		in, wantDisplay, wantTooltip string

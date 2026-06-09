@@ -7,7 +7,10 @@ package site
 //
 //   - index-of-indexes  (children are directories)  → FOLDER cards
 //     e.g. feature/, feature/trait/, feature/trait/censor/, treasure/,
-//     treasure/1st-echelon/. Rendered as .sc-folders › .sc-folder anchors.
+//     treasure/1st-echelon/, the skill/ group landing, and the rule/ glossary
+//     landing (its 12 topic groups). Rendered as .sc-folders › .sc-folder
+//     anchors. (The skill / rule leaves themselves are flat .sc-card grids —
+//     see buildCardsContent.)
 //
 //   - parent-of-leaves  (children are item pages)   → PREVIEW cards
 //     e.g. feature/trait/censor/level-1/ (trait previews) and
@@ -45,8 +48,8 @@ import (
 // trees. ok=false → the caller falls back to the default browse-index list.
 func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (string, bool) {
 	// index-of-indexes: every child is a directory → folder cards. Scoped to the
-	// feature & treasure trees so other sections (e.g. a future Bestiary) keep
-	// their own index style.
+	// feature, treasure, skill & rule trees so other sections (e.g. the Bestiary)
+	// keep their own index style.
 	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) {
 		return buildFolderIndex(dir, dirName, subdirs), true
 	}
@@ -60,11 +63,11 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 }
 
 // usesFolderIndex reports whether dir is one of the grouped Browse trees
-// (feature/, treasure/, skill/) — the index-of-indexes nodes that render as
-// .sc-folder cards. Other sections keep the default browse-index list.
+// (feature/, treasure/, skill/, rule/) — the index-of-indexes nodes that render
+// as .sc-folder cards. Other sections keep the default browse-index list.
 func usesFolderIndex(dir string) bool {
 	for _, p := range strings.Split(filepath.ToSlash(dir), "/") {
-		if p == "feature" || p == "treasure" || p == "skill" {
+		if p == "feature" || p == "treasure" || p == "skill" || p == "rule" {
 			return true
 		}
 	}
@@ -166,6 +169,8 @@ func folderCrestIcon(parentDir, childDir string) string {
 		return "treasure"
 	case strings.Contains(slash, "/skill"):
 		return "skill"
+	case strings.Contains(slash, "/rule"):
+		return "rule"
 	default:
 		return "scroll"
 	}
@@ -182,6 +187,9 @@ func folderIntro(dir, dirName string) string {
 	case dirName == "treasure":
 		return "Rewards earned through adventure — organized by echelon, plus artifacts and leveled gear. " +
 			"Pick a branch to keep browsing."
+	case dirName == "rule":
+		return "Every rules term and glossary entry, grouped by topic. Pick a category to browse its " +
+			"definitions, or use **search** to jump straight to a term."
 	}
 	return ""
 }
