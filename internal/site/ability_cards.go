@@ -81,7 +81,11 @@ var tierGlyph = [3]string{"!", "@", "#"} // DrawSteelGlyphs ≤11 / 12–16 / 17
 var tierKey = [3]string{"low", "mid", "high"}
 
 var (
-	prHeadRe    = regexp.MustCompile(`(?s)^\*\*Power Roll \+\s*(.+?):\*\*\s*$`)
+	// The SCC linking sweep wraps the header as "**[Power Roll](…) + [Might](…)…:**",
+	// so accept either the bare "Power Roll" or a link-wrapped "[Power Roll](…)"
+	// before the "+". The captured characteristics may themselves carry links
+	// (rendered via richInline, not escaped).
+	prHeadRe    = regexp.MustCompile(`(?s)^\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*\s*$`)
 	labelRe     = regexp.MustCompile(`(?s)^\*\*([^*:]+):\*\*\s*(.+)$`)
 	tierLineRe  = regexp.MustCompile(`^\s*[-*]?\s*\*\*([^*]+?):\*\*\s*(.+?)\s*$`)
 	mdLinkRe    = regexp.MustCompile(`\[([^\]]*)\]\(([^)]*)\)`)
@@ -239,7 +243,7 @@ func renderAbilityCard(fm, body string) string {
 
 	if hasPR {
 		b.WriteString("<div class=\"sc-ability__pr\">\n")
-		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\">%s<span class=\"pre\">Power Roll +</span><span class=\"chars\">%s</span></div>\n", dia, html.EscapeString(prChars))
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\">%s<span class=\"pre\">Power Roll +</span><span class=\"chars\">%s</span></div>\n", dia, richInline(prChars))
 		b.WriteString("<div class=\"sc-ability__pr-rows\">\n")
 		for i := 0; i < 3; i++ {
 			if tiers[i] == "" {

@@ -153,7 +153,13 @@ func stripBlockquotePrefix(s string) string {
 var (
 	// Matches the 2x2 ability table (keywords/action on row 1, distance/target on row 2)
 	abilityTableKeywordsRe = regexp.MustCompile(`\*\*([^*]+)\*\*`)
-	powerRollHeaderRe      = regexp.MustCompile(`\*\*Power Roll \+ (\w+):\*\*`)
+	// The SCC linking sweep wraps the header as "**[Power Roll](scc:…) + <chars>:**",
+	// where <chars> may be multi-characteristic and link-wrapped
+	// ("[Might](scc:…) or [Agility](scc:…)"). Accept bare or link-wrapped "Power
+	// Roll", and capture the full characteristics expression verbatim (links kept,
+	// like the sibling effect/distance fields). Non-greedy up to the closing ":**"
+	// — scc: URLs contain ":" but never ":**", so the first ":**" is the real end.
+	powerRollHeaderRe      = regexp.MustCompile(`\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*`)
 	tierRe                 = regexp.MustCompile(`\*\*([^*]+):\*\*\s*(.+)`)
 	effectRe               = regexp.MustCompile(`\*\*Effect:\*\*\s*(.+)`)
 	spendRe                = regexp.MustCompile(`\*\*Spend\s+(.+?):\*\*\s*(.+)`)

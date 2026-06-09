@@ -288,6 +288,55 @@ func TestAbilityParserBasic(t *testing.T) {
 	}
 }
 
+// The SCC linking sweep wraps the power-roll header and characteristics in
+// scc: links ("**[Power Roll](scc:…) + [Might](scc:…) or [Agility](scc:…):**").
+// extractPowerRoll must still detect the header (so tier1/2/3 are populated) and
+// capture the multi-characteristic expression verbatim (links kept, like the
+// sibling effect/distance fields). Without this, buildAbilityEffects silently
+// drops the entire power-roll effect from JSON/YAML/DSE output.
+func TestAbilityParserLinkedPowerRoll(t *testing.T) {
+	body := `*The strength of your assault makes it impossible to ignore you.*
+
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility):**
+- **≤11:** 5 + M or A damage
+- **12-16:** 8 + M or A damage
+- **17+:** 11 + M or A damage
+
+**Effect:** The target is taunted.`
+
+	section := &parser.Section{
+		Heading:      "Protective Attack",
+		HeadingLevel: 4,
+		Annotation:   map[string]string{"type": "ability", "subtype": "signature"},
+		BodySource:   body,
+	}
+
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "tactician"})
+
+	p := &AbilityParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("AbilityParser.Parse failed: %v", err)
+	}
+	fm := result.Frontmatter
+
+	// Characteristic captured verbatim (multi-char + links kept, matching effect/distance).
+	wantChar := "[Might](scc:mcdm.heroes.v1/rule.character/might) or [Agility](scc:mcdm.heroes.v1/rule.character/agility)"
+	if fm["power_roll_characteristic"] != wantChar {
+		t.Errorf("power_roll_characteristic: got %v, want %q", fm["power_roll_characteristic"], wantChar)
+	}
+	if fm["tier1"] != "5 + M or A damage" {
+		t.Errorf("tier1: got %v", fm["tier1"])
+	}
+	if fm["tier2"] != "8 + M or A damage" {
+		t.Errorf("tier2: got %v", fm["tier2"])
+	}
+	if fm["tier3"] != "11 + M or A damage" {
+		t.Errorf("tier3: got %v", fm["tier3"])
+	}
+}
+
 func TestAbilityParserBlockquoteBody(t *testing.T) {
 	// Test with blockquote-prefixed body (as it appears in real data)
 	body := `> *You channel power through your weapon to repel foes.*

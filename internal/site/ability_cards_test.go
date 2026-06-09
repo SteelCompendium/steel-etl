@@ -58,6 +58,42 @@ func TestRenderAbilityCard_MainPowerRoll(t *testing.T) {
 	}
 }
 
+// The SCC linking sweep wraps the Power-Roll header and its characteristics in
+// markdown links ("**[Power Roll](…) + [Might](…) or [Agility](…):**"). The card
+// must still detect the power-roll panel (glyph-badged tiers) AND render the
+// characteristic links, rather than dropping the line into a generic section.
+func TestRenderAbilityCard_LinkedPowerRollHeader(t *testing.T) {
+	fm := "action_type: Main action\nname: Protective Attack\nsubtype: signature\ntype: ability"
+	body := `
+*The strength of your assault makes it impossible for your foe to ignore you.*
+
+**[Power Roll](../../../rule/dice/power-roll.md) + [Might](../../../rule/character/might.md) or [Agility](../../../rule/character/agility.md):**
+
+- **≤11:** 5 + M or A damage
+- **12-16:** 8 + M or A damage
+- **17+:** 11 + M or A damage
+
+**Effect:** The target is taunted.
+`
+	got := renderAbilityCard(fm, body)
+	wants := []string{
+		`sc-ability__pr-head`,                  // power-roll panel detected, not a plain section
+		`<span class="pre">Power Roll +</span>`, // fixed eyebrow label
+		`>Might</a> or <a`,                      // characteristic links rendered (not escaped/dropped)
+		`data-tier="low"><span class="badge">!</span><span class="res">5 + M or A damage</span>`,
+		`data-tier="high"><span class="badge">#</span>`,
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("linked power-roll card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	// The header characteristics must NOT leak as escaped markdown link syntax.
+	if strings.Contains(got, "[Might]") {
+		t.Errorf("characteristic markdown should be rendered as a link, not escaped: %q", got)
+	}
+}
+
 func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 	fm := "action_type: Triggered\ncost: 11 Wrath\nname: Fulfill Your Destiny\ntype: ability"
 	body := `
