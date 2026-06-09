@@ -4,6 +4,14 @@ Instructions for adding scc: cross-reference links to the input document
 (`input/heroes/Draw Steel Heroes.md`). Designed to be picked up by any AI
 session and followed step by step.
 
+> **2026-06-09 — Skill-group landing-page in-prose sweep (done).** Linked every prose
+> reference to a skill group's self-named landing page (`skill.<group>/<group>`): the
+> multi-group phrases (e.g. "crafting or exploration skill groups" → each named group
+> linked, the shared trailing "skill group(s)" left plain) and the sibling "the <group>
+> group" shorthand forms (which an earlier pass had left plain). Skipped only the five
+> `##### <Group> Skills` definition paragraphs (self-ref) and generic "any/other skill
+> groups". +70 links (~17,457 → ~17,527); `gen` 0 WARN.
+
 > **2026-05-29 — Truncated-link fix pass.** Iterative linking order (broad terms
 > linked before narrow) left some links pointing at a truncated/wrong code. Fixed:
 > (1) annotated missing feature headers so their codes generate — 9 class "X Abilities"

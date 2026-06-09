@@ -3389,7 +3389,7 @@ When you build a culture, select its environment aspect from the following optio
 
 A [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture travels from place to place to survive. Members of a [nomadic](scc:mcdm.heroes.v1/culture/nomadic) culture might follow animal migrations or the weather, travel to sell their wares or services, or simply enjoy a restless lifestyle full of new experiences and peoples. Those who grow up in [nomadic](scc:mcdm.heroes.v1/culture/nomadic) cultures learn to navigate the wilderness and work closely with others to survive.
 
-**Skill Options:** One skill from the exploration or interpersonal skill groups. (*Quick Build:* [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate).)
+**Skill Options:** One skill from the [exploration](scc:mcdm.heroes.v1/skill.exploration/exploration) or [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) skill groups. (*Quick Build:* [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate).)
 
 <!-- @type: culture | @id: rural -->
 ##### Rural
@@ -3400,7 +3400,7 @@ Living among a small population, most folks in a [rural](scc:mcdm.heroes.v1/cult
 
 gets the sniffles, folks want an acolyte ready to wear the fancy robes should the worst occur.
 
-**Skill Options:** One skill from the crafting or lore skill groups. (*Quick Build:* [Nature](scc:mcdm.heroes.v1/skill.lore/nature).)
+**Skill Options:** One skill from the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* [Nature](scc:mcdm.heroes.v1/skill.lore/nature).)
 
 <!-- @type: culture | @id: secluded -->
 ##### Secluded
@@ -3409,21 +3409,21 @@ A [secluded](scc:mcdm.heroes.v1/culture/secluded) culture is based in one relati
 
 When people live together in close quarters, they typically learn to get along. They often spend much time in study or introspection, as there is not much else to do in seclusion.
 
-**Skill Options:** One skill from the interpersonal or lore skill groups. (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person).)
+**Skill Options:** One skill from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person).)
 
 <!-- @type: culture | @id: urban -->
 ##### Urban
 
 An [urban](scc:mcdm.heroes.v1/culture/urban) culture is always centered in a city. Such a culture might arise within the walls of [Capital](scc:mcdm.heroes.v1/rule.world/capital), a massive metropolis with a cosmopolitan population; within a network of caverns that hold an underground city; or in any other place where a large population lives relatively close together. The people of [urban](scc:mcdm.heroes.v1/culture/urban) cultures often learn to effectively misdirect others in order to navigate the crowds and the political machinations that can come with city life.
 
-**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness).)
+**Skill Options:** One skill from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) skill groups. (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness).)
 
 <!-- @type: culture | @id: wilderness -->
 ##### Wilderness
 
 A [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture doesn't try to tame the terrain in which its people live, whether desert, forest, swamp, tundra, ocean, or more exotic climes. Instead, the folk of such a culture thrive amid nature, taking their sustenance and shelter from the land. A wilderness culture might be a circle of druids protecting a remote wode, a band of brigands hiding out in desert caves, or a camp of [orc](scc:mcdm.heroes.v1/ancestry/orc) mercenaries who call the trackless mountains home. People in a [wilderness](scc:mcdm.heroes.v1/culture/wilderness) culture learn how to use the land for all they need to live, typically crafting their own tools, clothing, and more.
 
-**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance).)
+**Skill Options:** One skill from the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [exploration](scc:mcdm.heroes.v1/skill.exploration/exploration) skill groups. (*Quick Build:* [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance).)
 
 #### Organization
 
@@ -3440,7 +3440,7 @@ have one person at the top, though others might be ruled by a council. A trade g
 
 Those who thrive in [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) cultures don't simply follow the rules. They know how to use those rules to their advantage, either bending, changing, or reinterpreting policy to advance their own interests. Schmoozing with those who make the laws is often key to this approach. Others in a [bureaucratic](scc:mcdm.heroes.v1/culture/bureaucratic) culture might specialize in operating outside the strict regulations that govern the culture without getting caught.
 
-**Skill Options:** One skill from the interpersonal or intrigue skill groups. (*Quick Build:* [Persuade](scc:mcdm.heroes.v1/skill.interpersonal/persuade).)
+**Skill Options:** One skill from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) skill groups. (*Quick Build:* [Persuade](scc:mcdm.heroes.v1/skill.interpersonal/persuade).)
 
 <!-- @type: culture | @id: communal -->
 ##### Communal
@@ -3449,7 +3449,7 @@ A [communal](scc:mcdm.heroes.v1/culture/communal) culture is a place where all m
 
 Many [communal](scc:mcdm.heroes.v1/culture/communal) cultures operate outside settled lands, sticking to the wilds, a specific district in a larger settlement, city sewers, forgotten ruins, or other isolated places. For even when such cultures are harmless, their members know that outsiders might try to impose rules upon them if they live in the same place. As such, many folks in [communal](scc:mcdm.heroes.v1/culture/communal) cultures focus on fending for themselves while avoiding the danger that other groups can represent.
 
-**Skill Options:** One skill from the crafting or exploration skill groups. (*Quick Build:* [Jump](scc:mcdm.heroes.v1/skill.exploration/jump).)
+**Skill Options:** One skill from the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [exploration](scc:mcdm.heroes.v1/skill.exploration/exploration) skill groups. (*Quick Build:* [Jump](scc:mcdm.heroes.v1/skill.exploration/jump).)
 
 #### Upbringing
 
@@ -3469,14 +3469,14 @@ Your hero was raised by people who collect, study, and share books and other rec
 
 A hero with a [creative](scc:mcdm.heroes.v1/culture/creative) upbringing was raised among folk who create art or other works valuable enough to trade. A [creative](scc:mcdm.heroes.v1/culture/creative) culture might produce fine art such as dance, music, or sculpture, or more practical wares such as wagons, weapons, tools, or buildings. People in such cultures learn the value of quality crafting and attention to detail.
 
-**Skill Options:** The [Music](scc:mcdm.heroes.v1/skill.interpersonal/music) or [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), or one skill from the crafting group. (*Quick Build:* [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform).)
+**Skill Options:** The [Music](scc:mcdm.heroes.v1/skill.interpersonal/music) or [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), or one skill from the [crafting group](scc:mcdm.heroes.v1/skill.crafting/crafting). (*Quick Build:* [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform).)
 
 <!-- @type: culture | @id: labor -->
 ##### Labor
 
 Your hero came of age in a culture where people labored for a living. They might have been cultivators, typically raising crops or livestock on a farm. They might have harvested natural resources, whether by hunting, trapping, logging, or mining. Or they might have excelled at manual [labor](scc:mcdm.heroes.v1/culture/labor) tied to settlement and trade, such as construction, carting, loading cargo, and so forth. People with a [labor](scc:mcdm.heroes.v1/culture/labor) upbringing know the value of hard work.
 
-**Skill Options:** The [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing) skill (from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting)), the [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals) skill (from the interpersonal group), or a skill from the exploration group. (*Quick Build:* [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
+**Skill Options:** The [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing) skill (from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting)), the [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals) skill (from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), or a skill from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration). (*Quick Build:* [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
 
 <!-- @type: culture | @id: lawless -->
 ##### Lawless
@@ -3490,7 +3490,7 @@ Your hero grew up among folk who performed activities that other people—whethe
 
 A hero with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing was raised by warriors. These might have been the soldiers of an established army, a band of mercenaries, a guild of monster-slaying adventurers, or any other folk whose lives revolve around combat. Heroes with a [martial](scc:mcdm.heroes.v1/culture/martial) upbringing are always ready for a fight—and they know how to finish that fight.
 
-**Skill Options:** One of the following: [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing) or [Fletching](scc:mcdm.heroes.v1/skill.crafting/fletching) from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting); [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), or [Ride](scc:mcdm.heroes.v1/skill.exploration/ride) from the exploration group; [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate) from the interpersonal group; [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness) or [Track](scc:mcdm.heroes.v1/skill.intrigue/track) from the intrigue group; or [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters) or [Strategy](scc:mcdm.heroes.v1/skill.lore/strategy) from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore) (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate).)
+**Skill Options:** One of the following: [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing) or [Fletching](scc:mcdm.heroes.v1/skill.crafting/fletching) from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting); [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), or [Ride](scc:mcdm.heroes.v1/skill.exploration/ride) from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration); [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate) from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal); [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness) or [Track](scc:mcdm.heroes.v1/skill.intrigue/track) from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue); or [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters) or [Strategy](scc:mcdm.heroes.v1/skill.lore/strategy) from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore) (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate).)
 
 <!-- @type: culture | @id: noble -->
 ##### Noble
@@ -3680,7 +3680,7 @@ You worked as a spy for a government or organization. In defining your career, t
 
 You gain the following career benefits:
 
-**Skills:** The [Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak) skill from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue), plus one skill from the interpersonal group and one other skill from the intrigue group (*Quick Build:* [Disguise](scc:mcdm.heroes.v1/skill.intrigue/disguise), [Lie](scc:mcdm.heroes.v1/skill.interpersonal/lie), [Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak).)
+**Skills:** The [Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak) skill from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue), plus one skill from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and one other skill from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) (*Quick Build:* [Disguise](scc:mcdm.heroes.v1/skill.intrigue/disguise), [Lie](scc:mcdm.heroes.v1/skill.interpersonal/lie), [Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak).)
 
 **Languages:** Two languages
 
@@ -3707,7 +3707,7 @@ Career? Who needs a career when you're born into money! Or marry into it! Or con
 
 You gain the following career benefits:
 
-**Skills:** One skill from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and one skill from the lore group (*Quick Build:* [Brag](scc:mcdm.heroes.v1/skill.interpersonal/brag), [Society](scc:mcdm.heroes.v1/skill.lore/society).)
+**Skills:** One skill from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and one skill from the [lore group](scc:mcdm.heroes.v1/skill.lore/lore) (*Quick Build:* [Brag](scc:mcdm.heroes.v1/skill.interpersonal/brag), [Society](scc:mcdm.heroes.v1/skill.lore/society).)
 
 **Languages:** One language
 
@@ -3767,7 +3767,7 @@ You lived by going to a tavern, crossroads, city street, or other busy area and 
 
 You gain the following career benefits:
 
-**Skills:** The [Rumors](scc:mcdm.heroes.v1/skill.lore/rumors) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus one skill from the exploration group and one skill from the interpersonal group (*Quick Build:* [Empathize](scc:mcdm.heroes.v1/skill.interpersonal/empathize), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), [Rumors](scc:mcdm.heroes.v1/skill.lore/rumors).)
+**Skills:** The [Rumors](scc:mcdm.heroes.v1/skill.lore/rumors) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus one skill from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) and one skill from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) (*Quick Build:* [Empathize](scc:mcdm.heroes.v1/skill.interpersonal/empathize), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), [Rumors](scc:mcdm.heroes.v1/skill.lore/rumors).)
 
 **Languages:** Two languages
 
@@ -3794,7 +3794,7 @@ You once worked as a bandit, insurgent, smuggler, outlaw, or even as an assassin
 
 You gain the following career benefits:
 
-**Skills:** The [Criminal Underworld](scc:mcdm.heroes.v1/skill.lore/criminal-underworld) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two skills from the intrigue group (*Quick Build:* [Criminal Underworld](scc:mcdm.heroes.v1/skill.lore/criminal-underworld), Pick Lock, Pick Pocket.)
+**Skills:** The [Criminal Underworld](scc:mcdm.heroes.v1/skill.lore/criminal-underworld) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two skills from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) (*Quick Build:* [Criminal Underworld](scc:mcdm.heroes.v1/skill.lore/criminal-underworld), Pick Lock, Pick Pocket.)
 
 **Languages:** One language
 
@@ -3823,7 +3823,7 @@ You worked in a church, temple, or other religious institution as part of the cl
 
 You gain the following career benefits:
 
-**Skills:** The [Religion](scc:mcdm.heroes.v1/skill.lore/religion) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two more skills from the lore group (*Quick Build:* [Culture](scc:mcdm.heroes.v1/skill.lore/culture), [Magic](scc:mcdm.heroes.v1/skill.lore/magic), [Religion](scc:mcdm.heroes.v1/skill.lore/religion).)
+**Skills:** The [Religion](scc:mcdm.heroes.v1/skill.lore/religion) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two more skills from the [lore group](scc:mcdm.heroes.v1/skill.lore/lore) (*Quick Build:* [Culture](scc:mcdm.heroes.v1/skill.lore/culture), [Magic](scc:mcdm.heroes.v1/skill.lore/magic), [Religion](scc:mcdm.heroes.v1/skill.lore/religion).)
 
 **[Project Points](scc:mcdm.heroes.v1/rule.downtime/project-points):** 240
 
@@ -3851,7 +3851,7 @@ You ventured into uncharted areas and made your living as a cartographer, resear
 
 You gain the following career benefits:
 
-**Skills:** The [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate) skill (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two more skills from the exploration group (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Heal](scc:mcdm.heroes.v1/skill.exploration/heal), [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate).)
+**Skills:** The [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate) skill (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two more skills from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Heal](scc:mcdm.heroes.v1/skill.exploration/heal), [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate).)
 
 **Languages:** Two languages
 
@@ -3878,7 +3878,7 @@ You grew crops or cared for livestock. In defining your career, think about the 
 
 You gain the following career benefits:
 
-**Skills:** The [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), plus two skills from the exploration group (*Quick Build:* [Drive](scc:mcdm.heroes.v1/skill.exploration/drive), [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals), [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
+**Skills:** The [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), plus two skills from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) (*Quick Build:* [Drive](scc:mcdm.heroes.v1/skill.exploration/drive), [Handle Animals](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals), [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
 
 **Languages:** One language
 
@@ -3936,7 +3936,7 @@ You worked as a [farmer](scc:mcdm.heroes.v1/career/farmer), builder, clothes was
 
 You gain the following career benefits:
 
-**Skills:** The [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance) skill (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two skills from either the crafting group or the exploration group (*Quick Build:* [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
+**Skills:** The [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance) skill (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two skills from either the [crafting group](scc:mcdm.heroes.v1/skill.crafting/crafting) or the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) (*Quick Build:* [Blacksmithing](scc:mcdm.heroes.v1/skill.crafting/blacksmithing), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance), [Lift](scc:mcdm.heroes.v1/skill.exploration/lift).)
 
 **Languages:** One language
 
@@ -3965,7 +3965,7 @@ For long years, you studied magic under the mentorship of a more experienced mag
 
 You gain the following career benefits:
 
-**Skills:** The [Magic](scc:mcdm.heroes.v1/skill.lore/magic) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two other skills from the lore group (*Quick Build:* [Magic](scc:mcdm.heroes.v1/skill.lore/magic), [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters), [Timescape](scc:mcdm.heroes.v1/skill.lore/timescape).)
+**Skills:** The [Magic](scc:mcdm.heroes.v1/skill.lore/magic) skill (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus two other skills from the [lore group](scc:mcdm.heroes.v1/skill.lore/lore) (*Quick Build:* [Magic](scc:mcdm.heroes.v1/skill.lore/magic), [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters), [Timescape](scc:mcdm.heroes.v1/skill.lore/timescape).)
 
 **Languages:** One language
 
@@ -3994,7 +3994,7 @@ You can sing, act, or dance well enough that people actually pay you to do it. I
 
 You gain the following career benefits:
 
-**Skills:** The [Music](scc:mcdm.heroes.v1/skill.interpersonal/music) or [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), plus two more skills from the interpersonal group (*Quick Build:* [Flirt](scc:mcdm.heroes.v1/skill.interpersonal/flirt), [Music](scc:mcdm.heroes.v1/skill.interpersonal/music), [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform).)
+**Skills:** The [Music](scc:mcdm.heroes.v1/skill.interpersonal/music) or [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform) skill (from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal)), plus two more skills from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) (*Quick Build:* [Flirt](scc:mcdm.heroes.v1/skill.interpersonal/flirt), [Music](scc:mcdm.heroes.v1/skill.interpersonal/music), [Perform](scc:mcdm.heroes.v1/skill.interpersonal/perform).)
 
 **[Renown](scc:mcdm.heroes.v1/rule.resource/renown):** +2
 
@@ -4081,7 +4081,7 @@ You worked on a ship, whether a merchant cog, a mercenary or military craft, or 
 
 You gain the following career benefits:
 
-**Skills:** Swim (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two more skills from the exploration group (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Gymnastics](scc:mcdm.heroes.v1/skill.exploration/gymnastics), [Swim](scc:mcdm.heroes.v1/skill.exploration/swim).)
+**Skills:** Swim (from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration)), plus two more skills from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) (*Quick Build:* [Climb](scc:mcdm.heroes.v1/skill.exploration/climb), [Gymnastics](scc:mcdm.heroes.v1/skill.exploration/gymnastics), [Swim](scc:mcdm.heroes.v1/skill.exploration/swim).)
 
 **Languages:** Two languages
 
@@ -4108,7 +4108,7 @@ In your formative years, you fought tirelessly in skirmishes and campaigns again
 
 You gain the following career benefits:
 
-**Skills:** One skill from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration) and one skill from the intrigue group (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance).)
+**Skills:** One skill from the [exploration skill group](scc:mcdm.heroes.v1/skill.exploration/exploration) and one skill from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness), [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance).)
 
 **Languages:** Two languages
 
@@ -4137,7 +4137,7 @@ You protected a wild region from those who sought to harm it, such as poachers a
 
 You gain the following career benefits:
 
-**Skills:** Nature (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus one skill from the exploration group and one skill from the intrigue group (*Quick Build:*  [Nature](scc:mcdm.heroes.v1/skill.lore/nature), Navigate, Track.)
+**Skills:** Nature (from the [lore skill group](scc:mcdm.heroes.v1/skill.lore/lore)), plus one skill from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration) and one skill from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) (*Quick Build:*  [Nature](scc:mcdm.heroes.v1/skill.lore/nature), Navigate, Track.)
 
 **Languages:** One language
 
@@ -4167,7 +4167,7 @@ You served as an officer of the law for a local government. You might have been 
 
 You gain the following career benefits:
 
-**Skills:** Alertness (from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue)), plus two more skills from the intrigue group (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness), [Search](scc:mcdm.heroes.v1/skill.intrigue/search), Track.)
+**Skills:** Alertness (from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue)), plus two more skills from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) (*Quick Build:* [Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness), [Search](scc:mcdm.heroes.v1/skill.intrigue/search), Track.)
 
 **Languages:** Two languages
 
@@ -4740,7 +4740,7 @@ As a [censor](scc:mcdm.heroes.v1/class/censor), you're at your best against the 
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 12
 
-**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate), [Religion](scc:mcdm.heroes.v1/skill.lore/religion).)
+**Skills:** Choose any two skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* [Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate), [Religion](scc:mcdm.heroes.v1/skill.lore/religion).)
 
 ###### Censor Advancement Table
 
@@ -6197,7 +6197,7 @@ The power of the gods flows through you! As a vessel for [divine power](scc:mcdm
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** Choose any two skills from the interpersonal or lore skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Religion.)
+**Skills:** Choose any two skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). (*Quick Build:* [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Religion.)
 
 ###### Conduit Advancement Table
 
@@ -7992,7 +7992,7 @@ Air for movement. Earth for permanence. Fire for destruction. Water for change. 
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the Magic skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any three skills from the crafting or lore skill groups. (*Quick Build:* Alchemy, Blacksmithing, History, Magic.)
+**Skills:** You gain the Magic skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any three skills from the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* Alchemy, Blacksmithing, History, Magic.)
 
 ###### Elementalist Advancement Table
 
@@ -9548,7 +9548,7 @@ You do not temper the heat of battle within you. You unleash it! Your experience
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 10
 
-**Skills:** You gain the [Nature](scc:mcdm.heroes.v1/skill.lore/nature) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* Alertness, Jump, Nature.)
+**Skills:** You gain the [Nature](scc:mcdm.heroes.v1/skill.lore/nature) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the [exploration](scc:mcdm.heroes.v1/skill.exploration/exploration) or [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) skill groups. (*Quick Build:* Alertness, Jump, Nature.)
 
 ###### Fury Advancement Table
 
@@ -11138,7 +11138,7 @@ The mind is not separate from the body. Perfection of one requires perfection of
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the [Psionics](scc:mcdm.heroes.v1/skill.lore/psionics) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Psionics, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Timescape.)
+**Skills:** You gain the [Psionics](scc:mcdm.heroes.v1/skill.lore/psionics) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* Psionics, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Timescape.)
 
 ###### Null Advancement Table
 
@@ -11165,9 +11165,9 @@ As a 1st-level [null](scc:mcdm.heroes.v1/class/null), you gain the following fea
 
 Through extensive physical and psionic training, you have learned to unlock the full potential of your body. As you shape the growth of your power, you choose a [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition) from the following options, each of which grants you a skill. (*Quick Build:* Chronokinetic and the [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters) skill.)
 
-- **Chronokinetic:** Your training unmoors you from temporal reality, allowing you to use the flow of time as another dimension that all things move through. You gain one skill from the lore group.
-- **Cryokinetic:** You can tap into absolute cold, the most essential energy of myriad manifolds, and manifest its effects in your body. You gain one skill from the crafting group.
-- **Metakinetic:** You learn to see through the illusions of the universe to more fully understand your body and its psionic potential. You gain one skill from the exploration group.
+- **Chronokinetic:** Your training unmoors you from temporal reality, allowing you to use the flow of time as another dimension that all things move through. You gain one skill from the [lore group](scc:mcdm.heroes.v1/skill.lore/lore).
+- **Cryokinetic:** You can tap into absolute cold, the most essential energy of myriad manifolds, and manifest its effects in your body. You gain one skill from the [crafting group](scc:mcdm.heroes.v1/skill.crafting/crafting).
+- **Metakinetic:** You learn to see through the illusions of the universe to more fully understand your body and its psionic potential. You gain one skill from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration).
 
 Your [null tradition](scc:mcdm.heroes.v1/feature.null.level-1/null-tradition) is your [subclass](scc:mcdm.heroes.v1/rule.general/subclass), and your choice of tradition determines many of the features you'll gain as you gain new levels.
 
@@ -12428,7 +12428,7 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the Hide and Sneak skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any five skills from Criminal Underworld or the skills of the exploration, interpersonal, or intrigue skill groups. (*Quick Build:*  Criminal Underworld, Hide, Lie, Pick Lock, Pick Pocket, Sabotage, Sneak.)
+**Skills:** You gain the Hide and Sneak skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any five skills from Criminal Underworld or the skills of the [exploration](scc:mcdm.heroes.v1/skill.exploration/exploration), [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal), or [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) skill groups. (*Quick Build:*  Criminal Underworld, Hide, Lie, Pick Lock, Pick Pocket, Sabotage, Sneak.)
 
 ###### Shadow Advancement Table
 
@@ -13790,7 +13790,7 @@ You command any room you walk into. While you are present during a negotiation, 
 <!-- @type: feature -->
 ##### Covert Operations
 
-While in your presence or working according to your plans, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) using any skill from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue). Additionally, you can use the [Lead](scc:mcdm.heroes.v1/skill.interpersonal/lead) skill to assist another creature with any [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the intrigue group.
+While in your presence or working according to your plans, each of your allies gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) using any skill from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue). Additionally, you can use the [Lead](scc:mcdm.heroes.v1/skill.interpersonal/lead) skill to assist another creature with any [test](scc:mcdm.heroes.v1/rule.test/test) made using a skill from the [intrigue group](scc:mcdm.heroes.v1/skill.intrigue/intrigue).
 
 At the Director's discretion, you and your allies can use skills from the [intrigue skill group](scc:mcdm.heroes.v1/skill.intrigue/intrigue) to attempt research or reconnaissance during a negotiation instead of outside of a negotiation.
 
@@ -14875,7 +14875,7 @@ Arare few people are born with the potential to harness psionic power, but only 
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the Psionics and [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person) skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the interpersonal or lore skill groups. (*Quick Build:* Empathize, Psionics, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Timescape.)
+**Skills:** You gain the Psionics and [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person) skills (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose any two skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* Empathize, Psionics, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Timescape.)
 
 ###### Talent Advancement Table
 
@@ -16028,7 +16028,7 @@ As a 7th-level [talent](scc:mcdm.heroes.v1/class/talent), you gain the following
 <!-- @type: feature -->
 #### Ancestral Memory
 
-Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a number of skills you have up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and replace them with an equal number of skills from the interpersonal and lore skill groups. These replacements last until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
+Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can choose a number of skills you have up to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score and replace them with an equal number of skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. These replacements last until the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature -->
 #### Cascading Strain
@@ -16420,7 +16420,7 @@ There is no visible text in the image provided. The image appears to show a deco
 
 **[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose two skills from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and one skill from the intrigue or lore skill groups. (*Quick Build:* Brag, Flirt, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Rumors.)
+**Skills:** You gain the [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person) skill (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). Then choose two skills from the [interpersonal skill group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and one skill from the [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups. (*Quick Build:* Brag, Flirt, [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person), Rumors.)
 
 ###### Troubadour Advancement Table
 
@@ -16497,7 +16497,7 @@ You can use and gain the benefits of a kit. See Chapter 6: [Kits](scc:mcdm.heroe
 <!-- @type: feature -->
 #### Scene Partner
 
-Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) to interact with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) using a skill from the interpersonal group, you can form a bond with that [NPC](scc:mcdm.heroes.v1/rule.general/npc). When you enter into a negotiation with a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc), their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest by 1, you instead increase their interest by 2 (to a maximum of 5).
+Whenever you obtain a success on a [test](scc:mcdm.heroes.v1/rule.test/test) to interact with an [NPC](scc:mcdm.heroes.v1/rule.general/npc) using a skill from the [interpersonal group](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal), you can form a bond with that [NPC](scc:mcdm.heroes.v1/rule.general/npc). When you enter into a negotiation with a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc), their patience increases by 1 (to a maximum of 5). Additionally, the first time during a negotiation that you personally make an argument that would increase a bonded [NPC](scc:mcdm.heroes.v1/rule.general/npc)'s interest by 1, you instead increase their interest by 2 (to a maximum of 5).
 
 You can have a number of bonds active equal to your level. When you form a bond with a new [NPC](scc:mcdm.heroes.v1/rule.general/npc) that would exceed the limit, you must choose which of your active bonds to lose.
 
@@ -18908,7 +18908,7 @@ During [montage tests](scc:mcdm.heroes.v1/rule.test/montage-test), whenever you 
 <!-- @type: perk -->
 #### Team Leader
 
-At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make [tests](scc:mcdm.heroes.v1/rule.test/test) as if they also had any skill you have from the exploration group.
+At the start of a [group test](scc:mcdm.heroes.v1/rule.test/group-test) or [montage test](scc:mcdm.heroes.v1/rule.test/montage-test), you can spend a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). If you do, all participants make [tests](scc:mcdm.heroes.v1/rule.test/test) as if they also had any skill you have from the [exploration group](scc:mcdm.heroes.v1/skill.exploration/exploration).
 
 <!-- @type: perk -->
 #### Teamwork
@@ -20010,7 +20010,7 @@ You were captured by the psionic beings known as voiceless talkers (see *Draw St
 
 You were apprenticed to learn a crafting trade. Your mentor said you had a special gift and might well become a master of your craft someday. But before your training was complete, your mentor was killed.
 
-**Benefit:** You have one skill of your choice from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting). Additionally, choose one of your skills from the crafting group. You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) that uses that skill.
+**Benefit:** You have one skill of your choice from the [crafting skill group](scc:mcdm.heroes.v1/skill.crafting/crafting). Additionally, choose one of your skills from the [crafting group](scc:mcdm.heroes.v1/skill.crafting/crafting). You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on any [test](scc:mcdm.heroes.v1/rule.test/test) that uses that skill.
 
 **Drawback:** Whoever killed your mentor cursed you. You take a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any [test](scc:mcdm.heroes.v1/rule.test/test) that doesn't use one of your skills.
 
@@ -22831,7 +22831,7 @@ Since [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) don't use s
 
 #### Skills and Project Rolls
 
-You can apply skills from either the crafting or lore skill groups to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) that directly relate to a downtime project (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). For example, you could use the Tailoring skill for [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) must be directly related to the project.
+You can apply skills from either the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) that directly relate to a downtime project (see Skills in Chapter 9: [Tests](scc:mcdm.heroes.v1/chapter/tests)). For example, you could use the Tailoring skill for [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) related to making a magic cloak, and you could use the History skill while attempting to research the location of an ancient battle where a magic crown was lost. At the Director's discretion, you can also use skills from other skill groups, but a skill used for a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) must be directly related to the project.
 
 #### Language and Project Rolls
 
@@ -26149,7 +26149,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** Choose one of the following benefits:
 
-- *Easy Marks:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using skills from the interpersonal and intrigue skill groups when influencing members of a community that you have saved.
+- *Easy Marks:* You gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using skills from the [interpersonal](scc:mcdm.heroes.v1/skill.interpersonal/interpersonal) and [intrigue](scc:mcdm.heroes.v1/skill.intrigue/intrigue) skill groups when influencing members of a community that you have saved.
 - *Local Fame:* You earn 1 [Renown](scc:mcdm.heroes.v1/rule.resource/renown).
 - *A New Dawn:* Each time you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite) while in a community you have saved, the party gains a [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token). This [hero token](scc:mcdm.heroes.v1/rule.resource/hero-token) disappears at the end of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite) if it hasn't been used.
 
@@ -26206,7 +26206,7 @@ Additionally, the Director assigns you one of the following benefits, as appropr
 
 **Effect:** The faction will perform one favor for the party, provided it doesn't interfere with the faction's goals.
 
-Additionally, the faction is a good source of information. The Director chooses a skill from the crafting or lore skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a [noble](scc:mcdm.heroes.v1/title/noble) house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill.
+Additionally, the faction is a good source of information. The Director chooses a skill from the [crafting](scc:mcdm.heroes.v1/skill.crafting/crafting) or [lore](scc:mcdm.heroes.v1/skill.lore/lore) skill groups appropriate to the faction, such as the Criminal Underworld skill for an outlaw gang, the Blacksmithing skill for a blacksmith's guild, or the Society skill for a [noble](scc:mcdm.heroes.v1/title/noble) house. While in a settlement where the faction has a presence, you gain this skill if you don't already have it. If you already have the skill, you instead gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made using the skill.
 
 <!-- @type: title -->
 #### Presumed Dead
