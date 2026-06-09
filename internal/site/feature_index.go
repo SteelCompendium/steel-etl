@@ -303,9 +303,12 @@ func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
 			it.Cost = "Signature"
 		}
 		it.Keywords = parseFrontmatterList(fm, "keywords")
-		it.Distance = strings.TrimSpace(parseFrontmatterField(fm, "distance"))
-		it.Targets = strings.TrimSpace(firstField(fm, "target", "targets"))
-		it.Flavor = strings.TrimSpace(parseFrontmatterField(fm, "flavor"))
+		for i, k := range it.Keywords {
+			it.Keywords[i] = plainInline(k)
+		}
+		it.Distance = plainInline(strings.TrimSpace(parseFrontmatterField(fm, "distance")))
+		it.Targets = plainInline(strings.TrimSpace(firstField(fm, "target", "targets")))
+		it.Flavor = plainInline(strings.TrimSpace(parseFrontmatterField(fm, "flavor")))
 	} else {
 		// Traits use the trait accent consistently. Flavor + the sub-feature
 		// markers come from the rendered .sc-trait HTML / its data-* attributes
@@ -352,6 +355,17 @@ func sourceFromMeta(fm string) string {
 // ── build-time preview card markup (mirrors SCBrowse.card, context=false) ─────
 
 var prevDigitRe = regexp.MustCompile(`\d+`)
+
+// plainInline reduces inline markdown links to their display text:
+// "[Melee](scc:…/melee)" → "Melee". Keyword/distance/flavor data carries SCC
+// cross-reference links, but a preview card is itself an <a> (the whole card
+// links to the ability), so nesting keyword <a> links inside it is invalid HTML.
+// The clickable cross-ref lives on the full ability card; here we show plain
+// names — which also keeps the JSON data island, its facet filters, and search
+// text clean (they consume the same struct fields).
+func plainInline(s string) string {
+	return mdLinkRe.ReplaceAllString(s, "$1")
+}
 
 // actionByKey maps an action key → {eyebrow label, crest glyph}, mirroring the
 // ACTIONS map in steel-feature-browser.js / actionInfo() here.

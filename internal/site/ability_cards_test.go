@@ -126,6 +126,34 @@ func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 	}
 }
 
+// Keyword chips can carry SCC cross-reference links (Melee, Ranged, Strike, …).
+// The card is raw HTML MkDocs never post-processes, so a chip's markdown link
+// must be resolved to a real <a> (like flavor/tiers) — not left as literal
+// "[Ranged](…)" text that renders verbatim in the browser.
+func TestRenderAbilityCard_KeywordLinks(t *testing.T) {
+	fm := "action_type: Main action\nname: Holy Strike\ntype: ability"
+	body := `
+| **[Melee](../../../rule/combat/melee.md), [Strike](../../../rule/combat/strike.md), Weapon** | **Main action** |
+|----|----:|
+| **📏 Melee 1** | **🎯 One creature** |
+`
+	got := renderAbilityCard(fm, body)
+	if strings.Contains(got, "[Melee]") || strings.Contains(got, "[Strike]") {
+		t.Errorf("keyword chip leaked literal markdown link syntax\n--- got ---\n%s", got)
+	}
+	wants := []string{
+		`<span class="sc-ability__chip"><a href=`,
+		`>Melee</a></span>`,
+		`>Strike</a></span>`,
+		`<span class="sc-ability__chip">Weapon</span>`, // plain keyword unchanged
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+}
+
 func TestRenderAbilityCard_ProseTrait(t *testing.T) {
 	fm := "name: Remember Your Oath\ntype: trait"
 	body := `

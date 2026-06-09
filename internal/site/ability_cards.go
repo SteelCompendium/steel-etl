@@ -229,7 +229,7 @@ func renderAbilityCard(fm, body string) string {
 	if len(keywords) > 0 {
 		b.WriteString("<div class=\"sc-ability__kw\">")
 		for _, k := range keywords {
-			fmt.Fprintf(&b, "<span class=\"sc-ability__chip\">%s</span>", html.EscapeString(k))
+			fmt.Fprintf(&b, "<span class=\"sc-ability__chip\">%s</span>", richInline(k))
 		}
 		b.WriteString("</div>\n")
 	}

@@ -96,6 +96,49 @@ func TestExtractPreviewItem_Ability(t *testing.T) {
 	}
 }
 
+// Keywords/distance/flavor carry SCC cross-reference links in the data (which
+// the site rewrites to ".md" relative links). A preview card is itself an <a>,
+// so it can't nest keyword <a> links — the values must be reduced to plain
+// display text (no literal "[Melee](…)" leaking through).
+func TestExtractPreviewItem_LinkedKeywordsStripped(t *testing.T) {
+	fm := "---\nname: Holy Strike\ntype: ability\nclass: censor\nlevel: \"1\"\n" +
+		"action_type: Main action\n" +
+		"distance: '[Melee](../../../../rule/combat/melee.md) 1'\n" +
+		"target: One creature\n" +
+		"flavor: You amplify the power of your [judgment](../level-1/judgment.md).\n" +
+		"keywords:\n    - '[Melee](../../../../rule/combat/melee.md)'\n" +
+		"    - '[Strike](../../../../rule/combat/strike.md)'\n    - Weapon\n---\n\n" +
+		"<article class=\"sc-ability\"></article>\n"
+	fmData, body := splitFrontmatter(fm)
+	it := extractPreviewItem(fmData, body, "ability", "Censor")
+
+	if got := strings.Join(it.Keywords, ","); got != "Melee,Strike,Weapon" {
+		t.Errorf("keywords=%q want plain display text", got)
+	}
+	if it.Distance != "Melee 1" {
+		t.Errorf("distance=%q want 'Melee 1'", it.Distance)
+	}
+	if strings.Contains(it.Flavor, "[judgment]") || strings.Contains(it.Flavor, "](") {
+		t.Errorf("flavor leaked link markdown: %q", it.Flavor)
+	}
+
+	it.Href = "holy-strike/"
+	html := renderPrevCard(it, false)
+	if strings.Contains(html, "](") || strings.Contains(html, "[Melee") {
+		t.Errorf("preview card leaked link markdown\n%s", html)
+	}
+	for _, want := range []string{
+		`<span class="sc-prev__chip">Melee</span>`,
+		`<span class="sc-prev__chip">Strike</span>`,
+		`<span class="sc-prev__chip">Weapon</span>`,
+		`Melee <b>1</b>`,
+	} {
+		if !strings.Contains(html, want) {
+			t.Errorf("preview card missing %q\n%s", want, html)
+		}
+	}
+}
+
 func TestExtractPreviewItem_AbilityNumericCost(t *testing.T) {
 	fm, body := splitFrontmatter(abilityLeaf("Censure", "Triggered", "3 Wrath"))
 	it := extractPreviewItem(fm, body, "ability", "Censor")
