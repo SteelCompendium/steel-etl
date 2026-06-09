@@ -129,7 +129,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Argument](scc:mcdm.heroes.v1/chapter/negotiation):** A plea the heroes make during a negotiation to convince one or more [NPCs](scc:mcdm.heroes.v1/rule.general/npc) to work with them.
 
-**[Artifact](scc:mcdm.heroes.v1/chapter/treasures):** A powerful treasure that can unbalance the game.
+**[Artifact](scc:mcdm.heroes.v1/chapter/rewards):** A powerful treasure that can unbalance the game.
 
 **[Artisan](scc:mcdm.heroes.v1/career/artisan):** A [follower](scc:mcdm.heroes.v1/rule.general/follower) who undertakes [crafting projects](scc:mcdm.heroes.v1/rule.downtime/crafting-project) for a hero.
 
@@ -151,7 +151,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Capital](scc:mcdm.heroes.v1/rule.world/capital):** The largest city in [Orden](scc:mcdm.heroes.v1/rule.world/orden), filled with art, culture, and intrigue.
 
-**[Career](scc:mcdm.heroes.v1/chapter/careers):** The job a hero had before becoming a hero.
+**[Career](scc:mcdm.heroes.v1/chapter/background):** The job a hero had before becoming a hero.
 
 **[Catch Breath](scc:mcdm.heroes.v1/feature.common.maneuvers/catch-breath) Maneuver:** A maneuver that allows a hero to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) and regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to their [recovery value](scc:mcdm.heroes.v1/rule.health/recoveries).
 
@@ -197,7 +197,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Cube](scc:mcdm.heroes.v1/rule.combat/cube):** When an ability or other effect creates a [cube](scc:mcdm.heroes.v1/rule.combat/cube), that area is expressed as "X [cube](scc:mcdm.heroes.v1/rule.combat/cube)." The number X is the length of each of the area's sides. A [cube](scc:mcdm.heroes.v1/rule.combat/cube) effect might last only as long as it takes to affect its targets, or it might have a duration specified by the effect.
 
-**[Culture](scc:mcdm.heroes.v1/chapter/cultures):** The community in which a hero was raised.
+**[Culture](scc:mcdm.heroes.v1/chapter/background):** The community in which a hero was raised.
 
 **d3:** A three-sided die, often rolled using a d6.
 
@@ -489,7 +489,7 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Size](scc:mcdm.heroes.v1/rule.character/size):** An indication of a creature's space and their overall weight and height relative to other creatures.
 
-**[Skill](scc:mcdm.heroes.v1/chapter/skills):** Special knowledge or training that can be applied to a [test](scc:mcdm.heroes.v1/rule.test/test). When a skill applies to a [test](scc:mcdm.heroes.v1/rule.test/test), it grants a +2 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
+**[Skill](scc:mcdm.heroes.v1/chapter/tests):** Special knowledge or training that can be applied to a [test](scc:mcdm.heroes.v1/rule.test/test). When a skill applies to a [test](scc:mcdm.heroes.v1/rule.test/test), it grants a +2 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 **[Slide](scc:mcdm.heroes.v1/movement/forced-movement):** A form of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) that slides a target in any direction, moving them along any horizontal line.
 
@@ -545,13 +545,13 @@ Whenever you see a rule or game term in the glossary index underlined in cross-r
 
 **[Tier 3](scc:mcdm.heroes.v1/rule.dice/tier-outcome):** The best [tier outcome](scc:mcdm.heroes.v1/rule.dice/tier-outcome) of a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) (other than a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit)), achieved when the total of the roll is 17 or higher.
 
-**[Title](scc:mcdm.heroes.v1/chapter/titles):** A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.
+**[Title](scc:mcdm.heroes.v1/chapter/rewards):** A special reward that a hero can earn while adventuring, and which grants benefits or new abilities.
 
 **[Time Raider](scc:mcdm.heroes.v1/ancestry/time-raider):** An ancestry of four-armed psionic folk with ocular sensors instead of eyes.
 
 **[Timescape](scc:mcdm.heroes.v1/rule.world/orden):** A multiverse of worlds, also known as manifolds, connected by the Sea of Stars.
 
-**[Treasure](scc:mcdm.heroes.v1/chapter/treasures):** A piece of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) equipment, from weapons and armor to [implements](scc:mcdm.heroes.v1/rule.treasure/implement) and more.
+**[Treasure](scc:mcdm.heroes.v1/chapter/rewards):** A piece of [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) equipment, from weapons and armor to [implements](scc:mcdm.heroes.v1/rule.treasure/implement) and more.
 
 **[Triggered Action](scc:mcdm.heroes.v1/rule.combat/triggered-action):** An action a creature can use on any [turn](scc:mcdm.heroes.v1/rule.combat/turn), including their own, but only when a specific trigger occurs. Each creature can use one triggered action per round.
 
@@ -770,7 +770,7 @@ We also liked capping [edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc
 
 While [edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane) cover most circumstantial effects that can have an impact on a power roll, a few rules add numeric bonuses or penalties to power rolls. Bonus and penalty values are specified in the rules that impose them, and are calculated independently of [edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane), and before [edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane) are factored into a power roll. There is no limit to the number of bonuses or penalties that can apply to a power roll, and bonuses and penalties always add together.
 
-Though it might sound as if the math with bonuses and penalties can get confusing, fear not! Bonuses and penalties are rare except in the case of skills, which appear on your character sheet (see [Skills](scc:mcdm.heroes.v1/chapter/skills) for more information).
+Though it might sound as if the math with bonuses and penalties can get confusing, fear not! Bonuses and penalties are rare except in the case of skills, which appear on your character sheet (see [Skills](scc:mcdm.heroes.v1/chapter/tests) for more information).
 
 #### Automatic Tier Outcomes
 
@@ -1147,7 +1147,7 @@ Choose or create your hero's culture. Although ancestry gives your hero any numb
 
 #### 4. Career
 
-Choose your hero's career, which describes what you did for a living before you became a hero. A career provides you with skills, an inciting incident that precipitated your adventuring career, and a perk that lets you customize your hero. It might also grant you languages, [Renown](scc:mcdm.heroes.v1/rule.resource/renown), wealth, or the potential to undertake crafting and research. See [Careers](scc:mcdm.heroes.v1/chapter/careers) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) for more information.
+Choose your hero's career, which describes what you did for a living before you became a hero. A career provides you with skills, an inciting incident that precipitated your adventuring career, and a perk that lets you customize your hero. It might also grant you languages, [Renown](scc:mcdm.heroes.v1/rule.resource/renown), wealth, or the potential to undertake crafting and research. See [Careers](scc:mcdm.heroes.v1/chapter/background) in Chapter 4: [Background](scc:mcdm.heroes.v1/chapter/background) for more information.
 
 > **I Speak Their Language**
 >
@@ -3310,7 +3310,6 @@ What makes a hero? Is their desire to stand up for the innocent and protect othe
 
 No. A hero's life experience and background make them what they are. That background starts with the culture in which a hero was raised, and is threaded through the career that led them to a life of adventuring.
 
-<!-- @type: chapter | @id: cultures -->
 ## Culture
 
 A hero's culture describes the beliefs, customs, values, and way of life held by the community in which they were raised. This community provides life experiences that give a character some of their game statistics. Even if a hero doesn't share their culture's values, those values shaped their early development and way of life. In fact, some people become heroes primarily from the rejection of the ways of their culture.
@@ -3610,7 +3609,6 @@ The Dead Languages table shows some of the dead languages of [Orden](scc:mcdm.he
 
 Khamish is still spoken by lizardfolk and other creatures connected to the beast lords. However, the forms spoken today only vaguely resemble their original tongues and have been adapted for use within their speakers' own circles.
 
-<!-- @type: chapter | @id: careers -->
 ## Careers
 
 Being a hero isn't a job. It's a calling. But before you answered that call, you had a different job or vocation that paid the bills. Thank the gods for that, because the experience you gained in that career is now helping you save lives and slay monsters.
@@ -20634,7 +20632,6 @@ Reactive [tests](scc:mcdm.heroes.v1/rule.test/test) are typically made in the fo
 >
 > Some Directors prefer to make the [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) for reactive [tests](scc:mcdm.heroes.v1/rule.test/test) for the heroes rather than asking the players to do so. This allows the Director to make the rolls when appropriate for hidden objects, creatures, motivations, and information without tipping off the players that there is information to be gained. Having the Director roll requires the Director to have everyone's [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and skills recorded (whether physically or digitally) for easy reference.
 
-<!-- @type: chapter | @id: skills -->
 ### Skills
 
 Skills represent the different specializations a hero has outside of attacking, defending, and using their ancestry features, class features, and equipment. Whenever you make a [test](scc:mcdm.heroes.v1/rule.test/test), having a particular skill associated with the [test](scc:mcdm.heroes.v1/rule.test/test) increases your chance of success.
@@ -23835,7 +23832,6 @@ You revitalize your spirit by spending time with people you love who you haven't
 
 Virtue is its own reward... but wouldn't a magic sword also be kind of nice? As heroes adventure, they find and craft treasures even as they are awarded titles, earn [renown](scc:mcdm.heroes.v1/rule.resource/renown), attract [followers](scc:mcdm.heroes.v1/rule.general/follower), and amass wealth. This chapter presents all the various rewards a hero can earn during their career! As you read over the rewards within, make note of the treasures and titles your hero would like to earn. Then you can start pursuing them during your adventures.
 
-<!-- @type: chapter | @id: treasures -->
 ## Treasures
 
 You've helped save the world! Or at least a corner of that world important to you. Now you deserve the treasures that can help you do so even more efficiently next time. So claim your magic sword, psionic shield, and Catapult Dust, and ride to your next adventure!
@@ -25129,7 +25125,7 @@ Like [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket), leveled treasures can
 
 #### Leveled Benefits
 
-Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/treasures) are cumulative.
+Each [leveled treasure](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) has benefits that you gain at 1st, 5th, and 9th levels. You can't use a treasure's benefit until you achieve the appropriate benefits level. [Leveled benefits](scc:mcdm.heroes.v1/chapter/rewards) are cumulative.
 
 #### Carry Three Safely
 
@@ -25148,7 +25144,7 @@ It's fine to own or possess more than three [leveled treasures](scc:mcdm.heroes.
 <!-- @type: treasure-group | @treasure-type: armor -->
 #### Leveled Armor Treasures
 
-Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
+Magic and psionic armor and shields are the primary tools of heroes always ready to hurl themselves into combat. This section presents [leveled armor treasures](scc:mcdm.heroes.v1/chapter/rewards) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Adaptive Second Skin of Toxins
@@ -25363,7 +25359,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 <!-- @type: treasure-group | @treasure-type: implement -->
 #### Leveled Implement Treasures
 
-[Implements](scc:mcdm.heroes.v1/rule.treasure/implement) are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
+[Implements](scc:mcdm.heroes.v1/rule.treasure/implement) are pieces of jewelry, orbs, staffs, tomes, wands, and other objects used by magic and psionic heroes to focus their power. This section presents [leveled implement treasures](scc:mcdm.heroes.v1/chapter/rewards) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Abjurer's Bastion
@@ -25494,7 +25490,7 @@ Magic and psionic armor and shields are the primary tools of heroes always ready
 <!-- @type: treasure-group | @treasure-type: weapon -->
 #### Leveled Weapon Treasures
 
-For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/chapter/treasures) in alphabetical order.
+For combat-focused heroes, weapons channeling magic and psionic power can easily tip the balance of any battle. This section presents [leveled weapon treasures](scc:mcdm.heroes.v1/chapter/rewards) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Authority's End
@@ -25791,7 +25787,7 @@ For combat-focused heroes, weapons channeling magic and psionic power can easily
 <!-- @type: treasure-group | @treasure-type: other -->
 #### Other Leveled Treasures
 
-In addition to armor, shields, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/treasures). This section presents other types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in alphabetical order.
+In addition to armor, shields, [implements](scc:mcdm.heroes.v1/rule.treasure/implement), and weapons, heroes can make use of a wide range of [magic and psionic treasures](scc:mcdm.heroes.v1/chapter/rewards). This section presents other types of [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in alphabetical order.
 
 <!-- @type: treasure -->
 ##### Bloodbound Band
@@ -25972,7 +25968,6 @@ When the Mortal Coil is left unattended or is in the possession of a creature wh
 
 **Beneath Contempt:** Deities and their servants always overlook the Mortal Coil and its host—either unable to notice it, or not considering it a threat. If the artifact is somehow destroyed or unmade through godly power, it consumes a year of life from every humanoid in the manifold where it was destroyed, then reforms in a hidden place.
 
-<!-- @type: chapter | @id: titles -->
 ## Titles
 
 Titles are special benefits earned by heroes through adventure and mighty deeds. Heroes must win titles—sometimes individually, sometimes as a group—by accomplishing heroic tasks. Titles are the record of a hero's accomplishments, forming the basis of the stories told of them in taverns or whispered in the halls of the mighty.
