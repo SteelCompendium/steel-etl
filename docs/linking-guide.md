@@ -137,6 +137,12 @@ Skills (climb, hide, intimidate, ride, etc.) refer to specific game skills that 
 
 Key test: is the text talking about the named skill mechanic, or just using the word as a verb/noun?
 
+Skills classify under their group: `skill.<group>/<item>` (e.g. `skill.crafting/alchemy`),
+one of crafting / exploration / interpersonal / intrigue / lore. Each group also has a
+self-named landing page `skill.<group>/<group>` (e.g. `skill.crafting/crafting`) — link the
+phrase "<group> skill group" to it. Skip the phrase inside the Skill Groups definition region
+(the five `##### <Group> Skills` sections), which is self-reference.
+
 #### Negotiation motivations/pitfalls
 
 Motivations (benevolence, discovery, freedom, greed, higher authority, justice, legacy, peace, power, protection, revelry, vengeance) are negotiation system terms. Link when the text references them as NPC traits in the negotiation system:

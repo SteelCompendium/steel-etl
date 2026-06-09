@@ -2,7 +2,7 @@
 
 Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 577
+**Total linkable terms:** 582
 
 ## Classes (9 terms)
 
@@ -381,16 +381,16 @@ Originally generated from `classification.json`; now **manually curated and cano
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Alchemy | alchemy | `mcdm.heroes.v1/skill/alchemy` |
-| Architecture | architecture | `mcdm.heroes.v1/skill/architecture` |
-| Blacksmithing | blacksmithing | `mcdm.heroes.v1/skill/blacksmithing` |
-| Carpentry | carpentry | `mcdm.heroes.v1/skill/carpentry` |
-| Cooking | cooking | `mcdm.heroes.v1/skill/cooking` |
-| Fletching | fletching | `mcdm.heroes.v1/skill/fletching` |
-| Forgery | forgery | `mcdm.heroes.v1/skill/forgery` |
-| Jewelry | jewelry | `mcdm.heroes.v1/skill/jewelry` |
-| Mechanics | mechanics | `mcdm.heroes.v1/skill/mechanics` |
-| Tailoring | tailoring | `mcdm.heroes.v1/skill/tailoring` |
+| Alchemy | alchemy | `mcdm.heroes.v1/skill.crafting/alchemy` |
+| Architecture | architecture | `mcdm.heroes.v1/skill.crafting/architecture` |
+| Blacksmithing | blacksmithing | `mcdm.heroes.v1/skill.crafting/blacksmithing` |
+| Carpentry | carpentry | `mcdm.heroes.v1/skill.crafting/carpentry` |
+| Cooking | cooking | `mcdm.heroes.v1/skill.crafting/cooking` |
+| Fletching | fletching | `mcdm.heroes.v1/skill.crafting/fletching` |
+| Forgery | forgery | `mcdm.heroes.v1/skill.crafting/forgery` |
+| Jewelry | jewelry | `mcdm.heroes.v1/skill.crafting/jewelry` |
+| Mechanics | mechanics | `mcdm.heroes.v1/skill.crafting/mechanics` |
+| Tailoring | tailoring | `mcdm.heroes.v1/skill.crafting/tailoring` |
 
 ## Skills — Exploration (10 terms)
 
@@ -398,16 +398,16 @@ Originally generated from `classification.json`; now **manually curated and cano
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Climb | climb | `mcdm.heroes.v1/skill/climb` |
-| Drive | drive | `mcdm.heroes.v1/skill/drive` |
-| Endurance | endurance | `mcdm.heroes.v1/skill/endurance` |
-| Gymnastics | gymnastics | `mcdm.heroes.v1/skill/gymnastics` |
-| Heal | heal | `mcdm.heroes.v1/skill/heal` |
-| Jump | jump | `mcdm.heroes.v1/skill/jump` |
-| Lift | lift | `mcdm.heroes.v1/skill/lift` |
-| Navigate | navigate | `mcdm.heroes.v1/skill/navigate` |
-| Ride | ride | `mcdm.heroes.v1/skill/ride` |
-| Swim | swim | `mcdm.heroes.v1/skill/swim` |
+| Climb | climb | `mcdm.heroes.v1/skill.exploration/climb` |
+| Drive | drive | `mcdm.heroes.v1/skill.exploration/drive` |
+| Endurance | endurance | `mcdm.heroes.v1/skill.exploration/endurance` |
+| Gymnastics | gymnastics | `mcdm.heroes.v1/skill.exploration/gymnastics` |
+| Heal | heal | `mcdm.heroes.v1/skill.exploration/heal` |
+| Jump | jump | `mcdm.heroes.v1/skill.exploration/jump` |
+| Lift | lift | `mcdm.heroes.v1/skill.exploration/lift` |
+| Navigate | navigate | `mcdm.heroes.v1/skill.exploration/navigate` |
+| Ride | ride | `mcdm.heroes.v1/skill.exploration/ride` |
+| Swim | swim | `mcdm.heroes.v1/skill.exploration/swim` |
 
 ## Skills — Interpersonal (13 terms)
 
@@ -415,19 +415,19 @@ Originally generated from `classification.json`; now **manually curated and cano
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Brag | brag | `mcdm.heroes.v1/skill/brag` |
-| Empathize | empathize | `mcdm.heroes.v1/skill/empathize` |
-| Flirt | flirt | `mcdm.heroes.v1/skill/flirt` |
-| Gamble | gamble | `mcdm.heroes.v1/skill/gamble` |
-| Handle Animals | handle animals | `mcdm.heroes.v1/skill/handle-animals` |
-| Interrogate | interrogate | `mcdm.heroes.v1/skill/interrogate` |
-| Intimidate | intimidate | `mcdm.heroes.v1/skill/intimidate` |
-| Lead | lead | `mcdm.heroes.v1/skill/lead` |
-| Lie | lie | `mcdm.heroes.v1/skill/lie` |
-| Music | music | `mcdm.heroes.v1/skill/music` |
-| Perform | perform | `mcdm.heroes.v1/skill/perform` |
-| Persuade | persuade | `mcdm.heroes.v1/skill/persuade` |
-| Read Person | read person | `mcdm.heroes.v1/skill/read-person` |
+| Brag | brag | `mcdm.heroes.v1/skill.interpersonal/brag` |
+| Empathize | empathize | `mcdm.heroes.v1/skill.interpersonal/empathize` |
+| Flirt | flirt | `mcdm.heroes.v1/skill.interpersonal/flirt` |
+| Gamble | gamble | `mcdm.heroes.v1/skill.interpersonal/gamble` |
+| Handle Animals | handle animals | `mcdm.heroes.v1/skill.interpersonal/handle-animals` |
+| Interrogate | interrogate | `mcdm.heroes.v1/skill.interpersonal/interrogate` |
+| Intimidate | intimidate | `mcdm.heroes.v1/skill.interpersonal/intimidate` |
+| Lead | lead | `mcdm.heroes.v1/skill.interpersonal/lead` |
+| Lie | lie | `mcdm.heroes.v1/skill.interpersonal/lie` |
+| Music | music | `mcdm.heroes.v1/skill.interpersonal/music` |
+| Perform | perform | `mcdm.heroes.v1/skill.interpersonal/perform` |
+| Persuade | persuade | `mcdm.heroes.v1/skill.interpersonal/persuade` |
+| Read Person | read person | `mcdm.heroes.v1/skill.interpersonal/read-person` |
 
 ## Skills — Intrigue (12 terms)
 
@@ -435,35 +435,49 @@ Originally generated from `classification.json`; now **manually curated and cano
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Alertness | alertness | `mcdm.heroes.v1/skill/alertness` |
-| Conceal Object | conceal object | `mcdm.heroes.v1/skill/conceal-object` |
-| Disguise | disguise | `mcdm.heroes.v1/skill/disguise` |
-| Eavesdrop | eavesdrop | `mcdm.heroes.v1/skill/eavesdrop` |
-| Escape Artist | escape artist | `mcdm.heroes.v1/skill/escape-artist` |
-| Hide | hide | `mcdm.heroes.v1/skill/hide` |
-| Pick Lock | pick lock | `mcdm.heroes.v1/skill/pick-lock` |
-| Pick Pocket | pick pocket | `mcdm.heroes.v1/skill/pick-pocket` |
-| Sabotage | sabotage | `mcdm.heroes.v1/skill/sabotage` |
-| Search | search | `mcdm.heroes.v1/skill/search` |
-| Sneak | sneak | `mcdm.heroes.v1/skill/sneak` |
-| Track | track | `mcdm.heroes.v1/skill/track` |
+| Alertness | alertness | `mcdm.heroes.v1/skill.intrigue/alertness` |
+| Conceal Object | conceal object | `mcdm.heroes.v1/skill.intrigue/conceal-object` |
+| Disguise | disguise | `mcdm.heroes.v1/skill.intrigue/disguise` |
+| Eavesdrop | eavesdrop | `mcdm.heroes.v1/skill.intrigue/eavesdrop` |
+| Escape Artist | escape artist | `mcdm.heroes.v1/skill.intrigue/escape-artist` |
+| Hide | hide | `mcdm.heroes.v1/skill.intrigue/hide` |
+| Pick Lock | pick lock | `mcdm.heroes.v1/skill.intrigue/pick-lock` |
+| Pick Pocket | pick pocket | `mcdm.heroes.v1/skill.intrigue/pick-pocket` |
+| Sabotage | sabotage | `mcdm.heroes.v1/skill.intrigue/sabotage` |
+| Search | search | `mcdm.heroes.v1/skill.intrigue/search` |
+| Sneak | sneak | `mcdm.heroes.v1/skill.intrigue/sneak` |
+| Track | track | `mcdm.heroes.v1/skill.intrigue/track` |
 
 ## Skills — Lore (12 terms)
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Criminal Underworld | criminal underworld | `mcdm.heroes.v1/skill/criminal-underworld` |
-| Culture | culture | `mcdm.heroes.v1/skill/culture` |
-| History | history | `mcdm.heroes.v1/skill/history` |
-| Magic | magic | `mcdm.heroes.v1/skill/magic` |
-| Monsters | monsters | `mcdm.heroes.v1/skill/monsters` |
-| Nature | nature | `mcdm.heroes.v1/skill/nature` |
-| Psionics | psionics | `mcdm.heroes.v1/skill/psionics` |
-| Religion | religion | `mcdm.heroes.v1/skill/religion` |
-| Rumors | rumors | `mcdm.heroes.v1/skill/rumors` |
-| Society | society | `mcdm.heroes.v1/skill/society` |
-| Strategy | strategy | `mcdm.heroes.v1/skill/strategy` |
-| Timescape | timescape | `mcdm.heroes.v1/skill/timescape` |
+| Criminal Underworld | criminal underworld | `mcdm.heroes.v1/skill.lore/criminal-underworld` |
+| Culture | culture | `mcdm.heroes.v1/skill.lore/culture` |
+| History | history | `mcdm.heroes.v1/skill.lore/history` |
+| Magic | magic | `mcdm.heroes.v1/skill.lore/magic` |
+| Monsters | monsters | `mcdm.heroes.v1/skill.lore/monsters` |
+| Nature | nature | `mcdm.heroes.v1/skill.lore/nature` |
+| Psionics | psionics | `mcdm.heroes.v1/skill.lore/psionics` |
+| Religion | religion | `mcdm.heroes.v1/skill.lore/religion` |
+| Rumors | rumors | `mcdm.heroes.v1/skill.lore/rumors` |
+| Society | society | `mcdm.heroes.v1/skill.lore/society` |
+| Strategy | strategy | `mcdm.heroes.v1/skill.lore/strategy` |
+| Timescape | timescape | `mcdm.heroes.v1/skill.lore/timescape` |
+
+## Skill Groups (5 terms)
+
+Each skill group has a self-named landing page (`skill.<group>/<group>`). Link the
+phrase "<group> skill group" to it; skip the phrase inside the Skill Groups
+definition region (self-reference).
+
+| Display Name | Variants | SCC Code |
+|-------------|----------|----------|
+| Crafting skill group | crafting skill group | `mcdm.heroes.v1/skill.crafting/crafting` |
+| Exploration skill group | exploration skill group | `mcdm.heroes.v1/skill.exploration/exploration` |
+| Interpersonal skill group | interpersonal skill group | `mcdm.heroes.v1/skill.interpersonal/interpersonal` |
+| Intrigue skill group | intrigue skill group | `mcdm.heroes.v1/skill.intrigue/intrigue` |
+| Lore skill group | lore skill group | `mcdm.heroes.v1/skill.lore/lore` |
 
 ## Negotiation Motivations/Pitfalls (12 terms)
 
