@@ -2,10 +2,12 @@ package cli
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/spf13/cobra"
 
 	"github.com/SteelCompendium/steel-etl/internal/pipeline"
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 var genCmd = &cobra.Command{
@@ -62,6 +64,18 @@ func runGen(cmd *cobra.Command, args []string) error {
 		return err
 	}
 
+	// --all is an authoritative full rebuild of every book, so the SCC registry
+	// should reflect exactly the codes this run emits. The per-book pipeline
+	// merges into the existing registry (so a single-book run preserves other
+	// books' codes), which means codes removed/renamed since the last run would
+	// otherwise linger as orphans. Reset the shared registry up front so the
+	// per-book accumulation rebuilds a clean set.
+	if all {
+		if err := resetRegistryForRebuild(cfg); err != nil {
+			return err
+		}
+	}
+
 	var allItems []pipeline.ClassifiedItem
 	includesPrimary := false
 	for _, bookCfg := range configs {
@@ -86,6 +100,33 @@ func runGen(cmd *cobra.Command, args []string) error {
 		}
 		fmt.Printf("Shared outputs regenerated over %d classified items from %d books.\n", len(allItems), len(configs))
 	}
+	return nil
+}
+
+// resetRegistryForRebuild deletes the SCC registry file before an --all run so
+// the rebuild drops codes no longer emitted (orphans from renames/removals); the
+// per-book pipeline then accumulates a clean set from empty. A frozen registry is
+// left intact — freeze means codes are permanent, and the pipeline's
+// ValidateAgainstFrozen enforces stability during the run instead. A missing or
+// unreadable registry is a no-op (the run starts fresh anyway).
+func resetRegistryForRebuild(cfg *pipeline.Config) error {
+	if cfg.Classification.Registry == "" {
+		return nil
+	}
+	registryPath := cfg.ResolvePath(cfg.Classification.Registry)
+
+	existing, err := scc.LoadRegistry(registryPath)
+	if err != nil {
+		return nil // no registry yet (or unreadable) — nothing to prune
+	}
+	if existing.IsFrozen() {
+		fmt.Printf("Registry: frozen — preserving baseline (orphaned codes not pruned)\n")
+		return nil
+	}
+	if err := os.Remove(registryPath); err != nil && !os.IsNotExist(err) {
+		return fmt.Errorf("reset registry %s: %w", registryPath, err)
+	}
+	fmt.Printf("Registry: rebuilding from scratch for --all (pruning orphaned codes)\n")
 	return nil
 }
 
