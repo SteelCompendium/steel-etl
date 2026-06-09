@@ -21,6 +21,7 @@ func NewRegistry() *Registry {
 	r.Register(&MovementParser{})
 	r.Register(&NegotiationParser{})
 	r.Register(&SkillParser{})
+	r.Register(&SkillGroupParser{})
 	r.Register(&ComplicationParser{})
 	r.Register(&PerkParser{})
 	r.Register(&CareerParser{})
