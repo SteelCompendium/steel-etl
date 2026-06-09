@@ -1,7 +1,7 @@
 # Skill Groups: Nesting Design
 
 **Date:** 2026-06-08
-**Status:** Approved (brainstorm) → ready for implementation plan
+**Status:** ✅ Implemented & merged to `main` 2026-06-08 — see `../plans/2026-06-08-skill-groups-nesting.md`
 
 ## Problem
 

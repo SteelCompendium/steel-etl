@@ -1,5 +1,7 @@
 # Skill Groups Nesting — Implementation Plan
 
+> **Status:** ✅ Executed inline and merged to `main` 2026-06-08. All 9 tasks complete; `go test ./...` green; pipeline regen verified (5 group folder cards with counts 10/10/13/12/12, per-group skill grids, linkable `skill.<group>/<group>` landing pages with permalink stubs, 0 flat `skill/<item>` stragglers). Final figures: 177 in-prose skill links repointed, 94 group-phrase links added.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Nest the 57 hero skills under their five rulebook skill groups, giving each skill a grouped SCC code `skill.<group>/<item>`, each group a linkable landing page `skill.<group>/<group>`, and rendering both index levels in the redesign `.sc-folder` / `.sc-card` UI.
