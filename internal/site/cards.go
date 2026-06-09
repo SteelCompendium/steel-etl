@@ -55,11 +55,17 @@ var wideCardTypes = map[string]bool{
 func buildCardsContent(dir, dirName string, files, subdirs []string) (content string, ok bool) {
 	cardType := dirName
 	if !richCardTypes[dirName] {
+		switch {
 		// Treasure leaves are nested (treasure/<tier>/<category>); render their
 		// items as treasure cards even though the leaf dirName isn't "treasure".
-		if len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "treasure") {
+		case len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "treasure"):
 			cardType = "treasure"
-		} else {
+		// Skill leaves are nested (skill/<group>/<item>); render their items as
+		// skill cards. The self-named <group>.md container page is dropped below.
+		case len(subdirs) == 0 && len(files) > 0 && pathHasSegment(dir, "skill"):
+			cardType = "skill"
+			files = dropSelfNamed(files, dirName)
+		default:
 			return "", false
 		}
 	}
@@ -89,6 +95,20 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	}
 	sb.WriteString("</div>\n")
 	return sb.String(), true
+}
+
+// dropSelfNamed removes the self-named container page (<dirName>.md) from a leaf
+// directory's file list, so a skill-group's landing page doesn't appear as a
+// card inside its own group grid.
+func dropSelfNamed(files []string, dirName string) []string {
+	self := dirName + ".md"
+	out := files[:0:0]
+	for _, f := range files {
+		if f != self {
+			out = append(out, f)
+		}
+	}
+	return out
 }
 
 // pathHasSegment reports whether any path segment of dir equals seg.
