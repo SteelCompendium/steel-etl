@@ -20683,6 +20683,7 @@ The rules for skills allow for them to be flexibly applied to any [test](scc:mcd
 
 Skills are broken down into five skill groups: crafting, exploration, interpersonal, intrigue, and lore.
 
+<!-- @type: skill-group | @id: crafting -->
 ##### Crafting Skills
 
 Skills from the crafting skill group are used in the creation and appraisal of goods and for jury-rigging contraptions. They are especially useful during rests and downtime.
@@ -20705,57 +20706,58 @@ Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with crafting s
 | Jewelry       | Create bracelets, crowns, rings, and other jewelry |
 | Mechanics     | Build machines and clockwork items                 |
 | Tailoring     | Craft clothing of cloth or leather                 |
-<!-- @type: skill | @id: alchemy -->
+<!-- @type: skill | @id: alchemy | @group: crafting -->
 ###### Alchemy
 
 Make bombs and potions.
 
-<!-- @type: skill | @id: architecture -->
+<!-- @type: skill | @id: architecture | @group: crafting -->
 ###### Architecture
 
 Create buildings and vehicles.
 
-<!-- @type: skill | @id: blacksmithing -->
+<!-- @type: skill | @id: blacksmithing | @group: crafting -->
 ###### Blacksmithing
 
 Forge metal armor and weapons.
 
-<!-- @type: skill | @id: carpentry -->
+<!-- @type: skill | @id: carpentry | @group: crafting -->
 ###### Carpentry
 
 Create items out of wood.
 
-<!-- @type: skill | @id: cooking -->
+<!-- @type: skill | @id: cooking | @group: crafting -->
 ###### Cooking
 
 Create delicious dishes.
 
-<!-- @type: skill | @id: fletching -->
+<!-- @type: skill | @id: fletching | @group: crafting -->
 ###### Fletching
 
 Make [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapons and ammunition.
 
-<!-- @type: skill | @id: forgery -->
+<!-- @type: skill | @id: forgery | @group: crafting -->
 ###### Forgery
 
 Create false badges, documents, and other items.
 
-<!-- @type: skill | @id: jewelry -->
+<!-- @type: skill | @id: jewelry | @group: crafting -->
 ###### Jewelry
 
 Create bracelets, crowns, rings, and other jewelry.
 
-<!-- @type: skill | @id: mechanics -->
+<!-- @type: skill | @id: mechanics | @group: crafting -->
 ###### Mechanics
 
 Build machines and clockwork items.
 
-<!-- @type: skill | @id: tailoring -->
+<!-- @type: skill | @id: tailoring | @group: crafting -->
 ###### Tailoring
 
 Craft clothing of cloth or leather.
 
 
+<!-- @type: skill-group | @id: exploration -->
 ##### Exploration Skills
 
 Skills from the exploration skill group are used to physically explore the environment around the characters, and to overcome physical obstacles.
@@ -20778,57 +20780,58 @@ Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with exploratio
 | Navigate   | Read a map and travel without becoming lost                     |
 | Ride       | Ride and control a nonsapient mount, such as a horse            |
 | Swim       | Move through deep liquid                                        |
-<!-- @type: skill | @id: climb -->
+<!-- @type: skill | @id: climb | @group: exploration -->
 ###### Climb
 
 Move up vertical surfaces.
 
-<!-- @type: skill | @id: drive -->
+<!-- @type: skill | @id: drive | @group: exploration -->
 ###### Drive
 
 Control vehicles.
 
-<!-- @type: skill | @id: endurance -->
+<!-- @type: skill | @id: endurance | @group: exploration -->
 ###### Endurance
 
 Remain engaged in strenuous activity over a long period of time.
 
-<!-- @type: skill | @id: gymnastics -->
+<!-- @type: skill | @id: gymnastics | @group: exploration -->
 ###### Gymnastics
 
 Move across unsteady or narrow surfaces; tumble.
 
-<!-- @type: skill | @id: heal -->
+<!-- @type: skill | @id: heal | @group: exploration -->
 ###### Heal
 
 Use mundane first aid.
 
-<!-- @type: skill | @id: jump -->
+<!-- @type: skill | @id: jump | @group: exploration -->
 ###### Jump
 
 Leap vertical and horizontal [distances](scc:mcdm.heroes.v1/rule.combat/distance).
 
-<!-- @type: skill | @id: lift -->
+<!-- @type: skill | @id: lift | @group: exploration -->
 ###### Lift
 
 Pick up, carry, and throw heavy objects.
 
-<!-- @type: skill | @id: navigate -->
+<!-- @type: skill | @id: navigate | @group: exploration -->
 ###### Navigate
 
 Read a map and travel without becoming lost.
 
-<!-- @type: skill | @id: ride -->
+<!-- @type: skill | @id: ride | @group: exploration -->
 ###### Ride
 
 Ride and control a nonsapient mount, such as a horse.
 
-<!-- @type: skill | @id: swim -->
+<!-- @type: skill | @id: swim | @group: exploration -->
 ###### Swim
 
 Move through deep liquid.
 
 
+<!-- @type: skill-group | @id: interpersonal -->
 ##### Interpersonal Skills
 
 Skills from the interpersonal skill group are used to socially interact with other creatures, and are particularly useful during negotiations (see Chapter 11: [Negotiation](scc:mcdm.heroes.v1/chapter/negotiation)). Aside from the [Handle Animals](scc:mcdm.heroes.v1/skill/handle-animals) skill, you can generally only use interpersonal skills when you attempt to influence creatures who have emotions and who can understand you.
@@ -20854,72 +20857,73 @@ Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with interperso
 | Perform        | Engage in dance, oratory, acting, or some other physical performance    |
 | Persuade       | Convince someone to agree with you through use of your charms and grace |
 | Read Person    | Read the emotions and body language of other creatures                  |
-<!-- @type: skill | @id: brag -->
+<!-- @type: skill | @id: brag | @group: interpersonal -->
 ###### Brag
 
 Impress others with stories of your deeds.
 
-<!-- @type: skill | @id: empathize -->
+<!-- @type: skill | @id: empathize | @group: interpersonal -->
 ###### Empathize
 
 Relate to someone on a personal level.
 
-<!-- @type: skill | @id: flirt -->
+<!-- @type: skill | @id: flirt | @group: interpersonal -->
 ###### Flirt
 
 Attract romantic attention from someone.
 
-<!-- @type: skill | @id: gamble -->
+<!-- @type: skill | @id: gamble | @group: interpersonal -->
 ###### Gamble
 
 Make bets with others.
 
-<!-- @type: skill | @id: handle-animals -->
+<!-- @type: skill | @id: handle-animals | @group: interpersonal -->
 ###### Handle Animals
 
 Interact with nonsapient animal wildlife.
 
-<!-- @type: skill | @id: interrogate -->
+<!-- @type: skill | @id: interrogate | @group: interpersonal -->
 ###### Interrogate
 
 Obtain information from a creature withholding it.
 
-<!-- @type: skill | @id: intimidate -->
+<!-- @type: skill | @id: intimidate | @group: interpersonal -->
 ###### Intimidate
 
 Awe or scare a creature.
 
-<!-- @type: skill | @id: lead -->
+<!-- @type: skill | @id: lead | @group: interpersonal -->
 ###### Lead
 
 Inspire people to action.
 
-<!-- @type: skill | @id: lie -->
+<!-- @type: skill | @id: lie | @group: interpersonal -->
 ###### Lie
 
 Convince someone that a falsehood is true.
 
-<!-- @type: skill | @id: music -->
+<!-- @type: skill | @id: music | @group: interpersonal -->
 ###### Music
 
 Perform music vocally or with an instrument.
 
-<!-- @type: skill | @id: perform -->
+<!-- @type: skill | @id: perform | @group: interpersonal -->
 ###### Perform
 
 Engage in dance, oratory, acting, or some other physical performance.
 
-<!-- @type: skill | @id: persuade -->
+<!-- @type: skill | @id: persuade | @group: interpersonal -->
 ###### Persuade
 
 Convince someone to agree with you through use of your charms and grace.
 
-<!-- @type: skill | @id: read-person -->
+<!-- @type: skill | @id: read-person | @group: interpersonal -->
 ###### Read Person
 
 Read the emotions and body language of other creatures.
 
 
+<!-- @type: skill-group | @id: intrigue -->
 ##### Intrigue Skills
 
 Skills from the intrigue skill group are used in tasks centered around investigation, thievery, and spycraft.
@@ -20944,67 +20948,68 @@ Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with intrigue s
 | Search         | Actively search an environment for important details and items                                     |
 | Sneak          | Move silently                                                                                      |
 | Track          | Follow a trail that another creature has left behind                                               |
-<!-- @type: skill | @id: alertness -->
+<!-- @type: skill | @id: alertness | @group: intrigue -->
 ###### Alertness
 
 Intuitively sense the details of your surroundings.
 
-<!-- @type: skill | @id: conceal-object -->
+<!-- @type: skill | @id: conceal-object | @group: intrigue -->
 ###### Conceal Object
 
 Hide an object on your person or in your environment.
 
-<!-- @type: skill | @id: disguise -->
+<!-- @type: skill | @id: disguise | @group: intrigue -->
 ###### Disguise
 
 Change your appearance to look like a different person.
 
-<!-- @type: skill | @id: eavesdrop -->
+<!-- @type: skill | @id: eavesdrop | @group: intrigue -->
 ###### Eavesdrop
 
 Actively listen to something that is hard to hear, such as a whispered conversation through a door.
 
-<!-- @type: skill | @id: escape-artist -->
+<!-- @type: skill | @id: escape-artist | @group: intrigue -->
 ###### Escape Artist
 
 Escape from bonds such as rope or manacles.
 
-<!-- @type: skill | @id: hide -->
+<!-- @type: skill | @id: hide | @group: intrigue -->
 ###### Hide
 
 Conceal yourself from others' observation.
 
-<!-- @type: skill | @id: pick-lock -->
+<!-- @type: skill | @id: pick-lock | @group: intrigue -->
 ###### Pick Lock
 
 Open a lock without using the key.
 
-<!-- @type: skill | @id: pick-pocket -->
+<!-- @type: skill | @id: pick-pocket | @group: intrigue -->
 ###### Pick Pocket
 
 Steal an item that another person wears or carries without them noticing.
 
-<!-- @type: skill | @id: sabotage -->
+<!-- @type: skill | @id: sabotage | @group: intrigue -->
 ###### Sabotage
 
 Disable a mechanical device such as a trap.
 
-<!-- @type: skill | @id: search -->
+<!-- @type: skill | @id: search | @group: intrigue -->
 ###### Search
 
 Actively search an environment for important details and items.
 
-<!-- @type: skill | @id: sneak -->
+<!-- @type: skill | @id: sneak | @group: intrigue -->
 ###### Sneak
 
 Move silently.
 
-<!-- @type: skill | @id: track -->
+<!-- @type: skill | @id: track | @group: intrigue -->
 ###### Track
 
 Follow a trail that another creature has left behind.
 
 
+<!-- @type: skill-group | @id: lore -->
 ##### Lore Skills
 
 Skills from the lore skill group are used to research and recall specific information. They are especially useful during rests and downtime.
@@ -21029,62 +21034,62 @@ Consequences for [tests](scc:mcdm.heroes.v1/rule.test/test) made with lore skill
 | Society             | Knowing noble etiquette and the leadership and power dynamics of noble families            |
 | Strategy            | Knowing about battle tactics and logistics                                                 |
 | Timescape           | Knowing about the many worlds of the timescape                                             |
-<!-- @type: skill | @id: criminal-underworld -->
+<!-- @type: skill | @id: criminal-underworld | @group: lore -->
 ###### Criminal Underworld
 
 Knowing about criminal organizations, their crimes, their relationships, and their leaders.
 
-<!-- @type: skill | @id: culture -->
+<!-- @type: skill | @id: culture | @group: lore -->
 ###### Culture
 
 Knowing about a culture's customs, folktales, and taboos.
 
-<!-- @type: skill | @id: history -->
+<!-- @type: skill | @id: history | @group: lore -->
 ###### History
 
 Knowing about significant past events.
 
-<!-- @type: skill | @id: magic -->
+<!-- @type: skill | @id: magic | @group: lore -->
 ###### Magic
 
 Knowing about magical places, spells, rituals, items, and phenomena.
 
-<!-- @type: skill | @id: monsters -->
+<!-- @type: skill | @id: monsters | @group: lore -->
 ###### Monsters
 
 Knowing monster ecology, strengths, and weaknesses.
 
-<!-- @type: skill | @id: nature -->
+<!-- @type: skill | @id: nature | @group: lore -->
 ###### Nature
 
 Knowing about natural flora, fauna, and weather.
 
-<!-- @type: skill | @id: psionics -->
+<!-- @type: skill | @id: psionics | @group: lore -->
 ###### Psionics
 
 Knowing about psionic places, spells, rituals, items, and phenomena.
 
-<!-- @type: skill | @id: religion -->
+<!-- @type: skill | @id: religion | @group: lore -->
 ###### Religion
 
 Knowing about religious mythology, practices, and rituals.
 
-<!-- @type: skill | @id: rumors -->
+<!-- @type: skill | @id: rumors | @group: lore -->
 ###### Rumors
 
 Knowing gossip, legends, and uncertain truths.
 
-<!-- @type: skill | @id: society -->
+<!-- @type: skill | @id: society | @group: lore -->
 ###### Society
 
 Knowing noble etiquette and the leadership and power dynamics of noble families.
 
-<!-- @type: skill | @id: strategy -->
+<!-- @type: skill | @id: strategy | @group: lore -->
 ###### Strategy
 
 Knowing about battle tactics and logistics.
 
-<!-- @type: skill | @id: timescape -->
+<!-- @type: skill | @id: timescape | @group: lore -->
 ###### Timescape
 
 Knowing about the many worlds of the timescape.
