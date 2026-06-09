@@ -16,13 +16,18 @@ func (p *SkillParser) Parse(ctx *context.ContextStack, section *parser.Section) 
 		id = Slugify(section.Heading)
 	}
 
+	typePath := []string{"skill"}
+	if group, ok := section.Annotation["group"]; ok && group != "" {
+		typePath = []string{"skill", group}
+	}
+
 	return &ParsedContent{
 		Frontmatter: map[string]any{
 			"name": section.Heading,
 			"type": "skill",
 		},
 		Body:     section.FullBodySource(),
-		TypePath: []string{"skill"},
+		TypePath: typePath,
 		ItemID:   id,
 	}, nil
 }
