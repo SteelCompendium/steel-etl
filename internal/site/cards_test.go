@@ -243,24 +243,25 @@ func TestBuildCardsContentNestedSkillLeaf(t *testing.T) {
 	if err := os.MkdirAll(leaf, 0755); err != nil {
 		t.Fatal(err)
 	}
-	// self-named container page (must be excluded from the card grid)
-	os.WriteFile(filepath.Join(leaf, "crafting.md"),
-		[]byte("---\nname: Crafting Skills\ntype: skill-group\n---\n\nOverview.\n"), 0644)
+	// The group landing now lives in index.md (relocated from skill.group/crafting)
+	// and is folded in by mergeGroupLanding — generateIndexesRecursive excludes
+	// index.md from the file list, so buildCardsContent only sees the leaf skills.
 	os.WriteFile(filepath.Join(leaf, "alchemy.md"),
 		[]byte("---\nname: Alchemy\ntype: skill\n---\n\nMake bombs and potions.\n"), 0644)
 	os.WriteFile(filepath.Join(leaf, "carpentry.md"),
 		[]byte("---\nname: Carpentry\ntype: skill\n---\n\nCreate items out of wood.\n"), 0644)
 
 	content, ok := buildCardsContent(leaf, "crafting",
-		[]string{"crafting.md", "alchemy.md", "carpentry.md"}, nil)
+		[]string{"alchemy.md", "carpentry.md"}, nil)
 	if !ok {
 		t.Fatalf("buildCardsContent ok=false, want true for nested skill leaf")
 	}
 	if !strings.Contains(content, ">Alchemy<") || !strings.Contains(content, ">Carpentry<") {
 		t.Errorf("expected skill cards for Alchemy and Carpentry; got:\n%s", content)
 	}
-	if strings.Contains(content, "Crafting Skills") || strings.Contains(content, "crafting/\"") {
-		t.Errorf("self-named container card should be excluded; got:\n%s", content)
+	// No self-named "Crafting Skills" card — the landing is the index, not a card.
+	if strings.Contains(content, "Crafting Skills") {
+		t.Errorf("group landing should not appear as a card; got:\n%s", content)
 	}
 }
 

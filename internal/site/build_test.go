@@ -1138,3 +1138,86 @@ func TestBuildBookPlaceholderForEmptyBook(t *testing.T) {
 		t.Errorf("landing index missing bestiary:\n%s", landing)
 	}
 }
+
+func TestGroupLandingIndexDest(t *testing.T) {
+	cases := []struct {
+		in       string
+		wantDest string
+		wantOK   bool
+	}{
+		{"skill/group/crafting.md", "skill/crafting/index.md", true},
+		{"monster/group/goblins.md", "monster/goblins/index.md", true},
+		{"skill/crafting/cooking.md", "", false},           // leaf skill, not a landing
+		{"monster/goblins/statblock/cutter.md", "", false}, // statblock
+		{"feature/ability/fury/level-1/gouge.md", "", false},
+	}
+	for _, c := range cases {
+		dest, ok := groupLandingIndexDest(c.in)
+		if ok != c.wantOK || dest != c.wantDest {
+			t.Errorf("groupLandingIndexDest(%q) = (%q,%v), want (%q,%v)",
+				c.in, dest, ok, c.wantDest, c.wantOK)
+		}
+	}
+}
+
+func TestStripLeadingHeading(t *testing.T) {
+	in := "# Crafting\n\n---\n\n<div class=\"sc-cards\">X</div>\n"
+	want := "<div class=\"sc-cards\">X</div>\n"
+	if got := stripLeadingHeading(in); got != want {
+		t.Errorf("stripLeadingHeading = %q, want %q", got, want)
+	}
+	// No leading heading → unchanged.
+	plain := "no heading here"
+	if got := stripLeadingHeading(plain); got != plain {
+		t.Errorf("stripLeadingHeading(plain) = %q, want unchanged", got)
+	}
+}
+
+func TestStripTrailingTable(t *testing.T) {
+	in := "# Crafting Skills\n\nIntro prose.\n\n| Skill | Desc |\n|---|---|\n| Cooking | food |\n"
+	want := "# Crafting Skills\n\nIntro prose."
+	if got := stripTrailingTable(in); got != want {
+		t.Errorf("stripTrailingTable = %q, want %q", got, want)
+	}
+	// No trailing table → unchanged (trimmed).
+	noTable := "# Goblins\n\nThey are crafty."
+	if got := stripTrailingTable(noTable); got != noTable {
+		t.Errorf("stripTrailingTable(noTable) = %q, want unchanged", got)
+	}
+}
+
+func TestMergeGroupLanding(t *testing.T) {
+	dir := t.TempDir()
+	landing := "---\nname: Crafting Skills\nscc: mcdm.heroes.v1/skill.group/crafting\ntype: skill-group\n---\n# Crafting Skills\n\nThe crafting group makes things.\n\n| Skill | Desc |\n|---|---|\n| Cooking | food |\n"
+	if err := os.WriteFile(filepath.Join(dir, "index.md"), []byte(landing), 0644); err != nil {
+		t.Fatal(err)
+	}
+	generated := "# Crafting\n\n---\n\n<div class=\"sc-cards\">CARDS</div>\n"
+	got := mergeGroupLanding(dir, generated)
+
+	if !strings.Contains(got, "scc: mcdm.heroes.v1/skill.group/crafting") {
+		t.Error("merged index lost the scc frontmatter")
+	}
+	if !strings.Contains(got, "The crafting group makes things.") {
+		t.Error("merged index lost the lore")
+	}
+	if strings.Contains(got, "| Cooking | food |") {
+		t.Error("merged index kept the redundant skills table")
+	}
+	if !strings.Contains(got, "<div class=\"sc-cards\">CARDS</div>") {
+		t.Error("merged index lost the generated card grid")
+	}
+	if strings.Contains(got, "# Crafting\n\n---") {
+		t.Error("merged index kept the generated duplicate H1")
+	}
+}
+
+func TestMergeGroupLandingNoSCCPassthrough(t *testing.T) {
+	dir := t.TempDir()
+	// index.md without scc (a normal generated index) → generated returned as-is.
+	os.WriteFile(filepath.Join(dir, "index.md"), []byte("# X\n\n---\n\nlist"), 0644)
+	generated := "# X\n\n---\n\nlist"
+	if got := mergeGroupLanding(dir, generated); got != generated {
+		t.Errorf("mergeGroupLanding passthrough = %q, want unchanged", got)
+	}
+}

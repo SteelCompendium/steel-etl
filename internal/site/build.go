@@ -184,7 +184,11 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		// place pages into a per-book folder; other sections apply SCC-type
 		// group remaps.
 		var destRel, parentName string
-		if section.GroupByBook {
+		if dest, ok := groupLandingIndexDest(entry.relPath); ok {
+			// Group landing (skill.group/* , monster.group/*) renders AS the
+			// <root>/<member>/ index; mergeGroupLanding folds it above the listing.
+			destRel = dest
+		} else if section.GroupByBook {
 			if srcBookFolder == "" {
 				key := bookKeyFromSCC(parseFrontmatterField(fm, "scc"))
 				errs = append(errs, fmt.Sprintf("no book config for scc prefix %q (%s)", key, entry.relPath))
@@ -465,6 +469,85 @@ func replaceFrontmatterField(fm, key, value string) string {
 		}
 	}
 	return fm
+}
+
+// groupLandingIndexDest maps a unified group-landing source path to the group's
+// index page:
+//
+//	<root>/group/<member>.md   ->   <root>/<member>/index.md
+//
+// So a skill.group/crafting page (file skill/group/crafting.md) renders AS the
+// /Browse/skill/crafting/ index — carrying its scc to the permalink stub — and no
+// phantom <root>/group/ subtree is ever created. ok=false for anything else.
+func groupLandingIndexDest(relPath string) (string, bool) {
+	parts := strings.Split(filepath.ToSlash(relPath), "/")
+	if len(parts) == 3 && parts[1] == "group" && strings.HasSuffix(parts[2], ".md") {
+		member := strings.TrimSuffix(parts[2], ".md")
+		return parts[0] + "/" + member + "/index.md", true
+	}
+	return "", false
+}
+
+// mergeGroupLanding folds a relocated group-landing page (placed at dir/index.md
+// by buildSection, carrying scc frontmatter + lore) into the generated index
+// `generated` (card grid for skills, browse list for monsters). It preserves the
+// landing's frontmatter — so the scc permalink stub targets THIS dir — and its
+// lore, drops the generated listing's duplicate leading "# Title\n\n---\n\n", and
+// strips any trailing table in the lore that the listing below supersedes. If
+// dir/index.md is absent or has no scc, `generated` is returned unchanged.
+func mergeGroupLanding(dir, generated string) string {
+	data, err := os.ReadFile(filepath.Join(dir, "index.md"))
+	if err != nil {
+		return generated
+	}
+	fm, body := splitFrontmatter(string(data))
+	if parseFrontmatterField(fm, "scc") == "" {
+		return generated
+	}
+	lore := stripTrailingTable(strings.TrimRight(body, "\n"))
+	listing := stripLeadingHeading(generated)
+
+	var sb strings.Builder
+	sb.WriteString("---\n")
+	sb.WriteString(fm)
+	sb.WriteString("\n---\n")
+	sb.WriteString(strings.TrimLeft(lore, "\n"))
+	sb.WriteString("\n\n---\n\n")
+	sb.WriteString(listing)
+	return sb.String()
+}
+
+// stripLeadingHeading drops the "# Title\n\n---\n\n" head that generated index
+// content begins with, so a merged landing keeps only ITS own H1.
+func stripLeadingHeading(s string) string {
+	const sep = "\n---\n\n"
+	if strings.HasPrefix(s, "# ") {
+		if i := strings.Index(s, sep); i >= 0 {
+			return s[i+len(sep):]
+		}
+	}
+	return s
+}
+
+// stripTrailingTable removes a trailing GFM table (and its blank separator) from
+// a group landing's lore — the index listing below already enumerates those rows.
+func stripTrailingTable(body string) string {
+	lines := strings.Split(body, "\n")
+	end := len(lines)
+	for end > 0 && strings.TrimSpace(lines[end-1]) == "" {
+		end--
+	}
+	start := end
+	for start > 0 && strings.HasPrefix(strings.TrimSpace(lines[start-1]), "|") {
+		start--
+	}
+	if start == end { // no trailing table
+		return body
+	}
+	for start > 0 && strings.TrimSpace(lines[start-1]) == "" {
+		start-- // drop the blank line before the table
+	}
+	return strings.TrimRight(strings.Join(lines[:start], "\n"), "\n")
 }
 
 // injectH1 adds a "# Name" header after frontmatter if the body doesn't already
@@ -905,6 +988,7 @@ func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
 	}
 
 	content := buildIndexContent(dir, filepath.Base(dir), files, subdirs)
+	content = mergeGroupLanding(dir, content)
 	indexPath := filepath.Join(dir, "index.md")
 	if err := os.WriteFile(indexPath, []byte(content), 0644); err != nil {
 		errs = append(errs, fmt.Sprintf("write index %s: %v", indexPath, err))
