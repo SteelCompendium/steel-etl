@@ -1227,3 +1227,182 @@ The orchiguard is a sprite surrounded by a wheel of shields. They are usually cr
 > ⭐️ **Minuscule**
 >
 > The orchiguard has cover while occupying a larger creature's space.
+
+<!-- @type: monster-group | @domain: minion | @category: undead -->
+##### Undead Portfolio Signature Minion
+
+Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost. (Quick Build: Skeleton, Husk.)
+
+<!-- @type: statblock -->
+####### Husk
+
+Husks have stiff corpses that snap and crackle with each sudden movement. Corrosive breath endlessly billows from their slackjawed faces.
+
+| Husk | Undead | Signature Minion Defender | - | 1 essence per minion summoned |
+|:----:|:------:|:-------------------------:|:-:|:-----------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **3**<br>Stamina | **1**<br>Stability | **1**<br>Free Strike |
+| **Damage 2, Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
+| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Rotting Strike**
+>
+> The husk's melee free strikes inflict M < WEAK slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).
+
+<!-- @type: statblock -->
+####### Shrieker
+
+The shrieker expresses their unending pain in a way that can be heard and felt for miles. A white-hot fire smolders within each of their sunken eye sockets.
+
+| Shrieker | Undead | Signature Minion Artillery | - | 1 essence per minion summoned |
+|:--------:|:------:|:---------------------------:|:-:|:-----------------------------:|
+| **1M**<br>Size | **4**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
+| **−2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Howling Strike**
+>
+> The shrieker's ranged free strikes have a distance of 12.
+
+> ⭐️ **Shrill Alarm**
+>
+> Each enemy within 2 squares of the shrieker can't hide or be hidden.
+
+<!-- @type: statblock -->
+####### Skeleton
+
+These autonomous bone networks fall just short of replicating the structure they had in life. Skeleton bones are especially brittle and can splinter into huge shards when met with enough force.
+
+| Skeleton | Undead | Signature Minion Harrier | - | 1 essence per minion summoned |
+|:--------:|:------:|:-------------------------:|:-:|:-----------------------------:|
+| **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Bonetrops**
+>
+> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+
+<!-- @type: monster-group | @domain: minion | @category: undead -->
+##### Undead Portfolio 3-Essence Minion
+
+Choose two of the following minions. You can use Call Forth to summon the listed number of 3-Essence minions for their essence cost. (Quick Build: Stalker Shade, Grave Knight.)
+
+<!-- @type: statblock -->
+####### Grave Knight
+
+The grave knights are zombie warriors that continue to fight after death. Any blood spilled at a grave knight's hand runs pitch black.
+
+| Grave Knight | Undead | Minion Brute | - | 3 essence for two minions |
+|:------------:|:------:|:------------:|:-:|:-------------------------:|
+| **1M**<br>Size | **6**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> 🏹 **Knight Strike 2d10 + R (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Melee 1** | **🎯 One creature or object per minion** |
+>
+> 5 corruption damage; M < WEAK bleeding (EoT)
+>
+> 7 corruption damage; M < AVERAGE bleeding (EoT)
+>
+> 9 corruption damage; M < STRONG bleeding (save ends)
+
+> ⭐️ **To the Grave**
+>
+> When the grave knight is reduced to 0 Stamina, they can make a melee free strike before being destroyed.
+
+<!-- @type: statblock -->
+####### Stalker Shade
+
+Shades are a form of umbral stalker that float free from any floor or surface. They can bend their appearance to completely vanish in the light.
+
+| Stalker Shade | Undead | Minion Ambusher | - | 3 essence for two minions |
+|:-------------:|:------:|:---------------:|:-:|:-------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
+| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Shadow Strike**
+>
+> The stalker shade turns invisible, shifts 3 squares, and reappears after making a strike.
+
+> ⭐️ **Shadow Phasing**
+>
+> The stalker shade can move through other creatures and objects at normal speed. The first time in a round that the stalker shade passes through a creature, that creature takes 2 corruption damage. The stalker shade doesn't take damage from being force moved into objects.
+
+<!-- @type: statblock -->
+####### Zombie Lumberer
+
+These massive, animated ogre corpses still maintain their incredible grip strength. When a lumberer falls, they'll take anything within reach down with them.
+
+| Zombie Lumberer | Undead | Minion Defender | - | 3 essence for two minions |
+|:---------------:|:------:|:---------------:|:-:|:-------------------------:|
+| **2**<br>Size | **5**<br>Speed | **8 \| 8**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Zombie Clutch**
+>
+> The lumberer's melee free strikes inflict A < AVERAGE grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.
+
+> ⭐️ **Death Grasp**
+>
+> When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < STRONG restrained (EoT).
+
+<!-- @type: feature | @id: summoner-abilities | @level: 1 -->
+### Summoner Abilities
+
+Your own abilities focus on support and enable you to position and outfit your allies for success.
+
+#### Heroic Abilities
+
+Breaking down your essence into pure power can lead to devastating effects. Your heroic abilities enable you to punctuate your army's efforts.
+
+##### 5-Essence Ability
+
+Choose one heroic ability from the following options, each of which costs 5 essence to use. (Quick Build: Rallying Cry.)
+
+<!-- @type: ability | @id: essence-transfer | @level: 1 -->
+#### Essence Transfer (5 Essence)
+
+*You pierce your foe and repurpose some of that 'fiber of their being' they weren't using.*
+
+| **Magic, Melee, Strike** | **Main action** |
+|--------------------------|----------------:|
+| **📏 Melee 1** | **🎯 One creature** |
+
+**Power Roll + Reason:**
+
+- **≤11:** 5 + R corruption damage; 2 charges (see below)
+- **12-16:** 8 + R corruption damage; 3 charges
+- **17+:** 11 + R corruption damage; 4 charges
+
+**Effect:** You can spend charges to activate one of the following effects. You can activate an effect multiple times. All charges disappear after using this ability.
+
+- 1 charge: You or an ally within your Summoner's Range can spend a Recovery.
+- 1 charge: You or an ally within your Summoner's Range gain a surge.
+- 2 charges: You call forth a signature minion into an unoccupied space within your Summoner's Range.
+
+<!-- @type: ability | @id: explosive-parade | @level: 1 -->
+#### Explosive Parade (5 Essence)
+
+*Your minions swell with energy until they can no longer exist in this realm.*
+
+| **Magic, Ranged** | **Main action** |
+|-------------------|----------------:|
+| **📏 Summoner's Range** | **🎯 Special** |
+
+**Power Roll + Reason:**
+
+- **≤11:** You summon four signature minions.
+- **12-16:** You summon five signature minions.
+- **17+:** You summon six signature minions.
+
+**Effect:** The minions are summoned within distance regardless of your minion maximum and without organizing them into squads. Each newly summoned minion immediately moves up to their speed toward a creature or object.
+
+If they move adjacent to their target, become targeted by an opportunity attack, or stop moving, they explode, dealing 2 damage to one adjacent creature or object and pushing them 1 square. If a target is affected by two or more minions' explosions, the effects stack. These minions activate no effects upon death, and you gain no essence from their deaths.
+
+**Special:** In addition to the minions summoned as a part of this ability, you can choose to command any number of your minions within distance, provided they haven't used a main action or maneuver during the turn.
