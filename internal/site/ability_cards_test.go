@@ -77,7 +77,7 @@ func TestRenderAbilityCard_LinkedPowerRollHeader(t *testing.T) {
 `
 	got := renderAbilityCard(fm, body)
 	wants := []string{
-		`sc-ability__pr-head`,                  // power-roll panel detected, not a plain section
+		`sc-ability__pr-head`,                   // power-roll panel detected, not a plain section
 		`<span class="pre">Power Roll +</span>`, // fixed eyebrow label
 		`>Might</a> or <a`,                      // characteristic links rendered (not escaped/dropped)
 		`data-tier="low"><span class="badge">!</span><span class="res">5 + M or A damage</span>`,
