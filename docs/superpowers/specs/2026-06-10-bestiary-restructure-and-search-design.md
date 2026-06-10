@@ -83,10 +83,19 @@ Browse section's `include:` in `v2/site.yaml`, and adding their cards to
 
 ### A3. Statblock paths
 
-Keep `monster/<group>/statblock/<item>` and
-`monster/<group>/<echelon>/statblock/<item>`. This is the most
-code-mirrors-path-consistent option (the `statblock` segment mirrors the
-`.statblock` SCC segment) and avoids URL churn.
+**Revised 2026-06-10 (post-implementation):** the `statblock/` folder is **hoisted
+out of the site URL** so statblocks sit directly under their group —
+`monster/<group>/<item>`, `monster/<group>/<echelon>/<item>`, and
+`retainer/<item>` — for a cleaner sidebar. The **SCC code keeps its `.statblock`
+segment** (`monster.<group>.statblock/<item>`): a deliberate code≠path divergence
+(see `scc-code-vs-path-principle`). Implemented by `hoistStatblockPath` in
+`build.go`; the group-landing assembler splits statblocks vs. featureblocks by
+frontmatter `type` (no longer by folder). SCC permalink stubs regenerate from each
+page's actual location, so `/scc/<code>/` redirects land on the hoisted URL.
+
+*(Original decision — superseded — was to keep `monster/<group>/statblock/<item>`
+as the most code-mirrors-path-consistent option; Scott chose the cleaner hoist on
+review.)*
 
 ### A4. Card data contract (data only; CSS deferred)
 

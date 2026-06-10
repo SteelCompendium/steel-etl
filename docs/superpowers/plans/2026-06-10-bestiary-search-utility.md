@@ -46,7 +46,7 @@
 - Create: `steel-etl/internal/site/bestiary_search.go`
 - Test: `steel-etl/internal/site/bestiary_search_test.go`
 
-Walk `docs/Browse/{monster,dynamic-terrain,retainer}` and extract each searchable leaf page's frontmatter. Type rules: a path under `monster/` **and** `statblock/` → `statblock`; under `retainer/` and `statblock/` → `retainer`; under `dynamic-terrain/` (a non-index leaf) → `terrain`. Group landings, malice featureblocks, and `index.md`/`_Index.md` are excluded. `href` points cross-tab from `Bestiary/` to the Browse page.
+Walk `docs/Browse/{monster,dynamic-terrain,retainer}` and extract each searchable leaf page's frontmatter. **The `statblock/` folder was hoisted away in a Part A follow-up (`hoistStatblockPath` in `build.go`), so classify by frontmatter `type` + tree, not by a `statblock/` path segment:** `type: statblock` under `monster/` → `statblock`; `type: statblock` under `retainer/` → `retainer`; `type: dynamic-terrain` → `terrain`. Group lore (`type: monster`), Malice/Tactical-Stance featureblocks (`type: featureblock`), and `index.md`/`_Index.md` are excluded. `href` points cross-tab from `Bestiary/` to the Browse page (no `statblock/` segment).
 
 - [ ] **Step 1: Write the failing test** — create `bestiary_search_test.go`:
 
@@ -72,17 +72,17 @@ func writeBrowseMD(t *testing.T, path, fm string) {
 
 func TestCollectBestiaryItems(t *testing.T) {
 	browse := filepath.Join(t.TempDir(), "Browse")
-	// a monster statblock
-	writeBrowseMD(t, filepath.Join(browse, "monster", "goblins", "statblock", "goblin-warrior.md"),
+	// a monster statblock (hoisted: sits directly under the group, no statblock/)
+	writeBrowseMD(t, filepath.Join(browse, "monster", "goblins", "goblin-warrior.md"),
 		"ev: \"3\"\nkeywords:\n    - Goblin\n    - Humanoid\nlevel: 1\nname: Goblin Warrior\norganization: Horde\nrole: Harrier\nsize: 1S\ntype: statblock\n")
-	// a malice featureblock (must be EXCLUDED — not under statblock/)
+	// a malice featureblock (must be EXCLUDED — type: featureblock)
 	writeBrowseMD(t, filepath.Join(browse, "monster", "goblins", "goblin-malice.md"),
 		"name: Goblin Malice\ntype: featureblock\n")
 	// a dynamic terrain leaf
 	writeBrowseMD(t, filepath.Join(browse, "dynamic-terrain", "mechanisms", "pillar.md"),
 		"ev: \"3\"\nlevel: \"2\"\nname: Pillar\nsize: One square\ntype: dynamic-terrain\n")
-	// a retainer
-	writeBrowseMD(t, filepath.Join(browse, "retainer", "statblock", "angulotl-hopper.md"),
+	// a retainer (also type: statblock, but under retainer/ → classified as retainer)
+	writeBrowseMD(t, filepath.Join(browse, "retainer", "angulotl-hopper.md"),
 		"ev: '-'\nkeywords:\n    - Angulotl\nlevel: 1\nname: Angulotl Hopper\nrole: Harrier\nsize: 1S\ntype: statblock\n")
 
 	items := collectBestiaryItems(browse)
@@ -104,7 +104,7 @@ func TestCollectBestiaryItems(t *testing.T) {
 	if len(gw.Keywords) != 2 || gw.Keywords[0] != "Goblin" {
 		t.Errorf("Goblin Warrior keywords wrong: %v", gw.Keywords)
 	}
-	if gw.Href != "../Browse/monster/goblins/statblock/goblin-warrior/" {
+	if gw.Href != "../Browse/monster/goblins/goblin-warrior/" {
 		t.Errorf("Goblin Warrior href wrong: %q", gw.Href)
 	}
 	if byName["Pillar"].Type != "terrain" {
@@ -155,22 +155,23 @@ type bestiaryItem struct {
 	Href         string   `json:"href"`
 }
 
-// bestiaryItemType classifies a Browse-relative slash path, or "" if the page
-// is not a searchable leaf (group landings, malice featureblocks, indexes).
-func bestiaryItemType(relSlash string) string {
+// bestiaryItemType classifies a Browse page by its frontmatter `type` + its tree
+// (the statblock/ folder was hoisted away, so the path no longer carries a
+// statblock segment). Returns "" for non-searchable pages (group lore, Malice
+// featureblocks, indexes).
+func bestiaryItemType(relSlash, fmType string) string {
 	base := relSlash[strings.LastIndexByte(relSlash, '/')+1:]
 	if base == "index.md" || base == "_Index.md" {
 		return ""
 	}
-	hasStatblock := strings.Contains(relSlash, "/statblock/")
 	switch {
-	case strings.HasPrefix(relSlash, "retainer/") && hasStatblock:
+	case fmType == "statblock" && strings.HasPrefix(relSlash, "retainer/"):
 		return "retainer"
-	case strings.HasPrefix(relSlash, "monster/") && hasStatblock:
+	case fmType == "statblock" && strings.HasPrefix(relSlash, "monster/"):
 		return "statblock"
-	case strings.HasPrefix(relSlash, "dynamic-terrain/"):
+	case fmType == "dynamic-terrain":
 		return "terrain"
-	default:
+	default: // featureblock, monster (group lore), anything else
 		return ""
 	}
 }
@@ -186,11 +187,11 @@ func collectBestiaryItems(browseDir string) []bestiaryItem {
 		}
 		rel, _ := filepath.Rel(browseDir, path)
 		relSlash := filepath.ToSlash(rel)
-		kind := bestiaryItemType(relSlash)
+		fm, _ := splitFrontmatter(readFile(path))
+		kind := bestiaryItemType(relSlash, strings.TrimSpace(parseFrontmatterField(fm, "type")))
 		if kind == "" {
 			return nil
 		}
-		fm, _ := splitFrontmatter(readFile(path))
 		lvl, _ := strconv.Atoi(unquote(parseFrontmatterField(fm, "level")))
 		var kw []string
 		for _, k := range parseFrontmatterList(fm, "keywords") {
@@ -260,7 +261,7 @@ Emit `docs/Bestiary/index.md`: search-excluded frontmatter + a short intro + the
 ```go
 func TestBuildBestiarySearchPage(t *testing.T) {
 	docs := t.TempDir()
-	writeBrowseMD(t, filepath.Join(docs, "Browse", "monster", "goblins", "statblock", "goblin-warrior.md"),
+	writeBrowseMD(t, filepath.Join(docs, "Browse", "monster", "goblins", "goblin-warrior.md"),
 		"ev: \"3\"\nlevel: 1\nname: Goblin Warrior\norganization: Horde\nrole: Harrier\nsize: 1S\ntype: statblock\n")
 
 	ok, err := buildBestiarySearchPage(docs)
@@ -277,7 +278,7 @@ func TestBuildBestiarySearchPage(t *testing.T) {
 		`<div class="sc-bestiary-mount">`,
 		`<script type="application/json" class="sc-browse-data">`,
 		`"name":"Goblin Warrior"`,
-		`"href":"../Browse/monster/goblins/statblock/goblin-warrior/"`,
+		`"href":"../Browse/monster/goblins/goblin-warrior/"`,
 	} {
 		if !strings.Contains(s, want) {
 			t.Errorf("search page missing %q in:\n%s", want, s)

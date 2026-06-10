@@ -1,5 +1,12 @@
 # Bestiary Restructure (Part A) Implementation Plan
 
+> **Status: implemented + merged 2026-06-10.** Follow-up superseding **Task A3**:
+> the `statblock/` folder was later **hoisted out of the site URL** (statblocks now
+> sit directly under their group — `monster/<group>/<item>`, `retainer/<item>`),
+> while the SCC code keeps its `.statblock` segment (code≠path). See
+> `hoistStatblockPath` in `build.go` and the spec's revised §A3. Tasks below reflect
+> the original "keep statblock/" decision and are kept as a historical record.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Move the monster / dynamic-terrain / retainer browse content out of the Bestiary tab into Browse as rich `.sc-card` index pages (with cleaned-up monster-group landings), and stand up a "coming soon" placeholder on the Bestiary tab.
