@@ -138,18 +138,38 @@ func TestMonsterGroupContent_Echelon(t *testing.T) {
 	grp := filepath.Join(root, "monster", "demons")
 	writeMD(t, filepath.Join(grp, "1st-echelon", "demon-malice-level-1.md"), "name: Demon Malice (Level 1)\ntype: featureblock\n")
 	writeMD(t, filepath.Join(grp, "1st-echelon", "statblock", "spite.md"), goblinWarriorFM)
+	writeMD(t, filepath.Join(grp, "2nd-echelon", "statblock", "wrath.md"), goblinWarriorFM)
 
-	got, ok := buildMonsterGroupContent(grp, "demons", nil, []string{"1st-echelon"})
+	// subdirs deliberately passed out of order to exercise the natural sort.
+	got, ok := buildMonsterGroupContent(grp, "demons", nil, []string{"2nd-echelon", "1st-echelon"})
 	if !ok {
 		t.Fatal("expected demons to be a monster group")
 	}
 	for _, want := range []string{
 		"## 1st Echelon",                                    // per-echelon sub-header
+		"## 2nd Echelon",
 		`href="1st-echelon/demon-malice-level-1/"`,          // echelon-relative featureblock href
 		`href="1st-echelon/statblock/spite/"`,               // echelon-relative statblock href
+		`href="2nd-echelon/statblock/wrath/"`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("echelon group missing %q in:\n%s", want, got)
+		}
+	}
+	// natural sort: 1st Echelon header must precede 2nd Echelon header.
+	if strings.Index(got, "## 1st Echelon") > strings.Index(got, "## 2nd Echelon") {
+		t.Errorf("echelons not natural-sorted (1st should precede 2nd):\n%s", got)
+	}
+}
+
+func TestFeatureblockLabel(t *testing.T) {
+	for _, tc := range []struct{ name, want string }{
+		{"Goblin Malice", "Malice"},
+		{"Tactical Stance", "Tactical Stance"},
+		{"Something Else", "Feature"},
+	} {
+		if got := featureblockLabel(tc.name); got != tc.want {
+			t.Errorf("featureblockLabel(%q) = %q, want %q", tc.name, got, tc.want)
 		}
 	}
 }

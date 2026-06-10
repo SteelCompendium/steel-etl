@@ -106,6 +106,8 @@ func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (str
 				}
 			}
 		}
+		// `plain` subdirs (e.g. a root statblock/) are intentionally ignored for
+		// echelon groups: their statblocks live inside the echelon dirs.
 		return sb.String(), true
 	}
 
@@ -146,7 +148,7 @@ func featureblockCards(dir, relPrefix string, files []string) string {
 	var sb strings.Builder
 	sb.WriteString("<div class=\"sc-cards\">\n")
 	for _, f := range files {
-		fm, _ := splitFrontmatter(readBestiaryFile(filepath.Join(dir, relPrefix, f)))
+		fm, _ := splitFrontmatter(readFile(filepath.Join(dir, relPrefix, f)))
 		name := parseFrontmatterField(fm, "name")
 		if name == "" {
 			name = fileToTitle(f)
@@ -184,7 +186,7 @@ func statblockCardsFromDir(sbDir, relPrefix string) string {
 	var files []string
 	for _, e := range entries {
 		n := e.Name()
-		if !e.IsDir() && strings.HasSuffix(n, ".md") && n != "index.md" {
+		if !e.IsDir() && strings.HasSuffix(n, ".md") && n != "index.md" && n != "_Index.md" {
 			files = append(files, n)
 		}
 	}
@@ -195,7 +197,7 @@ func statblockCardsFromDir(sbDir, relPrefix string) string {
 	var sb strings.Builder
 	sb.WriteString("<div class=\"sc-cards\">\n")
 	for _, f := range files {
-		fm, body := splitFrontmatter(readBestiaryFile(filepath.Join(sbDir, f)))
+		fm, body := splitFrontmatter(readFile(filepath.Join(sbDir, f)))
 		name := parseFrontmatterField(fm, "name")
 		if name == "" {
 			name = fileToTitle(f)
@@ -204,13 +206,4 @@ func statblockCardsFromDir(sbDir, relPrefix string) string {
 	}
 	sb.WriteString("</div>\n")
 	return sb.String()
-}
-
-// readBestiaryFile is a thin os.ReadFile wrapper returning "" on error.
-func readBestiaryFile(path string) string {
-	b, err := os.ReadFile(path)
-	if err != nil {
-		return ""
-	}
-	return string(b)
 }
