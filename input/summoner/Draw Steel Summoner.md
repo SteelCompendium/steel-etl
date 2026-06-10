@@ -1081,3 +1081,149 @@ The desolations have vaguely humanoid sand forms with no legs. Their glass hose 
 > ⭐️ **Shifting Sand Pit** 1 Essence
 >
 > When the desolation is reduced to 0 Stamina, the area within 1 square of the desolation becomes difficult terrain for enemies until the end of the encounter. You or an ally that enters the affected area can immediately shift 3.
+
+<!-- @type: monster-group | @domain: minion | @category: fey -->
+##### Fey Portfolio Signature Minion
+
+Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Nixie Soakreed
+
+These nixies are especially tiny. Their hair grows longer than their bodies and curls into reeds. The water soakreeds swim in tends to turn thick and cling to surfaces.
+
+| Nixie Soakreed | Fey | Signature Minion Controller | - | 1 essence per minion summoned |
+|:--------------:|:---:|:---------------------------:|:-:|:-----------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **−2**<br>Might | **−1**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Water Weird**
+>
+> Once per turn during their move action, each nixie under your control can teleport to a body of water within 5. The soakreed can't teleport into water created by their own soaking bog.
+
+> ⭐️ **Soaking Bog**
+>
+> The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < WEAK slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).
+
+> ⭐️ **Minuscule**
+>
+> The soakreed has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Pixie Bellringer
+
+The bellringers are glowing pixies that jingle as they fly. Historically, these pixies worked alongside bowman to ensure their arrows struck true.
+
+| Pixie Bellringer | Fey | Signature Minion Support | - | 1 essence per minion summoned |
+|:----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **−3**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Ringing Strike**
+>
+> The bellringer's free strikes grant an edge to the next strike made against the target, or a double edge if two or more bellringers strike the same target.
+
+> ⭐️ **Fairy Chime**
+>
+> Each ally within 1 square of a bellringer has a +1 to saving throws. Each enemy within 1 square of a bellringer has a −1 to saving throws.
+
+> ⭐️ **Minuscule**
+>
+> The bellringer has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Sprite Dandeknight
+
+Dandeknights are sprite warriors whose dragonfly wingbeats emit a tonal drone. They're usually clad in tassels that shift color as they swing their weapons.
+
+| Sprite Dandeknight | Fey | Signature Minion Harrier | - | 1 essence per minion summoned |
+|:-----------------:|:---:|:------------------------:|:-:|:-----------------------------:|
+| **1T**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Magic Strike**
+>
+> When the dandeknight strikes, you can choose one of the following damage types: acid, cold, corruption, fire, lightning, poison, or sonic. The strike deals that damage.
+
+> ⭐️ **Staccato Swings**
+>
+> When the dandeknight makes a free strike, they can make two free strikes instead. The damage is added together and treated as a single strike if both strikes hit the same target.
+
+> ⭐️ **Minuscule**
+>
+> The dandeknight has cover while occupying a larger creature's space.
+
+<!-- @type: monster-group | @domain: minion | @category: fey -->
+##### Fey Portfolio 3-Essence Minion
+
+Choose two of the following minions. You can use Call Forth to summon the listed number of 3-Essence minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Pixie Hydrain
+
+This pixie flies on a delicate array of vibrant flower petals for wings. The color drains from their wings as they call forth acid rain showers.
+
+| Pixie Hydrain | Fey | Minion Artillery | - | 3 essence for two minions |
+|:-------------:|:---:|:----------------:|:-:|:-------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
+| **Acid R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Acid**<br>Free Strike Damage Type |
+| **−3**<br>Might | **0**<br>Agility | **+1**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> 🏹 **Burning/Healing Rain 2d10 + R (Signature Ability)**
+>
+> | **Magic, Ranged, Strike** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Ranged 5** | **🎯 One creature or object per minion** |
+>
+> 5 acid damage; M < WEAK weakened (EoT)
+>
+> 7 acid damage; M < AVERAGE weakened (EoT)
+>
+> 9 acid damage; M < STRONG weakened (save ends)
+>
+> **Effect:** After the hydrain's squad uses this ability, you or one ally within distance can spend a Recovery or end a condition.
+
+> ⭐️ **Minuscule**
+>
+> The hydrain has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Pixie Loftlilly
+
+Loftlillies lazily drift through the air in flower cups. They sip on toxic nectar to emit a powerful haze from their skin.
+
+| Pixie Loftlilly | Fey | Minion Controller | - | 3 essence for two minions |
+|:---------------:|:---:|:-----------------:|:-:|:-------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
+| **Poison R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
+| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Floating Toxins**
+>
+> The area within 1 square of the loftlilly causes each enemy and object with a size equal to your Reason or smaller to float 1 square off the ground until they leave the area. A floating enemy that can't fly is unable to shift, moves 2 additional squares from forced movement, and has a bane on strikes.
+
+> ⭐️ **Minuscule**
+>
+> The loftlilly has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Sprite Orchiguard
+
+The orchiguard is a sprite surrounded by a wheel of shields. They are usually crushed by the pressures of their own impenetrable defenses before ever being felled by enemy hands.
+
+| Sprite Orchiguard | Fey | Minion Defender | - | 3 essence for two minions |
+|:-----------------:|:---:|:---------------:|:-:|:-------------------------:|
+| **1S**<br>Size | **6**<br>Speed | **8 \| 8**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
+| **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Fairy Guard**
+>
+> Each non-orchiguard ally takes half damage from abilities while within 1 square of the orchiguard. Whenever the orchiguard reduces damage this way, they take damage equal to half their maximum Stamina and their free strike damage increases by 1.
+
+> ⭐️ **Minuscule**
+>
+> The orchiguard has cover while occupying a larger creature's space.
