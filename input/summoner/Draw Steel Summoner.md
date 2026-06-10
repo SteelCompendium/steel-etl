@@ -917,3 +917,167 @@ The bengrul is an undulating heap of glass and flesh. They shatter pieces of the
 > ⭐️ **Soulsight**
 >
 > Each creature adjacent to the ensnarer can't be hidden from them.
+
+
+<!-- @type: monster-group | @domain: minion | @category: elemental -->
+##### Elemental Portfolio Signature Minion
+
+You gain the elemental mote and can choose one of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Elemental Mote
+
+This near-pure form of autonomous essence just barely maintains their form. They can shift their nature to match their surroundings.
+
+| Elemental Mote | Elemental | Signature Minion Hexer | - | 1 essence per minion summoned |
+|:--------------:|:---------:|:----------------------:|:-:|:-----------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **0**<br>Might | **0**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Dweomer Burst**
+>
+> When the mote is reduced to 0 Stamina, each enemy adjacent to the mote has a bane on their next strike.
+
+> ⭐️ **Catalyst**
+>
+> Once per turn, the mote can transform into an adjacent allied signature minion, maintaining their current Stamina. The minion must be reassigned to a new squad if their new name differs from the other squad members.
+>
+> Alternatively, you can spend 1 essence to transform the mote into any signature minion in the elemental portfolio you don't have, as if you summoned the new minion into the mote's space.
+
+<!-- @type: statblock -->
+####### Brisk Gale
+
+The gales are twisting ribbons of cloud and debris endlessly dancing in place. They disrupt the air and allow their allies to move freely.
+
+| Brisk Gale | Elemental (Air) | Signature Minion Harrier | - | 1 essence per minion summoned |
+|:----------:|:---------------:|:------------------------:|:-:|:-----------------------------:|
+| **1S**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
+| **−2**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Cutting the Air**
+>
+> The gale doesn't provoke opportunity attacks by moving.
+
+> ⭐️ **Whirlwind**
+>
+> When the gale is reduced to 0 Stamina, winds whip in their space until the end of the encounter. You or an ally that enters this space or starts their turn there can immediately shift (including vertically).
+
+<!-- @type: statblock -->
+####### Fire Plume
+
+A fire plume burns so bright that their true shape is hard to discern from the flames. They sputter and spit motes of fire in high arcs.
+
+| Fire Plume | Elemental (Fire) | Signature Minion Artillery | - | 1 essence per minion summoned |
+|:----------:|:----------------:|:--------------------------:|:-:|:-----------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **1**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
+| **Fire R**<br>Immunity | **—**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
+| **−2**<br>Might | **+1**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Spitfire Strike**
+>
+> The plume's ranged free strikes have a distance of 10.
+
+> ⭐️ **Pyre**
+>
+> When the plume is reduced to 0 Stamina, their space becomes wreathed in flames until the end of the encounter. An enemy that enters this space or starts their turn there takes 2 fire damage.
+
+<!-- @type: statblock -->
+####### Walking Boulder
+
+These massive clods of animated stone roll upon smaller piles of rocks that could be perceived as limbs. Walking boulders are useful for taking up space and forming barricades.
+
+| Walking Boulder | Elemental (Earth) | Signature Minion Defender | - | 1 essence per minion summoned |
+|:---------------:|:-----------------:|:-------------------------:|:-:|:-----------------------------:|
+| **2**<br>Size | **4**<br>Speed | **3**<br>Stamina | **R**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Obstruct**
+>
+> The boulder obstructs line of effect for enemies.
+
+> ⭐️ **Pile Up** 1 Essence
+>
+> When one or more boulders is reduced to 0 Stamina, they each leave behind a stone wall equal to their size in their space until the end of the encounter.
+
+> **Traits with an Essence Cost**
+>
+> Some minion stat blocks have traits that can only be activated if you spend the heroic resource listed in the top corner of the trait. For example, when a crux of ash is reduced to 0 Stamina, you can spend 1 essence to use their Ashen Cloud trait.
+
+<!-- @type: monster-group | @domain: minion | @category: elemental -->
+##### Elemental Portfolio 3-Essence Minion
+
+Choose two of the following minions. You can use Call Forth to summon the listed number of 3-Essence minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Crux of Ash
+
+The crux is a curtain of billowing hot ash with an avian head. They cover their victims in a burning cloak of charcoal and soot.
+
+| Crux of Ash | Elemental (Fire, Air) | Minion Ambusher | - | 3 essence for two minions |
+|:-----------:|:---------------------:|:---------------:|:-:|:-------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **0**<br>Stability | **5**<br>Free Strike |
+| **Fire R, Sonic R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **−2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Soot Strike**
+>
+> The crux's melee free strikes M < AVERAGE automatically hide each ally from the target until the start of the crux's next turn, until the target uses a maneuver to clear the soot, until the crux takes damage, or until the crux is destroyed.
+
+> ⭐️ **Ashen Cloud** 1 Essence
+>
+> When the crux is reduced to 0 Stamina, the area within 1 square of the crux is clouded by ash until it is dispersed by wind. You or any ally are concealed while occupying an affected square. An enemy can't establish line of effect beyond the ash while occupying an affected square.
+
+<!-- @type: statblock -->
+####### Flow of Magma
+
+This elemental is a long, serpentine creature of heated rock. Flows of magma drool trails of lava from their fangs after biting their prey.
+
+| Flow of Magma | Elemental (Fire, Earth) | Minion Harrier | - | 3 essence for two minions |
+|:-------------:|:-----------------------:|:--------------:|:-:|:-------------------------:|
+| **1L**<br>Size | **5**<br>Speed | **6 \| 6**<br>Stamina | **2**<br>Stability | **4**<br>Free Strike |
+| **Fire R**<br>Immunity | **Climb**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
+| **+2**<br>Might | **−2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> 🏹 **Molten Strike 2d10 + R (Signature Ability)**
+>
+> | **Magic, Melee, Strike** | **Main action** |
+> |--------------------------|----------------:|
+> | **📏 Melee 2** | **🎯 One creature or object per minion** |
+>
+> 4 fire damage; shift 3
+>
+> 6 fire damage; shift 4
+>
+> 8 fire damage; shift 5
+>
+> **Effect:** Each square that the flow shifts into becomes wreathed in flames until the start of the flow's next turn. An enemy that enters an affected square takes 2 damage.
+
+> ⭐️ **Eruption** 1 Essence
+>
+> When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < AVERAGE 4 fire damage.
+
+<!-- @type: statblock -->
+####### Desolation of Sand
+
+The desolations have vaguely humanoid sand forms with no legs. Their glass hose “arms” shift and bristle before firing high pressure streams of sand at their foes.
+
+| Desolation of Sand | Elemental (Air, Earth) | Minion Hexer | - | 3 essence for two minions |
+|:------------------:|:----------------------:|:------------:|:-:|:-------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
+| **Sonic R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **−2**<br>Presence |
+
+> ⭐️ **Burying Strike**
+>
+> The desolation's free strikes inflict M < AVERAGE slowed (save ends). If the target is already slowed, then they are M < STRONG restrained (EoT).
+
+> ⭐️ **Sand Through Your Fingers**
+>
+> The desolation doesn't provoke opportunity attacks by moving.
+
+> ⭐️ **Shifting Sand Pit** 1 Essence
+>
+> When the desolation is reduced to 0 Stamina, the area within 1 square of the desolation becomes difficult terrain for enemies until the end of the encounter. You or an ally that enters the affected area can immediately shift 3.
