@@ -121,9 +121,11 @@ func TestBuildCardsContent_Bestiary(t *testing.T) {
 
 	rt := filepath.Join(root, "retainer", "statblock")
 	writeMD(t, filepath.Join(rt, "angulotl-hopper.md"), hopperFM)
+	// routing is by segment presence, not case order: "monster" is absent from
+	// a retainer/statblock path, so the monster-statblock case can't fire.
 	got, ok = buildCardsContent(rt, "statblock", []string{"angulotl-hopper.md"}, nil)
 	if !ok || !strings.Contains(got, "Retainer Harrier") {
-		t.Errorf("retainer leaf should win over statblock:\n%s", got)
+		t.Errorf("retainer/statblock path should route to retainerCard, not statblockCard:\n%s", got)
 	}
 
 	dt := filepath.Join(root, "dynamic-terrain", "mechanisms")
