@@ -1007,6 +1007,11 @@ func buildIndexContent(dir, dirName string, files, subdirs []string) string {
 	if idx, ok := buildFeatureIndexContent(dir, dirName, files, subdirs); ok {
 		return idx
 	}
+	// Monster group landings (monster/<group>/) — featureblock + statblock cards;
+	// the lore is folded on top by mergeGroupLanding.
+	if grp, ok := buildMonsterGroupContent(dir, dirName, files, subdirs); ok {
+		return grp
+	}
 	title := dirToTitle(dirName)
 
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })

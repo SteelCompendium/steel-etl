@@ -107,6 +107,63 @@ func writeMD(t *testing.T, path, fm string) {
 	}
 }
 
+const goblinMaliceFM = "name: Goblin Malice\ntype: featureblock\n"
+
+func TestMonsterGroupContent_Flat(t *testing.T) {
+	root := t.TempDir()
+	grp := filepath.Join(root, "monster", "goblins")
+	writeMD(t, filepath.Join(grp, "goblin-malice.md"), goblinMaliceFM)
+	writeMD(t, filepath.Join(grp, "statblock", "goblin-warrior.md"), goblinWarriorFM)
+
+	got, ok := buildMonsterGroupContent(grp, "goblins",
+		[]string{"goblin-malice.md"}, []string{"statblock"})
+	if !ok {
+		t.Fatal("expected goblins to be a monster group")
+	}
+	for _, want := range []string{
+		"# Goblins\n\n---\n\n",                         // strippable head for mergeGroupLanding
+		`href="goblin-malice/"`,                        // featureblock card
+		`>Goblin Malice<`,
+		`href="statblock/goblin-warrior/"`,             // statblock card, group-relative href
+		`Horde Harrier`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("flat group missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestMonsterGroupContent_Echelon(t *testing.T) {
+	root := t.TempDir()
+	grp := filepath.Join(root, "monster", "demons")
+	writeMD(t, filepath.Join(grp, "1st-echelon", "demon-malice-level-1.md"), "name: Demon Malice (Level 1)\ntype: featureblock\n")
+	writeMD(t, filepath.Join(grp, "1st-echelon", "statblock", "spite.md"), goblinWarriorFM)
+
+	got, ok := buildMonsterGroupContent(grp, "demons", nil, []string{"1st-echelon"})
+	if !ok {
+		t.Fatal("expected demons to be a monster group")
+	}
+	for _, want := range []string{
+		"## 1st Echelon",                                    // per-echelon sub-header
+		`href="1st-echelon/demon-malice-level-1/"`,          // echelon-relative featureblock href
+		`href="1st-echelon/statblock/spite/"`,               // echelon-relative statblock href
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("echelon group missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestMonsterGroupContent_NotAGroup(t *testing.T) {
+	// the monster/ root itself and a statblock/ leaf are NOT groups
+	if _, ok := buildMonsterGroupContent("/x/monster", "monster", nil, []string{"goblins"}); ok {
+		t.Error("monster root should not be a group")
+	}
+	if _, ok := buildMonsterGroupContent("/x/monster/goblins/statblock", "statblock", []string{"a.md"}, nil); ok {
+		t.Error("statblock leaf should not be a group")
+	}
+}
+
 func TestBuildCardsContent_Bestiary(t *testing.T) {
 	root := t.TempDir()
 	sb := filepath.Join(root, "monster", "goblins", "statblock")
