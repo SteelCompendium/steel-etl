@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 
 	"github.com/SteelCompendium/steel-etl/internal/content"
@@ -287,6 +288,125 @@ func TestSCCAPIGenerator_NoSections(t *testing.T) {
 	if entry.URL != "https://example.com/type/item/" {
 		t.Errorf("url = %q, want fallback without section", entry.URL)
 	}
+}
+
+func TestSCCAPISchemeVersion(t *testing.T) {
+	t.Run("explicit_version", func(t *testing.T) {
+		dir := t.TempDir()
+		gen := &SCCAPIGenerator{
+			OutputDir:     dir,
+			BaseURL:       "https://example.com",
+			SchemeVersion: 2,
+		}
+		if err := gen.WriteSection("src/class/warrior", &content.ParsedContent{
+			Frontmatter: map[string]any{"name": "Warrior", "type": "class"},
+			ItemID:      "warrior",
+		}); err != nil {
+			t.Fatal(err)
+		}
+		if err := gen.Finalize(); err != nil {
+			t.Fatalf("Finalize: %v", err)
+		}
+
+		// index.json must have scheme_version: 2
+		var idx apiIndex
+		readJSON(t, filepath.Join(dir, "v1", "index.json"), &idx)
+		if idx.SchemeVersion != 2 {
+			t.Errorf("index.json scheme_version = %d, want 2", idx.SchemeVersion)
+		}
+
+		// scc.json must have top-level scheme_version: 2
+		var reg apiRegistry
+		readJSON(t, filepath.Join(dir, "v1", "scc.json"), &reg)
+		if reg.SchemeVersion != 2 {
+			t.Errorf("scc.json scheme_version = %d, want 2", reg.SchemeVersion)
+		}
+		// entries[] must NOT each carry scheme_version (keep lean)
+		raw, err := os.ReadFile(filepath.Join(dir, "v1", "scc.json"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		var rawReg map[string]json.RawMessage
+		if err := json.Unmarshal(raw, &rawReg); err != nil {
+			t.Fatal(err)
+		}
+		var entries []json.RawMessage
+		if err := json.Unmarshal(rawReg["entries"], &entries); err != nil {
+			t.Fatal(err)
+		}
+		if len(entries) == 0 {
+			t.Fatal("entries must not be empty")
+		}
+		for i, elem := range entries {
+			if strings.Contains(string(elem), "scheme_version") {
+				t.Errorf("entries[%d] should not contain scheme_version: %s", i, elem)
+			}
+		}
+
+		// types.json must have top-level scheme_version: 2
+		var types apiTypes
+		readJSON(t, filepath.Join(dir, "v1", "types.json"), &types)
+		if types.SchemeVersion != 2 {
+			t.Errorf("types.json scheme_version = %d, want 2", types.SchemeVersion)
+		}
+
+		// per-entry resolve file must include scheme_version: 2
+		resolveRaw, err := os.ReadFile(filepath.Join(dir, "v1", "resolve", "src", "class", "warrior.json"))
+		if err != nil {
+			t.Fatalf("read resolve file: %v", err)
+		}
+		var resolveEntry struct {
+			SCC           string `json:"scc"`
+			SchemeVersion int    `json:"scheme_version"`
+		}
+		if err := json.Unmarshal(resolveRaw, &resolveEntry); err != nil {
+			t.Fatalf("unmarshal resolve file: %v", err)
+		}
+		if resolveEntry.SCC != "src/class/warrior" {
+			t.Errorf("resolve scc = %q, want src/class/warrior", resolveEntry.SCC)
+		}
+		if resolveEntry.SchemeVersion != 2 {
+			t.Errorf("resolve scheme_version = %d, want 2", resolveEntry.SchemeVersion)
+		}
+	})
+
+	t.Run("zero_value_defaults_to_1", func(t *testing.T) {
+		dir := t.TempDir()
+		gen := &SCCAPIGenerator{
+			OutputDir: dir,
+			BaseURL:   "https://example.com",
+			// SchemeVersion deliberately left at zero
+		}
+		if err := gen.WriteSection("src/class/fighter", &content.ParsedContent{
+			Frontmatter: map[string]any{"name": "Fighter", "type": "class"},
+			ItemID:      "fighter",
+		}); err != nil {
+			t.Fatal(err)
+		}
+		if err := gen.Finalize(); err != nil {
+			t.Fatalf("Finalize: %v", err)
+		}
+
+		var idx apiIndex
+		readJSON(t, filepath.Join(dir, "v1", "index.json"), &idx)
+		if idx.SchemeVersion != 1 {
+			t.Errorf("index.json scheme_version = %d, want 1 (default)", idx.SchemeVersion)
+		}
+
+		resolveRaw, err := os.ReadFile(filepath.Join(dir, "v1", "resolve", "src", "class", "fighter.json"))
+		if err != nil {
+			t.Fatalf("read resolve file: %v", err)
+		}
+		var resolveEntry struct {
+			SchemeVersion int `json:"scheme_version"`
+		}
+		if err := json.Unmarshal(resolveRaw, &resolveEntry); err != nil {
+			t.Fatalf("unmarshal resolve file: %v", err)
+		}
+		if resolveEntry.SchemeVersion != 1 {
+			t.Errorf("resolve scheme_version = %d, want 1 (default)", resolveEntry.SchemeVersion)
+		}
+	})
 }
 
 func TestExtractSource(t *testing.T) {

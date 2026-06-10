@@ -198,6 +198,8 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		} else {
 			destRel, parentName = applyGroups(entry.relPath, section.Groups, entry.sourceDir)
 		}
+		// Collapse the redundant statblock/ folder out of the site URL (code≠path).
+		destRel = hoistStatblockPath(destRel)
 		destPath := filepath.Join(sectionDir, destRel)
 
 		if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {
@@ -486,6 +488,27 @@ func groupLandingIndexDest(relPath string) (string, bool) {
 		return parts[0] + "/" + member + "/index.md", true
 	}
 	return "", false
+}
+
+// hoistStatblockPath drops a non-leaf "statblock" segment under the monster/ or
+// retainer/ trees, so a Browse statblock page sits directly under its group
+// (monster/<group>/<item>, monster/<group>/<echelon>/<item>, retainer/<item>)
+// instead of behind a redundant statblock/ folder. The SCC CODE keeps its
+// `.statblock` segment — this is a deliberate code≠path divergence affecting
+// only the site URL/sidebar. Non-bestiary paths are returned unchanged.
+func hoistStatblockPath(relPath string) string {
+	parts := strings.Split(filepath.ToSlash(relPath), "/")
+	if len(parts) < 2 || (parts[0] != "monster" && parts[0] != "retainer") {
+		return relPath
+	}
+	out := make([]string, 0, len(parts))
+	for i, p := range parts {
+		if p == "statblock" && i < len(parts)-1 { // keep a leaf literally named statblock.md
+			continue
+		}
+		out = append(out, p)
+	}
+	return strings.Join(out, "/")
 }
 
 // mergeGroupLanding folds a relocated group-landing page (placed at dir/index.md
@@ -1006,6 +1029,11 @@ func buildIndexContent(dir, dirName string, files, subdirs []string) string {
 	// (parent-of-leaves) for the nested feature & treasure trees.
 	if idx, ok := buildFeatureIndexContent(dir, dirName, files, subdirs); ok {
 		return idx
+	}
+	// Monster group landings (monster/<group>/) — featureblock + statblock cards;
+	// the lore is folded on top by mergeGroupLanding.
+	if grp, ok := buildMonsterGroupContent(dir, dirName, files, subdirs); ok {
+		return grp
 	}
 	title := dirToTitle(dirName)
 

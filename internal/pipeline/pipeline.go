@@ -384,9 +384,10 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 	// SCC resolution API
 	if cfg.Output.SCCAPI.Enabled && cfg.Output.SCCAPI.OutputDir != "" {
 		apiGen := &output.SCCAPIGenerator{
-			OutputDir: cfg.ResolvePath(cfg.Output.SCCAPI.OutputDir),
-			BaseURL:   cfg.Output.SCCAPI.BaseURL,
-			Aliases:   sccRegistry.Aliases(),
+			OutputDir:     cfg.ResolvePath(cfg.Output.SCCAPI.OutputDir),
+			BaseURL:       cfg.Output.SCCAPI.BaseURL,
+			SchemeVersion: sccRegistry.SchemeVersion(),
+			Aliases:       sccRegistry.Aliases(),
 		}
 		if cfg.Output.SCCAPI.SiteConfig != "" {
 			siteCfg, err := site.LoadSiteConfig(cfg.ResolvePath(cfg.Output.SCCAPI.SiteConfig))

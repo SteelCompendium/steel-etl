@@ -1,6 +1,12 @@
 package scc
 
-import "testing"
+import (
+	"bytes"
+	"io"
+	"os"
+	"strings"
+	"testing"
+)
 
 func TestResolverResolveLinks(t *testing.T) {
 	reg := NewRegistry()
@@ -52,6 +58,30 @@ func TestResolverResolveLinks(t *testing.T) {
 			input:      "This is plain text with no links.",
 			relativeTo: "mcdm.heroes.v1/class/fury",
 			want:       "This is plain text with no links.",
+		},
+		{
+			name:       "explicit scc.v1 prefix resolves identically to bare",
+			input:      "See [Gouge](scc.v1:mcdm.heroes.v1/feature.ability.fury.level-1/gouge).",
+			relativeTo: "mcdm.heroes.v1/class/fury",
+			want:       "See [Gouge](../feature/ability/fury/level-1/gouge.md).",
+		},
+		{
+			name:       "format qualifier is stripped before lookup",
+			input:      "[Censor](scc:mcdm.heroes.v1/class/censor#yaml)",
+			relativeTo: "mcdm.heroes.v1/class/fury",
+			want:       "[Censor](censor.md)",
+		},
+		{
+			name:       "explicit version and format together",
+			input:      "[Censor](scc.v1:mcdm.heroes.v1/class/censor#json)",
+			relativeTo: "mcdm.heroes.v1/class/fury",
+			want:       "[Censor](censor.md)",
+		},
+		{
+			name:       "non-current scheme version is not resolvable, strips to text",
+			input:      "[Censor](scc.v2:mcdm.heroes.v1/class/censor)",
+			relativeTo: "mcdm.heroes.v1/class/fury",
+			want:       "Censor",
 		},
 	}
 
@@ -264,5 +294,46 @@ func TestResolverResolveFrontmatter(t *testing.T) {
 	}
 	if srcNested := src["nested"].(map[string]any); srcNested["detail"] != "see [restrained](scc:mcdm.heroes.v1/condition/restrained)" {
 		t.Errorf("input nested map was mutated: detail=%q", srcNested["detail"])
+	}
+}
+
+func TestResolverNonCurrentSchemeVersionWarns(t *testing.T) {
+	reg := NewRegistry()
+	reg.Add("mcdm.heroes.v1/class/censor")
+	resolver := NewResolver(reg, ".md")
+
+	// Capture stderr for the duration of the resolve.
+	old := os.Stderr
+	rPipe, wPipe, err := os.Pipe()
+	if err != nil {
+		t.Fatalf("os.Pipe failed: %v", err)
+	}
+	os.Stderr = wPipe
+
+	got := resolver.ResolveLinks(
+		"[Censor](scc.v10:mcdm.heroes.v1/class/censor)",
+		"mcdm.heroes.v1/class/fury",
+		LinkAll,
+	)
+
+	wPipe.Close()
+	os.Stderr = old
+	var buf bytes.Buffer
+	if _, err := io.Copy(&buf, rPipe); err != nil {
+		t.Fatalf("read captured stderr: %v", err)
+	}
+	stderr := buf.String()
+
+	// A non-current scheme version is not resolvable: strips to display text.
+	if got != "Censor" {
+		t.Errorf("got %q, want %q", got, "Censor")
+	}
+	// The WARN must name both the link's version (v10) and the build's (v1)
+	// and explain the link was not resolved.
+	if !strings.Contains(stderr, "v10") {
+		t.Errorf("WARN missing link version v10; stderr=%q", stderr)
+	}
+	if !strings.Contains(stderr, "not resolvable") {
+		t.Errorf("WARN missing explanation; stderr=%q", stderr)
 	}
 }
