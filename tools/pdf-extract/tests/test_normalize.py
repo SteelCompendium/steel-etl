@@ -6,11 +6,18 @@ def test_lowercases_and_splits_on_whitespace():
     assert normalize.wordbag("The Summoner Calls") == Counter(["the", "summoner", "calls"])
 
 
-def test_strips_surrounding_punctuation_but_keeps_internal():
-    # quotes/commas/periods dropped; intra-word hyphen/apostrophe kept
+def test_strips_punctuation_keeps_apostrophe_collapses_letter_hyphen():
+    # quotes/commas/periods dropped; apostrophe kept; letter-letter hyphen collapsed
+    # (so "rock-solid" == "rocksolid" — see _LETTER_HYPHEN rationale)
     assert normalize.wordbag('"rock-solid," she said.') == Counter(
-        ["rock-solid", "she", "said"]
+        ["rocksolid", "she", "said"]
     )
+
+
+def test_compound_hyphen_matches_whether_or_not_hyphenated():
+    # the line-break-hyphenation ambiguity: both forms collapse to one token
+    assert normalize.wordbag("tear-stained") == normalize.wordbag("tearstained")
+    assert normalize.wordbag("tear-\nstained") == normalize.wordbag("tearstained")
 
 
 def test_dehyphenates_line_break_splits():
