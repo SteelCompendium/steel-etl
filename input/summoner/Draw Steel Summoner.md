@@ -2485,3 +2485,513 @@ Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or
 > ⭐️ **Flesh to Mountains**
 >
 > When the titan is reduced to 0 Stamina, their space becomes difficult terrain. If a creature was prone underneath the titan when the titan is killed, they take 10 damage and are restrained (save ends).
+
+<!-- @type: feature | @id: 6th-level-features | @level: 6 -->
+### 6th-Level Features
+
+As a 6th-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: perk | @level: 6 -->
+#### Perk
+
+You gain an interpersonal, lore, or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
+
+<!-- @type: feature | @id: return-to-the-source | @level: 6 -->
+#### Return to the Source
+
+You can translate yourself and your allies into the space that your minions come from, as if summoning in reverse.
+
+When you take a respite, you teleport to your circle's source manifold or point of origin, as shown on the Circle's Source Manifold table. You can bring along any allies to gather resources or research details about that location's denizens. You are seen as a native resident of the location, but your allies might be seen as intruders.
+
+###### Circle's Source Manifold
+
+| Circle | Manifold or Point of Origin |
+|--------|-----------------------------|
+| Blight | Abyssal Waste |
+| Graves | Necropolitan Ruins (located within the Abyssal Waste) |
+| Spring | Arcadia |
+| Storms | Quintessence |
+
+At the end of the respite, you and everyone you brought with you immediately teleports back into the same location from which you made the portal.
+
+<!-- @type: feature | @id: minion-machinations | @level: 6 -->
+#### Minion Machinations
+
+Your maximum number of followers increases by 2.
+
+You can summon and recruit an artisan follower and a sage follower that share a keyword with a minion you can summon. These followers can be creatures from your portfolio or preexisting denizens of your circle's source manifold. See Follower Types under Attract Followers in Draw Steel: Heroes for information on constructing your followers' stats.
+
+<!-- @type: feature | @id: kit-improvement | @level: 6 -->
+#### Kit Improvement
+
+You can choose one additional ward from your Summoner's Kit.
+
+Additionally, whenever you reduce an enemy to 0 Stamina with your Summoner Strike ability, you can use Call Forth as a free maneuver. Minions summoned this way are unable to act during this turn.
+
+<!-- @type: feature | @id: 9-essence-ability | @level: 6 -->
+##### 9-Essence Ability
+
+You can summon the assistance of your future champion (see Portfolio Champion) and allow them to show off a brief display of their power. Select one of the following heroic abilities, each of which costs 9 essence to use.
+
+<!-- @type: ability | @id: a-champions-cry | @level: 6 -->
+#### A Champion's Cry (9 Essence)
+
+*Your champion unleashes a bellow that shakes you to your core.*
+
+| **Area, Champion, Magic** | **Main action** |
+|---------------------------|----------------:|
+| **📏 3 burst** | **🎯 Each enemy in the area** |
+
+**Power Roll + Reason:**
+
+- **≤11:** 2 psychic or sonic damage; I < WEAK frightened of you (save ends)
+- **12-16:** 5 psychic or sonic damage; I < AVERAGE frightened of you and all allies (EoT)
+- **17+:** 7 psychic or sonic damage; I < STRONG frightened of you and all allies (save ends)
+
+**Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
+
+<!-- @type: ability | @id: armys-idol | @level: 6 -->
+#### Army's Idol (9 Essence)
+
+*Your champion's appearance has an enchanting impact on you and your allies.*
+
+| **Area, Champion, Magic** | **Maneuver** |
+|---------------------------|-------------:|
+| **📏 4 burst** | **🎯 Self and each ally in the area** |
+
+**Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
+
+Until the end of the encounter or you become dying, each target has a +2 bonus to saving throws.
+
+Each target can immediately make each of their saving throws and stand up from prone.
+
+<!-- @type: ability | @id: the-champion-slams-the-earth | @level: 6 -->
+#### The Champion Slams the Earth (9 Essence)
+
+*Your champion lays their fury upon those unfortunate enough to be in their wake.*
+
+| **Area, Champion, Magic, Weapon** | **Main action** |
+|-----------------------------------|----------------:|
+| **📏 4 cube within 1** | **🎯 Each enemy and object in the area** |
+
+**Power Roll + Reason:**
+
+- **≤11:** 5 damage; M < WEAK prone and can't stand (save ends)
+- **12-16:** 8 damage; M < AVERAGE prone and can't stand (save ends)
+- **17+:** 11 damage; M < STRONG prone and can't stand (save ends)
+
+**Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
+
+**Special:** You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion).
+
+<!-- @type: ability | @id: their-pall-shrouds-all | @level: 6 -->
+#### Their Pall Shrouds All (9 Essence)
+
+*Your champion fills the area with a thick haze hiding friend from foe.*
+
+| **Area, Champion, Magic** | **Maneuver** |
+|---------------------------|-------------:|
+| **📏 4 burst** | **🎯 Each enemy in the area** |
+
+**Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
+
+Each target is R < AVERAGE weakened (save ends).
+
+Until the end of the encounter, whenever a target gets a tier 1 result on a strike, they deal half damage. If a target was striking a creature adjacent to one of their allies, they target their ally instead.
+
+<!-- @type: feature | @id: 7th-level-features | @level: 7 -->
+### 7th-Level Features
+
+As a 7th-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: characteristic-increase | @level: 7 -->
+#### Characteristic Increase
+
+All of your characteristics increase by 1, to a maximum score of 4.
+
+<!-- @type: feature | @id: minion-improvement | @level: 7 -->
+#### Minion Improvement
+
+At the start of each of your turns during combat, you can summon one additional signature minion at no cost into an unoccupied space within your Summoner's Range (no action required).
+
+Additionally, you can increase each of your minions' Stamina as shown on the 7th-Level Minion Stamina Increase table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 4).
+
+These benefits are not reflected in the stat blocks of new minions you acquire.
+
+###### 7th-Level Minion Stamina Increase
+
+| Minion | Stamina Increase |
+|--------|-----------------|
+| Signature Minion | Stamina +1 (to a total of +2) |
+| 3-Essence Minion | Stamina +3 (to a total of +6) |
+| 5-Essence Minion | Stamina +2 (to a total of +4) |
+| 7-Essence Minion | Stamina +5 |
+
+<!-- @type: feature | @id: font-of-creation | @level: 7 -->
+#### Font of Creation
+
+When you gain essence at the start of each of your turns during combat, you gain 3 essence instead of 2.
+
+<!-- @type: feature | @id: their-life-for-mine | @level: 7 -->
+#### Their Life for Mine
+
+If you or an ally within your Summoner's Range would die from an effect that isn't age related, you sacrifice all your active minions (minimum 1) and spend all your essence (minimum 1) as a free triggered action to bring the target back to life, reconstructing the damaged parts of their body with summoned material related to your portfolio. The target comes back with 0 Stamina plus 1 Stamina for each minion and essence used in the effect. You must have at least one fragment of the creature's remains, and the creature's soul must be willing to return to life for the effect to work.
+
+You can't use this feature again until you gain a new level, or until you spend 3 eidos to use it (see Eidos).
+
+<!-- @type: feature | @id: skill | @level: 7 -->
+#### Skill
+
+You gain one skill of your choice.
+
+<!-- @type: feature | @id: 8th-level-features | @level: 8 -->
+### 8th-Level Features
+
+As an 8th-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: perk | @level: 8 -->
+#### Perk
+
+You gain any one perk of your choice. See Perks in Draw Steel: Heroes for more information.
+
+<!-- @type: feature | @id: 8th-level-circle-feature | @level: 8 -->
+#### 8th-Level Circle Feature
+
+Your circle grants you a feature as shown on the 8th-Level Summoner Circle Features table.
+
+###### 8th-Level Summoner Circle Features
+
+| Circle | Feature |
+|--------|---------|
+| Blight | Abyssal Evolution |
+| Graves | Kill the Pain |
+| Spring | Celestial Grace |
+| Storms | Control the Elements |
+
+<!-- @type: feature | @id: abyssal-evolution | @level: 8 -->
+#### Abyssal Evolution
+
+At the start of each of your turns, you can transform up to two of your demon minions within your Summoner's Range. A demon can transform into a different demon minion within your Summoner's Range, maintaining their current Stamina. Starting from round 2, a demon can transform any demon minion you can call forth for half the essence cost, as if you summoned the new minion into the demon's space.
+
+The minions must be reassigned to a new squad if their new name differs from the other squad members.
+
+<!-- @type: feature | @id: celestial-grace | @level: 8 -->
+#### Celestial Grace
+
+Your number of Recoveries further increases by 2.
+
+Additionally, the area affected by your Pixie Dust feature and any of your fey minions' traits that affect adjacent creatures and/or the area within 1 or more squares of them increase that distance by 1 square.
+
+<!-- @type: feature | @id: control-the-elements | @level: 8 -->
+#### Control the Elements
+
+Whenever you use Call Forth, you can spend essence to change the size of one elemental minion you summon as shown on the following table.
+
+###### Control the Elements
+
+| Essence Cost | Size Change |
+|--------------|-------------|
+| 1 | The minion becomes size 2. |
+| 3 | The minion becomes size 3. |
+| 5 | The minion becomes size 4. |
+
+<!-- @type: feature | @id: kill-the-pain | @level: 8 -->
+#### Kill the Pain
+
+You aren't affected by excess damage after all minions in a squad are dead.
+
+Additionally, you and each of your undead minions ignore damage rolled as a d3 or a d6 and damage from environmental effects while you are not winded.
+
+<!-- @type: feature | @id: portfolio-champion | @level: 8 -->
+#### Portfolio Champion
+
+Your circle now allows you to add a champion to your portfolio. Champions follow the same rules as your other minions, with the following exceptions:
+
+- You can only summon and command one instance of your champion.
+- Your champion is in their own squad that does not count toward your maximum number of squads.
+- Your champion can regain Stamina and gain temporary Stamina.
+- Your champion uses your Recoveries to regain Stamina.
+- Your champion can take the Heal and Defend Actions.
+- Your champion uses the normal rules for maneuvers.
+- You have an edge whenever you use an ability with the Champion keyword from your Champion's space.
+- Your champion refuses to be referred to as a minion.
+
+After summoning a champion, you can't summon them again until you earn a Victory.
+
+Your champion gains additional features at 10th level. This includes a special Champion Action ability that costs eidos to use (see Eidos). This ability can be activated once per encounter at the end of any other creature's turn.
+
+<!-- @type: monster-group | @domain: champion | @category: demon -->
+##### Demon Portfolio Champion
+
+Your champion is an Aspect of a demon lord. They have borne witness to your exploits and struck a deal with you: Allow their children to feed and you can call forth a modicum of their power. Morality is none of their concern, but certainly a hero is enough of an arbiter of whose souls deserve to be fed to demons, right?
+
+The demon lord's Aspect enjoys bringing enemies in close with their appendages or flinging victims and throwing them to the gnashing horde. They're willing to put your connection to this world at risk if it means taking one more bite.
+
+<!-- @type: statblock -->
+####### Demon Lord's Aspect
+
+| — | Abyssal, Demon | Champion | - | 9 essence for one champion |
+|:-:|:--------------:|:--------:|:-:|:--------------------------:|
+| **2**<br>Size | **5**<br>Speed | **SPECIAL**<br>Stamina | **2**<br>Stability | **9**<br>Free Strike |
+| **Corruption 5**<br>Immunity | **Teleport**<br>Movement | - | **—**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+5**<br>Agility | **+5**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+
+Stamina: Your maximum Stamina
+
+> 🏹 **Grasping Appendages 2d10 + 5 (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Melee 5** | **🎯 Two creatures or objects** |
+>
+> 9 corruption damage; pull 2
+>
+> 12 corruption damage; pull 4
+>
+> 14 corruption damage; pull 5
+>
+> **Effect:** A target pulled adjacent to the Aspect is grabbed.
+
+> ⭐️ **Warping Strike**
+>
+> The Aspect's free strikes teleport the target 5 squares.
+
+> ⭐️ **Champion's Ire**
+>
+> If the Aspect only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+
+> ❗️ **I Like Your Taste**
+>
+> | **—** | **Free triggered action** |
+> |-------|---------------------------:|
+> | **📏 Self** | **🎯 Self** |
+>
+> **Trigger:** The Aspect takes damage from an enemy.
+>
+> **Effect:** The Aspect has a double edge on their next power roll. They can choose to give this benefit to an ally within your Summoner's Range instead.
+
+> ⭐️ **Frenzy**
+>
+> When the Aspect is reduced to 0 Stamina, they make a free strike against each adjacent enemy before dying.
+
+> **Level 10 Champion Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The Aspect is now size 3.
+>
+> ❗️ **Reality Flense**
+>
+> | **—** | **1 Eidos** |
+> |-------|------------:|
+> | **📏 20 burst** | **🎯 Self and each non-minion ally in the area** |
+>
+> **Champion Action**
+>
+> **Effect:** Each target teleports up to their speed and makes a free strike. If a target has a Save Ends condition, they can inflict the condition onto a creature with their strike and end the condition on themself.
+
+<!-- @type: monster-group | @domain: champion | @category: elemental -->
+##### Elemental Portfolio Champion
+
+Your champion is a Portent of a dragon yet to manifest. Through defending the innocent, you have made yourself and your elementals a close neighbor to the malice that threatens them. The dragon desires you bring their creation about and lends you strength to see your justice through.
+
+As a harbinger of ruin, the dragon's Portent has incredibly potent impact and control of the environment. Their final shape has yet to be determined; use this to your advantage and call upon the affinity that will end conflict the quickest.
+
+<!-- @type: statblock -->
+####### Dragon's Portent
+
+| — | Dragon, Elemental | Champion | - | 9 essence for one champion |
+|:-:|:-----------------:|:--------:|:-:|:--------------------------:|
+| **2**<br>Size | **6**<br>Speed | **SPECIAL**<br>Stamina | **4**<br>Stability | **9**<br>Free Strike |
+| **Affinity 5**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Affinity**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+2**<br>Agility | **+5**<br>Reason | **+5**<br>Intuition | **+2**<br>Presence |
+
+Stamina: Your maximum Stamina
+
+> ⭐️ **Affinity**
+>
+> The Portent selects an affinity for one of the following damage types when they are summoned: acid, cold, corruption, fire, lightning, or poison. This type determines the Portent's affinity immunity and the damage type of their abilities.
+
+> 🏹 **Elemental Tail Swing 2d10 + 5 (Signature Ability)**
+>
+> | **Charge, Melee, Strike, Weapon** | **Main action** |
+> |-----------------------------------|----------------:|
+> | **📏 Melee 2** | **🎯 Two creatures or objects** |
+>
+> 9 affinity damage; push 2
+>
+> 12 affinity damage; push 4
+>
+> 14 affinity damage; push 6
+
+> ⭐️ **Sealing Strike**
+>
+> The Portent's free strikes inflict M < STRONG slowed (save ends). While slowed this way, the target takes 1d6 affinity damage at the start of each of their turns.
+
+> ⭐️ **Champion's Ire**
+>
+> If the Portent only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+
+> ⭐️ **Searing Wyrmscale**
+>
+> Whenever an adjacent creature deals damage to the Portent, they take 4 affinity damage.
+
+> ⭐️ **Dragon Heart**
+>
+> Once per turn, the Portent can take 10 damage to allow you or an ally within your Summoner's Range to gain 1 heroic resource. This damage can't be reduced in any way.
+
+> **Level 10 Champion Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The Portent is now size 3.
+>
+> ❗️ **A Breath Felt in a Hurricane**
+>
+> | **Area, Magic, Ranged** | **1 Eidos** |
+> |-------------------------|------------:|
+> | **📏 4 cube within 10** | **🎯 Each enemy and object in the area** |
+>
+> **Champion Action**
+>
+> **Effect:** 9 affinity damage. The damage ignores immunity. The affected area becomes difficult terrain. An enemy has affinity weakness 5 while occupying an affected square.
+
+<!-- @type: monster-group | @domain: champion | @category: fey -->
+##### Fey Portfolio Champion
+
+Your champion is an Attendant of a celestial. Whenever you call on their assistance, you must formally welcome and introduce them to the occasion. You can't be certain if this is truly the blessing of a celestial you've previously allied yourself with, or if you've received someone else's power—neither circumstance puts you in any less danger.
+
+The celestial Attendant wants to swarm the map with pixies while limiting their foes' ability to do anything about it. A single neurotoxic strike is all it takes to move everyone into position.
+
+<!-- @type: statblock -->
+####### Celestial Attendant
+
+| — | Fey | Champion | - | 9 essence for one champion |
+|:-:|:---:|:--------:|:-:|:--------------------------:|
+| **2**<br>Size | **7**<br>Speed | **SPECIAL**<br>Stamina | **0**<br>Stability | **9**<br>Free Strike |
+| **Damage 2**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Poison**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+2**<br>Agility | **+5**<br>Reason | **+2**<br>Intuition | **+5**<br>Presence |
+
+Stamina: Your maximum Stamina
+
+> 🏹 **Pixie Swarm 2d10 + 5 (Signature Ability)**
+>
+> | **Magic, Ranged, Strike** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Ranged 10** | **🎯 Two creatures or objects** |
+>
+> 9 damage; slide 3
+>
+> 12 damage; slide 5
+>
+> 14 damage; slide 6
+>
+> **Effect:** An ally targeted by this ability can, instead, spend Recovery and shift the slide amount.
+
+> ⭐️ **Neurotoxic Strike**
+>
+> A creature that takes damage from the Attendant's free strike is I < AVERAGE unable to establish line of effect beyond 3 squares (EoT).
+
+> ⭐️ **Champion's Ire**
+>
+> If the Attendant only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+
+> ❗️ **Celestial Bell**
+>
+> | **—** | **Free triggered action** |
+> |-------|---------------------------:|
+> | **📏 Self** | **🎯 Self** |
+>
+> **Trigger:** The Attendant takes damage from an enemy.
+>
+> **Effect:** The Attendant rings a bell, and you summon a signature minion into an unoccupied space adjacent to the Attendant.
+
+> ⭐️ **Pixie Bouquet**
+>
+> The Attendant starts their turn with temporary Stamina equal to 2 × the number of fey minions within 1 square of them. This temporary Stamina lasts until the start of their next turn.
+
+> **Level 10 Champion Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The Attendant is now size 3.
+>
+> ❗️ **A Shower of Dust**
+>
+> | **—** | **1 Eidos** |
+> |-------|------------:|
+> | **📏 20 burst** | **🎯 Self and each non-minion ally in the area** |
+>
+> **Champion Action**
+>
+> **Effect:** Each target gains 20 temporary Stamina and receives the benefits of one of your Flash Powder effects until the end of their next turn.
+
+<!-- @type: monster-group | @domain: champion | @category: undead -->
+##### Undead Portfolio Champion
+
+Your champion is an Avatar of death. The number of creatures you and your army have laid to rest now hangs above your head and threatens to crush your skull at any moment. You were unable to gain the power of the ultimate force of nature without a memento mori to keep you humble.
+
+The Avatar of death weighs down their foes with conditions so their army can take care of the rest. If an enemy can't handle it, well then maybe they should just die.
+
+<!-- @type: statblock -->
+####### Avatar of Death
+
+| — | Undead | Champion | - | 9 essence for one champion |
+|:-:|:------:|:--------:|:-:|:--------------------------:|
+| **2**<br>Size | **6**<br>Speed | **SPECIAL**<br>Stamina | **3**<br>Stability | **9**<br>Free Strike |
+| **Corruption 5, poison 5**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Holy**<br>Free Strike Damage Type |
+| **+5**<br>Might | **+2**<br>Agility | **+5**<br>Reason | **+2**<br>Intuition | **+2**<br>Presence |
+
+Stamina: Your maximum Stamina
+
+> 🏹 **Culling Scythe 2d10 + 5 (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Melee 2** | **🎯 Two creatures or objects** |
+>
+> 9 corruption damage; M < WEAK bleeding (save ends)
+>
+> 12 corruption damage; M < AVERAGE bleeding (save ends)
+>
+> 14 corruption damage; M < STRONG bleeding (save ends)
+>
+> **Effect:** If the target is a creature that isn't a leader or a solo and they are still bleeding at the end of the encounter, they instantly die.
+
+> ⭐️ **Revelation Strike**
+>
+> The Avatar's melee free strikes P < WEAK instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.
+
+> ⭐️ **Champion's Ire**
+>
+> If the Avatar only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+
+> ❗️ **Dust and Rot**
+>
+> | **Area** | **Free triggered action** |
+> |----------|---------------------------:|
+> | **📏 1 burst** | **🎯 Each enemy in the burst** |
+>
+> **Trigger:** The Avatar takes damage.
+>
+> **Effect:** M < AVERAGE weakened (EoT).
+
+> ⭐️ **Drifting Spirit**
+>
+> The Avatar is unaffected by difficult terrain and damage from forced movement.
+
+> **Level 10 Champion Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The Avatar is now size 3.
+>
+> ❗️ **Gravemaker**
+>
+> | **Area, Magic, Ranged** | **1 Eidos** |
+> |-------------------------|------------:|
+> | **📏 5 × 3 line within 1** | **🎯 Each enemy and object in the line** |
+>
+> **Champion Action**
+>
+> **Effect:** 9 holy damage. Each target is vertically pulled a number of squares equal to their size straight down, ignoring stability. If the target would be force moved into the ground, they are buried beneath the ground instead.
