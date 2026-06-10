@@ -561,3 +561,359 @@ You have the following ability.
 **Signature Minions:** You summon one signature minion for each essence you spend on this ability.
 
 **All Other Minions:** You summon the set number of minions listed on the stat block for their essence cost.
+
+<!-- @type: feature | @id: minion-bridge | @level: 1 -->
+### Minion Bridge
+
+You have the following maneuver.
+
+<!-- @type: ability | @id: minion-bridge -->
+#### Minion Bridge
+
+*Your minions do everything in their power to form a safe path for you to cross.*
+
+| **Magic**   | **Maneuver** |
+|-------------|-------------:|
+| **📏 Melee 1** | **🎯 One of your minions** |
+
+**Effect:** You shift into a square adjacent to the target, including vertically.
+
+You can shift into squares that contain one of your minions, even if they occupy difficult terrain. Each time you shift into a square that contains one of your minions while using this maneuver, you can shift an additional square.
+
+**1 Essence:** An adjacent ally can shift alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
+
+<!-- @type: feature | @id: 1st-level-circle-features | @level: 1 -->
+### 1st-Level Circle Features
+
+Your circle grants you features as shown on the 1st-Level Summoner Circle Features table.
+
+###### 1st-Level Summoner Circle Features
+
+| Circle | Feature |
+|--------|---------|
+| Blight | Death Snap, Soulsense |
+| Graves | Dead Men Tell All Tales, Rise! |
+| Spring | Fairy Whispers, Pixie Dust |
+| Storms | Elemental Affinity, Heart of Nature |
+
+<!-- @type: feature | @id: dead-men-tell-all-tales | @level: 1 -->
+#### Dead Men Tell All Tales
+
+You can touch the corpse of a creature who died within the past week and ask them a question. The corpse can choose to answer the question to the best of their ability. Each additional question you ask the corpse requires a medium Reason test, where failure or consequence breaks your connection with the corpse permanently.
+
+The corpse can also choose to refuse to answer or lie, especially if you were the one to kill them in the first place.
+
+<!-- @type: feature | @id: death-snap | @level: 1 -->
+#### Death Snap
+
+Whenever one of your demon minions would die unwillingly, they can deal damage to an adjacent creature equal to their free strike value before dying.
+
+<!-- @type: feature | @id: elemental-affinity | @level: 1 -->
+#### Elemental Affinity
+
+Whenever you use Call Forth to summon one or more non-signature elemental minions, you can summon one bonus signature minion at no cost. You can choose between a signature minion that shares an Element keyword with the minions you summoned (such as Fire, Earth, or Air) or an elemental mote.
+
+<!-- @type: feature | @id: fairy-whispers | @level: 1 -->
+#### Fairy Whispers
+
+Whenever you send a minion to perform a task for you outside of combat, they can bring back a rumor from the destination to which you sent them. When the minion returns, make a Reason test:
+
+- **≤11:** You learn an undoubtedly false common rumor.
+- **12-16:** You learn a common rumor that is most likely true.
+- **17+:** You learn an obscure rumor that could either be true or false.
+
+You gain a bane on the test for each subsequent rumor you collect either on the same day or in the same location.
+
+<!-- @type: feature | @id: heart-of-nature | @level: 1 -->
+#### Heart of Nature
+
+You can sense the presence of creatures with the Elemental or Dragon keywords within 1 mile of you. You can innately feel their emotions or pain, and you can't obtain lower than a tier 2 outcome on any Intuition test made to socially interact with them.
+
+<!-- @type: feature | @id: pixie-dust | @level: 1 -->
+#### Pixie Dust
+
+Increase your number of Recoveries by 2.
+
+Whenever one of your fey minions dies within your Summoner's Range, you can spend a Recovery to give temporary Stamina equal to twice your Reason score to each non-minion ally adjacent to the minion when they died.
+
+<!-- @type: feature | @id: rise | @level: 1 -->
+#### Rise!
+
+Once per round, when a creature dies unwillingly within your Summoner's Range, you can use a triggered action to summon a signature undead minion in their space at no cost, even if you're at your minion maximum, but only if they can be organized into one of your squads. The new minion can't act until the start of your next turn.
+
+This ability becomes a free triggered action if the target was a minion (either yours or an enemy).
+
+<!-- @type: feature | @id: soulsense | @level: 1 -->
+#### Soulsense
+
+While you have line of effect to a creature with a soul, you can perceive a trail of where the creature has been in the last number of minutes equal to 5 × your level.
+
+When you finish a respite, you can always perceive the soul trails of each creature that took the respite with you until your next respite.
+
+<!-- @type: feature | @id: formation | @level: 1 -->
+### Formation
+
+You've practiced a specific formation for your minions. Choose one of the following formations: horde, platoon, elite, or leader. You can change your formation along with your quick command (see Quick Command) by performing intense study as a respite activity. (*Quick Build:* Platoon Formation.)
+
+<!-- @type: feature | @id: horde-formation | @level: 1 -->
+#### Horde Formation
+
+Your maximum number of minions increases by 4 and you summon up to four of your signature minions at the start of each of your turns instead of three.
+
+<!-- @type: feature | @id: platoon-formation | @level: 1 -->
+#### Platoon Formation
+
+Whenever one of your squads uses a damaging ability, choose one target of that ability to take additional damage equal to your Reason score.
+
+<!-- @type: feature | @id: elite-formation | @level: 1 -->
+#### Elite Formation
+
+Each of your minions have their Stamina increased by 3 and their stability increased by 1.
+
+<!-- @type: feature | @id: leader-formation | @level: 1 -->
+#### Leader Formation
+
+You aren't affected by excess damage after all minions in a squad are dead. If your minion is within your Summoner's Range when they take damage, you can choose to take damage in place of the minion.
+
+Additionally, you can use light armor treasures and light weapon treasures while you don't have a kit.
+
+> **Minions and Treasures**
+>
+> Treasures in Draw Steel are typically worded for you to use, which might create ambiguity for a summoner managing an army. You can use the following guidelines to ensure the treasures you come across in your adventures do what they were intended to do.
+>
+> - Treasures that give you a damage bonus to rolled damage only apply to power rolls made from a non-minion's space. However, when you use Strike for Me, any bonus damage is applied to each enemy and object that took damage.
+> - Once you reach level 4 as a summoner, you regain access to your normal free strike abilities while wielding a weapon treasure, an implement treasure, or any treasure that enables you to make a free strike as a part of its effect.
+> - Treasures that increase the distance of ranged magic abilities also increase the distance of your Summoner's Range.
+
+<!-- @type: feature | @id: quick-command | @level: 1 -->
+### Quick Command
+
+You have a special command you can issue to your minions. Choose one of the following quick commands. You can change your quick command along with your formation (see Formation) by performing intense study as a respite activity. (*Quick Build:* Shield!)
+
+<!-- @type: feature | @id: focus-fire | @level: 1 -->
+#### Focus Fire!
+
+You have the following triggered action.
+
+<!-- @type: ability | @id: focus-fire -->
+#### Focus Fire!
+
+*You ensure the enemy can't escape the incoming attack.*
+
+| **—** | **Triggered** |
+|-------|-------------:|
+| **📏 Summoner's Range** | **🎯 Self or one ally** |
+
+**Trigger:** The target deals damage to another creature.
+
+**Effect:** The target gains a surge for each of your minions adjacent to them (up to a maximum of 3 surges), which they can use on the triggering damage.
+
+**Spend 1 Essence:** If the triggering damage is from an ability that uses a power roll, the power roll gains an edge.
+
+<!-- @type: feature | @id: halt | @level: 1 -->
+#### Halt!
+
+You have the following triggered action.
+
+<!-- @type: ability | @id: halt -->
+#### Halt!
+
+*You order a minion to get in the way.*
+
+| **—** | **Triggered** |
+|-------|-------------:|
+| **📏 Summoner's Range** | **🎯 One creature** |
+
+**Trigger:** The target starts their turn, moves, or is force moved.
+
+**Effect:** You summon a signature minion in an unoccupied space adjacent to the target. If the target is force moved into the minion, you can choose to make the target take no damage from the collision.
+
+**Special:** Instead of summoning a new minion, you can command one of your minions within distance to shift up to their speed toward a square adjacent to the target before any additional effects occur.
+
+<!-- @type: feature | @id: not-yet | @level: 1 -->
+#### Not Yet!
+
+You have the following triggered action.
+
+<!-- @type: ability | @id: not-yet -->
+#### Not Yet! (3 Essence)
+
+*I command you to not die.*
+
+| **—** | **Triggered** |
+|-------|-------------:|
+| **📏 Summoner's Range** | **🎯 One ally** |
+
+**Trigger:** The target receives enough damage to die or be destroyed.
+
+**Special:** If the target is a minion, they must be the only minion remaining in their squad.
+
+**Effect:** The damage the target receives is reduced by an amount that leaves the target alive with 1 point of Stamina.
+
+<!-- @type: feature | @id: shield | @level: 1 -->
+#### Shield!
+
+You have the following triggered action.
+
+<!-- @type: ability | @id: shield -->
+#### Shield!
+
+*You call upon a minion to use their body to dampen the blow.*
+
+| **—** | **Triggered** |
+|-------|-------------:|
+| **📏 Summoner's Range** | **🎯 Self or one ally** |
+
+**Trigger:** The target is targeted by a strike.
+
+**Effect:** If one of your minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.
+
+**Spend 1 Essence:** Instead of commanding an existing minion, you summon a signature minion into an unoccupied space adjacent to the target to take the strike.
+
+<!-- @type: feature | @id: portfolio | @level: 1 -->
+### Portfolio
+
+Your portfolio comprises the minions you've learned to summon. Each summoner circle specializes in a portfolio of creatures with which the summoner can build their armies, as shown on the Summoner Circle Portfolio table. Your circle allows you to select minions to add to your own portfolio.
+
+###### Summoner Circle Portfolio
+
+| Circle | Portfolio |
+|--------|-----------|
+| Blight | Demon Portfolio |
+| Graves | Undead Portfolio |
+| Spring | Fey Portfolio |
+| Storms | Elemental Portfolio |
+
+<!-- @type: monster-group | @domain: minion | @category: demon -->
+##### Demon Portfolio Signature Minion
+
+Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Ensnarer
+
+This vaguely humanoid form is warped and distorted by a demon nestled inside them. They extend long tongues from multiple orifices to drag victims in close.
+
+| Ensnarer | Abyssal, Demon | Signature Minion Brute | - | 1 essence per minion summoned |
+|:--------:|:--------------:|:----------------------:|:-:|:-----------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Extended Barbed Strike**
+>
+> The ensnarer's melee free strikes have a distance of 3 and inflict pull 1. The pull distance increases by 1 for each additional ensnarer striking the same target. Choose the ensnarer that the target is being pulled to before applying forced movement.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the ensnarer can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Rasquine
+
+The rasquine are skulking demons that shimmer in the light. They teleport into position before biting the necks of their prey.
+
+| Rasquine | Abyssal, Demon | Signature Minion Ambusher | - | 1 essence per minion summoned |
+|:--------:|:--------------:|:-------------------------:|:-:|:-----------------------------:|
+| **1S**<br>Size | **4**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |
+| **—**<br>Immunity | **Teleport**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **−1**<br>Might | **0**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Skulker**
+>
+> Once per turn, the rasquine can hide as a free maneuver after teleporting.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the rasquine can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Razor
+
+Razors appear to be a diminutive variant of the ruinant demon. Their bodies are swift, tumbling mounds of scarred flesh and deadly claws.
+
+| Razor | Abyssal, Demon | Signature Minion Harrier | - | 1 essence per minion summoned |
+|:-----:|:--------------:|:------------------------:|:-:|:-----------------------------:|
+| **1M**<br>Size | **6**<br>Speed | **2**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **0**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Teeth!**
+>
+> Once per turn, whenever an adjacent enemy grabs the razor or uses a melee ability against them, that enemy takes 1 damage for each razor adjacent to them.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the razor can't be hidden from them.
+
+<!-- @type: monster-group | @domain: minion | @category: demon -->
+##### Demon Portfolio 3-Essence Minion
+
+Choose two of the following minions. You can use Call Forth to summon the listed number of 3-Essence minions for their essence cost.
+
+<!-- @type: statblock -->
+####### Archer Spittlich
+
+These minor demons resemble larger pitlings. They can spit a nerve-numbing phlegm at long distance that makes it easy to catch their next meal.
+
+| Archer Spittlich | Abyssal, Demon | Minion Artillery | - | 3 essence for two minions |
+|:----------------:|:--------------:|:----------------:|:-:|:-------------------------:|
+| **1S**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **2**<br>Stability | **5**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
+| **0**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+
+> ⭐️ **Splash Strike**
+>
+> The spittlich's ranged free strikes have a distance of 10 and deal 2 poison damage to an enemy adjacent to the target. Creatures that take poison damage from this spittlich can't shift until the start of the spittlich's next turn.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the spittlich can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Fanged Musilex
+
+Ensnarers knot and twist their bodies together to form heaving, heavy musilexes. They're compelled to drag everything in toward their body.
+
+| Fanged Musilex | Abyssal, Demon | Minion Brute | - | 3 essence for two minions |
+|:--------------:|:--------------:|:------------:|:-:|:-------------------------:|
+| **1L**<br>Size | **6**<br>Speed | **6 \| 6**<br>Stamina | **1**<br>Stability | **5**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+
+> ⭐️ **Mawful Strike**
+>
+> The musilex's melee free strikes have a distance of 2 + R and inflict pull 2. The pull distance increases by 2 for each additional musilex striking the same target. Choose the musilex that the target is being pulled to before applying forced movement. If the target is pulled adjacent to the musilex, the musilex either deals an additional 2 damage or grabs them.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the musilex can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Twisted Bengrul
+
+The bengrul is an undulating heap of glass and flesh. They shatter pieces of themselves to disrupt senses and inflict grisly wounds on their prey.
+
+| Twisted Bengrul | Abyssal, Demon | Minion Hexer | - | 3 essence for two minions |
+|:---------------:|:--------------:|:------------:|:-:|:-------------------------:|
+| **1L**<br>Size | **5**<br>Speed | **5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Psychic**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+1**<br>Agility | **−1**<br>Reason | **−1**<br>Intuition | **0**<br>Presence |
+
+> 🏹 **Mind Twist 2d10 + R (Signature Ability)**
+>
+> | **Magic, Ranged, Strike** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Ranged 5** | **🎯 One creature or object per minion** |
+>
+> 4 damage; P < WEAK twisted (save ends)
+>
+> 6 damage; P < AVERAGE twisted (save ends)
+>
+> 8 damage; P < STRONG twisted (save ends)
+>
+> **Effect:** A twisted target can't take advantage of edges or search for hidden creatures until the condition ends.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the ensnarer can't be hidden from them.
