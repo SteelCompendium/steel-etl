@@ -126,6 +126,8 @@ card exposes.
 
 ## Part B-shell — Search & Filter utility
 
+> **Status (2026-06-10): SHIPPED (v1).** Implemented per `…/plans/2026-06-10-bestiary-search-utility.md`: `internal/site/bestiary_search.go` (`collectBestiaryItems` + `buildBestiarySearchPage`, hooked in `Build()`) emits the `.sc-bestiary-mount` data island; `v2/docs/javascripts/steel-bestiary-browser.js` (`window.SCBestiary`) + `steel-bestiary.css` provide the search box, facets (Type/Role/Organization/Size/Keyword), Level/EV range filters, and sortable results table. The advanced condition/effect querying (B5 seam) remains deferred pending the community effect dataset.
+
 ### B1. Architecture
 
 Static-site friendly, no backend, and — importantly — **built on the existing
