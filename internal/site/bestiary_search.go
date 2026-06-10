@@ -100,5 +100,36 @@ func unquote(s string) string {
 	return s
 }
 
-// (json import is used by buildBestiarySearchPage in Task 2.)
-var _ = json.Marshal
+// buildBestiarySearchPage writes docs/Bestiary/index.md: the Search & Filter
+// landing carrying a .sc-bestiary-mount JSON data island over every Browse
+// statblock / terrain / retainer. Returns false (no write) when there are no
+// items, so a build without the Monsters book leaves no empty tab.
+func buildBestiarySearchPage(docsDir string) (bool, error) {
+	items := collectBestiaryItems(filepath.Join(docsDir, "Browse"))
+	if len(items) == 0 {
+		return false, nil
+	}
+	data, err := json.Marshal(items) // default escapes <,>,& → safe inside <script>
+	if err != nil {
+		return false, err
+	}
+	var sb strings.Builder
+	sb.WriteString("---\nsearch:\n  exclude: true\n---\n\n")
+	sb.WriteString("# Bestiary — Search & Filter\n\n")
+	sb.WriteString("Find statblocks, dynamic terrain, and retainers across every sourcebook. " +
+		"Search by name, filter by type, role, organization, size, or keyword, and narrow by " +
+		"**Level** and **EV** range — then jump straight to the page you need.\n\n")
+	sb.WriteString("<div class=\"sc-bestiary-mount\">\n")
+	sb.WriteString("<script type=\"application/json\" class=\"sc-browse-data\">\n")
+	sb.Write(data)
+	sb.WriteString("\n</script>\n</div>\n")
+
+	dir := filepath.Join(docsDir, "Bestiary")
+	if err := os.MkdirAll(dir, 0o755); err != nil {
+		return false, err
+	}
+	if err := os.WriteFile(filepath.Join(dir, "index.md"), []byte(sb.String()), 0o644); err != nil {
+		return false, err
+	}
+	return true, nil
+}

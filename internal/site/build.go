@@ -90,6 +90,15 @@ func Build(cfg *Config) (*BuildResult, error) {
 	result.IndexPages = indexCount
 	result.Errors = append(result.Errors, indexErrs...)
 
+	// Bestiary Search & Filter landing (Plan B): emit the faceted-finder data
+	// island over the Browse monster/terrain/retainer pages. No-op when the
+	// Monsters book isn't present in this build.
+	if ok, err := buildBestiarySearchPage(cfg.DocsDir); err != nil {
+		result.Errors = append(result.Errors, fmt.Sprintf("bestiary search: %v", err))
+	} else if ok {
+		result.IndexPages++
+	}
+
 	// Apply search exclusion
 	for _, sectionName := range cfg.SearchExclude {
 		count, errs := applySearchExclusion(cfg.DocsDir, sectionName)

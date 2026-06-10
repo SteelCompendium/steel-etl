@@ -3,6 +3,7 @@ package site
 import (
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -58,5 +59,46 @@ func TestCollectBestiaryItems(t *testing.T) {
 	}
 	if byName["Angulotl Hopper"].Type != "retainer" || byName["Angulotl Hopper"].EV != "-" {
 		t.Errorf("retainer wrong: %+v", byName["Angulotl Hopper"])
+	}
+}
+
+func TestBuildBestiarySearchPage(t *testing.T) {
+	docs := t.TempDir()
+	writeBrowseMD(t, filepath.Join(docs, "Browse", "monster", "goblins", "goblin-warrior.md"),
+		"ev: \"3\"\nlevel: 1\nname: Goblin Warrior\norganization: Horde\nrole: Harrier\nsize: 1S\ntype: statblock\n")
+
+	ok, err := buildBestiarySearchPage(docs)
+	if err != nil || !ok {
+		t.Fatalf("expected page written, ok=%v err=%v", ok, err)
+	}
+	out, err := os.ReadFile(filepath.Join(docs, "Bestiary", "index.md"))
+	if err != nil {
+		t.Fatalf("Bestiary/index.md not written: %v", err)
+	}
+	s := string(out)
+	for _, want := range []string{
+		"search:\n  exclude: true",
+		`<div class="sc-bestiary-mount">`,
+		`<script type="application/json" class="sc-browse-data">`,
+		`"name":"Goblin Warrior"`,
+		`"href":"../Browse/monster/goblins/goblin-warrior/"`,
+	} {
+		if !strings.Contains(s, want) {
+			t.Errorf("search page missing %q in:\n%s", want, s)
+		}
+	}
+}
+
+func TestBuildBestiarySearchPage_NoItems(t *testing.T) {
+	docs := t.TempDir()
+	if err := os.MkdirAll(filepath.Join(docs, "Browse"), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	ok, err := buildBestiarySearchPage(docs)
+	if err != nil || ok {
+		t.Errorf("expected no-op (ok=false) with no items, got ok=%v err=%v", ok, err)
+	}
+	if _, err := os.Stat(filepath.Join(docs, "Bestiary", "index.md")); !os.IsNotExist(err) {
+		t.Error("no page should be written when there are no items")
 	}
 }
