@@ -51,7 +51,7 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 	// feature, treasure, skill, rule & bestiary (monster / dynamic-terrain /
 	// retainer) trees. Monster GROUP dirs are excluded here so they fall through
 	// to buildMonsterGroupContent (their featureblock + statblock landing).
-	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) && !isMonsterGroupDir(dir) {
+	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) && !isBestiaryGroupDir(dir) {
 		return buildFolderIndex(dir, dirName, subdirs), true
 	}
 
@@ -70,7 +70,8 @@ func usesFolderIndex(dir string) bool {
 	for _, p := range strings.Split(filepath.ToSlash(dir), "/") {
 		switch p {
 		case "feature", "treasure", "skill", "rule",
-			"monster", "dynamic-terrain", "retainer":
+			"monster", "dynamic-terrain", "retainer",
+			"minion", "fixture", "champion", "rival":
 			return true
 		}
 	}

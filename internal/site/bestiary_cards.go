@@ -26,6 +26,26 @@ func statblockTypeLabel(fm string) string {
 	return "Statblock"
 }
 
+// bestiarySource returns a provenance label derived from a page's SCC book
+// prefix, so summoner-book creatures (portfolio minions/fixtures/champions, the
+// rival summoner, summoner retainers) are marked as summoner-class content vs.
+// Monsters-book creatures. "" → no marker (Monsters book is the unmarked default).
+func bestiarySource(fm string) string {
+	if strings.HasPrefix(parseFrontmatterField(fm, "scc"), "mcdm.summoner.") {
+		return "Summoner"
+	}
+	return ""
+}
+
+// withSource prefixes a card's type label with its provenance ("Summoner · …")
+// when the page is summoner-book content.
+func withSource(fm, label string) string {
+	if src := bestiarySource(fm); src != "" {
+		return src + " · " + label
+	}
+	return label
+}
+
 // terrainCard renders a .sc-card preview for a dynamic-terrain leaf page.
 // Dynamic terrain has no role or keywords; it shows level, EV, and size stats.
 func terrainCard(fm, body, file, name string) string {
@@ -37,14 +57,14 @@ func terrainCard(fm, body, file, name string) string {
 	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 160)
 	}
-	return card(file, "skull", "Dynamic Terrain", name, inner)
+	return card(file, "skull", withSource(fm, "Dynamic Terrain"), name, inner)
 }
 
 // retainerCard renders a .sc-card preview for a retainer statblock leaf page.
 // The type label is "Retainer <Role>" (e.g. "Retainer Harrier"); immunities are
 // rendered as a line block when present; EV may be '-'.
 func retainerCard(fm, body, file, name string) string {
-	label := strings.TrimSpace("Retainer " + parseFrontmatterField(fm, "role"))
+	label := withSource(fm, strings.TrimSpace("Retainer "+parseFrontmatterField(fm, "role")))
 	inner := ""
 	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
 		inner += tagsBlock(kw)
@@ -72,13 +92,24 @@ func statblockCard(fm, body, file, name string) string {
 		{orDash(parseFrontmatterField(fm, "size")), "Size", ""},
 		{orDash(parseFrontmatterField(fm, "speed")), "Speed", ""},
 	})
-	return card(file, "skull", statblockTypeLabel(fm), name, inner)
+	return card(file, "skull", withSource(fm, statblockTypeLabel(fm)), name, inner)
 }
 
-// isMonsterGroupDir reports whether dir is a direct child group of monster/
-// (e.g. monster/goblins), the mixed node that becomes a group landing.
-func isMonsterGroupDir(dir string) bool {
-	return filepath.Base(filepath.Dir(dir)) == "monster"
+// bestiaryGroupParents are the statblock type roots whose direct child dirs are
+// group landings: monster groups (monster/<group>), the summoner book's portfolio
+// trees (minion/fixture/champion per <portfolio>), and the summoner/echelon trees
+// (rival/<summoner>, retainer/<summoner>). All reuse the same group-landing
+// assembler — lore (if any) + featureblock cards + statblock preview cards.
+var bestiaryGroupParents = map[string]bool{
+	"monster": true, "minion": true, "fixture": true,
+	"champion": true, "rival": true, "retainer": true,
+}
+
+// isBestiaryGroupDir reports whether dir is a direct child group of a statblock
+// type root (e.g. monster/goblins, minion/demon, rival/summoner) — the mixed node
+// that becomes a group landing.
+func isBestiaryGroupDir(dir string) bool {
+	return bestiaryGroupParents[filepath.Base(filepath.Dir(dir))]
 }
 
 // buildMonsterGroupContent renders a monster group landing's listing: the
@@ -92,13 +123,16 @@ func isMonsterGroupDir(dir string) bool {
 // the Malice/Tactical-Stance featureblock(s); the two are split by frontmatter
 // `type` rather than by directory.
 func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (string, bool) {
-	if !isMonsterGroupDir(dir) {
+	// Fires for a group dir (monster/<group>, minion/<portfolio>, …) and also for
+	// a bestiary type ROOT that directly holds statblock leaves AND a group subdir
+	// — the mixed `retainer/` node (monster retainers + the summoner/ group).
+	if !isBestiaryGroupDir(dir) && !isBestiaryTypeRootWithStatblocks(dir, files) {
 		return "", false
 	}
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
 
-	echelons, _ := splitEchelonSubdirs(subdirs)
+	echelons, other := splitEchelonSubdirs(subdirs)
 	if len(echelons) > 0 {
 		for _, ech := range echelons {
 			sb.WriteString("## " + dirToTitle(ech) + "\n\n")
@@ -110,11 +144,46 @@ func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (str
 		return sb.String(), true
 	}
 
-	// Flat group: featureblocks + statblocks are sibling files in the group dir.
+	// Flat group: featureblocks + statblock leaves are sibling files in the dir;
+	// any non-echelon subdirs (e.g. retainer/summoner) render as folder cards.
 	statblocks, features := splitByType(dir, "", files)
 	sb.WriteString(featureblockCards(dir, "", features))
 	sb.WriteString(statblockCards(dir, "", statblocks))
+	sb.WriteString(groupSubdirCards(dir, other))
 	return sb.String(), true
+}
+
+// isBestiaryTypeRootWithStatblocks reports whether dir is a bestiary type root
+// (retainer/, minion/, …) that directly contains statblock leaf files — i.e. a
+// mixed node carrying both leaves and group subdirs (the `retainer/` case, where
+// monster retainers sit at the root and the summoner retainers form a subgroup).
+func isBestiaryTypeRootWithStatblocks(dir string, files []string) bool {
+	if !bestiaryGroupParents[filepath.Base(dir)] {
+		return false
+	}
+	for _, f := range files {
+		fm, _ := splitFrontmatter(readFile(filepath.Join(dir, f)))
+		if strings.TrimSpace(parseFrontmatterField(fm, "type")) == "statblock" {
+			return true
+		}
+	}
+	return false
+}
+
+// groupSubdirCards renders folder cards for a group landing's child group dirs
+// (e.g. the summoner/ subgroup under retainer/). "" when there are none.
+func groupSubdirCards(dir string, subdirs []string) string {
+	if len(subdirs) == 0 {
+		return ""
+	}
+	sort.Slice(subdirs, func(i, j int) bool { return naturalLess(subdirs[i], subdirs[j]) })
+	var sb strings.Builder
+	sb.WriteString("<div class=\"sc-folders\">\n")
+	for _, d := range subdirs {
+		sb.WriteString(folderCard(d+"/", folderCrestIcon(dir, d), dirToTitle(d), countLeafFiles(filepath.Join(dir, d))))
+	}
+	sb.WriteString("</div>\n")
+	return sb.String()
 }
 
 // splitByType partitions a dir's leaf files into statblock pages (frontmatter
@@ -207,8 +276,22 @@ func statblockCards(dir, relPrefix string, files []string) string {
 		if relPrefix != "" {
 			href = filepath.ToSlash(filepath.Join(relPrefix, f))
 		}
-		sb.WriteString(statblockCard(fm, body, href, name))
+		sb.WriteString(bestiaryLeafCard(dir, fm, body, href, name))
 	}
 	sb.WriteString("</div>\n")
 	return sb.String()
+}
+
+// bestiaryLeafCard picks the preview card for a statblock leaf by its type root:
+// retainers get retainerCard (immunities line), dynamic-terrain gets terrainCard,
+// and every other tree (monster/minion/fixture/champion/rival) uses statblockCard.
+func bestiaryLeafCard(dir, fm, body, href, name string) string {
+	switch {
+	case pathHasSegment(dir, "retainer"):
+		return retainerCard(fm, body, href, name)
+	case pathHasSegment(dir, "dynamic-terrain"):
+		return terrainCard(fm, body, href, name)
+	default:
+		return statblockCard(fm, body, href, name)
+	}
 }

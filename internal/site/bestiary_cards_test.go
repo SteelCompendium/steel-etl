@@ -38,6 +38,49 @@ func TestStatblockCard(t *testing.T) {
 	}
 }
 
+func TestBestiarySourceMarking(t *testing.T) {
+	// Summoner-book statblocks (scc prefix mcdm.summoner.) are marked
+	// "Summoner · <label>"; Monsters-book statblocks (no/other prefix) are not.
+	summonerFM := goblinWarriorFM + "scc: mcdm.summoner.v1/minion.demon.statblock/hulking-chimor\n"
+	if got := bestiarySource(summonerFM); got != "Summoner" {
+		t.Errorf("bestiarySource(summoner) = %q, want Summoner", got)
+	}
+	if got := bestiarySource(goblinWarriorFM); got != "" {
+		t.Errorf("bestiarySource(monster) = %q, want empty", got)
+	}
+	if got := withSource(summonerFM, "Minion Brute"); got != "Summoner · Minion Brute" {
+		t.Errorf("withSource = %q", got)
+	}
+	// The marker reaches the rendered card.
+	card := statblockCard(summonerFM, "", "hulking-chimor.md", "Hulking Chimor")
+	if !strings.Contains(card, "Summoner · Horde Harrier") {
+		t.Errorf("summoner statblock card not marked:\n%s", card)
+	}
+	if strings.Contains(statblockCard(goblinWarriorFM, "", "goblin-warrior.md", "Goblin Warrior"), "Summoner ·") {
+		t.Error("monster statblock card must not be marked Summoner")
+	}
+}
+
+func TestIsBestiaryGroupDir(t *testing.T) {
+	for _, tc := range []struct {
+		dir  string
+		want bool
+	}{
+		{"monster/goblins", true},
+		{"minion/demon", true},
+		{"fixture/elemental", true},
+		{"rival/summoner", true},
+		{"retainer/summoner", true},
+		{"monster", false}, // a type root, not a group dir
+		{"minion", false},
+		{"feature/ability", false},
+	} {
+		if got := isBestiaryGroupDir(tc.dir); got != tc.want {
+			t.Errorf("isBestiaryGroupDir(%q) = %v, want %v", tc.dir, got, tc.want)
+		}
+	}
+}
+
 func TestStatblockTypeLabel(t *testing.T) {
 	for _, tc := range []struct{ org, role, want string }{
 		{"Horde", "Harrier", "Horde Harrier"},

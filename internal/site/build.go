@@ -498,7 +498,7 @@ func groupLandingIndexDest(relPath string) (string, bool) {
 // only the site URL/sidebar. Non-bestiary paths are returned unchanged.
 func hoistStatblockPath(relPath string) string {
 	parts := strings.Split(filepath.ToSlash(relPath), "/")
-	if len(parts) < 2 || (parts[0] != "monster" && parts[0] != "retainer") {
+	if len(parts) < 2 || !bestiaryGroupParents[parts[0]] {
 		return relPath
 	}
 	out := make([]string, 0, len(parts))
