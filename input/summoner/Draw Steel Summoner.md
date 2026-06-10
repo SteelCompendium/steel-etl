@@ -494,7 +494,7 @@ Though you can't gain essence outside of combat, you can use your heroic abiliti
 >
 > There may be more magicians in the future that also rely on essence for their magic.
 
-<!-- @type: ability | @id: summoner-strike | @level: 1 -->
+<!-- @type: feature | @id: summoner-strike | @level: 1 -->
 ### Summoner Strike
 
 You have the following ability, which replaces both your melee and ranged free strikes.

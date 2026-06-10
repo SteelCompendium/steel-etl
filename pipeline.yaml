@@ -81,3 +81,7 @@ books:
     input: ./input/beastheart/Draw Steel Beastheart.md
     output:
       base_dir: ../data/data-beastheart
+  - book: mcdm.summoner.v1
+    input: ./input/summoner/Draw Steel Summoner.md
+    output:
+      base_dir: ../data/data-summoner
