@@ -48,8 +48,9 @@ import (
 // trees. ok=false → the caller falls back to the default browse-index list.
 func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (string, bool) {
 	// index-of-indexes: every child is a directory → folder cards. Scoped to the
-	// feature, treasure, skill & rule trees so other sections (e.g. the Bestiary)
-	// keep their own index style.
+	// feature, treasure, skill, rule & bestiary (monster / dynamic-terrain /
+	// retainer) trees. Monster GROUP dirs are excluded here so they fall through
+	// to buildMonsterGroupContent (their featureblock + statblock landing).
 	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) && !isMonsterGroupDir(dir) {
 		return buildFolderIndex(dir, dirName, subdirs), true
 	}
