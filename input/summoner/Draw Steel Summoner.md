@@ -1366,7 +1366,7 @@ Breaking down your essence into pure power can lead to devastating effects. Your
 Choose one heroic ability from the following options, each of which costs 5 essence to use. (Quick Build: Rallying Cry.)
 
 <!-- @type: ability | @id: essence-transfer | @level: 1 -->
-#### Essence Transfer (5 Essence)
+###### Essence Transfer (5 Essence)
 
 *You pierce your foe and repurpose some of that 'fiber of their being' they weren't using.*
 
@@ -1387,7 +1387,7 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 - 2 charges: You call forth a signature minion into an unoccupied space within your Summoner's Range.
 
 <!-- @type: ability | @id: explosive-parade | @level: 1 -->
-#### Explosive Parade (5 Essence)
+###### Explosive Parade (5 Essence)
 
 *Your minions swell with energy until they can no longer exist in this realm.*
 
@@ -1408,7 +1408,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 **Special:** In addition to the minions summoned as a part of this ability, you can choose to command any number of your minions within distance, provided they haven't used a main action or maneuver during the turn.
 
 <!-- @type: ability | @id: distraction-tactics | @level: 1 -->
-#### Distraction Tactics (5 Essence)
+###### Distraction Tactics (5 Essence)
 
 *Your minions do the work to draw the heat away from your allies.*
 
@@ -1421,7 +1421,7 @@ If they move adjacent to their target, become targeted by an opportunity attack,
 The target's strikes can inflict I < WEAK taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.
 
 <!-- @type: ability | @id: rallying-cry | @level: 1 -->
-#### Rallying Cry (5 Essence)
+###### Rallying Cry (5 Essence)
 
 *"Show them what you're made of!"*
 
@@ -1432,7 +1432,7 @@ The target's strikes can inflict I < WEAK taunted (EoT) to enemies. The potency 
 **Effect:** Each target chooses between gaining 2 surges or dealing additional damage equal to your Reason on their next strike.
 
 <!-- @type: ability | @id: shields-of-essence | @level: 1 -->
-#### Shields of Essence (5 Essence)
+###### Shields of Essence (5 Essence)
 
 *You call forth protective forces to keep you all from harm.*
 
@@ -1449,7 +1449,7 @@ The target's strikes can inflict I < WEAK taunted (EoT) to enemies. The potency 
 **Effect:** Until the end of the encounter, each target can use a free triggered action whenever they take damage to reduce the incoming damage by half and then lose this effect.
 
 <!-- @type: ability | @id: summoners-sword | @level: 1 -->
-#### Summoner's Sword (5 Essence)
+###### Summoner's Sword (5 Essence)
 
 *You draw your strength from the army you surround yourself with and summon a hot blade of energy and fervor.*
 
@@ -1945,7 +1945,7 @@ Phase ghouls are bilocated undead caught between two different manifolds, rapidl
 As a 3rd-level summoner, you gain the following features.
 
 <!-- @type: feature | @id: summoners-kit | @level: 3 -->
-### Summoner's Kit
+#### Summoner's Kit
 
 You conjure a kit for yourself. This kit includes an implement, such as a rod or a baton, which grants you the following benefits:
 
@@ -1956,32 +1956,32 @@ You conjure a kit for yourself. This kit includes an implement, such as a rod or
 Your kit also comes with wards like magic armor and transient minion forces. Choose one of the following wards.
 
 <!-- @type: feature | @id: conjured-ward | @level: 3 -->
-#### Conjured Ward
+##### Conjured Ward
 
 You are clad in the natural defenses of your portfolio (bones, fairy wood, stone, writhing flesh). You gain a +3 bonus to Stamina and that bonus increases by 3 at 4th, 7th, and 10th levels.
 
 <!-- @type: feature | @id: emergency-ward | @level: 3 -->
-#### Emergency Ward
+##### Emergency Ward
 
 The first time each round you take damage, you can use a free triggered action to shift 1 after the triggering effect resolves and summon a signature minion into the square you left (as long as there is enough space).
 
 <!-- @type: feature | @id: howling-ward | @level: 3 -->
-#### Howling Ward
+##### Howling Ward
 
 You create a 1-aura vortex of slicing magic around you when you enter combat. An enemy that starts their turn adjacent to you takes damage equal to your Reason.
 
 <!-- @type: feature | @id: snare-ward | @level: 3 -->
-#### Snare Ward
+##### Snare Ward
 
 Whenever an adjacent creature deals damage to you, you can use a free triggered action to pull that creature toward one of your minions within your Summoner's Range a number of squares equal to your Reason score.
 
 <!-- @type: feature | @id: 7-essence-ability | @level: 3 -->
-##### 7-Essence Ability
+#### 7-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 7 essence to use.
 
 <!-- @type: ability | @id: blitz-tactics | @level: 3 -->
-#### Blitz Tactics (7 Essence)
+##### Blitz Tactics (7 Essence)
 
 *Rush 'em! CRUSH 'EM!*
 
@@ -1992,7 +1992,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 **Effect:** Until the end of the encounter or you are dying, each minion under your control during the encounter is the target of the following effect. The first time on a turn that the target moves through an enemy's space, the enemy can choose to shift 1 square or be M < WEAK (or M < AVERAGE if the target is larger than the enemy) knocked prone. The potency increases by 1 for each subsequent target that moves through the enemy's space during the same move action.
 
 <!-- @type: ability | @id: cavalry-call | @level: 3 -->
-#### Cavalry Call (7 Essence)
+##### Cavalry Call (7 Essence)
 
 *A lone squad appears to disrupt the enemy's plans and peels off their forces, one by one.*
 
@@ -2005,7 +2005,7 @@ Choose one heroic ability from the following options, each of which costs 7 esse
 These minions die at the end of your turn, activate no effects upon death, and you gain no essence from their deaths.
 
 <!-- @type: ability | @id: essence-funnel | @level: 3 -->
-#### Essence Funnel (7 Essence)
+##### Essence Funnel (7 Essence)
 
 *You rapidly summon and sacrifice minions in order to power a devastating blast of magic.*
 
@@ -2022,7 +2022,7 @@ These minions die at the end of your turn, activate no effects upon death, and y
 **Special:** You can choose to kill any number of your minions within your Summoner's Range as a part of this ability, provided they haven't used a main action or maneuver during the turn. Each target takes an additional 1 damage, plus 1 damage for each minion killed this way. These minions activate no effects upon death, and you gain no essence from their deaths.
 
 <!-- @type: ability | @id: lead-by-example | @level: 3 -->
-#### Lead By Example (7 Essence)
+##### Lead By Example (7 Essence)
 
 *Your minions watch as your implement crackles with power, ready to slam unbelievable force into your foe.*
 
@@ -2529,12 +2529,12 @@ You can choose one additional ward from your Summoner's Kit.
 Additionally, whenever you reduce an enemy to 0 Stamina with your Summoner Strike ability, you can use Call Forth as a free maneuver. Minions summoned this way are unable to act during this turn.
 
 <!-- @type: feature | @id: 9-essence-ability | @level: 6 -->
-##### 9-Essence Ability
+#### 9-Essence Ability
 
 You can summon the assistance of your future champion (see Portfolio Champion) and allow them to show off a brief display of their power. Select one of the following heroic abilities, each of which costs 9 essence to use.
 
 <!-- @type: ability | @id: a-champions-cry | @level: 6 -->
-#### A Champion's Cry (9 Essence)
+##### A Champion's Cry (9 Essence)
 
 *Your champion unleashes a bellow that shakes you to your core.*
 
@@ -2551,7 +2551,7 @@ You can summon the assistance of your future champion (see Portfolio Champion) a
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
 <!-- @type: ability | @id: armys-idol | @level: 6 -->
-#### Army's Idol (9 Essence)
+##### Army's Idol (9 Essence)
 
 *Your champion's appearance has an enchanting impact on you and your allies.*
 
@@ -2566,7 +2566,7 @@ Until the end of the encounter or you become dying, each target has a +2 bonus t
 Each target can immediately make each of their saving throws and stand up from prone.
 
 <!-- @type: ability | @id: the-champion-slams-the-earth | @level: 6 -->
-#### The Champion Slams the Earth (9 Essence)
+##### The Champion Slams the Earth (9 Essence)
 
 *Your champion lays their fury upon those unfortunate enough to be in their wake.*
 
@@ -2585,7 +2585,7 @@ Each target can immediately make each of their saving throws and stand up from p
 **Special:** You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion).
 
 <!-- @type: ability | @id: their-pall-shrouds-all | @level: 6 -->
-#### Their Pall Shrouds All (9 Essence)
+##### Their Pall Shrouds All (9 Essence)
 
 *Your champion fills the area with a thick haze hiding friend from foe.*
 
@@ -3017,12 +3017,12 @@ You've conjured your kit into its ultimate form. You have the following benefits
 You and your allies are now welcome in your circle's source manifold. Negotiations with native denizens of your circle's source manifold have their patience increased by 2.
 
 <!-- @type: feature | @id: 11-essence-ability | @level: 9 -->
-##### 11-Essence Ability
+#### 11-Essence Ability
 
 Choose one heroic ability from the following options, each of which costs 11 essence to use.
 
 <!-- @type: ability | @id: 10000-minions | @level: 9 -->
-#### 10,000 Minions (11 Essence)
+##### 10,000 Minions (11 Essence)
 
 *The battle is now a war. Your entire army storms the field.*
 
@@ -3035,7 +3035,7 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 Additionally, you can use Minion Bridge treating each affected square as an eligible minion (up to a maximum of 10 additional squares).
 
 <!-- @type: ability | @id: bodyguard-tactics | @level: 9 -->
-#### Bodyguard Tactics (11 Essence)
+##### Bodyguard Tactics (11 Essence)
 
 *You surround your allies with a nigh-endless supply of summons that stand in the way of all impacts.*
 
@@ -3046,7 +3046,7 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 **Effect:** Until the end of the encounter or you are dying, each target has damage immunity 5 and can use a free triggered action once per turn whenever they are force moved to reduce the distance by half.
 
 <!-- @type: ability | @id: i-abjure-thee | @level: 9 -->
-#### I Abjure Thee (11 Essence)
+##### I Abjure Thee (11 Essence)
 
 *Cast those not affixed to this manifold into the void of a minion's existence.*
 
@@ -3059,7 +3059,7 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 A leader or a solo enemy in the area that has R, I, or P < AVERAGE is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.
 
 <!-- @type: ability | @id: the-champions-wrath | @level: 9 -->
-#### The Champion's Wrath (11 Essence)
+##### The Champion's Wrath (11 Essence)
 
 *Your champion appears and goes into a rampage, clearing the way for your minions to march forth.*
 
