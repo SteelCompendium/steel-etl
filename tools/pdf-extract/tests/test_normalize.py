@@ -61,3 +61,17 @@ def test_horizontal_rule_midbody_is_not_treated_as_frontmatter():
     # a --- divider mid-document must not swallow body text
     md = "alpha\n\n---\n\nbeta gamma"
     assert normalize.wordbag_from_markdown(md) == Counter(["alpha", "beta", "gamma"])
+
+
+def test_strips_html_tags_in_statblock_cells():
+    # **1M**<br>Size markup -> two tokens, no spurious "br"
+    md = "| **1M**<br>Size | **5**<br/>Speed |"
+    assert normalize.wordbag_from_markdown(md) == Counter(["1m", "size", "5", "speed"])
+
+
+def test_potency_lt_is_not_stripped_as_html_tag():
+    # "M < WEAK" (space after '<') must NOT be eaten by the HTML-tag strip
+    md = "if the target has M < WEAK they are slowed"
+    assert normalize.wordbag_from_markdown(md) == Counter(
+        ["if", "the", "target", "has", "m", "weak", "they", "are", "slowed"]
+    )

@@ -16,6 +16,10 @@ _MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")
 _FRONTMATTER = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
 # HTML annotation comments <!-- @type: ... -->
 _COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
+# Real HTML tags (e.g. <br>, <br/>, <sup>) used as markup in tables — NOT publisher
+# words. Deliberately requires a letter or "/" right after "<" so the potency
+# notation "M < WEAK" (space after "<") is never matched.
+_HTML_TAG = re.compile(r"</?[a-zA-Z][a-zA-Z0-9]*\s*/?>")
 # markdown emphasis/heading/table/pipe punctuation to strip to spaces
 _MD_PUNCT = re.compile(r"[#>*_`|]+")
 _LINE_HYPHEN = re.compile(r"-\n")           # hyphenated line-break -> join
@@ -44,6 +48,7 @@ def wordbag(text: str) -> Counter:
 def wordbag_from_markdown(md: str) -> Counter:
     md = _FRONTMATTER.sub(" ", md)
     md = _COMMENT.sub(" ", md)
+    md = _HTML_TAG.sub(" ", md)
     md = _SCC_LINK.sub(r"\1", md)
     md = _MD_LINK.sub(r"\1", md)
     md = _MD_PUNCT.sub(" ", md)
