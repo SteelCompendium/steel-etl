@@ -2995,3 +2995,139 @@ Stamina: Your maximum Stamina
 > **Champion Action**
 >
 > **Effect:** 9 holy damage. Each target is vertically pulled a number of squares equal to their size straight down, ignoring stability. If the target would be force moved into the ground, they are buried beneath the ground instead.
+
+<!-- @type: feature | @id: 9th-level-features | @level: 9 -->
+### 9th-Level Features
+
+As a 9th-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: kit-improvement | @level: 9 -->
+#### Kit Improvement
+
+You've conjured your kit into its ultimate form. You have the following benefits:
+
+- The potency of your Summoner Strike ability increases to R < STRONG.
+- You can choose one additional ward from your Summoner's Kit.
+- You have a double edge on tests made to dissuade or scare enemy minions or lackeys.
+- Your clothing and equipment become adorned with distinct and elaborate regalia to make you stand out from your army, like massive rib cage pauldrons, a tooth crested helmet, or a billowing mantle of fire.
+
+<!-- @type: feature | @id: steward-of-two-worlds | @level: 9 -->
+#### Steward of Two Worlds
+
+You and your allies are now welcome in your circle's source manifold. Negotiations with native denizens of your circle's source manifold have their patience increased by 2.
+
+<!-- @type: feature | @id: 11-essence-ability | @level: 9 -->
+##### 11-Essence Ability
+
+Choose one heroic ability from the following options, each of which costs 11 essence to use.
+
+<!-- @type: ability | @id: 10000-minions | @level: 9 -->
+#### 10,000 Minions (11 Essence)
+
+*The battle is now a war. Your entire army storms the field.*
+
+| **Magic** | **Main action** |
+|-----------|----------------:|
+| **📏 Special** | **🎯 Special** |
+
+**Effect:** Until the end of the encounter or you are dying, each square on the ground is considered teeming with minions. An enemy that ends their turn in an affected square takes 5 damage. This damage can't be reduced.
+
+Additionally, you can use Minion Bridge treating each affected square as an eligible minion (up to a maximum of 10 additional squares).
+
+<!-- @type: ability | @id: bodyguard-tactics | @level: 9 -->
+#### Bodyguard Tactics (11 Essence)
+
+*You surround your allies with a nigh-endless supply of summons that stand in the way of all impacts.*
+
+| **Area, Magic** | **Main action** |
+|-----------------|----------------:|
+| **📏 5 burst** | **🎯 Self and each non-minion ally in the area** |
+
+**Effect:** Until the end of the encounter or you are dying, each target has damage immunity 5 and can use a free triggered action once per turn whenever they are force moved to reduce the distance by half.
+
+<!-- @type: ability | @id: i-abjure-thee | @level: 9 -->
+#### I Abjure Thee (11 Essence)
+
+*Cast those not affixed to this manifold into the void of a minion's existence.*
+
+| **Area, Magic** | **Main action** |
+|-----------------|----------------:|
+| **📏 3 burst** | **🎯 Special** |
+
+**Effect:** Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 round.
+
+A leader or a solo enemy in the area that has R, I, or P < AVERAGE is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.
+
+<!-- @type: ability | @id: the-champions-wrath | @level: 9 -->
+#### The Champion's Wrath (11 Essence)
+
+*Your champion appears and goes into a rampage, clearing the way for your minions to march forth.*
+
+| **Area, Champion, Magic, Weapon** | **Main action** |
+|-----------------------------------|----------------:|
+| **📏 4 burst** | **🎯 Each enemy in the area** |
+
+**Power Roll + Reason:**
+
+- **≤11:** 6 damage; push 4 M < WEAK push is vertical
+- **12-16:** 10 damage; push 5 M < AVERAGE push is vertical
+- **17+:** 14 damage; push 6 M < STRONG push is vertical
+
+**Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
+
+You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion). For each enemy reduced to 0 Stamina by this ability, an ally within distance can move up to their speed.
+
+<!-- @type: feature | @id: 10th-level-features | @level: 10 -->
+### 10th-Level Features
+
+As a 10th-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: characteristic-increase | @level: 10 -->
+#### Characteristic Increase
+
+Your Reason score becomes 5. Additionally, you can increase one of your characteristic scores by 1, to a maximum score of 5.
+
+<!-- @type: feature | @id: minion-improvement | @level: 10 -->
+#### Minion Improvement
+
+You now start encounters and round-tracked situations by summoning up to two additional minions for every two Victories you have (in addition to the two you normally summon).
+
+Each of your minions' Stamina improves as shown on the 10th-Level Minion Stamina Increase table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 5).
+
+###### 10th-Level Minion Stamina Increase
+
+| Minion | Stamina Increase |
+|--------|-----------------|
+| Signature Minion | Stamina +1 (to a total of +3) |
+| 3-Essence Minion | Stamina +3 (to a total of +9) |
+| 5-Essence Minion | Stamina +2 (to a total of +6) |
+| 7-Essence Minion | Stamina +5 (to a total of +10) |
+
+<!-- @type: feature | @id: eidos | @level: 10 -->
+#### Eidos
+
+You gain an epic resource called eidos. When you take a respite, you gain eidos equal to the XP you gain. You can spend eidos as if it were essence on minions and abilities you have. When you do, you summon up to two bonus signature minions into unoccupied spaces within your Summoner's Range.
+
+You and your champion also have access to abilities that can be used by spending eidos (see Their Life for Mine and Portfolio Champion).
+
+Eidos remains until you spend it.
+
+<!-- @type: feature | @id: no-matter-the-cost | @level: 10 -->
+#### No Matter the Cost
+
+Whenever you sacrifice minions, you now reduce the cost of a heroic ability or minion by the same amount (to a minimum of 1) instead of only reducing the cost by 1.
+
+<!-- @type: feature | @id: among-our-ranks | @level: 10 -->
+#### Among Our Ranks
+
+As a respite activity, you summon a willing and not-restrained NPC or player ally to join your party, regardless of distance or manifold. The target stays until the start of your next respite or until they are killed, in which they are immediately dismissed to the place from which they were summoned. You can't have more than one character summoned in this way.
+
+<!-- @type: feature | @id: perk | @level: 10 -->
+#### Perk
+
+You gain an intrigue, interpersonal, or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
+
+<!-- @type: feature | @id: skill | @level: 10 -->
+#### Skill
+
+You gain one skill of your choice.
