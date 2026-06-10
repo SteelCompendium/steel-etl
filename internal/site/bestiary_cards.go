@@ -9,7 +9,6 @@ package site
 
 import (
 	"html"
-	"os"
 	"path/filepath"
 	"regexp"
 	"sort"
@@ -87,6 +86,11 @@ func isMonsterGroupDir(dir string) bool {
 // split under a "## <Echelon>" sub-header each. It emits the standard
 // "# Title\n\n---\n\n" head so mergeGroupLanding can strip it and prepend the
 // group lore. ok=false → caller falls through to the default index.
+//
+// Statblocks are hoisted out of a statblock/ folder (see hoistStatblockPath in
+// build.go), so they now sit as direct files in the group/echelon dir alongside
+// the Malice/Tactical-Stance featureblock(s); the two are split by frontmatter
+// `type` rather than by directory.
 func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (string, bool) {
 	if !isMonsterGroupDir(dir) {
 		return "", false
@@ -94,31 +98,38 @@ func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (str
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
 
-	echelons, plain := splitEchelonSubdirs(subdirs)
+	echelons, _ := splitEchelonSubdirs(subdirs)
 	if len(echelons) > 0 {
 		for _, ech := range echelons {
 			sb.WriteString("## " + dirToTitle(ech) + "\n\n")
-			ef, es := listDirChildren(filepath.Join(dir, ech))
-			sb.WriteString(featureblockCards(dir, ech, ef))
-			for _, sd := range es {
-				if sd == "statblock" {
-					sb.WriteString(statblockCardsFromDir(filepath.Join(dir, ech, sd), filepath.ToSlash(filepath.Join(ech, sd))))
-				}
-			}
+			ef, _ := listDirChildren(filepath.Join(dir, ech))
+			statblocks, features := splitByType(dir, ech, ef)
+			sb.WriteString(featureblockCards(dir, ech, features))
+			sb.WriteString(statblockCards(dir, ech, statblocks))
 		}
-		// `plain` subdirs (e.g. a root statblock/) are intentionally ignored for
-		// echelon groups: their statblocks live inside the echelon dirs.
 		return sb.String(), true
 	}
 
-	// Flat group: featureblock files at the group root, statblocks under statblock/.
-	sb.WriteString(featureblockCards(dir, "", files))
-	for _, sd := range plain {
-		if sd == "statblock" {
-			sb.WriteString(statblockCardsFromDir(filepath.Join(dir, sd), sd))
+	// Flat group: featureblocks + statblocks are sibling files in the group dir.
+	statblocks, features := splitByType(dir, "", files)
+	sb.WriteString(featureblockCards(dir, "", features))
+	sb.WriteString(statblockCards(dir, "", statblocks))
+	return sb.String(), true
+}
+
+// splitByType partitions a dir's leaf files into statblock pages (frontmatter
+// `type: statblock`) and everything else (featureblocks). relPrefix is the
+// sub-path from dir to the files (an echelon dir, or "" for the group root).
+func splitByType(dir, relPrefix string, files []string) (statblocks, features []string) {
+	for _, f := range files {
+		fm, _ := splitFrontmatter(readFile(filepath.Join(dir, relPrefix, f)))
+		if strings.TrimSpace(parseFrontmatterField(fm, "type")) == "statblock" {
+			statblocks = append(statblocks, f)
+		} else {
+			features = append(features, f)
 		}
 	}
-	return sb.String(), true
+	return statblocks, features
 }
 
 var echelonDirRe = regexp.MustCompile(`(?i)^\d(st|nd|rd|th)-echelon$`)
@@ -176,20 +187,10 @@ func featureblockLabel(name string) string {
 	}
 }
 
-// statblockCardsFromDir renders every statblock .md under sbDir as a card, with
-// hrefs prefixed by relPrefix (the path from the group landing to sbDir).
-func statblockCardsFromDir(sbDir, relPrefix string) string {
-	entries, err := os.ReadDir(sbDir)
-	if err != nil {
-		return ""
-	}
-	var files []string
-	for _, e := range entries {
-		n := e.Name()
-		if !e.IsDir() && strings.HasSuffix(n, ".md") && n != "index.md" && n != "_Index.md" {
-			files = append(files, n)
-		}
-	}
+// statblockCards renders the given statblock .md files (siblings in dir/relPrefix)
+// as a card grid, with hrefs relative to the group landing ("" prefix → bare
+// filename; "<echelon>" prefix → echelon-relative).
+func statblockCards(dir, relPrefix string, files []string) string {
 	if len(files) == 0 {
 		return ""
 	}
@@ -197,12 +198,16 @@ func statblockCardsFromDir(sbDir, relPrefix string) string {
 	var sb strings.Builder
 	sb.WriteString("<div class=\"sc-cards\">\n")
 	for _, f := range files {
-		fm, body := splitFrontmatter(readFile(filepath.Join(sbDir, f)))
+		fm, body := splitFrontmatter(readFile(filepath.Join(dir, relPrefix, f)))
 		name := parseFrontmatterField(fm, "name")
 		if name == "" {
 			name = fileToTitle(f)
 		}
-		sb.WriteString(statblockCard(fm, body, filepath.ToSlash(filepath.Join(relPrefix, f)), name))
+		href := f
+		if relPrefix != "" {
+			href = filepath.ToSlash(filepath.Join(relPrefix, f))
+		}
+		sb.WriteString(statblockCard(fm, body, href, name))
 	}
 	sb.WriteString("</div>\n")
 	return sb.String()

@@ -18,6 +18,7 @@ organization: Horde
 role: Harrier
 size: 1S
 speed: 6
+type: statblock
 `
 
 func TestStatblockCard(t *testing.T) {
@@ -112,11 +113,12 @@ const goblinMaliceFM = "name: Goblin Malice\ntype: featureblock\n"
 func TestMonsterGroupContent_Flat(t *testing.T) {
 	root := t.TempDir()
 	grp := filepath.Join(root, "monster", "goblins")
+	// statblock/ is hoisted away: statblock + malice are sibling files in the group dir.
 	writeMD(t, filepath.Join(grp, "goblin-malice.md"), goblinMaliceFM)
-	writeMD(t, filepath.Join(grp, "statblock", "goblin-warrior.md"), goblinWarriorFM)
+	writeMD(t, filepath.Join(grp, "goblin-warrior.md"), goblinWarriorFM)
 
 	got, ok := buildMonsterGroupContent(grp, "goblins",
-		[]string{"goblin-malice.md"}, []string{"statblock"})
+		[]string{"goblin-malice.md", "goblin-warrior.md"}, nil)
 	if !ok {
 		t.Fatal("expected goblins to be a monster group")
 	}
@@ -124,21 +126,25 @@ func TestMonsterGroupContent_Flat(t *testing.T) {
 		"# Goblins\n\n---\n\n",  // strippable head for mergeGroupLanding
 		`href="goblin-malice/"`, // featureblock card
 		`>Goblin Malice<`,
-		`href="statblock/goblin-warrior/"`, // statblock card, group-relative href
+		`href="goblin-warrior/"`, // statblock card — hoisted href (no statblock/ segment)
 		`Horde Harrier`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("flat group missing %q in:\n%s", want, got)
 		}
 	}
+	if strings.Contains(got, "statblock/") {
+		t.Errorf("hoisted group landing should carry no statblock/ hrefs:\n%s", got)
+	}
 }
 
 func TestMonsterGroupContent_Echelon(t *testing.T) {
 	root := t.TempDir()
 	grp := filepath.Join(root, "monster", "demons")
+	// statblock/ hoisted: statblock + malice are siblings inside each echelon dir.
 	writeMD(t, filepath.Join(grp, "1st-echelon", "demon-malice-level-1.md"), "name: Demon Malice (Level 1)\ntype: featureblock\n")
-	writeMD(t, filepath.Join(grp, "1st-echelon", "statblock", "spite.md"), goblinWarriorFM)
-	writeMD(t, filepath.Join(grp, "2nd-echelon", "statblock", "wrath.md"), goblinWarriorFM)
+	writeMD(t, filepath.Join(grp, "1st-echelon", "spite.md"), goblinWarriorFM)
+	writeMD(t, filepath.Join(grp, "2nd-echelon", "wrath.md"), goblinWarriorFM)
 
 	// subdirs deliberately passed out of order to exercise the natural sort.
 	got, ok := buildMonsterGroupContent(grp, "demons", nil, []string{"2nd-echelon", "1st-echelon"})
@@ -149,16 +155,47 @@ func TestMonsterGroupContent_Echelon(t *testing.T) {
 		"## 1st Echelon", // per-echelon sub-header
 		"## 2nd Echelon",
 		`href="1st-echelon/demon-malice-level-1/"`, // echelon-relative featureblock href
-		`href="1st-echelon/statblock/spite/"`,      // echelon-relative statblock href
-		`href="2nd-echelon/statblock/wrath/"`,
+		`href="1st-echelon/spite/"`,                // echelon-relative statblock href (hoisted)
+		`href="2nd-echelon/wrath/"`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("echelon group missing %q in:\n%s", want, got)
 		}
 	}
+	if strings.Contains(got, "/statblock/") {
+		t.Errorf("hoisted echelon landing should carry no statblock/ hrefs:\n%s", got)
+	}
 	// natural sort: 1st Echelon header must precede 2nd Echelon header.
 	if strings.Index(got, "## 1st Echelon") > strings.Index(got, "## 2nd Echelon") {
 		t.Errorf("echelons not natural-sorted (1st should precede 2nd):\n%s", got)
+	}
+}
+
+func TestSplitByType(t *testing.T) {
+	dir := t.TempDir()
+	writeMD(t, filepath.Join(dir, "goblin-warrior.md"), goblinWarriorFM) // type: statblock
+	writeMD(t, filepath.Join(dir, "goblin-malice.md"), goblinMaliceFM)   // type: featureblock
+	sb, feat := splitByType(dir, "", []string{"goblin-malice.md", "goblin-warrior.md"})
+	if len(sb) != 1 || sb[0] != "goblin-warrior.md" {
+		t.Errorf("statblocks = %v, want [goblin-warrior.md]", sb)
+	}
+	if len(feat) != 1 || feat[0] != "goblin-malice.md" {
+		t.Errorf("features = %v, want [goblin-malice.md]", feat)
+	}
+}
+
+func TestHoistStatblockPath(t *testing.T) {
+	for _, tc := range []struct{ in, want string }{
+		{"monster/goblins/statblock/goblin-warrior.md", "monster/goblins/goblin-warrior.md"},
+		{"monster/demons/1st-echelon/statblock/spite.md", "monster/demons/1st-echelon/spite.md"},
+		{"retainer/statblock/angulotl-hopper.md", "retainer/angulotl-hopper.md"},
+		{"monster/goblins/goblin-malice.md", "monster/goblins/goblin-malice.md"},         // featureblock untouched
+		{"dynamic-terrain/mechanisms/pillar.md", "dynamic-terrain/mechanisms/pillar.md"}, // not bestiary statblock
+		{"class/fury.md", "class/fury.md"},                                               // unrelated tree untouched
+	} {
+		if got := hoistStatblockPath(tc.in); got != tc.want {
+			t.Errorf("hoistStatblockPath(%q) = %q, want %q", tc.in, got, tc.want)
+		}
 	}
 }
 
@@ -215,23 +252,20 @@ func TestFeatureIndex_SkipsMonsterGroup(t *testing.T) {
 
 func TestBuildCardsContent_Bestiary(t *testing.T) {
 	root := t.TempDir()
-	sb := filepath.Join(root, "monster", "goblins", "statblock")
+	// Monster statblocks are NOT a leaf-dir card type — they render on the group
+	// landing (buildMonsterGroupContent), so buildCardsContent declines them.
+	sb := filepath.Join(root, "monster", "goblins")
 	writeMD(t, filepath.Join(sb, "goblin-warrior.md"), goblinWarriorFM)
-	got, ok := buildCardsContent(sb, "statblock", []string{"goblin-warrior.md"}, nil)
-	if !ok {
-		t.Fatal("expected statblock leaf to produce cards")
-	}
-	if !strings.Contains(got, "Horde Harrier") || !strings.Contains(got, `class="sc-cards"`) {
-		t.Errorf("statblock grid wrong:\n%s", got)
+	if _, ok := buildCardsContent(sb, "goblins", []string{"goblin-warrior.md"}, nil); ok {
+		t.Error("a monster group dir should not be handled by buildCardsContent")
 	}
 
-	rt := filepath.Join(root, "retainer", "statblock")
+	// Retainers are a flat leaf dir (statblock/ hoisted away) → retainer cards.
+	rt := filepath.Join(root, "retainer")
 	writeMD(t, filepath.Join(rt, "angulotl-hopper.md"), hopperFM)
-	// routing is by segment presence, not case order: "monster" is absent from
-	// a retainer/statblock path, so the monster-statblock case can't fire.
-	got, ok = buildCardsContent(rt, "statblock", []string{"angulotl-hopper.md"}, nil)
+	got, ok := buildCardsContent(rt, "retainer", []string{"angulotl-hopper.md"}, nil)
 	if !ok || !strings.Contains(got, "Retainer Harrier") {
-		t.Errorf("retainer/statblock path should route to retainerCard, not statblockCard:\n%s", got)
+		t.Errorf("retainer leaf should route to retainerCard:\n%s", got)
 	}
 
 	dt := filepath.Join(root, "dynamic-terrain", "mechanisms")
