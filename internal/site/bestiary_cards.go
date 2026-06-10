@@ -20,6 +20,7 @@ func statblockTypeLabel(fm string) string {
 	return "Statblock"
 }
 
+// statblockCard renders a .sc-card preview for a monster statblock leaf page.
 func statblockCard(fm, body, file, name string) string {
 	inner := ""
 	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {

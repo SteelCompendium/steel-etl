@@ -27,10 +27,24 @@ func TestStatblockCard(t *testing.T) {
 		`<div class="sc-card__name">Goblin Warrior</div>`,
 		`<span class="sc-tag">Goblin</span>`,
 		`<span class="sc-tag">Humanoid</span>`,
-		`>EV</div>`, `>Level</div>`, `>Size</div>`,
+		`>EV</div>`, `>Level</div>`, `>Size</div>`, `>Speed</div>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("statblockCard missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+func TestStatblockTypeLabel(t *testing.T) {
+	for _, tc := range []struct{ org, role, want string }{
+		{"Horde", "Harrier", "Horde Harrier"},
+		{"Horde", "", "Horde"},
+		{"", "Harrier", "Harrier"},
+		{"", "", "Statblock"},
+	} {
+		fm := "organization: " + tc.org + "\nrole: " + tc.role + "\n"
+		if got := statblockTypeLabel(fm); got != tc.want {
+			t.Errorf("statblockTypeLabel(org=%q role=%q) = %q, want %q", tc.org, tc.role, got, tc.want)
 		}
 	}
 }
