@@ -73,6 +73,15 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	// is merged in by mergeGroupLanding — not listed as a card here.
 	case leaf && pathHasSegment(dir, "skill"):
 		cardType = "skill"
+	// Retainers live at retainer/statblock/<id>; must precede the monster
+	// statblock case below (retainers also sit under a statblock/ dir).
+	case leaf && pathHasSegment(dir, "retainer"):
+		cardType = "retainer"
+	case leaf && pathHasSegment(dir, "dynamic-terrain"):
+		cardType = "dynamic-terrain"
+	// Monster statblocks: monster/<group>[/<echelon>]/statblock/<id>.
+	case leaf && pathHasSegment(dir, "monster") && pathHasSegment(dir, "statblock"):
+		cardType = "statblock"
 	default:
 		return "", false
 	}
@@ -136,6 +145,12 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 		return complicationCard(fm, body, file, name)
 	case "culture":
 		return cultureCard(fm, body, file, name)
+	case "statblock":
+		return statblockCard(fm, body, file, name)
+	case "dynamic-terrain":
+		return terrainCard(fm, body, file, name)
+	case "retainer":
+		return retainerCard(fm, body, file, name)
 	default: // condition, skill, movement, negotiation
 		max := 96
 		if t == "skill" { // skills are short — give them room so they don't ellipsize

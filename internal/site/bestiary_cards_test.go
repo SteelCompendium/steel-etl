@@ -1,6 +1,8 @@
 package site
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -92,5 +94,42 @@ func TestRetainerCardNoRole(t *testing.T) {
 	got := retainerCard("level: 1\nname: Plain\n", "", "plain.md", "Plain")
 	if !strings.Contains(got, `<div class="sc-card__type">Retainer</div>`) {
 		t.Errorf("roleless retainer should label \"Retainer\" with no trailing space:\n%s", got)
+	}
+}
+
+func writeMD(t *testing.T, path, fm string) {
+	t.Helper()
+	if err := os.MkdirAll(filepath.Dir(path), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(path, []byte("---\n"+fm+"---\n\n# x\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+}
+
+func TestBuildCardsContent_Bestiary(t *testing.T) {
+	root := t.TempDir()
+	sb := filepath.Join(root, "monster", "goblins", "statblock")
+	writeMD(t, filepath.Join(sb, "goblin-warrior.md"), goblinWarriorFM)
+	got, ok := buildCardsContent(sb, "statblock", []string{"goblin-warrior.md"}, nil)
+	if !ok {
+		t.Fatal("expected statblock leaf to produce cards")
+	}
+	if !strings.Contains(got, "Horde Harrier") || !strings.Contains(got, `class="sc-cards"`) {
+		t.Errorf("statblock grid wrong:\n%s", got)
+	}
+
+	rt := filepath.Join(root, "retainer", "statblock")
+	writeMD(t, filepath.Join(rt, "angulotl-hopper.md"), hopperFM)
+	got, ok = buildCardsContent(rt, "statblock", []string{"angulotl-hopper.md"}, nil)
+	if !ok || !strings.Contains(got, "Retainer Harrier") {
+		t.Errorf("retainer leaf should win over statblock:\n%s", got)
+	}
+
+	dt := filepath.Join(root, "dynamic-terrain", "mechanisms")
+	writeMD(t, filepath.Join(dt, "pillar.md"), pillarFM)
+	got, ok = buildCardsContent(dt, "mechanisms", []string{"pillar.md"}, nil)
+	if !ok || !strings.Contains(got, "Dynamic Terrain") {
+		t.Errorf("terrain leaf wrong:\n%s", got)
 	}
 }
