@@ -50,7 +50,7 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 	// index-of-indexes: every child is a directory → folder cards. Scoped to the
 	// feature, treasure, skill & rule trees so other sections (e.g. the Bestiary)
 	// keep their own index style.
-	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) {
+	if len(subdirs) > 0 && len(files) == 0 && usesFolderIndex(dir) && !isMonsterGroupDir(dir) {
 		return buildFolderIndex(dir, dirName, subdirs), true
 	}
 
@@ -67,7 +67,9 @@ func buildFeatureIndexContent(dir, dirName string, files, subdirs []string) (str
 // as .sc-folder cards. Other sections keep the default browse-index list.
 func usesFolderIndex(dir string) bool {
 	for _, p := range strings.Split(filepath.ToSlash(dir), "/") {
-		if p == "feature" || p == "treasure" || p == "skill" || p == "rule" {
+		switch p {
+		case "feature", "treasure", "skill", "rule",
+			"monster", "dynamic-terrain", "retainer":
 			return true
 		}
 	}
@@ -171,6 +173,10 @@ func folderCrestIcon(parentDir, childDir string) string {
 		return "skill"
 	case strings.Contains(slash, "/rule"):
 		return "rule"
+	case strings.Contains(slash, "/monster"),
+		strings.Contains(slash, "/dynamic-terrain"),
+		strings.Contains(slash, "/retainer"):
+		return "skull"
 	default:
 		return "scroll"
 	}
@@ -190,6 +196,13 @@ func folderIntro(dir, dirName string) string {
 	case dirName == "rule":
 		return "Every rules term and glossary entry, grouped by topic. Pick a category to browse its " +
 			"definitions, or use **search** to jump straight to a term."
+	case dirName == "monster":
+		return "Adversaries from the Monsters book, grouped by kind. Pick a group to see its " +
+			"lore, malice, and statblocks — or use the **Bestiary** tab to search and filter every creature."
+	case dirName == "dynamic-terrain":
+		return "Hazards, fieldworks, mechanisms, and other interactive terrain. Pick a category to browse."
+	case dirName == "retainer":
+		return "Retainers your heroes can recruit to fight alongside them."
 	}
 	return ""
 }

@@ -184,6 +184,35 @@ func TestMonsterGroupContent_NotAGroup(t *testing.T) {
 	}
 }
 
+func TestUsesFolderIndex_Bestiary(t *testing.T) {
+	for _, dir := range []string{"/x/monster", "/x/dynamic-terrain", "/x/retainer"} {
+		if !usesFolderIndex(dir) {
+			t.Errorf("usesFolderIndex(%q) = false, want true", dir)
+		}
+	}
+}
+
+func TestBuildFolderIndex_Monster(t *testing.T) {
+	out := buildFolderIndex("/x/monster", "monster", []string{"goblins", "dragons"})
+	for _, want := range []string{`class="sc-folder"`, `>Goblins</h3>`, `>Dragons</h3>`} {
+		if !strings.Contains(out, want) {
+			t.Errorf("monster folder index missing %q in:\n%s", want, out)
+		}
+	}
+}
+
+// The echelon group dir (files=0, subdirs=echelons) must NOT be captured by the
+// folder-index branch — it must fall through to buildMonsterGroupContent.
+func TestFeatureIndex_SkipsMonsterGroup(t *testing.T) {
+	if _, ok := buildFeatureIndexContent("/x/monster/demons", "demons", nil, []string{"1st-echelon"}); ok {
+		t.Error("monster group dir should NOT be handled by buildFeatureIndexContent's folder branch")
+	}
+	// but the monster ROOT (a non-group index-of-indexes) SHOULD be:
+	if _, ok := buildFeatureIndexContent("/x/monster", "monster", nil, []string{"goblins"}); !ok {
+		t.Error("monster root SHOULD render as folder index")
+	}
+}
+
 func TestBuildCardsContent_Bestiary(t *testing.T) {
 	root := t.TempDir()
 	sb := filepath.Join(root, "monster", "goblins", "statblock")
