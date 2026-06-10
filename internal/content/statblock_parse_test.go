@@ -102,6 +102,59 @@ func TestParseStatblockFeatures(t *testing.T) {
 	}
 }
 
+// Summoner minion/fixture/champion signature abilities encode the power roll in
+// the TITLE as dice notation ("Nd10 + <char>"), followed by three bare digit-led
+// tier outcome lines (no "≤11:"/"12-16:" labels). The parser must strip the dice
+// to effects.roll, clean the name, and map the three lines to tier1/2/3.
+const moltenStrikeFeature = "" +
+	"> 🏹 **Molten Strike 2d10 + R (Signature Ability)**\n" +
+	">\n" +
+	"> | **Magic, Melee, Strike** |        **Main action** |\n" +
+	"> |--------------------------|----------------:|\n" +
+	"> | **📏 Melee 2** | **🎯 One creature or object per minion** |\n" +
+	">\n" +
+	"> 4 fire damage; shift 3\n" +
+	">\n" +
+	"> 6 fire damage; shift 4\n" +
+	">\n" +
+	"> 8 fire damage; shift 5\n" +
+	">\n" +
+	"> **Effect:** Each square that the flow shifts into becomes wreathed in flames.\n"
+
+func TestParseStatblockFeatureDiceInTitle(t *testing.T) {
+	got := ParseStatblockFeatures(moltenStrikeFeature)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	a := got[0]
+	if a["name"] != "Molten Strike" {
+		t.Errorf("name: got %v, want Molten Strike (dice stripped)", a["name"])
+	}
+	if a["ability_type"] != "Signature Ability" {
+		t.Errorf("ability_type: got %v", a["ability_type"])
+	}
+	if a["feature_type"] != "ability" {
+		t.Errorf("feature_type: got %v, want ability", a["feature_type"])
+	}
+	effects, _ := a["effects"].([]map[string]any)
+	if len(effects) != 1 {
+		t.Fatalf("effects: got %v, want 1 entry", a["effects"])
+	}
+	e := effects[0]
+	if e["roll"] != "2d10 + R" {
+		t.Errorf("roll: got %v, want '2d10 + R'", e["roll"])
+	}
+	if e["tier1"] != "4 fire damage; shift 3" {
+		t.Errorf("tier1: got %v", e["tier1"])
+	}
+	if e["tier2"] != "6 fire damage; shift 4" {
+		t.Errorf("tier2: got %v", e["tier2"])
+	}
+	if e["tier3"] != "8 fire damage; shift 5" {
+		t.Errorf("tier3: got %v", e["tier3"])
+	}
+}
+
 func TestParseStatblockFeatureCost(t *testing.T) {
 	block := "" +
 		"> 🏹 **Dizzying Hex (1 Malice)**\n" +

@@ -79,6 +79,12 @@ var (
 	sbParenRe     = regexp.MustCompile(`^(.*?)\s*\(([^)]+)\)\s*$`)
 	sbTierRe      = regexp.MustCompile(`^-\s*\*\*(≤?\d+(?:-\d+)?\+?):\*\*\s*(.*)$`)
 	sbPowerRollRe = regexp.MustCompile(`\*\*(Power Roll[^*]*)\*\*`)
+	// sbDiceRe splits a "Name Nd10 + <characteristic>" title (summoner statblock
+	// signature abilities encode the power roll inline in the title) into the
+	// clean name and the dice roll. sbBareTierRe matches the three bare,
+	// digit-led tier outcome lines that follow (no "≤11:" labels).
+	sbDiceRe     = regexp.MustCompile(`^(.*?)\s+(\d+d\d+\s*\+\s*\S.*?)$`)
+	sbBareTierRe = regexp.MustCompile(`^\d`)
 )
 
 // splitBlockquoteBlocks breaks a body into individual blockquote blocks, one per
@@ -175,6 +181,14 @@ func parseOneFeature(block string) map[string]any {
 		}
 	}
 
+	// Dice-in-title power roll ("Molten Strike 2d10 + R"): lift the dice to the
+	// effect's roll and clean the name. The tier outcomes are extracted below.
+	diceRoll := ""
+	if dm := sbDiceRe.FindStringSubmatch(f["name"].(string)); dm != nil {
+		f["name"] = strings.TrimSpace(dm[1])
+		diceRoll = strings.TrimSpace(dm[2])
+	}
+
 	rest := lines[1:]
 	rows := featureTableRows(rest)
 	switch {
@@ -191,7 +205,10 @@ func parseOneFeature(block string) map[string]any {
 	// Effects: power-roll tiers or plain trait text.
 	tiers := map[string]string{}
 	var prose []string
-	var roll string
+	roll := diceRoll
+	tierKeys := []string{"tier1", "tier2", "tier3"}
+	bareTierIdx := 0   // next positional tier slot for the dice-in-title form
+	bareTiersDone := false
 	for _, line := range rest {
 		t := strings.TrimSpace(line)
 		if pr := sbPowerRollRe.FindStringSubmatch(t); pr != nil {
@@ -211,6 +228,16 @@ func parseOneFeature(block string) map[string]any {
 		}
 		if t == "" || strings.HasPrefix(t, "|") {
 			continue
+		}
+		// Dice-in-title abilities: the first run of up to three bare digit-led
+		// lines below the table are the ≤11 / 12-16 / 17+ tiers, by position.
+		if diceRoll != "" && !bareTiersDone && bareTierIdx < len(tierKeys) && sbBareTierRe.MatchString(t) {
+			tiers[tierKeys[bareTierIdx]] = t
+			bareTierIdx++
+			continue
+		}
+		if bareTierIdx > 0 {
+			bareTiersDone = true // a non-tier line ends the tier run
 		}
 		prose = append(prose, t)
 	}
