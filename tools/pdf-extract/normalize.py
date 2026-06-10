@@ -12,6 +12,8 @@ _GLYPH = re.compile(r"⟦[gw]:0x[0-9a-fA-F]+⟧")
 # scc: link targets inside markdown: [text](scc:...) -> keep text, drop target
 _SCC_LINK = re.compile(r"\[([^\]]*)\]\(scc:[^)]*\)")
 _MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")
+# Leading YAML frontmatter block (book/source/title metadata, not publisher prose)
+_FRONTMATTER = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
 # HTML annotation comments <!-- @type: ... -->
 _COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 # markdown emphasis/heading/table/pipe punctuation to strip to spaces
@@ -40,6 +42,7 @@ def wordbag(text: str) -> Counter:
 
 
 def wordbag_from_markdown(md: str) -> Counter:
+    md = _FRONTMATTER.sub(" ", md)
     md = _COMMENT.sub(" ", md)
     md = _SCC_LINK.sub(r"\1", md)
     md = _MD_LINK.sub(r"\1", md)

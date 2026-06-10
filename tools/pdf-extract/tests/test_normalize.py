@@ -40,3 +40,24 @@ def test_strips_markdown_and_scc_links():
     assert normalize.wordbag_from_markdown(md) == Counter(
         ["effect", "the", "taunted", "foe"]
     )
+
+
+def test_strips_leading_yaml_frontmatter():
+    md = (
+        "---\n"
+        "book: mcdm.summoner.v1\n"
+        "source: MCDM\n"
+        "title: Draw Steel Summoner\n"
+        "---\n\n"
+        "# The Summoner\n\nThe process by which essence."
+    )
+    # only the body words remain; frontmatter metadata is dropped
+    assert normalize.wordbag_from_markdown(md) == Counter(
+        ["the", "summoner", "the", "process", "by", "which", "essence"]
+    )
+
+
+def test_horizontal_rule_midbody_is_not_treated_as_frontmatter():
+    # a --- divider mid-document must not swallow body text
+    md = "alpha\n\n---\n\nbeta gamma"
+    assert normalize.wordbag_from_markdown(md) == Counter(["alpha", "beta", "gamma"])
