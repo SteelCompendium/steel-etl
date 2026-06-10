@@ -95,6 +95,29 @@ func TestRenderSubtree_LeafEqualsOwnBody(t *testing.T) {
 	}
 }
 
+func TestRenderSubtree_DemotesOverflowHeadings(t *testing.T) {
+	// Retainer statblocks carry H8 "Level N … Advancement Ability" sub-labels,
+	// which are NOT collected as sections and would otherwise leak as literal
+	// "########" text. They must demote to bold body labels.
+	sb := &parser.Section{
+		Heading:      "Devil Detective",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "statblock"},
+		BodySource:   "> ⭐️ **Soulsight**\n\n######## Level 4 Retainer Advancement Ability\n\n> 🏹 **Soul Sleuth**",
+	}
+	got := RenderSubtree(sb, nil)
+	if strings.Contains(got, "#######") {
+		t.Errorf("7+ hash heading must not leak as literal hashes:\n%s", got)
+	}
+	if !strings.Contains(got, "**Level 4 Retainer Advancement Ability**") {
+		t.Errorf("overflow heading should demote to bold:\n%s", got)
+	}
+	// A genuine blockquote in the same body must be untouched.
+	if !strings.Contains(got, "> ⭐️ **Soulsight**") {
+		t.Errorf("statblock blockquotes must be preserved:\n%s", got)
+	}
+}
+
 func TestRenderSubtree_ClampsShallowChildToH1(t *testing.T) {
 	// A child whose HeadingLevel is shallower than its parent's would yield a
 	// negative computed level; it must clamp to H1 rather than panic on a

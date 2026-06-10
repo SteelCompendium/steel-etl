@@ -1,6 +1,7 @@
 package content
 
 import (
+	"regexp"
 	"strings"
 
 	"github.com/SteelCompendium/steel-etl/internal/parser"
@@ -60,11 +61,24 @@ func renderSubtree(section *parser.Section, rootLevel int, sccBySection map[*par
 }
 
 // nodeBody returns a section's immediate body, un-blockquoted for ability
-// sections (whose statblocks are blockquoted in source).
+// sections (whose statblocks are blockquoted in source), with any overflow
+// (7+ hash) heading demoted to bold.
 func nodeBody(section *parser.Section) string {
 	body := section.BodySource
 	if section.Type() == "ability" {
 		body = stripBlockquotePrefix(body)
 	}
-	return body
+	return demoteOverflowHeadings(body)
+}
+
+// overflowHeadingRe matches an ATX heading deeper than H6 (7+ leading '#').
+// CommonMark caps headings at H6, so these render as literal hashes. Draw Steel
+// statblocks use H8 for retainer "Level N … Advancement Ability" sub-labels,
+// which are intentionally not collected as sections (they fold into the
+// statblock body); demote them to bold so they don't leak as raw '########'.
+var overflowHeadingRe = regexp.MustCompile(`(?m)^#{7,}[ \t]+(.+?)[ \t]*$`)
+
+// demoteOverflowHeadings rewrites every 7+-hash heading line to a bold label.
+func demoteOverflowHeadings(body string) string {
+	return overflowHeadingRe.ReplaceAllString(body, `**$1**`)
 }
