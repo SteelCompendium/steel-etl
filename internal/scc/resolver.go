@@ -5,6 +5,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strconv"
 	"strings"
 )
 
@@ -21,22 +22,43 @@ const (
 	LinkNone
 )
 
-// mdLinkRe matches markdown links with scc: protocol URLs.
+// mdLinkRe matches markdown links with scc: protocol URLs, with an optional
+// scheme-version prefix (scc.vN:) and an optional trailing #format qualifier.
+// Capture groups: 1=display text, 2=".vN" or "" (bare ⇒ v1), 3=canonical
+// source/type/item code, 4="#format" or "" (reserved, ignored for identity).
+// Format qualifiers (group 4) are lowercase per spec; an uppercase #JSON will
+// not match and the link is left verbatim.
 // Examples:
 //
 //	[Gouge](scc:mcdm.heroes.v1/feature.ability.fury.level-1/gouge)
-//	[Fury](scc:mcdm.heroes.v1/class/fury)
-var mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc:([a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+)\)`)
+//	[Gouge](scc.v1:mcdm.heroes.v1/feature.ability.fury.level-1/gouge#json)
+var mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc(\.v\d+)?:([a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+)(#[a-z][a-z0-9\-]*)?\)`)
 
 // Resolver resolves SCC codes to relative file paths.
 type Resolver struct {
-	registry *Registry
-	ext      string // file extension for resolved paths (e.g., ".md")
+	registry      *Registry
+	ext           string // file extension for resolved paths (e.g., ".md")
+	schemeVersion int    // scheme version this resolver resolves (from the registry)
 }
 
 // NewResolver creates a resolver backed by the given registry.
 func NewResolver(registry *Registry, ext string) *Resolver {
-	return &Resolver{registry: registry, ext: ext}
+	return &Resolver{registry: registry, ext: ext, schemeVersion: registry.SchemeVersion()}
+}
+
+// schemeVersionFromTag parses a ".vN" prefix tag (e.g. ".v1") into N. An empty
+// tag is the bare scc: form, which is implicit scheme version 1.
+func schemeVersionFromTag(tag string) int {
+	if tag == "" {
+		return 1
+	}
+	// The regex guarantees tag matches \.v\d+, so Atoi cannot fail here;
+	// the error branch is defensive and unreachable in practice.
+	n, err := strconv.Atoi(strings.TrimPrefix(tag, ".v"))
+	if err != nil {
+		return 1
+	}
+	return n
 }
 
 // ResolveLinks replaces scc: protocol links in markdown link syntax with relative file paths.
@@ -52,11 +74,20 @@ func (r *Resolver) ResolveLinks(content string, relativeTo string, mode LinkMode
 
 	return mdLinkRe.ReplaceAllStringFunc(content, func(match string) string {
 		sub := mdLinkRe.FindStringSubmatch(match)
-		if len(sub) < 3 {
+		if len(sub) < 4 {
 			return match
 		}
 		displayText := sub[1]
-		sccCode := sub[2]
+		versionTag := sub[2] // "" (bare ⇒ v1) or ".vN"
+		sccCode := sub[3]    // canonical source/type/item; scheme prefix and #fragment excluded by the regex
+		// sub[4] is the optional #format qualifier — reserved, ignored for identity.
+
+		// Only links minted under this build's scheme version resolve against this
+		// registry. A future scc.v2: reference must NOT silently resolve to v1 content.
+		if v := schemeVersionFromTag(versionTag); v != r.schemeVersion {
+			fmt.Fprintf(os.Stderr, "WARN: scc link scheme v%d not resolvable in this build (current v%d): %q\n", v, r.schemeVersion, sccCode)
+			return displayText
+		}
 
 		// Resolve the SCC code (check registry, then aliases)
 		resolvedCode := sccCode
