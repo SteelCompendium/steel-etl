@@ -329,3 +329,235 @@ Mastering herself, she got down on one knee and bowed her head.
 The great beast beside her sat on its haunches and did the same.
 
 "My lord," she said. "Your herald bids you. Command me."
+
+<!-- @type: chapter | @id: the-summoner-class -->
+# The Summoner Class
+
+<!-- @type: class | @id: summoner -->
+## Summoner
+
+You are the armada. The kings of old would trade armies for your abilities. You've undertaken the tradition that conjures an endless supply of warriors. You are the summoner, the mage who takes their dreams and makes them manifest.
+
+You call forth minions to trudge fearlessly into the fray and provide support, holding the enemy at bay while you and your fellow heroes ready the counteroffensive. Your minions serve unflinchingly, unerringly, to their death or to yours.
+
+You can also take advantage of powerful magic to buff your allies, whittle down your enemies, or enlist the fallen into your ranks. And when push comes to shove, you can call upon your champion to finish the fight.
+
+<!-- @type: feature | @id: basics | @level: 1 -->
+### Basics
+
+**Starting Characteristics:** You start with a Reason of 2, and you can choose one of the following arrays for your other characteristics scores:
+
+- 2, 2, −1, −1
+- 2, 1, 1, −1
+- 2, 1, 0, 0
+- 1, 1, 1, 0
+
+**Weak Potency:** Reason − 2
+
+**Average Potency:** Reason − 1
+
+**Strong Potency:** Reason
+
+**Starting Stamina at 1st Level:** 15
+
+**Stamina Gained at 2nd and Higher Levels:** 6
+
+**Recoveries:** 8
+
+**Skills:** You gain the Magic and Strategy skills and can choose any two skills from the intrigue or lore skill groups. (*Quick Build:* Eavesdrop, Magic, Monsters, Strategy.)
+
+###### Summoner Advancement
+
+| Level | Summoner Features                                                                                                  | Circle Features                              | Minions           | Abilities  |
+|-------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------------|------------|
+| 1st   | Minions, Essence, Summoner Strike, Strike For Me, Minion Bridge, Formation, Quick Command, Summoner Abilities       | Summoner Circle, Circle Features, Portfolio  | 1, 1, 3, 3        | 5          |
+| 2nd   | Perk                                                                                                               | Summoner's Dominion, New Portfolio Minion    | 1, 1, 3, 3, 5     | 5          |
+| 3rd   | Summoner's Kit, 7-Essence Ability                                                                                  | —                                            | 1, 1, 3, 3, 5     | 5, 7       |
+| 4th   | Characteristic Increase, Minion Improvement, Essence Salvage, Minion Chain, Perk, Skill                           | —                                            | 1, 1, 3, 3, 5     | 5, 7       |
+| 5th   | —                                                                                                                  | Circle Feature, New Portfolio Minion         | 1, 1, 3, 3, 5, 7  | 5, 7       |
+| 6th   | Perk, Minion Machinations, Kit Improvement, 9-Essence Ability                                                      | Return to the Source                         | 1, 1, 3, 3, 5, 7  | 5, 7, 9    |
+| 7th   | Characteristic Increase, Minion Improvement, Font of Creation, Their Life for Mine, Skill                         | —                                            | 1, 1, 3, 3, 5, 7  | 5, 7, 9    |
+| 8th   | Perk                                                                                                               | Circle Feature, Portfolio Champion           | 1, 1, 3, 3, 5, 7, 9 | 5, 7, 9  |
+| 9th   | Kit Improvement, Steward of Two Worlds, 11-Essence Ability                                                         | —                                            | 1, 1, 3, 3, 5, 7, 9 | 5, 7, 9, 11 |
+| 10th  | Characteristic Increase, Minion Improvement, Eidos, No Matter the Cost, Among Our Ranks, Perk, Skill              | —                                            | 1, 1, 3, 3, 5, 7, 9 | 5, 7, 9, 11 |
+
+### Draw Steel Master Classes
+
+The summoner is an example of a master class in Draw Steel. Master classes are intended for players who are familiar with the game and have played a few sessions already. They are not recommended for first time players—you need to know the rules before we start breaking them on you!
+
+If you are new to Draw Steel, we recommend checking out The Delian Tomb starter adventure, which includes a step-by-step tutorial on how to play the game and breaks down all the working parts of a hero. Save Broadhurst first, and then you hurry back here!
+
+### 1st-Level Features
+
+As a summoner, you gain the following features.
+
+<!-- @type: feature | @id: summoner-circle | @level: 1 -->
+### Summoner Circle
+
+You've learned the art of summoning from a member of a loose network of summoners called a circle. Each circle specializes in a distinct portfolio of creatures you can call into existence. Choose a summoner circle from the following options, each of which grants you a communication feature (*Quick Build:* Circle of Graves.)
+
+**Circle of Blight:** You are a demonologist who calls forth demons from the Abyssal Waste. Your portfolio includes shapechanging demons that grow in hunger and power over time. You can communicate with creatures that have the Abyssal keyword even if you don't share a language.
+
+**Circle of Graves:** You are a necromancer who raises undead creatures from the Necropolitan Ruin. The corporeal and incorporeal creatures under your command are hardy and many. You can communicate with creatures that have the Undead keyword even if you don't share a language.
+
+**Circle of Spring:** You are a feybright who beckons pixies, nixies, and sprites from Arcadia. Your portfolio features ephemeral fey spirits surrounded by weird and powerful magic. You can communicate with creatures that have the Fey keyword even if you don't share a language.
+
+**Circle of Storms:** You are a storm caster who summons elementals from Quintessence. This portfolio contains forces of nature that leave a big impact on the environment. You can communicate with creatures that have the Elemental keyword even if you don't share a language.
+
+Your choice of circle decides the portfolio from which you summon minions, as well as many of the features you'll gain from this class. Your circle is your subclass.
+
+<!-- @type: feature | @id: minions | @level: 1 -->
+### Minions
+
+The creatures you control are called minions. You can summon and maintain up to a maximum of 8 minions. Your minions are considered allies at your level.
+
+You can manage up to two squads of minions. Newly summoned minions can either be organized into a new squad or be distributed into other squads under your control. A squad can't contain more than eight minions, and all minions in the squad must have the same name.
+
+The maximum distance that you can summon minions and use specific conjuring abilities is called your Summoner's Range. Your Summoner's Range is equal to 5 + your Reason score. You must have line of effect to summon and give commands to minions within your Summoner's Range. Commanding a minion to take a main action or a maneuver while hidden reveals you.
+
+You also have special minions at your disposal called signature minions, low-cost creatures that you've become accustomed to summoning often. See Portfolio for more details about the types of minions you can summon.
+
+#### Minions in Combat
+
+**Start of Combat:** At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you can summon up to two of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
+
+**Start of Turn:** At the start of each of your turns during combat, you can summon up to three of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
+
+**Summoning:** Each minion is summoned on the ground unless they can fly or hover. Unless an ability specifies, you can't summon any new minions beyond your minion maximum until the same number of existing minions are dismissed or destroyed.
+
+**Stamina:** Minions in a squad pool their Stamina together. Whenever a minion in a squad takes damage, the squad's Stamina pool is reduced by a number equal to the damage taken. Each time the pool is reduced by an amount equal to a single squad member's Stamina, one minion dies (starting with the minion that took damage, followed by the next nearest minion). If there is any excess damage after all minions in the squad are dead, you take damage equal to 2 + your level. Minions can't be winded, can't regain Stamina, and can't gain temporary Stamina.
+
+**Area Effects:** The damage from an area effect dealt to a squad's Stamina pool can only kill up to the minions in its area. Any excess damage is ignored.
+
+**Strikes with Multiple Targets:** A squad's Stamina pool only takes the largest single instance of damage from a strike that targets two or more minions in that squad. Any additional effects still affect the minions targeted by the strike.
+
+**Conditions:** You resolve any saving throws on conditions affecting one or more of your minions. Treat saving throws as if you had one instance of each condition.
+
+**Immunity and Weakness:** If any minion in a squad has damage immunity or weakness to a particular damage type, apply that effect to the entire squad only once, regardless of how many minions share the same trait.
+
+**Actions:** Minions in a squad act together on your turn in any order, before, in-between, and/or after any of your actions. They can either take a move action and a main action (excluding Heal and Defend), a move action and a maneuver, or two move actions. Individual minions can also make opportunity attacks.
+
+**Free Strikes:** Unless otherwise specified, a minion's free strike has a distance of Melee 1 or Ranged 5 and deals the damage value listed on the stat block. The minion can choose to deal untyped damage or the damage type next to the damage value.
+
+**Damage:** Whenever multiple minions strike the same target simultaneously, the damage is added together and treated as a single strike. Minions in a squad targeting the same target with a signature ability only apply one instance of the signature ability while each additional minion increases the damage by a number equal to their free strike value.
+
+**Surges:** Your minions share your pool of surges and can apply them to their strikes. Whenever one or more of your minions would gain a surge during a turn, you gain that surge instead.
+
+**Maneuvers:** Unless otherwise specified on the minions' stat block, a squad uses their maneuver together as a unit. If a maneuver targets a single creature, all minions in the squad target the same creature. If a maneuver requires a power roll, the result is equal to 8 + the minions' characteristic + the number of squad members within distance of the maneuver.
+
+**Individual Maneuvers:** An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from prone or escaping a grab. If they do, they can't take part in their squad's main action or maneuver.
+
+**Characteristics:** Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion's stat block refers to an R or uses a potency (such as M < WEAK).
+
+**Unconscious:** If you are unconscious or unable to act on your turn, you can't summon new minions. Additionally, your remaining minions can't deal damage; they can only act to bring you to safety.
+
+**End of Combat:** At the end of combat, your minions finish their tasks (such as carrying someone to safety) and are then dismissed.
+
+#### Minions Outside of Combat
+
+While outside of combat, you can have up to 4 minions summoned without spending essence. You can freely summon your signature minions this way. For other minions, while you have a number of Victories equal to the minion's essence cost or more, you can summon up to the set number of minions listed on their stat block.
+
+Each of your minions can be given a simple task and a destination you've previously visited and they'll fulfill it to the best of their ability. Example tasks include sending messages, scouting, and carrying supplies. Your minions aren't followers and can't make project rolls until you can summon specialists (see Minion Machinations).
+
+When combat begins, any of your minions who were summoned outside of combat finish their tasks and are then dismissed.
+
+> **Soul-y Moley!**
+>
+> Your minions are manifestations of the magic you weave and don't harbor any souls of their own. They are expressions of your own soul and are more akin to dreams than sapient creatures.
+>
+> Treat your minions as if they had your soul whenever they are targeted by abilities that affect souls. Ignore any effects that trigger when a creature with a soul dies unless you're the one being targeted.
+
+<!-- @type: feature | @id: essence | @level: 1 -->
+### Essence
+
+You and your minions have a unique reserve of essence as your Heroic Resource. You use this magic to sculpt your forces and maintain control over the battlefield.
+
+#### Essence in Combat
+
+At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain essence equal to your Victories.
+
+At the start of each of your turns during combat, you gain 2 essence.
+
+The first time each round that any minion (either yours or an enemy) dies unwillingly within your Summoner's Range, you gain 1 essence.
+
+Whenever you use a heroic ability or call forth a minion that costs essence, you can willingly sacrifice one or more of your minions within your Summoner's Range to reduce the cost by 1. You can't kill minions this way if they used a main action or maneuver during the turn. You can sacrifice more minions than you would reduce the cost by.
+
+You lose any remaining essence at the end of the encounter.
+
+#### Essence Outside of Combat
+
+Though you can't gain essence outside of combat, you can use your heroic abilities and effects that cost essence without spending it. Whenever you use an ability or effect outside of combat that costs essence, you can't use that same ability or effect outside of combat again until you gain at least 1 Victory or finish a respite.
+
+> **More Wielders of Quintessence**
+>
+> Essence is the "stuff of creation." Just as the elementalist uses essence to conjure fire, lightning, or warp space and time, the summoner uses essence to manifest skeletons, conjure pixies, and call forth demons from the Abyssal Waste.
+>
+> There may be more magicians in the future that also rely on essence for their magic.
+
+<!-- @type: ability | @id: summoner-strike | @level: 1 -->
+### Summoner Strike
+
+You have the following ability, which replaces both your melee and ranged free strikes.
+
+<!-- @type: ability | @id: summoner-strike -->
+#### Summoner Strike
+
+*A sudden burst of energy erupts from your implement and shocks your foes' nerves.*
+
+| **Magic, Melee, Ranged, Strike** |          **Main action** |
+|----------------------------------|--------------------------:|
+| **📏 Melee 1 or Ranged 5**      | **🎯 One creature or object** |
+
+**Effect:** R damage. If the target has R < WEAK, they are slowed (save ends).
+
+**Special:** This ability has the Charge keyword when it's used as a melee strike.
+
+<!-- @type: feature | @id: strike-for-me | @level: 1 -->
+### Strike For Me
+
+You have the following free triggered action.
+
+<!-- @type: ability | @id: strike-for-me -->
+#### Strike for Me
+
+*Your minions fight in your stead.*
+
+| **Magic, Ranged**       |  **Free triggered** |
+|-------------------------|--------------------:|
+| **📏 Summoner's Range** | **🎯 Each of your minions** |
+
+**Trigger:** You use a triggered action to make a free strike or use a signature ability.
+
+**Power Roll + Reason:**
+
+- **≤11:** Up to three targets each make a free strike
+- **12-16:** Up to five targets each make a free strike
+- **17+:** Up to seven targets each make a free strike
+
+**Special:** On a natural 19 or 20, each target makes a free strike.
+
+**Effect:** Your minions act in place of you making a free strike or using a signature ability. If you were granted the triggered action against a specific target, your minions must strike the same target. If the triggered action granted you a signature ability, you have an edge on the power roll.
+
+> **Your Minions Deal the Damage**
+>
+> By normal Draw Steel rules, everyone gets access to free strikes. As a summoner, you have a free strike equivalent in addition to minions who have their own free strikes. Changing how you attack allows your minions to shine in battle while keeping your damage output in line with your fellow heroes. The static damage you and most of your minions deal also keeps your turns fast and flowing.
+
+<!-- @type: feature | @id: call-forth | @level: 1 -->
+### Call Forth
+
+You have the following ability.
+
+<!-- @type: ability | @id: call-forth -->
+#### Call Forth (1+ Essence)
+
+*My power is yours, and yours, mine. I summon thee.*
+
+| **Magic, Ranged**       | **Main action** |
+|-------------------------|----------------:|
+| **📏 Summoner's Range** |     **🎯 Self** |
+
+**Effect:** You summon one or more minions from your portfolio into unoccupied spaces within distance. Choose one of the following options:
+
+**Signature Minions:** You summon one signature minion for each essence you spend on this ability.
+
+**All Other Minions:** You summon the set number of minions listed on the stat block for their essence cost.
