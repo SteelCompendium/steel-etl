@@ -9,25 +9,38 @@ import (
 
 // Registry holds known SCC codes and aliases.
 type Registry struct {
-	codes   map[string]bool
-	aliases map[string]string // alias → canonical SCC
-	frozen  bool
+	codes         map[string]bool
+	aliases       map[string]string // alias → canonical SCC
+	frozen        bool
+	schemeVersion int
 }
 
 // registryJSON is the on-disk format for classification.json.
 type registryJSON struct {
-	Version int               `json:"version"`
-	Frozen  bool              `json:"frozen"`
-	Codes   []string          `json:"codes"`
-	Aliases map[string]string `json:"aliases,omitempty"`
+	Version       int               `json:"version"`
+	SchemeVersion int               `json:"scheme_version"`
+	Frozen        bool              `json:"frozen"`
+	Codes         []string          `json:"codes"`
+	Aliases       map[string]string `json:"aliases,omitempty"`
 }
 
 // NewRegistry creates an empty registry.
 func NewRegistry() *Registry {
 	return &Registry{
-		codes:   make(map[string]bool),
-		aliases: make(map[string]string),
+		codes:         make(map[string]bool),
+		aliases:       make(map[string]string),
+		schemeVersion: 1,
 	}
+}
+
+// SchemeVersion returns the SCC scheme (grammar) version this registry was
+// minted under. Defaults to 1 (the original frozen grammar) when unspecified.
+func (r *Registry) SchemeVersion() int {
+	// Guard the zero-value struct literal; NewRegistry/LoadRegistry already default to 1.
+	if r.schemeVersion == 0 {
+		return 1
+	}
+	return r.schemeVersion
 }
 
 // Add registers an SCC code.
@@ -99,9 +112,10 @@ func (r *Registry) ValidateAgainstFrozen(frozen *Registry) error {
 // Save writes the registry to a JSON file.
 func (r *Registry) Save(path string) error {
 	data := registryJSON{
-		Version: 1,
-		Frozen:  r.frozen,
-		Codes:   r.Codes(),
+		Version:       1,
+		SchemeVersion: r.SchemeVersion(),
+		Frozen:        r.frozen,
+		Codes:         r.Codes(),
 	}
 	if len(r.aliases) > 0 {
 		data.Aliases = r.aliases
@@ -130,6 +144,9 @@ func LoadRegistry(path string) (*Registry, error) {
 
 	r := NewRegistry()
 	r.frozen = raw.Frozen
+	if raw.SchemeVersion != 0 {
+		r.schemeVersion = raw.SchemeVersion
+	}
 	for _, code := range raw.Codes {
 		r.codes[code] = true
 	}

@@ -3,6 +3,7 @@ package scc
 import (
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -103,6 +104,10 @@ func TestRegistrySaveAndLoad(t *testing.T) {
 		t.Errorf("expected alias to resolve, got %s", target)
 	}
 
+	if got := r2.SchemeVersion(); got != 1 {
+		t.Errorf("reloaded SchemeVersion = %d, want 1", got)
+	}
+
 	// Verify file format
 	data, _ := os.ReadFile(path)
 	t.Logf("File contents:\n%s", string(data))
@@ -121,5 +126,54 @@ func TestRegistryCodes(t *testing.T) {
 	// Should be sorted
 	if codes[0] != "a/b" || codes[1] != "b/c" || codes[2] != "c/d" {
 		t.Errorf("expected sorted codes, got %v", codes)
+	}
+}
+
+func TestRegistrySchemeVersion(t *testing.T) {
+	// New registry defaults to scheme version 1.
+	r := NewRegistry()
+	if got := r.SchemeVersion(); got != 1 {
+		t.Fatalf("NewRegistry SchemeVersion = %d, want 1", got)
+	}
+
+	// Save writes scheme_version, and a round-trip preserves it.
+	dir := t.TempDir()
+	path := filepath.Join(dir, "classification.json")
+	r.Add("mcdm.heroes.v1/class/fury")
+	if err := r.Save(path); err != nil {
+		t.Fatalf("Save failed: %v", err)
+	}
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		t.Fatalf("ReadFile failed: %v", err)
+	}
+	if !strings.Contains(string(raw), `"scheme_version": 1`) {
+		t.Errorf("saved registry missing scheme_version; got:\n%s", raw)
+	}
+
+	// Loading a file WITHOUT scheme_version defaults to 1 (backward compat).
+	legacy := filepath.Join(dir, "legacy.json")
+	if err := os.WriteFile(legacy, []byte(`{"version":1,"frozen":false,"codes":[]}`), 0644); err != nil {
+		t.Fatalf("write legacy failed: %v", err)
+	}
+	lr, err := LoadRegistry(legacy)
+	if err != nil {
+		t.Fatalf("LoadRegistry(legacy) failed: %v", err)
+	}
+	if got := lr.SchemeVersion(); got != 1 {
+		t.Errorf("legacy SchemeVersion = %d, want 1", got)
+	}
+
+	// Loading a file WITH scheme_version honors it.
+	v2 := filepath.Join(dir, "v2.json")
+	if err := os.WriteFile(v2, []byte(`{"version":1,"scheme_version":2,"frozen":false,"codes":[]}`), 0644); err != nil {
+		t.Fatalf("write v2 failed: %v", err)
+	}
+	v2r, err := LoadRegistry(v2)
+	if err != nil {
+		t.Fatalf("LoadRegistry(v2) failed: %v", err)
+	}
+	if got := v2r.SchemeVersion(); got != 2 {
+		t.Errorf("v2 SchemeVersion = %d, want 2", got)
 	}
 }
