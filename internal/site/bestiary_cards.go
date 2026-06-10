@@ -41,7 +41,7 @@ func terrainCard(fm, body, file, name string) string {
 // The type label is "Retainer <Role>" (e.g. "Retainer Harrier"); immunities are
 // rendered as a line block when present; EV may be '-'.
 func retainerCard(fm, body, file, name string) string {
-	label := strings.TrimSpace("Retainer " + strings.TrimSpace(parseFrontmatterField(fm, "role")))
+	label := strings.TrimSpace("Retainer " + parseFrontmatterField(fm, "role"))
 	inner := ""
 	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
 		inner += tagsBlock(kw)

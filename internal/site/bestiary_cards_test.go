@@ -58,7 +58,8 @@ size: One square that can't be moved through
 func TestTerrainCard(t *testing.T) {
 	got := terrainCard(pillarFM, "This stone pillar can be toppled.", "pillar.md", "Pillar")
 	for _, want := range []string{`href="pillar/"`, `Dynamic Terrain`,
-		`<div class="sc-card__name">Pillar</div>`, `>EV</div>`, `>Level</div>`} {
+		`<div class="sc-card__name">Pillar</div>`, `>EV</div>`, `>Level</div>`, `>Size</div>`,
+		`<div class="sc-card__flavor">`, `stone pillar`} {
 		if !strings.Contains(got, want) {
 			t.Errorf("terrainCard missing %q in:\n%s", want, got)
 		}
@@ -80,9 +81,16 @@ size: 1S
 func TestRetainerCard(t *testing.T) {
 	got := retainerCard(hopperFM, "", "angulotl-hopper.md", "Angulotl Hopper")
 	for _, want := range []string{`href="angulotl-hopper/"`, `Retainer Harrier`,
-		`<span class="sc-tag">Angulotl</span>`, `Poison 2`, `>Level</div>`} {
+		`<span class="sc-tag">Angulotl</span>`, `Poison 2`, `>Level</div>`, `>Size</div>`} {
 		if !strings.Contains(got, want) {
 			t.Errorf("retainerCard missing %q in:\n%s", want, got)
 		}
+	}
+}
+
+func TestRetainerCardNoRole(t *testing.T) {
+	got := retainerCard("level: 1\nname: Plain\n", "", "plain.md", "Plain")
+	if !strings.Contains(got, `<div class="sc-card__type">Retainer</div>`) {
+		t.Errorf("roleless retainer should label \"Retainer\" with no trailing space:\n%s", got)
 	}
 }
