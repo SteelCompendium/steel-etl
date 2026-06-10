@@ -20,11 +20,12 @@ import (
 //   - types.json: entries grouped by type
 //   - resolve/{source}/{type}/{item}.json: per-entry lookup files
 type SCCAPIGenerator struct {
-	OutputDir  string            // e.g., "output/api"
-	BaseURL    string            // e.g., "https://steelcompendium.io/v2"
-	Sections   []site.SectionConfig // site sections for URL mapping
-	Aliases    map[string]string // alias → canonical SCC
-	entries    map[string]apiEntry
+	OutputDir     string               // e.g., "output/api"
+	BaseURL       string               // e.g., "https://steelcompendium.io/v2"
+	SchemeVersion int                  // SCC scheme (grammar) version; 0 ⇒ 1
+	Sections      []site.SectionConfig // site sections for URL mapping
+	Aliases       map[string]string    // alias → canonical SCC
+	entries       map[string]apiEntry
 }
 
 type apiEntry struct {
@@ -36,12 +37,13 @@ type apiEntry struct {
 }
 
 type apiIndex struct {
-	Version    int            `json:"version"`
-	Generated  string         `json:"generated"`
-	TotalCodes int            `json:"total_codes"`
-	TotalAliases int          `json:"total_aliases"`
-	BaseURL    string         `json:"base_url"`
-	Endpoints  apiEndpoints   `json:"endpoints"`
+	Version       int          `json:"version"`
+	SchemeVersion int          `json:"scheme_version"`
+	Generated     string       `json:"generated"`
+	TotalCodes    int          `json:"total_codes"`
+	TotalAliases  int          `json:"total_aliases"`
+	BaseURL       string       `json:"base_url"`
+	Endpoints     apiEndpoints `json:"endpoints"`
 }
 
 type apiEndpoints struct {
@@ -51,16 +53,25 @@ type apiEndpoints struct {
 }
 
 type apiRegistry struct {
-	Version   int               `json:"version"`
-	Generated string            `json:"generated"`
-	BaseURL   string            `json:"base_url"`
-	Entries   []apiEntry        `json:"entries"`
-	Aliases   map[string]string `json:"aliases,omitempty"`
+	Version       int               `json:"version"`
+	SchemeVersion int               `json:"scheme_version"`
+	Generated     string            `json:"generated"`
+	BaseURL       string            `json:"base_url"`
+	Entries       []apiEntry        `json:"entries"`
+	Aliases       map[string]string `json:"aliases,omitempty"`
 }
 
 type apiTypes struct {
-	Version int                   `json:"version"`
-	Types   map[string][]apiEntry `json:"types"`
+	Version       int                   `json:"version"`
+	SchemeVersion int                   `json:"scheme_version"`
+	Types         map[string][]apiEntry `json:"types"`
+}
+
+// apiResolveEntry is the body of a per-entry resolve/*.json file: a single
+// entry made self-describing with the scheme version it was minted under.
+type apiResolveEntry struct {
+	apiEntry
+	SchemeVersion int `json:"scheme_version"`
 }
 
 func (g *SCCAPIGenerator) Format() string { return "scc-api" }
@@ -100,6 +111,11 @@ func (g *SCCAPIGenerator) Finalize() error {
 	apiDir := filepath.Join(g.OutputDir, "v1")
 	now := time.Now().UTC().Format(time.RFC3339)
 
+	schemeVer := g.SchemeVersion
+	if schemeVer == 0 {
+		schemeVer = 1
+	}
+
 	sorted := g.sortedEntries()
 
 	aliases := g.Aliases
@@ -109,11 +125,12 @@ func (g *SCCAPIGenerator) Finalize() error {
 
 	// 1. index.json
 	if err := g.writeJSON(filepath.Join(apiDir, "index.json"), apiIndex{
-		Version:      1,
-		Generated:    now,
-		TotalCodes:   len(sorted),
-		TotalAliases: len(aliases),
-		BaseURL:      g.BaseURL,
+		Version:       1,
+		SchemeVersion: schemeVer,
+		Generated:     now,
+		TotalCodes:    len(sorted),
+		TotalAliases:  len(aliases),
+		BaseURL:       g.BaseURL,
 		Endpoints: apiEndpoints{
 			Registry: "/api/v1/scc.json",
 			Resolve:  "/api/v1/resolve/{source}/{type}/{item}.json",
@@ -125,11 +142,12 @@ func (g *SCCAPIGenerator) Finalize() error {
 
 	// 2. scc.json (full registry)
 	if err := g.writeJSON(filepath.Join(apiDir, "scc.json"), apiRegistry{
-		Version:   1,
-		Generated: now,
-		BaseURL:   g.BaseURL,
-		Entries:   sorted,
-		Aliases:   aliases,
+		Version:       1,
+		SchemeVersion: schemeVer,
+		Generated:     now,
+		BaseURL:       g.BaseURL,
+		Entries:       sorted,
+		Aliases:       aliases,
 	}); err != nil {
 		return fmt.Errorf("write scc.json: %w", err)
 	}
@@ -140,8 +158,9 @@ func (g *SCCAPIGenerator) Finalize() error {
 		grouped[e.Type] = append(grouped[e.Type], e)
 	}
 	if err := g.writeJSON(filepath.Join(apiDir, "types.json"), apiTypes{
-		Version: 1,
-		Types:   grouped,
+		Version:       1,
+		SchemeVersion: schemeVer,
+		Types:         grouped,
 	}); err != nil {
 		return fmt.Errorf("write types.json: %w", err)
 	}
@@ -157,7 +176,7 @@ func (g *SCCAPIGenerator) Finalize() error {
 	}
 	for _, e := range sorted {
 		relPath := e.SCC + ".json"
-		if err := g.writeJSON(filepath.Join(resolveDir, relPath), e); err != nil {
+		if err := g.writeJSON(filepath.Join(resolveDir, relPath), apiResolveEntry{apiEntry: e, SchemeVersion: schemeVer}); err != nil {
 			return fmt.Errorf("write resolve %s: %w", e.SCC, err)
 		}
 	}
@@ -168,7 +187,7 @@ func (g *SCCAPIGenerator) Finalize() error {
 			aliasEntry := canonicalEntry
 			aliasEntry.SCC = canonical // ensure canonical SCC in response
 			relPath := alias + ".json"
-			if err := g.writeJSON(filepath.Join(resolveDir, relPath), aliasEntry); err != nil {
+			if err := g.writeJSON(filepath.Join(resolveDir, relPath), apiResolveEntry{apiEntry: aliasEntry, SchemeVersion: schemeVer}); err != nil {
 				return fmt.Errorf("write alias resolve %s: %w", alias, err)
 			}
 		}
