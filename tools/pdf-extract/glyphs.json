@@ -1,0 +1,42 @@
+{
+  "_README": "DrawSteelGlyphs/Wingdings codepoint -> the text it resolves to, used BOTH when building the fidelity wordbag (resolve.py + build_wordbag.py) AND as the convention the markdown converter renders. Empty string = decorative (dropped, contributes no word). Keys starting with '_' are documentation and ignored by resolve.py. Verified visually against 'The Summoner v1.0b' PDF on 2026-06-09. The fidelity gate validates this map end-to-end: a mis-mapped glyph makes the slice/chunk fidelity check fail, so errors surface rather than hide. See GLYPHS.md for the annotated table and revisit notes.",
+  "_notes": {
+    "characteristics": "0x4d/0x6d=M(ight), 0x41/0x61=A(gility), 0x52/0x72=R(eason), 0x49/0x69=I(ntuition), 0x50/0x70=P(resence). The glyph is the capital initial; in stat blocks the rest of the word follows in normal text (so the glyph JOINS the next characters -> 'Might'); in formulas it stands alone ('R damage', '2 + R'). Both upper- and lower-case codepoints render as the uppercase letter (potency badges show 'I<WEAK').",
+    "potency": "Rendered '<CHAR> < <STRENGTH-or-VALUE>' to match Draw Steel house style (cf. heroes/beastheart 'M < AVERAGE'). 0x3c='<'. Strength words: 0x77=weak, 0x76=average, 0x73=strong. Numeric potency uses the digit glyphs 0x31-0x35 (the book prints numbers for some abilities and strength-words for others; render whichever the page shows -- the values are intentionally different).",
+    "tiers": "Power-roll result tiers: 0xe1='≤11', 0xe9='12-16', 0xed='17+'.",
+    "decorative": "0xa2 (x215, ability/keyword chevron), 0xa3, 0xa5 (charge mark before 'N charge:'), 0xae (small-caps section ornament e.g. before 'Summoner Advancement'), 0x5d (badge end-cap), w:0x8a (Wingdings star bullet) are dropped as non-words. NOTE (per user 2026-06-09): some of these MAY be statblock ability-type icons that carry information rather than pure decoration; they are dropped for now because they are not prose words and dropping them does not affect word-fidelity. Revisit here if a statblock needs one of these to convey meaning."
+  },
+
+  "g:0x4d": "M",
+  "g:0x6d": "M",
+  "g:0x41": "A",
+  "g:0x61": "A",
+  "g:0x52": "R",
+  "g:0x72": "R",
+  "g:0x49": "I",
+  "g:0x69": "I",
+  "g:0x50": "P",
+  "g:0x70": "P",
+
+  "g:0x3c": "<",
+  "g:0x77": "weak",
+  "g:0x76": "average",
+  "g:0x73": "strong",
+
+  "g:0xe1": "≤11",
+  "g:0xe9": "12-16",
+  "g:0xed": "17+",
+
+  "g:0x31": "1",
+  "g:0x32": "2",
+  "g:0x33": "3",
+  "g:0x34": "4",
+  "g:0x35": "5",
+
+  "g:0xa2": "",
+  "g:0xa3": "",
+  "g:0xa5": "",
+  "g:0xae": "",
+  "g:0x5d": "",
+  "w:0x8a": ""
+}
