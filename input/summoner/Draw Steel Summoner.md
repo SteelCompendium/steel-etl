@@ -1406,3 +1406,535 @@ Choose one heroic ability from the following options, each of which costs 5 esse
 If they move adjacent to their target, become targeted by an opportunity attack, or stop moving, they explode, dealing 2 damage to one adjacent creature or object and pushing them 1 square. If a target is affected by two or more minions' explosions, the effects stack. These minions activate no effects upon death, and you gain no essence from their deaths.
 
 **Special:** In addition to the minions summoned as a part of this ability, you can choose to command any number of your minions within distance, provided they haven't used a main action or maneuver during the turn.
+
+<!-- @type: ability | @id: distraction-tactics | @level: 1 -->
+#### Distraction Tactics (5 Essence)
+
+*Your minions do the work to draw the heat away from your allies.*
+
+| **Magic** | **Free maneuver** |
+|-----------|------------------:|
+| **📏 Self** | **🎯 Special** |
+
+**Effect:** Until the end of the encounter or until you are dying, each minion under your control during the encounter is the target of the following effect:
+
+The target's strikes can inflict I < WEAK taunted (EoT) to enemies. The potency increases by 1 for each minion that joined the strike.
+
+<!-- @type: ability | @id: rallying-cry | @level: 1 -->
+#### Rallying Cry (5 Essence)
+
+*"Show them what you're made of!"*
+
+| **Magic, Ranged** | **Maneuver** |
+|-------------------|-------------:|
+| **📏 3 burst** | **🎯 All Allies** |
+
+**Effect:** Each target chooses between gaining 2 surges or dealing additional damage equal to your Reason on their next strike.
+
+<!-- @type: ability | @id: shields-of-essence | @level: 1 -->
+#### Shields of Essence (5 Essence)
+
+*You call forth protective forces to keep you all from harm.*
+
+| **Magic, Ranged** | **Maneuver** |
+|-------------------|-------------:|
+| **📏 Summoner's Range** | **🎯 Special** |
+
+**Power Roll + Reason:**
+
+- **≤11:** Three creatures
+- **12-16:** Four creatures
+- **17+:** Five creatures
+
+**Effect:** Until the end of the encounter, each target can use a free triggered action whenever they take damage to reduce the incoming damage by half and then lose this effect.
+
+<!-- @type: ability | @id: summoners-sword | @level: 1 -->
+#### Summoner's Sword (5 Essence)
+
+*You draw your strength from the army you surround yourself with and summon a hot blade of energy and fervor.*
+
+| **Magic, Melee, Strike** | **Main action** |
+|--------------------------|----------------:|
+| **📏 Melee 3** | **🎯 One creature or object** |
+
+**Power Roll + Reason:**
+
+- **≤11:** R damage
+- **12-16:** 2 + R damage
+- **17+:** 4 + R damage
+
+**Effect:** This strike deals an additional 2 damage for each ally adjacent to you.
+
+<!-- @type: feature | @id: 2nd-level-features | @level: 2 -->
+### 2nd-Level Features
+
+As a 2nd-level summoner, you gain the following features.
+
+<!-- @type: feature | @id: perk | @level: 2 -->
+#### Perk
+
+You gain an intrigue, lore, or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
+
+<!-- @type: feature | @id: summoners-dominion | @level: 2 -->
+#### Summoner's Dominion
+
+Your circle allows you to call forth a piece of your portfolio's dominion like any minion.
+
+Once per encounter, you can use a maneuver to summon a fixture from your minions' native manifold or origin into an unoccupied space on the ground within your Summoner's Range. You can spend 1 essence to relocate the fixture as a free maneuver on your turn. The fixture stays until the end of the encounter, until its Stamina is reduced to 0, or until you become dying.
+
+Your fixture gains additional features at 5th and 9th level.
+
+<!-- @type: monster-group | @domain: fixture | @category: demon -->
+##### Demon Portfolio Fixture
+
+The boil arises from the chaotic depths of the Abyssal Waste, concentrated into a heaving mass by the pressure of a coherent reality. As it slushes and threatens to burst, the noises drive nearby demons into a frenzy.
+
+<!-- @type: statblock -->
+####### The Boil
+
+*Hazard Support*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **Hunger Thrush**
+>
+> Each enemy that starts their turn within 3 squares of the boil is I < AVERAGE taunted (EoT) by the boil, or I < WEAK taunted (EoT) by the boil and can't move further from it.
+
+> ⭐️ **Oh, It Pops**
+>
+> When the boil is destroyed, each enemy within 3 squares of the boil takes acid damage equal to your level and is A < STRONG weakened (save ends).
+
+> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Soul Rancor**
+>
+> You gain a surge the first time in a round that your demon minions deal 3 or more damage to a creature while you have line of effect to the boil. You can choose to give the surge to an ally who also has line of effect to the boil.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The boil is now size 3.
+>
+> ⭐️ **Fester Field**
+>
+> Each non-abyssal enemy that starts their turn within 3 squares of the boil takes 5 corruption damage.
+
+<!-- @type: monster-group | @domain: fixture | @category: elemental -->
+##### Elemental Portfolio Fixture
+
+The storm of elements from Quintessence coalesce into a hardened, crystalline structure. It magnifies the elemental composition of any matter that passes through it and emits supernatural colors while doing so.
+
+<!-- @type: statblock -->
+####### Primordial Crystal
+
+*Relic Artillery*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **Magnetic Pull**
+>
+> Each enemy that starts their turn within 3 squares of the crystal is vertically pulled 3.
+
+> ⭐️ **Elemental Boost**
+>
+> When you or an ally uses a ranged ability that draws a line through the crystal, the distance increases by 5.
+
+> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Terra Resonance**
+>
+> Each round, you gain a surge the first time an area of terrain gains a supernatural effect (excluding auras) while you have line of effect to the crystal. You can choose to give the surge to an ally who also has line of effect to the crystal.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The crystal is now size 3.
+>
+> ⭐️ **Magnified Strike**
+>
+> When you or an ally makes a ranged strike that draws a line through the crystal, the user gains a surge which they can use on the ability.
+
+<!-- @type: monster-group | @domain: fixture | @category: fey -->
+##### Fey Portfolio Fixture
+
+The vibrant waters of Arcadia pour through a hole in reality and pool into a verdant cup of paradise. As the pond babbles, it causes the surrounding flora to grow and provides the fey places to hide.
+
+<!-- @type: statblock -->
+####### Glade Pond
+
+*Hazard Ambusher*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **Bubbling Boost**
+>
+> You and each non-minion ally that enters one or more squares within 3 squares of the pond or starts their turn there has their speed increased by 2 until the end of their turn.
+
+> ⭐️ **Overgrowth**
+>
+> Each of your fey minions that ends their turn within 3 squares of the pond is hidden until the start of their next turn.
+
+> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Garden of Jest**
+>
+> You can spend a Recovery the first time in a round a creature gains or starts their turn with a condition while you have line of effect to the pond. Alternatively, you can choose to enable an ally who also has line of effect to the boil to spend a Recovery instead.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The pond is now size 3.
+>
+> ⭐️ **Folly Field**
+>
+> Each non-fey enemy that starts their turn within 3 squares of the pond has a −1 penalty to saving throws and resisting potencies until the start of their next turn.
+
+<!-- @type: monster-group | @domain: fixture | @category: undead -->
+##### Undead Portfolio Fixture
+
+Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spirits swirl around its bars. The undead refuse to stop moving while near the threshold of oblivion.
+
+<!-- @type: statblock -->
+####### Barrow Gates
+
+*Fortification Defender*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **The Bell Tolls**
+>
+> Each enemy that starts their turn within 3 squares of the gates is I < AVERAGE frightened (EoT) by the gates. The potency increases by 1 for winded enemies.
+
+> ⭐️ **Undead Dominion**
+>
+> Each of your undead minions has damage immunity 2 while occupying a space within 3 squares of the gates.
+
+> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Memento Mori**
+>
+> You gain a surge the first time in a round one of your undead minions unwillingly dies while you have line of effect to the gates. You can choose to give the surge to an ally who also has line of effect to the gates.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The gates are now size 3.
+>
+> ⭐️ **Open the Gates**
+>
+> You can use Rise! as a free triggered action each time an enemy dies within 3 squares of the gates while you have line of effect to the gates.
+
+<!-- @type: feature | @id: new-portfolio-minion | @level: 2 -->
+#### New Portfolio Minion
+
+Your circle allows you to select new minions to add to your portfolio.
+
+<!-- @type: monster-group | @domain: minion | @category: demon -->
+##### Demon Portfolio 5-Essence Minion
+
+Choose one of the following minions.
+
+<!-- @type: statblock -->
+####### Gushing Spewler
+
+A spewler's mouth makes up most of its size. They unleash torrents of acid and bile from their pitless stomachs before consuming their prey with bag-like maws.
+
+| Gushing Spewler | Abyssal, Demon | Minion Controller | - | 5 essence for three minions |
+|:---------------:|:--------------:|:-----------------:|:-:|:---------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **Acid**<br>Free Strike Damage Type |
+| **−2**<br>Might | **0**<br>Agility | **−1**<br>Reason | **+3**<br>Intuition | **+3**<br>Presence |
+
+> ⭐️ **Gushing Strike**
+>
+> The spewler's ranged free strikes have a distance of 10 and slides the target R + 2 squares.
+
+> ⭐️ **Spew Slide**
+>
+> Each time the spewler takes damage, the spewler shifts 2 after all effects resolve. Each square they exit during this movement is covered in slime until the end of the encounter. An enemy has a bane on strikes while occupying a slimed square.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the spewler can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Hulking Chimor
+
+Chimors have no true shape; their bodies restructure and change endlessly. Pieces of the chimor demon snap off inside their prey, causing their bodies to also restructure from the inside out.
+
+| Hulking Chimor | Abyssal, Demon | Minion Defender | - | 5 essence for three minions |
+|:--------------:|:--------------:|:---------------:|:-:|:---------------------------:|
+| **2**<br>Size | **5**<br>Speed | **7 \| 7 \| 7**<br>Stamina | **3**<br>Stability | **3**<br>Free Strike |
+| **—**<br>Immunity | **—**<br>Movement | - | **Holy 1**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+3**<br>Might | **0**<br>Agility | **+2**<br>Reason | **+1**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Mercurial Strike**
+>
+> The chimor's melee free strikes inflict M < WEAK weakened (EoT). The potency is increased by the current round number.
+
+> ⭐️ **Evershifting**
+>
+> The chimor doesn't provoke opportunity attacks by moving.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the chimor can't be hidden from them.
+
+<!-- @type: statblock -->
+####### Violent
+
+The violents are lanky, oily bipeds with bright red flesh that contort and snap their bodies into unassuming objects. Their mimicry is particularly precise, to the point where it's unclear whether their victims die from the surprise or the violent transformation process first.
+
+| Violent | Abyssal, Demon | Minion Ambusher | - | 5 essence for three minions |
+|:-------:|:--------------:|:---------------:|:-:|:---------------------------:|
+| **1M**<br>Size | **7**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
+| **—**<br>Immunity | **Climb**<br>Movement | - | **Holy 1**<br>Weakness | **Corruption**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+3**<br>Agility | **0**<br>Reason | **−1**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Transforming Strike**
+>
+> The violent's melee free strikes deal an additional 2 damage to each adjacent enemy from whom they were hidden. The violent loses their disguise after striking.
+
+> ⭐️ **Mimicry**
+>
+> The violent uses the Hide maneuver at the start of their turn as a free maneuver, disguising themselves as a a size 1M or smaller object.
+
+> ⭐️ **Soulsight**
+>
+> Each creature adjacent to the violent can't be hidden from them.
+
+<!-- @type: monster-group | @domain: minion | @category: elemental -->
+##### Elemental Portfolio 5-Essence Minion
+
+Choose one of the following minions.
+
+<!-- @type: statblock -->
+####### Dancing Silk
+
+The silks are akin to baby spiders ballooning through the air on strands of webbing. They spin silk from their legs as they fly, eventually turning huge swaths of the environment into tangled web mazes.
+
+| Dancing Silk | Elemental (Earth, Air, Green) | Minion Controller | - | 5 essence for three minions |
+|:------------:|:-----------------------------:|:-----------------:|:-:|:---------------------------:|
+| **1T**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
+| **Poison R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **−1**<br>Might | **+2**<br>Agility | **+3**<br>Reason | **0**<br>Intuition | **−1**<br>Presence |
+
+> ⭐️ **Entangling Strike**
+>
+> The silk's ranged free strikes inflict A < AVERAGE restrained (EoT). Each creature adjacent to the target is A < WEAK slowed (EoT).
+
+> ⭐️ **Web** 1 Essence
+>
+> When the silk is reduced to 0 Stamina, they launch ribbons of webbing into an area equal to their size + 1 within 5 before being destroyed. The affected area is considered difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the webbing is M < STRONG slowed (EoT).
+
+<!-- @type: statblock -->
+####### Principle of the Swamp
+
+The manes of these equine sludge dwellers extend and hook into things like strong, fraying arms. This allows the principle of the swamp to either pull themselves onto dry land, or pull their prey into the dank depths.
+
+| Principle of the Swamp | Elemental (Green, Water, Rot) | Minion Brute | - | 5 essence for three minions |
+|:----------------------:|:-----------------------------:|:------------:|:-:|:---------------------------:|
+| **2**<br>Size | **4**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **R**<br>Stability | **4**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+3**<br>Might | **−2**<br>Agility | **0**<br>Reason | **+2**<br>Intuition | **−2**<br>Presence |
+
+> ⭐️ **Encroaching Strike**
+>
+> The principle's melee free strikes have a distance of R and inflict M < STRONG grabbed. The principle can have an unlimited number of creatures or objects grabbed. A creature grabbed by this strike still has their normal speed, but can't move farther away from the principle.
+
+> ⭐️ **Sludgefoot** 1 Essence
+>
+> When the principle is reduced to 0 Stamina, the area within 1 square of the principle becomes difficult terrain for enemies until the end of the encounter. An enemy that ends their turn in the affected area is pulled 4 toward the center of the area.
+
+<!-- @type: statblock -->
+####### Quiet of Snow
+
+This elemental is a pure-white vulpine with six legs that freely sprints through the air. Their howls are telepathic, washing over the receivers with a strong chill and a wave of goosebumps.
+
+| Quiet of Snow | Elemental (Air, Rot, Water) | Minion Artillery | - | 5 essence for three minions |
+|:-------------:|:---------------------------:|:----------------:|:-:|:---------------------------:|
+| **1S**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **1**<br>Stability | **4**<br>Free Strike |
+| **Sonic R, Cold R**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **Cold**<br>Free Strike Damage Type |
+| **−1**<br>Might | **+2**<br>Agility | **0**<br>Reason | **0**<br>Intuition | **+3**<br>Presence |
+
+> 🏹 **Freezing Howl 2d10 + R (Signature Ability)**
+>
+> | **Magic, Ranged, Strike** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Ranged 5** | **🎯 One creature or object per minion** |
+>
+> 4 cold damage; M < WEAK slowed (EoT)
+>
+> 6 cold damage; M < AVERAGE slowed (EoT)
+>
+> 8 cold damage; M < STRONG speed is 0 (EoT)
+>
+> **Effect:** Frost slows the enemy down, allowing one ally adjacent to each target to shift 2 and either hide or defend.
+
+> ⭐️ **Cold Surge**
+>
+> When the quiet is reduced to 0 Stamina, they launch a refreshing blast of air into an area equal to their size + 1 within 5 before being destroyed. Each ally in the affected area gains a surge.
+
+<!-- @type: monster-group | @domain: minion | @category: fey -->
+##### Fey Portfolio 5-Essence Minion
+
+Choose one of the following minions.
+
+<!-- @type: statblock -->
+####### Nixie Hemloche
+
+Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into the water surrounding them. Any sailor caught in a whirlpool created by hemloches knows that their ship won't survive the encounter.
+
+| Nixie Hemloche | Fey | Minion Hexer | - | 5 essence for three minions |
+|:--------------:|:---:|:------------:|:-:|:---------------------------:|
+| **1T**<br>Size | **6**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
+| **—**<br>Immunity | **Swim**<br>Movement | - | **—**<br>Weakness | **Lightning**<br>Free Strike Damage Type |
+| **−2**<br>Might | **0**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Water Weird**
+>
+> Once per turn during their move action, each nixie under your control can teleport to a body of water within 6. The hemloche can't teleport into water created by their own whirling waves.
+
+> ⭐️ **Whirling Waves**
+>
+> The area within 1 square of the hemloche is filled with churning water and is considered difficult terrain. At the end of the hemloche's turn, the hemloche can choose to slide each enemy in the affected area 3 squares. An enemy that takes damage while being force moved is also M < AVERAGE knocked prone.
+
+> ⭐️ **Minuscule**
+>
+> The hemloche has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Sprite Foxglow
+
+Foxglows are masked sprites that leave behind an evanescent trail of tiny glowing orbs as they fly. They beat their wings at a frequency that completely blocks out all nearby noise.
+
+| Sprite Foxglow | Fey | Minion Ambusher | - | 5 essence for three minions |
+|:--------------:|:---:|:---------------:|:-:|:---------------------------:|
+| **1T**<br>Size | **8**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **4**<br>Free Strike |
+| **Fire R**<br>Immunity | **Fly**<br>Movement | - | **—**<br>Weakness | **Fire**<br>Free Strike Damage Type |
+| **−1**<br>Might | **+3**<br>Agility | **0**<br>Reason | **+1**<br>Intuition | **+2**<br>Presence |
+
+> ⭐️ **Flash Strike**
+>
+> The foxglow's melee strikes inflict I < STRONG dazed (EoT) if they were hidden when they make the strike.
+
+> ⭐️ **Quiet Flight**
+>
+> The area within 2 squares of the foxglow is completely silent. Each enemy has a bane on tests made to search for the foxglow and allies hidden in the affected area.
+
+> ⭐️ **Minuscule**
+>
+> The foxglow has cover while occupying a larger creature's space.
+
+<!-- @type: statblock -->
+####### Pixie Rosenthall
+
+The collective of blood-eyed pixie warriors that make up a rosenthall are also known as rosies. It's said that some rosenthall armies contain thousands of pixies and can span half the length of a wode.
+
+| Pixie Rosenthall | Fey, Swarm | Minion Harrier | - | 5 essence for three minions |
+|:----------------:|:----------:|:--------------:|:-:|:---------------------------:|
+| **2**<br>Size | **6**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **1**<br>Stability | **3**<br>Free Strike |
+| **—**<br>Immunity | **Fly, hover**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **0**<br>Might | **+2**<br>Agility | **+4**<br>Reason | **0**<br>Intuition | **+3**<br>Presence |
+
+> 🏹 **Stickerbush Symphony 2d10 + R (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Melee 2** | **🎯 One creature or object per minion** |
+>
+> 3 damage; pull 2; A < WEAK bleeding (EoT)
+>
+> 6 damage; pull 3; A < AVERAGE bleeding (EoT)
+>
+> 8 damage; pull 4; A < STRONG bleeding (EoT)
+>
+> **Effect:** A target can't shift while bleeding from this ability.
+
+> ⭐️ **Swarm**
+>
+> The rosenthall can move through squares as if they were size 1T, and can occupy other creatures' spaces. At the start of the rosenthall's turn, they deal 2 damage to each enemy whose space they share.
+
+<!-- @type: monster-group | @domain: minion | @category: undead -->
+##### Undead Portfolio 5-Essence Minion
+
+Choose one of the following minions.
+
+<!-- @type: statblock -->
+####### Accursed Mummy
+
+The preserved dead, bound for eternal rest, know only violence when robbed of their future. Accursed mummies use their wrappings to bind others to the same fate.
+
+| Accursed Mummy | Mummy, Undead | Minion Hexer | - | 5 essence for three minions |
+|:--------------:|:-------------:|:------------:|:-:|:---------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **2**<br>Stability | **3**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **—**<br>Movement | - | **Fire 1**<br>Weakness | **Poison**<br>Free Strike Damage Type |
+| **+2**<br>Might | **−1**<br>Agility | **+1**<br>Reason | **+3**<br>Intuition | **−1**<br>Presence |
+
+> 🏹 **Fetid Bindings 2d10 + R (Signature Ability)**
+>
+> | **Melee, Strike, Weapon** | **Main action** |
+> |---------------------------|----------------:|
+> | **📏 Melee R** | **🎯 One creature or object per minion** |
+>
+> 3 poison damage; pull R
+>
+> 4 poison damage; pull R + 1
+>
+> 6 poison damage; pull R + 2
+>
+> **Effect:** A target pulled adjacent to the mummy is M < STRONG weakened (EoT).
+
+> ⭐️ **Mummy Dust**
+>
+> Whenever the mummy takes damage, each enemy adjacent to the mummy takes 2 poison damage.
+
+<!-- @type: statblock -->
+####### Ceaseless Mournling
+
+Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenches where their cheeks used to be. Their crying shakes enemies to their bone and renders them struggling to move.
+
+| Ceaseless Mournling | Undead | Minion Controller | - | 5 essence for three minions |
+|:-------------------:|:------:|:-----------------:|:-:|:---------------------------:|
+| **2**<br>Size | **4**<br>Speed | **4 \| 4 \| 4**<br>Stamina | **R**<br>Stability | **3**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **Burrow**<br>Movement | - | **—**<br>Weakness | **Sonic**<br>Free Strike Damage Type |
+| **+3**<br>Might | **+2**<br>Agility | **−1**<br>Reason | **+1**<br>Intuition | **−2**<br>Presence |
+
+> ⭐️ **Always Crying**
+>
+> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't shift until the start of the mournling's next turn.
+
+> ⭐️ **Immutable Form**
+>
+> The mournling's shape can't change via any external effects.
+
+> ⭐️ **Rupture**
+>
+> The first time the mournling burrows out of the ground on their turn, they can make a free strike against each adjacent enemy.
+
+<!-- @type: statblock -->
+####### Phase Ghoul
+
+Phase ghouls are bilocated undead caught between two different manifolds, rapidly flickering between them. They almost appear transparent save for their long, bright blue tongues that appears to lag behind their movements by a full second.
+
+| Phase Ghoul | Undead | Minion Harrier | - | 5 essence for three minions |
+|:-----------:|:------:|:--------------:|:-:|:---------------------------:|
+| **1M**<br>Size | **5**<br>Speed | **5 \| 5 \| 5**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |
+| **Corruption R, Poison R**<br>Immunity | **Teleport**<br>Movement | - | **—**<br>Weakness | **—**<br>Free Strike Damage Type |
+| **+2**<br>Might | **+3**<br>Agility | **−2**<br>Reason | **0**<br>Intuition | **+1**<br>Presence |
+
+> ⭐️ **Leaping Strike**
+>
+> The ghoul teleports 5 squares before making a melee free strike. The target is M < AVERAGE knocked prone. If the target is in the air, the potency increases by 1.
+
+> ⭐️ **Nerveless**
+>
+> The ghoul takes no damage from falling and always lands on their feet.
