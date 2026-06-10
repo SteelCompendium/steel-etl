@@ -25,7 +25,7 @@ func TestStatblockCard(t *testing.T) {
 	for _, want := range []string{
 		`class="sc-card sc-fil"`,
 		`href="goblin-warrior/"`,
-		`Horde Harrier`,                 // organization + role type label
+		`Horde Harrier`, // organization + role type label
 		`<div class="sc-card__name">Goblin Warrior</div>`,
 		`<span class="sc-tag">Goblin</span>`,
 		`<span class="sc-tag">Humanoid</span>`,
@@ -121,10 +121,10 @@ func TestMonsterGroupContent_Flat(t *testing.T) {
 		t.Fatal("expected goblins to be a monster group")
 	}
 	for _, want := range []string{
-		"# Goblins\n\n---\n\n",                         // strippable head for mergeGroupLanding
-		`href="goblin-malice/"`,                        // featureblock card
+		"# Goblins\n\n---\n\n",  // strippable head for mergeGroupLanding
+		`href="goblin-malice/"`, // featureblock card
 		`>Goblin Malice<`,
-		`href="statblock/goblin-warrior/"`,             // statblock card, group-relative href
+		`href="statblock/goblin-warrior/"`, // statblock card, group-relative href
 		`Horde Harrier`,
 	} {
 		if !strings.Contains(got, want) {
@@ -146,10 +146,10 @@ func TestMonsterGroupContent_Echelon(t *testing.T) {
 		t.Fatal("expected demons to be a monster group")
 	}
 	for _, want := range []string{
-		"## 1st Echelon",                                    // per-echelon sub-header
+		"## 1st Echelon", // per-echelon sub-header
 		"## 2nd Echelon",
-		`href="1st-echelon/demon-malice-level-1/"`,          // echelon-relative featureblock href
-		`href="1st-echelon/statblock/spite/"`,               // echelon-relative statblock href
+		`href="1st-echelon/demon-malice-level-1/"`, // echelon-relative featureblock href
+		`href="1st-echelon/statblock/spite/"`,      // echelon-relative statblock href
 		`href="2nd-echelon/statblock/wrath/"`,
 	} {
 		if !strings.Contains(got, want) {
