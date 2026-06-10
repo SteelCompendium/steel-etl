@@ -3173,6 +3173,8 @@ Slowly everyone assembled could make out the sounds of a conversation, quiet wit
 
 Suddenly, the images became three dimensional, solid, and seven heroes stood among them. A [human](scc:mcdm.heroes.v1/ancestry/human) in working battle plate. A [dwarf](scc:mcdm.heroes.v1/ancestry/dwarf) with his battle-staff tipped with an hourglass. An [orc](scc:mcdm.heroes.v1/ancestry/orc) with a huge battleaxe casually resting on her shoulder. A [polder](scc:mcdm.heroes.v1/ancestry/polder) with twin rapiers in his hands. A tall willowy [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) with night-black skin and golden hair. An unarmed [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) towering over everyone. And a [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight). Of all the motley band, it was the [dragon knight](scc:mcdm.heroes.v1/ancestry/dragon-knight) who caused the people of the town to gasp. Even at a distance, even with the war dogs between them, they recognized the device of Good King Omund on the knight's shield.
 
+
+
 The war dogs scrambled. For a moment, it seemed they might flee at this sudden intrusion, but the taxiarch bellowed "Hold fast!" and they held their ground, uncertainty over the unknown threat of a band of heroes battling in each of them against the certain fear of their commander.
 
 The [hakaan](scc:mcdm.heroes.v1/ancestry/hakaan) looked around and saw a clump of villagers watching the scene from a distance, gathered around what looked like some stables. He waved. "Hello!" he said, smiling.
@@ -12405,7 +12407,9 @@ Subtlety is your art, the tip of the blade your brush. You studied at a secret c
 
 **As a [shadow](scc:mcdm.heroes.v1/class/shadow), you possess abilities that deal significant damage, enable you to move swiftly across the battlefield and evade hazards, and allow you to fade from notice even in the midst of the most intense combat encounters. You also possess more skills than any other hero.**
 
-"Whenever there is doubt, there is no doubt." **Motto of the College of Black Ash**
+> "Whenever there is doubt, there is no doubt." 
+>
+> **Motto of the College of Black Ash**
 
 ### Basics
 
@@ -16396,9 +16400,9 @@ The whole world's a stage, and everyone on it, an actor. No one knows this bette
 
 **As a [troubadour](scc:mcdm.heroes.v1/class/troubadour), you chase drama. The insurmountable dangers of the world might cause many a hero to cower. But you take to that world stage not intending to die, but to find out if you are truly alive.**
 
-"History is a tale. Each of us is just a story we tell ourselves. Change the story, and you change the world." **Jackson Bootblack**
-
-There is no visible text in the image provided. The image appears to show a decorative or scalloped [edge](scc:mcdm.heroes.v1/rule.dice/edge) pattern, but contains no recognizable letters, words, or symbols.
+> "History is a tale. Each of us is just a story we tell ourselves. Change the story, and you change the world." 
+>
+> **Jackson Bootblack**
 
 ### Basics
 
