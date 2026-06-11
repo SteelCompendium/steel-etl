@@ -2,7 +2,42 @@
 
 Instructions for adding scc: cross-reference links to the input document
 (`input/heroes/Draw Steel Heroes.md`). Designed to be picked up by any AI
-session and followed step by step.
+session and followed step by step. The same rules apply to the other books'
+sources; the **Summoner book** has its own term table at
+`docs/summoner-linking-reference.md` (cross-book links to Heroes still use the
+table in `docs/linking-reference.md`).
+
+> **2026-06-11 — Summoner book linked (done).** Full sweep of
+> `input/summoner/Draw Steel Summoner.md`: **1,464 inline `scc:` links** (1,292
+> cross-book to Heroes, 172 internal `mcdm.summoner.v1`). Covers the class +
+> features + abilities, all 80 statblocks (minions/fixtures/champions/retainers/
+> rivals), rewards, and advice. First book whose statblocks were link-swept — the
+> shared statblock parser (`internal/content/statblock_parse.go`) was hardened
+> first so link-wrapping can't break extraction (dice-in-title `roll` is
+> link-stripped via `linkDisplay`; tier/effect values keep links verbatim; stat
+> cells link-stripped). See `docs/superpowers/plans/2026-06-10-summoner-content-linking.md`.
+> **Validation note:** build + validate with `gen --all` via
+> `devbox run -- bash -c 'cd steel-etl && go run ./cmd/steel-etl gen … --all'`
+> (a bare `devbox run -- go …` runs from the workspace root with no `go.mod` and
+> fails silently). The WARN baseline is **104 (12 distinct), all pre-existing
+> stale flat `mcdm.heroes.v1/skill/<x>` links from the beastheart source** (never
+> repointed after skill-group nesting — see FOLLOWUPS); the gate is "no NEW
+> unresolved code vs. that baseline", not "0 WARN".
+>
+> **Relational-noun rule (clarified here, applies to all books).** The high-frequency
+> relational nouns **`enemy` / `ally` / `creature`** are linked only at a defining
+> anchor, NOT on every occurrence — the Heroes book links them just 2–3 times in the
+> *entire* book. (An initial summoner pass blanket-linked them — enemy 43×, ally 23×,
+> creature 35× — and they were stripped back to match.) By contrast **`adjacent`
+> (Heroes 163×) and `strike` (Heroes 412×) ARE linked** wherever mechanical. Also:
+> never link ability **keyword tags** ("has the Charge keyword") — only the named
+> action; and `rule.combat/triggered-action` + `rule.combat/signature-ability` ARE
+> linkable rule-glossary codes (the "deliberately NOT linkable" note below is stale
+> for those two — it still applies to the per-class `feature.*` forms).
+>
+> ⚠️ The **Skill Groups** section of `docs/linking-reference.md` still lists the
+> retired `skill.<group>/<group>` form; the live codes are `skill.group/<group>`
+> (migrated 2026-06-09). Use `skill.group/<group>`.
 
 > **2026-06-09 — Skill-group landing-page in-prose sweep (done).** Linked every prose
 > reference to a skill group's self-named landing page (`skill.<group>/<group>`): the

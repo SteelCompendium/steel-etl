@@ -2,7 +2,13 @@
 
 Originally generated from `classification.json`; now **manually curated and canonical** (it carries skill subgroups, disambiguation notes, and the project/god sections). The former `scripts/gen_linking_reference.py` generator was retired because it could not reproduce this file — maintain it by hand. See `linking-guide.md` for rules.
 
-**Total linkable terms:** 582
+**Total linkable terms:** 582 (Heroes book, `mcdm.heroes.v1`).
+
+> **Other books.** This table is the Heroes-book term set, used for **cross-book**
+> links from any book. The **Summoner book**'s own 221 terms (class, features,
+> abilities, statblocks, treasures, titles) live in
+> `docs/summoner-linking-reference.md`. When linking the Summoner source, use that
+> file for `mcdm.summoner.v1/*` targets and this file for `mcdm.heroes.v1/*` targets.
 
 ## Classes (9 terms)
 
@@ -467,17 +473,18 @@ Originally generated from `classification.json`; now **manually curated and cano
 
 ## Skill Groups (5 terms)
 
-Each skill group has a self-named landing page (`skill.<group>/<group>`). Link the
+Each skill group has a group-landing page `skill.group/<group>` (migrated
+2026-06-09 from the retired self-named-leaf form `skill.<group>/<group>`). Link the
 phrase "<group> skill group" to it; skip the phrase inside the Skill Groups
 definition region (self-reference).
 
 | Display Name | Variants | SCC Code |
 |-------------|----------|----------|
-| Crafting skill group | crafting skill group | `mcdm.heroes.v1/skill.crafting/crafting` |
-| Exploration skill group | exploration skill group | `mcdm.heroes.v1/skill.exploration/exploration` |
-| Interpersonal skill group | interpersonal skill group | `mcdm.heroes.v1/skill.interpersonal/interpersonal` |
-| Intrigue skill group | intrigue skill group | `mcdm.heroes.v1/skill.intrigue/intrigue` |
-| Lore skill group | lore skill group | `mcdm.heroes.v1/skill.lore/lore` |
+| Crafting skill group | crafting skill group | `mcdm.heroes.v1/skill.group/crafting` |
+| Exploration skill group | exploration skill group | `mcdm.heroes.v1/skill.group/exploration` |
+| Interpersonal skill group | interpersonal skill group | `mcdm.heroes.v1/skill.group/interpersonal` |
+| Intrigue skill group | intrigue skill group | `mcdm.heroes.v1/skill.group/intrigue` |
+| Lore skill group | lore skill group | `mcdm.heroes.v1/skill.group/lore` |
 
 ## Negotiation Motivations/Pitfalls (12 terms)
 
