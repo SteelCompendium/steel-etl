@@ -232,6 +232,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			data = card
 		}
 
+		// Statblock pages → a sc-statblock-data JSON island that the client
+		// renderer (steel-statblock.js) mounts into the High-Fantasy Steel
+		// .sb-wrap DOM. Site-only; runs before injectH1 like the cards above.
+		if island, ok := buildStatblockIslandPage(data); ok {
+			data = island
+		}
+
 		// Inject h1 header from frontmatter "name" field if the body lacks one
 		data = injectH1(data)
 
