@@ -3135,16 +3135,16 @@ You gain one skill of your choice.
 <!-- @type: chapter | @id: rewards -->
 # Rewards
 
-Unless otherwise stated, the following treasures and titles can be wielded by a summoner or any hero who comes upon one.
+Unless otherwise stated, the following treasures and titles can be wielded by a [summoner](scc:mcdm.summoner.v1/class/summoner) or any hero who comes upon one.
 
 ## New Trinkets
 
-The following new trinkets are available to add to your game.
+The following new [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) are available to add to your game.
 
 <!-- @type: treasure-group | @echelon: 1 | @treasure-type: trinket -->
 ### 1st-Echelon Trinket
 
-The following 1st-echelon trinket was designed for summoners but can be used by any class.
+The following 1st-echelon [trinket](scc:mcdm.heroes.v1/rule.treasure/trinket) was designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but can be used by any class.
 
 <!-- @type: treasure -->
 #### Snakerattle Bangle
@@ -3153,22 +3153,22 @@ The following 1st-echelon trinket was designed for summoners but can be used by 
 
 **Keywords:** Arms, Magic
 
-**Item Prerequisite:** The tail of a size 3 or larger rattlesnake
+**Item Prerequisite:** The tail of a [size](scc:mcdm.heroes.v1/rule.character/size) 3 or larger rattlesnake
 
 **Project Source:** Texts or lore in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 150
 
-**Effect:** While wearing this bangle, your melee free strikes inflict I < average frightened (EoT). The potency increases by 1 if you have an edge on the power roll.
+**Effect:** While wearing this bangle, your melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict I < average [frightened](scc:mcdm.heroes.v1/condition/frightened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 if you have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
-**Special:** If you are a summoner, you regain the use of your standard melee free strike while wearing this bangle.
+**Special:** If you are a [summoner](scc:mcdm.summoner.v1/class/summoner), you regain the use of your standard melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) while wearing this bangle.
 
 <!-- @type: treasure-group | @echelon: 2 | @treasure-type: trinket -->
 ### 2nd-Echelon Trinkets
 
-The following 2nd-echelon trinkets were designed for summoners but can be used by any class.
+The following 2nd-echelon [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) were designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but can be used by any class.
 
 <!-- @type: treasure -->
 #### Abyssal Map Ink
@@ -3181,11 +3181,11 @@ The following 2nd-echelon trinkets were designed for summoners but can be used b
 
 **Project Source:** Texts or lore in Tholl
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
-**Effect:** While the ink is spread on a smooth surface or a piece of parchment paper, it turns into a size 1T or 1S map. This map grants you a double edge on tests you make using the Navigate skill. If you have the map active before the start of an encounter, you can move up to three allies (including yourself ) up to 3 squares away from the starting area.
+**Effect:** While the ink is spread on a smooth surface or a piece of parchment paper, it turns into a [size](scc:mcdm.heroes.v1/rule.character/size) 1T or 1S map. This map grants you a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) you make using the [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate) skill. If you have the map active before the start of an encounter, you can move up to three allies (including yourself ) up to 3 squares away from the starting area.
 
 <!-- @type: treasure -->
 #### Grasp of the Chained Hand
@@ -3198,13 +3198,13 @@ The following 2nd-echelon trinkets were designed for summoners but can be used b
 
 **Project Source:** Texts or lore in the Tholl
 
-**Project Roll Characteristic:** Reason or Presence
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 300
 
-**Effect:** While wearing this gauntlet, your ranged free strikes have the Magic keyword and if the target has P < average, they are magically chained to you until the end of their next turn. While chained, the target can't move farther away from you, and you can use a maneuver to either vertically pull the target up to 3 squares or shift yourself up to 3 squares through the air toward the target.
+**Effect:** While wearing this gauntlet, your ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have the Magic keyword and if the target has P < average, they are magically chained to you until the end of their next turn. While chained, the target can't move farther away from you, and you can use a maneuver to either vertically [pull](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 3 squares or [shift](scc:mcdm.heroes.v1/movement/shifting) yourself up to 3 squares through the air toward the target.
 
-**Special:** If you are a summoner, you regain the use of your standard ranged free strike while wearing this gauntlet.
+**Special:** If you are a [summoner](scc:mcdm.summoner.v1/class/summoner), you regain the use of your standard ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) while wearing this gauntlet.
 
 <!-- @type: treasure -->
 #### Thunder Chariot
@@ -3217,18 +3217,18 @@ The following 2nd-echelon trinkets were designed for summoners but can be used b
 
 **Project Source:** Texts or lore in the First Language
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 300
 
-**Effect:** The thunder chariot can be used as a size 2 mount. Its speed is equal to its rider's speed + 3.
+**Effect:** The thunder chariot can be used as a [size](scc:mcdm.heroes.v1/rule.character/size) 2 mount. Its [speed](scc:mcdm.heroes.v1/rule.character/speed) is equal to its rider's [speed](scc:mcdm.heroes.v1/rule.character/speed) + 3.
 
-While riding in the thunder chariot, you have lightning immunity 5. An ally can use their maneuver while adjacent to you to move up to their speed, pulling you along.
+While riding in the thunder chariot, you have lightning [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. An ally can use their maneuver while [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you to move up to their speed, pulling you along.
 
 <!-- @type: treasure-group | @echelon: 3 | @treasure-type: trinket -->
 ### 3rd-Echelon Trinkets
 
-The following 3rd-echelon trinkets were designed for summoners but can be used by any class.
+The following 3rd-echelon [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) were designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but can be used by any class.
 
 <!-- @type: treasure -->
 #### Cross of the Scorned Puppeteer
@@ -3241,17 +3241,17 @@ The following 3rd-echelon trinkets were designed for summoners but can be used b
 
 **Project Source:** A record of a soulbinder ritual in Anjali
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
 **Effect:** While holding the cross, it emits faint strings made of light that you can control with your mind.
 
-Whenever an enemy minion is reduced to 0 Stamina within 5 squares of you, you can use a free triggered action to attach a string of light to their corpse and command an illusory double of them until the end of the encounter. The minion is organized into the cross's squad of minions with the same name under your command (up to a maximum of six minions). On each of your turns, you can direct the squad to move and use a main action while they're within 5 squares of you.
+Whenever an enemy minion is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) within 5 squares of you, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to attach a string of light to their corpse and command an illusory double of them until the end of the encounter. The minion is organized into the cross's squad of minions with the same name under your command (up to a maximum of six minions). On each of your turns, you can direct the squad to move and use a main action while they're within 5 squares of you.
 
-You can also pull the strings of your allies to keep them out of harm's way. Whenever an ally takes damage within 5 squares of you, you can use a triggered action to vertically pull them 5 squares (ignoring stability) and halve the damage.
+You can also pull the strings of your allies to keep them out of harm's way. Whenever an ally takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) within 5 squares of you, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to vertically [pull](scc:mcdm.heroes.v1/movement/forced-movement) them 5 squares (ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability)) and halve the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
-**Special:** If you are a summoner holding the cross, you can organize the minions gained with the cross into one of your class's squads instead.
+**Special:** If you are a [summoner](scc:mcdm.summoner.v1/class/summoner) holding the cross, you can organize the minions gained with the cross into one of your class's squads instead.
 
 <!-- @type: treasure -->
 #### Crystallized Essence
@@ -3266,13 +3266,13 @@ You can also pull the strings of your allies to keep them out of harm's way. Whe
 
 **Special:** The treasure must be crafted within a cave in Quintessence
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**Effect:** While holding crystallized essence, the distance of your ranged magic abilities increases by 5. Any creatures you create or summon using magic have their Stamina increased by one-third of their Stamina maximum.
+**Effect:** While holding crystallized essence, the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of your ranged magic abilities increases by 5. Any creatures you create or summon using magic have their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increased by one-third of their Stamina maximum.
 
-Additionally, you can shatter and destroy the crystallized essence as a maneuver to immediately give yourself 5 essence.
+Additionally, you can shatter and destroy the crystallized essence as a maneuver to immediately give yourself 5 [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence).
 
 <!-- @type: treasure -->
 #### Warbanner of Pride
@@ -3285,18 +3285,18 @@ Additionally, you can shatter and destroy the crystallized essence as a maneuver
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**Effect:** While holding the banner, you have a +1 bonus to saving throws and resisting potencies.
+**Effect:** While holding the banner, you have a +1 bonus to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency).
 
-At the end of each of your turns, each ally within 10 squares of you can make a saving throw against one effect they are suffering that is ended by a saving throw.
+At the end of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), each ally within 10 squares of you can make a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) against one effect they are suffering that is ended by a saving throw.
 
 <!-- @type: treasure-group | @echelon: 4 | @treasure-type: trinket -->
 ### 4th-Echelon Trinkets
 
-The following 4th-echelon trinkets were designed for summoners but can be used by any class.
+The following 4th-echelon [trinkets](scc:mcdm.heroes.v1/rule.treasure/trinket) were designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but can be used by any class.
 
 <!-- @type: treasure -->
 #### Hagbasket
@@ -3309,15 +3309,15 @@ The following 4th-echelon trinkets were designed for summoners but can be used b
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 600
 
-**Effect:** The hagbasket can be used as a size 2 mount. Its speed is equal to its rider's speed, and it can fly and hover.
+**Effect:** The hagbasket can be used as a [size](scc:mcdm.heroes.v1/rule.character/size) 2 mount. Its [speed](scc:mcdm.heroes.v1/rule.character/speed) is equal to its rider's speed, and it can [fly](scc:mcdm.heroes.v1/movement/fly) and [hover](scc:mcdm.heroes.v1/movement/hover).
 
-While riding in the hagbasket, power rolls made against you have a double edge. However, you can use a free triggered action when a power roll made against you gets a tier 3 result to halve the damage.
+While riding in the hagbasket, [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made against you have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge). However, you can use a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) when a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) made against you gets a tier 3 result to halve the [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
-**Special:** If you are a summoner riding in the hagbasket, you can use a maneuver to enable a willing ally within your Summoner's Range to use Minion Bridge using your minions.
+**Special:** If you are a [summoner](scc:mcdm.summoner.v1/class/summoner) riding in the hagbasket, you can use a maneuver to enable a willing ally within your Summoner's Range to use [Minion Bridge](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/minion-bridge) using your minions.
 
 <!-- @type: treasure -->
 #### Warbanner of Wrath
@@ -3330,22 +3330,22 @@ While riding in the hagbasket, power rolls made against you have a double edge. 
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason or Intuition
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason) or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 600
 
-**Effect:** You can choose to regain 1 Recovery at the end of every combat encounter while holding the banner.
+**Effect:** You can choose to regain 1 [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) at the end of every combat encounter while holding the banner.
 
-Once per turn when you or an ally within 10 squares of you makes a melee strike, the strike can deal extra damage based on the number of Recoveries the striker has left. The strike deals +1 damage if the striker has more than half their Recoveries remaining, +2 damage if the striker has half or fewer but still at least one of their Recoveries remaining, and +5 damage if the striker has no Recoveries.
+Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) when you or an ally within 10 squares of you makes a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike), the strike can deal extra [damage](scc:mcdm.heroes.v1/rule.damage/damage) based on the number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) the striker has left. The strike deals +1 [damage](scc:mcdm.heroes.v1/rule.damage/damage) if the striker has more than half their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) remaining, +2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) if the striker has half or fewer but still at least one of their [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) remaining, and +5 [damage](scc:mcdm.heroes.v1/rule.damage/damage) if the striker has no Recoveries.
 
 ## New Leveled Treasures
 
-The following new leveled treasures are available to add to your game.
+The following new [leveled treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) are available to add to your game.
 
 <!-- @type: treasure-group | @treasure-type: implement -->
 ### Leveled Implement Treasures
 
-The following implements were designed for summoners but can be used by any class.
+The following [implements](scc:mcdm.heroes.v1/rule.treasure/implement) were designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but can be used by any class.
 
 <!-- @type: treasure -->
 #### 33 Field Commanders Baton
@@ -3358,17 +3358,17 @@ The following implements were designed for summoners but can be used by any clas
 
 **Project Source:** Texts or lore in Caelian
 
-**Project Roll Characteristic:** Reason, Intuition, or Presence
+**Project Roll Characteristic:** [Reason](scc:mcdm.heroes.v1/rule.character/reason), [Intuition](scc:mcdm.heroes.v1/rule.character/intuition), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
-**Special:** If you are a tactician, you can wield this implement as if it had the Light Weapon keyword. Replace any reference to magic or psionic abilities with weapon abilities.
+**Special:** If you are a [tactician](scc:mcdm.heroes.v1/class/tactician), you can wield this [implement](scc:mcdm.heroes.v1/rule.treasure/implement) as if it had the Light Weapon keyword. Replace any reference to magic or psionic abilities with weapon abilities.
 
-**1st Level:** While you wield this baton, you are imbued with the experience of the commanders who wielded it before you. Your magic or psionic abilities that deal rolled damage gain a +1 damage bonus. On your turn, whenever you or an ally deal damage to a creature within 5 squares of you, you can immediately use your maneuver to slide the creature up to 2 squares.
+**1st Level:** While you wield this baton, you are imbued with the experience of the commanders who wielded it before you. Your magic or psionic abilities that deal [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) gain a +1 [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus. On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever you or an ally deal [damage](scc:mcdm.heroes.v1/rule.damage/damage) to a creature within 5 squares of you, you can immediately use your maneuver to [slide](scc:mcdm.heroes.v1/movement/forced-movement) the creature up to 2 squares.
 
-**5th Level:** The baton's damage bonus increases to +2. When you slide a creature using this ability and they end this slide adjacent to one of your allies, that ally can use the Grab or Knockback maneuver against the creature as a free triggered action.
+**5th Level:** The baton's [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus increases to +2. When you [slide](scc:mcdm.heroes.v1/movement/forced-movement) a creature using this ability and they end this slide [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one of your allies, that ally can use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) or [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver against the creature as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
-**9th Level:** The baton's damage bonus increases to +3. On your turn, whenever you or an ally deal damage to a creature within 10 squares of you, you can immediately use your maneuver to slide the creature up to 3 squares, ignoring stability.
+**9th Level:** The baton's [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus increases to +3. On your [turn](scc:mcdm.heroes.v1/rule.combat/turn), whenever you or an ally deal [damage](scc:mcdm.heroes.v1/rule.damage/damage) to a creature within 10 squares of you, you can immediately use your maneuver to [slide](scc:mcdm.heroes.v1/movement/forced-movement) the creature up to 3 squares, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
 <!-- @type: treasure -->
 #### Rex Scepter
@@ -3381,15 +3381,15 @@ The following implements were designed for summoners but can be used by any clas
 
 **Project Source:** Texts or lore in Zaliac
 
-**Project Roll Characteristic:** Might, Reason, or Presence
+**Project Roll Characteristic:** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Presence](scc:mcdm.heroes.v1/rule.character/presence)
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this scepter, your Renown is increased by 1. Additionally, you can use a main action once per turn targeting a willing ally or two minions you control within 5 squares of you to make a free strike on a target within the same distance of you as a free triggered action.
+**1st Level:** While you wield this scepter, your [Renown](scc:mcdm.heroes.v1/rule.resource/renown) is increased by 1. Additionally, you can use a main action once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) targeting a willing ally or two minions you control within 5 squares of you to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) on a target within the same [distance](scc:mcdm.heroes.v1/rule.combat/distance) of you as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
-**5th Level:** The scepter's bonus to Renown increases to +2. Additionally, whenever a creature you command using the scepter makes a free strike, they gain 1 surge that can be used immediately.
+**5th Level:** The scepter's bonus to [Renown](scc:mcdm.heroes.v1/rule.resource/renown) increases to +2. Additionally, whenever a creature you command using the scepter makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), they gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge) that can be used immediately.
 
-**9th Level:** The scepter's bonus to Renown increases to +4. Additionally, the scepter's main action can now be used as a maneuver.
+**9th Level:** The scepter's bonus to [Renown](scc:mcdm.heroes.v1/rule.resource/renown) increases to +4. Additionally, the scepter's main action can now be used as a maneuver.
 
 <!-- @type: treasure -->
 #### Sanctuary Horn
@@ -3402,15 +3402,15 @@ The following implements were designed for summoners but can be used by any clas
 
 **Project Source:** Texts or lore in Kalliak
 
-**Project Roll Characteristic:** Might, Reason, or Intuition
+**Project Roll Characteristic:** [Might](scc:mcdm.heroes.v1/rule.character/might), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**1st Level:** While you wield the horn, your magic and psionic strikes deal sonic damage instead of their usual damage. Additionally, you can use a maneuver once per turn to blow the horn, allowing one ally or up to two minions you control within 5 squares of you to be recalled, instantly teleporting them into unoccupied spaces adjacent to you.
+**1st Level:** While you wield the horn, your magic and psionic [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage) instead of their usual damage. Additionally, you can use a maneuver once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) to blow the horn, allowing one ally or up to two minions you control within 5 squares of you to be recalled, instantly [teleporting](scc:mcdm.heroes.v1/movement/teleport) them into unoccupied spaces [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 
-**5th Level:** While you wield the horn, the area of your cube, burst, and aura magic or psionic abilities increases by 1. Additionally, whenever a creature is teleported by this horn, they can choose to either spend a Recovery or gain a surge.
+**5th Level:** While you wield the horn, the area of your [cube](scc:mcdm.heroes.v1/rule.combat/cube), [burst](scc:mcdm.heroes.v1/rule.combat/burst), and [aura](scc:mcdm.heroes.v1/rule.combat/aura) magic or psionic abilities increases by 1. Additionally, whenever a creature is [teleported](scc:mcdm.heroes.v1/movement/teleport) by this horn, they can choose to either spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
-**9th Level:** The horn's area bonus increases to 2. After you blow the horn as a maneuver, you can teleport yourself, another ally, or up to two other minions you control within 5 squares of you into the space left behind by a recalled target, provided they fit into the space.
+**9th Level:** The horn's area bonus increases to 2. After you blow the horn as a maneuver, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) yourself, another ally, or up to two other minions you control within 5 squares of you into the space left behind by a recalled target, provided they fit into the space.
 
 <!-- @type: treasure -->
 #### Wand of the Unheard Orchestra
@@ -3423,15 +3423,15 @@ The following implements were designed for summoners but can be used by any clas
 
 **Project Source:** Texts or lore in Khelt
 
-**Project Roll Characteristic:** Agility, Reason, or Intuition
+**Project Roll Characteristic:** [Agility](scc:mcdm.heroes.v1/rule.character/agility), [Reason](scc:mcdm.heroes.v1/rule.character/reason), or [Intuition](scc:mcdm.heroes.v1/rule.character/intuition)
 
 **Project Goal:** 450
 
-**1st Level:** While you wield this wand, your magic or psionic abilities have their distance increased by 3. Additionally, you can use a maneuver once per turn targeting yourself or a willing ally within 5 squares of you to use a move action as a free triggered action.
+**1st Level:** While you wield this wand, your magic or psionic abilities have their [distance](scc:mcdm.heroes.v1/rule.combat/distance) increased by 3. Additionally, you can use a maneuver once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) targeting yourself or a willing ally within 5 squares of you to use a move action as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
-**5th Level:** The wand's distance bonus increases to +5. Additionally, you and any minions you control have their speed increased by 2. Whenever you or any minions you control take the Disengage move action, they can shift 2 additional squares as part of that move action.
+**5th Level:** The wand's [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus increases to +5. Additionally, you and any minions you control have their [speed](scc:mcdm.heroes.v1/rule.character/speed) increased by 2. Whenever you or any minions you control take the [Disengage](scc:mcdm.heroes.v1/feature.common.move-actions/disengage) move action, they can [shift](scc:mcdm.heroes.v1/movement/shifting) 2 additional squares as part of that move action.
 
-**9th Level:** The wand's distance bonus increases to +8. Additionally, the wand's maneuver can now be used as a free maneuver once during your turn, targeting yourself or an ally within 10 squares of you to use a move action as a free triggered action.
+**9th Level:** The wand's [distance](scc:mcdm.heroes.v1/rule.combat/distance) bonus increases to +8. Additionally, the wand's maneuver can now be used as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) once during your [turn](scc:mcdm.heroes.v1/rule.combat/turn), targeting yourself or an ally within 10 squares of you to use a move action as a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 ## New Titles
 
@@ -3440,7 +3440,7 @@ The following titles are available to add to your game.
 <!-- @type: feature-group | @id: 1-echelon-titles -->
 ### 1st-Echelon Title
 
-The following title was designed for summoners but is available for any hero.
+The following title was designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but is available for any hero.
 
 <!-- @type: title -->
 #### Safeguarded
@@ -3449,14 +3449,14 @@ The following title was designed for summoners but is available for any hero.
 
 **Prerequisite:** You earn a noble rank or earn the favor of a knight's guild.
 
-**Effect:** You start combat encounters with a squad of three minions from the specific monster band or people you earned this title from. The squad takes their turn as a part of your turn. On the squad's turn, they can take a move action and either a main action or a maneuver.
+**Effect:** You start combat encounters with a squad of three minions from the specific monster band or people you earned this title from. The squad takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn) as a part of your turn. On the squad's turn, they can take a move action and either a main action or a maneuver.
 
-**Special:** If two or more heroes in the party have this title from the same source, the party starts combat encounters with a squad of six minions instead. At the start of each round of combat, the heroes decide who controls the squad as a part of their turn.
+**Special:** If two or more heroes in the party have this title from the same source, the party starts combat encounters with a squad of six minions instead. At the start of each [round](scc:mcdm.heroes.v1/rule.combat/combat-round) of combat, the heroes decide who controls the squad as a part of their turn.
 
 <!-- @type: feature-group | @id: 2-echelon-titles -->
 ### 2nd-Echelon Titles
 
-The following titles were designed for summoners but are available for any hero.
+The following titles were designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but are available for any hero.
 
 <!-- @type: title -->
 #### Sigilwright
@@ -3467,73 +3467,73 @@ The following titles were designed for summoners but are available for any hero.
 
 **Effect:** Choose one of the following benefits:
 
-*Quick Gate:* As a maneuver, you can etch an arcane circle in an adjacent square on the ground. Until the end of the encounter, you can use magic abilities and treat your Summoner's Range as if you were in that space. Each time you etch an arcane circle, your last circle fades and becomes inactive.
+*Quick Gate:* As a maneuver, you can etch an arcane circle in an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) square on the ground. Until the end of the encounter, you can use magic abilities and treat your Summoner's Range as if you were in that space. Each time you etch an arcane circle, your last circle fades and becomes inactive.
 
-*Ritual Circle:* As a respite activity, you can draw a minor summoning circle to temporarily call forth a creature you've contacted previously, regardless of manifold. If the creature is willing and able to answer your call, they appear to you for the remainder of the respite. You can ask the creature for information or a service in exchange for ending the respite with two fewer Recoveries or a demand of their choosing. If the creature doesn't appear, you can choose to take a different respite activity.
+*Ritual Circle:* As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you can draw a minor summoning circle to temporarily call forth a creature you've contacted previously, regardless of manifold. If the creature is willing and able to answer your call, they appear to you for the remainder of the [respite](scc:mcdm.heroes.v1/rule.resource/respite). You can ask the creature for information or a service in exchange for ending the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with two fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) or a demand of their choosing. If the creature doesn't appear, you can choose to take a different [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
-*Sigil Eye:* You have an edge on tests made to identify summoning circles and who or where they're connected to. You also have an edge on strikes made against creatures not native to the manifold in which you're currently located.
+*Sigil Eye:* You have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to identify summoning circles and who or where they're connected to. You also have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against creatures not native to the manifold in which you're currently located.
 
 <!-- @type: title -->
 #### Summoner Successor
 
 *When their leader fell, they started listening to me for some reason.*
 
-**Prerequisite:** You can't use the Call Forth ability, and you defeat a leader or solo creature with a Summon or Call Forth ability, such as a high elf ordinator.
+**Prerequisite:** You can't use the [Call Forth](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/call-forth) ability, and you defeat a leader or solo creature with a Summon or Call Forth ability, such as a [high elf](scc:mcdm.heroes.v1/ancestry/high-elf) ordinator.
 
-**Effect:** Choose a signature minion from a summoner's portfolio that shares a keyword with one of the creatures the summoner could summon. You can summon three of that minion into a single squad (up to a maximum of four creatures) at the start of each of your turns in combat. The distance you can command them is equal to your ranged free strike distance. You also gain the Strike for Me triggered ability, which now has the Psionic keyword and loses the Magic keyword.
+**Effect:** Choose a signature minion from a [summoner's](scc:mcdm.summoner.v1/class/summoner) [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) that shares a keyword with one of the creatures the summoner could summon. You can summon three of that minion into a single squad (up to a maximum of four creatures) at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) in combat. The [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can command them is equal to your ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) [distance](scc:mcdm.heroes.v1/rule.combat/distance). You also gain the [Strike for Me](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/strike-for-me) [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), which now has the Psionic keyword and loses the Magic keyword.
 
 Additionally, you can summon up to two of your signature minion while outside of combat to do simple tasks.
 
 <!-- @type: feature-group | @id: 3-echelon-titles -->
 ### 3rd-Echelon Title
 
-The following title was designed for summoners but is available for any hero.
+The following title was designed for [summoners](scc:mcdm.summoner.v1/class/summoner) but is available for any hero.
 
 <!-- @type: title -->
 #### Ringleader
 
 *Don't worry. I've got a guy.*
 
-**Prerequisite:** You complete three downtime projects during the same respite with the help of followers or minions.
+**Prerequisite:** You complete three downtime projects during the same [respite](scc:mcdm.heroes.v1/rule.resource/respite) with the help of [followers](scc:mcdm.heroes.v1/rule.general/follower) or minions.
 
-**Effect:** You no longer need line of effect to give commands to any minions you can summon. Additionally, choose one of the following benefits:
+**Effect:** You no longer need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to give commands to any minions you can summon. Additionally, choose one of the following benefits:
 
-*For the Boss:* Your followers gain a +3 bonus to project rolls that they make.
+*For the Boss:* Your [followers](scc:mcdm.heroes.v1/rule.general/follower) gain a +3 bonus to [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) that they make.
 
-*Networker:* Your maximum follower count increases by 1.
+*Networker:* Your maximum [follower](scc:mcdm.heroes.v1/rule.general/follower) count increases by 1.
 
 *Stringpuller:* While occupying a civilized area (such as a village, town, district, or city), you always have access to a follower native to the location. If the area is otherwise hostile to you, this follower is a spy in hiding who has any project points they earn halved.
 
 <!-- @type: feature-group | @id: 4-echelon-titles -->
 ### 4th-Echelon Titles
 
-The following titles are available for summoners.
+The following titles are available for [summoners](scc:mcdm.summoner.v1/class/summoner).
 
 <!-- @type: title -->
 #### Delegator
 
 *They're all yours, buddy.*
 
-**Prerequisite:** You are a summoner, and you strike a deal with your portfolio's champion.
+**Prerequisite:** You are a [summoner](scc:mcdm.summoner.v1/class/summoner), and you strike a deal with your [portfolio's](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) champion.
 
-**Effect:** At the start of a combat encounter, you can choose to translate yourself into your circle's source manifold while your champion fights and summons monsters in your place. The champion uses your Stamina, Recoveries, abilities, and features (except for your Summoner Strikes and Summoner's Kit). You can dismiss the champion and summon yourself back into the place you left at the end of an encounter.
+**Effect:** At the start of a combat encounter, you can choose to translate yourself into your circle's source manifold while your champion fights and summons monsters in your place. The champion uses your [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), abilities, and features (except for your [Summoner Strike](scc:mcdm.summoner.v1/feature.summoner.level-1/summoner-strike) and [Summoner's Kit](scc:mcdm.summoner.v1/feature.summoner.level-3/summoners-kit)). You can dismiss the champion and summon yourself back into the place you left at the end of an encounter.
 
-If your champion would die while taking your place, you lose access to your Return to the Source feature and can only summon signature minions until you revive your champion as a respite activity.
+If your champion would die while taking your place, you lose access to your [Return to the Source](scc:mcdm.summoner.v1/feature.summoner.level-6/return-to-the-source) feature and can only summon signature minions until you revive your champion as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity.
 
 <!-- @type: title -->
 #### High Summoner of the Circle
 
 *As I was taught, so I pass on to you.*
 
-**Prerequisite:** You are a summoner, and you teach someone how to call forth two or more minions from your portfolio.
+**Prerequisite:** You are a [summoner](scc:mcdm.summoner.v1/class/summoner), and you teach someone how to call forth two or more minions from your [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio).
 
-**Effect:** You are considered a master that can be learned from using the Learn from a Master downtime project in Draw Steel: Heroes. Anyone that makes a project roll using you as the source gains a bonus to their roll equal to your Reason. Additionally, choose one of the following benefits:
+**Effect:** You are considered a master that can be learned from using the [Learn from a Master](scc:mcdm.heroes.v1/project/learn-from-a-master) downtime project in Draw Steel: Heroes. Anyone that makes a [project roll](scc:mcdm.heroes.v1/rule.downtime/project-roll) using you as the source gains a bonus to their roll equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason). Additionally, choose one of the following benefits:
 
-*Essence Mastery:* Your minions cost one fewer essence to summon (minimum cost of 1 essence).
+*Essence Mastery:* Your minions cost one fewer [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence) to summon (minimum cost of 1 essence).
 
 *Expanded Domain:* Your Summoner's Range increases by 5. You can use your minions' senses as your own as long as they're on the same manifold as you.
 
-*Signature Summoner:* Select a 3-Essence minion you can call forth. At the start of each of your turns in combat, you summon the set number of minions listed on the stat block in place of your signature minions at no cost.
+*Signature Summoner:* Select a 3-[Essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence) minion you can [Call Forth](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/call-forth). At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) in combat, you summon the set number of minions listed on the stat block in place of your signature minions at no cost.
 
 <!-- @type: chapter | @id: other-summoners -->
 # Other Summoners
