@@ -435,7 +435,7 @@ You also have special minions at your disposal called signature minions, low-cos
 
 **[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and [Weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness):** If any minion in a squad has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) to a particular [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type), apply that effect to the entire squad only once, regardless of how many minions share the same trait.
 
-**Actions:** Minions in a squad act together on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in any order, before, in-between, and/or after any of your actions. They can either take a [move action](scc:mcdm.heroes.v1/rule.combat/turn) and a [main action](scc:mcdm.heroes.v1/rule.combat/turn) (excluding [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/heal) and [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend)), a move action and a [maneuver](scc:mcdm.heroes.v1/rule.combat/turn), or two move actions. Individual minions can also make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
+**Actions:** Minions in a squad act together on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in any order, before, in-between, and/or after any of your actions. They can either take a move action and a [main action](scc:mcdm.heroes.v1/rule.combat/turn) (excluding [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/heal) and [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend)), a move action and a [maneuver](scc:mcdm.heroes.v1/rule.combat/turn), or two move actions. Individual minions can also make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 
 **[Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** Unless otherwise specified, a minion's [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a distance of Melee 1 or Ranged 5 and deals the damage value listed on the stat block. The minion can choose to deal untyped damage or the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) next to the damage value.
 
@@ -510,7 +510,7 @@ You have the following ability, which replaces both your melee and ranged [free 
 
 **Effect:** R [damage](scc:mcdm.heroes.v1/rule.damage/damage). If the target has R < WEAK, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-**Special:** This ability has the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) keyword when it's used as a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+**Special:** This ability has the Charge keyword when it's used as a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature | @id: strike-for-me | @level: 1 -->
 ### Strike For Me
@@ -540,7 +540,7 @@ You have the following free [triggered action](scc:mcdm.heroes.v1/rule.combat/tr
 
 > **Your Minions Deal the Damage**
 >
-> By normal Draw Steel rules, everyone gets access to [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). As a [summoner](scc:mcdm.summoner.v1/class/summoner), you have a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) equivalent in addition to minions who have their own free strikes. Changing how you attack allows your minions to shine in battle while keeping your [damage](scc:mcdm.heroes.v1/rule.damage/damage) output in line with your fellow heroes. The static damage you and most of your minions deal also keeps your [turns](scc:mcdm.heroes.v1/rule.combat/turn) fast and flowing.
+> By normal Draw Steel rules, everyone gets access to [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). As a [summoner](scc:mcdm.summoner.v1/class/summoner), you have a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) equivalent in addition to minions who have their own free strikes. Changing how you attack allows your minions to shine in battle while keeping your damage output in line with your fellow heroes. The static damage you and most of your minions deal also keeps your [turns](scc:mcdm.heroes.v1/rule.combat/turn) fast and flowing.
 
 <!-- @type: feature | @id: call-forth | @level: 1 -->
 ### Call Forth
