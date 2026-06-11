@@ -94,6 +94,44 @@ func TestRenderAbilityCard_LinkedPowerRollHeader(t *testing.T) {
 	}
 }
 
+// A "test" reuses the ≤11/12-16/17+ tier outcomes but has NO "**Power Roll +**"
+// header — just a "make a … test:" lead-in followed by the tier bullets. The card
+// must still render the glyph-badged tier panel, WITHOUT synthesizing a fake
+// "Power Roll +" header (a test carries no characteristic to show there).
+func TestRenderAbilityCard_HeaderlessTierTest(t *testing.T) {
+	fm := "type: ability\nname: Scrying"
+	body := `
+Make a Reason test:
+
+- **≤11:** A false rumor.
+- **12-16:** A likely rumor.
+- **17+:** An obscure rumor.
+
+**Effect:** You learn something.
+`
+	got := renderAbilityCard(fm, body)
+	wants := []string{
+		`<div class="sc-ability__pr">`, // tier panel detected
+		`data-tier="low"><span class="badge">!</span><span class="res">A false rumor.</span>`,
+		`data-tier="mid"><span class="badge">@</span><span class="res">A likely rumor.</span>`,
+		`data-tier="high"><span class="badge">#</span><span class="res">An obscure rumor.</span>`,
+		`<span class="tag">Effect</span>`, // trailing section still parsed
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("header-less tier card missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	// A bare test must NOT invent a "Power Roll +" header.
+	if strings.Contains(got, "sc-ability__pr-head") || strings.Contains(got, "Power Roll +") {
+		t.Errorf("header-less test must not synthesize a Power Roll + header\n%s", got)
+	}
+	// The tiers must not survive as a plain bullet list.
+	if strings.Contains(got, "<li>") {
+		t.Errorf("tier outcomes should render as the panel, not a <li> list\n%s", got)
+	}
+}
+
 func TestRenderAbilityCard_TriggeredCostAndSections(t *testing.T) {
 	fm := "action_type: Triggered\ncost: 11 Wrath\nname: Fulfill Your Destiny\ntype: ability"
 	body := `

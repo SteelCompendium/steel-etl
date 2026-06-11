@@ -177,6 +177,10 @@ func renderTraitBody(intro string, children []*traitNode) (body string, leadPros
 		switch kind {
 		case "flavor":
 			fmt.Fprintf(&b, "<p class=\"sc-trait__flavor\">%s</p>\n", traitInline(strings.Trim(tp, "*")))
+		case "tiers":
+			var t [3]string
+			parseTiers(tp, &t)
+			b.WriteString(tierPanelHTML("", "", t, traitInline))
 		case "list":
 			b.WriteString(renderTraitList(tp))
 		case "table":
@@ -215,6 +219,8 @@ func classifyTraitBlock(tp string) string {
 		return "flavor"
 	case isTableBlock(tp):
 		return "table"
+	case isTierListBlock(tp):
+		return "tiers"
 	case isListBlock(tp):
 		return "list"
 	case segLabelRe.MatchString(tp):

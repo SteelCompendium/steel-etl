@@ -181,6 +181,15 @@ func renderAbilityCard(fm, body string) string {
 		}
 		expectTiers = false
 
+		// header-less tier triple: a "test" whose outcomes reuse the
+		// ≤11/12-16/17+ tiers but with no "**Power Roll +**" header line. Render
+		// the same panel (prChars stays empty, so no synthesized header).
+		if !hasPR && isTierListBlock(tp) {
+			parseTiers(tp, &tiers)
+			hasPR = true
+			continue
+		}
+
 		// labeled paragraph → Effect / Trigger / Special… or a Spend enhancement
 		if m := labelRe.FindStringSubmatch(tp); m != nil {
 			label := strings.TrimSpace(m[1])
@@ -242,18 +251,7 @@ func renderAbilityCard(fm, body string) string {
 	}
 
 	if hasPR {
-		b.WriteString("<div class=\"sc-ability__pr\">\n")
-		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\">%s<span class=\"pre\">Power Roll +</span><span class=\"chars\">%s</span></div>\n", dia, richInline(prChars))
-		b.WriteString("<div class=\"sc-ability__pr-rows\">\n")
-		for i := 0; i < 3; i++ {
-			if tiers[i] == "" {
-				continue
-			}
-			fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>\n",
-				tierKey[i], tierGlyph[i], richInline(tiers[i]))
-		}
-		b.WriteString("</div>\n")
-		b.WriteString("</div>\n")
+		b.WriteString(tierPanelHTML(dia, prChars, tiers, richInline))
 	}
 
 	for _, s := range sections {
@@ -373,6 +371,50 @@ func parseTiers(para string, tiers *[3]string) {
 			tiers[2] = val
 		}
 	}
+}
+
+// isTierListBlock reports whether a paragraph is a bullet list whose items are
+// the ≤11/12-16/17+ power-roll tier outcomes — the distinctive signature a
+// "test" shares with a power roll, but WITHOUT any "**Power Roll +**" header.
+// Airtight by design (no over-reach): it must be a list block AND parse into at
+// least two recognized tiers, so an ordinary bullet list never qualifies.
+func isTierListBlock(tp string) bool {
+	if !isListBlock(tp) {
+		return false
+	}
+	var t [3]string
+	parseTiers(tp, &t)
+	n := 0
+	for _, v := range t {
+		if v != "" {
+			n++
+		}
+	}
+	return n >= 2
+}
+
+// tierPanelHTML renders the steel power-roll tier panel: an optional
+// "Power Roll + <chars>" head (only when chars is non-empty — a bare test's tier
+// triple carries no characteristic) followed by the glyph-badged tier rows. The
+// inline renderer is supplied by the caller (richInline for abilities,
+// traitInline for traits) so links/emphasis in the outcomes resolve in-context.
+func tierPanelHTML(dia, chars string, tiers [3]string, inline func(string) string) string {
+	var b strings.Builder
+	b.WriteString("<div class=\"sc-ability__pr\">\n")
+	if strings.TrimSpace(chars) != "" {
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\">%s<span class=\"pre\">Power Roll +</span><span class=\"chars\">%s</span></div>\n", dia, inline(chars))
+	}
+	b.WriteString("<div class=\"sc-ability__pr-rows\">\n")
+	for i := 0; i < 3; i++ {
+		if tiers[i] == "" {
+			continue
+		}
+		fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>\n",
+			tierKey[i], tierGlyph[i], inline(tiers[i]))
+	}
+	b.WriteString("</div>\n")
+	b.WriteString("</div>\n")
+	return b.String()
 }
 
 // collapseLines joins a multi-line paragraph into a single line.

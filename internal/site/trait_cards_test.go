@@ -17,6 +17,60 @@ func TestBuildAbilityCardPage_PlainFeature(t *testing.T) {
 	}
 }
 
+// A plain feature whose body embeds a test's ≤11/12-16/17+ tier outcomes (e.g.
+// the Summoner's Fairy Whispers) must render the glyph-badged tier panel inside
+// the niche, NOT a plain <ul> — and without inventing a "Power Roll +" header.
+func TestRenderTraitCard_TierTestPanel(t *testing.T) {
+	fm := "class: summoner\nname: Fairy Whispers\ntype: feature\nlevel: \"1\""
+	body := `
+When the minion returns, make a Reason test:
+
+- **≤11:** You learn an undoubtedly false common rumor.
+- **12-16:** You learn a common rumor that is most likely true.
+- **17+:** You learn an obscure rumor that could either be true or false.
+
+You gain a bane on the test for each subsequent rumor.
+`
+	got := renderTraitCard(fm, body)
+	wants := []string{
+		`<div class="sc-ability__pr">`,
+		`data-tier="low"><span class="badge">!</span><span class="res">You learn an undoubtedly false common rumor.</span>`,
+		`data-tier="high"><span class="badge">#</span>`,
+		`<p>You gain a bane`, // trailing prose still rendered
+	}
+	for _, w := range wants {
+		if !strings.Contains(got, w) {
+			t.Errorf("feature tier panel missing %q\n--- got ---\n%s", w, got)
+		}
+	}
+	if strings.Contains(got, "<li>") {
+		t.Errorf("tier outcomes must not stay a plain <ul> list\n%s", got)
+	}
+	if strings.Contains(got, "Power Roll +") {
+		t.Errorf("a test must not synthesize a Power Roll + header\n%s", got)
+	}
+}
+
+// A non-tier bullet list inside a feature must STILL render as an ordinary <ul>
+// (no over-reach: only the ≤11/12-16/17+ signature becomes a tier panel).
+func TestRenderTraitCard_PlainListUnchanged(t *testing.T) {
+	fm := "class: summoner\nname: Formation\ntype: feature"
+	body := `
+Choose one of the following formations:
+
+- **Horde:** More minions.
+- **Platoon:** Extra damage.
+- **Elite:** Tougher minions.
+`
+	got := renderTraitCard(fm, body)
+	if !strings.Contains(got, "<ul>") || !strings.Contains(got, "<li>") {
+		t.Errorf("a non-tier list should remain a plain <ul>\n%s", got)
+	}
+	if strings.Contains(got, "sc-ability__pr") {
+		t.Errorf("a non-tier list must not become a tier panel\n%s", got)
+	}
+}
+
 // A pure-prose trait → a flat niche with the drop-cap modifier and one paragraph.
 func TestRenderTraitCard_ProseOnly(t *testing.T) {
 	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait\nscc: mcdm.heroes.v1/feature.trait.dragon-knight/prismatic-scales"
