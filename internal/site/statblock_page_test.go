@@ -221,6 +221,11 @@ func TestBuildStatblockIslandPage_EmitsIsland(t *testing.T) {
 		t.Fatal("expected statblock page to be rewritten")
 	}
 	s := string(out)
+	// Island is wrapped in a .sc-statblock-mount container so the client can
+	// locate it after navigation.instant strips the <script>'s attributes.
+	if !strings.Contains(s, `<div class="sc-statblock-mount">`) {
+		t.Fatal("sc-statblock-mount container missing")
+	}
 	if !strings.Contains(s, `<script type="application/json" class="sc-statblock-data">`) {
 		t.Fatal("island script tag missing")
 	}

@@ -124,7 +124,17 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	if err != nil {
 		return data, false
 	}
-	island := "<script type=\"application/json\" class=\"sc-statblock-data\">\n" + string(js) + "\n</script>\n"
+	// Wrap the island in a .sc-statblock-mount container. Material's
+	// navigation.instant recreates inline <script>s and strips their attributes
+	// (class + type), so after a client-side nav the script is no longer findable
+	// by `script.sc-statblock-data` — but the container DIV's class survives.
+	// steel-statblock.js locates the mount, then reads the child <script> body.
+	// Same pattern as .sc-browse-mount / .sc-bestiary-mount. See
+	// v2/.repo-docs/decisions/2026-06-11-client-scripts-navigation-instant.md and
+	// .../2026-06-09-instant-nav-strips-script-attrs.md.
+	island := "<div class=\"sc-statblock-mount\">" +
+		"<script type=\"application/json\" class=\"sc-statblock-data\">\n" + string(js) + "\n</script>" +
+		"</div>\n"
 	return []byte("---\n" + fm + "\n---\n\n" + island), true
 }
 
