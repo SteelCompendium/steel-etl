@@ -3570,13 +3570,13 @@ Whenever the following retainer would gain a new advancement ability, the player
 >
 > 3 damage
 >
-> 5 damage; R < STRONG slowed (save ends)
+> 5 damage; R < STRONG [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** The target takes an additional 1 damage for each demon adjacent to them.
+> **Effect:** The target takes an additional 1 damage for each demon [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the detective's true name, the detective loses their damage immunities and can't summon any **razors** until the end of the encounter.
+> If a creature within 10 squares speaks the detective's true name, the detective loses their [damage immunities](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and can't summon any **razors** until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Razor
@@ -3589,11 +3589,11 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > ⭐️ **Teeth!**
 >
-> Once per turn, whenever an adjacent enemy grabs the razor or uses a melee ability against them, that enemy takes 1 damage for each razor adjacent to them.
+> Once per turn, whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the razor or uses a melee ability against them, that enemy takes 1 damage for each razor [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the razor can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the razor can't be hidden from them.
 
 ######## Level 4 Retainer Advancement Ability
 
@@ -3603,15 +3603,15 @@ Whenever the following retainer would gain a new advancement ability, the player
 > |-----------------|----------------:|
 > | **📏 4 cube within 5** | **🎯 Each enemy or object in the area** |
 >
-> **Special:** The detective can instantly kill one or more of their minions to give themself a double edge on the power roll.
+> **Special:** The detective can instantly kill one or more of their minions to give themself a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 >
-> 2 damage; A < WEAK bleeding (save ends)
+> 2 damage; A < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> 4 damage; A < AVERAGE bleeding (save ends)
+> 4 damage; A < AVERAGE [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> 5 damage; A < STRONG bleeding (save ends)
+> 5 damage; A < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Any enemy that was hiding in the area is revealed. The area is now difficult terrain for enemies.
+> **Effect:** Any enemy that was hiding in the area is revealed. The area is now [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 
 ######## Level 4 Retainer Advancement Ability
 
@@ -3634,15 +3634,15 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > ⭐️ **Transforming Strike**
 >
-> The violent's melee free strikes deal an additional 2 damage to each adjacent enemy from whom they were hidden. The violent loses their disguise after striking.
+> The violent's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deal an additional 2 damage to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy from whom they were hidden. The violent loses their disguise after striking.
 
 > ⭐️ **Mimicry**
 >
-> The violent uses the Hide maneuver at the start of their turn as a free maneuver, disguising themselves as a a size 1M or smaller object.
+> The violent uses the [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) maneuver at the start of their turn as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), disguising themselves as a a [size](scc:mcdm.heroes.v1/rule.character/size) 1M or smaller object.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the violent can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the violent can't be hidden from them.
 
 ######## Level 7 Retainer Advancement Ability
 
@@ -3652,7 +3652,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 > |-----------------|-------------:|
 > | **📏 5 burst** | **🎯 Each of the detective's minions in the area** |
 >
-> **Effect:** Each target moves up to their speed toward an ally. Each ally within line of effect of the detective can give one EoT or save ends effect they're affected by to an adjacent minion and end that effect on themself.
+> **Effect:** Each target moves up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) toward an ally. Each ally within [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) of the detective can give one [EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn) or save ends effect they're affected by to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) minion and end that effect on themself.
 >
 > Until the end of the encounter, whenever an enemy kills a target and has P < STRONG, they receive all EoT or save ends effects the target was affected by.
 
@@ -3666,13 +3666,13 @@ Whenever the following retainer would gain a new advancement ability, the player
 >
 > **Effect:** The minion explodes. Make a power roll, targeting each enemy within 2 squares of the target.
 >
-> 5 corruption damage; M < WEAK weakened (save ends)
+> 5 corruption damage; M < WEAK [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> 8 corruption damage; M < AVERAGE weakened (save ends)
+> 8 corruption damage; M < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> 10 corruption damage; M < STRONG weakened (save ends)
+> 10 corruption damage; M < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> The area within 2 squares of the exploded minion is covered in blight until the end of the encounter. Abilities used against an enemy in the area have an edge.
+> The area within 2 squares of the exploded minion is covered in blight until the end of the encounter. Abilities used against an enemy in the area have an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 ######## Level 10 Retainer Advancement Ability
 
@@ -3695,15 +3695,15 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > ⭐️ **Gorrring Strike**
 >
-> The gorrre must charge before making a strike. The target is M < STRONG knocked prone if the gorrre moved through an enemy or object other than the target during the charge.
+> The gorrre must [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) before making a [strike](scc:mcdm.heroes.v1/rule.combat/strike). The target is M < STRONG knocked [prone](scc:mcdm.heroes.v1/condition/prone) if the gorrre moved through an enemy or object other than the target during the charge.
 
 > ⭐️ **Devastating Charge**
 >
-> The gorrre ignores difficult terrain while charging and destroys unattended, size 1 objects in their path. Each enemy they move through during a charge takes 3 damage.
+> The gorrre ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) while charging and destroys [unattended](scc:mcdm.heroes.v1/rule.general/unattended-object), [size](scc:mcdm.heroes.v1/rule.character/size) 1 objects in their path. Each enemy they move through during a charge takes 3 damage.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the gorrre can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the gorrre can't be hidden from them.
 
 ## Rival Summoner
 
@@ -3737,7 +3737,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 >
 > 8 corruption damage
 >
-> 11 corruption damage; R < 2 slowed (save ends)
+> 11 corruption damage; R < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > 🏹 **Call Forth (1+ Malice)**
 >
@@ -3753,15 +3753,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
-> **Trigger:** The target is targeted by a strike.
+> **Trigger:** The target is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
-> **Effect:** If one of the summoner's minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.
+> **Effect:** If one of the summoner's minions is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target and is within distance of the [strike](scc:mcdm.heroes.v1/rule.combat/strike), they become the new target of the strike.
 >
-> **2 Malice:** Instead of commanding an existing minion, the summoner summons a **skeleton** into an unoccupied space adjacent to the target to take the strike.
+> **2 Malice:** Instead of commanding an existing minion, the summoner summons a **skeleton** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target to take the strike.
 
 > ⭐️ **Rivalry (With All of Us)**
 >
-> At the start of an encounter, the summoner chooses one creature within their line of effect. Both the summoner and the creature can add a d3 roll to power rolls they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 2 damage.
+> At the start of an encounter, the summoner chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the summoner and the creature can add a d3 roll to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 2 damage.
 
 <!-- @type: statblock -->
 ####### Skeleton
@@ -3774,7 +3774,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Bonetrops**
 >
-> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+> When the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their square becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
 
 <!-- @type: statblock -->
 ####### Zombie Lumberer
@@ -3787,11 +3787,11 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Zombie Clutch**
 >
-> The lumberer's melee free strikes inflict A < 1 grabbed. A creature or object that starts their turn grabbed by the lumberer takes 2 corruption damage.
+> The lumberer's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A creature or object that starts their turn [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the lumberer takes 2 corruption damage.
 
 > ⭐️ **Death Grasp**
 >
-> When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < 2 restrained (EoT).
+> When the lumberer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can latch onto an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy before being destroyed. The enemy is M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 <!-- @type: statblock -->
 ####### Accursed Mummy
@@ -3808,17 +3808,17 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |---------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 One creature or object per minion** |
 >
-> 3 poison damage; pull 2
+> 3 poison damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
-> 4 poison damage; pull 3
+> 4 poison damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> 6 poison damage; pull 4
+> 6 poison damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** A target pulled adjacent to the mummy is M < 2 weakened (EoT).
+> **Effect:** A target pulled [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the mummy is M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 > ⭐️ **Mummy Dust**
 >
-> Whenever the mummy takes damage, each enemy adjacent to the mummy takes 2 poison damage.
+> Whenever the mummy takes damage, each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the mummy takes 2 poison damage.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 2nd-echelon -->
 ##### —
@@ -3850,7 +3850,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 >
 > 14 corruption damage
 >
-> **Effect:** The summoner summons a **skeleton** into an unoccupied space adjacent to the target.
+> **Effect:** The summoner summons a **skeleton** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
 > 🏹 **Call Forth (1+ Malice)**
 >
@@ -3866,15 +3866,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
-> **Trigger:** The target is targeted by a strike
+> **Trigger:** The target is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike)
 >
-> **Effect:** If one of the summoner's minions is adjacent to the target and is within distance of the strike, they become the new target of the strike. The original target can shift into any square adjacent to the minion.
+> **Effect:** If one of the summoner's minions is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target and is within distance of the [strike](scc:mcdm.heroes.v1/rule.combat/strike), they become the new target of the strike. The original target can [shift](scc:mcdm.heroes.v1/movement/shifting) into any square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion.
 >
-> **2 Malice:** Instead of commanding an existing minion, the summoner summons a **skeleton** into an unoccupied space adjacent to the target to take the strike.
+> **2 Malice:** Instead of commanding an existing minion, the summoner summons a **skeleton** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target to take the strike.
 
 > ⭐️ **Rivalry (With All of Us)**
 >
-> At the start of an encounter, the summoner chooses one creature within their line of effect. Both the summoner and the creature can add a d3 roll to power rolls they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 3 damage.
+> At the start of an encounter, the summoner chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the summoner and the creature can add a d3 roll to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 3 damage.
 
 <!-- @type: statblock -->
 ####### Skeleton
@@ -3887,7 +3887,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Bonetrops**
 >
-> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+> When the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their square becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
 
 <!-- @type: statblock -->
 ####### Grave Knight
@@ -3904,15 +3904,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
-> 5 corruption damage; M < 1 bleeding (EoT)
+> 5 corruption damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 7 corruption damage; M < 2 bleeding (EoT)
+> 7 corruption damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 9 corruption damage; M < 3 bleeding (save ends)
+> 9 corruption damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **To the Grave**
 >
-> When the grave knight is reduced to 0 Stamina, they can make a melee free strike before being destroyed.
+> When the grave knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before being destroyed.
 
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
@@ -3925,7 +3925,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Always Crying**
 >
-> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't shift until the start of the mournling's next turn.
+> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the mournling's next turn.
 
 > ⭐️ **Immutable Form**
 >
@@ -3933,7 +3933,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Rupture**
 >
-> The first time the mournling burrows out of the ground on their turn, they can make a free strike against each adjacent enemy.
+> The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their turn, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 3rd-echelon -->
 ##### —
@@ -3959,11 +3959,11 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
-> 8 psychic damage; R < 2 frightened (EoT)
+> 8 psychic damage; R < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 13 psychic damage; R < 3 frightened (EoT)
+> 13 psychic damage; R < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 17 psychic damage; R < 4 frightened (EoT)
+> 17 psychic damage; R < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 
 > 🏹 **Call Forth (1+ Malice)**
 >
@@ -3979,15 +3979,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
-> **Trigger:** The target is targeted by a strike.
+> **Trigger:** The target is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
-> **Effect:** The summoner summons a **skeleton** into an unoccupied space adjacent to the target. They become the new target of the strike. The original target can shift into any square adjacent to the minion.
+> **Effect:** The summoner summons a **skeleton** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. They become the new target of the strike. The original target can [shift](scc:mcdm.heroes.v1/movement/shifting) into any square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion.
 >
-> **1 Malice:** Instead, the summoner summons a **zombie lumberer** into an unoccupied space adjacent to the target to take the strike.
+> **1 Malice:** Instead, the summoner summons a **zombie lumberer** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target to take the strike.
 
 > ⭐️ **Rivalry (With All of Us)**
 >
-> At the start of an encounter, the summoner chooses one creature within their line of effect. Both the summoner and the creature can add a d3 roll to power rolls they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 4 damage.
+> At the start of an encounter, the summoner chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the summoner and the creature can add a d3 roll to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 4 damage.
 
 <!-- @type: statblock -->
 ####### Skeleton
@@ -4000,7 +4000,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Bonetrops**
 >
-> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+> When the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their square becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
 
 <!-- @type: statblock -->
 ####### Zombie Lumberer
@@ -4013,11 +4013,11 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Zombie Clutch**
 >
-> The lumberer's melee free strikes inflict A < 3 grabbed. A creature or object that starts their turn grabbed by the lumberer takes 2 corruption damage.
+> The lumberer's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A creature or object that starts their turn [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the lumberer takes 2 corruption damage.
 
 > ⭐️ **Death Grasp**
 >
-> When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < 4 restrained (EoT).
+> When the lumberer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can latch onto an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy before being destroyed. The enemy is M < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
@@ -4030,7 +4030,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Always Crying**
 >
-> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't shift until the start of the mournling's next turn.
+> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the mournling's next turn.
 
 > ⭐️ **Immutable Form**
 >
@@ -4038,7 +4038,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Rupture**
 >
-> The first time the mournling burrows out of the ground on their turn, they can make a free strike against each adjacent enemy.
+> The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their turn, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: statblock -->
 ####### False Vampire
@@ -4051,11 +4051,11 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Proboscis Strike**
 >
-> The false vampire's melee free strikes have a distance of 2 and inflict M < 3 restrained (EoT). The false vampire can move the target while they are restrained this way. At the start of a restrained creature's turn, they take 4 acid damage.
+> The false vampire's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 2 and inflict M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)). The false vampire can move the target while they are [restrained](scc:mcdm.heroes.v1/condition/restrained) this way. At the start of a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature's turn, they take 4 acid damage.
 
 > ⭐️ **Bloodthirsty**
 >
-> The false vampire has a speed of 10 while a creature is bleeding within 10.
+> The false vampire has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 10 while a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) within 10.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 4th-echelon -->
 ##### —
@@ -4081,7 +4081,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One creature or object** |
 >
-> **Effect:** Each of the summoner's minions within 5 squares of the target makes a free strike against the target. The target takes an additional 5 damage for each of the summoner's squads that joined the attack.
+> **Effect:** Each of the summoner's minions within 5 squares of the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. The target takes an additional 5 damage for each of the summoner's squads that joined the attack.
 
 > 🏹 **Call Forth (1+ Malice)**
 >
@@ -4097,13 +4097,13 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |-------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Self or one ally** |
 >
-> **Trigger:** The target is targeted by a strike.
+> **Trigger:** The target is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 >
-> **Effect:** The summoner summons a **grave knight** into an unoccupied space adjacent to the target. They become the new target of the strike. The target can shift into any square adjacent to the minion.
+> **Effect:** The summoner summons a **grave knight** into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. They become the new target of the strike. The target can [shift](scc:mcdm.heroes.v1/movement/shifting) into any square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion.
 
 > ⭐️ **Rivalry (With All of Us)**
 >
-> At the start of an encounter, the summoner chooses one creature within their line of effect. Both the summoner and the creature can add a d3 roll to power rolls they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 5 damage.
+> At the start of an encounter, the summoner chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the summoner and the creature can add a d3 roll to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) they make against each other. Whenever one of the summoner's squads uses a damaging ability against the creature, the creature takes an additional 5 damage.
 
 <!-- @type: statblock -->
 ####### Skeleton
@@ -4116,7 +4116,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Bonetrops**
 >
-> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+> When the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their square becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
 
 <!-- @type: statblock -->
 ####### Grave Knight
@@ -4133,15 +4133,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
-> 5 corruption damage; M < 3 bleeding (EoT)
+> 5 corruption damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 7 corruption damage; M < 4 bleeding (EoT)
+> 7 corruption damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 9 corruption damage; M < 5 bleeding (save ends)
+> 9 corruption damage; M < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **To the Grave**
 >
-> When the grave knight is reduced to 0 Stamina, they can make a melee free strike before being destroyed.
+> When the grave knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before being destroyed.
 
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
@@ -4154,7 +4154,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Always Crying**
 >
-> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't shift until the start of the mournling's next turn.
+> At the end of the mournling's turn, each enemy within 1 of the mournling takes 2 sonic damage and can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the mournling's next turn.
 
 > ⭐️ **Immutable Form**
 >
@@ -4162,7 +4162,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Rupture**
 >
-> The first time the mournling burrows out of the ground on their turn, they can make a free strike against each adjacent enemy.
+> The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their turn, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: statblock -->
 ####### Zombie Titan
@@ -4175,15 +4175,15 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Big Stomp**
 >
-> The titan's melee free strikes M < 5 knock the target prone.
+> The titan's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) M < 5 knock the target [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Overwhelming Size**
 >
-> The titan can move through enemies at normal speed. If the titan ends their turn in a prone size 2 or smaller creature's space, the creature can't stand.
+> The titan can move through enemies at normal [speed](scc:mcdm.heroes.v1/rule.character/speed). If the titan ends their turn in a [prone](scc:mcdm.heroes.v1/condition/prone) [size](scc:mcdm.heroes.v1/rule.character/size) 2 or smaller creature's space, the creature can't stand.
 
 > ⭐️ **Flesh to Mountains**
 >
-> When the titan is reduced to 0 Stamina, their space becomes difficult terrain. If a creature was prone underneath the titan when the titan is killed, they take 10 damage and are restrained (save ends).
+> When the titan is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). If a creature was [prone](scc:mcdm.heroes.v1/condition/prone) underneath the titan when the titan is killed, they take 10 damage and are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 <!-- @type: chapter | @id: summoner-advice -->
 # Summoner Advice
