@@ -2489,19 +2489,19 @@ Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or
 <!-- @type: feature | @id: 6th-level-features | @level: 6 -->
 ### 6th-Level Features
 
-As a 6th-level summoner, you gain the following features.
+As a 6th-level [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: perk | @level: 6 -->
 #### Perk
 
-You gain an interpersonal, lore, or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
+You gain an [interpersonal](scc:mcdm.heroes.v1/skill.group/interpersonal), [lore](scc:mcdm.heroes.v1/skill.group/lore), or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
 
 <!-- @type: feature | @id: return-to-the-source | @level: 6 -->
 #### Return to the Source
 
 You can translate yourself and your allies into the space that your minions come from, as if summoning in reverse.
 
-When you take a respite, you teleport to your circle's source manifold or point of origin, as shown on the Circle's Source Manifold table. You can bring along any allies to gather resources or research details about that location's denizens. You are seen as a native resident of the location, but your allies might be seen as intruders.
+When you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you [teleport](scc:mcdm.heroes.v1/movement/teleport) to your circle's source manifold or point of origin, as shown on the Circle's Source Manifold table. You can bring along any allies to gather resources or research details about that location's denizens. You are seen as a native resident of the location, but your allies might be seen as intruders.
 
 ###### Circle's Source Manifold
 
@@ -2512,26 +2512,26 @@ When you take a respite, you teleport to your circle's source manifold or point 
 | Spring | Arcadia |
 | Storms | Quintessence |
 
-At the end of the respite, you and everyone you brought with you immediately teleports back into the same location from which you made the portal.
+At the end of the [respite](scc:mcdm.heroes.v1/rule.resource/respite), you and everyone you brought with you immediately teleports back into the same location from which you made the portal.
 
 <!-- @type: feature | @id: minion-machinations | @level: 6 -->
 #### Minion Machinations
 
-Your maximum number of followers increases by 2.
+Your maximum number of [followers](scc:mcdm.heroes.v1/rule.general/follower) increases by 2.
 
-You can summon and recruit an artisan follower and a sage follower that share a keyword with a minion you can summon. These followers can be creatures from your portfolio or preexisting denizens of your circle's source manifold. See Follower Types under Attract Followers in Draw Steel: Heroes for information on constructing your followers' stats.
+You can summon and recruit an artisan [follower](scc:mcdm.heroes.v1/rule.general/follower) and a sage [follower](scc:mcdm.heroes.v1/rule.general/follower) that share a keyword with a minion you can summon. These followers can be creatures from your portfolio or preexisting denizens of your circle's source manifold. See Follower Types under Attract Followers in Draw Steel: Heroes for information on constructing your followers' stats.
 
 <!-- @type: feature | @id: kit-improvement | @level: 6 -->
 #### Kit Improvement
 
 You can choose one additional ward from your Summoner's Kit.
 
-Additionally, whenever you reduce an enemy to 0 Stamina with your Summoner Strike ability, you can use Call Forth as a free maneuver. Minions summoned this way are unable to act during this turn.
+Additionally, whenever you reduce an enemy to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) with your [Summoner Strike](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/summoner-strike) ability, you can use [Call Forth](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/call-forth) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver). Minions summoned this way are unable to act during this [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: feature | @id: 9-essence-ability | @level: 6 -->
 #### 9-Essence Ability
 
-You can summon the assistance of your future champion (see Portfolio Champion) and allow them to show off a brief display of their power. Select one of the following heroic abilities, each of which costs 9 essence to use.
+You can summon the assistance of your future champion (see [Portfolio Champion](scc:mcdm.summoner.v1/feature.summoner.level-8/portfolio-champion)) and allow them to show off a brief display of their power. Select one of the following [heroic abilities](scc:mcdm.heroes.v1/rule.general/heroic-ability), each of which costs 9 essence to use.
 
 <!-- @type: ability | @id: a-champions-cry | @level: 6 -->
 ##### A Champion's Cry (9 Essence)
@@ -2542,11 +2542,11 @@ You can summon the assistance of your future champion (see Portfolio Champion) a
 |---------------------------|----------------:|
 | **📏 3 burst** | **🎯 Each enemy in the area** |
 
-**Power Roll + Reason:**
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 
-- **≤11:** 2 psychic or sonic damage; I < WEAK frightened of you (save ends)
-- **12-16:** 5 psychic or sonic damage; I < AVERAGE frightened of you and all allies (EoT)
-- **17+:** 7 psychic or sonic damage; I < STRONG frightened of you and all allies (save ends)
+- **≤11:** 2 psychic or sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage); I < WEAK [frightened](scc:mcdm.heroes.v1/condition/frightened) of you ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
+- **12-16:** 5 psychic or sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage); I < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) of you and all allies ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
+- **17+:** 7 psychic or sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage); I < STRONG [frightened](scc:mcdm.heroes.v1/condition/frightened) of you and all allies ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
 
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
@@ -2561,9 +2561,9 @@ You can summon the assistance of your future champion (see Portfolio Champion) a
 
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
-Until the end of the encounter or you become dying, each target has a +2 bonus to saving throws.
+Until the end of the encounter or you become [dying](scc:mcdm.heroes.v1/rule.health/dying), each target has a +2 [bonus](scc:mcdm.heroes.v1/rule.dice/bonuses-and-penalties) to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
 
-Each target can immediately make each of their saving throws and stand up from prone.
+Each target can immediately make each of their [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and stand up from [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: ability | @id: the-champion-slams-the-earth | @level: 6 -->
 ##### The Champion Slams the Earth (9 Essence)
@@ -2574,15 +2574,15 @@ Each target can immediately make each of their saving throws and stand up from p
 |-----------------------------------|----------------:|
 | **📏 4 cube within 1** | **🎯 Each enemy and object in the area** |
 
-**Power Roll + Reason:**
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 
-- **≤11:** 5 damage; M < WEAK prone and can't stand (save ends)
-- **12-16:** 8 damage; M < AVERAGE prone and can't stand (save ends)
-- **17+:** 11 damage; M < STRONG prone and can't stand (save ends)
+- **≤11:** 5 [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < WEAK [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
+- **12-16:** 8 [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < AVERAGE [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
+- **17+:** 11 [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < STRONG [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
 
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
-**Special:** You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion).
+**Special:** You can change the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to be a type that your champion deals on their stat block (see [Portfolio Champion](scc:mcdm.summoner.v1/feature.summoner.level-8/portfolio-champion)).
 
 <!-- @type: ability | @id: their-pall-shrouds-all | @level: 6 -->
 ##### Their Pall Shrouds All (9 Essence)
@@ -2595,26 +2595,26 @@ Each target can immediately make each of their saving throws and stand up from p
 
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
-Each target is R < AVERAGE weakened (save ends).
+Each target is R < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw)).
 
-Until the end of the encounter, whenever a target gets a tier 1 result on a strike, they deal half damage. If a target was striking a creature adjacent to one of their allies, they target their ally instead.
+Until the end of the encounter, whenever a target gets a [tier](scc:mcdm.heroes.v1/rule.dice/tier-outcome) 1 result on a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they deal half [damage](scc:mcdm.heroes.v1/rule.damage/damage). If a target was striking a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one of their allies, they target their ally instead.
 
 <!-- @type: feature | @id: 7th-level-features | @level: 7 -->
 ### 7th-Level Features
 
-As a 7th-level summoner, you gain the following features.
+As a 7th-level [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: characteristic-increase | @level: 7 -->
 #### Characteristic Increase
 
-All of your characteristics increase by 1, to a maximum score of 4.
+All of your [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) increase by 1, to a maximum score of 4.
 
 <!-- @type: feature | @id: minion-improvement | @level: 7 -->
 #### Minion Improvement
 
-At the start of each of your turns during combat, you can summon one additional signature minion at no cost into an unoccupied space within your Summoner's Range (no action required).
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you can summon one additional signature minion at no cost into an unoccupied space within your Summoner's Range (no action required).
 
-Additionally, you can increase each of your minions' Stamina as shown on the 7th-Level Minion Stamina Increase table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 4).
+Additionally, you can increase each of your minions' [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) as shown on the 7th-Level Minion Stamina Increase table. Additionally, each minion that receives a [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) boost can treat their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) as one higher for the purposes of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) (to a maximum value of 4).
 
 These benefits are not reflected in the stat blocks of new minions you acquire.
 
@@ -2630,14 +2630,14 @@ These benefits are not reflected in the stat blocks of new minions you acquire.
 <!-- @type: feature | @id: font-of-creation | @level: 7 -->
 #### Font of Creation
 
-When you gain essence at the start of each of your turns during combat, you gain 3 essence instead of 2.
+When you gain essence at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 3 essence instead of 2.
 
 <!-- @type: feature | @id: their-life-for-mine | @level: 7 -->
 #### Their Life for Mine
 
-If you or an ally within your Summoner's Range would die from an effect that isn't age related, you sacrifice all your active minions (minimum 1) and spend all your essence (minimum 1) as a free triggered action to bring the target back to life, reconstructing the damaged parts of their body with summoned material related to your portfolio. The target comes back with 0 Stamina plus 1 Stamina for each minion and essence used in the effect. You must have at least one fragment of the creature's remains, and the creature's soul must be willing to return to life for the effect to work.
+If you or an ally within your Summoner's Range would [die](scc:mcdm.heroes.v1/rule.health/dying) from an effect that isn't age related, you sacrifice all your active minions (minimum 1) and spend all your essence (minimum 1) as a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to bring the target back to life, reconstructing the damaged parts of their body with summoned material related to your portfolio. The target comes back with 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) plus 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) for each minion and essence used in the effect. You must have at least one fragment of the creature's remains, and the creature's soul must be willing to return to life for the effect to work.
 
-You can't use this feature again until you gain a new level, or until you spend 3 eidos to use it (see Eidos).
+You can't use this feature again until you gain a new level, or until you spend 3 eidos to use it (see [Eidos](scc:mcdm.summoner.v1/feature.summoner.level-10/eidos)).
 
 <!-- @type: feature | @id: skill | @level: 7 -->
 #### Skill
@@ -2647,7 +2647,7 @@ You gain one skill of your choice.
 <!-- @type: feature | @id: 8th-level-features | @level: 8 -->
 ### 8th-Level Features
 
-As an 8th-level summoner, you gain the following features.
+As an 8th-level [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: perk | @level: 8 -->
 #### Perk
@@ -2671,16 +2671,16 @@ Your circle grants you a feature as shown on the 8th-Level Summoner Circle Featu
 <!-- @type: feature | @id: abyssal-evolution | @level: 8 -->
 #### Abyssal Evolution
 
-At the start of each of your turns, you can transform up to two of your demon minions within your Summoner's Range. A demon can transform into a different demon minion within your Summoner's Range, maintaining their current Stamina. Starting from round 2, a demon can transform any demon minion you can call forth for half the essence cost, as if you summoned the new minion into the demon's space.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn), you can transform up to two of your demon minions within your Summoner's Range. A demon can transform into a different demon minion within your Summoner's Range, maintaining their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Starting from [round](scc:mcdm.heroes.v1/rule.combat/combat-round) 2, a demon can transform any demon minion you can call forth for half the essence cost, as if you summoned the new minion into the demon's space.
 
 The minions must be reassigned to a new squad if their new name differs from the other squad members.
 
 <!-- @type: feature | @id: celestial-grace | @level: 8 -->
 #### Celestial Grace
 
-Your number of Recoveries further increases by 2.
+Your number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) further increases by 2.
 
-Additionally, the area affected by your Pixie Dust feature and any of your fey minions' traits that affect adjacent creatures and/or the area within 1 or more squares of them increase that distance by 1 square.
+Additionally, the area affected by your [Pixie Dust](scc:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) feature and any of your fey minions' traits that affect [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creatures and/or the area within 1 or more squares of them increase that distance by 1 square.
 
 <!-- @type: feature | @id: control-the-elements | @level: 8 -->
 #### Control the Elements
@@ -2698,9 +2698,9 @@ Whenever you use Call Forth, you can spend essence to change the size of one ele
 <!-- @type: feature | @id: kill-the-pain | @level: 8 -->
 #### Kill the Pain
 
-You aren't affected by excess damage after all minions in a squad are dead.
+You aren't affected by excess [damage](scc:mcdm.heroes.v1/rule.damage/damage) after all minions in a squad are dead.
 
-Additionally, you and each of your undead minions ignore damage rolled as a d3 or a d6 and damage from environmental effects while you are not winded.
+Additionally, you and each of your undead minions ignore [damage](scc:mcdm.heroes.v1/rule.damage/damage) rolled as a d3 or a d6 and [damage](scc:mcdm.heroes.v1/rule.damage/damage) from environmental effects while you are not [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
 <!-- @type: feature | @id: portfolio-champion | @level: 8 -->
 #### Portfolio Champion
@@ -2709,16 +2709,16 @@ Your circle now allows you to add a champion to your portfolio. Champions follow
 
 - You can only summon and command one instance of your champion.
 - Your champion is in their own squad that does not count toward your maximum number of squads.
-- Your champion can regain Stamina and gain temporary Stamina.
-- Your champion uses your Recoveries to regain Stamina.
-- Your champion can take the Heal and Defend Actions.
+- Your champion can regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
+- Your champion uses your [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+- Your champion can take the [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/heal) and [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend) Actions.
 - Your champion uses the normal rules for maneuvers.
-- You have an edge whenever you use an ability with the Champion keyword from your Champion's space.
+- You have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) whenever you use an ability with the Champion keyword from your Champion's space.
 - Your champion refuses to be referred to as a minion.
 
-After summoning a champion, you can't summon them again until you earn a Victory.
+After summoning a champion, you can't summon them again until you earn a [Victory](scc:mcdm.heroes.v1/rule.resource/victories).
 
-Your champion gains additional features at 10th level. This includes a special Champion Action ability that costs eidos to use (see Eidos). This ability can be activated once per encounter at the end of any other creature's turn.
+Your champion gains additional features at 10th level. This includes a special Champion Action ability that costs eidos to use (see [Eidos](scc:mcdm.summoner.v1/feature.summoner.level-10/eidos)). This ability can be activated once per encounter at the end of any other creature's [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: monster-group | @domain: champion | @category: demon -->
 ##### Demon Portfolio Champion
@@ -2738,41 +2738,41 @@ The demon lord's Aspect enjoys bringing enemies in close with their appendages o
 
 Stamina: Your maximum Stamina
 
-> 🏹 **Grasping Appendages 2d10 + 5 (Signature Ability)**
+> 🏹 **Grasping Appendages 2d10 + 5 ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** | **Main action** |
 > |---------------------------|----------------:|
 > | **📏 Melee 5** | **🎯 Two creatures or objects** |
 >
-> 9 corruption damage; pull 2
+> 9 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
-> 12 corruption damage; pull 4
+> 12 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> 14 corruption damage; pull 5
+> 14 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); [pull](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** A target pulled adjacent to the Aspect is grabbed.
+> **Effect:** A target [pulled](scc:mcdm.heroes.v1/movement/forced-movement) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the Aspect is [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 > ⭐️ **Warping Strike**
 >
-> The Aspect's free strikes teleport the target 5 squares.
+> The Aspect's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) [teleport](scc:mcdm.heroes.v1/movement/teleport) the target 5 squares.
 
 > ⭐️ **Champion's Ire**
 >
-> If the Aspect only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+> If the Aspect only targets one creature or object with a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they deal additional [damage](scc:mcdm.heroes.v1/rule.damage/damage) to the target equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ❗️ **I Like Your Taste**
 >
-> | **—** | **Free triggered action** |
+> | **—** | **[Free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Trigger:** The Aspect takes damage from an enemy.
+> **Trigger:** The Aspect takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) from an enemy.
 >
-> **Effect:** The Aspect has a double edge on their next power roll. They can choose to give this benefit to an ally within your Summoner's Range instead.
+> **Effect:** The Aspect has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). They can choose to give this benefit to an ally within your Summoner's Range instead.
 
 > ⭐️ **Frenzy**
 >
-> When the Aspect is reduced to 0 Stamina, they make a free strike against each adjacent enemy before dying.
+> When the Aspect is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy before [dying](scc:mcdm.heroes.v1/rule.health/dying).
 
 > **Level 10 Champion Advancement Feature**
 >
@@ -2788,7 +2788,7 @@ Stamina: Your maximum Stamina
 >
 > **Champion Action**
 >
-> **Effect:** Each target teleports up to their speed and makes a free strike. If a target has a Save Ends condition, they can inflict the condition onto a creature with their strike and end the condition on themself.
+> **Effect:** Each target [teleports](scc:mcdm.heroes.v1/movement/teleport) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) and makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If a target has a [Save Ends](scc:mcdm.heroes.v1/rule.general/saving-throw) [condition](scc:mcdm.heroes.v1/rule.combat/condition), they can inflict the [condition](scc:mcdm.heroes.v1/rule.combat/condition) onto a creature with their [strike](scc:mcdm.heroes.v1/rule.combat/strike) and end the [condition](scc:mcdm.heroes.v1/rule.combat/condition) on themself.
 
 <!-- @type: monster-group | @domain: champion | @category: elemental -->
 ##### Elemental Portfolio Champion
@@ -2810,35 +2810,35 @@ Stamina: Your maximum Stamina
 
 > ⭐️ **Affinity**
 >
-> The Portent selects an affinity for one of the following damage types when they are summoned: acid, cold, corruption, fire, lightning, or poison. This type determines the Portent's affinity immunity and the damage type of their abilities.
+> The Portent selects an affinity for one of the following [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type) when they are summoned: acid, cold, corruption, fire, lightning, or poison. This type determines the Portent's affinity [immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of their abilities.
 
-> 🏹 **Elemental Tail Swing 2d10 + 5 (Signature Ability)**
+> 🏹 **Elemental Tail Swing 2d10 + 5 ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** | **Main action** |
 > |-----------------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 Two creatures or objects** |
 >
-> 9 affinity damage; push 2
+> 9 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
-> 12 affinity damage; push 4
+> 12 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> 14 affinity damage; push 6
+> 14 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 6
 
 > ⭐️ **Sealing Strike**
 >
-> The Portent's free strikes inflict M < STRONG slowed (save ends). While slowed this way, the target takes 1d6 affinity damage at the start of each of their turns.
+> The Portent's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < STRONG [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw)). While [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, the target takes 1d6 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage) at the start of each of their [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 > ⭐️ **Champion's Ire**
 >
-> If the Portent only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+> If the Portent only targets one creature or object with a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they deal additional [damage](scc:mcdm.heroes.v1/rule.damage/damage) to the target equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ⭐️ **Searing Wyrmscale**
 >
-> Whenever an adjacent creature deals damage to the Portent, they take 4 affinity damage.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to the Portent, they take 4 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
 > ⭐️ **Dragon Heart**
 >
-> Once per turn, the Portent can take 10 damage to allow you or an ally within your Summoner's Range to gain 1 heroic resource. This damage can't be reduced in any way.
+> Once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), the Portent can take 10 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to allow you or an ally within your Summoner's Range to gain 1 [heroic resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). This [damage](scc:mcdm.heroes.v1/rule.damage/damage) can't be reduced in any way.
 
 > **Level 10 Champion Advancement Feature**
 >
@@ -2854,7 +2854,7 @@ Stamina: Your maximum Stamina
 >
 > **Champion Action**
 >
-> **Effect:** 9 affinity damage. The damage ignores immunity. The affected area becomes difficult terrain. An enemy has affinity weakness 5 while occupying an affected square.
+> **Effect:** 9 affinity [damage](scc:mcdm.heroes.v1/rule.damage/damage). The [damage](scc:mcdm.heroes.v1/rule.damage/damage) ignores [immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity). The affected area becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). An enemy has affinity [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 while occupying an affected square.
 
 <!-- @type: monster-group | @domain: champion | @category: fey -->
 ##### Fey Portfolio Champion
@@ -2874,41 +2874,41 @@ The celestial Attendant wants to swarm the map with pixies while limiting their 
 
 Stamina: Your maximum Stamina
 
-> 🏹 **Pixie Swarm 2d10 + 5 (Signature Ability)**
+> 🏹 **Pixie Swarm 2d10 + 5 ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** | **Main action** |
 > |---------------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 Two creatures or objects** |
 >
-> 9 damage; slide 3
+> 9 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> 12 damage; slide 5
+> 12 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> 14 damage; slide 6
+> 14 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [slide](scc:mcdm.heroes.v1/movement/forced-movement) 6
 >
-> **Effect:** An ally targeted by this ability can, instead, spend Recovery and shift the slide amount.
+> **Effect:** An ally targeted by this ability can, instead, spend Recovery and [shift](scc:mcdm.heroes.v1/movement/shifting) the slide amount.
 
 > ⭐️ **Neurotoxic Strike**
 >
-> A creature that takes damage from the Attendant's free strike is I < AVERAGE unable to establish line of effect beyond 3 squares (EoT).
+> A creature that takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) from the Attendant's [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) is I < AVERAGE unable to establish [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) beyond 3 squares ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 > ⭐️ **Champion's Ire**
 >
-> If the Attendant only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+> If the Attendant only targets one creature or object with a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they deal additional [damage](scc:mcdm.heroes.v1/rule.damage/damage) to the target equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ❗️ **Celestial Bell**
 >
-> | **—** | **Free triggered action** |
+> | **—** | **[Free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------|---------------------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Trigger:** The Attendant takes damage from an enemy.
+> **Trigger:** The Attendant takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) from an enemy.
 >
-> **Effect:** The Attendant rings a bell, and you summon a signature minion into an unoccupied space adjacent to the Attendant.
+> **Effect:** The Attendant rings a bell, and you summon a signature minion into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the Attendant.
 
 > ⭐️ **Pixie Bouquet**
 >
-> The Attendant starts their turn with temporary Stamina equal to 2 × the number of fey minions within 1 square of them. This temporary Stamina lasts until the start of their next turn.
+> The Attendant starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) with [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to 2 × the number of fey minions within 1 square of them. This [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) lasts until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 > **Level 10 Champion Advancement Feature**
 >
@@ -2924,7 +2924,7 @@ Stamina: Your maximum Stamina
 >
 > **Champion Action**
 >
-> **Effect:** Each target gains 20 temporary Stamina and receives the benefits of one of your Flash Powder effects until the end of their next turn.
+> **Effect:** Each target gains 20 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and receives the benefits of one of your [Flash Powder](scc:mcdm.summoner.v1/feature.summoner.level-5/flash-powder) effects until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: monster-group | @domain: champion | @category: undead -->
 ##### Undead Portfolio Champion
@@ -2944,41 +2944,41 @@ The Avatar of death weighs down their foes with conditions so their army can tak
 
 Stamina: Your maximum Stamina
 
-> 🏹 **Culling Scythe 2d10 + 5 (Signature Ability)**
+> 🏹 **Culling Scythe 2d10 + 5 ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** | **Main action** |
 > |---------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 Two creatures or objects** |
 >
-> 9 corruption damage; M < WEAK bleeding (save ends)
+> 9 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
 >
-> 12 corruption damage; M < AVERAGE bleeding (save ends)
+> 12 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < AVERAGE [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
 >
-> 14 corruption damage; M < STRONG bleeding (save ends)
+> 14 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw))
 >
-> **Effect:** If the target is a creature that isn't a leader or a solo and they are still bleeding at the end of the encounter, they instantly die.
+> **Effect:** If the target is a creature that isn't a leader or a solo and they are still [bleeding](scc:mcdm.heroes.v1/condition/bleeding) at the end of the encounter, they instantly die.
 
 > ⭐️ **Revelation Strike**
 >
-> The Avatar's melee free strikes P < WEAK instantly reduce a winded non-leader or solo creature to 0 Stamina, including targets winded by the strike.
+> The Avatar's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) P < WEAK instantly reduce a [winded](scc:mcdm.heroes.v1/rule.health/winded) non-leader or solo creature to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), including targets [winded](scc:mcdm.heroes.v1/rule.health/winded) by the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Champion's Ire**
 >
-> If the Avatar only targets one creature or object with a strike, they deal additional damage to the target equal to your Reason.
+> If the Avatar only targets one creature or object with a [strike](scc:mcdm.heroes.v1/rule.combat/strike), they deal additional [damage](scc:mcdm.heroes.v1/rule.damage/damage) to the target equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ❗️ **Dust and Rot**
 >
-> | **Area** | **Free triggered action** |
+> | **Area** | **[Free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |----------|---------------------------:|
 > | **📏 1 burst** | **🎯 Each enemy in the burst** |
 >
-> **Trigger:** The Avatar takes damage.
+> **Trigger:** The Avatar takes [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 >
-> **Effect:** M < AVERAGE weakened (EoT).
+> **Effect:** M < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 > ⭐️ **Drifting Spirit**
 >
-> The Avatar is unaffected by difficult terrain and damage from forced movement.
+> The Avatar is unaffected by [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and [damage](scc:mcdm.heroes.v1/rule.damage/damage) from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
 
 > **Level 10 Champion Advancement Feature**
 >
@@ -2994,32 +2994,32 @@ Stamina: Your maximum Stamina
 >
 > **Champion Action**
 >
-> **Effect:** 9 holy damage. Each target is vertically pulled a number of squares equal to their size straight down, ignoring stability. If the target would be force moved into the ground, they are buried beneath the ground instead.
+> **Effect:** 9 holy [damage](scc:mcdm.heroes.v1/rule.damage/damage). Each target is vertically [pulled](scc:mcdm.heroes.v1/movement/forced-movement) a number of squares equal to their [size](scc:mcdm.heroes.v1/rule.character/size) straight down, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability). If the target would be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into the ground, they are buried beneath the ground instead.
 
 <!-- @type: feature | @id: 9th-level-features | @level: 9 -->
 ### 9th-Level Features
 
-As a 9th-level summoner, you gain the following features.
+As a 9th-level [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: kit-improvement | @level: 9 -->
 #### Kit Improvement
 
 You've conjured your kit into its ultimate form. You have the following benefits:
 
-- The potency of your Summoner Strike ability increases to R < STRONG.
-- You can choose one additional ward from your Summoner's Kit.
-- You have a double edge on tests made to dissuade or scare enemy minions or lackeys.
+- The [potency](scc:mcdm.heroes.v1/rule.character/potency) of your [Summoner Strike](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/summoner-strike) ability increases to R < STRONG.
+- You can choose one additional ward from your [Summoner's Kit](scc:mcdm.summoner.v1/feature.summoner.level-3/summoners-kit).
+- You have a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to dissuade or scare enemy minions or lackeys.
 - Your clothing and equipment become adorned with distinct and elaborate regalia to make you stand out from your army, like massive rib cage pauldrons, a tooth crested helmet, or a billowing mantle of fire.
 
 <!-- @type: feature | @id: steward-of-two-worlds | @level: 9 -->
 #### Steward of Two Worlds
 
-You and your allies are now welcome in your circle's source manifold. Negotiations with native denizens of your circle's source manifold have their patience increased by 2.
+You and your allies are now welcome in your circle's source manifold. Negotiations with native denizens of your circle's source manifold have their [patience](scc:mcdm.heroes.v1/rule.negotiation/patience) increased by 2.
 
 <!-- @type: feature | @id: 11-essence-ability | @level: 9 -->
 #### 11-Essence Ability
 
-Choose one heroic ability from the following options, each of which costs 11 essence to use.
+Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from the following options, each of which costs 11 essence to use.
 
 <!-- @type: ability | @id: 10000-minions | @level: 9 -->
 ##### 10,000 Minions (11 Essence)
@@ -3030,9 +3030,9 @@ Choose one heroic ability from the following options, each of which costs 11 ess
 |-----------|----------------:|
 | **📏 Special** | **🎯 Special** |
 
-**Effect:** Until the end of the encounter or you are dying, each square on the ground is considered teeming with minions. An enemy that ends their turn in an affected square takes 5 damage. This damage can't be reduced.
+**Effect:** Until the end of the encounter or you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each square on the ground is considered teeming with minions. An enemy that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in an affected square takes 5 [damage](scc:mcdm.heroes.v1/rule.damage/damage). This [damage](scc:mcdm.heroes.v1/rule.damage/damage) can't be reduced.
 
-Additionally, you can use Minion Bridge treating each affected square as an eligible minion (up to a maximum of 10 additional squares).
+Additionally, you can use [Minion Bridge](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/minion-bridge) treating each affected square as an eligible minion (up to a maximum of 10 additional squares).
 
 <!-- @type: ability | @id: bodyguard-tactics | @level: 9 -->
 ##### Bodyguard Tactics (11 Essence)
@@ -3043,7 +3043,7 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 |-----------------|----------------:|
 | **📏 5 burst** | **🎯 Self and each non-minion ally in the area** |
 
-**Effect:** Until the end of the encounter or you are dying, each target has damage immunity 5 and can use a free triggered action once per turn whenever they are force moved to reduce the distance by half.
+**Effect:** Until the end of the encounter or you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each target has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 and can use a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) once per [turn](scc:mcdm.heroes.v1/rule.combat/turn) whenever they are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) to reduce the distance by half.
 
 <!-- @type: ability | @id: i-abjure-thee | @level: 9 -->
 ##### I Abjure Thee (11 Essence)
@@ -3054,9 +3054,9 @@ Additionally, you can use Minion Bridge treating each affected square as an elig
 |-----------------|----------------:|
 | **📏 3 burst** | **🎯 Special** |
 
-**Effect:** Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 round.
+**Effect:** Each enemy minion in the area is permanently removed from the encounter map. Up to three non-leader or non-solo enemies in the area are removed from the encounter for 1 [round](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
-A leader or a solo enemy in the area that has R, I, or P < AVERAGE is weakened and slowed (save ends) as they are partially removed from the manifold. You can increase the potency by 1 for each of your minions adjacent to the target you choose to sacrifice as a part of using this ability.
+A leader or a solo enemy in the area that has R, I, or P < AVERAGE is [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save ends](scc:mcdm.heroes.v1/rule.general/saving-throw)) as they are partially removed from the manifold. You can increase the [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1 for each of your minions [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target you choose to sacrifice as a part of using this ability.
 
 <!-- @type: ability | @id: the-champions-wrath | @level: 9 -->
 ##### The Champion's Wrath (11 Essence)
@@ -3067,32 +3067,32 @@ A leader or a solo enemy in the area that has R, I, or P < AVERAGE is weakened a
 |-----------------------------------|----------------:|
 | **📏 4 burst** | **🎯 Each enemy in the area** |
 
-**Power Roll + Reason:**
+**[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 
-- **≤11:** 6 damage; push 4 M < WEAK push is vertical
-- **12-16:** 10 damage; push 5 M < AVERAGE push is vertical
-- **17+:** 14 damage; push 6 M < STRONG push is vertical
+- **≤11:** 6 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 4 M < WEAK push is vertical
+- **12-16:** 10 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 5 M < AVERAGE push is vertical
+- **17+:** 14 [damage](scc:mcdm.heroes.v1/rule.damage/damage); [push](scc:mcdm.heroes.v1/movement/forced-movement) 6 M < STRONG push is vertical
 
 **Effect:** You can use this ability as if in the space of one of your minions within your Summoner's Range.
 
-You can change the damage type to be a type that your champion deals on their stat block (see Portfolio Champion). For each enemy reduced to 0 Stamina by this ability, an ally within distance can move up to their speed.
+You can change the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) to be a type that your champion deals on their stat block (see [Portfolio Champion](scc:mcdm.summoner.v1/feature.summoner.level-8/portfolio-champion)). For each enemy reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this ability, an ally within [distance](scc:mcdm.heroes.v1/rule.combat/distance) can move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed).
 
 <!-- @type: feature | @id: 10th-level-features | @level: 10 -->
 ### 10th-Level Features
 
-As a 10th-level summoner, you gain the following features.
+As a 10th-level [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: characteristic-increase | @level: 10 -->
 #### Characteristic Increase
 
-Your Reason score becomes 5. Additionally, you can increase one of your characteristic scores by 1, to a maximum score of 5.
+Your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score becomes 5. Additionally, you can increase one of your [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) scores by 1, to a maximum score of 5.
 
 <!-- @type: feature | @id: minion-improvement | @level: 10 -->
 #### Minion Improvement
 
-You now start encounters and round-tracked situations by summoning up to two additional minions for every two Victories you have (in addition to the two you normally summon).
+You now start encounters and round-tracked situations by summoning up to two additional minions for every two [Victories](scc:mcdm.heroes.v1/rule.resource/victories) you have (in addition to the two you normally summon).
 
-Each of your minions' Stamina improves as shown on the 10th-Level Minion Stamina Increase table. Additionally, each minion that receives a Stamina boost can treat their characteristics as one higher for the purposes of resisting potencies (to a maximum value of 5).
+Each of your minions' [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) improves as shown on the 10th-Level Minion Stamina Increase table. Additionally, each minion that receives a [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) boost can treat their [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) as one higher for the purposes of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) (to a maximum value of 5).
 
 ###### 10th-Level Minion Stamina Increase
 
@@ -3106,26 +3106,26 @@ Each of your minions' Stamina improves as shown on the 10th-Level Minion Stamina
 <!-- @type: feature | @id: eidos | @level: 10 -->
 #### Eidos
 
-You gain an epic resource called eidos. When you take a respite, you gain eidos equal to the XP you gain. You can spend eidos as if it were essence on minions and abilities you have. When you do, you summon up to two bonus signature minions into unoccupied spaces within your Summoner's Range.
+You gain an epic resource called eidos. When you take a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you gain eidos equal to the [XP](scc:mcdm.heroes.v1/rule.resource/experience) you gain. You can spend eidos as if it were essence on minions and abilities you have. When you do, you summon up to two bonus signature minions into unoccupied spaces within your Summoner's Range.
 
-You and your champion also have access to abilities that can be used by spending eidos (see Their Life for Mine and Portfolio Champion).
+You and your champion also have access to abilities that can be used by spending eidos (see [Their Life for Mine](scc:mcdm.summoner.v1/feature.summoner.level-7/their-life-for-mine) and [Portfolio Champion](scc:mcdm.summoner.v1/feature.summoner.level-8/portfolio-champion)).
 
 Eidos remains until you spend it.
 
 <!-- @type: feature | @id: no-matter-the-cost | @level: 10 -->
 #### No Matter the Cost
 
-Whenever you sacrifice minions, you now reduce the cost of a heroic ability or minion by the same amount (to a minimum of 1) instead of only reducing the cost by 1.
+Whenever you sacrifice minions, you now reduce the cost of a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) or minion by the same amount (to a minimum of 1) instead of only reducing the cost by 1.
 
 <!-- @type: feature | @id: among-our-ranks | @level: 10 -->
 #### Among Our Ranks
 
-As a respite activity, you summon a willing and not-restrained NPC or player ally to join your party, regardless of distance or manifold. The target stays until the start of your next respite or until they are killed, in which they are immediately dismissed to the place from which they were summoned. You can't have more than one character summoned in this way.
+As a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity, you summon a willing and not-[restrained](scc:mcdm.heroes.v1/condition/restrained) [NPC](scc:mcdm.heroes.v1/rule.general/npc) or player ally to join your party, regardless of [distance](scc:mcdm.heroes.v1/rule.combat/distance) or manifold. The target stays until the start of your next [respite](scc:mcdm.heroes.v1/rule.resource/respite) or until they are killed, in which they are immediately dismissed to the place from which they were summoned. You can't have more than one character summoned in this way.
 
 <!-- @type: feature | @id: perk | @level: 10 -->
 #### Perk
 
-You gain an intrigue, interpersonal, or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
+You gain an [intrigue](scc:mcdm.heroes.v1/skill.group/intrigue), [interpersonal](scc:mcdm.heroes.v1/skill.group/interpersonal), or supernatural perk of your choice. See Perks in Draw Steel: Heroes for more information.
 
 <!-- @type: feature | @id: skill | @level: 10 -->
 #### Skill
