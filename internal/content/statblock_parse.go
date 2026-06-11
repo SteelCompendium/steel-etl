@@ -27,7 +27,10 @@ var (
 	levelRe = regexp.MustCompile(`Level\s+(\d+)`)
 	evRe    = regexp.MustCompile(`EV\s+([0-9A-Za-z+ /x-]+)`)
 
-	// mdLinkRe matches a markdown link; linkDisplay returns the display text only.
+	// mdLinkRe matches any markdown link: [display](url). This is the
+	// protocol-agnostic variant; the scc-protocol-specific form lives in
+	// internal/scc/resolver.go (also named mdLinkRe). Keep both in sync if the
+	// link syntax ever changes (escaped chars, nested parens, etc.).
 	mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\([^)]*\)`)
 )
 

@@ -32,6 +32,10 @@ const (
 //
 //	[Gouge](scc:mcdm.heroes.v1/feature.ability.fury.level-1/gouge)
 //	[Gouge](scc.v1:mcdm.heroes.v1/feature.ability.fury.level-1/gouge#json)
+//
+// This is the scc-protocol-specific matcher. A protocol-agnostic variant (also
+// named mdLinkRe) lives in internal/content/statblock_parse.go; keep both in
+// sync if the markdown-link syntax ever changes.
 var mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\(scc(\.v\d+)?:([a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+/[a-zA-Z0-9._\-]+)(#[a-z][a-z0-9\-]*)?\)`)
 
 // Resolver resolves SCC codes to relative file paths.
