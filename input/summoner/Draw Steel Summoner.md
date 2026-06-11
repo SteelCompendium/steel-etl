@@ -394,17 +394,17 @@ As a [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following fea
 <!-- @type: feature | @id: summoner-circle | @level: 1 -->
 ### Summoner Circle
 
-You've learned the art of summoning from a member of a loose network of summoners called a circle. Each circle specializes in a distinct portfolio of creatures you can call into existence. Choose a summoner circle from the following options, each of which grants you a communication feature (*Quick Build:* Circle of Graves.)
+You've learned the art of summoning from a member of a loose network of summoners called a circle. Each circle specializes in a distinct [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) of creatures you can call into existence. Choose a summoner circle from the following options, each of which grants you a communication feature (*Quick Build:* Circle of Graves.)
 
-**Circle of Blight:** You are a demonologist who calls forth demons from the Abyssal Waste. Your portfolio includes shapechanging demons that grow in hunger and power over time. You can communicate with creatures that have the Abyssal keyword even if you don't share a language.
+**Circle of Blight:** You are a demonologist who calls forth demons from the Abyssal Waste. Your [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) includes shapechanging demons that grow in hunger and power over time. You can communicate with creatures that have the Abyssal keyword even if you don't share a language.
 
 **Circle of Graves:** You are a necromancer who raises undead creatures from the Necropolitan Ruin. The corporeal and incorporeal creatures under your command are hardy and many. You can communicate with creatures that have the Undead keyword even if you don't share a language.
 
-**Circle of Spring:** You are a feybright who beckons pixies, nixies, and sprites from Arcadia. Your portfolio features ephemeral fey spirits surrounded by weird and powerful magic. You can communicate with creatures that have the Fey keyword even if you don't share a language.
+**Circle of Spring:** You are a feybright who beckons pixies, nixies, and sprites from Arcadia. Your [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) features ephemeral fey spirits surrounded by weird and powerful magic. You can communicate with creatures that have the Fey keyword even if you don't share a language.
 
-**Circle of Storms:** You are a storm caster who summons elementals from Quintessence. This portfolio contains forces of nature that leave a big impact on the environment. You can communicate with creatures that have the Elemental keyword even if you don't share a language.
+**Circle of Storms:** You are a storm caster who summons elementals from Quintessence. This [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) contains forces of nature that leave a big impact on the environment. You can communicate with creatures that have the Elemental keyword even if you don't share a language.
 
-Your choice of circle decides the portfolio from which you summon minions, as well as many of the features you'll gain from this class. Your circle is your [subclass](scc:mcdm.heroes.v1/rule.general/subclass).
+Your choice of circle decides the [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) from which you summon minions, as well as many of the features you'll gain from this class. Your circle is your [subclass](scc:mcdm.heroes.v1/rule.general/subclass).
 
 <!-- @type: feature | @id: minions | @level: 1 -->
 ### Minions
@@ -556,9 +556,9 @@ You have the following ability.
 |-------------------------|----------------:|
 | **📏 Summoner's Range** |     **🎯 Self** |
 
-**Effect:** You summon one or more minions from your portfolio into unoccupied spaces within distance. Choose one of the following options:
+**Effect:** You summon one or more minions from your [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) into unoccupied spaces within distance. Choose one of the following options:
 
-**Signature Minions:** You summon one signature minion for each essence you spend on this ability.
+**Signature Minions:** You summon one [signature minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) for each essence you spend on this ability.
 
 **All Other Minions:** You summon the set number of minions listed on the stat block for their essence cost.
 
@@ -591,10 +591,10 @@ Your circle grants you features as shown on the 1st-Level Summoner Circle Featur
 
 | Circle | Feature |
 |--------|---------|
-| Blight | Death Snap, Soulsense |
-| Graves | Dead Men Tell All Tales, Rise! |
-| Spring | Fairy Whispers, Pixie Dust |
-| Storms | Elemental Affinity, Heart of Nature |
+| Blight | [Death Snap](scc:mcdm.summoner.v1/feature.summoner.level-1/death-snap), [Soulsense](scc:mcdm.summoner.v1/feature.summoner.level-1/soulsense) |
+| Graves | [Dead Men Tell All Tales](scc:mcdm.summoner.v1/feature.summoner.level-1/dead-men-tell-all-tales), [Rise!](scc:mcdm.summoner.v1/feature.summoner.level-1/rise) |
+| Spring | [Fairy Whispers](scc:mcdm.summoner.v1/feature.summoner.level-1/fairy-whispers), [Pixie Dust](scc:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) |
+| Storms | [Elemental Affinity](scc:mcdm.summoner.v1/feature.summoner.level-1/elemental-affinity), [Heart of Nature](scc:mcdm.summoner.v1/feature.summoner.level-1/heart-of-nature) |
 
 <!-- @type: feature | @id: dead-men-tell-all-tales | @level: 1 -->
 #### Dead Men Tell All Tales
@@ -658,7 +658,7 @@ You've practiced a specific formation for your minions. Choose one of the follow
 <!-- @type: feature | @id: horde-formation | @level: 1 -->
 #### Horde Formation
 
-Your maximum number of minions increases by 4 and you summon up to four of your signature minions at the start of each of your turns instead of three.
+Your maximum number of minions increases by 4 and you summon up to four of your [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) at the start of each of your turns instead of three.
 
 <!-- @type: feature | @id: platoon-formation | @level: 1 -->
 #### Platoon Formation
@@ -787,7 +787,7 @@ Your portfolio comprises the minions you've learned to summon. Each summoner cir
 <!-- @type: monster-group | @domain: minion | @category: demon -->
 ##### Demon Portfolio Signature Minion
 
-Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions). Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
 
 <!-- @type: statblock -->
 ####### Ensnarer
@@ -922,7 +922,7 @@ The bengrul is an undulating heap of glass and flesh. They shatter pieces of the
 <!-- @type: monster-group | @domain: minion | @category: elemental -->
 ##### Elemental Portfolio Signature Minion
 
-You gain the elemental mote and can choose one of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+You gain the elemental mote and can choose one of the following [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions). Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
 
 <!-- @type: statblock -->
 ####### Elemental Mote
@@ -941,9 +941,9 @@ This near-pure form of autonomous essence just barely maintains their form. They
 
 > ⭐️ **Catalyst**
 >
-> Once per turn, the mote can transform into an adjacent allied signature minion, maintaining their current Stamina. The minion must be reassigned to a new squad if their new name differs from the other squad members.
+> Once per turn, the mote can transform into an adjacent allied [signature minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions), maintaining their current Stamina. The minion must be reassigned to a new squad if their new name differs from the other squad members.
 >
-> Alternatively, you can spend 1 essence to transform the mote into any signature minion in the elemental portfolio you don't have, as if you summoned the new minion into the mote's space.
+> Alternatively, you can spend 1 essence to transform the mote into any [signature minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) in the elemental portfolio you don't have, as if you summoned the new minion into the mote's space.
 
 <!-- @type: statblock -->
 ####### Brisk Gale
@@ -1085,7 +1085,7 @@ The desolations have vaguely humanoid sand forms with no legs. Their glass hose 
 <!-- @type: monster-group | @domain: minion | @category: fey -->
 ##### Fey Portfolio Signature Minion
 
-Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
+Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions). Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost.
 
 <!-- @type: statblock -->
 ####### Nixie Soakreed
@@ -1231,7 +1231,7 @@ The orchiguard is a sprite surrounded by a wheel of shields. They are usually cr
 <!-- @type: monster-group | @domain: minion | @category: undead -->
 ##### Undead Portfolio Signature Minion
 
-Select two of the following signature minions. Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost. (Quick Build: Skeleton, Husk.)
+Select two of the following [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions). Signature minions are summoned at the start of combat and at the start of your turn for free. You can also use Call Forth to summon any number of signature minions for their essence cost. (Quick Build: Skeleton, Husk.)
 
 <!-- @type: statblock -->
 ####### Husk
@@ -1397,9 +1397,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 
 **Power Roll + Reason:**
 
-- **≤11:** You summon four signature minions.
-- **12-16:** You summon five signature minions.
-- **17+:** You summon six signature minions.
+- **≤11:** You summon four [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions).
+- **12-16:** You summon five [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions).
+- **17+:** You summon six [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions).
 
 **Effect:** The [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) are summoned within distance regardless of your minion maximum and without organizing them into squads. Each newly summoned [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) immediately moves up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) toward a creature or object.
 
@@ -3482,7 +3482,7 @@ The following titles were designed for [summoners](scc:mcdm.summoner.v1/class/su
 
 **Effect:** Choose a signature minion from a [summoner's](scc:mcdm.summoner.v1/class/summoner) [portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) that shares a keyword with one of the creatures the summoner could summon. You can summon three of that minion into a single squad (up to a maximum of four creatures) at the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) in combat. The [distance](scc:mcdm.heroes.v1/rule.combat/distance) you can command them is equal to your ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) [distance](scc:mcdm.heroes.v1/rule.combat/distance). You also gain the [Strike for Me](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/strike-for-me) [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), which now has the Psionic keyword and loses the Magic keyword.
 
-Additionally, you can summon up to two of your signature minion while outside of combat to do simple tasks.
+Additionally, you can summon up to two of your [signature minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) while outside of combat to do simple tasks.
 
 <!-- @type: feature-group | @id: 3-echelon-titles -->
 ### 3rd-Echelon Title
@@ -3556,7 +3556,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 
 > ⭐️ **Demon Summoner**
 >
-> The detective can command up to two squads of minions with a maximum of 4 minions per squad. They can only have one squad of signature minions active at any time.
+> The detective can command up to two squads of minions with a maximum of 4 minions per squad. They can only have one squad of [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) active at any time.
 >
 > At the start of each of the detective's turns, up to three **razors** appear in unoccupied spaces within 5 squares of the detective. On each of the detective's turns, they direct the squad of razors to move and use a main action.
 
@@ -3723,7 +3723,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Undead Summoner**
 >
-> The summoner can command up to two squads of minions with a maximum of 4 minions per squad. They can only have one squad of signature minions active at any time.
+> The summoner can command up to two squads of minions with a maximum of 4 minions per squad. They can only have one squad of [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) active at any time.
 >
 > At the start of each of the summoner's turns, up to three **skeletons** appear in unoccupied spaces within 5 squares of the summoner. On each of the summoner's turns, they direct the squad of skeletons to move and use a main action.
 
@@ -3834,7 +3834,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Undead Summoner**
 >
-> The summoner can command up to two squads of minions with a maximum of 6 minions per squad. They can only have one squad of signature minions active at any time.
+> The summoner can command up to two squads of minions with a maximum of 6 minions per squad. They can only have one squad of [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) active at any time.
 >
 > At the start of each of the summoner's turns, up to three **skeletons** appear in unoccupied spaces within 5 squares of the summoner. On each of the summoner's turns, they direct the squad of skeletons to move and use a main action.
 
@@ -3949,7 +3949,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Undead Summoner**
 >
-> The summoner can command up to two squads of minions with a maximum of 8 minions per squad. They can only have one squad of signature minions active at any time.
+> The summoner can command up to two squads of minions with a maximum of 8 minions per squad. They can only have one squad of [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) active at any time.
 >
 > At the start of each of the summoner's turns, up to four **skeletons** appear in unoccupied spaces within 5 squares of the summoner. On each of the summoner's turns, they direct the squad of skeletons to move and use a main action.
 
@@ -4071,7 +4071,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 
 > ⭐️ **Undead Summoner**
 >
-> The summoner can command up to two squads of minions with a maximum of 8 minions per squad. They can only have one squad of signature minions active at any time.
+> The summoner can command up to two squads of minions with a maximum of 8 minions per squad. They can only have one squad of [signature minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) active at any time.
 >
 > At the start of each of the summoner's turns, up to four **skeletons** appear in unoccupied spaces within 5 squares of the summoner. On each of the summoner's turns, they direct the squad of skeletons to move and use a main action.
 
