@@ -14,7 +14,7 @@ Deliberately hidden by those who master it.
 
 In principle, summoning should be no more difficult to learn than
 elementalism, since the two disciplines both manipulate essence.
-In practice, there is obviously some difference, as elementalists are
+In practice, there is obviously some difference, as [elementalists](scc:mcdm.heroes.v1/class/elementalist) are
 relatively common, while summoners are vanishingly rare.
 
 While there are known incidents of summoners who learned their craft
@@ -45,8 +45,8 @@ argument exists to defend those who summon the armies of that
 wasted land.
 
 Finally, the Circle of Spring—celebrated and benign, lauded in folklore
-and often mistaken for elementalists—call forth fey animations from
-Arcadia, the home of Val, god of the elves.
+and often mistaken for [elementalists](scc:mcdm.heroes.v1/class/elementalist)—call forth fey animations from
+Arcadia, the home of [Val](scc:mcdm.heroes.v1/god/val), god of the elves.
 
 There are rumors of another organization of summoners, though
 whether it exists and, if it exists, what it calls itself is not well-known.
