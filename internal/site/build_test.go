@@ -686,7 +686,7 @@ func TestNaturalLess(t *testing.T) {
 
 func TestRewriteSectionLinks(t *testing.T) {
 	sections := []SectionConfig{
-		{Name: "Browse", Include: []string{"class/", "feature/", "condition/", "ancestry/", "kit/"}},
+		{Name: "Browse", Include: []string{"class/", "feature/", "condition/", "ancestry/", "kit/", "skill/", "champion/"}},
 		{Name: "Read", Include: []string{"chapter/"}},
 	}
 
@@ -770,11 +770,31 @@ func TestRewriteSectionLinks(t *testing.T) {
 			sectionName: "Browse",
 			want:        "See [Classes](../../../../Read/chapter/classes.md).",
 		},
+		{
+			// A skill-group landing page is relocated to skill/<member>/index.md,
+			// so inbound links must resolve there, not to skill/group/<member>.md.
+			name:        "skill-group landing link relocates to member index",
+			content:     "the [lore skill group](../skill/group/lore.md)",
+			srcRelPath:  "class/censor.md",
+			destRelPath: "class/censor.md",
+			sectionName: "Browse",
+			want:        "the [lore skill group](../skill/lore/index.md)",
+		},
+		{
+			// A statblock page hoists away its statblock/ segment, so inbound
+			// links must drop it too (real link: a Summoner chapter → champion).
+			name:        "statblock link hoists away statblock segment",
+			content:     "see [Avatar](../champion/undead/statblock/avatar-of-death.md)",
+			srcRelPath:  "chapter/summoner-advice.md",
+			destRelPath: "summoner/summoner-advice.md",
+			sectionName: "Read",
+			want:        "see [Avatar](../../Browse/champion/undead/avatar-of-death.md)",
+		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := rewriteSectionLinks(tt.content, tt.srcRelPath, tt.destRelPath, tt.sectionName, "", sections)
+			got := rewriteSectionLinks(tt.content, tt.srcRelPath, tt.destRelPath, tt.sectionName, "", sections, nil)
 			if got != tt.want {
 				t.Errorf("rewriteSectionLinks():\n  got  %q\n  want %q", got, tt.want)
 			}
@@ -1082,7 +1102,7 @@ func TestRewriteSectionLinks_GroupByBookTarget(t *testing.T) {
 	// resolve into Read/<book>/, not Read/<type>/ or Read/chapter/.
 	got := rewriteSectionLinks(
 		"See [Tests](../chapter/tests.md).",
-		"class/censor.md", "class/censor.md", "Browse", "heroes", sections)
+		"class/censor.md", "class/censor.md", "Browse", "heroes", sections, nil)
 	want := "See [Tests](../../Read/heroes/tests.md)."
 	if got != want {
 		t.Errorf("Browse->Read GroupByBook link:\n  got  %q\n  want %q", got, want)
@@ -1091,10 +1111,48 @@ func TestRewriteSectionLinks_GroupByBookTarget(t *testing.T) {
 	// A Read chapter (beastheart) linking to a sibling chapter stays in its book.
 	got2 := rewriteSectionLinks(
 		"See [Rewards](rewards.md).",
-		"chapter/the-beastheart-class.md", "beastheart/the-beastheart-class.md", "Read", "beastheart", sections)
+		"chapter/the-beastheart-class.md", "beastheart/the-beastheart-class.md", "Read", "beastheart", sections, nil)
 	want2 := "See [Rewards](rewards.md)."
 	if got2 != want2 {
 		t.Errorf("Read intra-book link:\n  got  %q\n  want %q", got2, want2)
+	}
+}
+
+// TestRewriteSectionLinks_KitFlattenTarget verifies an inbound link to a kit
+// ability is rewritten to the flattened destination
+// (feature/ability/<Label>/<kit>-<ability>.md), mirroring applyGroups. The
+// flatten is gated on <sourceDir>/kit/<kit>.md existing, so a real source dir
+// is required.
+func TestRewriteSectionLinks_KitFlattenTarget(t *testing.T) {
+	src := t.TempDir()
+	// applyGroups stats kit/sniper.md to confirm "sniper" is a kit ability.
+	writeFile(t, filepath.Join(src, "kit", "sniper.md"), "---\nname: Sniper\n---\n")
+
+	sections := []SectionConfig{
+		{
+			Name:    "Browse",
+			Include: []string{"class/", "feature/"},
+			Groups:  []GroupConfig{{MatchType: "kit", From: "feature/ability", Label: "Kits", Flatten: true}},
+		},
+	}
+
+	// A class page linking to a kit ability at its un-flattened path must
+	// resolve to the flattened Kits/ page.
+	got := rewriteSectionLinks(
+		"See [Patient Shot](../feature/ability/sniper/patient-shot.md).",
+		"class/tactician.md", "class/tactician.md", "Browse", "", sections, []string{src})
+	want := "See [Patient Shot](../feature/ability/Kits/sniper-patient-shot.md)."
+	if got != want {
+		t.Errorf("kit-flatten link:\n  got  %q\n  want %q", got, want)
+	}
+
+	// A non-kit ability (no kit/<x>.md) is left at its un-flattened path.
+	got2 := rewriteSectionLinks(
+		"See [Gouge](../feature/ability/fury/gouge.md).",
+		"class/tactician.md", "class/tactician.md", "Browse", "", sections, []string{src})
+	want2 := "See [Gouge](../feature/ability/fury/gouge.md)."
+	if got2 != want2 {
+		t.Errorf("non-kit ability link should be unchanged:\n  got  %q\n  want %q", got2, want2)
 	}
 }
 

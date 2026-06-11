@@ -216,7 +216,7 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			continue
 		}
 
-		data = []byte(rewriteSectionLinks(string(data), entry.relPath, destRel, section.Name, srcBookFolder, cfg.Sections))
+		data = []byte(rewriteSectionLinks(string(data), entry.relPath, destRel, section.Name, srcBookFolder, cfg.Sections, cfg.SourceDirList()))
 
 		// When a group flattens parent/child into one file, rewrite the
 		// frontmatter "name" to combine parent + original name so the H1
@@ -807,7 +807,7 @@ var mdRelLinkRe = regexp.MustCompile(`(\[[^\]]*\])\(([^):#][^):]*\.md)\)`)
 // after files are placed under section directories (e.g., Browse/, Read/).
 // Links in the source files were computed relative to the flat ETL output;
 // cross-section links need new relative paths that traverse section boundaries.
-func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookFolder string, allSections []SectionConfig) string {
+func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookFolder string, allSections []SectionConfig, sourceDirs []string) string {
 	srcDir := filepath.ToSlash(filepath.Dir(srcRelPath))
 	destDir := filepath.ToSlash(filepath.Dir(filepath.Join(sectionName, destRelPath)))
 
@@ -823,10 +823,12 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookF
 
 		targetSection := ""
 		targetGroupByBook := false
+		var targetGroups []GroupConfig
 		for _, section := range allSections {
 			if matchesSection(rootRel, section) {
 				targetSection = section.Name
 				targetGroupByBook = section.GroupByBook
+				targetGroups = section.Groups
 				break
 			}
 		}
@@ -842,7 +844,28 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookF
 		if targetGroupByBook && srcBookFolder != "" {
 			targetFull = filepath.ToSlash(filepath.Join(targetSection, srcBookFolder, filepath.Base(rootRel)))
 		} else {
-			targetFull = filepath.ToSlash(filepath.Join(targetSection, rootRel))
+			// Mirror the destination-path relocations buildSection applies to
+			// every page (lines ~196-211), so inbound links resolve to the
+			// relocated file. The branches are mutually exclusive there, so
+			// likewise here: a group landing moves to <root>/<member>/index.md,
+			// else a group flatten/remap collapses kit abilities into
+			// feature/ability/<Label>/<kit>-<ability>.md; then every page hoists
+			// away a redundant statblock/ segment.
+			relTarget := rootRel
+			if dest, ok := groupLandingIndexDest(relTarget); ok {
+				relTarget = dest
+			} else if len(targetGroups) > 0 {
+				// applyGroups stats <sourceDir>/<match_type>/<component>.md to
+				// confirm a flatten target (e.g. a kit), so try each source root.
+				for _, sd := range sourceDirs {
+					if np, _ := applyGroups(relTarget, targetGroups, sd); np != relTarget {
+						relTarget = np
+						break
+					}
+				}
+			}
+			relTarget = hoistStatblockPath(relTarget)
+			targetFull = filepath.ToSlash(filepath.Join(targetSection, relTarget))
 		}
 		newRel, err := filepath.Rel(destDir, targetFull)
 		if err != nil {
