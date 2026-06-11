@@ -180,6 +180,76 @@ func TestParseStatblockFeatureCost(t *testing.T) {
 	}
 }
 
+// Item A: dice-in-title with a link-wrapped characteristic (e.g. [R](scc:…)) in
+// the roll suffix. The parser must strip links to display text in the roll field
+// but preserve them verbatim in tier values.
+func TestStatblock_DiceTitle_ToleratesLinkedCharacteristic(t *testing.T) {
+	block := "" +
+		"> 🏹 **Mind Twist 2d10 + [R](scc:mcdm.heroes.v1/rule.character/reason) (Signature Ability)**\n" +
+		">\n" +
+		"> | **Magic, Ranged, Strike** | **Main action** |\n" +
+		"> |---------------------------|----------------:|\n" +
+		"> | **📏 Ranged 5** | **🎯 One creature** |\n" +
+		">\n" +
+		"> 4 damage; P < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)\n" +
+		"> 6 damage; P < AVERAGE slowed (save ends)\n" +
+		"> 8 damage; P < STRONG slowed (save ends)\n"
+	got := ParseStatblockFeatures(block)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	a := got[0]
+	if a["name"] != "Mind Twist" {
+		t.Errorf("name = %v, want Mind Twist (dice + linked characteristic stripped from title)", a["name"])
+	}
+	effects, _ := a["effects"].([]map[string]any)
+	if len(effects) != 1 {
+		t.Fatalf("effects = %v, want 1", a["effects"])
+	}
+	e := effects[0]
+	if e["roll"] != "2d10 + R" {
+		t.Errorf("roll = %v, want '2d10 + R' (link stripped to display in the structured roll)", e["roll"])
+	}
+	// Tier VALUES keep the raw link verbatim (data-field convention).
+	if e["tier1"] != "4 damage; P < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)" {
+		t.Errorf("tier1 = %v (linked tier value must be preserved verbatim)", e["tier1"])
+	}
+}
+
+// Item B: tier lines (labeled and bare) must accept link-wrapped values verbatim.
+// These are regression guards — no code change expected.
+func TestStatblock_TierLines_PreserveLinks(t *testing.T) {
+	bare := "4 damage; the target is [prone](scc:mcdm.heroes.v1/condition/prone)"
+	if !sbBareTierRe.MatchString(bare) {
+		t.Errorf("bare tier line no longer recognized after linking its value")
+	}
+	labeled := "- **≤11:** 2 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)"
+	m := sbTierRe.FindStringSubmatch(labeled)
+	if m == nil {
+		t.Fatalf("labeled tier line not matched: %q", labeled)
+	}
+	if want := "2 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)"; m[2] != want {
+		t.Errorf("tier value = %q, want %q (verbatim)", m[2], want)
+	}
+}
+
+// Item C: stat-grid cell with a link-wrapped value. cellRe must still match, and
+// linkDisplay must recover the display text. The stat-grid consumer strips links
+// from structured stat values (size/speed/stamina/movement/etc.).
+func TestStatblock_Cell_ToleratesLinkedValue(t *testing.T) {
+	cell := "**[Teleport](scc:mcdm.heroes.v1/movement/teleport)**<br>Movement"
+	m := cellRe.FindStringSubmatch(cell)
+	if m == nil {
+		t.Fatalf("linked stat-grid cell not matched: %q", cell)
+	}
+	if got := linkDisplay(m[1]); got != "Teleport" {
+		t.Errorf("cell value display = %q, want Teleport", got)
+	}
+	if m[2] != "Movement" {
+		t.Errorf("cell label = %q, want Movement", m[2])
+	}
+}
+
 func TestSplitRoleCell(t *testing.T) {
 	tests := []struct{ in, org, role string }{
 		{"Horde Hexer", "Horde", "Hexer"},

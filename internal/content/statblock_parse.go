@@ -26,7 +26,13 @@ var (
 	cellRe  = regexp.MustCompile(`\*\*(.*?)\*\*\s*<br\s*/?>\s*([A-Za-z][A-Za-z ]*)`)
 	levelRe = regexp.MustCompile(`Level\s+(\d+)`)
 	evRe    = regexp.MustCompile(`EV\s+([0-9A-Za-z+ /x-]+)`)
+
+	// mdLinkRe matches a markdown link; linkDisplay returns the display text only.
+	mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\([^)]*\)`)
 )
+
+// linkDisplay strips markdown links to their display text (e.g. "[R](scc:…)" → "R").
+func linkDisplay(s string) string { return mdLinkRe.ReplaceAllString(s, "$1") }
 
 var knownOrganizations = map[string]bool{
 	"Minion": true, "Horde": true, "Platoon": true,
@@ -81,9 +87,12 @@ var (
 	sbPowerRollRe = regexp.MustCompile(`\*\*(Power Roll[^*]*)\*\*`)
 	// sbDiceRe splits a "Name Nd10 + <characteristic>" title (summoner statblock
 	// signature abilities encode the power roll inline in the title) into the
-	// clean name and the dice roll. sbBareTierRe matches the three bare,
-	// digit-led tier outcome lines that follow (no "≤11:" labels).
-	sbDiceRe     = regexp.MustCompile(`^(.*?)\s+(\d+d\d+\s*\+\s*\S.*?)$`)
+	// clean name and the dice roll. The characteristic may be a bare token (e.g.
+	// R) or a markdown link (e.g. [R](scc:…)); linkDisplay is applied to dm[2]
+	// when storing the roll so it contains only the display text. sbBareTierRe
+	// matches the three bare, digit-led tier outcome lines that follow (no
+	// "≤11:" labels).
+	sbDiceRe     = regexp.MustCompile(`^(.*?)\s+(\d+d\d+\s*\+\s*(?:\[[^\]]+\]\([^)]*\)|\S).*?)$`)
 	sbBareTierRe = regexp.MustCompile(`^\d`)
 )
 
@@ -183,10 +192,12 @@ func parseOneFeature(block string) map[string]any {
 
 	// Dice-in-title power roll ("Molten Strike 2d10 + R"): lift the dice to the
 	// effect's roll and clean the name. The tier outcomes are extracted below.
+	// Apply linkDisplay to the roll so a linked characteristic (e.g.
+	// [R](scc:…)) is stored as display text only ("2d10 + R").
 	diceRoll := ""
 	if dm := sbDiceRe.FindStringSubmatch(f["name"].(string)); dm != nil {
 		f["name"] = strings.TrimSpace(dm[1])
-		diceRoll = strings.TrimSpace(dm[2])
+		diceRoll = linkDisplay(strings.TrimSpace(dm[2]))
 	}
 
 	rest := lines[1:]
@@ -327,7 +338,9 @@ func parseStatGrid(grid string) statGrid {
 	for _, row := range rows[1:] {
 		for _, cell := range row {
 			if m := cellRe.FindStringSubmatch(cell); m != nil {
-				value := strings.TrimSpace(m[1])
+				// Strip markdown links from structured stat values (e.g. a
+				// Movement type rendered as [Teleport](scc:…) → "Teleport").
+				value := linkDisplay(strings.TrimSpace(m[1]))
 				if value == "" {
 					value = "-"
 				}
