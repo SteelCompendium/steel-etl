@@ -345,26 +345,26 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 <!-- @type: feature | @id: basics | @level: 1 -->
 ### Basics
 
-**Starting Characteristics:** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other characteristics scores:
+**Starting Characteristics:** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
 - 2, 1, 0, 0
 - 1, 1, 1, 0
 
-**Weak Potency:** Reason − 2
+**Weak [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 2
 
-**Average Potency:** Reason − 1
+**Average [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason) − 1
 
-**Strong Potency:** Reason
+**Strong [Potency](scc:mcdm.heroes.v1/rule.character/potency):** [Reason](scc:mcdm.heroes.v1/rule.character/reason)
 
-**Starting Stamina at 1st Level:** 15
+**Starting [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) at 1st Level:** 15
 
-**Stamina Gained at 2nd and Higher Levels:** 6
+**[Stamina](scc:mcdm.heroes.v1/rule.health/stamina) Gained at 2nd and Higher Levels:** 6
 
-**Recoveries:** 8
+**[Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries):** 8
 
-**Skills:** You gain the Magic and Strategy skills and can choose any two skills from the intrigue or lore skill groups. (*Quick Build:* Eavesdrop, Magic, Monsters, Strategy.)
+**Skills:** You gain the [Magic](scc:mcdm.heroes.v1/skill.lore/magic) and [Strategy](scc:mcdm.heroes.v1/skill.lore/strategy) skills and can choose any two skills from the [intrigue](scc:mcdm.heroes.v1/skill.group/intrigue) or [lore](scc:mcdm.heroes.v1/skill.group/lore) skill groups. (*Quick Build:* [Eavesdrop](scc:mcdm.heroes.v1/skill.intrigue/eavesdrop), [Magic](scc:mcdm.heroes.v1/skill.lore/magic), [Monsters](scc:mcdm.heroes.v1/skill.lore/monsters), [Strategy](scc:mcdm.heroes.v1/skill.lore/strategy).)
 
 ###### Summoner Advancement
 
@@ -383,13 +383,13 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 
 ### Draw Steel Master Classes
 
-The summoner is an example of a master class in Draw Steel. Master classes are intended for players who are familiar with the game and have played a few sessions already. They are not recommended for first time players—you need to know the rules before we start breaking them on you!
+The [summoner](scc:mcdm.summoner.v1/class/summoner) is an example of a master class in Draw Steel. Master classes are intended for players who are familiar with the game and have played a few sessions already. They are not recommended for first time players—you need to know the rules before we start breaking them on you!
 
 If you are new to Draw Steel, we recommend checking out The Delian Tomb starter adventure, which includes a step-by-step tutorial on how to play the game and breaks down all the working parts of a hero. Save Broadhurst first, and then you hurry back here!
 
 ### 1st-Level Features
 
-As a summoner, you gain the following features.
+As a [summoner](scc:mcdm.summoner.v1/class/summoner), you gain the following features.
 
 <!-- @type: feature | @id: summoner-circle | @level: 1 -->
 ### Summoner Circle
@@ -404,60 +404,60 @@ You've learned the art of summoning from a member of a loose network of summoner
 
 **Circle of Storms:** You are a storm caster who summons elementals from Quintessence. This portfolio contains forces of nature that leave a big impact on the environment. You can communicate with creatures that have the Elemental keyword even if you don't share a language.
 
-Your choice of circle decides the portfolio from which you summon minions, as well as many of the features you'll gain from this class. Your circle is your subclass.
+Your choice of circle decides the portfolio from which you summon minions, as well as many of the features you'll gain from this class. Your circle is your [subclass](scc:mcdm.heroes.v1/rule.general/subclass).
 
 <!-- @type: feature | @id: minions | @level: 1 -->
 ### Minions
 
-The creatures you control are called minions. You can summon and maintain up to a maximum of 8 minions. Your minions are considered allies at your level.
+The creatures you control are called minions. You can summon and maintain up to a maximum of 8 minions. Your minions are considered [allies](scc:mcdm.heroes.v1/rule.combat/ally) at your level.
 
 You can manage up to two squads of minions. Newly summoned minions can either be organized into a new squad or be distributed into other squads under your control. A squad can't contain more than eight minions, and all minions in the squad must have the same name.
 
-The maximum distance that you can summon minions and use specific conjuring abilities is called your Summoner's Range. Your Summoner's Range is equal to 5 + your Reason score. You must have line of effect to summon and give commands to minions within your Summoner's Range. Commanding a minion to take a main action or a maneuver while hidden reveals you.
+The maximum [distance](scc:mcdm.heroes.v1/rule.combat/distance) that you can summon minions and use specific conjuring abilities is called your Summoner's Range. Your Summoner's Range is equal to 5 + your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score. You must have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to summon and give commands to minions within your Summoner's Range. Commanding a minion to take a [main action](scc:mcdm.heroes.v1/rule.combat/turn) or a [maneuver](scc:mcdm.heroes.v1/rule.combat/turn) while hidden reveals you.
 
-You also have special minions at your disposal called signature minions, low-cost creatures that you've become accustomed to summoning often. See Portfolio for more details about the types of minions you can summon.
+You also have special minions at your disposal called signature minions, low-cost creatures that you've become accustomed to summoning often. See [Portfolio](scc:mcdm.summoner.v1/feature.summoner.level-1/portfolio) for more details about the types of minions you can summon.
 
 #### Minions in Combat
 
-**Start of Combat:** At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you can summon up to two of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
+**Start of Combat:** At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you can summon up to two of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
 
-**Start of Turn:** At the start of each of your turns during combat, you can summon up to three of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
+**Start of [Turn](scc:mcdm.heroes.v1/rule.combat/turn):** At the start of each of your turns during combat, you can summon up to three of your signature minions at no cost into unoccupied spaces within your Summoner's Range (no action required).
 
-**Summoning:** Each minion is summoned on the ground unless they can fly or hover. Unless an ability specifies, you can't summon any new minions beyond your minion maximum until the same number of existing minions are dismissed or destroyed.
+**Summoning:** Each minion is summoned on the ground unless they can [fly](scc:mcdm.heroes.v1/movement/fly) or [hover](scc:mcdm.heroes.v1/movement/hover). Unless an ability specifies, you can't summon any new minions beyond your minion maximum until the same number of existing minions are dismissed or destroyed.
 
-**Stamina:** Minions in a squad pool their Stamina together. Whenever a minion in a squad takes damage, the squad's Stamina pool is reduced by a number equal to the damage taken. Each time the pool is reduced by an amount equal to a single squad member's Stamina, one minion dies (starting with the minion that took damage, followed by the next nearest minion). If there is any excess damage after all minions in the squad are dead, you take damage equal to 2 + your level. Minions can't be winded, can't regain Stamina, and can't gain temporary Stamina.
+**[Stamina](scc:mcdm.heroes.v1/rule.health/stamina):** Minions in a squad pool their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) together. Whenever a minion in a squad takes [damage](scc:mcdm.heroes.v1/rule.damage/damage), the squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is reduced by a number equal to the damage taken. Each time the pool is reduced by an amount equal to a single squad member's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), one minion dies (starting with the minion that took damage, followed by the next nearest minion). If there is any excess damage after all minions in the squad are dead, you take damage equal to 2 + your level. Minions can't be [winded](scc:mcdm.heroes.v1/rule.health/winded), can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and can't gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina).
 
-**Area Effects:** The damage from an area effect dealt to a squad's Stamina pool can only kill up to the minions in its area. Any excess damage is ignored.
+**Area Effects:** The [damage](scc:mcdm.heroes.v1/rule.damage/damage) from an area effect dealt to a squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool can only kill up to the minions in its area. Any excess damage is ignored.
 
-**Strikes with Multiple Targets:** A squad's Stamina pool only takes the largest single instance of damage from a strike that targets two or more minions in that squad. Any additional effects still affect the minions targeted by the strike.
+**Strikes with Multiple Targets:** A squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool only takes the largest single instance of [damage](scc:mcdm.heroes.v1/rule.damage/damage) from a [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets two or more minions in that squad. Any additional effects still affect the minions targeted by the strike.
 
-**Conditions:** You resolve any saving throws on conditions affecting one or more of your minions. Treat saving throws as if you had one instance of each condition.
+**[Conditions](scc:mcdm.heroes.v1/rule.combat/condition):** You resolve any [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) on [conditions](scc:mcdm.heroes.v1/rule.combat/condition) affecting one or more of your minions. Treat [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) as if you had one instance of each condition.
 
-**Immunity and Weakness:** If any minion in a squad has damage immunity or weakness to a particular damage type, apply that effect to the entire squad only once, regardless of how many minions share the same trait.
+**[Damage Immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and [Weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness):** If any minion in a squad has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) to a particular [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type), apply that effect to the entire squad only once, regardless of how many minions share the same trait.
 
-**Actions:** Minions in a squad act together on your turn in any order, before, in-between, and/or after any of your actions. They can either take a move action and a main action (excluding Heal and Defend), a move action and a maneuver, or two move actions. Individual minions can also make opportunity attacks.
+**Actions:** Minions in a squad act together on your [turn](scc:mcdm.heroes.v1/rule.combat/turn) in any order, before, in-between, and/or after any of your actions. They can either take a [move action](scc:mcdm.heroes.v1/rule.combat/turn) and a [main action](scc:mcdm.heroes.v1/rule.combat/turn) (excluding [Heal](scc:mcdm.heroes.v1/feature.common.main-actions/heal) and [Defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend)), a move action and a [maneuver](scc:mcdm.heroes.v1/rule.combat/turn), or two move actions. Individual minions can also make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 
-**Free Strikes:** Unless otherwise specified, a minion's free strike has a distance of Melee 1 or Ranged 5 and deals the damage value listed on the stat block. The minion can choose to deal untyped damage or the damage type next to the damage value.
+**[Free Strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike):** Unless otherwise specified, a minion's [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has a distance of Melee 1 or Ranged 5 and deals the damage value listed on the stat block. The minion can choose to deal untyped damage or the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) next to the damage value.
 
-**Damage:** Whenever multiple minions strike the same target simultaneously, the damage is added together and treated as a single strike. Minions in a squad targeting the same target with a signature ability only apply one instance of the signature ability while each additional minion increases the damage by a number equal to their free strike value.
+**[Damage](scc:mcdm.heroes.v1/rule.damage/damage):** Whenever multiple minions [strike](scc:mcdm.heroes.v1/rule.combat/strike) the same target simultaneously, the damage is added together and treated as a single strike. Minions in a squad targeting the same target with a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) only apply one instance of the signature ability while each additional minion increases the damage by a number equal to their [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) value.
 
-**Surges:** Your minions share your pool of surges and can apply them to their strikes. Whenever one or more of your minions would gain a surge during a turn, you gain that surge instead.
+**[Surges](scc:mcdm.heroes.v1/rule.resource/surge):** Your minions share your pool of [surges](scc:mcdm.heroes.v1/rule.resource/surge) and can apply them to their strikes. Whenever one or more of your minions would gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) during a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you gain that surge instead.
 
-**Maneuvers:** Unless otherwise specified on the minions' stat block, a squad uses their maneuver together as a unit. If a maneuver targets a single creature, all minions in the squad target the same creature. If a maneuver requires a power roll, the result is equal to 8 + the minions' characteristic + the number of squad members within distance of the maneuver.
+**Maneuvers:** Unless otherwise specified on the minions' stat block, a squad uses their maneuver together as a unit. If a maneuver targets a single creature, all minions in the squad target the same creature. If a maneuver requires a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), the result is equal to 8 + the minions' characteristic + the number of squad members within distance of the maneuver.
 
-**Individual Maneuvers:** An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from prone or escaping a grab. If they do, they can't take part in their squad's main action or maneuver.
+**Individual Maneuvers:** An individual minion can use a maneuver to alleviate their own circumstances, such as getting up from [prone](scc:mcdm.heroes.v1/condition/prone) or escaping a [grab](scc:mcdm.heroes.v1/condition/grabbed). If they do, they can't take part in their squad's main action or maneuver.
 
-**Characteristics:** Your minions have their own characteristics for the purposes of resisting potencies, maneuvers, and making tests. You use your own characteristics where a minion's stat block refers to an R or uses a potency (such as M < WEAK).
+**[Characteristics](scc:mcdm.heroes.v1/rule.character/characteristic):** Your minions have their own [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) for the purposes of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), maneuvers, and making tests. You use your own [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) where a minion's stat block refers to an R or uses a [potency](scc:mcdm.heroes.v1/rule.character/potency) (such as M < WEAK).
 
-**Unconscious:** If you are unconscious or unable to act on your turn, you can't summon new minions. Additionally, your remaining minions can't deal damage; they can only act to bring you to safety.
+**Unconscious:** If you are unconscious or unable to act on your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can't summon new minions. Additionally, your remaining minions can't deal damage; they can only act to bring you to safety.
 
 **End of Combat:** At the end of combat, your minions finish their tasks (such as carrying someone to safety) and are then dismissed.
 
 #### Minions Outside of Combat
 
-While outside of combat, you can have up to 4 minions summoned without spending essence. You can freely summon your signature minions this way. For other minions, while you have a number of Victories equal to the minion's essence cost or more, you can summon up to the set number of minions listed on their stat block.
+While outside of combat, you can have up to 4 minions summoned without spending [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence). You can freely summon your signature minions this way. For other minions, while you have a number of [Victories](scc:mcdm.heroes.v1/rule.resource/victories) equal to the minion's essence cost or more, you can summon up to the set number of minions listed on their stat block.
 
-Each of your minions can be given a simple task and a destination you've previously visited and they'll fulfill it to the best of their ability. Example tasks include sending messages, scouting, and carrying supplies. Your minions aren't followers and can't make project rolls until you can summon specialists (see Minion Machinations).
+Each of your minions can be given a simple task and a destination you've previously visited and they'll fulfill it to the best of their ability. Example tasks include sending messages, scouting, and carrying supplies. Your minions aren't [followers](scc:mcdm.heroes.v1/rule.general/follower) and can't make [project rolls](scc:mcdm.heroes.v1/rule.downtime/project-roll) until you can summon specialists (see [Minion Machinations](scc:mcdm.summoner.v1/feature.summoner.level-6/minion-machinations)).
 
 When combat begins, any of your minions who were summoned outside of combat finish their tasks and are then dismissed.
 
@@ -470,23 +470,23 @@ When combat begins, any of your minions who were summoned outside of combat fini
 <!-- @type: feature | @id: essence | @level: 1 -->
 ### Essence
 
-You and your minions have a unique reserve of essence as your Heroic Resource. You use this magic to sculpt your forces and maintain control over the battlefield.
+You and your minions have a unique reserve of essence as your [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource). You use this magic to sculpt your forces and maintain control over the battlefield.
 
 #### Essence in Combat
 
-At the start of a combat encounter or some other stressful situation tracked in combat rounds (as determined by the Director), you gain essence equal to your Victories.
+At the start of a combat encounter or some other stressful situation tracked in [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round) (as determined by the Director), you gain essence equal to your [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
-At the start of each of your turns during combat, you gain 2 essence.
+At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 essence.
 
-The first time each round that any minion (either yours or an enemy) dies unwillingly within your Summoner's Range, you gain 1 essence.
+The first time each [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that any minion (either yours or an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy)) dies unwillingly within your Summoner's Range, you gain 1 essence.
 
-Whenever you use a heroic ability or call forth a minion that costs essence, you can willingly sacrifice one or more of your minions within your Summoner's Range to reduce the cost by 1. You can't kill minions this way if they used a main action or maneuver during the turn. You can sacrifice more minions than you would reduce the cost by.
+Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) or call forth a minion that costs essence, you can willingly sacrifice one or more of your minions within your Summoner's Range to reduce the cost by 1. You can't kill minions this way if they used a [main action](scc:mcdm.heroes.v1/rule.combat/turn) or maneuver during the [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can sacrifice more minions than you would reduce the cost by.
 
 You lose any remaining essence at the end of the encounter.
 
 #### Essence Outside of Combat
 
-Though you can't gain essence outside of combat, you can use your heroic abilities and effects that cost essence without spending it. Whenever you use an ability or effect outside of combat that costs essence, you can't use that same ability or effect outside of combat again until you gain at least 1 Victory or finish a respite.
+Though you can't gain essence outside of combat, you can use your [heroic abilities](scc:mcdm.heroes.v1/rule.general/heroic-ability) and effects that cost essence without spending it. Whenever you use an ability or effect outside of combat that costs essence, you can't use that same ability or effect outside of combat again until you gain at least 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) or finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 > **More Wielders of Quintessence**
 >
@@ -497,7 +497,7 @@ Though you can't gain essence outside of combat, you can use your heroic abiliti
 <!-- @type: feature | @id: summoner-strike | @level: 1 -->
 ### Summoner Strike
 
-You have the following ability, which replaces both your melee and ranged free strikes.
+You have the following ability, which replaces both your melee and ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: ability | @id: summoner-strike -->
 #### Summoner Strike
@@ -508,14 +508,14 @@ You have the following ability, which replaces both your melee and ranged free s
 |----------------------------------|--------------------------:|
 | **📏 Melee 1 or Ranged 5**      | **🎯 One creature or object** |
 
-**Effect:** R damage. If the target has R < WEAK, they are slowed (save ends).
+**Effect:** R [damage](scc:mcdm.heroes.v1/rule.damage/damage). If the target has R < WEAK, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-**Special:** This ability has the Charge keyword when it's used as a melee strike.
+**Special:** This ability has the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) keyword when it's used as a melee [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: feature | @id: strike-for-me | @level: 1 -->
 ### Strike For Me
 
-You have the following free triggered action.
+You have the following free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action).
 
 <!-- @type: ability | @id: strike-for-me -->
 #### Strike for Me
@@ -526,21 +526,21 @@ You have the following free triggered action.
 |-------------------------|--------------------:|
 | **📏 Summoner's Range** | **🎯 Each of your minions** |
 
-**Trigger:** You use a triggered action to make a free strike or use a signature ability.
+**Trigger:** You use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability).
 
-**Power Roll + Reason:**
+**Power Roll + [Reason](scc:mcdm.heroes.v1/rule.character/reason):**
 
-- **≤11:** Up to three targets each make a free strike
-- **12-16:** Up to five targets each make a free strike
-- **17+:** Up to seven targets each make a free strike
+- **≤11:** Up to three targets each make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)
+- **12-16:** Up to five targets each make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)
+- **17+:** Up to seven targets each make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)
 
-**Special:** On a natural 19 or 20, each target makes a free strike.
+**Special:** On a [natural 19 or 20](scc:mcdm.heroes.v1/rule.dice/natural-19-20), each target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-**Effect:** Your minions act in place of you making a free strike or using a signature ability. If you were granted the triggered action against a specific target, your minions must strike the same target. If the triggered action granted you a signature ability, you have an edge on the power roll.
+**Effect:** Your minions act in place of you making a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or using a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability). If you were granted the [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) against a specific target, your minions must strike the same target. If the [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) granted you a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), you have an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll).
 
 > **Your Minions Deal the Damage**
 >
-> By normal Draw Steel rules, everyone gets access to free strikes. As a summoner, you have a free strike equivalent in addition to minions who have their own free strikes. Changing how you attack allows your minions to shine in battle while keeping your damage output in line with your fellow heroes. The static damage you and most of your minions deal also keeps your turns fast and flowing.
+> By normal Draw Steel rules, everyone gets access to [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). As a [summoner](scc:mcdm.summoner.v1/class/summoner), you have a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) equivalent in addition to minions who have their own free strikes. Changing how you attack allows your minions to shine in battle while keeping your [damage](scc:mcdm.heroes.v1/rule.damage/damage) output in line with your fellow heroes. The static damage you and most of your minions deal also keeps your [turns](scc:mcdm.heroes.v1/rule.combat/turn) fast and flowing.
 
 <!-- @type: feature | @id: call-forth | @level: 1 -->
 ### Call Forth
@@ -576,11 +576,11 @@ You have the following maneuver.
 |-------------|-------------:|
 | **📏 Melee 1** | **🎯 One of your minions** |
 
-**Effect:** You shift into a square adjacent to the target, including vertically.
+**Effect:** You [shift](scc:mcdm.heroes.v1/movement/shifting) into a square adjacent to the target, including vertically.
 
-You can shift into squares that contain one of your minions, even if they occupy difficult terrain. Each time you shift into a square that contains one of your minions while using this maneuver, you can shift an additional square.
+You can [shift](scc:mcdm.heroes.v1/movement/shifting) into squares that contain one of your minions, even if they occupy [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Each time you [shift](scc:mcdm.heroes.v1/movement/shifting) into a square that contains one of your minions while using this maneuver, you can [shift](scc:mcdm.heroes.v1/movement/shifting) an additional square.
 
-**1 Essence:** An adjacent ally can shift alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
+**1 Essence:** An adjacent [ally](scc:mcdm.heroes.v1/rule.combat/ally) can [shift](scc:mcdm.heroes.v1/movement/shifting) alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
 
 <!-- @type: feature | @id: 1st-level-circle-features | @level: 1 -->
 ### 1st-Level Circle Features
@@ -599,61 +599,61 @@ Your circle grants you features as shown on the 1st-Level Summoner Circle Featur
 <!-- @type: feature | @id: dead-men-tell-all-tales | @level: 1 -->
 #### Dead Men Tell All Tales
 
-You can touch the corpse of a creature who died within the past week and ask them a question. The corpse can choose to answer the question to the best of their ability. Each additional question you ask the corpse requires a medium Reason test, where failure or consequence breaks your connection with the corpse permanently.
+You can touch the corpse of a creature who died within the past week and ask them a question. The corpse can choose to answer the question to the best of their ability. Each additional question you ask the corpse requires a medium [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test), where failure or consequence breaks your connection with the corpse permanently.
 
 The corpse can also choose to refuse to answer or lie, especially if you were the one to kill them in the first place.
 
 <!-- @type: feature | @id: death-snap | @level: 1 -->
 #### Death Snap
 
-Whenever one of your demon minions would die unwillingly, they can deal damage to an adjacent creature equal to their free strike value before dying.
+Whenever one of your demon minions would die unwillingly, they can deal [damage](scc:mcdm.heroes.v1/rule.damage/damage) to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature equal to their [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) value before dying.
 
 <!-- @type: feature | @id: elemental-affinity | @level: 1 -->
 #### Elemental Affinity
 
-Whenever you use Call Forth to summon one or more non-signature elemental minions, you can summon one bonus signature minion at no cost. You can choose between a signature minion that shares an Element keyword with the minions you summoned (such as Fire, Earth, or Air) or an elemental mote.
+Whenever you use [Call Forth](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/call-forth) to summon one or more non-signature elemental minions, you can summon one bonus signature minion at no cost. You can choose between a signature minion that shares an Element keyword with the minions you summoned (such as Fire, Earth, or Air) or an elemental mote.
 
 <!-- @type: feature | @id: fairy-whispers | @level: 1 -->
 #### Fairy Whispers
 
-Whenever you send a minion to perform a task for you outside of combat, they can bring back a rumor from the destination to which you sent them. When the minion returns, make a Reason test:
+Whenever you send a minion to perform a task for you outside of combat, they can bring back a rumor from the destination to which you sent them. When the minion returns, make a [Reason](scc:mcdm.heroes.v1/rule.character/reason) [test](scc:mcdm.heroes.v1/rule.test/test):
 
 - **≤11:** You learn an undoubtedly false common rumor.
 - **12-16:** You learn a common rumor that is most likely true.
 - **17+:** You learn an obscure rumor that could either be true or false.
 
-You gain a bane on the test for each subsequent rumor you collect either on the same day or in the same location.
+You gain a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the test for each subsequent rumor you collect either on the same day or in the same location.
 
 <!-- @type: feature | @id: heart-of-nature | @level: 1 -->
 #### Heart of Nature
 
-You can sense the presence of creatures with the Elemental or Dragon keywords within 1 mile of you. You can innately feel their emotions or pain, and you can't obtain lower than a tier 2 outcome on any Intuition test made to socially interact with them.
+You can sense the presence of creatures with the Elemental or Dragon keywords within 1 mile of you. You can innately feel their emotions or pain, and you can't obtain lower than a tier 2 outcome on any [Intuition](scc:mcdm.heroes.v1/rule.character/intuition) [test](scc:mcdm.heroes.v1/rule.test/test) made to socially interact with them.
 
 <!-- @type: feature | @id: pixie-dust | @level: 1 -->
 #### Pixie Dust
 
-Increase your number of Recoveries by 2.
+Increase your number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2.
 
-Whenever one of your fey minions dies within your Summoner's Range, you can spend a Recovery to give temporary Stamina equal to twice your Reason score to each non-minion ally adjacent to the minion when they died.
+Whenever one of your fey minions dies within your Summoner's Range, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to give [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score to each non-minion [ally](scc:mcdm.heroes.v1/rule.combat/ally) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion when they died.
 
 <!-- @type: feature | @id: rise | @level: 1 -->
 #### Rise!
 
-Once per round, when a creature dies unwillingly within your Summoner's Range, you can use a triggered action to summon a signature undead minion in their space at no cost, even if you're at your minion maximum, but only if they can be organized into one of your squads. The new minion can't act until the start of your next turn.
+Once per [round](scc:mcdm.heroes.v1/rule.combat/combat-round), when a creature dies unwillingly within your Summoner's Range, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to summon a signature undead minion in their space at no cost, even if you're at your minion maximum, but only if they can be organized into one of your squads. The new minion can't act until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-This ability becomes a free triggered action if the target was a minion (either yours or an enemy).
+This ability becomes a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) if the target was a minion (either yours or an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy)).
 
 <!-- @type: feature | @id: soulsense | @level: 1 -->
 #### Soulsense
 
-While you have line of effect to a creature with a soul, you can perceive a trail of where the creature has been in the last number of minutes equal to 5 × your level.
+While you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to a creature with a soul, you can perceive a trail of where the creature has been in the last number of minutes equal to 5 × your level.
 
-When you finish a respite, you can always perceive the soul trails of each creature that took the respite with you until your next respite.
+When you finish a [respite](scc:mcdm.heroes.v1/rule.resource/respite), you can always perceive the soul trails of each creature that took the [respite](scc:mcdm.heroes.v1/rule.resource/respite) with you until your next [respite](scc:mcdm.heroes.v1/rule.resource/respite).
 
 <!-- @type: feature | @id: formation | @level: 1 -->
 ### Formation
 
-You've practiced a specific formation for your minions. Choose one of the following formations: horde, platoon, elite, or leader. You can change your formation along with your quick command (see Quick Command) by performing intense study as a respite activity. (*Quick Build:* Platoon Formation.)
+You've practiced a specific formation for your minions. Choose one of the following formations: horde, platoon, elite, or leader. You can change your formation along with your quick command (see [Quick Command](scc:mcdm.summoner.v1/feature.summoner.level-1/quick-command)) by performing intense study as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Platoon Formation](scc:mcdm.summoner.v1/feature.summoner.level-1/platoon-formation).)
 
 <!-- @type: feature | @id: horde-formation | @level: 1 -->
 #### Horde Formation
@@ -663,32 +663,32 @@ Your maximum number of minions increases by 4 and you summon up to four of your 
 <!-- @type: feature | @id: platoon-formation | @level: 1 -->
 #### Platoon Formation
 
-Whenever one of your squads uses a damaging ability, choose one target of that ability to take additional damage equal to your Reason score.
+Whenever one of your squads uses a damaging ability, choose one target of that ability to take additional [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature | @id: elite-formation | @level: 1 -->
 #### Elite Formation
 
-Each of your minions have their Stamina increased by 3 and their stability increased by 1.
+Each of your minions have their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) increased by 3 and their [stability](scc:mcdm.heroes.v1/rule.character/stability) increased by 1.
 
 <!-- @type: feature | @id: leader-formation | @level: 1 -->
 #### Leader Formation
 
-You aren't affected by excess damage after all minions in a squad are dead. If your minion is within your Summoner's Range when they take damage, you can choose to take damage in place of the minion.
+You aren't affected by excess [damage](scc:mcdm.heroes.v1/rule.damage/damage) after all minions in a squad are dead. If your minion is within your Summoner's Range when they take [damage](scc:mcdm.heroes.v1/rule.damage/damage), you can choose to take damage in place of the minion.
 
-Additionally, you can use light armor treasures and light weapon treasures while you don't have a kit.
+Additionally, you can use light armor [treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) and light weapon [treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) while you don't have a kit.
 
 > **Minions and Treasures**
 >
-> Treasures in Draw Steel are typically worded for you to use, which might create ambiguity for a summoner managing an army. You can use the following guidelines to ensure the treasures you come across in your adventures do what they were intended to do.
+> [Treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in Draw Steel are typically worded for you to use, which might create ambiguity for a [summoner](scc:mcdm.summoner.v1/class/summoner) managing an army. You can use the following guidelines to ensure the treasures you come across in your adventures do what they were intended to do.
 >
-> - Treasures that give you a damage bonus to rolled damage only apply to power rolls made from a non-minion's space. However, when you use Strike for Me, any bonus damage is applied to each enemy and object that took damage.
-> - Once you reach level 4 as a summoner, you regain access to your normal free strike abilities while wielding a weapon treasure, an implement treasure, or any treasure that enables you to make a free strike as a part of its effect.
-> - Treasures that increase the distance of ranged magic abilities also increase the distance of your Summoner's Range.
+> - Treasures that give you a [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus to [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) only apply to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made from a non-minion's space. However, when you use [Strike for Me](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/strike-for-me), any bonus damage is applied to each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) and object that took damage.
+> - Once you reach level 4 as a [summoner](scc:mcdm.summoner.v1/class/summoner), you regain access to your normal [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) abilities while wielding a weapon treasure, an [implement](scc:mcdm.heroes.v1/rule.treasure/implement) treasure, or any treasure that enables you to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a part of its effect.
+> - Treasures that increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of ranged magic abilities also increase the distance of your Summoner's Range.
 
 <!-- @type: feature | @id: quick-command | @level: 1 -->
 ### Quick Command
 
-You have a special command you can issue to your minions. Choose one of the following quick commands. You can change your quick command along with your formation (see Formation) by performing intense study as a respite activity. (*Quick Build:* Shield!)
+You have a special command you can issue to your minions. Choose one of the following quick commands. You can change your quick command along with your formation (see [Formation](scc:mcdm.summoner.v1/feature.summoner.level-1/formation)) by performing intense study as a [respite](scc:mcdm.heroes.v1/rule.resource/respite) activity. (*Quick Build:* [Shield!](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/shield))
 
 <!-- @type: feature | @id: focus-fire | @level: 1 -->
 #### Focus Fire!
@@ -704,11 +704,11 @@ You have the following triggered action.
 |-------|-------------:|
 | **📏 Summoner's Range** | **🎯 Self or one ally** |
 
-**Trigger:** The target deals damage to another creature.
+**Trigger:** The target deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to another creature.
 
-**Effect:** The target gains a surge for each of your minions adjacent to them (up to a maximum of 3 surges), which they can use on the triggering damage.
+**Effect:** The target gains a [surge](scc:mcdm.heroes.v1/rule.resource/surge) for each of your minions [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them (up to a maximum of 3 surges), which they can use on the triggering damage.
 
-**Spend 1 Essence:** If the triggering damage is from an ability that uses a power roll, the power roll gains an edge.
+**Spend 1 Essence:** If the triggering damage is from an ability that uses a [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll), the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 <!-- @type: feature | @id: halt | @level: 1 -->
 #### Halt!
@@ -724,11 +724,11 @@ You have the following triggered action.
 |-------|-------------:|
 | **📏 Summoner's Range** | **🎯 One creature** |
 
-**Trigger:** The target starts their turn, moves, or is force moved.
+**Trigger:** The target starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn), moves, or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 
-**Effect:** You summon a signature minion in an unoccupied space adjacent to the target. If the target is force moved into the minion, you can choose to make the target take no damage from the collision.
+**Effect:** You summon a signature minion in an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. If the target is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into the minion, you can choose to make the target take no [damage](scc:mcdm.heroes.v1/rule.damage/damage) from the collision.
 
-**Special:** Instead of summoning a new minion, you can command one of your minions within distance to shift up to their speed toward a square adjacent to the target before any additional effects occur.
+**Special:** Instead of summoning a new minion, you can command one of your minions within [distance](scc:mcdm.heroes.v1/rule.combat/distance) to [shift](scc:mcdm.heroes.v1/movement/shifting) up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) toward a square [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target before any additional effects occur.
 
 <!-- @type: feature | @id: not-yet | @level: 1 -->
 #### Not Yet!
@@ -748,7 +748,7 @@ You have the following triggered action.
 
 **Special:** If the target is a minion, they must be the only minion remaining in their squad.
 
-**Effect:** The damage the target receives is reduced by an amount that leaves the target alive with 1 point of Stamina.
+**Effect:** The [damage](scc:mcdm.heroes.v1/rule.damage/damage) the target receives is reduced by an amount that leaves the target alive with 1 point of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: feature | @id: shield | @level: 1 -->
 #### Shield!
@@ -764,11 +764,11 @@ You have the following triggered action.
 |-------|-------------:|
 | **📏 Summoner's Range** | **🎯 Self or one ally** |
 
-**Trigger:** The target is targeted by a strike.
+**Trigger:** The target is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
-**Effect:** If one of your minions is adjacent to the target and is within distance of the strike, they become the new target of the strike.
+**Effect:** If one of your minions is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target and is within [distance](scc:mcdm.heroes.v1/rule.combat/distance) of the strike, they become the new target of the strike.
 
-**Spend 1 Essence:** Instead of commanding an existing minion, you summon a signature minion into an unoccupied space adjacent to the target to take the strike.
+**Spend 1 Essence:** Instead of commanding an existing minion, you summon a signature minion into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target to take the strike.
 
 <!-- @type: feature | @id: portfolio | @level: 1 -->
 ### Portfolio
