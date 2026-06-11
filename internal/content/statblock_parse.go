@@ -28,9 +28,11 @@ var (
 	evRe    = regexp.MustCompile(`EV\s+([0-9A-Za-z+ /x-]+)`)
 
 	// mdLinkRe matches any markdown link: [display](url). This is the
-	// protocol-agnostic variant; the scc-protocol-specific form lives in
-	// internal/scc/resolver.go (also named mdLinkRe). Keep both in sync if the
-	// link syntax ever changes (escaped chars, nested parens, etc.).
+	// protocol-agnostic variant (matches any URL); the scc-protocol-specific form
+	// lives in internal/scc/resolver.go (also named mdLinkRe). The two match
+	// different input sets by design — but both rely on the same display-text class
+	// `[^\]]+`, so if CommonMark link syntax changes (e.g. escaped brackets become
+	// valid inside the display text), update that class in both.
 	mdLinkRe = regexp.MustCompile(`\[([^\]]+)\]\([^)]*\)`)
 )
 
