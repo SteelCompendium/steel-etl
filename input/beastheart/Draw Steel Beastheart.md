@@ -294,7 +294,7 @@ As a beastheart, you face the world's dangers alongside your wild companion. Wit
 
 **Recoveries:** 12
 
-**Skills:** You gain the [Animal Handling](scc:mcdm.heroes.v1/skill/handle-animals) skill. Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* [Animal Handling](scc:mcdm.heroes.v1/skill/handle-animals), [Navigate](scc:mcdm.heroes.v1/skill/navigate), [Track](scc:mcdm.heroes.v1/skill/track).)
+**Skills:** You gain the [Animal Handling](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals) skill. Then choose any two skills from the exploration or intrigue skill groups. (*Quick Build:* [Animal Handling](scc:mcdm.heroes.v1/skill.interpersonal/handle-animals), [Navigate](scc:mcdm.heroes.v1/skill.exploration/navigate), [Track](scc:mcdm.heroes.v1/skill.intrigue/track).)
 
 ###### Beastheart Advancement Table
 
@@ -326,13 +326,13 @@ As a 1st-level beastheart, you gain the following features.
 
 Your bond with your companion has awakened ancient, predatory instincts in you that fuel your battle prowess. But you aren't bound by your primal passions. As you decide which of your instincts to ignore and which to hone to deadly sharpness, you choose a wild nature from the following options, each of which grants you a skill. (*Quick Build:* Punisher.)
 
-**Guardian:** You are the fearless defender of your pack—anyone who harms them must go through you. You have the [Read Person](scc:mcdm.heroes.v1/skill/read-person) skill.
+**Guardian:** You are the fearless defender of your pack—anyone who harms them must go through you. You have the [Read Person](scc:mcdm.heroes.v1/skill.interpersonal/read-person) skill.
 
-**Prowler:** You are an unseen ambusher that strikes from the shadows. Your prey is dead before they even know you're there. You have the [Hide](scc:mcdm.heroes.v1/skill/hide) skill.
+**Prowler:** You are an unseen ambusher that strikes from the shadows. Your prey is dead before they even know you're there. You have the [Hide](scc:mcdm.heroes.v1/skill.intrigue/hide) skill.
 
-**Punisher:** Using brute force, you overwhelm anyone unwise enough to earn your wrath. You have the [Endurance](scc:mcdm.heroes.v1/skill/endurance) skill.
+**Punisher:** Using brute force, you overwhelm anyone unwise enough to earn your wrath. You have the [Endurance](scc:mcdm.heroes.v1/skill.exploration/endurance) skill.
 
-**Spark:** Your connection to nature has imbued you and your companion with the raging magic of an elemental storm. Flame, frost, and lightning crackle from your hands and their claws. You have the [Magic](scc:mcdm.heroes.v1/skill/magic) skill.
+**Spark:** Your connection to nature has imbued you and your companion with the raging magic of an elemental storm. Flame, frost, and lightning crackle from your hands and their claws. You have the [Magic](scc:mcdm.heroes.v1/skill.lore/magic) skill.
 
 Your wild nature is your subclass, and your choice of wild nature determines many of the features you'll gain as you gain new levels.
 
@@ -357,7 +357,7 @@ With the Director's permission, you can also change the damage types of your com
 |     Beast, Companion     |         -         |                            Level 1                            |          -          |            -             |
 |:------------------------:|:-----------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
 |      **1L**<br>Size      |  **5**<br>Speed   |                    **= yours**<br>Stamina                     | **2**<br>Stability  | **1 + M**<br>Free Strike |
-| **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |                     |                          |
+| **Poison 3**<br>Immunity | **—**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness)**<br>Skills |                     |                          |
 |     **+2**<br>Might      | **+1**<br>Agility |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: petrify -->
@@ -408,7 +408,7 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 | Animal, Companion |           -           |                             Level 1                             |          -          |            -             |
 |:-----------------:|:---------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1L**<br>Size   |    **5**<br>Speed     |                     **= yours**<br>Stamina                      | **2**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
 |  **+2**<br>Might  |   **+1**<br>Agility   |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: backhand -->
@@ -459,7 +459,7 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 | Animal, Companion |         -         |                         Level 1                         |          -          |            -             |
 |:-----------------:|:-----------------:|:-------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **5**<br>Speed   |                 **= yours**<br>Stamina                  | **2**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill/search)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **—**<br>Movement | **[Search](scc:mcdm.heroes.v1/skill.intrigue/search)**<br>Skills |                     |                          |
 |  **+2**<br>Might  | **+1**<br>Agility |                    **−1**<br>Reason                     | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: gore -->
@@ -510,7 +510,7 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 | Animal, Companion |          -          |                            Level 1                            |          -          |            -             |
 |:-----------------:|:-------------------:|:-------------------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |   **7**<br>Speed    |                    **= yours**<br>Stamina                     | **0**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill/alertness)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **Fly**<br>Movement | **[Alertness](scc:mcdm.heroes.v1/skill.intrigue/alertness)**<br>Skills |                     |                          |
 |  **+2**<br>Might  |  **+1**<br>Agility  |                       **−1**<br>Reason                        | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: flurry-of-wings -->
@@ -561,7 +561,7 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 | Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
 |:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
 |  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: terrible-claws -->
@@ -612,7 +612,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |                                                                  Companion, Dragon                                                                  |          -          |                             Level 1                             |          -          |            -             |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |                                                                   **1M**<br>Size                                                                    |   **5**<br>Speed    |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
 |                                                                   **+2**<br>Might                                                                   |  **+1**<br>Agility  |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: drake-breath -->
@@ -668,7 +668,7 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 |    Companion, Elemental     |         -         |                        Level 1                        |          -          |            -             |
 |:---------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |       **1M**<br>Size        |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill/magic)**<br>Skills |                     |                          |
+| **Lightning 3**<br>Immunity | **—**<br>Movement | **[Magic](scc:mcdm.heroes.v1/skill.lore/magic)**<br>Skills |                     |                          |
 |       **+2**<br>Might       | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: static-shock -->
@@ -719,7 +719,7 @@ While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/m
 |    Companion, Ooze     |         -         |                        Level 1                        |          -          |            -             |
 |:----------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |     **1L**<br>Size     |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **2**<br>Stability  | **1 + M**<br>Free Strike |
-| **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+| **Acid 3**<br>Immunity | **—**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
 |    **+2**<br>Might     | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: absorb -->
@@ -770,7 +770,7 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 |  Companion, Infernal   |         -         |                             Level 1                             |          -          |            -             |
 |:----------------------:|:-----------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |     **1M**<br>Size     |  **7**<br>Speed   |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill/intimidate)**<br>Skills |                     |                          |
+| **Fire 3**<br>Immunity | **—**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
 |    **+2**<br>Might     | **+2**<br>Agility |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: fire-breath -->
@@ -821,7 +821,7 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 | Beast, Companion  |         -         |                       Level 1                       |          -          |            -             |
 |:-----------------:|:-----------------:|:---------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1L**<br>Size   |  **7**<br>Speed   |               **= yours**<br>Stamina                | **2**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill/hide)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **—**<br>Movement | **[Hide](scc:mcdm.heroes.v1/skill.intrigue/hide)**<br>Skills |                     |                          |
 |  **+2**<br>Might  | **+1**<br>Agility |                  **−1**<br>Reason                   | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: sparking-tail-whip -->
@@ -848,7 +848,7 @@ Any effect on the lightbender that would be ended by a saving throw instead ends
 <!-- @type: feature | @id: hit-and-run -->
 ###### Hit and Run
 
-Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares and use the [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver.
+Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares and use the [Hide](scc:mcdm.heroes.v1/skill.intrigue/hide) maneuver.
 
 <!-- @type: feature-group | @level: 6 -->
 ##### Level 6 Lightbender Advancement Feature
@@ -872,7 +872,7 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 | Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
 |:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |    **7**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
 |  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: pounce -->
@@ -923,7 +923,7 @@ While the panther is rampaging, you and the panther are invisible and can move t
 | Animal, Companion |           -           |                        Level 1                        |          -          |            -             |
 |:-----------------:|:---------------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |    **5**<br>Speed     |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill/sneak)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **Climb**<br>Movement | **[Sneak](scc:mcdm.heroes.v1/skill.intrigue/sneak)**<br>Skills |                     |                          |
 |  **+2**<br>Might  |   **+2**<br>Agility   |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: web-shot -->
@@ -974,7 +974,7 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 |     Beast, Companion     |         -         |                        Level 1                        |          -          |            -             |
 |:------------------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |      **1S**<br>Size      |  **5**<br>Speed   |                **= yours**<br>Stamina                 | **0**<br>Stability  | **1 + M**<br>Free Strike |
-| **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+| **Poison 3**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
 |     **+2**<br>Might      | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: spore-puff -->
@@ -1025,7 +1025,7 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 | Animal, Companion |         -         |                        Level 1                        |          -          |            -             |
 |:-----------------:|:-----------------:|:-----------------------------------------------------:|:-------------------:|:------------------------:|
 |  **1M**<br>Size   |  **7**<br>Speed   |                **= yours**<br>Stamina                 | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill/track)**<br>Skills |                     |                          |
+| **—**<br>Immunity | **—**<br>Movement | **[Track](scc:mcdm.heroes.v1/skill.intrigue/track)**<br>Skills |                     |                          |
 |  **+2**<br>Might  | **+2**<br>Agility |                   **−1**<br>Reason                    | **+2**<br>Intuition |    **+1**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: clamping-jaws -->
@@ -1287,7 +1287,7 @@ Your wild nature grants you a triggered action, as shown on the Wild Nature Trig
 
 **Trigger:** An enemy within 10 squares deals damage to a creature other than you.
 
-**Effect:** You become invisible until the end of your next turn or you deal damage. You can then use the [Hide](scc:mcdm.heroes.v1/skill/hide) maneuver even if you are observed and can move up to a number of squares equal to your Intuition score before or after using that maneuver.
+**Effect:** You become invisible until the end of your next turn or you deal damage. You can then use the [Hide](scc:mcdm.heroes.v1/skill.intrigue/hide) maneuver even if you are observed and can move up to a number of squares equal to your Intuition score before or after using that maneuver.
 
 **Spend 1 Ferocity:** You can move up to a number of squares equal to twice your Intuition score and ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) during this movement.
 
@@ -2311,7 +2311,7 @@ As a 9th-level beastheart, you gain the following features.
 <!-- @type: feature | @id: avatar-of-the-green | @level: 9 -->
 ##### Avatar of the Green
 
-Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the [Nature](scc:mcdm.heroes.v1/skill/nature) skill and one other skill from the lore skill group.
+Your companion has transcended beasthood. Although they're still your faithful friend, they're also a vessel for nature's wisdom and memories. Your companion's Reason score increases to 1, or increases by 1 if it is already 1 or higher, and they learn every language you know. Your companion can communicate telepathically with any creature within 10 squares, using language as well as images and feelings. Additionally, you learn the [Nature](scc:mcdm.heroes.v1/skill.lore/nature) skill and one other skill from the lore skill group.
 
 <!-- @type: feature | @id: 9th-level-wild-nature-ability | @level: 9 -->
 ### 9th-Level Wild Nature Ability
