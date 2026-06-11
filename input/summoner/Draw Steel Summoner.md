@@ -409,7 +409,7 @@ Your choice of circle decides the portfolio from which you summon minions, as we
 <!-- @type: feature | @id: minions | @level: 1 -->
 ### Minions
 
-The creatures you control are called minions. You can summon and maintain up to a maximum of 8 minions. Your minions are considered [allies](scc:mcdm.heroes.v1/rule.combat/ally) at your level.
+The creatures you control are called minions. You can summon and maintain up to a maximum of 8 minions. Your minions are considered allies at your level.
 
 You can manage up to two squads of minions. Newly summoned minions can either be organized into a new squad or be distributed into other squads under your control. A squad can't contain more than eight minions, and all minions in the squad must have the same name.
 
@@ -478,7 +478,7 @@ At the start of a combat encounter or some other stressful situation tracked in 
 
 At the start of each of your [turns](scc:mcdm.heroes.v1/rule.combat/turn) during combat, you gain 2 essence.
 
-The first time each [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that any minion (either yours or an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy)) dies unwillingly within your Summoner's Range, you gain 1 essence.
+The first time each [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that any minion (either yours or an enemy) dies unwillingly within your Summoner's Range, you gain 1 essence.
 
 Whenever you use a [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) or call forth a minion that costs essence, you can willingly sacrifice one or more of your minions within your Summoner's Range to reduce the cost by 1. You can't kill minions this way if they used a [main action](scc:mcdm.heroes.v1/rule.combat/turn) or maneuver during the [turn](scc:mcdm.heroes.v1/rule.combat/turn). You can sacrifice more minions than you would reduce the cost by.
 
@@ -580,7 +580,7 @@ You have the following maneuver.
 
 You can [shift](scc:mcdm.heroes.v1/movement/shifting) into squares that contain one of your minions, even if they occupy [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Each time you [shift](scc:mcdm.heroes.v1/movement/shifting) into a square that contains one of your minions while using this maneuver, you can [shift](scc:mcdm.heroes.v1/movement/shifting) an additional square.
 
-**1 Essence:** An adjacent [ally](scc:mcdm.heroes.v1/rule.combat/ally) can [shift](scc:mcdm.heroes.v1/movement/shifting) alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
+**1 Essence:** An adjacent ally can [shift](scc:mcdm.heroes.v1/movement/shifting) alongside you during this movement. They must end their movement in an unoccupied square adjacent to the last minion you moved through.
 
 <!-- @type: feature | @id: 1st-level-circle-features | @level: 1 -->
 ### 1st-Level Circle Features
@@ -634,14 +634,14 @@ You can sense the presence of creatures with the Elemental or Dragon keywords wi
 
 Increase your number of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) by 2.
 
-Whenever one of your fey minions dies within your Summoner's Range, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to give [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score to each non-minion [ally](scc:mcdm.heroes.v1/rule.combat/ally) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion when they died.
+Whenever one of your fey minions dies within your Summoner's Range, you can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to give [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) equal to twice your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score to each non-minion ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the minion when they died.
 
 <!-- @type: feature | @id: rise | @level: 1 -->
 #### Rise!
 
 Once per [round](scc:mcdm.heroes.v1/rule.combat/combat-round), when a creature dies unwillingly within your Summoner's Range, you can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to summon a signature undead minion in their space at no cost, even if you're at your minion maximum, but only if they can be organized into one of your squads. The new minion can't act until the start of your next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
-This ability becomes a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) if the target was a minion (either yours or an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy)).
+This ability becomes a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) if the target was a minion (either yours or an enemy).
 
 <!-- @type: feature | @id: soulsense | @level: 1 -->
 #### Soulsense
@@ -681,7 +681,7 @@ Additionally, you can use light armor [treasures](scc:mcdm.heroes.v1/rule.treasu
 >
 > [Treasures](scc:mcdm.heroes.v1/rule.treasure/leveled-treasure) in Draw Steel are typically worded for you to use, which might create ambiguity for a [summoner](scc:mcdm.summoner.v1/class/summoner) managing an army. You can use the following guidelines to ensure the treasures you come across in your adventures do what they were intended to do.
 >
-> - Treasures that give you a [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus to [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) only apply to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made from a non-minion's space. However, when you use [Strike for Me](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/strike-for-me), any bonus damage is applied to each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) and object that took damage.
+> - Treasures that give you a [damage](scc:mcdm.heroes.v1/rule.damage/damage) bonus to [rolled damage](scc:mcdm.heroes.v1/rule.damage/rolled-damage) only apply to [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) made from a non-minion's space. However, when you use [Strike for Me](scc:mcdm.summoner.v1/feature.ability.summoner.level-1/strike-for-me), any bonus damage is applied to each enemy and object that took damage.
 > - Once you reach level 4 as a [summoner](scc:mcdm.summoner.v1/class/summoner), you regain access to your normal [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) abilities while wielding a weapon treasure, an [implement](scc:mcdm.heroes.v1/rule.treasure/implement) treasure, or any treasure that enables you to make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as a part of its effect.
 > - Treasures that increase the [distance](scc:mcdm.heroes.v1/rule.combat/distance) of ranged magic abilities also increase the distance of your Summoner's Range.
 
@@ -1382,8 +1382,8 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 
 **Effect:** You can spend charges to activate one of the following effects. You can activate an effect multiple times. All charges disappear after using this ability.
 
-- 1 charge: You or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) within your Summoner's Range can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
-- 1 charge: You or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) within your Summoner's Range gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
+- 1 charge: You or an ally within your Summoner's Range can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
+- 1 charge: You or an ally within your Summoner's Range gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 - 2 charges: You call forth a signature [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) into an unoccupied space within your Summoner's Range.
 
 <!-- @type: ability | @id: explosive-parade | @level: 1 -->
@@ -1401,9 +1401,9 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 - **12-16:** You summon five signature minions.
 - **17+:** You summon six signature minions.
 
-**Effect:** The [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) are summoned within distance regardless of your minion maximum and without organizing them into squads. Each newly summoned [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) immediately moves up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) toward a [creature](scc:mcdm.heroes.v1/rule.general/creature) or object.
+**Effect:** The [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) are summoned within distance regardless of your minion maximum and without organizing them into squads. Each newly summoned [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) immediately moves up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) toward a creature or object.
 
-If they move adjacent to their target, become targeted by an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), or stop moving, they explode, dealing 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to one adjacent [creature](scc:mcdm.heroes.v1/rule.general/creature) or object and pushing them 1 square. If a target is affected by two or more minions' explosions, the effects stack. These [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) activate no effects upon death, and you gain no [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence) from their deaths.
+If they move adjacent to their target, become targeted by an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack), or stop moving, they explode, dealing 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to one adjacent creature or object and pushing them 1 square. If a target is affected by two or more minions' explosions, the effects stack. These [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) activate no effects upon death, and you gain no [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence) from their deaths.
 
 **Special:** In addition to the [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) summoned as a part of this ability, you can choose to command any number of your [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) within distance, provided they haven't used a main action or maneuver during the [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
@@ -1418,7 +1418,7 @@ If they move adjacent to their target, become targeted by an [opportunity attack
 
 **Effect:** Until the end of the encounter or until you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) under your control during the encounter is the target of the following effect:
 
-The target's [strikes](scc:mcdm.heroes.v1/rule.combat/strike) can inflict I < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) to [enemies](scc:mcdm.heroes.v1/rule.combat/enemy). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) that joined the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
+The target's [strikes](scc:mcdm.heroes.v1/rule.combat/strike) can inflict I < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) to enemies. The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) that joined the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 <!-- @type: ability | @id: rallying-cry | @level: 1 -->
 ###### Rallying Cry (5 Essence)
@@ -1463,7 +1463,7 @@ The target's [strikes](scc:mcdm.heroes.v1/rule.combat/strike) can inflict I < WE
 - **12-16:** 2 + R damage
 - **17+:** 4 + R damage
 
-**Effect:** This [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an additional 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) for each [ally](scc:mcdm.heroes.v1/rule.combat/ally) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
+**Effect:** This [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an additional 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) for each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 
 <!-- @type: feature | @id: 2nd-level-features | @level: 2 -->
 ### 2nd-Level Features
@@ -1499,17 +1499,17 @@ The boil arises from the chaotic depths of the Abyssal Waste, concentrated into 
 
 > ⭐️ **Hunger Thrush**
 >
-> Each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the boil is I < AVERAGE [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) by the boil, or I < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) by the boil and can't move further from it.
+> Each enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the boil is I < AVERAGE [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) by the boil, or I < WEAK [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) by the boil and can't move further from it.
 
 > ⭐️ **Oh, It Pops**
 >
-> When the boil is destroyed, each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) within 3 squares of the boil takes acid [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your level and is A < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
+> When the boil is destroyed, each enemy within 3 squares of the boil takes acid [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your level and is A < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 > **Level 5 Fixture Advancement Feature**
 >
 > ⭐️ **Soul Rancor**
 >
-> You gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that your demon [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) deal 3 or more [damage](scc:mcdm.heroes.v1/rule.damage/damage) to a [creature](scc:mcdm.heroes.v1/rule.general/creature) while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an [ally](scc:mcdm.heroes.v1/rule.combat/ally) who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil.
+> You gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that your demon [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) deal 3 or more [damage](scc:mcdm.heroes.v1/rule.damage/damage) to a creature while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an ally who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil.
 
 > **Level 9 Fixture Advancement Feature**
 >
@@ -1519,7 +1519,7 @@ The boil arises from the chaotic depths of the Abyssal Waste, concentrated into 
 >
 > ⭐️ **Fester Field**
 >
-> Each non-abyssal [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the boil takes 5 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage).
+> Each non-abyssal enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the boil takes 5 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
 <!-- @type: monster-group | @domain: fixture | @category: elemental -->
 ##### Elemental Portfolio Fixture
@@ -1536,17 +1536,17 @@ The storm of elements from Quintessence coalesce into a hardened, crystalline st
 
 > ⭐️ **Magnetic Pull**
 >
-> Each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the crystal is vertically pulled 3.
+> Each enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the crystal is vertically pulled 3.
 
 > ⭐️ **Elemental Boost**
 >
-> When you or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) uses a ranged ability that draws a line through the crystal, the distance increases by 5.
+> When you or an ally uses a ranged ability that draws a line through the crystal, the distance increases by 5.
 
 > **Level 5 Fixture Advancement Feature**
 >
 > ⭐️ **Terra Resonance**
 >
-> Each [round](scc:mcdm.heroes.v1/rule.combat/combat-round), you gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time an area of terrain gains a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effect (excluding [auras](scc:mcdm.heroes.v1/rule.combat/aura)) while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the crystal. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an [ally](scc:mcdm.heroes.v1/rule.combat/ally) who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the crystal.
+> Each [round](scc:mcdm.heroes.v1/rule.combat/combat-round), you gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time an area of terrain gains a [supernatural](scc:mcdm.heroes.v1/rule.general/supernatural) effect (excluding [auras](scc:mcdm.heroes.v1/rule.combat/aura)) while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the crystal. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an ally who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the crystal.
 
 > **Level 9 Fixture Advancement Feature**
 >
@@ -1556,7 +1556,7 @@ The storm of elements from Quintessence coalesce into a hardened, crystalline st
 >
 > ⭐️ **Magnified Strike**
 >
-> When you or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) makes a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike) that draws a line through the crystal, the user gains a [surge](scc:mcdm.heroes.v1/rule.resource/surge) which they can use on the ability.
+> When you or an ally makes a ranged [strike](scc:mcdm.heroes.v1/rule.combat/strike) that draws a line through the crystal, the user gains a [surge](scc:mcdm.heroes.v1/rule.resource/surge) which they can use on the ability.
 
 <!-- @type: monster-group | @domain: fixture | @category: fey -->
 ##### Fey Portfolio Fixture
@@ -1573,7 +1573,7 @@ The vibrant waters of Arcadia pour through a hole in reality and pool into a ver
 
 > ⭐️ **Bubbling Boost**
 >
-> You and each non-minion [ally](scc:mcdm.heroes.v1/rule.combat/ally) that enters one or more squares within 3 squares of the pond or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there has their [speed](scc:mcdm.heroes.v1/rule.character/speed) increased by 2 until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+> You and each non-minion ally that enters one or more squares within 3 squares of the pond or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there has their [speed](scc:mcdm.heroes.v1/rule.character/speed) increased by 2 until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 > ⭐️ **Overgrowth**
 >
@@ -1583,7 +1583,7 @@ The vibrant waters of Arcadia pour through a hole in reality and pool into a ver
 >
 > ⭐️ **Garden of Jest**
 >
-> You can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) a [creature](scc:mcdm.heroes.v1/rule.general/creature) gains or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) with a [condition](scc:mcdm.heroes.v1/rule.combat/condition) while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the pond. Alternatively, you can choose to enable an [ally](scc:mcdm.heroes.v1/rule.combat/ally) who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) instead.
+> You can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) a creature gains or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) with a [condition](scc:mcdm.heroes.v1/rule.combat/condition) while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the pond. Alternatively, you can choose to enable an ally who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the boil to spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) instead.
 
 > **Level 9 Fixture Advancement Feature**
 >
@@ -1593,7 +1593,7 @@ The vibrant waters of Arcadia pour through a hole in reality and pool into a ver
 >
 > ⭐️ **Folly Field**
 >
-> Each non-fey [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the pond has a −1 penalty to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+> Each non-fey enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the pond has a −1 penalty to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) and resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: monster-group | @domain: fixture | @category: undead -->
 ##### Undead Portfolio Fixture
@@ -1610,7 +1610,7 @@ Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spir
 
 > ⭐️ **The Bell Tolls**
 >
-> Each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the gates is I < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT) by the gates. The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for [winded](scc:mcdm.heroes.v1/rule.health/winded) [enemies](scc:mcdm.heroes.v1/rule.combat/enemy).
+> Each enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the gates is I < AVERAGE [frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT) by the gates. The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for [winded](scc:mcdm.heroes.v1/rule.health/winded) enemies.
 
 > ⭐️ **Undead Dominion**
 >
@@ -1620,7 +1620,7 @@ Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spir
 >
 > ⭐️ **Memento Mori**
 >
-> You gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) one of your undead [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) unwillingly dies while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an [ally](scc:mcdm.heroes.v1/rule.combat/ally) who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates.
+> You gain a [surge](scc:mcdm.heroes.v1/rule.resource/surge) the first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) one of your undead [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) unwillingly dies while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates. You can choose to give the [surge](scc:mcdm.heroes.v1/rule.resource/surge) to an ally who also has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates.
 
 > **Level 9 Fixture Advancement Feature**
 >
@@ -1630,7 +1630,7 @@ Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spir
 >
 > ⭐️ **Open the Gates**
 >
-> You can use [Rise!](scc:mcdm.summoner.v1/feature.summoner.level-1/rise) as a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) each time an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) dies within 3 squares of the gates while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates.
+> You can use [Rise!](scc:mcdm.summoner.v1/feature.summoner.level-1/rise) as a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) each time an enemy dies within 3 squares of the gates while you have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the gates.
 
 <!-- @type: feature | @id: new-portfolio-minion | @level: 2 -->
 #### New Portfolio Minion
@@ -1659,11 +1659,11 @@ A spewler's mouth makes up most of its size. They unleash torrents of acid and b
 
 > ⭐️ **Spew Slide**
 >
-> Each time the spewler takes [damage](scc:mcdm.heroes.v1/rule.damage/damage), the spewler [shifts](scc:mcdm.heroes.v1/movement/shifting) 2 after all effects resolve. Each square they exit during this movement is covered in slime until the end of the encounter. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) while occupying a slimed square.
+> Each time the spewler takes [damage](scc:mcdm.heroes.v1/rule.damage/damage), the spewler [shifts](scc:mcdm.heroes.v1/movement/shifting) 2 after all effects resolve. Each square they exit during this movement is covered in slime until the end of the encounter. An enemy has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) while occupying a slimed square.
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the spewler can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the spewler can't be hidden from them.
 
 <!-- @type: statblock -->
 ####### Hulking Chimor
@@ -1686,7 +1686,7 @@ Chimors have no true shape; their bodies restructure and change endlessly. Piece
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the chimor can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the chimor can't be hidden from them.
 
 <!-- @type: statblock -->
 ####### Violent
@@ -1701,7 +1701,7 @@ The violents are lanky, oily bipeds with bright red flesh that contort and snap 
 
 > ⭐️ **Transforming Strike**
 >
-> The violent's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deal an additional 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) from whom they were hidden. The violent loses their disguise after striking.
+> The violent's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) deal an additional 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy from whom they were hidden. The violent loses their disguise after striking.
 
 > ⭐️ **Mimicry**
 >
@@ -1709,7 +1709,7 @@ The violents are lanky, oily bipeds with bright red flesh that contort and snap 
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the violent can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the violent can't be hidden from them.
 
 <!-- @type: monster-group | @domain: minion | @category: elemental -->
 ##### Elemental Portfolio 5-Essence Minion
@@ -1729,11 +1729,11 @@ The silks are akin to baby spiders ballooning through the air on strands of webb
 
 > ⭐️ **Entangling Strike**
 >
-> The silk's ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < AVERAGE [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT). Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target is A < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
+> The silk's ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < AVERAGE [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT). Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target is A < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 
 > ⭐️ **Web** 1 Essence
 >
-> When the silk is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they launch ribbons of webbing into an area equal to their [size](scc:mcdm.heroes.v1/rule.character/size) + 1 within 5 before being destroyed. The affected area is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for [enemies](scc:mcdm.heroes.v1/rule.combat/enemy) until the end of the encounter. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the webbing is M < STRONG [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
+> When the silk is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they launch ribbons of webbing into an area equal to their [size](scc:mcdm.heroes.v1/rule.character/size) + 1 within 5 before being destroyed. The affected area is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the webbing is M < STRONG [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 
 <!-- @type: statblock -->
 ####### Principle of the Swamp
@@ -1748,11 +1748,11 @@ The manes of these equine sludge dwellers extend and hook into things like stron
 
 > ⭐️ **Encroaching Strike**
 >
-> The principle's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of R and inflict M < STRONG [grabbed](scc:mcdm.heroes.v1/condition/grabbed). The principle can have an unlimited number of [creatures](scc:mcdm.heroes.v1/rule.general/creature) or objects [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A [creature](scc:mcdm.heroes.v1/rule.general/creature) [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by this [strike](scc:mcdm.heroes.v1/rule.combat/strike) still has their normal [speed](scc:mcdm.heroes.v1/rule.character/speed), but can't move farther away from the principle.
+> The principle's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of R and inflict M < STRONG [grabbed](scc:mcdm.heroes.v1/condition/grabbed). The principle can have an unlimited number of creatures or objects [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by this [strike](scc:mcdm.heroes.v1/rule.combat/strike) still has their normal [speed](scc:mcdm.heroes.v1/rule.character/speed), but can't move farther away from the principle.
 
 > ⭐️ **Sludgefoot** 1 Essence
 >
-> When the principle is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the principle becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for [enemies](scc:mcdm.heroes.v1/rule.combat/enemy) until the end of the encounter. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the affected area is pulled 4 toward the center of the area.
+> When the principle is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the principle becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in the affected area is pulled 4 toward the center of the area.
 
 <!-- @type: statblock -->
 ####### Quiet of Snow
@@ -1777,11 +1777,11 @@ This elemental is a pure-white vulpine with six legs that freely sprints through
 >
 > 8 cold [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < STRONG speed is 0 (EoT)
 >
-> **Effect:** Frost slows the [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) down, allowing one [ally](scc:mcdm.heroes.v1/rule.combat/ally) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each target to [shift](scc:mcdm.heroes.v1/movement/shifting) 2 and either [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) or [defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend).
+> **Effect:** Frost slows the enemy down, allowing one ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each target to [shift](scc:mcdm.heroes.v1/movement/shifting) 2 and either [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) or [defend](scc:mcdm.heroes.v1/feature.common.main-actions/defend).
 
 > ⭐️ **Cold Surge**
 >
-> When the quiet is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they launch a refreshing blast of air into an area equal to their [size](scc:mcdm.heroes.v1/rule.character/size) + 1 within 5 before being destroyed. Each [ally](scc:mcdm.heroes.v1/rule.combat/ally) in the affected area gains a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
+> When the quiet is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they launch a refreshing blast of air into an area equal to their [size](scc:mcdm.heroes.v1/rule.character/size) + 1 within 5 before being destroyed. Each ally in the affected area gains a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
 <!-- @type: monster-group | @domain: minion | @category: fey -->
 ##### Fey Portfolio 5-Essence Minion
@@ -1805,11 +1805,11 @@ Hemloches are spotted nixies whose long, wavy hair endlessly bobs and flows into
 
 > ⭐️ **Whirling Waves**
 >
-> The area within 1 square of the hemloche is filled with churning water and is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). At the end of the hemloche's [turn](scc:mcdm.heroes.v1/rule.combat/turn), the hemloche can choose to [slide](scc:mcdm.heroes.v1/movement/forced-movement) each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) in the affected area 3 squares. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) while being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is also M < AVERAGE knocked [prone](scc:mcdm.heroes.v1/condition/prone).
+> The area within 1 square of the hemloche is filled with churning water and is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). At the end of the hemloche's [turn](scc:mcdm.heroes.v1/rule.combat/turn), the hemloche can choose to [slide](scc:mcdm.heroes.v1/movement/forced-movement) each enemy in the affected area 3 squares. An enemy that takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) while being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is also M < AVERAGE knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Minuscule**
 >
-> The hemloche has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger [creature's](scc:mcdm.heroes.v1/rule.general/creature) space.
+> The hemloche has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Sprite Foxglow
@@ -1828,11 +1828,11 @@ Foxglows are masked sprites that leave behind an evanescent trail of tiny glowin
 
 > ⭐️ **Quiet Flight**
 >
-> The area within 2 squares of the foxglow is completely silent. Each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for the foxglow and [allies](scc:mcdm.heroes.v1/rule.combat/ally) hidden in the affected area.
+> The area within 2 squares of the foxglow is completely silent. Each enemy has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [tests](scc:mcdm.heroes.v1/rule.test/test) made to search for the foxglow and allies hidden in the affected area.
 
 > ⭐️ **Minuscule**
 >
-> The foxglow has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger [creature's](scc:mcdm.heroes.v1/rule.general/creature) space.
+> The foxglow has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Pixie Rosenthall
@@ -1861,7 +1861,7 @@ The collective of blood-eyed pixie warriors that make up a rosenthall are also k
 
 > ⭐️ **Swarm**
 >
-> The rosenthall can move through squares as if they were [size](scc:mcdm.heroes.v1/rule.character/size) 1T, and can occupy other [creatures'](scc:mcdm.heroes.v1/rule.general/creature) spaces. At the start of the rosenthall's [turn](scc:mcdm.heroes.v1/rule.combat/turn), they deal 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) whose space they share.
+> The rosenthall can move through squares as if they were [size](scc:mcdm.heroes.v1/rule.character/size) 1T, and can occupy other creatures' spaces. At the start of the rosenthall's [turn](scc:mcdm.heroes.v1/rule.combat/turn), they deal 2 [damage](scc:mcdm.heroes.v1/rule.damage/damage) to each enemy whose space they share.
 
 <!-- @type: monster-group | @domain: minion | @category: undead -->
 ##### Undead Portfolio 5-Essence Minion
@@ -1895,7 +1895,7 @@ The preserved dead, bound for eternal rest, know only violence when robbed of th
 
 > ⭐️ **Mummy Dust**
 >
-> Whenever the mummy takes [damage](scc:mcdm.heroes.v1/rule.damage/damage), each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the mummy takes 2 poison [damage](scc:mcdm.heroes.v1/rule.damage/damage).
+> Whenever the mummy takes [damage](scc:mcdm.heroes.v1/rule.damage/damage), each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the mummy takes 2 poison [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
 <!-- @type: statblock -->
 ####### Ceaseless Mournling
@@ -1910,7 +1910,7 @@ Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenche
 
 > ⭐️ **Always Crying**
 >
-> At the end of the mournling's [turn](scc:mcdm.heroes.v1/rule.combat/turn), each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) within 1 of the mournling takes 2 sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage) and can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the mournling's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+> At the end of the mournling's [turn](scc:mcdm.heroes.v1/rule.combat/turn), each enemy within 1 of the mournling takes 2 sonic [damage](scc:mcdm.heroes.v1/rule.damage/damage) and can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the mournling's next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 > ⭐️ **Immutable Form**
 >
@@ -1918,7 +1918,7 @@ Mournlings are hulking amalgams of mismatched cadavers with tear-stained trenche
 
 > ⭐️ **Rupture**
 >
-> The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their [turn](scc:mcdm.heroes.v1/rule.combat/turn), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) [enemy](scc:mcdm.heroes.v1/rule.combat/enemy).
+> The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their [turn](scc:mcdm.heroes.v1/rule.combat/turn), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: statblock -->
 ####### Phase Ghoul
@@ -1968,12 +1968,12 @@ The first time each [round](scc:mcdm.heroes.v1/rule.combat/combat-round) you tak
 <!-- @type: feature | @id: howling-ward | @level: 3 -->
 ##### Howling Ward
 
-You create a 1-[aura](scc:mcdm.heroes.v1/rule.combat/aura) vortex of slicing magic around you when you enter combat. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
+You create a 1-[aura](scc:mcdm.heroes.v1/rule.combat/aura) vortex of slicing magic around you when you enter combat. An enemy that starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 <!-- @type: feature | @id: snare-ward | @level: 3 -->
 ##### Snare Ward
 
-Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) [creature](scc:mcdm.heroes.v1/rule.general/creature) deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to you, you can use a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to pull that [creature](scc:mcdm.heroes.v1/rule.general/creature) toward one of your [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) within your Summoner's Range a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
+Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to you, you can use a [free triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to pull that creature toward one of your [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) within your Summoner's Range a number of squares equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) score.
 
 <!-- @type: feature | @id: 7-essence-ability | @level: 3 -->
 #### 7-Essence Ability
@@ -1989,7 +1989,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 |-----------|------------------:|
 | **📏 Self** | **🎯 Special** |
 
-**Effect:** Until the end of the encounter or you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) under your control during the encounter is the target of the following effect. The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that the target moves through an [enemy's](scc:mcdm.heroes.v1/rule.combat/enemy) space, the [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) can choose to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square or be M < WEAK (or M < AVERAGE if the target is larger than the [enemy](scc:mcdm.heroes.v1/rule.combat/enemy)) knocked [prone](scc:mcdm.heroes.v1/condition/prone). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each subsequent target that moves through the [enemy's](scc:mcdm.heroes.v1/rule.combat/enemy) space during the same move action.
+**Effect:** Until the end of the encounter or you are [dying](scc:mcdm.heroes.v1/rule.health/dying), each [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) under your control during the encounter is the target of the following effect. The first time on a [turn](scc:mcdm.heroes.v1/rule.combat/turn) that the target moves through an enemy's space, the enemy can choose to [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square or be M < WEAK (or M < AVERAGE if the target is larger than the enemy) knocked [prone](scc:mcdm.heroes.v1/condition/prone). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each subsequent target that moves through the enemy's space during the same move action.
 
 <!-- @type: ability | @id: cavalry-call | @level: 3 -->
 ##### Cavalry Call (7 Essence)
@@ -2000,7 +2000,7 @@ Choose one [heroic ability](scc:mcdm.heroes.v1/rule.general/heroic-ability) from
 |-----------|----------------:|
 | **📏 Summoner's Range** | **🎯 Special** |
 
-**Effect:** You summon a temporary squad containing 6 of your signature [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) regardless of your minion maximum within distance. Whenever one of these [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy), the [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) is R < AVERAGE compelled to move 5 squares toward the source of the [damage](scc:mcdm.heroes.v1/rule.damage/damage) (provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack)). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for [enemies](scc:mcdm.heroes.v1/rule.combat/enemy) targeted by two or more of these [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions).
+**Effect:** You summon a temporary squad containing 6 of your signature [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) regardless of your minion maximum within distance. Whenever one of these [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) deals [damage](scc:mcdm.heroes.v1/rule.damage/damage) to an enemy, the enemy is R < AVERAGE compelled to move 5 squares toward the source of the [damage](scc:mcdm.heroes.v1/rule.damage/damage) (provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack)). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for enemies targeted by two or more of these [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions).
 
 These [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) die at the end of your [turn](scc:mcdm.heroes.v1/rule.combat/turn), activate no effects upon death, and you gain no [essence](scc:mcdm.summoner.v1/feature.summoner.level-1/essence) from their deaths.
 
@@ -2109,11 +2109,11 @@ Your circle grants you a feature as shown on the 5th-Level Summoner Circle Featu
 <!-- @type: feature | @id: channel | @level: 5 -->
 #### Channel
 
-You can spend 1 uninterrupted minute to perform a ritual and use your body as a host for a willing spirit of a [creature](scc:mcdm.heroes.v1/rule.general/creature) who died in the area. While hosting the spirit, you have access to their memories of the 24 hours leading up to their death and any skills they knew in life. You can also magically change your appearance to look like them while they were alive.
+You can spend 1 uninterrupted minute to perform a ritual and use your body as a host for a willing spirit of a creature who died in the area. While hosting the spirit, you have access to their memories of the 24 hours leading up to their death and any skills they knew in life. You can also magically change your appearance to look like them while they were alive.
 
 You can attempt to stop channeling the spirit at any time. If the spirit is hostile to you or you've hosted them for at least 1 hour, you must make a medium [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test). On success, the spirit leaves your body. On failure, you become fully possessed by a haunt; you have no access to your skills and you can't get above a tier 2 result on [power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll) until you exorcise the haunt either by completing the [Find a Cure](scc:mcdm.heroes.v1/project/find-a-cure) downtime project in Draw Steel: Heroes or taking a [respite](scc:mcdm.heroes.v1/rule.resource/respite) with an exorcist.
 
-After you stop channeling their spirit, you can't use this feature to channel the same [creature](scc:mcdm.heroes.v1/rule.general/creature) again.
+After you stop channeling their spirit, you can't use this feature to channel the same creature again.
 
 <!-- @type: feature | @id: dread-march | @level: 5 -->
 #### Dread March
@@ -2123,7 +2123,7 @@ You and your undead [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/mini
 <!-- @type: feature | @id: flash-powder | @level: 5 -->
 #### Flash Powder
 
-Each [ally](scc:mcdm.heroes.v1/rule.combat/ally) that gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from your [Pixie Dust](scc:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) feature also gains one of the following effects until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn) (or for 10 minutes if used outside of combat):
+Each ally that gains [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) from your [Pixie Dust](scc:mcdm.summoner.v1/feature.summoner.level-1/pixie-dust) feature also gains one of the following effects until the end of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn) (or for 10 minutes if used outside of combat):
 
 - **Flight:** Their [speed](scc:mcdm.heroes.v1/rule.character/speed) gains the [Fly](scc:mcdm.heroes.v1/movement/fly) keyword.
 - **Vanish:** They become invisible.
@@ -2133,7 +2133,7 @@ Each [ally](scc:mcdm.heroes.v1/rule.combat/ally) that gains [temporary Stamina](
 <!-- @type: feature | @id: nature-watch | @level: 5 -->
 #### Nature Watch
 
-You can spend 1 uninterrupted minute each day to perform a ritual and summon a special elemental mote called a beacon to patrol the area. This mote telepathically communicates any hostile [creatures](scc:mcdm.heroes.v1/rule.general/creature), hazards, or traps within 20 squares of them to you no matter how far away you are. You know the number of nearby hazards and which direction they're in relative to where the beacon is, but not their exact position. You can have a number of beacons active equal to your level.
+You can spend 1 uninterrupted minute each day to perform a ritual and summon a special elemental mote called a beacon to patrol the area. This mote telepathically communicates any hostile creatures, hazards, or traps within 20 squares of them to you no matter how far away you are. You know the number of nearby hazards and which direction they're in relative to where the beacon is, but not their exact position. You can have a number of beacons active equal to your level.
 
 <!-- @type: feature | @id: pixie-lift | @level: 5 -->
 #### Pixie Lift
@@ -2155,7 +2155,7 @@ Once during your [turn](scc:mcdm.heroes.v1/rule.combat/turn), you can use a [fre
 <!-- @type: feature | @id: soul-flense | @level: 5 -->
 #### Soul Flense
 
-As a maneuver, you can command one or more of your demon [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) to each deal [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to their [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) value to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) [ally](scc:mcdm.heroes.v1/rule.combat/ally). This [damage](scc:mcdm.heroes.v1/rule.damage/damage) can't be reduced. The [ally](scc:mcdm.heroes.v1/rule.combat/ally) then ends a [condition](scc:mcdm.heroes.v1/rule.combat/condition) affecting them and confers it to the demon that attacked them.
+As a maneuver, you can command one or more of your demon [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) to each deal [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to their [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) value to an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) ally. This [damage](scc:mcdm.heroes.v1/rule.damage/damage) can't be reduced. The ally then ends a [condition](scc:mcdm.heroes.v1/rule.combat/condition) affecting them and confers it to the demon that attacked them.
 
 Additionally, whenever one of your demon [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) Death Snaps, their target is P < WEAK affected by a [condition](scc:mcdm.heroes.v1/rule.combat/condition) the [minion](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) was suffering from. The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 on each subsequent Death Snap the target takes [damage](scc:mcdm.heroes.v1/rule.damage/damage) from in the same [turn](scc:mcdm.heroes.v1/rule.combat/turn) (maximum +2).
 
@@ -2192,7 +2192,7 @@ This cherubin creature is bloated and warped by demonic energy. The lights from 
 >
 > 16 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage); P < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 >
-> **Effect:** Instead of taking [damage](scc:mcdm.heroes.v1/rule.damage/damage), you or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) targeted by this ability impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets them.
+> **Effect:** Instead of taking [damage](scc:mcdm.heroes.v1/rule.damage/damage), you or an ally targeted by this ability impose a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the next [strike](scc:mcdm.heroes.v1/rule.combat/strike) that targets them.
 
 > ⭐️ **Wilted Wings**
 >
@@ -2200,7 +2200,7 @@ This cherubin creature is bloated and warped by demonic energy. The lights from 
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the blightling can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the blightling can't be hidden from them.
 
 <!-- @type: statblock -->
 ####### Gorrre
@@ -2215,15 +2215,15 @@ The gorrre demons evoke features of rhino and orangutan while clad in heavy armo
 
 > ⭐️ **Gorrring Strike**
 >
-> The gorrre must [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) before making a [strike](scc:mcdm.heroes.v1/rule.combat/strike). The target is M < STRONG knocked [prone](scc:mcdm.heroes.v1/condition/prone) if the gorrre moved through an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) or object other than the target during the [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge).
+> The gorrre must [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) before making a [strike](scc:mcdm.heroes.v1/rule.combat/strike). The target is M < STRONG knocked [prone](scc:mcdm.heroes.v1/condition/prone) if the gorrre moved through an enemy or object other than the target during the [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge).
 
 > ⭐️ **Devastating Charge**
 >
-> The gorrre ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) while [charging](scc:mcdm.heroes.v1/feature.common.main-actions/charge) and destroys unattended, [size](scc:mcdm.heroes.v1/rule.character/size) 1 objects in their path. Each [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) they move through during a [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) takes 3 [damage](scc:mcdm.heroes.v1/rule.damage/damage).
+> The gorrre ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) while [charging](scc:mcdm.heroes.v1/feature.common.main-actions/charge) and destroys unattended, [size](scc:mcdm.heroes.v1/rule.character/size) 1 objects in their path. Each enemy they move through during a [charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) takes 3 [damage](scc:mcdm.heroes.v1/rule.damage/damage).
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the gorrre can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the gorrre can't be hidden from them.
 
 <!-- @type: statblock -->
 ####### Vicisittante
@@ -2252,7 +2252,7 @@ It's difficult to identify the base nature of a vicisittante apart from an ever-
 
 > ⭐️ **Soulsight**
 >
-> Each [creature](scc:mcdm.heroes.v1/rule.general/creature) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the vicisittante can't be hidden from them.
+> Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the vicisittante can't be hidden from them.
 
 <!-- @type: monster-group | @domain: minion | @category: elemental -->
 ##### Elemental Portfolio 7-Essence Minion
@@ -2276,11 +2276,11 @@ Iron reavers are long, gnashing lines of centipede-like bladed legs. Their bodie
 
 > ⭐️ **Bladed Strike**
 >
-> The reaver's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each time the reaver inflicts [bleeding](scc:mcdm.heroes.v1/condition/bleeding) on a [creature](scc:mcdm.heroes.v1/rule.general/creature), they can [shift](scc:mcdm.heroes.v1/movement/shifting) 2 and make an additional [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) on a new target.
+> The reaver's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Each time the reaver inflicts [bleeding](scc:mcdm.heroes.v1/condition/bleeding) on a creature, they can [shift](scc:mcdm.heroes.v1/movement/shifting) 2 and make an additional [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) on a new target.
 
 > ⭐️ **Iron Barricade** 1 Essence
 >
-> When the reaver is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they create a line equal to 2 × their [size](scc:mcdm.heroes.v1/rule.character/size) centered on their space of iron shards on the ground until the end of the encounter. You or any [ally](scc:mcdm.heroes.v1/rule.combat/ally) has [cover](scc:mcdm.heroes.v1/rule.combat/cover) and [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 while occupying an affected square.
+> When the reaver is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they create a line equal to 2 × their [size](scc:mcdm.heroes.v1/rule.character/size) centered on their space of iron shards on the ground until the end of the encounter. You or any ally has [cover](scc:mcdm.heroes.v1/rule.combat/cover) and [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 while occupying an affected square.
 
 <!-- @type: statblock -->
 ####### Knight of Blood
@@ -2299,7 +2299,7 @@ These faceless suits of armor have visible rivers of deep red blood flowing thro
 
 > ⭐️ **Red River** 2 Essence
 >
-> When the knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) ignoring [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Each square that they exit during this movement pools with blood until the end of the encounter. Each affected square is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for [enemies](scc:mcdm.heroes.v1/rule.combat/enemy) and deals 3 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage) to an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) when they first enter it on a [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 10 squares of the blood pool, they are pulled 2 toward the nearest affected square, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability).
+> When the knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they move up to their [speed](scc:mcdm.heroes.v1/rule.character/speed) ignoring [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). Each square that they exit during this movement pools with blood until the end of the encounter. Each affected square is considered [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies and deals 3 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage) to an enemy when they first enter it on a [turn](scc:mcdm.heroes.v1/rule.combat/turn). Whenever a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) enemy starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 10 squares of the blood pool, they are pulled 2 toward the nearest affected square, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
 <!-- @type: statblock -->
 ####### Light of the Sun
@@ -2328,7 +2328,7 @@ These elementals are blazing white avian-shaped beings that are nearly impossibl
 
 > ⭐️ **Radiant Field** 2 Essence
 >
-> When the light is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the light becomes wreathed in sentient flames until the end of the encounter. An [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) that enters this area or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there takes 3 fire [damage](scc:mcdm.heroes.v1/rule.damage/damage) and is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT). You or any [ally](scc:mcdm.heroes.v1/rule.combat/ally) that enters this area or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and their [speed](scc:mcdm.heroes.v1/rule.character/speed) increases by 2 until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
+> When the light is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the light becomes wreathed in sentient flames until the end of the encounter. An enemy that enters this area or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there takes 3 fire [damage](scc:mcdm.heroes.v1/rule.damage/damage) and is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT). You or any ally that enters this area or starts their [turn](scc:mcdm.heroes.v1/rule.combat/turn) there gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and their [speed](scc:mcdm.heroes.v1/rule.character/speed) increases by 2 until the end of their [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 <!-- @type: monster-group | @domain: minion | @category: fey -->
 ##### Fey Portfolio 7-Essence Minion
@@ -2352,11 +2352,11 @@ Corallias are saltwater nixies with coarse, coral-like skin and curly hair with 
 
 > ⭐️ **Seafoam Pool**
 >
-> The area within 2 squares of the corallia is filled with purifying saltwater that disables the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by [enemies](scc:mcdm.heroes.v1/rule.combat/enemy). At the end of the corallia's [turn](scc:mcdm.heroes.v1/rule.combat/turn), the corallia can scrub you or an [ally](scc:mcdm.heroes.v1/rule.combat/ally) in the affected area and end one [condition](scc:mcdm.heroes.v1/rule.combat/condition).
+> The area within 2 squares of the corallia is filled with purifying saltwater that disables the effects of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by enemies. At the end of the corallia's [turn](scc:mcdm.heroes.v1/rule.combat/turn), the corallia can scrub you or an ally in the affected area and end one [condition](scc:mcdm.heroes.v1/rule.combat/condition).
 
 > ⭐️ **Minuscule**
 >
-> The coralia has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger [creature's](scc:mcdm.heroes.v1/rule.general/creature) space.
+> The coralia has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Pixie Belladonix
@@ -2381,11 +2381,11 @@ The belladonix are found among the elite guard of fey monarchs and carry themsel
 >
 > 17 poison [damage](scc:mcdm.heroes.v1/rule.damage/damage); M < STRONG [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability is trapped in a poison-fueled haze and considers each [creature](scc:mcdm.heroes.v1/rule.general/creature) within 1 square of them to be an [enemy](scc:mcdm.heroes.v1/rule.combat/enemy) until the [condition](scc:mcdm.heroes.v1/rule.combat/condition) ends.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability is trapped in a poison-fueled haze and considers each creature within 1 square of them to be an enemy until the [condition](scc:mcdm.heroes.v1/rule.combat/condition) ends.
 
 > ⭐️ **Minuscule**
 >
-> The belladonix has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger [creature's](scc:mcdm.heroes.v1/rule.general/creature) space.
+> The belladonix has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Sprite Olyender
@@ -2404,11 +2404,11 @@ These brawny sprites wear heavy beetle armor and have a halo hovering away from 
 
 > ⭐️ **Use Their Might**
 >
-> When targeting a [creature](scc:mcdm.heroes.v1/rule.general/creature) with a [grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) or [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), the olyender's [size](scc:mcdm.heroes.v1/rule.character/size) is considered one larger than the target.
+> When targeting a creature with a [grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) or [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), the olyender's [size](scc:mcdm.heroes.v1/rule.character/size) is considered one larger than the target.
 
 > ⭐️ **Minuscule**
 >
-> The olyender has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger [creature's](scc:mcdm.heroes.v1/rule.general/creature) space.
+> The olyender has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: monster-group | @domain: minion | @category: undead -->
 ##### Undead Portfolio 7-Essence Minion
@@ -2428,11 +2428,11 @@ A false vampire is a bestial, bipedal ghoul that draws life from liquified remai
 
 > ⭐️ **Proboscis Strike**
 >
-> The false vampire's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 2 and inflict M < AVERAGE [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT). The false vampire can move the target while they are [restrained](scc:mcdm.heroes.v1/condition/restrained) this way. At the start of a [restrained](scc:mcdm.heroes.v1/condition/restrained) [creature's](scc:mcdm.heroes.v1/rule.general/creature) [turn](scc:mcdm.heroes.v1/rule.combat/turn), they take acid [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
+> The false vampire's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 2 and inflict M < AVERAGE [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT). The false vampire can move the target while they are [restrained](scc:mcdm.heroes.v1/condition/restrained) this way. At the start of a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature's [turn](scc:mcdm.heroes.v1/rule.combat/turn), they take acid [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ⭐️ **Bloodthirsty**
 >
-> The false vampire has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 10 while a [creature](scc:mcdm.heroes.v1/rule.general/creature) is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) within 10.
+> The false vampire has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 10 while a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) within 10.
 
 <!-- @type: statblock -->
 ####### Phantom of the Ripper
@@ -2461,7 +2461,7 @@ These phantoms puppet the remnants of their corporeal forms. Unlike other spirit
 
 > ⭐️ **Ripping Phase**
 >
-> The phantom can move through other [creatures](scc:mcdm.heroes.v1/rule.general/creature) and objects at normal speed. The first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that the phantom passes through a [creature](scc:mcdm.heroes.v1/rule.general/creature), that [creature](scc:mcdm.heroes.v1/rule.general/creature) takes 3 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage) and has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike). The phantom doesn't take [damage](scc:mcdm.heroes.v1/rule.damage/damage) from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
+> The phantom can move through other creatures and objects at normal speed. The first time in a [round](scc:mcdm.heroes.v1/rule.combat/combat-round) that the phantom passes through a creature, that creature takes 3 corruption [damage](scc:mcdm.heroes.v1/rule.damage/damage) and has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike). The phantom doesn't take [damage](scc:mcdm.heroes.v1/rule.damage/damage) from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Zombie Titan
@@ -2480,11 +2480,11 @@ Zombie titan is a catchall for undead giants, patchwork ogres and mournlings, or
 
 > ⭐️ **Overwhelming Size**
 >
-> The titan can move through [enemies](scc:mcdm.heroes.v1/rule.combat/enemy) at normal speed. If the titan ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in a [prone](scc:mcdm.heroes.v1/condition/prone) [size](scc:mcdm.heroes.v1/rule.character/size) 2 or smaller [creature's](scc:mcdm.heroes.v1/rule.general/creature) space, the [creature](scc:mcdm.heroes.v1/rule.general/creature) can't stand.
+> The titan can move through enemies at normal speed. If the titan ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in a [prone](scc:mcdm.heroes.v1/condition/prone) [size](scc:mcdm.heroes.v1/rule.character/size) 2 or smaller creature's space, the creature can't stand.
 
 > ⭐️ **Flesh to Mountains**
 >
-> When the titan is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). If a [creature](scc:mcdm.heroes.v1/rule.general/creature) was [prone](scc:mcdm.heroes.v1/condition/prone) underneath the titan when the titan is killed, they take 10 [damage](scc:mcdm.heroes.v1/rule.damage/damage) and are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
+> When the titan is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). If a creature was [prone](scc:mcdm.heroes.v1/condition/prone) underneath the titan when the titan is killed, they take 10 [damage](scc:mcdm.heroes.v1/rule.damage/damage) and are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 <!-- @type: feature | @id: 6th-level-features | @level: 6 -->
 ### 6th-Level Features
