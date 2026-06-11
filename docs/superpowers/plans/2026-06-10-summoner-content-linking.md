@@ -10,6 +10,39 @@
 
 ---
 
+## Build & Validation Conventions (READ FIRST — corrected after the Phase 0.3 spike)
+
+**⚠️ `devbox run` resets the working directory to the devbox project root (the workspace root, `/home/vexa/code/steel_compendium/workspace`), which has no `go.mod`.** A bare `devbox run -- go run ./cmd/steel-etl …` therefore fails with `go: cannot find main module` and **exit 1 but prints no `WARN`** — a silent trap that looks like a clean build. **Always wrap Go invocations so they `cd steel-etl` first**, and always check the exit status:
+
+```bash
+# Canonical full build (run from the workspace root):
+cd /home/vexa/code/steel_compendium/workspace
+devbox run -- bash -c 'cd steel-etl && go run ./cmd/steel-etl gen --config pipeline.yaml --all' > /tmp/gen.log 2>&1
+echo "exit=$?"   # MUST be 0. Non-zero = build error (read /tmp/gen.log tail), not a link problem.
+```
+The same wrapper applies to `go test` / `go build` / `validate`: `devbox run -- bash -c 'cd steel-etl && go test ./...'`.
+
+**Outputs land at the *workspace-level* `data/` dir** (e.g. `data/data-summoner/en/md-linked/…`), NOT `steel-etl/data/`. (Per `pipeline.yaml`, book base_dir is `../data/data-summoner`.)
+
+**The WARN gate is NOT "0 WARN".** The real baseline has **104 WARN / 12 distinct unresolved codes**, all pre-existing stale flat `mcdm.heroes.v1/skill/<x>` links from `input/beastheart/Draw Steel Beastheart.md` (never repointed after the 2026-06-08 skill-group nesting — out of scope here; filed as a Phase-4 followup). The baseline distinct-code set is saved at `/tmp/scc-warn-baseline-codes.txt`:
+
+```
+mcdm.heroes.v1/skill/{alertness,endurance,handle-animals,hide,intimidate,magic,
+                      nature,navigate,read-person,search,sneak,track}
+```
+
+**Validation gate = "no NEW unresolved code vs. baseline":**
+```bash
+cd /home/vexa/code/steel_compendium/workspace
+grep "WARN: unresolved scc link" /tmp/gen.log | sed -E 's/.*link "([^"]+)".*/\1/' | sort -u > /tmp/warn-now.txt
+comm -13 /tmp/scc-warn-baseline-codes.txt /tmp/warn-now.txt   # MUST print nothing
+```
+Any line printed is a NEW unresolved code introduced by this pass (a typo'd target or a missing registry entry) — **fix before committing.** If `/tmp/scc-warn-baseline-codes.txt` is missing (new session/shell), recreate it from a clean baseline build first. Note: links to nested skills MUST use the grouped form `skill.<group>/<item>` (e.g. `skill.intrigue/hide`, `skill.lore/magic`) — the flat `skill/<x>` form is exactly the stale baseline bug.
+
+**Cross-book links (confirmed working in the spike):** a `scc:mcdm.heroes.v1/…` link from the Summoner source resolves with no WARN and emits a relative path (e.g. `[Reason](../../../rule/character/reason.md)`). Within the *per-book* `data/data-summoner` repo that relative path points outside the summoner tree (the heroes page lives in `data/data-rules`) — that is expected and fine: cross-book navigation is the **v2 site's** job, where all books share one unified MkDocs tree and `scc:` resolves to site URLs (SCC spec §3.2). Do not treat a cross-book relative path as broken.
+
+---
+
 ## Background: what was learned during planning
 
 - **Source:** `input/summoner/Draw Steel Summoner.md`, 4,435 lines, **0** existing `scc:` links.
@@ -466,13 +499,16 @@ git commit -m "fix(statblock): tolerate scc link-wrapping in dice title, tiers, 
 6. Mark uncertain cases with `<!-- REVIEW: is this a game reference? -->[term](scc:…)<!-- /REVIEW -->`.
 7. After the pass, run the incremental validation (below) and commit.
 
-**Incremental validation (run after each pass):**
+**Incremental validation (run after each pass)** — uses the corrected command + baseline-diff gate from "Build & Validation Conventions" above:
 ```bash
-cd /home/vexa/code/steel_compendium/workspace/steel-etl
-devbox run -- go run ./cmd/steel-etl gen --config pipeline.yaml --all 2>&1 | grep WARN
-grep -oE "mcdm\.summoner\.v1/[a-z0-9./-]+" classification.json | sort -u | wc -l   # must stay 221
+cd /home/vexa/code/steel_compendium/workspace
+devbox run -- bash -c 'cd steel-etl && go run ./cmd/steel-etl gen --config pipeline.yaml --all' > /tmp/gen.log 2>&1
+echo "exit=$?"   # MUST be 0
+grep "WARN: unresolved scc link" /tmp/gen.log | sed -E 's/.*link "([^"]+)".*/\1/' | sort -u > /tmp/warn-now.txt
+comm -13 /tmp/scc-warn-baseline-codes.txt /tmp/warn-now.txt   # MUST print nothing (no NEW unresolved code)
+grep -oE "mcdm\.summoner\.v1/[a-z0-9./-]+" steel-etl/classification.json | sort -u | wc -l   # must stay 221
 ```
-Expected: no WARN (every `scc:` resolved); code count unchanged at 221. A WARN naming an `mcdm.summoner.v1/…` or `mcdm.heroes.v1/…` code means a typo'd target — fix before committing.
+Expected: exit 0; `comm` prints nothing (no new unresolved code vs. the 104-warning beastheart baseline); summoner code count unchanged at 221. Any new code printed by `comm` means a typo'd/missing target — fix before committing.
 
 ### Task 2.1: Pass A — "The Summoner" lore chapter
 

@@ -345,7 +345,7 @@ You can also take advantage of powerful magic to buff your allies, whittle down 
 <!-- @type: feature | @id: basics | @level: 1 -->
 ### Basics
 
-**Starting Characteristics:** You start with a Reason of 2, and you can choose one of the following arrays for your other characteristics scores:
+**Starting Characteristics:** You start with a [Reason](scc:mcdm.heroes.v1/rule.character/reason) of 2, and you can choose one of the following arrays for your other characteristics scores:
 
 - 2, 2, −1, −1
 - 2, 1, 1, −1
