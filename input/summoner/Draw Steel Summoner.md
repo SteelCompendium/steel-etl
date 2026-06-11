@@ -802,11 +802,11 @@ This vaguely humanoid form is warped and distorted by a demon nestled inside the
 
 > ⭐️ **Extended Barbed Strike**
 >
-> The ensnarer's melee free strikes have a distance of 3 and inflict pull 1. The pull distance increases by 1 for each additional ensnarer striking the same target. Choose the ensnarer that the target is being pulled to before applying forced movement.
+> The ensnarer's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 3 and inflict [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1. The [pull](scc:mcdm.heroes.v1/movement/forced-movement) distance increases by 1 for each additional ensnarer striking the same target. Choose the ensnarer that the target is being pulled to before applying [forced movement](scc:mcdm.heroes.v1/movement/forced-movement).
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the ensnarer can't be hidden from them.
+> Each creature adjacent to the ensnarer can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 <!-- @type: statblock -->
 ####### Rasquine
@@ -821,11 +821,11 @@ The rasquine are skulking demons that shimmer in the light. They teleport into p
 
 > ⭐️ **Skulker**
 >
-> Once per turn, the rasquine can hide as a free maneuver after teleporting.
+> Once per turn, the rasquine can [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) after [teleporting](scc:mcdm.heroes.v1/movement/teleport).
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the rasquine can't be hidden from them.
+> Each creature adjacent to the rasquine can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 <!-- @type: statblock -->
 ####### Razor
@@ -840,11 +840,11 @@ Razors appear to be a diminutive variant of the ruinant demon. Their bodies are 
 
 > ⭐️ **Teeth!**
 >
-> Once per turn, whenever an adjacent enemy grabs the razor or uses a melee ability against them, that enemy takes 1 damage for each razor adjacent to them.
+> Once per turn, whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the razor or uses a melee ability against them, that enemy takes 1 damage for each razor adjacent to them.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the razor can't be hidden from them.
+> Each creature adjacent to the razor can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 <!-- @type: monster-group | @domain: minion | @category: demon -->
 ##### Demon Portfolio 3-Essence Minion
@@ -864,11 +864,11 @@ These minor demons resemble larger pitlings. They can spit a nerve-numbing phleg
 
 > ⭐️ **Splash Strike**
 >
-> The spittlich's ranged free strikes have a distance of 10 and deal 2 poison damage to an enemy adjacent to the target. Creatures that take poison damage from this spittlich can't shift until the start of the spittlich's next turn.
+> The spittlich's ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 10 and deal 2 poison damage to an enemy adjacent to the target. Creatures that take poison damage from this spittlich can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the spittlich's next turn.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the spittlich can't be hidden from them.
+> Each creature adjacent to the spittlich can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 <!-- @type: statblock -->
 ####### Fanged Musilex
@@ -883,11 +883,11 @@ Ensnarers knot and twist their bodies together to form heaving, heavy musilexes.
 
 > ⭐️ **Mawful Strike**
 >
-> The musilex's melee free strikes have a distance of 2 + R and inflict pull 2. The pull distance increases by 2 for each additional musilex striking the same target. Choose the musilex that the target is being pulled to before applying forced movement. If the target is pulled adjacent to the musilex, the musilex either deals an additional 2 damage or grabs them.
+> The musilex's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 2 + R and inflict [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2. The [pull](scc:mcdm.heroes.v1/movement/forced-movement) distance increases by 2 for each additional musilex striking the same target. Choose the musilex that the target is being pulled to before applying [forced movement](scc:mcdm.heroes.v1/movement/forced-movement). If the target is pulled adjacent to the musilex, the musilex either deals an additional 2 damage or [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) them.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the musilex can't be hidden from them.
+> Each creature adjacent to the musilex can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 <!-- @type: statblock -->
 ####### Twisted Bengrul
@@ -912,11 +912,11 @@ The bengrul is an undulating heap of glass and flesh. They shatter pieces of the
 >
 > 8 damage; P < STRONG twisted (save ends)
 >
-> **Effect:** A twisted target can't take advantage of edges or search for hidden creatures until the condition ends.
+> **Effect:** A twisted target can't take advantage of [edges](scc:mcdm.heroes.v1/rule.dice/edge) or [search for hidden creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) until the condition ends.
 
 > ⭐️ **Soulsight**
 >
-> Each creature adjacent to the ensnarer can't be hidden from them.
+> Each creature adjacent to the ensnarer can't be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) from them.
 
 
 <!-- @type: monster-group | @domain: minion | @category: elemental -->
@@ -937,7 +937,7 @@ This near-pure form of autonomous essence just barely maintains their form. They
 
 > ⭐️ **Dweomer Burst**
 >
-> When the mote is reduced to 0 Stamina, each enemy adjacent to the mote has a bane on their next strike.
+> When the mote is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), each enemy adjacent to the mote has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Catalyst**
 >
@@ -958,11 +958,11 @@ The gales are twisting ribbons of cloud and debris endlessly dancing in place. T
 
 > ⭐️ **Cutting the Air**
 >
-> The gale doesn't provoke opportunity attacks by moving.
+> The gale doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 > ⭐️ **Whirlwind**
 >
-> When the gale is reduced to 0 Stamina, winds whip in their space until the end of the encounter. You or an ally that enters this space or starts their turn there can immediately shift (including vertically).
+> When the gale is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), winds whip in their space until the end of the encounter. You or an ally that enters this space or starts their turn there can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) (including vertically).
 
 <!-- @type: statblock -->
 ####### Fire Plume
@@ -977,11 +977,11 @@ A fire plume burns so bright that their true shape is hard to discern from the f
 
 > ⭐️ **Spitfire Strike**
 >
-> The plume's ranged free strikes have a distance of 10.
+> The plume's ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 10.
 
 > ⭐️ **Pyre**
 >
-> When the plume is reduced to 0 Stamina, their space becomes wreathed in flames until the end of the encounter. An enemy that enters this space or starts their turn there takes 2 fire damage.
+> When the plume is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space becomes wreathed in flames until the end of the encounter. An enemy that enters this space or starts their turn there takes 2 fire damage.
 
 <!-- @type: statblock -->
 ####### Walking Boulder
@@ -996,15 +996,15 @@ These massive clods of animated stone roll upon smaller piles of rocks that coul
 
 > ⭐️ **Obstruct**
 >
-> The boulder obstructs line of effect for enemies.
+> The boulder obstructs [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) for enemies.
 
 > ⭐️ **Pile Up** 1 Essence
 >
-> When one or more boulders is reduced to 0 Stamina, they each leave behind a stone wall equal to their size in their space until the end of the encounter.
+> When one or more boulders is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they each leave behind a stone [wall](scc:mcdm.heroes.v1/rule.combat/wall) equal to their size in their space until the end of the encounter.
 
 > **Traits with an Essence Cost**
 >
-> Some minion stat blocks have traits that can only be activated if you spend the heroic resource listed in the top corner of the trait. For example, when a crux of ash is reduced to 0 Stamina, you can spend 1 essence to use their Ashen Cloud trait.
+> Some minion stat blocks have traits that can only be activated if you spend the [heroic resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) listed in the top corner of the trait. For example, when a crux of ash is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), you can spend 1 essence to use their Ashen Cloud trait.
 
 <!-- @type: monster-group | @domain: minion | @category: elemental -->
 ##### Elemental Portfolio 3-Essence Minion
@@ -1024,11 +1024,11 @@ The crux is a curtain of billowing hot ash with an avian head. They cover their 
 
 > ⭐️ **Soot Strike**
 >
-> The crux's melee free strikes M < AVERAGE automatically hide each ally from the target until the start of the crux's next turn, until the target uses a maneuver to clear the soot, until the crux takes damage, or until the crux is destroyed.
+> The crux's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) M < AVERAGE automatically [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) each ally from the target until the start of the crux's next turn, until the target uses a [maneuver](scc:mcdm.heroes.v1/rule.combat/turn) to clear the soot, until the crux takes damage, or until the crux is destroyed.
 
 > ⭐️ **Ashen Cloud** 1 Essence
 >
-> When the crux is reduced to 0 Stamina, the area within 1 square of the crux is clouded by ash until it is dispersed by wind. You or any ally are concealed while occupying an affected square. An enemy can't establish line of effect beyond the ash while occupying an affected square.
+> When the crux is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the crux is clouded by ash until it is dispersed by wind. You or any ally are [concealed](scc:mcdm.heroes.v1/rule.combat/concealment) while occupying an affected square. An enemy can't establish [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) beyond the ash while occupying an affected square.
 
 <!-- @type: statblock -->
 ####### Flow of Magma
@@ -1047,17 +1047,17 @@ This elemental is a long, serpentine creature of heated rock. Flows of magma dro
 > |--------------------------|----------------:|
 > | **📏 Melee 2** | **🎯 One creature or object per minion** |
 >
-> 4 fire damage; shift 3
+> 4 fire damage; [shift](scc:mcdm.heroes.v1/movement/shifting) 3
 >
-> 6 fire damage; shift 4
+> 6 fire damage; [shift](scc:mcdm.heroes.v1/movement/shifting) 4
 >
-> 8 fire damage; shift 5
+> 8 fire damage; [shift](scc:mcdm.heroes.v1/movement/shifting) 5
 >
-> **Effect:** Each square that the flow shifts into becomes wreathed in flames until the start of the flow's next turn. An enemy that enters an affected square takes 2 damage.
+> **Effect:** Each square that the flow [shifts](scc:mcdm.heroes.v1/movement/shifting) into becomes wreathed in flames until the start of the flow's next turn. An enemy that enters an affected square takes 2 damage.
 
 > ⭐️ **Eruption** 1 Essence
 >
-> When the flow is reduced to 0 Stamina, they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes difficult terrain for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < AVERAGE 4 fire damage.
+> When the flow is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they launch lava into an area equal to 1 + their size within 5 squares. The affected area becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. An enemy that enters an affected square or starts their turn there takes A < AVERAGE 4 fire damage.
 
 <!-- @type: statblock -->
 ####### Desolation of Sand
@@ -1072,15 +1072,15 @@ The desolations have vaguely humanoid sand forms with no legs. Their glass hose 
 
 > ⭐️ **Burying Strike**
 >
-> The desolation's free strikes inflict M < AVERAGE slowed (save ends). If the target is already slowed, then they are M < STRONG restrained (EoT).
+> The desolation's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < AVERAGE [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends). If the target is already [slowed](scc:mcdm.heroes.v1/condition/slowed), then they are M < STRONG [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 > ⭐️ **Sand Through Your Fingers**
 >
-> The desolation doesn't provoke opportunity attacks by moving.
+> The desolation doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 > ⭐️ **Shifting Sand Pit** 1 Essence
 >
-> When the desolation is reduced to 0 Stamina, the area within 1 square of the desolation becomes difficult terrain for enemies until the end of the encounter. You or an ally that enters the affected area can immediately shift 3.
+> When the desolation is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the area within 1 square of the desolation becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. You or an ally that enters the affected area can immediately [shift](scc:mcdm.heroes.v1/movement/shifting) 3.
 
 <!-- @type: monster-group | @domain: minion | @category: fey -->
 ##### Fey Portfolio Signature Minion
@@ -1100,15 +1100,15 @@ These nixies are especially tiny. Their hair grows longer than their bodies and 
 
 > ⭐️ **Water Weird**
 >
-> Once per turn during their move action, each nixie under your control can teleport to a body of water within 5. The soakreed can't teleport into water created by their own soaking bog.
+> Once per turn during their move action, each nixie under your control can [teleport](scc:mcdm.heroes.v1/movement/teleport) to a body of water within 5. The soakreed can't [teleport](scc:mcdm.heroes.v1/movement/teleport) into water created by their own soaking bog.
 
 > ⭐️ **Soaking Bog**
 >
-> The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < WEAK slowed (EoT). The potency increases by 1 for each additional soaking bog the target occupies (maximum +2).
+> The area within 1 square of the soakreed is filled with swampy water. An enemy that starts their turn in the area is A < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each additional soaking bog the target occupies (maximum +2).
 
 > ⭐️ **Minuscule**
 >
-> The soakreed has cover while occupying a larger creature's space.
+> The soakreed has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Pixie Bellringer
@@ -1123,15 +1123,15 @@ The bellringers are glowing pixies that jingle as they fly. Historically, these 
 
 > ⭐️ **Ringing Strike**
 >
-> The bellringer's free strikes grant an edge to the next strike made against the target, or a double edge if two or more bellringers strike the same target.
+> The bellringer's [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) grant an [edge](scc:mcdm.heroes.v1/rule.dice/edge) to the next [strike](scc:mcdm.heroes.v1/rule.combat/strike) made against the target, or a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if two or more bellringers strike the same target.
 
 > ⭐️ **Fairy Chime**
 >
-> Each ally within 1 square of a bellringer has a +1 to saving throws. Each enemy within 1 square of a bellringer has a −1 to saving throws.
+> Each ally within 1 square of a bellringer has a +1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw). Each enemy within 1 square of a bellringer has a −1 to [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw).
 
 > ⭐️ **Minuscule**
 >
-> The bellringer has cover while occupying a larger creature's space.
+> The bellringer has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Sprite Dandeknight
@@ -1150,11 +1150,11 @@ Dandeknights are sprite warriors whose dragonfly wingbeats emit a tonal drone. T
 
 > ⭐️ **Staccato Swings**
 >
-> When the dandeknight makes a free strike, they can make two free strikes instead. The damage is added together and treated as a single strike if both strikes hit the same target.
+> When the dandeknight makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), they can make two [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) instead. The damage is added together and treated as a single [strike](scc:mcdm.heroes.v1/rule.combat/strike) if both strikes hit the same target.
 
 > ⭐️ **Minuscule**
 >
-> The dandeknight has cover while occupying a larger creature's space.
+> The dandeknight has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: monster-group | @domain: minion | @category: fey -->
 ##### Fey Portfolio 3-Essence Minion
@@ -1178,17 +1178,17 @@ This pixie flies on a delicate array of vibrant flower petals for wings. The col
 > |---------------------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object per minion** |
 >
-> 5 acid damage; M < WEAK weakened (EoT)
+> 5 acid damage; M < WEAK [weakened](scc:mcdm.heroes.v1/condition/weakened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 7 acid damage; M < AVERAGE weakened (EoT)
+> 7 acid damage; M < AVERAGE [weakened](scc:mcdm.heroes.v1/condition/weakened) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 9 acid damage; M < STRONG weakened (save ends)
+> 9 acid damage; M < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** After the hydrain's squad uses this ability, you or one ally within distance can spend a Recovery or end a condition.
+> **Effect:** After the hydrain's squad uses this ability, you or one ally within distance can spend a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries) or end a [condition](scc:mcdm.heroes.v1/rule.combat/condition).
 
 > ⭐️ **Minuscule**
 >
-> The hydrain has cover while occupying a larger creature's space.
+> The hydrain has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Pixie Loftlilly
@@ -1203,11 +1203,11 @@ Loftlillies lazily drift through the air in flower cups. They sip on toxic necta
 
 > ⭐️ **Floating Toxins**
 >
-> The area within 1 square of the loftlilly causes each enemy and object with a size equal to your Reason or smaller to float 1 square off the ground until they leave the area. A floating enemy that can't fly is unable to shift, moves 2 additional squares from forced movement, and has a bane on strikes.
+> The area within 1 square of the loftlilly causes each enemy and object with a size equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason) or smaller to float 1 square off the ground until they leave the area. A floating enemy that can't [fly](scc:mcdm.heroes.v1/movement/fly) is unable to [shift](scc:mcdm.heroes.v1/movement/shifting), moves 2 additional squares from [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), and has a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Minuscule**
 >
-> The loftlilly has cover while occupying a larger creature's space.
+> The loftlilly has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: statblock -->
 ####### Sprite Orchiguard
@@ -1222,11 +1222,11 @@ The orchiguard is a sprite surrounded by a wheel of shields. They are usually cr
 
 > ⭐️ **Fairy Guard**
 >
-> Each non-orchiguard ally takes half damage from abilities while within 1 square of the orchiguard. Whenever the orchiguard reduces damage this way, they take damage equal to half their maximum Stamina and their free strike damage increases by 1.
+> Each non-orchiguard ally takes half damage from abilities while within 1 square of the orchiguard. Whenever the orchiguard reduces damage this way, they take damage equal to half their maximum [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and their [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) damage increases by 1.
 
 > ⭐️ **Minuscule**
 >
-> The orchiguard has cover while occupying a larger creature's space.
+> The orchiguard has [cover](scc:mcdm.heroes.v1/rule.combat/cover) while occupying a larger creature's space.
 
 <!-- @type: monster-group | @domain: minion | @category: undead -->
 ##### Undead Portfolio Signature Minion
@@ -1246,7 +1246,7 @@ Husks have stiff corpses that snap and crackle with each sudden movement. Corros
 
 > ⭐️ **Rotting Strike**
 >
-> The husk's melee free strikes inflict M < WEAK slowed (EoT). The potency increases by 1 for each additional husk adjacent to the target (maximum +2).
+> The husk's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict M < WEAK [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)). The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 for each additional husk adjacent to the target (maximum +2).
 
 <!-- @type: statblock -->
 ####### Shrieker
@@ -1261,11 +1261,11 @@ The shrieker expresses their unending pain in a way that can be heard and felt f
 
 > ⭐️ **Howling Strike**
 >
-> The shrieker's ranged free strikes have a distance of 12.
+> The shrieker's ranged [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) have a distance of 12.
 
 > ⭐️ **Shrill Alarm**
 >
-> Each enemy within 2 squares of the shrieker can't hide or be hidden.
+> Each enemy within 2 squares of the shrieker can't [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) or be [hidden](scc:mcdm.heroes.v1/feature.common.maneuvers/hide).
 
 <!-- @type: statblock -->
 ####### Skeleton
@@ -1280,7 +1280,7 @@ These autonomous bone networks fall just short of replicating the structure they
 
 > ⭐️ **Bonetrops**
 >
-> When the skeleton is reduced to 0 Stamina, their square becomes difficult terrain for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
+> When the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their square becomes [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The first time any enemy enters this space, they take 2 damage and end this effect.
 
 <!-- @type: monster-group | @domain: minion | @category: undead -->
 ##### Undead Portfolio 3-Essence Minion
@@ -1304,15 +1304,15 @@ The grave knights are zombie warriors that continue to fight after death. Any bl
 > |---------------------------|----------------:|
 > | **📏 Melee 1** | **🎯 One creature or object per minion** |
 >
-> 5 corruption damage; M < WEAK bleeding (EoT)
+> 5 corruption damage; M < WEAK [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 7 corruption damage; M < AVERAGE bleeding (EoT)
+> 7 corruption damage; M < AVERAGE [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 >
-> 9 corruption damage; M < STRONG bleeding (save ends)
+> 9 corruption damage; M < STRONG [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **To the Grave**
 >
-> When the grave knight is reduced to 0 Stamina, they can make a melee free strike before being destroyed.
+> When the grave knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before being destroyed.
 
 <!-- @type: statblock -->
 ####### Stalker Shade
@@ -1327,11 +1327,11 @@ Shades are a form of umbral stalker that float free from any floor or surface. T
 
 > ⭐️ **Shadow Strike**
 >
-> The stalker shade turns invisible, shifts 3 squares, and reappears after making a strike.
+> The stalker shade turns invisible, [shifts](scc:mcdm.heroes.v1/movement/shifting) 3 squares, and reappears after making a [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Shadow Phasing**
 >
-> The stalker shade can move through other creatures and objects at normal speed. The first time in a round that the stalker shade passes through a creature, that creature takes 2 corruption damage. The stalker shade doesn't take damage from being force moved into objects.
+> The stalker shade can move through other creatures and objects at normal speed. The first time in a round that the stalker shade passes through a creature, that creature takes 2 corruption damage. The stalker shade doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Zombie Lumberer
@@ -1346,11 +1346,11 @@ These massive, animated ogre corpses still maintain their incredible grip streng
 
 > ⭐️ **Zombie Clutch**
 >
-> The lumberer's melee free strikes inflict A < AVERAGE grabbed. A creature or object that starts their turn grabbed by the lumberer takes corruption damage equal to your Reason.
+> The lumberer's melee [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) inflict A < AVERAGE [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A creature or object that starts their turn [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the lumberer takes corruption damage equal to your [Reason](scc:mcdm.heroes.v1/rule.character/reason).
 
 > ⭐️ **Death Grasp**
 >
-> When the lumberer is reduced to 0 Stamina, they can latch onto an adjacent enemy before being destroyed. The enemy is M < STRONG restrained (EoT).
+> When the lumberer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can latch onto an adjacent enemy before being destroyed. The enemy is M < STRONG [restrained](scc:mcdm.heroes.v1/condition/restrained) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn)).
 
 <!-- @type: feature | @id: summoner-abilities | @level: 1 -->
 ### Summoner Abilities
