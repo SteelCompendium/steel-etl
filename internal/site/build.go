@@ -11,6 +11,8 @@ import (
 	"strings"
 
 	"gopkg.in/yaml.v3"
+
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 // SCCMapEntry matches the output of SCCMapGenerator.
@@ -23,13 +25,14 @@ type SCCMapEntry struct {
 
 // BuildResult holds the outcome of a site build.
 type BuildResult struct {
-	CopiedFiles   int
-	Sections      int
-	NavFiles      int
-	SearchExclude int
-	IndexPages    int
-	SCCStubs      int
-	Errors        []string
+	CopiedFiles    int
+	Sections       int
+	NavFiles       int
+	SearchExclude  int
+	IndexPages     int
+	SCCStubs       int
+	PrintingStamps int
+	Errors         []string
 }
 
 // Build generates the MkDocs site structure from steel-etl output.
@@ -120,6 +123,13 @@ func Build(cfg *Config) (*BuildResult, error) {
 	stubCount, stubErrs := generateSCCStubs(cfg.DocsDir)
 	result.SCCStubs = stubCount
 	result.Errors = append(result.Errors, stubErrs...)
+
+	// Printing provenance stamps: inject non-identity printing/printing_book
+	// frontmatter from the classification registry (rendered by the v2 theme's
+	// content partial). Runs after static overrides so every page is covered.
+	stampCount, stampErrs := applyPrintingStamps(cfg)
+	result.PrintingStamps = stampCount
+	result.Errors = append(result.Errors, stampErrs...)
 
 	return result, nil
 }
@@ -735,6 +745,77 @@ func applySearchExclusion(docsDir, sectionName string) (int, []string) {
 		return nil
 	})
 
+	return count, errs
+}
+
+// sccFrontmatterRe extracts the scc code from a page's frontmatter block.
+var sccFrontmatterRe = regexp.MustCompile(`(?m)^scc: (\S+)$`)
+
+// applyPrintingStamps injects printing provenance frontmatter (printing,
+// printing_book) into every built page whose scc book prefix has a recorded
+// source-document printing in the classification registry. Non-identity:
+// purely presentational metadata, no SCC/URL impact. No-op when the config
+// has no registry path or the registry records no printings.
+func applyPrintingStamps(cfg *Config) (int, []string) {
+	if cfg.Registry == "" {
+		return 0, nil
+	}
+	reg, err := scc.LoadRegistry(cfg.ResolvePath(cfg.Registry))
+	if err != nil {
+		return 0, []string{fmt.Sprintf("printing stamps: load registry: %v", err)}
+	}
+	printings := reg.BookPrintings()
+	if len(printings) == 0 {
+		return 0, nil
+	}
+
+	labels := make(map[string]string, len(cfg.Books))
+	for _, b := range cfg.Books {
+		labels[b.Key] = b.Label
+	}
+
+	count := 0
+	var errs []string
+	filepath.Walk(cfg.DocsDir, func(path string, info os.FileInfo, err error) error {
+		if err != nil || info.IsDir() || !strings.HasSuffix(path, ".md") {
+			return nil
+		}
+		data, err := os.ReadFile(path)
+		if err != nil {
+			errs = append(errs, fmt.Sprintf("printing stamp read %s: %v", path, err))
+			return nil
+		}
+		body := string(data)
+		if !strings.HasPrefix(body, "---\n") {
+			return nil
+		}
+		end := strings.Index(body[4:], "\n---")
+		if end < 0 {
+			return nil
+		}
+		m := sccFrontmatterRe.FindStringSubmatch(body[4 : 4+end])
+		if m == nil {
+			return nil
+		}
+		book, _, found := strings.Cut(m[1], "/")
+		if !found {
+			return nil
+		}
+		printing, ok := printings[book]
+		if !ok {
+			return nil
+		}
+		inject := fmt.Sprintf("printing: %q\n", printing)
+		if label := labels[book]; label != "" {
+			inject += fmt.Sprintf("printing_book: %q\n", label)
+		}
+		if err := os.WriteFile(path, []byte("---\n"+inject+body[4:]), 0644); err != nil {
+			errs = append(errs, fmt.Sprintf("printing stamp write %s: %v", path, err))
+			return nil
+		}
+		count++
+		return nil
+	})
 	return count, errs
 }
 

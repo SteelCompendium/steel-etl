@@ -46,6 +46,7 @@ func runSite(cmd *cobra.Command, args []string) error {
 	fmt.Printf("Nav files:      %d\n", result.NavFiles)
 	fmt.Printf("Search exclude: %d files\n", result.SearchExclude)
 	fmt.Printf("SCC stubs:      %d\n", result.SCCStubs)
+	fmt.Printf("Printing stamps: %d files\n", result.PrintingStamps)
 
 	if len(result.Errors) > 0 {
 		fmt.Printf("Errors: %d\n", len(result.Errors))
