@@ -5,6 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 func TestRunPipelineOnFixture(t *testing.T) {
@@ -171,6 +173,37 @@ func TestRunPipeline_SubheadingContentIncluded(t *testing.T) {
 	}
 	if strings.Contains(brutalSlam, "Growing Ferocity") {
 		t.Error("Brutal Slam should NOT contain Growing Ferocity content")
+	}
+}
+
+func TestRunPipelineRecordsPrinting(t *testing.T) {
+	input := `---
+book: mcdm.test.v1
+printing: "1.01b"
+---
+
+<!-- @type: chapter | @id: intro -->
+# Intro
+
+Some text.
+`
+	inputPath := filepath.Join(t.TempDir(), "book.md")
+	if err := os.WriteFile(inputPath, []byte(input), 0644); err != nil {
+		t.Fatal(err)
+	}
+	outputDir := t.TempDir()
+	registryPath := filepath.Join(t.TempDir(), "classification.json")
+
+	if _, err := Run(inputPath, outputDir, registryPath); err != nil {
+		t.Fatalf("Run: %v", err)
+	}
+
+	loaded, err := scc.LoadRegistry(registryPath)
+	if err != nil {
+		t.Fatalf("load registry: %v", err)
+	}
+	if got := loaded.BookPrintings()["mcdm.test.v1"]; got != "1.01b" {
+		t.Errorf("printing = %q, want \"1.01b\"", got)
 	}
 }
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	ctx "github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/content"
+	ctx "github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
