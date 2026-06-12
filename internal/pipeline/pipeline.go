@@ -406,6 +406,7 @@ func buildGenerators(cfg *Config, mdOutputDir, registryPath string, sccRegistry 
 			BaseURL:       cfg.Output.SCCAPI.BaseURL,
 			SchemeVersion: sccRegistry.SchemeVersion(),
 			Aliases:       sccRegistry.Aliases(),
+			Printings:     sccRegistry.BookPrintings(),
 		}
 		if cfg.Output.SCCAPI.SiteConfig != "" {
 			siteCfg, err := site.LoadSiteConfig(cfg.ResolvePath(cfg.Output.SCCAPI.SiteConfig))

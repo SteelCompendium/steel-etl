@@ -448,6 +448,58 @@ func TestMatchesSectionIncludes(t *testing.T) {
 	}
 }
 
+func TestSCCAPIPrintingStamp(t *testing.T) {
+	dir := t.TempDir()
+	gen := &SCCAPIGenerator{
+		OutputDir: dir,
+		BaseURL:   "https://example.com",
+		Printings: map[string]string{"mcdm.heroes.v1": "1.01b"},
+	}
+	parsed := &content.ParsedContent{Frontmatter: map[string]any{
+		"name": "Fury",
+		"type": "class",
+	}}
+	if err := gen.WriteSection("mcdm.heroes.v1/class/fury", parsed); err != nil {
+		t.Fatal(err)
+	}
+	if err := gen.Finalize(); err != nil {
+		t.Fatal(err)
+	}
+
+	idx, err := os.ReadFile(filepath.Join(dir, "v1", "index.json"))
+	if err != nil {
+		t.Fatalf("read index.json: %v", err)
+	}
+	if !strings.Contains(string(idx), `"printing": "1.01b"`) {
+		t.Errorf("index.json missing printing stamp:\n%s", idx)
+	}
+
+	res, err := os.ReadFile(filepath.Join(dir, "v1", "resolve", "mcdm.heroes.v1", "class", "fury.json"))
+	if err != nil {
+		t.Fatalf("read resolve entry: %v", err)
+	}
+	if !strings.Contains(string(res), `"printing": "1.01b"`) {
+		t.Errorf("resolve entry missing printing:\n%s", res)
+	}
+}
+
+func TestSCCAPINoPrintings(t *testing.T) {
+	// Without printings, output must not contain a books key or printing field.
+	dir := t.TempDir()
+	gen := &SCCAPIGenerator{OutputDir: dir, BaseURL: "https://example.com"}
+	parsed := &content.ParsedContent{Frontmatter: map[string]any{"name": "Fury", "type": "class"}}
+	if err := gen.WriteSection("mcdm.heroes.v1/class/fury", parsed); err != nil {
+		t.Fatal(err)
+	}
+	if err := gen.Finalize(); err != nil {
+		t.Fatal(err)
+	}
+	idx, _ := os.ReadFile(filepath.Join(dir, "v1", "index.json"))
+	if strings.Contains(string(idx), `"books"`) {
+		t.Errorf("index.json has books key without printings:\n%s", idx)
+	}
+}
+
 func readJSON(t *testing.T, path string, v any) {
 	t.Helper()
 	data, err := os.ReadFile(path)
