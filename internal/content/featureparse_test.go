@@ -138,6 +138,39 @@ func TestParseRichFeatures_MultipleBlocks(t *testing.T) {
 	}
 }
 
+func TestParseRichFeatures_LevelLabels(t *testing.T) {
+	body := "> ⭐️ **Hunger Thrush**\n>\n> Base feature text.\n" +
+		"\n" +
+		"> **Level 5 Fixture Advancement Feature**\n" +
+		">\n" +
+		"> ⭐️ **Soul Rancor**\n" +
+		">\n" +
+		"> You gain a surge.\n" +
+		"\n" +
+		"> **Level 9 Fixture Advancement Feature**\n" +
+		">\n" +
+		"> ⭐️ **Size Increase**\n" +
+		">\n" +
+		"> The boil is now size 3.\n" +
+		">\n" +
+		"> ⭐️ **Fester Field**\n" +
+		">\n" +
+		"> Each non-abyssal enemy takes 5 corruption damage.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 4 {
+		t.Fatalf("got %d features, want 4 (label blocks are not features)", len(feats))
+	}
+	wantLevels := map[string]int{
+		"Hunger Thrush": 0, "Soul Rancor": 5, "Size Increase": 9, "Fester Field": 9,
+	}
+	for _, f := range feats {
+		if f.Level != wantLevels[f.Name] {
+			t.Errorf("%s: Level = %d, want %d", f.Name, f.Level, wantLevels[f.Name])
+		}
+	}
+}
+
 func TestParseRichFeatures_DiceInTitle(t *testing.T) {
 	body := "> 🏹 **Hurl Bone 2d10 + [R](scc:mcdm.heroes.v1/rule.characteristic/reason)**\n" +
 		">\n" +
