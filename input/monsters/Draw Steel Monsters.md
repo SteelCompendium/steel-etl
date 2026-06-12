@@ -7562,17 +7562,17 @@ Most dwarves speak Caelian and Zaliac.
 <!-- @type: featureblock -->
 ######### Dwarf Malice (Malice Features)
 
-At the start of any dwarf's turn, you can spend Malice to activate one of the following features.
+At the start of any dwarf's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 👤 **Breaching Charge (3 Malice)**
+> 👤 **Breaching Charge (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A dwarf can destroy one adjacent object or square of wall for each 3 Malice spent. Each enemy adjacent to the destroyed object or square takes the object's Stamina in damage (3 for wood, 6 for stone, or 9 for metal).
+> A dwarf can destroy one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) object or square of wall for each 3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent. Each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the destroyed object or square takes the object's Stamina in damage (3 for wood, 6 for stone, or 9 for metal).
 
-> ⭐️ **Rappelling Barrage (5 Malice)**
+> ⭐️ **Rappelling Barrage (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each dwarf acting this turn can automatically climb at full speed while moving. At any point during this movement, they can make a free strike.
+> Each dwarf acting this turn can automatically climb at full speed while moving. At any point during this movement, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> 🔳 **Snaring Line (7 Malice)**
+> 🔳 **Snaring Line (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged**      |               **Main action** |
 > |------------------------------|------------------------------:|              
@@ -7580,13 +7580,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Each target makes an **Agility test**.
 >
-> - **≤11:** 8 damage; restrained (EoT)
-> - **12-16:** 6 damage; slowed (EoT)
+> - **≤11:** 8 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **12-16:** 6 damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 > - **17+:** No effect.
 >
 > The snaring line remains until the end of the encounter. Any enemy who moves into the area for the first time in a round or starts their turn there must make the test.
 >
-> **Special:** This ability can't be used by a minion.
+> **Special:** This ability can't be used by a [minion](scc:mcdm.monsters.v1/rule.organization/minion).
 
 <!-- @type: statblock -->
 ####### Dwarf Axethrower
@@ -7607,7 +7607,7 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 1 damage
 > - **12-16:** 2 damage
-> - **17+:** 3 damage; one ally adjacent to the target can make a free strike
+> - **17+:** 3 damage; one ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike)
 >
 > **Effect:** The target can't use triggered actions until the start of the next round.
 
@@ -7630,9 +7630,9 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 2 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; grabbed or prone
+> - **17+:** 5 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** If the target is restrained, they take an extra 2 damage.
+> **Effect:** If the target is [restrained](scc:mcdm.heroes.v1/condition/restrained), they take an extra 2 damage.
 
 <!-- @type: statblock -->
 ####### Dwarf Driver
@@ -7651,11 +7651,11 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 damage; push 1
-> - **12-16:** 2 damage; push 2
-> - **17+:** 3 damage; push 4
+> - **≤11:** 1 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 2 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 3 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
 <!-- @type: statblock -->
 ####### Dwarf Hunter
@@ -7674,11 +7674,11 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 damage; pull 1
-> - **12-16:** 2 damage; pull 2
-> - **17+:** 3 damage; pull 4
+> - **≤11:** 1 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 2 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 3 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
 <!-- @type: statblock -->
 ####### Dwarf Gunner
@@ -7697,21 +7697,21 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; push 1
-> - **12-16:** 9 damage; push 3
-> - **17+:** 12 damage; push 5
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 12 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** If the target is adjacent to an object or a wall after the power roll is resolved, they are restrained until the end of their next turn. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** If the target is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an object or a wall after the power roll is resolved, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 >
-> **5 Malice:** If the target is pushed into another creature, the target and the creature are each restrained until the end of their next turn.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If the target is pushed into another creature, the target and the creature are each [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
-> 🏹 **Ensnaring Chains (5 Malice)**
+> 🏹 **Ensnaring Chains (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Weapon** |                                     **Maneuver** |
 > |--------------------|-------------------------------------------------:|
-> | **📏 Ranged 10**   | **🎯 One prone, restrained, or slowed creature** |
+> | **📏 Ranged 10**   | **🎯 One [prone](scc:mcdm.heroes.v1/condition/prone), [restrained](scc:mcdm.heroes.v1/condition/restrained), or [slowed](scc:mcdm.heroes.v1/condition/slowed) creature** |
 >
-> **Effect:** The gunner makes a free strike against the target, and the prone, restrained, and slowed conditions on the target end. The target is then restrained (save ends).
+> **Effect:** The gunner makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target, and the [prone](scc:mcdm.heroes.v1/condition/prone), [restrained](scc:mcdm.heroes.v1/condition/restrained), and [slowed](scc:mcdm.heroes.v1/condition/slowed) conditions on the target end. The target is then [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 > ⭐️ **Split Shot**
 >
@@ -7734,13 +7734,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; push 1
-> - **12-16:** 6 damage; push 3; M < 1 slowed (save ends)
-> - **17+:** 8 damage; push 3; M < 2 slowed (save ends)
+> - **≤11:** 3 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> 🔳 **Sleep Grenade (3 Malice)**
+> 🔳 **Sleep Grenade (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Weapon**     |               **Main action** |
 > |------------------------|------------------------------:| 
@@ -7748,11 +7748,11 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 poison damage; I < 0 dazed (save ends)
-> - **12-16:** 6 poison damage; I < 1 dazed (save ends)
-> - **17+:** 8 poison damage; I < 2 dazed (save ends)
+> - **≤11:** 3 poison damage; I < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 6 poison damage; I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 8 poison damage; I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** A target dazed this way treats their characteristic scores as 1 lower for the purpose of resisting potencies.
+> **Effect:** A target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way treats their characteristic scores as 1 lower for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency).
 
 > ⭐️ **Indirect Fire**
 >
@@ -7775,23 +7775,23 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; M < 0 slowed (save ends)
-> - **12-16:** 7 damage; M < 1 slowed (save ends)
-> - **17+:** 9 damage; M < 2 slowed (save ends)
+> - **≤11:** 5 damage; M < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 7 damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** The target is pulled up to 5 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** The target is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> 🏹 **Reel Them In (3 Malice)**
+> 🏹 **Reel Them In (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Weapon** |           **Maneuver** |
 > |--------------------|-----------------------:|
 > | **📏 Ranged 10**   | **🎯 Three creatures** |
 >
-> **Effect:** The target is pulled up to 8 squares. A restrained or slowed target can be pulled an additional 2 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** The target is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 8 squares. A [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed) target can be pulled an additional 2 squares. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
 > ⭐️ **We Have a Quota!**
 >
-> If a target made slowed by the reel winch is already grabbed or slowed, the grabbed and slowed conditions end and the target is restrained (save ends).
+> If a target made [slowed](scc:mcdm.heroes.v1/condition/slowed) by the reel winch is already [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [slowed](scc:mcdm.heroes.v1/condition/slowed), the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) conditions end and the target is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 <!-- @type: statblock -->
 ####### Dwarf Shieldwall
@@ -7810,27 +7810,27 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; slide 1
-> - **12-16:** 10 damage; slide 1
-> - **17+:** 13 damage; slide 1
+> - **≤11:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 10 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 13 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
 >
-> **Effect:** The shieldwall can shift 1 square to remain adjacent to the target. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** The shieldwall can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square to remain [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 >
-> **3 Malice:** This ability targets one additional target.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target.
 
-> ❗️ **Intercepting Shield (1 Malice)**
+> ❗️ **Intercepting Shield (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
 > | **📏 Self** |          **🎯 Self** |
 >
-> **Trigger:** A creature makes a strike against an ally adjacent to the shieldwall.
+> **Trigger:** A creature makes a strike against an ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the shieldwall.
 >
 > **Effect:** The shieldwall becomes the target of the triggering strike and halves the damage.
 
 > ⭐️ **Call to the Wall**
 >
-> Whenever a creature deals damage to or takes damage from the shieldwall, the shieldwall can make that creature taunted until the end of the creature's next turn.
+> Whenever a creature deals damage to or takes damage from the shieldwall, the shieldwall can make that creature [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of the creature's next turn.
 
 <!-- @type: statblock -->
 ####### Dwarf Stone Whisperer
@@ -7849,13 +7849,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; slide 1; M < 0 slowed (save ends)
-> - **12-16:** 8 damage; slide 3; M < 1 slowed (save ends)
-> - **17+:** 11 damage; slide 5; M < 2 restrained (save ends)
+> - **≤11:** 5 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 8 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 11 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> 🔳 **Stone Wave (3 Malice)**
+> 🔳 **Stone Wave (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |                  **Maneuver** |
 > |-------------------------|------------------------------:|
@@ -7863,11 +7863,11 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 damage; push 2; R < 1 slowed (save ends)
-> - **12-16:** 6 damage; push 3; R < 2 slowed (save ends)
-> - **17+:** 9 damage; push 3; R < 3 slowed (save ends)
+> - **≤11:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; R < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; R < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; R < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
 > ⭐️ **Stone Walker**
 >
@@ -7890,13 +7890,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; push 2
-> - **12-16:** 7 damage; push 4
-> - **17+:** 9 damage; push 6
+> - **≤11:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> 🔳 **Steam-Powered Snare (3 Malice)**
+> 🔳 **Steam-Powered Snare (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon** |                  **Maneuver** |
 > |--------------------------|------------------------------:|
@@ -7904,8 +7904,8 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Each target makes a **Might test**.
 >
-> - **≤11:** 7 damage; restrained (EoT)
-> - **12-16:** 5 damage; slowed (EoT)
+> - **≤11:** 7 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **12-16:** 5 damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 > - **17+:** No effect.
 >
 > The snare remains until the end of the encounter. Any enemy who moves into the area for the first time in a round or starts their turn there must make the test.
@@ -7927,13 +7927,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 1
-> - **12-16:** 10 damage; push 3
-> - **17+:** 13 damage; push 5; M < 2 restrained (save ends)
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> 🔳 **Concussive Shockwave (5 Malice)**
+> 🔳 **Concussive Shockwave (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon**       |               **Main action** |
 > |------------------------|------------------------------:|
@@ -7941,15 +7941,15 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; push 2; A < 0 slowed (save ends)
-> - **12-16:** 8 damage; push 2; A < 1 slowed (save ends)
-> - **17+:** 11 damage; push 2; A < 2 slowed (save ends)
+> - **≤11:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; A < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
 > ⭐️ **Escort the Prisoners**
 >
-> Whenever the warden moves, they can carry an adjacent restrained enemy as if the enemy were grabbed by them.
+> Whenever the warden moves, they can carry an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) [restrained](scc:mcdm.heroes.v1/condition/restrained) enemy as if the enemy were [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by them.
 
 <!-- @type: statblock -->
 ####### Dwarf Marauder
@@ -7968,13 +7968,13 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; slide 1
-> - **12-16:** 12 damage; slide 3
-> - **17+:** 15 damage; slide 5
+> - **≤11:** 8 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 12 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 15 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 >
-> **3 Malice:** A target force moved adjacent to an ally of the marauder lord is restrained until the end of their next turn.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A target force moved [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally of the marauder lord is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
 > 🏹 **Magnetomancy**
 >
@@ -7982,9 +7982,9 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 > |---------------------|------------------------------:|
 > | **📏 Ranged 10**    | **🎯 One creature or object** |
 >
-> **Effect:** The target vertical slides up to 5 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** The target vertical [slides](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 >
-> **5 Malice:** This ability takes the Area keyword and loses the Ranged keyword, its distance becomes a 10 burst, and it targets each restrained creature in the area.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability takes the Area keyword and loses the Ranged keyword, its distance becomes a 10 burst, and it targets each [restrained](scc:mcdm.heroes.v1/condition/restrained) creature in the area.
 
 > ❗️ **Your Weapon Is Useless**
 >
@@ -8043,11 +8043,11 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
-> - **17+:** 12 damage; M < 2 restrained (save ends)
+> - **17+:** 12 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A target already restrained or restrained by this ability is pulled up to 3 squares. A target restrained by a dwarf can be force moved by this ability. This forced movement doesn't end the restrained condition unless the Director determines otherwise.
+> **Effect:** A target already [restrained](scc:mcdm.heroes.v1/condition/restrained) or [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by a dwarf can be force moved by this ability. This forced movement doesn't end the [restrained](scc:mcdm.heroes.v1/condition/restrained) condition unless the Director determines otherwise.
 
-> ❇️ **Stunning Blast (3 Malice)**
+> ❇️ **Stunning Blast (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |                  **Maneuver** |
 > |------------------|------------------------------:|
@@ -8055,9 +8055,9 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 lightning damage; A < 0 slowed (save ends)
-> - **12-16:** 6 lightning damage; A < 1 slowed (save ends)
-> - **17+:** 7 lightning damage; A < 2 slowed (save ends)
+> - **≤11:** 3 lightning damage; A < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 6 lightning damage; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 7 lightning damage; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ⭐️ **Cupola**
 >
@@ -8065,18 +8065,18 @@ At the start of any dwarf's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Mobile Prison Harness**
 >
-> Any restrained or slowed creature who comes adjacent to the war walker is automatically restrained (save ends) and takes a bane on power rolls. A creature restrained this way moves with the war walker.
+> Any [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed) creature who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the war walker is automatically [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends) and takes a bane on power rolls. A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way moves with the war walker.
 
 <!-- @type: monster | @category: elementals -->
 ## Elementals
 
-When the gods formed the mundane world, they took sparks of creation from the roiling plane of Quintessence and gave sentience to some of the multiverse's most basic elements—air, earth, fire, and water. Many elementals contain just one of these components, but can come to embody multiple reagents as they age.
+When the gods formed the mundane world, they took sparks of creation from the roiling plane of Quintessence and gave sentience to some of the multiverse's most basic elements—air, earth, fire, and water. Many [elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) contain just one of these components, but can come to embody multiple reagents as they age.
 
 #### Duality of Form
 
-Elementals are mercurial creatures of creation, destruction, and transformation. Though the deities first created the mundane world, elementals cultivated and shaped it. When a tree, stone, or other aspect of the world doesn't suit an elemental, they break it down with elemental fury then build it anew.
+[Elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) are mercurial creatures of creation, destruction, and transformation. Though the deities first created the mundane world, elementals cultivated and shaped it. When a tree, stone, or other aspect of the world doesn't suit an elemental, they break it down with elemental fury then build it anew.
 
-Elementals change like the winds and the tides, and from age to age, they remake themselves to reflect what the world has become. They are protectors armored by stone, lizards ablaze with fire, and sometimes dragons clad in steel.
+[Elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) change like the winds and the tides, and from age to age, they remake themselves to reflect what the world has become. They are protectors armored by stone, lizards ablaze with fire, and sometimes [dragons](scc:mcdm.monsters.v1/monster.group/dragons) clad in steel.
 
 #### Rebirth and Reformation
 
@@ -8119,17 +8119,17 @@ Most elementals speak Low Kuric. Some can use Caelian when they need to.
 <!-- @type: featureblock -->
 ######### Elemental Malice (Malice Features)
 
-At the start of any elemental's turn, you can spend Malice to activate one of the following features.
+At the start of any elemental's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Elemental Swap (3 Malice)**
+> ⭐️ **Elemental Swap (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Two elementals on the encounter map teleport to swap places, and each has damage immunity 2 until the end of the round.
+> Two elementals on the encounter map [teleport](scc:mcdm.heroes.v1/movement/teleport) to swap places, and each has damage immunity 2 until the end of the round.
 
-> 👤 **Split (5 Malice)**
+> 👤 **Split (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> An elemental acting this turn cleaves themself into two separate elementals. Each elemental has the same statistics as the original, except that each has half the original's current Stamina and is one size smaller. Both elementals can then shift up to their speed.
+> An elemental acting this turn cleaves themself into two separate elementals. Each elemental has the same statistics as the original, except that each has half the original's current Stamina and is one size smaller. Both elementals can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed.
 
-> 🏹 **Convocation of Chaos (7 Malice)**
+> 🏹 **Convocation of Chaos (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                 **Maneuver** |
 > |-------------------|-----------------------------:|
@@ -8168,9 +8168,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the start of the crux's next turn, the target has fire immunity 5.
 >
-> **3 Malice:** Until the end of the encounter, the ground within 3 squares of the target is wreathed in fire. Any enemy who enters that area for the first time in a round or starts their turn there takes 3 fire damage.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Until the end of the encounter, the ground within 3 squares of the target is wreathed in fire. Any enemy who enters that area for the first time in a round or starts their turn there takes 3 fire damage.
 
-> ❗️ **Flame Jet (1 Malice)**
+> ❗️ **Flame Jet (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic**   | **Triggered action** |
 > |-------------|---------------------:|
@@ -8178,11 +8178,11 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** The crux takes damage.
 >
-> **Effect:** The crux ignores any effects associated with the damage and can fly up to their speed. If the crux doesn't end this movement on solid ground, they fall.
+> **Effect:** The crux ignores any effects associated with the damage and can [fly](scc:mcdm.heroes.v1/movement/fly) up to their speed. If the crux doesn't end this movement on solid ground, they fall.
 
 > ⭐️ **Fickle and Free**
 >
-> The crux can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
+> The crux can't be [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: statblock -->
 ####### Essence of Storms
@@ -8202,10 +8202,10 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 > **Power Roll + 2:**
 >
 > - **≤11:** 5 damage
-> - **12-16:** 5 damage, 4 lightning damage; push 1
-> - **17+:** 5 damage, 7 lightning damage; push 3
+> - **12-16:** 5 damage, 4 lightning damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 5 damage, 7 lightning damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** The essence shifts up to 3 squares before or after using this ability.
+> **Effect:** The essence [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares before or after using this ability.
 
 > 🏹 **Convocation of Squalls**
 >
@@ -8215,9 +8215,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the start of the essence's next turn, the target has lightning immunity 5.
 >
-> **3 Malice:** Until the end of the encounter, a vortex surrounds the target in a 3 aura. The area is difficult terrain for enemies. Additionally, at the end of each of the target's turns, they can push one creature in the area up to 5 squares.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Until the end of the encounter, a vortex surrounds the target in a 3 aura. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, at the end of each of the target's turns, they can [push](scc:mcdm.heroes.v1/movement/forced-movement) one creature in the area up to 5 squares.
 
-> ❗️ **Thunderclap (1 Malice)**
+> ❗️ **Thunderclap (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -8229,7 +8229,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Fickle and Free**
 >
-> The essence can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
+> The essence can't be [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: statblock -->
 ####### Essence of Tides
@@ -8248,9 +8248,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; slide 1
-> - **12-16:** 11 damage; slide 2
-> - **17+:** 14 damage; slide 3
+> - **≤11:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 11 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 14 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
 > **Effect:** If a target has P < 2, their stability is reduced to 0 and they move 2 additional squares whenever they are force moved (save ends).
 
@@ -8262,9 +8262,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the start of the essence's next turn, the target has cold immunity 5.
 >
-> **3 Malice:** Until the end of the encounter, the ground within 1 square of the target is a pool of water that is difficult terrain. This water extends out behind the target as they move, creating a stream that lasts until the end of the encounter. Any enemy who ends their turn in the stream and has M < 2 is slowed (save ends).
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Until the end of the encounter, the ground within 1 square of the target is a pool of water that is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). This water extends out behind the target as they move, creating a stream that lasts until the end of the encounter. Any enemy who ends their turn in the stream and has M < 2 is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> ❗️ **Sea-Salted Wounds (1 Malice)**
+> ❗️ **Sea-Salted Wounds (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      | **Triggered action** |
 > |----------------|---------------------:|
@@ -8272,15 +8272,15 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** An ally deals rolled damage to the target.
 >
-> **Effect:** The essence makes a free strike against the target.
+> **Effect:** The essence makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Fickle and Free**
 >
-> The essence can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
+> The essence can't be [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Water Glide**
 >
-> Whenever the essence starts their turn in a space containing water, they can fly until the end of their turn. While flying, the essence doesn't provoke opportunity attacks.
+> Whenever the essence starts their turn in a space containing water, they can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of their turn. While flying, the essence doesn't provoke opportunity attacks.
 
 <!-- @type: statblock -->
 ####### Field of Growth
@@ -8300,10 +8300,10 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 > **Power Roll + 2:**
 >
 > - **≤11:** 8 damage
-> - **12-16:** 13 damage; R < 1 prone and can't stand (save ends)
-> - **17+:** 16 damage; R < 2 prone and can't stand (save ends)
+> - **12-16:** 13 damage; R < 1 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **17+:** 16 damage; R < 2 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 >
-> **Effect:** If a target made prone this way is already prone, they are instead restrained (save ends). If the target was also unable to stand, that effect ends when they are no longer restrained this way.
+> **Effect:** If a target made [prone](scc:mcdm.heroes.v1/condition/prone) this way is already [prone](scc:mcdm.heroes.v1/condition/prone), they are instead [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends). If the target was also unable to stand, that effect ends when they are no longer [restrained](scc:mcdm.heroes.v1/condition/restrained) this way.
 
 > 🏹 **Convocation of Verdure**
 >
@@ -8313,9 +8313,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** The target gains 15 temporary Stamina that lasts until the start of the field's next turn.
 >
-> **3 Malice:** Until the end of the encounter, the ground within 1 square of the target is overgrown with underbrush and vines. Whenever any enemy makes a strike against the target while within line of effect of that area, the enemy is pulled 5 squares toward the area after the strike is resolved. Any enemy who enters the area for the first time in a round or starts their turn there is knocked prone.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Until the end of the encounter, the ground within 1 square of the target is overgrown with underbrush and vines. Whenever any enemy makes a strike against the target while within line of effect of that area, the enemy is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) 5 squares toward the area after the strike is resolved. Any enemy who enters the area for the first time in a round or starts their turn there is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> ❗️ **Rose Thorn Lash (1 Malice)**
+> ❗️ **Rose Thorn Lash (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Melee** |                     **Triggered action** |
 > |------------------|-----------------------------------------:|
@@ -8323,11 +8323,11 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** A creature or object within distance deals damage to the field.
 >
-> **Effect:** The target takes 6 damage, and if they have A < 2, they are bleeding (save ends).
+> **Effect:** The target takes 6 damage, and if they have A < 2, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ⭐️ **Fickle and Free**
 >
-> The field can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
+> The field can't be [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Roots Run Deep**
 >
@@ -8351,10 +8351,10 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 > **Power Roll + 2:**
 >
 > - **≤11:** 8 damage
-> - **12-16:** 12 damage; M < 1 restrained (save ends)
-> - **17+:** 15 damage; M < 2 restrained (save ends)
+> - **12-16:** 12 damage; M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 15 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The target's space is difficult terrain.
+> **Effect:** The target's space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > 🏹 **Convocation of Quartz**
 >
@@ -8364,9 +8364,9 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the start of the force's next turn, any melee strike made against the target takes a bane if it doesn't already have a bane or double bane.
 >
-> **3 Malice:** Until the end of the encounter, the target grows a carapace of stone. They have a +3 bonus to stability and gain 15 temporary Stamina.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Until the end of the encounter, the target grows a carapace of stone. They have a +3 bonus to stability and gain 15 temporary Stamina.
 
-> ❗️ **Break Armor (1 Malice)**
+> ❗️ **Break Armor (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -8378,7 +8378,7 @@ At the start of any elemental's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Fickle and Free**
 >
-> The force can't be restrained, slowed, or knocked prone, and they ignore difficult terrain.
+> The force can't be [restrained](scc:mcdm.heroes.v1/condition/restrained), [slowed](scc:mcdm.heroes.v1/condition/slowed), or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Primordial Strength**
 >
@@ -8438,19 +8438,19 @@ Most high elves speak Caelian and Hyrallic, with some also speaking Yllyric.
 <!-- @type: featureblock -->
 ######### High Elf Malice (Malice Features)
 
-At the start of any high elf's turn, you can spend Malice to activate one of the following features.
+At the start of any high elf's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🌀 **Chaincast (3 Malice)**
+> 🌀 **Chaincast (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, whenever a high elf uses a magic ability, they can use it as if they were occupying the square of another high elf on the encounter map to whom they have line of effect.
 
-> 🔳 **Gift From an Accursed Tome (5 Malice)**
+> 🔳 **Gift From an Accursed Tome (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**            |               **Main action** |
 > |----------------------------|------------------------------:|
 > | **📏 5 x 1 line within 1** | **🎯 Each enemy in the area** |
 >
-> **Effect:** The high elf chooses a damage type and condition from one of the following combinations: cold damage and slowed, poison damage and weakened, or corruption damage and frightened.
+> **Effect:** The high elf chooses a damage type and condition from one of the following combinations: cold damage and [slowed](scc:mcdm.heroes.v1/condition/slowed), poison damage and [weakened](scc:mcdm.heroes.v1/condition/weakened), or corruption damage and [frightened](scc:mcdm.heroes.v1/condition/frightened).
 >
 > **Power Roll + 2:**
 >
@@ -8458,11 +8458,11 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > - **12-16:** 9 damage; R < 2 chosen condition (save ends)
 > - **17+:** 12 damage; R < 3 chosen condition (save ends)
 >
-> **Special:** This ability can't be used by a minion.
+> **Special:** This ability can't be used by a [minion](scc:mcdm.monsters.v1/rule.organization/minion).
 
-> 🌀 **In Defiance of Time (7 Malice)**
+> 🌀 **In Defiance of Time (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the round, each high elf in the encounter gains a +4 bonus to speed, and whenever a high elf uses an ability against an enemy, each high elf adjacent to that enemy can make a free strike against them.
+> Until the end of the round, each high elf in the encounter gains a +4 bonus to speed, and whenever a high elf uses an ability against an enemy, each high elf [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to that enemy can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 <!-- @type: statblock -->
 ####### Elemental Mote
@@ -8487,7 +8487,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 
 > ⭐️ **Spark of Life**
 >
-> On their turn, the mote can leave the encounter in a flash of light to revive one adjacent dead soot crow, brambleguard, or ceramic horse. The revived creature returns with 3 Stamina.
+> On their turn, the mote can leave the encounter in a flash of light to revive one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) dead soot crow, brambleguard, or ceramic horse. The revived creature returns with 3 Stamina.
 
 <!-- @type: statblock -->
 ####### High Elf Dawn Mage
@@ -8562,7 +8562,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 1 damage
 > - **12-16:** 2 damage
-> - **17+:** 3 damage; taunted (EoT)
+> - **17+:** 3 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 >
 > **Effect:** Until the end of their turn, the soot crow ignores opportunity attacks from the target.
 
@@ -8592,8 +8592,8 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; push 3
-> - **17+:** 10 damage; push 3; A < 2 bleeding (save ends)
+> - **12-16:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **Thicket and Thorns**
 >
@@ -8618,17 +8618,17 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
-> - **17+:** 12 damage; R < 2 bleeding (save ends)
+> - **17+:** 12 damage; R < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The bloodletter and each of their allies has a double edge on abilities targeting a creature bleeding this way.
+> **Effect:** The bloodletter and each of their allies has a double edge on abilities targeting a creature [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way.
 
-> ❇️ **Blood Haze (2 Malice)**
+> ❇️ **Blood Haze (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |   **Maneuver** |
 > |-----------------|---------------:|
 > | **📏 1 burst**  | **🎯 Special** |
 >
-> **Effect:** Until the end of the next round, a cloud of blood vapor fills the area. The cloud blocks line of effect for enemies, and any enemy has damage weakness 3 while in the area. The bloodletter can then shift up to their speed, and can attempt to hide if they end that shift with concealment.
+> **Effect:** Until the end of the next round, a cloud of blood vapor fills the area. The cloud blocks line of effect for enemies, and any enemy has damage weakness 3 while in the area. The bloodletter can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed, and can attempt to hide if they end that shift with concealment.
 
 > ⭐️ **Otherworldly Grace**
 >
@@ -8653,9 +8653,9 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 7 damage
 > - **12-16:** 10 damage
-> - **17+:** 13 damage; R < 1 bleeding (save ends); I < 1 frightened (save ends); P < 1 restrained (save ends)
+> - **17+:** 13 damage; R < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends); P < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **5 Malice:** The ability takes the Area keyword and loses the Strike keyword, its distance becomes a 3 cube within 10, and it targets each enemy in the area.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability takes the Area keyword and loses the Strike keyword, its distance becomes a 3 cube within 10, and it targets each enemy in the area.
 
 > 🗡 **Kiss of Death**
 >
@@ -8686,9 +8686,9 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 cold damage; M < 0 push 3
-> - **12-16:** 6 cold damage; M < 1 push 5 or prone
-> - **17+:** 9 cold damage; M < 2 slide 5 or prone
+> - **≤11:** 4 cold damage; M < 0 [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 6 cold damage; M < 1 [push](scc:mcdm.heroes.v1/movement/forced-movement) 5 or [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 9 cold damage; M < 2 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5 or [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > 🏹 **Aetherweb**
 >
@@ -8698,11 +8698,11 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; R < 0 slowed (save ends)
-> - **12-16:** 8 damage; R < 1 slowed (save ends)
-> - **17+:** 11 damage; R < 2 restrained (save ends)
+> - **≤11:** 5 damage; R < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 8 damage; R < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 11 damage; R < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** Each enemy within 3 squares of a target suffers the same potency effect as the target unless they are already adjacent to them, or if they immediately shift into an unoccupied space adjacent to the target (no action required).
+> **Effect:** Each enemy within 3 squares of a target suffers the same [potency](scc:mcdm.heroes.v1/rule.character/potency) effect as the target unless they are already [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them, or if they immediately [shift](scc:mcdm.heroes.v1/movement/shifting) into an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target (no action required).
 
 > ⭐️ **Otherworldly Grace**
 >
@@ -8726,10 +8726,10 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > **Power Roll + 2:**
 >
 > - **≤11:** 5 psychic damage
-> - **12-16:** 7 psychic damage; I < 1 weakened (save ends)
-> - **17+:** 9 psychic damage; I < 2 weakened (save ends)
+> - **12-16:** 7 psychic damage; I < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 9 psychic damage; I < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** The potency increases by 1. If the target is weakened this way at the end of the encounter, they can't take a respite activity during their next respite.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1. If the target is [weakened](scc:mcdm.heroes.v1/condition/weakened) this way at the end of the encounter, they can't take a respite activity during their next respite.
 
 > 🏹 **Recall**
 >
@@ -8737,7 +8737,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > |-------------------|------------------:|
 > | **📏 Ranged 5**   | **🎯 Two allies** |
 >
-> **Effect:** Each target can teleport to an unoccupied space adjacent to the palinode. The palinode and each target then gain 5 temporary Stamina.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the palinode. The palinode and each target then gain 5 temporary Stamina.
 
 > ⭐️ **Otherworldly Grace**
 >
@@ -8781,7 +8781,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Effect:** For each elemental mote adjacent to the wyrd, the size of the cube increases by 1.
 
-> 🏹 **Summon Elemental (2 Malice)**
+> 🏹 **Summon Elemental (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**      |   **Maneuver** |
 > |-----------------|---------------:|
@@ -8822,7 +8822,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > - **12-16:** 7 damage
 > - **17+:** 9 damage
 >
-> **Effect:** On a tier 3 outcome, the zephyr can make a free strike against a creature adjacent to the target. If they do so and that creature and the target both have A < 2, the creature and the target are both prone. On any tier outcome, the zephyr can then shift up to 2 squares.
+> **Effect:** On a tier 3 outcome, the zephyr can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. If they do so and that creature and the target both have A < 2, the creature and the target are both [prone](scc:mcdm.heroes.v1/condition/prone). On any tier outcome, the zephyr can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > 👤 **Windwalk**
 >
@@ -8830,7 +8830,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The zephyr flies up to their speed. If they don't end this movment on solid ground, they are prone.
+> **Effect:** The zephyr [flies](scc:mcdm.heroes.v1/movement/fly) up to their speed. If they don't end this movment on solid ground, they are [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Like the Wind**
 >
@@ -8857,9 +8857,9 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 lightning damage; R < 1 dazed (save ends)
-> - **12-16:** 14 lightning damage; R < 2 dazed (save ends)
-> - **17+:** 17 lightning damage; R < 3 dazed (save ends)
+> - **≤11:** 9 lightning damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 14 lightning damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 17 lightning damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
 > **Effect:** Until the start of the ordinator's next turn, each ally high elf in the encounter gains an edge on ability rolls against the target.
 
@@ -8869,9 +8869,9 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > |-----------------|---------------------------------------:|
 > | **📏 10 burst** | **🎯 Each elemental ally in the area** |
 >
-> **Effect:** Each target can move up to their speed or make a free strike. Elemental mote targets can, instead, use their Spark of Life trait.
+> **Effect:** Each target can move up to their speed or make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Elemental mote targets can, instead, use their Spark of Life trait.
 
-> 🏹 **Summon Elemental (2 Malice)**
+> 🏹 **Summon Elemental (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |   **Maneuver** |
 > |------------------|---------------:|
@@ -8879,7 +8879,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > **Effect:** The ordinator summons four elemental motes or four soot crows into unoccupied space within distance.
 >
-> **3 Malice:** The ordinator instead summons one ceramic horse or one winded brambleguard into an unoccupied space within distance.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ordinator instead summons one ceramic horse or one winded brambleguard into an unoccupied space within distance.
 
 > ❗️ **Enough!**
 >
@@ -8944,7 +8944,7 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 5 damage
 > - **12-16:** 7 fire damage
-> - **17+:** 9 lightning damage; M < 2 prone
+> - **17+:** 9 lightning damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ❇️ **Stomp**
 >
@@ -8958,15 +8958,15 @@ At the start of any high elf's turn, you can spend Malice to activate one of the
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 >
-> **Effect:** Any target who is prone takes an extra 2 damage.
+> **Effect:** Any target who is [prone](scc:mcdm.heroes.v1/condition/prone) takes an extra 2 damage.
 
-> 👤 **Buck (2 Malice)**
+> 👤 **Buck (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       |              **Maneuver** |
 > |-------------|--------------------------:|
 > | **📏 Self** |  **🎯 The horse's rider** |
 >
-> **Effect:** The horse vertical slides the target up to 3 squares, ignoring stability. The target can use a ranged ability at any point during this forced movement, and takes no damage if they then fall.
+> **Effect:** The horse vertical [slides](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 3 squares, ignoring stability. The target can use a ranged ability at any point during this forced movement, and takes no damage if they then fall.
 
 > ⭐️ **Shared Otherworldly Grace**
 >
@@ -9016,19 +9016,19 @@ Most shadow elves speak Illyvric, though platoon leaders might speak some Caelia
 <!-- @type: featureblock -->
 ######### Shadow Elf Malice (Malice Features)
 
-At the start of any shadow elf's turn, you can spend Malice to activate one of the following features.
+At the start of any shadow elf's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Watch Me Disappear (3 Malice)**
+> ⭐️ **Watch Me Disappear (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each shadow elf acting this turn can attempt to hide as a free maneuver if they have concealment.
 
-> ⭐️ **Extra Dimension (5 Malice)**
+> ⭐️ **Extra Dimension (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> When any shadow elf acting this turn makes a strike against a target who has I < 2 in addition to the strike's regular effects, the target is bleeding (save ends) or slowed (save ends).
+> When any shadow elf acting this turn makes a strike against a target who has I < 2 in addition to the strike's regular effects, the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends) or [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 🌀 **Home Is Where the Hurt Is (10 Malice)**
+> 🌀 **Home Is Where the Hurt Is (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The shadow elves synthesize a concentrated pocket manifold reminiscent of Equinox and graft it onto the encounter map. Until the end of the encounter, all creatures can see shadow elves in full color, and shadow elves no longer benefit from their Of the Umbra trait. Additionally, the potency of all shadow elf abilities increases by 2, and any enemy making a saving throw against an effect imposed by a shadow elf ability must roll an 8 or higher as they feel the effect across two worlds.
+> The shadow elves synthesize a concentrated pocket manifold reminiscent of Equinox and graft it onto the encounter map. Until the end of the encounter, all creatures can see shadow elves in full color, and shadow elves no longer benefit from their Of the Umbra trait. Additionally, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of all shadow elf abilities increases by 2, and any enemy making a saving throw against an effect imposed by a shadow elf ability must roll an 8 or higher as they feel the effect across two worlds.
 
 <!-- @type: statblock -->
 ####### Shadow Elf Cloak
@@ -9075,8 +9075,8 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 > **Power Roll + 3:**
 >
 > - **≤11:** 2 damage
-> - **12-16:** 4 damage; A < 2 slowed (save ends)
-> - **17+:** 6 damage; A < 3 slowed (save ends)
+> - **12-16:** 4 damage; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 6 damage; A < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ⭐️ **Of the Umbra**
 >
@@ -9159,9 +9159,9 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The next ability used against the target has a double edge.
 >
-> **5 Malice:** Each non-minion ally within 3 squares of the target can make a free strike against them.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 3 squares of the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
-> 🔳 **Splitbow (2 Malice)**
+> 🔳 **Splitbow (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon**    |               **Main action** |
 > |-----------------------------|------------------------------:|
@@ -9169,11 +9169,11 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 damage; I < 1 bleeding (save ends)
-> - **12-16:** 10 damage; I < 2 bleeding (save ends)
-> - **17+:** 12 damage; I < 3 bleeding (save ends)
+> - **≤11:** 5 damage; I < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 10 damage; I < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 12 damage; I < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Each target is pushed up to 4 squares.
+> **Effect:** Each target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares.
 
 > ⭐️ **Of the Umbra**
 >
@@ -9234,8 +9234,8 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 > **Power Roll + 3:**
 >
 > - **≤11:** 8 corruption damage
-> - **12-16:** 12 corruption damage; R < 2 taunted (EoT)
-> - **17+:** 15 corruption damage; R < 3 taunted (EoT)
+> - **12-16:** 12 corruption damage; R < 2 [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **17+:** 15 corruption damage; R < 3 [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 
 > ❗️ **Trick of the Eye**
 >
@@ -9274,7 +9274,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **Effect:** The next strike made against the target deals an extra 5 damage.
 
-> ❇️ **Mourning Till Dusk (3 Malice)**
+> ❇️ **Mourning Till Dusk (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |              **Main action** |
 > |-----------------|-----------------------------:|
@@ -9284,7 +9284,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > - **≤11:** The target regains 6 Stamina.
 > - **12-16:** The target regains 9 Stamina.
-> - **17+:** The target regains 12 Stamina and the Director gains 3 Malice.
+> - **17+:** The target regains 12 Stamina and the Director gains 3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 >
 > **Effect:** Each target gains an edge on their next strike.
 
@@ -9323,7 +9323,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** The moondancer takes damage from a strike.
 >
-> **Effect:** The moondancer can teleport up to 10 squares to a space with concealment created by darkness.
+> **Effect:** The moondancer can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 10 squares to a space with concealment created by darkness.
 
 > ⭐️ **Of the Umbra**
 >
@@ -9358,7 +9358,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** If the mournblade has concealment, they can teleport up to 10 squares to a space with concealment created by darkness.
+> **Effect:** If the mournblade has concealment, they can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 10 squares to a space with concealment created by darkness.
 
 > ⭐️ **Of the Umbra**
 >
@@ -9389,7 +9389,7 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **3 Malice:** The target instead has a double bane on the next ability they use.
 
-> 🏹 **Enemies in the Dark (3 Malice)**
+> 🏹 **Enemies in the Dark (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |    **Main action** |
 > |---------------------------|-------------------:|
@@ -9397,8 +9397,8 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; R < 1 the target makes a free strike against one enemy of the noctis mage's choice.
-> - **12-16:** 10 damage; R < 2 the target makes a free strike against one enemy of the noctis mage's choice.
+> - **≤11:** 8 damage; R < 1 the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of the noctis mage's choice.
+> - **12-16:** 10 damage; R < 2 the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of the noctis mage's choice.
 > - **17+:** 13 damage; R < 3 the target uses a signature ability against one enemy of the noctis mage's choice.
 
 > ⭐️ **Of the Umbra**
@@ -9424,11 +9424,11 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 >
 > - **≤11:** 9 damage
 > - **12-16:** 13 damage
-> - **17+:** 16 damage; I < 3 bleeding (save ends)
+> - **17+:** 16 damage; I < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The panther can make a free strike against a creature or object adjacent to the target.
+> **Effect:** The panther can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature or object [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
-> ❇️ **Bladestorm (3 Malice)**
+> ❇️ **Bladestorm (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |               **Main action** |
 > |------------------|------------------------------:|
@@ -9437,10 +9437,10 @@ At the start of any shadow elf's turn, you can spend Malice to activate one of t
 > **Power Roll + 3:**
 >
 > - **≤11:** 5 corruption damage
-> - **12-16:** 8 corruption damage; I < 2 dazed (save ends)
-> - **17+:** 10 corruption damage; I < 3 dazed (save ends)
+> - **12-16:** 8 corruption damage; I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 10 corruption damage; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The panther has a double edge on strikes against targets dazed this way.
+> **Effect:** The panther has a double edge on strikes against targets [dazed](scc:mcdm.heroes.v1/condition/dazed) this way.
 
 > ⭐️ **Of the Umbra**
 >
@@ -9478,11 +9478,11 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; I < 2 bleeding (save ends)
-> - **12-16:** 16 damage; I < 3 bleeding (save ends)
-> - **17+:** 19 damage; I < 4 bleeding (save ends)
+> - **≤11:** 11 damage; I < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 16 damage; I < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 19 damage; I < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **2 Malice:** The potency increases by 1.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1.
 
 > 🏹 **Grasping Shadow**
 >
@@ -9492,9 +9492,9 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Pull 5; I < 2 slowed (save ends)
-> - **12-16:** Pull 7; I < 3 slowed (save ends)
-> - **17+:** Pull 10; I < 4 slowed (save ends)
+> - **≤11:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 5; I < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 7; I < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 10; I < 4 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ❗️ **Put It Out!**
 >
@@ -9520,7 +9520,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 > |-----------------|---------------:|    
 > | **📏 Ranged 5** | **🎯 Special** |
 >
-> **Effect:** The eclipse calls forth one brush stalker into an unoccupied space within distance. Each ally within distance can then shift up to their speed and make a free strike.
+> **Effect:** The eclipse calls forth one brush stalker into an unoccupied space within distance. Each ally within distance can then [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ☠️ **Cast Away All Hope (Villain Action 2)**
 >
@@ -9528,7 +9528,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 > |-----------------|------------------------------:|    
 > | **📏 3 burst**  | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target loses all their surges. Additionally, until the end of the round, allies ignore edges and double edges on any targets' abilities, and ignore any nondamaging effects of any target's damage-dealing abilities.
+> **Effect:** Each target loses all their [surges](scc:mcdm.heroes.v1/rule.resource/surge). Additionally, until the end of the round, allies ignore edges and double edges on any targets' abilities, and ignore any nondamaging effects of any target's damage-dealing abilities.
 
 > ☠️ **Umbral Hunger (Villain Action 3)**
 >
@@ -9565,7 +9565,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 > - **12-16:** 10 damage
 > - **17+:** 13 damage
 
-> ❇️ **Reclamation (2 Malice)**
+> ❇️ **Reclamation (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -9573,9 +9573,9 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 corruption damage; M < 1 weakened (save ends)
-> - **12-16:** 7 corruption damage; M < 2 weakened (save ends)
-> - **17+:** 10 corruption damage; M < 3 weakened (save ends)
+> - **≤11:** 4 corruption damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 7 corruption damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 10 corruption damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 > ⭐️ **Suneater**
 >
@@ -9583,7 +9583,7 @@ However, not every shadow elf force is affiliate d wit h th queen. Some are exil
 
 > ⭐️ **Wyrd Dyr**
 >
-> While they have line of effect to the brush stalker, any animal except another brush stalker is frightened.
+> While they have line of effect to the brush stalker, any animal except another brush stalker is [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 <!-- @type: monster | @category: elves-wode -->
 ## Elves, Wode
@@ -9631,22 +9631,22 @@ one of the following features.
 <!-- @type: featureblock -->
 ######### Wode Elf Malice (Malice Features)
 
-At the start of any wode elf's turn, you can spend Malice to activate one of the following features.
+At the start of any wode elf's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Forest Network (3 Malice)**
+> ⭐️ **Forest Network (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each wode elf who ends this turn hidden can shift up to their speed while remaining hidden.
+> Each wode elf who ends this turn hidden can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed while remaining hidden.
 
-> ⭐️ **Punishing Regrowth (5 Malice)**
+> ⭐️ **Punishing Regrowth (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the round, each wode elf gains an edge on abilities, and their strikes can slide a target up to 2 squares in addition to their usual effects. If a strike already imposes forced movement, this slide happens after that forced movement. A creature force moved by a wode elf's strike who ends this forced movement in difficult terrain is restrained until the end of their next turn.
+> Until the end of the round, each wode elf gains an edge on abilities, and their strikes can [slide](scc:mcdm.heroes.v1/movement/forced-movement) a target up to 2 squares in addition to their usual effects. If a strike already imposes forced movement, this slide happens after that forced movement. A creature force moved by a wode elf's strike who ends this forced movement in [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) is [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
-> 🌀 **Vines Everywhere (7 Malice)**
+> 🌀 **Vines Everywhere (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Vines rapidly grow across the entire encounter map. Each enemy in the encounter makes an **Agility test**.
 >
-> - **≤11:** 8 damage; restrained (save ends)
-> - **12-16:** Restrained (EoT)
+> - **≤11:** 8 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** [Restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
 > - **17+:** No effect.
 
 <!-- @type: statblock -->
@@ -9776,21 +9776,21 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; push 1
-> - **12-16:** 9 damage; push 3
-> - **17+:** 12 damage; push 5
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 12 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** The chirurgeon can make a ranged free strike before using this ability.
+> **Effect:** The chirurgeon can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before using this ability.
 >
-> **5 Malice:** The chirurgeon uses this ability again.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The chirurgeon uses this ability again.
 
-> 🏹 **The Wode Protects Us (3 Malice)**
+> 🏹 **The Wode Protects Us (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                 **Maneuver** |
 > |-------------------|-----------------------------:|
 > | **📏 Ranged 5**   | **🎯 Self and three allies** |
 >
-> **Effect:** Each target can teleport up to 10 squares to a space that has cover or concealment.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 10 squares to a space that has cover or concealment.
 
 > ⭐️ **Masking Glamor**
 >
@@ -9813,21 +9813,21 @@ At the start of any wode elf's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; pull 1
-> - **12-16:** 8 damage; pull 3; M < 1 slowed (save ends)
-> - **17+:** 10 damage; pull 5; M < 2 slowed (save ends)
+> - **≤11:** 5 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 8 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 10 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** While slowed this way, a target can't search for hidden creatures.
+> **Effect:** While [slowed](scc:mcdm.heroes.v1/condition/slowed) this way, a target can't search for hidden creatures.
 >
-> **3 Malice:** The size of the cube and the potency both increase by 1.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The size of the cube and the [potency](scc:mcdm.heroes.v1/rule.character/potency) both increase by 1.
 
-> 🏹 **The Wode Protects Us (3 Malice)**
+> 🏹 **The Wode Protects Us (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                 **Maneuver** |
 > |-------------------|-----------------------------:|
 > | **📏 Ranged 5**   | **🎯 Self and three allies** |
 >
-> **Effect:** Each target can teleport up to 10 squares to a space that has cover or concealment.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 10 squares to a space that has cover or concealment.
 
 > ⭐️ **Masking Glamor**
 >
@@ -9863,12 +9863,12 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > **Power Roll + 2:**
 >
 > - **≤11:** 5 damage
-> - **12-16:** 7 damage; I < 1 restrained (save ends)
-> - **17+:** 9 damage; I < 2 restrained (save ends)
+> - **12-16:** 7 damage; I < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 9 damage; I < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** While restrained this way, a target can't search for hidden creatures.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, a target can't search for hidden creatures.
 
-> 🏹 **The Natural Cycle (3 Malice)**
+> 🏹 **The Natural Cycle (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |         **Maneuver** |
 > |---------------------------|---------------------:|
@@ -9877,10 +9877,10 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > **Power Roll + 2:**
 >
 > - **≤11:** 2 damage
-> - **12-16:** 4 damage; P < 1 weakened (save ends)
-> - **17+:** 6 damage; P < 1 bleeding (save ends); the target has a double bane on strikes (save ends)
+> - **12-16:** 4 damage; P < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 6 damage; P < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); the target has a double bane on strikes (save ends)
 >
-> **Effect:** While bleeding or weakened this way, a target is covered in lichen.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, a target is covered in lichen.
 
 > ❗️ **Foreseen Punishment**
 >
@@ -9890,7 +9890,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > **Trigger:** A creature uses a triggered action targeting the green seer or an ally within distance.
 >
-> **Effect:** The green seer makes a free strike against the target after the target's triggered action is resolved.
+> **Effect:** The green seer makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target after the target's triggered action is resolved.
 
 > ⭐️ **Masking Glamor**
 >
@@ -9917,17 +9917,17 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > - **12-16:** 7 damage
 > - **17+:** 9 damage
 >
-> **Effect:** The target is taunted until the end of their next turn, and the greenskeeper shifts up to 3 squares.
+> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn, and the greenskeeper [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares.
 >
-> **2 Malice:** The distance increases to Melee 5.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The distance increases to Melee 5.
 
-> 🔳 **Overgrowth (3 Malice)**
+> 🔳 **Overgrowth (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged**        |   **Maneuver** |
 > |-------------------------|---------------:|
 > | **📏 3 cube within 10** | **🎯 Special** |
 >
-> **Effect:** The area is overgrown with heavy brush and brambles until the end of the encounter, providing cover and concealment for the greenskeeper and their allies. The area is difficult terrain for enemies and any enemy who starts their turn in the area takes 3 damage.
+> **Effect:** The area is overgrown with heavy brush and brambles until the end of the encounter, providing cover and concealment for the greenskeeper and their allies. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies and any enemy who starts their turn in the area takes 3 damage.
 
 > ⭐️ **Masking Glamor**
 >
@@ -9952,11 +9952,11 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > - **≤11:** 7 damage
 > - **12-16:** 11 damage
-> - **17+:** 14 damage; M < 2 bleeding (save ends)
+> - **17+:** 14 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The guerrilla can teleport up to 3 squares.
+> **Effect:** The guerrilla can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares.
 >
-> **3 Malice:** This ability targets one additional target, and deals an additional 3 damage if both targets are adjacent to each other.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target, and deals an additional 3 damage if both targets are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each other.
 
 > ❗️ **Do Not Hesitate in the Wode (3 Malice)**
 >
@@ -9997,13 +9997,13 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > - **≤11:** 7 damage
 > - **12-16:** 11 damage
-> - **17+:** 14 damage; A < 2 restrained (save ends)
+> - **17+:** 14 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The gweiadur shifts up to 3 squares.
+> **Effect:** The gweiadur [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares.
 >
-> **3 Malice:** If this ability restrains the target, one enemy adjacent to the target is also restrained (save ends).
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If this ability [restrains](scc:mcdm.heroes.v1/condition/restrained) the target, one enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target is also [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
-> 🔳 **You Activated My Trap! (3 Malice)**
+> 🔳 **You Activated My Trap! (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |                  **Maneuver** |
 > |-------------------------|------------------------------:|
@@ -10012,8 +10012,8 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage; R < 0 the target is marked (save ends)
-> - **12-16:** 6 damage; R < 1 slowed and the target is marked (save ends)
-> - **17+:** 9 damage; R < 2 slowed and the target is marked (save ends)
+> - **12-16:** 6 damage; R < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) and the target is marked (save ends)
+> - **17+:** 9 damage; R < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) and the target is marked (save ends)
 >
 > **Effect:** Allies gain an edge on abilities against a target marked by any wode elf.
 
@@ -10075,21 +10075,21 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; M < 1 restrained (save ends)
-> - **12-16:** 12 damage; M < 2 restrained (save ends)
-> - **17+:** 15 damage; M < 3 restrained (save ends)
+> - **≤11:** 8 damage; M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 12 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 15 damage; M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The warleader can teleport up to 3 squares between each strike.
+> **Effect:** The warleader can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares between each strike.
 >
-> **2 Malice:** A target restrained by this ability takes an extra 3 damage.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A target [restrained](scc:mcdm.heroes.v1/condition/restrained) by this ability takes an extra 3 damage.
 
-> ❇️ **Fairness Is a Human Concept (5 Malice)**
+> ❇️ **Fairness Is a Human Concept (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**        |                 **Maneuver** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each non-minion target can make a free strike, then each target shifts up to 3 squares. A target who has cover or concealment at the end of this shift can attempt to hide at the end of the warleader's turn.
+> **Effect:** Each non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), then each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares. A target who has cover or concealment at the end of this shift can attempt to hide at the end of the warleader's turn.
 
 > ❗️ **Wode Sickness**
 >
@@ -10099,7 +10099,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 >
 > **Trigger:** An ally ends their turn.
 >
-> **Effect:** The target must not have taken their turn this round. The target takes their turn immediately, and if they have P < 2 they are bleeding and take a bane on strikes until the end of their turn.
+> **Effect:** The target must not have taken their turn this round. The target takes their turn immediately, and if they have P < 2 they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and take a bane on strikes until the end of their turn.
 
 > ⭐️ **End Effect**
 >
@@ -10127,7 +10127,7 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > |----------------|-----------------------------:|
 > | **📏 5 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** The warleader can use Wodeblade. Each target can then make a free strike.
+> **Effect:** The warleader can use Wodeblade. Each target can then make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ☠️ **Is It Now or Is It Then? (Villain Action 3)**
 >
@@ -10158,13 +10158,13 @@ Wode elves are highly mobile and adept at hindering their enemies. A common tact
 > - **12-16:** 7 damage
 > - **17+:** 9 damage
 >
-> **Effect:** The wodenelg's rider can make a free strike at any point during the charge.
+> **Effect:** The wodenelg's rider can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) at any point during the charge.
 
 > ⭐️ **Sure-Footed**
 >
-> The wodenelg ignores difficult terrain and doesn't provoke oppotunity attacks by moving.
+> The wodenelg ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and doesn't provoke oppotunity attacks by moving.
 
-> 👤 **Where I End the Woods Begin (3 Malice)**
+> 👤 **Where I End the Woods Begin (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
