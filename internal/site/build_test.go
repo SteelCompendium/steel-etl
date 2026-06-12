@@ -1316,8 +1316,8 @@ func TestBuild_PrintingStamps(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Build: %v", err)
 	}
-	if result.PrintingStamps == 0 {
-		t.Fatal("expected at least one printing stamp")
+	if result.PrintingStamps != 1 {
+		t.Fatalf("PrintingStamps = %d, want 1", result.PrintingStamps)
 	}
 
 	data, err := os.ReadFile(filepath.Join(docsDir, "Browse", "class", "fury.md"))
@@ -1325,10 +1325,28 @@ func TestBuild_PrintingStamps(t *testing.T) {
 		t.Fatal(err)
 	}
 	got := string(data)
-	if !strings.Contains(got, "printing: \"1.01b\"") {
-		t.Errorf("missing printing frontmatter:\n%s", got)
+
+	// Assert stamps land inside the frontmatter block.
+	if !strings.HasPrefix(got, "---\n") {
+		t.Fatalf("output missing opening frontmatter fence:\n%s", got)
 	}
-	if !strings.Contains(got, "printing_book: \"Heroes\"") {
-		t.Errorf("missing printing_book frontmatter:\n%s", got)
+	fmEnd := strings.Index(got[4:], "\n---")
+	if fmEnd < 0 {
+		t.Fatalf("output missing closing frontmatter fence:\n%s", got)
+	}
+	fm := got[:4+fmEnd]
+	if !strings.Contains(fm, "printing: \"1.01b\"") {
+		t.Errorf("printing key not in frontmatter:\n%s", fm)
+	}
+	if !strings.Contains(fm, "printing_book: \"Heroes\"") {
+		t.Errorf("printing_book key not in frontmatter:\n%s", fm)
+	}
+
+	// Assert original page content survives intact.
+	if !strings.Contains(fm, "scc: mcdm.heroes.v1/class/fury") {
+		t.Errorf("original scc key missing from frontmatter:\n%s", fm)
+	}
+	if !strings.Contains(got, "Body.") {
+		t.Errorf("page body was truncated:\n%s", got)
 	}
 }
