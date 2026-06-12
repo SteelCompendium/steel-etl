@@ -1,5 +1,6 @@
 ---
 book: mcdm.heroes.v1
+printing: "1.01b"
 source: MCDM
 title: Draw Steel Heroes
 ---
