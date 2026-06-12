@@ -588,7 +588,7 @@ Deities from the Gods and Religion chapter (added 2026-05-29).
 
 ## Combat Actions & Maneuvers (19 terms)
 
-The shared move actions, main actions, maneuvers, and free strikes from Chapter 10: Combat (`feature.{trait,ability}.common.*`). Added 2026-06-06 (these were previously absent from this table and unlinked). See `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md` and `FOLLOWUPS.md` #6.
+The shared move actions, main actions, maneuvers, and free strikes from Chapter 10: Combat (`feature.{trait,ability}.common.*`). Added 2026-06-06 (these were previously absent from this table and unlinked). See `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md` and workspace `docs/followups-archive/2026-06-08-completed.md` (was FOLLOWUPS #6).
 
 **Disambiguation required:** Several names are common English verbs. Link only the game mechanic — **link** "the Grab maneuver", "uses the Charge main action", "make a free strike"; **don't link** "grab two dice", "in charge of the mission", "stand up for the innocent", "tests made to hide". Distinctive names (Disengage, Aid Attack, Catch Breath, Escape Grab) are effectively always the mechanic. For the dual-coded maneuvers (Grab, Knockback, Escape Grab — which have both a `feature.trait…` page and a `feature.ability…` page) link the `feature.trait…` (maneuver) code.
 
@@ -634,7 +634,7 @@ Each class's Heroic Resource feature (`feature.<class>.level-1/<resource>`). Add
 
 ## Generic per-class mechanics — deliberately NOT linkable
 
-`Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See FOLLOWUPS #6 and `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md`.
+`Triggered Action`, `Signature Ability`, `Skill`, and `Perk` (plus the resource-adjacent common words `Steel`, `Order`, `Again`) exist in `classification.json` **only as per-class codes** — every class has its own `feature.<class>.level-1/triggered-action`, `…/skill`, etc. There is no single canonical target for the generic concept, and the Introduction glossary defines these as universal terms with no code of their own. Linking a generic prose use ("a triggered action", "your signature ability", "gain the Hide skill") to one arbitrary class's code would be wrong, so they are left unlinked. Likewise `Steel` is almost always the game's name ("*Draw Steel*") rather than the talent's level-8 ability. See `docs/superpowers/plans/2026-06-06-link-audit-and-fury-grouping.md` and workspace `docs/followups-archive/2026-06-08-completed.md` (was FOLLOWUPS #6).
 
 ## Rules (`rule.<group>/<term>`)
 

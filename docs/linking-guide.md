@@ -85,7 +85,7 @@ table in `docs/linking-reference.md`).
 > never linked. Linked the unambiguous ones (Advance/Disengage/Ride move actions; Catch
 > Breath, Escape Grab, Aid Attack, Search for Hidden Creatures, Use Consumable, Stand Up
 > maneuvers); the common-verb ones (Hide, Charge, Grab, Knockback, Heal, Defend) and
-> Free Strike remain — see `FOLLOWUPS.md` #6. (3) Linked distinctive gods (Cavall, etc.,
+> Free Strike remain — see the combat-mechanic linking follow-up, archived: workspace `docs/followups-archive/2026-06-08-completed.md` (was FOLLOWUPS #6). (3) Linked distinctive gods (Cavall, etc.,
 > own-section excluded) and the Templar `Domain Piety and Effects` truncation.
 > **Tooling:** `scripts/link_audit.py`, `link_audit_category.py`, `link_apply.py`.
 
