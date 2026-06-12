@@ -75,6 +75,7 @@ To use this book, you'll also want to be familiar with the information found in 
 
 If a creature knows at least one language, a "Languages" entry in their lore indicates which languages they know. Creatures who don't know any languages don't have this entry.
 
+<!-- @type: rule | @group: monster | @id: keyword -->
 #### Keywords
 
 Each stat block has one or more creature keywords. These keywords don't necessarily mean anything on their own, but special rules might apply to them. For instance, a creature with the Goblin keyword benefits from and can contribute to goblin Malice features. (See Malice later in this introduction for information.)
@@ -83,74 +84,92 @@ Each stat block has one or more creature keywords. These keywords don't necessar
 
 While many keywords are specific to a group of creatures, such as Gnoll or Human, other keywords are found across different monster groups.
 
+<!-- @type: rule | @group: keyword | @id: abyssal -->
 ###### Abyssal
 
 Creatures with the Abyssal keyword, such as demons and gnolls, can trace their origins back to the Abyssal Wasteland—a chaotic manifold whose denizens hunger for the souls of mortals.
 
+<!-- @type: rule | @group: keyword | @id: accursed -->
 ###### Accursed
 
 Accursed creatures, such as medusas and werewolves, are under the effect of powerful supernatural curses that change their essential nature.
 
+<!-- @type: rule | @group: keyword | @id: animal -->
 ###### Animal
 
 The Animal keyword is an easy one! It covers bears, wolves, and really big spiders! Aside from the animals of the real world, fantasy creatures with a similar level of sapience and who are part of the natural world have the Animal keyword. Animals have only natural defenses.
 
+<!-- @type: rule | @group: keyword | @id: beast -->
 ###### Beast
 
 Creatures with the Beast keyword have animal-level sapience, but also possess supernatural abilities or traits. Basilisks and chimeras are examples of beasts. They don't have a society, but one has eye beams that can turn you into a statue, while the other has three heads—each belonging to a different species and one of which breathes fire!
 
+<!-- @type: rule | @group: keyword | @id: construct -->
 ###### Construct
 
 Construct creatures, such as the ashen hoarder and valok, are manufactured, with magic or psionics playing a role in giving them life. A construct's level of sapience is determined by the will and skill of their creator. Some function entirely on their own, while others serve as mindless drones who take action only if given orders. Unless otherwise noted, constructs don't need to eat, drink water, sleep, or breathe to survive.
 
+<!-- @type: rule | @group: keyword | @id: dragon -->
 ###### Dragon
 
 Dragons, the giant reptilian creatures with breath weapons, wings, claws, and jaws, aren't the only creatures who take the Dragon keyword. Creatures related to dragons, such as draconians, also have this keyword.
 
+<!-- @type: rule | @group: keyword | @id: elemental -->
 ###### Elemental
 
 If a creature can trace their origin back to Quintessence, the Manifold of Elements, they have the Elemental keyword. This includes creatures of raw elemental power, such as the crux of fire, and creatures who merely trace some part of their origin back to Quintessence, such as meteor dragons.
 
+<!-- @type: rule | @group: keyword | @id: fey -->
 ###### Fey
 
 Fey creatures can trace their origin back to Arcadia, a manifold of nature and magic that is the place of origin of all elves. Creatures from this plane often have an innate connection to nature, magic, or both.
 
+<!-- @type: rule | @group: keyword | @id: giant -->
 ###### Giant
 
 Creatures with the Giant keyword include ogres and trolls, as well as fire giants, frost giants, hill giants, and stone giants. Giants have similar body shapes to humanoids, but they're much larger. Despite that similar appearance, these creatures have no relation to most humanoids (other than the mighty hakaan).
 
+<!-- @type: rule | @group: keyword | @id: horror -->
 ###### Horror
 
 Horror creatures, including overminds and voiceless talkers, are creatures who appear unnatural on most worlds, particularly Orden. Everything about them is alien, and most have potent psionic abilities.
 
+<!-- @type: rule | @group: keyword | @id: humanoid -->
 ###### Humanoid
 
 Humanoid creatures, such as dwarves and time raiders, are size 1 creatures who have similar limb arrangements to and sapience on par with humans. Humanoids often gather in communities and form societies to survive and prosper.
 
+<!-- @type: rule | @group: keyword | @id: infernal -->
 ###### Infernal
 
 Infernal creatures, such as devils and hobgoblins, can trace their origins back to the Seven Cities of Hell—an ordered manifold where the natives make plans to tempt mortals into contracts for their souls.
 
+<!-- @type: rule | @group: keyword | @id: ooze -->
 ###### Ooze
 
 Ooze creatures, such as the gummy brick, are semisolid masses of moisture and malice who take shape in dark, damp environments. Their forms range from loosely congealed puddles to more hardened and calcified shapes.
 
+<!-- @type: rule | @group: keyword | @id: plant -->
 ###### Plant
 
 Plant creatures, such as the shambling mound, are made of vegetation. Like other creatures (and unlike plant objects), they can move and interact with their environment.
 
+<!-- @type: rule | @group: keyword | @id: soulless -->
 ###### Soulless
 
 Soulless creatures do not have a soul, and are generally those who are created by another creature, such as many constructs, undead, and war dogs. There are a few abilities or other rules in the game that can only affect creatures with souls. Soulless creatures are immune to these effects. Likewise, if a rule only affects a creature without a soul, soulless creatures are the only valid targets for such effects.
 
+<!-- @type: rule | @group: keyword | @id: swarm -->
 ###### Swarm
 
 Swarm creatures are actually more than one creature! When a whole bunch of creatures get together, whether a swarm of spiders or a swarm of minotaurs, they move and act together as if they were one creature.
 
+<!-- @type: rule | @group: keyword | @id: undead -->
 ###### Undead
 
 Undead creatures, such as ghosts and zombies, are the reanimated flesh and spirits of once-living creatures who have died. Their level of sapience is determined by the creator or effect that brought them back from the dead. Some undead function entirely on their own, while others mindlessly seek to harm the living if given no other instructions. Unless otherwise noted, undead don't need to eat, drink water, sleep, or breathe to survive.
 
+<!-- @type: rule | @group: monster | @id: encounter-value -->
 #### Encounter Value
 
 Each Director-controlled creature has an encounter value (abbreviated EV) that is used in building encounters. See Step-by-Step Encounter Building later in this chapter for more information.
@@ -159,6 +178,7 @@ Each Director-controlled creature has an encounter value (abbreviated EV) that i
 > 
 > Because stat blocks are focused on the tactics and mechanics of combat, all references in a stat block to "rounds" refer to combat rounds.
 
+<!-- @type: rule | @group: monster | @id: creature-free-strike -->
 #### Creature Free Strikes
 
 When a Director-controlled creature makes a free strike (see Chapter 10: Combat in *Draw Steel: Heroes*), they don't roll. Instead, their stat block notes a Free Strike value representing the amount of damage they deal with either of the following:
@@ -182,6 +202,7 @@ Even though a Director-controlled creature doesn't have to roll when they make a
 
 Every creature has a signature ability. This is the first action that appears in their stat block and is noted as "Signature Ability."
 
+<!-- @type: rule | @group: monster | @id: monster-trait -->
 #### Traits
 
 Many creatures have traits, which are features that don't require a main action, a maneuver, or a triggered action to activate, such as the Crafty trait possessed by many goblins. (Chapter 10: Combat in *Draw Steel: Heroes* talks about action types.)
@@ -190,10 +211,12 @@ Many creatures have traits, which are features that don't require a main action,
 
 Many creatures have abilities and features that require a Director's resource called Malice to activate. See Malice later in this introduction for more information.
 
+<!-- @type: rule | @group: monster | @id: end-effect -->
 #### End Effect
 
 Certain creatures have the ability to take damage in order to end one effect on them that can be ended by a saving throw. The damage the creature takes to end an effect can't be reduced in any way.
 
+<!-- @type: rule | @group: monster | @id: villain-action -->
 #### Villain Actions
 
 The solo and leader creatures presented in this book are designed to be fought in climactic battles at the end of an adventure or campaign. Because of this, they have special abilities called villain actions.
@@ -216,30 +239,36 @@ A creature's mode of organization appears after their level in a stat block. For
 
 Monsters are organized as follows.
 
+<!-- @type: rule | @group: organization | @id: minion -->
 ##### Minion
 
 Minions are weaker enemies who are made to die fast and threaten heroes en masse. A battle with minions is one where the heroes are outnumbered and can experience the joy of cutting through fields of their enemies. Creatures organized as minions are meant to support monsters organized in other ways, and have a special set of rules for doing so (see Using Minions below).
 
 Minions die quickly! In fact, some might die before they have a chance to act. That's okay! It's why you build encounters with them four at a time.
 
+<!-- @type: rule | @group: organization | @id: horde -->
 ##### Horde
 
 Monsters organized as hordes are hardier and work in smaller groups than minions, but it still takes more than one of these creatures to effectively threaten a single hero of the same level. A battle against creatures all belonging to a horde sees those creatures outnumbering the heroes about two to one. Creatures who are part of a horde organization can be especially effective when brought into encounters alongside other horde creatures.
 
 Horde creatures are more fragile than any other monsters except minions, so be sure to double or triple up on their stat blocks if they're key to a combat encounter. There's a chance that if the heroes act first in combat and have a lot of Victories, they can kill a number of key horde creatures before those creatures can act. That's why the encounter-building guidelines allow you to run lots of them.
 
+<!-- @type: rule | @group: organization | @id: platoon -->
 ##### Platoon
 
 Monster platoons are highly organized and usually self-sufficient armies. Platoons are well-rounded organizations well equipped to handle most combat objectives. A single platoon creature is a decent threat to a hero of the same level, so an encounter consisting entirely of these creatures typically has one per hero. Platoon creatures often fight alongside minions and an elite creature or two to round out their ranks.
 
+<!-- @type: rule | @group: organization | @id: elite -->
 ##### Elite
 
 Elite creatures are the functional opposite of minions. A creature noted as an elite is hardy and can usually stand up to two heroes of the same level. Elites also have a high encounter value. They work well when individually supporting monsters with other modes of organization, but multiple elites can also be effective as a band on their own.
 
+<!-- @type: rule | @group: organization | @id: leader -->
 ##### Leader
 
 A leader is a powerful monster who buffs their allies and grants them additional actions. They utilize villain actions and can stand toe-to-toe with two or more heroes of the same level by themself. Typically, only one leader appears in a battle at a time, alongside minions, horde or platoon creatures, and elites. Leader creatures have no additional creature role (see Creature Roles).
 
+<!-- @type: rule | @group: organization | @id: solo -->
 ##### Solo
 
 A solo creature is an encounter all on their own. They have a special set of rules within their stat block and can be deployed... well, solo! A solo creature can typically stand toe-to-toe with six heroes of the same level. Solo creatures have no additional creature role.
@@ -248,38 +277,47 @@ A solo creature is an encounter all on their own. They have a special set of rul
 
 A creature's role appears after their level and organization in their stat block, and describes that creature's function in combat in a general sense. Roles are descriptive, and most don't follow special rules. They simply help you build encounters and use creatures effectively in combat. (More detailed descriptions of these roles are found in Step-by-Step Encounter Building.)
 
+<!-- @type: rule | @group: role | @id: ambusher -->
 ##### Ambusher
 
 Ambushers are melee warriors who can slip by beefier heroes to reach squishier targets in the back lines.
 
+<!-- @type: rule | @group: role | @id: artillery -->
 ##### Artillery
 
 Artillery creatures fight best from afar, and can use their most powerful abilities at great distance.
 
+<!-- @type: rule | @group: role | @id: brute -->
 ##### Brute
 
 Brutes are hardy creatures who have lots of Stamina and deal lots of damage. They have abilities and traits that make them difficult to ignore and hard to get away from, and that let them push enemies around.
 
+<!-- @type: rule | @group: role | @id: controller -->
 ##### Controller
 
 Controllers are creatures who change the battlefield, often with magic or psionics. They reposition foes and alter terrain to make it advantageous for their allies. Controllers are often on the squishier side, so they need protection!
 
+<!-- @type: rule | @group: role | @id: defender -->
 ##### Defender
 
 Defenders are tough creatures able to take a lot of damage, and who can force enemies to attack them instead of squishier targets. Defenders often act in squads with allies who have lower Stamina, such as controllers and hexers.
 
+<!-- @type: rule | @group: role | @id: harrier -->
 ##### Harrier
 
 Harriers are mobile warriors who make definitive use of hit-and-run tactics. Their traits allow them to make the most of their positioning on the battlefield.
 
+<!-- @type: rule | @group: role | @id: hexer -->
 ##### Hexer
 
 Hexers specialize in debuffing enemies using conditions and other effects. They are generally squishy and rely on others to defend them.
 
+<!-- @type: rule | @group: role | @id: mount -->
 ##### Mount
 
 Mounts are mobile creatures meant to be ridden in combat, and who make their riders even more dangerous.
 
+<!-- @type: rule | @group: role | @id: support -->
 ##### Support
 
 Support creatures specialize in aiding their allies by providing buffs, healing, movement, or action options.
@@ -318,6 +356,7 @@ Inevitably, one or more noncombatants might get caught up in a dangerous situati
 > 
 > The noncombatant can be size 1S, 1M, 1L, or 2.
 
+<!-- @type: rule | @group: monster | @id: malice -->
 ### Malice
 
 Just as every hero has a Heroic Resource determined by their class, so too do the heroes' foes need their own juice to fuel their strongest threats. Malice is a resource gained and used by the Director. You use Malice to let enemies in the game activate their most powerful abilities and throw surprises at the heroes during combat.
@@ -364,6 +403,7 @@ What they lack in power, minions make up for in flexibility and their ability to
 
 The knowledge of how minions work isn't a secret and shouldn't be kept from the players. Share the information in this section with them! They'll have a lot more fun battling minions a shaping narrative around taking out multiple foes at once if they understand how the rules work.
 
+<!-- @type: rule | @group: monster | @id: squad -->
 #### Organized as Squads
 
 Minions with the same name (for instance, goblin sniper) can be organized into squads of up to eight creatures. All members of a minion squad act together on the same initiative, and can make squad attacks (see Acting Together below).
@@ -434,6 +474,7 @@ If several minions in a squad make a free strike at the same target at the same 
 
 If you use multiple squads made up of the same type of minions in an encounter—for instance, two squads of goblin spinecleavers—it's important to make it easy for the players to tell the squads apart. You can use different miniatures for each squad, or give each squad's miniatures or tokens an indicator (a colored magnet, ring, sticker, and so forth) to help keep track of which minions are part of the same squad as they start moving around on the battlefield. Many online virtual tabletops have tools for adding colors or textures to icons that make tracking different squads easy.
 
+<!-- @type: rule | @group: monster | @id: captain -->
 #### Attached Squad Captain
 
 Any non-mount, non-minion creature, who speaks a language that a squad of minions can understand can be attached to that squad as a captain. Captains aren't necessarily strategic leaders with brilliant tactics. Sometimes they're just powerful creatures who bully, inspire, or have some supernatural influence that drives other creatures to action.
