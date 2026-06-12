@@ -5541,7 +5541,7 @@ At the start of any level 10 or higher demon's turn, you can spend [Malice](scc:
 <!-- @type: monster | @category: devils -->
 ## Devils
 
-In the lower plane of Hell, devils of the Seven Cities vie unceasingly for power and control—a conflict fought foremostly through cunning and schemes. Devils are distinguished from other humanoids by skin in shades of azure and crimson, as well as their hellmarks: horns, tails, hooves, wings, and other infernal features.
+In the lower plane of Hell, [devils](scc:mcdm.monsters.v1/monster.group/devils) of the Seven Cities vie unceasingly for power and control—a conflict fought foremostly through cunning and schemes. Devils are distinguished from other [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) by skin in shades of azure and crimson, as well as their hellmarks: horns, tails, hooves, wings, and other [infernal](scc:mcdm.monsters.v1/rule.keyword/infernal) features.
 
 ### Precarious Pyramids
 
@@ -5595,19 +5595,19 @@ Most devils speak Anjal and Caelian, among other languages. The more powerful a 
 <!-- @type: featureblock -->
 ######### Devil Malice (Malice Features)
 
-At the start of any devil's turn, you can spend Malice to activate one of the following features.
+At the start of any devil's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 👤 **Bureaucratic Tape (3 Malice)**
+> 👤 **Bureaucratic Tape (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One devil acting this turn uses a signature ability against an adjacent creature. On a tier 3 outcome, the target of the ability has a double bane on strikes (save ends).
+> One devil acting this turn uses a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature. On a tier 3 outcome, the target of the ability has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes (save ends).
 
-> ⭐️ **Underhanded Tactics (5+ Malice)**
+> ⭐️ **Underhanded Tactics (5+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One or two devils can teleport to a space adjacent to one or more creatures who aren't hidden and make a free strike. For each 2 additional Malice spent on this feature, one additional devil can teleport.
+> One or two devils can [teleport](scc:mcdm.heroes.v1/movement/teleport) to a space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more creatures who aren't hidden and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). For each 2 additional [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent on this feature, one additional devil can [teleport](scc:mcdm.heroes.v1/movement/teleport).
 
-> 🌀 **Read the Small Print (7 Malice)**
+> 🌀 **Read the Small Print (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each enemy in the encounter is subject to a bad deal proposed by the devils. An enemy must choose between having damage weakness 5 or taking a bane on power rolls. The bad deal lasts until the end of the encounter.
+> Each enemy in the encounter is subject to a bad deal proposed by the [devils](scc:mcdm.monsters.v1/monster.group/devils). An enemy must choose between having damage weakness 5 or taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls. The bad deal lasts until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Clerk
@@ -5630,11 +5630,11 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 6 damage; push 2
 > - **17+:** 7 damage; push 3
 >
-> **Effect:** Any target adjacent to two or more clerks is taunted until the end of their next turn.
+> **Effect:** Any target [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to two or more clerks is [taunted](scc:mcdm.heroes.v1/condition/taunted) until the end of their next turn.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the clerk's true name, the clerk loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
+> If a creature within 10 squares speaks the clerk's true name, the clerk loses their fire immunity and any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Notary
@@ -5654,14 +5654,14 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 3 fire damage
-> - **12-16:** 5 fire damage; R < 2 the target takes a bane on their next strike
-> - **17+:** 6 fire damage; R < 3 the target takes a bane on their next strike
+> - **12-16:** 5 fire damage; R < 2 the target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next strike
+> - **17+:** 6 fire damage; R < 3 the target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next strike
 >
-> **Effect:** One non-minion devil within 5 squares of the notary gains an edge on their next strike.
+> **Effect:** One non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) devil within 5 squares of the notary gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next strike.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the notary's true name, the notary loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
+> If a creature within 10 squares speaks the notary's true name, the notary loses their fire immunity and any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Scrivener
@@ -5681,14 +5681,14 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 3 corruption damage
-> - **12-16:** 5 corruption damage; slowed (EoT)
-> - **17+:** 6 corruption damage; slowed (EoT)
+> - **12-16:** 5 corruption damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **17+:** 6 corruption damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 >
-> **Effect:** The scrivener can shift 1 square.
+> **Effect:** The scrivener can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the scrivener's true name, the scrivener loses their fire immunity and any nondamaging effects of their signature ability until the end of the encounter.
+> If a creature within 10 squares speaks the scrivener's true name, the scrivener loses their fire immunity and any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Adjudicator
@@ -5707,11 +5707,11 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 fire damage; I < 1 frightened (save ends)
-> - **12-16:** 15 fire damage; I < 1 frightened (save ends)
-> - **17+:** 18 fire damage; I < 1 frightened (save ends)
+> - **≤11:** 10 fire damage; I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 15 fire damage; I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 18 fire damage; I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** The adjudicator can slide a target frightened by this ability up to 2 squares.
+> **Effect:** The adjudicator can slide a target [frightened](scc:mcdm.heroes.v1/condition/frightened) by this ability up to 2 squares.
 
 > 🏹 **Adjudicator's Interdiction**
 >
@@ -5721,19 +5721,19 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The target makes a Presence test.
 >
-> - **≤11:** The target is slowed, takes a bane on power rolls, and can't regain Stamina (save ends).
-> - **12-16:** The target is slowed and takes a bane on power rolls (save ends).
-> - **17+:** Slowed (save ends)
+> - **≤11:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed), takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls, and can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) (save ends).
+> - **12-16:** The target is [slowed](scc:mcdm.heroes.v1/condition/slowed) and takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls (save ends).
+> - **17+:** [Slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > 🏹 **Quid Pro Quo**
 >
 > | **Magic, Ranged** |                           **Maneuver** |
 > |-------------------|---------------------------------------:|
-> | **📏 Ranged 10**  | **🎯 One ally or frightened creature** |
+> | **📏 Ranged 10**  | **🎯 One ally or [frightened](scc:mcdm.heroes.v1/condition/frightened) creature** |
 >
-> **Effect:** The adjudicator and the target teleport to switch places.
+> **Effect:** The adjudicator and the target [teleport](scc:mcdm.heroes.v1/movement/teleport) to switch places.
 
-> ❗️ **Devilish Charm (2 Malice)**
+> ❗️ **Devilish Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -5745,7 +5745,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** The adjudicator chooses a new target for the strike.
 > - **12-16:** The adjudicator halves the triggering damage.
-> - **17+:** The target takes a bane on the strike.
+> - **17+:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike.
 
 > ⭐️ **Vexatious Litigation**
 >
@@ -5753,7 +5753,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the adjudicator's true name, the adjudicator loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
+> If a creature within 10 squares speaks the adjudicator's true name, the adjudicator loses their damage immunities, any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), and their Devilish Charm ability until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Jurist
@@ -5782,7 +5782,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 >
-> **1+ Malice:** The jurist can target one additional creature or object for each Malice spent.
+> **1+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The jurist can target one additional creature or object for each [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
 > ❇️ **Dismissal with Prejudice**
 >
@@ -5796,7 +5796,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 10 damage; slide 3
 > - **17+:** 12 damage; slide 5
 >
-> **Effect:** If the target has M < 2, the forced distance movement gains a +3 bonus.
+> **Effect:** If the target has M < 2, the [forced](scc:mcdm.heroes.v1/movement/forced-movement) distance movement gains a +3 bonus.
 
 > 🏹 **Ashes to Ashes**
 >
@@ -5806,7 +5806,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** If the target is burning (see Fire and Brimstone), they take 6 fire damage.
 
-> ❗️ **Devilish Charm (2 Malice)**
+> ❗️ **Devilish Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -5818,11 +5818,11 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** The jurist chooses a new target for the strike.
 > - **12-16:** The jurist halves the triggering damage.
-> - **17+:** The target takes a bane on the strike.
+> - **17+:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the jurist's true name, the jurist loses their fire immunity, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
+> If a creature within 10 squares speaks the jurist's true name, the jurist loses their fire immunity, any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), and their Devilish Charm ability until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Legate
@@ -5842,10 +5842,10 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 9 damage
-> - **12-16:** 14 damage; A < 2 slowed (save ends)
-> - **17+:** 17 damage; A < 3 slowed (save ends)
+> - **12-16:** 14 damage; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 17 damage; A < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If the targets are adjacent to each other, this ability deals an extra 3 damage.
+> **Effect:** If the targets are [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each other, this ability deals an extra 3 damage.
 
 > 🗡 **Writ of Execution**
 >
@@ -5855,11 +5855,11 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 damage; M < 1 prone
-> - **12-16:** 11 damage; M < 2 prone and can't stand (save ends)
-> - **17+:** 14 damage; M < 3 prone and can't stand (save ends)
+> - **≤11:** 6 damage; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 11 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **17+:** 14 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 >
-> **Effect:** If this ability is used as part of the Charge main action, the legate ignores difficult terrain during the charge. Each creature and object whose space the legate moves through takes the damage from this ability, but not its additional effects.
+> **Effect:** If this ability is used as part of the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action, the legate ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) during the charge. Each creature and object whose space the legate moves through takes the damage from this ability, but not its additional effects.
 
 > 🗡 **Law and Order**
 >
@@ -5867,9 +5867,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > |----------------|--------------------:|
 > | **📏 Melee 1** | **🎯 One creature** |
 >
-> **Effect:** The target is taunted by the legate (save ends). The legate can have only one creature taunted at a time.
+> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by the legate (save ends). The legate can have only one creature [taunted](scc:mcdm.heroes.v1/condition/taunted) at a time.
 
-> ❗️ **Devilish Charm (2 Malice)**
+> ❗️ **Devilish Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -5881,15 +5881,15 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** The legate chooses a new target for the strike.
 > - **12-16:** The legate halves the triggering damage.
-> - **17+:** The target takes a bane on the strike.
+> - **17+:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike.
 
 > ⭐️ **Hellish Bailiff**
 >
-> The legate has damage immunity 3 while in one of the Seven Cities of Hell or within 10 squares of a non-minion devil who is of a higher level than them.
+> The legate has damage immunity 3 while in one of the Seven Cities of Hell or within 10 squares of a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) devil who is of a higher level than them.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the legate's true name, the legate loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
+> If a creature within 10 squares speaks the legate's true name, the legate loses their damage immunities, any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), and their Devilish Charm ability until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Magistrate
@@ -5910,9 +5910,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 10 damage
 > - **12-16:** 15 damage
-> - **17+:** 18 fire damage; R < 3 dazed (save ends)
+> - **17+:** 18 fire damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The magistrate shifts up to 3 squares before or after using this ability, or between each strike.
+> **Effect:** The magistrate [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares before or after using this ability, or between each strike.
 
 > 🗡 **Verdict**
 >
@@ -5926,7 +5926,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 17 damage
 > - **17+:** 21 damage
 >
-> **Effect:** This ability has a double edge if the magistrate was hidden from the target, and deals an extra 5 damage if the target is dazed.
+> **Effect:** This ability has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) if the magistrate was hidden from the target, and deals an extra 5 damage if the target is [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 > 👤 **Justice Turns Its Gaze**
 >
@@ -5934,9 +5934,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The magistrate turns invisible until the start of their next turn, and can attempt to hide as a free maneuver before the end of the current turn.
+> **Effect:** The magistrate turns invisible until the start of their next turn, and can attempt to hide as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver) before the end of the current turn.
 
-> ❗️ **Devilish Charm (2 Malice)**
+> ❗️ **Devilish Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -5948,15 +5948,15 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** The magistrate chooses a new target for the strike.
 > - **12-16:** The magistrate halves the triggering damage.
-> - **17+:** The target takes a bane on the strike.
+> - **17+:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike.
 
 > ⭐️ **Leading**
 >
-> Whenever the magistrate moves away from an enemy who is adjacent to one of the magistrate's allies, they can shift instead.
+> Whenever the magistrate moves away from an enemy who is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one of the magistrate's allies, they can [shift](scc:mcdm.heroes.v1/movement/shifting) instead.
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the magistrate's true name, the magistrate loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Charm ability until the end of the encounter.
+> If a creature within 10 squares speaks the magistrate's true name, the magistrate loses their damage immunities, any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), and their Devilish Charm ability until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil High Judge
@@ -5979,7 +5979,7 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 15 damage; P < 3 the target can't hide (save ends)
 > - **17+:** 19 damage; P < 4 the target can't hide (save ends)
 >
-> **2 Malice:** While a target is unable to hide this way, any strike against them made by a devil gains an edge.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** While a target is unable to hide this way, any strike against them made by a devil gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
 > 🏹 **Compel the Jury**
 >
@@ -5993,9 +5993,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** I < 3 the target is charmed (save ends)
 > - **17+:** I < 4 the target is charmed (save ends)
 >
-> **Effect:** While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.
+> **Effect:** While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) on their turn to make that creature move up to 3 squares.
 
-> ❗️ **Devilish Suggestion (2 Malice)**
+> ❗️ **Devilish Suggestion (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Triggered action** |
 > |-------------------|-------------------------------:|
@@ -6007,9 +6007,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** The target is charmed (save ends).
 > - **12-16:** The high judge chooses a new target for the strike.
-> - **17+:** The target takes a bane on the strike.
+> - **17+:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the strike.
 >
-> While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.
+> While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) on their turn to make that creature move up to 3 squares.
 
 > ⭐️ **End Effect**
 >
@@ -6017,9 +6017,9 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **True Name**
 >
-> If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities, any nondamaging effects of their signature ability, and their Devilish Suggestion triggered action until the end of the encounter.
+> If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities, any nondamaging effects of their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), and their Devilish Suggestion [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) until the end of the encounter.
 
-> ☠️ **All Rise (Villain Action 1)**
+> ☠️ **All Rise ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -6031,28 +6031,28 @@ At the start of any devil's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 12 psychic damage; the target is charmed (save ends)
 > - **17+:** 7 psychic damage
 >
-> While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 Malice on their turn to make that creature move up to 3 squares.
+> While charmed this way, a creature treats the high judge as an ally, and the high judge can spend 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) on their turn to make that creature move up to 3 squares.
 
-> ☠️ **Heed My Decree (Villain Action 2)**
+> ☠️ **Heed My Decree ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**       |                                 **-** |
 > |----------------|--------------------------------------:|
 > | **📏 5 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target shifts up to their speed. The high judge can make each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion move up to half that creature's speed.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. The high judge can make each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion move up to half that creature's speed.
 
-> ☠️ **Deceptive Stratagem (Villain Action 3)**
+> ☠️ **Deceptive Stratagem ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Magic, Ranged** |               **-** |
 > |-------------------|--------------------:|
 > | **📏 Ranged 12**  | **🎯 One creature** |
 >
-> **Effect:** If the target is an ally or a creature charmed by All Rise, Compel the Jury, or Devilish Suggestion, the high judge and the target teleport to swap places. Each ally within 12 squares of the high judge can then make a free strike against a target of the high judge's choice. Each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion makes a free strike against a target of the high judge's choice.
+> **Effect:** If the target is an ally or a creature charmed by All Rise, Compel the Jury, or Devilish Suggestion, the high judge and the target [teleport](scc:mcdm.heroes.v1/movement/teleport) to swap places. Each ally within 12 squares of the high judge can then make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a target of the high judge's choice. Each creature charmed by All Rise, Compel the Jury, or Devilish Suggestion makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a target of the high judge's choice.
 
 <!-- @type: monster | @category: draconians -->
 ## Draconians
 
-Draconians—wyrmwights as some call them, also known as dragon knights in Orden—are a people created through an obscure ritual known as Dracogenesis. Most draconians have an elemental affinity connected to their draconic scales, which they can change given enough time and training.
+Draconians—wyrmwights as some call them, also known as dragon knights in Orden—are a people created through an obscure ritual known as Dracogenesis. Most [draconians](scc:mcdm.monsters.v1/monster.group/draconians) have an elemental affinity connected to their draconic scales, which they can change given enough time and training.
 
 Six individual draconians are presented in this section—not an adventuring party, but six warriors whose reputations precede them. All are likely to be found serving in various military forces as high-ranking commanders.
 
@@ -6087,13 +6087,13 @@ Most draconians speak Caelian in addition to the languages of their employers an
 <!-- @type: featureblock -->
 ######### Draconian Malice (Malice Features)
 
-At the start of any draconian's turn, you can spend Malice to activate one of the following features.
+At the start of any draconian's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 👤 **Guarding Gale (3 Malice)**
+> 👤 **Guarding Gale (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A draconian acting this turn flaps their wings and creates a mighty gale. Each creature adjacent to the draconian is pushed up to 4 squares, and if they have M < 2, they are knocked prone.
+> A draconian acting this turn flaps their wings and creates a mighty gale. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the draconian is pushed up to 4 squares, and if they have M < 2, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> 🔳 **Breath Weapon (5 Malice)**
+> 🔳 **Breath Weapon (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**            |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -6107,7 +6107,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > - **12-16:** 10 damage
 > - **17+:** 13 damage
 
-> ❇️ **Scaleshatter Burst (7 Malice)**
+> ❇️ **Scaleshatter Burst (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |             **Free maneuver** |
 > |-----------------|------------------------------:|
@@ -6138,9 +6138,9 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 poison damage; M < 1 slowed (save ends)
-> - **12-16:** 15 poison damage; M < 2 slowed (save ends)
-> - **17+:** 18 poison damage; M < 3 slowed (save ends)
+> - **≤11:** 10 poison damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 15 poison damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 18 poison damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > 🏹 **Experimental Treasure**
 >
@@ -6150,15 +6150,15 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** The targets regains 10 Stamina.
-> - **12-16:** 12 corruption damage; A < 2 weakened (save ends)
-> - **17+:** 12 lightning damage; A < 2 bleeding (save ends)
+> - **≤11:** The targets regains 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
+> - **12-16:** 12 corruption damage; A < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 12 lightning damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
 > **Effect:** The first time in an encounter that Aeolyxria makes a power roll for this ability, she can subsequently use the outcome of that roll instead of rolling whenever she uses this ability until the end of the encounter.
 >
-> **2+ Malice:** The ability targets one additional target for each 2 Malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability targets one additional target for each 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
-> 🔳 **Elevate (2 Malice)**
+> 🔳 **Elevate (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged**       |   **Maneuver** |
 > |------------------------|---------------:|
@@ -6166,7 +6166,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Effect:** The ground in the area rises 5 squares, creating a pillar of dirt. Any creature in the area moves with the ground to its new elevation.
 >
-> **1+ Malice:** Aeolyxria creates an additional pillar for each Malice spent.
+> **1+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Aeolyxria creates an additional pillar for each [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
 > ❗️ **Blood For Blood**
 >
@@ -6174,17 +6174,17 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |--------------------|---------------------:|
 > | **📏 Ranged 5**    |  **🎯 One creature** |
 >
-> **Trigger:** An ally is made bleeding by the target.
+> **Trigger:** An ally is made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) by the target.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 poison damage; A < 2 bleeding (save ends)
-> - **12-16:** 12 poison damage; A < 3 bleeding (save ends)
-> - **17+:** 15 poison damage; bleeding (save ends)
+> - **≤11:** 7 poison damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 12 poison damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 15 poison damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **That's Our Opening!**
 >
-> The Director gains 1 Malice whenever Aeolyxria imposes a condition on an enemy.
+> The Director gains 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) whenever Aeolyxria imposes a condition on an enemy.
 
 <!-- @type: statblock -->
 ####### Locratix the Morningstar
@@ -6204,12 +6204,12 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > **Power Roll + 3:**
 >
 > - **≤11:** 10 damage
-> - **12-16:** 15 damage; M < 1 slowed (save ends)
-> - **17+:** 18 damage; M < 2 slowed (save ends)
+> - **12-16:** 15 damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 18 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** Locratix deals 6 damage to each creature or object in a 2 x 1 line behind the target.
 
-> 🔳 **Acidic Stun (2 Malice)**
+> 🔳 **Acidic Stun (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**            |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -6217,11 +6217,11 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 acid damage; M < 1 dazed (save ends)
-> - **12-16:** 12 acid damage; M < 2 dazed (save ends)
-> - **17+:** 15 acid damage; M < 3 dazed (save ends)
+> - **≤11:** 7 acid damage; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 12 acid damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 15 acid damage; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** While dazed this way, a target takes an extra 6 damage from Locratix's abilities.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, a target takes an extra 6 damage from Locratix's abilities.
 
 > 👤 **Takeoff**
 >
@@ -6229,7 +6229,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Locratix flies up to her speed. Any creature adjacent to the space on the ground she took off from who has A < 2 is knocked prone.
+> **Effect:** Locratix [flies](scc:mcdm.heroes.v1/movement/fly) up to her speed. Any creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the space on the ground she took off from who has A < 2 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ❗️ **Stay Back!**
 >
@@ -6237,7 +6237,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |----------------|-------------------------------:|
 > | **📏 Melee 2** | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature within distance moves or is forced moved.
+> **Trigger:** A creature within distance moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement).
 >
 > **Power Roll + 3:**
 >
@@ -6247,7 +6247,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Flighty**
 >
-> When Locratix deals rolled damage to an enemy, that enemy can't use Locratix as the trigger for any of their triggered actions until the start of Locratix's next turn.
+> When Locratix deals rolled damage to an enemy, that enemy can't use Locratix as the trigger for any of their [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) until the start of Locratix's next turn.
 
 > ⭐️ **Absorbing Scales**
 >
@@ -6271,8 +6271,8 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > **Power Roll + 3:**
 >
 > - **≤11:** 10 cold damage
-> - **12-16:** 16 cold damage; the target takes a bane on their next strike
-> - **17+:** 19 cold damage; the target has a double bane on their next strike
+> - **12-16:** 16 cold damage; the target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next strike
+> - **17+:** 19 cold damage; the target has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next strike
 
 > 🔳 **Ice Lob**
 >
@@ -6282,9 +6282,9 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 cold damage; M < 1 dazed (save ends)
-> - **12-16:** 12 cold damage; M < 2 dazed (save ends)
-> - **17+:** 15 cold damage; M < 3 dazed (save ends)
+> - **≤11:** 7 cold damage; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 12 cold damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 15 cold damage; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
 > 👤 **Parting Gift**
 >
@@ -6292,7 +6292,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Lydixavus flies up to their speed, leaving a size 1S ice mine in the space they took off from. The ice mine explodes when an enemy enters its space, using the power roll for the Ice Lob ability, and targeting the triggering creature and each creature and object adjacent to the ice mine.
+> **Effect:** Lydixavus [flies](scc:mcdm.heroes.v1/movement/fly) up to their speed, leaving a size 1S ice mine in the space they took off from. The ice mine explodes when an enemy enters its space, using the power roll for the Ice Lob ability, and targeting the triggering creature and each creature and object [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the ice mine.
 
 > ❗️ **Wasn't Aiming For You**
 >
@@ -6300,13 +6300,13 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |-------------|---------------------:|
 > | **📏 Self** |          **🎯 Self** |
 >
-> **Trigger:** Lydixavus obtains a tier 1 outcome on their signature ability.
+> **Trigger:** Lydixavus obtains a tier 1 outcome on their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability).
 >
-> **Effect:** Lydixavus uses their signature ability again, targeting a creature within 5 squares of the original target.
+> **Effect:** Lydixavus uses their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) again, targeting a creature within 5 squares of the original target.
 
 > ⭐️ **Scorekeeping Scales**
 >
-> Lydixavus knows the location of every creature who has ever dealt damage to them. If any of those creatures are within 20 squares of Lydixavus, Lydixavus always has line of effect to them as long as a size 1 opening exists between Lydixavus and the target.
+> Lydixavus knows the location of every creature who has ever dealt damage to them. If any of those creatures are within 20 squares of Lydixavus, Lydixavus always has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to them as long as a size 1 opening exists between Lydixavus and the target.
 
 <!-- @type: statblock -->
 ####### Myxovidan the Sintaker
@@ -6325,11 +6325,11 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 damage; M < 1 weakened (save ends)
-> - **12-16:** 15 damage; M < 2 weakened (save ends)
-> - **17+:** 18 corruption damage; M < 3 weakened (save ends)
+> - **≤11:** 10 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 15 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 18 corruption damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** Myxovidan regains Stamina equal to half the damage dealt.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Myxovidan regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
 > ❇️ **Expunging Exhalation**
 >
@@ -6349,21 +6349,21 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |-----------------|----------------:|
 > | **📏 Ranged 3** | **🎯 One ally** |
 >
-> **Effect:** Myxovidan and the target shift to swap places.
+> **Effect:** Myxovidan and the target [shift](scc:mcdm.heroes.v1/movement/shifting) to swap places.
 
-> ❗️ **Anyone Can Do That (2 Malice)**
+> ❗️ **Anyone Can Do That (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
 > | **📏 Self** |          **🎯 Self** |
 >
-> **Trigger:** An adjacent creature damages Myxovidan with a melee ability.
+> **Trigger:** An [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature damages Myxovidan with a melee ability.
 >
-> **Effect:** Myxovidan recreates the ability to use it against the triggering creature. If the ability has a power roll, Myxovidan uses his highest characteristic score for the roll. If Myxovidan gets a higher tier outcome than the triggering creature, the Director gains 2 Malice.
+> **Effect:** Myxovidan recreates the ability to use it against the triggering creature. If the ability has a power roll, Myxovidan uses his highest characteristic score for the roll. If Myxovidan gets a higher tier outcome than the triggering creature, the Director gains 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 > ⭐️ **Stench of Death**
 >
-> Whenever an enemy regains Stamina while within 5 squares of Myxovidan, they regain 3 less Stamina.
+> Whenever an enemy regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while within 5 squares of Myxovidan, they regain 3 less [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Phrrygalax the Subduer
@@ -6383,10 +6383,10 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > **Power Roll + 3:**
 >
 > - **≤11:** 10 damage
-> - **12-16:** 16 damage; M < 1 bleeding (save ends)
-> - **17+:** 19 damage; M < 2 3 damage, bleeding (save ends)
+> - **12-16:** 16 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 19 damage; M < 2 3 damage, [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-> ❇️ **Spinning Spit (2 Malice)**
+> ❇️ **Spinning Spit (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -6404,9 +6404,9 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Phrrygalax flies up to his speed and lands in an unoccupied space on the ground. Each creature adjacent to where he lands who has A < 2 is knocked prone.
+> **Effect:** Phrrygalax [flies](scc:mcdm.heroes.v1/movement/fly) up to his speed and lands in an unoccupied space on the ground. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to where he lands who has A < 2 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> ❗️ **Armor of the Ancients (2 Malice)**
+> ❗️ **Armor of the Ancients (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -6414,7 +6414,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** Phrrygalax takes acid, cold, corruption, fire, lightning, or poison damage.
 >
-> **Effect:** Phrrygalax takes no damage and instead regains the same amount of Stamina. He then swaps his current damage immunity with the triggering damage type.
+> **Effect:** Phrrygalax takes no damage and instead regains the same amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). He then swaps his current damage immunity with the triggering damage type.
 
 > ❗️ **Still Your Tongue!**
 >
@@ -6424,7 +6424,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** Phrrygalax hears a creature within 5 squares reciting the oath of Good King Omund's Dragon Phalanx.
 >
-> **Effect:** Phrrygalax shifts up to his speed and uses Baneful Blade against the triggering creature. That ability deals an extra 7 damage.
+> **Effect:** Phrrygalax [shifts](scc:mcdm.heroes.v1/movement/shifting) up to his speed and uses Baneful Blade against the triggering creature. That ability deals an extra 7 damage.
 
 > ⭐️ **Oathbreaker's Vengeance**
 >
@@ -6447,11 +6447,11 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; M < 2 prone
-> - **12-16:** 16 damage; M < 3 prone
-> - **17+:** 19 damage; M < 4 prone
+> - **≤11:** 11 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 16 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 19 damage; M < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **2 Malice:** If the target has M < 4, they are also bleeding (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If the target has M < 4, they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > 🔳 **I'll Cut A Path**
 >
@@ -6459,13 +6459,13 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |----------------------------|------------------------------:|
 > | **📏 5 x 2 line within 1** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Before the power roll is made, Dorzinuuth shifts to an unoccupied space adjacent to the end of the line.
+> **Effect:** Before the power roll is made, Dorzinuuth [shifts](scc:mcdm.heroes.v1/movement/shifting) to an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the end of the line.
 >
 > **Power Roll + 4:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 13 damage; M < 3 prone
-> - **17+:** 15 damage; M < 4 prone
+> - **12-16:** 13 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 15 damage; M < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ❗️ **Watch Your Six!**
 >
@@ -6473,7 +6473,7 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 > |----------------|---------------------:|
 > | **📏 Melee 1** |      **🎯 One ally** |
 >
-> **Trigger:** An ally within distance takes damage while Dorzinuuth isn't flying.
+> **Trigger:** An ally within distance takes damage while Dorzinuuth isn't [flying](scc:mcdm.heroes.v1/movement/fly).
 >
 > **Effect:** Dorzinuuth shields the triggering ally with his wings, halving the damage.
 
@@ -6483,13 +6483,13 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Remember Your Oath**
 >
-> If Dorzinuuth hears a creature recite the Dragon Phalanx oath, he takes a bane on strikes made against that character until the end of the encounter.
+> If Dorzinuuth hears a creature recite the Dragon Phalanx oath, he takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes made against that character until the end of the encounter.
 
 > ⭐️ **Sheltering Wings**
 >
-> While Dorzinuuth isn't flying, strikes made against him take a bane.
+> While Dorzinuuth isn't [flying](scc:mcdm.heroes.v1/movement/fly), strikes made against him take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
-> ☠️ **Roaring Gambit (Villain Action 1)**
+> ☠️ **Roaring Gambit ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**       |                         **-** |
 > |----------------|------------------------------:|
@@ -6497,21 +6497,21 @@ At the start of any draconian's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Dorzinuuth lets loose a powerful roar. Each target makes a **Reason test**.
 >
-> - **≤11:** Frightened (save ends)
-> - **12-16:** Frightened (EoT)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
 > - **17+:** No effect.
 >
-> **Effect:** Each ally in the area gains an edge on their next strike.
+> **Effect:** Each ally in the area gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next strike.
 
-> ☠️ **Wings of Second Wind (Villain Action 2)**
+> ☠️ **Wings of Second Wind ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
 > | **📏 10 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target shifts or flies up to their speed and regains 10 Stamina.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) or [flies](scc:mcdm.heroes.v1/movement/fly) up to their speed and regains 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> ☠️ **Snap, Crackle, Pop (Villain Action 3)**
+> ☠️ **Snap, Crackle, Pop ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                        **-** |
 > |-----------------|-----------------------------:|
@@ -6616,11 +6616,11 @@ John shrugged with one shoulder. "If I'm wrong, we're all going to die anyway. N
 
 ### On Dragons
 
-Terrifying behemoths. Harbingers of destruction and woe. Dragons claim the world for themselves, throw the innocent into despair, and inspire heroes to draw steel.
+Terrifying behemoths. Harbingers of destruction and woe. [Dragons](scc:mcdm.monsters.v1/monster.group/dragons) claim the world for themselves, throw the innocent into despair, and inspire heroes to draw steel.
 
 #### Where the Elements Meet Anguish
 
-As elementals are pure expressions of the mundane world, their shapes can become hardened and bent by intense energies permeating that world. Over time, an elemental entangled in extreme concentrations of rancor or grief might crystallize into a terrifying creature known as a dragon.
+As [elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) are pure expressions of the mundane world, their shapes can become hardened and bent by intense energies permeating that world. Over time, an elemental entangled in extreme concentrations of rancor or grief might crystallize into a terrifying creature known as a dragon.
 
 Dragons are both a provocateur and a consequence of people's anguish. A thorn dragon will cover crops and forests in a fortress of bramble vines and threaten to starve the people living there, yet they were born out of decades of hunger and strife that came before them. Vanquishing a dragon might be necessary to save innocent lives, but unless the underlying problems are addressed, another dragon will take their place in time.
 
@@ -6708,7 +6708,7 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 
 > **Thorn Dragon's Domain**
 >
-> If the encounter map is a location the dragon has occupied for 1 week or more, all surfaces on the map are covered in overgrowth. Any creature other than the dragon who starts their turn on the encounter map has their speed reduced by 2 (to a minimum of 1). Any creature made restrained while on the ground is also made bleeding.
+> If the encounter map is a location the dragon has occupied for 1 week or more, all surfaces on the map are covered in overgrowth. Any creature other than the dragon who starts their turn on the encounter map has their speed reduced by 2 (to a minimum of 1). Any creature made [restrained](scc:mcdm.heroes.v1/condition/restrained) while on the ground is also made [bleeding](scc:mcdm.heroes.v1/condition/bleeding).
 
 <!-- @type: statblock -->
 ####### Thorn Dragon
@@ -6719,15 +6719,15 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 | **Poison 5**<br>Immunity | **Fly**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |     **+2**<br>Might      |  **+3**<br>Agility  |  **-1**<br>Reason  |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> ☠️ **Solo Monster**
+> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**
 >
-> **End Effect:** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The dragon can take two turns each round. They can't take turns consecutively.
 
 > ❇️ **Withering Wyrmscale Aura**
 >
-> The dragon's scales create a 2 aura of withering green magic around them. Any creature other than the dragon who regains Stamina in the area regains only half the expected amount. Any winded creature who enters the area for the first time in a round or starts their turn there takes 1d3 corruption damage.
+> The dragon's scales create a 2 aura of withering green magic around them. Any creature other than the dragon who regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in the area regains only half the expected amount. Any [winded](scc:mcdm.heroes.v1/rule.health/winded) creature who enters the area for the first time in a round or starts their turn there takes 1d3 corruption damage.
 
 > 🔳 **Virulent Breath (Signature Ability)**
 >
@@ -6755,19 +6755,19 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 > - **12-16:** 12 damage; push 4
 > - **17+:** 15 damage; push 8
 >
-> **2 Malice:** Each target takes an extra 1d3 damage, and if they have A < 2, they are bleeding (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target takes an extra 1d3 damage, and if they have A < 2, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ⭐️ **Provoking Nettles**
 >
-> Once per turn, the dragon shifts up to 5 squares and can move through enemies' spaces at their usual speed. The first time the dragon moves through an enemy's space during this movement, the enemy takes 3 damage.
+> Once per turn, the dragon [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares and can move through enemies' spaces at their usual speed. The first time the dragon moves through an enemy's space during this movement, the enemy takes 3 damage.
 
-> ❇️ **Investiture of Verdure (5 Malice)**
+> ❇️ **Investiture of Verdure (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**        |                  **Maneuver** |
 > |-----------------|------------------------------:|
 > | **📏 10 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target must be dragonsealed. Each target is pulled up to 5 squares toward the dragon, who gains 5 temporary Stamina for each target pulled.
+> **Effect:** Each target must be dragonsealed. Each target is pulled up to 5 squares toward the dragon, who gains 5 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) for each target pulled.
 
 > ❗️ **Prickly Situation**
 >
@@ -6777,9 +6777,9 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 >
 > **Trigger:** A dragonsealed creature within distance ends the dragonsealed effect.
 >
-> **Effect:** The target is pulled up to 5 squares toward the dragon, and if they have A < 2, they are restrained until the end of their next turn.
+> **Effect:** The target is pulled up to 5 squares toward the dragon, and if they have A < 2, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
-> ❗️ **Thorny Scales (1 Malice)**
+> ❗️ **Thorny Scales (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |      **Free triggered action** |
 > |----------------|-------------------------------:|
@@ -6787,9 +6787,9 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 >
 > **Trigger:** A creature within distance deals damage to the dragon with a melee strike.
 >
-> **Effect:** The dragon makes a free strike against the target, and if the target has M < 2, they are bleeding until the end of their next turn.
+> **Effect:** The dragon makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target, and if the target has M < 2, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
-> ☠️ **Briar Bindings (Villain Action 1)**
+> ☠️ **Briar Bindings ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -6797,52 +6797,52 @@ Thorn dragons are highly territorial, and are vigilant against potential threats
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 damage; A < 1 restrained (save ends)
-> - **12-16:** 9 damage; A < 2 restrained (save ends)
-> - **17+:** 12 damage; A < 3 restrained (save ends)
+> - **≤11:** 5 damage; A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 9 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 12 damage; A < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
-> ☠️ **Thorned Armor (Villain Action 2)**
+> ☠️ **Thorned Armor ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The thorns upon the dragon's scales grow longer and sharper. Until the end of the encounter, any adjacent creature who targets the dragon with a melee strike takes 3 damage. The dragon then uses their Provoking Nettles ability.
+> **Effect:** The thorns upon the dragon's scales grow longer and sharper. Until the end of the encounter, any [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature who targets the dragon with a melee strike takes 3 damage. The dragon then uses their Provoking Nettles ability.
 
-> ☠️ **Malign Thicket (Villain Action 3)**
+> ☠️ **Malign Thicket ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**          |          **-** |
 > |----------------|---------------:|
 > | **📏 Special** | **🎯 Special** |
 >
-> **Effect:** Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature force moved by the dragon takes 1d3 poison damage, and if they have M < 2, they are weakened (save ends).
+> **Effect:** Poisonous overgrowth and seeking vines cover all surfaces on the encounter map. The dragon uses their Bramble Barricade Malice feature twice at no cost. Until the end of the encounter, any creature [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by the dragon takes 1d3 poison damage, and if they have M < 2, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
-> **Special:** If the Thorn Dragon's Domain trait is in effect, any creature other than the dragon who starts their turn on the encounter map takes 1d3 poison damage.
+> **Special:** If the Thorn Dragon's Domain [trait](scc:mcdm.monsters.v1/rule.monster/monster-trait) is in effect, any creature other than the dragon who starts their turn on the encounter map takes 1d3 poison damage.
 
 <!-- @type: featureblock -->
 ######### Thorn Dragon Malice (Malice Features)
 
-At the start of a thorn dragon's turn, you can spend Malice to activate one of the following features.
+At the start of a thorn dragon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Cage of Thorns (3 Malice)**
+> ⭐️ **Cage of Thorns (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A cage of thorns grows around one dragonsealed enemy on the encounter map, making that enemy restrained until the end of their next turn.
+> A cage of thorns grows around one dragonsealed enemy on the encounter map, making that enemy [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their next turn.
 
-> 🔳 **Bramble Barricade (5 Malice)**
+> 🔳 **Bramble Barricade (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon grows a 10 wall of briars in unoccupied spaces on the encounter map. The wall blocks line of effect for all creatures except the dragon. Each square of the wall has 5 Stamina and fire weakness 5. The area can be moved through but is difficult terrain. Any creature who is force moved into or within the area takes 1 damage for each square of the area entered and is bleeding until the end of their next turn.
+> The dragon grows a 10 wall of briars in unoccupied spaces on the encounter map. The wall blocks [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) for all creatures except the dragon. Each square of the wall has 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fire weakness 5. The area can be moved through but is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Any creature who is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into or within the area takes 1 damage for each square of the area entered and is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The dragon takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Afflictive Overgrowth (7 Malice)**
+> 🌀 **Afflictive Overgrowth (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The dragon summons poisonous, biting thorns around their foes. Each enemy on the encounter map makes an **Agility test**.
 >
-> - **≤11:** 12 poison damage; restrained (save ends)
-> - **12-16:** 9 poison damage; bleeding (save ends)
-> - **17+:** 5 poison damage; bleeding (EoT)
+> - **≤11:** 12 poison damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 9 poison damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 5 poison damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 
 ### Gloom Dragon
 
@@ -6870,7 +6870,7 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 
 > **Gloom Dragon's Domain**
 >
-> If the encounter map is a location the dragon has occupied for 1 week or more, illusory magic suffuses the location with shadowy malevolence. Each creature on the encounter map other than the dragon takes a −2 penalty to saving throws made to end the frightened condition. Additionally, whenever a frightened enemy on the encounter map takes damage, they take an extra 3 psychic damage.
+> If the encounter map is a location the dragon has occupied for 1 week or more, illusory magic suffuses the location with shadowy malevolence. Each creature on the encounter map other than the dragon takes a −2 penalty to saving throws made to end the [frightened](scc:mcdm.heroes.v1/condition/frightened) condition. Additionally, whenever a [frightened](scc:mcdm.heroes.v1/condition/frightened) enemy on the encounter map takes damage, they take an extra 3 psychic damage.
 
 <!-- @type: statblock -->
 ####### Gloom Dragon
@@ -6881,9 +6881,9 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 | **Psychic 5**<br>Immunity | **Fly, hover**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |   
 |      **+2**<br>Might      |     **+4**<br>Agility      |  **+1**<br>Reason  |  **+3**<br>Intuition  |  **+4**<br>Presence  |
 
-> ☠️ **Solo Monster**
+> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**
 >
-> **End Effect:** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The dragon can take two turns each round. They can't take turns consecutively.
 
@@ -6917,21 +6917,21 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 > - **12-16:** 15 psychic damage; pull 4
 > - **17+:** 18 psychic damage; pull 6
 >
-> **3 Malice:** The pull becomes a vertical slide.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The pull becomes a vertical slide.
 
 > ⭐️ **Shadow Skulk**
 >
-> Once per turn, the dragon can shift up to their speed, leaving behind a 4 cube area of magical darkness in their starting space that lasts until the end of the encounter. The dragon ignores concealment created by this darkness. Any enemy who ends their turn in the area and has I < 3 is frightened of the dragon until the end of their next turn.
+> Once per turn, the dragon can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed, leaving behind a 4 cube area of magical darkness in their starting space that lasts until the end of the encounter. The dragon ignores concealment created by this darkness. Any enemy who ends their turn in the area and has I < 3 is [frightened](scc:mcdm.heroes.v1/condition/frightened) of the dragon until the end of their next turn.
 
-> ❇️ **Visions in the Dark (5 Malice)**
+> ❇️ **Visions in the Dark (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
 > | **📏 10 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target must be dragonsealed. Each target takes 3 psychic damage, and if they have I < 3 they immediately make a free strike against one ally of the dragon's choice.
+> **Effect:** Each target must be dragonsealed. Each target takes 3 psychic damage, and if they have I < 3 they immediately make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one ally of the dragon's choice.
 
-> ❗️ **Encroaching Darkness (1 Malice)**
+> ❗️ **Encroaching Darkness (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
@@ -6941,7 +6941,7 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 >
 > **Effect:** The dragon moves two existing cubes of magical darkness they created up to 10 squares each.
 
-> ☠️ **Enveloping Umbrage (Villain Action 1)**
+> ☠️ **Enveloping Umbrage ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -6949,11 +6949,11 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Pull 2; I < 2 frightened (EoT)
-> - **12-16:** Pull 4; I < 3 frightened (save ends)
-> - **17+:** Pull 6; I < 4 frightened (save ends)
+> - **≤11:** Pull 2; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
+> - **12-16:** Pull 4; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** Pull 6; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
-> ☠️ **Pall of Nightmares (Villain Action 2)**
+> ☠️ **Pall of Nightmares ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -6965,40 +6965,40 @@ Eerie myths surround the gloom dragons, for they wield languages they do not the
 > - **12-16:** 11 psychic damage
 > - **17+:** 14 psychic damage
 >
-> **Effect:** Each target must be dragonsealed. Any target who has I < 3 is also dazed (save ends).
+> **Effect:** Each target must be dragonsealed. Any target who has I < 3 is also [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends).
 
-> ☠️ **Absence of All Light (Villain Action 3)**
+> ☠️ **Absence of All Light ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**          |          **-** |
 > |----------------|---------------:
 > | **📏 Special** | **🎯 Special** | 
 >
-> **Effect:** The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 Stamina, and has the dragon's speed. An illusion acts on the dragon's turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.
+> **Effect:** The dragon disappears from the encounter map. The dragon and three hallucinatory illusions of themself then immediately reappear in unoccupied spaces on the encounter map, and the dragon and each illusion uses Breath of Brume. Each illusion is indistinguishable from the dragon except by supernatural means, has 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and has the dragon's speed. An illusion acts on the dragon's turns but can take only move actions. Once per round before or after using an ability, the dragon can trade places with any duplicate.
 
 <!-- @type: featureblock -->
 ######### Gloom Dragon Malice (Malice Features)
 
-At the start of a gloom dragon's turn, you can spend Malice to activate one of the following features.
+At the start of a gloom dragon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Dread and Terror (3 Malice)**
+> ⭐️ **Dread and Terror (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon thickens the fog of their Gloaming Wyrmscale Aura trait and the horrors within it. Each creature in the area takes a bane on strikes made against the dragon until the start of the dragon's next turn.
+> The dragon thickens the fog of their Gloaming Wyrmscale Aura [trait](scc:mcdm.monsters.v1/rule.monster/monster-trait) and the horrors within it. Each creature in the area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on strikes made against the dragon until the start of the dragon's next turn.
 
-> 🔳 **Doleful Visions (5 Malice)**
+> 🔳 **Doleful Visions (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The dragon manifests four 2 cubes of nightmarish apparitions anywhere on the encounter map. Each creature in the area when it appears makes an **Intuition test**.
 >
-> - **≤11:** 14 damage; dazed (save ends)
-> - **12-16:** 11 damage; dazed (EoT)
+> - **≤11:** 14 damage; [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 11 damage; [dazed](scc:mcdm.heroes.v1/condition/dazed) (EoT)
 > - **17+:** 6 damage
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The dragon takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🔳 **Phantasmagoria! (7 Malice)**
+> 🔳 **Phantasmagoria! (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon summons macabre, disquieting phantasms in a 10 cube within 1 square that lasts until the end of the encounter. Any enemy who enters the area for the first time in a round or starts their turn there takes 6 psychic damage, or 8 psychic damage if they are dragonsealed by the gloom dragon. Additionally, the enemy's Intuition score is treated as 1 lower for the purpose of resisting potencies until the end of the encounter.
+> The dragon summons macabre, disquieting phantasms in a 10 cube within 1 square that lasts until the end of the encounter. Any enemy who enters the area for the first time in a round or starts their turn there takes 6 psychic damage, or 8 psychic damage if they are dragonsealed by the gloom dragon. Additionally, the enemy's Intuition score is treated as 1 lower for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency) until the end of the encounter.
 
 ### Crucible Dragon
 
@@ -7026,7 +7026,7 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 
 > **Crucible Dragon's Domain**
 >
-> If the encounter map is a location the dragon has occupied for 1 week or more, melted metal and blades coat nearly every surface. Any creature other than the dragon who starts their turn in physical contact with a surface on the encounter map takes 5 damage. Such creatures take an additional 5 damage when they take damage from being force moved into a surface on the map. Whenever an enemy in the encounter uses an ability that deals lightning damage, they take 1d6 damage to themself and each enemy and object adjacent to them.
+> If the encounter map is a location the dragon has occupied for 1 week or more, melted metal and blades coat nearly every surface. Any creature other than the dragon who starts their turn in physical contact with a surface on the encounter map takes 5 damage. Such creatures take an additional 5 damage when they take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into a surface on the map. Whenever an enemy in the encounter uses an ability that deals lightning damage, they take 1d6 damage to themself and each enemy and object [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 <!-- @type: statblock -->
 ####### Crucible Dragon
@@ -7037,9 +7037,9 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 | **Fire 6**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |   
 |    **+4**<br>Might     | **-1**<br>Agility |  **+3**<br>Reason  |  **+3**<br>Intuition  |  **+2**<br>Presence  |
 
-> ☠️ **Solo Monster**
+> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**
 >
-> **End Effect:** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the dragon can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The dragon can take two turns each round. They can't take turns consecutively.
 
@@ -7059,7 +7059,7 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 > - **12-16:** 10 fire damage; the target is slagged (save ends)
 > - **17+:** 6 fire damage
 >
-> A slagged target is coated in molten metal and takes 2d6 fire damage at the start of each of their turns. If a slagged target has M < 3 they are restrained (save ends) whenever they take cold damage.
+> A slagged target is coated in molten metal and takes 2d6 fire damage at the start of each of their turns. If a slagged target has M < 3 they are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends) whenever they take cold damage.
 
 > 🗡 **Forge Hammer Tail Slam**
 >
@@ -7069,37 +7069,37 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; M < 2 prone
-> - **12-16:** 17 damage; M < 3 prone
-> - **17+:** 20 damage; M < 4 prone
+> - **≤11:** 11 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 17 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 20 damage; M < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** The dragon can make a free strike against each slagged target knocked prone this way.
+> **Effect:** The dragon can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each slagged target knocked [prone](scc:mcdm.heroes.v1/condition/prone) this way.
 >
-> **1 Malice:** The strike deals 1d6 cold damage.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The strike deals 1d6 cold damage.
 
 > ⭐️ **Heat Buffer**
 >
-> Once per round while the dragon is flying using their Thermodynamic Flight ability, they give off a blast of steam to extend the duration of their flight until the end of the next round. Each creature in a 4 cube within 1 underneath the dragon when they use this ability takes 7 fire damage.
+> Once per round while the dragon is [flying](scc:mcdm.heroes.v1/movement/fly) using their Thermodynamic Flight ability, they give off a blast of steam to extend the duration of their flight until the end of the next round. Each creature in a 4 cube within 1 underneath the dragon when they use this ability takes 7 fire damage.
 
-> ❇️ **Thermodynamic Flight (1 Malice)**
+> ❇️ **Thermodynamic Flight (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                  **Maneuver** |
 > |----------------|------------------------------:|
 > | **📏 2 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** The dragon expels blistering steam, dealing 7 fire damage to each target in the area. The dragon then shifts up to their speed vertically and can fly until the end of the round.
+> **Effect:** The dragon expels blistering steam, dealing 7 fire damage to each target in the area. The dragon then [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed vertically and can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of the round.
 
-> ❗️ **Hammer and Anvil (1 Malice)**
+> ❗️ **Hammer and Anvil (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
 > | **📏 Self** |               **🎯 Self** |
 >
-> **Trigger:** While flying, the dragon starts their turn or moves.
+> **Trigger:** While [flying](scc:mcdm.heroes.v1/movement/fly), the dragon starts their turn or moves.
 >
 > **Effect:** The dragon drops to the ground and uses Forge Hammer Tail Slam, which deals an extra 4 damage for each square they descended.
 
-> ❗️ **Polarize Aura (1 Malice)**
+> ❗️ **Polarize Aura (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                        **Triggered action** |
 > |-----------------|--------------------------------------------:|
@@ -7113,9 +7113,9 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 >
 > - **≤11:** Push 5
 > - **12-16:** Push 7
-> - **17+:** Push 10, ignoring stability
+> - **17+:** Push 10, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability)
 
-> ☠️ **Heart of the Forge (Villain Action 1)**
+> ☠️ **Heart of the Forge ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -7123,11 +7123,11 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 4 fire damage; I < 2 frightened (save ends)
-> - **12-16:** 6 fire damage; I < 3 frightened (save ends)
-> - **17+:** 8 fire damage; I < 4 frightened (save ends)
+> - **≤11:** 4 fire damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 6 fire damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 8 fire damage; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
-> ☠️ **Subdermal Shielding (Villain Action 2)**
+> ☠️ **Subdermal Shielding ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
@@ -7135,7 +7135,7 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 >
 > **Effect:** Shields embedded under the dragon's scales emerge, and the dragon gains damage immunity 6 at the start of each round until the end of the encounter. If the dragon takes any damage, they lose this immunity until the end of the current round.
 
-> ☠️ **Polarity Chaos (Villain Action 3)**
+> ☠️ **Polarity Chaos ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**           |                                       **-** |
 > |-----------------|--------------------------------------------:|
@@ -7150,25 +7150,25 @@ The oldest of crucible dragons are known to speak some Vastariax, though younger
 <!-- @type: featureblock -->
 ######### Crucible Dragon Malice (Malice Features)
 
-At the start of a crucible dragon's turn, you can spend Malice to activate one of the following features.
+At the start of a crucible dragon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Swordfall (3 Malice)**
+> 🔳 **Swordfall (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> While the dragon is flying, they shape themself into a blade and fall. Each creature and object in the dragon's space when they hit the ground and in a 6 x 4 line within 1 square of the dragon takes 7 damage. A creature who takes this damage and has A < 4 takes 4 extra damage per square the dragon fell and is restrained (save ends). A creature not restrained this way can move into the nearest unoccupied space.
+> While the dragon is [flying](scc:mcdm.heroes.v1/movement/fly), they shape themself into a blade and fall. Each creature and object in the dragon's space when they hit the ground and in a 6 x 4 line within 1 square of the dragon takes 7 damage. A creature who takes this damage and has A < 4 takes 4 extra damage per square the dragon fell and is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends). A creature not [restrained](scc:mcdm.heroes.v1/condition/restrained) this way can move into the nearest unoccupied space.
 
-> 🔳 **Shower of Blades (5 Malice)**
+> 🔳 **Shower of Blades (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The dragon shakes loose a cloud of shattered weapons in a 6 x 4 line within 1 square of them. Each creature and object in the area makes an **Agility test**.
 >
-> - **≤11:** 16 damage; bleeding (save ends)
-> - **12-16:** 13 damage; bleeding (EoT)
+> - **≤11:** 16 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 13 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 > - **17+:** 7 damage
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The dragon takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Meltdown (7 Malice)**
+> 🌀 **Meltdown (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The dragon superheats the ground across the encounter map until the end of the round. Any enemy who starts their turn on the ground is slagged as if affected by the dragon's Slag Spew ability.
 
@@ -7198,7 +7198,7 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 
 > **Omen Dragon's Domain**
 >
-> If the encounter map is a location the dragon has occupied for 1 week or more, any creature on the map who regains Stamina regains only half the expected amount. Additionally, when a creature on the map who has a soul dies, the dragon absorbs the soul, granting the Director 1 Malice. The creature can't be brought back to life until the dragon is destroyed.
+> If the encounter map is a location the dragon has occupied for 1 week or more, any creature on the map who regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) regains only half the expected amount. Additionally, when a creature on the map who has a soul dies, the dragon absorbs the soul, granting the Director 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice). The creature can't be brought back to life until the dragon is destroyed.
 
 <!-- @type: statblock -->
 ####### Omen Dragon
@@ -7209,19 +7209,19 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 | **Corruption 6**<br>Immunity | **Fly**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |   
 |       **+3**<br>Might        |  **+4**<br>Agility  |  **+2**<br>Reason  |  **+3**<br>Intuition  |  **+5**<br>Presence  |
 
-> ☠️ **Solo Monster**
+> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**
 >
-> **End Effect:** At the end of each of their turns, the dragon can take 15 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the dragon can take 15 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The dragon can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Deathcount**
 >
-> Several of the dragon's abilities impose a Deathcount on a target. At the end of every turn, a creature with a Deathcount who is within the area of the dragon's Stagnant Wyrmscale Aura has that Deathcount reduced by 1. When a creature's Deathcount hits 0, they die. If multiple Deathcounts are imposed on a creature, they don't stack. Only the lowest Deathcount takes effect. All Deathcounts are lost when the dragon is reduced to 0 Stamina.
+> Several of the dragon's abilities impose a Deathcount on a target. At the end of every turn, a creature with a Deathcount who is within the area of the dragon's Stagnant Wyrmscale Aura has that Deathcount reduced by 1. When a creature's Deathcount hits 0, they die. If multiple Deathcounts are imposed on a creature, they don't stack. Only the lowest Deathcount takes effect. All Deathcounts are lost when the dragon is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ❇️ **Stagnant Wyrmscale Aura**
 >
-> The dragon's scales create a 4 aura of supernatural stagnancy around them. The area is difficult terrain for enemies, and no creature except the omen dragon can regain Stamina while in the area. Any creature dragonsealed by the omen dragon who starts their turn in the dragon's aura and doesn't have a Deathcount gains a Deathcount of 12.
+> The dragon's scales create a 4 aura of supernatural stagnancy around them. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and no creature except the omen dragon can regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while in the area. Any creature dragonsealed by the omen dragon who starts their turn in the dragon's aura and doesn't have a Deathcount gains a Deathcount of 12.
 
 > 🔳 **Corroding Breath (Signature Ability)**
 >
@@ -7235,7 +7235,7 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 > - **12-16:** 14 corruption damage; the target is dragonsealed (save ends)
 > - **17+:** 9 corruption damage
 >
-> Only creatures with souls can be dragonsealed by the omen dragon. A dragonsealed creature appears ghastly and pale, their Presence score is treated as 1 lower for the purpose of resisting potencies, and they can't treat other creatures as allies.
+> Only creatures with souls can be dragonsealed by the omen dragon. A dragonsealed creature appears ghastly and pale, their Presence score is treated as 1 lower for the purpose of resisting [potencies](scc:mcdm.heroes.v1/rule.character/potency), and they can't treat other creatures as allies.
 
 > 🗡 **Barbed Tail Swing**
 >
@@ -7245,35 +7245,35 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 14 damage; M < 3 bleeding (save ends)
-> - **12-16:** 19 damage; M < 4 bleeding (save ends)
-> - **17+:** 23 damage; M < 5 bleeding (save ends)
+> - **≤11:** 14 damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 19 damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 23 damage; M < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **3 Malice:** The potency increases by 2, and each target is also pulled up to 5 squares.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 2, and each target is also pulled up to 5 squares.
 
 > ⭐️ **Death or Victory**
 >
-> Once per turn, the dragon chooses one creature with a Deathcount within line of effect. That creature can choose to take 1d6 damage and lose a recovery to increase their Deathcount by 5.
+> Once per turn, the dragon chooses one creature with a Deathcount within [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). That creature can choose to take 1d6 damage and lose a [recovery](scc:mcdm.heroes.v1/rule.health/recoveries) to increase their Deathcount by 5.
 
-> ❇️ **Detonation (5 Malice)**
+> ❇️ **Detonation (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**        |                  **Maneuver** |
 > |-----------------|------------------------------:|
 > | **📏 10 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target must be dragonsealed. Each target takes 9 corruption damage, and the omen dragon regains Stamina equal to half the total damage dealt. The target then loses their dragonseal.
+> **Effect:** Each target must be dragonsealed. Each target takes 9 corruption damage, and the omen dragon regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the total damage dealt. The target then loses their dragonseal.
 
-> ❗️ **Don't Turn Away (1 Malice)**
+> ❗️ **Don't Turn Away (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
 > | **📏 Self** |               **🎯 Self** |
 >
-> **Trigger:** A creature leaves the area of the dragon's Stagnant Wyrmscale Aura trait.
+> **Trigger:** A creature leaves the area of the dragon's Stagnant Wyrmscale Aura [trait](scc:mcdm.monsters.v1/rule.monster/monster-trait).
 >
-> **Effect:** The dragon shifts up to their speed, and the Deathcount of each dragonsealed creature who comes adjacent to the dragon during this shift is reduced by 1.
+> **Effect:** The dragon [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, and the Deathcount of each dragonsealed creature who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the dragon during this shift is reduced by 1.
 
-> ❗️ **Repent! (2 Malice)**
+> ❗️ **Repent! (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**      |      **Free triggered action** |
 > |-----------------|-------------------------------:|
@@ -7281,9 +7281,9 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > **Trigger:** A dragonsealed creature within distance deals damage to the dragon.
 >
-> **Effect:** The target must choose between making a free strike against themself or gaining a Deathcount of 5.
+> **Effect:** The target must choose between making a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against themself or gaining a Deathcount of 5.
 
-> ☠️ **What You Deserve (Villain Action 1)**
+> ☠️ **What You Deserve ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** | 
 > |-----------------|------------------------------:|
@@ -7297,7 +7297,7 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > **Effect:** Each target receives a premonition of their imminent death.
 
-> ☠️ **Souls of the Broken (Villain Action 2)**
+> ☠️ **Souls of the Broken ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Magic, Ranged, Strike** |                 **-** |
 > |---------------------------|----------------------:|
@@ -7307,11 +7307,11 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** P < 5 frightened (save ends)
+> - **≤11:** P < 5 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 > - **12-16:** P < 5 the target moves up to their speed toward the dragon
-> - **17+:** P < 5 the target makes a free strike against the nearest ally
+> - **17+:** P < 5 the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the nearest ally
 
-> ☠️ **So Long and Goodnight (Villain Action 3)**
+> ☠️ **So Long and Goodnight ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                            **-** |
 > |-----------------|---------------------------------:|
@@ -7322,25 +7322,25 @@ An omen dragon speaks with the voices of all the souls they have collected. In a
 <!-- @type: featureblock -->
 ######### Omen Dragon Malice (Malice Features)
 
-At the start of an omen dragon's turn, you can spend Malice to activate one of the following features.
+At the start of an omen dragon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Black Skies (3 Malice)**
+> ⭐️ **Black Skies (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon expands their wings to create a shroud of shadow. Until the start of the dragon's next turn, any strike made against them takes a bane.
+> The dragon expands their wings to create a shroud of shadow. Until the start of the dragon's next turn, any strike made against them takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
-> ❇️ **Rise and Fall (5 Malice)**
+> ❇️ **Rise and Fall (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon flies up to 10 squares and carries fated souls with them. Each creature in the area of the dragon's Stagnant Wyrmscale Aura trait makes a **Presence test**.
+> The dragon [flies](scc:mcdm.heroes.v1/movement/fly) up to 10 squares and carries fated souls with them. Each creature in the area of the dragon's Stagnant Wyrmscale Aura [trait](scc:mcdm.monsters.v1/rule.monster/monster-trait) makes a **Presence test**.
 >
 > - **≤11:** Vertical pull 10
 > - **12-16:** Vertical pull 6
 > - **17+:** Vertical pull 4
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The dragon takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Burn It Right Down (10 Malice)**
+> 🌀 **Burn It Right Down (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each edge of the encounter map burns with intangible purple flames until the end of the encounter. The flames expand by 1 square at the end of every turn. Any enemy takes 5 corruption damage for each square of flames they enter.
 
@@ -7372,7 +7372,7 @@ Meteor dragons are not known for their conversational habits. When they do deign
 
 > **Meteor Dragon's Domain**
 >
-> If the encounter map is a location the dragon has occupied for 1 week or more, each creature other than the dragon has their stability reduced to 0 and automatically obtains a tier 1 outcome on Agility tests. Additionally, any creature who is suffocating during the encounter takes an extra 1d6 damage at the end of each round.
+> If the encounter map is a location the dragon has occupied for 1 week or more, each creature other than the dragon has their [stability](scc:mcdm.heroes.v1/rule.character/stability) reduced to 0 and automatically obtains a tier 1 outcome on Agility tests. Additionally, any creature who is suffocating during the encounter takes an extra 1d6 damage at the end of each round.
 
 <!-- @type: statblock -->
 ####### Meteor Dragon
@@ -7383,9 +7383,9 @@ Meteor dragons are not known for their conversational habits. When they do deign
 | **-**<br>Immunity | **Fly**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |   
 |  **+5**<br>Might  |  **+5**<br>Agility  |  **+3**<br>Reason  |  **+3**<br>Intuition  |  **+5**<br>Presence  |
 
-> ☠️ **Solo Monster**
+> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**
 >
-> **End Effect:** At the end of each of their turns, the dragon can take 20 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the dragon can take 20 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The dragon can take two turns each round. They can't take turns consecutively.
 
@@ -7405,7 +7405,7 @@ Meteor dragons are not known for their conversational habits. When they do deign
 > - **12-16:** 16 sonic damage; the target is dragonsealed (save ends)
 > - **17+:** 10 sonic damage
 >
-> A dragonsealed target emits a golden aura, and takes 2 damage per square moved when falling or when force moved into an obstacle.
+> A dragonsealed target emits a golden aura, and takes 2 damage per square moved when falling or when [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into an obstacle.
 
 > ⚔️ **Cosmic Tail Ray**
 >
@@ -7415,23 +7415,23 @@ Meteor dragons are not known for their conversational habits. When they do deign
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 holy damage; A < 4 weakened (save ends)
-> - **12-16:** 21 holy damage; A < 5 weakened (save ends)
-> - **17+:** 25 holy damage; A < 6 weakened (save ends)
+> - **≤11:** 15 holy damage; A < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 21 holy damage; A < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 25 holy damage; A < 6 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** If a target made weakened this way is already weakened, they are instead dazed until the end of their next turn.
+> **Effect:** If a target made [weakened](scc:mcdm.heroes.v1/condition/weakened) this way is already [weakened](scc:mcdm.heroes.v1/condition/weakened), they are instead [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
 > ⭐️ **Crescent Claws**
 >
-> Once per turn, the dragon chooses a target within 3 squares. The dragon can make a free strike against the target, and ignores banes when using abilities against the target until the start of their next turn.
+> Once per turn, the dragon chooses a target within 3 squares. The dragon can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target, and ignores [banes](scc:mcdm.heroes.v1/rule.dice/bane) when using abilities against the target until the start of their next turn.
 
-> ❇️ **Investiture of Gravity (5 Malice)**
+> ❇️ **Investiture of Gravity (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
 > | **📏 15 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target must be dragonsealed. The dragon chooses a direction and vertical slides each target 10 squares in that direction, ignoring stability. A target who strikes an obstacle takes damage as if they had fallen the forced movement distance.
+> **Effect:** Each target must be dragonsealed. The dragon chooses a direction and vertical slides each target 10 squares in that direction, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability). A target who strikes an obstacle takes damage as if they had fallen the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance.
 
 > ❗️ **Field Collapse**
 >
@@ -7443,7 +7443,7 @@ Meteor dragons are not known for their conversational habits. When they do deign
 >
 > **Effect:** The dragon halves the damage. Each enemy and object in the area of the dragon's Voidshroud Wyrmscale Aura trait takes 5 sonic damage and is pulled up to 5 squares toward the dragon. The area of the wyrmscale aura then resets to 1.
 
-> ❗️ **A Hero Faces the Void (2 Malice)**
+> ❗️ **A Hero Faces the Void (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |      **Free triggered action** |
 > |-------------------|-------------------------------:|
@@ -7453,31 +7453,31 @@ Meteor dragons are not known for their conversational habits. When they do deign
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 10 psychic damage; P < 4 frightened (save ends)
-> - **12-16:** 16 psychic damage; P < 5 frightened (save ends)
-> - **17+:** 20 psychic damage; P < 6 frightened (save ends)
+> - **≤11:** 10 psychic damage; P < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 16 psychic damage; P < 5 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 20 psychic damage; P < 6 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** While frightened this way, the target can't use the triggering ability.
+> **Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, the target can't use the triggering ability.
 
-> ☠️ **Impactful Arrival (Villain Action 1)**
+> ☠️ **Impactful Arrival ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic**     |                                       **-** |
 > |---------------------|--------------------------------------------:|
 > | **📏 1-mile burst** | **🎯 Each creature and object in the area** |
 >
-> **Effect:** Each target takes 30 fire damage, and if they have M < 5, they are knocked prone.
+> **Effect:** Each target takes 30 fire damage, and if they have M < 5, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 >
 > **Special:** The dragon can use this ability before the encounter begins.
 
-> ☠️ **Burning Aurora (Villain Action 2)**
+> ☠️ **Burning Aurora ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** Until the end of the encounter, each enemy who is dragonsealed and weakened and who the dragon has line of effect to loses 1 of their Heroic Resource at the start of each of their turns (to a minimum of 0). The dragon then uses their Cosmic Tail Ray ability with a double edge, targeting four creatures or objects.
+> **Effect:** Until the end of the encounter, each enemy who is dragonsealed and [weakened](scc:mcdm.heroes.v1/condition/weakened) and who the dragon has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to loses 1 of their Heroic Resource at the start of each of their turns (to a minimum of 0). The dragon then uses their Cosmic Tail Ray ability with a double [edge](scc:mcdm.heroes.v1/rule.dice/edge), targeting four creatures or objects.
 
-> ☠️ **Voidlight Breath (Villain Action 3)**
+> ☠️ **Voidlight Breath ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic**            |                                    **-** |
 > |----------------------------|-----------------------------------------:|
@@ -7489,32 +7489,32 @@ Meteor dragons are not known for their conversational habits. When they do deign
 > - **12-16:** 21 damage; I < 5 the target is annihilated
 > - **17+:** 15 damage; I < 4 the target is annihilated
 >
-> An annihilated target must make the test again, decreasing the potency for themself by 2 each time they are annihilated. A creature reduced to 0 Stamina by this dies and their soul is destroyed.
+> An annihilated target must make the test again, decreasing the [potency](scc:mcdm.heroes.v1/rule.character/potency) for themself by 2 each time they are annihilated. A creature reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by this dies and their soul is destroyed.
 
 <!-- @type: featureblock -->
 ######### Meteor Dragon Malice (Malice Features)
 
-At the start of a meteor dragon's turn, you can spend Malice to activate one of the following features.
+At the start of a meteor dragon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Liftoff (3 Malice)**
+> ⭐️ **Liftoff (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The next time the dragon uses their Crescent Claws ability, they can also slide the target up to 5 squares. If the target is dragonsealed, the dragon can vertical slide them instead.
+> The next time the dragon uses their Crescent Claws ability, they can also [slide](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 5 squares. If the target is dragonsealed, the dragon can vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) them instead.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The dragon takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🔳 **Starfall (5 Malice)**
+> 🔳 **Starfall (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The dragon drops stars into five 2 cubes anywhere on the encounter map. The area is difficult terrain, and each creature and object in the area when it appears makes an **Agility test**.
+> The dragon drops stars into five 2 cubes anywhere on the encounter map. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and each creature and object in the area when it appears makes an **Agility test**.
 >
-> - **≤11:** 20 holy damage; slowed (save ends), prone
-> - **12-16:** 16 holy damage; slowed (save ends)
+> - **≤11:** 20 holy damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends), [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 16 holy damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 10 holy damage
 
-> ☠️ **Event Horizon (10 Malice)**
+> ☠️ **Event Horizon (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A black hole manifests as a 1 cube within 20 squares of the dragon in an unoccupied space. Each creature who has M < 5 and each object of size 3 or smaller is vertical pulled 2 squares toward the area at the start of each round, ignoring stability. Any creature who starts their turn in the area or any object in the area at the end of the round suffers the effect of the dragon's Voidlight Breath ability, and the black hole disappears.
+> A black hole manifests as a 1 cube within 20 squares of the dragon in an unoccupied space. Each creature who has M < 5 and each object of size 3 or smaller is vertical [pulled](scc:mcdm.heroes.v1/movement/forced-movement) 2 squares toward the area at the start of each round, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability). Any creature who starts their turn in the area or any object in the area at the end of the round suffers the effect of the dragon's Voidlight Breath ability, and the black hole disappears.
 
 <!-- @type: monster | @category: dwarves -->
 ## Dwarves
