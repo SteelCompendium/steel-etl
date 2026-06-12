@@ -33,6 +33,11 @@ type Config struct {
 	// per-book section grouping (used by sections with GroupByBook=true).
 	Books []BookConfig `yaml:"books,omitempty"`
 
+	// Registry is the path to the pipeline's SCC registry (classification.json),
+	// used to read per-book printing provenance for page stamps. Optional —
+	// empty disables stamping. Resolved relative to ConfigDir.
+	Registry string `yaml:"registry,omitempty"`
+
 	// ConfigDir is the directory containing the config file (set automatically).
 	// All relative paths are resolved against this directory.
 	ConfigDir string `yaml:"-"`

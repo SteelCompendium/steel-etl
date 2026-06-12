@@ -5,6 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/SteelCompendium/steel-etl/internal/scc"
 )
 
 func setupSourceDir(t *testing.T) string {
@@ -1279,5 +1281,54 @@ func TestMergeGroupLandingNoSCCPassthrough(t *testing.T) {
 	generated := "# X\n\n---\n\nlist"
 	if got := mergeGroupLanding(dir, generated); got != generated {
 		t.Errorf("mergeGroupLanding passthrough = %q, want unchanged", got)
+	}
+}
+
+func TestBuild_PrintingStamps(t *testing.T) {
+	srcDir := t.TempDir()
+	classDir := filepath.Join(srcDir, "class")
+	os.MkdirAll(classDir, 0755)
+	page := "---\nname: Fury\nscc: mcdm.heroes.v1/class/fury\ntype: class\n---\n\nBody.\n"
+	if err := os.WriteFile(filepath.Join(classDir, "fury.md"), []byte(page), 0644); err != nil {
+		t.Fatal(err)
+	}
+
+	regPath := filepath.Join(t.TempDir(), "classification.json")
+	reg := scc.NewRegistry()
+	reg.Add("mcdm.heroes.v1/class/fury")
+	reg.SetBookPrinting("mcdm.heroes.v1", "1.01b")
+	if err := reg.Save(regPath); err != nil {
+		t.Fatal(err)
+	}
+
+	docsDir := filepath.Join(t.TempDir(), "docs")
+	cfg := &Config{
+		SourceDir: srcDir,
+		DocsDir:   docsDir,
+		Registry:  regPath,
+		Books:     []BookConfig{{Key: "mcdm.heroes.v1", Label: "Heroes"}},
+		Sections: []SectionConfig{
+			{Name: "Browse", Include: []string{"class/"}},
+		},
+	}
+
+	result, err := Build(cfg)
+	if err != nil {
+		t.Fatalf("Build: %v", err)
+	}
+	if result.PrintingStamps == 0 {
+		t.Fatal("expected at least one printing stamp")
+	}
+
+	data, err := os.ReadFile(filepath.Join(docsDir, "Browse", "class", "fury.md"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := string(data)
+	if !strings.Contains(got, "printing: \"1.01b\"") {
+		t.Errorf("missing printing frontmatter:\n%s", got)
+	}
+	if !strings.Contains(got, "printing_book: \"Heroes\"") {
+		t.Errorf("missing printing_book frontmatter:\n%s", got)
 	}
 }
