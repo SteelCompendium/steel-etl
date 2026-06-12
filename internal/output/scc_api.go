@@ -25,25 +25,33 @@ type SCCAPIGenerator struct {
 	SchemeVersion int                  // SCC scheme (grammar) version; 0 ⇒ 1
 	Sections      []site.SectionConfig // site sections for URL mapping
 	Aliases       map[string]string    // alias → canonical SCC
+	Printings     map[string]string    // book source → printing (non-identity provenance)
 	entries       map[string]apiEntry
 }
 
 type apiEntry struct {
-	SCC    string `json:"scc"`
-	URL    string `json:"url"`
-	Name   string `json:"name"`
-	Type   string `json:"type"`
-	Source string `json:"source"`
+	SCC      string `json:"scc"`
+	URL      string `json:"url"`
+	Name     string `json:"name"`
+	Type     string `json:"type"`
+	Source   string `json:"source"`
+	Printing string `json:"printing,omitempty"`
+}
+
+// apiBook is per-book non-identity provenance metadata surfaced by the API.
+type apiBook struct {
+	Printing string `json:"printing,omitempty"`
 }
 
 type apiIndex struct {
-	Version       int          `json:"version"`
-	SchemeVersion int          `json:"scheme_version"`
-	Generated     string       `json:"generated"`
-	TotalCodes    int          `json:"total_codes"`
-	TotalAliases  int          `json:"total_aliases"`
-	BaseURL       string       `json:"base_url"`
-	Endpoints     apiEndpoints `json:"endpoints"`
+	Version       int                `json:"version"`
+	SchemeVersion int                `json:"scheme_version"`
+	Generated     string             `json:"generated"`
+	TotalCodes    int                `json:"total_codes"`
+	TotalAliases  int                `json:"total_aliases"`
+	BaseURL       string             `json:"base_url"`
+	Books         map[string]apiBook `json:"books,omitempty"`
+	Endpoints     apiEndpoints       `json:"endpoints"`
 }
 
 type apiEndpoints struct {
@@ -53,12 +61,13 @@ type apiEndpoints struct {
 }
 
 type apiRegistry struct {
-	Version       int               `json:"version"`
-	SchemeVersion int               `json:"scheme_version"`
-	Generated     string            `json:"generated"`
-	BaseURL       string            `json:"base_url"`
-	Entries       []apiEntry        `json:"entries"`
-	Aliases       map[string]string `json:"aliases,omitempty"`
+	Version       int                `json:"version"`
+	SchemeVersion int                `json:"scheme_version"`
+	Generated     string             `json:"generated"`
+	BaseURL       string             `json:"base_url"`
+	Books         map[string]apiBook `json:"books,omitempty"`
+	Entries       []apiEntry         `json:"entries"`
+	Aliases       map[string]string  `json:"aliases,omitempty"`
 }
 
 type apiTypes struct {
@@ -92,11 +101,12 @@ func (g *SCCAPIGenerator) WriteSection(sccCode string, parsed *content.ParsedCon
 	url := g.resolveURL(sccCode)
 
 	g.entries[sccCode] = apiEntry{
-		SCC:    sccCode,
-		URL:    url,
-		Name:   name,
-		Type:   typeName,
-		Source: source,
+		SCC:      sccCode,
+		URL:      url,
+		Name:     name,
+		Type:     typeName,
+		Source:   source,
+		Printing: g.Printings[source],
 	}
 
 	return nil
@@ -123,6 +133,14 @@ func (g *SCCAPIGenerator) Finalize() error {
 		aliases = make(map[string]string)
 	}
 
+	var books map[string]apiBook
+	if len(g.Printings) > 0 {
+		books = make(map[string]apiBook, len(g.Printings))
+		for b, p := range g.Printings {
+			books[b] = apiBook{Printing: p}
+		}
+	}
+
 	// 1. index.json
 	if err := g.writeJSON(filepath.Join(apiDir, "index.json"), apiIndex{
 		Version:       1,
@@ -131,6 +149,7 @@ func (g *SCCAPIGenerator) Finalize() error {
 		TotalCodes:    len(sorted),
 		TotalAliases:  len(aliases),
 		BaseURL:       g.BaseURL,
+		Books:         books,
 		Endpoints: apiEndpoints{
 			Registry: "/api/v1/scc.json",
 			Resolve:  "/api/v1/resolve/{source}/{type}/{item}.json",
@@ -146,6 +165,7 @@ func (g *SCCAPIGenerator) Finalize() error {
 		SchemeVersion: schemeVer,
 		Generated:     now,
 		BaseURL:       g.BaseURL,
+		Books:         books,
 		Entries:       sorted,
 		Aliases:       aliases,
 	}); err != nil {
