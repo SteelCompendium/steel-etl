@@ -13,6 +13,15 @@ type Registry struct {
 	aliases       map[string]string // alias → canonical SCC
 	frozen        bool
 	schemeVersion int
+	books         map[string]BookMeta
+}
+
+// BookMeta holds non-identity provenance metadata for a book source.
+// The printing is the source-document errata printing (e.g. "1.01b") the
+// book's content was generated from — it is NOT part of any SCC identity.
+// See docs/superpowers/specs/2026-06-11-printing-provenance-and-code-lifecycle-design.md.
+type BookMeta struct {
+	Printing string `json:"printing,omitempty"`
 }
 
 // registryJSON is the on-disk format for classification.json.
@@ -22,6 +31,7 @@ type registryJSON struct {
 	Frozen        bool              `json:"frozen"`
 	Codes         []string          `json:"codes"`
 	Aliases       map[string]string `json:"aliases,omitempty"`
+	Books         map[string]BookMeta `json:"books,omitempty"`
 }
 
 // NewRegistry creates an empty registry.
@@ -30,6 +40,7 @@ func NewRegistry() *Registry {
 		codes:         make(map[string]bool),
 		aliases:       make(map[string]string),
 		schemeVersion: 1,
+		books:         make(map[string]BookMeta),
 	}
 }
 
@@ -72,6 +83,28 @@ func (r *Registry) Freeze() {
 // IsFrozen returns whether the registry is frozen.
 func (r *Registry) IsFrozen() bool {
 	return r.frozen
+}
+
+// SetBookPrinting records the source-document printing (e.g. "1.01b") for a
+// book. Empty book or printing is a no-op.
+func (r *Registry) SetBookPrinting(book, printing string) {
+	if book == "" || printing == "" {
+		return
+	}
+	meta := r.books[book]
+	meta.Printing = printing
+	r.books[book] = meta
+}
+
+// BookPrintings returns a copy of book → printing for books that declared one.
+func (r *Registry) BookPrintings() map[string]string {
+	out := make(map[string]string, len(r.books))
+	for b, m := range r.books {
+		if m.Printing != "" {
+			out[b] = m.Printing
+		}
+	}
+	return out
 }
 
 // Aliases returns a copy of the alias map (alias → canonical SCC).
@@ -120,6 +153,9 @@ func (r *Registry) Save(path string) error {
 	if len(r.aliases) > 0 {
 		data.Aliases = r.aliases
 	}
+	if len(r.books) > 0 {
+		data.Books = r.books
+	}
 
 	jsonData, err := json.MarshalIndent(data, "", "  ")
 	if err != nil {
@@ -152,6 +188,9 @@ func LoadRegistry(path string) (*Registry, error) {
 	}
 	for alias, canonical := range raw.Aliases {
 		r.aliases[alias] = canonical
+	}
+	for book, meta := range raw.Books {
+		r.books[book] = meta
 	}
 
 	return r, nil

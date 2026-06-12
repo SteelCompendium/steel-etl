@@ -129,6 +129,49 @@ func TestRegistryCodes(t *testing.T) {
 	}
 }
 
+func TestRegistryBookPrintingsRoundTrip(t *testing.T) {
+	r := NewRegistry()
+	r.Add("mcdm.heroes.v1/class/fury")
+	r.SetBookPrinting("mcdm.heroes.v1", "1.01b")
+	r.SetBookPrinting("", "9.99")      // ignored: empty book
+	r.SetBookPrinting("mcdm.x.v1", "") // ignored: empty printing
+
+	path := filepath.Join(t.TempDir(), "classification.json")
+	if err := r.Save(path); err != nil {
+		t.Fatalf("save: %v", err)
+	}
+
+	loaded, err := LoadRegistry(path)
+	if err != nil {
+		t.Fatalf("load: %v", err)
+	}
+	got := loaded.BookPrintings()
+	if len(got) != 1 || got["mcdm.heroes.v1"] != "1.01b" {
+		t.Errorf("BookPrintings = %v, want map[mcdm.heroes.v1:1.01b]", got)
+	}
+}
+
+func TestRegistryBookPrintingsAbsent(t *testing.T) {
+	// A registry without printings must round-trip cleanly and omit the books key.
+	r := NewRegistry()
+	r.Add("mcdm.heroes.v1/class/fury")
+	path := filepath.Join(t.TempDir(), "classification.json")
+	if err := r.Save(path); err != nil {
+		t.Fatalf("save: %v", err)
+	}
+	loaded, err := LoadRegistry(path)
+	if err != nil {
+		t.Fatalf("load: %v", err)
+	}
+	if got := loaded.BookPrintings(); len(got) != 0 {
+		t.Errorf("BookPrintings = %v, want empty", got)
+	}
+	data, _ := os.ReadFile(path)
+	if strings.Contains(string(data), `"books"`) {
+		t.Error("books key written for registry with no printings")
+	}
+}
+
 func TestRegistrySchemeVersion(t *testing.T) {
 	// New registry defaults to scheme version 1.
 	r := NewRegistry()
