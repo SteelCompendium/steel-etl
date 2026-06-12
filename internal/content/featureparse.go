@@ -224,3 +224,67 @@ func fbParseTiers(para string, tiers *[3]string) {
 		}
 	}
 }
+
+// ToMap converts a RichFeature to the featureblock.schema.json features[]
+// shape (snake_case keys, empty fields omitted).
+func (f RichFeature) ToMap() map[string]any {
+	m := map[string]any{"name": f.Name}
+	if f.Icon != "" {
+		m["icon"] = f.Icon
+	}
+	if f.Cost != "" {
+		m["cost"] = f.Cost
+	}
+	if f.Usage != "" {
+		m["usage"] = f.Usage
+	}
+	if len(f.Keywords) > 0 {
+		m["keywords"] = f.Keywords
+	}
+	if f.Distance != "" {
+		m["distance"] = f.Distance
+	}
+	if f.Target != "" {
+		m["target"] = f.Target
+	}
+	if f.PowerRoll != nil {
+		pr := map[string]any{"tiers": f.PowerRoll.Tiers}
+		if f.PowerRoll.Formula != "" {
+			pr["formula"] = f.PowerRoll.Formula
+		}
+		m["power_roll"] = pr
+	}
+	if len(f.Sections) > 0 {
+		ss := make([]map[string]any, 0, len(f.Sections))
+		for _, s := range f.Sections {
+			ss = append(ss, map[string]any{"label": s.Label, "text": s.Text})
+		}
+		m["sections"] = ss
+	}
+	if len(f.Enhancements) > 0 {
+		es := make([]map[string]any, 0, len(f.Enhancements))
+		for _, e := range f.Enhancements {
+			es = append(es, map[string]any{"cost": e.Cost, "text": e.Text})
+		}
+		m["enhancements"] = es
+	}
+	if f.Body != "" {
+		m["body"] = f.Body
+	}
+	if f.Trailing != "" {
+		m["trailing"] = f.Trailing
+	}
+	if f.Level > 0 {
+		m["level"] = f.Level
+	}
+	return m
+}
+
+// RichFeatureMaps converts a parsed feature list to schema-shaped maps.
+func RichFeatureMaps(fs []RichFeature) []map[string]any {
+	out := make([]map[string]any, 0, len(fs))
+	for _, f := range fs {
+		out = append(out, f.ToMap())
+	}
+	return out
+}

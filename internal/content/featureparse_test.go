@@ -199,3 +199,43 @@ func TestParseRichFeatures_DiceInTitle(t *testing.T) {
 		t.Errorf("tiers = %+v", f.PowerRoll.Tiers)
 	}
 }
+
+func TestRichFeature_ToMap(t *testing.T) {
+	f := RichFeature{
+		Icon: "🔳", Name: "Upchuck", Cost: "5 Malice", Usage: "Main action",
+		Keywords: []string{"Area", "Weapon"},
+		Distance: "3 cube within 10", Target: "Each enemy in the area",
+		PowerRoll: &RichPowerRoll{Formula: "+ 2", Tiers: map[string]string{"low": "4 damage"}},
+		Sections:  []RichSection{{Label: "Effect", Text: "Spits a stone."}},
+		Enhancements: []RichEnhancement{{Cost: "2 Malice", Text: "More."}},
+		Level: 5,
+	}
+	m := f.ToMap()
+	if m["name"] != "Upchuck" || m["icon"] != "🔳" || m["cost"] != "5 Malice" {
+		t.Errorf("scalars wrong: %+v", m)
+	}
+	pr, ok := m["power_roll"].(map[string]any)
+	if !ok || pr["formula"] != "+ 2" {
+		t.Fatalf("power_roll = %+v", m["power_roll"])
+	}
+	secs, ok := m["sections"].([]map[string]any)
+	if !ok || len(secs) != 1 || secs[0]["label"] != "Effect" {
+		t.Fatalf("sections = %+v", m["sections"])
+	}
+	if m["level"] != 5 {
+		t.Errorf("level = %v, want 5", m["level"])
+	}
+
+	// Empty fields are omitted entirely.
+	min := RichFeature{Name: "Walleye", Body: "Text."}
+	mm := min.ToMap()
+	for _, absent := range []string{"icon", "cost", "usage", "keywords", "distance",
+		"target", "power_roll", "sections", "enhancements", "trailing", "level"} {
+		if _, ok := mm[absent]; ok {
+			t.Errorf("empty field %q should be omitted", absent)
+		}
+	}
+	if mm["body"] != "Text." {
+		t.Errorf("body = %v", mm["body"])
+	}
+}
