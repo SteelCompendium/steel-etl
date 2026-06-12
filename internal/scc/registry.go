@@ -26,11 +26,11 @@ type BookMeta struct {
 
 // registryJSON is the on-disk format for classification.json.
 type registryJSON struct {
-	Version       int               `json:"version"`
-	SchemeVersion int               `json:"scheme_version"`
-	Frozen        bool              `json:"frozen"`
-	Codes         []string          `json:"codes"`
-	Aliases       map[string]string `json:"aliases,omitempty"`
+	Version       int                 `json:"version"`
+	SchemeVersion int                 `json:"scheme_version"`
+	Frozen        bool                `json:"frozen"`
+	Codes         []string            `json:"codes"`
+	Aliases       map[string]string   `json:"aliases,omitempty"`
 	Books         map[string]BookMeta `json:"books,omitempty"`
 }
 
@@ -91,9 +91,7 @@ func (r *Registry) SetBookPrinting(book, printing string) {
 	if book == "" || printing == "" {
 		return
 	}
-	meta := r.books[book]
-	meta.Printing = printing
-	r.books[book] = meta
+	r.books[book] = BookMeta{Printing: printing}
 }
 
 // BookPrintings returns a copy of book → printing for books that declared one.
