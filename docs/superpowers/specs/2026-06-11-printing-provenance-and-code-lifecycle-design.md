@@ -1,7 +1,7 @@
 # Printing Provenance and SCC Code Lifecycle (design)
 
 **Date:** 2026-06-11
-**Status:** Direction settled; implementation deferred (see "Decision status" at the end).
+**Status:** Direction settled. The printing stamp is **implemented** (2026-06-11, plan: `../plans/2026-06-11-printing-provenance-stamp.md`); the tombstone lifecycle remains **deferred** (see "Decision status" at the end).
 This document exists so the reasoning does not have to be rediscovered when MCDM
 ships a printing that forces the deferred decisions.
 

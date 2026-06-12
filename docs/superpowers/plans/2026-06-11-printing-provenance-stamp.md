@@ -1,5 +1,11 @@
 # Printing Provenance Stamp Implementation Plan
 
+## Status
+
+**Executed 2026-06-11** (subagent-driven, all 7 tasks). Workspace doc references in
+Task 6 use the pre-restructure numbering (ROADMAP #8 is now #6; dated SCC history
+lives in workspace `docs/scc-log.md`) — kept as written per the archives convention.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Flow the heroes source's `printing: "1.01b"` frontmatter through the pipeline as a non-identity build stamp — registry → SCC API JSON → rendered v2 pages — so any SCC code/page answers "which source printing generated this data?"

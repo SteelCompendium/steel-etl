@@ -40,6 +40,15 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one.
 - **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages.
 - **Static content overrides**: copies hand-authored pages last, overriding generated content.
+- **Printing provenance stamps** (`applyPrintingStamps`, final pass — after static
+  overrides so every page is covered): when `site.yaml` sets `registry:` (the
+  pipeline's `classification.json`), injects non-identity `printing` /
+  `printing_book` frontmatter into every page whose `scc:` book prefix has a
+  recorded printing in the registry's `books` map. Rendered as a muted "Source:
+  Heroes · printing 1.01b" line by `v2/overrides/partials/content.html`
+  (`.sc-provenance`, styled in `v2/docs/stylesheets/extra.css`). Books without a
+  `printing:` frontmatter field are skipped. No SCC/URL impact. Design:
+  `docs/superpowers/specs/2026-06-11-printing-provenance-and-code-lifecycle-design.md`.
 
 ### `internal/site/cards.go`
 
