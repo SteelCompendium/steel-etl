@@ -10204,26 +10204,26 @@ Many fossil cryptics speak Phorialtic, but they are known to also use the ancien
 <!-- @type: featureblock -->
 ######### Fossil Cryptic Malice (Malice Features)
 
-At the start of a fossil cryptic's turn, you can spend Malice to activate one of the following features.
+At the start of a fossil cryptic's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🏹 **Floor Mosaic (3 Malice)**
+> 🏹 **Floor Mosaic (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The fossil cryptic slides one creature on the ground up to 5 squares. If the creature is prone, this forced movement ignores stability.
+> The fossil cryptic [slides](scc:mcdm.heroes.v1/movement/forced-movement) one creature on the ground up to 5 squares. If the creature is [prone](scc:mcdm.heroes.v1/condition/prone), this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) ignores [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The fossil cryptic takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The fossil cryptic takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🔳 **Stone Pillars (5 Malice)**
+> 🔳 **Stone Pillars (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Two pillars of stone 1 square wide either thrust up out of the ground or jut down from the ceiling anywhere on the encounter map, to a height of up to 5 squares. A creature in the area of a pillar before it appears is knocked prone on its surface. If the creature comes into contact with the ceiling above or the floor beneath the pillar and has M < 2 they are restrained (save ends).
+> Two pillars of stone 1 square wide either thrust up out of the ground or jut down from the ceiling anywhere on the encounter map, to a height of up to 5 squares. A creature in the area of a pillar before it appears is knocked [prone](scc:mcdm.heroes.v1/condition/prone) on its surface. If the creature comes into contact with the ceiling above or the floor beneath the pillar and has M < 2 they are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
-> 🌀 **Choking Dust (10 Malice)**
+> 🌀 **Choking Dust (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The air across the encounter map is thick with dust until the end of the encounter. Each enemy in the dust is suffocating. Additionally, at the end of each round, each enemy in the dust makes a **Might test**.
 >
-> - **≤11:** Until the end of the enemy's next turn, their stability is reduced to 0, and any forced movement effects targeting them gain a +2 bonus to the distance moved.
-> - **12-16:** The enemy's stability is halved (EoT).
+> - **≤11:** Until the end of the enemy's next turn, their [stability](scc:mcdm.heroes.v1/rule.character/stability) is reduced to 0, and any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) effects targeting them gain a +2 bonus to the distance moved.
+> - **12-16:** The enemy's [stability](scc:mcdm.heroes.v1/rule.character/stability) is halved (EoT).
 > - **17+:** No effect.
 
 <!-- @type: statblock -->
@@ -10237,7 +10237,7 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the cryptic can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the cryptic can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The cryptic can take two turns each round. They can't take turns consecutively.
 
@@ -10247,7 +10247,7 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 
 > ⭐️ **Seismic Step**
 >
-> The cryptic ignores difficult terrain. Additionally, they have line of effect to any creature with concealment if that creature is touching the ground.
+> The cryptic ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Additionally, they have line of effect to any creature with concealment if that creature is touching the ground.
 
 > 🗡 **Sand Slam (Signature Ability)**
 >
@@ -10257,11 +10257,11 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; A < 1 slide 2
-> - **12-16:** 12 damage; A < 2 slide 2, prone
-> - **17+:** 15 damage; A < 3 slide 3, prone and can't stand (EoT)
+> - **≤11:** 8 damage; A < 1 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 12 damage; A < 2 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 15 damage; A < 3 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3, [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
 >
-> **Effect:** If a target made prone this way is already prone, they are instead restrained (EoT).
+> **Effect:** If a target made [prone](scc:mcdm.heroes.v1/condition/prone) this way is already [prone](scc:mcdm.heroes.v1/condition/prone), they are instead [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT).
 
 > 🔳 **Stone Bone Storm**
 >
@@ -10271,9 +10271,9 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 damage; M < 1 push 2
-> - **12-16:** 7 damage; M < 2 prone
-> - **17+:** 10 damage; M < 3 prone
+> - **≤11:** 4 damage; M < 1 [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 7 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 10 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
 > **Effect:** The cryptic reforms their body and appears in an unoccupied space in the area.
 
@@ -10283,11 +10283,11 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 > |-----------------|--------------------------------------------:|
 > | **📏 Ranged 5** | **🎯 One creature or object on the ground** |
 >
-> **Effect:** The cryptic slides the target up to 3 squares.
+> **Effect:** The cryptic [slides](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 3 squares.
 >
-> **2 Malice:** The ability targets one additional target.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability targets one additional target.
 
-> ❗️ **Dissipate (1 Malice)**
+> ❗️ **Dissipate (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -10295,9 +10295,9 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Trigger:** The cryptic takes damage.
 >
-> **Effect:** The cryptic halves the damage, ignores any nondamaging effects associated with it, and shifts up to 3 squares.
+> **Effect:** The cryptic halves the damage, ignores any nondamaging effects associated with it, and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares.
 
-> ❗️ **Shatterstone (5 Malice)**
+> ❗️ **Shatterstone (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |          **Triggered action** |
 > |----------------|------------------------------:|
@@ -10309,11 +10309,11 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 damage; push 2
-> - **12-16:** 7 damage; push 3, prone
-> - **17+:** 10 damage; push 4, prone
+> - **≤11:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4, [prone](scc:mcdm.heroes.v1/condition/prone)
 
-> ☠️ **First Warning Quake (Villain Action 1)**
+> ☠️ **First Warning Quake ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                         **-** |
 > |-----------------|------------------------------:|        
@@ -10323,11 +10323,11 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Effect:** Each target makes a **Might test**.
 >
-> - **≤11:** Prone and can't stand (EoT)
-> - **12-16:** Prone
+> - **≤11:** [Prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
+> - **12-16:** [Prone](scc:mcdm.heroes.v1/condition/prone)
 > - **17+:** No effect
 
-> ☠️ **Final Warning Fissure (Villain Action 2)**
+> ☠️ **Final Warning Fissure ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**       |                         **-** |
 > |----------------|------------------------------:|
@@ -10335,13 +10335,13 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 >
 > **Special:** A target must be on the ground.
 >
-> **Effect:** The area drops 2 squares and is difficult terrain. Each target enemy falls, while each target ally drops safely. Additionally, each target enemy makes an **Agility test**.
+> **Effect:** The area drops 2 squares and is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Each target enemy falls, while each target ally drops safely. Additionally, each target enemy makes an **Agility test**.
 >
-> - **≤11:** 9 damage; prone
+> - **≤11:** 9 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 > - **12-16:** 5 damage
 > - **17+:** The target moves to the nearest unoccupied space outside the area.
 
-> ☠️ **No Escape (Villain Action 3)**
+> ☠️ **No Escape ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 > 
 > | **Ranged**       |                           **-** |
 > |------------------|--------------------------------:|
@@ -10351,17 +10351,17 @@ At the start of a fossil cryptic's turn, you can spend Malice to activate one of
 > 
 > **Power Roll + 3:**
 > 
-> - **≤11:** 5 damage; prone; M < 1 restrained (save ends)
-> - **12-16:** 9 damage; prone; M < 2 restrained (save ends)
-> - **17+:** 12 damage; prone; M < 3 restrained (save ends)
+> - **≤11:** 5 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 9 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 12 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 > 
 > The cryptic then makes a second power roll that raises stone pillars from the floor (**📏 Ranged 10** | **🎯 Two creatures or objects on the ground**)
 > 
 > **Power Roll + 3:**
 > 
-> - **≤11:** 2 damage; vertical slide 2
-> - **12-16:** 3 damage; vertical slide 4
-> - **17+:** 4 damage; vertical slide 6; if this movement brings the target into contact with the ceiling, they are restrained (save ends).
+> - **≤11:** 2 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 3 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 4 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 6; if this movement brings the target into contact with the ceiling, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 <!-- @type: monster | @category: giants -->
 ## Giants
@@ -10407,9 +10407,9 @@ Most giants speak their kind's dialect of High Kuric. Many hill giants also know
 <!-- @type: featureblock -->
 ######### Giant Malice (Malice Features)
 
-At the start of any giant's turn, you can spend Malice to activate one of the following features.
+At the start of any giant's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Hurl Landscape (3 Malice)**
+> 🔳 **Hurl Landscape (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon** |               **Main action** |
 > |--------------------------|------------------------------:|
@@ -10417,21 +10417,21 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A giant unearths a structure, hazard, or chunk of the encounter map and launches it to fill the area. Each target makes an **Agility test**.
 >
-> - **≤11:** 18 damage; prone and can't stand (save ends)
-> - **12-16:** 14 damage; prone
+> - **≤11:** 18 damage; [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **12-16:** 14 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 > - **17+:** 9 damage
 
-> ❇️ **Bellow (5 Malice)**
+> ❇️ **Bellow (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each giant in the encounter takes a deep breath and yells, pushing each creature within 3 squares of them up to 10 squares. A creature who can be pushed by more than one giant is pushed by one giant of your choice.
+> Each giant in the encounter takes a deep breath and yells, [pushing](scc:mcdm.heroes.v1/movement/forced-movement) each creature within 3 squares of them up to 10 squares. A creature who can be pushed by more than one giant is pushed by one giant of your choice.
 
-> 🔳 **Titanic Tear (7 Malice)**
+> 🔳 **Titanic Tear (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A giant creates a fissure along the ground, either in a 15 x 2 line within 1 or a 10 x 3 line within 2, and that opens up to a depth of 6 squares. Each giant in the area can shift into the nearest unoccupied space outside the fissure. Each non-giant in the area makes an **Agility test**.
+> A giant creates a fissure along the ground, either in a 15 x 2 line within 1 or a 10 x 3 line within 2, and that opens up to a depth of 6 squares. Each giant in the area can [shift](scc:mcdm.heroes.v1/movement/shifting) into the nearest unoccupied space outside the fissure. Each non-giant in the area makes an **Agility test**.
 >
-> - **≤11:** 10 damage; the target falls into the fissure, and is prone and can't stand (EoT)
-> - **12-16:** 10 damage; the target is prone and hanging onto the edge of the fissure
-> - **17+:** The target can shift into the nearest unoccupied space outside the fissure.
+> - **≤11:** 10 damage; the target falls into the fissure, and is [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
+> - **12-16:** 10 damage; the target is [prone](scc:mcdm.heroes.v1/condition/prone) and hanging onto the edge of the fissure
+> - **17+:** The target can [shift](scc:mcdm.heroes.v1/movement/shifting) into the nearest unoccupied space outside the fissure.
 
 <!-- @type: statblock -->
 ####### Fire Giant Fireballer
@@ -10451,14 +10451,14 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 4:**
 >
 > - **≤11:** 2 fire damage
-> - **12-16:** 5 fire damage; push 1
-> - **17+:** 6 fire damage; push 2
+> - **12-16:** 5 fire damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 6 fire damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
 > **Effect:** The fireballer can jump up to 4 squares before using this ability.
 
 > ⭐️ **Searing Skin**
 >
-> Whenever an adjacent enemy grabs the fireballer or uses a melee ability against them, that enemy takes 5 fire damage.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/condition/grabbed) the fireballer or uses a melee ability against them, that enemy takes 5 fire damage.
 
 <!-- @type: statblock -->
 ####### Frost Giant Snowblaster
@@ -10483,7 +10483,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Kingdom of Isolation**
 >
-> The snowblaster is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the snowblaster can't shift.
+> The snowblaster is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the snowblaster can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 <!-- @type: statblock -->
 ####### Hill Giant Mosstooth
@@ -10504,9 +10504,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 4 damage
 > - **12-16:** 7 damage
-> - **17+:** 8 damage; grabbed
+> - **17+:** 8 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The mosstooth can use a creature or object they have grabbed as a weapon for this ability, dealing an extra 5 damage to that creature or object and the target. They then end the grab and leave the creature or object prone in an unoccupied space adjacent to the target.
+> **Effect:** The mosstooth can use a creature or object they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) as a weapon for this ability, dealing an extra 5 damage to that creature or object and the target. They then end the grab and leave the creature or object [prone](scc:mcdm.heroes.v1/condition/prone) in an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
 > ⭐️ **Distracted**
 >
@@ -10529,9 +10529,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 3 damage; slide 2
-> - **12-16:** 6 damage; slide 3; A < 3 restrained (save ends)
-> - **17+:** 8 damage; slide 4; A < 4 restrained (save ends)
+> - **≤11:** 3 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 6 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 8 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; A < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Stonebreaker Flesh**
 >
@@ -10539,11 +10539,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Stone Steps**
 >
-> The sand stone giant ignores difficult terrain.
+> The sand stone giant ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Stone Swim**
 >
-> The sand stone giant can burrow through stone, but can't drag other creatures underground when they do so.
+> The sand stone giant can [burrow](scc:mcdm.heroes.v1/movement/burrow) through stone, but can't drag other creatures underground when they do so.
 
 <!-- @type: statblock -->
 ####### Basalt Stone Giant
@@ -10562,13 +10562,13 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; M < 2 slowed (save ends)
-> - **12-16:** 17 damage; M < 3 slowed (save ends)
-> - **17+:** 21 damage; M < 4 slowed (save ends)
+> - **≤11:** 12 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 17 damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 21 damage; M < 4 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If a target was already slowed, that condition continues but their speed is 0 until the end of their next turn.
+> **Effect:** If a target was already [slowed](scc:mcdm.heroes.v1/condition/slowed), that condition continues but their speed is 0 until the end of their next turn.
 
-> ⚔️ **Forked Knife (3 Malice)**
+> ⚔️ **Forked Knife (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Ranged, Strike, Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -10576,11 +10576,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 10 damage; A < 2 restrained (save ends)
-> - **12-16:** 16 damage; A < 3 restrained (save ends)
-> - **17+:** 20 damage; prone; A < 4 restrained (save ends)
+> - **≤11:** 10 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 16 damage; A < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 20 damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The knife lands in the target's square, and has 30 Stamina and damage immunity 5. Whenever the knife takes damage, it deals 4 sonic damage to each enemy within 3 squares. The knife lasts until the end of the encounter, and can't be picked up or manipulated.
+> **Effect:** The knife lands in the target's square, and has 30 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and damage immunity 5. Whenever the knife takes damage, it deals 4 sonic damage to each enemy within 3 squares. The knife lasts until the end of the encounter, and can't be picked up or manipulated.
 
 > 👤 **Cobblestone Shape**
 >
@@ -10588,7 +10588,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The basalt stone giant moves up to their speed. Each square that they leave during this move is difficult terrain for enemies. Giants ignore this difficult terrain.
+> **Effect:** The basalt stone giant moves up to their speed. Each square that they leave during this move is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Giants ignore this [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ❗️ **Resonate Rune**
 >
@@ -10598,7 +10598,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Trigger:** The basalt stone giant takes damage.
 >
-> **Effect:** The target is pushed up to 3 squares, or if they have A < 3, they are pushed up to 6 squares and knocked prone.
+> **Effect:** The target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares, or if they have A < 3, they are [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 6 squares and knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Stonebreaker Flesh**
 >
@@ -10606,11 +10606,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Stone Steps**
 >
-> The basalt stone giant ignores difficult terrain.
+> The basalt stone giant ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Stone Swim**
 >
-> The basalt stone giant can burrow through stone, but can't drag other creatures underground when they do so.
+> The basalt stone giant can [burrow](scc:mcdm.heroes.v1/movement/burrow) through stone, but can't drag other creatures underground when they do so.
 
 <!-- @type: statblock -->
 ####### Fire Giant Lightbearer
@@ -10633,7 +10633,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 17 fire damage; slide 4
 > - **17+:** 22 fire damage; slide 6
 
-> 🏹 **Living Blaze (3 Malice)**
+> 🏹 **Living Blaze (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -10653,7 +10653,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |-------------------|--------------------------------:|
 > | **📏 Ranged 5**   | **🎯 Two creatures or objects** |
 >
-> **Effect:** The lightbearer can target themself with this ability. Each target takes 1d6 fire damage and teleports in a plume of smoke to swap places with the other target.
+> **Effect:** The lightbearer can target themself with this ability. Each target takes 1d6 fire damage and [teleports](scc:mcdm.heroes.v1/movement/teleport) in a plume of smoke to swap places with the other target.
 
 > ❗️ **Emergency Beacon**
 >
@@ -10667,11 +10667,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Healing Heat**
 >
-> Any fire giant targeted by the lightbearer's damage-dealing abilities ignores the damage and instead regains Stamina equal to the damage that would have been dealt. If the lightbearer moves a fire giant using an ability, they can choose to ignore stability.
+> Any fire giant targeted by the lightbearer's damage-dealing abilities ignores the damage and instead regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage that would have been dealt. If the lightbearer moves a fire giant using an ability, they can choose to ignore [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
 > ⭐️ **Searing Skin**
 >
-> Whenever an adjacent enemy grabs the lightbearer or uses a melee ability against them, that enemy takes 5 fire damage.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/condition/grabbed) the lightbearer or uses a melee ability against them, that enemy takes 5 fire damage.
 
 <!-- @type: statblock -->
 ####### Fire Giant Red Fist
@@ -10690,13 +10690,13 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 14 fire damage; push 2
-> - **12-16:** 19 fire damage; push 4; A < 3 burning (save ends)
-> - **17+:** 23 fire damage; push 6; A < 4 burning (save ends)
+> - **≤11:** 14 fire damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 19 fire damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; A < 3 burning (save ends)
+> - **17+:** 23 fire damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6; A < 4 burning (save ends)
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
-> ❇️ **Caldera (5 Malice)**
+> ❇️ **Caldera (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Main action** |
 > |----------------|-----------------------------------------:|
@@ -10704,9 +10704,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** The distance is a 2 burst; 8 fire damage; M < 2 pull 2
-> - **12-16:** The distance is a 3 burst; 12 fire damage; M < 3 pull 4
-> - **17+:** The distance is a 4 burst; 15 fire damage; M < 4 pull 6
+> - **≤11:** The distance is a 2 burst; 8 fire damage; M < 2 [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** The distance is a 3 burst; 12 fire damage; M < 3 [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** The distance is a 4 burst; 15 fire damage; M < 4 [pull](scc:mcdm.heroes.v1/movement/forced-movement) 6
 >
 > **Effect:** The outermost squares of the area become a 1-square-tall wall of stone. The rest of the area is on fire until the end of the encounter. A creature who enters the area for the first time in a round or starts their turn there takes 3 fire damage.
 
@@ -10716,7 +10716,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The red fist jumps up to 5 squares. Each creature adjacent to them when they land takes 5 fire damage.
+> **Effect:** The red fist jumps up to 5 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them when they land takes 5 fire damage.
 
 > ❗️ **Heat and Pressure**
 >
@@ -10724,12 +10724,12 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |----------------|-------------------------------:|
 > | **📏 Melee 3** | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature within distance willingly moves or shifts away from the red fist.
+> **Trigger:** A creature within distance willingly moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) away from the red fist.
 >
 > **Effect:** The target makes a **Might test**. A target with fire immunity automatically obtains a tier 3 outcome.
 >
-> - **≤11:** Weakened and slowed (save ends)
-> - **12-16:** Weakened (EoT)
+> - **≤11:** [Weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** [Weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
 > - **17+:** No effect
 
 > ❗️ **Guardian Block**
@@ -10740,11 +10740,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Trigger:** An ally within distance is targeted by an enemy's ability.
 >
-> **Effect:** The red fist becomes the target of the triggering ability, then can make a free strike against the enemy after the ability resolves.
+> **Effect:** The red fist becomes the target of the triggering ability, then can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the enemy after the ability resolves.
 
 > ⭐️ **Searing Skin**
 >
-> Whenever an adjacent enemy grabs the red fist or uses a melee ability against them, that enemy takes 5 fire damage.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/condition/grabbed) the red fist or uses a melee ability against them, that enemy takes 5 fire damage.
 
 <!-- @type: statblock -->
 ####### Frost Giant Storm Hurler
@@ -10764,21 +10764,21 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 4:**
 >
 > - **≤11:** 13 cold damage
-> - **12-16:** 18 cold damage; M < 3 bleeding (save ends)
-> - **17+:** 22 cold damage; M < 4 bleeding (save ends)
+> - **12-16:** 18 cold damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 22 cold damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Whenever a creature bleeding this way takes damage from that condition, their speed decreases by 1 (to a minimum of 0) until that condition ends.
+> **Effect:** Whenever a creature [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way takes damage from that condition, their speed decreases by 1 (to a minimum of 0) until that condition ends.
 
-> 🏹 **Flower of Frost (3 Malice)**
+> 🏹 **Flower of Frost (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** | **Main action** |
 > |-------------------|----------------:|
 > | **📏 Ranged 15**  |  **🎯 Special** |
 >
-> **Effect:** The storm hurler throws three size 1L ice javelins into unoccupied squares within distance. Each javelin has 30 Stamina and fire weakness 5. At the start of the storm hurler's next turn, all javelins not destroyed explode in a shower of icicles. Each enemy and object within 3 squares of an exploding javelin makes an **Agility test**.
+> **Effect:** The storm hurler throws three size 1L ice javelins into unoccupied squares within distance. Each javelin has 30 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fire weakness 5. At the start of the storm hurler's next turn, all javelins not destroyed explode in a shower of icicles. Each enemy and object within 3 squares of an exploding javelin makes an **Agility test**.
 >
-> - **≤11:** 14 cold damage; push 4; bleeding (save ends)
-> - **12-16:** 11 cold damage; push 2; slowed (save ends)
+> - **≤11:** 14 cold damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 cold damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **17+:** 7 cold damage
 
 > 🗡 **Ice Dance**
@@ -10787,7 +10787,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |----------------|----------------------:|
 > | **📏 Melee 1** | **🎯 One giant ally** |
 >
-> **Effect:** The storm hurler and the target each shift up to 6 squares while staying adjacent to each other. The target can then jump up to 5 squares and make a free strike.
+> **Effect:** The storm hurler and the target each [shift](scc:mcdm.heroes.v1/movement/shifting) up to 6 squares while staying [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each other. The target can then jump up to 5 squares and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ❗️ **Frozen Retribution**
 >
@@ -10801,7 +10801,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Kingdom of Isolation**
 >
-> The storm hurler is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the storm hurler can't shift.
+> The storm hurler is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the storm hurler can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 <!-- @type: statblock -->
 ####### Frost Giant Wind Sprinter
@@ -10821,18 +10821,18 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 4:**
 >
 > - **≤11:** 12 damage
-> - **12-16:** 17 damage; A < 3 bleeding (save ends)
-> - **17+:** 21 damage; A < 4 bleeding (save ends)
+> - **12-16:** 17 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 21 damage; A < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** A target who is already bleeding takes an extra 1d6 cold damage.
+> **Effect:** A target who is already [bleeding](scc:mcdm.heroes.v1/condition/bleeding) takes an extra 1d6 cold damage.
 
-> 👤 **Blizzard Surge (5 Malice)**
+> 👤 **Blizzard Surge (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Main action** |
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** The wind sprinter shifts up to their speed and uses Cold Axe against each enemy who comes within 2 squares of them during the move. The wind sprinter makes one power roll against all targets.
+> **Effect:** The wind sprinter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and uses Cold Axe against each enemy who comes within 2 squares of them during the move. The wind sprinter makes one power roll against all targets.
 
 > 🗡 **Ice Dance**
 >
@@ -10840,7 +10840,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |----------------|----------------------:|
 > | **📏 Melee 1** | **🎯 One giant ally** |
 >
-> **Effect:** The wind sprinter and the target each shift up to 6 squares while staying adjacent to each other. The target can then jump up to 5 squares and make a free strike.
+> **Effect:** The wind sprinter and the target each [shift](scc:mcdm.heroes.v1/movement/shifting) up to 6 squares while staying [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each other. The target can then jump up to 5 squares and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ❗️ **Begone, Smallfolk!**
 >
@@ -10854,11 +10854,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Crush Underfoot**
 >
-> The wind sprinter can move through enemies' spaces at their usual speed. The first time on a turn that a wind sprinter enters a creature's space, that creature can choose to fall prone or to take 8 damage.
+> The wind sprinter can move through enemies' spaces at their usual speed. The first time on a turn that a wind sprinter enters a creature's space, that creature can choose to fall [prone](scc:mcdm.heroes.v1/condition/prone) or to take 8 damage.
 
 > ⭐️ **Kingdom of Isolation**
 >
-> The wind sprinter is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the wind sprinter can't shift.
+> The wind sprinter is surrounded by a snowstorm. Any enemy who starts their turn within 2 squares of the wind sprinter can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 <!-- @type: statblock -->
 ####### Granite Stone Giant
@@ -10878,12 +10878,12 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 4:**
 >
 > - **≤11:** 12 damage
-> - **12-16:** 17 damage; R < 3 weakened (save ends)
-> - **17+:** 21 damage; R < 4 weakened (save ends)
+> - **12-16:** 17 damage; R < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 21 damage; R < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** If the target is already weakened, they are also bleeding (save ends).
+> **Effect:** If the target is already [weakened](scc:mcdm.heroes.v1/condition/weakened), they are also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
-> ❇️ **Crag Burst (3 Malice)**
+> ❇️ **Crag Burst (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Main action** |
 > |----------------|-----------------------------------------:|
@@ -10891,11 +10891,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 6 damage; push 2
-> - **12-16:** 10 damage; push 4
-> - **17+:** 14 damage; vertical push 4
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 14 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** The area is difficult terrain. Whenever a creature enters square in the area, they take 3 damage.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Whenever a creature enters square in the area, they take 3 damage.
 
 > 👤 **Castle Stone Shape**
 >
@@ -10903,7 +10903,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The granite stone giant moves up to their speed and creates a 14 wall of stone in squares adjacent to the path of their movement.
+> **Effect:** The granite stone giant moves up to their speed and creates a 14 wall of stone in squares [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the path of their movement.
 
 > ❗️ **Pillar**
 >
@@ -10911,9 +10911,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 3** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object within distance moves or shifts away from the granite stone giant.
+> **Trigger:** A creature or object within distance moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) away from the granite stone giant.
 >
-> **Effect:** A 1-square pillar of stone rises 5 squares out of the ground beneath the target, who moves with the ground to its new elevation, then is vertical pushed 5 squares.
+> **Effect:** A 1-square pillar of stone rises 5 squares out of the ground beneath the target, who moves with the ground to its new elevation, then is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) 5 squares.
 
 > ⭐️ **Stonebreaker Flesh**
 >
@@ -10921,11 +10921,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Stone Steps**
 >
-> The granite stone giant ignores difficult terrain.
+> The granite stone giant ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Stone Swim**
 >
-> The granite stone giant can burrow through stone, but can't drag other creatures underground when they do so.
+> The granite stone giant can [burrow](scc:mcdm.heroes.v1/movement/burrow) through stone, but can't drag other creatures underground when they do so.
 
 <!-- @type: statblock -->
 ####### Hill Giant Clobberer
@@ -10945,12 +10945,12 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 4:**
 >
 > - **≤11:** 12 damage
-> - **12-16:** 17 damage; prone
-> - **17+:** 21 damage; prone
+> - **12-16:** 17 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 21 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** A target who is already prone takes an extra 12 damage.
+> **Effect:** A target who is already [prone](scc:mcdm.heroes.v1/condition/prone) takes an extra 12 damage.
 
-> 🗡 **Stomp (3 Malice)**
+> 🗡 **Stomp (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -10958,9 +10958,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 14 damage; prone
-> - **12-16:** 20 damage; prone; M < 3 can't stand (save ends)
-> - **17+:** 25 damage; prone; M < 4 can't stand (save ends)
+> - **≤11:** 14 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 20 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 3 can't stand (save ends)
+> - **17+:** 25 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 4 can't stand (save ends)
 >
 > **Effect:** In suitably soft ground, the target is entrenched in a 2-square deep hole.
 
@@ -10972,11 +10972,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Each target must make either a **Might test** or an **Agility test**.
 >
-> - **≤11:** 6 damage; vertical push 3
-> - **12-16:** 2 damage; vertical push 2
-> - **17+:** Push 2
+> - **≤11:** 6 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 2 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
-> **Effect:** The clobberer can choose to fall prone in order to double the forced movement distance.
+> **Effect:** The clobberer can choose to fall [prone](scc:mcdm.heroes.v1/condition/prone) in order to double the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance.
 
 > ❗️ **You Ain't Getting Away**
 >
@@ -10984,19 +10984,19 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |----------------|-------------------------------:|
 > | **📏 Melee 3** | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature within distance moves or shifts away from the clobberer.
+> **Trigger:** A creature within distance moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) away from the clobberer.
 >
 > **Effect:** The target makes an Agility test.
 >
-> - **≤11:** Grabbed, and the target takes a bane on the Escape Grab maneuver
-> - **12-16:** Grabbed
+> - **≤11:** [Grabbed](scc:mcdm.heroes.v1/condition/grabbed), and the target takes a bane on the Escape Grab maneuver
+> - **12-16:** [Grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 > - **17+:** No effect
 >
-> **2 Malice:** A target who would be grabbed by this ability is instead either vertical pushed up to 5 squares; or they take 5 damage, are knocked prone, and can't stand until the end of their next turn.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A target who would be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by this ability is instead either vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares; or they take 5 damage, are knocked [prone](scc:mcdm.heroes.v1/condition/prone), and can't stand until the end of their next turn.
 
 > ⭐️ **Destructive Path**
 >
-> The clobberer automatically destroys any mundane size 1 objects in their path when they move or are forced moved. They can break through any mundane wall made of wood, stone, or a similarly sturdy material this way as long as the wall is 2 squares thick or less.
+> The clobberer automatically destroys any mundane size 1 objects in their path when they move or are [forced moved](scc:mcdm.heroes.v1/movement/forced-movement). They can break through any mundane wall made of wood, stone, or a similarly sturdy material this way as long as the wall is 2 squares thick or less.
 
 > ⭐️ **Distracted**
 >
@@ -11019,13 +11019,13 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 6 damage; I < 2 dazed (save ends)
-> - **12-16:** 10 damage; I < 3 dazed (save ends)
-> - **17+:** 14 damage; I < 4 dazed (save ends)
+> - **≤11:** 6 damage; I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 10 damage; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 14 damage; I < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** If the target has any effect on them that can be ended by a saving throw or that ends at the end of their turn, they are also knocked prone.
+> **Effect:** If the target has any effect on them that can be ended by a saving throw or that ends at the end of their turn, they are also knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> 🗡 **Far Flung (3 Malice)**
+> 🗡 **Far Flung (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Weapon** |               **Main action** |
 > |-------------------|------------------------------:|
@@ -11033,11 +11033,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Vertical push 7
-> - **12-16:** Vertical push 10
-> - **17+:** Vertical push 12
+> - **≤11:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 7
+> - **12-16:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 10
+> - **17+:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 12
 >
-> **Effect:** Against a target who is prone or grabbed, this ability has a double edge.
+> **Effect:** Against a target who is [prone](scc:mcdm.heroes.v1/condition/prone) or [grabbed](scc:mcdm.heroes.v1/condition/grabbed), this ability has a double edge.
 
 > 🔳 **Polish Stone Shape**
 >
@@ -11045,9 +11045,9 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 > |-----------------------------|---------------:|
 > | **📏 10 x 2 line within 1** | **🎯 Special** |
 >
-> **Effect:** The ground in the area becomes slick and glossy. Any non-giant who starts or ends their turn in the area is knocked prone and slides 2 squares.
+> **Effect:** The ground in the area becomes slick and glossy. Any non-giant who starts or ends their turn in the area is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and [slides](scc:mcdm.heroes.v1/movement/forced-movement) 2 squares.
 
-> ❗️ **Break Armor (1 Malice)**
+> ❗️ **Break Armor (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -11063,11 +11063,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Stone Steps**
 >
-> The marble stone giant ignores difficult terrain.
+> The marble stone giant ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Stone Swim**
 >
-> The marble stone giant can burrow through stone, but can't drag other creatures underground when they do so.
+> The marble stone giant can [burrow](scc:mcdm.heroes.v1/movement/burrow) through stone, but can't drag other creatures underground when they do so.
 
 <!-- @type: statblock -->
 ####### Fire Giant Chief
@@ -11086,8 +11086,8 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Each target makes either an **Agility test** or an **Intuition test**.
 >
-> - **≤11:** 18 fire damage; prone; weakened (save ends)
-> - **12-16:** 14 fire damage; prone
+> - **≤11:** 18 fire damage; [prone](scc:mcdm.heroes.v1/condition/prone); [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 14 fire damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 > - **17+:** 9 fire damage
 
 > 🗡 **Burning Kick**
@@ -11098,11 +11098,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 14 damage; push 5; A < 3 9 fire damage
-> - **12-16:** 19 damage; push 10; A < 4 9 fire damage
-> - **17+:** 23 damage; push 15; A < 5 9 fire damage
+> - **≤11:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5; A < 3 9 fire damage
+> - **12-16:** 19 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 10; A < 4 9 fire damage
+> - **17+:** 23 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 15; A < 5 9 fire damage
 
-> 🔳 **Lava Pillar (3 Malice)**
+> 🔳 **Lava Pillar (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged**        |                             **Maneuver** |
 > |-------------------------|-----------------------------------------:|
@@ -11110,11 +11110,11 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 5 fire damage; M < 3 vertical push 3
-> - **12-16:** 7 fire damage; M < 4 vertical push 4
-> - **17+:** 9 fire damage; M < 5 vertical push 5
+> - **≤11:** 5 fire damage; M < 3 vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 7 fire damage; M < 4 vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 9 fire damage; M < 5 vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
 
-> ❗️ **Fuel the Fire (1 Malice)**
+> ❗️ **Fuel the Fire (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |       **Triggered action** |
 > |------------------|---------------------------:|
@@ -11124,23 +11124,23 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The strike has a double edge and deals an extra 10 fire damage.
 
-> ☠️ **Forward! (Villain Action 1)**
+> ☠️ **Forward! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
 > | **📏 10 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target shifts up to their speed and can make a free strike. Any enemy who takes damage from a free strike this way and who has A < 4 is burning (save ends). A burning enemy takes 1d6 fire damage at the start of each of their turns.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Any enemy who takes damage from a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) this way and who has A < 4 is burning (save ends). A burning enemy takes 1d6 fire damage at the start of each of their turns.
 
-> ☠️ **Burning Legion (Villain Action 2)**
+> ☠️ **Burning Legion ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Ranged**       |          **-** |
 > |------------------|---------------:|
 > | **📏 Ranged 15** | **🎯 Special** |
 >
-> **Effect:** The chief shifts up to 10 squares. Five fire giant fireballer then arrive in unoccupied spaces within distance.
+> **Effect:** The chief [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 10 squares. Five fire giant fireballer then arrive in unoccupied spaces within distance.
 
-> ☠️ **All to Cinders (Villain Action 3)**
+> ☠️ **All to Cinders ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**        |                                            **-** |
 > |-----------------|-------------------------------------------------:|
@@ -11154,7 +11154,7 @@ At the start of any giant's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Scorching Skin**
 >
-> Whenever an adjacent enemy grabs the chief or uses a melee ability against them, that enemy takes 9 fire damage, and if they have M < 4 they are weakened (save ends)
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/condition/grabbed) the chief or uses a melee ability against them, that enemy takes 9 fire damage, and if they have M < 4 they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 <!-- @type: monster | @category: gnolls -->
 ## Gnolls
@@ -11194,9 +11194,9 @@ When gnolls go into a frenzy and coordinate their individual Cackletongue maneuv
 <!-- @type: featureblock -->
 ######### Gnoll Malice (Malice Features)
 
-At the start of any gnoll's turn, you can spend Malice to activate one of the following features.
+At the start of any gnoll's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Iron Jaws (3 Malice)**
+> 🔳 **Iron Jaws (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon** |   **Maneuver** |
 > |--------------------------|---------------:|
@@ -11204,17 +11204,17 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A gnoll acting this turn drops an iron-jawed snare into the area. The first time any enemy moves into the area, they make an **Agility test**. If they were unaware of the snare, the test takes a bane.
 >
-> - **≤11:** 6 damage; bleeding (save ends)
-> - **12-16:** 4 damage; bleeding (EoT)
+> - **≤11:** 6 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 4 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 > - **17+:** No effect.
 >
-> **Effect:** While an enemy is bleeding this way, each gnoll in the encounter gains an edge on strikes made against them.
+> **Effect:** While an enemy is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, each gnoll in the encounter gains an edge on strikes made against them.
 
-> 👤 **Bloodpool (5 Malice)**
+> 👤 **Bloodpool (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One gnoll minion suddenly explodes into a pool of blood, splattering the area within 3 squares of them. Any gnoll who starts their turn in this area deals an extra 5 damage on their next strike before the end of their turn. Once per round, an abyssal hyena who starts their turn in the area turns into a **gnoll marauder**, keeping their current Stamina.
+> One gnoll [minion](scc:mcdm.monsters.v1/rule.organization/minion) suddenly explodes into a pool of blood, splattering the area within 3 squares of them. Any gnoll who starts their turn in this area deals an extra 5 damage on their next strike before the end of their turn. Once per round, an abyssal hyena who starts their turn in the area turns into a **gnoll marauder**, keeping their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> 🌀 **Echoes of Laughter (7 Malice)**
+> 🌀 **Echoes of Laughter (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the encounter, the encounter map is encased in a soundscape of laughter and howling. Each enemy takes a bane on the first power roll they make each round. Whenever a gnoll is killed, this effect is suppressed until the start of the next round.
 
@@ -11237,11 +11237,11 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 3 damage
 > - **12-16:** 4 damage
-> - **17+:** 6 damage; grabbed
+> - **17+:** 6 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 
 > ⭐️ **Death Snap**
 >
-> When the abyssal hyena is reduced to 0 Stamina, they can make a melee free strike before dying.
+> When the abyssal hyena is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 <!-- @type: statblock -->
 ####### Gnoll Chainflail
@@ -11261,12 +11261,12 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 2:**
 >
 > - **≤11:** 3 damage
-> - **12-16:** 4 damage; push 1
-> - **17+:** 6 damage; push 3
+> - **12-16:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
 
 > ⭐️ **Death Circle**
 >
-> Whenever a non-minion ally within 5 squares of the chainflail is reduced to 0 Stamina, the chainflail can move up to their speed.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the chainflail is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the chainflail can move up to their speed.
 
 <!-- @type: statblock -->
 ####### Gnoll Mage Mauler
@@ -11293,7 +11293,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Death Circle**
 >
-> Whenever a non-minion ally within 5 squares of the mage mauler is reduced to 0 Stamina, the mage mauler can move up to their speed.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the mage mauler is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the mage mauler can move up to their speed.
 
 <!-- @type: statblock -->
 ####### Gnoll Wildling
@@ -11314,11 +11314,11 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 2 damage
 > - **12-16:** 3 damage
-> - **17+:** 5 damage; the wildling can make a free strike against a creature adjacent to the target
+> - **17+:** 5 damage; the wildling can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target
 
 > ⭐️ **Death Circle**
 >
-> Whenever a non-minion ally within 7 squares of the wildling is reduced to 0 Stamina, the wildling can move up to their speed.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 7 squares of the wildling is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the wildling can move up to their speed.
 
 <!-- @type: statblock -->
 ####### Gnoll Abyssal Archer
@@ -11339,11 +11339,11 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 5 corruption damage
 > - **12-16:** 6 corruption damage
-> - **17+:** 8 corruption damage; M < 2 slowed (save ends)
+> - **17+:** 8 corruption damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** This ability gains an edge against any target not at full Stamina.
+> **Effect:** This ability gains an edge against any target not at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> ❇️ **Archer's Cackletongue (2 Malice)**
+> ❇️ **Archer's Cackletongue (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
@@ -11353,11 +11353,11 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Distant Death Frenzy**
 >
-> Whenever a non-minion ally within 5 squares of the abyssal archer is reduced to 0 Stamina, the abyssal archer can make a ranged free strike.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the abyssal archer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the abyssal archer can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ⭐️ **Bloodscent**
 >
-> The abyssal archer doesn't need line of effect to use their abilities against any creature who isn't at full Stamina, as long as a size 1 opening exists between the archer and the target.
+> The abyssal archer doesn't need line of effect to use their abilities against any creature who isn't at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), as long as a size 1 opening exists between the archer and the target.
 
 <!-- @type: statblock -->
 ####### Gnoll Abyssal Summoner
@@ -11382,7 +11382,7 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
-> 🏹 **Call Abyssal Hyenas (3 Malice)**
+> 🏹 **Call Abyssal Hyenas (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**      |   **Maneuver** |
 > |-----------------|---------------:|
@@ -11390,17 +11390,17 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Two abyssal hyenas claw up from the ground in unoccupied spaces within distance.
 
-> ❇️ **Summoner's Cackletongue (4 Malice)**
+> ❇️ **Summoner's Cackletongue (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                 **Maneuver** |
 > |----------------|-----------------------------:|
 > | **📏 2 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** One abyssal hyena target turns into a gnoll marauder, keeping their current Stamina. If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
+> **Effect:** One abyssal hyena target turns into a gnoll marauder, keeping their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
 
 > ⭐️ **Death Frenzy**
 >
-> Whenever a non-minion ally within 5 squares of the abyssal summoner is reduced to 0 Stamina, the abyssal summoner moves up to their speed and can make a melee free strike.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the abyssal summoner is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the abyssal summoner moves up to their speed and can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: statblock -->
 ####### Gnoll Bonesplitter
@@ -11419,23 +11419,23 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; push 2
-> - **12-16:** 6 damage; push 2
-> - **17+:** 8 damage; grabbed; M < 2 the target takes a bane on the Escape Grab maneuver
+> - **≤11:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 8 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed); M < 2 the target takes a bane on the Escape Grab maneuver
 >
-> **Effect:** While the bonesplitter has a target grabbed, they can't use Three-Tail Flail against another target.
+> **Effect:** While the bonesplitter has a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed), they can't use Three-Tail Flail against another target.
 
-> ❇️ **Bonesplitter's Cackletongue (4 Malice)**
+> ❇️ **Bonesplitter's Cackletongue (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
 > | **📏 2 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Up to three targets can make a free strike. If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
+> **Effect:** Up to three targets can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
 
 > ⭐️ **Death Frenzy**
 >
-> Whenever a non-minion ally within 5 squares of the bonesplitter is reduced to 0 Stamina, the bonesplitter moves up to their speed and can make a melee free strike.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the bonesplitter is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the bonesplitter moves up to their speed and can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: statblock -->
 ####### Gnoll Cackler
@@ -11454,13 +11454,13 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 psychic damage; I < 0 the target makes a free strike against a creature of the cackler's choice
-> - **12-16:** 5 psychic damage; I < 1 the target makes a free strike against a creature of the cackler's choice
+> - **≤11:** 4 psychic damage; I < 0 the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of the cackler's choice
+> - **12-16:** 5 psychic damage; I < 1 the target makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature of the cackler's choice
 > - **17+:** 7 psychic damage; I < 2 the target uses a signature ability against a creature of the cackler's choice
 >
-> **Effect:** An ally targeted by this ability ignores the damage and can make a free strike.
+> **Effect:** An ally targeted by this ability ignores the damage and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ❇️ **Cackler's Cackletongue (4 Malice)**
+> ❇️ **Cackler's Cackletongue (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                     **Maneuver** |
 > |-----------------|---------------------------------:|
@@ -11468,13 +11468,13 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Each enemy target makes an **Intuition test**. If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
 >
-> - **≤11:** Frightened (save ends)
-> - **12-16:** Frightened (EoT)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
 > - **17+:** No effect
 
 > ⭐️ **Death Frenzy**
 >
-> Whenever a non-minion ally within 5 squares of the cackler is reduced to 0 Stamina, the cackler moves up to their speed and can make a melee free strike.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the cackler is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the cackler moves up to their speed and can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: statblock -->
 ####### Gnoll Marauder
@@ -11495,21 +11495,21 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 4 damage
 > - **12-16:** 5 damage
-> - **17+:** 7 damage; prone; A < 2 bleeding (save ends)
+> - **17+:** 7 damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **2+ Malice:** This ability targets one additional target for each 2 Malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target for each 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
-> ❇️ **Marauder's Cackletongue (3 Malice)**
+> ❇️ **Marauder's Cackletongue (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
 > | **📏 2 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target shifts up to their speed. If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. If any target hasn't used their own Cackletongue maneuver on this turn, they can use it immediately at no cost.
 
 > ⭐️ **Death Frenzy**
 >
-> Whenever a non-minion ally within 7 squares of the marauder is reduced to 0 Stamina, the marauder moves up to their speed and can make a melee free strike.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 7 squares of the marauder is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the marauder moves up to their speed and can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: statblock -->
 ####### Tusker Demon
@@ -11528,9 +11528,9 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 1
-> - **12-16:** 11 damage; push 2
-> - **17+:** 14 damage; push 3, prone
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3, [prone](scc:mcdm.heroes.v1/condition/prone)
 >
 > **Effect:** If this ability is used as part of the Charge main action, it deals an extra 4 damage.
 
@@ -11546,11 +11546,11 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Trample**
 >
-> The tusker demon can move through enemies' spaces at their usual speed. When the tusker enters a creature's space for the first time on a turn, that creature takes 5 damage. The tusker demon can end their turn in a prone size 1 creature's space, preventing the creature from standing up.
+> The tusker demon can move through enemies' spaces at their usual speed. When the tusker enters a creature's space for the first time on a turn, that creature takes 5 damage. The tusker demon can end their turn in a [prone](scc:mcdm.heroes.v1/condition/prone) size 1 creature's space, preventing the creature from standing up.
 
 > ⭐️ **Lethe**
 >
-> While the tusker demon is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the tusker demon is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an edge on strikes, and any strike made against them gains an edge.
 
 <!-- @type: statblock -->
 ####### Gnoll Carnage
@@ -11569,13 +11569,13 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; A < 1 bleeding (save ends)
-> - **12-16:** 11 damage; A < 2 bleeding (save ends)
-> - **17+:** 14 damage; A < 3 bleeding and dazed (save ends)
+> - **≤11:** 8 damage; A < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 14 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** An ally targeted by this ability ignores the damage and can make a free strike.
+> **Effect:** An ally targeted by this ability ignores the damage and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ❇️ **Carnage's Cackletongue (4 Malice)**
+> ❇️ **Carnage's Cackletongue (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                          **Maneuver** |
 > |----------------|--------------------------------------:|
@@ -11585,17 +11585,17 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Death Rampage**
 >
-> Whenever a non-minion ally within 5 squares of the carnage is reduced to 0 Stamina, the carnage can move up to their speed, then can either make a melee free strike against two creatures or use Shrapnel Whip against one creature.
+> Whenever a non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally within 5 squares of the carnage is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the carnage can move up to their speed, then can either make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against two creatures or use Shrapnel Whip against one creature.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
 > At the end of each of their turns, the carnage can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 
 > ⭐️ **Endless Hunger**
 >
-> If the carnage is reduced to 0 Stamina while there are still gnolls on the encounter map, one gnoll on the map is transformed into a gnoll carnage, keeping their current Stamina.
+> If the carnage is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) while there are still gnolls on the encounter map, one gnoll on the map is transformed into a gnoll carnage, keeping their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> ☠️ **Call Up From the Abyss (Villain Action 1)**
+> ☠️ **Call Up From the Abyss ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Magic, Ranged** |          **-** |
 > |-------------------|---------------:|
@@ -11603,27 +11603,27 @@ At the start of any gnoll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The carnage summons four abyssal hyenas into unoccupied spaces within distance.
 
-> ☠️ **Edacity (Villain Action 2)**
+> ☠️ **Edacity ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**        |                        **-** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Self and three allies** |
 >
-> **Effect:** Each target moves up to their speed and can make a free strike. Any creature damaged by one of these free strikes who has M < 2 is knocked prone.
+> **Effect:** Each target moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Any creature damaged by one of these [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) who has M < 2 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> ☠️ **Deepest Wounds (Villain Action 3)**
+> ☠️ **Deepest Wounds ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                                **-** |
 > |-----------------|-------------------------------------:|
-> | **📏 5 burst**  | **🎯 Each winded enemy in the area** |
+> | **📏 5 burst**  | **🎯 Each [winded](scc:mcdm.heroes.v1/rule.health/winded) enemy in the area** |
 >
 > **Effect:** The carnage's eyes and all exposed blood within distance glow bright red. Each target makes a **Presence test**.
 >
-> - **≤11:** The target can't regain Stamina until the end of the encounter.
-> - **12-16:** The target can't regain Stamina (save ends).
+> - **≤11:** The target can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) until the end of the encounter.
+> - **12-16:** The target can't regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) (save ends).
 > - **17+:** No effect
 >
-> **Effect:** Until the end of the encounter, all gnolls have a double edge on power rolls that target a winded enemy.
+> **Effect:** Until the end of the encounter, all gnolls have a double edge on power rolls that target a [winded](scc:mcdm.heroes.v1/rule.health/winded) enemy.
 
 <!-- @type: monster | @category: goblins -->
 ## Goblins
@@ -11639,22 +11639,22 @@ Whether within a society or living in exile, goblins survive and thrive because 
 <!-- @type: featureblock -->
 ######### Goblin Malice (Malice Features)
 
-At the start of any goblin's turn, you can spend Malice to activate one of the following features.
+At the start of any goblin's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Goblin Mode (3 Malice)**
+> ⭐️ **Goblin Mode (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each goblin in the encounter gains a +2 bonus to speed until the end of the round.
 
-> ❇️ **Tiny Stabs (5 Malice)**
+> ❇️ **Tiny Stabs (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each enemy in the encounter takes 1 damage for each goblin adjacent to them.
+> Each enemy in the encounter takes 1 damage for each goblin [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
-> 🌀 **Swamp Stink (7 Malice)**
+> 🌀 **Swamp Stink (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The encounter map is covered in a green mist that lasts until the end of the round, and which can't be dispersed by wind. All areas of the map are difficult terrain for non-goblins, and each non-goblin on the map makes a **Might test**.
+> The encounter map is covered in a green mist that lasts until the end of the round, and which can't be dispersed by wind. All areas of the map are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for non-goblins, and each non-goblin on the map makes a **Might test**.
 >
-> - **≤11:** 5 poison damage; the creature is weakened until the mist disappears.
-> - **12-16:** The creature is weakened until the mist disappears.
+> - **≤11:** 5 poison damage; the creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) until the mist disappears.
+> - **12-16:** The creature is [weakened](scc:mcdm.heroes.v1/condition/weakened) until the mist disappears.
 > - **17+:** No effect.
 
 #### Mobile and Sneaky
@@ -11704,7 +11704,7 @@ Most goblins speak Caelian and Szetch.
 
 > ⭐️ **Crafty**
 >
-> The runner doesn't provoke opportunity attacks by moving.
+> The runner doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Sniper
@@ -11731,7 +11731,7 @@ Most goblins speak Caelian and Szetch.
 
 > ⭐️ **Crafty**
 >
-> The sniper doesn't provoke opportunity attacks by moving.
+> The sniper doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Spinecleaver
@@ -11750,13 +11750,13 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; push 1
-> - **12-16:** 4 damage; push 3
-> - **17+:** 5 damage; push 4
+> - **≤11:** 2 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 
 > ⭐️ **Crafty**
 >
-> The spinecleaver doesn't provoke opportunity attacks by moving.
+> The spinecleaver doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Skitterling
@@ -11804,7 +11804,7 @@ Most goblins speak Caelian and Szetch.
 >
 > **Effect:** If this ability gains an edge or has a double edge, it deals an extra 2 damage.
 
-> 🏹 **Shadow Chains (3 Malice)**
+> 🏹 **Shadow Chains (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |        **Main action** |
 > |---------------------------|-----------------------:|
@@ -11812,13 +11812,13 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 corruption damage; A < 0 restrained (save ends)
-> - **12-16:** 4 corruption damage; A < 1 restrained (save ends)
-> - **17+:** 5 corruption damage; A < 2 restrained (save ends)
+> - **≤11:** 2 corruption damage; A < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 4 corruption damage; A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 5 corruption damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Crafty**
 >
-> The assassin doesn't provoke opportunity attacks by moving.
+> The assassin doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 > ⭐️ **Slip Away**
 >
@@ -11841,11 +11841,11 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 corruption damage; I < 0 weakened (save ends)
-> - **12-16:** 4 corruption damage; I < 1 weakened (save ends)
-> - **17+:** 5 corruption damage; I < 2 weakened (save ends)
+> - **≤11:** 3 corruption damage; I < 0 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 4 corruption damage; I < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 5 corruption damage; I < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
-> 🏹 **Dizzying Hex (1 Malice)**
+> 🏹 **Dizzying Hex (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |        **Maneuver** |
 > |---------------------------|--------------------:|
@@ -11853,13 +11853,13 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** I < 0 prone
-> - **12-16:** I < 1 prone and can't stand (EoT)
-> - **17+:** Prone; I < 2 can't stand (save ends)
+> - **≤11:** I < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** I < 1 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
+> - **17+:** [Prone](scc:mcdm.heroes.v1/condition/prone); I < 2 can't stand (save ends)
 
 > ⭐️ **Crafty**
 >
-> The cursespitter doesn't provoke opportunity attacks by moving.
+> The cursespitter doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Stinker
@@ -11878,11 +11878,11 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 poison damage; slide 1
-> - **12-16:** 2 poison damage; slide 2
-> - **17+:** 3 poison damage; slide 3
+> - **≤11:** 1 poison damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 2 poison damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 3 poison damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **1+ Malice:** For each Malice spent, one target can be force moved 1 additional square.
+> **1+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** For each [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent, one target can be [force moved](scc:mcdm.heroes.v1/movement/forced-movement) 1 additional square.
 
 > 🔳 **Swamp Gas**
 >
@@ -11890,11 +11890,11 @@ Most goblins speak Caelian and Szetch.
 > |-------------------------|---------------:|
 > | **📏 3 cube within 10** | **🎯 Special** |
 >
-> **Effect:** The area is filled with a green haze that lasts until the start of the stinker's next turn or until the stinker is reduced to 0 Stamina, and which can't be dispersed by wind. The area is difficult terrain for non-goblins, and each non-goblin who moves in the area takes 2 poison damage for each square moved.
+> **Effect:** The area is filled with a green haze that lasts until the start of the stinker's next turn or until the stinker is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and which can't be dispersed by wind. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for non-goblins, and each non-goblin who moves in the area takes 2 poison damage for each square moved.
 
 > ⭐️ **Crafty**
 >
-> The stinker doesn't provoke opportunity attacks by moving.
+> The stinker doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Underboss
@@ -11917,7 +11917,7 @@ Most goblins speak Caelian and Szetch.
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** One ally adjacent to the target can make a free strike against them.
+> **Effect:** One ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ❇️ **Get Reckless!**
 >
@@ -11927,11 +11927,11 @@ Most goblins speak Caelian and Szetch.
 >
 > **Effect:** Until the start of the underboss's next turn, each target gains an edge on strikes, and any strike made against a target gains an edge.
 >
-> **2 Malice:** Strikes made against targets no longer gain an edge.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Strikes made against targets no longer gain an edge.
 
 > ⭐️ **Crafty**
 >
-> The underboss doesn't provoke opportunity attacks by moving.
+> The underboss doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Warrior
@@ -11954,7 +11954,7 @@ Most goblins speak Caelian and Szetch.
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 
-> 🗡 **Bury the Point (2 Malice)**
+> 🗡 **Bury the Point (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -11962,13 +11962,13 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; M < 0 bleeding (save ends)
-> - **12-16:** 6 damage; M < 1 bleeding (save ends)
-> - **17+:** 7 damage; M < 2 bleeding (save ends)
+> - **≤11:** 5 damage; M < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 6 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 7 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **Crafty**
 >
-> The warrior doesn't provoke opportunity attacks by moving.
+> The warrior doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
 <!-- @type: statblock -->
 ####### Goblin Monarch
@@ -11991,9 +11991,9 @@ Most goblins speak Caelian and Szetch.
 > - **12-16:** 10 damage
 > - **17+:** 13 damage
 >
-> **Effect:** One ally within 10 squares of the monarch can make a free strike.
+> **Effect:** One ally within 10 squares of the monarch can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> 🏹 **Get in Here! (1 Malice)**
+> 🏹 **Get in Here! (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |   **Maneuver** |
 > |------------------|---------------:|
@@ -12013,21 +12013,21 @@ Most goblins speak Caelian and Szetch.
 
 > ⭐️ **Crafty**
 >
-> The monarch doesn't provoke opportunity attacks by moving.
+> The monarch doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
 > At the end of each of their turns, the monarch can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 
-> ☠️ **What Are You Waiting For? (Villain Action 1)**
+> ☠️ **What Are You Waiting For? ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                        **-** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target can move up to their speed or make a free strike.
+> **Effect:** Each target can move up to their speed or make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ☠️ **Focus Fire (Villain Action 2)**
+> ☠️ **Focus Fire ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Ranged**       |                      **-** |
 > |------------------|---------------------------:|
@@ -12035,13 +12035,13 @@ Most goblins speak Caelian and Szetch.
 >
 > **Effect:** Each ally within 10 squares of the target can move up to their speed toward the target.
 
-> ☠️ **Kill! (Villain Action 3)**
+> ☠️ **Kill! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**          |          **-** |
 > |----------------|---------------:|
 > | **📏 Special** | **🎯 Special** |
 >
-> **Effect:** Each enemy in the encounter takes 2 damage for each goblin adjacent to them.
+> **Effect:** Each enemy in the encounter takes 2 damage for each goblin [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 <!-- @type: statblock -->
 ####### War Spider
@@ -12062,9 +12062,9 @@ Most goblins speak Caelian and Szetch.
 >
 > - **≤11:** 7 poison damage
 > - **12-16:** 11 poison damage
-> - **17+:** 14 poison damage; M < 2 weakened (save ends)
+> - **17+:** 14 poison damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** For any tier outcome, if the target has M < 3, they are weakened (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** For any tier outcome, if the target has M < 3, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 > 🗡 **Leg Blade**
 >
@@ -12078,13 +12078,13 @@ Most goblins speak Caelian and Szetch.
 > - **12-16:** 9 damage
 > - **17+:** 12 damage
 
-> 👤 **Trample (5 Malice)**
+> 👤 **Trample (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-** | **Main action** |
 > | --- | ---:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The spider shifts up to their speed and uses Leg Blade against each creature who comes adjacent to them during the shift. The spider makes one power roll against all targets.
+> **Effect:** The spider [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and uses Leg Blade against each creature who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them during the shift. The spider makes one power roll against all targets.
 
 > 🔳 **Web**
 >
@@ -12094,11 +12094,11 @@ Most goblins speak Caelian and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** A < 0 restrained (save ends)
-> - **12-16:** A < 1 restrained (save ends)
-> - **17+:** A < 2 restrained (save ends)
+> - **≤11:** A < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 
 > ❗️ **Skitter**
 >
@@ -12108,7 +12108,7 @@ Most goblins speak Caelian and Szetch.
 >
 > **Trigger:** The spider or any ally riding the spider takes damage.
 >
-> **Effect:** The damage is halved, and the spider shifts up to 2 squares after the triggering effect resolves.
+> **Effect:** The damage is halved, and the spider [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after the triggering effect resolves.
 
 > ⭐️ **Ride Launcher**
 >
@@ -12139,7 +12139,7 @@ Most goblins speak Caelian and Szetch.
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 
-> 👤 **Sprint (1 Malice)**
+> 👤 **Sprint (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
@@ -12177,27 +12177,27 @@ Griffons come in many varieties. While the most common griffon is the leonine ea
 <!-- @type: featureblock -->
 ######### Griffon Malice (Malice Features)
 
-At the start of any griffon's turn, you can spend Malice to activate one of the following features.
+At the start of any griffon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 👤 **Swoop (3 Malice)**
+> 👤 **Swoop (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The griffon flies up to their speed, and can make a free strike against each creature who makes an opportunity attack against them during this movement.
+> **Effect:** The griffon flies up to their speed, and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each creature who makes an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against them during this movement.
 
-> ❇️ **Piercing Cry (5 Malice)**
+> ❇️ **Piercing Cry (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > A griffon acting this turn unleashes a hideous screech at one enemy within 5 squares of them, forcing that creature to make an **Intuition test**.
 >
-> - **≤11:** Frightened (save ends)
-> - **12-16:** Frightened (EoT)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
 > - **17+:** No effect.
 
-> 🌀 **Wildwinds (10 Malice)**
+> 🌀 **Wildwinds (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Winds bluster and blow across the encounter map. Until the end of the encounter, each creature who can't fly or isn't mounted on a flying creature takes a −3 penalty to stability, and any forced movement effect targeting such a creature moves them an additional 5 squares.
+> Winds bluster and blow across the encounter map. Until the end of the encounter, each creature who can't fly or isn't mounted on a flying creature takes a −3 penalty to [stability](scc:mcdm.heroes.v1/rule.character/stability), and any [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) effect targeting such a creature moves them an additional 5 squares.
 
 <!-- @type: statblock -->
 ####### Griffon
@@ -12216,11 +12216,11 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; the griffon can shift 1 square
-> - **12-16:** 10 damage; the griffon shifts up to 2 squares
-> - **17+:** 13 damage; the griffon shifts up to 3 squares
+> - **≤11:** 7 damage; the griffon can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 10 damage; the griffon [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
+> - **17+:** 13 damage; the griffon [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 >
-> **Effect:** If this ability is used as part of the Charge main action, the griffon can grab one of the targets.
+> **Effect:** If this ability is used as part of the Charge main action, the griffon can [grab](scc:mcdm.heroes.v1/condition/grabbed) one of the targets.
 
 > 🔳 **Crack the Earth**
 >
@@ -12228,17 +12228,17 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 > |------------------------|------------------------------:|
 > | **📏 3 cube within 8** | **🎯 Each enemy in the area** |
 >
-> **Special:** The griffon must be flying and must have a creature or object grabbed.
+> **Special:** The griffon must be flying and must have a creature or object [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 >
-> **Effect:** The griffon flies up to half their speed toward the ground, then sends the creature or object they've grabbed hurtling down. The creature or object hits the ground to turn the area into an impact crater, and takes falling damage that can't be reduced in any way.
+> **Effect:** The griffon flies up to half their speed toward the ground, then sends the creature or object they've [grabbed](scc:mcdm.heroes.v1/condition/grabbed) hurtling down. The creature or object hits the ground to turn the area into an impact crater, and takes falling damage that can't be reduced in any way.
 >
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; A < 1 push 3
-> - **17+:** 9 damage; A < 2 push 4; prone
+> - **12-16:** 6 damage; A < 1 [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 9 damage; A < 2 [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; [prone](scc:mcdm.heroes.v1/condition/prone)
 
-> 🔳 **Wing Buffet (3 Malice)**
+> 🔳 **Wing Buffet (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**                   |                               **Maneuver** |
 > |----------------------------|-------------------------------------------:|
@@ -12248,11 +12248,11 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** Push 3; A < 0 the forced movement is vertical
-> - **12-16:** Push 4; A < 1 the forced movement is vertical
-> - **17+:** Push 5; A < 2 the forced movement is vertical
+> - **≤11:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 0 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
+> - **12-16:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 4; A < 1 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 5; A < 2 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
 
-> ❗️ **Zephyr Feint (1 Malice)**
+> ❗️ **Zephyr Feint (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -12260,15 +12260,15 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Trigger:** The griffon takes damage.
 >
-> **Effect:** The griffon halves the damage, ignores any nondamaging effects associated with it, and shifts up to 2 squares.
+> **Effect:** The griffon halves the damage, ignores any nondamaging effects associated with it, and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > ⭐️ **Beast of Prey**
 >
-> While grabbed by the griffon, a creature has a double bane on the Escape Grab maneuver.
+> While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the griffon, a creature has a double bane on the Escape Grab maneuver.
 
 > ⭐️ **Steady**
 >
-> Any power roll that could knock the griffon or their rider prone takes a bane.
+> Any power roll that could knock the griffon or their rider [prone](scc:mcdm.heroes.v1/condition/prone) takes a bane.
 
 <!-- @type: statblock -->
 ####### Striped Condor Griffon
@@ -12287,19 +12287,19 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 1
-> - **12-16:** 11 damage; one target is pushed up to 2 squares; the other target is vertical pushed up to 2 squares
-> - **17+:** 14 damage; one target is pushed up to 2 squares and knocked prone; the other target is vertical pushed up to 3 squares
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 11 damage; one target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares; the other target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares
+> - **17+:** 14 damage; one target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares and knocked [prone](scc:mcdm.heroes.v1/condition/prone); the other target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares
 
-> 👤 **Bound Ahead (5 Malice)**
+> 👤 **Bound Ahead (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Main action** |
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** The griffon shifts up to their speed along the ground in straight line. Each enemy who comes adjacent to the griffon during this shift can choose to either take 5 damage or be knocked prone.
+> **Effect:** The griffon [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed along the ground in straight line. Each enemy who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the griffon during this shift can choose to either take 5 damage or be knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> 🔳 **Power Wing Buffet (3 Malice)**
+> 🔳 **Power Wing Buffet (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**                   |                               **Maneuver** |
 > |----------------------------|-------------------------------------------:|
@@ -12307,9 +12307,9 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** Push 2; M < 0 the forced movement is vertical
-> - **12-16:** Push 4; M < 1 the forced movement is vertical
-> - **17+:** Push 6; M < 2 the forced movement is vertical
+> - **≤11:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 0 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
+> - **12-16:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 1 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 6; M < 2 the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is vertical
 
 > ❗️ **Circle and Strike**
 >
@@ -12319,15 +12319,15 @@ At the start of any griffon's turn, you can spend Malice to activate one of the 
 >
 > **Trigger:** The griffon flies directly above a creature within distance.
 >
-> **Effect:** The griffon dives down onto the target, taking no damage from falling if they reach the ground. The target takes 3 damage for each square the griffon dove, and if they have A < 2, they are grabbed or knocked prone.
+> **Effect:** The griffon dives down onto the target, taking no damage from falling if they reach the ground. The target takes 3 damage for each square the griffon dove, and if they have A < 2, they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Beast of Prey**
 >
-> While grabbed by the griffon, a creature has a double bane on the Escape Grab maneuver.
+> While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the griffon, a creature has a double bane on the Escape Grab maneuver.
 
 > ⭐️ **Steady**
 >
-> Any power roll that could knock the griffon prone takes a bane.
+> Any power roll that could knock the griffon [prone](scc:mcdm.heroes.v1/condition/prone) takes a bane.
 
 > ⭐️ **Banded Predator**
 >
@@ -12363,13 +12363,13 @@ Most hags speak Anjali, Caelian, Khelt, and Yllyric, with older hags often knowi
 <!-- @type: featureblock -->
 ######### Hag Malice (Malice Features)
 
-At the start of a hag's turn, you can spend Malice to activate one of the following features.
+At the start of a hag's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-❇️ **Casting Curses and Bodies (3 Malice)**
+❇️ **Casting Curses and Bodies (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 
-The hag utters terrible words that push each enemy within 2 squares of them up to 3 squares.
+The hag utters terrible words that [push](scc:mcdm.heroes.v1/movement/forced-movement) each enemy within 2 squares of them up to 3 squares.
 
-> 🔳 **Hag Wyrd (5 Malice)**
+> 🔳 **Hag Wyrd (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**             |               **Main action** |
 > |-----------------------------|------------------------------:|
@@ -12377,19 +12377,19 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 fire damage; R < 1 frightened (save ends)
-> - **12-16:** 8 fire damage; R < 2 frightened (save ends)
-> - **17+:** 11 fire damage; R < 3 frightened (save ends)
+> - **≤11:** 5 fire damage; R < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 8 fire damage; R < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 11 fire damage; R < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** After making the power roll, the hag can choose to replace the damage type and condition with lightning damage and dazed, or cold damage and slowed.
+> **Effect:** After making the power roll, the hag can choose to replace the damage type and condition with lightning damage and [dazed](scc:mcdm.heroes.v1/condition/dazed), or cold damage and [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The hag takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The hag takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **House Call (10 Malice)**
+> 🌀 **House Call (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The hag's hut springs to life. It enters the encounter map within 10 squares of the hag if it isn't already there and takes its turn. The hut is size 4, has 75 Stamina and damage immunity 3, and has speed 8 from its powerful set of animal legs. This feature can't be used if the hut is reduced to 0 Stamina. In addition to its move action, the house can take only the following main action.
+> The hag's hut springs to life. It enters the encounter map within 10 squares of the hag if it isn't already there and takes its turn. The hut is size 4, has 75 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and damage immunity 3, and has speed 8 from its powerful set of animal legs. This feature can't be used if the hut is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). In addition to its move action, the house can take only the following main action.
 
 > 🔳 **Kick (Signature Ability)**
 >
@@ -12399,9 +12399,9 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 damage; push 3; M < 1 prone
-> - **12-16:** 10 damage; push 4; M < 2 prone
-> - **17+:** 13 damage; push 5; M < 3 prone
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 <!-- @type: statblock -->
 ####### Wode Hag
@@ -12414,7 +12414,7 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the hag can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the hag can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 >
 > **Solo Turns:** The hag can take two turns each round. They can't take turns consecutively.
 
@@ -12430,9 +12430,9 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 corruption damage; A < 1 weakened (save ends)
-> - **12-16:** 13 corruption damage; A < 2 weakened (save ends)
-> - **17+:** 16 corruption damage; A < 3 weakened (save ends)
+> - **≤11:** 9 corruption damage; A < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 13 corruption damage; A < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 16 corruption damage; A < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 > 🔳 **Soul Steal**
 >
@@ -12448,7 +12448,7 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Effect:** This ability gains an edge against a target who has a soul.
 >
-> **3 Malice:** The hag regains Stamina equal to half the damage dealt.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The hag regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
 > 👤 **Shapeshifter**
 >
@@ -12458,9 +12458,9 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Effect:** The hag alters their body to become any size 1 creature, from a house cat to a humanoid. If the hag uses this ability while outside of any enemy's line of effect, they can choose to be automatically hidden. The hag can return to their original form as a free maneuver.
 >
-> **5 Malice:** The hag becomes a size 2 creature instead, from a bear to an ogre. While in this form, the hag's melee abilities gain a +1 bonus to distance and deal an extra 4 damage.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The hag becomes a size 2 creature instead, from a bear to an ogre. While in this form, the hag's melee abilities gain a +1 bonus to distance and deal an extra 4 damage.
 
-> ❗️ **Turned Upside Down (2 Malice)**
+> ❗️ **Turned Upside Down (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |          **Triggered action** |
 > |-----------------|------------------------------:|
@@ -12470,13 +12470,13 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** Slide 2; R < 1 the slide is vertical
-> - **12-16:** Slide 3; R < 2 the slide is vertical, and the target is restrained (EoT)
-> - **17+:** Vertical slide 5; R < 3 restrained (EoT)
+> - **≤11:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; R < 1 the slide is vertical
+> - **12-16:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; R < 2 the slide is vertical, and the target is [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** Vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5; R < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
 >
-> **Effect:** While restrained this way, a creature who is vertical force moved is suspended in midair. The creature falls when the condition ends.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, a creature who is vertical [force moved](scc:mcdm.heroes.v1/movement/forced-movement) is suspended in midair. The creature falls when the condition ends.
 
-> ☠️ **Snackies for Sweeties (Villain Action 1)**
+> ☠️ **Snackies for Sweeties ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                            **-** |
 > |-----------------|---------------------------------:|
@@ -12490,21 +12490,21 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 > - **12-16:** 10 poison damage
 > - **17+:** 13 poison damage
 >
-> **Special:** A creature wearing a pastry or adjacent to a creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.
+> **Special:** A creature wearing a pastry or [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature wearing a pastry can attempt an **Agility test** to remove the pastry as a maneuver.
 >
 > - **≤11:** The hag makes the power roll for all pastries.
 > - **12-16:** The pastry is not removed.
 > - **17+:** The pastry is removed and can no longer explode.
 
-> ☠️ **Predator's Alacrity (Villain Action 2)**
+> ☠️ **Predator's Alacrity ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Weapon** |                         **-** |
 > |------------------|------------------------------:|
 > | **📏 1 burst**   | **🎯 Each enemy in the area** |
 >
-> **Effect:** Before using this villain action, the hag shifts up to their speed. They then use Corrosive Claws against each target, push each target up to 2 squares, and shift up to their speed again.
+> **Effect:** Before using this [villain action](scc:mcdm.monsters.v1/rule.monster/villain-action), the hag [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. They then use Corrosive Claws against each target, [push](scc:mcdm.heroes.v1/movement/forced-movement) each target up to 2 squares, and [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed again.
 
-> ☠️ **Open the Oven (Villain Action 3)**
+> ☠️ **Open the Oven ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Weapon**       |                            **-** |
 > |------------------------|---------------------------------:|
@@ -12512,9 +12512,9 @@ The hag utters terrible words that push each enemy within 2 squares of them up t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 fire damage; A < 1 weakened (save ends)
-> - **12-16:** 10 fire damage; A < 2 weakened (save ends)
-> - **17+:** 13 fire damage; A < 3 weakened (save ends)
+> - **≤11:** 6 fire damage; A < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 10 fire damage; A < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 13 fire damage; A < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
 > **Effect:** The hag turns the area into a roiling oven until the end of the encounter. Any creature in area takes an extra 5 damage from the hag's damage-dealing abilities.
 
@@ -12570,21 +12570,21 @@ Most hobgoblins speak Anjali, Caelian, and Szetch.
 <!-- @type: featureblock -->
 ######### Hobgoblin Malice (Malice Features)
 
-At the start of any hobgoblin's turn, you can spend Malice to activate one of the following features.
+At the start of any hobgoblin's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Goblin Malice Features (3-7 Malice)**
+> ⭐️ **Goblin Malice Features (3-7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The hobgoblin activates a Malice Feature available to goblins.
+> The hobgoblin activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) Feature available to goblins.
 
-> ⭐️ **Operation Goblin Mode (3 Malice)**
+> ⭐️ **Operation Goblin Mode (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each goblin in the encounter gains a +3 bonus to speed until the end of the round.
 
-> ⭐️ **Operation Tactical Swarm (5 Malice)**
+> ⭐️ **Operation Tactical Swarm (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each hobgoblin in the encounter shifts up to their speed and can take the Defend main action.
+> Each hobgoblin in the encounter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can take the Defend main action.
 
-> 🌀 **Operation Earth Sear (7 Malice)**
+> 🌀 **Operation Earth Sear (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, the ground throughout the encounter map becomes blazing hot. Any enemy takes 1 fire damage for each square of the ground they enter. Any enemy who ends their turn on the ground has fire weakness 2 until the start of their next turn.
 
@@ -12611,11 +12611,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Open Furnace**
 >
-> Whenever an enemy takes fire damage, they take 1 extra fire damage for each brandbearer adjacent to them.
+> Whenever an enemy takes fire damage, they take 1 extra fire damage for each brandbearer [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the brandbearer is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the brandbearer takes 2 fire damage.
+> When the brandbearer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the brandbearer takes 2 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Lancer
@@ -12635,14 +12635,14 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > **Power Roll + 3:**
 >
 > - **≤11:** 2 corruption damage
-> - **12-16:** 4 corruption damage; push 1
-> - **17+:** 6 corruption damage; push 2
+> - **12-16:** 4 corruption damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 6 corruption damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
 >
 > **Effect:** The lancer deals an extra 2 damage if they have high ground against the target.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the lancer is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the lancer takes 2 fire damage.
+> When the lancer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the lancer takes 2 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Recruit
@@ -12663,15 +12663,15 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 3 damage
 > - **12-16:** 5 damage
-> - **17+:** 7 damage; grabbed or prone
+> - **17+:** 7 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed) or [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ⭐️ **Tactical Positioning**
 >
-> Any non-minion ally deals 1 extra damage for each recruit adjacent to them.
+> Any non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) ally deals 1 extra damage for each recruit [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the recruit is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the recruit takes 2 fire damage.
+> When the recruit is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the recruit takes 2 fire damage.
 
 <!-- @type: statblock -->
 ####### Grilp
@@ -12692,13 +12692,13 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 3 damage
 > - **12-16:** 5 damage
-> - **17+:** 7 damage; the grilp shifts up to 2 squares
+> - **17+:** 7 damage; the grilp [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
 >
 > **Effect:** The grilp moves up to their speed and can attempt to hide.
 
 > ⭐️ **Bat Out Of Hell**
 >
-> Any enemy who makes a saving throw takes a −1 penalty to the saving throw for each grilp adjacent to them.
+> Any enemy who makes a saving throw takes a −1 penalty to the saving throw for each grilp [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Shifting Camouflage**
 >
@@ -12725,19 +12725,19 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > - **12-16:** 6 corruption or fire damage
 > - **17+:** 8 corruption or fire damage
 >
-> **2 Malice:** Each target who has P < 2 is weakened (save ends). Any enemy who starts their turn within 3 squares of a target weakened this way and who has P < 2 is weakened (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has P < 2 is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). Any enemy who starts their turn within 3 squares of a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way and who has P < 2 is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
-> 🏹 **Burning Legion (1 Malice)**
+> 🏹 **Burning Legion (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |           **Maneuver** |
 > |-------------------|-----------------------:|
 > | **📏 Ranged 10**  | **🎯 Three creatures** |
 >
-> **Effect:** Each target can teleport up to 5 squares. Each creature adjacent to a target at their destination takes 3 fire damage.
+> **Effect:** Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target at their destination takes 3 fire damage.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the burning witch is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the burning witch takes 3 fire damage.
+> When the burning witch is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the burning witch takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Death Captain
@@ -12762,7 +12762,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Effect:** The next strike made against the target has a double edge.
 >
-> **3 Malice:** One ally adjacent to the target can use their signature ability.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** One ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target can use their signature ability.
 
 > 🏹 **On My Mark!**
 >
@@ -12770,7 +12770,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > |-----------------|----------------:|
 > | **📏 Ranged 5** | **🎯 One ally** |
 >
-> **Effect:** The target moves up to their speed and can make a free strike.
+> **Effect:** The target moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ⭐️ **Battle Ready**
 >
@@ -12778,7 +12778,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Infernal Ichor**
 >
-> When the death captain is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the death captain takes 3 fire damage.
+> When the death captain is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the death captain takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Firerunner
@@ -12799,7 +12799,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 9 fire damage
 > - **12-16:** 13 fire damage
-> - **17+:** 16 fire damage; A < 3 dazed (EoT)
+> - **17+:** 16 fire damage; A < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (EoT)
 
 > 👤 **Blazing Trail**
 >
@@ -12815,11 +12815,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Kindlestep**
 >
-> The firerunner ignores difficult terrain.
+> The firerunner ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Infernal Ichor**
 >
-> When the firerunner is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the firerunner takes 3 fire damage.
+> When the firerunner is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the firerunner takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Grandguard
@@ -12840,11 +12840,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 9 damage
 > - **12-16:** 14 damage
-> - **17+:** 17 damage; prone
+> - **17+:** 17 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **3 Malice:** Each ally adjacent to a prone target can make a free strike against that target.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a [prone](scc:mcdm.heroes.v1/condition/prone) target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that target.
 
-> 🔳 **Thunder Rush (3 Malice)**
+> 🔳 **Thunder Rush (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Charge, Weapon**   |                         **Main action** |
 > |----------------------------|----------------------------------------:|
@@ -12856,7 +12856,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > - **12-16:** 11 damage
 > - **17+:** 14 damage
 >
-> **Effect:** Each target is pushed up to 10 squares in the same direction, and the grandguard shifts into the area left behind by the targets.
+> **Effect:** Each target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 10 squares in the same direction, and the grandguard [shifts](scc:mcdm.heroes.v1/movement/shifting) into the area left behind by the targets.
 
 > ⭐️ **Wide Guard**
 >
@@ -12864,7 +12864,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Infernal Ichor**
 >
-> When the grandguard is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the grandguard takes 3 fire damage.
+> When the grandguard is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the grandguard takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Hell Trooper
@@ -12899,7 +12899,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Infernal Ichor**
 >
-> When the trooper is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the trooper takes 3 fire damage.
+> When the trooper is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the trooper takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Incendiarist
@@ -12924,7 +12924,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
-> 🔳 **Fireball Volley (3 Malice)**
+> 🔳 **Fireball Volley (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |                         **Main action** |
 > |-------------------------|----------------------------------------:|
@@ -12934,17 +12934,17 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 5 fire damage; A < 1 burning (save ends)
 > - **12-16:** 9 fire damage; A < 2 burning (save ends)
-> - **17+:** 11 fire damage; prone; A < 3 burning (save ends)
+> - **17+:** 11 fire damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 3 burning (save ends)
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
 > ⭐️ **Raining Cinders**
 >
-> The ranged free strike of each ally within 3 squares of the incendiarist has a distance of 10 and deals fire damage.
+> The ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) of each ally within 3 squares of the incendiarist has a distance of 10 and deals fire damage.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the incendiarist is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the incendiarist takes 3 fire damage.
+> When the incendiarist is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the incendiarist takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Redglare
@@ -12963,11 +12963,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 corruption damage; P < 1 slowed (save ends)
-> - **12-16:** 14 corruption damage; P < 2 restrained (save ends)
-> - **17+:** 17 corruption damage; P < 3 restrained (save ends)
+> - **≤11:** 9 corruption damage; P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 14 corruption damage; P < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 17 corruption damage; P < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
-> 🏹 **Glare of the Old Judgments (5 Malice)**
+> 🏹 **Glare of the Old Judgments (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -12979,11 +12979,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > - **12-16:** 10 corruption damage, or if the target has P < 2 they are judged
 > - **17+:** The target is judged.
 >
-> **Effect:** Until the end of the encounter, a judged target takes 10 corruption damage at the start of each of their turns, and regains 5 Stamina each time they use an ability or other effect that allows another creature to spend a Recovery.
+> **Effect:** Until the end of the encounter, a judged target takes 10 corruption damage at the start of each of their turns, and regains 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) each time they use an ability or other effect that allows another creature to spend a Recovery.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the redglare is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the redglare takes 3 fire damage.
+> When the redglare is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the redglare takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Smokebinder
@@ -13004,11 +13004,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > - **≤11:** 9 fire damage
 > - **12-16:** 14 fire damage
-> - **17+:** 17 fire damage; R < 3 slowed (save ends)
+> - **17+:** 17 fire damage; R < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** If this ability gains an edge or has a double edge, the target can't communicate with anyone until the end of their next turn.
 
-> ❇️ **Smoke Bomb (3 Malice)**
+> ❇️ **Smoke Bomb (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
@@ -13026,7 +13026,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Infernal Ichor**
 >
-> When the smokebinder is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the smokebinder takes 3 fire damage.
+> When the smokebinder is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the smokebinder takes 3 fire damage.
 
 <!-- @type: statblock -->
 ####### Hobgoblin War Mage
@@ -13045,11 +13045,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 fire damage; M < 1 weakened (save ends)
-> - **12-16:** 9 fire damage; M < 2 weakened (save ends)
-> - **17+:** 11 fire damage; M < 3 weakened (save ends)
+> - **≤11:** 5 fire damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 9 fire damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 11 fire damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Before using this ability, the war mage can teleport a creature within 10 squares of them up to 2 squares.
+> **Effect:** Before using this ability, the war mage can [teleport](scc:mcdm.heroes.v1/movement/teleport) a creature within 10 squares of them up to 2 squares.
 
 > 🏹 **Enchantments of War**
 >
@@ -13057,15 +13057,15 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > |-------------------|------------------:|
 > | **📏 Ranged 10**  | **🎯 Two allies** |
 >
-> **Effect:** Each target gains 10 temporary Stamina and has a double edge on their next power roll. The war mage can spend any amount of their current Stamina to increase the temporary Stamina each target gains by an equivalent amount.
+> **Effect:** Each target gains 10 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and has a double edge on their next power roll. The war mage can spend any amount of their current [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to increase the temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) each target gains by an equivalent amount.
 
-> 🔳 **Unhallowed Ground (3 Malice)**
+> 🔳 **Unhallowed Ground (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |   **Maneuver** |
 > |-------------------------|---------------:|
 > | **📏 5 cube within 10** | **🎯 Special** |
 >
-> **Effect:** The war mage consecrates the area and causes it to smolder until the end of the encounter. The area is difficult terrain and an enemy in the area has fire weakness 10.
+> **Effect:** The war mage consecrates the area and causes it to smolder until the end of the encounter. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and an enemy in the area has fire weakness 10.
 
 > ❗️ **Magic Siphon**
 >
@@ -13075,11 +13075,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** A creature within distance uses a magic ability.
 >
-> **Effect:** Any damage dealt or Stamina regained from the creature's ability is halved. The war mage regains Stamina equal to the remaining damage dealt or Stamina regained.
+> **Effect:** Any damage dealt or [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) regained from the creature's ability is halved. The war mage regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the remaining damage dealt or [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) regained.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the war mage is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the war mage takes 3 fire damage.
+> When the war mage is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the war mage takes 3 fire damage.
 
 > ⭐️ **Despair, You Who Face Death**
 >
@@ -13102,11 +13102,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 corruption damage; P < 2 bleeding (save ends)
-> - **12-16:** 16 corruption damage; P < 3 bleeding (save ends)
-> - **17+:** 19 corruption damage; P < 4 bleeding (save ends)
+> - **≤11:** 11 corruption damage; P < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 16 corruption damage; P < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 19 corruption damage; P < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **2 Malice:** Each target is marked until the end of the encounter or until they die. The bloodlord's allies gain an edge on strikes against any target marked this way. The bloodlord can have up to three targets marked this way. If they mark a new target who would exceed the limit, the oldest mark ends.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target is marked until the end of the encounter or until they die. The bloodlord's allies gain an edge on strikes against any target marked this way. The bloodlord can have up to three targets marked this way. If they mark a new target who would exceed the limit, the oldest mark ends.
 
 > 🏹 **Take Point!**
 >
@@ -13116,33 +13116,33 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Effect:** The target moves up to their speed and can use a signature ability.
 
-> ❗️ **An Army From Blood (3 Malice)**
+> ❗️ **An Army From Blood (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |           **Triggered action** |
 > |------------------|-------------------------------:|
 > | **📏 Ranged 10** | **🎯 The triggering creature** |
 >
-> **Trigger:** A non-minion hobgoblin within distance takes damage.
+> **Trigger:** A non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) hobgoblin within distance takes damage.
 >
-> **Effect:** Three hobgoblin recruits manifest from the target's blood into unoccupied spaces adjacent to the target.
+> **Effect:** Three hobgoblin recruits manifest from the target's blood into unoccupied spaces [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
 > ⭐️ **Infernal Ichor**
 >
-> When the bloodlord is reduced to 0 Stamina, they spray burning blood. Each creature adjacent to the bloodlord takes 3 fire damage.
+> When the bloodlord is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they spray burning blood. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the bloodlord takes 3 fire damage.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
 > At the end of each of their turns, the bloodlord can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
 
-> ☠️ **Advance! (Villain Action 1)**
+> ☠️ **Advance! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
 > | **📏 10 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target gains 10 temporary Stamina and can move up to their speed. Then each non-minion target can make a free strike.
+> **Effect:** Each target gains 10 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and can move up to their speed. Then each non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ☠️ **Skulls Abound (Villain Action 2)**
+> ☠️ **Skulls Abound ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Magic** |       **-** |
 > |-----------------|------------:|
@@ -13150,7 +13150,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Effect:** Until the end of the encounter, the bloodlord surrounds themself with a storm of flying skulls. Any enemy who enters the area for the first time in a round or starts their turn there takes 8 corruption damage and takes a bane on their next power roll until the start of their next turn.
 
-> ☠️ **I Am Fire! I Am Death! (Villain Action 3)**
+> ☠️ **I Am Fire! I Am Death! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -13158,11 +13158,11 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 5 fire damage; P < 2 2 fire damage, push 2, prone
-> - **12-16:** 5 fire damage; P < 3 7 fire damage, push 3, prone
-> - **17+:** 5 fire damage; P < 4 10 fire damage, push 5, prone
+> - **≤11:** 5 fire damage; P < 2 2 fire damage, [push](scc:mcdm.heroes.v1/movement/forced-movement) 2, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 5 fire damage; P < 3 7 fire damage, [push](scc:mcdm.heroes.v1/movement/forced-movement) 3, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 5 fire damage; P < 4 10 fire damage, [push](scc:mcdm.heroes.v1/movement/forced-movement) 5, [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** Until the end of the encounter, the bloodlord is wreathed in black flames. Whenever any adjacent enemy grabs the bloodlord or uses a melee ability against them, that enemy takes 5 corruption damage.
+> **Effect:** Until the end of the encounter, the bloodlord is wreathed in black flames. Whenever any [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/condition/grabbed) the bloodlord or uses a melee ability against them, that enemy takes 5 corruption damage.
 
 <!-- @type: statblock -->
 ####### Slaughter Demon
@@ -13182,12 +13182,12 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 > **Power Roll + 3:**
 >
 > - **≤11:** 9 damage
-> - **12-16:** 14 damage; A < 2 bleeding (save ends)
-> - **17+:** 17 damage; A < 3 bleeding and restrained (save ends)
+> - **12-16:** 14 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 17 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A creature restrained this way moves with the slaughter demon. The slaughter demon can have up to six creatures or objects restrained at once.
+> **Effect:** A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way moves with the slaughter demon. The slaughter demon can have up to six creatures or objects [restrained](scc:mcdm.heroes.v1/condition/restrained) at once.
 
-> 🗡 **Tail Stinger (3 Malice)**
+> 🗡 **Tail Stinger (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -13195,15 +13195,15 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 poison damage; M < 1 weakened (save ends)
-> - **12-16:** 16 poison damage; M < 2 weakened (save ends)
-> - **17+:** 20 poison damage; M < 3 weakened (save ends)
+> - **≤11:** 10 poison damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 16 poison damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 20 poison damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** A target weakened this way also has damage weakness 3.
+> **Effect:** A target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way also has damage weakness 3.
 
 > ⭐️ **Drag Below**
 >
-> The slaughter demon can make a free strike as part of using the Dig maneuver. If the target of the free strike has M < 2, they are grabbed and take a bane on the Escape Grab maneuver.
+> The slaughter demon can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) as part of using the Dig maneuver. If the target of the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has M < 2, they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and take a bane on the Escape Grab maneuver.
 
 > ❗️ **Devour Soul**
 >
@@ -13221,7 +13221,7 @@ At the start of any hobgoblin's turn, you can spend Malice to activate one of th
 
 > ⭐️ **Lethe**
 >
-> While the slaughter demon is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the slaughter demon is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an edge on strikes, and any strike made against them gains an edge.
 
 <!-- @type: monster | @category: humans -->
 ## Humans
