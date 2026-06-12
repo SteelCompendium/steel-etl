@@ -133,6 +133,7 @@ func TestRegistryBookPrintingsRoundTrip(t *testing.T) {
 	r := NewRegistry()
 	r.Add("mcdm.heroes.v1/class/fury")
 	r.SetBookPrinting("mcdm.heroes.v1", "1.01b")
+	r.SetBookPrinting("mcdm.heroes.v1", "1.02")
 	r.SetBookPrinting("", "9.99")      // ignored: empty book
 	r.SetBookPrinting("mcdm.x.v1", "") // ignored: empty printing
 
@@ -146,8 +147,8 @@ func TestRegistryBookPrintingsRoundTrip(t *testing.T) {
 		t.Fatalf("load: %v", err)
 	}
 	got := loaded.BookPrintings()
-	if len(got) != 1 || got["mcdm.heroes.v1"] != "1.01b" {
-		t.Errorf("BookPrintings = %v, want map[mcdm.heroes.v1:1.01b]", got)
+	if len(got) != 1 || got["mcdm.heroes.v1"] != "1.02" {
+		t.Errorf("BookPrintings = %v, want map[mcdm.heroes.v1:1.02]", got)
 	}
 }
 
