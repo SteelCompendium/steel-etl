@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	ctx "github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/content"
+	ctx "github.com/SteelCompendium/steel-etl/internal/context"
 	"github.com/SteelCompendium/steel-etl/internal/output"
 	"github.com/SteelCompendium/steel-etl/internal/parser"
 	"github.com/SteelCompendium/steel-etl/internal/scc"
@@ -70,6 +70,13 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 		}
 	}
 
+	bookPrinting := ""
+	if p, ok := doc.Frontmatter["printing"]; ok {
+		if s, ok := p.(string); ok {
+			bookPrinting = s
+		}
+	}
+
 	// Initialize components
 	registry := content.NewRegistry()
 
@@ -88,8 +95,16 @@ func RunWithConfig(cfg *Config, inputPath, mdOutputDir, registryPath string) (*R
 			for alias, canonical := range existing.Aliases() {
 				sccRegistry.AddAlias(alias, canonical)
 			}
+			for book, printing := range existing.BookPrintings() {
+				sccRegistry.SetBookPrinting(book, printing)
+			}
 		}
 	}
+
+	// Non-identity provenance: which source-document printing this book's
+	// content was generated from. Never part of any SCC code. See
+	// docs/superpowers/specs/2026-06-11-printing-provenance-and-code-lifecycle-design.md.
+	sccRegistry.SetBookPrinting(bookSource, bookPrinting)
 
 	contextStack := ctx.NewContextStack(frontmatterToMetadata(doc.Frontmatter))
 
@@ -262,6 +277,9 @@ func RunSharedOutputs(cfg *Config, items []ClassifiedItem) error {
 			}
 			for alias, canonical := range existing.Aliases() {
 				sccRegistry.AddAlias(alias, canonical)
+			}
+			for book, printing := range existing.BookPrintings() {
+				sccRegistry.SetBookPrinting(book, printing)
 			}
 		}
 	}
