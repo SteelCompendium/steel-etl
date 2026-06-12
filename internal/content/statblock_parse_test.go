@@ -250,6 +250,42 @@ func TestStatblock_Cell_ToleratesLinkedValue(t *testing.T) {
 	}
 }
 
+func TestStatblock_LabeledPowerRoll_ToleratesLinkedHeader(t *testing.T) {
+	// A future editor links "Power Roll" in the labeled header form. The parser
+	// must still find the power-roll block and its tiers.
+	block := "" +
+		"> 🗡 **Hop and Chop (Signature Ability)**\n" +
+		">\n" +
+		"> | **Melee, Strike, Weapon** | **Main action** |\n" +
+		"> |---------------------------|----------------:|\n" +
+		"> | **📏 Melee 1** | **🎯 One creature** |\n" +
+		">\n" +
+		"> **[Power Roll](scc:mcdm.heroes.v1/rule.dice/power-roll) + 2:**\n" +
+		">\n" +
+		"> - **≤11:** 2 damage\n" +
+		"> - **12-16:** 4 damage\n" +
+		"> - **17+:** 5 damage\n"
+
+	got := ParseStatblockFeatures(block)
+	if len(got) != 1 {
+		t.Fatalf("got %d features, want 1", len(got))
+	}
+	effects, _ := got[0]["effects"].([]map[string]any)
+	if len(effects) != 1 {
+		t.Fatalf("effects = %v, want 1 (linked Power Roll header must still be recognized)", got[0]["effects"])
+	}
+	e := effects[0]
+	if e["tier1"] == nil || e["tier1"] == "" || e["tier3"] == nil || e["tier3"] == "" {
+		t.Errorf("tiers not extracted after linking the header (tier1=%v tier3=%v)", e["tier1"], e["tier3"])
+	}
+	// The roll must be recognized and stored as link-free display text.
+	// Without the hardened regex, sbPowerRollRe does NOT match the linked header,
+	// so roll stays "" (empty) — this assertion is what catches the regression.
+	if e["roll"] != "Power Roll + 2" {
+		t.Errorf("roll = %v, want 'Power Roll + 2' (linked header must be recognized and link stripped)", e["roll"])
+	}
+}
+
 func TestSplitRoleCell(t *testing.T) {
 	tests := []struct{ in, org, role string }{
 		{"Horde Hexer", "Horde", "Hexer"},

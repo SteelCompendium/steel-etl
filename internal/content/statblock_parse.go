@@ -88,8 +88,11 @@ func gridRows(grid string) [][]string {
 var (
 	sbTitleRe     = regexp.MustCompile(`^([^\sA-Za-z*][^*]*?)\s*\*\*(.+?)\*\*\s*$`)
 	sbParenRe     = regexp.MustCompile(`^(.*?)\s*\(([^)]+)\)\s*$`)
-	sbTierRe      = regexp.MustCompile(`^-\s*\*\*(≤?\d+(?:-\d+)?\+?):\*\*\s*(.*)$`)
-	sbPowerRollRe = regexp.MustCompile(`\*\*(Power Roll[^*]*)\*\*`)
+	sbTierRe = regexp.MustCompile(`^-\s*\*\*(≤?\d+(?:-\d+)?\+?):\*\*\s*(.*)$`)
+	// sbPowerRollRe matches the Monsters labeled power-roll header "**Power Roll + N:**".
+	// "Power Roll" may be link-wrapped ("**[Power Roll](scc:…) + N:**"). The whole header
+	// stays in group 1; the consumer applies linkDisplay so the stored roll is link-free.
+	sbPowerRollRe = regexp.MustCompile(`\*\*((?:\[Power Roll\]\([^)]*\)|Power Roll)[^*]*)\*\*`)
 	// sbDiceRe splits a "Name Nd10 + <characteristic>" title (summoner statblock
 	// signature abilities encode the power roll inline in the title) into the
 	// clean name and the dice roll. The characteristic may be a bare token (e.g.
@@ -228,7 +231,7 @@ func parseOneFeature(block string) map[string]any {
 	for _, line := range rest {
 		t := strings.TrimSpace(line)
 		if pr := sbPowerRollRe.FindStringSubmatch(t); pr != nil {
-			roll = strings.TrimSuffix(strings.TrimSpace(pr[1]), ":")
+			roll = strings.TrimSuffix(strings.TrimSpace(linkDisplay(pr[1])), ":")
 			continue
 		}
 		if tm := sbTierRe.FindStringSubmatch(t); tm != nil {
