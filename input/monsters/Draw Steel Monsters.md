@@ -42,7 +42,7 @@ Villains typically have personal relationships to heroes that other monsters don
 
 Usually, the struggle against a villain lasts much longer than a single fight. It's not enough to oppose a villain with intent, magic, and strength of arms. A hero also needs justice! The villain's will needs to be deconstructed and proven wrong before they are defeated, in a way that is cathartic to the hero and satisfying for all players.
 
-As said above, a stat block represents a creature in battle. If a villain is reduced to 0 Stamina in combat but their main conflict with the heroes is not resolved, then they have lost the battle but not the war. They can make their retreat, lick their wounds, and try again later. Or if death is inevitable and their will is strong enough, a villain might return to haunt the heroes as an undead until one side finally prevails.
+As said above, a stat block represents a creature in battle. If a villain is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in combat but their main conflict with the heroes is not resolved, then they have lost the battle but not the war. They can make their retreat, lick their wounds, and try again later. Or if death is inevitable and their will is strong enough, a villain might return to haunt the heroes as an undead until one side finally prevails.
 
 #### Coming to the Table
 
@@ -60,10 +60,10 @@ For certain groups of players, imagining monsters beyond their game definition i
 > 
 > Discussions of monsters, guidelines for encounter design, and the monster stat blocks that fill this book refer to the core rules of the game laid down in *Draw Steel: Heroes*. You can find information in that book on specific topics as follows:
 > 
-> - Power rolls, edges and banes, Recoveries, respites, Victories, Orden, Vasloria, the timescape: Chapter 1: The Basics
+> - [Power rolls](scc:mcdm.heroes.v1/rule.dice/power-roll), [edges](scc:mcdm.heroes.v1/rule.dice/edge) and [banes](scc:mcdm.heroes.v1/rule.dice/bane), [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), [respites](scc:mcdm.heroes.v1/rule.resource/respite), [Victories](scc:mcdm.heroes.v1/rule.resource/victories), [Orden](scc:mcdm.heroes.v1/rule.world/orden), [Vasloria](scc:mcdm.heroes.v1/rule.world/vasloria), the timescape: Chapter 1: The Basics
 > - Languages: Chapter 4: Background
-> - Abilities, conditions, potencies, surges: Chapter 5: Classes
-> - Actions and maneuvers, creature size, damage and Stamina, dying and death, movement and forced movement, high ground, winded, suffocating: Chapter 10: Combat
+> - Abilities, [conditions](scc:mcdm.heroes.v1/rule.combat/condition), [potencies](scc:mcdm.heroes.v1/rule.character/potency), [surges](scc:mcdm.heroes.v1/rule.resource/surge): Chapter 5: Classes
+> - Actions and maneuvers, creature [size](scc:mcdm.heroes.v1/rule.character/size), damage and [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), dying and death, movement and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), [high ground](scc:mcdm.heroes.v1/movement/high-ground), [winded](scc:mcdm.heroes.v1/rule.health/winded), [suffocating](scc:mcdm.heroes.v1/rule.health/suffocating): Chapter 10: Combat
 > - Discovering Lore, Finding a Cure, Crafting Treasures: Chapter 12: Downtime Projects
 > - Supernatural treasures: Chapter 13: Rewards
 
@@ -78,7 +78,7 @@ If a creature knows at least one language, a "Languages" entry in their lore ind
 <!-- @type: rule | @group: monster | @id: keyword -->
 #### Keywords
 
-Each stat block has one or more creature keywords. These keywords don't necessarily mean anything on their own, but special rules might apply to them. For instance, a creature with the Goblin keyword benefits from and can contribute to goblin Malice features. (See Malice later in this introduction for information.)
+Each stat block has one or more creature [keywords](scc:mcdm.monsters.v1/rule.monster/keyword). These keywords don't necessarily mean anything on their own, but special rules might apply to them. For instance, a creature with the Goblin keyword benefits from and can contribute to goblin [Malice](scc:mcdm.monsters.v1/rule.monster/malice) features. (See Malice later in this introduction for information.)
 
 ##### General Keywords
 
@@ -157,7 +157,7 @@ Plant creatures, such as the shambling mound, are made of vegetation. Like other
 <!-- @type: rule | @group: keyword | @id: soulless -->
 ###### Soulless
 
-Soulless creatures do not have a soul, and are generally those who are created by another creature, such as many constructs, undead, and war dogs. There are a few abilities or other rules in the game that can only affect creatures with souls. Soulless creatures are immune to these effects. Likewise, if a rule only affects a creature without a soul, soulless creatures are the only valid targets for such effects.
+Soulless creatures do not have a soul, and are generally those who are created by another creature, such as many [Construct](scc:mcdm.monsters.v1/rule.keyword/construct) creatures, [Undead](scc:mcdm.monsters.v1/rule.keyword/undead) creatures, and war dogs. There are a few abilities or other rules in the game that can only affect creatures with souls. Soulless creatures are immune to these effects. Likewise, if a rule only affects a creature without a soul, soulless creatures are the only valid targets for such effects.
 
 <!-- @type: rule | @group: keyword | @id: swarm -->
 ###### Swarm
@@ -172,58 +172,58 @@ Undead creatures, such as ghosts and zombies, are the reanimated flesh and spiri
 <!-- @type: rule | @group: monster | @id: encounter-value -->
 #### Encounter Value
 
-Each Director-controlled creature has an encounter value (abbreviated EV) that is used in building encounters. See Step-by-Step Encounter Building later in this chapter for more information.
+Each Director-controlled creature has an [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) (abbreviated EV) that is used in building encounters. See Step-by-Step Encounter Building later in this chapter for more information.
 
 > **Combat Rounds**
 > 
-> Because stat blocks are focused on the tactics and mechanics of combat, all references in a stat block to "rounds" refer to combat rounds.
+> Because stat blocks are focused on the tactics and mechanics of combat, all references in a stat block to "rounds" refer to [combat rounds](scc:mcdm.heroes.v1/rule.combat/combat-round).
 
 <!-- @type: rule | @group: monster | @id: creature-free-strike -->
 #### Creature Free Strikes
 
-When a Director-controlled creature makes a free strike (see Chapter 10: Combat in *Draw Steel: Heroes*), they don't roll. Instead, their stat block notes a Free Strike value representing the amount of damage they deal with either of the following:
+When a Director-controlled creature makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) (see Chapter 10: Combat in *Draw Steel: Heroes*), they don't roll. Instead, their stat block notes a Free Strike value representing the amount of damage they deal with either of the following:
 
-- A melee free strike with a distance of melee 1 or the melee distance of the creature's signature ability (see below), whichever is higher.
-- A ranged free strike with a distance of 5 or the ranged distance of the creature's signature ability, whichever is higher.
+- A melee free strike with a distance of melee 1 or the melee distance of the creature's [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) (see below), whichever is higher.
+- A ranged free strike with a distance of 5 or the ranged distance of the creature's [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability), whichever is higher.
 
-A creature's free strike has the Strike keyword, as well as the Magic, Psionic, or Weapon keywords if those keywords are found in the creature's signature ability. Additionally, if the creature's signature ability deals damage of a specific type, the free strike also uses that damage type. If the creature's signature ability deals more than one type of damage, you decide which damage type the creature's free strike uses when the strike is made.
+A creature's free strike has the [Strike](scc:mcdm.heroes.v1/rule.combat/strike) keyword, as well as the Magic, Psionic, or Weapon keywords if those keywords are found in the creature's signature ability. Additionally, if the creature's signature ability deals damage of a specific [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type), the free strike also uses that damage type. If the creature's signature ability deals more than one type of damage, you decide which [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) the creature's free strike uses when the strike is made.
 
-Creature free strikes are a static number for two reasons. First, it keeps gameplay fast. You don't have to stop play to roll dice, and there's no chance of a creature rolling a critical hit and bogging things down further when it isn't their turn. Second, by keeping these static values relatively low, heroes are encouraged to take more risks when it really counts, even if that might result in them taking damage from a free strike.
+Creature free strikes are a static number for two reasons. First, it keeps gameplay fast. You don't have to stop play to roll dice, and there's no chance of a creature rolling a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) and bogging things down further when it isn't their turn. Second, by keeping these static values relatively low, heroes are encouraged to take more risks when it really counts, even if that might result in them taking damage from a free strike.
 
 ##### Creature Opportunity Attacks
 
-Even though a Director-controlled creature doesn't have to roll when they make a free strike, if that creature takes a bane on strikes against a target, they can't make an opportunity attack against that target.
+Even though a Director-controlled creature doesn't have to roll when they make a free strike, if that creature takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against a target, they can't make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against that target.
 
 > **Stat Block Self-Reference**
 > 
-> Whenever a creature's stat block talks about enemies or allies, it refers to enemies or allies of that creature by default. (Chapter 5: Classes of *Draw Steel: Heroes* talks about enemies and allies.) Likewise, if a stat block refers to a target "within x squares," that always means "within x squares of this creature" unless additional text says otherwise.
+> Whenever a creature's stat block talks about enemies or allies, it refers to enemies or allies of that creature by default. (Chapter 5: Classes of *Draw Steel: Heroes* talks about enemies and allies.) Likewise, if a stat block refers to a [target](scc:mcdm.heroes.v1/rule.combat/target) "within x squares," that always means "within x squares of this creature" unless additional text says otherwise.
 
 #### Signature Ability
 
-Every creature has a signature ability. This is the first action that appears in their stat block and is noted as "Signature Ability."
+Every creature has a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability). This is the first action that appears in their stat block and is noted as "Signature Ability."
 
 <!-- @type: rule | @group: monster | @id: monster-trait -->
 #### Traits
 
-Many creatures have traits, which are features that don't require a main action, a maneuver, or a triggered action to activate, such as the Crafty trait possessed by many goblins. (Chapter 10: Combat in *Draw Steel: Heroes* talks about action types.)
+Many creatures have [traits](scc:mcdm.monsters.v1/rule.monster/monster-trait), which are features that don't require a main action, a maneuver, or a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to activate, such as the Crafty trait possessed by many goblins. (Chapter 10: Combat in *Draw Steel: Heroes* talks about action types.)
 
 #### Malice
 
-Many creatures have abilities and features that require a Director's resource called Malice to activate. See Malice later in this introduction for more information.
+Many creatures have abilities and features that require a Director's resource called [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate. See Malice later in this introduction for more information.
 
 <!-- @type: rule | @group: monster | @id: end-effect -->
 #### End Effect
 
-Certain creatures have the ability to take damage in order to end one effect on them that can be ended by a saving throw. The damage the creature takes to end an effect can't be reduced in any way.
+Certain creatures have the ability to take damage in order to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). The damage the creature takes to end an effect can't be reduced in any way.
 
 <!-- @type: rule | @group: monster | @id: villain-action -->
 #### Villain Actions
 
-The solo and leader creatures presented in this book are designed to be fought in climactic battles at the end of an adventure or campaign. Because of this, they have special abilities called villain actions.
+The [solo](scc:mcdm.monsters.v1/rule.organization/solo) and [leader](scc:mcdm.monsters.v1/rule.organization/leader) creatures presented in this book are designed to be fought in climactic battles at the end of an adventure or campaign. Because of this, they have special abilities called [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action).
 
-A creature with villain actions always has three. Each villain action can be used only once per encounter, and no more than one villain action can be used per round. (This holds even if you have two or more creatures with villain actions in an encounter, though such an occurrence should be rare.)
+A creature with [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action) always has three. Each villain action can be used only once per encounter, and no more than one villain action can be used per [round](scc:mcdm.heroes.v1/rule.combat/combat-round). (This holds even if you have two or more creatures with villain actions in an encounter, though such an occurrence should be rare.)
 
-A creature can use a villain action at the end of any other creature's turn during combat. Villain actions are numbered and intended to be used in a specific order that creates a logical encounter flow and cinematic arc, but you can use them in any order you choose.
+A creature can use a villain action at the end of any other creature's [turn](scc:mcdm.heroes.v1/rule.combat/turn) during combat. Villain actions are numbered and intended to be used in a specific order that creates a logical encounter flow and cinematic arc, but you can use them in any order you choose.
 
 The first villain action is an opener, which shows the heroes they're not battling a typical creature. Openers generally deal some damage, summon a lackey or three, buff the leader, debuff the heroes, or move the creature into an advantageous position. They're a taste of what's to come.
 
@@ -233,9 +233,9 @@ The third and final villain action is an ultimate move or "ult"-a showstopper th
 
 #### Creature Organization
 
-A level 1 ghoul isn't necessarily as strong as a level 1 orc! Most creature types have an overarching organization that determines the power level and encounter value of the monsters within it. Some modes of organization are built around large numbers of weaker creatures in encounters, while other modes prefer fewer but more formidable threats.
+A level 1 ghoul isn't necessarily as strong as a level 1 orc! Most creature types have an overarching organization that determines the power level and [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) of the monsters within it. Some modes of organization are built around large numbers of weaker creatures in encounters, while other modes prefer fewer but more formidable threats.
 
-A creature's mode of organization appears after their level in a stat block. For example, most gnolls are organized as a horde, while shadow elves have the platoon organization. Some creatures have a main mode of organization and a handful of minions, while other creatures use a few different organization types.
+A creature's mode of organization appears after their level in a stat block. For example, most gnolls are organized as a [horde](scc:mcdm.monsters.v1/rule.organization/horde), while shadow elves have the [platoon](scc:mcdm.monsters.v1/rule.organization/platoon) organization. Some creatures have a main mode of organization and a handful of [minions](scc:mcdm.monsters.v1/rule.organization/minion), while other creatures use a few different organization types.
 
 Monsters are organized as follows.
 
@@ -249,24 +249,24 @@ Minions die quickly! In fact, some might die before they have a chance to act. T
 <!-- @type: rule | @group: organization | @id: horde -->
 ##### Horde
 
-Monsters organized as hordes are hardier and work in smaller groups than minions, but it still takes more than one of these creatures to effectively threaten a single hero of the same level. A battle against creatures all belonging to a horde sees those creatures outnumbering the heroes about two to one. Creatures who are part of a horde organization can be especially effective when brought into encounters alongside other horde creatures.
+Monsters organized as hordes are hardier and work in smaller groups than [minions](scc:mcdm.monsters.v1/rule.organization/minion), but it still takes more than one of these creatures to effectively threaten a single hero of the same level. A battle against creatures all belonging to a horde sees those creatures outnumbering the heroes about two to one. Creatures who are part of a horde organization can be especially effective when brought into encounters alongside other horde creatures.
 
-Horde creatures are more fragile than any other monsters except minions, so be sure to double or triple up on their stat blocks if they're key to a combat encounter. There's a chance that if the heroes act first in combat and have a lot of Victories, they can kill a number of key horde creatures before those creatures can act. That's why the encounter-building guidelines allow you to run lots of them.
+Horde creatures are more fragile than any other monsters except [minions](scc:mcdm.monsters.v1/rule.organization/minion), so be sure to double or triple up on their stat blocks if they're key to a combat encounter. There's a chance that if the heroes act first in combat and have a lot of [Victories](scc:mcdm.heroes.v1/rule.resource/victories), they can kill a number of key horde creatures before those creatures can act. That's why the encounter-building guidelines allow you to run lots of them.
 
 <!-- @type: rule | @group: organization | @id: platoon -->
 ##### Platoon
 
-Monster platoons are highly organized and usually self-sufficient armies. Platoons are well-rounded organizations well equipped to handle most combat objectives. A single platoon creature is a decent threat to a hero of the same level, so an encounter consisting entirely of these creatures typically has one per hero. Platoon creatures often fight alongside minions and an elite creature or two to round out their ranks.
+Monster platoons are highly organized and usually self-sufficient armies. Platoons are well-rounded organizations well equipped to handle most combat objectives. A single platoon creature is a decent threat to a hero of the same level, so an encounter consisting entirely of these creatures typically has one per hero. Platoon creatures often fight alongside [minions](scc:mcdm.monsters.v1/rule.organization/minion) and an [elite](scc:mcdm.monsters.v1/rule.organization/elite) creature or two to round out their ranks.
 
 <!-- @type: rule | @group: organization | @id: elite -->
 ##### Elite
 
-Elite creatures are the functional opposite of minions. A creature noted as an elite is hardy and can usually stand up to two heroes of the same level. Elites also have a high encounter value. They work well when individually supporting monsters with other modes of organization, but multiple elites can also be effective as a band on their own.
+Elite creatures are the functional opposite of [minions](scc:mcdm.monsters.v1/rule.organization/minion). A creature noted as an elite is hardy and can usually stand up to two heroes of the same level. Elites also have a high [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value). They work well when individually supporting monsters with other modes of organization, but multiple elites can also be effective as a band on their own.
 
 <!-- @type: rule | @group: organization | @id: leader -->
 ##### Leader
 
-A leader is a powerful monster who buffs their allies and grants them additional actions. They utilize villain actions and can stand toe-to-toe with two or more heroes of the same level by themself. Typically, only one leader appears in a battle at a time, alongside minions, horde or platoon creatures, and elites. Leader creatures have no additional creature role (see Creature Roles).
+A leader is a powerful monster who buffs their allies and grants them additional actions. They utilize [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action) and can stand toe-to-toe with two or more heroes of the same level by themself. Typically, only one leader appears in a battle at a time, alongside [minions](scc:mcdm.monsters.v1/rule.organization/minion), [horde](scc:mcdm.monsters.v1/rule.organization/horde) or [platoon](scc:mcdm.monsters.v1/rule.organization/platoon) creatures, and [elites](scc:mcdm.monsters.v1/rule.organization/elite). Leader creatures have no additional creature role (see Creature Roles).
 
 <!-- @type: rule | @group: organization | @id: solo -->
 ##### Solo
@@ -290,7 +290,7 @@ Artillery creatures fight best from afar, and can use their most powerful abilit
 <!-- @type: rule | @group: role | @id: brute -->
 ##### Brute
 
-Brutes are hardy creatures who have lots of Stamina and deal lots of damage. They have abilities and traits that make them difficult to ignore and hard to get away from, and that let them push enemies around.
+Brutes are hardy creatures who have lots of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and deal lots of damage. They have abilities and [traits](scc:mcdm.monsters.v1/rule.monster/monster-trait) that make them difficult to ignore and hard to get away from, and that let them push enemies around.
 
 <!-- @type: rule | @group: role | @id: controller -->
 ##### Controller
@@ -300,7 +300,7 @@ Controllers are creatures who change the battlefield, often with magic or psioni
 <!-- @type: rule | @group: role | @id: defender -->
 ##### Defender
 
-Defenders are tough creatures able to take a lot of damage, and who can force enemies to attack them instead of squishier targets. Defenders often act in squads with allies who have lower Stamina, such as controllers and hexers.
+Defenders are tough creatures able to take a lot of damage, and who can force enemies to attack them instead of squishier targets. Defenders often act in [squads](scc:mcdm.monsters.v1/rule.monster/squad) with allies who have lower [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), such as [controllers](scc:mcdm.monsters.v1/rule.role/controller) and [hexers](scc:mcdm.monsters.v1/rule.role/hexer).
 
 <!-- @type: rule | @group: role | @id: harrier -->
 ##### Harrier
@@ -310,7 +310,7 @@ Harriers are mobile warriors who make definitive use of hit-and-run tactics. The
 <!-- @type: rule | @group: role | @id: hexer -->
 ##### Hexer
 
-Hexers specialize in debuffing enemies using conditions and other effects. They are generally squishy and rely on others to defend them.
+Hexers specialize in debuffing enemies using [conditions](scc:mcdm.heroes.v1/rule.combat/condition) and other effects. They are generally squishy and rely on others to defend them.
 
 <!-- @type: rule | @group: role | @id: mount -->
 ##### Mount
@@ -324,7 +324,7 @@ Support creatures specialize in aiding their allies by providing buffs, healing,
 
 #### Creatures Who Defend
 
-A creature who takes the Defend main action (see Chapter 10: Combat of *Draw Steel: Heroes*) can't take additional main actions on their turn. This means that if a creature has already taken a main action on their turn, they can't also take the Defend main action. This applies even if the creature is granted an additional main action on their turn, unless they are specifically granted the ability to take the Defend main action.
+A creature who takes the Defend main action (see Chapter 10: Combat of *Draw Steel: Heroes*) can't take additional main actions on their [turn](scc:mcdm.heroes.v1/rule.combat/turn). This means that if a creature has already taken a main action on their turn, they can't also take the Defend main action. This applies even if the creature is granted an additional main action on their turn, unless they are specifically granted the ability to take the Defend main action.
 
 #### Creatures Who Grab
 
@@ -359,11 +359,11 @@ Inevitably, one or more noncombatants might get caught up in a dangerous situati
 <!-- @type: rule | @group: monster | @id: malice -->
 ### Malice
 
-Just as every hero has a Heroic Resource determined by their class, so too do the heroes' foes need their own juice to fuel their strongest threats. Malice is a resource gained and used by the Director. You use Malice to let enemies in the game activate their most powerful abilities and throw surprises at the heroes during combat.
+Just as every hero has a [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource) determined by their class, so too do the heroes' foes need their own juice to fuel their strongest threats. [Malice](scc:mcdm.monsters.v1/rule.monster/malice) is a resource gained and used by the Director. You use Malice to let enemies in the game activate their most powerful abilities and throw surprises at the heroes during combat.
 
 #### Earning Malice
 
-At the start of combat, you gain Malice equal to the average number of Victories per hero. Then at the start of each combat round, you gain Malice equal to the number of heroes in the battle, plus the combat round number. For instance, if five heroes with three Victories each are just starting their first combat round, you begin that combat with 9 Malice-3 for the average number of Victories, 5 for the number of heroes, and 1 for the first round of combat. At the start of the next round, provided all the heroes are still alive, you gain 7 Malice-5 for the number of heroes plus 2 for the second round. As long as none of the heroes is taken out of the fight, you gain 8 Malice in the third round, 9 Malice in the fourth round, and so on.
+At the start of combat, you gain Malice equal to the average number of [Victories](scc:mcdm.heroes.v1/rule.resource/victories) per hero. Then at the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), you gain Malice equal to the number of heroes in the battle, plus the combat round number. For instance, if five heroes with three [Victories](scc:mcdm.heroes.v1/rule.resource/victories) each are just starting their first combat round, you begin that combat with 9 Malice-3 for the average number of Victories, 5 for the number of heroes, and 1 for the first round of combat. At the start of the next round, provided all the heroes are still alive, you gain 7 Malice-5 for the number of heroes plus 2 for the second round. As long as none of the heroes is taken out of the fight, you gain 8 Malice in the third round, 9 Malice in the fourth round, and so on.
 
 If a hero dies, they stop generating Malice for you. At the end of an encounter, any unused Malice is lost.
 
@@ -371,9 +371,9 @@ It's up to you whether you want to show the players how much Malice you have. So
 
 #### Spending Malice
 
-Monsters can spend Malice the way heroes spend their Heroic Resource, activating and enhancing their abilities. Abilities that make use of Malice have their Malice cost noted in a creature's stat block.
+Monsters can spend Malice the way heroes spend their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), activating and enhancing their abilities. Abilities that make use of Malice have their Malice cost noted in a creature's stat block.
 
-Specific types of monsters sometimes have other ways they can spend Malice once per turn, typically on features that affect an entire group of enemies, additional main actions or maneuvers they can take during their turn, or events that affect the encounter environment. Such features appear in a special **[Creature] Malice** stat block entry that precedes individual stat blocks in a creature's overall section.
+Specific types of monsters sometimes have other ways they can spend Malice once per [turn](scc:mcdm.heroes.v1/rule.combat/turn), typically on features that affect an entire group of enemies, additional main actions or maneuvers they can take during their turn, or events that affect the encounter environment. Such features appear in a special **[Creature] Malice** stat block entry that precedes individual stat blocks in a creature's overall section.
 
 You won't be able to spend Malice on every single option a given encounter has to offer. It's totally up to you how you deploy Malice. You can spend it on smaller but still impactful features each combat round. You can save it up and use it on a small number of extremely dramatic abilities. You can spend it on the same feature that uses all available Malice each combat round and then forget about it until the next round. Do whatever creates the most fun for you and makes the most narrative sense in a given encounter.
 
@@ -387,11 +387,11 @@ At the start of any monster's turn, you can spend Malice to activate one of the 
 
 > **Brutal Effectiveness (3 Malice)**
 > 
-> The monster digs into the enemy's weak spot. The next ability the monster uses with a potency has that potency increased by 1.
+> The monster digs into the enemy's weak spot. The next ability the monster uses with a [potency](scc:mcdm.heroes.v1/rule.character/potency) has that potency increased by 1.
 
 > **Malicious Strike (5+ Malice)** 
 > 
-> The monster pours all their animosity into their attack. Their next strike deals extra damage to one target equal to the monster's highest characteristic score. The extra damage increases by 1 for each additional Malice spent on this feature (to a maximum of three times the monster's highest characteristic). This feature can't be used two rounds in a row, even by different monsters.
+> The monster pours all their animosity into their attack. Their next [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals extra damage to one [target](scc:mcdm.heroes.v1/rule.combat/target) equal to the monster's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) score. The extra damage increases by 1 for each additional Malice spent on this feature (to a maximum of three times the monster's highest characteristic). This feature can't be used two rounds in a row, even by different monsters.
 
 > **That's So Much Malice!**
 > 
@@ -399,38 +399,38 @@ At the start of any monster's turn, you can spend Malice to activate one of the 
 
 ### Using Minions
 
-What they lack in power, minions make up for in flexibility and their ability to let you control the battlefield. Creatures organized as minions work a little differently from other creatures because they're multiple monsters who function as a single unit under your control.
+What they lack in power, [minions](scc:mcdm.monsters.v1/rule.organization/minion) make up for in flexibility and their ability to let you control the battlefield. Creatures organized as minions work a little differently from other creatures because they're multiple monsters who function as a single unit under your control.
 
 The knowledge of how minions work isn't a secret and shouldn't be kept from the players. Share the information in this section with them! They'll have a lot more fun battling minions a shaping narrative around taking out multiple foes at once if they understand how the rules work.
 
 <!-- @type: rule | @group: monster | @id: squad -->
 #### Organized as Squads
 
-Minions with the same name (for instance, goblin sniper) can be organized into squads of up to eight creatures. All members of a minion squad act together on the same initiative, and can make squad attacks (see Acting Together below).
+[Minions](scc:mcdm.monsters.v1/rule.organization/minion) with the same name (for instance, goblin sniper) can be organized into squads of up to eight creatures. All members of a minion squad act together on the same initiative, and can make squad attacks (see Acting Together below).
 
 #### Shared Low Stamina
 
-Minions have low Stamina and fall quickly in battle. They allow heroes to feel extra heroic, since a hero might kill several minions at once depending on those minions' level and encounter value!
+[Minions](scc:mcdm.monsters.v1/rule.organization/minion) have low [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall quickly in battle. They allow heroes to feel extra heroic, since a hero might kill several minions at once depending on those minions' level and [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value)!
 
-Each squad of minions shares a Stamina pool, with initial Stamina equal to each individual minion's Stamina multiplied by the number of minions in the squad. For example, a goblin spinecleaver has 5 Stamina, so a squad of eight spinecleavers has a Stamina pool of 40. Whenever a minion in a squad takes damage, the squad's Stamina pool is reduced by a number equal to the damage taken. Because minion Stamina is tracked as a pool, minions can't be winded, can't regain Stamina, and can't gain temporary Stamina during a battle.
+Each [squad](scc:mcdm.monsters.v1/rule.monster/squad) of minions shares a [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool, with initial Stamina equal to each individual minion's Stamina multiplied by the number of minions in the squad. For example, a goblin spinecleaver has 5 Stamina, so a squad of eight spinecleavers has a Stamina pool of 40. Whenever a minion in a squad takes damage, the squad's Stamina pool is reduced by a number equal to the damage taken. Because minion Stamina is tracked as a pool, minions can't be [winded](scc:mcdm.heroes.v1/rule.health/winded), can't regain Stamina, and can't gain [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) during a battle.
 
 ##### Dropping One Minion
 
-Whenever a minion squad's Stamina pool is reduced by an amount equal to an individual minion's Stamina, one minion dies or is otherwise taken out of the fight. If a squad of goblin spinecleavers has its Stamina pool reduced from 40 to 35, the minion who took the damage that reduced the pool dies. When the Stamina pool hits 30, 25, 20, 15, 10, 5, and finally 0, another minion in the squad dies each time. If multiple minions take the damage that results in the pool dropping low enough to kill one minion, the creature who dealt the damage to the minions decides which of those minions dies. When a minion is taken out of the fight, they count as being reduced to 0 Stamina for triggering effects.
+Whenever a minion squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is reduced by an amount equal to an individual minion's Stamina, one minion dies or is otherwise taken out of the fight. If a squad of goblin spinecleavers has its Stamina pool reduced from 40 to 35, the minion who took the damage that reduced the pool dies. When the Stamina pool hits 30, 25, 20, 15, 10, 5, and finally 0, another minion in the squad dies each time. If multiple minions take the damage that results in the pool dropping low enough to kill one minion, the creature who dealt the damage to the minions decides which of those minions dies. When a minion is taken out of the fight, they count as being reduced to 0 Stamina for triggering effects.
 
 ##### Dropping Multiple Minions
 
-If a minion takes damage from any source except an area effect (including abilities with the Area keyword) and that damage reduces a minion squad's Stamina pool by an amount of damage equal to the Stamina of two or more minions, multiple minions are taken out by the damage. After dropping any minions who took the damage first, the minions nearest to those taken out suffer the same fate.
+If a minion takes damage from any source except an [area effect](scc:mcdm.heroes.v1/rule.combat/area-of-effect) (including abilities with the Area keyword) and that damage reduces a minion squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool by an amount of damage equal to the Stamina of two or more minions, multiple minions are taken out by the damage. After dropping any minions who took the damage first, the minions nearest to those taken out suffer the same fate.
 
-Allow the player to narrate how their hero takes out additional minions killed by a single attack. For instance, if a goblin spinecleaver takes 12 damage from a fury's Brutal Slam ability, maybe the minions surround the hero, who makes a brutal weapon strike that cuts through multiple targets with a single action. Maybe the body of the original target is hurled into an unfortunate ally. Maybe additional minions affected by a single-target strike pass out from fright! Taking out multiple minions is a chance to play up the cinematic aspect of the game.
+Allow the player to narrate how their hero takes out additional minions killed by a single attack. For instance, if a goblin spinecleaver takes 12 damage from a fury's Brutal Slam ability, maybe the minions surround the hero, who makes a brutal weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike) that cuts through multiple [targets](scc:mcdm.heroes.v1/rule.combat/target) with a single action. Maybe the body of the original target is hurled into an unfortunate ally. Maybe additional minions affected by a single-target strike pass out from fright! Taking out multiple minions is a chance to play up the cinematic aspect of the game.
 
 ##### Minions and Area Effects
 
-Minion squads are particularly susceptible to damage-dealing area abilities that target multiple creatures, because the minion squad's Stamina pool takes damage each time an individual minion takes damage. However, such area effects can kill only those minions who are in the area. For example, a tier 3 outcome for the talent's Incinerate ability deals 6 fire damage to each target in its area. If three goblin spinecleavers with Stamina 5 are caught in the area, the minion pool loses 15 Stamina instead of 18, leaving the other minions in the squad unscathed.
+Minion squads are particularly susceptible to damage-dealing [area](scc:mcdm.heroes.v1/rule.combat/area-of-effect) abilities that target multiple creatures, because the minion squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool takes damage each time an individual minion takes damage. However, such area effects can kill only those minions who are in the area. For example, a [tier](scc:mcdm.heroes.v1/rule.dice/tier-outcome) 3 outcome for the talent's Incinerate ability deals 6 fire damage to each [target](scc:mcdm.heroes.v1/rule.combat/target) in its area. If three goblin spinecleavers with Stamina 5 are caught in the area, the minion pool loses 15 Stamina instead of 18, leaving the other minions in the squad unscathed.
 
 ##### Minion Weakness and Immunity
 
-If a minion has either a damage immunity or a damage weakness for a source of damage, apply the effects to the minion's squad once, even if multiple minions share the same immunity or weakness. These effects are the last things applied when calculating damage and can drop (or save!) multiple minions from any source of damage, including area effects.
+If a minion has either a [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or a [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) for a source of damage, apply the effects to the minion's [squad](scc:mcdm.monsters.v1/rule.monster/squad) once, even if multiple minions share the same immunity or weakness. These effects are the last things applied when calculating damage and can drop (or save!) multiple minions from any source of damage, including [area effects](scc:mcdm.heroes.v1/rule.combat/area-of-effect).
 
 > **Whoa! Those Minions Died Too Quickly!**
 > 
@@ -442,33 +442,33 @@ When you're preparing a battle with minions, it helps to take a moment and write
 
 #### Acting Together
 
-When minions act, each minion in the squad uses their main action in concert. This is because minions have squad actions (see below) that require participation from all minions, requiring all attacks by a squad to happen at the same time. Individual minions can choose to waste their main action doing nothing when the rest of their squad uses their main action in concert, or can use a maneuver only to alleviate their own circumstances (see Minion Maneuvers).
+When minions act, each minion in the [squad](scc:mcdm.monsters.v1/rule.monster/squad) uses their main action in concert. This is because minions have squad actions (see below) that require participation from all minions, requiring all attacks by a squad to happen at the same time. Individual minions can choose to waste their main action doing nothing when the rest of their squad uses their main action in concert, or can use a maneuver only to alleviate their own circumstances (see Minion Maneuvers).
 
 ##### Minion Action Economy
 
-Minion turns are meant to be short. On their shared turn, each minion can take only a move action and a main action, a move action and a maneuver, or two move actions.
+Minion [turns](scc:mcdm.heroes.v1/rule.combat/turn) are meant to be short. On their shared turn, each minion can take only a move action and a main action, a move action and a maneuver, or two move actions.
 
-Individual minions can also make opportunity attacks. That said, minions usually don't have bespoke triggered actions, keeping them easy to run.
+Individual minions can also make [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). That said, minions usually don't have bespoke [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action), keeping them easy to run.
 
 ##### Squad Action
 
-Each minion has a signature ability that is typically a strike targeting one creature or object. When multiple minions in a squad use their signature ability on a turn, you make one roll for the whole squad.
+Each minion has a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that is typically a [strike](scc:mcdm.heroes.v1/rule.combat/strike) targeting one creature or object. When multiple minions in a [squad](scc:mcdm.monsters.v1/rule.monster/squad) use their signature ability on a [turn](scc:mcdm.heroes.v1/rule.combat/turn), you make one roll for the whole squad.
 
-Each target of a minion's signature ability is affected by only one instance of the ability. But when two or three (at maximum) of a squad's minions attack the same creature or object simultaneously, each additional minion causes the signature ability to deal extra damage to the target equal to the minion's free strike value. Because a minion's free strike value is typically lower than the average damage of their signature ability, it's usually more effective to have each minion target a different hero.
+Each [target](scc:mcdm.heroes.v1/rule.combat/target) of a minion's signature ability is affected by only one instance of the ability. But when two or three (at maximum) of a squad's minions attack the same creature or object simultaneously, each additional minion causes the signature ability to deal extra damage to the target equal to the minion's free strike value. Because a minion's free strike value is typically lower than the average damage of their signature ability, it's usually more effective to have each minion target a different hero.
 
-As an example, a squad of three demon pitlings are attacking a shadow and a conduit with their Spit signature ability, with a tier 2 outcome on the power roll. One pitling targets the shadow, dealing 4 poison damage. Two pitlings target the conduit, dealing 4 poison damage plus an extra 2 poison damage for the additional pitling.
+As an example, a squad of three demon pitlings are attacking a [shadow](scc:mcdm.heroes.v1/class/shadow) and a [conduit](scc:mcdm.heroes.v1/class/conduit) with their Spit signature ability, with a [tier](scc:mcdm.heroes.v1/rule.dice/tier-outcome) 2 outcome on the [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll). One pitling targets the shadow, dealing 4 poison damage. Two pitlings target the conduit, dealing 4 poison damage plus an extra 2 poison damage for the additional pitling.
 
-If a minion squad scores a critical hit with their signature ability, all the minions who participated in using the ability can take another main action.
+If a minion squad scores a [critical hit](scc:mcdm.heroes.v1/rule.combat/critical-hit) with their signature ability, all the minions who participated in using the ability can take another main action.
 
 ##### Minion Maneuvers
 
-Minions in a squad use the Grab, Hide, Knockback, and Search for Hidden Creatures maneuvers together. For Grab, Knockback, and Search in particular, you make one roll for the whole squad, and each target of a minion's maneuver is only affected by one instance of the ability.
+Minions in a [squad](scc:mcdm.monsters.v1/rule.monster/squad) use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab), [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide), [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback), and [Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) maneuvers together. For Grab, Knockback, and Search in particular, you make one roll for the whole squad, and each [target](scc:mcdm.heroes.v1/rule.combat/target) of a minion's maneuver is only affected by one instance of the ability.
 
-A minion can take any other maneuver individually, usually to alleviate their own circumstances like standing up from prone or escaping a grab. If they do, they can't participate in their squad's main action or maneuver during the turn.
+A minion can take any other maneuver individually, usually to alleviate their own circumstances like [standing up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) from [prone](scc:mcdm.heroes.v1/condition/prone) or [escaping a grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab). If they do, they can't participate in their squad's main action or maneuver during the turn.
 
 ##### Free Strike Together
 
-If several minions in a squad make a free strike at the same target at the same time, such as from a hero provoking an opportunity attack by moving away from several minions surrounding them, the damage from each minion's free strike is added together and treated as one strike.
+If several minions in a [squad](scc:mcdm.monsters.v1/rule.monster/squad) make a free strike at the same [target](scc:mcdm.heroes.v1/rule.combat/target) at the same time, such as from a hero provoking an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving away from several minions surrounding them, the damage from each minion's free strike is added together and treated as one [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 ##### Tracking Squads
 
@@ -477,21 +477,21 @@ If you use multiple squads made up of the same type of minions in an encounter�
 <!-- @type: rule | @group: monster | @id: captain -->
 #### Attached Squad Captain
 
-Any non-mount, non-minion creature, who speaks a language that a squad of minions can understand can be attached to that squad as a captain. Captains aren't necessarily strategic leaders with brilliant tactics. Sometimes they're just powerful creatures who bully, inspire, or have some supernatural influence that drives other creatures to action.
+Any non-[Mount](scc:mcdm.monsters.v1/rule.role/mount), non-minion creature, who speaks a language that a [squad](scc:mcdm.monsters.v1/rule.monster/squad) of [minions](scc:mcdm.monsters.v1/rule.organization/minion) can understand can be attached to that squad as a captain. Captains aren't necessarily strategic leaders with brilliant tactics. Sometimes they're just powerful creatures who bully, inspire, or have some supernatural influence that drives other creatures to action.
 
 A squad of minions can have only one captain, and a creature can't be captain to more than one squad of minions.
 
 ##### Separate Actions and Stamina
 
-A captain takes their turn at the same time as the minion members of their squad but isn't limited in their action options as minions are. A captain's Stamina isn't added to a minion squad's Stamina pool, and is tracked as for any other creature in combat.
+A [captain](scc:mcdm.monsters.v1/rule.monster/captain) takes their [turn](scc:mcdm.heroes.v1/rule.combat/turn) at the same time as the minion members of their [squad](scc:mcdm.monsters.v1/rule.monster/squad) but isn't limited in their action options as minions are. A captain's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) isn't added to a minion squad's Stamina pool, and is tracked as for any other creature in combat.
 
 ##### Captain Benefits
 
-While a minion squad has a captain, each minion in the squad gains the benefits noted at the "With Captain" entry on their stat block. Usually, this benefit is either a damage boost, a bonus to speed, or additional Stamina.
+While a minion [squad](scc:mcdm.monsters.v1/rule.monster/squad) has a [captain](scc:mcdm.monsters.v1/rule.monster/captain), each minion in the squad gains the benefits noted at the "With Captain" entry on their stat block. Usually, this benefit is either a damage boost, a bonus to [speed](scc:mcdm.heroes.v1/rule.character/speed), or additional [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 ##### I Am the Captain Now
 
-If a squad of minions loses their captain, a new allied creature can become that squad's captain at the start of the next round (no action required).
+If a [squad](scc:mcdm.monsters.v1/rule.monster/squad) of [minions](scc:mcdm.monsters.v1/rule.organization/minion) loses their [captain](scc:mcdm.monsters.v1/rule.monster/captain), a new allied creature can become that squad's captain at the start of the next [round](scc:mcdm.heroes.v1/rule.combat/combat-round) (no action required).
 
 > **Stat Block Icons**
 > 
@@ -507,8 +507,8 @@ If a squad of minions loses their captain, a new allied creature can become that
 > - 🔳 A **cube**, **line**, or **wall** area ability
 > - ❇️ An **aura** or **burst** area ability
 > - 🌀 A **special** ability with a unique distance, often the entire encounter map
-> - ❗️ A **triggered action**
-> - ☠️ A feature or ability specific to a leader or solo creature, such as **villain actions**
+> - ❗️ A **[triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)**
+> - ☠️ A feature or ability specific to a [leader](scc:mcdm.monsters.v1/rule.organization/leader) or [solo](scc:mcdm.monsters.v1/rule.organization/solo) creature, such as **[villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action)**
 
 ### Step-by-Step Encounter Building
 
@@ -539,33 +539,33 @@ After thinking about the components of your encounter, it's time to determine ho
 
 ##### Trivial Encounters
 
-Trivial encounters are easier than easy. They present no challenge at all for the heroes, who are guaranteed to survive the battle with their Stamina mostly, if not entirely, untouched. Think 10th-level heroes taking on a small horde of typical kobolds. There's no way the fight ends well for the kobolds. These encounters can be fun to occasionally throw into your game, but for many groups, the novelty disappears quickly; too many trivial encounters can feel like a waste of time.
+Trivial encounters are easier than easy. They present no challenge at all for the heroes, who are guaranteed to survive the battle with their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) mostly, if not entirely, untouched. Think 10th-level heroes taking on a small [horde](scc:mcdm.monsters.v1/rule.organization/horde) of typical kobolds. There's no way the fight ends well for the kobolds. These encounters can be fun to occasionally throw into your game, but for many groups, the novelty disappears quickly; too many trivial encounters can feel like a waste of time.
 
-Unless you determine otherwise, trivial encounters don't earn the heroes any Victories.
+Unless you determine otherwise, trivial encounters don't earn the heroes any [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Easy Encounters
 
-Unless the heroes have already depleted most of their Stamina and Recoveries, easy encounters won't threaten their lives. Easy encounters are great for adventures that want to give the characters a lot of battles between respites, or for when you want them to feel like superheroes while still overcoming a combat challenge that feels as though it's within their pay grade.
+Unless the heroes have already depleted most of their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), easy encounters won't threaten their lives. Easy encounters are great for adventures that want to give the characters a lot of battles between [respites](scc:mcdm.heroes.v1/rule.resource/respite), or for when you want them to feel like superheroes while still overcoming a combat challenge that feels as though it's within their pay grade.
 
-An easy encounter is typically worth 1 Victory.
+An easy encounter is typically worth 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Standard Encounters
 
-Standard encounters are the most common for many adventuring groups. These battles deplete some of the heroes' Stamina and Recoveries, especially for melee-focused heroes. Although character death is uncommon in a standard encounter, it isn't impossible, especially if a player makes a poor tactical choice or finds that the dice are against them.
+Standard encounters are the most common for many adventuring groups. These battles deplete some of the heroes' [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries), especially for melee-focused heroes. Although character death is uncommon in a standard encounter, it isn't impossible, especially if a player makes a poor tactical choice or finds that the dice are against them.
 
-A standard encounter is typically worth 1 Victory.
+A standard encounter is typically worth 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Hard Encounters
 
-Hard encounters are typically climactic encounters with leaders and their loyal servants, or some other scenario that puts the heroes' lives in real peril. Hard encounters are winnable, but the heroes need to play smart to survive.
+Hard encounters are typically climactic encounters with [leaders](scc:mcdm.monsters.v1/rule.organization/leader) and their loyal servants, or some other scenario that puts the heroes' lives in real peril. Hard encounters are winnable, but the heroes need to play smart to survive.
 
-A hard encounter is typically worth 2 Victories.
+A hard encounter is typically worth 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### Extreme Encounters
 
 Extreme encounters feature threats of a level that the heroes aren't likely to survive if they try to fight to the bitter end. Such encounters rarely appear in most campaigns, though if the heroes are 8th level or higher, they can typically survive such encounters—or have a good chance of coming back to life afterward.
 
-An extreme encounter is typically worth 2 or more Victories.
+An extreme encounter is typically worth 2 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 #### Step 3: Determine Encounter Strength
 
@@ -573,7 +573,7 @@ To determine how many creatures and other types of challenges you should have in
 
 To calculate a party's ES, first determine each hero's encounter strength. This starts at a baseline of 4, to which you add 2 for each level of the hero. For instance, a 3rd-level hero has an encounter strength of 10 (4 + 2 + 2 + 2). Then add the encounter strength of all heroes together, and that's your encounter strength. This means a group of five 3rd-level heroes has an ES of 50.
 
-Each retainer or other NPC fighting alongside the heroes counts as a hero when determining encounter strength. If a 3rd-level retainer or NPC fights alongside the heroes, they count as a 3rd-level hero.
+Each [retainer](scc:mcdm.heroes.v1/rule.general/retainer) or other [NPC](scc:mcdm.heroes.v1/rule.general/npc) fighting alongside the heroes counts as a hero when determining encounter strength. If a 3rd-level retainer or NPC fights alongside the heroes, they count as a 3rd-level hero.
 
 ###### Encounter Strength Table
 
@@ -590,11 +590,11 @@ Each retainer or other NPC fighting alongside the heroes counts as a hero when d
 | 9th        | 22      | 44        | 66        | 88        | 110       | 132       | 154       | 176       |
 | 10th       | 24      | 48        | 72        | 96        | 120       | 144       | 168       | 192       |
 
-*Add one Hero for every 2 Victories the heroes have earned on average.
+*Add one Hero for every 2 [Victories](scc:mcdm.heroes.v1/rule.resource/victories) the heroes have earned on average.
 
 ##### Factor in Victories
 
-Victories make heroes more powerful on the way to their next level. For every 2 Victories the heroes have earned on average, increase the party's encounter strength as if there were another hero in the party. For instance, if a party of 3rd-level heroes has 2 or 3 Victories each, increase the ES by 10. If they have 6 Victories each, increase the ES by 30. Be careful that the larger encounter strength doesn't lead you to using more creatures than recommended in Number of Creatures below. It's usually better to use higher-cost creatures in an encounter rather than add extra creatures when increasing encounter strength because of Victories.
+[Victories](scc:mcdm.heroes.v1/rule.resource/victories) make heroes more powerful on the way to their next level. For every 2 Victories the heroes have earned on average, increase the party's encounter strength as if there were another hero in the party. For instance, if a party of 3rd-level heroes has 2 or 3 Victories each, increase the ES by 10. If they have 6 Victories each, increase the ES by 30. Be careful that the larger encounter strength doesn't lead you to using more creatures than recommended in Number of Creatures below. It's usually better to use higher-cost creatures in an encounter rather than add extra creatures when increasing encounter strength because of Victories.
 
 Since you can rarely predict the exact order in which the heroes will face encounters during an adventure, it helps to keep a list of monsters with an EV cost worth roughly the encounter strength of two, four, and six Victories that make sense for the adventure you're running. You can then easily drop or swap these creatures into an encounter on the fly.
 
@@ -610,9 +610,9 @@ Once you know the party's encounter strength and have chosen your encounter diff
 
 > **How Many Fights Before a Respite?**
 > 
-> A group of heroes can generally handle from 4 to 6 Victories’ worth of combat encounters before needing to stop for a respite to refresh their Stamina and Recoveries. But as with encounter building, determining exactly how many encounters a party can run through before needing to rest and restore resources isn’t an exact science.
+> A group of heroes can generally handle from 4 to 6 [Victories’](scc:mcdm.heroes.v1/rule.resource/victories) worth of combat encounters before needing to stop for a [respite](scc:mcdm.heroes.v1/rule.resource/respite) to refresh their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries). But as with encounter building, determining exactly how many encounters a party can run through before needing to rest and restore resources isn’t an exact science.
 > 
-> The luck of the dice, the number of treasures claimed, the composition of encounters, and the strengths of the heroes all factor into this math. And heroes might want to stop for a respite while they still have plenty of Recoveries because they have a downtime project they want to advance, or because they're ready to turn their Victories into xP and gain a new level.
+> The luck of the dice, the number of treasures claimed, the composition of encounters, and the strengths of the heroes all factor into this math. And heroes might want to stop for a [respite](scc:mcdm.heroes.v1/rule.resource/respite) while they still have plenty of [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) because they have a downtime project they want to advance, or because they’re ready to turn their Victories into xP and gain a new level.
 > 
 > Even if we could account for all those factors, your game might have outlier experiences in which the party has to stop and rest a little earlier than you'd expected, or will push through long after you thought they'd stop. We think that's a good thing. Part of the fun of roleplaying games is the fact that they're unpredictable, with the dice and the decisions the heroes make both playing a big part in the story. When players push on because they have a lot of Victories, that's the game working as intended.
 
@@ -622,37 +622,37 @@ Once you know the party's encounter strength and have chosen your encounter diff
 
 #### Step 5: Spend Encounter Budget
 
-You spend your encounter budget to "buy" hostile creatures to take part in your encounter. Each such creature costs a number of budget points equal to its encounter value (EV), as noted in the creature's stat block. When choosing creatures, try to choose a variety of creature roles for a more dynamic combat experience.
+You spend your encounter budget to "buy" hostile creatures to take part in your encounter. Each such creature costs a number of budget points equal to its [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) (EV), as noted in the creature's stat block. When choosing creatures, try to choose a variety of creature roles for a more dynamic combat experience.
 
 ##### Consider Creature Level
 
-To ensure an encounter is challenging but not devastating for the players, you want to choose creatures whose level is no more than 2 greater than the heroes' level. For instance, creatures of level 7 and below are appropriate challenges for a party of 5th-level heroes. If the heroes have 6 or more Victories, you can push the upper limit to within 3 levels of the heroes.
+To ensure an encounter is challenging but not devastating for the players, you want to choose creatures whose level is no more than 2 greater than the heroes' level. For instance, creatures of level 7 and below are appropriate challenges for a party of 5th-level heroes. If the heroes have 6 or more [Victories](scc:mcdm.heroes.v1/rule.resource/victories), you can push the upper limit to within 3 levels of the heroes.
 
-Solo creatures are an exception. A solo creature's abilities dish out a lot of damage for their level, so restrict them to no more than 1 level above the heroes' average level, unless you want the very real threat of a few heroic corpses lying on the battlefield in the aftermath.
+[Solo](scc:mcdm.monsters.v1/rule.organization/solo) creatures are an exception. A solo creature's abilities dish out a lot of damage for their level, so restrict them to no more than 1 level above the heroes' average level, unless you want the very real threat of a few heroic corpses lying on the battlefield in the aftermath.
 
-Some creatures outside of these level ranges might fall into your EV budget, but such creatures have the potential to deal devastating damage before a hero gets to do anything about it. That means characters could die after relatively few attacks from such a creature, and that the potencies of the creature's abilities might be nearly impossible to resist. None of that is likely to feel very heroic.
+Some creatures outside of these level ranges might fall into your EV budget, but such creatures have the potential to deal devastating damage before a hero gets to do anything about it. That means characters could die after relatively few attacks from such a creature, and that the [potencies](scc:mcdm.heroes.v1/rule.character/potency) of the creature's abilities might be nearly impossible to resist. None of that is likely to feel very heroic.
 
-This comparison is the only indicator that level serves in encounter building. Everything else relies on the encounter value and organization mode of your monsters.
+This comparison is the only indicator that level serves in encounter building. Everything else relies on the [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) and organization mode of your monsters.
 
 ##### Minions Come in Groups of Four
 
-Whenever you spend EV to buy minions for a combat encounter, you buy them four at a time. It's recommended to buy at least two sets of minions for any given encounter, as they won't be effective in smaller numbers.
+Whenever you spend EV to buy [minions](scc:mcdm.monsters.v1/rule.organization/minion) for a combat encounter, you buy them four at a time. It's recommended to buy at least two sets of minions for any given encounter, as they won't be effective in smaller numbers.
 
-The minions you buy can be arranged into squads of any size you need, up to a maximum of eight minions in a squad. With eight minions, you could make one squad of eight, two squads of four and four, a squad of three and a squad of five, or squads of three, three, and two. More minions in a squad leads to more effective minion turns, whereas more squads of minions are usually easier to track.
+The minions you buy can be arranged into [squads](scc:mcdm.monsters.v1/rule.monster/squad) of any size you need, up to a maximum of eight minions in a squad. With eight minions, you could make one squad of eight, two squads of four and four, a squad of three and a squad of five, or squads of three, three, and two. More minions in a squad leads to more effective minion [turns](scc:mcdm.heroes.v1/rule.combat/turn), whereas more squads of minions are usually easier to track.
 
 ##### Number of Creatures
 
 Too many creatures or too many different stat blocks in an encounter can create a big cognitive load for you, potentially turning an exciting combat into a slog.
 
-In general, you don't want more than eight creatures per hero at a time in any encounter. Additionally, if the encounter has more than three creatures per hero, at least half the creatures in that encounter should be minions.
+In general, you don't want more than eight creatures per hero at a time in any encounter. Additionally, if the encounter has more than three creatures per hero, at least half the creatures in that encounter should be [minions](scc:mcdm.monsters.v1/rule.organization/minion).
 
 When it comes to number of stat blocks, you typically don't want to use more than six different kinds of stat blocks in an encounter, though you can probably manage more if you're using a lot of simple minion stat blocks. Especially if you're just starting out as a Director, keep the variety of your stat blocks limited until you're confident in your ability to run a complex combat encounter.
 
 ##### Star of the Show
 
-Sometimes a combat encounter features a creature who you want to stick around for more than a single combat round, so they can leave a lasting impression on the heroes. Such creatures are typically the named villains who the heroes face in the climax of an adventure or campaign.
+Sometimes a combat encounter features a creature who you want to stick around for more than a single [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), so they can leave a lasting impression on the heroes. Such creatures are typically the named villains who the heroes face in the climax of an adventure or campaign.
 
-If you want a creature to stick around in a combat encounter and become the star of the show, set up a hard encounter and choose a leader or solo creature with an EV that is at least one-third of the encounter budget.
+If you want a creature to stick around in a combat encounter and become the star of the show, set up a hard encounter and choose a [leader](scc:mcdm.monsters.v1/rule.organization/leader) or [solo](scc:mcdm.monsters.v1/rule.organization/solo) creature with an EV that is at least one-third of the encounter budget.
 
 ##### Dynamic Terrain Objects
 
@@ -664,7 +664,7 @@ Once you have your encounter's foes selected, you'll put them together in initia
 
 Though it's not a hard and fast rule, as you build your initiative groups, try to keep the total EV of any group between the encounter strength of one to two heroes (see the Encounter Strength table at Step 3 above). Doing so helps to ensure that the foes in each encounter group can hold their own against any one hero in the party without overwhelming that character.
 
-It's okay to have one initiative group with a total EV of less than the recommendation above. It's also okay for a group to be worth more than two heroes, as long as that group consists of a single creature or the heroes have racked up a lot of Victories.
+It's okay to have one initiative group with a total EV of less than the recommendation above. It's also okay for a group to be worth more than two heroes, as long as that group consists of a single creature or the heroes have racked up a lot of [Victories](scc:mcdm.heroes.v1/rule.resource/victories).
 
 ##### How Many Initiative Groups?
 
@@ -686,18 +686,18 @@ Your encounter has a number of hero slots equal to the number of heroes in the p
 
 Each hero slot can be filled with a certain number of creatures, as follows:
 
-- Eight minions fill one hero slot.
-- Two horde creatures fill one hero slot.
-- One platoon creature fills one hero slot.
-- One leader or elite creature fills two hero slots.
-- One solo creature fills six hero slots plus one slot for each level the creature is higher than the heroes.
+- Eight [minions](scc:mcdm.monsters.v1/rule.organization/minion) fill one hero slot.
+- Two [horde](scc:mcdm.monsters.v1/rule.organization/horde) creatures fill one hero slot.
+- One [platoon](scc:mcdm.monsters.v1/rule.organization/platoon) creature fills one hero slot.
+- One [leader](scc:mcdm.monsters.v1/rule.organization/leader) or [elite](scc:mcdm.monsters.v1/rule.organization/elite) creature fills two hero slots.
+- One [solo](scc:mcdm.monsters.v1/rule.organization/solo) creature fills six hero slots plus one slot for each level the creature is higher than the heroes.
 
 You adjust your hero slots according to encounter difficulty, which then dictates the level of the creatures you use to fill those slots:
 
 - For a trivial encounter, subtract two hero slots. Use only creatures of the heroes' level or lower.
 - For an easy encounter, subtract one hero slot. Use only creatures of the heroes' level or one level higher.
 - For a standard encounter, use creatures of the heroes' level or one level higher. You can add one more hero slot if none of the creatures are a higher level than the heroes.
-- For a hard encounter, add two hero slots. Use creatures of the heroes' level and up to two levels higher, or up to one level higher for solo creatures. You can add one more hero slot if not all the creatures in the encounter are a higher level than the heroes.
+- For a hard encounter, add two hero slots. Use creatures of the heroes' level and up to two levels higher, or up to one level higher for [solo](scc:mcdm.monsters.v1/rule.organization/solo) creatures. You can add one more hero slot if not all the creatures in the encounter are a higher level than the heroes.
 - For an extreme encounter, add four or more hero slots. Then fill all those slots with creatures of the heroes' level or higher.
 
 ##### Step 3: Add Dynamic Terrain Objects
@@ -714,93 +714,93 @@ Include one or two dynamic terrain objects for encounters of standard difficulty
 
 #### Using Creature Roles and Organization
 
-A creature's role and organization mode helps you build interesting encounters with varied challenges. Although including creatures covering every type of role in a combat encounter is likely to make that encounter too complicated for most groups, a fight against creatures who all have the same role typically leads to dull, grindy combat. An encounter with a controller, two defenders, and two harriers is more interesting and fun than an encounter with five harriers, greatly reducing the risk of playing out a battle where both sides simply stand still and deal damage without anything dynamic or dramatic happening.
+A creature's role and organization mode helps you build interesting encounters with varied challenges. Although including creatures covering every type of role in a combat encounter is likely to make that encounter too complicated for most groups, a fight against creatures who all have the same role typically leads to dull, grindy combat. An encounter with a [controller](scc:mcdm.monsters.v1/rule.role/controller), two [defenders](scc:mcdm.monsters.v1/rule.role/defender), and two [harriers](scc:mcdm.monsters.v1/rule.role/harrier) is more interesting and fun than an encounter with five harriers, greatly reducing the risk of playing out a battle where both sides simply stand still and deal damage without anything dynamic or dramatic happening.
 
 ##### Ambusher Creatures
 
-Ambusher creatures can hide, turn invisible, or otherwise find ways to get the drop on their enemies. They typically spend half their turn attacking, and the other half slipping away and hiding. Ambushers focus on taking down a single hero, sometimes dragging their target into the place where they hide.
+Ambusher creatures can hide, turn invisible, or otherwise find ways to get the drop on their enemies. They typically spend half their [turn](scc:mcdm.heroes.v1/rule.combat/turn) attacking, and the other half slipping away and hiding. Ambushers focus on taking down a single hero, sometimes dragging their [target](scc:mcdm.heroes.v1/rule.combat/target) into the place where they hide.
 
-Encounters that include ambushers should have plenty of cover or concealment, giving them places to hide. Adding other creatures—typically brutes, defenders, harriers, or minions—keeps other heroes busy while the ambusher focuses on taking down a chosen foe.
+Encounters that include ambushers should have plenty of [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment), giving them places to hide. Adding other creatures—typically [brutes](scc:mcdm.monsters.v1/rule.role/brute), [defenders](scc:mcdm.monsters.v1/rule.role/defender), [harriers](scc:mcdm.monsters.v1/rule.role/harrier), or [minions](scc:mcdm.monsters.v1/rule.organization/minion)—keeps other heroes busy while the ambusher focuses on taking down a chosen foe.
 
 ##### Artillery Creatures
 
-Artillery creatures are great at ranged combat and can damage heroes who typically hang back behind beefier allies. Most artillery creatures are weak in melee, so add some minions, brutes, or defenders for them to hide behind during combat.
+Artillery creatures are great at ranged combat and can damage heroes who typically hang back behind beefier allies. Most artillery creatures are weak in melee, so add some [minions](scc:mcdm.monsters.v1/rule.organization/minion), [brutes](scc:mcdm.monsters.v1/rule.role/brute), or [defenders](scc:mcdm.monsters.v1/rule.role/defender) for them to hide behind during combat.
 
-On their turn in combat, an artillery creature typically tries to move away from nearby foes, putting a brute, defender, or other ally between themself and nearby threats before attacking an enemy. If forced into melee, most artillery creatures do whatever they can to get away, including converting their main action into a move action to flee even farther. If no enemies are closing in, artillery creatures move to keep the heroes at the edge of their range, often focusing first on the biggest threat to their allies.
+On their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat, an artillery creature typically tries to move away from nearby foes, putting a [brute](scc:mcdm.monsters.v1/rule.role/brute), [defender](scc:mcdm.monsters.v1/rule.role/defender), or other ally between themself and nearby threats before attacking an enemy. If forced into melee, most artillery creatures do whatever they can to get away, including converting their main action into a move action to flee even farther. If no enemies are closing in, artillery creatures move to keep the heroes at the edge of their range, often focusing first on the biggest threat to their allies.
 
 ##### Brute Creatures
 
-Brute creatures hit hard and have a lot of Stamina. Their damage output can't be ignored, so heroes often focus on taking down brutes ahead of other creatures who have less Stamina or are weaker in melee. Brutes need to get up close to perform their most devastating attacks, so they work best on smaller battlefields. On their turn in combat, a brute moves toward the closest group of enemies and attacks, preferring to engage multiple foes at once. Brutes are often simpler to run than other creatures, so you can include a lot of them in an encounter.
+Brute creatures hit hard and have a lot of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Their damage output can't be ignored, so heroes often focus on taking down brutes ahead of other creatures who have less Stamina or are weaker in melee. Brutes need to get up close to perform their most devastating attacks, so they work best on smaller battlefields. On their [turn](scc:mcdm.heroes.v1/rule.combat/turn) in combat, a brute moves toward the closest group of enemies and attacks, preferring to engage multiple foes at once. Brutes are often simpler to run than other creatures, so you can include a lot of them in an encounter.
 
 ##### Controller Creatures
 
-With their ability to hamper and move heroes, controllers make a dynamic addition to any battle. They often have complicated actions and traits that create unique effects, so most combat encounters shouldn't have more than two controllers.
+With their ability to hamper and move heroes, controllers make a dynamic addition to any battle. They often have complicated actions and [traits](scc:mcdm.monsters.v1/rule.monster/monster-trait) that create unique effects, so most combat encounters shouldn't have more than two controllers.
 
-Many controllers work best when they have brutes, defenders, harriers, and minions protecting them and taking advantage of the effects they create. Controllers often use their biggest and most powerful effects at the start of an encounter, targeting as many foes as possible. If a controller can't affect multiple heroes or use their most powerful feature, they focus on manipulating the battlefield and repositioning so they can use that feature on their next turn.
+Many controllers work best when they have [brutes](scc:mcdm.monsters.v1/rule.role/brute), [defenders](scc:mcdm.monsters.v1/rule.role/defender), [harriers](scc:mcdm.monsters.v1/rule.role/harrier), and [minions](scc:mcdm.monsters.v1/rule.organization/minion) protecting them and taking advantage of the effects they create. Controllers often use their biggest and most powerful effects at the start of an encounter, targeting as many foes as possible. If a controller can't affect multiple heroes or use their most powerful feature, they focus on manipulating the battlefield and repositioning so they can use that feature on their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ##### Defender Creatures
 
-Defender creatures defend their allies by drawing the heroes' attacks. They make excellent protectors for ambushers, artillery creatures, controllers, and support creatures, as well as for leaders. Defenders don't need to stay close to the creatures they protect—and it's better if they don't. A defender who breaks away from their charge can often lock down a threat far from the rest of the fight.
+Defender creatures defend their allies by drawing the heroes' attacks. They make excellent protectors for [ambushers](scc:mcdm.monsters.v1/rule.role/ambusher), [artillery](scc:mcdm.monsters.v1/rule.role/artillery) creatures, [controllers](scc:mcdm.monsters.v1/rule.role/controller), and [support](scc:mcdm.monsters.v1/rule.role/support) creatures, as well as for [leaders](scc:mcdm.monsters.v1/rule.organization/leader). Defenders don't need to stay close to the creatures they protect—and it's better if they don't. A defender who breaks away from their charge can often lock down a threat far from the rest of the fight.
 
 During combat, defenders engage heroes who are strong in melee. A defender battles as many foes as they can reach so their allies can freely move. If more than one defender is in a battle, they typically split up, each fighting a different hero.
 
 ##### Harrier Creatures
 
-Harrier creatures make battles dynamic. They can move to attack vulnerable heroes who are weaker in melee, then retreat (assuming they can do so safely) to protect their artillery, controller, and support allies, as well as leaders. Since harriers can often outrun and outmaneuver heroes, this forces the heroes to act tactically. Harriers pair well with creatures of any role, including other harriers.
+Harrier creatures make battles dynamic. They can move to attack vulnerable heroes who are weaker in melee, then retreat (assuming they can do so safely) to protect their [artillery](scc:mcdm.monsters.v1/rule.role/artillery), [controller](scc:mcdm.monsters.v1/rule.role/controller), and [support](scc:mcdm.monsters.v1/rule.role/support) allies, as well as [leaders](scc:mcdm.monsters.v1/rule.organization/leader). Since harriers can often outrun and outmaneuver heroes, this forces the heroes to act tactically. Harriers pair well with creatures of any role, including other harriers.
 
 ##### Hexer Creatures
 
-Hexers like to hamper other creatures and target the foes they think are most likely to succumb to their debuffing abilities. If a hero has a great turn cutting down the hexer's allies, odds are they're the threat the hexer wants to stop the first chance they have.
+Hexers like to hamper other creatures and target the foes they think are most likely to succumb to their debuffing abilities. If a hero has a great [turn](scc:mcdm.heroes.v1/rule.combat/turn) cutting down the hexer's allies, odds are they're the threat the hexer wants to stop the first chance they have.
 
-Like controllers, hexers are typically complicated and a bit squishy. One or two hexers with a lot of protection from allies can make for a fun encounter.
+Like [controllers](scc:mcdm.monsters.v1/rule.role/controller), hexers are typically complicated and a bit squishy. One or two hexers with a lot of protection from allies can make for a fun encounter.
 
 ##### Leader and Support Creatures
 
-Leader creatures have villain actions (see Villain Actions earlier in this introduction) and fight best alongside allies. Creatures with the support role function much like leaders, but they lack villain actions and are less complex. Leader and support creatures buff and heal their allies, and can grant those allies extra movement and actions. They remain close to their allies so their features can benefit as many targets as possible.
+[Leader](scc:mcdm.monsters.v1/rule.organization/leader) creatures have [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action) (see Villain Actions earlier in this introduction) and fight best alongside allies. Creatures with the [support](scc:mcdm.monsters.v1/rule.role/support) role function much like leaders, but they lack villain actions and are less complex. Leader and support creatures buff and heal their allies, and can grant those allies extra movement and actions. They remain close to their allies so their features can benefit as many [targets](scc:mcdm.heroes.v1/rule.combat/target) as possible.
 
-As long as a leader or a support creature stays in the fight, their allies are enhanced. They are most effective when protected by and buffing artillery, brutes, defenders, harriers, and minions. You typically shouldn't use more than one leader or support creature in an encounter, as their overlapping enhancements can turn a seemingly routine combat into a fatal one.
+As long as a leader or a support creature stays in the fight, their allies are enhanced. They are most effective when protected by and buffing [artillery](scc:mcdm.monsters.v1/rule.role/artillery), [brutes](scc:mcdm.monsters.v1/rule.role/brute), [defenders](scc:mcdm.monsters.v1/rule.role/defender), [harriers](scc:mcdm.monsters.v1/rule.role/harrier), and [minions](scc:mcdm.monsters.v1/rule.organization/minion). You typically shouldn't use more than one leader or support creature in an encounter, as their overlapping enhancements can turn a seemingly routine combat into a fatal one.
 
 ##### Minion Creatures
 
-As discussed in the Using Minions section earlier in this chapter, minions allow you to create cinematic battles where the characters feel heroic as they cut through multiple foes at once. Using minions of a level within two levels of the characters' average level also keeps them dangerous and relevant. When minions work together, they can't be ignored, as they deal a lot of damage and can easily lock characters down. Minions make decent protectors for ambushers, artillery, and controllers, as well as for leaders.
+As discussed in the Using Minions section earlier in this chapter, [minions](scc:mcdm.monsters.v1/rule.organization/minion) allow you to create cinematic battles where the characters feel heroic as they cut through multiple foes at once. Using minions of a level within two levels of the characters' average level also keeps them dangerous and relevant. When minions work together, they can't be ignored, as they deal a lot of damage and can easily lock characters down. Minions make decent protectors for [ambushers](scc:mcdm.monsters.v1/rule.role/ambusher), [artillery](scc:mcdm.monsters.v1/rule.role/artillery), and [controllers](scc:mcdm.monsters.v1/rule.role/controller), as well as for [leaders](scc:mcdm.monsters.v1/rule.organization/leader).
 
 ##### Mount Creatures
 
-Mount creatures are good for carrying other creatures into battle. Mounts of size 2 and smaller are typically meant to carry a single rider, while larger mounts can carry more creatures. Adding mounts to combat encounters makes the creatures riding them much faster. They pair well with artillery, brutes, controllers, hexers, and support creatures, as well as with leaders. Mounts without riders can also serve the same purpose as harriers in combat.
+Mount creatures are good for carrying other creatures into battle. Mounts of [size](scc:mcdm.heroes.v1/rule.character/size) 2 and smaller are typically meant to carry a single rider, while larger mounts can carry more creatures. Adding mounts to combat encounters makes the creatures riding them much faster. They pair well with [artillery](scc:mcdm.monsters.v1/rule.role/artillery), [brutes](scc:mcdm.monsters.v1/rule.role/brute), [controllers](scc:mcdm.monsters.v1/rule.role/controller), [hexers](scc:mcdm.monsters.v1/rule.role/hexer), and [support](scc:mcdm.monsters.v1/rule.role/support) creatures, as well as with [leaders](scc:mcdm.monsters.v1/rule.organization/leader). Mounts without riders can also serve the same purpose as [harriers](scc:mcdm.monsters.v1/rule.role/harrier) in combat.
 
 ##### Solo Creatures
 
-Solo creatures can stand as an encounter all on their own for a group of four to six heroes. Their villain actions allow them to hamper and harm foes outside of the regular turn order. Solo creatures are best encountered alone, and fight most effectively in environments with plenty of space to move around and find cover.
+Solo creatures can stand as an encounter all on their own for a group of four to six heroes. Their [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action) allow them to hamper and harm foes outside of the regular turn order. Solo creatures are best encountered alone, and fight most effectively in environments with plenty of space to move around and find [cover](scc:mcdm.heroes.v1/rule.combat/cover).
 
-Solo creatures use every movement advantage they have, whether burrowing, climbing, flying, swimming, or teleporting around the battlefield on their turn. They focus on whichever hero threatens them most effectively, even as they position themselves to target as many foes as possible with their area abilities.
+Solo creatures use every movement advantage they have, whether [burrowing](scc:mcdm.heroes.v1/movement/burrow), climbing, [flying](scc:mcdm.heroes.v1/movement/fly), swimming, or [teleporting](scc:mcdm.heroes.v1/movement/teleport) around the battlefield on their [turn](scc:mcdm.heroes.v1/rule.combat/turn). They focus on whichever hero threatens them most effectively, even as they position themselves to target as many foes as possible with their [area](scc:mcdm.heroes.v1/rule.combat/area-of-effect) abilities.
 
 > **Instant Solo Creature**
 > 
-> Most leaders and elite creatures can be adapted into a solo creature on the fly with the following adjustments:
+> Most [leaders](scc:mcdm.monsters.v1/rule.organization/leader) and [elite](scc:mcdm.monsters.v1/rule.organization/elite) creatures can be adapted into a [solo](scc:mcdm.monsters.v1/rule.organization/solo) creature on the fly with the following adjustments:
 > 
 > - Multiply their EV by 3.
-> - Multiply their Stamina by 2.5.
+> - Multiply their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by 2.5.
 > - Give them the following trait:
 > 
-> **Solo Turns** The creature can take two turns each round. They can't take turns consecutively.
+> **Solo Turns** The creature can take two turns each [round](scc:mcdm.heroes.v1/rule.combat/combat-round). They can't take turns consecutively.
 > 
 > - Give them the following trait if they don't already have it:
 > 
-> **End Effect** At the end of each of their turns, the creature can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)** At the end of each of their turns, the creature can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 > 
-> - Give them the following Malice feature:
+> - Give them the following [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature:
 > 
 > **Solo Action (5 Malice)**
 > 
-> The creature takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The creature takes an additional main action on their [turn](scc:mcdm.heroes.v1/rule.combat/turn). They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 #### Choosing a Map
 
-Taverns have tables, forests have trees, castles have pillars, and fields have uneven terrain. The best maps for *Draw Steel* combat encounters have interesting environmental features, and you'll want to choose a map for your encounter that brings the most out of the rules for movement, difficult terrain, and falling.
+Taverns have tables, forests have trees, castles have pillars, and fields have uneven terrain. The best maps for *Draw Steel* combat encounters have interesting environmental features, and you'll want to choose a map for your encounter that brings the most out of the rules for movement, [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and [falling](scc:mcdm.heroes.v1/rule.health/falling).
 
-Your ideal encounter map might feature ledges, columns, walls, windows, dynamic terrain objects, and the like for creatures to be thrown into, thrown off of, thrown through, or simply use for cover. Even one major fixture of interest on an encounter map can spark the players to think about how to incorporate that feature into their turns. You'll also want most of your battles to take place in environments with plenty of space to move around, avoiding a lot of long corridors 1 square wide.
+Your ideal encounter map might feature ledges, columns, [walls](scc:mcdm.heroes.v1/rule.combat/wall), windows, dynamic terrain objects, and the like for creatures to be thrown into, thrown off of, thrown through, or simply use for [cover](scc:mcdm.heroes.v1/rule.combat/cover). Even one major fixture of interest on an encounter map can spark the players to think about how to incorporate that feature into their [turns](scc:mcdm.heroes.v1/rule.combat/turn). You'll also want most of your battles to take place in environments with plenty of space to move around, avoiding a lot of long corridors 1 square wide.
 
-Vertical maps are especially great, as an area with high ledges can lead to a surprising amount of damage for nonflying allies and enemies alike. Use flat maps sparingly, reserving them for dramatic showdowns in which heroes and villains must test their strength and convictions against each other with no distractions. Though even then, a map might have a throne to ascend in the center and steep edges on all sides.
+Vertical maps are especially great, as an area with [high ground](scc:mcdm.heroes.v1/movement/high-ground) can lead to a surprising amount of damage for nonflying allies and enemies alike. Use flat maps sparingly, reserving them for dramatic showdowns in which heroes and villains must test their strength and convictions against each other with no distractions. Though even then, a map might have a throne to ascend in the center and steep edges on all sides.
 
 You don't have to be a master artist to create a great tactical map. You can use hand-drawn shapes and lines on an erasable mat or virtual tabletop to represent cliffs, hazards, and more. You can also find incredible maps online. Some are free, and most others are available for a reasonable price on the websites of many great cartographers.
 
@@ -839,11 +839,11 @@ The simplest combat encounter objective is almost always "defeat them before the
 
 ##### Monster Roles and Organization
 
-Monsters of any role make sense for this objective, so use a good mix of roles to challenge the characters and players. Put artillery creatures in hard-to-reach places, pair up defenders with controllers and hexers, and put brutes on the front line to give the heroes something to cut through as they seek more-important foes.
+Monsters of any role make sense for this objective, so use a good mix of roles to challenge the characters and players. Put [artillery](scc:mcdm.monsters.v1/rule.role/artillery) creatures in hard-to-reach places, pair up [defenders](scc:mcdm.monsters.v1/rule.role/defender) with [controllers](scc:mcdm.monsters.v1/rule.role/controller) and [hexers](scc:mcdm.monsters.v1/rule.role/hexer), and put [brutes](scc:mcdm.monsters.v1/rule.role/brute) on the front line to give the heroes something to cut through as they seek more-important foes.
 
 ##### Map Advice
 
-The general advice that applies to picking maps for encounters applies here. Choose terrain that favors the creatures you add to the encounter, and give yourself some interesting elevation, cover, and terrain effects. If you're using a lot of creatures, be sure to give them space to move.
+The general advice that applies to picking maps for encounters applies here. Choose terrain that favors the creatures you add to the encounter, and give yourself some interesting elevation, [cover](scc:mcdm.heroes.v1/rule.combat/cover), and terrain effects. If you're using a lot of creatures, be sure to give them space to move.
 
 ##### Difficulty Modifier
 
@@ -853,15 +853,15 @@ This objective doesn't modify an encounter's difficulty.
 
 Choose one of the following success conditions:
 
-- An encounter that includes two or more groups of minions ends when the heroes have no non-minion enemies remaining.
-- An encounter with mostly horde creatures ends when the heroes outnumber their foes.
-- An encounter with mostly platoon creatures ends when the heroes outnumber their foes two to one.
+- An encounter that includes two or more groups of [minions](scc:mcdm.monsters.v1/rule.organization/minion) ends when the heroes have no non-minion enemies remaining.
+- An encounter with mostly [horde](scc:mcdm.monsters.v1/rule.organization/horde) creatures ends when the heroes outnumber their foes.
+- An encounter with mostly [platoon](scc:mcdm.monsters.v1/rule.organization/platoon) creatures ends when the heroes outnumber their foes two to one.
 - The encounter ends when the number of remaining foes is half or less of what it was at the start.
-- In a battle against a solo creature, that creature flees or surrenders when reduced to one-quarter or less of their Stamina and after using all their villain actions.
+- In a battle against a [solo](scc:mcdm.monsters.v1/rule.organization/solo) creature, that creature flees or surrenders when reduced to one-quarter or less of their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and after using all their [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action).
 
 ##### Victories
 
-If the heroes achieve success, they earn 1 Victory for an easy or standard encounter, or 2 Victories for a hard or extreme encounter.
+If the heroes achieve success, they earn 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) for an easy or standard encounter, or 2 Victories for a hard or extreme encounter.
 
 ##### Failure Condition
 
@@ -879,13 +879,13 @@ An encounter built around defeating a specific foe includes one or more of the h
 
 ##### Monster Roles and Organization
 
-The specific foe you choose who must be defeated is likely a leader or a creature with a lot of Stamina for their level (such as a brute), or a creature of any role who is an elite or of a higher level than the heroes. It helps to give the specific foe a defender or two by their side and some minions to help make them harder to hit.
+The specific foe you choose who must be defeated is likely a [leader](scc:mcdm.monsters.v1/rule.organization/leader) or a creature with a lot of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) for their level (such as a [brute](scc:mcdm.monsters.v1/rule.role/brute)), or a creature of any role who is an [elite](scc:mcdm.monsters.v1/rule.organization/elite) or of a higher level than the heroes. It helps to give the specific foe a [defender](scc:mcdm.monsters.v1/rule.role/defender) or two by their side and some [minions](scc:mcdm.monsters.v1/rule.organization/minion) to help make them harder to hit.
 
 ##### Map Advice
 
-When choosing a map for this type of encounter, consider the placement of the specific foe. You'll want to make sure that they're protected and not vulnerable to attacks on all sides. If they utilize ranged abilities, giving them the high ground and setting up a few choke points to make it difficult for the heroes to reach the foe makes for a good map.
+When choosing a map for this type of encounter, consider the placement of the specific foe. You'll want to make sure that they're protected and not vulnerable to attacks on all sides. If they utilize ranged abilities, giving them the [high ground](scc:mcdm.heroes.v1/movement/high-ground) and setting up a few choke points to make it difficult for the heroes to reach the foe makes for a good map.
 
-If the specific foe is the type of enemy who likes to strike and retreat, make sure they have areas of cover or concealment to fall back to and a map that gives them plenty of space to move around. If they or their defenders use a lot of forced movement, make sure there are fun hazards and objects to throw heroes into. If you're worried about the characters being able to teleport in to attack, find a map with lots of walls or other barriers, since you need line of effect to your destination when you teleport.
+If the specific foe is the type of enemy who likes to strike and retreat, make sure they have areas of [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) to fall back to and a map that gives them plenty of space to move around. If they or their defenders use a lot of [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), make sure there are fun hazards and objects to throw heroes into. If you're worried about the characters being able to [teleport](scc:mcdm.heroes.v1/movement/teleport) in to attack, find a map with lots of [walls](scc:mcdm.heroes.v1/rule.combat/wall) or other barriers, since you need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to your destination when you teleport.
 
 It's also a good idea for the foe to have an escape route, often a choke point through which they can retreat. If the characters want to pursue, have the foe's allies hold them off—but don't make it impossible for the heroes to follow!
 
@@ -895,11 +895,11 @@ If the creature or creatures who need to be taken down for the encounter to end 
 
 ##### Success Condition
 
-The heroes win when the designated creature or creatures are reduced to 0 Stamina.
+The heroes win when the designated creature or creatures are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 ##### Victories
 
-Each hero earns 1 Victory for an easy or standard encounter, or 2 Victories for a hard encounter.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) for an easy or standard encounter, or 2 Victories for a hard encounter.
 
 ##### Failure Condition
 
@@ -913,7 +913,7 @@ Objectives in this category work well when paired with other objectives, such as
 
 ##### The Thing
 
-The thing the heroes need to get is typically a size 1T object. (If the thing is a creature or bulky object that must be carried past enemies, you might instead be looking at an Escort encounter.) Most or all routes leading to the thing are guarded by enemies, and a trap or a powerful monster often stands guard directly over the object. The thing might be fragile (for example, a paper document) or virtually unbreakable (a magic weapon). The heroes' enemies don't want to see it harmed, but the thing might be damaged accidentally.
+The thing the heroes need to get is typically a [size](scc:mcdm.heroes.v1/rule.character/size) 1T object. (If the thing is a creature or bulky object that must be carried past enemies, you might instead be looking at an Escort encounter.) Most or all routes leading to the thing are guarded by enemies, and a trap or a powerful monster often stands guard directly over the object. The thing might be fragile (for example, a paper document) or virtually unbreakable (a magic weapon). The heroes' enemies don't want to see it harmed, but the thing might be damaged accidentally.
 
 Additionally, a thing can have one of the following extra defenses:
 
@@ -923,7 +923,7 @@ Held: As an especially potent defense, the thing might be possessed by an enemy.
 
 ##### Monster Roles and Organization
 
-This sort of encounter is all about getting in, grabbing an item, and then getting out. Guards protecting a thing are typically leaders, or other creatures with the brute or defender role. But you might instead have a hidden ambusher guarding the thing! Devious! Harriers and mounts make wonderful additions to these encounters, since they can chase after heroes who manage to obtain the thing. Likewise, controllers who can change or modify terrain, hexers who can slow down heroes, or minions who can clog up hallways can make fleeing with the thing difficult.
+This sort of encounter is all about getting in, grabbing an item, and then getting out. Guards protecting a thing are typically [leaders](scc:mcdm.monsters.v1/rule.organization/leader), or other creatures with the [brute](scc:mcdm.monsters.v1/rule.role/brute) or [defender](scc:mcdm.monsters.v1/rule.role/defender) role. But you might instead have a hidden [ambusher](scc:mcdm.monsters.v1/rule.role/ambusher) guarding the thing! Devious! [Harriers](scc:mcdm.monsters.v1/rule.role/harrier) and [mounts](scc:mcdm.monsters.v1/rule.role/mount) make wonderful additions to these encounters, since they can chase after heroes who manage to obtain the thing. Likewise, [controllers](scc:mcdm.monsters.v1/rule.role/controller) who can change or modify terrain, [hexers](scc:mcdm.monsters.v1/rule.role/hexer) who can slow down heroes, or [minions](scc:mcdm.monsters.v1/rule.organization/minion) who can clog up hallways can make fleeing with the thing difficult.
 
 ##### Map Advice
 
@@ -939,7 +939,7 @@ The heroes win when all the heroes leave the encounter map with the thing.
 
 ##### Victories
 
-If the heroes leave the map with the thing, each hero earns 1 Victory if the encounter was easy, standard, or hard. They instead earn 2 Victories if the success condition is met and the encounter was of extreme difficulty, or if none of the heroes took damage during an encounter of standard or higher difficulty.
+If the heroes leave the map with the thing, each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the encounter was easy, standard, or hard. They instead earn 2 Victories if the success condition is met and the encounter was of extreme difficulty, or if none of the heroes took damage during an encounter of standard or higher difficulty.
 
 ##### Failure Condition
 
@@ -953,7 +953,7 @@ Sometimes a thing in this kind of encounter is actually multiple things, all of 
 
 ##### The Thing
 
-A typical thing is an object with Stamina equal to the heroes' level times 35. If the characters must destroy multiple things, divide the thing's Stamina between all of them. Most objects have poison and psychic immunity, and the thing might have immunity or weakness to one or more damage types. For instance, a magic statue might have immunity to fire damage and weakness to sonic damage.
+A typical thing is an object with [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the heroes' level times 35. If the characters must destroy multiple things, divide the thing's Stamina between all of them. Most objects have poison and psychic [immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity), and the thing might have [immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) or [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) to one or more [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type). For instance, a magic statue might have immunity to fire damage and weakness to sonic damage.
 
 Additionally, a thing can have one or more of the following extra defenses:
 
@@ -967,7 +967,7 @@ Multiple: There are multiple things, all of which must be destroyed. Divide the 
 
 ##### Monster Roles and Organization
 
-Encounters built around destroying a thing require beefy creatures to defend the thing—brutes and defenders, as well as squads of minions. It also helps to have a few artillery creatures off in the distance harassing heroes as they attempt to destroy the thing, so that melee heroes have to decide between fulfilling that goal while coming under fire or taking out the ranged attackers first. If the heroes want to use their own ranged abilities to destroy a thing from afar, a sneaky ambusher or two makes a delightful addition to the encounter, hanging back in the shadows waiting to pick opportunistic heroes off.
+Encounters built around destroying a thing require beefy creatures to defend the thing—[brutes](scc:mcdm.monsters.v1/rule.role/brute) and [defenders](scc:mcdm.monsters.v1/rule.role/defender), as well as [squads](scc:mcdm.monsters.v1/rule.monster/squad) of [minions](scc:mcdm.monsters.v1/rule.organization/minion). It also helps to have a few [artillery](scc:mcdm.monsters.v1/rule.role/artillery) creatures off in the distance harassing heroes as they attempt to destroy the thing, so that melee heroes have to decide between fulfilling that goal while coming under fire or taking out the ranged attackers first. If the heroes want to use their own ranged abilities to destroy a thing from afar, a sneaky [ambusher](scc:mcdm.monsters.v1/rule.role/ambusher) or two makes a delightful addition to the encounter, hanging back in the shadows waiting to pick opportunistic heroes off.
 
 ##### Map Advice
 
@@ -983,7 +983,7 @@ The heroes win when they destroy the thing. In a multiple-thing setup, success m
 
 ##### Victories
 
-If the thing was destroyed, each hero earns 1 Victory for an easy or standard encounter, or 2 Victories for a hard encounter.
+If the thing was destroyed, each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) for an easy or standard encounter, or 2 Victories for a hard encounter.
 
 ##### Failure Condition
 
@@ -995,13 +995,13 @@ No one earns the mantle of hero without saving a few lives. Sometimes the point 
 
 ##### Allies and Potential Allies
 
-Some encounters of this type feature willing allies—creatures able and willing to fight alongside the heroes. Others feature potential allies creatures who can't or won't join the heroes right away, but who might do so later in the battle. In combat, willing allies can be controlled by the heroes (and might use retainer stat blocks), while potential allies are controlled by you.
+Some encounters of this type feature willing allies—creatures able and willing to fight alongside the heroes. Others feature potential allies creatures who can't or won't join the heroes right away, but who might do so later in the battle. In combat, willing allies can be controlled by the heroes (and might use [retainer](scc:mcdm.heroes.v1/rule.general/retainer) stat blocks), while potential allies are controlled by you.
 
-During an encounter, potential allies must be won over and freed from any captivity before they become allies, requiring a successful hard Presence test made as a maneuver. Potential allies otherwise attempt to flee the encounter on their turns.
+During an encounter, potential allies must be won over and freed from any captivity before they become allies, requiring a successful hard [Presence](scc:mcdm.heroes.v1/rule.character/presence) [test](scc:mcdm.heroes.v1/rule.test/test) made as a maneuver. Potential allies otherwise attempt to flee the encounter on their [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ##### Monster Roles and Organization
 
-Controllers and hexers make encounters based around saving others exciting. Their ability to hinder and put the whammy on heroes and bystanders alike greatly increases the challenge of keeping others alive. Likewise, harriers and mounts can chase down people fleeing the encounter, minions can cut off their escape routes, and artillery creatures can target them from afar. If noncombatants are captured at the start of the encounter, brutes make excellent hard-to-kill guardians.
+[Controllers](scc:mcdm.monsters.v1/rule.role/controller) and [hexers](scc:mcdm.monsters.v1/rule.role/hexer) make encounters based around saving others exciting. Their ability to hinder and put the whammy on heroes and bystanders alike greatly increases the challenge of keeping others alive. Likewise, [harriers](scc:mcdm.monsters.v1/rule.role/harrier) and [mounts](scc:mcdm.monsters.v1/rule.role/mount) can chase down people fleeing the encounter, [minions](scc:mcdm.monsters.v1/rule.organization/minion) can cut off their escape routes, and [artillery](scc:mcdm.monsters.v1/rule.role/artillery) creatures can target them from afar. If noncombatants are captured at the start of the encounter, [brutes](scc:mcdm.monsters.v1/rule.role/brute) make excellent hard-to-kill guardians.
 
 ##### Map Advice
 
@@ -1017,7 +1017,7 @@ The heroes win if half or more of all willing allies and potential allies surviv
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition was met and the encounter was easy or standard. Each hero earns 2 Victories if the success condition was met and the encounter was hard or extreme, or if all the creatures meant to be saved survived and the encounter is of standard or higher difficulty.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition was met and the encounter was easy or standard. Each hero earns 2 Victories if the success condition was met and the encounter was hard or extreme, or if all the creatures meant to be saved survived and the encounter is of standard or higher difficulty.
 
 ##### Failure Condition
 
@@ -1031,25 +1031,25 @@ Not every escort encounter is on behalf of a wise or mighty ally. Sometimes the 
 
 ##### Ward
 
-The creature or object to be protected is called the ward. At the start of each combat round, the players decide which hero has responsibility for the ward. The ward moves on that hero's turn and is controlled by the hero's player. Creatures who are wards can take a move action or a maneuver on their turn, but not both. You determine a ward's characteristics and speed, with most humanoid wards having speed 5.
+The creature or object to be protected is called the ward. At the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), the players decide which hero has responsibility for the ward. The ward moves on that hero's [turn](scc:mcdm.heroes.v1/rule.combat/turn) and is controlled by the hero's player. Creatures who are wards can take a move action or a maneuver on their turn, but not both. You determine a ward's [characteristics](scc:mcdm.heroes.v1/rule.character/characteristic) and [speed](scc:mcdm.heroes.v1/rule.character/speed), with most humanoid wards having speed 5.
 
-A sturdy ward, such as an active humanoid, typically has Stamina equal to 20 times the heroes' level. A delicate ward, such as an elderly diplomat or an important object, typically has Stamina equal to 10 times the heroes' level.
+A sturdy ward, such as an active humanoid, typically has [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 20 times the heroes' level. A delicate ward, such as an elderly diplomat or an important object, typically has Stamina equal to 10 times the heroes' level.
 
 ##### Destination
 
-Every encounter built around an escort mission has a destination: a place of safety beyond which enemies won't follow. When the encounter begins, the ward's distance from the destination should be at least three times the ward's speed (though they can start closer if difficult terrain or other obstacles complicate the route). The heroes' enemies can be placed anywhere on the encounter map, including between the ward and the destination, but not within 5 squares of the destination.
+Every encounter built around an escort mission has a destination: a place of safety beyond which enemies won't follow. When the encounter begins, the ward's distance from the destination should be at least three times the ward's [speed](scc:mcdm.heroes.v1/rule.character/speed) (though they can start closer if [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) or other obstacles complicate the route). The heroes' enemies can be placed anywhere on the encounter map, including between the ward and the destination, but not within 5 squares of the destination.
 
 ##### Reinforcements
 
-At the start of each combat round, any enemies who were killed during the previous round are replaced by a new group of creatures whose total EV is within 5 of the creatures lost. You choose the positions for these new creatures, none of which can start within 5 squares of the ward, the destination, or any hero.
+At the start of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), any enemies who were killed during the previous round are replaced by a new group of creatures whose total EV is within 5 of the creatures lost. You choose the positions for these new creatures, none of which can start within 5 squares of the ward, the destination, or any hero.
 
 ##### Monster Roles and Organization
 
-Harriers and mounts can catch up with heroes as they attempt to reach the destination, while minions can take up space on the map to become mobile obstacles. When teamed up with support creatures who grant extra movement, harriers and mounts become ever more dangerous. Controllers are an excellent option for placing obstacles in the heroes' way, while hexers might be able to slow or pin down the ward. And an ambusher or two lying in wait on the way to the destination is never a bad choice!
+[Harriers](scc:mcdm.monsters.v1/rule.role/harrier) and [mounts](scc:mcdm.monsters.v1/rule.role/mount) can catch up with heroes as they attempt to reach the destination, while [minions](scc:mcdm.monsters.v1/rule.organization/minion) can take up space on the map to become mobile obstacles. When teamed up with [support](scc:mcdm.monsters.v1/rule.role/support) creatures who grant extra movement, harriers and mounts become ever more dangerous. [Controllers](scc:mcdm.monsters.v1/rule.role/controller) are an excellent option for placing obstacles in the heroes' way, while [hexers](scc:mcdm.monsters.v1/rule.role/hexer) might be able to slow or pin down the ward. And an [ambusher](scc:mcdm.monsters.v1/rule.role/ambusher) or two lying in wait on the way to the destination is never a bad choice!
 
 ##### Map Advice
 
-A map for an encounter of this type should be big, with lots of obstructions, cover, and hazards to make the journey interesting. The heroes shouldn't simply need to lead the ward down a road, but should have to climb cliffs, cross water or lava, fight through brambles, or pass through mazes of twisting corridors. If the ward has a damage weakness, you might set up a hazard or two that deals that damage type. If an escort mission takes place indoors, having a few dead ends where the heroes must retrace their route or run into monsters is always a great choice!
+A map for an encounter of this type should be big, with lots of obstructions, [cover](scc:mcdm.heroes.v1/rule.combat/cover), and hazards to make the journey interesting. The heroes shouldn't simply need to lead the ward down a road, but should have to climb cliffs, cross water or lava, fight through brambles, or pass through mazes of twisting corridors. If the ward has a [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness), you might set up a hazard or two that deals that [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type). If an escort mission takes place indoors, having a few dead ends where the heroes must retrace their route or run into monsters is always a great choice!
 
 ##### Difficulty Modifier
 
@@ -1061,21 +1061,21 @@ The heroes win when the ward reaches their destination.
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the ward and all the heroes reach their destination in 3 rounds or less and the encounter is of standard or higher difficulty.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the ward and all the heroes reach their destination in 3 rounds or less and the encounter is of standard or higher difficulty.
 
 ##### Failure Condition
 
-The heroes earn no Victories if the ward is reduced to 0 Stamina or is prevented from reaching their destination.
+The heroes earn no Victories if the ward is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or is prevented from reaching their destination.
 
 #### Hold Them Off
 
-Sometimes the heroes just need to buy time. They might need to battle a conquering tyrant's army to allow innocent villagers time to escape. They might need to hold off wave after wave of zombies while a group of priests completes a ritual to lay the undead to rest for good. To achieve this objective, the heroes need to stay alive and protect a particular position for a number of rounds determined by you.
+Sometimes the heroes just need to buy time. They might need to battle a conquering tyrant's army to allow innocent villagers time to escape. They might need to hold off wave after wave of zombies while a group of priests completes a ritual to lay the [undead](scc:mcdm.monsters.v1/rule.keyword/undead) to rest for good. To achieve this objective, the heroes need to stay alive and protect a particular position for a number of rounds determined by you.
 
 ##### Defensive Position
 
 Often with the input of the players, you choose a defensive position—an area that must be held and controlled by the heroes. Enemies attempt to get through the defensive position or to reach a certain point in or around it, so that the fewer enemies who do so, the better the heroes' chances of success. The area can be any size, with the defensive position often blocking entry to a vulnerable area the heroes are defending.
 
-A defensive position might grant benefits to the heroes defending it. The approach to the position might be a choke point, involve crossing difficult terrain, or require climbing. Anyone inside the position might have the benefit of high ground against anyone outside it.
+A defensive position might grant benefits to the heroes defending it. The approach to the position might be a choke point, involve crossing [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), or require climbing. Anyone inside the position might have the benefit of [high ground](scc:mcdm.heroes.v1/movement/high-ground) against anyone outside it.
 
 If you want to increase the difficulty of the encounter, you might have two or more defensive positions the heroes must defend, such as two openings in a canyon pass that both lead to the same defenseless village.
 
@@ -1085,11 +1085,11 @@ An encounter focused on a defensive position has a fixed duration determined by 
 
 ##### Reinforcements
 
-At the end of each combat round, you add more enemies to the map for the heroes to battle. These reinforcements appear 10 squares or more away from the defensive position. Each new group of enemies should have an EV equal to that of all the enemies who got past the heroes during the previous round, plus the EV of one hero (see Step-by-Step Encounter Building earlier in this section). If you don't spend all the EV for the new group, the remainder can be added to reinforcements in a future round.
+At the end of each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), you add more enemies to the map for the heroes to battle. These reinforcements appear 10 squares or more away from the defensive position. Each new group of enemies should have an EV equal to that of all the enemies who got past the heroes during the previous round, plus the EV of one hero (see Step-by-Step Encounter Building earlier in this section). If you don't spend all the EV for the new group, the remainder can be added to reinforcements in a future round.
 
 ##### Monster Roles and Organization
 
-This type of encounter can be a lot of fun, with creatures of all roles entering the battle in new configurations of reinforcements each combat round to keep heroes on their toes. Use controller creatures to change up terrain and force move the heroes out of position. Ambushers, harriers, and mounts have the best chance of slipping by the heroes, especially if they come organized as minions or a horde. Artillery creatures can harass the heroes from afar, forcing them to leave their defensive position. Leaders and support creatures are great for these encounters, as they grant their allies extra movement and attacks to harass heroes and force them out of position.
+This type of encounter can be a lot of fun, with creatures of all roles entering the battle in new configurations of reinforcements each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) to keep heroes on their toes. Use [controller](scc:mcdm.monsters.v1/rule.role/controller) creatures to change up terrain and force move the heroes out of position. [Ambushers](scc:mcdm.monsters.v1/rule.role/ambusher), [harriers](scc:mcdm.monsters.v1/rule.role/harrier), and [mounts](scc:mcdm.monsters.v1/rule.role/mount) have the best chance of slipping by the heroes, especially if they come organized as [minions](scc:mcdm.monsters.v1/rule.organization/minion) or a [horde](scc:mcdm.monsters.v1/rule.organization/horde). [Artillery](scc:mcdm.monsters.v1/rule.role/artillery) creatures can harass the heroes from afar, forcing them to leave their defensive position. [Leaders](scc:mcdm.monsters.v1/rule.organization/leader) and [support](scc:mcdm.monsters.v1/rule.role/support) creatures are great for these encounters, as they grant their allies extra movement and attacks to harass heroes and force them out of position.
 
 To ensure an encounter of this type remains fair for the heroes, you'll want to only occasionally use monsters who can fly, burrow, or teleport.
 
@@ -1103,11 +1103,11 @@ The difficulty of an encounter built around holding off an enemy is determined b
 
 ##### Success Condition
 
-The heroes win if they survive for the encounter duration and allow fewer creatures through or into the defensive position than the number of heroes who started the encounter, including any retainers on the heroes' side.
+The heroes win if they survive for the encounter duration and allow fewer creatures through or into the defensive position than the number of heroes who started the encounter, including any [retainers](scc:mcdm.heroes.v1/rule.general/retainer) on the heroes' side.
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the party held off the enemy for an encounter duration of 5 rounds or more and the encounter is of standard or higher difficulty
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the party held off the enemy for an encounter duration of 5 rounds or more and the encounter is of standard or higher difficulty
 
 ##### Failure Condition
 
@@ -1127,7 +1127,7 @@ Often, a defensive position grants benefits to its defenders. The approach to th
 
 ##### Monster Roles and Organization
 
-Defensive positions benefit from having an outside patrol of defenders and brutes protecting the site, and supporting some combination of artillery, controllers, and hexers who hit the heroes hard as they approach. A support creature or a leader can benefit all other enemies, helping them do a better job of keeping the heroes hampered and away.
+Defensive positions benefit from having an outside patrol of [defenders](scc:mcdm.monsters.v1/rule.role/defender) and [brutes](scc:mcdm.monsters.v1/rule.role/brute) protecting the site, and supporting some combination of [artillery](scc:mcdm.monsters.v1/rule.role/artillery), [controllers](scc:mcdm.monsters.v1/rule.role/controller), and [hexers](scc:mcdm.monsters.v1/rule.role/hexer) who hit the heroes hard as they approach. A [support](scc:mcdm.monsters.v1/rule.role/support) creature or a [leader](scc:mcdm.monsters.v1/rule.organization/leader) can benefit all other enemies, helping them do a better job of keeping the heroes hampered and away.
 
 ##### Map Advice
 
@@ -1139,11 +1139,11 @@ An encounter of this type has a difficulty one category harder if the defensive 
 
 ##### Success Condition
 
-The heroes win when one or more heroes and none of their enemies have been in the defensive position for 4 consecutive turns.
+The heroes win when one or more heroes and none of their enemies have been in the defensive position for 4 consecutive [turns](scc:mcdm.heroes.v1/rule.combat/turn).
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition is met, or 2 Victories if the success condition is met and the encounter's difficulty is hard or extreme.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition is met, or 2 Victories if the success condition is met and the encounter's difficulty is hard or extreme.
 
 ##### Failure Condition
 
@@ -1159,7 +1159,7 @@ An encounter focused on stopping others' actions has a fixed duration determined
 
 ##### Stopping the Action
 
-The enemies' evil plans have certain requirements, and if those requirements aren't met, the action is stopped and the heroes are victorious. For instance, to complete a ritual, one or more zealot priests might be required to spend a main action each combat round to continue the ritual. A wedding or other official ceremony can't be completed if a participant or officiant is killed or captured.
+The enemies' evil plans have certain requirements, and if those requirements aren't met, the action is stopped and the heroes are victorious. For instance, to complete a ritual, one or more zealot priests might be required to spend a main action each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round) to continue the ritual. A wedding or other official ceremony can't be completed if a participant or officiant is killed or captured.
 
 ##### Failure Consequences
 
@@ -1167,11 +1167,11 @@ If the enemies' plans succeed, additional consequences might unfold within the e
 
 ##### Monster Roles and Organization
 
-The roles that best fit this type of encounter depend on the action the heroes are trying to stop. But if them doing so involves destroying, capturing, or reaching one or more creatures or objects, then brutes and defenders make an excellent choice for keeping the characters away. Artillery and harriers also make good choices for being able to target heroes no matter where they move on the map.
+The roles that best fit this type of encounter depend on the action the heroes are trying to stop. But if them doing so involves destroying, capturing, or reaching one or more creatures or objects, then [brutes](scc:mcdm.monsters.v1/rule.role/brute) and [defenders](scc:mcdm.monsters.v1/rule.role/defender) make an excellent choice for keeping the characters away. [Artillery](scc:mcdm.monsters.v1/rule.role/artillery) and [harriers](scc:mcdm.monsters.v1/rule.role/harrier) also make good choices for being able to target heroes no matter where they move on the map.
 
 ##### Map Advice
 
-An ideal map for this type of encounter depends on the action the heroes are trying to stop, but it shouldn't be easy for them to reach the places they need to go in order to complete that objective. Hazardous terrain, walls, and other forms of cover mean that heroes can't just waltz up to creatures or objects that are part of the action to be stopped and neutralize them.
+An ideal map for this type of encounter depends on the action the heroes are trying to stop, but it shouldn't be easy for them to reach the places they need to go in order to complete that objective. Hazardous terrain, walls, and other forms of [cover](scc:mcdm.heroes.v1/rule.combat/cover) mean that heroes can't just waltz up to creatures or objects that are part of the action to be stopped and neutralize them.
 
 ##### Difficulty Modifier
 
@@ -1183,7 +1183,7 @@ The heroes win if they stop the action before the encounter duration is up.
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the heroes stop the action before the last round of the encounter duration and the encounter is of standard or higher difficulty.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if the heroes stop the action before the last round of the encounter duration and the encounter is of standard or higher difficulty.
 
 ##### Failure Condition
 
@@ -1203,13 +1203,13 @@ An encounter focused on completing a specific action has a fixed duration determ
 
 ##### Tasks and Failures
 
-In each combat round, half or more of the heroes must use a maneuver to perform a task that advances their plans. You decide what tasks are available and where they must be performed. For instance, to launch an airship, one hero might have to cast off an anchor on deck while another unfurls a sail at the top of a mast. The list of available tasks can change each turn, as you determine. For more difficult encounters, performing a task might require a successful test.
+In each [combat round](scc:mcdm.heroes.v1/rule.combat/combat-round), half or more of the heroes must use a maneuver to perform a task that advances their plans. You decide what tasks are available and where they must be performed. For instance, to launch an airship, one hero might have to cast off an anchor on deck while another unfurls a sail at the top of a mast. The list of available tasks can change each [turn](scc:mcdm.heroes.v1/rule.combat/turn), as you determine. For more difficult encounters, performing a task might require a successful test.
 
 At the end of any combat round in which the heroes have failed to perform the required number of tasks, the party accumulates one failure.
 
 ##### Monster Roles and Organization
 
-Since stopping and knocking around heroes is the name of their game, controllers and hexers make excellent choices to prevent characters from completing an action, especially when backed up and bolstered by support creatures. You can also put brutes in the way of the heroes and pepper in ambushers who can harass them and then dance away.
+Since stopping and knocking around heroes is the name of their game, [controllers](scc:mcdm.monsters.v1/rule.role/controller) and [hexers](scc:mcdm.monsters.v1/rule.role/hexer) make excellent choices to prevent characters from completing an action, especially when backed up and bolstered by [support](scc:mcdm.monsters.v1/rule.role/support) creatures. You can also put [brutes](scc:mcdm.monsters.v1/rule.role/brute) in the way of the heroes and pepper in [ambushers](scc:mcdm.monsters.v1/rule.role/ambusher) who can harass them and then dance away.
 
 ##### Map Advice
 
@@ -1225,7 +1225,7 @@ The heroes win if they reach the end of the encounter duration with 1 or no fail
 
 ##### Victories
 
-Each hero earns 1 Victory if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if they reach the end of the encounter duration with zero failures and the encounter is of standard or higher difficulty.
+Each hero earns 1 [Victory](scc:mcdm.heroes.v1/rule.resource/victories) if the success condition is met. They earn 2 Victories if the success condition is met and the encounter's difficulty is extreme, or if they reach the end of the encounter duration with zero failures and the encounter is of standard or higher difficulty.
 
 ##### Failure Condition
 
@@ -1233,7 +1233,7 @@ The heroes earn no Victories and can't complete the action if they accumulate 2 
 
 #### Combined Objectives
 
-Some encounters have multiple objectives that must all be accomplished. For instance, the heroes might need to break down prison gates (a "Destroy the Thing" encounter) and then battle the guards while prisoners escape (a "Hold Them Off" encounter). The prisoners can't escape while the gates stand, and breaking the gates is useless if the prisoners don't escape, so it's all or nothing! To win the encounter, the heroes must meet the success conditions for each of the encounter's combined objectives. And if they succeed, each hero earns Victories as appropriate for each encounter.
+Some encounters have multiple objectives that must all be accomplished. For instance, the heroes might need to break down prison gates (a "Destroy the Thing" encounter) and then battle the guards while prisoners escape (a "Hold Them Off" encounter). The prisoners can't escape while the gates stand, and breaking the gates is useless if the prisoners don't escape, so it's all or nothing! To win the encounter, the heroes must meet the success conditions for each of the encounter's combined objectives. And if they succeed, each hero earns [Victories](scc:mcdm.heroes.v1/rule.resource/victories) as appropriate for each encounter.
 
 #### Alternative Objectives
 
@@ -1259,7 +1259,7 @@ Monster stat blocks in *Draw Steel* are designed to be effective. Most of the ti
 
 #### Remember Default Maneuvers
 
-Non-minion creatures can use a main action AND a maneuver on their turn, while minions can choose between one or the other. If a creature doesn't have a maneuver in their stat block, remember that they can always use the Grab, Hide, or Knockback maneuvers (see Chapter 10: Combat in *Draw Steel: Heroes*), just like the heroes can!
+Non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) creatures can use a main action AND a maneuver on their [turn](scc:mcdm.heroes.v1/rule.combat/turn), while minions can choose between one or the other. If a creature doesn't have a maneuver in their stat block, remember that they can always use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab), [Hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide), or [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuvers (see Chapter 10: Combat in *Draw Steel: Heroes*), just like the heroes can!
 
 #### Keep Creatures Moving
 
@@ -1267,11 +1267,11 @@ If you want a dynamic combat, trust that the heroes will move in response to the
 
 #### Spread the Damage Around
 
-In an encounter with a lot of creatures, it's tempting to focus fire on a single hero. This can be a good tactical move, but it's not always fun for the players. Many heroes have triggered actions they can use when they take damage, so spreading the damage around can give those heroes a chance to do a cool thing off turn.
+In an encounter with a lot of creatures, it's tempting to focus fire on a single hero. This can be a good tactical move, but it's not always fun for the players. Many heroes have [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) they can use when they take damage, so spreading the damage around can give those heroes a chance to do a cool thing off [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
 #### Modify Stamina As You See Fit
 
-Do you really want that foe to live for one more round? Give them a little extra Stamina! Is combat starting to drag? Look at that, every creature you control now has just 1 Stamina remaining. Of all the numbers in a monster's stat block, Stamina is the one you can freely adjust to serve the needs of the encounter.
+Do you really want that foe to live for one more round? Give them a little extra [Stamina](scc:mcdm.heroes.v1/rule.health/stamina)! Is combat starting to drag? Look at that, every creature you control now has just 1 Stamina remaining. Of all the numbers in a monster's stat block, Stamina is the one you can freely adjust to serve the needs of the encounter.
 
 #### Utilize Reinforcements
 
@@ -1279,7 +1279,7 @@ It can be tough to manage a lot of creatures at once in combat, but bringing in 
 
 #### Play Nice—Even If You Don't Play Fair
 
-It might be tempting to keep a flying monster far out of reach of the heroes, or popping that third villain action at the start of combat, or causing rocks to fall from the sky every turn. But the less the heroes can do about any specific situation, the less involved your players will feel in the game. Use any tricks you can think of to make combat exciting and challenge the players, but make sure that challenges can always be overcome.
+It might be tempting to keep a flying monster far out of reach of the heroes, or popping that third [villain action](scc:mcdm.monsters.v1/rule.monster/villain-action) at the start of combat, or causing rocks to fall from the sky every [turn](scc:mcdm.heroes.v1/rule.combat/turn). But the less the heroes can do about any specific situation, the less involved your players will feel in the game. Use any tricks you can think of to make combat exciting and challenge the players, but make sure that challenges can always be overcome.
 
 #### Choose Your Ending
 
@@ -1291,7 +1291,7 @@ If the heroes decide to abandon a fight they can't win, you can have them escape
 
 > **Optional Rule: Last-Stand Stamina**
 > 
-> For players who like to have their characters duke it out to the bitter end rather than ending combat early, this optional rule can help you bring things to a quicker conclusion. When it's clear that the heroes are going to win a battle, their enemies are overcome with fear, despair, and panic. In this demoralized state, each enemy's Stamina drops to 1, and each minion squad's Stamina pool is now equal to the number of minions in the squad. The heroes can then make short work of any remaining foes, getting the satisfaction of total annihilation via dice rolls.
+> For players who like to have their characters duke it out to the bitter end rather than ending combat early, this optional rule can help you bring things to a quicker conclusion. When it's clear that the heroes are going to win a battle, their enemies are overcome with fear, despair, and panic. In this demoralized state, each enemy's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) drops to 1, and each [minion](scc:mcdm.monsters.v1/rule.organization/minion) [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s Stamina pool is now equal to the number of minions in the squad. The heroes can then make short work of any remaining foes, getting the satisfaction of total annihilation via dice rolls.
 
 ### Reskinning Monsters
 
@@ -1301,14 +1301,14 @@ Use the following tips for reskinning monsters for your game:
 
 - **Description:** You can change any creature's description and use their stat block as-is to create something new. If you want a weretiger instead of a werewolf, odds are that simply describing the werewolf as a tiger-humanoid hybrid and mentally swapping the word "wolf" with "tiger" when you play will get you what you need without changing anything else. Whenever you find an existing creature whose stats are already quite close to what you want, this process is especially easy.
 - **Movement and Environment:** Giving a creature the ability to climb or swim at full speed while moving doesn't change their level or challenge. Neither does giving them an aquatic origin or the ability to breathe underwater. You can make these sorts of changes freely to create new mountainous or aquatic variants of different stat blocks, turning demonic gnolls into rampaging fishfolk or cavern-climbing horrors with ease!
-- **Damage Types:** You can change damage types for abilities, immunities, and weaknesses easily. Transforming an elemental crux of fire into a crux of acid can be done by swapping all references to fire damage in the stat block to acid damage.
+- **Damage Types:** You can change [damage types](scc:mcdm.heroes.v1/rule.damage/damage-type) for abilities, [immunities](scc:mcdm.heroes.v1/rule.damage/damage-immunity), and [weaknesses](scc:mcdm.heroes.v1/rule.damage/damage-weakness) easily. Transforming an [elemental](scc:mcdm.monsters.v1/rule.keyword/elemental) crux of fire into a crux of acid can be done by swapping all references to fire damage in the stat block to acid damage.
 - **Modifiable Stat Blocks:** The stat blocks in the Animals and Rivals sections of this book are meant to be modified, and those sections feature rules for creating new animal and humanoid stat blocks. You can use these stat blocks to create nearly any creature who falls into either of those categories, including many creatures common to fantasy.
 
 ### Adjusting Monster Levels
 
 Each monster in this book was created with the help of handcrafted tables of numbers and the extensive monster-making rules developed for *Draw Steel*. As such, stat blocks aren't intended to be modified or adjusted (with the exception of animals and rivals, as noted above). Your best bet for adjusting any given monster is to find another monster of the level, organization, and role you're looking for, and reskinning that monster while using their statistics.
 
-That said, this section provides formulas you can use to get close to the appropriate EV for a monster of a level you want to create if no stat block feels suitable for reskinning, or if you want a sense of how *Draw Steel* monsters work.
+That said, this section provides formulas you can use to get close to the appropriate [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) for a monster of a level you want to create if no stat block feels suitable for reskinning, or if you want a sense of how *Draw Steel* monsters work.
 
 #### Role, Organization, and Damage Modifier
 
@@ -1348,13 +1348,13 @@ The following two tables detail how a monster's role and organization affects th
 
 #### Encounter Value and Stamina
 
-A monster's EV is calculated using the following equation. (The EV for minions represents four minions together.) Round up results to the nearest whole number.
+A monster's EV is calculated using the following equation. (The EV for [minions](scc:mcdm.monsters.v1/rule.organization/minion) represents four minions together.) Round up results to the nearest whole number.
 
 ```
 ((2 x Level) + 4) x Organization Modifier
 ```
 
-Monster Stamina can be approximated using the following equation. Round up results to the nearest whole number.
+Monster [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) can be approximated using the following equation. Round up results to the nearest whole number.
 
 ```
 ((10 x Level) + Role Modifier) x Organization Modifier
@@ -1370,11 +1370,11 @@ The baseline damage dealt by a monster's abilities can be approximated using the
 (4 + Level + Damage Modifier) x Tier Modifier
 ```
 
-For horde and minion monsters, divide this result by 2.
+For [horde](scc:mcdm.monsters.v1/rule.organization/horde) and [minion](scc:mcdm.monsters.v1/rule.organization/minion) monsters, divide this result by 2.
 
-If the ability is a strike, add the monster's highest characteristic to the total.
+If the ability is a [strike](scc:mcdm.heroes.v1/rule.combat/strike), add the monster's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) to the total.
 
-The tier modifier uses a different value for each power roll tier.
+The tier modifier uses a different value for each [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) tier.
 
 ```
 Tier 1 = 0.6
@@ -1388,11 +1388,11 @@ At higher levels, these values can lead to damage numbers a few points higher th
 
 Additional rules cover a monster's characteristics and additional modifications to their abilities:
 
-- A monster's highest characteristic and power roll bonus is equal to 1 + their echelon. For example, a level 5 goblin (2nd echelon) has a +3 for their highest characteristic.
-- A monster who uses potencies in their abilities bases those potencies on their highest characteristic, minus 1 for each tier below tier 3. With a +3 characteristic for our level 5 goblin, their signature ability uses potency language of M < 1 at tier 1, M < 2 at tier 2, and M < 3 at tier 3.
-- If a monster is a leader or a solo, increase their highest characteristic and power roll by 1 (to a maximum of +5), and increase their potency values at all tiers by 1 (to a maximum of 6).
-- A monster's free strike damage is equal to the damage calculated for a tier 1 outcome for an ability.
-- Monster abilities normally target one creature or object. Elite, leader, and solo monsters have abilities that typically target two creatures or objects.
+- A monster's highest [characteristic](scc:mcdm.heroes.v1/rule.character/characteristic) and [power roll](scc:mcdm.heroes.v1/rule.dice/power-roll) bonus is equal to 1 + their [echelon](scc:mcdm.heroes.v1/rule.general/echelon). For example, a level 5 goblin (2nd echelon) has a +3 for their highest characteristic.
+- A monster who uses [potencies](scc:mcdm.heroes.v1/rule.character/potency) in their abilities bases those potencies on their highest characteristic, minus 1 for each tier below tier 3. With a +3 characteristic for our level 5 goblin, their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) uses potency language of M < 1 at tier 1, M < 2 at tier 2, and M < 3 at tier 3.
+- If a monster is a [leader](scc:mcdm.monsters.v1/rule.organization/leader) or a [solo](scc:mcdm.monsters.v1/rule.organization/solo), increase their highest characteristic and power roll by 1 (to a maximum of +5), and increase their potency values at all tiers by 1 (to a maximum of 6).
+- A monster's [free strike](scc:mcdm.monsters.v1/rule.monster/creature-free-strike) damage is equal to the damage calculated for a tier 1 outcome for an ability.
+- Monster abilities normally target one creature or object. [Elite](scc:mcdm.monsters.v1/rule.organization/elite), [leader](scc:mcdm.monsters.v1/rule.organization/leader), and [solo](scc:mcdm.monsters.v1/rule.organization/solo) monsters have abilities that typically target two creatures or objects.
 - If you want a monster's ability to target one additional target over what's expected, multiply the damage at all tiers by 0.8. If an ability targets two or more additional targets, multiply the damage by 0.5. If an ability targets one fewer target than expected, multiply the damage by 1.2.
 - Plenty more considerations regarding a monster's features and abilities go into creating a new monster. More robust guidance for making new monsters and abilities will appear in the future.
 
