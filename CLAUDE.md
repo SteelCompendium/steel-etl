@@ -89,9 +89,14 @@ Use `steel-etl classify --diff` to see what would change.
 SCC source segment of every code minted from that document (`internal/pipeline/pipeline.go`),
 so `mcdm.heroes.v1` → `mcdm.heroes.v1_01b` re-mints all ~1,915 heroes codes and dangles
 ~19k `scc:` links (tried and reverted 2026-06-11). The `.v1` is the SCC *namespace*
-version (breaking redefinitions only); the printing is recorded in the separate,
-currently-inert `printing:` frontmatter field. Provenance/build-stamp design + the
-removal/tombstone lifecycle model:
+version (breaking redefinitions only); the printing is recorded in the separate `printing:` frontmatter field, which flows as a
+non-identity build stamp: registry `books` map → SCC API (`index.json`/`scc.json` `books`,
+per-entry `printing`) → site page frontmatter (`printing`/`printing_book`, injected by
+`applyPrintingStamps` when `site.yaml` sets `registry:`; rendered by the v2 content partial).
+**When ingesting a new errata printing:** update `printing:` in the book's frontmatter,
+apply the content edits, then tag the commit `<book>-printing-<version>`
+(e.g. `heroes-printing-1.01b`) so the exact source is recoverable via `git show`.
+Design + the removal/tombstone lifecycle model:
 `docs/superpowers/specs/2026-06-11-printing-provenance-and-code-lifecycle-design.md`.
 
 **Scheme version (`scheme_version`).** As of SCC scheme **v1.1** (2026-06-09) the registry records a `scheme_version` int (default `1`) — the SCC *grammar* version, distinct from the registry-file `version`. The link resolver (`internal/scc/resolver.go`) tolerates an optional `scc.vN:` prefix on `scc:` links (bare `scc:` ≡ `scc.v1`) and a reserved trailing `#format` qualifier: it strips `#format` to the canonical identity before lookup, and resolves **only** links whose scheme version matches the registry's (`schemeVersionFromTag` vs `Registry.SchemeVersion()`) — a `scc.v2:` link against a v1 registry is reported unresolvable (a `gen`-time stderr `WARN:`, `resolver.go`) and left as plain text, never silently bound to v1 content. Format is never part of identity; see `reference/scc-specification.md` §2.0/§8/§9 and `docs/superpowers/specs/2026-06-09-scc-scheme-versioning-and-format-design.md`. Restamping bare `scc:` → explicit `scc.v1:` across inputs is deferred (workspace `FOLLOWUPS.md` #4).

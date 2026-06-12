@@ -151,6 +151,6 @@ Not decided.
 | Piece | Status |
 |---|---|
 | Identity/provenance separation; source segment never carries the printing | **Settled** (this doc) |
-| `printing:` frontmatter field in the heroes source | **Done** (inert — pipeline ignores it) |
-| Printing stamp wired through registry → API → rendered pages; per-printing git tags | **Deferred** — see workspace `ROADMAP.md` |
+| `printing:` frontmatter field in the heroes source | **Done** (now consumed by the pipeline) |
+| Printing stamp wired through registry → API → rendered pages; per-printing git tags | **Done** (2026-06-11) — plan: `docs/superpowers/plans/2026-06-11-printing-provenance-stamp.md` |
 | Tombstone/lifecycle implementation, Option A vs B | **Deferred until a decision trigger fires** |
