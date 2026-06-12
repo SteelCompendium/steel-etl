@@ -3711,7 +3711,7 @@ Whenever the following retainer would gain a new advancement ability, the player
 Any minions that the rival can summon can be replaced with the equivalent minions available within a heroic summoner's portfolio.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 1st-echelon -->
-##### —
+##### 1st-Echelon Rival Summoner
 
 <!-- @type: statblock -->
 ####### Rival Summoner
@@ -3822,7 +3822,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > Whenever the mummy takes damage, each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the mummy takes 2 poison damage.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 2nd-echelon -->
-##### —
+##### 2nd-Echelon Rival Summoner
 
 <!-- @type: statblock -->
 ####### Rival Summoner
@@ -3937,7 +3937,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > The first time the mournling [burrows](scc:mcdm.heroes.v1/movement/burrow) out of the ground on their turn, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 3rd-echelon -->
-##### —
+##### 3rd-Echelon Rival Summoner
 
 <!-- @type: statblock -->
 ####### Rival Summoner
@@ -4059,7 +4059,7 @@ Any minions that the rival can summon can be replaced with the equivalent minion
 > The false vampire has a [speed](scc:mcdm.heroes.v1/rule.character/speed) of 10 while a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) within 10.
 
 <!-- @type: monster-group | @domain: rival | @category: summoner | @subcategory: 4th-echelon -->
-##### —
+##### 4th-Echelon Rival Summoner
 
 <!-- @type: statblock -->
 ####### Rival Summoner
