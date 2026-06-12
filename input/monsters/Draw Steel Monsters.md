@@ -3827,23 +3827,23 @@ Unlike some other multiheaded creatures, a chimera possesses a single unified mi
 <!-- @type: featureblock -->
 ######### Chimera Malice (Malice Features)
 
-At the start of a chimera's turn, you can spend Malice to activate one of the following features.
+At the start of a chimera's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Defensive Snapping (3 Malice)**
+> ⭐️ **Defensive Snapping (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The chimera takes up a defensive stance. Until the start of their next turn, the chimera can make a free strike against each enemy who comes within 2 squares of them.
+> The chimera takes up a defensive stance. Until the start of their next turn, the chimera can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each enemy who comes within 2 squares of them.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The chimera takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The chimera takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🔳 **Unstable Terrain (5 Malice)**
+> 🔳 **Unstable Terrain (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The chimera shakes the ground, causing an eruption of loose rocks and debris that creates three size 2 stone objects anywhere on the encounter map. Each creature adjacent to one or more objects when they appear who has A < 2 takes 5 damage.
+> The chimera shakes the ground, causing an eruption of loose rocks and debris that creates three size 2 stone objects anywhere on the encounter map. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more objects when they appear who has A < 2 takes 5 damage.
 
-> 🌀 **Ashen Clouds (7 Malice)**
+> 🌀 **Ashen Clouds (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the start of the chimera's next turn, all areas of the encounter map are shrouded in a thick cloud of ash. All creatures and objects on the map have concealment that the chimera ignores. Additionally, each enemy in the cloud who has I < 1 has line of effect only within 3 squares. The potency of this feature increases by 1 each time it's used.
+> Until the start of the chimera's next turn, all areas of the encounter map are shrouded in a thick cloud of ash. All creatures and objects on the map have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) that the chimera ignores. Additionally, each enemy in the cloud who has I < 1 has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) only within 3 squares. The [potency](scc:mcdm.heroes.v1/rule.character/potency) of this feature increases by 1 each time it's used.
 
 <!-- @type: statblock -->
 ####### Chimera
@@ -3856,13 +3856,13 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the chimera can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **End Effect:** At the end of each of their turns, the chimera can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The chimera can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Volant**
 >
-> When the chimera makes a creature winded or reduces them to 0 Stamina, they can move their speed toward an enemy.
+> When the chimera makes a creature [winded](scc:mcdm.heroes.v1/rule.health/winded) or reduces them to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can move their speed toward an enemy.
 
 > 🗡 **Bite (Signature Ability)**
 >
@@ -3876,9 +3876,9 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 13 damage
 > - **17+:** 16 damage
 >
-> **Effect:** This strike deals an extra 3 damage if it gains an edge or has a double edge.
+> **Effect:** This strike deals an extra 3 damage if it gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) or has a double edge.
 
-> 🔳 **Dragon's Eruption (5 Malice)**
+> 🔳 **Dragon's Eruption (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
@@ -3890,7 +3890,7 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 5 fire damage; A < 2 5 fire damage
 > - **17+:** 7 fire damage; A < 3 7 fire damage
 
-> ❇️ **Roar (5 Malice)**
+> ❇️ **Roar (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -3899,8 +3899,8 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 4 psychic damage
-> - **12-16:** 8 psychic damage; I < 2 frightened (save ends)
-> - **17+:** 10 psychic damage; I < 3 frightened (save ends)
+> - **12-16:** 8 psychic damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 10 psychic damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 > 🗡 **Lion's Toss**
 >
@@ -3922,13 +3922,13 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 >
 > **Trigger:** A creature makes a strike against the chimera and obtains a tier 1 outcome.
 >
-> **Effect:** The chimera shifts up to 5 squares. If they end this shift within distance of the target, make a power roll.
+> **Effect:** The chimera [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares. If they end this shift within distance of the target, make a power roll.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 damage; M < 1 slowed (save ends)
-> - **12-16:** 8 damage; prone; M < 2 slowed (save ends)
-> - **17+:** 10 damage; prone; M < 3 slowed (save ends)
+> - **≤11:** 6 damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 8 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 10 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ☠️ **Overture of Destruction (Villain Action 1)**
 >
@@ -3944,7 +3944,7 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The chimera uses Dragon's Eruption and Roar without spending Malice.
+> **Effect:** The chimera uses Dragon's Eruption and Roar without spending [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 > ☠️ **Chorus of Destruction (Villain Action 3)**
 >
@@ -3952,14 +3952,14 @@ At the start of a chimera's turn, you can spend Malice to activate one of the fo
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The chimera uses Roar, then shifts up to their speed and can make a free strike against each enemy who comes adjacent to them during the shift. When the chimera ends this shift, they use Dragon's Eruption. The use of these abilities as part of this villain action costs no Malice.
+> **Effect:** The chimera uses Roar, then [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each enemy who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them during the shift. When the chimera ends this shift, they use Dragon's Eruption. The use of these abilities as part of this [villain action](scc:mcdm.monsters.v1/rule.monster/villain-action) costs no [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 <!-- @type: monster | @category: demons -->
 ## Demons
 
 Creatures of incarnate hate, demons spawn naturally in the Abyssal Wasteland. They crave violence and suffering the way other creatures need food. A demon cares only for themself, and they torture and tear lesser demons apart for fun.
 
-The bestial appearance of each demon is unique, composed of a chaotic arrangement of teeth, claws, and limbs meant for killing. Even demons of the same kind have unique features. One might bear an extra set of eyes or teeth, while another has a humanoid arm growing from their forehead.
+The bestial appearance of each demon is unique, composed of a chaotic arrangement of teeth, claws, and limbs meant for killing. Even [demons](scc:mcdm.monsters.v1/monster.group/demons) of the same kind have unique features. One might bear an extra set of eyes or teeth, while another has a humanoid arm growing from their forehead.
 
 ###### Demon Stat Block Table
 
@@ -4013,7 +4013,7 @@ When a demon's soul energy begins to flag, they fall into a state known as lethe
 
 ### Demonic Hierarchy
 
-Mortal scholars have classified demons into ten categories, each increasingly more powerful. Though demons don't use these classifications themselves, this system reflects their hierarchy, as stronger demons bully the weak into service.
+Mortal scholars have classified [demons](scc:mcdm.monsters.v1/monster.group/demons) into ten categories, each increasingly more powerful. Though demons don't use these classifications themselves, this system reflects their hierarchy, as stronger demons bully the weak into service.
 
 Each time a demon consumes a soul, there's a chance they might evolve into a more powerful demon. The evolution from one category to the next can be instantaneous, or it can take years. This inconsistency has led to much scholarly debate on whether all souls are equal, or whether demonic evolution is aided by the consumption of souls that are especially corrupt—or heroic.
 
@@ -4036,32 +4036,32 @@ A number of lesser demons have been identified across categories 1 to 3.
 
 **Mucerons** (MIU-sur-onz) are the result of an ensnarer going through repeated demon evolutions to become a brutish creature. They are covered in multiple mouths that shoot out barbed tongues, tearing at enemies as they are dragged out of position.
 
-**Remasches** (REE-mash-iz) have physical forms blended with the nature of the wastes where they dwell. A remasch teleports around the battlefield, inflicting chaos on their enemies directly or through the minions they control. These demons are rumored to be the initial source of the teachings of all shadows through the College of Black Ash.
+**Remasches** (REE-mash-iz) have physical forms blended with the nature of the wastes where they dwell. A remasch [teleports](scc:mcdm.heroes.v1/movement/teleport) around the battlefield, inflicting chaos on their enemies directly or through the [minions](scc:mcdm.monsters.v1/rule.organization/minion) they control. These demons are rumored to be the initial source of the teachings of all shadows through the College of Black Ash.
 
 **Ruinants** (rew-in-ANSE) are possessed of glowing eyes and tendrilringed maws, their bodies covered in inflamed scars and their breath coming as a sickening wheeze. A ruinant can inflict fresh wounds and burns on their victims in a pattern mirroring those on the demon's own body.
 
 **Torlases** (TORR-lahs-iz) are piecemeal abominations whose physical forms don't obey the mundane laws of geometry. They control the battlefield by using living flesh and whipping allies and enemies alike into advantageous position.
 
-**Chorogaunts** (cor-roh-GAWNTS) are terrifying demon leaders. Each is an amalgamation of several demon bodies formed into a mobile musical instrument. Several heads are arranged into a chorus embedded in the demon's chest, and their ribs are upturned into a fleshy pipe organ. Their attacks entrance and confuse enemies, making them more vulnerable to other demons.
+**Chorogaunts** (cor-roh-GAWNTS) are terrifying demon [leaders](scc:mcdm.monsters.v1/rule.organization/leader). Each is an amalgamation of several demon bodies formed into a mobile musical instrument. Several heads are arranged into a chorus embedded in the demon's chest, and their ribs are upturned into a fleshy pipe organ. Their attacks entrance and confuse enemies, making them more vulnerable to other demons.
 
 <!-- @type: featureblock -->
 ######### Demon Malice (Level 1+ Malice Features)
 
-At the start of any demon's turn, you can spend Malice to activate one of the following features.
+At the start of any demon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Soulburn (3 Malice)**
+> ⭐️ **Soulburn (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each demon acting this turn has a double edge on abilities.
+> Each demon acting this turn has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on abilities.
 
-> 🌀 **Abyssal Evolution (7 Malice)**
+> 🌀 **Abyssal Evolution (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A demon minion of your choice transforms into a non-minion horde demon of the same level.
+> A demon [minion](scc:mcdm.monsters.v1/rule.organization/minion) of your choice transforms into a non-minion [horde](scc:mcdm.monsters.v1/rule.organization/horde) demon of the same level.
 
-> 🔳 **Abyssal Rift (7 Malice)**
+> 🔳 **Abyssal Rift (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 Stamina, damage immunity 2, and holy weakness 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a Reason test or Intuition test as a maneuver while adjacent to a rift to destabilize and close it.
+> Two size 2 rifts to the Abyssal Wasteland appear at locations of your choice. Any demon can use an abyssal rift as a portal to another abyssal rift in the encounter, moving into any space in one rift and appearing immediately in any unoccupied space in the other rift. A non-demon who enters a rift for the first time in a round or starts their turn there takes corruption damage equal to the level of the highest-level demon on the encounter map. An abyssal rift is an immovable object that has 25 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2, and holy [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5. The rift closes when there are no demons remaining on the encounter map. Additionally, a creature who has the Magic or Psionics skill can make a Reason test or Intuition test as a maneuver while [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a rift to destabilize and close it.
 >
-> - **≤11:** The rift remains open and regains 5 Stamina.
+> - **≤11:** The rift remains open and regains 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 > - **12-16:** The rift remains open.
 > - **17+:** The rift closes.
 
@@ -4086,7 +4086,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 4 damage; pull 2
 > - **17+:** 5 damage; pull 3
 >
-> **Effect:** If the target is pulled adjacent to the ensnarer, the ensnarer can make a free strike against them.
+> **Effect:** If the target is pulled [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the ensnarer, the ensnarer can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Soulsight**
 >
@@ -4164,12 +4164,12 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 psychic damage
-> - **12-16:** 5 psychic damage; P < 1 weakened (save ends)
-> - **17+:** 7 psychic damage; P < 2 weakened (save ends)
+> - **12-16:** 5 psychic damage; P < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 7 psychic damage; P < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** If the target makes a strike while weakened this way, the bendrak can choose a second target within distance for the strike. The first target takes half of any damage from the strike and the second target takes any remaining damage.
+> **Effect:** If the target makes a strike while [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, the bendrak can choose a second target within distance for the strike. The first target takes half of any damage from the strike and the second target takes any remaining damage.
 
-> 🏹 **Vanish (1 Malice)**
+> 🏹 **Vanish (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |            **Maneuver** |
 > |-------------------|------------------------:|
@@ -4179,7 +4179,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Lethe**
 >
-> While the bendrak is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the bendrak is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4206,9 +4206,9 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 7 damage; pull 3
 > - **17+:** 8 damage; pull 4
 >
-> **Effect:** If the target is pulled adjacent to the muceron, the muceron can either make a free strike or use the Grab maneuver against them.
+> **Effect:** If the target is pulled [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the muceron, the muceron can either make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) or use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver against them.
 
-> 🏹 **Tongue Pull (2 Malice)**
+> 🏹 **Tongue Pull (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |                      **Maneuver** |
 > |----------------------------|----------------------------------:|
@@ -4218,7 +4218,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Lethe**
 >
-> While the muceron is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the muceron is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4241,23 +4241,23 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; the remasch can teleport up to 2 squares
-> - **12-16:** 6 damage; the remasch can teleport up to 3 squares
-> - **17+:** 8 damage; the remasch can teleport up to 5 squares
+> - **≤11:** 5 damage; the remasch can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 2 squares
+> - **12-16:** 6 damage; the remasch can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares
+> - **17+:** 8 damage; the remasch can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares
 >
-> **5 Malice:** The remasch takes an adjacent creature with them when they teleport. The creature appears in an unoccupied space adjacent to the remasch's destination.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The remasch takes an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature with them when they [teleport](scc:mcdm.heroes.v1/movement/teleport). The creature appears in an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the remasch's destination.
 
-> 👤 **Grasping Shadow (3 Malice)**
+> 👤 **Grasping Shadow (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic**   | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The remasch can teleport up to 2 squares and uses Abyssal Strike.
+> **Effect:** The remasch can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 2 squares and uses Abyssal Strike.
 
 > ⭐️ **Lethe**
 >
-> While the remasch is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the remasch is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4282,15 +4282,15 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 3 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; M < 2 bleeding (save ends)
+> - **17+:** 5 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-> 🏹 **Salt Wounds (3 Malice)**
+> 🏹 **Salt Wounds (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |           **Maneuver** |
 > |---------------------------|-----------------------:|
 > | **📏 Ranged 10**          | **🎯 Three creatures** |
 >
-> **Special:** Each target must be at less than full Stamina.
+> **Special:** Each target must be at less than full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
 > **Power Roll + 2:**
 >
@@ -4300,7 +4300,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Lethe**
 >
-> While the ruinant is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the ruinant is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4327,7 +4327,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > - **12-16:** Slide 4
 > - **17+:** Slide 5
 >
-> **Effect:** The ground in the area turns into a morass of spongy flesh before the targets are force moved. Until the start of the torlas's next turn, the area is difficult terrain, and each creature who moves in the area takes 1 damage for each square moved.
+> **Effect:** The ground in the area turns into a morass of spongy flesh before the targets are [force moved](scc:mcdm.heroes.v1/movement/forced-movement). Until the start of the torlas's next turn, the area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and each creature who moves in the area takes 1 damage for each square moved.
 
 > 🏹 **Grasping Tendons**
 >
@@ -4339,7 +4339,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Lethe**
 >
-> While the torlas is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the torlas is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4362,11 +4362,11 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 psychic damage; I < 1 slowed (save ends)
-> - **12-16:** 7 psychic damage; I < 2 slowed (save ends)
-> - **17+:** 10 psychic damage; I < 3 slowed (save ends)
+> - **≤11:** 4 psychic damage; I < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 7 psychic damage; I < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 10 psychic damage; I < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** One ally within 10 squares of the chorogaunt shifts up to their speed.
+> **Effect:** One ally within 10 squares of the chorogaunt [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed.
 
 > ❇️ **Chaotic Entrancing Harmony**
 >
@@ -4374,9 +4374,9 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > |-----------------|------------------------------:|
 > | **📏 10 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** The chorogaunt slides each target up to 3 squares, ignoring stability.
+> **Effect:** The chorogaunt slides each target up to 3 squares, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability).
 
-> ❗️ **I Thrive on Pain (3 Malice)**
+> ❗️ **I Thrive on Pain (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic**   | **Triggered action** |
 > |-------------|---------------------:|
@@ -4388,11 +4388,11 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **End Effect**
 >
-> At the end of each of their turns, the chorogaunt can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the chorogaunt can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ⭐️ **Lethe**
 >
-> While the chorogaunt is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the chorogaunt is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4404,7 +4404,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > |------------------|---------------------:|
 > | **📏 Ranged 10** | **🎯 Three enemies** |
 >
-> **Effect:** Each target must choose between taking 5 psychic damage, or being frightened (save ends).
+> **Effect:** Each target must choose between taking 5 psychic damage, or being [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
 
 > ☠️ **Bully the Weak (Villain Action 2)**
 >
@@ -4412,7 +4412,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > |------------------|----------------:|
 > | **📏 Ranged 10** | **🎯 One ally** |
 >
-> **Effect:** The chorogaunt kills the target, and each other ally in the encounter deals an extra 3 damage with strikes until the end of the round. The Director gains Malice equal to the number of heroes in the encounter.
+> **Effect:** The chorogaunt kills the target, and each other ally in the encounter deals an extra 3 damage with strikes until the end of the round. The Director gains [Malice](scc:mcdm.monsters.v1/rule.monster/malice) equal to the number of heroes in the encounter.
 
 > ☠️ **Running Cacophony (Villain Action 3)**
 >
@@ -4420,7 +4420,7 @@ At the start of any demon's turn, you can spend Malice to activate one of the fo
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The chorogaunt shifts up to their speed, uses Agonizing Harmony, shifts up to their speed, and then uses Agonizing Harmony again.
+> **Effect:** The chorogaunt [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, uses Agonizing Harmony, [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, and then uses Agonizing Harmony again.
 
 <!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Demons-2nd Echelon
@@ -4448,15 +4448,15 @@ As demons consume more souls and their mercurial forms shift into more powerful 
 <!-- @type: featureblock -->
 ######### Demon Malice (Level 4+ Malice Features)
 
-At the start of any level 4 or higher demon's turn, you can spend Malice to activate one of the following features.
+At the start of any level 4 or higher demon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (3-7 Malice)**
+> ⭐️ **Prior Malice Features (3-7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The demon activates a Malice feature available to demons of level or lower.
+> The demon activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to demons of level or lower.
 
-> 👤 **Abyssal Jaunt (3 Malice)**
+> 👤 **Abyssal Jaunt (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One demon acting this turn folds space around them, temporarily slipping in and out of the Abyssal Wasteland. Until the start of the demon's next turn, they ignore difficult terrain, can move through solid matter, and don't provoke opportunity attacks by moving. If the demon ends their turn inside solid matter, they are shunted out into the space from which they entered it.
+> One demon acting this turn folds space around them, temporarily slipping in and out of the Abyssal Wasteland. Until the start of the demon's next turn, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), can move through solid matter, and don't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving. If the demon ends their turn inside solid matter, they are shunted out into the space from which they entered it.
 
 <!-- @type: statblock -->
 ####### Grulqin
@@ -4479,7 +4479,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 >
-> **Effect:** The grulqin gains an edge on this ability if they previously moved 3 or more squares in a straight line on their turn.
+> **Effect:** The grulqin gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on this ability if they previously moved 3 or more squares in a straight line on their turn.
 
 > ⭐️ **Soulsight**
 >
@@ -4508,7 +4508,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 
 > ⭐️ **Imposing Energy**
 >
-> Any enemy who starts their turn with two or more orliq adjacent to them is slowed (EoT).
+> Any enemy who starts their turn with two or more orliq [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 
 > ⭐️ **Soulsight**
 >
@@ -4535,7 +4535,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 5 psychic damage
 > - **17+:** 7 psychic damage
 >
-> **Effect:** The target takes a bane on their next strike. If the target is winded, they have a double bane on their next strike instead.
+> **Effect:** The target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on their next strike. If the target is [winded](scc:mcdm.heroes.v1/rule.health/winded), they have a double bane on their next strike instead.
 
 <!-- @type: statblock -->
 ####### Bale Eye
@@ -4558,11 +4558,11 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 8 psychic damage
 > - **17+:** 9 psychic damage
 >
-> **Effect:** The target has corruption weakness 5 (EoT).
+> **Effect:** The target has corruption [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (EoT).
 >
-> **2 Malice:** If the target has I < 2, they have corruption weakness 5 (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If the target has I < 2, they have corruption [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 (save ends).
 
-> 🔳 **Demonwarp Tears (5 Malice)**
+> 🔳 **Demonwarp Tears (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |               **Main action** |
 > |-------------------------|------------------------------:|
@@ -4576,11 +4576,11 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 5 psychic damage; A < 2 the target is warped (save ends)
 > - **17+:** 6 psychic damage; A < 3 the target is warped (save ends)
 >
-> **Effect:** While warped, a creature has a double bane on power rolls using any characteristic higher than 0, and has a double edge on power rolls using any characteristic lower than 0.
+> **Effect:** While warped, a creature has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls using any characteristic higher than 0, and has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on power rolls using any characteristic lower than 0.
 
 > ⭐️ **Lethe**
 >
-> While the bale eye is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the bale eye is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4609,7 +4609,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Effect:** Each enemy adjacent to the fangling takes 2 damage.
 
-> 🔳 **Tumbling Gore (2 Malice)**
+> 🔳 **Tumbling Gore (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon**           |                  **Maneuver** |
 > |----------------------------|------------------------------:|
@@ -4617,17 +4617,17 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; pull 1; A < 1 bleeding (save ends)
-> - **12-16:** 3 damage; pull 1; A < 2 bleeding (save ends)
-> - **17+:** 4 damage; pull 1; A < 3 bleeding (save ends)
+> - **≤11:** 2 damage; pull 1; A < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 3 damage; pull 1; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 4 damage; pull 1; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **Made of Teeth**
 >
-> Whenever an adjacent enemy grabs the fangling or uses a melee ability against the fangling, they take 2 damage.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the fangling or uses a melee ability against the fangling, they take 2 damage.
 
 > ⭐️ **Lethe**
 >
-> While the fangling is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the fangling is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4652,21 +4652,21 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 3 corruption damage
 > - **12-16:** 6 corruption damage
-> - **17+:** 7 corruption damage; I < 3 dazed (save ends)
+> - **17+:** 7 corruption damage; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
 > **Effect:** The fiktin violently changes shape, dealing an extra 6 damage to any target they were hidden from with their Aggressive Mimicry ability.
 
-> 👤 **Aggressive Mimicry (1 Malice)**
+> 👤 **Aggressive Mimicry (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic**   | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a free maneuver.
+> **Effect:** The fiktin transforms into a mundane object of their size or smaller and is automatically hidden. They can revert to their true form as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver).
 
 > ⭐️ **Lethe**
 >
-> While the fiktin is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the fiktin is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4689,13 +4689,13 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 acid damage; M < 1 slowed (save ends)
-> - **12-16:** 7 acid damage; M < 2 slowed (save ends)
-> - **17+:** 9 acid damage; M < 3 restrained (save ends)
+> - **≤11:** 5 acid damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 7 acid damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 acid damage; M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The ground and any surfaces in the area pool with slime. The slime is difficult terrain for enemies, and any enemy is bleeding while in the area.
+> **Effect:** The ground and any surfaces in the area pool with slime. The slime is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any enemy is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) while in the area.
 
-> ❗️ **Spew Slide (1 Malice)**
+> ❗️ **Spew Slide (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
@@ -4703,11 +4703,11 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Trigger:** The gunge takes damage from a melee strike.
 >
-> **Effect:** The gunge vomits with great force, letting them shift up to their speed and ignore any additional effects from the strike. The space the gunge occupied before the shift is covered in slime that is difficult terrain for enemies. Additionally, any enemy is bleeding while in the slime.
+> **Effect:** The gunge vomits with great force, letting them [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed and ignore any additional effects from the strike. The space the gunge occupied before the shift is covered in slime that is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Additionally, any enemy is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) while in the slime.
 
 > ⭐️ **Lethe**
 >
-> While the gunge is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the gunge is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4732,11 +4732,11 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 7 damage
 > - **12-16:** 9 damage
-> - **17+:** 11 damage; grabbed, and the target takes a bane on the Escape Grab maneuver
+> - **17+:** 11 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed), and the target takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver
 >
-> **Effect:** Any target grabbed this way takes 4 psychic damage at the start of each of the tormenauk's turns.
+> **Effect:** Any target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes 4 psychic damage at the start of each of the tormenauk's turns.
 
-> ❇️ **Agony Wail (5 Malice)**
+> ❇️ **Agony Wail (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
@@ -4744,15 +4744,15 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 psychic damage; I < 1 dazed (save ends)
-> - **12-16:** 6 psychic damage; I < 2 dazed (save ends)
-> - **17+:** 8 psychic damage; I < 3 dazed (save ends)
+> - **≤11:** 4 psychic damage; I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 6 psychic damage; I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 8 psychic damage; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The potency increases by 1 if the target is grabbed by the tormenauk.
+> **Effect:** The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 if the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the tormenauk.
 
 > ⭐️ **Lethe**
 >
-> While the tormenauk is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the tormenauk is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -4775,35 +4775,35 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 corruption damage; A < 2 restrained (save ends)
-> - **12-16:** 16 corruption damage; A < 3 restrained (save ends)
-> - **17+:** 19 corruption damage; A < 4 restrained (save ends)
+> - **≤11:** 11 corruption damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 16 corruption damage; A < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 19 corruption damage; A < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **2 Malice:** Two ensnarers appear in unoccupied spaces adjacent to each target. On a tier 3 outcome, four ensnarers appear.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two ensnarers appear in unoccupied spaces [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each target. On a tier 3 outcome, four ensnarers appear.
 
-> ❇️ **Demonic Egress (2 Malice)**
+> ❇️ **Demonic Egress (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |   **Maneuver** |
 > |----------------|---------------:|
 > | **📏 3 burst** | **🎯 Special** |
 >
-> **Effect:** Four level 1 demon minions (most commonly ensnarers, frenzieds, and pitlings) burst forth from the egress and appear in unoccupied spaces in the area.
+> **Effect:** Four level 1 demon [minions](scc:mcdm.monsters.v1/rule.organization/minion) (most commonly ensnarers, frenzieds, and pitlings) burst forth from the egress and appear in unoccupied spaces in the area.
 >
-> **2 Malice:** Four level 4 demon minions (most commonly orliq, grulqins, and wobalas) appear instead.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Four level 4 demon [minions](scc:mcdm.monsters.v1/rule.organization/minion) (most commonly orliq, grulqins, and wobalas) appear instead.
 
-> ❗️ **Abyssal Protectors (2 Malice)**
+> ❗️ **Abyssal Protectors (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** | **Triggered action** |
 > |-----------------|---------------------:|
 > | **📏 5 burst**  |       **🎯 Special** |
 >
-> **Trigger:** The last ally minion on the encounter map dies, or the egress is reduced below 25 Stamina.
+> **Trigger:** The last ally [minion](scc:mcdm.monsters.v1/rule.organization/minion) on the encounter map dies, or the egress is reduced below 25 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
 > **Effect:** Eight ensnarers appear anywhere in the area.
 
 > ⭐️ **End Effect**
 >
-> At the end of each of their turns, the egress can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the egress can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ☠️ **Frenzied Deluge (Villain Action 1)**
 >
@@ -4815,7 +4815,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 7 corruption damage
 > - **12-16:** 12 corruption damage
-> - **17+:** 15 corruption damage; two frenzieds appear in unoccupied spaces adjacent to each target
+> - **17+:** 15 corruption damage; two frenzieds appear in unoccupied spaces [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each target
 
 > ☠️ **Fold Space (Villain Action 2)**
 >
@@ -4823,7 +4823,7 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 > |------------------|------------:|
 > | **📏 Ranged 20** | **🎯 Self** |
 >
-> **Effect:** The egress folds into their own portal and teleports to an unoccupied space within distance. Four level 4 demon minions (most commonly orliq, grulqins, and wobalas) appear in squares in the egress's former space.
+> **Effect:** The egress folds into their own portal and [teleports](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space within distance. Four level 4 demon [minions](scc:mcdm.monsters.v1/rule.organization/minion) (most commonly orliq, grulqins, and wobalas) appear in squares in the egress's former space.
 
 > ☠️ **Blood of the Abyss (Villain Action 3)**
 >
@@ -4833,11 +4833,11 @@ At the start of any level 4 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 6 corruption damage; R < 2 weakened (save ends)
-> - **12-16:** 11 corruption damage; R < 3 weakened (save ends)
-> - **17+:** 14 corruption damage; R < 4 weakened (save ends)
+> - **≤11:** 6 corruption damage; R < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 11 corruption damage; R < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 14 corruption damage; R < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** The egress recalls and instantly destroys any minion allies on the encounter map. A torrent of churned-up minion bodies, blood, and ichor erupts from the egress, dealing an extra 1 damage for each minion destroyed this way.
+> **Effect:** The egress recalls and instantly destroys any [minion](scc:mcdm.monsters.v1/rule.organization/minion) allies on the encounter map. A torrent of churned-up minion bodies, blood, and ichor erupts from the egress, dealing an extra 1 damage for each minion destroyed this way.
 
 <!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### Demons-3rd Echelon
@@ -4865,15 +4865,15 @@ A **soulraker hivequeen** is a demonic wasp whose abdomen houses their own soulr
 <!-- @type: featureblock -->
 ######### Demon Malice (Level 7+ Malice Features)
 
-At the start of any level 7 or higher demon's turn, you can spend Malice to activate one of the following features.
+At the start of any level 7 or higher demon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (3-7 Malice)**
+> ⭐️ **Prior Malice Features (3-7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The demon activates a Malice feature available to demons of level 6 or lower.
+> The demon activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to demons of level 6 or lower.
 
-> ❇️ **Seeping Blight (5 Malice)**
+> ❇️ **Seeping Blight (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One demon acting this turn expels blight—digested soul juice—onto the ground around them in a 3 burst that lingers until the start of their next turn. Any enemy who enters the area or starts their turn there takes 6 corruption damage, and has a double bane on power rolls until the start of their next turn.
+> One demon acting this turn expels blight—digested soul juice—onto the ground around them in a 3 burst that lingers until the start of their next turn. Any enemy who enters the area or starts their turn there takes 6 corruption damage, and has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls until the start of their next turn.
 
 <!-- @type: statblock -->
 ####### Soulraker Scout
@@ -4893,12 +4893,12 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 > **Power Roll + 4:**
 >
 > - **≤11:** 3 poison damage
-> - **12-16:** 6 poison damage; the scout can shift 1 square
-> - **17+:** 7 poison damage; the scout shifts up to 3 squares
+> - **12-16:** 6 poison damage; the scout can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **17+:** 7 poison damage; the scout [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 
 > ⭐️ **Abyssal Buzzing**
 >
-> Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
+> Any enemy who starts their turn with two or more soulraker [minions](scc:mcdm.monsters.v1/rule.organization/minion) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes 3 sonic damage.
 
 <!-- @type: statblock -->
 ####### Soulraker Soldier
@@ -4923,7 +4923,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 
 > ⭐️ **Abyssal Buzzing**
 >
-> Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
+> Any enemy who starts their turn with two or more soulraker [minions](scc:mcdm.monsters.v1/rule.organization/minion) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes 3 sonic damage.
 
 <!-- @type: statblock -->
 ####### Soulraker Stinger
@@ -4946,11 +4946,11 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 > - **12-16:** 7 poison damage
 > - **17+:** 8 poison damage
 >
-> **Effect:** All soulraker demons have concealment from the target until the start of the stinger's next turn.
+> **Effect:** All soulraker demons have [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) from the target until the start of the stinger's next turn.
 
 > ⭐️ **Abyssal Buzzing**
 >
-> Any enemy who starts their turn with two or more soulraker minions adjacent to them takes 3 sonic damage.
+> Any enemy who starts their turn with two or more soulraker [minions](scc:mcdm.monsters.v1/rule.organization/minion) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes 3 sonic damage.
 
 <!-- @type: statblock -->
 ####### Blight Phage
@@ -4975,7 +4975,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Effect:** A puddle of blight—digested soul juice—covers the ground in the target's square, which is affected as if by Seeping Blight (see the Level 7+ Demon Malice feature).
 
-> 🔳 **Blight Rain (3 Malice)**
+> 🔳 **Blight Rain (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**        |                  **Maneuver** |
 > |------------------------|------------------------------:|
@@ -4985,11 +4985,11 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Effect:** The blight phage spins and sheds corruptive blight to fill the area, which is treated as if affected by Seeping Blight.
 >
-> **2 Malice:** The blight phage chooses three 2 cube areas within 10 squares of the phage. Each area is covered with blight and treated as if affected by Seeping Blight.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The blight phage chooses three 2 cube areas within 10 squares of the phage. Each area is covered with blight and treated as if affected by Seeping Blight.
 
 > ⭐️ **Lethe**
 >
-> While the blight phage is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the blight phage is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -5014,11 +5014,11 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 9 cold, fire, or sonic damage
 > - **12-16:** 11 cold, fire, or sonic damage
-> - **17+:** 13 cold, fire, or sonic damage; M < 4 bleeding, dazed, or slowed (save ends)
+> - **17+:** 13 cold, fire, or sonic damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding), [dazed](scc:mcdm.heroes.v1/condition/dazed), or [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Special:** After making the power roll, the chimeron decides what damage type the ability deals and which condition it imposes.
 
-> ❗️ **Pain Absorption (1 Malice)**
+> ❗️ **Pain Absorption (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -5030,7 +5030,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 
 > ⭐️ **Lethe**
 >
-> While the chimeron is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the chimeron is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -5054,12 +5054,12 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 > **Power Roll + 4:**
 >
 > - **≤11:** 7 damage; pull 1
-> - **12-16:** 10 damage; pull 2, grabbed
-> - **17+:** 12 damage; pull 3, grabbed
+> - **12-16:** 10 damage; pull 2, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 12 damage; pull 3, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** Any target restrained by the styrich's Tangled Nest ability can be pulled the distance determined by the power roll.
+> **Effect:** Any target [restrained](scc:mcdm.heroes.v1/condition/restrained) by the styrich's Tangled Nest ability can be pulled the distance determined by the power roll.
 
-> ❇️ **Tangled Nest (5 Malice)**
+> ❇️ **Tangled Nest (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                  **Maneuver** |
 > |----------------|------------------------------:|
@@ -5067,13 +5067,13 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** A < 2 slowed (save ends)
-> - **12-16:** Slowed (EoT) or A < 3 3 damage and restrained (EoT)
-> - **17+:** Restrained (EoT) or A < 4 3 damage and restrained (save ends)
+> - **≤11:** A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** [Slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT) or A < 3 3 damage and [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** [Restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT) or A < 4 3 damage and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Lethe**
 >
-> While the styrich is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the styrich is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -5098,27 +5098,27 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 7 poison damage; push 2
 > - **12-16:** 10 poison damage; push 2
-> - **17+:** 11 poison damage; push 4; A < 4 grabbed
+> - **17+:** 11 poison damage; push 4; A < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The praetorian can shift into each square the target leaves.
+> **Effect:** The praetorian can [shift](scc:mcdm.heroes.v1/movement/shifting) into each square the target leaves.
 
-> ❗️ **Stinging Departure (2 Malice)**
+> ❗️ **Stinging Departure (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       |           **Triggered action** |
 > |-------------|-------------------------------:|
 > | **📏 Self** | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature ends the praetorian's grab.
+> **Trigger:** A creature ends the praetorian's [grab](scc:mcdm.heroes.v1/condition/grabbed).
 >
-> **Effect:** The praetorian makes a free strike against the target, breaks off part of their stinger in the target, and shifts up to half their speed. The target is bleeding until they remove the stinger fragment as a free maneuver, taking 6 damage in the process.
+> **Effect:** The praetorian makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target, breaks off part of their stinger in the target, and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to half their speed. The target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until they remove the stinger fragment as a [free maneuver](scc:mcdm.heroes.v1/rule.combat/free-maneuver), taking 6 damage in the process.
 
 > ⭐️ **Lethe**
 >
-> While the praetorian is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the praetorian is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Praetorian Buzzing**
 >
-> Any creature who starts their turn with two or more praetorians adjacent to them takes 6 sonic damage.
+> Any creature who starts their turn with two or more praetorians [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them takes 6 sonic damage.
 
 <!-- @type: statblock -->
 ####### Soulraker Handmaiden
@@ -5133,9 +5133,9 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > A host creature implanted by a soulraker hivequeen's Stinging Ovipositor has no physical or mental signs of the handmaiden gestating inside the host's body.
 >
-> After 1d3 + 1 weeks of gestation, the handmaiden fully forms inside the host. The handmaiden always moves with and occupies the same space as the host and can't be separated from them. While totally within the creature, the handmaiden doesn't have line of effect to the host or targets outside the host and vice versa. As a maneuver, the handmaiden can emerge from the host as a horrifying tower of flesh and bone that remains attached to the host's insides. While emerged, the handmaiden can use a move action to make the host move up to their speed and has access to the host's signature abilities, using the host's modifiers for any power rolls. The handmaiden has the same Stability as the host. If the handmaiden or host is force moved, the other moves with them. While emerged, the handmaiden can be targeted independently of the host. The handmaiden can retreat totally within the host's body as a maneuver. If the handmaiden dies, their remains separate from the host.
+> After 1d3 + 1 weeks of gestation, the handmaiden fully forms inside the host. The handmaiden always moves with and occupies the same space as the host and can't be separated from them. While totally within the creature, the handmaiden doesn't have [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the host or targets outside the host and vice versa. As a maneuver, the handmaiden can emerge from the host as a horrifying tower of flesh and bone that remains attached to the host's insides. While emerged, the handmaiden can use a move action to make the host move up to their speed and has access to the host's [signature abilities](scc:mcdm.heroes.v1/rule.combat/signature-ability), using the host's modifiers for any power rolls. The handmaiden has the same [Stability](scc:mcdm.heroes.v1/rule.character/stability) as the host. If the handmaiden or host is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), the other moves with them. While emerged, the handmaiden can be targeted independently of the host. The handmaiden can retreat totally within the host's body as a maneuver. If the handmaiden dies, their remains separate from the host.
 >
-> The Find a Cure downtime project in Draw Steel: Heroes can be used to find a cure that removes a handmaiden from a host. The cure kills the handmaiden when consumed.
+> The [Find a Cure](scc:mcdm.heroes.v1/project/find-a-cure) downtime project in Draw Steel: Heroes can be used to find a cure that removes a handmaiden from a host. The cure kills the handmaiden when consumed.
 
 > 🗡 **Emergent Horrors (Signature Ability)**
 >
@@ -5147,13 +5147,13 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > - **≤11:** 8 corruption damage
 > - **12-16:** 11 corruption damage
-> - **17+:** 13 corruption damage; M < 4 frightened (save ends)
+> - **17+:** 13 corruption damage; M < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
 > **Effect:** If the handmaiden was totally within their host's body at the start of this turn, the ability deals an extra 8 damage.
 
 > ⭐️ **Lethe**
 >
-> While the handmaiden is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the handmaiden is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 <!-- @type: statblock -->
 ####### Soulraker Hivequeen
@@ -5172,21 +5172,21 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 14 poison damage; M < 3 bleeding (save ends)
-> - **12-16:** 19 poison damage; M < 4 bleeding (save ends)
+> - **≤11:** 14 poison damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 19 poison damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **17+:** 23 poison damage; M < 5 the target is implanted
 >
 > **Effect:** An implanted target has a soulraker handmaiden parasite gestating in them (see the handmaiden's Implanted Parasite trait).
 
-> ❇️ **Forced Gestation (3 Malice)**
+> ❇️ **Forced Gestation (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**        |                                          **Maneuver** |
 > |-----------------|------------------------------------------------------:|
 > | **📏 10 burst** | **🎯 Each implanted handmaiden parasite in the area** |
 >
-> **Effect:** The hivequeen lets loose a subsonic call to each target, forcing them to immediately emerge from their host's body as a mature soulraker handmaiden and make a free strike.
+> **Effect:** The hivequeen lets loose a subsonic call to each target, forcing them to immediately emerge from their host's body as a mature soulraker handmaiden and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ❗️ **For the Queen! (2 Malice)**
+> ❗️ **For the Queen! (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       | **Triggered action** |
 > |----------------|---------------------:|
@@ -5194,17 +5194,17 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Trigger:** The hivequeen is targeted by a strike for the second time on an attacker's turn, whether by the attacker or another creature acting on the attacker's turn.
 >
-> **Effect:** Two soulraker minions appear within distance.
+> **Effect:** Two soulraker [minions](scc:mcdm.monsters.v1/rule.organization/minion) appear within distance.
 >
-> **2 Malice:** A soulraker praetorian also appears within distance.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A soulraker praetorian also appears within distance.
 
 > ⭐️ **Cannibal Queen**
 >
-> At the end of their turn, the hivequeen can consume an adjacent soulraker demon to end one effect on them that can be ended by a saving throw (no action required).
+> At the end of their turn, the hivequeen can consume an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) soulraker demon to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) (no action required).
 
 > ⭐️ **Hive Soulsight**
 >
-> Any creature within 2 squares of a soulraker demon within 100 miles of the hivequeen can't be hidden from the hivequeen. The hivequeen has line of effect to such creatures.
+> Any creature within 2 squares of a soulraker demon within 100 miles of the hivequeen can't be hidden from the hivequeen. The hivequeen has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to such creatures.
 
 > ☠️ **Kicking the Nest (Villain Action 1)**
 >
@@ -5212,7 +5212,7 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 > |-----------------|-----------------------------------------:|
 > | **📏 10 burst** | **🎯 Each soulraker minion in the area** |
 >
-> **Effect:** Each target can move their speed and make a free strike. If no minions are present, four soulraker minions are summoned into unoccupied spaces within distance before the hivequeen uses this villain action.
+> **Effect:** Each target can move their speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If no [minions](scc:mcdm.monsters.v1/rule.organization/minion) are present, four soulraker [minions](scc:mcdm.monsters.v1/rule.organization/minion) are summoned into unoccupied spaces within distance before the hivequeen uses this [villain action](scc:mcdm.monsters.v1/rule.monster/villain-action).
 
 > ☠️ **Buzz Off! (Villain Action 2)**
 >
@@ -5222,11 +5222,11 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** Push 3; I < 3 dazed (save ends)
-> - **12-16:** Push 3; I < 4 dazed (save ends)
-> - **17+:** 11 sonic damage; push 3; I < 5 dazed (save ends)
+> - **≤11:** Push 3; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** Push 3; I < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 11 sonic damage; push 3; I < 5 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The hivequeen shifts up to her speed.
+> **Effect:** The hivequeen [shifts](scc:mcdm.heroes.v1/movement/shifting) up to her speed.
 
 > ☠️ **Bomber Wasp Warfare (Villain Action 3)**
 >
@@ -5236,9 +5236,9 @@ At the start of any level 7 or higher demon's turn, you can spend Malice to acti
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 poison damage; M < 3 bleeding (save ends)
-> - **12-16:** 11 poison damage; M < 4 bleeding (save ends)
-> - **17+:** 14 poison damage; M < 5 bleeding (save ends)
+> - **≤11:** 7 poison damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 poison damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 14 poison damage; M < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 <!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Demons-4th Echelon
@@ -5260,13 +5260,13 @@ The more souls a demon consumes, the more they evolve. The more they evolve, the
 <!-- @type: featureblock -->
 ######### Demon Malice (Level 10+ Malice Features)
 
-At the start of any level 10 or higher demon's turn, you can spend Malice to activate one of the following features.
+At the start of any level 10 or higher demon's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (3-7 Malice)**
+> ⭐️ **Prior Malice Features (3-7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The demon activates a Malice feature available to demons of level 9 or lower.
+> The demon activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to demons of level 9 or lower.
 
-> ❇️ **Soul Flense (7 Malice)**
+> ❇️ **Soul Flense (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > One demon acting this turn unleashes their pent-up agony and pain on every non-demon in a 5 burst. Each target makes a **Presence test**.
 >
@@ -5274,7 +5274,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 > - **12-16:** The target is soul flensed
 > - **17+:** No effect.
 >
-> **Effect:** The demon removes all conditions and effects on themself that can be ended by a saving throw, and transfers all those effects to each creature soul flensed this way.
+> **Effect:** The demon removes all [conditions](scc:mcdm.heroes.v1/rule.combat/condition) and effects on themself that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw), and transfers all those effects to each creature soul flensed this way.
 
 <!-- @type: statblock -->
 ####### Optacus
@@ -5320,7 +5320,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 > - **12-16:** 7 damage
 > - **17+:** 9 damage
 >
-> **Effect:** The tyburaki can make a free strike against each enemy adjacent to the target.
+> **Effect:** The tyburaki can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target.
 
 > ⭐️ **Breacher**
 >
@@ -5374,15 +5374,15 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 9 psychic damage; R < 3 restrained (save ends)
-> - **12-16:** 12 psychic damage; R < 4 restrained (save ends)
-> - **17+:** 14 psychic damage; R < 5 restrained (save ends)
+> - **≤11:** 9 psychic damage; R < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 12 psychic damage; R < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 14 psychic damage; R < 5 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The izyak can slide any target restrained this way up to 3 squares.
+> **Effect:** The izyak can slide any target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way up to 3 squares.
 >
-> **3 Malice:** The izyak can vertical slide any target restrained this way up to 6 squares instead. A target left in midair doesn't fall until the restrained condition ends.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The izyak can vertical slide any target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way up to 6 squares instead. A target left in midair doesn't fall until the restrained condition ends.
 
-> 🔳 **Ruinous Temptation (3 Malice)**
+> 🔳 **Ruinous Temptation (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Psionic, Ranged** | **Main action** |
 > |---------------------------|------------------------------:|
@@ -5390,17 +5390,17 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 4 psychic damage; I < 3 dazed (save ends)
-> - **12-16:** 7 psychic damage; I < 4 dazed (save ends)
-> - **17+:** 9 psychic damage; I < 5 dazed (save ends)
+> - **≤11:** 4 psychic damage; I < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 7 psychic damage; I < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 9 psychic damage; I < 5 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** Any target dazed this way must use a move action to move their speed toward the izyak on their next turn.
+> **Effect:** Any target [dazed](scc:mcdm.heroes.v1/condition/dazed) this way must use a move action to move their speed toward the izyak on their next turn.
 >
-> **2 Malice:** The area increases to a 6 cube.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The area increases to a 6 cube.
 
 > ⭐️ **Lethe**
 >
-> While the izyak is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the izyak is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -5425,11 +5425,11 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > - **≤11:** 9 damage
 > - **12-16:** 12 damage
-> - **17+:** 14 damage; I < 5 the target is slowed and weakened (save ends)
+> - **17+:** 14 damage; I < 5 the target is [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Special:** The effects of being slowed and weakened this way can't be ignored.
+> **Special:** The effects of being [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) this way can't be ignored.
 
-> 🔳 **Soul Flay (5 Malice)**
+> 🔳 **Soul Flay (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**                   |                  **Maneuver** |
 > |----------------------------|------------------------------:|                  
@@ -5437,15 +5437,15 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 4 psychic damage; P < 3 bleeding (save ends)
-> - **12-16:** 7 psychic damage; P < 4 bleeding (save ends)
-> - **17+:** 9 psychic damage; P < 5 bleeding (save ends)
+> - **≤11:** 4 psychic damage; P < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 7 psychic damage; P < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 9 psychic damage; P < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Any creature who is bleeding from this ability loses 2d6 Stamina instead of 1d6.
+> **Effect:** Any creature who is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) from this ability loses 2d6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead of 1d6.
 
 > ⭐️ **Lethe**
 >
-> While the vicisitator is winded, they gain an edge on strikes, and any strike made against them gains an edge.
+> While the vicisitator is [winded](scc:mcdm.heroes.v1/rule.health/winded), they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes, and any strike made against them gains an edge.
 
 > ⭐️ **Soulsight**
 >
@@ -5462,7 +5462,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 
 > ⭐️ **Absorb Soul**
 >
-> Whenever any demon is reduced to 0 Stamina within 10 squares of Aurumvas, the Director gains 1 Malice. Aurumvas loses this trait while he is dazed.
+> Whenever any demon is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) within 10 squares of Aurumvas, the Director gains 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice). Aurumvas loses this trait while he is [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 > 🗡 **Greedy Hands (Signature Ability)**
 >
@@ -5472,13 +5472,13 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 corruption damage; R < 4 weakened (save ends)
-> - **12-16:** 20 corruption damage; R < 5 weakened (save ends)
-> - **17+:** 24 corruption damage; R < 6 weakened (save ends)
+> - **≤11:** 15 corruption damage; R < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 20 corruption damage; R < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 24 corruption damage; R < 6 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** Aurumvas regains Stamina equal to the damage dealt.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Aurumvas regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage dealt.
 
-> 🏹 **Covetous Bolts (3 Malice)**
+> 🏹 **Covetous Bolts (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |      **Main action** |
 > |---------------------------|---------------------:|
@@ -5486,23 +5486,23 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 psychic damage; P < 4 dazed (save ends)
-> - **12-16:** 20 psychic damage; P < 5 dazed (save ends)
-> - **17+:** 24 psychic damage; P < 6 dazed (save ends)
+> - **≤11:** 15 psychic damage; P < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 20 psychic damage; P < 5 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 24 psychic damage; P < 6 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **2 Malice:** While dazed this way, a target can't gain Heroic Resources.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, a target can't gain [Heroic Resources](scc:mcdm.heroes.v1/rule.resource/heroic-resource).
 
-> 🏹 **Greed Is Good (2 Malice)**
+> 🏹 **Greed Is Good (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |   **Maneuver** |
 > |------------------|---------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
-> **Effect:** Aurumvas chooses a supernatural treasure or an item made of gold and teleports to an unoccupied space adjacent to that object, then ends one effect on him that can be ended by a saving throw.
+> **Effect:** Aurumvas chooses a supernatural treasure or an item made of gold and [teleports](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to that object, then ends one effect on him that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
 
 > ⭐️ **More... More...**
 >
-> While Aurumvas is winded, he has a double edge on strikes.
+> While Aurumvas is [winded](scc:mcdm.heroes.v1/rule.health/winded), he has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes.
 
 > ⭐️ **Soulsight**
 >
@@ -5514,7 +5514,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 > |-----------------|--------------------------------------:|
 > | **📏 20 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Aurumvas warps time with his abyssal avarice. Each target can teleport up to their speed and make a free strike.
+> **Effect:** Aurumvas warps time with his abyssal avarice. Each target can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to their speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ☠️ **Hostile Acquisition (Villain Action 2)**
 >
@@ -5522,7 +5522,7 @@ At the start of any level 10 or higher demon's turn, you can spend Malice to act
 > |------------------|---------------:|
 > | **📏 Ranged 10** | **🎯 Special** |
 >
-> **Effect:** Aurumvas chooses up to three treasures within distance that he has line of effect to and that aren't artifacts. Until the end of the encounter, ethereal golden snakes swirl around the target treasures. While an affected treasure is worn or held by a hero, each time that hero gains any amount of their Heroic Resource, the Director gains 1 Malice.
+> **Effect:** Aurumvas chooses up to three treasures within distance that he has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to and that aren't artifacts. Until the end of the encounter, ethereal golden snakes swirl around the target treasures. While an affected treasure is worn or held by a hero, each time that hero gains any amount of their [Heroic Resource](scc:mcdm.heroes.v1/rule.resource/heroic-resource), the Director gains 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 > ☠️ **No Matter the Cost (Villain Action 3)**
 >
