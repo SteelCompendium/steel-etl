@@ -1,5 +1,6 @@
 ---
 book: mcdm.beastheart.v1
+printing: "1.0"
 source: MCDM
 title: Draw Steel Beastheart
 ---

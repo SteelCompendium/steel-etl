@@ -1,5 +1,6 @@
 ---
 book: mcdm.monsters.v1
+printing: "1.01"
 source: MCDM
 title: Draw Steel Monsters
 ---
