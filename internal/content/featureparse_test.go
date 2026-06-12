@@ -137,3 +137,32 @@ func TestParseRichFeatures_MultipleBlocks(t *testing.T) {
 		t.Errorf("names = %q, %q", feats[0].Name, feats[1].Name)
 	}
 }
+
+func TestParseRichFeatures_DiceInTitle(t *testing.T) {
+	body := "> 🏹 **Hurl Bone 2d10 + [R](scc:mcdm.heroes.v1/rule.characteristic/reason)**\n" +
+		">\n" +
+		"> | **Ranged, Strike** |        **Main action** |\n" +
+		"> |--------------------|------------------------:|\n" +
+		"> | **📏 Ranged 5**    | **🎯 One creature** |\n" +
+		">\n" +
+		"> 2 damage\n" +
+		">\n" +
+		"> 4 damage\n" +
+		">\n" +
+		"> 6 damage\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if f.Name != "Hurl Bone" {
+		t.Errorf("Name = %q, want 'Hurl Bone'", f.Name)
+	}
+	if f.PowerRoll == nil || f.PowerRoll.Formula != "2d10 + R" {
+		t.Fatalf("PowerRoll = %+v, want formula '2d10 + R' (link stripped)", f.PowerRoll)
+	}
+	if f.PowerRoll.Tiers["low"] != "2 damage" || f.PowerRoll.Tiers["mid"] != "4 damage" || f.PowerRoll.Tiers["high"] != "6 damage" {
+		t.Errorf("tiers = %+v", f.PowerRoll.Tiers)
+	}
+}

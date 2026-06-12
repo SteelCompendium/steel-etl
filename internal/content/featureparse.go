@@ -96,22 +96,27 @@ func parseRichFeature(block string) (RichFeature, bool) {
 	}
 	f := RichFeature{Icon: strings.TrimSpace(tm[1]), Name: strings.TrimSpace(tm[2])}
 
-	// Parenthetical → Signature / cost / Villain Action N.
-	if pm := sbParenRe.FindStringSubmatch(f.Name); pm != nil {
-		f.Name = strings.TrimSpace(pm[1])
-		paren := strings.TrimSpace(pm[2])
-		if strings.EqualFold(paren, "Signature Ability") {
-			f.Cost = "Signature"
-		} else {
-			f.Cost = paren
-		}
-	}
-
-	// Dice-in-title power roll (summoner signatures) → formula + clean name.
+	// Dice-in-title power roll (summoner signatures) must be checked BEFORE the
+	// parenthetical strip: the SCC link in the title contains "(...)" that
+	// sbParenRe would misread as a cost parenthetical.
 	diceFormula := ""
 	if dm := sbDiceRe.FindStringSubmatch(f.Name); dm != nil {
 		f.Name = strings.TrimSpace(dm[1])
 		diceFormula = linkDisplay(strings.TrimSpace(dm[2]))
+	}
+
+	// Parenthetical → Signature / cost / Villain Action N.
+	// Skip when a dice-in-title was found (those have no cost paren).
+	if diceFormula == "" {
+		if pm := sbParenRe.FindStringSubmatch(f.Name); pm != nil {
+			f.Name = strings.TrimSpace(pm[1])
+			paren := strings.TrimSpace(pm[2])
+			if strings.EqualFold(paren, "Signature Ability") {
+				f.Cost = "Signature"
+			} else {
+				f.Cost = paren
+			}
+		}
 	}
 
 	var (
