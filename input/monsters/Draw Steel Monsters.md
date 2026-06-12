@@ -1552,19 +1552,19 @@ Ajax speaks Caelian, Higaran, Khoursirian, Phaedran, Riojan, Vaniric, and Vaslor
 
 > **Ajax the Leader**
 >
-> Ajax is a master tactician. It would stand to reason that he can enter battle leading an army instead of facing the heroes solo.
+> Ajax is a master tactician. It would stand to reason that he can enter battle leading an army instead of facing the heroes [solo](scc:mcdm.monsters.v1/rule.organization/solo).
 >
-> Future adventures might feature different iterations and stat blocks for Ajax. For now, you can convert Ajax the Invincible into a level 11 leader with the following adjustments:
+> Future adventures might feature different iterations and stat blocks for Ajax. For now, you can convert Ajax the Invincible into a level 11 [leader](scc:mcdm.monsters.v1/rule.organization/leader) with the following adjustments:
 >
-> - Reduce his encounter value to EV 52.
-> - Reduce his Stamina to 280.
+> - Reduce his encounter value to [EV](scc:mcdm.monsters.v1/rule.monster/encounter-value) 52.
+> - Reduce his [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to 280.
 > - Remove his **Ajax Turns** trait.
 > - Remove all his maneuvers.
 > - Add the following maneuver:
 >
-> **Strike Them Down** Two allies within 10 squares of Ajax each move up to their speed and can use a signature ability.
+> **Strike Them Down** Two allies within 10 squares of Ajax each move up to their speed and can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability).
 >
-> - Adjust the **I'm Not Done Yet** trait so that Ajax dies at −140 Stamina instead of −350.
+> - Adjust the **I'm Not Done Yet** trait so that Ajax dies at −140 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead of −350.
 
 <!-- @type: featureblock -->
 ######### Tactical Stance (Ajax Feature)
@@ -1577,34 +1577,34 @@ At the start of each round, Ajax chooses a new stance from one of the following 
 
 > ⭐️ **Mastermind**
 >
-> Before he uses an ability, Ajax can either shift up to 2 squares, or can cause one creature within line of effect to slide up to 2 squares, ignoring stability.
+> Before he uses an ability, Ajax can either [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares, or can cause one creature within line of effect to [slide](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares, ignoring stability.
 
 > ⭐️ **Vanguard**
 >
-> Ajax has damage immunity 5. Additionally, any enemy who makes a power roll that includes Ajax as a target has a double bane on the roll.
+> Ajax has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5. Additionally, any enemy who makes a power roll that includes Ajax as a target has a double [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the roll.
 
 <!-- @type: featureblock -->
 ######### Ajax's Malice (Malice Features)
 
 At the start of Ajax's turn, you can spend Malice to activate one of the following features.
 
-> 👤 **Reason (2 Malice)**
+> 👤 **Reason (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Ajax attempts to instill doubt into a creature within line of effect through logic and reason. The creature and Ajax make an opposed Reason test. If Ajax wins, he chooses to either deal 11 extra damage to one target on his next strike or to gain an additional triggered action during the current round. Ajax can't use this feature against the same creature during the same encounter.
+> Ajax attempts to instill doubt into a creature within line of effect through logic and reason. The creature and Ajax make an opposed [Reason](scc:mcdm.heroes.v1/rule.character/reason) test. If Ajax wins, he chooses to either deal 11 extra damage to one target on his next strike or to gain an additional [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) during the current round. Ajax can't use this feature against the same creature during the same encounter.
 
 > 🌀 **Nexus Jewel (5 Malice)**
 >
 > Until the end of the round, Ajax chooses one of the following environments he has previously visited and overlays that environment on top of the encounter map, temporarily merging multiple realities.
 >
-> **Incredibly High Above the Ground:** The winds whip and bluster. Any creature who can't fly takes a −3 penalty to stability, and forced movement effects gain a +3 bonus to their distance against such creatures.
+> **Incredibly High Above the Ground:** The winds whip and bluster. Any creature who can't [fly](scc:mcdm.heroes.v1/movement/fly) takes a −3 penalty to stability, and [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) effects gain a +3 bonus to their distance against such creatures.
 >
-> **Swamp:** The ground is difficult terrain for enemies. Any creature who starts and ends their turn in the same space is restrained (save ends).
+> **Swamp:** The ground is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Any creature who starts and ends their turn in the same space is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 >
 > **Volcanic Canyon:** The air is stiflingly hot. Each enemy takes 5 fire damage for each square they enter.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Ajax takes an additional main action on his turn. He can use this feature even if he is dazed.
+> Ajax takes an additional main action on his turn. He can use this feature even if he is [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 > 🔳 **Draw Steel (10 Malice)**
 >
@@ -1614,11 +1614,11 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Effect:** Each target makes a test using their highest characteristic.
 >
-> - **≤11:** 26 damage; bleeding and slowed (save ends)
-> - **12-16:** 22 damage; bleeding (save ends)
+> - **≤11:** 26 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 22 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 > - **17+:** 16 damage
 >
-> Ajax then raises his Blade of the Gol King above his head as four giant blades emerge from the ground to fill the area. Each target is pushed into an unoccupied space adjacent to the area after the power roll is resolved. Each blade blocks line of effect and can be dismissed by Ajax at will (no action required).
+> Ajax then raises his Blade of the Gol King above his head as four giant blades emerge from the ground to fill the area. Each target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) into an unoccupied space adjacent to the area after the power roll is resolved. Each blade blocks line of effect and can be dismissed by Ajax at will (no action required).
 
 <!-- @type: statblock -->
 ####### Ajax the Invincible
@@ -1631,11 +1631,11 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 
 > ☠️ **Ajax**
 >
-> **Ajax Turns:** Ajax takes up to three turns each round. He can't take turns consecutively. Additionally, he can use three triggered actions in a round while he isn't dazed.
+> **Ajax Turns:** Ajax takes up to three turns each round. He can't take turns consecutively. Additionally, he can use three [triggered actions](scc:mcdm.heroes.v1/rule.combat/triggered-action) in a round while he isn't [dazed](scc:mcdm.heroes.v1/condition/dazed).
 >
-> **End Effect:** At the end of each of his turns, Ajax can take 20 damage to end up to two effects on him that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of his turns, Ajax can take 20 damage to end up to two effects on him that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
-> 🗡 **Blade of the Gol King (Signature Ability)**
+> 🗡 **Blade of the Gol King ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Magic, Melee, Strike, Weapon** |                 **Main Action** |
 > |------------------------------------------|--------------------------------:|
@@ -1643,13 +1643,13 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 16 damage; M < 4 the target loses 1d3 Recoveries
-> - **12-16:** 22 damage; M < 5 the target loses 1d3 Recoveries
-> - **17+:** 26 damage; M < 6 prone and the target loses 1d3 Recoveries
+> - **≤11:** 16 damage; M < 4 the target loses 1d3 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)
+> - **12-16:** 22 damage; M < 5 the target loses 1d3 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)
+> - **17+:** 26 damage; M < 6 [prone](scc:mcdm.heroes.v1/condition/prone) and the target loses 1d3 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)
 >
-> **Effect:** Ajax shifts up to 2 squares between striking each target.
+> **Effect:** Ajax [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares between striking each target.
 >
-> **1+ Malice:** Ajax can strike one additional target for each Malice spent.
+> **1+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Ajax can strike one additional target for each [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
 > 🔳 **Decree by the Jade Hand**
 >
@@ -1659,13 +1659,13 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 11 holy damage; slide 2; P < 4 the target is hexed (save ends)
-> - **12-16:** 17 holy damage; slide 5; P < 5 the target is hexed (save ends)
-> - **17+:** 21 holy damage; slide 8; P < 6 the target is hexed (save ends)
+> - **≤11:** 11 holy damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; P < 4 the target is hexed (save ends)
+> - **12-16:** 17 holy damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5; P < 5 the target is hexed (save ends)
+> - **17+:** 21 holy damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 8; P < 6 the target is hexed (save ends)
 >
 > **Effect:** A hexed target glows green, and each of their heroic abilities has its cost increased by 2.
 >
-> **3 Malice:** The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is difficult terrain. Each flying target who has M < 5 is knocked prone.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The potency increases by 1. Additionally, the ground beneath the area drops 3 squares and is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Each flying target who has M < 5 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > 🏹 **Divine Vine**
 >
@@ -1676,10 +1676,10 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 > **Power Roll + 5:**
 >
 > - **≤11:** No effect.
-> - **12-16:** The target is grabbed.
-> - **17+:** 11 damage; the target is grabbed.
+> - **12-16:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
+> - **17+:** 11 damage; the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 >
-> **Effect:** If the target is grabbed, Ajax can choose to keep the vine extended, pull the target adjacent to him, or pull himself adjacent to the target. The vine stays attached to a grabbed target until it takes damage from a strike, the target escapes the grab, or Ajax causes the vine to release the target (no action required).
+> **Effect:** If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed), Ajax can choose to keep the vine extended, [pull](scc:mcdm.heroes.v1/movement/forced-movement) the target adjacent to him, or pull himself adjacent to the target. The vine stays attached to a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) target until it takes damage from a strike, the target escapes the grab, or Ajax causes the vine to release the target (no action required).
 >
 > **Special:** This ability can be replaced with the features of a different treasure Ajax has acquired.
 
@@ -1689,11 +1689,11 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 > |-------------------------|----------------:|
 > | **📏 5 cube within 20** |  **🎯 Special** |
 >
-> **Effect:** Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax's next turn and creates an area around it that lasts until the start of Ajax's following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have A < 5, they are dazed (save ends). Any enemy who starts their turn in the area takes 10 fire damage.
+> **Effect:** Ajax throws a glowing bead to a square within distance, which ignites at the start of Ajax's next turn and creates an area around it that lasts until the start of Ajax's following turn. Each enemy in the area when the bead ignites takes 20 fire damage, and if they have A < 5, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends). Any enemy who starts their turn in the area takes 10 fire damage.
 
 > ⭐️ **I'm Not Done Yet.**
 >
-> Ajax dies only when his Stamina reaches −350. While his Stamina is below 0, Ajax is bleeding, he can choose any two options from his Tactical Stance trait each round, and the Director gains 2 additional Malice per round.
+> Ajax dies only when his [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) reaches −350. While his [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) is below 0, Ajax is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), he can choose any two options from his Tactical Stance trait each round, and the Director gains 2 additional [Malice](scc:mcdm.monsters.v1/rule.monster/malice) per round.
 
 > ❗️ **Is This What They Taught You?**
 >
@@ -1703,7 +1703,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Trigger:** A creature within distance marks Ajax.
 >
-> **Effect:** The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an edge on power rolls against them, and whenever the target uses a triggered action involving their mark on Ajax, he can make a free strike against them.
+> **Effect:** The target is marked while Ajax is marked. While the target is marked this way, Ajax gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on power rolls against them, and whenever the target uses a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) involving their mark on Ajax, he can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ❗️ **Shieldbreaker Talisman**
 >
@@ -1713,7 +1713,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Trigger:** An enemy within distance uses an ability to reduce damage.
 >
-> **Effect:** Ajax makes a free strike against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can't be reduced in any way.
+> **Effect:** Ajax makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target, dealing extra damage equal to twice the amount that was reduced. This extra damage can't be reduced in any way.
 
 > ❗️ **Who's Hesitating?**
 >
@@ -1723,7 +1723,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Trigger:** A creature uses the Hesitation is Weakness ability.
 >
-> **Effect:** Ajax shifts up to his speed and can make a free strike. If the target has R < 4, this free strike also makes them weakened until the end of their next turn.
+> **Effect:** Ajax [shifts](scc:mcdm.heroes.v1/movement/shifting) up to his speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If the target has R < 4, this free strike also makes them [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
 
 > ❗️ **Your Obsession With Me Betrays You**
 >
@@ -1733,7 +1733,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Trigger:** Ajax causes a creature within distance to gain ferocity or wrath.
 >
-> **Effect:** If the target has I < 4, they use a signature ability against a target of Ajax's choice.
+> **Effect:** If the target has I < 4, they use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against a target of Ajax's choice.
 
 > ❗️ **You Would Flounder Your Assault? (2 Malice)**
 >
@@ -1741,9 +1741,9 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 > |-------------|---------------------:|
 > | **📏 Self** |          **🎯 Self** |
 >
-> **Trigger:** A creature within 10 squares regains Stamina.
+> **Trigger:** A creature within 10 squares regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
-> **Effect:** Ajax regains the same amount of Stamina.
+> **Effect:** Ajax regains the same amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ☠️ **Phoenix Wing King (Villain Action 1)**
 >
@@ -1753,11 +1753,11 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 11 fire damage; A < 4 weakened (save ends)
-> - **12-16:** 17 fire damage; A < 5 weakened (save ends)
-> - **17+:** 21 fire damage; A < 6 weakened (save ends)
+> - **≤11:** 11 fire damage; A < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 17 fire damage; A < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 21 fire damage; A < 6 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Ajax flies at high speed to cut through each target, then appears in an unoccupied space within distance.
+> **Effect:** Ajax [flies](scc:mcdm.heroes.v1/movement/fly) at high speed to cut through each target, then appears in an unoccupied space within distance.
 
 > ☠️ **I've Learned Their Tricks (Villain Action 2)**
 >
@@ -1765,7 +1765,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 > |----------------|------------------------------:|
 > | **📏 3 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Ajax uses the shadow elf eclipse's technique to reduce each target's surges to 0. Additionally, until the end of the round, Ajax ignores edges and double edges on any target's abilities, and ignores any nondamaging effects of any target's damage-dealing abilities.
+> **Effect:** Ajax uses the shadow elf eclipse's technique to reduce each target's [surges](scc:mcdm.heroes.v1/rule.resource/surge) to 0. Additionally, until the end of the round, Ajax ignores [edges](scc:mcdm.heroes.v1/rule.dice/edge) and double edges on any target's abilities, and ignores any nondamaging effects of any target's damage-dealing abilities.
 >
 > **Special:** This villain action can be replaced with a villain action from a creature any target has previously encountered.
 
@@ -1775,7 +1775,7 @@ At the start of Ajax's turn, you can spend Malice to activate one of the followi
 > |------------------|------------------------------:|
 > | **📏 7 burst**   | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target who has I < 5 is knocked prone and can't stand until Ajax deals damage to them. For each target not knocked prone, Ajax can move up to his speed toward that target and use Blade of the Gol King against them.
+> **Effect:** Each target who has I < 5 is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand until Ajax deals damage to them. For each target not knocked [prone](scc:mcdm.heroes.v1/condition/prone), Ajax can move up to his speed toward that target and use Blade of the Gol King against them.
 
 <!-- @type: monster | @category: angulotls -->
 ## Angulotls
@@ -1792,7 +1792,7 @@ Angulotl physiology is delicately balanced, and it doesn't take much to upset th
 
 #### Moisture Dependent
 
-Angulotls breathe through their skin, so they need to stay damp or they suffocate. They often avoid travel in dry areas, and they prefer not to stray far from sources of freshwater unless it's raining.
+Angulotls breathe through their skin, so they need to stay damp or they [suffocate](scc:mcdm.heroes.v1/rule.health/suffocating). They often avoid travel in dry areas, and they prefer not to stray far from sources of freshwater unless it's raining.
 
 #### Clawfish
 
@@ -1804,26 +1804,26 @@ Most angulotls speak Filliaric.
 
 #### Wet
 
-Angulotls make use of a unique effect called "wet." While wet, an angulotl doesn't provoke opportunity attacks by moving. At the same time, any non-angulotl who is wet and ends their turn with none of their movement remaining slips and falls prone. Several angulotl abilities can impose this effect, but a creature in an encounter featuring angulotls can also become wet by entering water, as the Director determines.
+Angulotls make use of a unique effect called "wet." While wet, an angulotl doesn't provoke [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) by moving. At the same time, any non-angulotl who is wet and ends their turn with none of their movement remaining slips and falls [prone](scc:mcdm.heroes.v1/condition/prone). Several angulotl abilities can impose this effect, but a creature in an encounter featuring angulotls can also become wet by entering water, as the Director determines.
 
 <!-- @type: featureblock -->
 ######### Angulotl Malice (Malice Features)
 
 At the start of any angulotl's turn, you can spend Malice to activate one of the following features.
 
-> ⭐️ **Leapfrog (3 Malice)**
+> ⭐️ **Leapfrog (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, when an angulotl moves through an inactive angulotl's space, the inactive angulotl can use a free triggered action to jump 3 squares.
 
-> ❇️ **Resonating Croak (5 Malice)**
+> ❇️ **Resonating Croak (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each angulotl in the encounter puffs out their throat and starts loudly droning. Any non-angulotl adjacent to an angulotl makes an **Intuition test.**
+> Each angulotl in the encounter puffs out their throat and starts loudly droning. Any non-angulotl adjacent to an angulotl makes an **[Intuition](scc:mcdm.heroes.v1/rule.character/intuition) test.**
 >
-> - **≤11:** 5 sonic damage; slowed (EoT)
+> - **≤11:** 5 sonic damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 > - **12-16:** 4 sonic damage
 > - **17+:** No effect.
 
-> 🌀 **Rainfall (7 Malice)**
+> 🌀 **Rainfall (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > An angulotl calls clouds to cover the encounter map and unleash rain until the end of the round. Any creature or object that is exposed to the sky is wet until the end of the encounter.
 
@@ -1854,11 +1854,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** The cleaver jumps up to 4 squares before or after making this strike.
+> **Effect:** The cleaver jumps up to 4 squares before or after making this [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the cleaver or uses a melee ability against them, that enemy takes 1 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the cleaver or uses a melee ability against them, that enemy takes 1 poison damage.
 
 <!-- @type: statblock -->
 ####### Angulotl Dart
@@ -1881,11 +1881,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > - **12-16:** 4 poison damage
 > - **17+:** 5 poison damage
 >
-> **Effect:** The dart gains an edge on this ability against any target who has less than full Stamina.
+> **Effect:** The dart gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on this ability against any target who has less than full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the dart or uses a melee ability against them, that enemy takes 1 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the dart or uses a melee ability against them, that enemy takes 1 poison damage.
 
 <!-- @type: statblock -->
 ####### Angulotl Pollywog
@@ -1905,12 +1905,12 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > **Power Roll + 2:**
 >
 > - **≤11:** 1 poison damage
-> - **12-16:** 2 poison damage; the pollywog can shift 1 square
-> - **17+:** 3 poison damage; the pollywog shifts up to 3 squares
+> - **12-16:** 2 poison damage; the pollywog can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **17+:** 3 poison damage; the pollywog [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 
 > ⭐️ **Quick Snack**
 >
-> Any angulotl who can target the pollywog with a melee free strike can eat them as a maneuver. The angulotl regains 4 Stamina and is wet until the end of their next turn.
+> Any angulotl who can target the pollywog with a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) can eat them as a maneuver. The angulotl regains 4 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and is wet until the end of their next turn.
 
 <!-- @type: statblock -->
 ####### Clawfish
@@ -1931,9 +1931,9 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 2 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; grabbed
+> - **17+:** 5 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** Any target grabbed this way takes 2 lightning damage at the start of each of their turns.
+> **Effect:** Any target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes 2 lightning damage at the start of each of their turns.
 
 > ⭐️ **Shocking**
 >
@@ -1960,11 +1960,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > - **12-16:** 6 poison damage
 > - **17+:** 7 poison damage
 >
-> **2 Malice:** A target who has M < 2 is weakened (save ends). A target weakened this way takes 2 poison damage at the start of each of their turns.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A target who has M < 2 is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends). A target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way takes 2 poison damage at the start of each of their turns.
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the needler or uses a melee ability against them, that enemy takes 2 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the needler or uses a melee ability against them, that enemy takes 2 poison damage.
 
 <!-- @type: statblock -->
 ####### Angulotl Slink
@@ -1983,11 +1983,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 damage; pull 2
-> - **12-16:** 6 damage; pull 4
-> - **17+:** 7 damage; pull 6
+> - **≤11:** 4 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 6 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 7 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 6
 >
-> **Effect:** The target is wet (save ends). Any ally targeted by this ability ignores the damage, is wet until the end of the encounter, and is pulled up to 6 squares, ignoring stability.
+> **Effect:** The target is wet (save ends). Any ally targeted by this ability ignores the damage, is wet until the end of the encounter, and is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 6 squares, ignoring stability.
 
 > 👤 **Hop To It (2 Malice)**
 >
@@ -1995,15 +1995,15 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > |-------------|------------------:|
 > | **📏 Self** |       **🎯 Self** |
 >
-> **Effect:** The slink jumps up to 3 squares. If they have cover or concealment when they land, they can attempt to hide.
+> **Effect:** The slink jumps up to 3 squares. If they have [cover](scc:mcdm.heroes.v1/rule.combat/cover) or [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) when they land, they can attempt to hide.
 
 > ⭐️ **Adhesive**
 >
-> The slink excretes a sticky residue into their square at the end of each of their turns. Any non-angulotl who enters or leaves the square is stuck, and must use a maneuver to break free or be restrained until the end of their turn. Objects are likewise affected, and a creature must use a maneuver to remove an object from the square.
+> The slink excretes a sticky residue into their square at the end of each of their turns. Any non-angulotl who enters or leaves the square is stuck, and must use a maneuver to break free or be [restrained](scc:mcdm.heroes.v1/condition/restrained) until the end of their turn. Objects are likewise affected, and a creature must use a maneuver to remove an object from the square.
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the slink or uses a melee ability against them, that enemy takes 2 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the slink or uses a melee ability against them, that enemy takes 2 poison damage.
 
 <!-- @type: statblock -->
 ####### Angulotl Wave
@@ -2026,23 +2026,23 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > - **12-16:** 4 holy damage; R < 1 the target is illuminated (save ends)
 > - **17+:** 5 holy damage; R < 2 the target is illuminated (save ends)
 >
-> **Effect:** An illuminated creature or object can't hide or become invisible, and any strike made against an illuminated target gains an edge.
+> **Effect:** An illuminated creature or object can't hide or become invisible, and any strike made against an illuminated target gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge).
 
-> 🔳 **Noxious Bubble (2 Malice)**
+> 🔳 **Noxious Bubble (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged**                     | **Main action** |
 > |---------------------------------------------|----------------:|
 > | **📏 2 cube of unoccupied space within 10** |  **🎯 Special** |
 >
-> **Effect:** A bubble of toxic gas fills the area, ready to pop. If any creature or object touches the bubble or if the bubble takes damage, it bursts. Each angulotl adjacent to the bubble is wet until the end of the encounter, and each enemy adjacent to the bubble makes a **Might test**.
+> **Effect:** A bubble of toxic gas fills the area, ready to pop. If any creature or object touches the bubble or if the bubble takes damage, it bursts. Each angulotl adjacent to the bubble is wet until the end of the encounter, and each enemy adjacent to the bubble makes a **[Might](scc:mcdm.heroes.v1/rule.character/might) test**.
 >
-> - **≤11:** 3 poison damage; the target is wet and weakened (save ends)
+> - **≤11:** 3 poison damage; the target is wet and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 > - **12-16:** 2 poison damage; the target is wet (save ends)
-> - **17+:** 1 poison damage; the target is wet (EoT)
+> - **17+:** 1 poison damage; the target is wet ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the wave or uses a melee ability against them, that enemy takes 2 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the wave or uses a melee ability against them, that enemy takes 2 poison damage.
 
 ###### Angulotl Tactics
 
@@ -2076,13 +2076,13 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 acid damage; A < 1 dazed (save ends)
-> - **12-16:** 10 acid damage; A < 2 dazed (save ends)
-> - **17+:** 13 acid damage; A < 3 dazed (save ends)
+> - **≤11:** 7 acid damage; A < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 10 acid damage; A < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 13 acid damage; A < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
 > **Effect:** The next time the target makes a strike against the daybringer, the target takes 4 acid damage after the strike is resolved.
 >
-> **1 Malice:** The daybringer jumps up to 3 squares before or after using this ability.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The daybringer jumps up to 3 squares before or after using this ability.
 
 > 👤 **Sun Lamp**
 >
@@ -2090,7 +2090,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The daybringer expands their throat to make it resemble the sun until the start of their next turn. During that time, each angulotl who starts their turn within 10 squares of the daybringer regains 5 Stamina and gains a +3 bonus to speed until the end of their turn.
+> **Effect:** The daybringer expands their throat to make it resemble the sun until the start of their next turn. During that time, each angulotl who starts their turn within 10 squares of the daybringer regains 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and gains a +3 bonus to speed until the end of their turn.
 
 > ❗️ **Tongue Slap**
 >
@@ -2102,11 +2102,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 >
 > **Effect:** The outcome of the strike's power roll is reduced by one tier.
 >
-> **2 Malice:** The target is pulled up to 4 squares after the strike resolves.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The target is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares after the strike resolves.
 
 > ⭐️ **Moisturizing End Effect**
 >
-> At the end of each of the daybringer's turns, they can either take 5 damage or end the wet effect on an adjacent creature in order to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of the daybringer's turns, they can either take 5 damage or end the wet effect on an adjacent creature in order to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ☠️ **New Dawn (Villain Action 1)**
 >
@@ -2122,7 +2122,7 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > |----------------|--------------------------------------:|
 > | **📏 8 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target can jump up to 4 squares. Each non-minion target can make a free strike at the end of the jump.
+> **Effect:** Each target can jump up to 4 squares. Each non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) at the end of the jump.
 
 > ☠️ **It Is Day (Villain Action 3)**
 >
@@ -2130,11 +2130,11 @@ At the start of any angulotl's turn, you can spend Malice to activate one of the
 > |----------------|---------------:|
 > | **📏 Special** | **🎯 Special** |
 >
-> **Effect:** The encounter map dries up and each enemy and object on it is illuminated until the end of the encounter. An illuminated creature or object can't hide or become invisible, and any strike made against an illuminated target gains an edge. Additionally, each enemy in the encounter who is wet has that effect end and takes 6 acid damage. Each angulotl in the encounter has a double edge on their next strike.
+> **Effect:** The encounter map dries up and each enemy and object on it is illuminated until the end of the encounter. An illuminated creature or object can't hide or become invisible, and any strike made against an illuminated target gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge). Additionally, each enemy in the encounter who is wet has that effect end and takes 6 acid damage. Each angulotl in the encounter has a double edge on their next strike.
 
 > ⭐️ **Toxiferous**
 >
-> Whenever an adjacent enemy grabs the daybringer or uses a melee ability against them, that enemy takes 3 poison damage.
+> Whenever an adjacent enemy [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the daybringer or uses a melee ability against them, that enemy takes 3 poison damage.
 
 <!-- @type: monster | @category: animals -->
 ## Animals
@@ -2143,7 +2143,7 @@ The natural denizens of every world, animals ferocious, atrocious, and precociou
 
 ### Animal Traits
 
-This section presents a number of default animal stat blocks with basic features. You can customize those stat blocks by adding traits from the following categories to more closely model the animal's most identifiable features. You can spend up to 4 points on traits to add to a stat block without increasing the encounter value. Each point you spend after 4 increases the stat block's EV by 2. Unless otherwise specified, you can select a trait only once.
+This section presents a number of default animal stat blocks with basic features. You can customize those stat blocks by adding traits from the following categories to more closely model the animal's most identifiable features. You can spend up to 4 points on traits to add to a stat block without increasing the encounter value. Each point you spend after 4 increases the stat block's [EV](scc:mcdm.monsters.v1/rule.monster/encounter-value) by 2. Unless otherwise specified, you can select a trait only once.
 
 > **Lots of Options!**
 >
@@ -2155,7 +2155,7 @@ Mobility traits cover a wide range of the options that keep animals moving.
 
 ###### Burrowing (2 Points)
 
-The animal can burrow.
+The animal can [burrow](scc:mcdm.heroes.v1/movement/burrow).
 
 **+1 Point:** The animal can burrow through stone, creating a tunnel of their size in each square of stone they move through.
 
@@ -2169,9 +2169,9 @@ The animal can automatically climb at full speed while moving.
 
 ###### Flight (2 Points)
 
-The animal can fly, and their stability decreases by 2 (to a minimum of 0).
+The animal can [fly](scc:mcdm.heroes.v1/movement/fly), and their stability decreases by 2 (to a minimum of 0).
 
-**+1 Point:** The animal can also hover.
+**+1 Point:** The animal can also [hover](scc:mcdm.heroes.v1/movement/hover).
 
 **Typically Used By:** Bees, birds.
 
@@ -2183,13 +2183,13 @@ On their turn, the animal can high jump or long jump up to half their speed. Thi
 
 ###### Slinking (1 Point)
 
-The animal can use a move action to shift up to 3 squares, even while prone.
+The animal can use a move action to [shift](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares, even while [prone](scc:mcdm.heroes.v1/condition/prone).
 
 **Typically Used By:** Snakes, vermin.
 
 ###### Swiftness (1 Point)
 
-The animal has a +2 bonus to speed, and they ignore difficult terrain. (This trait can be selected twice.)
+The animal has a +2 bonus to speed, and they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). (This trait can be selected twice.)
 
 **Typically Used By:** Tigers, wolves.
 
@@ -2205,25 +2205,25 @@ Defensive traits help animals stay out of danger—or to set ambushes for unwary
 
 ###### Camouflage (1 Point)
 
-The animal can attempt to hide even while observed. While no enemy has line of effect to the animal, they can automatically hide at the end of their turn.
+The animal can attempt to hide even while observed. While no enemy has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the animal, they can automatically hide at the end of their turn.
 
 **Typically Used By:** Chameleons, foxes, tigers.
 
 ###### Fearsome (2 Points)
 
-As a maneuver, the animal makes an imposing display. Each enemy within 2 squares of the animal who has I < 1 must shift 3 squares in a straight line away from the animal.
+As a maneuver, the animal makes an imposing display. Each enemy within 2 squares of the animal who has I < 1 must [shift](scc:mcdm.heroes.v1/movement/shifting) 3 squares in a straight line away from the animal.
 
 **Typically Used By:** Aardvarks, lions, peacocks.
 
 ###### Pack (1 Point)
 
-While adjacent to an ally, the animal can't be flanked or be made frightened.
+While adjacent to an ally, the animal can't be [flanked](scc:mcdm.heroes.v1/rule.combat/flanking) or be made [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 **Typically Used By:** Hyenas, sheep, wolves.
 
 ###### Plated (1 Point)
 
-The animal has a +2 bonus to stability, and melee strikes against them take a bane.
+The animal has a +2 bonus to stability, and melee strikes against them take a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 **Typically Used By:** Beetles, crabs, turtles.
 
@@ -2241,25 +2241,25 @@ At the start of the animal's turn, each enemy adjacent to the animal who has M <
 
 ###### Thick Hide (1 Point)
 
-The animal starts any combat encounter with 10 temporary Stamina. (This trait can be selected twice.)
+The animal starts any combat encounter with 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina). (This trait can be selected twice.)
 
 **Typically Used By:** Bears, elephants, rhinoceroses.
 
 ###### Unrelenting (2 Points)
 
-Once per combat, when the animal is reduced to 0 Stamina, they can choose to either remain alive with 1 Stamina or immediately move up to their speed and make a free strike before dying.
+Once per combat, when the animal is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can choose to either remain alive with 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or immediately move up to their speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 **Typically Used By:** Bears, boars.
 
 ###### Wiggly (1 Point)
 
-The animal ignores opportunity attacks and gains an edge on the Escape Grab maneuver.
+The animal ignores [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) and gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
 
 **Typically Used By:** Eels, lizards, rats.
 
 ###### Withdraw (2 Points)
 
-Whenever the animal takes damage, they can use a triggered action to halve that damage and all other damage they take until the start of their next turn.
+Whenever the animal takes damage, they can use a [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) to halve that damage and all other damage they take until the start of their next turn.
 
 **Typically Used By:** Armadillos, turtles.
 
@@ -2269,21 +2269,21 @@ When animals hunt or face off against threats, they bring a wide range of offens
 
 ###### Charger (1 Point)
 
-The animal's signature ability has the Charge keyword, and they gain an edge on that ability if it is used as part of the Charge main action.
+The animal's [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) has the Charge keyword, and they gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on that ability if it is used as part of the [Charge](scc:mcdm.heroes.v1/feature.common.main-actions/charge) main action.
 
 **Typically Used By:** Boars, rhinoceroses, swordfish.
 
 ###### Frenzy (1 Point)
 
-The animal gains an edge on strikes against creatures who are bleeding or winded.
+The animal gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on strikes against creatures who are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) or [winded](scc:mcdm.heroes.v1/rule.health/winded).
 
 **Typically Used By:** Blood bats, piranhas, sharks.
 
 ###### Grappler (1 Point)
 
-If the target of the animal's signature ability has A < 1, they are grabbed by the animal.
+If the target of the animal's [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) has A < 1, they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the animal.
 
-**+1 Point:** An enemy grabbed by the animal takes a bane on the Escape Grab maneuver.
+**+1 Point:** An enemy [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the animal takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver.
 
 **Typically Used By:** Apes, octopuses, snakes.
 
@@ -2295,19 +2295,19 @@ The animal ignores concealment.
 
 ###### Multilimb (2 Points)
 
-The animal can target one additional creature or object whenever they make a free strike, use the Grab maneuver, or use the Knockback maneuver. (This trait can be selected twice.)
+The animal can target one additional creature or object whenever they make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver, or use the [Knockback](scc:mcdm.heroes.v1/feature.common.maneuvers/knockback) maneuver. (This trait can be selected twice.)
 
 **Typically Used By:** Monkeys, octopuses, quadrakangas.
 
 ###### Pouncer (1 Point)
 
-As a maneuver, the animal jumps up to 3 squares. If they land on an enemy their size or smaller, that enemy is knocked prone and the animal can make a free strike against them.
+As a maneuver, the animal jumps up to 3 squares. If they land on an enemy their size or smaller, that enemy is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and the animal can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 **Typically Used By:** Foxes, wild cats.
 
 ###### Power (1 Point)
 
-Whenever the animal force moves a target, they have a +2 bonus to the forced movement distance.
+Whenever the animal [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a target, they have a +2 bonus to the forced movement distance.
 
 **Typically Used By:** Bears, bulls, lions.
 
@@ -2329,7 +2329,7 @@ The animal's signature ability gains a +2 bonus to distance. (This trait can be 
 
 ###### Venom (1 Point)
 
-The animal's signature ability deals an extra 2 poison damage, and if the target has M < 1, they are weakened (save ends).
+The animal's [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) deals an extra 2 poison damage, and if the target has M < 1, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 **Typically Used By:** Platypuses, snakes, wasps.
 
@@ -2345,11 +2345,11 @@ The animal gains the following ability.
 >
 > **Power Roll + highest characteristic:**
 >
-> - **≤11:** A < 0 restrained (save ends)
-> - **12-16:** A < 1 restrained (save ends)
-> - **17+:** A < 2 restrained (save ends)
+> - **≤11:** A < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies until the end of the encounter.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter.
 
 **Typically Used By:** Pelagic snails, spiders.
 
@@ -2365,7 +2365,7 @@ Whenever the animal takes damage, each creature adjacent to the animal who has M
 
 ###### Elemental (2 Points)
 
-The animal has an affinity for one of the following damage types: acid, cold, corruption, fire, lightning, poison. The animal has damage immunity 3 to the chosen damage type, and their strikes deal the chosen damage type instead of their original damage type.
+The animal has an affinity for one of the following damage types: acid, cold, corruption, fire, lightning, poison. The animal has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 3 to the chosen damage type, and their strikes deal the chosen damage type instead of their original damage type.
 
 **Typically Used By:** Fire salamanders, ice bats.
 
@@ -2377,7 +2377,7 @@ The animal can move through spaces as if they were size 1T. Whenever the animal 
 
 ###### Hypnosis (2 Points)
 
-As a maneuver, the animal targets one enemy within 5 squares with their gaze, movements, or vocalizations. If the enemy has R < 1, they are dazed (save ends).
+As a maneuver, the animal targets one enemy within 5 squares with their gaze, movements, or vocalizations. If the enemy has R < 1, they are [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends).
 
 **Typically Used By:** Angler fish, snakes, tigers.
 
@@ -2389,15 +2389,15 @@ The animal's size increases by 1 (to a minimum of size 2), and they gain a +2 bo
 
 ###### Pass Through (2 Points)
 
-The animal can move through solid matter, and strikes made against them take a bane. If the animal ends their turn inside solid matter, they are shunted out into the space from which they entered it.
+The animal can move through solid matter, and strikes made against them take a [bane](scc:mcdm.heroes.v1/rule.dice/bane). If the animal ends their turn inside solid matter, they are shunted out into the space from which they entered it.
 
 **Typically Used By:** Barn owls, tiger wraiths.
 
 ###### Translation (2 Points)
 
-The animal can teleport.
+The animal can [teleport](scc:mcdm.heroes.v1/movement/teleport).
 
-**+1 Point:** The animal can also hover.
+**+1 Point:** The animal can also [hover](scc:mcdm.heroes.v1/movement/hover).
 
 **Typically Used By:** Quantum spiders, thrazzes.
 
@@ -2436,7 +2436,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 > - **12-16:** 9 damage
 > - **17+:** 12 damage
 >
-> **Effect:** The animal shifts up to 2 squares between strikes.
+> **Effect:** The animal [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares between strikes.
 
 > 👤 **Rush**
 >
@@ -2471,11 +2471,11 @@ The Example Animals table breaks out a number of animals using this notation. Se
 > - **12-16:** 9 damage; pull 1
 > - **17+:** 12 damage; pull 2
 >
-> **Effect:** If the target is pulled into the animal swarm, that forced movement deals damage only at the Director's determination.
+> **Effect:** If the target is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) into the animal swarm, that [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) deals damage only at the Director's determination.
 
 > ⭐️ **Swarm**
 >
-> The animal swarm can move through spaces as if they were a size 1M creature, and can occupy other creatures' spaces. At the start of each of the animal swarm's turns, they can make a free strike against each creature whose space they share.
+> The animal swarm can move through spaces as if they were a size 1M creature, and can occupy other creatures' spaces. At the start of each of the animal swarm's turns, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each creature whose space they share.
 
 > ❇️ **Impede**
 >
@@ -2483,7 +2483,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 > |---------------|---------------:|
 > | **📏 1 aura** | **🎯 Special** |
 >
-> **Effect:** The area is difficult terrain for enemies until the start of the animal swarm's next turn.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the start of the animal swarm's next turn.
 
 > ⭐️ **Nature's Spirit**
 >
@@ -2518,7 +2518,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > **Special:** The target must be the animal's size or smaller.
 >
-> **Effect:** The target vertical slides up to 3 squares. If the target is an ally, they can make a free strike at the end of the forced movement, then fall without taking damage.
+> **Effect:** The target vertical [slides](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares. If the target is an ally, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) at the end of the forced movement, then fall without taking damage.
 
 > ❗️ **Juke**
 >
@@ -2528,7 +2528,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > **Trigger:** The animal is targeted by an area ability.
 >
-> **Effect:** The animal shifts up to 2 squares before the ability resolves.
+> **Effect:** The animal [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares before the ability resolves.
 
 > ⭐️ **Nature's Spirit**
 >
@@ -2571,7 +2571,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > **Trigger:** The target is knocked prone.
 >
-> **Effect:** The animal moves up to their speed. If they end their turn adjacent to the target, they can use the Stand Up maneuver to let the target stand, then get on to ride them.
+> **Effect:** The animal moves up to their speed. If they end their turn adjacent to the target, they can use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver to let the target stand, then get on to ride them.
 
 > ⭐️ **Beast of Burden**
 >
@@ -2616,8 +2616,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 10 damage; M < 1 prone
-> - **17+:** 13 damage; M < 1 prone
+> - **12-16:** 10 damage; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 13 damage; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > 👤 **Ready to Strike**
 >
@@ -2635,7 +2635,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > **Trigger:** A creature or object comes within distance.
 >
-> **Effect:** The predator makes a free strike against the target. If the predator was hidden from the target, the strike deals an extra 3 damage.
+> **Effect:** The predator makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. If the predator was hidden from the target, the strike deals an extra 3 damage.
 
 > ⭐️ **Nature's Spirit**
 >
@@ -2659,8 +2659,8 @@ The Example Animals table breaks out a number of animals using this notation. Se
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; push 1; M < 1 prone
-> - **17+:** 14 damage; push 2; M < 1 prone
+> - **12-16:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ❇️ **Wild Swing**
 >
@@ -2672,7 +2672,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > - **≤11:** 3 damage
 > - **12-16:** 6 damage
-> - **17+:** 8 damage; A < 2 bleeding (save ends)
+> - **17+:** 8 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ❗️ **Swat**
 >
@@ -2682,7 +2682,7 @@ The Example Animals table breaks out a number of animals using this notation. Se
 >
 > **Trigger:** A creature or object within distance deals damage to the predator.
 >
-> **Effect:** The target is pushed up to 5 squares.
+> **Effect:** The target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares.
 
 > ⭐️ **Trample**
 >
@@ -2712,25 +2712,25 @@ Arixxi are a year-round menace in the warmest lands. In temperate places, arixxi
 
 At the start of an arixx's turn, you can spend Malice to activate one of the following features.
 
-> 👤 **Burning Maw (3 Malice)**
+> 👤 **Burning Maw (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The arixx dribbles acid over their mandibles, causing the next strike they make to gain an edge and deal an extra 3 acid damage.
+> The arixx dribbles acid over their mandibles, causing the next strike they make to gain an [edge](scc:mcdm.heroes.v1/rule.dice/edge) and deal an extra 3 acid damage.
 
-> 🔳 **Geyser (5 Malice)**
+> 🔳 **Geyser (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The arixx's underground tunnels swell with pressure, causing a sudden influx of hot gas to burst from a 3-square-by-3-square area anywhere on the surface. Each enemy in the area makes an **Agility test**.
+> The arixx's underground tunnels swell with pressure, causing a sudden influx of hot gas to burst from a 3-square-by-3-square area anywhere on the surface. Each enemy in the area makes an **[Agility](scc:mcdm.heroes.v1/rule.character/agility) test**.
 >
-> - **≤11:** 4 damage; vertical push 5
-> - **12-16:** 4 damage; vertical push 3
-> - **17+:** The target shifts to the nearest unoccupied space outside the area.
+> - **≤11:** 4 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **12-16:** 4 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** The target [shifts](scc:mcdm.heroes.v1/movement/shifting) to the nearest unoccupied space outside the area.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The arixx takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The arixx takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Earth Sink (7 Malice)**
+> 🌀 **Earth Sink (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The encounter map suddenly quakes, then begins to sink. Each creature on the ground who has A < 1 is knocked prone. Until the end of the encounter, each creature who starts their turn on the ground and can't burrow must spend 1 additional square of movement to leave their starting position, or 2 squares if they start their turn prone or underground. A creature who starts and ends their turn in the same space on the ground and can't burrow sinks 1 square into the ground.
+> The encounter map suddenly quakes, then begins to sink. Each creature on the ground who has A < 1 is knocked [prone](scc:mcdm.heroes.v1/condition/prone). Until the end of the encounter, each creature who starts their turn on the ground and can't [burrow](scc:mcdm.heroes.v1/movement/burrow) must spend 1 additional square of movement to leave their starting position, or 2 squares if they start their turn [prone](scc:mcdm.heroes.v1/condition/prone) or underground. A creature who starts and ends their turn in the same space on the ground and can't [burrow](scc:mcdm.heroes.v1/movement/burrow) sinks 1 square into the ground.
 
 <!-- @type: statblock -->
 ####### Arixx
@@ -2743,17 +2743,17 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the arixx can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the arixx can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The arixx can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Earthwalk**
 >
-> Difficult terrain composed of earth or loose rock doesn't cost the arixx extra movement.
+> [Difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) composed of earth or loose rock doesn't cost the arixx extra movement.
 
 > ⭐️ **Soft Underbelly**
 >
-> A prone creature making a melee strike against the arixx has a double edge on the strike instead of taking a bane.
+> A [prone](scc:mcdm.heroes.v1/condition/prone) creature making a melee strike against the arixx has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the strike instead of taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane).
 
 > 🗡 **Bite (Signature Ability)**
 >
@@ -2763,11 +2763,11 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; grabbed
-> - **12-16:** 13 damage; grabbed
-> - **17+:** 16 damage; grabbed
+> - **≤11:** 9 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 13 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 16 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A size 1 target grabbed this way takes 3 acid damage at the start of each of their turns.
+> **Effect:** A size 1 target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes 3 acid damage at the start of each of their turns.
 
 > 🗡 **Claw Swing**
 >
@@ -2777,11 +2777,11 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 damage; A < 1 grabbed
-> - **12-16:** 8 damage; A < 2 grabbed
-> - **17+:** 11 damage; A < 3 grabbed
+> - **≤11:** 5 damage; A < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 8 damage; A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 11 damage; A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The arixx can vertically slide each grabbed target up to 3 squares.
+> **Effect:** The arixx can vertically [slide](scc:mcdm.heroes.v1/movement/forced-movement) each [grabbed](scc:mcdm.heroes.v1/condition/grabbed) target up to 3 squares.
 
 > 🏹 **Spitfire**
 >
@@ -2793,7 +2793,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > - **≤11:** 4 acid damage
 > - **12-16:** 6 acid damage
-> - **17+:** 7 acid damage; prone
+> - **17+:** 7 acid damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
 > **Effect:** The ground beneath each target is covered in burning acid until the end of the encounter. Any enemy who enters an affected space for the first time in a round or starts their turn there takes 2 acid damage.
 
@@ -2806,10 +2806,10 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 3:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; push 2
-> - **17+:** 7 damage; push 4
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** The arixx flings rocks and debris to fill the area, and has a double edge on the power roll if they started their turn underground. The area is difficult terrain.
+> **Effect:** The arixx flings rocks and debris to fill the area, and has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on the power roll if they started their turn underground. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ❇️ **Dust Cloud**
 >
@@ -2817,7 +2817,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 > |----------------|---------------:|
 > | **📏 1 burst** | **🎯 Special** |
 >
-> **Effect:** The arixx kicks up dust to fill the area until the start of their next turn, then moves up to their speed. Any enemy in the area or who targets a creature in the area takes a bane on power rolls.
+> **Effect:** The arixx kicks up dust to fill the area until the start of their next turn, then moves up to their speed. Any enemy in the area or who targets a creature in the area takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls.
 
 > ❗️ **Skitter**
 >
@@ -2827,7 +2827,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > **Trigger:** The arixx takes damage.
 >
-> **Effect:** The arixx halves the damage and shifts up to 3 squares after the triggering effect resolves.
+> **Effect:** The arixx halves the damage and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares after the triggering effect resolves.
 
 > ☠️ **Acid Spew (Villain Action 1)**
 >
@@ -2849,7 +2849,7 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The arixx shifts up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig maneuver.
+> **Effect:** The arixx [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. If they end this shift above ground and within 2 squares of a creature, they use Bite against the creature and can then use the Dig maneuver.
 
 > ☠️ **Acid and Claws (Villain Action 3)**
 >
@@ -2859,9 +2859,9 @@ At the start of an arixx's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 acid damage; M < 1 weakened (save ends)
-> - **12-16:** 8 acid damage; M < 2 weakened (save ends)
-> - **17+:** 11 acid damage; M < 3 weakened (save ends)
+> - **≤11:** 5 acid damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 8 acid damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 11 acid damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 <!-- @type: monster | @category: ashen-hoarder -->
 ## Ashen Hoarder
@@ -2880,31 +2880,31 @@ These automatons are equipped to protect their cargo. If enemies corner an ashen
 
 ### Soul Shackle
 
-Creating and powering an ashen hoarder requires a vast amount of necromantic energy. Along with an entire ossuary worth of bones to construct its body, powering the construct requires a soul. That soul is divided between the hoarder and an object known as a Soul Shackle usually a ring or an amulet—that is used to command the construct. Destroying the Soul Shackle can free the trapped soul, but doing so sends an ashen hoarder into an indiscriminate unshackled rage as they feel part of their stolen soul shredded into oblivion. The construct lashes out against any living creature they can before collapsing in on themself. Freeing the soul still trapped inside the ashen hoarder's remains requires completing the Find a Cure downtime project in *[Draw Steel: Heroes](https://mcdm.gg/DS-Heroes)* and the assistance of a powerful holy figure.
+Creating and powering an ashen hoarder requires a vast amount of necromantic energy. Along with an entire ossuary worth of bones to construct its body, powering the construct requires a soul. That soul is divided between the hoarder and an object known as a Soul Shackle usually a ring or an amulet—that is used to command the construct. Destroying the Soul Shackle can free the trapped soul, but doing so sends an ashen hoarder into an indiscriminate unshackled rage as they feel part of their stolen soul shredded into oblivion. The construct lashes out against any living creature they can before collapsing in on themself. Freeing the soul still trapped inside the ashen hoarder's remains requires completing the [Find a Cure](scc:mcdm.heroes.v1/project/find-a-cure) downtime project in *[Draw Steel: Heroes](https://mcdm.gg/DS-Heroes)* and the assistance of a powerful holy figure.
 
 <!-- @type: featureblock -->
 ######### Ashen Hoarder Malice (Malice Features)
 
 At the start of an ashen hoarder's turn, you can spend Malice to activate one of the following features.
 
-> 👤 **Relentless Strikes (3 Malice)**
+> 👤 **Relentless Strikes (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The ashen hoarder moves up to their speed and can make a free strike against two targets.
+> The ashen hoarder moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against two targets.
 
-> 🔳 **Blade Wall (5 Malice)**
+> 🔳 **Blade Wall (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The ashen hoarder summons a 10 wall of bones and blades into unoccupied squares within 5 squares of them. Each square of the wall has 5 Stamina. An enemy who comes adjacent to the wall for the first time in a round or starts their turn there takes 3 damage.
+> The ashen hoarder summons a 10 [wall](scc:mcdm.heroes.v1/rule.combat/wall) of bones and blades into unoccupied squares within 5 squares of them. Each square of the wall has 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). An enemy who comes adjacent to the wall for the first time in a round or starts their turn there takes 3 damage.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The ashen hoarder takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The ashen hoarder takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🔳 **Bone Storm (7 Malice)**
+> 🔳 **Bone Storm (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The ashen hoarder launches bone lances into the air, raining them down on enemies and impaling those unlucky enough to be on the receiving end. Each enemy within 20 squares of the ashen hoarder makes an **Agility test**.
+> The ashen hoarder launches bone lances into the air, raining them down on enemies and impaling those unlucky enough to be on the receiving end. Each enemy within 20 squares of the ashen hoarder makes an **[Agility](scc:mcdm.heroes.v1/rule.character/agility) test**.
 >
-> - **≤11:** 14 damage; restrained and bleeding (save ends)
-> - **12-16:** 11 damage; bleeding (EoT)
+> - **≤11:** 14 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) and [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 > - **17+:** 6 damage
 
 <!-- @type: statblock -->
@@ -2918,7 +2918,7 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the ashen hoarder can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the ashen hoarder can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The ashen hoarder can take two turns each round. They can't take turns consecutively.
 
@@ -2930,11 +2930,11 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 10 damage; if one target has M < 2 they are bleeding (save ends); if the other target has A < 2 they are grabbed
-> - **12-16:** 15 damage; if one target has M < 3 they are bleeding (save ends); if the other target has A < 3 they are grabbed
-> - **17+:** 18 damage; M < 4 bleeding (save ends); A < 2 grabbed
+> - **≤11:** 10 damage; if one target has M < 2 they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); if the other target has A < 2 they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 15 damage; if one target has M < 3 they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); if the other target has A < 3 they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 18 damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The ashen hoarder can have up to two size 1 creatures grabbed at a time.                                                                              |  |
+> **Effect:** The ashen hoarder can have up to two size 1 creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at a time.                                                                              |  |
 
 > 🔳 **Corpse Bomb**
 >
@@ -2944,13 +2944,13 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 4 damage; A < 2 weakened (save ends)
-> - **12-16:** 8 damage; A < 3 weakened (save ends)
-> - **17+:** 11 damage; A < 4 weakened (save ends)
+> - **≤11:** 4 damage; A < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 8 damage; A < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 11 damage; A < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** Any enemy weakened this way is instead slowed and weakened (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Any enemy [weakened](scc:mcdm.heroes.v1/condition/weakened) this way is instead [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
-> **3 Malice:** The ashen hoarder targets a second 4 cube within distance.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ashen hoarder targets a second 4 cube within distance.
 
 > 🔳 **Impale (3 Malice)**
 >
@@ -2964,7 +2964,7 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 > - **12-16:** 11 corruption damage; M < 3 the target is impaled (save ends)
 > - **17+:** 14 corruption damage; M < 4 the target is impaled (save ends)
 >
-> **Effect:** An impaled creature is restrained and bleeding, and moves with the ashen hoarder. The ashen hoarder can have three creatures impaled with this ability at a time.
+> **Effect:** An impaled creature is [restrained](scc:mcdm.heroes.v1/condition/restrained) and [bleeding](scc:mcdm.heroes.v1/condition/bleeding), and moves with the ashen hoarder. The ashen hoarder can have three creatures impaled with this ability at a time.
 
 > 👤 **Bone Dozer**
 >
@@ -2972,9 +2972,9 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either pushed into the nearest unoccupied space outside the path, or if they have M < 3 is pushed forward until the movement ends. Any creature who is force moved forward into an obstacle is dazed (save ends).
+> **Effect:** The ashen hoarder moves up to twice their speed in a straight line. Each creature or object in the path of this movement is either [pushed](scc:mcdm.heroes.v1/movement/forced-movement) into the nearest unoccupied space outside the path, or if they have M < 3 is pushed forward until the movement ends. Any creature who is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) forward into an obstacle is [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends).
 
-> ❗️ **Armor of Corpses (2 Malice)**
+> ❗️ **Armor of Corpses (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Triggered action** |
 > |-------------|---------------------:|
@@ -2982,15 +2982,15 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 >
 > **Trigger:** The ashen hoarder takes damage.
 >
-> **Effect:** The ashen hoarder halves the damage. If the ashen hoarder has one or more creatures impaled, the Malice cost of this feature is reduced by 1 and one impaled creature takes the other half of the damage.
+> **Effect:** The ashen hoarder halves the damage. If the ashen hoarder has one or more creatures impaled, the [Malice](scc:mcdm.monsters.v1/rule.monster/malice) cost of this feature is reduced by 1 and one impaled creature takes the other half of the damage.
 
 > ⭐️ **Bladed Body**
 >
-> An adjacent enemy who grabs the ashen hoarder or uses a melee ability against them takes 3 damage.
+> An adjacent enemy who [grabs](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) the ashen hoarder or uses a melee ability against them takes 3 damage.
 
 > ⭐️ **Soul Singularity**
 >
-> When the ashen hoarder is reduced to 0 Stamina, they explode in a swirling singularity of bone shards and soul energy. Each creature within 5 squares of the ashen hoarder who has M < 3 takes 11 corruption damage. A creature killed by this damage has their soul sucked into the vortex and lost somewhere in the Abyssal Wasteland, and can't be brought back to life until their soul is recovered.
+> When the ashen hoarder is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they explode in a swirling singularity of bone shards and soul energy. Each creature within 5 squares of the ashen hoarder who has M < 3 takes 11 corruption damage. A creature killed by this damage has their soul sucked into the vortex and lost somewhere in the Abyssal Wasteland, and can't be brought back to life until their soul is recovered.
 
 > ☠️ **Skeletal Eruption (Villain Action 1)**
 >
@@ -3004,7 +3004,7 @@ At the start of an ashen hoarder's turn, you can spend Malice to activate one of
 > - **12-16:** 11 damage, vertical push 2
 > - **17+:** 14 damage, vertical push 3
 >
-> **Effect:** Each target is force moved straight up, then falls. A target who would normally land prone after falling is instead restrained (save ends).
+> **Effect:** Each target is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) straight up, then falls. A target who would normally land [prone](scc:mcdm.heroes.v1/condition/prone) after falling is instead [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 > ☠️ **Mobile Mine Field (Villain Action 2)**
 >
@@ -3045,8 +3045,8 @@ Alchemists have discovered a gland in the basilisk's mouth that excretes an oil 
 >
 > After a basilisk dies, a character can make a Reason test to claim oil from the basilisk's mouth, which can be used to create a special salve. One dose of salve can be applied to a petrified creature as a main action, and 1 minute after the salve is applied, that creature is no longer petrified.
 >
-> - **≤11:** 1 The character must complete the Find a Cure downtime project in *Draw Steel: Heroes* to create one dose of salve.
-> - **12-16:** 2 The character creates one dose of salve and can create two more doses by completing the Find a Cure downtime project.
+> - **≤11:** 1 The character must complete the [Find a Cure](scc:mcdm.heroes.v1/project/find-a-cure) downtime project in *Draw Steel: Heroes* to create one dose of salve.
+> - **12-16:** 2 The character creates one dose of salve and can create two more doses by completing the [Find a Cure](scc:mcdm.heroes.v1/project/find-a-cure) downtime project.
 > - **17+:** 3 The character creates three doses of salve.
 
 <!-- @type: featureblock -->
@@ -3054,11 +3054,11 @@ Alchemists have discovered a gland in the basilisk's mouth that excretes an oil 
 
 At the start of any basilisk's turn, you can spend Malice to activate one of the following features.
 
-> ⭐️ **Stone Swim (3+ Malice)**
+> ⭐️ **Stone Swim (3+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A basilisk acting this turn can burrow until the start of their next turn, and moves up to their speed. They have damage immunity 2 while underground. The basilisk can burrow through stone, but can't drag other creatures underground when they do so. At the start of each of the basilisk's turns, the Director can spend 1 Malice to let the basilisk continue burrowing.
+> A basilisk acting this turn can [burrow](scc:mcdm.heroes.v1/movement/burrow) until the start of their next turn, and moves up to their speed. They have damage immunity 2 while underground. The basilisk can burrow through stone, but can't drag other creatures underground when they do so. At the start of each of the basilisk's turns, the Director can spend 1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to let the basilisk continue burrowing.
 
-> 🔳 **Upchuck (5 Malice)**
+> 🔳 **Upchuck (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 >
 > | **Area, Weapon**        |               **Main action** |
@@ -3070,10 +3070,10 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 4 damage; A < 1 2 damage, prone
-> - **17+:** 4 damage; A < 2 5 damage, prone and can't stand (save ends)
+> - **12-16:** 4 damage; A < 1 2 damage, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 4 damage; A < 2 5 damage, [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 
-> 🔳 **Walleye (7 Malice)**
+> 🔳 **Walleye (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > A basilisk spews reflective spittle across an adjacent vertical surface in a 3-square-by-3-square area. The basilisk can use their Petrifying Eye Beams ability to target a square in the area, causing the area and distance of that ability to become a 20 x 3 line within 1 square of the wall.
 
@@ -3110,13 +3110,13 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** M < 0 restrained (save ends)
-> - **12-16:** M < 1 restrained (save ends)
-> - **17+:** Slowed (save ends); or if M < 2 restrained (save ends)
+> - **≤11:** M < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** [Slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends); or if M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.
+> **Effect:** If a target is already [slowed](scc:mcdm.heroes.v1/condition/slowed), the potency increases by 1 for that target. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way magically begins to turn to stone, and a target who ends two consecutive turns [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is petrified. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.
 
-> 🔳 **Poison Fumes (5 Malice)**
+> 🔳 **Poison Fumes (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**        |               **Main action** |
 > |------------------------|------------------------------:|
@@ -3124,9 +3124,9 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 poison damage; M < 0 weakened (save ends)
-> - **12-16:** 6 poison damage; M < 1 weakened and slowed (save ends)
-> - **17+:** 9 poison damage; M < 2 weakened and slowed (save ends)
+> - **≤11:** 4 poison damage; M < 0 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 6 poison damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 poison damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ❗️ **Lash Out**
 >
@@ -3136,7 +3136,7 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Trigger:** The basilisk takes damage from a melee ability.
 >
-> **Effect:** Each target takes 5 damage. Any target who has A < 2 is also bleeding (save ends).
+> **Effect:** Each target takes 5 damage. Any target who has A < 2 is also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ⭐️ **Calcifying Presence**
 >
@@ -3163,9 +3163,9 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 > - **12-16:** 10 acid damage; pull 2
 > - **17+:** 14 acid damage; pull 3
 >
-> **Effect:** This ability can pull targets restrained by Petrifying Eye Beams, and ignores stability if it does so.
+> **Effect:** This ability can pull targets [restrained](scc:mcdm.heroes.v1/condition/restrained) by Petrifying Eye Beams, and ignores stability if it does so.
 >
-> **3 Malice:** The tonguesnapper targets two additional creatures or objects.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The tonguesnapper targets two additional creatures or objects.
 
 > 🔳 **Petrifying Eye Beams**
 >
@@ -3177,11 +3177,11 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** A < 0 restrained (save ends)
-> - **12-16:** A < 1 restrained (save ends)
-> - **17+:** Slowed (save ends); or if A < 2 restrained (save ends)
+> - **≤11:** A < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** [Slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends); or if A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** If a target is already slowed, the potency increases by 1 for that target. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified. A target restrained this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.
+> **Effect:** If a target is already [slowed](scc:mcdm.heroes.v1/condition/slowed), the potency increases by 1 for that target. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way magically begins to turn to stone, and a target who ends two consecutive turns [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is petrified. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way or a creature adjacent to them can use a main action to cut encroaching stone from the target’s body, dealing 8 damage to the target that can’t be reduced in any way and ending this effect.
 
 > ⚔️ **Wink (2 Malice)**
 >
@@ -3191,11 +3191,11 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 corruption damage; R < 0 dazed (save ends)
-> - **12-16:** 10 corruption damage; R < 1 dazed (save ends)
-> - **17+:** 14 corruption damage; R < 2 dazed and slowed (save ends)
+> - **≤11:** 8 corruption damage; R < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 10 corruption damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 14 corruption damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** A creature dazed this way can’t benefit from edges or double edges and can’t gain or use surges.
+> **Effect:** A creature [dazed](scc:mcdm.heroes.v1/condition/dazed) this way can’t benefit from [edges](scc:mcdm.heroes.v1/rule.dice/edge) or double [edges](scc:mcdm.heroes.v1/rule.dice/edge) and can’t gain or use [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 > ❗️ **Neurotoxin Splash**
 >
@@ -3205,11 +3205,11 @@ At the start of any basilisk's turn, you can spend Malice to activate one of the
 >
 > **Trigger:** The tonguesnapper takes damage from a melee ability.
 >
-> **Effect:** Each target takes 4 acid damage. Any target who has M < 2 is also slowed (save ends).
+> **Effect:** Each target takes 4 acid damage. Any target who has M < 2 is also [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
 > ⭐️ **Petrifying Fumes**
 >
-> Any creature who starts their turn adjacent to the tonguesnapper and has M < 1 is slowed (save ends).
+> Any creature who starts their turn adjacent to the tonguesnapper and has M < 1 is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
 <!-- @type: monster | @category: bredbeddle -->
 ## Bredbeddle
@@ -3241,17 +3241,17 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > The bredbeddle's axe lengthens and turns a ghastly green, granting a +1 bonus to the distance of the bredbeddle's melee strikes and the dimensions of their burst area abilities until the end of their turn.
 
-> 🔳 **Shadow Stockade (5 Malice)**
+> 🔳 **Shadow Stockade (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A ghostly size 1L stockade seeps out from under the bredbeddle's feet to fill an unoccupied square within 10 squares. When a size 1L or smaller enemy enters the stockade's square, they are restrained (save ends). When a restrained creature is no longer restrained, the stockade fades away. At the start of each of the bredbeddle's turns, they can slide an active stockade and any creature in it up to 5 squares.
+> A ghostly size 1L stockade seeps out from under the bredbeddle's feet to fill an unoccupied square within 10 squares. When a size 1L or smaller enemy enters the stockade's square, they are [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends). When a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature is no longer [restrained](scc:mcdm.heroes.v1/condition/restrained), the stockade fades away. At the start of each of the bredbeddle's turns, they can [slide](scc:mcdm.heroes.v1/movement/forced-movement) an active stockade and any creature in it up to 5 squares.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The bredbeddle takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The bredbeddle takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Green Phantom (7 Malice)**
+> 🌀 **Green Phantom (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A phantom second bredbeddle phases into view, appearing in an unoccupied space anywhere on the encounter map, then vanishing at the end of the round. The phantom bredbeddle shares the original bredbeddle's statistics but has 24 Stamina, corruption immunity 10, and can fly. The phantom bredbeddle can take one turn and use any of the bredbeddle's abilities except for villain actions. Only one phantom bredbeddle can be active at a time.
+> A phantom second bredbeddle phases into view, appearing in an unoccupied space anywhere on the encounter map, then vanishing at the end of the round. The phantom bredbeddle shares the original bredbeddle's statistics but has 24 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), corruption immunity 10, and can [fly](scc:mcdm.heroes.v1/movement/fly). The phantom bredbeddle can take one turn and use any of the bredbeddle's abilities except for villain actions. Only one phantom bredbeddle can be active at a time.
 
 <!-- @type: statblock -->
 ####### Bredbeddle
@@ -3264,7 +3264,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the bredbeddle can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the bredbeddle can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The bredbeddle can take two turns each round. They can't take turns consecutively.
 
@@ -3272,7 +3272,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > While headless, the bredbeddle can move into a space containing a severed head and attach it to their neck as a main action. Doing so physically transforms the bredbeddle, who takes on the appearance, size, weight, and stability of the head's original owner. If the bredbeddle takes the form of a creature of size 1L or smaller, the distance of their melee and burst area abilities decreases by 1. These effects last until the bredbeddle is killed or beheaded, or until the head falls off after 24 hours. A head that falls off this way can no longer be attached to this bredbeddle.
 >
-> A creature must succeed on a **hard Might test** made as a maneuver to rip a head off the bredbeddle. If they fail, the bredbeddle can make a free strike against them.
+> A creature must succeed on a **hard Might test** made as a maneuver to rip a head off the bredbeddle. If they fail, the bredbeddle can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Resilient Form**
 >
@@ -3286,11 +3286,11 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 2 damage; A < 1 bleeding (save ends)
-> - **12-16:** 4 damage; A < 2 bleeding (save ends)
-> - **17+:** 5 damage; A < 3 bleeding (save ends); M < 2 dazed (save ends)
+> - **≤11:** 2 damage; A < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 4 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 5 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **3 Malice:** The bredbeddle shifts up to 2 squares, and can target additional enemies who come within distance of this ability during the shift.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The bredbeddle [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares, and can target additional enemies who come within distance of this ability during the shift.
 
 > 🗡 **Lop (3 Malice)**
 >
@@ -3300,11 +3300,11 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; bleeding (save ends); or if the target has M < 1 they are beheaded
-> - **12-16:** 13 damage; bleeding (save ends); or if the target has M < 2 they are beheaded
-> - **17+:** 16 damage; bleeding (save ends); or if the target has M < 3 they are beheaded
+> - **≤11:** 9 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has M < 1 they are beheaded
+> - **12-16:** 13 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has M < 2 they are beheaded
+> - **17+:** 16 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has M < 3 they are beheaded
 >
-> **Effect:** A beheaded target has their head fall into an unoccupied square adjacent to the bredbeddle, but they remain alive. While beheaded this way, the target is bleeding and has line of effect only to adjacent squares. The beheaded target can survive without their head for 24 hours, and can reattach their head as a maneuver by entering its square. A target who remains beheaded for 24 hours dies.
+> **Effect:** A beheaded target has their head fall into an unoccupied square adjacent to the bredbeddle, but they remain alive. While beheaded this way, the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and has line of effect only to adjacent squares. The beheaded target can survive without their head for 24 hours, and can reattach their head as a maneuver by entering its square. A target who remains beheaded for 24 hours dies.
 
 > 👤 **Scramble**
 >
@@ -3312,7 +3312,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** While the bredbeddle is headless, they shift up to their speed. Each time a creature comes adjacent to the bredbeddle during the shift, the bredbeddle can push that creature 1 square. Each square the bredbeddle exits during the shift is difficult terrain.
+> **Effect:** While the bredbeddle is headless, they [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed. Each time a creature comes adjacent to the bredbeddle during the shift, the bredbeddle can [push](scc:mcdm.heroes.v1/movement/forced-movement) that creature 1 square. Each square the bredbeddle exits during the shift is difficult terrain.
 
 > 🏹 **Headway (5 Malice)**
 >
@@ -3324,11 +3324,11 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; M < 1 dazed (save ends)
-> - **12-16:** 13 damage; prone; M < 2 dazed (save ends)
-> - **17+:** 16 damage; prone; M < 3 dazed (save ends)
+> - **≤11:** 9 damage; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 13 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 16 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> ❗️ **Envious Imitation (2 Malice)**
+> ❗️ **Envious Imitation (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic**   | **Triggered action** |
 > |-------------|---------------------:|
@@ -3350,7 +3350,7 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 > - **12-16:** P < 2 the target turns green (save ends)
 > - **17+:** P < 3 the target turns green until the end of the encounter
 >
-> **Effect:** Green shadows crawl out from under the bredbeddle's feet and turn each target green. The bredbeddle has a double edge on power rolls against any target turned green this way.
+> **Effect:** Green shadows crawl out from under the bredbeddle's feet and turn each target green. The bredbeddle has a double [edge](scc:mcdm.heroes.v1/rule.dice/edge) on power rolls against any target turned green this way.
 
 > ☠️ **Challenge (Villain Action 2)**
 >
@@ -3372,9 +3372,9 @@ At the start of a bredbeddle's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 damage; bleeding (save ends); or if the target has A < 1 they are beheaded (see Lop).
-> - **12-16:** 7 damage; bleeding (save ends); or if the target has A < 2 they are beheaded
-> - **17+:** 8 damage; bleeding (save ends); or if the target has A < 3 they are beheaded
+> - **≤11:** 6 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has A < 1 they are beheaded (see Lop).
+> - **12-16:** 7 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has A < 2 they are beheaded
+> - **17+:** 8 damage; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends); or if the target has A < 3 they are beheaded
 
 <!-- @type: monster | @category: bugbears -->
 ## Bugbears
@@ -3402,17 +3402,17 @@ At the start of any bugbear's turn, you can spend Malice to activate one of the 
 >
 > The bugbear activates a Malice Feature available to goblins.
 
-> 👤 **Grab Iron Ball (3+ Malice)**
+> 👤 **Grab Iron Ball (3+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> For every 3 Malice spent, one non-minion bugbear acting this turn grabs an iron ball and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to 8 - the number of squares the iron ball was thrown, and if they have M < 1, they are slowed (save ends).
+> For every 3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent, one non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) bugbear acting this turn grabs an iron ball and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to 8 - the number of squares the iron ball was thrown, and if they have M < 1, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 👤 **Grab Javelin (5+ Malice)**
+> 👤 **Grab Javelin (5+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> For every 5 Malice spent, one non-minion bugbear acting this turn grabs a javelin and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to 12 - the number of squares the javelin was thrown, and if they have M < 1, they are bleeding (save ends). While a creature is bleeding this way, any ally of the bugbear within 2 squares of them can use a free maneuver to pull the bleeding creature up to 2 squares.
+> For every 5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent, one non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) bugbear acting this turn grabs a javelin and can use a maneuver to throw it at a creature within 5 squares of them. The creature takes damage equal to 12 - the number of squares the javelin was thrown, and if they have M < 1, they are [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). While a creature is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, any ally of the bugbear within 2 squares of them can use a free maneuver to [pull](scc:mcdm.heroes.v1/movement/forced-movement) the [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature up to 2 squares.
 
-> 🌀 **Show Them the Great Fear (10 Malice)**
+> 🌀 **Show Them the Great Fear (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A bugbear infuses the encounter map with bu'gathic magic. Until the end of the encounter, all bugbears and allies have their speed doubled and can automatically climb at full speed while moving. Additionally, if the target of any bugbear or ally's strike has I < 1, the target is also frightened (save ends) and must move their speed in a straight line away from the creature who made the strike.
+> A bugbear infuses the encounter map with bu'gathic magic. Until the end of the encounter, all bugbears and allies have their speed doubled and can automatically climb at full speed while moving. Additionally, if the target of any bugbear or ally's strike has I < 1, the target is also [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends) and must move their speed in a straight line away from the creature who made the strike.
 
 ### Bu'gathic Magic
 
@@ -3455,11 +3455,11 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; M < 0 bleeding (save ends)
-> - **12-16:** 3 damage; M < 1 bleeding (save ends)
-> - **17+:** 4 damage; M < 2 bleeding (save ends)
+> - **≤11:** 2 damage; M < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 3 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 4 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
-> 🏹 **Twist Shape (5 Malice)**
+> 🏹 **Twist Shape (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged, Strike** |     **Main Action** |
 > |---------------------------|--------------------:|
@@ -3467,11 +3467,11 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 corruption damage; P < 0 slowed (save ends)
+> - **≤11:** 5 corruption damage; P < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 > - **12-16:** 8 corruption damage; P < 1 the target is shapechanged (save ends)
 > - **17+:** 11 corruption damage; P < 2 the target is shapechanged (save ends)
 >
-> **Effect:** A shapechanged creature is slowed and has fire weakness 10 as their limbs stretch and their skin becomes paper thin.
+> **Effect:** A shapechanged creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) and has fire weakness 10 as their limbs stretch and their skin becomes paper thin.
 
 > 🗡 **Throw**
 >
@@ -3479,9 +3479,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |-------------------|------------------------------:|
 > | **📏 Melee 1**    | **🎯 One creature or object** |
 >
-> **Special:** The target must be grabbed by the channeler.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the channeler.
 >
-> **Effect:** The target is vertical pushed up to 3 squares. An ally doesn't take damage from being force moved this way.
+> **Effect:** The target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares. An ally doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) this way.
 
 > ❗️ **Catcher**
 >
@@ -3489,9 +3489,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.
+> **Trigger:** A size 1 creature or object is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) within distance, or a size 1 ally willingly moves within distance.
 >
-> **Effect:** The target is grabbed by the channeler.
+> **Effect:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the channeler.
 
 > ❗️ **Shadow Veil**
 >
@@ -3522,9 +3522,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > - **≤11:** 7 damage
 > - **12-16:** 10 damage
-> - **17+:** 13 damage; one target is grabbed
+> - **17+:** 13 damage; one target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** One ally within 5 squares of the commander gains an edge on their next strike until the start of the commander's next turn.
+> **Effect:** One ally within 5 squares of the commander gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on their next strike until the start of the commander's next turn.
 
 > 🏹 **You Next!**
 >
@@ -3534,13 +3534,13 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Effect:** The target moves up to their speed and uses a signature ability.
 
-> ❇️ **Fall Back! (5 Malice)**
+> ❇️ **Fall Back! (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |              **Main Action** |
 > |----------------|-----------------------------:|
 > | **📏 5 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target shifts up to their speed, then can use the Throw maneuver.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, then can use the Throw maneuver.
 
 > 🗡 **Throw**
 >
@@ -3548,9 +3548,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |-------------------|------------------------------:|
 > | **📏 Melee 1**    | **🎯 One creature or object** |
 >
-> **Special:** The target must be grabbed by the commander.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the commander.
 >
-> **Effect:** The target is vertical pushed up to 4 squares. An ally doesn't take damage from being force moved this way.
+> **Effect:** The target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares. An ally doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) this way.
 
 > ❗️ **Catcher**
 >
@@ -3558,9 +3558,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.
+> **Trigger:** A size 1 creature or object is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) within distance, or a size 1 ally willingly moves within distance.
 >
-> **Effect:** The target is grabbed by the commander.
+> **Effect:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the commander.
 
 > ⭐️ **The Commander's Watching**
 >
@@ -3584,10 +3584,10 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; one target is grabbed; one target is pushed up to 2 squares
-> - **17+:** 14 damage; one target is grabbed; one target is vertical pushed up to 3 squares
+> - **12-16:** 11 damage; one target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed); one target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares
+> - **17+:** 14 damage; one target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed); one target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares
 >
-> **5 Malice:** The ability takes the Area keyword and loses the Strike keyword, its distance becomes a 1 burst, and it targets each enemy in the area.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability takes the Area keyword and loses the Strike keyword, its distance becomes a 1 burst, and it targets each enemy in the area.
 
 > 🗡 **Leaping Fury**
 >
@@ -3597,21 +3597,21 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 damage; M < 1 prone
-> - **12-16:** 13 damage; M < 2 prone
-> - **17+:** 16 damage; M < 3 prone
+> - **≤11:** 8 damage; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 13 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 16 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
 > **Effect:** The roughneck can jump up to 5 squares to an unoccupied space within distance of the target before making this strike.
 
-> 🗡 **Drag Through Hell (3 Malice)**
+> 🗡 **Drag Through Hell (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |                  **Maneuver** |
 > |----------------|------------------------------:|
 > | **📏 Melee 1** | **🎯 One creature or object** |
 >
-> **Special:** The target must be grabbed by the roughneck.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the roughneck.
 >
-> **Effect:** The roughneck moves up to their speed across the ground, dragging the target with them. The target takes 2 damage for each square they were dragged through. When this movement ends, the target is no longer grabbed and falls prone. Each square the target was dragged through is difficult terrain for enemies.
+> **Effect:** The roughneck moves up to their speed across the ground, dragging the target with them. The target takes 2 damage for each square they were dragged through. When this movement ends, the target is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and falls [prone](scc:mcdm.heroes.v1/condition/prone). Each square the target was dragged through is difficult terrain for enemies.
 
 > 🗡 **Throw**
 >
@@ -3619,9 +3619,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > | --- | ---:|
 > | **📏 Melee 1** | **🎯 One creature or object** |
 >
-> **Special:** The target must be grabbed by the roughneck.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the roughneck.
 >
-> **Effect:** The target is vertical pushed up to 5 squares. An ally doesn't take damage from being force moved this way.
+> **Effect:** The target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares. An ally doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) this way.
 
 > ❗️ **Catcher**
 >
@@ -3629,9 +3629,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.
+> **Trigger:** A size 1 creature or object is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) within distance, or a size 1 ally willingly moves within distance.
 >
-> **Effect:** The target is grabbed by the roughneck.
+> **Effect:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the roughneck.
 
 > ❗️ **Flying Sawblade**
 >
@@ -3660,13 +3660,13 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 damage; A < 1 grabbed
-> - **12-16:** 13 damage; A < 2 grabbed
-> - **17+:** 16 damage; grabbed
+> - **≤11:** 8 damage; A < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 13 damage; A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 16 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
 > **Effect:** The target can't use triggered actions until the start of the next round. Additionally, if the sneak started their turn hidden from the target, this ability deals an extra 4 damage.
 
-> ❇️ **Shadow Cloak (3 Malice)**
+> ❇️ **Shadow Cloak (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |               **Main action** |
 > |----------------|------------------------------:|
@@ -3678,7 +3678,7 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > - **12-16:** 3 damage; I < 1 the sneak has concealment from the target (save ends)
 > - **17+:** 4 damage; I < 2 the sneak has concealment from the target (save ends)
 >
-> **Effect:** The sneak shifts up to their speed and can attempt to hide.
+> **Effect:** The sneak [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can attempt to hide.
 
 > 🏹 **Carving Dagger**
 >
@@ -3688,11 +3688,11 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; M < 0 bleeding (save ends)
-> - **12-16:** 11 damage; M < 1 bleeding (save ends)
-> - **17+:** 14 damage; M < 2 bleeding (save ends)
+> - **≤11:** 7 damage; M < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 14 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** While bleeding this way, the target can't hide from the sneak or their allies.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target can't hide from the sneak or their allies.
 
 > 🗡 **Throw**
 >
@@ -3700,9 +3700,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |-------------------|------------------------------:|
 > | **📏 Melee 1**    | **🎯 One creature or object** |
 >
-> **Special:** The target must be grabbed by the sneak.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the sneak.
 >
-> **Effect:** The target is vertical pushed up to 4 squares. An ally doesn't take damage from being force moved this way.
+> **Effect:** The target is vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares. An ally doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) this way.
 
 > ❗️ **Catcher**
 >
@@ -3710,11 +3710,11 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A size 1 creature or object is force moved within distance, or a size 1 ally willingly moves within distance.
+> **Trigger:** A size 1 creature or object is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) within distance, or a size 1 ally willingly moves within distance.
 >
-> **Effect:** The target is grabbed by the sneak.
+> **Effect:** The target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the sneak.
 
-> ❗️ **Clever Trick (1 Malice)**
+> ❗️ **Clever Trick (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**          | **Triggered action** |
 > |----------------|---------------------:|
@@ -3742,10 +3742,10 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 > **Power Roll + 4:**
 >
 > - **≤11:** 3 corruption damage
-> - **12-16:** 6 corruption damage; P < 3 bleeding (save ends)
-> - **17+:** 8 corruption damage; grabbed; P < 4 bleeding (save ends)
+> - **12-16:** 6 corruption damage; P < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 8 corruption damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed); P < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** A target grabbed this way or already grabbed by the knightmare can be vertical pushed up to 5 squares.
+> **Effect:** A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way or already [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the knightmare can be vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares.
 
 > ⭐️ **Bu'gathic Inspiration**
 >
@@ -3774,13 +3774,13 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > - **≤11:** 3 damage; pull 2
 > - **12-16:** 6 damage; pull 3
-> - **17+:** 7 damage; pull 4, grabbed
+> - **17+:** 7 damage; pull 4, [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** If the target is pulled into the mob, that forced movement deals damage only at the Director's determination.
+> **Effect:** If the target is pulled into the mob, that [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) deals damage only at the Director's determination.
 
 > ⭐️ **Swarm**
 >
-> The mob can move through spaces as if they were a size 1L creature, and can occupy other creatures' spaces. At the start of each of the mob's turns, they can make a free strike against each creature whose space they share.
+> The mob can move through spaces as if they were a size 1L creature, and can occupy other creatures' spaces. At the start of each of the mob's turns, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each creature whose space they share.
 
 <!-- @type: statblock -->
 ####### Bugbear Snare
@@ -3801,9 +3801,9 @@ Most bugbears speak Caelian, Khelt, and Szetch.
 >
 > - **≤11:** 3 damage
 > - **12-16:** 6 damage
-> - **17+:** 7 damage; A < 3 slowed (save ends)
+> - **17+:** 7 damage; A < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If the snare started their turn hidden from the target, the target is automatically grabbed. A target grabbed this way or already grabbed by the snare can be vertical pushed up to 4 squares.
+> **Effect:** If the snare started their turn hidden from the target, the target is automatically [grabbed](scc:mcdm.heroes.v1/condition/grabbed). A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way or already [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the snare can be vertical [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares.
 
 <!-- @type: monster | @category: chimera -->
 ## Chimera
