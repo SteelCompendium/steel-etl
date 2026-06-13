@@ -200,6 +200,40 @@ func TestParseRichFeatures_DiceInTitle(t *testing.T) {
 	}
 }
 
+func TestParseRichFeatures_DiceInTitleWithCost(t *testing.T) {
+	// Real summoner signature grammar: bare characteristic + trailing
+	// "(Signature Ability)" cost. Verbatim shape from the Summoner book.
+	body := "> 🗡 **Mind Twist 2d10 + R (Signature Ability)**\n" +
+		">\n" +
+		"> | **Magic, Ranged, Strike** |        **Main action** |\n" +
+		"> |---------------------------|------------------------:|\n" +
+		"> | **📏 Ranged 10**          | **🎯 One creature** |\n" +
+		">\n" +
+		"> 2 psychic damage\n" +
+		">\n" +
+		"> 5 psychic damage\n" +
+		">\n" +
+		"> 7 psychic damage\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if f.Name != "Mind Twist" {
+		t.Errorf("Name = %q, want 'Mind Twist'", f.Name)
+	}
+	if f.Cost != "Signature" {
+		t.Errorf("Cost = %q, want 'Signature'", f.Cost)
+	}
+	if f.PowerRoll == nil || f.PowerRoll.Formula != "2d10 + R" {
+		t.Fatalf("PowerRoll = %+v, want formula '2d10 + R'", f.PowerRoll)
+	}
+	if f.PowerRoll.Tiers["low"] != "2 psychic damage" || f.PowerRoll.Tiers["mid"] != "5 psychic damage" || f.PowerRoll.Tiers["high"] != "7 psychic damage" {
+		t.Errorf("tiers = %+v", f.PowerRoll.Tiers)
+	}
+}
+
 func TestRichFeature_ToMap(t *testing.T) {
 	f := RichFeature{
 		Icon: "🔳", Name: "Upchuck", Cost: "5 Malice", Usage: "Main action",

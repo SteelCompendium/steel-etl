@@ -59,6 +59,15 @@ func fbCollapse(s string) string {
 	return strings.TrimSpace(fbCollapseRe.ReplaceAllString(s, " "))
 }
 
+// parenToCost maps a title parenthetical to its cost label: the canonical
+// "Signature" for "Signature Ability", everything else verbatim ("7 Malice").
+func parenToCost(paren string) string {
+	if strings.EqualFold(paren, "Signature Ability") {
+		return "Signature"
+	}
+	return paren
+}
+
 // ParseRichFeatures parses a body's feature blockquotes into RichFeatures.
 // A standalone bold "Level N …" block sets the Level carried by all features
 // that follow it (the fixture-advancement form).
@@ -96,26 +105,26 @@ func parseRichFeature(block string) (RichFeature, bool) {
 	}
 	f := RichFeature{Icon: strings.TrimSpace(tm[1]), Name: strings.TrimSpace(tm[2])}
 
-	// Dice-in-title power roll (summoner signatures) must be checked BEFORE the
-	// parenthetical strip: the SCC link in the title contains "(...)" that
-	// sbParenRe would misread as a cost parenthetical.
+	// Dice-in-title power roll (summoner signatures) is checked BEFORE the
+	// parenthetical-cost strip: a link-wrapped characteristic ([R](scc:…)) holds
+	// "(...)" that sbParenRe would misread as a cost. linkDisplay collapses that
+	// link to bare text first; any parenthetical THEN remaining on the formula is
+	// a genuine cost — real titles read "Name 2d10 + R (Signature Ability)".
 	diceFormula := ""
 	if dm := sbDiceRe.FindStringSubmatch(f.Name); dm != nil {
 		f.Name = strings.TrimSpace(dm[1])
 		diceFormula = linkDisplay(strings.TrimSpace(dm[2]))
+		if pm := sbParenRe.FindStringSubmatch(diceFormula); pm != nil {
+			diceFormula = strings.TrimSpace(pm[1])
+			f.Cost = parenToCost(strings.TrimSpace(pm[2]))
+		}
 	}
 
-	// Parenthetical → Signature / cost / Villain Action N.
-	// Skip when a dice-in-title was found (those have no cost paren).
+	// Parenthetical → Signature / cost / Villain Action N (non-dice titles).
 	if diceFormula == "" {
 		if pm := sbParenRe.FindStringSubmatch(f.Name); pm != nil {
 			f.Name = strings.TrimSpace(pm[1])
-			paren := strings.TrimSpace(pm[2])
-			if strings.EqualFold(paren, "Signature Ability") {
-				f.Cost = "Signature"
-			} else {
-				f.Cost = paren
-			}
+			f.Cost = parenToCost(strings.TrimSpace(pm[2]))
 		}
 	}
 
