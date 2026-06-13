@@ -5,6 +5,47 @@ import (
 	"testing"
 )
 
+func TestRenderFbFeats_AdvancementBands(t *testing.T) {
+	feats := []fbFeature{
+		{Icon: "⭐️", Name: "Base One", Body: "always on"},
+		{Icon: "⭐️", Name: "Base Two", Body: "also on"},
+		{Icon: "⭐️", Name: "Tier Five", Body: "at L5", Level: 5},
+		{Icon: "⭐️", Name: "Tier Nine A", Body: "at L9", Level: 9},
+		{Icon: "⭐️", Name: "Tier Nine B", Body: "also L9", Level: 9},
+	}
+	got := renderFbFeats(feats)
+	// base features are NOT in a band
+	idxBase := strings.Index(got, "Base One")
+	idxBand := strings.Index(got, `class="fb__band--adv"`)
+	if idxBase == -1 || idxBand == -1 || idxBase > idxBand {
+		t.Fatalf("base features must render before the first advancement band")
+	}
+	for _, want := range []string{
+		`<div class="fb__band--adv" data-level="5">`,
+		`<div class="fb__adv-head">Level 5 Advancement</div>`,
+		"Tier Five",
+		`<div class="fb__band--adv" data-level="9">`,
+		`<div class="fb__adv-head">Level 9 Advancement</div>`,
+		"Tier Nine A", "Tier Nine B",
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("missing %q", want)
+		}
+	}
+	// exactly two bands (one per level)
+	if n := strings.Count(got, `class="fb__band--adv"`); n != 2 {
+		t.Errorf("band count = %d, want 2", n)
+	}
+}
+
+func TestRenderFbFeats_NoLevelsNoBands(t *testing.T) {
+	// backward-compat: existing featureblock/terrain features (Level 0) → no band
+	got := renderFbFeats([]fbFeature{{Icon: "⭐️", Name: "Flat", Body: "x"}})
+	if strings.Contains(got, "fb__band--adv") {
+		t.Error("Level-0 features must not emit an advancement band")
+	}
+}
+
 const fbMalicePage = `---
 name: Basilisk Malice
 type: featureblock
