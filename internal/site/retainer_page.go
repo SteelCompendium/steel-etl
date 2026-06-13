@@ -62,16 +62,20 @@ func splitRetainerAdvancement(body string) (string, []retainerAdvGroup) {
 	return base, groups
 }
 
-// retainerRoleKey snaps the first word of the first `roles` entry
-// ("Harrier Retainer" → "harrier") to a CSS-colored role key, so the Forged
-// Band head accents in the retainer's role color. Unknown/absent → "" (the
-// card renders in the neutral fallback).
+// retainerRoleKey resolves the retainer's role to a CSS-colored role key, so
+// the Forged Band head accents in the retainer's color. The site's per-item
+// md-linked files carry a singular `role:` scalar ("Harrier"); the concatenated
+// md-dse-linked variant carries a `roles:` list ("Harrier Retainer"). Try the
+// scalar first, then the list. The first word snapped against knownRoleKeys;
+// unknown/absent → "" (neutral fallback).
 func retainerRoleKey(fm string) string {
-	roles := parseFrontmatterList(fm, "roles")
-	if len(roles) == 0 {
-		return ""
+	role := strings.TrimSpace(parseFrontmatterField(fm, "role"))
+	if role == "" {
+		if roles := parseFrontmatterList(fm, "roles"); len(roles) > 0 {
+			role = roles[0]
+		}
 	}
-	fields := strings.Fields(roles[0])
+	fields := strings.Fields(role)
 	if len(fields) == 0 {
 		return ""
 	}
@@ -101,9 +105,13 @@ func renderRetainerAdvancement(fm string, groups []retainerAdvGroup) string {
 	if len(feats) == 0 {
 		return ""
 	}
-	eyebrow := ""
-	if roles := parseFrontmatterList(fm, "roles"); len(roles) > 0 {
-		eyebrow = strings.TrimSpace(roles[0])
+	role := strings.TrimSpace(parseFrontmatterField(fm, "role"))
+	org := strings.TrimSpace(parseFrontmatterField(fm, "organization"))
+	eyebrow := strings.TrimSpace(role + " " + org)
+	if eyebrow == "" {
+		if roles := parseFrontmatterList(fm, "roles"); len(roles) > 0 {
+			eyebrow = strings.TrimSpace(roles[0])
+		}
 	}
 	doc := fbDoc{
 		Name:     "Advancement Abilities",

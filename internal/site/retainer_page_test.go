@@ -84,20 +84,24 @@ func TestSplitRetainerAdvancement_NoHeadings(t *testing.T) {
 }
 
 func TestRetainerRoleKey(t *testing.T) {
-	fm := "roles:\n  - Harrier Retainer\n"
-	if got := retainerRoleKey(fm); got != "harrier" {
-		t.Errorf("want harrier, got %q", got)
+	// Real site input: singular role scalar.
+	if got := retainerRoleKey("role: Harrier\norganization: Retainer\n"); got != "harrier" {
+		t.Errorf("scalar role: want harrier, got %q", got)
 	}
-	if got := retainerRoleKey("roles:\n  - Bogus Retainer\n"); got != "" {
+	// Defensive fallback: roles list (md-dse-linked variant).
+	if got := retainerRoleKey("roles:\n  - Support Retainer\n"); got != "support" {
+		t.Errorf("roles-list fallback: want support, got %q", got)
+	}
+	if got := retainerRoleKey("role: Bogus\n"); got != "" {
 		t.Errorf("unknown role should snap to empty, got %q", got)
 	}
 	if got := retainerRoleKey("name: x\n"); got != "" {
-		t.Errorf("no roles should yield empty, got %q", got)
+		t.Errorf("no role should yield empty, got %q", got)
 	}
 }
 
 func TestRenderRetainerAdvancement(t *testing.T) {
-	fm := "name: Goblin Guide\nroles:\n  - Harrier Retainer\n"
+	fm := "name: Goblin Guide\nrole: Harrier\norganization: Retainer\n"
 	_, groups := splitRetainerAdvancement(goblinGuideBody)
 	out := renderRetainerAdvancement(fm, groups)
 
@@ -127,7 +131,7 @@ func TestRenderRetainerAdvancement_Empty(t *testing.T) {
 }
 
 func TestBuildStatblockIslandPage_RetainerSplit(t *testing.T) {
-	page := "---\nname: Goblin Guide\ntype: statblock\nroles:\n  - Harrier Retainer\n---\n\n" + goblinGuideBody
+	page := "---\nname: Goblin Guide\ntype: statblock\nrole: Harrier\norganization: Retainer\n---\n\n" + goblinGuideBody
 	out, ok := buildStatblockIslandPage([]byte(page))
 	if !ok {
 		t.Fatal("retainer statblock should be handled")
