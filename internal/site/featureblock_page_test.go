@@ -175,6 +175,17 @@ func TestRenderFbFeats_PassiveMalice(t *testing.T) {
 	}
 }
 
+func TestFbEyebrow_Override(t *testing.T) {
+	// An explicit Eyebrow wins over the terrain/kind/default composition.
+	if got := fbEyebrow(fbDoc{Eyebrow: "Harrier Retainer", Kind: "malice"}); got != "Harrier Retainer" {
+		t.Errorf("override should win, got %q", got)
+	}
+	// Empty Eyebrow falls through to existing behavior (malice → "Malice Features").
+	if got := fbEyebrow(fbDoc{Kind: "malice"}); got != "Malice Features" {
+		t.Errorf("empty override should fall through, got %q", got)
+	}
+}
+
 func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
 	out, _ := buildFeatureblockPage([]byte(fbTerrainPage))
 	s := string(out)
