@@ -1,6 +1,7 @@
 package site
 
 import (
+	"encoding/json"
 	"strings"
 	"testing"
 )
@@ -108,5 +109,46 @@ func TestRenderRetainerAdvancement(t *testing.T) {
 func TestRenderRetainerAdvancement_Empty(t *testing.T) {
 	if out := renderRetainerAdvancement("name: x\n", nil); out != "" {
 		t.Errorf("no groups should render nothing, got %q", out)
+	}
+}
+
+func TestBuildStatblockIslandPage_RetainerSplit(t *testing.T) {
+	page := "---\nname: Goblin Guide\ntype: statblock\nroles:\n  - Harrier Retainer\n---\n\n" + goblinGuideBody
+	out, ok := buildStatblockIslandPage([]byte(page))
+	if !ok {
+		t.Fatal("retainer statblock should be handled")
+	}
+	s := string(out)
+
+	// 1. The advancement card is appended.
+	if !strings.Contains(s, `class="fb-wrap"`) || !strings.Contains(s, "Weaving Knives") {
+		t.Errorf("page should contain the advancement card")
+	}
+	// 2. The island JSON must NOT include the advancement abilities.
+	marker := `class="sc-statblock-data">`
+	start := strings.Index(s, marker)
+	if start < 0 {
+		t.Fatal("island script not found")
+	}
+	jsonStart := start + len(marker)
+	jsonEnd := strings.Index(s[jsonStart:], "</script>")
+	islandJSON := strings.TrimSpace(s[jsonStart : jsonStart+jsonEnd])
+	var island struct {
+		Features []struct {
+			Name string `json:"name"`
+		} `json:"features"`
+	}
+	if err := json.Unmarshal([]byte(islandJSON), &island); err != nil {
+		t.Fatalf("island JSON parse: %v\n%s", err, islandJSON)
+	}
+	names := map[string]bool{}
+	for _, f := range island.Features {
+		names[f.Name] = true
+	}
+	if !names["Crafty"] {
+		t.Errorf("island should keep base feature Crafty; got %v", names)
+	}
+	if names["Weaving Knives"] || names["Sneak and Stab"] {
+		t.Errorf("island must NOT include advancement abilities; got %v", names)
 	}
 }
