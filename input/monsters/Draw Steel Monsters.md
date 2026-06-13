@@ -20670,7 +20670,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **-**<br>Movement |         -         | **+3 bonus to melee distance**<br>With Captain |  **Fire 5**<br>Weakness  |
 |            **+4**<br>Might             | **-2**<br>Agility | **-2**<br>Reason  |              **+1**<br>Intuition               |    **-2**<br>Presence    |
 
-> 🗡 **Fetid Wrappings (Signature Ability)**
+> 🗡 **Fetid Wrappings ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -20679,10 +20679,10 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 > **Power Roll + 4:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; pull 1
-> - **17+:** 8 damage; pull 3
+> - **12-16:** 7 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 8 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** Each ally gains an edge on strikes made against the target until the end of the round.
+> **Effect:** Each ally gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against the target until the end of the round.
 
 <!-- @type: statblock -->
 ####### Dirt Mournling
@@ -20693,7 +20693,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **Burrow, climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+4**<br>Might             |       **+1**<br>Agility       | **-2**<br>Reason  |  **+1**<br>Intuition  |  **-3**<br>Presence  |
 
-> 🗡 **Mudslide (Signature Ability)**
+> 🗡 **Mudslide ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20701,13 +20701,13 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; M < 3 grabbed
-> - **12-16:** 10 damage; M < 4 grabbed
-> - **17+:** 11 damage; grabbed
+> - **≤11:** 7 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 10 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 11 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A 3-cube area of ground centered on the target is difficult terrain for enemies.
+> **Effect:** A 3-[cube](scc:mcdm.heroes.v1/rule.combat/cube) area of ground centered on the target is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 
-> ❇️ **Mourning Cry (3 Malice)**
+> ❇️ **Mourning Cry (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -20715,15 +20715,15 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 3 corruption damage; I < 2 frightened (save ends)
-> - **12-16:** 6 corruption damage; I < 3 frightened (save ends)
-> - **17+:** 7 corruption damage; I < 4 frightened (save ends)
+> - **≤11:** 3 corruption damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 6 corruption damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 7 corruption damage; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** A target frightened this way is frightened of all undead. This effect ends early if the mournling is destroyed.
+> **Effect:** A target [frightened](scc:mcdm.heroes.v1/condition/frightened) this way is [frightened](scc:mcdm.heroes.v1/condition/frightened) of all [undead](scc:mcdm.monsters.v1/rule.keyword/undead). This effect ends early if the mournling is destroyed.
 
 > ⭐️ **Arise**
 >
-> The first time the mournling is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 15 Stamina and fall prone.
+> The first time the mournling is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 15 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Immutable Form**
 >
@@ -20731,7 +20731,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 
 > ⭐️ **Rupture**
 >
-> Whenever the mournling uses the Dig maneuver to breach the surface, they make a free strike against each adjacent enemy.
+> Whenever the mournling uses the Dig maneuver to breach the surface, they make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy.
 
 <!-- @type: statblock -->
 ####### Haunt
@@ -20742,7 +20742,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **-2**<br>Might             |     **+4**<br>Agility      | **-1**<br>Reason  |  **0**<br>Intuition   |  **0**<br>Presence   |
 
-> 🗡 **Lash Out (Signature Ability)**
+> 🗡 **Lash Out ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20750,13 +20750,13 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; slide 2
-> - **12-16:** 10 damage; slide 3
-> - **17+:** 11 damage; slide 5
+> - **≤11:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 10 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 11 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** If the target is force moved into another creature's space, that creature takes an additional 4 damage and the haunt slides them up to 2 squares.
+> **Effect:** If the target is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into another creature's space, that creature takes an additional 4 damage and the haunt [slides](scc:mcdm.heroes.v1/movement/forced-movement) them up to 2 squares.
 
-> ❇️ **Crushing Despair (3 Malice)**
+> ❇️ **Crushing Despair (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -20764,15 +20764,15 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 3 damage; I < 2 prone
-> - **12-16:** 6 damage; I < 3 prone
-> - **17+:** 7 damage; I < 4 prone
+> - **≤11:** 3 damage; I < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 6 damage; I < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 7 damage; I < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** A target knocked prone this way can't use the Stand Up maneuver on themself while any haunt is within 20 squares of them.
+> **Effect:** A target knocked [prone](scc:mcdm.heroes.v1/condition/prone) this way can't use the [Stand Up](scc:mcdm.heroes.v1/feature.common.maneuvers/stand-up) maneuver on themself while any haunt is within 20 squares of them.
 
 > ⭐️ **Invisible Horror**
 >
-> The haunt can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. They are invisible while moving using a move action. The haunt doesn't take damage from being force moved into objects.
+> The haunt can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. They are invisible while moving using a move action. The haunt doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Koptourok
@@ -20783,7 +20783,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+4**<br>Might             | **+2**<br>Agility |  **0**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Choking Grasp (Signature Ability)**
+> 🗡 **Choking Grasp ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20791,13 +20791,13 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; M < 2 grabbed
-> - **12-16:** 10 damage; M < 3 grabbed
-> - **17+:** 11 damage; M < 4 grabbed
+> - **≤11:** 7 damage; M < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 10 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 11 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A creature grabbed this way is suffocating. The koptourok can have up to two creatures grabbed at once.
+> **Effect:** A creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way is [suffocating](scc:mcdm.heroes.v1/rule.health/suffocating). The koptourok can have up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at once.
 
-> ❇️ **Inhale (3 Malice)**
+> ❇️ **Inhale (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -20805,15 +20805,15 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Pull 3; M < 2 5 corruption damage
-> - **12-16:** Pull 5; M < 3 5 corruption damage
-> - **17+:** Pull 7; M < 4 5 corruption damage
+> - **≤11:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 5 corruption damage
+> - **12-16:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 3 5 corruption damage
+> - **17+:** [Pull](scc:mcdm.heroes.v1/movement/forced-movement) 7; M < 4 5 corruption damage
 >
-> **Effect:** This ability gains an edge against any target grabbed by the koptourok. If one or more targets are pulled adjacent to the koptourok, the koptourok can fly until the end of the encounter.
+> **Effect:** This ability gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) against any target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the koptourok. If one or more targets are pulled [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the koptourok, the koptourok can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of the encounter.
 
 > ⭐️ **Exhale**
 >
-> The first time the koptourok is made winded by damage that isn't fire damage or holy damage, each enemy within 3 squares of them takes 8 corruption damage. Any enemy who takes this damage and has M < 3 is also weakened (save ends)
+> The first time the koptourok is made [winded](scc:mcdm.heroes.v1/rule.health/winded) by damage that isn't fire damage or holy damage, each enemy within 3 squares of them takes 8 corruption damage. Any enemy who takes this damage and has M < 3 is also [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 <!-- @type: statblock -->
 ####### Waxen
@@ -20824,7 +20824,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+4**<br>Might             | **-2**<br>Agility | **-4**<br>Reason  |  **+1**<br>Intuition  |  **-2**<br>Presence  |
 
-> 🏹 **Wax Fling (Signature Ability)**
+> 🏹 **Wax Fling ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -20834,27 +20834,27 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > - **≤11:** 8 damage
 > - **12-16:** 11 damage
-> - **17+:** 12 damage; A < 4 slowed (save ends)
+> - **17+:** 12 damage; A < 4 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If a target made slowed this way is already slowed, they are instead restrained (save ends).
+> **Effect:** If a target made [slowed](scc:mcdm.heroes.v1/condition/slowed) this way is already [slowed](scc:mcdm.heroes.v1/condition/slowed), they are instead [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
-> ❇️ **Erupt (3 Malice)**
+> ❇️ **Erupt (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
 > | **📏 2 burst**  | **🎯 Each enemy in the area** |
 >
-> **Effect:** If the waxen is ignited (see Burn Bright), they shift up to their speed before using this ability. Each target makes an **Agility test**.
+> **Effect:** If the waxen is ignited (see Burn Bright), they [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed before using this ability. Each target makes an **Agility test**.
 >
 > - **≤11:** 10 damage
 > - **12-16:** 8 damage
 > - **17+:** 5 damage
 >
-> The waxen is then destroyed and the area is difficult terrain for enemies.
+> The waxen is then destroyed and the area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies.
 
 > ⭐️ **Burn Bright**
 >
-> If the waxen takes fire damage, they ignite. While ignited, the waxen takes 4 fire damage at the start of each of their turns and their strikes deal an extra 4 fire damage.
+> If the waxen takes fire damage, they ignite. While ignited, the waxen takes 4 fire damage at the start of each of their turns and their [strikes](scc:mcdm.heroes.v1/rule.combat/strike) deal an extra 4 fire damage.
 
 <!-- @type: statblock -->
 ####### Vampire
@@ -20865,7 +20865,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 7, poison 7**<br>Immunity | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+4**<br>Might             |   **+2**<br>Agility   | **+1**<br>Reason  |  **+1**<br>Intuition  |  **+1**<br>Presence  |
 
-> 🗡 **Exsanguinating Bite (Signature Ability)**
+> 🗡 **Exsanguinating Bite ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20873,13 +20873,13 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; M < 2 bleeding (save ends)
-> - **12-16:** 10 corruption damage; M < 3 5 corruption damage and bleeding (save ends)
-> - **17+:** 11 corruption damage; M < 4 7 corruption damage and bleeding (save ends)
+> - **≤11:** 7 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 10 corruption damage; M < 3 5 corruption damage and [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 11 corruption damage; M < 4 7 corruption damage and [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The vampire regains Stamina equal to any corruption damage dealt.
+> **Effect:** The vampire regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to any corruption damage dealt.
 
-> 🗡 **Vicious Pursuit (3 Malice)**
+> 🗡 **Vicious Pursuit (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20887,25 +20887,25 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; A < 2 slowed (save ends)
-> - **12-16:** 10 damage; A < 3 slowed (save ends)
-> - **17+:** 11 damage; A < 4 slowed (save ends)
+> - **≤11:** 7 damage; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 10 damage; A < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 11 damage; A < 4 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If the target is bleeding, the vampire shifts up to their speed before using this ability.
+> **Effect:** If the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding), the vampire [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed before using this ability.
 
-> ❗️ **Reactive Charm (2 Malice)**
+> ❗️ **Reactive Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> | **Magic, Ranged** | **Triggered action** |
+> | **Magic, Ranged** | **[Triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------------------|---------------------:|
 > | **📏 Ranged 5**   |     **🎯 One enemy** |
 >
-> **Trigger:** A creature makes a strike against the vampire.
+> **Trigger:** A creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against the vampire.
 >
-> **Effect:** The target becomes the new target of the strike.
+> **Effect:** The target becomes the new target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Unslakable Bloodthirst**
 >
-> The vampire has speed 10 while any creature within 10 squares of them is bleeding. The vampire must make a strike against a bleeding creature on their turn if they are able to.
+> The vampire has speed 10 while any creature within 10 squares of them is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). The vampire must make a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature on their turn if they are able to.
 
 <!-- @type: statblock -->
 ####### Vampire Lord
@@ -20916,7 +20916,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 | **Corruption 9, poison 9**<br>Immunity | **Climb, hover, teleport**<br>Movement |          -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+2**<br>Might             |           **+5**<br>Agility            |  **+1**<br>Reason   |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Crimson Embrace (Signature Ability)**
+> 🗡 **Crimson Embrace ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -20924,15 +20924,15 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 13 corruption damage; M < 3 bleeding (save ends)
-> - **12-16:** 21 corruption damage; M < 4 bleeding (save ends)
-> - **17+:** 24 corruption damage; M < 5 bleeding (save ends)
+> - **≤11:** 13 corruption damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 21 corruption damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 24 corruption damage; M < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The vampire regains Stamina equal to half the damage dealt, and can end one effect on them that can be ended by a saving throw.
+> **Effect:** The vampire regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt, and can end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw).
 >
-> **2+ Malice:** The vampire shifts 3 after striking the last target, and can target one additional creature for every 2 malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The vampire [shifts](scc:mcdm.heroes.v1/movement/shifting) 3 after striking the last target, and can target one additional creature for every 2 malice spent.
 
-> 🏹 **Arise, My Children (2 Malice)**
+> 🏹 **Arise, My Children (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |   **Maneuver** |
 > |------------------|---------------:|
@@ -20940,29 +20940,29 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Effect:** Two blood-starved vampires appear in unoccupied spaces within distance.
 
-> ❗️ **Redirected Charm (3 Malice)**
+> ❗️ **Redirected Charm (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> | **Magic, Ranged** | **Free triggered action** |
+> | **Magic, Ranged** | **Free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------------------|--------------------------:|
 > | **📏 Ranged 5**   |          **🎯 One enemy** |
 >
-> **Trigger:** A creature makes a strike against the vampire.
+> **Trigger:** A creature makes a [strike](scc:mcdm.heroes.v1/rule.combat/strike) against the vampire.
 >
-> **Effect:** The target becomes the new target of the strike.
+> **Effect:** The target becomes the new target of the [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Lord's Bloodthirst**
 >
-> The vampire has speed 15 and an edge on power rolls while any creature within 20 squares of them is bleeding. Any bleeding creature within 5 squares of the vampire can't hide.
+> The vampire has speed 15 and an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on power rolls while any creature within 20 squares of them is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). Any [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature within 5 squares of the vampire can't hide.
 
-> ☠️ **Let Us Feast! (Villain Action 1)**
+> ☠️ **Let Us Feast! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Ranged**      |                         **-** |
 > |-----------------|------------------------------:|
 > | **📏 20 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target who has P < 4 is now bleeding (save ends).
+> **Effect:** Each target who has P < 4 is now [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
-> ☠️ **Red Mist Rising (Villain Action 2)**
+> ☠️ **Red Mist Rising ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -20976,7 +20976,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Effect:** The vampire turns to mist, filling the area. Until the end of the round, the vampire can't move or be targeted by abilities, but they can use Crimson Embrace against a target in the area. The vampire reforms in an unoccupied space in the area at the end of the round.
 
-> ☠️ **Sacrifice (Villain Action 3)**
+> ☠️ **Sacrifice ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Magic, Ranged** |                   **-** |
 > |-------------------|------------------------:|
@@ -20990,7 +20990,7 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 > |-----------------|------------------------------:|
 > | **📏 20 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Each target makes a **Might test**. This ability deals an extra 5 damage for each creature killed by the Sacrifice villain action.
+> **Effect:** Each target makes a **Might test**. This ability deals an extra 5 damage for each creature killed by the Sacrifice [villain action](scc:mcdm.monsters.v1/rule.monster/villain-action).
 >
 > - **≤11:** 11 corruption damage
 > - **12-16:** 8 corruption damage
@@ -21004,11 +21004,11 @@ At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:
 >
 > **Creature of the Night**
 >
-> If the vampire starts their turn in concealment created by darkness, they regain Stamina equal to one-quarter of their Stamina maximum.
+> If the vampire starts their turn in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) created by darkness, they regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to one-quarter of their [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum.
 >
 > **Curse of Day**
 >
-> If the vampire is exposed to direct sunlight, they have damage weakness 5 until they start their turn in concealment created by darkness.
+> If the vampire is exposed to direct sunlight, they have [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 until they start their turn in [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) created by darkness.
 
 <!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Undead-4th Echelon
@@ -21026,23 +21026,23 @@ Every mage who lives long enough eventually contends with the fact that their kn
 <!-- @type: featureblock -->
 ######### Undead Malice (Level 10 Malice Features)
 
-At the start of any level 10 undead's turn, you can spend Malice to activate one of the following features.
+At the start of any level 10 [undead](scc:mcdm.monsters.v1/rule.keyword/undead)'s turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (2-7+ Malice)**
+> ⭐️ **Prior [Malice](scc:mcdm.monsters.v1/rule.monster/malice) Features (2-7+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The undead activates a Malice feature available to undead of level 9 or lower.
+> The [undead](scc:mcdm.monsters.v1/rule.keyword/undead) activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to [undead](scc:mcdm.monsters.v1/rule.keyword/undead) of level 9 or lower.
 
-> ❇️ **Death Tax (7 Malice)**
+> ❇️ **Death Tax (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The undead attempts to rend the vitality of their foes. Each enemy within 5 squares of the undead makes a **Might test**.
+> The [undead](scc:mcdm.monsters.v1/rule.keyword/undead) attempts to rend the vitality of their foes. Each enemy within 5 squares of the [undead](scc:mcdm.monsters.v1/rule.keyword/undead) makes a **Might test**.
 >
-> - **≤11:** 10 corruption damage; the target loses 2 Recoveries
-> - **12-16:** 8 corruption damage; the target loses 1 Recovery
+> - **≤11:** 10 corruption damage; the target loses 2 [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries)
+> - **12-16:** 8 corruption damage; the target loses 1 [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries)
 > - **17+:** 5 corruption damage
 >
-> **Effect:** A target who has fewer Recoveries than they would lose is also weakened (save ends).
+> **Effect:** A target who has fewer [Recoveries](scc:mcdm.heroes.v1/rule.health/recoveries) than they would lose is also [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 >
-> **Special:** This ability can't be used by a minion.
+> **Special:** This ability can't be used by a [minion](scc:mcdm.monsters.v1/rule.organization/minion).
 
 <!-- @type: statblock -->
 ####### Giant Shambler Zombie
@@ -21053,7 +21053,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 | **Corruption 10, poison 10**<br>Immunity | **-**<br>Movement |         -         | **+4 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness    |
 |             **+5**<br>Might              | **-3**<br>Agility | **-3**<br>Reason  |              **+1**<br>Intuition               |   **-2**<br>Presence   |
 
-> 🗡 **Rotten Kick (Signature Ability)**
+> 🗡 **Rotten Kick ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -21061,13 +21061,13 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 5 damage; push 2
-> - **12-16:** 8 damage; push 4
-> - **17+:** 10 damage; push 6
+> - **≤11:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6
 
 > ⭐️ **Meat Shield**
 >
-> Each ally adjacent to the shambler has damage immunity 3.
+> Each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the shambler has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 3.
 
 <!-- @type: statblock -->
 ####### Skeleton Knight
@@ -21078,7 +21078,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 | **Corruption 10, poison 10**<br>Immunity | **-**<br>Movement |         -         | **Gain an edge on strikes**<br>With Captain |   **-**<br>Weakness    |
 |             **+3**<br>Might              | **+5**<br>Agility | **-2**<br>Reason  |             **+4**<br>Intuition             |   **-2**<br>Presence   |
 
-> 🗡 **Four Swords Swing (Signature Ability)**
+> 🗡 **Four Swords Swing ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -21088,15 +21088,15 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > - **≤11:** 4 damage
 > - **12-16:** 7 damage
-> - **17+:** 9 damage; the target can't shift (EoT)
+> - **17+:** 9 damage; the target can't [shift](scc:mcdm.heroes.v1/movement/shifting) ([EoT](scc:mcdm.heroes.v1/rule.combat/end-of-turn))
 
 > ⭐️ **Bitter Bones**
 >
-> If the knight is reduced to 0 Stamina, their bones collapse to fill their space with an impassable barrier. Any enemy who comes adjacent to the barrier for the first time in a round or starts their turn there takes 5 damage.
+> If the knight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their bones collapse to fill their space with an impassable barrier. Any enemy who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the barrier for the first time in a round or starts their turn there takes 5 damage.
 
 > ⭐️ **More Swings**
 >
-> Whenever the knight makes a free strike, they can make two free strikes instead.
+> Whenever the knight makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), they can make two [free strikes](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) instead.
 
 <!-- @type: statblock -->
 ####### Wraith Skulker
@@ -21107,7 +21107,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 | **Corruption 10, poison 10**<br>Immunity | **Fly, hover**<br>Movement |         -         | **+3 bonus to speed**<br>With Captain |   **-**<br>Weakness    |
 |             **-2**<br>Might              |     **+3**<br>Agility      | **+1**<br>Reason  |          **+1**<br>Intuition          |   **+5**<br>Presence   |
 
-> 🗡 **Draining Rake (Signature Ability)**
+> 🗡 **Draining Rake ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -21115,15 +21115,15 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 4 cold damage; the wraith can shift 1 square
-> - **12-16:** 7 cold damage; the wraith shifts up to 2 square
-> - **17+:** 9 cold damage; P < 5 slowed (save ends); the wraith shifts up to 3 squares
+> - **≤11:** 4 cold damage; the wraith can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 7 cold damage; the wraith [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 square
+> - **17+:** 9 cold damage; P < 5 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends); the wraith [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 >
 > **Effect:** The wraith turns invisible until the start of their next turn.
 
 > ⭐️ **Corruptive Phasing**
 >
-> The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage. The wraith doesn't take damage from being force moved into objects.
+> The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage. The wraith doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Bonecage
@@ -21134,7 +21134,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 | **Corruption 10, poison 10**<br>Immunity | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |             **+5**<br>Might              |   **-2**<br>Agility   | **-2**<br>Reason  |  **+3**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Ribcage Chomp (Signature Ability)**
+> 🗡 **Ribcage Chomp ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -21142,15 +21142,15 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 9 damage; M < 4 grabbed
-> - **12-16:** 12 damage; M < 5 grabbed
-> - **17+:** 14 damage; grabbed
+> - **≤11:** 9 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 12 damage; M < 5 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 14 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The bonecage can have up to four size 1 targets grabbed at once. Any creature grabbed by the bonecage takes a bane on the Escape Grab maneuver, and the bonecage has damage immunity 5 against that creature's abilities. When the bonecage is force moved, any creature or object they have grabbed moves with them.
+> **Effect:** The bonecage can have up to four [size](scc:mcdm.heroes.v1/rule.character/size) 1 targets [grabbed](scc:mcdm.heroes.v1/condition/grabbed) at once. Any creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the bonecage takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on the [Escape Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/escape-grab) maneuver, and the bonecage has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 5 against that creature's abilities. When the bonecage is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), any creature or object they have [grabbed](scc:mcdm.heroes.v1/condition/grabbed) moves with them.
 >
-> **3 Malice:** While grabbed this way, a target can't teleport or be teleported.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, a target can't [teleport](scc:mcdm.heroes.v1/movement/teleport) or be [teleported](scc:mcdm.heroes.v1/movement/teleport).
 
-> 🔳 **Labyrinth of Bone (5 Malice)**
+> 🔳 **Labyrinth of Bone (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged**           |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -21162,7 +21162,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 > - **12-16:** 7 damage
 > - **17+:** 4 damage
 >
-> **Effect:** The area is difficult terrain for enemies. The effect ends at the end of the encounter or when the bonecage uses this ability again.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. The effect ends at the end of the encounter or when the bonecage uses this ability again.
 
 <!-- @type: statblock -->
 ####### Lithgekh
@@ -21173,7 +21173,7 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 | **Corruption 10, poison 10**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |              **0**<br>Might              |     **+1**<br>Agility      | **+5**<br>Reason  |  **+3**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🏹 **Heartstopper (Signature Ability)**
+> 🏹 **Heartstopper ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -21181,25 +21181,25 @@ At the start of any level 10 undead's turn, you can spend Malice to activate one
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 9 corruption damage; I < 3 frightened (save ends)
-> - **12-16:** 12 corruption damage; I < 4 frightened (save ends)
-> - **17+:** 14 corruption damage; I < 5 frightened (save ends)
+> - **≤11:** 9 corruption damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 12 corruption damage; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 14 corruption damage; I < 5 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** A creature frightened this way takes a bane on any ability that targets undead.
+> **Effect:** A creature [frightened](scc:mcdm.heroes.v1/condition/frightened) this way takes a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on any ability that targets [undead](scc:mcdm.monsters.v1/rule.keyword/undead).
 
-> ❗️ **Mystic Battery (1 Malice)**
+> ❗️ **Mystic Battery (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> | **Magic, Ranged** |      **Free triggered action** |
+> | **Magic, Ranged** |      **Free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |
 > |-------------------|-------------------------------:|
 > | **📏 Ranged 20**  | **🎯 The triggering creature** |
 >
 > **Trigger:** A creature within distance uses a magic ability.
 >
-> **Effect:** Any damage dealt by or Stamina regained from the ability is halved. The lithgekh regains Stamina equal to the remaining damage dealt or Stamina gained.
+> **Effect:** Any damage dealt by or [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) regained from the ability is halved. The lithgekh regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the remaining damage dealt or [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) gained.
 
 > ⭐️ **Devour Magic**
 >
-> Each ally within 10 squares of the lithgekh gains an edge on magic abilities.
+> Each ally within 10 squares of the lithgekh gains an [edge](scc:mcdm.heroes.v1/rule.dice/edge) on magic abilities.
 
 <!-- @type: monster | @category: count-rhodar-von-glauer -->
 ## Count Rhodar Von Glauer
