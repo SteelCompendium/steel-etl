@@ -67,3 +67,46 @@ func TestSplitRetainerAdvancement_NoHeadings(t *testing.T) {
 		t.Errorf("non-retainer statblock should yield no groups, got %v", groups)
 	}
 }
+
+func TestRetainerRoleKey(t *testing.T) {
+	fm := "roles:\n  - Harrier Retainer\n"
+	if got := retainerRoleKey(fm); got != "harrier" {
+		t.Errorf("want harrier, got %q", got)
+	}
+	if got := retainerRoleKey("roles:\n  - Bogus Retainer\n"); got != "" {
+		t.Errorf("unknown role should snap to empty, got %q", got)
+	}
+	if got := retainerRoleKey("name: x\n"); got != "" {
+		t.Errorf("no roles should yield empty, got %q", got)
+	}
+}
+
+func TestRenderRetainerAdvancement(t *testing.T) {
+	fm := "name: Goblin Guide\nroles:\n  - Harrier Retainer\n"
+	_, groups := splitRetainerAdvancement(goblinGuideBody)
+	out := renderRetainerAdvancement(fm, groups)
+
+	for _, want := range []string{
+		`class="fb-wrap"`, `data-role="harrier"`,
+		"Advancement Abilities", // card name
+		"Harrier Retainer",      // eyebrow
+		`class="fb__band--adv" data-level="4"`,
+		"Level 4 Advancement", // adv sub-head
+		"Weaving Knives",      // the level-4 ability
+		`data-level="7"`, "Sneak and Stab",
+	} {
+		if !strings.Contains(out, want) {
+			t.Errorf("advancement card missing %q\n---\n%s", want, out)
+		}
+	}
+	// The card must NOT contain the base features (those stay in the island).
+	if strings.Contains(out, "Stabbity Stab") {
+		t.Errorf("advancement card leaked a base feature")
+	}
+}
+
+func TestRenderRetainerAdvancement_Empty(t *testing.T) {
+	if out := renderRetainerAdvancement("name: x\n", nil); out != "" {
+		t.Errorf("no groups should render nothing, got %q", out)
+	}
+}

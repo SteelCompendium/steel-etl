@@ -15,6 +15,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/SteelCompendium/steel-etl/internal/content"
 )
 
 // retainerAdvHeadingRe matches the advancement separator headings. #{1,6} is
@@ -54,4 +56,56 @@ func splitRetainerAdvancement(body string) (string, []retainerAdvGroup) {
 		})
 	}
 	return base, groups
+}
+
+// retainerRoleKey snaps the first word of the first `roles` entry
+// ("Harrier Retainer" → "harrier") to a CSS-colored role key, so the Forged
+// Band head accents in the retainer's role color. Unknown/absent → "" (the
+// card renders in the neutral fallback).
+func retainerRoleKey(fm string) string {
+	roles := parseFrontmatterList(fm, "roles")
+	if len(roles) == 0 {
+		return ""
+	}
+	fields := strings.Fields(roles[0])
+	if len(fields) == 0 {
+		return ""
+	}
+	key := strings.ToLower(fields[0])
+	if knownRoleKeys[key] {
+		return key
+	}
+	return ""
+}
+
+// renderRetainerAdvancement renders the advancement groups as ONE Forged Band
+// card (leveled .fb__band--adv tiers via renderFbFeats), to sit below the
+// statblock island. Returns "" when there are no groups, so non-retainer
+// statblocks add nothing. The leading "\n" separates it from the island div.
+func renderRetainerAdvancement(fm string, groups []retainerAdvGroup) string {
+	if len(groups) == 0 {
+		return ""
+	}
+	var feats []fbFeature
+	for _, g := range groups {
+		rfs := content.ParseRichFeatures(g.Body)
+		for i := range rfs {
+			rfs[i].Level = g.Level // stamp the heading's level (no bold label to detect)
+		}
+		feats = append(feats, fbFeaturesFromRich(rfs)...)
+	}
+	if len(feats) == 0 {
+		return ""
+	}
+	eyebrow := ""
+	if roles := parseFrontmatterList(fm, "roles"); len(roles) > 0 {
+		eyebrow = strings.TrimSpace(roles[0])
+	}
+	doc := fbDoc{
+		Name:     "Advancement Abilities",
+		Eyebrow:  eyebrow,
+		Role:     retainerRoleKey(fm),
+		Features: feats,
+	}
+	return "\n" + renderFeatureblockCard(doc)
 }
