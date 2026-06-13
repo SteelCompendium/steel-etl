@@ -264,6 +264,52 @@ func TestMonsterGroupContent_NotAGroup(t *testing.T) {
 	}
 }
 
+// terrainStatsFM uses the NEW stats[] shape (no scalar ev:/size:).
+const terrainStatsFM = `name: Angry Beehive
+type: dynamic-terrain
+level: 2
+terrain_type: Hazard
+role: Hexer
+stats:
+    - name: EV
+      value: "2"
+    - name: Stamina
+      value: "3"
+    - name: Size
+      value: 1S
+`
+
+func TestTerrainStat(t *testing.T) {
+	if got := terrainStat(terrainStatsFM, "EV"); got != "2" {
+		t.Errorf("terrainStat EV = %q, want 2", got)
+	}
+	if got := terrainStat(terrainStatsFM, "Size"); got != "1S" {
+		t.Errorf("terrainStat Size = %q, want 1S", got)
+	}
+	if got := terrainStat(terrainStatsFM, "Stamina"); got != "3" {
+		t.Errorf("terrainStat Stamina = %q, want 3", got)
+	}
+	if got := terrainStat(terrainStatsFM, "Missing"); got != "" {
+		t.Errorf("terrainStat Missing = %q, want empty", got)
+	}
+}
+
+func TestTerrainCard_StatsShape(t *testing.T) {
+	got := terrainCard(terrainStatsFM, "An angry beehive hovers nearby.", "angry-beehive.md", "Angry Beehive")
+	for _, want := range []string{
+		`href="angry-beehive/"`,
+		`Dynamic Terrain`,
+		`<div class="sc-card__name">Angry Beehive</div>`,
+		`>2<`,  // EV value
+		`>1S<`, // Size value
+		`>EV</div>`, `>Level</div>`, `>Size</div>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("terrainCard (stats shape) missing %q in:\n%s", want, got)
+		}
+	}
+}
+
 func TestUsesFolderIndex_Bestiary(t *testing.T) {
 	for _, dir := range []string{"/x/monster", "/x/dynamic-terrain", "/x/retainer"} {
 		if !usesFolderIndex(dir) {

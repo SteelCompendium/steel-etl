@@ -128,6 +128,26 @@ func TestCollectBestiaryItems_SummonerSource(t *testing.T) {
 	}
 }
 
+func TestCollectBestiaryItems_TerrainStatsShape(t *testing.T) {
+	// Terrain frontmatter uses stats[] not scalar ev:/size: — ensure collectBestiaryItems
+	// still picks up the correct values via statField.
+	browse := filepath.Join(t.TempDir(), "Browse")
+	writeBrowseMD(t, filepath.Join(browse, "dynamic-terrain", "hazards", "angry-beehive.md"),
+		"name: Angry Beehive\ntype: dynamic-terrain\nlevel: 2\nstats:\n    - name: EV\n      value: \"2\"\n    - name: Stamina\n      value: \"3\"\n    - name: Size\n      value: 1S\n")
+
+	items := collectBestiaryItems(browse)
+	if len(items) != 1 {
+		t.Fatalf("expected 1 item, got %d: %+v", len(items), items)
+	}
+	it := items[0]
+	if it.EV != "2" {
+		t.Errorf("terrain EV = %q, want 2", it.EV)
+	}
+	if it.Size != "1S" {
+		t.Errorf("terrain Size = %q, want 1S", it.Size)
+	}
+}
+
 func TestBuildBestiarySearchPage_NoItems(t *testing.T) {
 	docs := t.TempDir()
 	if err := os.MkdirAll(filepath.Join(docs, "Browse"), 0o755); err != nil {
