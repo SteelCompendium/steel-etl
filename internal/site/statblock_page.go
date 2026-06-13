@@ -125,7 +125,13 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	if strings.TrimSpace(parseFrontmatterField(fm, "statblock_kind")) == "fixture" {
 		return data, false
 	}
-	js, err := json.Marshal(buildStatblockIsland(fm, body))
+	// Retainer advancement abilities (H6 "Level N Retainer Advancement Ability"
+	// headings) are split out: the island is built from the pre-advancement base
+	// so they no longer pollute the feature list, and they re-emit as a Forged
+	// Band card below the statblock (Plan 4). Non-retainer statblocks: base ==
+	// body, no groups, no-op.
+	base, advGroups := splitRetainerAdvancement(body)
+	js, err := json.Marshal(buildStatblockIsland(fm, base))
 	if err != nil {
 		return data, false
 	}
@@ -140,7 +146,8 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	island := "<div class=\"sc-statblock-mount\">" +
 		"<script type=\"application/json\" class=\"sc-statblock-data\">\n" + string(js) + "\n</script>" +
 		"</div>\n"
-	return []byte("---\n" + fm + "\n---\n\n" + island), true
+	adv := renderRetainerAdvancement(fm, advGroups)
+	return []byte("---\n" + fm + "\n---\n\n" + island + adv), true
 }
 
 func buildStatblockIsland(fm, body string) sbIsland {

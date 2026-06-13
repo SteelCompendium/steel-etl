@@ -122,8 +122,19 @@ role-tinted via `--role`. CSS in `v2/docs/stylesheets/steel-featureblock.css`.
 
 Cross-ref: `internal/site/featureblock_page.go` (shared renderer + `renderFbFeats`).
 
-**No data/schema/SCC change** — fixture fields already landed in Plan 1. Plans 4–5
-(retainer-advancement split, companion cards) remain.
+**No data/schema/SCC change** — fixture fields already landed in Plan 1.
+
+**Plan 4 (retainer advancement split) — shipped.** `internal/site/retainer_page.go`
+`splitRetainerAdvancement` cuts a retainer statblock body at the
+`**Level N Retainer Advancement Ability**` bold-label separators (these are the H8
+headings demoted by `demoteOverflowHeadings`; the regex also tolerates the `######`
+heading form the md-dse-linked variant keeps). `buildStatblockIslandPage` rebuilds the
+creature JSON island from the pre-advancement base (so advancement abilities no longer
+pollute its feature list) and appends a single "Advancement Abilities" Forged Band card
+(`renderRetainerAdvancement` → `renderFeatureblockCard`, with each tier stamped onto a
+`Level > 0` `.fb__band--adv` band). Role accent + eyebrow read the per-item `role:` /
+`organization:` scalars. Non-retainer statblocks are a no-op. Plan 5 (companion cards)
+remains.
 
 ## Summoner book reuse
 

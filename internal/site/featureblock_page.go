@@ -73,6 +73,7 @@ type fbDoc struct {
 	TerrainType string      `yaml:"terrain_type"`
 	Stats       []fbStat    `yaml:"stats"`
 	Features    []fbFeature `yaml:"features"`
+	Eyebrow     string      `yaml:"-"` // synthetic override (retainer advancement); not from frontmatter
 }
 
 // buildFeatureblockPage rewrites a type:featureblock | type:dynamic-terrain page
@@ -111,6 +112,9 @@ func fbDataRole(doc fbDoc) string {
 // fbEyebrow composes the head eyebrow line: "Level N <TerrainType> · <Role>" for
 // terrain/fixtures, else "Malice Features" / "Features".
 func fbEyebrow(doc fbDoc) string {
+	if e := strings.TrimSpace(doc.Eyebrow); e != "" {
+		return e
+	}
 	if doc.TerrainType != "" {
 		s := doc.TerrainType
 		if doc.Level > 0 {
