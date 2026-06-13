@@ -87,8 +87,22 @@ header, and a non-lossy `features[]` array. The features are parsed by the share
 statblock island's feature parser that additionally keeps the source emoji `icon` and
 labeled `sections`/`enhancements` for table-less features. `transformFeatureblock`
 (`internal/output/`) emits the SDK JSON/YAML straight from this frontmatter (no body
-re-parse). Site rendering of these as High-Fantasy Steel cards is a later effort
-(`docs/superpowers/specs/2026-06-12-featureblock-cards-design.md`, Plan 2+).
+re-parse).
+
+### Featureblock site rendering (Plan 2)
+
+`internal/site/featureblock_page.go` turns `type: featureblock` and `type:
+dynamic-terrain` pages into the `.fb-wrap` **Forged Band** card at build time. It
+`yaml.Unmarshal`s the structured frontmatter produced by the parsers above (no body
+re-parse), reuses the ability-card grammar (each feature becomes
+`article.sc-ability.fb__feat`), and is dispatched in `build.go` `buildSection`
+alongside the statblock/ability rewriters. See the design spec:
+`docs/superpowers/specs/2026-06-12-featureblock-cards-design.md`.
+
+**Plan 2 scope:** featureblock and dynamic-terrain pages only — the renderer is live for
+all existing featureblocks (malice, terrain) and for Summoner fixtures (which already
+route here). Retainer-advancement split, beastheart companion-advancement cards, and any
+remaining Summoner fixture edge cases are Plans 3–5.
 
 ## Summoner book reuse
 
