@@ -128,7 +128,7 @@ func fbEyebrow(doc fbDoc) string {
 }
 
 // renderFeatureblockCard builds the contiguous (no blank-line) raw-HTML card so
-// md_in_html passes it through verbatim. Features land in Task 3.
+// md_in_html passes it through verbatim.
 func renderFeatureblockCard(doc fbDoc) string {
 	name := strings.TrimSpace(doc.Name)
 	if name == "" {
