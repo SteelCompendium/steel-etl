@@ -16172,7 +16172,7 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 
 In a long-lost language, the word oruk-"blood fire"-described the glowing appearance of the orc people when they push themselves to their limits. While orcs know one another as kanin ("the people") in their own language, they also use "orc" with great pride, especially when dealing with other folk.
 
-Orc history spans the world and all its ages. They've settled into villages and cities, hot and cold climates, high in the mountains and deep underground. Most orcs live in diverse humanoid societies, though a few live secluded in the tropics. Though they are no more likely to stand in the way of adventurers' than any other folk, orcs who do fill the same roles as other humanoids: mercenaries, bounty hunters, garroters, guards, cultists, and corrupt kings.
+Orc history spans the world and all its ages. They've settled into villages and cities, hot and cold climates, high in the mountains and deep underground. Most orcs live in diverse [Humanoid](scc:mcdm.monsters.v1/rule.keyword/humanoid) societies, though a few live secluded in the tropics. Though they are no more likely to stand in the way of adventurers' than any other folk, orcs who do fill the same roles as other humanoids: mercenaries, bounty hunters, garroters, guards, cultists, and corrupt kings.
 
 #### Relentlessly Tough
 
@@ -16201,27 +16201,27 @@ Most orcs speak Caelian and Kalliak.
 <!-- @type: featureblock -->
 ######### Orc Malice (Malice Features)
 
-At the start of any orc's turn, you can spend Malice to activate one of the following features.
+At the start of any orc's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Overwhelming March (3 Malice)**
+> ⭐️ **Overwhelming March (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each orc shifts up to their speed, moving through enemy spaces if they can. Each enemy passed through during this movement makes a **Might test**.
+> Each orc [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, moving through enemy spaces if they can. Each enemy passed through during this movement makes a **Might test**.
 >
-> - **≤11:** 6 damage; prone
-> - **12-16:** 4 damage; prone
-> - **17+:** Push 2
+> - **≤11:** 6 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 4 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 2
 
-> 🔳 **Mohler Trench (5 Malice)**
+> 🔳 **Mohler Trench (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> An orc acting this turn summons 2 **mohlers** out of the ground, who dig a trench that is a 10 x 1 line within 10 squares when they appear. The trench is 2 squares deep and is difficult terrain. The trench can't be created directly underneath creatures.
+> An orc acting this turn summons 2 **mohlers** out of the ground, who dig a trench that is a 10 x 1 line within 10 squares when they appear. The trench is 2 squares deep and is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The trench can't be created directly underneath creatures.
 
-> 🔳 **Mohler Cavity (7 Malice)**
+> 🔳 **Mohler Cavity (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The ground shakes as a group of mohlers dig a 5 cube pit beneath an area where at least one creature is on the ground. The area is difficult terrain. Each orc in the area can shift into the nearest unoccupied space outside the pit before it is completed. Each nonorc in the area makes an **Agility test**.
+> The ground shakes as a group of mohlers dig a 5 cube pit beneath an area where at least one creature is on the ground. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Each orc in the area can [shift](scc:mcdm.heroes.v1/movement/shifting) into the nearest unoccupied space outside the pit before it is completed. Each nonorc in the area makes an **Agility test**.
 >
-> - **≤11:** 4 damage; the target falls; prone and can't stand (EoT)
+> - **≤11:** 4 damage; the target falls; [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
 > - **12-16:** 4 damage; the target falls
-> - **17+:** The target can shift into the nearest unoccupied space outside the pit.
+> - **17+:** The target can [shift](scc:mcdm.heroes.v1/movement/shifting) into the nearest unoccupied space outside the pit.
 
 <!-- @type: statblock -->
 ####### Mohler
@@ -16232,7 +16232,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **Burrow**<br>Movement |        -         | **+2 bonus to speed**<br>With Captain |   **-**<br>Weakness   |
 |  **+0**<br>Might  |   **+2**<br>Agility    | **-4**<br>Reason |          **+1**<br>Intuition          |  **-3**<br>Presence   |
 
-> 🗡 **Earth Bump (Signature Ability)**
+> 🗡 **Earth Bump ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -16244,15 +16244,15 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** The distance increases to melee 2. If the mohler is 1 or more squares beneath the target before they use this ability, a target who has M < 1 is also knocked prone.
+> **Effect:** The distance increases to melee 2. If the mohler is 1 or more squares beneath the target before they use this ability, a target who has M < 1 is also knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Seismic Sense**
 >
-> The mohler doesn't need line of effect to use abilities against creatures or objects touching the ground.
+> The mohler doesn't need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to use abilities against creatures or objects touching the ground.
 
 > ⭐️ **Ground Grinder**
 >
-> The mohler can use the Dig maneuver at the start of the encounter. Additionally, while the mohler burrows within 1 square below the ground, the ground above where they burrow is difficult terrain.
+> The mohler can use the Dig maneuver at the start of the encounter. Additionally, while the mohler [burrows](scc:mcdm.heroes.v1/movement/burrow) within 1 square below the ground, the ground above where they burrow is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 <!-- @type: statblock -->
 ####### Orc Blitzer
@@ -16263,7 +16263,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |        -         | **+2 bonus to speed**<br>With Captain |   **-**<br>Weakness   |
 |  **+1**<br>Might  | **+2**<br>Agility | **0**<br>Reason  |          **0**<br>Intuition           |   **0**<br>Presence   |
 
-> 🗡 **Lugged Spear (Signature Ability)**
+> 🗡 **Lugged Spear ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -16275,11 +16275,11 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > - **12-16:** 2 damage
 > - **17+:** 3 damage
 >
-> **Effect:** A target who starts their next turn adjacent to three or more blitzers takes 3 damage.
+> **Effect:** A target who starts their next turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to three or more blitzers takes 3 damage.
 
 > ⭐️ **Bloodfire Bur**
 >
-> If the blitzer is reduced to 0 Stamina, they can make a free strike before dying.
+> If the blitzer is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 <!-- @type: statblock -->
 ####### Orc Bloodspark
@@ -16290,7 +16290,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |        -         | **+2 bonus to forced movement distance**<br>With Captain |   **-**<br>Weakness   |
 |  **0**<br>Might   | **+1**<br>Agility | **0**<br>Reason  |                    **0**<br>Intuition                    |   **+2**<br>Presence  |
 
-> 🏹 **Explosive Mote (Signature Ability)**
+> 🏹 **Explosive Mote ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -16298,13 +16298,13 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; push 1, or the bloodspark can shift 1 square away from the target
-> - **12-16:** 4 damage; push 2, or the bloodspark shifts up to 2 squares away from the target
-> - **17+:** 5 damage; push 4, or the bloodspark shifts up to 4 squares away from the target
+> - **≤11:** 2 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1, or the bloodspark can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square away from the target
+> - **12-16:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2, or the bloodspark [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares away from the target
+> - **17+:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4, or the bloodspark [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares away from the target
 
 > ⭐️ **Bloodfire Bur**
 >
-> If the bloodspark is reduced to 0 Stamina, they can make a free strike before dying.
+> If the bloodspark is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 <!-- @type: statblock -->
 ####### Orc Glorifier
@@ -16315,7 +16315,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |        -         | **+5 bonus to ranged distance**<br>With Captain |   **-**<br>Weakness   |
 |  **0**<br>Might   | **+1**<br>Agility | **0**<br>Reason  |               **0**<br>Intuition                |  **+2**<br>Presence   |
 
-> ⚔️ **Call to Victory (Signature Ability)**
+> ⚔️ **Call to Victory ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |                          **Main action** |
 > |----------------------------------|-----------------------------------------:|
@@ -16324,14 +16324,14 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 1 sonic damage
-> - **12-16:** 2 sonic damage; P < 1 slowed (save ends)
-> - **17+:** 3 sonic damage; P < 2 slowed (save ends)
+> - **12-16:** 2 sonic damage; P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 3 sonic damage; P < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** Allies gain an edge on melee strikes against the target until the glorifier and each other glorifier in their squad are killed.
+> **Effect:** Allies gain an edge on melee [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against the target until the glorifier and each other glorifier in their [squad](scc:mcdm.monsters.v1/rule.monster/squad) are killed.
 
 > ⭐️ **Bloodfire Burn**
 >
-> If the glorifier is reduced to 0 Stamina, they can make a free strike before dying.
+> If the glorifier is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 <!-- @type: statblock -->
 ####### Orc Razor
@@ -16342,7 +16342,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |        -         | **+1 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |  **+2**<br>Might  | **+1**<br>Agility | **0**<br>Reason  |               **0**<br>Intuition               |   **0**<br>Presence   |
 
-> 🏹 **Boot and Blade (Signature Ability)**
+> 🏹 **Boot and Blade ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -16351,14 +16351,14 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 2 damage
-> - **12-16:** 4 damage; push 3
-> - **17+:** 5 damage; push 3 or prone
+> - **12-16:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3 or [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** The razor gains an edge against any target affected by a condition.
+> **Effect:** The razor gains an edge against any target affected by a [condition](scc:mcdm.heroes.v1/rule.combat/condition).
 
 > ⭐️ **Bloodfire Burn**
 >
-> If the razor is reduced to 0 Stamina, they can make a free strike before dying.
+> If the razor is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying.
 
 <!-- @type: statblock -->
 ####### Orc Bloodrunner
@@ -16369,7 +16369,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+2**<br>Agility |  **0**<br>Reason  |  **+1**<br>Intuition  |  **+1**<br>Presence  |
 
-> 🗡 **Shield Bash (Signature Ability)**
+> 🗡 **Shield Bash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16377,21 +16377,21 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push special
-> - **12-16:** 10 damage; push special
-> - **17+:** 13 damage; push special or prone
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) special
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) special
+> - **17+:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) special or [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** The forced movement distance is equal to the number of squares the bloodrunner moved on their turn before using this ability. An ally targeted by this ability ignores the damage and can move up to that same distance.
+> **Effect:** The [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance is equal to the number of squares the bloodrunner moved on their turn before using this ability. An ally targeted by this ability ignores the damage and can move up to that same distance.
 >
-> **2 Malice:** An ally targeted by this ability can make a free strike after the forced movement is resolved.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** An ally targeted by this ability can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) after the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is resolved.
 
 > ⭐️ **Unimpeded**
 >
-> The bloodrunner can end their movement in a prone creature's space. The first time on a turn that a bloodrunner enters any creature's space, that creature takes 3 damage.
+> The bloodrunner can end their movement in a [prone](scc:mcdm.heroes.v1/condition/prone) creature's space. The first time on a turn that a bloodrunner enters any creature's space, that creature takes 3 damage.
 
 > ⭐️ **Relentless**
 >
-> If the bloodrunner is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the bloodrunner is reduced to 1 Stamina instead.
+> If the bloodrunner is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the bloodrunner is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Chainlock
@@ -16402,7 +16402,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+2**<br>Agility | **+1**<br>Reason  |  **+0**<br>Intuition  |  **+0**<br>Presence  |
 
-> 🗡 **Hook and Chain (Signature Ability)**
+> 🗡 **Hook and Chain ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16410,13 +16410,13 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; pull 1; M < 0 the target is hooked (save ends)
-> - **12-16:** 7 damage; pull 2; M < 1 the target is hooked (save ends)
-> - **17+:** 9 damage; pull 3; M < 2 the target is hooked (save ends)
+> - **≤11:** 5 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 0 the target is hooked (save ends)
+> - **12-16:** 7 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 the target is hooked (save ends)
+> - **17+:** 9 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 the target is hooked (save ends)
 >
 > **Effect:** A hooked target can't move more than 3 squares away from the chainlock's position when this ability is used.
 
-> 🏹 **Heavy Crossbolt (3 Malice)**
+> 🏹 **Heavy Crossbolt (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -16424,17 +16424,17 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; A < 0 slowed (save ends)
-> - **12-16:** 7 damage; A < 1 slowed (save ends)
-> - **17+:** 9 damage; prone; A < 2 slowed (save ends)
+> - **≤11:** 5 damage; A < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 7 damage; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
 > ⭐️ **Chain Link**
 >
-> Whenever the chainlock is force moved by a creature's melee ability, the creature is pulled the same distance toward the chainlock after the forced movement is resolved.
+> Whenever the chainlock is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) by a creature's melee ability, the creature is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) the same distance toward the chainlock after the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) is resolved.
 
 > ⭐️ **Relentless**
 >
-> If the chainlock is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the chainlock is reduced to 1 Stamina instead.
+> If the chainlock is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the chainlock is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Eye of Grole
@@ -16447,9 +16447,9 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 
 > ⭐️ **Elemental Affinity**
 >
-> The eye has an affinity for one of the following damage types cold, fire, or lightning. The chosen type determines the eye's damage immunity and the damage dealt by their abilities.
+> The eye has an affinity for one of the following damage types cold, fire, or lightning. The chosen type determines the eye's [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) and the damage dealt by their abilities.
 
-> 🏹 **Elemental Discharge (Signature Ability)**
+> 🏹 **Elemental Discharge ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16457,13 +16457,13 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; push 2, or the eye shifts up to 2 squares away from the target
-> - **12-16:** 9 damage; slide 4, or the eye shifts up to 4 squares away from the target
-> - **17+:** 12 damage; slide 6, or the eye shifts up to 6 squares away from the target
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2, or the eye [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares away from the target
+> - **12-16:** 9 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4, or the eye [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares away from the target
+> - **17+:** 12 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 6, or the eye [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 6 squares away from the target
 >
 > **Effect:** This ability deals cold, fire, or lightning damage.
 
-> 🔳 **Power Burst (3 Malice)**
+> 🔳 **Power Burst (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**            |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -16471,15 +16471,15 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; push 2
-> - **12-16:** 5 damage; push 3
-> - **17+:** 8 damage; push 4, prone
+> - **≤11:** 3 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4, [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** This ability deals cold, fire, or lightning damage, and any enemy targeted by the ability has damage weakness 3 to the same damage type (save ends).
+> **Effect:** This ability deals cold, fire, or lightning damage, and any enemy targeted by the ability has [damage weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3 to the same damage type (save ends).
 
 > ⭐️ **Relentless**
 >
-> If the eye is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the eye is reduced to 1 Stamina instead.
+> If the eye is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the eye is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Garotter
@@ -16490,7 +16490,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+1**<br>Might  | **+2**<br>Agility | **+0**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Dagger Feint (Signature Ability)**
+> 🗡 **Dagger Feint ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16498,9 +16498,9 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; the garroter can shift 1 square
-> - **12-16:** 9 damage; the garroter shifts up to 2 squares
-> - **17+:** 12 damage; the garroter shifts up to 3 squares
+> - **≤11:** 6 damage; the garroter can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 9 damage; the garroter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
+> - **17+:** 12 damage; the garroter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 >
 > **Effect:** If this ability gains an edge or has a double edge, it deals an extra 4 damage.
 
@@ -16513,12 +16513,12 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 6 damage
-> - **12-16:** 9 damage; I < 1 dazed (save ends)
-> - **17+:** 12 damage; grabbed; I < 2 dazed (save ends)
+> - **12-16:** 9 damage; I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 12 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed); I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** While grabbed this way, a target can't communicate or use magic abilities.
+> **Effect:** While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, a target can't communicate or use magic abilities.
 
-> 👤 **Chroma Cloak (1 Malice)**
+> 👤 **Chroma Cloak (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**          |        **Maneuver** |
 > |----------------|--------------------:|
@@ -16528,7 +16528,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 
 > ⭐️ **Relentless**
 >
-> If the garroter is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the garroter is reduced to 1 Stamina instead.
+> If the garroter is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the garroter is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Godcaller
@@ -16539,7 +16539,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+1**<br>Might  | **+0**<br>Agility | **+0**<br>Reason  |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> ⚔️ **Power Chord (Signature Ability)**
+> ⚔️ **Power Chord ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |               **Main action** |
 > |----------------------------------|------------------------------:|
@@ -16549,7 +16549,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > - **≤11:** 5 sonic damage
 > - **12-16:** 7 sonic damage
-> - **17+:** 9 sonic damage; P < 2 weakened (save ends)
+> - **17+:** 9 sonic damage; P < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 > 🏹 **Cadenza**
 >
@@ -16559,19 +16559,19 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Effect:** The target moves up to their speed and can use a main action.
 >
-> **3 Malice:** The godcaller targets a second ally.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The godcaller targets a second ally.
 
-> 🏹 **Rallying Ostinato (2 Malice)**
+> 🏹 **Rallying Ostinato (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                 **Maneuver** |
 > |-------------------|-----------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and three allies** |
 >
-> **Effect:** Each target regains 15 Stamina and ignores difficult terrain until the end of the encounter.
+> **Effect:** Each target regains 15 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) until the end of the encounter.
 
 > ⭐️ **Relentless**
 >
-> If the godcaller is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the godcaller is reduced to 1 Stamina instead.
+> If the godcaller is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the godcaller is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Juggernaut
@@ -16582,7 +16582,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+2**<br>Agility | **-1**<br>Reason  |  **-1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Haymaker Greataxe (Signature Ability)**
+> 🗡 **Haymaker Greataxe ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16591,12 +16591,12 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; prone
-> - **17+:** 14 damage; prone; M < 2 bleeding (save ends)
+> - **12-16:** 11 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 14 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** A target who is already prone takes an extra 6 damage.
+> **Effect:** A target who is already [prone](scc:mcdm.heroes.v1/condition/prone) takes an extra 6 damage.
 
-> ❗️ **Hrraaaaaagh! (1 Malice)**
+> ❗️ **Hrraaaaaagh! (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
@@ -16604,15 +16604,15 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Trigger:** The juggernaut takes damage.
 >
-> **Effect:** The juggernaut moves up to their speed and can make a free strike.
+> **Effect:** The juggernaut moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ⭐️ **Blood in the Water**
 >
-> Whenever the juggernaut willingly moves, they can move 3 additional squares if they end their movement closer to a prone creature.
+> Whenever the juggernaut willingly moves, they can move 3 additional squares if they end their movement closer to a [prone](scc:mcdm.heroes.v1/condition/prone) creature.
 
 > ⭐️ **Relentless**
 >
-> If the juggernaut is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the juggernaut is reduced to 1 Stamina instead.
+> If the juggernaut is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the juggernaut is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Rampart
@@ -16623,7 +16623,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+2**<br>Agility | **+2**<br>Reason  |  **+2**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **My Spear, My Foe (Signature Ability)**
+> 🗡 **My Spear, My Foe ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -16632,8 +16632,8 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 6 damage
-> - **12-16:** 9 damage; taunted (EoT)
-> - **17+:** 12 damage; taunted (EoT)
+> - **12-16:** 9 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **17+:** 12 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 >
 > **Effect:** This ability has a double edge against any target who dealt damage to the rampart this round.
 
@@ -16643,7 +16643,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > |------------------------|----------------:|
 > | **📏 Self; see below** | **🎯 One ally** |
 >
-> **Effect:** The rampart moves or shifts up to their speed adjacent to the target, then can swap places with the target.
+> **Effect:** The rampart moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target, then can swap places with the target.
 
 > ❗️ **No.**
 >
@@ -16651,13 +16651,13 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > |-------------|---------------------:|
 > | **📏 Self** |          **🎯 Self** |
 >
-> **Trigger:** A creature targets an ally adjacent to the rampart with an ability that doesn't also target the rampart.
+> **Trigger:** A creature targets an ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the rampart with an ability that doesn't also target the rampart.
 >
 > **Effect:** The rampart becomes the target of the triggering ability instead.
 
 > ⭐️ **Relentless**
 >
-> If the rampart is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the rampart is reduced to 1 Stamina instead.
+> If the rampart is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the rampart is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Terranova
@@ -16668,7 +16668,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **Burrow**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+1**<br>Might  |   **+1**<br>Agility    | **+0**<br>Reason  |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🏹 **Earth Pillar (Signature Ability)**
+> 🏹 **Earth Pillar ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |                   **Main action** |
 > |---------------------------|----------------------------------:|
@@ -16676,13 +16676,13 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; A < 0 prone and can't stand (save ends)
-> - **12-16:** 9 damage; A < 1 prone and can't stand (save ends)
-> - **17+:** 12 damage; A < 2 prone and can't stand (save ends)
+> - **≤11:** 6 damage; A < 0 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **12-16:** 9 damage; A < 1 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **17+:** 12 damage; A < 2 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 >
 > **Effect:** Each target must be on the ground, and the ground in each target's space rises 1 square.
 
-> ❇️ **Sinkhole (3 Malice)**
+> ❇️ **Sinkhole (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |                          **Main action** |
 > |------------------|-----------------------------------------:|
@@ -16690,19 +16690,19 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 damage; M < 0 restrained (save ends)
-> - **12-16:** 7 damage; M < 1 restrained (save ends)
-> - **17+:** 10 damage; M < 2 restrained (save ends)
+> - **≤11:** 4 damage; M < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 7 damage; M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 10 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Seismic Step**
 >
-> The terranova ignores difficult terrain. Additionally, they don't need line of effect to use abilities against creatures touching the ground.
+> The terranova ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Additionally, they don't need [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to use abilities against creatures touching the ground.
 
 > ⭐️ **Relentless**
 >
-> If the terranova is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the terranova is reduced to 1 Stamina instead.
+> If the terranova is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the terranova is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Orc Warleader
@@ -16713,7 +16713,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+3**<br>Might  | **+2**<br>Agility |  **+1**<br>Reason  |  **+2**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🏹 **Go. (Signature Ability)**
+> 🏹 **Go. ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged**       | **Main action** |
 > |------------------|----------------:|
@@ -16721,9 +16721,9 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Effect:** The target moves up to their speed and can use a main action.
 >
-> **1 Malice:** The warleader targets two allies.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The warleader targets two allies.
 >
-> **3 Malice:** The warleader targets one ally and a minion squad.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The warleader targets one ally and a [minion](scc:mcdm.monsters.v1/rule.organization/minion) [squad](scc:mcdm.monsters.v1/rule.monster/squad).
 
 > 🗡 **Mace Lariat**
 >
@@ -16733,17 +16733,17 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 damage; push 1; M < 1 dazed (save ends)
-> - **12-16:** 10 damage; push 3; M < 2 dazed (save ends)
-> - **17+:** 13 damage; push 5; M < 3 dazed (save ends)
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> 🏹 **Lockdown (3 Malice)**
+> 🏹 **Lockdown (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**                |                 **Maneuver** |
 > |---------------------------|-----------------------------:|
 > | **📏 Self and ranged 10** | **🎯 Self and three allies** |
 >
-> **Effect:** Each target moves up to their speed and can use the Grab maneuver, which gains an edge.
+> **Effect:** Each target moves up to their speed and can use the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) maneuver, which gains an edge.
 
 > ❗️ **Courtesy Call**
 >
@@ -16755,41 +16755,41 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Effect:** The target has a double edge on their next power roll before the end of the encounter.
 
-> ☠️ **Close In (Villain Action 1)**
+> ☠️ **Close In ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**       |                        **-** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target moves up to their speed. Each enemy adjacent to a target after this move makes an Intuition test.
+> **Effect:** Each target moves up to their speed. Each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target after this move makes an Intuition test.
 >
-> - **≤11:** Frightened of the warleader (save ends)
-> - **12-16:** Frightened of the warleader (EoT)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) of the warleader (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) of the warleader (EoT)
 > - **17+:** No effect
 
-> ☠️ **Familial Reinforcements (Villain Action 2)**
+> ☠️ **Familial Reinforcements ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Ranged**       |       **-** |
 > |------------------|------------:|
 > | **📏 Ranged 10** | **🎯 Self** |
 >
-> **Effect:** The warleader shifts up to their speed, and four orc blitzers appear in unoccupied spaces within distance.
+> **Effect:** The warleader [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, and four orc blitzers appear in unoccupied spaces within distance.
 
-> ☠️ **I'll Do This Myself (Villain Action 3)**
+> ☠️ **I'll Do This Myself ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** Three times in succession, the warleader shifts up to their speed and can use Mace Lariat.
+> **Effect:** Three times in succession, the warleader [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can use Mace Lariat.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the warleader can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the warleader can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ⭐️ **Relentless**
 >
-> If the warleader is reduced to 0 Stamina, they can make a free strike before dying. If the target of the free strike is reduced to 0 Stamina, the warleader is reduced to 1 Stamina instead.
+> If the warleader is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before dying. If the target of the free strike is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), the warleader is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) instead.
 
 <!-- @type: statblock -->
 ####### Scyza
@@ -16800,7 +16800,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **-1**<br>Agility |  **-4**<br>Reason  |  **+0**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Clawed Kick (Signature Ability)**
+> 🗡 **Clawed Kick ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -16809,10 +16809,10 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; prone
-> - **17+:** 14 damage; prone
+> - **12-16:** 11 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 14 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** The scyza roars, and if the target has I < 2, they are frightened (save ends).
+> **Effect:** The scyza roars, and if the target has I < 2, they are [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends).
 
 > 🗡 **Whiptail**
 >
@@ -16823,12 +16823,12 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 > **Power Roll + 2:**
 >
 > - **≤11:** 8 damage
-> - **12-16:** 13 damage; prone
-> - **17+:** 16 damage; A < 2 bleeding (save ends)
+> - **12-16:** 13 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 16 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Against a target on top of the scyza, this ability gains an edge, and the target is pushed into an unoccupied adjacent square and knocked prone.
+> **Effect:** Against a target on top of the scyza, this ability gains an edge, and the target is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) into an unoccupied [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) square and knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> 🔳 **Crestfall (2 Malice)**
+> 🔳 **Crestfall (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon** |               **Main action** |
 > |--------------------------|------------------------------:|
@@ -16836,20 +16836,20 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 damage, 1 sonic damage; R < 0 dazed (save ends)
-> - **12-16:** 7 damage, 2 sonic damage; R < 1 dazed (save ends)
-> - **17+:** 9 damage, 3 sonic damage; R < 2 dazed (save ends)
+> - **≤11:** 4 damage, 1 sonic damage; R < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 7 damage, 2 sonic damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 9 damage, 3 sonic damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> ❇️ **Sandstorm (3 Malice)**
+> ❇️ **Sandstorm (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |   **Maneuver** |
 > |----------------|---------------:|
 > | **📏 3 burst** | **🎯 Special** |
 >
-> **Effect:** The scyza kicks up a sandstorm, granting concealment to themself and any ally in the area until the end of the scyza's next turn. Each enemy in the area makes an Intuition test.
+> **Effect:** The scyza kicks up a sandstorm, granting [concealment](scc:mcdm.heroes.v1/rule.combat/concealment) to themself and any ally in the area until the end of the scyza's next turn. Each enemy in the area makes an Intuition test.
 >
-> - **≤11:** 10 damage; prone; slowed (EoT)
-> - **12-16:** 7 damage; slowed (EoT)
+> - **≤11:** 10 damage; [prone](scc:mcdm.heroes.v1/condition/prone); [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **12-16:** 7 damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 > - **17+:** 4 damage
 
 > ❗️ **Brace and Break**
@@ -16860,7 +16860,7 @@ At the start of any orc's turn, you can spend Malice to activate one of the foll
 >
 > **Trigger:** The scyza or an ally riding the scyza is targeted by an ability.
 >
-> **Effect:** Any damage dealt by the triggering ability is halved. If the creature or object who used the ability is within 3 squares of the scyza, the scyza can make a free strike against them.
+> **Effect:** Any damage dealt by the triggering ability is halved. If the creature or object who used the ability is within 3 squares of the scyza, the scyza can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Terrible Beast**
 >
