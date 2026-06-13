@@ -20,13 +20,13 @@ const goblinGuideBody = `###### Goblin Guide
 >
 > The guide doesn't provoke opportunity attacks by moving.
 
-###### Level 4 Retainer Advancement Ability
+**Level 4 Retainer Advancement Ability**
 
 > 🗡 **Weaving Knives (Encounter)**
 >
 > **Effect:** The guide shifts up to their speed before and after the strike.
 
-###### Level 7 Retainer Advancement Ability
+**Level 7 Retainer Advancement Ability**
 
 > 🗡 **Sneak and Stab (Encounter)**
 >
@@ -55,6 +55,20 @@ func TestSplitRetainerAdvancement(t *testing.T) {
 	}
 	if strings.Contains(groups[0].Body, "Retainer Advancement Ability") {
 		t.Errorf("group body should not include the heading line")
+	}
+}
+
+func TestSplitRetainerAdvancement_HeadingForm(t *testing.T) {
+	body := "> base feature\n\n###### Level 4 Retainer Advancement Ability\n\n> 🗡 **Adv Ability**\n>\n> **Effect:** does a thing."
+	base, groups := splitRetainerAdvancement(body)
+	if strings.Contains(base, "Adv Ability") {
+		t.Errorf("heading-form advancement should be split out of base")
+	}
+	if len(groups) != 1 || groups[0].Level != 4 {
+		t.Fatalf("want 1 group at level 4, got %v", groups)
+	}
+	if !strings.Contains(groups[0].Body, "Adv Ability") {
+		t.Errorf("group body should contain the advancement ability")
 	}
 }
 

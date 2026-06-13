@@ -3,8 +3,9 @@ package site
 // High-Fantasy Steel RETAINER advancement cards for the Steel Compendium site.
 //
 // Retainer statblocks (Goblin Guide, Minotaur Gorer, …) are `type: statblock`,
-// but their bodies append advancement abilities under H6 headings
-// "###### Level N Retainer Advancement Ability". Those blockquotes used to be
+// but their bodies append advancement abilities under bold labels
+// "**Level N Retainer Advancement Ability**" (per-item md-linked files) or
+// H-headings (concatenated md-dse-linked pages). Those blockquotes used to be
 // slurped into the creature JSON island's flat feature list (polluting it). We
 // split them out here: the island is built from the pre-advancement BASE body,
 // and the advancement abilities re-emit as one Forged Band card with leveled
@@ -19,11 +20,14 @@ import (
 	"github.com/SteelCompendium/steel-etl/internal/content"
 )
 
-// retainerAdvHeadingRe matches the advancement separator headings. #{1,6} is
-// defensive against a future heading-depth change; "Retainer" (not "Role")
-// keeps the chapter's separate Role Advancement pages untouched.
-var retainerAdvHeadingRe = regexp.MustCompile(
-	`(?im)^#{1,6}[ \t]+Level[ \t]+(\d+)[ \t]+Retainer[ \t]+Advancement[ \t]+Ability[ \t]*$`)
+// retainerAdvLabelRe matches the advancement-tier separator that precedes each
+// advancement ability. The site's per-item md-linked retainer files use a BOLD
+// label ("**Level 4 Retainer Advancement Ability**"); the concatenated
+// md-dse-linked book pages use an H-heading of the same text. Match either.
+// "Retainer" (not "Role") keeps the chapter's separate Role Advancement pages
+// untouched. Capture group 1 is the level number.
+var retainerAdvLabelRe = regexp.MustCompile(
+	`(?im)^(?:#{1,6}[ \t]+|\*\*)Level[ \t]+(\d+)[ \t]+Retainer[ \t]+Advancement[ \t]+Ability(?:\*\*)?[ \t]*$`)
 
 // retainerAdvGroup is one advancement tier: its level plus the blockquote body
 // that follows its heading (up to the next heading or end of body).
@@ -37,7 +41,7 @@ type retainerAdvGroup struct {
 // Returns (body, nil) when there are no advancement headings, so every
 // non-retainer statblock is a no-op.
 func splitRetainerAdvancement(body string) (string, []retainerAdvGroup) {
-	locs := retainerAdvHeadingRe.FindAllStringSubmatchIndex(body, -1)
+	locs := retainerAdvLabelRe.FindAllStringSubmatchIndex(body, -1)
 	if len(locs) == 0 {
 		return body, nil
 	}
