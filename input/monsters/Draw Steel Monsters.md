@@ -18692,7 +18692,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 
 Rich soil squelches under every footstep. Curtains of menacing vines block the way, and muffled groans echo distantly under the darkening canopy. But by the time a hapless explorer realizes the ground is moving, it's too late—the shambling mound has devoured them.
 
-Found in overgrown swamps, stinking marshes, dense wodes, and dark, damp rainforests, the shambling mound is a wandering mass of vegetation that feeds on everything in their path.
+Found in overgrown swamps, stinking marshes, dense wodes, and dark, damp rainforests, the [shambling mound](scc:mcdm.monsters.v1/monster.group/shambling-mound) is a wandering mass of vegetation that feeds on everything in their path.
 
 ### Noxious Origins
 
@@ -18730,27 +18730,27 @@ One must also be wary of the area around a shambling mound. Their vines reach ou
 <!-- @type: featureblock -->
 ######### Shambling Mound Malice (Malice Features)
 
-At the start of a shambling mound's turn, you can spend Malice to activate one of the following features.
+At the start of a shambling mound's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 👤 **Poisoned Vines (3 Malice)**
+> 👤 **Poisoned Vines (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The shambling mound seeps noxious residue from their vines. The next time they use their Vine Lash ability before the end of their next turn, they deal an extra 12 poison damage to each target.
 
-> ❇️ **Frenzy Lash (5 Malice)**
+> ❇️ **Frenzy Lash (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The shambling mound lashes out at each enemy within 10 squares of them, driving them back or into the air. Each target makes an **Agility test**.
 >
-> - **≤11:** 7 damage; push 7 or vertical push 3; restrained (save ends)
-> - **12-16:** 6 damage; push 5 or vertical push 2
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 7 or vertical push 3; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5 or vertical push 2
 > - **17+:** 3 damage
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The shambling mound takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The shambling mound takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> ❇️ **Leeching Wilds (7 Malice)**
+> ❇️ **Leeching Wilds (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the shambling mound's next turn, the area within 10 squares of them is difficult terrain for enemies, and any enemy in the area takes a bane on power rolls. Any enemy who starts their turn in the area takes 4 acid damage, and the shambling mound regains an equal amount of Stamina.
+> Until the end of the shambling mound's next turn, the area within 10 squares of them is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies, and any enemy in the area takes a bane on power rolls. Any enemy who starts their turn in the area takes 4 acid damage, and the shambling mound regains an equal amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Shambling Mound
@@ -18763,15 +18763,15 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the shambling mound can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the shambling mound can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The shambling mound can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Engulfing Sac**
 >
-> The shambling mound has a vegetative sack on their body where they carry engulfed creatures. The sack has 30 Stamina, damage immunity 5, and fire weakness 10. Destroying the sack frees creatures trapped by the shambling mound's Engulf ability. The shambling mound regrows a destroyed sack at the start of their next turn.
+> The shambling mound has a vegetative sack on their body where they carry engulfed creatures. The sack has 30 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), damage immunity 5, and fire weakness 10. Destroying the sack frees creatures trapped by the shambling mound's Engulf ability. The shambling mound regrows a destroyed sack at the start of their next turn.
 
-> 🗡 **Vine Lash (Signature Ability)**
+> 🗡 **Vine Lash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18779,13 +18779,13 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; A < 3 grabbed
-> - **12-16:** 16 damage; A < 4 grabbed
-> - **17+:** 19 damage; grabbed
+> - **≤11:** 11 damage; A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 16 damage; A < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 19 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **2 Malice:** The shambling mound can slide each target up to 6 squares.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shambling mound can [slide](scc:mcdm.heroes.v1/movement/forced-movement) each target up to 6 squares.
 >
-> **3 Malice:** Each target takes 7 poison damage.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target takes 7 poison damage.
 
 > ❇️ **Seismic Slam**
 >
@@ -18795,19 +18795,19 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 4 damage; M < 2 dazed (save ends)
-> - **12-16:** 6 damage; M < 3 dazed (save ends)
-> - **17+:** 7 damage; M < 4 dazed (save ends)
+> - **≤11:** 4 damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 6 damage; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 7 damage; M < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> 🗡 **Engulf (2 Malice)**
+> 🗡 **Engulf (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |               **Main action** |
 > |----------------|------------------------------:|
 > | **📏 Melee 6** | **🎯 One creature or object** |
 >
-> **Effect:** The target must be size 1L or smaller. The shambling mound reaches out with writhing vines, and if the target has A < 3, they are engulfed into the shambling mound's sack. If the target is grabbed by the shambling mound, the potency increases by 1. An engulfed creature is restrained, takes 3 poison damage at the start of each turn, and can't take damage from abilities used from outside the sack. When the shambling mound moves, the engulfed creature moves with them. If the shambling mound dies or their sack is destroyed, each engulfed creature is freed and appears in an unoccupied space within 2 squares of the shambling mound.
+> **Effect:** The target must be size 1L or smaller. The shambling mound reaches out with writhing vines, and if the target has A < 3, they are engulfed into the shambling mound's sack. If the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the shambling mound, the [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1. An engulfed creature is [restrained](scc:mcdm.heroes.v1/condition/restrained), takes 3 poison damage at the start of each turn, and can't take damage from abilities used from outside the sack. When the shambling mound moves, the engulfed creature moves with them. If the shambling mound dies or their sack is destroyed, each engulfed creature is freed and appears in an unoccupied space within 2 squares of the shambling mound.
 >
-> **2+ Malice:** The shambling mound can engulf one additional target for each 2 Malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shambling mound can engulf one additional target for each 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
 > 👤 **Leech**
 >
@@ -18815,7 +18815,7 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** Each creature engulfed by the shambling mound takes 5 poison damage. The shambling mound gains 5 temporary Stamina for each creature who takes damage this way.
+> **Effect:** Each creature engulfed by the shambling mound takes 5 poison damage. The shambling mound gains 5 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) for each creature who takes damage this way.
 
 > ❗️ **Tether Down**
 >
@@ -18827,9 +18827,9 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage; M < 2 restrained (EoT)
-> - **12-16:** 12 damage; M < 3 restrained (EoT)
-> - **17+:** 15 damage; M < 4 restrained (EoT)
+> - **≤11:** 7 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **12-16:** 12 damage; M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** 15 damage; M < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
 
 > ⭐️ **False Appearance**
 >
@@ -18837,9 +18837,9 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 
 > ⭐️ **Frothing Flora**
 >
-> The area within 6 squares of the shambling mound is difficult terrain.
+> The area within 6 squares of the shambling mound is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
-> ☠️ **Ravenous Overgrowth (Villain Action 1)**
+> ☠️ **Ravenous Overgrowth ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Weapon**            |                            **-** |
 > |-----------------------------|---------------------------------:|
@@ -18847,19 +18847,19 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 damage, pull 3
-> - **12-16:** 12 damage; pull 4; the target has poison weakness 3 until the end of the encounter
-> - **17+:** 15 damage; pull 6; the target has poison weakness 5 until the end of the encounter
+> - **≤11:** 7 damage, [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 12 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 4; the target has poison weakness 3 until the end of the encounter
+> - **17+:** 15 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 6; the target has poison weakness 5 until the end of the encounter
 
-> ☠️ **Composting (Villain Action 2)**
+> ☠️ **Composting ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Melee**      |             **-** |
 > |----------------|------------------:|
 > | **📏 Melee 6** | **🎯 Each enemy** |
 >
-> **Effect:** The shambling mound uses Engulf against each target without spending Malice.
+> **Effect:** The shambling mound uses Engulf against each target without spending [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
-> ☠️ **Exposed Crux (Villain Action 3)**
+> ☠️ **Exposed Crux ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Melee**   |       **-** |
 > |-------------|------------:|
@@ -18870,17 +18870,17 @@ At the start of a shambling mound's turn, you can spend Malice to activate one o
 <!-- @type: monster | @category: time-raiders -->
 ## Time Raiders
 
-Genetic rebels, the space punks known as the time raiders (called the *kuran'zoi* among themselves) scour the Sea of Stars, the Sea Between Worlds, for heavily laden ships of any type. But they prefer the ships of UNISOL and other empires, for they love raiding the frigates of powerful governments who think their money and imperious nature can buy security.
+Genetic rebels, the space punks known as the [time raiders](scc:mcdm.monsters.v1/monster.group/time-raiders) (called the *kuran'zoi* among themselves) scour the Sea of Stars, the Sea Between Worlds, for heavily laden ships of any type. But they prefer the ships of UNISOL and other empires, for they love raiding the frigates of powerful governments who think their money and imperious nature can buy security.
 
 ### Veterans of the Psychic Wars
 
-Thousands of years ago, the synlirii—those powerful and evil psionic horrors more commonly known as voiceless talkers—created the kuran'zoi as soldiers. But as the synlirii experimented with and enhanced these warriors' psionic potential, the kuran'zoi came to understand the true nature of their progenitors. They rebelled against the synlirii and fled to the Sea of Stars, becoming nomads of the timescape.
+Thousands of years ago, the synlirii—those powerful and evil psionic horrors more commonly known as [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talkers)—created the kuran'zoi as soldiers. But as the synlirii experimented with and enhanced these warriors' psionic potential, the kuran'zoi came to understand the true nature of their progenitors. They rebelled against the synlirii and fled to the Sea of Stars, becoming nomads of the timescape.
 
 ### Hardened-Vision Hexapods
 
 Kuran'zoi possess resilient ocular sensors that allow them to see in the dark. Knowing these sensors would also defend them against the hardlight storms of the Astral Sea, the escaping kuran'zoi chose the Sea of Stars as their home. They thrive where the winds of limbo roar.
 
-Time raiders also have two sets of arms, allowing them to wield melee weapons at the same time as ranged weapons. A single well-trained kuran'zoi is like a squad unto themself.
+Time raiders also have two sets of arms, allowing them to wield melee weapons at the same time as ranged weapons. A single well-trained kuran'zoi is like a [squad](scc:mcdm.monsters.v1/rule.monster/squad) unto themself.
 
 ### Psi-Tech
 
@@ -18905,26 +18905,26 @@ Most time raiders speak Caelian and Voll. Because of the number of worlds they'v
 <!-- @type: featureblock -->
 ######### Time Raider Malice (Malice Features)
 
-At the start of any time raider's turn, you can spend Malice to activate one of the following features.
+At the start of any time raider's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Gravity Well (3 Malice)**
+> 🔳 **Gravity Well (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Psionic, Ranged, Weapon** |   **Maneuver** |
 > |-----------------------------------|---------------:|
 > | **📏 5 cube within 3**            | **🎯 Special** |
 >
-> **Effect:** A time raider acting this turn activates a gravity well in the area. The gravity well sits at the center of the cube and lasts until the end of the encounter, or until a creature adjacent to the well uses a maneuver to deactivate it. The area is difficult terrain for enemies. Any enemy who ends their turn in the area is pulled up to 4 squares toward the well.
+> **Effect:** A time raider acting this turn activates a gravity well in the area. The gravity well sits at the center of the cube and lasts until the end of the encounter, or until a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the well uses a maneuver to deactivate it. The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies. Any enemy who ends their turn in the area is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares toward the well.
 
-> ⭐️ **Recall Module (5 Malice)**
+> ⭐️ **Recall Module (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the round, each time raider gains a +3 bonus to speed, and can teleport up to their speed as a move action.
+> Until the end of the round, each time raider gains a +3 bonus to speed, and can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to their speed as a move action.
 
-> 🌀 **Psi-Cage (10 Malice)**
+> 🌀 **Psi-Cage (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> All time raiders in the encounter collectively create a psionic field over the encounter map, which lasts until the first time raider with the highest Stamina maximum drops to 0 Stamina or chooses to end the field (no action required). While the field is up, each non-time raider on the map makes a **Reason test** against this psionic effect at the start of each round.
+> All time raiders in the encounter collectively create a psionic field over the encounter map, which lasts until the first time raider with the highest [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) maximum drops to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or chooses to end the field (no action required). While the field is up, each non-time raider on the map makes a **Reason test** against this psionic effect at the start of each round.
 >
-> - **≤11:** 10 psychic damage; slowed (EoT)
-> - **12-16:** 7 psychic damage; slowed (EoT)
+> - **≤11:** 10 psychic damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **12-16:** 7 psychic damage; [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 > - **17+:** No effect.
 
 <!-- @type: statblock -->
@@ -18936,7 +18936,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |        -         | **+1 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |      **+2**<br>Might      | **+2**<br>Agility | **+2**<br>Reason |              **+1**<br>Intuition               |  **-1**<br>Presence   |
 
-> 🗡 **Brutal Flail (Signature Ability)**
+> 🗡 **Brutal Flail ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                          **Main action** |
 > |------------------------------------|-----------------------------------------:|
@@ -18946,7 +18946,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > - **≤11:** 2 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; one ally can make a free strike against the target
+> - **17+:** 5 damage; one ally can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target
 
 > ⭐️ **Foresight**
 >
@@ -18961,7 +18961,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |        -         | **+1 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |      **+2**<br>Might      | **+1**<br>Agility | **+2**<br>Reason |              **+1**<br>Intuition               |  **+1**<br>Presence   |
 
-> 🗡 **Fifth Fist (Signature Ability)**
+> 🗡 **Fifth Fist ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                          **Main action** |
 > |------------------------------------|-----------------------------------------:|
@@ -18969,9 +18969,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; slide 1
-> - **12-16:** 5 damage; slide 2
-> - **17+:** 6 damage; slide 3, prone
+> - **≤11:** 3 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 5 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 6 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3, [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ⭐️ **Foresight**
 >
@@ -18986,7 +18986,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **0**<br>Might       | **+2**<br>Agility | **+2**<br>Reason  |  **+2**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Serrated Saber (Signature Ability)**
+> 🗡 **Serrated Saber ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
@@ -18996,9 +18996,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > - **≤11:** 7 damage
 > - **12-16:** 10 damage
-> - **17+:** 13 damage; R < 2 weakened (save ends)
+> - **17+:** 13 damage; R < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** A creature weakened this way is also bleeding.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** A creature [weakened](scc:mcdm.heroes.v1/condition/weakened) this way is also [bleeding](scc:mcdm.heroes.v1/condition/bleeding).
 
 > ❗️ **Shared Sickness**
 >
@@ -19006,7 +19006,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > |---------------------|-------------------------------:|
 > | **📏 Ranged 20**    | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature deals damage to any ally of the armiger who the armiger has line of effect to.
+> **Trigger:** A creature deals damage to any ally of the armiger who the armiger has [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to.
 >
 > **Power Roll + 2:**
 >
@@ -19020,7 +19020,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 
 > ⭐️ **Kuran'zoi Heraldry**
 >
-> Any time raider who starts their turn with line of effect to the armiger can end one condition affecting the.
+> Any time raider who starts their turn with [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) to the armiger can end one condition affecting the.
 
 <!-- @type: statblock -->
 ####### Time Raider Cannonfall
@@ -19031,7 +19031,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **0**<br>Might       | **+2**<br>Agility | **+2**<br>Reason  |  **+2**<br>Intuition  |  **0**<br>Presence   |
 
-> 🔳 **Sunderbuss (Signature Ability)**
+> 🔳 **Sunderbuss ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Area, Psionic, Ranged, Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -19041,11 +19041,11 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > - **≤11:** 4 sonic damage
 > - **12-16:** 7 sonic damage
-> - **17+:** 10 sonic damage; prone; M < 2 slowed (save ends)
+> - **17+:** 10 sonic damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** A layer of ground beneath the area that is 1 square deep is destroyed.
 
-> ❗️ **Buss Buffe (1 Malice)**
+> ❗️ **Buss Buffe (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Psionic** |             **Free triggered action** |
 > |-------------------|--------------------------------------:|
@@ -19068,7 +19068,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **Fly**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **0**<br>Might       |  **+2**<br>Agility  | **+2**<br>Reason  |  **+2**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🏹 **Blaster Volley (Signature Ability)**
+> 🏹 **Blaster Volley ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike, Weapon** |                 **Main action** |
 > |-------------------------------------|--------------------------------:|
@@ -19076,9 +19076,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 corruption damage; push 2
-> - **12-16:** 8 corruption damage; push 4
-> - **17+:** 11 corruption damage; push 6, prone
+> - **≤11:** 6 corruption damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 8 corruption damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 11 corruption damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6, [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > 🔳 **Kinetic Lane**
 >
@@ -19086,9 +19086,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > |-----------------------------|---------------:|
 > | **📏 4 x 2 line within 10** | **🎯 Special** |
 >
-> **Effect:** The area is a psionically charged treadmill that pushes creatures and objects at high speed in one direction of the helix's choice. Any creature who enters the area or starts their turn there slides 3 squares toward the end of the area in the chosen direction. Each enemy in the area when it first appears takes 3 damage before they slide.
+> **Effect:** The area is a psionically charged treadmill that pushes creatures and objects at high speed in one direction of the helix's choice. Any creature who enters the area or starts their turn there [slides](scc:mcdm.heroes.v1/movement/forced-movement) 3 squares toward the end of the area in the chosen direction. Each enemy in the area when it first appears takes 3 damage before they slide.
 >
-> **3 Malice:** The helix creates a second kinetic lane.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The helix creates a second kinetic lane.
 
 > ⭐️ **Foresight**
 >
@@ -19103,7 +19103,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **0**<br>Might       | **+2**<br>Agility | **+2**<br>Reason  |  **+2**<br>Intuition  |  **+1**<br>Presence  |
 
-> 🗡 **Golden Sickles (Signature Ability)**
+> 🗡 **Golden Sickles ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |     **Main action** |
 > |------------------------------------|--------------------:|
@@ -19113,9 +19113,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > - **≤11:** 7 damage
 > - **12-16:** 11 damage
-> - **17+:** 14 damage; A < 2 bleeding (save ends)
+> - **17+:** 14 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The hijack is hidden from any creature who is bleeding from this ability until that condition ends.
+> **Effect:** The hijack is hidden from any creature who is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) from this ability until that condition ends.
 
 > 🏹 **Psi-Sickle**
 >
@@ -19123,7 +19123,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > |-----------------------------|------------------------------:|
 > | **📏 Ranged 5**             | **🎯 One creature or object** |
 >
-> **Effect:** The hijack psychically latches their sickle onto the target and closes the distance between them. If the target is larger than the hijack, the hijack moves adjacent to the target. Otherwise, the target is pulled up to 4 squares toward the hijack.
+> **Effect:** The hijack psychically latches their sickle onto the target and closes the distance between them. If the target is larger than the hijack, the hijack moves [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target. Otherwise, the target is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 4 squares toward the hijack.
 
 > ⭐️ **Foresight**
 >
@@ -19138,7 +19138,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **+2**<br>Might      | **0**<br>Agility  | **+2**<br>Reason  |  **+2**<br>Intuition  |  **+1**<br>Presence  |
 
-> 🗡 **Repelling Psihander (Signature Ability)**
+> 🗡 **Repelling Psihander ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                             **Main action** |
 > |------------------------------------|--------------------------------------------:|
@@ -19147,12 +19147,12 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > **Power Roll + 2:**
 >
 > - **≤11:** 6 damage
-> - **12-16:** 8 damage; M < 1 dazed (save ends)
-> - **17+:** 11 damage; M < 2 dazed (save ends)
+> - **12-16:** 8 damage; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 11 damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** A target who ends their next turn adjacent to the other target falls prone.
+> **Effect:** A target who ends their next turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the other target falls [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> ❇️ **Mindpunk (2 Malice)**
+> ❇️ **Mindpunk (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Psionic** |               **Main action** |
 > |-------------------|------------------------------:|
@@ -19160,9 +19160,9 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 psychic damage; R < 0 prone
-> - **12-16:** 6 psychic damage; push 1; R < 1 prone and can't stand (save ends)
-> - **17+:** 9 psychic damage; push 2; R < 2 prone and can't stand (save ends)
+> - **≤11:** 4 psychic damage; R < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 6 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; R < 1 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
+> - **17+:** 9 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; R < 2 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (save ends)
 
 > ⭐️ **Foresight**
 >
@@ -19177,7 +19177,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **Fly**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **+1**<br>Might      |  **+2**<br>Agility  | **+2**<br>Reason  |  **+1**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Golden Scythe (Signature Ability)**
+> 🗡 **Golden Scythe ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike, Weapon** |               **Main action** |
 > |------------------------------------|------------------------------:|
@@ -19185,13 +19185,13 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; pull 1
-> - **12-16:** 10 damage; pull 2
-> - **17+:** 13 damage; pull 3; A < 2 restrained (save ends)
+> - **≤11:** 7 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 10 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 13 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
 > **Effect:** This ability can target creatures on parallel planes of existence and pull them onto the nemesis's plane.
 
-> 🏹 **Kinetic Crush (2 Malice)**
+> 🏹 **Kinetic Crush (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged, Strike** |     **Main action** |
 > |-----------------------------|--------------------:|
@@ -19199,11 +19199,11 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 psychic damage; M < 0 slowed (save ends)
-> - **12-16:** 10 psychic damage; M < 1 slowed (save ends)
-> - **17+:** 13 psychic damage; M < 2 slowed (save ends)
+> - **≤11:** 7 psychic damage; M < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 10 psychic damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 13 psychic damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** Any creature slowed this way takes 2 damage for each square they move or are force moved until that condition ends.
+> **Effect:** Any creature [slowed](scc:mcdm.heroes.v1/condition/slowed) this way takes 2 damage for each square they move or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) until that condition ends.
 
 > ⭐️ **Foresight**
 >
@@ -19218,7 +19218,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 3**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **+1**<br>Might      |     **+1**<br>Agility      | **+2**<br>Reason  |  **+1**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Psionic Slam (Signature Ability)**
+> 🗡 **Psionic Slam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Strike** |     **Main action** |
 > |----------------------------|--------------------:|
@@ -19232,13 +19232,13 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Effect:** Any power roll made against the target gains an edge until the start of the vertex's next turn.
 
-> 🔳 **Split Space (5 Malice)**
+> 🔳 **Split Space (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Psionic, Ranged** | **Main action** |
 > |---------------------------|----------------:|
 > | **📏 2 cube within 10**   |  **🎯 Special** |
 >
-> **Effect:** A portal fills the area, connecting to a location the vertex has experienced on any plane of existence, in person or otherwise. Any creature who enters the portal for the first time in a round or starts their turn there is instantly teleported to any unoccupied space in the portal at the chosen location. The portal lasts until the vertex uses this ability again, dismisses the portal (no action required), or is transported by the portal.
+> **Effect:** A portal fills the area, connecting to a location the vertex has experienced on any plane of existence, in person or otherwise. Any creature who enters the portal for the first time in a round or starts their turn there is instantly [teleported](scc:mcdm.heroes.v1/movement/teleport) to any unoccupied space in the portal at the chosen location. The portal lasts until the vertex uses this ability again, dismisses the portal (no action required), or is transported by the portal.
 
 > ❇️ **Invigorated March**
 >
@@ -19246,7 +19246,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 > |-------------------|-----------------------------:|
 > | **📏 4 burst**    | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target shifts up to half their speed.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to half their speed.
 
 > ⭐️ **Foresight**
 >
@@ -19261,7 +19261,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 | **Psychic 5**<br>Immunity | **Hover, teleport**<br>Movement |          -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **0**<br>Might       |        **+3**<br>Agility        |  **+3**<br>Reason   |  **+1**<br>Intuition  |  **0**<br>Presence   |
 
-> ⚔️ **Gatling Blaster (Signature Ability)**
+> ⚔️ **Gatling Blaster ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Psionic, Ranged, Strike, Weapon** |                 **Main action** |
 > |--------------------------------------------|--------------------------------:|
@@ -19275,13 +19275,13 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Effect:** Each target takes a −2 penalty to speed until the start of the tyrannis's next turn.
 
-> 🏹 **Air Raid! (3 Malice)**
+> 🏹 **Air Raid! (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged** |              **Maneuver** |
 > |---------------------|--------------------------:|
 > | **📏 Ranged 10**    | **🎯 Three time raiders** |
 >
-> **Effect:** Each target can fly up to their speed and make a free strike. If a target doesn't land in an unoccupied space, they fall.
+> **Effect:** Each target can [fly](scc:mcdm.heroes.v1/movement/fly) up to their speed and make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If a target doesn't land in an unoccupied space, they fall.
 
 > ❗️ **Precog Reflexes**
 >
@@ -19291,27 +19291,27 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Trigger:** A creature within distance makes a strike against the tyrannis.
 >
-> **Effect:** The strike takes a bane. After the strike resolves, the tyrannis can make a free strike against the target.
+> **Effect:** The strike takes a bane. After the strike resolves, the tyrannis can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 >
-> **2 Malice:** The strike has a double bane instead.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The strike has a double bane instead.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the tyrannis can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the tyrannis can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ⭐️ **Foresight**
 >
 > The tyrannis doesn't take a bane on strikes against creatures with concealment.
 
-> ☠️ **We Will Won! (Villain Action 1)**
+> ☠️ **We Will Won! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Psionic, Ranged** |                        **-** |
 > |---------------------|-----------------------------:|
 > | **📏 Ranged 10**    | **🎯 Self and three allies** |
 >
-> **Effect:** Each target gains 15 temporary Stamina, and has their speed doubled until the end of their next turn.
+> **Effect:** Each target gains 15 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and has their speed doubled until the end of their next turn.
 
-> ☠️ **Stick to the Plan! (Villain Action 2)**
+> ☠️ **Stick to the Plan! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
@@ -19319,7 +19319,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 >
 > **Effect:** Each target can end one effect on them or can move up to their speed.
 
-> ☠️ **Armageddon (Villain Action 3)**
+> ☠️ **Armageddon ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**       |          **-** |
 > |----------------|---------------:|
@@ -19330,7 +19330,7 @@ At the start of any time raider's turn, you can spend Malice to activate one of 
 <!-- @type: monster | @category: trolls -->
 ## Trolls
 
-Ravenous trolls rampage through the wild to quell their fathomless hunger, leaving only destruction in their wake. Tall and gangly, they have mottled green skin covered by a mane of matted hair that runs down their neck and back. In many ways, they resemble massive humanoids, but their exaggerated features belie this comparison. A troll's lower jaw hangs unhinged and distended, and their long arms end in claws that drag along the ground as they walk.
+Ravenous [trolls](scc:mcdm.monsters.v1/monster.group/trolls) rampage through the wild to quell their fathomless hunger, leaving only destruction in their wake. Tall and gangly, they have mottled green skin covered by a mane of matted hair that runs down their neck and back. In many ways, they resemble massive [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid), but their exaggerated features belie this comparison. A troll's lower jaw hangs unhinged and distended, and their long arms end in claws that drag along the ground as they walk.
 
 ### Hypermetabolism
 
@@ -19342,7 +19342,7 @@ Fortunately for the ecosystems they inhabit, trolls can't be active all the time
 
 ### Strange Mutations
 
-Trolls prefer to prey upon humanoids and animals, but stories tell of them feeding on fetid demons and undead, assimilating those creatures' flesh to magnificent and horrifying effect. A troll with loose hanging skin, curling nails, or exposed bone might be in better health than their appearance would suggest.
+Trolls prefer to prey upon [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) and animals, but stories tell of them feeding on fetid [demons](scc:mcdm.monsters.v1/monster.group/demons) and [undead](scc:mcdm.monsters.v1/rule.keyword/undead), assimilating those creatures' flesh to magnificent and horrifying effect. A troll with loose hanging skin, curling nails, or exposed bone might be in better health than their appearance would suggest.
 
 ### Limbjumbles
 
@@ -19350,7 +19350,7 @@ When a suitably large piece of a troll is torn off in battle, it does its very b
 
 > **Mutating Your Trolls**
 >
-> At the Director's discretion, a troll can mutate after consuming the flesh of any creature and gain some of their damage immunities, traits, abilities, and movement options. For instance, a troll who devours the carcass of a dead draconian might grow wings and gain their signature ability!
+> At the Director's discretion, a troll can mutate after consuming the flesh of any creature and gain some of their damage immunities, traits, abilities, and movement options. For instance, a troll who devours the carcass of a dead [draconian](scc:mcdm.monsters.v1/monster.group/draconians) might grow wings and gain their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)!
 >
 > Be aware that this can increase the difficulty category of an encounter while one or more of these mutated trolls are present—especially if their mutations enable them to deal more damage than normal or grant them an acid or fire damage immunity.
 
@@ -19361,23 +19361,23 @@ Most trolls speak High Kuric or Variac, while a few also know Caelian. Trolls ar
 <!-- @type: featureblock -->
 ######### Troll Malice (Malice Features)
 
-At the start of any troll's turn, you can spend Malice to activate one of the following features.
+At the start of any troll's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Foul Spew (3 Malice)**
+> 🔳 **Foul Spew (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One troll acting this turn spews out a half-digested meal in a 5 x 1 line within 1 square of them. Each troll in the area regains 3 Stamina. Each enemy in the area makes a **Might test**.
+> One troll acting this turn spews out a half-digested meal in a 5 x 1 line within 1 square of them. Each troll in the area regains 3 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Each enemy in the area makes a **Might test**.
 >
-> - **≤11:** 12 acid damage; dazed (EoT)
-> - **12-16:** 10 acid damage; weakened (EoT)
+> - **≤11:** 12 acid damage; [dazed](scc:mcdm.heroes.v1/condition/dazed) (EoT)
+> - **12-16:** 10 acid damage; [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
 > - **17+:** 6 acid damage
 
-> 🗡 **Emergency Meal (5 Malice)**
+> 🗡 **Emergency Meal (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each troll in the encounter can make a free strike against a creature adjacent to them, and regains Stamina equal to the damage dealt.
+> Each troll in the encounter can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them, and regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage dealt.
 
-> ❇️ **Bloody Banquet (7 Malice)**
+> ❇️ **Bloody Banquet (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each winded troll in the encounter disgorges the contents of their stomach onto the ground around them, creating a 1 burst of foul vomitus that lasts until the end of the encounter. Each non-troll who enters this area for the first time in a round or starts their turn there takes 5 acid damage. Each troll in the area has a double edge on power rolls.
+> Each [winded](scc:mcdm.heroes.v1/rule.health/winded) troll in the encounter disgorges the contents of their stomach onto the ground around them, creating a 1 burst of foul vomitus that lasts until the end of the encounter. Each non-troll who enters this area for the first time in a round or starts their turn there takes 5 acid damage. Each troll in the area has a double edge on power rolls.
 
 <!-- @type: statblock -->
 ####### Troll Limbjumble
@@ -19388,7 +19388,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |        -         | **Gain an edge on strikes**<br>With Captain |  **Acid 8, fire **<br>Weakness  |
 |  **+3**<br>Might  | **+1**<br>Agility | **-2**<br>Reason |             **-1**<br>Intuition             |       **-1**<br>Presence        |
 
-> 🗡 **Arm and a Leg (Signature Ability)**
+> 🗡 **Arm and a Leg ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19396,15 +19396,15 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 3 damage; A < 2 prone
-> - **12-16:** 5 damage; A < 3 prone
-> - **17+:** 6 damage; prone
+> - **≤11:** 3 damage; A < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 5 damage; A < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 6 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** If a target made prone this way is already prone, they are grabbed instead.
+> **Effect:** If a target made [prone](scc:mcdm.heroes.v1/condition/prone) this way is already [prone](scc:mcdm.heroes.v1/condition/prone), they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed) instead.
 
 > ⭐️ **Hyper-Regeneration**
 >
-> At the start of each of the limbjumble's squad's turns, the squad's Stamina pool increases as if each limbjumble were at full Stamina.
+> At the start of each of the limbjumble's [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s turns, the squad's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool increases as if each limbjumble were at full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Troll Whelp
@@ -19415,7 +19415,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |         -         | **+2 damage bonus to strikes**<br>With Captain |  **Acid 5, fire **<br>Weakness  |
 |  **+3**<br>Might  | **+1**<br>Agility | **-1**<br>Reason  |               **0**<br>Intuition               |        **0**<br>Presence        |
 
-> 🗡 **Jaws and Claws (Signature Ability)**
+> 🗡 **Jaws and Claws ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19424,12 +19424,12 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 3 damage
-> - **12-16:** 6 damage; slide 1
-> - **17+:** 7 damage; slide 2; M < 2 bleeding (save ends)
+> - **12-16:** 6 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ⭐️ **Lingering Hunger**
 >
-> Whenever two or more whelps are simultaneously reduced to 0 Stamina by damage that isn't acid or fire damage, half of those whelps become troll limbjumbles with 4 Stamina.
+> Whenever two or more whelps are simultaneously reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't acid or fire damage, half of those whelps become troll limbjumbles with 4 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Troll Butcher
@@ -19440,7 +19440,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **Acid 5, fire **<br>Weakness  |
 |  **+3**<br>Might  | **+1**<br>Agility |  **+1**<br>Reason  |  **0**<br>Intuition   |        **0**<br>Presence        |
 
-> 🗡 **Savoring Bite (Signature Ability)**
+> 🗡 **Savoring Bite ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -19448,11 +19448,11 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; M < 1 bleeding (save ends)
-> - **12-16:** 14 damage; M < 2 bleeding (save ends)
-> - **17+:** 17 damage; M < 3 bleeding (save ends)
+> - **≤11:** 9 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 14 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 17 damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **1 Malice:** The butcher regains Stamina equal to the damage dealt.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The butcher regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage dealt.
 
 > 🔳 **Rotten Scraps**
 >
@@ -19462,19 +19462,19 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 poison damage; M < 1 weakened (save ends)
-> - **12-16:** 9 poison damage; M < 2 weakened (save ends)
-> - **17+:** 11 poison damage; M < 3 weakened (save ends)
+> - **≤11:** 5 poison damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 9 poison damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 11 poison damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Each troll in the area ignores the damage and instead regains 3 Stamina.
+> **Effect:** Each troll in the area ignores the damage and instead regains 3 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> 👤 **Gourmet Flesh (2 Malice)**
+> 👤 **Gourmet Flesh (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The butcher enhances their next use of Savoring Bite, changing the damage type and condition imposed to one of the following pairs: corruption damage and dazed, acid damage and restrained, or lightning damage and frightened.
+> **Effect:** The butcher enhances their next use of Savoring Bite, changing the damage type and condition imposed to one of the following pairs: corruption damage and [dazed](scc:mcdm.heroes.v1/condition/dazed), acid damage and [restrained](scc:mcdm.heroes.v1/condition/restrained), or lightning damage and [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 > ❗️ **Acquired Taste**
 >
@@ -19482,9 +19482,9 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 > |----------------|-------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature within distance deals damage to the butcher with an ability that gains an edge, has a double edge, or uses a surge.
+> **Trigger:** A creature within distance deals damage to the butcher with an ability that gains an edge, has a double edge, or uses a [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 >
-> **Effect:** The butcher makes a free strike against the target. Until the end of their next turn, the butcher gains an edge on power rolls and deals an extra 3 damage with strikes.
+> **Effect:** The butcher makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target. Until the end of their next turn, the butcher gains an edge on power rolls and deals an extra 3 damage with strikes.
 
 > ⭐️ **Bloody Feast**
 >
@@ -19492,7 +19492,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Relentless Hunger**
 >
-> The butcher dies only if they are reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina, or if they take acid or fire damage while at 0 Stamina.
+> The butcher dies only if they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by acid or fire damage, if they end their turn with 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or if they take acid or fire damage while at 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Troll Glutton
@@ -19503,7 +19503,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **Acid 5, fire **<br>Weakness  |
 |  **+3**<br>Might  | **+1**<br>Agility |  **-1**<br>Reason  |  **0**<br>Intuition   |       **+1**<br>Presence        |
 
-> 🗡 **Voracious Mastication (Signature Ability)**
+> 🗡 **Voracious Mastication ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -19512,18 +19512,18 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 > **Power Roll + 3:**
 >
 > - **≤11:** 10 damage
-> - **12-16:** 15 damage; M < 2 slowed (save ends)
-> - **17+:** 18 damage; M < 3 slowed (save ends)
+> - **12-16:** 15 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 18 damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **1 Malice:** The glutton regains Stamina equal to the damage dealt.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The glutton regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage dealt.
 
-> 👤 **Crash Through (3 Malice)**
+> 👤 **Crash Through (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Main action** |
 > |-------------|----------------:|
 > | **📏 Self** |     **🎯 Self** |
 >
-> **Effect:** The glutton shifts up to their speed in a straight line, ignoring difficult terrain. The first time during this movement that the glutton moves through the space of a creature or object their size or smaller, that creature or object takes 10 damage, or a creature can choose to fall prone instead. If the glutton moves into a creature or object larger than them and doesn't knock the creature prone or destroy the object, the glutton's movement ends and they are dazed until the end of their next turn.
+> **Effect:** The glutton [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed in a straight line, ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The first time during this movement that the glutton moves through the space of a creature or object their size or smaller, that creature or object takes 10 damage, or a creature can choose to fall [prone](scc:mcdm.heroes.v1/condition/prone) instead. If the glutton moves into a creature or object larger than them and doesn't knock the creature [prone](scc:mcdm.heroes.v1/condition/prone) or destroy the object, the glutton's movement ends and they are [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
 > 👤 **Food Frenzy**
 >
@@ -19533,23 +19533,23 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** Until the start of their next turn, the glutton has a double edge on strikes, and strikes made against them gain an edge.
 
-> ❗️ **Spiteful Retort (1 Malice)**
+> ❗️ **Spiteful Retort (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |      **Free triggered action** |
 > |----------------|-------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature** |
 >
-> **Trigger:** The glutton is reduced to 0 Stamina but doesn't die.
+> **Trigger:** The glutton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) but doesn't die.
 >
-> **Effect:** The glutton uses Voracious Mastication against an adjacent creature.
+> **Effect:** The glutton uses Voracious Mastication against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature.
 
 > ⭐️ **Insatiable Appetite**
 >
-> Once per turn, the glutton can use the Charge main actionas a free maneuver if they target a winded creature.
+> Once per turn, the glutton can use the Charge main action as a free maneuver if they target a [winded](scc:mcdm.heroes.v1/rule.health/winded) creature.
 
 > ⭐️ **Relentless Hunger**
 >
-> The glutton dies only if they are reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina, or if they take acid or fire damage while at 0 Stamina.
+> The glutton dies only if they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by acid or fire damage, if they end their turn with 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), or if they take acid or fire damage while at 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Troll Crack Trooper
@@ -19560,7 +19560,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |         -         | **+3 bonus to Stamina**<br>With Captain |  **Acid 5, fire **<br>Weakness  |
 |  **+4**<br>Might  | **+1**<br>Agility | **-1**<br>Reason  |           **0**<br>Intuition            |       **+2**<br>Presence        |
 
-> 🗡 **Charging Chomp (Signature Ability)**
+> 🗡 **Charging Chomp ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                          **Main action** |
 > |-----------------------------------|-----------------------------------------:|
@@ -19568,15 +19568,15 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 5 damage; push 2
-> - **12-16:** 7 damage; push 3; A < 3 3 damage
-> - **17+:** 9 damage; push 4; A < 4 5 damage
+> - **≤11:** 5 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 3 3 damage
+> - **17+:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; A < 4 5 damage
 >
-> **Effect:** The crack trooper's squad's Stamina pool regains Stamina equal to half the damage dealt.
+> **Effect:** The crack trooper's [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
 > ⭐️ **Group Appetite**
 >
-> The crack trooper dies only if their squad's Stamina pool is reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina in their squad's Stamina pool, or if they take acid or fire damage while their squad's Stamina pool is at 0 Stamina.
+> The crack trooper dies only if their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by acid or fire damage, if they end their turn with 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool, or if they take acid or fire damage while their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is at 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: statblock -->
 ####### Troll Ravager
@@ -19587,7 +19587,7 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 | **-**<br>Immunity | **-**<br>Movement |         -         | **+2 bonus to speed**<br>With Captain |  **Acid 5, fire **<br>Weakness  |
 |  **+4**<br>Might  | **+2**<br>Agility |  **0**<br>Reason  |          **+1**<br>Intuition          |       **+1**<br>Presence        |
 
-> 🗡 **Dine and Dash (Signature Ability)**
+> 🗡 **Dine and Dash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19595,22 +19595,22 @@ At the start of any troll's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 4 damage; the ravager can shift 1 square
-> - **12-16:** 6 damage; the ravager shifts up to 2 squares
-> - **17+:** 8 damage; the ravager shifts up to 3 squares
+> - **≤11:** 4 damage; the ravager can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 6 damage; the ravager [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
+> - **17+:** 8 damage; the ravager [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 >
-> **Effect:** The ravager's squad's Stamina pool regains Stamina equal to half the damage dealt.
+> **Effect:** The ravager's [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
 > ⭐️ **Group Appetite**
 >
-> The ravager dies only if their squad's Stamina pool is reduced to 0 Stamina by acid or fire damage, if they end their turn with 0 Stamina in their squad's Stamina pool, or if they take acid or fire damage while their squad's Stamina pool is at 0 Stamina.
+> The ravager dies only if their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by acid or fire damage, if they end their turn with 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) in their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool, or if they take acid or fire damage while their [squad](scc:mcdm.monsters.v1/rule.monster/squad)'s [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) pool is at 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: monster | @category: undead -->
 ## Undead
 
-Some serve as mindless soldiers and workers under the control of a necromancer. Others rise when they die a bitter death in a place infused with cursed magic. For a few, it was a choice to become something beyond mortal. However they arose, all undead were once living creatures who now walk the land after death in defiance of the natural order.
+Some serve as mindless soldiers and workers under the control of a necromancer. Others rise when they die a bitter death in a place infused with cursed magic. For a few, it was a choice to become something beyond mortal. However they arose, all [undead](scc:mcdm.monsters.v1/monster.group/undead) were once living creatures who now walk the land after death in defiance of the natural order.
 
-Rotting zombies, seductive vampires, wailing wraiths, and more undead stalk the widespread horror stories nobles and commoners alike tell each another around low-burning hearths. Even the most isolated hermits know that the dead can rise, eager to kill. These popular tales fuel many people's fears of the undead. Mere rumors of a nearby ghoul pack can send an entire community into a panic. When open graves appear in the churchyard or a translucent spirit is spotted on the street, local leaders are quick to hire adventurers to deal with the threat.
+Rotting zombies, seductive vampires, wailing wraiths, and more [undead](scc:mcdm.monsters.v1/rule.keyword/undead) stalk the widespread horror stories nobles and commoners alike tell each another around low-burning hearths. Even the most isolated hermits know that the dead can rise, eager to kill. These popular tales fuel many people's fears of the undead. Mere rumors of a nearby ghoul pack can send an entire community into a panic. When open graves appear in the churchyard or a translucent spirit is spotted on the street, local leaders are quick to hire adventurers to deal with the threat.
 
 > **Content Warning: Body Horror**
 >
@@ -19669,7 +19669,7 @@ Undead are often encountered in groups that include more than just a single kind
 
 At their most innocuous, corporeal undead are a mockery of life, a body hoisted and dragged along by unnatural strings. At their worst, they are a violent scourge hungry for slaughter, and a perverse reflection of the mortal desire to exist for eternity. Ghouls, skeletons, soulwights, and zombies number among the lesser corporeal undead. Many lack a soul, and many can't think beyond the orders of their creators—unlike more powerful corporeal undead such as liches and vampires. Those who aren't controlled by others typically have a singular focus: the destruction of all living things.
 
-The magic that animates a corpse removes the need for air, sleep, and sustenance. This magic also halts decay, preserving the undead at the stage of deterioration before they were animated. While most corporeal undead are brought to unlife by a creator, tales abound of zombies suddenly rising from graveyards during rare astronomical occurrences, skeletal soldiers emerging from mass graves on the anniversary of their death, and other seemingly spontaneous acts of necromancy.
+The magic that animates a corpse removes the need for air, sleep, and sustenance. This magic also halts decay, preserving the [undead](scc:mcdm.monsters.v1/rule.keyword/undead) at the stage of deterioration before they were animated. While most corporeal undead are brought to unlife by a creator, tales abound of zombies suddenly rising from graveyards during rare astronomical occurrences, skeletal soldiers emerging from mass graves on the anniversary of their death, and other seemingly spontaneous acts of necromancy.
 
 ### Spectral Undead
 
@@ -19693,29 +19693,29 @@ It's rare you fight a single zombie. Low-level undead most often appear in huge 
 <!-- @type: featureblock -->
 ######### Undead Malice (Level 1+ Malice Features)
 
-At the start of any undead's turn, you can spend Malice to activate one of the following features.
+At the start of any undead's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🌀 **Ravenous Horde (2 Malice)**
+> 🌀 **Ravenous Horde (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> At the end of this round, each hero not already adjacent to one or more undead is beset by two **rotting zombies** who burst up from the ground to appear in adjacent unoccupied spaces. Each zombie is winded. This feature can't be used two rounds in a row.
+> At the end of this round, each hero not already [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more undead is beset by two **rotting zombies** who burst up from the ground to appear in adjacent unoccupied spaces. Each zombie is [winded](scc:mcdm.heroes.v1/rule.health/winded). This feature can't be used two rounds in a row.
 
-> 🌀 **Paranormal Fling (3 Malice)**
+> 🌀 **Paranormal Fling (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Up to three unattended objects on the encounter map rise to float 1 square off the ground. Each object is then pulled 5 squares toward the nearest enemy within 3 squares of the object.
+> Up to three unattended objects on the encounter map rise to float 1 square off the ground. Each object is then [pulled](scc:mcdm.heroes.v1/movement/forced-movement) 5 squares toward the nearest enemy within 3 squares of the object.
 
-> 🔳 **The Grasping, the Hungry (5 Malice)**
+> 🔳 **The Grasping, the Hungry (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Ravenous and rotting undead arms burst forth from 9 connected squares of a vertical or horizontal surface. Any creature who ends their turn adjacent to an affected square makes an **Agility test**.
+> Ravenous and rotting undead arms burst forth from 9 connected squares of a vertical or horizontal surface. Any creature who ends their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an affected square makes an **Agility test**.
 >
-> - **≤11:** 5 damage; restrained (save ends)
-> - **12-16:** 5 damage; restrained (EoT)
+> - **≤11:** 5 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 5 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
 > - **17+:** 5 damage
 >
-> **Effect:** While restrained this way, a creature takes 1d6 damage at the start of each of their turns.
+> **Effect:** While [restrained](scc:mcdm.heroes.v1/condition/restrained) this way, a creature takes 1d6 damage at the start of each of their turns.
 
-> ⭐️ **Dread March (7+ Malice)**
+> ⭐️ **Dread March (7+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Up to four undead in the encounter move up to their speed and can make a free strike. The number of undead affected increases by 1 for each additional Malice spent on this feature. If an undead is reduced to 0 Stamina during this dread march, they don't die until the march is resolved.
+> Up to four undead in the encounter move up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). The number of undead affected increases by 1 for each additional [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent on this feature. If an undead is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) during this dread march, they don't die until the march is resolved.
 
 <!-- @type: statblock -->
 ####### Crawling Claw
@@ -19726,7 +19726,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **Climb**<br>Movement |        -         | **+2 bonus to speed**<br>With Captain |   **-**<br>Weakness   |
 |             **0**<br>Might             |   **+2**<br>Agility   | **-5**<br>Reason |          **-1**<br>Intuition          |  **-1**<br>Presence   |
 
-> 🗡 **Fingernails (Signature Ability)**
+> 🗡 **Fingernails ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19738,11 +19738,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > - **12-16:** 2 damage
 > - **17+:** 3 damage
 >
-> **Effect:** The crawling claw shifts up to a number of squares equal to the damage dealt.
+> **Effect:** The crawling claw [shifts](scc:mcdm.heroes.v1/movement/shifting) up to a number of squares equal to the damage dealt.
 
 > ⭐️ **Disorganized**
 >
-> Allies can't flank with the crawling claw.
+> Allies can't [flank](scc:mcdm.heroes.v1/rule.combat/flanking) with the crawling claw.
 
 <!-- @type: statblock -->
 ####### Decrepit Skeleton
@@ -19753,7 +19753,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |        -         | **Gain an edge on strikes**<br>With Captain |   **-**<br>Weakness   |
 |             **0**<br>Might             | **+2**<br>Agility | **-2**<br>Reason |             **0**<br>Intuition              |  **-2**<br>Presence   |
 
-> 🏹 **Bone Bow (Signature Ability)**
+> 🏹 **Bone Bow ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                          **Main action** |
 > |----------------------------|-----------------------------------------:|
@@ -19769,7 +19769,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Bonetrops**
 >
-> When the decrepit skeleton is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy enters this space, the take 1 damage and the effect end.
+> When the decrepit skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The first time any enemy enters this space, the take 1 damage and the effect end.
 
 <!-- @type: statblock -->
 ####### Rotting Zombie
@@ -19780,7 +19780,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |        -         | **+1 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |            **+2**<br>Might             | **-2**<br>Agility | **-5**<br>Reason |              **-2**<br>Intuition               |  **-3**<br>Presence   |
 
-> 🗡 **Rotting Fist (Signature Ability)**
+> 🗡 **Rotting Fist ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19790,11 +19790,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > - **≤11:** 2 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; M < 2 prone if size 1, or slowed (save ends) otherwise
+> - **17+:** 5 damage; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone) if size 1, or [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends) otherwise
 
 > ⭐️ **Death Grasp**
 >
-> When the rotting zombie is reduced to 0 Stamina, their space is difficult terrain. The first time any enemy who has M < 2 enters this space, they are slowed (save ends) and the effect ends.
+> When the rotting zombie is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), their space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). The first time any enemy who has M < 2 enters this space, they are [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends) and the effect ends.
 
 <!-- @type: statblock -->
 ####### Shade
@@ -19805,7 +19805,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **Fly, hover**<br>Movement |        -         | **+2 bonus to speed**<br>With Captain |   **-**<br>Weakness   |
 |            **-5**<br>Might             |     **+1**<br>Agility      | **0**<br>Reason  |          **0**<br>Intuition           |  **+2**<br>Presence   |
 
-> 🗡 **Life Drain (Signature Ability)**
+> 🗡 **Life Drain ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -19819,7 +19819,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Shadow Phasing**
 >
-> The shade can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the shade moves through a creature, that creature takes 1 corruption damage. The shade doesn't take damage from being force moved into objects.
+> The shade can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the shade moves through a creature, that creature takes 1 corruption damage. The shade doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Ghoul
@@ -19830,7 +19830,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |             **0**<br>Might             | **+2**<br>Agility | **-2**<br>Reason  |  **0**<br>Intuition   |  **-1**<br>Presence  |
 
-> 🗡 **Razor Claws (Signature Ability)**
+> 🗡 **Razor Claws ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -19840,7 +19840,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > - **≤11:** 3 damage
 > - **12-16:** 4 damage
-> - **17+:** 5 damage; M < 2 bleeding (save ends)
+> - **17+:** 5 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > 👤 **Leap**
 >
@@ -19848,11 +19848,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The ghoul jumps up to 3 squares. If they land on a size 1 enemy, that enemy is knocked prone and the ghoul can make a free strike against them.
+> **Effect:** The ghoul jumps up to 3 squares. If they land on a size 1 enemy, that enemy is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and the ghoul can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Arise**
 >
-> The first time the ghoul is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 Stamina and fall prone.
+> The first time the ghoul is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Hunger**
 >
@@ -19867,7 +19867,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |             **0**<br>Might             | **+2**<br>Agility | **+1**<br>Reason  |  **0**<br>Intuition   |  **-1**<br>Presence  |
 
-> ⚔️ **Bone Shards (Signature Ability)**
+> ⚔️ **Bone Shards ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Ranged, Strike, Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -19881,7 +19881,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > **Effect:** Until the start of the skeleton's next turn, the target takes 2 damage the first time they willingly move on their turn.
 
-> ❇️ **Bone Spur (2 Malice)**
+> ❇️ **Bone Spur (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |                  **Maneuver** |
 > |------------------|------------------------------:|
@@ -19889,15 +19889,15 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 damage; M < 0 bleeding (save ends)
-> - **12-16:** 2 damage; M < 1 bleeding (save ends)
-> - **17+:** 3 damage; M < 2 bleeding (save ends)
+> - **≤11:** 1 damage; M < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 2 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 3 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
 > **Effect:** Each target takes a bane on their next strike.
 
 > ⭐️ **Arise**
 >
-> The first time the skeleton is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 Stamina and fall prone.
+> The first time the skeleton is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: statblock -->
 ####### Specter
@@ -19908,7 +19908,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **-5**<br>Might             |     **+1**<br>Agility      | **+0**<br>Reason  |  **+0**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Decaying Touch (Signature Ability)**
+> 🗡 **Decaying Touch ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Strike** |     **Main action** |
 > |--------------------------|--------------------:|
@@ -19916,11 +19916,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 corruption damage; P < 0 weakened (save ends)
-> - **12-16:** 4 corruption damage; P < 1 weakened (save ends)
-> - **17+:** 5 corruption damage; P < 2 weakened (save ends)
+> - **≤11:** 3 corruption damage; P < 0 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 4 corruption damage; P < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 5 corruption damage; P < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** The potency increases by 1. Any living creature who dies from this damage rises at the start of the next round in the target's space as a specter under the Director's control.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1. Any living creature who dies from this damage rises at the start of the next round in the target's space as a specter under the Director's control.
 
 > 👤 **Hidden Movement**
 >
@@ -19932,7 +19932,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Corruptive Phasing**
 >
-> The specter can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the specter moves through a creature, that creature takes 2 corruption damage. The specter doesn't take damage from being force moved into objects.
+> The specter can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the specter moves through a creature, that creature takes 2 corruption damage. The specter doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Soulwight
@@ -19943,7 +19943,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+2**<br>Might             | **+1**<br>Agility |  **0**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **Soulstealer Longsword (Signature Ability)**
+> 🗡 **Soulstealer Longsword ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -19952,22 +19952,22 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > **Power Roll + 2:**
 >
 > - **≤11:** 3 corruption damage
-> - **12-16:** 4 corruption damage; M < 1 slowed (save ends)
-> - **17+:** 5 corruption damage; M < 2 slowed and weakened (save ends)
+> - **12-16:** 4 corruption damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 5 corruption damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
 > **Effect:** The target appears to rapidly age each time they take damage from this ability. The target regains their former appearance when the soulwight is destroyed.
 
-> 🏹 **Stolen Vitality (3 Malice)**
+> 🏹 **Stolen Vitality (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |    **Maneuver** |
 > |-------------------|----------------:|
 > | **📏 Ranged 5**   | **🎯 One ally** |
 >
-> **Effect:** The target regains 10 Stamina. The soulwight can't use this maneuver again until after they strike a creature with their Soulstealer Longsword.
+> **Effect:** The target regains 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). The soulwight can't use this maneuver again until after they strike a creature with their Soulstealer Longsword.
 
 > ⭐️ **Arise**
 >
-> The first time the soulwight is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 Stamina and fall prone.
+> The first time the soulwight is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: statblock -->
 ####### Umbral Stalker
@@ -19978,7 +19978,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |             **0**<br>Might             |   **+2**<br>Agility   |  **0**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **Chilling Grasp (Signature Ability)**
+> 🗡 **Chilling Grasp ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Strike** |               **Main action** |
 > |--------------------------|------------------------------:|
@@ -19987,10 +19987,10 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 cold damage
-> - **12-16:** 6 cold damage; the stalker can shift 1 square
-> - **17+:** 7 cold damage; the stalker shifts up to 2 squares
+> - **12-16:** 6 cold damage; the stalker can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **17+:** 7 cold damage; the stalker [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
 
-> 🔳 **Freezing Dark (3 Malice)**
+> 🔳 **Freezing Dark (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**        |               **Main action** |
 > |------------------------|------------------------------:|
@@ -20002,19 +20002,19 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > - **12-16:** 3 cold damage
 > - **17+:** 4 cold damage
 >
-> **Effect:** Until the end of the stalker's next turn, the area provides concealment, and blocks line of effect for enemies.
+> **Effect:** Until the end of the stalker's next turn, the area provides concealment, and blocks [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) for enemies.
 
-> 👤 **Shadow Jump (1 Malice)**
+> 👤 **Shadow Jump (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free maneuver** |
 > |-------------|------------------:|
 > | **📏 Self** |       **🎯 Self** |
 >
-> The umbral stalker teleports to an unoccupied space in an area of concealment within 10 squares.
+> The umbral stalker [teleports](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space in an area of concealment within 10 squares.
 
 > ⭐️ **Corruptive Phasing**
 >
-> The umbral stalker can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the umbral stalker moves through a creature, that creature takes 2 corruption damage. The umbral stalker doesn't take damage from being force moved into objects.
+> The umbral stalker can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the umbral stalker moves through a creature, that creature takes 2 corruption damage. The umbral stalker doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 #######  Zombie
@@ -20025,7 +20025,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 1, poison 1**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+2**<br>Might             | **+1**<br>Agility | **-5**<br>Reason  |  **-2**<br>Intuition  |  **+1**<br>Presence  |
 
-> 🗡 **Clobber and Clutch (Signature Ability)**
+> 🗡 **Clobber and Clutch ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20035,27 +20035,27 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > - **≤11:** 4 damage
 > - **12-16:** 6 damage
-> - **17+:** 7 damage; grabbed
+> - **17+:** 7 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A target who starts their turn grabbed by the zombie takes 2 corruption damage. A creature who takes 5 or more corruption damage this way becomes insatiably hungry for flesh, and must complete the Find a Cure downtime project in Draw Steel: Heroes to end this effect.
+> **Effect:** A target who starts their turn [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the zombie takes 2 corruption damage. A creature who takes 5 or more corruption damage this way becomes insatiably hungry for flesh, and must complete the Find a Cure downtime project in Draw Steel: Heroes to end this effect.
 
-> ❇️ **Zombie Dust (3 Malice)**
+> ❇️ **Zombie Dust (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                  **Maneuver** |
 > |----------------|------------------------------:|
 > | **📏 2 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** The zombie falls prone, expelling a wave of rot and dust.
+> **Effect:** The zombie falls [prone](scc:mcdm.heroes.v1/condition/prone), expelling a wave of rot and dust.
 >
 > **Power Roll + 2:**
 >
 > - **≤11:** 2 corruption damage
-> - **12-16:** 3 corruption damage; M < 1 weakened (save ends)
-> - **17+:** 4 corruption damage; M < 2 dazed (save ends)
+> - **12-16:** 3 corruption damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 4 corruption damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
 > ⭐️ **Endless Knight**
 >
-> The first time the zombie is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 10 Stamina and fall prone.
+> The first time the zombie is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: statblock -->
 ####### Ghost
@@ -20066,7 +20066,7 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 | **Corruption 3, poison 3**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **-2**<br>Might             |     **+2**<br>Agility      |  **0**<br>Reason  |  **0**<br>Intuition   |  **+3**<br>Presence  |
 
-> 🏹 **Heat Death (Signature Ability)**
+> 🏹 **Heat Death ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |      **Main action** |
 > |---------------------------|---------------------:|
@@ -20074,9 +20074,9 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 cold damage; P < 1 slowed (save ends)
-> - **12-16:** 10 cold damage; P < 2 slowed (save ends)
-> - **17+:** 13 cold damage; P < 3 slowed (save ends)
+> - **≤11:** 7 cold damage; P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 10 cold damage; P < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 13 cold damage; P < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** The next strike made against the target gains an edge.
 
@@ -20086,11 +20086,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > |-----------------|---------------------------------------------:|
 > | **📏 Ranged 8** | **🎯 Self or one ally with a Phasing trait** |
 >
-> **Effect:** The target shifts up to their speed.
+> **Effect:** The target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed.
 >
-> **2 Malice:** The ghost chooses one additional target.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ghost chooses one additional target.
 
-> ❗️ **Shriek (1 Malice)**
+> ❗️ **Shriek (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Melee** |           **Triggered action** |
 > |------------------|-------------------------------:|
@@ -20102,17 +20102,17 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Phantom Flow**
 >
-> Each undead with a Phasing trait within 10 squares of the ghost can't be made slowed or weakened.
+> Each undead with a Phasing trait within 10 squares of the ghost can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed) or [weakened](scc:mcdm.heroes.v1/condition/weakened).
 
-> ☠️ **Paranormal Activity (Villain Action 1)**
+> ☠️ **Paranormal Activity ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                                            **-** |
 > |-----------------|-------------------------------------------------:|
 > | **📏 5 burst**  | **🎯 Each size 3 or smaller object in the area** |
 >
-> **Effect:** Each target rises 1 square into the air and is vertically pulled up to 5 squares toward the nearest enemy within 3 squares of the target.
+> **Effect:** Each target rises 1 square into the air and is vertically [pulled](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares toward the nearest enemy within 3 squares of the target.
 
-> ☠️ **Spirited Away (Villain Action 2)**
+> ☠️ **Spirited Away ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -20124,9 +20124,9 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > - **12-16:** P < 2 the target is levitated (EoT)
 > - **17+:** P < 3 the target is levitated until the end of the encounter
 >
-> **Effect:** A levitated target floats 1 square off the ground when first affected, then rises 1 square at the end of each of their turns. If a levitated target can't already fly, they can fly but are slowed and weakened while flying this way.
+> **Effect:** A levitated target floats 1 square off the ground when first affected, then rises 1 square at the end of each of their turns. If a levitated target can't already [fly](scc:mcdm.heroes.v1/movement/fly), they can [fly](scc:mcdm.heroes.v1/movement/fly) but are [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) while flying this way.
 
-> ☠️ **Awful Wail (Villain Action 3)**
+> ☠️ **Awful Wail ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -20138,11 +20138,11 @@ At the start of any undead's turn, you can spend Malice to activate one of the f
 > - **12-16:** 5 sonic damage
 > - **17+:** 8 sonic damage
 >
-> **Effect:** A target who has P < 2 is reduced to 1 Stamina if they are winded after taking this damage.
+> **Effect:** A target who has P < 2 is reduced to 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) if they are [winded](scc:mcdm.heroes.v1/rule.health/winded) after taking this damage.
 
 > ⭐️ **Corruptive Phasing**
 >
-> The ghost can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the ghost moves through a creature, that creature takes 2 corruption damage. The ghost doesn't take damage from being force moved into objects.
+> The ghost can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the ghost moves through a creature, that creature takes 2 corruption damage. The ghost doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Undead-2nd Echelon
@@ -20161,22 +20161,22 @@ Though vampires are fundamentally changed from their living forms, they retain t
 
 #### Mournlings
 
-Powered by sorrow and rage, these hulking amalgamations of dirt or flesh defend the homes of their creators, brutally attacking intruders while sobbing uncontrollably. Mournlings express far more emotion than many other undead guardians, for their makers imbued them with sadness and loss. Though their druidic creators are long-dead, some original mournlings still defend forests, mead ows, and other natural places they were built to protect.
+Powered by sorrow and rage, these hulking amalgamations of dirt or flesh defend the homes of their creators, brutally attacking intruders while sobbing uncontrollably. [Mournlings](scc:mcdm.monsters.v1/monster.group/undead) express far more emotion than many other undead guardians, for their makers imbued them with sadness and loss. Though their druidic creators are long-dead, some original mournlings still defend forests, mead ows, and other natural places they were built to protect.
 
 Outside of battle, mournlings patrol for interlopers in a trance-like state. When an unknown creature creates a disturbance or approaches them, the mournling unleashes a primal cry that conveys the very essence of suffering, then bursts into violence. They continue to sob and moan even as they viciously beat their enemies to a pulp.
 
 <!-- @type: featureblock -->
 ######### Undead Malice (Level 4+ Malice Features)
 
-At the start of any level 4 or higher undead's turn, you can spend Malice to activate one of the following features.
+At the start of any level 4 or higher undead's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (2-7+ Malice)**
+> ⭐️ **Prior Malice Features (2-7+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The undead activates a Malice feature available to undead of level 3 or lower.
+> The undead activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to undead of level 3 or lower.
 
-> 🌀 **Blood Hunger (5 Malice)**
+> 🌀 **Blood Hunger (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One undead acting this turn uses a signature ability against a creature who is bleeding. As a free triggered action, each undead within 5 squares of the first undead moves up to their speed and can make a free strike against the same target.
+> One undead acting this turn uses a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against a creature who is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). As a free triggered action, each undead within 5 squares of the first undead moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the same target.
 
 <!-- @type: statblock -->
 ####### Fleshflayed Shambler Zombie
@@ -20187,7 +20187,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **-**<br>Movement |        -         | **+2 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |            **+3**<br>Might             | **-1**<br>Agility | **0**<br>Reason  |               **0**<br>Intuition               |   **0**<br>Presence   |
 
-> 🗡 **Bone Carvers (Signature Ability)**
+> 🗡 **Bone Carvers ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -20199,11 +20199,11 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > - **12-16:** 5 damage
 > - **17+:** 7 damage
 >
-> **Effect:** If this ability gains an edge or has a double edge, the target is bleeding (save ends).
+> **Effect:** If this ability gains an edge or has a double edge, the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ⭐️ **Fleshfused Spines**
 >
-> Any adjacent enemy who grabs the fleshflayed shambler or uses melee ability against them takes 2 damage.
+> Any [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy who [grabs](scc:mcdm.heroes.v1/condition/grabbed) the fleshflayed shambler or uses melee ability against them takes 2 damage.
 
 <!-- @type: statblock -->
 ####### Ghoul Craver
@@ -20214,7 +20214,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **Climb**<br>Movement |        -         | **+2 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness   |
 |            **+3**<br>Might             |   **+2**<br>Agility   | **0**<br>Reason  |               **0**<br>Intuition               |   **0**<br>Presence   |
 
-> 🗡 **Taste (Signature Ability)**
+> 🗡 **Taste ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                          **Main action** |
 > |-----------------------------------|-----------------------------------------:|
@@ -20226,11 +20226,11 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > - **12-16:** 4 damage
 > - **17+:** 6 damage
 >
-> **Effect:** This ability has a double edge against a bleeding target.
+> **Effect:** This ability has a double edge against a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) target.
 
 > ⭐️ **Ever So Hungry**
 >
-> Any enemy adjacent to three or more ghoul cravers can't shift.
+> Any enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to three or more ghoul cravers can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 > ⭐️ **Hunger**
 >
@@ -20245,7 +20245,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **-**<br>Movement |        -         | **+5 bonus to ranged distance**<br>With Captain |   **-**<br>Weakness   |
 |            **-2**<br>Might             | **+3**<br>Agility | **0**<br>Reason  |               **0**<br>Intuition                |   **0**<br>Presence   |
 
-> 🏹 **Hollowbone Slug (Signature Ability)**
+> 🏹 **Hollowbone Slug ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                          **Main action** |
 > |----------------------------|-----------------------------------------:|
@@ -20255,13 +20255,13 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > - **≤11:** 3 damage
 > - **12-16:** 5 damage
-> - **17+:** 7 damage; M < 3 bleeding (save ends)
+> - **17+:** 7 damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** Each creature adjacent to the target takes 2 damage.
+> **Effect:** Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target takes 2 damage.
 
 > ⭐️ **Brittle Revenge**
 >
-> The hollowbone launcher explodes when they are reduced to 0 Stamina, dealing 2 damage to each adjacent creature.
+> The hollowbone launcher explodes when they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), dealing 2 damage to each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature.
 
 <!-- @type: statblock -->
 ####### Flesh Mournling
@@ -20272,7 +20272,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+3**<br>Might             | **+1**<br>Agility |  **0**<br>Reason  |  **+2**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Multiarm Strike (Signature Ability)**
+> 🗡 **Multiarm Strike ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20284,9 +20284,9 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > - **12-16:** 7 damage
 > - **17+:** 9 damage
 >
-> **Effect:** The target can't shift until the end of their next turn.
+> **Effect:** The target can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the end of their next turn.
 >
-> **1 Malice:** This ability targets one additional target.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target.
 
 > ❇️ **Horrid Wail**
 >
@@ -20297,14 +20297,14 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > **Power Roll + 3:**
 >
 > - **≤11:** 2 psychic damage
-> - **12-16:** 3 psychic damage; I < 2 frightened (save ends)
-> - **17+:** 4 psychic damage; I < 3 frightened (save ends)
+> - **12-16:** 3 psychic damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 4 psychic damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** A target who is still frightened this way at the end of the encounter can't take a respite activity during their next respite.
+> **Effect:** A target who is still [frightened](scc:mcdm.heroes.v1/condition/frightened) this way at the end of the encounter can't take a respite activity during their next respite.
 
 > ⭐️ **Arise**
 >
-> The first time the mournling is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 10 Stamina and fall prone.
+> The first time the mournling is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Immutable Form**
 >
@@ -20319,7 +20319,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+3**<br>Might             | **-1**<br>Agility |  **-2**<br>Reason  |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Rotten Smash (Signature Ability)**
+> 🗡 **Rotten Smash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -20328,22 +20328,22 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > **Power Roll + 3:**
 >
 > - **≤11:** 9 damage
-> - **12-16:** 14 damage; A < 2 grabbed
-> - **17+:** 17 damage; A < 3 grabbed
+> - **12-16:** 14 damage; A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 17 damage; A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 
-> ❗️ **Knocking Heads (1 Malice)**
+> ❗️ **Knocking Heads (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       |   **Triggered action** |
 > |-------------|-----------------------:|
 > | **📏 Self** | **🎯 Self; see below** |
 >
-> **Trigger:** The giant zombie grabs two creatures or objects, or starts their turn with two creatures or objects grabbed.
+> **Trigger:** The giant zombie [grabs](scc:mcdm.heroes.v1/condition/grabbed) two creatures or objects, or starts their turn with two creatures or objects [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 >
 > **Effect:** The creatures or objects are smashed together using Rotten Smash, which has a double edge.
 
 > ⭐️ **Endless Knight**
 >
-> The first time the giant zombie is reduced to 0 Stamina by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 50 Stamina and fall prone.
+> The first time the giant zombie is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by damage that isn't fire damage or holy damage and their body isn't destroyed, they instead have 50 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Negative Nerves**
 >
@@ -20358,7 +20358,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **Fire 5**<br>Weakness  |
 |            **+3**<br>Might             | **-1**<br>Agility | **+1**<br>Reason  |  **+3**<br>Intuition  |    **0**<br>Presence     |
 
-> 🗡 **Accursed Bindings (Signature Ability)**
+> 🗡 **Accursed Bindings ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20366,13 +20366,13 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 corruption damage; pull 1
-> - **12-16:** 8 corruption damage; pull 2
-> - **17+:** 10 corruption damage; pull 2; M < 3 restrained (save ends)
+> - **≤11:** 6 corruption damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 8 corruption damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 10 corruption damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The next ability the mummy uses against the target has any potency increased by 1 for the target.
+> **Effect:** The next ability the mummy uses against the target has any [potency](scc:mcdm.heroes.v1/rule.character/potency) increased by 1 for the target.
 
-> 🏹 **Eldritch Curse (3 Malice)**
+> 🏹 **Eldritch Curse (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |     **Main action** |
 > |-------------------|--------------------:|
@@ -20384,15 +20384,15 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > - **12-16:** 5 corruption damage; I < 2 the target is cursed (save ends)
 > - **17+:** 7 corruption damage; I < 3 the target is cursed (save ends)
 >
-> **Effect:** A cursed target is bleeding and weakened, and allies gain an edge on strikes made against them.
+> **Effect:** A cursed target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened), and allies gain an edge on strikes made against them.
 
-> ❗️ **Blast of Mummy Dust (1 Malice)**
+> ❗️ **Blast of Mummy Dust (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |           **Triggered action** |
 > |----------------|-------------------------------:|
 > | **📏 1 burst** | **🎯 The triggering creature** |
 >
-> **Trigger:** The mummy comes within distance of a restrained creature or starts their turn within distance of one.
+> **Trigger:** The mummy comes within distance of a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature or starts their turn within distance of one.
 >
 > **Effect:** The target takes 8 poison damage.
 
@@ -20405,7 +20405,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **+2**<br>Might             |   **+3**<br>Agility   | **-1**<br>Reason  |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Exsanguinating Bite (Signature Ability)**
+> 🗡 **Exsanguinating Bite ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -20414,12 +20414,12 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > **Power Roll + 3:**
 >
 > - **≤11:** 5 damage
-> - **12-16:** 7 corruption damage; M < 2 bleeding (save ends)
-> - **17+:** 9 corruption damage; M < 3 bleeding (save ends)
+> - **12-16:** 7 corruption damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 9 corruption damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The vampire spawn regains Stamina equal to any corruption damage dealt.
+> **Effect:** The vampire spawn regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to any corruption damage dealt.
 >
-> **1 Malice:** The target takes an additional 3 corruption damage.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The target takes an additional 3 corruption damage.
 
 > 👤 **Vampiric Celerity**
 >
@@ -20427,11 +20427,11 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The vampire spawn can shift 1 square, then move up to their speed. The next ability the vampire uses before the start of their next turn gains an edge.
+> **Effect:** The vampire spawn can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square, then move up to their speed. The next ability the vampire uses before the start of their next turn gains an edge.
 
 > ⭐️ **Unslakable Bloodthirst**
 >
-> The vampire spawn has speed 10 while any creature within 10 squares of them is bleeding. The vampire spawn must use Exsanguinating Bite against a bleeding creature on their turn if they are able to.
+> The vampire spawn has speed 10 while any creature within 10 squares of them is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). The vampire spawn must use Exsanguinating Bite against a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature on their turn if they are able to.
 
 <!-- @type: statblock -->
 ####### Wraith
@@ -20442,7 +20442,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 4, poison 4**<br>Immunity | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |            **-2**<br>Might             |     **+2**<br>Agility      | **+1**<br>Reason  |  **+1**<br>Intuition  |  **+3**<br>Presence  |
 
-> 🗡 **Chilling Gravetouch (Signature Ability)**
+> 🗡 **Chilling Gravetouch ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Strike, Weapon** |               **Main action** |
 > |----------------------------------|------------------------------:|
@@ -20450,9 +20450,9 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 cold damage; P < 1 slowed (save ends)
-> - **12-16:** 7 cold damage; P < 2 slowed (save ends)
-> - **17+:** 9 cold damage; P < 3 slowed (save ends)
+> - **≤11:** 5 cold damage; P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 7 cold damage; P < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 cold damage; P < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** Any living creature who dies from this damage rises at the start of the next round as a ghoul craver under the Director's control.
 
@@ -20464,19 +20464,19 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Effect:** The wraith turns invisible, moves up to their speed, and is visible again.
 
-> ❗️ **Stolen Vitality (1 Malice)**
+> ❗️ **Stolen Vitality (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |      **Free triggered action** |
 > |-------------------|-------------------------------:|
 > | **📏 Ranged 5**   | **🎯 The triggering creature** |
 >
-> **Trigger:** An enemy within distance regains Stamina.
+> **Trigger:** An enemy within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
-> **Effect:** The target regains only half the Stamina, and the wraith regains the remaining Stamina.
+> **Effect:** The target regains only half the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and the wraith regains the remaining [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ⭐️ **Agonizing Phasing**
 >
-> The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage and takes a bane on their next strike. The wraith doesn't take damage from being force moved into objects.
+> The wraith can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the wraith moves through a creature, that creature takes 5 corruption damage and takes a bane on their next strike. The wraith doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 ####### Mummy Lord
@@ -20487,7 +20487,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 | **Corruption 6, poison 6**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **Fire 5**<br>Weakness  |
 |            **+4**<br>Might             | **0**<br>Agility  |  **+2**<br>Reason  |  **+4**<br>Intuition  |    **+2**<br>Presence    |
 
-> 🗡 **Accursed Slam (Signature Ability)**
+> 🗡 **Accursed Slam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -20495,13 +20495,13 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 10 corruption damage; I < 2 bleeding (save ends)
-> - **12-16:** 14 corruption damage; I < 3 bleeding (save ends)
-> - **17+:** 17 corruption damage; I < 4 bleeding (save ends)
+> - **≤11:** 10 corruption damage; I < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 14 corruption damage; I < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 17 corruption damage; I < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** While the target is bleeding this way, the potency of any ability used against them increases by 1 for the target.
+> **Effect:** While the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the [potency](scc:mcdm.heroes.v1/rule.character/potency) of any ability used against them increases by 1 for the target.
 
-> 🏹 **Binding Curse (1 Malice)**
+> 🏹 **Binding Curse (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |     **Main action** |
 > |-------------------|--------------------:|
@@ -20509,31 +20509,31 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 7 corruption damage; I < 2 frightened (save ends)
-> - **12-16:** 12 corruption damage; I < 3 frightened (save ends)
-> - **17+:** 16 corruption damage; I < 4 frightened (save ends)
+> - **≤11:** 7 corruption damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 12 corruption damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 16 corruption damage; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** While frightened this way, a target takes 4 psychic damage whenever they use a move action.
+> **Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, a target takes 4 psychic damage whenever they use a move action.
 >
-> **2+ Malice:** This ability targets one additional target for each 2 Malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target for each 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
-> ❗️ **Summon My Guard (2 Malice)**
+> ❗️ **Summon My Guard (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       | **Triggered action** |
 > |------------------|---------------------:|
 > | **📏 Ranged 10** |       **🎯 Special** |
 >
-> **Trigger:** The mummy lord is made winded for the first time in the encounter.
+> **Trigger:** The mummy lord is made [winded](scc:mcdm.heroes.v1/rule.health/winded) for the first time in the encounter.
 >
 > **Effect:** One mummy or four ghoul cravers appear within distance.
 
 > ⭐️ **Cursed Transference**
 >
-> At the end of each of their turns, the mummy lord can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the mummy lord can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
-> **5 Malice:** The effect that is ended is transferred to another creature within 10 squares.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The effect that is ended is transferred to another creature within 10 squares.
 
-> ☠️ **Plague of Flies (Villain Action 1)**
+> ☠️ **Plague of Flies ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -20547,7 +20547,7 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Effect:** Each target takes a bane on their next strike.
 
-> ☠️ **Land's Guardian (Villain Action 2)**
+> ☠️ **Land's Guardian ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
@@ -20555,11 +20555,11 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Effect:** The mummy lord gains a +2 bonus to speed and can automatically burrow at full speed while moving. They can then use the Dig maneuver. The next time the mummy lord breaches the surface, each enemy within 2 squares of the mummy lord makes an **Agility test**.
 >
-> - **≤11:** Prone and can't stand (EoT)
-> - **12-16:** Prone
+> - **≤11:** [Prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
+> - **12-16:** [Prone](scc:mcdm.heroes.v1/condition/prone)
 > - **17+:** No effect
 
-> ☠️ **Unbound Horrors (Villain Action 3)**
+> ☠️ **Unbound Horrors ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
@@ -20567,9 +20567,9 @@ At the start of any level 4 or higher undead's turn, you can spend Malice to act
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 5 corruption damage; I < 2 frightened (save ends)
-> - **12-16:** 8 corruption damage; I < 3 frightened (save ends)
-> - **17+:** 10 corruption damage; I < 4 frightened and restrained (save ends)
+> - **≤11:** 5 corruption damage; I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 8 corruption damage; I < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 10 corruption damage; I < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 <!-- @type: monster-group | @subcategory: 3rd-echelon -->
 ### Undead-3rd Echelon
@@ -20597,15 +20597,15 @@ The term "vampire lord" thus refers not to a specific age or threshold of physic
 <!-- @type: featureblock -->
 ######### Undead Malice (Level 7+ Malice Features)
 
-At the start of any level 7 or higher undead's turn, you can spend Malice to activate one of the following features.
+At the start of any level 7 or higher undead's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Prior Malice Features (2-7+ Malice)**
+> ⭐️ **Prior Malice Features (2-7+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The undead activates a Malice feature available to undead of level 6 or lower.
+> The undead activates a [Malice](scc:mcdm.monsters.v1/rule.monster/malice) feature available to undead of level 6 or lower.
 
-> 🌀 **Necrotic Rupture (5 Malice)**
+> 🌀 **Necrotic Rupture (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the round, whenever an undead is reduced to 0 Stamina, they deal 8 corruption damage to each enemy within 3 squares of them.
+> Until the end of the round, whenever an undead is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), they deal 8 corruption damage to each enemy within 3 squares of them.
 
 <!-- @type: statblock -->
 ####### Blood-Starved Vampire
@@ -20616,7 +20616,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 | **Corruption 7, poison 7**<br>Immunity | **Climb**<br>Movement |         -         | **+3 bonus to speed**<br>With Captain |   **-**<br>Weakness   |
 |            **+4**<br>Might             |   **+1**<br>Agility   | **-3**<br>Reason  |          **+1**<br>Intuition          |  **-3**<br>Presence   |
 
-> 🗡 **Feeding Frenzy (Signature Ability)**
+> 🗡 **Feeding Frenzy ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -20626,13 +20626,13 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 >
 > - **≤11:** 3 damage
 > - **12-16:** 6 damage
-> - **17+:** 7 damage; M < 4 bleeding (EoT)
+> - **17+:** 7 damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 >
-> **Effect:** If a target made bleeding this way is already bleeding, they are instead knocked prone and can't stand until the end of their next turn.
+> **Effect:** If a target made [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way is already [bleeding](scc:mcdm.heroes.v1/condition/bleeding), they are instead knocked [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand until the end of their next turn.
 
 > ⭐️ **Unslakable Bloodthirst**
 >
-> The blood-starved vampire has speed 10 while any creature within 10 squares of them is bleeding. The vampire must use Feeding Frenzy against a bleeding creature on their turn if they are able to.
+> The blood-starved vampire has speed 10 while any creature within 10 squares of them is [bleeding](scc:mcdm.heroes.v1/condition/bleeding). The vampire must use Feeding Frenzy against a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature on their turn if they are able to.
 
 <!-- @type: statblock -->
 #######  Faded Echo Spirit
@@ -20643,7 +20643,7 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 | **Corruption 7, poison 7**<br>Immunity | **Fly, hover**<br>Movement |         -         | **Gain an edge on strikes**<br>With Captain |   **-**<br>Weakness   |
 |            **-3**<br>Might             |     **+4**<br>Agility      | **-5**<br>Reason  |             **+1**<br>Intuition             |  **-3**<br>Presence   |
 
-> 🗡 **Hollow Grasp (Signature Ability)**
+> 🗡 **Hollow Grasp ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -20652,14 +20652,14 @@ At the start of any level 7 or higher undead's turn, you can spend Malice to act
 > **Power Roll + 4:**
 >
 > - **≤11:** 3 corruption damage
-> - **12-16:** 6 corruption damage; P < 3 weakened
-> - **17+:** 7 corruption damage; P < 4 weakened
+> - **12-16:** 6 corruption damage; P < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened)
+> - **17+:** 7 corruption damage; P < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened)
 >
-> **Effect:** This weakened condition ends if an affected target ends their turn with no spirit within 5 squares of them.
+> **Effect:** This [weakened](scc:mcdm.heroes.v1/condition/weakened) condition ends if an affected target ends their turn with no spirit within 5 squares of them.
 
 > ⭐️ **Corruptive Phasing**
 >
-> The spirit can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the spirit moves through a creature, that creature takes 4 corruption damage. The spirit doesn't take damage from being force moved into objects.
+> The spirit can move through creatures and objects at their usual speed, but can't end their turn inside a creature or object. The first time in a round that the spirit moves through a creature, that creature takes 4 corruption damage. The spirit doesn't take damage from being [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into objects.
 
 <!-- @type: statblock -->
 #######  Mummy Rotwrap
