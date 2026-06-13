@@ -25533,7 +25533,7 @@ of the following features.
 <!-- @type: chapter | @id: dynamic-terrain -->
 # Dynamic Terrain
 
-A terrain object is an element placed in an encounter that alters tactics on the battlefield, allowing the Director to better theme an encounter. Terrain objects range from hazards that provide tempting targets for forced movement, to fieldworks and siege engines that provide a locational advantage, to supernatural objects that an entire encounter can be built around.
+A terrain object is an element placed in an encounter that alters tactics on the battlefield, allowing the Director to better theme an encounter. Terrain objects range from hazards that provide tempting targets for [forced movement](scc:mcdm.heroes.v1/movement/forced-movement), to fieldworks and siege engines that provide a locational advantage, to supernatural objects that an entire encounter can be built around.
 
 ### Terrain Object Stat Blocks
 
@@ -25541,15 +25541,15 @@ Each terrain object is set up in a stat block, but this stat block format is dif
 
 #### EV
 
-Each dynamic terrain object has an encounter value cost, just like monsters in an encounter. Some objects, particularly environmental hazards, have a cost representing an area, such as a 10 x 10-square section of terrain. A hazard can always be smaller than that indicated size.
+Each dynamic terrain object has an [encounter value](scc:mcdm.monsters.v1/rule.monster/encounter-value) cost, just like monsters in an encounter. Some objects, particularly environmental hazards, have a cost representing an area, such as a 10 x 10-square section of terrain. A hazard can always be smaller than that indicated size.
 
 #### Stamina
 
-Terrain objects have either a fixed amount of Stamina or an amount of Stamina per square, depending on their nature and size. If an object has an amount of Stamina per square, it can be partially destroyed square by square.
+Terrain objects have either a fixed amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) or an amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per square, depending on their nature and size. If an object has an amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per square, it can be partially destroyed square by square.
 
 #### Size
 
-Terrain objects either have a standard size (for example, 1M) or a size noted as squares of terrain or material. If a terrain object's size is noted as squares, a creature can move through that terrain object but might trigger the object's effects. Many terrain objects sized in squares are difficult terrain, as noted in the object's size entry.
+Terrain objects either have a standard size (for example, 1M) or a size noted as squares of terrain or material. If a terrain object's size is noted as squares, a creature can move through that terrain object but might trigger the object's effects. Many terrain objects sized in squares are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), as noted in the object's size entry.
 
 #### Direction
 
@@ -25567,7 +25567,7 @@ Terrain objects typically activate when a creature enters their space or when th
 
 Some terrain objects, particularly traps and other objects that are set up by creatures, are set to activate only in response to creatures or objects of a particular size. For example, smaller creatures such as goblins and kobolds typically calibrate their traps for size 1M and larger creatures, making those traps safe for smaller creatures to pass through.
 
-Many area terrain objects activate when a creature enters their area without shifting. If such a terrain object is difficult terrain, remember that creatures can't usually shift through difficult terrain without having a trait or feature that allows them to do so.
+Many area terrain objects activate when a creature enters their area without [shifting](scc:mcdm.heroes.v1/movement/shifting). If such a terrain object is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), remember that creatures can't usually [shift](scc:mcdm.heroes.v1/movement/shifting) through [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) without having a trait or feature that allows them to do so.
 
 #### Effect
 
@@ -25579,9 +25579,9 @@ Some terrain objects can be upgraded to create additional effects. If a terrain 
 
 ### Hidden Terrain Objects
 
-Some terrain objects are inherently hidden or can be hidden with an upgrade. Hidden objects can be found as part of the Search for Hidden Creatures maneuver (see *Draw Steel: Heroes*). When you make an **Intuition test** to search for hidden creatures and objects, use the following outcomes for dealing with objects:
+Some terrain objects are inherently hidden or can be hidden with an upgrade. Hidden objects can be found as part of the [Search for Hidden Creatures](scc:mcdm.heroes.v1/feature.common.maneuvers/search-for-hidden-creatures) maneuver (see *Draw Steel: Heroes*). When you make an **Intuition test** to search for hidden creatures and objects, use the following outcomes for dealing with objects:
 
-- **≤11:** You find all hidden terrain objects adjacent to you.
+- **≤11:** You find all hidden terrain objects [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to you.
 - **12-16:** You find all hidden terrain objects within 5 squares of you.
 - **17+:** You find all hidden terrain objects within 10 squares of you.
 
@@ -25609,7 +25609,7 @@ This beehive is full of angry bees who swarm and attack with little provocation.
 
 > ❕ **Activate**
 >
-> A creature enters the hive's space or an adjacent space without shifting.
+> A creature enters the hive's space or an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) space without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Effect:** The hive is removed from the encounter map and a swarm of bees is placed in one square of the space of the triggering creature. Any creature who starts their turn in the swarm's space takes 3 poison damage. At the start of each round, the swarm moves 1 square and its size increases by 1 square (to 2 squares by 2 squares, 3 squares by 3 squares, and so forth), preferring squares in a creature's space. After 3 rounds, the swarm dissipates.
 
@@ -25617,7 +25617,7 @@ This beehive is full of angry bees who swarm and attack with little provocation.
 >
 > **Concealed Hive (+1 EV)** The hive is hidden until the swarm is unleashed.
 >
-> **Killer Bees (+2 EV)** The bees are a particularly aggressive and dangerous species. The hive triggers even if a creature shifts into or while adjacent to it, and the swarm deals 1d6 + 3 poison damage.
+> **Killer Bees (+2 EV)** The bees are a particularly aggressive and dangerous species. The hive triggers even if a creature [shifts](scc:mcdm.heroes.v1/movement/shifting) into or while [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to it, and the swarm deals 1d6 + 3 poison damage.
 
 <!-- @type: dynamic-terrain -->
 ######### Brambles (Level 1 Hazard Defender)
@@ -25626,7 +25626,7 @@ This thicket features close-growing vines tipped with sharp thorns.
 
 - **EV:** 1 per 10 x 10 thicket
 - **Stamina:** 3 per square
-- **Size:** One or more squares of difficult terrain
+- **Size:** One or more squares of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)
 
 > 🌀 **Deactivate**
 >
@@ -25634,13 +25634,13 @@ This thicket features close-growing vines tipped with sharp thorns.
 
 > ❕ **Activate**
 >
-> A creature enters a square of brambles without shifting.
+> A creature enters a square of brambles without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Effect:** A creature takes 1 damage per square of brambles they enter.
 
 > ⭐️ **Upgrade**
 >
-> **Poisonous Thorns (+1 EV)** The brambles are poisonous. Any creature who takes damage from brambles is also bleeding (save ends).
+> **Poisonous Thorns (+1 EV)** The brambles are poisonous. Any creature who takes damage from brambles is also [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
 
 <!-- @type: dynamic-terrain -->
 ######### Corrosive Pool (Level 2 Hazard Hexer)
@@ -25649,7 +25649,7 @@ This shallow pool bubbles with acid or some other corrosive liquid.
 
 - **EV:** 3 per 10 x 10 pool
 - **Stamina:** 12 per square
-- **Size:** One or more squares of difficult terrain
+- **Size:** One or more squares of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)
 - **Immunity:** 20 to all damage except cold or fire damage
 
 > 🌀 **Deactivate**
@@ -25672,9 +25672,9 @@ This shallow pool bubbles with acid or some other corrosive liquid.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 fire damage; M < 1 the target is burning (save ends)
-> - **12-16:** 6 fire damage; M < 2 the target is burning (save ends)
-> - **17+:** 9 fire damage; M < 3 the target is burning (save ends)
+> - **≤11:** 3 fire damage; M < 1 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 6 fire damage; M < 2 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 9 fire damage; M < 3 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** The liquid in the pool is consumed. This ability has a double edge against any target in the pool. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. Any target with acid weakness takes extra damage from this ability and while burning as if the fire damage were acid damage.
 
@@ -25689,7 +25689,7 @@ A shallow, frozen patch of water features ice thick enough that it won't break, 
 
 - **EV:** 1 per 10 x 10 pond
 - **Stamina:** 3 per square
-- **Size:** One or more squares of difficult terrain
+- **Size:** One or more squares of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)
 - **Immunity:** 5 to all damage except fire damage
 
 > 🌀 **Deactivate**
@@ -25698,7 +25698,7 @@ A shallow, frozen patch of water features ice thick enough that it won't break, 
 
 > ❕ **Activate**
 >
-> A creature or object enters a square of the frozen pond without shifting.
+> A creature or object enters a square of the frozen pond without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Effect:** The **Slippery Surface** ability.
 
@@ -25708,19 +25708,19 @@ A shallow, frozen patch of water features ice thick enough that it won't break, 
 > |-------------------|-----------------------------------------:|
 > | **📏 Melee 0**    | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object enters a square of the frozen pond without shifting.
+> **Trigger:** A creature or object enters a square of the frozen pond without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Power Roll + 2:**
 >
 > - **≤11:** Push 1 in the direction the target was moving
-> - **12-16:** Push 2 in the direction the target was moving; A < 1 slowed (save ends)
-> - **17+:** Push 3 in the direction the target was moving; A < 2 prone and can't stand (save ends)
+> - **12-16:** Push 2 in the direction the target was moving; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** Push 3 in the direction the target was moving; A < 2 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** The triggering creature's movement ends, then they are force moved. If the target triggered this ability by being force moved, this ability gains an edge and any remaining forced movement distance is added to the ability's forced movement. The ability's forced movement doesn't trigger the ability again.
+> **Effect:** The triggering creature's movement ends, then they are [force moved](scc:mcdm.heroes.v1/movement/forced-movement). If the target triggered this ability by being [force moved](scc:mcdm.heroes.v1/movement/forced-movement), this ability gains an edge and any remaining [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) distance is added to the ability's [forced movement](scc:mcdm.heroes.v1/movement/forced-movement). The ability's [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) doesn't trigger the ability again.
 
 > ⭐️ **Upgrade**
 >
-> **Thin Ice (+1 EV)** The ice covering the pond is thin and the water is deeper. Whenever a creature or object enters or falls prone in a square of the frozen pond, that square is destroyed and replaced with icy water. The **Icy Water** ability replaces **Slippery Surface**.
+> **Thin Ice (+1 EV)** The ice covering the pond is thin and the water is deeper. Whenever a creature or object enters or falls [prone](scc:mcdm.heroes.v1/condition/prone) in a square of the frozen pond, that square is destroyed and replaced with icy water. The **Icy Water** ability replaces **Slippery Surface**.
 >
 > Any creature who starts their turn in the icy water takes 1 cold damage. If the water is deep enough, a creature can swim beneath the surface of the frozen pond, but takes this cold damage while doing so.
 
@@ -25732,13 +25732,13 @@ A shallow, frozen patch of water features ice thick enough that it won't break, 
 > |-------------------|-----------------------------------------:|
 > | **📏 Melee 0**    | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object enters or falls prone in a square of the frozen pond.
+> **Trigger:** A creature or object enters or falls [prone](scc:mcdm.heroes.v1/condition/prone) in a square of the frozen pond.
 >
 > - **≤11:** Slide 1
-> - **12-16:** 1 cold damage; M < 1 slowed (save ends)
-> - **17+:** 3 cold damage; M < 2 restrained (save ends)
+> - **12-16:** 1 cold damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 3 cold damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** The triggering creature's movement ends, then they are force moved if applicable.
+> **Effect:** The triggering creature's movement ends, then they are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) if applicable.
 
 <!-- @type: dynamic-terrain -->
 ######### Lava (Level 3 Hazard Hexer)
@@ -25747,7 +25747,7 @@ A patch of blisteringly hot molten rock wells up from the ground, threatening an
 
 - **EV:** 4 per 10 x 10 patch
 - **Stamina:** 12 per square
-- **Size:** One or more squares of difficult terrain
+- **Size:** One or more squares of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)
 - **Immunity:** 20 to all damage except cold damage
 
 > 🌀 **Deactivate**
@@ -25756,7 +25756,7 @@ A patch of blisteringly hot molten rock wells up from the ground, threatening an
 
 > ❕ **Activate**
 >
-> A creature or object enters the lava or starts their turn there, or starts their turn adjacent to the lava.
+> A creature or object enters the lava or starts their turn there, or starts their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the lava.
 >
 > **Effect:** The **Liquid Hot Magma** ability.
 
@@ -25766,19 +25766,19 @@ A patch of blisteringly hot molten rock wells up from the ground, threatening an
 > |-------------------|-----------------------------------------:|
 > | **📏 Melee 1**    | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object enters the lava or starts their turn there, or starts their turn adjacent to the lava.
+> **Trigger:** A creature or object enters the lava or starts their turn there, or starts their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the lava.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 fire damage; M < 1 the target is burning (save ends)
-> - **12-16:** 9 fire damage; M < 2 the target is burning (save ends)
-> - **17+:** 12 fire damage; M < 3 the target is burning (save ends)
+> - **≤11:** 5 fire damage; M < 1 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 9 fire damage; M < 2 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 12 fire damage; M < 3 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** If the target is adjacent to lava but not in it, this ability takes a bane. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
+> **Effect:** If the target is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to lava but not in it, this ability takes a bane. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
 > ⭐️ **Upgrade**
 >
-> **Magma Flow (+4 EV)** The lava is flowing! At the start of each round, add one square of lava adjacent to an existing square of lava.
+> **Magma Flow (+4 EV)** The lava is flowing! At the start of each round, add one square of lava [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an existing square of lava.
 
 <!-- @type: dynamic-terrain -->
 ######### Quicksand (Level 3 Hazard Hexer)
@@ -25809,11 +25809,11 @@ When this patch of sand is stepped on, it is revealed to be a slurry saturated b
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** M < 0 slowed (save ends)
-> - **12-16:** M < 1 restrained (save ends)
-> - **17+:** M < 2 restrained (save ends)
+> - **≤11:** M < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** This ability takes a bane if a triggering creature shifted into the quicksand. A character who starts their turn restrained this way is suffocating.
+> **Effect:** This ability takes a bane if a triggering creature [shifted](scc:mcdm.heroes.v1/movement/shifting) into the quicksand. A character who starts their turn [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is [suffocating](scc:mcdm.heroes.v1/rule.health/suffocating).
 
 > ⭐️ **Hidden**
 >
@@ -25834,7 +25834,7 @@ Colorful mushrooms or lovely flowering plants release a cloud of spores or polle
 
 > ❕ **Activate**
 >
-> A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without shifting.
+> A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Effect:** The **Sleep Spores** ability.
 
@@ -25844,21 +25844,21 @@ Colorful mushrooms or lovely flowering plants release a cloud of spores or polle
 > |--------------------------|-------------------------------:|
 > | **📏 Melee 0**           | **🎯 The triggering creature** |
 >
-> **Trigger:** A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without shifting.
+> **Trigger:** A creature starts their turn in the area of the toxic plants, or enters a square of toxic plants without [shifting](scc:mcdm.heroes.v1/movement/shifting).
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** M < 0 dazed (save ends)
-> - **12-16:** M < 1 dazed (save ends)
-> - **17+:** M < 2 dazed (save ends)
+> - **≤11:** M < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** While dazed this way, a target who starts their turn in the area of the toxic plants falls prone and can't stand.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, a target who starts their turn in the area of the toxic plants falls [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand.
 
 > ⭐️ **Upgrades**
 >
-> **Poisonous Spores (+2 EV)** Any creature dazed by this hazard takes 1d6 poison damage at the start of each of their turns.
+> **Poisonous Spores (+2 EV)** Any creature [dazed](scc:mcdm.heroes.v1/condition/dazed) by this hazard takes 1d6 poison damage at the start of each of their turns.
 >
-> **Carnivorous Plants (+2 EV)** The plants are carnivorous and attempt to slowly digest any creature who falls among them. Any creature who starts their turn prone in the area takes 4 acid damage.
+> **Carnivorous Plants (+2 EV)** The plants are carnivorous and attempt to slowly digest any creature who falls among them. Any creature who starts their turn [prone](scc:mcdm.heroes.v1/condition/prone) in the area takes 4 acid damage.
 
 <!-- @type: monster-group | @domain: dynamic-terrain | @category: fieldworks -->
 ### Fieldworks
@@ -25872,7 +25872,7 @@ A series of sharp stakes have been placed point-out to protect defenders against
 
 - **EV:** 2
 - **Stamina:** 3 per square
-- **Size:** One or more squares of difficult terrain
+- **Size:** One or more squares of [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain)
 - **Typical Space:** 4 x 1-square area
 - **Direction:** One side of the stakes is defined as the front.
 
@@ -25884,11 +25884,11 @@ A series of sharp stakes have been placed point-out to protect defenders against
 >
 > A creature enters an area of stakes from the front.
 >
-> **Effect:** The triggering creature takes 2 damage per square of stakes they enter. If they are force moved into an area of stakes, they take an additional 3 damage.
+> **Effect:** The triggering creature takes 2 damage per square of stakes they enter. If they are [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into an area of stakes, they take an additional 3 damage.
 
 > ⭐️ **Upgrades**
 >
-> **Poison (+2 EV)** The tips of the stakes have poison applied to them. Any creature who takes damage from the stakes also takes 1d6 poison damage at the start of each of their turns (save ends).
+> **Poison (+2 EV)** The tips of the stakes have poison applied to them. Any creature who takes damage from the stakes also takes 1d6 poison damage at the start of each of their turns ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
 >
 > **Sticky (+3 EV)** A sticky slime or webbing has been applied to the stakes and the ground between them. Any creature who enters an area of stakes triggers the **Sticky Stakes** ability in addition to suffering the stakes' other effects.
 
@@ -25903,12 +25903,12 @@ A series of sharp stakes have been placed point-out to protect defenders against
 > **Power Roll + 2:**
 >
 > - **≤11:** No effect.
-> - **12-16:** A < 1 slowed (save ends)
-> - **17+:** A < 2 restrained (save ends)
+> - **12-16:** A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 
 > ⭐️ **Allied Awareness**
 >
-> Allies of this object ignore the difficult terrain created by the stakes, take no damage from moving through the stakes unless they are force moved, and have cover while in an area of archer's stakes.
+> Allies of this object ignore the [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) created by the stakes, take no damage from moving through the stakes unless they are [force moved](scc:mcdm.heroes.v1/movement/forced-movement), and have [cover](scc:mcdm.heroes.v1/rule.combat/cover) while in an area of archer's stakes.
 
 <!-- @type: dynamic-terrain -->
 ######### Bear Trap (Level 1 Trap Ambusher)
@@ -25921,10 +25921,10 @@ A set of spring-loaded steel jaws stands ready to snap shut when stepped on.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a bear trap can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a bear trap can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the trap and is affected as if in its space.
-> - **12-16:** The trap is deactivated but the creature is slowed (EoT).
+> - **12-16:** The trap is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The trap is deactivated and doesn't trigger.
 
 > ❕ **Activate**
@@ -25943,15 +25943,15 @@ A set of spring-loaded steel jaws stands ready to snap shut when stepped on.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 The target shifts 1 square away from the trap.
-> - **12-16:** 3 damage; A < 1 slowed (save ends)
-> - **17+:** 5 damage; A < 2 slowed (save ends)
+> - **≤11:** 1 The target [shifts](scc:mcdm.heroes.v1/movement/shifting) 1 square away from the trap.
+> - **12-16:** 3 damage; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 5 damage; A < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** The bear trap must be manually reset.
 
 > ⭐️ **Upgrade**
 >
-> **Chain (+1 EV)** The bear trap is attached to the ground by a steel chain. A target who would be made slowed by the trap is restrained instead.
+> **Chain (+1 EV)** The bear trap is attached to the ground by a steel chain. A target who would be made [slowed](scc:mcdm.heroes.v1/condition/slowed) by the trap is [restrained](scc:mcdm.heroes.v1/condition/restrained) instead.
 
 > ⭐️ **Hidden**
 >
@@ -25968,17 +25968,17 @@ A patch of flammable oil or pitch on the ground is ready to be ignited.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a patch of flammable oil can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a patch of flammable oil can make an **Agility test**.
 >
 > - **≤11:** The creature ignites the oil and is affected as if in its area.
-> - **12-16:** The oil temporarily ignites before safely burning out, and the creature takes 3 fire damage and is burning (save ends).
+> - **12-16:** The oil temporarily ignites before safely burning out, and the creature takes 3 fire damage and is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
 > - **17+:** The oil is rendered safe and can't be ignited.
 
 > ❕ **Activate**
 >
 > A creature or object in a square of oil takes fire damage, or a creature or object enters a square of burning oil or starts their turn there.
 >
-> **Effect:** The triggering creature or object takes 3 fire damage and is burning (save ends). A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
+> **Effect:** The triggering creature or object takes 3 fire damage and is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends). A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
 > ⭐️ **Upgrade**
 >
@@ -25999,26 +25999,26 @@ A cavity in a floor, wall, or ceiling might hold hidden threats.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a hidey-hole can make a **Might test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a hidey-hole can make a **Might test**.
 >
-> - **≤11:** The creature is restrained (save ends).
-> - **12-16:** The hidey-hole collapses but the creature is slowed (save ends).
+> - **≤11:** The creature is [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
+> - **12-16:** The hidey-hole collapses but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
 > - **17+:** The hidey-hole collapses and can no longer be used until repaired.
 
 > ❕ **Activate**
 >
 > A creature starts the encounter in the hidey-hole or ends their turn there.
 >
-> **Effect:** The triggering creature can attempt to hide as a free triggered action.
+> **Effect:** The triggering creature can attempt to [hide](scc:mcdm.heroes.v1/feature.common.maneuvers/hide) as a free triggered action.
 
 > ⭐️ **Upgrade**
 >
-> **Network (+1 EV per hidey-hole)** The hidey-hole is connected to a tunnel network. A creature familiar with the network can move from one hidey-hole to any space adjacent to a connected hidey-hole if they have movement available equal to the straight-line distance to that space. A creature unfamiliar with the network can use a maneuver to make a **hard Intuition test** to discover a connected hidey-hole.
+> **Network (+1 EV per hidey-hole)** The hidey-hole is connected to a tunnel network. A creature familiar with the network can move from one hidey-hole to any space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a connected hidey-hole if they have movement available equal to the straight-line distance to that space. A creature unfamiliar with the network can use a maneuver to make a **hard Intuition test** to discover a connected hidey-hole.
 
 <!-- @type: dynamic-terrain -->
 ######### Pavise Shield (Level 1 Fortification Defender)
 
-A reinforced metal shield embedded in the ground acts as cover for the creature controlling it.
+A reinforced metal shield embedded in the ground acts as [cover](scc:mcdm.heroes.v1/rule.combat/cover) for the creature controlling it.
 
 - **EV:** 1
 - **Stamina:** 9
@@ -26026,17 +26026,17 @@ A reinforced metal shield embedded in the ground acts as cover for the creature 
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a pavise shield controlled by another creature can make a **Might test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a pavise shield controlled by another creature can make a **Might test**.
 >
-> - **≤11:** The creature controlling the shield retains control of it and can make an opportunity attack against the creature making the test.
+> - **≤11:** The creature controlling the shield retains control of it and can make an [opportunity attack](scc:mcdm.heroes.v1/rule.combat/opportunity-attack) against the creature making the test.
 > - **12-16:** The creature controlling the shield retains control of it.
 > - **17+:** The creature making the test grabs the shield and takes control of it.
 
 > ⭐️ **Controlling the Shield**
 >
-> While a creature has the pavise shield grabbed, they have cover and take half damage from abilities whose line of effect extends through the shield. The pavise shield takes the other half of the damage.
+> While a creature has the pavise shield grabbed, they have [cover](scc:mcdm.heroes.v1/rule.combat/cover) and take half damage from abilities whose line of effect extends through the shield. The pavise shield takes the other half of the damage.
 >
-> While a creature has a pavise shield grabbed, their speed is halved and they move the shield like a grabbed creature.
+> While a creature has a pavise shield grabbed, their speed is halved and they move the shield like a [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature.
 
 <!-- @type: dynamic-terrain -->
 ######### Snare Trap (Level 1 Trap Ambusher)
@@ -26049,10 +26049,10 @@ A rope snare is set to grab a target, leaving them hanging upside down.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a snare trap can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a snare trap can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the trap and is affected as if in its space.
-> - **12-16:** The trap is deactivated but the creature is slowed (EoT).
+> - **12-16:** The trap is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The trap is deactivated and doesn't trigger.
 
 > ❕ **Activate**
@@ -26071,15 +26071,15 @@ A rope snare is set to grab a target, leaving them hanging upside down.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** The target shifts 1 square away from the snare.
-> - **12-16:** 1 damage; A < 1 restrained (save ends)
-> - **17+:** 3 damage; A < 2 restrained (save ends)
+> - **≤11:** The target [shifts](scc:mcdm.heroes.v1/movement/shifting) 1 square away from the snare.
+> - **12-16:** 1 damage; A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 3 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** A creature restrained this way is vertical pulled 2 squares and suspended in the air by the snare line. On a successful save, the snare is cut or breaks and the creature falls to the ground. The snare must be manually reset.
+> **Effect:** A creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is vertical pulled 2 squares and suspended in the air by the snare line. On a successful [save](scc:mcdm.heroes.v1/rule.general/saving-throw), the snare is cut or breaks and the creature falls to the ground. The snare must be manually reset.
 
 > ⭐️ **Upgrade**
 >
-> **Net Trap (+1 EV)** The snare becomes a net that can wrap up multiple targets. The net has 3 Stamina and fills an area of 3 squares by 3 squares. The Snare ability loses its existing keywords, gains the Area keyword, and targets each creature or object in the area. The trap can be triggered by a target moving through one specific square, or by requiring multiple squares to be moved through. Any creature who makes their save to end the restrained effect ends that effect for all targets, who all fall to the ground.
+> **Net Trap (+1 EV)** The snare becomes a net that can wrap up multiple targets. The net has 3 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and fills an area of 3 squares by 3 squares. The Snare ability loses its existing keywords, gains the Area keyword, and targets each creature or object in the area. The trap can be triggered by a target moving through one specific square, or by requiring multiple squares to be moved through. Any creature who makes their [save](scc:mcdm.heroes.v1/rule.general/saving-throw) to end the [restrained](scc:mcdm.heroes.v1/condition/restrained) effect ends that effect for all targets, who all fall to the ground.
 
 > ⭐️ **Hidden**
 >
@@ -26097,10 +26097,10 @@ A pit dug into the ground is filled with spikes, and camouflaged to avoid detect
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a spike trap can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a spike trap can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the trap and is affected as if in its area.
-> - **12-16:** The trap is deactivated but the creature is slowed (EoT).
+> - **12-16:** The trap is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The trap is deactivated and doesn't trigger.
 
 > ❕ **Activate**
@@ -26119,9 +26119,9 @@ A pit dug into the ground is filled with spikes, and camouflaged to avoid detect
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; the target shifts 1 square away from the trap
-> - **12-16:** 4 damage; the target falls into the pit; A < 0 prone
-> - **17+:** 6 damage; the target falls into the pit; A < 1 prone; restrained (save ends)
+> - **≤11:** 3 damage; the target [shifts](scc:mcdm.heroes.v1/movement/shifting) 1 square away from the trap
+> - **12-16:** 4 damage; the target falls into the pit; A < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 6 damage; the target falls into the pit; A < 1 [prone](scc:mcdm.heroes.v1/condition/prone); [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** The target ends their movement when they enter the trap's area. The pit is typically 2 squares deep. The trap must be manually reset.
 
@@ -26149,7 +26149,7 @@ A spinning wooden column is affixed with sharp blades to slash the unwary.
 
 > ❕ **Activate**
 >
-> A creature or object moves adjacent to the column of blades.
+> A creature or object moves [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the column of blades.
 >
 > **Effect:** The **Spinning Blades** ability.
 
@@ -26164,14 +26164,14 @@ A spinning wooden column is affixed with sharp blades to slash the unwary.
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; M < 2 bleeding (save ends)
-> - **17+:** 9 damage; M < 3 bleeding (save ends)
+> - **12-16:** 6 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 9 damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 
 > ⭐️ **Upgrades**
 >
-> **Stone Column (+1 EV)** The column is made of stone and has 8 Stamina.
+> **Stone Column (+1 EV)** The column is made of stone and has 8 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
-> **Metal Column (+1 EV)** The column is made of metal and has 11 Stamina.
+> **Metal Column (+1 EV)** The column is made of metal and has 11 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
 > **Concealed (+1 EV)** The blades are concealed inside the column, which remains motionless until triggered.
 >
@@ -26186,12 +26186,12 @@ A spinning wooden column is affixed with sharp blades to slash the unwary.
 > **Trigger:** A creature or object moves within distance of the column.
 >
 > - **≤11:** 5 damage
-> - **12-16:** 8 damage; M < 2 dazed (save ends)
-> - **17+:** 11 damage; M < 3 dazed (save ends)
+> - **12-16:** 8 damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 11 damage; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 
 > ⭐️ **Allied Awareness**
 >
-> Allies who shift don't trigger the column. A creature observing an ally shift this way can make an **Intuition test** to shift in imitation of their movements.
+> Allies who [shift](scc:mcdm.heroes.v1/movement/shifting) don't trigger the column. A creature observing an ally [shift](scc:mcdm.heroes.v1/movement/shifting) this way can make an **Intuition test** to [shift](scc:mcdm.heroes.v1/movement/shifting) in imitation of their movements.
 >
 > **Power Roll + 2:**
 >
@@ -26211,15 +26211,15 @@ A concealed dart thrower hurls missiles at short range.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a dart trap can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a dart trap can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the trap and is targeted by it.
-> - **12-16:** The trap is deactivated but the creature is slowed (EoT).
+> - **12-16:** The trap is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The trap is deactivated and doesn’t trigger.
 
 > ❕ **Activate**
 >
-> A pressure plate, switch, or other linked trigger is activated.
+> A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Effect:** The **Dart** ability.
 
@@ -26229,7 +26229,7 @@ A concealed dart thrower hurls missiles at short range.
 > |----------------------------|------------------------------:|
 > | **📏 Ranged 5**            | **🎯 One creature or object** |
 >
-> **Trigger:** A pressure plate, switch, or other linked trigger is activated.
+> **Trigger:** A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Power Roll + 2:**
 >
@@ -26239,7 +26239,7 @@ A concealed dart thrower hurls missiles at short range.
 
 > ⭐️ **Upgrades**
 >
-> **Poison Darts (+2 EV)** The darts are tipped with poison. Any creature who takes damage from a dart also takes 1d6 poison damage at the start of each of their turns (save ends).
+> **Poison Darts (+2 EV)** The darts are tipped with poison. Any creature who takes damage from a dart also takes 1d6 poison damage at the start of each of their turns ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends).
 >
 > **Large Darts (+1 EV)** Larger, heavier darts impart kinetic force to the trap's attack. A target of the **Dart** ability is pushed 1 square on a tier 1 outcome, 2 squares on a tier 2 outcome, or 3 squares on a tier 3 outcome.
 >
@@ -26266,7 +26266,7 @@ This stone pillar can be toppled onto unsuspecting foes with the right amount of
 
 > ❕ **Activate**
 >
-> The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.
+> The pillar is destroyed, or a [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Effect:** The **Toppling Pillar** ability.
 
@@ -26276,19 +26276,19 @@ This stone pillar can be toppled onto unsuspecting foes with the right amount of
 > |----------------------------|--------------------------------------------:|
 > | **📏 4 x 1 line within 1** | **🎯 Each creature and object in the area** |
 >
-> **Trigger:** The pillar is destroyed, or a pressure plate, switch, or other linked trigger is activated.
+> **Trigger:** The pillar is destroyed, or a [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; M < 1 restrained (save ends)
-> - **17+:** 9 damage; M < 2 restrained (save ends)
+> - **12-16:** 6 damage; M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 9 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** The area is difficult terrain.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
 > ⭐️ **Upgrades**
 >
-> **Metal Pillar (+1 EV)** The pillar is made of metal, has 9 Stamina, and deals 1d6 extra damage.
+> **Metal Pillar (+1 EV)** The pillar is made of metal, has 9 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and deals 1d6 extra damage.
 >
 > **Multiple Pillars (+3 EV per additional pillar)** Multiple pillars can be used to represent a larger toppling object such as a wall. If triggered by destruction, all individual pillars need to be destroyed before the object falls.
 
@@ -26304,15 +26304,15 @@ A portcullis is hidden in the ceiling of a passage or choke point, waiting to dr
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a portcullis can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a portcullis can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the portcullis and is affected as if in its area.
-> - **12-16:** The portcullis is deactivated but the creature is slowed (EoT).
+> - **12-16:** The portcullis is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The portcullis is deactivated and doesn't trigger.
 
 > ❕ **Activate**
 >
-> A pressure plate, switch, or other linked trigger is activated.
+> A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Effect:** The **Heavy Gate** ability.
 
@@ -26322,15 +26322,15 @@ A portcullis is hidden in the ceiling of a passage or choke point, waiting to dr
 > |------------------|--------------------------------------------:|
 > | **📏 Special**   | **🎯 Each creature and object in the area** |
 >
-> **Trigger:** A pressure plate, switch, or other linked trigger is activated.
+> **Trigger:** A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Special:** The area of this ability is the area directly beneath the portcullis when it falls.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; slide 1, ignoring stability
-> - **12-16:** 7 damage; A < 2 restrained (save ends)
-> - **17+:** 10 damage; A < 3 restrained (save ends)
+> - **≤11:** 3 damage; slide 1, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability)
+> - **12-16:** 7 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 10 damage; A < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** The portcullis blocks movement from one side of it to the other. A target slid by the portcullis ends up on one side of it or the other (choose randomly). The portcullis must be manually reset.
 
@@ -26351,10 +26351,10 @@ This mechanism acts as a trigger for another linked mechanism, and is skillfully
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a pressure plate can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a pressure plate can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the pressure plate.
-> - **12-16:** The pressure plate is deactivated but the creature is slowed (EoT).
+> - **12-16:** The pressure plate is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The pressure plate is deactivated and doesn't trigger.
 
 > ❕ **Activate**
@@ -26382,21 +26382,21 @@ A counterweighted pulley system can be used to quickly ascend to the top of a wa
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a pulley can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a pulley can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the pulley.
-> - **12-16:** The pulley is deactivated but the creature is slowed (EoT).
+> - **12-16:** The pulley is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The pulley is deactivated and doesn't trigger.
 
 > ❕ **Activate**
 >
-> A creature adjacent to the pulley uses a maneuver to release the pulley.
+> A creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the pulley uses a maneuver to release the pulley.
 >
 > **Effect:** The triggering creature is lifted to the top of the structure the pulley is attached to. The pulley must be manually reset.
 
 > ⭐️ **Climbable**
 >
-> A creature adjacent to the pulley can climb its ropes with an **easy Agility test** to ascend to the top of the structure it's attached to.
+> A creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the pulley can climb its ropes with an **easy Agility test** to ascend to the top of the structure it's attached to.
 
 > ⭐️ **Upgrade**
 >
@@ -26415,15 +26415,15 @@ A heavy wooden ram drops down or swings into the fray, crushing all in its path.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a ram can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a ram can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the ram and is affected as if in its space.
-> - **12-16:** The ram is deactivated but the creature is slowed (EoT).
+> - **12-16:** The ram is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The ram is deactivated and doesn't trigger.
 
 > ❕ **Activate**
 >
-> A pressure plate, switch, or other linked trigger is activated.
+> A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Effect:** The **Ram** ability.
 
@@ -26433,13 +26433,13 @@ A heavy wooden ram drops down or swings into the fray, crushing all in its path.
 > |------------------|--------------------------------------------:|
 > | **📏 Special**   | **🎯 Each creature and object in the area** |
 >
-> **Trigger:** A pressure plate, switch, or other linked trigger is activated.
+> **Trigger:** A [pressure plate](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/pressure-plate), [switch](scc:mcdm.monsters.v1/dynamic-terrain.mechanisms/switch), or other linked trigger is activated.
 >
 > **Special:** The area of this ability is the path the ram moves through from its starting position.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; slide 1, ignoring stability
+> - **≤11:** 3 damage; slide 1, ignoring [stability](scc:mcdm.heroes.v1/rule.character/stability)
 > - **12-16:** 6 damage; push 3
 > - **17+:** 9 damage; push 5
 >
@@ -26447,9 +26447,9 @@ A heavy wooden ram drops down or swings into the fray, crushing all in its path.
 
 > ⭐️ **Upgrades**
 >
-> **Stone (+1 EV)** The ram is made of stone, has 6 Stamina per square, and deals an extra 1d3 damage.
+> **Stone (+1 EV)** The ram is made of stone, has 6 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per square, and deals an extra 1d3 damage.
 >
-> **Metal (+2 EV)** The ram is made of metal, has 9 Stamina per square, and deals an extra 1d6 damage.
+> **Metal (+2 EV)** The ram is made of metal, has 9 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) per square, and deals an extra 1d6 damage.
 >
 > **Repeating (+1 EV)** The ram automatically resets at the start of each round.
 >
@@ -26473,15 +26473,15 @@ Set into any surface, this mechanism acts as a trigger for another linked mechan
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a switch can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a switch can make an **Agility test**.
 >
 > - **≤11:** The creature triggers the switch.
-> - **12-16:** The switch is deactivated but the creature is slowed (EoT).
+> - **12-16:** The switch is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The switch is deactivated and doesn't trigger.
 
 > ❕ **Activate**
 >
-> A creature adjacent to the switch uses a maneuver to trigger it.
+> A creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the switch uses a maneuver to trigger it.
 >
 > **Effect:** The linked mechanism is activated. A switch automatically resets and can be triggered repeatedly.
 
@@ -26536,7 +26536,7 @@ A massive humming crystal makes the air around it feel thick.
 >
 > **Trigger:** The shard is destroyed.
 >
-> **Effect:** The shard releases a shockwave channeled through each creature affected by Psionic Barrier. Each ally in the encounter is dazed until the end of their next turn.
+> **Effect:** The shard releases a shockwave channeled through each creature affected by Psionic Barrier. Each ally in the encounter is [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their next turn.
 
 <!-- @type: dynamic-terrain -->
 ######### Tree of Might (Level 5 Hazard Hexer)
@@ -26554,11 +26554,11 @@ A gnarled tree has unearthed roots that writhe and curl.
 
 > ⭐️ **Tree's Nourishment**
 >
-> At the start of each round while the tree of might is intact, each enemy touching the ground in the encounter area who has M < 0 takes 10 corruption damage, and the tree of might grows a fruit. The potency increases by 1 each subsequent round.
+> At the start of each round while the tree of might is intact, each enemy touching the ground in the encounter area who has M < 0 takes 10 corruption damage, and the tree of might grows a fruit. The [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 each subsequent round.
 
 > ⭐️ **Mighty Fruit**
 >
-> Once per round, any creature adjacent to the tree of might can take a fruit from the tree and eat it (no action required). The creature gains 10 temporary Stamina and has their Might score increased by 1 (to a maximum of 6) until the end of the encounter.
+> Once per round, any creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the tree of might can take a fruit from the tree and eat it (no action required). The creature gains 10 [temporary Stamina](scc:mcdm.heroes.v1/rule.health/temporary-stamina) and has their Might score increased by 1 (to a maximum of 6) until the end of the encounter.
 
 <!-- @type: monster-group | @domain: dynamic-terrain | @category: siege-engines -->
 ### Siege Engines
@@ -26567,9 +26567,9 @@ Siege engines are powerful weapons that require a team of creatures to operate a
 
 #### Adjacent Creature Main Actions
 
-Rather than siege engines taking actions on their own, a creature adjacent to the siege engine can use a main action to activate a siege engine ability noted as "Main action (Adjacent creature)." In addition to their primary attack, some siege engines require an adjacent creature main action to reload them once they are used, while others have adjacent creature main actions allowing them to be moved or allowing a creature to improve the engine's distance and accuracy.
+Rather than siege engines taking actions on their own, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the siege engine can use a main action to activate a siege engine ability noted as "Main action (Adjacent creature)." In addition to their primary attack, some siege engines require an adjacent creature main action to reload them once they are used, while others have adjacent creature main actions allowing them to be moved or allowing a creature to improve the engine's distance and accuracy.
 
-Multiple minions in a squad can activate different aspects of a siege engine using adjacent creature main actions.
+Multiple [minions](scc:mcdm.monsters.v1/rule.organization/minion) in a [squad](scc:mcdm.monsters.v1/rule.monster/squad) can activate different aspects of a siege engine using adjacent creature main actions.
 
 <!-- @type: dynamic-terrain -->
 ######### Arrow Launcher (Level 2 Siege Engine Artillery)
@@ -26582,10 +26582,10 @@ A small wooden cart uses alchemical rockets to launch up to a hundred arrows at 
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to an arrow launcher can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an arrow launcher can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Arrow Storm** ability.
-> - **12-16:** The arrow launcher is deactivated but the creature is slowed (EoT).
+> - **12-16:** The arrow launcher is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The arrow launcher is deactivated and can't be used.
 
 > 🔳 **Arrow Storm**
@@ -26640,9 +26640,9 @@ A small wooden cart uses alchemical rockets to launch up to a hundred arrows at 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; R < 0 dazed (save ends)
-> - **12-16:** 8 damage; R < 1 dazed (save ends)
-> - **17+:** 11 damage; R < 2 frightened (save ends)
+> - **≤11:** 5 damage; R < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 8 damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 11 damage; R < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** This ability can't be used again until the arrow launcher is reloaded.
 
@@ -26657,10 +26657,10 @@ A large cauldron of boiling oil stands ready to be poured onto enemies.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a boiling oil cauldron can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a boiling oil cauldron can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Boiling Oil** ability.
-> - **12-16:** The boiling oil cauldron is deactivated but the creature is slowed (EoT).
+> - **12-16:** The boiling oil cauldron is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The boiling oil cauldron is deactivated and can't be used.
 
 > 🔳 **Boiling Oil**
@@ -26671,11 +26671,11 @@ A large cauldron of boiling oil stands ready to be poured onto enemies.
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 fire damage; M < 1 burning (save ends)
-> - **12-16:** 9 fire damage; M < 2 burning (save ends)
-> - **17+:** 12 fire damage; M < 3 burning (save ends)
+> - **≤11:** 5 fire damage; M < 1 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 9 fire damage; M < 2 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 12 fire damage; M < 3 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
-> **Effect:** If the boiling oil is poured down on targets from above, it has high ground and gains an edge on the power roll. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can't be used again until the boiling oil cauldron is reloaded.
+> **Effect:** If the boiling oil is poured down on targets from above, it has [high ground](scc:mcdm.heroes.v1/movement/high-ground) and gains an edge on the power roll. A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can't be used again until the boiling oil cauldron is reloaded.
 
 > ⭐️ **Reload**
 >
@@ -26696,10 +26696,10 @@ This massive counterweighted engine hurls a heavy projectile for a devastating a
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a catapult can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a catapult can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Arcing Shot** ability.
-> - **12-16:** The catapult is deactivated but the creature is slowed (EoT).
+> - **12-16:** The catapult is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The catapult is deactivated and can't be used.
 
 > 🔳 **Arcing Shot**
@@ -26757,10 +26757,10 @@ A massive wooden wheel is loaded with explosives and rolled toward enemy forces 
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to an exploding mill wheel that isn't rolling can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an exploding mill wheel that isn't rolling can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Roll the Wheel** ability.
-> - **12-16:** The exploding mill wheel is deactivated but the creature is slowed (EoT).
+> - **12-16:** The exploding mill wheel is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The exploding mill wheel is deactivated and can't be used.
 >
 > Once the wheel is rolling, it can't be deactivated. However, it can be exploded early by destroying it or blocking its movement with a suitably large creature or object.
@@ -26771,7 +26771,7 @@ A massive wooden wheel is loaded with explosives and rolled toward enemy forces 
 > |----------------|--------------------------------------------:|
 > | **📏 Special** | **🎯 Each creature and object in the area** |
 >
-> **Effect:** When this ability is used and at the start of every turn thereafter, the exploding mill wheel rolls, moving 2 squares in a straight line. Each creature and object of size 2 or smaller in the area defined by the wheel's movement is targeted by the following power roll. A target force moved this way is moved to either side of the wheel, as the Director determines.
+> **Effect:** When this ability is used and at the start of every turn thereafter, the exploding mill wheel rolls, moving 2 squares in a straight line. Each creature and object of size 2 or smaller in the area defined by the wheel's movement is targeted by the following power roll. A target [force moved](scc:mcdm.heroes.v1/movement/forced-movement) this way is moved to either side of the wheel, as the Director determines.
 >
 > **Power Roll + 2:**
 >
@@ -26779,17 +26779,17 @@ A massive wooden wheel is loaded with explosives and rolled toward enemy forces 
 > - **12-16:** 9 damage; push 2
 > - **17+:** 12 damage; push 3
 >
-> If the wheel enters the space of any creature or object of size 3 or larger, or if it is reduced to 0 Stamina, its movement stops and it explodes. Each creature and object in a 5 burst centered on the wheel is targeted by the following power roll.
+> If the wheel enters the space of any creature or object of size 3 or larger, or if it is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), its movement stops and it explodes. Each creature and object in a 5 burst centered on the wheel is targeted by the following power roll.
 >
-> - **≤11:** 5 damage; push 1; M < 0 burning (save ends)
-> - **12-16:** 9 damage; push 2; M < 1 burning (save ends)
-> - **17+:** 12 damage; push 3; M < 2 burning (save ends)
+> - **≤11:** 5 damage; push 1; M < 0 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 9 damage; push 2; M < 1 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 12 damage; push 3; M < 2 burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round.
 
 > ⭐️ **Upgrade**
 >
-> **Piloted (+4 EV)** The wheel has been fitted with a control mechanism and a pilot's seat for a creature of size 1M or smaller. As a move action, the pilot can turn the wheel in any direction while it is moving. As a main action, the pilot can leap out of the pilot's seat, landing in an adjacent space while the wheel continues moving in a straight line.
+> **Piloted (+4 EV)** The wheel has been fitted with a control mechanism and a pilot's seat for a creature of size 1M or smaller. As a move action, the pilot can turn the wheel in any direction while it is moving. As a main action, the pilot can leap out of the pilot's seat, landing in an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) space while the wheel continues moving in a straight line.
 >
 > Without proper training, determining how to pilot the wheel requires a **Reason test**.
 >
@@ -26810,10 +26810,10 @@ A massive crossbow fires thick metal bolts with devastating effect.
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to a field ballista can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a field ballista can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Release Bolt** ability.
-> - **12-16:** The field ballista is deactivated but the creature is slowed (EoT).
+> - **12-16:** The field ballista is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The field ballista is deactivated and can't be used.
 
 > 🏹 **Release Bolt**
@@ -26869,8 +26869,8 @@ A massive crossbow fires thick metal bolts with devastating effect.
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; M < 1 slowed (save ends)
-> - **17+:** 10 damage; M < 2 slowed (save ends)
+> - **12-16:** 7 damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 10 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** This ability can't be used again until the field ballista is reloaded.
 >
@@ -26880,7 +26880,7 @@ A massive crossbow fires thick metal bolts with devastating effect.
 > |----------------------------|------------------------------------:|
 > | **📏 Ranged 20**           |                 **🎯 One creature** |
 >
-> **Special:** The target must be slowed by the field ballista.
+> **Special:** The target must be [slowed](scc:mcdm.heroes.v1/condition/slowed) by the field ballista.
 >
 > **Power Roll + 2:**
 >
@@ -26888,7 +26888,7 @@ A massive crossbow fires thick metal bolts with devastating effect.
 > - **12-16:** Pull
 > - **17+:** 3 Pull 5
 >
-> **Effect:** This forced movement triggers opportunity attacks.
+> **Effect:** This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) triggers [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 
 <!-- @type: dynamic-terrain -->
 ######### Iron Dragon (Level 4 Siege Engine Artillery)
@@ -26901,10 +26901,10 @@ A massive metal device uses a bellows system and liquid fuel to shoot out gouts 
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to an iron dragon can make an **Agility test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an iron dragon can make an **Agility test**.
 >
 > - **≤11:** The creature accidentally activates the **Gout of Flame** ability.
-> - **12-16:** The iron dragon is deactivated but the creature is slowed (EoT).
+> - **12-16:** The iron dragon is deactivated but the creature is [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 > - **17+:** The iron dragon is deactivated and can't be used.
 
 > 🔳 **Gout of Flame**
@@ -26915,9 +26915,9 @@ A massive metal device uses a bellows system and liquid fuel to shoot out gouts 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 fire damage; A < 0 the target is burning (save ends)
-> - **12-16:** 10 fire damage; A < 1 the target is burning (save ends)
-> - **17+:** 13 fire damage; A < 2 the target is burning (save ends)
+> - **≤11:** 6 fire damage; A < 0 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **12-16:** 10 fire damage; A < 1 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
+> - **17+:** 13 fire damage; A < 2 the target is burning ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends)
 >
 > **Effect:** A burning creature takes 1d6 fire damage at the start of each of their turns. A burning object takes 1d6 fire damage at the end of each round. This ability can't be used again until the iron dragon is reloaded.
 
@@ -26948,7 +26948,7 @@ A massive metal device uses a bellows system and liquid fuel to shoot out gouts 
 <!-- @type: dynamic-terrain -->
 ######### Watchtower (Level 2 Fortification Defender)
 
-A sturdy wooden tower accessed by interior ladders or stairs provides cover and high ground for attackers.
+A sturdy wooden tower accessed by interior ladders or stairs provides [cover](scc:mcdm.heroes.v1/rule.combat/cover) and [high ground](scc:mcdm.heroes.v1/movement/high-ground) for attackers.
 
 - **EV:** 8
 - **Stamina:** 50
@@ -26960,11 +26960,11 @@ A sturdy wooden tower accessed by interior ladders or stairs provides cover and 
 
 > ⭐️ **High Ground and Cover**
 >
-> Creatures who have access to the watchtower's interior ladders or stairs have high ground and cover against creatures outside the watchtower.
+> Creatures who have access to the watchtower's interior ladders or stairs have [high ground](scc:mcdm.heroes.v1/movement/high-ground) and [cover](scc:mcdm.heroes.v1/rule.combat/cover) against creatures outside the watchtower.
 
 > 🌀 **Getting Inside**
 >
-> A creature outside and adjacent to the watchtower can gain access to the interior by climbing it as an **Agility test** or breaking into it with a **Might test**.
+> A creature outside and [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the watchtower can gain access to the interior by climbing it as an **Agility test** or breaking into it with a **Might test**.
 >
 > - **≤11:** 1d6 damage; the creature remains outside the watchtower
 > - **12-16:** The creature remains outside the watchtower.
@@ -26972,15 +26972,15 @@ A sturdy wooden tower accessed by interior ladders or stairs provides cover and 
 
 > ⭐️ **Upgrades**
 >
-> **Ballista Emplacement (+12 EV)** The watchtower is equipped with a field ballista that can be used by creatures in the watchtower. The ballista can't be moved.
+> **Ballista Emplacement (+12 EV)** The watchtower is equipped with a [field ballista](scc:mcdm.monsters.v1/dynamic-terrain.siege-engines/field-ballista) that can be used by creatures in the watchtower. The ballista can't be moved.
 >
-> **Boiling Oil Cauldron (+17 EV)** The watchtower is equipped with a boiling oil cauldron that can be used by creatures in the watchtower.
+> **Boiling Oil Cauldron (+17 EV)** The watchtower is equipped with a [boiling oil cauldron](scc:mcdm.monsters.v1/dynamic-terrain.siege-engines/boiling-oil-cauldron) that can be used by creatures in the watchtower.
 >
 > **Spyglass (+2 EV)** Any creature in the watchtower can use the spyglass to search for hidden creatures around the tower, gaining an edge on the Intuition test and increasing the distance at which creatures can be spotted to 15 squares.
 >
-> **Stone Tower (+2 EV)** The watchtower is reinforced with stone and has 75 Stamina.
+> **Stone Tower (+2 EV)** The watchtower is reinforced with stone and has 75 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
-> **Iron Tower (+4 EV)** The watchtower is reinforced with stone and iron and has 100 Stamina.
+> **Iron Tower (+4 EV)** The watchtower is reinforced with stone and iron and has 100 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 <!-- @type: monster-group | @domain: dynamic-terrain | @category: supernatural-objects -->
 ### Supernatural Objects
@@ -27002,7 +27002,7 @@ A foreboding obelisk shaped of dark stone harrows the minds and spirits of those
 
 > 🌀 **Deactivate**
 >
-> As a maneuver, a creature adjacent to the black obelisk can make a **Reason test**.
+> As a maneuver, a creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the black obelisk can make a **Reason test**.
 >
 > - **≤11:** The creature accidentally activates the **Your Fears Become Manifest** ability, which gains an edge.
 > - **12-16:** The creature must make another test to deactivate the obelisk. If they obtain this outcome a second time, they accidentally activate **Your Fears Become Manifest**.
@@ -27024,9 +27024,9 @@ A foreboding obelisk shaped of dark stone harrows the minds and spirits of those
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** P < 1 slowed (EoT)
-> - **12-16:** P < 2 slowed and weakened (EoT)
-> - **17+:** P < 3 frightened, slowed, and weakened (EoT)
+> - **≤11:** P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **12-16:** P < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
+> - **17+:** P < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened), [slowed](scc:mcdm.heroes.v1/condition/slowed), and [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
 >
 > **Effect:** The target is pushed 2 squares.
 
@@ -27041,19 +27041,19 @@ This unnatural object twists space around it in a reflection of its own unnatura
 
 > 🌀 **Deactivate**
 >
-> A creature who has the Psionics skill can deactivate and take control of the chronal hypercube by making a **Reason test** while within 10 squares of the hypercube.
+> A creature who has the [Psionics](scc:mcdm.heroes.v1/skill.lore/psionics) skill can deactivate and take control of the chronal hypercube by making a **Reason test** while within 10 squares of the hypercube.
 >
 > - **≤11:** The creature takes 1d6 psychic damage.
 > - **12-16:** The creature fails to deactivate the hypercube.
-> - **17+:** The hypercube teleports adjacent to the creature at the start of the next round and becomes an ally to the creature and their allies.
+> - **17+:** The hypercube [teleports](scc:mcdm.heroes.v1/movement/teleport) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the creature at the start of the next round and becomes an ally to the creature and their allies.
 
 > ⭐️ **Dimensional Flicker**
 >
-> At the start of each round while the hypercube is present, roll a d10. On a 7 or higher, the hypercube teleports to a square of one ally's choice within 10 squares and is hidden. While the hypercube is hidden, Psionics is the only skill that can be applied to a test made to find it.
+> At the start of each round while the hypercube is present, roll a d10. On a 7 or higher, the hypercube [teleports](scc:mcdm.heroes.v1/movement/teleport) to a square of one ally's choice within 10 squares and is hidden. While the hypercube is hidden, [Psionics](scc:mcdm.heroes.v1/skill.lore/psionics) is the only skill that can be applied to a test made to find it.
 
 > ⭐️ **Chronal Superhighway**
 >
-> Any ally within 10 squares of the hypercube can teleport when they move. An ally who teleports gains an edge on the next power roll they make.
+> Any ally within 10 squares of the hypercube can [teleport](scc:mcdm.heroes.v1/movement/teleport) when they move. An ally who [teleports](scc:mcdm.heroes.v1/movement/teleport) gains an edge on the next power roll they make.
 
 <!-- @type: dynamic-terrain -->
 ######### The Throne of A'An (Level 4 Relic Controller)
@@ -27082,7 +27082,7 @@ The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, 
 
 > ⭐️ **Sitting on the Throne**
 >
-> Only a creature attuned to the throne can sit on it. A creature adjacent to the throne can use a main action to attune to it by succeeding on a **Presence test**.
+> Only a creature attuned to the throne can sit on it. A creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the throne can use a main action to attune to it by succeeding on a **Presence test**.
 >
 > - **≤11:** The creature takes 11 fire damage.
 > - **12-16:** The creature fails to attune to the throne.
@@ -27092,7 +27092,7 @@ The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, 
 >
 > - The hierophant and each of their allies within 10 squares of the throne have fire immunity 10.
 > - The hierophant and each of their allies within 10 squares of the throne can choose to have their abilities deal fire damage instead of their usual damage.
-> - The hierophant has a +5 bonus to stability, and any strike made against them takes a bane unless the attacker is also attuned to the throne.
+> - The hierophant has a +5 bonus to [stability](scc:mcdm.heroes.v1/rule.character/stability), and any strike made against them takes a bane unless the attacker is also attuned to the throne.
 > - The hierophant can use the **Primordial Flare** and **Solar Accretion** abilities.
 
 > 🏹 **Primordial Flare**
@@ -27115,9 +27115,9 @@ The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, 
 > |-------------------|--------------------------:|
 > | **📏 Ranged 10**  |       **🎯 One creature** |
 >
-> **Trigger:** A target within distance is made winded or is reduced to 0 Stamina by fire damage.
+> **Trigger:** A target within distance is made [winded](scc:mcdm.heroes.v1/rule.health/winded) or is reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by fire damage.
 >
-> **Effect:** If the hierophant is a hero, they gain 3 of their Heroic Resource. If the hierophant is a Director-controlled creature, the Director gains 3 Malice.
+> **Effect:** If the hierophant is a hero, they gain 3 of their Heroic Resource. If the hierophant is a Director-controlled creature, the Director gains 3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 > ❗️ **Nova**
 >
@@ -27142,7 +27142,7 @@ The throne of A'An, sun god of the Antical Protectorate in what is now Vanigar, 
 > **Drawback:** You have cold weakness 5. Whenever you finish a respite and you have not recruited a new disciple of A'An since your last respite, make a **Presence test**.
 >
 > - **≤11:** A'An possesses your body until your next respite. You now must roleplay A'An trapped in your form, prioritizing earning new disciples.
-> - **12-16:** You lose a Recovery.
+> - **12-16:** You lose a [Recovery](scc:mcdm.heroes.v1/rule.health/recoveries).
 > - **17+:** You suffer no effect
 
 <!-- @type: chapter | @id: retainers -->
