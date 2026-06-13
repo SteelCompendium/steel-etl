@@ -99,10 +99,31 @@ re-parse), reuses the ability-card grammar (each feature becomes
 alongside the statblock/ability rewriters. See the design spec:
 `docs/superpowers/specs/2026-06-12-featureblock-cards-design.md`.
 
-**Plan 2 scope:** featureblock and dynamic-terrain pages only — the renderer is live for
-all existing featureblocks (malice, terrain) and for Summoner fixtures (which already
-route here). Retainer-advancement split, beastheart companion-advancement cards, and any
-remaining Summoner fixture edge cases are Plans 3–5.
+**Plan 2 scope:** featureblock and dynamic-terrain pages only.
+
+### Fixture routing (Plan 3)
+
+Summoner **fixture** statblocks (`statblock_kind: fixture`) are diverted from the
+creature JSON island to the Forged Band featureblock card at build time via
+`internal/site/fixture_page.go`. `buildStatblockIslandPage` returns `false` early for
+fixtures, and `buildSection` dispatches `buildFixturePage` next. The adapter:
+
+- reads `stamina`/`size` frontmatter (set by Plan 1's `applyFixtureGrid`) → loose header stats
+- reads `role`/`terrain_type` → eyebrow (e.g. "Fortification · Defender")
+- parses body blockquote features with the shared `content.ParseRichFeatures` (no body
+  re-parse of frontmatter; same parser as featureblock/terrain — icon-keeping, raw `.md`
+  links, advancement-level attachment via `fbLevelLabelRe`)
+- calls `renderFeatureblockCard` (no new renderer — full code reuse)
+
+`renderFbFeats` was updated to group features by `Level > 0` into `.fb__band--adv`
+bands (backward-compatible: existing featureblock/terrain features have `Level: 0` and
+emit no band). Each band opens with a `.fb__adv-head` sub-head ("Level N Advancement"),
+role-tinted via `--role`. CSS in `v2/docs/stylesheets/steel-featureblock.css`.
+
+Cross-ref: `internal/site/featureblock_page.go` (shared renderer + `renderFbFeats`).
+
+**No data/schema/SCC change** — fixture fields already landed in Plan 1. Plans 4–5
+(retainer-advancement split, companion cards) remain.
 
 ## Summoner book reuse
 
