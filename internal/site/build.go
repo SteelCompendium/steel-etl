@@ -249,6 +249,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			data = island
 		}
 
+		// Featureblock / dynamic-terrain pages → the High-Fantasy Steel
+		// .fb-wrap "Forged Band" card (build-time HTML, frontmatter-driven).
+		// Site-only; runs before injectH1 like the cards above.
+		if card, ok := buildFeatureblockPage(data); ok {
+			data = card
+		}
+
 		// Inject h1 header from frontmatter "name" field if the body lacks one
 		data = injectH1(data)
 
