@@ -1087,6 +1087,11 @@ var typeTitles = map[string]string{
 	"treasure":     "Treasures",
 	"ability":      "Abilities",
 	"trait":        "Traits",
+	"rule":         "Rules",
+	"monster":      "Monsters",
+	"negotiation":  "Negotiations",
+	"god":          "Gods and Religion",
+	"project":      "Downtime Projects",
 }
 
 // generateIndexPages creates index.md files for type directories within sections.
