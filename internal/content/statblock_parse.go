@@ -302,7 +302,10 @@ func featureTableRows(lines []string) [][2]string {
 }
 
 func stripBold(s string) string {
-	return strings.TrimSpace(strings.ReplaceAll(s, "**", ""))
+	// Also strip scc links: stripBold feeds the structured ability-table cells
+	// (keywords / usage, and via cleanIconCell distance / target), which are stored
+	// link-free even if the source links a term inside a cell (e.g. "Triggered Action").
+	return linkDisplay(strings.TrimSpace(strings.ReplaceAll(s, "**", "")))
 }
 
 // cleanIconCell removes bold markers and a leading 📏/🎯 icon from a cell.

@@ -2,6 +2,7 @@ package content
 
 import (
 	"reflect"
+	"strings"
 	"testing"
 )
 
@@ -211,6 +212,34 @@ func TestParseStatblockFeature_LinkedTitle_FieldsAreLinkFree(t *testing.T) {
 	}
 	if sig[0]["ability_type"] != "Signature Ability" {
 		t.Errorf("ability_type = %v, want 'Signature Ability' (link-free)", sig[0]["ability_type"])
+	}
+}
+
+// The ability-table cells (keywords / usage / distance / target) are structured
+// fields and must be link-free even when the source links a term inside them
+// (e.g. a linked "Triggered Action" in the usage cell).
+func TestParseStatblockFeature_LinkedTableCells_AreLinkFree(t *testing.T) {
+	block := "> 🩸 **Blood Drain**\n" +
+		">\n" +
+		"> | **[Magic](scc:mcdm.heroes.v1/x), Strike** | **Free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action)** |\n" +
+		"> |---|---|\n" +
+		"> | **📏 [Melee](scc:mcdm.heroes.v1/x) 1** | **🎯 One creature** |\n" +
+		">\n" +
+		"> The target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding).\n"
+	got := ParseStatblockFeatures(block)
+	if len(got) != 1 {
+		t.Fatalf("got %d, want 1", len(got))
+	}
+	if u, _ := got[0]["usage"].(string); strings.Contains(u, "scc:") {
+		t.Errorf("usage = %q, want link-free", u)
+	}
+	if d, _ := got[0]["distance"].(string); strings.Contains(d, "scc:") {
+		t.Errorf("distance = %q, want link-free", d)
+	}
+	for _, k := range got[0]["keywords"].([]string) {
+		if strings.Contains(k, "scc:") {
+			t.Errorf("keyword %q contains a link, want link-free", k)
+		}
 	}
 }
 
