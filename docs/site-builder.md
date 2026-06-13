@@ -37,6 +37,11 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
   field the pipeline assigns in document order. Intra-book links are rewritten to the
   per-book folder.
 - **Natural sort**: numeric-aware ordering in generated index pages (Level 1, 2, ... 10).
+- **Nav titles**: each generated type-directory index (`generateIndexesRecursive`) also
+  writes a sibling `.nav.yml` with `title: <dirToTitle(name)>`, so awesome-nav labels the
+  Browse nav with the same display title as the index H1 (the pluralized `typeTitles`
+  map — "Ancestries", "Careers", "Classes") instead of title-casing the singular SCC type
+  slug. `title:` only; sort/other options inherit from the section-root `.nav.yml`.
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one.
 - **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages.
 - **Static content overrides**: copies hand-authored pages last, overriding generated content.

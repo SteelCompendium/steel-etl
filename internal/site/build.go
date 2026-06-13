@@ -1156,6 +1156,17 @@ func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
 		count++
 	}
 
+	// Emit a .nav.yml so awesome-nav labels this directory with the same
+	// display title as the index H1 (dirToTitle) instead of title-casing the
+	// raw SCC type slug — e.g. "Ancestries"/"Careers"/"Classes" in the nav,
+	// not the singular "Ancestry"/"Career"/"Class". Only `title:` is set; sort
+	// and other options inherit from the section-root .nav.yml.
+	navPath := filepath.Join(dir, ".nav.yml")
+	navContent := "title: " + yamlScalar(dirToTitle(filepath.Base(dir))) + "\n"
+	if err := os.WriteFile(navPath, []byte(navContent), 0644); err != nil {
+		errs = append(errs, fmt.Sprintf("write nav %s: %v", navPath, err))
+	}
+
 	return count, errs
 }
 
