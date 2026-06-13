@@ -5,10 +5,13 @@ Originally generated from `classification.json`; now **manually curated and cano
 **Total linkable terms:** 582 (Heroes book, `mcdm.heroes.v1`).
 
 > **Other books.** This table is the Heroes-book term set, used for **cross-book**
-> links from any book. The **Summoner book**'s own 221 terms (class, features,
-> abilities, statblocks, treasures, titles) live in
-> `docs/summoner-linking-reference.md`. When linking the Summoner source, use that
-> file for `mcdm.summoner.v1/*` targets and this file for `mcdm.heroes.v1/*` targets.
+> links from any book. Each other book's own terms live in its own reference file:
+> the **Summoner book**'s 221 terms in `docs/summoner-linking-reference.md`, and the
+> **Monsters book**'s 632 terms (the `rule.{monster,role,organization,keyword}`
+> glossary, monster groups, ~480 statblocks, malice featureblocks, dynamic terrain,
+> retainers) in `docs/monsters-linking-reference.md`. When linking a book's source,
+> use that book's file for its own `mcdm.<book>.v1/*` targets and this file for
+> `mcdm.heroes.v1/*` cross-book targets.
 
 ## Classes (9 terms)
 

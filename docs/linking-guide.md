@@ -3,9 +3,41 @@
 Instructions for adding scc: cross-reference links to the input document
 (`input/heroes/Draw Steel Heroes.md`). Designed to be picked up by any AI
 session and followed step by step. The same rules apply to the other books'
-sources; the **Summoner book** has its own term table at
-`docs/summoner-linking-reference.md` (cross-book links to Heroes still use the
-table in `docs/linking-reference.md`).
+sources; the **Summoner book** and **Monsters book** each have their own term
+table (`docs/summoner-linking-reference.md`, `docs/monsters-linking-reference.md`);
+cross-book links to Heroes always use the table in `docs/linking-reference.md`.
+
+> **2026-06-12 — Monsters book linked (done).** Full sweep of
+> `input/monsters/Draw Steel Monsters.md` (~29,100 lines): **5,948 inline `scc:`
+> links** (4,759 cross-book to Heroes, 1,189 internal `mcdm.monsters.v1`). Covers
+> the Monster Basics chapter, all ~50 creature groups (lore + malice featureblocks
+> + ~480 statblocks across echelons), Dynamic Terrain, and Retainers.
+> Done in 13 section batches (FOLLOWUPS #5 direction 1; the plan is
+> `docs/superpowers/plans/2026-06-12-monsters-content-linking.md`).
+>
+> **New monster rule-glossary (minted first, Phase 0).** The Monster Basics chapter
+> had no rule codes of its own, so its pervasive vocabulary was minted as
+> `rule.<group>/<term>` codes (591 → 632 monster codes, +41): **`rule.monster/*`**
+> (malice, encounter-value, creature-free-strike, monster-trait, end-effect,
+> villain-action, keyword, squad, captain), **`rule.organization/*`** (minion, horde,
+> platoon, elite, leader, solo), **`rule.role/*`** (the 9 creature roles), and
+> **`rule.keyword/*`** (17 general creature keywords). Decision record:
+> `docs/monster-rule-mapping.md`. Terms that already had a Heroes target
+> (Signature Ability, conditions, movement, characteristics, etc.) link cross-book
+> rather than minting a duplicate.
+>
+> **Statblock parser fully hardened against link-wrapping.** Beyond `sbPowerRollRe`
+> (the labeled `**Power Roll + N:**` header), the title path now strips links from
+> the structured **name / cost / ability_type** fields (a markdown link's own `)`
+> otherwise breaks the cost-paren split) and `stripBold` strips links from the
+> **ability-table cells** (keywords / usage / distance / target). So effect/tier
+> VALUES keep their links verbatim while every structured field stays link-free.
+> **Statblock linking rules:** link trait/ability effect + tier PROSE (conditions,
+> movement, forced movement, combat terms, glossary); never link the
+> `**Power Roll + N:**` header line or the 4-row creature stat-grid label cells;
+> `condition/<x>` (NOT `rule.combat/<x>`) is the correct condition code form.
+> **Validation:** build with `gen --all`; the WARN baseline is now **0** (the old
+> beastheart stale-skill baseline is gone), so the gate is simply 0 WARN.
 
 > **2026-06-11 — Summoner book linked (done).** Full sweep of
 > `input/summoner/Draw Steel Summoner.md`: **1,464 inline `scc:` links** (1,292

@@ -116,7 +116,11 @@ regardless.
 
 Some flat glossaries nest one level via an `@group` annotation that `Classify`
 joins with a dot: `rule.<group>/<term>` (`RuleParser`) and **`skill.<group>/<item>`**
-(`SkillParser`, added 2026-06-08). Each skill group also has a **group-landing
+(`SkillParser`, added 2026-06-08). The Heroes book's `rule.<group>` covers dice /
+character / health / resource / combat / damage / test / downtime / negotiation /
+treasure / world / general; the **Monsters book** adds its own
+`rule.{monster,role,organization,keyword}` glossary (minted 2026-06-12 from the
+Monster Basics chapter — see `docs/monster-rule-mapping.md`). Each skill group also has a **group-landing
 page `skill.group/<group>`** (e.g. `skill.group/crafting`) emitted by the
 **`skill-group`** parser (`internal/content/skill_group.go`) so prose can link to
 "the <group> skill group". The container pushes no path context; child skills get
@@ -173,7 +177,7 @@ Full reference — deep headings, SCC hierarchy, parsing, summoner reuse: [`docs
 
 - ⚠️ **H7/H9 headings.** The Monsters book uses H7 for statblocks and H9 for malice/terrain blocks (beyond CommonMark's H6 cap); `collectDeepHeadings` captures them at level 6, **H8 is deliberately not collected** (retainer advancement folds into the parent body, demoted to bold labels by `demoteOverflowHeadings`).
 - ⚠️ **Code≠path.** SCC codes keep their `.statblock` segment (`monster.<category>.statblock/<id>`), but the site URL **hoists `statblock/` away** (`hoistStatblockPath`) so Browse pages sit directly under the group.
-- Summoner statblock trees (`minion`/`fixture`/`champion`/`rival`/`retainer.summoner`) reuse the monsters machinery and are fully link-swept; the statblock parser is hardened against `scc:` link-wrapping.
+- Both the **Monsters** book (link-swept 2026-06-12) and the Summoner statblock trees (`minion`/`fixture`/`champion`/`rival`/`retainer.summoner`) are fully link-swept. The statblock parser is hardened against `scc:` link-wrapping on **every** structured field: `sbPowerRollRe` (labeled power-roll header), the title `name`/`cost`/`ability_type` split, and the ability-table cells (`keywords`/`usage`/`distance`/`target`, via `stripBold`) — effect/tier VALUES keep their links verbatim, all structured fields are stored link-free. Never link the `**Power Roll + N:**` header line or the 4-row creature stat-grid label cells in source.
 - Known gap: fixture statblocks' 2-column stat grid isn't parsed into `size`/`stamina` (workspace `FOLLOWUPS.md` #6).
 
 ## Architecture
