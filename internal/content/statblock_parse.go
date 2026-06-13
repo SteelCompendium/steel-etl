@@ -176,7 +176,11 @@ func parseOneFeature(block string) map[string]any {
 		return nil
 	}
 	icon := strings.TrimSpace(m[1])
-	name := strings.TrimSpace(m[2])
+	// Strip any scc links from the title before splitting: name/cost/ability_type are
+	// structured fields stored link-free (the effect/tier values keep their links).
+	// This also prevents a markdown link's own ")" from breaking the cost-paren split
+	// (sbParenRe) — e.g. "(2 [Malice](scc:…))".
+	name := linkDisplay(strings.TrimSpace(m[2]))
 
 	f := map[string]any{
 		"type":         "feature",

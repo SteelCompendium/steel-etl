@@ -180,6 +180,40 @@ func TestParseStatblockFeatureCost(t *testing.T) {
 	}
 }
 
+// A feature title may carry scc links in name-position: a linked word in the name
+// ("[Solo](scc:…) Monster"), a linked Malice cost ("(2 [Malice](scc:…))"), or a
+// linked "(Signature Ability)". The structured name/cost/ability_type fields must be
+// link-free (display text only). Critically, the markdown link's own ")" must not
+// break the cost-paren split (sbParenRe).
+func TestParseStatblockFeature_LinkedTitle_FieldsAreLinkFree(t *testing.T) {
+	// Linked Malice cost.
+	cost := ParseStatblockFeatures("> 🏹 **Devilish Charm (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**\n>\n> The target is charmed.\n")
+	if len(cost) != 1 {
+		t.Fatalf("cost feature: got %d, want 1", len(cost))
+	}
+	if cost[0]["name"] != "Devilish Charm" {
+		t.Errorf("name = %v, want 'Devilish Charm' (link + cost paren stripped from name)", cost[0]["name"])
+	}
+	if cost[0]["cost"] != "2 Malice" {
+		t.Errorf("cost = %v, want '2 Malice' (linked Malice must split + strip; the link's ) must not break sbParenRe)", cost[0]["cost"])
+	}
+
+	// Linked word in the name proper.
+	solo := ParseStatblockFeatures("> ☠️ **[Solo](scc:mcdm.monsters.v1/rule.organization/solo) Monster**\n>\n> Acts alone.\n")
+	if solo[0]["name"] != "Solo Monster" {
+		t.Errorf("name = %v, want 'Solo Monster' (link stripped from name)", solo[0]["name"])
+	}
+
+	// Linked "(Signature Ability)" must still classify as ability_type, link-free.
+	sig := ParseStatblockFeatures("> 🗡 **Blade of the Gol King ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**\n>\n> **Power Roll + 4:**\n>\n> - **≤11:** 5 damage\n> - **12-16:** 8 damage\n> - **17+:** 11 damage\n")
+	if sig[0]["name"] != "Blade of the Gol King" {
+		t.Errorf("name = %v, want 'Blade of the Gol King'", sig[0]["name"])
+	}
+	if sig[0]["ability_type"] != "Signature Ability" {
+		t.Errorf("ability_type = %v, want 'Signature Ability' (link-free)", sig[0]["ability_type"])
+	}
+}
+
 // Item A: dice-in-title with a link-wrapped characteristic (e.g. [R](scc:…)) in
 // the roll suffix. The parser must strip links to display text in the roll field
 // but preserve them verbatim in tier values.
