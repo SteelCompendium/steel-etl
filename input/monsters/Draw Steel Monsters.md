@@ -24870,7 +24870,7 @@ At the start of any level 10 or higher war dog's turn, you can spend [Malice](sc
 
 A wolf howls and your bowels freeze. Terror overcomes you. Sweat makes your skin slick, your senses sharpened. The moon is high but you feel hot. You're burning up. There's blood in your mouth and a corpse at your feet. Where did that come from?! That animal... that *thing* that almost clawed you to death last week... was it a wolf ? Was it *just* a wolf ?
 
-Werewolves are shapeshifters filled with a need to rend and tear. They used to be ordinary humans, elves, polders, and the like. But when their feral compulsion takes control, their eyes turn blood red and they change into massive wolves or abominable hybrid beasts.
+Werewolves are shapeshifters filled with a need to rend and tear. They used to be ordinary [humans](scc:mcdm.monsters.v1/monster.group/humans), elves, polders, and the like. But when their feral compulsion takes control, their eyes turn blood red and they change into massive wolves or abominable hybrid beasts.
 
 #### Howling Primordial Chaos
 
@@ -24878,17 +24878,17 @@ Werewolves are swirling conductors of the Primordial Chaos. Their bodies overflo
 
 #### Brokered or Cursed
 
-The curse of the werewolf is actively sought out by terrible nobles and rulers looking to extend their power and instill fear into their people. They secure deals with devils who can tap into the Primordial Chaos and unleash their beast, usually in exchange for relinquishing their legacy after they pass.
+The curse of the werewolf is actively sought out by terrible nobles and rulers looking to extend their power and instill fear into their people. They secure deals with [devils](scc:mcdm.monsters.v1/monster.group/devils) who can tap into the Primordial Chaos and unleash their beast, usually in exchange for relinquishing their legacy after they pass.
 
 Laypeople don't have the luxury of a legacy, nor do they have councils that can help temper a werewolf. They know full well the horror of losing oneself to the beast, and take action to rout out the threat of a werewolf among them. Fear leaves people submissive to the demands of cursed kings, yet oppressive to their own accursed kin.
 
 #### On Wights and Weres
 
-The powers that created the werewolves were also harnessed and cultivated under the traditions of the stormwight fury. A werewolf's accursed rage can't overcome the stormwight's ferocity, nor can ferocity overpower rage. It's not uncommon for werewolves to subconsciously treat encounters with stormwight furies as if they were sport.
+The powers that created the werewolves were also harnessed and cultivated under the traditions of the stormwight [fury](scc:mcdm.heroes.v1/class/fury). A werewolf's accursed rage can't overcome the stormwight's ferocity, nor can ferocity overpower rage. It's not uncommon for werewolves to subconsciously treat encounters with stormwight furies as if they were sport.
 
 > **Shared Ferocity**
 >
-> Thanks to their entwined origins, the werewolf is filled with an unbridled power when they witness someone harnessing ferocity. The Director gains 1d3 Malice the first time a creature uses an ability that costs ferocity while within the werewolf's line of effect.
+> Thanks to their entwined origins, the werewolf is filled with an unbridled power when they witness someone harnessing ferocity. The Director gains 1d3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) the first time a creature uses an ability that costs ferocity while within the werewolf's line of effect.
 
 #### Werewolf Languages
 
@@ -24897,15 +24897,15 @@ Werewolves can speak any language they knew before they were cursed. A werewolf 
 <!-- @type: featureblock -->
 ######### Werewolf Malice (Malice Features)
 
-At the start of a werewolf's turn, you can spend Malice to activate one of the following features.
+At the start of a werewolf's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
 > ⭐️ **Blood In Their Eyes (3 Malice)**
 >
-> The werewolf gains 10 temporary Stamina and a +3 bonus to speed until the end of their turn. The werewolf can't use this feature if they took any holy damage since ending their last turn.
+> The werewolf gains 10 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and a +3 bonus to speed until the end of their turn. The werewolf can't use this feature if they took any holy damage since ending their last turn.
 
 > ☠️ **Solo Action (5 Malice)**
 >
-> The werewolf takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The werewolf takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 > 🌀 **Moonfall (10 Malice)**
 >
@@ -24922,13 +24922,13 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the werewolf can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the werewolf can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The werewolf can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Accursed Rage**
 >
-> The werewolf's ferocity is expressed through rage, and their abilities can inflict rage points on any enemy except a stormwight fury. A creature who starts their turn with 10 or more rage expends their rage. Then before taking their turn, they must shift up to their speed toward the nearest creature and make a melee free strike against them. A creature who takes damage from this free strike gains 1 rage. Accumulated rage disappears after a character finishes a respite.
+> The werewolf's ferocity is expressed through rage, and their abilities can inflict rage points on any enemy except a stormwight [fury](scc:mcdm.heroes.v1/class/fury). A creature who starts their turn with 10 or more rage expends their rage. Then before taking their turn, they must [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed toward the nearest creature and make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them. A creature who takes damage from this [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) gains 1 rage. Accumulated rage disappears after a character finishes a respite.
 
 > ⭐️ **Shapeshifter**
 >
@@ -24936,9 +24936,9 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Vukenstep**
 >
-> The werewolf ignores difficult terrain.
+> The werewolf ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
-> 🗡 **Accursed Bite (Signature Ability)**
+> 🗡 **Accursed Bite ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |               **Main action** |
 > |-----------------------------------|------------------------------:|
@@ -24950,7 +24950,7 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 > - **12-16:** 13 damage; the target gains 4 rage
 > - **17+:** 16 damage; the target gains 5 rage
 >
-> **2 Malice:** If the target has P < 0, they are afflicted with lycanthpy. Each time the target is unaffected by the potency effect, the potency increases by 1 the next time the werewolf uses the ability against the same target. A creature afflicted with lycanthropy gains 2 rage at the end of each of their turns whenever they're in combat. Their rage doesn't disappear after finishing a respite and they must complete the Find a Cure downtime project in "Draw Steel: Heroes" to end this effect.
+> **2 Malice:** If the target has P < 0, they are afflicted with lycanthpy. Each time the target is unaffected by the [potency](scc:mcdm.heroes.v1/rule.character/potency) effect, the [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1 the next time the werewolf uses the ability against the same target. A creature afflicted with lycanthropy gains 2 rage at the end of each of their turns whenever they're in combat. Their rage doesn't disappear after finishing a respite and they must complete the Find a Cure downtime project in "Draw Steel: Heroes" to end this effect.
 
 > 🗡 **Ripping Claws**
 >
@@ -24960,9 +24960,9 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; M < 1 bleeding (save ends)
-> - **12-16:** 11 damage; the target gains 1 rage; M < 2 bleeding (save ends)
-> - **17+:** 14 damage; the target gains 3 rage; M < 3 bleeding (save ends)
+> - **≤11:** 8 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 11 damage; the target gains 1 rage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 14 damage; the target gains 3 rage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ❇️ **Berserker Slash (3 Malice)**
 >
@@ -24972,11 +24972,11 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 4 damage; push 2
-> - **12-16:** 6 damage; push 3; the target gains 1 rage
-> - **17+:** 7 damage; slide 3; the target gains 3 rage
+> - **≤11:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; the target gains 1 rage
+> - **17+:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; the target gains 3 rage
 >
-> **Effect:** The werewolf shifts up to their speed before using this ability.
+> **Effect:** The werewolf [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed before using this ability.
 
 > 👤 **Wall Leap**
 >
@@ -24984,7 +24984,7 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee free strike. If the target of the free strike has M < 2, they are knocked prone.
+> **Effect:** The werewolf jumps up to 4 squares. If they end this jump at a wall, the werewolf jumps off the wall up to 4 squares and can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If the target of the [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) has M < 2, they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ❗️ **Facepalm and Head Slam (2 Malice)**
 >
@@ -24994,9 +24994,9 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Trigger:** A creature within distance targets the werewolf with a melee ability after charging or moving 2 or more squares in a straight line toward them.
 >
-> **Effect:** The target is knocked prone and takes 5 damage before the triggering ability is resolved.
+> **Effect:** The target is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and takes 5 damage before the [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action) is resolved.
 
-> ☠️ **Howl (Villain Action 1)**
+> ☠️ **Howl ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**       |                         **-** |
 > |----------------|------------------------------:|
@@ -25004,21 +25004,21 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Effect:** Each target makes an Intuition test.
 >
-> - **≤11:** The target must move their speed in a straight line away from the werewolf; frightened (save ends)
-> - **12-16:** Frightened (EoT)
+> - **≤11:** The target must move their speed in a straight line away from the werewolf; [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
 > - **17+:** No effect
 >
 > **Effect:** Any enemy in the encounter who has 1 or more rage gains 4 rage and howls along with the werewolf.
 
-> ☠️ **Full Wolf (Villain Action 2)**
+> ☠️ **Full Wolf ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The werewolf transforms into a massive wolf of size 3 until they die or until the end of the encounter. They move to a space that can accommodate their new size and push adjacent creatures out of their way. While in wolf form, they have speed 10 and stability 2, their strikes gain a +2 damage bonus and bestow an additional 1 rage, and the potency of Accursed Bite increases by 1.
+> **Effect:** The werewolf transforms into a massive wolf of size 3 until they die or until the end of the encounter. They move to a space that can accommodate their new size and [push](scc:mcdm.heroes.v1/movement/forced-movement) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creatures out of their way. While in wolf form, they have speed 10 and stability 2, their strikes gain a +2 damage bonus and bestow an additional 1 rage, and the [potency](scc:mcdm.heroes.v1/rule.character/potency) of Accursed Bite increases by 1.
 
-> ☠️ **Rampage (Villain Action 3)**
+> ☠️ **Rampage ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Weapon** |                             **-** |
 > |------------------|----------------------------------:|
@@ -25026,18 +25026,18 @@ At the start of a werewolf's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 5 damage; the target gains 2 rage; M < 1 bleeding (save ends)
-> - **12-16:** 8 damage; the target gains 4 rage; M < 2 bleeding (save ends)
-> - **17+:** 11 damage; the target gains 8 rage; M < 3 bleeding (save ends)
+> - **≤11:** 5 damage; the target gains 2 rage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 8 damage; the target gains 4 rage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 11 damage; the target gains 8 rage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** The werewolf shifts up to their speed before and after using this ability.
+> **Effect:** The werewolf [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed before and after using this ability.
 
 <!-- @type: monster | @category: wyverns -->
 ## Wyverns
 
 The sight of a wyvern perched high atop a rotting tree or lit upon the jagged peak of a shadowy mountain marks the boundary between the known lands and forest primeval. There are raw, ancient sorceries in the wilderness that imbue those lands with power and hate older than roads and carts.
 
-Though they superficially resemble dragons, wyverns are not dragons or dragon-kin. Distant relatives of the terror lizards of Ix, wyverns sport tough, leathery skin with hues running from brown to red to black depending on their native terrain. They are solitary creatures who track their prey by following the smell of fear they create.
+Though they superficially resemble [dragons](scc:mcdm.monsters.v1/monster.group/dragons), wyverns are not [dragons](scc:mcdm.monsters.v1/monster.group/dragons) or dragon-kin. Distant relatives of the terror lizards of Ix, wyverns sport tough, leathery skin with hues running from brown to red to black depending on their native terrain. They are solitary creatures who track their prey by following the smell of fear they create.
 
 #### Mountain Hunters
 
@@ -25058,22 +25058,22 @@ Wyverns are unable to speak. However, a clever hero carrying a feast of fresh me
 <!-- @type: featureblock -->
 ######### Wyvern Malice (Malice Features)
 
-At the start of any wyvern's turn, you can spend Malice to activate one of the following features.
+At the start of any wyvern's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
 > 🗡 **Simmering Anger (3 Malice)**
 >
-> One wyvern in the encounter can make a free strike against each enemy adjacent to them.
+> One wyvern in the encounter can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Boiling Fury (5 Malice)**
 >
-> Until the end of the round, each wyvern in the encounter has a double edge on strikes and can use their signature ability instead of a free strike when making opportunity attacks.
+> Until the end of the round, each wyvern in the encounter has a double edge on strikes and can use their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) instead of a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) when making opportunity attacks.
 
 > 🌀 **Overflowing Rage (7 Malice)**
 >
 > Every wyvern's anger fills the encounter map with a thick miasma of hatred. Each enemy in the encounter makes an **Intuition test**.
 >
-> - **≤11:** The target is taunted by the nearest creature or object (save ends). While the target is taunted this way, power rolls against them have a double edge.
-> - **12-16:** The target is taunted by the nearest creature or object (save ends).
+> - **≤11:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by the nearest creature or object (save ends). While the target is [taunted](scc:mcdm.heroes.v1/condition/taunted) this way, power rolls against them have a double edge.
+> - **12-16:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) by the nearest creature or object (save ends).
 > - **17+:** No effect.
 
 <!-- @type: statblock -->
@@ -25085,7 +25085,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 | **Acid 5**<br>Immunity | **Fly**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |    **+2**<br>Might     |  **+3**<br>Agility  |  **-1**<br>Reason  |  **+1**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Agonizing Stinger (Signature Ability)**
+> 🗡 **Agonizing Stinger ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -25094,8 +25094,8 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 > **Power Roll + 3:**
 >
 > - **≤11:** 9 damage
-> - **12-16:** 14 damage; M < 2 bleeding (save ends)
-> - **17+:** 17 damage; M < 3 bleeding (save ends)
+> - **12-16:** 14 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 17 damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
 > **1 Malice:** One target hidden from the lurker takes an extra 6 acid damage.
 
@@ -25107,11 +25107,11 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 acid damage; M < 1 weakened (save ends)
-> - **12-16:** 16 acid damage; M < 2 weakened (save ends)
-> - **17+:** 20 acid damage; M < 3 weakened (save ends)
+> - **≤11:** 10 acid damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 16 acid damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 20 acid damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** A target weakened this way takes 1d4 acid damage at the start of each of their turns.
+> **Effect:** A target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way takes 1d4 acid damage at the start of each of their turns.
 
 > 👤 **Swooping Torment**
 >
@@ -25119,7 +25119,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The lurker flies up to their speed, then can attempt to hide. Each enemy the lurker moves adjacent to during this movement can choose to take 3 sonic damage or fall prone.
+> **Effect:** The lurker [flies](scc:mcdm.heroes.v1/movement/fly) up to their speed, then can attempt to hide. Each enemy the lurker moves [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to during this movement can choose to take 3 sonic damage or fall [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ❗️ **Retaliatory Dive**
 >
@@ -25129,7 +25129,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > **Trigger:** A creature within distance deals damage to the lurker with a ranged ability.
 >
-> **Effect:** The lurker flies adjacent to the target and can make a free strike against them.
+> **Effect:** The lurker [flies](scc:mcdm.heroes.v1/movement/fly) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Ruthless Rage**
 >
@@ -25148,7 +25148,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 | **Acid 5**<br>Immunity | **Fly**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |    **+3**<br>Might     |  **+2**<br>Agility  |  **-1**<br>Reason  |  **+1**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Sedating Stinger (Signature Ability)**
+> 🗡 **Sedating Stinger ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -25157,10 +25157,10 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 > **Power Roll + 3:**
 >
 > - **≤11:** 9 damage
-> - **12-16:** 14 damage; M < 2 slowed (save ends)
-> - **17+:** 17 damage; M < 3 slowed (save ends)
+> - **12-16:** 14 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 17 damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** If a target slowed this way is already slowed, they are instead restrained (save ends).
+> **Effect:** If a target [slowed](scc:mcdm.heroes.v1/condition/slowed) this way is already [slowed](scc:mcdm.heroes.v1/condition/slowed), they are instead [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 > 🔳 **Tail Sweep**
 >
@@ -25184,9 +25184,9 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; A < 1 grabbed
-> - **12-16:** 14 damage; A < 2 grabbed
-> - **17+:** 17 damage; A < 3 grabbed and the target takes a bane on the Escape Grab maneuver
+> - **≤11:** 9 damage; A < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 14 damage; A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 17 damage; A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and the target takes a bane on the Escape Grab maneuver
 
 > ❗️ **Deterring Sting (1 Malice)**
 >
@@ -25196,11 +25196,11 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 >
 > **Trigger:** A creature within distance deals damage to the predator with a melee ability.
 >
-> **Effect:** The predator uses Sedating Stinger against the target, then shifts up to 3 squares.
+> **Effect:** The predator uses Sedating Stinger against the target, then [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares.
 
 > ⭐️ **Stubborn Rage**
 >
-> While winded or within 10 squares of another wyvern, the predator can't be made dazed or frightened.
+> While [winded](scc:mcdm.heroes.v1/rule.health/winded) or within 10 squares of another wyvern, the predator can't be made [dazed](scc:mcdm.heroes.v1/condition/dazed) or [frightened](scc:mcdm.heroes.v1/condition/frightened).
 
 > ⭐️ **Tenacious Hunter**
 >
@@ -25209,7 +25209,7 @@ At the start of any wyvern's turn, you can spend Malice to activate one of the f
 <!-- @type: monster | @category: xorannox-the-tyract -->
 ## Xorannox the Tyract
 
-Xorannox the Tyract is an overmind. Formally known by their endonym, vaurath (plural: vaurathi), overminds plot and scheme against their chief rivals, the synlirii and the olothec, for control of the World Below.
+Xorannox the Tyract is an overmind. Formally known by their endonym, vaurath (plural: vaurathi), overminds plot and scheme against their chief rivals, the synlirii and the [olothec](scc:mcdm.monsters.v1/monster.group/olothec), for control of the World Below.
 
 #### Psionic Eyes
 
@@ -25221,15 +25221,15 @@ Like their rivals, overminds are loremasters of supreme intellect. They aren't u
 
 #### Overmind Lairs
 
-Thanks to their innate flight, overminds prefer to build (or rather, have their thralls build) towers with no doors or entrances anywhere near the bottom.
+Thanks to their innate [flight](scc:mcdm.heroes.v1/movement/fly), overminds prefer to build (or rather, have their thralls build) towers with no doors or entrances anywhere near the bottom.
 
 #### Rivalries and Negotiations
 
-Unlike the synlirii and the olothec, overminds have an intense hatred of their own kind and never work together. However, overminds often enjoy diplomacy with other species, seeking to form alliances and build secret networks of agents throughout the World Below.
+Unlike the synlirii and the [olothec](scc:mcdm.monsters.v1/monster.group/olothec), overminds have an intense hatred of their own kind and never work together. However, overminds often enjoy diplomacy with other species, seeking to form alliances and build secret networks of agents throughout the World Below.
 
 #### Smelly Eggs
 
-Overmind procreation involves one horror laying a single egg in a slime pool and leaving it behind. When another overmind later detects the distinct smell of the egg, they spray their inseminating fluid into the pool. These actions are compelled by biological necessity, a compulsion even the overminds can't ignore.
+Overmind procreation involves one [horror](scc:mcdm.monsters.v1/rule.keyword/horror) laying a single egg in a slime pool and leaving it behind. When another overmind later detects the distinct smell of the egg, they spray their inseminating fluid into the pool. These actions are compelled by biological necessity, a compulsion even the overminds can't ignore.
 
 Unwitting explorers sometimes accidentally abscond with an egg. If unfertilized, its bearer is likely to attract the attention of other overminds and synlirii that use the eggs in genetic experiments to create psionic creatures. If the egg is fertilized, the explorer could find themselves becoming a newly hatched overmind's first victim.
 
@@ -25237,9 +25237,9 @@ Unwitting explorers sometimes accidentally abscond with an egg. If unfertilized,
 
 Xorannox (*ZOR-ah-nocks*) rules as Lord of the White Tower, an isolated, multilevel finger of alabaster stone connecting to the World Below. He is commonly known as the Tyract, an ancient Za'hariax word that literally translates as "a king who rules with his teeth"-and the overmind indeed consumes those who displease him.
 
-Xorannox is chief of the Grasp, a secret organization that seeks to overthrow the voiceless talkers' great empire and place Xorannox above all, first as king, then as god. The Tyract is a master strategist, always one step ahead of his enemies. Heroes may be surprised to discover their allies are members of the Grasp. When they meet Xorannox, he's delighted! He loves treating with humanoids! They have the same enemies, after all.
+Xorannox is chief of the Grasp, a secret organization that seeks to overthrow the [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talkers)' great empire and place Xorannox above all, first as king, then as god. The Tyract is a master strategist, always one step ahead of his enemies. Heroes may be surprised to discover their allies are members of the Grasp. When they meet Xorannox, he's delighted! He loves treating with humanoids! They have the same enemies, after all.
 
-Unfortunately, no matter how useful or dependable a party of heroes might be, Xorannox is nearly incapable of resisting the urge to betray his allies. He assumes, as do most vaurathi, that the natural end of all alliances is betrayal. Thus when the gauntlet is thrown and his life is in danger, the only minions he can truly trust are his own six eyes.
+Unfortunately, no matter how useful or dependable a party of heroes might be, Xorannox is nearly incapable of resisting the urge to betray his allies. He assumes, as do most vaurathi, that the natural end of all alliances is betrayal. Thus when the gauntlet is thrown and his life is in danger, the only [minions](scc:mcdm.monsters.v1/rule.organization/minion) he can truly trust are his own six eyes.
 
 #### Xorannox's Languages
 
@@ -25256,15 +25256,15 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of his turns, Xorannox can take 10 damage to end one effect on him that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of his turns, Xorannox can take 10 damage to end one effect on him that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** Xorannox can take two turns each round. He can't take turns consecutively.
 
 > 🌀 **Eyes of the Tyract**
 >
-> Six unique eyestalks float around Xorannox, acting on his turn at his command until they are reduced to 0 Stamina. On each of Xorannox's turns, he directs one eyestalk to move and use a signature ability.
+> Six unique eyestalks float around Xorannox, acting on his turn at his command until they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). On each of Xorannox's turns, he directs one eyestalk to move and use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability).
 
-> 🗡 **Toothful Thrashing (Signature Ability)**
+> 🗡 **Toothful Thrashing ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                **Main action** |
 > |---------------------------|-------------------------------:|
@@ -25272,9 +25272,9 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; slide 2; M < 2 bleeding (EoT)
-> - **12-16:** 20 damage; slide 3; M < 3 bleeding (EoT)
-> - **17+:** 23 damage; vertical slide 3; M < 4 bleeding (EoT)
+> - **≤11:** 12 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
+> - **12-16:** 20 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
+> - **17+:** 23 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (EoT)
 
 > ❇️ **Grav Spike**
 >
@@ -25284,11 +25284,11 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Vertical push 3
-> - **12-16:** Vertical push 5
-> - **17+:** Vertical push 7
+> - **≤11:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **17+:** Vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 7
 >
-> **Effect:** Xorannox shifts up to his speed before or after using this ability.
+> **Effect:** Xorannox [shifts](scc:mcdm.heroes.v1/movement/shifting) up to his speed before or after using this ability.
 
 > 👤 **Optical Collusion**
 >
@@ -25314,17 +25314,17 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Trigger:** A creature within distance deals damage to Xorannox.
 >
-> **Effect:** If the target has I < 3 they are frightened (save ends)
+> **Effect:** If the target has I < 3 they are [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 
 > ⭐️ **Above It All**
 >
-> Xorannox can't be made frightened or knocked prone, and he can't be flanked.
+> Xorannox can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened) or knocked [prone](scc:mcdm.heroes.v1/condition/prone), and he can't be flanked.
 
 > ⭐️ **Natural Enemies**
 >
-> If Xorannox perceives another overmind or a voiceless talker on the encounter map, he targets that threat one or more times on each of his turns.
+> If Xorannox perceives another overmind or a [voiceless talker](scc:mcdm.monsters.v1/monster.group/voiceless-talkers) on the encounter map, he targets that threat one or more times on each of his turns.
 
-> ☠️ **Disruption Beam (Villain Action 1)**
+> ☠️ **Disruption Beam ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Psionic, Ranged, Strike** |                  **-** |
 > |-----------------------------|-----------------------:|
@@ -25332,25 +25332,25 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 psychic damage; R < 2 dazed (save ends)
-> - **12-16:** 17 psychic damage; R < 3 dazed (save ends)
-> - **17+:** 20 psychic damage; R < 4 dazed (save ends)
+> - **≤11:** 11 psychic damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 17 psychic damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 20 psychic damage; R < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> ☠️ **All Eyes, All Rise (Villain Action 2)**
+> ☠️ **All Eyes, All Rise ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** Xorannox recreates any destroyed eyestalks, which return in unoccupied spaces on the encounter map with full Stamina.
+> **Effect:** Xorannox recreates any destroyed eyestalks, which return in unoccupied spaces on the encounter map with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> ☠️ **Panoptibeam (Villain Action 3)**
+> ☠️ **Panoptibeam ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**       |                         **-** |
 > |----------------|------------------------------:|
 > | **📏 2 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** Xorannox directs each of his eyestalks to use a signature ability against any target.
+> **Effect:** Xorannox directs each of his eyestalks to use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against any target.
 
 <!-- @type: statblock -->
 ####### Compulsion Eye
@@ -25361,7 +25361,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **-1**<br>Might       |     **+1**<br>Agility      | **+4**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🏹 **Compulsion Beam (Signature Ability)**
+> 🏹 **Compulsion Beam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike** |     **Main action** |
 > |-----------------------------|--------------------:|
@@ -25373,7 +25373,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 > - **12-16:** I < 3 the target is charmed
 > - **17+:** I < 4 the target is charmed
 >
-> **Effect:** As a free triggered action, a charmed target immediately moves up to their speed and can make a free strike against an enemy of Xorannox's choice. The target is then no longer charmed.
+> **Effect:** As a free [triggered action](scc:mcdm.heroes.v1/rule.combat/triggered-action), a charmed target immediately moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an enemy of Xorannox's choice. The target is then no longer charmed.
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25388,7 +25388,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **-1**<br>Might       |     **+1**<br>Agility      | **+4**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🔳 **Explosion (Signature Ability)**
+> 🔳 **Explosion ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike** |               **Main action** |
 > |-----------------------------|------------------------------:|
@@ -25397,8 +25397,8 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 > **Power Roll + 4:**
 >
 > - **≤11:** 6 fire damage
-> - **12-16:** 10 fire damage; M < 3 prone
-> - **17+:** 13 fire damage; M < 4 prone
+> - **12-16:** 10 fire damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 13 fire damage; M < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25413,7 +25413,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **-1**<br>Might       |     **+1**<br>Agility      | **+4**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🏹 **Telekinetic Beam (Signature Ability)**
+> 🏹 **Telekinetic Beam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike** |                 **Main action** |
 > |-----------------------------|--------------------------------:|
@@ -25421,9 +25421,9 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; slide 4
-> - **12-16:** 17 damage; slide 5
-> - **17+:** 20 damage; slide 6
+> - **≤11:** 11 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **12-16:** 17 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **17+:** 20 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 6
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25438,7 +25438,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **-1**<br>Might       |     **+1**<br>Agility      | **+4**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🏹 **Necro Beam (Signature Ability)**
+> 🏹 **Necro Beam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike** |               **Main action** |
 > |-----------------------------|------------------------------:|
@@ -25447,10 +25447,10 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 > **Power Roll + 4:**
 >
 > - **≤11:** 11 corruption damage
-> - **12-16:** 17 corruption damage; M < 3 bleeding (save ends)
-> - **17+:** 20 corruption damage; M < 4 bleeding (save ends)
+> - **12-16:** 17 corruption damage; M < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 20 corruption damage; M < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** If this damage or the Stamina loss from bleeding this way reduces a target creature's Stamina to 0, that creature dies.
+> **Effect:** If this damage or the [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) loss from [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way reduces a target creature's [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) to 0, that creature dies.
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25465,7 +25465,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |      **-1**<br>Might       |     **+1**<br>Agility      | **+4**<br>Reason  |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🔳 **Toxic Vapors (Signature Ability)**
+> 🔳 **Toxic Vapors ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Area, Psionic, Ranged** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -25474,8 +25474,8 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 > **Power Roll + 4:**
 >
 > - **≤11:** 6 poison damage
-> - **12-16:** 10 poison damage; M < 3 weakened (save ends)
-> - **17+:** 13 poison damage; M < 4 weakened (save ends)
+> - **12-16:** 10 poison damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 13 poison damage; M < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25490,7 +25490,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 |     **-**<br>Immunity      | **Fly, hover**<br>Movement |         -         | **-**<br>With Captain |   **-**<br>Weakness  |
 |      **-1**<br>Might       |     **+1**<br>Agility      |  **+4**<br>Reason |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🔳 **Lightning Beam (Signature Ability)**
+> 🔳 **Lightning Beam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Area, Psionic**           |               **Main action** |
 > |-----------------------------|------------------------------:|
@@ -25502,7 +25502,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 > - **12-16:** 10 lightning damage
 > - **17+:** 13 lightning damage
 >
-> **Effect:** Each target loses all their surges.
+> **Effect:** Each target loses all their [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 > ⭐️ **Psionic Barrier**
 >
@@ -25511,12 +25511,12 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 <!-- @type: featureblock -->
 ######### Xorannox's Malice (Malice Features)
 
-At the start of Xorannox's turn, you can spend Malice to activate one
+At the start of Xorannox's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one
 of the following features.
 
 > ❇️ **Gas Belch (3 Malice)**
 >
-> Xorannox lets out a noxious belch. Each enemy within 2 squares of him who has M < 3 is weakened (save ends).
+> Xorannox lets out a noxious belch. Each enemy within 2 squares of him who has M < 3 is [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 > ⭐️ **Slime Trail (5 Malice)**
 >
@@ -25524,11 +25524,11 @@ of the following features.
 
 > ☠️ **Solo Action (5 Malice)**
 >
-> Xorannox takes an additional main action on his turn. He can use this feature even if he is dazed.
+> Xorannox takes an additional main action on his turn. He can use this feature even if he is [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
 > 🌀 **Mind Over Matter (7 Malice)**
 >
-> Xorannox fills the encounter map with a powerful telekinetic field. The Director chooses a cardinal direction (north, south, east, or west). Whenever a creature in the encounter willingly moves or is force moved, they are pulled 2 squares in the chosen direction, ignoring stability. Each time this feature is used, its previous effect ends.
+> Xorannox fills the encounter map with a powerful telekinetic field. The Director chooses a cardinal direction (north, south, east, or west). Whenever a creature in the encounter willingly moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement), they are [pulled](scc:mcdm.heroes.v1/movement/forced-movement) 2 squares in the chosen direction, ignoring stability. Each time this feature is used, its previous effect ends.
 
 <!-- @type: chapter | @id: dynamic-terrain -->
 # Dynamic Terrain
