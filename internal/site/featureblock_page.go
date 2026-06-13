@@ -161,6 +161,22 @@ func renderFeatureblockCard(doc fbDoc) string {
 	return b.String()
 }
 
-// renderFbStats / renderFbFeats are filled in Tasks 2 and 3.
-func renderFbStats(stats []fbStat) string   { return "" }
+// renderFbStats lays out the loose header stats ("EV: 2", "Stamina: 3 per
+// square"). The grid-vs-ledger layout is a pure CSS reflow (data-fb-stats), so
+// the markup is layout-agnostic: an ordered list of label/value cells.
+func renderFbStats(stats []fbStat) string {
+	if len(stats) == 0 {
+		return ""
+	}
+	var b strings.Builder
+	b.WriteString("<div class=\"fb__stats\">\n")
+	for _, st := range stats {
+		fmt.Fprintf(&b,
+			"<div class=\"fb__stat\"><div class=\"fb__stat-l\">%s</div><div class=\"fb__stat-v\">%s</div></div>\n",
+			html.EscapeString(strings.TrimSpace(st.Name)), richInline(strings.TrimSpace(st.Value)))
+	}
+	b.WriteString("</div>\n")
+	return b.String()
+}
+
 func renderFbFeats(feats []fbFeature) string { return "" }

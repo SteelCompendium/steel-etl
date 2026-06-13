@@ -57,3 +57,62 @@ func TestBuildFeatureblockPage_MaliceWrap(t *testing.T) {
 		}
 	}
 }
+
+const fbTerrainPage = `---
+name: Angry Beehive
+type: dynamic-terrain
+level: 2
+terrain_type: Hazard
+role: Hexer
+flavor: This beehive is full of angry bees.
+stats:
+    - name: EV
+      value: "2"
+    - name: Stamina
+      value: "3 per square"
+features:
+    - icon: "🌀"
+      name: Deactivate
+      body: The beehive can't be deactivated.
+    - icon: "❗️"
+      name: Your Fears Become Manifest
+      usage: Main action
+      keywords:
+        - Area
+        - Magic
+      distance: 10 burst
+      power_roll:
+        formula: + 2
+        tiers:
+            low: P < 1 slowed (EoT)
+            mid: P < 2 slowed and weakened (EoT)
+            high: P < 3 frightened (EoT)
+---
+
+body
+`
+
+func TestRenderFbStats(t *testing.T) {
+	out, ok := buildFeatureblockPage([]byte(fbTerrainPage))
+	if !ok {
+		t.Fatal("terrain page should be handled")
+	}
+	s := string(out)
+	for _, want := range []string{
+		`data-role="hexer"`, "Level 2 Hazard · Hexer",
+		`class="fb__stats"`,
+		`class="fb__stat"`, `class="fb__stat-l">EV<`, `class="fb__stat-v">2<`,
+		`class="fb__stat-l">Stamina<`, "3 per square",
+	} {
+		if !strings.Contains(s, want) {
+			t.Errorf("missing %q in:\n%s", want, s)
+		}
+	}
+}
+
+func TestRenderFbStats_EmptyWhenAbsent(t *testing.T) {
+	out, _ := buildFeatureblockPage([]byte(fbMalicePage))
+	if strings.Contains(string(out), `class="fb__stats"`) {
+		t.Error("malice block has no stats; fb__stats container should be omitted")
+	}
+}
