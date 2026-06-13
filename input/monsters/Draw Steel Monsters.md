@@ -13259,9 +13259,9 @@ Most humans speak Caelian and one Vaslorian human language.
 <!-- @type: featureblock -->
 ######### Human Malice (Malice Features)
 
-At the start of any human's turn, you can spend Malice to activate one of the following features.
+At the start of any human's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Alchemical Device (3 Malice)**
+> 🔳 **Alchemical Device (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |                             **Maneuver** |
 > |-------------------------|-----------------------------------------:|
@@ -13269,19 +13269,19 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 4 corruption damage; A < 0 slowed (save ends)
-> - **12-16:** 6 corruption damage; A < 1 slowed (save ends)
-> - **17+:** 9 corruption damage; A < 2 restrained (save ends)
+> - **≤11:** 4 corruption damage; A < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 6 corruption damage; A < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 9 corruption damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Special:** This ability can't be used by a minion.
+> **Special:** This ability can't be used by a [minion](scc:mcdm.monsters.v1/rule.organization/minion).
 
-> ⭐️ **Exploit Opening (5 Malice)**
+> ⭐️ **Exploit Opening (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each human acting this turn gains an edge on abilities until the end of their turn, or has a double edge on any ability that targets an enemy affected by a condition.
 
-> ⭐️ **Staying Power (7 Malice)**
+> ⭐️ **Staying Power (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each non-minion human in the encounter regains Stamina equal to 5 times their level.
+> Each non-[minion](scc:mcdm.monsters.v1/rule.organization/minion) human in the encounter regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 times their level.
 
 <!-- @type: statblock -->
 ####### Human Apprentice Mage
@@ -13304,7 +13304,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 3 lightning damage
 > - **17+:** 5 lightning damage
 >
-> **Effect:** If the apprentice mage doesn't use a maneuver or a move action this turn, the target is also slowed (EoT).
+> **Effect:** If the apprentice mage doesn't use a maneuver or a move action this turn, the target is also [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT).
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13357,7 +13357,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 2 corruption damage
 > - **17+:** 3 corruption damage
 >
-> **Effect:** One creature within 5 squares regains 1 Stamina.
+> **Effect:** One creature within 5 squares regains 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13384,7 +13384,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** If the guard is flanked, they can make a free strike against a different target adjacent to them.
+> **Effect:** If the guard is flanked, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a different target [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13411,7 +13411,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 2 damage
 > - **17+:** 3 damage
 >
-> **Effect:** If this ability is used as part of a charge, the raider can make a ranged free strike before using the ability.
+> **Effect:** If this ability is used as part of a charge, the raider can make a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) before using the ability.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13463,21 +13463,21 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
-> - **17+:** 12 damage; M < 2 grabbed and the target takes a bane on the Escape Grab maneuver
+> - **17+:** 12 damage; M < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and the target takes a bane on the Escape Grab maneuver
 >
-> **Effect:** A target who is already grabbed takes an extra 2 damage.
+> **Effect:** A target who is already [grabbed](scc:mcdm.heroes.v1/condition/grabbed) takes an extra 2 damage.
 
-> 🗡 **Throw (1 Malice)**
+> 🗡 **Throw (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |                               **Maneuver** |
 > |----------------|-------------------------------------------:|
 > | **📏 Melee 1** | **🎯 One creature grabbed by the brawler** |
 >
-> **Effect:** The brawler pushes the target up to 5 squares.
+> **Effect:** The brawler [pushes](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 5 squares.
 
 > ⭐️ **Shoot the Hostage**
 >
-> The brawler halves the damage from any strike if they have a creature or object grabbed of size 1S or larger. The grabbed creature or object takes the remaining damage.
+> The brawler halves the damage from any strike if they have a creature or object [grabbed](scc:mcdm.heroes.v1/condition/grabbed) of size 1S or larger. The [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or object takes the remaining damage.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13502,17 +13502,17 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 6 corruption damage
 > - **12-16:** 9 corruption damage
-> - **17+:** 12 corruption damage; I < 2 weakened (save ends)
+> - **17+:** 12 corruption damage; I < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **2 Malice:** The death cultist regains Stamina equal to half the damage dealt.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The death cultist regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
-> ❇️ **Rise, My Minions (1 Malice per minion)**
+> ❇️ **Rise, My Minions (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) per [minion](scc:mcdm.monsters.v1/rule.organization/minion))**
 >
 > | **Area**       |                        **Maneuver** |
 > |----------------|------------------------------------:|
-> | **📏 5 burst** | **🎯 Each dead minion in the area** |
+> | **📏 5 burst** | **🎯 Each dead [minion](scc:mcdm.monsters.v1/rule.organization/minion) in the area** |
 >
-> **Effect:** Each target who died during this encounter revives with full Stamina. They immediately die at the end of the encounter or if the death cultist is killed. A target can be revived multiple times by this ability.
+> **Effect:** Each target who died during this encounter revives with full [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). They immediately die at the end of the encounter or if the death cultist is killed. A target can be revived multiple times by this ability.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13539,15 +13539,15 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 9 damage
 > - **17+:** 12 damage; M < 2 the target has a double bane on their next power roll
 >
-> **Effect:** The target is taunted (EoT).
+> **Effect:** The target is [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT).
 
 > ⭐️ **I'm Your Enemy**
 >
-> Whenever an adjacent creature the knave has taunted deals damage to a creature other than the knave, the knave can make a free strike against them.
+> Whenever an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature the knave has [taunted](scc:mcdm.heroes.v1/condition/taunted) deals damage to a creature other than the knave, the knave can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 > ⭐️ **Overwhelm**
 >
-> An enemy who starts their turn adjacent to the knave can't shift.
+> An enemy who starts their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the knave can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13574,15 +13574,15 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 9 damage
 > - **17+:** 12 damage
 >
-> **2 Malice:** If this ability gains an edge or has a double edge, it deals an extra 2 damage.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If this ability gains an edge or has a double edge, it deals an extra 2 damage.
 
-> 🌀 **Dagger Storm (5 Malice)**
+> 🌀 **Dagger Storm (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**    | **Main action** |
 > |----------|----------------:|
 > | **📏 -** |        **🎯 -** |
 >
-> The scoundrel uses Rapier and Dagger against up to three targets. They shift up to 2 squares before or after each strike.
+> The scoundrel uses Rapier and Dagger against up to three targets. They [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares before or after each strike.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13609,9 +13609,9 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > - **12-16:** 10 lightning damage
 > - **17+:** 13 lightning damage
 >
-> **5 Malice:** The ability loses the Ranged and Strike keywords, takes the Area keyword, and is a 10 x 1 line within 15 that targets each enemy and object in the area.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability loses the Ranged and Strike keywords, takes the Area keyword, and is a 10 x 1 line within 15 that targets each enemy and object in the area.
 
-> 🔳 **Gust of Wind (3 Malice)**
+> 🔳 **Gust of Wind (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic**        |                             **Maneuver** |
 > |------------------------|-----------------------------------------:|
@@ -13619,9 +13619,9 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** Slide 2; M < 0 slowed (save ends)
-> - **12-16:** Slide 4; M < 1 slowed (save ends)
-> - **17+:** Slide 6; M < 2 slowed (save ends)
+> - **≤11:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 6; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
 > **Effect:** The gust of wind disperses gas or vapor and extinguishes any flames, including supernatural effects.
 
@@ -13629,7 +13629,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > Any melee ability targeting the storm mage takes a bane.
 >
-> Additionally, whenever the mage takes damage from an adjacent enemy, the enemy takes 2 lightning damage, and if they have R < 1 they are pushed up to 2 squares.
+> Additionally, whenever the mage takes damage from an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) enemy, the enemy takes 2 lightning damage, and if they have R < 1 they are [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 2 squares.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13681,13 +13681,13 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 3 damage; M < 1 slowed (save ends)
-> - **12-16:** 6 damage; M < 2 slowed (save ends)
-> - **17+:** 8 damage; M < 3 slowed (save ends)
+> - **≤11:** 3 damage; M < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 6 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 8 damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **Effect:** One ally within 10 squares can make a free strike.
+> **Effect:** One ally within 10 squares can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 >
-> **1 Malice:** One ally within 10 squares can use their signature ability instead.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** One ally within 10 squares can use their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) instead.
 
 > 🏹 **You!**
 >
@@ -13697,9 +13697,9 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The target is marked until the start of the blackguard's next turn. The blackguard and each of their allies gain an edge on abilities used against targets marked by the blackguard.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the blackguard can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the blackguard can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ⭐️ **Supernatural Insight**
 >
@@ -13711,33 +13711,33 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 > |----------------|------------------------:|
 > | **📏 Melee 1** | **🎯 Self or one ally** |
 >
-> **Trigger:** A creature makes a strike against the blackguard or an ally adjacent to them.
+> **Trigger:** A creature makes a strike against the blackguard or an ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 >
 > **Effect:** The damage is halved.
 
-> ☠️ **Advance! (Villain Action 1)**
+> ☠️ **Advance! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **-**       |       **-** | 
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The blackguard shifts up to their speed. During or after this movement, they can use their Zweihander Swing twice.
+> **Effect:** The blackguard [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. During or after this movement, they can use their Zweihander Swing twice.
 
-> ☠️ **Back! (Villain Action 2)**
+> ☠️ **Back! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Magic** |                         **-** |
 > |-----------------|------------------------------:|
 > | **📏 5 burst**  | **🎯 Each enemy in the area** |
 >
-> **Effect:** The blackguard slides each target up to 5 squares.
+> **Effect:** The blackguard [slides](scc:mcdm.heroes.v1/movement/forced-movement) each target up to 5 squares.
 
-> ☠️ **I Can Throw My Blade and So Should You! (Villain Action 3)**
+> ☠️ **I Can Throw My Blade and So Should You! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic, Ranged, Weapon** |                         **-** |
 > |---------------------------------|------------------------------:|
 > | **📏 3 cube within 5**          | **🎯 Each enemy in the area** |
 >
-> **Effect:** The blackguard uses their Zweihander Swing against each target. Each ally within 5 squares of the area can then make a free strike against a target (one target per ally).
+> **Effect:** The blackguard uses their Zweihander Swing against each target. Each ally within 5 squares of the area can then make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against a target (one target per ally).
 
 <!-- @type: statblock -->
 ####### Human Bandit Chief
@@ -13756,13 +13756,13 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; pull 1
-> - **12-16:** 12 damage; pull 2
-> - **17+:** 15 damage; pull 3
+> - **≤11:** 8 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 12 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 15 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** Any target who is adjacent to the bandit chief after the power roll is resolved takes 3 corruption damage.
+> **Effect:** Any target who is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the bandit chief after the power roll is resolved takes 3 corruption damage.
 >
-> **2 Malice:** This ability targets one additional target.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target.
 
 > 🗡 **Kneel, Peasant!**
 >
@@ -13772,11 +13772,11 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** Push 1; M < 1 prone
-> - **12-16:** Push 2; M < 2 prone
-> - **17+:** Push 4; M < 3 prone
+> - **≤11:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **2 Malice:** The ability takes the Area keyword, loses the Melee keyword, and is a 1 burst that targets each enemy in the area.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The ability takes the Area keyword, loses the Melee keyword, and is a 1 burst that targets each enemy in the area.
 
 > ❗️ **Bloodstones**
 >
@@ -13788,37 +13788,37 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > **Effect:** The bandit chief takes 5 corruption damage and increases the outcome of the power roll by one tier. This damage can't be reduced in any way.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the bandit chief can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the bandit chief can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
 > ⭐️ **Supernatural Insight**
 >
 > The bandit chief ignores concealment if it's granted by a supernatural effect.
 
-> ☠️ **Shoot! (Villain Action 1)**
+> ☠️ **Shoot! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                                  **-** |
 > |-----------------|---------------------------------------:|
 > | **📏 10 burst** | **🎯 Each artillery ally in the area** |
 >
-> **Effect:** Each target makes a ranged free strike.
+> **Effect:** Each target makes a ranged [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> ☠️ **Form Up! (Villain Action 2)**
+> ☠️ **Form Up! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area**        |                        **-** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target shifts up to their speed. Additionally, until the end of the encounter, while the bandit chief or any ally is adjacent to a target, they have damage immunity 2.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. Additionally, until the end of the encounter, while the bandit chief or any ally is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target, they have damage immunity 2.
 
-> ☠️ **Lead From the Front (Villain Action 3)**
+> ☠️ **Lead From the Front ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The bandit chief shifts up to 10 squares regardless of their speed. During or after this movement, they can use their Whip and Magic Longsword against up to four targets. Additionally, one ally adjacent to each target can make a free strike against that target.
+> **Effect:** The bandit chief [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 10 squares regardless of their speed. During or after this movement, they can use their Whip and Magic Longsword against up to four targets. Additionally, one ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to each target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that target.
 
 <!-- @type: statblock -->
 ####### Giant Hawk
@@ -13839,11 +13839,11 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 >
 > - **≤11:** 5 damage
 > - **12-16:** 7 damage
-> - **17+:** 9 damage; grabbed
+> - **17+:** 9 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **2 Malice:** If this ability gains an edge or has a double edge, it deals an extra 2 damage.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If this ability gains an edge or has a double edge, it deals an extra 2 damage.
 
-> 👤 **Dive (1 Malice)**
+> 👤 **Dive (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Maneuver** |
 > |-------------|-------------:|
@@ -13853,7 +13853,7 @@ At the start of any human's turn, you can spend Malice to activate one of the fo
 
 > ⭐️ **Mounted Platform**
 >
-> Once per turn when the hawk moves, any creature riding the hawk can make a free strike during or after the movement.
+> Once per turn when the hawk moves, any creature riding the hawk can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) during or after the movement.
 
 <!-- @type: monster | @category: kingfissure-worm -->
 ## Kingfissure Worm
@@ -13887,9 +13887,9 @@ For all their might and vitality, kingfissure worms are primarily ambush hunters
 <!-- @type: featureblock -->
 ######### Kingfissure Worm Malice (Malice Features)
 
-At the start of a kingfissure worm's turn or when an action's trigger occurs, you can spend Malice to activate one of the following features.
+At the start of a kingfissure worm's turn or when an action's trigger occurs, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ❗️ **Aftershock (3 Malice)**
+> ❗️ **Aftershock (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
@@ -13897,17 +13897,17 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Trigger:** A creature deals damage to the kingfissure worm or one of their tongues.
 >
-> **Effect:** Each creature within 5 squares of the kingfissure worm takes 5 damage, and if they have A < 4 they are knocked prone. The kingfissure worm can use this ability only once per round.
+> **Effect:** Each creature within 5 squares of the kingfissure worm takes 5 damage, and if they have A < 4 they are knocked [prone](scc:mcdm.heroes.v1/condition/prone). The kingfissure worm can use this ability only once per round.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The kingfissure worm takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The kingfissure worm takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 👤 **Spontaneous Regeneration (5 Malice)**
+> 👤 **Spontaneous Regeneration (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The kingfissure worm loses 35 Stamina and regrows one tongue, to a maximum of three tongues. The worm is then dazed until the end of their turn.
+> The kingfissure worm loses 35 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and regrows one tongue, to a maximum of three tongues. The worm is then [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of their turn.
 
-> ❇️ **Megaquake (7 Malice)**
+> ❇️ **Megaquake (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |                          **Main action** |
 > |------------------|-----------------------------------------:|
@@ -13915,11 +13915,11 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 8 damage; M < 3 slide 5
-> - **12-16:** 13 damage; M < 4 slide 5
-> - **17+:** 17 damage; M < 5 slide 5
+> - **≤11:** 8 damage; M < 3 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **12-16:** 13 damage; M < 4 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **17+:** 17 damage; M < 5 [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **Effect:** Until the end of the next round, each target takes a −3 penalty to stability, treats all terrain as difficult terrain, and takes 10 damage whenever they are knocked prone.
+> **Effect:** Until the end of the next round, each target takes a −3 penalty to stability, treats all terrain as [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and takes 10 damage whenever they are knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 <!-- @type: statblock -->
 ####### Kingfissure Worm
@@ -13932,13 +13932,13 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the kingfissure worm can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect):** At the end of each of their turns, the kingfissure worm can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The kingfissure worm can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Multiple Tongues**
 >
-> The kingfissure worm has three tongues. Each tongue is a 5 x 1 line within 1 square of the kingfissure worm, has 35 Stamina and psychic immunity all, and can't be force moved. Each tongue enables the kingfissure worm to grab one size 3 or smaller creature or object. A tongue can be targeted by abilities only while it has a target grabbed.
+> The kingfissure worm has three tongues. Each tongue is a 5 x 1 line within 1 square of the kingfissure worm, has 35 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and psychic immunity all, and can't be [force moved](scc:mcdm.heroes.v1/movement/forced-movement). Each tongue enables the kingfissure worm to [grab](scc:mcdm.heroes.v1/condition/grabbed) one size 3 or smaller creature or object. A tongue can be targeted by abilities only while it has a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 > 🗡 **Tongue Grab (Signature Ability)**
 >
@@ -13948,11 +13948,11 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 13 damage; M < 3 grabbed
-> - **12-16:** 18 damage; M < 4 grabbed
-> - **17+:** 22 damage; M < 5 grabbed and the target takes a bane on the Escape Grab maneuver
+> - **≤11:** 13 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 18 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 22 damage; M < 5 [grabbed](scc:mcdm.heroes.v1/condition/grabbed) and the target takes a bane on the Escape Grab maneuver
 >
-> **Effect:** The kingfissure worm must have one or more tongues to use this ability. As a maneuver, the kingfissure worm can pull up to two creatures grabbed this way adjacent to them.
+> **Effect:** The kingfissure worm must have one or more tongues to use this ability. As a maneuver, the kingfissure worm can [pull](scc:mcdm.heroes.v1/movement/forced-movement) up to two creatures [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
 > 🗡 **Maw**
 >
@@ -13962,13 +13962,13 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; push 3
-> - **12-16:** 20 damage; push 5, prone
+> - **≤11:** 15 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 20 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5, [prone](scc:mcdm.heroes.v1/condition/prone)
 > - **17+:** 25 damage; the target is swallowed (see Swallowed)
 >
-> **2 Malice:** When the kingfissure worm uses the Charge main action, they ignore difficult terrain and automatically destroy mundane size 3 and smaller objects in the path of their charge. The first time the kingfissure worm moves through a creature's space during this charge, that creature takes 8 damage and is pushed up to 3 squares.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** When the kingfissure worm uses the Charge main action, they ignore [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and automatically destroy mundane size 3 and smaller objects in the path of their charge. The first time the kingfissure worm moves through a creature's space during this charge, that creature takes 8 damage and is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares.
 
-> 🗡 **Consume (2 Malice)**
+> 🗡 **Consume (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |             **Main action** |
 > |----------------|----------------------------:|
@@ -13982,7 +13982,7 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 > |-----------------------------------|------------------------------:|
 > | **📏 Melee 5 or ranged 10**       | **🎯 One creature or object** |
 >
-> **Effect:** The kingfissure worm can use this maneuver only while they have a creature or object grabbed. The worm slams the grabbed creature or object against the target, dealing 13 damage to both. If this ability is used at range, it deals an extra 5 damage and the grabbed creature or object is released.
+> **Effect:** The kingfissure worm can use this maneuver only while they have a creature or object [grabbed](scc:mcdm.heroes.v1/condition/grabbed). The worm slams the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or object against the target, dealing 13 damage to both. If this ability is used at range, it deals an extra 5 damage and the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature or object is released.
 
 > ❗️ **Tearing Recoil**
 >
@@ -13990,9 +13990,9 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 > |-------------|---------------------:|
 > | **📏 Self** |       **🎯 Special** |
 >
-> **Trigger:** A tongue takes damage that doesn't reduce it to 0 Stamina.
+> **Trigger:** A tongue takes damage that doesn't reduce it to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
-> **Effect:** The kingfissure worm deals 5 damage to the creature or object the tongue had grabbed, releases that creature or object, then pulls the damaged tongue back into their mouth.
+> **Effect:** The kingfissure worm deals 5 damage to the creature or object the tongue had [grabbed](scc:mcdm.heroes.v1/condition/grabbed), releases that creature or object, then pulls the damaged tongue back into their mouth.
 
 > ⭐️ **Seismic King**
 >
@@ -14000,17 +14000,17 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 
 > ⭐️ **Swallowed**
 >
-> A creature swallowed by the kingfissure worm is restrained and takes 1d6 acid damage at the start of every turn. If the worm takes 25 or more damage in a single round from swallowed creatures, they immediately regurgitate all creatures they have swallowed, who land prone in unoccupied spaces within 3 squares of the kingfissure worm.
+> A creature swallowed by the kingfissure worm is [restrained](scc:mcdm.heroes.v1/condition/restrained) and takes 1d6 acid damage at the start of every turn. If the worm takes 25 or more damage in a single round from swallowed creatures, they immediately regurgitate all creatures they have swallowed, who land [prone](scc:mcdm.heroes.v1/condition/prone) in unoccupied spaces within 3 squares of the kingfissure worm.
 
 > ⭐️ **Titanic Tunneler**
 >
-> The kingfissure worm can burrow through stone. When the worm burrows, they create a stable size 3 tunnel in the squares they move through.
+> The kingfissure worm can [burrow](scc:mcdm.heroes.v1/movement/burrow) through stone. When the worm burrows, they create a stable size 3 tunnel in the squares they move through.
 
 > ⭐️ **Unstoppable Crawler**
 >
-> The kingfissure worm can't be frightened or knocked prone. While the worm is restrained or slowed, they take a −2 penalty to speed instead of suffering those conditions' usual effects on speed.
+> The kingfissure worm can't be [frightened](scc:mcdm.heroes.v1/condition/frightened) or knocked [prone](scc:mcdm.heroes.v1/condition/prone). While the worm is [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed), they take a −2 penalty to speed instead of suffering those conditions' usual effects on speed.
 
-> ☠️ **King's Fissure (Villain Action 1)**
+> ☠️ **King's Fissure ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Weapon**            |                                       **-** |
 > |-----------------------------|--------------------------------------------:|
@@ -14020,19 +14020,19 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Effect:** The area becomes a 10-square-deep fissure in the earth. Each target makes an **Agility test**.
 >
-> - **≤11:** 10 damage; the target falls into the fissure, lands prone, and can't stand (EoT)
-> - **12-16:** 10 damage; the target is knocked prone and left hanging at the edge of the area
-> - **17+:** The target shifts to the nearest unoccupied space outside the area.
+> - **≤11:** 10 damage; the target falls into the fissure, lands [prone](scc:mcdm.heroes.v1/condition/prone), and can't stand (EoT)
+> - **12-16:** 10 damage; the target is knocked [prone](scc:mcdm.heroes.v1/condition/prone) and left hanging at the edge of the area
+> - **17+:** The target [shifts](scc:mcdm.heroes.v1/movement/shifting) to the nearest unoccupied space outside the area.
 
-> ☠️ **Earth Breach (Villain Action 2)**
+> ☠️ **Earth Breach ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Weapon**  |          **-** |
 > |-------------|---------------:|
 > | **📏 Self** | **🎯 Special** |
 >
-> **Effect:** The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have A < 4 they are knocked prone. Any creature who is made winded by this damage is swallowed (see Swallowed).
+> **Effect:** The kingfissure worm can use this villain action only while burrowing. The worm burrows up to half their speed, then breaches the surface and moves 5 squares straight up before dropping back to the ground. Each creature or object whose space the worm moves through during this movement takes 10 damage, and if they have A < 4 they are knocked [prone](scc:mcdm.heroes.v1/condition/prone). Any creature who is made [winded](scc:mcdm.heroes.v1/rule.health/winded) by this damage is swallowed (see Swallowed).
 
-> ☠️ **Better Out Than In (Villain Action 3)**
+> ☠️ **Better Out Than In ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Weapon** |                                    **-** |
 > |------------------|-----------------------------------------:|
@@ -14040,11 +14040,11 @@ At the start of a kingfissure worm's turn or when an action's trigger occurs, yo
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 8 acid damage; P < 3 weakened (save ends)
-> - **12-16:** 13 acid damage; P < 4 weakened (save ends)
-> - **17+:** 17 acid damage; P < 5 weakened (save ends)
+> - **≤11:** 8 acid damage; P < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 13 acid damage; P < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 17 acid damage; P < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Each creature swallowed by the worm is regurgitated and automatically subject to the tier 3 outcome, then lands prone in an unoccupied space within 5 squares of the kingfissure worm.
+> **Effect:** Each creature swallowed by the worm is regurgitated and automatically subject to the tier 3 outcome, then lands [prone](scc:mcdm.heroes.v1/condition/prone) in an unoccupied space within 5 squares of the kingfissure worm.
 
 <!-- @type: monster | @category: kobolds -->
 ## Kobolds
@@ -14088,17 +14088,17 @@ Most kobolds speak Kethaic and can understand Caelian.
 <!-- @type: featureblock -->
 ######### Kobold Malice (Malice Features)
 
-At the start of any kobolds's turn, you can spend Malice to activate one of the following features.
+At the start of any kobolds's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Maniple Tactics (3 Malice)**
+> ⭐️ **Maniple Tactics (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Up to 3 kobolds make a free strike, swaps positions with an adjacent kobold, and then that kobold makes a free strike.
+> Up to 3 kobolds make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), swaps positions with an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) kobold, and then that kobold makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-> 🌀 **Set the Initiative (5 Malice)**
+> 🌀 **Set the Initiative (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Two kobolds take their turns in a row.
 
-> ⭐️ **Shield Wall (7 Malice)**
+> ⭐️ **Shield Wall (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, all kobolds with Shield? Shield! impose an additional bane on incoming strikes and abilities.
 
@@ -14123,11 +14123,11 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > - **12-16:** 2 damage
 > - **17+:** 3 damage
 >
-> **Effect:** One ally within 3 squares of the princeps shifts up to 2 squares.
+> **Effect:** One ally within 3 squares of the princeps [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the princeps has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the princeps has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Sagittarion
@@ -14150,11 +14150,11 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** While adjacent to any ally, the sagittarion gains an edge on this ability.
+> **Effect:** While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to any ally, the sagittarion gains an edge on this ability.
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the sagittarion has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the sagittarion has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Tiro
@@ -14174,14 +14174,14 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > **Power Roll + 2:**
 >
 > - **≤11:** 1 damage
-> - **12-16:** 2 damage; the tiro can shift 1 square
-> - **17+:** 3 damage; the tiro shifts up to 2 squares
+> - **12-16:** 2 damage; the tiro can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **17+:** 3 damage; the tiro [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
 >
-> **Effect:** The target can't shift until the start of the tiro's next turn.
+> **Effect:** The target can't [shift](scc:mcdm.heroes.v1/movement/shifting) until the start of the tiro's next turn.
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the tiro has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the tiro has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Veles
@@ -14208,7 +14208,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the veles has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the veles has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Adeptus
@@ -14249,7 +14249,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the adeptus has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the adeptus has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Artifex
@@ -14272,7 +14272,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > - **12-16:** 4 damage; pull 2
 > - **17+:** 5 damage; pull 3
 >
-> **Effect:** If this forced movement triggers a trap that uses a power roll, that roll has a double edge.
+> **Effect:** If this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) triggers a trap that uses a power roll, that roll has a double edge.
 
 > ⭐️ **Activate Trap**
 >
@@ -14282,11 +14282,11 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Effect:** The trap or terrain object instantly triggers.
 >
-> **3 Malice:** The artifex places a new trap in the encounter and can instantly trigger it. The artifex prefers working with angry beehives, flammable oil, snare traps, and spike traps (see Dynamic Terrain).
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The artifex places a new trap in the encounter and can instantly trigger it. The artifex prefers working with angry beehives, flammable oil, snare traps, and spike traps (see Dynamic Terrain).
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the artifex has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the artifex has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Legionary
@@ -14305,11 +14305,11 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; taunted (EoT)
-> - **12-16:** 4 damage; taunted (EoT)
-> - **17+:** 5 damage; taunted (EoT)
+> - **≤11:** 3 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **12-16:** 4 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **17+:** 5 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 >
-> **3 Malice:** If the legionary is acting as a captain, they and each member of their squad shift up to 2 squares before this ability is used.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** If the legionary is acting as a [captain](scc:mcdm.monsters.v1/rule.monster/captain), they and each member of their [squad](scc:mcdm.monsters.v1/rule.monster/squad) [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares before this ability is used.
 
 > 🗡 **Shield Bash**
 >
@@ -14319,13 +14319,13 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; push 1; M < 0 prone
-> - **12-16:** 3 damage; push 1; M < 1 prone
-> - **17+:** 4 damage; push 1; M < 2 prone
+> - **≤11:** 2 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 3 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 4 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the legionary has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the legionary has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Kobold Signifer
@@ -14348,25 +14348,25 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** One ally within 10 squares of the signifer can shift up to their speed if they end that shift adjacent to an ally.
+> **Effect:** One ally within 10 squares of the signifer can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed if they end that shift [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally.
 >
-> **2+ Malice:** One additional ally can shift for each 2 Malice spent.
+> **2+ [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** One additional ally can [shift](scc:mcdm.heroes.v1/movement/shifting) for each 2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent.
 
-> ❇️ **Glory to the Legion (5 Malice)**
+> ❇️ **Glory to the Legion (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                 **Maneuver** |
 > |----------------|-----------------------------:|
 > | **📏 5 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target regains 5 Stamina.
+> **Effect:** Each target regains 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the signifer has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the signifer has stability 1, has cover, and grants cover to allies.
 
 > ⭐️ **Upholding High Standards**
 >
-> Any ally who starts their turn within 5 squares of the signifer gains a +2 bonus to speed and a +2 damage bonus to strikes until the end of their turn. Additionally, if the signifer is killed, any kobold minion can enter their space during the same encounter to retrieve the signum battle standard they carry (no action required) and replace their stat block with the signifer stat block.
+> Any ally who starts their turn within 5 squares of the signifer gains a +2 bonus to speed and a +2 damage bonus to strikes until the end of their turn. Additionally, if the signifer is killed, any kobold [minion](scc:mcdm.monsters.v1/rule.organization/minion) can enter their space during the same encounter to retrieve the signum battle standard they carry (no action required) and replace their stat block with the signifer stat block.
 
 <!-- @type: statblock -->
 ####### Kobold Venator
@@ -14386,22 +14386,22 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; M < 1 restrained (save ends)
-> - **17+:** 7 damage; M < 2 restrained (save ends)
+> - **12-16:** 6 damage; M < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 7 damage; M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **3 Malice:** The venator lights their net on fire, and a target restrained this way takes 2 fire damage at the start of each of their turns.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The venator lights their net on fire, and a target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way takes 2 fire damage at the start of each of their turns.
 
 > ⭐️ **Lost in the Crowd**
 >
-> While the venator is adjacent to any ally who is not hiding, the venator can attempt to hide as if they had concealment, even if observed.
+> While the venator is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to any ally who is not hiding, the venator can attempt to hide as if they had concealment, even if observed.
 
 > ⭐️ **Not What I Seem**
 >
-> The venator starts the encounter disguised as a minion. They have a double edge on their first main action of the encounter, after which they reveal themself.
+> The venator starts the encounter disguised as a [minion](scc:mcdm.monsters.v1/rule.organization/minion). They have a double edge on their first main action of the encounter, after which they reveal themself.
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the venator has stability 1, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the venator has stability 1, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Trained Gummy Brick
@@ -14420,13 +14420,13 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 acid damage; A < 0 dazed (save ends)
-> - **12-16:** 10 acid damage; A < 1 dazed (save ends)
-> - **17+:** 14 acid damage; A < 2 restrained (save ends)
+> - **≤11:** 7 acid damage; A < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 10 acid damage; A < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 14 acid damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A size 2 or smaller creature restrained this way is pulled into the brick's space, moves with the brick, and takes 4 acid damage at the start of each of their turns. An engulfed creature who is no longer restrained moves to the nearest unoccupied space adjacent to the brick. The brick can have as many creatures or objects engulfed as will fit within their space.
+> **Effect:** A size 2 or smaller creature [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is [pulled](scc:mcdm.heroes.v1/movement/forced-movement) into the brick's space, moves with the brick, and takes 4 acid damage at the start of each of their turns. An engulfed creature who is no longer [restrained](scc:mcdm.heroes.v1/condition/restrained) moves to the nearest unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the brick. The brick can have as many creatures or objects engulfed as will fit within their space.
 >
-> **2 Malice:** This ability targets one additional target.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** This ability targets one additional target.
 
 > ❗️ **You Didn't Pay Attention!**
 >
@@ -14434,7 +14434,7 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > |-------------|------------------------------:|
 > | **📏 Self** | **🎯 One creature or object** |
 >
-> **Trigger:** A creature moves or is force moved adjacent to the brick.
+> **Trigger:** A creature moves or is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the brick.
 >
 > **Effect:** The brick uses Engulf against the triggering creature and has a double edge.
 
@@ -14459,13 +14459,13 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 damage; M < 1 weakened (save ends)
-> - **12-16:** 10 damage; M < 1 weakened (save ends)
-> - **17+:** 13 damage; M < 1 weakened (save ends)
+> - **≤11:** 7 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 10 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 13 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Each ally adjacent to a target can make a free strike against that target.
+> **Effect:** Each ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that target.
 >
-> **3 Malice:** While weakened this way, a target is also restrained.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, a target is also [restrained](scc:mcdm.heroes.v1/condition/restrained).
 
 > 🏹 **Concentrate All Fire on That Hero!**
 >
@@ -14483,39 +14483,39 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Trigger:** A creature uses an ability that targets the centurion or an ally of the centurion within distance.
 >
-> **Effect:** Each target shifts up to 2 squares before the damage is resolved. Each kobold with the Shield? Shield! trait gains damage immunity 2 against the triggering ability.
+> **Effect:** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares before the damage is resolved. Each kobold with the Shield? Shield! trait gains damage immunity 2 against the triggering ability.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the centurion can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the centurion can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
-> ☠️ **Firetail Pilum (Villain Action 1)**
+> ☠️ **Firetail Pilum ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **-**          |          **-** |
 > |----------------|---------------:|
 > | **📏 Special** | **🎯 Special** |
 >
-> **Effect:** The centurion moves up to their speed, ignoring difficult terrain, and uses Pilum against each creature whose space they move through. They make one power roll against all targets, and the ability deals an extra 5 damage. While weakened by that ability, each target takes 2 fire damage at the start of each of their turns.
+> **Effect:** The centurion moves up to their speed, ignoring [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and uses Pilum against each creature whose space they move through. They make one power roll against all targets, and the ability deals an extra 5 damage. While [weakened](scc:mcdm.heroes.v1/condition/weakened) by that ability, each target takes 2 fire damage at the start of each of their turns.
 
-> ☠️ **Boom Pilum! (Villain Action 2)**
+> ☠️ **Boom Pilum! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Weapon, Ranged** |                         **-** |
 > |--------------------------|------------------------------:|
 > | **📏 5 cube within 10**  | **🎯 Each enemy in the area** |
 >
-> **Effect:** The centurion uses Pilum against each target and has a double edge. Each target is then pushed up to 3 squares.
+> **Effect:** The centurion uses Pilum against each target and has a double edge. Each target is then [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 3 squares.
 
-> ☠️ **Are You Not Entertained?! (Villain Action 3)**
+> ☠️ **Are You Not Entertained?! ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**        |                         **-** |
 > |-----------------|------------------------------:|
 > | **📏 10 burst** | **🎯 Each enemy in the area** |
 >
-> **Effect:** A target who has P < 2 is taunted (save ends). Each ally within distance can make a free strike. Additionally, until the end of the encounter, the centurion has damage immunity 2.
+> **Effect:** A target who has P < 2 is [taunted](scc:mcdm.heroes.v1/condition/taunted) (save ends). Each ally within distance can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Additionally, until the end of the encounter, the centurion has damage immunity 2.
 
 > ⭐️ **Shield? Shield!**
 >
-> While adjacent to an ally who also has this trait, the centurion has stability 3, has cover, and grants cover to allies.
+> While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to an ally who also has this trait, the centurion has stability 3, has cover, and grants cover to allies.
 
 <!-- @type: statblock -->
 ####### Shieldscale Drangolin
@@ -14546,9 +14546,9 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 > |------------------------|----------------:|
 > | **📏 Self; see below** |     **🎯 Self** |
 >
-> **Effect:** The drangolin shifts up to their speed and uses Fiery Claws against each creature who comes adjacent to them during the shift. The drangolin makes one power roll against all targets.
+> **Effect:** The drangolin [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and uses Fiery Claws against each creature who comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them during the shift. The drangolin makes one power roll against all targets.
 
-> ❇️ **Erupt (3 Malice)**
+> ❇️ **Erupt (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |                  **Main action** |
 > |------------------|---------------------------------:|
@@ -14558,17 +14558,17 @@ At the start of any kobolds's turn, you can spend Malice to activate one of the 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 6 damage; push 1; A < 0 prone
-> - **12-16:** 8 damage; push 3; A < 0 prone
-> - **17+:** 11 damage; push 5; A < 0 prone
+> - **≤11:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1; A < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5; A < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ⭐️ **Ashen Cloud**
 >
-> Any ally adjacent to the drangolin has concealment.
+> Any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the drangolin has concealment.
 
 > ⭐️ **Burrow Bond**
 >
-> When the drangolin burrows, each adjacent size 1S or smaller ally can move with them.
+> When the drangolin burrows, each [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) size 1S or smaller ally can move with them.
 
 <!-- @type: monster | @category: lightbenders -->
 ## Lightbenders
@@ -14590,17 +14590,17 @@ Though lightbenders are typically solitary creatures, they sometimes cross into 
 <!-- @type: featureblock -->
 ######### Lightbender Malice (Malice Features)
 
-At the start of any lightbender's turn, you can spend Malice to activate one of the following features.
+At the start of any lightbender's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Silent Prowl (3 Malice)**
+> ⭐️ **Silent Prowl (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each lightbender acting this turn can teleport up to their speed as a move action and attempt to hide as a free maneuver, all until the start of their next turn.
+> Each lightbender acting this turn can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to their speed as a move action and attempt to hide as a free maneuver, all until the start of their next turn.
 
-> ⭐️ **Duplicate (5 Malice)**
+> ⭐️ **Duplicate (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each lightbender acting this turn can create a duplicate lightbender in an unoccupied space adjacent to them. The duplicate is indistinguishable from the lightbender except by supernatural means, has 1 Stamina, and has the lightbender's speed. A duplicate acts on the lightbender's turn but can take only move actions. Once per round before or after using an ability, a lightbender can trade places with any lightbender duplicate.
+> Each lightbender acting this turn can create a duplicate lightbender in an unoccupied space [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. The duplicate is indistinguishable from the lightbender except by supernatural means, has 1 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), and has the lightbender's speed. A duplicate acts on the lightbender's turn but can take only move actions. Once per round before or after using an ability, a lightbender can trade places with any lightbender duplicate.
 
-> ❇️ **Everything the Light Touches (7 Malice)**
+> ❇️ **Everything the Light Touches (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Each lightbender in the encounter shines radiantly, distorting the senses of any enemy within 5 squares of them. Each affected enemy makes a **Reason test**.
 >
@@ -14640,12 +14640,12 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 > **Power Roll + 2:**
 >
 > - **≤11:** 8 damage
-> - **12-16:** 12 damage; M < 1 bleeding (save ends)
-> - **17+:** 15 damage; M < 2 bleeding (save ends)
+> - **12-16:** 12 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 15 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** While bleeding this way, the target takes a bane on tests to search for the lightbender while they are hidden.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes a bane on tests to search for the lightbender while they are hidden.
 
-> ❇️ **Hypnotic Mane (5 Malice)**
+> ❇️ **Hypnotic Mane (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |                  **Maneuver** |
 > |-----------------|------------------------------:|
@@ -14653,11 +14653,11 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** I < 0 dazed (save ends)
-> - **12-16:** I < 1 dazed (save ends)
-> - **17+:** I < 2 dazed (save ends)
+> - **≤11:** I < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the dazed condition ends.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the [dazed](scc:mcdm.heroes.v1/condition/dazed) condition ends.
 
 > ❗️ **Stalker's Afterimage**
 >
@@ -14667,11 +14667,11 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > **Trigger:** The lightbender takes damage from a strike.
 >
-> **Effect:** The lightbender halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the lightbender can immediately attempt to hide as a free maneuver.
+> **Effect:** The lightbender halves the damage, ignores any nondamaging effects associated with it, and can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If they [teleport](scc:mcdm.heroes.v1/movement/teleport) into concealment or cover, the lightbender can immediately attempt to hide as a free maneuver.
 
 > ⭐️ **Avoidance**
 >
-> Any effect on the lightbender that would be ended by a saving throw instead ends automatically at the end of their next turn.
+> Any effect on the lightbender that would be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) instead ends automatically at the end of their next turn.
 
 <!-- @type: statblock -->
 ####### Lightbender Pouncer
@@ -14691,10 +14691,10 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; A < 1 prone
-> - **17+:** 14 damage; A < 2 prone
+> - **12-16:** 11 damage; A < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 14 damage; A < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** The pouncer can make a free strike against each target they knock prone.
+> **Effect:** The pouncer can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each target they knock [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ❇️ **Sparkling Tail Whip**
 >
@@ -14710,7 +14710,7 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > **Effect:** A dazzled target takes a bane on strikes and has line of effect only within 1 square.
 
-> 🔳 **Illusory Feint (5 Malice)**
+> 🔳 **Illusory Feint (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic, Ranged** |                  **Maneuver** |
 > |-------------------------|------------------------------:|
@@ -14718,11 +14718,11 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** I < 0 dazed (save ends)
-> - **12-16:** I < 1 dazed (save ends)
-> - **17+:** I < 2 dazed (save ends)
+> - **≤11:** I < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** While dazed this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the dazed condition ends.
+> **Effect:** While [dazed](scc:mcdm.heroes.v1/condition/dazed) this way, a target has speed 0. If a target takes damage, or if someone else uses a main action to shake the target out of their stupor, the [dazed](scc:mcdm.heroes.v1/condition/dazed) condition ends.
 
 > ❗️ **Striking Afterimage**
 >
@@ -14732,11 +14732,11 @@ At the start of any lightbender's turn, you can spend Malice to activate one of 
 >
 > **Trigger:** The pouncer takes damage from a strike.
 >
-> **Effect:** The pouncer halves the damage, ignores any nondamaging effects associated with it, and can teleport up to 5 squares. If they teleport into concealment or cover, the pouncer can immediately attempt to hide as a free maneuver.
+> **Effect:** The pouncer halves the damage, ignores any nondamaging effects associated with it, and can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. If they [teleport](scc:mcdm.heroes.v1/movement/teleport) into concealment or cover, the pouncer can immediately attempt to hide as a free maneuver.
 
 > ⭐️ **Avoidance**
 >
-> Any effect on the pouncer that would be ended by a saving throw instead ends automatically at the end of their next turn.
+> Any effect on the pouncer that would be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) instead ends automatically at the end of their next turn.
 
 <!-- @type: monster | @category: lizardfolk -->
 ## Lizardfolk
@@ -14777,9 +14777,9 @@ Most lizardfolk speak Caelian and their own dialect of Khamish.
 <!-- @type: featureblock -->
 ######### Lizardfolk Malice (Malice Features)
 
-At the start of any lizardfolk's turn, you can spend Malice to activate one of the following features.
+At the start of any lizardfolk's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🔳 **Net Trap (3 Malice)**
+> 🔳 **Net Trap (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 >  **Area, Ranged, Weapon** |   **Maneuver** |
 > |--------------------------|---------------:|
@@ -14787,21 +14787,21 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Effect:** A lizardfolk acting this turn sets up a net trap into the area. The first time an enemy steps into a square with a net trap, they make an **Agility test**. If the creature was unaware of the trap, they take a bane on the test.
 >
-> - **≤11:** Restrained (save ends).
-> - **12-16:** Restrained (Eot).
+> - **≤11:** [Restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
+> - **12-16:** [Restrained](scc:mcdm.heroes.v1/condition/restrained) (Eot).
 > - **17+:** No effect.
 >
-> **Effect:** Any creature not also restrained by a net trap who is adjacent to a creature restrained by the trap can free them as a maneuver.
+> **Effect:** Any creature not also [restrained](scc:mcdm.heroes.v1/condition/restrained) by a net trap who is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature [restrained](scc:mcdm.heroes.v1/condition/restrained) by the trap can free them as a maneuver.
 
-> 🔳 **Water Pit (5 Malice)**
+> 🔳 **Water Pit (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A lizardfolk acting this turn unearths a magical size 2 pit that is 2 squares deep and filled with water. Any lizardfolk who moves into, then exits the pit on their turn gains 10 temporary Stamina, regrows their tail if applicable, and ends one effect on them that can be ended by a saving throw. While adjacent to the pit, any creature who can burrow or who has the Nature skill can make a **Might test** or a **Reason test** to drain it.
+> A lizardfolk acting this turn unearths a magical size 2 pit that is 2 squares deep and filled with water. Any lizardfolk who moves into, then exits the pit on their turn gains 10 temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina), regrows their tail if applicable, and ends one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). While [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the pit, any creature who can [burrow](scc:mcdm.heroes.v1/movement/burrow) or who has the Nature skill can make a **Might test** or a **Reason test** to drain it.
 >
-> - **≤11:** The creature falls into the pit and is knocked prone.
+> - **≤11:** The creature falls into the pit and is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 > - **12-16:** The creature fails to empty the pit.
 > - **17+:** The pit empties of water.
 
-> 🌀 **Flood the Shores (7 Malice)**
+> 🌀 **Flood the Shores (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Waist-high water floods the entire encounter map. Any lizardfolk submerged in water gains an edge on abilities and doubles their speed while swimming. If there are no open water pits on the encounter map, the water drains away at the end of the round.
 
@@ -14823,12 +14823,12 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 > **Power Roll + 2:**
 >
 > - **≤11:** 1 damage
-> - **12-16:** 2 damage; slide 2
-> - **17+:** 3 damage; slide 2
+> - **12-16:** 2 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 3 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
 
 > ⭐️ **Reptilian Escape**
 >
-> While the grunt has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the grunt has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 <!-- @type: statblock -->
 ####### Lizardfolk Shellguard
@@ -14855,7 +14855,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 
 > ⭐️ **Reptilian Escape**
 >
-> While the shellguard has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the shellguard has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 <!-- @type: statblock -->
 ####### Lizardfolk Tonguer
@@ -14874,15 +14874,15 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 2 damage; pull 1, or the tonguer can shift 1 square toward the target
-> - **12-16:** 4 damage; pull 2, or the tonguer shifts up to 2 squares toward the target
-> - **17+:** 5 damage; pull 3, or the tonguer shifts up to 3 squares toward the target
+> - **≤11:** 2 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1, or the tonguer can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square toward the target
+> - **12-16:** 4 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2, or the tonguer [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares toward the target
+> - **17+:** 5 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3, or the tonguer [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares toward the target
 >
-> **Effect:** If the forced movement or the shift leaves the target adjacent to the tonguer, the target is also grabbed.
+> **Effect:** If the [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) or the [shift](scc:mcdm.heroes.v1/movement/shifting) leaves the target [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the tonguer, the target is also [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
 > ⭐️ **Reptilian Escape**
 >
-> While the tonguer has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the tonguer has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 <!-- @type: statblock -->
 ####### Lizardfolk Bloodeye
@@ -14901,11 +14901,11 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; A < 0 restrained (save ends)
-> - **12-16:** 7 damage; A < 1 restrained (save ends)
-> - **17+:** 9 damage; A < 2 restrained (save ends)
+> - **≤11:** 5 damage; A < 0 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 7 damage; A < 1 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 9 damage; A < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
-> 🏹 **Bloodshot (2 Malice)**
+> 🏹 **Bloodshot (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |     **Main action** |
 > |----------------------------|--------------------:|
@@ -14919,7 +14919,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 
 > ⭐️ **Reptilian Escape**
 >
-> While the bloodeye has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the bloodeye has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 <!-- @type: statblock -->
 ####### Lizardfolk Scaletooth
@@ -14942,9 +14942,9 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 > - **12-16:** 9 damage
 > - **17+:** 12 damage; A < 2 bleeding (save ends)
 >
-> **Effect:** If the scaletooth has the target grabbed, the potency of this ability increases by 1.
+> **Effect:** If the scaletooth has the target [grabbed](scc:mcdm.heroes.v1/condition/grabbed), the [potency](scc:mcdm.heroes.v1/rule.character/potency) of this ability increases by 1.
 
-> 🗡 **Tail Whip (2 Malice)**
+> 🗡 **Tail Whip (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -14952,13 +14952,13 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; slide 1
-> - **12-16:** 8 damage; slide 2; M < 1 grabbed if within 2 squares of the scaletooth
-> - **17+:** 10 damage; slide 3; M < 2 grabbed if within 2 squares of the scaletooth
+> - **≤11:** 5 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 8 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed) if within 2 squares of the scaletooth
+> - **17+:** 10 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed) if within 2 squares of the scaletooth
 
 > ⭐️ **Reptilian Escape**
 >
-> While the scaletooth has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the scaletooth has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 <!-- @type: statblock -->
 ####### Lizardfolk Skyterror
@@ -14979,9 +14979,9 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > - **≤11:** 5 damage
 > - **12-16:** 7 damage
-> - **17+:** 9 damage; prone
+> - **17+:** 9 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** If the skyterror is flying, they shift up to 4 squares.
+> **Effect:** If the skyterror is [flying](scc:mcdm.heroes.v1/movement/fly), they [shift](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares.
 
 > 🏹 **Poison Blow Dart**
 >
@@ -14991,19 +14991,19 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; M < 0 weakened (save ends)
-> - **12-16:** 5 damage; M < 1 weakened (save ends)
-> - **17+:** 7 damage; M < 2 weakened (save ends)
+> - **≤11:** 3 damage; M < 0 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 5 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 7 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Any creature who ends their turn adjacent to a target weakened this way is weakened until the end of their next turn.
+> **Effect:** Any creature who ends their turn [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target [weakened](scc:mcdm.heroes.v1/condition/weakened) this way is [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of their next turn.
 
 > ⭐️ **Glider**
 >
-> Whenever the skyterror moves 2 or more squares along the ground or falls 2 or more squares, they can fly until the end of their next turn.
+> Whenever the skyterror moves 2 or more squares along the ground or falls 2 or more squares, they can [fly](scc:mcdm.heroes.v1/movement/fly) until the end of their next turn.
 
 > ⭐️ **Reptilian Escape**
 >
-> While the skyterror has a tail, whenever they are grabbed, prone, slowed, or weakened, they can lose their tail to immediately end that condition, then shift up to 2 squares.
+> While the skyterror has a tail, whenever they are [grabbed](scc:mcdm.heroes.v1/condition/grabbed), [prone](scc:mcdm.heroes.v1/condition/prone), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened), they can lose their tail to immediately end that condition, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 
 <!-- @type: statblock -->
@@ -15023,13 +15023,13 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 7 damage; pull 1; A < 1 bleeding (save ends)
-> - **12-16:** 10 damage; pull 1; A < 2 bleeding (save ends)
-> - **17+:** 12 damage; pull 2; A < 3 bleeding (save ends)
+> - **≤11:** 7 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1; A < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 10 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 12 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **1 Malice:** One target adjacent to the deathrex is grabbed in the deathrex's mouth.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** One target [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the deathrex is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) in the deathrex's mouth.
 
-> 🗡 **Death Roll (3 Malice)**
+> 🗡 **Death Roll (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |                       **Main action** |
 > |---------------------------|--------------------------------------:|
@@ -15037,11 +15037,11 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 8 damage; M < 1 dazed (save ends)
-> - **12-16:** 12 damage; M < 2 dazed (save ends)
-> - **17+:** 15 damage; M < 3 dazed (save ends)
+> - **≤11:** 8 damage; M < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 12 damage; M < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 15 damage; M < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** The target is no longer grabbed by the deathrex, and the deathrex slides them up to 5 squares.
+> **Effect:** The target is no longer [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the deathrex, and the deathrex [slides](scc:mcdm.heroes.v1/movement/forced-movement) them up to 5 squares.
 
 > 👤 **Trundle**
 >
@@ -15049,7 +15049,7 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The deathrex moves up to their speed. They can make a free strike against each creature who makes an opportunity attack against them during this movement.
+> **Effect:** The deathrex moves up to their speed. They can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each creature who makes an opportunity attack against them during this movement.
 
 > ❗️ **Swat the Fly**
 >
@@ -15057,37 +15057,37 @@ At the start of any lizardfolk's turn, you can spend Malice to activate one of t
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object within distance moves or shifts away from the deathrex.
+> **Trigger:** A creature or object within distance moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) away from the deathrex.
 >
-> **Effect:** The deathrex slides the target up to 5 squares.
+> **Effect:** The deathrex [slides](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 5 squares.
 
 > ⭐️ **Rex Reptilian Escape**
 >
-> While the deathrex has a tail, whenever they are affected by an effect that can be ended by a saving throw or that ends at the end of their turn, they can lose their tail to immediately end that effect, then shift up to 2 squares.
+> While the deathrex has a tail, whenever they are affected by an effect that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw) or that ends at the end of their turn, they can lose their tail to immediately end that effect, then [shift](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
-> ☠️ **Snack Attack (Villain Action 1)**
+> ☠️ **Snack Attack ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
 > | **📏 10 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target moves up to their speed and can make a free strike. Each target gains temporary Stamina equal to the damage they deal.
+> **Effect:** Each target moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). Each target gains temporary [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage they deal.
 
-> ☠️ **Shed Some Skin (Villain Action 2)**
+> ☠️ **Shed Some Skin ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The deathrex shifts up to their speed, leaving behind a shed skin duplicate in the space they started in. The duplicate acts on the deathrex's turn and has the deathrex's characteristics, but has 10 Stamina and no villain actions.
+> **Effect:** The deathrex [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, leaving behind a shed skin duplicate in the space they started in. The duplicate acts on the deathrex's turn and has the deathrex's characteristics, but has 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) and no [villain actions](scc:mcdm.monsters.v1/rule.monster/villain-action).
 
-> ☠️ **Thresher Thrasher (Villain Action 3)**
+> ☠️ **Thresher Thrasher ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**        |                                 **-** |
 > |-----------------|--------------------------------------:|
 > | **📏 10 burst** | **🎯 Self and each ally in the area** |
 >
-> **Effect:** Each target moves up to their speed. Until the end of the encounter, whenever a creature comes adjacent to a target or starts their turn there, the target can make a free strike against them.
+> **Effect:** Each target moves up to their speed. Until the end of the encounter, whenever a creature comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a target or starts their turn there, the target can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
 <!-- @type: monster | @category: manticore -->
 ## Manticore
@@ -15115,25 +15115,25 @@ Most manticores can mimic Caelian and one language commonly spoken in the region
 
 At the start of any manticore's turn, you can spend Malice to activate one of the following features.
 
-> 🌀 **Uncanny Mimicry (3 Malice)**
+> 🌀 **Uncanny Mimicry (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The manticore uses their mimicry in an attempt to unnerve one creature within their line of effect. If the target has R < 4, they take a bane on power rolls against the manticore (save ends). Each time this feature is used against the same target during the encounter, its potency decreases by 2.
+> The manticore uses their mimicry in an attempt to unnerve one creature within their line of effect. If the target has R < 4, they take a bane on power rolls against the manticore (save ends). Each time this feature is used against the same target during the encounter, its [potency](scc:mcdm.heroes.v1/rule.character/potency) decreases by 2.
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The manticore takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The manticore takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🌀 **Desperate Howl (5 Malice)**
+> 🌀 **Desperate Howl (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > The manticore lets out an unnerving cry. Each enemy within the manticore's line of effect makes an **Intuition test**.
 >
-> - **≤11:** Frightened (save ends)
-> - **12-16:** Frightened (EoT)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT)
 > - **17+:** No effect.
 
-> ❇️ **Barrage of Barbs (7 Malice)**
+> ❇️ **Barrage of Barbs (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The manticore sprays tail spikes across the ground within 5 squares of them. Each enemy in that area who has A < 3 is bleeding (save ends). Additionally, the area is difficult terrain, and any enemy takes 3 poison damage for each square of the area they enter. An enemy who takes 9 poison damage this way on one turn is weakened until the end of the encounter.
+> The manticore sprays tail spikes across the ground within 5 squares of them. Each enemy in that area who has A < 3 is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends). Additionally, the area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain), and any enemy takes 3 poison damage for each square of the area they enter. An enemy who takes 9 poison damage this way on one turn is [weakened](scc:mcdm.heroes.v1/condition/weakened) until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Manticore
@@ -15146,7 +15146,7 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 
 >☠️ **Solo Monster**
 >
->**End Effect:** At the end of each of their turns, the manticore can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+>[**End Effect:**](scc:mcdm.monsters.v1/rule.monster/end-effect) At the end of each of their turns, the manticore can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 >**Solo Turns:** The manticore can take two turns each round. They can't take turns consecutively.
 
@@ -15154,7 +15154,7 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > Whenever the manticore deals damage to a creature, they don't provoke opportunity attacks from that creature during that turn.
 
-> 🗡 **Carnivorous Bite (Signature Ability)**
+> 🗡 **Carnivorous Bite ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -15162,11 +15162,11 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; A < 2 bleeding (save ends)
-> - **12-16:** 17 damage; A < 3 bleeding (save ends)
-> - **17+:** 21 damage; A < 4 bleeding (save ends)
+> - **≤11:** 12 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 17 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 21 damage; A < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** If the target is frightened, this ability gains an edge.
+> **Effect:** If the target is [frightened](scc:mcdm.heroes.v1/condition/frightened), this ability gains an edge.
 
 > 🏹 **Tail Spike**
 >
@@ -15177,10 +15177,10 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 > **Power Roll + 4:**
 >
 > - **≤11:** 6 damage; M < 2 4 poison damage
-> - **12-16:** 11 damage; M < 3 4 poison damage, weakened (save ends)
-> - **17+:** 14 damage; M < 4 8 poison damage, weakened (save ends)
+> - **12-16:** 11 damage; M < 3 4 poison damage, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 14 damage; M < 4 8 poison damage, [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **1 Malice:** While weakened this way, a target takes 1d6 poison damage at the start of each of their turns.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** While [weakened](scc:mcdm.heroes.v1/condition/weakened) this way, a target takes 1d6 poison damage at the start of each of their turns.
 
 > 🗡 **Harrying Claws**
 >
@@ -15190,11 +15190,11 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Slide 1; A < 2 3 damage
-> - **12-16:** Slide 2; A < 3 5 damage
-> - **17+:** Slide 4; A < 4 7 damage
+> - **≤11:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 1; A < 2 3 damage
+> - **12-16:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; A < 3 5 damage
+> - **17+:** [Slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; A < 4 7 damage
 
-> ❗️ **Reflexive Instinct (2 Malice)**
+> ❗️ **Reflexive Instinct (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged**       |           **Triggered action** |
 > |------------------|-------------------------------:|
@@ -15202,9 +15202,9 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > **Trigger:** A creature within distance deals damage to the manticore.
 >
-> **Effect:** The manticore shifts up to 5 squares into the air, then can use Tail Spike against the target.
+> **Effect:** The manticore [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares into the air, then can use Tail Spike against the target.
 
-> ☠️ **Trumpeting Howl (Villain Action 1)**
+> ☠️ **Trumpeting Howl ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area, Magic** |                            **-** |
 > |-----------------|---------------------------------:|
@@ -15212,25 +15212,25 @@ At the start of any manticore's turn, you can spend Malice to activate one of th
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** Frightened (EoT); if the target has I < 2 they are instead frightened (save ends)
-> - **12-16:** Frightened (EoT); if the target has I < 3 they are instead frightened (save ends)
-> - **17+:** Frightened (EoT); if the target has I < 4 they are instead dazed (save ends)
+> - **≤11:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT); if the target has I < 2 they are instead [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT); if the target has I < 3 they are instead [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** [Frightened](scc:mcdm.heroes.v1/condition/frightened) (EoT); if the target has I < 4 they are instead [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 
-> ☠️ **Cornered Predator (Villain Action 2)**
+> ☠️ **Cornered Predator ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The manticore shifts up to their speed, then can use Tail Spike against each enemy within distance of that ability.
+> **Effect:** The manticore [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed, then can use Tail Spike against each enemy within distance of that ability.
 
-> ☠️ **Debilitating Poison (Villain Action 3)**
+> ☠️ **Debilitating Poison ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The manticore sours their poison with enmity. Until the end of the encounter, the manticore has a double edge on power rolls against weakened creatures. Additionally, any creature weakened by the manticore's Tail Spike ability has their speed halved and takes an extra 3 poison damage at the start of each of their turns.
+> **Effect:** The manticore sours their poison with enmity. Until the end of the encounter, the manticore has a double edge on power rolls against [weakened](scc:mcdm.heroes.v1/condition/weakened) creatures. Additionally, any creature [weakened](scc:mcdm.heroes.v1/condition/weakened) by the manticore's Tail Spike ability has their speed halved and takes an extra 3 poison damage at the start of each of their turns.
 
 ###### Manticore Treasures
 
@@ -15285,7 +15285,7 @@ Medusas can speak any language they knew before they were cursed. Many of them s
 
 At the start of a medusa's turn, you can spend Malice to activate one of the following features.
 
-> 🏹 **Weakening Glare (4 Malice)**
+> 🏹 **Weakening Glare (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **- Magic, Ranged, Strike** |     **Main action** |
 > |-----------------------------|--------------------:|
@@ -15293,15 +15293,15 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 6 damage; weakened (EoT)
-> - **12-16:** 10 damage; weakened (EoT)
-> - **17+:** 12 damage; weakened (save ends)
+> - **≤11:** 6 damage; [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
+> - **12-16:** 10 damage; [weakened](scc:mcdm.heroes.v1/condition/weakened) (EoT)
+> - **17+:** 12 damage; [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 
-> ☠️ **Solo Action (5 Malice)**
+> ☠️ **Solo Action (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The medusa takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The medusa takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🏹 **Ssstop and Lisssten (5 Malice)**
+> 🏹 **Ssstop and Lisssten (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |        **Main action** |
 > |-------------------|-----------------------:|
@@ -15313,14 +15313,14 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 > - **12-16:** I < 3 the target is charmed
 > - **17+:** I < 4 the target is charmed
 >
-> **Effect:** At a time of the medusa's choosing, a charmed creature moves up to their speed and makes a free strike against an enemy of the medusa's choice as a free triggered action. The creature is then no longer charmed.
+> **Effect:** At a time of the medusa's choosing, a charmed creature moves up to their speed and makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against an enemy of the medusa's choice as a free triggered action. The creature is then no longer charmed.
 
-> 🔳 **Shatter Victims (7 Malice)**
+> 🔳 **Shatter Victims (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The medusa causes three stone statues within 10 squares of them to each shatter in a 2-cube explosion. Each enemy in one of those areas makes a **Might test**. An enemy restrained or slowed by the medusa's Petrify ability has a double bane on the test.
+> The medusa causes three stone statues within 10 squares of them to each shatter in a 2-cube explosion. Each enemy in one of those areas makes a **Might test**. An enemy [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed) by the medusa's Petrify ability has a double bane on the test.
 >
-> - **≤11:** 12 damage; vertical push 3; bleeding (save ends)
-> - **12-16:** 10 damage; vertical push 3
+> - **≤11:** 12 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 10 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
 > - **17+:** 6 damage
 
 <!-- @type: statblock -->
@@ -15334,11 +15334,11 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the medusa can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> [**End Effect:**](scc:mcdm.monsters.v1/rule.monster/end-effect) At the end of each of their turns, the medusa can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The medusa can take two turns each round. They can't take turns consecutively.
 
-> 🗡 **Snake Bites (Signature Ability)**
+> 🗡 **Snake Bites ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -15346,11 +15346,11 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; M < 2 slowed (save ends)
-> - **12-16:** 16 damage; M < 3 slowed (save ends)
-> - **17+:** 19 damage; M < 4 slowed (save ends)
+> - **≤11:** 11 damage; M < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** 16 damage; M < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 19 damage; M < 4 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
-> 🏹 **Damning Gaze (Signature Ability)**
+> 🏹 **Damning Gaze ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Ranged, Strike** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -15358,13 +15358,13 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; push 3
-> - **12-16:** 16 damage; push 5
-> - **17+:** 19 damage; push 7
+> - **≤11:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 16 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **17+:** 19 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 7
 >
-> **3 Malice:** The medusa targets two additional creatures or objects.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The medusa targets two additional creatures or objects.
 
-> ❇️ **Petrify (5 Malice)**
+> ❇️ **Petrify (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -15372,11 +15372,11 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** M < 2 restrained (save ends)
-> - **12-16:** M < 3 restrained (save ends)
-> - **17+:** Slowed (save ends); or if M < 4 restrained (save ends)
+> - **≤11:** M < 2 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** M < 3 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** [Slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends); or if M < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** A target with cover reduces the potency by 1, while a slowed target increases the potency by 1. A target restrained this way magically begins to turn to stone, and a target who ends two consecutive turns restrained this way is petrified.
+> **Effect:** A target with cover reduces the [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1, while a [slowed](scc:mcdm.heroes.v1/condition/slowed) target increases the [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1. A target [restrained](scc:mcdm.heroes.v1/condition/restrained) this way magically begins to turn to stone, and a target who ends two consecutive turns [restrained](scc:mcdm.heroes.v1/condition/restrained) this way is petrified.
 
 > 👤 **Nimble Escape**
 >
@@ -15384,9 +15384,9 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The medusa shifts up to 3 squares and can attempt to hide even if observed.
+> **Effect:** The medusa [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares and can attempt to hide even if observed.
 
-> ❗️ **Venomous Spit (2 Malice)**
+> ❗️ **Venomous Spit (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee**      |           **Triggered action** |
 > |----------------|-------------------------------:|
@@ -15402,29 +15402,29 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 
 > ⭐️ **Cunning Edge**
 >
-> The medusa gains an edge on power rolls against any creature who is restrained or slowed by Petrify.
+> The medusa gains an edge on power rolls against any creature who is [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed) by Petrify.
 
 > ⭐️ **Many Peering Eyes**
 >
 > The medusa can't be flanked.
 
-> ☠️ **Mass Petrify (Villain Action 1)**
+> ☠️ **Mass Petrify ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Magic, Ranged** |             **-** |
 > |-------------------|------------------:|
 > | **📏 Ranged 50**  | **🎯 Each enemy** |
 >
-> **Effect:** The medusa can use Petrify against each target without spending Malice. A target who doesn't have cover increases the potency by 1.
+> **Effect:** The medusa can use Petrify against each target without spending [Malice](scc:mcdm.monsters.v1/rule.monster/malice). A target who doesn't have cover increases the [potency](scc:mcdm.heroes.v1/rule.character/potency) by 1.
 
-> ☠️ **Serpent Wings (Villain Action 2)**
+> ☠️ **Serpent Wings ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **-**       |       **-** |
 > |-------------|------------:|
 > | **📏 Self** | **🎯 Self** |
 >
-> **Effect:** The medusa temporarily manifests wings and flies up to their speed without provoking opportunity attacks. During or after this movement, they can use Snake Bites and Damning Gaze once each.
+> **Effect:** The medusa temporarily manifests wings and [flies](scc:mcdm.heroes.v1/movement/fly) up to their speed without provoking opportunity attacks. During or after this movement, they can use Snake Bites and Damning Gaze once each.
 
-> ☠️ **Stone Puppets (Villain Action 3)**
+> ☠️ **Stone Puppets ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Magic** |          **-** |
 > |-----------------|---------------:|
@@ -15432,11 +15432,11 @@ At the start of a medusa's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 8 acid damage; P < 3 weakened (save ends)
-> - **12-16:** 13 acid damage; P < 4 weakened (save ends)
-> - **17+:** 17 acid damage; P < 5 weakened (save ends)
+> - **≤11:** 8 acid damage; P < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 13 acid damage; P < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 17 acid damage; P < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** As a free triggered action, each stone statue and creature restrained or slowed by Petrify within distance moves up to their speed and uses a signature ability that gains an edge, targeting an enemy of the medusa's choice. A stone statue without its own statistics has speed 5 and uses the medusa's free strike.
+> **Effect:** As a free triggered action, each stone statue and creature [restrained](scc:mcdm.heroes.v1/condition/restrained) or [slowed](scc:mcdm.heroes.v1/condition/slowed) by Petrify within distance moves up to their speed and uses a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that gains an edge, targeting an enemy of the medusa's choice. A stone statue without its own statistics has speed 5 and uses the medusa's [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 <!-- @type: monster | @category: minotaurs -->
 ## Minotaurs
@@ -15466,19 +15466,19 @@ Most minotaurs speak their own dialect of Khamish.
 
 At the start of any minotaur's turn, you can spend Malice to activate one of the following features.
 
-> 👤 **Bull Rush (3 Malice)**
+> 👤 **Bull Rush (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> For each 3 Malice spent, one minotaur acting this turn gains a +4 bonus to speed and ignores difficult terrain until the start of their next turn.
+> For each 3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice) spent, one minotaur acting this turn gains a +4 bonus to speed and ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) until the start of their next turn.
 
-> 👤 **Cut the... Nonsense! (5 Malice)**
+> 👤 **Cut the... Nonsense! (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One minotaur acting this turn halves any damage they take, and can use the Knockback maneuver as a free triggered action whenever an enemy comes adjacent to them, all until the start of their next turn.
+> One minotaur acting this turn halves any damage they take, and can use the Knockback maneuver as a free triggered action whenever an enemy comes [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them, all until the start of their next turn.
 
-> ❇️ **Bullseye (7 Malice)**
+> ❇️ **Bullseye (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> All minotaurs in the encounter fill the area around them with psychic impressions of feeling lost and isolated. Each enemy within 5 squares of a minotaur is teleported up to 5 squares and makes an **Intuition test**.
+> All minotaurs in the encounter fill the area around them with psychic impressions of feeling lost and isolated. Each enemy within 5 squares of a minotaur is [teleported](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares and makes an **Intuition test**.
 >
-> - **≤11:** The target has line of effect only within 3 squares and is frightened of all minotaurs (save ends).
+> - **≤11:** The target has line of effect only within 3 squares and is [frightened](scc:mcdm.heroes.v1/condition/frightened) of all minotaurs (save ends).
 > - **12-16:** The target has line of effect only within 3 squares (EoT).
 > - **17+:** No effect.
 
@@ -15492,7 +15492,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 |      **-**<br>Immunity       | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |       **+2**<br>Might        | **+2**<br>Agility |  **0**<br>Reason   |  **+1**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Flail and Blade (Signature Ability)**
+> 🗡 **Flail and Blade ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                 **Main action** |
 > |-----------------------------------|--------------------------------:|
@@ -15500,13 +15500,13 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 1
-> - **12-16:** 11 damage; push 2
-> - **17+:** 14 damage; push 3
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** The minotaur shifts up to 3 squares.
+> **Effect:** The minotaur [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares.
 
-> 👤 **Primal Bay (3 Malice)**
+> 👤 **Primal Bay (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Main action** |
 > |-------------|----------------:|
@@ -15514,7 +15514,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > **Effect:** Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes. On their next turn, the minotaur can use one additional maneuver.
 
-> 🗡 **Goring Horns (5 Malice)**
+> 🗡 **Goring Horns (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Charge, Melee, Strike, Weapon** |                  **Maneuver** |
 > |-----------------------------------|------------------------------:|
@@ -15522,11 +15522,11 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 damage; I < 0 dazed (save ends)
-> - **12-16:** 8 damage; I < 1 dazed (save ends)
-> - **17+:** 9 damage; I < 2 dazed (save ends)
+> - **≤11:** 5 damage; I < 0 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 8 damage; I < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 9 damage; I < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
 >
-> **Effect:** If this ability is used as part of the Charge main action, its potency increases by 1.
+> **Effect:** If this ability is used as part of the Charge main action, its [potency](scc:mcdm.heroes.v1/rule.character/potency) increases by 1.
 
 > ❗️ **Retaliatory Strike**
 >
@@ -15551,7 +15551,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 |      **-**<br>Immunity       | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |       **+2**<br>Might        | **+1**<br>Agility |  **0**<br>Reason   |  **+2**<br>Intuition  |  **-1**<br>Presence  |
 
-> 🗡 **Spiked Maul (Signature Ability)**
+> 🗡 **Spiked Maul ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                 **Main action** |
 > |-----------------------------------|--------------------------------:|
@@ -15559,13 +15559,13 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 damage; pull 1
-> - **12-16:** 12 damage; pull 2
-> - **17+:** 15 damage; pull 3
+> - **≤11:** 8 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 12 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 15 damage; [pull](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** A target pulled adjacent to the sunderer is automatically grabbed.
+> **Effect:** A target [pulled](scc:mcdm.heroes.v1/movement/forced-movement) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the sunderer is automatically [grabbed](scc:mcdm.heroes.v1/condition/grabbed).
 
-> ❇️ **Fearsome Bay (5 Malice)**
+> ❇️ **Fearsome Bay (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |               **Main action** |
 > |----------------|------------------------------:|
@@ -15573,27 +15573,27 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > **Power Roll + 2:**
 > 
-> - **≤11:** I < 0 frightened (save ends)
-> - **12-16:** I < 1 frightened (save ends)
-> - **17+:** I < 2 frightened (save ends)
+> - **≤11:** I < 0 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
 > **Effect:** Until the end of their next turn, the minotaur has damage immunity 2 and deals an extra 5 damage with strikes.
 
-> 🗡 **Disemboweling Horns (3 Malice)**
+> 🗡 **Disemboweling Horns (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Charge, Melee, Strike, Weapon** |        **Maneuver** |
 > |-----------------------------------|--------------------:|
 > | **📏 Melee 2**                    | **🎯 One creature** |
 >
-> **Special:** The target must be grabbed by the sunderer.
+> **Special:** The target must be [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the sunderer.
 >
 > **Power Roll + 2:**
 > 
-> - **≤11:** 5 damage; M < 0 bleeding (save ends)
-> - **12-16:** 8 damage; M < 1 bleeding (save ends)
-> - **17+:** 9 damage; M < 2 bleeding (save ends)
+> - **≤11:** 5 damage; M < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 8 damage; M < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 9 damage; M < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **Effect:** While bleeding this way, the target takes 1d6 damage at the start of each of their turns.
+> **Effect:** While [bleeding](scc:mcdm.heroes.v1/condition/bleeding) this way, the target takes 1d6 damage at the start of each of their turns.
 
 > ❗️ **Retaliatory Strike**
 >
@@ -15619,7 +15619,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 |      **-**<br>Immunity       | **-**<br>Movement |         -         | **+3 damage bonus to strikes**<br>With Captain |   **-**<br>Weakness    |
 |       **+4**<br>Might        | **+2**<br>Agility |  **0**<br>Reason  |              **+3**<br>Intuition               |   **-1**<br>Presence   |
 
-> ⚔️ **Javelin and Bellow (Signature Ability)**
+> ⚔️ **Javelin and Bellow ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Ranged, Strike, Weapon** |                          **Main action** |
 > |-------------------------------------------|-----------------------------------------:|
@@ -15629,7 +15629,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 >
 > - **≤11:** 4 damage
 > - **12-16:** 7 damage
-> - **17+:** 9 damage; I < 4 taunted (EoT) or frightened of all minotaurs (save ends)
+> - **17+:** 9 damage; I < 4 [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT) or [frightened](scc:mcdm.heroes.v1/condition/frightened) of all minotaurs (save ends)
 
 > ⭐️ **Minotaur Sense**
 >
@@ -15644,7 +15644,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 |      **-**<br>Immunity       | **-**<br>Movement |         -         | **+2 bonus to speed**<br>With Captain |   **-**<br>Weakness    |
 |       **+3**<br>Might        | **+4**<br>Agility |  **0**<br>Reason  |          **+1**<br>Intuition          |   **-1**<br>Presence   |
 
-> 🗡 **Horn Vault (Signature Ability)**
+> 🗡 **Horn Vault ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                          **Main action** |
 > |-----------------------------------|-----------------------------------------:|
@@ -15653,10 +15653,10 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 > **Power Roll + 4:**
 >
 > - **≤11:** 3 damage
-> - **12-16:** 6 damage; slide 1
-> - **17+:** 8 damage; slide 3
+> - **12-16:** 6 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **17+:** 8 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** A target who is force moved into an obstacle and has M < 3 is bleeding (save ends).
+> **Effect:** A target who is [force moved](scc:mcdm.heroes.v1/movement/forced-movement) into an obstacle and has M < 3 is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ⭐️ **Minotaur Sense**
 >
@@ -15671,7 +15671,7 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 |          **-**<br>Immunity          | **-**<br>Movement |         -         | **Gain an edge on strikes**<br>With Captain |   **-**<br>Weakness    |
 |           **+5**<br>Might           | **+5**<br>Agility |  **0**<br>Reason  |             **+2**<br>Intuition             |   **-1**<br>Presence   |
 
-> 🗡 **Bull Rush (Signature Ability)**
+> 🗡 **Bull Rush ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                          **Main action** |
 > |-----------------------------------|-----------------------------------------:|
@@ -15680,14 +15680,14 @@ At the start of any minotaur's turn, you can spend Malice to activate one of the
 > **Power Roll + 5:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; prone
-> - **17+:** 9 damage; prone; M < 5 can't stand (save ends)
+> - **12-16:** 7 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 9 damage; [prone](scc:mcdm.heroes.v1/condition/prone); M < 5 can't stand (save ends)
 >
-> **Effect:** If this ability is used as part of the Charge main action, each creature the stampede moves through who has M < 4 is knocked prone.
+> **Effect:** If this ability is used as part of the Charge main action, each creature the stampede moves through who has M < 4 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
 > ⭐️ **Swarm**
 >
-> The stampede can move through spaces as if they were a size 2 creature, and can occupy other creatures' spaces. At the start of each of the stampede's turns, they can make a free strike against each creature whose space they share.
+> The stampede can move through spaces as if they were a size 2 creature, and can occupy other creatures' spaces. At the start of each of the stampede's turns, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each creature whose space they share.
 
 <!-- @type: monster | @category: ogres -->
 ## Ogres
@@ -15723,19 +15723,19 @@ Most ogres speak Caelian and High Kuric.
 
 At the start of any ogre's turn, you can spend Malice to activate one of the following features.
 
-> ❇️ **Shockwave (3 Malice)**
+> ❇️ **Shockwave (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > One ogre acting this turn jumps and lands on their rear, causing a 3 burst shockwave. Each size 1 creature in the area makes a **Might test** or **Agility test**.
 >
-> - **≤11:** 5 damage; vertical push 3
-> - **12-16:** 4 damage; vertical push 2
-> - **17+:** Push 1
+> - **≤11:** 5 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 4 damage; vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** [Push](scc:mcdm.heroes.v1/movement/forced-movement) 1
 
-> 🌀 **Bully (5 Malice)**
+> 🌀 **Bully (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each ogre in the encounter shifts up to their speed and can make a free strike. If they can, they gang up on the same target rather than picking different targets.
+> Each ogre in the encounter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike). If they can, they gang up on the same target rather than picking different targets.
 
-> ⭐️ **Rampage (7 Malice)**
+> ⭐️ **Rampage (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, each ogre has damage immunity 5 and deals an extra 5 damage with abilities, and heroic abilities that target any ogre have their Heroic Resource cost reduced by 1 (to a minimum of 1).
 
@@ -15748,7 +15748,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **0**<br>Agility  |  **-1**<br>Reason  |  **0**<br>Intuition   |  **-1**<br>Presence  |
 
-> 🗡 **Club Swing (Signature Ability)**
+> 🗡 **Club Swing ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -15756,13 +15756,13 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 2
-> - **12-16:** 11 damage; push 4
-> - **17+:** 14 damage; push 6, prone
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6, [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** Any target who takes damage from this forced movement takes an extra 4 damage.
+> **Effect:** Any target who takes damage from this [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) takes an extra 4 damage.
 
-> 🗡 **Grabby Hand (1 Malice)**
+> 🗡 **Grabby Hand (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |                  **Maneuver** |
 > |---------------------------|------------------------------:|
@@ -15771,24 +15771,24 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 11 damage; grabbed
-> - **17+:** 14 damage; grabbed
+> - **12-16:** 11 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 14 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A target grabbed this way takes a bane on the Escape Grab maneuver.
+> **Effect:** A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes a bane on the Escape Grab maneuver.
 
-> 🔳 **People Bowling (3 Malice)**
+> 🔳 **People Bowling (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon**           |                                **Maneuver** |
 > |----------------------------|--------------------------------------------:|
 > | **📏 6 x 1 line within 1** | **🎯 Each creature and object in the area** |
 >
-> **Effect:** The goon must have a size 1 creature or object grabbed, which they hurl across the area, ending the grab. The hurled creature or object is targeted by the ability, and lands in the last square of the line or the nearest unoccupied square of the goon's choice.
+> **Effect:** The goon must have a size 1 creature or object [grabbed](scc:mcdm.heroes.v1/condition/grabbed), which they hurl across the area, ending the grab. The hurled creature or object is targeted by the ability, and lands in the last square of the line or the nearest unoccupied square of the goon's choice.
 >
 > **Power Roll + 2:**
 >
 > - **≤11:** 5 damage
 > - **12-16:** 9 damage
-> - **17+:** 12 damage; prone
+> - **17+:** 12 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 
 > ❗️ **Swat the Fly**
 >
@@ -15796,13 +15796,13 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > |----------------|-----------------------------------------:|
 > | **📏 Melee 1** | **🎯 The triggering creature or object** |
 >
-> **Trigger:** A creature or object within distance moves or shifts away from the goon.
+> **Trigger:** A creature or object within distance moves or [shifts](scc:mcdm.heroes.v1/movement/shifting) away from the goon.
 >
-> **Effect:** The goon slides the target up to 5 squares.
+> **Effect:** The goon [slides](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 5 squares.
 
 > ⭐️ **Defiant Anger**
 >
-> While winded, the goon has damage immunity 2.
+> While [winded](scc:mcdm.heroes.v1/rule.health/winded), the goon has damage immunity 2.
 
 <!-- @type: statblock -->
 ####### Ogre Juggernaut
@@ -15813,7 +15813,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+1**<br>Agility | **-1**<br>Reason  |  **0**<br>Intuition   |  **-1**<br>Presence  |
 
-> 🗡 **Pitchfork Catapult (Signature Ability)**
+> 🗡 **Pitchfork Catapult ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                 **Main action** |
 > |-----------------------------------|--------------------------------:|
@@ -15822,10 +15822,10 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 2:**
 >
 > - **≤11:** 7 damage
-> - **12-16:** 10 damage; A < 1 vertical push 2
-> - **17+:** 13 damage; A < 2 vertical slide 3
+> - **12-16:** 10 damage; A < 1 vertical [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 13 damage; A < 2 vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **1 Malice:** Each target who has M < 1 is bleeding (save ends).
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has M < 1 is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends).
 
 > ❇️ **Earth-Breaking Jump**
 >
@@ -15838,10 +15838,10 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 2:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 6 damage; push 2; M < 1 prone
-> - **17+:** 9 damage; push 4; M < 2 prone
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 9 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
 
-> ❇️ **Horrible Bellow (2 Malice)**
+> ❇️ **Horrible Bellow (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area**       |                  **Maneuver** |
 > |----------------|------------------------------:|
@@ -15849,13 +15849,13 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** I < 0 frightened (save ends)
-> - **12-16:** I < 1 frightened (save ends)
-> - **17+:** I < 2 frightened (save ends)
+> - **≤11:** I < 0 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** I < 1 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** I < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** While a target is frightened this way, any ogre gains an edge on strikes against them.
+> **Effect:** While a target is [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, any ogre gains an edge on strikes against them.
 
-> ❗️ **Hrraaaaaagh! (1 Malice)**
+> ❗️ **Hrraaaaaagh! (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **-**       | **Free triggered action** |
 > |-------------|--------------------------:|
@@ -15863,15 +15863,15 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 >
 > **Trigger:** The juggernaut takes damage.
 >
-> **Effect:** The juggernaut moves up to their speed and can make a free strike.
+> **Effect:** The juggernaut moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
 > ⭐️ **Destructive Path**
 >
-> The juggernaut automatically destroys any mundane size 1 objects in their path when they move or are force moved. They can break through any mundane wall made of wood, stone, or a similarly sturdy material this way as long as the wall is 2 squares thick or less.
+> The juggernaut automatically destroys any mundane size 1 objects in their path when they move or are [force moved](scc:mcdm.heroes.v1/movement/forced-movement). They can break through any mundane wall made of wood, stone, or a similarly sturdy material this way as long as the wall is 2 squares thick or less.
 
 > ⭐️ **Defiant Anger**
 >
-> While winded, the juggernaut has damage immunity 2.
+> While [winded](scc:mcdm.heroes.v1/rule.health/winded), the juggernaut has damage immunity 2.
 
 ###### Ogre Lairs
 
@@ -15892,7 +15892,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 | **-**<br>Immunity | **-**<br>Movement |         -         | **+4 bonus to speed**<br>With Captain |   **-**<br>Weakness    |
 |  **+5**<br>Might  | **-1**<br>Agility | **-1**<br>Reason  |          **+3**<br>Intuition          |   **-1**<br>Presence   |
 
-> ❇️ **Wild Slam (Signature Ability)**
+> ❇️ **Wild Slam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Area, Weapon** |                          **Main action** |
 > |------------------|-----------------------------------------:|
@@ -15901,8 +15901,8 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 5:**
 >
 > - **≤11:** 3 damage; A < 3 3 damage
-> - **12-16:** 6 damage; push 3; A < 4 4 damage
-> - **17+:** 7 damage; prone; A < 5 5 damage and restrained (save ends)
+> - **12-16:** 6 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; A < 4 4 damage
+> - **17+:** 7 damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 5 5 damage and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
 > **Effect:** The cyclops automatically treats their initial power roll as a 17. They can still roll to determine if they score a critical hit.
 
@@ -15919,7 +15919,7 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 | **-**<br>Immunity | **-**<br>Movement |         -         | **Gain an edge on strikes**<br>With Captain |   **-**<br>Weakness   |
 |  **+4**<br>Might  | **+1**<br>Agility | **-1**<br>Reason  |             **0**<br>Intuition              |  **+2**<br>Presence   |
 
-> 🗡 **Crush Underfoot (Signature Ability)**
+> 🗡 **Crush Underfoot ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -15928,14 +15928,14 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 > **Power Roll + 4:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; M < 3 prone
-> - **17+:** 8 damage; prone
+> - **12-16:** 7 damage; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 8 damage; [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** A target who is already prone takes an extra 4 damage.
+> **Effect:** A target who is already [prone](scc:mcdm.heroes.v1/condition/prone) takes an extra 4 damage.
 
 > ⭐️ **In My Stead**
 >
-> Whenever the blue blood would make a free strike, an ally within 5 squares can make a free strike instead.
+> Whenever the blue blood would make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), an ally within 5 squares can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) instead.
 
 > ⭐️ **Royal Anger**
 >
@@ -15950,21 +15950,21 @@ At the start of any ogre's turn, you can spend Malice to activate one of the fol
 | **-**<br>Immunity | **-**<br>Movement |         -         | **+5 bonus to ranged distance**<br>With Captain |   **-**<br>Weakness   |
 |  **+4**<br>Might  | **+2**<br>Agility | **-1**<br>Reason  |               **0**<br>Intuition                |  **-1**<br>Presence   |
 
-> 🏹 **Throw Fit (Signature Ability)**
+> 🏹 **Throw Fit ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                          **Main action** |
 > |----------------------------|-----------------------------------------:|
 > | **📏 Ranged 8**            | **🎯 One creature or object per minion** |
 >
-> **Effect:** The tantrum unearths a rock or a hunk of terrain and tosses it. If a size 1L, 1M, or 1S creature or object adjacent to the tantrum has A < 3 the tantrum can grab them to use as the projectile for this ability.
+> **Effect:** The tantrum unearths a rock or a hunk of terrain and tosses it. If a size 1L, 1M, or 1S creature or object [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the tantrum has A < 3 the tantrum can [grab](scc:mcdm.heroes.v1/condition/grabbed) them to use as the projectile for this ability.
 >
 > **Power Roll + 4:**
 >
 > - **≤11:** 4 damage
-> - **12-16:** 7 damage; push 2
-> - **17+:** 8 damage; push 4
+> - **12-16:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 8 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> A creature or object used as a projectile is vertically pushed 8 (or 13 with a captain), ignoring stability.
+> A creature or object used as a projectile is vertically [pushed](scc:mcdm.heroes.v1/movement/forced-movement) 8 (or 13 with a captain), ignoring stability.
 
 > ⭐️ **Excessive Anger**
 >
@@ -16014,11 +16014,11 @@ Only technology from the upper worlds, particularly products of evolutionary adv
 
 At the start of an olothec's turn, you can spend Malice to activate one of the following features.
 
-> ☠️ **Solo Action (4 Malice)**
+> ☠️ **Solo Action (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The olothec takes an additional main action on their turn. They can use this feature even if they are dazed.
+> The olothec takes an additional main action on their turn. They can use this feature even if they are [dazed](scc:mcdm.heroes.v1/condition/dazed).
 
-> 🗡 **Writhing Envelopment (4 Malice)**
+> 🗡 **Writhing Envelopment (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |                                      **Main action** |
 > |---------------------------|-----------------------------------------------------:|
@@ -16026,15 +16026,15 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 psychic damage; A < 2 grabbed
-> - **12-16:** 17 psychic damage; A < 3 grabbed
-> - **17+:** 20 psychic damage; A < 4 grabbed
+> - **≤11:** 11 psychic damage; A < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 17 psychic damage; A < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 20 psychic damage; A < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The olothec can pull a target grabbed this way adjacent to them. While grabbed this way, a target can't make saving throws to end any other effects, and the olothec has a double edge on strikes against them.
+> **Effect:** The olothec can [pull](scc:mcdm.heroes.v1/movement/forced-movement) a target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them. While [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, a target can't make [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) to end any other effects, and the olothec has a double edge on strikes against them.
 
-> ❇️ **Memory of Chaos (6 Malice)**
+> ❇️ **Memory of Chaos (6 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> The olothec broadcasts their memory of the universe in its primordial state—a sweeping cacophony of transcendental irrationality and unceasing change. Until the end of the encounter, any creature who starts their turn within 3 squares of the olothec and has R < 3 is dazed and slowed until the end of their next turn).
+> The olothec broadcasts their memory of the universe in its primordial state—a sweeping cacophony of transcendental irrationality and unceasing change. Until the end of the encounter, any creature who starts their turn within 3 squares of the olothec and has R < 3 is [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of their next turn).
 
 <!-- @type: statblock -->
 ####### Olothec
@@ -16047,15 +16047,15 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 
 > ☠️ **Solo Monster**
 >
-> **End Effect:** At the end of each of their turns, the olothec can take 10 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> [**End Effect:**](scc:mcdm.monsters.v1/rule.monster/end-effect) At the end of each of their turns, the olothec can take 10 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 >
 > **Solo Turns:** The olothec can take two turns each round. They can't take turns consecutively.
 
 > ⭐️ **Gelatinosis**
 >
-> A creature permanently devolves into a slime servant if they spend 1 continuous minute weakened by Devolving Tentacles, they are reduced to 0 Stamina by the psychic damage from Devolving Tentacles, or they suffer all three transformations from Oozing Transformation.
+> A creature permanently devolves into a slime servant if they spend 1 continuous minute [weakened](scc:mcdm.heroes.v1/condition/weakened) by Devolving Tentacles, they are reduced to 0 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) by the psychic damage from Devolving Tentacles, or they suffer all three transformations from Oozing Transformation.
 
-> 🗡 **Devolving Tentacles (Signature Ability)**
+> 🗡 **Devolving Tentacles ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -16063,9 +16063,9 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 11 damage; M < 2 weakened or the target is slimed (save ends)
-> - **12-16:** 17 damage; M < 3 weakened or the target is slimed (save ends)
-> - **17+:** 20 damage; M < 4 weakened and the target is slimed (save ends)
+> - **≤11:** 11 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) or the target is slimed (save ends)
+> - **12-16:** 17 damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) or the target is slimed (save ends)
+> - **17+:** 20 damage; M < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) and the target is slimed (save ends)
 >
 > **Effect:** A slimed target takes 4 psychic damage whenever they make a power roll.
 
@@ -16077,15 +16077,15 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 6 acid damage; A < 2 push special
-> - **12-16:** 10 acid damage; A < 3 push special
-> - **17+:** 13 acid damage; A < 4 push special and prone
+> - **≤11:** 6 acid damage; A < 2 [push](scc:mcdm.heroes.v1/movement/forced-movement) special
+> - **12-16:** 10 acid damage; A < 3 [push](scc:mcdm.heroes.v1/movement/forced-movement) special
+> - **17+:** 13 acid damage; A < 4 [push](scc:mcdm.heroes.v1/movement/forced-movement) special and [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **Effect:** Each creature pushed this way is pushed to an unoccupied space in the area as far as possible from the olothec.
+> **Effect:** Each creature [pushed](scc:mcdm.heroes.v1/movement/forced-movement) this way is pushed to an unoccupied space in the area as far as possible from the olothec.
 >
-> **1 Malice:** The area is difficult terrain. Any creature who enters the area or moves within it for the first time on a turn and has A < 3 is knocked prone.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain). Any creature who enters the area or moves within it for the first time on a turn and has A < 3 is knocked [prone](scc:mcdm.heroes.v1/condition/prone).
 
-> 🏹 **Oozing Transformation (2 Malice)**
+> 🏹 **Oozing Transformation (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged, Strike** |     **Main action** |
 > |-----------------------------|--------------------:|
@@ -16101,9 +16101,9 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Head:** The target's head becomes a ball of slime. They can't communicate and have line of effect only within 3 squares.
 >
-> **Legs:** The target's legs become pillars of ooze. They are slowed while on land and can automatically swim at full speed while moving.
+> **Legs:** The target's legs become pillars of ooze. They are [slowed](scc:mcdm.heroes.v1/condition/slowed) while on land and can automatically swim at full speed while moving.
 >
-> **Torso:** The target's arms become gelatinous. They can't benefit from edges or double edges and can't gain or use surges.
+> **Torso:** The target's arms become gelatinous. They can't benefit from edges or double edges and can't gain or use [surges](scc:mcdm.heroes.v1/rule.resource/surge).
 
 > 👤 **Jaunt**
 >
@@ -16111,7 +16111,7 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The olothec teleports to an unoccupied space within 10 squares. Alternatively, they swap places with a creature or object within 5 squares of them.
+> **Effect:** The olothec [teleports](scc:mcdm.heroes.v1/movement/teleport) to an unoccupied space within 10 squares. Alternatively, they swap places with a creature or object within 5 squares of them.
 
 > ❗️ **Liquify**
 >
@@ -16125,13 +16125,13 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 
 > ⭐️ **Primordial Mind**
 >
-> The olothec can't be made frightened or taunted.
+> The olothec can't be made [frightened](scc:mcdm.heroes.v1/condition/frightened) or [taunted](scc:mcdm.heroes.v1/condition/taunted).
 
 > ⭐️ **Slime Sense**
 >
 > A slimed or transformed creature can't have concealment from or be hidden from the olothec.
 
-> ☠️ **Horrifying Form (Villain Action 1)**
+> ☠️ **Horrifying Form ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Psionic, Ranged, Strike** |             **-** |
 > |-----------------------------|------------------:|
@@ -16139,21 +16139,21 @@ At the start of an olothec's turn, you can spend Malice to activate one of the f
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 10 psychic damage; P < 2 frightened (save ends)
-> - **12-16:** 14 psychic damage; P < 3 frightened (save ends)
-> - **17+:** 17 psychic damage; P < 4 frightened (save ends)
+> - **≤11:** 10 psychic damage; P < 2 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **12-16:** 14 psychic damage; P < 3 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
+> - **17+:** 17 psychic damage; P < 4 [frightened](scc:mcdm.heroes.v1/condition/frightened) (save ends)
 >
-> **Effect:** While frightened this way, a target can't make saving throws to end any other effects.
+> **Effect:** While [frightened](scc:mcdm.heroes.v1/condition/frightened) this way, a target can't make [saving throws](scc:mcdm.heroes.v1/rule.general/saving-throw) to end any other effects.
 
-> ☠️ **Psychic Pulse (Villain Action 2)**
+> ☠️ **Psychic Pulse ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Area, Psionic** |                            **-** |
 > |-------------------|---------------------------------:|
 > | **📏 10 burst**   | **🎯 Each creature in the area** |
 >
-> **Effect:** The olothec slides each target up to 5 squares. Each target takes 12 psychic damage, and if they have M < 3 they are weakened and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.
+> **Effect:** The olothec [slides](scc:mcdm.heroes.v1/movement/forced-movement) each target up to 5 squares. Each target takes 12 psychic damage, and if they have M < 3 they are [weakened](scc:mcdm.heroes.v1/condition/weakened) and slimed (save ends). A slimed target takes 4 psychic damage whenever they make a power roll. Additionally, until the start of their next turn, the olothec has damage immunity 4.
 
-> ☠️ **Return to Perfection (Villain Action 3)**
+> ☠️ **Return to Perfection ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area, Psionic** |                            **-** |
 > |-------------------|---------------------------------:|
