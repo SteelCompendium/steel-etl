@@ -120,6 +120,11 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "statblock" {
 		return data, false
 	}
+	// Fixtures are statblocks in `type` only; they render as Forged Band
+	// featureblock cards (buildFixturePage), not the creature JSON island.
+	if strings.TrimSpace(parseFrontmatterField(fm, "statblock_kind")) == "fixture" {
+		return data, false
+	}
 	js, err := json.Marshal(buildStatblockIsland(fm, body))
 	if err != nil {
 		return data, false

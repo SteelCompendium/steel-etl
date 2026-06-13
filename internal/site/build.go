@@ -249,6 +249,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			data = island
 		}
 
+		// Fixture statblocks → the Forged Band featureblock card (statblock→fbDoc
+		// adapter), not the creature JSON island. Site-only; runs before injectH1
+		// like the cards above. The island path above skips fixtures.
+		if card, ok := buildFixturePage(data); ok {
+			data = card
+		}
+
 		// Featureblock / dynamic-terrain pages → the High-Fantasy Steel
 		// .fb-wrap "Forged Band" card (build-time HTML, frontmatter-driven).
 		// Site-only; runs before injectH1 like the cards above.
