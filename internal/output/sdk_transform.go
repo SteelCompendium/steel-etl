@@ -23,6 +23,8 @@ func TransformToSDKFormat(sccCode string, parsed *content.ParsedContent) map[str
 		return transformKit(sccCode, parsed)
 	case "statblock":
 		return transformStatblock(sccCode, parsed)
+	case "featureblock", "dynamic-terrain":
+		return transformFeatureblock(sccCode, parsed)
 	default:
 		return transformPassthrough(parsed)
 	}

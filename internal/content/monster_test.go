@@ -104,6 +104,96 @@ func TestFeatureblockParser(t *testing.T) {
 	}
 }
 
+func TestStatblockParser_Fixture(t *testing.T) {
+	body := "*Hazard Support*\n\n" +
+		"| **Stamina:** 20 + your level | **Size:** 2 |\n" +
+		"|------------------------------|------------:|\n\n" +
+		"> ⭐️ **Hunger Thrush**\n>\n> Each enemy that starts their turn within 3 squares is taunted.\n"
+
+	sec := newSection("The Boil", 7, map[string]string{"type": "statblock"}, body)
+	ctx := context.NewContextStack(nil)
+	ctx.Push(5, map[string]string{"domain": "fixture", "category": "demon"})
+
+	p := &StatblockParser{}
+	got, err := p.Parse(ctx, sec)
+	if err != nil {
+		t.Fatal(err)
+	}
+	fm := got.Frontmatter
+	if fm["statblock_kind"] != "fixture" {
+		t.Errorf("statblock_kind = %v, want fixture", fm["statblock_kind"])
+	}
+	if fm["stamina"] != "20 + your level" {
+		t.Errorf("stamina = %v", fm["stamina"])
+	}
+	if fm["size"] != "2" {
+		t.Errorf("size = %v", fm["size"])
+	}
+	if fm["terrain_type"] != "Hazard" {
+		t.Errorf("terrain_type = %v", fm["terrain_type"])
+	}
+	if fm["role"] != "Support" {
+		t.Errorf("role = %v", fm["role"])
+	}
+	if kw, ok := fm["keywords"]; ok {
+		t.Errorf("keywords should be absent for fixtures, got %v", kw)
+	}
+	if strings.Join(got.TypePath, "/") != "fixture/demon/statblock" {
+		t.Errorf("TypePath = %v", got.TypePath)
+	}
+}
+
+func TestFeatureblockParser_Metadata(t *testing.T) {
+	tests := []struct {
+		heading   string
+		wantKind  string
+		wantLevel int // 0 = absent
+		wantName  string
+	}{
+		{"Basilisk Malice (Malice Features)", "malice", 0, "Basilisk Malice"},
+		{"War Dog Malice (Level 4+ Malice Features)", "malice", 4, "War Dog Malice (Level 4+ Malice Features)"},
+		{"Tactical Stance (Ajax Feature)", "feature", 0, "Tactical Stance"},
+		{"Basic Malice", "malice", 0, "Basic Malice"},
+	}
+	body := "At the start of any basilisk's turn, you can spend Malice to activate one of the following features.\n\n" +
+		"> 🔳 **Walleye (7 Malice)**\n>\n> A basilisk spews reflective spittle.\n"
+
+	for _, tt := range tests {
+		t.Run(tt.heading, func(t *testing.T) {
+			sec := newSection(tt.heading, 9, map[string]string{"type": "featureblock"}, body)
+			ctx := context.NewContextStack(nil)
+			ctx.Push(2, map[string]string{"category": "basilisks"})
+
+			p := &FeatureblockParser{}
+			got, err := p.Parse(ctx, sec)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if got.Frontmatter["kind"] != tt.wantKind {
+				t.Errorf("kind = %v, want %q", got.Frontmatter["kind"], tt.wantKind)
+			}
+			if tt.wantLevel > 0 {
+				if got.Frontmatter["level"] != tt.wantLevel {
+					t.Errorf("level = %v, want %d", got.Frontmatter["level"], tt.wantLevel)
+				}
+			} else if _, ok := got.Frontmatter["level"]; ok {
+				t.Errorf("level should be absent, got %v", got.Frontmatter["level"])
+			}
+			if got.Frontmatter["name"] != tt.wantName {
+				t.Errorf("name = %v, want %q", got.Frontmatter["name"], tt.wantName)
+			}
+			flavor, _ := got.Frontmatter["flavor"].(string)
+			if !strings.HasPrefix(flavor, "At the start of any basilisk's turn") {
+				t.Errorf("flavor = %q", flavor)
+			}
+			feats, ok := got.Frontmatter["features"].([]map[string]any)
+			if !ok || len(feats) != 1 || feats[0]["name"] != "Walleye" {
+				t.Errorf("features = %+v", got.Frontmatter["features"])
+			}
+		})
+	}
+}
+
 func TestMonsterGroupParser(t *testing.T) {
 	sec := newSection("Environmental Hazards", 3, map[string]string{
 		"type": "monster-group", "domain": "dynamic-terrain", "category": "environmental-hazards",

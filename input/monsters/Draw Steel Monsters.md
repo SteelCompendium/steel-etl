@@ -27708,9 +27708,9 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 >
 > **Power Roll + highest characteristic:**
 >
-> - **≤11:** 5 damage; M <w, [prone](scc:mcdm.heroes.v1/condition/prone)
-> - **12-16:** 9 damage; M <v, [prone](scc:mcdm.heroes.v1/condition/prone)
-> - **17+:** 12 damage; M <s, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **≤11:** 5 damage; M < WEAK, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 9 damage; M < AVERAGE, [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 12 damage; M < STRONG, [prone](scc:mcdm.heroes.v1/condition/prone)
 >
 > **Effect:** The hopper can jump up to their speed in a straight line before the [strike](scc:mcdm.heroes.v1/rule.combat/strike) without provoking [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack). If they jump 2 or more squares this way, they gain 1 [surge](scc:mcdm.heroes.v1/rule.resource/surge).
 
@@ -28364,7 +28364,7 @@ If a role advancement ability has the Magic or Psionic keyword, a retainer can s
 > |----------------|----------------:|
 > | **📏 Special** |  **🎯 Special** |
 >
-> **Effect:** The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 10 poison damage, and if the target has M <v, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends). If the guide is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to their mentor when they use Poison Blade, they apply poison to the mentor's weapon in the same way.
+> **Effect:** The guide applies poison to their weapon. The next time the guide obtains a tier 2 or tier 3 outcome on a weapon [strike](scc:mcdm.heroes.v1/rule.combat/strike), the [strike](scc:mcdm.heroes.v1/rule.combat/strike) deals an extra 10 poison damage, and if the target has M < AVERAGE, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) ([save](scc:mcdm.heroes.v1/rule.general/saving-throw) ends). If the guide is [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to their mentor when they use Poison Blade, they apply poison to the mentor's weapon in the same way.
 
 <!-- @type: statblock -->
 ####### Hobgoblin Flameslinger

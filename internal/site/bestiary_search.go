@@ -81,11 +81,11 @@ func collectBestiaryItems(browseDir string) []bestiaryItem {
 			Source:       bestiarySource(fm),
 			Name:         stripMD(parseFrontmatterField(fm, "name")),
 			Level:        lvl,
-			EV:           unquote(parseFrontmatterField(fm, "ev")),
+			EV:           unquote(statField(fm, "ev", "EV")),
 			Role:         stripMD(parseFrontmatterField(fm, "role")),
 			Organization: stripMD(parseFrontmatterField(fm, "organization")),
 			Keywords:     kw,
-			Size:         stripMD(parseFrontmatterField(fm, "size")),
+			Size:         stripMD(statField(fm, "size", "Size")),
 			Href:         "../Browse/" + dirURL(relSlash),
 		})
 		return nil

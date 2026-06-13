@@ -46,13 +46,53 @@ func withSource(fm, label string) string {
 	return label
 }
 
+// terrainStat extracts a value from the loose stats[] list in dynamic-terrain
+// frontmatter by its pair name (e.g. "EV", "Size"). Terrain carries these as a
+// YAML list of {name, value} objects rather than scalar keys; returns "" if the
+// named stat is absent.
+func terrainStat(fm, statName string) string {
+	curName := ""
+	inStats := false
+	for _, line := range strings.Split(fm, "\n") {
+		if !inStats {
+			if strings.TrimSpace(line) == "stats:" {
+				inStats = true
+			}
+			continue
+		}
+		// A non-indented, non-list line ends the stats block (next top-level key).
+		if line != "" && !strings.HasPrefix(line, " ") && !strings.HasPrefix(line, "\t") && !strings.HasPrefix(line, "-") {
+			break
+		}
+		item := strings.TrimPrefix(strings.TrimSpace(line), "- ")
+		switch {
+		case strings.HasPrefix(item, "name:"):
+			curName = strings.Trim(strings.TrimSpace(strings.TrimPrefix(item, "name:")), "\"'")
+		case strings.HasPrefix(item, "value:"):
+			if curName == statName {
+				return strings.Trim(strings.TrimSpace(strings.TrimPrefix(item, "value:")), "\"'")
+			}
+		}
+	}
+	return ""
+}
+
+// statField reads a stat that statblocks store as a scalar key but dynamic
+// terrain stores in stats[]: scalar first, then the loose list.
+func statField(fm, scalarKey, statName string) string {
+	if v := parseFrontmatterField(fm, scalarKey); v != "" {
+		return v
+	}
+	return terrainStat(fm, statName)
+}
+
 // terrainCard renders a .sc-card preview for a dynamic-terrain leaf page.
 // Dynamic terrain has no role or keywords; it shows level, EV, and size stats.
 func terrainCard(fm, body, file, name string) string {
 	inner := statsBlock([][3]string{
 		{orDash(parseFrontmatterField(fm, "level")), "Level", ""},
-		{orDash(parseFrontmatterField(fm, "ev")), "EV", ""},
-		{orDash(parseFrontmatterField(fm, "size")), "Size", ""},
+		{orDash(statField(fm, "ev", "EV")), "EV", ""},
+		{orDash(statField(fm, "size", "Size")), "Size", ""},
 	})
 	if f := cardFlavor(fm, body); f != "" {
 		inner += flavorDiv(f, 160)

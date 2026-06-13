@@ -67,10 +67,42 @@ link-wrapped characteristic (`2d10 + [R](scc:…)`) and a `linkDisplay` helper s
 link markup from the structured `roll` and from stat-grid cell values, while
 tier/effect values keep their `[x](scc:…)` links verbatim (the data-field convention).
 
-Known gap: **fixture** statblocks (`fixture.<portfolio>.statblock/*`) use a
-non-standard 2-column `| **Stamina:** … | **Size:** … |` grid that `parseStatGrid`
-does not map into the `size`/`speed`/`stamina` fields — a pre-existing modeling gap
-(unrelated to linking); see workspace `FOLLOWUPS.md` #6.
+**Fixture** statblocks (`fixture.<portfolio>.statblock/*`) use a non-standard
+2-column `| **Stamina:** … | **Size:** … |` grid plus an italic `*Hazard Support*`
+role line. `StatblockParser` recognizes these when the SCC `domain == "fixture"`
+(`applyFixtureGrid`, `internal/content/monster.go`): it maps `Stamina`/`Size` into the
+structured fields (keeping the `+ your level` expression as the value), lifts the role
+line into `role`/`terrain_type`, drops the garbage `keywords` the standard grid parse
+derives from the 2-column header, and stamps `statblock_kind: fixture`. (Resolved the
+former 2-column-grid gap, archived as workspace FOLLOWUPS "was #6".)
+
+## Featureblocks & dynamic terrain (structured fields)
+
+`FeatureblockParser` and `DynamicTerrainParser` extract structured frontmatter that
+validates against **`featureblock.schema.json`** (both schema copies; covers `type:
+featureblock` and `type: dynamic-terrain`): `kind` (malice/feature), `level`, `flavor`,
+terrain `terrain_type`/`role`, a loose ordered `stats[]` ({name, value}) for the terrain
+header, and a non-lossy `features[]` array. The features are parsed by the shared
+`ParseRichFeatures`/`RichFeature` in `internal/content/featureparse.go` — a port of the
+statblock island's feature parser that additionally keeps the source emoji `icon` and
+labeled `sections`/`enhancements` for table-less features. `transformFeatureblock`
+(`internal/output/`) emits the SDK JSON/YAML straight from this frontmatter (no body
+re-parse).
+
+### Featureblock site rendering (Plan 2)
+
+`internal/site/featureblock_page.go` turns `type: featureblock` and `type:
+dynamic-terrain` pages into the `.fb-wrap` **Forged Band** card at build time. It
+`yaml.Unmarshal`s the structured frontmatter produced by the parsers above (no body
+re-parse), reuses the ability-card grammar (each feature becomes
+`article.sc-ability.fb__feat`), and is dispatched in `build.go` `buildSection`
+alongside the statblock/ability rewriters. See the design spec:
+`docs/superpowers/specs/2026-06-12-featureblock-cards-design.md`.
+
+**Plan 2 scope:** featureblock and dynamic-terrain pages only — the renderer is live for
+all existing featureblocks (malice, terrain) and for Summoner fixtures (which already
+route here). Retainer-advancement split, beastheart companion-advancement cards, and any
+remaining Summoner fixture edge cases are Plans 3–5.
 
 ## Summoner book reuse
 

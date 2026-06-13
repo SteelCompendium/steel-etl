@@ -85,6 +85,12 @@ var schemaAllowedFields = map[string]map[string]bool{
 		"size": true, "stability": true, "free_strike": true,
 		"might": true, "agility": true, "reason": true, "intuition": true, "presence": true,
 		"with_captain": true, "features": true, "metadata": true,
+		"statblock_kind": true, "terrain_type": true,
+	},
+	"featureblock": {
+		"name": true, "type": true, "kind": true, "level": true, "flavor": true,
+		"role": true, "terrain_type": true, "stats": true, "features": true,
+		"metadata": true,
 	},
 }
 
@@ -471,6 +477,49 @@ func TestSchema_EmptyBody(t *testing.T) {
 			}
 			if out["type"] != typ {
 				t.Errorf("type = %v, want %q", out["type"], typ)
+			}
+		})
+	}
+}
+
+func TestSchema_FeatureblockAllowedFields(t *testing.T) {
+	cases := []struct {
+		name string
+		fm   map[string]any
+	}{
+		{"malice featureblock", map[string]any{
+			"name": "Basilisk Malice", "type": "featureblock", "kind": "malice",
+			"flavor": "At the start of any basilisk's turn…",
+			"features": []map[string]any{
+				{"name": "Walleye", "icon": "🔳", "cost": "7 Malice", "body": "Text."},
+			},
+		}},
+		{"dynamic terrain", map[string]any{
+			"name": "Angry Beehive", "type": "dynamic-terrain",
+			"level": 2, "terrain_type": "Hazard", "role": "Hexer",
+			"stats": []map[string]any{{"name": "EV", "value": "2"}},
+			"features": []map[string]any{
+				{"name": "Activate", "icon": "❕", "body": "Trigger text."},
+			},
+		}},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			parsed := &content.ParsedContent{Frontmatter: tc.fm, Body: "raw body"}
+			out := TransformToSDKFormat("mcdm.monsters.v1/monster.basilisks/x", parsed)
+			for k := range out {
+				if !schemaAllowedFields["featureblock"][k] {
+					t.Errorf("field %q not in featureblock schema allowlist", k)
+				}
+			}
+			if out["name"] == nil || out["type"] == nil || out["features"] == nil {
+				t.Errorf("missing required featureblock fields: %+v", out)
+			}
+			if out["metadata"] == nil {
+				t.Error("missing metadata")
+			}
+			if _, hasContent := out["content"]; hasContent {
+				t.Error("featureblock must not fall through to passthrough (raw 'content' present)")
 			}
 		})
 	}
