@@ -104,6 +104,57 @@ func TestFeatureblockParser(t *testing.T) {
 	}
 }
 
+func TestFeatureblockParser_Metadata(t *testing.T) {
+	tests := []struct {
+		heading   string
+		wantKind  string
+		wantLevel int // 0 = absent
+		wantName  string
+	}{
+		{"Basilisk Malice (Malice Features)", "malice", 0, "Basilisk Malice"},
+		{"War Dog Malice (Level 4+ Malice Features)", "malice", 4, "War Dog Malice (Level 4+ Malice Features)"},
+		{"Tactical Stance (Ajax Feature)", "feature", 0, "Tactical Stance"},
+		{"Basic Malice", "malice", 0, "Basic Malice"},
+	}
+	body := "At the start of any basilisk's turn, you can spend Malice to activate one of the following features.\n\n" +
+		"> 🔳 **Walleye (7 Malice)**\n>\n> A basilisk spews reflective spittle.\n"
+
+	for _, tt := range tests {
+		t.Run(tt.heading, func(t *testing.T) {
+			sec := newSection(tt.heading, 9, map[string]string{"type": "featureblock"}, body)
+			ctx := context.NewContextStack(nil)
+			ctx.Push(2, map[string]string{"category": "basilisks"})
+
+			p := &FeatureblockParser{}
+			got, err := p.Parse(ctx, sec)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if got.Frontmatter["kind"] != tt.wantKind {
+				t.Errorf("kind = %v, want %q", got.Frontmatter["kind"], tt.wantKind)
+			}
+			if tt.wantLevel > 0 {
+				if got.Frontmatter["level"] != tt.wantLevel {
+					t.Errorf("level = %v, want %d", got.Frontmatter["level"], tt.wantLevel)
+				}
+			} else if _, ok := got.Frontmatter["level"]; ok {
+				t.Errorf("level should be absent, got %v", got.Frontmatter["level"])
+			}
+			if got.Frontmatter["name"] != tt.wantName {
+				t.Errorf("name = %v, want %q", got.Frontmatter["name"], tt.wantName)
+			}
+			flavor, _ := got.Frontmatter["flavor"].(string)
+			if !strings.HasPrefix(flavor, "At the start of any basilisk's turn") {
+				t.Errorf("flavor = %q", flavor)
+			}
+			feats, ok := got.Frontmatter["features"].([]map[string]any)
+			if !ok || len(feats) != 1 || feats[0]["name"] != "Walleye" {
+				t.Errorf("features = %+v", got.Frontmatter["features"])
+			}
+		})
+	}
+}
+
 func TestMonsterGroupParser(t *testing.T) {
 	sec := newSection("Environmental Hazards", 3, map[string]string{
 		"type": "monster-group", "domain": "dynamic-terrain", "category": "environmental-hazards",

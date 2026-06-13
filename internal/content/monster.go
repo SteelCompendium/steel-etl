@@ -185,9 +185,35 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		id = Slugify(name)
 	}
 
+	body := section.FullBodySource()
+	heading := CleanHeading(section.Heading)
+
 	fm := map[string]any{
 		"name": name,
 		"type": "featureblock",
+	}
+
+	// kind: any "malice" mention in the heading marks a malice block ("Basilisk
+	// Malice (Malice Features)", "Basic Malice"); everything else is a named
+	// feature block ("Tactical Stance (Ajax Feature)").
+	if strings.Contains(strings.ToLower(heading), "malice") {
+		fm["kind"] = "malice"
+	} else {
+		fm["kind"] = "feature"
+	}
+
+	// level: from level-qualified headings ("… (Level 4+ Malice Features)").
+	if m := levelRe.FindStringSubmatch(heading); m != nil {
+		if n, err := strconv.Atoi(m[1]); err == nil {
+			fm["level"] = n
+		}
+	}
+
+	if flavor := firstFlavorParagraph(body); flavor != "" {
+		fm["flavor"] = flavor
+	}
+	if feats := ParseRichFeatures(body); len(feats) > 0 {
+		fm["features"] = RichFeatureMaps(feats)
 	}
 
 	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
@@ -195,7 +221,7 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 
 	return &ParsedContent{
 		Frontmatter: fm,
-		Body:        section.FullBodySource(),
+		Body:        body,
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil
