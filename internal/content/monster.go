@@ -127,6 +127,12 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	}
 
 	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
+
+	if domain == "fixture" {
+		fm["statblock_kind"] = "fixture"
+		applyFixtureGrid(fm, body)
+	}
+
 	typePath := compactPath(domain, category, subcategory, "statblock")
 
 	return &ParsedContent{
@@ -225,6 +231,47 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil
+}
+
+var (
+	// fixture 2-col grid cell: "**Stamina:** 20 + your level"
+	fixtureCellRe = regexp.MustCompile(`\*\*([A-Za-z ]+):\*\*\s*([^|]*)`)
+	// the fixture's italic classifier line: "*Hazard Support*"
+	fixtureRoleRe = regexp.MustCompile(`(?m)^\*([A-Za-z ]+)\*\s*$`)
+)
+
+// applyFixtureGrid parses the summoner-fixture statblock header — a 2-column
+// "| **Stamina:** … | **Size:** … |" grid plus an italic "*Hazard Support*"
+// role line — which the standard parseStatGrid does not understand
+// (workspace FOLLOWUPS #6). It also removes the garbage keywords the standard
+// header parse derives from the first grid cell.
+func applyFixtureGrid(fm map[string]any, body string) {
+	delete(fm, "keywords")
+
+	for _, line := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(line)
+		if !strings.HasPrefix(t, "|") || strings.Contains(t, "---") {
+			continue
+		}
+		for _, m := range fixtureCellRe.FindAllStringSubmatch(t, -1) {
+			key := strings.ToLower(strings.TrimSpace(m[1]))
+			val := linkDisplay(strings.TrimSpace(m[2]))
+			if (key == "stamina" || key == "size") && val != "" {
+				fm[key] = val
+			}
+		}
+	}
+
+	if m := fixtureRoleRe.FindStringSubmatch(body); m != nil {
+		words := strings.Fields(strings.TrimSpace(m[1]))
+		if len(words) >= 2 {
+			role := words[len(words)-1]
+			if knownRoles[role] {
+				fm["role"] = role
+				fm["terrain_type"] = strings.Join(words[:len(words)-1], " ")
+			}
+		}
+	}
 }
 
 // MonsterGroupParser handles @type: monster-group — a non-code-producing
