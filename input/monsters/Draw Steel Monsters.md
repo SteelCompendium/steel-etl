@@ -16898,9 +16898,9 @@ Most radenwights speak Caelian and Szetch.
 <!-- @type: featureblock -->
 ######### Radenwight Malice (Malice Features)
 
-At the start of any radenwight's turn, you can spend Malice to activate one of the following features.
+At the start of any radenwight's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> 🗡 **Trouser Cut (3 Malice)**
+> 🗡 **Trouser Cut (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -16908,21 +16908,21 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 3
-> - **12-16:** 10 damage; push 3, taunted (EoT)
-> - **17+:** 13 damage; push 5, taunted (EoT)
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3, [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **17+:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5, [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 >
 > **Effect:** If the target is wearing clothing covering the lower half of their body, they must use a maneuver once to pull that clothing up before they can move.
 >
-> **Special:** This ability can't be used by a minion.
+> **Special:** This ability can't be used by a [minion](scc:mcdm.monsters.v1/rule.organization/minion).
 
-> ⭐️ **Rat Race (5 Malice)**
+> ⭐️ **Rat Race (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each radenwight in the encounter shifts up to their speed. If a radenwight ends this shift adjacent to one or more radenwights, they can make a melee free strike against each enemy adjacent to them.
+> Each radenwight in the encounter [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed. If a radenwight ends this shift [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to one or more radenwights, they can make a melee [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against each enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to them.
 
-> 🔳 **Rally the Rodents (7 Malice)**
+> 🔳 **Rally the Rodents (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> A radenwight uses music to coordinate living rats, forming a 10 wall of rats scurrying atop one another into unoccupied spaces anywhere on the encounter map. The wall doesn't block line of effect for radenwights and their allies, but it does for other creatures as the rats coordinate their movements with the radenwights. Each square of the wall has 10 Stamina.
+> A radenwight uses music to coordinate living rats, forming a 10 wall of rats scurrying atop one another into unoccupied spaces anywhere on the encounter map. The wall doesn't block [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect) for radenwights and their allies, but it does for other creatures as the rats coordinate their movements with the radenwights. Each square of the wall has 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 >
 > If the last radenwight in the encounter dies and the wall is still standing, the rats let out a hideous screech as they disperse. Each enemy on the encounter map makes an Intuition test.
 >
@@ -16939,7 +16939,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |        -         | **+1 damage bonus to strikes**<br>With Captain |  **-**<br>Weakness   |
 |   **-1**<br>Might    |   **+2**<br>Agility   | **0**<br>Reason  |              **+1**<br>Intuition               |  **0**<br>Presence   |
 
-> ⚔️ **Dagger Dance (Signature Ability)**
+> ⚔️ **Dagger Dance ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Ranged, Strike, Weapon** |                **Main action** |
 > |-----------------------------------|-------------------------------:|
@@ -16961,7 +16961,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The mischiever makes a free strike against the target.
+> **Effect:** The mischiever makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 <!-- @type: statblock -->
 ####### Radenwight Redeye
@@ -16972,7 +16972,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |        -         | **Gain an edge on strikes**<br>With Captain |  **-**<br>Weakness   |
 |   **+1**<br>Might    |   **+2**<br>Agility   | **-1**<br>Reason |             **0**<br>Intuition              |  **0**<br>Presence   |
 
-> 🏹 **Eyes-On-Me-Shot (Signature Ability)**
+> 🏹 **Eyes-On-Me-Shot ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                          **Main action** |
 > |----------------------------|-----------------------------------------:|
@@ -16984,7 +16984,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 > - **12-16:** 4 damage
 > - **17+:** 5 damage
 >
-> **Effect:** One ally of the redeye within 2 squares of the target shifts up to 2 squares.
+> **Effect:** One ally of the redeye within 2 squares of the target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > ❗️ **Ready Rodent**
 >
@@ -16994,7 +16994,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The redeye makes a free strike against the target.
+> **Effect:** The redeye makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 <!-- @type: statblock -->
 ####### Radenwight Scrapper
@@ -17005,7 +17005,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |        -         | **+2 bonus to melee distance**<br>With Captain |  **-**<br>Weakness   |
 |   **-1**<br>Might    |   **+1**<br>Agility   | **0**<br>Reason  |               **0**<br>Intuition               |  **+2**<br>Presence  |
 
-> 🗡 **Buckler Bash (Signature Ability)**
+> 🗡 **Buckler Bash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Charge, Melee, Strike, Weapon** |                          **Main action** |
 > |-----------------------------------|-----------------------------------------:|
@@ -17014,8 +17014,8 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 > **Power Roll + 2:**
 >
 > - **≤11:** 1 damage
-> - **12-16:** 2 damage; taunted (EoT)
-> - **17+:** 3 damage; taunted (EoT)
+> - **12-16:** 2 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
+> - **17+:** 3 damage; [taunted](scc:mcdm.heroes.v1/condition/taunted) (EoT)
 
 > ❗️ **Ready Rodent**
 >
@@ -17025,7 +17025,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The scrapper makes a free strike against the target.
+> **Effect:** The scrapper makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 <!-- @type: statblock -->
 ####### Radenwight Swiftpaw
@@ -17036,7 +17036,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |        -         | **Gain an edge on strikes**<br>With Captain |  **-**<br>Weakness   |
 |    **0**<br>Might    |   **+2**<br>Agility   | **+1**<br>Reason |             **0**<br>Intuition              |  **-1**<br>Presence  |
 
-> 🗡 **Rapier Flunge (Signature Ability)**
+> 🗡 **Rapier Flunge ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                          **Main action** |
 > |---------------------------|-----------------------------------------:|
@@ -17044,9 +17044,9 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 1 damage; slide 1, the swiftpaw can shift 1 square
-> - **12-16:** 2 damage; slide 2, the swiftpaw shifts up to 2 squares
-> - **17+:** 3 damage; slide 3, the swiftpaw shifts up to 3 squares
+> - **≤11:** 1 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1, the swiftpaw can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 2 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2, the swiftpaw [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
+> - **17+:** 3 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3, the swiftpaw [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
 
 > ❗️ **Ready Rodent**
 >
@@ -17056,7 +17056,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The swiftpaw makes a free strike against the target.
+> **Effect:** The swiftpaw makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 <!-- @type: statblock -->
 ####### Radenwight Bruxer
@@ -17067,7 +17067,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |   **+2**<br>Might    |   **+1**<br>Agility   | **-1**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **Lockjaw (Signature Ability)**
+> 🗡 **Lockjaw ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |               **Main action** |
 > |---------------------------|------------------------------:|
@@ -17077,11 +17077,11 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > - **≤11:** 6 damage
 > - **12-16:** 9 damage
-> - **17+:** 12 damage; grabbed
+> - **17+:** 12 damage; [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** A target grabbed this way takes 2 damage at the start of each of the bruxer's turns.
+> **Effect:** A target [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way takes 2 damage at the start of each of the bruxer's turns.
 
-> ❇️ **Flurry of Bites (3 Malice)**
+> ❇️ **Flurry of Bites (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Weapon** |               **Main action** |
 > |------------------|------------------------------:|
@@ -17089,9 +17089,9 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 3 damage; A < 0 bleeding (save ends)
-> - **12-16:** 5 damage; A < 1 bleeding (save ends)
-> - **17+:** 8 damage; A < 2 bleeding (save ends)
+> - **≤11:** 3 damage; A < 0 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 5 damage; A < 1 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 8 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 
 > ❗️ **Ready Rodent**
 >
@@ -17101,11 +17101,11 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The bruxer makes a free strike against the target.
+> **Effect:** The bruxer makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Lockdown**
 >
-> Any enemy who shifts adjacent to the bruxer has that shift end. Additionally, any enemy adjacent to the bruxer can't shift.
+> Any enemy who [shifts](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the bruxer has that shift end. Additionally, any enemy [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the bruxer can't [shift](scc:mcdm.heroes.v1/movement/shifting).
 
 <!-- @type: statblock -->
 ####### Radenwight Piper
@@ -17116,7 +17116,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |    **0**<br>Might    |   **0**<br>Agility    |  **0**<br>Reason  |  **+2**<br>Intuition  |  **+1**<br>Presence  |
 
-> ⚔️ **Piercing Trill (Signature Ability)**
+> ⚔️ **Piercing Trill ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |               **Main action** |
 > |----------------------------------|------------------------------:|
@@ -17124,11 +17124,11 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 5 sonic damage; push 1
-> - **12-16:** 7 sonic damage; push 3
-> - **17+:** 9 sonic damage; push 4
+> - **≤11:** 5 sonic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 7 sonic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 9 sonic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** The piper or one ally within distance regains Stamina equal to the damage dealt.
+> **Effect:** The piper or one ally within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to the damage dealt.
 
 > ❇️ **Vivace Vivace!**
 >
@@ -17138,7 +17138,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Effect:** Each target who has used their Ready Rodent ability this round regains the use of their triggered action.
 >
-> **2 Malice:** The area increases to a 6 burst.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The area increases to a 6 burst.
 
 > ❗️ **Ready Rodent**
 >
@@ -17148,11 +17148,11 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The piper makes a free strike against the target.
+> **Effect:** The piper makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Musical Suggestion**
 >
-> At the end of the piper's turn, they can slide one adjacent creature up to 2 squares, ignoring stability.
+> At the end of the piper's turn, they can [slide](scc:mcdm.heroes.v1/movement/forced-movement) one [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) creature up to 2 squares, ignoring stability.
 
 <!-- @type: statblock -->
 ####### Radenwight Ratcrobat
@@ -17163,7 +17163,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |   **-1**<br>Might    |   **+2**<br>Agility   |  **0**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **En Garde (Signature Ability)**
+> 🗡 **En Garde ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17175,7 +17175,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 > - **12-16:** 6 damage
 > - **17+:** 8 damage
 >
-> **Effect:** The ratcrobat shifts up to 2 squares after striking the first target, then can shift 1 square after striking the second target.
+> **Effect:** The ratcrobat [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares after striking the first target, then can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square after striking the second target.
 
 > 🗡 **Over Here, Thanks**
 >
@@ -17183,7 +17183,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 > |----------------|-----------------:|
 > | **📏 Melee 1** | **🎯 One enemy** |
 >
-> **Effect:** The ratcrobat slides the target up to 3 squares, then can shift into any square the target left.
+> **Effect:** The ratcrobat [slides](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 3 squares, then can [shift](scc:mcdm.heroes.v1/movement/shifting) into any square the target left.
 
 > ❗️ **Ready Rodent**
 >
@@ -17193,11 +17193,11 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** An ally deals damage to the target.
 >
-> **Effect:** The ratcrobat makes a free strike against the target.
+> **Effect:** The ratcrobat makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Gymratstics**
 >
-> The ratcrobat gains an edge on strikes against larger creatures.
+> The ratcrobat gains an edge on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against larger creatures.
 
 <!-- @type: statblock -->
 ####### Radenwight Maestro
@@ -17208,7 +17208,7 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 |  **-**<br>Immunity   | **Climb**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |   **-2**<br>Might    |   **+2**<br>Agility   |  **0**<br>Reason  |  **0**<br>Intuition   |  **+3**<br>Presence  |
 
-> ❇️ **Cacophony (Signature Ability)**
+> ❇️ **Cacophony ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Area, Magic** |               **Main action** |
 > |-----------------|------------------------------:|
@@ -17216,9 +17216,9 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 3 sonic damage; slide 1, the maestro can shift 1 square
-> - **12-16:** 6 sonic damage; slide 3, the maestro shifts up to 3 squares
-> - **17+:** 8 sonic damage; slide 5, the maestro shifts up to 5 squares
+> - **≤11:** 3 sonic damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1, the maestro can [shift](scc:mcdm.heroes.v1/movement/shifting) 1 square
+> - **12-16:** 6 sonic damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3, the maestro [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
+> - **17+:** 8 sonic damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5, the maestro [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares
 >
 > **Effect:** Each ally within distance can use Ready Rodent as a free triggered action once before the end of the round.
 
@@ -17230,13 +17230,13 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** P < 1 slowed (save ends)
-> - **12-16:** P < 2 slowed (save ends)
-> - **17+:** P < 3 slowed (save ends)
+> - **≤11:** P < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** P < 2 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** P < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 >
-> **3 Malice:** Each ally within 3 squares of any target has a +2 bonus to speed until the end of their next turn.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each ally within 3 squares of any target has a +2 bonus to speed until the end of their next turn.
 
-> ❗️ **Ever-Ready Rodent (2 Malice)**
+> ❗️ **Ever-Ready Rodent (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |      **Free triggered action** |
 > |-------------------|-------------------------------:|
@@ -17244,35 +17244,35 @@ At the start of any radenwight's turn, you can spend Malice to activate one of t
 >
 > **Trigger:** A creature within distance deals damage to an ally or takes damage from an ally.
 >
-> **Effect:** The maestro makes a free strike against the target.
+> **Effect:** The maestro makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
-> ⭐️ **End Effect**
+> ⭐️ **[End Effect](scc:mcdm.monsters.v1/rule.monster/end-effect)**
 >
-> At the end of each of their turns, the maestro can take 5 damage to end one effect on them that can be ended by a saving throw. This damage can't be reduced in any way.
+> At the end of each of their turns, the maestro can take 5 damage to end one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). This damage can't be reduced in any way.
 
-> ☠️ **Overture (Villain Action 1)**
+> ☠️ **Overture ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
 > | **Area**        |                        **-** |
 > |-----------------|-----------------------------:|
 > | **📏 10 burst** | **🎯 Each ally in the area** |
 >
-> **Effect:** Each target can shift up to their speed or take the Defend action.
+> **Effect:** Each target can [shift](scc:mcdm.heroes.v1/movement/shifting) up to their speed or take the Defend action.
 
-> ☠️ **Solo Act (Villain Action 2)**
+> ☠️ **Solo Act ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 2)**
 >
 > | **Ranged**       |               **-** |
 > |------------------|--------------------:|
 > | **📏 Ranged 15** | **🎯 One creature** |
 >
-> **Effect:** Until the end of their next turn, the target halves any damage they take, gains a +4 damage bonus to strikes, and has their speed doubled.
+> **Effect:** Until the end of their next turn, the target halves any damage they take, gains a +4 damage bonus to [strikes](scc:mcdm.heroes.v1/rule.combat/strike), and has their speed doubled.
 
-> ☠️ **Rondo of Rat (Villain Action 3)**
+> ☠️ **Rondo of Rat ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 3)**
 >
 > | **Area**        |                             **-** |
 > |-----------------|----------------------------------:|
 > | **📏 10 burst** | **🎯 Each dead ally in the area** |
 >
-> **Effect:** Each target stands, makes a free strike, then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.
+> **Effect:** Each target stands, makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.
 
 <!-- @type: monster | @category: rivals -->
 ## Rivals
@@ -17333,47 +17333,47 @@ Most rivals speak Caelian and two other languages.
 <!-- @type: featureblock -->
 ######### Rival Malice (Level 1+ Malice Features)
 
-At the start of any rival's turn, you can spend Malice to activate one of the following features.
+At the start of any rival's turn, you can spend [Malice](scc:mcdm.monsters.v1/rule.monster/malice) to activate one of the following features.
 
-> ⭐️ **Work as One (3 Malice)**
+> ⭐️ **Work as One (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Until the end of the round, each rival can impose a bane on a strike made against an adjacent rival as a free triggered action.
+> Until the end of the round, each rival can impose a bane on a [strike](scc:mcdm.heroes.v1/rule.combat/strike) made against an [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) rival as a free triggered action.
 
-> ⭐️ **We Just Do It Better (3 Malice)**
+> ⭐️ **We Just Do It Better (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > Until the end of the round, whenever any rival makes a power roll against the target of their Rivalry trait, they roll a d3 and add it to the power roll.
 
-> 🔳 **Check Out Our Loot (5 Malice)**
+> 🔳 **Check Out Our Loot (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> One rival pulls out a magic consumable and hurls it, targeting a 5 x 1 line within 1 square of them or a 3 cube within 10 squares of them. Each enemy in the area makes an Agility test. The rival chooses a damage type and a condition for the outcome of the test from one of the following pairs: sonic damage and dazed, poison damage and weakened, or fire damage and frightened.
+> One rival pulls out a magic consumable and hurls it, targeting a 5 x 1 line within 1 square of them or a 3 cube within 10 squares of them. Each enemy in the area makes an Agility test. The rival chooses a damage type and a condition for the outcome of the test from one of the following pairs: sonic damage and [dazed](scc:mcdm.heroes.v1/condition/dazed), poison damage and [weakened](scc:mcdm.heroes.v1/condition/weakened), or fire damage and [frightened](scc:mcdm.heroes.v1/condition/frightened).
 >
 > - **≤11:** 11 damage; the condition affects the target (save ends)
 > - **12-16:** 8 damage; the condition affects the target (EoT)
 > - **17+:** 5 damage
 
-> ⭐️ **Calling the Shots (7 Malice)**
+> ⭐️ **Calling the Shots (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each rival regains 10 Stamina. Until the end of the round, whenever a rival uses an ability against an enemy, each other rival adjacent to that enemy can make a free strike against them.
+> Each rival regains 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina). Until the end of the round, whenever a rival uses an ability against an enemy, each other rival [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to that enemy can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against them.
 
-> ⭐️ **Coordinated Takedown (10 Malice)**
+> ⭐️ **Coordinated Takedown (10 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each rival moves up to their speed and uses a main action or maneuver that doesn't cost Malice.
+> Each rival moves up to their speed and uses a main action or maneuver that doesn't cost [Malice](scc:mcdm.monsters.v1/rule.monster/malice).
 
 ##### Rival Ancestries Table
 
 | Keyword                              | Size Adjustment | Stability Adjustment | Ancestral Trait                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------|-----------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Devil                                | 1M              | 0                    | **Prehensile Tail:** The rival can't be flanked.                                                                                                                                                                                                                                                                                                |
-| Draconian (for the dragon knight)    | 1M              | +1                   | **Wings:** The rival can fly. While flying, their stability is 0.                                                                                                                                                                                                                                                                               |
-| Dwarf                                | 1M              | +2                   | **Great Fortitude:** The rival can't be made weakened.                                                                                                                                                                                                                                                                                          |
-| High Elf/Wode Elf                    | 1M              | 0                    | **Otherworldly Grace:** At the start of each of their turns, the rival can choose one effect on them that can be ended by a saving throw. That effect instead ends at the end of their turn.                                                                                                                                                    |
-| Hakaan                               | 1L              | +2                   | **Forceful:** When the rival force moves a creature or object, they can force move them an additional 2 squares.                                                                                                                                                                                                                                |
-| Human                                | 1M              | +1                   | **Determination:** As a maneuver, the rival can end the frightened, slowed, or weakened condition on themself.                                                                                                                                                                                                                                  |
-| Memonek                              | 1M              | -1 (minimum 0)       | **Nonstop:** The rival can't be made slowed.                                                                                                                                                                                                                                                                                                    |
-| Orc                                  | 1M              | +2                   | **Glowing Recovery:** Once per round, the rival can use a maneuver to regain Stamina equal to 5 times their level.                                                                                                                                                                                                                              |
-| Polder                               | 1S              | 0                    | **Nimblestep:** The rival ignores difficult terrain and can move at full speed while sneaking.                                                                                                                                                                                                                                                  |
-| Revenant                             | 1M              | +1                   | **Vengeance Mark:** The rival places a magic sigil on an enemy within 10 squares of them. The rival always knows the direction to that enemy while the sigil is active on them. As a main action, the rival can detonate the sigil, dealing damage to the target equal to the rival's free strike and sliding the target up to 2 squares.       |
-| Time Raider                          | 1M              | 0                    | **Four-Armed Martial Arts:** Whenever the rival uses the Grab or Knockback maneuver, they can target one additional creature.                                                                                                                                                                                                                   |
+| Draconian (for the dragon knight)    | 1M              | +1                   | **Wings:** The rival can [fly](scc:mcdm.heroes.v1/movement/fly). While flying, their stability is 0.                                                                                                                                                                                                                                           |
+| Dwarf                                | 1M              | +2                   | **Great Fortitude:** The rival can't be made [weakened](scc:mcdm.heroes.v1/condition/weakened).                                                                                                                                                                                                                                                 |
+| High Elf/Wode Elf                    | 1M              | 0                    | **Otherworldly Grace:** At the start of each of their turns, the rival can choose one effect on them that can be ended by a [saving throw](scc:mcdm.heroes.v1/rule.general/saving-throw). That effect instead ends at the end of their turn.                                                                                                    |
+| Hakaan                               | 1L              | +2                   | **Forceful:** When the rival [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, they can force move them an additional 2 squares.                                                                                                                                                                                 |
+| Human                                | 1M              | +1                   | **Determination:** As a maneuver, the rival can end the [frightened](scc:mcdm.heroes.v1/condition/frightened), [slowed](scc:mcdm.heroes.v1/condition/slowed), or [weakened](scc:mcdm.heroes.v1/condition/weakened) condition on themself.                                                                                                       |
+| Memonek                              | 1M              | -1 (minimum 0)       | **Nonstop:** The rival can't be made [slowed](scc:mcdm.heroes.v1/condition/slowed).                                                                                                                                                                                                                                                             |
+| Orc                                  | 1M              | +2                   | **Glowing Recovery:** Once per round, the rival can use a maneuver to regain [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to 5 times their level.                                                                                                                                                                                    |
+| Polder                               | 1S              | 0                    | **Nimblestep:** The rival ignores [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) and can move at full speed while sneaking.                                                                                                                                                                                                 |
+| Revenant                             | 1M              | +1                   | **Vengeance Mark:** The rival places a magic sigil on an enemy within 10 squares of them. The rival always knows the direction to that enemy while the sigil is active on them. As a main action, the rival can detonate the sigil, dealing damage to the target equal to the rival's free strike and [sliding](scc:mcdm.heroes.v1/movement/forced-movement) the target up to 2 squares. |
+| Time Raider                          | 1M              | 0                    | **Four-Armed Martial Arts:** Whenever the rival uses the [Grab](scc:mcdm.heroes.v1/feature.common.maneuvers/grab) or Knockback maneuver, they can target one additional creature.                                                                                                                                                              |
 
 <!-- @type: monster-group | @subcategory: 1st-echelon -->
 ### Rivals-1st Echelon
@@ -17389,7 +17389,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+1**<br>Might  | **+0**<br>Agility | **+0**<br>Reason  |  **+2**<br>Intuition  |  **+0**<br>Presence  |
 
-> ⚔️ **Thunder of Heavens (Signature Ability)**
+> ⚔️ **Thunder of Heavens ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -17401,23 +17401,23 @@ It's possible that these rivals gained a head start on their adventures and will
 > - **12-16:** 10 holy damage
 > - **17+:** 13 holy damage
 >
-> **Effect:** The conduit or one ally within distance regains Stamina equal to half the damage dealt.
+> **Effect:** The conduit or one ally within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
-> 🏹 **Imbue with Might (2 Malice)**
+> 🏹 **Imbue with Might (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |               **Maneuver** |
 > |-------------------|---------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and five allies** |
 >
-> **Effect:** Each target gains an edge on their next strike.
+> **Effect:** Each target gains an edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Stalwart Guardian**
 >
-> Strikes made against allies adjacent to the conduit take a bane.
+> [Strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against allies [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the conduit take a bane.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the conduit chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Elementalist
@@ -17428,7 +17428,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+0**<br>Might  | **+0**<br>Agility | **+2**<br>Reason  |  **+1**<br>Intuition  |  **+0**<br>Presence  |
 
-> 🏹 **The Writhing Green (Signature Ability)**
+> 🏹 **The Writhing Green ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Green, Magic, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -17436,11 +17436,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; slide 1
-> - **12-16:** 10 damage; slide 2
-> - **17+:** 13 damage; slide 3
+> - **≤11:** 7 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 10 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 13 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 
-> 🔳 **The Earth Devours (3 Malice)**
+> 🔳 **The Earth Devours (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
@@ -17449,10 +17449,10 @@ It's possible that these rivals gained a head start on their adventures and will
 > **Power Roll + 2:**
 >
 > - **≤11:** 3 damage
-> - **12-16:** 5 damage; restrained (EoT)
-> - **17+:** 8 damage; restrained (save ends)
+> - **12-16:** 5 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** 8 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 2.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. Any enemy in the area has acid [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 2.
 
 > ❗️ **Jaws of the Void**
 >
@@ -17462,11 +17462,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Trigger:** The elementalist takes damage.
 >
-> **Effect:** The elementalist can teleport up to 2 squares. Each creature adjacent to the space they leave takes 2 corruption damage.
+> **Effect:** The elementalist can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 2 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the space they leave takes 2 corruption damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the elementalist chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Fury
@@ -17477,7 +17477,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+1**<br>Agility |  **0**<br>Reason   |  **0**<br>Intuition   |  **0**<br>Presence   |
 
-> 🗡 **Brutal Impact (Signature Ability)**
+> 🗡 **Brutal Impact ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17485,13 +17485,13 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; push 1
-> - **12-16:** 11 damage; push 2
-> - **17+:** 14 damage; push 3
+> - **≤11:** 7 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 11 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 14 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **2 Malice:** Each target who has M < 1 is slowed (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has M < 1 is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 🗡 **Let's Tussle (2 Malice)**
+> 🗡 **Let's Tussle (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -17499,19 +17499,19 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 damage; M < 0 grabbed
-> - **12-16:** 13 damage; M < 1 grabbed
-> - **17+:** 16 damage; M < 2 grabbed
+> - **≤11:** 8 damage; M < 0 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 13 damage; M < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 16 damage; M < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The target must be the fury's size or smaller. While the target is grabbed this way, the fury gains an edge on strikes against them.
+> **Effect:** The target must be the fury's size or smaller. While the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the fury gains an edge on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against them.
 
 > ⭐️ **Overwhelm**
 >
-> Once per turn, when the fury force moves a creature or object, or shifts adjacent to a creature or object, they can make a free strike against that creature or object.
+> Once per turn, when the fury [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, or [shifts](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature or object, they can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against that creature or object.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the fury chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Null
@@ -17522,7 +17522,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+2**<br>Agility | **+1**<br>Reason  |  **+2**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Nimble Step (Signature Ability)**
+> 🗡 **Nimble Step ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17530,11 +17530,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; the null shifts up to 2 squares
-> - **12-16:** 10 damage; the null shifts up to 3 squares
-> - **17+:** 13 damage; the null shifts up to 4 squares
+> - **≤11:** 7 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares
+> - **12-16:** 10 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares
+> - **17+:** 13 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares
 
-> 🗡 **Numb (2 Malice)**
+> 🗡 **Numb (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                  **Maneuver** |
 > |------------------------------------|------------------------------:|
@@ -17542,17 +17542,17 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 damage; R < 0 slowed (EoT)
-> - **12-16:** 10 damage; R < 1 slowed (EoT)
-> - **17+:** 13 damage; R < 2 dazed and slowed (EoT)
+> - **≤11:** 7 damage; R < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **12-16:** 10 damage; R < 1 [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
+> - **17+:** 13 damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (EoT)
 
 > ⭐️ **Inertial Shield**
 >
-> The first time each round that the null is targeted by a damage-dealing strike, they halve the damage.
+> The first time each round that the null is targeted by a damage-dealing [strike](scc:mcdm.heroes.v1/rule.combat/strike), they halve the damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the null chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Shadow
@@ -17563,7 +17563,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+2**<br>Agility |  **0**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **Swift Serration (Signature Ability)**
+> 🗡 **Swift Serration ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17573,9 +17573,9 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > - **≤11:** 7 damage
 > - **12-16:** 11 damage
-> - **17+:** 14 damage; A < 2 bleeding (save ends)
+> - **17+:** 14 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **1 Malice:** The shadow can teleport up to 5 squares, then can attempt to hide.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shadow can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares, then can attempt to hide.
 
 > 👤 **Poison the Blade**
 >
@@ -17583,15 +17583,15 @@ It's possible that these rivals gained a head start on their adventures and will
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The shadow coats their weapon with poison. They gain an edge on their next strike, and any potency for that strike increases by 1.
+> **Effect:** The shadow coats their weapon with poison. They gain an edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike), and any [potency](scc:mcdm.heroes.v1/rule.character/potency) for that strike increases by 1.
 
 > ⭐️ **Exploit Opening**
 >
-> The shadow deals an extra 5 damage to any bleeding target.
+> The shadow deals an extra 5 damage to any [bleeding](scc:mcdm.heroes.v1/condition/bleeding) target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the shadow chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
 ###### Customizing Rivals
 
@@ -17620,7 +17620,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **0**<br>Agility  | **+1**<br>Reason  |  **0**<br>Intuition   |  **0**<br>Presence   |
 
-> 🏹 **Dual Targeting Shot (Signature Ability)**
+> 🏹 **Dual Targeting Shot ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                 **Main action** |
 > |----------------------------|--------------------------------:|
@@ -17632,9 +17632,9 @@ It's possible that these rivals gained a head start on their adventures and will
 > - **12-16:** 11 damage
 > - **17+:** 14 damage
 >
-> **2 Malice:** Two allies within distance can make a free strike against one of the targets.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two allies within distance can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one of the targets.
 
-> 🏹 **I'll Cover You! (3 Malice)**
+> 🏹 **I'll Cover You! (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -17642,11 +17642,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 8 damage; M < 0 weakened (save ends)
-> - **12-16:** 13 damage; M < 1 weakened (save ends)
-> - **17+:** 16 damage; M < 2 weakened (save ends)
+> - **≤11:** 8 damage; M < 0 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 13 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 16 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** One ally adjacent to the target regains 5 Stamina.
+> **Effect:** One ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target regains 5 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ❗️ **Overwatch**
 >
@@ -17656,11 +17656,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Trigger:** An enemy within distance willingly moves.
 >
-> **Effect:** At any point during the movement, the tactician makes a free strike against the target.
+> **Effect:** At any point during the movement, the tactician makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the tactician chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Talent
@@ -17671,7 +17671,7 @@ It's possible that these rivals gained a head start on their adventures and will
 | **-**<br>Immunity | **-**<br>Movement |         -         | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **0**<br>Agility  | **+2**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🏹 **Reverberating Blast (Signature Ability)**
+> 🏹 **Reverberating Blast ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike, Telekinesis** |                 **Main action** |
 > |------------------------------------------|--------------------------------:|
@@ -17679,11 +17679,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** 7 psychic damage; M < 0 prone
-> - **12-16:** 10 psychic damage; push 2; M < 1 prone
-> - **17+:** 13 psychic damage; push 3; M < 2 prone
+> - **≤11:** 7 psychic damage; M < 0 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 10 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 13 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
 
-> 🏹 **Muddle the Mind (2 Malice)**
+> 🏹 **Muddle the Mind (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged, Telepathy** |                  **Maneuver** |
 > |--------------------------------|------------------------------:|
@@ -17691,11 +17691,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Power Roll + 2:**
 >
-> - **≤11:** R < 0 slowed (save ends)
-> - **12-16:** R < 1 dazed (save ends)
-> - **17+:** R < 2 dazed and slowed (save ends)
+> - **≤11:** R < 0 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
-> ❗️ **Precognitive Shift (1 Malice)**
+> ❗️ **Precognitive Shift (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic** | **Triggered action** |
 > |-------------|---------------------:|
@@ -17703,11 +17703,11 @@ It's possible that these rivals gained a head start on their adventures and will
 >
 > **Trigger:** A creature deals damage to the talent.
 >
-> **Effect:** The talent halves the damage and shifts up to 2 squares.
+> **Effect:** The talent halves the damage and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the talent chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: monster-group | @subcategory: 2nd-echelon -->
 ### Rivals-2nd Echelon
@@ -17723,7 +17723,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **0**<br>Agility  |  **0**<br>Reason   |  **+3**<br>Intuition  |  **+1**<br>Presence  |
 
-> ⚔️ **Raging Tempest (Signature Ability)**
+> ⚔️ **Raging Tempest ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -17731,27 +17731,27 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 holy damage; vertical slide 1
-> - **12-16:** 14 holy damage; vertical slide 2
-> - **17+:** 17 holy damage; vertical slide 3
+> - **≤11:** 9 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1
+> - **12-16:** 14 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **17+:** 17 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
 >
-> **Effect:** The conduit or one ally within distance regains Stamina equal to half the damage dealt.
+> **Effect:** The conduit or one ally within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
-> 🏹 **Imbue with Power (3 Malice)**
+> 🏹 **Imbue with Power (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                **Maneuver** |
 > |-------------------|----------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and five allies** |
 >
-> **Effect:** Each target has a double edge on their next strike.
+> **Effect:** Each target has a double edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Stalwart Guardian**
 >
-> Strikes made against allies adjacent to the conduit take a bane.
+> [Strikes](scc:mcdm.heroes.v1/rule.combat/strike) made against allies [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the conduit take a bane.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the conduit chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Elementalist
@@ -17762,7 +17762,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+2**<br>Agility |  **+3**<br>Reason  |  **+2**<br>Intuition  |  **0**<br>Presence   |
 
-> 🏹 **The Thriving Wilds (Signature Ability)**
+> 🏹 **The Thriving Wilds ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Green, Magic, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -17770,11 +17770,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; slide 1; M < 1 3 acid damage
-> - **12-16:** 14 damage; slide 2; M < 2 5 acid damage
-> - **17+:** 17 damage; slide 3; M < 3 7 acid damage
+> - **≤11:** 9 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 1; M < 1 3 acid damage
+> - **12-16:** 14 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 2 5 acid damage
+> - **17+:** 17 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 3 7 acid damage
 
-> 🔳 **The Depths Hunger (4 Malice)**
+> 🔳 **The Depths Hunger (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
@@ -17783,10 +17783,10 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 > **Power Roll + 3:**
 >
 > - **≤11:** 5 damage
-> - **12-16:** 9 damage; restrained (EoT)
-> - **17+:** 11 damage; restrained (save ends)
+> - **12-16:** 9 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** 11 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 3.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. Any enemy in the area has acid [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 3.
 
 > ❗️ **Fissures of Darkness**
 >
@@ -17796,11 +17796,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Trigger:** The elementalist takes damage.
 >
-> **Effect:** The elementalist can teleport up to 3 squares. Each creature adjacent to the space they leave takes 3 corruption damage.
+> **Effect:** The elementalist can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 3 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the space they leave takes 3 corruption damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the elementalist chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Fury
@@ -17811,7 +17811,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+3**<br>Might  | **+2**<br>Agility |  **0**<br>Reason   |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🗡 **Thunderous Slam (Signature Ability)**
+> 🗡 **Thunderous Slam ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17819,13 +17819,13 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 10 damage; push 2
-> - **12-16:** 15 damage; push 3
-> - **17+:** 18 damage; push 4
+> - **≤11:** 10 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 15 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 18 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **2 Malice:** Each target who has M < 2 is slowed (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has M < 2 is [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 🗡 **Roughed Up (3 Malice)**
+> 🗡 **Roughed Up (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -17833,19 +17833,19 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 11 damage; M < 1 grabbed
-> - **12-16:** 16 damage; M < 2 grabbed
-> - **17+:** 21 damage; M < 3 grabbed
+> - **≤11:** 11 damage; M < 1 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 16 damage; M < 2 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 21 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The target must be the fury's size or smaller. While the target is grabbed this way, the fury and their allies gain an edge on strikes against them.
+> **Effect:** The target must be the fury's size or smaller. While the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the fury and their allies gain an edge on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against them.
 
 > ⭐️ **Overpower**
 >
-> Once per turn, when the fury force moves a creature or object, or shifts adjacent to a creature or object, they can use a signature ability against that creature or object.
+> Once per turn, when the fury [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, or [shifts](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature or object, they can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against that creature or object.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the fury chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Null
@@ -17856,7 +17856,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+3**<br>Agility |  **+2**<br>Reason  |  **+3**<br>Intuition  |  **0**<br>Presence   |
 
-> 🗡 **Agile Stride (Signature Ability)**
+> 🗡 **Agile Stride ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17864,11 +17864,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; the null shifts up to 3 squares; A < 1 6 damage
-> - **12-16:** 14 damage; the null shifts up to 4 squares; A < 2 11 damage
-> - **17+:** 17 damage; the null shifts up to 5 squares; A < 3 11 damage
+> - **≤11:** 9 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares; A < 1 6 damage
+> - **12-16:** 14 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares; A < 2 11 damage
+> - **17+:** 17 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares; A < 3 11 damage
 
-> 🗡 **Deaden (2 Malice)**
+> 🗡 **Deaden (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                  **Maneuver** |
 > |------------------------------------|------------------------------:|
@@ -17876,17 +17876,17 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 damage; R < 1 dazed (EoT)
-> - **12-16:** 14 damage; R < 2 dazed (save ends)
-> - **17+:** 17 damage; R < 3 dazed and restrained (save ends)
+> - **≤11:** 9 damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (EoT)
+> - **12-16:** 14 damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 17 damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Inertial Shield**
 >
-> The first time each round that the null is targeted by a damage-dealing strike, they halve the damage.
+> The first time each round that the null is targeted by a damage-dealing [strike](scc:mcdm.heroes.v1/rule.combat/strike), they halve the damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the null chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Shadow
@@ -17897,7 +17897,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+3**<br>Agility |  **+1**<br>Reason  |  **0**<br>Intuition   |  **+2**<br>Presence  |
 
-> 🗡 **Ambuscade (Signature Ability)**
+> 🗡 **Ambuscade ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -17906,10 +17906,10 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 > **Power Roll + 3:**
 >
 > - **≤11:** 10 damage
-> - **12-16:** 15 damage; A < 2 bleeding (save ends)
-> - **17+:** 18 damage; A < 3 bleeding (save ends)
+> - **12-16:** 15 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 18 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **1 Malice:** The shadow can teleport up to 6 squares, then can attempt to hide.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shadow can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 6 squares, then can attempt to hide.
 
 > 👤 **Poison the Blade**
 >
@@ -17917,15 +17917,15 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The shadow coats their weapon with poison. They gain an edge on their next strike, and any potency for that strike increases by 1.
+> **Effect:** The shadow coats their weapon with poison. They gain an edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike), and any [potency](scc:mcdm.heroes.v1/rule.character/potency) for that strike increases by 1.
 
 > ⭐️ **Exploit Opening**
 >
-> The shadow deals an extra 7 damage to any bleeding target.
+> The shadow deals an extra 7 damage to any [bleeding](scc:mcdm.heroes.v1/condition/bleeding) target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the shadow chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Tactician
@@ -17936,7 +17936,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+3**<br>Might  | **0**<br>Agility  |  **+2**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🏹 **Mark Targets (Signature Ability)**
+> 🏹 **Mark Targets ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                 **Main action** |
 > |----------------------------|--------------------------------:|
@@ -17948,9 +17948,9 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 > - **12-16:** 15 damage
 > - **17+:** 18 damage
 >
-> **3 Malice:** Two allies within distance can use a signature ability against the same target.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two allies within distance can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against the same target.
 
-> 🏹 **Preserve and Protect (3 Malice)**
+> 🏹 **Preserve and Protect (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -17958,11 +17958,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 11 damage; M < 1 weakened (save ends)
-> - **12-16:** 16 damage; M < 2 weakened (save ends)
-> - **17+:** 21 damage; M < 3 weakened (save ends)
+> - **≤11:** 11 damage; M < 1 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 16 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 21 damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** One ally adjacent to the target regains 7 Stamina.
+> **Effect:** One ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target regains 7 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ❗️ **Take the Opening**
 >
@@ -17972,11 +17972,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Trigger:** An enemy within distance willingly moves.
 >
-> **Effect:** At any point during the movement, the tactician and one ally within distance can each make a free strike against the target.
+> **Effect:** At any point during the movement, the tactician and one ally within distance can each make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against the target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the tactician chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Talent
@@ -17987,7 +17987,7 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **0**<br>Agility  |  **+3**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🏹 **Overwhelming Rend (Signature Ability)**
+> 🏹 **Overwhelming Rend ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike, Telekinesis** |                 **Main action** |
 > |------------------------------------------|--------------------------------:|
@@ -17995,11 +17995,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 9 psychic damage; push 2; M < 1 prone
-> - **12-16:** 14 psychic damage; push 3; M < 2 prone
-> - **17+:** 17 psychic damage; push 4; M < 3 prone
+> - **≤11:** 9 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 1 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **12-16:** 14 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 2 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 17 psychic damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
 
-> 🏹 **Disarrange Thoughts (2 Malice)**
+> 🏹 **Disarrange Thoughts (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged, Telepathy** |                  **Maneuver** |
 > |--------------------------------|------------------------------:|
@@ -18007,11 +18007,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Power Roll + 3:**
 >
-> - **≤11:** 6 psychic damage; R < 1 dazed (save ends)
-> - **12-16:** 6 psychic damage; R < 2 dazed (save ends)
-> - **17+:** 6 psychic damage; R < 3 dazed and slowed (save ends)
+> - **≤11:** 6 psychic damage; R < 1 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 6 psychic damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 6 psychic damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
-> ❗️ **Precognitive Shift (1 Malice)**
+> ❗️ **Precognitive Shift (1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic** | **Triggered action** |
 > |-------------|---------------------:|
@@ -18019,11 +18019,11 @@ The rivals have learned a few new tricks since they last encountered the heroes.
 >
 > **Trigger:** A creature deals damage to the talent.
 >
-> **Effect:** The talent halves the damage and shifts up to 2 squares.
+> **Effect:** The talent halves the damage and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the talent chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
 #### The Black Iron Pact
 
@@ -18063,7 +18063,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+3**<br>Might  | **0**<br>Agility  |  **+1**<br>Reason  |  **+4**<br>Intuition  |  **+2**<br>Presence  |
 
-> ⚔️ **Celestial Furor (Signature Ability)**
+> ⚔️ **Celestial Furor ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -18071,27 +18071,27 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 holy damage; vertical slide 2
-> - **12-16:** 17 holy damage; vertical slide 3
-> - **17+:** 21 holy damage; vertical slide 4
+> - **≤11:** 12 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2
+> - **12-16:** 17 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **17+:** 21 holy damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4
 >
-> **Effect:** The conduit or one ally within distance regains Stamina equal to half the damage dealt.
+> **Effect:** The conduit or one ally within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 
-> 🏹 **Imbue with Power (3 Malice)**
+> 🏹 **Imbue with Power (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                **Maneuver** |
 > |-------------------|----------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and five allies** |
 >
-> **Effect:** Each target has a double edge on their next strike.
+> **Effect:** Each target has a double edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike).
 
 > ⭐️ **Unwavering Defender**
 >
-> Damage dealt to any ally adjacent to the conduit is halved.
+> Damage dealt to any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the conduit is halved.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the conduit chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Elementalist
@@ -18102,7 +18102,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+2**<br>Agility |  **+4**<br>Reason  |  **+3**<br>Intuition  |  **0**<br>Presence   |
 
-> 🏹 **Verdant Rains (Signature Ability)**
+> 🏹 **Verdant Rains ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Green, Magic, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -18110,13 +18110,13 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; slide 2; M < 2 4 acid damage
-> - **12-16:** 17 damage; slide 3; M < 3 6 acid damage
-> - **17+:** 21 damage; slide 4; M < 4 8 acid damage
+> - **≤11:** 12 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 2; M < 2 4 acid damage
+> - **12-16:** 17 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 3 6 acid damage
+> - **17+:** 21 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 4 8 acid damage
 >
-> **Effect:** One ally within distance ends one condition on themself.
+> **Effect:** One ally within distance ends one [condition](scc:mcdm.heroes.v1/rule.combat/condition) on themself.
 
-> 🔳 **The Chasm Engulfs (4 Malice)**
+> 🔳 **The Chasm Engulfs (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
@@ -18125,10 +18125,10 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 > **Power Roll + 4:**
 >
 > - **≤11:** 6 damage
-> - **12-16:** 10 damage; restrained (EoT)
-> - **17+:** 14 damage; restrained (save ends)
+> - **12-16:** 10 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (EoT)
+> - **17+:** 14 damage; [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
-> **Effect:** The area is difficult terrain for enemies until the end of the encounter. Any enemy in the area has acid weakness 5.
+> **Effect:** The area is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for enemies until the end of the encounter. Any enemy in the area has acid [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5.
 
 > ❗️ **Maw of the Abyss**
 >
@@ -18138,11 +18138,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Trigger:** The elementalist takes damage.
 >
-> **Effect:** The elementalist can teleport up to 4 squares. Each creature adjacent to the space they leave or appear in takes 4 corruption damage.
+> **Effect:** The elementalist can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 4 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the space they leave or appear in takes 4 corruption damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the elementalist chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Fury
@@ -18153,7 +18153,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+4**<br>Might  | **+3**<br>Agility |  **0**<br>Reason   |  **+1**<br>Intuition  |  **+2**<br>Presence  |
 
-> 🗡 **Bonebreaker (Signature Ability)**
+> 🗡 **Bonebreaker ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18161,13 +18161,13 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 13 damage; push 3
-> - **12-16:** 18 damage; push 4
-> - **17+:** 22 damage; push 5
+> - **≤11:** 13 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 3
+> - **12-16:** 18 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **17+:** 22 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
 >
-> **3 Malice:** Each target who has M < 3 is bleeding and slowed (save ends).
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has M < 3 is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 🗡 **Steelfist (3 Malice)**
+> 🗡 **Steelfist (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -18175,19 +18175,19 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 15 damage; M < 3 grabbed
-> - **12-16:** 21 damage; M < 4 grabbed
-> - **17+:** 26 damage; M < 5 grabbed
+> - **≤11:** 15 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 21 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 26 damage; M < 5 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The target must be the fury's size or smaller. While the target is grabbed this way, the fury and their allies have a double edge on strikes against them.
+> **Effect:** The target must be the fury's size or smaller. While the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the fury and their allies have a double edge on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against them.
 
 > ⭐️ **Rout**
 >
-> Once per turn, when the fury force moves a creature or object, or shifts adjacent to a creature or object, they can use a signature ability that gains an edge against that creature or object.
+> Once per turn, when the fury [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, or [shifts](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature or object, they can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that gains an edge against that creature or object.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the fury chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Null
@@ -18198,7 +18198,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+2**<br>Might  | **+4**<br>Agility |  **+3**<br>Reason  |  **+4**<br>Intuition  |  **0**<br>Presence   |
 
->  🗡 **Inertial Flow (Signature Ability)**
+>  🗡 **Inertial Flow ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18206,11 +18206,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; the null shifts up to 3 squares; A < 2 8 damage
-> - **12-16:** 17 damage; the null shifts up to 4 squares; A < 3 13 damage
-> - **17+:** 21 damage; the null shifts up to 5 squares; A < 4 17 damage
+> - **≤11:** 12 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 3 squares; A < 2 8 damage
+> - **12-16:** 17 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares; A < 3 13 damage
+> - **17+:** 21 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares; A < 4 17 damage
 
-> 🗡 **Stun (3 Malice)**
+> 🗡 **Stun (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                  **Maneuver** |
 > |------------------------------------|------------------------------:|
@@ -18218,17 +18218,17 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 12 damage; R < 2 dazed (save ends)
-> - **12-16:** 17 damage; R < 3 dazed (save ends)
-> - **17+:** 21 damage; R < 4 dazed and restrained (save ends)
+> - **≤11:** 12 damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 17 damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **17+:** 21 damage; R < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Force Dampener**
 >
-> The first time each round that the null is targeted by a strike, it takes a bane and the null halves any damage from it.
+> The first time each round that the null is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike), it takes a bane and the null halves any damage from it.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the null chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Shadow
@@ -18239,7 +18239,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **+4**<br>Agility |  **+2**<br>Reason  |  **0**<br>Intuition   |  **+3**<br>Presence  |
 
-> 🗡 **Assail and Serrate (Signature Ability)**
+> 🗡 **Assail and Serrate ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18247,11 +18247,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 13 damage; A < 2 bleeding (save ends)
-> - **12-16:** 18 damage; A < 3 bleeding (save ends)
-> - **17+:** 22 damage; A < 4 bleeding and weakened (save ends)
+> - **≤11:** 13 damage; A < 2 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 18 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 22 damage; A < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **1 Malice:** The shadow can teleport up to 7 squares, then can attempt to hide.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shadow can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 7 squares, then can attempt to hide.
 
 > 👤 **Poison the Blade**
 >
@@ -18259,15 +18259,15 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The shadow coats their weapon with poison. They have a double edge on their next strike, and any potency for that strike increases by 2.
+> **Effect:** The shadow coats their weapon with poison. They have a double edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike), and any [potency](scc:mcdm.heroes.v1/rule.character/potency) for that strike increases by 2.
 
 > ⭐️ **Exploit Weakness**
 >
-> The shadow deals an extra 9 damage to any target affected by a condition.
+> The shadow deals an extra 9 damage to any target affected by a [condition](scc:mcdm.heroes.v1/rule.combat/condition).
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the shadow chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Tactician
@@ -18278,7 +18278,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **+4**<br>Might  | **+1**<br>Agility |  **+3**<br>Reason  |  **0**<br>Intuition   |  **+2**<br>Presence  |
 
-> 🏹 **Command From the Back (Signature Ability)**
+> 🏹 **Command From the Back ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                 **Main action** |
 > |----------------------------|--------------------------------:|
@@ -18287,12 +18287,12 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 > **Power Roll + 4:**
 >
 > - **≤11:** 13 damage
-> - **12-16:** 18 damage; A < 3 prone
-> - **17+:** 22 damage; A < 4 prone
+> - **12-16:** 18 damage; A < 3 [prone](scc:mcdm.heroes.v1/condition/prone)
+> - **17+:** 22 damage; A < 4 [prone](scc:mcdm.heroes.v1/condition/prone)
 >
-> **4 Malice:** Two allies within distance move up to their speed and can use a signature ability.
+> **4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two allies within distance move up to their speed and can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability).
 
-> 🏹 **Safeguard (3 Malice)**
+> 🏹 **Safeguard (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Ranged, Strike, Weapon** |               **Main action** |
 > |----------------------------|------------------------------:|
@@ -18300,11 +18300,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 15 damage; M < 2 weakened (save ends)
-> - **12-16:** 21 damage; M < 3 weakened (save ends)
-> - **17+:** 26 damage; M < 4 weakened (save ends)
+> - **≤11:** 15 damage; M < 2 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 21 damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 26 damage; M < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Two allies adjacent to the target each regain 7 Stamina.
+> **Effect:** Two allies [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the target each regain 7 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ❗️ **Quickshot**
 >
@@ -18314,11 +18314,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Trigger:** An enemy within distance willingly moves.
 >
-> **Effect:** At any point during the movement, the tactician uses a signature ability against the target.
+> **Effect:** At any point during the movement, the tactician uses a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against the target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the tactician chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Talent
@@ -18329,7 +18329,7 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |  **-**<br>Weakness   |
 |  **0**<br>Might   | **0**<br>Agility  |  **+4**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence  |
 
-> 🏹 **Control Synapses (Signature Ability)**
+> 🏹 **Control Synapses ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike, Telekinesis** |                 **Main action** |
 > |------------------------------------------|--------------------------------:|
@@ -18341,9 +18341,9 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 > - **12-16:** 17 psychic damage
 > - **17+:** 21 psychic damage
 >
-> **3 Malice:** Each target shifts up to their speed and can make a free strike against one enemy of the talent's choice. The target can't be moved in a way that would harm them.
+> **3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target [shifts](scc:mcdm.heroes.v1/movement/shifting) up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of the talent's choice. The target can't be moved in a way that would harm them.
 
-> 🏹 **Disorientate (2 Malice)**
+> 🏹 **Disorientate (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic, Ranged, Telepathy** |                  **Maneuver** |
 > |--------------------------------|------------------------------:|
@@ -18351,11 +18351,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Power Roll + 4:**
 >
-> - **≤11:** 8 psychic damage; R < 2 dazed (save ends)
-> - **12-16:** 8 psychic damage; R < 3 dazed and slowed (save ends)
-> - **17+:** 8 psychic damage; R < 4 dazed and slowed (save ends)
+> - **≤11:** 8 psychic damage; R < 2 [dazed](scc:mcdm.heroes.v1/condition/dazed) (save ends)
+> - **12-16:** 8 psychic damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **17+:** 8 psychic damage; R < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
 
-> ❗️ **Mind Requital (2 Malice)**
+> ❗️ **Mind Requital (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic** | **Triggered action** |
 > |-------------|---------------------:|
@@ -18363,11 +18363,11 @@ Rivals at the 3rd Echelon have been through quite a few adventures the heroes mi
 >
 > **Trigger:** A creature deals damage to the talent.
 >
-> **Effect:** The talent halves the damage and shifts up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt.
+> **Effect:** The talent halves the damage and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the talent chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: monster-group | @subcategory: 4th-echelon -->
 ### Rivals-4th Echelon
@@ -18383,7 +18383,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **+4**<br>Might  | **+1**<br>Agility |  **+1**<br>Reason  |  **+5**<br>Intuition  |  **+3**<br>Presence   |
 
-> ⚔️ **Sunder the Very Skies (Signature Ability)**
+> ⚔️ **Sunder the Very Skies ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Magic, Melee, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -18391,29 +18391,29 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; vertical slide 3; M < 3 5 lightning damage
-> - **12-16:** 20 damage; vertical slide 4; M < 4 7 lightning damage
-> - **17+:** 24 damage; vertical slide 5; M < 5 9 lightning damage
+> - **≤11:** 15 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 3 5 lightning damage
+> - **12-16:** 20 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 4 7 lightning damage
+> - **17+:** 24 damage; vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 5 9 lightning damage
 >
-> **Effect:** The conduit or one ally within distance regains Stamina equal to half the damage dealt.
+> **Effect:** The conduit or one ally within distance regains [Stamina](scc:mcdm.heroes.v1/rule.health/stamina) equal to half the damage dealt.
 >
-> **2 Malice:** Two additional allies within distance regain the same amount of Stamina.
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two additional allies within distance regain the same amount of [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
-> 🏹 **Empyrean Boon (5 Malice)**
+> 🏹 **Empyrean Boon (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Magic, Ranged** |                **Maneuver** |
 > |-------------------|----------------------------:|
 > | **📏 Ranged 10**  | **🎯 Self and five allies** |
 >
-> **Effect:** Each target has a double edge on their next strike, and that strike deals an extra 10 holy damage. Additionally, they can vertical slide each creature targeted by the strike up to 2 squares.
+> **Effect:** Each target has a double edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike), and that strike deals an extra 10 holy damage. Additionally, they can vertical [slide](scc:mcdm.heroes.v1/movement/forced-movement) each creature targeted by the strike up to 2 squares.
 
 > ⭐️ **Unwavering Defender**
 >
-> Damage dealt to any ally adjacent to the conduit is halved.
+> Damage dealt to any ally [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the conduit is halved.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the conduit chooses one creature within their line of effect. Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the conduit chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the conduit and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Elementalist
@@ -18424,7 +18424,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **+1**<br>Might  | **+3**<br>Agility |  **+5**<br>Reason  |  **+4**<br>Intuition  |  **+1**<br>Presence   |
 
-> 🏹 **Viridescent Storm (Signature Ability)**
+> 🏹 **Viridescent Storm ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Green, Magic, Ranged, Strike** |                 **Main action** |
 > |----------------------------------|--------------------------------:|
@@ -18432,19 +18432,19 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; slide 3; M < 3 5 acid damage
-> - **12-16:** 20 damage; slide 4; M < 4 7 acid damage
-> - **17+:** 24 damage; slide 5; M < 5 9 acid damage
+> - **≤11:** 15 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 3; M < 3 5 acid damage
+> - **12-16:** 20 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 4; M < 4 7 acid damage
+> - **17+:** 24 damage; [slide](scc:mcdm.heroes.v1/movement/forced-movement) 5; M < 5 9 acid damage
 >
-> **Effect:** One ally within distance ends all conditions on themself.
+> **Effect:** One ally within distance ends all [conditions](scc:mcdm.heroes.v1/rule.combat/condition) on themself.
 
-> 🔳 **The World Consumes (5 Malice)**
+> 🔳 **The World Consumes (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Green, Magic, Ranged** |               **Main action** |
 > |--------------------------------|------------------------------:|
 > | **📏 3 cube within 10**        | **🎯 Each enemy in the area** |
 >
-> **Effect:** The area becomes overgrown with caustic vines until the end of the encounter. While in the area, any enemy has acid weakness 5 and is slowed. Any enemy who ends their turn in the area and has M < 4 is restrained (save ends).
+> **Effect:** The area becomes overgrown with caustic vines until the end of the encounter. While in the area, any enemy has acid [weakness](scc:mcdm.heroes.v1/rule.damage/damage-weakness) 5 and is [slowed](scc:mcdm.heroes.v1/condition/slowed). Any enemy who ends their turn in the area and has M < 4 is [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends).
 
 > ❗️ **Breach of Nihility**
 >
@@ -18454,11 +18454,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Trigger:** The elementalist takes damage.
 >
-> **Effect:** The elementalist can teleport up to 5 squares. Each creature adjacent to the space they leave or appear in takes 5 corruption damage.
+> **Effect:** The elementalist can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares. Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to the space they leave or appear in takes 5 corruption damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the elementalist chooses one creature within their line of effect. Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the elementalist chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the elementalist and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Fury
@@ -18469,7 +18469,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **+5**<br>Might  | **+4**<br>Agility |  **0**<br>Reason   |  **+2**<br>Intuition  |  **+3**<br>Presence   |
 
-> 🗡 **Seismic Crush (Signature Ability)**
+> 🗡 **Seismic Crush ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18477,13 +18477,13 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; push 4
-> - **12-16:** 21 damage; push 5
-> - **17+:** 25 damage; push 6
+> - **≤11:** 15 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 4
+> - **12-16:** 21 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 5
+> - **17+:** 25 damage; [push](scc:mcdm.heroes.v1/movement/forced-movement) 6
 >
-> **2 Malice:** Each target who has M < 4 is bleeding and slowed (save ends).
+> **2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target who has M < 4 is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) and [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends).
 
-> 🗡 **Death Grip (4 Malice)**
+> 🗡 **Death Grip (4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Strike, Weapon** |     **Main action** |
 > |---------------------------|--------------------:|
@@ -18491,19 +18491,19 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; M < 3 grabbed
-> - **12-16:** 21 damage; M < 4 grabbed
-> - **17+:** 25 damage; M < 5 grabbed
+> - **≤11:** 15 damage; M < 3 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **12-16:** 21 damage; M < 4 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
+> - **17+:** 25 damage; M < 5 [grabbed](scc:mcdm.heroes.v1/condition/grabbed)
 >
-> **Effect:** The target must be the fury's size or smaller. While the target is grabbed this way, the fury and their allies have a double edge on strikes against them.
+> **Effect:** The target must be the fury's size or smaller. While the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) this way, the fury and their allies have a double edge on [strikes](scc:mcdm.heroes.v1/rule.combat/strike) against them.
 
 > ⭐️ **Devastate**
 >
-> Once per turn, when the fury force moves a creature or object, or shifts adjacent to a creature or object, they can use a signature ability against that creature or object that has a double edge.
+> Once per turn, when the fury [force moves](scc:mcdm.heroes.v1/movement/forced-movement) a creature or object, or [shifts](scc:mcdm.heroes.v1/movement/shifting) [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) to a creature or object, they can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against that creature or object that has a double edge.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the fury chooses one creature within their line of effect. Both the fury and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the fury chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the fury and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Null
@@ -18514,7 +18514,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **+3**<br>Might  | **+5**<br>Agility |  **+4**<br>Reason  |  **+5**<br>Intuition  |   **0**<br>Presence   |
 
-> 🗡 **Kinetic Danse (Signature Ability)**
+> 🗡 **Kinetic Danse ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18522,11 +18522,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; the null shifts up to 4 squares; A < 3 10 damage
-> - **12-16:** 20 damage; the null shifts up to 5 squares; A < 4 15 damage
-> - **17+:** 24 damage; the null shifts up to 6 squares; A < 5 19 damage
+> - **≤11:** 15 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 4 squares; A < 3 10 damage
+> - **12-16:** 20 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 5 squares; A < 4 15 damage
+> - **17+:** 24 damage; the null [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 6 squares; A < 5 19 damage
 
-> 🗡 **Incapacitate (5 Malice)**
+> 🗡 **Incapacitate (5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Melee, Psionic, Strike, Weapon** |                    **Maneuver** |
 > |------------------------------------|--------------------------------:|
@@ -18534,17 +18534,17 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 13 damage; R < 3 dazed and restrained (save ends)
-> - **12-16:** 17 damage; R < 4 dazed and restrained (save ends)
-> - **17+:** 20 damage; R < 5 dazed and restrained (save ends)
+> - **≤11:** 13 damage; R < 3 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **12-16:** 17 damage; R < 4 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** 20 damage; R < 5 [dazed](scc:mcdm.heroes.v1/condition/dazed) and [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 
 > ⭐️ **Energy Conservation**
 >
-> The first time each round that the null is targeted by a strike, it takes a bane and the null halves the damage from it. The creature making the strike takes 10 damage.
+> The first time each round that the null is targeted by a [strike](scc:mcdm.heroes.v1/rule.combat/strike), it takes a bane and the null halves the damage from it. The creature making the strike takes 10 damage.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the null chooses one creature within their line of effect. Both the null and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the null chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the null and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Shadow
@@ -18555,7 +18555,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **0**<br>Might   | **+5**<br>Agility |  **+3**<br>Reason  |  **+2**<br>Intuition  |  **+4**<br>Presence   |
 
-> 🗡 **A Hush of Ash (Signature Ability)**
+> 🗡 **A Hush of Ash ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Melee, Strike, Weapon** |                 **Main action** |
 > |---------------------------|--------------------------------:|
@@ -18563,11 +18563,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 15 damage; A < 3 bleeding (save ends)
-> - **12-16:** 21 damage; A < 4 bleeding (save ends)
-> - **17+:** 25 damage; A < 5 bleeding (save ends)
+> - **≤11:** 15 damage; A < 3 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **12-16:** 21 damage; A < 4 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
+> - **17+:** 25 damage; A < 5 [bleeding](scc:mcdm.heroes.v1/condition/bleeding) (save ends)
 >
-> **1 Malice:** The shadow can teleport up to 10 squares, then can attempt to hide.
+> **1 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** The shadow can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 10 squares, then can attempt to hide.
 
 > 👤 **Envenomed Steel**
 >
@@ -18575,15 +18575,15 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 > |-------------|-------------:|
 > | **📏 Self** |  **🎯 Self** |
 >
-> **Effect:** The shadow coats their weapon with poison. They have a double edge on their next strike, any potency for that strike increases by 2, and if the target has M < 4, they are weakened (save ends).
+> **Effect:** The shadow coats their weapon with poison. They have a double edge on their next [strike](scc:mcdm.heroes.v1/rule.combat/strike), any [potency](scc:mcdm.heroes.v1/rule.character/potency) for that strike increases by 2, and if the target has M < 4, they are [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
 > ⭐️ **Exploit Weakness**
 >
-> The shadow deals an extra 10 damage to any target affected by a condition.
+> The shadow deals an extra 10 damage to any target affected by a [condition](scc:mcdm.heroes.v1/rule.combat/condition).
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the shadow chooses one creature within their line of effect. Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the shadow chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the shadow and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Tactician
@@ -18594,7 +18594,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **+5**<br>Might  | **+2**<br>Agility |  **+4**<br>Reason  |  **0**<br>Intuition   |   **+3**<br>Presence   |
 
-> 🏹 **Forward Assault (Signature Ability)**
+> 🏹 **Forward Assault ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Ranged, Strike, Weapon** |                 **Main action** |
 > |----------------------------|--------------------------------:|
@@ -18603,12 +18603,12 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 > **Power Roll + 5:**
 >
 > - **≤11:** 15 damage
-> - **12-16:** 21 damage; A < 4 prone and can't stand (EoT)
-> - **17+:** 25 damage; prone; A < 5 can't stand (EoT)
+> - **12-16:** 21 damage; A < 4 [prone](scc:mcdm.heroes.v1/condition/prone) and can't stand (EoT)
+> - **17+:** 25 damage; [prone](scc:mcdm.heroes.v1/condition/prone); A < 5 can't stand (EoT)
 >
-> **5 Malice:** Two allies within distance move up to their speed and can use a signature ability that has a double edge.
+> **5 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Two allies within distance move up to their speed and can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) that has a double edge.
 
-> 🔳 **Guardian From Afar (3 Malice)**
+> 🔳 **Guardian From Afar (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Area, Ranged, Weapon** |                 **Main action** |
 > |--------------------------|--------------------------------:|
@@ -18616,11 +18616,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** 10 damage; M < 3 weakened (save ends)
-> - **12-16:** 16 damage; M < 4 weakened (save ends)
-> - **17+:** 20 damage; M < 5 weakened (save ends)
+> - **≤11:** 10 damage; M < 3 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **12-16:** 16 damage; M < 4 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
+> - **17+:** 20 damage; M < 5 [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends)
 >
-> **Effect:** Each ally in the area regains 10 Stamina.
+> **Effect:** Each ally in the area regains 10 [Stamina](scc:mcdm.heroes.v1/rule.health/stamina).
 
 > ❗️ **Battlefield Control**
 >
@@ -18630,11 +18630,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Trigger:** An enemy within distance willingly moves.
 >
-> **Effect:** At any point during the movement, the tactician and one ally within distance can use a signature ability against the target.
+> **Effect:** At any point during the movement, the tactician and one ally within distance can use a [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability) against the target.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the tactician chooses one creature within their line of effect. Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the tactician chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the tactician and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: statblock -->
 ####### Rival Talent
@@ -18645,7 +18645,7 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 | **-**<br>Immunity | **-**<br>Movement |         -          | **-**<br>With Captain |   **-**<br>Weakness   |
 |  **0**<br>Might   | **0**<br>Agility  |  **+5**<br>Reason  |  **0**<br>Intuition   |  **+1**<br>Presence   |
 
-> 🏹 **Override (Signature Ability)**
+> 🏹 **Override ([Signature Ability](scc:mcdm.heroes.v1/rule.combat/signature-ability))**
 >
 > | **Psionic, Ranged, Strike, Telekinesis** |                 **Main action** |
 > |------------------------------------------|--------------------------------:|
@@ -18657,9 +18657,9 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 > - **12-16:** 20 psychic damage
 > - **17+:** 24 psychic damage
 >
-> **4 Malice:** Each target moves up to their speed and can make a free strike against one enemy of the talent's choice. The target's movement can provoke opportunity attacks, but they can't otherwise be moved in a way that would harm them.
+> **4 [Malice](scc:mcdm.monsters.v1/rule.monster/malice):** Each target moves up to their speed and can make a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike) against one enemy of the talent's choice. The target's movement can provoke opportunity attacks, but they can't otherwise be moved in a way that would harm them.
 
-> 🏹 **Steal Time (3 Malice)**
+> 🏹 **Steal Time (3 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Chronopathy, Psionic, Ranged** |                  **Maneuver** |
 > |----------------------------------|------------------------------:|
@@ -18667,13 +18667,13 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Power Roll + 5:**
 >
-> - **≤11:** R < 3 slowed (save ends)
-> - **12-16:** R < 4 restrained (save ends)
-> - **17+:** R < 5 restrained (save ends)
+> - **≤11:** R < 3 [slowed](scc:mcdm.heroes.v1/condition/slowed) (save ends)
+> - **12-16:** R < 4 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
+> - **17+:** R < 5 [restrained](scc:mcdm.heroes.v1/condition/restrained) (save ends)
 >
 > **Effect:** One ally within distance can use an additional main action on their next turn.
 
-> ❗️ **Psionic Retribution (2 Malice)**
+> ❗️ **Psionic Retribution (2 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
 > | **Psionic**            | **Triggered action** |
 > |------------------------|---------------------:|
@@ -18681,11 +18681,11 @@ This is what peak performance looks like. Few bands of monsters can put up a fig
 >
 > **Trigger:** A creature deals damage to the talent.
 >
-> **Effect:** The talent halves the damage and shifts up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt and is pushed up to 5 squares.
+> **Effect:** The talent halves the damage and [shifts](scc:mcdm.heroes.v1/movement/shifting) up to 2 squares. The triggering creature takes psychic damage equal to half the damage dealt and is [pushed](scc:mcdm.heroes.v1/movement/forced-movement) up to 5 squares.
 
 > ⭐️ **Rivalry**
 >
-> At the start of an encounter, the talent chooses one creature within their line of effect. Both the talent and the creature can add a d3 roll to power rolls they make against each other.
+> At the start of an encounter, the talent chooses one creature within their [line of effect](scc:mcdm.heroes.v1/rule.combat/line-of-effect). Both the talent and the creature can add a d3 roll to power rolls they make against each other.
 
 <!-- @type: monster | @category: shambling-mound -->
 ## Shambling Mound
