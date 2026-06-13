@@ -648,6 +648,14 @@ func TestInjectH1(t *testing.T) {
 			input: "---\ntype: ancestry\n---\n\nContent.",
 			want:  "---\ntype: ancestry\n---\n\nContent.",
 		},
+		{
+			// Featureblock/terrain frontmatter lists features (with their own
+			// nested name:) before the top-level name:; the H1 must use the
+			// top-level document name, not the first feature's name.
+			name:  "uses top-level name when nested feature names precede it",
+			input: "---\nfeatures:\n    - body: Cannot be deactivated.\n      name: Deactivate\n    - body: A creature enters.\n      name: Activate\nname: Angry Beehive\ntype: dynamic-terrain\n---\n\n<div class=\"fb-wrap\"></div>",
+			want:  "---\nfeatures:\n    - body: Cannot be deactivated.\n      name: Deactivate\n    - body: A creature enters.\n      name: Activate\nname: Angry Beehive\ntype: dynamic-terrain\n---\n\n# Angry Beehive\n\n---\n\n<div class=\"fb-wrap\"></div>",
+		},
 	}
 
 	for _, tt := range tests {

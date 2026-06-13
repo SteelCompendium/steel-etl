@@ -984,10 +984,18 @@ func splitFrontmatter(content string) (frontmatter, body string) {
 }
 
 // parseFrontmatterField extracts a simple string value from YAML frontmatter.
+// parseFrontmatterField returns a top-level scalar frontmatter field. Only
+// document-level (column-0, unindented) keys match: nested keys inside list
+// items or mappings (e.g. a feature's `name:` under `features:`) are skipped, so
+// an alphabetically-earlier `features[].name` never shadows the top-level `name`
+// (which would mistitle featureblock/terrain pages — see TestInjectH1).
 func parseFrontmatterField(fm, key string) string {
+	prefix := key + ":"
 	for _, line := range strings.Split(fm, "\n") {
-		line = strings.TrimSpace(line)
-		prefix := key + ":"
+		// Skip indented lines: top-level YAML keys start at column 0.
+		if line != strings.TrimLeft(line, " \t") {
+			continue
+		}
 		if strings.HasPrefix(line, prefix) {
 			val := strings.TrimSpace(line[len(prefix):])
 			val = strings.Trim(val, "\"'")
