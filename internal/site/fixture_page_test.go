@@ -91,3 +91,15 @@ func TestBuildFixturePage_NonFixturePassesThrough(t *testing.T) {
 		t.Error("buildFixturePage handled a featureblock")
 	}
 }
+
+func TestStatblockIslandSkipsFixture(t *testing.T) {
+	// fixtures must fall through the island path so buildFixturePage handles them
+	if _, ok := buildStatblockIslandPage([]byte(fixtureBarrowGates)); ok {
+		t.Error("buildStatblockIslandPage handled a fixture (should skip it)")
+	}
+	// a normal creature statblock is still handled by the island
+	creature := "---\nname: Goblin\ntype: statblock\nrole: Minion\n---\n\n> ⭐️ **Bite**\n>\n> bites.\n"
+	if _, ok := buildStatblockIslandPage([]byte(creature)); !ok {
+		t.Error("buildStatblockIslandPage skipped a normal creature statblock")
+	}
+}
