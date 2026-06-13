@@ -116,3 +116,38 @@ func TestRenderFbStats_EmptyWhenAbsent(t *testing.T) {
 		t.Error("malice block has no stats; fb__stats container should be omitted")
 	}
 }
+
+func TestRenderFbFeats_PassiveMalice(t *testing.T) {
+	out, _ := buildFeatureblockPage([]byte(fbMalicePage))
+	s := string(out)
+	for _, want := range []string{
+		`class="fb__feats"`,
+		`class="sc-ability fb__feat" data-action="passive"`, // 🔳 → no usage/cost-table → passive
+		`class="fb__feat-icon"`, "🔳",
+		`class="fb__feat-name`, "Walleye",
+		`class="sc-ability__cost"`, "Malice", // cost badge "7 Malice"
+		`class="fb__feat-body"`, "reflective spittle",
+	} {
+		if !strings.Contains(s, want) {
+			t.Errorf("missing %q in:\n%s", want, s)
+		}
+	}
+}
+
+func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
+	out, _ := buildFeatureblockPage([]byte(fbTerrainPage))
+	s := string(out)
+	for _, want := range []string{
+		`data-action="special"`, "Deactivate", // 🌀 → special (icon fallback, not passive)
+		`data-action="main"`, "Your Fears Become Manifest", // usage "Main action" → main
+		`class="sc-ability__chip">Area<`, `class="sc-ability__chip">Magic<`,
+		`class="sc-ability__rail"`, "10 burst",
+		`class="sc-ability__pr"`, "Power Roll", "+ 2",
+		`class="sc-ability__tier" data-tier="low"`, "slowed",
+		`class="sc-ability__tier" data-tier="high"`, "frightened",
+	} {
+		if !strings.Contains(s, want) {
+			t.Errorf("missing %q in:\n%s", want, s)
+		}
+	}
+}

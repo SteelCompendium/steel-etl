@@ -179,4 +179,133 @@ func renderFbStats(stats []fbStat) string {
 	return b.String()
 }
 
-func renderFbFeats(feats []fbFeature) string { return "" }
+// fbIconAction maps a table-less feature's source emoji to an action accent so
+// terrain's 🌀 Deactivate / ❕ Activate and malice passives don't all flatten to
+// "passive" (spec §3). Mirrors ability-cards.js EMOJI_MAP, collapsed onto the
+// action-accent vocabulary steel-featureblock.css colors. Keys are STRING
+// literals matched with Contains — robust to the trailing U+FE0F variation
+// selector book emoji carry (a rune-literal map would choke on those).
+var fbIconAction = map[string]string{
+	"🗡": "main", "🏹": "main", "❇": "main",
+	"👤": "maneuver",
+	"❗": "triggered", "❕": "triggered",
+	"⭐": "passive",
+	"☠": "villain",
+	"🌀": "special",
+}
+
+// fbFeatureAction picks the [data-action] accent. Abilities with a usage word
+// (or villain cost) route through sbActionKind exactly like statblock features;
+// table-less features fall back to their icon emoji, then to "passive".
+func fbFeatureAction(f fbFeature) string {
+	if strings.HasPrefix(strings.ToLower(strings.TrimSpace(f.Cost)), "villain action") {
+		return "villain"
+	}
+	if strings.TrimSpace(f.Usage) != "" {
+		action, _ := sbActionKind(f.Usage, f.Cost)
+		return action
+	}
+	icon := strings.TrimSpace(f.Icon)
+	for k, a := range fbIconAction {
+		if strings.Contains(icon, k) {
+			return a
+		}
+	}
+	return "passive"
+}
+
+// renderFbFeats renders the feature list. Each feature is article.sc-ability so
+// it inherits steel-ability-cards.css internals; the one-line head (icon · name
+// · cost) replaces the ability card's crest/eyebrow ceremony.
+func renderFbFeats(feats []fbFeature) string {
+	if len(feats) == 0 {
+		return ""
+	}
+	var b strings.Builder
+	b.WriteString("<div class=\"fb__feats\">\n")
+	for _, f := range feats {
+		fmt.Fprintf(&b, "<article class=\"sc-ability fb__feat\" data-action=\"%s\">\n", fbFeatureAction(f))
+
+		// head: icon · name · cost
+		b.WriteString("<div class=\"fb__feat-head\">")
+		if ic := strings.TrimSpace(f.Icon); ic != "" {
+			fmt.Fprintf(&b, "<span class=\"fb__feat-icon\">%s</span>", html.EscapeString(ic))
+		}
+		fmt.Fprintf(&b, "<h3 class=\"fb__feat-name sc-ability__name\">%s</h3>", html.EscapeString(strings.TrimSpace(f.Name)))
+		fmt.Fprintf(&b, "<div class=\"fb__feat-corner\">%s</div>", costBadge(strings.TrimSpace(f.Cost)))
+		b.WriteString("</div>\n")
+
+		// keyword chips (reused ability-card grammar)
+		if len(f.Keywords) > 0 {
+			b.WriteString("<div class=\"sc-ability__kw\">")
+			for _, k := range f.Keywords {
+				fmt.Fprintf(&b, "<span class=\"sc-ability__chip\">%s</span>", richInline(strings.TrimSpace(k)))
+			}
+			b.WriteString("</div>\n")
+		}
+
+		// distance / target rail
+		if strings.TrimSpace(f.Distance) != "" || strings.TrimSpace(f.Target) != "" {
+			b.WriteString("<div class=\"sc-ability__rail\">")
+			fmt.Fprintf(&b, "<div class=\"sc-ability__cell\"><div class=\"l\">Distance</div><div class=\"v\">%s</div></div>", railValue(f.Distance))
+			fmt.Fprintf(&b, "<div class=\"sc-ability__cell\"><div class=\"l\">Targets</div><div class=\"v\">%s</div></div>", railValue(f.Target))
+			b.WriteString("</div>\n")
+		}
+
+		// power roll
+		if f.PowerRoll != nil {
+			b.WriteString(fbPowerRollHTML(*f.PowerRoll))
+		}
+
+		// titled sections (Effect / Trigger / Special …)
+		for _, s := range f.Sections {
+			b.WriteString("<div class=\"sc-ability__section\">")
+			if l := strings.TrimSpace(s.Label); l != "" {
+				fmt.Fprintf(&b, "<div class=\"sc-ability__section-head\"><span class=\"sc-ability__dia\"></span><span class=\"tag\">%s</span></div>", html.EscapeString(l))
+			}
+			fmt.Fprintf(&b, "<div class=\"sc-ability__section-body\">%s</div>", renderSectionBlock(strings.TrimSpace(s.Text)))
+			b.WriteString("</div>\n")
+		}
+
+		// cost enhancements (2 Malice / Spend …)
+		for _, e := range f.Enhancements {
+			fmt.Fprintf(&b, "<div class=\"sc-ability__enh\"><span class=\"cost\">%s</span><span class=\"txt\">%s</span></div>\n",
+				html.EscapeString(strings.TrimSpace(e.Cost)), richInline(strings.TrimSpace(e.Text)))
+		}
+
+		// table-less prose body / post-table trailing note
+		if body := strings.TrimSpace(f.Body); body != "" {
+			fmt.Fprintf(&b, "<div class=\"fb__feat-body\">%s</div>\n", richInline(body))
+		}
+		if tr := strings.TrimSpace(f.Trailing); tr != "" {
+			fmt.Fprintf(&b, "<div class=\"fb__feat-trailing\">%s</div>\n", richInline(tr))
+		}
+
+		b.WriteString("</article>\n")
+	}
+	b.WriteString("</div>\n")
+	return b.String()
+}
+
+// fbPowerRollHTML renders the steel power-roll panel: an optional
+// "Power Roll <formula>" head (omitted for a bare test, where formula is "")
+// followed by the glyph-badged tier rows. Reuses tierGlyph / tierKey
+// (ability_cards.go). Unlike the ability card's tierPanelHTML (which hardcodes
+// "Power Roll +" before the characteristics), this prints the stored formula
+// verbatim — it already carries its sign ("+ 2") or full dice ("2d10 + R").
+func fbPowerRollHTML(pr fbPowerRoll) string {
+	var b strings.Builder
+	b.WriteString("<div class=\"sc-ability__pr\">")
+	if f := strings.TrimSpace(pr.Formula); f != "" {
+		fmt.Fprintf(&b, "<div class=\"sc-ability__pr-head\"><span class=\"sc-ability__dia\"></span><span class=\"pre\">Power Roll</span><span class=\"chars\">%s</span></div>", richInline(f))
+	}
+	b.WriteString("<div class=\"sc-ability__pr-rows\">")
+	for i := 0; i < 3; i++ {
+		if v := strings.TrimSpace(pr.Tiers[tierKey[i]]); v != "" {
+			fmt.Fprintf(&b, "<div class=\"sc-ability__tier\" data-tier=\"%s\"><span class=\"badge\">%s</span><span class=\"res\">%s</span></div>",
+				tierKey[i], tierGlyph[i], richInline(v))
+		}
+	}
+	b.WriteString("</div></div>\n")
+	return b.String()
+}
