@@ -722,3 +722,44 @@ func TestMonsterParsersRegistered(t *testing.T) {
 		}
 	}
 }
+
+func TestFeatureblockCompanionAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+	ctx.Push(4, context.Metadata{"type": "feature-group", "companion": "wolf"})
+
+	adv := &parser.Section{
+		Heading:      "Wolf Advancement Features",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "featureblock"},
+		Children: []*parser.Section{
+			{Heading: "My, What Big Teeth You Have", HeadingLevel: 6,
+				Annotation: map[string]string{"type": "feature", "id": "my-what-big-teeth-you-have", "level": "3"},
+				BodySource: "Whenever the wolf makes a strike..."},
+			{Heading: "Dire Wolf", HeadingLevel: 6,
+				Annotation: map[string]string{"type": "feature", "id": "dire-wolf", "level": "10"},
+				BodySource: "While the wolf is rampaging..."},
+		},
+	}
+	got, err := (&FeatureblockParser{}).Parse(ctx, adv)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+	code := scc.Classify("mcdm.beastheart.v1", got.TypePath, got.ItemID)
+	if want := "mcdm.beastheart.v1/monster.companion.beastheart.advancement-features/wolf"; code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) != 2 {
+		t.Fatalf("features = %v", got.Frontmatter["features"])
+	}
+	if feats[0]["name"] != "My, What Big Teeth You Have" || feats[0]["level"] != 3 {
+		t.Errorf("feat[0] = %v", feats[0])
+	}
+	if feats[1]["level"] != 10 {
+		t.Errorf("feat[1] level = %v, want 10", feats[1]["level"])
+	}
+}

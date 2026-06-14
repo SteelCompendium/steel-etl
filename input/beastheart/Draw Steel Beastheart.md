@@ -379,26 +379,20 @@ With the Director's permission, you can also change the damage types of your com
 
 A stoned creature is magically turning to stone. Each time a creature fails the saving throw to end this effect, they take corruption damage equal to the basilisk's Might score. A stoned creature or a creature adjacent to them can use a maneuver to cut the encroaching stone from the stoned target's body, ending the effect and dealing damage to the target equal to twice the basilisk's Might score that can't be reduced in any way. A creature reduced to 0 Stamina while they are stoned, or by an ability that causes a creature to become stoned, is turned to stone until they are restored to life by magical means.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Basilisk Advancement Feature
+<!-- @type: featureblock -->
+##### Basilisk Advancement Features
 
-<!-- @type: feature | @id: foes-forever-frozen -->
+<!-- @type: feature | @id: foes-forever-frozen | @level: 3 -->
 ###### Foes Forever Frozen
 
 Whenever the basilisk makes a strike against a creature while rampaging, the target is stoned (save ends).
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Basilisk Advancement Feature
-
-<!-- @type: feature | @id: rock-smasher -->
+<!-- @type: feature | @id: rock-smasher | @level: 6 -->
 ###### Rock Smasher
 
 Whenever you deal rolled damage to a stoned creature while the basilisk is rampaging, you deal extra damage equal to twice your Might score.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Basilisk Advancement Feature
-
-<!-- @type: feature | @id: heart-of-stone -->
+<!-- @type: feature | @id: heart-of-stone | @level: 10 -->
 ###### Heart of Stone
 
 While the basilisk is rampaging, you and the basilisk have damage immunity 10 as you become nearly impervious living statues.
@@ -430,26 +424,20 @@ While the basilisk is rampaging, you and the basilisk have damage immunity 10 as
 
 You gain a +1 bonus to your stability.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Bear Advancement Feature
+<!-- @type: featureblock -->
+##### Bear Advancement Features
 
-<!-- @type: feature | @id: foe-thresher -->
+<!-- @type: feature | @id: foe-thresher | @level: 3 -->
 ###### Foe Thresher
 
 Whenever the bear targets a creature with a strike that doesn't impose [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) while rampaging, the bear can push the target up to a number of squares equal to the bear's Might score.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Bear Advancement Feature
-
-<!-- @type: feature | @id: ursine-form -->
+<!-- @type: feature | @id: ursine-form | @level: 6 -->
 ###### Ursine Form
 
 While the bear is rampaging, you have damage immunity 5 and your size increases to the bear's size (to a maximum of 2). If you don't have enough unoccupied space to grow, you grow as soon as there is sufficient space.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Bear Advancement Feature
-
-<!-- @type: feature | @id: twin-colossi -->
+<!-- @type: feature | @id: twin-colossi | @level: 10 -->
 ###### Twin Colossi
 
 While the bear is rampaging, you gain a +1 bonus to distance with melee weapon abilities, your size increases to match the bear's size (to a maximum of 3), and your strikes deal an extra 5 damage.
@@ -481,26 +469,20 @@ While the bear is rampaging, you gain a +1 bonus to distance with melee weapon a
 
 While the boar is winded, they have damage immunity equal to their Might score and ignore the effects of [bleeding](scc:mcdm.heroes.v1/condition/bleeding).
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Boar Advancement Feature
+<!-- @type: featureblock -->
+##### Boar Advancement Features
 
-<!-- @type: feature | @id: greased-pig -->
+<!-- @type: feature | @id: greased-pig | @level: 3 -->
 ###### Greased Pig
 
 While the boar is rampaging, they have a +2 bonus to speed and a double edge on the Escape Grab maneuver.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Boar Advancement Feature
-
-<!-- @type: feature | @id: wild-rush -->
+<!-- @type: feature | @id: wild-rush | @level: 6 -->
 ###### Wild Rush
 
 While the boar is rampaging, you can use their Gore maneuver, and you and the boar can [shift](scc:mcdm.heroes.v1/movement/shifting) instead of move when using the Charge action or the Gore maneuver.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Boar Advancement Feature
-
-<!-- @type: feature | @id: immortal-rage -->
+<!-- @type: feature | @id: immortal-rage | @level: 10 -->
 ###### Immortal Rage
 
 Whenever you or the boar use an ability that deals damage while the boar is rampaging, you gain 10 temporary Stamina.
@@ -532,26 +514,20 @@ Whenever you or the boar use an ability that deals damage while the boar is ramp
 
 While the condor is [flying](scc:mcdm.heroes.v1/movement/fly) and has a speed greater than 0, ranged strikes against them take a bane.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Condor Advancement Feature
+<!-- @type: featureblock -->
+##### Condor Advancement Features
 
-<!-- @type: feature | @id: dive-bomb -->
+<!-- @type: feature | @id: dive-bomb | @level: 3 -->
 ###### Dive Bomb
 
 Whenever the condor makes a strike while rampaging, they deal extra damage equal to the number of squares they've moved on their turn (to a maximum of 5).
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Condor Advancement Feature
-
-<!-- @type: feature | @id: borne-aloft -->
+<!-- @type: feature | @id: borne-aloft | @level: 6 -->
 ###### Borne Aloft
 
 While the condor is rampaging, you gain wings and can [fly](scc:mcdm.heroes.v1/movement/fly). While flying, you gain a +2 bonus to speed. If you are midair when the condor's rampage ends, you take no damage from the fall.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Condor Advancement Feature
-
-<!-- @type: feature | @id: flight-of-the-condor -->
+<!-- @type: feature | @id: flight-of-the-condor | @level: 10 -->
 ###### Flight of the Condor
 
 While the condor is rampaging, you and the condor gain a +5 bonus to speed.
@@ -583,26 +559,20 @@ While the condor is rampaging, you and the condor gain a +5 bonus to speed.
 
 Whenever the deinonychus deals damage to a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature, they gain 1 surge.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Deinonychus Advancement Feature
+<!-- @type: featureblock -->
+##### Deinonychus Advancement Features
 
-<!-- @type: feature | @id: tear-you-to-ribbons -->
+<!-- @type: feature | @id: tear-you-to-ribbons | @level: 3 -->
 ###### Tear You to Ribbons
 
 Whenever the deinonychus makes a strike against a creature while rampaging, the target is [bleeding](scc:mcdm.heroes.v1/condition/bleeding) until the end of their next turn.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Deinonychus Advancement Feature
-
-<!-- @type: feature | @id: slake-my-thirst-in-blood -->
+<!-- @type: feature | @id: slake-my-thirst-in-blood | @level: 6 -->
 ###### Slake My Thirst in Blood
 
 Whenever you use an ability that deals rolled damage to a [bleeding](scc:mcdm.heroes.v1/condition/bleeding) creature while the deinonychus is rampaging, you gain 2 surges.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Deinonychus Advancement Feature
-
-<!-- @type: feature | @id: reaping-scythe -->
+<!-- @type: feature | @id: reaping-scythe | @level: 10 -->
 ###### Reaping Scythe
 
 The deinonychus's claws slash at creatures underfoot. When the deinonychus moves adjacent to an enemy or enters an enemy's space for the first time on a turn while rampaging, the deinonychus deals damage to that enemy equal to the deinonychus's Might score.
@@ -639,26 +609,20 @@ When you gain this companion, you choose their attuned damage type from acid, co
 
 You have immunity 3 to the drake's attuned damage type.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Drake Advancement Feature
+<!-- @type: featureblock -->
+##### Drake Advancement Features
 
-<!-- @type: feature | @id: endless-breath -->
+<!-- @type: feature | @id: endless-breath | @level: 3 -->
 ###### Endless Breath
 
 The drake's Drake Breath maneuver deals an extra 2 damage.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Drake Advancement Feature
-
-<!-- @type: feature | @id: a-burning-inside-me -->
+<!-- @type: feature | @id: a-burning-inside-me | @level: 6 -->
 ###### A Burning Inside Me
 
 While the drake is rampaging, you gain draconic wings and can [fly](scc:mcdm.heroes.v1/movement/fly). If you are midair when the drake's rampage ends, you take no damage from the fall. Additionally, you can use the drake's Drake Breath maneuver until their rampage ends.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Drake Advancement Feature
-
-<!-- @type: feature | @id: elemental-avatar -->
+<!-- @type: feature | @id: elemental-avatar | @level: 10 -->
 ###### Elemental Avatar
 
 While the drake is rampaging, you and the drake have immunity all to the drake's attuned damage type, and whenever you or the drake make a strike against a creature you can cause the target to be dragonsealed (save ends). A dragonsealed creature has weakness 10 to the drake's attuned damage type.
@@ -690,26 +654,20 @@ While the drake is rampaging, you and the drake have immunity all to the drake's
 
 The first time on a turn that you or the spark deal lightning damage, you gain 1 surge.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Elemental Spark Advancement Feature
+<!-- @type: featureblock -->
+##### Elemental Spark Advancement Features
 
-<!-- @type: feature | @id: electroshock -->
+<!-- @type: feature | @id: electroshock | @level: 3 -->
 ###### Electroshock
 
 Whenever the spark makes a strike against a creature while rampaging, they can cause a target who has M < AVERAGE to be [dazed](scc:mcdm.heroes.v1/condition/dazed) until the end of the target's next turn.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Elemental Spark Advancement Feature
-
-<!-- @type: feature | @id: conductive -->
+<!-- @type: feature | @id: conductive | @level: 6 -->
 ###### Conductive
 
 While the spark is rampaging, lightning sings through your blood, and whenever you make a strike against a creature, you deal extra lightning damage equal to your Might score.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Elemental Spark Advancement Feature
-
-<!-- @type: feature | @id: lightning-speed -->
+<!-- @type: feature | @id: lightning-speed | @level: 10 -->
 ###### Lightning Speed
 
 While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/movement/shifting) up to your speed as a free maneuver once on each of your turns.
@@ -741,26 +699,20 @@ While the spark is rampaging, you and the spark can [shift](scc:mcdm.heroes.v1/m
 
 The ball can occupy another creature's space. While occupying a creature's space, the ball has line of effect to that creature. If the creature completely fits within the ball's space, the creature has line of effect only to the ball and creatures outside the ball don't have line of effect to the creature. The ball's space is [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain).
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Gummy Ball Advancement Feature
+<!-- @type: featureblock -->
+##### Gummy Ball Advancement Features
 
-<!-- @type: feature | @id: suck-it-up -->
+<!-- @type: feature | @id: suck-it-up | @level: 3 -->
 ###### Suck It Up
 
 Whenever the ball makes a strike while rampaging, one target is pulled up to 3 squares into the ball's space. If the target ends this movement and completely fits within the ball's space, the target is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the ball.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Gummy Ball Advancement Feature
-
-<!-- @type: feature | @id: taffy-pull -->
+<!-- @type: feature | @id: taffy-pull | @level: 6 -->
 ###### Taffy Pull
 
 While the ball is rampaging, your arms and legs become viscous and stretchy, and you gain a +2 bonus to speed and melee distance.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Gummy Ball Advancement Feature
-
-<!-- @type: feature | @id: runaway-expansion -->
+<!-- @type: feature | @id: runaway-expansion | @level: 10 -->
 ###### Runaway Expansion
 
 While the ball is rampaging, you and the ball have acid immunity 10, and whenever a creature is reduced to 0 Stamina while inside the ball, the ball's size increases by 1 (to a maximum of 5). The ball's size can't increase this way more than once a turn, and the ball shrinks back to their original size when their rampage ends.
@@ -792,26 +744,20 @@ While the ball is rampaging, you and the ball have acid immunity 10, and wheneve
 
 You have fire immunity equal to the hellhound's fire immunity.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Hellhound Advancement Feature
+<!-- @type: featureblock -->
+##### Hellhound Advancement Features
 
-<!-- @type: feature | @id: infernal-apparition -->
+<!-- @type: feature | @id: infernal-apparition | @level: 3 -->
 ###### Infernal Apparition
 
 Whenever the hellhound makes a strike against a creature while rampaging, they can cause a target who has P < AVERAGE to be [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of the target's next turn.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Hellhound Advancement Feature
-
-<!-- @type: feature | @id: slavering-jaws -->
+<!-- @type: feature | @id: slavering-jaws | @level: 6 -->
 ###### Slavering Jaws
 
 While the hellhound is rampaging, your mouth foams with acidic ichor, and whenever you make a strike against a creature, you deal extra acid damage equal to your Might score.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Hellhound Advancement Feature
-
-<!-- @type: feature | @id: wreathed-in-flames -->
+<!-- @type: feature | @id: wreathed-in-flames | @level: 10 -->
 ###### Wreathed in Flames
 
 While the hellhound is rampaging, you and the hellhound are surrounded by an aura of flames, and each enemy who starts their turn adjacent to you or the hellhound takes fire damage equal to the hellhound's Might score.
@@ -843,26 +789,20 @@ While the hellhound is rampaging, you and the hellhound are surrounded by an aur
 
 Any effect on the lightbender that would be ended by a saving throw instead ends automatically at the end of their next turn.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Lightbender Advancement Feature
+<!-- @type: featureblock -->
+##### Lightbender Advancement Features
 
-<!-- @type: feature | @id: hit-and-run -->
+<!-- @type: feature | @id: hit-and-run | @level: 3 -->
 ###### Hit and Run
 
 Whenever the lightbender makes a strike against a creature while rampaging, the lightbender can [teleport](scc:mcdm.heroes.v1/movement/teleport) up to 5 squares and use the [Hide](scc:mcdm.heroes.v1/skill.intrigue/hide) maneuver.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Lightbender Advancement Feature
-
-<!-- @type: feature | @id: lightbearer -->
+<!-- @type: feature | @id: lightbearer | @level: 6 -->
 ###### Lightbearer
 
 While the lightbender is rampaging, you can use a free maneuver to glow with blinding light that lasts until the rampage ends or you use this ability again. While glowing, your skin sheds light for 10 squares and strikes against you take a bane.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Lightbender Advancement Feature
-
-<!-- @type: feature | @id: everywhere-and-nowhere -->
+<!-- @type: feature | @id: everywhere-and-nowhere | @level: 10 -->
 ###### Everywhere and Nowhere
 
 While the lightbender is rampaging, your grip on spatial reality is [weakened](scc:mcdm.heroes.v1/condition/weakened), and once on each of your turns, you or the lightbender can teleport up to 3 spaces as a free maneuver. Additionally, strikes made against you and the lightbender have a double bane until the lightbender's rampage ends.
@@ -894,26 +834,20 @@ While the lightbender is rampaging, your grip on spatial reality is [weakened](s
 
 Whenever the panther takes the Advance move action or the Charge action, they can [jump](scc:mcdm.heroes.v1/movement/jump) up to a number of squares equal to their speed in any direction, including vertically, as part of this movement.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Panther Advancement Feature
+<!-- @type: featureblock -->
+##### Panther Advancement Features
 
-<!-- @type: feature | @id: cat-and-mouse -->
+<!-- @type: feature | @id: cat-and-mouse | @level: 3 -->
 ###### Cat and Mouse
 
 Whenever the panther makes a strike against a creature while rampaging, the panther can knock the target [prone](scc:mcdm.heroes.v1/condition/prone).
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Panther Advancement Feature
-
-<!-- @type: feature | @id: single-bound -->
+<!-- @type: feature | @id: single-bound | @level: 6 -->
 ###### Single Bound
 
 While the panther is rampaging, you can [jump](scc:mcdm.heroes.v1/movement/jump) up to a number of squares equal to your speed as a free maneuver once on each of your turns.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Panther Advancement Feature
-
-<!-- @type: feature | @id: panther-spirit -->
+<!-- @type: feature | @id: panther-spirit | @level: 10 -->
 ###### Panther Spirit
 
 While the panther is rampaging, you and the panther are invisible and can move through objects and terrain, which are [difficult terrain](scc:mcdm.heroes.v1/movement/difficult-terrain) for you both. A creature who ends their turn inside a solid object from moving this way is [teleported](scc:mcdm.heroes.v1/movement/teleport) to the last unoccupied space they previously occupied.
@@ -945,26 +879,20 @@ While the panther is rampaging, you and the panther are invisible and can move t
 
 Whenever the spider makes a strike against a [restrained](scc:mcdm.heroes.v1/condition/restrained) creature, the spider deals extra poison damage equal to twice their Intuition score.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Spider Advancement Feature
+<!-- @type: featureblock -->
+##### Spider Advancement Features
 
-<!-- @type: feature | @id: dripping-fangs -->
+<!-- @type: feature | @id: dripping-fangs | @level: 3 -->
 ###### Dripping Fangs
 
 Whenever the spider makes a strike against a creature while rampaging, the spider can deal extra poison damage equal to their Might score.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Spider Advancement Feature
-
-<!-- @type: feature | @id: web-slinger -->
+<!-- @type: feature | @id: web-slinger | @level: 6 -->
 ###### Web Slinger
 
 Once on each of your turns while the spider is rampaging, you can shoot a web to a ceiling, wall, or sturdy object above you within 5 squares as a free maneuver. You can then [fly](scc:mcdm.heroes.v1/movement/fly) in a straight line to any space within 5 squares of that object.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Spider Advancement Feature
-
-<!-- @type: feature | @id: life-drinker -->
+<!-- @type: feature | @id: life-drinker | @level: 10 -->
 ###### Life Drinker
 
 Whenever you or the spider deals damage with a maneuver while the spider is rampaging, the attacker regains Stamina equal to the damage dealt.
@@ -996,26 +924,20 @@ Whenever you or the spider deals damage with a maneuver while the spider is ramp
 
 The sporeling can end their movement in an ally's space. While occupying an ally's space, the sporeling has cover.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Sporeling Advancement Feature
+<!-- @type: featureblock -->
+##### Sporeling Advancement Features
 
-<!-- @type: feature | @id: slowing-spores -->
+<!-- @type: feature | @id: slowing-spores | @level: 3 -->
 ###### Slowing Spores
 
 Whenever the sporeling makes a strike against a creature while rampaging, the sporeling can cause the target to be [slowed](scc:mcdm.heroes.v1/condition/slowed) until the end of the target's next turn.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Sporeling Advancement Feature
-
-<!-- @type: feature | @id: plant-walk -->
+<!-- @type: feature | @id: plant-walk | @level: 6 -->
 ###### Plant Walk
 
 Once on each of your turns while the sporeling is rampaging, you can [teleport](scc:mcdm.heroes.v1/movement/teleport) to a space within 15 squares as a free maneuver, provided the space or an adjacent space contains the sporeling or plants or fungus of size 1S or larger. You then gain an edge on the next strike you make before the end of your turn.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Sporeling Advancement Feature
-
-<!-- @type: feature | @id: trailing-mycelia -->
+<!-- @type: feature | @id: trailing-mycelia | @level: 10 -->
 ###### Trailing Mycelia
 
 While the sporeling is rampaging, you and the sporeling sprout rootlike, gripping mycelia along your limbs, and whenever you or the sporeling makes a strike against a creature who has M < STRONG, the creature is [grabbed](scc:mcdm.heroes.v1/condition/grabbed) by the attacker. Additionally, you and the sporeling can't be force moved or knocked [prone](scc:mcdm.heroes.v1/condition/prone) until the sporeling's rampage ends.
@@ -1047,26 +969,20 @@ While the sporeling is rampaging, you and the sporeling sprout rootlike, grippin
 
 The wolf can move at full speed while they have a creature [grabbed](scc:mcdm.heroes.v1/condition/grabbed), no matter the [grabbed](scc:mcdm.heroes.v1/condition/grabbed) creature's size.
 
-<!-- @type: feature-group | @level: 3 -->
-##### Level 3 Wolf Advancement Feature
+<!-- @type: featureblock -->
+##### Wolf Advancement Features
 
-<!-- @type: feature | @id: my-what-big-teeth-you-have -->
+<!-- @type: feature | @id: my-what-big-teeth-you-have | @level: 3 -->
 ###### My, What Big Teeth You Have
 
 Whenever the wolf makes a strike against a creature while rampaging, they can grab the target.
 
-<!-- @type: feature-group | @level: 6 -->
-##### Level 6 Wolf Advancement Feature
-
-<!-- @type: feature | @id: call-of-the-wild -->
+<!-- @type: feature | @id: call-of-the-wild | @level: 6 -->
 ###### Call of the Wild
 
 While the wolf is rampaging, you and the wolf gain a +2 bonus to speed, and creatures within 5 squares can't be hidden or have concealment from you or the wolf.
 
-<!-- @type: feature-group | @level: 10 -->
-##### Level 10 Wolf Advancement Feature
-
-<!-- @type: feature | @id: dire-wolf -->
+<!-- @type: feature | @id: dire-wolf | @level: 10 -->
 ###### Dire Wolf
 
 While the wolf is rampaging, you and the wolf are surrounded by an aura of dread, and enemies who start their turn adjacent to you or the wolf who have P < STRONG are [frightened](scc:mcdm.heroes.v1/condition/frightened) until the end of their next turn.

@@ -199,6 +199,24 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 		"type": "featureblock",
 	}
 
+	// Companion advancement-features container (beastheart). When companion
+	// context is present, this is the per-species "<C> Advancement Features"
+	// block: classify as monster.companion.<class>.advancement-features/<species>
+	// and embed the child @type:feature sections (the Level-3/6/10 advancement
+	// features, which keep their own feature.* codes) as features[] for the card.
+	if companionID, _ := ctx.Lookup(section.HeadingLevel, "companion"); companionID != "" {
+		classID := findAncestorID(ctx, section.HeadingLevel, "class")
+		if feats := collectChildFeatures(section); len(feats) > 0 {
+			fm["features"] = RichFeatureMaps(feats)
+		}
+		return &ParsedContent{
+			Frontmatter: fm,
+			Body:        body,
+			TypePath:    compactPath("monster", "companion", classID, "advancement-features"),
+			ItemID:      companionID,
+		}, nil
+	}
+
 	// kind: any "malice" mention in the heading marks a malice block ("Basilisk
 	// Malice (Malice Features)", "Basic Malice"); everything else is a named
 	// feature block ("Tactical Stance (Ajax Feature)").
@@ -294,4 +312,31 @@ func (p *MonsterGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 		}
 	}
 	return &ParsedContent{Frontmatter: fm, Body: section.FullBodySource()}, nil
+}
+
+// collectChildFeatures returns the @type:feature descendants of a section as
+// RichFeatures (name + prose body + level), in document order, for embedding in a
+// featureblock's features[]. Used by the companion advancement-features block,
+// whose Level-3/6/10 members are plain prose features. Each member keeps its own
+// SCC code; this embed is render-only.
+func collectChildFeatures(section *parser.Section) []RichFeature {
+	var out []RichFeature
+	for _, child := range section.Children {
+		switch child.Type() {
+		case "feature":
+			rf := RichFeature{
+				Name: CleanHeading(child.Heading),
+				Body: strings.TrimSpace(child.FullBodySource()),
+			}
+			if lv, ok := child.Annotation["level"]; ok {
+				if n, err := strconv.Atoi(lv); err == nil {
+					rf.Level = n
+				}
+			}
+			out = append(out, rf)
+		case "":
+			out = append(out, collectChildFeatures(child)...)
+		}
+	}
+	return out
 }
