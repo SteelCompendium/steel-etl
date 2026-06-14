@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -133,5 +134,31 @@ func TestStatblockGolden_WriteIslandInputs(t *testing.T) {
 		if string(got) != string(want) {
 			t.Errorf("%s.island.json drifted from parser output — regenerate with STEEL_UPDATE_GOLDEN=1 and recapture golden.html", name)
 		}
+	}
+}
+
+// normalizeStatblockHTML drops insignificant whitespace so a Go single-line
+// build matches the browser's outerHTML serialization. Neither side emits
+// inter-tag whitespace (the JS html string is fully concatenated; Go uses a
+// single Builder), so stripping newlines/tabs + trimming is sufficient.
+func normalizeStatblockHTML(s string) string {
+	s = strings.ReplaceAll(s, "\n", "")
+	s = strings.ReplaceAll(s, "\r", "")
+	s = strings.ReplaceAll(s, "\t", "")
+	return strings.TrimSpace(s)
+}
+
+func TestStatblockCard_GoldenEquivalence(t *testing.T) {
+	for name, page := range goldenFixtures {
+		t.Run(name, func(t *testing.T) {
+			want, err := os.ReadFile(filepath.Join(goldenDir, name+".golden.html"))
+			if err != nil {
+				t.Fatalf("%v (run the capture script — Task 2)", err)
+			}
+			got := renderStatblockCard(islandFor(page))
+			if g, w := normalizeStatblockHTML(got), normalizeStatblockHTML(string(want)); g != w {
+				t.Errorf("renderStatblockCard != golden for %s\n--- got ---\n%s\n--- want ---\n%s", name, g, w)
+			}
+		})
 	}
 }
