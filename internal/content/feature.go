@@ -26,11 +26,15 @@ func (p *FeatureGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 		Body:        section.FullBodySource(),
 	}
 
-	// Companion species containers (beastheart) are first-class: classify them
-	// as feature-group.companion/{species}. Plain feature-groups stay unclassified.
+	// Companion species containers (beastheart) are first-class. They are
+	// statblock-IDENTITY entities in the monster.companion.<class>.* namespace
+	// (mirroring monster.rivals.<echelon>.statblock), but keep rendering as a
+	// feature-group page (spec 2026-06-13 §5) and still push `companion`
+	// context to their member features/abilities.
 	if companion, ok := section.Annotation["companion"]; ok && companion != "" {
 		fm["companion"] = companion
-		result.TypePath = []string{"feature-group", "companion"}
+		classID := findAncestorID(ctx, section.HeadingLevel, "class")
+		result.TypePath = compactPath("monster", "companion", classID, "statblock")
 		result.ItemID = companion
 	}
 
@@ -113,7 +117,16 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		typePath = append(typePath, "trait")
 	}
 	if companionID != "" {
-		typePath = append(typePath, "companion", companionID)
+		// Companion features carry the owning class as a subgroup segment
+		// (feature.companion.beastheart.wolf.level-N/<id>), mirroring the
+		// monster.companion.beastheart.* container. classID is computed above
+		// (findAncestorID … "class"); guard against empty so we never emit a
+		// double-dot path.
+		typePath = append(typePath, "companion")
+		if classID != "" {
+			typePath = append(typePath, classID)
+		}
+		typePath = append(typePath, companionID)
 	} else if classID != "" {
 		typePath = append(typePath, classID)
 	} else if ancestryID != "" {

@@ -120,11 +120,6 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "statblock" {
 		return data, false
 	}
-	// Fixtures are statblocks in `type` only; they render as Forged Band
-	// featureblock cards (buildFixturePage), not the creature JSON island.
-	if strings.TrimSpace(parseFrontmatterField(fm, "statblock_kind")) == "fixture" {
-		return data, false
-	}
 	// Retainer advancement abilities (H6 "Level N Retainer Advancement Ability"
 	// headings) are split out: the island is built from the pre-advancement base
 	// so they no longer pollute the feature list, and they re-emit as a Forged

@@ -158,12 +158,13 @@ func TestFeatureParser_TaxonomyPaths(t *testing.T) {
 	}{
 		{"class feature is plain feature", "class", "shadow", "feature", []string{"feature", "shadow"}},
 		{"ancestry feature is trait", "ancestry", "dwarf", "trait", []string{"feature", "trait", "dwarf"}},
-		{"companion feature is plain feature", "companion", "wolf", "feature", []string{"feature", "companion", "wolf"}},
+		{"companion feature carries class segment", "companion", "wolf", "feature", []string{"feature", "companion", "beastheart", "wolf"}},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
 			ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
 			if tc.homeType == "companion" {
+				ctx.Push(1, context.Metadata{"type": "class", "id": "beastheart"})
 				ctx.Push(2, context.Metadata{"type": "feature-group", "companion": tc.homeID})
 			} else {
 				ctx.Push(2, context.Metadata{"type": tc.homeType, "id": tc.homeID})
@@ -552,7 +553,7 @@ func TestAbilityCompanionTypePath(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.ability.companion.wolf.level-1/clamping-jaws"
+	want := "mcdm.beastheart.v1/feature.ability.companion.beastheart.wolf.level-1/clamping-jaws"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
@@ -577,7 +578,7 @@ func TestFeatureCompanionTypePath(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.companion.wolf.level-3/my-what-big-teeth-you-have"
+	want := "mcdm.beastheart.v1/feature.companion.beastheart.wolf.level-3/my-what-big-teeth-you-have"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
@@ -589,7 +590,7 @@ func TestFeatureGroupCompanionClassified(t *testing.T) {
 
 	section := &parser.Section{
 		Heading:      "Wolf",
-		HeadingLevel: 3,
+		HeadingLevel: 4,
 		Annotation:   map[string]string{"type": "feature-group", "companion": "wolf", "level": "1"},
 	}
 	parsed, err := (&FeatureGroupParser{}).Parse(ctx, section)
@@ -597,7 +598,7 @@ func TestFeatureGroupCompanionClassified(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature-group.companion/wolf"
+	want := "mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
@@ -718,6 +719,205 @@ func TestMonsterParsersRegistered(t *testing.T) {
 	for _, typeName := range []string{"monster", "monster-group", "statblock", "featureblock", "dynamic-terrain"} {
 		if !r.Has(typeName) {
 			t.Errorf("parser %q not registered", typeName)
+		}
+	}
+}
+
+func TestFeatureblockCompanionAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.beastheart.v1"})
+	ctx.Push(2, context.Metadata{"type": "class", "id": "beastheart"})
+	ctx.Push(4, context.Metadata{"type": "feature-group", "companion": "wolf"})
+
+	adv := &parser.Section{
+		Heading:      "Wolf Advancement Features",
+		HeadingLevel: 5,
+		Annotation:   map[string]string{"type": "featureblock"},
+		Children: []*parser.Section{
+			{Heading: "My, What Big Teeth You Have", HeadingLevel: 6,
+				Annotation: map[string]string{"type": "feature", "id": "my-what-big-teeth-you-have", "level": "3"},
+				BodySource: "Whenever the wolf makes a strike..."},
+			{Heading: "Dire Wolf", HeadingLevel: 6,
+				Annotation: map[string]string{"type": "feature", "id": "dire-wolf", "level": "10"},
+				BodySource: "While the wolf is rampaging..."},
+		},
+	}
+	got, err := (&FeatureblockParser{}).Parse(ctx, adv)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+	code := scc.Classify("mcdm.beastheart.v1", got.TypePath, got.ItemID)
+	if want := "mcdm.beastheart.v1/monster.companion.beastheart.advancement-features/wolf"; code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) != 2 {
+		t.Fatalf("features = %v", got.Frontmatter["features"])
+	}
+	if feats[0]["name"] != "My, What Big Teeth You Have" || feats[0]["level"] != 3 {
+		t.Errorf("feat[0] = %v", feats[0])
+	}
+	if feats[1]["level"] != 10 {
+		t.Errorf("feat[1] level = %v, want 10", feats[1]["level"])
+	}
+}
+
+// Task 1: fixture statblock → monster.fixture.<element>.featureblock
+// Context mirrors the real source: H5 monster-group with domain=fixture/category=demon
+// wraps an H7 statblock (capped to level 6 by the parser).
+func TestStatblockFixtureFeatureblock(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.summoner.v1"})
+	// H5 monster-group sets fixture domain + demon category (level 5)
+	ctx.Push(5, context.Metadata{"type": "monster-group", "domain": "fixture", "category": "demon"})
+
+	// The boil body: italic role, 2-col stamina/size grid, two base features
+	body := `*Hazard Support*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **Hunger Thrush**
+>
+> Each enemy that starts their turn within 3 squares of the boil is taunted (EoT).
+
+> ⭐️ **Oh, It Pops**
+>
+> When the boil is destroyed, each enemy within 3 squares takes acid damage.`
+
+	section := &parser.Section{
+		Heading:      "The Boil",
+		HeadingLevel: 6, // H7 capped to 6
+		Annotation:   map[string]string{"type": "statblock"},
+		BodySource:   body,
+	}
+
+	got, err := (&StatblockParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+
+	// Must classify as monster.fixture.demon.featureblock/the-boil
+	code := scc.Classify("mcdm.summoner.v1", got.TypePath, got.ItemID)
+	want := "mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil"
+	if code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+
+	// statblock_kind must not be emitted
+	if _, ok := got.Frontmatter["statblock_kind"]; ok {
+		t.Errorf("statblock_kind should not be present for fixture featureblock")
+	}
+
+	// stats[] must contain Stamina and Size
+	stats, ok := got.Frontmatter["stats"].([]map[string]any)
+	if !ok || len(stats) == 0 {
+		t.Fatalf("stats = %v, want [{name:Stamina,...},{name:Size,...}]", got.Frontmatter["stats"])
+	}
+	foundStamina, foundSize := false, false
+	for _, s := range stats {
+		switch s["name"] {
+		case "Stamina":
+			foundStamina = true
+		case "Size":
+			foundSize = true
+		}
+	}
+	if !foundStamina {
+		t.Error("stats[] missing Stamina entry")
+	}
+	if !foundSize {
+		t.Error("stats[] missing Size entry")
+	}
+
+	// features[] must contain the base (Level-0) features
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) == 0 {
+		t.Fatalf("features = %v, want at least one base feature", got.Frontmatter["features"])
+	}
+	foundBase := false
+	for _, f := range feats {
+		if f["name"] == "Hunger Thrush" {
+			foundBase = true
+		}
+	}
+	if !foundBase {
+		t.Error("features[] missing base feature 'Hunger Thrush'")
+	}
+}
+
+// Task 3: fixture advancement-features featureblock
+// The sibling section (post source-split) carries Level-5/9 advancement features.
+func TestFeatureblockFixtureAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.summoner.v1"})
+	// H5 monster-group sets fixture domain + demon category (level 5)
+	ctx.Push(5, context.Metadata{"type": "monster-group", "domain": "fixture", "category": "demon"})
+
+	body := `> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Soul Rancor**
+>
+> You gain a surge the first time in a round that your demon minions deal 3 or more damage.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The boil is now size 3.
+>
+> ⭐️ **Fester Field**
+>
+> Each non-abyssal enemy that starts their turn within 3 squares takes 5 corruption damage.`
+
+	section := &parser.Section{
+		Heading:      "The Boil Advancement Features",
+		HeadingLevel: 6, // H7 capped to 6, sibling of the base statblock
+		Annotation:   map[string]string{"type": "featureblock", "id": "the-boil"},
+		BodySource:   body,
+	}
+
+	got, err := (&FeatureblockParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+
+	// Must classify as monster.fixture.demon.advancement-features/the-boil
+	code := scc.Classify("mcdm.summoner.v1", got.TypePath, got.ItemID)
+	want := "mcdm.summoner.v1/monster.fixture.demon.advancement-features/the-boil"
+	if code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+
+	// features[] must carry Level-5 and Level-9 features
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) == 0 {
+		t.Fatalf("features = %v, want advancement features", got.Frontmatter["features"])
+	}
+
+	// Assert specific features carry the correct level (guards the
+	// ParseRichFeatures level state-machine against misattribution).
+	levelByName := map[string]any{}
+	for _, f := range feats {
+		if name, ok := f["name"].(string); ok {
+			levelByName[name] = f["level"]
+		}
+	}
+	for name, wantLevel := range map[string]int{
+		"Soul Rancor":   5,
+		"Size Increase": 9,
+		"Fester Field":  9,
+	} {
+		if levelByName[name] != wantLevel {
+			t.Errorf("feature %q level = %v, want %d", name, levelByName[name], wantLevel)
 		}
 	}
 }

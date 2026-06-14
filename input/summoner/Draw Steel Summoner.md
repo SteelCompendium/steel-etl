@@ -1506,6 +1506,9 @@ The boil arises from the chaotic depths of the Abyssal Waste, concentrated into 
 >
 > When the boil is destroyed, each enemy within 3 squares of the boil takes acid [damage](scc:mcdm.heroes.v1/rule.damage/damage) equal to your level and is A < STRONG [weakened](scc:mcdm.heroes.v1/condition/weakened) (save ends).
 
+<!-- @type: featureblock | @id: the-boil -->
+####### The Boil Advancement Features
+
 > **Level 5 Fixture Advancement Feature**
 >
 > ⭐️ **Soul Rancor**
@@ -1542,6 +1545,9 @@ The storm of elements from Quintessence coalesce into a hardened, crystalline st
 > ⭐️ **Elemental Boost**
 >
 > When you or an ally uses a ranged ability that draws a line through the crystal, the distance increases by 5.
+
+<!-- @type: featureblock | @id: primordial-crystal -->
+####### Primordial Crystal Advancement Features
 
 > **Level 5 Fixture Advancement Feature**
 >
@@ -1580,6 +1586,9 @@ The vibrant waters of Arcadia pour through a hole in reality and pool into a ver
 >
 > Each of your fey [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) that ends their [turn](scc:mcdm.heroes.v1/rule.combat/turn) within 3 squares of the pond is hidden until the start of their next [turn](scc:mcdm.heroes.v1/rule.combat/turn).
 
+<!-- @type: featureblock | @id: glade-pond -->
+####### Glade Pond Advancement Features
+
 > **Level 5 Fixture Advancement Feature**
 >
 > ⭐️ **Garden of Jest**
@@ -1616,6 +1625,9 @@ Tall iron gates from the Necropolitan Ruins arise from the earth as wailing spir
 > ⭐️ **Undead Dominion**
 >
 > Each of your undead [minions](scc:mcdm.summoner.v1/feature.summoner.level-1/minions) has [damage immunity](scc:mcdm.heroes.v1/rule.damage/damage-immunity) 2 while occupying a space within 3 squares of the gates.
+
+<!-- @type: featureblock | @id: barrow-gates -->
+####### Barrow Gates Advancement Features
 
 > **Level 5 Fixture Advancement Feature**
 >

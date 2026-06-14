@@ -96,11 +96,16 @@ func TestBestiaryItemType_SummonerTrees(t *testing.T) {
 		rel, fmType, want string
 	}{
 		{"minion/demon/hulking-chimor.md", "statblock", "statblock"},
-		{"fixture/elemental/primordial-crystal.md", "statblock", "statblock"},
 		{"champion/fey/celestial-attendant.md", "statblock", "statblock"},
 		{"rival/summoner/3rd-echelon/rival-summoner.md", "statblock", "statblock"},
 		{"retainer/summoner/devil-detective.md", "statblock", "retainer"},
 		{"minion/demon/index.md", "statblock", ""}, // index page skipped
+		// Fixtures (Plan 5c) are featureblocks under monster/fixture/: the base
+		// indexes as "fixture"; the sibling advancement-features page is excluded.
+		{"monster/fixture/elemental/primordial-crystal.md", "featureblock", "fixture"},
+		{"monster/fixture/elemental/advancement-features/primordial-crystal.md", "featureblock", ""},
+		// Malice/feature featureblocks stay out of the searchable index.
+		{"monster/goblins/goblin-malice.md", "featureblock", ""},
 	} {
 		if got := bestiaryItemType(tc.rel, tc.fmType); got != tc.want {
 			t.Errorf("bestiaryItemType(%q) = %q, want %q", tc.rel, got, tc.want)

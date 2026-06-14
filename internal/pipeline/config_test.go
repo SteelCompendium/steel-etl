@@ -215,3 +215,105 @@ func TestConfigResolvePath(t *testing.T) {
 		}
 	}
 }
+
+func baseMultiBookConfig() *Config {
+	cfg := &Config{
+		Book:      "mcdm.heroes.v1",
+		Input:     "./input/heroes/Draw Steel Heroes.md",
+		Locale:    "en",
+		ConfigDir: "/proj",
+	}
+	cfg.Output.BaseDir = "../data/data-rules"
+	cfg.Output.Formats = []string{"md", "json"}
+	cfg.Output.Variants = VariantsConfig{Linked: true, DSE: true}
+	cfg.Output.Aggregate = AggregateConfig{Enabled: true, OutputDir: "../data/data-unified"}
+	cfg.Output.SCCAPI = SCCAPIConfig{Enabled: true, OutputDir: "../data/api"}
+	cfg.Output.SCCMap = SCCMapConfig{Enabled: true, OutputFile: "./scc.json"}
+	cfg.Output.Stripped = StrippedConfig{Enabled: true, OutputDir: "../data/clean"}
+	return cfg
+}
+
+func TestEffectiveBookConfig_InheritsAndOverridesIdentity(t *testing.T) {
+	cfg := baseMultiBookConfig()
+	b := BookConfig{
+		Book:  "mcdm.monsters.v1",
+		Input: "./input/monsters/Draw Steel Monsters.md",
+	}
+
+	eff := cfg.EffectiveBookConfig(b)
+
+	if eff.Book != "mcdm.monsters.v1" {
+		t.Errorf("Book = %q, want mcdm.monsters.v1", eff.Book)
+	}
+	if eff.Input != b.Input {
+		t.Errorf("Input = %q, want %q", eff.Input, b.Input)
+	}
+	// Inherits base output base_dir + formats when the book overrides nothing.
+	if eff.Output.BaseDir != "../data/data-rules" {
+		t.Errorf("BaseDir = %q, want inherited ../data/data-rules", eff.Output.BaseDir)
+	}
+	if got, want := eff.Output.Formats, []string{"md", "json"}; !equalStrings(got, want) {
+		t.Errorf("Formats = %v, want inherited %v", got, want)
+	}
+	// Variants are inherited.
+	if !eff.Output.Variants.Linked || !eff.Output.Variants.DSE {
+		t.Errorf("Variants not inherited: %+v", eff.Output.Variants)
+	}
+}
+
+func TestEffectiveBookConfig_DisablesSharedOutputs(t *testing.T) {
+	cfg := baseMultiBookConfig()
+	eff := cfg.EffectiveBookConfig(BookConfig{Book: "mcdm.monsters.v1", Input: "x.md"})
+
+	if eff.Output.Aggregate.Enabled {
+		t.Error("Aggregate should be disabled for a secondary book")
+	}
+	if eff.Output.SCCAPI.Enabled {
+		t.Error("SCCAPI should be disabled for a secondary book")
+	}
+	if eff.Output.SCCMap.Enabled {
+		t.Error("SCCMap should be disabled for a secondary book")
+	}
+	if eff.Output.Stripped.Enabled {
+		t.Error("Stripped should be disabled for a secondary book")
+	}
+	// The base config must NOT be mutated by deriving a book config.
+	if !cfg.Output.Aggregate.Enabled || !cfg.Output.SCCAPI.Enabled {
+		t.Error("base config shared outputs were mutated by EffectiveBookConfig")
+	}
+}
+
+func TestEffectiveBookConfig_BookOverridesBaseDirAndFormats(t *testing.T) {
+	cfg := baseMultiBookConfig()
+	b := BookConfig{
+		Book:  "mcdm.monsters.v1",
+		Input: "x.md",
+	}
+	b.Output.BaseDir = "../data/data-bestiary"
+	b.Output.Formats = []string{"yaml"}
+
+	eff := cfg.EffectiveBookConfig(b)
+
+	if eff.Output.BaseDir != "../data/data-bestiary" {
+		t.Errorf("BaseDir = %q, want overridden ../data/data-bestiary", eff.Output.BaseDir)
+	}
+	if got, want := eff.Output.Formats, []string{"yaml"}; !equalStrings(got, want) {
+		t.Errorf("Formats = %v, want overridden %v", got, want)
+	}
+	// Overriding the derived config's formats must not leak into the base config.
+	if got, want := cfg.Output.Formats, []string{"md", "json"}; !equalStrings(got, want) {
+		t.Errorf("base Formats mutated = %v, want %v", got, want)
+	}
+}
+
+func equalStrings(a, b []string) bool {
+	if len(a) != len(b) {
+		return false
+	}
+	for i := range a {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+	return true
+}

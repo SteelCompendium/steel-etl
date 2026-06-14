@@ -68,7 +68,7 @@ func TestIsBestiaryGroupDir(t *testing.T) {
 	}{
 		{"monster/goblins", true},
 		{"minion/demon", true},
-		{"fixture/elemental", true},
+		{"monster/fixture/elemental", true}, // Plan 5c: fixtures now under monster/fixture/
 		{"rival/summoner", true},
 		{"retainer/summoner", true},
 		{"monster", false}, // a type root, not a group dir
@@ -232,7 +232,14 @@ func TestHoistStatblockPath(t *testing.T) {
 		{"monster/goblins/statblock/goblin-warrior.md", "monster/goblins/goblin-warrior.md"},
 		{"monster/demons/1st-echelon/statblock/spite.md", "monster/demons/1st-echelon/spite.md"},
 		{"retainer/statblock/angulotl-hopper.md", "retainer/angulotl-hopper.md"},
-		{"monster/goblins/goblin-malice.md", "monster/goblins/goblin-malice.md"},         // featureblock untouched
+		// Fixtures (Plan 5c): the base drops its non-leaf featureblock/ segment;
+		// the advancement-features/ subfolder is kept (mirrors companions).
+		{"monster/fixture/demon/featureblock/the-boil.md", "monster/fixture/demon/the-boil.md"},
+		{"monster/fixture/demon/advancement-features/the-boil.md", "monster/fixture/demon/advancement-features/the-boil.md"},
+		// featureblock hoist is fixture-scoped: a featureblock/ segment in any
+		// other bestiary tree is left intact.
+		{"retainer/summoner/featureblock/x.md", "retainer/summoner/featureblock/x.md"},
+		{"monster/goblins/goblin-malice.md", "monster/goblins/goblin-malice.md"},         // malice leaf untouched
 		{"dynamic-terrain/mechanisms/pillar.md", "dynamic-terrain/mechanisms/pillar.md"}, // not bestiary statblock
 		{"class/fury.md", "class/fury.md"},                                               // unrelated tree untouched
 	} {

@@ -67,14 +67,20 @@ link-wrapped characteristic (`2d10 + [R](scc:…)`) and a `linkDisplay` helper s
 link markup from the structured `roll` and from stat-grid cell values, while
 tier/effect values keep their `[x](scc:…)` links verbatim (the data-field convention).
 
-**Fixture** statblocks (`fixture.<portfolio>.statblock/*`) use a non-standard
-2-column `| **Stamina:** … | **Size:** … |` grid plus an italic `*Hazard Support*`
-role line. `StatblockParser` recognizes these when the SCC `domain == "fixture"`
-(`applyFixtureGrid`, `internal/content/monster.go`): it maps `Stamina`/`Size` into the
-structured fields (keeping the `+ your level` expression as the value), lifts the role
-line into `role`/`terrain_type`, drops the garbage `keywords` the standard grid parse
-derives from the 2-column header, and stamps `statblock_kind: fixture`. (Resolved the
-former 2-column-grid gap, archived as workspace FOLLOWUPS "was #6".)
+**Fixture** entities use a non-standard 2-column `| **Stamina:** … | **Size:** … |`
+grid plus an italic `*Hazard Support*` role line. Although they sit in `@type:
+statblock` source sections, `StatblockParser` reclassifies them as **featureblocks**
+when the SCC `domain == "fixture"` (Plan 5c): it returns early as `type: featureblock`
+with code `monster.fixture.<element>.featureblock/<id>` (mirroring beastheart
+companions, which moved into the `monster.*` family). `applyFixtureGrid`
+(`internal/content/monster.go`) lifts the role line into `role`/`terrain_type` and drops
+the garbage `keywords` the standard grid parse derives from the 2-column header; the
+`fixtureStats` helper maps `Stamina`/`Size` into the loose `stats[]` ({name, value})
+header (keeping the `+ your level` expression as the value), and `ParseRichFeatures`
+populates the base (Level-0) `features[]`. The Level-5/9 advancement tiers live in a
+sibling `monster.fixture.<element>.advancement-features/<id>` featureblock (source-split
+into a `@type: featureblock | @id: <fixture-id>` section; `FeatureblockParser` fixture
+branch). Plan: `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
 ## Featureblocks & dynamic terrain (structured fields)
 
@@ -89,6 +95,17 @@ labeled `sections`/`enhancements` for table-less features. `transformFeaturebloc
 (`internal/output/`) emits the SDK JSON/YAML straight from this frontmatter (no body
 re-parse).
 
+**Beastheart companion advancement-features** are a second `features[]` source. When a
+`@type: featureblock` section sits in companion context (a `##### <C> Advancement
+Features` block under a companion), `FeatureblockParser` takes a companion branch:
+classifies as `monster.companion.<class>.advancement-features/<species>` and embeds its
+**child** `@type:feature` sections (the Level-3/6/10 advancement features, which keep their
+own `feature.companion.<class>.<species>.level-N/<id>` codes) into `features[]` via
+`collectChildFeatures` — `{name, body, level}` per feature, render-only. Unlike malice
+blocks (features from body blockquotes via `ParseRichFeatures`), these come from child
+sub-sections, so the standalone card groups them into `.fb__band--adv` level tiers. Plan
+5b: `docs/superpowers/plans/2026-06-13-companion-advancement-featureblocks.md`.
+
 ### Featureblock site rendering (Plan 2)
 
 `internal/site/featureblock_page.go` turns `type: featureblock` and `type:
@@ -101,28 +118,23 @@ alongside the statblock/ability rewriters. See the design spec:
 
 **Plan 2 scope:** featureblock and dynamic-terrain pages only.
 
-### Fixture routing (Plan 3)
+### Fixture rendering (Plan 5c — `fixture_page.go` retired)
 
-Summoner **fixture** statblocks (`statblock_kind: fixture`) are diverted from the
-creature JSON island to the Forged Band featureblock card at build time via
-`internal/site/fixture_page.go`. `buildStatblockIslandPage` returns `false` early for
-fixtures, and `buildSection` dispatches `buildFixturePage` next. The adapter:
+Fixtures are now `type: featureblock` (see the data-layer note above), so they render
+through the **same** `buildFeatureblockPage` path as malice/terrain/companion-advancement
+cards — no fixture-specific site adapter. The Plan 3 `internal/site/fixture_page.go`
+statblock→fbDoc adapter (`buildFixturePage`) and the `statblock_kind: fixture` early
+return in `buildStatblockIslandPage` were **deleted** in Plan 5c; the shared
+`fbFeaturesFromRich` helper it owned moved to `featureblock_page.go`. `renderFbFeats`
+still groups `Level > 0` features into `.fb__band--adv` bands, so the advancement-features
+page renders its Level-5/9 tiers as bands.
 
-- reads `stamina`/`size` frontmatter (set by Plan 1's `applyFixtureGrid`) → loose header stats
-- reads `role`/`terrain_type` → eyebrow (e.g. "Fortification · Defender")
-- parses body blockquote features with the shared `content.ParseRichFeatures` (no body
-  re-parse of frontmatter; same parser as featureblock/terrain — icon-keeping, raw `.md`
-  links, advancement-level attachment via `fbLevelLabelRe`)
-- calls `renderFeatureblockCard` (no new renderer — full code reuse)
-
-`renderFbFeats` was updated to group features by `Level > 0` into `.fb__band--adv`
-bands (backward-compatible: existing featureblock/terrain features have `Level: 0` and
-emit no band). Each band opens with a `.fb__adv-head` sub-head ("Level N Advancement"),
-role-tinted via `--role`. CSS in `v2/docs/stylesheets/steel-featureblock.css`.
-
-Cross-ref: `internal/site/featureblock_page.go` (shared renderer + `renderFbFeats`).
-
-**No data/schema/SCC change** — fixture fields already landed in Plan 1.
+**Site placement (Plan 5c):** `hoistStatblockPath` drops the non-leaf `featureblock/`
+segment for the fixture sub-tree, so a base fixture sits at
+`Browse/monster/fixture/<element>/<id>` (parallel to hoisted statblock bases), with the
+sibling at `…/<element>/advancement-features/<id>`. `bestiaryItemType` indexes the base as
+a searchable `"fixture"` facet (the advancement-features sibling is excluded). Plan:
+`docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
 **Plan 4 (retainer advancement split) — shipped.** `internal/site/retainer_page.go`
 `splitRetainerAdvancement` cuts a retainer statblock body at the
@@ -133,16 +145,18 @@ creature JSON island from the pre-advancement base (so advancement abilities no 
 pollute its feature list) and appends a single "Advancement Abilities" Forged Band card
 (`renderRetainerAdvancement` → `renderFeatureblockCard`, with each tier stamped onto a
 `Level > 0` `.fb__band--adv` band). Role accent + eyebrow read the per-item `role:` /
-`organization:` scalars. Non-retainer statblocks are a no-op. Plan 5 (companion cards)
-remains.
+`organization:` scalars. Non-retainer statblocks are a no-op. Plan 6 (retainer rework —
+own `advancement-features` codes, mirroring companions/fixtures) remains.
 
 ## Summoner book reuse
 
 The **Summoner book** adds its own statblock-typed trees that reuse this machinery:
-`minion.<portfolio>.statblock/<id>`, `fixture.<portfolio>.statblock/<id>`,
-`champion.<portfolio>.statblock/<id>` (demon/elemental/fey/undead portfolios),
-`retainer.summoner.statblock/<id>`, and echelon-versioned
-`rival.summoner.<echelon>.statblock/<id>`. They route to the same bestiary cards
+`minion.<portfolio>.statblock/<id>`, `champion.<portfolio>.statblock/<id>`
+(demon/elemental/fey/undead portfolios), `retainer.summoner.statblock/<id>`, and
+echelon-versioned `rival.summoner.<echelon>.statblock/<id>`. (Fixtures are the
+exception — Plan 5c moved them out of this statblock family into
+`monster.fixture.<element>.featureblock/<id>`; see "Fixture rendering" above.) They route
+to the same bestiary cards
 (`isBestiaryGroupDir`/`usesFolderIndex`/`hoistStatblockPath` were generalized from
 `monster`-only to all statblock roots) and into the Bestiary search index
 (`bestiary_search.go`). `bestiarySource`/`withSource` (`bestiary_cards.go`) mark them

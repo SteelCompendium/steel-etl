@@ -18,7 +18,7 @@ import (
 // bestiaryItem is one searchable record. JSON keys are consumed by
 // steel-bestiary-browser.js — keep them in sync with that file.
 type bestiaryItem struct {
-	Type         string   `json:"type"`             // statblock | terrain | retainer
+	Type         string   `json:"type"`             // statblock | terrain | retainer | fixture
 	Source       string   `json:"source,omitempty"` // e.g. "Summoner" (scc-derived); "" = Monsters book
 	Name         string   `json:"name"`
 	Level        int      `json:"level"`
@@ -46,11 +46,17 @@ func bestiaryItemType(relSlash, fmType string) string {
 		strings.HasPrefix(relSlash, "minion/") || strings.HasPrefix(relSlash, "fixture/") ||
 		strings.HasPrefix(relSlash, "champion/") || strings.HasPrefix(relSlash, "rival/")):
 		// Monsters-book creatures + the summoner book's portfolio minions/
-		// fixtures/champions and the rival summoner all index as statblocks.
+		// champions and the rival summoner all index as statblocks.
 		return "statblock"
+	case fmType == "featureblock" && strings.HasPrefix(relSlash, "monster/fixture/") &&
+		!strings.Contains(relSlash, "/advancement-features/"):
+		// Summoner fixtures became monster.fixture.<element>.featureblock entities
+		// (Plan 5c); their base page stays searchable as its own "fixture" facet.
+		// The sibling advancement-features page is internal — excluded.
+		return "fixture"
 	case fmType == "dynamic-terrain":
 		return "terrain"
-	default: // featureblock, monster (group lore), anything else
+	default: // malice/feature featureblocks, monster (group lore), anything else
 		return ""
 	}
 }
