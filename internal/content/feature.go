@@ -113,7 +113,16 @@ func (p *FeatureParser) Parse(ctx *context.ContextStack, section *parser.Section
 		typePath = append(typePath, "trait")
 	}
 	if companionID != "" {
-		typePath = append(typePath, "companion", companionID)
+		// Companion features carry the owning class as a subgroup segment
+		// (feature.companion.beastheart.wolf.level-N/<id>), mirroring the
+		// monster.companion.beastheart.* container. classID is computed above
+		// (findAncestorID … "class"); guard against empty so we never emit a
+		// double-dot path.
+		typePath = append(typePath, "companion")
+		if classID != "" {
+			typePath = append(typePath, classID)
+		}
+		typePath = append(typePath, companionID)
 	} else if classID != "" {
 		typePath = append(typePath, classID)
 	} else if ancestryID != "" {

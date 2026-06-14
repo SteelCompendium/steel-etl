@@ -158,12 +158,13 @@ func TestFeatureParser_TaxonomyPaths(t *testing.T) {
 	}{
 		{"class feature is plain feature", "class", "shadow", "feature", []string{"feature", "shadow"}},
 		{"ancestry feature is trait", "ancestry", "dwarf", "trait", []string{"feature", "trait", "dwarf"}},
-		{"companion feature is plain feature", "companion", "wolf", "feature", []string{"feature", "companion", "wolf"}},
+		{"companion feature carries class segment", "companion", "wolf", "feature", []string{"feature", "companion", "beastheart", "wolf"}},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {
 			ctx := context.NewContextStack(context.Metadata{"book": "mcdm.heroes.v1"})
 			if tc.homeType == "companion" {
+				ctx.Push(1, context.Metadata{"type": "class", "id": "beastheart"})
 				ctx.Push(2, context.Metadata{"type": "feature-group", "companion": tc.homeID})
 			} else {
 				ctx.Push(2, context.Metadata{"type": tc.homeType, "id": tc.homeID})
@@ -577,7 +578,7 @@ func TestFeatureCompanionTypePath(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.companion.wolf.level-3/my-what-big-teeth-you-have"
+	want := "mcdm.beastheart.v1/feature.companion.beastheart.wolf.level-3/my-what-big-teeth-you-have"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
