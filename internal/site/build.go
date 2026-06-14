@@ -1220,6 +1220,10 @@ func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
 // dir is the absolute directory; used to read frontmatter "name" fields from
 // the listed files so the index labels match the pages' actual titles.
 func buildIndexContent(dir, dirName string, files, subdirs []string) string {
+	// Flattened companion/fixture group dirs: base + advancement-features pairs.
+	if pairs, ok := buildAdvancementPairContent(dir, dirName, files, subdirs); ok {
+		return pairs
+	}
 	// Rich stat-cards for supported index types (kit, …); falls back below.
 	if cards, ok := buildCardsContent(dir, dirName, files, subdirs); ok {
 		return cards
