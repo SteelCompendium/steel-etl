@@ -28,6 +28,7 @@ import (
 	"html"
 	"strings"
 
+	"github.com/SteelCompendium/steel-etl/internal/content"
 	"gopkg.in/yaml.v3"
 )
 
@@ -94,6 +95,39 @@ func buildFeatureblockPage(data []byte) ([]byte, bool) {
 	}
 	card := renderFeatureblockCard(doc)
 	return []byte("---\n" + fm + "\n---\n\n" + card), true
+}
+
+// fbFeaturesFromRich maps the shared content.RichFeature shape onto the site
+// renderer's fbFeature. The two are intentionally congruent (spec §2). The icon
+// is preserved so a table-less fixture passive (⭐) gets its action accent from
+// the emoji (fbFeatureAction) rather than flattening to "passive".
+func fbFeaturesFromRich(rfs []content.RichFeature) []fbFeature {
+	out := make([]fbFeature, 0, len(rfs))
+	for _, r := range rfs {
+		f := fbFeature{
+			Icon:     r.Icon,
+			Name:     r.Name,
+			Cost:     r.Cost,
+			Usage:    r.Usage,
+			Keywords: r.Keywords,
+			Distance: r.Distance,
+			Target:   r.Target,
+			Body:     r.Body,
+			Trailing: r.Trailing,
+			Level:    r.Level,
+		}
+		if r.PowerRoll != nil {
+			f.PowerRoll = &fbPowerRoll{Formula: r.PowerRoll.Formula, Tiers: r.PowerRoll.Tiers}
+		}
+		for _, s := range r.Sections {
+			f.Sections = append(f.Sections, fbSection{Label: s.Label, Text: s.Text})
+		}
+		for _, e := range r.Enhancements {
+			f.Enhancements = append(f.Enhancements, fbEnh{Cost: e.Cost, Text: e.Text})
+		}
+		out = append(out, f)
+	}
+	return out
 }
 
 // fbDataRole maps a doc to the [data-role] the CSS colors. Terrain/fixtures use
