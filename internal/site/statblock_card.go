@@ -7,7 +7,7 @@ package site
 // to build, so steel-statblock.css and the data-sb-* preference system are unchanged
 // and the slimmed client script only wires interactivity (collapsible bands + sticky
 // header). Equivalence is locked by TestStatblockCard_GoldenEquivalence against HTML
-// captured from the (previous) JS renderer. See
+// captured from the (previous) JS renderer. See the workspace-root spec
 // docs/superpowers/specs/2026-06-14-statblock-build-time-render-design.md.
 //
 // The input sbIsland and its parsing (buildStatblockIsland, statblock_page.go) are

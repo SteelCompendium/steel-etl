@@ -55,6 +55,18 @@ book-faithful everything-inline view lives on the Read tab's `chapter/monsters` 
 `ParseStatblockFeatures` + `transformStatblock` build the SDK `statblock.schema.json`
 JSON with a `features[]` array.
 
+**Site rendering (build-time HTML, 2026-06-14).** `type: statblock` pages no longer
+emit a JSON island. `buildStatblockIslandPage` (`internal/site/statblock_page.go`,
+the parse stage) hands the `sbIsland` to `renderStatblockCard`
+(`internal/site/statblock_card.go`), which emits the finished `.sb-wrap` DOM at build
+time — the same DOM `v2/docs/javascripts/steel-statblock.js` used to build client-side
+(now slimmed to wire-only: collapsible bands + sticky header). Equivalence is locked
+by `TestStatblockCard_GoldenEquivalence` (golden HTML captured from the old JS
+renderer; inputs under `internal/site/testdata/statblock_golden/`). This is the
+`featureblock_page.go` model and unblocks embedding statblock cards inline on any page.
+Design: workspace `docs/superpowers/specs/2026-06-14-statblock-build-time-render-design.md`
+(cross-repo spec, so it lives at the workspace root, not under `steel-etl/`).
+
 Power rolls come in **two forms**, both extracted to `effects.roll/tier1-3`: the
 Monsters labeled form (`**Power Roll + N:**` + `- **≤11:** …` bullets) and the
 **summoner dice-in-title form** (`🏹 **Name Nd10 + <char>**` followed by three bare
@@ -96,8 +108,9 @@ dynamic-terrain` pages into the `.fb-wrap` **Forged Band** card at build time. I
 `yaml.Unmarshal`s the structured frontmatter produced by the parsers above (no body
 re-parse), reuses the ability-card grammar (each feature becomes
 `article.sc-ability.fb__feat`), and is dispatched in `build.go` `buildSection`
-alongside the statblock/ability rewriters. See the design spec:
-`docs/superpowers/specs/2026-06-12-featureblock-cards-design.md`.
+alongside the statblock/ability rewriters. See the design spec: workspace
+`docs/superpowers/specs/2026-06-12-featureblock-cards-design.md` (cross-repo spec at
+the workspace root, not under `steel-etl/`).
 
 **Plan 2 scope:** featureblock and dynamic-terrain pages only.
 
