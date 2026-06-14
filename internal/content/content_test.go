@@ -553,7 +553,7 @@ func TestAbilityCompanionTypePath(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature.ability.companion.wolf.level-1/clamping-jaws"
+	want := "mcdm.beastheart.v1/feature.ability.companion.beastheart.wolf.level-1/clamping-jaws"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}

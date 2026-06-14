@@ -99,13 +99,22 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	}
 
 	// Build type path: feature.ability.{parent}.level-{N}
-	// Companion abilities use feature.ability.companion.{species}.level-{N}.
+	// Companion abilities use feature.ability.companion.beastheart.{species}.level-{N}
+	// (the class segment mirrors FeatureParser's companion path; empty-class guard prevents
+	// a double-dot path when no class ancestor is present).
 	// `ability` is the marked rigorous specialization in the hub-and-spoke feature
 	// taxonomy (see docs/superpowers/specs/2026-06-07-feature-taxonomy-design.md);
 	// plain features (feature.go) carry no kind segment.
+	classID := findAncestorID(ctx, section.HeadingLevel, "class")
 	typePath := []string{"feature", "ability"}
 	if companionID != "" {
-		typePath = append(typePath, "companion", companionID)
+		// feature.ability.companion.beastheart.wolf.level-N/<id> — mirror the
+		// FeatureParser companion path (empty-class guard).
+		typePath = append(typePath, "companion")
+		if classID != "" {
+			typePath = append(typePath, classID)
+		}
+		typePath = append(typePath, companionID)
 	} else if parentID != "" {
 		typePath = append(typePath, parentID)
 	} else {
