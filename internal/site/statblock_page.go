@@ -376,7 +376,10 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 
 	f.Action, f.Kind = sbActionKind(usage, f.Cost)
 	if usage != "" && usage != "-" {
-		f.Usage = usage
+		// Resolve any link in the usage cell the same way distance/target are
+		// (a few cells link "Triggered Action" etc.); steel-statblock.js renders
+		// usage with rich() so the [text](href) survives as a working <a>.
+		f.Usage = resolveSbLinks(usage)
 	}
 	if tiersSeen {
 		t := map[string]string{}

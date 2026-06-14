@@ -57,7 +57,7 @@ type: statblock
 
 > ❗️ **Devilish Suggestion (2 Malice)**
 >
-> | **Magic, Ranged** |           **Triggered action** |
+> | **Magic, Ranged** |           **[Triggered action](../../rule/combat/triggered-action.md)** |
 > |-------------------|-------------------------------:|
 > | **📏 Ranged 5**   | **🎯 The triggering creature** |
 >
@@ -176,6 +176,11 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	}
 	if sug.Action != "triggered" {
 		t.Errorf("suggestion action = %q", sug.Action)
+	}
+	// A linked usage cell keeps its link, resolved to the directory-URL form the
+	// island serves (same treatment as distance/target) — not stripped to text.
+	if want := "[Triggered action](../../../rule/combat/triggered-action/)"; sug.Usage != want {
+		t.Errorf("suggestion usage = %q, want %q", sug.Usage, want)
 	}
 	if sug.Cost != "2 Malice" {
 		t.Errorf("suggestion cost = %q", sug.Cost)
