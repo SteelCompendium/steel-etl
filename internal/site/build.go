@@ -523,20 +523,31 @@ func groupLandingIndexDest(relPath string) (string, bool) {
 	return "", false
 }
 
-// hoistStatblockPath drops a non-leaf "statblock" segment under the monster/ or
-// retainer/ trees, so a Browse statblock page sits directly under its group
-// (monster/<group>/<item>, monster/<group>/<echelon>/<item>, retainer/<item>)
-// instead of behind a redundant statblock/ folder. The SCC CODE keeps its
-// `.statblock` segment — this is a deliberate code≠path divergence affecting
-// only the site URL/sidebar. Non-bestiary paths are returned unchanged.
+// hoistStatblockPath drops a non-leaf "statblock" (or fixture "featureblock")
+// segment under the monster/ or retainer/ trees, so a Browse page sits directly
+// under its group (monster/<group>/<item>, monster/<group>/<echelon>/<item>,
+// retainer/<item>, monster/fixture/<element>/<item>) instead of behind a
+// redundant statblock/ or featureblock/ folder. The SCC CODE keeps its
+// `.statblock`/`.featureblock` segment — this is a deliberate code≠path
+// divergence affecting only the site URL/sidebar. Only the four summoner
+// fixtures carry a `.featureblock` path segment (malice/terrain blocks classify
+// as monster.<category>/<id> with no such segment), so dropping it is
+// fixture-scoped. Non-bestiary paths are returned unchanged.
 func hoistStatblockPath(relPath string) string {
-	parts := strings.Split(filepath.ToSlash(relPath), "/")
+	rel := filepath.ToSlash(relPath)
+	parts := strings.Split(rel, "/")
 	if len(parts) < 2 || !bestiaryGroupParents[parts[0]] {
 		return relPath
 	}
+	// The featureblock/ hoist is scoped to the fixture sub-tree: only the four
+	// summoner fixtures classify as monster.fixture.<element>.featureblock/<id>.
+	// Restricting it here keeps a future `featureblock` segment in any other
+	// bestiary tree from being silently dropped.
+	fixture := strings.HasPrefix(rel, "monster/fixture/")
 	out := make([]string, 0, len(parts))
 	for i, p := range parts {
-		if p == "statblock" && i < len(parts)-1 { // keep a leaf literally named statblock.md
+		// keep a leaf literally named statblock.md / featureblock.md
+		if i < len(parts)-1 && (p == "statblock" || (fixture && p == "featureblock")) {
 			continue
 		}
 		out = append(out, p)
