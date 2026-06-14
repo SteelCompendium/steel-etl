@@ -254,3 +254,121 @@ func TestBuildStatblockIslandPage_EmitsIsland(t *testing.T) {
 		t.Error("non-statblock page should not be rewritten")
 	}
 }
+
+// linkedFieldsPage exercises every feature field that can carry a source link:
+// the title's parenthetical (Signature / Malice cost / Villain Action — with the
+// link's own "(…)" nested inside the group), the enhancement cost, a section
+// label, and a feature name that is itself a link. Links arrive as resolved
+// relative ".md" links (the gen link-sweep) and must come out as directory URLs.
+const linkedFieldsPage = `---
+name: Link Test Monster
+organization: ""
+role: Brute
+level: 1
+type: statblock
+---
+
+> 🏹 **Accursed Bite ([Signature Ability](signature-ability.md))**
+>
+> | **Magic** |        **Main action** |
+> |-----------|-----------------------:|
+> | **📏 Melee 1** | **🎯 One creature** |
+>
+> **Power Roll + 3:**
+>
+> - **≤11:** 5 damage
+> - **12-16:** 8 damage
+> - **17+:** 11 damage
+>
+> **2 [Malice](malice.md):** The target is weakened.
+>
+> **[End Effect](end-effect.md):** The effect ends.
+
+> ☠️ **Final Judgment ([Villain Action](villain-action.md) 3)**
+>
+> | **Magic** |   **-** |
+> |-----------|--------:|
+> | **📏 5 burst** | **🎯 Each enemy** |
+>
+> **Effect:** Massive damage.
+
+> ⭐️ **[Solo](solo.md) Monster**
+>
+> This creature acts alone.
+
+> ⭐️ **[End Effect](end-effect.md)**
+>
+> At the end of each turn, the creature can take damage to end an effect.
+`
+
+func TestBuildStatblockIsland_ResolvesLinksInAllFields(t *testing.T) {
+	fm, body := splitFrontmatter(linkedFieldsPage)
+	isl := buildStatblockIsland(fm, body)
+
+	// ── name parenthetical: Signature → cost "Signature", name cleaned ──
+	bite := featureByName(isl.Features, "Accursed Bite")
+	if bite == nil {
+		t.Fatal("Accursed Bite missing (linked signature paren broke title split)")
+	}
+	if bite.Cost != "Signature" {
+		t.Errorf("bite cost = %q, want Signature", bite.Cost)
+	}
+	// ── enhancement cost: "2 [Malice](…)" link resolved, not stripped/raw ──
+	if len(bite.Enhancements) != 1 {
+		t.Fatalf("bite enhancements = %+v", bite.Enhancements)
+	}
+	if want := "2 [Malice](../malice/)"; bite.Enhancements[0].Cost != want {
+		t.Errorf("enhancement cost = %q, want %q", bite.Enhancements[0].Cost, want)
+	}
+	// ── section label: "[End Effect](…)" link resolved ──
+	var endEff *sbSection
+	for i := range bite.Sections {
+		if strings.Contains(bite.Sections[i].Label, "End Effect") {
+			endEff = &bite.Sections[i]
+		}
+	}
+	if endEff == nil {
+		t.Fatalf("End Effect section missing; sections = %+v", bite.Sections)
+	}
+	if want := "[End Effect](../end-effect/)"; endEff.Label != want {
+		t.Errorf("section label = %q, want %q", endEff.Label, want)
+	}
+
+	// ── villain action: linked "[Villain Action](…) 3" still classifies villain,
+	//    cost keeps the resolved link, name cleaned ──
+	vj := featureByName(isl.Features, "Final Judgment")
+	if vj == nil {
+		t.Fatal("Final Judgment missing (linked villain paren broke title split)")
+	}
+	if vj.Kind != "villain" || vj.Action != "villain" {
+		t.Errorf("villain kind/action = %q/%q", vj.Kind, vj.Action)
+	}
+	if want := "[Villain Action](../villain-action/) 3"; vj.Cost != want {
+		t.Errorf("villain cost = %q, want %q", vj.Cost, want)
+	}
+
+	// ── feature name that is itself a link (no paren) is resolved ──
+	solo := featureByName(isl.Features, "[Solo](../solo/) Monster")
+	if solo == nil {
+		t.Fatalf("link-named trait missing; names = %v", featureNames(isl.Features))
+	}
+
+	// ── feature whose ENTIRE title is a link: the link's own "(url)" must not be
+	//    mistaken for a trailing cost parenthetical (would yield name "[End Effect]"
+	//    + a bare-URL cost). Name stays the resolved link; no cost. ──
+	ee := featureByName(isl.Features, "[End Effect](../end-effect/)")
+	if ee == nil {
+		t.Fatalf("link-only-titled trait missing; names = %v", featureNames(isl.Features))
+	}
+	if ee.Cost != "" {
+		t.Errorf("link-only title produced spurious cost = %q", ee.Cost)
+	}
+}
+
+func featureNames(feats []sbFeature) []string {
+	var out []string
+	for _, f := range feats {
+		out = append(out, f.Name)
+	}
+	return out
+}

@@ -91,8 +91,8 @@ type sbIsland struct {
 var (
 	// "EMOJI **Title**" — leading icon is a non-space, non-letter, non-* char.
 	sbTitleRe = regexp.MustCompile(`^([^\sA-Za-z*][^*]*?)\s*\*\*(.+?)\*\*\s*$`)
-	// trailing "(…)" on a title → Signature Ability / cost / Villain Action N.
-	sbParenRe = regexp.MustCompile(`^(.*?)\s*\(([^)]+)\)\s*$`)
+	// (trailing "(…)" on a title is split by splitTrailingParen, not a regex, so
+	// a link's own nested "(…)" doesn't break the match.)
 	// "Name Nd10 + <char>" — summoner signatures encode the roll in the title.
 	sbTitleDiceRe = regexp.MustCompile(`^(.*?)\s+(\d+d\d+\s*\+\s*\S.*?)$`)
 	sbBareTierRe  = regexp.MustCompile(`^\d`)
@@ -272,25 +272,31 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 		return sbFeature{}, false
 	}
 
-	f := sbFeature{Name: strings.TrimSpace(tm[2])}
+	var f sbFeature
+	name := strings.TrimSpace(tm[2])
 
-	// Parenthetical → Signature / cost / Villain Action N.
-	if pm := sbParenRe.FindStringSubmatch(f.Name); pm != nil {
-		f.Name = strings.TrimSpace(pm[1])
-		paren := strings.TrimSpace(pm[2])
-		if strings.EqualFold(paren, "Signature Ability") {
+	// Trailing "(…)" → Signature / cost / Villain Action N. A balanced-paren
+	// split so a link's own "(…)" inside the group — e.g. "(2 [Malice](url))"
+	// or "([Villain Action](url) 3)" — doesn't truncate it.
+	// Match on the link-stripped text but keep the resolved link for display.
+	if base, inner, ok := splitTrailingParen(name); ok {
+		name = base
+		inner = strings.TrimSpace(inner)
+		if strings.EqualFold(linkText(inner), "Signature Ability") {
 			f.Cost = "Signature"
 		} else {
-			f.Cost = paren
+			f.Cost = resolveSbLinks(inner)
 		}
 	}
 
 	// Dice-in-title power roll (summoner signatures) → formula + clean name.
 	diceFormula := ""
-	if dm := sbTitleDiceRe.FindStringSubmatch(f.Name); dm != nil {
-		f.Name = strings.TrimSpace(dm[1])
+	if dm := sbTitleDiceRe.FindStringSubmatch(name); dm != nil {
+		name = strings.TrimSpace(dm[1])
 		diceFormula = linkText(strings.TrimSpace(dm[2]))
 	}
+	// The base name may itself be a link (e.g. "[Solo](url) Monster").
+	f.Name = resolveSbLinks(name)
 
 	var (
 		tableSeen bool
@@ -355,10 +361,12 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 		if m := labelRe.FindStringSubmatch(tp); m != nil {
 			label := strings.TrimSpace(m[1])
 			text := collapseLines(m[2])
-			if sbCostLabelRe.MatchString(label) {
-				f.Enhancements = append(f.Enhancements, sbEnh{Cost: label, Text: resolveSbLinks(text)})
+			// Classify on the link-stripped label ("2 [Malice](url)" → "2 Malice")
+			// but keep the resolved link on the stored cost/label for display.
+			if sbCostLabelRe.MatchString(linkText(label)) {
+				f.Enhancements = append(f.Enhancements, sbEnh{Cost: resolveSbLinks(label), Text: resolveSbLinks(text)})
 			} else {
-				f.Sections = append(f.Sections, sbSection{Label: label, Text: resolveSbLinks(text)})
+				f.Sections = append(f.Sections, sbSection{Label: resolveSbLinks(label), Text: resolveSbLinks(text)})
 			}
 			continue
 		}
@@ -400,6 +408,10 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 // "Villain Action N" cost makes it a villain feature; otherwise the usage word
 // picks the action accent (main is the default).
 func sbActionKind(usage, cost string) (action, kind string) {
+	// Strip any links first — usage/cost may now carry a resolved link
+	// ("[Villain Action](url) 3") that would defeat the prefix/contains checks.
+	cost = linkText(cost)
+	usage = linkText(usage)
 	if strings.HasPrefix(strings.ToLower(strings.TrimSpace(cost)), "villain action") {
 		return "villain", "villain"
 	}
@@ -416,9 +428,38 @@ func sbActionKind(usage, cost string) (action, kind string) {
 	}
 }
 
-// linkText strips markdown links to their display text ("[R](scc:…)" → "R");
-// used only for the cosmetic dice formula.
+// linkText strips markdown links to their display text ("[R](scc:…)" → "R").
 func linkText(s string) string { return mdLinkRe.ReplaceAllString(s, "$1") }
+
+// splitTrailingParen splits "Name (inner)" into the name and the inner content
+// of the LAST balanced top-level "(…)" group, matched by scanning from the end
+// with depth counting so a markdown link's own "(…)" nested inside the group
+// (e.g. "(2 [Malice](url))") doesn't truncate the match. ok is false when there
+// is no balanced trailing group.
+func splitTrailingParen(s string) (base, inner string, ok bool) {
+	s = strings.TrimRight(s, " ")
+	if !strings.HasSuffix(s, ")") {
+		return s, "", false
+	}
+	depth := 0
+	for i := len(s) - 1; i >= 0; i-- {
+		switch s[i] {
+		case ')':
+			depth++
+		case '(':
+			depth--
+			if depth == 0 {
+				// A "(" right after "]" is a markdown link target, not a wrapping
+				// parenthetical — e.g. a title that is itself a link "[End Effect](url)".
+				if i > 0 && s[i-1] == ']' {
+					return s, "", false
+				}
+				return strings.TrimRight(s[:i], " "), s[i+1 : len(s)-1], true
+			}
+		}
+	}
+	return s, "", false
+}
 
 // resolveSbLinks rewrites each markdown link's TARGET in a feature text field
 // to the directory-URL form MkDocs serves, keeping the [text](href) markdown so
