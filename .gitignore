@@ -1,6 +1,10 @@
 # Test artifacts
 coverage.out
+cover*.out
 *.test
+
+# Python virtualenv (pdf-extract tooling)
+.venv/
 
 # IDE
 .idea/
