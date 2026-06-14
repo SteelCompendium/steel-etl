@@ -763,3 +763,159 @@ func TestFeatureblockCompanionAdvancement(t *testing.T) {
 		t.Errorf("feat[1] level = %v, want 10", feats[1]["level"])
 	}
 }
+
+// Task 1: fixture statblock → monster.fixture.<element>.featureblock
+// Context mirrors the real source: H5 monster-group with domain=fixture/category=demon
+// wraps an H7 statblock (capped to level 6 by the parser).
+func TestStatblockFixtureFeatureblock(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.summoner.v1"})
+	// H5 monster-group sets fixture domain + demon category (level 5)
+	ctx.Push(5, context.Metadata{"type": "monster-group", "domain": "fixture", "category": "demon"})
+
+	// The boil body: italic role, 2-col stamina/size grid, two base features
+	body := `*Hazard Support*
+
+| **Stamina:** 20 + your level | **Size:** 2 |
+|------------------------------|------------:|
+
+> ⭐️ **Hunger Thrush**
+>
+> Each enemy that starts their turn within 3 squares of the boil is taunted (EoT).
+
+> ⭐️ **Oh, It Pops**
+>
+> When the boil is destroyed, each enemy within 3 squares takes acid damage.`
+
+	section := &parser.Section{
+		Heading:      "The Boil",
+		HeadingLevel: 6, // H7 capped to 6
+		Annotation:   map[string]string{"type": "statblock"},
+		BodySource:   body,
+	}
+
+	got, err := (&StatblockParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+
+	// Must classify as monster.fixture.demon.featureblock/the-boil
+	code := scc.Classify("mcdm.summoner.v1", got.TypePath, got.ItemID)
+	want := "mcdm.summoner.v1/monster.fixture.demon.featureblock/the-boil"
+	if code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+
+	// statblock_kind must not be emitted
+	if _, ok := got.Frontmatter["statblock_kind"]; ok {
+		t.Errorf("statblock_kind should not be present for fixture featureblock")
+	}
+
+	// stats[] must contain Stamina and Size
+	stats, ok := got.Frontmatter["stats"].([]map[string]any)
+	if !ok || len(stats) == 0 {
+		t.Fatalf("stats = %v, want [{name:Stamina,...},{name:Size,...}]", got.Frontmatter["stats"])
+	}
+	foundStamina, foundSize := false, false
+	for _, s := range stats {
+		switch s["name"] {
+		case "Stamina":
+			foundStamina = true
+		case "Size":
+			foundSize = true
+		}
+	}
+	if !foundStamina {
+		t.Error("stats[] missing Stamina entry")
+	}
+	if !foundSize {
+		t.Error("stats[] missing Size entry")
+	}
+
+	// features[] must contain the base (Level-0) features
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) == 0 {
+		t.Fatalf("features = %v, want at least one base feature", got.Frontmatter["features"])
+	}
+	foundBase := false
+	for _, f := range feats {
+		if f["name"] == "Hunger Thrush" {
+			foundBase = true
+		}
+	}
+	if !foundBase {
+		t.Error("features[] missing base feature 'Hunger Thrush'")
+	}
+}
+
+// Task 3: fixture advancement-features featureblock
+// The sibling section (post source-split) carries Level-5/9 advancement features.
+func TestFeatureblockFixtureAdvancement(t *testing.T) {
+	ctx := context.NewContextStack(context.Metadata{"book": "mcdm.summoner.v1"})
+	// H5 monster-group sets fixture domain + demon category (level 5)
+	ctx.Push(5, context.Metadata{"type": "monster-group", "domain": "fixture", "category": "demon"})
+
+	body := `> **Level 5 Fixture Advancement Feature**
+>
+> ⭐️ **Soul Rancor**
+>
+> You gain a surge the first time in a round that your demon minions deal 3 or more damage.
+
+> **Level 9 Fixture Advancement Feature**
+>
+> ⭐️ **Size Increase**
+>
+> The boil is now size 3.
+>
+> ⭐️ **Fester Field**
+>
+> Each non-abyssal enemy that starts their turn within 3 squares takes 5 corruption damage.`
+
+	section := &parser.Section{
+		Heading:      "The Boil Advancement Features",
+		HeadingLevel: 6, // H7 capped to 6, sibling of the base statblock
+		Annotation:   map[string]string{"type": "featureblock", "id": "the-boil"},
+		BodySource:   body,
+	}
+
+	got, err := (&FeatureblockParser{}).Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("Parse: %v", err)
+	}
+
+	// Must classify as monster.fixture.demon.advancement-features/the-boil
+	code := scc.Classify("mcdm.summoner.v1", got.TypePath, got.ItemID)
+	want := "mcdm.summoner.v1/monster.fixture.demon.advancement-features/the-boil"
+	if code != want {
+		t.Errorf("code = %q, want %q", code, want)
+	}
+
+	if got.Frontmatter["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", got.Frontmatter["type"])
+	}
+
+	// features[] must carry Level-5 and Level-9 features
+	feats, ok := got.Frontmatter["features"].([]map[string]any)
+	if !ok || len(feats) == 0 {
+		t.Fatalf("features = %v, want advancement features", got.Frontmatter["features"])
+	}
+
+	foundLevel5, foundLevel9 := false, false
+	for _, f := range feats {
+		switch f["level"] {
+		case 5:
+			foundLevel5 = true
+		case 9:
+			foundLevel9 = true
+		}
+	}
+	if !foundLevel5 {
+		t.Error("features[] missing Level-5 advancement feature")
+	}
+	if !foundLevel9 {
+		t.Error("features[] missing Level-9 advancement feature")
+	}
+}

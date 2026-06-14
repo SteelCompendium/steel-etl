@@ -120,14 +120,30 @@ func TestStatblockParser_Fixture(t *testing.T) {
 		t.Fatal(err)
 	}
 	fm := got.Frontmatter
-	if fm["statblock_kind"] != "fixture" {
-		t.Errorf("statblock_kind = %v, want fixture", fm["statblock_kind"])
+
+	// Plan 5c: fixtures are now featureblocks, not statblocks.
+	if fm["type"] != "featureblock" {
+		t.Errorf("type = %v, want featureblock", fm["type"])
 	}
-	if fm["stamina"] != "20 + your level" {
-		t.Errorf("stamina = %v", fm["stamina"])
+	if _, ok := fm["statblock_kind"]; ok {
+		t.Errorf("statblock_kind should be absent for fixture featureblocks")
 	}
-	if fm["size"] != "2" {
-		t.Errorf("size = %v", fm["size"])
+	// stamina/size are promoted into stats[]; top-level keys removed.
+	if _, ok := fm["stamina"]; ok {
+		t.Errorf("stamina should be absent (moved to stats[])")
+	}
+	if _, ok := fm["size"]; ok {
+		t.Errorf("size should be absent (moved to stats[])")
+	}
+	stats, ok := fm["stats"].([]map[string]any)
+	if !ok || len(stats) != 2 {
+		t.Fatalf("stats = %v, want [{Stamina,...},{Size,...}]", fm["stats"])
+	}
+	if stats[0]["name"] != "Stamina" || stats[0]["value"] != "20 + your level" {
+		t.Errorf("stats[0] = %v", stats[0])
+	}
+	if stats[1]["name"] != "Size" || stats[1]["value"] != "2" {
+		t.Errorf("stats[1] = %v", stats[1])
 	}
 	if fm["terrain_type"] != "Hazard" {
 		t.Errorf("terrain_type = %v", fm["terrain_type"])
@@ -138,7 +154,8 @@ func TestStatblockParser_Fixture(t *testing.T) {
 	if kw, ok := fm["keywords"]; ok {
 		t.Errorf("keywords should be absent for fixtures, got %v", kw)
 	}
-	if strings.Join(got.TypePath, "/") != "fixture/demon/statblock" {
+	// Plan 5c TypePath: monster.fixture.demon.featureblock
+	if strings.Join(got.TypePath, "/") != "monster/fixture/demon/featureblock" {
 		t.Errorf("TypePath = %v", got.TypePath)
 	}
 }

@@ -129,8 +129,24 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 	domain, category, subcategory := statblockDomain(ctx, section.HeadingLevel)
 
 	if domain == "fixture" {
-		fm["statblock_kind"] = "fixture"
+		// Fixture statblocks become featureblock entities in the
+		// monster.fixture.<element>.featureblock family (Plan 5c).
+		fm["type"] = "featureblock"
+		delete(fm, "statblock_kind")
+		// Parse role/terrain_type and clear spurious keywords.
 		applyFixtureGrid(fm, body)
+		// Build stats[] from the 2-col grid (Stamina/Size).
+		fm["stats"] = fixtureStats(fm)
+		// Features: base (Level-0) features from blockquotes.
+		if feats := ParseRichFeatures(body); len(feats) > 0 {
+			fm["features"] = RichFeatureMaps(feats)
+		}
+		return &ParsedContent{
+			Frontmatter: fm,
+			Body:        body,
+			TypePath:    compactPath("monster", "fixture", category, "featureblock"),
+			ItemID:      id,
+		}, nil
 	}
 
 	typePath := compactPath(domain, category, subcategory, "statblock")
@@ -141,6 +157,22 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 		TypePath:    typePath,
 		ItemID:      id,
 	}, nil
+}
+
+// fixtureStats builds the stats[] list from frontmatter fields already populated
+// by applyFixtureGrid (stamina and size). The list preserves Stamina-first order
+// and omits any absent fields.
+func fixtureStats(fm map[string]any) []map[string]any {
+	var stats []map[string]any
+	if v, ok := fm["stamina"].(string); ok && v != "" {
+		stats = append(stats, map[string]any{"name": "Stamina", "value": v})
+		delete(fm, "stamina")
+	}
+	if v, ok := fm["size"].(string); ok && v != "" {
+		stats = append(stats, map[string]any{"name": "Size", "value": v})
+		delete(fm, "size")
+	}
+	return stats
 }
 
 // MonsterParser handles @type: monster sections — a monster group (e.g.
@@ -214,6 +246,21 @@ func (p *FeatureblockParser) Parse(ctx *context.ContextStack, section *parser.Se
 			Body:        body,
 			TypePath:    compactPath("monster", "companion", classID, "advancement-features"),
 			ItemID:      companionID,
+		}, nil
+	}
+
+	// Fixture advancement-features (summoner). When the enclosing monster-group
+	// has domain=fixture, this sibling featureblock carries the Level-5/9
+	// advancement features for the fixture entity (Plan 5c).
+	if domain, category, _ := statblockDomain(ctx, section.HeadingLevel); domain == "fixture" {
+		if feats := ParseRichFeatures(body); len(feats) > 0 {
+			fm["features"] = RichFeatureMaps(feats)
+		}
+		return &ParsedContent{
+			Frontmatter: fm,
+			Body:        body,
+			TypePath:    compactPath("monster", "fixture", category, "advancement-features"),
+			ItemID:      id,
 		}, nil
 	}
 
