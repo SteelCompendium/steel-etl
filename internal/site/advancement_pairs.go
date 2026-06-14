@@ -30,7 +30,10 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 			bases = append(bases, f)
 		}
 	}
-	if len(advByBase) == 0 {
+	// Stray subdirs mean this isn't a pure flattened pair dir — fall through so
+	// the other builders (which render folder cards) can handle it. In practice
+	// flattenAdvancementFeaturesPath leaves these dirs subdir-free.
+	if len(advByBase) == 0 || len(subdirs) > 0 {
 		return "", false
 	}
 	sort.Slice(bases, func(i, j int) bool { return naturalLess(bases[i], bases[j]) })

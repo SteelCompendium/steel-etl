@@ -44,3 +44,36 @@ func TestBuildAdvancementPairContent_NoPairs(t *testing.T) {
 		t.Error("expected ok=false when no advancement-features leaves are present")
 	}
 }
+
+func TestBuildAdvancementPairContent_Fixture(t *testing.T) {
+	dir := t.TempDir()
+	write := func(name, fm string) {
+		if err := os.WriteFile(filepath.Join(dir, name), []byte("---\n"+fm+"\n---\n\nbody"), 0644); err != nil {
+			t.Fatal(err)
+		}
+	}
+	write("the-boil.md", "name: The Boil\ntype: featureblock")
+	write("the-boil-advancement-features.md", "name: The Boil Advancement Features\ntype: featureblock")
+
+	files := []string{"the-boil.md", "the-boil-advancement-features.md"}
+	out, ok := buildAdvancementPairContent("monster/fixture/demon", "demon", files, nil)
+	if !ok {
+		t.Fatal("expected ok=true for a fixture dir with advancement pairs")
+	}
+	if !strings.Contains(out, ">Fixture<") {
+		t.Errorf("expected Fixture eyebrow for a fixture dir:\n%s", out)
+	}
+	base := strings.Index(out, `href="the-boil/"`)
+	adv := strings.Index(out, `href="the-boil-advancement-features/"`)
+	if base < 0 || adv < 0 || base > adv {
+		t.Errorf("expected base fixture card before its advancement card; base=%d adv=%d", base, adv)
+	}
+}
+
+func TestBuildAdvancementPairContent_SubdirsFallThrough(t *testing.T) {
+	// A dir with advancement pairs AND a stray subdir should fall through (ok=false).
+	if _, ok := buildAdvancementPairContent("monster/fixture/demon", "demon",
+		[]string{"the-boil.md", "the-boil-advancement-features.md"}, []string{"extra"}); ok {
+		t.Error("expected ok=false when subdirs are present")
+	}
+}
