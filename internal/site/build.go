@@ -219,6 +219,8 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		}
 		// Collapse the redundant statblock/ folder out of the site URL (code≠path).
 		destRel = hoistStatblockPath(destRel)
+		// Flatten advancement-features/<id> beside its base entity (code≠path).
+		destRel = flattenAdvancementFeaturesPath(destRel)
 		destPath := filepath.Join(sectionDir, destRel)
 
 		if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {
@@ -998,6 +1000,7 @@ func rewriteSectionLinks(content, srcRelPath, destRelPath, sectionName, srcBookF
 				}
 			}
 			relTarget = hoistStatblockPath(relTarget)
+			relTarget = flattenAdvancementFeaturesPath(relTarget)
 			targetFull = filepath.ToSlash(filepath.Join(targetSection, relTarget))
 		}
 		newRel, err := filepath.Rel(destDir, targetFull)

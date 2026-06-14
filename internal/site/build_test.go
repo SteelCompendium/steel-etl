@@ -1359,6 +1359,48 @@ func TestBuild_PrintingStamps(t *testing.T) {
 	}
 }
 
+func TestBuild_FlattensAdvancementFeatures(t *testing.T) {
+	srcDir := t.TempDir()
+	docsDir := filepath.Join(t.TempDir(), "docs")
+	os.MkdirAll(docsDir, 0755)
+
+	files := map[string]string{
+		"monster/companion/beastheart/statblock/wolf.md":            "---\nname: Wolf\ntype: feature-group\n---\n\nWolf statblock.",
+		"monster/companion/beastheart/advancement-features/wolf.md": "---\nname: Wolf Advancement Features\ntype: feature-group\n---\n\nSee [the wolf](../statblock/wolf.md).",
+	}
+	for rel, content := range files {
+		path := filepath.Join(srcDir, rel)
+		os.MkdirAll(filepath.Dir(path), 0755)
+		os.WriteFile(path, []byte(content), 0644)
+	}
+
+	cfg := &Config{
+		SourceDir: srcDir,
+		DocsDir:   docsDir,
+		Sections:  []SectionConfig{{Name: "Browse", Include: []string{"monster/"}}},
+	}
+
+	result, err := Build(cfg)
+	if err != nil {
+		t.Fatalf("Build failed: %v", err)
+	}
+	for _, e := range result.Errors {
+		t.Errorf("Error: %s", e)
+	}
+
+	// Advancement page is flattened to a sibling of the (hoisted) base page.
+	checkExists(t, docsDir, "Browse/monster/companion/beastheart/wolf-advancement-features.md")
+	checkNotExists(t, docsDir, "Browse/monster/companion/beastheart/advancement-features/wolf.md")
+	// Base page keeps its hoisted location.
+	checkExists(t, docsDir, "Browse/monster/companion/beastheart/wolf.md")
+
+	// The link from the advancement page resolves to the hoisted base sibling.
+	data, _ := os.ReadFile(filepath.Join(docsDir, "Browse/monster/companion/beastheart/wolf-advancement-features.md"))
+	if !strings.Contains(string(data), "(wolf.md)") {
+		t.Errorf("expected link rewritten to sibling (wolf.md), got:\n%s", data)
+	}
+}
+
 func TestFlattenAdvancementFeaturesPath(t *testing.T) {
 	cases := []struct {
 		in   string
