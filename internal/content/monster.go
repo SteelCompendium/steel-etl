@@ -132,7 +132,6 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 		// Fixture statblocks become featureblock entities in the
 		// monster.fixture.<element>.featureblock family (Plan 5c).
 		fm["type"] = "featureblock"
-		delete(fm, "statblock_kind")
 		// Parse role/terrain_type and clear spurious keywords.
 		applyFixtureGrid(fm, body)
 		// Build stats[] from the 2-col grid (Stamina/Size).

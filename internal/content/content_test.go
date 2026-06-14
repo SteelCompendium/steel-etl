@@ -903,19 +903,21 @@ func TestFeatureblockFixtureAdvancement(t *testing.T) {
 		t.Fatalf("features = %v, want advancement features", got.Frontmatter["features"])
 	}
 
-	foundLevel5, foundLevel9 := false, false
+	// Assert specific features carry the correct level (guards the
+	// ParseRichFeatures level state-machine against misattribution).
+	levelByName := map[string]any{}
 	for _, f := range feats {
-		switch f["level"] {
-		case 5:
-			foundLevel5 = true
-		case 9:
-			foundLevel9 = true
+		if name, ok := f["name"].(string); ok {
+			levelByName[name] = f["level"]
 		}
 	}
-	if !foundLevel5 {
-		t.Error("features[] missing Level-5 advancement feature")
-	}
-	if !foundLevel9 {
-		t.Error("features[] missing Level-9 advancement feature")
+	for name, wantLevel := range map[string]int{
+		"Soul Rancor":   5,
+		"Size Increase": 9,
+		"Fester Field":  9,
+	} {
+		if levelByName[name] != wantLevel {
+			t.Errorf("feature %q level = %v, want %d", name, levelByName[name], wantLevel)
+		}
 	}
 }
