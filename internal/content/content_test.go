@@ -590,7 +590,7 @@ func TestFeatureGroupCompanionClassified(t *testing.T) {
 
 	section := &parser.Section{
 		Heading:      "Wolf",
-		HeadingLevel: 3,
+		HeadingLevel: 4,
 		Annotation:   map[string]string{"type": "feature-group", "companion": "wolf", "level": "1"},
 	}
 	parsed, err := (&FeatureGroupParser{}).Parse(ctx, section)
@@ -598,7 +598,7 @@ func TestFeatureGroupCompanionClassified(t *testing.T) {
 		t.Fatalf("parse: %v", err)
 	}
 	got := scc.Classify("mcdm.beastheart.v1", parsed.TypePath, parsed.ItemID)
-	want := "mcdm.beastheart.v1/feature-group.companion/wolf"
+	want := "mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf"
 	if got != want {
 		t.Errorf("got %q, want %q", got, want)
 	}
