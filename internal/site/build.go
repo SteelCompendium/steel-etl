@@ -562,6 +562,33 @@ func hoistStatblockPath(relPath string) string {
 	return strings.Join(out, "/")
 }
 
+// flattenAdvancementFeaturesPath collapses a non-leaf "advancement-features"
+// folder in the bestiary tree, folding its name into the leaf filename
+// (<id>.md → <id>-advancement-features.md) so the page sits beside its base
+// entity instead of in an advancement-features/ sub-folder. Used by beastheart
+// companions and summoner fixtures. Like hoistStatblockPath this is a deliberate
+// code≠path divergence: the SCC CODE keeps its `.advancement-features` segment;
+// only the Browse URL/sidebar changes. The slug deliberately echoes the SCC
+// segment so the URL keeps a breadcrumb back to the code. Non-matching paths
+// (no advancement-features segment, or outside a bestiary type root) are
+// returned unchanged.
+func flattenAdvancementFeaturesPath(relPath string) string {
+	rel := filepath.ToSlash(relPath)
+	parts := strings.Split(rel, "/")
+	if len(parts) < 3 || !bestiaryGroupParents[parts[0]] {
+		return relPath
+	}
+	for i, p := range parts {
+		if i < len(parts)-1 && p == "advancement-features" {
+			leaf := parts[len(parts)-1] // always <id>.md (the segment's only child)
+			id := strings.TrimSuffix(leaf, ".md")
+			out := append(parts[:i:i], id+"-advancement-features.md")
+			return strings.Join(out, "/")
+		}
+	}
+	return relPath
+}
+
 // mergeGroupLanding folds a relocated group-landing page (placed at dir/index.md
 // by buildSection, carrying scc frontmatter + lore) into the generated index
 // `generated` (card grid for skills, browse list for monsters). It preserves the

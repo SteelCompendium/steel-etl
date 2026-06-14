@@ -1358,3 +1358,30 @@ func TestBuild_PrintingStamps(t *testing.T) {
 		t.Errorf("page body was truncated:\n%s", got)
 	}
 }
+
+func TestFlattenAdvancementFeaturesPath(t *testing.T) {
+	cases := []struct {
+		in   string
+		want string
+	}{
+		// companion advancement page → sibling of its base species page
+		{"monster/companion/beastheart/advancement-features/wolf.md",
+			"monster/companion/beastheart/wolf-advancement-features.md"},
+		// fixture advancement page → sibling of its base fixture page
+		{"monster/fixture/demon/advancement-features/the-boil.md",
+			"monster/fixture/demon/the-boil-advancement-features.md"},
+		// base companion page is untouched
+		{"monster/companion/beastheart/wolf.md",
+			"monster/companion/beastheart/wolf.md"},
+		// non-bestiary path untouched
+		{"feature/ability/fury/level-1/gouge.md",
+			"feature/ability/fury/level-1/gouge.md"},
+		// no advancement-features segment → unchanged
+		{"monster/goblins/cutter.md", "monster/goblins/cutter.md"},
+	}
+	for _, c := range cases {
+		if got := flattenAdvancementFeaturesPath(c.in); got != c.want {
+			t.Errorf("flattenAdvancementFeaturesPath(%q) = %q, want %q", c.in, got, c.want)
+		}
+	}
+}
