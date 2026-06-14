@@ -1,0 +1,130 @@
+{
+  "id": "link-test-monster",
+  "name": "Link Test Monster",
+  "ancestry": "",
+  "level": "1",
+  "role": "Brute",
+  "roleKey": "brute",
+  "ev": "",
+  "defenses": [
+    {
+      "l": "Size",
+      "v": "—"
+    },
+    {
+      "l": "Speed",
+      "v": "—"
+    },
+    {
+      "l": "Stamina",
+      "v": "—"
+    },
+    {
+      "l": "Stability",
+      "v": "—"
+    },
+    {
+      "l": "Free Strike",
+      "v": "—"
+    }
+  ],
+  "meta": {
+    "immunity": "—",
+    "weakness": "—",
+    "movement": "—",
+    "captain": {
+      "label": "With Captain",
+      "value": "—"
+    }
+  },
+  "characteristics": [
+    {
+      "l": "Might",
+      "k": "M",
+      "v": "—"
+    },
+    {
+      "l": "Agility",
+      "k": "A",
+      "v": "—"
+    },
+    {
+      "l": "Reason",
+      "k": "R",
+      "v": "—"
+    },
+    {
+      "l": "Intuition",
+      "k": "I",
+      "v": "—"
+    },
+    {
+      "l": "Presence",
+      "k": "P",
+      "v": "—"
+    }
+  ],
+  "features": [
+    {
+      "kind": "ability",
+      "action": "main",
+      "name": "Accursed Bite",
+      "cost": "Signature",
+      "usage": "Main action",
+      "keywords": [
+        "Magic"
+      ],
+      "distance": "Melee 1",
+      "target": "One creature",
+      "powerRoll": {
+        "formula": "+ 3",
+        "tiers": {
+          "high": "11 damage",
+          "low": "5 damage",
+          "mid": "8 damage"
+        }
+      },
+      "sections": [
+        {
+          "label": "[End Effect](../end-effect/)",
+          "text": "The effect ends."
+        }
+      ],
+      "enhancements": [
+        {
+          "cost": "2 [Malice](../malice/)",
+          "text": "The target is weakened."
+        }
+      ]
+    },
+    {
+      "kind": "villain",
+      "action": "villain",
+      "name": "Final Judgment",
+      "cost": "[Villain Action](../villain-action/) 3",
+      "keywords": [
+        "Magic"
+      ],
+      "distance": "5 burst",
+      "target": "Each enemy",
+      "sections": [
+        {
+          "label": "Effect",
+          "text": "Massive damage."
+        }
+      ]
+    },
+    {
+      "kind": "passive",
+      "action": "passive",
+      "name": "[Solo](../solo/) Monster",
+      "body": "This creature acts alone."
+    },
+    {
+      "kind": "passive",
+      "action": "passive",
+      "name": "[End Effect](../end-effect/)",
+      "body": "At the end of each turn, the creature can take damage to end an effect."
+    }
+  ]
+}

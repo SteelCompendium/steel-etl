@@ -1,0 +1,89 @@
+{
+  "id": "bound-imp",
+  "name": "Bound Imp",
+  "ancestry": "Demon",
+  "level": "1",
+  "role": "Support",
+  "roleKey": "support",
+  "ev": "4",
+  "defenses": [
+    {
+      "l": "Size",
+      "v": "1T"
+    },
+    {
+      "l": "Speed",
+      "v": "5"
+    },
+    {
+      "l": "Stamina",
+      "v": "8"
+    },
+    {
+      "l": "Stability",
+      "v": "0"
+    },
+    {
+      "l": "Free Strike",
+      "v": "1"
+    }
+  ],
+  "meta": {
+    "immunity": "—",
+    "weakness": "—",
+    "movement": "—",
+    "captain": {
+      "label": "With Captain",
+      "value": "—"
+    }
+  },
+  "characteristics": [
+    {
+      "l": "Might",
+      "k": "M",
+      "v": "+0"
+    },
+    {
+      "l": "Agility",
+      "k": "A",
+      "v": "+2"
+    },
+    {
+      "l": "Reason",
+      "k": "R",
+      "v": "+1"
+    },
+    {
+      "l": "Intuition",
+      "k": "I",
+      "v": "+1"
+    },
+    {
+      "l": "Presence",
+      "k": "P",
+      "v": "+0"
+    }
+  ],
+  "features": [
+    {
+      "kind": "ability",
+      "action": "main",
+      "name": "Spirit Bolt",
+      "usage": "Main action",
+      "keywords": [
+        "Magic",
+        "Ranged"
+      ],
+      "distance": "Ranged 10",
+      "target": "One creature",
+      "powerRoll": {
+        "formula": "2d10 + R",
+        "tiers": {
+          "high": "21 damage; pushed 2",
+          "low": "11 damage",
+          "mid": "16 damage; pushed 1"
+        }
+      }
+    }
+  ]
+}
