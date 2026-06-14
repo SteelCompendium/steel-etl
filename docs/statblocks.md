@@ -89,6 +89,17 @@ labeled `sections`/`enhancements` for table-less features. `transformFeaturebloc
 (`internal/output/`) emits the SDK JSON/YAML straight from this frontmatter (no body
 re-parse).
 
+**Beastheart companion advancement-features** are a second `features[]` source. When a
+`@type: featureblock` section sits in companion context (a `##### <C> Advancement
+Features` block under a companion), `FeatureblockParser` takes a companion branch:
+classifies as `monster.companion.<class>.advancement-features/<species>` and embeds its
+**child** `@type:feature` sections (the Level-3/6/10 advancement features, which keep their
+own `feature.companion.<class>.<species>.level-N/<id>` codes) into `features[]` via
+`collectChildFeatures` — `{name, body, level}` per feature, render-only. Unlike malice
+blocks (features from body blockquotes via `ParseRichFeatures`), these come from child
+sub-sections, so the standalone card groups them into `.fb__band--adv` level tiers. Plan
+5b: `docs/superpowers/plans/2026-06-13-companion-advancement-featureblocks.md`.
+
 ### Featureblock site rendering (Plan 2)
 
 `internal/site/featureblock_page.go` turns `type: featureblock` and `type:
