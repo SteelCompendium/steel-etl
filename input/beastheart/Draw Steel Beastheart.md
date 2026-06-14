@@ -270,7 +270,7 @@ Continued in *Between Sun & Shadow*.
 <!-- @type: class | @id: beastheart -->
 ## Beastheart
 
-A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a [wolf](scc:mcdm.beastheart.v1/feature-group.companion/wolf), a [basilisk](scc:mcdm.beastheart.v1/feature-group.companion/basilisk), or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
+A beastheart never fights alone! You travel with a ferocious beast by your side—no trained pet, but an untamed creature such as a [wolf](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf), a [basilisk](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/basilisk), or even a young dragon. Bound to you by a primordial connection, your companion honors your wishes just as you are guided by their instincts. But beware! As battle rages on, your companion may succumb to a blood-soaked rampage, lashing out at enemies and friends alike.
 
 As a beastheart, you face the world's dangers alongside your wild companion. With your combined might, you rush into the thick of combat to challenge enemy champions or prowl around the outskirts to pick off vulnerable foes.
 
@@ -346,9 +346,9 @@ Choose a companion from the following options. (*Quick Build:* Wolf.)
 
 ##### Customizing Your Companion
 
-Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the [condor](scc:mcdm.beastheart.v1/feature-group.companion/condor) companion for an escaped Hawklord hawk, the [wolf](scc:mcdm.beastheart.v1/feature-group.companion/wolf) for a dog or jackal, or even the [boar](scc:mcdm.beastheart.v1/feature-group.companion/boar) for a particularly ornery stag or elk.
+Want a companion not listed here? You can often use one of these stat blocks to represent a similar beast. For instance, you could use the [condor](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/condor) companion for an escaped Hawklord hawk, the [wolf](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/wolf) for a dog or jackal, or even the [boar](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/boar) for a particularly ornery stag or elk.
 
-With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a [hellhound](scc:mcdm.beastheart.v1/feature-group.companion/hellhound) you travel with a white wolf that deals cold damage instead of fire damage; maybe your [elemental spark](scc:mcdm.beastheart.v1/feature-group.companion/elemental-spark) is an elemental ember that deals fire damage; or maybe your [panther](scc:mcdm.beastheart.v1/feature-group.companion/panther) is a shadow whose [Pounce](scc:mcdm.beastheart.v1/feature.ability.companion.panther.level-1/pounce) maneuver deals corruption or cold damage.
+With the Director's permission, you can also change the damage types of your companion's abilities to better match your vision. Perhaps instead of a [hellhound](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/hellhound) you travel with a white wolf that deals cold damage instead of fire damage; maybe your [elemental spark](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/elemental-spark) is an elemental ember that deals fire damage; or maybe your [panther](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther) is a shadow whose [Pounce](scc:mcdm.beastheart.v1/feature.ability.companion.beastheart.panther.level-1/pounce) maneuver deals corruption or cold damage.
 
 ### Companion Stat Blocks
 
@@ -370,7 +370,7 @@ With the Director's permission, you can also change the damage types of your com
 |---------------------------------------------|-----------------:|
 | **📏 Melee 1 or ranged 5**                  | **🎯 One enemy** |
 
-**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see [Stoned](scc:mcdm.beastheart.v1/feature.companion.basilisk.level-1/stoned)).
+**Effect:** The target takes corruption damage equal to 3 + the basilisk's Might score and is stoned (save ends) (see [Stoned](scc:mcdm.beastheart.v1/feature.companion.beastheart.basilisk.level-1/stoned)).
 
 **Spend 1 Ferocity:** While stoned this way, the target is also [slowed](scc:mcdm.heroes.v1/condition/slowed).
 
@@ -613,7 +613,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |                                                                  Companion, Dragon                                                                  |          -          |                             Level 1                             |          -          |            -             |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------:|:---------------------------------------------------------------:|:-------------------:|:------------------------:|
 |                                                                   **1M**<br>Size                                                                    |   **5**<br>Speed    |                     **= yours**<br>Stamina                      | **1**<br>Stability  | **1 + M**<br>Free Strike |
-| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
+| **Attuned damage type 3 (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.beastheart.drake.level-1/elementally-attuned))**<br>Immunity | **Fly**<br>Movement | **[Intimidate](scc:mcdm.heroes.v1/skill.interpersonal/intimidate)**<br>Skills |                     |                          |
 |                                                                   **+2**<br>Might                                                                   |  **+1**<br>Agility  |                        **−1**<br>Reason                         | **+2**<br>Intuition |    **+2**<br>Presence    |
 
 <!-- @type: ability | @subtype: signature | @id: drake-breath -->
@@ -625,7 +625,7 @@ The deinonychus's claws slash at creatures underfoot. When the deinonychus moves
 |-----------------------------|---------------------------------:|
 | **📏 1 or 2 cube within 1** | **🎯 Each creature in the area** |
 
-**Effect:** The target takes damage of the drake's attuned damage type (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.drake.level-1/elementally-attuned)) equal to the drake's Might score.
+**Effect:** The target takes damage of the drake's attuned damage type (see [Elementally Attuned](scc:mcdm.beastheart.v1/feature.companion.beastheart.drake.level-1/elementally-attuned)) equal to the drake's Might score.
 
 **Spend 1 or 2 Ferocity:** This ability affects a 3 cube (if you spend 1 ferocity) or a 4 cube (if you spend 2 ferocity) within 1.
 
@@ -1343,7 +1343,7 @@ Your companion can't use every consumable, but with your help, they can benefit 
 
 Your companion can't use trinkets that are designed to be worn by bipeds (such as cloaks, masks, and hats) or require words or gestures to activate. However, your companion can benefit from one necklace, pendant, collar, or other trinket with the Neck keyword that doesn't require any action to activate, such as a Necklace of the Bayou or one of the new magic trinkets presented in this document.
 
-You companion doesn't need to wear their trinket around their neck: a [condor](scc:mcdm.beastheart.v1/feature-group.companion/condor) might wear a necklace wrapped around a talon, and a gelatinous sphere might carry it suspended inside their body!
+You companion doesn't need to wear their trinket around their neck: a [condor](scc:mcdm.beastheart.v1/monster.companion.beastheart.statblock/condor) might wear a necklace wrapped around a talon, and a gelatinous sphere might carry it suspended inside their body!
 
 ###### Leveled Items
 
