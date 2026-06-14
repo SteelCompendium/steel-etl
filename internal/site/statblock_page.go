@@ -2,12 +2,11 @@ package site
 
 // High-Fantasy Steel STATBLOCK pages for the Steel Compendium MkDocs site.
 //
-// Where ability_cards.go emits a finished `.sc-ability` card directly, statblock
-// pages take the client-side-renderer path the design handoff chose: this file
-// replaces a `type: statblock` page body with a `<script class="sc-statblock-data">`
-// JSON island, which v2/docs/javascripts/steel-statblock.js mounts into the
-// `.sb-wrap` DOM styled by steel-statblock.css. The island shape mirrors the
-// handoff's statblock-data.js so the renderer is shared verbatim.
+// Where this file once emitted a JSON island for steel-statblock.js to mount,
+// it now parses a `type: statblock` page into the sbIsland model and hands it to
+// renderStatblockCard (statblock_card.go), which emits the finished .sb-wrap DOM
+// at build time — the featureblock_page.go model. This file owns the PARSE stage
+// (frontmatter + body blockquotes → sbIsland); statblock_card.go owns rendering.
 //
 // SITE-ONLY: runs inside `steel-etl site` against the generated md-linked pages;
 // the shared data repos are never touched. The structured stats come from
@@ -22,12 +21,12 @@ package site
 // still renders as its own page). Wiring it in is a follow-up.
 
 import (
-	"encoding/json"
 	"regexp"
 	"strings"
 )
 
-// ── island shape (matches statblock-data.js consumed by steel-statblock.js) ──
+// ── statblock model (the intermediate the parse stage builds; renderStatblockCard
+//    in statblock_card.go turns it into the .sb-wrap HTML at build time) ──
 type sbLV struct {
 	L string `json:"l"`
 	V string `json:"v"`
@@ -111,17 +110,18 @@ var knownRoleKeys = map[string]bool{
 }
 
 // buildStatblockIslandPage rewrites a `type: statblock` page body into the
-// sc-statblock-data JSON island. Returns (newData, true) for statblocks; (data,
-// false) otherwise so the caller writes the page unchanged. Frontmatter is
-// preserved verbatim; injectH1 (next in buildSection) prepends the "# Name"
-// MkDocs needs for title/nav (the CSS hides it once .sb-wrap mounts).
+// build-time .sb-wrap card (via renderStatblockCard). Returns (newData, true) for
+// statblocks; (data, false) otherwise so the caller writes the page unchanged.
+// Frontmatter is preserved verbatim; injectH1 (next in buildSection) prepends the
+// "# Name" MkDocs needs for title/nav (the CSS hides it when .sb-wrap is present).
+// (Name kept for its build.go/test call sites; it no longer emits a JSON island.)
 func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	fm, body := splitFrontmatter(string(data))
 	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "statblock" {
 		return data, false
 	}
 	// Fixtures are statblocks in `type` only; they render as Forged Band
-	// featureblock cards (buildFixturePage), not the creature JSON island.
+	// featureblock cards (buildFixturePage), not the creature .sb-wrap card.
 	if strings.TrimSpace(parseFrontmatterField(fm, "statblock_kind")) == "fixture" {
 		return data, false
 	}
@@ -131,23 +131,15 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	// Band card below the statblock (Plan 4). Non-retainer statblocks: base ==
 	// body, no groups, no-op.
 	base, advGroups := splitRetainerAdvancement(body)
-	js, err := json.Marshal(buildStatblockIsland(fm, base))
-	if err != nil {
-		return data, false
-	}
-	// Wrap the island in a .sc-statblock-mount container. Material's
-	// navigation.instant recreates inline <script>s and strips their attributes
-	// (class + type), so after a client-side nav the script is no longer findable
-	// by `script.sc-statblock-data` — but the container DIV's class survives.
-	// steel-statblock.js locates the mount, then reads the child <script> body.
-	// Same pattern as .sc-browse-mount / .sc-bestiary-mount. See
-	// v2/.repo-docs/decisions/2026-06-11-client-scripts-navigation-instant.md and
-	// .../2026-06-09-instant-nav-strips-script-attrs.md.
-	island := "<div class=\"sc-statblock-mount\">" +
-		"<script type=\"application/json\" class=\"sc-statblock-data\">\n" + string(js) + "\n</script>" +
-		"</div>\n"
+	// Build-time HTML card (the featureblock_page.go model): renderStatblockCard
+	// emits the same .sb-wrap DOM steel-statblock.js used to build client-side, so
+	// the card can later be embedded inline on any page. Contiguous (no blank
+	// lines) so md_in_html passes it through verbatim.
+	card := renderStatblockCard(buildStatblockIsland(fm, base))
+	// Retainer advancement abilities render as a Forged Band card below the
+	// statblock (Plan 4, renderRetainerAdvancement); "" for non-retainers.
 	adv := renderRetainerAdvancement(fm, advGroups)
-	return []byte("---\n" + fm + "\n---\n\n" + island + adv), true
+	return []byte("---\n" + fm + "\n---\n\n" + card + "\n" + adv), true
 }
 
 func buildStatblockIsland(fm, body string) sbIsland {
@@ -385,8 +377,8 @@ func parseStatblockIslandFeature(block string) (sbFeature, bool) {
 	f.Action, f.Kind = sbActionKind(usage, f.Cost)
 	if usage != "" && usage != "-" {
 		// Resolve any link in the usage cell the same way distance/target are
-		// (a few cells link "Triggered Action" etc.); steel-statblock.js renders
-		// usage with rich() so the [text](href) survives as a working <a>.
+		// (a few cells link "Triggered Action" etc.); richSb (statblock_card.go)
+		// turns the [text](href) into a working <a> at build time.
 		f.Usage = resolveSbLinks(usage)
 	}
 	if tiersSeen {
@@ -463,11 +455,10 @@ func splitTrailingParen(s string) (base, inner string, ok bool) {
 
 // resolveSbLinks rewrites each markdown link's TARGET in a feature text field
 // to the directory-URL form MkDocs serves, keeping the [text](href) markdown so
-// steel-statblock.js's rich() emits a working <a>. The island is raw JSON that
+// richSb (statblock_card.go) emits a working <a>. The card is raw HTML that
 // MkDocs never post-processes, so — exactly like the ability cards (cardHref) —
-// we resolve the ".md" + use_directory_urls depth here instead of shipping a
-// dead ".md" link client-side. (Feature text is link-swept; frontmatter is not,
-// so meta/ancestry need no resolution.)
+// we resolve the ".md" + use_directory_urls depth here. (Feature text is
+// link-swept; frontmatter is not, so meta/ancestry need no resolution.)
 func resolveSbLinks(s string) string {
 	return mdLinkRe.ReplaceAllStringFunc(s, func(m string) string {
 		sub := mdLinkRe.FindStringSubmatch(m)

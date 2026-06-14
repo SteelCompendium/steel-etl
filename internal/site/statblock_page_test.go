@@ -1,7 +1,6 @@
 package site
 
 import (
-	"encoding/json"
 	"strings"
 	"testing"
 )
@@ -220,33 +219,26 @@ func TestBuildStatblockIsland_DevilHighJudge(t *testing.T) {
 	}
 }
 
-func TestBuildStatblockIslandPage_EmitsIsland(t *testing.T) {
+func TestBuildStatblockIslandPage_EmitsCard(t *testing.T) {
 	out, ok := buildStatblockIslandPage([]byte(devilHighJudgePage))
 	if !ok {
 		t.Fatal("expected statblock page to be rewritten")
 	}
 	s := string(out)
-	// Island is wrapped in a .sc-statblock-mount container so the client can
-	// locate it after navigation.instant strips the <script>'s attributes.
-	if !strings.Contains(s, `<div class="sc-statblock-mount">`) {
-		t.Fatal("sc-statblock-mount container missing")
+	// Build-time .sb-wrap card, no JSON island.
+	if !strings.Contains(s, `<div class="sb-wrap" data-role="leader" data-creature="devil-high-judge">`) {
+		t.Fatal("sb-wrap card missing")
 	}
-	if !strings.Contains(s, `<script type="application/json" class="sc-statblock-data">`) {
-		t.Fatal("island script tag missing")
+	if strings.Contains(s, "sc-statblock-mount") || strings.Contains(s, "sc-statblock-data") {
+		t.Error("JSON island markup should be gone")
 	}
 	// Frontmatter preserved.
 	if !strings.HasPrefix(s, "---\n") || !strings.Contains(s, "type: statblock") {
 		t.Error("frontmatter not preserved")
 	}
-	// Island body is valid JSON.
-	start := strings.Index(s, ">\n") + 2
-	end := strings.LastIndex(s, "\n</script>")
-	var isl sbIsland
-	if err := json.Unmarshal([]byte(s[start:end]), &isl); err != nil {
-		t.Fatalf("island JSON invalid: %v", err)
-	}
-	if isl.Name != "Devil High Judge" {
-		t.Errorf("decoded name = %q", isl.Name)
+	// A representative rendered feature is present.
+	if !strings.Contains(s, "Infernal Decree") || !strings.Contains(s, `class="sb__features"`) {
+		t.Error("rendered features missing")
 	}
 
 	// Non-statblock pages pass through untouched.
