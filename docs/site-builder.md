@@ -180,3 +180,22 @@ the card grid). There is **no phantom `group/` folder card** (the relocation mea
 `<root>/group/` never exists in Browse). The `skill/` Browse root still renders
 `.sc-folder` group cards (`usesFolderIndex`) and each group dir a `.sc-card` skill grid
 (`buildCardsContent`).
+
+## Advancement-features flatten (companions / fixtures)
+
+`flattenAdvancementFeaturesPath` (`build.go`) collapses a non-leaf
+`advancement-features/` folder in the bestiary tree, folding its name into the leaf
+(`…/advancement-features/<id>.md` → `…/<id>-advancement-features.md`) so a
+beastheart-companion or summoner-fixture advancement page sits beside its base entity
+instead of in a sub-folder. Like `hoistStatblockPath` it is a deliberate **code≠path**
+divergence — the SCC code keeps its `.advancement-features` segment; only the Browse
+URL/sidebar changes (the `/scc/…advancement-features/<id>/` permalink stub still exists,
+now redirecting to the flattened page) — and it is applied in the **same two places**:
+the dest-path computation in `buildSection` (right after `hoistStatblockPath`) and the
+inbound-link mirror in `rewriteSectionLinks`. The flattened group dir is then rendered
+by `buildAdvancementPairContent` (`advancement_pairs.go`) as a 2-up
+`.sc-cards.sc-cards--pairs` grid pairing each base card (eyebrow "Companion"/`paw` or
+"Fixture"/`skull`) with its advancement card (eyebrow "Advancement Features", sharing the
+base's name), base-first; it is the **first** check in `buildIndexContent` so it
+intercepts these dirs before the bestiary group-landing / plain-list builders. Styled by
+`v2/docs/stylesheets/steel-redesign.css` (`.sc-cards--pairs`).
