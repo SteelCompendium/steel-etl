@@ -333,9 +333,21 @@ func synthAbilityFM(name string, signature bool) string {
 	return fm
 }
 
-// traitEyebrow is the source context line: "<Class> Trait" (small-caps),
-// optionally suffixed with the subclass when present (e.g. an order/domain).
-// The level lives in the right-hand tag, so it is not duplicated here.
+// featureNoun is the eyebrow noun for a card that renders in the recessed
+// .sc-trait niche. That visual is shared by real ancestry/monster traits and by
+// plain class features, but the LABEL must reflect the actual frontmatter type:
+// "Trait" only for type: trait (the narrowed taxonomy — ancestry + monster
+// passives), "Feature" for everything else (the plain feature umbrella).
+func featureNoun(featureType string) string {
+	if strings.TrimSpace(featureType) == "trait" {
+		return "Trait"
+	}
+	return "Feature"
+}
+
+// traitEyebrow is the source context line: "<Class> Feature" / "<Ancestry> Trait"
+// (small-caps), optionally suffixed with the subclass when present (e.g. an
+// order/domain). The level lives in the right-hand tag, so it is not duplicated here.
 func traitEyebrow(fm string) string {
 	source := ""
 	for _, key := range []string{"class", "ancestry", "kit"} {
@@ -344,7 +356,7 @@ func traitEyebrow(fm string) string {
 			break
 		}
 	}
-	label := strings.TrimSpace(source + " Trait")
+	label := strings.TrimSpace(source + " " + featureNoun(parseFrontmatterField(fm, "type")))
 	if sub := strings.TrimSpace(parseFrontmatterField(fm, "subclass")); sub != "" {
 		label += " · " + titleCase(strings.ReplaceAll(sub, "-", " "))
 	}

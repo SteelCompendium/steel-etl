@@ -142,13 +142,17 @@ for index-of-indexes nodes whose children are directories (`usesFolderIndex` sco
 this to feature/treasure/skill/rule + the bestiary roots
 monster/dynamic-terrain/retainer — bestiary GROUP dirs are excluded via
 `!isBestiaryGroupDir` so they reach the group-landing assembler; e.g. the `rule/`
-glossary landing's 12 topic groups), and **trait/ability preview cards** (`.sc-prev`,
-mirroring `SCBrowse.card()` in `steel-feature-browser.js`) for parent-of-leaves nodes
-under `feature/trait` & `feature/ability`. Ability data is read from preserved
-frontmatter; trait flavor + the "Grants …" marker are parsed back out of the
-already-rendered `.sc-trait` HTML body. The `feature/` landing also gets the
-**Search & Filter** `.sc-browse-mount` JSON data island (one object per leaf, dir-URL
-hrefs). Site-only; styled by v2 `docs/stylesheets/steel-indexes.css`.
+glossary landing's 12 topic groups), and **feature/trait/ability preview cards**
+(`.sc-prev`, mirroring `SCBrowse.card()` in `steel-feature-browser.js`) for
+parent-of-leaves nodes. Ability data is read from preserved frontmatter; trait/feature
+flavor + the "Grants …" marker are parsed back out of the already-rendered `.sc-trait`
+HTML body. The recessed `.sc-trait` niche is **shared** by plain features (`type:
+feature`) and the narrowed ancestry/monster traits (`type: trait`), but the eyebrow
+*noun* reflects the real type — `featureNoun` (`trait_cards.go`) renders "<Source>
+Feature" vs "<Source> Trait" (regression once mislabelled every feature "Trait"). The
+`feature/` landing also gets the **Search & Filter** `.sc-browse-mount` JSON data island
+(one object per leaf, dir-URL hrefs; `kind` ∈ feature/ability/trait drives the Type
+facet's three buckets). Site-only; styled by v2 `docs/stylesheets/steel-indexes.css`.
 
 ### `internal/site/cards_book.go`
 

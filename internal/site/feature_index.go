@@ -310,7 +310,7 @@ func extractPreviewItem(fm, body, kind, klassFallback string) browseItem {
 	}
 
 	it.Kind = strings.TrimSpace(parseFrontmatterField(fm, "type"))
-	if it.Kind != "ability" && it.Kind != "trait" {
+	if it.Kind != "ability" && it.Kind != "trait" && it.Kind != "feature" {
 		it.Kind = kind
 	}
 
@@ -413,7 +413,7 @@ func renderPrevCard(it browseItem, ctx bool) string {
 }
 
 func renderTraitPrev(it browseItem, ctx bool) string {
-	eyebrow := strings.TrimSpace(html.EscapeString(it.Klass) + " Trait")
+	eyebrow := strings.TrimSpace(html.EscapeString(it.Klass) + " " + featureNoun(it.Kind))
 	if it.Subclass != "" {
 		eyebrow += " · " + html.EscapeString(it.Subclass)
 	}

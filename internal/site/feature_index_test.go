@@ -32,6 +32,28 @@ func traitLeaf(name, attrs string) string {
 	return "---\nname: " + name + "\ntype: trait\nclass: censor\nlevel: \"1\"\n---\n\n" + body
 }
 
+// A plain feature (type: feature) preview keeps its kind as "feature" (not coerced
+// to the dir-derived "trait") so the eyebrow reads "<Source> Feature" and the
+// Search & Filter Type facet can offer Feature as its own bucket.
+func TestExtractPreviewItem_PlainFeatureKindAndEyebrow(t *testing.T) {
+	leaf := "---\nname: Summoner Strike\ntype: feature\nclass: summoner\nlevel: \"1\"\n---\n\n" +
+		"<section class=\"sc-trait sc-trait--crest\" data-action=\"trait\">\n" +
+		"<p class=\"sc-trait__leadin\"><span class=\"sc-trait__dia\"></span>You have the following ability.</p>\n</section>\n"
+	fm, body := splitFrontmatter(leaf)
+	it := extractPreviewItem(fm, body, "trait", "Summoner")
+	if it.Kind != "feature" {
+		t.Errorf("plain feature kind=%q want feature (must not coerce to trait)", it.Kind)
+	}
+	it.Href = "summoner-strike/"
+	html := renderPrevCard(it, false)
+	if !strings.Contains(html, "Summoner Feature") {
+		t.Errorf("plain feature preview eyebrow should read \"Summoner Feature\"\n%s", html)
+	}
+	if strings.Contains(html, "Summoner Trait") {
+		t.Errorf("plain feature preview must not be labelled a Trait\n%s", html)
+	}
+}
+
 func TestFeatureKind_PlainFeatureDir(t *testing.T) {
 	// Plain features now live at feature/<class>/... with no kind segment; they
 	// should be treated as the recessed niche ("trait") for preview cards.

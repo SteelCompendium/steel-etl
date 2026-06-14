@@ -5,6 +5,29 @@ import (
 	"testing"
 )
 
+// A plain feature (type: feature) shares the recessed .sc-trait visual with real
+// ancestry traits, but its eyebrow noun must read "<Source> Feature" — not "Trait".
+// (Regression: Summoner Strike, a class feature, was labelled "Summoner Trait".)
+func TestTraitEyebrow_PlainFeatureSaysFeature(t *testing.T) {
+	fm := "class: summoner\nname: Summoner Strike\ntype: feature\nlevel: \"1\""
+	got := renderTraitCard(fm, "\nYou have the following ability.\n")
+	if !strings.Contains(got, `<div class="sc-trait__eyebrow"><span class="sc-trait__dia"></span>Summoner Feature</div>`) {
+		t.Errorf("plain feature eyebrow should read \"Summoner Feature\"\n%s", got)
+	}
+	if strings.Contains(got, "Summoner Trait") {
+		t.Errorf("plain feature must not be labelled a Trait\n%s", got)
+	}
+}
+
+// A real ancestry trait (type: trait) keeps the "<Ancestry> Trait" eyebrow.
+func TestTraitEyebrow_AncestryTraitSaysTrait(t *testing.T) {
+	fm := "ancestry: dragon-knight\nname: Prismatic Scales\ntype: trait"
+	got := renderTraitCard(fm, "\nSelect one damage immunity.\n")
+	if !strings.Contains(got, "Dragon Knight Trait") {
+		t.Errorf("ancestry trait eyebrow should read \"Dragon Knight Trait\"\n%s", got)
+	}
+}
+
 // A plain feature (type: feature) routes through the recessed niche, same as a trait.
 func TestBuildAbilityCardPage_PlainFeature(t *testing.T) {
 	page := "---\ntype: feature\nname: A Beyonding of Vision\n---\n\nYour void sense reaches further.\n"
