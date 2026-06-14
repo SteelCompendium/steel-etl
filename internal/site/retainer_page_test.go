@@ -1,7 +1,6 @@
 package site
 
 import (
-	"encoding/json"
 	"strings"
 	"testing"
 )
@@ -138,35 +137,22 @@ func TestBuildStatblockIslandPage_RetainerSplit(t *testing.T) {
 	}
 	s := string(out)
 
-	// 1. The advancement card is appended.
+	// 1. The advancement card is appended (a Forged Band fb-wrap below the statblock).
 	if !strings.Contains(s, `class="fb-wrap"`) || !strings.Contains(s, "Weaving Knives") {
 		t.Errorf("page should contain the advancement card")
 	}
-	// 2. The island JSON must NOT include the advancement abilities.
-	marker := `class="sc-statblock-data">`
-	start := strings.Index(s, marker)
-	if start < 0 {
-		t.Fatal("island script not found")
+	// 2. The base statblock card (the .sb-wrap, before the appended fb-wrap) must
+	//    keep the base feature but NOT the advancement abilities — those moved out
+	//    of the island base into the advancement card.
+	fbStart := strings.Index(s, `class="fb-wrap"`)
+	if fbStart < 0 {
+		t.Fatal("advancement fb-wrap card not found")
 	}
-	jsonStart := start + len(marker)
-	jsonEnd := strings.Index(s[jsonStart:], "</script>")
-	islandJSON := strings.TrimSpace(s[jsonStart : jsonStart+jsonEnd])
-	var island struct {
-		Features []struct {
-			Name string `json:"name"`
-		} `json:"features"`
+	sbCard := s[:fbStart]
+	if !strings.Contains(sbCard, "Crafty") {
+		t.Errorf("statblock card should keep base feature Crafty\n%s", sbCard)
 	}
-	if err := json.Unmarshal([]byte(islandJSON), &island); err != nil {
-		t.Fatalf("island JSON parse: %v\n%s", err, islandJSON)
-	}
-	names := map[string]bool{}
-	for _, f := range island.Features {
-		names[f.Name] = true
-	}
-	if !names["Crafty"] {
-		t.Errorf("island should keep base feature Crafty; got %v", names)
-	}
-	if names["Weaving Knives"] || names["Sneak and Stab"] {
-		t.Errorf("island must NOT include advancement abilities; got %v", names)
+	if strings.Contains(sbCard, "Weaving Knives") || strings.Contains(sbCard, "Sneak and Stab") {
+		t.Errorf("statblock card must NOT include advancement abilities\n%s", sbCard)
 	}
 }

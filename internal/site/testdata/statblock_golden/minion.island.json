@@ -1,0 +1,95 @@
+{
+  "id": "goblin-cutter",
+  "name": "Goblin Cutter",
+  "ancestry": "Goblin",
+  "level": "1",
+  "role": "Minion Harrier",
+  "roleKey": "harrier",
+  "ev": "3",
+  "defenses": [
+    {
+      "l": "Size",
+      "v": "1S"
+    },
+    {
+      "l": "Speed",
+      "v": "6"
+    },
+    {
+      "l": "Stamina",
+      "v": "5"
+    },
+    {
+      "l": "Stability",
+      "v": "0"
+    },
+    {
+      "l": "Free Strike",
+      "v": "2"
+    }
+  ],
+  "meta": {
+    "immunity": "—",
+    "weakness": "—",
+    "movement": "—",
+    "captain": {
+      "label": "With Captain",
+      "value": "—"
+    }
+  },
+  "characteristics": [
+    {
+      "l": "Might",
+      "k": "M",
+      "v": "+1"
+    },
+    {
+      "l": "Agility",
+      "k": "A",
+      "v": "+2"
+    },
+    {
+      "l": "Reason",
+      "k": "R",
+      "v": "-1"
+    },
+    {
+      "l": "Intuition",
+      "k": "I",
+      "v": "+0"
+    },
+    {
+      "l": "Presence",
+      "k": "P",
+      "v": "-1"
+    }
+  ],
+  "features": [
+    {
+      "kind": "ability",
+      "action": "main",
+      "name": "Cutting Strike",
+      "usage": "Main action",
+      "keywords": [
+        "Melee",
+        "Strike"
+      ],
+      "distance": "Melee 1",
+      "target": "One creature",
+      "powerRoll": {
+        "formula": "+ 2",
+        "tiers": {
+          "high": "6 damage",
+          "low": "2 damage",
+          "mid": "4 damage"
+        }
+      }
+    },
+    {
+      "kind": "passive",
+      "action": "passive",
+      "name": "Mob Tactics",
+      "body": "The cutter deals 1 extra damage for each other goblin adjacent to its target."
+    }
+  ]
+}

@@ -242,11 +242,18 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 			data = card
 		}
 
-		// Statblock pages → a sc-statblock-data JSON island that the client
-		// renderer (steel-statblock.js) mounts into the High-Fantasy Steel
-		// .sb-wrap DOM. Site-only; runs before injectH1 like the cards above.
-		if island, ok := buildStatblockIslandPage(data); ok {
-			data = island
+		// Statblock pages → the High-Fantasy Steel .sb-wrap card, rendered to
+		// HTML at build time (renderStatblockCard); steel-statblock.js only wires
+		// runtime behavior. Site-only; runs before injectH1 like the cards above.
+		if card, ok := buildStatblockIslandPage(data); ok {
+			data = card
+		}
+
+		// Fixture statblocks → the Forged Band featureblock card (statblock→fbDoc
+		// adapter), not the creature .sb-wrap card. Site-only; runs before injectH1
+		// like the cards above. The statblock path above skips fixtures.
+		if card, ok := buildFixturePage(data); ok {
+			data = card
 		}
 
 		// Featureblock / dynamic-terrain pages → the High-Fantasy Steel

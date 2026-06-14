@@ -1,0 +1,161 @@
+{
+  "id": "devil-high-judge",
+  "name": "Devil High Judge",
+  "ancestry": "Devil, Infernal",
+  "level": "6",
+  "role": "Leader",
+  "roleKey": "leader",
+  "ev": "32",
+  "defenses": [
+    {
+      "l": "Size",
+      "v": "1M"
+    },
+    {
+      "l": "Speed",
+      "v": "7"
+    },
+    {
+      "l": "Stamina",
+      "v": "181"
+    },
+    {
+      "l": "Stability",
+      "v": "2"
+    },
+    {
+      "l": "Free Strike",
+      "v": "6"
+    }
+  ],
+  "meta": {
+    "immunity": "Fire 5",
+    "weakness": "—",
+    "movement": "Fly",
+    "captain": {
+      "label": "With Captain",
+      "value": "—"
+    }
+  },
+  "characteristics": [
+    {
+      "l": "Might",
+      "k": "M",
+      "v": "+1"
+    },
+    {
+      "l": "Agility",
+      "k": "A",
+      "v": "+3"
+    },
+    {
+      "l": "Reason",
+      "k": "R",
+      "v": "+0"
+    },
+    {
+      "l": "Intuition",
+      "k": "I",
+      "v": "+1"
+    },
+    {
+      "l": "Presence",
+      "k": "P",
+      "v": "+2"
+    }
+  ],
+  "features": [
+    {
+      "kind": "ability",
+      "action": "main",
+      "name": "Infernal Decree",
+      "cost": "Signature",
+      "usage": "Main action",
+      "keywords": [
+        "Magic",
+        "Ranged",
+        "Strike"
+      ],
+      "distance": "Ranged 12",
+      "target": "Three creatures or objects",
+      "powerRoll": {
+        "formula": "+ 4",
+        "tiers": {
+          "high": "19 damage; P \u003c 4 the target can't hide (save ends)",
+          "low": "10 damage; P \u003c 2 the target can't hide (save ends)",
+          "mid": "15 damage; P \u003c 3 the target can't hide (save ends)"
+        }
+      },
+      "enhancements": [
+        {
+          "cost": "2 Malice",
+          "text": "While a target is unable to hide this way, any strike against them made by a devil gains an edge."
+        }
+      ]
+    },
+    {
+      "kind": "ability",
+      "action": "triggered",
+      "name": "Devilish Suggestion",
+      "cost": "2 Malice",
+      "usage": "[Triggered action](../../../rule/combat/triggered-action/)",
+      "keywords": [
+        "Magic",
+        "Ranged"
+      ],
+      "distance": "Ranged 5",
+      "target": "The triggering creature",
+      "powerRoll": {
+        "formula": "",
+        "tiers": {
+          "high": "The target takes a bane on the strike.",
+          "low": "The target is charmed (save ends).",
+          "mid": "The high judge chooses a new target for the strike."
+        }
+      },
+      "sections": [
+        {
+          "label": "Trigger",
+          "text": "A creature targets the high judge with a strike."
+        },
+        {
+          "label": "Effect",
+          "text": "The target makes a **Presence test**."
+        }
+      ],
+      "trailing": "While charmed this way, a creature treats the high judge as an ally."
+    },
+    {
+      "kind": "passive",
+      "action": "passive",
+      "name": "True Name",
+      "body": "If a creature within 10 squares speaks the high judge's true name, the high judge loses their damage immunities until the end of the encounter."
+    },
+    {
+      "kind": "villain",
+      "action": "villain",
+      "name": "All Rise",
+      "cost": "Villain Action 1",
+      "keywords": [
+        "Area",
+        "Magic"
+      ],
+      "distance": "3 burst",
+      "target": "Each enemy in the area",
+      "powerRoll": {
+        "formula": "",
+        "tiers": {
+          "high": "7 psychic damage",
+          "low": "15 psychic damage; the target is charmed (save ends)",
+          "mid": "12 psychic damage; the target is charmed (save ends)"
+        }
+      },
+      "sections": [
+        {
+          "label": "Effect",
+          "text": "The target makes a **Presence test**."
+        }
+      ]
+    }
+  ]
+}

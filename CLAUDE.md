@@ -48,7 +48,8 @@ just run gen --config pipeline.yaml  # Run with args
 | `internal/site/bestiary_cards.go` | Bestiary entity cards + the monster group-landing assembler |
 | `internal/site/bestiary_search.go` | Bestiary tab's Search & Filter data island (`.sc-bestiary-mount`) |
 | `internal/site/ability_cards.go` | Renders `type: ability` page bodies into `.sc-ability` cards; shared power-roll tier helpers |
-| `internal/site/statblock_page.go` | Renders `type: statblock` page bodies into JSON islands mounted by v2 `steel-statblock.js` |
+| `internal/site/statblock_page.go` | Parses `type: statblock` page bodies → the `sbIsland` model (stat grid + blockquote features) |
+| `internal/site/statblock_card.go` | Renders an `sbIsland` into the build-time `.sb-wrap` HTML card (Go port of `steel-statblock.js`) |
 | `internal/site/trait_cards.go` | Renders `type: trait` page bodies into recessed `.sc-trait` niches |
 | `internal/site/feature_index.go` | Folder/preview-card index pages for the nested feature/treasure/rule trees |
 | `internal/site/cards_book.go` | `.sc-card` index cards for the Books tab (`bookCard`, `chapterCard`) |
