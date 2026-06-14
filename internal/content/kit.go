@@ -147,14 +147,3 @@ func extractKitEquipmentText(body string, fm map[string]any) {
 		fm["equipment_text"] = v
 	}
 }
-
-// splitTableCells splits a markdown table row by "|" and returns trimmed cells.
-func splitTableCells(row string) []string {
-	row = strings.Trim(row, "|")
-	parts := strings.Split(row, "|")
-	var cells []string
-	for _, p := range parts {
-		cells = append(cells, strings.TrimSpace(p))
-	}
-	return cells
-}
