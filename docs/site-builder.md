@@ -70,8 +70,10 @@ bestiary leaves (`statblock`/`dynamic-terrain`/`retainer` — `cardFor` dispatch
 ### `internal/site/bestiary_cards.go`
 
 Bestiary entity cards + the monster group-landing assembler (added 2026-06-10 when the
-monster/terrain/retainer trees moved into Browse). Leaf cards: `statblockCard`
-(org+role label, Level/EV/Size/Speed), `terrainCard`, `retainerCard`.
+monster/terrain/retainer trees moved into Browse). Leaf cards: `statblockPreviewCard`
+(a compact `.sb-prev` mini-statblock rendered by `statblock_preview.go` — see below;
+reused for monster/minion/fixture/champion/rival AND retainers) and `terrainCard`
+(dynamic terrain keeps the generic `.sc-card`).
 `buildMonsterGroupContent` (hooked in `buildIndexContent` after
 `buildFeatureIndexContent`) renders a `monster/<group>/` landing's
 Malice/Tactical-Stance featureblock cards + statblock preview cards, splitting
@@ -82,6 +84,24 @@ minion/fixture/champion/rival/retainer trees) also guards `feature_index.go`'s f
 branch so group dirs reach this assembler; `buildMonsterGroupContent` also handles the
 mixed `retainer/` root (monster retainers + summoner subgroup folder card) and marks
 summoner cards via `bestiarySource`/`withSource`. Site-only.
+
+### `internal/site/statblock_preview.go`
+
+Compact `.sb-prev` mini-statblock preview cards for index / group-landing pages
+(`renderStatblockPreviewCard`): reuses the full card's `renderStatblockHead` /
+`renderStatblockDefenses` / `renderStatblockMeta` / `renderStatblockChars` zones plus a
+one-line-per-feature list (`renderStatblockFeatureLine`: action glyph · name · usage ·
+cost, links stripped). The whole card is a stretched-link to the full page. The grid is
+opened by `sbCardsOpen()`, which bakes the default `data-sbprev-{stats,meta,chars,feats}`
+zone-visibility attrs (`sbPreviewDefaults` — the single source of truth for the no-JS
+default; mirror it in `v2` `settings-core.js` `SBPREV_DEFAULTS` + `overrides/main.html`).
+The v2 settings drawer's "Index previews" group seeds those globally and the per-page
+`statblock-preview.js` bar overrides them; CSS (`steel-statblock.css`) hides any `off`
+zone. **Feature recovery:** group landings are assembled *after* leaf pages are
+transformed to `.sb-wrap` HTML (so the on-disk body no longer has blockquote features),
+so the preview reads each statblock's features from a build-scoped `statblockFeatureCache`
+(keyed by scc, populated in `buildStatblockIslandPage`, reset at the top of `Build()`)
+rather than re-parsing the rendered body.
 
 ### `internal/site/bestiary_search.go`
 
