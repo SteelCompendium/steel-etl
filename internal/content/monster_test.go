@@ -261,3 +261,36 @@ func TestStatblockParser_SummonerMinionChampion(t *testing.T) {
 		})
 	}
 }
+
+func TestStatblockParser_SummonerRival(t *testing.T) {
+	npcBody := "| — | Humanoid, Rival | Level 2 Elite Controller | - | EV 16 |\n" +
+		"|:-:|:-:|:-:|:-:|:-:|\n" +
+		"| **1M**<br>Size | **5**<br>Speed | **80**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |\n"
+	summonBody := "| — | Undead | Signature Minion Harrier | - | 1 Malice |\n" +
+		"|:-:|:-:|:-:|:-:|:-:|\n" +
+		"| **1S**<br>Size | **6**<br>Speed | **3**<br>Stamina | **0**<br>Stability | **1**<br>Free Strike |\n"
+
+	cases := []struct {
+		name, heading, body, want string
+	}{
+		{"npc", "Rival Summoner", npcBody, "monster/rivals/2nd-echelon/statblock"},
+		{"summon", "Skeleton", summonBody, "monster/rivals/2nd-echelon/summoner/minion"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.name, func(t *testing.T) {
+			sec := newSection(tc.heading, 7, map[string]string{"type": "statblock"}, tc.body)
+			ctx := context.NewContextStack(nil)
+			ctx.Push(5, map[string]string{
+				"domain": "rival", "category": "summoner", "subcategory": "2nd-echelon",
+			})
+
+			got, err := (&StatblockParser{}).Parse(ctx, sec)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if strings.Join(got.TypePath, "/") != tc.want {
+				t.Errorf("TypePath = %v, want %s (org=%v)", got.TypePath, tc.want, got.Frontmatter["organization"])
+			}
+		})
+	}
+}
