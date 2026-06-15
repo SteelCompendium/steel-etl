@@ -297,6 +297,73 @@ func TestResolverResolveFrontmatter(t *testing.T) {
 	}
 }
 
+// TestResolverResolveFrontmatterTypedMapSlice covers the featureblock/terrain
+// frontmatter shape, where structured fields (`features`, `stats`) are
+// []map[string]any rather than []any. These must be traversed and their nested
+// scc: links resolved, otherwise featureblock_page.go renders raw `../scc:`
+// hrefs (workspace FOLLOWUPS #9).
+func TestResolverResolveFrontmatterTypedMapSlice(t *testing.T) {
+	reg := NewRegistry()
+	reg.Add("mcdm.heroes.v1/rule.combat/adjacent")
+	reg.Add("mcdm.heroes.v1/condition/prone")
+	resolver := NewResolver(reg, ".md")
+
+	relativeTo := "mcdm.monsters.v1/monster.draconians/draconian-malice"
+
+	src := map[string]any{
+		"features": []map[string]any{
+			{
+				"name": "Gale",
+				"body": "Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) is knocked [prone](scc:mcdm.heroes.v1/condition/prone).",
+				"enhancements": []map[string]any{
+					{"cost": "2 Malice", "text": "also [prone](scc:mcdm.heroes.v1/condition/prone)"},
+				},
+				"power_roll": map[string]any{
+					// Tiers are map[string]string (RichFeature.ToMap), not map[string]any.
+					"tiers": map[string]string{"tier1": "push 4; [prone](scc:mcdm.heroes.v1/condition/prone)"},
+				},
+			},
+		},
+		"stats": []map[string]any{
+			{"name": "Range", "value": "[adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent)"},
+		},
+	}
+
+	got := resolver.ResolveFrontmatter(src, relativeTo, LinkAll)
+
+	feats, ok := got["features"].([]map[string]any)
+	if !ok || len(feats) != 1 {
+		t.Fatalf("features: got %#v", got["features"])
+	}
+	if want := "Each creature [adjacent](../../rule/combat/adjacent.md) is knocked [prone](../../condition/prone.md)."; feats[0]["body"] != want {
+		t.Errorf("features[0].body: got %q, want %q", feats[0]["body"], want)
+	}
+	enh, ok := feats[0]["enhancements"].([]map[string]any)
+	if !ok || len(enh) != 1 {
+		t.Fatalf("enhancements: got %#v", feats[0]["enhancements"])
+	}
+	if want := "also [prone](../../condition/prone.md)"; enh[0]["text"] != want {
+		t.Errorf("enhancements[0].text: got %q, want %q", enh[0]["text"], want)
+	}
+	pr := feats[0]["power_roll"].(map[string]any)
+	tiers := pr["tiers"].(map[string]string)
+	if want := "push 4; [prone](../../condition/prone.md)"; tiers["tier1"] != want {
+		t.Errorf("power_roll.tiers.tier1: got %q, want %q", tiers["tier1"], want)
+	}
+	stats, ok := got["stats"].([]map[string]any)
+	if !ok || len(stats) != 1 {
+		t.Fatalf("stats: got %#v", got["stats"])
+	}
+	if want := "[adjacent](../../rule/combat/adjacent.md)"; stats[0]["value"] != want {
+		t.Errorf("stats[0].value: got %q, want %q", stats[0]["value"], want)
+	}
+
+	// The original input map must NOT be mutated (shared across generators).
+	if src["features"].([]map[string]any)[0]["body"] != "Each creature [adjacent](scc:mcdm.heroes.v1/rule.combat/adjacent) is knocked [prone](scc:mcdm.heroes.v1/condition/prone)." {
+		t.Errorf("input features map was mutated")
+	}
+}
+
 func TestResolverNonCurrentSchemeVersionWarns(t *testing.T) {
 	reg := NewRegistry()
 	reg.Add("mcdm.heroes.v1/class/censor")
