@@ -422,3 +422,91 @@ func TestCardFlavor_FallsBackToBody(t *testing.T) {
 		t.Errorf("cardFlavor = %q, want body fallback", got)
 	}
 }
+
+// bodyLabeledLineLoose matches a "**<label…>:**" line whose label, markdown
+// stripped, equals the target — so labels that embed links resolve too.
+func TestBodyLabeledLineLoose(t *testing.T) {
+	body := "**Project Goal:** 3,000\n" +
+		"**[Item Prerequisite](../rule/downtime/item-prerequisite.md):** Wind Crystal\n" +
+		"**[Project Roll](../x.md) [Characteristic](../y.md):** [Might](../m.md), [Reason](../r.md)\n"
+	for _, tc := range []struct{ label, want string }{
+		{"Project Goal", "3,000"},
+		{"Item Prerequisite", "Wind Crystal"},
+		{"Project Roll Characteristic", "[Might](../m.md), [Reason](../r.md)"}, // raw value (links preserved)
+		{"Missing", ""},
+	} {
+		if got := bodyLabeledLineLoose(body, tc.label); got != tc.want {
+			t.Errorf("bodyLabeledLineLoose(%q) = %q, want %q", tc.label, got, tc.want)
+		}
+	}
+}
+
+// firstUnlabeledProse skips leading bold "**Label:**" stat lines and returns the
+// first real flavor paragraph (god/project bodies lead with stat lines).
+func TestFirstUnlabeledProse(t *testing.T) {
+	body := "**Domains:** Creation, Life\n\nAdûn believes in hard work.\n"
+	if got := firstUnlabeledProse(body); got != "Adûn believes in hard work." {
+		t.Errorf("firstUnlabeledProse = %q, want the flavor paragraph", got)
+	}
+}
+
+const godBody = "**Domains:** Creation, Life, Love, Protection\n\nAdûn believes that truth and hard work are virtues."
+
+func TestGodCard(t *testing.T) {
+	got := godCard("name: Adûn\ntype: god\n", godBody, "adun.md", "Adûn")
+	for _, want := range []string{
+		`class="sc-card sc-fil"`,
+		`href="adun/"`,
+		`<div class="sc-card__type">God</div>`,
+		`<div class="sc-card__name">Adûn</div>`,
+		`<b>Domains</b>`,
+		`Creation, Life, Love, Protection`,
+		`Adûn believes that truth`, // flavor, not the Domains line
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("godCard missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+const projectBody = "**[Item Prerequisite](../rule/downtime/item-prerequisite.md):** Wind Crystal of Quintessence\n\n" +
+	"**[Project Source](../rule/downtime/project-source.md):** Texts or lore in Low Rhyvian\n\n" +
+	"**[Project Roll](../rule/downtime/project-roll.md) [Characteristic](../rule/character/characteristic.md):** [Might](../rule/character/might.md), or [Presence](../rule/character/presence.md)\n\n" +
+	"**Project Goal:** 3,000\n\n" +
+	"When you start this project, you hire a crew of carpenters."
+
+func TestProjectCard(t *testing.T) {
+	got := projectCard("name: Build Airship\ntype: project\n", projectBody, "build-airship.md", "Build Airship")
+	for _, want := range []string{
+		`<div class="sc-card__type">Downtime Project</div>`,
+		`<div class="sc-card__name">Build Airship</div>`,
+		`>Project Goal</div>`,             // stat label
+		`title="3,000"`,                   // full goal in tooltip (goalStat)
+		`Wind Crystal of Quintessence`,    // Item Prerequisite line
+		`Texts or lore in Low Rhyvian`,    // Project Source line
+		`When you start this project`,     // flavor (not a stat line)
+		`href="../rule/character/might/"`, // a link in the roll value resolved to dir URL
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("projectCard missing %q in:\n%s", want, got)
+		}
+	}
+}
+
+// god and project leaf dirs must render as sc-card grids, not the browse-index list.
+func TestBuildCardsContent_GodAndProject(t *testing.T) {
+	root := t.TempDir()
+	gd := filepath.Join(root, "god")
+	writeMD(t, filepath.Join(gd, "adun.md"), "name: Adûn\ntype: god\n")
+	got, ok := buildCardsContent(gd, "god", []string{"adun.md"}, nil)
+	if !ok || !strings.Contains(got, `class="sc-cards"`) || !strings.Contains(got, `>God</div>`) {
+		t.Errorf("god leaf dir should render sc-card grid:\n%s", got)
+	}
+
+	pj := filepath.Join(root, "project")
+	writeMD(t, filepath.Join(pj, "build-airship.md"), "name: Build Airship\ntype: project\n")
+	got, ok = buildCardsContent(pj, "project", []string{"build-airship.md"}, nil)
+	if !ok || !strings.Contains(got, `class="sc-cards"`) || !strings.Contains(got, `>Downtime Project</div>`) {
+		t.Errorf("project leaf dir should render sc-card grid:\n%s", got)
+	}
+}

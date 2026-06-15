@@ -4,8 +4,8 @@ package site
 //
 // Replaces the flat ".browse-index" link list with ".sc-card" stat-cards for
 // every flat leaf index type (kit, class, ancestry, career, treasure, perk,
-// title, complication, culture, condition, skill, movement, negotiation).
-// The nested aggregations (feature, ability) keep the existing list/expand UI.
+// title, complication, culture, condition, skill, movement, negotiation, god,
+// project). The nested aggregations (feature, ability) keep the list/expand UI.
 //
 // ALL data comes from frontmatter the content parser already emits, plus each
 // page body for blurbs / the kit signature ability — so NO change to the shared
@@ -41,7 +41,7 @@ var richCardTypes = map[string]bool{
 	"kit": true, "class": true, "ancestry": true, "career": true,
 	"treasure": true, "perk": true, "title": true, "complication": true,
 	"culture": true, "condition": true, "skill": true,
-	"movement": true, "negotiation": true,
+	"movement": true, "negotiation": true, "god": true, "project": true,
 }
 
 // sbPreviewCardTypes are leaf dirs that render their statblock leaves as rich
@@ -160,6 +160,10 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 		return complicationCard(fm, body, file, name)
 	case "culture":
 		return cultureCard(fm, body, file, name)
+	case "god":
+		return godCard(fm, body, file, name)
+	case "project":
+		return projectCard(fm, body, file, name)
 	case "dynamic-terrain":
 		return terrainCard(fm, body, file, name)
 	case "retainer":
@@ -410,6 +414,52 @@ func cultureCard(fm, body, file, name string) string {
 		inner = blurbBlock(bodyBlurb(body, 96))
 	}
 	return card(file, "culture", "Culture", name, inner)
+}
+
+// godCard renders a deity: the patron Domains as a label line + the first flavor
+// paragraph. God pages carry no structured fields beyond name/scc/type; Domains
+// lead the body as a "**Domains:**" line, flavor follows.
+func godCard(fm, body, file, name string) string {
+	inner := ""
+	if v := bodyLabeledLine(body, "Domains"); v != "" {
+		inner += lineBlock("Domains", inlineMD(v))
+	}
+	if f := firstUnlabeledProse(body); f != "" {
+		inner += flavorDiv(f, 240)
+	}
+	if inner == "" {
+		inner = blurbBlock(bodyBlurb(body, 96))
+	}
+	return card(file, "god", "God", name, inner)
+}
+
+// projectCard renders a downtime project: flavor + the Project Goal stat and the
+// Roll-characteristic / Item-prerequisite / Project-source lines. Like treasure
+// project-crafting, these live as bold "**Label:**" body lines (the labels embed
+// links, so bodyLabeledLineLoose is used), not frontmatter; the flavor paragraph
+// follows the stat lines, so firstUnlabeledProse skips them.
+func projectCard(fm, body, file, name string) string {
+	inner := ""
+	if f := firstUnlabeledProse(body); f != "" {
+		inner += flavorDiv(f, 200)
+	}
+	if v := bodyLabeledLineLoose(body, "Project Goal"); v != "" {
+		disp, tip := goalStat(stripMD(v))
+		inner += statsCells([]statCell{{val: disp, label: "Project Goal", title: tip}})
+	}
+	if v := bodyLabeledLineLoose(body, "Project Roll Characteristic"); v != "" {
+		inner += lineBlock("Roll", inlineMD(v))
+	}
+	if v := bodyLabeledLineLoose(body, "Item Prerequisite"); v != "" {
+		inner += lineBlock("Prerequisite", inlineMD(v))
+	}
+	if v := bodyLabeledLineLoose(body, "Project Source"); v != "" {
+		inner += lineBlock("Source", inlineMD(v))
+	}
+	if inner == "" {
+		inner = blurbBlock(bodyBlurb(body, 96))
+	}
+	return card(file, "project", "Downtime Project", name, inner)
 }
 
 // ruleCard renders a glossary term: crest + its group as the type label (e.g.
@@ -893,6 +943,46 @@ func bodyLabeledLine(body, label string) string {
 	return ""
 }
 
+// bodyLabeledLineLoose finds a "**<label…>:**" body line whose label — markdown
+// stripped — equals `label`, returning the raw (markdown-preserved) value after
+// the "**…:**". Unlike bodyLabeledLine's exact-prefix match, this resolves labels
+// that embed links, e.g. "**[Item Prerequisite](…):**" or
+// "**[Project Roll](…) [Characteristic](…):**".
+func bodyLabeledLineLoose(body, label string) string {
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if !strings.HasPrefix(t, "**") {
+			continue
+		}
+		end := strings.Index(t, ":**")
+		if end < 2 {
+			continue
+		}
+		if !strings.EqualFold(stripMD(t[2:end]), label) {
+			continue
+		}
+		return strings.TrimSpace(t[end+len(":**"):])
+	}
+	return ""
+}
+
+// firstUnlabeledProse returns the first body prose paragraph that is NOT a bold
+// "**Label:**" stat line (markdown-stripped). Used by cards whose stat lines lead
+// the body and whose flavor follows (god, project) — the reverse of treasure/
+// ancestry, where the flavor comes first.
+func firstUnlabeledProse(body string) string {
+	for _, raw := range strings.Split(body, "\n") {
+		t := strings.TrimSpace(raw)
+		if !isProse(t) || strings.HasPrefix(t, "**") {
+			continue
+		}
+		if s := stripMD(t); s != "" {
+			return s
+		}
+	}
+	return ""
+}
+
 // complicationFlavor returns the description/flavor that sits above the
 // Benefit/Drawback block (skipping those bolded lines).
 func complicationFlavor(body string) string {
@@ -1005,19 +1095,21 @@ func truncate(s string, max int) string {
 // card. Rendered filled (see crestSVG) — the landing's :material-…: icons are
 // fill-designed too, so an outline (stroke) glyph here would not match.
 var iconPaths = map[string]string{
-	"kit":          `<path d="M16,5V4A2,2 0 0,0 14,2H10A2,2 0 0,0 8,4V5A4,4 0 0,0 4,9V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V9A4,4 0 0,0 16,5M10,4H14V5H10V4M12,9L14,11L12,13L10,11L12,9M18,16H9V18H8V16H6V15H18V16Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                             // bag-personal
-	"class":        `<path d="M12 1L3 5V11C3 16.5 6.8 21.7 12 23C17.2 21.7 21 16.5 21 11V5L12 1M15 15H13V18H11V15H9V13H11L10 7.1L12 5.5L14 7.1L13 13H15V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                    // shield-sword
-	"ancestry":     `<path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>`, // account-group
-	"career":       `<path d="M10 16V15H3L3 19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15H14V16H10M20 7H16V5L14 3H10L8 5V7H4C2.9 7 2 7.9 2 9V12C2 13.11 2.89 14 4 14H10V12H14V14H20C21.1 14 22 13.1 22 12V9C22 7.9 21.1 7 20 7M14 7H10V5H14V7Z"/>`,                                                                                                                                                                                                                                                                                                                                                                         // briefcase-variant
-	"treasure":     `<path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // treasure-chest
-	"perk":         `<path d="M16,9H19L14,16M10,9H14L12,17M5,9H8L10,16M15,4H17L19,7H16M11,4H13L14,7H10M7,4H9L8,7H5M6,2L2,8L12,22L22,8L18,2H6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  // diamond-stone
-	"title":        `<path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            // crown
-	"complication": `<path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z"/>`,                                                                                                                                                                                                                                                                                                                                                         // alert-decagram
-	"culture":      `<path d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/>`,                                                                                                                                                                                                                                                                                                                                                            // map
-	"condition":    `<path d="M11 15H6L13 1V9H18L11 23V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     // lightning-bolt
-	"skill":        `<path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 // star-four-points
-	"movement":     `<path d="M13,11H18L16.5,9.5L17.92,8.08L21.84,12L17.92,15.92L16.5,14.5L18,13H13V18L14.5,16.5L15.92,17.92L12,21.84L8.08,17.92L9.5,16.5L11,18V13H6L7.5,14.5L6.08,15.92L2.16,12L6.08,8.08L7.5,9.5L6,11H11V6L9.5,7.5L8.08,6.08L12,2.16L15.92,6.08L14.5,7.5L13,6V11Z"/>`,                                                                                                                                                                                                                                                                                                                                            // arrow-all
-	"negotiation":  `<path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                     // forum
+	"kit":          `<path d="M16,5V4A2,2 0 0,0 14,2H10A2,2 0 0,0 8,4V5A4,4 0 0,0 4,9V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V9A4,4 0 0,0 16,5M10,4H14V5H10V4M12,9L14,11L12,13L10,11L12,9M18,16H9V18H8V16H6V15H18V16Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                               // bag-personal
+	"class":        `<path d="M12 1L3 5V11C3 16.5 6.8 21.7 12 23C17.2 21.7 21 16.5 21 11V5L12 1M15 15H13V18H11V15H9V13H11L10 7.1L12 5.5L14 7.1L13 13H15V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      // shield-sword
+	"ancestry":     `<path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>`,                                   // account-group
+	"career":       `<path d="M10 16V15H3L3 19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15H14V16H10M20 7H16V5L14 3H10L8 5V7H4C2.9 7 2 7.9 2 9V12C2 13.11 2.89 14 4 14H10V12H14V14H20C21.1 14 22 13.1 22 12V9C22 7.9 21.1 7 20 7M14 7H10V5H14V7Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                           // briefcase-variant
+	"treasure":     `<path d="M5,4H19A3,3 0 0,1 22,7V11H15V10H9V11H2V7A3,3 0 0,1 5,4M11,11H13V13H11V11M2,12H9V13L11,15H13L15,13V12H22V20H2V12Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   // treasure-chest
+	"perk":         `<path d="M16,9H19L14,16M10,9H14L12,17M5,9H8L10,16M15,4H17L19,7H16M11,4H13L14,7H10M7,4H9L8,7H5M6,2L2,8L12,22L22,8L18,2H6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    // diamond-stone
+	"title":        `<path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5M19 19C19 19.6 18.6 20 18 20H6C5.4 20 5 19.6 5 19V18H19V19Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // crown
+	"complication": `<path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                           // alert-decagram
+	"culture":      `<path d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                              // map
+	"condition":    `<path d="M11 15H6L13 1V9H18L11 23V15Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       // lightning-bolt
+	"skill":        `<path d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   // star-four-points
+	"movement":     `<path d="M13,11H18L16.5,9.5L17.92,8.08L21.84,12L17.92,15.92L16.5,14.5L18,13H13V18L14.5,16.5L15.92,17.92L12,21.84L8.08,17.92L9.5,16.5L11,18V13H6L7.5,14.5L6.08,15.92L2.16,12L6.08,8.08L7.5,9.5L6,11H11V6L9.5,7.5L8.08,6.08L12,2.16L15.92,6.08L14.5,7.5L13,6V11Z"/>`,                                                                                                                                                                                                                                                                                                                                                                              // arrow-all
+	"negotiation":  `<path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/>`,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       // forum
+	"god":          `<path d="M11.43 9.67c.04.11.07.21.07.33v5.22c0 .5-.19.98-.53 1.35l-2.79 3.05-3.4-3.4L6 15 8.8 2.86a1.114 1.114 0 0 1 2.2.25v4.96a2 2 0 0 0-.5-.07c-1.1 0-2 .9-2 2v3c0 .28.22.5.5.5s.5-.22.5-.5v-3c0-.55.45-1 1-1 .19 0 .35.07.5.16.12.07.21.16.3.26.03.04.06.08.08.13.02.04.04.08.05.12M2 19l4 3 1.17-1.27-3.45-3.45zm16-4L15.2 2.86a1.114 1.114 0 0 0-2.2.25v4.96c.16-.04.33-.07.5-.07 1.1 0 2 .9 2 2v3c0 .28-.22.5-.5.5s-.5-.22-.5-.5v-3c0-.55-.45-1-1-1-.19 0-.35.07-.5.16-.12.07-.21.16-.29.26-.03.04-.07.08-.09.13-.02.04-.04.08-.05.12-.04.11-.07.21-.07.33v5.22c0 .5.19.98.53 1.35l2.79 3.05 3.4-3.4zm2.28 2.28-3.45 3.45L18 22l4-3z"/>`, // hands-pray
+	"project":      `<path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"/>`,                                                                                                                                                                                                                                // hammer-wrench
 	// Books-tab crests (Read section). book = generic book-card fallback;
 	// chapter = shared chapter-card glyph; sword-cross/paw/skull = per-book
 	// icons referenced by site.yaml's books[].icon. See cards_book.go.

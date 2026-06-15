@@ -137,6 +137,15 @@ func isBestiaryGroupDir(dir string) bool {
 	return false
 }
 
+// isBestiaryEchelonDir reports whether dir is an "Nth-echelon" subdir directly
+// under a bestiary group landing (e.g. monster/demons/1st-echelon). Its own index
+// page renders that echelon's statblock/featureblock cards flat (relPrefix ""),
+// matching the inline per-echelon cards on the parent group landing — instead of
+// falling through to the default browse-index list.
+func isBestiaryEchelonDir(dir string) bool {
+	return echelonDirRe.MatchString(filepath.Base(dir)) && isBestiaryGroupDir(filepath.Dir(dir))
+}
+
 // buildMonsterGroupContent renders a monster group landing's listing: the
 // featureblock card(s) then the statblock preview cards, with echelon groups
 // split under a "## <Echelon>" sub-header each. It emits the standard
@@ -148,10 +157,13 @@ func isBestiaryGroupDir(dir string) bool {
 // the Malice/Tactical-Stance featureblock(s); the two are split by frontmatter
 // `type` rather than by directory.
 func buildMonsterGroupContent(dir, dirName string, files, subdirs []string) (string, bool) {
-	// Fires for a group dir (monster/<group>, minion/<portfolio>, …) and also for
-	// a bestiary type ROOT that directly holds statblock leaves AND a group subdir
-	// — the mixed `retainer/` node (monster retainers + the summoner/ group).
-	if !isBestiaryGroupDir(dir) && !isBestiaryTypeRootWithStatblocks(dir, files) {
+	// Fires for a group dir (monster/<group>, minion/<portfolio>, …); a bestiary
+	// type ROOT that directly holds statblock leaves AND a group subdir — the mixed
+	// `retainer/` node (monster retainers + the summoner/ group); and an echelon
+	// SUB-DIR (monster/<group>/<echelon>) whose own index page mirrors that echelon's
+	// inline cards on the parent group landing.
+	if !isBestiaryGroupDir(dir) && !isBestiaryTypeRootWithStatblocks(dir, files) &&
+		!isBestiaryEchelonDir(dir) {
 		return "", false
 	}
 	var sb strings.Builder

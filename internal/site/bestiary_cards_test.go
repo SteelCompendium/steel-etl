@@ -181,6 +181,57 @@ func TestMonsterGroupContent_Echelon(t *testing.T) {
 	}
 }
 
+func TestIsBestiaryEchelonDir(t *testing.T) {
+	for _, tc := range []struct {
+		dir  string
+		want bool
+	}{
+		{"monster/demons/1st-echelon", true},
+		{"monster/war-dogs/4th-echelon", true},
+		{"monster/rivals/2nd-echelon", true},
+		{"monster/demons", false},  // the group dir itself
+		{"monster", false},         // type root
+		{"monster/goblins", false}, // a non-echelon group
+		{"feature/ability/level-1", false},
+	} {
+		if got := isBestiaryEchelonDir(tc.dir); got != tc.want {
+			t.Errorf("isBestiaryEchelonDir(%q) = %v, want %v", tc.dir, got, tc.want)
+		}
+	}
+}
+
+// An echelon SUB-DIRECTORY index page (monster/demons/1st-echelon/index.md) must
+// render its own statblock + featureblock preview cards — not fall through to the
+// old browse-index flat list. Files sit directly in the dir (relPrefix ""), so
+// hrefs are bare (no echelon prefix).
+func TestMonsterGroupContent_EchelonSubdir(t *testing.T) {
+	root := t.TempDir()
+	ech := filepath.Join(root, "monster", "demons", "1st-echelon")
+	writeMD(t, filepath.Join(ech, "demon-malice-level-1.md"), "name: Demon Malice (Level 1)\ntype: featureblock\n")
+	writeMD(t, filepath.Join(ech, "spite.md"), goblinWarriorFM)
+
+	got, ok := buildMonsterGroupContent(ech, "1st-echelon",
+		[]string{"demon-malice-level-1.md", "spite.md"}, nil)
+	if !ok {
+		t.Fatal("expected an echelon subdir to render as a monster group landing")
+	}
+	for _, want := range []string{
+		"# 1st Echelon\n\n---\n\n",     // strippable head
+		`class="sb-cards"`,             // statblock preview grid
+		`class="sb-wrap sb-prev"`,      // rich statblock card
+		`href="spite/"`,                // bare (no echelon prefix) statblock href
+		`href="demon-malice-level-1/"`, // bare featureblock href
+		`>Demon Malice (Level 1)<`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("echelon subdir landing missing %q in:\n%s", want, got)
+		}
+	}
+	if strings.Contains(got, "browse-index") {
+		t.Errorf("echelon subdir must not render the old browse-index list:\n%s", got)
+	}
+}
+
 func TestSplitByType(t *testing.T) {
 	dir := t.TempDir()
 	writeMD(t, filepath.Join(dir, "goblin-warrior.md"), goblinWarriorFM) // type: statblock

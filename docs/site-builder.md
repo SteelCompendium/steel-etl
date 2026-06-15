@@ -61,8 +61,10 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
 
 ### `internal/site/cards.go`
 
-Rich `.sc-card` index cards for Browse-tab type indexes (kit, class, ancestry, …, plus
-`rule` glossary-term leaves under `rule/<group>/`, labelled by their topic group) +
+Rich `.sc-card` index cards for Browse-tab type indexes (kit, class, ancestry, career,
+treasure, perk, title, complication, culture, condition, skill, movement, negotiation,
+`god`, `project`, plus `rule` glossary-term leaves under `rule/<group>/`, labelled by
+their topic group) — the `richCardTypes` set, each with a dedicated `*Card` builder +
 shared `card()`/`crestSVG`/`iconPaths`. `buildCardsContent`'s switch also routes the
 bestiary leaves (`statblock`/`dynamic-terrain`/`retainer` — `cardFor` dispatches to
 `bestiary_cards.go`).
@@ -83,7 +85,11 @@ folded on top by `mergeGroupLanding`. `isBestiaryGroupDir` (generalized 2026-06-
 minion/fixture/champion/rival/retainer trees) also guards `feature_index.go`'s folder
 branch so group dirs reach this assembler; `buildMonsterGroupContent` also handles the
 mixed `retainer/` root (monster retainers + summoner subgroup folder card) and marks
-summoner cards via `bestiarySource`/`withSource`. Site-only.
+summoner cards via `bestiarySource`/`withSource`. The per-echelon **sub-dir** index
+pages (`monster/<group>/<echelon>/index.md`) also route here — `isBestiaryEchelonDir`
+(echelon name + parent is a group dir) widens the guard so they render that echelon's
+featureblock + statblock cards flat (matching the inline cards on the parent landing)
+instead of the old `browse-index` list. Site-only.
 
 ### `internal/site/statblock_preview.go`
 
