@@ -45,6 +45,10 @@ Site builder entry point: maps ETL output to the MkDocs structure. Key mechanics
 - **H1 injection**: adds `# Name` headers from frontmatter when the body lacks one.
 - **Search exclusion**: injects `search: exclude: true` frontmatter into Read section pages.
 - **Static content overrides**: copies hand-authored pages last, overriding generated content.
+- **Rival Summoner ⇄ summons cross-references** (`augmentRivalSummonerPages`, post-write
+  pass after index generation): appends a `## Summons` card block to each Rival Summoner
+  page and a back-link to each summon page — see "Rival Summoner ⇄ summons
+  cross-references" below.
 - **Printing provenance stamps** (`applyPrintingStamps`, final pass — after static
   overrides so every page is covered): when `site.yaml` sets `registry:` (the
   pipeline's `classification.json`), injects non-identity `printing` /
@@ -203,3 +207,31 @@ pinned base-first to match: `advancementPairNavOrder` makes `generateIndexesRecu
 write an explicit `nav:` list (`index.md`, base, advancement, …) into the dir's `.nav.yml`,
 otherwise the advancement page (`<id>-advancement-features.md`) filename-sorts ahead of its
 base (`<id>.md`).
+
+## Rival Summoner ⇄ summons cross-references
+
+`augmentRivalSummonerPages` (`rival_summons.go`) is a **post-write pass** that adds a
+two-way link between a Rival Summoner NPC and the minions it conjures. It runs in `Build`
+after `generateIndexPages` (scoped to the generic, non-`GroupByBook` sections) because it
+reads the already-written sibling summon pages off disk.
+
+For each `monster/rivals/<echelon>/` dir (echelon matched by `echelonDirRe`) that has a
+`summoner/minion/` subdir, it:
+
+- **Detects the conjurer page** via `findRivalSummonerPage`: the statblock `.md` (not
+  `index.md`) whose `scc:` book prefix is `mcdm.summoner.` **and** whose `organization` is
+  not `Minion`. The summoner-book prefix + non-Minion org skips both the co-located
+  **Monsters-book** rivals (e.g. `rival-fury`, scc `mcdm.monsters.`) and the minion
+  summons themselves, so only the Summoner-book Rival Summoner is augmented.
+- **Forward** — appends a `## Summons` card grid to the Rival Summoner page, built by
+  `rivalSummonsCards` over the `summoner/minion/*` siblings. Unlike `statblockCards`,
+  `rivalSummonsCards` takes the file-read dir (`summoner/minion`) **separate** from the
+  href base (`../summoner/minion`, relative to the rival page one level above the echelon
+  index) so the cards can live on a page that is not the summons' parent index.
+- **Back** — prepends a `<p class="sb-backlink">Summoned by <a href="../../../<rival>/">…</a></p>`
+  link (name HTML-escaped) immediately before the `.sb-wrap` card on each summon page.
+
+It is **idempotent** (guards on an existing `## Summons` heading / `sb-backlink`), a no-op
+when there is no `monster/rivals` tree (e.g. the Monsters/Summoner books are absent), and
+makes **no SCC/schema/data change** — the relationship is derived purely from the on-disk
+tree. The `.sb-backlink` style lives in `v2/docs/stylesheets/steel-statblock.css`.

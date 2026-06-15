@@ -113,6 +113,15 @@ recognized as a group landing (its grandparent — not its immediate parent — 
 root) and renders rich statblock cards. Plan:
 `docs/superpowers/plans/2026-06-14-summoner-statblocks-into-monster-family.md`.
 
+**Rival Summoner ⇄ summons cross-references (site-only).** On the v2 site, each Rival
+Summoner page renders a `## Summons` card grid of its `summoner/minion/*` siblings, and
+each summon links back to its conjurer via a `.sb-backlink` ("Summoned by …") line. This
+is added by the `augmentRivalSummonerPages` post-write pass (`internal/site/rival_summons.go`)
+purely from the on-disk Browse tree — the conjurer is the summoner-book statblock whose
+`organization != Minion`, so the co-located Monsters-book rivals are skipped. No
+SCC/schema/data change. See [`site-builder.md`](site-builder.md) → "Rival Summoner ⇄
+summons cross-references".
+
 ## Featureblocks & dynamic terrain (structured fields)
 
 `FeatureblockParser` and `DynamicTerrainParser` extract structured frontmatter that
