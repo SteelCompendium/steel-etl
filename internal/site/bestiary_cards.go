@@ -149,7 +149,18 @@ var bestiaryGroupParents = map[string]bool{
 // type root (e.g. monster/goblins, minion/demon, rival/summoner) — the mixed node
 // that becomes a group landing.
 func isBestiaryGroupDir(dir string) bool {
-	return bestiaryGroupParents[filepath.Base(filepath.Dir(dir))]
+	if bestiaryGroupParents[filepath.Base(filepath.Dir(dir))] {
+		return true
+	}
+	// Summoner minion/champion trees insert a "summoner" class segment between the
+	// type root and the portfolio group dir: monster/minion/summoner/<portfolio>.
+	// The portfolio is the group dir; its grandparent is the type root. (Companions
+	// put the class itself at the group-dir level, so they need no special case.)
+	if filepath.Base(filepath.Dir(dir)) == "summoner" &&
+		bestiaryGroupParents[filepath.Base(filepath.Dir(filepath.Dir(dir)))] {
+		return true
+	}
+	return false
 }
 
 // buildMonsterGroupContent renders a monster group landing's listing: the

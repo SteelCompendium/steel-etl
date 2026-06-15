@@ -94,6 +94,25 @@ sibling `monster.fixture.<element>.advancement-features/<id>` featureblock (sour
 into a `@type: featureblock | @id: <fixture-id>` section; `FeatureblockParser` fixture
 branch). Plan: `docs/superpowers/plans/2026-06-14-fixture-featureblock-restructure.md`.
 
+**Summoner minions / champions / rivals** are plain statblocks (no featureblock
+machinery) that `StatblockParser` likewise folds into the `monster.*` family via a
+`switch domain` after the normal `typePath` is built (2026-06-15):
+
+- `domain == "minion"` → `monster.minion.summoner.<portfolio>.statblock/<id>`
+- `domain == "champion"` → `monster.champion.summoner.<portfolio>.statblock/<id>`
+- `domain == "rival"` → the Rival Summoner NPC (any `organization` other than
+  `Minion`) → `monster.rivals.<echelon>.statblock/<id>` (sits beside the Monsters-book
+  rivals); its summoned creatures (`organization == Minion`) →
+  `monster.rivals.<echelon>.summoner.minion/<id>`. The source `@category: summoner` is
+  dropped; `@subcategory` is the echelon.
+
+The `summoner` class segment is hardcoded (these `@domain` values appear only in the
+Summoner book). Site-side, `isBestiaryGroupDir` (`internal/site/bestiary_cards.go`) was
+extended so the deeper `monster/<domain>/summoner/<portfolio>` portfolio dir is still
+recognized as a group landing (its grandparent — not its immediate parent — is the type
+root) and renders rich statblock cards. Plan:
+`docs/superpowers/plans/2026-06-14-summoner-statblocks-into-monster-family.md`.
+
 ## Featureblocks & dynamic terrain (structured fields)
 
 `FeatureblockParser` and `DynamicTerrainParser` extract structured frontmatter that

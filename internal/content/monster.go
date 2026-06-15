@@ -150,6 +150,27 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 
 	typePath := compactPath(domain, category, subcategory, "statblock")
 
+	// Summoner book special statblocks fold into the monster.* family (parallel
+	// to companions/fixtures). These @domain values appear only in the Summoner
+	// book, so the "summoner" class segment is hardcoded; revisit if another book
+	// gains minions/champions.
+	switch domain {
+	case "minion":
+		typePath = compactPath("monster", "minion", "summoner", category, "statblock")
+	case "champion":
+		typePath = compactPath("monster", "champion", "summoner", category, "statblock")
+	case "rival":
+		// The Rival Summoner NPC sits beside the Monsters-book rivals
+		// (monster.rivals.<echelon>.statblock); its minion summons nest under
+		// monster.rivals.<echelon>.summoner.minion. The source @category
+		// ("summoner") is dropped; @subcategory is the echelon.
+		if org, _ := fm["organization"].(string); org == "Minion" {
+			typePath = compactPath("monster", "rivals", subcategory, "summoner", "minion")
+		} else {
+			typePath = compactPath("monster", "rivals", subcategory, "statblock")
+		}
+	}
+
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        body,
