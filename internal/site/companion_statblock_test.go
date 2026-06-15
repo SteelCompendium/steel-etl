@@ -29,6 +29,71 @@ const pantherCompanionBody = `| Animal, Companion |           -           |     
 
 Whenever the panther takes the Advance move action, they can jump up to a number of squares equal to their speed.`
 
+func TestCompanionFeatures_Panther(t *testing.T) {
+	feats := companionFeatures(pantherCompanionBody)
+	if len(feats) != 2 {
+		t.Fatalf("features = %d, want 2", len(feats))
+	}
+	pounce := feats[0]
+	if pounce.Name != "Pounce" || pounce.Action != "maneuver" || pounce.Kind != "ability" {
+		t.Errorf("pounce name/action/kind = %q/%q/%q", pounce.Name, pounce.Action, pounce.Kind)
+	}
+	if strings.Join(pounce.Keywords, ",") != "Companion,Melee,Weapon" {
+		t.Errorf("pounce keywords = %v", pounce.Keywords)
+	}
+	if pounce.Distance != "Melee 1" || pounce.Target != "One enemy" {
+		t.Errorf("pounce dist/target = %q/%q", pounce.Distance, pounce.Target)
+	}
+	if len(pounce.Sections) == 0 || pounce.Sections[0].Label != "Effect" {
+		t.Errorf("pounce sections = %+v", pounce.Sections)
+	}
+	if len(pounce.Enhancements) == 0 || !strings.Contains(pounce.Enhancements[0].Cost, "Spend 1 Ferocity") {
+		t.Errorf("pounce enhancements = %+v", pounce.Enhancements)
+	}
+	spring := feats[1]
+	if spring.Name != "Mighty Spring" || spring.Kind != "passive" || spring.Body == "" {
+		t.Errorf("mighty spring = %+v", spring)
+	}
+}
+
+func TestBuildCompanionStatblockIsland_Panther(t *testing.T) {
+	fm := "name: Panther\nlevel: \"1\"\ncompanion: panther\ntype: feature-group\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"
+	d := buildCompanionStatblockIsland(fm, pantherCompanionBody)
+	if d.Name != "Panther" || d.ID != "panther" {
+		t.Errorf("name/id = %q/%q", d.Name, d.ID)
+	}
+	if d.Ancestry != "Animal, Companion" || d.Level != "1" {
+		t.Errorf("ancestry/level = %q/%q", d.Ancestry, d.Level)
+	}
+	if d.Role != "Companion" || d.RoleKey != "leader" {
+		t.Errorf("role/roleKey = %q/%q, want Companion/leader", d.Role, d.RoleKey)
+	}
+	if d.EV != "" {
+		t.Errorf("ev = %q, want empty", d.EV)
+	}
+	if len(d.Defenses) != 5 || d.Defenses[0].V != "1M" || d.Defenses[2].V != "= yours" {
+		t.Fatalf("defenses = %+v", d.Defenses)
+	}
+	if d.Meta.Movement != "Climb" || d.Meta.Captain.Label != "Skills" {
+		t.Errorf("meta = %+v", d.Meta)
+	}
+	if !strings.Contains(d.Meta.Captain.Value, "[Sneak](") {
+		t.Errorf("skills value = %q", d.Meta.Captain.Value)
+	}
+	wantChars := map[string]string{"Might": "+2", "Reason": "−1", "Presence": "+1"}
+	for _, c := range d.Characteristics {
+		if w, ok := wantChars[c.L]; ok && c.V != w {
+			t.Errorf("char %s = %q, want %q", c.L, c.V, w)
+		}
+	}
+	if len(d.Features) != 2 {
+		t.Fatalf("features = %d, want 2", len(d.Features))
+	}
+	if d.Features[0].Name != "Pounce" || d.Features[1].Name != "Mighty Spring" {
+		t.Errorf("feature names = %q / %q", d.Features[0].Name, d.Features[1].Name)
+	}
+}
+
 func TestParseCompanionGrid_Panther(t *testing.T) {
 	g := parseCompanionGrid(pantherCompanionBody)
 	if g.keywords != "Animal, Companion" {
