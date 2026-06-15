@@ -189,3 +189,55 @@ func companionAbilitySections(body string) []companionSection {
 	flush()
 	return secs
 }
+
+// companionStatblockCache maps a companion's scc → its parsed sbIsland, populated
+// at leaf-transform time (buildCompanionStatblockPage). The index pass
+// (buildAdvancementPairContent) reads the leaf AFTER buildSection has rewritten its
+// body to .sb-wrap HTML — both the stat grid and the ## ability sections are gone
+// by then — so unlike monster previews (stats live in frontmatter; only features
+// are cached) companions must cache the WHOLE island. Build-scoped: reset in Build().
+var companionStatblockCache = map[string]sbIsland{}
+
+// companionMarker identifies a companion BASE statblock page by its scc segment.
+const companionMarker = "monster.companion.beastheart.statblock"
+
+// splitCompanionAdvancement splits a companion body into (baseRegion, advancement).
+// The advancement region starts at the first "## …" heading whose attr_list carries
+// an "advancement-features" scc; advancement is "" when there is none.
+func splitCompanionAdvancement(body string) (base, advancement string) {
+	lines := strings.Split(body, "\n")
+	for i, line := range lines {
+		t := strings.TrimSpace(line)
+		if strings.HasPrefix(t, "## ") && strings.Contains(t, "advancement-features") {
+			return strings.Join(lines[:i], "\n"), strings.Join(lines[i:], "\n")
+		}
+	}
+	return body, ""
+}
+
+// buildCompanionStatblockPage rewrites a companion feature-group page body into the
+// build-time .sb-wrap card (replacing the raw stat table + ability sections),
+// keeping the advancement-features section verbatim below it. Returns (data, false)
+// for any non-companion page so the caller writes it unchanged. Caches the island
+// by scc for the index pass. injectH1 (next in buildSection) prepends "# Name".
+func buildCompanionStatblockPage(data []byte) ([]byte, bool) {
+	fm, body := splitFrontmatter(string(data))
+	if strings.TrimSpace(parseFrontmatterField(fm, "type")) != "feature-group" {
+		return data, false
+	}
+	scc := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
+	if !strings.Contains(scc, companionMarker) {
+		return data, false
+	}
+	base, advancement := splitCompanionAdvancement(body)
+	island := buildCompanionStatblockIsland(fm, base)
+	if scc != "" {
+		companionStatblockCache[scc] = island
+	}
+	card := renderStatblockCard(island)
+	out := "---\n" + fm + "\n---\n\n" + card
+	if strings.TrimSpace(advancement) != "" {
+		out += "\n\n" + strings.TrimSpace(advancement) + "\n"
+	}
+	return []byte(out), true
+}

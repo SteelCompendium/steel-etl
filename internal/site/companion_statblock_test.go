@@ -94,6 +94,56 @@ func TestBuildCompanionStatblockIsland_Panther(t *testing.T) {
 	}
 }
 
+func TestBuildCompanionStatblockPage_Panther(t *testing.T) {
+	page := `---
+companion: panther
+level: "1"
+name: Panther
+scc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther
+type: feature-group
+---
+
+# Panther
+
+---
+
+` + pantherCompanionBody + `
+
+## Panther Advancement Features {data-scc="mcdm.beastheart.v1/monster.companion.beastheart.advancement-features/panther"}
+
+### Cat and Mouse {data-scc="mcdm.beastheart.v1/feature.companion.beastheart.panther.level-3/cat-and-mouse"}
+
+Whenever the panther makes a strike while rampaging, the panther can knock the target prone.`
+
+	statblockFeatureCache = map[string][]sbFeature{}
+	companionStatblockCache = map[string]sbIsland{}
+
+	out, ok := buildCompanionStatblockPage([]byte(page))
+	if !ok {
+		t.Fatal("buildCompanionStatblockPage returned ok=false for a companion page")
+	}
+	s := string(out)
+	if !strings.Contains(s, `class="sb-wrap"`) || strings.Contains(s, "<br>Size") {
+		t.Errorf("expected .sb-wrap card and no raw stat table; got:\n%s", s)
+	}
+	if !strings.HasPrefix(s, "---\n") || !strings.Contains(s, "type: feature-group") {
+		t.Error("frontmatter not preserved verbatim")
+	}
+	if !strings.Contains(s, "## Panther Advancement Features") || !strings.Contains(s, "### Cat and Mouse") {
+		t.Error("advancement-features section was dropped")
+	}
+	if _, hit := companionStatblockCache["mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther"]; !hit {
+		t.Error("companion island not cached by scc")
+	}
+}
+
+func TestBuildCompanionStatblockPage_NonCompanion(t *testing.T) {
+	page := "---\ntype: statblock\nscc: mcdm.monsters.v1/monster.devils.statblock/x\n---\n\nbody"
+	if _, ok := buildCompanionStatblockPage([]byte(page)); ok {
+		t.Error("non-companion page must return ok=false")
+	}
+}
+
 func TestParseCompanionGrid_Panther(t *testing.T) {
 	g := parseCompanionGrid(pantherCompanionBody)
 	if g.keywords != "Animal, Companion" {
