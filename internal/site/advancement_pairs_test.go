@@ -100,3 +100,34 @@ func TestBuildAdvancementPairContent_SubdirsFallThrough(t *testing.T) {
 		t.Error("expected ok=false when subdirs are present")
 	}
 }
+
+func TestBuildAdvancementPairContent_CompanionPreview(t *testing.T) {
+	dir := t.TempDir()
+	base := "---\nname: Panther\nscc: mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther\ntype: feature-group\n---\n\n# Panther\n\n<div class=\"sb-wrap\">…</div>\n"
+	adv := "---\nname: Panther\ntype: featureblock\n---\n\n# Panther\n"
+	if err := os.WriteFile(filepath.Join(dir, "panther.md"), []byte(base), 0644); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(dir, "panther-advancement-features.md"), []byte(adv), 0644); err != nil {
+		t.Fatal(err)
+	}
+	companionStatblockCache = map[string]sbIsland{
+		"mcdm.beastheart.v1/monster.companion.beastheart.statblock/panther": {
+			Name: "Panther", ID: "panther", Role: "Companion", RoleKey: "leader", Level: "1",
+		},
+	}
+	out, ok := buildAdvancementPairContent(dir, "beastheart",
+		[]string{"panther.md", "panther-advancement-features.md"}, nil)
+	if !ok {
+		t.Fatal("ok=false")
+	}
+	if !strings.Contains(out, "sb-prev") {
+		t.Errorf("expected a .sb-prev companion preview, got:\n%s", out)
+	}
+	if !strings.Contains(out, "sb-cards") || !strings.Contains(out, `data-sbprev-stats="on"`) {
+		t.Errorf("expected sb-cards grid with zone defaults, got:\n%s", out)
+	}
+	if !strings.Contains(out, "Advancement Features") {
+		t.Errorf("advancement card missing:\n%s", out)
+	}
+}

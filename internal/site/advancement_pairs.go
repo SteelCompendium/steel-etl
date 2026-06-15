@@ -66,6 +66,19 @@ func advancementPairs(files, subdirs []string) ([]advPair, bool) {
 	return pairs, true
 }
 
+// companionPreviewCard renders a companion base leaf as a .sb-prev preview from the
+// cached island (companion_statblock.go). ok=false when the file isn't a cached
+// companion (e.g. fixtures) — caller falls back to the generic card.
+func companionPreviewCard(dir, baseFile string) (string, bool) {
+	fm, _ := splitFrontmatter(readFile(filepath.Join(dir, baseFile)))
+	scc := strings.TrimSpace(parseFrontmatterField(fm, "scc"))
+	island, hit := companionStatblockCache[scc]
+	if !hit {
+		return "", false
+	}
+	return renderStatblockPreviewCard(island, baseFile, ""), true
+}
+
 // buildAdvancementPairContent renders a group dir whose leaves come in
 // <id>.md + <id>-advancement-features.md pairs as a 2-column pair grid.
 // ok=false → caller falls through to the default index builders.
@@ -87,12 +100,37 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 		return fileToTitle(file)
 	}
 
+	// Detect cached companion previews; when present the grid doubles as a
+	// .sb-prev preview grid (so statblock-preview.js + the zone CSS apply) and
+	// carries the build-time zone defaults.
+	previews := map[string]string{}
+	for _, p := range pairs {
+		if p.base == "" {
+			continue
+		}
+		if cardHTML, ok := companionPreviewCard(dir, p.base); ok {
+			previews[p.base] = cardHTML
+		}
+	}
+
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
-	sb.WriteString("<div class=\"sc-cards sc-cards--pairs\">\n")
+	if len(previews) > 0 {
+		sb.WriteString(`<div class="sc-cards sc-cards--pairs sb-cards"`)
+		for _, kv := range sbPreviewDefaults {
+			sb.WriteString(` data-sbprev-` + kv[0] + `="` + kv[1] + `"`)
+		}
+		sb.WriteString(">\n")
+	} else {
+		sb.WriteString("<div class=\"sc-cards sc-cards--pairs\">\n")
+	}
 	for _, p := range pairs {
 		if p.base != "" {
-			sb.WriteString(card(p.base, icon, baseEyebrow, cardName(p.base), ""))
+			if cardHTML, ok := previews[p.base]; ok {
+				sb.WriteString(cardHTML + "\n")
+			} else {
+				sb.WriteString(card(p.base, icon, baseEyebrow, cardName(p.base), ""))
+			}
 		}
 		if p.adv != "" {
 			// Advancement card shares its base's name; the eyebrow distinguishes it.
