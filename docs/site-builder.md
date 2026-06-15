@@ -198,4 +198,8 @@ by `buildAdvancementPairContent` (`advancement_pairs.go`) as a 2-up
 "Fixture"/`skull`) with its advancement card (eyebrow "Advancement Features", sharing the
 base's name), base-first; it is the **first** check in `buildIndexContent` so it
 intercepts these dirs before the bestiary group-landing / plain-list builders. Styled by
-`v2/docs/stylesheets/steel-redesign.css` (`.sc-cards--pairs`).
+`v2/docs/stylesheets/steel-redesign.css` (`.sc-cards--pairs`). The left-sidebar order is
+pinned base-first to match: `advancementPairNavOrder` makes `generateIndexesRecursive`
+write an explicit `nav:` list (`index.md`, base, advancement, …) into the dir's `.nav.yml`,
+otherwise the advancement page (`<id>-advancement-features.md`) filename-sorts ahead of its
+base (`<id>.md`).
