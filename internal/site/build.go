@@ -39,6 +39,7 @@ type BuildResult struct {
 func Build(cfg *Config) (*BuildResult, error) {
 	// reset the build-scoped statblock feature cache (statblock_preview.go)
 	statblockFeatureCache = map[string][]sbFeature{}
+	companionStatblockCache = map[string]sbIsland{}
 	result := &BuildResult{}
 
 	// Clean docs dir (except protected paths)
@@ -268,6 +269,13 @@ func buildSection(cfg *Config, section SectionConfig, entries []sourceEntry) (in
 		// .fb-wrap "Forged Band" card (build-time HTML, frontmatter-driven).
 		// Site-only; runs before injectH1 like the cards above.
 		if card, ok := buildFeatureblockPage(data); ok {
+			data = card
+		}
+
+		// Beastheart companion feature-group pages → the .sb-wrap statblock card
+		// (replacing the raw stat table), keeping the advancement-features section.
+		// Site-only; runs before injectH1 like the cards above.
+		if card, ok := buildCompanionStatblockPage(data); ok {
 			data = card
 		}
 
