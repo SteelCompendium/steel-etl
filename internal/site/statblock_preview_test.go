@@ -100,6 +100,36 @@ func TestRenderStatblockPreviewCard_SourceChip(t *testing.T) {
 	}
 }
 
+func TestStatblockPreviewCard_FeaturesFromCache(t *testing.T) {
+	// A real statblock source (blockquote feature body) with an scc code.
+	src := []byte("---\n" +
+		"name: Cache Goblin\n" +
+		"role: Harrier\n" +
+		"level: 1\n" +
+		"scc: mcdm.test.v1/monster.x.statblock/cache-goblin\n" +
+		"type: statblock\n" +
+		"---\n\n" +
+		"> ⭐️ **Spooky Trait**\n>\n> Does a creepy thing.\n")
+
+	// Transforming the page (as buildSection does) must populate the feature
+	// cache keyed by scc.
+	if _, ok := buildStatblockIslandPage(src); !ok {
+		t.Fatal("expected statblock transform to fire")
+	}
+
+	// Now render a preview from a body that has NO blockquotes (simulating the
+	// already-transformed on-disk leaf the group landing reads). Features must
+	// come from the cache, not the body.
+	fm, _ := splitFrontmatter(string(src))
+	got := statblockPreviewCard(fm, "<div>already rendered .sb-wrap</div>", "cache-goblin.md", "Cache Goblin")
+	if !strings.Contains(got, `class="sb-prev__feats"`) {
+		t.Errorf("expected cached feature list in preview, got:\n%s", got)
+	}
+	if !strings.Contains(got, "Spooky Trait") {
+		t.Errorf("expected cached feature name 'Spooky Trait' in preview, got:\n%s", got)
+	}
+}
+
 func TestSbCardsOpen_DefaultAttrs(t *testing.T) {
 	got := sbCardsOpen()
 	for _, want := range []string{

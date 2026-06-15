@@ -91,10 +91,20 @@ func terrainCard(fm, body, file, name string) string {
 // statblockPreviewCard builds the sbIsland for a statblock leaf and renders the
 // compact .sb-prev preview card (statblock_preview.go), linking to the leaf's
 // full page. The Summoner-book provenance chip is added via bestiarySource.
+// Features are recovered from statblockFeatureCache when available: the
+// group-landing assembler reads leaf pages after buildSection has already
+// transformed their bodies to .sb-wrap HTML, so body-parsed features are
+// empty by that point; the cache (populated at transform time when the source
+// blockquote body was still present) restores them.
 func statblockPreviewCard(fm, body, href, name string) string {
 	d := buildStatblockIsland(fm, body)
 	if d.Name == "" {
 		d.Name = name
+	}
+	if scc := strings.TrimSpace(parseFrontmatterField(fm, "scc")); scc != "" {
+		if feats, ok := statblockFeatureCache[scc]; ok {
+			d.Features = feats
+		}
 	}
 	return renderStatblockPreviewCard(d, href, bestiarySource(fm))
 }

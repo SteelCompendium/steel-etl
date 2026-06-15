@@ -26,7 +26,8 @@ import (
 )
 
 // ── statblock model (the intermediate the parse stage builds; renderStatblockCard
-//    in statblock_card.go turns it into the .sb-wrap HTML at build time) ──
+//
+//	in statblock_card.go turns it into the .sb-wrap HTML at build time) ──
 type sbLV struct {
 	L string `json:"l"`
 	V string `json:"v"`
@@ -135,7 +136,11 @@ func buildStatblockIslandPage(data []byte) ([]byte, bool) {
 	// emits the same .sb-wrap DOM steel-statblock.js used to build client-side, so
 	// the card can later be embedded inline on any page. Contiguous (no blank
 	// lines) so md_in_html passes it through verbatim.
-	card := renderStatblockCard(buildStatblockIsland(fm, base))
+	island := buildStatblockIsland(fm, base)
+	if scc := strings.TrimSpace(parseFrontmatterField(fm, "scc")); scc != "" {
+		statblockFeatureCache[scc] = island.Features
+	}
+	card := renderStatblockCard(island)
 	// Retainer advancement abilities render as a Forged Band card below the
 	// statblock (Plan 4, renderRetainerAdvancement); "" for non-retainers.
 	adv := renderRetainerAdvancement(fm, advGroups)

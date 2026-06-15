@@ -37,6 +37,8 @@ type BuildResult struct {
 
 // Build generates the MkDocs site structure from steel-etl output.
 func Build(cfg *Config) (*BuildResult, error) {
+	// reset the build-scoped statblock feature cache (statblock_preview.go)
+	statblockFeatureCache = map[string][]sbFeature{}
 	result := &BuildResult{}
 
 	// Clean docs dir (except protected paths)

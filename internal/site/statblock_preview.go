@@ -13,6 +13,16 @@ import (
 	"strings"
 )
 
+// statblockFeatureCache maps a statblock's scc code → its parsed features,
+// populated at page-transform time (buildStatblockIslandPage) when the source
+// blockquote body is still available. The group-landing assembler reads leaf
+// pages AFTER they've been transformed to .sb-wrap HTML (their blockquote
+// features are gone), so the preview card recovers features from this cache by
+// scc. Build-scoped: Build() resets it at the start of each site build. Reads
+// of a missing key fall back to whatever buildStatblockIsland parsed from the
+// body (correct for unit tests that pass a blockquote body directly).
+var statblockFeatureCache = map[string][]sbFeature{}
+
 // renderStatblockFeatureLine emits one compact feature row: action glyph + name
 // + usage eyebrow + cost. No body/keywords/power-roll (those belong on the full
 // page). Links are stripped to plain text (linkText) so the line carries no
