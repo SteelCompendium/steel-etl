@@ -44,3 +44,73 @@ func TestRenderStatblockFeatureLine_StripsLinks(t *testing.T) {
 		t.Errorf("link should reduce to its text:\n%s", got)
 	}
 }
+
+func TestRenderStatblockPreviewCard(t *testing.T) {
+	d := buildStatblockIsland(strings.TrimSpace(`
+name: Goblin Cutter
+organization: Minion
+role: Harrier
+level: 1
+ev: "3"
+size: 1S
+speed: 6
+stamina: "5"
+stability: "0"
+free_strike: "2"
+might: "1"
+agility: "2"
+reason: "-1"
+intuition: "0"
+presence: "-1"
+keywords:
+    - Goblin
+type: statblock`), "> ⭐️ **Mob Tactics**\n>\n> Deals 1 extra damage.")
+
+	got := renderStatblockPreviewCard(d, "goblin-cutter.md", "")
+	for _, want := range []string{
+		`class="sb-wrap sb-prev"`,
+		`data-role="harrier"`,
+		`class="sb-prev__link" href="goblin-cutter/"`,
+		`class="sb__head"`,
+		`<h2 class="sb__name">Goblin Cutter</h2>`,
+		`class="sb__defenses"`,
+		`class="sb__meta"`,
+		`class="sb__chars"`,
+		`class="sb-prev__feats"`,
+		`class="sb-prev__feat"`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("preview card missing %q in:\n%s", want, got)
+		}
+	}
+	if strings.Contains(got, "](") {
+		t.Errorf("preview card leaked a markdown link:\n%s", got)
+	}
+}
+
+func TestRenderStatblockPreviewCard_SourceChip(t *testing.T) {
+	d := buildStatblockIsland("name: Bound Imp\nrole: Support\nlevel: 1\ntype: statblock", "")
+	withSrc := renderStatblockPreviewCard(d, "bound-imp.md", "Summoner")
+	if !strings.Contains(withSrc, `class="sb-prev__src">Summoner<`) {
+		t.Errorf("expected Summoner source chip:\n%s", withSrc)
+	}
+	noSrc := renderStatblockPreviewCard(d, "bound-imp.md", "")
+	if strings.Contains(noSrc, "sb-prev__src") {
+		t.Errorf("empty source must emit no chip:\n%s", noSrc)
+	}
+}
+
+func TestSbCardsOpen_DefaultAttrs(t *testing.T) {
+	got := sbCardsOpen()
+	for _, want := range []string{
+		`class="sb-cards"`,
+		`data-sbprev-stats="on"`,
+		`data-sbprev-meta="off"`,
+		`data-sbprev-chars="off"`,
+		`data-sbprev-feats="off"`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("sbCardsOpen missing %q in: %s", want, got)
+		}
+	}
+}

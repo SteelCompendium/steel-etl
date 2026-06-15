@@ -8,7 +8,10 @@ package site
 // statblock-preview.js); the header is always shown. SITE-ONLY (like cards.go):
 // all data comes from the page's frontmatter + body via buildStatblockIsland.
 
-import "strings"
+import (
+	"html"
+	"strings"
+)
 
 // renderStatblockFeatureLine emits one compact feature row: action glyph + name
 // + usage eyebrow + cost. No body/keywords/power-roll (those belong on the full
@@ -34,5 +37,56 @@ func renderStatblockFeatureLine(f sbFeature) string {
 		b.WriteString(`<span class="sb-prev__feat-cost">` + sbEsc(linkText(f.Cost)) + `</span>`)
 	}
 	b.WriteString(`</li>`)
+	return b.String()
+}
+
+// sbPreviewDefaults is the build-time baseline visibility for the four preview
+// zones — the no-JS fallback. SINGLE SOURCE OF TRUTH for the default; the
+// settings drawer (global pref) and per-page toggle bar refine it live. Mirror
+// any change in v2 settings-core.js SBPREV_DEFAULTS and overrides/main.html.
+var sbPreviewDefaults = [][2]string{
+	{"stats", "on"}, {"meta", "off"}, {"chars", "off"}, {"feats", "off"},
+}
+
+// sbCardsOpen writes the opening tag of a statblock-preview grid, baking the
+// default zone-visibility attributes onto the container. statblock-preview.js
+// later overrides these from the global pref / per-page bar.
+func sbCardsOpen() string {
+	var b strings.Builder
+	b.WriteString(`<div class="sb-cards"`)
+	for _, kv := range sbPreviewDefaults {
+		b.WriteString(` data-sbprev-` + kv[0] + `="` + kv[1] + `"`)
+	}
+	b.WriteString(">\n")
+	return b.String()
+}
+
+// renderStatblockPreviewCard renders an sbIsland as a compact .sb-prev mini-card
+// linking to the full statblock page (href, a relative ".md" path resolved by
+// dirURL). source is an optional provenance label ("Summoner") shown as a chip;
+// "" emits none. The header is always present; the four zones below it are
+// gated by the grid's data-sbprev-* attributes (sbCardsOpen).
+func renderStatblockPreviewCard(d sbIsland, href, source string) string {
+	var b strings.Builder
+	b.WriteString(`<div class="sb-wrap sb-prev" data-role="` + sbEsc(d.RoleKey) +
+		`" data-creature="` + sbEsc(d.ID) + `">`)
+	b.WriteString(`<a class="sb-prev__link" href="` + html.EscapeString(dirURL(href)) +
+		`" aria-label="` + html.EscapeString(d.Name) + `"></a>`)
+	b.WriteString(`<article class="sb sb-prev__body md-typeset" data-role="` + sbEsc(d.RoleKey) + `">`)
+	if source != "" {
+		b.WriteString(`<div class="sb-prev__src">` + sbEsc(source) + `</div>`)
+	}
+	b.WriteString(renderStatblockHead(d))
+	b.WriteString(renderStatblockDefenses(d.Defenses))
+	b.WriteString(renderStatblockMeta(d.Meta))
+	b.WriteString(renderStatblockChars(d.Characteristics))
+	if len(d.Features) > 0 {
+		b.WriteString(`<ul class="sb-prev__feats">`)
+		for _, f := range d.Features {
+			b.WriteString(renderStatblockFeatureLine(f))
+		}
+		b.WriteString(`</ul>`)
+	}
+	b.WriteString(`</article></div>`)
 	return b.String()
 }
