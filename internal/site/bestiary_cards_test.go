@@ -22,42 +22,26 @@ type: statblock
 `
 
 func TestStatblockCard(t *testing.T) {
-	got := statblockCard(goblinWarriorFM, "", "goblin-warrior.md", "Goblin Warrior")
+	got := statblockPreviewCard(goblinWarriorFM, "", "goblin-warrior.md", "Goblin Warrior")
 	for _, want := range []string{
-		`class="sc-card sc-fil"`,
-		`href="goblin-warrior/"`,
-		`Horde Harrier`, // organization + role type label
-		`<div class="sc-card__name">Goblin Warrior</div>`,
-		`<span class="sc-tag">Goblin</span>`,
-		`<span class="sc-tag">Humanoid</span>`,
-		`>EV</div>`, `>Level</div>`, `>Size</div>`, `>Speed</div>`,
+		`class="sb-wrap sb-prev"`,
+		`class="sb-prev__link" href="goblin-warrior/"`,
+		`<h2 class="sb__name">Goblin Warrior</h2>`,
 	} {
 		if !strings.Contains(got, want) {
-			t.Errorf("statblockCard missing %q in:\n%s", want, got)
+			t.Errorf("statblockPreviewCard missing %q in:\n%s", want, got)
 		}
 	}
 }
 
 func TestBestiarySourceMarking(t *testing.T) {
-	// Summoner-book statblocks (scc prefix mcdm.summoner.) are marked
-	// "Summoner · <label>"; Monsters-book statblocks (no/other prefix) are not.
 	summonerFM := goblinWarriorFM + "scc: mcdm.summoner.v1/minion.demon.statblock/hulking-chimor\n"
-	if got := bestiarySource(summonerFM); got != "Summoner" {
-		t.Errorf("bestiarySource(summoner) = %q, want Summoner", got)
+	card := statblockPreviewCard(summonerFM, "", "hulking-chimor.md", "Hulking Chimor")
+	if !strings.Contains(card, `class="sb-prev__src">Summoner<`) {
+		t.Errorf("summoner statblock should carry a Summoner source chip:\n%s", card)
 	}
-	if got := bestiarySource(goblinWarriorFM); got != "" {
-		t.Errorf("bestiarySource(monster) = %q, want empty", got)
-	}
-	if got := withSource(summonerFM, "Minion Brute"); got != "Summoner · Minion Brute" {
-		t.Errorf("withSource = %q", got)
-	}
-	// The marker reaches the rendered card.
-	card := statblockCard(summonerFM, "", "hulking-chimor.md", "Hulking Chimor")
-	if !strings.Contains(card, "Summoner · Horde Harrier") {
-		t.Errorf("summoner statblock card not marked:\n%s", card)
-	}
-	if strings.Contains(statblockCard(goblinWarriorFM, "", "goblin-warrior.md", "Goblin Warrior"), "Summoner ·") {
-		t.Error("monster statblock card must not be marked Summoner")
+	if strings.Contains(statblockPreviewCard(goblinWarriorFM, "", "goblin-warrior.md", "Goblin Warrior"), "sb-prev__src") {
+		t.Errorf("monster-book statblock must have no source chip")
 	}
 }
 
@@ -77,20 +61,6 @@ func TestIsBestiaryGroupDir(t *testing.T) {
 	} {
 		if got := isBestiaryGroupDir(tc.dir); got != tc.want {
 			t.Errorf("isBestiaryGroupDir(%q) = %v, want %v", tc.dir, got, tc.want)
-		}
-	}
-}
-
-func TestStatblockTypeLabel(t *testing.T) {
-	for _, tc := range []struct{ org, role, want string }{
-		{"Horde", "Harrier", "Horde Harrier"},
-		{"Horde", "", "Horde"},
-		{"", "Harrier", "Harrier"},
-		{"", "", "Statblock"},
-	} {
-		fm := "organization: " + tc.org + "\nrole: " + tc.role + "\n"
-		if got := statblockTypeLabel(fm); got != tc.want {
-			t.Errorf("statblockTypeLabel(org=%q role=%q) = %q, want %q", tc.org, tc.role, got, tc.want)
 		}
 	}
 }

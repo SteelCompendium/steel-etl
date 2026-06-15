@@ -41,11 +41,11 @@ func TestRivalSummonsCards(t *testing.T) {
 
 	got := rivalSummonsCards(dir, "../summoner/minion", []string{"skeleton.md", "grave-knight.md"})
 	for _, want := range []string{
-		`<div class="sc-cards">`,
-		`href="../summoner/minion/skeleton/"`,      // href base applied, .md → dir URL
-		`href="../summoner/minion/grave-knight/"`,
-		`<div class="sc-card__name">Skeleton</div>`,
-		`<div class="sc-card__name">Grave Knight</div>`,
+		`class="sb-cards"`,
+		`class="sb-prev__link" href="../summoner/minion/skeleton/"`,
+		`class="sb-prev__link" href="../summoner/minion/grave-knight/"`,
+		`<h2 class="sb__name">Skeleton</h2>`,
+		`<h2 class="sb__name">Grave Knight</h2>`,
 	} {
 		if !strings.Contains(got, want) {
 			t.Errorf("rivalSummonsCards missing %q in:\n%s", want, got)

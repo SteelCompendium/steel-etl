@@ -15,17 +15,6 @@ import (
 	"strings"
 )
 
-// statblockTypeLabel composes "<Organization> <Role>" (e.g. "Horde Harrier"),
-// falling back to whichever is present, then "Statblock".
-func statblockTypeLabel(fm string) string {
-	org := strings.TrimSpace(parseFrontmatterField(fm, "organization"))
-	role := strings.TrimSpace(parseFrontmatterField(fm, "role"))
-	if label := strings.TrimSpace(org + " " + role); label != "" {
-		return label
-	}
-	return "Statblock"
-}
-
 // bestiarySource returns a provenance label derived from a page's SCC book
 // prefix, so summoner-book creatures (portfolio minions/fixtures/champions, the
 // rival summoner, summoner retainers) are marked as summoner-class content vs.
@@ -120,19 +109,15 @@ func retainerCard(fm, body, file, name string) string {
 	return card(file, "skull", label, name, inner)
 }
 
-// statblockCard renders a .sc-card preview for a monster statblock leaf page.
-func statblockCard(fm, body, file, name string) string {
-	inner := ""
-	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
-		inner += tagsBlock(kw)
+// statblockPreviewCard builds the sbIsland for a statblock leaf and renders the
+// compact .sb-prev preview card (statblock_preview.go), linking to the leaf's
+// full page. The Summoner-book provenance chip is added via bestiarySource.
+func statblockPreviewCard(fm, body, href, name string) string {
+	d := buildStatblockIsland(fm, body)
+	if d.Name == "" {
+		d.Name = name
 	}
-	inner += statsBlock([][3]string{
-		{orDash(parseFrontmatterField(fm, "level")), "Level", ""},
-		{orDash(parseFrontmatterField(fm, "ev")), "EV", ""},
-		{orDash(parseFrontmatterField(fm, "size")), "Size", ""},
-		{orDash(parseFrontmatterField(fm, "speed")), "Speed", ""},
-	})
-	return card(file, "skull", withSource(fm, statblockTypeLabel(fm)), name, inner)
+	return renderStatblockPreviewCard(d, href, bestiarySource(fm))
 }
 
 // bestiaryGroupParents are the statblock type roots whose direct child dirs are
@@ -316,7 +301,7 @@ func statblockCards(dir, relPrefix string, files []string) string {
 	}
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 	var sb strings.Builder
-	sb.WriteString("<div class=\"sc-cards\">\n")
+	sb.WriteString(sbCardsOpen())
 	for _, f := range files {
 		fm, body := splitFrontmatter(readFile(filepath.Join(dir, relPrefix, f)))
 		name := parseFrontmatterField(fm, "name")
@@ -334,15 +319,12 @@ func statblockCards(dir, relPrefix string, files []string) string {
 }
 
 // bestiaryLeafCard picks the preview card for a statblock leaf by its type root:
-// retainers get retainerCard (immunities line), dynamic-terrain gets terrainCard,
-// and every other tree (monster/minion/fixture/champion/rival) uses statblockCard.
+// dynamic terrain keeps the generic .sc-card (different model); every creature
+// statblock (monster/minion/fixture/champion/rival AND retainers) renders as a
+// rich .sb-prev mini-statblock.
 func bestiaryLeafCard(dir, fm, body, href, name string) string {
-	switch {
-	case pathHasSegment(dir, "retainer"):
-		return retainerCard(fm, body, href, name)
-	case pathHasSegment(dir, "dynamic-terrain"):
+	if pathHasSegment(dir, "dynamic-terrain") {
 		return terrainCard(fm, body, href, name)
-	default:
-		return statblockCard(fm, body, href, name)
 	}
+	return statblockPreviewCard(fm, body, href, name)
 }

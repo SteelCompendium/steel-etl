@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-// rivalSummonsCards renders the statblock .md files in readDir as a .sc-cards
+// rivalSummonsCards renders the statblock .md files in readDir as a .sb-cards
 // grid. Unlike statblockCards, the file-read directory (readDir) is separate from
 // the href base (hrefBase, relative to the page embedding the cards) so the block
 // can be placed on a page that is not the files' parent index — e.g. the Rival
@@ -20,7 +20,7 @@ func rivalSummonsCards(readDir, hrefBase string, files []string) string {
 	}
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 	var sb strings.Builder
-	sb.WriteString("<div class=\"sc-cards\">\n")
+	sb.WriteString(sbCardsOpen())
 	for _, f := range files {
 		fm, body := splitFrontmatter(readFile(filepath.Join(readDir, f)))
 		name := parseFrontmatterField(fm, "name")
