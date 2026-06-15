@@ -4,9 +4,11 @@ package site
 // group dirs. After flattenAdvancementFeaturesPath (build.go) runs in buildSection,
 // each group dir holds <id>.md + <id>-advancement-features.md as flat siblings.
 // This builder pairs them into a 2-up .sc-cards grid (base card immediately
-// followed by its advancement card) so a pair shares a row. SITE-ONLY: it reads
-// the generated md-linked pages' frontmatter; the shared data repos are untouched.
-// Styled by docs/stylesheets/steel-redesign.css (.sc-cards--pairs).
+// followed by its advancement card) so a pair shares a row, and a matching
+// base-first .nav.yml order (advancementPairNavOrder) keeps the left sidebar in
+// the same base-then-advancement sequence. SITE-ONLY: it reads the generated
+// md-linked pages' frontmatter; the shared data repos are untouched. Styled by
+// docs/stylesheets/steel-redesign.css (.sc-cards--pairs).
 
 import (
 	"path/filepath"
@@ -16,10 +18,18 @@ import (
 
 const advFeatSuffix = "-advancement-features"
 
-// buildAdvancementPairContent renders a group dir whose leaves come in
-// <id>.md + <id>-advancement-features.md pairs as a 2-column pair grid.
-// ok=false → caller falls through to the default index builders.
-func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (string, bool) {
+// advPair is one base entity and its advancement-features sibling. base is "" for
+// an orphan advancement page (no base); adv is "" for a base with no advancement.
+type advPair struct {
+	base string
+	adv  string
+}
+
+// advancementPairs groups a flattened group dir's leaves base-first: each base
+// (natural-sorted) followed by its advancement file, then any orphan advancement
+// files. ok=false when the dir has no advancement-features leaves or has subdirs
+// (i.e. it isn't a pure flattened pair dir — fall through to the other builders).
+func advancementPairs(files, subdirs []string) ([]advPair, bool) {
 	advByBase := map[string]string{}
 	var bases []string
 	for _, f := range files {
@@ -30,13 +40,40 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 			bases = append(bases, f)
 		}
 	}
-	// Stray subdirs mean this isn't a pure flattened pair dir — fall through so
-	// the other builders (which render folder cards) can handle it. In practice
-	// flattenAdvancementFeaturesPath leaves these dirs subdir-free.
 	if len(advByBase) == 0 || len(subdirs) > 0 {
-		return "", false
+		return nil, false
 	}
 	sort.Slice(bases, func(i, j int) bool { return naturalLess(bases[i], bases[j]) })
+
+	var pairs []advPair
+	seen := map[string]bool{}
+	for _, bf := range bases {
+		id := strings.TrimSuffix(bf, ".md")
+		seen[id] = true
+		pairs = append(pairs, advPair{base: bf, adv: advByBase[id]}) // adv may be ""
+	}
+	// Defensive: an advancement page with no base sibling stands on its own.
+	var orphans []string
+	for base, af := range advByBase {
+		if !seen[base] {
+			orphans = append(orphans, af)
+		}
+	}
+	sort.Slice(orphans, func(i, j int) bool { return naturalLess(orphans[i], orphans[j]) })
+	for _, af := range orphans {
+		pairs = append(pairs, advPair{adv: af})
+	}
+	return pairs, true
+}
+
+// buildAdvancementPairContent renders a group dir whose leaves come in
+// <id>.md + <id>-advancement-features.md pairs as a 2-column pair grid.
+// ok=false → caller falls through to the default index builders.
+func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (string, bool) {
+	pairs, ok := advancementPairs(files, subdirs)
+	if !ok {
+		return "", false
+	}
 
 	baseEyebrow, icon := "Companion", "paw"
 	if pathHasSegment(dir, "fixture") {
@@ -53,30 +90,42 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
 	sb.WriteString("<div class=\"sc-cards sc-cards--pairs\">\n")
-
-	seen := map[string]bool{}
-	for _, bf := range bases {
-		id := strings.TrimSuffix(bf, ".md")
-		seen[id] = true
-		name := cardName(bf)
-		sb.WriteString(card(bf, icon, baseEyebrow, name, ""))
-		if af, ok := advByBase[id]; ok {
+	for _, p := range pairs {
+		if p.base != "" {
+			sb.WriteString(card(p.base, icon, baseEyebrow, cardName(p.base), ""))
+		}
+		if p.adv != "" {
 			// Advancement card shares its base's name; the eyebrow distinguishes it.
-			sb.WriteString(card(af, icon, "Advancement Features", name, ""))
+			// (For an orphan advancement, fall back to its own name.)
+			name := cardName(p.adv)
+			if p.base != "" {
+				name = cardName(p.base)
+			}
+			sb.WriteString(card(p.adv, icon, "Advancement Features", name, ""))
 		}
 	}
-	// Defensive: an advancement page with no base sibling renders on its own.
-	var orphans []string
-	for base, af := range advByBase {
-		if !seen[base] {
-			orphans = append(orphans, af)
-		}
-	}
-	sort.Slice(orphans, func(i, j int) bool { return naturalLess(orphans[i], orphans[j]) })
-	for _, af := range orphans {
-		sb.WriteString(card(af, icon, "Advancement Features", cardName(af), ""))
-	}
-
 	sb.WriteString("</div>\n")
 	return sb.String(), true
+}
+
+// advancementPairNavOrder returns the base-first file order for a flattened pair
+// dir's .nav.yml (index.md, then base, advancement, base, advancement, …), so the
+// left sidebar matches the index page's pairing instead of filename-sorting the
+// advancement page ahead of its base. ok=false → caller writes a plain title-only
+// .nav.yml.
+func advancementPairNavOrder(files, subdirs []string) ([]string, bool) {
+	pairs, ok := advancementPairs(files, subdirs)
+	if !ok {
+		return nil, false
+	}
+	order := []string{"index.md"}
+	for _, p := range pairs {
+		if p.base != "" {
+			order = append(order, p.base)
+		}
+		if p.adv != "" {
+			order = append(order, p.adv)
+		}
+	}
+	return order, true
 }

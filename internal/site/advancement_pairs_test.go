@@ -3,9 +3,32 @@ package site
 import (
 	"os"
 	"path/filepath"
+	"reflect"
 	"strings"
 	"testing"
 )
+
+func TestAdvancementPairNavOrder(t *testing.T) {
+	// Base-first, paired, index.md first — regardless of input file order.
+	files := []string{"wolf-advancement-features.md", "boar-advancement-features.md", "wolf.md", "boar.md"}
+	order, ok := advancementPairNavOrder(files, nil)
+	if !ok {
+		t.Fatal("expected ok=true for a pair dir")
+	}
+	want := []string{"index.md", "boar.md", "boar-advancement-features.md", "wolf.md", "wolf-advancement-features.md"}
+	if !reflect.DeepEqual(order, want) {
+		t.Errorf("nav order = %v, want %v", order, want)
+	}
+
+	// Not a pair dir → ok=false (caller writes a plain title-only .nav.yml).
+	if _, ok := advancementPairNavOrder([]string{"cutter.md"}, nil); ok {
+		t.Error("expected ok=false for a dir with no advancement-features leaves")
+	}
+	// Stray subdir → ok=false.
+	if _, ok := advancementPairNavOrder([]string{"wolf.md", "wolf-advancement-features.md"}, []string{"x"}); ok {
+		t.Error("expected ok=false when subdirs are present")
+	}
+}
 
 func TestBuildAdvancementPairContent(t *testing.T) {
 	dir := t.TempDir()

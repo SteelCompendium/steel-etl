@@ -1202,6 +1202,19 @@ func generateIndexesRecursive(dir, sectionRoot string) (int, []string) {
 	// and other options inherit from the section-root .nav.yml.
 	navPath := filepath.Join(dir, ".nav.yml")
 	navContent := "title: " + yamlScalar(dirToTitle(filepath.Base(dir))) + "\n"
+	// Flattened companion/fixture pair dirs: pin an explicit base-first order so
+	// the sidebar reads "<Species>" then "<Species> Advancement Features" instead
+	// of filename-sorting the advancement page (…-advancement-features.md) ahead
+	// of its base. Mirrors the index page's pairing (buildAdvancementPairContent).
+	if order, ok := advancementPairNavOrder(files, subdirs); ok {
+		var nb strings.Builder
+		nb.WriteString(navContent)
+		nb.WriteString("nav:\n")
+		for _, f := range order {
+			nb.WriteString("  - " + f + "\n")
+		}
+		navContent = nb.String()
+	}
 	if err := os.WriteFile(navPath, []byte(navContent), 0644); err != nil {
 		errs = append(errs, fmt.Sprintf("write nav %s: %v", navPath, err))
 	}
