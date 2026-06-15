@@ -94,20 +94,17 @@ role: Harrier
 size: 1S
 `
 
-func TestRetainerCard(t *testing.T) {
-	got := retainerCard(hopperFM, "", "angulotl-hopper.md", "Angulotl Hopper")
-	for _, want := range []string{`href="angulotl-hopper/"`, `Retainer Harrier`,
-		`<span class="sc-tag">Angulotl</span>`, `Poison 2`, `>Level</div>`, `>Size</div>`} {
+func TestRetainerPreviewCard(t *testing.T) {
+	// Retainer leaves now render as rich .sb-prev cards (same as monster group landings).
+	got := statblockPreviewCard(hopperFM, "", "angulotl-hopper.md", "Angulotl Hopper")
+	for _, want := range []string{
+		`class="sb-wrap sb-prev"`,
+		`class="sb-prev__link" href="angulotl-hopper/"`,
+		`<h2 class="sb__name">Angulotl Hopper</h2>`,
+	} {
 		if !strings.Contains(got, want) {
-			t.Errorf("retainerCard missing %q in:\n%s", want, got)
+			t.Errorf("retainer statblockPreviewCard missing %q in:\n%s", want, got)
 		}
-	}
-}
-
-func TestRetainerCardNoRole(t *testing.T) {
-	got := retainerCard("level: 1\nname: Plain\n", "", "plain.md", "Plain")
-	if !strings.Contains(got, `<div class="sc-card__type">Retainer</div>`) {
-		t.Errorf("roleless retainer should label \"Retainer\" with no trailing space:\n%s", got)
 	}
 }
 
@@ -326,12 +323,25 @@ func TestBuildCardsContent_Bestiary(t *testing.T) {
 		t.Error("a monster group dir should not be handled by buildCardsContent")
 	}
 
-	// Retainers are a flat leaf dir (statblock/ hoisted away) → retainer cards.
+	// Retainers are a flat leaf dir (statblock/ hoisted away) → rich .sb-prev cards
+	// inside an .sb-cards grid (same as monster group landings, not generic .sc-card).
 	rt := filepath.Join(root, "retainer")
 	writeMD(t, filepath.Join(rt, "angulotl-hopper.md"), hopperFM)
 	got, ok := buildCardsContent(rt, "retainer", []string{"angulotl-hopper.md"}, nil)
-	if !ok || !strings.Contains(got, "Retainer Harrier") {
-		t.Errorf("retainer leaf should route to retainerCard:\n%s", got)
+	if !ok {
+		t.Fatal("retainer leaf dir should be handled by buildCardsContent")
+	}
+	for _, want := range []string{
+		`class="sb-cards"`,
+		`class="sb-wrap sb-prev"`,
+		`<h2 class="sb__name">Angulotl Hopper</h2>`,
+	} {
+		if !strings.Contains(got, want) {
+			t.Errorf("retainer leaf card missing %q in:\n%s", want, got)
+		}
+	}
+	if strings.Contains(got, `class="sc-card`) {
+		t.Errorf("retainer leaf must not render as .sc-card (got legacy card):\n%s", got)
 	}
 
 	dt := filepath.Join(root, "dynamic-terrain", "mechanisms")

@@ -44,6 +44,15 @@ var richCardTypes = map[string]bool{
 	"movement": true, "negotiation": true,
 }
 
+// sbPreviewCardTypes are leaf dirs that render their statblock leaves as rich
+// .sb-prev preview cards (inside an sbCardsOpen() grid) instead of the generic
+// .sc-card. "retainer" is the Browse type-index for monster retainers; all
+// other statblock type roots (monster/minion/fixture/champion/rival) render via
+// buildMonsterGroupContent and never reach buildCardsContent.
+var sbPreviewCardTypes = map[string]bool{
+	"retainer": true,
+}
+
 // wideCardTypes render as full-width editorial rows (.sc-cards--wide) instead of
 // the multi-column grid — used for the high-count, text-led types.
 var wideCardTypes = map[string]bool{
@@ -88,13 +97,21 @@ func buildCardsContent(dir, dirName string, files, subdirs []string) (content st
 	}
 	sort.Slice(files, func(i, j int) bool { return naturalLess(files[i], files[j]) })
 
-	wrapper := "sc-cards"
-	if wideCardTypes[cardType] {
-		wrapper = "sc-cards sc-cards--wide"
+	var sb strings.Builder
+	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
+
+	// Statblock preview types use the .sb-cards grid (sbCardsOpen) so the toggle
+	// bar and per-card zone controls work. All other types use the standard grid.
+	if sbPreviewCardTypes[cardType] {
+		sb.WriteString(sbCardsOpen())
+	} else {
+		wrapper := "sc-cards"
+		if wideCardTypes[cardType] {
+			wrapper = "sc-cards sc-cards--wide"
+		}
+		sb.WriteString("<div class=\"" + wrapper + "\">\n")
 	}
 
-	var sb strings.Builder
-	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n<div class=\"" + wrapper + "\">\n")
 	for _, f := range files {
 		data, err := os.ReadFile(filepath.Join(dir, f))
 		if err != nil {
@@ -146,7 +163,9 @@ func cardFor(t, dirName, fm, body, file, name string) string {
 	case "dynamic-terrain":
 		return terrainCard(fm, body, file, name)
 	case "retainer":
-		return retainerCard(fm, body, file, name)
+		// Retainer statblock leaves render as rich .sb-prev preview cards, the same
+		// as monster group landings — statblockPreviewCard handles all creature types.
+		return statblockPreviewCard(fm, body, file, name)
 	default: // condition, skill, movement, negotiation
 		max := 96
 		if t == "skill" { // skills are short — give them room so they don't ellipsize

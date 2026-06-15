@@ -8,7 +8,6 @@ package site
 // the bestiary `skull` glyph throughout (see iconPaths in cards.go).
 
 import (
-	"html"
 	"path/filepath"
 	"regexp"
 	"sort"
@@ -87,26 +86,6 @@ func terrainCard(fm, body, file, name string) string {
 		inner += flavorDiv(f, 160)
 	}
 	return card(file, "skull", withSource(fm, "Dynamic Terrain"), name, inner)
-}
-
-// retainerCard renders a .sc-card preview for a retainer statblock leaf page.
-// The type label is "Retainer <Role>" (e.g. "Retainer Harrier"); immunities are
-// rendered as a line block when present; EV may be '-'.
-func retainerCard(fm, body, file, name string) string {
-	label := withSource(fm, strings.TrimSpace("Retainer "+parseFrontmatterField(fm, "role")))
-	inner := ""
-	if kw := parseFrontmatterList(fm, "keywords"); len(kw) > 0 {
-		inner += tagsBlock(kw)
-	}
-	inner += statsBlock([][3]string{
-		{orDash(parseFrontmatterField(fm, "level")), "Level", ""},
-		{orDash(parseFrontmatterField(fm, "ev")), "EV", ""},
-		{orDash(parseFrontmatterField(fm, "size")), "Size", ""},
-	})
-	if im := parseFrontmatterList(fm, "immunities"); len(im) > 0 {
-		inner += lineBlock("Immunities", html.EscapeString(strings.Join(im, ", ")))
-	}
-	return card(file, "skull", label, name, inner)
 }
 
 // statblockPreviewCard builds the sbIsland for a statblock leaf and renders the
