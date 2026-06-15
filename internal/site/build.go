@@ -93,6 +93,17 @@ func Build(cfg *Config) (*BuildResult, error) {
 	result.IndexPages = indexCount
 	result.Errors = append(result.Errors, indexErrs...)
 
+	// Rival Summoner ⇄ summons cross-references: a "## Summons" card block on each
+	// Rival Summoner page + a back-link on each summon page. Runs after pages and
+	// indexes are written (it reads the sibling summon pages from disk). No-op when
+	// there is no monster/rivals tree (e.g. Monsters book absent). Scoped to generic
+	// sections (the bestiary lives in Browse).
+	for _, s := range genericSections {
+		if _, rErrs := augmentRivalSummonerPages(filepath.Join(cfg.DocsDir, s.Name)); len(rErrs) > 0 {
+			result.Errors = append(result.Errors, rErrs...)
+		}
+	}
+
 	// Bestiary Search & Filter landing (Plan B): emit the faceted-finder data
 	// island over the Browse monster/terrain/retainer pages. No-op when the
 	// Monsters book isn't present in this build.
