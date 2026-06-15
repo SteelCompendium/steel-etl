@@ -227,3 +227,37 @@ func TestMonsterGroupParser(t *testing.T) {
 		t.Errorf("type: got %v", got.Frontmatter["type"])
 	}
 }
+
+func TestStatblockParser_SummonerMinionChampion(t *testing.T) {
+	body := "| — | Demon | Minion Ambusher | - | 1 Malice |\n" +
+		"|:-:|:-:|:-:|:-:|:-:|\n" +
+		"| **1S**<br>Size | **4**<br>Speed | **3**<br>Stamina | **0**<br>Stability | **2**<br>Free Strike |\n"
+
+	cases := []struct {
+		name     string
+		domain   string
+		category string
+		want     string
+	}{
+		{"Rasquine", "minion", "demon", "monster/minion/summoner/demon/statblock"},
+		{"Demon Lord's Aspect", "champion", "demon", "monster/champion/summoner/demon/statblock"},
+	}
+	for _, tc := range cases {
+		t.Run(tc.domain, func(t *testing.T) {
+			sec := newSection(tc.name, 7, map[string]string{"type": "statblock"}, body)
+			ctx := context.NewContextStack(nil)
+			ctx.Push(5, map[string]string{"domain": tc.domain, "category": tc.category})
+
+			got, err := (&StatblockParser{}).Parse(ctx, sec)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if strings.Join(got.TypePath, "/") != tc.want {
+				t.Errorf("TypePath = %v, want %s", got.TypePath, tc.want)
+			}
+			if got.Frontmatter["type"] != "statblock" {
+				t.Errorf("type = %v, want statblock", got.Frontmatter["type"])
+			}
+		})
+	}
+}

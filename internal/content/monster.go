@@ -150,6 +150,17 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 
 	typePath := compactPath(domain, category, subcategory, "statblock")
 
+	// Summoner book special statblocks fold into the monster.* family (parallel
+	// to companions/fixtures). These @domain values appear only in the Summoner
+	// book, so the "summoner" class segment is hardcoded; revisit if another book
+	// gains minions/champions.
+	switch domain {
+	case "minion":
+		typePath = compactPath("monster", "minion", "summoner", category, "statblock")
+	case "champion":
+		typePath = compactPath("monster", "champion", "summoner", category, "statblock")
+	}
+
 	return &ParsedContent{
 		Frontmatter: fm,
 		Body:        body,
