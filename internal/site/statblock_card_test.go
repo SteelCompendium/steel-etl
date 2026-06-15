@@ -162,3 +162,14 @@ func TestStatblockCard_GoldenEquivalence(t *testing.T) {
 		})
 	}
 }
+
+func TestRenderStatblockHead_OmitsEmptyEV(t *testing.T) {
+	withEV := renderStatblockHead(sbIsland{Name: "X", Level: "1", Role: "Brute", RoleKey: "brute", EV: "32"})
+	if !strings.Contains(withEV, "EV 32") {
+		t.Errorf("expected EV when present: %s", withEV)
+	}
+	noEV := renderStatblockHead(sbIsland{Name: "Panther", Level: "1", Role: "Companion", RoleKey: "leader", EV: ""})
+	if strings.Contains(noEV, `class="sb__ev"`) {
+		t.Errorf("expected no EV div when EV empty: %s", noEV)
+	}
+}

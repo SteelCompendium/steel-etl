@@ -269,12 +269,16 @@ func renderStatblockSticky(d sbIsland) string {
 // left, level/role/EV on the right). Shared by the full card and the preview
 // card (statblock_preview.go) so the header looks identical in both.
 func renderStatblockHead(d sbIsland) string {
+	ev := ""
+	if strings.TrimSpace(d.EV) != "" {
+		ev = `<div class="sb__ev">EV ` + sbEsc(d.EV) + `</div>`
+	}
 	return `<header class="sb__head"><div class="sb__head-row">` +
 		`<div class="sb__identity"><div class="sb__kw">` + sbEsc(d.Ancestry) + `</div>` +
 		`<h2 class="sb__name">` + sbEsc(d.Name) + `</h2></div>` +
 		`<div class="sb__class"><div class="sb__level">Level ` + sbEsc(d.Level) + `</div>` +
 		`<div class="sb__role" data-role="` + sbEsc(d.RoleKey) + `">` + sbEsc(d.Role) + `</div>` +
-		`<div class="sb__ev">EV ` + sbEsc(d.EV) + `</div></div></div></header>`
+		ev + `</div></div></header>`
 }
 
 // renderStatblockDefenses emits the .sb__defenses stat row (Size/Speed/Stamina/
