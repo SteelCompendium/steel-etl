@@ -265,16 +265,33 @@ func renderStatblockSticky(d sbIsland) string {
 		`</div>`
 }
 
+// renderStatblockHead emits the .sb__head identity band (ancestry/name on the
+// left, level/role/EV on the right). Shared by the full card and the preview
+// card (statblock_preview.go) so the header looks identical in both.
+func renderStatblockHead(d sbIsland) string {
+	return `<header class="sb__head"><div class="sb__head-row">` +
+		`<div class="sb__identity"><div class="sb__kw">` + sbEsc(d.Ancestry) + `</div>` +
+		`<h2 class="sb__name">` + sbEsc(d.Name) + `</h2></div>` +
+		`<div class="sb__class"><div class="sb__level">Level ` + sbEsc(d.Level) + `</div>` +
+		`<div class="sb__role" data-role="` + sbEsc(d.RoleKey) + `">` + sbEsc(d.Role) + `</div>` +
+		`<div class="sb__ev">EV ` + sbEsc(d.EV) + `</div></div></div></header>`
+}
+
+// renderStatblockDefenses emits the .sb__defenses stat row (Size/Speed/Stamina/
+// Stability/Free Strike). Shared by the full card and the preview card.
+func renderStatblockDefenses(defenses []sbLV) string {
+	var defs strings.Builder
+	for _, x := range defenses {
+		defs.WriteString(`<div class="sb__stat"><span class="v">` + sbEsc(x.V) +
+			`</span><span class="l">` + sbEsc(x.L) + `</span></div>`)
+	}
+	return `<div class="sb__defenses">` + defs.String() + `</div>`
+}
+
 // renderStatblockCard ports render(): the full .sb-wrap card. Villain-kind
 // features group into a collapsible "Villain Actions" band, matching the JS.
 // The shared family Malice band stays omitted (not in island data; FOLLOWUPS #7).
 func renderStatblockCard(d sbIsland) string {
-	var defs strings.Builder
-	for _, x := range d.Defenses {
-		defs.WriteString(`<div class="sb__stat"><span class="v">` + sbEsc(x.V) +
-			`</span><span class="l">` + sbEsc(x.L) + `</span></div>`)
-	}
-
 	var feat, villain strings.Builder
 	for _, f := range d.Features {
 		if f.Kind == "villain" {
@@ -292,13 +309,8 @@ func renderStatblockCard(d sbIsland) string {
 	b.WriteString(`<div class="sb-wrap" data-role="` + sbEsc(d.RoleKey) + `" data-creature="` + sbEsc(d.ID) + `">`)
 	b.WriteString(renderStatblockSticky(d))
 	b.WriteString(`<article class="sb md-typeset" data-role="` + sbEsc(d.RoleKey) + `">`)
-	b.WriteString(`<header class="sb__head"><div class="sb__head-row">` +
-		`<div class="sb__identity"><div class="sb__kw">` + sbEsc(d.Ancestry) + `</div>` +
-		`<h2 class="sb__name">` + sbEsc(d.Name) + `</h2></div>` +
-		`<div class="sb__class"><div class="sb__level">Level ` + sbEsc(d.Level) + `</div>` +
-		`<div class="sb__role" data-role="` + sbEsc(d.RoleKey) + `">` + sbEsc(d.Role) + `</div>` +
-		`<div class="sb__ev">EV ` + sbEsc(d.EV) + `</div></div></div></header>`)
-	b.WriteString(`<div class="sb__defenses">` + defs.String() + `</div>`)
+	b.WriteString(renderStatblockHead(d))
+	b.WriteString(renderStatblockDefenses(d.Defenses))
 	b.WriteString(renderStatblockMeta(d.Meta))
 	b.WriteString(renderStatblockChars(d.Characteristics))
 	b.WriteString(`<div class="sb__features">` + feat.String() + villainHTML + `</div>`)
