@@ -203,3 +203,23 @@ func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
 		}
 	}
 }
+
+// A test feature's lead-in (Intro) must render ABOVE the power roll. Regression
+// for Pavise Shield's Deactivate, whose "As a maneuver, … Might test." rendered
+// below the tiers because it was stored as Body.
+func TestRenderFbFeat_IntroAbovePowerRoll(t *testing.T) {
+	feat := fbFeature{
+		Icon: "🌀", Name: "Deactivate",
+		Intro:     "As a maneuver, a creature can make a **Might test**.",
+		PowerRoll: &fbPowerRoll{Tiers: map[string]string{"low": "retains control", "high": "grabs the shield"}},
+	}
+	s := renderFbFeats([]fbFeature{feat})
+	if !strings.Contains(s, `class="fb__feat-intro"`) {
+		t.Fatalf("missing fb__feat-intro in:\n%s", s)
+	}
+	idxIntro := strings.Index(s, `class="fb__feat-intro"`)
+	idxPR := strings.Index(s, `class="sc-ability__pr"`)
+	if idxPR < 0 || idxIntro > idxPR {
+		t.Errorf("intro (%d) must render before power roll (%d):\n%s", idxIntro, idxPR, s)
+	}
+}

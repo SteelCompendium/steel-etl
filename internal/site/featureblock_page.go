@@ -56,6 +56,7 @@ type fbFeature struct {
 	PowerRoll    *fbPowerRoll `yaml:"power_roll"`
 	Sections     []fbSection  `yaml:"sections"`
 	Enhancements []fbEnh      `yaml:"enhancements"`
+	Intro        string       `yaml:"intro"`
 	Body         string       `yaml:"body"`
 	Trailing     string       `yaml:"trailing"`
 	Level        int          `yaml:"level"`
@@ -112,6 +113,7 @@ func fbFeaturesFromRich(rfs []content.RichFeature) []fbFeature {
 			Keywords: r.Keywords,
 			Distance: r.Distance,
 			Target:   r.Target,
+			Intro:    r.Intro,
 			Body:     r.Body,
 			Trailing: r.Trailing,
 			Level:    r.Level,
@@ -300,6 +302,12 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 	fmt.Fprintf(b, "<h3 class=\"fb__feat-name sc-ability__name\">%s</h3>", html.EscapeString(strings.TrimSpace(f.Name)))
 	fmt.Fprintf(b, "<div class=\"fb__feat-corner\">%s</div>", costBadge(strings.TrimSpace(f.Cost)))
 	b.WriteString("</div>\n")
+
+	// lead-in prose: a test's "As a maneuver, … make a Might test." sets up the
+	// power roll and renders ABOVE it (unlike Body, which trails the card).
+	if intro := strings.TrimSpace(f.Intro); intro != "" {
+		fmt.Fprintf(b, "<div class=\"fb__feat-intro\">%s</div>\n", richInline(intro))
+	}
 
 	// keyword chips
 	if len(f.Keywords) > 0 {

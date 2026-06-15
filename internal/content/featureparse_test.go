@@ -33,6 +33,36 @@ func TestParseRichFeatures_Passive(t *testing.T) {
 	}
 }
 
+// A test-based feature (no spec table) leads with intro prose that sets up the
+// roll, then the tier list: "As a maneuver, … can make a Might test." then ≤11 /
+// 12-16 / 17+. That lead-in must land in Intro (rendered ABOVE the power roll),
+// not Body (rendered below it). Verbatim shape: Pavise Shield's Deactivate.
+func TestParseRichFeatures_IntroBeforeTiers(t *testing.T) {
+	body := "> 🌀 **Deactivate**\n" +
+		">\n" +
+		"> As a maneuver, a creature adjacent to a pavise shield controlled by another creature can make a **Might test**.\n" +
+		">\n" +
+		"> - **≤11:** The creature controlling the shield retains control of it.\n" +
+		"> - **12-16:** The creature controlling the shield retains control of it.\n" +
+		"> - **17+:** The creature making the test grabs the shield.\n"
+
+	feats := ParseRichFeatures(body)
+	if len(feats) != 1 {
+		t.Fatalf("got %d features, want 1", len(feats))
+	}
+	f := feats[0]
+	if f.PowerRoll == nil {
+		t.Fatalf("PowerRoll = nil, want a bare-test power roll")
+	}
+	want := "As a maneuver, a creature adjacent to a pavise shield controlled by another creature can make a **Might test**."
+	if f.Intro != want {
+		t.Errorf("Intro = %q, want %q", f.Intro, want)
+	}
+	if f.Body != "" {
+		t.Errorf("Body = %q, want empty (lead-in prose belongs in Intro)", f.Body)
+	}
+}
+
 func TestParseRichFeatures_SignatureCost(t *testing.T) {
 	body := "> 🗡 **Blade of the Gol King (Signature Ability)**\n>\n> Some text.\n"
 	feats := ParseRichFeatures(body)

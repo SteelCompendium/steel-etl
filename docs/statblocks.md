@@ -135,6 +135,17 @@ labeled `sections`/`enhancements` for table-less features. `transformFeaturebloc
 (`internal/output/`) emits the SDK JSON/YAML straight from this frontmatter (no body
 re-parse).
 
+⚠️ **Bare prose has three position-dependent homes — `intro` / `body` / `trailing` —
+and they render in different places.** The parser splits a feature's unstructured
+prose by where it sits relative to the first structured block (power roll or spec
+table): prose **before** it → `intro` (a test's lead-in, e.g. Pavise Shield's "As a
+maneuver, … make a **Might test**.", rendered *above* the power roll); prose **after**
+it → `trailing` (post-table notes, joined with spaces). A feature with **no** power
+roll and no table is a plain passive, so all its prose is the `body` (rendered below
+the card). Source order alone decides which field a paragraph lands in — a lead-in
+mis-stored as `body` renders below the tiers instead of above (the bug fixed
+2026-06-15). `intro` is in both `featureblock.schema.json` copies.
+
 **Beastheart companion advancement-features** are a second `features[]` source. When a
 `@type: featureblock` section sits in companion context (a `##### <C> Advancement
 Features` block under a companion), `FeatureblockParser` takes a companion branch:

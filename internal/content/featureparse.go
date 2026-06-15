@@ -24,6 +24,7 @@ type RichFeature struct {
 	PowerRoll    *RichPowerRoll
 	Sections     []RichSection     // labeled paragraphs: Effect / Trigger / Special …
 	Enhancements []RichEnhancement // cost-labeled paragraphs: "2 Malice:" / "Spend …:"
+	Intro        string            // lead-in prose before the power roll/table (e.g. "As a maneuver, … make a Might test.")
 	Body         string            // prose of a table-less (passive) feature
 	Trailing     string            // prose after the structured parts of an ability
 	Level        int               // advancement group level ("Level 5 Fixture Advancement Feature")
@@ -132,12 +133,14 @@ func parseRichFeature(block string) (RichFeature, bool) {
 	}
 
 	var (
-		tableSeen bool
-		formula   = diceFormula
-		tiers     [3]string
-		tiersSeen bool
-		bareIdx   int
-		prose     []string
+		tableSeen  bool
+		formula    = diceFormula
+		tiers      [3]string
+		tiersSeen  bool
+		bareIdx    int
+		structured bool     // a table / power roll / tiers / section / enhancement has been seen
+		introProse []string // bare prose BEFORE the first structured block (lead-in to a test)
+		trailProse []string // bare prose AFTER a structured block
 	)
 
 	for _, para := range paras[1:] {
@@ -158,12 +161,14 @@ func parseRichFeature(block string) (RichFeature, bool) {
 				f.Target = cleanIconCell(rows[1][1])
 			}
 			tableSeen = true
+			structured = true
 			continue
 		}
 
 		// Power-roll header → formula ("+ 2"); the next list holds the tiers.
 		if m := fbPRHeadRe.FindStringSubmatch(tp); m != nil {
 			formula = "+ " + linkDisplay(strings.TrimSpace(m[1]))
+			structured = true
 			continue
 		}
 
@@ -171,6 +176,7 @@ func parseRichFeature(block string) (RichFeature, bool) {
 		if fbLooksLikeTiers(tp) {
 			fbParseTiers(tp, &tiers)
 			tiersSeen = true
+			structured = true
 			continue
 		}
 
@@ -179,6 +185,7 @@ func parseRichFeature(block string) (RichFeature, bool) {
 			tiers[bareIdx] = fbCollapse(tp)
 			bareIdx++
 			tiersSeen = true
+			structured = true
 			continue
 		}
 
@@ -191,10 +198,17 @@ func parseRichFeature(block string) (RichFeature, bool) {
 			} else {
 				f.Sections = append(f.Sections, RichSection{Label: label, Text: text})
 			}
+			structured = true
 			continue
 		}
 
-		prose = append(prose, fbCollapse(tp))
+		// Bare prose: a lead-in (before any structured block) sets up the roll and
+		// must render above it (Intro); prose after a structured block trails it.
+		if structured {
+			trailProse = append(trailProse, fbCollapse(tp))
+		} else {
+			introProse = append(introProse, fbCollapse(tp))
+		}
 	}
 
 	if tiersSeen {
@@ -206,10 +220,21 @@ func parseRichFeature(block string) (RichFeature, bool) {
 		}
 		f.PowerRoll = &RichPowerRoll{Formula: formula, Tiers: t}
 	}
-	if tableSeen {
-		f.Trailing = strings.Join(prose, " ")
-	} else if len(prose) > 0 {
-		f.Body = strings.Join(prose, "\n\n")
+
+	// Assign prose. A power roll / spec table is the dividing line: lead-in prose
+	// becomes Intro (above it), prose after becomes Trailing. A feature with no
+	// power roll and no table is a plain passive — all its prose is the Body.
+	switch {
+	case !tiersSeen && !tableSeen:
+		if all := append(introProse, trailProse...); len(all) > 0 {
+			f.Body = strings.Join(all, "\n\n")
+		}
+	case tableSeen:
+		f.Intro = strings.Join(introProse, "\n\n")
+		f.Trailing = strings.Join(trailProse, " ")
+	default: // tiers, no table
+		f.Intro = strings.Join(introProse, "\n\n")
+		f.Trailing = strings.Join(trailProse, "\n\n")
 	}
 	return f, true
 }
@@ -279,6 +304,9 @@ func (f RichFeature) ToMap() map[string]any {
 			es = append(es, map[string]any{"cost": e.Cost, "text": e.Text})
 		}
 		m["enhancements"] = es
+	}
+	if f.Intro != "" {
+		m["intro"] = f.Intro
 	}
 	if f.Body != "" {
 		m["body"] = f.Body
