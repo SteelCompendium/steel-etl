@@ -139,10 +139,30 @@ func (r *Resolver) resolveValue(v any, relativeTo string, mode LinkMode) any {
 		return r.ResolveLinks(val, relativeTo, mode)
 	case map[string]any:
 		return r.ResolveFrontmatter(val, relativeTo, mode)
+	case map[string]string:
+		// Power-roll `tiers` are emitted as map[string]string (RichFeature.ToMap),
+		// not map[string]any. Resolve each value so tier text links don't survive
+		// as raw scc: (workspace FOLLOWUPS #9).
+		out := make(map[string]string, len(val))
+		for k, elem := range val {
+			out[k] = r.ResolveLinks(elem, relativeTo, mode)
+		}
+		return out
 	case []any:
 		out := make([]any, len(val))
 		for i, elem := range val {
 			out[i] = r.resolveValue(elem, relativeTo, mode)
+		}
+		return out
+	case []map[string]any:
+		// Structured frontmatter shapes — featureblock/terrain `features` and
+		// `stats`, plus nested `sections`/`enhancements` — are emitted as typed
+		// []map[string]any (RichFeatureMaps), not []any. Without this case they
+		// fall through `default` unresolved, leaving raw scc: links the site
+		// renderer turns into broken `../scc:` hrefs (workspace FOLLOWUPS #9).
+		out := make([]map[string]any, len(val))
+		for i, elem := range val {
+			out[i] = r.ResolveFrontmatter(elem, relativeTo, mode)
 		}
 		return out
 	case []string:
