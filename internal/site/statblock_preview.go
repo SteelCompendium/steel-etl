@@ -58,17 +58,22 @@ var sbPreviewDefaults = [][2]string{
 	{"stats", "on"}, {"meta", "off"}, {"chars", "off"}, {"feats", "off"},
 }
 
+// sbPreviewDefaultAttrs renders the build-time ` data-sbprev-<zone>="<on|off>"`
+// attribute string (leading space included) baked onto any .sb-cards container.
+// Shared by sbCardsOpen and the companion pair grid (advancement_pairs.go).
+func sbPreviewDefaultAttrs() string {
+	var b strings.Builder
+	for _, kv := range sbPreviewDefaults {
+		b.WriteString(` data-sbprev-` + kv[0] + `="` + kv[1] + `"`)
+	}
+	return b.String()
+}
+
 // sbCardsOpen writes the opening tag of a statblock-preview grid, baking the
 // default zone-visibility attributes onto the container. statblock-preview.js
 // later overrides these from the global pref / per-page bar.
 func sbCardsOpen() string {
-	var b strings.Builder
-	b.WriteString(`<div class="sb-cards"`)
-	for _, kv := range sbPreviewDefaults {
-		b.WriteString(` data-sbprev-` + kv[0] + `="` + kv[1] + `"`)
-	}
-	b.WriteString(">\n")
-	return b.String()
+	return `<div class="sb-cards"` + sbPreviewDefaultAttrs() + ">\n"
 }
 
 // renderStatblockPreviewCard renders an sbIsland as a compact .sb-prev mini-card

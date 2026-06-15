@@ -116,11 +116,7 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 	var sb strings.Builder
 	sb.WriteString("# " + dirToTitle(dirName) + "\n\n---\n\n")
 	if len(previews) > 0 {
-		sb.WriteString(`<div class="sc-cards sc-cards--pairs sb-cards"`)
-		for _, kv := range sbPreviewDefaults {
-			sb.WriteString(` data-sbprev-` + kv[0] + `="` + kv[1] + `"`)
-		}
-		sb.WriteString(">\n")
+		sb.WriteString(`<div class="sc-cards sc-cards--pairs sb-cards"` + sbPreviewDefaultAttrs() + ">\n")
 	} else {
 		sb.WriteString("<div class=\"sc-cards sc-cards--pairs\">\n")
 	}
