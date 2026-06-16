@@ -444,6 +444,33 @@ func TestAbilityParserCommonAbility(t *testing.T) {
 	}
 }
 
+func TestAbilityParserCommonAbilityUnderFeatureGroupStaysFlat(t *testing.T) {
+	// A common ability nested in a named feature-group (the Combat chapter's
+	// "Maneuvers" / "Free Strikes" groups) is NOT sub-grouped: it flattens to
+	// feature.ability.common/<id>, not feature.ability.common.<group>/<id>. We
+	// don't separate common abilities the way class trees do (FOLLOWUPS #17).
+	section := &parser.Section{
+		Heading:      "Grab",
+		HeadingLevel: 6,
+		Annotation:   map[string]string{"type": "ability"},
+		BodySource:   "Some body",
+	}
+
+	ctx := context.NewContextStack(context.Metadata{})
+	ctx.Push(3, context.Metadata{"type": "feature-group", "id": "maneuvers"})
+
+	p := &AbilityParser{}
+	result, err := p.Parse(ctx, section)
+	if err != nil {
+		t.Fatalf("AbilityParser.Parse failed: %v", err)
+	}
+
+	if len(result.TypePath) != 3 || result.TypePath[0] != "feature" ||
+		result.TypePath[1] != "ability" || result.TypePath[2] != "common" {
+		t.Errorf("expected flat TypePath=[feature, ability, common], got %v", result.TypePath)
+	}
+}
+
 func TestRegistryGetAndHas(t *testing.T) {
 	r := NewRegistry()
 
