@@ -26862,9 +26862,9 @@ A massive crossbow fires thick metal bolts with devastating effect.
 >
 > 🏹 **Chain Bolt**
 >
-> | **- - Ranged, Strike, Weapon** | **Main action (Adjacent creature)** |
-> |--------------------------------|------------------------------------:|
-> | **📏 Ranged 20**               |       **🎯 One creature or object** |
+> | **Ranged, Strike, Weapon** | **Main action (Adjacent creature)** |
+> |----------------------------|------------------------------------:|
+> | **📏 Ranged 20**           |       **🎯 One creature or object** |
 >
 > **Power Roll + 2:**
 >
