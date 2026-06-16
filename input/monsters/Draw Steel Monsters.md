@@ -3959,7 +3959,7 @@ At the start of a chimera's turn, you can spend [Malice](scc:mcdm.monsters.v1/ru
 
 Creatures of incarnate hate, demons spawn naturally in the Abyssal Wasteland. They crave violence and suffering the way other creatures need food. A demon cares only for themself, and they torture and tear lesser demons apart for fun.
 
-The bestial appearance of each demon is unique, composed of a chaotic arrangement of teeth, claws, and limbs meant for killing. Even [demons](scc:mcdm.monsters.v1/monster.group/demons) of the same kind have unique features. One might bear an extra set of eyes or teeth, while another has a humanoid arm growing from their forehead.
+The bestial appearance of each demon is unique, composed of a chaotic arrangement of teeth, claws, and limbs meant for killing. Even [demons](scc:mcdm.monsters.v1/monster.group/demon) of the same kind have unique features. One might bear an extra set of eyes or teeth, while another has a humanoid arm growing from their forehead.
 
 ###### Demon Stat Block Table
 
@@ -4013,7 +4013,7 @@ When a demon's soul energy begins to flag, they fall into a state known as lethe
 
 ### Demonic Hierarchy
 
-Mortal scholars have classified [demons](scc:mcdm.monsters.v1/monster.group/demons) into ten categories, each increasingly more powerful. Though demons don't use these classifications themselves, this system reflects their hierarchy, as stronger demons bully the weak into service.
+Mortal scholars have classified [demons](scc:mcdm.monsters.v1/monster.group/demon) into ten categories, each increasingly more powerful. Though demons don't use these classifications themselves, this system reflects their hierarchy, as stronger demons bully the weak into service.
 
 Each time a demon consumes a soul, there's a chance they might evolve into a more powerful demon. The evolution from one category to the next can be instantaneous, or it can take years. This inconsistency has led to much scholarly debate on whether all souls are equal, or whether demonic evolution is aided by the consumption of souls that are especially corrupt—or heroic.
 
@@ -5541,7 +5541,7 @@ At the start of any level 10 or higher demon's turn, you can spend [Malice](scc:
 <!-- @type: monster | @category: devil -->
 ## Devils
 
-In the lower plane of Hell, [devils](scc:mcdm.monsters.v1/monster.group/devils) of the Seven Cities vie unceasingly for power and control—a conflict fought foremostly through cunning and schemes. Devils are distinguished from other [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) by skin in shades of azure and crimson, as well as their hellmarks: horns, tails, hooves, wings, and other [infernal](scc:mcdm.monsters.v1/rule.keyword/infernal) features.
+In the lower plane of Hell, [devils](scc:mcdm.monsters.v1/monster.group/devil) of the Seven Cities vie unceasingly for power and control—a conflict fought foremostly through cunning and schemes. Devils are distinguished from other [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) by skin in shades of azure and crimson, as well as their hellmarks: horns, tails, hooves, wings, and other [infernal](scc:mcdm.monsters.v1/rule.keyword/infernal) features.
 
 ### Precarious Pyramids
 
@@ -5607,7 +5607,7 @@ At the start of any devil's turn, you can spend [Malice](scc:mcdm.monsters.v1/ru
 
 > 🌀 **Read the Small Print (7 [Malice](scc:mcdm.monsters.v1/rule.monster/malice))**
 >
-> Each enemy in the encounter is subject to a bad deal proposed by the [devils](scc:mcdm.monsters.v1/monster.group/devils). An enemy must choose between having damage weakness 5 or taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls. The bad deal lasts until the end of the encounter.
+> Each enemy in the encounter is subject to a bad deal proposed by the [devils](scc:mcdm.monsters.v1/monster.group/devil). An enemy must choose between having damage weakness 5 or taking a [bane](scc:mcdm.heroes.v1/rule.dice/bane) on power rolls. The bad deal lasts until the end of the encounter.
 
 <!-- @type: statblock -->
 ####### Devil Clerk
@@ -6052,7 +6052,7 @@ At the start of any devil's turn, you can spend [Malice](scc:mcdm.monsters.v1/ru
 <!-- @type: monster | @category: draconian -->
 ## Draconians
 
-Draconians—wyrmwights as some call them, also known as dragon knights in Orden—are a people created through an obscure ritual known as Dracogenesis. Most [draconians](scc:mcdm.monsters.v1/monster.group/draconians) have an elemental affinity connected to their draconic scales, which they can change given enough time and training.
+Draconians—wyrmwights as some call them, also known as dragon knights in Orden—are a people created through an obscure ritual known as Dracogenesis. Most [draconians](scc:mcdm.monsters.v1/monster.group/draconian) have an elemental affinity connected to their draconic scales, which they can change given enough time and training.
 
 Six individual draconians are presented in this section—not an adventuring party, but six warriors whose reputations precede them. All are likely to be found serving in various military forces as high-ranking commanders.
 
@@ -6616,7 +6616,7 @@ John shrugged with one shoulder. "If I'm wrong, we're all going to die anyway. N
 
 ### On Dragons
 
-Terrifying behemoths. Harbingers of destruction and woe. [Dragons](scc:mcdm.monsters.v1/monster.group/dragons) claim the world for themselves, throw the innocent into despair, and inspire heroes to draw steel.
+Terrifying behemoths. Harbingers of destruction and woe. [Dragons](scc:mcdm.monsters.v1/monster.group/dragon) claim the world for themselves, throw the innocent into despair, and inspire heroes to draw steel.
 
 #### Where the Elements Meet Anguish
 
@@ -8076,7 +8076,7 @@ When the gods formed the mundane world, they took sparks of creation from the ro
 
 [Elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) are mercurial creatures of creation, destruction, and transformation. Though the deities first created the mundane world, elementals cultivated and shaped it. When a tree, stone, or other aspect of the world doesn't suit an elemental, they break it down with elemental fury then build it anew.
 
-[Elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) change like the winds and the tides, and from age to age, they remake themselves to reflect what the world has become. They are protectors armored by stone, lizards ablaze with fire, and sometimes [dragons](scc:mcdm.monsters.v1/monster.group/dragons) clad in steel.
+[Elementals](scc:mcdm.monsters.v1/rule.keyword/elemental) change like the winds and the tides, and from age to age, they remake themselves to reflect what the world has become. They are protectors armored by stone, lizards ablaze with fire, and sometimes [dragons](scc:mcdm.monsters.v1/monster.group/dragon) clad in steel.
 
 #### Rebirth and Reformation
 
@@ -18870,11 +18870,11 @@ At the start of a shambling mound's turn, you can spend [Malice](scc:mcdm.monste
 <!-- @type: monster | @category: time-raider -->
 ## Time Raiders
 
-Genetic rebels, the space punks known as the [time raiders](scc:mcdm.monsters.v1/monster.group/time-raiders) (called the *kuran'zoi* among themselves) scour the Sea of Stars, the Sea Between Worlds, for heavily laden ships of any type. But they prefer the ships of UNISOL and other empires, for they love raiding the frigates of powerful governments who think their money and imperious nature can buy security.
+Genetic rebels, the space punks known as the [time raiders](scc:mcdm.monsters.v1/monster.group/time-raider) (called the *kuran'zoi* among themselves) scour the Sea of Stars, the Sea Between Worlds, for heavily laden ships of any type. But they prefer the ships of UNISOL and other empires, for they love raiding the frigates of powerful governments who think their money and imperious nature can buy security.
 
 ### Veterans of the Psychic Wars
 
-Thousands of years ago, the synlirii—those powerful and evil psionic horrors more commonly known as [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talkers)—created the kuran'zoi as soldiers. But as the synlirii experimented with and enhanced these warriors' psionic potential, the kuran'zoi came to understand the true nature of their progenitors. They rebelled against the synlirii and fled to the Sea of Stars, becoming nomads of the timescape.
+Thousands of years ago, the synlirii—those powerful and evil psionic horrors more commonly known as [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talker)—created the kuran'zoi as soldiers. But as the synlirii experimented with and enhanced these warriors' psionic potential, the kuran'zoi came to understand the true nature of their progenitors. They rebelled against the synlirii and fled to the Sea of Stars, becoming nomads of the timescape.
 
 ### Hardened-Vision Hexapods
 
@@ -19330,7 +19330,7 @@ At the start of any time raider's turn, you can spend [Malice](scc:mcdm.monsters
 <!-- @type: monster | @category: troll -->
 ## Trolls
 
-Ravenous [trolls](scc:mcdm.monsters.v1/monster.group/trolls) rampage through the wild to quell their fathomless hunger, leaving only destruction in their wake. Tall and gangly, they have mottled green skin covered by a mane of matted hair that runs down their neck and back. In many ways, they resemble massive [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid), but their exaggerated features belie this comparison. A troll's lower jaw hangs unhinged and distended, and their long arms end in claws that drag along the ground as they walk.
+Ravenous [trolls](scc:mcdm.monsters.v1/monster.group/troll) rampage through the wild to quell their fathomless hunger, leaving only destruction in their wake. Tall and gangly, they have mottled green skin covered by a mane of matted hair that runs down their neck and back. In many ways, they resemble massive [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid), but their exaggerated features belie this comparison. A troll's lower jaw hangs unhinged and distended, and their long arms end in claws that drag along the ground as they walk.
 
 ### Hypermetabolism
 
@@ -19342,7 +19342,7 @@ Fortunately for the ecosystems they inhabit, trolls can't be active all the time
 
 ### Strange Mutations
 
-Trolls prefer to prey upon [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) and animals, but stories tell of them feeding on fetid [demons](scc:mcdm.monsters.v1/monster.group/demons) and [undead](scc:mcdm.monsters.v1/rule.keyword/undead), assimilating those creatures' flesh to magnificent and horrifying effect. A troll with loose hanging skin, curling nails, or exposed bone might be in better health than their appearance would suggest.
+Trolls prefer to prey upon [humanoids](scc:mcdm.monsters.v1/rule.keyword/humanoid) and animals, but stories tell of them feeding on fetid [demons](scc:mcdm.monsters.v1/monster.group/demon) and [undead](scc:mcdm.monsters.v1/rule.keyword/undead), assimilating those creatures' flesh to magnificent and horrifying effect. A troll with loose hanging skin, curling nails, or exposed bone might be in better health than their appearance would suggest.
 
 ### Limbjumbles
 
@@ -19350,7 +19350,7 @@ When a suitably large piece of a troll is torn off in battle, it does its very b
 
 > **Mutating Your Trolls**
 >
-> At the Director's discretion, a troll can mutate after consuming the flesh of any creature and gain some of their damage immunities, traits, abilities, and movement options. For instance, a troll who devours the carcass of a dead [draconian](scc:mcdm.monsters.v1/monster.group/draconians) might grow wings and gain their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)!
+> At the Director's discretion, a troll can mutate after consuming the flesh of any creature and gain some of their damage immunities, traits, abilities, and movement options. For instance, a troll who devours the carcass of a dead [draconian](scc:mcdm.monsters.v1/monster.group/draconian) might grow wings and gain their [signature ability](scc:mcdm.heroes.v1/rule.combat/signature-ability)!
 >
 > Be aware that this can increase the difficulty category of an encounter while one or more of these mutated trolls are present—especially if their mutations enable them to deal more damage than normal or grant them an acid or fire damage immunity.
 
@@ -24870,7 +24870,7 @@ At the start of any level 10 or higher war dog's turn, you can spend [Malice](sc
 
 A wolf howls and your bowels freeze. Terror overcomes you. Sweat makes your skin slick, your senses sharpened. The moon is high but you feel hot. You're burning up. There's blood in your mouth and a corpse at your feet. Where did that come from?! That animal... that *thing* that almost clawed you to death last week... was it a wolf ? Was it *just* a wolf ?
 
-Werewolves are shapeshifters filled with a need to rend and tear. They used to be ordinary [humans](scc:mcdm.monsters.v1/monster.group/humans), elves, polders, and the like. But when their feral compulsion takes control, their eyes turn blood red and they change into massive wolves or abominable hybrid beasts.
+Werewolves are shapeshifters filled with a need to rend and tear. They used to be ordinary [humans](scc:mcdm.monsters.v1/monster.group/human), elves, polders, and the like. But when their feral compulsion takes control, their eyes turn blood red and they change into massive wolves or abominable hybrid beasts.
 
 #### Howling Primordial Chaos
 
@@ -24878,7 +24878,7 @@ Werewolves are swirling conductors of the Primordial Chaos. Their bodies overflo
 
 #### Brokered or Cursed
 
-The curse of the werewolf is actively sought out by terrible nobles and rulers looking to extend their power and instill fear into their people. They secure deals with [devils](scc:mcdm.monsters.v1/monster.group/devils) who can tap into the Primordial Chaos and unleash their beast, usually in exchange for relinquishing their legacy after they pass.
+The curse of the werewolf is actively sought out by terrible nobles and rulers looking to extend their power and instill fear into their people. They secure deals with [devils](scc:mcdm.monsters.v1/monster.group/devil) who can tap into the Primordial Chaos and unleash their beast, usually in exchange for relinquishing their legacy after they pass.
 
 Laypeople don't have the luxury of a legacy, nor do they have councils that can help temper a werewolf. They know full well the horror of losing oneself to the beast, and take action to rout out the threat of a werewolf among them. Fear leaves people submissive to the demands of cursed kings, yet oppressive to their own accursed kin.
 
@@ -25037,7 +25037,7 @@ At the start of a werewolf's turn, you can spend [Malice](scc:mcdm.monsters.v1/r
 
 The sight of a wyvern perched high atop a rotting tree or lit upon the jagged peak of a shadowy mountain marks the boundary between the known lands and forest primeval. There are raw, ancient sorceries in the wilderness that imbue those lands with power and hate older than roads and carts.
 
-Though they superficially resemble [dragons](scc:mcdm.monsters.v1/monster.group/dragons), wyverns are not [dragons](scc:mcdm.monsters.v1/monster.group/dragons) or dragon-kin. Distant relatives of the terror lizards of Ix, wyverns sport tough, leathery skin with hues running from brown to red to black depending on their native terrain. They are solitary creatures who track their prey by following the smell of fear they create.
+Though they superficially resemble [dragons](scc:mcdm.monsters.v1/monster.group/dragon), wyverns are not [dragons](scc:mcdm.monsters.v1/monster.group/dragon) or dragon-kin. Distant relatives of the terror lizards of Ix, wyverns sport tough, leathery skin with hues running from brown to red to black depending on their native terrain. They are solitary creatures who track their prey by following the smell of fear they create.
 
 #### Mountain Hunters
 
@@ -25237,7 +25237,7 @@ Unwitting explorers sometimes accidentally abscond with an egg. If unfertilized,
 
 Xorannox (*ZOR-ah-nocks*) rules as Lord of the White Tower, an isolated, multilevel finger of alabaster stone connecting to the World Below. He is commonly known as the Tyract, an ancient Za'hariax word that literally translates as "a king who rules with his teeth"-and the overmind indeed consumes those who displease him.
 
-Xorannox is chief of the Grasp, a secret organization that seeks to overthrow the [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talkers)' great empire and place Xorannox above all, first as king, then as god. The Tyract is a master strategist, always one step ahead of his enemies. Heroes may be surprised to discover their allies are members of the Grasp. When they meet Xorannox, he's delighted! He loves treating with humanoids! They have the same enemies, after all.
+Xorannox is chief of the Grasp, a secret organization that seeks to overthrow the [voiceless talkers](scc:mcdm.monsters.v1/monster.group/voiceless-talker)' great empire and place Xorannox above all, first as king, then as god. The Tyract is a master strategist, always one step ahead of his enemies. Heroes may be surprised to discover their allies are members of the Grasp. When they meet Xorannox, he's delighted! He loves treating with humanoids! They have the same enemies, after all.
 
 Unfortunately, no matter how useful or dependable a party of heroes might be, Xorannox is nearly incapable of resisting the urge to betray his allies. He assumes, as do most vaurathi, that the natural end of all alliances is betrayal. Thus when the gauntlet is thrown and his life is in danger, the only [minions](scc:mcdm.monsters.v1/rule.organization/minion) he can truly trust are his own six eyes.
 
@@ -25322,7 +25322,7 @@ Overminds typically speak Za'hariax. Xorannox also speaks Caelian, Hyrallic, and
 
 > ⭐️ **Natural Enemies**
 >
-> If Xorannox perceives another overmind or a [voiceless talker](scc:mcdm.monsters.v1/monster.group/voiceless-talkers) on the encounter map, he targets that threat one or more times on each of his turns.
+> If Xorannox perceives another overmind or a [voiceless talker](scc:mcdm.monsters.v1/monster.group/voiceless-talker) on the encounter map, he targets that threat one or more times on each of his turns.
 
 > ☠️ **Disruption Beam ([Villain Action](scc:mcdm.monsters.v1/rule.monster/villain-action) 1)**
 >
