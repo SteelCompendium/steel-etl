@@ -26885,8 +26885,8 @@ A massive crossbow fires thick metal bolts with devastating effect.
 > **Power Roll + 2:**
 >
 > - **≤11:** Pull 1
-> - **12-16:** Pull
-> - **17+:** 3 Pull 5
+> - **12-16:** Pull 3
+> - **17+:** Pull 5
 >
 > **Effect:** This [forced movement](scc:mcdm.heroes.v1/movement/forced-movement) triggers [opportunity attacks](scc:mcdm.heroes.v1/rule.combat/opportunity-attack).
 
