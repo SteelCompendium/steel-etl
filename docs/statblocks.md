@@ -217,6 +217,26 @@ to the same bestiary cards
 creatures. The mixed `retainer/` root (monster retainers + the summoner subgroup)
 renders monster retainer cards plus a `Summoner` folder card.
 
+**Statblock head eyebrow (provenance).** The `sb__kw` line above the creature
+name (rendered by `statblock_card.go`) is `—` or junk for these summoner
+statblocks — their source tables put `—`, "Humanoid, Rival", or the creature's
+own name where `keywords` normally sit. `summonerProvenanceEyebrow`
+(`summoner_provenance.go`) overrides `sbIsland.Ancestry` in `buildStatblockIsland`
+with a label derived from the page's `scc` code:
+
+| SCC type-path (under `mcdm.summoner.v1/`) | Eyebrow |
+|---|---|
+| `monster.rivals.{ech}.summoner.minion` | `Rival Summoner Summon · Echelon N` |
+| `monster.rivals.{ech}.statblock` | `Rival Summoner · Echelon N` |
+| `monster.minion.summoner.{circle}.statblock` | `Summoner Minion · {Circle}` |
+| `monster.champion.summoner.{circle}.statblock` | `Summoner Champion · {Circle}` |
+
+⚠️ Gated on the `mcdm.summoner.` **source** prefix so the look-alike Monsters-book
+`mcdm.monsters.v1/monster.rivals.{ech}.statblock` tree — which keeps its real
+"Humanoid, Rival" keywords — is untouched. Like the bestiary-card label it is
+`scc`-derived, so no data/schema change. Spec:
+`docs/superpowers/specs/2026-06-15-summoner-statblock-provenance-eyebrow-design.md`.
+
 The Summoner source is **fully link-swept** (2026-06-11): 1,464 inline `scc:` links
 (1,292 cross-book to Heroes, 172 internal), including all 80 statblocks — the first
 statblock source to be linked. Cross-book links to Heroes resolve to relative paths
