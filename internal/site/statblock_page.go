@@ -166,10 +166,17 @@ func buildStatblockIsland(fm, body string) sbIsland {
 		captain = strings.TrimSpace(m[1])
 	}
 
+	// The keyword line (sb__kw eyebrow) is "—" or junk for summoner-book
+	// statblocks; replace it with a provenance label derived from the scc code.
+	ancestry := strings.Join(parseFrontmatterList(fm, "keywords"), ", ")
+	if eb := summonerProvenanceEyebrow(parseFrontmatterField(fm, "scc")); eb != "" {
+		ancestry = eb
+	}
+
 	return sbIsland{
 		ID:       slugify(name),
 		Name:     name,
-		Ancestry: strings.Join(parseFrontmatterList(fm, "keywords"), ", "),
+		Ancestry: ancestry,
 		Level:    strings.TrimSpace(parseFrontmatterField(fm, "level")),
 		Role:     roleDisplay,
 		RoleKey:  roleKey,

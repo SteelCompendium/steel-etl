@@ -364,3 +364,30 @@ func featureNames(feats []sbFeature) []string {
 	}
 	return out
 }
+
+func TestBuildStatblockIsland_ProvenanceEyebrowOverridesKeywords(t *testing.T) {
+	// A rival summoner minion: keywords say "—", but the scc carries echelon +
+	// rival context, so the eyebrow (Ancestry) must be the derived provenance.
+	fm := "name: Zombie Titan\n" +
+		"organization: Minion\n" +
+		"role: Defender\n" +
+		"keywords:\n    - —\n" +
+		"scc: mcdm.summoner.v1/monster.rivals.4th-echelon.summoner.minion/zombie-titan\n"
+	got := buildStatblockIsland(fm, "")
+	if got.Ancestry != "Rival Summoner Summon · Echelon 4" {
+		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Rival Summoner Summon · Echelon 4")
+	}
+}
+
+func TestBuildStatblockIsland_NonSummonerKeepsKeywords(t *testing.T) {
+	// A Monsters-book statblock keeps its real keyword-derived ancestry.
+	fm := "name: Goblin Warrior\n" +
+		"organization: Minion\n" +
+		"role: Harrier\n" +
+		"keywords:\n    - Humanoid\n    - Goblin\n" +
+		"scc: mcdm.monsters.v1/monster.goblins.statblock/goblin-warrior\n"
+	got := buildStatblockIsland(fm, "")
+	if got.Ancestry != "Humanoid, Goblin" {
+		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Humanoid, Goblin")
+	}
+}
