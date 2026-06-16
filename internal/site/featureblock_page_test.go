@@ -236,6 +236,44 @@ func TestRenderFbFeat_NoUsageNoEyebrow(t *testing.T) {
 	}
 }
 
+// Placeholder "-" keywords (Field Ballista's Reload/Spot) must not render an empty
+// chip row; real keywords mixed with dashes keep only the real ones.
+func TestRenderFbFeat_DashKeywordsDropped(t *testing.T) {
+	dashOnly := renderFbFeats([]fbFeature{{Name: "Reload", Keywords: []string{"-"}}})
+	if strings.Contains(dashOnly, "sc-ability__kw") {
+		t.Errorf("dash-only keywords should drop the chip row:\n%s", dashOnly)
+	}
+	for _, dash := range []string{"-", "—", "–"} {
+		s := renderFbFeats([]fbFeature{{Name: "Strike", Keywords: []string{"Ranged", dash, "Weapon"}}})
+		if !strings.Contains(s, ">Ranged<") || !strings.Contains(s, ">Weapon<") {
+			t.Errorf("real keywords dropped for dash %q:\n%s", dash, s)
+		}
+		if strings.Contains(s, ">"+dash+"<") {
+			t.Errorf("dash %q kept as a chip:\n%s", dash, s)
+		}
+	}
+}
+
+// When BOTH Distance and Target are blank-or-dash the whole rail row is dropped;
+// if either carries a real value the row stays (the dash cell shows an em-dash).
+func TestRenderFbFeat_DashRailDropped(t *testing.T) {
+	for _, dt := range [][2]string{{"-", "-"}, {"", "—"}, {"–", ""}} {
+		s := renderFbFeats([]fbFeature{{Name: "Reload", Distance: dt[0], Target: dt[1]}})
+		if strings.Contains(s, "sc-ability__rail") {
+			t.Errorf("rail should drop for Distance=%q Target=%q:\n%s", dt[0], dt[1], s)
+		}
+	}
+	// one real value keeps the row; the dash cell renders as an em-dash, not "-"
+	s := renderFbFeats([]fbFeature{{Name: "Burst", Distance: "10 burst", Target: "-"}})
+	if !strings.Contains(s, "sc-ability__rail") || !strings.Contains(s, "10 burst") {
+		t.Fatalf("rail with one real value should render:\n%s", s)
+	}
+	railIdx := strings.Index(s, "sc-ability__rail")
+	if strings.Contains(s[railIdx:], ">-<") {
+		t.Errorf("dash Target should render as em-dash, not literal '-':\n%s", s)
+	}
+}
+
 // A test feature's lead-in (Intro) must render ABOVE the power roll. Regression
 // for Pavise Shield's Deactivate, whose "As a maneuver, … Might test." rendered
 // below the tiers because it was stored as Body.

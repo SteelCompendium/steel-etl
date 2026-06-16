@@ -288,6 +288,34 @@ func renderFbFeats(feats []fbFeature) string {
 	return b.String()
 }
 
+// fbBlankOrDash reports whether a featureblock cell is "empty" for display: blank
+// or made up only of dash-like placeholder glyphs (hyphen, en/em dash, minus, …)
+// that source tables use to mean "no value".
+func fbBlankOrDash(s string) bool {
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return true
+	}
+	for _, r := range s {
+		switch r {
+		case '-', '‐', '‑', '‒', '–', '—', '―', '−':
+			// dash-like placeholder
+		default:
+			return false
+		}
+	}
+	return true
+}
+
+// fbRailValue renders a kept rail cell: a blank-or-dash value collapses to a clean
+// em-dash rather than a literal "-"; otherwise it defers to railValue.
+func fbRailValue(s string) string {
+	if fbBlankOrDash(s) {
+		return "—"
+	}
+	return railValue(s)
+}
+
 // renderFbFeat writes one feature: article.sc-ability.fb__feat with the one-line
 // head (icon · name · cost), reused ability-card internals (kw / rail / power
 // roll / sections / enhancements), and the table-less body / trailing note.
@@ -316,20 +344,28 @@ func renderFbFeat(b *strings.Builder, f fbFeature) {
 		fmt.Fprintf(b, "<div class=\"fb__feat-intro\">%s</div>\n", richInline(intro))
 	}
 
-	// keyword chips
-	if len(f.Keywords) > 0 {
+	// keyword chips — drop placeholder dashes ("-"/"—") and empties so usage-only
+	// features (Field Ballista's Reload/Spot) don't render a chip of nothing.
+	var kw []string
+	for _, k := range f.Keywords {
+		if !fbBlankOrDash(k) {
+			kw = append(kw, k)
+		}
+	}
+	if len(kw) > 0 {
 		b.WriteString("<div class=\"sc-ability__kw\">")
-		for _, k := range f.Keywords {
+		for _, k := range kw {
 			fmt.Fprintf(b, "<span class=\"sc-ability__chip\">%s</span>", richInline(strings.TrimSpace(k)))
 		}
 		b.WriteString("</div>\n")
 	}
 
-	// distance / target rail
-	if strings.TrimSpace(f.Distance) != "" || strings.TrimSpace(f.Target) != "" {
+	// distance / target rail — drop the whole row when BOTH are blank-or-dash;
+	// if either carries a real value keep it, rendering the dash cell as an em-dash.
+	if !fbBlankOrDash(f.Distance) || !fbBlankOrDash(f.Target) {
 		b.WriteString("<div class=\"sc-ability__rail\">")
-		fmt.Fprintf(b, "<div class=\"sc-ability__cell\"><div class=\"l\">Distance</div><div class=\"v\">%s</div></div>", railValue(f.Distance))
-		fmt.Fprintf(b, "<div class=\"sc-ability__cell\"><div class=\"l\">Targets</div><div class=\"v\">%s</div></div>", railValue(f.Target))
+		fmt.Fprintf(b, "<div class=\"sc-ability__cell\"><div class=\"l\">Distance</div><div class=\"v\">%s</div></div>", fbRailValue(f.Distance))
+		fmt.Fprintf(b, "<div class=\"sc-ability__cell\"><div class=\"l\">Targets</div><div class=\"v\">%s</div></div>", fbRailValue(f.Target))
 		b.WriteString("</div>\n")
 	}
 
