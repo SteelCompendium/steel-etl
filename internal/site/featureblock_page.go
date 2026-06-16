@@ -294,12 +294,19 @@ func renderFbFeats(feats []fbFeature) string {
 func renderFbFeat(b *strings.Builder, f fbFeature) {
 	fmt.Fprintf(b, "<article class=\"sc-ability fb__feat\" data-action=\"%s\">\n", fbFeatureAction(f))
 
-	// head: icon · name · cost
+	// head: icon · (usage eyebrow over) name · cost
 	b.WriteString("<div class=\"fb__feat-head\">")
 	if ic := strings.TrimSpace(f.Icon); ic != "" {
 		fmt.Fprintf(b, "<span class=\"fb__feat-icon\">%s</span>", html.EscapeString(ic))
 	}
+	b.WriteString("<div class=\"fb__feat-titles\">")
+	// usage eyebrow ("Main action (Adjacent creature)") — the human-readable form
+	// of the data-action accent; without it usage-only features (Reload/Spot) are bare.
+	if usage := strings.TrimSpace(f.Usage); usage != "" {
+		fmt.Fprintf(b, "<div class=\"fb__feat-eyebrow\"><span class=\"sc-ability__dia\"></span>%s</div>", richInline(usage))
+	}
 	fmt.Fprintf(b, "<h3 class=\"fb__feat-name sc-ability__name\">%s</h3>", html.EscapeString(strings.TrimSpace(f.Name)))
+	b.WriteString("</div>")
 	fmt.Fprintf(b, "<div class=\"fb__feat-corner\">%s</div>", costBadge(strings.TrimSpace(f.Cost)))
 	b.WriteString("</div>\n")
 

@@ -204,6 +204,38 @@ func TestRenderFbFeats_TerrainSpecialAndPowerRoll(t *testing.T) {
 	}
 }
 
+// A feature's usage ("Main action (Adjacent creature)") must render as an eyebrow
+// above the name. Regression for the Field Ballista's Reload/Spot, whose usage was
+// parsed but only fed the data-action accent — never shown — leaving the cards bare.
+func TestRenderFbFeat_UsageEyebrow(t *testing.T) {
+	feat := fbFeature{
+		Icon: "⭐️", Name: "Reload", Usage: "Main action (Adjacent creature)",
+		Sections: []fbSection{{Label: "Effect", Text: "The field ballista is reloaded."}},
+	}
+	s := renderFbFeats([]fbFeature{feat})
+	if !strings.Contains(s, `class="fb__feat-eyebrow"`) {
+		t.Fatalf("missing fb__feat-eyebrow in:\n%s", s)
+	}
+	if !strings.Contains(s, "Main action (Adjacent creature)") {
+		t.Fatalf("eyebrow missing usage text in:\n%s", s)
+	}
+	// eyebrow renders before the name (inside the head's titles wrapper)
+	idxEye := strings.Index(s, `class="fb__feat-eyebrow"`)
+	idxName := strings.Index(s, `class="fb__feat-name`)
+	if idxEye < 0 || idxName < 0 || idxEye > idxName {
+		t.Errorf("eyebrow (%d) must render before name (%d):\n%s", idxEye, idxName, s)
+	}
+}
+
+// A feature with no usage (a passive/trait) must NOT emit an empty eyebrow.
+func TestRenderFbFeat_NoUsageNoEyebrow(t *testing.T) {
+	feat := fbFeature{Icon: "⭐️", Name: "Upgrades", Body: "Some passive prose."}
+	s := renderFbFeats([]fbFeature{feat})
+	if strings.Contains(s, `class="fb__feat-eyebrow"`) {
+		t.Errorf("unexpected eyebrow for usage-less feature in:\n%s", s)
+	}
+}
+
 // A test feature's lead-in (Intro) must render ABOVE the power roll. Regression
 // for Pavise Shield's Deactivate, whose "As a maneuver, … Might test." rendered
 // below the tiers because it was stored as Body.
