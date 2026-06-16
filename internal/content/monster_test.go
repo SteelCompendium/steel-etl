@@ -273,8 +273,8 @@ func TestStatblockParser_SummonerRival(t *testing.T) {
 	cases := []struct {
 		name, heading, body, want string
 	}{
-		{"npc", "Rival Summoner", npcBody, "monster/rivals/2nd-echelon/statblock"},
-		{"summon", "Skeleton", summonBody, "monster/rivals/2nd-echelon/summoner/minion"},
+		{"npc", "Rival Summoner", npcBody, "monster/rival/2nd-echelon/statblock"},
+		{"summon", "Skeleton", summonBody, "monster/rival/2nd-echelon/summoner/minion"},
 	}
 	for _, tc := range cases {
 		t.Run(tc.name, func(t *testing.T) {

@@ -8,14 +8,14 @@ import "strings"
 // minions, the creature's own name). Returns "" for any code that is not a
 // summoner-book creature statblock.
 //
-// The Monsters-book `mcdm.monsters.v1/monster.rivals.{ech}.statblock` tree shares
-// the `monster.rivals.*` shape but is a different book and must stay untouched —
+// The Monsters-book `mcdm.monsters.v1/monster.rival.{ech}.statblock` tree shares
+// the `monster.rival.*` shape but is a different book and must stay untouched —
 // the `mcdm.summoner.` source-prefix gate is what excludes it.
 //
 // Recognized type-paths (the segment between source and item):
 //
-//	monster.rivals.{ech}.summoner.minion         → "Rival Summoner Summon · Echelon N"
-//	monster.rivals.{ech}.statblock               → "Rival Summoner · Echelon N"
+//	monster.rival.{ech}.summoner.minion          → "Rival Summoner Summon · Echelon N"
+//	monster.rival.{ech}.statblock                → "Rival Summoner · Echelon N"
 //	monster.minion.summoner.{circle}.statblock   → "Summoner Minion · {Circle}"
 //	monster.champion.summoner.{circle}.statblock → "Summoner Champion · {Circle}"
 func summonerProvenanceEyebrow(scc string) string {
@@ -32,14 +32,14 @@ func summonerProvenanceEyebrow(scc string) string {
 	seg := strings.Split(typePath, ".")
 
 	switch {
-	// monster.rivals.{ech}.summoner.minion
-	case len(seg) == 5 && seg[0] == "monster" && seg[1] == "rivals" &&
+	// monster.rival.{ech}.summoner.minion
+	case len(seg) == 5 && seg[0] == "monster" && seg[1] == "rival" &&
 		seg[3] == "summoner" && seg[4] == "minion":
 		if n := echelonNum(seg[2]); n != "" {
 			return "Rival Summoner Summon · Echelon " + n
 		}
-	// monster.rivals.{ech}.statblock
-	case len(seg) == 4 && seg[0] == "monster" && seg[1] == "rivals" &&
+	// monster.rival.{ech}.statblock
+	case len(seg) == 4 && seg[0] == "monster" && seg[1] == "rival" &&
 		seg[3] == "statblock":
 		if n := echelonNum(seg[2]); n != "" {
 			return "Rival Summoner · Echelon " + n

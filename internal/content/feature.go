@@ -28,7 +28,7 @@ func (p *FeatureGroupParser) Parse(ctx *context.ContextStack, section *parser.Se
 
 	// Companion species containers (beastheart) are first-class. They are
 	// statblock-IDENTITY entities in the monster.companion.<class>.* namespace
-	// (mirroring monster.rivals.<echelon>.statblock), but keep rendering as a
+	// (mirroring monster.rival.<echelon>.statblock), but keep rendering as a
 	// feature-group page (spec 2026-06-13 §5) and still push `companion`
 	// context to their member features/abilities.
 	if companion, ok := section.Annotation["companion"]; ok && companion != "" {

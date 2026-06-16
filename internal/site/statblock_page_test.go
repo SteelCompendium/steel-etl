@@ -372,7 +372,7 @@ func TestBuildStatblockIsland_ProvenanceEyebrowOverridesKeywords(t *testing.T) {
 		"organization: Minion\n" +
 		"role: Defender\n" +
 		"keywords:\n    - —\n" +
-		"scc: mcdm.summoner.v1/monster.rivals.4th-echelon.summoner.minion/zombie-titan\n"
+		"scc: mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion/zombie-titan\n"
 	got := buildStatblockIsland(fm, "")
 	if got.Ancestry != "Rival Summoner Summon · Echelon 4" {
 		t.Errorf("Ancestry = %q, want %q", got.Ancestry, "Rival Summoner Summon · Echelon 4")

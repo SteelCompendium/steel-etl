@@ -74,12 +74,12 @@ func listSummonFiles(summonDir string) []string {
 }
 
 // augmentRivalSummonerPages adds Rival Summoner ⇄ summons cross-references under
-// sectionDir/monster/rivals: a "## Summons" card block on each Rival Summoner page
+// sectionDir/monster/rival: a "## Summons" card block on each Rival Summoner page
 // and a "Summoned by" back-link on each summon page. Derives the relationship from
 // the tree (a Rival Summoner's summons are its sibling summoner/minion/* set), runs
 // after pages are written, and is idempotent. Returns the number of pages modified.
 func augmentRivalSummonerPages(sectionDir string) (int, []string) {
-	rivalsDir := filepath.Join(sectionDir, "monster", "rivals")
+	rivalsDir := filepath.Join(sectionDir, "monster", "rival")
 	if _, err := os.Stat(rivalsDir); err != nil {
 		return 0, nil
 	}

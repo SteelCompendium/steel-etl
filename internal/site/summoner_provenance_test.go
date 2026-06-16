@@ -10,12 +10,12 @@ func TestSummonerProvenanceEyebrow(t *testing.T) {
 	}{
 		{
 			name: "rival minion",
-			scc:  "mcdm.summoner.v1/monster.rivals.4th-echelon.summoner.minion/zombie-titan",
+			scc:  "mcdm.summoner.v1/monster.rival.4th-echelon.summoner.minion/zombie-titan",
 			want: "Rival Summoner Summon · Echelon 4",
 		},
 		{
 			name: "rival elite",
-			scc:  "mcdm.summoner.v1/monster.rivals.1st-echelon.statblock/rival-summoner",
+			scc:  "mcdm.summoner.v1/monster.rival.1st-echelon.statblock/rival-summoner",
 			want: "Rival Summoner · Echelon 1",
 		},
 		{
@@ -32,7 +32,7 @@ func TestSummonerProvenanceEyebrow(t *testing.T) {
 			// CRITICAL non-match: Monsters-book rivals share the shape but are a
 			// different book and must be left alone.
 			name: "monsters-book rival is not matched",
-			scc:  "mcdm.monsters.v1/monster.rivals.4th-echelon.statblock/rival-fury",
+			scc:  "mcdm.monsters.v1/monster.rival.4th-echelon.statblock/rival-fury",
 			want: "",
 		},
 		{

@@ -161,13 +161,13 @@ func (p *StatblockParser) Parse(ctx *context.ContextStack, section *parser.Secti
 		typePath = compactPath("monster", "champion", "summoner", category, "statblock")
 	case "rival":
 		// The Rival Summoner NPC sits beside the Monsters-book rivals
-		// (monster.rivals.<echelon>.statblock); its minion summons nest under
-		// monster.rivals.<echelon>.summoner.minion. The source @category
+		// (monster.rival.<echelon>.statblock); its minion summons nest under
+		// monster.rival.<echelon>.summoner.minion. The source @category
 		// ("summoner") is dropped; @subcategory is the echelon.
 		if org, _ := fm["organization"].(string); org == "Minion" {
-			typePath = compactPath("monster", "rivals", subcategory, "summoner", "minion")
+			typePath = compactPath("monster", "rival", subcategory, "summoner", "minion")
 		} else {
-			typePath = compactPath("monster", "rivals", subcategory, "statblock")
+			typePath = compactPath("monster", "rival", subcategory, "statblock")
 		}
 	}
 

@@ -17274,7 +17274,7 @@ At the start of any radenwight's turn, you can spend [Malice](scc:mcdm.monsters.
 >
 > **Effect:** Each target stands, makes a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike), then falls dead again. Any ally of the targets can use Ready Rodent as a free triggered action once in conjunction with these free strikes.
 
-<!-- @type: monster | @category: rivals -->
+<!-- @type: monster | @category: rival -->
 ## Rivals
 
 They take the jobs you were eyeing on the local town's job board. They sit at your favorite table in the tavern with the best drinks, food, and entertainment. You know their names, and they know yours. They're rivals—heroes just like you. Maybe even better.

@@ -16,7 +16,7 @@ role: Harrier
 size: 1S
 speed: 6
 type: statblock
-scc: mcdm.summoner.v1/monster.rivals.2nd-echelon.summoner.minion/skeleton
+scc: mcdm.summoner.v1/monster.rival.2nd-echelon.summoner.minion/skeleton
 `
 
 const summonGraveKnightFM = `keywords:
@@ -27,7 +27,7 @@ role: Brute
 size: 1M
 speed: 6
 type: statblock
-scc: mcdm.summoner.v1/monster.rivals.2nd-echelon.summoner.minion/grave-knight
+scc: mcdm.summoner.v1/monster.rival.2nd-echelon.summoner.minion/grave-knight
 `
 
 func TestRivalSummonsCards(t *testing.T) {
@@ -62,7 +62,7 @@ const rivalSummonerFM = `name: Rival Summoner
 organization: Elite
 role: Controller
 type: statblock
-scc: mcdm.summoner.v1/monster.rivals.2nd-echelon.statblock/rival-summoner
+scc: mcdm.summoner.v1/monster.rival.2nd-echelon.statblock/rival-summoner
 `
 
 // rivalFuryFM is a co-located Monsters-book rival — must NOT get a summons block.
@@ -70,7 +70,7 @@ const rivalFuryFM = `name: Rival Fury
 organization: Solo
 role: Brute
 type: statblock
-scc: mcdm.monsters.v1/monster.rivals.2nd-echelon.statblock/rival-fury
+scc: mcdm.monsters.v1/monster.rival.2nd-echelon.statblock/rival-fury
 `
 
 func writeStatblockPage(t *testing.T, path, frontmatter, name string) {
@@ -87,7 +87,7 @@ func writeStatblockPage(t *testing.T, path, frontmatter, name string) {
 
 func TestAugmentRivalSummonerPages(t *testing.T) {
 	sec := t.TempDir()
-	ech := filepath.Join(sec, "monster", "rivals", "2nd-echelon")
+	ech := filepath.Join(sec, "monster", "rival", "2nd-echelon")
 	writeStatblockPage(t, filepath.Join(ech, "rival-summoner.md"), rivalSummonerFM, "Rival Summoner")
 	writeStatblockPage(t, filepath.Join(ech, "rival-fury.md"), rivalFuryFM, "Rival Fury")
 	minion := filepath.Join(ech, "summoner", "minion")
@@ -145,7 +145,7 @@ func TestAugmentRivalSummonerPages(t *testing.T) {
 }
 
 func TestAugmentRivalSummonerPages_NoTree(t *testing.T) {
-	// No monster/rivals dir → no-op, no error.
+	// No monster/rival dir → no-op, no error.
 	n, errs := augmentRivalSummonerPages(t.TempDir())
 	if n != 0 || len(errs) != 0 {
 		t.Errorf("expected no-op, got n=%d errs=%v", n, errs)

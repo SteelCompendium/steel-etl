@@ -188,7 +188,7 @@ func TestIsBestiaryEchelonDir(t *testing.T) {
 	}{
 		{"monster/demons/1st-echelon", true},
 		{"monster/war-dogs/4th-echelon", true},
-		{"monster/rivals/2nd-echelon", true},
+		{"monster/rival/2nd-echelon", true},
 		{"monster/demons", false},  // the group dir itself
 		{"monster", false},         // type root
 		{"monster/goblins", false}, // a non-echelon group
