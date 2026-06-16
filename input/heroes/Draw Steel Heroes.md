@@ -21965,10 +21965,9 @@ Every hero has two standard [free strike](scc:mcdm.heroes.v1/feature.common.main
 
 A [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapon free strike is a [melee](scc:mcdm.heroes.v1/rule.combat/melee) [strike](scc:mcdm.heroes.v1/rule.combat/strike) made with an unarmed [strike](scc:mcdm.heroes.v1/rule.combat/strike) or an improvised weapon. A [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) weapon free strike is a [ranged](scc:mcdm.heroes.v1/rule.combat/ranged) [strike](scc:mcdm.heroes.v1/rule.combat/strike) made with an improvised weapon. At the Director's discretion, the [damage type](scc:mcdm.heroes.v1/rule.damage/damage-type) of an improvised weapon can change based on the object used. For example, if you use a burning torch as an improvised weapon, it could deal fire damage when used for a [free strike](scc:mcdm.heroes.v1/feature.common.main-actions/free-strike).
 
-<!-- @type: ability | @subtype: free-strike | @id: melee-weapon-free-strike-combat -->
-###### Melee Weapon Free Strike
+**Melee Weapon Free Strike**
 
-| **Charge, [Melee](scc:mcdm.heroes.v1/rule.combat/melee), Stike, Weapon** |               **Main action** |
+| **Charge, [Melee](scc:mcdm.heroes.v1/rule.combat/melee), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 | -------------------------------- | -----------------------------:|
 | **📏 [Melee](scc:mcdm.heroes.v1/rule.combat/melee) 1**                   | **🎯 One creature or object** |
 
@@ -21978,10 +21977,9 @@ A [melee](scc:mcdm.heroes.v1/rule.combat/melee) weapon free strike is a [melee](
 - **12-16:** 5 + M or A damage
 - **17+:** 7 + M or A damage
 
-<!-- @type: ability | @subtype: free-strike | @id: ranged-weapon-free-strike-combat -->
-###### Ranged Weapon Free Strike
+**Ranged Weapon Free Strike**
 
-| **[Ranged](scc:mcdm.heroes.v1/rule.combat/ranged), Stike, Weapon** |               **Main action** |
+| **[Ranged](scc:mcdm.heroes.v1/rule.combat/ranged), [Strike](scc:mcdm.heroes.v1/rule.combat/strike), Weapon** |               **Main action** |
 |---------------------------| -----------------------------:|
 | **📏 [Ranged](scc:mcdm.heroes.v1/rule.combat/ranged) 5**           | **🎯 One creature or object** |
 

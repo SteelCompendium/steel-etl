@@ -118,11 +118,12 @@ func (p *AbilityParser) Parse(ctx *context.ContextStack, section *parser.Section
 	} else if parentID != "" {
 		typePath = append(typePath, parentID)
 	} else {
-		groupID := findAncestorID(ctx, section.HeadingLevel, "feature-group")
+		// Common abilities are flat under `feature.ability.common` regardless of
+		// any feature-group ancestor (the Combat chapter's "Maneuvers" /
+		// "Free Strikes" groups): we don't sub-group common abilities the way
+		// class trees do, so a maneuver/free-strike ability lives directly under
+		// common, not feature.ability.common.<group> (FOLLOWUPS #17).
 		typePath = append(typePath, "common")
-		if groupID != "" {
-			typePath = append(typePath, groupID)
-		}
 	}
 	// Named feature-group grouping under a class (mirrors FeatureParser): an
 	// ability sitting directly inside a named feature-group — class-scoped, no
@@ -168,11 +169,11 @@ var (
 	// Roll", and capture the full characteristics expression verbatim (links kept,
 	// like the sibling effect/distance fields). Non-greedy up to the closing ":**"
 	// — scc: URLs contain ":" but never ":**", so the first ":**" is the real end.
-	powerRollHeaderRe      = regexp.MustCompile(`\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*`)
-	tierRe                 = regexp.MustCompile(`\*\*([^*]+):\*\*\s*(.+)`)
-	effectRe               = regexp.MustCompile(`\*\*Effect:\*\*\s*(.+)`)
-	spendRe                = regexp.MustCompile(`\*\*Spend\s+(.+?):\*\*\s*(.+)`)
-	triggerRe              = regexp.MustCompile(`\*\*Trigger:\*\*\s*(.+)`)
+	powerRollHeaderRe = regexp.MustCompile(`\*\*(?:\[Power Roll\]\([^)]*\)|Power Roll)\s*\+\s*(.+?):\*\*`)
+	tierRe            = regexp.MustCompile(`\*\*([^*]+):\*\*\s*(.+)`)
+	effectRe          = regexp.MustCompile(`\*\*Effect:\*\*\s*(.+)`)
+	spendRe           = regexp.MustCompile(`\*\*Spend\s+(.+?):\*\*\s*(.+)`)
+	triggerRe         = regexp.MustCompile(`\*\*Trigger:\*\*\s*(.+)`)
 )
 
 // extractAbilityFields parses the body text to extract structured fields.
