@@ -37,6 +37,21 @@ func TestParseStatGrid(t *testing.T) {
 	}
 }
 
+// escapedPipeGrid models a summoner minion grid where Stamina holds three
+// echelon values joined by escaped pipes ("4 \| 4 \| 4"). The escaped pipes are
+// literal cell content, not column separators.
+const escapedPipeGrid = "" +
+	"| — | Humanoid | Level 1 | Minion | EV 1 |\n" +
+	"|:-:|:--------:|:-------:|:------:|:----:|\n" +
+	"| **1M**<br>Size | **5**<br>Speed | **4 \\| 4 \\| 4**<br>Stamina | **0**<br>Stability | **3**<br>Free Strike |\n"
+
+func TestParseStatGridEscapedPipeStamina(t *testing.T) {
+	got := parseStatGrid(escapedPipeGrid)
+	if got.labels["Stamina"] != "4 | 4 | 4" {
+		t.Errorf("Stamina: got %q, want %q", got.labels["Stamina"], "4 | 4 | 4")
+	}
+}
+
 const cursespitterFeatures = "" +
 	"> 🏹 **Eye of Surlach (Signature Ability)**\n" +
 	">\n" +

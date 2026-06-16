@@ -79,6 +79,12 @@ link-wrapped characteristic (`2d10 + [R](scc:…)`) and a `linkDisplay` helper s
 link markup from the structured `roll` and from stat-grid cell values, while
 tier/effect values keep their `[x](scc:…)` links verbatim (the data-field convention).
 
+**Stat-grid cells honor escaped pipes** (`splitTableCells`, `statblock_parse.go`).
+Summoner minion/fixture/champion Stamina is a multi-value cell — `**4 \| 4 \| 4**<br>Stamina`
+— where `\|` is a literal pipe, not a column separator. Splitting the row naively on `|`
+shattered the cell so `cellRe` never matched and Stamina rendered as `—`; the row splitter
+treats `\|` as literal (unescaped to `|`) so the value survives as `4 | 4 | 4`.
+
 **Fixture** entities use a non-standard 2-column `| **Stamina:** … | **Size:** … |`
 grid plus an italic `*Hazard Support*` role line. Although they sit in `@type:
 statblock` source sections, `StatblockParser` reclassifies them as **featureblocks**

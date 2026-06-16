@@ -64,6 +64,31 @@ func splitRoleCell(cell string) (organization, role string) {
 	return organization, role
 }
 
+// splitTableCells splits one markdown table row into trimmed cells, honoring
+// backslash-escaped pipes ("\|") as literal cell content rather than column
+// separators. Escaped pipes are unescaped to a literal "|" in the result — this
+// preserves multi-value stat cells like "4 \| 4 \| 4" (summoner minion Stamina).
+func splitTableCells(line string) []string {
+	line = strings.Trim(strings.TrimSpace(line), "|")
+	var cells []string
+	var cur strings.Builder
+	for i := 0; i < len(line); i++ {
+		if line[i] == '\\' && i+1 < len(line) && line[i+1] == '|' {
+			cur.WriteByte('|') // escaped pipe → literal
+			i++
+			continue
+		}
+		if line[i] == '|' {
+			cells = append(cells, strings.TrimSpace(cur.String()))
+			cur.Reset()
+			continue
+		}
+		cur.WriteByte(line[i])
+	}
+	cells = append(cells, strings.TrimSpace(cur.String()))
+	return cells
+}
+
 // gridRows returns the non-separator table rows split into trimmed cells.
 func gridRows(grid string) [][]string {
 	var rows [][]string
@@ -75,20 +100,15 @@ func gridRows(grid string) [][]string {
 		if strings.Contains(line, "---") { // separator row
 			continue
 		}
-		raw := strings.Split(strings.Trim(line, "|"), "|")
-		cells := make([]string, len(raw))
-		for i, c := range raw {
-			cells[i] = strings.TrimSpace(c)
-		}
-		rows = append(rows, cells)
+		rows = append(rows, splitTableCells(line))
 	}
 	return rows
 }
 
 var (
-	sbTitleRe     = regexp.MustCompile(`^([^\sA-Za-z*][^*]*?)\s*\*\*(.+?)\*\*\s*$`)
-	sbParenRe     = regexp.MustCompile(`^(.*?)\s*\(([^)]+)\)\s*$`)
-	sbTierRe = regexp.MustCompile(`^-\s*\*\*(≤?\d+(?:-\d+)?\+?):\*\*\s*(.*)$`)
+	sbTitleRe = regexp.MustCompile(`^([^\sA-Za-z*][^*]*?)\s*\*\*(.+?)\*\*\s*$`)
+	sbParenRe = regexp.MustCompile(`^(.*?)\s*\(([^)]+)\)\s*$`)
+	sbTierRe  = regexp.MustCompile(`^-\s*\*\*(≤?\d+(?:-\d+)?\+?):\*\*\s*(.*)$`)
 	// sbPowerRollRe matches the Monsters labeled power-roll header "**Power Roll + N:**".
 	// "Power Roll" may be link-wrapped ("**[Power Roll](scc:…) + N:**"). The whole header
 	// stays in group 1; the consumer applies linkDisplay so the stored roll is link-free.
@@ -230,7 +250,7 @@ func parseOneFeature(block string) map[string]any {
 	var prose []string
 	roll := diceRoll
 	tierKeys := []string{"tier1", "tier2", "tier3"}
-	bareTierIdx := 0   // next positional tier slot for the dice-in-title form
+	bareTierIdx := 0 // next positional tier slot for the dice-in-title form
 	bareTiersDone := false
 	for _, line := range rest {
 		t := strings.TrimSpace(line)
