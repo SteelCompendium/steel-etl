@@ -36,12 +36,14 @@ func TestBuildAdvancementPairContent(t *testing.T) {
 		os.WriteFile(filepath.Join(dir, name), []byte("---\n"+fm+"\n---\n\nbody"), 0644)
 	}
 	write("wolf.md", "name: Wolf\ntype: feature-group")
-	write("wolf-advancement-features.md", "name: Wolf Advancement Features\ntype: featureblock")
+	write("wolf-advancement-features.md",
+		"name: Wolf Advancement Features\ntype: featureblock\n"+
+			"features:\n    - name: Pack Tactics\n      level: 3\n      body: x\n")
 	write("boar.md", "name: Boar\ntype: feature-group")
 	write("boar-advancement-features.md", "name: Boar Advancement Features\ntype: featureblock")
 
 	files := []string{"boar.md", "boar-advancement-features.md", "wolf.md", "wolf-advancement-features.md"}
-	out, ok := buildAdvancementPairContent(filepath.Join("monster/companion/beastheart"), "beastheart", files, nil)
+	out, ok := buildAdvancementPairContent(dir, "beastheart", files, nil)
 	if !ok {
 		t.Fatal("expected ok=true for a dir with advancement pairs")
 	}
@@ -59,6 +61,65 @@ func TestBuildAdvancementPairContent(t *testing.T) {
 	// Companion crest + distinguishing eyebrows.
 	if !strings.Contains(out, ">Companion<") || !strings.Contains(out, ">Advancement Features<") {
 		t.Errorf("expected Companion and Advancement Features eyebrows:\n%s", out)
+	}
+	// The advancement card now lists its gained features with level badges.
+	if !strings.Contains(out, `class="sc-card__advlist"`) ||
+		!strings.Contains(out, ">L3<") || !strings.Contains(out, ">Pack Tactics<") {
+		t.Errorf("expected advancement feature list on the card:\n%s", out)
+	}
+}
+
+func TestAdvancementCardInner(t *testing.T) {
+	dir := t.TempDir()
+	fm := "name: Panther Advancement Features\ntype: featureblock\n" +
+		"features:\n" +
+		"    - name: Cat and Mouse\n      level: 3\n      body: x\n" +
+		"    - name: Single Bound\n      level: 6\n      body: y\n" +
+		"    - name: Panther Spirit\n      level: 10\n      body: z\n"
+	if err := os.WriteFile(filepath.Join(dir, "panther-advancement-features.md"),
+		[]byte("---\n"+fm+"\n---\n\nbody"), 0644); err != nil {
+		t.Fatal(err)
+	}
+	inner := advancementCardInner(dir, "panther-advancement-features.md")
+	for _, want := range []string{
+		`class="sc-card__advlist"`,
+		`>L3<`, `>Cat and Mouse<`,
+		`>L6<`, `>Single Bound<`,
+		`>L10<`, `>Panther Spirit<`,
+	} {
+		if !strings.Contains(inner, want) {
+			t.Errorf("inner missing %q:\n%s", want, inner)
+		}
+	}
+	// Order: L3 before L6 before L10 (document order preserved).
+	if strings.Index(inner, ">L3<") > strings.Index(inner, ">L6<") ||
+		strings.Index(inner, ">L6<") > strings.Index(inner, ">L10<") {
+		t.Errorf("levels out of document order:\n%s", inner)
+	}
+}
+
+func TestAdvancementCardInner_NoFeatures(t *testing.T) {
+	dir := t.TempDir()
+	if err := os.WriteFile(filepath.Join(dir, "x-advancement-features.md"),
+		[]byte("---\nname: X\ntype: featureblock\n---\n\nbody"), 0644); err != nil {
+		t.Fatal(err)
+	}
+	if got := advancementCardInner(dir, "x-advancement-features.md"); got != "" {
+		t.Errorf("expected empty inner for a featureless adv leaf, got: %q", got)
+	}
+}
+
+func TestAdvancementCardInner_StripsLinks(t *testing.T) {
+	dir := t.TempDir()
+	fm := "name: X\ntype: featureblock\nfeatures:\n" +
+		"    - name: \"[Cat and Mouse](../../foo.md)\"\n      level: 3\n      body: x\n"
+	if err := os.WriteFile(filepath.Join(dir, "x-advancement-features.md"),
+		[]byte("---\n"+fm+"\n---\n\nbody"), 0644); err != nil {
+		t.Fatal(err)
+	}
+	inner := advancementCardInner(dir, "x-advancement-features.md")
+	if !strings.Contains(inner, ">Cat and Mouse<") || strings.Contains(inner, "foo.md") {
+		t.Errorf("expected link stripped to plain text, got:\n%s", inner)
 	}
 }
 

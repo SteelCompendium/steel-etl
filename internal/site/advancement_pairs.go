@@ -11,9 +11,13 @@ package site
 // docs/stylesheets/steel-redesign.css (.sc-cards--pairs).
 
 import (
+	"fmt"
+	"html"
 	"path/filepath"
 	"sort"
 	"strings"
+
+	"gopkg.in/yaml.v3"
 )
 
 const advFeatSuffix = "-advancement-features"
@@ -79,6 +83,33 @@ func companionPreviewCard(dir, baseFile string) (string, bool) {
 	return renderStatblockPreviewCard(island, baseFile, ""), true
 }
 
+// advancementCardInner builds the index-card inner HTML for an advancement-features
+// leaf: a compact one-row-per-feature list of the level each feature is gained at
+// plus its name (e.g. "L3 Cat and Mouse"). Data comes from the leaf's frontmatter
+// features[] (the same fbDoc shape featureblock_page.go renders on the full page),
+// which survives the leaf's HTML transform — so no cache is needed. Names are
+// link-stripped (linkText) then escaped. Returns "" when the leaf has no features,
+// so the caller falls back to the bare "Advancement Features" card.
+func advancementCardInner(dir, advFile string) string {
+	fm, _ := splitFrontmatter(readFile(filepath.Join(dir, advFile)))
+	var doc fbDoc
+	if err := yaml.Unmarshal([]byte(fm), &doc); err != nil || len(doc.Features) == 0 {
+		return ""
+	}
+	var b strings.Builder
+	b.WriteString(`<ul class="sc-card__advlist">`)
+	for _, f := range doc.Features {
+		b.WriteString(`<li class="sc-card__advfeat">`)
+		if f.Level > 0 {
+			fmt.Fprintf(&b, `<span class="sc-card__advlvl">L%d</span>`, f.Level)
+		}
+		b.WriteString(`<span class="sc-card__advname">` +
+			html.EscapeString(linkText(f.Name)) + `</span></li>`)
+	}
+	b.WriteString("</ul>\n")
+	return b.String()
+}
+
 // buildAdvancementPairContent renders a group dir whose leaves come in
 // <id>.md + <id>-advancement-features.md pairs as a 2-column pair grid.
 // ok=false → caller falls through to the default index builders.
@@ -135,7 +166,7 @@ func buildAdvancementPairContent(dir, dirName string, files, subdirs []string) (
 			if p.base != "" {
 				name = cardName(p.base)
 			}
-			sb.WriteString(card(p.adv, icon, "Advancement Features", name, ""))
+			sb.WriteString(card(p.adv, icon, "Advancement Features", name, advancementCardInner(dir, p.adv)))
 		}
 	}
 	sb.WriteString("</div>\n")
